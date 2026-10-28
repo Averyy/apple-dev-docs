@@ -21,7 +21,7 @@ Create a file path component from a string literal.
 init(stringLiteral: String)
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `stringLiteral` is non-empty, is not a root, and has only one component in it.
 

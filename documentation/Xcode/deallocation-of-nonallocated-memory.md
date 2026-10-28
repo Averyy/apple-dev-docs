@@ -5,11 +5,11 @@
 
 Detects attempts to free nonallocated memory.
 
-#### Overview
+## Overview
 
 Use this check to detect when you call `free` on memory that you don’t allocate using `malloc`. Attempting to deallocate nonallocated memory can result in a crash. Available in Xcode 7 and later.
 
-##### Deallocation of a stack variable in C
+### Deallocation of a stack variable in C
 
 In the following example, the `value` variable allocates on the stack, and deallocates when the function exits, so calling `free` on it is incorrect:
 
@@ -18,7 +18,7 @@ int value = 42;
 free(&value); // Error: free called on stack allocated variable
 ```
 
-###### Solution
+#### Solution
 
 Don’t call the `free` function on variables that you allocate on the stack.
 

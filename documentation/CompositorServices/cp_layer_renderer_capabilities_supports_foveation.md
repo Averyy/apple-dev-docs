@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether the layer supports variable raste
 bool cp_layer_renderer_capabilities_supports_foveation(cp_layer_renderer_capabilities_t layer_capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the layer supports variable rasterization rates or `false` if you must render the entire layer at the same resolution.
 
-#### Discussion
+## Discussion
 
 Foveation support lets you reduce the amount of high-resolution drawing you do. When foveation support is available, the system provides a variable rasterization rate map that defines the content resolution in different parts of the texture. This map allows you to render content in someone’s peripheral vision at a lower resolution than content in the center of their vision.
 

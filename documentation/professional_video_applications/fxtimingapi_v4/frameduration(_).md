@@ -24,7 +24,7 @@ func frameDuration(_ duration: UnsafeMutablePointer<CMTime>!)
 
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Discussion
+## Discussion
 
 Motion provides the frame duration of the project. Final Cut Pro provides the frame duration of the clip to which the effect is applied, not the frame duration for the timeline.
 

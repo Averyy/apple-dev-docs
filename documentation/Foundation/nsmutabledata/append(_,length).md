@@ -25,7 +25,7 @@ func append(_ bytes: UnsafeRawPointer, length: Int)
 - (void) appendBytes:(const void *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 A sample using this method can be found in [Working With Mutable Binary Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
 

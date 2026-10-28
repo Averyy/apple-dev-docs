@@ -29,11 +29,11 @@ class func fileURL(withPath path: String) -> URL
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Return Value
+## Return Value
 
 An NSURL object initialized with `path`.
 
-#### Discussion
+## Discussion
 
 This method assumes that `path` is a directory if it ends with a slash. If `path` does not end with a slash, the method examines the file system to determine if `path` is a file or a directory. If `path` exists in the file system and is a directory, the method appends a trailing slash. If `path` does not exist in the file system, the method assumes that it represents a file and does not append a trailing slash.
 

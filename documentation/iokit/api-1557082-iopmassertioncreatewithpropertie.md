@@ -16,7 +16,7 @@ Creates an IOPMAssertion with more flexibility than [`IOPMAssertionCreateWithDes
 IOReturn IOPMAssertionCreateWithProperties(CFDictionaryRef AssertionProperties, IOPMAssertionID *AssertionID);
 ```
 
-#### Discussion
+## Discussion
 
 Create a new PM assertion - the caller must specify the type of assertion, initial level, and its properties as [IOPMAssertionDictionaryKeys](./iopmlib_h/iopmassertiondictionarykeys.md) keys in the `AssertionProperties` dictionary. The following keys are recommend and/or required to be specified in the AssertionProperties dictionary argument.
 

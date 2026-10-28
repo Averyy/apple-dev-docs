@@ -25,11 +25,11 @@ func sourceEntity(for mEntity: NSEntityMapping) -> NSEntityDescription?
 - (NSEntityDescription *) sourceEntityForEntityMapping:(NSEntityMapping *) mEntity;
 ```
 
-#### Return Value
+## Return Value
 
 The entity description for the source entity of `mEntity`.
 
-#### Discussion
+## Discussion
 
 Entity mappings do not store the actual description objects, but rather the name and version information of the entity.
 

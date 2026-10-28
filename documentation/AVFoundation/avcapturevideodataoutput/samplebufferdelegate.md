@@ -24,7 +24,7 @@ var sampleBufferDelegate: (any AVCaptureVideoDataOutputSampleBufferDelegate)? { 
 @property (nonatomic, readonly, nullable) id<AVCaptureVideoDataOutputSampleBufferDelegate> sampleBufferDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives sample buffers after they are captured.
 

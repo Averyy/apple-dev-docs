@@ -21,7 +21,7 @@ The aspect ratios this artwork supports.
 let supportedAspectRatios: [AnimatedArtwork.AspectRatio]
 ```
 
-#### Discussion
+## Discussion
 
 The system requests preview and video assets for each supported ratio. Provide at least one ratio.
 

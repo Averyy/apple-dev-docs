@@ -16,11 +16,11 @@ Returns an scaled representaion of the value contained in this IOHIDValueRef bas
 double_t IOHIDValueGetScaledValue(IOHIDValueRef value, IOHIDValueScaleType type);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an scaled floating point representation of the value.
 
-#### Discussion
+## Discussion
 
 The scaled value is based on the range described by the scale type's min and max, such that:
 

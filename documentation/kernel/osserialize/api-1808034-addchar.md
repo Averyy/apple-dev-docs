@@ -12,7 +12,7 @@ virtual bool addChar(
  const charaChar);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `char` is successfully added to the XML stream, `false` otherwise.
 

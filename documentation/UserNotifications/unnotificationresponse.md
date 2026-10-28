@@ -24,7 +24,7 @@ class UNNotificationResponse
 @interface UNNotificationResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the user interacts with a delivered notification, the system delivers a [`UNNotificationResponse`](./unnotificationresponse.md) object to your app so that you can process the response. Users can interact with delivered notifications in many ways. If the notification’s category had associated action buttons, they can select one of those buttons. Users can also dismiss the notification without selecting one of your actions and they can open your app. A response object tells you which option the user selected.
 

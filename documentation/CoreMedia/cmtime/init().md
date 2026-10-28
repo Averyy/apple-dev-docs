@@ -21,7 +21,7 @@ Creates a time with an invalid value.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Using this initializer creates a time equal to [`invalid`](./invalid.md).
 

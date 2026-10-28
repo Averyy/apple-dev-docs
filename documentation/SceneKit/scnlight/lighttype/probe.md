@@ -25,7 +25,7 @@ static let probe: SCNLight.LightType
 extern SCNLightType const SCNLightTypeProbe;
 ```
 
-#### Discussion
+## Discussion
 
 A light probe describes a point in a scene in terms of the variations in color and intensity of the illumination it receives from all directions. This information can then be used in shading of materials based on their location in the scene. For example, a white object placed near blue and red walls will appear bluish on surfaces facing the blue wall and reddish on surfaces facing the red wall.
 

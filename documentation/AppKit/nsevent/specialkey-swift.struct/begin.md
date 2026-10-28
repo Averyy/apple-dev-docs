@@ -15,7 +15,7 @@ The begin key.
 static let begin: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

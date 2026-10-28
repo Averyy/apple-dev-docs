@@ -24,11 +24,11 @@ class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork], 
 + (BOOL) canMakePaymentsUsingNetworks:(NSArray<NSString *> *) supportedNetworks capabilities:(PKMerchantCapability) capabilties;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md), if the device supports Apple Pay and the user has added a compatible card; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to see whether the user can make payments using a card from one of the selected networks (for example, American Express, Discover, Mastercard, Visa, etc.) with the selected capabilities (for example, credit, debit, etc.).
 

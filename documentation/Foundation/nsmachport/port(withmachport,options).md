@@ -25,11 +25,11 @@ class func port(withMachPort machPort: UInt32, options f: NSMachPort.Options = [
 + (NSPort *) portWithMachPort:(uint32_t) machPort options:(NSMachPortOptions) f;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSMachPort` object that uses `machPort` to send or receive messages.
 
-#### Discussion
+## Discussion
 
 Creates the port object if necessary. Depending on the access rights associated with `machPort`, the new port object may be usable only for sending messages.
 

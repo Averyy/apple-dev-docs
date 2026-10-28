@@ -21,7 +21,7 @@ Offsets the given index by the specified distance.
 func formIndex(_ i: inout Self.Index, offsetBy distance: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 

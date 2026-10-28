@@ -25,11 +25,11 @@ class func applyAngularImpulse(_ impulse: CGFloat, duration: TimeInterval) -> SK
 + (SKAction *) applyAngularImpulse:(CGFloat) impulse duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, applies a constant torque to the physics body for the duration of the action. The torque is calculated by dividing the impulse strength by the duration of the action. This action affects the body’s angular velocity without changing the body’s linear velocity.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two instances are equal, as deter
 static func == (lhs: AnyCancellable, rhs: AnyCancellable) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two instances are equal, as determined by comparing whether their references point to the same instance.
 

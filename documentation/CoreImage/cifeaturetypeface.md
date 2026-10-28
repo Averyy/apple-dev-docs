@@ -24,7 +24,7 @@ let CIFeatureTypeFace: String
 extern NSString * const CIFeatureTypeFace;
 ```
 
-#### Discussion
+## Discussion
 
 To detect faces in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
 

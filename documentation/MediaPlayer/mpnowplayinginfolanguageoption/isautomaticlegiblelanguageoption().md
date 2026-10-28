@@ -25,7 +25,7 @@ func isAutomaticLegibleLanguageOption() -> Bool
 - (BOOL) isAutomaticLegibleLanguageOption;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the framework uses the system preferences to determine the best legible language option; otherwise [`false`](../../Swift/false.md).
 

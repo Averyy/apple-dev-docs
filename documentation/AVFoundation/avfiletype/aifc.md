@@ -25,7 +25,7 @@ static let aifc: AVFileType
 extern AVFileType const AVFileTypeAIFC;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.aifc-audio`. Files of this type have an `.aifc` or `.cdda` extension.
 

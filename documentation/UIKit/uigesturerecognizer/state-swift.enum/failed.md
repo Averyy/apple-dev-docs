@@ -27,7 +27,7 @@ UIGestureRecognizerStateFailed
 
 - [About the Gesture Recognizer State Machine](../../about-the-gesture-recognizer-state-machine.md)
 
-#### Discussion
+## Discussion
 
 No action message is sent and the gesture recognizer is reset to [`UIGestureRecognizer.State.possible`](./possible.md).
 

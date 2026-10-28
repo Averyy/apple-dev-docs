@@ -19,7 +19,7 @@ A unique push token that may be used to deliver updates for this control.
 let token: Data
 ```
 
-#### Discussion
+## Discussion
 
 This token is valid until told otherwise through the [`pushTokensDidChange(controls:)`](../controlpushhandler/pushtokensdidchange%28controls%29.md) method on your push handler.
 

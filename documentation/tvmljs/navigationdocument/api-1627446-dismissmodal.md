@@ -15,7 +15,7 @@ Dismisses the document displayed in modal view.
 void dismissModal();
 ```
 
-#### Discussion
+## Discussion
 
 When the document is dismissed, the previous document is brought into focus.
 

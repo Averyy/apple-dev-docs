@@ -23,7 +23,7 @@ var devices: [ICDevice]? { get }
 @property (readonly, nullable) NSArray<ICDevice *> * devices;
 ```
 
-#### Discussion
+## Discussion
 
 This array is empty before the first invocation of the delegate method [`deviceBrowser(_:didAdd:moreComing:)`](../icdevicebrowserdelegate/devicebrowser%28_,didadd,morecoming%29.md). The value of this property changes as devices appear and disappear.
 

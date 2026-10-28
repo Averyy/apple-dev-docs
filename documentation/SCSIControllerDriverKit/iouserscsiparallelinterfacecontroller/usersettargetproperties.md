@@ -15,11 +15,11 @@ Sets properties on the target.
 virtual kern_return_t UserSetTargetProperties(SCSIDeviceIdentifier targetID, OSDictionary *properties);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of setting the target’s properties. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension calls this method to set the specified target’s properties. The `properties` directory can contain the following keys:
 

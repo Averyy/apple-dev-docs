@@ -15,7 +15,7 @@ A notification that indicates a change to the object’s readiness to process ad
 extern NSNotificationName const MERAWProcessorReadyForMoreMediaDataDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is used to notify Video Toolbox that the value of the [`isReadyForMoreMediaData`](./merawprocessor/isreadyformoremediadata.md) property has changed.
 

@@ -22,7 +22,7 @@ var accessories: [UIPointerAccessory] { get set }
 @property (nonatomic, copy) NSArray<UIPointerAccessory *> * accessories;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports up to four pointer accessories. The system animates between neighboring or similar accessories.
 

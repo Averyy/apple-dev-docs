@@ -23,7 +23,7 @@ var responder: UIResponder? { get }
 @property (nonatomic, strong, readonly, nullable) UIResponder * responder;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a [`UIResponder`](../uiresponder.md) object that either is focused or is the [`isFirstResponder`](../uiresponder/isfirstresponder.md) object in the window when [`UIApplication`](../uiapplication.md) originally dispatched the press event.
 

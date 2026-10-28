@@ -28,7 +28,7 @@ var presentsWithTransaction: Bool { get set }
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Discussion
+## Discussion
 
 By default, this value is [`false`](../../Swift/false.md); [`CAMetalLayer`](../cametallayer.md) displays the output of a rendering pass to the display as quickly as possible and asynchronously to any Core Animation transactions. Core Animation doesn’t guarantee that the Metal content arrives in the same frame as other Core Animation content. This behavior could be an issue if, for example, your app draws [UIKit](https://developer.apple.com/library/archive/releasenotes/General/RN-iOSSDK-6_1/index.html#//apple_ref/doc/uid/TP40012869-CH1-SW17) content over the top of your [`CAMetalLayer`](../cametallayer.md).
 

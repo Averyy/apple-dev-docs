@@ -25,7 +25,7 @@ var XPC_ACTIVITY_STATE_DONE: Int { get }
 XPC_ACTIVITY_STATE_DONE
 ```
 
-#### Discussion
+## Discussion
 
 An app may pass this value to [`xpc_activity_set_state(_:_:)`](./xpc_activity_set_state%28_,_%29.md) to indicate when the activity completes. For nonrepeating activity, the resources for the activity automatically release upon return from the handler block. For repeating activity, timers present in the activity’s criteria reset.
 

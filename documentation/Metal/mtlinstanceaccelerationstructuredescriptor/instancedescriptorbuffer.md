@@ -24,7 +24,7 @@ var instanceDescriptorBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> instanceDescriptorBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You need to set a buffer before creating the instanced acceleration structure. The buffer needs to contain a list of instance data structures, each defining the characteristics of an instance. The descriptor’s [`instanceDescriptorType`](./instancedescriptortype.md) property determines which memory layout to use for the instance data; see [`MTLAccelerationStructureInstanceDescriptorType`](../mtlaccelerationstructureinstancedescriptortype.md) for more information.
 

@@ -23,7 +23,7 @@ func textSelection(for selectionGranularity: NSTextSelection.Granularity, enclos
 - (NSTextSelection *) textSelectionForSelectionGranularity:(NSTextSelectionGranularity) selectionGranularity enclosingTextSelection:(NSTextSelection *) textSelection;
 ```
 
-#### Return Value
+## Return Value
 
 A new text selection.
 

@@ -20,7 +20,7 @@ func startAnimating()
 - (void) startAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 If the image data contains multiple images, calling this method begins animating through those images, starting at the first image. The animation uses the duration value specified in your storyboard file.
 

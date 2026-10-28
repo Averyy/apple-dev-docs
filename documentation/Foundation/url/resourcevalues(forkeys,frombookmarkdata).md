@@ -21,7 +21,7 @@ Returns the resource values for properties identified by a specified array of ke
 static func resourceValues(forKeys keys: Set<URLResourceKey>, fromBookmarkData data: Data) -> URLResourceValues?
 ```
 
-#### Discussion
+## Discussion
 
 If the result dictionary does not contain a resource value for one or more of the requested resource keys, it means those resource properties are not available in the bookmark data.
 

@@ -23,7 +23,7 @@ var domainIdentifier: String? { get set }
 @property (copy, nullable) NSString * domainIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a domain identifier to group items together and to make it easy to delete groups of items from the index. For example, you might specify an identifier for a mailbox in an account whose indexed data you want to remove when the account is deleted. In this example, [`domainIdentifier`](./domainidentifier.md) should be of the form `<account-id>.<mailbox-id>`, where neither `<account-id>` nor `<mailbox-id>` contain periods. To delete all items associated with the specified account and mailbox, you can call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](../cssearchableindex/deletesearchableitems%28withdomainidentifiers,completionhandler%29.md) with a [`domainIdentifier`](./domainidentifier.md) of `<account-id>.<mailbox-id>`. Or to delete all items associated with all mailboxes in the specified account, you can call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](../cssearchableindex/deletesearchableitems%28withdomainidentifiers,completionhandler%29.md) with a [`domainIdentifier`](./domainidentifier.md) of `<account-id>`.
 

@@ -19,7 +19,7 @@ nonisolated
 func tabViewSearchActivation(_ activation: TabSearchActivation) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier on a [`TabView`](../tabview.md) to change how search activation is handled. The exact activation behavior is determined by the [`TabSearchActivation`](../tabsearchactivation.md) you pass to this modifier:
 

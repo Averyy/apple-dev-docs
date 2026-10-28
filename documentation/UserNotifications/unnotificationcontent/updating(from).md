@@ -29,11 +29,11 @@ func updating(from provider: any UNNotificationContentProviding) throws -> UNNot
 
 - [Implementing communication notifications](../implementing-communication-notifications.md)
 
-#### Return Value
+## Return Value
 
 The notification content object for the content handler.
 
-#### Discussion
+## Discussion
 
 The system contextualizes your [`UNNotificationContent`](../unnotificationcontent.md) object with other Apple SDK objects conforming to [`UNNotificationContentProviding`](../unnotificationcontentproviding.md). The system specializes the notification and decorates its look and behavior accordingly.
 

@@ -20,7 +20,7 @@ Presents a modal view while the game synced directory loads.
 @preconcurrency func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: @escaping @MainActor @Sendable () -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you want to present a modal loading view to the user when a Boolean value you provide is true.
 

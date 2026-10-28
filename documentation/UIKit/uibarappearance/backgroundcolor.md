@@ -24,7 +24,7 @@ var backgroundColor: UIColor? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The bar layers the specified color on top of any blur effects you specified in the [`backgroundEffect`](./backgroundeffect.md) property, and below the image in the [`backgroundImage`](./backgroundimage.md) property.
 

@@ -23,7 +23,7 @@ func insertTextContainer(_ container: NSTextContainer, at index: Int)
 - (void) insertTextContainer:(NSTextContainer *) container atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method invalidates layout for all subsequent `NSTextContainer` objects, and invalidates glyph information as needed.
 

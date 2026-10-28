@@ -5,7 +5,7 @@
 
 Enable your accessory to receive forwarded Live Activities by updating your data provider extension.
 
-#### Overview
+## Overview
 
 To receive forwarded Live Activities on your accessory and alert people about Live Activity updates, you use an extension model that handles secure communication between iPhone and your accessory. Before adding support for Live Activity forwarding, you need to adopt iOS system notification forwarding and implement the extensions that handle communication between iPhone and your accessory. For more information, see [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
@@ -17,7 +17,7 @@ In the [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydatapro
 2. Add a [`LiveActivityForwarding.AccessoryLiveActivitiesHandler`](./liveactivityforwarding/accessoryliveactivitieshandler.md) implementation  to the extension to receive forwarded Live Activities and prepare them for transmission.
 3. Add code to check if the person authorized Live Activity forwarding.
 
-#### Add the capability
+## Add the capability
 
 Your app receives and handles Live Activity alert updates in the [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydataprovider.md) extension you created when you implemented iOS system notification forwarding. In the extension’s target properties, update the extension point identifier `com.apple.accessory-data-provider` and add an entry to the `EXCapabilities` array for `AccessoryLiveActivities.LiveActivityForwarding`:
 
@@ -38,7 +38,7 @@ Your app receives and handles Live Activity alert updates in the [`AccessoryData
 </plist>
 ```
 
-#### Implement a handler in your data provider extension
+## Implement a handler in your data provider extension
 
 Update the [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydataprovider.md) protocol to include [`LiveActivityForwarding`](./liveactivityforwarding.md) and provide a handler that conforms to [`LiveActivityForwarding.AccessoryLiveActivitiesHandler`](./liveactivityforwarding/accessoryliveactivitieshandler.md). The following code shows the `AccessoryDataProvider` struct conformance:
 
@@ -77,7 +77,7 @@ final class LiveActivitiesHandler: LiveActivityForwarding.AccessoryLiveActivitie
 }
 ```
 
-#### Load existing activities when a session starts
+## Load existing activities when a session starts
 
 When a Live Activity starts, the system calls your handler’s [`activate(for:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activate%28for%29.md) function. Store its [`LiveActivityForwarding.Session`](./liveactivityforwarding/session.md) object and use it to read the current set of Live Activities and to send [`AccessoryMessage`](../AccessoryTransportExtension/accessorymessage.md) payloads to the accessory.
 
@@ -101,7 +101,7 @@ func activate(for session: LiveActivityForwarding.Session) {
 
 > **Note**: [`liveActivities`](./liveactivityforwarding/session/liveactivities.md) returns a snapshot of activities that were active when the session opened. Subsequent additions and updates arrive through [`activityUpdated(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdated%28_%29.md) and [`activityUpdatedForAlert(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdatedforalert%28_%29.md).
 
-#### Process Live Activity updates and forward them to your accessory
+## Process Live Activity updates and forward them to your accessory
 
 When the system forwards a Live Activity update to your data provider extension, it provides your handler with an [`AccessoryLiveActivity`](./accessoryliveactivity.md) object you use to update the accessory’s display. Use [`activityUpdated(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdated%28_%29.md) to update your accessory to reflect the current Live Activity state. When the update includes an alert, the system calls [`activityUpdatedForAlert(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdatedforalert%28_%29.md) instead. Return a `Bool` indicating whether your accessory displayed the alert so the system coordinates alert delivery across devices.
 
@@ -109,11 +109,11 @@ If the callback’s activity’s [`state`](./accessoryliveactivity/state.md) pro
 
 To send forwarded Live Activities from your data provider extension to your accessory, use the extension model and code you added to support iOS system notifications. For more information, see [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
-#### Avoid duplicated alerts across devices
+## Avoid duplicated alerts across devices
 
 When a Live Activity update includes an alert, the system ensures the person receives the alert without duplication across devices. To coordinate between your accessory or iPhone and determine whether to display an alert, the system calls [`activityUpdatedForAlert(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdatedforalert%28_%29.md) and waits for your `Bool` return value before determining where to display the alert. Returning `true` tells the system to suppress the alert on iPhone — your accessory is responsible for notifying the person. The return value is a commitment. Only return `true` from [`activityUpdatedForAlert(_:)`](./liveactivityforwarding/accessoryliveactivitieshandler/activityupdatedforalert%28_%29.md) after confirming the accessory displays the alert. If the accessory can’t confirm it displayed the alert — for example, if the accessory is out of range — return `false` to let iPhone display the alert.
 
-#### Display the source app icon
+## Display the source app icon
 
 A person might have multiple active Live Activities. To help people keep track of multiple Live Activities, visually distinguish them by loading the app icon of the app that started the Live Activity. Use [`sourceBundleIcon`](./accessoryliveactivity/sourcebundleicon.md) to load the source app icon.
 
@@ -126,11 +126,11 @@ func loadIcon(from iconFile: AccessoryLiveActivity.IconFile) async throws -> Dat
 }
 ```
 
-#### Send forwarded Live Activities to your accessory securely
+## Send forwarded Live Activities to your accessory securely
 
 To send forwarded Live Activities to your accessory, use the [`AccessoryTransportSecurity`](../AccessoryTransportExtension/accessorytransportsecurity.md) and [`AccessoryTransportAppExtension`](../AccessoryTransportExtension/accessorytransportappextension.md) extensions you create when you add support for receiving forwarded iOS system notifications. For more information about securely sending Live Activity and notification content to your accessory, see [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
-#### Check for permission
+## Check for permission
 
 The initial authorization to allow Live Activity forwarding happens in a unified system prompt that allows people to set permissions for iOS system notification and Live Activity forwarding when they configure the accessory. However, people can change permissions at any time in Settings, or choose to deny Live Activity forwarding during initial setup. Additionally, authorization is per physical accessory. As a result, check whether someone authorized Live Activity forwarding for your accessory before you perform any additional logic. For example, check for authorization before indicating in your UI that Live Activity forwarding is active.
 

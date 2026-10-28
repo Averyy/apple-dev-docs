@@ -31,7 +31,7 @@ var minPlayers: Int { get set }
 - [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 The possible values range from `2` to the value returned by the [`maxPlayersAllowedForMatch(of:)`](./maxplayersallowedformatch%28of%29.md) method. To set the maximum number of players, use the [`maxPlayers`](./maxplayers.md) property.
 

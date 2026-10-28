@@ -19,7 +19,7 @@ struct OBEXConnectCommandData
 struct OBEXConnectCommandData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeConnectCommandReceived (see OBEXSessionEventTypes).
 

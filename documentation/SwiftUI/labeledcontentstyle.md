@@ -22,7 +22,7 @@ The appearance and behavior of a labeled content instance..
 @preconcurrency protocol LabeledContentStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`labeledContentStyle(_:)`](./view/labeledcontentstyle%28_%29.md) to set a style on a view.
 

@@ -16,7 +16,7 @@ Updates an AVCCommand's timeout back to 10 seconds.
 IOReturn (*updateAVCCommandTimeout)(void *self);
 ```
 
-#### Discussion
+## Discussion
 
 AVCCommands will time out after 10 seconds unless this function is called (from another thread) to update the command's timeout back to 10 seconds. This function is only available if the interface version is > 2.
 

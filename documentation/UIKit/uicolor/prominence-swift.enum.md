@@ -23,7 +23,7 @@ enum Prominence
 enum UIColorProminence : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Interface elements, such as text labels, can have a different level of prominence in the UI. For example, a title label appears more prominently than a subtitle or caption. When you specify a label’s color, you can pass one of the [`UIColor.Prominence`](./prominence-swift.enum.md) constants to [`withProminence(_:)`](./withprominence%28_%29.md) to communicate how prominently to display that color in the UI.
 

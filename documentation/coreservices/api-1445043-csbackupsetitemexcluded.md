@@ -19,11 +19,11 @@ func CSBackupSetItemExcluded(_ item: CFURL!, _ exclude: Bool, _ excludeByPath: B
 OSStatus CSBackupSetItemExcluded(CFURLRef item, Boolean exclude, Boolean excludeByPath);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if the item was successfully included or excluded from the backup.
 
-#### Discussion
+## Discussion
 
 Backup skips files and folders marked for exclusion. If a folder is marked for exclusion, the folder and all its contents are excluded from the backup process. You can exclude specific paths that do not exist yet, but that you plan to create later, by passing the planned URL in `item` and passing `true` in `excludeByPath`. Note that if you pass `false` in `excludeByPath`, the URL must already exist. 
 

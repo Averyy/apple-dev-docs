@@ -19,7 +19,7 @@ Binary name - look up from tree
 func binaryName(from tree: CallStackTree) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The binary name, or nil if not found
 

@@ -22,7 +22,7 @@ var availableLivePhotoVideoCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableLivePhotoVideoCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 By default, Live Photo capture encodes the movie portion of a Live Photo using the H.264 codec. To use a different codec, set the [`livePhotoVideoCodecType`](../avcapturephotosettings/livephotovideocodectype.md) property of your photo settings object to one of the values in this array.
 

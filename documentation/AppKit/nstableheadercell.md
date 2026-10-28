@@ -19,7 +19,7 @@ class NSTableHeaderCell
 @interface NSTableHeaderCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 Subclasses of the `NSTableHeaderCell` class can override the [`drawInterior(withFrame:in:)`](./nscell/drawinterior%28withframe,in%29.md), [`edit(withFrame:in:editor:delegate:event:)`](./nscell/edit%28withframe,in,editor,delegate,event%29.md), and [`highlight(_:withFrame:in:)`](./nscell/highlight%28_,withframe,in%29.md) methods to change the way headers appear. This specific subclass is responsible for drawing the sort indicators. See the [`NSCell`](./nscell.md) class specification for information on overriding these methods.
 

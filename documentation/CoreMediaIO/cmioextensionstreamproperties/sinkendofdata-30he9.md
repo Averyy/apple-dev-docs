@@ -16,7 +16,7 @@ A value that indicates whether the stream has reached its end.
 @property (atomic, strong, nullable) NSNumber * sinkEndOfData;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1` indicates that the stream has reached the end, and a value of `0` indicates that more data is available. This property translates to the [`kCMIOStreamPropertyEndOfData`](../kcmiostreampropertyendofdata.md) property.
 

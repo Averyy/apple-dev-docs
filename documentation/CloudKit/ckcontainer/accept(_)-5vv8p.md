@@ -21,7 +21,7 @@ Accepts the specified share metadata and returns the accepted share to an awaiti
 func accept(_ metadata: CKShare.Metadata) async throws -> CKShare
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding share for the share metadata.
 

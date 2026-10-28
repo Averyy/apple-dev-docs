@@ -19,11 +19,11 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldUseTemporary
 - (NSDictionary<NSString *,id> *) layoutManager:(NSLayoutManager *) layoutManager shouldUseTemporaryAttributes:(NSDictionary<NSString *,id> *) attrs forDrawingToScreen:(BOOL) toScreen atCharacterIndex:(NSUInteger) charIndex effectiveRange:(NSRangePointer) effectiveCharRange;
 ```
 
-#### Return Value
+## Return Value
 
 The temporary attributes for the layout manager to use, or `nil` if no temporary attributes are to be used.
 
-#### Discussion
+## Discussion
 
 The default behavior, if this method is not implemented, is to use temporary attributes only when drawing to the screen, so an implementation to match that behavior would return `attrs` if `toScreen` is [`true`](../../Swift/true.md) and `nil` otherwise, without changing `effectiveCharRange`.
 

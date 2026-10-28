@@ -19,7 +19,7 @@ func leafKeyPath(for node: NSTreeNode) -> String?
 - (NSString *) leafKeyPathForNode:(NSTreeNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the key path in `node` that specifies that the node is a leaf node.
 

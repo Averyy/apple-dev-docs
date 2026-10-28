@@ -22,7 +22,7 @@ class func authorizationStatus() -> MPMediaLibraryAuthorizationStatus
 + (MPMediaLibraryAuthorizationStatus) authorizationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 The status representing whether the app has access to the user’s media library.
 

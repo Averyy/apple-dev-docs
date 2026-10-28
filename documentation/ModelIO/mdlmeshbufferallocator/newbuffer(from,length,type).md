@@ -25,11 +25,11 @@ func newBuffer(from zone: (any MDLMeshBufferZone)?, length: Int, type: MDLMeshBu
 - (id<MDLMeshBuffer>) newBufferFromZone:(id<MDLMeshBufferZone>) zone length:(NSUInteger) length type:(MDLMeshBufferType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory buffer for mesh data.
 
-#### Discussion
+## Discussion
 
 Use this method when making multiple related allocations that should share the same memory pool.
 

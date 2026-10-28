@@ -25,7 +25,7 @@ static var alwaysMapped: NSData.ReadingOptions { get }
 NSDataReadingMappedAlways
 ```
 
-#### Discussion
+## Discussion
 
 This takes precedence over [`mappedIfSafe`](./mappedifsafe.md) if both are given.
 

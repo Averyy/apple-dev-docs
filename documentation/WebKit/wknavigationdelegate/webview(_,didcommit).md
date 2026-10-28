@@ -23,7 +23,7 @@ optional func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!)
 - (void) webView:(WKWebView *) webView didCommitNavigation:(WKNavigation *) navigation;
 ```
 
-#### Discussion
+## Discussion
 
 After the navigation delegate’s [`webView(_:decidePolicyFor:decisionHandler:)`](./webview%28_,decidepolicyfor,decisionhandler%29-19mn2.md) method approves the navigation response, the web view begins processing it. As changes become ready, the web view calls this method immediately before it starts to update the main frame.
 

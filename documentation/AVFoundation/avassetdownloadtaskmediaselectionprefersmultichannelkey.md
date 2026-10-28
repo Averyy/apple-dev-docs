@@ -25,7 +25,7 @@ let AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey: String
 extern NSString * const AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey;
 ```
 
-#### Discussion
+## Discussion
 
 By default, download tasks retrieve the variant’s stereo audio and the most capable multichannel rendition available. Provide a Boolean value of [`false`](../Swift/false.md) to disable this behavior.
 

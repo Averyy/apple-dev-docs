@@ -25,7 +25,7 @@ case developer
 nw_parameters_attribution_developer
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the `attribution` parameter of a call to the [`nw_parameters_get_attribution(_:)`](../nw_parameters_get_attribution%28_%29.md) method when creating a network request for any purpose other than when the user explicitly accesses a link. This includes requests that your app makes to get user data. This is the default value.
 

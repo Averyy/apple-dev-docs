@@ -19,7 +19,7 @@ A macro that masks the supplementary info out of a major status code, leaving bo
 #define GSS_ERROR(x)
 ```
 
-#### Discussion
+## Discussion
 
 When you apply this macro to a major status code, a non-zero result indicates that an error of some kind occurred.
 

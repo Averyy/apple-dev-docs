@@ -21,7 +21,7 @@ A message a metadata query sends when it finishes the initial result-gathering p
 struct DidFinishGatheringMessage
 ```
 
-#### Overview
+## Overview
 
 Observe this message with the identifier [`didFinishGathering`](../notificationcenter/messageidentifier/didfinishgathering.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`NSMetadataQuery`](../nsmetadataquery.md).
 

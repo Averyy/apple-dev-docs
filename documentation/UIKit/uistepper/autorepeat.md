@@ -22,7 +22,7 @@ var autorepeat: Bool { get set }
 @property (nonatomic) BOOL autorepeat;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user pressing and holding on the stepper repeatedly alters [`value`](./value.md).
 

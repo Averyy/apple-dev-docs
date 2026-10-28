@@ -20,11 +20,11 @@ convenience init(name: String, stringValue string: String?)
 - (instancetype) initWithName:(NSString *) name stringValue:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSXMLElement` object or `nil` if initialization did not succeed.
 
-#### Discussion
+## Discussion
 
 The string representation of this object is `<``name``>``string``</``name``>`.
 

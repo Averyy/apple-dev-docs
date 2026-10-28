@@ -17,7 +17,7 @@ An error that indicates the reader’s session expired.
 case prepareExpired
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when too much time elapses after calling the [`prepare(using:)`](../paymentcardreader/prepare%28using%29.md) method. Call the method again.
 

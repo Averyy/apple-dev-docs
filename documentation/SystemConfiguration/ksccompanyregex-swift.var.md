@@ -19,7 +19,7 @@ let kSCCompAnyRegex: CFString
 extern CFStringRef const kSCCompAnyRegex;
 ```
 
-#### Discussion
+## Discussion
 
 This constant represents the regular expression pattern `[^/]+`.
 

@@ -16,11 +16,11 @@ Clears element transaction values for an IOHIDDeviceTransactionInterface.
 IOReturn (*clear)(void *self, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 In regards to kIOHIDTransactionDirectionTypeOutput direction, default element values will be preserved.
 

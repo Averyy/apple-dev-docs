@@ -24,11 +24,11 @@ func JSContextGroupCreate() -> JSContextGroupRef!
 JSContextGroupRefJSContextGroupCreate();
 ```
 
-#### Return Value
+## Return Value
 
 The created [`JSContextGroupRef`](./jscontextgroupref.md).
 
-#### Discussion
+## Discussion
 
 A [`JSContextGroupRef`](./jscontextgroupref.md) associates JavaScript contexts with one another. Contexts in the same group may share and exchange JavaScript objects. Sharing and exchanging JavaScript objects between contexts in different groups produces undefined behavior. When you use objects from the same context group in multiple threads, explicit synchronization is a requirement.
 

@@ -15,11 +15,11 @@ Get physical block number associated with a buffer, in the sense of VNOP_BLOCKMA
 daddr64_t buf_blkno(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Block number.
 
-#### Discussion
+## Discussion
 
 When a buffer's physical block number is the same is its logical block number, then the physical block number is considered uninitialized. A physical block number of -1 indicates that there is no valid physical mapping (e.g. the logical block is invalid or corresponds to a sparse region in a file). Physical block number is normally set by the cluster layer or by buf_getblk().
 

@@ -18,7 +18,7 @@ An array of the document request sets that you can use to complete this presentm
 var documentRequestSets: [ISO18013MobileDocumentRequest.DocumentRequestSet]
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Exactly one document request set needs to be satisfied to respond to the presentment request.
 

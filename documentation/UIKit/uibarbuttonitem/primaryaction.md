@@ -24,7 +24,7 @@ var primaryAction: UIAction? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIAction * primaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 When you assign a new value to this property, the title and image of the item update to match the primary action’s [`title`](../uiaction/title.md) and [`image`](../uiaction/image.md).
 

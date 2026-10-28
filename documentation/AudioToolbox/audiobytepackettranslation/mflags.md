@@ -24,7 +24,7 @@ var mFlags: AudioBytePacketTranslationFlags
 AudioBytePacketTranslationFlags mFlags;
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio File Packet Translation Flags](../audio_file_packet_translation_flags.md) for supported values.
 

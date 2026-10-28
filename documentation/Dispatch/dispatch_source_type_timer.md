@@ -21,7 +21,7 @@ A type of dispatch source for monitoring a timer.
 #define DISPATCH_SOURCE_TYPE_TIMER
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that submits the event handler block based on a timer. The handle is unused (pass zero for now). The mask is unused (pass zero for now).
 

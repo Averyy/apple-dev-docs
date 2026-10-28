@@ -22,7 +22,7 @@ var sourceDescription: String { get }
 @property (nonatomic, copy, readonly) NSString * sourceDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a description of the attribution source. For example, for an ad, `sourceDescription` describes the content of the advertisement that the user tapped.
 

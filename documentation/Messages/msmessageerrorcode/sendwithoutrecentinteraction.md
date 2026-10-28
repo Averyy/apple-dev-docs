@@ -21,7 +21,7 @@ case sendWithoutRecentInteraction
 MSMessageErrorCodeSendWithoutRecentInteraction
 ```
 
-#### Discussion
+## Discussion
 
 An iMessage app can send messages only in response to user interaction with the app. If an app hasn’t recently registered a touch interaction from the user, it can’t send any messages.
 

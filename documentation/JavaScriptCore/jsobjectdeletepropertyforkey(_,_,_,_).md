@@ -24,11 +24,11 @@ func JSObjectDeletePropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, 
 bool JSObjectDeletePropertyForKey(JSContextRef ctx, JSObjectRef object, JSValueRef propertyKey, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the delete operation succeeds; otherwise, [`false`](../Swift/false.md), such as when the property has the [`kJSPropertyAttributeDontDelete`](./kjspropertyattributedontdelete.md) attribute set.
 
-#### Discussion
+## Discussion
 
 This function is the same as performing `delete object[propertyKey]` from JavaScript.
 

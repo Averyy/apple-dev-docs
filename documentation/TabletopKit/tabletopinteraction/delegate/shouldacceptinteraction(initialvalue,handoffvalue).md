@@ -16,7 +16,7 @@ Implement `shouldAcceptInteraction(initialValue:handoffValue)` to provide the in
 func shouldAcceptInteraction(initialValue: TabletopInteraction.Value, handoffValue: TabletopInteraction.Value?) -> TabletopInteraction.NewInteractionIntent
 ```
 
-#### Return Value
+## Return Value
 
 The intent that describes the action to be taken on this new interaction (reject or accept with configuration)
 

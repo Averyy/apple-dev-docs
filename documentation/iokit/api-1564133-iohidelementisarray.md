@@ -16,11 +16,11 @@ Returns the array property for the element.
 Boolean IOHIDElementIsArray(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if array or FALSE if variable.
 
-#### Discussion
+## Discussion
 
 Indicates whether the element represents variable or array data values. Variable values represent data from a physical control. An array returns an index in each field that corresponds to the pressed button (like keyboard scan codes).
 

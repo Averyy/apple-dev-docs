@@ -21,7 +21,7 @@ A constraint that tests whether a code file or process is on a volume protected 
 struct IsSIPProtected
 ```
 
-#### Overview
+## Overview
 
 When you use this constraint to test a running process, it tests whether the process’s main executable is SIP-protected.
 

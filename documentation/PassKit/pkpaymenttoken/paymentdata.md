@@ -24,7 +24,7 @@ var paymentData: Data { get }
 @property (nonatomic, copy, readonly) NSData * paymentData;
 ```
 
-#### Discussion
+## Discussion
 
 Send this data to your e-commerce back-end system, where it can be decrypted and submitted to your payment processor.
 

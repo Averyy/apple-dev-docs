@@ -22,7 +22,7 @@ var mainParticipantConfiguration: AEAssessmentParticipantConfiguration { get }
 @property (nonatomic, strong, readonly) AEAssessmentParticipantConfiguration * mainParticipantConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get and customize the app-specific configuration that’s applied to your own app. For example, you can set the [`allowsNetworkAccess`](../aeassessmentparticipantconfiguration/allowsnetworkaccess.md) property for your own app:
 

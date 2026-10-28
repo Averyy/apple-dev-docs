@@ -15,11 +15,11 @@ Assigns the specified buffer pool with this queue.
 virtual kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool *pool);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Use this method to change the buffer pool that provides network packets to the queue. This method releases the previous pool, if any, and retains the new object in the `pool` parameter.
 

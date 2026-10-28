@@ -19,11 +19,11 @@ Creates a configuration for a button that has a tinted, bordered style.
 static func borderedTinted() -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 
-#### Discussion
+## Discussion
 
 This style provides an alternative name for the [`tinted()`](./tinted%28%29.md) style.
 

@@ -19,7 +19,7 @@ func detachColorList(_ colorList: NSColorList)
 - (void) detachColorList:(NSColorList *) colorList;
 ```
 
-#### Discussion
+## Discussion
 
 Your application should use this method to remove an `NSColorList` saved with a document in its file package or in a directory other than `NSColorList`’s standard search directories.
 

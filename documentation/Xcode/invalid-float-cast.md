@@ -5,11 +5,11 @@
 
 Detects out-of-range casts to, from, or between floating-point types.
 
-#### Overview
+## Overview
 
 Use this check to detect out-of-range casts to, from, or between floating-point types. Invalid casts have undefined behavior, and typically yield arbitrary values. These values may differ from platform to platform. Available in Xcode 9 and later.
 
-##### Invalid assignment of a double to a float in C
+### Invalid assignment of a double to a float in C
 
 The cast from `n` to `m` results in undefined behavior because the destination type can’t represent its value.
 
@@ -18,7 +18,7 @@ double n = 10e50;
 float m = (float)n; // Error: 10e50 can't be represented as a float.
 ```
 
-###### Solution
+#### Solution
 
 Use a different destination type or avoid the cast altogether.
 

@@ -5,13 +5,13 @@
 
 Use a document picker to access the content of a directory outside your app’s container.
 
-#### Overview
+## Overview
 
 In iOS 12 and earlier, users can open and interact with files outside the app’s container. The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) and [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md) provide access to files in the system’s local file provider, in iCloud, or in third-party services that use a File Provider extension. Users can select multiple files at a time — but they need to select each file individually.
 
 In iOS 13, users can select a directory from any of the available file providers using a [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md). The document picker returns a *security-scoped URL* for the directory that permits your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents, which includes accessing any new items you add to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches.
 
-##### Ask the user to select a directory
+### Ask the user to select a directory
 
 To prompt the user to select a directory, create a document picker and set the content type to open to the type [`folder`](../UniformTypeIdentifiers/uttype-swift.struct/folder.md). Then set the document picker’s delegate and present it.
 
@@ -38,7 +38,7 @@ If the user taps Cancel, the system calls [`documentPickerWasCancelled(_:)`](./u
 
 > **Note**:  The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) doesn’t support the [`folder`](../UniformTypeIdentifiers/uttype-swift.struct/folder.md) document type. To provide access to directories, use the [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md) instead.
 
-##### Access the directory’s content
+### Access the directory’s content
 
 When the user selects a directory in the document picker, the system gives your app permission to access that directory and all of its contents. The document picker returns a security-scoped URL for the directory. When you use one of these URLs to enumerate the directory’s content, the resulting URLs are also security-scoped. You can save a security-scoped URL as a bookmark and later resolve it back into a security-scoped URL.
 
@@ -90,7 +90,7 @@ func documentPicker(_ controller:UIDocumentPickerViewController, didPickDocument
 }
 ```
 
-##### Save the URL as a bookmark
+### Save the URL as a bookmark
 
 To access the URL in the future, save the URL as a [`minimalBookmark`](../Foundation/nsurl/bookmarkcreationoptions/minimalbookmark.md) using its [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md) method.
 
@@ -134,7 +134,7 @@ catch let error {
 }
 ```
 
-##### Respond to permission changes
+### Respond to permission changes
 
 Users always have complete control over the apps that can access directories. After selecting a directory from the document picker, your app appears in Settings > Privacy > Files and Folders. This page lists all the apps that have permission to access shared directories, and users can revoke or restore permission for each app at any time.
 

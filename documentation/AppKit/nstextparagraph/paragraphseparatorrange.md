@@ -19,7 +19,7 @@ var paragraphSeparatorRange: NSTextRange? { get }
 @property (strong, readonly, nullable) NSTextRange * paragraphSeparatorRange;
 ```
 
-#### Discussion
+## Discussion
 
 The containing text is [`NSTextContentStorage`](../nstextcontentstorage.md)’s [`attributedString`](../nstextcontentstorage/attributedstring.md).
 

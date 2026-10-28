@@ -22,7 +22,7 @@ var landscapeImagePhoneInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets landscapeImagePhoneInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../uiedgeinsets/zero.md).
 

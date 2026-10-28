@@ -21,7 +21,7 @@ The numbering system used by the locale.
 var numberingSystem: Locale.NumberingSystem { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `nu` key of the Unicode BCP 47 extension.
 

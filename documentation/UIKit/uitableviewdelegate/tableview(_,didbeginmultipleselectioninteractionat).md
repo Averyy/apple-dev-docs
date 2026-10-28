@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, didBeginMultipleSelectionInter
 - (void) tableView:(UITableView *) tableView didBeginMultipleSelectionInteractionAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method is a good place to indicate, in the app’s user interface, that the user is selecting multiple rows; for example, you could replace an Edit or Select button with a Done button.
 

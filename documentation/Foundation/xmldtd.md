@@ -20,7 +20,7 @@ class XMLDTD
 @interface NSXMLDTD : NSXMLNode
 ```
 
-#### Overview
+## Overview
 
 An instance of the [`XMLDTD`](./xmldtd.md) class is held as a property of an [`XMLDocument`](./xmldocument.md) instance, accessed through the [`XMLDocument`](./xmldocument.md) property [`dtd`](./xmldocument/dtd.md).
 

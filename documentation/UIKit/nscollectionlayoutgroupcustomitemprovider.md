@@ -23,7 +23,7 @@ typealias NSCollectionLayoutGroupCustomItemProvider = (any NSCollectionLayoutEnv
 typedef NSArray<NSCollectionLayoutGroupCustomItem *> *(^)(id<NSCollectionLayoutEnvironment>) NSCollectionLayoutGroupCustomItemProvider;
 ```
 
-#### Discussion
+## Discussion
 
 You use a custom item provider to supply the item arrangement when creating a group using the [`custom(layoutSize:itemProvider:)`](./nscollectionlayoutgroup/custom%28layoutsize,itemprovider%29.md) initializer.
 

@@ -21,7 +21,7 @@ The system doesn’t have Rosetta installed and can’t perform the requested op
 static var rosettaNotInstalled: AVError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Apple silicon devices can use Intel-only codecs and file parsers, but only if you’ve installed the Rosetta translation environment on the host system.
 

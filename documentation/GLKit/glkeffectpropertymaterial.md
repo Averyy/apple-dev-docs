@@ -24,7 +24,7 @@ class GLKEffectPropertyMaterial
 @interface GLKEffectPropertyMaterial : GLKEffectProperty
 ```
 
-#### Overview
+## Overview
 
 The [`GLKEffectPropertyMaterial`](./glkeffectpropertymaterial.md) class defines properties used to configure the characteristics of the surface being lit. The material properties for an effect interact with light properties on the same effect to determine how that surface is lit within the scene. The behavior of this class matches the material properties and lighting calculations defined in the OpenGL ES 1.1 specification.
 

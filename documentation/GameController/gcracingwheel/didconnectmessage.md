@@ -16,7 +16,7 @@ A message that posts after a racing wheel accessory connects to the device.
 struct DidConnectMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didConnect` identifier with `NotificationCenter` to listen for this message.
 

@@ -25,11 +25,11 @@ func SecPolicyCreateRevocation(_ revocationFlags: CFOptionFlags) -> SecPolicy?
 SecPolicyRefSecPolicyCreateRevocation(CFOptionFlags revocationFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A policy object or `nil` on failure.
 
-#### Discussion
+## Discussion
 
 It’s usually not necessary to create a revocation policy yourself unless you wish to override default system behavior, for example to force a particular method, or to disable revocation checking entirely.
 

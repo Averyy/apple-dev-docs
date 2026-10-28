@@ -24,7 +24,7 @@ Reconciles the set of locally available asset packs with the current preferred l
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 This method downloads any missing localized asset packs, waits for those downloads to finish, and removes any unneeded ones. If you’ve overridden the preferred languages by setting [`resolvedLanguage`](./resolvedlanguage.md), then this method respects that selection. Don’t use this method if your application offers split-language functionality; instead, handle the reconciliation manually.
 

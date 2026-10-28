@@ -26,7 +26,7 @@ func getCString(_ bytes: UnsafeMutablePointer<CChar>, maxLength: Int, range aRan
 - (void) getCString:(char *) bytes maxLength:(NSUInteger) maxLength range:(NSRange) aRange remainingRange:(NSRangePointer) leftoverRange;
 ```
 
-#### Discussion
+## Discussion
 
 `buffer` must be large enough to contain `maxLength` bytes plus a terminating zero character (which this method adds). Copies and converts as many characters as possible from `aRange` and stores the range of those not converted in the range given by `leftoverRange` (if it’s non-`nil`). Raises an `NSRangeException` if any part of `aRange` lies beyond the end of the string.
 

@@ -13,7 +13,7 @@
 kIOHIDOptionsTypeSeizeDevice = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Used to open exclusive communication with the device. This will prevent the system and other clients from receiving events from the device.
 

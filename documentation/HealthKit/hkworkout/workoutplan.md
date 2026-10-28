@@ -17,7 +17,7 @@
 var workoutPlan: WorkoutPlan? { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 You need to import the [WorkoutKit](../../WorkoutKit/WorkoutKit.md) framework to access this property.
 

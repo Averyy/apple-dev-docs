@@ -19,7 +19,7 @@ Creates a new significant app update topic with the specified description.
 init(description: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a topic that describes significant changes to your app. The description you provide helps people understand what changes you’re making and why you need their consent.
 

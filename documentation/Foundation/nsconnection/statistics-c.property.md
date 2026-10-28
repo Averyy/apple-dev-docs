@@ -16,7 +16,7 @@ A dictionary containing various statistics for the receiver.
 @property (copy, readonly) NSDictionary<NSString *,NSNumber *> * statistics;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSDictionary` object containing various statistics for the receiver, such as the number of vended objects, the number of requests and replies, and so on.
 

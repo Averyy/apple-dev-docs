@@ -9,7 +9,7 @@ Retrieve performance metrics for ad groups.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Ad group reports return one row per ad group. Each row contains a `metadata` object with ad group identifiers (including `campaignId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,11 +17,11 @@ Filter by the required `campaignId` in the `filters` array, optionally narrowed 
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### groupBy Dimensions
+### groupBy Dimensions
 
 `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`
 
@@ -44,11 +44,11 @@ Selecting a timezone of `ORTZ` or `UTC` and narrowing the `fields` array also he
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 | Fields selection | Use the `fields` array to request only specific metric columns. |
 
-#### Payload Examples
+## Payload Examples
 
 Retrieve daily ad group metrics for all ad groups in a campaign, grouped by device class.
 
-##### Request
+### Request
 
 Filters by `campaignId` to retrieve all ad groups in a campaign, groups results by `deviceClass`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
@@ -79,7 +79,7 @@ POST /v1/reports/apps/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

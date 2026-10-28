@@ -24,7 +24,7 @@ var vertexBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> vertexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`vertexFormat`](./vertexformat.md) property defines the format of each vertex position in the buffer. You need to set a vertex buffer before creating the acceleration structure.
 

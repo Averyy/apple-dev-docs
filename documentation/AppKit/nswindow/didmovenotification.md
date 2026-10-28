@@ -19,7 +19,7 @@ class let didMoveNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidMoveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that has moved. This notification doesn’t contain a `userInfo` dictionary.
 

@@ -21,7 +21,7 @@ var subtitle: String { get }
 @property (copy, readonly) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](../bgcontinuedprocessingtaskrequest/init%28identifier,title,subtitle%29.md). After that, this property is read only, however you can update the subtitle by calling [`updateTitle(_:subtitle:)`](./updatetitle%28_,subtitle%29.md).
 

@@ -25,7 +25,7 @@ var allValues: [Any] { get }
 @property (copy, readonly) NSArray<id> * allValues;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the values in the array isn’t defined.
 

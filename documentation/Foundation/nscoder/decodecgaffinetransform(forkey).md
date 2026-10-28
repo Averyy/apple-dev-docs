@@ -24,11 +24,11 @@ func decodeCGAffineTransform(forKey key: String) -> CGAffineTransform
 - (CGAffineTransform) decodeCGAffineTransformForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The affine transform.
 
-#### Discussion
+## Discussion
 
 Use this method to decode size information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-29jyx.md) method.
 

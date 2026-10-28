@@ -6,7 +6,7 @@
 
 A component description record.
 
-#### Overview
+## Overview
 
 Describes a class of components by their attributes. Fields that are set to `0` are treated as “don’t care.”
 
@@ -26,7 +26,7 @@ struct ComponentDescription {
 - **`componentFlags`**: A 32-bit field that contains flags describing required component capabilities. Set the high-order 8 bits to `0`. The low-order 24 bits are specific to each component type. These flags can be used to indicate the presence of features or capabilities in a given component.
 - **`componentFlagsMask`**: A 32-bit field that indicates which flags in the `componentFlags` field are relevant to this operation. For each flag in the `componentFlags` field that is to be considered as a search criterion, set the corresponding bit in this field to `1`. To ignore a flag, set the bit to `0`.
 
-#### Movie importer component flags
+## Movie importer component flags
 
 - **`canMovieImportInPlace`**: Set this bit if a movie import component must be able to create a movie from a file without having to write to a separate disk file. Examples include MPEG and AIFF import components.
 - **`movieImportSubTypeIsFileExtension`**: Set this bit if the component’s subtype is a file extension instead of a Macintosh file type. For example, if you require an import component that opens files with an extension of `.doc`, set this flag and set your component subtype to `'DOC '`.

@@ -25,7 +25,7 @@ var camera: MKMapCamera { get set }
 @property (nonatomic, copy) MKMapCamera * camera;
 ```
 
-#### Discussion
+## Discussion
 
 A camera object defines a point above the map’s surface from which to view the map. Applying a camera to a map can have the effect of giving the map a 3D-like appearance. You can use a camera to rotate the map so that it orients to match the user’s heading or to apply a pitch angle to tilt the plane of the map. You can check the map’s [`isPitchEnabled`](./ispitchenabled.md) property to determine whether the map can use pitch.
 

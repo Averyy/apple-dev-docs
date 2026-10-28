@@ -21,7 +21,7 @@ The local version of the record that includes any changes.
 var clientRecord: CKRecord? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is available only when the error’s `code` is [`serverRecordChanged`](./serverrecordchanged.md), which indicates the server’s record is newer than the version you try to save. Use this property’s value, along with those of [`ancestorRecord`](./ancestorrecord.md) and [`serverRecord`](./serverrecord.md), to resolve the conflict.
 

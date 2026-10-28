@@ -18,11 +18,11 @@ Add or replace an object in the dictionary.
 bool setObject(const char *aKey, const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 True on success, which retains the object, or false on failure which does not retain the object.
 
-#### Discussion
+## Discussion
 
 The object is added to the dictionary with the key object. If an object with the given key existed prior to the call it is replaced and released. The dictionary capacity will be grown if necessary.
 

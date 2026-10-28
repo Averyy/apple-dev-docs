@@ -21,7 +21,7 @@ The most recent transaction for the product.
 var latestTransaction: VerificationResult<Transaction>? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the customer has never purchased this product. The following code example illustrates requesting the most recent transaction for a product to determine whether the customer has purchased the product:
 

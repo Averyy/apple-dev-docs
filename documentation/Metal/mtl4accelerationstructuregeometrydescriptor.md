@@ -24,7 +24,7 @@ class MTL4AccelerationStructureGeometryDescriptor
 @interface MTL4AccelerationStructureGeometryDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t use this class directly. Use one of the derived classes instead.
 

@@ -16,7 +16,7 @@ Initializes a download monitor to report progress for the specified download.
 - (instancetype) initWithSourceURL:(NSURL *) sourceURL destinationURL:(NSURL *) destinationURL observedProgress:(NSProgress *) observedProgress liveActivityAccessToken:(NSData *) liveActivityAccessToken;
 ```
 
-#### Discussion
+## Discussion
 
 Generate an access token for the download by calling [`createAccessToken`](./createaccesstoken.md).
 

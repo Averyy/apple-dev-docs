@@ -18,7 +18,7 @@ An array of pixel format types compatible with the photo settings for delivery o
 @property (nonatomic, readonly) NSArray<NSNumber *> * availablePreviewPhotoPixelFormatTypes;
 ```
 
-#### Discussion
+## Discussion
 
 To enable delivery of preview-sized images along with the main image captured by a photo output, set the [`previewPhotoFormat`](./previewphotoformat.md) property using one of the [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md) values listed in this array.
 

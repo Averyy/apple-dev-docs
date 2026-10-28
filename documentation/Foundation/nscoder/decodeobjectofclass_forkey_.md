@@ -21,11 +21,11 @@ Decodes an object for the key, restricted to the specified class.
 - (id) decodeObjectOfClass:(Class) aClass forKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object.
 
-#### Discussion
+## Discussion
 
 If the coder responds [`true`](../../Swift/true.md) to [`requiresSecureCoding`](./requiressecurecoding.md), then an exception will be thrown if the class to be decoded does not implement [`NSSecureCoding`](../nssecurecoding.md) or is not [`isKind(of:)`](../../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) of `aClass`.
 

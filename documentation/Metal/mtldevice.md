@@ -45,7 +45,7 @@ protocol MTLDevice : NSObjectProtocol, Sendable
 - [Synchronizing passes with a fence](./synchronizing-passes-with-a-fence.md)
 - [Using the Metal 4 compilation API](./using-the-metal-4-compilation-api.md)
 
-#### Overview
+## Overview
 
 You can get the default [`MTLDevice`](./mtldevice.md) at runtime by calling [`MTLCreateSystemDefaultDevice()`](./mtlcreatesystemdefaultdevice%28%29.md) (see [Getting the default GPU](./getting-the-default-gpu.md)). Each Metal device instance represents a GPU and is the main starting point for your app’s interaction with it. With a Metal device instance, you can inspect a GPU’s features and capabilities (see [Device inspection](./device-inspection.md)) and create subsidiary type instances with its factory methods.
 

@@ -26,7 +26,7 @@ var preferredPeakBitRate: Double { get set }
 @property double preferredPeakBitRate;
 ```
 
-#### Discussion
+## Discussion
 
 Set `preferredPeakBitRate` to nonzero to indicate that the player should attempt to limit item playback to that bit rate, expressed in bits per second.
 

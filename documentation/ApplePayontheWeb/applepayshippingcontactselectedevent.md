@@ -16,7 +16,7 @@ An event object that contains the shipping address the user selects.
 interface ApplePayShippingContactSelectedEvent
 ```
 
-#### Overview
+## Overview
 
 The event handler [`onshippingcontactselected`](./applepaysession/onshippingcontactselected.md) receives this event object when the user selects a shipping contact.
 

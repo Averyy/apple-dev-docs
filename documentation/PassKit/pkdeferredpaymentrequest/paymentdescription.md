@@ -23,7 +23,7 @@ var paymentDescription: String { get set }
 @property (nonatomic, copy) NSString * paymentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use a plain language description that explains what the payment is for, for example “Hotel stay, 2 nights.”
 

@@ -19,7 +19,7 @@ let kSCValNetIPSecAuthenticationMethodHybrid: CFString
 extern CFStringRef const kSCValNetIPSecAuthenticationMethodHybrid;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPSecAuthenticationMethod`](./kscpropnetipsecauthenticationmethod-swift.var.md) key.
 

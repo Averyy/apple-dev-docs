@@ -25,7 +25,7 @@ class func detachNewThreadSelector(_ selector: Selector, toTarget target: Any, w
 + (void) detachNewThreadSelector:(SEL) selector toTarget:(id) target withObject:(id) argument;
 ```
 
-#### Discussion
+## Discussion
 
 The objects `aTarget` and `anArgument` are retained during the execution of the detached thread, then released. The detached thread is exited (using the [`exit()`](./exit%28%29.md) class method) as soon as `aTarget` has completed executing the `aSelector` method.
 

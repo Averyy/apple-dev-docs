@@ -19,7 +19,7 @@ func index(forIdentifier identifier: String!) -> Int
 - (NSUInteger) indexForIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the identifier is not found, returns `NSNotFound`.
 

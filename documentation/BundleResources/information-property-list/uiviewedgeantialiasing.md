@@ -17,7 +17,7 @@ A Boolean value that indicates whether Core Animation layers use antialiasing wh
 - **Name**: `UIViewEdgeAntialiasing` (Renders with edge antialiasing)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If `YES`, layers use antialiasing by default; otherwise, they don’t.
 

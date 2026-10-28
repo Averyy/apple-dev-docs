@@ -23,7 +23,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method frees all device instances that are not in use.
 

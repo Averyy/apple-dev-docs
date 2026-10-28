@@ -20,7 +20,7 @@ struct AlignmentOptions
 enum NSAlignmentOptions : unsigned long long;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](./nsintegralrectwithoptions%28_,_%29.md) function and other related methods, such as [`backingAlignedRect(_:options:)`](../AppKit/nsview/backingalignedrect%28_,options%29.md).
 

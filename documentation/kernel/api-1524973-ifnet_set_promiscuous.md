@@ -13,11 +13,11 @@
 errno_t ifnet_set_promiscuous(ifnet_t interface, int on);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Enable or disable promiscuous mode on the interface. The interface keeps an internal count of the number of times promiscuous mode has been enabled. Promiscuous mode is only disabled when this count reaches zero. Be sure to disable promiscuous mode only once for every time you enable it.
 

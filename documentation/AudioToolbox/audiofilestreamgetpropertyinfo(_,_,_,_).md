@@ -24,7 +24,7 @@ func AudioFileStreamGetPropertyInfo(_ inAudioFileStream: AudioFileStreamID, _ in
 extern OSStatus AudioFileStreamGetPropertyInfo(AudioFileStreamID inAudioFileStream, AudioFileStreamPropertyID inPropertyID, UInt32 *outPropertyDataSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

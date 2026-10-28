@@ -25,7 +25,7 @@ typealias CFTypeRef = AnyObject
 typedef const void * CFTypeRef;
 ```
 
-#### Discussion
+## Discussion
 
 All other Core Foundation opaque types derive from `CFTypeRef`. The functions, callbacks, data types, and constants defined for CFType can be used by any derived opaque type. Hence, `CFTypeRef` functions are referred to as “polymorphic functions.” You use `CFTypeRef` functions to retain and release objects, to compare and inspect objects, get descriptions of objects and opaque types, and to get object allocators.
 

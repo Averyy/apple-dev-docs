@@ -21,7 +21,7 @@ A collection of tips that can be presented one at a time using a specific order 
 final class TipGroup
 ```
 
-#### Overview
+## Overview
 
 Use this class to group multiple tips together and have them presented one at a time. You display tips in a specific order with an [`ordered`](./tipgroup/priority/ordered.md) priority or display the first tip eligible for display with a [`firstAvailable`](./tipgroup/priority/firstavailable.md) priority.
 

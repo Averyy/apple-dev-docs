@@ -28,7 +28,7 @@ Sets the model container in this view for storing the provided model type, creat
 @preconcurrency func modelContainer(for modelTypes: [any PersistentModel.Type], inMemory: Bool = false, isAutosaveEnabled: Bool = true, isUndoEnabled: Bool = false, onSetup: @escaping (Result<ModelContainer, any Error>) -> Void = { _ in }) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In this example, the `RecipesList` view sets a model container to use for all of its contents, configured to store instances of `Recipe`:
 

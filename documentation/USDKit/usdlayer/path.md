@@ -20,7 +20,7 @@ A path within a USD scene hierarchy.
 struct Path
 ```
 
-#### Overview
+## Overview
 
 Paths identify scene elements — prims like `/World/Character`, properties like `/World/Character.visibility`, and other addressable targets. Absolute paths begin with `/`; relative paths do not.
 

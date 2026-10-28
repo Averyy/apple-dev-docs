@@ -23,11 +23,11 @@ func intersects(_ other: Rect3DFloat) -> Bool
 static bool SPRect3DFloatIntersectsRect(SPRect3DFloat rect, SPRect3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two rectangles intersect.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether two rectangles intersect.
 

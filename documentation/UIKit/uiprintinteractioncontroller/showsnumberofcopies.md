@@ -22,7 +22,7 @@ var showsNumberOfCopies: Bool { get set }
 @property (nonatomic) BOOL showsNumberOfCopies;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

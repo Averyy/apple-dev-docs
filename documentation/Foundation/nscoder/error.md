@@ -25,7 +25,7 @@ var error: (any Error)? { get }
 @property (copy, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of this property depends on the setting of the [`decodingFailurePolicy`](./decodingfailurepolicy-swift.property.md) property. For [`NSCoder.DecodingFailurePolicy.raiseException`](./decodingfailurepolicy-swift.enum/raiseexception.md), this property is always `nil`. For [`NSCoder.DecodingFailurePolicy.setErrorAndReturn`](./decodingfailurepolicy-swift.enum/seterrorandreturn.md), a non-`nil` value represents the first error encountered while decoding the archive.
 

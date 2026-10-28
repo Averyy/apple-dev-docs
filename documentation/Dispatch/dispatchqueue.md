@@ -21,7 +21,7 @@ An object that manages the execution of tasks serially or concurrently on your a
 class DispatchQueue
 ```
 
-#### Overview
+## Overview
 
 Dispatch queues are FIFO queues to which your application can submit tasks in the form of block objects. Dispatch queues execute tasks either serially or concurrently. Work submitted to dispatch queues executes on a pool of threads managed by the system. Except for the dispatch queue representing your app’s main thread, the system makes no guarantees about which thread it uses to execute a task.
 
@@ -29,7 +29,7 @@ You schedule work items synchronously or asynchronously. When you schedule a wor
 
 > ❗ **Important**:  Attempting to synchronously execute a work item on the main queue results in deadlock.
 
-##### Avoiding Excessive Thread Creation
+### Avoiding Excessive Thread Creation
 
 When designing tasks for concurrent execution, do not call methods that block the current thread of execution. When a task scheduled by a concurrent dispatch queue blocks a thread, the system creates additional threads to run other queued concurrent tasks. If too many tasks block, the system may run out of threads for your app.
 

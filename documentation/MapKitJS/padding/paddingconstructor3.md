@@ -15,7 +15,7 @@ Creates a padding object and initializes it with the provided top and right side
 constructor(top: number, right: number);
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the left and bottom padding values to `0`.
 

@@ -24,7 +24,7 @@ var triangulationMode: GKMeshGraphTriangulationMode { get set }
 @property (nonatomic) GKMeshGraphTriangulationMode triangulationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The [`triangulate()`](./triangulate%28%29.md) method creates an internal model the empty space around the obstacles in the graph in the form of a polygon mesh. The mesh is generated such that the empty space divides into roughly even partitions, each of which is no more than a certain distance from an obstacle. After generating the mesh, the [`triangulate()`](./triangulate%28%29.md) method adds nodes to the graph corresponding to locations in the mesh. This property controls which locations in the mesh become nodes in the graph.
 

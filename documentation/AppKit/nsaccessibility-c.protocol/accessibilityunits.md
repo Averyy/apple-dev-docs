@@ -15,7 +15,7 @@ The units for the ruler.
 @property NSAccessibilityUnits accessibilityUnits;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element. For a complete list of units, see [`NSAccessibilityUnits`](../nsaccessibilityunits.md).
 

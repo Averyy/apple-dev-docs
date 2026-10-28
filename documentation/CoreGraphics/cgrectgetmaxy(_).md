@@ -25,7 +25,7 @@ func CGRectGetMaxY(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetMaxY(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The largest value for the y-coordinate of the rectangle.
 

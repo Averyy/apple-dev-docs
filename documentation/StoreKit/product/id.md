@@ -25,7 +25,7 @@ let id: String
 
 - [Generating JWS to sign App Store requests](../generating-jws-to-sign-app-store-requests.md)
 
-#### Discussion
+## Discussion
 
 You configure Apple In-App Purchases, including the product ID, in App Store Connect. For information, see [Overview for configuring Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 

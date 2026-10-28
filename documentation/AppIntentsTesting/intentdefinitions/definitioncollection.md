@@ -21,7 +21,7 @@ A collection of a specific type of definition.
 struct DefinitionCollection<Definition>
 ```
 
-#### Overview
+## Overview
 
 Retrieve individual definitions using their type identifier string as shown in the following example:
 

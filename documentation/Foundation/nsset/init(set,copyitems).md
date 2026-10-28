@@ -25,11 +25,11 @@ convenience init(set: Set<AnyHashable>, copyItems flag: Bool)
 - (instancetype) initWithSet:(NSSet<id> *) set copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized set that contains the members of `set`. The returned set might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 After an immutable s has been initialized in this way, it cannot be modified.
 

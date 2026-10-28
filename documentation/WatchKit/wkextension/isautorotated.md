@@ -19,7 +19,7 @@ var isAutorotated: Bool { get }
 @property (nonatomic, readonly, getter=isAutorotated) BOOL autorotated;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, when a user rotates their wrist–for example, to show a watchOS app to another person–the watch is likely to interpret this motion as dropping the wrist and may put the app to sleep. When autorotation is enabled, watchOS instead keeps the interface awake and rotates the content so that it is oriented properly for the viewer.
 

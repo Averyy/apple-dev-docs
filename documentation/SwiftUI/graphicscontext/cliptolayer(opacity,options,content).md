@@ -21,7 +21,7 @@ Adds a clip shape that you define in a new layer to the context’s array of cli
 mutating func clipToLayer(opacity: Double = 1, options: GraphicsContext.ClipOptions = ClipOptions(), content: (inout GraphicsContext) throws -> Void) rethrows
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to add a shape to the array of clip shapes that the context uses to define a clipping mask. Shapes that you add affect only subsequent drawing operations.
 

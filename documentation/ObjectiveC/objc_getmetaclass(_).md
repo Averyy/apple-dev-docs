@@ -25,11 +25,11 @@ func objc_getMetaClass(_ name: UnsafePointer<CChar>) -> Any!
 extern idobjc_getMetaClass(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The `Class` object for the metaclass of the named class, or `nil` if the class is not registered with the Objective-C runtime.
 
-#### Discussion
+## Discussion
 
 If the definition for the named class is not registered, this function calls the class handler callback and then checks a second time to see if the class is registered. However, every class definition must have a valid metaclass definition, and so the metaclass definition is always returned, whether it’s valid or not.
 

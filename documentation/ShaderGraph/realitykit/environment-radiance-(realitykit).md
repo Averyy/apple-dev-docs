@@ -14,7 +14,7 @@ Returns an environment’s diffuse and specular radiance value based on real-wor
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -29,7 +29,7 @@ Returns an environment’s diffuse and specular radiance value based on real-wor
 | `Diffuse Radiance` | Color3 |
 | `Specular Radiance` | Color3 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Base Color`**: The base display color of the surface. The color under pure white light.
 - **`Roughness`**: The level of roughness of the surface. This value ranges between `0` and `1.0`, with `0` representing a perfectly specular surface and `1.0` representing maximum roughness. The default value is `0`.
@@ -37,7 +37,7 @@ Returns an environment’s diffuse and specular radiance value based on real-wor
 - **`Metallic`**: The indicator if a surface is metallic or not. Set this value to `1` for metallic surfaces and `0` for nonmetallic surfaces. The default value is `0.0`.
 - **`Normal`**: The surface normal vector. The default value is `(0,0,0)`.
 
-#### Discussion:
+## Discussion:
 
 The Environment Radiance node has two outputs:
 

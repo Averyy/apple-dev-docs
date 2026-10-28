@@ -25,7 +25,7 @@ var buffer: (any MTLBuffer)? { get }
 @property (readonly, nullable) id<MTLBuffer> buffer;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `nil`, another [`MTLTexture`](../mtltexture.md) instance provides texture data.
 

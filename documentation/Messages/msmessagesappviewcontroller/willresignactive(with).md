@@ -21,7 +21,7 @@ func willResignActive(with conversation: MSConversation)
 - (void) willResignActiveWithConversation:(MSConversation *) conversation;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to perform any cleanup activities just before the Messages extension is dismissed. Avoid doing any time-consuming tasks in your implementation. This method should return as quickly as possible. Also, avoid making asynchronous calls, because the extension might terminate before the asynchronous tasks have completed.
 

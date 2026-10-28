@@ -25,11 +25,11 @@ func CFLocaleGetValue(_ locale: CFLocale!, _ key: CFLocaleKey!) -> CFTypeRef!
 extern CFTypeRefCFLocaleGetValue(CFLocaleRef locale, CFLocaleKey key);
 ```
 
-#### Return Value
+## Return Value
 
 The value corresponding to the given key in locale. The value may be any type of CFType object. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 Locale objects use key-value pairs to store property values. Use this function to get the value of a specific property.
 

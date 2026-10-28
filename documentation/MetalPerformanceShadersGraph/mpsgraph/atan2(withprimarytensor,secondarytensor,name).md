@@ -24,11 +24,11 @@ func atan2(withPrimaryTensor primaryTensor: MPSGraphTensor, secondaryTensor: MPS
 - (MPSGraphTensor *) atan2WithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates a `atan2` operation and returns the result tensor. It supports broadcasting as well. Graph computes arc tangent of primaryTensor over secondaryTensor.
 

@@ -15,15 +15,15 @@ Retrieves the preferred certificate for the specified name and key use.
 OSStatus SecCertificateCopyPreference(CFStringRef name, uint32 keyUsage, SecCertificateRef*certificate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is typically used to obtain the preferred encryption certificate for an email recipient.
 
-##### Special Considerations
+### Special Considerations
 
 Use [`SecCertificateCopyPreferred(_:_:)`](./seccertificatecopypreferred%28_,_%29.md) for new development instead.
 

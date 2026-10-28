@@ -25,7 +25,7 @@ static let NSUndoManagerDidCloseUndoGroup: NSNotification.Name
 extern NSNotificationName const NSUndoManagerDidCloseUndoGroupNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification originates in the implementation of the [`endUndoGrouping()`](../../undomanager/endundogrouping%28%29.md) method.
 

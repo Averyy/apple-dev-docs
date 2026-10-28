@@ -23,7 +23,7 @@ let hasExceededStateLimit: Bool
 - [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 When `true`, some states may have been omitted from the report. Metrics associated with the omitted states will be included in the full day interval entry along with non-state-aggregated metrics.
 

@@ -20,13 +20,13 @@ struct es_process_t
 typedef struct { ... } es_process_t;
 ```
 
-#### Overview
+## Overview
 
 For process events, this type also indicates the newly-executing process.
 
 You can extract values such as the process identifier (`PID`), user identifier (`UID`), and group identifier (`GID`) from the [`audit_token`](./es_process_t/audit_token.md) field by using functions defined in `libbsm.h`.
 
-##### Working with Code Signing
+### Working with Code Signing
 
 Fields related to code signing, such as [`cdhash`](./es_process_t/cdhash.md) and [`signing_id`](./es_process_t/signing_id.md), reflect the state of the process at the time Endpoint Security generated the message. In the specific case of process execution, this is after the `exec` completes in the kernel, but before any code in the process starts executing. At that point, XNU has validated the signature itself and has verified that the `cdhash` is correct. This second validation means that the hash of all individual page hashes in the Code Directory match the signed `cdhash`, essentially verifying the signature wasn’t tampered with. However, XNU doesn’t verify individual page hashes until the binary executes and pages in the corresponding pages. XNU doesn’t determine a binary shows signs of tampering until the individual pages page in, at which point XNU updates the code signing flags.
 

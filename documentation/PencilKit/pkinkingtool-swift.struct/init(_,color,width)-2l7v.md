@@ -18,7 +18,7 @@ Creates an ink tool object with the specified color and line width values.
 init(_ inkType: PKInkingTool.InkType, color: UIColor = UIColor.black, width: CGFloat? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new inking tool with the specified type, color, and width.
 

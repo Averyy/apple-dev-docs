@@ -23,7 +23,7 @@ optional func indexInWindow(for context: WKWebExtensionContext) -> Int
 - (NSUInteger) indexInWindowForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented for better performance. Defaults to the window’s [`tabs(for:)`](../wkwebextensionwindow/tabs%28for%29.md) method to find the index if not implemented.
 

@@ -24,7 +24,7 @@ var dateInterval: DateInterval { get }
 @property (copy, readonly) NSDateInterval * dateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](../../Foundation/nsdateinterval/startdate.md) property. Only [`HKWorkoutEventType.lap`](../hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](../hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
 

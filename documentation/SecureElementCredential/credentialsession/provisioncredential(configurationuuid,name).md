@@ -20,11 +20,11 @@ func provisionCredential(configurationUUID: UUID, name: String) async throws -> 
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Return Value
+## Return Value
 
 A [`CredentialSession.Credential`](./credential.md), initialized with the [`CredentialSession.Credential.State.installationPending`](./credential/state-swift.enum/installationpending.md) state.
 
-#### Discussion
+## Discussion
 
 This method installs into the Secure Element an applet bundle that you’ve submitted through the [Apple Business Register](https://register.apple.com/login) portal.
 

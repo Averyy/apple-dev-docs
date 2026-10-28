@@ -5,11 +5,11 @@
 
 Change a shape node’s appearance by supplying custom shader code.
 
-#### Overview
+## Overview
 
 When you want to go beyond the effects provided by a shape node’s properties, you can take full control of its stroking or filling by using the [`strokeShader`](./skshapenode/strokeshader.md) and [`fillShader`](./skshapenode/fillshader.md) properties, respectively. To do that, you supply custom OpenGL ES shader code embedded within a [`SKShader`](./skshader.md) object. Custom shaders allow you to create custom effects, such as dashed lines and gradient strokes, and custom fills, such as checkerboards and random patterns.
 
-##### Customize a Shape Node’s Stroke
+### Customize a Shape Node’s Stroke
 
 Shape nodes have two additional stroke-related properties that extend the properties defined by [`SKShader`](./skshader.md):
 
@@ -73,7 +73,7 @@ The generated shape node looks like this:
 
 ![Shape node with dashed stroke](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2647282@2x.png)
 
-##### Customize a Shape Node’s Fill
+### Customize a Shape Node’s Fill
 
 You create a custom fill for a shape node by writing shader code and embedding it within an [`SKShader`](./skshader.md) object. Assigning the shader to the [`fillShader`](./skshapenode/fillshader.md) property overrides the appearance that would otherwise be defined by [`fillColor`](./skshapenode/fillcolor.md) and [`fillTexture`](./skshapenode/filltexture.md).
 

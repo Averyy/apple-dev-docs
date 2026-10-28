@@ -25,11 +25,11 @@ func CFURLCopyFragment(_ anURL: CFURL!, _ charactersToLeaveEscaped: CFString!) -
 extern CFStringRefCFURLCopyFragment(CFURLRef anURL, CFStringRef charactersToLeaveEscaped);
 ```
 
-#### Return Value
+## Return Value
 
 The fragment, or `NULL` if no fragment exists. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 A fragment is the text following a “#”. These are generally used to indicate locations within a single file. This function removes all percent escape sequences except those for characters specified in `charactersToLeaveEscaped`.
 

@@ -23,7 +23,7 @@ case success
 INSearchForAccountsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after performing the search successfully. Your response should contain the details of the found accounts.
 

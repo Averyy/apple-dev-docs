@@ -21,7 +21,7 @@ convenience init(images: [TCControlImage])
 + (instancetype) contentsWithImages:(NSArray<TCControlImage *> *) images;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCControlContents` instance.
 

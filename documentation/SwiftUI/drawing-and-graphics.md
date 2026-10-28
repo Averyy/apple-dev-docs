@@ -5,7 +5,7 @@
 
 Enhance your views with graphical effects and customized drawings.
 
-#### Overview
+## Overview
 
 You create rich, dynamic user interfaces with the built-in views and [Shapes](./shapes.md) that SwiftUI provides. To enhance any view, you can apply many of the graphical effects typically associated with a graphics context, like setting colors, adding masks, and creating composites.
 

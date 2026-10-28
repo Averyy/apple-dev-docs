@@ -23,7 +23,7 @@ func scaledFont(for font: UIFont, maximumPointSize: CGFloat, compatibleWith trai
 - (UIFont *) scaledFontForFont:(UIFont *) font maximumPointSize:(CGFloat) maximumPointSize compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A version of the specified font with the appropriate style information applied to it, and scaled appropriately for the specified settings.
 

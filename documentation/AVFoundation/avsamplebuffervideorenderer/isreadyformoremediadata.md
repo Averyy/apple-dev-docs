@@ -26,7 +26,7 @@ var isReadyForMoreMediaData: Bool { get }
 @property (readonly, getter=isReadyForMoreMediaData) BOOL readyForMoreMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 An object conforming to AVQueuedSampleBufferRendering keeps track of the occupancy levels of its internal queues for the benefit of clients that enqueue sample buffers from non-real-time sources – i.e., clients that can supply sample buffers faster than they are consumed, and so need to decide when to hold back.
 

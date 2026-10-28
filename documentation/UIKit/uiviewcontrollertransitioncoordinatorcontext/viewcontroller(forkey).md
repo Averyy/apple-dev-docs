@@ -24,11 +24,11 @@ func viewController(forKey key: UITransitionContextViewControllerKey) -> UIViewC
 - (UIViewController *) viewControllerForKey:(UITransitionContextViewControllerKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller associated with the key.
 
-#### Discussion
+## Discussion
 
 The view controller associated with the [`from`](../uitransitioncontextviewcontrollerkey/from.md) key corresponds to the view controller that’s already onscreen. The view controller associated with the [`to`](../uitransitioncontextviewcontrollerkey/to.md) key corresponds to the view controller that’s to be animated onscreen.
 

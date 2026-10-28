@@ -21,7 +21,7 @@ An immediate display frequency.
 static var immediate: Tips.ConfigurationOption.DisplayFrequency { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you set this, the system shows tips with no limitations on frequency.
 

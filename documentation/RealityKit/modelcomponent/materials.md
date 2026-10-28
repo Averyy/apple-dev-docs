@@ -20,7 +20,7 @@ The materials that define the model’s visual appearance.
 var materials: [any Material]
 ```
 
-#### Discussion
+## Discussion
 
 Each [`MeshResource`](../meshresource.md) requires a set of materials. An entity that has no materials renders using a magenta striped material. To determine the number of materials a mesh requires, use [`expectedMaterialCount`](../meshresource/expectedmaterialcount.md).
 

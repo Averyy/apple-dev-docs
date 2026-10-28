@@ -21,7 +21,7 @@ nonisolated
 static func generateStaticMesh(positions: [SIMD3<Float>], faceIndices: [UInt16]) async throws -> ShapeResource
 ```
 
-#### Discussion
+## Discussion
 
 The triangle mesh is pre-processed into an optimized format before being used by the physics engine. The pre-processing step can take significant time if the position counts are large. To minimize this cost, the position count should be as small as possible. The returned `ShapeResource` can only be used under the following circumstances:
 

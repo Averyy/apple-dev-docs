@@ -18,7 +18,7 @@ The transform buffer for GPU instancing, or `nil` for single-instance rendering.
 final var instanceTransforms: LowLevelInstanceTransformResource? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When non-`nil`, the renderer issues a single instanced draw call with `instanceTransforms.instanceCount` instances. Each entry is a model-to-local transform; the renderer multiplies it by `transform` to produce the final world transform: `transform * instanceTransforms[i]`.
 

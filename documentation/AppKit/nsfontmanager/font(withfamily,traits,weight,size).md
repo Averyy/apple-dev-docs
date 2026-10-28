@@ -19,7 +19,7 @@ func font(withFamily family: String, traits: NSFontTraitMask, weight: Int, size:
 - (NSFont *) fontWithFamily:(NSString *) family traits:(NSFontTraitMask) traits weight:(NSInteger) weight size:(CGFloat) size;
 ```
 
-#### Return Value
+## Return Value
 
 A font with the specified characteristics if successful, or `nil` if not.
 

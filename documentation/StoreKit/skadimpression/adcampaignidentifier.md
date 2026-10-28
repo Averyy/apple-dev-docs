@@ -26,7 +26,7 @@ var adCampaignIdentifier: NSNumber { get set }
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 - [Identifying the parameters in install-validation postbacks](../identifying-the-parameters-in-install-validation-postbacks.md)
 
-#### Discussion
+## Discussion
 
 Ad networks set their own campaign identifiers, which must be an integer `>=1` and `<=100.`
 

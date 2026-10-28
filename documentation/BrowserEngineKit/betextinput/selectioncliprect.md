@@ -23,7 +23,7 @@ var selectionClipRect: CGRect { get }
 @property (nonatomic, readonly) CGRect selectionClipRect;
 ```
 
-#### Discussion
+## Discussion
 
 This property ensures that the user interface doesn’t breach the specified area.
 

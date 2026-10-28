@@ -27,7 +27,7 @@ func withMLTensorComputePolicy<Result>(_ computePolicy: MLComputePolicy, _ body:
 func withMLTensorComputePolicy<R>(_ computePolicy: MLComputePolicy, _ body: () async throws -> R) async rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 

@@ -32,11 +32,11 @@ class func descriptorForRequiredKeys() -> any CNKeyDescriptor
 + (id<CNKeyDescriptor>) descriptorForRequiredKeys;
 ```
 
-#### Return Value
+## Return Value
 
 Descriptor for all the keys that must be fetched.
 
-#### Discussion
+## Discussion
 
 Pass this descriptor to the `keysToFetch` of the [`CNContactFetchRequest`](../../Contacts/cncontactfetchrequest.md) if you want to display the contact in a [`CNContactViewController`](../cncontactviewcontroller.md).
 

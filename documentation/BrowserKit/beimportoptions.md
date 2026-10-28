@@ -24,7 +24,7 @@ class BEImportOptions
 
 - [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
-#### Overview
+## Overview
 
 The [`requestImport(for:completionHandler:)`](./bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md) returns an instance of this class, which indicates whether the import needs to source from files rather than direct browser-to-browser transfer.
 

@@ -19,7 +19,7 @@ func SKSummaryCopyParagraphAtIndex(_ summary: SKSummary!, _ i: CFIndex) -> Unman
 CFStringRef SKSummaryCopyParagraphAtIndex(SKSummaryRef summary, CFIndex i);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the specified paragraph, or `NULL` on failure.
 

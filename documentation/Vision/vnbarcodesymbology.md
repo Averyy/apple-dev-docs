@@ -16,7 +16,7 @@ struct VNBarcodeSymbology
 typedef NSString * VNBarcodeSymbology;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`supportedSymbologies()`](./vndetectbarcodesrequest/supportedsymbologies%28%29.md) to get the specific symbologies the request supports.
 

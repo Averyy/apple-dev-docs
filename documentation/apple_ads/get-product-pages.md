@@ -15,11 +15,11 @@ Fetches metadata of all your custom product pages.
 
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch your product page metadata using your `adamId` in the resource path. Use your `productPageId` to [`Create a Creative`](./create-a-creative.md) obtain a `creativeId`.
 
-##### Payload example: Get product pages
+### Payload example: Get product pages
 
 The `id` in the response is your `productPageId`, an identifier for your app product page. For example, `45812c9b-c296-43d3-c6a0-c5a02f74bf6e`.
 

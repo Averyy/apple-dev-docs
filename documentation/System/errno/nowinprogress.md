@@ -25,7 +25,7 @@ static var nowInProgress: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted an operation that takes a long time to complete, such as `connect(2)` or `connectx(2)`, on a nonblocking object. See also `fcntl(2)`.
 

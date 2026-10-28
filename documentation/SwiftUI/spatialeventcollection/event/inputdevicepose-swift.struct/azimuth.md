@@ -20,7 +20,7 @@ The azimuth angle.
 var azimuth: Angle
 ```
 
-#### Discussion
+## Discussion
 
 An angle of zero points along the content’s positive x-axis.
 

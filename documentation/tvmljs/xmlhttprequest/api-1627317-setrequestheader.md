@@ -31,7 +31,7 @@ void setRequestHeader(
 );
 ```
 
-#### Discussion
+## Discussion
 
 If the header already exists in the list of request headers, the specified value is combined with the value currently in the list to create a single request header.
 

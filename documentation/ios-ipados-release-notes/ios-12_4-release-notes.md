@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS 12.4 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12.4. The SDK comes bundled with Xcode 10.3. For information on the compatibility requirements for Xcode 10.3, see [Xcode 10.3 Release Notes](../Xcode-Release-Notes/xcode-10_3-release-notes.md).
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue where running an app in iOS 12.2 or later under the Leaks instrument resulted in random numbers of false-positive leaks for every leak check after the first one in a given run. You might still encounter this issue in Simulator, or in macOS apps when using Instruments from Xcode 10.2 and later. (48549361)
 

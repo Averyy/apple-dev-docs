@@ -22,11 +22,11 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (UITargetedDragPreview *) textDroppableView:(UIView<UITextDroppable> *) textDroppableView previewForDroppingAllItemsWithDefault:(UITargetedDragPreview *) defaultPreview;
 ```
 
-#### Return Value
+## Return Value
 
 A target drag preview to show during the drop animation, or `nil` to show the default preview.
 
-#### Discussion
+## Discussion
 
 You implement this method when you want to show a nondefault preview during the drop animation. If you return `nil`, the system shows the default preview.
 

@@ -15,11 +15,11 @@ Increase the iocount on a vnode.
 int vnode_get(vnode_t);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, ENOENT if the vnode is dead and without existing io-reference.
 
-#### Discussion
+## Discussion
 
 If vnode_get() succeeds, the resulting io-reference must be dropped with vnode_put(). This function succeeds unless the vnode in question is dead or in the process of dying AND the current iocount is zero. This means that it can block an ongoing reclaim which is blocked behind some other iocount.
 

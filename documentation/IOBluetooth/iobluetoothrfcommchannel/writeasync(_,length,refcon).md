@@ -19,11 +19,11 @@ func writeAsync(_ data: UnsafeMutableRawPointer!, length: UInt16, refcon: Unsafe
 - (IOReturn) writeAsync:(void *) data length:(UInt16) length refcon:(void *) refcon;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the data was buffered successfully.
 
-#### Discussion
+## Discussion
 
 The number of bytes to be sent must not exceed the channel MTU. If the return value is an error condition none of the data was sent. Once the data has been successfully passed to the hardware to be transmitted, the delegate method -rfcommChannelWriteComplete:refcon:status: will be called with the refcon that was passed to this method.
 

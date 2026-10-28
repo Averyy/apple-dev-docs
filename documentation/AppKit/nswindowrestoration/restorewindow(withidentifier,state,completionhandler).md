@@ -26,7 +26,7 @@ static func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifi
 + (void) restoreWindowWithIdentifier:(NSUserInterfaceItemIdentifier) identifier state:(NSCoder *) state completionHandler:(void (^)(NSWindow *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 At launch time, the application object uses this method to recreate a window that was preserved during a previous running of your application. Your implementation of this method can use the `identifier` string and the data in the `state` coder object to determine the type of window and associated objects to create. You only need to create the window. You do not need to restore the configuration of the window using the provided state. AppKit does that for you when you execute the completion handler with a valid window.
 

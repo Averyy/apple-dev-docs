@@ -25,7 +25,7 @@ let CKRecordNameZoneWideShare: String
 extern NSString * const CKRecordNameZoneWideShare;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an instance of [`CKShare`](./ckshare.md) for sharing a record zone, CloudKit automatically assigns this constant as the [`recordName`](./ckrecord/id/recordname.md) element of the share record’s [`recordID`](./ckrecord/recordid.md). After you save the share record to iCloud, you can fetch it by reconstructing the record ID using this constant, as the following example shows:
 

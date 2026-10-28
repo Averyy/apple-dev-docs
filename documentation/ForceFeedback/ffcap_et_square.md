@@ -18,7 +18,7 @@ var FFCAP_ET_SQUARE: Int { get }
 FFCAP_ET_SQUARE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a square force effect.
 

@@ -34,7 +34,7 @@ class AVCapturePhoto
 - [Capturing uncompressed image data](./capturing-uncompressed-image-data.md)
 - [Tracking photo capture progress](./tracking-photo-capture-progress.md)
 
-#### Overview
+## Overview
 
 When you capture photos with the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class, your delegate object receives each resulting image and related data in the form of an [`AVCapturePhoto`](./avcapturephoto.md) object. This object is an immutable wrapper from which you can retrieve various results of the photo capture.
 

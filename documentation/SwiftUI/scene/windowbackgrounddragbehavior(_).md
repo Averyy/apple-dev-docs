@@ -16,11 +16,11 @@ nonisolated
 func windowBackgroundDragBehavior(_ behavior: WindowInteractionBehavior) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene configured with the specified behavior of dragging it by its background background.
 
-#### Discussion
+## Discussion
 
 By default, or when you apply the [`automatic`](../windowinteractionbehavior/automatic.md) behavior, the system will determine the best suitable behavior based on the configuration of the modified scene.
 

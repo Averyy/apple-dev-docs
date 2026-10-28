@@ -9,19 +9,19 @@ Update a campaign’s name, status, budget, targeting, or bid strategy.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing campaign. It changes only the fields included in the request body. Omitted fields retain their current values. The `promotedObjectType` and `promotedObjectId` fields are **not** part of the `CampaignUpdate` schema. They’re immutable after campaign creation, so this endpoint can’t change them.
 
 For Apple Maps campaigns, `targeting.supplyPlacement` follows the same omit-to-leave-unchanged rule as every other update field. Omitting it doesn’t expand targeting to every placement. A campaign created with a single Maps placement (`MAPS_SEARCH_RESULTS` or `MAPS_SEARCH_HOME`) can’t be widened to target both placements through this endpoint. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md) for how to set up both placements at create time instead.
 
-#### Payload Examples
+## Payload Examples
 
 **Update Status**:
 
 Pause a campaign by setting `status` to `PAUSED`. Send only the fields you want to change.
 
-##### Request
+### Request
 
 Pauses a campaign by setting `status` to `PAUSED`. The request body needs only the changed field.
 
@@ -33,7 +33,7 @@ PUT /v1/campaigns/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -80,7 +80,7 @@ PUT /v1/campaigns/{id}
 
 Increase the daily budget by sending only the `dailyBudget` field. All other campaign fields remain unchanged.
 
-##### Request
+### Request
 
 Updates only the `dailyBudget` field to raise the campaign’s daily spend limit to $1,200. All other campaign fields remain unchanged.
 
@@ -97,7 +97,7 @@ PUT /v1/campaigns/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -144,7 +144,7 @@ PUT /v1/campaigns/{id}
 
 Rename a campaign by sending only the `name` field.
 
-##### Request
+### Request
 
 Renames a campaign by sending only the `name` field. No other fields change.
 
@@ -156,7 +156,7 @@ PUT /v1/campaigns/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -203,7 +203,7 @@ PUT /v1/campaigns/{id}
 
 The API returns this error when the campaign ID doesn’t exist or the campaign has been deleted.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/campaigns/999999999
@@ -213,7 +213,7 @@ PUT /v1/campaigns/999999999
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

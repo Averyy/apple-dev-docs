@@ -23,7 +23,7 @@ init(_ configuration: MenuStyleConfiguration)
 
 Available when `Label` is `MenuStyleConfiguration.Label` and `Content` is `MenuStyleConfiguration.Content`.
 
-#### Discussion
+## Discussion
 
 Use this initializer within the [`makeBody(configuration:)`](../menustyle/makebody%28configuration%29.md) method of a [`MenuStyle`](../menustyle.md) instance to create an instance of the menu being styled. This is useful for custom menu styles that modify the current menu style.
 

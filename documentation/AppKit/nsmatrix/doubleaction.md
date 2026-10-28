@@ -19,7 +19,7 @@ var doubleAction: Selector? { get set }
 @property (nullable) SEL doubleAction;
 ```
 
-#### Discussion
+## Discussion
 
 The double-click action of an [`NSMatrix`](../nsmatrix.md) is sent after the appropriate single-click action (for the [`NSCell`](../nscell.md) clicked, or for the [`NSMatrix`](../nsmatrix.md) if the [`NSCell`](../nscell.md) doesn’t have its own action). If there is no double-click action and the [`NSMatrix`](../nsmatrix.md) doesn’t ignore multiple clicks, the single-click action is sent twice. If the value of this property is a non-`nil` selector, this property also sets `ignoresMultiClick` to [`false`](../../Swift/false.md); otherwise, it leaves `ignoresMultiClick` unchanged.
 

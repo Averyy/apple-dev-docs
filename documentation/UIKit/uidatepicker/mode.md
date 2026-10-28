@@ -22,7 +22,7 @@ enum Mode
 enum UIDatePickerMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The mode determines whether dates, times, or both dates and times are displayed. You can also use it to specify the appearance of a countdown timer. You can set and retrieve the mode value through the [`datePickerMode`](./datepickermode.md) property.
 

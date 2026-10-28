@@ -19,7 +19,7 @@ string currency
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The currency property contains an ISO 4217 alpha-3 string that represents the currency of the price of the product.
 

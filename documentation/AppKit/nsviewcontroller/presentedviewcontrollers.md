@@ -19,7 +19,7 @@ var presentedViewControllers: [NSViewController]? { get }
 @property (readonly, nullable) NSArray<__kindof NSViewController *> * presentedViewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 There is a one-to-many relationship between the view controller whose [`presentedViewControllers`](./presentedviewcontrollers.md) property you are accessing, and the view controllers it is currently presenting.
 

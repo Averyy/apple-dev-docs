@@ -24,11 +24,11 @@ func layer(at layerIndex: Int) -> MTLRasterizationRateLayerDescriptor?
 - (MTLRasterizationRateLayerDescriptor *) layerAtIndex:(NSUInteger) layerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLRasterizationRateLayerDescriptor`](../mtlrasterizationratelayerdescriptor.md) instance for the given index, or `nil` if you haven’t set an instance for this index.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using array subscript syntax.
 

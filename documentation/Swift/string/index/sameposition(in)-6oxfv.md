@@ -21,11 +21,11 @@ Returns the position in the given string that corresponds exactly to this index.
 func samePosition(in characters: String) -> String.Index?
 ```
 
-#### Return Value
+## Return Value
 
 The position in `characters` that corresponds exactly to this index. If this index does not have an exact corresponding position in `characters`, this method returns `nil`. For example, an attempt to convert the position of a UTF-8 continuation byte returns `nil`.
 
-#### Discussion
+## Discussion
 
 This example first finds the position of a space (UTF-8 code point `32`) in a string’s `utf8` view and then uses this method find the same position in the string.
 

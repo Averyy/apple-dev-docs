@@ -26,7 +26,7 @@ func modifier<T>(_ modifier: T) -> ModifiedContent<Self, T>
 
 - [Reducing view modifier maintenance](../reducing-view-modifier-maintenance.md)
 
-#### Discussion
+## Discussion
 
 Use this modifier to combine a [`View`](../view.md) and a [`ViewModifier`](../viewmodifier.md), to create a new view. For example, if you create a view modifier for a new kind of caption with blue text surrounded by a rounded rectangle:
 

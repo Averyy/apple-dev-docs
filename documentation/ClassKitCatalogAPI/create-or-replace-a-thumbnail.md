@@ -9,7 +9,7 @@ Store an image that represents one of your app’s assignable activities.
 **Availability**:
 - ClassKit 1.0+
 
-#### Discussion
+## Discussion
 
 You can associate a thumbnail image with one or more contexts. Create an association by matching the `thumbnailId` value that you provide as a query parameter to this call with the `thumbnailId` field of a [`Context.Data`](./context/data-data.dictionary.md) object that you upload with a call to [`Create or Replace Contexts`](./create-or-replace-contexts.md). Upload the context that references a thumbnail before uploading the thumbnail.
 

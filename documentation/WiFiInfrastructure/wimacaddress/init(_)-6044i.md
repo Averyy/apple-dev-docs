@@ -17,7 +17,7 @@ Create a MAC Address from the provided data.
 init?(_ macAddressData: Data)
 ```
 
-#### Return Value
+## Return Value
 
 The mac address, or `nil` if the input data was invalid and it could not be constructed.
 

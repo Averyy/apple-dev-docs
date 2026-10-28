@@ -20,7 +20,7 @@ func addChild(_ child: XMLNode)
 - (void) addChild:(NSXMLNode *) child;
 ```
 
-#### Discussion
+## Discussion
 
 The new node has an index value that is one greater than the last of the current children.
 

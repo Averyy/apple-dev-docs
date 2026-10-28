@@ -4,13 +4,13 @@
 
 Displays images the user can navigate between.
 
-#### Overview
+## Overview
 
 Use the `showcaseTemplate` element to display a row of images with descriptions associated with each image; for example, displaying a set of screenshots to promote a movie. Users can scroll between images. When an image comes into focus, the size of the image is increased to be slightly larger than the other images. The following figure shows the basic layout for a showcaseTemplate page. The default theme for a showcase template is `dark`.
 
 ![Layout diagram showing a banner area in the upper-right corner of the screen, and three lockup areas below.](https://developer.apple.com/tutorials/images/com.apple.TVML/showcasetemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `showcaseTemplate` element in TVML format.
 
@@ -31,7 +31,7 @@ The following listing shows the main elements of the `showcaseTemplate` element 
 </showcaseTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Background visual and audio.
 - **[banner](./banner.md)**: Elements that describe what the page shows and provides buttons for user options.
@@ -42,7 +42,7 @@ The following listing shows the main elements of the `showcaseTemplate` element 
 - **[section](./section.md)**: A group of `lockup` elements.
 - **[title](./title.md)**: Text that describes its containing element.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `showcaseTemplate` example.
 

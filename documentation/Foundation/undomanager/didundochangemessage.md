@@ -21,7 +21,7 @@ A message that an undo manager sends after undoing a change.
 struct DidUndoChangeMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md). Because this is a “did”-style message, the undo manager sends the message after it performs the undo.
 

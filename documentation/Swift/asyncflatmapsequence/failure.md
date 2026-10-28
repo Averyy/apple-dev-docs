@@ -23,7 +23,7 @@ typealias Failure = Base.Failure
 
 Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The flat map sequence produces the type of error in the base asynchronous sequence. By construction, the sequence produced by the `transform` closure must either produce this type of error or not produce errors at all.
 

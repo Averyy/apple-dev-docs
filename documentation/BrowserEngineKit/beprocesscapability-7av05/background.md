@@ -17,7 +17,7 @@ A capability that enables an extension process to work in the background.
 + (instancetype) background;
 ```
 
-#### Discussion
+## Discussion
 
 This capability grants the helper extension process the ability to finish work in the background.
 

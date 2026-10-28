@@ -18,7 +18,7 @@ The index into the output viewports and scissor rects arrays for this camera.
 var viewportArrayIndex: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to the vertex amplification viewport array index in `MTLRenderCommandEncoder`.
 

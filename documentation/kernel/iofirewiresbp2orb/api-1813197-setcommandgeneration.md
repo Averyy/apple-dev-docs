@@ -12,7 +12,7 @@ virtual void setCommandGeneration(
  UInt32gen );
 ```
 
-#### Overview
+## Overview
 
 This sets the bus generation this ORB should be appended in. It is only meaningful when combined with the kFWSBP2CommandCheckGeneration flags above.
 

@@ -19,7 +19,7 @@ var usesPrivateBrowsing: Bool { get }
 @property (nonatomic, readonly) BOOL usesPrivateBrowsing;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if active; otherwise [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ var availableCategories: [AVAudioSession.Category] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableCategories;
 ```
 
-#### Discussion
+## Discussion
 
 Not every device supports every audio session category. For instance, the [`record`](./category-swift.struct/record.md) category isn’t available on a device that doesn’t support audio input.
 

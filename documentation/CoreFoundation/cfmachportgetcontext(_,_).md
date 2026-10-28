@@ -25,7 +25,7 @@ func CFMachPortGetContext(_ port: CFMachPort!, _ context: UnsafeMutablePointer<C
 extern void CFMachPortGetContext(CFMachPortRef port, CFMachPortContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 The context version number for CFMachPort objects is currently `0`. Before calling this function, you need to initialize the `version` member of `context` to `0`.
 

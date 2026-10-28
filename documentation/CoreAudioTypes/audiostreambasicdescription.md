@@ -25,7 +25,7 @@ struct AudioStreamBasicDescription
 struct AudioStreamBasicDescription;
 ```
 
-#### Overview
+## Overview
 
 You can configure an audio stream basic description (ASBD) to specify a linear PCM format or a constant bit rate (CBR) format that has channels of equal size. For variable bit rate (VBR) audio, and for CBR audio where the channels have unequal sizes, also use an [`AudioStreamPacketDescription`](./audiostreampacketdescription.md) structure to additionally describe each packet.
 

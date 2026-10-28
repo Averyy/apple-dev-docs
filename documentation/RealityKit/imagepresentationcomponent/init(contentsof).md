@@ -15,7 +15,7 @@ Creates a new component by loading a monoscopic texture and (if present) a pair 
 init(contentsOf url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Throws an error if it is not possible to load even a monoscopic texture from the image file.
 

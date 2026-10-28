@@ -20,11 +20,11 @@ func firstRect(forCharacterRange range: NSRange, actualRange: NSRangePointer?) -
 - (NSRect) firstRectForCharacterRange:(NSRange) range actualRange:(NSRangePointer) actualRange;
 ```
 
-#### Return Value
+## Return Value
 
 The boundary rectangle for the given range of characters, in screen coordinates. The rectangle’s  `size` value can be negative if the text flows to the left.
 
-#### Discussion
+## Discussion
 
 If `aRange` spans multiple lines of text in the text view, the rectangle returned is the one surrounding the characters in the first line. In that case `actualRange` contains the range covered by the first rect, so you can query all line fragments by invoking this method repeatedly. If the length of `aRange` is 0 (as it would be if there is nothing selected at the insertion point), the rectangle coincides with the insertion point, and its width is 0.
 

@@ -25,7 +25,7 @@ struct PodcastContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for podcast playback, including individual episodes and series.
 

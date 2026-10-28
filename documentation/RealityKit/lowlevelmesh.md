@@ -25,7 +25,7 @@ class LowLevelMesh
 
 - [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)
 
-#### Overview
+## Overview
 
 Use `LowLevelMesh` when you want to bring your own vertex format to RealityKit or update your data frequently. To update your data in `LowLevelMesh`, you can either use Swift for CPU processing, or Metal Compute Shaders for GPU processing.
 

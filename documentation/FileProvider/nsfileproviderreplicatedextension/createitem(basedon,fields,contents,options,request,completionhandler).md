@@ -24,11 +24,11 @@ func createItem(basedOn itemTemplate: NSFileProviderItem, fields: NSFileProvider
 - (NSProgress *) createItemBasedOnTemplate:(NSFileProviderItem) itemTemplate fields:(NSFileProviderItemFields) fields contents:(NSURL *) url options:(NSFileProviderCreateItemOptions) options request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSFileProviderItem createdItem, NSFileProviderItemFields stillPendingFields, BOOL shouldFetchContent, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](../../Foundation/progress/cancel%28%29.md)  on the progress object when an error occurs.
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user creates a new item or imports an item into the file provider. The system manages the local copy of the item. You’re responsible for syncing and saving the item to your remote storage.
 

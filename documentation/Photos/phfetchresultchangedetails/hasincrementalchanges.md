@@ -24,7 +24,7 @@ var hasIncrementalChanges: Bool { get }
 @property (atomic, assign, readonly) BOOL hasIncrementalChanges;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, use the [`insertedIndexes`](./insertedindexes.md), [`removedIndexes`](./removedindexes.md), and [`changedIndexes`](./changedindexes.md) properties (or the [`insertedObjects`](./insertedobjects.md), [`removedObjects`](./removedobjects.md), and [`changedObjects`](./changedobjects.md) properties) to find out which objects in the fetch result have been added, removed, or updated. You can also use the [`hasMoves`](./hasmoves.md) property and [`enumerateMoves(_:)`](./enumeratemoves%28_%29.md) method to find out which objects in the fetch result have been rearranged. These properties can be useful for updating a collection view or similar interface that displays the fetch result’s contents.
 

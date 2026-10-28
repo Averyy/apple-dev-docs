@@ -20,7 +20,7 @@ var source: String? { get }
 @property (copy, readonly, nullable) NSString * source;
 ```
 
-#### Discussion
+## Discussion
 
 It is possible for an `NSAppleScript` that has been instantiated with [`init(contentsOf:error:)`](./init%28contentsof,error%29.md) to be a script for which the source code is not available but is nonetheless executable.
 

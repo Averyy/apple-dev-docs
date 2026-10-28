@@ -21,7 +21,7 @@ Copies the elements of a sequence to the end of this array.
 mutating func append(copying newElements: some Sequence<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold enough elements, then this reallocates the array’s storage to extend its capacity, using a geometric growth rate. If the input sequence does not provide a precise estimate of its count, then the array’s storage may need to be resized more than once.
 

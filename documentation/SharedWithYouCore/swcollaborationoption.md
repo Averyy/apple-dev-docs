@@ -23,7 +23,7 @@ class SWCollaborationOption
 @interface SWCollaborationOption : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `SWCollaborationOption` represents a user-configurable setting for a collaboration that the system uses to share the document. The system displays these options on the Share Sheet or in Messages.
 

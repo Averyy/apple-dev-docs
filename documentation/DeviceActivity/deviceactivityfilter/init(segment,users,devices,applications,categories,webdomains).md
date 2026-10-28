@@ -17,7 +17,7 @@ Creates a new filter for the specified users and devices.
 init(segment segmentInterval: DeviceActivityFilter.SegmentInterval = .hourly(), users: DeviceActivityFilter.Users, devices: DeviceActivityFilter.Devices, applications: Set<ApplicationToken> = [], categories: Set<ActivityCategoryToken> = [], webDomains: Set<WebDomainToken> = [])
 ```
 
-#### Discussion
+## Discussion
 
 If you specify `applications`, `categories` or `webDomains`, then the system provides activity data for the requested application, categories, and web domains only. Conversely, if you do not specify any `applications`, `categories`, or `webDomains`, then the system provides data for all types of device activity.
 

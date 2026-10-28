@@ -20,7 +20,7 @@ Binds multiple intersection function tables to the buffer argument table, allowi
 - (void) setIntersectionFunctionTables:(id<MTLIntersectionFunctionTable> const[]) intersectionFunctionTables withBufferRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `visibleFunctionTables` be the same as the length of `range`.
 

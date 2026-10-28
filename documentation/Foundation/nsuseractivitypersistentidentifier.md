@@ -25,7 +25,7 @@ typealias NSUserActivityPersistentIdentifier = String
 typedef NSString * NSUserActivityPersistentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 In Objective-C, [`NSUserActivity`](./nsuseractivity.md) persistent identifiers are a type alias of [`NSString`](./nsstring.md). In Swift, [`NSUserActivity`](./nsuseractivity.md) persistent identifiers use the [`NSUserActivityPersistentIdentifier`](./nsuseractivitypersistentidentifier.md) structure.
 

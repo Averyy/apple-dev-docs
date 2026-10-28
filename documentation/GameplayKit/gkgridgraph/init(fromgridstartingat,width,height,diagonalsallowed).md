@@ -24,11 +24,11 @@ init(fromGridStartingAt position: vector_int2, width: Int32, height: Int32, diag
 - (instancetype) initFromGridStartingAt:(vector_int2) position width:(int) width height:(int) height diagonalsAllowed:(BOOL) diagonalsAllowed;
 ```
 
-#### Return Value
+## Return Value
 
 A new grid graph.
 
-#### Discussion
+## Discussion
 
 All connections created through this method are bidirectional.
 

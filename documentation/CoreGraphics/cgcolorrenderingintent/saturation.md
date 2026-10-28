@@ -23,7 +23,7 @@ case saturation
 kCGRenderingIntentSaturation
 ```
 
-#### Discussion
+## Discussion
 
 Preserve the relative saturation value of the colors when converting into the gamut of the output device. The result is an image with bright, saturated colors. Saturation intent is good for reproducing images with low detail, such as presentation charts and graphs.
 

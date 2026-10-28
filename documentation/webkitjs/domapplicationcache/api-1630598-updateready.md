@@ -15,7 +15,7 @@ Resources have finished downloading and the new cache is ready to be used.
 const unsigned short UPDATEREADY;
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 const unsigned short UPDATEREADY = 4;

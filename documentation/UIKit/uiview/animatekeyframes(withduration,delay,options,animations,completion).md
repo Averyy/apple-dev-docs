@@ -27,7 +27,7 @@ class func animateKeyframes(withDuration duration: TimeInterval, delay: TimeInte
 + (void) animateKeyframesWithDuration:(NSTimeInterval) duration delay:(NSTimeInterval) delay options:(UIViewKeyframeAnimationOptions) options animations:(void (^)()) animations completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates an animation block that you can use to set up a keyframe-based animation. The keyframes themselves are not part of the initial animation block you create using this method. Inside the `animations` block, you must add the keyframe time and animation data by calling the [`addKeyframe(withRelativeStartTime:relativeDuration:animations:)`](./addkeyframe%28withrelativestarttime,relativeduration,animations%29.md) method one or more times. Adding keyframes causes the animation to animate the view from its current value to the value of the first keyframe, then to the value of the next keyframe, and so on at the times you specify.
 

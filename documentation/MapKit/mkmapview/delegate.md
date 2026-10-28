@@ -25,7 +25,7 @@ weak var delegate: (any MKMapViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<MKMapViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A map view sends messages to its delegate regarding the loading of map data and changes in the portion of the map it displays. The delegate also manages the annotation views that highlight points of interest on the map.
 

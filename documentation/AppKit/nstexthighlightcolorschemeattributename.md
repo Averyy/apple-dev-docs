@@ -15,7 +15,7 @@ The custom highlight color to apply to the text.
 extern NSAttributedStringKey const NSTextHighlightColorSchemeAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSTextHighlightColorScheme`](./nstexthighlightcolorscheme.md) structure. The default value of this attribute is `nil`, which applies the default system highlight color to the text when the [`NSTextHighlightStyleAttributeName`](./nstexthighlightstyleattributename.md) attribute is present.
 

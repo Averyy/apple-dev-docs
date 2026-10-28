@@ -17,7 +17,7 @@ An object that generates a 3D asset from room-capture data.
 class RoomBuilder
 ```
 
-#### Overview
+## Overview
 
 This class processes data from an earlier scan to generate a detailed [`CapturedRoom`](./capturedroom.md) object.
 

@@ -21,7 +21,7 @@ Sets a closure for the sample buffer to call when it’s invalidated.
 func setInvalidateHandler(_ body: @escaping (CMSampleBuffer) throws -> Void) throws
 ```
 
-#### Discussion
+## Discussion
 
 A sample buffer can only have one invalidation handler.
 

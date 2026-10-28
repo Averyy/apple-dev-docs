@@ -16,7 +16,7 @@ Returns the connection used by the receiver.
 @property (retain, readonly) NSConnection * connectionForProxy;
 ```
 
-#### Return Value
+## Return Value
 
 The connection used by the receiver.
 

@@ -29,7 +29,7 @@ class func fetchHistory(after date: Date) -> Self
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Return Value
+## Return Value
 
 A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) with an initial date boundary.
 

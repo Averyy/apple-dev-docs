@@ -19,7 +19,7 @@ var itemSpacing: CGFloat { get set }
 @property CGFloat itemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.0`.
 

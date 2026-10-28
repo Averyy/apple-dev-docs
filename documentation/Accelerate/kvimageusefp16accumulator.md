@@ -25,7 +25,7 @@ var kvImageUseFP16Accumulator: Int { get }
 kvImageUseFP16Accumulator
 ```
 
-#### Discussion
+## Discussion
 
 Pass this flag to floating-point 16-bit geometry and convolution functions to specify that vImage uses 16-bit floating-point arithmetic. Setting this flag improves performance by up to 2x but at the expense of a less precise result. The loss in precision is typically 2 or 3 bits. However, this may be different for some functions and kernels, and you should verify if a lower-precision arithmetic is suitable for your requirements.
 

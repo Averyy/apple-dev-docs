@@ -5,7 +5,7 @@
 
 Modifies the image size of a clip.
 
-#### Overview
+## Overview
 
 Use this element to modify the image size of a clip to fill, fit, or remain unchanged within its container’s frame size. The `type` attribute specifies the conform method to apply, which defaults to `fit`.
 

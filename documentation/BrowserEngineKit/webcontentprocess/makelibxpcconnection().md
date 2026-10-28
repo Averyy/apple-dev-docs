@@ -17,11 +17,11 @@ Creates a new XPC connection to the extension process.
 func makeLibXPCConnection() throws -> xpc_connection_t
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the new XPC connection.
 
-#### Discussion
+## Discussion
 
 When you create an [`xpc_connection_t`](../../XPC/xpc_connection_t.md) in your browser app using this method, the system calls your extension’s [`handle(xpcConnection:)`](../webcontentextension/handle%28xpcconnection%29.md) method to supply the remote end of the connection to your extension process.
 

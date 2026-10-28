@@ -25,7 +25,7 @@ class DDMatchFlightNumber
 @interface DDMatchFlightNumber : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns a flight number match in a `DDMatchFlightNumber` object, which contains an airline name and flight number.
 

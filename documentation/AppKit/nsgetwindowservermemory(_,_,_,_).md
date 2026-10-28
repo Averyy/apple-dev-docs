@@ -21,7 +21,7 @@ func NSGetWindowServerMemory(_ context: Int, _ virtualMemory: UnsafeMutablePoint
 extern NSInteger NSGetWindowServerMemory(NSInteger context, NSInteger *virtualMemory, NSInteger *windowBackingMemory, NSString **windowDumpString);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates the amount of memory being used at the moment by the given `context`. If `NULL` is passed for `context`, the current context is used. The amount of virtual memory used by the current context is returned in the int pointed to by `virtualMemory`; the amount of window backing store used by windows owned by the current context is returned in the int pointed to by `windowBackingMemory`. The sum of these two numbers is the amount of the memory that this context is responsible for.
 

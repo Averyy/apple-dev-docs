@@ -28,7 +28,7 @@ func finishPickerDiscovery() async throws
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 Use this method if you previously set the picker display setting [`discoveryTimeout`](../aspickerdisplaysettings/discoverytimeout-swift.property.md) to [`unbounded`](../aspickerdisplaysettings/discoverytimeout-swift.struct/unbounded.md) in order to perform manual filtering of discovered accessories. Calling this method finishes the discovery session in the picker and shows a timeout error if the session didn’t find any desired accessories.
 

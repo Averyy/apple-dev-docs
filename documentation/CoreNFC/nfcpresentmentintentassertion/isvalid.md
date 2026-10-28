@@ -17,7 +17,7 @@ A Boolean property that indicates whether the presentment intent assertion insta
 final var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` when you first acquire a presentment intent assertion. It becomes `false` when any of the following occur:
 

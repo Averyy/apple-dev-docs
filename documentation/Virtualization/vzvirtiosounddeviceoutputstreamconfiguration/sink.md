@@ -19,7 +19,7 @@ var sink: VZAudioOutputStreamSink? { get set }
 @property (strong, nullable) VZAudioOutputStreamSink * sink;
 ```
 
-#### Discussion
+## Discussion
 
 Not specifying a sink results in a default handler that suppresses the audio. The default is `nil`.
 

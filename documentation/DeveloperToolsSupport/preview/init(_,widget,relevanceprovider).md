@@ -16,7 +16,7 @@ Creates a preview of a relevance-driven widget.
 init<Provider>(_ name: String? = nil, widget: @escaping @MainActor () -> some Widget, relevanceProvider: @escaping @MainActor () -> Provider) where Provider : RelevanceEntriesProvider
 ```
 
-#### Discussion
+## Discussion
 
 The `#Preview` macro expands into a declaration that calls this initializer. To create a preview that appears in the canvas, you must use the macro, not instantiate a Preview directly.
 

@@ -24,7 +24,7 @@ func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope
 - (id<MTLCaptureScope>) newCaptureScopeWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Discussion
+## Discussion
 
 The capture scope captures commands in command buffers created on any command queues created by the device object.
 

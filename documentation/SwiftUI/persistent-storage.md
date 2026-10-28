@@ -5,7 +5,7 @@
 
 Store data for use across sessions of your app.
 
-#### Overview
+## Overview
 
 The operating system provides ways to store data when your app closes, so that when people open your app again later, they can continue working without interruption. The mechanism that you use depends on factors like what and how much you need to store, whether you need serialized or random access to the data, and so on.
 

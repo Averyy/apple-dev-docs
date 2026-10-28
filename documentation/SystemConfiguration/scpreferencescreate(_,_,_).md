@@ -19,7 +19,7 @@ func SCPreferencesCreate(_ allocator: CFAllocator?, _ name: CFString, _ prefsID:
 SCPreferencesRefSCPreferencesCreate(CFAllocatorRef allocator, CFStringRef name, CFStringRef prefsID);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the new preferences session. You must release the returned value.
 

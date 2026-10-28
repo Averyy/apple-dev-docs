@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_BeginReserved: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_BeginReserved
 ```
 
-#### Discussion
+## Discussion
 
 The values in the range between `kAudioChannelLayoutTag_BeginReserved` and [`kAudioChannelLayoutTag_EndReserved`](./kaudiochannellayouttag_endreserved.md) are for future Apple use. Do not create layout tags that fall in the range created by these values.
 

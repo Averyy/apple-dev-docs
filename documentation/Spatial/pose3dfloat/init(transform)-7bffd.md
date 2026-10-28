@@ -21,11 +21,11 @@ Creates a pose with with a position and rotation that are defined by an affine t
 init?(transform: AffineTransform3DFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a position and rotation that are defined by an affine transform.
 
-#### Discussion
+## Discussion
 
 > **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.
 

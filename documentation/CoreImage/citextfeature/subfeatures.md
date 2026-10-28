@@ -24,7 +24,7 @@ var subFeatures: [Any]? { get }
 @property (readonly, nullable) NSArray * subFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 A text detector can identify both a major region that is likely to contain text as well as the areas within that region that likely to contain individual text features. Such features might be single characters, groups of closely-packed characters, or entire words.
 

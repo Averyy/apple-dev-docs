@@ -19,7 +19,7 @@ static let sortDirection: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilitySortDirectionAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See [Column Sort Direction](../../column-sort-direction.md) for possible values.
 

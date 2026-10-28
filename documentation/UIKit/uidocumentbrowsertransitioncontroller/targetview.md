@@ -22,7 +22,7 @@ weak var targetView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * targetView;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set, the transition controller acts as a [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) object for the transition from the browser to the document view controller. It provides transition animation that zooms and cross fades from the document’s thumbnail to the target view.
 

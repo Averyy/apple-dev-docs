@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether passive entry is currently availa
 func isPassiveEntryAvailable(forVehicle vehicleID: String) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if passive entry is available, or `false` if the feature is not available.
 

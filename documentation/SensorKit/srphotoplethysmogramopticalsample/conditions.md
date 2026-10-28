@@ -21,7 +21,7 @@ var conditions: [SRPhotoplethysmogramOpticalSample.Condition] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * conditions;
 ```
 
-#### Discussion
+## Discussion
 
 Use these flags to determine whether the data is valid or other system conditions occur during the recording that impact the data.
 

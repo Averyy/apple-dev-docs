@@ -31,7 +31,7 @@ var speakableGroupNames: [INSpeakableString]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INSpeakableString *> * speakableGroupNames;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more strings, your search should return only messages that sent to the specified groups. Use the operator in the [`speakableGroupNamesOperator`](./speakablegroupnamesoperator.md) property to determine whether to search for messages containing all, some, or none of the specified groups.
 

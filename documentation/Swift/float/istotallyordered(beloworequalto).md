@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether this instance should precede or tie p
 func isTotallyOrdered(belowOrEqualTo other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this value is ordered below or the same as `other` in a total ordering of the floating-point type; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This relation is a refinement of the less-than-or-equal-to operator (`<=`) that provides a total order on all values of the type, including signed zeros and NaNs.
 

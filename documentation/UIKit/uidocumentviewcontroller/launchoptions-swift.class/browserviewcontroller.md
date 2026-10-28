@@ -26,7 +26,7 @@ var browserViewController: UIDocumentBrowserViewController { get set }
 
 - [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 Use this property to configure the launch scene’s document browser.
 

@@ -19,7 +19,7 @@ Tells the view when one or more fingers are raised from the view.
 @preconcurrency override dynamic func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 
-#### Discussion
+## Discussion
 
 See [`touchesEnded(_:with:)`](../entitytranslationgesturerecognizer/touchesended%28_,with%29.md) for more information.
 

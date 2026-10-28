@@ -25,11 +25,11 @@ class func hide() -> SCNAction
 + (SCNAction *) hide;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`isHidden`](../scnnode/ishidden.md) property is set to [`true`](../../Swift/true.md).
 

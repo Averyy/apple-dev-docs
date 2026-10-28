@@ -20,7 +20,7 @@ Snapshot of an entry’s token totals.
 struct Usage
 ```
 
-#### Overview
+## Overview
 
 Producers report the current cumulative totals on every update, and consumers replace prior totals wholesale.
 

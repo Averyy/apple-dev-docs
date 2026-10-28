@@ -21,7 +21,7 @@ func setOnMouseEntered(_ flag: Bool)
 - (void) setOnMouseEntered:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Accepting [`mouseEntered(with:)`](./mouseentered%28with%29.md) event messages allows the cursor to be made the current cursor when the cursor enters a view’s cursor rectangle.
 

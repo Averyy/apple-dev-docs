@@ -20,7 +20,7 @@ class NSScriptObjectSpecifier
 @interface NSScriptObjectSpecifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NSScriptObjectSpecifier` is the abstract superclass for classes that instantiate objects called “object specifiers.” An object specifier represents an AppleScript reference form, which is a natural-language expression such as `words 10 through 20` or `front document` or `words whose color is red`.
 

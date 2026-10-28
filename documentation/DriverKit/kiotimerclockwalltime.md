@@ -18,7 +18,7 @@ The system’s wall-clock time, expressed as the amount of time since the Epoch.
 kIOTimerClockWallTime
 ```
 
-#### Discussion
+## Discussion
 
 This constant is the type of clock obtained by passing `CLOCK_UPTIME_RAW` to `clock_gettime_nsec_np(_:)`. It’s equivalent to a value from `mach_absolute_time()`, but in nanoseconds.
 

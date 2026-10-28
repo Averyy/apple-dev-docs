@@ -19,7 +19,7 @@ func PMPrinterGetState(_ printer: PMPrinter, _ state: UnsafeMutablePointer<PMPri
 OSStatus PMPrinterGetState(PMPrinter printer, PMPrinterState *state);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

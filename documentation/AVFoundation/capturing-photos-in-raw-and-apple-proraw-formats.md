@@ -5,7 +5,7 @@
 
 Support professional photography workflows by enabling minimally processed image capture in your camera app.
 
-#### Overview
+## Overview
 
 By default, the image-capture pipeline uses advanced computational photography techniques to achieve the highest quality images, and delivers the processed result to your app in a compressed format for efficient storage and display. Processed formats are a great choice in many cases, but RAW formats contain minimally processed image data from the camera sensor, which gives your app users more creative control.
 
@@ -15,7 +15,7 @@ Beginning in iOS 14.3, and available on iPhone 12 Pro and Pro Max, you can use t
 
 > 💡 **Tip**:  You can use Core Image to display and edit RAW and Apple ProRAW files. See the [`CIRAWFilter`](../CoreImage/cirawfilter.md) class’s [`init(imageURL:)`](../CoreImage/cirawfilter/init%28imageurl%29.md) initializer for more information.
 
-##### Enable Apple ProRAW support
+### Enable Apple ProRAW support
 
 To determine whether your app’s photo output supports the Apple ProRAW format in the current environment, add the output to a capture session that has a connected video source, and query its [`isAppleProRAWSupported`](./avcapturephotooutput/isappleprorawsupported.md) property. If the current environment supports the Apple ProRAW format, you can enable the photo output to use it by setting its [`isAppleProRAWEnabled`](./avcapturephotooutput/isappleprorawenabled.md) property to [`true`](../Swift/true.md) as the example below shows:
 
@@ -60,7 +60,7 @@ Enabling use of the Apple ProRAW format adds an entry to the photo output’s [`
 
 > ❗ **Important**:  To avoid a lengthy reconfiguration of the capture pipeline, enable Apple ProRAW capture before starting the capture session.
 
-##### Capture RAW and Apple ProRAW photos
+### Capture RAW and Apple ProRAW photos
 
 Capturing photos in RAW and Apple ProRAW formats requires only minor changes to the basic photography workflow in [Capturing still and Live Photos](./capturing-still-and-live-photos.md). Begin by creating an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object that specifies the RAW format to capture, and optionally, a processed format to capture if your app supports creating RAW+JPEG files. The capture pipeline only supports the RAW formats in the photo output’s [`availableRawPhotoPixelFormatTypes`](./avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) array.
 
@@ -115,7 +115,7 @@ photoSettings.rawEmbeddedThumbnailPhotoFormat = [
 ]
 ```
 
-##### Handle the captured photos
+### Handle the captured photos
 
 The photo output calls its delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method at least once for each format you request, and possibly additional times, depending on your capture settings. Using the capture settings in the previous section results in the photo output calling this delegate method twice: once for the RAW or Apple ProRAW image, and again for the processed image. In each invocation, get the photo’s file data by calling its [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) method and store it as necessary. If you call this method on a RAW or Apple ProRAW photo, it returns the data in the industry-standard DNG file format. If you call it on processed images, it returns the compressed bitmap image data.
 
@@ -168,7 +168,7 @@ class RAWCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
 }
 ```
 
-##### Customize the Apple ProRAW output
+### Customize the Apple ProRAW output
 
 By default, when you ask for the file data representation of an Apple ProRAW photo, you get the data in full lossless quality. If you’re willing to accept some lossy compression to achieve smaller file sizes, you can customize the compression settings by calling [`fileDataRepresentation(with:)`](./avcapturephoto/filedatarepresentation%28with%29.md) and passing it a custom object that conforms to the [`AVCapturePhotoFileDataRepresentationCustomizer`](./avcapturephotofiledatarepresentationcustomizer.md) protocol. The following code shows an example implementation of this protocol that applies minimal compression to the output image:
 
@@ -195,7 +195,7 @@ let customizer = AppleProRAWCustomizer()
 let photoData = photo.fileDataRepresentation(with: customizer)
 ```
 
-##### Save the photos to the photos library
+### Save the photos to the photos library
 
 The photo output indicates when it finishes the capture request by calling the delegate’s [`photoOutput(_:didFinishCaptureFor:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishcapturefor,error%29.md) method. This callback provides an opportunity to save the captured photos to the user’s Photos library. For more information about configuring your app to access the user’s Photos library, see [Saving captured photos](./saving-captured-photos.md).
 

@@ -22,11 +22,11 @@ Returns the preferred spacing values of the composite view.
 func spacing(subviews: Self.Subviews, cache: inout Self.Cache) -> ViewSpacing
 ```
 
-#### Return Value
+## Return Value
 
 A [`ViewSpacing`](../viewspacing.md) instance that describes the preferred spacing around the container view.
 
-#### Discussion
+## Discussion
 
 Implement this method to provide custom spacing preferences for a layout container. The value you return affects the spacing around the container, but it doesn’t affect how the container arranges subviews relative to one another inside the container.
 

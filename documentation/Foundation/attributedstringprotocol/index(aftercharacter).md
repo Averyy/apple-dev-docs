@@ -21,7 +21,7 @@ Returns the position of the character immediately after another charcter indicat
 func index(afterCharacter i: AttributedString.Index) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the character immediately after the character at index `i`.
 

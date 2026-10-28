@@ -21,11 +21,11 @@ Returns a summary for a custom string property across the progress subtree.
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> P.Summary where P : ProgressManager.Property, P.Summary == [String?], P.Value == String?
 ```
 
-#### Return Value
+## Return Value
 
 A `[String?]` summary value for the specified property.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom string property from this progress manager and all its children, returning a consolidated summary value.
 

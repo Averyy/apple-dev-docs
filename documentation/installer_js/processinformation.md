@@ -5,7 +5,7 @@
 
 A dictionary (associative array) describing an application.
 
-#### Overview
+## Overview
 
 [Table 1](./processinformation.md#2556489) describes the items available in the dictionary.
 

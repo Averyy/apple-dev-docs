@@ -24,11 +24,11 @@ optional func videoComposition(_ videoComposition: AVVideoComposition, shouldCon
 - (BOOL) videoComposition:(AVVideoComposition *) videoComposition shouldContinueValidatingAfterFindingInvalidTrackIDInInstruction:(id<AVVideoCompositionInstruction>) videoCompositionInstruction layerInstruction:(AVVideoCompositionLayerInstruction *) layerInstruction asset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The asset track is specified in the [`isValid(for:timeRange:validationDelegate:)`](../avvideocomposition/isvalid%28for,timerange,validationdelegate%29.md) method.
 

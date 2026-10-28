@@ -17,7 +17,7 @@ Applies a 3-dimensional transposed convolution over the multi-channel input imag
 class ConvTransposed3d
 ```
 
-##### See Also
+### See Also
 
 - [`ConvTransposed1d`](./convtransposed1d.md)
 - [`ConvTransposed2d`](./convtransposed2d.md)

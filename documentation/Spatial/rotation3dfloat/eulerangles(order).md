@@ -23,11 +23,11 @@ func eulerAngles(order: __SPEulerAngleOrder) -> EulerAnglesFloat
 static SPEulerAnglesFloat SPRotation3DFloatGetEulerAngles(SPRotation3DFloat rotation, SPEulerAngleOrder order);
 ```
 
-#### Return Value
+## Return Value
 
 A rotation structure.
 
-#### Discussion
+## Discussion
 
 Returns the Euler angles, in radians, from the specified rotation structure.
 

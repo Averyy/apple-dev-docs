@@ -22,11 +22,11 @@ convenience init(rawPixelFormatType: OSType, rawFileType: AVFileType?, processed
 + (instancetype) photoBracketSettingsWithRawPixelFormatType:(OSType) rawPixelFormatType rawFileType:(AVFileType) rawFileType processedFormat:(NSDictionary<NSString *,id> *) processedFormat processedFileType:(AVFileType) processedFileType bracketedSettings:(NSArray<AVCaptureBracketedStillImageSettings *> *) bracketedSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 Use this initializer to capture an image in both RAW format and a processed format (such as JPEG). For RAW-only capture, use the [`init(rawPixelFormatType:)`](../avcapturephotosettings/init%28rawpixelformattype%29.md) initializer instead.
 

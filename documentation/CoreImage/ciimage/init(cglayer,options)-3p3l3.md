@@ -21,7 +21,7 @@ init(cgLayer layer: CGLayer, options: [CIImageOption : Any]? = nil)
 - (instancetype) initWithCGLayer:(CGLayerRef) layer options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

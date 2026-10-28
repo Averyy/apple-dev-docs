@@ -25,7 +25,7 @@ func startBrowsingForNearbyPlayers(reachableHandler: ((String, Bool) -> Void)? =
 - (void) startBrowsingForNearbyPlayersWithReachableHandler:(void (^)(NSString *playerID, BOOL reachable)) reachableHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method only when you are implementing programmatic matchmaking. After enabling browsing for nearby players, use the responses to populate your user interface with information about nearby players. If a player wants to invite a player to a game, add that player’s player identifier to a match request and call either the [`findMatch(for:withCompletionHandler:)`](./findmatch%28for,withcompletionhandler%29.md) to create a match or [`addPlayers(to:matchRequest:completionHandler:)`](./addplayers%28to,matchrequest,completionhandler%29.md) method to update a match.
 

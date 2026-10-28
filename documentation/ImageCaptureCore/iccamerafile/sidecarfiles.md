@@ -23,7 +23,7 @@ var sidecarFiles: [ICCameraItem]? { get }
 @property (nonatomic, readonly, nullable) NSArray<ICCameraItem *> * sidecarFiles;
 ```
 
-#### Discussion
+## Discussion
 
 An example of a sidecar file is a file with the same base 3 name as this file and an `XMP` extension.
 

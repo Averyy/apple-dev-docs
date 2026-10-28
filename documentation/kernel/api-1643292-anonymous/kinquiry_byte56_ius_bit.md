@@ -13,7 +13,7 @@
 kINQUIRY_Byte56_IUS_Bit = 0
 ```
 
-#### Discussion
+## Discussion
 
 IUS bit definition.
 

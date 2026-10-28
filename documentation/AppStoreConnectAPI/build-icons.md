@@ -5,7 +5,7 @@
 
 Get icons from your app’s binary that are uploaded to App Store.
 
-#### Overview
+## Overview
 
 Use `buildIcons` to identify which icons were uploaded to App Store Connect inside your app’s binary. This is a read-only resource. For a list of supported icon asset types, see [`IconAssetType`](./iconassettype.md).
 

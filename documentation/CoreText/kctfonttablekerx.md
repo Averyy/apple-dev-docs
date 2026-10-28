@@ -23,7 +23,7 @@ var kCTFontTableKerx: Int { get }
 kCTFontTableKerx
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for extended kerning.
 

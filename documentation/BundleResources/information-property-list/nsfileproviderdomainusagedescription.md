@@ -14,7 +14,7 @@ A message that tells people why the app needs access to files managed by a file 
 - **Name**: `NSFileProviderDomainUsageDescription` (Privacy - Access to a File Provide Domain Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The user implicitly grants your app access to a file managed by a file provider when selecting the file in an Open or Save panel, dragging it onto your app, or opening it in Finder. Your app can access that file right away and any time in the future. In addition, if your app creates a new file managed by a file provider, the app can access that file without user consent.
 

@@ -23,7 +23,7 @@ var contentSources: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * contentSources;
 ```
 
-#### Discussion
+## Discussion
 
 The string values in this property might include the URL of the website from which the file was downloaded or information that describes the email to which the file was attached.
 

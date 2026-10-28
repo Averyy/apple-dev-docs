@@ -19,7 +19,7 @@ func activePHYMode() -> CWPHYMode
 - (CWPHYMode) activePHYMode;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current active PHY mode. Returns *kCWPHYModeNone* in the case of an error, or if the interface is not participating in a network.
 

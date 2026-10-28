@@ -25,7 +25,7 @@ func isAssignedDocument(_ documentURL: URL) async throws -> Bool
 - (void) checkIsAssignedDocument:(NSURL *) documentURL completion:(void (^)(BOOL isAssignedDocument, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Determines whether a URL to the document was assigned to the student.
 

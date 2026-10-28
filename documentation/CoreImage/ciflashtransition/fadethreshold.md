@@ -25,7 +25,7 @@ var fadeThreshold: Float { get set }
 @property (nonatomic) float fadeThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The higher the value, the more flash time and the less fade time.
 

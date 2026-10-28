@@ -21,7 +21,7 @@ Defines the time duration windows the request’s underlying sound classifier ac
 @interface SNTimeDurationConstraint : NSObject
 ```
 
-#### Overview
+## Overview
 
 Inspect the constraint’s [`type`](./sntimedurationconstraint-c.class/type.md) property first to determine whether to check [`durationRange`](./sntimedurationconstraint-c.class/durationrange.md) or [`enumeratedDurations`](./sntimedurationconstraint-c.class/enumerateddurations.md) next.
 

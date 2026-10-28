@@ -26,7 +26,7 @@ var normalizedSliderPosition: CGFloat { get }
 @property (readonly) CGFloat normalizedSliderPosition;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` corresponds to the minimum value of the slider, and `1` corresponds to its maximum value.
 

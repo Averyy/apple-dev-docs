@@ -5,7 +5,7 @@
 
 A stream or sequence of data bytes in a PDF document.
 
-#### Overview
+## Overview
 
 A PDF stream  consists  of a dictionary that describes a sequence of bytes. Streams typically represent objects with potentially large amounts of data, such as images and page descriptions.
 

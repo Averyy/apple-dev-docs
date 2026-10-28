@@ -23,7 +23,7 @@ static let continuityCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeContinuityCamera;
 ```
 
-#### Discussion
+## Discussion
 
 You discover devices of this type using an [`AVCaptureDevice.DiscoverySession`](../discoverysession.md) of by calling the device’s [`default(_:for:position:)`](../default%28_,for,position%29.md) method.
 

@@ -25,7 +25,7 @@ init(fetchRequest: NSFetchRequest<ResultType>, managedObjectContext context: NSM
 - (instancetype) initWithFetchRequest:(NSFetchRequest<id<NSFetchRequestResult>> *) fetchRequest managedObjectContext:(NSManagedObjectContext *) context sectionNameKeyPath:(NSString *) sectionNameKeyPath cacheName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver initialized with the specified fetch request, context, key path, and cache name.
 

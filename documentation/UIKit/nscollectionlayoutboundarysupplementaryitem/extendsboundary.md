@@ -23,7 +23,7 @@ var extendsBoundary: Bool { get set }
 @property (nonatomic) BOOL extendsBoundary;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

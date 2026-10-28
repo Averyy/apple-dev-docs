@@ -5,11 +5,11 @@
 
 Add chapter markers to enable users to quickly navigate your content.
 
-#### Overview
+## Overview
 
 Chapter markers enable users to quickly navigate your content. [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) automatically presents a chapter-selection interface if it finds chapter markers in the currently played asset. You can also directly retrieve this data whenever you want to create your own custom chapter-selection interface.
 
-##### Retrieve the timed metadata
+### Retrieve the timed metadata
 
 Chapter markers are a type of timed metadata that apply only to ranges of time within the asset’s timeline. You retrieve an asset’s chapter metadata using either the [`chapterMetadataGroups(bestMatchingPreferredLanguages:)`](./avasset/chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md) or [`chapterMetadataGroups(withTitleLocale:containingItemsWithCommonKeys:)`](./avasset/chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md) methods. These methods become callable without blocking after you asynchronously load the value of the asset’s [`availableChapterLocales`](./avasset/availablechapterlocales.md) key.
 
@@ -31,7 +31,7 @@ asset.loadValuesAsynchronously(forKeys: [chapterLocalesKey]) {
 }
 ```
 
-##### Convert timed metadata into chapter data
+### Convert timed metadata into chapter data
 
 The value returned from the methods described above is an array of [`AVTimedMetadataGroup`](./avtimedmetadatagroup.md) objects, each representing an individual chapter marker. An [`AVTimedMetadataGroup`](./avtimedmetadatagroup.md) object contains a [`CMTimeRange`](../CoreMedia/cmtimerange.md), defining the time range to which its metadata applies, an array of [`AVMetadataItem`](./avmetadataitem.md) objects representing the chapter’s title, and optionally, its thumbnail image. The following example shows how to convert the [`AVTimedMetadataGroup`](./avtimedmetadatagroup.md) data into an array of custom model objects, called `Chapter`, to pass to the app’s view layer.
 

@@ -15,7 +15,7 @@ Sends a security message to the system.
 func sendSecurityMessage(_ message: SecurityMessage) throws(AccessorySecuritySession.Error)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to initiate key exchange by sending a [`SecurityMessage`](../securitymessage.md) with [`SecurityMessage.KeyType.publicKey`](../securitymessage/keytype-swift.enum/publickey.md). The system responds by calling your handler’s [`messageReceived(_:completion:)`](./eventhandler/messagereceived%28_,completion%29.md) method with encapsulated key material.
 

@@ -21,7 +21,7 @@ Replaces all nodes and edges in the graph with the provided collections.
 mutating func replaceAll(nodes: [ComputeNodeGraph.NodeID : ComputeNodeGraph.Node], edges: [ComputeNodeGraph.Edge]) throws
 ```
 
-#### Discussion
+## Discussion
 
 This bulk operation allows for efficient wholesale replacement of the graph’s structure.
 

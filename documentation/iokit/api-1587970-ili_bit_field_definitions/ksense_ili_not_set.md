@@ -15,7 +15,7 @@
 kSENSE_ILI_Not_Set = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Incorrect Length Indicator bit is not set.
 

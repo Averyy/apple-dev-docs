@@ -26,7 +26,7 @@ var connectedPath: NWPath? { get }
 @property (nonatomic, readonly, nullable) NWPath * connectedPath;
 ```
 
-#### Discussion
+## Discussion
 
 The caller can query additional properties from the [`NWPath`](../nwpath.md) object for more information. Note that this contains a snapshot of information at the time of connection establishment for this connection only. As a result, some underlying properties might change in time and might not reflect the path for other connections that might be established at different times.
 

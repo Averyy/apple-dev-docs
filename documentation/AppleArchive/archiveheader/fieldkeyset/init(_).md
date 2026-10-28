@@ -21,7 +21,7 @@ Creates a new field key set from the specified comma-separated string of three-l
 init?(_ s: String)
 ```
 
-#### Discussion
+## Discussion
 
 Apple Archive supports the following three-letter keys:
 

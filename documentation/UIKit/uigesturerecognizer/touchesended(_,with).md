@@ -23,7 +23,7 @@ func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent)
 - (void) touchesEnded:(NSSet<UITouch *> *) touches withEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same exact signature as the corresponding one declared by [`UIResponder`](../uiresponder.md). Through this method a gesture recognizer receives touch objects (in their [`UITouch.Phase.ended`](../uitouch/phase-swift.enum/ended.md) phase) before the view attached to the gesture recognizer receives them. `UIGestureRecognizer` objects are not in the responder chain, yet observe touches hit-tested to their view and their view’s subviews. After observation, the delivery of touch objects to the attached view, or their disposition otherwise, is affected by the [`cancelsTouchesInView`](./cancelstouchesinview.md), [`delaysTouchesBegan`](./delaystouchesbegan.md), and [`delaysTouchesEnded`](./delaystouchesended.md) properties.
 

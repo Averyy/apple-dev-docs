@@ -20,7 +20,7 @@ Report an update to a credential’s name, such as when changing the user name o
 func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userHandle: Data, newName: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 

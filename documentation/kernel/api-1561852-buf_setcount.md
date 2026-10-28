@@ -15,7 +15,7 @@ Set count of valid bytes in a buffer. This may be less than the space allocated 
 void buf_setcount(buf_t bp, uint32_t bcount);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

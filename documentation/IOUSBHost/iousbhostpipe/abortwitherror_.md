@@ -16,11 +16,11 @@ Aborts pending input/output requests synchronously.
 - (BOOL) abortWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the abort completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method aborts all pending input/output requests and blocks any new ones.
 

@@ -26,11 +26,11 @@ Updates the provided gesture state property as the gesture’s value changes.
 
 - [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
-#### Return Value
+## Return Value
 
 A version of the gesture that updates the provided `state` as the originating gesture’s value changes and that resets the `state` to its initial value when the user or the system ends or cancels the gesture.
 
-#### Discussion
+## Discussion
 
 Use this callback to update transient UI state as described in [Adding interactivity with gestures](../adding-interactivity-with-gestures.md).
 

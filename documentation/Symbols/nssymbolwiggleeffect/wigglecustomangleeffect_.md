@@ -21,7 +21,7 @@ Convenience initializer for a wiggle effect that moves back and forth along an a
 + (instancetype) wiggleCustomAngleEffect:(double) angle;
 ```
 
-#### Discussion
+## Discussion
 
 The angle is in degrees moving clockwise from the positive x-axis.
 

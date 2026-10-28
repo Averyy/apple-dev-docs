@@ -23,7 +23,7 @@ func mxSignpost(_ type: OSSignpostType, dso: UnsafeRawPointer = #dsohandle, log:
 
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Call this function to mark a custom metric, custom metric start time, or custom metric end time in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](./mxmetricmanager/makeloghandle%28category%29.md), the `type` of the event, a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](../os/os_signpost_event_emit.md). Don’t alter the parameters `dso`, `signpostID`, or `format`.
 

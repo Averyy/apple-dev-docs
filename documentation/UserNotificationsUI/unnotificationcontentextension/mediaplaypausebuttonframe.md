@@ -27,7 +27,7 @@ optional var mediaPlayPauseButtonFrame: CGRect { get }
 
 - [Customizing the Appearance of Notifications](../customizing-the-appearance-of-notifications.md)
 
-#### Discussion
+## Discussion
 
 If you support the playback of media directly from your notification interface, implement this property and use it to return a nonempty rectangle specified in the coordinate system of your view controller’s view. The system draws a button in the provided rectangle that lets the user play and pause your media content. The system handles the drawing of the button for you and calls the [`mediaPlay()`](./mediaplay%28%29.md) and [`mediaPause()`](./mediapause%28%29.md) methods in response to user interactions. You can place this button anywhere in your view controller’s view.
 

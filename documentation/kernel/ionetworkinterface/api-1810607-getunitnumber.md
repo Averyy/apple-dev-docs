@@ -12,11 +12,11 @@ virtual UInt16 getUnitNumber(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the assigned interface unit number.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_unit` and returns the unit number assigned by `IONetworkStack`.
 

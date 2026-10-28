@@ -24,7 +24,7 @@ var isGeometryFlipped: Bool { get set }
 @property (atomic, getter=isGeometryFlipped) BOOL geometryFlipped;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`false`](../../Swift/false.md), tile indexes start in the upper-left corner of the map and proceed down and to the right. Thus, the tile at `(0, 0)`is in the upper-left corner of the map, the tile at `(1, 0)` is to its immediate right and the tile at `(0, 1)` is immediately below it. Setting this property to [`true`](../../Swift/true.md) causes the map to start indexes at the lower-left corner of the map and proceed up and to the right.
 

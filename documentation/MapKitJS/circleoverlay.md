@@ -15,7 +15,7 @@ A circular overlay with a configurable radius that centers on a specific geograp
 class CircleOverlay extends Overlay
 ```
 
-#### Overview
+## Overview
 
 The circle overlay provides a built-in object for creating circles. MapKit JS defines [`CircleOverlay`](./circleoverlay.md) by a coordinate and a radius (in meters). All [`style`](./overlayoptions/style.md) properties apply to circle overlays except `lineCap`, `lineJoin`, and `fillRule`. MapKit JS ignores properties that don’t apply.
 

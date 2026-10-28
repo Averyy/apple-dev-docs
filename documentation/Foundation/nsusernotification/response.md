@@ -20,7 +20,7 @@ var response: NSAttributedString? { get }
 @property (copy, readonly, nullable) NSAttributedString * response;
 ```
 
-#### Discussion
+## Discussion
 
 When the user responds to a notification, the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) method [`userNotificationCenter(_:didActivate:)`](../nsusernotificationcenterdelegate/usernotificationcenter%28_,didactivate%29.md) is called with the notification, the [`activationType`](./activationtype-swift.property.md) property set to [`NSUserNotification.ActivationType.replied`](./activationtype-swift.enum/replied.md), and this property is set with the user’s response.
 

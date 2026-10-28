@@ -18,7 +18,7 @@ Responds to the removal of data from the queue.
 virtual void DataServiced(OSAction *action);
 ```
 
-#### Discussion
+## Discussion
 
 Use this method as a prototype for declaring your own custom data-queue handler. When declaring your method, use the [`TYPE`](../type.md) macro to indicate that your method has the same parameters and return value as this method.
 

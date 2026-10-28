@@ -14,7 +14,7 @@
 typeUTF16ExternalRepresentation = 'ut16'
 ```
 
-#### Discussion
+## Discussion
 
 Unicode text in 16-bit external representation with byte-order-mark (BOM).
 

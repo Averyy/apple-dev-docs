@@ -21,11 +21,11 @@ WebKitCSSMatrix rotateAxisAngle(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that is the result of rotating this matrix by each of the three rotation matrices about the major axes and angle. The right-hand rule is used to determine the direction of rotation.
 
-#### Discussion
+## Discussion
 
 This matrix is not modified by this method.
 

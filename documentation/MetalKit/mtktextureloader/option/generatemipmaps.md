@@ -24,7 +24,7 @@ static let generateMipmaps: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionGenerateMipmaps;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a boolean value.
 

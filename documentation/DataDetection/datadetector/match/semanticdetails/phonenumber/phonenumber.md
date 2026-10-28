@@ -21,7 +21,7 @@ A string that contains the phone number the data detector found.
 let phoneNumber: String
 ```
 
-#### Discussion
+## Discussion
 
 The string may also contain an extension, such as a passcode or an office extension.
 

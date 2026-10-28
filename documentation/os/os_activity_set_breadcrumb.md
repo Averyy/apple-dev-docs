@@ -23,7 +23,7 @@ Flags the current activity as a breadcrumb, to signify an interesting event.
 #define os_activity_set_breadcrumb(name)
 ```
 
-#### Discussion
+## Discussion
 
 Use breadcrumbs to track interactions that span across multiple activities. Keep in mind that not all activities are interesting events.
 

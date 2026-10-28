@@ -25,7 +25,7 @@ func encode(_ data: Data)
 - (void) encodeDataObject:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method.
 

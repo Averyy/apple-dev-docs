@@ -16,7 +16,7 @@ get calloutEnabled(): boolean;
 set calloutEnabled(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 If the [`title`](./title.md) is empty, the framework can’t show the standard callout even if this property is `true`.
 

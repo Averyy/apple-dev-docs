@@ -19,11 +19,11 @@
 static SPSphericalCoordinates3DFloat SPSphericalCoordinates3DFloatMake(SPSphericalCoordinates3D coords);
 ```
 
-#### Return Value
+## Return Value
 
 A new  spherical coordinates structure.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision spherical coordinates structure from a double-precision spherical coordinates structure.
 

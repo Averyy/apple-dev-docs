@@ -19,7 +19,7 @@ func invalidateCredentials()
 - (void) invalidateCredentials;
 ```
 
-#### Discussion
+## Discussion
 
 This method effectively ensures that authorizations are not shared.
 

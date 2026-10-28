@@ -23,7 +23,7 @@ var denoiseStrengthMaskTextureFormat: MTLPixelFormat { get set }
 @property (nonatomic, readwrite) MTLPixelFormat denoiseStrengthMaskTextureFormat;
 ```
 
-#### Discussion
+## Discussion
 
 You typically set this to a single-channel texture format.
 

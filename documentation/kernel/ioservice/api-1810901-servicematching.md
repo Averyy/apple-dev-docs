@@ -13,11 +13,11 @@ static OSDictionary * serviceMatching(
  OSDictionary *table = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, or passed in, is returned on success, or zero on failure.
 
-#### Overview
+## Overview
 
 A very common matching criteria for IOService object is based on its class. `serviceMatching` creates a matching dictionary that specifies any IOService of a class, or its subclasses. The class is specified by name, and an existing dictionary may be passed in, in which case the matching properties will be added to that dictionary rather than creating a new one.
 

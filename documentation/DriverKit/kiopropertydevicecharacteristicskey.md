@@ -16,7 +16,7 @@
 #define kIOPropertyDeviceCharacteristicsKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define Device Characteristics for a particular device and it has an associated dictionary which lists the device characteristics. The device characteristics are Command Set specific and are listed in the header files for each command set.
 

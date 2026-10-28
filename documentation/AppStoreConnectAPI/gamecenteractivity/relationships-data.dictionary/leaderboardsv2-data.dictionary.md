@@ -15,7 +15,7 @@ The data and links that describe the leaderboards of the Game Center activity.
 object GameCenterActivity.Relationships.LeaderboardsV2
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

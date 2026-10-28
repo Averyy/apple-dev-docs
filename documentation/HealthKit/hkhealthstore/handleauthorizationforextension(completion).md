@@ -27,7 +27,7 @@ func handleAuthorizationForExtension() async throws
 - (void) handleAuthorizationForExtensionWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The host app must implement the application delegate’s [`applicationShouldRequestHealthAuthorization(_:)`](../../UIKit/uiapplicationdelegate/applicationshouldrequesthealthauthorization%28_%29.md) method. This delegate method is called after an app extension calls [`requestAuthorization(toShare:read:completion:)`](./requestauthorization%28toshare,read,completion%29.md). The host app is then responsible for calling [`handleAuthorizationForExtension(completion:)`](./handleauthorizationforextension%28completion%29.md). This method prompts the user to authorize both the app and its extensions for the types that the extension requested.
 

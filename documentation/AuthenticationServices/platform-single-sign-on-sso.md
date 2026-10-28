@@ -5,7 +5,7 @@
 
 Provide a Platform Single Sign-on (Platform SSO) extension to integrate your identity provider with macOS.
 
-#### Overview
+## Overview
 
 Platform SSO is a replacement for binding a Mac to directory services. It builds on enterprise SSO extensions to perform single sign-on for apps and websites.
 
@@ -19,13 +19,13 @@ Platform SSO supports the following authentication methods with an identity prov
 
 Platform SSO can create new local user accounts on demand at the login window using identity provider credentials. It can also integrate identity provider group membership into macOS. You can use network accounts for authorization, and groups can also authorize network accounts.
 
-#### Implement Platform SSO 2.0
+## Implement Platform SSO 2.0
 
 Platform SSO 2.0 revises the system by adding a new key service for SSO extensions and identity providers. Implement an alternative registration flow and additional login configuration to use it. Because Platform SSO 2.0 adds a new registration flow, the SSO extension must indicate that it supports the key service before Platform SSO can use the service.
 
 The key service registers encryption keys that can unlock the Mac at the login window and screensaver unlock. The key service handles two request types: key creation and Diffie-Hellman key exchange. Platform SSO sends the request to create the key after the user registration call to the SSO extension completes successfully. The system then binds the key to the user’s account and performs multiple key exchange requests during this time. You can use the key service only with shared device keys because it must function before a user unlocks their key bag.
 
-#### Migrate from user keys to shared keys
+## Migrate from user keys to shared keys
 
 To migrate from user keys to shared keys, create new Secure Enclave–backed keys and register them with the server. The system calls device registration on the SSO extension with the [`registrationDeviceKeyMigration`](./asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md) option set. During this call only, both the user keys and the new shared keys become available. You can access them using the `loginManager.key(for:)` method. The SSO extension registers the new shared keys with the server and can use the existing user keys to provide a chain of trust.
 
@@ -33,13 +33,13 @@ After device registration completes successfully, the system calls user registra
 
 For more information, see [Registering devices and users](./registering-devices-and-users.md).
 
-#### Use SSO tokens
+## Use SSO tokens
 
 Regardless of authentication method, the system stores SSO tokens in the keychain using the keychain data protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](../Security/ksecattraccessibleafterfirstunlockthisdeviceonly.md) and shares them only with the SSO extension.
 
 The SSO extension then uses the SSO tokens to authenticate the user to their on-premises apps and on websites as needed. If the SSO tokens are missing, expired, or more than four hours old, Platform SSO refreshes or retrieves new tokens from the identity provider. The system can also retrieve Kerberos TGTs, import them to a credential cache, and (optionally) share them with the Kerberos SSO extension.
 
-#### Configure Platform SSO using device management
+## Configure Platform SSO using device management
 
 Use [Device Management](../DeviceManagement/DeviceManagement.md) to securely configure Platform SSO, including registering devices and users, configuring groups, and managing account permissions.
 

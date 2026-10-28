@@ -25,11 +25,11 @@ var name: NSNotification.Name { get }
 @property (copy, readonly) NSNotificationName name;
 ```
 
-#### Discussion
+## Discussion
 
 Typically you use this property to find out what kind of notification you are dealing with when you receive a notification.
 
-##### Special Considerations
+### Special Considerations
 
 Notification names can be any string. To avoid name collisions, you might want to use a prefix that’s specific to your application.
 

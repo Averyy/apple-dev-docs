@@ -24,7 +24,7 @@ convenience init?(dataLayout: MPSGraphTensorNamedDataLayout, weightsLayout: MPSG
 + (instancetype) descriptorWithDataLayout:(MPSGraphTensorNamedDataLayout) dataLayout weightsLayout:(MPSGraphTensorNamedDataLayout) weightsLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor on autoreleasepool.
 

@@ -25,7 +25,7 @@ var usesOrthographicProjection: Bool { get set }
 @property (nonatomic) BOOL usesOrthographicProjection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), specifying a perspective projection. In a perspective projection, equally sized objects nearer to the camera appear larger than those farther away.
 

@@ -20,11 +20,11 @@ typealias AEDisposeExternalProcPtr = (UnsafeRawPointer?, Size, SRefCon?) -> Void
 typedef void (*AEDisposeExternalProcPtr)(const void *dataPtr, Size dataLength, SRefCon refcon);
 ```
 
-#### Return Value
+## Return Value
 
 Your callback routine should not return a value.
 
-#### Discussion
+## Discussion
 
 Your application must provide a universal procedure pointer to a dispose function as a parameter to the [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](./api-1446239-aecreatedescfromexternalptr.md) function.
 

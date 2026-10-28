@@ -19,7 +19,7 @@ var allowsImplicitAnimation: Bool { get set }
 @property BOOL allowsImplicitAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 Using the [`animator()`](../nsanimatablepropertycontainer/animator%28%29.md) proxy will automatically set `allowsImplicitAnimation` to [`true`](../../Swift/true.md). When [`true`](../../Swift/true.md), other properties can implicitly animate along with the initially changed property.
 

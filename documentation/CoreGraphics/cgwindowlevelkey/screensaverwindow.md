@@ -18,7 +18,7 @@ case screenSaverWindow
 kCGScreenSaverWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for screen savers.
 

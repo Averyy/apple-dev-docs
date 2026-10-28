@@ -23,11 +23,11 @@ init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the text container’s bounding rectangle.
 
-#### Discussion
+## Discussion
 
 The new text container must be added to an [`NSLayoutManager`](../nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](../../AppKit/nstextview.md) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
 

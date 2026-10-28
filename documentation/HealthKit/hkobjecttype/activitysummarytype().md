@@ -24,11 +24,11 @@ class func activitySummaryType() -> HKActivitySummaryType
 + (HKActivitySummaryType *) activitySummaryType;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKActivitySummaryType`](../hkactivitysummarytype.md) instance.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKActivitySummaryType`](../hkactivitysummarytype.md) concrete subclass. Use this type to request permission to read [`HKActivitySummary`](../hkactivitysummary.md) objects from the HealthKit store.
 

@@ -21,7 +21,7 @@ Creates the description of an RGB image encoding in a Core Video pixel buffer fr
 static func make(format: vImageCVImageFormat.Format, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?
 ```
 
-#### Return Value
+## Return Value
 
 A [`vImageCVImageFormat`](../vimagecvimageformat.md) instance encoded with the function’s parameters.
 

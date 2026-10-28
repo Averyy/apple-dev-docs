@@ -22,7 +22,7 @@ protocol AVAudioSessionDelegate : NSObjectProtocol
 @protocol AVAudioSessionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate of an `AVAudioSession` object must adopt the `AVAudioSessionDelegate` protocol. The methods in this protocol are optional. They allow a delegate to respond to the following sorts of changes in state:
 

@@ -29,11 +29,11 @@ Available when `Self` is `TimeLimitTrait`.
 
 - [Limiting the running time of tests](../limitingexecutiontime.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`TimeLimitTrait`](../timelimittrait.md).
 
-#### Discussion
+## Discussion
 
 Test timeouts do not support high-precision, arbitrarily short durations due to variability in testing environments. You express the duration in minutes, with a minimum duration of one minute.
 

@@ -29,11 +29,11 @@ vImageConverterRefvImageConverter_CreateWithCGImageFormat(const vImage_CGImageFo
 
 - [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 This function creates a [`vImageConverter`](./vimageconverter.md) instance to convert between image formats described by [`vImage_CGImageFormat`](./vimage_cgimageformat.md).  The [`vImageConverter`](./vimageconverter.md) is intended to be used and reused with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md) to convert images from one format to another.
 

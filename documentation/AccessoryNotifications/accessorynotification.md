@@ -15,7 +15,7 @@ A structure that contains the details of a notification that iOS provides to you
 struct AccessoryNotification
 ```
 
-#### Overview
+## Overview
 
 The notification includes display elements, metadata, interactive components, and rich content such as icons, attachments, and Apple Intelligence summaries.
 

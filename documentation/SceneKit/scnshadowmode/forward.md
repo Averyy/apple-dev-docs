@@ -25,7 +25,7 @@ case forward
 SCNShadowModeForward
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the color components of the light’s [`shadowColor`](../scnlight/shadowcolor.md) property do not apply. The color’s alpha component determines the intensity of shadows.
 

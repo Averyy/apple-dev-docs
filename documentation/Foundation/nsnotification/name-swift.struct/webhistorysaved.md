@@ -15,7 +15,7 @@ Posted when web history items have been saved to a URL.
 static let WebHistorySaved: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the web history that saved the history items. This notification does not contain a `userInfo` dictionary.
 

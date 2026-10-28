@@ -19,7 +19,7 @@ var displayedCommandsTitle: String? { get set }
 @property (copy, nullable) NSString * displayedCommandsTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is a non-empty string, commands are displayed in the Speech Commands window indented under a section with this title. If `title` is `nil` or an empty string, the commands are displayed at the top level of the Speech Commands window. This default is not to display the commands under a section title.
 

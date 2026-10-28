@@ -21,11 +21,11 @@ func quantized(_ w: MLXArray, groupSize: Int? = nil, bits: Int? = nil, mode: Qua
 
 - [Converting From Python](./converting-python.md)
 
-#### Return Value
+## Return Value
 
 A tuple containing the quantized weights (`wq`), scaling factors (`scales`), and bias values (`biases`). Note that `biases` may be nil in for some `mode`.
 
-#### Discussion
+## Discussion
 
 Note, every `group_size` elements in a row of `w` are quantized together. Hence, number of columns of `w` should be divisible by `group_size`. In particular, the rows of `w` are divided into groups of size `group_size` which are quantized together.
 
@@ -33,7 +33,7 @@ Note, every `group_size` elements in a row of `w` are quantized together. Hence,
 
 For details, please see [this documentation](https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.quantize.html)
 
-##### See Also
+### See Also
 
 - [`dequantized(_:scales:biases:groupSize:bits:mode:globalScale:dtype:stream:)`](./dequantized%28_,scales,biases,groupsize,bits,mode,globalscale,dtype,stream%29.md)
 - [`quantizedMM(_:_:scales:biases:transpose:groupSize:bits:mode:stream:)`](./quantizedmm%28_,_,scales,biases,transpose,groupsize,bits,mode,stream%29.md)

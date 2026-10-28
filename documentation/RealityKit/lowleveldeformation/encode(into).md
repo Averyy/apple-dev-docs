@@ -18,7 +18,7 @@ Encodes the configured deformation passes into the given command encoder.
 final func encode(into encoder: any MTLComputeCommandEncoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 Call `input.setVertices(_:offset:semantic:)` and `output.setVertices(_:offset:semantic:)` before calling this method each frame.
 

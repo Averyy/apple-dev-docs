@@ -17,11 +17,11 @@ An object that can provide a list of the [`MLXArray`](./mlxarray.md) in its inne
 protocol Updatable
 ```
 
-#### Overview
+## Overview
 
 Note that the array itself is not a reference to the inner state, but the [`MLXArray`](./mlxarray.md) instances can be [`MLXArray`](./mlxarray.md) to mutate the inner state.  The exact working is an implemention detail for MLX and should not be depended on by outside callers.
 
-##### See Also
+### See Also
 
 - [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md)
 

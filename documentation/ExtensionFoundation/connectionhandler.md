@@ -24,7 +24,7 @@ A type that contains a custom closure that handles incoming XPC connections.
 
 - [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 This type manages a closure in your app extension that accepts incoming XPC connections from a host app. Create an instance of this structure and initialize it with a closure for the type of XPC connection the host app uses with app extensions. Assign the instance you created to the [`configuration`](./appextension/configuration-swift.property.md) property of your custom [`AppExtension`](./appextension.md) type. When the host app tries to open a connection, the system runs your closure to accept that connection.
 

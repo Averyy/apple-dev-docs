@@ -18,7 +18,7 @@ The methods you use on a find session’s searchable objects to perform search o
 @protocol UITextSearching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol on the class that encapsulates the searchable content for your view. This allows you to use an instance of [`UITextSearchingFindSession`](./uitextsearchingfindsession.md) to manage the session for a find interaction.
 

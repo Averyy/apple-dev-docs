@@ -21,7 +21,7 @@ var isPlaying: Bool { get set }
 @property (nonatomic, assign, getter=isPlaying) BOOL playing;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the list item displays its Now Playing indicator and positions it using the location that the [`playingIndicatorLocation`](./playingindicatorlocation.md) property specifies. The default value is [`false`](../../Swift/false.md).
 

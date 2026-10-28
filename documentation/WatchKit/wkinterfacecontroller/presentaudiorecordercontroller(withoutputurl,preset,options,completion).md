@@ -27,7 +27,7 @@ func presentAudioRecorderController(withOutputURL URL: URL, preset: WKAudioRecor
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use this method to obtain recorded audio from the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays the audio recording controller to the user. The interface includes a Cancel button to dismiss the interface, and controls to manage recording. After some audio has been recorded, the interface displays the title string specified in the [`WKAudioRecorderControllerOptionsActionTitleKey`](../wkaudiorecordercontrolleroptionsactiontitlekey.md) option so that the user can accept the content and save it to the specified URL. When the user taps the Cancel button or your title string, WatchKit automatically dismisses the audio recording interface controller.
 

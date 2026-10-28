@@ -21,11 +21,11 @@ func SecKeychainAttributeInfoForItemID(_ keychain: SecKeychain?, _ itemID: UInt3
 OSStatus SecKeychainAttributeInfoForItemID(SecKeychainRef keychain, UInt32 itemID, SecKeychainAttributeInfo **info);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This call returns more attributes than are supported by the old style Keychain API and passing them into older calls yields an invalid attribute error. The recommended call to retrieve the attribute values is the [`SecKeychainItemCopyAttributesAndData(_:_:_:_:_:_:)`](./seckeychainitemcopyattributesanddata%28_,_,_,_,_,_%29.md) function.
 

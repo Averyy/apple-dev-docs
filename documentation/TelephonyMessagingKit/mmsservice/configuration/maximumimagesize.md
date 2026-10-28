@@ -15,7 +15,7 @@ The maximum size of an image, in bytes, allowed for a sent group message.
 var maximumImageSize: Measurement<UnitInformationStorage>?
 ```
 
-#### Discussion
+## Discussion
 
 When this value isn’t set, the system uses the value of [`maximumMessageSize`](./maximummessagesize.md) instead.
 

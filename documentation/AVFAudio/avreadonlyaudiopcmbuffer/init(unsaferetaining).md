@@ -21,7 +21,7 @@ Creates a read-only buffer by retaining the existing PCM buffer without copying.
 init(unsafeRetaining buffer: sending AVAudioPCMBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: The caller must ensure the original buffer is not modified while this read-only buffer is in use. Violating this contract results in undefined behavior.
 

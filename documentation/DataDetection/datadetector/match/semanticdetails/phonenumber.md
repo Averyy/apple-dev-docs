@@ -21,7 +21,7 @@ A match that the data detector determines represents a phone number.
 struct PhoneNumber
 ```
 
-#### Discussion
+## Discussion
 
 The [`phoneNumber`](./phonenumber/phonenumber.md) property contains the phone number the data detector found. It may contain an extension, such as a passcode or an office extension. The [`label`](./phonenumber/label.md) property may contain a value suitable to populate a label when creating a contact.
 

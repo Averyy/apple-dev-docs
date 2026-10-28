@@ -24,11 +24,11 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise map object.
 
-#### Discussion
+## Discussion
 
 This convenience initializer is equivalent to creating a [`GKNoise`](../gknoise.md) object from [`GKConstantNoiseSource`](../gkconstantnoisesource.md) output with a constant value of zero, then using the [`init(_:)`](./init%28_%29.md) initializer to create a noise map from the result.
 

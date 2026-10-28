@@ -24,11 +24,11 @@ init(_ ctTextAlignment: CTTextAlignment)
 extern NSTextAlignment NSTextAlignmentFromCTTextAlignment(CTTextAlignment ctTextAlignment);
 ```
 
-#### Return Value
+## Return Value
 
 The UIKit text alignment that corresponds to the value specified in `ctTextAlignment`.
 
-#### Discussion
+## Discussion
 
 Use this function when you need to map between the Core Text and UIKit constants for text alignment.
 

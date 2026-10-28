@@ -23,7 +23,7 @@ func gss_oid_to_str(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ oid: gss_
 OM_uint32 gss_oid_to_str(OM_uint32 *minor_status, gss_OID oid, gss_buffer_t oid_str);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

@@ -19,7 +19,7 @@ var contentLayoutRect: NSRect { get }
 @property (readonly) NSRect contentLayoutRect;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the area represented by this property is the same as the frame of the [`contentView`](./contentview.md). However, for windows with [`NSFullSizeContentViewWindowMask`](../nsfullsizecontentviewwindowmask.md) set, there needs to be a way to determine the portion that is not under the toolbar. The [`contentLayoutRect`](./contentlayoutrect.md) property contains the portion of the layout that is not obscured under the toolbar. This property is KVO compliant.
 

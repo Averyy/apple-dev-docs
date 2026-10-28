@@ -21,7 +21,7 @@ An object describing the content of a widget that uses a custom intent definitio
 @preconcurrency struct IntentConfiguration<Intent, Content> where Intent : INIntent, Content : View
 ```
 
-#### Overview
+## Overview
 
 The following example shows the configuration for a game widget that displays details about a chosen character.
 

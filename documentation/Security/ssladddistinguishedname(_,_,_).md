@@ -24,7 +24,7 @@ func SSLAddDistinguishedName(_ context: SSLContext, _ derDN: UnsafeRawPointer?, 
 OSStatus SSLAddDistinguishedName(SSLContextRef context, const void *derDN, size_t derDNLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

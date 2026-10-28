@@ -5,7 +5,7 @@
 
 Add a video component inside the header component.
 
-#### Overview
+## Overview
 
 A `video` component allows the user to control playback and hear audio.
 
@@ -13,7 +13,7 @@ A `video` component allows the user to control playback and hear audio.
 
 ![Screenshot of an Apple News article with a video component on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624927@2x.png)
 
-##### Add a Video to the Header
+### Add a Video to the Header
 
 To add a video to your article, you simply add a `video` component to a `components` array. Here, you’ll add a `video` component to the `components` array in the `header` component.
 
@@ -30,7 +30,7 @@ Your code should look like the example code [Header Component: Result](./adding-
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the video.
 
-###### Header Component: Copy This Code
+#### Header Component: Copy This Code
 
 ```json
     {
@@ -52,7 +52,7 @@ After you make this change in your code, you can preview your working `article.j
     },
 ```
 
-###### Header Component: Result
+#### Header Component: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -83,11 +83,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Giving the Article a Dark Color Scheme](./giving-the-article-a-dark-color-scheme.md)
 
-##### Next
+### Next
 
 [Creating a Sidebar](./creating-a-sidebar.md)
 

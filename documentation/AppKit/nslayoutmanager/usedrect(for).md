@@ -19,7 +19,7 @@ func usedRect(for container: NSTextContainer) -> NSRect
 - (NSRect) usedRectForTextContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the text container’s currently used area, which determines the size that the view would need to be in order to display all the glyphs that are currently laid out in the container. This causes neither glyph generation nor layout.
 

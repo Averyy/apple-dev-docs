@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift MMIO program that blinks an LED on the STM32F746G-DISCO board, with no vendor SDKs or external toolchains.
 
-#### Overview
+## Overview
 
 This example demonstrates how to build a baremetal Embedded Swift kernel image for the STM32F746G-DISCO board, generating register definitions with `svd2swift` and driving the GPIO peripheral directly through Swift MMIO. The entire firmware builds from code in the example directory alone. See [Setting up a baremetal STM32 project with Embedded Swift](./stm32baremetalguide.md) for a from-scratch walkthrough of setting up a similar baremetal STM32 project.
 
@@ -47,15 +47,15 @@ struct Application {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development.
 
-#### Install dependencies
+## Install dependencies
 
 Install the [stlink](https://github.com/stlink-org/stlink) command line tools, for example with `brew install stlink`.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -66,7 +66,7 @@ $ make
 
 The Makefile drives `swift build` with a custom `armv7em-apple-none-macho` triple and toolset, then extracts a raw binary from the resulting Mach-O executable.
 
-#### Run on a device
+## Run on a device
 
 Connect the STM32F746G-DISCO board to your Mac using the ST-LINK USB port. Flash the firmware:
 
@@ -76,7 +76,7 @@ $ st-flash --reset write .build/armv7em-apple-none-macho/release/Application.bin
 
 The green LED next to the RESET button blinks in a regular pattern.
 
-#### Check the binary size
+## Check the binary size
 
 The compiled and linked binary is very small, demonstrating how Embedded Swift avoids including unnecessary code or data in the resulting program:
 

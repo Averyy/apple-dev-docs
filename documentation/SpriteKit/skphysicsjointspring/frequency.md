@@ -25,7 +25,7 @@ var frequency: CGFloat { get set }
 @property (nonatomic) CGFloat frequency;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, creating a rigid joint between the spring’s two bodies. Setting the frequency to a low value, for example `0.5`, creates a spring with slow oscillations that will settle slowly. Setting the frequency to a high value, for example `10.0`, creates a stiffer spring with faster and fewer oscillations.
 

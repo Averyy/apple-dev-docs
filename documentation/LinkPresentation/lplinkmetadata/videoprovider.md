@@ -25,7 +25,7 @@ var videoProvider: NSItemProvider? { get set }
 @property (nonatomic, retain, nullable) NSItemProvider * videoProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The item provider returns a video that [AVFoundation](../../AVFoundation/AVFoundation.md) can play.
 

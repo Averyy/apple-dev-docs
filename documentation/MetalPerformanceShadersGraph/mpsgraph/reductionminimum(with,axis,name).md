@@ -24,7 +24,7 @@ func reductionMinimum(with tensor: MPSGraphTensor, axis: Int, name: String?) -> 
 - (MPSGraphTensor *) reductionMinimumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

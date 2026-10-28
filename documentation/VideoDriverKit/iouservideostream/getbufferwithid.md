@@ -13,7 +13,7 @@
 OSSharedPtr<IOUserVideoBuffer> GetBufferWithID(uint32_t bufferID);
 ```
 
-#### Return Value
+## Return Value
 
 The buffer, or `NULL` if the buffer identifier was invalid for this stream.
 

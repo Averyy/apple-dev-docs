@@ -25,7 +25,7 @@ func enumerateResults(options opts: NSEnumerationOptions = [], using block: (Any
 - (void) enumerateResultsWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(id result, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method disables the query at the start of the iteration and reenables it upon completion.
 

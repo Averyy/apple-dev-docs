@@ -25,7 +25,7 @@ var recordZoneIDsToDelete: [CKRecordZone.ID]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKRecordZoneID *> * recordZoneIDsToDelete;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of the property is the array of zone IDs that you provide to the [`init(recordZonesToSave:recordZoneIDsToDelete:)`](./init%28recordzonestosave,recordzoneidstodelete%29.md) method. You can modify this array as necessary before you execute the operation. The record zones must all target the same database. You can specify `nil`, or an empty array, for this property.
 

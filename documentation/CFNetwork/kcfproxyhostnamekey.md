@@ -22,7 +22,7 @@ let kCFProxyHostNameKey: CFString
 extern CFStringRef const kCFProxyHostNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFString` value containing either the hostname or IP number of the proxy host.
 

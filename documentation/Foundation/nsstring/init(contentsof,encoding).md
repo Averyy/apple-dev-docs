@@ -25,7 +25,7 @@ convenience init(contentsOf url: URL, encoding enc: UInt) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url encoding:(NSStringEncoding) enc error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An @c NSString object initialized by reading data from @c url. Returns @c nil if the URL can’t be opened or there is an encoding error.
 

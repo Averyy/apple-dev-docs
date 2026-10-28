@@ -21,7 +21,7 @@ Creates and returns a localized string representation of the provided measuremen
 func string<UnitType>(from measurement: Measurement<UnitType>) -> String where UnitType : Unit
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string that represents the measurement.
 

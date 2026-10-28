@@ -17,7 +17,7 @@ The constraint’s value for the minor identity characteristic.
 var minor: UInt16? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The minor characteristic is optional. If it’s present, a beacon’s minor value needs to match the constraint’s minor value to represent a match. If the constraint has no minor value, it acts as a wildcard and matches any minor value.
 

@@ -19,7 +19,7 @@ optional func attachment(_ attachment: VZNetworkBlockDeviceStorageDeviceAttachme
 - (void) attachment:(VZNetworkBlockDeviceStorageDeviceAttachment *) attachment didEncounterError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 After the attachment object calls this method, the NBD client is in a nonfunctional state.
 

@@ -19,11 +19,11 @@ func hv_vcpu_set_vtimer_offset(_ vcpu: hv_vcpu_t, _ vtimer_offset: UInt64) -> hv
 extern hv_return_t hv_vcpu_set_vtimer_offset(hv_vcpu_t vcpu, uint64_t vtimer_offset);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, or an error code of the type [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 This corresponds to the value of the `CNTVOFF_EL2` register.
 

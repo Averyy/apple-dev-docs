@@ -4,13 +4,13 @@
 
 Analyze photos, videos, speech, sound, and text using the models built in to the system frameworks.
 
-#### Overview
+## Overview
 
 Adding intelligent features to your app is relatively easy because many Apple frameworks already use on-device models to analyze different types of content for you. Adopt these frameworks when you want to focus on building your app’s other features, rather than building your own machine learning models to perform the same tasks.
 
 ---
 
-#### Analyze photo and video content
+## Analyze photo and video content
 
 Computer vision allows for better understanding of the world around you. When you work with photos and videos, you might want to know more about what’s happening in them to create the feature you want in your app. For example, you don’t have to start from zero to [recognize the content in a document](../Vision/analyzing-a-selfie-and-visualizing-its-content.md). The [Vision](../Vision/Vision.md) and [VisionKit](../VisionKit/VisionKit.md) frameworks perform a wide variety of tasks that do the heavy lifting for you, and provide more than 25 types of image analysis tasks, like:
 
@@ -24,7 +24,7 @@ To detect and prevent people from viewing unwanted image content in your app, [p
 
 ---
 
-#### Recognize speech and audio content
+## Recognize speech and audio content
 
 Speech recognition transforms spoken words into text to help you with things like dictating notes in a note-taking app, or using voice commands to control a smart thermostat. [Convert human speech](../Speech/bringing-advanced-speech-to-text-capabilities-to-your-app.md) into text with very little code, and entirely on device using the [Speech](./documentation/speech.md) framework. Use this framework with audio from prerecorded files or from a live source like a microphone. [Analyze](../Speech/speechanalyzer.md) the speech you capture to predict the text that matches the audio.
 
@@ -34,7 +34,7 @@ Enhance the accessibility of your apps by adding sound analysis capabilities to 
 
 ---
 
-#### Analyze and translate language content
+## Analyze and translate language content
 
 [Natural language processing](../NaturalLanguage/NaturalLanguage.md) helps your app understand and process human language and extract meaning from text. [Identify different languages](../NaturalLanguage/identifying-the-language-in-text.md) in text to determine whether the content matches an expected language. [Break text down](../NaturalLanguage/tokenizing-natural-language-text.md) into lexical units — like words or sentences — to ensure correct behavior in multiple script languages. [Find similarities](../NaturalLanguage/finding-similarities-between-pieces-of-text.md) between pieces of text to identify matches between semantically similar content.
 

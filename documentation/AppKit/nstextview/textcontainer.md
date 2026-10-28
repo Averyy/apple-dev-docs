@@ -19,7 +19,7 @@ unowned(unsafe) var textContainer: NSTextContainer? { get set }
 @property (assign, nullable) NSTextContainer * textContainer;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver uses the layout manager and text storage of `aTextContainer`.
 

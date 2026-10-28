@@ -24,7 +24,7 @@ var fragmentBindings: [any MTLBinding] { get }
 @property (readonly, nonnull) NSArray<id<MTLBinding>> * fragmentBindings;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the fragment shader’s declaration signature.
 

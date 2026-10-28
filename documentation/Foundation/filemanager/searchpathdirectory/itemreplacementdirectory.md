@@ -25,7 +25,7 @@ case itemReplacementDirectory
 NSItemReplacementDirectory
 ```
 
-#### Discussion
+## Discussion
 
 Pass this constant to the [`FileManager`](../../filemanager.md) method [`url(for:in:appropriateFor:create:)`](../url%28for,in,appropriatefor,create%29.md) in order to create a temporary directory.
 

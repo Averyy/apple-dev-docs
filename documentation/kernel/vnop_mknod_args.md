@@ -16,7 +16,7 @@ struct vnop_mknod_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Whiteouts are used to support the union filesystem, whereby one filesystem is mounted "transparently" on top of another. A whiteout in the upper layer of a union mount is a "deletion" of a file in the lower layer; lookups will catch the whiteout and fail, setting ISWHITEOUT in the componentname structure, even if an underlying file of the same name exists. The whiteout vnop is used for creation, deletion, and checking whether a directory supports whiteouts (see flags). also support the LOOKUP flag, which is used to test whether a directory supports whiteouts.
 

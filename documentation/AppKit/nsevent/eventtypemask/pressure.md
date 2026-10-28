@@ -19,7 +19,7 @@ static var pressure: NSEvent.EventTypeMask { get }
 NSEventMaskPressure
 ```
 
-#### Discussion
+## Discussion
 
 Pressure-change events require a 64-bit processor.
 

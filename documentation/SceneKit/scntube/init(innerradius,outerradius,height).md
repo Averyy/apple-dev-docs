@@ -25,11 +25,11 @@ convenience init(innerRadius: CGFloat, outerRadius: CGFloat, height: CGFloat)
 + (instancetype) tubeWithInnerRadius:(CGFloat) innerRadius outerRadius:(CGFloat) outerRadius height:(CGFloat) height;
 ```
 
-#### Return Value
+## Return Value
 
 A new tube geometry.
 
-#### Discussion
+## Discussion
 
 The tube is centered in its local coordinate system. For example, if you create a tube whose outer radius is `5.0`, inner radius is `1.0`, and height is `10.0`, its circular cross section extends from `-5.0` to `5.0` along the x- and z-axes, the y-coordinates of its base and top are `-5.0` and `5.0`, and the hole through its center extends from `-0.5` to `0.5` along the x- and z-axes.
 

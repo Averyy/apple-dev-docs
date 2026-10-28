@@ -25,11 +25,11 @@ func pauseSpeaking(at boundary: AVSpeechBoundary) -> Bool
 - (BOOL) pauseSpeakingAtBoundary:(AVSpeechBoundary) boundary;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if speech pauses; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `boundary` parameter also affects how the speech synthesizer resumes speaking text after a pause and call to [`continueSpeaking()`](./continuespeaking%28%29.md). If the boundary is [`AVSpeechBoundary.immediate`](../avspeechboundary/immediate.md), speech resumes from the exact point where it pauses, even if that point occurs in the middle of speaking a word. If the boundary is [`AVSpeechBoundary.word`](../avspeechboundary/word.md), speech resumes from the word that follows the last spoken word where it pauses.
 

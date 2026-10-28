@@ -21,7 +21,7 @@ Creates and returns a foreground mode with a specified behavior.
 static func foreground(_ foregroundMode: IntentModes.ForegroundMode) -> IntentModes
 ```
 
-#### Return Value
+## Return Value
 
 A set of options that describes the foreground behavior.
 

@@ -19,7 +19,7 @@ var itemTitles: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * itemTitles;
 ```
 
-#### Discussion
+## Discussion
 
 The titles appear in the order in which the items appear in the menu. If the menu contains separator items, the array contains an empty string (`@""`) for each separator item.
 

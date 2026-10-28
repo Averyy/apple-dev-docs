@@ -22,7 +22,7 @@ A shape whose dimensions the system calculates from an inset version of the curr
 struct ContainerRelativeShape
 ```
 
-#### Overview
+## Overview
 
 If there is not a current container shape, the system provides a rectangle.
 

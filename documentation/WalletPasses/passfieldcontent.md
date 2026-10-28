@@ -22,7 +22,7 @@ object PassFieldContent
 - [Building a Pass](./building-a-pass.md)
 - [Creating the Source for a Pass](./creating-the-source-for-a-pass.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Wallet uses data detectors to add links for text shown on the back of the pass.
 

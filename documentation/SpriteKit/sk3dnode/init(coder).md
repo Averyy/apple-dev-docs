@@ -25,7 +25,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this function directly; it is called by the system when you should initialize a 3D node that has been unarchived.
 

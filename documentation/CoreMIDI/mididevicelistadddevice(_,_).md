@@ -23,7 +23,7 @@ func MIDIDeviceListAddDevice(_ devList: MIDIDeviceListRef, _ dev: MIDIDeviceRef)
 extern OSStatus MIDIDeviceListAddDevice(MIDIDeviceListRef devList, MIDIDeviceRef dev);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

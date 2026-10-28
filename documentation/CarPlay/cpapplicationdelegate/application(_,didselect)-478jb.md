@@ -21,7 +21,7 @@ optional func application(_ application: UIApplication, didSelect navigationAler
 - (void) application:(UIApplication *) application didSelectNavigationAlert:(CPNavigationAlert *) navigationAlert;
 ```
 
-#### Discussion
+## Discussion
 
 When your app posts a navigation alert while running in the background, CarPlay may display a notification banner. If the user taps the banner, the system displays your app on the CarPlay screen, then calls this method.
 

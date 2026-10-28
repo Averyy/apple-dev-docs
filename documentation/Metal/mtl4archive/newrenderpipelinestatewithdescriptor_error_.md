@@ -20,11 +20,11 @@ Creates a render pipeline state from the archive with a descriptor.
 - (id<MTLRenderPipelineState>) newRenderPipelineStateWithDescriptor:(MTL4PipelineDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A render pipeline state if the method succeeds, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 You create any kind of render pipeline states with this method, including:
 

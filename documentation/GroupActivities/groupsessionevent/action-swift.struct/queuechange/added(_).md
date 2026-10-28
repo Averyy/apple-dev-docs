@@ -20,11 +20,11 @@ Returns a queue change for an added item.
 static func added(_ item: GroupSessionEvent.Action.QueueChange.Item) -> GroupSessionEvent.Action.QueueChange
 ```
 
-#### Return Value
+## Return Value
 
 A type that contains information about the change.
 
-#### Discussion
+## Discussion
 
 Before showing a notice to the user, call this method to generate a type for the added item. Pass this type to the [`updatedQueue(_:)`](../updatedqueue%28_%29.md) method to create the postable action.
 

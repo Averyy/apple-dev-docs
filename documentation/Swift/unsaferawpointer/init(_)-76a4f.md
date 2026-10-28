@@ -21,7 +21,7 @@ Creates a new raw pointer from the given typed pointer.
 init?<T>(_ other: UnsafeMutablePointer<T>?) where T : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to explicitly convert `other` to an `UnsafeRawPointer` instance. This initializer creates a new pointer to the same address as `other` and performs no allocation or copying.
 

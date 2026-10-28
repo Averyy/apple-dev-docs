@@ -23,7 +23,7 @@ func reset(forExtensionWithIdentifier identifier: String) async throws
 
 - [Getting up-to-date calling and blocking information for your app](../getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 With this function, the system refetches the on-device data.
 

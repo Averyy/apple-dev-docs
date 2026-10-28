@@ -37,7 +37,7 @@ var player: GKPlayer? { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 This property is `nil` if this slot isn’t filled yet — for example, when Game Center uses automatch to fill this slot.
 

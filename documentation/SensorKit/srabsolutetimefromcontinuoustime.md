@@ -17,7 +17,7 @@ Provides an absolute time equivalent to the argument continuous time.
 extern SRAbsoluteTime SRAbsoluteTimeFromContinuousTime(uint64_t cont);
 ```
 
-#### Return Value
+## Return Value
 
 An absolute time equivalent to the argument continuous time.
 

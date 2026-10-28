@@ -19,7 +19,7 @@ var catalogNameComponent: NSColorList.Name { get }
 @property (copy, readonly) NSColorListName catalogNameComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors in the [`named`](../nscolorspacename/named.md) color space. Accessing it for other color types raises an exception.
 

@@ -29,7 +29,7 @@ var falloff: Float { get set }
 
 - [Adding Physics Fields to a Scene](../adding-physics-fields-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 When the force of a field node is calculated, the force is multiplied by `pow(distance - minRadius, -falloff)`. The default falloff value is `0`, which indicates that no attenuation takes place. Some types of field nodes ignore the falloff parameter entirely, while others change the default value to something that is more logical for that type of field node.
 

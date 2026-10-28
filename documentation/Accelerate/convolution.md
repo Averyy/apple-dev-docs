@@ -5,7 +5,7 @@
 
 Apply a convolution kernel to an image.
 
-#### Overview
+## Overview
 
 *Convolution* is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
 

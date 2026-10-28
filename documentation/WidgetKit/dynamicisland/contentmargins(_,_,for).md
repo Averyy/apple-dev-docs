@@ -16,11 +16,11 @@ Overrides default content margins for the provided content modes in the Dynamic 
 func contentMargins(_ edges: Edge.Set = .all, _ length: Double, for mode: DynamicIslandMode) -> DynamicIsland
 ```
 
-#### Return Value
+## Return Value
 
 The Dynamic Island view with updated content margins.
 
-#### Discussion
+## Discussion
 
 Use this modifier to customize the content margins for a content mode in the Dynamic Island. Avoid placing content too close to the edges of the Dynamic Island.
 

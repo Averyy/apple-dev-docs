@@ -25,11 +25,11 @@ func newBuffer(_ length: Int, type: MDLMeshBufferType) -> any MDLMeshBuffer
 - (id<MDLMeshBuffer>) newBuffer:(NSUInteger) length type:(MDLMeshBufferType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory buffer for mesh data.
 
-#### Discussion
+## Discussion
 
 The concrete class implementing this protocol determines the initial contents of the buffer and the memory pool from which the buffer is allocated. To provide a hint that multiple related allocations should share the same pool of memory, use the [`newBuffer(from:length:type:)`](./newbuffer%28from,length,type%29.md) method instead.
 

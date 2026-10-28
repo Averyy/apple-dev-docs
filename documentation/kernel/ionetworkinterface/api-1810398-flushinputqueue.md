@@ -12,11 +12,11 @@ virtual UInt32 flushInputQueue(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets that were submitted to the network stack. Returns zero if the queue was empty.
 
-#### Overview
+## Overview
 
 Allow drivers to remove all packets from the input queue and submit them to the network stack. This method should be used in concert with the `inputPacket()` method, to flush the input queue after queueing a number of received packets.
 

@@ -20,7 +20,7 @@ Extrudes the shape by sweeping it along a piecewise-linear curve.
 case traceTransforms([simd_float4x4])
 ```
 
-#### Discussion
+## Discussion
 
 The swept shape (e.g. the 2D path provided in `MeshResource(extruding: Path)`, or text) is instantiated at each of the provided transforms.  Each instance is joined together by a strip of geometry. You can specify a different rotation of the swept shape for each point on the curve with `traceTransforms`.
 

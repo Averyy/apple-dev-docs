@@ -15,7 +15,7 @@ The currently valid viewing modes for the image being presented.
 var availableViewingModes: Set<ImagePresentationComponent.ViewingMode> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property returns the set of modes that are *currently* available. The returned set of modes will not contain spatial 3D viewing modes if the component is presenting a `Spatial3DImage` that has not yet generated its spatial 3D representation.
 

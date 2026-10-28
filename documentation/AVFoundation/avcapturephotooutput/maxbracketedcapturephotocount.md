@@ -22,7 +22,7 @@ var maxBracketedCapturePhotoCount: Int { get }
 @property (nonatomic, readonly) NSUInteger maxBracketedCapturePhotoCount;
 ```
 
-#### Discussion
+## Discussion
 
 To perform a bracketed capture of multiple images with varied capture settings, create a [`AVCapturePhotoBracketSettings`](../avcapturephotobracketsettings.md) instance containing the combination of settings and bracketed variations you want. The maximum number of photos per capture depends on the size and format of images to be captured.
 

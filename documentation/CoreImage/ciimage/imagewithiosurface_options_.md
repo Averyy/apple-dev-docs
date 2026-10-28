@@ -20,7 +20,7 @@ Creates, using the specified options, and returns an image from the contents of 
 + (CIImage *) imageWithIOSurface:(IOSurfaceRef) surface options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the data from the IOSurface.
 

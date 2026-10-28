@@ -17,11 +17,11 @@ Identifies a list of possible matches for an alias.
 OSStatus FSMatchAliasBulk(const FSRef *fromFile, unsigned long rulesMask, AliasHandle inAlias, short *aliasCount, FSRef *aliasList, Boolean *needsUpdate, FSAliasFilterProcPtr aliasFilter, void *yourDataPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the Alias Manager finds the specified volume and parent directory but fails to find the target file or directory in that location, the return value is `fnfErr` and the elements in the `aliasList` parameter are not valid.
 
-#### Discussion
+## Discussion
 
 After it identifies a target, this function compares some key information about the target with the same information in the record. If the information does not match, this function sets the `needsUpdate` flag to `true`. This function also sets the `needsUpdate` flag to `true` if it identifies a list of possible matches rather than a single match or if `kARMsearchRelFirst` is set in the `rulesMask` parameter but the target is identified through either an absolute search or an exhaustive search. Otherwise, this function sets the `needsUpdate` flag to `false`. This function always sets the `needsUpdate` flag to `false` when resolving an alias created by `FSNewAliasMinimal`. To update the alias record to reflect the final results of the resolution, use the function [`FSUpdateAlias`](./api-1444399-fsupdatealias.md).
 

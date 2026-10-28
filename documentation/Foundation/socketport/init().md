@@ -19,11 +19,11 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized local TCP/IP socket port of type `SOCK_STREAM`.
 
-#### Discussion
+## Discussion
 
 The port number is selected by the system.
 

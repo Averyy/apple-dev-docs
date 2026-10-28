@@ -13,7 +13,7 @@
 IFNET_FAMILY_PPP = 6
 ```
 
-#### Discussion
+## Discussion
 
 A PPP interface.
 

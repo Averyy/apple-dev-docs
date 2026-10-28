@@ -21,7 +21,7 @@ An internal type that a resolver uses to convert data values.
 protocol ResolverSpecification : Hashable, Sendable, Sequence where Self.Element == any Resolver
 ```
 
-#### Overview
+## Overview
 
 Don’t use a [`ResolverSpecification`](./resolverspecification.md) type directly in your code. The system uses this type internally to manage the resolution process.
 

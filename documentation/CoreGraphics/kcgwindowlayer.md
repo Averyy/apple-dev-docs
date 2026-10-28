@@ -18,7 +18,7 @@ let kCGWindowLayer: CFString
 extern CFStringRef const kCGWindowLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`CFNumberType.intType`](../CoreFoundation/cfnumbertype/inttype.md)) that contains the window layer number.
 

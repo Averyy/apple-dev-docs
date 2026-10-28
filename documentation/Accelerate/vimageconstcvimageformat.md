@@ -25,7 +25,7 @@ class vImageConstCVImageFormat
 typedef const struct vImageCVImageFormat * vImageConstCVImageFormatRef;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vImageCVImageFormat_Copy(_:)`](./vimagecvimageformat_copy%28_%29.md) to create a mutable copy of a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) instance.
 

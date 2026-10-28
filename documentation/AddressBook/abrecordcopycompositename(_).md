@@ -23,15 +23,15 @@ func ABRecordCopyCompositeName(_ record: ABRecord!) -> Unmanaged<CFString>!
 extern CFStringRefABRecordCopyCompositeName(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 - For person records: The concatenated value of these properties: Prefix, Suffix, Organization, First name, and Last name.
 
-#### Discussion
+## Discussion
 
 - For group records: The value of the group name property ([`kABGroupNameProperty`](./kabgroupnameproperty.md)).
 
-#### Discussion
+## Discussion
 
 The behavior of this function is not defined for source records.
 

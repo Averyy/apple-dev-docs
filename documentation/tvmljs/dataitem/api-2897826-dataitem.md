@@ -18,7 +18,7 @@ new DataItem(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Each data item in the same type group must have a unique identifier. Assign any other JSON object keys to the data item after it has been created. [Listing 1](./api-2897826-dataitem.md#2902593) shows JSON objects being mapped to data items. The `url` and `title` keys and values are added to each data item after creation.
 

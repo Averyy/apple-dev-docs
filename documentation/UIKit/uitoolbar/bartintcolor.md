@@ -22,7 +22,7 @@ var barTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * barTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color is made translucent by default unless you set the [`isTranslucent`](./istranslucent.md) property to [`false`](../../Swift/false.md).
 

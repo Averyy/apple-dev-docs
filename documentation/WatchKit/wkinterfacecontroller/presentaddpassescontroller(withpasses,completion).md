@@ -27,7 +27,7 @@ func presentAddPassesController(withPasses passes: [PKPass]) async
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use this method to display PassKit passes to the user and to give the user the option to add them to their pass library. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays the pass interface over the current interface controller. Always call this method from your WatchKit extension’s main thread.
 

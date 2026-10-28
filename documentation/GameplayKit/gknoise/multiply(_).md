@@ -24,7 +24,7 @@ func multiply(_ noise: GKNoise)
 - (void) multiplyWithNoise:(GKNoise *) noise;
 ```
 
-#### Discussion
+## Discussion
 
 Noise values are generally in the range [-1.0, 1.0], so multiplying typically results in moving values toward zero (in grayscale textures, a darkening effect).
 

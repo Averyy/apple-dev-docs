@@ -21,11 +21,11 @@ Returns a summary for the specified URL property across the progress subtree.
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> [URL?] where P : ProgressManager.Property, P.Summary == [URL?], P.Value == URL?
 ```
 
-#### Return Value
+## Return Value
 
 The aggregated summary value for the specified property across the entire subtree.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom URL property from the underlying progress manager and all its children, returning a consolidated summary value.
 

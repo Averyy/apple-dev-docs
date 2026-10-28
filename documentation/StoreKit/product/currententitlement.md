@@ -23,7 +23,7 @@ The transaction that entitles the user to the product.
 var currentEntitlement: VerificationResult<Transaction>? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the customer isn’t currently entitled to this product. Current entitlement information applies only to non-consumables, non-renewing subscriptions, and auto-renewable subscriptions. The following example checks the current entitlement for a product.
 

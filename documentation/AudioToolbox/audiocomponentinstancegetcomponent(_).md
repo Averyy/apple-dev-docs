@@ -24,11 +24,11 @@ func AudioComponentInstanceGetComponent(_ inInstance: AudioComponentInstance) ->
 extern AudioComponentAudioComponentInstanceGetComponent(AudioComponentInstance inInstance);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the desired audio component. If the value provided in the `inInstance` parameter is invalid, returns `NULL`.
 
-#### Discussion
+## Discussion
 
 Use this function to retrieve a reference to the audio component that was used to instantiate a given audio component instance. You can then query the component for its attributes by calling the [`AudioComponentGetDescription(_:_:)`](./audiocomponentgetdescription%28_,_%29.md) function.
 

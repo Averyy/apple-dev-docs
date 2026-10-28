@@ -26,7 +26,7 @@ extern void vDSP_ztoc(const DSPSplitComplex *__Z, vDSP_Stride __IZ, DSPComplex *
 - [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 - [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
 
-#### Discussion
+## Discussion
 
 For example, the following code converts the contents of a [`DSPSplitComplex`](./dspsplitcomplex.md) structure to an array of [`DSPComplex`](./dspcomplex.md) structures :
 

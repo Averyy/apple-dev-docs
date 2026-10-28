@@ -15,7 +15,7 @@ An array of all known world anchors from the world-tracking provider.
 final var allAnchors: [WorldAnchor]? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the data provider isn’t running, and for other errors.
 

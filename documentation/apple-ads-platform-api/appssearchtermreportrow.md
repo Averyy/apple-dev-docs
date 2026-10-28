@@ -15,11 +15,11 @@ A single row in an Apps search term report, pairing search-term metadata with to
 object AppsSearchTermReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `metadata` field captures the search term text and its associated keyword and ad group context at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

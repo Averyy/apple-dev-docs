@@ -5,7 +5,7 @@
 
 Add test cases and test methods to a test target to confirm that your code performs as expected.
 
-#### Overview
+## Overview
 
 Add tests to your Xcode project by writing one or more test methods, each of which verifies a specific aspect of your code. Group related test methods into test cases, each of which is a subclass of [`XCTestCase`](./xctestcase.md).
 
@@ -55,7 +55,7 @@ This example defines an [`XCTestCase`](./xctestcase.md) subclass, `TableValidati
 >
 > To help identify failing tests, give each test method a name that makes it clear what is tested by that method, such as `testEmptyTableRowAndColumnCount()`, `testUnreachableURLAccessThrowsAnError()`, or `testUserJSONFeedParsing()`.
 
-##### Asserting Test Conditions
+### Asserting Test Conditions
 
 You can check (or *assert*) conditions inside test methods to make sure that your code is behaving as expected. Use the `XCTAssert` family of functions to check for Boolean conditions, `nil` or non-`nil` values, expected values, errors, or thrown exceptions.
 

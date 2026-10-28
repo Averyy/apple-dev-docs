@@ -28,7 +28,7 @@ protocol MTL4MachineLearningCommandEncoder : MTL4CommandEncoder
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Create a machine learning encoder by calling a factory method of an [`MTL4CommandBuffer`](./mtl4commandbuffer.md) instance, such as [`makeMachineLearningCommandEncoder()`](./mtl4commandbuffer/makemachinelearningcommandencoder%28%29.md).
 

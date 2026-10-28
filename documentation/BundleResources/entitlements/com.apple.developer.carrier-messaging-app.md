@@ -15,7 +15,7 @@ A Boolean value that indicates whether the app can use the TelephonyMessagingKit
 - **Name**: `com.apple.developer.carrier-messaging-app`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add the Default Carrier Messaging App entitlement to your app by following these steps:
 

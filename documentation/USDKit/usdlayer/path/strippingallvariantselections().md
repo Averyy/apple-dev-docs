@@ -20,7 +20,7 @@ Returns a new path with all variant selections removed.
 func strippingAllVariantSelections() -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path stripped of variant selections.
 

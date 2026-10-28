@@ -25,7 +25,7 @@ var state: CBPeripheralState { get }
 @property (readonly) CBPeripheralState state;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the current connection state of the peripheral. For a list of the possible values, see [`CBPeripheralState`](../cbperipheralstate.md).
 

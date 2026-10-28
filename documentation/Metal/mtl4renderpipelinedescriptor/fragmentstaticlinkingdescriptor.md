@@ -25,7 +25,7 @@ var fragmentStaticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
 @property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * fragmentStaticLinkingDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to link extra shader functions to the fragment stage of the render pipeline.
 

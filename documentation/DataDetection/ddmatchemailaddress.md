@@ -25,7 +25,7 @@ class DDMatchEmailAddress
 @interface DDMatchEmailAddress : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns an email match in a `DDMatchEmailAddress` object, which includes an email address, and optionally a label that categorizes the email address.
 

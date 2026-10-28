@@ -17,7 +17,7 @@ The inner authentication type to use for the Tunneled Transport Layer Security (
 let innerAuthentication: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the configuration doesn’t specify an inner authentication type.
 

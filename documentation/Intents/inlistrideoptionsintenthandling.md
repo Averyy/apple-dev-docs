@@ -23,7 +23,7 @@ protocol INListRideOptionsIntentHandling : NSObjectProtocol
 @protocol INListRideOptionsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INListRideOptionsIntentHandling`](./inlistrideoptionsintenthandling.md) protocol to resolve, confirm, and handle requests for information about the types of rides available from your service right now. Maps asks for this information when the user searches for a ride between the specified pickup and drop-off locations. Adopt this protocol in an object of your Intents extension that is capable of retrieving the ride information from your servers.
 

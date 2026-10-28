@@ -22,7 +22,7 @@ class VNDocumentCameraScan
 @interface VNDocumentCameraScan : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the document camera scans a document, it returns the resulting information in this format, through the delegate method [`documentCameraViewController(_:didFinishWith:)`](./vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller%28_,didfinishwith%29.md).
 

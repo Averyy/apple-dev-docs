@@ -22,7 +22,7 @@ nonisolated
 func presentationBackground<V>(alignment: Alignment = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses a yellow view as the sheet background:
 

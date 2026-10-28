@@ -18,7 +18,7 @@ A Boolean value that indicates whether it receives location updates based on suc
 @property (nonatomic, readonly) BOOL persistenceUnavailable;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), then location updates are suspended because the app has a persistence failure.
 

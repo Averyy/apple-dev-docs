@@ -24,7 +24,7 @@ var configuration: UISceneConfiguration { get }
 @property (nonatomic, copy, readonly) UISceneConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Before the creation of a scene, UIKit creates a [`UISceneConfiguration`](../uisceneconfiguration.md) object and fills it with details from your app’s `Info.plist` file. (Normally, UIKit chooses the first scene of the appropriate type listed in your scene configuration data.) If the [`application(_:configurationForConnecting:options:)`](../uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method of your app delegate returns a new [`UISceneConfiguration`](../uisceneconfiguration.md) object, UIKit copies that object to this property.
 

@@ -22,7 +22,7 @@ static let toggleSidebar: NSToolbarItem.Identifier
 extern NSToolbarItemIdentifier NSToolbarToggleSidebarItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When selected, this item sends a `toggleSidebar:` message to the first responder.
 

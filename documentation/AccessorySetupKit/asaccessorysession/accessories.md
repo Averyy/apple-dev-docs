@@ -24,7 +24,7 @@ var accessories: [ASAccessory] { get }
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 To monitor for changes in this list, use your event handler to watch for the events [`ASAccessoryEventType.accessoryAdded`](../asaccessoryeventtype/accessoryadded.md), [`ASAccessoryEventType.accessoryChanged`](../asaccessoryeventtype/accessorychanged.md), and [`ASAccessoryEventType.accessoryRemoved`](../asaccessoryeventtype/accessoryremoved.md).
 

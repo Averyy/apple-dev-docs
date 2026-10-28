@@ -24,7 +24,7 @@ enum StartHandlerReason
 enum PHASESoundEventStartHandlerReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When your app starts a sound event by calling [`start(completion:)`](./start%28completion%29.md), the framework invokes the argument closure when starting succeeds or fails. PHASE passes an instance of this enumeration to the closure to describe the results of the call.
 

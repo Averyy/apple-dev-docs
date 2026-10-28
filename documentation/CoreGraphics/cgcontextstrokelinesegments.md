@@ -21,7 +21,7 @@ Strokes a sequence of line segments.
 extern void CGContextStrokeLineSegments(CGContextRef c, const CGPoint *points, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This function creates a new path, adds the individual line segments to the path, and then strokes the path. The current path is cleared as a side effect of calling this function.
 

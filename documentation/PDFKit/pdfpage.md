@@ -28,7 +28,7 @@ class PDFPage
 
 - [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 
-#### Overview
+## Overview
 
 `PDFPage` objects are flexible and powerful. With them you can render PDF content onscreen or to a printer, add annotations, count characters, define selections, and get the textual content of a page as an `NSString` object.
 

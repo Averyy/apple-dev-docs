@@ -25,11 +25,11 @@ typealias CGDataProviderSkipForwardCallback = (UnsafeMutableRawPointer?, off_t) 
 typedef long long (*)(void *, long long) CGDataProviderSkipForwardCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes that were actually skipped.
 
-#### Discussion
+## Discussion
 
 When Core Graphics needs to advance forward in the provider’s data stream, your function is called.
 

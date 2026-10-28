@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app may provide directions beyond wha
 - **Name**: `com.apple.developer.maps` (Maps)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Maps capability in Xcode.
 

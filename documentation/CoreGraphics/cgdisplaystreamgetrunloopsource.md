@@ -10,11 +10,11 @@
 extern CFRunLoopSourceRefCGDisplayStreamGetRunLoopSource(CGDisplayStreamRef displayStream);
 ```
 
-#### Return Value
+## Return Value
 
 The CFRunLoopSource for this displayStream.  Note: This function will return NULL if the display stream was created via  CGDisplayStreamCreateWithDispatchQueue().
 
-#### Discussion
+## Discussion
 
 Return the singleton CFRunLoopSourceRef for a CGDisplayStream.
 

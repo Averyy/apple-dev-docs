@@ -17,7 +17,7 @@ A structure that encapsulates a electricity guidance query request.
 struct Query
 ```
 
-#### Overview
+## Overview
 
 Create a [`ElectricityGuidance.Query`](./query.md) for a [`ElectricityGuidance.Service`](./service.md) request.
 

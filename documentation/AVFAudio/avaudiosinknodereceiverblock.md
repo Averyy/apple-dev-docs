@@ -25,7 +25,7 @@ typealias AVAudioSinkNodeReceiverBlock = (UnsafePointer<AudioTimeStamp>, AVAudio
 typedef int (^)(const struct AudioTimeStamp *, unsigned int, const struct AudioBufferList *) AVAudioSinkNodeReceiverBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code. When an error occurs, consider the audio data invalid.
 

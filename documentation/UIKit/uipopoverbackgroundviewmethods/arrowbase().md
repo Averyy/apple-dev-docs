@@ -23,7 +23,7 @@ static func arrowBase() -> CGFloat
 + (CGFloat) arrowBase;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return the width of your popover’s arrow at its base. The arrow width must be the same for all possible directions and that width must not change.
 

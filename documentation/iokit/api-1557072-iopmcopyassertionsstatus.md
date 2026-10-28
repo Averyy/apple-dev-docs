@@ -16,11 +16,11 @@ Returns a list of available assertions and their system-wide levels.
 IOReturn IOPMCopyAssertionsStatus(CFDictionaryRef *AssertionsStatus);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Discussion
+## Discussion
 
 The system-wide level is the maximum of all individual assertions' levels.
 

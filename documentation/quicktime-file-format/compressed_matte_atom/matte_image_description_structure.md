@@ -6,7 +6,7 @@
 
 An image description structure associated with this matte data.
 
-#### Overview
+## Overview
 
 The image description contains detailed information that governs how the matte data is used. See [`Video sample description`](../video_sample_description.md) for more information about image descriptions.
 

@@ -19,7 +19,7 @@ var showsPrintPanel: Bool { get set }
 @property BOOL showsPrintPanel;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not affect the display of a progress panel; that operation is controlled by the [`showsProgressPanel`](./showsprogresspanel.md) method.
 

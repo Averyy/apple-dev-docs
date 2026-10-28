@@ -19,7 +19,7 @@ The control point that defines the curve in unit coordinate space.
 var control: CGPoint?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil` this is a straight line without a middle control point.
 

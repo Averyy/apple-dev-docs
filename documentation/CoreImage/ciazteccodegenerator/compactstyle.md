@@ -25,7 +25,7 @@ var compactStyle: Float { get set }
 @property (nonatomic) float compactStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `nil` for automatic.
 

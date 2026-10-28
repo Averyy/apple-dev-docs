@@ -22,11 +22,11 @@ Remove the last byte from this span.
 mutating func removeLast() -> UInt8
 ```
 
-#### Return Value
+## Return Value
 
 The removed byte.
 
-#### Discussion
+## Discussion
 
 Returns the last byte. The `OutputRawSpan` must not be empty.
 

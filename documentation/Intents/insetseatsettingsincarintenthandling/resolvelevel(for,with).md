@@ -28,7 +28,7 @@ optional func resolveLevel(for intent: INSetSeatSettingsInCarIntent) async -> IN
 - (void) resolveLevelForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the intensity level for the requested system. Use the intent object to identify the intensity level specified by the user. This maps to the manual knob associated with the requested system in the vehicle.
 

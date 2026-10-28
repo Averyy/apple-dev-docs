@@ -5,7 +5,7 @@
 
 Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
 
-#### Overview
+## Overview
 
 By placing an App Clip Code at a physical location or using it in printed or digital marketing materials, you make your App Clip more discoverable. An App Clip Code always uses a design Apple provides, and users instantly recognize and scan it to launch your App Clip. You can generate an App Clip Code with the [App Clip Code Generator](https://developer.apple.com/app-clips/resources/) command-line tool or [App Store Connect](https://appstoreconnect.apple.com/). The latter is especially useful if you prefer a tool that offers a visual interface and lets you:
 
@@ -16,13 +16,13 @@ By placing an App Clip Code at a physical location or using it in printed or dig
 
 > ❗ **Important**:  To create an App Clip Code with App Store Connect, you first need to upload a build of your app that contains the App Clip and create an advanced App Clip experience. If you haven’t already done so — for example, during development — use the App Clip Code Generator command-line tool instead.
 
-##### Select one or more advanced App Clip experiences
+### Select one or more advanced App Clip experiences
 
 [App Store Connect](https://appstoreconnect.apple.com/) offers functionality to create an App Clip Code for one or more advanced App Clip experiences. First, select your app’s latest version; then, under Advanced App Clip Experiences, click Edit Advanced Experiences. Next, click Get App Clip Codes. Select one or more advanced App Clip experiences. (Note that you can only select App Clip experiences with invocation URLs that fit in an App Clip Code.) Finally, click Get Started.
 
 For more information, refer to [Configuring App Clip experiences](./configuring-the-launch-experience-of-your-app-clip.md), [Encoding a URL in an App Clip Code](./encoding-a-url-in-an-app-clip-code.md), and [App Store Connect Help](https://help.apple.com/app-store-connect/#/dev43c15c696).
 
-##### Create one or more App Clip Codes
+### Create one or more App Clip Codes
 
 [App Store Connect](https://appstoreconnect.apple.com/) guides you through the process of creating an App Clip Code for each selected experience. If you select more than one advanced App Clip experience and click Get Started, App Store Connect generates an App Clip Code for each experience with the same type, color, and design.
 
@@ -51,7 +51,7 @@ Note that each URL in the CSV file must match the selected App Clip experience.
 
 > **Note**:  If adding parameters results in a URL that doesn’t fit into an App Clip Code, the website displays an error and doesn’t create a code. For more information about choosing the right URL to encode, refer to [Encoding a URL in an App Clip Code](./encoding-a-url-in-an-app-clip-code.md).
 
-##### Configure your App Clip Code appearance
+### Configure your App Clip Code appearance
 
 On the next screen, choose a default color pattern or experiment with custom colors and instantly preview and verify them. App Clip Codes use three different colors: a foreground color and a background color you choose, and a third color that [App Store Connect](https://appstoreconnect.apple.com/) generates for you based on the other two colors.
 

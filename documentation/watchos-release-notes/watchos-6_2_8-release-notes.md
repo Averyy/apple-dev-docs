@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 6.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 6.2.8. The SDK comes bundled with Xcode 11.5. For information on the compatibility requirements for Xcode 11.5, see [Xcode 11.5 Release Notes](../Xcode-Release-Notes/xcode-11_5-release-notes.md).
 
-##### General
+### General
 
 There are no release notes for this software update.
 

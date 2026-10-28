@@ -16,7 +16,7 @@ The list of shipping methods available for a payment request.
 sequence <ApplePayShippingMethod> shippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayShippingMethod`](../applepayshippingmethod.md).
 

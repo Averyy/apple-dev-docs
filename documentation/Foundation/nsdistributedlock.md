@@ -20,7 +20,7 @@ class NSDistributedLock
 @interface NSDistributedLock : NSObject
 ```
 
-#### Overview
+## Overview
 
 The lock is implemented by an entry (such as a file or directory) in the file system. For multiple applications to use an [`NSDistributedLock`](./nsdistributedlock.md) object to coordinate their activities, the lock must be writable on a file system accessible to all hosts on which the applications might be running.
 

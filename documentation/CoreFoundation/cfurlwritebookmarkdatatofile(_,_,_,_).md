@@ -25,7 +25,7 @@ func CFURLWriteBookmarkDataToFile(_ bookmarkRef: CFData!, _ fileURL: CFURL!, _ o
 extern Boolean CFURLWriteBookmarkDataToFile(CFDataRef bookmarkRef, CFURLRef fileURL, CFURLBookmarkFileCreationOptions options, CFErrorRef*errorRef);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the alias file is successfully created; otherwise, `false`.
 

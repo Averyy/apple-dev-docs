@@ -33,7 +33,7 @@ var dateSearchType: INDateSearchType { get }
 @property (atomic, assign, readonly) INDateSearchType dateSearchType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to determine how to apply the value in the [`dateTime`](./datetime.md) property to your search results. When the value of this property is [`INDateSearchType.unknown`](../indatesearchtype/unknown.md), do not consider location as part of your search criteria.
 

@@ -33,7 +33,7 @@ var contents: [INNoteContent] { get }
 @property (atomic, copy, readonly) NSArray<INNoteContent *> * contents;
 ```
 
-#### Discussion
+## Discussion
 
 A note may contain any number of [`INNoteContent`](../innotecontent.md) objects with the note’s text and images.
 

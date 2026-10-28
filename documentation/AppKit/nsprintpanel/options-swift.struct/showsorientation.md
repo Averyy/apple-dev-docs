@@ -19,7 +19,7 @@ static var showsOrientation: NSPrintPanel.Options { get }
 NSPrintPanelShowsOrientation
 ```
 
-#### Discussion
+## Discussion
 
 This control is separate from any accessory views.
 

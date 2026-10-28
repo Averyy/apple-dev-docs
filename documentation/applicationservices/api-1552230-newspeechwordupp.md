@@ -15,7 +15,7 @@ Creates a new universal procedure pointer (UPP) to a wordcallback function.
 SpeechWordUPP NewSpeechWordUPP(SpeechWordProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 A UPP to the wordcallback function. See the description of the `SpeechWordUPP` data type.
 

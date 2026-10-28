@@ -19,7 +19,7 @@ enum NSUserInterfaceLayoutDirection
 enum NSUserInterfaceLayoutDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are returned by [`userInterfaceLayoutDirection`](./nsapplication/userinterfacelayoutdirection.md).
 

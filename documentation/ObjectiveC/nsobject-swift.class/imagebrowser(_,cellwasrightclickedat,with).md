@@ -19,7 +19,7 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, cellWasRightClickedAt index: 
 - (void) imageBrowser:(IKImageBrowserView *) aBrowser cellWasRightClickedAtIndex:(NSUInteger) index withEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals that the user either right-clicked an item in the browser or left-clicked the item with the Alt key pressed. You can implement this method if you want to perform custom tasks at that time.
 

@@ -19,7 +19,7 @@ var promptText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * promptText;
 ```
 
-#### Discussion
+## Discussion
 
 The prompt text is displayed immediately below the title text.
 

@@ -18,11 +18,11 @@ Produce a reference to the actor to which the enclosing code is isolated, or `ni
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro isolation<T>() -> T
+@freestanding(expression)
+macro isolation<T>() -> T
 ```
 
-#### Overview
+## Overview
 
 If the type annotation provided for `#isolation` is not `(any Actor)?`, the type must match the enclosing actor type. If no type annotation is provided, the type defaults to `(any Actor)?`.
 

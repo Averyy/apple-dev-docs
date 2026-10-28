@@ -19,11 +19,11 @@ func defaultCountryCode() -> String!
 - (NSString *) defaultCountryCode;
 ```
 
-#### Return Value
+## Return Value
 
 The default country code.
 
-#### Discussion
+## Discussion
 
 This value returned is set by the user in the Address Book application’s general preference. The supported country codes are listed in [`ABPerson`](../abperson.md).
 

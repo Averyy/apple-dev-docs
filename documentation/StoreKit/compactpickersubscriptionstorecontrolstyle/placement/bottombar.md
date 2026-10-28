@@ -19,7 +19,7 @@ A placement that locates the compact picker in a bar near the bottom of the main
 static var bottomBar: CompactPickerSubscriptionStoreControlStyle.Placement { get }
 ```
 
-#### Discussion
+## Discussion
 
 The bottom bar conditonally applies a special visual treatment when it overlaps the main content of the subscription store view. The content within the bottom bar doesn’t scroll with the rest of the content in the main scroll view.
 

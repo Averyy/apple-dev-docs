@@ -25,7 +25,7 @@ case serverRecordChanged
 CKErrorServerRecordChanged
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that the server’s version of the record is newer than the local version the client’s trying to save. Your app needs to handle this error, resolve any conflicts in the record, and attempt another save of the record, if necessary.
 

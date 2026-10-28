@@ -27,4 +27,4 @@ init(version: UInt32, numSources: UInt32, sources: (MIDIThruConnectionEndpoint, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremidi/midithruconnectionparams/init(version:numsources:sources:numdestinations:destinations:channelmap:lowvelocity:highvelocity:lownote:highnote:notenumber:velocity:keypressure:channelpressure:programchange:pitchbend:filteroutsysex:filteroutmtc:filteroutbeatclock:filtero-6y1ig)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremidi/midithruconnectionparams/init%28version:numsources:sources:numdestinations:destinations:channelmap:lowvelocity:highvelocity:lownote:highnote:notenumber:velocity:keypressure:channelpressure:programchange:pitchbend:filteroutsysex:filteroutmtc:filteroutbeatclock:filtero-6y1ig)*

@@ -23,7 +23,7 @@ var securityOrigin: WKSecurityOrigin { get }
 @property (nonatomic, readonly) WKSecurityOrigin * securityOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 The [`WKSecurityOrigin`](../wksecurityorigin.md) object consists of a host name, a protocol, and a port number.
 

@@ -19,7 +19,7 @@ var collapseBehavior: NSSplitViewItem.CollapseBehavior { get set }
 @property NSSplitViewItemCollapseBehavior collapseBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSSplitViewItem.CollapseBehavior.default`](./collapsebehavior-swift.enum/default.md).
 

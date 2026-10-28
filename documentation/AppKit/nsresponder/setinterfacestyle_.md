@@ -15,7 +15,7 @@ Sets the receiver’s style to the style specified by `interfaceStyle`, such as 
 - (void) setInterfaceStyle:(NSInterfaceStyle) interfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 [`setInterfaceStyle:`](./setinterfacestyle_.md) is an abstract method in `NSResponder`, but is overridden in classes such as [`NSWindow`](../nswindow.md) and [`NSView`](../nsview.md) to actually set the interface style. You should almost never need to invoke or override this method, but if you do override it, your version should always invoke the implementation in `super`.
 

@@ -19,7 +19,7 @@ let XPC_ACTIVITY_CHECK_IN: xpc_object_t
 extern xpc_object_t const XPC_ACTIVITY_CHECK_IN;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this constant to [`xpc_activity_register(_:_:_:)`](./xpc_activity_register%28_,_,_%29.md) as the criteria dictionary to check in with the system for previously registered activity using the same identifier (for example, an activity from a launchd property list).
 

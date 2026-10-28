@@ -15,11 +15,11 @@ Response envelope returned by the Target CPA suggestions endpoint.
 object RecommendationQueryTargetCpaSuggestionResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `RecommendationQueryTargetCpaSuggestionResponse` object is the top-level response body for `POST /suggestions/target-cpas/query`.
 
-##### Example
+### Example
 
 ```json
 {

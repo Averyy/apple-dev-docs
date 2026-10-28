@@ -17,7 +17,7 @@ Initializer meant for subclasses to provide arrays directly.
 init(weight: MLXArray, bias: MLXArray? = nil, scales: MLXArray, biases: MLXArray?, groupSize: Int, bits: Int, mode: QuantizationMode = .affine, globalScale: MLXArray? = nil)
 ```
 
-##### See Also
+### See Also
 
 - [`init(weight:bias:)`](../linear/init%28weight,bias%29.md)
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Build a simple program for your host OS with Embedded Swift.
 
-#### Overview
+## Overview
 
 While desktop operating systems like macOS and Linux are not the typical targets for Embedded Swift, you **absolutely can** build code for them using the Embedded Swift mode. This is useful for experimentation, trying out Embedded Swift, or to be able to iterate fast on an idea for some code that doesn’t really need the physical device to work.
 
@@ -36,7 +36,7 @@ Hello, Embedded Swift 😊
 
 Hooray! Our first *host-side* Embedded Swift program is working!
 
-#### Details
+## Details
 
 Looking closer, this binary *does not actually depend on the Swift runtime in the OS* (all Embedded Swift binaries carry their runtime+stdlib dependencies within), but it is still a *dynamically-linked executable*, so it’s not fully standalone in the embedded sense:
 
@@ -72,7 +72,7 @@ HelloEmbedded:
         /usr/lib/swift/libswiftSwiftOnoneSupport.dylib (compatibility version 1.0.0, current version 0.0.0)
 ```
 
-#### Where to go next
+## Where to go next
 
 - The [Embedded Swift Vision Document](https://github.com/swiftlang/swift-evolution/blob/main/visions/embedded-swift.md) will give you an overview of the approaches and goals of Embedded Swift, and also what exactly is in the Embedded Swift language subset.
 - The [collection of Embedded Swift example projects](https://github.com/swiftlang/swift-embedded-examples) on GitHub shows on which embedded devices can Swift work today, and the examples can also be used as templates for your own projects.

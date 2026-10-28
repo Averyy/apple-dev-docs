@@ -25,11 +25,11 @@ func CMBufferQueueGetFirstPresentationTimeStamp(_ queue: CMBufferQueue) -> CMTim
 extern CMTime CMBufferQueueGetFirstPresentationTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The presentation timestamp of the first buffer in the interrogated `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 This API is is a faster alternative to [`CMBufferQueueTestTrigger(_:triggerToken:)`](./cmbufferqueuetesttrigger%28_,triggertoken%29.md),                but only works if you know your queue is sorted by presentation                timestamp. If the `getPresentationTimeStamp` callback is `NULL`,                `kCMTimeInvalid` will be returned.
 

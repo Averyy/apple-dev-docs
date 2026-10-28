@@ -33,7 +33,7 @@ var relevanceScore: Double { get set }
 @property (atomic, assign, readwrite) double relevanceScore;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the `relevanceScore`, a value between `0` and `1`, to sort the notifications from your app. The highest score gets featured in the notification summary.
 

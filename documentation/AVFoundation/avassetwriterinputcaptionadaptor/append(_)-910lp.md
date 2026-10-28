@@ -24,7 +24,7 @@ func append(_ caption: AVCaption) -> Bool
 - (BOOL) appendCaption:(AVCaption *) caption;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the operation succeeded.
 

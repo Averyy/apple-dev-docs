@@ -16,11 +16,11 @@ Was the last lock operation successful?
 Boolean (*DidLock)(IOFireWireLibCompareSwapCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the last lock operation performed by this command object was successful, false otherwise.
 
-#### Discussion
+## Discussion
 
 Available in v2 and newer.
 

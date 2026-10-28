@@ -21,11 +21,11 @@ func CGDisplayIOServicePort(_ display: CGDirectDisplayID) -> io_service_t
 extern io_service_t CGDisplayIOServicePort(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The I/O Kit service port for the specified display.
 
-#### Discussion
+## Discussion
 
 An I/O Kit service port can be passed to I/O Kit to obtain additional information about the display.
 

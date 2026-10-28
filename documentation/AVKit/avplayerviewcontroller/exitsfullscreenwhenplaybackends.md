@@ -22,7 +22,7 @@ var exitsFullScreenWhenPlaybackEnds: Bool { get set }
 @property (nonatomic) BOOL exitsFullScreenWhenPlaybackEnds;
 ```
 
-#### Discussion
+## Discussion
 
 If you enqueue multiple player items, the player exits full-screen mode after it plays all remaining items in the queue.
 

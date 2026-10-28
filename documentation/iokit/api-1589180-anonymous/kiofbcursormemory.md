@@ -14,7 +14,7 @@
 kIOFBCursorMemory = 100
 ```
 
-#### Discussion
+## Discussion
 
 The memory type for IOConnectMapMemory() to get a slice of shared memory that contains the StdFBShmem_t structure.
 

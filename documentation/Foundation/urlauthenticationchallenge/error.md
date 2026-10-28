@@ -25,7 +25,7 @@ var error: (any Error)? { get }
 @property (copy, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the protocol doesn’t use errors to indicate an authentication failure.
 

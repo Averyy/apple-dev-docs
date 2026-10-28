@@ -25,7 +25,7 @@ class func crossFade(withDuration sec: TimeInterval) -> SKTransition
 + (SKTransition *) crossFadeWithDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

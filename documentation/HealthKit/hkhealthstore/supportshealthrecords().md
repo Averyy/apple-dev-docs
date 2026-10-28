@@ -23,7 +23,7 @@ func supportsHealthRecords() -> Bool
 - (BOOL) supportsHealthRecords;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) if the device is set to a locale where clinical records are supported, or if the user already has clinical records downloaded to their HealthKit store. Otherwise, it returns [`false`](../../Swift/false.md).
 

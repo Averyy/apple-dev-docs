@@ -19,7 +19,7 @@ class IOBluetoothHostController
 @interface IOBluetoothHostController : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object can be used to ask a Bluetooth HCI for certain pieces of information, and be used to make it perform certain functions.
 

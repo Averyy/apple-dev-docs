@@ -10,7 +10,7 @@ A 1-byte specification of the version of this sample group description.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Set to 1.
 

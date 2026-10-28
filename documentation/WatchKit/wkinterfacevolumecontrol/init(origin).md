@@ -19,7 +19,7 @@ init(origin: WKInterfaceVolumeControl.Origin)
 - (instancetype) initWithOrigin:(WKInterfaceVolumeControlOrigin) origin;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](../../SwiftUI/wkinterfaceobjectrepresentable.md) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
 

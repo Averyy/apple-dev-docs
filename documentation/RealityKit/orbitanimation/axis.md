@@ -20,7 +20,7 @@ A 3D vector that points in the direction of the axis around which to rotate.
 var axis: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can rotate an object around any axis. For example, if you set a `1` in the vector’s x-coordinate, rotation occurs around the x-axis, as in the following code.
 

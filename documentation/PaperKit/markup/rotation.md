@@ -20,7 +20,7 @@ The element’s rotation around the center of its frame.
 var rotation: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Together with `frame` this defines the element’s position in its parent.
 

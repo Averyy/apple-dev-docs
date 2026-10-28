@@ -20,7 +20,7 @@ Creates a new entity object.
 + (instancetype) entity;
 ```
 
-#### Return Value
+## Return Value
 
 A new entity object.
 

@@ -21,11 +21,11 @@ class func maximumImageSize(forAspectRatio aspectRatio: CGFloat) -> CGSize
 + (CGSize) maximumImageSizeForAspectRatio:(CGFloat) aspectRatio;
 ```
 
-#### Return Value
+## Return Value
 
 The recommended @c CGSize at which to size the image.
 
-#### Discussion
+## Discussion
 
 Use this method to determine the correct size for images before providing them to
 

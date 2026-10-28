@@ -25,7 +25,7 @@ An object describing the content of a widget that has no user-configurable optio
 
 - [Creating a widget extension](./creating-a-widget-extension.md)
 
-#### Overview
+## Overview
 
 The following example shows the configuration for the leaderboard widget of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project.
 

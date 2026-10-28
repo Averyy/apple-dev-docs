@@ -19,11 +19,11 @@ func convertFromLayer(_ rect: NSRect) -> NSRect
 - (NSRect) convertRectFromLayer:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the view’s interior coordinate system.
 
-#### Discussion
+## Discussion
 
 The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](../../QuartzCore/calayer/contentsscale.md) setting.
 

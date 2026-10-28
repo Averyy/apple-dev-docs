@@ -29,11 +29,11 @@ class func move(to location: CGPoint, duration: TimeInterval) -> SKAction
 
 - [Detecting Changes at Each Step of an Animation](../detecting-changes-at-each-step-of-an-animation.md)
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`position`](../sknode/position.md) property animates from its current position to its new position.
 

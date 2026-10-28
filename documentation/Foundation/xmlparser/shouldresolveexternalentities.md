@@ -25,7 +25,7 @@ var shouldResolveExternalEntities: Bool { get set }
 @property BOOL shouldResolveExternalEntities;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the parser reports declarations of external entities, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md). If you set this property to [`true`](../../Swift/true.md), you may cause other I/O operations, either network-based or disk-based, to load the external DTD.
 

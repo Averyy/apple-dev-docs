@@ -20,7 +20,7 @@ The output buffers of the video composition can be specified with the outputBuff
 var outputBufferDescription: [[CMTag]]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the video composition will output tagged buffers, the details of those buffers should be specified with CMTags. Specifically, the StereoView (eyes) and ProjectionKind must be specified. The behavior is undefined if the output buffers do not match the outputBufferDescription. The default is nil, which means monoscopic output. Note that an empty array is not valid. Note that tagged buffers are only supported for custom compositors.
 

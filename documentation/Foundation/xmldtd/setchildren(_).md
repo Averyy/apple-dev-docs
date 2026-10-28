@@ -20,7 +20,7 @@ func setChildren(_ children: [XMLNode]?)
 - (void) setChildren:(NSArray<NSXMLNode *> *) children;
 ```
 
-#### Discussion
+## Discussion
 
 Replaced or removed child nodes are released.
 

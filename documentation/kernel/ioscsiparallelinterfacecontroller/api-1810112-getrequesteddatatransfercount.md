@@ -12,7 +12,7 @@ UInt64 GetRequestedDataTransferCount (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 The requested data transfer count in bytes.
 

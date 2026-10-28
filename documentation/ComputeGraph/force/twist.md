@@ -16,7 +16,7 @@ Applies a twisting force around a vertical axis through a specified origin point
 void force::twist(float3 origin, float strength, float attraction)
 ```
 
-#### Discussion
+## Discussion
 
 This function creates a vortex-like effect by applying two force components: a tangential force that causes rotation around the origin, and an optional attractive or repulsive force toward or away from the origin. The twist occurs around a vertical (Y-axis) through the specified origin point.
 

@@ -25,7 +25,7 @@ static let domain: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieDomain;
 ```
 
-#### Discussion
+## Discussion
 
 If this cookie attribute is missing, the domain is inferred from the value for `NSHTTPCookieOriginURL`. If you do not specify a value for `NSHTTPCookieOriginURL`, you *must* specify a value for `NSHTTPCookieDomain`.
 

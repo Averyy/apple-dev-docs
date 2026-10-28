@@ -17,7 +17,7 @@ Starts monitoring the specified device activity.
 func startMonitoring(_ activity: DeviceActivityName, during schedule: DeviceActivitySchedule, events: [DeviceActivityEvent.Name : DeviceActivityEvent] = [:]) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the app already monitored the activity, this method overwrites the previous schedule and events. Attempting to monitor too many activities or activities that are too tightly scheduled can cause this method to throw an error.
 

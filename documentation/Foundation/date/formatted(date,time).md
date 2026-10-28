@@ -21,11 +21,11 @@ Generates a locale-aware string representation of a date using specified date an
 func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the specified date and time styles.
 
-#### Discussion
+## Discussion
 
 When displaying a date to a user, use the convenient [`formatted(date:time:)`](./formatted%28date,time%29.md) instance method to customize the string representation of the date. Set the date and time styles of the date format style separately, according to your particular needs.
 

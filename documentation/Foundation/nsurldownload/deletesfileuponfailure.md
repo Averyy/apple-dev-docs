@@ -19,7 +19,7 @@ var deletesFileUponFailure: Bool { get set }
 @property BOOL deletesFileUponFailure;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if partially downloaded files should be deleted when a download stops prematurely, [`false`](../../Swift/false.md) otherwise. The default is [`true`](../../Swift/true.md).
 

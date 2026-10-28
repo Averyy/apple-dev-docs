@@ -26,7 +26,7 @@ var expirationDate: Date! { get set }
 @property (nonatomic, copy, null_resettable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the exact time when the subscription becomes inactive. When the current subscription becomes inactive, the system behaves as though the person isn’t a subscriber, similar to calling [`setCurrentSubscription(_:)`](../vssubscriptionregistrationcenter/setcurrentsubscription%28_%29.md) with a value of `nil`.
 

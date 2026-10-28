@@ -12,7 +12,7 @@ virtual void InitializePowerManagement (
  IOService *provider );
 ```
 
-#### Overview
+## Overview
 
 This method is called to initialize power management. It will call PMinit(), joinPMTree(), and makeUsable(). This method does not call registerPowerDriver(). Subclasses may override this method to change the behavior (such as the number of power states).
 

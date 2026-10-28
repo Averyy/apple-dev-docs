@@ -25,7 +25,7 @@ case defaultTabInterval
 kCTParagraphStyleSpecifierDefaultTabInterval
 ```
 
-#### Discussion
+## Discussion
 
 Tabs after the last specified by `kCTParagraphStyleSpecifierTabStops` are placed at integer multiples of this distance (if positive). Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md) and [`CTTypesetter`](../cttypesetter.md).
 

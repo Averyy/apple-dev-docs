@@ -21,7 +21,7 @@ Returns the mean value of a single-precision vector.
 static func mean<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the mean value of a supplied vector.
 

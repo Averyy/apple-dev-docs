@@ -15,7 +15,7 @@ The HID specification compliant usage for this element.
 var usage: HIDUsage
 ```
 
-#### Discussion
+## Discussion
 
 See [`HIDUsage`](../hidusage.md) for more details.
 

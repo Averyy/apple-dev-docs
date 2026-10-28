@@ -19,7 +19,7 @@ protocol NSTextContentStorageDelegate : NSTextContentManagerDelegate
 @protocol NSTextContentStorageDelegate <NSTextContentManagerDelegate>
 ```
 
-#### Overview
+## Overview
 
 The optional methods that delegates of content storage objects implement to handle content processing.
 

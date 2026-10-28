@@ -28,7 +28,7 @@ optional func resolveProfileName(for intent: INSetProfileInCarIntent) async -> I
 - (void) resolveProfileNameForSetProfileInCar:(INSetProfileInCarIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate the profile name supplied by the user. If you don’t implement this method, SiriKit assumes that you’re able to set the profile using the specified name.
 

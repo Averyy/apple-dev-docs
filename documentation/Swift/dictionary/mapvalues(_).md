@@ -23,11 +23,11 @@ func mapValues<T, E>(_ transform: (Value) throws(E) -> T) throws(E) -> Dictionar
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A dictionary containing the keys and transformed values of this dictionary.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the length of the dictionary.
 

@@ -24,7 +24,7 @@ struct HKHealthConceptDomain
 typedef NSString * HKHealthConceptDomain;
 ```
 
-#### Overview
+## Overview
 
 A health concept describes what type of medical information a concept belongs to. For example, the medication domain groups all medication concepts together.
 

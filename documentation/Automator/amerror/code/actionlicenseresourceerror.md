@@ -20,7 +20,7 @@ case actionLicenseResourceError
 AMActionLicenseResourceError
 ```
 
-#### Discussion
+## Discussion
 
 The only license currently supported is QuickTime Pro.
 

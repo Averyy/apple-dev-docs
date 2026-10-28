@@ -19,7 +19,7 @@ func setEventRefCon(_ inRefCon: UnsafeMutableRawPointer!)
 - (void) setEventRefCon:(void *) inRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 This is really not intended for client sessions. Only subclasses would really be interested in using this. They should set these when their subclass object is created, because otherwise they will have no context in their callback.
 

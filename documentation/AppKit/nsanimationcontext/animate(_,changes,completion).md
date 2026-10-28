@@ -15,7 +15,7 @@ Animate changes to one or more views using the specified SwiftUI animation.
 static func animate(_ animation: Animation, changes: () -> Void, completion: (() -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Animations performed using this method can be smoothly retargeted while preserving velocity, just like animations in SwiftUI views.
 

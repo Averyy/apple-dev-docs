@@ -9,9 +9,9 @@ Fetch metadata for a genre from the catalog by using its identifier.
 **Availability**:
 - VPP License Management 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

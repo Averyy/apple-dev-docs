@@ -22,7 +22,7 @@ var bundleIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the bundle identifier for an app using the `codesign` command line utility:
 

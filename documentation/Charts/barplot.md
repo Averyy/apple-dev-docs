@@ -21,7 +21,7 @@ Chart content that represents a collection of data using bars.
 struct BarPlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `BarPlot` when you want to visualize data in the same way as with [`BarMark`](./barmark.md), but you want to visualize an entire data collection with a single plot.
 

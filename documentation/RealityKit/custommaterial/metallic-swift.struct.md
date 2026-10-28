@@ -19,7 +19,7 @@ An object that defines an entity’s reflectiveness.
 struct Metallic
 ```
 
-#### Overview
+## Overview
 
 In physically based rendering, the `metallic` property represents the reflectiveness of an entity. Use this object to specify whether an entity displays metallic qualities and reflects the surrounding environment.
 

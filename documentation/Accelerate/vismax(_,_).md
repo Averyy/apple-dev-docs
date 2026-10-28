@@ -21,7 +21,7 @@ func vIsmax(_ count: Int32, _ x: UnsafePointer<vFloat>) -> Int32
 extern int32_t vIsmax(int32_t count, const vFloat *x);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first element having the maximum value in the vector.
 

@@ -15,11 +15,11 @@ Clone a buffer with a restricted range and an optional callback.
 buf_t buf_clone(buf_t bp, int io_offset, int io_size, void (*iodone)(buf_t, void *), void *arg);
 ```
 
-#### Return Value
+## Return Value
 
 NULL if io_offset/io_size combination is invalid for the buffer to be cloned; otherwise, the new buffer.
 
-#### Discussion
+## Discussion
 
 Generates a buffer which is identical to its "bp" argument except that it spans a subset of the data of the original. The buffer to be cloned should have been allocated with buf_alloc(). Checks its arguments to make sure that the data subset is coherent. Optionally, adds a callback function and argument to it to be called when I/O completes (as with buf_setcallback(), but B_ASYNC is not set). If the original buffer had a upl set through buf_setupl(), this upl is copied to the new buffer; otherwise, the original's data pointer is used raw. The buffer must be released with buf_free().
 

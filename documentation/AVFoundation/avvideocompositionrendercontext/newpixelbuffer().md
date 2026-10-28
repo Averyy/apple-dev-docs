@@ -26,11 +26,11 @@ func newPixelBuffer() -> CVPixelBuffer?
 - (CVPixelBufferRef) newPixelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) to use for rendering.
 
-#### Discussion
+## Discussion
 
 The buffer’s [`kCVImageBufferCleanApertureKey`](../../CoreVideo/kcvimagebuffercleanaperturekey.md) and [`kCVImageBufferPixelAspectRatioKey`](../../CoreVideo/kcvimagebufferpixelaspectratiokey.md) attachments are set to match the current composition processor properties. You’re responsible for calling [`CVBufferRelease`](../../CoreVideo/cvbufferrelease.md) on the pixel buffer.
 

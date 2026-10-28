@@ -25,11 +25,11 @@ func CFStringGetRangeOfComposedCharactersAtIndex(_ theString: CFString!, _ theIn
 extern CFRange CFStringGetRangeOfComposedCharactersAtIndex(CFStringRef theString, CFIndex theIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The range of the composed character sequence.
 
-#### Discussion
+## Discussion
 
 A composed character sequence is a series of one or more characters where each is a combining character, zero-width joiner or non-joiner, voiced mark, or enclosing mark, optionally including a base character.
 

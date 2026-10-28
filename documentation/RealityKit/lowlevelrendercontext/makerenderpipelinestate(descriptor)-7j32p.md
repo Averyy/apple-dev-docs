@@ -22,8 +22,8 @@ func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor)
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
+nonisolated(nonsending)
+func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
 ```
 
 ## See Also

@@ -26,7 +26,7 @@ func removeAnimation(forKey key: String, fadeOutDuration duration: CGFloat)
 - (void) removeAnimationForKey:(NSString *) key fadeOutDuration:(CGFloat) duration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create smooth transitions between the effects of multiple animations. For example, the geometry loaded from a scene file for a game character may have associated animations for player actions such as walking and jumping. When the player lands from a jump, you remove the jump animation so the character continues walking. If you use the [`removeAnimation(forKey:)`](./removeanimation%28forkey%29.md) method to remove the jump animation, SceneKit abruptly switches from the current frame of the jump animation to the current frame of the walk animation. If you use the [`removeAnimation(forKey:fadeOutDuration:)`](./removeanimation%28forkey,fadeoutduration%29.md) method instead, SceneKit plays both animations at once during that duration and interpolates vertex positions from one animation to the other, creating a smooth transition.
 

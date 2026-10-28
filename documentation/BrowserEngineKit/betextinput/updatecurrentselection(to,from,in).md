@@ -27,7 +27,7 @@ func updateCurrentSelection(to point: CGPoint, from gestureType: BEGestureType, 
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, notify the system that your app handles the change by calling [`selectionChangedWithGesture(at:gesture:state:flags:)`](../betextinteraction/selectionchangedwithgesture%28at,gesture,state,flags%29.md).
 

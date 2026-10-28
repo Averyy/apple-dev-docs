@@ -5,41 +5,41 @@
 
 Review known issues and changes in Reality Composer Pro 3.
 
-#### Overview
+## Overview
 
 Reality Composer Pro is a standalone app, available for download from the [Apple Developer website](https://developer.apple.com/reality-composer-pro/), and is no longer part of Xcode. Reality Composer Pro requires a Mac with Apple silicon running macOS Tahoe 26.5 or later.
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - Asset Generation is only supported on macOS 27. (178159978)
 
   - **Workaround:** Update to macOS 27.
 
-##### Materials and Shaders
+### Materials and Shaders
 
-###### Known Issues
+#### Known Issues
 
 - Imported asset’s shader graph fails on normal map. (184117276)
 
-##### 3D Modeling
+### 3D Modeling
 
-###### Known Issues
+#### Known Issues
 
 - Adding a Mesh Resource type to the Model Mesh field causes the entity to flicker on screen and primitive geometry shapes to no longer load. (185447536)
 
   - **Workaround:** Save the project and relaunch Reality Composer Pro 3.
 
-##### RCP Assist
+### RCP Assist
 
-###### Known Issues
+#### Known Issues
 
 - RCP Assist creates a ShaderGraph (MaterialX 1.38) material instead of Physically Based when explicitly asked to create a Physically Based material type. (184871460)
 
-##### Scripting and Shaders
+### Scripting and Shaders
 
-###### Known Issues
+#### Known Issues
 
 - When using world position in scripts or shaders, Reality Composer Pro content shifts relative to the world origin in shared space apps. (178279067)
 

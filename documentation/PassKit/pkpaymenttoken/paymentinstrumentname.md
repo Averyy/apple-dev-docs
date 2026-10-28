@@ -25,7 +25,7 @@ var paymentInstrumentName: String { get }
 @property (nonatomic, copy, readonly) NSString * paymentInstrumentName;
 ```
 
-#### Discussion
+## Discussion
 
 This string is suitable for display; it doesn’t contain the full payment information.
 

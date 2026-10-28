@@ -19,7 +19,7 @@ func setAlignment(_ alignment: NSTextAlignment, range: NSRange)
 - (void) setAlignment:(NSTextAlignment) alignment range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 When attribute fixing takes place, this change will affect only paragraphs whose first character was included in `range`. Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

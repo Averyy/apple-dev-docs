@@ -20,7 +20,7 @@ var renderValue: LayerRenderer.Drawable.TrackingArea.RenderValue { get }
 cp_tracking_area_render_value cp_tracking_area_get_render_value(cp_tracking_area_t tracking_area);
 ```
 
-#### Discussion
+## Discussion
 
 Use the returned value in the render pass of [`cp_drawable_get_tracking_areas_texture`](../../../cp_drawable_get_tracking_areas_texture.md) for the pixel value of the tracking area identifier.
 

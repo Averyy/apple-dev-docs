@@ -18,7 +18,7 @@ A collection of tracking information about the camera currently in use.
 struct CameraInformation
 ```
 
-#### Overview
+## Overview
 
 Use this class in conjuction with [`track(_:cameraInformation:)`](./track%28_,camerainformation%29-4yl9b.md) and [`track(_:cameraInformation:)`](./track%28_,camerainformation%29-44mwn.md).
 

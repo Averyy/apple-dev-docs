@@ -19,11 +19,11 @@
 static bool SPSize3DFloatIsNaN(SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains any NaN values.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the size contains any NaN values.
 

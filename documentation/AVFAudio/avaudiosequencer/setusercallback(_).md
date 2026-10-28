@@ -24,7 +24,7 @@ func setUserCallback(_ userCallback: AVAudioSequencerUserCallback?)
 - (void) setUserCallback:(AVAudioSequencerUserCallback) userCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the same callback for events that occur on any track in the sequencer. Set the callback to `nil` to disable it.
 

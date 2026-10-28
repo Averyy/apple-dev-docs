@@ -28,11 +28,11 @@ extern OSStatus AudioUnitSetProperty(AudioUnit inUnit, AudioUnitPropertyID inID,
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 To clear an audio unit property value, set the `inData` parameter to  `NULL` and set the `inDataSize` parameter to `0`. Clearing properties works only for those properties that do not have a default value.
 

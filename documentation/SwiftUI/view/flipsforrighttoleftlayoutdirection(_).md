@@ -22,11 +22,11 @@ nonisolated
 func flipsForRightToLeftLayoutDirection(_ enabled: Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that conditionally mirrors its contents horizontally when the layout direction is right-to-left.
 
-#### Discussion
+## Discussion
 
 Use `flipsForRightToLeftLayoutDirection(_:)` when you need the system to horizontally mirror the contents of the view when presented in a right-to-left layout.
 

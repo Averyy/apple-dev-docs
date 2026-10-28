@@ -15,7 +15,7 @@ Initializes an instance of a slider control.
 virtual bool init(IOUserAudioDriver *in_driver, bool in_is_settable, uint32_t in_control_value, IOUserAudioSliderRange in_range, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization succeeded; `false` otherwise.
 

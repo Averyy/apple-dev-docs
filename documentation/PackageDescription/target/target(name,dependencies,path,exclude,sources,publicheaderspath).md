@@ -12,7 +12,7 @@ Creates a library or executable target.
 static func target(name: String, dependencies: [Target.Dependency] = [], path: String? = nil, exclude: [String] = [], sources: [String]? = nil, publicHeadersPath: String? = nil) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 A target can contain either Swift or C-family source files, but not both. The Swift Package Manager considers a target to be an executable target if its directory contains a `main.swift`, `main.m`, `main.c`, or `main.cpp` file. The Swift Package Manager considers all other targets to be library targets.
 

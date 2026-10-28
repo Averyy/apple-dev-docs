@@ -21,11 +21,11 @@ Creates a metadata item whose value loads on an on-demand basis only.
 init(propertiesOfMetadataItem metadataItem: AVMetadataItem, valueLoadingHandler handler: @escaping @Sendable (AVMetadataItemValueRequest) -> Void)
 ```
 
-#### Return Value
+## Return Value
 
 A newly created instance of [`AVMetadataItem`](../avmetadataitem.md).
 
-#### Discussion
+## Discussion
 
 Use this method to create metadata items for optional display purposes. For example, a metadata item that provides a large image, should only load the image when the system requests it.
 

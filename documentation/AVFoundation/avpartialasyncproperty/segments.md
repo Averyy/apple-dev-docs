@@ -23,7 +23,7 @@ static var segments: AVAsyncProperty<Root, [AVAssetTrackSegment]> { get }
 
 Available when `Root` inherits `AVAssetTrack`.
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

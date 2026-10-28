@@ -23,7 +23,7 @@ let SKStoreProductParameterProductIdentifier: String
 extern NSString * const SKStoreProductParameterProductIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of [`NSString`](../Foundation/nsstring.md).
 

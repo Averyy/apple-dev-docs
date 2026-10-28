@@ -25,13 +25,13 @@ func setValidationPredicates(_ validationPredicates: [NSPredicate]?, withValidat
 - (void) setValidationPredicates:(NSArray<NSPredicate *> *) validationPredicates withValidationWarnings:(NSArray<NSString *> *) validationWarnings;
 ```
 
-#### Discussion
+## Discussion
 
 The `validationPredicates` and `validationWarnings` arrays should contain the same number of elements, and corresponding elements should appear at the same index in each array.
 
 Instead of implementing individual validation methods, you can use this method to provide a list of predicates that are evaluated against the managed objects and a list of corresponding error messages (which can be localized).
 
-##### Special Considerations
+### Special Considerations
 
 This method raises an exception if the receiver’s model has been used by an object graph manager.
 

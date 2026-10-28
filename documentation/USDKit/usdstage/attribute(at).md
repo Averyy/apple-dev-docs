@@ -20,7 +20,7 @@ Returns the attribute at a given path, if it exists.
 func attribute(at path: USDLayer.Path) -> USDPrim.Attribute
 ```
 
-#### Discussion
+## Discussion
 
 If no attribute exists at the resolved path, returns an invalid attribute handle.
 

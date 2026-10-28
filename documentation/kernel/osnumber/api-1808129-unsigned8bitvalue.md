@@ -11,11 +11,11 @@ Returns the OSNumber object's integer value cast as an unsigned 8-bit integer.
 virtual unsigned char unsigned8BitValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 The OSNumber object's integer value cast as an unsigned 8-bit integer.
 
-#### Overview
+## Overview
 
 This function merely casts the internal integer value, giving no indication of truncation or other potential conversion problems.
 

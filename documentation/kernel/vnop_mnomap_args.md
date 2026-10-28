@@ -16,7 +16,7 @@ struct vnop_mnomap_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_MMAP is an advisory calldown to say that the system is mmap-ing a file.
 

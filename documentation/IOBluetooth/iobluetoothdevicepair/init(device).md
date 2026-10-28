@@ -19,7 +19,7 @@ convenience init!(device: IOBluetoothDevice!)
 + (instancetype) pairWithDevice:(IOBluetoothDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn or Bluetooth error code, if the pairing could not be started.
 

@@ -15,11 +15,11 @@ CMError CMCopyProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMCopyProfile` function duplicates an entire open profile whose reference you specify. If you have made temporary changes to the profile, which you have not saved by calling `CMUpdateProfile`, those changes are included in the duplicated profile. They are not saved to the original profile unless you call `CMUpdateProfile` for that profile.
 

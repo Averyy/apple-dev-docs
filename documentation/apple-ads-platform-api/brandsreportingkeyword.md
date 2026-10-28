@@ -15,11 +15,11 @@ Keyword metadata for brands report rows, extending the base reporting keyword wi
 object BrandsReportingKeyword
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsReportingKeyword` extends the base `ReportingKeyword` object with a `brands`-only `locationId` field and a Maps-specific `matchType` override. All other fields, including `id`, `text`, `bid`, `status`, and `adGroupId`, are inherited unchanged from [`ReportingKeyword`](./reportingkeyword.md) and appear alongside these fields in an actual response.
 
-##### Example
+### Example
 
 ```json
 {

@@ -15,7 +15,7 @@ A rectangular area on a two-dimensional map projection.
 mapRect: MapRect;
 ```
 
-#### Discussion
+## Discussion
 
 Thie mapRect is an instance of [`MapRect`](../maprect.md).
 

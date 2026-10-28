@@ -21,7 +21,7 @@ Updates the element with identifier matching the new value.
 mutating func set(_ newValue: IKComponent.SolverCollection.Element) -> IKComponent.SolverCollection.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The previous value if the identifier was found, nil otherwise.
 

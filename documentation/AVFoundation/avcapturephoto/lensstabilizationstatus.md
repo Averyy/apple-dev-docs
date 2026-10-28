@@ -22,7 +22,7 @@ var lensStabilizationStatus: AVCaptureDevice.LensStabilizationStatus { get }
 @property (readonly) AVCaptureLensStabilizationStatus lensStabilizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to capture results for which you requested optical image stabilization (OIS) across all frames of a bracketed photo capture (using the [`AVCapturePhotoBracketSettings`](../avcapturephotobracketsettings.md) [`isLensStabilizationEnabled`](../avcapturephotobracketsettings/islensstabilizationenabled.md) property).
 

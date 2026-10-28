@@ -15,7 +15,7 @@ The clear button for the search field.
 @property (strong, nullable) id accessibilityClearButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a search field.
 

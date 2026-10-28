@@ -23,7 +23,7 @@ init(stringInterpolation: DefaultStringInterpolation)
 
 Available when `StringInterpolation` is `DefaultStringInterpolation`.
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. It’s used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 

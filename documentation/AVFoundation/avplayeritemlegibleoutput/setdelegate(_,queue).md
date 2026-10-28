@@ -24,7 +24,7 @@ func setDelegate(_ delegate: (any AVPlayerItemLegibleOutputPushDelegate)?, queue
 - (void) setDelegate:(id<AVPlayerItemLegibleOutputPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Because the delegate is held using a zeroing-weak reference, it is safe to deallocate the delegate while the receiver still has a reference to it.
 

@@ -25,11 +25,11 @@ func double(forKey defaultName: String) -> Double
 - (double) doubleForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The double value associated with `defaultName`, or `0.0` if the key isn’t present in the defaults database.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain types to their equivalent double values. The Boolean value `true` becomes `1.0` and `false` becomes `0.0`. An integer becomes the equivalent double –– for example, `2` becomes `2.0`. A string that contains a numerical value contains the equivalent double — for example, “123.4” becomes `123.4`.
 

@@ -24,7 +24,7 @@ func SSLGetSessionState(_ context: SSLContext, _ state: UnsafeMutablePointer<SSL
 OSStatus SSLGetSessionState(SSLContextRef context, SSLSessionState *state);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

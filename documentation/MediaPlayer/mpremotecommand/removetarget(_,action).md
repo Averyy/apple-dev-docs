@@ -25,7 +25,7 @@ func removeTarget(_ target: Any, action: Selector?)
 - (void) removeTarget:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`removeTarget(_:action:)`](./removetarget%28_,action%29.md) method to remove the specified target-action pair. Passing `nil` for `target` matches all targets and passing `NULL` for `action` matches all actions.
 

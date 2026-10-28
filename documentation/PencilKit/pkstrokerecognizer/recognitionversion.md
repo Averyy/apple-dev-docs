@@ -23,7 +23,7 @@ static var recognitionVersion: Int { get }
 
 - [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
-#### Discussion
+## Discussion
 
 If you persist results this recognizer returns, store this value alongside them and regenerate the results when running on an OS with a higher version number.
 

@@ -22,11 +22,11 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (UITextDropProposal *) textDroppableView:(UIView<UITextDroppable> *) textDroppableView proposalForDrop:(id<UITextDropRequest>) drop;
 ```
 
-#### Return Value
+## Return Value
 
 A text drop proposal that specifies the behavior of the drop operation.
 
-#### Discussion
+## Discussion
 
 This method is called multiple times while the user performs the drag and drop activity. For instance, it’s called when the user drags items into the text view. It’s also called when the text position changes while the user drags items over the text view. If the drag session changes, which happens when the user adds more items to the drag item set, the method is called again.
 

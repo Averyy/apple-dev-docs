@@ -17,7 +17,7 @@ Returns the mipmap level of the pixel buffer attached to the OpenGL context.
 - (GLint) pixelBufferMipMapLevel;
 ```
 
-#### Return Value
+## Return Value
 
 The desired mipmap level for rendering. This value should be less than or equal to the maximum texture mipmap level of `pixelBuffer` (accessible through an `NSOpenGLPixelBuffer` object’s [`textureMaxMipMapLevel`](../nsopenglpixelbuffer/texturemaxmipmaplevel.md) method).
 

@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether this path begins with `prefix`.
 func hasPrefix(_ prefix: USDLayer.Path) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this path is rooted at `prefix`; otherwise, `false`.
 

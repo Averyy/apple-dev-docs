@@ -15,7 +15,7 @@ Defines how this campaign competes in auctions, including bid type, optimization
 object Campaign.BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 You must send `bidStrategyType` and `bidStrategyGoal` together, matching one of these pairings: `MANUAL_CPT`↔`TAP`, `MANUAL_CPM`↔`IMPRESSION`, `MAX_CONVERSIONS`↔`INSTALL`, `MAX_ENGAGEMENTS`↔`TAP`.
 

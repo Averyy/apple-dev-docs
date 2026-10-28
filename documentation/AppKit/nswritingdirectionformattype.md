@@ -19,7 +19,7 @@ enum NSWritingDirectionFormatType
 enum NSWritingDirectionFormatType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants as the values for the [`writingDirection`](../Foundation/nsattributedstring/key/writingdirection.md) key.
 

@@ -25,7 +25,7 @@ func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKe
 - (void) addObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 `NSArray` objects are not observable, so this method raises an exception when invoked on an `NSArray` object. Instead of observing an array, observe the to-many relationship for which the array is the collection of related objects.
 

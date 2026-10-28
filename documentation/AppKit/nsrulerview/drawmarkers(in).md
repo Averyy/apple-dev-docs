@@ -19,7 +19,7 @@ func drawMarkers(in rect: NSRect)
 - (void) drawMarkersInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`draw(_:)`](../nsrulermarker/draw%28_%29.md); you should never need to invoke it directly, but you might want to override it if you want to do something different when drawing markers.
 

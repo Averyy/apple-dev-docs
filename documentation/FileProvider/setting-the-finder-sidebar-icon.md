@@ -5,7 +5,7 @@
 
 Specify a standard or custom symbol as a sidebar icon.
 
-#### Overview
+## Overview
 
 To set the sidebar icon for your File Provider extension, set the [`CFBundleSymbolName`](../BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key in the File Provider extension’s `Info.plist` file. The key takes the name of one of the SF Symbols. For the complete list of available symbols, see [SF Symbols 3](https://developer.apple.com/sf-symbols/).
 

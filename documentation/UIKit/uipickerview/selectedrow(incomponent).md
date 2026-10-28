@@ -22,7 +22,7 @@ func selectedRow(inComponent component: Int) -> Int
 - (NSInteger) selectedRowInComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 A zero-indexed number identifying the selected row, or `-1` if no row is selected.
 

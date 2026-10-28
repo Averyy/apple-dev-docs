@@ -18,7 +18,7 @@ Posted when a movie player’s playback state has changed. There is no `userInfo
 extern NSString * const MPMoviePlayerPlaybackStateDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Playback state can change programmatically (see [`MPMediaPlayback`](./mpmediaplayback.md)) or by user interaction. To retrieve the playback state of a movie player, access its [`playbackState`](./mpmovieplayercontroller/playbackstate.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

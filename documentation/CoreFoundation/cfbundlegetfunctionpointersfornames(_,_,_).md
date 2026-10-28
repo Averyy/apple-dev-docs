@@ -25,7 +25,7 @@ func CFBundleGetFunctionPointersForNames(_ bundle: CFBundle!, _ functionNames: C
 extern void CFBundleGetFunctionPointersForNames(CFBundleRef bundle, CFArrayRef functionNames, void * ftbl[]);
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function causes the bundle’s code to be loaded if necessary.
 

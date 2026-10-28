@@ -20,11 +20,11 @@ Creates a Perlin noise source with the specified parameters.
 + (instancetype) perlinNoiseSourceWithFrequency:(double) frequency octaveCount:(NSInteger) octaveCount persistence:(double) persistence lacunarity:(double) lacunarity seed:(int32_t) seed;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise source.
 
-#### Discussion
+## Discussion
 
 To make use of this noise source, create a [`GKNoise`](../gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](../gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` class.
 

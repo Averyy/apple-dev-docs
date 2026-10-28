@@ -17,11 +17,11 @@ Returns a range of indexes for the table view’s columns that lie wholly or par
 - (NSRange) columnsInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A range of indexes for the table view’s columns that lie wholly or partially within the horizontal boundaries of `aRect`. If the width or height of `aRect` is `0`, returns an `NSRange` whose length is `0`.
 
-#### Discussion
+## Discussion
 
 The location of the range is the first such column’s index, and the length is the number of columns that lie in `aRect`.
 

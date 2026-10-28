@@ -19,7 +19,7 @@ func moveRow(at oldIndex: Int, to newIndex: Int)
 - (void) moveRowAtIndex:(NSInteger) oldIndex toIndex:(NSInteger) newIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This is similar to removing a row at `oldIndex` and inserting it at `newIndex`, except the same view is used and simply has its position updated to the new location.
 

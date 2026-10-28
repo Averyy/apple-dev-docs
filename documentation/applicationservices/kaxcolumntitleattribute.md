@@ -17,7 +17,7 @@ var kAXColumnTitleAttribute: String { get }
 #define kAXColumnTitleAttribute
 ```
 
-#### Discussion
+## Discussion
 
 The title of the column element represented by this accessibility object. Note that, because column titles are sometimes the children of a separate header element, the value of this attribute can refer to an element that is not a child of the column accessibility object.
 

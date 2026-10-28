@@ -17,7 +17,7 @@ An error that indicates the reader’s internal memory is full.
 case readerMemoryFull
 ```
 
-#### Discussion
+## Discussion
 
 An iOS Alert with instructions will be shown to the user.
 

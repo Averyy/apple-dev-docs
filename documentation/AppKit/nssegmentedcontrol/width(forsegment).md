@@ -19,7 +19,7 @@ func width(forSegment segment: Int) -> CGFloat
 - (CGFloat) widthForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the segment, measured in points, or 0 if the segment is sized to fit the available space automatically.
 

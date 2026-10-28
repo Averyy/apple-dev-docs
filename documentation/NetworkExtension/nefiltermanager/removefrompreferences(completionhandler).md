@@ -27,7 +27,7 @@ func removeFromPreferences() async throws
 - (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After the configuration is removed from the preferences the `NEFilterManager` object will still contain the configuration parameters. Calling `loadFromPreferencesWithCompletionHandler:` will clear out the configuration parameters from the `NEFilterManager` object.
 

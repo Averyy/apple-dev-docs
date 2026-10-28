@@ -24,7 +24,7 @@ optional func netService(_ sender: NetService, didAcceptConnectionWith inputStre
 - (void) netService:(NSNetService *) sender didAcceptConnectionWithInputStream:(NSInputStream *) inputStream outputStream:(NSOutputStream *) outputStream;
 ```
 
-#### Discussion
+## Discussion
 
 When you publish a service, if you set the [`listenForConnections`](../netservice/options/listenforconnections.md) flag in the service options, the service object accepts connections on behalf of your app. Later, when a client connects to that service, the service object calls this method to provide the app with a pair of streams for communicating with that client.
 

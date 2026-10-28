@@ -20,7 +20,7 @@ optional func browser(_ sender: NSBrowser, willDisplayCell cell: Any, atRow row:
 - (void) browser:(NSBrowser *) sender willDisplayCell:(id) cell atRow:(NSInteger) row column:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should set any state necessary for the correct display of the cell.
 

@@ -20,11 +20,11 @@ Creates a subset of the column by removing all duplicate elements.
 func dropDuplicates() -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 
-#### Discussion
+## Discussion
 
 > **Note**: The new column may not preserve the order of the original column.
 

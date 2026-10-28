@@ -32,7 +32,7 @@ optional func resolveDefaultProfile(forSetProfileInCar intent: INSetProfileInCar
 - (void) resolveDefaultProfileForSetProfileInCar:(INSetProfileInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t allow the specified profile to become the default, return an unsupported resolution result.
 

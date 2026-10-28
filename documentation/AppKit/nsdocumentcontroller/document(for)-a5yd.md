@@ -19,7 +19,7 @@ func document(for window: NSWindow) -> NSDocument?
 - (NSDocument *) documentForWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The document object whose window controller owns `window`. Returns `nil` if `window` is `nil`, if `window` has no window controller, or if the window controller does not have an association with an instance of `NSDocument`.
 

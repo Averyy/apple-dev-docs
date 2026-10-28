@@ -20,11 +20,11 @@ func accessibilityIndex() -> Int
 - (NSInteger) accessibilityIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The index for the row.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityIndex`](../nsaccessibility-c.protocol/accessibilityindex.md) property.
 

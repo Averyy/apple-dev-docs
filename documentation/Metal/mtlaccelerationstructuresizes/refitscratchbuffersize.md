@@ -24,7 +24,7 @@ var refitScratchBufferSize: Int
 NSUInteger refitScratchBufferSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be zero, which indicates that refitting the acceleration structure doesn’t require a scratch buffer.
 

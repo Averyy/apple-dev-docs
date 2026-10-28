@@ -5,7 +5,7 @@
 
 Configure your time-to-sample atom for 30 frames per second.
 
-#### Overview
+## Overview
 
 The duration of a video frame is stored in the time-to-sample atom contained within a sample table atom. This duration cannot be interpreted without the media’s time scale, which defines the units-per-second for the duration. In this example, each frame has the same duration, so the time-to-sample atom has one entry, which applies to all video frames in the media.
 

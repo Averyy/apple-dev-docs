@@ -13,11 +13,11 @@ Generates an opaque token that the system uses to keep your networking extension
 ## Declaration
 
 ```swift
-@objc
-(createAccessToken) static func createAccessToken() -> Data?
+@objc(createAccessToken)
+static func createAccessToken() -> Data?
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to generate a token that you pass to [`init(sourceURL:destinationURL:observedProgress:liveActivityAccessToken:)`](./init%28sourceurl,destinationurl,observedprogress,liveactivityaccesstoken%29.md).
 

@@ -24,7 +24,7 @@ var extent: CGRect { get }
 @property (readonly) CGRect extent;
 ```
 
-#### Discussion
+## Discussion
 
 Extent is a rectangle that describes the filter shape in the working coordinate space with a fixed area.
 

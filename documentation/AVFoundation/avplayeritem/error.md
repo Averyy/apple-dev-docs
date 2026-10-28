@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an error that describes what caused the player item to no longer be able to be played.
 

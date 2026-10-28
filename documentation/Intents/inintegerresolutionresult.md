@@ -25,7 +25,7 @@ class INIntegerResolutionResult
 @interface INIntegerResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INIntegerResolutionResult`](./inintegerresolutionresult.md) object is what you return when resolving integer-based parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

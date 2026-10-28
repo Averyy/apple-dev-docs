@@ -25,7 +25,7 @@ func didAccessValue(forKey key: String?)
 - (void) didAccessValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Together with [`willAccessValue(forKey:)`](./willaccessvalue%28forkey%29.md), this method is used to fire faults, to maintain inverse relationships, and so on. Each read access must be wrapped in this method pair (in the same way that each write access must be wrapped in the `willChangeValueForKey:`/`didChangeValueForKey:` method pair). In the default implementation of `NSManagedObject` these methods are invoked for you automatically. If, say, you create a custom subclass that uses explicit instance variables, you must invoke them yourself, as in the following example.
 

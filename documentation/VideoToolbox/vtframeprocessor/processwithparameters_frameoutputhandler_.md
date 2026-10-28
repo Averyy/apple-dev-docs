@@ -20,7 +20,7 @@ Asynchronously performs the processor effects and outputs each frame separately.
 - (void) processWithParameters:(id<VTFrameProcessorParameters>) parameters frameOutputHandler:(void (^)(id<VTFrameProcessorParameters>, CMTime , BOOL , NSError *)) frameOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use with frame processor configurations which allow multiple output frames from a single processing call, such as frame rate conversion processor cases when you need access to output frames as they become available, rather than waiting for all output frames to be complete.
 

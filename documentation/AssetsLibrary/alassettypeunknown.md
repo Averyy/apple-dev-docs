@@ -12,7 +12,7 @@ Specifies that the asset’s type cannot be determined.
 extern NSString * const ALAssetTypeUnknown;
 ```
 
-#### Discussion
+## Discussion
 
 The asset could be a sound file, a video or photo file that the system doesn’t know about or something else. This is possible only for assets imported from a camera onto the device.
 

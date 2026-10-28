@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app can use ThreadNetwork.
 - **Name**: `com.apple.developer.networking.manage-thread-network-credentials`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this entitlement while developing and testing your app. Update your Xcode project by opening the Capabilities library to add Managed Thread Network Credentials (development) to your app.
 

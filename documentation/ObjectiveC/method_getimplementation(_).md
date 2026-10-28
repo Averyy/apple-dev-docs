@@ -25,7 +25,7 @@ func method_getImplementation(_ m: Method) -> IMP
 extern IMPmethod_getImplementation(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 A function pointer of type `IMP`.
 

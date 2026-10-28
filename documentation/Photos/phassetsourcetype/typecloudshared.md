@@ -24,7 +24,7 @@ static var typeCloudShared: PHAssetSourceType { get }
 PHAssetSourceTypeCloudShared
 ```
 
-#### Discussion
+## Discussion
 
 Assets from shared albums cannot be edited and do not appear in Moments collections.
 

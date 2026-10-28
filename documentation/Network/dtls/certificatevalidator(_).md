@@ -21,7 +21,7 @@ Set a closure to provide custom verification of the peer’s credentials during 
 func certificateValidator(_ handler: @escaping @isolated(any) @Sendable (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> DTLS
 ```
 
-#### Discussion
+## Discussion
 
 This closure may be called multiple times for each connection. It should return `true` if the credentials should be trusted and the handshake should proceed, `false` otherwise.
 

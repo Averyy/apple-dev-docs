@@ -23,7 +23,7 @@ var standardAppearance: UIToolbarAppearance { get set }
 @property (nonatomic, copy, readwrite) UIToolbarAppearance * standardAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an appearance object containing the system’s default appearance settings.
 

@@ -19,7 +19,7 @@ func authorizationViewReleasedAuthorization(_ view: SFAuthorizationView!)
 - (void) authorizationViewReleasedAuthorization:(SFAuthorizationView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after deauthorization has been approved (either you called the [`deauthorize(_:)`](../../SecurityInterface/sfauthorizationview/deauthorize%28_%29.md) method, or the user clicked an open lock icon and the [`authorizationViewShouldDeauthorize(_:)`](./authorizationviewshoulddeauthorize%28_%29.md) delegate method did not cancel the operation), and before the user is deauthorized (that is, before the [`authorizationViewDidDeauthorize(_:)`](./authorizationviewdiddeauthorize%28_%29.md) delegate method is called).
 

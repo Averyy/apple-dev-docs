@@ -25,7 +25,7 @@ let kSecMatchSearchList: CFString
 extern CFStringRef const kSecMatchSearchList;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFArray`](../CoreFoundation/cfarray.md) of [`SecKeychain`](./seckeychain.md) items. If provided, the search will be limited to the keychain items contained in this list.
 

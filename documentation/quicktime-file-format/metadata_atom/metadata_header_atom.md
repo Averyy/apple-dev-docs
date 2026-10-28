@@ -6,7 +6,7 @@
 
 An atom that holds the integer value for the next unique item identifier to assign.
 
-#### Overview
+## Overview
 
 For more information, see [`Metadata header atom`](../metadata_header_atom.md).
 

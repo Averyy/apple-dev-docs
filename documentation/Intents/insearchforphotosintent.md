@@ -25,7 +25,7 @@ class INSearchForPhotosIntent
 @interface INSearchForPhotosIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 The system creates an [`INSearchForPhotosIntent`](./insearchforphotosintent.md) object when the user asks to search for photos in an app. The intent object contains the parameters to use during the search, including the possible name of a photo album, the people in the photos, or the location of the photos. Use this intent object to validate the search parameters and to begin the search process. When performing the search, use only the provided parameters and ignore any that have no values.
 
@@ -33,7 +33,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 For a list of other intents in the photos domain, see [`INPhotosDomainHandling`](./inphotosdomainhandling.md).
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

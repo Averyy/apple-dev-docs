@@ -19,7 +19,7 @@ object IdentityPreference
 
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.identitypreference` as the payload type.
 
@@ -29,7 +29,7 @@ You can include multiple [`IdentityPreference`](./identitypreference.md) payload
 
 See also [`CertificatePreference`](./certificatepreference.md) for setting up certificate preferences.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ See also [`CertificatePreference`](./certificatepreference.md) for setting up ce
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

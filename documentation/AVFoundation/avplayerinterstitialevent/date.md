@@ -25,7 +25,7 @@ var date: Date? { get set }
 @property (nonatomic, readonly, nullable) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is `nil` if you initialized the event with a time instead of a date.
 

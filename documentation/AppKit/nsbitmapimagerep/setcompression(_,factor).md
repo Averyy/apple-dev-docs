@@ -19,7 +19,7 @@ func setCompression(_ compression: NSBitmapImageRep.TIFFCompression, factor: Flo
 - (void) setCompression:(NSTIFFCompression) compression factor:(float) factor;
 ```
 
-#### Discussion
+## Discussion
 
 When an [`NSBitmapImageRep`](../nsbitmapimagerep.md) is created, the instance stores the compression type and factor for the source data. The [`tiffRepresentation`](./tiffrepresentation.md) property and [`tiffRepresentationOfImageReps(in:)`](./tiffrepresentationofimagereps%28in%29.md) class method try to use the stored compression type and factor. Use this method to change the compression type and factor.
 

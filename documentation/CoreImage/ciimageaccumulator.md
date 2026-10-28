@@ -24,7 +24,7 @@ class CIImageAccumulator
 @interface CIImageAccumulator : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CIImageAccumulator` class enables feedback-based image processing for such things as iterative painting operations or fluid dynamics simulations. You use `CIImageAccumulator` objects in conjunction with other Core Image classes, such as  [`CIFilter`](./cifilter-swift.class.md), [`CIImage`](./ciimage.md), [`CIVector`](./civector.md), and [`CIContext`](./cicontext.md), to take advantage of the built-in Core Image filters when processing images.
 

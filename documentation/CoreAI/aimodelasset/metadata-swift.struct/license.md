@@ -19,7 +19,7 @@ The license text for the model.
 var license: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty string if the model has no license.
 

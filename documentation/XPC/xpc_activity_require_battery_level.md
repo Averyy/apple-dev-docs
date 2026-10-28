@@ -26,7 +26,7 @@ let XPC_ACTIVITY_REQUIRE_BATTERY_LEVEL: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_REQUIRE_BATTERY_LEVEL;
 ```
 
-#### Discussion
+## Discussion
 
 A default minimum battery level is determined by the system.
 

@@ -20,7 +20,7 @@ A SwiftUI view that displays interactive 3D charts and visualizations.
 @preconcurrency struct Chart3D<Content> where Content : Chart3DContent
 ```
 
-#### Overview
+## Overview
 
 Use `Chart3D` to create three-dimensional data visualizations with compatible mark types. To add content to your chart, use the 3D-only [`SurfacePlot`](./surfaceplot.md) or the 3D initializers of [`PointMark`](./pointmark.md), [`RuleMark`](./rulemark.md), and [`RectangleMark`](./rectanglemark.md).
 
@@ -66,7 +66,7 @@ Chart3D(penguins) {
 }
 ```
 
-##### Customizing interactivity
+### Customizing interactivity
 
 To make your 3D Chart interactive, declare a `@State` property of type  [`Chart3DPose`](./chart3dpose.md) and pass it as a binding to the `chart3DPose(_:)-(Binding<Chart3DPose>)` view modifier:
 

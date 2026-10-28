@@ -21,7 +21,7 @@ A notification that posts before a coordinator changes its registered stores.
 extern NSString * const NSPersistentStoreCoordinatorStoresWillChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the store coordinator that’s about to change. The framework posts the notification to an internal thread. Move to a known thread before peforming any work.
 

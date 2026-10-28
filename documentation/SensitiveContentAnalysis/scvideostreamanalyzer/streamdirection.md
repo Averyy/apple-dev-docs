@@ -21,7 +21,7 @@ enum StreamDirection
 enum SCVideoStreamAnalyzerStreamDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Pass this enum into the [`init(participantUUID:streamDirection:)`](./init%28participantuuid,streamdirection%29.md) initializer when creating an [`SCVideoStreamAnalyzer`](../scvideostreamanalyzer.md) to analyze video streams.
 

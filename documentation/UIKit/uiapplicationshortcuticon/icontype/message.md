@@ -22,7 +22,7 @@ case message
 UIApplicationShortcutIconTypeMessage
 ```
 
-#### Discussion
+## Discussion
 
 ![Message icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934526@2x.png)
 

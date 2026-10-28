@@ -24,7 +24,7 @@ case inProgress
 INSetDefrosterSettingsInCarIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the climate control settings and initiated the changes, but you haven’t yet received confirmation of the completed changes.
 

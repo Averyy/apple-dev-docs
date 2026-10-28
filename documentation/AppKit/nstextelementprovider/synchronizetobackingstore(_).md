@@ -24,7 +24,7 @@ func synchronizeToBackingStore() async throws
 - (void) synchronizeToBackingStore:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If `completionHandler` is `nil`, performs the operation synchronously. The `completionHandler` gets passed `error` if the synchronization fails. It should block (or fails if synchronous) when there’s an active transaction.
 

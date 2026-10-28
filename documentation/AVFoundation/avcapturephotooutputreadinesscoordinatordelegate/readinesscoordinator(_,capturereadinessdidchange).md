@@ -23,7 +23,7 @@ optional func readinessCoordinator(_ coordinator: AVCapturePhotoOutputReadinessC
 - (void) readinessCoordinator:(AVCapturePhotoOutputReadinessCoordinator *) coordinator captureReadinessDidChange:(AVCapturePhotoOutputCaptureReadiness) captureReadiness;
 ```
 
-#### Discussion
+## Discussion
 
 The system always performs this call on the main queue, so you can use it to update your user interface’s shutter button availability and appearance.
 

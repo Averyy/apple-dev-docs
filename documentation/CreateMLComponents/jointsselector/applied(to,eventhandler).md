@@ -20,7 +20,7 @@ Select joints to be included in the pose. Ignored joints will be reset to zero i
 func applied(to input: Pose, eventHandler: EventHandler? = nil) -> Pose
 ```
 
-#### Return Value
+## Return Value
 
 A pose with the ignored joints set to zero.
 

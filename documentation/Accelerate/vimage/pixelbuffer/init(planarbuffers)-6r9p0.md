@@ -23,7 +23,7 @@ init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])
 
 Available when `Format` is `vImage.Interleaved8x3`.
 
-#### Discussion
+## Discussion
 
 Use this function to interleave three discrete planar buffers. For example, the following code creates a three-channel interleaved buffer from three planar buffers:
 

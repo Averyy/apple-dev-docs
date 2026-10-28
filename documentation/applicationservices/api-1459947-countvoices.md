@@ -19,11 +19,11 @@ func CountVoices(_ numVoices: UnsafeMutablePointer<Int16>) -> OSErr
 OSErr CountVoices(SInt16 *numVoices);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `CountVoices` functionreturns, in the `numVoices` parameter,the number of voices available. The application can then use thisinformation to call the `GetIndVoice` functionto obtain voice specification structures for one or more of thevoices.
 

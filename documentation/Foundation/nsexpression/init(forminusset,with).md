@@ -25,7 +25,7 @@ init(forMinusSet left: NSExpression, with right: NSExpression)
 + (NSExpression *) expressionForMinusSet:(NSExpression *) left with:(NSExpression *) right;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSExpression` object that represents the subtraction of `right` from `left`.
 

@@ -24,7 +24,7 @@ func CVMetalTextureCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFD
 extern CVReturn CVMetalTextureCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, id<MTLDevice>metalDevice, CFDictionaryRef textureAttributes, CVMetalTextureCacheRef*cacheOut);
 ```
 
-#### Return Value
+## Return Value
 
 Upon successful creation of the texture cache, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 

@@ -21,11 +21,11 @@ Returns a new weakly-simple copy of this path.
 func normalized(eoFill: Bool = true) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The returned path is a weakly-simple path, has no self-intersections, and has a normalized orientation. The result of filling this path using either even-odd or non-zero fill rules is identical.
 

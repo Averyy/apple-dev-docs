@@ -19,7 +19,7 @@ func collapsible(_ collapsible: Bool) -> some View
 
 Available when `Parent` conforms to `View`, `Content` conforms to `View`, and `Footer` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 This modifier only applies to sections in [`List`](../list.md) views that have the [`sidebar`](../liststyle/sidebar.md) style.
 

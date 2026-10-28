@@ -20,7 +20,7 @@ The layers of entities that cast shadows from this light.
 var layers: RenderLayer.Set? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity casts a shadow into this light’s shadow map when the layers of its [`RenderLayerComponent`](../../renderlayercomponent.md) intersect with this set.
 

@@ -15,11 +15,11 @@ Establishes an already existing mapping.
 virtual OSPtr<IOMemoryMap> setMapping(task_t task, IOVirtualAddress mapAddress, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 A IOMemoryMap object created to represent the mapping.
 
-#### Discussion
+## Discussion
 
 This method tells the IOMemoryDescriptor about a mapping that exists, but was created elsewhere. It allows later callers of the map method to share this externally created mapping. The IOMemoryMap object returned is created to represent it. This method is not commonly needed.
 

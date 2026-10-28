@@ -20,11 +20,11 @@ func CGDisplayVendorNumber(_ display: CGDirectDisplayID) -> UInt32
 extern uint32_t CGDisplayVendorNumber(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A vendor number for the monitor associated with the specified display, or a constant to indicate an exception—see the discussion below.
 
-#### Discussion
+## Discussion
 
 This function uses I/O Kit to identify the monitor associated with the specified display.
 

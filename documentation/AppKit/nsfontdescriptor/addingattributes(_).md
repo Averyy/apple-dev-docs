@@ -19,7 +19,7 @@ func addingAttributes(_ attributes: [NSFontDescriptor.AttributeName : Any] = [:]
 - (NSFontDescriptor *) fontDescriptorByAddingAttributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

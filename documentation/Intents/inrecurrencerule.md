@@ -23,7 +23,7 @@ class INRecurrenceRule
 @interface INRecurrenceRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`INRecurrenceRule`](./inrecurrencerule.md) object to define a repeating pattern for date ranges. Typically, you use recurrence rules when defining date ranges that you associate with a trigger, such as an [`INTemporalEventTrigger`](./intemporaleventtrigger.md) object. Using a recurrence rule avoids the need to create a new trigger each time the old one fires.
 

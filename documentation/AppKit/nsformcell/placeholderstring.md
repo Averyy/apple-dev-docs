@@ -19,7 +19,7 @@ var placeholderString: String? { get set }
 @property (copy, nullable) NSString * placeholderString;
 ```
 
-#### Discussion
+## Discussion
 
 If this property returns `nil`, you can also call `placeholderAttributedString` to see if the cell has an attributed placeholder string. Note that invoking this method clears out any attributed string set by the [`placeholderAttributedString`](./placeholderattributedstring.md) property.
 

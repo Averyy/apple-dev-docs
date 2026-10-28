@@ -21,7 +21,7 @@ let kSecOAEPEncodingParametersAttributeName: CFString
 extern CFStringRef const kSecOAEPEncodingParametersAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to a [`CFData`](../CoreFoundation/cfdata.md) object when the [`kSecPaddingKey`](./ksecpaddingkey.md) attribute is set to [`kSecPaddingOAEPKey`](./ksecpaddingoaepkey.md). If you don’t set this attribute, a zero length data object is used by default.
 

@@ -25,7 +25,7 @@ func CGSizeMake(_ width: CGFloat, _ height: CGFloat) -> CGSize
 static CGSize CGSizeMake(CGFloat width, CGFloat height);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CGSize`](../CoreFoundation/cgsize.md) structure with the specified width and height.
 

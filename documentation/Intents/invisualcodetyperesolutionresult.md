@@ -25,7 +25,7 @@ class INVisualCodeTypeResolutionResult
 @interface INVisualCodeTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INVisualCodeTypeResolutionResult`](./invisualcodetyperesolutionresult.md) object is what you return when resolving parameters containing an [`INVisualCodeType`](./invisualcodetype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

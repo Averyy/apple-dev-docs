@@ -20,7 +20,7 @@ protocol NSCollectionLayoutContainer : NSObjectProtocol
 @protocol NSCollectionLayoutContainer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In a section provider, you use the [`container`](./nscollectionlayoutenvironment/container.md) property of the layout environment ([`NSCollectionLayoutEnvironment`](./nscollectionlayoutenvironment.md)) to get information about the container of the layout, such as its size and content insets. Knowing about the container’s size while rendering the layout’s sections helps you make decisions about how to display the layout.
 

@@ -25,11 +25,11 @@ class func localizedString(from components: PersonNameComponents, style nameForm
 + (NSString *) localizedStringFromPersonNameComponents:(NSPersonNameComponents *) components style:(NSPersonNameComponentsFormatterStyle) nameFormatStyle options:(NSPersonNameComponentsFormatterOptions) nameOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representation of the given name components.
 
-#### Discussion
+## Discussion
 
 This method is a convenience for formatting name components without creating an instance of `NSPersonNameComponentsFormatter`. For greater customizability, you can create an instance of `NSPersonNameComponentsFormatter` and use [`string(from:)`](./string%28from%29.md) instead.
 

@@ -23,7 +23,7 @@ case disabled
 ENStatusDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Use [`setExposureNotificationEnabled(_:completionHandler:)`](../enmanager/setexposurenotificationenabled%28_,completionhandler%29.md) to enable exposure notification.
 

@@ -6,7 +6,7 @@
 
 A 32-bit integer indicating the format of the stored data.
 
-#### Overview
+## Overview
 
 This depends on the media type, but is usually either the compression format or the media type.
 

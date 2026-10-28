@@ -19,7 +19,7 @@ func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd d
 - (void) beginSheetForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo trust:(SecTrustRef) trust showGroup:(BOOL) showGroup;
 ```
 
-#### Discussion
+## Discussion
 
 The sheet displays the leaf certificate plus any other certificates in the certificate chain that the Security Server can find.
 

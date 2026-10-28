@@ -19,7 +19,7 @@ object ParallaxScaleHeader
 
 - [Adding a Scene to a Chapter or a Section Header](../AppleNews/adding-a-scene-to-a-chapter-or-a-section-header.md)
 
-#### Discussion
+## Discussion
 
 In the `ParallaxScale` scene, as the person scrolls down (away from the header), the background of the `header` component zooms out and scrolls slightly slower than the person, giving the impression of a parallax effect, as shown in [this video](https://developer.apple.com/apple-news/videos/parallax-scale.mp4).
 
@@ -27,7 +27,7 @@ You can use a `parallax_scale` scene with a s`ection` or c`hapter` component tha
 
 > 💡 **Tip**:  When you use parallax behavior, you might notice text becoming illegible as it covers an image. You can fix this easily, and create a cleaner, more legible article, by adding a background color.
 
-##### Example
+### Example
 
 ```json
 {

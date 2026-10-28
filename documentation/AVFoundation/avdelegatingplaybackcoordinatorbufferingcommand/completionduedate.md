@@ -24,7 +24,7 @@ var completionDueDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * completionDueDate;
 ```
 
-#### Discussion
+## Discussion
 
 A command that expects buffering in preparation for playback requires that the delegate call the command’s completion handler by the deadline. The delegate needs to complete the command by this date to keep up with the group. Alternatively, have the delegate begin a stall recovery suspension, and communicate that state to the other participants.
 

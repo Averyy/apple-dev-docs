@@ -16,7 +16,7 @@ A string that specifies whether text is left-justified, right-justified, or cent
 attribute DOMString textAlign;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are `start` (default), `end`, `left`, `right`, and `center`. The values `start` and `end` are equivalent to either `left` or `right`, depending on the text direction.
 

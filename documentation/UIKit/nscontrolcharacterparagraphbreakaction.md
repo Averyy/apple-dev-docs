@@ -22,7 +22,7 @@ var NSControlCharacterParagraphBreakAction: Int { get }
 NSControlCharacterParagraphBreakAction
 ```
 
-#### Discussion
+## Discussion
 
 The value in [`firstLineHeadIndent`](./nsparagraphstyle/firstlineheadindent.md) is used for the following glyph.
 

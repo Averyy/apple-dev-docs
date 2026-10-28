@@ -21,7 +21,7 @@ Creates and initializes a new uniform object that holds a reference to a texture
 + (instancetype) uniformWithName:(NSString *) name texture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.texture`](../skuniformtype/texture.md).
 

@@ -5,7 +5,7 @@
 
 Use these dictionary keys to get and set policy properties.
 
-#### Overview
+## Overview
 
 Use these keys with calls to the [`SecPolicyCopyProperties(_:)`](./secpolicycopyproperties%28_%29.md) and [`SecPolicySetProperties`](./secpolicysetproperties.md) functions.
 

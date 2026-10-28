@@ -17,7 +17,7 @@ Flags from `pkg-config` to pass to Clang and SwiftC.
 let compilerFlags: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Flags are passed to using `-Xcc`.
 

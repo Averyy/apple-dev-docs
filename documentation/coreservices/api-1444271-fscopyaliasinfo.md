@@ -17,11 +17,11 @@ Returns information from an alias handle.
 OSStatus FSCopyAliasInfo(AliasHandle inAlias, HFSUniStr255 *targetName, HFSUniStr255 *volumeName, CFStringRef *pathString, FSAliasInfoBitmap *whichInfo, FSAliasInfo *info);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function returns the requested information from the alias handle passed in the `inAlias` parameter. The information is gathered only from the alias record, so it may not match what is on disk. No disk input/output is performed.
 

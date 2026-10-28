@@ -21,7 +21,7 @@ class CPContact
 @interface CPContact : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CPContact` is an object that represents information about a person or a business, and can include a set of contextually relevant actions that a user can perform when CarPlay displays the contact, such as getting directions to its location.
 

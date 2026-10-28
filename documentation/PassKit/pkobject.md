@@ -24,7 +24,7 @@ class PKObject
 @interface PKObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Never use this class directly. Use the [`PKPass`](./pkpass.md) or [`PKPaymentPass`](./pkpaymentpass.md) classes instead.
 

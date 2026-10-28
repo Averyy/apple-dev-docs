@@ -25,11 +25,11 @@ typealias CFDictionaryRetainCallBack = (CFAllocator?, UnsafeRawPointer?) -> Unsa
 typedef const void *(*)(const struct __CFAllocator *, const void *) CFDictionaryRetainCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The value or key to store in the dictionary, which is usually the `value` parameter passed to this callback, but may be a different   value if a different value should be stored in the collection.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFDictionaryCreate(_:_:_:_:_:_:)`](./cfdictionarycreate%28_,_,_,_,_,_%29.md) in a [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) and [`CFDictionaryValueCallBacks`](./cfdictionaryvaluecallbacks.md) structure.
 

@@ -25,7 +25,7 @@ final class Multicast<Upstream, SubjectType> where Upstream : Publisher, Subject
 
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
-#### Overview
+## Overview
 
 Use a multicast publisher when you have multiple downstream subscribers, but you want upstream publishers to only process one [`receive(_:)`](../subscriber/receive%28_%29.md) call per event.
 

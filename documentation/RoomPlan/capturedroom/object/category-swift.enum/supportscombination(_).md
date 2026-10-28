@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether a category supports the given att
 func supportsCombination(_ attributes: [any CapturedRoomAttribute]) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Only compatible attributes can pair up in association with a 3D model, for example, with the [`CapturedRoom.ModelProvider`](../../modelprovider.md) function [`setModelFileURL(_:for:)`](../../modelprovider/setmodelfileurl%28_,for%29-8xio.md). These [`CapturedRoom.ModelProvider`](../../modelprovider.md) functions for `setModelFileURL` and `modelFileURL` throw [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](../../modelprovider/error/attributecombinationnotsupported.md) if no object category supports all of the attributes in the arguments to their call.
 

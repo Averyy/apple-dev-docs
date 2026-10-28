@@ -19,7 +19,7 @@ case none
 NSSpringLoadingHighlightNone
 ```
 
-#### Discussion
+## Discussion
 
 Don’t apply any highlighting style to the destination’s user interface. The destination is probably not spring-loadable.
 

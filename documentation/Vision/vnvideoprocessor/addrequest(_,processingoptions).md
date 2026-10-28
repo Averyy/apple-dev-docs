@@ -24,7 +24,7 @@ func addRequest(_ request: VNRequest, processingOptions: VNVideoProcessor.Reques
 - (BOOL) addRequest:(VNRequest *) request processingOptions:(VNVideoProcessorRequestProcessingOptions *) processingOptions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method either before calling [`analyze(_:)`](./analyze%28_%29.md) or from within the completion handler of an already associated request.
 

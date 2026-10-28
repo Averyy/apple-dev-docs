@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFStr
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the offset of the point of perspective relative to the rectilinear projection.
 

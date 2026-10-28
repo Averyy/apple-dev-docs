@@ -25,7 +25,7 @@ var properties: [HTTPCookiePropertyKey : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * properties;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary can be used with [`init(properties:)`](./init%28properties%29.md) (or [`cookieWithProperties:`](../nshttpcookie/cookiewithproperties_.md) in Objective-C) to create an equivalent [`HTTPCookie`](../httpcookie.md) object.
 

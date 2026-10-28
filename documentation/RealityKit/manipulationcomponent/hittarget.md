@@ -15,7 +15,7 @@ A component that redirects input to a different entity with a `ManipulationCompo
 struct HitTarget
 ```
 
-#### Overview
+## Overview
 
 Add this component to an entity and set `redirectedEntity` to another entity that should activate when interaction occurs on the entity with the `HitTarget` component:
 

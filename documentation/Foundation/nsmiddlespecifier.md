@@ -20,7 +20,7 @@ class NSMiddleSpecifier
 @interface NSMiddleSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 You don’t typically subclass `NSMiddleSpecifier`.
 

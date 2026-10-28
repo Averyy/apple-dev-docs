@@ -5,7 +5,7 @@
 
 Establish a connection between a marketplace and a marketplace app and configure marketplace settings.
 
-#### Overview
+## Overview
 
 Use the Alternative Marketplaces and Web distribution API to create and configure alternative marketplaces. Once you create a marketplace app record in App Store Connect, you can add configurations for:
 
@@ -13,7 +13,7 @@ Use the Alternative Marketplaces and Web distribution API to create and configur
 - Search detail URLs
 - Webhook endpoint URLs
 
-##### Connect your marketplace to the apps it distributes
+### Connect your marketplace to the apps it distributes
 
 Begin creating the connection between your alternative marketplace and the apps it distributes, by making a new app record, or making a new one in App Store Connect. Next, create a public and private key pair to associate with your marketplace. For more information, see [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md).
 
@@ -25,7 +25,7 @@ While uploading the JWT, the app developer selects the apps they want to associa
 
 > **Note**:  Apps can be distributed on App Store, an alternative marketplace or both. To learn more, see [`AppStoreVersionUpdateRequest.Data.Attributes`](./appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md), specifically `reviewType` and [`Modify an app store version`](./patch-v1-appstoreversions-_id_.md).
 
-##### Set up the marketplace
+### Set up the marketplace
 
 You need to configure several parts of your alternative marketplace so it can function properly and interact with Apple resources. You need to:
 

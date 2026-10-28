@@ -12,7 +12,7 @@ Show a camera preview sooner by deferring capture output setup and postponing no
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Someone who opens your camera app wants to see a preview immediately. A capture session takes time to configure, because it prepares every output you add before it starts delivering data. Showing a preview requires almost none of that work, so it can appear while the session finishes the rest.
 
@@ -22,14 +22,14 @@ The same smoothness matters when the app returns from the background. A preview 
 
 > **Note**: This sample code project is associated with WWDC26 session 303: [Build a responsive camera app that launches quickly](https://developer.apple.com/videos/play/wwdc26/303/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Because Simulator doesn’t have access to device cameras, run the sample on a device. To build and run it, you need the following:
 
 - Xcode 27 or later
 - A device running iOS or iPadOS 26 or later
 
-#### Defer starting noncritical outputs
+## Defer starting noncritical outputs
 
 Preparing capture outputs is one of the more expensive parts of starting a capture session, and rendering a preview requires none of them. A photo or movie output matters only the moment someone takes a picture or starts recording, which is always later than the moment the preview appears. Deferred start separates those two events: the session brings up the preview path first, then prepares the remaining outputs after the preview is onscreen.
 
@@ -62,7 +62,7 @@ Each output tests [`isDeferredStartSupported`](./avcaptureoutput/isdeferredstart
 
 AVCam uses automatic mode, in which the session chooses when to start the deferred outputs. The preview layer is the only client the app doesn’t defer. The session runs the deferred start shortly after the layer displays its first frame. An app that leaves a data-providing output undeferred waits longer, because the session waits for that output’s first frame instead. An app that draws camera frames itself, such as one rendering [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) buffers into a `CAMetalLayer`, knows that moment when the session can’t. It sets [`automaticallyRunsDeferredStart`](./avcapturesession/automaticallyrunsdeferredstart.md) to `false` and calls [`runDeferredStartWhenNeeded()`](./avcapturesession/rundeferredstartwhenneeded%28%29.md) instead.
 
-#### Hide controls until the session runs
+## Hide controls until the session runs
 
 A mode picker, a thumbnail of the last capture, and a camera-switching button all depend on a running session, so showing them before one exists puts controls onscreen that can’t do anything. AVCam keeps them hidden until the session runs, which also leaves the preview alone onscreen as it appears.
 
@@ -100,7 +100,7 @@ var body: some View {
 
 The capture button stays onscreen throughout. When a shutter press arrives before the deferred outputs finish starting, the session runs the deferred start on the app’s behalf to service it. The photo output also enables responsive capture, which lets more than one press queue before that start completes.
 
-#### Cover the preview in the background
+## Cover the preview in the background
 
 A preview that isn’t covered can reappear holding the last frame it rendered before the app entered the background. Covering it after frames stop arriving is too late. Instead, the app covers the preview on its way out and reveals it when it’s active again.
 

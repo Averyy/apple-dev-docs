@@ -15,7 +15,7 @@ A CSS animation that runs when the annotation appears on the map.
 get appearanceAnimation(): string;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t supported for [`PlaceAnnotation`](../placeannotation.md).
 

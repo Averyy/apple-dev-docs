@@ -19,7 +19,7 @@ func removeWindowController(_ windowController: NSWindowController)
 - (void) removeWindowController:(NSWindowController *) windowController;
 ```
 
-#### Discussion
+## Discussion
 
 A document with no window controllers is not necessarily closed. However, a window controller can be set to close its associated document when the window is closed or the window controller is deallocated.
 

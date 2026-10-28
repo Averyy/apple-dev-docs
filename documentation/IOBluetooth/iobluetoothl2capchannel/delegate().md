@@ -19,11 +19,11 @@ func delegate() -> Any!
 - (id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current delegate, or nil if one is not set.
 
-#### Discussion
+## Discussion
 
 An incoming channel is one that was initiated by a remote device.
 

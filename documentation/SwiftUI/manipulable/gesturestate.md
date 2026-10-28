@@ -15,7 +15,7 @@ Describes the state of a manipulation gesture.
 struct GestureState
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)`](../view/manipulationgesture%28updating,coordinatespace,operations,inertia,isenabled,onchanged%29.md)
 

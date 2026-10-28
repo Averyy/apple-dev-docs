@@ -20,7 +20,7 @@ A type that tells the system which scene to associate with an incoming group act
 struct SceneAssociationBehavior
 ```
 
-#### Overview
+## Overview
 
 Use a [`SceneAssociationBehavior`](./sceneassociationbehavior.md) type to match SharePlay activities to your app’s scenes. The static accessors of this type offer different scene-selection behaviors. For example, you can match each activity type to a specific scene, match scenes dynamically based on the contents of the activity, or prevent matching altogether. Select one of these behaviors and assign the related type to your [`GroupActivity`](./groupactivity.md) object’s metadata. On some platforms, the system adds a custom indicator to a scene to let people know that SharePlay is active.
 

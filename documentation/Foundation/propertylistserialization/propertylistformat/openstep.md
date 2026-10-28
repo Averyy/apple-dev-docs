@@ -25,7 +25,7 @@ case openStep
 NSPropertyListOpenStepFormat
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The `NSPropertyListOpenStepFormat` constant is not supported for writing. It can be used only for reading old-style property lists.
 

@@ -23,7 +23,7 @@ var contentURL: URL! { get set }
 @property (nonatomic, copy) NSURL * contentURL;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property while a movie is playing, that movie pauses and the new movie begins loading. The new movie starts playing at the beginning.
 

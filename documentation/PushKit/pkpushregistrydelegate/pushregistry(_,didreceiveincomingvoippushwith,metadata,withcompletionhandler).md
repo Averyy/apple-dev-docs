@@ -28,15 +28,15 @@ optional func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingVoIPPus
 - (void) pushRegistry:(PKPushRegistry *) registry didReceiveIncomingVoIPPushWithPayload:(PKPushPayload *) payload metadata:(PKVoIPPushMetadata *) metadata withCompletionHandler:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `metadata` parameter contains additional information about the VoIP payload. For example, If the `mustReport` metadata property is set to `YES` your app is required to report an incoming VoIP call or conversation using one of the following methods:
 
-#### CallKit
+## CallKit
 
 [`reportNewIncomingCall(with:update:completion:)`](../../CallKit/cxprovider/reportnewincomingcall%28with,update,completion%29.md)
 
-#### LiveCommunicationKit
+## LiveCommunicationKit
 
 [`reportNewIncomingConversation(uuid:update:)`](../../LiveCommunicationKit/conversationmanager/reportnewincomingconversation%28uuid,update%29.md)
 

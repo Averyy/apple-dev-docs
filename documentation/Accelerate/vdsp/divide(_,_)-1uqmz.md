@@ -25,11 +25,11 @@ static func divide<U>(_ vector: U, _ scalar: Float) -> [Float] where U : Acceler
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

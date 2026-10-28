@@ -22,7 +22,7 @@ func updateChangeCount(_ change: UIDocument.ChangeKind)
 - (void) updateChangeCount:(UIDocumentChangeKind) change;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method can affect the value returned by [`hasUnsavedChanges`](./hasunsavedchanges.md). You shouldn’t need to call method this if you access an [`UndoManager`](../../Foundation/undomanager.md) object from the [`undoManager`](./undomanager.md) property (or assign a custom one to it) and register changes with the undo manager.
 

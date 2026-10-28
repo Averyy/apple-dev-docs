@@ -15,7 +15,7 @@ Run AI models in your app on Apple silicon.
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 Core AI helps you build, run, and deploy AI models in your app. Designed with Apple silicon in mind, Core AI allows your app to use the latest model architectures and inference techniques across the CPU, GPU, and Neural Engine. The Swift API makes common tasks simple, while giving you more control over model specialization, caching, and inference performance when needed.
 

@@ -26,7 +26,7 @@ object ACMECertificate
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 - [Validating a Managed Device Attestation](./validating-a-managed-device-attestation-attestation.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.acme` as the payload type.
 
@@ -36,7 +36,7 @@ First the device generates an asymmetric key pair based upon the `KeyType`, `Key
 
 For details on the content of the attestation provided to the ACME server, see the documentation of the `DevicePropertiesAttestation` key in the [`DeviceInformationResponse.QueryResponses`](./deviceinformationresponse/queryresponses-data.dictionary.md)response. In the attestation certificate the value of the freshness code OID is the SHA-256 hash of the `token` from the `device-attest-01` challenge.
 
-##### ACME attestation hardware support
+### ACME attestation hardware support
 
 The following table indicates which System on Chips (SoCs) support ACME attestation. If the Attest key is false or ignored, the ACME server does not receive an attestation.
 
@@ -46,7 +46,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 | Ignored | A10x Fusion and earlier | T2 | A10x Fusion and earlier | S3 and earlier | none |
 | Supported | A11 Bionic and laterAll M series | Apple silicon | A12 Bionic and later | S4 and later | All |
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -58,7 +58,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Example profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

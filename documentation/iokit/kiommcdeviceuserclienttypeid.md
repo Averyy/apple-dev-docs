@@ -14,7 +14,7 @@
 #define kIOMMCDeviceUserClientTypeID
 ```
 
-#### Discussion
+## Discussion
 
 Factory ID for creating an MMC Device User Client.
 

@@ -24,7 +24,7 @@ var ascender: CGFloat { get }
 @property (nonatomic, readonly) CGFloat ascender;
 ```
 
-#### Discussion
+## Discussion
 
 The ascender value is measured in points. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 

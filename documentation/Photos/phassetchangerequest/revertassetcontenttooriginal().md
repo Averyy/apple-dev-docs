@@ -24,7 +24,7 @@ func revertAssetContentToOriginal()
 - (void) revertAssetContentToOriginal;
 ```
 
-#### Discussion
+## Discussion
 
 When an asset has been edited, Photos stores multiple versions of the asset: the original version of the asset as it was first captured or imported, and the input and output of the most recent edit. (You work with asset versions when requesting to edit an asset’s content—see [`PHContentEditingInputRequestOptions`](../phcontenteditinginputrequestoptions.md).) Call this method to revert to the original version of the asset, discarding all edits.
 

@@ -24,11 +24,11 @@ init?(ofType type: String, context: CIContext?, options: [String : Any]? = nil)
 + (CIDetector *) detectorOfType:(NSString *) type context:(CIContext *) context options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A configured detector.
 
-#### Discussion
+## Discussion
 
 A [`CIDetector`](../cidetector.md) object can potentially create and hold a significant amount of resources. Where possible, reuse the same [`CIDetector`](../cidetector.md) instance. Also, when processing images with a detector object, your application performs better if the [`CIContext`](../cicontext.md) used to initialize the detector is the same context used to process the [`ciImage`](../../UIKit/uiimage/ciimage.md) objects.
 

@@ -29,7 +29,7 @@ func saveCredentialIdentities(_ credentialIdentities: [ASPasswordCredentialIdent
 - (void) saveCredentialIdentities:(NSArray<ASPasswordCredentialIdentity *> *) credentialIdentities completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If the store supports incremental updates, call this method to add new credential identities since the last time the store was updated. Otherwise, call this method to pass all credential identities. If some credential identities in `credentialIdentities` already exist in the store, they will be replaced by those from `credentialIdentities`.
 

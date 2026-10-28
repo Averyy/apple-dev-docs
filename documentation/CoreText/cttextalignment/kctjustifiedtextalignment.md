@@ -25,7 +25,7 @@ static var kCTJustifiedTextAlignment: CTTextAlignment { get }
 kCTJustifiedTextAlignment
 ```
 
-#### Discussion
+## Discussion
 
 The last line in a paragraph is naturally aligned.
 

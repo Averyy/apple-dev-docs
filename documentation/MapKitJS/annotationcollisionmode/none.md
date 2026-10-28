@@ -19,7 +19,7 @@ readonly None: "none";
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The annotation does not collide with other annotations.
 

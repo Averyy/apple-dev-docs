@@ -19,7 +19,7 @@ Requests that a child send the communication permission question to their parent
 final func ask(_ question: PermissionQuestion<CommunicationTopic>, in viewController: UIViewController) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Throws an error if the system can’t request a child to send the permission question.
 

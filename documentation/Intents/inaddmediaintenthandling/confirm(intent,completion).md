@@ -28,7 +28,7 @@ optional func confirm(intent: INAddMediaIntent) async -> INAddMediaIntentRespons
 - (void) confirmAddMedia:(INAddMediaIntent *) intent completion:(void (^)(INAddMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to determine whether your app can add the requested media. If it can, respond with the [`INAddMediaIntentResponseCode.ready`](../inaddmediaintentresponsecode/ready.md) response code.
 

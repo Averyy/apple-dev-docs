@@ -27,7 +27,7 @@ func BNNSComputeNorm(_ dest: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ src:
 int BNNSComputeNorm(BNNSNDArrayDescriptor *dest, const BNNSNDArrayDescriptor *src, BNNSNormType norm_type, uint32_t axis_flags);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to compute the norm of either an entire tensor or the axis or axes of a tensor.
 

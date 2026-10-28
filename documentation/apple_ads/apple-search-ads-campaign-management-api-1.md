@@ -5,7 +5,7 @@
 
 Apple no longer supports this API.
 
-#### Overview
+## Overview
 
 > **Note**:  As of October 2019, Apple no longer supports the Apple Ads Campaign Management API 1. A 301 RESOURCE_MOVED_PERMANENTLY error occurs if you use an API 1 endpoint.
 

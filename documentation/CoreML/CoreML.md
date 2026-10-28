@@ -15,7 +15,7 @@ Integrate machine learning models into your app.
 - visionOS 1.0+
 - watchOS 4.0+
 
-#### Overview
+## Overview
 
 Use [Core ML](./CoreML.md) to integrate machine learning models into your app. [Core ML](./CoreML.md) provides a unified representation for all models. Your app uses [Core ML](./CoreML.md) APIs and user data to make predictions, and to train or fine-tune models, all on a person’s device.
 

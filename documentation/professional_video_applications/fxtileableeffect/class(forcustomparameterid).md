@@ -23,11 +23,11 @@ optional func `class`(forCustomParameterID parameterID: UInt32) -> AnyClass
 
 - [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
-#### Return Value
+## Return Value
 
 An Objective-C class of the specified parameterID.
 
-#### Discussion
+## Discussion
 
 When you make custom parameters and the host stores them for you, it needs to know the class of the parameters to unarchive them from disk. This method returns the Objective-C class of which they are members.
 

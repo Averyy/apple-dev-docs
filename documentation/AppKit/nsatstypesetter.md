@@ -19,7 +19,7 @@ class NSATSTypesetter
 @interface NSATSTypesetter : NSTypesetter
 ```
 
-#### Overview
+## Overview
 
 An [`NSATSTypesetter`](./nsatstypesetter.md) object creates line fragment rectangles, positions glyphs within the line fragments, determines line breaks by word wrapping and hyphenation, and handles tab positioning. This object encapsulates the advanced typesetting capabilities of Core Text. [`NSATSTypesetter`](./nsatstypesetter.md) provides line and character spacing accuracy and supports many languages, including bidirectional languages.
 

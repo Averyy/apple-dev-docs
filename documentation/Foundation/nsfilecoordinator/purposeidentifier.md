@@ -25,7 +25,7 @@ var purposeIdentifier: String { get set }
 @property (copy) NSString * purposeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Coordinated reads and writes performed using the same purpose identifier never block each other, even if they occur in different processes. If you are coordinating file access on behalf of a file presenter, use [`init(filePresenter:)`](./init%28filepresenter%29.md) and do not attempt to set a custom purpose identifier. Every file coordinator instance initialized with the same file presenter has the same purpose identifier.
 

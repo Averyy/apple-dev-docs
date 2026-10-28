@@ -20,11 +20,11 @@ init(session inSession: ODSession!, type inType: ODNodeType) throws
 - (instancetype) initWithSession:(ODSession *) inSession type:(ODNodeType) inType error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The created node object.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

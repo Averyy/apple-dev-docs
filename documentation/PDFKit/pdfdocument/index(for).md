@@ -24,7 +24,7 @@ func index(for page: PDFPage) -> Int
 - (NSUInteger) indexForPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 Indexes are zero-based. This method raises an exception and returns `NSNotFound` if `page` is not found.
 

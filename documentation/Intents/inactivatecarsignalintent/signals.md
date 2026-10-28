@@ -31,7 +31,7 @@ var signals: INCarSignalOptions { get }
 @property (atomic, assign, readonly) INCarSignalOptions signals;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid signals, see [`INCarSignalOptions`](../incarsignaloptions.md).
 

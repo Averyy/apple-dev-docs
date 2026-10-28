@@ -23,7 +23,7 @@ case userConfirmationRequired
 INStartCallIntentResponseCodeUserConfirmationRequired
 ```
 
-#### Discussion
+## Discussion
 
 This code is valid only when confirming the start call intent.
 

@@ -21,7 +21,7 @@ let NSExternalRecordsFileFormatOption: String
 extern NSString * const NSExternalRecordsFileFormatOption;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see `Format Options for Spotlight External Record Files`.
 

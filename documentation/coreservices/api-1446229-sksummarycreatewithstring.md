@@ -19,11 +19,11 @@ func SKSummaryCreateWithString(_ inString: CFString!) -> Unmanaged<SKSummary>!
 SKSummaryRef SKSummaryCreateWithString(CFStringRef inString);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a summarization object, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 The [`SKSummaryCreateWithString(_:)`](./api-1446229-sksummarycreatewithstring.md) function creates a summarization object that pre-analyzes a text string to support fast summarization. When your application no longer needs the summarization object, dispose of it by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 

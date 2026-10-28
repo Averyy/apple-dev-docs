@@ -19,7 +19,7 @@ func setAttributedTitle(_ attributedTitle: NSAttributedString?)
 - (void) setAttributedTitle:(NSAttributedString *) attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the content of the button to the specified text, replacing the previous text. The text is drawn using the style information in `attributedTitle`. If the button has a background image, the text is drawn on top of that image.
 

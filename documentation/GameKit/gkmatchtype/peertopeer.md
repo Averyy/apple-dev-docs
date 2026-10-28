@@ -29,7 +29,7 @@ GKMatchTypePeerToPeer
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 A [`GKMatch`](../gkmatch.md) object represents a peer-to-peer match.
 

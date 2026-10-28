@@ -12,11 +12,11 @@ virtual bool HandleGetUserClientExclusivityState (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a user client is in exclusive control of the device, `false` otherwise.
 
-#### Overview
+## Overview
 
 The HandleGetUserClientExclusivityState() method is called on the serialized side of the command gate to determine if any user client is holding exclusive access at the current time. See discussion for GetUserClientExclusivityState(). Subclasses may override this method to alter default behavior. Third party subclasses should not need to override this method.
 

@@ -24,7 +24,7 @@ var isSecureElementPassActivationAvailable: Bool { get }
 @property (nonatomic, assign, readonly, getter=isSecureElementPassActivationAvailable) BOOL secureElementPassActivationAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Secure Element pass activation requires a special entitlement that Apple provides. If the entitlement isn’t present, this property’s value is [`false`](../../Swift/false.md).
 

@@ -22,11 +22,11 @@ var types: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * pasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings indicating the representation types of the first item on the pasteboard.
 
-#### Discussion
+## Discussion
 
 A type is frequently, but not necessarily, a UTI (Uniform Type Identifier). It identifies a representation of the data on the pasteboard. For example, a pasteboard item could hold image data under `public.png` and `public.tiff` representations. Apps can define their own types for custom data such as `com.mycompany.myapp.mytype`; however, in this case, only those apps that know of the type could understand the data written to the pasteboard.
 

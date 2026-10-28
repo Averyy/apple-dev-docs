@@ -19,7 +19,7 @@ case noninteractive
 NSWritingToolsCoordinatorTextReplacementReasonNoninteractive
 ```
 
-#### Discussion
+## Discussion
 
 When Writing Tools requests a noninteractive change in your delegate’s [`writingToolsCoordinator(_:replace:in:proposedText:reason:animationParameters:completion:)`](../delegate-swift.protocol/writingtoolscoordinator%28_,replace,in,proposedtext,reason,animationparameters,completion%29.md) method, update your view’s text storage without animating the change.
 

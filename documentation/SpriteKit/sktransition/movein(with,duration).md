@@ -25,7 +25,7 @@ class func moveIn(with direction: SKTransitionDirection, duration sec: TimeInter
 + (SKTransition *) moveInWithDirection:(SKTransitionDirection) direction duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

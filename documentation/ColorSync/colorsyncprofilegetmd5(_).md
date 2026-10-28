@@ -25,7 +25,7 @@ func ColorSyncProfileGetMD5(_ prof: ColorSyncProfile!) -> ColorSyncMD5
 extern ColorSyncMD5 ColorSyncProfileGetMD5(ColorSyncProfileRef prof);
 ```
 
-#### Return Value
+## Return Value
 
 The MD5 digest for the profile, calculated as defined by the ICC specification, or a “zero” signature (filled with zeros) in case of failure.
 

@@ -15,7 +15,7 @@ Disposes of a universal procedure pointer (UPP) to a phonemecallback function.
 SpeechPhonemeUPP NewSpeechPhonemeUPP(SpeechPhonemeProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 A UPP to the phonemecallback function. See the description of the `SpeechPhonemeUPP` data type.
 

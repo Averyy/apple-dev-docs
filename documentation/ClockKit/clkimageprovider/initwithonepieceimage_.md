@@ -15,11 +15,11 @@ Creates and returns an image provider with the specified one-piece image.
 - (instancetype) initWithOnePieceImage:(UIImage *) onePieceImage;
 ```
 
-#### Return Value
+## Return Value
 
 An image provider with only the one-piece image.
 
-#### Discussion
+## Discussion
 
 Use this method to create an image provider with only a one-piece image. The resulting image provider displays the one-piece image in all contexts. After creating the image provider, you can customize the tint color applied to your image by modifying the [`tintColor`](./tintcolor.md) property.
 

@@ -21,7 +21,7 @@ Navigation settings for rendering a book.
 var pageNavigationSetting: some AssistantSchemas.Enum { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.books.pageNavigationSetting` schema:
 

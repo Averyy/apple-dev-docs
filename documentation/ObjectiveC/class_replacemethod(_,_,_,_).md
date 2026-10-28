@@ -25,11 +25,11 @@ func class_replaceMethod(_ cls: AnyClass?, _ name: Selector, _ imp: IMP, _ types
 extern IMPclass_replaceMethod(Class cls, SEL name, IMP imp, const char *types);
 ```
 
-#### Return Value
+## Return Value
 
 The previous implementation of the method identified by `name` for the class identified by `cls`.
 
-#### Discussion
+## Discussion
 
 This function behaves in two different ways:
 

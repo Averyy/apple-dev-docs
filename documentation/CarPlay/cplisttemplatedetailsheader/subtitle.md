@@ -21,7 +21,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The subtitle provides additional context or metadata about the content, such as artist names, episode descriptions, or secondary information. This text is displayed with reduced visual prominence compared to the title.
 

@@ -25,7 +25,7 @@ typealias SCNSceneSourceStatusHandler = (Float, SCNSceneSourceStatus, (any Error
 typedef void (^)(float, enum SCNSceneSourceStatus, NSError *, _Bool *) SCNSceneSourceStatusHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You provide a block with this signature when using the [`scene(options:statusHandler:)`](./scnscenesource/scene%28options,statushandler%29.md) method.
 

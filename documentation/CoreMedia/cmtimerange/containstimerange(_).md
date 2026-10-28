@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the time range contains another t
 func containsTimeRange(_ range: CMTimeRange) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if time range contains `range`; otherwise, [`false`](../../Swift/false.md).
 

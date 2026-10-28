@@ -4,7 +4,7 @@
 
 Creates a monogram using a person’s image or initials.
 
-#### Overview
+## Overview
 
 The `monogramLockup` element creates a white circle that contains the image or initials of the person identified in the title. Use the `src` element to place an image inside of the circle. If no image is added, initials are centered in the circle, based on the `firstName` and `lastName` attributes in the `monogram` element. Here’s an example of a monogramLockup displaying an actor’s infomation.
 
@@ -16,13 +16,13 @@ The `monogramLockup` element creates a white circle that contains the image or i
 </monogramLockup>
 ```
 
-##### Subelements of monogramLockup
+### Subelements of monogramLockup
 
 - [monogram](./monogram.md)
 - [subtitle](./subtitle.md)
 - [title](./title.md)
 
-##### Elements that Use monogramLockup
+### Elements that Use monogramLockup
 
 - [section](./section.md)
 

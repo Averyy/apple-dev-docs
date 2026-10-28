@@ -25,7 +25,7 @@ typealias nw_report_resolution_enumerator_t = (nw_report_resolution_source_t, UI
 typedef _Bool (^)(nw_report_resolution_source_t, unsigned long long, unsigned int, NSObject<OS_nw_endpoint> *, NSObject<OS_nw_endpoint> *) nw_report_resolution_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue enumerating, or false to stop enumerating.
 

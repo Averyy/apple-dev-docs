@@ -19,7 +19,7 @@ var mediaLibraries: NSMediaLibraryBrowserController.Library { get set }
 @property NSMediaLibrary mediaLibraries;
 ```
 
-#### Discussion
+## Discussion
 
 This property will be one of the values in the [`NSMediaLibraryBrowserController.Library`](./library.md) constants.
 

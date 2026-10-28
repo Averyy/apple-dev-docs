@@ -25,7 +25,7 @@ class func seconds(forHostTime hostTime: UInt64) -> TimeInterval
 + (NSTimeInterval) secondsForHostTime:(uint64_t) hostTime;
 ```
 
-#### Return Value
+## Return Value
 
 The number of seconds that represent the host time you specify.
 

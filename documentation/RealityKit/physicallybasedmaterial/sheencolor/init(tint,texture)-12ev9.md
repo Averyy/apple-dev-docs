@@ -21,7 +21,7 @@ init(tint: NSColor = .white, texture: MaterialParameters.Texture? = nil)
 init(tint: UIColor = .white, texture: MaterialParameters.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object from a color, an image texture, or from both. If you don’t provide a `tint` color, `tint` defaults to white.
 

@@ -23,7 +23,7 @@ var customizationIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * customizationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is useful for when an app has multiple tab bar controllers, each with their own customizations. If the customization identifier is `nil`, a system default is used. Default is `nil`.
 

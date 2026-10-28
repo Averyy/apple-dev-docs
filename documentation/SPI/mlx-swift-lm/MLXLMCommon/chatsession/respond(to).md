@@ -17,11 +17,11 @@ Produces a response after appending a batch of structured chat messages.
 func respond(to messages: consuming [Chat.Message]) async throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 The model’s response
 
-#### Discussion
+## Discussion
 
 Use this to continue an existing session with non-user roles, such as one or more tool results, while preserving the session’s KV cache.
 

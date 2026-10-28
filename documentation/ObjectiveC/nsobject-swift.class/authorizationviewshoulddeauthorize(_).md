@@ -19,7 +19,7 @@ func authorizationViewShouldDeauthorize(_ view: SFAuthorizationView!) -> Bool
 - (BOOL) authorizationViewShouldDeauthorize:(SFAuthorizationView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can react to this before deauthorization happens and avoid it by returning [`NO`](../no.md). This delegate method is not called when you call the [`deauthorize(_:)`](../../SecurityInterface/sfauthorizationview/deauthorize%28_%29.md) method.
 

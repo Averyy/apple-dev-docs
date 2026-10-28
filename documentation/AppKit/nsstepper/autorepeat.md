@@ -19,7 +19,7 @@ var autorepeat: Bool { get set }
 @property BOOL autorepeat;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the first mouse down does one increment (or decrement) and, after a delay of 0.5 seconds, increments (or decrements) at a rate of ten times per second. [`false`](../../Swift/false.md) if the receiver does one increment (decrement) on a mouse up. The default is [`true`](../../Swift/true.md).
 

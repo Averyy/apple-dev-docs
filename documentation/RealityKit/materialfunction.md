@@ -20,7 +20,7 @@ The abstract superclass for objects representing compute functions for RealityKi
 protocol MaterialFunction
 ```
 
-#### Overview
+## Overview
 
 This class is the parent of, and contains common properties and methods for [`CustomMaterial.GeometryModifier`](./custommaterial/geometrymodifier.md) and [`CustomMaterial.SurfaceShader`](./custommaterial/surfaceshader.md). Don’t create an instance of this superclass yourself.
 

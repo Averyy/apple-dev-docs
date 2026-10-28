@@ -5,13 +5,13 @@
 
 Configure your augmented reality session to detect and track specific types of content.
 
-#### Overview
+## Overview
 
 Configuration objects define how ARKit sets up and runs your augmented reality session. Although [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) provides the widest range of features in a rear-camera experience, each feature consumes device energy and compute cycles. So to maximize device uptime and performance, enable additional options sparingly.
 
 If another AR configuration fulfills your requirements with a more concise feature set, use that configuration instead. For example, use [`ARBodyTrackingConfiguration`](./arbodytrackingconfiguration.md) instead of a world-tracking configuration for 3D motion-capture if you don’t need user face-tracking, collaboration, or scene reconstruction.
 
-##### Select frame features
+### Select frame features
 
 Some configurations support subfeatures that relate to a session’s frame. Enable these features by setting the following flags in the configuration’s [`frameSemantics`](./arconfiguration/framesemantics-swift.property.md):
 
@@ -23,7 +23,7 @@ Use [`supportsFrameSemantics(_:)`](./arconfiguration/supportsframesemantics%28_%
 
 > ❗ **Important**:  To maximize device responsiveness, refrain from turning on people occlusion for single-user experiences when you don’t expect people in the scene.
 
-##### Switch configurations at runtime
+### Switch configurations at runtime
 
 To toggle features like plane detection, frame semantics, and environment texturing, you switch your configuration at runtime by calling [`runWithConfiguration:`](./arsession/runwithconfiguration_.md) on your existing session. Where possible, ARKit maintains all the information collected during the session under the prior configuration, such as information about the physical environment and anchors.
 
@@ -31,7 +31,7 @@ To toggle features like plane detection, frame semantics, and environment textur
 
 If your session switches between face- and world-tracking configurations, the session doesn’t maintain state.
 
-##### Enable high-quality video and custom capture settings
+### Enable high-quality video and custom capture settings
 
 In iOS 16, you can enable a 4K and high dynamic range (HDR) video format. In addition, you can customize your session’s video settings through the underlying AV capture device.
 
@@ -62,7 +62,7 @@ if let device = ARWorldTrackingConfiguration.configurableCaptureDeviceForPrimary
 }
 ```
 
-##### Capture high-resolution still frames
+### Capture high-resolution still frames
 
 In iOS 16, you can enable high-resolution frame capture by calling [`recommendedVideoFormatForHighResolutionFrameCapturing`](./arconfiguration/recommendedvideoformatforhighresolutionframecapturing.md) on your configuration. If the device supports high-resolution stills, the function returns a video format you can use to start a session:
 

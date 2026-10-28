@@ -25,7 +25,7 @@ struct ActivityOptions
 enum NSActivityOptions : uint64_t;
 ```
 
-#### Overview
+## Overview
 
 To include one of these individual flags in one of the sets, use bitwise `OR`; for example, during a presentation you might use:
 

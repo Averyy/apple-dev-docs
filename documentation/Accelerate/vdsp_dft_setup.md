@@ -25,7 +25,7 @@ typealias vDSP_DFT_Setup = OpaquePointer
 typedef struct vDSP_DFT_SetupStruct * vDSP_DFT_Setup;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`vDSP_DFT_zop_CreateSetup`](./vdsp_dft_zop_createsetup.md) and [`vDSP_DFT_zrop_CreateSetup`](./vdsp_dft_zrop_createsetup.md) functions to initialize and allocate a new setup object. Call [`vDSP_DFT_DestroySetup`](./vdsp_dft_destroysetup.md) to free the resources associated with a setup object.
 

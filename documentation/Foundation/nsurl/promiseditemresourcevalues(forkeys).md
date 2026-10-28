@@ -25,11 +25,11 @@ func promisedItemResourceValues(forKeys keys: [URLResourceKey]) throws -> [URLRe
 - (NSDictionary<NSString *,id> *) promisedItemResourceValuesForKeys:(NSArray<NSString *> *) keys error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of resource values indexed by key.
 
-#### Discussion
+## Discussion
 
 This method behaves identically to [`resourceValues(forKeys:)`](./resourcevalues%28forkeys%29.md), but works on promised items. A promised item is not guaranteed to have its contents in the file system until you use a file coordinator to perform a coordinated read on its URL, which causes the contents to be downloaded or otherwise generated. Promised item URLs are returned by various APIs, including:
 

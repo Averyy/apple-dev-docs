@@ -25,7 +25,7 @@ var histogrammedCellularConditionTime: MXHistogram<MXUnitSignalBars> { get }
 @property (strong, readonly, nonnull) MXHistogram<MXUnitSignalBars *> * histogrammedCellularConditionTime;
 ```
 
-#### Discussion
+## Discussion
 
 Each bucket in the histogram is the percentage of total app runtime spent at the represented connectivity level during the reporting period.
 

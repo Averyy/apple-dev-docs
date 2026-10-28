@@ -23,7 +23,7 @@ var preferredMaxLayoutWidth: CGFloat { get set }
 @property (nonatomic) CGFloat preferredMaxLayoutWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This property affects the size of the label when the system applies layout constraints to it. During layout, if the text extends beyond the width specified by this property, the additional text flows to one or more new lines, increasing the height of the label.
 

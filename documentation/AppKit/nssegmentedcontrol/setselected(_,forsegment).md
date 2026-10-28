@@ -19,7 +19,7 @@ func setSelected(_ selected: Bool, forSegment segment: Int)
 - (void) setSelected:(BOOL) selected forSegment:(NSInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 If the control allows only a single selection, this method deselects any other selected segments.
 

@@ -20,7 +20,7 @@ func encodePresent()
 void cp_drawable_mtl4_encode_present(cp_drawable_t drawable);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Commit the command buffer to the layer queue before calling present.
 

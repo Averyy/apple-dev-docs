@@ -9,7 +9,7 @@ Create a new ad account under a specified organization.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates a new ad account under a specified organization.
 
@@ -20,13 +20,13 @@ This endpoint creates a new ad account under a specified organization.
 - To enable Maps advertising, include a `BUSINESS_BRAND` delegation with the Brand ID as `resourceId`.
 - See [`ProductFeatures`](./productfeatures.md) for delegation requirements by App Store or Apple Maps.
 
-#### Payload Examples
+## Payload Examples
 
 **Request with CPID Delegation**:
 
 Links the ad account to an App Store Connect account via a Content Provider ID (CPID). The `delegations` field is optional but when included, each entry requires `resourceId` and `resourceType`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ad-accounts
@@ -45,7 +45,7 @@ POST /v1/ad-accounts
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -78,7 +78,7 @@ POST /v1/ad-accounts
 
 Links the ad account to a validated brand for Apple Maps advertising via a Brand ID. The `productFeatures` field must include `BUSINESS_BRAND_MANUAL` and the matching delegation must use `resourceType: BUSINESS_BRAND`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ad-accounts
@@ -97,7 +97,7 @@ POST /v1/ad-accounts
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

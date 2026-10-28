@@ -19,7 +19,7 @@ func animates() -> Bool
 - (BOOL) animates;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver animates reordering and changes of the data source; [`false`](../../Swift/false.md) otherwise.
 

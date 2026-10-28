@@ -20,7 +20,7 @@ A value that can be stored on an attribute in a Universal Scene Description file
 protocol Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to this protocol can be authored as an attribute value using [`USDPrim`](../../usdprim.md), [`USDPrim.Attribute`](../attribute.md), or [`USDLayer`](../../usdlayer.md).
 

@@ -18,7 +18,7 @@ static var nodePreserveAll: XMLNode.Options { get }
 NSXMLNodePreserveAll
 ```
 
-#### Discussion
+## Discussion
 
 Turns on all preservation options: attribute and namespace order, entities, prefixes, CDATA, whitespace, quotes, and empty elements. You should try to turn on preservation options selectively because turning on all preservation options significantly affects performance.
 

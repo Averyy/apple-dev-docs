@@ -21,7 +21,7 @@ Applies a double-precision multichannel biquadratic IIR filter.
 extern void vDSP_biquadmD(vDSP_biquadm_SetupD __Setup, const double **__X, vDSP_Stride __IX, double **__Y, vDSP_Stride __IY, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For each channel, this function applies a cascaded biquad filter to the input values specified by the channel’s pointer in `X`, and places the results in the array specified by the corresponding pointer in `Y`.
 

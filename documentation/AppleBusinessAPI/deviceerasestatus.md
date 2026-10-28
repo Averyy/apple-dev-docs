@@ -20,7 +20,7 @@ string DeviceEraseStatus
 - `NOT_ERASED`
 - `ERASED`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

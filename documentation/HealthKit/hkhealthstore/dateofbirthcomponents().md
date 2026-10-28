@@ -24,11 +24,11 @@ func dateOfBirthComponents() throws -> DateComponents
 - (NSDateComponents *) dateOfBirthComponentsWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object representing the user’s birthdate in the Gregorian calendar, or `nil`.
 
-#### Discussion
+## Discussion
 
 If the user has not yet specified a birth date, or if the user has denied your app permission to read the birth date, this method returns `nil`.
 

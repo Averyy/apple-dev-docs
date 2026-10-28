@@ -21,7 +21,7 @@ A Boolean that indicates whether the transition should have an identity effect, 
 var isIdentity: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is true in the `identity` phase.
 

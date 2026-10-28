@@ -23,11 +23,11 @@ func IONotificationPortCreate(_ mainPort: mach_port_t) -> IONotificationPortRef!
 IONotificationPortRef IONotificationPortCreate(mach_port_t mainPort);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the notification object.
 
-#### Discussion
+## Discussion
 
 Creates the notification object to receive notifications from IOKit of new device arrivals or state changes. The notification object can be supply a CFRunLoopSource, or mach_port_t to be used to listen for events.
 

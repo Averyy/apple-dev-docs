@@ -24,7 +24,7 @@ class GKComponentSystem<ComponentType> where ComponentType : GKComponent
 @interface GKComponentSystem : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`GKComponentSystem`](./gkcomponentsystem.md) object manages periodic update messages for components in a game that uses Entity-Component architecture. Use a component system to perform per-frame logic for all components of a specific class without traversing your game’s object hierarchy to dispatch update messages.
 

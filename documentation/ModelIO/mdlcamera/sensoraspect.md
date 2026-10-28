@@ -24,7 +24,7 @@ var sensorAspect: Float { get set }
 @property (nonatomic, assign) float sensorAspect;
 ```
 
-#### Discussion
+## Discussion
 
 To determine the width of the imaging surface, use this property and the [`sensorVerticalAperture`](./sensorverticalaperture.md) property. For example, with the default vertical aperture of 24mm and default aspect ratio of 1.5 (or 3:2), the horizontal aperture is 36mm.
 

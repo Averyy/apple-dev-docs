@@ -21,7 +21,7 @@ A locale representing the user’s region settings at the time the property is r
 static var current: Locale { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the locale currently used by the app, based on the following:
 

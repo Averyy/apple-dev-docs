@@ -16,7 +16,7 @@ Set the reference constant for this command.
 void (*SetRefCon)(IOFireWireLibVectorCommandRef self, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

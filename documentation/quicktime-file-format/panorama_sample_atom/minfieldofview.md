@@ -6,7 +6,7 @@
 
 The minimum vertical field of view, in degrees.
 
-#### Overview
+## Overview
 
 For a high-resolution panorama, a typical value for this field is `5.0`. The value in this field is `0` for the default minimum field of view, which is 5 percent of the maximum field of view.
 

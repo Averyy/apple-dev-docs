@@ -27,7 +27,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 - (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 The block should enqueue sample buffers to the receiver either until the receiver’s readyForMoreMediaData property becomes NO or until there is no more data to supply. When the receiver has decoded enough of the media data it has received that it becomes ready for more media data again, it will invoke the block again in order to obtain more.
 

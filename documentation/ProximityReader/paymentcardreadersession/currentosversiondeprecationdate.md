@@ -17,7 +17,7 @@ The date when current OS version will be deprecated.
 final let currentOSVersionDeprecationDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 You should update the OS before the deprecation date.
 

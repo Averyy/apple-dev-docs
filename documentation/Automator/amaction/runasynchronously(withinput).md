@@ -20,7 +20,7 @@ func runAsynchronously(withInput input: Any?)
 - (void) runAsynchronouslyWithInput:(id) input;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in actions that need to make asynchronous calls. After [`runAsynchronously(withInput:)`](./runasynchronously%28withinput%29.md) is invoked, Automator doesn’t continue until the action invokes [`finishRunningWithError(_:)`](./finishrunningwitherror%28_%29.md). In your override of this method, you can make an asynchronous call, wait to be notified of its completion, then invoke [`finishRunningWithError(_:)`](./finishrunningwitherror%28_%29.md) to signal to Automator that the action has completed.
 

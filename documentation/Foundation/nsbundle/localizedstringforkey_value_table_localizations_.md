@@ -21,7 +21,7 @@ Look up a localized string given a list of available localizations.
 - (NSString *) localizedStringForKey:(NSString *) key value:(NSString *) value table:(NSString *) tableName localizations:(NSArray<NSString *> *) localizations;
 ```
 
-#### Return Value
+## Return Value
 
 A localized version of the string designated by `key` in table `tableName`.
 

@@ -21,7 +21,7 @@ Appends an arc to a mutable graphics path, possibly preceded by a straight line 
 extern void CGPathAddRelativeArc(CGMutablePathRef path, const CGAffineTransform *matrix, CGFloat x, CGFloat y, CGFloat radius, CGFloat startAngle, CGFloat delta);
 ```
 
-#### Discussion
+## Discussion
 
 The angle to the second endpoint of the arc is calculated by adding the delta to the start angle.
 

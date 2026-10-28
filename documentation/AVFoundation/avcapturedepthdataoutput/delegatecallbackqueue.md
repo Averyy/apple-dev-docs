@@ -22,7 +22,7 @@ var delegateCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only. You set the delegate object and the dispatch queue for calling delegate methods together using the [`setDelegate(_:callbackQueue:)`](./setdelegate%28_,callbackqueue%29.md) method.
 

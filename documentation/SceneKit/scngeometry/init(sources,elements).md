@@ -25,7 +25,7 @@ convenience init(sources: [SCNGeometrySource], elements: [SCNGeometryElement]?)
 + (instancetype) geometryWithSources:(NSArray<SCNGeometrySource *> *) sources elements:(NSArray<SCNGeometryElement *> *) elements;
 ```
 
-#### Discussion
+## Discussion
 
 A geometry’s visible content comes from the combination of geometry sources, which contain data describing its vertices, with geometry elements, which contain data describing how the vertices connect to form a surface.
 

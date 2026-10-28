@@ -19,7 +19,7 @@ let kQLThumbnailOptionIconModeKey: CFString!
 extern CFStringRef const kQLThumbnailOptionIconModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). If you use the default, the Quick Look feature creates a thumbnail image with no icon decor. To create the thumbnail as an icon, set the value to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md). The icon’s image includes all the typical icon decor, such as shadows and a curled corner.
 

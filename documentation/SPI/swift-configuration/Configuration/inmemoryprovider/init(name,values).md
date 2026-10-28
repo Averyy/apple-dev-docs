@@ -24,7 +24,7 @@ Creates a new in-memory provider with the specified configuration values.
 init(name: String? = nil, values: [AbsoluteConfigKey : ConfigValue])
 ```
 
-#### Discussion
+## Discussion
 
 This initializer takes a dictionary of absolute configuration keys mapped to their values. Use this when you have already constructed [`AbsoluteConfigKey`](../absoluteconfigkey.md) instances or when working with keys programmatically.
 

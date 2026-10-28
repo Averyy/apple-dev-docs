@@ -22,7 +22,7 @@ static let appleiTT: AVFileType
 extern AVFileType const AVFileTypeAppleiTT;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.apple.itunes-timed-text`. Files of this type have an `.itt` extension.
 

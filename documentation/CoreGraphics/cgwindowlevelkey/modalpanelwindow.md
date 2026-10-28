@@ -18,7 +18,7 @@ case modalPanelWindow
 kCGModalPanelWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for modal panels.
 

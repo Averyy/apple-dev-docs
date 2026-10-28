@@ -21,7 +21,7 @@ case outgoing
 SCVideoStreamAnalyzerStreamDirectionOutgoing
 ```
 
-#### Discussion
+## Discussion
 
 This option refers to the stream that originates from the device’s camera.
 

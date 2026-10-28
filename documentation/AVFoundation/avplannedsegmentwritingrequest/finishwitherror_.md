@@ -20,7 +20,7 @@ Clients must call this method if a non-recoverable error occurs while generating
 - (void) finishWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws NSGenericException if finish, finishWithClientState:, finishWithError:, or cancel has already been called on this request.
 

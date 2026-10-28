@@ -24,7 +24,7 @@ class MPSCNNCrossChannelNormalization
 @interface MPSCNNCrossChannelNormalization : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The normalization kernel applies the kernel to a local region across nearby feature channels, but with no spatial extent (i.e., they have the shape `kernel size x 1 x 1`). The normalized output is given by the function:
 

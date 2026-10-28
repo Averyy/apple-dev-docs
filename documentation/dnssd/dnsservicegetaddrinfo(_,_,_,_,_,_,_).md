@@ -25,7 +25,7 @@ func DNSServiceGetAddrInfo(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ fla
 DNSServiceErrorType DNSServiceGetAddrInfo(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceProtocol protocol, const char *hostname, DNSServiceGetAddrInfoReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred.
 

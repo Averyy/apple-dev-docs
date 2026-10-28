@@ -16,7 +16,7 @@ Information about the state of the applet instance.
 let lifeCycleState: Data
 ```
 
-#### Discussion
+## Discussion
 
 The format of the data in this property is defined in Table 11-4 of GlobalPlatform Card Specification 2.2.1, and the Mobile Secure Element specification from the [Apple Business Register](https://register.apple.com/login).
 

@@ -12,7 +12,7 @@ virtual IOStreamMode getStreamMode(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 The mode of the stream, either kIOStreamModeInput (from user space to kernel space) or the default kIOStreamModeOutput (from kernel space to user space).
 

@@ -25,11 +25,11 @@ func synchronize() -> Bool
 - (BOOL) synchronize;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the in-memory and iCloud keys are synchronized, or `false` if an error occurred. For example, this method returns `false` if the app doesn’t have the required entitlements to access the iCloud key-value store.
 
-#### Discussion
+## Discussion
 
 Call this method sparingly to synchronize the in-memory copy of the keys and values with the version stored in iCloud. Typically, you call this method only at launch or when your app returns to the foreground.
 

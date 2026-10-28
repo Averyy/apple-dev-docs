@@ -17,7 +17,7 @@ Connects the reader session to a tag and activates that tag.
 - (void) connectToTag:(id<NFCTag>) tag completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A tag stays connected until your app connects to a different tag or restarts polling. Connecting to a tag that is already connected has no effect.
 

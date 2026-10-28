@@ -19,11 +19,11 @@ class func addSubscriber(forFileURL url: URL, withPublishingHandler publishingHa
 + (id) addSubscriberForFileURL:(NSURL *) url withPublishingHandler:(NSProgressPublishingHandler) publishingHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A proxy of the progress object to observe.
 
-#### Discussion
+## Discussion
 
 The system invokes the passed-in block when a progress object calls [`publish()`](./publish%28%29.md) with a [`fileURLKey`](../progressuserinfokey/fileurlkey.md) user info dictionary entry that’s a URL that is the same as this method’s URL, or that is an item that the URL directly contains. The progress object that passes to your block is a proxy of the published progress object. The passed-in block may return another block. If it does, the system invokes the returned block when the observed progress object invokes [`unpublish()`](./unpublish%28%29.md), the publishing process terminates, or you invoke [`removeSubscriber(_:)`](./removesubscriber%28_%29.md). The system invokes the blocks you provide on the main thread.
 

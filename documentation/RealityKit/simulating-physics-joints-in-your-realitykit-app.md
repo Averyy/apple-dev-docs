@@ -14,7 +14,7 @@ Create realistic, connected motion using physics joints.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app demostrates how to create a [`PhysicsRevoluteJoint`](./physicsrevolutejoint.md) that simulates motion, like a pendulum swinging back and forth, as an alternative to animations.
 
@@ -24,7 +24,7 @@ You can create animations to depict objects in motion but simulations can be bet
 
 > **Note**: All joint types in RealityKit conform to the [`PhysicsJoint`](./physicsjoint.md) protocol, including [`PhysicsRevoluteJoint`](./physicsrevolutejoint.md).
 
-##### Set up the app’s static scene
+### Set up the app’s static scene
 
 The app starts with a single pendulum, made up of a few entities:
 
@@ -40,7 +40,7 @@ In the initial scene, each entity only has their default components, an updated 
 
 ![A screenshot of a scene in a museum environment, with a chrome ball hanging from a green cuboid panel, and a gray cylinder connecting them. The top green panel has the label `attachmentEntity`, the cylinder has the label `stringEntity`, and the ball has the label `ballEntity`.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/pendulum-setup-annotated.png)
 
-##### Add physics components to the entities
+### Add physics components to the entities
 
 Before you activate a physics joint, each entity must have both a [`PhysicsBodyComponent`](./physicsbodycomponent.md) and a [`CollisionComponent`](./collisioncomponent.md).
 
@@ -82,7 +82,7 @@ let attachmentCollision = CollisionComponent(shapes: [attachmentShape])
 attachmentEntity.components.set([attachmentBody, attachmentCollision])
 ```
 
-##### Add the simulation and physics joints components
+### Add the simulation and physics joints components
 
 The app adds the components [`PhysicsSimulationComponent`](./physicssimulationcomponent.md) and [`PhysicsJointsComponent`](./physicsjointscomponent.md) to a common ancestor of `ballEntity` and `attachmentEntity`, to indicate where RealityKit adds the joints:
 
@@ -93,7 +93,7 @@ parentSimulationEntity.components.set(PhysicsSimulationComponent())
 parentSimulationEntity.components.set(PhysicsJointsComponent())
 ```
 
-##### Create a new joint
+### Create a new joint
 
 [`PhysicsRevoluteJoint`](./physicsrevolutejoint.md) creates a hinge for the swinging motion in this example. A revolute joint, also known as a *hinge joint*, allows rotational movement in one axis, similar to a door swinging on its hinges.
 
@@ -136,7 +136,7 @@ Use each [`GeometricPin`](./geometricpin.md) as the parameters to create a new [
 let revoluteJoint = PhysicsRevoluteJoint(pin0: attachmentPin, pin1: ballPin)
 ```
 
-##### Add the physics joint to your simulation
+### Add the physics joint to your simulation
 
 Add the new joint to the simulation. The [`addToSimulation()`](./physicsjoint/addtosimulation%28%29.md) method finds the closest entity ancestor of the joint’s first pin that has a [`PhysicsJointsComponent`](./physicsjointscomponent.md), and adds the joint to its [`joints`](./physicsjointscomponent/joints.md) collection:
 
@@ -144,7 +144,7 @@ Add the new joint to the simulation. The [`addToSimulation()`](./physicsjoint/ad
 try revoluteJoint.addToSimulation()
 ```
 
-##### Add motion to the scene
+### Add motion to the scene
 
 The simulation shows no effect until you add motion. One way to do so is via [`ImpulseAction`](./impulseaction.md). Give the ball a push in the negative x-direction to start the simulation:
 

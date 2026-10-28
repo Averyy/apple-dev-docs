@@ -21,7 +21,7 @@ Loads an evaluation result from a JSON file on disk.
 static func loadJSON(from url: URL) throws -> EvaluationResult
 ```
 
-#### Return Value
+## Return Value
 
 The deserialized [`EvaluationResult`](../evaluationresult.md).
 

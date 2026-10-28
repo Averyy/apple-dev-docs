@@ -24,11 +24,11 @@ class func keystoneCorrectionCombined() -> any CIFilter & CIKeystoneCorrectionCo
 + (CIFilter<CIKeystoneCorrectionCombined> *) keystoneCorrectionCombinedFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the keystone correction combined filter to an image. The effect applies a combined set of horizontal and vertical guides to adjust the shape of the input image. This effect is commonly used when cropping an image to correct distortion. In the figure below, both vertical and horizontal adjustments are made, resulting in a trapezoid-shaped image.
 

@@ -23,7 +23,7 @@ func sec_protocol_options_set_verify_block(_ options: sec_protocol_options_t, _ 
 void sec_protocol_options_set_verify_block(sec_protocol_options_t options, sec_protocol_verify_t verify_block, dispatch_queue_t verify_block_queue);
 ```
 
-#### Discussion
+## Discussion
 
 Set the verify block.
 

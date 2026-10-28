@@ -21,7 +21,7 @@ Right-preconditioned (F/DQ)GMRES Parameters Options.
 SparseGMRESOptions gmres;
 ```
 
-#### Discussion
+## Discussion
 
 Use (F/DQ)GMRES to solve `Ax=b` when `A` is symmetric (Hermitian) indefinite or unsymmetric.
 

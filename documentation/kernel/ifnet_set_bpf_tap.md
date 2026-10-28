@@ -13,7 +13,7 @@
 typedef errno_t (*ifnet_set_bpf_tap)(ifnet_t interface, bpf_tap_mode mode, bpf_packet_func callback);
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Specify NULL. Call bpf_tap_in/bpf_tap_out for all packets.
 

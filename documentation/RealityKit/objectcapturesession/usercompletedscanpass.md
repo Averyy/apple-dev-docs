@@ -17,7 +17,7 @@ This property starts out `false` at the start of a capture and will switch to `t
 var userCompletedScanPass: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 It is reset to `false` in a given capture session whenever either:
 

@@ -23,7 +23,7 @@ var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)? { g
 @property (nonatomic, copy, nullable) void (^serviceSubscriberCellularProvidersDidUpdateNotifier)(NSString *);
 ```
 
-#### Discussion
+## Discussion
 
 The block object executes on the default priority global dispatch queue when the user’s cellular provider information changes. This occurs, for example, if a user swaps the device’s SIM card with one from another provider, while your app is running.
 

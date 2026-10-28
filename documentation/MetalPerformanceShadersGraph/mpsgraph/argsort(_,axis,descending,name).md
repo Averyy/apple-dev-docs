@@ -24,7 +24,7 @@ func argSort(_ tensor: MPSGraphTensor, axis: Int, descending: Bool, name: String
 - (MPSGraphTensor *) argSortWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis descending:(BOOL) descending name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object with 32-bit integer data type
 

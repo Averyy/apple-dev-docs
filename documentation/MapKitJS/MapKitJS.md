@@ -9,7 +9,7 @@ Embed interactive Apple Maps on your website, annotate points of interest, and p
 **Availability**:
 - MapKit JS 5.0+
 
-#### Overview
+## Overview
 
 Use this JavaScript API to embed interactive maps directly into your webpages or apps across different platforms and operating systems, including iOS and Android. Like [MapKit](../MapKit/MapKit.md) for native apps, you can also add annotations and overlays to the map to call out points of interest or user destinations.
 

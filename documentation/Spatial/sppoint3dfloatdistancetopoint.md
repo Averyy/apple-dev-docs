@@ -19,11 +19,11 @@
 static float SPPoint3DFloatDistanceToPoint(SPPoint3DFloat point, SPPoint3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 The distance between the two points.
 
-#### Discussion
+## Discussion
 
 Returns the distance between the origins of two points.
 

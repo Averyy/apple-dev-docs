@@ -11,7 +11,7 @@ Create a browser app and associated extensions.
 - iPadOS 17.4+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how a browser app uses [`BrowserEngineKit`](./BrowserEngineKit.md) and [`XPC`](../XPC/XPC.md) to communicate with its alternative browser engine over XPC, and implement a browser UI. The workspace contains four targets that define components of the browser app:
 
@@ -22,7 +22,7 @@ This sample code project demonstrates how a browser app uses [`BrowserEngineKit`
 
 For more information on how these targets work together to support a custom web browser engine, see [Designing your browser architecture](./designing-your-browser-architecture.md).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To build a web browser that uses an alternative browser engine, including the one in this sample project, apply for the entitlements from Apple. The entitlement request process varies by region:
 
@@ -33,7 +33,7 @@ For more information on which entitlements to use, see [Creating browser extensi
 
 To build the sample code project for a device, you must target an iPhone that supports the `arm64e` instruction set. The project doesn’t support iPad.
 
-##### Open a new tab
+### Open a new tab
 
 When someone using the browser app opens a new tab, the browser app’s `BrowserPage` creates a `TabContentView` to display the tab’s contents, which gets its data from the tab’s `TabViewModel`.
 
@@ -129,7 +129,7 @@ The web content process responds to the bootstrap message by retrieving the anon
 
 For more information on this process, see the section “Pass anonymous connection endpoints between extensions” in [Using XPC to communicate with browser extensions](./using-xpc-to-communicate-with-browser-extensions.md).
 
-##### Load web content
+### Load web content
 
 When someone using the browser app navigates to a new location, the `WebContentView` asks the proxy object that represents the web-content process to load the data at the location’s URL:
 

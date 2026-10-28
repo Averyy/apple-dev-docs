@@ -24,11 +24,11 @@ func chapterMetadataGroups(withTitleLocale locale: Locale, containingItemsWithCo
 - (NSArray<AVTimedMetadataGroup *> *) chapterMetadataGroupsWithTitleLocale:(NSLocale *) locale containingItemsWithCommonKeys:(NSArray<NSString *> *) commonKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md) objects.
 
-#### Discussion
+## Discussion
 
 A metadata group contains an [`AVMetadataItem`](../avmetadataitem.md) object that represents the chapter title, and a time range equal to the time range of the chapter title item.
 

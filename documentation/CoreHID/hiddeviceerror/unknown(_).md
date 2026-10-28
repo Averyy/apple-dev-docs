@@ -15,7 +15,7 @@ A catch-all for uncommon errors.
 case unknown(Int32)
 ```
 
-#### Discussion
+## Discussion
 
 The associated code is an `IOReturn` that provides additional information.
 

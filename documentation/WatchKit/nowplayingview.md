@@ -20,7 +20,7 @@ A view that displays the system’s Now Playing interface so that the user can c
 
 - [Adding a Now Playing View](./adding-a-now-playing-view.md)
 
-#### Overview
+## Overview
 
 With a Now Playing view, users can control current or recently played audio without leaving your app. The Now Playing view displays information about the current audio source, such as another app on the user’s Apple Watch or iPhone. For example, users can play and pause music from their Apple Watch’s Music app or control the volume of a podcast on their iPhone.
 

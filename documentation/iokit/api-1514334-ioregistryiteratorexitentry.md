@@ -23,11 +23,11 @@ func IORegistryIteratorExitEntry(_ iterator: io_iterator_t) -> kern_return_t
 kern_return_t IORegistryIteratorExitEntry(io_iterator_t iterator);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if a level of recursion was undone, kIOReturnNoDevice if no recursive levels are left in the iteration.
 
-#### Discussion
+## Discussion
 
 This method undoes an IORegistryIteratorEnterEntry, restoring the current entry. If there are no more levels of recursion to exit false is returned, otherwise true is returned.
 

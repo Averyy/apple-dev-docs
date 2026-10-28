@@ -25,7 +25,7 @@ func CFFileDescriptorIsValid(_ f: CFFileDescriptor!) -> Bool
 extern Boolean CFFileDescriptorIsValid(CFFileDescriptorRef f);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the native file descriptor for `f` is valid, otherwise `false`.
 

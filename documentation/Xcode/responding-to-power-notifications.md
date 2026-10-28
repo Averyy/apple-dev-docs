@@ -5,7 +5,7 @@
 
 Adopt more power-efficient strategies to prolong the device’s battery life.
 
-#### Overview
+## Overview
 
 Certain situations cause a device to reduce the amount of work it does and the amount of power it uses. People who want to increase the time before their device needs charging can turn on Low Power Mode. When a device is in Low Power Mode, the system enacts energy-saving measures, including reducing animations, and increasing the time between certain power-consuming actions like fetching data over the network.
 
@@ -13,7 +13,7 @@ Additionally, if the system detects that the temperature is too high, it reduces
 
 Register for system notifications about power- and thermal-state changes so you can take steps to help the system conserve energy and reduce its temperature.
 
-##### Detect and react to power-state notifications
+### Detect and react to power-state notifications
 
 In your app, register for [`NSProcessInfoPowerStateDidChange`](../Foundation/nsnotification/name-swift.struct/nsprocessinfopowerstatedidchange.md) to discover when the device’s power state changes. When you receive the notification, query the value of [`isLowPowerModeEnabled`](../Foundation/processinfo/islowpowermodeenabled.md) to determine if the system’s in Low Power Mode.
 
@@ -25,7 +25,7 @@ If Low Power Mode is active, take additional steps to help the system conserve e
 - Reducing the frequency of network connections
 - Stopping location updates
 
-##### Detect and react to thermal-state notifications
+### Detect and react to thermal-state notifications
 
 In your app, register for [`thermalStateDidChangeNotification`](../Foundation/processinfo/thermalstatedidchangenotification.md) to discover when the device’s thermal state changes. When you receive the notification, adjust your app’s behavior according to the value of [`thermalState`](../Foundation/processinfo/thermalstate-swift.property.md):
 

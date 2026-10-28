@@ -24,7 +24,7 @@ var maxLookAheadDepth: Int { get set }
 @property (nonatomic, assign) NSInteger maxLookAheadDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The strategist works by recursively forming and examining a decision tree of possible future game model states and the moves leading to each. This property determines the number of future turns to consider and the depth of the resulting decision tree. Greater lookahead depth results in stronger play by a strategist-controlled player, but at a cost of increased computation time and memory usage.
 

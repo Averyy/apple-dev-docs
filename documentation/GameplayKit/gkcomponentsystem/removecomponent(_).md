@@ -24,7 +24,7 @@ func removeComponent(_ component: ComponentType)
 - (void) removeComponent:(ComponentType) component;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified component is not in the component system, this method has no effect.
 

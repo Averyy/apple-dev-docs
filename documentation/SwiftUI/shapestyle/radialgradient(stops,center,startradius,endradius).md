@@ -24,7 +24,7 @@ static func radialGradient(stops: [Gradient.Stop], center: UnitPoint, startRadiu
 
 Available when `Self` is `RadialGradient`.
 
-#### Discussion
+## Discussion
 
 The gradient applies the color function as the distance from a center point, scaled to fit within the defined start and end radii. The gradient maps the unit space center point into the bounding rectangle of each shape filled with the gradient.
 

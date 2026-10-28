@@ -15,7 +15,7 @@ Apply a default configuration to an entity to enable to it for use with manipula
 static func configureEntity(_ entity: Entity, hoverEffect: HoverEffectComponent.HoverEffect? = nil, allowedInputTypes: InputTargetComponent.InputType? = nil, collisionShapes: [ShapeResource]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This function applies an [`InputTargetComponent`](../inputtargetcomponent.md), [`CollisionComponent`](../collisioncomponent.md), and [`HoverEffectComponent`](../hovereffectcomponent.md) to an [`Entity`](../entity.md).
 

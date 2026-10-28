@@ -21,7 +21,7 @@ The non-extension portion of the file or directory last component.
 var stem: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `lastComponent` is `nil`
 

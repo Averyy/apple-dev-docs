@@ -21,7 +21,7 @@ A collection of components that an entity stores.
 @preconcurrency struct ComponentSet
 ```
 
-#### Overview
+## Overview
 
 A `ComponentSet` represents all the components that an entity holds. Use this set to add, remove, and update components on an entity. This set can hold one component of each type.
 

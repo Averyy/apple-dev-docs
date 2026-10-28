@@ -17,11 +17,11 @@ Remaps DistilBERT-specific weight keys to the internal MLX architecture.
 override func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A sanitized dictionary compatible with the `Module` property keys.
 
-#### Discussion
+## Discussion
 
 DistilBERT weights use different naming patterns than standard BERT (e.g., using `ffn` instead of `intermediate`). This method ensures that weights from models like `distilbert-base-uncased` map correctly to the Swift property names.
 

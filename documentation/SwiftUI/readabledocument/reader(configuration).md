@@ -20,7 +20,7 @@ Creates a reader to load this document from disk.
 func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method each time it needs to read or re-read the document (on open, or when another process changes the file). Return a [`FileWrapperDocumentReader`](../filewrapperdocumentreader.md) for cases that don’t require custom reading logic, or a [`DocumentReader`](../documentreader.md) for direct URL access.
 

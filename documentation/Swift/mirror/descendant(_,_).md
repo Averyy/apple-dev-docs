@@ -21,11 +21,11 @@ Returns a specific descendant of the reflected subject, or `nil` if no such desc
 func descendant(_ first: any MirrorPath, _ rest: any MirrorPath...) -> Any?
 ```
 
-#### Return Value
+## Return Value
 
 The descendant of this mirror specified by the given mirror path components if such a descendant exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Pass a variadic list of string and integer arguments. Each string argument selects the first child with a matching label. Each integer argument selects the child at that offset. For example, passing `1, "two", 3` as arguments to `myMirror.descendant(_:_:)` is equivalent to:
 

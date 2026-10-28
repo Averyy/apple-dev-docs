@@ -12,7 +12,7 @@ Sent when the contents of the assets library have changed from under the app tha
 extern NSString * const ALAssetsLibraryChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 4.0, the notification’s [`object`](../Foundation/nsnotification/object.md) is `nil`. In iOS 4.1 and later, the notification object is the library object that posted the notification.
 

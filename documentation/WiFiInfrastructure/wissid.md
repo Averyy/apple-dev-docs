@@ -17,7 +17,7 @@ The Service Set Identifier (SSID) for a Wi-Fi network, from which applications d
 struct WISSID
 ```
 
-#### Overview
+## Overview
 
 An SSID represents the identifier for a wireless network, as the Wi-Fi standard defines. Your app converts this binary data to text when displaying network names to people. The Wi-Fi standard defines SSIDs as binary values between 1 and 32 bytes long, without specifying a text encoding. This means SSID data can include:
 

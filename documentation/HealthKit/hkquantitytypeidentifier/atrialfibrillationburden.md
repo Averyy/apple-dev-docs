@@ -24,7 +24,7 @@ static let atrialFibrillationBurden: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAtrialFibrillationBurden;
 ```
 
-#### Discussion
+## Discussion
 
 On watchOS 9 and iOS 16 and later, once a person enables AFib History, Apple Watch begins collecting heart-rhythm data more frequently. iPhone then calculates the AFib burden once a week, as long as Apple Watch has gathered enough heart-rhythm data during that week.
 

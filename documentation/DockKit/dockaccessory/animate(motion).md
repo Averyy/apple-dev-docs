@@ -18,11 +18,11 @@ Starts an animation sequence.
 final func animate(motion: DockAccessory.Animation) async throws -> Progress
 ```
 
-#### Return Value
+## Return Value
 
 A progress object that reports the progress during execution of the animation sequence.
 
-#### Discussion
+## Discussion
 
 This method moves the dock accessory along a predefined trajectory to convey a characteristic. Do this only if you disable system tracking.
 

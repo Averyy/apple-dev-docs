@@ -16,7 +16,7 @@ nonisolated
 struct ImmersiveSpaceViewContent<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. SwiftUI creates it when you construct an [`ImmersiveSpace`](./immersivespace.md) with view-based content.
 

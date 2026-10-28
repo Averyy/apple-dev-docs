@@ -19,7 +19,7 @@ func updateCell(_ cell: NSCell)
 - (void) updateCell:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 If the cell currently has the focus, this method updates the cell’s focus ring; otherwise, the entire cell is marked as needing redisplay. The cell is redrawn during the next update cycle.
 

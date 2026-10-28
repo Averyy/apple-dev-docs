@@ -25,7 +25,7 @@ struct AudioBuffer
 struct AudioBuffer;
 ```
 
-#### Overview
+## Overview
 
 An audio buffer holds a single buffer of audio data in its [`mData`](./audiobuffer/mdata.md) field. The buffer can represent two types of audio:
 

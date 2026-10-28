@@ -21,7 +21,7 @@ A dash or hyphen punctuation mark.
 case dashPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Dash_Punctuation` (abbreviated `Pd`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

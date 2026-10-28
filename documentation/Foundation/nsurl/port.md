@@ -26,7 +26,7 @@ var port: NSNumber? { get }
 @property (copy, readonly, nullable) NSNumber * port;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the port number.  If the receiver does not conform to RFC 1808, this property contains `nil`. For example, in the URL `http://www.example.com:8080/index.php`, the port number is `8080`.
 

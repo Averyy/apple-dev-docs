@@ -23,7 +23,7 @@ var editButtonItem: UIBarButtonItem { get }
 @property (nonatomic, readonly) UIBarButtonItem * editButtonItem;
 ```
 
-#### Discussion
+## Discussion
 
 If one of the custom views of the [`navigationItem`](./navigationitem.md) property is set to the returned object, the associated navigation bar displays an Edit button if [`isEditing`](./isediting.md) is [`false`](../../Swift/false.md) and a Done button if [`isEditing`](./isediting.md) is [`true`](../../Swift/true.md). The default button action invokes the [`setEditing(_:animated:)`](./setediting%28_,animated%29.md) method.
 

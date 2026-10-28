@@ -25,11 +25,11 @@ func CMBlockBufferIsRangeContiguous(_ theBuffer: CMBlockBuffer, atOffset offset:
 extern Boolean CMBlockBufferIsRangeContiguous(CMBlockBufferRef theBuffer, size_t offset, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the specified range is contiguous within the `CMBlockBuffer`, false otherwise. Also returns false if the `CMBlockBuffer` is `NULL` or empty.
 
-#### Discussion
+## Discussion
 
 Determines whether the specified range within the given `CMBlockBuffer` is contiguous. If `CMBlockBufferGetDataPointer`() were called with the same parameters, the returned pointer would address the desired number of bytes.
 

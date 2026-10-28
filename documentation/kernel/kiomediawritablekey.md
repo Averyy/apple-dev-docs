@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaWritableKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaWritableKey property has an OSBoolean value and describes whether the media is writable.
 

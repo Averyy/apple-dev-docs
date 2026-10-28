@@ -15,11 +15,11 @@ Attempts to set the resource data for the receiver.
 - (BOOL) setResourceData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 In the case of a file URL, setting the data involves writing `data` to the specified file.
 

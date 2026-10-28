@@ -19,7 +19,7 @@ func index(ofItemIdentifier itemIdentifier: Any) -> Int
 - (NSInteger) indexOfItemIdentifier:(ItemIdentifierType) itemIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item in the snapshot, or `NSNotFound` if the item with the specified identifier doesn’t exist in the snapshot. This index value is 0-based.
 

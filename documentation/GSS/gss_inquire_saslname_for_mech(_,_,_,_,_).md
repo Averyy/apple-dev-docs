@@ -23,7 +23,7 @@ func gss_inquire_saslname_for_mech(_ minor_status: UnsafeMutablePointer<OM_uint3
 OM_uint32 gss_inquire_saslname_for_mech(OM_uint32 *minor_status, gss_OID const desired_mech, gss_buffer_t sasl_mech_name, gss_buffer_t mech_name, gss_buffer_t mech_description);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success or [`GSS_S_BAD_MECH`](./gss_s_bad_mech.md) if the desired mechanism is unsupported. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

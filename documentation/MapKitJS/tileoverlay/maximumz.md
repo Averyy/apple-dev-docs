@@ -16,7 +16,7 @@ get maximumZ(): number | null;
 set maximumZ(maximumZ: number | null);
 ```
 
-#### Discussion
+## Discussion
 
 The `maximumZ` value defaults to the maximum zoom level of MapKit JS tiles. The zoom level can go higher and expands the map’s zoom range, if necessary. MapKit JS requests the overlay tiles when the map is below or at this zoom level.
 

@@ -21,7 +21,7 @@ Returns the elements of the sequence, sorted using the given comparator to compa
 func sorted<Comparator>(using comparator: Comparator) -> [Self.Element] where Comparator : SortComparator, Self.Element == Comparator.Compared
 ```
 
-#### Return Value
+## Return Value
 
 An array of the elements sorted using `comparator`.
 

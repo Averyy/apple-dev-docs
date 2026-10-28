@@ -24,7 +24,7 @@ class AUAudioUnitPreset
 @interface AUAudioUnitPreset : NSObject
 ```
 
-#### Overview
+## Overview
 
 These presets often produce a useful sound or starting point.
 

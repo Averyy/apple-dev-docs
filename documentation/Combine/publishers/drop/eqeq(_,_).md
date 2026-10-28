@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Drop<Upstream>, rhs: Publishers.Drop<Upstream>) 
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `upstream` and `count` properties; otherwise `false`.
 

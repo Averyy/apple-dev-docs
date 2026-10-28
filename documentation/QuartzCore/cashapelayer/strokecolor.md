@@ -24,7 +24,7 @@ var strokeColor: CGColor? { get set }
 @property (nullable) CGColorRef strokeColor;
 ```
 
-#### Discussion
+## Discussion
 
 Setting `strokeColor` to `nil` results in no stroke being rendered.
 

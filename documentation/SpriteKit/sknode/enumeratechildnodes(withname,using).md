@@ -29,7 +29,7 @@ func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, 
 
 - [Searching the Node Tree](../searching-the-node-tree.md)
 
-#### Discussion
+## Discussion
 
 This method enumerates the child array in order, searching for nodes whose names match the search parameter. The block is called once for each node that matches the name parameter.
 

@@ -16,7 +16,7 @@ The object that the receiver (or its parent) makes available to other applicatio
 @property (retain, nullable) id rootObject;
 ```
 
-#### Discussion
+## Discussion
 
 The object that the receiver (or its parent) makes available to other applications or threads, or `nil` if there is no root object.
 

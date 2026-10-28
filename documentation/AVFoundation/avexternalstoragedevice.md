@@ -23,7 +23,7 @@ class AVExternalStorageDevice
 @interface AVExternalStorageDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each storage device instance corresponds to a physical external storage device where the system can media assets. You can access all of the currently available external storage devices with the [`AVExternalStorageDeviceDiscoverySession`](./avexternalstoragedevicediscoverysession.md) object’s [`externalStorageDevices`](./avexternalstoragedevicediscoverysession/externalstoragedevices.md) property.
 

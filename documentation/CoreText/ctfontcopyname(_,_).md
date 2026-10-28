@@ -25,7 +25,7 @@ func CTFontCopyName(_ font: CTFont, _ nameKey: CFString) -> CFString?
 extern CFStringRefCTFontCopyName(CTFontRef font, CFStringRef nameKey);
 ```
 
-#### Return Value
+## Return Value
 
 The requested name for the font, or `NULL` if the font does not have an entry for the requested name. The Unicode version of the name is preferred, otherwise the first available version is returned.
 

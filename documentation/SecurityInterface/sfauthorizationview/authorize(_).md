@@ -19,7 +19,7 @@ func authorize(_ inSender: Any!) -> Bool
 - (BOOL) authorize:(id) inSender;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same behavior as if the user clicked on the lock icon; if the user is authorized, the lock icon unlocks. If this method succeeds, it returns [`true`](../../Swift/true.md); if it fails, the lock icon remains locked and the method returns [`false`](../../Swift/false.md).
 

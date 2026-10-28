@@ -25,7 +25,7 @@ static var all: SCNBillboardAxis { get }
 SCNBillboardAxisAll
 ```
 
-#### Discussion
+## Discussion
 
 This is the default option for newly created billboard constraints.
 

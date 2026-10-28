@@ -20,7 +20,7 @@ var requestCount: UInt32
 uint32_t requestCount;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Initialize this field before submitting the structure.
 

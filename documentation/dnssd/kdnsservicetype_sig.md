@@ -23,7 +23,7 @@ var kDNSServiceType_SIG: Int { get }
 kDNSServiceType_SIG
 ```
 
-#### Discussion
+## Discussion
 
 Security signature.
 

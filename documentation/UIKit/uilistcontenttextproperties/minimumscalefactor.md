@@ -19,7 +19,7 @@ The smallest multiplier for the font size that the configuration uses to make th
 @property (nonatomic) CGFloat minimumScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies when [`adjustsFontSizeToFitWidth`](../uilistcontentconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth.md) is [`true`](../../Swift/true.md).
 

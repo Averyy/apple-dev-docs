@@ -19,7 +19,7 @@ A loaded compute graph resource containing the graph definition, compiled pipeli
 final class ComputeGraphResource
 ```
 
-#### Overview
+## Overview
 
 Load a `ComputeGraphResource` from a file URL using [`init(contentsOf:bundle:)`](./computegraphresource/init%28contentsof,bundle%29.md), then assign it to a [`resource`](./computegraphcomponent/resource.md) to drive a simulation.
 

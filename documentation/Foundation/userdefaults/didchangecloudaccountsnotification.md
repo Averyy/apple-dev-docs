@@ -26,7 +26,7 @@ class let didChangeCloudAccountsNotification: NSNotification.Name
 extern NSNotificationName const NSUbiquitousUserDefaultsDidChangeAccountsNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is posted to the default notification center on the main queue.The keys and values in the local key-value store are replaced with those from the new account, regardless of the relative timestamps.
 

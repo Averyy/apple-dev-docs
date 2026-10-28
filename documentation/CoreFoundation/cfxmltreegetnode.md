@@ -15,7 +15,7 @@ Returns the node of a CFXMLTree object.
 extern CFXMLNodeRefCFXMLTreeGetNode(CFXMLTreeRef xmlTree);
 ```
 
-#### Return Value
+## Return Value
 
 The node of `xmlTree`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

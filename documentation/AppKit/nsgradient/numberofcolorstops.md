@@ -19,7 +19,7 @@ var numberOfColorStops: Int { get }
 @property (readonly) NSInteger numberOfColorStops;
 ```
 
-#### Discussion
+## Discussion
 
 Gradients must have at least two color stops: one defining the location of the start color and one defining the location of the end color. Gradients may have additional color stops located at different transition points in between the start and end stops.
 

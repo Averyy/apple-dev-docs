@@ -33,7 +33,7 @@ protocol MTLComputeCommandEncoder : MTLCommandEncoder
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Overview
+## Overview
 
 Create a compute encoder by calling one of the factory methods on an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance, such as [`makeComputeCommandEncoder(dispatchType:)`](./mtlcommandbuffer/makecomputecommandencoder%28dispatchtype%29.md). You can encode multiple commands that each run a compute kernel as part of a single pass of the encoder with the following steps:
 
@@ -43,7 +43,7 @@ Create a compute encoder by calling one of the factory methods on an [`MTLComman
 4. Encode compute commands that call your kernel by either [Dispatching kernel calls directly](./mtlcomputecommandencoder.md#Dispatching-kernel-calls-directly) or [Dispatching from indirect command buffers](./mtlcomputecommandencoder.md#Dispatching-from-indirect-command-buffers).
 5. Call [`endEncoding()`](./mtlcommandencoder/endencoding%28%29.md) to finish encoding the kernel call of the compute pass.
 
-##### Command stages
+### Command stages
 
 Most compute commands apply to one stage within a pass. The following table shows which stage applies to each command:
 

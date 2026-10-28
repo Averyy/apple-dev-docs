@@ -25,7 +25,7 @@ class NSAtomicStore
 @interface NSAtomicStore : NSPersistentStore
 ```
 
-#### Overview
+## Overview
 
 Use an atomic store to handle data sets that can be expressed in memory. The atomic store API favors simplicity over performance.
 

@@ -24,7 +24,7 @@ var buffer: any MTLBuffer { get }
 @property (nonatomic, readonly, nonnull) id<MTLBuffer> buffer;
 ```
 
-#### Discussion
+## Discussion
 
 Many [`MTKMeshBuffer`](../mtkmeshbuffer.md) objects may reference the same [`MTLBuffer`](../../Metal/mtlbuffer.md) object, in which case each [`MTKMeshBuffer`](../mtkmeshbuffer.md) object will have its own unique [`offset`](./offset.md) value.
 

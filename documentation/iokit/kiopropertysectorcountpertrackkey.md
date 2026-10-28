@@ -14,7 +14,7 @@
 #define kIOPropertySectorCountPerTrackKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the number of sectors per each track for a particular medium.
 

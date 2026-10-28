@@ -21,7 +21,7 @@ A textual representation of the most recent error returned by a system call.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `strerror(3)`.
 

@@ -22,7 +22,7 @@ func dismissMenu(animated: Bool)
 - (void) dismissMenuAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss a menu programmatically. The document interaction controller can also dismiss the menu automatically in response to user actions.
 

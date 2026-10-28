@@ -12,7 +12,7 @@ Compare face-capture quality in a set of images by using Vision.
 - Mac Catalyst 13.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 New in iOS 13, the Vision framework adds the Face Capture Quality metric to represent the capture quality of a given face in a photo. The sample app shows you how to use this metric to evaluate a collection of images of the same person and identify which one has the best capture quality.
 
@@ -70,7 +70,7 @@ cell.imageView.image = faceImage
 cell.label.text = "\(savedFace.qualityScore)"
 ```
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 

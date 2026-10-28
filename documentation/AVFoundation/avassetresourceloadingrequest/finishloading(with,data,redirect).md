@@ -22,7 +22,7 @@ func finishLoading(with response: URLResponse?, data: Data?, redirect: URLReques
 - (void) finishLoadingWithResponse:(NSURLResponse *) response data:(NSData *) data redirect:(NSURLRequest *) redirect;
 ```
 
-#### Discussion
+## Discussion
 
 When a resource loader’s delegate takes responsibility for loading a resource, it calls this method to indicate that the resource was loaded successfully. This method marks the loading request as finished and returns the provided data back to the resource loader object for processing.
 

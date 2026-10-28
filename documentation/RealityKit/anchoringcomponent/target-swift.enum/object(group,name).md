@@ -19,7 +19,7 @@ An anchor point attached to the object specified by a group and a name in AR Res
 case object(group: String, name: String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS, visionOS and tvOS apps don’t track this type of anchor.
 

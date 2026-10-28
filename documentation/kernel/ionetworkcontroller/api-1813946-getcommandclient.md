@@ -11,11 +11,11 @@ Gets the command client object.
 virtual OSObject * getCommandClient() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the command client. If the caller is not running on the workloop thread, or if the thread does not have the workloop's gate closed, then 0 is returned.
 
-#### Overview
+## Overview
 
 Methods called on the workloop context to service a client request can call this method to get the client object that initiated the command.
 

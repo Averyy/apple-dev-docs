@@ -5,7 +5,7 @@
 
 Update an iPadOS or iOS app that uses ARKit, and provide an equivalent experience in visionOS.
 
-#### Overview
+## Overview
 
 If you use ARKit to create an augmented reality experience on iPhone or iPad, you need to rethink your use of that technology when bringing your app to visionOS. ARKit plays a crucial role in delivering your content to the display in iPadOS and iOS. In visionOS, you use ARKit only to acquire data about the person’s surroundings, and you do so using a different set of APIs.
 
@@ -15,7 +15,7 @@ When migrating your app to visionOS, reuse as much of your app’s existing cont
 
 For general guidance on how to port apps to visionOS, see [Bringing your existing apps to visionOS](./bringing-your-app-to-visionos.md).
 
-##### Adopt technologies available in both iOS and visionOS
+### Adopt technologies available in both iOS and visionOS
 
 To create a single app that runs in both iOS and visionOS, use technologies that are available on both platforms. While ARKit in iOS lets you create your interface using several different technologies, the preferred technologies in visionOS are SwiftUI and RealityKit. If you’re not currently using RealityKit for 3D content, consider switching to it before you start adding visionOS support. If you retain code that uses older technologies in your iOS app, you might need to re-create much of that code using RealityKit when migrating to visionOS.
 
@@ -23,7 +23,7 @@ If you use [Metal](../Metal/Metal.md) to draw your app’s content, you can brin
 
 > **Note**: In visionOS 2.0 and later, you can create a mixed immersive experience with Metal as well. Watch [Render Metal with passthrough in visionOS](https://developer.apple.com/videos/play/wwdc2024/10092) for more information and sample code.
 
-##### Convert 3D assets to the USDZ format
+### Convert 3D assets to the USDZ format
 
 The recommended format for 3D assets in iOS and visionOS is USDZ. This format offers a compact single file for everything, including your models, textures, behaviors, physics, anchoring, and more. If you have assets that don’t use this format, use the Reality Converter tool that comes with Xcode to convert them for your project.
 
@@ -31,7 +31,7 @@ When building 3D scenes for visionOS, use Reality Composer Pro to create your sc
 
 Although you can bring models and materials to your project using USDZ files, you can’t bring custom shaders you wrote using Metal. Replace any custom shader code with MaterialX shaders. Many digital content creation tools support the MaterialX standard, and let you create dynamic shaders and save them with your USDZ files. Reality Composer Pro and RealityKit support MaterialX shaders, and incorporate them with your other USDZ asset content. See the [MaterialX](https://materialx.org/) site for more information.
 
-##### Update your interface to support visionOS
+### Update your interface to support visionOS
 
 In visionOS, you manage your app’s content, and the system handles the integration of that content with the person’s surroundings. This approach differs from iOS, where you use a special ARKit view to blend your content and the live camera content. Bringing your interface to visionOS therefore means you need to remove this special ARKit view and focus only on your content.
 
@@ -49,7 +49,7 @@ A [`RealityView`](../RealityKit/realityview.md) is a SwiftUI view that manages t
 
 For more information about how to use `RealityView` and respond to interactions with your content, see [Adding 3D content to your app](./adding-3d-content-to-your-app.md).
 
-##### Replace your ARKit code
+### Replace your ARKit code
 
 ARKit provides different APIs for iOS and visionOS, and the way you use ARKit services on the platforms is also different. In iOS, you must use ARKit to put your content onscreen, and you can also use it to manage interactions between your content and a person’s surroundings. In visionOS, the system puts your content onscreen, so you only use ARKit to manage interactions with the surroundings. Because of this more limited usage, some apps don’t need ARKit at all in visionOS.
 
@@ -91,7 +91,7 @@ If you use the world-tracking data provider in visionOS, ARKit automatically per
 
 For more information about how to use ARKit, see [ARKit](../ARKit/ARKit.md).
 
-##### Isolate ARKit features not available in visionOS
+### Isolate ARKit features not available in visionOS
 
 If your app uses ARKit features that aren’t present in visionOS, isolate that code to the iOS version of your app. The following features are available in iOS, but don’t have an equivalent in visionOS:
 

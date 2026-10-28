@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, canDragItemsAt 
 - (BOOL) collectionView:(NSCollectionView *) collectionView canDragItemsAtIndexes:(NSIndexSet *) indexes withEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the collection view can begin the drag operation for the specified items or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want selective control over the initiation of drag operations. In your implementation, use the provided information to determine whether the drag operation should occur and return the appropriate return value. For example, you might return [`false`](../../Swift/false.md) if your interface does not allow the user to drag the specified items.
 

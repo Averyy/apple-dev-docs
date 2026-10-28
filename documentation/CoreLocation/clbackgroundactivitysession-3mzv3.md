@@ -24,7 +24,7 @@ final class CLBackgroundActivitySession
 - [Handling location updates in the background](./handling-location-updates-in-the-background.md)
 - [Supporting live updates in SwiftUI and Mac Catalyst apps](./supporting-live-updates-in-swiftui-and-mac-catalyst-apps.md)
 
-#### Overview
+## Overview
 
 Use `CLBackgroundActivitySession` to start a background activity session that allows a when-in-use authorized app to receive location updates or monitoring events.
 

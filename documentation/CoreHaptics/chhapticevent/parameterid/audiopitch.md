@@ -24,7 +24,7 @@ static let audioPitch: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDAudioPitch;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter value ranges from -1.0 (lowest pitch) to 1.0 (highest pitch).
 

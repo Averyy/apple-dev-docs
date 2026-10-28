@@ -23,7 +23,7 @@ func layoutAttributesForDecorationView(ofKind decorationViewKind: String, at ind
 - (UICollectionViewLayoutAttributes *) layoutAttributesForDecorationViewOfKind:(NSString *) decorationViewKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The collection view layout attributes for the specified decoration view.
 

@@ -21,7 +21,7 @@ Round to the closest allowed value; if two values are equally close, the even on
 case toNearestOrEven
 ```
 
-#### Discussion
+## Discussion
 
 This rounding rule is also known as “bankers rounding,” and is the default IEEE 754 rounding mode for arithmetic. The following example shows the results of rounding numbers using this rule:
 

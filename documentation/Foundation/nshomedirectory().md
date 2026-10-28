@@ -25,11 +25,11 @@ func NSHomeDirectory() -> String
 extern NSString *NSHomeDirectory();
 ```
 
-#### Return Value
+## Return Value
 
 The path to the current home directory.
 
-#### Discussion
+## Discussion
 
 In iOS, the home directory is the application’s sandbox directory. In macOS, it’s the application’s sandbox directory, or the current user’s home directory if the application isn’t in a sandbox.
 

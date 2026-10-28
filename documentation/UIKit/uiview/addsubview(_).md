@@ -23,7 +23,7 @@ func addSubview(_ view: UIView)
 - (void) addSubview:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method establishes a strong reference to `view` and sets its next responder to the receiver, which is its new superview.
 

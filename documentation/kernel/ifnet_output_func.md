@@ -13,7 +13,7 @@
 typedef errno_t (*ifnet_output_func)(ifnet_t interface, mbuf_t data);
 ```
 
-#### Discussion
+## Discussion
 
 ifnet_output_func is used to transmit packets. The stack will pass fully formed packets, including frame header, to the ifnet_output function for an interface. The driver is responsible for freeing the mbuf.
 

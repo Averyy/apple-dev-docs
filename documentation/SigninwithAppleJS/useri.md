@@ -15,7 +15,7 @@ An object that contains the user’s name and email address.
 interface UserI
 ```
 
-#### Overview
+## Overview
 
 Apple only returns the `UserI` object the first time the user authorizes the app. For more information, visit [Authenticating users with Sign in with Apple](../SigninwithApple/authenticating-users-with-sign-in-with-apple.md).
 

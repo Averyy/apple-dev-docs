@@ -21,7 +21,7 @@ A slice of the shaped array for the specified ranges.
 subscript(sliceRange: Range<Int>) -> MLShapedArraySlice<Self.Scalar> { get set }
 ```
 
-#### Overview
+## Overview
 
 This overrides the method from Collection.
 

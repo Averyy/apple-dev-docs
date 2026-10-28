@@ -23,7 +23,7 @@ enum SuggestionKind
 enum CSSuggestionKind : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Suggestions that the system returns from the query handler have [`CSSuggestion.SuggestionKind.default`](./suggestionkind-swift.enum/default.md).
 

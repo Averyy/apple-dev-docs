@@ -20,7 +20,7 @@ A factor that increases or decreases the animation’s rate of playback.
 var speed: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`, which doesn’t alter the animation’s rate of playback. A value of `2.0` plays the animation at twice the normal rate, and a speed of `0.5` makes the animation finish after twice the normal time. A negative value plays the animation in reverse.
 

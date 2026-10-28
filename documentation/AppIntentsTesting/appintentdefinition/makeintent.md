@@ -25,7 +25,7 @@ var makeIntent: IntentValuePropertiesCallable<AnyAppIntent> { get }
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Discussion
+## Discussion
 
 The following example shows how you can create an intent instance:
 

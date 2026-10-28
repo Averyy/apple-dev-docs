@@ -15,7 +15,7 @@ Updates the accessory’s configuration.
 final nonisolated(nonsending) func update(_ configuration: AccessoryControlDevice.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Call this method only from your app extension.
 

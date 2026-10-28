@@ -24,7 +24,7 @@ func SSLGetProtocolVersionMax(_ context: SSLContext, _ maxVersion: UnsafeMutable
 OSStatus SSLGetProtocolVersionMax(SSLContextRef context, SSLProtocol *maxVersion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

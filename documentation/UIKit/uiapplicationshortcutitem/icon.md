@@ -23,7 +23,7 @@ var icon: UIApplicationShortcutIcon? { get }
 @property (nonatomic, copy, readonly, nullable) UIApplicationShortcutIcon * icon;
 ```
 
-#### Discussion
+## Discussion
 
 Quick action icons are template (alpha-channel-only) images that you typically provide as part of an asset catalog. For more information, see [`UIApplicationShortcutIcon`](../uiapplicationshortcuticon.md).
 

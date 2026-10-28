@@ -25,7 +25,7 @@ let kCGPDFXOutputIntentSubtype: CFString
 extern CFStringRef const kCGPDFXOutputIntentSubtype;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object equal to `"GTS_PDFX"`; otherwise, the dictionary is ignored.
 

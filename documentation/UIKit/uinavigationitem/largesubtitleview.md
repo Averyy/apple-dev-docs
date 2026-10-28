@@ -21,7 +21,7 @@ var largeSubtitleView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * largeSubtitleView;
 ```
 
-#### Discussion
+## Discussion
 
 When non-nil, this takes precedence over any other subtitle. The view’s layout constraints will determine its size, or the view may override `sizeThatFits(_:)` to return its desired size.
 

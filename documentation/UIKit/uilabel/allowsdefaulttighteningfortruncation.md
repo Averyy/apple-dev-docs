@@ -23,7 +23,7 @@ var allowsDefaultTighteningForTruncation: Bool { get set }
 @property (nonatomic) BOOL allowsDefaultTighteningForTruncation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the label tightens intercharacter spacing of its text before allowing any truncation to occur. The label determines the maximum amount of tightening automatically based on the font, current line width, line break mode, and other relevant information. This autoshrinking behavior is only intended for use with a single-line label.
 

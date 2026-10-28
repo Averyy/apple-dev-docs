@@ -23,7 +23,7 @@ class NSToolbar
 @interface NSToolbar : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSToolbar`](./nstoolbar.md) object manages the controls and views that apply to the main window’s content area. Toolbars provide convenient access to the commands and features people use most often. Toolbars are also user-configurable and support the display of an interactive customization palette.
 

@@ -20,7 +20,7 @@ Creates a subset of the table given a number of initial rows.
 func prefix(_ maxLength: Int = 10) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

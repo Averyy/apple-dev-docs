@@ -25,11 +25,11 @@ func CMTimeGetSeconds(_ time: CMTime) -> Float64
 extern Float64 CMTimeGetSeconds(CMTime time);
 ```
 
-#### Return Value
+## Return Value
 
 The time in seconds.
 
-#### Discussion
+## Discussion
 
 If the time is [`invalid`](./cmtime/invalid.md) or [`indefinite`](./cmtime/indefinite.md), the result is [`nan`](../Swift/double/nan.md).
 

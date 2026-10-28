@@ -22,7 +22,7 @@ var isEnrolled: Bool { get }
 @property (nonatomic, readonly) BOOL isEnrolled;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the user has enrolled this biometry.
 

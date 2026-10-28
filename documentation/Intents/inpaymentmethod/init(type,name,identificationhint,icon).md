@@ -24,11 +24,11 @@ init(type: INPaymentMethodType, name: String?, identificationHint: String?, icon
 - (instancetype) initWithType:(INPaymentMethodType) type name:(NSString *) name identificationHint:(NSString *) identificationHint icon:(INImage *) icon;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized payment method object.
 
-#### Discussion
+## Discussion
 
 This method stores copies of the `name`, `identificationHint`, and `icon` parameters that you provide.
 

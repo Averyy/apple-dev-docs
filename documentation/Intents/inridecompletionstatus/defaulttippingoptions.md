@@ -31,7 +31,7 @@ var defaultTippingOptions: Set<INCurrencyAmount>? { get set }
 @property (atomic, strong, readwrite, nullable) NSSet<INCurrencyAmount *> * defaultTippingOptions;
 ```
 
-#### Discussion
+## Discussion
 
 When requesting tip feedback, use this property to specify a set of default tip amounts. Specify up to three tip amounts. Siri or Maps display this information when gathering feedback from the user.
 

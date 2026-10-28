@@ -4,7 +4,7 @@
 
 Specify keyword values for Apple event attributes.
 
-#### Overview
+## Overview
 
 These constants are keyword constants for Apple event attributes. An Apple event consists of attributes (which identify the Apple event and denote its task) and, often, parameters (which contain information to be used by the target application). An Apple event attribute is a descriptor that identifies the event class, event ID, target application, or some other characteristic of the Apple event. Taken together, the attributes of an Apple event denote the task to be performed on any data specified in the Apple event’s parameters.
 
@@ -12,7 +12,7 @@ Keywords are arbitrary names used by the Apple Event Manager to keep track of va
 
 See also [Keyword Parameter Constants](./api-1527206-keyword_parameter_constants.md).
 
-##### Version-Notes
+### Version-Notes
 
 The constant `keyReplyRequestedAttr` was added in OS X version 10.3.
 

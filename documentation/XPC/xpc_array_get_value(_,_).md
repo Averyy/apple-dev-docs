@@ -25,11 +25,11 @@ func xpc_array_get_value(_ xarray: xpc_object_t, _ index: Int) -> xpc_object_t
 extern xpc_object_txpc_array_get_value(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The object at the specified index within the array.
 
-#### Discussion
+## Discussion
 
 This method does not grant the caller a reference to the underlying object, and thus the caller is not responsible for releasing the object.
 

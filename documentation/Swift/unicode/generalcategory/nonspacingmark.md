@@ -21,7 +21,7 @@ A non-spacing combining mark with zero advance width (abbreviated Mn).
 case nonspacingMark
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Nonspacing_Mark` (abbreviated `Mn`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

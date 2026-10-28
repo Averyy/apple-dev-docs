@@ -19,11 +19,11 @@ func PMPrinterIsPostScriptPrinter(_ printer: PMPrinter, _ isPSPrinter: UnsafeMut
 OSStatus PMPrinterIsPostScriptPrinter(PMPrinter printer, Boolean *isPSPrinter);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 A printer is a PostScript printer if the printer driver takes PostScript directly.
 

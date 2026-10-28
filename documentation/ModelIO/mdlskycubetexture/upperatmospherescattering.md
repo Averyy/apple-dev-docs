@@ -24,7 +24,7 @@ var upperAtmosphereScattering: Float { get set }
 @property (nonatomic, assign) float upperAtmosphereScattering;
 ```
 
-#### Discussion
+## Discussion
 
 This value affects the intensity of sunlight and the color of the sky. A value of `0.0` produces muted, dusky colors, and a value of 1.0 produces saturated, noon-like sky colors.
 

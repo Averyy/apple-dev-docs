@@ -25,7 +25,7 @@ func nw_error_copy_cf_error(_ error: nw_error_t) -> Unmanaged<CFError>
 CFErrorRefnw_error_copy_cf_error(nw_error_t error);
 ```
 
-#### Discussion
+## Discussion
 
 The function copies the network error’s information to a [`CFError`](../CoreFoundation/cferror.md) instance.
 

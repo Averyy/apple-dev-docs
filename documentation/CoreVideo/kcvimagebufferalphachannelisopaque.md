@@ -25,7 +25,7 @@ let kCVImageBufferAlphaChannelIsOpaque: CFString
 extern CFStringRef const kCVImageBufferAlphaChannelIsOpaque;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to indicate that the alpha channel is fully opaque. This key isn’t used if the pixel format type has no alpha channel.
 

@@ -17,7 +17,7 @@ case cwInvalidPairwiseCipherErr
 kCWInvalidPairwiseCipherErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid pairwise cipher requested.
 

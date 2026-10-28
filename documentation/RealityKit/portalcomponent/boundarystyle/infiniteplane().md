@@ -20,7 +20,7 @@ Returns a boundary style that uses an infinite plane.
 static func infinitePlane() -> PortalComponent.BoundaryStyle
 ```
 
-#### Discussion
+## Discussion
 
 The boundary is the entity’s local XY plane. RealityKit clips portal world content behind the surface and lets crossing entities pass through it freely.
 

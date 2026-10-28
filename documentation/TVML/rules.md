@@ -4,7 +4,7 @@
 
 Contains the elements used in data binding and media queries.
 
-#### Overview
+## Overview
 
 The `rules` element contains a set of `specialize` elements that are used to modify existing elements. The `specialize` elements use data queries to determine how the existing element is modified. Here’s an example that sets the rules for a `button` element.
 
@@ -23,11 +23,11 @@ The `rules` element contains a set of `specialize` elements that are used to mod
 </rules>
 ```
 
-##### Subelements of rules
+### Subelements of rules
 
 - [specialize](./specialize.md)
 
-##### Elements that Use rules
+### Elements that Use rules
 
 The `rules` element can used by any other element.
 

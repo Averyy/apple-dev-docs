@@ -10,7 +10,7 @@ An atom that gives information about the characteristics of sample groups.
 
 - [Representing encoder delay explicitly](./example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Sample group description atoms give information about the characteristics of sample groups. The sample group description atom has an atom type of `‘sgpd’`.
 

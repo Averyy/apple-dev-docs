@@ -21,7 +21,7 @@ Get the underlying buffer pointer to read.
 - (void) getBytesWithHandler:(void (^)(const void *bytes, NSInteger size)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` values, depending on the multiarray’s data type. It may not store these scalar values contiguously; use [`strides`](./strides.md) to get the buffer layout.
 

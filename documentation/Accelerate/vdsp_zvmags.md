@@ -21,7 +21,7 @@ Computes the squared magnitude value of each element in the supplied complex sin
 extern void vDSP_zvmags(const DSPSplitComplex *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates the squared magnitudes of complex vector `A`, leaving the result in `C`:
 

@@ -24,7 +24,7 @@ Accesses the raw bytes in the data’s buffer.
 func withUnsafeBytes<ResultType, ContentType>(_ body: (UnsafePointer<ContentType>) throws -> ResultType) rethrows -> ResultType
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  The byte pointer argument should not be stored and used outside of the lifetime of the call to the closure.
 

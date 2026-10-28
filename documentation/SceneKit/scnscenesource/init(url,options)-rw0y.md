@@ -25,11 +25,11 @@ init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]? = nil)
 - (instancetype) initWithURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized scene source object, or `nil` if initialization was not successful.
 
-#### Discussion
+## Discussion
 
 If you have the contents of a scene file but not the file itself (for example, if your app downloads scene files from the network), use the [`init(data:options:)`](./init%28data,options%29.md) method instead.
 

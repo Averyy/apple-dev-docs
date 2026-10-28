@@ -20,7 +20,7 @@ func setPreferredOutput(_ outPort: AVAudioSessionPortDescription?) throws
 - (BOOL) setPreferredOutput:(AVAudioSessionPortDescription *) outPort error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` to clear the current preference and return to the system’s default output routing.
 

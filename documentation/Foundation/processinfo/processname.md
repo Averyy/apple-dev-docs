@@ -25,7 +25,7 @@ var processName: String { get set }
 @property (copy) NSString * processName;
 ```
 
-#### Discussion
+## Discussion
 
 The process name is used to register application defaults and is used in error messages. It does not uniquely identify the process.
 

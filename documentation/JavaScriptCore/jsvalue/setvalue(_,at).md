@@ -24,7 +24,7 @@ func setValue(_ value: Any!, at index: Int)
 - (void) setValue:(id) value atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the subscript operator with a numeric subscript in JavaScript. Use it to access elements of JavaScript arrays or of objects with numerically-indexed properties.
 

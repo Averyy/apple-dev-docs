@@ -22,7 +22,7 @@ var supportsAdvisoryKeys: Bool { get set }
 @property (readwrite) BOOL supportsAdvisoryKeys;
 ```
 
-#### Discussion
+## Discussion
 
 Set to true to enable advisory key loading. False by default. Note that this is a one-way operation—once set to true, this property cannot be set back to false.
 

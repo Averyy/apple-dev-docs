@@ -23,7 +23,7 @@ static var debugLayers: MLCGraphCompilationOptions { get }
 MLCGraphCompilationOptionsDebugLayers
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to disable various optimizations such as layer fusion, and ensure the framework synchronizes the resulting forward and gradients tensors host memory with device memory, for layers marked as debuggable.
 

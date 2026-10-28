@@ -16,7 +16,7 @@ Creates a preview of a SwiftUI view using the specified traits and custom viewpo
 init(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera])
 ```
 
-#### Discussion
+## Discussion
 
 Preview macros expand into a declaration that calls this initializer. Don’t use this initializer directly. Instead use one of the macros, like [`Preview(_:traits:body:cameras:)`](../../SwiftUI/preview%28_,traits,body,cameras%29.md).
 

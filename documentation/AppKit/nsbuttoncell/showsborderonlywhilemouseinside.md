@@ -19,7 +19,7 @@ var showsBorderOnlyWhileMouseInside: Bool { get set }
 @property BOOL showsBorderOnlyWhileMouseInside;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) if the button’s border is displayed only when the pointer is over the button and the button is active. When it is [`false`](../../Swift/false.md), the border continues to display when the pointer is outside of the button’s bounds.
 

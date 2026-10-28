@@ -19,7 +19,7 @@ var depth: NSWindow.Depth { get }
 @property (readonly) NSWindowDepth depth;
 ```
 
-#### Discussion
+## Discussion
 
 This value cannot be used directly. You must pass it to a function such as [`bitsPerPixel`](../nswindow/depth/bitsperpixel.md) or [`colorSpaceName`](../nswindow/depth/colorspacename.md) to obtain a concrete value for the desired information.
 

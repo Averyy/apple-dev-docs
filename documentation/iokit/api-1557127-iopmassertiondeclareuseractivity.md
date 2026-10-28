@@ -16,11 +16,11 @@ Declares that the user is active on the system. This causes the display to power
 IOReturn IOPMAssertionDeclareUserActivity(CFStringRef AssertionName, IOPMUserActiveType userType, IOPMAssertionID *AssertionID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, any other return indicates PM could not successfully activate the specified assertion.
 
-#### Discussion
+## Discussion
 
 No special privileges are necessary to make this call - any process may call this API. Caller must specify an AssertionName - NULL is not a valid input.
 

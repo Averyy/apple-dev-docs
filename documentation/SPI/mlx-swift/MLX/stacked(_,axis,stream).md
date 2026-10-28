@@ -21,7 +21,7 @@ func stacked(_ arrays: some Collection<MLXArray>, axis: Int = 0, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

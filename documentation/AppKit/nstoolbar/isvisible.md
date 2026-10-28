@@ -22,7 +22,7 @@ var isVisible: Bool { get set }
 @property (getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the toolbar is visible; otherwise, it’s [`false`](../../Swift/false.md). Change the value to hide or show the toolbar.
 

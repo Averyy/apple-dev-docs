@@ -24,7 +24,7 @@ static let ciContext: VNImageOption
 extern VNImageOption const VNImageOptionCIContext;
 ```
 
-#### Discussion
+## Discussion
 
 If this key isn’t specified, Vision will create its own [`CIContext`](../../CoreImage/cicontext.md).
 

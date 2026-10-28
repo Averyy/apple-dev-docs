@@ -19,11 +19,11 @@ init?(protocolFamily family: Int32, socketType type: Int32, protocol: Int32, add
 - (instancetype) initWithProtocolFamily:(int) family socketType:(int) type protocol:(int) protocol address:(NSData *) address;
 ```
 
-#### Return Value
+## Return Value
 
 A local socket port initialized with the provided arguments.
 
-#### Discussion
+## Discussion
 
 The receiver must be added to a run loop before it can accept connections or receive messages. Incoming messages are passed to the receiver’s delegate method handlePortMessage:.
 

@@ -16,7 +16,7 @@ typealias Handler = @Sendable (Any, [AnyHashable : Any]) -> Bool
 typedef _Bool (^)(id, NSDictionary *) XCKeyValueObservingExpectationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 Your custom handler returns [`true`](../../Swift/true.md) if the system fulfills the expectation after the observed change; otherwise, [`false`](../../Swift/false.md).
 

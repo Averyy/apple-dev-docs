@@ -19,7 +19,7 @@ class WebBackForwardList
 @interface WebBackForwardList : NSObject
 ```
 
-#### Overview
+## Overview
 
 Items are typically inserted in a back-forward list in the order they are visited. A `WebBackForwardList` object also maintains the notion of the current item (which is always at index `0`), the preceding item (which is at index `-1`), and the following item (which is at index `1`). The [`goBack()`](./webbackforwardlist/goback%28%29.md) and [`goForward()`](./webbackforwardlist/goforward%28%29.md) methods move the current item backward or forward by one. The [`go(to:)`](./webbackforwardlist/go%28to%29.md) method sets the current item to the specified item. All other methods that return [`WebHistoryItem`](./webhistoryitem.md) objects do not change the value of the current item, they just return the requested item or items. You can also limit the number of history items stored in the back-forward list using [`capacity`](./webbackforwardlist/capacity.md).
 

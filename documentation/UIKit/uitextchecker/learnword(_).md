@@ -23,7 +23,7 @@ class func learnWord(_ word: String)
 + (void) learnWord:(NSString *) word;
 ```
 
-#### Discussion
+## Discussion
 
 When a `UITextChecker` object learns a word, it is added to the dictionary. It is global across languages.
 

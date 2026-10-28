@@ -21,11 +21,11 @@ Removes and returns the last element of the array, if there is one.
 mutating func popLast() -> Element?
 ```
 
-#### Return Value
+## Return Value
 
 The last element of the array if the array is not empty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

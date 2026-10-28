@@ -15,7 +15,7 @@
 - (instancetype) initWithDelegate:(id<NFCReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A new NFCISO15693ReaderSession instance.
 

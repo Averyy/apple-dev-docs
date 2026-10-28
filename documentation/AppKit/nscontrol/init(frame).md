@@ -19,11 +19,11 @@ init(frame frameRect: NSRect)
 - (instancetype) initWithFrame:(NSRect) frameRect;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized control object, or `nil` if the object couldn’t be initialized.
 
-#### Discussion
+## Discussion
 
 If a cell has been specified for controls of this type, this method also creates an instance of the cell. Because `NSControl` is an abstract class, invocations of this method should appear only in the designated initializers of subclasses; that is, there should always be a more specific designated initializer for the subclass, as this method is the designated initializer for `NSControl`.
 

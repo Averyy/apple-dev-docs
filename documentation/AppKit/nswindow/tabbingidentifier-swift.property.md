@@ -19,7 +19,7 @@ var tabbingIdentifier: NSWindow.TabbingIdentifier { get set }
 @property (copy) NSWindowTabbingIdentifier tabbingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a window generates a tabbing identifier from inherent window properties, such as the window class name, the delegate class name, the window controller class name, and some additional state. Group windows together by using the same tabbing identifier.
 

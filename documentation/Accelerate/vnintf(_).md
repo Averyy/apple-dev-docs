@@ -25,11 +25,11 @@ func vnintf(_: vFloat) -> vFloat
 extern vFloat vnintf(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector of floating-point values, each of which is the result of rounding the corresponding value in `A` to the nearest integer, with ties rounded to the nearest even integer.
 
-##### Parameters:
+### Parameters:
 
 - **A**: The input vector.
 

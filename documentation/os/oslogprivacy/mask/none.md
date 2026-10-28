@@ -21,7 +21,7 @@ An option to replace a redacted value with a generic string.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when you don’t want to correlate log messages with identical redacted values.
 

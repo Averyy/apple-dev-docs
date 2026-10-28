@@ -24,11 +24,11 @@ convenience init(type: HKCategoryType, value: Int, start startDate: Date, end en
 + (instancetype) categorySampleWithType:(HKCategoryType *) type value:(NSInteger) value startDate:(NSDate *) startDate endDate:(NSDate *) endDate metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 A valid category sample with metadata.
 
-#### Discussion
+## Discussion
 
 HealthKit uses category samples to represent data that can be classified into a finite set of categories. To create a category sample, you must first create the corresponding category type and then set its start date, end date, and metadata, as shown below.
 

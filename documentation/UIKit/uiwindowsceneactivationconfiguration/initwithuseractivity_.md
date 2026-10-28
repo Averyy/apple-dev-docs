@@ -18,7 +18,7 @@ Creates an activation configuration.
 - (instancetype) initWithUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized activation configuration object.
 

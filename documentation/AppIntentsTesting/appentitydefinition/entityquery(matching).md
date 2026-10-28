@@ -21,7 +21,7 @@ Creates an entity query that searches for entities that match a given string.
 func entityQuery(matching string: String) -> AnyEntityQuery
 ```
 
-#### Return Value
+## Return Value
 
 An entity query, configured for string-based searching.
 

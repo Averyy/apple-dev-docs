@@ -21,7 +21,7 @@ The feature isn’t supported, because the file system lacks the feature, or req
 NSFeatureUnsupportedError
 ```
 
-#### Discussion
+## Discussion
 
 For example, some volumes may not support a Trash folder, so these methods will report failure by returning [`false`](../Swift/false.md) or `nil` and an [`NSError`](./nserror.md) with [`NSFeatureUnsupportedError`](./nsfeatureunsupportederror-swift.var.md).
 

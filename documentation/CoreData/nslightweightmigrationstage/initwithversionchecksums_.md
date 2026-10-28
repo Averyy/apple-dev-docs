@@ -21,11 +21,11 @@ Creates a lightweight migration stage with the specified version checksums.
 - (instancetype) initWithVersionChecksums:(NSArray<NSString *> *) versionChecksums;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized lightweight migration manager, or `nil` if Core Data can’t create one.
 
-#### Discussion
+## Discussion
 
 To determine an object model’s version checksum, use its [`versionChecksum`](../nsmanagedobjectmodel/versionchecksum.md) property. Alternatively, you can find the checksum in the versioned model’s `VersionInfo.plist` file or in Xcode’s build log.
 

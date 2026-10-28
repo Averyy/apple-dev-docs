@@ -25,11 +25,11 @@ func protocol_conformsToProtocol(_ proto: Protocol?, _ other: Protocol?) -> Bool
 extern BOOL protocol_conformsToProtocol(Protocol *proto, Protocol *other);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if `proto` conforms to `other`, otherwise [`NO`](./no.md).
 
-#### Discussion
+## Discussion
 
 One protocol can incorporate other protocols using the same syntax that classes use to adopt a protocol:
 

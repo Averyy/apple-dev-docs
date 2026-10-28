@@ -20,7 +20,7 @@ Returns the property with a given name on this prim.
 func property(named name: USDToken) -> USDPrim.Property
 ```
 
-#### Discussion
+## Discussion
 
 If no property named `name` exists on this prim, returns an invalid property handle.
 

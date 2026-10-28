@@ -24,11 +24,11 @@ Asynchronously fetches a config value for the given config key, converting from 
 func fetchInt<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> Value? where Value : ExpressibleByConfigInt
 ```
 
-#### Return Value
+## Return Value
 
 The value converted to the expected type if found and convertible, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve integer-convertible configuration values from async providers. If the value doesn’t exist, the method returns `nil`.
 

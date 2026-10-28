@@ -5,7 +5,7 @@
 
 Configure your CarPlay-enabled app with the entitlements it requires.
 
-#### Overview
+## Overview
 
 To integrate with CarPlay, you must request the appropriate entitlement for your app’s category at [CarPlay Contact Us](https://developer.apple.com/contact/carplay) and agree to the CarPlay Entitlement Addendum. Apple reviews each application using predefined criteria. If your request meets the criteria, Apple adds the entitlement to your developer account using managed capabilities. For more information, see [Provisioning with managed capabilities](https://help.apple.com/developer-account/#/dev38c81d4cd).
 
@@ -13,7 +13,7 @@ After you receive the entitlement, you need to configure your Xcode project to u
 
 > **Note**:  CarPlay-enabled apps are subject to an additional set of App Store Review guidelines. For more information, see the [CarPlay App Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf).
 
-##### Add CarPlay Capabilities to Your App ID
+### Add CarPlay Capabilities to Your App ID
 
 Update the App ID of your CarPlay-enabled app to include the necessary CarPlay capabilities by following these steps:
 
@@ -28,7 +28,7 @@ Update the App ID of your CarPlay-enabled app to include the necessary CarPlay c
 
 ![A screenshot showing the Edit your App ID Configuration page in the developer portal. The Additional Capabilities tab is in a selected state and lists the available CarPlay capabilities. The CarPlay Audio App (CarPlay framework) capability is in an enabled state.](https://developer.apple.com/tutorials/images/com.apple.carplay/media-3703055@2x.png)
 
-##### Import the CarPlay Provisioning Profile
+### Import the CarPlay Provisioning Profile
 
 Configure your Xcode project to use the new provisioning profile when it code signs your CarPlay-enabled app by following these steps:
 
@@ -38,7 +38,7 @@ Configure your Xcode project to use the new provisioning profile when it code si
 4. Click the Provisioning Profile pop-up menu and choose Download Profile.
 5. Select your CarPlay provisioning profile from the left column and click Select Profile.
 
-##### Add an Entitlements File
+### Add an Entitlements File
 
 Use an `Entitlements.plist` file to specify the entitlements that your CarPlay-enabled app requires. They must match the capabilities you add to your App ID. CarPlay uses this file to determine the framework functionality to allow.
 
@@ -69,7 +69,7 @@ The following example shows the contents of a CarPlay-enabled app’s `Entitleme
 <true/>
 ```
 
-##### Test Your Configuration
+### Test Your Configuration
 
 In Xcode, use a simulator to build and run your project. After Simulator launches, choose I/O > External Displays > CarPlay. Your app appears on the CarPlay Home screen.
 

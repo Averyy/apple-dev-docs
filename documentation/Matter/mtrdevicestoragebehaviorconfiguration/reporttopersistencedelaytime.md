@@ -25,7 +25,7 @@ var reportToPersistenceDelayTime: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval reportToPersistenceDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 reportToPersistenceDelayTimeDefault (15) reportToPersistenceDelayTimeMaxDefault (20 * 15) recentReportTimesMaxCountDefault (12) timeBetweenReportsTooShortThresholdDefault (15) timeBetweenReportsTooShortMinThresholdDefault (5) reportToPersistenceDelayMaxMultiplierDefault (10) deviceReportingExcessivelyIntervalThresholdDefault (5 * 60)
 

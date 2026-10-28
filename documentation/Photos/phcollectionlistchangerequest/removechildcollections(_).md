@@ -24,7 +24,7 @@ func removeChildCollections(_ collections: any NSFastEnumeration)
 - (void) removeChildCollections:(id<NSFastEnumeration>) collections;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes child collections from the collection list based on their identity (determined by the [`localIdentifier`](../phobject/localidentifier.md) property of each collection). To remove objects at specified indexes, use the [`removeChildCollections(at:)`](./removechildcollections%28at%29.md) method.
 

@@ -20,7 +20,7 @@ Assigns multiple textures to a range of entries in the object shader argument ta
 func setObjectTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

@@ -21,7 +21,7 @@ object Condition
 
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 The `Condition` object functionality is similar to the `WHERE` clause in SQL.
 

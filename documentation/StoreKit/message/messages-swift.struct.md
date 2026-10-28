@@ -18,7 +18,7 @@ An asynchronous sequence of messages from the App Store.
 struct Messages
 ```
 
-#### Overview
+## Overview
 
 The `Message.Messages` structure provides a sequence of messages that the App Store sends to your app. Iterate over the contents of this structure asynchronously to retrieve each message if your app needs to delay the message.
 

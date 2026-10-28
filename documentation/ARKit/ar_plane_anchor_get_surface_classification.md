@@ -15,7 +15,7 @@ Get the surface classification of a plane anchor.
 extern ar_surface_classification_t ar_plane_anchor_get_surface_classification(ar_plane_anchor_t plane_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The plane anchor’s surface classification.
 

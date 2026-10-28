@@ -17,7 +17,7 @@
 var kNanosecondScale: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for nanosecond based times.
 

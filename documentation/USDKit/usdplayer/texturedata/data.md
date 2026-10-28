@@ -20,7 +20,7 @@ Packed texture data.
 let data: Data
 ```
 
-#### Discussion
+## Discussion
 
 Use [`layout`](./layout.md) to locate each mip level.
 

@@ -28,7 +28,7 @@ optional func resolveResumePlayback(for intent: INPlayMediaIntent) async -> INBo
 - (void) resolveResumePlaybackForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether to resume playback for the media.
 

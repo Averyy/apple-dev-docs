@@ -22,11 +22,11 @@ func namesOfPromisedFilesDropped(atDestination dropDestination: URL) -> [String]
 - (NSArray<NSString *> *) namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropDestination;
 ```
 
-#### Return Value
+## Return Value
 
 An array of file names, which are not full paths.
 
-#### Discussion
+## Discussion
 
 Drag destinations should invoke this method within their performDragOperation: method. The source may or may not have created the files by the time this method returns.
 

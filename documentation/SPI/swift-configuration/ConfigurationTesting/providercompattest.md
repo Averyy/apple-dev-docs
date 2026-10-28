@@ -24,11 +24,11 @@ A comprehensive test suite for validating `ConfigProvider` implementations.
 struct ProviderCompatTest
 ```
 
-#### Overview
+## Overview
 
 This test suite verifies that configuration providers correctly implement all required functionality including synchronous and asynchronous value retrieval, snapshot operations, and value watching capabilities.
 
-#### Usage
+## Usage
 
 Create a test instance with your provider and run the compatibility tests:
 
@@ -38,7 +38,7 @@ let test = ProviderCompatTest(provider: provider)
 try await test.runTest()
 ```
 
-#### Required Test Data
+## Required Test Data
 
 The provider under test must be populated with specific test values to ensure comprehensive validation. The required configuration data includes:
 

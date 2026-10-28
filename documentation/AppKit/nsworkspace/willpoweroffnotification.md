@@ -19,7 +19,7 @@ class let willPowerOffNotification: NSNotification.Name
 extern NSNotificationName const NSWorkspaceWillPowerOffNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared `NSWorkspace` instance. This notification doesn’t contain a `userInfo` dictionary.
 

@@ -22,7 +22,7 @@ var frames: [Double] { get set }
 
 Available when `Value` is `Double`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of `Double` values.
 

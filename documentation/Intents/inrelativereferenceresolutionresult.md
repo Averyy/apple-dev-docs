@@ -24,7 +24,7 @@ class INRelativeReferenceResolutionResult
 @interface INRelativeReferenceResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INRelativeReferenceResolutionResult`](./inrelativereferenceresolutionresult.md) object is what you return when resolving parameters containing a [`INRelativeReference`](./inrelativereference.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

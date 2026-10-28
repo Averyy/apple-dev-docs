@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_DirectAccessSBCDevice = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 SBC Device.
 

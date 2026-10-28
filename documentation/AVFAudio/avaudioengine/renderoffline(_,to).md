@@ -25,7 +25,7 @@ func renderOffline(_ numberOfFrames: AVAudioFrameCount, to buffer: AVAudioPCMBuf
 - (AVAudioEngineManualRenderingStatus) renderOffline:(AVAudioFrameCount) numberOfFrames toBuffer:(AVAudioPCMBuffer *) buffer error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 One of the status codes from [`AVAudioEngineManualRenderingStatus`](../avaudioenginemanualrenderingstatus.md). Irrespective of the returned status code, on exit, the output buffer’s [`frameLength`](../avaudiopcmbuffer/framelength.md) indicates the number of PCM samples the engine renders.
 

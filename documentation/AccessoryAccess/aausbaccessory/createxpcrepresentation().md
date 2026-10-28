@@ -19,7 +19,7 @@ func createXPCRepresentation() -> xpc_object_t
 - (xpc_object_t) createXPCRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 A USB accessory can be encoded to [`xpc_object_t`](../../XPC/xpc_object_t.md), and passed to an XPC service over an XPC connection.
 

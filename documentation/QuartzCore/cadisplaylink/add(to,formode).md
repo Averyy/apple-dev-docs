@@ -24,7 +24,7 @@ func add(to runloop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) addToRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can associate a display link with multiple input modes. While the run loop is executing in a mode you specify, the display link notifies the target when the system requires new frames.
 

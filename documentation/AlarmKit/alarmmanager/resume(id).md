@@ -17,7 +17,7 @@ Resumes the alarm with the specified ID if it’s in the paused state.
 func resume(id: Alarm.ID) throws
 ```
 
-#### Discussion
+## Discussion
 
 The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.Countdown`](../alarmpresentationstate/mode-swift.enum/countdown.md) state.
 

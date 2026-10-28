@@ -16,7 +16,7 @@ CFDictionary key for the current power source's maximum or "Full Charge Capacity
 #define kIOPSMaxCapacityKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key in units of percent. The value is usually 100%.
 - The power source's software may specify the units for this key. The units must be consistent for all capacities reported by this power source.

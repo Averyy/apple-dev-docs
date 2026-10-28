@@ -19,11 +19,11 @@ Returns a descriptor for the specified function.
 func functionDescriptor(for functionName: String) -> InferenceFunctionDescriptor?
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor for the function, or `nil` if the model doesn’t contain a function with the specified name.
 
-#### Discussion
+## Discussion
 
 Use the descriptor to inspect the function’s inputs, outputs, and state names before loading it for inference.
 

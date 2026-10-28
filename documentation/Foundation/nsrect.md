@@ -20,7 +20,7 @@ typealias NSRect = CGRect
 typedef CGRect NSRect;
 ```
 
-#### Discussion
+## Discussion
 
 When building for 64 bit systems, or building 32 bit like 64 bit, `NSRect` is typedef’d to `CGRect`.
 

@@ -5,13 +5,13 @@
 
 Define a custom representation for your data using a combination of built-in types.
 
-#### Overview
+## Overview
 
 When you enable types in your app to participate in system interactions like sharing or drag and drop, you get to decide how — and if — you expose your app’s model data to other apps. You can also control how different parts of your own app respond to receiving your models in different contexts.
 
 Core Transferable defines a set of transfer representations and modifiers that you can combine together in different ways to get the behavior that’s right for the different data transfer and sharing scenarios your app supports. For each of your app’s model types that participate in sharing and data transfer, pick the built-in transfer representations to represent your model’s data, or define your own. Then, determine whether your app allows people to share or receive the model’s data, or both.
 
-##### Compose transfer representations
+### Compose transfer representations
 
 Core Transferable defines three main transfer representations: [`DataRepresentation`](./datarepresentation.md), [`FileRepresentation`](./filerepresentation.md), and [`CodableRepresentation`](./codablerepresentation.md). Use [`DataRepresentation`](./datarepresentation.md) for model types where the entire model is stored in memory, and use [`FileRepresentation`](./filerepresentation.md) for types stored on disk.
 
@@ -39,7 +39,7 @@ extension UTType {
 
 The order of the transfer representations in the [`transferRepresentation`](./transferable/transferrepresentation.md) builder matters: the most preferable representation comes first, followed by the less preferable — but more compatible — representations.
 
-##### Configure your model type for import or export
+### Configure your model type for import or export
 
 You can limit a transfer representation to support only importing, only exporting, or the representation can support both. Imports occur when your app is the recipient of an item from sharing, the *drop* of a drag-and-drop interaction, or the *paste* from a copy-and-paste interaction. Conversely, exports occur when people share, copy, or drag an item out of your app. For example, your vector image editing app might support exporting, but choose not to import PNG images.
 

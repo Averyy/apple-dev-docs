@@ -20,7 +20,7 @@ Creates a new custom matrix camera component with the given settings.
 init(projectionMatrix: float4x4)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix uses reverse depth.
 

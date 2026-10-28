@@ -20,7 +20,7 @@ case custom
 CMIOExtensionStreamClockTypeCustom
 ```
 
-#### Discussion
+## Discussion
 
 The extension doesn’t set this type directly. Instead, the system sets it automatically when you specify a [`CMIOExtensionStreamCustomClockConfiguration`](../../cmioextensionstreamcustomclockconfiguration.md) when you create a [`CMIOExtensionStream`](../../cmioextensionstream.md).
 

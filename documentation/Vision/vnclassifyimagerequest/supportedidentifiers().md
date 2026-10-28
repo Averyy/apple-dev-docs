@@ -24,7 +24,7 @@ func supportedIdentifiers() throws -> [String]
 - (NSArray<NSString *> *) supportedIdentifiersAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported identifiers.
 

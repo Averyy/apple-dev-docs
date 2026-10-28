@@ -25,11 +25,11 @@ func CFReadStreamOpen(_ stream: CFReadStream!) -> Bool
 extern Boolean CFReadStreamOpen(CFReadStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `stream` was successfully opened, `FALSE` otherwise. If `stream` is not in the [`CFStreamStatus.notOpen`](./cfstreamstatus/notopen.md) state, this function returns `FALSE`.
 
-#### Discussion
+## Discussion
 
 Opening a stream causes it to reserve all the system resources it requires. If the stream can open in the background without blocking, this function always returns `true`. To learn when a background open operation completes, you can either schedule the stream into a run loop with [`CFReadStreamScheduleWithRunLoop(_:_:_:)`](./cfreadstreamschedulewithrunloop%28_,_,_%29.md) and wait for the stream’s client (set with [`CFReadStreamSetClient(_:_:_:_:)`](./cfreadstreamsetclient%28_,_,_,_%29.md)) to be notified or you can poll the stream using [`CFReadStreamGetStatus(_:)`](./cfreadstreamgetstatus%28_%29.md), waiting for a status of [`CFStreamStatus.open`](./cfstreamstatus/open.md) or [`CFStreamStatus.error`](./cfstreamstatus/error.md).
 

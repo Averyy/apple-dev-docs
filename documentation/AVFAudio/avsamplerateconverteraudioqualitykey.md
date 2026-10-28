@@ -25,7 +25,7 @@ let AVSampleRateConverterAudioQualityKey: String
 extern NSString * const AVSampleRateConverterAudioQualityKey;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about audio quality, see [`AVAudioQuality`](./avaudioquality.md).
 

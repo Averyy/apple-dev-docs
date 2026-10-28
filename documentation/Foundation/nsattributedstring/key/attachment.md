@@ -21,7 +21,7 @@ The attachment for the text.
 static let attachment: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSTextAttachment`](../../../AppKit/nstextattachment.md) object. The default value of this property is `nil`, indicating no attachment.
 

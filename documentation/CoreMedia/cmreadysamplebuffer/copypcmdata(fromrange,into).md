@@ -23,7 +23,7 @@ func copyPCMData(fromRange range: Range<Int>, into bufferList: UnsafeMutablePoin
 
 Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
-#### Discussion
+## Discussion
 
 The `AudioBufferList` must contain the same number of channels and its data buffers must be sized to hold the specified number of frames.
 

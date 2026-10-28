@@ -19,7 +19,7 @@ func SCNetworkServiceSetEnabled(_ service: SCNetworkService, _ enabled: Bool) ->
 Boolean SCNetworkServiceSetEnabled(SCNetworkServiceRef service, Boolean enabled);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the enabled status was saved; `FALSE` if an error occurred.
 

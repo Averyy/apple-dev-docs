@@ -19,7 +19,7 @@ static var withSecurityScope: NSURL.BookmarkCreationOptions { get }
 NSURLBookmarkCreationWithSecurityScope
 ```
 
-#### Discussion
+## Discussion
 
 For use in an app that adopts App Sandbox. For more information, see [App Sandbox Design Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html#//apple_ref/doc/uid/TP40011183).
 

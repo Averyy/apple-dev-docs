@@ -24,7 +24,7 @@ var isOpen: Bool { get set }
 @property (nonatomic) BOOL isOpen;
 ```
 
-#### Discussion
+## Discussion
 
 Calling `isOpen` on an outline object that has no children always returns [`false`](../../Swift/false.md). Calling `isOpen` on the root outline object always returns [`true`](../../Swift/true.md).
 

@@ -23,11 +23,11 @@ func stringByEvaluatingJavaScript(from script: String) -> String?
 - (NSString *) stringByEvaluatingJavaScriptFromString:(NSString *) script;
 ```
 
-#### Return Value
+## Return Value
 
 The result of running the JavaScript script passed in the `script` parameter, or `nil` if the script fails.
 
-#### Discussion
+## Discussion
 
 New apps should instead use the [`evaluateJavaScript(_:completionHandler:)`](../../WebKit/wkwebview/evaluatejavascript%28_,completionhandler%29.md) method from the [`WKWebView`](../../WebKit/wkwebview.md) class. Legacy apps should adopt that method if possible.
 

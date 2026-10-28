@@ -23,7 +23,7 @@ func textStyling(at position: UITextPosition, in direction: UITextStorageDirecti
 - (NSDictionary<NSString *,id> *) textStylingAtPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
 ```
 
-#### Discussion
+## Discussion
 
 The returned strings might pertain to text styling information for a correction rectangle, for example.
 

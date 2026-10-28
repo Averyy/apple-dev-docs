@@ -22,7 +22,7 @@ init(layoutManager: NSLayoutManager, range: NSRange, unifyRects: Bool)
 - (instancetype) initWithLayoutManager:(NSLayoutManager *) layoutManager range:(NSRange) range unifyRects:(BOOL) unifyRects;
 ```
 
-#### Return Value
+## Return Value
 
 A renderer of a text drag preview using the specified layout manager, range, and detection behavior.
 

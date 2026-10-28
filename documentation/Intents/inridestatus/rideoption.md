@@ -36,7 +36,7 @@ var rideOption: INRideOption? { get set }
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 Use this property to identify the type of ride that the user selected. An [`INRideOption`](../inrideoption.md) object contains pricing information, disclaimers, and information about the number of people that the ride can accommodate. Siri and Maps display this information to the user as needed.
 

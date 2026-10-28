@@ -12,7 +12,7 @@ Share and read heartbeat and quantity series data using series builders and quer
 - Mac Catalyst 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [218: Exploring New Data Representations in HealthKit](https://developer.apple.com/wwdc19/218).
 

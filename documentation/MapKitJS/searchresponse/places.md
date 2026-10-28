@@ -15,7 +15,7 @@ A list of places that match the search query.
 places: Place[];
 ```
 
-#### Discussion
+## Discussion
 
 The [`places`](./places.md) array is empty if there is no match.
 

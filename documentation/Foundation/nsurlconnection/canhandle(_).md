@@ -25,11 +25,11 @@ class func canHandle(_ request: URLRequest) -> Bool
 + (BOOL) canHandleRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a preflight operation determines that a connection with `request` can be created and the associated I/O can be started, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The result of this method is valid as long as no [`URLProtocol`](../urlprotocol.md) classes are registered or unregistered, and `request` remains unchanged. Applications should be prepared to handle failures even if they have performed request preflighting by calling this method.
 

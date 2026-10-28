@@ -25,7 +25,7 @@ var fileDescriptor: Int32 { get }
 @property (readonly) int fileDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to retrieve the file descriptor while it is open. If the file handle object owns the file descriptor, you must not close it yourself. However, you can use the [`closeFile()`](./closefile%28%29.md) method to close the file descriptor programmatically. If you do call the [`closeFile()`](./closefile%28%29.md) method, subsequent calls to this method raise an exception.
 

@@ -25,7 +25,7 @@ class NSDateInterval
 @interface NSDateInterval : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`DateInterval`](./dateinterval.md); use [`NSDateInterval`](./nsdateinterval.md) when you need reference semantics or other Foundation-specific behavior.
 

@@ -24,7 +24,7 @@ var semanticSegmentationSkinMatte: CIImage? { get }
 @property (readonly, nullable) CIImage * semanticSegmentationSkinMatte;
 ```
 
-#### Discussion
+## Discussion
 
 This matting image segments skin from all people in the visible field of view of the image.
 

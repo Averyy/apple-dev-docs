@@ -17,7 +17,7 @@ Public interface for all Optimizer types.
 protocol Optimizer : Evaluatable, Updatable
 ```
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 - [`OptimizerBase`](./optimizerbase.md)

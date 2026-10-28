@@ -17,7 +17,7 @@ A request for the accessory to scan for available Wi-Fi networks.
 struct AccessoryScanRequest
 ```
 
-#### Overview
+## Overview
 
 An `AccessoryScanRequest` represents a system request for your accessory to perform a Wi-Fi scan and report discovered networks.
 

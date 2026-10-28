@@ -20,7 +20,7 @@ enum CGEventSourceStateID
 enum CGEventSourceStateID : int32_t;
 ```
 
-#### Overview
+## Overview
 
 A source state refers to a global event state table. These tables contain accumulated information on modifier flag state, keyboard key state, mouse button state, and related internal parameters placed in effect by posting events with associated sources.
 

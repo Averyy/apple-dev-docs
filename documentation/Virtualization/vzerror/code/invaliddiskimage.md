@@ -19,7 +19,7 @@ case invalidDiskImage
 VZErrorInvalidDiskImage
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you supply a disk image in an unrecognized format, when there’s damage to the disk image, or the disk image is invalid.
 

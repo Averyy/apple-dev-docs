@@ -21,11 +21,11 @@ Sets the blend mode for compositing this view with overlapping views.
 func blendMode(_ blendMode: BlendMode) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that applies `blendMode` to this view.
 
-#### Discussion
+## Discussion
 
 Use `blendMode(_:)` to combine overlapping views and use a different visual effect to produce the result. The [`BlendMode`](../blendmode.md) enumeration defines many possible effects.
 

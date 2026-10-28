@@ -24,11 +24,11 @@ func mapRect(for rect: CGRect) -> MKMapRect
 - (MKMapRect) mapRectForRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle on the two-dimensional map projection corresponding to the specified rectangle.
 
-#### Discussion
+## Discussion
 
 You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 

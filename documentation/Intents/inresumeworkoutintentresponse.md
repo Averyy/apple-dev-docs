@@ -23,7 +23,7 @@ class INResumeWorkoutIntentResponse
 @interface INResumeWorkoutIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INResumeWorkoutIntentResponse`](./inresumeworkoutintentresponse.md) object to specify whether your app is able to resume a workout. The response object contains only the status code that indicates whether to launch your app or whether there was a problem.
 

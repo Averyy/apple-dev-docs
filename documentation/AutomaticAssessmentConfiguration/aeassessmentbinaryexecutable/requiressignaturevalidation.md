@@ -20,7 +20,7 @@ var requiresSignatureValidation: Bool { get set }
 @property (nonatomic, assign) BOOL requiresSignatureValidation;
 ```
 
-#### Discussion
+## Discussion
 
 Disabling this waives only the availability check, not the signing requirement of [`allowsOnlyParticipantsToRun`](../aeassessmentconfiguration/allowsonlyparticipantstorun.md): an unsigned or invalidly signed executable still can’t be added to that session’s launch allowlist. Disabling it converts a required participant’s begin-time failure into a silent launch denial, and forgoes the swap/re-sign protection for a signed one.
 

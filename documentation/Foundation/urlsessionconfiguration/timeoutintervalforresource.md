@@ -25,7 +25,7 @@ var timeoutIntervalForResource: TimeInterval { get set }
 @property NSTimeInterval timeoutIntervalForResource;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the resource timeout interval for all tasks within sessions based on this configuration. The resource timeout interval controls how long (in seconds) to wait for an entire resource to transfer before giving up. The resource timer starts when the request is initiated and counts until either the request completes or this timeout interval is reached, whichever comes first.
 

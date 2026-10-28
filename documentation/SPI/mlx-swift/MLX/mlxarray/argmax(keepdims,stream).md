@@ -17,7 +17,7 @@ Indices of the maximum value over the entire array.
 func argMax(keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(4 ..< 16, [4, 3])
@@ -26,7 +26,7 @@ let array = MLXArray(4 ..< 16, [4, 3])
 let i = array.argMax()
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](../indexes.md)
 - [`argMax(axis:keepDims:stream:)`](./argmax%28axis,keepdims,stream%29.md)

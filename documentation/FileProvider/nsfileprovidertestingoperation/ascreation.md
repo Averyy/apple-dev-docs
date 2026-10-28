@@ -18,7 +18,7 @@ Returns the operation if it propagates the creation of an item.
 - (id<NSFileProviderTestingCreation>) asCreation;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingCreation`](../nsfileprovidertestingcreation.md) protocol, this method returns `nil`.
 

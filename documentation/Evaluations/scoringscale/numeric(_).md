@@ -21,7 +21,7 @@ Creates a scoring scale from a numeric dictionary.
 static func numeric(_ scale: [Double : String]) -> ScoringScale
 ```
 
-#### Discussion
+## Discussion
 
 Each key-value pair maps a numeric score to rubric guidance. The label for each option derives from the numeric value.
 

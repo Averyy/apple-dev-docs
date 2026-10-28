@@ -14,11 +14,11 @@ Get the performance and power metrics data for the most recent version of an app
 - [App Store Connect API 1.4 release notes](./app-store-connect-api-1-4-release-notes.md)
 - [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The example below requests iOS app launch metrics on all iPhones for the most-recent app versions. To get metrics for a specific app version instead, use the [`Get power and performance metrics for a build`](./get-v1-builds-_id_-perfpowermetrics.md) endpoint.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

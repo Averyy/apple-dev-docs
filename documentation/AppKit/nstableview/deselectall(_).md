@@ -19,7 +19,7 @@ func deselectAll(_ sender: Any?)
 - (void) deselectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Posts [`selectionDidChangeNotification`](./selectiondidchangenotification.md) to the default notification center if the selection does in fact change.
 

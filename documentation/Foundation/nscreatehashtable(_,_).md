@@ -25,11 +25,11 @@ func NSCreateHashTable(_ callBacks: NSHashTableCallBacks, _ capacity: Int) -> NS
 extern NSHashTable *NSCreateHashTable(NSHashTableCallBacks callBacks, NSUInteger capacity);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an NSHashTable created in the default zone.
 
-#### Discussion
+## Discussion
 
 The table’s size is dependent on (but generally not equal to) `capacity`. If `capacity` is 0, a small hash table is created. The [`NSHashTableCallBacks`](./nshashtablecallbacks.md) structure `callBacks` has five pointers to functions, with the following defaults: pointer hashing, if `hash` is `NULL`; pointer equality, if `isEqual` is `NULL`; no callback upon adding an element, if `retain` is `NULL`; no callback upon removing an element, if `release` is `NULL`; and a function returning a pointer’s hexadecimal value as a string, if `describe` is `NULL`. The hashing function must be defined such that if two data elements are equal, as defined by the comparison function, the values produced by hashing on these elements must also be equal. Also, data elements must remain invariant if the value of the hashing function depends on them; for example, if the hashing function operates directly on the characters of a string, that string can’t change.
 

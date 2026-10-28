@@ -19,7 +19,7 @@ func vS128Neg(_ vA: vSInt32) -> vSInt32
 extern vSInt32 vS128Neg(vSInt32 vA);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the negated value.
 

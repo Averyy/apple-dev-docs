@@ -25,11 +25,11 @@ func CMSampleBufferCreateForImageBuffer(allocator: CFAllocator?, imageBuffer: CV
 extern OSStatus CMSampleBufferCreateForImageBuffer(CFAllocatorRef allocator, CVImageBufferRef imageBuffer, Boolean dataReady, CMSampleBufferMakeDataReadyCallback makeDataReadyCallback, void *makeDataReadyRefcon, CMVideoFormatDescriptionRef formatDescription, const CMSampleTimingInfo *sampleTiming, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 Unlike a `CMBlockBuffer` which can reference many samples, a `CVImageBuffer` is defined to reference only one sample; therefore this routine has fewer parameters than `CMSampleBufferCreate`. Sample timing information, which is a vector for `CMSampleBufferCreate`, consists of only one value for this routine. The concept of sample size doesn’t apply to `CVImageBuffers`. As such, [`CMSampleBufferGetSampleSizeArray(_:entryCount:arrayToFill:entriesNeededOut:)`](./cmsamplebuffergetsamplesizearray%28_,entrycount,arraytofill,entriesneededout%29.md) returns `kCMSampleBufferError_BufferHasNoSampleSizes`, and [`CMSampleBufferGetSampleSize(_:at:)`](./cmsamplebuffergetsamplesize%28_,at%29.md) returns 0.
 

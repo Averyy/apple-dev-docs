@@ -17,7 +17,7 @@ Role of a person in their iCloud family.
 enum FamilyRole
 ```
 
-#### Overview
+## Overview
 
 If the person is not signed into an iCloud account or in an iCloud family, they are an individual.
 

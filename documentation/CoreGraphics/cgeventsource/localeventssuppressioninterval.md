@@ -20,7 +20,7 @@ var localEventsSuppressionInterval: CFTimeInterval { get set }
 extern CFTimeInterval CGEventSourceGetLocalEventsSuppressionInterval(CGEventSourceRef source);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system does not suppress local hardware events from the keyboard or mouse during a short interval after a Quartz event is posted. You can use the function [`setLocalEventsFilterDuringSuppressionState(_:state:)`](./setlocaleventsfilterduringsuppressionstate%28_,state%29.md) to modify this behavior.
 

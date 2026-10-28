@@ -19,7 +19,7 @@ class IKImageBrowserCell
 @interface IKImageBrowserCell : NSObject
 ```
 
-#### Overview
+## Overview
 
 `A` class that is used to display a cell conforming to the [IKImageBrowserItem Protocol](./ikimagebrowseritem-protocol.md) in an [`IKImageBrowserView`](./ikimagebrowserview.md).
 

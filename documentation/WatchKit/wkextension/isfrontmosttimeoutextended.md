@@ -25,7 +25,7 @@ var isFrontmostTimeoutExtended: Bool { get set }
 
 - [Taking advantage of frontmost app state](../taking-advantage-of-frontmost-app-state.md)
 
-#### Discussion
+## Discussion
 
 This value defaults to [`false`](../../Swift/false.md). An app remains the frontmost app for two minutes after the user drops their wrist. Setting this property to [`true`](../../Swift/true.md) extends the app’s time as the frontmost app to eight minutes.
 

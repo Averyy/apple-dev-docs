@@ -24,7 +24,7 @@ static let textStyle: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorTextStyleAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSString`](../../../Foundation/nsstring.md) object that contains the specified text style.
 

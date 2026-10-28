@@ -21,7 +21,7 @@ Generates a floating-point column by dividing each element in a column type by t
 func / <L, R>(lhs: L, rhs: R) -> Column<L.Element> where L : ColumnProtocol, R : OptionalColumnProtocol, L.Element : FloatingPoint, L.Element == R.WrappedElement
 ```
 
-#### Return Value
+## Return Value
 
 A new column with the same type as the left column.
 

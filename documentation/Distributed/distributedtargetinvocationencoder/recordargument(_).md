@@ -22,7 +22,7 @@ Record an argument of `Argument` type. This will be invoked for every argument o
 mutating func recordArgument<Value>(_ argument: RemoteCallArgument<Value>) throws
 ```
 
-##### Serialization Requirement
+### Serialization Requirement
 
 Implementations of this method must ensure that the `Value` type parameter conforms to the types’ `SerializationRequirement`.
 

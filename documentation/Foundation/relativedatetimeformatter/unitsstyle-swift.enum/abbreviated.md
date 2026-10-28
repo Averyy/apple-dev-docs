@@ -25,7 +25,7 @@ case abbreviated
 NSRelativeDateTimeFormatterUnitsStyleAbbreviated
 ```
 
-#### Discussion
+## Discussion
 
 This style may give different results in languages other than English.
 

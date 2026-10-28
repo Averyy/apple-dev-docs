@@ -23,7 +23,7 @@ func index(before i: Slice<Base>.Index) -> Slice<Base>.Index
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

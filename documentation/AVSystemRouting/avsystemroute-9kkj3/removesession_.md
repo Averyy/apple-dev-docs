@@ -17,7 +17,7 @@ Removes a session from the active route.
 - (void) removeSession:(AVSystemRouteSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to unregister a session from the route when playback ends or when you no longer need the session. Removing a session stops any ongoing communication associated with that session and releases system resources.
 

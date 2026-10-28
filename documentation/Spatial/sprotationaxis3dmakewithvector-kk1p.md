@@ -19,11 +19,11 @@
 static SPRotationAxis3D SPRotationAxis3DMakeWithVector(SPVector3D xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Creates an axis with components specified as a Spatial vector.
 

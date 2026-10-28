@@ -16,7 +16,7 @@ A key for specifying the product identifier of the device.
 #define kIOHIDProductIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the numerical ID that the manufacturer assigned to the device. 
 

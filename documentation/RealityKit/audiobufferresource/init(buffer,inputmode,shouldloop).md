@@ -21,7 +21,7 @@ Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. 
 @preconcurrency init(buffer: AVAudioBuffer, inputMode: AudioResource.InputMode = .spatial, shouldLoop: Bool = false) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws an error when the `AVAudioBuffer`  cannot be cast or converted to `AVAudioPCMBuffer`.
 

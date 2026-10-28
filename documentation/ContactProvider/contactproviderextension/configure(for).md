@@ -17,7 +17,7 @@ Configures the extension instance for a domain.
 func configure(for domain: any ContactProviderDomain)
 ```
 
-#### Discussion
+## Discussion
 
 The system configures the extension for a domain before any enumeration begins.
 

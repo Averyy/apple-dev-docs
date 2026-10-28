@@ -25,7 +25,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method before releasing a port object (or removing strong references to it if your application is garbage collected).
 

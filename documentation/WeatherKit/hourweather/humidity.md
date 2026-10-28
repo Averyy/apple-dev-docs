@@ -21,7 +21,7 @@ The humidity for the hour.
 var humidity: Double
 ```
 
-#### Discussion
+## Discussion
 
 Relative humidity measures the amount of water vapor in the air compared to the maximum amount that the air could normally hold at the current temperature.  The value is from `0` (no humidity) to `1` (100% humidity).
 

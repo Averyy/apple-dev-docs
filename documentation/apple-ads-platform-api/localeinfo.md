@@ -15,13 +15,13 @@ Represents a specific language and its corresponding language code.
 object LocaleInfo
 ```
 
-#### Discussion
+## Discussion
 
 The `LocaleInfo` object pairs a language identifier with its full BCP-47 locale code. Use it when you need to communicate both the base language (`language`) and the locale (`languageCode`) together, for example when enumerating the locales supported by a product page or brand creative.
 
 The `language` field is usually a two-letter ISO 639-1 code (for example, `en`, `fr`, `ja`), but the API supports only a subset of ISO 639-1 and can return codes from other standards, such as `yue` (ISO 639-3) for Cantonese. The `languageCode` field is a BCP-47 tag that usually includes a region subtag (for example, `en-US`, `fr-FR`, `ja-JP`) but can include a script subtag instead (for example, `zh-Hans`, `zh-Hant`). To confirm which values are valid, use [`Query Supported App Languages`](./query-supported-app-languages.md). When building locale-aware creative specs, use `languageCode` as the map key in `localizedText` structures.
 
-##### Example
+### Example
 
 ```json
 {

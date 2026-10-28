@@ -19,7 +19,7 @@ func actionForControlCharacter(at charIndex: Int) -> NSTypesetterControlCharacte
 - (NSTypesetterControlCharacterAction) actionForControlCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The action associated with the control character at `charIndex`.
 

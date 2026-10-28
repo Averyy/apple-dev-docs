@@ -20,11 +20,11 @@ optional func detachableWindow(for popover: NSPopover) -> NSWindow?
 - (NSWindow *) detachableWindowForPopover:(NSPopover *) popover;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a window instance to which the popover should be detached.
 
-#### Discussion
+## Discussion
 
 You should not remove the popover’s content view as part of your implementation of this method.
 

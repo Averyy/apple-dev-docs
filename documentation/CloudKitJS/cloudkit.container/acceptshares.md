@@ -17,7 +17,7 @@ Promise<CloudKit.RecordInfosResponse, CKError> acceptShares(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](../cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 

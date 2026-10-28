@@ -15,7 +15,7 @@ Deallocates an existing single-precision FFT setup structure.
 void vDSP_destroy_fftsetup(FFTSetup __setup);
 ```
 
-#### Discussion
+## Discussion
 
 `vDSP_destroy_fftsetup` frees existing setup data and releases any allocated memory.
 

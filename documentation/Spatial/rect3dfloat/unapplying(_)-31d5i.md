@@ -21,7 +21,7 @@ Unapplies a projective transform.
 func unapplying(_ transform: ProjectiveTransform3DFloat) -> Rect3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The transform must be rectilinear otherwise this function returns `self`.
 

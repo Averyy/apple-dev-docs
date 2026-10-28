@@ -23,7 +23,7 @@ func graphBuilderTensor(_ builder: BNNSGraph.Builder) -> BNNSGraph.Builder.Tenso
 
 Available when `Element` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 The following code shows how to use this function to register a tensor from an array slice.
 

@@ -23,7 +23,7 @@ weak var nextFocusedView: UIView? { get }
 @property (nonatomic, weak, readonly, nullable) UIView * nextFocusedView;
 ```
 
-#### Discussion
+## Discussion
 
 If your app targets tvOS 10 and later, use [`nextFocusedItem`](./nextfocuseditem.md) instead.
 

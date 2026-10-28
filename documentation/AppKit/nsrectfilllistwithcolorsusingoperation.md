@@ -15,7 +15,7 @@ Fills the rectangles in a list using the specified colors and compositing operat
 extern void NSRectFillListWithColorsUsingOperation(const NSRect *rects, NSColor * const*colors, NSInteger num, NSCompositingOperation op);
 ```
 
-#### Discussion
+## Discussion
 
 Takes a list of `num` rectangles and a matching list of color values. The first rectangle is filled with the first color, the second rectangle with the second color, and so on. There must be an equal number of rectangles and color values. Each fill operation is performed using the compositing operation `op`. The rectangles should not overlap; the order in which they are filled cannot be guaranteed. This function alters the current color of the current graphics state, setting it unpredictably to one of the values passed in `colors`.
 

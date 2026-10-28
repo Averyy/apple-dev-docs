@@ -21,7 +21,7 @@ Calculates and returns the current position of the pin relative to the pin’s o
 var position: SIMD3<Float>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the pin is on a skeletal joint but there is no skeletal joint matching the given skeletal joint name, this property returns `nil`.
 

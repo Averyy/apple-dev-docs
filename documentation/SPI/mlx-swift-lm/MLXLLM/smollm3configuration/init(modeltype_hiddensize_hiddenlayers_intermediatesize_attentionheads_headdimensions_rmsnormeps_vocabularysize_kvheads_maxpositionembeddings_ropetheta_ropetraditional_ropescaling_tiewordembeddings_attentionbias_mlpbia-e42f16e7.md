@@ -18,4 +18,4 @@ init(modelType: String = "smollm3", hiddenSize: Int, hiddenLayers: Int, intermed
 
 ---
 
-*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/smollm3configuration/init(modeltype:hiddensize:hiddenlayers:intermediatesize:attentionheads:headdimensions:rmsnormeps:vocabularysize:kvheads:maxpositionembeddings:ropetheta:ropetraditional:ropescaling:tiewordembeddings:attentionbias:mlpbias:noropelayerinterval:-614q5)*
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/smollm3configuration/init%28modeltype:hiddensize:hiddenlayers:intermediatesize:attentionheads:headdimensions:rmsnormeps:vocabularysize:kvheads:maxpositionembeddings:ropetheta:ropetraditional:ropescaling:tiewordembeddings:attentionbias:mlpbias:noropelayerinterval:-614q5)*

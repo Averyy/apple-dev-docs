@@ -20,11 +20,11 @@ Retrieves the previously-configured custom sample positions.
 - (NSUInteger) getSamplePositions:(MTLSamplePosition *) positions count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 The number of previously-configured custom sample positions.
 
-#### Discussion
+## Discussion
 
 This method stores the app’s last set custom sample positions into an output array. Metal only modifies the array when the `count` parameter consists of a length sufficient to store the number of sample positions.
 

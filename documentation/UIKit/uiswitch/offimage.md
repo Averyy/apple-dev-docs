@@ -22,7 +22,7 @@ var offImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * offImage;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7 and later, this property has no effect.
 

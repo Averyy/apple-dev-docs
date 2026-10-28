@@ -25,11 +25,11 @@ func CFBagCreateMutable(_ allocator: CFAllocator!, _ capacity: CFIndex, _ callBa
 extern CFMutableBagRefCFBagCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFBagCallBacks *callBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable bag, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates an new empty mutable bag to which you can add values using the [`CFBagAddValue(_:_:)`](./cfbagaddvalue%28_,_%29.md) function. The `capacity` parameter specifies the maximum number of values that the CFBag object can contain. If it is `0`, then there is no limit to the number of values that can be added (aside from constraints such as available memory).
 

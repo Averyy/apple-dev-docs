@@ -23,7 +23,7 @@ var color: UIColor! { get set }
 @property (nonatomic, strong, readwrite, null_resettable) UIColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 If you set a color for an activity indicator, it overrides the color provided by the [`style`](./style-swift.property.md) property.
 

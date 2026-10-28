@@ -24,7 +24,7 @@ class func predicate(forEvaluatingTriggerOccurringBetweenSignificantEvent firstS
 + (NSPredicate *) predicateForEvaluatingTriggerOccurringBetweenSignificantEvent:(HMSignificantTimeEvent *) firstSignificantEvent secondSignificantEvent:(HMSignificantTimeEvent *) secondSignificantEvent;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

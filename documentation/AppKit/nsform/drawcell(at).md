@@ -21,7 +21,7 @@ func drawCell(at index: Int)
 - (void) drawCellAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Because this method is called automatically whenever a cell needs drawing, you never need to invoke it explicitly. It is included in the API so you can override it if you subclass `NSFormCell`.
 

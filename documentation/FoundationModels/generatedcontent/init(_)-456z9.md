@@ -26,7 +26,7 @@ init(_ content: GeneratedContent) throws
 init(_ value: some ConvertibleToGeneratedContent)
 ```
 
-#### Discussion
+## Discussion
 
 This is used to satisfy `Generable.init(_:)`.
 

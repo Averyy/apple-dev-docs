@@ -17,7 +17,7 @@ An array of detail lines for this shopping cart item.
 var details: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Use details for additional product information.
 

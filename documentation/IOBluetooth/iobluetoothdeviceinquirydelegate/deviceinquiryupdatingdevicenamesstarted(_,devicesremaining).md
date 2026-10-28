@@ -17,7 +17,7 @@ optional func deviceInquiryUpdatingDeviceNamesStarted(_ sender: IOBluetoothDevic
 - (void) deviceInquiryUpdatingDeviceNamesStarted:(IOBluetoothDeviceInquiry *) sender devicesRemaining:(uint32_t) devicesRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 The inquiry has begun updating device names that were found during the search.
 

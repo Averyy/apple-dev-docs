@@ -19,7 +19,7 @@ var imageWidth: CGFloat { get }
 @property (readonly) CGFloat imageWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The width of the image is measured in points. You can associate an image with a menu item using the setImage: method of [`NSMenuItem`](../nsmenuitem.md).
 

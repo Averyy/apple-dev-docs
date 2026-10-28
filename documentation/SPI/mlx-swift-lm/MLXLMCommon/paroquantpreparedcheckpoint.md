@@ -17,7 +17,7 @@ Prepared Checkpoint — the once-converted MLX-native form of a PARO checkpoint,
 enum ParoQuantPreparedCheckpoint
 ```
 
-#### Overview
+## Overview
 
 Rotation parameters (`theta` / `pairs` / `channel_scales`) are stored verbatim and every rotation-derived value is recomputed at load by `prepareDerivedRotationState()` — nothing semantic is baked into the artifact, only layout conversion whose output is deterministic.
 

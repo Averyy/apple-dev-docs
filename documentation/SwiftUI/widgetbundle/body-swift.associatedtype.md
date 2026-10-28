@@ -21,7 +21,7 @@ The type of widget that represents the content of the bundle.
 associatedtype Body : Widget
 ```
 
-#### Discussion
+## Discussion
 
 When you support more than one widget, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 

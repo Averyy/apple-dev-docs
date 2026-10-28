@@ -19,7 +19,7 @@ case momentary
 NSSegmentSwitchTrackingMomentary
 ```
 
-#### Discussion
+## Discussion
 
 A momentary segmented control sends an action when a person clicks a segment, and another action when the person releases the segment. If configured as continuous (see [`isContinuous`](../../nscontrol/iscontinuous.md)), the control also sends actions at repeating intervals until the person releases the segment, at which point the control sends its final action.
 

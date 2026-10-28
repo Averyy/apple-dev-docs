@@ -18,7 +18,7 @@ The selection rectangle for an in-progress interaction.
 @property (nonatomic, readonly) CGRect selectionRect;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle is in the coordinate system of the view that owns the interaction object. If no interaction is active, the value of this propety is `nil`.
 

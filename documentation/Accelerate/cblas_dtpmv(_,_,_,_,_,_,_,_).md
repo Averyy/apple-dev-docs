@@ -25,7 +25,7 @@ func cblas_dtpmv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANSA: CBLAS_TRANS
 void cblas_dtpmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_DIAG DIAG, const __LAPACK_int N, const double *AP, double *X, const __LAPACK_int INCX);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `A*x`, `A`, or `conjg(A` and stores the results in `X`.
 

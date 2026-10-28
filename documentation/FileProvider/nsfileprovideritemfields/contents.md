@@ -23,7 +23,7 @@ static var contents: NSFileProviderItemFields { get }
 NSFileProviderItemContents
 ```
 
-#### Discussion
+## Discussion
 
 If the item is a directory, the content are the item’s children. If the item is a file, the content is the data saved on disk.
 

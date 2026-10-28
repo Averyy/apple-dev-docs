@@ -23,7 +23,7 @@ class func isIndexingAvailable() -> Bool
 + (BOOL) isIndexingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if indexing is available on the current device, or `false` if it isn’t.
 

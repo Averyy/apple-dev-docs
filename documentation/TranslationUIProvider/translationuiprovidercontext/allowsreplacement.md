@@ -18,7 +18,7 @@ A Boolean value that indicates whether the control can replace the source text.
 var allowsReplacement: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag to indicate when a control replaces the source text with the translation.
 

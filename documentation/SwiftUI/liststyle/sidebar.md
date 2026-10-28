@@ -22,7 +22,7 @@ static var sidebar: SidebarListStyle { get }
 
 Available when `Self` is `SidebarListStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS and iOS, the sidebar list style displays disclosure indicators in the section headers that allow the user to collapse and expand sections.
 

@@ -22,7 +22,7 @@ let vmnet_nat66_prefix_length_key: UnsafePointer<CChar>
 extern const char * const vmnet_nat66_prefix_length_key;
 ```
 
-#### Discussion
+## Discussion
 
 The prefix_length must be 64; the use of this key, `VMNET_SHARED_MODE`, is deprecated.
 

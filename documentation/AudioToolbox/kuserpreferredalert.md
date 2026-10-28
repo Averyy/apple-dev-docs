@@ -19,7 +19,7 @@ var kUserPreferredAlert: SystemSoundID { get }
 kUserPreferredAlert
 ```
 
-#### Discussion
+## Discussion
 
 Use [`kSystemSoundID_UserPreferredAlert`](./ksystemsoundid_userpreferredalert.md) instead.
 

@@ -6,7 +6,7 @@
 
 An atom you use to specify out-of-order video samples.
 
-#### Overview
+## Overview
 
 See [`Composition offset atom`](../composition_offset_atom.md).
 

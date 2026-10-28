@@ -21,7 +21,7 @@ var searchResultsTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * searchResultsTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

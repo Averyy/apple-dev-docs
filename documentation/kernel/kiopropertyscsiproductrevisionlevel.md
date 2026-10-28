@@ -13,7 +13,7 @@
 #define kIOPropertySCSIProductRevisionLevel
 ```
 
-#### Discussion
+## Discussion
 
 Product Revision Level as reported in the INQUIRY data.
 

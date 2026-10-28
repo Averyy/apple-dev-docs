@@ -20,7 +20,7 @@ Sets an offer code for the transaction in the testing environment.
 static func codeOffer(referenceName: String) -> Product.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 Use this purchase option when you test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md) and call [`buyProduct(identifier:options:)`](../../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md).
 

@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app receives location updates based o
 @property (nonatomic, readonly) BOOL conditionUnsupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), then the app isn’t receiving location updates because it’s monitoring a type of condition that isn’t supported.
 

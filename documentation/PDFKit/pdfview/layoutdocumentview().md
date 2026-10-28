@@ -24,7 +24,7 @@ func layoutDocumentView()
 - (void) layoutDocumentView;
 ```
 
-#### Discussion
+## Discussion
 
 The `PDFView` actually contains several subviews, such as the document view (where the PDF is actually drawn) and a “matte view” (which may appear as a gray area around the PDF content, depending on the scaling). Changes to the PDF content may require changes to these inner views, so you must call this method explicitly if you use PDF Kit utility classes to add or remove a page, rotate a page, or perform other operations affecting visible layout.
 

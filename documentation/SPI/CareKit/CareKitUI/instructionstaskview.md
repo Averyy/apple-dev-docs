@@ -18,11 +18,11 @@ A card that displays a header view, multi-line label, and a completion button.
 struct InstructionsTaskView<Header> where Header : View
 ```
 
-#### Overview
+## Overview
 
 In CareKit, this view is intended to display a particular event for a task. The state of the button indicates the completion state of the event.
 
-### Style
+## Style
 
 The card supports styling using `careKitStyle(_:)`.
 

@@ -21,11 +21,11 @@ Increments the retain count of a data provider.
 extern CGDataProviderRefCGDataProviderRetain(CGDataProviderRef provider);
 ```
 
-#### Return Value
+## Return Value
 
 The same data provider you passed in as the `provider` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `provider` parameter is `NULL`.
 

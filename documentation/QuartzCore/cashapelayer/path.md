@@ -24,7 +24,7 @@ var path: CGPath? { get set }
 @property (nullable) CGPathRef path;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike most animatable properties, [`path`](./path.md) (as with all [`CGPath`](../../CoreGraphics/cgpath.md) animatable properties) does not support implicit animation.
 

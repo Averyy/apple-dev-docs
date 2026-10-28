@@ -17,11 +17,11 @@ The Singular Value Decomposition (SVD) of the input matrix.
 static func svd(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The `S` matrix
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the function iterates over all indices of the first `array.ndim - 2` dimensions and for each combination SVD is applied to the last two indices.
 

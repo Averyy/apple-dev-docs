@@ -10,13 +10,13 @@ Display and manage multiple SwiftUI windows in your visionOS app.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](../SwiftUI/button.md) that a person can tap to open a new window view, as the following image illustrates:
 
 ![](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-new-window-1-main-view.png)
 
-##### Create a variable to track window IDs
+### Create a variable to track window IDs
 
 To manage multiple windows for an app, the app uses the [`Identifiable`](../Swift/identifiable.md) protocol to establish an ID value for each new window view.
 
@@ -30,7 +30,7 @@ struct NewWindowID: Identifiable {
 
 ```
 
-##### Add a button for creating windows
+### Add a button for creating windows
 
 The `OpenNewWindow` view creates and displays a SwiftUI button. When a person taps the button, a new SwiftUI window appears.
 
@@ -60,7 +60,7 @@ struct OpenWindowView: View {
 
 The [`openWindow`](../SwiftUI/environmentvalues/openwindow.md) instance property invokes a new window view in an app’s environment.
 
-##### Create a view for the new window
+### Create a view for the new window
 
 The `NewWindow` view displays the window’s `id` value in a [`Text`](../SwiftUI/text.md) instance.
 
@@ -79,7 +79,7 @@ struct NewWindow: View {
 }
 ```
 
-##### Add new windows to a window group
+### Add new windows to a window group
 
 The `EntryPoint` provides a specific [`WindowGroup`](../SwiftUI/windowgroup.md) to create a window view and add the new window to the app’s main view.
 
@@ -101,9 +101,9 @@ struct EntryPoint: App {
 }
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Creating 3D models as movable windows](./creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.

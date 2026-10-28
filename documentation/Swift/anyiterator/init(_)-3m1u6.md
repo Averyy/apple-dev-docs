@@ -21,7 +21,7 @@ Creates an iterator that wraps a base iterator but whose type depends only on th
 init<I>(_ base: I) where Element == I.Element, I : IteratorProtocol
 ```
 
-#### Discussion
+## Discussion
 
 You can use `AnyIterator` to hide the type signature of a more complex iterator. For example, the `digits()` function in the following example creates an iterator over a collection that lazily maps the elements of a `Range<Int>` instance to strings. Instead of returning an iterator with a type that encapsulates the implementation of the collection, the `digits()` function first wraps the iterator in an `AnyIterator` instance.
 

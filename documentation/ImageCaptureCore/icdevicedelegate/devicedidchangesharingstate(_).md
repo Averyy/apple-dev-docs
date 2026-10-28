@@ -21,7 +21,7 @@ optional func deviceDidChangeSharingState(_ device: ICDevice)
 - (void) deviceDidChangeSharingState:(ICDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 Any Image Capture client application can choose to share the device over the network using the sharing or webSharing facility in Image Capture.
 

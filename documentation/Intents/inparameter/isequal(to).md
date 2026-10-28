@@ -22,7 +22,7 @@ func isEqual(to parameter: INParameter) -> Bool
 - (BOOL) isEqualToParameter:(INParameter *) parameter;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the two parameter objects represent the same property of the interaction object, or [`false`](../../Swift/false.md) if they do not.
 

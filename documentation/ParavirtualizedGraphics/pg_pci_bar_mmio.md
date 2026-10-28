@@ -20,7 +20,7 @@ var PG_PCI_BAR_MMIO: Int32 { get }
 #define PG_PCI_BAR_MMIO
 ```
 
-#### Discussion
+## Discussion
 
 Specify the following characteristics for the memory that this base address register references:
 

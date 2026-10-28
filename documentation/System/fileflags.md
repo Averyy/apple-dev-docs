@@ -22,7 +22,7 @@ File-specific flags found in the `st_flags` property of a `stat` struct or used 
 struct FileFlags
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Only available on Darwin, FreeBSD, and OpenBSD.
 

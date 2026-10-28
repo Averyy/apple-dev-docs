@@ -21,7 +21,7 @@ func arange(_ start: Int, _ stop: Int, step: Int = 1, stream: StreamOrDevice = .
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -30,7 +30,7 @@ Example:
 let r = arange(2, 10, step: 2)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`arange(_:_:step:dtype:stream:)`](./arange%28_,_,step,dtype,stream%29-1amf4.md)

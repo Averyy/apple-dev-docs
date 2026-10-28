@@ -15,7 +15,7 @@ Creates an audio accessory configuration.
 init(devicePlacement: AccessoryControlDevice.Placement? = nil, deviceCapabilities: AccessoryControlDevice.Capabilities, primaryAudioSourceDeviceIdentifier: Data? = nil, secondaryAudioSourceDeviceIdentifier: Data? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code creates a configuration for a device that’s not being worn and is using Bluetooth address `0x12356789ABC` as its primary audio source:
 

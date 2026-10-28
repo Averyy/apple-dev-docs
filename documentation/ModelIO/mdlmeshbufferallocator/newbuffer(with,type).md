@@ -25,11 +25,11 @@ func newBuffer(with data: Data, type: MDLMeshBufferType) -> any MDLMeshBuffer
 - (id<MDLMeshBuffer>) newBufferWithData:(NSData *) data type:(MDLMeshBufferType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory buffer for mesh data.
 
-#### Discussion
+## Discussion
 
 The concrete class implementing this protocol determines the memory pool from which the buffer is allocated. To provide a hint that multiple related allocations should share the same pool of memory, use the [`newBuffer(from:data:type:)`](./newbuffer%28from,data,type%29.md) method instead.
 

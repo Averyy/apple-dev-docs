@@ -24,7 +24,7 @@ nonisolated static var split: SplitArrangementViewStyle { get }
 
 Available when `Self` is `SplitArrangementViewStyle`.
 
-#### Discussion
+## Discussion
 
 The split arrangement adapts its layout axis based on the available size and size class. Use this style for experiences that display two distinct pieces of content simultaneously, such as a music player alongside its lyrics or a calculator with a conversion panel.
 

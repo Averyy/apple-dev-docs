@@ -23,11 +23,11 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, boundingBoxForCont
 - (CGRect) layoutManager:(NSLayoutManager *) layoutManager boundingBoxForControlGlyphAtIndex:(NSUInteger) glyphIndex forTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) proposedRect glyphPosition:(CGPoint) glyphPosition characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle for the specified control glyph with the specified parameters.
 
-#### Discussion
+## Discussion
 
 Sent for resolving the glyph metrics for [`NSControlCharacterWhitespaceAction`](../nscontrolcharacterwhitespaceaction.md) control character.
 

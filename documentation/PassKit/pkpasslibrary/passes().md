@@ -24,11 +24,11 @@ func passes() -> [PKPass]
 - (NSArray<PKPass *> *) passes;
 ```
 
-#### Return Value
+## Return Value
 
 The passes in the user’s pass library.
 
-#### Discussion
+## Discussion
 
 Your app only has access to certain passes according to its entitlements. PassKit doesn’t return passes that your app can’t access.
 

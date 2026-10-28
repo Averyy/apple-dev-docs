@@ -19,7 +19,7 @@ The maximum number of selections the user can make.
 var selectionLimit: Int?
 ```
 
-#### Discussion
+## Discussion
 
 This property updates the photos picker configuration ([`PHPickerConfiguration`](../../phpickerconfiguration-swift.struct.md)) property [`selectionLimit`](../selectionlimit.md).
 

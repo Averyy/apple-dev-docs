@@ -19,7 +19,7 @@ var fantasyFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * fantasyFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties indicate that it should be displayed in a fantasy font but do not specify a particular font.
 

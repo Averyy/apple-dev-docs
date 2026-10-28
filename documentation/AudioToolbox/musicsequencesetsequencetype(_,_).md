@@ -24,11 +24,11 @@ func MusicSequenceSetSequenceType(_ inSequence: MusicSequence, _ inType: MusicSe
 extern OSStatus MusicSequenceSetSequenceType(MusicSequence inSequence, MusicSequenceType inType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The sequence type can be set to `kMusicSequenceType_Beats` at any time. The sequence type can only be set to `kMusicSequenceType_Seconds` or `kMusicSequenceType_Samples` if there are no tempo events already in the sequence.
 

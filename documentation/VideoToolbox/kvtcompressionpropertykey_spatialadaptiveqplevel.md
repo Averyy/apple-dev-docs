@@ -19,7 +19,7 @@ let kVTCompressionPropertyKey_SpatialAdaptiveQPLevel: CFString
 extern CFStringRef const kVTCompressionPropertyKey_SpatialAdaptiveQPLevel;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`kVTQPModulationLevel_Disable`](./kvtqpmodulationlevel_disable.md), spatial QP adaptation is not applied based on per-frame statistics. If set to [`kVTQPModulationLevel_Default`](./kvtqpmodulationlevel_default.md), video encoder is allowed to apply spatial QP adaptation for each macro block (or coding unit) within a video frame. QP adaptation is based on spatial characteristics of a frame and the level of spatial QP adaptation is decided internally by the rate controller.
 

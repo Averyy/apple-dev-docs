@@ -21,11 +21,11 @@ class func winningPostbacks(withVersion version: SKAdTestPostbackVersion, adNetw
 + (NSArray<SKAdTestPostback *> *) winningPostbacksWithVersion:(SKAdTestPostbackVersion) version adNetworkIdentifier:(NSString *) adNetworkIdentifier sourceIdentifier:(NSString *) sourceIdentifier appStoreItemIdentifier:(NSInteger) appStoreItemIdentifier sourceAppStoreItemIdentifier:(NSInteger) sourceAppStoreItemIdentifier sourceDomain:(NSString *) sourceDomain fidelityType:(NSInteger) fidelityType isRedownload:(BOOL) isRedownload postbackURL:(NSString *) postbackURL;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing a winning postback for each conversion window.
 
-#### Discussion
+## Discussion
 
 This method provides parameters to create test postbacks for either an in-app ad or a web ad. To create test postbacks for an in-app ad, provide an empty string for `sourceDomain`.
 

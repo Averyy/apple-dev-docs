@@ -21,7 +21,7 @@ Replace the selection with new content, attributed with the typing attributes.
 mutating func replaceSelection(_ selection: inout AttributedTextSelection, withCharacters newContent: some Collection<Character>)
 ```
 
-#### Discussion
+## Discussion
 
 Operates just like [`replaceSelection(_:with:)`](./replaceselection%28_,with%29.md), but applies the typing attributes to the new content before inserting it.
 

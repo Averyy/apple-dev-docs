@@ -15,7 +15,7 @@ Creates a polyline overlay with coordinate points and style options.
 constructor(points: CoordinateData[], options?: OverlayOptions);
 ```
 
-#### Discussion
+## Discussion
 
 The following is an example of the `options` parameter for a polyline overlay:
 

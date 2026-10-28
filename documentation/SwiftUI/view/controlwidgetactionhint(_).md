@@ -37,7 +37,7 @@ The action hint of the control described by the modified label.
 @preconcurrency func controlWidgetActionHint<S>(_ hint: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This text will appear next to the Action Button to describe what your control will do when activated. By default, a control’s action hint is derived from its display name, the type of control, and value text, if any:
 

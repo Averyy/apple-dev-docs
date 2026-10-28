@@ -24,7 +24,7 @@ func raiseToPower(_ power: Double)
 - (void) raiseToPower:(double) power;
 ```
 
-#### Discussion
+## Discussion
 
 Noise values range from `-1.0` to `1.0`, so exponentiating always results in lower values than in the original noise, with a greater effect on low original values than on high values.
 

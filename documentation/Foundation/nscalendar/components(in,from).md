@@ -25,11 +25,11 @@ func components(in timezone: TimeZone, from date: Date) -> DateComponents
 - (NSDateComponents *) componentsInTimeZone:(NSTimeZone *) timezone fromDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDateComponents` object containing all the components from the given date, calculated using the given time zone.
 
-#### Discussion
+## Discussion
 
 If you want “date information in a given time zone” for the purpose to displaying it, you should use [`DateFormatter`](../dateformatter.md) to format the date.
 

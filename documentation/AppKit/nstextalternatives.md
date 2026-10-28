@@ -19,7 +19,7 @@ class NSTextAlternatives
 @interface NSTextAlternatives : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSTextAlternatives`](./nstextalternatives.md) is an immutable value class that stores a list of alternatives for a piece of text and communicates the user’s selection of an alternative via a notification to your app. To support dictation, for example, you might use [`NSTextAlternatives`](./nstextalternatives.md) to present a list of alternative interpretations for a word or phrase the user speaks. If the user chooses to replace the initial interpretation with an alternative, [`NSTextAlternatives`](./nstextalternatives.md) notifies you of the choice so that you can update the text appropriately.
 

@@ -24,7 +24,7 @@ class func confirmationRequired(with outgoingMessageTypeToConfirm: INOutgoingMes
 + (instancetype) confirmationRequiredWithOutgoingMessageTypeToConfirm:(INOutgoingMessageType) outgoingMessageTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INOutgoingMessageTypeResolutionResult`](../inoutgoingmessagetyperesolutionresult.md) object.
 

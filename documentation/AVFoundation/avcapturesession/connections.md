@@ -24,7 +24,7 @@ var connections: [AVCaptureConnection] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureConnection *> * connections;
 ```
 
-#### Discussion
+## Discussion
 
 A capture session automatically forms connections between inputs and outputs when you call the [`addInput(_:)`](./addinput%28_%29.md) or [`addOutput(_:)`](./addoutput%28_%29.md) methods. You can explicitly add connections to a session by calling the [`addConnection(_:)`](./addconnection%28_%29.md) method.
 

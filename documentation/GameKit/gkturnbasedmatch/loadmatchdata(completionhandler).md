@@ -29,7 +29,7 @@ func loadMatchData() async throws -> Data?
 - (void) loadMatchDataWithCompletionHandler:(void (^)(NSData *matchData, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The [`matchData`](./matchdata.md) property is `nil` until you fetch the data from Game Center using this method.
 

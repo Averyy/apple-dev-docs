@@ -24,7 +24,7 @@ class MKMultiPolylineRenderer
 @interface MKMultiPolylineRenderer : MKOverlayPathRenderer
 ```
 
-#### Overview
+## Overview
 
 Use the multipolyline renderer to provide the styling of multiple polylines that you create using [`MKMultiPolyline`](./mkmultipolyline.md).
 

@@ -24,7 +24,7 @@ protocol UISearchDisplayDelegate : NSObjectProtocol
 @protocol UISearchDisplayDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol defines delegate methods for [`UISearchDisplayController`](./uisearchdisplaycontroller.md) objects.
 

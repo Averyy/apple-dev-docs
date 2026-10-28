@@ -12,7 +12,7 @@ virtual void CheckPowerState (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by clients to ensure device is in correct power state before issuing I/O. If the device is not ready to handle such requests, it gives the driver a chance to block the thread until the device is ready. Subclasses should not need to override this method.
 

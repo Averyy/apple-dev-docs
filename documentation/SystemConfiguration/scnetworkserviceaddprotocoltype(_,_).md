@@ -19,11 +19,11 @@ func SCNetworkServiceAddProtocolType(_ service: SCNetworkService, _ protocolType
 Boolean SCNetworkServiceAddProtocolType(SCNetworkServiceRef service, CFStringRef protocolType);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the protocol was added to the service; `FALSE` if the protocol was already present or an error occurred.
 
-#### Discussion
+## Discussion
 
 The protocol configuration is set to default values that are appropriate for the interface associated with the service.
 

@@ -24,7 +24,7 @@ func connection(with mediaType: AVMediaType) -> AVCaptureConnection?
 - (AVCaptureConnection *) connectionWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 The first capture connection that has the specified media type, or `nil` if no connection for the media type exists.
 

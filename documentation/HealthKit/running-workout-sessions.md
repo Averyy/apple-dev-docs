@@ -5,13 +5,13 @@
 
 Track a workout on Apple Watch.
 
-#### Overview
+## Overview
 
 Use workout sessions to track a user’s activity on Apple Watch. While the session runs, the system fine-tunes the watch’s sensors for the specified activity. For example, all workout sessions generate high-frequency heart rate samples; however, an outdoor cycling activity generates accurate location data, while an indoor cycling activity doesn’t.
 
 To track workouts on Apple Watch, you must set up, start, and save a workout session. Make starting and stopping workouts on Apple Watch as easy and obvious as possible. The app must clearly indicate when a workout session is in progress, and either automatically save workout data for the user, or provide a clear option to explicitly save or discard workout data. Finally, the watchOS app should provide clear feedback when a workout is successfully saved. For more information, see [Health and Fitness](https://developer.apple.com/watchos/human-interface-guidelines/system-capabilities/health-and-fitness/) in [watchOS Human Interface Guidelines](https://developer.apple.com/watchos/human-interface-guidelines/overview/themes/).
 
-##### Set up the app
+### Set up the app
 
 Before creating a workout session, you must set up HealthKit and request permission to read and share any health data your app intends to use. For step-by-step instructions, see [Setting up HealthKit](./setting-up-healthkit.md).
 
@@ -50,7 +50,7 @@ Use the [`AVAudioPlayer`](../AVFAudio/avaudioplayer.md) class to play short audi
 
 > **Note**:  Workout apps can use the AVFoundation framework to play short audio clips in the background, such as coaching or notifications. In order to play an audio clip, an active workout session must be running; any attempt to play background audio outside a workout session are invalid.
 
-##### Start a session
+### Start a session
 
 To start a workout session, begin by creating a configuration object for the workout.
 
@@ -114,7 +114,7 @@ builder.beginCollection(withStart: Date()) { (success, error) in
 
 Your app’s user interface should clearly indicate that a workout session is running. Use data passed to your [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) to update information about the session.
 
-##### Handle samples and events
+### Handle samples and events
 
 While the session runs, Apple Watch automatically collects and adds samples and events based on the workout configuration. You can record additional information by adding your own events and samples to the workout. To add samples, call the builder’s [`add(_:completion:)`](./hkworkoutbuilder/add%28_,completion%29.md) method. To add events, call the [`addWorkoutEvents(_:completion:)`](./hkworkoutbuilder/addworkoutevents%28_,completion%29.md) method.
 
@@ -155,7 +155,7 @@ func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
 
 HealthKit calls this method whenever the builder receives a new event. Use the builder’s [`workoutEvents`](./hkworkoutbuilder/workoutevents.md) property to examine the last event, and update your user interface as needed. For example, when a [`HKWorkoutEventType.lap`](./hkworkouteventtype/lap.md) event occurs, you can increment the number of laps shown.
 
-##### Run in the background
+### Run in the background
 
 When your app has an active workout session, it continues to run in the background. Background execution grants your app the following abilities:
 
@@ -166,7 +166,7 @@ When your app has an active workout session, it continues to run in the backgrou
 
 To maintain high performance on Apple Watch, you must limit the amount of work your app performs in the background. If your app uses an excessive amount of CPU while in the background, watchOS may suspend it. Use Xcode’s CPU report tool or the time profiler in Instruments to test your app’s CPU usage. The system also generates a log with a backtrace whenever it terminates your app.
 
-##### Coordinate with the companion app
+### Coordinate with the companion app
 
 If the watchOS app has an iOS companion, be sure to keep both apps in sync. This is particularly important if the user can start workouts on either device.
 
@@ -174,7 +174,7 @@ If the watchOS app has an iOS companion, be sure to keep both apps in sync. This
 - If the user starts a workout in the iOS companion, and then opens your watchOS app, the watchOS app should automatically start a workout session for the workout in progress. If you save the workout in the watchOS app, you can incorporate data from the iOS workout. For example, you should set the workout’s [`startDate`](./hksample/startdate.md) to the iOS workout’s start. Also, if your app calculates its own calories, you can retroactively give credit for the calories burned before the workout session began.
 - If the user doesn’t start and stop a workout session in your watchOS app, don’t try to retroactively create a workout session on Apple Watch.
 
-##### End a session
+### End a session
 
 After the user finishes the workout, stop the session by calling [`stopActivity(with:)`](./hkworkoutsession/stopactivity%28with%29.md).
 
@@ -216,7 +216,7 @@ func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKW
 
 The [`endCollection(withEnd:completion:)`](./hkworkoutbuilder/endcollection%28withend,completion%29.md) method sets the workout’s end date and deactivates the builder. The [`finishWorkout(completion:)`](./hkworkoutbuilder/finishworkout%28completion%29.md) method saves the workout and its associated data to the HealthKit store.
 
-##### Recover from crashes
+### Recover from crashes
 
 If your app crashes during a workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](../WatchKit/wkextensiondelegate/handleactiveworkoutrecovery%28%29.md) method when the app relaunches. In your implementation of this method, call the HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](./hkhealthstore/recoveractiveworkoutsession%28completion%29.md) method. HealthKit attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
 

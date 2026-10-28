@@ -24,11 +24,11 @@ class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGener
 + (CIFilter<CIRoundedRectangleGenerator> *) roundedRectangleGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a rounded rectangle image with the specified size, corner radius, and color properties.
 

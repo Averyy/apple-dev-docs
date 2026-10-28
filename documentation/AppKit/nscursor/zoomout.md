@@ -22,7 +22,7 @@ class var zoomOut: NSCursor { get }
 @property (class, strong, readonly) NSCursor * zoomOutCursor;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This cursor is used to indicate zooming out of a canvas or object.
 

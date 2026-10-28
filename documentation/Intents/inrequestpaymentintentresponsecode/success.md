@@ -23,7 +23,7 @@ case success
 INRequestPaymentIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully sent the payment request to the intended user.
 

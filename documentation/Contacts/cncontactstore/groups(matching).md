@@ -24,11 +24,11 @@ func groups(matching predicate: NSPredicate?) throws -> [CNGroup]
 - (NSArray<CNGroup *> *) groupsMatchingPredicate:(NSPredicate *) predicate error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CNGroup`](../cngroup.md) objects that match the predicate.
 
-#### Discussion
+## Discussion
 
 This method returns an empty array when no matching groups are found. If an error occurs, this method returns `nil`. You should use only the predicates defined in [`CNGroup`](../cngroup.md) class predicates. Compound predicates are not supported. Contacts may be members of one or more groups, depending upon the account they come from.
 

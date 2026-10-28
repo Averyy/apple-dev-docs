@@ -28,7 +28,7 @@ var interruptionContext: AVAudioSession.InterruptionContext? { get }
 
 - [Handling audio interruptions](../../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 This property is only present when the session was interrupted by another application.
 

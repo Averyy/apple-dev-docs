@@ -23,7 +23,7 @@ class MLCTrainingGraph
 @interface MLCTrainingGraph : MLCGraph
 ```
 
-#### Overview
+## Overview
 
 The framework provides a family of graph-execution methods to execute a full training iteration, and methods to execute the forward pass, the gradient pass, and optimizer update, individually.
 

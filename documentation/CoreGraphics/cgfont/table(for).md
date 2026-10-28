@@ -25,7 +25,7 @@ func table(for tag: UInt32) -> CFData?
 extern CFDataRefCGFontCopyTableForTag(CGFontRef font, uint32_t tag);
 ```
 
-#### Return Value
+## Return Value
 
 The font table that corresponds to the tag, or `nil` if no such table exists.
 

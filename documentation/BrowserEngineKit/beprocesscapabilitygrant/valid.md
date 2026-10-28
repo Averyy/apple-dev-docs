@@ -17,7 +17,7 @@ A Boolean value that indicates whether the system grants the capability.
 @property (readonly, getter=isValid) BOOL valid;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this property to `true` if the system grants the capability; otherwise, the value is `false`.
 

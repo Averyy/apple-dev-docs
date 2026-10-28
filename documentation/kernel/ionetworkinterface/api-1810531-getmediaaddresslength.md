@@ -12,11 +12,11 @@ virtual UInt8 getMediaAddressLength(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size of the media address in bytes.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_addrlen` and returns the media address length.
 

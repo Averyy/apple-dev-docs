@@ -24,7 +24,7 @@ case indexed
 kAudioUnitParameterUnit_Indexed
 ```
 
-#### Discussion
+## Discussion
 
 Indicates a particular menu item in a list of menu items, typically using whole-number values starting at 1.
 

@@ -24,7 +24,7 @@ class VNFaceLandmarkRegion2D
 @interface VNFaceLandmarkRegion2D : VNFaceLandmarkRegion
 ```
 
-#### Overview
+## Overview
 
 This class represents the set of all facial landmark regions in 2D, exposed as properties.
 

@@ -23,7 +23,7 @@ case `default`
 UITextSmartDashesTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 This option selectively enables the smart dash behavior based on the keyboard type. For example, smart dashes are disabled for email address and password keyboards.
 

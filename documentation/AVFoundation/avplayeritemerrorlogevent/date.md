@@ -25,7 +25,7 @@ var date: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “date”.
 

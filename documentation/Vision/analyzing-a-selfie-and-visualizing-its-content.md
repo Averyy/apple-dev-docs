@@ -12,7 +12,7 @@ Calculate face-capture quality and visualize facial features for a collection of
 - Mac Catalyst 18.0+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 Use the `Vision` framework to detect faces and facial features in a photo. This framework can analyze a photo to retrieve metrics such as face-capture quality and visual information like facial landmarks and face rectangles. This sample demonstrates how to locate all the faces in a selfie through the [`DetectFaceRectanglesRequest`](./detectfacerectanglesrequest.md). The sample then uses [`DetectFaceCaptureQualityRequest`](./detectfacecapturequalityrequest.md) to obtain capture-quality scores, and ``DetectFaceLandmarksRequest` to display outlines around each facial landmark, like the eyes or nose.
 
@@ -20,14 +20,14 @@ Use the `Vision` framework to detect faces and facial features in a photo. This 
 
 Face-capture quality is a holistic measure that considers scene lighting, blur, occlusion, expression, pose, focus, and more. It provides a score that the app uses to sort the collection of selfies from best to worst. The pretrained machine-learning model scores a capture lower if, for example, the image contains low light or bad focus, or if the person has a negative expression. These scores are floating-point values between 0.0 and 1.0.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 
 - Xcode 16 or later
 - iPhone with iOS 18 or later
 
-##### Selecting the selfies
+### Selecting the selfies
 
 The sample uses [`PhotosPicker`](../PhotosUI/photospicker.md) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md):
 
@@ -47,7 +47,7 @@ for photo in selectedPhotos {
 }
 ```
 
-##### Perform the requests and analyze the selfies
+### Perform the requests and analyze the selfies
 
 To analyze a selfie, the sample first instantiates the three `Vision` requests. The sample then performs `DetectFaceRectanglesRequest` to locate the faces in the photo, and uses the returned `FaceObservation` objects as the objects the other two requests process. The app sets this functionality through the [`inputFaceObservations`](./detectfacelandmarksrequest/inputfaceobservations.md) property.
 
@@ -115,7 +115,7 @@ func processAllSelfies(photos: [Data]) async throws -> [Selfie] {
 }
 ```
 
-##### Display face rectangles
+### Display face rectangles
 
 The sample provides custom `Shape` implementations to draw a rectangle around each face, and the face landmarks. For face rectangles, the app uses the [`boundingBox`](./boundingboxproviding/boundingbox.md) property on a `FaceObservation`. The `boundingBox` property contains the location and dimensions of the box in the form of a [`NormalizedRect`](./normalizedrect.md). The sample converts the `NormalizedRect` to a [`CGRect`](../CoreFoundation/cgrect.md), and returns a [`Path`](../SwiftUI/path.md) to draw the rectangle:
 
@@ -145,7 +145,7 @@ The sample creates a `BoundingBox` object for each face in the photo, and overla
 }
 ```
 
-##### Display face landmarks
+### Display face landmarks
 
 To create and display face landmarks on the image, the sample uses the custom `FaceLandmark` structure. Each `FaceObservation` from the `DetectFaceLandmarksRequest` contains a collection of landmarks as regions. A region contains all the points the sample needs to draw the outline. The possible regions are `faceContour`, `innerLips`, `leftEye`, `leftEyebrow`, `leftPupil`, `medianLine`, `nose`, `noseCrest`, `outerLips`, `rightEye`, `rightEyebrow`, and `rightPupil`.
 

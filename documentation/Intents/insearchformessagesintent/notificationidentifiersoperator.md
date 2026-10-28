@@ -31,7 +31,7 @@ var notificationIdentifiersOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator notificationIdentifiersOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the identifiers in the [`notificationIdentifiers`](./notificationidentifiers.md) property.
 

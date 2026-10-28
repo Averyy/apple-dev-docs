@@ -25,7 +25,7 @@ var capRadius: CGFloat { get set }
 @property (nonatomic) CGFloat capRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The capsule is centered in its local coordinate system. For example, the cylindrical body of a capsule of radius `5.0` extends from `-5.0` to `5.0` along the x- and z-axes.
 

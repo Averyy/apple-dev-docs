@@ -21,7 +21,7 @@ var isAutoDualCameraFusionEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoDualCameraFusionEnabled) BOOL autoDualCameraFusionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default setting is [`true`](../../Swift/true.md), unless you are capturing a RAW photo. (By definition, RAW photos are unprocessed, and image fusion involves processing the captured image).
 

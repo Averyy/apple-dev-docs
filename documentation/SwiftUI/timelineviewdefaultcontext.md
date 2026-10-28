@@ -21,7 +21,7 @@ Information passed to a timeline view’s content callback.
 typealias TimelineViewDefaultContext = TimelineView<EveryMinuteTimelineSchedule, Never>.Context
 ```
 
-#### Discussion
+## Discussion
 
 The context includes both the date from the schedule that triggered the callback, and a cadence that you can use to customize the appearance of your view. For example, you might choose to display the second hand of an analog clock only when the cadence is [`TimelineView.Context.Cadence.seconds`](./timelineview/context/cadence-swift.enum/seconds.md) or faster.
 

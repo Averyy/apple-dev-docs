@@ -25,7 +25,7 @@ static let negativeInfinity: CMTime
 extern const CMTime kCMTimeNegativeInfinity;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t test a time against this constant using (time == [`negativeInfinity`](./negativeinfinity.md)) because there are many times that are also negative infinity. Use [`CMTIME_IS_NEGATIVEINFINITY(_:)`](../cmtime_is_negativeinfinity%28_%29.md) instead.
 

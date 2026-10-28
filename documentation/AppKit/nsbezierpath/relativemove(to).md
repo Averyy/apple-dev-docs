@@ -19,7 +19,7 @@ func relativeMove(to point: NSPoint)
 - (void) relativeMoveToPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method implicitly closes the current subpath (if any) and updates the location of the current point. For example, if the current point is (1, 1) and `aPoint` contains the value (1, 2), the previous subpath would be closed and the current point would become (2, 3). When closing the previous subpath, this method does not cause a line to be created from the first and last points in the subpath.
 

@@ -17,7 +17,7 @@ Element-wise greater than or equal with a [`ScalarOrArray`](../scalarorarray.md)
 static func .>= (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`.>=(_:_:)`](./dotopeq%28_,_%29-2gqml.md)

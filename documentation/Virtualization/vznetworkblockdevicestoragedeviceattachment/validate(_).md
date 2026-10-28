@@ -19,7 +19,7 @@ class func validate(_ URL: URL) throws
 + (BOOL) validateURL:(NSURL *) URL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method checks that the URL is well-formed; however, it doesn’t attempt to access the URL. See the [NBD URL specification](https://github.com/NetworkBlockDevice/nbd/blob/master/doc/uri.md) on GitHub for more detailed descriptions of valid URIs.
 

@@ -24,11 +24,11 @@ class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImag
 + (CIFilter<CIAttributedTextImageGenerator> *) attributedTextImageGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates an attributed-text image. The effect takes the input string property and the scale factor to scale up the text. You commonly combine this filter with other filters to create a watermark on images.
 

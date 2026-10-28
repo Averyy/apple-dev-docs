@@ -16,7 +16,7 @@ nonisolated
 func windowDismissBehavior(_ behavior: WindowInteractionBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, the window dismiss functionality is determined by the scene, as well as any modifiers applied to it.
 

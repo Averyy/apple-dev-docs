@@ -17,7 +17,7 @@ Starts the ticket and returns the applied limit.
 func start() async -> Int
 ```
 
-#### Discussion
+## Discussion
 
 If admission is denied, this suspends until capacity is available or the task is cancelled.
 

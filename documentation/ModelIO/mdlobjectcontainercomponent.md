@@ -24,7 +24,7 @@ protocol MDLObjectContainerComponent : NSFastEnumeration, MDLComponent
 @protocol MDLObjectContainerComponent <MDLComponent, NSFastEnumeration>
 ```
 
-#### Overview
+## Overview
 
 Model I/O uses this interface to represent content loaded from an asset file. Various asset file formats define collections of information to describe their contents, such as a hierarchy of transforms to model the spatial relationships between models, lights, and meshes contained in an asset. When Model I/O imports such asset formats, the contents of the asset are objects implementing this protocol. You can also adopt this protocol in your own classes to describe your own custom asset formats—for example, one that includes collections of scripts and their triggers associated with the objects in a scene.
 

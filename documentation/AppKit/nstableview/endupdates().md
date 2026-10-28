@@ -19,7 +19,7 @@ func endUpdates()
 - (void) endUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Ends the group of updates for the table view. This method, like [`beginUpdates()`](./beginupdates%28%29.md), is nestable. See [`beginUpdates()`](./beginupdates%28%29.md) for details.
 

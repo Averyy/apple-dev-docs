@@ -25,7 +25,7 @@ var caseSensitive: Bool { get set }
 @property BOOL caseSensitive;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver distinguishes case in the characters it scans, otherwise [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md). Note that case sensitivity doesn’t apply to the characters to be skipped.
 

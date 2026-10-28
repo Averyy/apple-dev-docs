@@ -21,7 +21,7 @@ Returns a new `Date` representing the date calculated by setting a specific comp
 func date(bySetting component: Calendar.Component, value: Int, of date: Date) -> Date?
 ```
 
-#### Discussion
+## Discussion
 
 Changing a component’s value often will require higher or coupled components to change as well.  For example, setting the Weekday to Thursday usually will require the Day component to change its value, and possibly the Month and Year as well. If no such time exists, the next available time is returned (which could, for example, be in a different day, week, month, … than the nominal target date).  Setting a component to something which would be inconsistent forces other components to change; for example, setting the Weekday to Thursday probably shifts the Day and possibly Month and Year. The exact behavior of this method is implementation-defined. For example, if changing the weekday to Thursday, does that move forward to the next, backward to the previous, or to the nearest Thursday? The algorithm will try to produce a result which is in the next-larger component to the one given (there’s a table of this mapping at the top of this document).  So for the “set to Thursday” example, find the Thursday in the Week in which the given date resides (which could be a forwards or backwards move, and not necessarily the nearest Thursday). For more control over the exact behavior, use `nextDate(after:matching:matchingPolicy:behavior:direction:)`.
 

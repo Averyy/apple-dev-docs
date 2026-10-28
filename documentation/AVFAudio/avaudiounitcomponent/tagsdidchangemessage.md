@@ -15,7 +15,7 @@ Type-safe notification message for audio unit component tag changes.
 struct TagsDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 This notification is posted when the user tags of an audio unit component are modified. The notification object is the `AVAudioUnitComponent` whose tags changed.
 

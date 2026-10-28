@@ -23,7 +23,7 @@ static let socketSecurityLevelKey: Stream.PropertyKey
 extern NSStreamPropertyKey const NSStreamSocketSecurityLevelKey;
 ```
 
-#### Discussion
+## Discussion
 
 The security level of the target stream. See `Secure-Socket Layer (SSL) Security Level` for a list of possible values.
 

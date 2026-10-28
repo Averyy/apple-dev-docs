@@ -17,7 +17,7 @@ An object that contains information about a person’s choice in the Automatic S
 @interface VSAutoSignInTokenUpdateContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework returns an instance of this structure when your app calls [`requestAutoSignInAuthorizationWithCompletionHandler:`](./vsuseraccountmanager/requestautosigninauthorizationwithcompletionhandler_.md) to prompt a person for approval to opt in to Automatic Sign-In.
 

@@ -31,7 +31,7 @@ var lockScreenSetting: UNNotificationSetting { get }
 @property (atomic, readonly) UNNotificationSetting lockScreenSetting;
 ```
 
-#### Discussion
+## Discussion
 
 Even if the user disables lock screen notifications, your notifications may still appear onscreen when the device is unlocked.
 

@@ -5,13 +5,13 @@
 
 Add unique elements to your app’s document launch scene.
 
-#### Overview
+## Overview
 
 In iOS 18 and later, you can customize the document browsing experience for your app, such as setting the title and action buttons, configuring the background, and adding custom assets to the scene.
 
 > **SwiftUI equivalent**:  For information about adopting the document-based launch experience in SwiftUI, read [Building a document-based app with SwiftUI](../SwiftUI/building-a-document-based-app-with-swiftui.md).
 
-##### Set up a document-based app
+### Set up a document-based app
 
 To create a customized document launch experience, follow these steps:
 
@@ -56,7 +56,7 @@ func mySetupTextView() {
 }
 ```
 
-##### Create new documents
+### Create new documents
 
 The document viewer uses app intents to create new documents. It also uses the [`UIDocument.CreationIntent`](./uidocument/creationintent.md) structure to specify the different ways your app can create documents. [`UIDocument`](./uidocument.md) already provides a default intent and the corresponding `.default` enumeration value.
 
@@ -108,7 +108,7 @@ override func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 }
 ```
 
-##### Customize the document browsing experience
+### Customize the document browsing experience
 
 On iPad, iPhone, and Vision Pro (for compatible iPad apps), the system displays a launch scene that contains a title and any document creation buttons. It also displays the document browser as a sheet over this view. Use your document view controller’s [`launchOptions`](./uidocumentviewcontroller/launchoptions-swift.property.md) property to customize this scene as follows:
 

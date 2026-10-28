@@ -18,7 +18,7 @@ The app’s primary icon for display on the Home Screen, in the Settings app, an
 - **Name**: `CFBundlePrimaryIcon` (Primary Icon)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 In your app for iOS, iPadOS, or watchOS, the value is a dictionary that contains the keys and values listed below. In your app for tvOS or visionOS, the value is a string that names an icon in your app’s asset catalog.
 

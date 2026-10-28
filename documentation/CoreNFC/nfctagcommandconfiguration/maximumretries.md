@@ -21,7 +21,7 @@ var maximumRetries: Int { get set }
 @property (nonatomic, assign) NSUInteger maximumRetries;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify up to 256 retries. By default, the value of this parameter is `0`.
 

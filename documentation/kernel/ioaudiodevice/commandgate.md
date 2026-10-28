@@ -9,7 +9,7 @@
 IOCommandGate *commandGate;
 ```
 
-#### Overview
+## Overview
 
 The IOCommandGate for this IOAudioDevice. It is attached to workLoop
 

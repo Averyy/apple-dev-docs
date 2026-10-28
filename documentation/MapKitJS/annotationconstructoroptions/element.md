@@ -15,7 +15,7 @@ Sets the element of the annotation.
 element?: HTMLElement;
 ```
 
-#### Discussion
+## Discussion
 
 The framework ignores the element option in the constructor. If present, it generates a warning.
 

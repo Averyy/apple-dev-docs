@@ -24,7 +24,7 @@ var isDraftModeEnabled: Bool { get set }
 @property (readwrite, getter=isDraftModeEnabled) BOOL draftModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to `true` can improve image decoding speed with minimal loss of quality. The default value is `false`.
 

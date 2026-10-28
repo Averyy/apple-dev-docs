@@ -23,7 +23,7 @@ func add(_ observer: any FCPXTimelineObserver)
 
 - [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Discussion
+## Discussion
 
 You can choose any object in your extension to act as an observer; you typically use the extension view controller. Make sure that the observer object conforms to the [`FCPXTimelineObserver`](../fcpxtimelineobserver.md) protocol.
 

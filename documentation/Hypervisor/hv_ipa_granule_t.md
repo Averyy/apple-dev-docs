@@ -17,7 +17,7 @@ struct hv_ipa_granule_t
 typedef enum { ... } hv_ipa_granule_t;
 ```
 
-#### Overview
+## Overview
 
 Supported intermediate physical address (IPA) granules.
 

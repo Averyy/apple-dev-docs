@@ -22,7 +22,7 @@ var defaultDocumentAspectRatio: CGFloat { get set }
 @property (nonatomic, assign) CGFloat defaultDocumentAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The aspect ratio is defined as the button’s width divided by its height. The default is `2.0/3.0`.
 

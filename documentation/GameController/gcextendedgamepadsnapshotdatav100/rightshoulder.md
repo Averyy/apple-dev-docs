@@ -26,7 +26,7 @@ var rightShoulder: Float
 float rightShoulder;
 ```
 
-#### Discussion
+## Discussion
 
 The range of permissible values is `0.0` to `1.0`, inclusive.
 

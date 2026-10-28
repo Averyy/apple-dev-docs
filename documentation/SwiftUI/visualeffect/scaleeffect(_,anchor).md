@@ -31,11 +31,11 @@ func scaleEffect(_ scale: CGFloat, anchor: UnitPoint = .center) -> some VisualEf
 func scaleEffect(_ scale: CGSize, anchor: UnitPoint = .center) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that scales this view by `s` in all dimensions.
 
-#### Discussion
+## Discussion
 
 The original dimensions of the view are considered to be unchanged by scaling the contents. To change the dimensions of the view, use a modifier like `frame()` instead.
 

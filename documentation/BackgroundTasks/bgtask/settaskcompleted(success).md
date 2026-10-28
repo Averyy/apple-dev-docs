@@ -27,7 +27,7 @@ func setTaskCompleted(success: Bool)
 
 - [Choosing Background Strategies for Your App](../choosing-background-strategies-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Not calling [`setTaskCompleted(success:)`](./settaskcompleted%28success%29.md) before the time for the task expires may result in the system killing your app.
 

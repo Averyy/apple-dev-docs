@@ -21,7 +21,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, retain, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 The date provider uses the time zone information during formatting to ensure that the date information is displayed correctly. To use the current time zone, set this property to `nil`.
 

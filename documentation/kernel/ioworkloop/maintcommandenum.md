@@ -12,7 +12,7 @@ typedef enum {
 } maintCommandEnum;
 ```
 
-#### Overview
+## Overview
 
 Enumeration of commands that _maintCommand can deal with.
 

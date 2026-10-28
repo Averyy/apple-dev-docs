@@ -14,7 +14,7 @@
 registerComponentNoDuplicates = 2
 ```
 
-#### Discussion
+## Discussion
 
 Specify this flag to indicate that if a component with identical characteristics to the one being registered already exists, then the new one should not be registered (`RegisterComponent` returns 0 in this situation). If you do not specify this flag, the component is registered even if a component with identical characteristics to the one being registered already exists.
 

@@ -21,7 +21,7 @@ Run this job on the passed in task executor.
 func runSynchronously(on executor: UnownedTaskExecutor)
 ```
 
-#### Discussion
+## Discussion
 
 This operation runs the job on the calling thread and *blocks* until the job completes. The intended use of this method is for an executor to determine when and where it wants to run the job and then call this method on it.
 

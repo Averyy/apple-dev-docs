@@ -18,15 +18,15 @@ Creates an environment values, transaction, container values, or focused values 
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(__Key_)) macro Entry()
+@attached(accessor)
+@attached(peer, names: prefixed(__Key_)) macro Entry()
 ```
 
 ## Mentions
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Environment Values
+## Environment Values
 
 Create [`EnvironmentValues`](./environmentvalues.md) entries by extending the [`EnvironmentValues`](./environmentvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
@@ -37,7 +37,7 @@ extension EnvironmentValues {
 }
 ```
 
-#### Transaction Values
+## Transaction Values
 
 Create [`Transaction`](./transaction.md) entries by extending the [`Transaction`](./transaction.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
@@ -47,7 +47,7 @@ extension Transaction {
 }
 ```
 
-#### Container Values
+## Container Values
 
 Create [`ContainerValues`](./containervalues.md) entries by extending the [`ContainerValues`](./containervalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
@@ -57,7 +57,7 @@ extension ContainerValues {
 }
 ```
 
-#### Focused Values
+## Focused Values
 
 Since the default value for [`FocusedValues`](./focusedvalues.md) is always `nil`, [`FocusedValues`](./focusedvalues.md) entries cannot specify a different default value and must have an Optional type.
 

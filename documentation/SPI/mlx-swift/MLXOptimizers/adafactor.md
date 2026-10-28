@@ -17,11 +17,11 @@ The Adafactor optimizer.
 class Adafactor
 ```
 
-#### Overview
+## Overview
 
 Our Adafactor implementation follows the original paper: `Adafactor: Adaptive Learning Rates with Sublinear Memory Cost [https://arxiv.org/abs/1804.04235](https://arxiv.org/abs/1804.04235)
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

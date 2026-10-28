@@ -23,7 +23,7 @@ var rollAngle: CGFloat { get }
 @property (readonly) CGFloat rollAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The roll angle represents the side-to-side tilt of the face relative to the metadata’s bounding rectangle. A value of `0.0` yields a face that is level relative to the picture, whereas a value of `90` yields a face that is perpendicular relative to the picture.
 

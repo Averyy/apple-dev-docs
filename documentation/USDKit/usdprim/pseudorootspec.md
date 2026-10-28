@@ -20,7 +20,7 @@ A handle to a layer’s pseudo-root — the implicit parent of all top-level pri
 struct PseudoRootSpec
 ```
 
-#### Overview
+## Overview
 
 The pseudo-root is a special spec that’s automatically created by every layer. It’s not authored as a prim in the file, but it conceptually owns the top-level prims. It conforms to `USDLayer.Spec.MetadataCollection` and `USDLayer.Spec.FieldCollection`.
 

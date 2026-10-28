@@ -24,7 +24,7 @@ class GCXboxGamepad
 @interface GCXboxGamepad : GCExtendedGamepad
 ```
 
-#### Overview
+## Overview
 
 The Xbox controller profile is similar to an extended game pad ([`GCExtendedGamepad`](./gcextendedgamepad.md)), but has four paddle button elements.
 

@@ -19,7 +19,7 @@ var hyphenationFactor: Float { get set }
 @property float hyphenationFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values lie between `0.0` and `1.0` inclusive. The default value is `0.0`. Hyphenation is attempted when the ratio of the text width (as broken without hyphenation) to the width of the line fragment is less than the hyphenation factor. When the paragraph’s hyphenation factor is `0.0`, the layout manager’s hyphenation factor is used instead. When both are `0.0`, hyphenation is disabled. This property detects the user-selected language by examining the first item in `preferredLanguages`.
 

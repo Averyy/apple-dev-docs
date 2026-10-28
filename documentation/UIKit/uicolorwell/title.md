@@ -22,7 +22,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to explain what kind of color to pick, like “Stroke Color” or “Fill Color”.
 

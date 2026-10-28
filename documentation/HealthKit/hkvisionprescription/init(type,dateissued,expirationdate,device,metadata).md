@@ -24,7 +24,7 @@ convenience init(type: HKVisionPrescriptionType, dateIssued: Date, expirationDat
 + (instancetype) prescriptionWithType:(HKVisionPrescriptionType) type dateIssued:(NSDate *) dateIssued expirationDate:(NSDate *) expirationDate device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an image-only prescription. Here, you attach the prescription as an image or PDF to a simple sample. The sample contains only basic information about the prescription, such as the issue and expiration dates. To see the prescription data, people must view the attached image or PDF.
 

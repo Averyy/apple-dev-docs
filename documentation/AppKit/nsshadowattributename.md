@@ -15,7 +15,7 @@ The shadow of the text.
 extern NSAttributedStringKey NSShadowAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSShadow`](./nsshadow.md) object. The default value of this property is `nil`.
 

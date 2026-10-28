@@ -20,7 +20,7 @@ A mode which uses the set rotation target.
 case orientation
 ```
 
-##### Demand target
+### Demand target
 
 - **Source**: The model space orientation of the constrained joint from the FK demands pose.
 - **Target**: The rotation component of [`target`](../../../../ikcomponent/constraint/target.md).

@@ -25,7 +25,7 @@ static var permissionDenied: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to access a file in a way that’s forbidden by the file’s access permissions.
 

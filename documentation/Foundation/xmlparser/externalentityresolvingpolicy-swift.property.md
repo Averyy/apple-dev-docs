@@ -25,7 +25,7 @@ var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy { get
 @property NSXMLParserExternalEntityResolvingPolicy externalEntityResolvingPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NSXMLParserResolveExternalEntitiesNever`.
 

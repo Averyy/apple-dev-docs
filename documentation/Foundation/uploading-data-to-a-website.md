@@ -5,11 +5,11 @@
 
 Post data from your app to servers.
 
-#### Overview
+## Overview
 
 Many apps work with servers that accept uploads of files like images or documents, or use web service API endpoints that accept structured data like JSON. To upload data from your app, you use a [`URLSession`](./urlsession.md) instance to create a [`URLSessionUploadTask`](./urlsessionuploadtask.md) instance. The upload task uses a [`URLRequest`](./urlrequest.md) instance that details how the upload is to be performed.
 
-##### Prepare your data for upload
+### Prepare your data for upload
 
 The data to upload can be the contents of a file, a stream, or data, as is the case in the following example.
 
@@ -34,7 +34,7 @@ guard let uploadData = try? JSONEncoder().encode(order) else {
 
 There are many other ways to create a data instance, such as encoding an image as JPEG or PNG data, or converting a string to data by using an encoding like UTF-8.
 
-##### Configure an upload request
+### Configure an upload request
 
 An upload task requires a [`URLRequest`](./urlrequest.md) instance. As shown in the following example, set the [`httpMethod`](./urlrequest/httpmethod.md) property of the request to `"``POST``"` or `"PUT"`, depending on what the server supports and expects. Use the [`setValue(_:forHTTPHeaderField:)`](./urlrequest/setvalue%28_,forhttpheaderfield%29.md) method to set the values of any HTTP headers that you want to provide, except the `Content-Length` header. The session figures out content length automatically from the size of your data.
 
@@ -47,7 +47,7 @@ request.httpMethod = "POST"
 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 ```
 
-##### Create and start an upload task
+### Create and start an upload task
 
 To begin an upload, call [`uploadTask(with:from:completionHandler:)`](./urlsession/uploadtask%28with,from,completionhandler%29.md) on a [`URLSession`](./urlsession.md) instance to create an uploading [`URLSessionTask`](./urlsessiontask.md) instance, passing in the request and the data instances you’ve previously set up. Because tasks start in a suspended state, you begin the network loading process by calling [`resume()`](./urlsessiontask/resume%28%29.md) on the task. The following example uses the shared `URLSession` instance, and receives its results in a completion handler. The handler checks for transport and server errors before using any returned data.
 
@@ -74,7 +74,7 @@ let task = URLSession.shared.uploadTask(with: request, from: uploadData) { data,
 task.resume()
 ```
 
-##### Alternatively, upload by setting a delegate
+### Alternatively, upload by setting a delegate
 
 As an alternative to the completion handler approach, you can instead set a delegate on a session you configure, and then create the upload task with [`uploadTask(with:from:)`](./urlsession/uploadtask%28with,from%29.md). In this scenario, you implement methods from the [`URLSessionDelegate`](./urlsessiondelegate.md) and [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) protocols. These methods receive the server response and any data or transport errors.
 

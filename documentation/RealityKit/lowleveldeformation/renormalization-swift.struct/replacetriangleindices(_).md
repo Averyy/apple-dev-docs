@@ -18,11 +18,11 @@ Fills the triangle index buffer using the given closure.
 func replaceTriangleIndices<R>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) -> R) throws -> R where R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`.
 
-#### Discussion
+## Discussion
 
 After the closure returns, the framework validates every vertex index against the vertex count. An out-of-range index causes a throw.
 

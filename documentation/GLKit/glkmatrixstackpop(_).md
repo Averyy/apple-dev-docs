@@ -22,7 +22,7 @@ func GLKMatrixStackPop(_ stack: GLKMatrixStack)
 void GLKMatrixStackPop(GLKMatrixStackRef stack);
 ```
 
-#### Discussion
+## Discussion
 
 This function does nothing if the stack is already empty.
 

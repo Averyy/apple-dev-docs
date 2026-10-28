@@ -12,11 +12,11 @@ virtual const char * getPixelFormats(
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A const char * pointer. The string consists of a concatenation of each pixel format string separated by the NULL character. The commonly supported pixel formats for macOS are defined as IO8BitIndexedPixels, IO16BitDirectPixels, IO32BitDirectPixels.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return an array of strings representing the possible pixel formats available in the framebuffer.
 

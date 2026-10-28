@@ -19,7 +19,7 @@ var rangeForUserCharacterAttributeChange: NSRange { get }
 @property (readonly) NSRange rangeForUserCharacterAttributeChange;
 ```
 
-#### Discussion
+## Discussion
 
 The range of characters affected by an action method that changes character (not paragraph) attributes, such as the NSText action method [`changeFont(_:)`](../nstext/changefont%28_%29.md). For rich text this range is typically the range of the selection. For plain text this range is the entire contents of the receiver. If the receiver isn’t editable or doesn’t use the Font panel, the range has a location of `NSNotFound`.
 

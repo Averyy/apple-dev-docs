@@ -21,7 +21,7 @@ Modifies the format style to use the specified presentation.
 func presentation(_ p: IntegerFormatStyle<Value>.Currency.Configuration.Presentation) -> IntegerFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 An integer currency format style modified to use the specified presentation.
 

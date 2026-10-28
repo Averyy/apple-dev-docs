@@ -23,7 +23,7 @@ optional func find(_ sender: Any?)
 - (void) find:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Find command from an editing menu. Your implementation should present the UI for finding textual content in your view.
 

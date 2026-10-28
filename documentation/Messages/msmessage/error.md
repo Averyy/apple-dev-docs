@@ -21,7 +21,7 @@ var error: (any Error)? { get set }
 @property (nonatomic, copy, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the `error` property when an error occurs while sending this message. It is set to `nil` if you have not yet sent the message or if you have sent the message successfully.
 

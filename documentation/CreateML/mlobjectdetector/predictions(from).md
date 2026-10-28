@@ -15,7 +15,7 @@ Locates objects in an array of images and generates an array of annotation colle
 func predictions(from images: [URL]) throws -> [MLObjectDetector.DetectedObjects]
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLObjectDetector.DetectedObjects`](./detectedobjects.md) array, where each element represents the annotations of the items the object detector found in the corresponding input image.
 

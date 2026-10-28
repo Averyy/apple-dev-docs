@@ -25,7 +25,7 @@ func endInterval(_ name: StaticString, _ state: OSSignpostIntervalState)
 
 - [Recording Performance Data](../recording-performance-data.md)
 
-#### Discussion
+## Discussion
 
 The signposter uses interval state to enforce the following runtime assertions:
 

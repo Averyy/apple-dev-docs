@@ -5,11 +5,11 @@
 
 Measure and minimize the space your app uses to store its files.
 
-#### Overview
+## Overview
 
 People use multiple apps on a device, to create and access important content. Minimize your app’s disk usage to make more space for a person’s content, and to allow someone to install more apps on their device. Store recoverable data in purgeable locations, so that the system can free up space when it needs to.
 
-##### Review your app’s disk usage
+### Review your app’s disk usage
 
 To see the storage used by each app on your device, open Settings and choose General > Storage.
 
@@ -17,7 +17,7 @@ To see the storage used by each app on your device, open Settings and choose Gen
 
 Tap on your app to see a breakdown of how the app’s bundle, documents, and data contribute to the overall disk usage.
 
-##### Gather metrics on disk usage
+### Gather metrics on disk usage
 
 Use [MetricKit](../MetricKit/MetricKit.md) to gather metrics on the number of files in your app’s container and the disk space they occupy. Observe the `metricReports` asynchronous sequence and read the file count and size values from the daily report:
 
@@ -43,7 +43,7 @@ for await report in manager.metricReports {
 }
 ```
 
-##### Use purgeable folders for recoverable content
+### Use purgeable folders for recoverable content
 
 When you download or otherwise generate content that your app can recover if it needs to, store that content in the [`cachesDirectory`](../Foundation/url/cachesdirectory.md) or the [`temporaryDirectory`](../Foundation/filemanager/temporarydirectory.md). The system automatically deletes content in the `cachesDirectory` and `temporaryDirectory` — an operation known as *purging* — when it detects that disk space is low.
 
@@ -64,7 +64,7 @@ let cacheDownloadTask = URLSession.shared.downloadTask(with: cacheURL) {
 }
 ```
 
-##### Manage local copies of iCloud files
+### Manage local copies of iCloud files
 
 When a person isn’t using the local copy of a file that’s stored in iCloud, call [`evictUbiquitousItem(at:)`](../Foundation/filemanager/evictubiquitousitem%28at%29.md) to remove the local copy while keeping the original on iCloud:
 
@@ -88,7 +88,7 @@ func fetchRemoteDocument(for localURL: URL) throws {
 
 > ⚠️ **Warning**:  If you delete a file from iCloud by calling [`removeItem(at:)`](../Foundation/filemanager/removeitem%28at%29.md), the system deletes both the local and iCloud copy, and you can’t recover the file.
 
-##### Copy files by creating clones
+### Copy files by creating clones
 
 When you use [`copyItem(at:to:)`](../Foundation/filemanager/copyitem%28at,to%29.md) to copy a file on an APFS volume, the system creates a *clone* of the file. The clone refers to the original file’s content, so it uses less space on disk than if you duplicate the file through other methods. MetricKit’s [`TotalFileSizeMetric`](../MetricKit/totalfilesizemetric.md) accounts for clones in its calculations of the disk space used by your app.
 

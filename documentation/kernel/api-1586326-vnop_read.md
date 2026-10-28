@@ -15,11 +15,11 @@ Call down to a filesystem to read file data.
 errno_t VNOP_READ(vnode_t vp, struct uio *uio, int ioflag, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or a filesystem-specific error. VNOP_READ() can return success even if less data was read than originally requested; returning an error value should indicate that something actually went wrong.
 
-#### Discussion
+## Discussion
 
 VNOP_READ() is where the hard work of of the read() system call happens. The filesystem may use the buffer cache, the cluster layer, or an alternative method to get its data; uio routines will be used to see that data is copied to the correct virtual address in the correct address space and will update its uio argument to indicate how much data has been moved.
 

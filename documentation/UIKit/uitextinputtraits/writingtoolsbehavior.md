@@ -26,7 +26,7 @@ optional var writingToolsBehavior: UIWritingToolsBehavior { get set }
 
 - [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the type of experience to display when someone engages writing tools for a text input view. The system does its best to provide the requested UI, but might offer a more limited experience if required capabilities aren’t available. The default value of this property is [`UIWritingToolsBehavior.default`](../uiwritingtoolsbehavior/default.md), which lets the system choose the most appropriate experience for the current device.
 

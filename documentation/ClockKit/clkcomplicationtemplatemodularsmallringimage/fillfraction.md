@@ -21,7 +21,7 @@ var fillFraction: Float { get set }
 @property (nonatomic) float fillFraction;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a value between `0.0` and `1.0`, where `0.0` represents no ring and `1.0` represents a complete ring.
 

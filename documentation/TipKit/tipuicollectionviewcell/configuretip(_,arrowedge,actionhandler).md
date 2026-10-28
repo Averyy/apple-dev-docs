@@ -19,7 +19,7 @@ Configures the cell to display an embedded tip view.
 @MainActor @preconcurrency final func configureTip(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in }) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A collection cell view that embeds the specified tip.
 

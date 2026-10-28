@@ -20,7 +20,7 @@ optional func pageControllerWillStartLiveTransition(_ pageController: NSPageCont
 - (void) pageControllerWillStartLiveTransition:(NSPageController *) pageController;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent when the user begins a transition whether via a swipe gesture of one of the page controller’s target-action navigation methods.
 

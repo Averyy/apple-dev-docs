@@ -21,11 +21,11 @@ optional func tableView(_ tableView: UITableView, editActionsForRowAt indexPath:
 - (NSArray<UITableViewRowAction *> *) tableView:(UITableView *) tableView editActionsForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UITableViewRowAction`](../uitableviewrowaction.md) objects representing the actions for the row. Each action you provide is used to create a button that the user can tap.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to provide custom actions for one of your table rows. When the user swipes horizontally in a row, the table view moves the row content aside to reveal your actions. Tapping one of the action buttons executes the handler block stored with the action object.
 

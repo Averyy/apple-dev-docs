@@ -15,11 +15,11 @@ Based on the given text encoding specification for theconverted text, creates an
 OSStatus CreateUnicodeToTextInfoByEncoding(TextEncoding iEncoding, UnicodeToTextInfo *oUnicodeToTextInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You can use this function instead of the  [`CreateUnicodeToTextInfo`](./api-1433522-createunicodetotextinfo.md)  function tocreate a Unicode converter. However, this method is less efficientinternally because the destination text encoding you specify mustbe resolved into a Unicode mapping. Using this function, you cannotspecify a version of Unicode, so a default version of Unicode is used;16-bit format is assumed.
 

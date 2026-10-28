@@ -21,11 +21,11 @@ Transforms a DataFrame into one with column types compatible with JSON represent
 func jsonRepresentableDataFrame(of kind: EvaluationResult.DataFrameKind) throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 A new DataFrame with JSON-serializable column types.
 
-#### Discussion
+## Discussion
 
 The detailed branch always excludes the `Transcript` column from this public helper; transcript serialization is opted into through [`jsonData(includeReportMetadata:includeTranscripts:jsonOptions:)`](./jsondata%28includereportmetadata,includetranscripts,jsonoptions%29.md).
 

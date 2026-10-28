@@ -20,11 +20,11 @@ var configurationDescriptor: UnsafePointer<IOUSBConfigurationDescriptor>? { get 
 @property (readonly, nullable) const IOUSBConfigurationDescriptor * configurationDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the device’s configuration descriptor, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The [`IOUSBHostDevice`](../iousbhostdevice.md) performs memory management. Don’t free the descriptor, and assume it is valid as long as the [`IOUSBHostDevice`](../iousbhostdevice.md) hasn’t called [`destroy()`](../iousbhostobject/destroy%28%29.md).
 

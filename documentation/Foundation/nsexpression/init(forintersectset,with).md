@@ -25,7 +25,7 @@ init(forIntersectSet left: NSExpression, with right: NSExpression)
 + (NSExpression *) expressionForIntersectSet:(NSExpression *) left with:(NSExpression *) right;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSExpression` object that represents the intersection of `left` and `right`.
 

@@ -20,7 +20,7 @@ A type that describes a control widget’s content.
 @preconcurrency protocol ControlWidgetConfiguration
 ```
 
-#### Overview
+## Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

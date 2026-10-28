@@ -5,7 +5,7 @@
 
 Analyze your App Store subscription performance.
 
-#### Overview
+## Overview
 
 The Subscription State report includes the count of active and churned subscriptions on the App Store. You can use this report to understand the total number of paid subscriptions, free trials, paid offers, subscriptions in billing issues, and more. Subscription data in this report is enriched with app download source and referrer information, enabling you to understand which acquisition channels help you acquire subscribers.
 
@@ -20,7 +20,7 @@ The Subscription State report includes the count of active and churned subscript
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections. To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |
 | --- | --- | --- | --- | --- |
@@ -54,7 +54,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Territory | The territory associated with the account that purchased the subscription. | `string` | ✔ | ✔ |
 | Counts | Number of subscriptions | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

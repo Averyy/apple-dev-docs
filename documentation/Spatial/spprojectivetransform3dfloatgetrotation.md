@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPProjectiveTransform3DFloatGetRotation(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A rotation structure that represents the transform’s rotation.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform’s rotation.
 

@@ -28,7 +28,7 @@ optional func confirm(intent: INSetRadioStationIntent) async -> INSetRadioStatio
 - (void) confirmSetRadioStation:(INSetRadioStationIntent *) intent completion:(void (^)(INSetRadioStationIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can change the radio station using the given parameters. For example, automotive vendors might use this method to verify that there’s an active connection to the vehicle. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to make the change.
 

@@ -23,7 +23,7 @@ let kCLErrorUserInfoAlternateRegionKey: String
 extern NSString * const kCLErrorUserInfoAlternateRegionKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is included in an error of type [`regionMonitoringResponseDelayed`](./clerror-swift.struct/regionmonitoringresponsedelayed.md). The value is a [`CLRegion`](./clregion.md) object containing the region that location services can monitor more effectively.
 

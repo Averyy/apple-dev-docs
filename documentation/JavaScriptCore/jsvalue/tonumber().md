@@ -24,11 +24,11 @@ func toNumber() -> NSNumber!
 - (NSNumber *) toNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A [`NSNumber`](../../Foundation/nsnumber.md) object encapsulating the native representation of the value.
 
-#### Discussion
+## Discussion
 
 If the value represents a Boolean value, the resulting [`NSNumber`](../../Foundation/nsnumber.md) object is created as with the [`numberWithBool:`](../../Foundation/nsnumber/numberwithbool_.md) method. Otherwise, this method uses JavaScript type coercion to convert the value to a JavaScript numeric value and creates a [`NSNumber`](../../Foundation/nsnumber.md) object wrapping the result.
 

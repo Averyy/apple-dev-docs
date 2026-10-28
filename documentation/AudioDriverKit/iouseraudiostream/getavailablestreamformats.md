@@ -15,11 +15,11 @@ Returns the available stream formats as an array of audio stream basic descripti
 size_t GetAvailableStreamFormats(IOUserAudioStreamBasicDescription *out_formats, size_t in_num_formats);
 ```
 
-#### Return Value
+## Return Value
 
 The number of descriptions populated in the `out_formats` buffer.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

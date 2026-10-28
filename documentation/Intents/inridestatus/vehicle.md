@@ -32,7 +32,7 @@ var vehicle: INRideVehicle? { get set }
 @property (atomic, copy, readwrite, nullable) INRideVehicle * vehicle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify information about the vehicle assigned to pick up the user. Siri and Maps display vehicle information to the user so that the user can identify the vehicle when it arrives.
 

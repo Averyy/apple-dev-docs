@@ -17,7 +17,7 @@ A Boolean value that indicates whether the configuration allows two-factor authe
 let isCertificateRequired: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the configuration allows two-factor authentication for EAP-TTLS, PEAP, or EAP-FAST. If `false`, the configuration allows zero-factor authentication for EAP-TLS.
 

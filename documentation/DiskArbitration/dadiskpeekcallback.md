@@ -20,7 +20,7 @@ typealias DADiskPeekCallback = (DADisk, UnsafeMutableRawPointer?) -> Void
 typedef void (*)(struct __DADisk *, void *) DADiskPeekCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The peek callback functions are called in a specific order, from lowest order to highest order. DADiskClaim() could be used here to claim the disk object and DADiskSetOptions() could be used here to set up options on the disk object.
 

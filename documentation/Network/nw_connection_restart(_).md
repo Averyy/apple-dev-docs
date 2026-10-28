@@ -25,7 +25,7 @@ func nw_connection_restart(_ connection: nw_connection_t)
 void nw_connection_restart(nw_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 Restart a connection when it is in the waiting state and you have reason to believe the connection may succeed if it tries again. Connections that are waiting will automatically restart on network path changes.
 

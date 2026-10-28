@@ -21,7 +21,7 @@ Sets the event handler work item for the dispatch source.
 func setEventHandler(handler: DispatchWorkItem)
 ```
 
-#### Discussion
+## Discussion
 
 The event handler (if specified) is submitted to the source’s target queue in response to the arrival of an event.
 

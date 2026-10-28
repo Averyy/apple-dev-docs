@@ -21,7 +21,7 @@ var keyEquivalentFont: NSFont? { get set }
 @property (strong, nullable) NSFont * keyEquivalentFont;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the font object that describes the font used to draw the button’s key equivalent. If the property value is `nil`, the button doesn’t have a key equivalent. Setting this property redraws the button if necessary. Setting this property on a button that has no key equivalent does nothing.
 

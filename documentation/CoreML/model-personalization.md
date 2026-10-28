@@ -5,7 +5,7 @@
 
 Update your model to adapt to new data.
 
-#### Overview
+## Overview
 
 On-device model updates provide your app the flexibility to personalize a user’s experience. For example, ordering a mocha at your favorite coffee shop every day increases a model’s ability to recommend that drink on subsequent visits. With the Core ML framework, you can adapt to incoming data with an updatable model at runtime on the user’s device.
 

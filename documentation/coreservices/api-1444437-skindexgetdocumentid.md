@@ -19,11 +19,11 @@ func SKIndexGetDocumentID(_ inIndex: SKIndex!, _ inDocument: SKDocument!) -> SKD
 SKDocumentID SKIndexGetDocumentID(SKIndexRef inIndex, SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A document ID object.
 
-#### Discussion
+## Discussion
 
 The document ID identifies a document URL object (of type [`SKDocument`](./skdocument.md)) in an index. The ID is available as soon as you add a document URL object to an index using [`SKIndexAddDocumentWithText(_:_:_:_:)`](./api-1444518-skindexadddocumentwithtext.md) or [`SKIndexAddDocument(_:_:_:_:)`](./api-1444897-skindexadddocument.md).
 

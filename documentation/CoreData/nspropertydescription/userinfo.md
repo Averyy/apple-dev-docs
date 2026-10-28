@@ -25,7 +25,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (nonatomic, strong, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the user info raises an exception if the receiver’s model has been used by an object graph manager.
 

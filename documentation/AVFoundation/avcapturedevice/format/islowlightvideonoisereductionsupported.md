@@ -24,7 +24,7 @@ var isLowLightVideoNoiseReductionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLowLightVideoNoiseReductionSupported) BOOL lowLightVideoNoiseReductionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the format supports low light video noise reduction.
 

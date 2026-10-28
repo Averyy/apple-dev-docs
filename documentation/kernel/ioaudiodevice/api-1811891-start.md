@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success
 
-#### Overview
+## Overview
 
 The start() implementation in IOAudioDevice starts by calling start() on its superclass. It then calls initHardware() which the subclass should override to properly initialize itself and the hardware. If that call succeeds, it sets up power management if the family is supposed to manage power (checking the familyManagePower variable). Then finally it calls registerService() to make the IOAudioDevice visible in the IORegistry.
 

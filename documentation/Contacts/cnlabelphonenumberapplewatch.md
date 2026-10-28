@@ -24,7 +24,7 @@ let CNLabelPhoneNumberAppleWatch: String
 extern NSString * const CNLabelPhoneNumberAppleWatch;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

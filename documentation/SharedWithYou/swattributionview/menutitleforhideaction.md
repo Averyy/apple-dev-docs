@@ -24,7 +24,7 @@ var menuTitleForHideAction: String? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSString * menuTitleForHideAction;
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value causes the system to use the default title.
 

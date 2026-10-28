@@ -19,7 +19,7 @@ func drawSwatch(in rect: NSRect)
 - (void) drawSwatchInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses adorn the rectangle in some manner to indicate the type of color. This method is invoked by color wells, swatches, and other user interface objects that need to display colors.
 

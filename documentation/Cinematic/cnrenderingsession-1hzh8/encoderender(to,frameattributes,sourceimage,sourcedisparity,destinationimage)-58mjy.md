@@ -21,7 +21,7 @@ Encode a command to render a shallow depth of field (SDoF) image to a pixel buff
 func encodeRender(to commandBuffer: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationImage: CVPixelBuffer) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether encoding the render command was successful
 

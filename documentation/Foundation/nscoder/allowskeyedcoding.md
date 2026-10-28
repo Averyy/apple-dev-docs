@@ -25,7 +25,7 @@ var allowsKeyedCoding: Bool { get }
 @property (readonly) BOOL allowsKeyedCoding;
 ```
 
-#### Discussion
+## Discussion
 
 [`false`](../../Swift/false.md) by default. Concrete subclasses that support keyed coding, such as `NSKeyedArchiver`, need to override this property to return [`true`](../../Swift/true.md).
 

@@ -15,7 +15,7 @@ An action that updates the game counter.
 struct UpdateCounterAction
 ```
 
-#### Overview
+## Overview
 
 To create an update counter action, use the [`updateCounter(_:context:)`](./tabletopaction/updatecounter%28_,context%29.md) or the [`updateCounter(matching:value:context:)`](./tabletopaction/updatecounter%28matching,value,context%29.md) static method.
 

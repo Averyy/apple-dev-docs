@@ -22,7 +22,7 @@ var shouldEvaluateForInputSystemHandling: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL shouldEvaluateForInputSystemHandling;
 ```
 
-#### Discussion
+## Discussion
 
 When using an input mode with composed input, such as Chinese/Japanese/Korean, the markedText will be used to combine multiple key events into a single character.
 

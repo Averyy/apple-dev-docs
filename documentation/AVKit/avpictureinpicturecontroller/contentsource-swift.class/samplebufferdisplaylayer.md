@@ -24,7 +24,7 @@ var sampleBufferDisplayLayer: AVSampleBufferDisplayLayer? { get }
 @property (nonatomic, readonly, nullable) AVSampleBufferDisplayLayer * sampleBufferDisplayLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the content source doesn’t represent a sample buffer display layer.
 

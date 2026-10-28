@@ -23,7 +23,7 @@ class func allWebsiteDataTypes() -> Set<String>
 + (NSSet<NSString *> *) allWebsiteDataTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Potential values in the set are [`WKWebsiteDataRecord`](../wkwebsitedatarecord.md) constants.
 

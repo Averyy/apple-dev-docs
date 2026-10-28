@@ -23,7 +23,7 @@ var sizeRestrictions: UISceneSizeRestrictions? { get }
 @property (nonatomic, readonly, nullable) UISceneSizeRestrictions * sizeRestrictions;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is not `nil`, use it to change the default minimum and maximum window sizes for your app. If the value of this property is `nil,` the system doesn’t allow you to set window size restrictions.
 

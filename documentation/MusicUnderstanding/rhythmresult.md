@@ -21,7 +21,7 @@ A structure that describes a song’s rhythm results in terms of beats, bars, an
 struct RhythmResult
 ```
 
-#### Overview
+## Overview
 
 - **Bars**: A group of beats, typically containing 2-4 beats depending on the song’s time signature.
 - **Beats**: The basic, recurrent pulse of a song.

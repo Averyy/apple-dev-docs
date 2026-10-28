@@ -21,7 +21,7 @@ A person is touching content directly.
 static let directTouch: GestureInputKinds
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

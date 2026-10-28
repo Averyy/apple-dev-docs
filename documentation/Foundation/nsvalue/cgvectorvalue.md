@@ -24,7 +24,7 @@ var cgVectorValue: CGVector { get }
 @property (nonatomic, readonly) CGVector CGVectorValue;
 ```
 
-#### Return Value
+## Return Value
 
 The CoreGraphics vector structure representation of the value.
 

@@ -15,7 +15,7 @@ Options that affect the performance of read-write operations.
 typedef uint32_t IOUserStorageOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use these options with the [`DoAsyncReadWrite`](./iouserblockstoragedevice/doasyncreadwrite.md) function.
 

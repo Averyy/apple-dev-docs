@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Quadraphonic: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Quadraphonic
 ```
 
-#### Discussion
+## Discussion
 
 Quadraphonic recordings use a 90° loudspeaker separation layout. Your channels must be laid out in the following order:
 

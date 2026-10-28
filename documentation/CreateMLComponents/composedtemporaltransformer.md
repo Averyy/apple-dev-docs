@@ -21,7 +21,7 @@ A temporal transformer that composes two temporal transformers by applying them 
 struct ComposedTemporalTransformer<Inner, Outer> where Inner : TemporalTransformer, Outer : TemporalTransformer, Inner.Output == Outer.Input
 ```
 
-#### Overview
+## Overview
 
 The inner transformer’s output must match the outer transformer input. The result of this transformer is equivalent to invoking `outer(inner(x))` on an input `x`,
 

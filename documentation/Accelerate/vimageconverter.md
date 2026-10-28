@@ -31,7 +31,7 @@ typedef struct vImageConverter * vImageConverterRef;
 - [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md)
 - [Converting chroma-subsampled images](./converting-chroma-subsampled-images.md)
 
-#### Overview
+## Overview
 
 The [`vImageConverter`](./vimageconverter.md) class is an opaque type that contains information needed to do a rapid conversion from one image type to another.
 

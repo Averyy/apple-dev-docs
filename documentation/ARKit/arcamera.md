@@ -25,7 +25,7 @@ class ARCamera
 - [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
 - [Understanding World Tracking](./understanding-world-tracking.md)
 
-#### Overview
+## Overview
 
 You get camera information from the [`camera`](./arframe/camera.md) property of each [`ARFrame`](./arframe.md) ARKit delivers.
 

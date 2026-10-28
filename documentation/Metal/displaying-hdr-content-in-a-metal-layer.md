@@ -5,15 +5,15 @@
 
 Bring your high dynamic range (HDR) content to compatible Mac displays.
 
-#### Overview
+## Overview
 
 In graphics content, *dynamic range* refers to the range of light intensities that a device is capable of displaying or recording, or the range of intensities recorded in a piece of media. Any Mac can display standard dynamic range (SDR) content. Color values are implicitly display-referred, meaning that the brightness value of the content is adapted to the current brightness of the display. When a person adjusts the brightness of a display they connect to a Mac, the SDR content adjusts directly and proportionally.
 
-##### High dynamic range
+### High dynamic range
 
 High dynamic range (HDR) content has a wider range of brightness levels than older displays can provide. While HDR doesn’t have a precise definition, many media standards, such as HDR10, define exactly how encoded values correspond to physical brightness levels. In macOS, you can play some forms of HDR video content with [AVFoundation](../AVFoundation/AVFoundation.md) APIs such as [`AVPlayerLayer`](../AVFoundation/avplayerlayer.md) or [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md). Those APIs handle all color management and tone mapping required to display HDR content, even on SDR displays. However, you can also render your own HDR content to a [`CAMetalLayer`](../QuartzCore/cametallayer.md). You might do this to support a wider range of brightness levels in a game, or if you are using Metal to process video content.
 
-##### Extended dynamic range
+### Extended dynamic range
 
 Some Macs can process pixel data with a wider range of pixel values and send those extended values to the display. In macOS, the ability to process larger pixel values and display them is referred to as extended dynamic range (EDR). When you configure a Metal layer to support extended values, you can provide pixel values — and therefore brightness levels — that exceed the normal SDR range in order to display HDR content.
 
@@ -21,11 +21,11 @@ EDR works similarly to SDR; content is still display-referred, and brightness le
 
 Some displays, such as the Pro Display XDR, are always capable of displaying brighter pixels than those on an SDR display, and the extended dynamic range is always larger than the standard dynamic range. On displays that don’t support these high brightness levels, or if the user sets the display to its maximum brightness level, the extended range may be the same as the standard dynamic range.
 
-##### Reference displays
+### Reference displays
 
 The Pro Display XDR is capable of acting as a reference display for HDR authoring. Within a certain range of values, reference displays guarantee very precise color and brightness matching. Users rely on these accurate measurements when creating HDR content for distribution. If your app provides an authoring experience, you can find out whether a display is a reference display and tailor your app’s behavior to take advantage of it.
 
-##### Display techniques
+### Display techniques
 
 Because many HDR standards use physical brightness levels and EDR uses relative brightness levels, you need to decide how best to adapt your HDR content to the EDR-capable display environment. In many cases, you can provide your HDR data to macOS and it adapts the data to the EDR-capable display. In other cases, you may want to get information about the display directly. Here are some common options:
 

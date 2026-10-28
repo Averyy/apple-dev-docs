@@ -19,11 +19,11 @@
 static SPSphericalCoordinates3DFloat SPSphericalCoordinates3DFloatMakeWithCartesianVector(simd_float3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new spherical coordinates structure.
 
-#### Discussion
+## Discussion
 
 Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified simd vector.
 

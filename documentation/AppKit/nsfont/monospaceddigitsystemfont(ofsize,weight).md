@@ -19,11 +19,11 @@ class func monospacedDigitSystemFont(ofSize fontSize: CGFloat, weight: NSFont.We
 + (NSFont *) monospacedDigitSystemFontOfSize:(CGFloat) fontSize weight:(NSFontWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A font object containing the system font with monospace digits at the specified size and weight.
 
-#### Discussion
+## Discussion
 
 The font returned by this method has monospaced digit glyphs. Glyphs for other characters and symbols may be wider or narrower than the monospaced characters. To ensure the font uses fixed spacing for all characters, apply the [`fixedAdvance`](../nsfontdescriptor/attributename/fixedadvance.md) attribute to the any strings you render.
 

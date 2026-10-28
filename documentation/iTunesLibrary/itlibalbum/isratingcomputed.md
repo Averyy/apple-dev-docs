@@ -20,7 +20,7 @@ var isRatingComputed: Bool { get }
 @property (nonatomic, assign, readonly, getter=isRatingComputed) BOOL ratingComputed;
 ```
 
-#### Discussion
+## Discussion
 
 If the user rates tracks within the album individually, but hasn’t assigned a specific rating for the album, the album rating computes as the average of the rating of all tracks within the album (tracks with no rating don’t affect this average), and this property is `true`.
 

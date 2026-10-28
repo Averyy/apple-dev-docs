@@ -29,7 +29,7 @@ class AVAudioSession
 - [Handling audio interruptions](./handling-audio-interruptions.md)
 - [Responding to audio route changes](./responding-to-audio-route-changes.md)
 
-#### Overview
+## Overview
 
 An audio session acts as an intermediary between your app and the operating system — and, in turn, the underlying audio hardware. You use an audio session to communicate to the operating system the general nature of your app’s audio without detailing the specific behavior or required interactions with the audio hardware. You delegate the management of those details to the audio session, which ensures that the operating system can best manage the user’s audio experience.
 

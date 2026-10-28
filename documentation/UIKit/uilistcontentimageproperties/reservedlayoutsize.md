@@ -19,7 +19,7 @@ The layout size that the system reserves for the image, and then centers the ima
 @property (nonatomic) CGSize reservedLayoutSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to ensure:
 

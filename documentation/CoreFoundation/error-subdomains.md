@@ -4,7 +4,7 @@
 
 Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
 
-#### Overview
+## Overview
 
 Error codes in the `kCFStreamErrorDomainSOCKS` domain can come from multiple parts of the protocol stack, many of which define their own error values as part of outside specifications such as the HTTP specification.
 

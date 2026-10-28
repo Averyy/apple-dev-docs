@@ -19,7 +19,7 @@ var isContinuousSpellCheckingEnabled: Bool { get set }
 @property (nonatomic, getter=isContinuousSpellCheckingEnabled) BOOL continuousSpellCheckingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the object has continuous spell-checking enabled; otherwise, [`false`](../../Swift/false.md).
 

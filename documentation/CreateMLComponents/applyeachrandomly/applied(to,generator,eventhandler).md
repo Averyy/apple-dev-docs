@@ -21,7 +21,7 @@ Applies each transformer randomly in order with a probability.
 func applied(to input: Element, generator: inout some RandomNumberGenerator, eventHandler: EventHandler? = nil) async throws -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The augmented input.
 

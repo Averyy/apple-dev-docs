@@ -25,7 +25,7 @@ let MPMediaItemPropertyPlaybackDuration: String
 extern NSString * const MPMediaItemPropertyPlaybackDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object representing a duration in seconds as an [`TimeInterval`](../Foundation/timeinterval.md).
 

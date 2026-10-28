@@ -24,11 +24,11 @@ init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDept
 - (instancetype) initWithIndexBuffer:(id<MDLMeshBuffer>) indexBuffer indexCount:(NSUInteger) indexCount indexType:(MDLIndexBitDepth) indexType geometryType:(MDLGeometryType) geometryType material:(MDLMaterial *) material;
 ```
 
-#### Return Value
+## Return Value
 
 A new submesh object.
 
-#### Discussion
+## Discussion
 
 Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`](../mdlmesh.md) object, but you can also use this method to create a submesh programmatically.
 

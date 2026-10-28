@@ -4,7 +4,7 @@
 
 Displays text associated with an image.
 
-#### Overview
+## Overview
 
 The `textBadge` element contains a link to an image that is to be displayed. Here’s an example that displays the Subtitles for the deaf and hard of hearing (SDH) badge.
 
@@ -12,7 +12,7 @@ The `textBadge` element contains a link to an image that is to be displayed. Her
 <textBadge>SDH</textBadge>
 ```
 
-##### Contained In
+### Contained In
 
 - [header](./header.md)
 - [organizer](./organizer.md)

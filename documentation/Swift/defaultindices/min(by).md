@@ -22,11 +22,11 @@ Returns the minimum element in the sequence, using the given predicate as the co
 func min(by areInIncreasingOrder: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The sequence’s minimum element, according to `areInIncreasingOrder`. If the sequence has no elements, returns `nil`.
 
-#### Discussion
+## Discussion
 
 The predicate must be a *strict weak ordering* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 

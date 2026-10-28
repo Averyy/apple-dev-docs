@@ -17,7 +17,7 @@ A C++ type that is an object that can refer to a contiguous sequence of objects.
 protocol CxxSpan<Element>
 ```
 
-#### Overview
+## Overview
 
 C++ standard library type `std::span` conforms to this protocol.
 

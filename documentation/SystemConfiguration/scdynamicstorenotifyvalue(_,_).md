@@ -19,7 +19,7 @@ func SCDynamicStoreNotifyValue(_ store: SCDynamicStore?, _ key: CFString) -> Boo
 Boolean SCDynamicStoreNotifyValue(SCDynamicStoreRef store, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notification was processed; `FALSE` if an error occurred.
 

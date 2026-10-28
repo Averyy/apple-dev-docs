@@ -15,7 +15,7 @@ The accessibility element’s sort direction.
 @property NSAccessibilitySortDirection accessibilitySortDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Used by an element with an [`button`](../nsaccessibility-swift.struct/role/button.md) role and an [`NSAccessibilitySortButtonRole`](../nsaccessibilitysortbuttonrole.md) subrole. For a list of possible sort directions, see [`NSAccessibilitySortDirection`](../nsaccessibilitysortdirection.md).
 

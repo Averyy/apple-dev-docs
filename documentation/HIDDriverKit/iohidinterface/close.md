@@ -16,7 +16,7 @@ Closes the interface and stops the delivery of input reports.
 virtual kern_return_t Close(IOService *forClient, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

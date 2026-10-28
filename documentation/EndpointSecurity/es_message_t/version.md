@@ -20,7 +20,7 @@ var version: UInt32
 uint32_t version;
 ```
 
-#### Discussion
+## Discussion
 
 Clients wishing to be backward-compatible with future changes to Endpoint Security should inspect the version to ensure they don’t try to access fields that aren’t available.
 

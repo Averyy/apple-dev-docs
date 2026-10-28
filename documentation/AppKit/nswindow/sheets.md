@@ -19,7 +19,7 @@ var sheets: [NSWindow] { get }
 @property (copy, readonly) NSArray<__kindof NSWindow *> * sheets;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an ordered array that contains—in top-to-bottom order—the presented sheets that are attached to the window, followed by queued sheets, in the order they were queued. The array doesn’t include nested sheets or subsheets.
 

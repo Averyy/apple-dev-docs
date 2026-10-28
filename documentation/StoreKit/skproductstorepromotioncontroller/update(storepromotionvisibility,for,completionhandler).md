@@ -29,7 +29,7 @@ func update(promotionVisibility: SKProductStorePromotionVisibility, for product:
 - (void) updateStorePromotionVisibility:(SKProductStorePromotionVisibility) promotionVisibility forProduct:(SKProduct *) product completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An Apple In-App Purchase product’s default visibility setting is set up in App Store Connect.  You can override the default setting, or return it to the default set in App Store Connect using the values in [`SKProductStorePromotionVisibility`](../skproductstorepromotionvisibility.md).
 

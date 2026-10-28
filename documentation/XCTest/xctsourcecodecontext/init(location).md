@@ -16,7 +16,7 @@ convenience init(location: XCTSourceCodeLocation?)
 - (instancetype) initWithLocation:(XCTSourceCodeLocation *) location;
 ```
 
-#### Discussion
+## Discussion
 
 The system derives the call stack from `NSThread.callStackReturnAddresses.`
 

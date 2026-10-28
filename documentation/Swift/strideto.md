@@ -22,7 +22,7 @@ A sequence of values formed by striding over a half-open interval.
 struct StrideTo<Element> where Element : Strideable
 ```
 
-#### Overview
+## Overview
 
 Use the `stride(from:to:by:)` function to create `StrideTo` instances.
 

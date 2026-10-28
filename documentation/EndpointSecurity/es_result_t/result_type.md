@@ -20,7 +20,7 @@ var result_type: es_result_type_t
 es_result_type_t result_type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine which member of the [`result`](./result.md) `union` to use: `auth` or `flags`.
 

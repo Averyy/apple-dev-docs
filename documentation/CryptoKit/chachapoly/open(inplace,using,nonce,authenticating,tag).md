@@ -21,7 +21,7 @@ Decrypts the message and verifies the authenticity of both the encrypted message
 static func open(inPlace message: inout MutableRawSpan, using key: SymmetricKey, nonce: ChaChaPoly.Nonce, authenticating authenticatedData: RawSpan? = nil, tag: RawSpan) throws
 ```
 
-#### Discussion
+## Discussion
 
 The call throws an error if decryption or authentication fail.
 

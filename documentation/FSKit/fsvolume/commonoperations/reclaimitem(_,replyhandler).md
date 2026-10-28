@@ -24,7 +24,7 @@ func reclaimItem(_ item: FSItem) async throws
 - (void) reclaimItem:(FSItem *) item replyHandler:(void (^)(NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit guarantees that for every [`FSItem`](../../fsitem.md) returned by the volume, a corresponding reclaim operation occurs after the upper layers no longer reference that item. To use this behavior, call [`tryReclaim(_:)`](../../fsitem/tryreclaim%28_%29.md) in your implementation of this method.
 

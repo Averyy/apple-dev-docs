@@ -9,13 +9,13 @@ Change the FileVault primary password on a device.
 **Availability**:
 - macOS 10.9+
 
-#### Discussion
+## Discussion
 
 Change the FileVault password periodically to mitigate the security risk of deployed devices.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -25,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example request and response
+### Example request and response
 
 **Personal**:
 

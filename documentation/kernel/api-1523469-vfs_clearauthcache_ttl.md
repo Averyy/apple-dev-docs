@@ -15,7 +15,7 @@ Remove time-to-live controls for cached credentials on a filesytem. Filesystems 
 void vfs_clearauthcache_ttl(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

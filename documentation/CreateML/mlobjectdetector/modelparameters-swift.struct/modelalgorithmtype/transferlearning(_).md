@@ -15,7 +15,7 @@ An algorithm that leverages the knowledge of a general purpose model built into 
 case transferLearning(MLObjectDetector.ModelParameters.FeatureExtractorType)
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this transfer-learning algorithm to train an object detector in these situations:
 

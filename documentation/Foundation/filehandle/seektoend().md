@@ -22,11 +22,11 @@ Places the file pointer at the end of the file referenced by the file handle and
 func seekToEnd() throws -> UInt64
 ```
 
-#### Return Value
+## Return Value
 
 The file offset with the file pointer at the end of the file. This is therefore equal to the size of the file.
 
-#### Discussion
+## Discussion
 
 Throws an error if called a file handle representing a pipe or socket, or if the file descriptor is closed.
 

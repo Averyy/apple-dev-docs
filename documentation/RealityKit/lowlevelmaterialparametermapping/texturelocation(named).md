@@ -18,7 +18,7 @@ Returns the argument table texture slot index for the named texture parameter, o
 func textureLocation(named name: String) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The texture slot index, or `nil` if no texture parameter with that name exists.
 

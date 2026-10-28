@@ -21,7 +21,7 @@ let kSecInputIsRaw: CFString
 extern CFStringRef const kSecInputIsRaw;
 ```
 
-#### Discussion
+## Discussion
 
 Using this type of input can be cryptographically unsafe (for example if you don’t blind a DSA or ECDSA signature you give away the key very quickly). You are strongly discouraged from using it..
 

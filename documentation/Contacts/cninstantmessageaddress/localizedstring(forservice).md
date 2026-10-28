@@ -24,7 +24,7 @@ class func localizedString(forService service: String) -> String
 + (NSString *) localizedStringForService:(NSString *) service;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the localized name of service.
 

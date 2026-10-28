@@ -20,7 +20,7 @@ A dictionary of names and values to match with query items in a URL.
 object applinks.Details.Components.Query
 ```
 
-#### Discussion
+## Discussion
 
 The keys in this dictionary are [`NSURLQueryItem`](../../../../Foundation/nsurlqueryitem.md) names and the values are patterns to match with the specified key’s value. This example code shows how to use a dictionary object for pattern matching with a URL query component:
 

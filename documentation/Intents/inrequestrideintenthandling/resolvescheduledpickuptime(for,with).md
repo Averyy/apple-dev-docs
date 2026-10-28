@@ -27,7 +27,7 @@ optional func resolveScheduledPickupTime(for intent: INRequestRideIntent) async 
 - (void) resolveScheduledPickupTimeForRequestRide:(INRequestRideIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you can pick up the user at the requested time. You may specify a pickup time that does not precisely match the requested time. If the pickup time is close to the requested time, return a successful resolution. If the pickup time is earlier than the requested time or significantly later than the requested time, ask the user for confirmation.
 

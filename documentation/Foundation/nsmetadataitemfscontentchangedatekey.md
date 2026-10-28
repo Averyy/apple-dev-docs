@@ -23,7 +23,7 @@ let NSMetadataItemFSContentChangeDateKey: String
 extern NSString * const NSMetadataItemFSContentChangeDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSDate`](./nsdate.md) object that contains the date and time that the file contents last changed.
 

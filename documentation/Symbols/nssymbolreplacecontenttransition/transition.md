@@ -21,7 +21,7 @@ An effect that replaces the layers of one symbol-based image with those of anoth
 + (instancetype) transition;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the replace transition.
 

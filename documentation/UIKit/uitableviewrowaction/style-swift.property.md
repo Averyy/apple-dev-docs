@@ -23,7 +23,7 @@ var style: UITableViewRowAction.Style { get }
 @property (nonatomic, readonly) UITableViewRowActionStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set at creation time and can’t be changed later.
 

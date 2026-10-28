@@ -25,7 +25,7 @@ func objects(forKeys keys: [Any], notFoundMarker marker: Any) -> [Any]
 - (NSArray<id> *) objectsForKeys:(NSArray<id> *) keys notFoundMarker:(ObjectType) marker;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the returned array and the `keys` array have a one-for-one correspondence, so that the nthe object in the returned array corresponds to the nthe key in `keys`.
 

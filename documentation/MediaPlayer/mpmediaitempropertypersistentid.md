@@ -25,7 +25,7 @@ let MPMediaItemPropertyPersistentID: String
 extern NSString * const MPMediaItemPropertyPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../Foundation/nsnumber.md) object that contains a [`MPMediaEntityPersistentID`](./mpmediaentitypersistentid.md). The value of the `MPMediaItemPropertyPersistentID` identifier persists across application launches and across syncs that do not change the sync status of the media item. The value is not guaranteed to persist across a sync/unsync/sync cycle.
 

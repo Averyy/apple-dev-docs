@@ -23,7 +23,7 @@ init(code: INSetCarLockStatusIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSetCarLockStatusIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized response object.
 

@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An independent random source.
 
-#### Discussion
+## Discussion
 
 This initializer returns a new random source instance that does not share state with any other randomizer and is suitable for most gameplay uses. Which random source class this initializer creates is may change between OS releases (currently, this initializer returns a [`GKARC4RandomSource`](../gkarc4randomsource.md) instance). Use this initializer when the choice of randomization algorithm does not matter. If you need a specific randomization algorithm, call the initializer for a specific [`GKRandomSource`](../gkrandomsource.md) subclass.
 

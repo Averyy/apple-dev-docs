@@ -23,7 +23,7 @@ func prelu(alpha: [Float]) -> BNNSGraph.Builder.Tensor<T>
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 Performs the operation `prelu(self) = max(0, self) + alpha[i] * min(0, self)`, for each channel `i`.
 

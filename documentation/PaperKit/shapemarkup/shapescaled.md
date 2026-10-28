@@ -19,7 +19,7 @@ The type of the shape with values scaled to the current frame.
 var shapeScaled: ShapeMarkup.Shape { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Coordinate values are specified in points relative to the shape’s `frame`. When you resize the shape, this property’s values automatically update to reflect the new dimensions.
 

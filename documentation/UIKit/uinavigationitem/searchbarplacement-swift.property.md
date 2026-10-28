@@ -22,7 +22,7 @@ var searchBarPlacement: UINavigationItem.SearchBarPlacement { get }
 @property (nonatomic, assign, readonly) UINavigationItemSearchBarPlacement searchBarPlacement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine the actual search bar placement when the [`preferredSearchBarPlacement`](./preferredsearchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.automatic`](./searchbarplacement-swift.enum/automatic.md).
 

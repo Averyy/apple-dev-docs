@@ -21,7 +21,7 @@ var textHighlightStyle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * textHighlightStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see[Label State Values](../label-state-values.md).
 

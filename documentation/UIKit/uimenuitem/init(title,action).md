@@ -24,7 +24,7 @@ init(title: String, action: Selector)
 - (instancetype) initWithTitle:(NSString *) title action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIMenuItem` object, or `nil` if there was a problem creating the object.
 

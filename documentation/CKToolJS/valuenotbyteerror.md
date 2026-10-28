@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `Byte` or isn’t castable to 
 interface ValueNotByteError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

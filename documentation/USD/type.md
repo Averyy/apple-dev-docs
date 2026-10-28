@@ -5,16 +5,16 @@
 
 An option that controls the order in which the actions execute.
 
-#### Overview
+## Overview
 
 The default value is `serial`.
 
-##### Order Options
+### Order Options
 
 - **`serial`**: Executes in order with each action waiting for the prior action to complete before starting.
 - **`parallel`**: Executes all actions concurrently.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform token type = "serial" (

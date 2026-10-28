@@ -21,7 +21,7 @@ The classification of a scalar used in the Canonical Ordering Algorithm defined 
 struct CanonicalCombiningClass
 ```
 
-#### Overview
+## Overview
 
 Canonical combining classes are used by the ordering algorithm to determine if two sequences of combining marks should be considered canonically equivalent (that is, identical in interpretation). Two sequences are canonically equivalent if they are equal when sorting the scalars in ascending order by their combining class.
 
@@ -34,7 +34,7 @@ print(aboveBeforeBelow == belowBeforeAbove)
 // Prints "true"
 ```
 
-### Named and Unnamed Combining Classes
+## Named and Unnamed Combining Classes
 
 Canonical combining classes are defined in the Unicode Standard as integers in the range `0...254`. For convenience, the standard assigns symbolic names to a subset of these combining classes.
 

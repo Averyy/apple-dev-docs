@@ -17,7 +17,7 @@ An object that describes an alarm that can alert once or on a repeating schedule
 struct Alarm
 ```
 
-#### Overview
+## Overview
 
 The following is an example of a 10 second timer:
 

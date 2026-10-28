@@ -5,17 +5,17 @@
 
 Measure numerical divergence in a Core AI model against a reference run.
 
-#### Overview
+## Overview
 
 Quantization and model specialization can introduce numerical drift between a Core AI model and the original source model. Core AI Debugger pairs each operation in your Core AI asset with its counterpart in a reference run, then automatically measures similarity for every matched pair.
 
 ![The Core AI Debugger window open in Comparison mode, showing the Navigator on the left with a Sync Points list and operation pairs with similarity scores, the Structure Viewer and Source Viewer in the center, and the Inspector on the right displaying the selected Concat operation’s inputs, outputs, and a tensor visualization.](https://developer.apple.com/tutorials/images/com.apple.coreai/validating-inference-correctness-against-a-reference-run-01@2x.png)
 
-#### Prepare a reference run
+## Prepare a reference run
 
 An `.aimodelintermediates` file records the intermediate tensor values produced at each operation of a PyTorch reference run. To generate the file, use the [save_intermediates](https://apple.github.io/coreai-torch/main/api/debugging.html) API, passing both the model you want to validate and the original source model. The result is a per-operation mapping between the PyTorch run and the Core AI model that Core AI Debugger can use to compare inference results.
 
-#### Start a comparison session
+## Start a comparison session
 
 To compare your Core AI model against an `.aimodelintermediates` file:
 
@@ -30,7 +30,7 @@ To compare your Core AI model against an `.aimodelintermediates` file:
 
 > **Note**: You can return to single-session mode at any time by clicking the Comparison button.
 
-#### Read comparison results in the Navigator
+## Read comparison results in the Navigator
 
 When a comparison session starts, the Navigator populates with sync points — operation pairs that combine a Core AI operation with its PyTorch counterpart. Each sync point shows both operation names alongside a similarity score and a color-coded indicator dot:
 
@@ -42,7 +42,7 @@ When a comparison session starts, the Navigator populates with sync points — o
 
 Sort by Similarity to identify the most divergent pairs, or by Operation to see whether failures cluster in a specific part of the model. Click any sync point to see that operation in the Structure Viewer, Source Viewer, and Inspector.
 
-#### Review comparison metrics
+## Review comparison metrics
 
 Core AI Debugger reports five metrics for each sync point. Color indicators are metric-aware, so green always signals a good result regardless of which metric you choose.
 
@@ -54,7 +54,7 @@ The default metric is PSNR. The other metrics offer different lenses depending o
 - **Max Absolute Error**: The single largest per-element difference. A high value can expose clipping or overflow even when MAE looks acceptable.
 - **Mean Relative Error**: The average difference as a proportion of the expected value at each element. Useful when tensor magnitudes vary widely across operations.
 
-#### Investigate a divergent operation
+## Investigate a divergent operation
 
 Select a sync point with a low similarity score to begin investigating. In the Inspector, the tensor outputs from both runs are displayed side by side alongside a visual difference, letting you see directly where the values diverge.
 

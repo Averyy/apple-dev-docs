@@ -25,7 +25,7 @@ var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)? {
 @property (copy, nullable) void (^recipientResponseHandler)(GKPlayer *player, GKInviteRecipientResponse response);
 ```
 
-#### Discussion
+## Discussion
 
 The block receives the following parameters:
 

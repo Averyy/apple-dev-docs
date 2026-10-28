@@ -23,11 +23,11 @@ func merging<S, E>(_ other: S, uniquingKeysWith combine: (Value, Value) throws(E
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A new dictionary with the combined keys and values of this dictionary and `other`.
 
-#### Discussion
+## Discussion
 
 Use the `combine` closure to select a value to use in the returned dictionary, or to combine existing and new values. As the key-value pairs are merged with the dictionary, the `combine` closure is called with the current and new values for any duplicate keys that are encountered.
 

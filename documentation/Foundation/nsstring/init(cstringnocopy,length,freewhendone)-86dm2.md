@@ -21,7 +21,7 @@ Initializes the receiver, a newly allocated `NSString` object, by converting the
 convenience init?(CStringNoCopy bytes: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone freeBuffer: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 This method converts `length` * `sizeof(char)` bytes from `cString` and doesn’t stop short at a zero character. `cString` must contain data in the default C-string encoding and may not be `NULL`. The receiver becomes the owner of `cString`; if `flag` is [`true`](../../Swift/true.md) it will free the memory when it no longer needs it, but if `flag` is [`false`](../../Swift/false.md) it won’t. Returns an initialized object, which might be different from the original receiver.
 

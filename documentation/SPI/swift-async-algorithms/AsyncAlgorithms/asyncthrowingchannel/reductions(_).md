@@ -23,11 +23,11 @@ Returns an asynchronous sequence containing the accumulated results of combining
 func reductions(_ transform: @escaping @Sendable (Self.Element, Self.Element) async -> Self.Element) -> AsyncInclusiveReductionsSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of the reduced elements.
 
-#### Discussion
+## Discussion
 
 This can be seen as applying the reduce function to each element and producing an asynchronous sequence consisting of the initial value followed by these results.
 

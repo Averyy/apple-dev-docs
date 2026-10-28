@@ -21,7 +21,7 @@ func minContentSize() -> NSSize
 - (NSSize) minContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver does not allow a size smaller than `minContentSize`.
 

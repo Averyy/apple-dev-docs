@@ -25,11 +25,11 @@ class func sequence(_ actions: [SCNAction]) -> SCNAction
 + (SCNAction *) sequence:(NSArray<SCNAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A new sequence action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the first action in the sequence starts and runs to completion. Subsequent actions in the sequence run in a similar fashion until all of the actions in the sequence have executed. The duration of the sequence action is the sum of the durations of the actions in the sequence.
 

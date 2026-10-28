@@ -13,11 +13,11 @@
 errno_t ifnet_ioctl(ifnet_t interface, protocol_family_t protocol, unsigned long ioctl_code, void *ioctl_arg);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Calls the interface's ioctl function with the parameters passed.
 

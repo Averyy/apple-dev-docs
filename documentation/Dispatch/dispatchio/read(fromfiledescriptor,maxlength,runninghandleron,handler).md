@@ -21,7 +21,7 @@ Schedules an asynchronous read operation using the specified file descriptor.
 class func read(fromFileDescriptor: Int32, maxLength: Int, runningHandlerOn queue: DispatchQueue, handler: @escaping (DispatchData, Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for initiating a single, asynchronous read operation from the current position of the specified file descriptor. This method is intended for simple operations where you do not need the overhead of creating a channel and do not plan on issuing more than a few calls to read or write data. Once submitted, there is no way to cancel the read operation.
 

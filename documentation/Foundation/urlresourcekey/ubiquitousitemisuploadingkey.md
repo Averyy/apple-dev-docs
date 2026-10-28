@@ -25,7 +25,7 @@ static let ubiquitousItemIsUploadingKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemIsUploadingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md). The value is `true` if the system is uploading this item to iCloud; otherwise, `false`.
 

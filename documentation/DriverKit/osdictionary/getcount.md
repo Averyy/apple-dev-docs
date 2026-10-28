@@ -18,7 +18,7 @@ Returns count of members in dictionary.
 virtual uint32_t getCount() const;
 ```
 
-#### Return Value
+## Return Value
 
 Count of members in dictionary.
 

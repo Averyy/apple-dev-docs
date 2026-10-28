@@ -13,7 +13,7 @@ Manage sign-in tokens from your web server that facilitate single sign-on across
 
 - [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md)
 
-#### Overview
+## Overview
 
 The Automatic Sign-In feature offers a single sign-on experience for media-streaming apps. The first time a person signs in to your media-streaming service through your app, your app calls the [Video Subscriber Account](../VideoSubscriberAccount/VideoSubscriberAccount.md) framework to prompt the person to opt in to Automatic Sign-In. If they agree, your app generates a string value token, or *sign-in token*. You provide the token to the [Video Subscriber Account](../VideoSubscriberAccount/VideoSubscriberAccount.md) framework, which stores it on the person’s Apple Account to sign the them in across all of their devices. When the person runs your app on another device, the operating system supplies the sign-in token from their Apple Account, which your app uses to sign them in automatically. To implement Automatic Sign-In for your media-streaming app on Apple devices, see [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md).
 
@@ -22,11 +22,11 @@ This API works in conjunction with [Video Subscriber Account](../VideoSubscriber
 - Your website offers UI to let the person opt out of Automatic Sign-In, or to flag a specific log in as unauthorized.
 - The person changes their password and wants to sign out from all of their devices.
 
-##### Authenticate your requests
+### Authenticate your requests
 
 The web service needs to know which tokens to operate on and to certify the authenticity of your requests, which you facilitate by adding a bearer token in your request header. See [Authorizing API calls using bearer tokens](../VideoSubscriberAccount/authorizing-api-calls-using-bearer-tokens.md).
 
-##### Test in the sandbox environment
+### Test in the sandbox environment
 
 To test the API on your web server during development, you can operate on test data by sending endpoint requests to the sandbox environment. From your web server, direct your test calls using the sandbox base URL: `https://api.storekit-sandbox.itunes.apple.com/`. For example, to call [`Update Sign-In Token`](./update-this-token-for-all-associated-users.md) in the sandbox environment, send a request using the URL:
 

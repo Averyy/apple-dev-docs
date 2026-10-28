@@ -20,7 +20,7 @@ A protocol that defines an action for an entity.
 protocol EntityAction
 ```
 
-#### Overview
+## Overview
 
 Structures that conform to `EntityAction` can contain data that an [`ActionAnimation`](./actionanimation.md) stores. If your apps needs to serialize the animation resource to a file, the structure also needs to adopt and conform to the [`Codable`](../Swift/codable.md) protocol.
 

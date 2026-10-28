@@ -19,7 +19,7 @@ func AXUIElementGetPid(_ element: AXUIElement, _ pid: UnsafeMutablePointer<pid_t
 AXError AXUIElementGetPid(AXUIElementRef element, pid_t *pid);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementGetPid` may return one of the following error codes, among others:
 

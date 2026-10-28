@@ -24,7 +24,7 @@ enum MTLIOCompressionMethod
 enum MTLIOCompressionMethod : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information on the individual codecs, see the [`Algorithm`](../Compression/algorithm.md) enumeration in the [Compression](../Compression/Compression.md) framework.
 

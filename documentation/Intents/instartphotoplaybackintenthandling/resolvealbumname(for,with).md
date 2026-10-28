@@ -29,7 +29,7 @@ optional func resolveAlbumName(for intent: INStartPhotoPlaybackIntent) async -> 
 - (void) resolveAlbumNameForStartPhotoPlayback:(INStartPhotoPlaybackIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the name of the photo album.
 

@@ -15,11 +15,11 @@ Container for a bulk operation request.
 object BulkOperationRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `BulkOperationRequest` object is the generic request container for bulk create, update, and delete operations. It extends `BaseBulkRequest` and adds an `items` array.
 
-##### Example
+### Example
 
 ```json
 {

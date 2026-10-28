@@ -25,7 +25,7 @@ case billboardScreenAligned
 SCNParticleOrientationModeBillboardScreenAligned
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode for simple particle images whose individual appearance has no relation to scene space, such as spheres, circles, and “sparkle” artwork.
 

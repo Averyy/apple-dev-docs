@@ -25,7 +25,7 @@ var relationshipsByName: [String : NSRelationshipDescription] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSRelationshipDescription *> * relationshipsByName;
 ```
 
-#### Discussion
+## Discussion
 
 The keys in the dictionary are the relationship names and the values are instances of [`NSRelationshipDescription`](../nsrelationshipdescription.md).
 

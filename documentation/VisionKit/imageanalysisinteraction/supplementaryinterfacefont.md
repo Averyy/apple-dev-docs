@@ -23,7 +23,7 @@ final var supplementaryInterfaceFont: UIFont? { get set }
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 The interaction also uses the font weight for image symbols, but ignores the point size to keep button sizes consistent.
 

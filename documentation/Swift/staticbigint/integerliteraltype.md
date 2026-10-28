@@ -21,7 +21,7 @@ A type that represents an integer literal.
 typealias IntegerLiteralType = StaticBigInt
 ```
 
-#### Discussion
+## Discussion
 
 The standard library integer and floating-point types are all valid types for `IntegerLiteralType`.
 

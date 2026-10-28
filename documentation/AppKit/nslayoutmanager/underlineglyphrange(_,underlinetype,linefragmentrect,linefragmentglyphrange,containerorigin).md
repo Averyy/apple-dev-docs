@@ -19,7 +19,7 @@ func underlineGlyphRange(_ glyphRange: NSRange, underlineType underlineVal: NSUn
 - (void) underlineGlyphRange:(NSRange) glyphRange underlineType:(NSUnderlineStyle) underlineVal lineFragmentRect:(NSRect) lineRect lineFragmentGlyphRange:(NSRange) lineGlyphRange containerOrigin:(NSPoint) containerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method determines which glyphs actually need to be underlined based on `underlineVal`. With `NSUnderlineStyleSingle`, for example, leading and trailing whitespace isn’t underlined, but whitespace between visible glyphs is. A potential word-underline style would omit underlining on any whitespace. After determining which glyphs to draw underlining on, this method invokes [`drawUnderline(forGlyphRange:underlineType:baselineOffset:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./drawunderline%28forglyphrange,underlinetype,baselineoffset,linefragmentrect,linefragmentglyphrange,containerorigin%29.md) for each contiguous range of glyphs that requires it.
 

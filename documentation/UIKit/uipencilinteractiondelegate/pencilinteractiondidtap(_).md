@@ -24,7 +24,7 @@ optional func pencilInteractionDidTap(_ interaction: UIPencilInteraction)
 - (void) pencilInteractionDidTap:(UIPencilInteraction *) interaction;
 ```
 
-#### Discussion
+## Discussion
 
 When handling the double tap, perform either:
 

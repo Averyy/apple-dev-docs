@@ -25,7 +25,7 @@ struct HKActivitySummaryQueryDescriptor
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 - [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 
-#### Overview
+## Overview
 
 Use [`HKActivitySummaryQueryDescriptor`](./hkactivitysummaryquerydescriptor.md) to run a query that reads activity summary objects from the HealthKit store. To get a snapshot of activity summaries currently in the store, create a descriptor and call its [`result(for:)`](./hkactivitysummaryquerydescriptor/result%28for%29.md) method.
 

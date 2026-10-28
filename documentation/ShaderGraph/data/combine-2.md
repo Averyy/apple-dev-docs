@@ -14,7 +14,7 @@ Combines the channels from two streams into two channels of a single output stre
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Combine 2 (vector2f)**:
 

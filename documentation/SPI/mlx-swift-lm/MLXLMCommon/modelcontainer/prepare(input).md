@@ -17,11 +17,11 @@ Prepare user input for generation.
 func prepare(input: sending consuming UserInput) async throws -> sending LMInput
 ```
 
-#### Return Value
+## Return Value
 
 Prepared language model input (transferred via `sending`)
 
-#### Discussion
+## Discussion
 
 This method safely prepares input within the actor’s isolation, avoiding the need for closure-based `perform` calls.
 

@@ -21,7 +21,7 @@ enum StateChangeReason
 enum AVLegibleMediaOptionsMenuStateChangeReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 ```
 		An enum set, describing the different reasons for changing the menu state.

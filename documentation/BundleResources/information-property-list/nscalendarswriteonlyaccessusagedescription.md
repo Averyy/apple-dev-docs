@@ -19,7 +19,7 @@ A message that tells people why the app is requesting access to create calendar 
 - **Name**: `NSCalendarsWriteOnlyAccessUsageDescription` (Privacy - Calendars Write Only Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 If your app needs to read calendar events in addition to creating them, use [`NSCalendarsFullAccessUsageDescription`](./nscalendarsfullaccessusagedescription.md). If your app runs on iOS 17 or later and presents an [`EKEventEditViewController`](../../EventKitUI/ekeventeditviewcontroller.md) to allow people to create calendar events, you don’t need to request calendar access.
 

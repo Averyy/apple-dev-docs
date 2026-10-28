@@ -25,7 +25,7 @@ func CGPointMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ point: Unsa
 extern bool CGPointMakeWithDictionaryRepresentation(CFDictionaryRef dict, CGPoint *point);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if successful; otherwise [`false`](../Swift/false.md).
 

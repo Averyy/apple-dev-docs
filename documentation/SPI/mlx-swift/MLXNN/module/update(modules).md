@@ -18,7 +18,7 @@ A non-throwing version of [`update(modules:verify:path:modulePath:)`](./update%2
 func update(modules: ModuleChildren) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This passes `verify: .none`.  Note that there may still be `fatalErrors()` if for example an `Module` is set on a `MLXArray`.
 

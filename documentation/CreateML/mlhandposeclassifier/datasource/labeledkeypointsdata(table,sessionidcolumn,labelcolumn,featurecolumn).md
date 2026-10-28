@@ -19,7 +19,7 @@ Creates a data source from a data table of hand pose observations that each cont
 case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String = __Defaults.sessionIdColumnName, labelColumn: String = __Defaults.labelColumnName, featureColumn: String = __Defaults.featureColumnName)
 ```
 
-#### Discussion
+## Discussion
 
 - table : A data table that contains the hand-joint locations and annotations for a set of hand poses.
 - sessionIdColumn: The name of the column in the data table that contains the session identifiers.

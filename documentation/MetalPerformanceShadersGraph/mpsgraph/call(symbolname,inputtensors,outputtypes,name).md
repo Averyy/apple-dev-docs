@@ -24,7 +24,7 @@ func call(symbolName: String, inputTensors: [MPSGraphTensor], outputTypes: [MPSG
 - (NSArray<MPSGraphTensor *> *) callSymbolName:(NSString *) symbolName inputTensors:(NSArray<MPSGraphTensor *> *) inputTensors outputTypes:(NSArray<MPSGraphType *> *) outputTypes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An array of valid [`MPSGraphTensor`](../mpsgraphtensor.md) objects representing the return tensors of the invoked executable.
 

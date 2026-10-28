@@ -25,7 +25,7 @@ func xpc_connection_get_euid(_ connection: xpc_connection_t) -> uid_t
 extern uid_t xpc_connection_get_euid(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The EUID of the remote peer at the time the connection was made.
 

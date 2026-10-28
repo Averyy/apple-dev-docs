@@ -25,11 +25,11 @@ init(roundedRect rect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, tran
 extern CGPathRefCGPathCreateWithRoundedRect(CGRect rect, CGFloat cornerWidth, CGFloat cornerHeight, const CGAffineTransform *transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable path. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 This is a convenience function that creates a path of an rounded rectangle. Using this convenience function is more efficient than creating a mutable path and adding an rectangle to it.
 

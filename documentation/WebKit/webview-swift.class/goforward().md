@@ -21,7 +21,7 @@ func goForward() -> Bool
 - (BOOL) goForward;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if able to move forward; otherwise, [`false`](../../Swift/false.md).
 

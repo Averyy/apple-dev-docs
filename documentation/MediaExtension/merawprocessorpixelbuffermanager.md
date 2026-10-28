@@ -19,7 +19,7 @@ class MERAWProcessorPixelBufferManager
 @interface MERAWProcessorPixelBufferManager : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 It contains the interfaces that the [`MERAWProcessor`](./merawprocessor.md) uses for two tasks. First, to declare its set of requirements for output [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) in the form of a [`pixelBufferAttributes`](./merawprocessorpixelbuffermanager/pixelbufferattributes-2cki6.md) dictionary. Second, create pixel buffers that match processor output requirements and satisfy Video Toolbox and client requirements.
 

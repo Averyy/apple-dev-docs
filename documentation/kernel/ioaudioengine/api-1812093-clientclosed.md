@@ -12,7 +12,7 @@ virtual void clientClosed(
  IOAudioEngineUserClient *client);
 ```
 
-#### Overview
+## Overview
 
 This method decrements the number of connections to the audio engine and if they reach zero, the audio engine is called with a call to stopAudioEngine(). This method should not be called directly.
 

@@ -27,7 +27,7 @@ func discoverUserIdentity(withUserRecordID userRecordID: CKRecord.ID, completion
 - (void) discoverUserIdentityWithUserRecordID:(CKRecordID *) userRecordID completionHandler:(void (^)(CKUserIdentity *userInfo, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This closure doesn’t return a value and takes the following parameters:
 

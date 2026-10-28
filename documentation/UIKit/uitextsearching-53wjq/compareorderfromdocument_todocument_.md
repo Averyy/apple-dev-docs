@@ -18,11 +18,11 @@ Compares documents containing matching ranges from the set the aggregator provid
 - (NSComparisonResult) compareOrderFromDocument:(UITextSearchDocumentIdentifier) fromDocument toDocument:(UITextSearchDocumentIdentifier) toDocument;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of comparing the two documents.
 
-#### Discussion
+## Discussion
 
 The system calls this method during a find session to determine which document’s ranges to highlight next when a user taps the “next” or “previous” button. Return [`ComparisonResult.orderedAscending`](../../Foundation/comparisonresult/orderedascending.md) if the text ranges found in the `fromDocument` come before those found in the `toDocument` in your view. Otherwise, return [`ComparisonResult.orderedDescending`](../../Foundation/comparisonresult/ordereddescending.md).
 

@@ -19,7 +19,7 @@ The string you use to identify the vehicle when making requests.
 let identifier: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to differentiate vehicles associated with the session, and to ensure you send requests to the correct vehicle.
 

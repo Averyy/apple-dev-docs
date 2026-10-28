@@ -25,7 +25,7 @@ func AuthorizationCopyRightsAsync(_ authorization: AuthorizationRef, _ rights: U
 void AuthorizationCopyRightsAsync(AuthorizationRef authorization, const AuthorizationRights *rights, const AuthorizationEnvironment *environment, AuthorizationFlags flags, AuthorizationAsyncCallback callbackBlock);
 ```
 
-#### Discussion
+## Discussion
 
 See the discussion for [`AuthorizationCopyRights(_:_:_:_:_:)`](./authorizationcopyrights%28_,_,_,_,_%29.md). This function behaves similarly, except that it performs its operations asynchronously and calls back to you upon completion.
 

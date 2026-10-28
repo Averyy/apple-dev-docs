@@ -21,11 +21,11 @@ Returns the longest possible subsequences of the collection, in order, that donâ
 func split(maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true, whereSeparator isSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]
 ```
 
-#### Return Value
+## Return Value
 
 An array of subsequences, split from this collectionâ€™s elements.
 
-#### Discussion
+## Discussion
 
 The resulting array consists of at most `maxSplits + 1` subsequences. Elements that are used to split the sequence are not returned as part of any subsequence.
 

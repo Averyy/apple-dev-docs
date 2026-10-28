@@ -28,11 +28,11 @@ func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 - [Supporting extended text interactions](../support-extended-text-interactions.md)
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the text view can handle the action message.
 
-#### Discussion
+## Discussion
 
 This method is similar to [`responds(to:)`](../../ObjectiveC/nsobjectprotocol/responds%28to%29.md), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
 

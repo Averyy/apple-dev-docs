@@ -22,7 +22,7 @@ var minuteInterval: Int { get set }
 @property (nonatomic) NSInteger minuteInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the interval displayed by the minutes wheel (for example, 15 minutes). The interval value must be evenly divided into 60; if it isn’t, the default value is used. The default and minimum values are 1; the maximum value is 30.
 

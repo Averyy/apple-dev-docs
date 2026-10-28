@@ -25,7 +25,7 @@ func fetchShareParticipant(withPhoneNumber phoneNumber: String, completionHandle
 - (void) fetchShareParticipantWithPhoneNumber:(NSString *) phoneNumber completionHandler:(void (^)(CKShareParticipant *shareParticipant, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

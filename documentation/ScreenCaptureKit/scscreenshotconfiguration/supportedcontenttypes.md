@@ -20,7 +20,7 @@ class var supportedContentTypes: [UTType] { get }
 @property (class, readonly) NSArray<UTType *> * supportedContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 You can save the output [`CGImage`](../../CoreGraphics/cgimage.md) into HEIC, JPEG, and PNG formats.
 

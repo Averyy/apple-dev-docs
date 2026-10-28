@@ -19,7 +19,7 @@ func advanceToNextItem()
 - (void) advanceToNextItem;
 ```
 
-#### Discussion
+## Discussion
 
 The method removes the current item from the queue before beginning playback of the next item.
 

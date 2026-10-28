@@ -19,7 +19,7 @@ Creates a delete system accessory with the specified display state, configuratio
 static func delete(displayed: UICellAccessory.DisplayedState = .whenEditing, options: UICellAccessory.DeleteOptions = DeleteOptions(), actionHandler: UICellAccessory.ActionHandler? = nil) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured delete cell accessory. This accessory is a minus sign inside of a circle with the default system red color. This accessory appears on the leading edge of the cell.
 

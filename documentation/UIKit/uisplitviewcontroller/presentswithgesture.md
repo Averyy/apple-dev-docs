@@ -22,7 +22,7 @@ var presentsWithGesture: Bool { get set }
 @property (nonatomic) BOOL presentsWithGesture;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the split view controller installs a gesture recognizer for changing the current display mode. In a column-style split view interface, the gesture is interactive.
 

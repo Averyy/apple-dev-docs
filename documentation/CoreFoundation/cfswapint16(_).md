@@ -25,7 +25,7 @@ func CFSwapInt16(_ arg: UInt16) -> UInt16
 static uint16_t CFSwapInt16(uint16_t arg);
 ```
 
-#### Return Value
+## Return Value
 
 The integer with its bytes swapped.
 

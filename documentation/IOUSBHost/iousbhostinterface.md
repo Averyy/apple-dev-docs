@@ -20,7 +20,7 @@ class IOUSBHostInterface
 @interface IOUSBHostInterface : IOUSBHostObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to create pipes, retrieve descriptors, send device requests, and enable power savings. Create an instance of the class with [`initWithIOService:options:queue:error:interestHandler:`](./iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md).
 

@@ -5,7 +5,7 @@
 
 Define a layout that supports the look you want for your article.
 
-#### Overview
+## Overview
 
 To create a unique look for your News article, you start by defining your layout. Apple News Format uses a column system that provides different horizontal locations for aligning the components in your design — your title, headings, body text, images, pull quotes, and so on.
 
@@ -13,7 +13,7 @@ You might be familiar with *column* as a text formatting term, but in Apple News
 
 For example, a layout with one column provides only one location for alignment, so all components align to a single horizontal position at the far left.
 
-##### Decide How Many Columns You Need
+### Decide How Many Columns You Need
 
 Consider the components you plan to include and their horizontal locations relative to each other. Consider how your design will look in landscape and portrait and on different-sized devices. Is your design symmetrical or asymmetrical? Do you want your images aligned to the same position as your headings and body text, or to a different position?
 
@@ -21,7 +21,7 @@ Once you know the general horizontal placements you need, imagine overlaying equ
 
 Layouts with 5 to 20 columns provide enough flexibility to support most designs. If you create a layout with fewer than 5 columns, Apple News Format may not have enough information to maintain your intended design on smaller devices. A layout with 7 columns usually provides enough layout information to resize your design for iPad, iPhone, Mac, and Apple Vision Pro. A layout with 20 columns helps with readability and results in a better user experience.
 
-##### Understand Automatic Resizing
+### Understand Automatic Resizing
 
 News uses this column system when it automatically scales down your article for people to read on smaller screens. It takes the number of columns you specified for your layout along with the width of your article to determine an optimal column width. Then, on smaller devices, it automatically uses fewer columns. Consider the following figures.
 
@@ -33,7 +33,7 @@ The first figure shows an article on three different devices. In this example, t
 
 The News app doesn’t scale up. The number of columns decreases on narrower displays, but never increases. In the previous figure, the layout with 7 columns designed for iPad in landscape still has 7 columns on iPad Pro —even though iPad Pro has an extra 300 points in landscape. News doesn’t increase the number of columns, but instead increases the margins on the left and right sides. The width of the gutter between columns remains fixed.
 
-##### Set Up the Layout for Your Article
+### Set Up the Layout for Your Article
 
 To set the layout for your article, use a [`Layout`](../AppleNewsFormat/layout.md) object to specify the following:
 

@@ -25,7 +25,7 @@ var countryCode: String? { get }
 @property (copy, readonly, nullable) NSString * countryCode;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of country or region codes include `"GB"`, `"FR"`, and `"HK"`.
 

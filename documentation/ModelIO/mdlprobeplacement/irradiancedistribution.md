@@ -24,7 +24,7 @@ case irradianceDistribution
 MDLProbePlacementIrradianceDistribution
 ```
 
-#### Discussion
+## Discussion
 
 If you use this heuristic, your data source must implement the [`sphericalHarmonicsCoefficients(atPosition:)`](../mdllightprobeirradiancedatasource/sphericalharmonicscoefficients%28atposition%29.md) method.
 

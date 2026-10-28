@@ -16,7 +16,7 @@ Sets the distances to the near and far clipping planes for the current drawable.
 void cp_drawable_set_depth_range(cp_drawable_t drawable, simd_float2 depth_range);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to change the depth range for this frame of content. The near and far planes correspond to distances from the person viewing the content. The compositor uses these values to compute the perspective projection matrix and to clip content not between the near and far planes.
 

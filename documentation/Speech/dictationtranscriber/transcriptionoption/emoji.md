@@ -19,7 +19,7 @@ Transcribes named emoji as emoji.
 case emoji
 ```
 
-#### Discussion
+## Discussion
 
 If included, the spoken phrase “smiling emoji” would be transcribed as “🙂”.
 

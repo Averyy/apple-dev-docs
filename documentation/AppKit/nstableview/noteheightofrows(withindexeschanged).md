@@ -19,7 +19,7 @@ func noteHeightOfRows(withIndexesChanged indexSet: IndexSet)
 - (void) noteHeightOfRowsWithIndexesChanged:(NSIndexSet *) indexSet;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements [`tableView(_:heightOfRow:)`](../nstableviewdelegate/tableview%28_,heightofrow%29.md) this method immediately retiles the table view using the row heights the delegate provides.
 

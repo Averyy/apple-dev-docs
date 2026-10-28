@@ -19,11 +19,11 @@ func duplicateDocument(withContentsOf url: URL, copying duplicateByCopying: Bool
 - (NSDocument *) duplicateDocumentWithContentsOfURL:(NSURL *) url copying:(BOOL) duplicateByCopying displayName:(NSString *) displayNameOrNil error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created [`NSDocument`](../nsdocument.md) object, or `nil` if the document could not be created.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method copies the file if specified, determines the type of the document, calls [`makeDocument(for:withContentsOf:ofType:)`](./makedocument%28for,withcontentsof,oftype%29.md) to instantiate it, sends the document `setDisplayName:` to name it if `displayNameOrNil` is not `nil`, calls [`addDocument(_:)`](./adddocument%28_%29.md) to record its opening, and sends the document [`makeWindowControllers()`](../nsdocument/makewindowcontrollers%28%29.md) and [`showWindows()`](../nsdocument/showwindows%28%29.md) messages.
 

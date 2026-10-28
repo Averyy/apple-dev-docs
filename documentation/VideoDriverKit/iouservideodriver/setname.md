@@ -15,11 +15,11 @@ Sets the name of the video driver.
 kern_return_t SetName(OSString *in_name);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating success or failure.
 
-#### Discussion
+## Discussion
 
 If the object can change the name dynamically, the object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to this value.
 

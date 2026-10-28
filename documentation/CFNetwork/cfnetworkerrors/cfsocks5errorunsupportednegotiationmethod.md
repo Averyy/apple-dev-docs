@@ -24,7 +24,7 @@ case cfsocks5ErrorUnsupportedNegotiationMethod
 kCFSOCKS5ErrorUnsupportedNegotiationMethod
 ```
 
-#### Discussion
+## Discussion
 
 Query the `kCFSOCKSNegotiationMethodKey` key to find out which method the server requested.
 

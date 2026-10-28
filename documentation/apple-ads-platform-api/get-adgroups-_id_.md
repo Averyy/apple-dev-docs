@@ -9,7 +9,7 @@ Retrieve a single ad group by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single ad group by its ID. The response includes all fields set at creation and any values modified since, including the full `targeting` and `bidStrategy` nested objects.
 
@@ -29,11 +29,11 @@ Keep the following constraints in mind when reading a GET response:
 | `campaignId` is always returned | The parent campaign ID is always present in the response. |
 | Use query endpoint for listing | `GET /adgroups/{id}` returns a single record. Use `POST /adgroups/query` to filter and list multiple ad groups. |
 
-#### Payload Examples
+## Payload Examples
 
 **App Store Ad Group**:
 
-##### Request
+### Request
 
 Retrieves an App Store ad group by its unique identifier. This example shows a standard targeting ad group with device and age targeting.
 
@@ -41,7 +41,7 @@ Retrieves an App Store ad group by its unique identifier. This example shows a s
 GET /v1/adgroups/555666777
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -88,7 +88,7 @@ GET /v1/adgroups/555666777
 
 **Apple Maps Ad Group**:
 
-##### Request
+### Request
 
 Retrieves an Apple Maps ad group by its unique identifier. This example shows an ad group targeting Apple Maps.
 
@@ -96,7 +96,7 @@ Retrieves an Apple Maps ad group by its unique identifier. This example shows an
 GET /v1/adgroups/555666779
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -5,7 +5,7 @@
 
 Use lookup tables to apply color transformations to images.
 
-#### Overview
+## Overview
 
 Lookup table functions use the value of a source pixel as an index into a lookup table of colors that defines the corresponding destination pixel. You can use lookup table functions to perform tasks, such as color grading, converting between color spaces, or generating false-color images.
 

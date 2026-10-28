@@ -27,7 +27,7 @@ var isLongLived: Bool { get set }
 @property (nonatomic, assign, getter=isLongLived) BOOL longLived;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to make the operation long-lived. The default value is [`false`](../../Swift/false.md). If you change this property’s value after you execute the operation, the change has no effect.
 

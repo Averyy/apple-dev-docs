@@ -21,7 +21,7 @@ Returns an attributed string by merging the attributed string’s attributes wit
 func mergingAttributes(_ attributes: AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy = .keepNew) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string from merging the attributed string’s attributes with those in a specified attribute container. In cases where the same attribute exists in both the source string and `attributes`, the `mergePolicy` determines which value the returned string uses.
 

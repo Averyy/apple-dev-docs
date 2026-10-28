@@ -15,7 +15,7 @@ An array of child accessibility elements in order for linear navigation.
 @property (copy, nullable) NSArray<id<NSAccessibilityElement>> * accessibilityChildrenInNavigationOrder;
 ```
 
-#### Discussion
+## Discussion
 
 The array should match all elements found in [`accessibilityChildren`](./accessibilitychildren.md), rearranged in an easily navigable order.
 

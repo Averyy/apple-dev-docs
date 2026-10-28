@@ -21,11 +21,11 @@ Creates an index set with an index range.
 + (instancetype) indexSetWithIndexesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`NSIndexSet`](../nsindexset.md) object containing `indexRange`.
 
-#### Discussion
+## Discussion
 
 The resulting index set has a [`firstIndex`](./firstindex.md) equal to the `location` of `indexRange`, and a [`count`](./count.md) equal to the `length` of `indexRange`. Specifying a zero-length range results in an empty index set.
 

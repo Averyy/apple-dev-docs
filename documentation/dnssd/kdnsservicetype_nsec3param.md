@@ -23,7 +23,7 @@ var kDNSServiceType_NSEC3PARAM: Int { get }
 kDNSServiceType_NSEC3PARAM
 ```
 
-#### Discussion
+## Discussion
 
 Hashed Authenticated Denial of Existence
 

@@ -19,7 +19,7 @@ static let detailedErrorReporting: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintDetailedErrorReporting;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), produce detailed reports when an error occurs.
 

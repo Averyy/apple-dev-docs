@@ -25,11 +25,11 @@ func xpc_dictionary_create_reply(_ original: xpc_object_t) -> xpc_object_t?
 extern xpc_object_txpc_dictionary_create_reply(xpc_object_t original);
 ```
 
-#### Return Value
+## Return Value
 
 The new dictionary object. NULL if the dictionary did not come from the wire with a reply context.
 
-#### Discussion
+## Discussion
 
 After completing successfully on a dictionary, this method may not be called again on that same dictionary. Attempts to do so will return NULL.
 

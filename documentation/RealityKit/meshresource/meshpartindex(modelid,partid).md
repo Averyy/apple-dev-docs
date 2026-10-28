@@ -21,7 +21,7 @@ Get the mesh part index for a given model and part identifier.
 @preconcurrency func meshPartIndex(modelID: String, partID: String) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 You can use this to resolve string names to part indices for use in [`MeshInstancesComponent`](../meshinstancescomponent.md).
 

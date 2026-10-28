@@ -27,7 +27,7 @@ var isDeviceMotionAvailable: Bool { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 The device-motion service is available if a device has both an accelerometer and a gyroscope. Because all devices have accelerometers, this property is functionally equivalent to [`isGyroAvailable`](./isgyroavailable.md).
 

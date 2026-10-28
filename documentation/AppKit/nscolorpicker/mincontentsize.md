@@ -19,7 +19,7 @@ var minContentSize: NSSize { get }
 @property (readonly) NSSize minContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The containing [`NSColorPanel`](../nscolorpanel.md) object does not allow the color picker to be made smaller than this size.
 

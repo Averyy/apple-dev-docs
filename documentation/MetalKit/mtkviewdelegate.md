@@ -24,7 +24,7 @@ protocol MTKViewDelegate : NSObjectProtocol
 @protocol MTKViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can set an object that implements the [`MTKViewDelegate`](./mtkviewdelegate.md) protocol as a [`MTKView`](./mtkview.md) object’s delegate. Use a delegate to provide a drawing method to a [`MTKView`](./mtkview.md) object and respond to rendering events without subclassing the [`MTKView`](./mtkview.md) class.
 

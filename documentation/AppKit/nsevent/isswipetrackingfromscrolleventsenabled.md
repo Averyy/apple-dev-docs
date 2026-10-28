@@ -19,7 +19,7 @@ class var isSwipeTrackingFromScrollEventsEnabled: Bool { get }
 @property (class, readonly, getter=isSwipeTrackingFromScrollEventsEnabled) BOOL swipeTrackingFromScrollEventsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If your app implements its own scrolling, or one of your responder objects tracks scroll wheel messages before they reach a scroll view, make sure the value of this property is [`true`](../../Swift/true.md) before you call [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](./trackswipeevent%28options,dampenamountthresholdmin,max,usinghandler%29.md) to handle the event. The system defines the value of this property based on user-level preferences.
 

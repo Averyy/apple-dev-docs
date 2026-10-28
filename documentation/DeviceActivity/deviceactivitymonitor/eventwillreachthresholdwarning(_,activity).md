@@ -17,7 +17,7 @@ Warns your app that an activity is about to reach its threshold.
 func eventWillReachThresholdWarning(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 When an activity is about to reach its threshold, `eventWillReachThresholdWarning` warns your app extension of the concluding threshold limit.
 

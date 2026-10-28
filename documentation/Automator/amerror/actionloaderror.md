@@ -16,7 +16,7 @@ An error that indicates the action’s executable failed to load.
 static var actionLoadError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, there may have been a problem with a library it depends on.
 

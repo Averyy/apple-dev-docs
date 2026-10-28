@@ -11,7 +11,7 @@ Provides information about the receipt for a given package on the installation h
 receiptForIdentifier(packageID)
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with information about the receipt for the specified package.
 

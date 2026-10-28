@@ -22,7 +22,7 @@ var possibleLabels: Set<String> { get set }
 @property (copy) NSSet<NSString *> * possibleLabels;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify all of the labels you might possibly use for the toolbar item. Specify all strings in the current locale. To ensure there’s space for the longest label, the item sizes itself using the strings you provide.
 

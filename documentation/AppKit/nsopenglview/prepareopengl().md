@@ -21,7 +21,7 @@ func prepareOpenGL()
 - (void) prepareOpenGL;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called only once after the OpenGL context is made the current context. Subclasses that implement this method can use it to configure the Open GL state in preparation for drawing.
 

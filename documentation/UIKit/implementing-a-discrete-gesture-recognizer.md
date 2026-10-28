@@ -5,7 +5,7 @@
 
 If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it.
 
-#### Overview
+## Overview
 
 A gesture recognizer remains in the [`UIGestureRecognizer.State.possible`](./uigesturerecognizer/state-swift.enum/possible.md) state until events indicate that your gesture succeeded or failed, at which point you change its state. The advantage of discrete gesture recognizers is that they are simpler to implement because they require fewer state transitions. One disadvantage is that because the state change typically occurs later in the event sequence, recognition can easily be preempted by continuous gestures attached to the same view.
 
@@ -13,7 +13,7 @@ The following image shows a checkmark gesture, which is created by tracing one f
 
 ![A diagram demonstrating a user performing a checkmark gesture.](https://developer.apple.com/tutorials/images/com.apple.uikit/implementing-a-discrete-gesture-recognizer-1@2x.png)
 
-##### Defining the conditions for success
+### Defining the conditions for success
 
 Before implementing your gesture recognizer code, define the conditions for which recognition should occur. The conditions for matching a checkmark gesture are as follows:
 
@@ -22,7 +22,7 @@ Before implementing your gesture recognizer code, define the conditions for whic
 - The touch moves downward initially but then changes direction and moves upward.
 - The upward stroke ends higher on the screen than the initial touch point.
 
-##### Saving gesture-related data
+### Saving gesture-related data
 
 With the conditions defined, add properties to your gesture recognizer to track any needed information. For the checkmark gesture, the gesture recognizer needs to know the starting point of the gesture so that it can compare that point to the final point. It also needs to know whether the user’s finger is moving downward or upward.
 
@@ -42,7 +42,7 @@ class CheckmarkGestureRecognizer : UIGestureRecognizer {
    // Overridden methods to come...
 ```
 
-##### Processing touch events
+### Processing touch events
 
 The following code shows the [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md) method, which sets up the initial conditions for recognizing the gesture. The gesture fails immediately if the initial event contains two touches. If there is only one touch, the touch object is saved in the `trackedTouch` property. Because UIKit reuses [`UITouch`](./uitouch.md) objects, and therefore overwrites their properties, this method also saves the location of the touch in the `initialTouchPoint` property. After the first touch occurs, any new touches added to the event sequence are ignored.
 
@@ -134,7 +134,7 @@ override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
 }
 ```
 
-##### Resetting the gesture recognizer
+### Resetting the gesture recognizer
 
 In addition to tracking the touches, the `CheckmarkGestureRecognizer` class implements the [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) and [`reset()`](./uigesturerecognizer/reset%28%29.md) methods. The class uses these methods to reset the gesture recognizer’s local properties to appropriate values. The following code shows the implementations of these methods.
 

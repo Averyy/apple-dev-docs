@@ -23,7 +23,7 @@ func setOutputSettings(_ outputSettings: [String : Any]?, for connection: AVCapt
 - (void) setOutputSettings:(NSDictionary<NSString *,id> *) outputSettings forConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 For details on output settings, see [Video settings](../video-settings.md) for video connections and [Audio settings](../audio-settings.md) for audio connections.
 

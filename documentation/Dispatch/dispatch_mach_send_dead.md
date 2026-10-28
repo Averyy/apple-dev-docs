@@ -23,7 +23,7 @@ var DISPATCH_MACH_SEND_DEAD: Int32 { get }
 #define DISPATCH_MACH_SEND_DEAD
 ```
 
-#### Discussion
+## Discussion
 
 The receive right corresponding to the given send right was destroyed.
 

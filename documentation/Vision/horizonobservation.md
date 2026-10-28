@@ -21,7 +21,7 @@ The horizon angle information that an image-analysis request detects.
 struct HorizonObservation
 ```
 
-#### Overview
+## Overview
 
 Instances of this class result from invoking a [`DetectHorizonRequest`](./detecthorizonrequest.md), and report the angle and transform of the horizon in an image.
 

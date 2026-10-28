@@ -15,11 +15,11 @@ OSStatus PMNewPageFormat (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin`. The function `PMNewPageFormat`  allocates memory for a new  `PMPageFormat `  object in your application’s memory space. The new page format object is empty until you set its values, or until you call `PMDefaultPageFormat` or `PMValidatePageFormat`.
 

@@ -15,11 +15,11 @@ Creates a formatted vEvent, ready to be sent over OBEX or whatever. You probably
 CFDataRefOBEXCreateVEvent(const char *inCharset, uint32_t inCharsetLength, const char *inEncoding, uint32_t inEncodingLength, const char *inEventStartDate, uint32_t inEventStartDateLength, const char *inEventEndDate, uint32_t inEventEndDateLength, const char *inAlarmDate, uint32_t inAlarmDateLength, const char *inCategory, uint32_t inCategoryLength, const char *inSummary, uint32_t inSummaryLength, const char *inLocation, uint32_t inLocationLength, const char *inXIRMCLUID, uint32_t inXIRMCLUIDLength);
 ```
 
-#### Return Value
+## Return Value
 
 A valid CFDataRef - nil if we failed.
 
-#### Discussion
+## Discussion
 
 All parameters are optional. The CFDataRef returned to you is NOT retained. Retain it if you want to keep it. Be aware that certain devices such as Ericsson phones MUST have certain fields, such as a start and end date.
 

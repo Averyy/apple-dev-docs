@@ -28,7 +28,7 @@ var pitch: Double { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 A pitch is a rotation around a lateral axis that passes through the device from side to side.
 

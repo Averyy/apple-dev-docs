@@ -21,7 +21,7 @@ A type that represents an app extension.
 extern UTType * const UTTypeApplicationExtension;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.application-and-system-extension`.
 

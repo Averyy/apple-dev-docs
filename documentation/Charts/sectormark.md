@@ -22,7 +22,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 @preconcurrency struct SectorMark
 ```
 
-#### Overview
+## Overview
 
 The relative size of per-category values that make up the total value are mapped to the angular sizes of the sectors.
 
@@ -30,7 +30,7 @@ To ensure that the visualization is easy to read, design pie or donut charts wit
 
 Make sure that your data contains only positive values. Also, very small proportions may not be discernible in the chart, especially if an angular inset is specified.
 
-##### Create a pie chart with sector marks
+### Create a pie chart with sector marks
 
 To visualize the ratio of values to the total that they collectively add up to, specify the values, most often ordered by decreasing value. If needed, add an “Other” group as the last item.
 
@@ -52,7 +52,7 @@ var body: some View {
 }
 ```
 
-##### Create and style a donut chart with sector marks
+### Create and style a donut chart with sector marks
 
 The inner and outer radii can be customized for your design. A non-zero inner radius yields a donut chart. A small angular inset helps accessibility and readability by adding contrast between sectors, which is useful for pie and donut charts. Limit the size of the angular inset and corner radius to small values to avoid distorting the shape and relative size of the sectors.
 

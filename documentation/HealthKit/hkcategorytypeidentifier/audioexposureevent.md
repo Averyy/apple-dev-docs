@@ -26,7 +26,7 @@ static let audioExposureEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierAudioExposureEvent;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from [`HKCategoryValueAudioExposureEvent`](../hkcategoryvalueaudioexposureevent.md).
 

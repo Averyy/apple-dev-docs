@@ -4,7 +4,7 @@
 
 Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.
 
-#### Overview
+## Overview
 
 ![An image illustrating how Xcode supports bundling code, resources, and binaries into a Swift package.](https://developer.apple.com/tutorials/images/com.apple.Xcode/swift-packages@2x.png)
 

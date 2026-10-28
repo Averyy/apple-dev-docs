@@ -19,7 +19,7 @@ A type that indicates why the live assistance extension needs to launch its cont
 enum LiveAssistanceLaunchReason
 ```
 
-#### Overview
+## Overview
 
 You provide this type from your extension in the [`LiveAssistanceRequest.Response.requiresUserInput(reason:)`](./liveassistancerequest/response/requiresuserinput%28reason%29.md) enumeration case. Your container app receives a reason string in the [`userInfo`](../Foundation/nsuseractivity/userinfo.md) of the [`NSUserActivity`](../Foundation/nsuseractivity.md) when the system launches your app. Send this value to `init(rawValue:)` to get an instance of `LiveAssistanceLaunchReason` that your app can act on by comparing it to the defined cases of the enumeration. The string you receive from the user activity is only appropriate for instantiating a `LiveAssistanceLaunchReason` to compare against; it’s not appropriate for use in your user interface.
 

@@ -19,17 +19,17 @@ func string(forType dataType: NSPasteboard.PasteboardType) -> String?
 - (NSString *) stringForType:(NSPasteboardType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A concatenation of the strings for the specified type from all the items in the receiver that contain the type, or `nil` if none of the items contain strings of the specified type.
 
-#### Discussion
+## Discussion
 
 This method invokes [`data(forType:)`](./data%28fortype%29.md) to obtain the string. If the string cannot be obtained, [`string(forType:)`](./string%28fortype%29.md) returns `nil`. See [`data(forType:)`](./data%28fortype%29.md) for a description of what will cause `nil` to be returned.
 
 In macOS 10.6 and later, if the receiver contains multiple items that can provide string, RTF, or RTFD data, the text data from each item is returned as a combined result separated by newlines.
 
-##### Special Considerations
+### Special Considerations
 
 It’s a good idea to check [`types`](./types.md) or call [`availableType(from:)`](./availabletype%28from%29.md) before invoking [`string(forType:)`](./string%28fortype%29.md). Although performing this check isn’t required, doing so can help you determine if a `nil` result from a reading method is due to something like a pasteboard timeout.
 

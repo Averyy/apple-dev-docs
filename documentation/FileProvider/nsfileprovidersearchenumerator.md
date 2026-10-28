@@ -19,7 +19,7 @@ protocol NSFileProviderSearchEnumerator : NSObjectProtocol
 @protocol NSFileProviderSearchEnumerator <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol by implementing the [`enumerateSearchResults(for:startingAt:)`](./nsfileprovidersearchenumerator/enumeratesearchresults%28for,startingat%29.md) method to perform your search and deliver pages of results to the [`NSFileProviderSearchEnumerationObserver`](./nsfileprovidersearchenumerationobserver.md) that you receive as the first parameter.
 

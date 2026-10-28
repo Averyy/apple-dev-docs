@@ -21,7 +21,7 @@ Returns the intersection of two volumetric entities.
 func intersection(_ other: Size3DFloat) -> Size3DFloat?
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The intersection of `self` and `other`.
 

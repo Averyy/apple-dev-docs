@@ -15,7 +15,7 @@ Connects to a remote endpoint by server name.
 static func remote(serverName: String, signalingHeaders: [String : String]) -> FoveatedStreamingSession.Endpoint
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses the server name to look up the remote URL from the app’s [`ApprovedStreamingEndpoints`](../../../BundleResources/information-property-list/approvedstreamingendpoints.md) in `Info.plist`.
 

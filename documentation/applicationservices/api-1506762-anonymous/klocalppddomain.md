@@ -13,7 +13,7 @@
 kLocalPPDDomain = 3
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the local domain.
 

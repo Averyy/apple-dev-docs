@@ -19,7 +19,7 @@ class VZEFISignatureDatabaseConfiguration
 @interface VZEFISignatureDatabaseConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class represents the signature lists used in UEFI Secure Boot configuration. It contains three separate arrays, one for each UEFI signature database, which are:
 

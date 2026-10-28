@@ -19,11 +19,11 @@
 static bool SPScaledPose3DFloatIsValid(SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether a scaled pose structure represents a valid size.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether a scaled pose structure represents a valid scaled pose.
 

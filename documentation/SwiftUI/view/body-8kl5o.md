@@ -27,7 +27,7 @@ The content and behavior of the view.
 
 - [Declaring a custom view](../declaring-a-custom-view.md)
 
-#### Discussion
+## Discussion
 
 When you implement a custom view, you must implement a computed `body` property to provide the content for your view. Return a view that’s composed of built-in views that SwiftUI provides, plus other composite views that you’ve already defined:
 

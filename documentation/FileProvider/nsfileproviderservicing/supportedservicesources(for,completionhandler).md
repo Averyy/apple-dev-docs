@@ -24,11 +24,11 @@ func supportedServiceSources(for itemIdentifier: NSFileProviderItemIdentifier, c
 - (NSProgress *) supportedServiceSourcesForItemIdentifier:(NSFileProviderItemIdentifier) itemIdentifier completionHandler:(void (^)(NSArray<id<NSFileProviderServiceSource>> *, NSError *)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks the progress of the
 
-#### Discussion
+## Discussion
 
 The system calls this method when an app requests a list of supported services. Return an array of services for the specified file. An application with access to the file can request the supported services by calling the [`FileManager`](../../Foundation/filemanager.md) class’s [`getFileProviderServicesForItem(at:completionHandler:)`](../../Foundation/filemanager/getfileproviderservicesforitem%28at,completionhandler%29.md) method. For more information, see [`NSFileProviderService`](../../Foundation/nsfileproviderservice.md).
 

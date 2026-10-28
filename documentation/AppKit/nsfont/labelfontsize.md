@@ -19,11 +19,11 @@ class var labelFontSize: CGFloat { get }
 @property (class, readonly) CGFloat labelFontSize;
 ```
 
-#### Return Value
+## Return Value
 
 The label font size in points.
 
-#### Discussion
+## Discussion
 
 The label font (Lucida Grande Regular 10 point) is used for the labels on toolbar buttons and to label tick marks on full-size sliders. For more information on system fonts, see Human Interface Guidelines > [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 

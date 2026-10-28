@@ -16,7 +16,7 @@
 interface WebKitTransitionEvent
 ```
 
-#### Overview
+## Overview
 
 For more on CSS transition events, see https://www.w3.org/TR/css3-transitions/#transition-events.
 

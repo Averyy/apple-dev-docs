@@ -22,11 +22,11 @@ nonisolated
 func size(_ size: CGSize, anchor: UnitPoint) -> some Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape constrained to the given `size`, and positioned using `anchor`.
 
-#### Discussion
+## Discussion
 
 The `anchor` parameter determines how the shape will be positioned within the container when the path’s bounds and the container’s bounds are not equal. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
 

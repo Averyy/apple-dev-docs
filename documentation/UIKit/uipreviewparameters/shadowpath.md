@@ -24,7 +24,7 @@ var shadowPath: UIBezierPath? { get set }
 @property (nonatomic, copy, nullable) UIBezierPath * shadowPath;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the system uses the [`visiblePath`](./visiblepath.md) to draw the shadow.
 

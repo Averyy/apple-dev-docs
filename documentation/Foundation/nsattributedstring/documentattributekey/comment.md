@@ -15,7 +15,7 @@ The document comments.
 static let comment: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing document comments.
 

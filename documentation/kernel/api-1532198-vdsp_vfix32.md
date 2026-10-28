@@ -15,7 +15,7 @@ Converts an array of single-precision floating-point values to signed 32-bit int
 void vDSP_vfix32(const float *vDSP_input1, ptrdiff_t vDSP_stride1, int *vDSP_input2, ptrdiff_t vDSP_stride2, size_t vDSP_size);
 ```
 
-#### Discussion
+## Discussion
 
 If the resulting value is outside the bounds of the output type, the behavior is undefined. If you need to handle out-of-bounds data, use one of the functions under the “Clipping Operations” topic of [Clipping, limit, and threshold operations](../Accelerate/clipping-limit-and-threshold-operations.md).
 

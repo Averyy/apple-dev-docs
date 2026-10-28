@@ -29,7 +29,7 @@ func setMeshBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 
 - [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

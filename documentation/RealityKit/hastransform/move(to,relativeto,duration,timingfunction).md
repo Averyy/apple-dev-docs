@@ -28,11 +28,11 @@ Moves an entity over a period of time to a new location given by a transform.
 @MainActor @preconcurrency func move(to target: float4x4, relativeTo referenceEntity: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction = .default) -> AnimationPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An [`AnimationPlaybackController`](../animationplaybackcontroller.md) instance that you use to control the animation playback.
 
-#### Discussion
+## Discussion
 
 Animating the scale of an entity to 0 will cause a subsequent inverse of the entity’s transform to return NaN values.  Developers may consider animating the scale of an entity to a small non-zero value. When the move completes, the entity can then be hidden or removed if applicable to the use case.
 

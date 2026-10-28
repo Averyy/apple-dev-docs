@@ -25,7 +25,7 @@ case distance
 SCNParticleSortingModeDistance
 ```
 
-#### Discussion
+## Discussion
 
 Typically you use this sorting mode in conjunction with the [`SCNParticleOrientationMode.billboardViewAligned`](../scnparticleorientationmode/billboardviewaligned.md) orientation mode.
 

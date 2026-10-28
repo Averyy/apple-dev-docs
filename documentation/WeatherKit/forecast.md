@@ -21,7 +21,7 @@ A forecast collection for minute, hourly, and daily forecasts.
 struct Forecast<Element> where Element : Decodable, Element : Encodable, Element : Equatable, Element : Sendable
 ```
 
-#### Overview
+## Overview
 
 [`Forecast`](./forecast.md) conforms to the `RandomAccessCollection` protocol to support efficient random-access index traversal through forecast types. The protocol involves forwarding the required properties and methods to the underlying forecast collection. The implementation of `subscript` returns an instance of the `Element` type.
 

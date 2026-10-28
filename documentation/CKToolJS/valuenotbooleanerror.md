@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a Boolean or isn’t castable to
 interface ValueNotBooleanError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

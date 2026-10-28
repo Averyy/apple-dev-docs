@@ -15,11 +15,11 @@ A sort directive in a query request, specifying a field and direction.
 object QuerySort
 ```
 
-#### Discussion
+## Discussion
 
 The `QuerySort` defines one sort directive in a `QueryRequest.sorting` array. The query applies multiple `QuerySort` entries in order: the first entry is the primary sort, subsequent entries are tiebreakers.
 
-##### Example
+### Example
 
 ```json
 {

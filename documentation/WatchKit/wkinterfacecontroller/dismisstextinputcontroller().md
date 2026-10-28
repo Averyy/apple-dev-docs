@@ -19,7 +19,7 @@ func dismissTextInputController()
 - (void) dismissTextInputController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel a text input operation without accepting any input from the user. Dismissing the interface controller animates it off the screen and does not call the associated completion block.
 

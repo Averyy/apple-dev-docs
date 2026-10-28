@@ -20,17 +20,17 @@ optional func textView(_ textView: NSTextView, willChangeSelectionFromCharacterR
 - (NSRange) textView:(NSTextView *) textView willChangeSelectionFromCharacterRange:(NSRange) oldSelectedCharRange toCharacterRange:(NSRange) newSelectedCharRange;
 ```
 
-#### Return Value
+## Return Value
 
 The actual character range for the new selection.
 
-#### Discussion
+## Discussion
 
 This method is invoked before a text view finishes changing the selection—that is, when the last argument to a [`setSelectedRange(_:affinity:stillSelecting:)`](../nstextview/setselectedrange%28_,affinity,stillselecting%29.md) message is [`false`](../../Swift/false.md).
 
 Non-selectable text views do not process any mouse events. If for some reason it is necessary to disallow user selection change in a text view that handles mouse events, this can be achieved by making the text view selectable but implementing this delegate method to disallow selection changes.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.4 and later, if a delegate implements this delegate method and not its multiple-selection replacement, [`textView(_:willChangeSelectionFromCharacterRanges:toCharacterRanges:)`](./textview%28_,willchangeselectionfromcharacterranges,tocharacterranges%29.md), then multiple selection is effectively disallowed; attempts to set the selected ranges call the old delegate method with the first subrange, and afterwards only a single selected range is set.
 

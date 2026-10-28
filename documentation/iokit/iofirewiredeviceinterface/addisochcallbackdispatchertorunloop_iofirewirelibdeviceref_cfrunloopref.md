@@ -13,7 +13,7 @@ IOReturn ( *AddIsochCallbackDispatcherToRunLoop)(
  CFRunLoopRef inRunLoop);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 

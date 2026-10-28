@@ -24,7 +24,7 @@ enum UpdateMode
 enum PHASEUpdateMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 To define the manner in which PHASE processes commands and updates internal state, select an option from this enumeration and pass it to the `updateMode` parameter of the [`PHASEEngine`](../phaseengine.md) initializer, [`init(updateMode:)`](./init%28updatemode%29.md).
 

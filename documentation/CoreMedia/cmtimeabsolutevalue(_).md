@@ -25,7 +25,7 @@ func CMTimeAbsoluteValue(_ time: CMTime) -> CMTime
 extern CMTime CMTimeAbsoluteValue(CMTime time);
 ```
 
-#### Return Value
+## Return Value
 
 The time value, but with its sign inverted, if necessary.
 

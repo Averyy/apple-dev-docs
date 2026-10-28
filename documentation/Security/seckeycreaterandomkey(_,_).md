@@ -30,11 +30,11 @@ SecKeyRefSecKeyCreateRandomKey(CFDictionaryRef parameters, CFErrorRef*error);
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 - [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
-#### Return Value
+## Return Value
 
 The newly generated private key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key when you are done with it.
 
-#### Discussion
+## Discussion
 
 To get the associated public key, use [`SecKeyCopyPublicKey(_:)`](./seckeycopypublickey%28_%29.md). [`SecKeyCreateRandomKey(_:_:)`](./seckeycreaterandomkey%28_,_%29.md) fails and returns [`errSecInteractionNotAllowed`](./errsecinteractionnotallowed.md) if you call it in the background on iPhone or iPad while the device is locked.
 

@@ -5,15 +5,15 @@
 
 Use the most up-to-date version of MapKit JS on your website.
 
-#### Overview
+## Overview
 
 This document includes release notes for updates to MapKit JS 6. You can learn more about MapKit JS version numbers and how to automatically link to the latest available version in [Loading the latest version of MapKit JS](./loading-the-latest-version-of-mapkit-js.md).
 
-##### 6.0
+### 6.0
 
 MapKit JS 6.0 adopts modern web platform conventions. For detailed guidance on updating your code, see [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md).
 
-###### New features
+#### New features
 
 - The map now zooms and pans with wheel events without requiring someone to hold the Shift key.
 - [`load()`](./mapkit/load.md) now returns `Promise<MapKit>`, and the `data-callback` function now also fires when libraries fail to load.
@@ -22,14 +22,14 @@ MapKit JS 6.0 adopts modern web platform conventions. For detailed guidance on u
 - The [`TileOverlay`](./tileoverlay.md) [`imageForTile`](./tileoverlay/imagefortile.md) callback now accepts [`ImageSource`](./imagesource.md), `Promise<ImageSource>`, or `null` for client-side tile rendering.
 - A new overload of [`getPlace()`](./placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](./mapfeatureannotation.md) directly.
 
-###### Updates
+#### Updates
 
 - All MapKit JS classes that previously extended [`MapKitEventTarget`](./mapkiteventtarget.md) now extend the native `EventTarget` interface. The third argument to `addEventListener` is now the standard `EventListenerOptions` object instead of a `thisObject`.
 - Optional properties and return values now return `null` instead of `undefined` for absent values.
 - Images, including tile images and annotation images, now require CORS. [`ImageSource`](./imagesource.md) objects must contain only CORS-clean pixel data.
 - [`TileOverlay`](./tileoverlay.md) no longer turns off map rotation or snaps zoom to integer levels.
 
-###### Deprecated features
+#### Deprecated features
 
 The framework has deprecated the following:
 

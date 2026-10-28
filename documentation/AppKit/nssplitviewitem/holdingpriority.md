@@ -19,7 +19,7 @@ var holdingPriority: NSLayoutConstraint.Priority { get set }
 @property NSLayoutPriority holdingPriority;
 ```
 
-#### Discussion
+## Discussion
 
 This priority affects the split view item’s width (for a vertical split view) or height (for a horizontal split view).
 

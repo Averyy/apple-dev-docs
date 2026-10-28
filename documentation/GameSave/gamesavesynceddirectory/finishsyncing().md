@@ -19,7 +19,7 @@ Waits for the directory sync to complete, without showing any user interface.
 func finishSyncing() async
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to wait if your app displays its own syncing UI.
 

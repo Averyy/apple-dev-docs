@@ -24,7 +24,7 @@ class let didBecomeKeyNotification: NSNotification.Name
 extern NSNotificationName const UIWindowDidBecomeKeyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the window that became key. This notification doesn’t contain a `userInfo` dictionary.
 

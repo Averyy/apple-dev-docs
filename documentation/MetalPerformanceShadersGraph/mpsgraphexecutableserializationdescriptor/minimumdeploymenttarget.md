@@ -24,7 +24,7 @@ var minimumDeploymentTarget: String { get set }
 @property (atomic, copy, readwrite) NSString * minimumDeploymentTarget;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, the package created will target the latest version of the `deploymentPlatform` set.
 

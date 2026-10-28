@@ -19,7 +19,7 @@ anchorOffset?: DOMPoint;
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The default value is `DOMPoint(0, 0)`.
 

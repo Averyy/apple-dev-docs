@@ -5,7 +5,7 @@
 
 Integrate ARKit with low-level libraries and functionality.
 
-#### Overview
+## Overview
 
 ARKit in visionOS includes a full C API for compatibility with C and Objective-C apps and frameworks.
 

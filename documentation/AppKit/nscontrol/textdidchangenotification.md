@@ -19,7 +19,7 @@ class let textDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSControlTextDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The field editor of the edited cell originally sends an [`didChangeNotification`](../nstext/didchangenotification.md) to the control, which passes it on in this form to its delegate. The notification object is the `NSControl` object posting the notification. The `userInfo` dictionary contains the following information:
 

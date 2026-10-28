@@ -32,7 +32,7 @@ protocol MTLCounterSampleBuffer : NSObjectProtocol
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Overview
+## Overview
 
 Create a counter sample buffer by calling an [`MTLDevice`](./mtldevice.md) instance’s [`makeCounterSampleBuffer(descriptor:)`](./mtldevice/makecountersamplebuffer%28descriptor%29.md) method. See [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md).
 

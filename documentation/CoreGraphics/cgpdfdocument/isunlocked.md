@@ -25,7 +25,7 @@ var isUnlocked: Bool { get }
 extern bool CGPDFDocumentIsUnlocked(CGPDFDocumentRef document);
 ```
 
-#### Discussion
+## Discussion
 
 There are two possible reasons why a PDF document is unlocked:
 

@@ -19,7 +19,7 @@ An action for joining an incoming conversation.
 final class JoinConversationAction
 ```
 
-#### Overview
+## Overview
 
 The incoming conversation might be currently ringing on a person’s device.
 

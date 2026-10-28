@@ -15,7 +15,7 @@ A provider object that represents the USB device.
 class IOUSBHostDevice;
 ```
 
-#### Overview
+## Overview
 
 An [`IOUSBHostDevice`](./iousbhostdevice.md) object represents a USB device connected to the user’s Mac. Use this object to retrieve the device’s configuration descriptor and capabilities. You can also iterate over the interfaces that the device uses to communicate.
 

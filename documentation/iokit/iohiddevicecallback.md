@@ -14,7 +14,7 @@
 typedef void (*IOHIDDeviceCallback)(void *context, IOReturn result, void *sender, IOHIDDeviceRef device);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when a device routine is called.
 

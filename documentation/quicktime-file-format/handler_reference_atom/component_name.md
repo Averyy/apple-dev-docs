@@ -6,7 +6,7 @@
 
 A counted string that specifies the name of the component — that is, the media handler used when this media was created.
 
-#### Overview
+## Overview
 
 This field may contain a zero-length (empty) string.
 

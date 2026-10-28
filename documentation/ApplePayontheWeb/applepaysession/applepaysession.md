@@ -21,7 +21,7 @@ new ApplePaySession();
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 - [Creating an Apple Pay Session](../creating-an-apple-pay-session.md)
 
-#### Discussion
+## Discussion
 
 Creating an `ApplePaySession` object throws a JavaScript exception if any of the following occur:
 

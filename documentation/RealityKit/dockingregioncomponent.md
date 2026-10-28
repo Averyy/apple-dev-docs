@@ -15,7 +15,7 @@ A component that docks a scene within a region of an immersive space.
 struct DockingRegionComponent
 ```
 
-#### Overview
+## Overview
 
 A docking-region component establishes a fixed area within an immersive environment that an [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) window scene anchors to, which prevents a person from moving the window with a pinch-and-drag gesture.
 

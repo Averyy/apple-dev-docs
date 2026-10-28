@@ -20,11 +20,11 @@ init(containerClassDescription classDesc: NSScriptClassDescription, containerSpe
 - (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property test:(NSScriptWhoseTest *) test;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSWhoseSpecifier` object initialized with the given attributes.
 
-#### Discussion
+## Discussion
 
 Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](../nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) and sets the whose test condition to `test`.
 

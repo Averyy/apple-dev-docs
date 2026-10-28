@@ -24,7 +24,7 @@ var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]? { get }
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Discussion
+## Discussion
 
 This property provides zone data for the workout’s primary activity, covering the full workout duration. Access zone groups for individual activities using [`zoneGroupsByType`](../hkworkoutactivity/zonegroupsbytype.md).
 

@@ -25,7 +25,7 @@ func CFSocketCopyPeerAddress(_ s: CFSocket!) -> CFData!
 extern CFDataRefCFSocketCopyPeerAddress(CFSocketRef s);
 ```
 
-#### Return Value
+## Return Value
 
 The remote address, stored as a `struct sockaddr` appropriate for the protocol family (`struct sockaddr_in` or `struct sockaddr_in6`, for example) in a CFData object, to which `s` is connected. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

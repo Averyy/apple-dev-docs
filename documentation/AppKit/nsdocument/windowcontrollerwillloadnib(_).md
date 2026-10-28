@@ -19,7 +19,7 @@ func windowControllerWillLoadNib(_ windowController: NSWindowController)
 - (void) windowControllerWillLoadNib:(NSWindowController *) windowController;
 ```
 
-#### Discussion
+## Discussion
 
 See the class description for [`NSWindowController`](../nswindowcontroller.md) for additional information about nib files and the file’s owner object.
 

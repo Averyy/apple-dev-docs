@@ -17,7 +17,7 @@ A total adjusted price associated with the line item, typically used to indicate
 var totalAdjustedPrice: Decimal?
 ```
 
-#### Discussion
+## Discussion
 
 When the adjusted price is not `nil`, [`totalPrice`](./totalprice.md) has an overstrike appearance.
 

@@ -6,7 +6,7 @@
 
 A reference movie atom may contain an optional data rate atom.
 
-#### Overview
+## Overview
 
 Only one data rate atom can be present. See [`Data rate atom`](../data_rate_atom.md) for more information.
 

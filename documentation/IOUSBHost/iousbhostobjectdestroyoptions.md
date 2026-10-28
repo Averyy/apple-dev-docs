@@ -18,7 +18,7 @@ struct IOUSBHostObjectDestroyOptions
 enum IOUSBHostObjectDestroyOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Options for destroyWithOptions
 

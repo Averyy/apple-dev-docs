@@ -20,7 +20,7 @@ func value(withName name: String, inPropertyWithKey key: String) -> Any?
 - (id) valueWithName:(NSString *) name inPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `valueIn<Key>WithName:` is used if it exists. Otherwise, raises an `NSUndefinedKeyException`.
 

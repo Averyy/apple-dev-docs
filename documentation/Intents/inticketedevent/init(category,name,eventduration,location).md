@@ -24,7 +24,7 @@ init(category: INTicketedEventCategory, name: String, eventDuration: INDateCompo
 - (instancetype) initWithCategory:(INTicketedEventCategory) category name:(NSString *) name eventDuration:(INDateComponentsRange *) eventDuration location:(CLPlacemark *) location;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTicketedEvent`](../inticketedevent.md) object or `nil` if one can’t be created.
 

@@ -22,7 +22,7 @@ init(mapView: MKMapView?)
 - (instancetype) initWithMapView:(MKMapView *) mapView;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized bar button item.
 

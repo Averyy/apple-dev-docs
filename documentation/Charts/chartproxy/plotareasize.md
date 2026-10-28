@@ -21,7 +21,7 @@ The size of the plot in the chart.
 var plotAreaSize: CGSize { get }
 ```
 
-#### Discussion
+## Discussion
 
 The plot is the area between the x and y axes, not including the axes themselves.
 

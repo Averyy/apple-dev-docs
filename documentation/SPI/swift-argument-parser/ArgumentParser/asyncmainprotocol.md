@@ -22,7 +22,7 @@ A type that can designate an `AsyncParsableCommand` as the program’s entry poi
 protocol AsyncMainProtocol
 ```
 
-#### Overview
+## Overview
 
 See the [`AsyncParsableCommand`](./asyncparsablecommand.md) documentation for usage information.
 

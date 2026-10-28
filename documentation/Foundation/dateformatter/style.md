@@ -25,7 +25,7 @@ enum Style
 enum NSDateFormatterStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The format for these date and time styles is not exact because they depend on the locale, user preference settings, and the operating system version. Do not use these constants if you want an exact format.
 

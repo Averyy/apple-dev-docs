@@ -20,7 +20,7 @@ A set of values that represents the possible stages of sleep.
 static var allAsleepValues: Set<HKCategoryValueSleepAnalysis> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value includes [`asleep`](./asleep.md), [`HKCategoryValueSleepAnalysis.asleepCore`](./asleepcore.md), [`HKCategoryValueSleepAnalysis.asleepDeep`](./asleepdeep.md), [`HKCategoryValueSleepAnalysis.asleepREM`](./asleeprem.md), and [`HKCategoryValueSleepAnalysis.asleepUnspecified`](./asleepunspecified.md).
 

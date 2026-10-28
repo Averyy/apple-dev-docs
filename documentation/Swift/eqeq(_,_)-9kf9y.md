@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two types are identical.
 func == (t0: (any (~Copyable & ~Escapable).Type)?, t1: (any (~Copyable & ~Escapable).Type)?) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if both `t0` and `t1` are `nil` or if they represent the same type; otherwise, `false`.
 

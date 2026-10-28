@@ -24,7 +24,7 @@ var portType: AVAudioSession.Port { get }
 @property (nonatomic, readonly) AVAudioSessionPort portType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be any of the constants declared in `Input Ports`, `Output Port Types`, or `I/O Port Types`.
 

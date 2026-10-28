@@ -16,7 +16,7 @@ Specify the part of an encoding name you want to obtain.
 typedef UInt32 TextEncodingNameSelector;
 ```
 
-#### Discussion
+## Discussion
 
 You use a selector for the `GetTextEncodingName` function to indicate which part of an encoding name you want to determine. The text encoding name selector is defined by the `TextEncodingNameSelector` data type.
 

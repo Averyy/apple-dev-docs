@@ -11,7 +11,7 @@ Clears the data buffer by filling it with zeroes.
 virtual bool clearBuffer();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the operation was successful, false otherwise.
 

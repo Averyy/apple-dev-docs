@@ -22,7 +22,7 @@ var isCameraIntrinsicMatrixDeliverySupported: Bool { get }
 @property (nonatomic, readonly, getter=isCameraIntrinsicMatrixDeliverySupported) BOOL cameraIntrinsicMatrixDeliverySupported;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`true`](../../Swift/true.md) means you can set [`isCameraIntrinsicMatrixDeliveryEnabled`](./iscameraintrinsicmatrixdeliveryenabled.md) to [`true`](../../Swift/true.md). The property is only [`true`](../../Swift/true.md) if both the connection’s input device format and output type support delivering camera intrinsics. In iOS 11, the [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) class is the only output type that supports camera intrinsics.
 

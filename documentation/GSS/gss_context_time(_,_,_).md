@@ -23,7 +23,7 @@ func gss_context_time(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context
 OM_uint32 gss_context_time(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, OM_uint32 *time_rec);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

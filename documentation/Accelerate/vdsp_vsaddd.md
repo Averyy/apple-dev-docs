@@ -21,7 +21,7 @@ Calculates the double-precision element-wise sum of a vector and a scalar value,
 extern void vDSP_vsaddD(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise sum of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

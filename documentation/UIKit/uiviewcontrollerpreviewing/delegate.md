@@ -25,7 +25,7 @@ var delegate: any UIViewControllerPreviewingDelegate { get }
 @property (nonatomic, readonly) id<UIViewControllerPreviewingDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Set a previewing view controller’s 3D Touch delegate when you register the view controller by calling its [`registerForPreviewing(with:sourceView:)`](../uiviewcontroller/registerforpreviewing%28with,sourceview%29.md) method.
 

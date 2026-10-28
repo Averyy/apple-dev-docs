@@ -23,7 +23,7 @@ protocol AVCaptureFileOutputRecordingDelegate : NSObjectProtocol
 @protocol AVCaptureFileOutputRecordingDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Defines an interface for delegates of [`AVCaptureFileOutput`](./avcapturefileoutput.md) to respond to events that occur in the process of recording a single file.
 

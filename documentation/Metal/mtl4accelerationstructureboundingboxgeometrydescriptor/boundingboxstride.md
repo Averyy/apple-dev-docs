@@ -24,7 +24,7 @@ var boundingBoxStride: Int { get set }
 @property (nonatomic) NSUInteger boundingBoxStride;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring this stride is at least 24 bytes and a multiple of 4 bytes.
 

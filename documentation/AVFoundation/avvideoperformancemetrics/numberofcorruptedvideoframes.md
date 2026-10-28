@@ -10,7 +10,7 @@
 @property (nonatomic, readonly) unsigned long numberOfCorruptedVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 [SPI] The total number of corrupted frames that have been detected. Same as numberOfCorruptedFrames.
 

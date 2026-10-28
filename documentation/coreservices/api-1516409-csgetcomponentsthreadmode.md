@@ -15,7 +15,7 @@ Indicates whether using thread-unsafe components is allowed in the current threa
 CSComponentsThreadMode CSGetComponentsThreadMode(void);
 ```
 
-#### Return Value
+## Return Value
 
 A flag that indicates whether using thread-unsafe components is allowed in the current thread. 
 

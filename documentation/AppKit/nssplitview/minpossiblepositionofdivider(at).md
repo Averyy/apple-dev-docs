@@ -19,11 +19,11 @@ func minPossiblePositionOfDivider(at dividerIndex: Int) -> CGFloat
 - (CGFloat) minPossiblePositionOfDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) that specifies the minimum possible position of the divider.
 
-#### Discussion
+## Discussion
 
 The position is *possible* because the bounds of the split view and the current position of other dividers dictate it. *Allowable* positions result from letting the delegate apply constraints to the possible positions.
 

@@ -22,7 +22,7 @@ static let expirationDate: UIPasteboard.OptionsKey
 extern UIPasteboardOption const UIPasteboardOptionExpirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the date and time as an [`NSDate`](../../../Foundation/nsdate.md) value.
 

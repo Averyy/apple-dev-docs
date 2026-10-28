@@ -23,7 +23,7 @@ static let toolbar: UIMenu.Identifier
 extern UIMenuIdentifier const UIMenuToolbar;
 ```
 
-#### Discussion
+## Discussion
 
 The Toolbar menu group contains menu elements to show and hide the toolbar, and to customize the toolbar.
 

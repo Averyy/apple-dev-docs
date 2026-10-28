@@ -16,7 +16,7 @@ For a derived element spawned from an emitter, returns the sequential index of t
 int initialize::spawnIndex()
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/initialize__spawnIndex.svg)
 

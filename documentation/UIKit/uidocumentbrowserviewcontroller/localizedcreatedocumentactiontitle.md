@@ -22,7 +22,7 @@ var localizedCreateDocumentActionTitle: String { get set }
 @property (nonatomic, copy) NSString * localizedCreateDocumentActionTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `Create Document`.
 

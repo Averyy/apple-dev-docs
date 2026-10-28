@@ -5,13 +5,13 @@
 
 Maintain consistent rendering at all resolutions and aspect ratios by using pixel transforms.
 
-#### Overview
+## Overview
 
 FxPlug plug-ins provide users a real-time rendering experience that’s measured in frames produced per second. Plug-ins that work with large inputs can optimize their performance by rendering only a subset of pixels as determined using *pixel transforms*.
 
 Pixel transforms are 4x4 matrices that are created by the host app to contain *transformation* information about the media the plug-in has been applied to. Transformations include translation, rotation, scale, and foreshortening (skewing the image to make closer objects appear larger).
 
-##### Understand pixel transforms
+### Understand pixel transforms
 
 The host application creates the 4x4 matrices used in pixel transforms. These matrices contain information that must be taken into account in order to render correctly and efficiently.
 
@@ -27,7 +27,7 @@ The most efficient texture for a generator to produce is one that corresponds ex
 
 > **Note**:  A pixel transform doesn’t contain the same information as a full transformation matrix, which also shows a layer’s position in the scene. To get complete information about the 3D environment, including camera and object transforms, use the `Fx3DAPI_v4` object that the host application provides.****
 
-##### Support pixel transforms in your plug-in
+### Support pixel transforms in your plug-in
 
 Each plug-in chooses what information it needs to know about the image through pixel transforms, and lets the host know which types of transforms it will deal with. It does this by including the associated key-value pair in the dictionary it returns from its properties method. The key is [`kFxPropertyKey_PixelTransformSupport`](../professional_video_applications/kfxpropertykey_pixeltransformsupport.md), and the value tells the host application what types of transformations a plug-in is capable of working with. (If your plug-in doesn’t include this key, the host application assumes that your plug-in supports scale transforms).
 
@@ -68,7 +68,7 @@ func properties(_ properties: AutoreleasingUnsafeMutablePointer<NSDictionary>?) 
 }
 ```
 
-##### Apply pixel transforms
+### Apply pixel transforms
 
 After informing the host application which types of transforms your plug-in supports, apply the appropriate pixel transforms using these steps:
 
@@ -80,7 +80,7 @@ After informing the host application which types of transforms your plug-in supp
 
 You can now safely sample from the image and know that you’ll get the required result.
 
-##### Compare pixel transform examples
+### Compare pixel transform examples
 
 If you make proper use of pixel transforms in your rendering code, you don’t need special-case code for thumbnails or proxy resolution, and you don’t need to scale any of your parameters: your rendering will work for all of these situations. The illustrations below show common pixel transforms.
 

@@ -24,7 +24,7 @@ static let builtInReceiver: AVAudioSession.Port
 extern AVAudioSessionPort const AVAudioSessionPortBuiltInReceiver;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, this speaker is available only on iPhone devices.
 

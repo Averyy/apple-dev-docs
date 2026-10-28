@@ -18,11 +18,11 @@ itemForMultiPolygon?<D extends GeoJSONTypes.MultiPolygon>(
 ): ItemCollection<D> | Item[] | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item or an array of map items.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for every `MultiPolygon` object. The framework also calls this method after constructing subitems, and calling their delegate functions.
 

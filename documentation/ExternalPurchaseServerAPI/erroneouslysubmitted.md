@@ -23,7 +23,7 @@ boolean erroneouslySubmitted
 
 **Default**: `false`
 
-#### Discussion
+## Discussion
 
 Only use this field when submitting corrections to a report. Set this field to `true` to indicate that you previously submitted the line item erroneously. This effectively undoes the line item submission. When submitting a correction, set the [`restatement`](./restatement.md) field to `true`.
 

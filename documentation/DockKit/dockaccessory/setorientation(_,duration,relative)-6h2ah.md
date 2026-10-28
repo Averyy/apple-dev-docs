@@ -18,11 +18,11 @@ Sets the position of each axis of orientation to radians for pitch, yaw, and rol
 final func setOrientation(_ rotation: Rotation3D, duration: Duration = .seconds(0), relative: Bool = false) async throws -> Progress
 ```
 
-#### Return Value
+## Return Value
 
 A progress object that reports the progress towards the target orientation.
 
-#### Discussion
+## Discussion
 
 This method works only when you disable system tracking.
 

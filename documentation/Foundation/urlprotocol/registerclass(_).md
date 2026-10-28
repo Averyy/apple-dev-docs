@@ -25,11 +25,11 @@ class func registerClass(_ protocolClass: AnyClass) -> Bool
 + (BOOL) registerClass:(Class) protocolClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the registration is successful, [`false`](../../Swift/false.md) otherwise. The only failure condition is if `protocolClass` is not a subclass of [`URLProtocol`](../urlprotocol.md).
 
-#### Discussion
+## Discussion
 
 Register any custom [`URLProtocol`](../urlprotocol.md) subclasses prior to making URL requests. When the URL loading system begins to load a request, it tries to initialize each registered protocol class with the specified request. The first [`URLProtocol`](../urlprotocol.md) subclass to return [`true`](../../Swift/true.md) when sent a [`canInit(with:)`](./caninit%28with%29-76brg.md) message is used to load the request. There is no guarantee that all registered protocol classes will be consulted.
 

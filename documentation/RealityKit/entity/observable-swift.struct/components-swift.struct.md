@@ -20,7 +20,7 @@ An observable collection of an entity’s attached components, allowing for reac
 struct Components
 ```
 
-#### Overview
+## Overview
 
 Reading a component from this set establishes observation tracking. See [Observation](../../../Observation/Observation.md) for more details.
 

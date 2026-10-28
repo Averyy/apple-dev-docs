@@ -24,7 +24,7 @@ init(type: MDLMeshBufferType, data: Data?)
 - (instancetype) initWithType:(MDLMeshBufferType) type data:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory buffer for mesh data.
 

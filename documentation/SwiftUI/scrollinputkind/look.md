@@ -15,7 +15,7 @@ On visionOS, by looking at the edge of a scroll view the content can automatical
 static let look: ScrollInputKind
 ```
 
-#### Discussion
+## Discussion
 
 This is an opt-in behavior.
 

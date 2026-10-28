@@ -16,7 +16,7 @@ get padding(): Padding;
 set padding(value: PaddingData);
 ```
 
-#### Discussion
+## Discussion
 
 Padding prevents any items from touching the edges of the map. Set `padding` to a [`Padding`](../padding.md) object (the default is no padding on all sides).
 

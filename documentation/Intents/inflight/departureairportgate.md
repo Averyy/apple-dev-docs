@@ -33,7 +33,7 @@ var departureAirportGate: INAirportGate { get }
 @property (atomic, copy, readonly) INAirportGate * departureAirportGate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`INAirportGate`](../inairportgate.md) object contains information about the airport, gate, and terminal for the flight’s departure.
 

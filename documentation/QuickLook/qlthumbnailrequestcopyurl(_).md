@@ -21,11 +21,11 @@ func QLThumbnailRequestCopyURL(_ thumbnail: QLThumbnailRequest!) -> Unmanaged<CF
 extern CFURLRefQLThumbnailRequestCopyURL(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The URL identifying the document for which the thumbnail is requested. You should explicitly release the CFURL object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

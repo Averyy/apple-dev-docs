@@ -18,7 +18,7 @@ Append an item to the checklist.
 @MainActor func appendItem(withTitle title: String, animated: Bool) -> OCKChecklistItemButton
 ```
 
-#### Return Value
+## Return Value
 
 The view that was appended.
 

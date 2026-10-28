@@ -25,7 +25,7 @@ var fresnelExponent: CGFloat { get set }
 @property (nonatomic) CGFloat fresnelExponent;
 ```
 
-#### Discussion
+## Discussion
 
 The Fresnel exponent of a material interacts with its [`reflective`](./reflective.md) property to determine the intensity of reflections in a surface based on its angle relative to the viewer. A higher Fresnel exponent increases the visibility of reflections when the material is viewed from a shallow angle.
 

@@ -23,11 +23,11 @@ func inferringMoves() -> CollectionDifference<ChangeElement>
 
 Available when `ChangeElement` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A collection difference with all possible moves inferred.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*) where *n* is the number of collection differences.
 

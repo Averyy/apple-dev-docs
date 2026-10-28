@@ -23,7 +23,7 @@ optional func locationManager(_ manager: CLLocationManager, didFinishDeferredUpd
 - (void) locationManager:(CLLocationManager *) manager didFinishDeferredUpdatesWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The location manager object calls this method to let you know that it has stopped deferring the delivery of location events. The manager may call this method for any number of reasons. For example, it calls it when you stop location updates altogether, when you ask the location manager to disallow deferred updates, or when a condition for deferring updates (such as exceeding a timeout or distance parameter) is met.
 

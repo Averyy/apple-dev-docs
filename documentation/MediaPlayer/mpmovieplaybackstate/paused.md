@@ -21,7 +21,7 @@ case paused
 MPMoviePlaybackStatePaused
 ```
 
-#### Discussion
+## Discussion
 
 Playback is currently paused. Playback will resume from the point where it was paused.
 

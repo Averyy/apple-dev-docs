@@ -10,7 +10,7 @@ Group individual views in your app’s user interface into a scrollable stack vi
 - macOS 10.13+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 [`NSStackView`](./nsstackview.md) simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an `NSScrollView` object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use `NSStackView` with each individual view either disclosed (expanded) or hidden (collapsed).
 
@@ -44,19 +44,19 @@ The following illustration shows an example stack view:
 
 ![Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.](https://developer.apple.com/tutorials/images/com.apple.appkit/infobarstackview-diagram@2x.png)
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 In Xcode, choose your development team on the macOS target’s General tab.
 
-##### Configure the System
+### Configure the System
 
 This sample uses window state restoration so that when the app is relaunched, the user interface returns to the state the user left it in. For state restoration to work, you must deselect the “Close windows when quitting an app” checkbox on the General Pane in System Preferences. To reset state restoration, use Command-Option-Quit when quitting the sample.
 
-##### Configure the Stack View
+### Configure the Stack View
 
 Each stack item’s header and body view controllers are loaded from a storyboard and added to the stack view in the `addViewController()` setup function.
 
-##### Restore the User Interface
+### Restore the User Interface
 
 To restore the stack view’s window on relaunch, use the [`NSWindowRestoration`](./nswindowrestoration.md) protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface.
 
@@ -86,7 +86,7 @@ override func restoreState(with coder: NSCoder) {
 }
 ```
 
-##### Choose a Disclosure Appearance
+### Choose a Disclosure Appearance
 
 This sample provides two disclosure options:
 

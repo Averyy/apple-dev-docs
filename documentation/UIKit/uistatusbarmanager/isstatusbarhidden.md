@@ -22,7 +22,7 @@ var isStatusBarHidden: Bool { get }
 @property (nonatomic, readonly, getter=isStatusBarHidden) BOOL statusBarHidden;
 ```
 
-#### Discussion
+## Discussion
 
 To customize the status bar’s visibility for each of your view controllers, override your view controller’s [`prefersStatusBarHidden`](../uiviewcontroller/prefersstatusbarhidden.md) property.
 

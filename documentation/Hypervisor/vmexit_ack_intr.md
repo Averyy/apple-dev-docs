@@ -19,7 +19,7 @@ var VMEXIT_ACK_INTR: UInt32 { get }
 VMEXIT_ACK_INTR
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

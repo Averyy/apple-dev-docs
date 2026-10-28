@@ -21,7 +21,7 @@ var secondaryAction: CPAlertAction? { get }
 @property (nonatomic, strong, readonly, nullable) CPAlertAction * secondaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 The alert displays the button for a secondary action on the trailing edge of the alert.
 

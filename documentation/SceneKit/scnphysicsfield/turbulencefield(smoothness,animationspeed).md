@@ -25,11 +25,11 @@ class func turbulenceField(smoothness: CGFloat, animationSpeed speed: CGFloat) -
 + (SCNPhysicsField *) turbulenceFieldWithSmoothness:(CGFloat) smoothness animationSpeed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Like a noise field, a turbulence field applies forces in random directions to the objects that it affects. Unlike a noise field, a turbulence field applies a force whose magnitude is proportional to the speed of each affected object. For example, an object passing through a noise field shakes as it travels through the field, but an object passing through a turbulence field shakes more violently the faster it travels. The field’s [`strength`](./strength.md) property scales the magnitude of the turbulence effect.
 

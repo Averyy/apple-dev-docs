@@ -5,7 +5,7 @@
 
 Schedule one or more threads to run at regular intervals and before specific deadlines.
 
-#### Overview
+## Overview
 
 A workgroup manages one or more threads that work cooperatively toward a common goal. Use workgroups to coordinate the efforts of threads that handle real-time audio work. Registering threads with a workgroup helps the system direct work to the right system resources, and also helps it manage the competing needs of low-power consumption with maximum rendering output.
 

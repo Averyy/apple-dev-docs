@@ -13,11 +13,11 @@ virtual IOReturn unmap(
  UInt32 options = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Delete unused data from the storage object at the specified byte offsets, synchronously.
 

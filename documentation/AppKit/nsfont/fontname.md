@@ -19,7 +19,7 @@ var fontName: String { get }
 @property (copy, readonly) NSString * fontName;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is intended for an application’s internal usage and not for display. To get a name that you can display to the user, use the [`displayName`](./displayname.md) property instead.
 

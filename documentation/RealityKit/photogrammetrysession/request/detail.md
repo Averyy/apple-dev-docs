@@ -18,13 +18,13 @@ Supported levels of detail for a request.
 enum Detail
 ```
 
-#### Overview
+## Overview
 
 On iOS, only one detail level – `.reduced` – is currently supported.  This level is optimized for generation and viewing entirely on mobile devices.
 
 On macOS, RealityKit object creation can generate models at different levels of detail. Higher levels of detail may take longer to create, require more memory and processing power to generate, and create objects with more complex geometry and texture requirements.
 
-##### Set a Level of Complexity
+### Set a Level of Complexity
 
 Each detail level corresponds to an object of a specific size and complexity. Here’s the expected final size of the generated object from each detail level.
 
@@ -37,7 +37,7 @@ Each detail level corresponds to an object of a specific size and complexity. He
 | `.raw` | <30M | Varies |
 | `.custom` | Varies | Varies |
 
-##### Create Texture Maps
+### Create Texture Maps
 
 Each detail level produces a 3D object with texture maps. The higher the complexity level, the larger the generated texture maps, and the more memory the system requires to display those objects in an AR scene.
 

@@ -20,13 +20,13 @@ object Photo
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `photo` component to display a photograph in an article. A `photo` component is optimized for displaying photographs. Other components are available for other types of images, such as [`Figure`](./figure.md), [`Portrait`](./portrait.md), and [`Logo`](./logo.md).
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

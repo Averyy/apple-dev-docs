@@ -5,7 +5,7 @@
 
 Display formatted text and get text input from the user.
 
-#### Overview
+## Overview
 
 To display read-only text, or read-only text paired with an image, use the built-in [`Text`](./text.md) or [`Label`](./label.md) views, respectively. When you need to collect text input from the user, use an appropriate text input view, like [`TextField`](./textfield.md) or [`TextEditor`](./texteditor.md).
 

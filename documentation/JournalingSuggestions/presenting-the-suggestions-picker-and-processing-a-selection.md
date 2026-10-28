@@ -5,7 +5,7 @@
 
 Display the journaling suggestions picker and process a suggestion that someone chooses.
 
-#### Overview
+## Overview
 
 Present the [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md) to show people recent or important life events as suggestions, which include information about an event such as images, videos, locations, and so on. If a person selects a particular suggestion, the system provides you with the event details in the completion handler.
 
@@ -17,7 +17,7 @@ When someone chooses a suggestion, the system makes high-level details about the
 
 Journaling Suggestions gathers information from the system through built-in apps people use, such as Photos, Health, Fitness, Apple Podcasts, and Music. Suggestions can also come from third party apps that provide data through frameworks such as [HealthKit](../HealthKit/HealthKit.md), [CallKit](../CallKit/CallKit.md), or [SiriKit](../SiriKit/SiriKit.md).
 
-#### Maintain user privacy
+## Maintain user privacy
 
 Adopting Journaling Suggestions delivers an enhanced privacy experience in your app. When a person makes a selection in the picker, the system shares only the details of the chosen suggestion with your app. Thus, your app accesses only the suggestion data that a person explicitly authorizes.
 
@@ -39,11 +39,11 @@ When your app attempts to display the picker for the first time, a sheet appears
 
 Suggestion data requires careful handling. To further preserve user privacy, follow the advice outlined in the [Developer Program License Agreement](https://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
 
-#### Add the Journaling Suggestions entitlement
+## Add the Journaling Suggestions entitlement
 
 To use Journaling Suggestions in your app, the  [`com.apple.developer.journal.allow`](../BundleResources/entitlements/com.apple.developer.journal.allow.md) entitlement is required. The suggestions picker fails to present without it. You can can add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode; see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Name the button that opens the suggestions picker
+## Name the button that opens the suggestions picker
 
 The [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md) initializers take an argument, `title`, for a button that people tap to display the picker.
 
@@ -53,7 +53,7 @@ let buttonTitle = "Show my personal events"
 
 Choose a title that clearly describes the purpose of journaling suggestions in the context of your app. As an indication that personal moments are about to display, it’s important to set a person’s expectations about what the picker shows after they tap the text.
 
-#### Declare and present a suggestions picker
+## Declare and present a suggestions picker
 
 To present a suggestions picker, declare a view that displays a button title. When a person taps the button, the system presents the picker. Upon dismissal, the system invokes the completion handler you specify.
 
@@ -67,7 +67,7 @@ struct Example: View {
         }}}
 ```
 
-#### Handle the selected suggestion data
+## Handle the selected suggestion data
 
 The picker fills with suggestions that include various types of personal experiences. When a person makes a selection, the system provides the chosen suggestion to your app’s `onCompletion` handler. Check the `suggestion` argument’s [`items`](./journalingsuggestion/items.md) property to process the selection. Each [`JournalingSuggestion.ItemContent`](./journalingsuggestion/itemcontent.md) item conforms to [`JournalingSuggestionAsset`](./journalingsuggestionasset.md) and is one of following types:
 

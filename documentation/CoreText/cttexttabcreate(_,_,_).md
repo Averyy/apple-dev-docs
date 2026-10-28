@@ -25,7 +25,7 @@ func CTTextTabCreate(_ alignment: CTTextAlignment, _ location: Double, _ options
 extern CTTextTabRefCTTextTabCreate(CTTextAlignment alignment, double location, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CTTextTab object if the call was successful; otherwise, `NULL`.
 

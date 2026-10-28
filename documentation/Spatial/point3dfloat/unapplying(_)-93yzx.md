@@ -21,7 +21,7 @@ Returns the primitive that results from unapplying a scaled pose to the primitiv
 func unapplying(_ pose: ScaledPose3DFloat) -> Point3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

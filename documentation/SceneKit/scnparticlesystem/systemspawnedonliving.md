@@ -25,7 +25,7 @@ var systemSpawnedOnLiving: SCNParticleSystem? { get set }
 @property (nonatomic, retain, nullable) SCNParticleSystem * systemSpawnedOnLiving;
 ```
 
-#### Discussion
+## Discussion
 
 Each time SceneKit renders a frame, it adds an instance of the specified particle system to the scene at the location of each rendered particle.
 

@@ -23,7 +23,7 @@ optional func voiceChatService(_ voiceChatService: GKVoiceChatService, didReceiv
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService didReceiveInvitationFromParticipantID:(NSString *) participantID callID:(NSInteger) callID;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is not implemented by the client, the voice chat service automatically accept requests from other participants.
 

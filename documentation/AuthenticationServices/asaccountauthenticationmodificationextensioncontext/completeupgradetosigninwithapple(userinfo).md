@@ -26,7 +26,7 @@ func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]? = nil)
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 After successfully upgrading to Sign in with Apple, the system deletes the password credentials from the keychain.
 

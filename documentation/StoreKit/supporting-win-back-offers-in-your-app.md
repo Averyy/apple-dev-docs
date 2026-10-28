@@ -5,7 +5,7 @@
 
 Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
 
-#### Overview
+## Overview
 
 A win-back offer is a free or discounted offer for an auto-renewable subscription for eligible customers whose subscription is *churned*. A churned subscription is one that has an [`expirationDate`](./transaction/expirationdate.md) in the past, and a [`willAutoRenew`](./product/subscriptioninfo/renewalinfo/willautorenew.md) value of `false`. You set up win-back offers in App Store Connect, including the criteria that determines whether a customer is eligible. You can base eligibility on the duration of the customer’s paid subscription, the time since the subscription expired, and the time that must pass between redeemed offers. You also set the discount type, and specify the regions or countries in which the offer is available.
 
@@ -17,7 +17,7 @@ Within your app, you can merchandise win-back offers with the win-back offer she
 
 Your app needs to handle win-back offers that customers redeem outside the app. By default, your app receives a completed purchase transaction when someone redeems the offer outside of the app. This workflow results when the Streamlined Purchasing option in App Store Connect is on, its default state. You can choose to turn off Streamlined Purchasing to enable the customer to complete the purchase within your app. For more information, see [Handle win-back offers redeemed outside of your app](./supporting-win-back-offers-in-your-app.md#Handle-win-back-offers-redeemed-outside-of-your-app) below.
 
-##### Configure win-back offers in App Store Connect
+### Configure win-back offers in App Store Connect
 
 Set up win-back offers in App Store Connect by following the instructions in [Set up win-back offers](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers). As you set up a win-back offer, consider the following:
 
@@ -27,7 +27,7 @@ Set up win-back offers in App Store Connect by following the instructions in [Se
 
 > 💡 **Tip**:  Store the win-back offer identifier and its corresponding direct link on your server, for easy access later.
 
-##### Configure Streamlined Purchasing in App Store Connect
+### Configure Streamlined Purchasing in App Store Connect
 
 When you set up your win-back offer, you can also set the Streamlined Purchasing option in App Store Connect. This setting applies to all win-back offers and contingent pricing in your app. It affects how your app handles a win-back offer redemption, as follows:
 
@@ -39,13 +39,13 @@ When you set up your win-back offer, you can also set the Streamlined Purchasing
 
 For more information on configuring this setting in App Store Connect, see [Manage Streamlined Purchasing](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-streamlined-purchasing).
 
-##### Merchandise win-back offers in your app
+### Merchandise win-back offers in your app
 
 StoreKit provides several ways to merchandise win-back offers to eligible customers in your app. By default, StoreKit displays a win-back offer sheet when it receives a [`winBackOffer`](./message/reason-swift.struct/winbackoffer.md) message from the App Store. You can also merchandise the win-back offer using StoreKit views, or other StoreKit APIs to fully customize the experience.
 
 For information on implementing each of these options, see [Merchandising win-back offers in your app](./merchandising-win-back-offers-in-your-app.md).
 
-##### Merchandise win-back offers outside your app using the direct link
+### Merchandise win-back offers outside your app using the direct link
 
 After you create a win-back offer, App Store Connect provides a direct link. Use the direct link to merchandise the win-back offer through your own channels.
 
@@ -53,11 +53,11 @@ Before you send a direct link to a customer, check whether the customer is eligi
 
 If the [`eligibleWinBackOfferIds`](../AppStoreServerAPI/eligiblewinbackofferids.md) array has multiple entries, the customer is eligible for more than one offer. The App Store sets the order of the win-back offer IDs with the best offer first. The order takes into account the available offers you configure in App Store Connect for the customer’s most recent subscription in the subscription group.
 
-##### Handle offers redeemed through the win-back offer sheet
+### Handle offers redeemed through the win-back offer sheet
 
 When customers redeem a win-back offer using the win-back offer sheet, StoreKit treats this transaction the same as a purchase that occurs outside of the app. Specifically, the app receives the transaction in the [`updates`](./transaction/updates.md) sequence of [`Transaction`](./transaction.md). Be sure your app creates a task to iterate through [`updates`](./transaction/updates.md) as soon as it launches. For more information and sample code, see [`updates`](./transaction/updates.md).
 
-##### Handle win-back offers redeemed outside of your app
+### Handle win-back offers redeemed outside of your app
 
 Customers can discover and redeem win-back offers outside of your app in several ways: through the direct link that you merchandise, in the App Store, and when they manage their subscriptions in their Apple account. How your app handles the redemption depends on the whether the Streamlined Purchasing setting is on or off in App Store Connect.
 
@@ -94,14 +94,14 @@ Finally, follow the same workflow your app uses for any successful purchase, suc
 
 > **Note**:  If your app uses the [`PurchaseIntent`](./purchaseintent.md) API but doesn’t explicitly add support for win-back offers using [`offer`](./purchaseintent/offer.md), StoreKit adds the win-back offer to the purchase options on devices running iOS 18 and later and visionOS 2 and later.
 
-##### Identify subscriptions purchased with a win-back offer
+### Identify subscriptions purchased with a win-back offer
 
 When customers successfully redeem subscription offers, including win-back offers, the transaction information contains the offer details. Find those details in the app and on your server, as follows:
 
 - In your app, check the [`Transaction`](./transaction.md) property, [`offer`](./transaction/offer-swift.property.md). An offer type value of `winback` indicates the customer redeemed a win-back offer.
 - On your server, check the [`JWSTransactionDecodedPayload`](../AppStoreServerAPI/jwstransactiondecodedpayload.md) that you receive in [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) notifications or [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) responses. The [`offerIdentifier`](../AppStoreServerAPI/offeridentifier.md) represents the offer that’s applied to the transaction. An [`offerType`](../AppStoreServerAPI/offertype.md) of `4` indicates a win-back offer.
 
-##### Testing win-back offers
+### Testing win-back offers
 
 You can test win-back offers early in your development using StoreKit Testing in Xcode, and in the sandbox environment. For more information, see [Testing win-back offers in Xcode](./testing-win-back-offers-in-xcode.md) and [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md).
 

@@ -22,7 +22,7 @@ optional func share(_ sender: Any?)
 - (void) share:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To present the standard system UI for sharing content, call [`share(text:from:)`](../betextinteraction/share%28text,from%29.md) in your implementation of this method.
 

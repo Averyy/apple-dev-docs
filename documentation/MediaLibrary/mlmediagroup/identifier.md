@@ -22,7 +22,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each group’s identifier is unique within a media source.
 

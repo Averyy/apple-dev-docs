@@ -24,11 +24,11 @@ class func luminosityBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) luminosityBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the luminosity-blend mode filter to an image. The effect creates the output image by using the hue and saturation values of the background image while using the luminance values of the input image.
 

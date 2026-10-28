@@ -22,7 +22,7 @@ func stopMonitoringSignificantLocationChanges()
 - (void) stopMonitoringSignificantLocationChanges;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to stop the delivery of location events that was started using the [`startMonitoringSignificantLocationChanges()`](./startmonitoringsignificantlocationchanges%28%29.md) method. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 

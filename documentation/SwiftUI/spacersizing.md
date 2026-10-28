@@ -18,7 +18,7 @@ A type which defines how spacers should size themselves.
 struct SpacerSizing
 ```
 
-#### Overview
+## Overview
 
 Use this type in coordination with the [`ToolbarSpacer`](./toolbarspacer.md) type to define if the spacer should be a flexible size, or a fixed size using system-defined sizing rules.
 

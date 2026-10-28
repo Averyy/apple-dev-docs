@@ -29,7 +29,7 @@ optional func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTextur
 
 - [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to use the GPU to evaluate your layer. Fill `commandBuffer` with the GPU commands that evaluate the layer. Don’t commit the command buffer in this method; Core ML executes the command buffer after this method returns.
 

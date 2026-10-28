@@ -15,7 +15,7 @@ The unique identifier for a transaction, such as an In-App Purchase, restored pu
 string transactionId
 ```
 
-#### Discussion
+## Discussion
 
 The App Store generates a new value for transaction identifier every time the subscription automatically renews or the user restores it on a new device.
 

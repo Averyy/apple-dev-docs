@@ -15,7 +15,7 @@ The AudioQueue’s intended spatial audio experience.
 var intendedSpatialExperience: any SpatialAudioExperience { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is only useful for output AudioQueues not configured in offline mode; otherwise it’s a no-op.
 

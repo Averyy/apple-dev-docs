@@ -23,7 +23,7 @@ var kDNSServiceMaxDomainName: Int32 { get }
 #define kDNSServiceMaxDomainName
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length, in bytes, of a domain name represented as an *escaped* C string including the final trailing dot, and the terminating NULL at the end.
 

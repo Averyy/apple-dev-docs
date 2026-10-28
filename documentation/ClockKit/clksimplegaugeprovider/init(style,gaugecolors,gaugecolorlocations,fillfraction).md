@@ -21,11 +21,11 @@ convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeCol
 + (instancetype) gaugeProviderWithStyle:(CLKGaugeProviderStyle) style gaugeColors:(NSArray<UIColor *> *) gaugeColors gaugeColorLocations:(NSArray<NSNumber *> *) gaugeColorLocations fillFraction:(float) fillFraction;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated multicolor gauge.
 
-#### Discussion
+## Discussion
 
 If you provide both colors and locations, then the `gaugeColors` and `gaugeColorLocations` arrays must be the same length.
 

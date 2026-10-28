@@ -22,11 +22,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized refresh control.
 
-#### Discussion
+## Discussion
 
 The returned refresh control is configured with a default height and width. After you assign the control to a view controller object, the frame of the control is adjusted to match and is managed thereafter.
 

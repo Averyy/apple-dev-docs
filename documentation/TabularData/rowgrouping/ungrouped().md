@@ -21,7 +21,7 @@ Generates a data frame that contains all the rows from each group in the row gro
 func ungrouped() -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 The method discards any column with the same name as the row grouping itself.
 

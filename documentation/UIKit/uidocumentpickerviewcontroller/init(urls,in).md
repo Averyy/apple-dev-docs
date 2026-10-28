@@ -24,11 +24,11 @@ init(urls: [URL], in mode: UIDocumentPickerMode)
 - (instancetype) initWithURLs:(NSArray<NSURL *> *) urls inMode:(UIDocumentPickerMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized `UIDocumentPickerViewController` object, or `nil` if the object could not be successfully initialized.
 
-#### Discussion
+## Discussion
 
 In iOS 10 and earlier, this method returns the document picker view controller from the most recently used Document Provider extension. If no valid Document Provider can be found, it defaults back to iCloud Drive.
 

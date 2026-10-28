@@ -19,7 +19,7 @@ class NSAccessibilityElement
 @interface NSAccessibilityElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create subclasses of the [`NSAccessibilityElement`](./nsaccessibilityelement-swift.class.md) class to represent any of your user interface elements that don’t inherit from [`NSView`](./nsview.md) or from one of the standard AppKit controls. This class represents your user interface element in the accessibility hierarchy and manages the details necessary for working with assistive apps.
 

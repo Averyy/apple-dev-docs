@@ -24,7 +24,7 @@ var inheritDepthClipMode: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritDepthClipMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

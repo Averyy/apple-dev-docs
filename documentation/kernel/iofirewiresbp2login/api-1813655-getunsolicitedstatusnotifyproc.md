@@ -13,7 +13,7 @@ virtual void getUnsolicitedStatusNotifyProc(
  FWSBP2NotifyCallback *callback );
 ```
 
-#### Overview
+## Overview
 
 Returns the refCon and callback address of the unsolicited status notify callback.
 

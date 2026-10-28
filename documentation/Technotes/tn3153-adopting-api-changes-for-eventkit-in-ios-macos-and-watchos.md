@@ -5,23 +5,23 @@
 
 Test your existing apps against EventKit API latest changes.
 
-#### Overview
+## Overview
 
-Xcode 15 includes SDKs for iOS 17, macOS 14, and watchOS 10 that introduce notable changes in EventKit such as new access levels: the ability to add events using EventKitUI without requesting access to Calendar, write-only access, and full access. Apps that don’t request access to calendar data use [EKEventEditViewController](../EventKitUI/ekeventeditviewcontroller.md) to present UI for editing an event, which the person using your app can save. See [Accessing the Event Store](../EventKit/accessing_the_event_store.md) for details. If the user grants your app write-only access, your app can create and write calendar events. However, your app can’t read or delete any events from the user’s calendars,  including the ones it creates. If the user grants your app full access, your app can read, write, create, and delete calendar events as in iOS 16 and earlier, for example. To learn how to update your app to use these new features, see [TN3152: Migrating to the latest Calendar access levels](./tn3152-migrating-to-the-latest-calendar-access-levels.md).
+Xcode 15 includes SDKs for iOS 17, macOS 14, and watchOS 10 that introduce notable changes in EventKit such as new access levels: the ability to add events using EventKitUI without requesting access to Calendar, write-only access, and full access. Apps that don’t request access to calendar data use [EKEventEditViewController](../EventKitUI/ekeventeditviewcontroller.md) to present UI for editing an event, which the person using your app can save. See [Accessing the Event Store](../EventKit/accessing-the-event-store.md) for details. If the user grants your app write-only access, your app can create and write calendar events. However, your app can’t read or delete any events from the user’s calendars,  including the ones it creates. If the user grants your app full access, your app can read, write, create, and delete calendar events as in iOS 16 and earlier, for example. To learn how to update your app to use these new features, see [TN3152: Migrating to the latest Calendar access levels](./tn3152-migrating-to-the-latest-calendar-access-levels.md).
 
 If you built your app with an older version of Xcode 15 such as Xcode 14.3.1 and linked it against older versions of the iOS, macOS, or watchOS SDK, and run it on iOS 17, macOS 14, or watchOS 10, you may see behavior that you are unfamiliar with when using EventKit or EventKitUI. For instance, your app may not be able to fetch events even if the user previously granted full access to the app on an earlier OS version.
 
 This document describes how some of these changes may affect your app. To identify these changes in behavior, thoroughly test your app for each major OS version it supports. Confirm that your usage of EventKit or EventKitUI behaves as you expect in each OS version and update your code where needed. If you notice an unexpected behavior in these frameworks, report it using [Feedback Assistant](https://developer.apple.com/bug-reporting).
 
-#### Calendar usage description keys
+## Calendar usage description keys
 
-The [NSCalendarsUsageDescription](../BundleResources/information_property_list/nscalendarsusagedescription.md) and [NSRemindersUsageDescription](../BundleResources/information_property_list/nsremindersusagedescription.md) keys describe how your app  intends to use the user’s calendar data or reminders, respectively. If your app runs on iOS 17, macOS 14, watchOS 10, or later and doesn’t include the new [NSCalendarsWriteOnlyAccessUsageDescription](../BundleResources/information_property_list/nscalendarswriteonlyaccessusagedescription.md) or [NSCalendarsFullAccessUsageDescription](../BundleResources/information_property_list/nscalendarsfullaccessusagedescription.md) key, EventKit uses `NSCalendarsUsageDescription` as fallback. If your app doesn’t include the new [NSRemindersFullAccessUsageDescription](../BundleResources/information_property_list/nsremindersfullaccessusagedescription.md) key, EventKit uses `NSRemindersUsageDescription` as fallback.
+The [NSCalendarsUsageDescription](../BundleResources/information-property-list/nscalendarsusagedescription.md) and [NSRemindersUsageDescription](../BundleResources/information-property-list/nsremindersusagedescription.md) keys describe how your app  intends to use the user’s calendar data or reminders, respectively. If your app runs on iOS 17, macOS 14, watchOS 10, or later and doesn’t include the new [NSCalendarsWriteOnlyAccessUsageDescription](../BundleResources/information-property-list/nscalendarswriteonlyaccessusagedescription.md) or [NSCalendarsFullAccessUsageDescription](../BundleResources/information-property-list/nscalendarsfullaccessusagedescription.md) key, EventKit uses `NSCalendarsUsageDescription` as fallback. If your app doesn’t include the new [NSRemindersFullAccessUsageDescription](../BundleResources/information-property-list/nsremindersfullaccessusagedescription.md) key, EventKit uses `NSRemindersUsageDescription` as fallback.
 
-#### Requesting permission from the user
+## Requesting permission from the user
 
 If your app links against an SDK older than the iOS 17 SDK, macOS 14 SDK, or watchOS 10 SDK and hasn’t previously prompted the user for calendar access,
 
-**On iOS and macOS** Calling [requestAccess(to:completion:)](../EventKit/ekeventstore/api-1507547-requestaccess.md) or [`requestAccess(to:)`](../EventKit/ekeventstore/api-1507547-requestaccess.md) with an entity type `event` prompts the user to grant write-only calendar access to your app. If the user allows write-only access to your app and your app used `requestAccess(to:completion:)`, the system calls the [EKEventStoreRequestAccessCompletionHandler](../EventKit/ekeventstorerequestaccesscompletionhandler.md) completion handler with its boolean parameter set to `true`.
+**On iOS and macOS** Calling [requestAccess(to:completion:)](../EventKit/ekeventstore/requestaccess%28to,completion%29.md) or [`requestAccess(to:)`](../EventKit/ekeventstore/requestaccess%28to,completion%29.md) with an entity type `event` prompts the user to grant write-only calendar access to your app. If the user allows write-only access to your app and your app used `requestAccess(to:completion:)`, the system calls the [EKEventStoreRequestAccessCompletionHandler](../EventKit/ekeventstorerequestaccesscompletionhandler.md) completion handler with its boolean parameter set to `true`.
 
 ```swift
 let eventStore = EKEventStore()
@@ -46,11 +46,11 @@ If the user denies access, the completion handler receives a `false` parameter a
 
 **On watchOS** Calling these methods with an entity type `event` prompts the user to grant full calendar access to your app.
 
-> **Note**: If the user previously granted write-only access to the iOS companion app, calling [`requestAccess(to:completion:)`](../EventKit/ekeventstore/api-1507547-requestaccess.md) or [`requestAccess(to:)`](../EventKit/ekeventstore/api-1507547-requestaccess.md) for events in the watchOS app doesn’t prompt the user for access. The access level of the watchOS app matches its companion app, which is write-only.
+> **Note**: If the user previously granted write-only access to the iOS companion app, calling [`requestAccess(to:completion:)`](../EventKit/ekeventstore/requestaccess%28to,completion%29.md) or [`requestAccess(to:)`](../EventKit/ekeventstore/requestaccess%28to,completion%29.md) for events in the watchOS app doesn’t prompt the user for access. The access level of the watchOS app matches its companion app, which is write-only.
 
-#### Authorization status
+## Authorization status
 
-An app with write-only or full access to calendar events will see its authorization status as [authorized](../EventKit/ekauthorizationstatus/authorized.md). If the user previously granted calendar access (`authorized`) to your app, calling [authorizationStatus(for:)](../EventKit/ekeventstore/api-1507239-authorizationstatus.md) with an entity type [event](../EventKit/ekentitytype/event.md) returns `authorized`.
+An app with write-only or full access to calendar events will see its authorization status as [authorized](../EventKit/ekauthorizationstatus/authorized.md). If the user previously granted calendar access (`authorized`) to your app, calling [authorizationStatus(for:)](../EventKit/ekeventstore/authorizationstatus%28for%29.md) with an entity type [event](../EventKit/ekentitytype/event.md) returns `authorized`.
 
 ```swift
 EKEventStore.authorizationStatus(for: .event) == .authorized
@@ -62,22 +62,22 @@ If the user previously granted calendar access to your app on an earlier OS, you
 
 > **Note**: Implement the new APIs if you want to distinguish between the `writeOnly` and `fullAccess` access levels in your app.
 
-#### Existing apps with write-only calendar access
+## Existing apps with write-only calendar access
 
 If the user granted write-only access to your app,
 
-- The [sources](../EventKit/ekeventstore/api-1507315-sources.md) property returns a single virtual source.
-- The [delegateSources](../EventKit/ekeventstore/api-1507419-delegatesources.md) property returns an empty array.
-- The [defaultCalendarForNewEvents](../EventKit/ekeventstore/api-1507062-defaultcalendarfornewevents.md) property returns a single virtual calendar. The [calendars(for:)](../EventKit/ekeventstore/api-1507128-calendars.md) method on [EKEventStore](../EventKit/ekeventstore.md) and [EKSource](../EventKit/eksource.md) returns the same virtual calendar.
+- The [sources](../EventKit/ekeventstore/sources.md) property returns a single virtual source.
+- The [delegateSources](../EventKit/ekeventstore/delegatesources.md) property returns an empty array.
+- The [defaultCalendarForNewEvents](../EventKit/ekeventstore/defaultcalendarfornewevents.md) property returns a single virtual calendar. The [calendars(for:)](../EventKit/ekeventstore/calendars%28for%29.md) method on [EKEventStore](../EventKit/ekeventstore.md) and [EKSource](../EventKit/eksource.md) returns the same virtual calendar.
 
-An app with write-only access may later request full access. The first time your app calls the [calendarItemWithIdentifier:](../EventKit/ekeventstore/api-1507433-calendaritemwithidentifier.md),
-[calendarItemsWithExternalIdentifier:](../EventKit/ekeventstore/api-1507281-calendaritemswithexternalidentif.md), [enumerateEvents(matching:using:)](../EventKit/ekeventstore/api-1507518-enumerateevents.md), [events(matching:)](../EventKit/ekeventstore/api-1507183-events.md), or [event(withIdentifier:)](../EventKit/ekeventstore/api-1507490-event.md) instance methods, it implicitly prompts the user to upgrade the app to full access or keep it write-only access. If the user grants full access to the app, an [EKEventStoreChanged](../Foundation/nsnotification/name/api-1507525-ekeventstorechanged.md) notification is posted, these methods return some results, and the app has a full access authorization status. When your app receives the event store notification, refetch all calendar data that your app needs to refresh its views. These data are now visible to your app.
+An app with write-only access may later request full access. The first time your app calls the [calendarItemWithIdentifier:](../EventKit/ekeventstore/calendaritem%28withidentifier%29.md),
+[calendarItemsWithExternalIdentifier:](../EventKit/ekeventstore/calendaritems%28withexternalidentifier%29.md), [enumerateEvents(matching:using:)](../EventKit/ekeventstore/enumerateevents%28matching,using%29.md), [events(matching:)](../EventKit/ekeventstore/events%28matching%29.md), or [event(withIdentifier:)](../EventKit/ekeventstore/event%28withidentifier%29.md) instance methods, it implicitly prompts the user to upgrade the app to full access or keep it write-only access. If the user grants full access to the app, an [EKEventStoreChanged](../Foundation/nsnotification/name-swift.struct/ekeventstorechanged.md) notification is posted, these methods return some results, and the app has a full access authorization status. When your app receives the event store notification, refetch all calendar data that your app needs to refresh its views. These data are now visible to your app.
 
 If the user denies access, these methods don’t return any results, and any further calls don’t prompt the user for access again. Your app still has write-only calendar access.
 
-> **Note**: If your app doesn’t call [`calendarItemWithIdentifier:`](../EventKit/ekeventstore/api-1507433-calendaritemwithidentifier.md), [`calendarItemsWithExternalIdentifier:`](../EventKit/ekeventstore/api-1507281-calendaritemswithexternalidentif.md), [`enumerateEvents(matching:using:)`](../EventKit/ekeventstore/api-1507518-enumerateevents.md), [`events(matching:)`](../EventKit/ekeventstore/api-1507183-events.md), or [`event(withIdentifier:)`](../EventKit/ekeventstore/api-1507490-event.md) to implicitly prompt the user for upgrade, the user would have to know to change the access level for the app in Settings > Privacy & Security > Calendars on their device.
+> **Note**: If your app doesn’t call [`calendarItemWithIdentifier:`](../EventKit/ekeventstore/calendaritem%28withidentifier%29.md), [`calendarItemsWithExternalIdentifier:`](../EventKit/ekeventstore/calendaritems%28withexternalidentifier%29.md), [`enumerateEvents(matching:using:)`](../EventKit/ekeventstore/enumerateevents%28matching,using%29.md), [`events(matching:)`](../EventKit/ekeventstore/events%28matching%29.md), or [`event(withIdentifier:)`](../EventKit/ekeventstore/event%28withidentifier%29.md) to implicitly prompt the user for upgrade, the user would have to know to change the access level for the app in Settings > Privacy & Security > Calendars on their device.
 
-#### Revision History
+## Revision History
 
 - **2024-02-27** Made minor editorial changes.
 - **2023-06-06** First published.

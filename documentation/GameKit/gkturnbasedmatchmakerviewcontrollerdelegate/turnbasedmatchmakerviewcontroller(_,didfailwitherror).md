@@ -25,7 +25,7 @@ func turnBasedMatchmakerViewController(_ viewController: GKTurnBasedMatchmakerVi
 - (void) turnBasedMatchmakerViewController:(GKTurnBasedMatchmakerViewController *) viewController didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method needs to dismiss the view controller.
 

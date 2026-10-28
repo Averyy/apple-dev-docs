@@ -23,11 +23,11 @@ func IORegistryEntryGetPath(_ entry: io_registry_entry_t, _ plane: UnsafePointer
 kern_return_t IORegistryEntryGetPath(io_registry_entry_t entry, const io_name_t plane, io_string_t path);
 ```
 
-#### Return Value
+## Return Value
 
 IORegistryEntryGetPath will fail if the entry is not attached in the plane, or if the buffer is not large enough to contain the path.
 
-#### Discussion
+## Discussion
 
 The path for a registry entry is copied to the caller's buffer. The path describes the entry's attachment in a particular plane, which must be specified. The path begins with the plane name followed by a colon, and then followed by '/' separated path components for each of the entries between the root and the registry entry. An alias may also exist for the entry, and will be returned if available.
 

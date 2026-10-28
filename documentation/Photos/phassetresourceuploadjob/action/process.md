@@ -26,7 +26,7 @@ PHAssetResourceUploadJobActionProcess
 
 - [Uploading asset resources in the background](../../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 A processable job has a [`state`](../state-swift.property.md) of `registered` or `pending`.
 

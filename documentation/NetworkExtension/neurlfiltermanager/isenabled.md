@@ -18,7 +18,7 @@ A Boolean value that toggles the enabled status of the URL filter.
 var isEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the URL filter starts filtering URLs. If `false`, the filter stops filtering.
 

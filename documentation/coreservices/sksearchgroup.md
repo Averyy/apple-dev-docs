@@ -16,7 +16,7 @@ Deprecated. Use asynchronous searching with SKSearchCreate instead, which does n
 class SKSearchGroup
 ```
 
-#### Overview
+## Overview
 
 Defines an opaque data type representing a search group.
 

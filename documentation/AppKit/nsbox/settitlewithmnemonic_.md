@@ -15,7 +15,7 @@ Sets the title of the receiver with a character denoted as an access key.
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

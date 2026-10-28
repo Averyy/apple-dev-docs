@@ -16,7 +16,7 @@ Parses the contents of the specified report and updates the interface’s elemen
 virtual void processReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the provided report data to update the [`IOHIDElement`](../iohidelement.md) objects associated with this interface. Upon receiving a new report, call this method before you call the [`getElements`](./getelements.md) method.
 

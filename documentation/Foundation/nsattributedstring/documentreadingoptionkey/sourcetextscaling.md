@@ -21,7 +21,7 @@ The text-scaling mode to associate with the document’s content.
 static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the options of the [`NSTextScalingType`](../../../UIKit/nstextscalingtype.md) type. Some platforms scale fonts to improve their appearance. Include this option to specify the text-scaling mode to associate with the document’s contents on disk.
 

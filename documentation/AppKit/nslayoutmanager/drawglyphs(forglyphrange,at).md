@@ -19,7 +19,7 @@ func drawGlyphs(forGlyphRange glyphsToShow: NSRange, at origin: NSPoint)
 - (void) drawGlyphsForGlyphRange:(NSRange) glyphsToShow atPoint:(NSPoint) origin;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by `NSTextView` for drawing. You can override it to perform additional drawing, or to replace text drawing entirely, but not to change layout. You can call this method directly, but focus must already be locked on the destination view or image. This method expects the coordinate system of the view to be flipped.
 

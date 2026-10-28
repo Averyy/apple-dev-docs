@@ -5,13 +5,13 @@
 
 Set up an event or reminder that repeats.
 
-#### Overview
+## Overview
 
 Recurring events repeat over a specified interval of time. To make an event recurring, assign it a recurrence rule that describes when the event occurs. Recurrence rules are represented by instances of the [`EKRecurrenceRule`](./ekrecurrencerule.md) class.
 
 Recurrence is applicable to both calendar events and reminders. Unlike with recurring events, only the first incomplete reminder of a recurring set is obtainable. This is true with EventKit as well as the Reminders app. When the reminder is completed, the next reminder in the recurrence set becomes available.
 
-##### Create a Basic Rule
+### Create a Basic Rule
 
 You can create a recurrence rule with a simple daily, weekly, monthly, or yearly pattern using the [`init(recurrenceWith:interval:end:)`](./ekrecurrencerule/init%28recurrencewith,interval,end%29.md) method. You provide three values to this method:
 
@@ -19,7 +19,7 @@ You can create a recurrence rule with a simple daily, weekly, monthly, or yearly
 - **The recurrence interval.** This is an integer greater than `0` that specifies how often a pattern repeats. For example, if the recurrence rule is a weekly recurrence rule and its interval is `1`, then the pattern repeats every week. If the recurrence rule is a monthly recurrence rule and its interval is `3`, then the pattern repeats every three months.
 - **The recurrence end.** This optional parameter is an instance of the [`EKRecurrenceEnd`](./ekrecurrenceend.md) class, which indicates when the recurrence rule ends. The recurrence end can be based on a specific end date or on an amount of occurrences. If you don’t want to specify an end for the recurrence rule, pass `nil`.
 
-##### Create a Complex Rule
+### Create a Complex Rule
 
 You can create a recurrence rule with a complex pattern using the [`init(recurrenceWith:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:)`](./ekrecurrencerule/init%28recurrencewith,interval,daysoftheweek,daysofthemonth,monthsoftheyear,weeksoftheyear,daysoftheyear,setpositions,end%29.md) method. As for a basic recurrence rule, you provide a frequency, interval, and optional end for the recurring event. In addition, you can provide a combination of optional values describing a custom rule, as listed in the table below.
 

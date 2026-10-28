@@ -21,7 +21,7 @@ An array of momentary loudness measurements sampled across the song in LUFS.
 let momentary: [MusicUnderstandingSession.TimedValue<Float>]
 ```
 
-#### Discussion
+## Discussion
 
 The measurement happens in 400 millisecond (ms) increments that advance 100ms at a time.
 

@@ -20,7 +20,7 @@ A type that describes a modification to the playback queue.
 struct QueueChange
 ```
 
-#### Overview
+## Overview
 
 Use this type to inform the participant about changes to the playback queue associated with the current activity. Your app manages the queue, along with any additions or changes. You use this type to communicate those changes back to the participant using the system UI.
 

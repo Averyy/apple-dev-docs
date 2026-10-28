@@ -21,11 +21,11 @@ Adds a request to the video processor.
 final func addRequest<T>(_ request: T, cadence: VideoProcessor.Cadence? = nil) async throws -> some AsyncSequence<T.Result, any Error> where T : VisionRequest
 ```
 
-#### Return Value
+## Return Value
 
 An [`AsyncSequence`](../../Swift/asyncsequence.md) that produces a request result for each frame.
 
-#### Discussion
+## Discussion
 
 By default, the framework processes every frame.
 

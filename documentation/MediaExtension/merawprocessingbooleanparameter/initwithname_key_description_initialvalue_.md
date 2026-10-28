@@ -15,7 +15,7 @@ Creates a Boolean parameter object with the initial value.
 - (instancetype) initWithName:(NSString *) name key:(NSString *) key description:(NSString *) description initialValue:(BOOL) initialValue;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.Boolean`](../merawprocessingparameter/boolean.md).
 

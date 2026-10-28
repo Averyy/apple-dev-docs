@@ -19,7 +19,7 @@ Returns a Boolean indicating whether two float ranges are equivalent.
 static BOOL UIFloatRangeIsEqualToRange(UIFloatRange range, UIFloatRange otherRange);
 ```
 
-#### Discussion
+## Discussion
 
 Two ranges are considered equal when their minimum values are the same and their maximum values are the same. In practice, the minimum and maximum values do not have to be exactly equal, but the difference between each pair of values must be less than `FLT_EPSILON`.
 

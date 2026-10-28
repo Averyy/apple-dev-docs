@@ -5,7 +5,7 @@
 
 A Boolean that indicates whether the choice is visible.
 
-#### Overview
+## Overview
 
 `true` when the choice is visible, `false` otherwise.
 

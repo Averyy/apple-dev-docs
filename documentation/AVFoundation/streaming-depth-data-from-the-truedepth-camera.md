@@ -12,7 +12,7 @@ Visualize depth data in 2D and 3D from the TrueDepth camera.
 - Mac Catalyst 12.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The TrueDepth camera provides depth data in real time that allows you to determine the distance of a pixel from the front-facing camera. This sample demonstrates how to use the AVFoundation framework’s capture API to read data from the TrueDepth camera, and how to display it in an intuitive fashion onscreen.
 
@@ -20,7 +20,7 @@ The sample shows two different views: a 2D view that distinguishes depth values 
 
 To see this sample app in action, build and run the project in Xcode on an iOS device running iOS 11 or later. Because Xcode doesn’t have access to the TrueDepth camera, this sample will not build or run in the Xcode simulator.
 
-##### Set up a capture session
+### Set up a capture session
 
 Set up an `AVCaptureSession` on a separate thread via the session queue. Initialize this session queue before configuring the camera for capture, like so:
 
@@ -88,7 +88,7 @@ outputSynchronizer!.setDelegate(self, queue: dataOutputQueue)
 
 The `CameraViewController` implementation creates and manages this session to interface with the camera. It also contains UI to toggle between the two viewing modes, 2D and 3D.
 
-##### Visualize depth data in 2D
+### Visualize depth data in 2D
 
 The sample uses JET color coding to distinguish depth values, ranging from red (close) to blue (far). A slider controls the blending of the color code and the actual color values. Touching a pixel displays its depth value.
 
@@ -104,7 +104,7 @@ guard let cvTexture = cvTextureOut, let texture = CVMetalTextureGetTexture(cvTex
 }
 ```
 
-##### Visualize depth data in 3D
+### Visualize depth data in 3D
 
 The sample’s 3D viewer renders data as a point cloud. Control the camera with the following gestures:
 
@@ -163,7 +163,7 @@ if (kCVReturnSuccess != CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDe
 id<MTLTexture> colorTexture = CVMetalTextureGetTexture(cvColorTexture);
 ```
 
-##### Track thermal state
+### Track thermal state
 
 Processing depth data from a live stream may cause the device to heat up. Keep tabs on the thermal state so you can alert the user if it exceeds a dangerous threshold.
 

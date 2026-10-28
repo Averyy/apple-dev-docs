@@ -25,7 +25,7 @@ struct Options
 enum NSComparisonPredicateOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The system supports these options for `LIKE`, as well as all of the equality/comparison operators.
 

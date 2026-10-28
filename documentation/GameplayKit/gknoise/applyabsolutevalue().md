@@ -24,7 +24,7 @@ func applyAbsoluteValue()
 - (void) applyAbsoluteValue;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a value of `-0.75` becomes `0.75`, but positive values such as `0.5` remain unchanged.
 

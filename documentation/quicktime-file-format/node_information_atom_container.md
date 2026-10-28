@@ -5,7 +5,7 @@
 
 An atom container that includes general information about the node such as the node’s type, ID, and name.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

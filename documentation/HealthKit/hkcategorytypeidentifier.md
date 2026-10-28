@@ -24,7 +24,7 @@ struct HKCategoryTypeIdentifier
 typedef NSString * HKCategoryTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 To create an [`HKCategoryType`](./hkcategorytype.md) instance, pass an [`HKCategoryTypeIdentifier`](./hkcategorytypeidentifier.md) value to the [`categoryType(forIdentifier:)`](./hkobjecttype/categorytype%28foridentifier%29.md) method.
 

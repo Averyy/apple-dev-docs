@@ -20,7 +20,7 @@ unowned(unsafe) var confidenceMap: CVPixelBuffer? { get }
 @property (nonatomic, assign, readonly, nullable) CVPixelBufferRef confidenceMap;
 ```
 
-#### Discussion
+## Discussion
 
 The natural light of the physical environment affects the [`depthMap`](./depthmap.md) property such that ARKit is less confident about the accuracy of the LiDAR Scanner’s depth measurements for surfaces that are highly reflective, or that have high light absorption. This property measures the accuracy of the scene depth-data by containing an [`ARConfidenceLevel`](../arconfidencelevel.md) raw-value for every component in [`depthMap`](./depthmap.md).
 

@@ -17,7 +17,7 @@ The possible quality levels that the scanner uses to find data.
 enum QualityLevel
 ```
 
-#### Overview
+## Overview
 
 The quality levels mostly impact the camera resolution.
 

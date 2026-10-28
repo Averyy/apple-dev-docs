@@ -18,7 +18,7 @@ typealias AudioDeviceID = AudioObjectID
 typedef AudioObjectID AudioDeviceID;
 ```
 
-#### Discussion
+## Discussion
 
 AudioDevice is the base class for all objects that represent an audio device.
 

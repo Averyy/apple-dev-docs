@@ -21,7 +21,7 @@ Provides the relative ordering of two elements.
 func compare(_ lhs: Compared, _ rhs: Compared) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 The relative ordering between the two elements.
 

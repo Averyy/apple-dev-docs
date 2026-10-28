@@ -23,7 +23,7 @@ func cancel()
 
 Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 Cancelling a task has three primary effects:
 

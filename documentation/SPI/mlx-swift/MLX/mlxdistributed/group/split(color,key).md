@@ -17,11 +17,11 @@ Split the group into subgroups based on the provided color.
 func split(color: Int, key: Int = -1) throws -> MLXDistributed.Group
 ```
 
-#### Return Value
+## Return Value
 
 The subgroup this process belongs to
 
-#### Discussion
+## Discussion
 
 Processes that use the same color go to the same group.  The `key` argument defines the rank in the new group – the smaller the key the smaller the rank.  If the key is negative the rank in the current group is used.
 

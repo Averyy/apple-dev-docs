@@ -15,7 +15,7 @@ A 16-byte opcode to fill out the Command Descriptor Block (CDB).
 SCSICommandDescriptorBlock fCommandDescriptorBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Populate this member of the parameters structure with the functions listed in the following sections:
 

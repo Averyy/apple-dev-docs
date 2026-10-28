@@ -23,7 +23,7 @@ class func shared() -> NEFilterManager
 + (NEFilterManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 The `NEFilterManager` instance for the calling application.
 

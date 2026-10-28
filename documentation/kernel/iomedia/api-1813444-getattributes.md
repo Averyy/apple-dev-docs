@@ -9,11 +9,11 @@
 virtual IOMediaAttributeMask getAttributes() const;
 ```
 
-#### Return Value
+## Return Value
 
 Media attributes, such as ejectability and removability. See IOMediaAttributeMask.
 
-#### Overview
+## Overview
 
 Ask the media object for its attributes.
 

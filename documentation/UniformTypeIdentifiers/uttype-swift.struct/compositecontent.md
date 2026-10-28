@@ -21,7 +21,7 @@ A base type that represents a content format supporting mixed embedded content.
 static var compositeContent: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.composite-content`.
 

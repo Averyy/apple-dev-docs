@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicBezelCircularText
 @interface CLKComplicationTemplateGraphicBezelCircularText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 The graphic bezel templates display a circular template, and text that wraps around the watch face.
 

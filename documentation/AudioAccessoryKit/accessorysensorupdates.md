@@ -15,13 +15,13 @@ Subscribes to a stream of raw sensor data packets from a connected accessory.
 struct AccessorySensorUpdates
 ```
 
-#### Overview
+## Overview
 
 An Audio Rendering Extension launched by AudioToolbox uses this type to receive sensor data from a 3P accessory that has registered `.headTracking` via `AccessoryControlDevice`. Data is brokered through `audioaccessoryd` over XPC.
 
 No XPC resources are acquired until iteration begins. Cancel the owning `Task` to stop receiving updates and release the connection.
 
-#### Usage
+## Usage
 
 ```swift
 guard AccessorySensorUpdates.isSupported else { return }

@@ -22,11 +22,11 @@ init(initiallySelectedPrinter printer: UIPrinter?)
 + (UIPrinterPickerController *) printerPickerControllerWithInitiallySelectedPrinter:(UIPrinter *) printer;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized printer picker controller object.
 
-#### Discussion
+## Discussion
 
 After creating a printer picker controller, assign your delegate as needed and present the controller.
 

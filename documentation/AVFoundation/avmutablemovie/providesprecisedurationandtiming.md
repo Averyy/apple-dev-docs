@@ -20,7 +20,7 @@ A Boolean value that indicates whether the asset provides precise duration and t
 var providesPreciseDurationAndTiming: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](../../Swift/false.md).
 

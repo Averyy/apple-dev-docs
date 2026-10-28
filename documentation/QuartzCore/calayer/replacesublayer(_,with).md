@@ -24,7 +24,7 @@ func replaceSublayer(_ oldLayer: CALayer, with newLayer: CALayer)
 - (void) replaceSublayer:(CALayer *) oldLayer with:(CALayer *) newLayer;
 ```
 
-#### Discussion
+## Discussion
 
 If `oldLayer` is not in the receiver’s [`sublayers`](./sublayers.md) array, the behavior of this method is undefined.
 

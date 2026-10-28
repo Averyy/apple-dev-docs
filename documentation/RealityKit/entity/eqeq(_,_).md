@@ -21,7 +21,7 @@ nonisolated
 static func == (lhs: Entity, rhs: Entity) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two entities are equal.
 

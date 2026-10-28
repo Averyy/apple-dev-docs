@@ -29,11 +29,11 @@ vImage_Error vImageMatrixMultiply_ARGB8888(const vImage_Buffer *src, const vImag
 
 - [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function treats the four-channel source and destination pixels as four-element vectors. The operation multiplies each source pixel by the 4 x 4 matrix to produce the destination pixel.
 

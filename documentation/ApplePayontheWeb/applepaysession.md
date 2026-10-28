@@ -20,7 +20,7 @@ interface ApplePaySession
 
 - [Creating an Apple Pay Session](./creating-an-apple-pay-session.md)
 
-#### Overview
+## Overview
 
 [`ApplePaySession`](./applepaysession.md) is the entry point for Apple Pay on the web.  All the steps of the payment process for a single transaction occur in a session.
 

@@ -19,7 +19,7 @@ func SCNetworkConnectionCopyServiceID(_ connection: SCNetworkConnection) -> CFSt
 CFStringRefSCNetworkConnectionCopyServiceID(SCNetworkConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 The service ID associated with the network connection.
 

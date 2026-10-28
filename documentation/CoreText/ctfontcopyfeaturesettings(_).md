@@ -25,11 +25,11 @@ func CTFontCopyFeatureSettings(_ font: CTFont) -> CFArray?
 extern CFArrayRefCTFontCopyFeatureSettings(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A normalized array of font feature-setting dictionaries. The array contains only the non-default settings that should be applied to the font, or `NULL` if the default settings should be used.
 
-#### Discussion
+## Discussion
 
 A feature-setting dictionary is a tuple of a [`kCTFontFeatureTypeIdentifierKey`](./kctfontfeaturetypeidentifierkey.md) key-value pair and a [`kCTFontFeatureSelectorIdentifierKey`](./kctfontfeatureselectoridentifierkey.md) key-value pair. Each setting dictionary indicates which setting is enabled. It is the caller’s responsibility to handle exclusive and nonexclusive settings as necessary.
 

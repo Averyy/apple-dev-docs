@@ -22,7 +22,7 @@ var previousFrames: [VTFrameProcessorFrame] { get }
 @property (nonatomic, readonly) NSArray<VTFrameProcessorFrame *> * previousFrames;
 ```
 
-#### Discussion
+## Discussion
 
 The number of frames can vary from 0 to the number specified by the `previousFrameCount` property in `VTTemporalNoiseFilterConfiguration`.
 

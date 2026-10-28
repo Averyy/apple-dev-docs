@@ -23,7 +23,7 @@ func update(_ gridImages: [UIImage])
 - (void) updateImages:(NSArray<UIImage *> *) gridImages;
 ```
 
-#### Discussion
+## Discussion
 
 This method is multipurpose. Use it to add new images to the image row, and to remove or reorder existing images.
 

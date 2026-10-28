@@ -25,7 +25,7 @@ func redo()
 - (void) redo;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an [`internalInconsistencyException`](../nsexceptionname/internalinconsistencyexception.md) if the method is invoked during an undo operation.
 

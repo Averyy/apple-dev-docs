@@ -19,11 +19,11 @@ optional func selectionManager(_ selectionManager: NSTextSelectionManager, frame
 - (NSRect) selectionManager:(NSTextSelectionManager *) selectionManager frameOfTextContainerAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The frame of the text container at the point, in the view’s coordinate system, or `NSZeroRect` if no container exists there.
 
-#### Discussion
+## Discussion
 
 Implement this method whenever your text container is not positioned at the view’s origin (0, 0), or whenever your view hosts multiple text containers. The selection manager uses the returned frame to convert gesture points from view coordinates into container-local coordinates before forwarding them to [`NSTextSelectionDataSource`](../../nstextselectiondatasource.md). Without this method the selection manager assumes the container fills the view starting at the origin, which produces incorrect points for any other layout.
 

@@ -24,11 +24,11 @@ func SSLReHandshake(_ context: SSLContext) -> OSStatus
 OSStatus SSLReHandshake(SSLContextRef context);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 On success, call the [`SSLHandshake(_:)`](./sslhandshake%28_%29.md) function or the [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md) function, or both, as appropriate, as you would for the original handshake.
 

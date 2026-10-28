@@ -27,7 +27,7 @@ class SFSafariSettings
 
 - [Importing data exported from Safari](./importing-data-exported-from-safari.md)
 
-#### Overview
+## Overview
 
 This class allows your app to present Safari’s extension settings pane or the Export Browsing Data sheet, which enables a person to export their Safari browsing data to a file.
 

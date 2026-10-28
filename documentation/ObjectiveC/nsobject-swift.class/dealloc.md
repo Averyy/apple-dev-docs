@@ -21,7 +21,7 @@ Deallocates the memory occupied by the receiver.
 - (void) dealloc;
 ```
 
-#### Discussion
+## Discussion
 
 Subsequent messages to the receiver may generate an error indicating that a message was sent to a deallocated object (provided the deallocated memory hasn’t been reused yet).
 
@@ -37,7 +37,7 @@ In an implementation of `dealloc`, do not invoke the superclass’s implementati
 
 You never send a [`dealloc`](./dealloc.md) message directly. Instead, an object’s `dealloc` method is invoked by the runtime. See [Advanced Memory Management Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i) for more details.
 
-##### Special Considerations
+### Special Considerations
 
 When not using ARC, your implementation of `dealloc` must invoke the superclass’s implementation as its last instruction.
 

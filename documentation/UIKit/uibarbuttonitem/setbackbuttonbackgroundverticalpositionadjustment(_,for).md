@@ -22,7 +22,7 @@ func setBackButtonBackgroundVerticalPositionAdjustment(_ adjustment: CGFloat, fo
 - (void) setBackButtonBackgroundVerticalPositionAdjustment:(CGFloat) adjustment forBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

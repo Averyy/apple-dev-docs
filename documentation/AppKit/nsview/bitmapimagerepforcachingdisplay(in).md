@@ -19,11 +19,11 @@ func bitmapImageRepForCachingDisplay(in rect: NSRect) -> NSBitmapImageRep?
 - (NSBitmapImageRep *) bitmapImageRepForCachingDisplayInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`NSBitmapImageRep`](../nsbitmapimagerep.md) object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Passing the visible rectangle of the view (`[self visibleRect]`) returns a bitmap suitable for caching the current contents of the view, including all of its descendants.
 

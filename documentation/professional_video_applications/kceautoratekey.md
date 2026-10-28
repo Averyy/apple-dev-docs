@@ -19,7 +19,7 @@ var kCEAutoRateKey: String { get }
 #define kCEAutoRateKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a negative number if the frame rate is set to automatic; otherwise it’s zero.
 

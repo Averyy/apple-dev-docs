@@ -21,7 +21,7 @@ A value that can be used to multiply effects that are applied differently depend
 var value: Double { get }
 ```
 
-#### Return Value
+## Return Value
 
 Zero when in the `identity` case, -1.0 for `willAppear`, and 1.0 for `didDisappear`.
 

@@ -25,13 +25,13 @@ var intValue: Int32 { get }
 @property (readonly) int intValue;
 ```
 
-#### Discussion
+## Discussion
 
 The integer value of the string, assuming a decimal representation and skipping whitespace at the beginning of the string. This property is `INT_MAX` or `INT_MIN` on overflow. This property is `0` if the string doesn’t begin with a valid decimal text representation of a number.
 
 This property uses formatting information stored in the non-localized value; use an [`Scanner`](../scanner.md) object for localized scanning of numeric values from a string.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.5 and later, use [`integerValue`](./integervalue.md) instead.
 

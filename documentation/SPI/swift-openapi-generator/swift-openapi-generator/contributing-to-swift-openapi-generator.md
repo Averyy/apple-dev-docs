@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Help improve Swift OpenAPI Generator by implementing a missing feature or fixing a bug.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator is an open source project that encourages contributions, either to the generator itself, or by building new transport and middleware packages.
 
@@ -18,7 +18,7 @@ Unsure whether a missing feature fits into Swift OpenAPI Generator? Check out: [
 
 > ❗ **Important**: To ensure productive use of contributor and maintainer time and resources, contributors must first agree their proposed change with a maintainer in an issue. Pull requests opened without prior discussion may be closed without review. If there is no issue already tracking the problem or feature request, please file a new one using your own voice (see “AI tools” usage below).
 
-##### AI tools
+### AI tools
 
 Human discourse is an essential part of open source development. To encourage productive collaboration between contributors and maintainers, please refrain from using AI tools for the following:
 
@@ -28,7 +28,7 @@ Human discourse is an essential part of open source development. To encourage pr
 
 Contributors who feel more comfortable writing in another language may use automated translation tools, but must include their original content in their preferred language.
 
-##### Missing transport or middleware
+### Missing transport or middleware
 
 Anyone can create a custom transport or middleware in a new package that depends on the runtime library and provides a type conforming to one of the transport or middleware protocols.
 
@@ -36,7 +36,7 @@ Any adopter of Swift OpenAPI Generator can then depend on that package and use t
 
 > 💡 **Tip**: Transport packages for some of the common HTTP client libraries are provided as part of the Swift OpenAPI Generator project. Also check if the community has already created a package that meets your needs.
 
-##### Missing or broken feature in the generator
+### Missing or broken feature in the generator
 
 The code generator project is written in Swift and can be thought of as a function that takes an OpenAPI document as input and provides one or more Swift source files as output.
 
@@ -46,13 +46,13 @@ Similarly, any changes to the transport and middleware protocols in the runtime 
 
 > 💡 **Tip**: For non-trivial changes affecting the API, consider writing a proposal. For more, check out [Proposals](https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/proposals).
 
-##### Testing the generator
+### Testing the generator
 
 The generator relies on a mix of unit and integration tests.
 
 When contributing, consider how the change can be tested and how the tests will be maintained over time.
 
-##### Runtime SPI for generated code
+### Runtime SPI for generated code
 
 The generated code relies on functionality in the runtime library that is not part of its public API. This is provided in an SPI, named `Generated` and is not intended to be used directly by adopters of the generator.
 
@@ -62,7 +62,7 @@ To use this functionality, use an SPI import:
 @_spi(Generated) import OpenAPIRuntime
 ```
 
-##### Example contribution workflow
+### Example contribution workflow
 
 Let’s walk through the steps to implement a missing OpenAPI feature that requires changes in multiple repositories. For example, adding support for a [new query style](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#fixed-fields-10).
 

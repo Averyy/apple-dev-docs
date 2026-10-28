@@ -16,7 +16,7 @@ Adds an entry to the queue, but doesn't automatically send a data-available noti
 kern_return_t EnqueueWithCoalesce(uint32_t dataSize, bool *sendDataAvailable, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, [`kIOReturnOverrun`](../../DriverKit/kioreturnoverrun.md) if the queue was full, or [`kIOReturnError`](../../DriverKit/kioreturnerror.md) if the queue is corrupt. See [Error Codes](../../DriverKit/error-codes.md). 
 

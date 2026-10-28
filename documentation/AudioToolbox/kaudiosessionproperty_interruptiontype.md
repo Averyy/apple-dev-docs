@@ -23,7 +23,7 @@ var kAudioSessionProperty_InterruptionType: Int { get }
 kAudioSessionProperty_InterruptionType
 ```
 
-#### Discussion
+## Discussion
 
 A read-only `UInt32` value that is one of the constants in the [`AudioSessionInterruptionType`](./audiosessioninterruptiontype.md) enumeration.
 

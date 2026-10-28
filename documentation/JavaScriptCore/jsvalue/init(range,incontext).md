@@ -20,11 +20,11 @@ Creates a JavaScript representation of the specified range.
 init!(range: NSRange, inContext context: JSContext!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript object representing the specified range.
 
-#### Discussion
+## Discussion
 
 Converting a range creates a JavaScript object value with fields named `location` and `length`.
 

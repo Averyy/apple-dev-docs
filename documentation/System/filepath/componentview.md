@@ -21,7 +21,7 @@ A bidirectional, range replaceable collection of the non-root components that ma
 struct ComponentView
 ```
 
-#### Overview
+## Overview
 
 ComponentView provides access to standard `BidirectionalCollection` algorithms for accessing components from the front or back, as well as standard `RangeReplaceableCollection` algorithms for modifying the file path using component or range of components granularity.
 

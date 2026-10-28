@@ -21,7 +21,7 @@ Returns, via two inout parameters, the starting time and duration of a given cal
 func dateInterval(of component: Calendar.Component, start: inout Date, interval: inout TimeInterval, for date: Date) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the starting time and duration of a component could be calculated; otherwise, `false`.
 

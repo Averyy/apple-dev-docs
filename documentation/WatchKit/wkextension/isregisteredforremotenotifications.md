@@ -19,7 +19,7 @@ var isRegisteredForRemoteNotifications: Bool { get }
 @property (nonatomic, readonly, getter=isRegisteredForRemoteNotifications) BOOL registeredForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 This method indicates whether your app successfully registered for remote notifications using the [`registerForRemoteNotifications()`](./registerforremotenotifications%28%29.md) method. It also takes into account the notification permissions set by the user. It does not give any indication about whether remote notifications are available.
 

@@ -28,11 +28,11 @@ Adds an action to perform when events related to a URL session identified by a c
 @preconcurrency func onBackgroundURLSessionEvents(matching matchingString: String, _ urlSessionEvent: @escaping (String, @escaping () -> Void) -> Void) -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A widget that triggers `urlSessionEvent` when events are generated for a `URLSession` with the specified identifier.
 
-#### Discussion
+## Discussion
 
 When a widget initiates a background network request, the system delivers events related to the request directly to the widget extension instead of the containing app. To process the events, do the following:
 

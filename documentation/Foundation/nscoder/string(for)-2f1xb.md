@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a size data structure.
 class func string(for size: CGSize) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `size`. See [`cgSize(for:)`](./cgsize%28for%29.md) for a discussion of the string format.
 

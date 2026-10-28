@@ -25,7 +25,7 @@ var leaderboardCategory: String? { get set }
 @property (nonatomic, strong, nullable) NSString * leaderboardCategory;
 ```
 
-#### Discussion
+## Discussion
 
 The category property must either be `nil` or it must match a category identifier you defined when you created your leaderboards in App Store Connect. If `nil`, the view displays scores for the aggregate leaderboard. Default is `nil`.
 

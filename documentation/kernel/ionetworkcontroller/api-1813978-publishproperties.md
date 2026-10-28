@@ -11,11 +11,11 @@ Publishes controller properties and capabilities.
 virtual bool publishProperties();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if all properties were discovered and published successfully, false otherwise. Returning false will prevent client objects from attaching to the controller, since a property that a client relies upon may be missing.
 
-#### Overview
+## Overview
 
 Called by IONetworkController to discover controller properties, and publish them to the property table in the I/O Kit Registry. This method is called once by prepare().
 

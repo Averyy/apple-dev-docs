@@ -5,11 +5,11 @@
 
 Translate or adapt the localizable files for a language and region that you export from your project.
 
-#### Overview
+## Overview
 
 After you export localizations, you can give the Xcode Localization Catalog to localizers for translation, or edit the XLIFF files located in the `Localized Contents` folder yourself.
 
-##### Add translations to XLIFF files
+### Add translations to XLIFF files
 
 To find the user-facing strings that need translation, including the app name, search for the `<trans-unit>` element in the XLIFF file. To insert a translation of a string, add a `<target>` element to the `<trans-unit>` element containing the localized text as in:
 
@@ -21,7 +21,7 @@ To find the user-facing strings that need translation, including the app name, s
 </trans-unit>
 ```
 
-##### Group related strings using tables
+### Group related strings using tables
 
 If you specify a table name when you internationalize your code — in other words, if you use the `Text` [`init(_:tableName:bundle:comment:)`](../SwiftUI/text/init%28_,tablename,bundle,comment%29.md) method or the [`NSLocalizedString(_:tableName:bundle:value:comment:)`](../Foundation/nslocalizedstring%28_,tablename,bundle,value,comment%29.md) function with the `tableName` parameter — Xcode groups the strings into separate `<file>` elements with `[table name].strings` as the filename. If you don’t specify a table name, Xcode uses the default `Localizable.strings` as the filename.
 
@@ -39,7 +39,7 @@ VStack {
 }
 ```
 
-##### Edit string catalogs in Xcode
+### Edit string catalogs in Xcode
 
 After you import localizations, you can edit the string catalog file in your project and the next time you export localizations, Xcode includes your changes in the XLIFF files.
 

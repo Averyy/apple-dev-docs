@@ -21,7 +21,7 @@ The animating phase where the scroll view is animating towards a final target.
 case animating
 ```
 
-#### Discussion
+## Discussion
 
 This phase is the result of a programmatic scroll when using a [`ScrollViewReader`](../scrollviewreader.md) or [`scrollPosition(id:anchor:)`](../view/scrollposition%28id,anchor%29.md) modifier.
 

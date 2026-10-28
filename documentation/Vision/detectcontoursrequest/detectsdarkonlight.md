@@ -21,7 +21,7 @@ A Boolean value that indicates whether the request detects a dark object on a li
 var detectsDarkOnLight: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

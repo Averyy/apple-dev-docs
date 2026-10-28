@@ -31,7 +31,7 @@ Available when `Self` is `RadialGradient`.
 static func radialGradient(_ gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat) -> RadialGradient
 ```
 
-#### Discussion
+## Discussion
 
 The gradient applies the color function as the distance from a center point, scaled to fit within the defined start and end radii. The gradient maps the unit space center point into the bounding rectangle of each shape filled with the gradient.
 

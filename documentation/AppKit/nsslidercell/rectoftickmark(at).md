@@ -19,11 +19,11 @@ func rectOfTickMark(at index: Int) -> NSRect
 - (NSRect) rectOfTickMarkAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle of the specified tick mark.
 
-#### Discussion
+## Discussion
 
 If no tick mark is associated with `index`, the method raises `NSRangeException`.
 

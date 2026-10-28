@@ -19,7 +19,7 @@ The identifier of an active Thread network Border Agent.
 var extendedAddress: Data
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to the Border Agent ID in [`retrieveCredentials(forBorderAgent:completion:)`](../../../ThreadNetwork/thclient/retrievecredentials%28forborderagent,completion%29.md).
 

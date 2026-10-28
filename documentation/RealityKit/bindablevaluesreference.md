@@ -20,7 +20,7 @@ A reference to a bindable value of an animation.
 struct BindableValuesReference
 ```
 
-#### Overview
+## Overview
 
 As the name indicates, this structure doesn’t exhibit copy-on-write behavior because it’s a reference. This is in contrast to the [`BindableValue`](./bindablevalue.md) structure.
 

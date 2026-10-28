@@ -21,7 +21,7 @@ optional func scribbleInteractionDidFinishWriting(_ interaction: UIScribbleInter
 - (void) scribbleInteractionDidFinishWriting:(UIScribbleInteraction *) interaction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to reset placeholders or other UI elements, if appropriate, to their state from before the user started writing.
 

@@ -23,7 +23,7 @@ mutating func formIntersection<S>(_ other: S) where Element == S.Element, S : Se
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are not also members of the `neighbors` set are removed. In particular, the names `"Alicia"`, `"Chris"`, and `"Diana"` are removed.
 

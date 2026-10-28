@@ -23,7 +23,7 @@ var subviews: [UIView] { get }
 @property (nonatomic, copy, readonly) NSArray<__kindof UIView *> * subviews;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to retrieve the subviews associated with your custom view hierarchies. The order of the subviews in the array reflects their visible order on the screen, with the view at index 0 being the back-most view.
 

@@ -23,7 +23,7 @@ func insertSubview(_ view: UIView, at index: Int)
 - (void) insertSubview:(UIView *) view atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method establishes a strong reference to `view` and sets its next responder to the receiver, which is its new superview.
 

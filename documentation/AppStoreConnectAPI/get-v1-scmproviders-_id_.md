@@ -9,11 +9,11 @@ Get information about a specific source code management provider you connected t
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves information about a specific source code management provider you connected to Xcode Cloud. Use the data provided in the response to read additional information; for example, repository information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -19,7 +19,7 @@ var draggingImageComponents: [NSDraggingImageComponent] { get }
 @property (readonly) NSArray<NSDraggingImageComponent *> * draggingImageComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The component frames are relative to a coordinate system that has its origin at the bottom left, so you need to take into account the flipped state of your view when computing the component frames.
 

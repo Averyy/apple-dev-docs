@@ -17,11 +17,11 @@ OSStatus PMMakeOldPrintRecord (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin` and creating a page format and print settings object. Use  `PMMakeOldPrintRecord`  to create a print record to store with your documents for compatibility with pre-Carbon versions of your application. Note that because the page format and print settings objects contain more information than the old-style print record, some settings may be lost in conversion.
 

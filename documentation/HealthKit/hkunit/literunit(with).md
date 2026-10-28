@@ -24,11 +24,11 @@ class func literUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) literUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring volume based on liters and the provided prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of liters, typically milliliter units, as shown below.
 

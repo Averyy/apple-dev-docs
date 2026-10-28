@@ -17,15 +17,15 @@ Inverse two dimensional discrete Fourier Transform on a real input.
 static func irfft2(_ array: MLXArray, s: (some Collection<Int>)? = [Int]?.none, axes: (some Collection<Int>)? = [-2, -1], norm: FFTNorm = .backward, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inverse of [`rfft2(_:s:axes:norm:stream:)`](./rfft2%28_,s,axes,norm,stream%29.md)
 
-#### Discussion
+## Discussion
 
 Note the input is generally complex. The dimensions of the input specified in `axes` are padded or truncated to match the sizes from `s`. The last axis in `axes` is treated as the real axis and will have size `s[s.lastIndex] / 2 + 1`.
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](../mlxfft.md)
 

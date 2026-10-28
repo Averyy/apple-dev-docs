@@ -22,7 +22,7 @@ var isVideoHDREnabled: Bool { get set }
 @property (nonatomic, getter=isVideoHDREnabled) BOOL videoHDREnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The device ignores the value of this property when [`activeColorSpace`](./activecolorspace.md) is HLG BT2020 color space because HDR is effectively always on and can’t be disabled.
 

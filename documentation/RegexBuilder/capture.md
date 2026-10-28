@@ -21,7 +21,7 @@ A regex component that saves the matched substring, or a transformed result, for
 struct Capture<Output>
 ```
 
-#### Overview
+## Overview
 
 Use a `Capture` component to capture one part of a regex to access separately after matching. In the example below, `regex` matches a dollar sign (`"$"`) followed by one or more digits, a period (`"."`), and then two additional digits, as long as that pattern appears at the end of the line. Because the `Capture` block wraps the digits and period, that part of the match is captured separately.
 

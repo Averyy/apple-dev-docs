@@ -21,7 +21,7 @@ static var symbolOnly: CPManeuverDisplayStyle { get }
 CPManeuverDisplayStyleSymbolOnly
 ```
 
-#### Discussion
+## Discussion
 
 If your app provides lane guidance, include a second maneuver to the navigation session’s [`upcomingManeuvers`](../cpnavigationsession/upcomingmaneuvers.md) array that provides the lane guidance information. The second maneuver should have:
 

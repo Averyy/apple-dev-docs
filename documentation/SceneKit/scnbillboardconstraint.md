@@ -25,7 +25,7 @@ class SCNBillboardConstraint
 @interface SCNBillboardConstraint : SCNConstraint
 ```
 
-#### Overview
+## Overview
 
 An [`SCNBillboardConstraint`](./scnbillboardconstraint.md) object automatically adjusts a node’s orientation so that its local z-axis always points toward the [`pointOfView`](./scnscenerenderer/pointofview.md) node currently being used to render the scene. For example, you can use a billboard constraint to efficiently render parts of a scene using two-dimensional sprite images instead of three-dimensional geometry—by mapping sprites onto planes affected by a billboard constraint, the sprites maintain their orientation with respect to the viewer. To attach constraints to an [`SCNNode`](./scnnode.md) object, use its [`constraints`](./scnnode/constraints.md) property.
 

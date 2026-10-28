@@ -29,11 +29,11 @@ vImage_Error vImagePremultiplyData_RGBA8888(const vImage_Buffer *src, const vIma
 
 - [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function multiplies color channels by the alpha channel using the following code:
 

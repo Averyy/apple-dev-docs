@@ -12,11 +12,11 @@ virtual IOReturn submitLogout(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if logout has successfully begun.
 
-#### Overview
+## Overview
 
 This call begins the logout process. If kIOReturnSuccess is returned from this call then the logoutCompletion routine will be called when the logout completes (successfully or unsuccesfully).
 

@@ -25,7 +25,7 @@ class CGImageMetadata
 typedef const struct CGImageMetadata * CGImageMetadataRef;
 ```
 
-#### Overview
+## Overview
 
 A [`CGImageMetadata`](./cgimagemetadata.md) object stores the metadata associated with an image. Create this object from your image’s associated XMP data, and use it to fetch individual metadata tags. You can search for specific tags, or enumerate all of the tags present for the image.
 

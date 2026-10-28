@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.log_softmax
 
-**class log_softmax(*x*, *axis=-1*)**
-: Applies the Log Softmax function.
+```python
+class log_softmax(x, axis=-1)
+```
+
+Applies the Log Softmax function.
+
 Applies \(x - \log \sum_i e^{x_i}\) element wise.

@@ -19,7 +19,7 @@ init!(matrix44Data newMatrix: UnsafeMutablePointer<(Double, Double, Double, Doub
 - (id) initWithMatrix44Data:(Matrix44Data) newMatrix;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized matrix object or `nil` if the object couldn’t be created.
 

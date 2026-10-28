@@ -21,7 +21,7 @@ A boolean value indicating whether the system would prefer the app to reduce its
 var systemPrefersReducedResourceUsage: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, the system has entered a state where it would prefer apps to scale back resource-intensive work. The default value is `false`.
 

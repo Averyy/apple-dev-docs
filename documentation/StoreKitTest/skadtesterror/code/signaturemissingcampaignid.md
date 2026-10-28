@@ -21,7 +21,7 @@ case signatureMissingCampaignId
 SKAdTestErrorCodeSignatureMissingCampaignId
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include the campaign identifier when you create and validate an ad impression in the testing environment.
 

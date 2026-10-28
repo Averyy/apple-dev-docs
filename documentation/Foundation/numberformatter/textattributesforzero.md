@@ -25,7 +25,7 @@ var textAttributesForZero: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * textAttributesForZero;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a dictionary that contains the text attributes used to display zero values.
 

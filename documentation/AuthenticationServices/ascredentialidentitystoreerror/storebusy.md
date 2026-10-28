@@ -19,7 +19,7 @@ The operation failed because the credential identity store is busy.
 static var storeBusy: ASCredentialIdentityStoreError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Attempt the operation again at a later time.
 

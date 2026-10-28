@@ -20,7 +20,7 @@ unowned(unsafe) var colorSpaceName: CFString { get set }
 @property (nonatomic, assign) CFStringRef colorSpaceName;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a value, the output buffer uses the same color space as the display. If you specify a value, if must be one of the strings specified in [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md).
 

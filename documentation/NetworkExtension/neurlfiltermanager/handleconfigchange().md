@@ -18,7 +18,7 @@ Sets up an observer for the filter configuration change notification and models 
 func handleConfigChange() -> any AsyncSequence<Bool, Never>
 ```
 
-#### Discussion
+## Discussion
 
 The [`AsyncSequence`](../../Swift/asyncsequence.md) created by this method produces a Boolean `true` value every time the filter posts the [`NEURLFilterConfigurationDidChange`](../../Foundation/nsnotification/name-swift.struct/neurlfilterconfigurationdidchange.md) notification.
 

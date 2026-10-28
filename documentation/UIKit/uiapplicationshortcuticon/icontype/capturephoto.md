@@ -22,7 +22,7 @@ case capturePhoto
 UIApplicationShortcutIconTypeCapturePhoto
 ```
 
-#### Discussion
+## Discussion
 
 ![Camera icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934529@2x.png)
 

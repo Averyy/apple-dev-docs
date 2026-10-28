@@ -12,7 +12,7 @@ Returns each element in a vector rounded to the nearest integer in the specified
 #define rint(__x)
 ```
 
-#### Discussion
+## Discussion
 
 Use the `fesetround(_:)` function to specify the rounding direction. For example:
 

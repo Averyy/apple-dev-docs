@@ -24,7 +24,7 @@ func draw(_ image: CIImage, in inRect: CGRect, from fromRect: CGRect)
 - (void) drawImage:(CIImage *) image inRect:(CGRect) inRect fromRect:(CGRect) fromRect;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this method draws the `CIImage` object into a renderbuffer for the OpenGL ES context. Use this method only if the [`CIContext`](../cicontext.md) object is created with `contextWithEAGLContext:`  and if you are rendering to a CAEAGLayer. This method is asynchronous for apps linked against the iOS 6 or later SDK.
 

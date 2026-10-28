@@ -21,7 +21,7 @@ The current placement of the tab view bottom accessory.
 var tabViewBottomAccessoryPlacement: TabViewBottomAccessoryPlacement? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value corresponds to an undefined placement.
 

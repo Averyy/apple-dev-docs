@@ -15,7 +15,7 @@ Normal window level.
 static var normal: WindowLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this if you want your scene to have the normal window level instead of the level computed by [`automatic`](./automatic.md).
 

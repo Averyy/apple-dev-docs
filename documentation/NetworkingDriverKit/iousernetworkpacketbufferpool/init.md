@@ -15,7 +15,7 @@ Initializes the network packet buffer pool object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if initialization was successful, or `NO` if an error occurred.
 

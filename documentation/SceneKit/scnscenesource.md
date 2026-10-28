@@ -29,7 +29,7 @@ class SCNSceneSource
 
 - [Animating SceneKit Content](./animating-scenekit-content.md)
 
-#### Overview
+## Overview
 
 You can also use a scene source to examine the contents of a scene file or to selectively extract certain elements of a scene without keeping the entire scene and all the assets it contains.
 

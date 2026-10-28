@@ -20,7 +20,7 @@ struct es_event_type_t
 typedef enum { ... } es_event_type_t;
 ```
 
-#### Overview
+## Overview
 
 Call the [`es_subscribe(_:_:_:)`](./es_subscribe%28_,_,_%29.md) function with the constants defined by this type to subscribe to specific Endpoint Security events.
 

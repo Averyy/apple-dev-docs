@@ -27,7 +27,7 @@ actor SampleGenerator<SampleType> where SampleType : ModelSampleProtocol
 - [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md)
 - [Designing effective evaluations](./designing-effective-evaluations.md)
 
-#### Overview
+## Overview
 
 To produce new samples, create an instance, configure its properties, and call [`run()`](./samplegenerator/run%28%29.md). After iteration completes, access [`samples`](./samplegenerator/samples.md) for the full dataset, or [`invalidSamples`](./samplegenerator/invalidsamples.md) for any samples the validator rejected.
 

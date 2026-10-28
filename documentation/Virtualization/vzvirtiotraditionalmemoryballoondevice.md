@@ -19,7 +19,7 @@ class VZVirtioTraditionalMemoryBalloonDevice
 @interface VZVirtioTraditionalMemoryBalloonDevice : VZMemoryBalloonDevice
 ```
 
-#### Overview
+## Overview
 
 A [`VZVirtioTraditionalMemoryBalloonDevice`](./vzvirtiotraditionalmemoryballoondevice.md) object implements a Virtio-compliant balloon memory device, which lets you change the amount of physical memory assigned to the guest operating system. The virtual machine has no insight into the amount of memory its guest operating system uses. A memory balloon device lets you ask the guest operating system to relinquish memory voluntarily, which you might do if memory resources become scarce.
 

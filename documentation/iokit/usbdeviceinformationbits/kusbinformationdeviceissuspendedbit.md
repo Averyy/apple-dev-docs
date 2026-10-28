@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsSuspendedBit = 5
 ```
 
-#### Discussion
+## Discussion
 
 The hub port to which the USB device is attached is suspended
 

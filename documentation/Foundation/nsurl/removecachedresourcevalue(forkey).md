@@ -25,7 +25,7 @@ func removeCachedResourceValue(forKey key: URLResourceKey)
 - (void) removeCachedResourceValueForKey:(NSURLResourceKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 Removing a cached resource value may remove other cached resource values because some resource values are cached as a set of values, and because some resource values depend on other resource values. (Temporary resource values have no dependencies.)
 

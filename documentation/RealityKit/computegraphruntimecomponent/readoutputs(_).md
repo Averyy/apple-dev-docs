@@ -19,7 +19,7 @@ Returns all output buffers for the given output node.
 func readOutputs(_ node: ComputeNodeGraph.NodeID) -> [any MTLBuffer]?
 ```
 
-#### Return Value
+## Return Value
 
 An array of `MTLBuffer` objects, or `nil` if the node identifier is invalid or no output buffers are found.
 

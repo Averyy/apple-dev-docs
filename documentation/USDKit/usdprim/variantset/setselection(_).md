@@ -20,7 +20,7 @@ Sets the variant selection.
 func setSelection(_ variantName: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the selection cannot be set.
 

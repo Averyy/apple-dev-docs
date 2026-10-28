@@ -22,7 +22,7 @@ func setShowsCancelButton(_ showsCancelButton: Bool, animated: Bool)
 - (void) setShowsCancelButton:(BOOL) showsCancelButton animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Cancel buttons are not displayed for apps running on iPad, even when you specify [`true`](../../Swift/true.md) for the `showsCancelButton` parameter
 

@@ -23,7 +23,7 @@ func badgeTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key 
 - (NSDictionary<NSString *,id> *) badgeTextAttributesForState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the attributes the item applies to its badge’s value for the specified state. For a list of attributes, see [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 

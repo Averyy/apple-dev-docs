@@ -23,7 +23,7 @@ Returns a URL by appending the specified path component to self.
 func appendingPathComponent(_ pathComponent: String) -> URL
 ```
 
-#### Discussion
+## Discussion
 
 For file URLs, this method may perform file system I/O to determine if the path component is a directory, and, if so, it appends a trailing slash `/`. Use [`appendingPathComponent(_:isDirectory:)`](./appendingpathcomponent%28_,isdirectory%29.md) if you know the component’s file system object type in advance.
 

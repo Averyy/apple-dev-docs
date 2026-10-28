@@ -20,11 +20,11 @@ func viewProvider(for parentView: NSView?, location: any NSTextLocation, textCon
 - (NSTextAttachmentViewProvider *) viewProviderForParentView:(NSView *) parentView location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextAttachmentViewProvider`](../nstextattachmentviewprovider.md).
 
-#### Discussion
+## Discussion
 
 The default implementation queries the text attachment view provider class using the [`textAttachmentViewProviderClass(forFileType:)`](../nstextattachment/textattachmentviewproviderclass%28forfiletype%29.md) method of [`NSTextAttachment`](../nstextattachment.md). When non-`nil`, it instantiates a view, then, fills properties declared in `NSTextAttachmentViewProvider` if implemented.
 

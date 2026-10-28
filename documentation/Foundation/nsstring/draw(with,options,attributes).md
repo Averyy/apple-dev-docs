@@ -19,7 +19,7 @@ func draw(with rect: NSRect, options: NSString.DrawingOptions = [], attributes: 
 - (void) drawWithRect:(NSRect) rect options:(NSStringDrawingOptions) options attributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This method works in single-line, baseline rendering configuration by default. That is, the `rect` argument’s `origin` field specifies the rendering origin, and that point is interpreted as the baseline origin by default. If the string drawing option `NSStringDrawingUsesLineFragmentOrigin` is specified, `origin` is interpreted as the upper left corner of the line fragment rectangle, and the method behaves in multiline configuration.
 

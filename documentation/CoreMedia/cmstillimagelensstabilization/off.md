@@ -21,7 +21,7 @@ The lens stabilization module was not used during this capture.
 case off
 ```
 
-#### Discussion
+## Discussion
 
 The value of kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo if the lens stabilization module was not used for this capture.
 

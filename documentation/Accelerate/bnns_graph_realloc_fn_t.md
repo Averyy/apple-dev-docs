@@ -25,11 +25,11 @@ typealias bnns_graph_realloc_fn_t = (UnsafeMutableRawPointer?, Int, UnsafeMutabl
 typedef int (*)(void *, unsigned long, void **, unsigned long, unsigned long) bnns_graph_realloc_fn_t;
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 BNNS may call this function for either an initial allocation, or to resize an existing allocation.
 

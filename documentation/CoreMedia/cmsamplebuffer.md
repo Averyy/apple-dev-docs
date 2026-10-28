@@ -25,7 +25,7 @@ class CMSampleBuffer
 typedef struct opaqueCMSampleBuffer * CMSampleBufferRef;
 ```
 
-#### Overview
+## Overview
 
 A sample buffer is a Core Foundation object that contains zero or more media samples of a particular type (audio, video, muxed, and so on).
 

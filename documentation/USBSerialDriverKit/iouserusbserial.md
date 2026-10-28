@@ -15,7 +15,7 @@ A service that manages a serial connection to a USB device.
 class IOUserUSBSerial;
 ```
 
-#### Overview
+## Overview
 
 Subclass `IOUserUSBSerial` to implement a driver that communicates with a USB device serially. After matching your driver to the appropriate device, the system starts your driver and calls its [`HwActivate`](./iouserusbserial/hwactivate.md) method, which you use to open and configure the communications channel for your device. Configure other hardware-related settings by overriding the appropriate methods defined in the [`IOUserSerial`](../SerialDriverKit/iouserserial.md) parent class.
 

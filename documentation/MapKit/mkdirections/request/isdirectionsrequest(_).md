@@ -25,7 +25,7 @@ class func isDirectionsRequest(_ url: URL) -> Bool
 + (BOOL) isDirectionsRequestURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../../Swift/true.md) if the URL contains a directions request that your app needs to display to the user, or [`false`](../../../Swift/false.md) if it doesn’t.
 

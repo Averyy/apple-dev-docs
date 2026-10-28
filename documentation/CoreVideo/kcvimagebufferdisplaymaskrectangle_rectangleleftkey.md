@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_RectangleLeftKey;
 ```
 
-#### Discussion
+## Discussion
 
 The left offset value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer that’s less than the reference raster width value.
 

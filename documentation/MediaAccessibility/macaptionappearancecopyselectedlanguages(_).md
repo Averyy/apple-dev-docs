@@ -24,11 +24,11 @@ func MACaptionAppearanceCopySelectedLanguages(_ domain: MACaptionAppearanceDomai
 extern CFArrayRefMACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain domain);
 ```
 
-#### Return Value
+## Return Value
 
 An ordered array of preferred canonical language identifiers.
 
-#### Discussion
+## Discussion
 
 Languages added using the [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](./macaptionappearanceaddselectedlanguage%28_,_%29.md) function are normalized. As a result, the contents of the returned array may have slightly different strings from those passed into [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](./macaptionappearanceaddselectedlanguage%28_,_%29.md).
 

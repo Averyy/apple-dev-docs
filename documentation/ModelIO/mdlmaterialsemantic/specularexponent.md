@@ -24,7 +24,7 @@ case specularExponent
 MDLMaterialSemanticSpecularExponent
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `Ns` and `map_Ns` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

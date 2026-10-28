@@ -23,7 +23,7 @@ var renderState: PKStrokeRenderStateReference? { get }
 @property (nonatomic, readonly, nullable) PKStrokeRenderState * renderState;
 ```
 
-#### Discussion
+## Discussion
 
 This may be set on substrokes returned by `-substrokeWithRange:`.
 

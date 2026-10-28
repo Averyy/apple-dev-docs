@@ -24,7 +24,7 @@ var controlDependencies: [MTLFunctionStitchingFunctionNode] { get set }
 @property (nonatomic, copy, readwrite, nonnull) NSArray<MTLFunctionStitchingFunctionNode *> * controlDependencies;
 ```
 
-#### Discussion
+## Discussion
 
 When a stitched function calls functions that have side effects on their input data, you often need the GPU to execute functions in a specific order. In such cases, use the [`controlDependencies`](./controldependencies.md) property to specify which nodes need to run before executing this node.
 

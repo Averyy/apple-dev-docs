@@ -24,11 +24,11 @@ class PHASEConeDirectivityModelParameters
 @interface PHASEConeDirectivityModelParameters : PHASEDirectivityModelParameters
 ```
 
-#### Overview
+## Overview
 
 This class determines that a particular frequency range in the audio spectrum emits sound in an area defined by a mathematical cone. PHASE refers to each frequency segment along the audio spectrum as a *subband*. This class contains an array of `subbands` that each direct sound in a unique cone shape. The framework outputs a blend of a frequency’s adjacent subbands for all frequencies that lie outside of those specified in the `subbands` array.
 
-##### Emit Sound in the Shape of a Cone
+### Emit Sound in the Shape of a Cone
 
 The following code defines a cone directivity model with two subbands. The first subband emits sound in a narrow region and the second subband outputs sound in a wider region.
 

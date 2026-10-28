@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didDecodeRestorableState
 - (void) application:(UIApplication *) application didDecodeRestorableStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 The state restoration system calls this method as the final step in the state restoration process. By the time this method is called, all other restorable objects will have been restored and put back into their previous state. You can use this method to read any high-level app data you saved in the [`application(_:willEncodeRestorableStateWith:)`](./application%28_,willencoderestorablestatewith%29.md) method and apply it to your app.
 

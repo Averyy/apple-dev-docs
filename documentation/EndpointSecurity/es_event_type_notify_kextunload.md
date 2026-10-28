@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_KEXTUNLOAD: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_KEXTUNLOAD
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`kextunload`](./es_events_t/kextunload.md), which has the type [`es_event_kextunload_t`](./es_event_kextunload_t.md).
 

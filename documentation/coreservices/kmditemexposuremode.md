@@ -19,7 +19,7 @@ let kMDItemExposureMode: CFString!
 const CFStringRef kMDItemExposureMode;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are 0 (auto exposure), 1 (manual exposure) and 2 (auto bracket).
 

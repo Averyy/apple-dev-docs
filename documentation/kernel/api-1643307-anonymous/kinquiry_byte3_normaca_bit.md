@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_NORMACA_Bit = 5
 ```
 
-#### Discussion
+## Discussion
 
 NORMACA bit definition.
 

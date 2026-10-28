@@ -13,11 +13,11 @@ Create a scheduled price change for an app.
 
 - [App Store Connect API 2.3 release notes](./app-store-connect-api-2-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  If you use this endpoint to add a scheduled price change to your app, you can’t use `AppPriceInlineCreate` to change your app’s price.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

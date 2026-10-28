@@ -22,13 +22,13 @@ class INSetMessageAttributeIntent
 @interface INSetMessageAttributeIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INSetMessageAttributeIntent`](./insetmessageattributeintent.md) object when the user asks to modify the attributes of one or more messages. Attributes represent information about the message such as whether the user read or flagged the message. This intent object includes the messages to modify and which attributes to change.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSetMessageAttributeIntentHandling`](./insetmessageattributeintenthandling.md) protocol. Your handler should confirm the request and create an [`INSetMessageAttributeIntentResponse`](./insetmessageattributeintentresponse.md) object with the results of modifying the messages.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -39,7 +39,7 @@ The following table lists additional attributes of this intent object:
 
 Apps can optionally ask the user to unlock the device before handling this intent. To require unlocking of the device, include the name of this class in the `IntentsRestrictedWhileLocked` key of your Intents extension’s `Info.plist` file.
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to set the attributes of a message in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases.
 

@@ -12,11 +12,11 @@ virtual OSObject * getObject(
  const char *aKey) const;
 ```
 
-#### Return Value
+## Return Value
 
 The object stored under `aKey`, or `NULL` if the key does not exist in the dictionary.
 
-#### Overview
+## Overview
 
 The returned object will be released if removed from the dictionary; if you plan to store the reference, you should call retain on that object.
 

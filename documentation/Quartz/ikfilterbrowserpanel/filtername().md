@@ -19,11 +19,11 @@ func filterName() -> String!
 - (NSString *) filterName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the currently selected filter.
 
-#### Discussion
+## Discussion
 
 Use this method in response to the notifications [`IKFilterBrowserFilterSelectedNotification`](../ikfilterbrowserfilterselectednotification.md) or [`IKFilterBrowserFilterDoubleClickNotification`](../ikfilterbrowserfilterdoubleclicknotification.md), or after the user makes a choice in a dialog.
 

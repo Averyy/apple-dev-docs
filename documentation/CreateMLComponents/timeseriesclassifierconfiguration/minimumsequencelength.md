@@ -20,7 +20,7 @@ The minimum number of samples required to produce a classification.
 var minimumSequenceLength: Int
 ```
 
-#### Discussion
+## Discussion
 
 This configuration parameter controls the size of the model. Set it to the largest value that is reasonable for your task. For example if your input is accelerometer data sampled at 100Hz and you want to recognize actions, the minimum action duration may be one second, so the minimum sequence length is `100Hz * 1s = 100`. Defaults to 100.
 

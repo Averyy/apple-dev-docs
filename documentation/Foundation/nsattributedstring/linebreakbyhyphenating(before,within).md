@@ -19,11 +19,11 @@ func lineBreakByHyphenating(before location: Int, within aRange: NSRange) -> Int
 - (NSUInteger) lineBreakByHyphenatingBeforeIndex:(NSUInteger) location withinRange:(NSRange) aRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the index of the closest character before  `index` within `aRange`, that can be placed on a new line by hyphenating. Returns `NSNotFound` if no line break by hyphenation is possible before `index`.
 
-#### Discussion
+## Discussion
 
 In other words, during text layout, finds the appropriate line break by hyphenation (the character index at which the hyphen glyph should be inserted) when the character at `index` won’t fit on the same line as the character at the beginning of `aRange`.
 

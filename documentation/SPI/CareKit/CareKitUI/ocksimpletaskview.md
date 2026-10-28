@@ -18,7 +18,7 @@ A card that displays an `OCKHeaderView` and a circular checkmark button `complet
 class OCKSimpleTaskView
 ```
 
-#### Overview
+## Overview
 
 To insert custom views vertically the view, see `contentStack`
 

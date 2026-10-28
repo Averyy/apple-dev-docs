@@ -25,7 +25,7 @@ var remoteObjectProxy: Any { get }
 @property (retain, readonly) id remoteObjectProxy;
 ```
 
-#### Discussion
+## Discussion
 
 See descriptions in [`NSXPCProxyCreating`](../nsxpcproxycreating.md) for more details.
 

@@ -54,11 +54,11 @@ Constants that specify the contents of vImage buffers.
 - [var kvImageBufferTypeCode_Indexed: Int](./kvimagebuffertypecode_indexed.md)
   The buffer contains data in an indexed colorspace.
 - [var kvImageBufferTypeCode_LAB_A: Int](./kvimagebuffertypecode_lab_a.md)
-  If the image has a LAB color model, the buffer contains the *a** channel.
+  If the image has a LAB color model, the buffer contains the *a\** channel.
 - [var kvImageBufferTypeCode_LAB_B: Int](./kvimagebuffertypecode_lab_b.md)
-  If the image has a LAB color model, the buffer contains the *b** channel.
+  If the image has a LAB color model, the buffer contains the *b\** channel.
 - [var kvImageBufferTypeCode_LAB_L: Int](./kvimagebuffertypecode_lab_l.md)
-  If the image has a LAB color model, the buffer contains the *L** channel.
+  If the image has a LAB color model, the buffer contains the *L\** channel.
 - [var kvImageBufferTypeCode_Luminance: Int](./kvimagebuffertypecode_luminance.md)
   The buffer contains only luminance data.
 - [var kvImageBufferTypeCode_Monochrome: Int](./kvimagebuffertypecode_monochrome.md)

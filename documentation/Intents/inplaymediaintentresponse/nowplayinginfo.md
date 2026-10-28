@@ -32,7 +32,7 @@ var nowPlayingInfo: [String : Any]? { get set }
 @property (atomic, copy, readwrite, nullable) NSDictionary<NSString *,id> * nowPlayingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 In your [`confirm(intent:completion:)`](../inplaymediaintenthandling/confirm%28intent,completion%29.md) response, provide now-playing information for the media so Siri can display it to the user at the appropriate time, such as after they connect headphones to their iPhone.
 

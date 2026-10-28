@@ -25,7 +25,7 @@ var isPaused: Bool { get }
 @property (nonatomic, readonly, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the speech synthesizer is in a paused state after beginning to speak an utterance; otherwise, `false`.
 

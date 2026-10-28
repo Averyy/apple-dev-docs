@@ -22,7 +22,7 @@ optional func eventEditViewControllerDefaultCalendar(forNewEvents controller: EK
 - (EKCalendar *) eventEditViewControllerDefaultCalendarForNewEvents:(EKEventEditViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement this method, uses the event store’s [`defaultCalendarForNewEvents`](../../EventKit/ekeventstore/defaultcalendarfornewevents.md) property instead.
 

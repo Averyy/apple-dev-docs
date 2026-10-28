@@ -17,7 +17,7 @@ Applies the Leaky Rectified Linear Unit.
 class LeakyReLU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(negativeSlope * x, x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`leakyRelu(_:negativeSlope:)`](./leakyrelu%28_,negativeslope%29.md)

@@ -25,7 +25,7 @@ class CTFont
 typedef const struct __CTFont * CTFontRef;
 ```
 
-#### Overview
+## Overview
 
 The `CTFont` opaque type represents a Core Text font object.
 

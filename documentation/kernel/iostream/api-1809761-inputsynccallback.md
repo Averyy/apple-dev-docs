@@ -12,7 +12,7 @@ virtual void inputSyncCallback(
  UInt32token );
 ```
 
-#### Overview
+## Overview
 
 The inputSyncCallback() method is called as a result of a fast trap from user space. It is called on the same thread as the user request, so no context switch is necessary.
 

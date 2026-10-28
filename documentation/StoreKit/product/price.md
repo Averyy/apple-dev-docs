@@ -21,7 +21,7 @@ The decimal representation of the cost of the product, in local currency.
 let price: Decimal
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to perform arithmetic calculations with the price of the product. For a localized string representation of the price to display to customers, use the [`displayPrice`](./displayprice.md) property instead.
 

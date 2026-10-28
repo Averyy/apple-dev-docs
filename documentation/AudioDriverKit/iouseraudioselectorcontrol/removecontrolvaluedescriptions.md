@@ -15,7 +15,7 @@ Removes value descriptions from the selector control.
 kern_return_t RemoveControlValueDescriptions(const IOUserAudioSelectorValueDescription *in_value_descriptions, size_t in_num_value_descriptions);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) if description removal succeeded, or another value if an error occured. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 

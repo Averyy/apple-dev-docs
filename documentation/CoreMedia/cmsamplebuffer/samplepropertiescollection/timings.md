@@ -21,7 +21,7 @@ Access sample timings.
 var timings: CMSampleBuffer.TimingPerSample? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When setting distinct timings, the number of entries must match [`count`](./count.md).
 

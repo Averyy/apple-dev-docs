@@ -27,7 +27,7 @@ var hw_desc: BNNSNDArrayDescriptor
 BNNSNDArrayDescriptor hw_desc;
 ```
 
-#### Discussion
+## Discussion
 
 Weights are ordered as `[num_layers][num_directions][hidden_size][hidden_size]` (C style multi array notation).
 

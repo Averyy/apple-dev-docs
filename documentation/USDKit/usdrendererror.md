@@ -20,7 +20,7 @@ An error produced when rendering a USD stage fails.
 struct USDRenderError
 ```
 
-#### Overview
+## Overview
 
 An error that occurs while rendering or converting a USD stage for RealityKit.
 

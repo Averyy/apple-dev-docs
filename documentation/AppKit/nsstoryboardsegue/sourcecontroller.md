@@ -19,7 +19,7 @@ var sourceController: Any { get }
 @property (strong, readonly) id sourceController;
 ```
 
-#### Discussion
+## Discussion
 
 In your storyboard segue subclass, you can read this property to get the starting/containing view controller or window controller for the segue.
 

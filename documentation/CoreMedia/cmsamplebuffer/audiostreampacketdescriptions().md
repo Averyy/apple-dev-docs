@@ -21,11 +21,11 @@ Creates an array of audio stream packet descriptions for the variable bytes per 
 func audioStreamPacketDescriptions() throws -> [AudioStreamPacketDescription]
 ```
 
-#### Return Value
+## Return Value
 
 An array of audio stream packet descriptions.
 
-#### Discussion
+## Discussion
 
 Constant bit rate, constant frames-per-packet audio yields an empty array.
 

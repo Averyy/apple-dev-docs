@@ -19,7 +19,7 @@ A mode that determines which representation to use if an asset contains more tha
 @property (nonatomic) PHPickerConfigurationAssetRepresentationMode preferredAssetRepresentationMode;
 ```
 
-#### Discussion
+## Discussion
 
 An asset can contain many representations under the same uniform type identifier, or you can prefer a specific format. This mode determines which representation an [`NSItemProvider`](../../Foundation/nsitemprovider.md) uses if many exist.
 

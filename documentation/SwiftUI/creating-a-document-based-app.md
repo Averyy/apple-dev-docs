@@ -5,7 +5,7 @@
 
 Build apps that people can use to open, edit, and save files using coordinated file access.
 
-#### Overview
+## Overview
 
 With document-based apps, people can create and manage their own files, like text documents, drawings, and spreadsheets. The [`Document`](./document.md) protocol — available in iOS 27, macOS 27, and visionOS 27 — gives you direct access to your document’s file URL, so you can:
 
@@ -26,7 +26,7 @@ The following diagram shows the relationship between the document protocols and 
 
 ![A diagram showing two document protocols side by side. On the left, a writable document protocol lists three requirements and connects with an arrow to a document writer protocol below it. On the right, a readable document protocol lists three requirements and connects with an arrow to a document reader protocol below it.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Creating-a-document-based-app-document-protocols@2x.png)
 
-#### Set up a document-based app
+## Set up a document-based app
 
 To opt into the document infrastructure — autosaving, file coordination, file dialogs, keyboard shortcuts, conflict resolution, and more — use [`DocumentGroup`](./documentgroup.md) or [`DocumentGroupLaunchScene`](./documentgrouplaunchscene.md) as your app’s first scene. In iOS, set [UISupportsDocumentBrowser](../BundleResources/information-property-list/uisupportsdocumentbrowser.md) to `YES` in your information property list to present a document browser.
 
@@ -82,11 +82,11 @@ extension DocumentCreationSource {
 
 In your `TextDocument` initializer, check [`creationSource`](./documentcreationcontext/creationsource.md) to find out which button a person tapped and to set up the document as a list or as a note.
 
-#### Display a custom UI before presenting a document
+## Display a custom UI before presenting a document
 
 Because the `makeDocument` and `makeReadableDocument` closures are asynchronous, you can also suspend document creation to display a custom user interface — such as a template picker, a configuration wizard, or an import preview — before the document appears. Refer to [`NewDocumentButton`](./newdocumentbutton.md) for an end-to-end example of using the [CheckedContinuation](../Swift/checkedcontinuation.md) structure to present a template picker or other setup UI before the document opens.
 
-#### Create a simple document
+## Create a simple document
 
 To conform your model to [`Document`](./document.md), provide values that conform to the [`DocumentReader`](./documentreader.md) and [`DocumentWriter`](./documentwriter.md) protocols. In most cases, use the [`FileWrapperDocumentReader`](./filewrapperdocumentreader.md) and [`FileWrapperDocumentWriter`](./filewrapperdocumentwriter.md) convenience types provided by SwiftUI to handle writing and reading for you.
 
@@ -157,7 +157,7 @@ When SwiftUI autosaves the document or a person presses Command-S, it calls [`sn
 
 Reading works the same way: SwiftUI calls `reader(configuration:)`, passes the file URL to `read(from:progress:)` in the background, then delivers the snapshot to your document through [`apply(snapshot:previous:)`](./readabledocument/apply%28snapshot,previous%29.md).
 
-#### Support read-only documents
+## Support read-only documents
 
 To set up your app to display read-only documents, conform to [`ReadableDocument`](./readabledocument.md) and use the initializer that produces a `ReadableDocument`-conforming value:
 
@@ -173,7 +173,7 @@ final class PDFDocument: ReadableDocument { /* ... */}
 
 Set [CFBundleTypeRole](../BundleResources/information-property-list/cfbundleurltypes/cfbundletyperole.md) to `Viewer` in your information property list to indicate your app doesn’t edit this file type. For apps that can edit documents, set the role to `Editor`.
 
-#### Register undo actions
+## Register undo actions
 
 SwiftUI tracks unsaved changes through undo actions, so every document-based app needs to register them. Read the active [UndoManager](../Foundation/undomanager.md) from the environment and update the document through methods that register an undo action. Calling the same method from the undo closure also registers the redo action automatically, as shown here:
 
@@ -193,7 +193,7 @@ struct TextEditorView: View {
 }
 ```
 
-#### Work with package documents
+## Work with package documents
 
 A package is a directory that the system presents as a single item. People see one icon in Finder, the Files app, and the document browser that they can drag, share, back up, and sync. Inside, your package can hold any files you need, including metadata, pages, layers, or embedded media.
 
@@ -314,7 +314,7 @@ The [FileWrapper](../Foundation/filewrapper.md) class loads file contents on dem
 
 > ❗ **Important**: If an app decides to read documents lazily — for example, only read a portion of a package that’s visible to a person at a moment — the app needs to be prepared that subsequent attempts to read from the file wrapper might fail because the files might be gone or moved. Always handle errors when you read from a `FileWrapper`.
 
-#### Implement custom readers and writers
+## Implement custom readers and writers
 
 Both [`FileWrapperDocumentReader`](./filewrapperdocumentreader.md) and [`FileWrapperDocumentWriter`](./filewrapperdocumentwriter.md) delegate reading and writing to [`FileWrapper`](../Foundation/filewrapper.md). For documents that need more control, such as streaming reads, custom writing logic, or direct URL access to frameworks like Core Graphics, AVFoundation, or PDFKit, implement your own types that conform to [`DocumentReader`](./documentreader.md) and [`DocumentWriter`](./documentwriter.md).
 
@@ -416,7 +416,7 @@ The `previous` parameter contains the last successfully written snapshot. For si
 
 The same approach works with any framework that reads and writes files via URLs, including AVFoundation’s [AVAssetExportSession](../AVFoundation/avassetexportsession.md), PDFKit’s [PDFDocument(url:)](../PDFKit/pdfdocument/init%28url%29.md), or any C library that accepts file paths.
 
-#### Export documents
+## Export documents
 
 To export a document to a new location or format, use the [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)`](./view/fileexporter%28ispresented,document,contenttype,defaultfilename,oncompletion,oncancellation%29.md) view modifier, as shown here:
 

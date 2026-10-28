@@ -19,7 +19,7 @@ Creates a custom view accessory.
 static func customView(configuration: UICellAccessory.CustomViewConfiguration) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured custom cell accessory.
 

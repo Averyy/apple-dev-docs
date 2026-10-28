@@ -21,7 +21,7 @@ Creates a new shape resource by applying a rotation and a translation.
 @preconcurrency func offsetBy(rotation: simd_quatf = simd_quatf(ix: 0, iy: 0, iz: 0, r: 1), translation: SIMD3<Float> = SIMD3<Float>()) -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The transformed resource.
 

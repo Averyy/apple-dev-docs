@@ -25,7 +25,7 @@ struct CompareOptions
 enum NSStringCompareOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 See [Searching, Comparing, and Sorting Strings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/SearchingStrings.html#//apple_ref/doc/uid/20000149) for details on the effects of these options.
 

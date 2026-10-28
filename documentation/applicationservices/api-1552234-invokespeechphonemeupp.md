@@ -15,7 +15,7 @@ Invokes your phoneme callback function.
 void InvokeSpeechPhonemeUPP(SpeechChannel chan, SRefCon refCon, SInt16 phonemeOpcode, SpeechPhonemeUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechPhonemeUPP` function,because the system calls your phoneme callback function for you.
 

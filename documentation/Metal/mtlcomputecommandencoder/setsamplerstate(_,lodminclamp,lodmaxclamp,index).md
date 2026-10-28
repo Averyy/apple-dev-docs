@@ -25,7 +25,7 @@ func setSamplerState(_ sampler: (any MTLSamplerState)?, lodMinClamp: Float, lodM
 - (void) setSamplerState:(id<MTLSamplerState>) sampler lodMinClamp:(float) lodMinClamp lodMaxClamp:(float) lodMaxClamp atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method ignores the [`lodMinClamp`](../mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](../mtlsamplerdescriptor/lodmaxclamp.md) properties of the sampler, using the provided levels of detail instead.
 

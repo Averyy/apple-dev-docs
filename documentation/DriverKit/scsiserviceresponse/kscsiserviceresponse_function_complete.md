@@ -16,7 +16,7 @@
 kSCSIServiceResponse_FUNCTION_COMPLETE
 ```
 
-#### Discussion
+## Discussion
 
 The task management function completed.
 

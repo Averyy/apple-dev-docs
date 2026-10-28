@@ -23,7 +23,7 @@ subscript(index: Slice<Base>.Index) -> Base.Element { get }
 
 Available when `Base` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

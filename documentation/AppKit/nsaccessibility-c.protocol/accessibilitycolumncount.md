@@ -15,7 +15,7 @@ The number of columns in the accessibility element’s grid.
 @property NSInteger accessibilityColumnCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for UI elements that present a grid of child elements.
 

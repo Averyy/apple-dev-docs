@@ -15,7 +15,7 @@ Serves as bridge between IOFireWireUnit and IOFireWireLUN.
 class IOFireWireSBP2Target : IOService
 ```
 
-#### Overview
+## Overview
 
 Matches against IOFireWireUnits supporting the SBP2 protocol. Creates IOFireWireSBP2LUN nubs for matching. Most drivers will match against an IOFireWireSBP2LUN, but matching against an IOFireWireSBP2Target is also supported. This can be useful in cases where a single driver wishes to control all LUNs on a device. Support for this technique is minimal, however, and the driver will be required to discover it's LUNs through the registry.
 

@@ -23,7 +23,7 @@ var backgroundRefreshStatus: UIBackgroundRefreshStatus { get }
 @property (nonatomic, readonly) UIBackgroundRefreshStatus backgroundRefreshStatus;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to determine whether Background App Refresh—an app’s ability to open in the background to perform refresh tasks—is enabled, and warn the user if it is not. Don’t warn the user if the value of this property is set to [`UIBackgroundRefreshStatus.restricted`](../uibackgroundrefreshstatus/restricted.md). A restricted user, such as one who is managed under parental controls, can’t enable Background App Refresh.
 

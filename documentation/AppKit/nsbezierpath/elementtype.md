@@ -19,7 +19,7 @@ enum ElementType
 enum NSBezierPathElement : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These commands are enough to define all of the possible path shapes. Each command has one or more points that contain information needed to position the path element. Most path elements use the current drawing point as the starting point for drawing. For more information, see [`NSBezierPath`](../nsbezierpath.md).
 

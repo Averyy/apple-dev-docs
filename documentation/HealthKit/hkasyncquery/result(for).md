@@ -25,7 +25,7 @@ func result(for healthStore: HKHealthStore) async throws -> Self.Output
 
 - [Running Queries with Swift Concurrency](../running-queries-with-swift-concurrency.md)
 
-#### Discussion
+## Discussion
 
 The adopting type’s [`Output`](./output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](../hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](../hkquantitysample.md) objects.
 

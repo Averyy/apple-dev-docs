@@ -20,7 +20,7 @@ A notification that the system sends when an accessory becomes connected and ava
 extern NSString * const EAAccessoryDidConnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared accessory manager. The `userInfo` dictionary contains an [`EAAccessoryKey`](./eaaccessorykey.md), whose value is an [`EAAccessory`](./eaaccessory.md) object representing the accessory that is now connected. If a Bluetooth accessory was selected by the user in the Bluetooth picker, this dictionary contains the [`EAAccessorySelectedKey`](./eaaccessoryselectedkey.md) key. Before delivery of this notification can occur, you must call the [`registerForLocalNotifications()`](./eaaccessorymanager/registerforlocalnotifications%28%29.md) method to let the system know you are interested in receiving this notification.
 

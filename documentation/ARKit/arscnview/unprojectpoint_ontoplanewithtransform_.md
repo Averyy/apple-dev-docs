@@ -16,7 +16,7 @@ Returns the projection of a point from 2D view onto a plane in the 3D world spac
 - (simd_float3) unprojectPoint:(CGPoint) point ontoPlaneWithTransform:(simd_float4x4) planeTransform;
 ```
 
-#### Return Value
+## Return Value
 
 The 3D point in world space where a ray projected from the specified 2D point intersects the specified plane. If the ray does not intersect the plane, this method returns a `float3` vector where all elements are `NaN`.
 

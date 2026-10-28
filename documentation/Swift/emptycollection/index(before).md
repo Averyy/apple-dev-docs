@@ -21,7 +21,7 @@ Always traps.
 func index(before i: EmptyCollection<Element>.Index) -> EmptyCollection<Element>.Index
 ```
 
-#### Discussion
+## Discussion
 
 `EmptyCollection` does not have any element indices, so it is not possible to advance indices.
 

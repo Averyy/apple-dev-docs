@@ -15,7 +15,7 @@ The base descriptor header.
 typedef struct IOUSBDescriptorHeader IOUSBDescriptorHeader;
 ```
 
-#### Discussion
+## Discussion
 
 This structure is the standard header for all USB descriptors. Use it to read the length of a descriptor so that it can allocate storage for the whole descriptor.
 

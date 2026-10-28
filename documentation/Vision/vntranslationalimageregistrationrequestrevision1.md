@@ -24,7 +24,7 @@ var VNTranslationalImageRegistrationRequestRevision1: Int { get }
 static const NSUInteger VNTranslationalImageRegistrationRequestRevision1;
 ```
 
-#### Discussion
+## Discussion
 
 The revision number is a constant that you pass on a per-request basis to indicate to the Vision framework which version of the translational image registration algorithm to use for that request. Each OS release in which the framework improves aspects of the algorithm (recognition speed, accuracy, number of languages supported, and so forth), the revision number increments by 1.
 

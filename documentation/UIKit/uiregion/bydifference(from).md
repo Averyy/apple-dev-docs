@@ -23,7 +23,7 @@ func byDifference(from region: UIRegion) -> Self
 - (instancetype) regionByDifferenceFromRegion:(UIRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region that contains the points that are in the current region and not in the area defined by the `region` parameter.
 

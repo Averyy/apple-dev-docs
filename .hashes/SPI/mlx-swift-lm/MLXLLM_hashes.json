@@ -21418,8 +21418,12 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/LLMModelFactory.swift",
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/Models"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 5354
   }

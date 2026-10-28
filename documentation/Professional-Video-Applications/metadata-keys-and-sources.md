@@ -5,11 +5,11 @@
 
 Define metadata keys that identify each metadata item and its sources.
 
-#### Overview
+## Overview
 
 The [Metadata Keys](./metadata-keys-and-sources.md#Metadata-Keys) section lists the metadata items that are editable through Final Cut Pro. The key string identifies each supported metadata item.
 
-##### Metadata Keys
+### Metadata Keys
 
 | Key | Display Name | Type | Source |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ The supported values for Integer types are provided in the following table:
 |  | 2 | Upper First |
 |  | 3 | Lower First |
 
-##### Metadata Sources
+### Metadata Sources
 
 Final Cut Pro maintains metadata items by grouping them based on where they come from (their source). Indicate the source by using the `md` element’s source attribute, for example, `studio` or the prefix of the `key` attribute, for example, `com.apple.proapps.studio`.
 

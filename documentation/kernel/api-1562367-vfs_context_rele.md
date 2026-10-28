@@ -15,11 +15,11 @@ Release references on components of a context and deallocate it.
 int vfs_context_rele(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Always 0.
 
-#### Discussion
+## Discussion
 
 A context should not be referenced after vfs_context_rele has been called.
 

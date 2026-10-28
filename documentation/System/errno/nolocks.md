@@ -25,7 +25,7 @@ static var noLocks: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You have reached the system-imposed limit on the number of simultaneous files.
 

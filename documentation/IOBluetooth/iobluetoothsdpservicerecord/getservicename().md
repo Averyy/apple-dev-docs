@@ -19,11 +19,11 @@ func getServiceName() -> String!
 - (NSString *) getServiceName;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the name of the target service.
 
-#### Discussion
+## Discussion
 
 This is currently implemented to simply return the attribute with an id of 0x0100. In the future, it will be extended to allow name localization based on the user’s chosen language or other languages.
 

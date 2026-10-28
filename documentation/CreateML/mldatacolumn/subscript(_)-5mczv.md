@@ -40,7 +40,7 @@ subscript(mask: MLUntypedColumn) -> MLDataColumn<Element> { get }
 subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 

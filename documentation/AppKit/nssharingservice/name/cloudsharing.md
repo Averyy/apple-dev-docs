@@ -19,7 +19,7 @@ static let cloudSharing: NSSharingService.Name
 extern NSSharingServiceName const NSSharingServiceNameCloudSharing;
 ```
 
-#### Discussion
+## Discussion
 
 The behavior of the cloud-sharing service is different from other services. It creates a persistent sharing session between two or more iCloud users, and provides access to the original items, rather than sending copies. For more information about CloudKit Sharing, see [Shared Records](../../../CloudKit/shared-records.md).
 

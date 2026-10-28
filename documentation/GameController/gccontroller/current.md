@@ -24,7 +24,7 @@ class var current: GCController? { get }
 @property (class, atomic, strong, readonly, nullable) GCController * current;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for a single-player game when you don’t need to distinguish the input from multiple controllers simultaneously.
 

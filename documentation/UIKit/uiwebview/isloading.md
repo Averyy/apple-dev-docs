@@ -23,7 +23,7 @@ var isLoading: Bool { get }
 @property (nonatomic, readonly, getter=isLoading) BOOL loading;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the receiver is still loading content; otherwise, [`false`](../../Swift/false.md).
 

@@ -22,11 +22,11 @@ func persistentStoreType(forFileType fileType: String) -> String
 - (NSString *) persistentStoreTypeForFileType:(NSString *) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 The persistent store type for `fileType`.
 
-#### Discussion
+## Discussion
 
 Override this method to specify a persistent store type for a given document type.
 

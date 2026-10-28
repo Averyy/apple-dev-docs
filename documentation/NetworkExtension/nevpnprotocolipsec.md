@@ -24,7 +24,7 @@ class NEVPNProtocolIPSec
 @interface NEVPNProtocolIPSec : NEVPNProtocol
 ```
 
-#### Overview
+## Overview
 
 To configure IKE version 2 (IKEv2), use the [`NEVPNProtocolIKEv2`](./nevpnprotocolikev2.md) subclass. Instantiating [`NEVPNProtocolIPSec`](./nevpnprotocolipsec.md) directly implies IKE version 1.
 

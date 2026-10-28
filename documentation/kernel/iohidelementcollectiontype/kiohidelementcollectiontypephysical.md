@@ -13,7 +13,7 @@
 kIOHIDElementCollectionTypePhysical = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Used for a set of data items that represent data points collected at one geometric point.
 

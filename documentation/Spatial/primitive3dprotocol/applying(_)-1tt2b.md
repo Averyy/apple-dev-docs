@@ -22,7 +22,7 @@ Returns the primitive that results from applying an affine transform to the prim
 func applying(_ transform: Self.AffineTransform) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

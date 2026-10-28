@@ -17,7 +17,7 @@ Configuration of `google/embeddinggemma-2` (`model_type: embedding_gemma2`).
 struct EmbeddingGemma2Configuration
 ```
 
-#### Overview
+## Overview
 
 Decodes the checkpoint’s `config.json` directly, including the nested `text_config` and the optional `vision_config` and `audio_config`.
 

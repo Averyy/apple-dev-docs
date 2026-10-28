@@ -19,7 +19,7 @@ func runModal(forDirectory path: String!, file name: String!) -> Int
 - (NSInteger) runModalForDirectory:(NSString *) path file:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns a result code from the [`runModalForDirectory:file:types:`](../../AppKit/nsopenpanel/runmodalfordirectory_file_types_.md) method of the [`NSSavePanel`](../../AppKit/nssavepanel.md) class: [`NSFileHandlingPanelOKButton`](../../AppKit/nsfilehandlingpanelokbutton.md) if the user clicks the OK button or [`NSFileHandlingPanelCancelButton`](../../AppKit/nsfilehandlingpanelcancelbutton.md) if the user clicks the Cancel button.
 

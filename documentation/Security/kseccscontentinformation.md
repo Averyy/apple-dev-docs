@@ -20,7 +20,7 @@ var kSecCSContentInformation: UInt32 { get }
 kSecCSContentInformation
 ```
 
-#### Discussion
+## Discussion
 
 It is not generally advisable to make use of this information, but some utilities (such as software-update tools) may find it useful.
 

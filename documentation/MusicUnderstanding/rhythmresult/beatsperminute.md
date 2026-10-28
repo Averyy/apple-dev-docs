@@ -21,7 +21,7 @@ The tempo of the song in beats per minute.
 let beatsPerMinute: Float?
 ```
 
-#### Discussion
+## Discussion
 
 This value may be nil until enough audio has been analyzed.
 

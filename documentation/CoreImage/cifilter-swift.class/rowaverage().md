@@ -24,9 +24,9 @@ class func rowAverage() -> any CIFilter & CIRowAverage
 + (CIFilter<CIRowAverage> *) rowAverageFilter;
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 This method applies the row average filter to an image. This effect calculates the average color for a horizontal row over a region defined by `extent`. The height of the extent determines the width of the resulting image. The height is always 1 pixel.
 

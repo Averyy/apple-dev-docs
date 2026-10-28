@@ -25,7 +25,7 @@ init?(calendarIdentifier ident: NSCalendar.Identifier)
 - (id) initWithCalendarIdentifier:(NSCalendarIdentifier) ident;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized calendar, or `nil` if the identifier is unknown (if, for example, it is either an unrecognized string or the calendar is not supported by the current version of the operating system).
 

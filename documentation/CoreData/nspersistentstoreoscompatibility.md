@@ -25,7 +25,7 @@ let NSPersistentStoreOSCompatibility: String
 extern NSString * const NSPersistentStoreOSCompatibility;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSNumber` object that takes the form of the constants defined by the availability macros defined in `/usr/include/AvailabilityMacros.h`; for example `1040` represents OS X version 10.4.0.
 

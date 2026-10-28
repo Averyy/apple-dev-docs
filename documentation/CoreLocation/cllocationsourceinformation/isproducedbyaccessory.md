@@ -25,7 +25,7 @@ var isProducedByAccessory: Bool { get }
 @property (nonatomic, readonly) BOOL isProducedByAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 Core Location sets [`isProducedByAccessory`](./isproducedbyaccessory.md) to `true` if the system retrieved the location from an external accessory attached to the device, such as a Made for iPhone GPS dongle or CarPlay. Otherwise, the default value is `false`.
 

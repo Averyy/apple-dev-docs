@@ -19,7 +19,7 @@ class VZPlatformConfiguration
 @interface VZPlatformConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate directly `VZPlatformConfiguration`, use one of its subclasses, such as [`VZGenericPlatformConfiguration`](./vzgenericplatformconfiguration.md) or [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md) instead.
 

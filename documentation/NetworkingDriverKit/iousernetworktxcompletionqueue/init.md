@@ -15,11 +15,11 @@ Initializes the packet submission queue.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if initialization was successful, or `NO` if it wasn’t.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Instead, use the [`Create`](./create.md) method to create a new [`IOUserNetworkTxCompletionQueue`](../iousernetworktxcompletionqueue.md) object.
 

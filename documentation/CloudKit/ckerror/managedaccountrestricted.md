@@ -21,7 +21,7 @@ An error that occurs when CloudKit rejects a request due to a managed-account re
 static var managedAccountRestricted: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system restricts CloudKit access for this account. This is a nonrecoverable error.
 

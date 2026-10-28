@@ -25,11 +25,11 @@ int (*)(struct __OpaqueAuthorizationEngine *, const char *, enum AuthorizationCo
 
 - [Extending authorization services with plug-ins](../extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 Your plug-in authorization mechanism might collect data such as the user name and other authentication information during evaluation of authorization. You can use the [`SetContextValue`](./setcontextvalue.md) function to have the Security Server store this data and the [`GetContextValue`](./getcontextvalue.md) function to retrieve it.
 

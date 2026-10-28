@@ -21,7 +21,7 @@ An opening punctuation mark of a pair.
 case openPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Open_Punctuation` (abbreviated `Ps`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

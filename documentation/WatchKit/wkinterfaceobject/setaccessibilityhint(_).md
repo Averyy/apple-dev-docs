@@ -19,7 +19,7 @@ func setAccessibilityHint(_ accessibilityHint: String?)
 - (void) setAccessibilityHint:(NSString *) accessibilityHint;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the accessibility hint of an object dynamically. You can also set the accessibility hint for an object in Xcode from the Identity inspector.
 

@@ -15,7 +15,7 @@ A rule for determining whether a point is inside or outside a polygon.
 fillRule?: "evenodd" | "nonzero";
 ```
 
-#### Discussion
+## Discussion
 
 This can be either the nonzero winding rule (`nonzero`), or the even-odd rule (`evenodd`). The default fill rule is `nonzero`.
 

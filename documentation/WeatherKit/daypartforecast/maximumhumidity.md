@@ -21,7 +21,7 @@ The maximum humidity for the day part. Relative humidity measures the amount of 
 var maximumHumidity: Double
 ```
 
-#### Discussion
+## Discussion
 
 The range of this property is from `0` to `1`, inclusive.
 

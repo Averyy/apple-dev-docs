@@ -25,7 +25,7 @@ var boundingMapRect: MKMapRect { get }
 @property (nonatomic, readonly) MKMapRect boundingMapRect;
 ```
 
-#### Discussion
+## Discussion
 
 As latitude values move away from the equator and toward the poles, the physical distance between map points gets smaller. This means that the map needs more map points to represent the same distance. As a result, the bounding rectangle of a circle overlay gets larger as the center point of that circle moves away from the equator and toward the poles.
 

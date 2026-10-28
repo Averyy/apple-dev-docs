@@ -5,7 +5,7 @@
 
 Identify and control which visible object responds to user interaction.
 
-#### Overview
+## Overview
 
 Focus indicates which element in the display receives the next input. Use view modifiers to indicate which views can receive focus, to detect which view has focus, and to programmatically control focus state.
 

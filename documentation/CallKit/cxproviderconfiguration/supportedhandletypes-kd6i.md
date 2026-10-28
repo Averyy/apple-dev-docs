@@ -20,7 +20,7 @@ The supported handle types.
 final var supportedHandleTypes: Set<CXHandle.HandleType> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`CXHandle.HandleType`](../cxhandle/handletype.md).
 

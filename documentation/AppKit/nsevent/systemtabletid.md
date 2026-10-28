@@ -19,7 +19,7 @@ var systemTabletID: Int { get }
 @property (readonly) NSUInteger systemTabletID;
 ```
 
-#### Discussion
+## Discussion
 
 If multiple tablets are connected to the system, the system-tablet ID is incremented for each subsequent one. If there is only one tablet device, its system-tablet ID is zero. This property is valid for mouse events with the subtype `NSTabletProximityEventSubtype` or `NSTabletProximity` events.
 

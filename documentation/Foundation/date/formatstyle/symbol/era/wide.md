@@ -21,7 +21,7 @@ A full representation of an era.
 static var wide: Date.FormatStyle.Symbol.Era { get }
 ```
 
-#### Discussion
+## Discussion
 
 A custom format style conveying a full representation of an era. For example, `Before Christ` and `Anno Domini`.
 

@@ -20,7 +20,7 @@ The date and time components that a date picker shows.
 struct DatePickerComponents
 ```
 
-#### Overview
+## Overview
 
 Pass a value of this type as the `displayedComponents` argument of a [`DatePicker`](./datepicker.md) initializer to choose which parts of a date someone can edit. Combine options to show more than one group.
 

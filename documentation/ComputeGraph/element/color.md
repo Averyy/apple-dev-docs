@@ -16,11 +16,11 @@ Returns the current color of the element.
 half4 element::color()
 ```
 
-#### Return Value
+## Return Value
 
 The color as a 4-component vector (red, green, blue, alpha)
 
-#### Discussion
+## Discussion
 
 Use this function to read the element’s RGBA color values, including both the color channels and opacity.
 

@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, tintConfigurationForItem
 - (NSTintConfiguration *) outlineView:(NSOutlineView *) outlineView tintConfigurationForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new [`NSTintConfiguration`](../nstintconfiguration.md) object to create a particular tinting behavior for the item’s row, or `nil` to inherit the tinting behavior from the item’s parent.
 
-#### Discussion
+## Discussion
 
 You typically use this method to customize the color for a sidebar.
 

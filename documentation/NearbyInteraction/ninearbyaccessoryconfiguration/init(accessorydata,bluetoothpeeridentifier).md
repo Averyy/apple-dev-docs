@@ -25,7 +25,7 @@ init(accessoryData: Data, bluetoothPeerIdentifier identifier: UUID) throws
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 Use this initializer when your app interacts with a Bluetooth accessory that’s paired to the device to enable interaction while your app is in the background.
 

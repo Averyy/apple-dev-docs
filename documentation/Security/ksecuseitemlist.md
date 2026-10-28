@@ -27,7 +27,7 @@ let kSecUseItemList: CFString
 extern CFStringRef const kSecUseItemList;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFArray`](../CoreFoundation/cfarray.md), where the array contains either [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), [`SecIdentity`](./secidentity.md), or  (for persistent item references) [`CFData`](../CoreFoundation/cfdata.md) items. The items in the array must all be of the same type.
 

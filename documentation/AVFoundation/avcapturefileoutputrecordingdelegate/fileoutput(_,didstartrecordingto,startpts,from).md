@@ -21,7 +21,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo file
 - (void) captureOutput:(AVCaptureFileOutput *) output didStartRecordingToOutputFileAtURL:(NSURL *) fileURL startPTS:(CMTime) startPTS fromConnections:(NSArray<AVCaptureConnection *> *) connections;
 ```
 
-#### Discussion
+## Discussion
 
 Informs the delegate when the output has started writing to a file.
 

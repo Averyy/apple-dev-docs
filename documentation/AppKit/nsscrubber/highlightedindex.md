@@ -19,7 +19,7 @@ var highlightedIndex: Int { get }
 @property (readonly) NSInteger highlightedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is highlighted, the value of this property is `-1`.
 

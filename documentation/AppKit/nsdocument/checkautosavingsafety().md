@@ -19,7 +19,7 @@ func checkAutosavingSafety() throws
 - (BOOL) checkAutosavingSafetyAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method checks for documents that have not been changed in a while (“a while” is subject to change) or are saved in folders where the user typically does not edit documents (the `~/Downloads` folder, for example). When it senses one of those cases it returns [`false`](../../Swift/false.md) with an `NSError` object that has recovery options like Duplicate, Cancel, and Unlock.
 

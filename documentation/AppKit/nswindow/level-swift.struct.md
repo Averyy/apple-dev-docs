@@ -19,7 +19,7 @@ struct Level
 typedef NSInteger NSWindowLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The stacking of levels takes precedence over the stacking of windows within each level. That is, even the bottom window in a level will obscure the top window of the next level down. Levels are listed in order from lowest to highest. These constants are mapped (using `#define` statements) to corresponding elements in [`CGWindowLevelKey`](../../CoreGraphics/cgwindowlevelkey.md).
 

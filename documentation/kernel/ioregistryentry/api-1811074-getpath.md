@@ -14,11 +14,11 @@ virtual bool getPath(
  const IORegistryPlane *plane) const;
 ```
 
-#### Return Value
+## Return Value
 
 getPath will fail if the entry is not attached in the plane, or if the buffer is not large enough to contain the path.
 
-#### Overview
+## Overview
 
 The path for a registry entry is copied to the caller's buffer. The path describes the entry's attachment in a particular plane, which must be specified. The path begins with the plane name followed by a colon, and then followed by '/' separated path components for each of the entries between the root and the registry entry. Each component is constructed with the getPathComponent method called in each entry. An alias may also exist for the entry, which are described as properties in a registry entry found at /aliases in the plane. If a property value interpreted as a path in a call to IORegistryEntry::fromPath yields the entry, then the property name is used as the entry's path.
 

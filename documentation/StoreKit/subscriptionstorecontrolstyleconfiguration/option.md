@@ -22,7 +22,7 @@ Properties of an auto-renewable subscription option to merchandise.
 struct Option
 ```
 
-#### Overview
+## Overview
 
 You use `SubscriptionStoreControlStyleConfiguration.Option` very similarly to [`Product`](../product.md) values, with some important differences:
 

@@ -25,7 +25,7 @@ class MKPolygon
 @interface MKPolygon : MKMultiPoint
 ```
 
-#### Overview
+## Overview
 
 The points you add to this overlay connect end-to-end in the order you provide them. The first and last points connect to each other to create a closed shape.
 

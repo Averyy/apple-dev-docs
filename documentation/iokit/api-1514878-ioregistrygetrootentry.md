@@ -23,11 +23,11 @@ func IORegistryGetRootEntry(_ mainPort: mach_port_t) -> io_registry_entry_t
 io_registry_entry_t IORegistryGetRootEntry(mach_port_t mainPort);
 ```
 
-#### Return Value
+## Return Value
 
 A handle to the IORegistryEntry root instance, to be released with IOObjectRelease by the caller, or MACH_PORT_NULL on failure.
 
-#### Discussion
+## Discussion
 
 This method provides an accessor to the root of the registry for the machine. The root may be passed to a registry iterator when iterating a plane, and contains properties that describe the available planes, and diagnostic information for IOKit.
 

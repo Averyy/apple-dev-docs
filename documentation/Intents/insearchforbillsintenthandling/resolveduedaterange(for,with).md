@@ -29,7 +29,7 @@ optional func resolveDueDateRange(for intent: INSearchForBillsIntent) async -> I
 - (void) resolveDueDateRangeForSearchForBills:(INSearchForBillsIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the due date for a bill. Use the [`dueDateRange`](../insearchforbillsintent/duedaterange.md) property of the intent object to identify the date range to search. If a date range is available and usable, return a successful resolution with that date range. You can also make adjustments to the date range as needed and ask the user for confirmation.
 

@@ -5,11 +5,11 @@
 
 Set up and build your alternative marketplace’s searchable index.
 
-#### Overview
+## Overview
 
 Apple builds an index of alternative marketplace apps in order to integrate them into Spotlight. You can set up a catalog of your applications so the Applebot web crawler discovers, indexes, and then shows your apps as Spotlight results on iOS. You must implement this interface to be part of search results in Spotlight.
 
-##### Understand basic requirements
+### Understand basic requirements
 
 The application catalog-crawling mechanism is based on two standard industry practices: [sitemaps](https://sitemaps.org) and semantic, [structured data schemas](https://schema.org).
 
@@ -195,7 +195,7 @@ curl -X GET https://example.com/apps/catalog/backyard-birds.html
 </html>
 ```
 
-##### Include mandatory fields
+### Include mandatory fields
 
 These fields are the exact and only fields that are mandatory for `MobileApplication`. For more information see [supportingData](https://schema.org/supportingData).
 
@@ -207,7 +207,7 @@ These fields are the exact and only fields that are mandatory for `MobileApplica
 
 > **Note**:  For each version of your app, provide all the fields contained in `supportingData` in a single instance of `supportingData` that wraps all of them.
 
-##### Consider optional fields
+### Consider optional fields
 
 Optionally, every instance *may* define additional ranking signals to facilitate surfacing the best results. These signals use [schema.org](https://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [aggregateRating](https://schema.org/aggregateRating).
 
@@ -241,7 +241,7 @@ This example shows the `popularity` property as part of the `supportingData` cod
 }
 ```
 
-##### Understand supported countries
+### Understand supported countries
 
 Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md) uses `searchTerritory`.
 

@@ -21,11 +21,11 @@ Prepares multiple audio resources for synchronized playback without starting the
 static func prepareAudio(_ resourcesAndEntities: [(AudioResource, Entity)]) throws -> AudioPlaybackGroupController
 ```
 
-#### Return Value
+## Return Value
 
 A controller that coordinates playback of the synchronized group.
 
-#### Discussion
+## Discussion
 
 Use this method to set up a group of audio sources that you want to play together. Each resource is paired with the entity that emits it. Call [`play()`](../audioplaybackgroupcontroller/play%28%29.md) or [`play(at:)`](../audioplaybackgroupcontroller/play%28at%29.md) to begin playback.
 

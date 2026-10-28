@@ -23,7 +23,7 @@ var textContainerInset: UIEdgeInsets { get set }
 @property (nonatomic, assign) UIEdgeInsets textContainerInset;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides text margins for text laid out in the text view. By default the value of this property is `(8, 0, 8, 0)`.
 

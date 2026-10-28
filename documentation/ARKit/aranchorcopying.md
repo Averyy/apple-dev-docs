@@ -20,7 +20,7 @@ protocol ARAnchorCopying : NSCopying
 @protocol ARAnchorCopying <NSCopying>
 ```
 
-#### Overview
+## Overview
 
 An [`ARAnchor`](./aranchor.md) (or an instance of any anchor subclass) represents a position and orientation in world space, and optionally associates extra information with that point (like a name, or plane or image detection data). Each time ARKit generates an [`ARFrame`](./arframe.md) object (describing the current environment as of a specific frame of live camera video), ARKit updates the [`anchors`](./arframe/anchors.md) associated with the session as of that moment. Because anchor objects are immutable, ARKit must copy them to make changes from one [`ARFrame`](./arframe.md) to the next.
 

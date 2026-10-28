@@ -22,11 +22,11 @@ class VNDocumentCameraViewController
 @interface VNDocumentCameraViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 This class enables a person to scan a physical document, page by page, by tapping a camera interface in the controller’s view. The results of a scan include images, by page number. With the collection of scanned images, your app can create a digital version of the physical document and export the scanned images to PDF.
 
-#### Present a document scanning view controller in Swift
+## Present a document scanning view controller in Swift
 
 The following Swift code presents the document scanning object and adds it to your view controller hierarchy:
 
@@ -36,7 +36,7 @@ documentCameraViewController.delegate = self
 present(documentCameraViewController, animated: true)
 ```
 
-#### Present a document scanning view controller in Objective-C
+## Present a document scanning view controller in Objective-C
 
 The following Objective-C code presents the document scanning object and adds it to your view controller hierarchy:
 

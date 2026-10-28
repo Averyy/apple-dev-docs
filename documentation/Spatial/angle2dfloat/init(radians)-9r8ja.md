@@ -21,7 +21,7 @@ Returns a new angle from floating-point radians.
 init<T>(radians: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

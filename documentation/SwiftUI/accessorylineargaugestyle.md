@@ -21,7 +21,7 @@ A gauge style that displays bar with a marker that appears at a point along the 
 @preconcurrency struct AccessoryLinearGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`accessoryLinear`](./gaugestyle/accessorylinear.md) to construct this style.
 

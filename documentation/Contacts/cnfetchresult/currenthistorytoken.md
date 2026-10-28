@@ -24,7 +24,7 @@ var currentHistoryToken: Data { get }
 @property (nonatomic, copy, readonly) NSData * currentHistoryToken;
 ```
 
-#### Discussion
+## Discussion
 
 Save this token after a successful change history fetch result in your app. Then, set the saved token in [`startingToken`](../cnchangehistoryfetchrequest/startingtoken.md) in a subsequent [`CNChangeHistoryFetchRequest`](../cnchangehistoryfetchrequest.md) to receive changes after that point in history.
 

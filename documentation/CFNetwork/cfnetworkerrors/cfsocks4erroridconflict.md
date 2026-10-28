@@ -24,7 +24,7 @@ case cfsocks4ErrorIdConflict
 kCFSOCKS4ErrorIdConflict
 ```
 
-#### Discussion
+## Discussion
 
 This error is specific to SOCKS4.
 

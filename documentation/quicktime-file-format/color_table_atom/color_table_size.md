@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates the number of colors in the following color array.
 
-#### Overview
+## Overview
 
 This is a zero-relative value; setting this field to `0` means that there is one color in the array.
 

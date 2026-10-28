@@ -16,7 +16,7 @@ Returns a dictionary containing the password policy for the record.
 - (NSDictionary *) passwordPolicyAndReturnError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The password policy for the record.
 

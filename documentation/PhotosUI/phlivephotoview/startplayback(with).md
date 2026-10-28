@@ -28,7 +28,7 @@ func startPlayback(with playbackStyle: PHLivePhotoViewPlaybackStyle)
 
 - [Displaying Live Photos](../../PhotoKit/displaying-live-photos.md)
 
-#### Discussion
+## Discussion
 
 Use the `playbackStyle` parameter to choose whether to play the full motion and sound content of the Live Photo or only a brief section.
 

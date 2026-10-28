@@ -29,7 +29,7 @@ var maxTotalThreadsPerThreadgroup: Int { get }
 
 - [Calculating threadgroup and grid sizes](../calculating-threadgroup-and-grid-sizes.md)
 
-#### Discussion
+## Discussion
 
 When you create a compute pipeline state, it calculates the maximum number of threads available on the device. This value never changes, but may be different for different pipeline objects.
 

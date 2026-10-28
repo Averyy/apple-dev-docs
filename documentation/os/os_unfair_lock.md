@@ -21,7 +21,7 @@ A structure that contains the data for an unfair lock.
 typedef struct os_unfair_lock_s os_unfair_lock;
 ```
 
-#### Discussion
+## Discussion
 
 To create a lock, allocate a variable of this type and initialize it to [`OS_UNFAIR_LOCK_INIT`](./os_unfair_lock_init.md).
 

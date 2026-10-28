@@ -5,7 +5,7 @@
 
 Describe the memory layout of the pixel buffers a color transform reads and writes.
 
-#### Overview
+## Overview
 
 When you convert color with [`ColorSyncTransformConvert(_:_:_:_:_:_:_:_:_:_:_:_:)`](./colorsynctransformconvert%28_,_,_,_,_,_,_,_,_,_,_,_%29.md), you describe each buffer’s bit depth, byte order, and alpha handling using these constants and the [`ColorSyncDataLayout`](./colorsyncdatalayout.md) type.
 

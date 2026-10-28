@@ -24,7 +24,7 @@ optional func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView])
 - (void) mapView:(MKMapView *) mapView didAddAnnotationViews:(NSArray<MKAnnotationView *> *) views;
 ```
 
-#### Discussion
+## Discussion
 
 By the time the map view calls this method, MapKit has added the specified views to the map.
 

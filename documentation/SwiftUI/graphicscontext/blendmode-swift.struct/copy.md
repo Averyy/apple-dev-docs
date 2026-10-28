@@ -21,7 +21,7 @@ A mode that replaces background image samples with source image samples.
 static var copy: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the [`normal`](./normal.md) mode, the source image completely replaces the background, so that even transparent pixels in the source image replace opaque pixels in the background, rather than letting the background show through.
 

@@ -24,7 +24,7 @@ let HKMetadataKeyIndoorBikeDistance: String
 extern NSString * const HKMetadataKeyIndoorBikeDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on a workout sample representing exercise on a GymKit exercise bike. Set its value to an [`HKQuantity`](./hkquantity.md) object with a length unit.
 

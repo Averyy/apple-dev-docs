@@ -17,11 +17,11 @@ Returns the best representation for the device with the specified characteristic
 - (NSImageRep *) bestRepresentationForDevice:(NSDictionary *) deviceDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The image representation that most closely matches the specified criteria.
 
-#### Discussion
+## Discussion
 
 If `deviceDescription` is `nil`, this method uses the attributes of the device on which the content is to be drawn.
 

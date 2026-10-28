@@ -19,7 +19,7 @@ Backward and forward navigation gestures are enabled.
 static let enabled: WebView.BackForwardNavigationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view allows horizontal swipe gestures to trigger backward and forward page navigation.
 

@@ -5,7 +5,7 @@
 
 Implement glanceable views with WidgetKit and SwiftUI.
 
-#### Overview
+## Overview
 
 SwiftUI and WidgetKit power widgets, Live Activities, and watch complications. Because they use the same technology and share design similarities, plan your WidgetKit adoption before you start creating these features. Start simple and add complexity later; for example, start by adding a widget extension as described in [Creating a widget extension](./creating-a-widget-extension.md) and support one widget size. Spend time to make sure it offers a focused, glanceable experience. Then, add support for additional widget sizes and features like configurability, animations, and interactivity.
 
@@ -13,7 +13,7 @@ SwiftUI and WidgetKit power widgets, Live Activities, and watch complications. B
 
 If you’re new to using WidgetKit, see [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md).
 
-##### Use system font styles
+### Use system font styles
 
 Widgets, Live Activities, and watch complications appear adjacent to other widgets or complications. As a result, a consistent look for your content that fits in well with the other elements needs to be a priority. To achieve a consistent look for your widgets and complications, use system fonts, default font parameters, and the following font styles:
 
@@ -22,13 +22,13 @@ Widgets, Live Activities, and watch complications appear adjacent to other widge
 - [`Font.TextStyle.body`](../SwiftUI/font/textstyle/body.md)
 - [`Font.TextStyle.caption`](../SwiftUI/font/textstyle/caption.md)
 
-##### Make sure text fits the available space
+### Make sure text fits the available space
 
 Widgets and watch complications offer limited space for content — especially on the Lock Screen or on Apple Watch. Give careful consideration to the amount of text you display. For example, say you support the [`WidgetFamily.accessoryInline`](./widgetfamily/accessoryinline.md) widget. It can include an image and text. However, the amount of displayable characters varies depending on the context where the widget appears. On Apple Watch, the size of the inline complication varies depending on the watch face. Include it in a [`ViewThatFits`](../SwiftUI/viewthatfits.md) view to make sure text always fits the available space.
 
 > **Note**: Test your widgets with every language you support, especially if you support languages that commonly have words with a lot of characters, such as German.
 
-##### Use content margins instead of safe areas
+### Use content margins instead of safe areas
 
 watchOS 9, iOS 16, iPadOS 16, macOS 13, and earlier use system-defined safe areas to keep content from getting too close to the edge of the widget, complication, or Live Activity. You likely don’t change the safe areas that the system defines. However, you might use the [`ignoresSafeArea(_:edges:)`](../SwiftUI/view/ignoressafearea%28_,edges%29.md) view modifier to extend content farther than the safe area.
 

@@ -22,7 +22,7 @@ func bind(to command: NEHotspotHelperCommand)
 - (void) bindToHotspotHelperCommand:(NEHotspotHelperCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that participate in joining Wi-Fi hotspot networks use the APIs in the [Network Extension](../../NetworkExtension/NetworkExtension.md) framework to authenticate with hotspots. Ordinarily, [`URLSession`](../urlsession.md) will use the default interface, which may be WWAN. By binding to a hotspot helper command, you force a request to use Wi-Fi to communicate with the hotspot.
 

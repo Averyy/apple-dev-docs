@@ -15,11 +15,11 @@ Sets the error code to return when box acquisition fails.
 kern_return_t SetAcquisitionFailure(kern_return_t in_failure_code);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Set this code to provide the error to return from failed calls to [`HandleChangeAcquireBox`](./handlechangeacquirebox.md).
 

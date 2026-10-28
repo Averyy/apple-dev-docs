@@ -19,7 +19,7 @@ weak var collectionView: NSCollectionView? { get }
 @property (weak, readonly, nullable) NSCollectionView * collectionView;
 ```
 
-#### Discussion
+## Discussion
 
 When you assign a layout object to a collection view, the collection view automatically updates this property.
 

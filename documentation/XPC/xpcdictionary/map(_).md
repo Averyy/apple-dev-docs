@@ -21,7 +21,7 @@ Returns an array containing the results of mapping the given closure over the se
 func map<ReturnType>(_ transform: (XPCDictionary.KeyValuePair) throws -> ReturnType) rethrows -> [ReturnType]
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the transformed elements of this sequence.
 

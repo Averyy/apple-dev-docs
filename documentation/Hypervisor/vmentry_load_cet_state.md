@@ -19,7 +19,7 @@ var VMENTRY_LOAD_CET_STATE: UInt32 { get }
 VMENTRY_LOAD_CET_STATE
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

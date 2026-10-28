@@ -21,11 +21,11 @@ Decodes a value of the given type for the given key.
 func decode(_ type: Float.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Float
 ```
 
-#### Return Value
+## Return Value
 
 A value of the requested type, if present for the given key and convertible to the requested type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 

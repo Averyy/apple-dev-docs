@@ -18,7 +18,7 @@ Presents a page-based interface modally.
 @nonobjc @preconcurrency final func presentController(_ namesAndContexts: [(name: String, context: AnyObject)])
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, WatchKit loads and initializes the new interface controllers and animates them into position on top of the current interface controller. A modal interface slides up from the bottom of the screen and completely cover the previous interface. WatchKit displays the first interface controller in the `names` array initially. The user can navigate to the other interfaces by swiping horizontally.
 

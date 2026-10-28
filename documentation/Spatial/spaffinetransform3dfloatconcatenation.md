@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatConcatenation(SPAffineTransform3DFloat t1, SPAffineTransform3DFloat t2);
 ```
 
-#### Return Value
+## Return Value
 
 An affine transformation matrix that’s constructed by concatenating two existing affine transforms.
 
-#### Discussion
+## Discussion
 
 Returns an affine transformation matrix that’s constructed by concatenating two existing affine transforms.
 

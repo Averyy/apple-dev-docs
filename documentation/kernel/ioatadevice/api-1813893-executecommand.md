@@ -12,7 +12,7 @@ virtual IOReturn executeCommand(
  IOATACommand *command);
 ```
 
-#### Return Value
+## Return Value
 
 kIOSuccess (0) if the command was successfully queued in the controller.
 

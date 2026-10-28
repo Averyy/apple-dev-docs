@@ -30,7 +30,7 @@ var latestBookingDateForResults: Date? { get set }
 @property (atomic, copy, nullable) NSDate * latestBookingDateForResults;
 ```
 
-#### Discussion
+## Discussion
 
 When building the list of reservation time slots, do not include time slots that occur after the date specified by this property.
 

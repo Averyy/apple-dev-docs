@@ -24,7 +24,7 @@ class func isSuppressingAutomaticPassPresentation() -> Bool
 + (BOOL) isSuppressingAutomaticPassPresentation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system suppresses Apple Pay passes; otherwise, [`false`](../../Swift/false.md).
 

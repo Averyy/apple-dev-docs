@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, didMove marker: NSRulerMarker)
 - (void) rulerView:(NSRulerView *) ruler didMoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 This method records the change by invoking [`didChangeText()`](./didchangetext%28%29.md) after moving the marker.
 

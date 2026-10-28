@@ -12,7 +12,7 @@ virtual void removeTimerEvent(
  OSObject *target);
 ```
 
-#### Overview
+## Overview
 
 If the interval for the target to be removed is the smallest interval, the timer interval is recalculated based on the remaining targets. The next fire time is readjusted based on the new interval compared to the last fire time.
 

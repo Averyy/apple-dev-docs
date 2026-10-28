@@ -25,7 +25,7 @@ func cblas_chpr(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ A
 void cblas_chpr(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const float ALPHA, const __LAPACK_float_complex *X, const __LAPACK_int INCX, __LAPACK_float_complex *A);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates `alpha*x*conjg(x') + A` and stores the result in `A`.
 

@@ -25,7 +25,7 @@ optional func alwaysOnTemplate(for complication: CLKComplication) async -> CLKCo
 - (void) getAlwaysOnTemplateForComplication:(CLKComplication *) complication withHandler:(void (^)(CLKComplicationTemplate *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If your implementation returns `nil`, ClockKit uses the current timeline entry, if one exists.
 

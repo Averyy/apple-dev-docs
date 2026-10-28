@@ -6,7 +6,7 @@
 
 The string.
 
-#### Overview
+## Overview
 
 The string atom structure is extended to hold this string.
 

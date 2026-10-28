@@ -17,7 +17,7 @@ Applies the Log Sigmoid function.
 class LogSigmoid
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 -softPlus(-x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`logSigmoid(_:)`](./logsigmoid%28_%29.md)

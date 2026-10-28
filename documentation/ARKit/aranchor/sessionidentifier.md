@@ -20,7 +20,7 @@ var sessionIdentifier: UUID? { get }
 @property (nonatomic, readonly, nullable) NSUUID * sessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit sets this property when a user first adds an anchor to a session. In multiuser experiences, use this ID to identify the user that created the anchor.
 

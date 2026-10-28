@@ -21,7 +21,7 @@ Replaces elements of this vector with `other` in the lanes where `mask` is `true
 mutating func replace(with other: Self.Scalar, where mask: SIMDMask<Self.MaskStorage>)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

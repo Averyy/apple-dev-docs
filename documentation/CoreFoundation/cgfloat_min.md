@@ -23,7 +23,7 @@ var CGFLOAT_MIN: Double { get }
 #define CGFLOAT_MIN
 ```
 
-#### Discussion
+## Discussion
 
 The minimum non-negative non-subnormal value for a [`CGFloat`](./cgfloat-swift.struct.md) type. For 32-bit code, this value is `1.17549435e-38F`. For 64-bit code, it is `2.2250738585072014e-308`.
 

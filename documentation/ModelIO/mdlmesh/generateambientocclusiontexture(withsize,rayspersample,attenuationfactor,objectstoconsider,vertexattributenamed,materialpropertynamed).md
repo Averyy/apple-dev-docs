@@ -24,11 +24,11 @@ func generateAmbientOcclusionTexture(withSize textureSize: vector_int2, raysPerS
 - (BOOL) generateAmbientOcclusionTextureWithSize:(vector_int2) textureSize raysPerSample:(NSInteger) raysPerSample attenuationFactor:(float) attenuationFactor objectsToConsider:(NSArray<MDLObject *> *) objectsToConsider vertexAttributeNamed:(NSString *) vertexAttributeName materialPropertyNamed:(NSString *) materialPropertyName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if AO calculation succeeded; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Ambient occlusion (AO) is a measure, for each point on a surface, of how much ambient light can reach that point. For example, a narrow, concave section of a mesh does not receive much ambient light compared with a wide, flat section—thus, in a realistic rendering of the mesh, the concave sections should appear darker than the flat sections. This method analyzes the mesh (and, optionally, static elements of its local environment, specified in the `objectsToConsider` parameter) to precompute (or “bake”) AO information for each point on the mesh’s surface. You can then use the resulting information in shading to produce a more realistic render.
 

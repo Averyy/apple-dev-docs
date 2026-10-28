@@ -16,11 +16,11 @@ Returns number of bytes to be transferred by a NuDCL
 IOByteCount (*GetDCLSize)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOByteCount.
 
-#### Discussion
+## Discussion
 
 Applies: NuDCLSendPacketRef, NuDCLReceivePacket
 

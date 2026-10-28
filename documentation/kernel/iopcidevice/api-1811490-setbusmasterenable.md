@@ -12,11 +12,11 @@ virtual bool setBusMasterEnable(
  boolenable );
 ```
 
-#### Return Value
+## Return Value
 
 True if bus mastering was previously enabled, false otherwise.
 
-#### Overview
+## Overview
 
 This method sets the bus mastering enabled bit in the device’s command config space register to the passed value, and returns the previous enabled state.
 

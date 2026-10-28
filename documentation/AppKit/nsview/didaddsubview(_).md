@@ -19,7 +19,7 @@ func didAddSubview(_ subview: NSView)
 - (void) didAddSubview:(NSView *) subview;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`addSubview(_:)`](./addsubview%28_%29.md).
 

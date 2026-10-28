@@ -19,11 +19,11 @@ func matchesRecord(_ record: ABRecord!) -> Bool
 - (BOOL) matchesRecord:(ABRecord *) record;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `record` argument satisfies the conditions in the search element; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `record` is `nil`, this method raises an exception.
 

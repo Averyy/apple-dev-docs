@@ -25,7 +25,7 @@ case dynamic
 NSFormattingContextDynamic
 ```
 
-#### Discussion
+## Discussion
 
 A [`Formatter.Context.dynamic`](./dynamic.md) context is automatically determined to be one of the following: [`Formatter.Context.standalone`](./standalone.md), [`Formatter.Context.beginningOfSentence`](./beginningofsentence.md), or [`Formatter.Context.middleOfSentence`](./middleofsentence.md).
 

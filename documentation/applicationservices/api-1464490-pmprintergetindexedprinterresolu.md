@@ -19,11 +19,11 @@ func PMPrinterGetIndexedPrinterResolution(_ printer: PMPrinter, _ index: UInt32,
 OSStatus PMPrinterGetIndexedPrinterResolution(PMPrinter printer, UInt32 index, PMResolution *resolutionP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You must call this function between the creation and release of a printing session. Before you call this function, you must call the function [`PMPrinterGetPrinterResolutionCount(_:_:)`](./api-1462004-pmprintergetprinterresolutioncou.md) to obtain the number of resolution settings supported by the specified printer.
 

@@ -24,7 +24,7 @@ var shippingMethods: [PKShippingMethod]? { get set }
 @property (nonatomic, copy, nullable) NSArray<PKShippingMethod *> * shippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. See the following example.
 

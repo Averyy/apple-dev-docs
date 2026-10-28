@@ -18,15 +18,15 @@ Builds and returns the full judge prompt for inspection, debugging, or logging.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func judgePrompt(for sample: Input, output: Input.ExpectedValue) async throws -> Prompt
+nonisolated(nonsending)
+func judgePrompt(for sample: Input, output: Input.ExpectedValue) async throws -> Prompt
 ```
 
-#### Return Value
+## Return Value
 
 The fully assembled `Prompt` to send to the model judge.
 
-#### Discussion
+## Discussion
 
 Use this to inspect exactly what the model judge receives for a given input and response pair.
 

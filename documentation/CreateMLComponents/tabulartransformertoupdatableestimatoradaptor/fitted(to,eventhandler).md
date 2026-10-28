@@ -21,7 +21,7 @@ Returns the pre-defined transformer.
 func fitted(to input: DataFrame, eventHandler: EventHandler? = nil) async throws -> Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The pre-defined transformer.
 

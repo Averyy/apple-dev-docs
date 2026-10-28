@@ -15,7 +15,7 @@ The request body you provide to terminate a subscription and all its items immed
 object SubscriptionRevokeRequest
 ```
 
-#### Discussion
+## Discussion
 
 This is the request body for the [`Revoke Subscription`](./revoke-subscription.md) endpoint.
 

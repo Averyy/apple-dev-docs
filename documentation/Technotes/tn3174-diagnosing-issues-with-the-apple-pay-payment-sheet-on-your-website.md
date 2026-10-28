@@ -5,7 +5,7 @@
 
 Diagnose errors received while presenting the Apple Pay payment sheet on your website by identifying the underlying causes of common errors and explore their potential solutions.
 
-#### Overview
+## Overview
 
 When the Apple Pay payment sheet is presented, a number of JavaScript events are triggered before the payment sheet is activated and ready for the customer to authenticate. Additionally, some events are triggered when the customer interacts with the payment sheet, such as changing their selected payment card with [onpaymentmethodselected](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaysession/1778013-onpaymentmethodselected), or authorizing the transaction via user authentication with [onpaymentauthorized](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaysession/1778020-onpaymentauthorized).
 
@@ -21,7 +21,7 @@ Some common payment sheet-related issues that you may encounter during your Appl
 
 > ❗ **Important**:  Starting October 1, 2026, cross-environment sessions are no longer be supported. If you experience payment issues after this date, see [Possible reasons why the payment sheet dismisses after customer authentication](./tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.md#Possible-reasons-why-the-payment-sheet-dismisses-after-customer-authentication) for further information.
 
-#### Possible reasons for “Apple Pay not available for this website” errors
+## Possible reasons for “Apple Pay not available for this website” errors
 
 An “Apple Pay not available for this website” error can occur while presenting the payment sheet, most commonly for an invalid [merchantIdentifier](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951611-merchantidentifier). To ensure your developer account is configured correctly, please go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources) and confirm the following:
 
@@ -31,7 +31,7 @@ An “Apple Pay not available for this website” error can occur while presenti
 
 > **Note**: The `/startSession` endpoint is being phased out and replaced by `/paymentSession`. See [Requesting an Apple Pay Payment Session](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for more information.
 
-#### Possible reasons for “Payment Failed” errors
+## Possible reasons for “Payment Failed” errors
 
 A “Payment Failed” error can occur while presenting the payment sheet, the most common reasons include:
 
@@ -39,7 +39,7 @@ A “Payment Failed” error can occur while presenting the payment sheet, the m
 - Invalid payment session request formatting
 - Merchant validation issues
 
-##### Troubleshooting invalid server configurations
+### Troubleshooting invalid server configurations
 
 An invalid server configuration can cause several issues with your Apple Pay implementation, mostly due to the lack of security, trust and verification of your server’s authenticity via a mutual TLS connection. The most common issues with your server include:
 
@@ -48,7 +48,7 @@ An invalid server configuration can cause several issues with your Apple Pay imp
 - The server uses unsupported TLS cipher suites.
 - The server uses invalid or untrusted TLS certificates.
 
-###### Issue: TLS handshake can’t be established
+#### Issue: TLS handshake can’t be established
 
 A TLS handshake can fail during the domain verification process. For example, your server may be misconfigured in the following ways:
 
@@ -56,23 +56,23 @@ A TLS handshake can fail during the domain verification process. For example, yo
 - The server does not support one of the specified cipher suites for Apple Pay.
 - The server is using invalid or untrusted TLS certificates.
 
-###### Issue: Your server doesn’t support TLS 1.2 or later
+#### Issue: Your server doesn’t support TLS 1.2 or later
 
 Servers supporting Apple Pay on the Web need to use TLS 1.2 or later. Servers also need to be accessible by the Apple Pay merchant verification server and can’t be proxied or redirected. For additional guidance on using a strict allow list for Apple Pay IP addresses and merchant validation domains, see [Setting up your Server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
 
-###### Issue: Use of unsupported TLS cipher suites
+#### Issue: Use of unsupported TLS cipher suites
 
-Servers negotiating TLS connections for Apple Pay on the Web must use one of the supported cipher suites described in [Setting up your Server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server). To debug which cipher suites are being negotiated between Apple’s domain verification client and your server, [record a packet trace](../Network/recording_a_packet_trace.md) and review the cipher suites being offered by Apple’s domain verification server in the Client Hello packet. If a supported cipher suite is selected by your server, confirm this by reviewing the Server Hello packet sent back to the client. If there is an issue in the cipher suite negotiation then there will typically be a failure after the Client Hello packet.
+Servers negotiating TLS connections for Apple Pay on the Web must use one of the supported cipher suites described in [Setting up your Server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server). To debug which cipher suites are being negotiated between Apple’s domain verification client and your server, [record a packet trace](../Network/recording-a-packet-trace.md) and review the cipher suites being offered by Apple’s domain verification server in the Client Hello packet. If a supported cipher suite is selected by your server, confirm this by reviewing the Server Hello packet sent back to the client. If there is an issue in the cipher suite negotiation then there will typically be a failure after the Client Hello packet.
 
-###### Issue: Use of invalid or untrusted TLS certificates
+#### Issue: Use of invalid or untrusted TLS certificates
 
 Ensure you are using a valid TLS certificate. For example, make sure that this certificate is set up with a proper chain of trust and also adheres to Apple’s Certificate Transparency policy for Safari. You can double check this with a packet trace. Make sure the leaf certificate being used on your domain follows a valid chain of trust through the intermediate certificates to the root certificate. For additional guidance, see [Requesting an Apple Pay Session](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session).
 
-##### Troubleshooting payment session request formatting issues
+### Troubleshooting payment session request formatting issues
 
 The following topics provide guidance on resolving issues when requesting a payment session from Apple’s servers. When you experience an error, check the contents of the response body as it may contain a status message to determine where the issue occurred.
 
-###### Issue: Unable to establish a secure connection or SSL handshake failure
+#### Issue: Unable to establish a secure connection or SSL handshake failure
 
 This error typically indicates a merchant identity certificate issue. To resolve this error, please confirm the following:
 
@@ -89,7 +89,7 @@ This error typically indicates a merchant identity certificate issue. To resolve
 
 To learn more about configuring a merchant identity certificate, see [Configuring Your Environment](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment). Additionally, see [Setting Up Your Server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server) to verify your server configuration is valid.
 
-###### Issue: Received a payment session response error
+#### Issue: Received a payment session response error
 
 **Error: 400 – Bad Request.** This error typically indicates a formatting issue. Review your request to ensure the request body isn’t empty and contains all required parameters.
 
@@ -118,7 +118,7 @@ If you plan to process payments on a root domain and subdomain—for example, `e
 
 **Error 500 – Internal Server Error.** This error indicates the request couldn’t be processed, or the request body is malformed or invalid. Please ensure your request body is a valid JSON.
 
-##### Troubleshooting merchant validation issues
+### Troubleshooting merchant validation issues
 
 The following topics provide guidance on resolving issues when debugging Apple Pay merchant validation. The most common merchant validation issues occur during your payment session, including:
 
@@ -128,7 +128,7 @@ The following topics provide guidance on resolving issues when debugging Apple P
 
 To learn more about validating sessions and your merchant payment requests, see [Requesting an Apple Pay Payment Session](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for more information.
 
-###### Issue: Mishandling of payment session merchant validation events
+#### Issue: Mishandling of payment session merchant validation events
 
 When the `onvalidatemerchant` event is triggered, your client-side code should ask your server to request an Apple Pay payment session from Apple over an mTLS connection.
 
@@ -139,7 +139,7 @@ The most common issues while handling merchant validation events occur when:
 
 Please ensure your implementation is following the expected flows for these merchant validation events. For more information, see [Providing Merchant Validation](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation).
 
-###### Issue: Requesting a payment session with invalid certificates or values.
+#### Issue: Requesting a payment session with invalid certificates or values.
 
 You should create a new Apple Pay payment session for each transaction for your merchant. Your server posts a request using a mutual TLS (mTLS) connection by calling the Apple Pay server’s `/paymentSession` endpoint. Please confirm the following are true for your payment session request:
 
@@ -149,7 +149,7 @@ You should create a new Apple Pay payment session for each transaction for your 
 
 In response to the `POST` request, your server receives an opaque Apple Pay session object. The session expires after five (5) minutes. For Apple Pay on the Web, you pass the session object to the completion method, `completeMerchantValidation`.
 
-###### Issue: Failure to complete merchant validation
+#### Issue: Failure to complete merchant validation
 
 If you are able to successfully generate a payment session but encounter issues when you pass this session into `completeMerchantValidation`, this suggests one of a few potential issues:
 
@@ -158,7 +158,7 @@ If you are able to successfully generate a payment session but encounter issues 
 - **The `initiativeContext` for the session does not match the browser domain or is not correctly formatted.** The value provided as the `initiativeContext` in the payment session request should exactly match the domain shown in the browser’s address bar. The `initiativeContext` value should include subdomains but should not contain the URL scheme (e.g. `https://`) or any paths.
 - **You are mixing environments.** Ensure you are using the correct `merchantIdentifier` and `initiativeContext` for the environment you are requesting a payment session from (Sandbox or Production).
 
-#### Possible reasons why the payment sheet dismisses after initial presentation
+## Possible reasons why the payment sheet dismisses after initial presentation
 
 When the Apple Pay payment sheet is presented but dismisses within a few seconds — for example, after the customer has clicked or tapped the Apple Pay button — typically one of the following issues has occurred:
 
@@ -182,11 +182,11 @@ If the payment sheet dismisses without user interaction, please confirm the foll
 
 Use Safari Web Inspector to identify which event handler completion method is related to an issue and then diagnose the underlying cause of the issue for that specific event, including both the event handler and completion method.
 
-#### Possible reasons why the payment sheet dismisses after customer authentication
+## Possible reasons why the payment sheet dismisses after customer authentication
 
 The payment sheet presents and responds to user interaction successfully, but fails to display a successful payment confirmation (the “Done” checkmark) after customer authentication.
 
-###### Issue: The payment sheet dismisses before the `onpaymentauthorized` event triggers
+#### Issue: The payment sheet dismisses before the `onpaymentauthorized` event triggers
 
 This typically indicates an issue generating the Apple Pay payment token. The most common cause is an environment mismatch, where you request an Apple Pay merchant session from one environment but complete it in a different environment.
 
@@ -199,14 +199,14 @@ In almost all cases, your production website must use the production Apple Pay e
 
 See [Requesting an Apple Pay Payment Session](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for information on merchant validation URLs.
 
-###### Issue: The payment sheet dismisses after the `onpaymentauthorized` event triggers
+#### Issue: The payment sheet dismisses after the `onpaymentauthorized` event triggers
 
 When the sheet dismisses after the `onpaymentauthorized` event fires, the issue usually relates to the completion method. Verify the following:
 
 - **Timeout:** Ensure your code calls `completePayment` within the allotted 30-second period. If your server takes too long to process the payment, the payment sheet times out and dismisses, even though the transaction itself might eventually complete successfully.
 - **Malformed response object:** Confirm the [ApplePayPaymentAuthorizationResult](../ApplePayontheWeb/applepaypaymentauthorizationresult.md) dictionary you provide to `completePayment` is properly formatted and contains valid data.
 
-#### Revision History
+## Revision History
 
 - **2026-07-10** Expanded possible reasons why the payment sheet dismisses after customer authentication.
 - **2024-06-25** First published.

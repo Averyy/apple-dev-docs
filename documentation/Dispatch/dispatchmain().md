@@ -25,7 +25,7 @@ func dispatchMain() -> Never
 extern void dispatch_main();
 ```
 
-#### Discussion
+## Discussion
 
 This function “parks” the main thread and waits for blocks to be submitted to the main queue. Applications that call [`UIApplicationMain(_:_:_:_:)`](../UIKit/uiapplicationmain%28_,_,_,_%29-1yub7.md) (iOS), [`NSApplicationMain(_:_:)`](../AppKit/nsapplicationmain%28_,_%29.md) (macOS), or [`CFRunLoopRun()`](../CoreFoundation/cfrunlooprun%28%29.md) on the main thread must not call [`dispatchMain()`](./dispatchmain%28%29.md).
 

@@ -13,11 +13,11 @@
 void mbuf_setlen(mbuf_t mbuf, size_t len);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the length of data in this packet. Be careful to not set the length over the space available in the mbuf.
 

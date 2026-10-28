@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_EmailProtection;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

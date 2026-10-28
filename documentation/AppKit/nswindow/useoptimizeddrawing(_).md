@@ -21,7 +21,7 @@ func useOptimizedDrawing(_ flag: Bool)
 - (void) useOptimizedDrawing:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The optimizations may prevent sibling subviews from being displayed in the correct order—which matters only if the subviews overlap. You should always set `flag` to [`true`](../../Swift/true.md) when there are no overlapping subviews within the window. The default is [`false`](../../Swift/false.md).
 

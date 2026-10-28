@@ -15,7 +15,7 @@ The role assigned to this participant, if any.
 let role: (any SpatialTemplateRole)?
 ```
 
-#### Discussion
+## Discussion
 
 This value could differ from the role attached to the participant’s assigned seat if this participant was assigned a role that has no remaining seats.
 

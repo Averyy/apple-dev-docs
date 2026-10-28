@@ -24,7 +24,7 @@ func VTSessionCopySerializableProperties(_ session: VTSession, allocator: CFAllo
 extern OSStatus VTSessionCopySerializableProperties(VTSessionRef session, CFAllocatorRef allocator, CFDictionaryRef*dictionaryOut);
 ```
 
-#### Discussion
+## Discussion
 
 The serializable properties are those which can be saved and applied to a different session. The caller must release the returned dictionary.
 

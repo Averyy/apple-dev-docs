@@ -4,7 +4,7 @@
 
 Specify types for descriptors.
 
-#### Overview
+## Overview
 
 The constants described here specify the data type for a descriptor and show the kind of data stored in a descriptor with that type.
 

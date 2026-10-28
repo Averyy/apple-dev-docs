@@ -20,7 +20,7 @@ Changed joint influence weights.
 let influenceWeights: [Float]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

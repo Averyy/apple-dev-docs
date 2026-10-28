@@ -15,7 +15,7 @@ The delete character key.
 static let deleteCharacter: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

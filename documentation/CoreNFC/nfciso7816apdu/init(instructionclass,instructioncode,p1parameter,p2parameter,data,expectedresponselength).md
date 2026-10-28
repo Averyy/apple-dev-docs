@@ -21,11 +21,11 @@ init(instructionClass: UInt8, instructionCode: UInt8, p1Parameter: UInt8, p2Para
 - (instancetype) initWithInstructionClass:(uint8_t) instructionClass instructionCode:(uint8_t) instructionCode p1Parameter:(uint8_t) p1Parameter p2Parameter:(uint8_t) p2Parameter data:(NSData *) data expectedResponseLength:(NSInteger) expectedResponseLength;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized ISO 7816 APDU object.
 
-#### Discussion
+## Discussion
 
 If your app needs more precise control of the APDU format, use [`init(data:)`](./init%28data%29.md) to create the APDU object.
 

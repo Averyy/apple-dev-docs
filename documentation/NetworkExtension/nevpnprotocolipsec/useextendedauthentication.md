@@ -24,7 +24,7 @@ var useExtendedAuthentication: Bool { get set }
 @property BOOL useExtendedAuthentication;
 ```
 
-#### Discussion
+## Discussion
 
 This authentication is in addition to the IKE authentication used to authenticate the endpoints of the IKE session.
 

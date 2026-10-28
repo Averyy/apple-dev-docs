@@ -19,7 +19,7 @@ var baselineOffsetFromBottom: CGFloat { get }
 @property (readonly) CGFloat baselineOffsetFromBottom;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0`. For views that contain text or other content whose layout benefits from having a custom baseline, you can override this property and provide the correct distance between the bottom of the view’s alignment rectangle and that baseline.
 

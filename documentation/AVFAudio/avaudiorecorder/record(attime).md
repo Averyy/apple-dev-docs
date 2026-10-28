@@ -25,11 +25,11 @@ func record(atTime time: TimeInterval) -> Bool
 - (BOOL) recordAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if recording starts successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can call this method on a single recorder, or use it to synchronize the recording of multiple players as shown below.
 

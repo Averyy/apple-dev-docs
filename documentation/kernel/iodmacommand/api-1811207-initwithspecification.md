@@ -19,7 +19,7 @@ virtual bool initWithSpecification(
  void *refCon = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Can fail if the mapping type is not recognised, if one of the 3 mandatory parameters are set to 0, if a 32 bit output function is selected when more than 32 bits of address is required or, if kBypassed is requested on a machine that doesn't support bypassing. Returns true otherwise.
 

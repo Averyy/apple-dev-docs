@@ -25,7 +25,7 @@ func updateMeters()
 - (void) updateMeters;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to update the level meter data before calling [`averagePower(forChannel:)`](./averagepower%28forchannel%29.md) or [`peakPower(forChannel:)`](./peakpower%28forchannel%29.md).
 

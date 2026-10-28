@@ -20,7 +20,7 @@ The intensity of flashing lights in the input surface.
 @property (nonatomic, readonly) float intensityLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The result is a value between `0` and `100`, where `100` is the highest detectable intensity for flashing lights.
 

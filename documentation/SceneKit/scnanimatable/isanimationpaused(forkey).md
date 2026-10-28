@@ -28,7 +28,7 @@ func isAnimationPaused(forKey key: String) -> Bool
 - (BOOL) isAnimationForKeyPaused:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified animation is paused. [`false`](../../Swift/false.md) if the animation is running or no animation is attached to the object with that key.
 

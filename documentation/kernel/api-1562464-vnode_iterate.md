@@ -15,11 +15,11 @@ Perform an operation on (almost) all vnodes from a given mountpoint.
 int vnode_iterate(struct mount *mp, int flags, int (*callout)(struct vnode *, void *), void *arg);
 ```
 
-#### Return Value
+## Return Value
 
 Zero for success, else an error code. Will return 0 immediately if there are no vnodes hooked into the mount.
 
-#### Discussion
+## Discussion
 
 Skips vnodes which are dead, in the process of reclaim, suspended, or of type VNON.
 

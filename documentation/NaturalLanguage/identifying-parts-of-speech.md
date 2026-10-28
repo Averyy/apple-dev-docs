@@ -5,7 +5,7 @@
 
 Classify nouns, verbs, adjectives, and other parts of speech in a string.
 
-#### Overview
+## Overview
 
 Identifying the parts of speech for words in natural language text can help your program understand the meaning of sentences. For example, provided the transcription of a request spoken by the user, you might programmatically determine general intent by looking at only the nouns and verbs.
 

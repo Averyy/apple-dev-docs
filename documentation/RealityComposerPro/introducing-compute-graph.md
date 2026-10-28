@@ -5,7 +5,7 @@
 
 Use Reality Composer Pro Compute Graph to build custom particle simulations with a node-based graph.
 
-#### Overview
+## Overview
 
 Compute Graph is a standalone node-based framework for constructing particle simulations and general-purpose GPU compute graphs that work with RealityKit. Developers who need granular control over how particles and compute work runs can use Compute Graph.
 
@@ -21,13 +21,13 @@ Use Compute Graph instead of Particle Emitter when you need:
 
 Like other Reality Composer Pro graphs, Compute Graph is a node-and-connection-based workflow designer. Before working with Compute Graph, review the general navigation and features of the Reality Composer Pro Graph Editor in [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md).
 
-#### Add a Compute Graph to your project
+## Add a Compute Graph to your project
 
 In the Reality Composer Pro Project Browser, click **+** and then select **Compute Graph**. Give the Compute Graph a name, and then double-click it to open it.
 
 Alternatively, Control-click inside a folder, and then click **New** > **Compute Graph**. Give the Compute Graph a name, and then double-click it to open it.
 
-#### Work within the four-stage run order
+## Work within the four-stage run order
 
 The default Compute Graph node includes four phases — Emission, Initialization, Simulation, and Output. Additional stage types, such as Texture, are available when configuring custom pipelines. The Compute Graph phases run top to bottom.
 
@@ -41,7 +41,7 @@ For example, in the Simulation phase, a `force::gravity` node feeding into `elem
 
 Every parameter is static until you wire a node into its port, which is what makes it dynamic. Compute Graph has no separate “dynamic mode” toggle the way some other tools do.
 
-#### Attach a Compute Graph to an entity
+## Attach a Compute Graph to an entity
 
 Select an entity in your scene. In the Inspector, click **Add Component**, and then choose **Compute Simulation**.
 
@@ -51,11 +51,11 @@ Attach the Compute Graph to the entity that generates the effect.
 
 ![A screenshot of configuring the Compute Simulation component in the Reality Composer Pro Inspector.](https://developer.apple.com/tutorials/images/RealityComposerPro/ComputeGraph2@2x.png)
 
-#### Explore built-in node namespaces
+## Explore built-in node namespaces
 
 Apple’s Compute Graph framework documents the full built-in node library by namespace, organized into `element::`, `emitter::`, `module::`, `force::`, `output::`, and utility namespaces. See the framework reference ([Compute Graph](../ComputeGraph/ComputeGraph.md)) for a complete catalog of nodes in each namespace.
 
-#### Read current element state with element nodes
+## Read current element state with element nodes
 
 Available in any phase, `element::` nodes read data about the particle currently being processed:
 
@@ -67,14 +67,14 @@ Available in any phase, `element::` nodes read data about the particle currently
 
 See the Element namespace reference ([`element`](../ComputeGraph/element.md)) for the full list.
 
-#### Control emission with emitter nodes
+## Control emission with emitter nodes
 
 - `emitter::continuous` emits particles at a fixed rate.
 - `emitter::burst` emits a single burst when the system spawns.
 - `emitter::periodicBurst` repeats a burst on an interval, useful for effects like periodic sparks rather than a smooth stream.
 - `emitter::setGroup` assigns spawned particles to an element group so other nodes can selectively operate on a subset of particles.
 
-#### Initialize and simulate with module and force nodes
+## Initialize and simulate with module and force nodes
 
 - `module::` nodes mutate per-particle state directly.
 - `setPosition`/`addPosition`, `setVelocity`/`addVelocity`, `setColor`, `setAlpha`, `setSize`, and `setLifetime` set or offset the corresponding property.
@@ -86,7 +86,7 @@ See the Element namespace reference ([`element`](../ComputeGraph/element.md)) fo
   - `twist` applies a twisting force around a vertical axis for vortex effects.
   - `add` applies an arbitrary constant force vector.
 
-#### Shape output with output nodes
+## Shape output with output nodes
 
 Output nodes shape what’s rendered without modifying the underlying element data. This makes them useful for presentation-only effects that don’t affect simulation physics.
 
@@ -95,13 +95,13 @@ Output nodes shape what’s rendered without modifying the underlying element da
 - `growIn` produces a smooth grow-in animation for newly spawned particles.
 - `setUV2` through `setUV7` set additional UV coordinate sets for effects that sample multiple textures per particle.
 
-#### Reach for utility nodes
+## Reach for utility nodes
 
 - `graph::` nodes are usable in any phase and cover general-purpose operations not specific to a single phase.
 - `random::` nodes generate pseudo-random values seeded from the graph’s random number generator — the editor’s **Random (Float3)** node is what you’ll use to add per-particle variation to position, velocity, or color so a whole burst of particles doesn’t look identical.
 - `texture_sample` and `texture_sample1d` sample a texture asset, letting you drive per-particle values, typically color, from an image rather than computing them with shader math.
 
-#### Add Compute Graph bundles
+## Add Compute Graph bundles
 
 Compute Graph Bundles are pre-built node compositions that encapsulate common patterns, making it easier to compose effects without wiring individual nodes.
 
@@ -111,14 +111,14 @@ Add Compute Graph Bundles from the Reality Composer Pro **Project Settings** men
 
 For complete documentation on Compute Graph nodes, see [Compute Graph](../ComputeGraph/ComputeGraph.md).
 
-#### Optimize your Compute Graphs
+## Optimize your Compute Graphs
 
 - **Set particle capacity to match the effect.** A far larger capacity than the effect ever uses wastes GPU memory. Size the capacity to the emission rate and particle lifetime you’ve configured (roughly `rate × lifetime`, plus headroom for bursts).
 - **Prefer a gradient texture over computed gradient math.** Sampling a small texture is both more efficient than computing equivalent colors procedurally with shader math in the graph, and easier to iterate on — an artist can edit a texture without touching the graph.
 - **Keep Output-phase work presentation-only.** Output nodes run on every live particle each time the phase executes, so avoid putting expensive computation there that could instead run once in Simulation (or once in Initialization, if the value doesn’t need to change over the particle’s life).
 - **Use `element::terminate` deliberately.** Precise termination conditions, rather than relying purely on a long fixed lifetime, keep the live particle count, and therefore GPU cost, closer to what’s actually visible on screen.
 
-#### Combine Compute Graph with your app’s gameplay logic
+## Combine Compute Graph with your app’s gameplay logic
 
 If your effect needs to react to gameplay state — for example, intensifying based on a value a custom system computes in Swift (see [Systems](../RealityKit/ecs-systems.md)), or only emitting while the app is in a certain mode — drive that through a **Public Input** on the graph. Set the input from your Swift code, or from a Script Graph node through a Set Variable or component write.
 

@@ -15,7 +15,7 @@ An event that indicates whether a seek-to-time request was accomplished.
 attribute  requestSeekToTime;
 ```
 
-#### Discussion
+## Discussion
 
 This event is called after the left or right edge of the Siri Remote is pressed and released. Use [`shouldHandleStateChange`](./api-1627428-shouldhandlestatechange.md) for press and hold events.
 

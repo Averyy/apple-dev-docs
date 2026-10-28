@@ -25,7 +25,7 @@ static let dubbedTranslation: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicDubbedTranslation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this characteristic is `public.translation.dubbed`.
 

@@ -15,7 +15,7 @@ The tooltip text.
 extern NSAttributedStringKey NSToolTipAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing the tooltip text. The default value is `nil`, indicating no tooltip is available.
 

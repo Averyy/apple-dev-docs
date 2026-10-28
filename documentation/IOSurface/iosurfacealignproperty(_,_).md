@@ -24,7 +24,7 @@ func IOSurfaceAlignProperty(_ property: CFString, _ value: Int) -> Int
 size_t IOSurfaceAlignProperty(CFStringRef property, size_t value);
 ```
 
-#### Discussion
+## Discussion
 
 For properties with no alignment requirements, the original value is returned.
 

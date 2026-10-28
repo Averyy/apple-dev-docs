@@ -19,7 +19,7 @@ A short, LLM-generated description of what the result represents.
 let label: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine what information the model requested. For complex requests, the tool provides the simplest string that describes the current portion of the task. For example, the string might contain a value like “Attachments from John” or “Documents about the deadline.” You can display the string in your app’s interface or use it as an accessibility label.
 

@@ -5,7 +5,7 @@
 
 Verify that requests for payment function properly in the sandbox environment by inspecting the calls to the payment transaction observer.
 
-#### Overview
+## Overview
 
 Create an instance of [`SKPayment`](./skpayment.md) using a valid product identifier that you’ve already tested, as described in [Testing fetching product identifiers](./testing-fetching-product-identifiers.md). Set a breakpoint and inspect the payment request. Add the payment request to the transaction queue, and set a breakpoint to confirm that the system calls your observer’s [`paymentQueue(_:updatedTransactions:)`](./skpaymenttransactionobserver/paymentqueue%28_,updatedtransactions%29.md) method.
 

@@ -21,7 +21,7 @@ struct StreamLogHandler
 
 - [Understanding Loggers and Log Handlers](./understandingloggers.md)
 
-#### Overview
+## Overview
 
 This is a simple implementation of `LogHandler` that directs `Logger` output to either `stderr` or `stdout` via the factory methods.
 

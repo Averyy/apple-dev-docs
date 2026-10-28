@@ -22,7 +22,7 @@ var selectedFontDescriptor: UIFontDescriptor? { get set }
 @property (nonatomic, strong, nullable) UIFontDescriptor * selectedFontDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This font descriptor does not include a size attribute, so if you want to use this descriptor as a parameter in [`init(descriptor:size:)`](../uifont/init%28descriptor,size%29.md), you also need a size parameter greater than `0.0`.
 

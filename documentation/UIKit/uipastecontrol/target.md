@@ -22,7 +22,7 @@ weak var target: (any UIPasteConfigurationSupporting)? { get set }
 @property (nonatomic, weak, nullable) id<UIPasteConfigurationSupporting> target;
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can assign this property a reference to a [`UITextView`](../uitextview.md).
 

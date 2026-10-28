@@ -25,7 +25,7 @@ func twist(twistAxis: RotationAxis3D) -> Rotation3D
 static SPRotation3D SPRotation3DTwist(SPRotation3D rotation, SPRotationAxis3D twistAxis);
 ```
 
-#### Return Value
+## Return Value
 
 The twist component of the rotation’s swing-twist decomposition for a given twist axis.
 

@@ -25,11 +25,11 @@ func caseInsensitiveCompare(_ string: String) -> ComparisonResult
 - (NSComparisonResult) caseInsensitiveCompare:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the lexical ordering. [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md) the receiver precedes `aString` in lexical ordering, [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) the receiver and `aString` are equivalent in lexical value, and [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if the receiver follows `aString`.
 
-#### Discussion
+## Discussion
 
 This method is the equivalent of invoking [`compare(_:options:)`](./compare%28_,options%29.md) with [`caseInsensitive`](./compareoptions/caseinsensitive.md) as the only option.
 

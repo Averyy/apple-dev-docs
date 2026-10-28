@@ -23,7 +23,7 @@ var localizedDescription: String { get }
 @property (nonatomic, strong, readonly) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t used and currently contains an empty string.
 

@@ -23,7 +23,7 @@ func titleShadowColor(for state: UIControl.State) -> UIColor?
 - (UIColor *) titleShadowColorForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The color of the title’s shadow for the specified state.
 

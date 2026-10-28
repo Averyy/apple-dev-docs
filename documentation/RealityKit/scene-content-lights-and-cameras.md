@@ -5,7 +5,7 @@
 
 Control the lighting and point of view for a scene.
 
-#### Overview
+## Overview
 
 In RealityKit, cameras define the point of view from which RealityKit renders a scene. In AR mode, RealityKit creates and controls the camera for you based on the location and orientation of the device. In non-AR mode, you can control the camera by adding an entity that holds one of the camera components below and changing its [`Transform`](./transform.md).
 

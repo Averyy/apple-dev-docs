@@ -21,7 +21,7 @@ let QCCompositionAttributeHasConsumersKey: String
 extern NSString * const QCCompositionAttributeHasConsumersKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an `NSNumber` object that contains a Boolean value. [`true`](../Swift/true.md) indicates that the composition has consumers.
 

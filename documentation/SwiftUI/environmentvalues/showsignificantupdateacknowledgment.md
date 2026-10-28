@@ -17,7 +17,7 @@ Presents a system interface to inform people about significant app changes and r
 var showSignificantUpdateAcknowledgment: SignificantUpdateAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Call this action from a [`Button`](../button.md) or [`onAppear(perform:)`](../view/onappear%28perform%29.md) to inform people about significant app changes that require their acknowledgment.
 

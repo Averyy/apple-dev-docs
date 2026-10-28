@@ -16,11 +16,11 @@ Opens an instance of an I2C bus interface, allowing I2C requests to be made.
 IOReturn IOI2CInterfaceOpen(io_service_t interface, IOOptionBits options, IOI2CConnectRef *connect);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 An instance of an I2C bus interface, obtained by IOFBCopyI2CInterfaceForBus, is opened with this function allowing I2C requests to be made.
 

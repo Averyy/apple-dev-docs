@@ -24,7 +24,7 @@ func UIRectFillUsingBlendMode(_ rect: CGRect, _ blendMode: CGBlendMode)
 extern void UIRectFillUsingBlendMode(CGRect rect, CGBlendMode blendMode);
 ```
 
-#### Discussion
+## Discussion
 
 This function draws the rectangle in the current graphics context. If the current graphics context is `nil`, this function does nothing.
 

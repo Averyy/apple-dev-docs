@@ -25,7 +25,7 @@ static let identifier: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString containing the POSIX locale identifier as used by ICU, such as “`ja_JP`”. If you have a variant locale or a different currency or calendar, it can be as complex as “`en_US_POSIX@calendar=japanese;currency=EUR`” or “`az_Cyrl_AZ@calendar=buddhist;currency=JPY`”.
 

@@ -23,11 +23,11 @@ func displayLink(target: Any, selector sel: Selector) -> CADisplayLink?
 - (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 A new display link, or `nil` only in exceptional cases where the system cannot construct a display link.
 
-#### Discussion
+## Discussion
 
 The returned display link is automatically retargeted when the scene moves between displays.
 

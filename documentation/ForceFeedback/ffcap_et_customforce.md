@@ -18,7 +18,7 @@ var FFCAP_ET_CUSTOMFORCE: Int { get }
 FFCAP_ET_CUSTOMFORCE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a custom force effect. The Force Feedback plugIn developer is required to provide additional documentation to the application writer on how the effect should be used.
 

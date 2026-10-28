@@ -28,7 +28,7 @@ func disableAllBackgroundDelivery() async throws
 - (void) disableAllBackgroundDeliveryWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to prevent your app from receiving any additional update notifications while in the background. This method operates asynchronously. As soon as the background deliveries are disabled, this method calls its completion handler on a background queue.
 

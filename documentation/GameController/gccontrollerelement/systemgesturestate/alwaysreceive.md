@@ -24,7 +24,7 @@ case alwaysReceive
 GCSystemGestureStateAlwaysReceive
 ```
 
-#### Discussion
+## Discussion
 
 This state removes any delay in your app receiving the input but may trigger a simultaneous system gesture and in-app action.
 

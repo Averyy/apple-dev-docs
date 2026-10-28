@@ -22,7 +22,7 @@ nonisolated
 init(content: Content, modifier: Modifier)
 ```
 
-#### Discussion
+## Discussion
 
 If `content` is a [`View`](../view.md) and `modifier` is a [`ViewModifier`](../viewmodifier.md), the result is a [`View`](../view.md). If `content` and `modifier` are both view modifiers, then the result is a new [`ViewModifier`](../viewmodifier.md) combining them.
 

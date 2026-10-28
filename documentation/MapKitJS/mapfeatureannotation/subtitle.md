@@ -15,7 +15,7 @@ The subtitle of the feature.
 get subtitle(): string | null;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the subtitle property of the map feature annotation.
 

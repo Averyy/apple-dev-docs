@@ -25,7 +25,7 @@ func removeAllCachedResourceValues()
 - (void) removeAllCachedResourceValues;
 ```
 
-#### Discussion
+## Discussion
 
 This method is applicable only to URLs that represent file system resources.
 

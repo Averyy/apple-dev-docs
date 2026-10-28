@@ -5,7 +5,7 @@
 
 Work with prefix, postfix, and infix operators.
 
-#### Overview
+## Overview
 
 The tables below list the operators declared by the Swift standard library. For more information about operation declarations, see [Operator Declaration](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Operator-Declaration) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 

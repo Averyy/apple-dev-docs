@@ -19,7 +19,7 @@ var excludedNetworkRules: [NENetworkRule]? { get set }
 @property (copy, nullable) NSArray<NENetworkRule *> * excludedNetworkRules;
 ```
 
-#### Discussion
+## Discussion
 
 The following restrictions apply to each rule in the array:
 

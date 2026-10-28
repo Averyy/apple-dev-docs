@@ -5,7 +5,7 @@
 
 Differentiate groups of rows visually by adding header and footer views to your table view’s sections.
 
-#### Overview
+## Overview
 
 Use header and footer views as visual markers for the beginning and end of sections. Header and footer views are optional, and you can customize them as much or as little as you want.
 
@@ -30,7 +30,7 @@ override func tableView(_ tableView: UITableView, titleForFooterInSection
 
 > **Note**:  Headers and footers normally apply to a single section, but you can also provide a single header or footer view for the entire table by using the [`tableHeaderView`](./uitableview/tableheaderview.md) or [`tableFooterView`](./uitableview/tablefooterview.md) properties of your table view. The global header appears at the top of your table’s content, and the global footer appears at the bottom.
 
-##### Customize the header and footer views
+### Customize the header and footer views
 
 Custom header and footer views give the sections of your table a unique appearance. With custom headers and footers, you specify the views you want and position them anywhere within the allotted space. You can also provide different header or footer views for different sections of your table.
 
@@ -112,7 +112,7 @@ The following image shows the resulting headers.
 
 ![Illustration showing custom headers. The custom headers contain an image and string explaining the contents of each section.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3148907@2x.png)
 
-##### Change the height of headers and footers
+### Change the height of headers and footers
 
 A table view tracks the height of section headers and footers separately from the views that represent them. [`UITableView`](./uitableview.md) provides default sizes for both items. If all of your headers (or all of your footers) are the same height, specify that height using the table view’s [`sectionHeaderHeight`](./uitableview/sectionheaderheight.md) and [`sectionFooterHeight`](./uitableview/sectionfooterheight.md) properties, or use the default values provided by the table view.
 

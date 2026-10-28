@@ -21,7 +21,7 @@ func expandedDimensions(_ array: MLXArray, axes: some Collection<Int>, stream: S
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`expandedDimensions(_:axis:stream:)`](./expandeddimensions%28_,axis,stream%29.md)

@@ -22,7 +22,7 @@ var showsPaperSelectionForLoadedPapers: Bool { get set }
 @property (nonatomic) BOOL showsPaperSelectionForLoadedPapers;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Setting the value to [`true`](../../Swift/true.md) enables a paper selection menu on printers that support different types of paper and have more than one paper type loaded. On printers where only one paper type is available, no paper selection menu is displayed, regardless of the value of this property.
 

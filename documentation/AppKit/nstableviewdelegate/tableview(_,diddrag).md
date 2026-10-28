@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, didDrag tableColumn: NSTableCo
 - (void) tableView:(NSTableView *) tableView didDragTableColumn:(NSTableColumn *) tableColumn;
 ```
 
-#### Discussion
+## Discussion
 
 Specifically, this method is sent when the mouse button goes up in `tableView` and `tableColumn` has been dragged during the time the mouse button was down. In macOS 10.5 and later the dragged column is sent to the delegate. (In earlier versions of macOS the table column that’s currently located at the dragged column’s original index is sent.)
 

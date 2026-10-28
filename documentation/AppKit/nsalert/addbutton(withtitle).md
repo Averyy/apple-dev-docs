@@ -19,11 +19,11 @@ func addButton(withTitle title: String) -> NSButton
 - (NSButton *) addButtonWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 Button added to the alert.
 
-#### Discussion
+## Discussion
 
 Buttons are placed starting near the right side of the alert and going toward the left side (for languages that read left to right). The first three buttons are identified positionally as `NSAlertFirstButtonReturn`, `NSAlertSecondButtonReturn`, `NSAlertThirdButtonReturn` in the return-code parameter evaluated by the modal delegate. Subsequent buttons are identified as `NSAlertThirdButtonReturn` +`n`, where `n` is an integer
 

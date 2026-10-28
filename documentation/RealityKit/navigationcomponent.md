@@ -20,7 +20,7 @@ A component that defines which areas of a navigation mesh an entity can move thr
 struct NavigationComponent
 ```
 
-#### Overview
+## Overview
 
 Add a navigation component to an entity to make it a navigation agent. Its [`layer`](./navigationcomponent/layer.md) selects the navigation mesh the entity travels on, and its [`filter`](./navigationcomponent/filter-swift.property.md) restricts which marked areas the entity can cross when a [`NavigationController`](./navigationcontroller.md) finds a path.
 

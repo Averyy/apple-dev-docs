@@ -21,7 +21,7 @@ A cubic Bézier curve from the previous current point to the given end-point, us
 case curve(to: CGPoint, control1: CGPoint, control2: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 The end-point of the curve becomes the new current point.
 

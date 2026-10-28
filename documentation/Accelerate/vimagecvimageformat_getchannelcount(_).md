@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetChannelCount(_ format: vImageConstCVImageFormat) -> 
 uint32_t vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 The number of channels.
 
-#### Discussion
+## Discussion
 
 This function returns the number of interleaved or planar channels.
 

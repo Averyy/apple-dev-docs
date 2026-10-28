@@ -15,7 +15,7 @@ The base descriptor type.
 typedef IOUSBDescriptorHeader IOUSBDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to represent generic descriptor definitions. For more information about descriptors, see USB 3.2, 9.5.
 

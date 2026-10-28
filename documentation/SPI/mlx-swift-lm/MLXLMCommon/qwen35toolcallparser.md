@@ -17,7 +17,7 @@ Parser for Qwen 3.5’s two observed tool-call payload dialects.
 struct Qwen35ToolCallParser
 ```
 
-#### Overview
+## Overview
 
 Qwen 3.5’s chat template requests the XML function dialect, but the model can occasionally emit the Qwen/Hermes JSON dialect used by earlier Qwen releases. Both payloads are framed by `<tool_call>` tags. Dialect selection is structural and deterministic: XML must begin with `<function=`, while JSON must begin with `{`. Malformed or ambiguous payloads are never repaired into executable calls.
 

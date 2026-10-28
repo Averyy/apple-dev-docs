@@ -19,7 +19,7 @@ case openingState
 NSDrawerOpeningState
 ```
 
-#### Discussion
+## Discussion
 
 The drawer is in the process of opening.
 

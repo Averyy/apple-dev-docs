@@ -22,7 +22,7 @@ A handler that receives updates when an alternative network path is preferred ov
 final var betterPathUpdateHandler: (@Sendable (Bool) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Better path events are an indication that a more preferable network path is available. If you can migrate your work to a new connection, try establishing a new connection. Once that new connection is ready, cancel the original connection.
 

@@ -11,7 +11,7 @@ Provides the localized string in the installation package for the current locale
 localizedString(stringKey)
 ```
 
-#### Return Value
+## Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 

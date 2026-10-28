@@ -19,7 +19,7 @@ var haptics: GCDeviceHaptics? { get }
 @property (strong, readonly, nullable) GCDeviceHaptics * haptics;
 ```
 
-#### Discussion
+## Discussion
 
 The haptics profile is represented as a `GCDeviceHaptics` instance, from which you can create `CHHapticEngine` instances targeting the haptic actuator(s) in the accessory.
 

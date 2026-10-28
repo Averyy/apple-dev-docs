@@ -41,7 +41,7 @@ var menuItem: NSMenuItem { get }
 @property (nonatomic, copy, readonly) NSMenuItem * menuItem;
 ```
 
-#### Discussion
+## Discussion
 
 Provides a representation of the web extension command as a menu item to display in the app.
 

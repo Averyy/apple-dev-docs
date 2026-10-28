@@ -19,7 +19,7 @@ protocol NSDraggingInfo : NSObjectProtocol
 @protocol NSDraggingInfo <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You invoke the [`NSDraggingInfo`](./nsdragginginfo.md) protocol methods from within a class’s implementation of [`NSDraggingDestination`](./nsdraggingdestination.md) methods. AppKit automatically passes an object that conforms to the [`NSDraggingInfo`](./nsdragginginfo.md) protocol as the argument to each of the methods that [`NSDraggingDestination`](./nsdraggingdestination.md) defines. Send [`NSDraggingInfo`](./nsdragginginfo.md) messages to this object. You never need to create a class that implements the [`NSDraggingInfo`](./nsdragginginfo.md) protocol.
 

@@ -25,7 +25,7 @@ static let latinToHangul: StringTransform
 extern NSStringTransform const NSStringTransformLatinToHangul;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

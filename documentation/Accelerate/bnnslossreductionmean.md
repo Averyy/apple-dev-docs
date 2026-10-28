@@ -25,7 +25,7 @@ var BNNSLossReductionMean: BNNSLossReductionFunction { get }
 BNNSLossReductionMean
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossReductionMean`](./bnnslossreductionmean.md) sums the loss of all samples in the batch and divides by number of samples.
 

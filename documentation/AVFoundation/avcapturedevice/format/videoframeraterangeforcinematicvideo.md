@@ -23,7 +23,7 @@ var videoFrameRateRangeForCinematicVideo: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForCinematicVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Devices may support a limited frame rate range when Cinematic Video capture is active. If this device format does not support Cinematic Video capture, this property returns `nil`.
 

@@ -23,7 +23,7 @@ var kAudioSessionProperty_ServerDied: Int { get }
 kAudioSessionProperty_ServerDied
 ```
 
-#### Discussion
+## Discussion
 
 This value is available to your app only by way of a property listener callback function. See [`AudioSessionAddPropertyListener(_:_:_:)`](./audiosessionaddpropertylistener%28_,_,_%29.md).
 

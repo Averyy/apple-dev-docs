@@ -25,7 +25,7 @@ var capacity: Int { get }
 @property (nonatomic, readonly) NSUInteger capacity;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the capacity of a zone when creating it with the [`newZone(_:)`](../mdlmeshbufferallocator/newzone%28_%29.md) method of a concrete class implementing the [`MDLMeshBufferAllocator`](../mdlmeshbufferallocator.md) protocol.
 

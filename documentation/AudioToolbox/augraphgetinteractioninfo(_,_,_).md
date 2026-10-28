@@ -26,11 +26,11 @@ func AUGraphGetInteractionInfo(_ inGraph: AUGraph, _ inInteractionIndex: UInt32,
 extern OSStatus AUGraphGetInteractionInfo(AUGraph inGraph, UInt32 inInteractionIndex, AUNodeInteraction *outInteraction);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 An application can iterate through the interactions (as with the nodes) of a graph by retrieving the number of interactions, and then iterating an index starting from 0. The `inInteractionIndex` parameter is based on the `outNumInteractions` value and is only valid if no edits to the graph’s state have been made.
 

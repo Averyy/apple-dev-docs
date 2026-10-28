@@ -20,11 +20,11 @@ typealias OSLAccessorProcPtr = (DescType, UnsafePointer<AEDesc>?, DescType, Desc
 typedef OSErr (*OSLAccessorProcPtr)(DescType desiredClass, const AEDesc *container, DescType containerClass, DescType form, const AEDesc *selectionData, AEDesc *value, SRefCon accessorRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your object accessor function should return `noErr` if it successfully located the requested object and `errAEEventNotHandled` if it could not locate the object. When the Apple Event Manager receives the result code `errAEEventNotHandled` after calling an object accessor function, it attempts to use other methods of locating the requested objects, such as calling an equivalent system object accessor function.
 
-#### Discussion
+## Discussion
 
 To resolve an object specifier, your application calls the [`AEResolve(_:_:_:)`](./api-1449720-aeresolve.md) function. `AEResolve` in turn calls application-defined object accessor functions to locate specific Apple event objects and properties in the application’s data structures. Your application provides one or more object accessor functions that can locate all the element classes and properties it supports.
 

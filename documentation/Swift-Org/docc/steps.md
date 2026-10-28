@@ -26,7 +26,7 @@ Defines a set of tasks the reader performs on a tutorial page.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 Use the `Steps` directive to define a set of tasks the reader performs on a tutorial page.
 
@@ -78,13 +78,13 @@ Each individual step contains instructional text along with either a code listin
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A set of steps can contain one or more of the following items:
 
 - **[`Step`](./step.md)**: An individual task the reader performs. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a set of steps:
 

@@ -4,7 +4,7 @@
 
 Define tags and signatures used for version 1.0 profiles.
 
-#### Overview
+## Overview
 
 The ICC version 2.x profile format differs from the version 1.0 profile format, and ColorSync Manager routines for updating a profile and searching for profiles do not work with version 1.0 profiles. However, your application can use version 1.0 profiles with all other ColorSync routines. For example, you can open a version 1.0 profile using the function [CMOpenProfile](./api-1804853-cmopenprofile.md), obtain the version 1.0 profile header using the function [CMGetProfileHeader](./api-1804879-cmgetprofileheader.md), and access version 1.0 profile elements using the function [CMGetProfileElement](./api-1804973-cmgetprofileelement.md).
 

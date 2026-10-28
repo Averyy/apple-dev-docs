@@ -19,7 +19,7 @@ class IOBluetoothHandsFreeAudioGateway
 @interface IOBluetoothHandsFreeAudioGateway : IOBluetoothHandsFree
 ```
 
-#### Overview
+## Overview
 
 This class represents the audio gateway portion of a Bluetooth audio profile.
 

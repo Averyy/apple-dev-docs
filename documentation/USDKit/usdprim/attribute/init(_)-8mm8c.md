@@ -20,7 +20,7 @@ Casts a property handle to an attribute handle.
 init?(_ object: USDPrim.Property)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the property is not an attribute.
 

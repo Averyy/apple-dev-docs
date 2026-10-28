@@ -21,7 +21,7 @@ case missingPushExtension
 CLLocationPushServiceErrorMissingPushExtension
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Creating a location push service extension](../../creating-a-location-push-service-extension.md).
 

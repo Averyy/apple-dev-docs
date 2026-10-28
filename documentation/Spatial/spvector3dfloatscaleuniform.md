@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatScaleUniform(SPVector3DFloat vector, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that’s uniformly scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a vector with elements uniformly scaled by the specified value.
 

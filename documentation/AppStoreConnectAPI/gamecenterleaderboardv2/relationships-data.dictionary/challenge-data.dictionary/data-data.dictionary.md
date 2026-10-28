@@ -13,7 +13,7 @@
 object GameCenterLeaderboardV2.Relationships.Challenge.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

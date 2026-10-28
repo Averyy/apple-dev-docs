@@ -17,7 +17,7 @@ case cwAuthenticationAlgorithmUnsupportedErr
 kCWAuthenticationAlgorithmUnsupportedErr
 ```
 
-#### Discussion
+## Discussion
 
 Specified authentication algorithm is not supported.
 

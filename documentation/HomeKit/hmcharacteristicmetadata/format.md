@@ -24,7 +24,7 @@ var format: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * format;
 ```
 
-#### Discussion
+## Discussion
 
 The [`format`](./format.md) property tells you what kind of data the characteristic’s [`value`](../hmcharacteristic/value.md) contains. For example, you can extend the [`HMCharacteristic`](../hmcharacteristic.md) class with a computed property that reports whether a given characteristic is a floating point number:
 

@@ -21,7 +21,7 @@ typedef struct CMXYZColor {
 } CMXYZColor;
 ```
 
-#### Overview
+## Overview
 
 Three color component values defined by the `CMXYZComponent` type definition combine to form a color value specified in the XYZ color space. The color value is defined by the `CMXYZColor` type definition.
 

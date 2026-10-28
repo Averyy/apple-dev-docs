@@ -20,7 +20,7 @@ var idleTimeout: TimeInterval { get }
 @property (readonly) NSTimeInterval idleTimeout;
 ```
 
-#### Return Value
+## Return Value
 
 The amount of time after all pipes are idle to wait before suspending the device.
 

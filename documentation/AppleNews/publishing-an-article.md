@@ -5,7 +5,7 @@
 
 Build a URL and article body for the publish-article request.
 
-#### Overview
+## Overview
 
 To publish an article to your channel, you make a multipart POST request consisting of at least one MIME part named `article.json`. You provide additional parts for each resource that uses a URL in the format `bundle:// URL`. See [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md).
 
@@ -16,7 +16,7 @@ To publish an article to your channel, you make a multipart POST request consist
 - (Optional) Include a `metadata.json` file.
 - Send the publish-article request.
 
-##### Copy This Code
+### Copy This Code
 
 Open any text editor to copy this code. Save the file as `create_article.py`.
 
@@ -159,7 +159,7 @@ if __name__ == '__main__':
     print(response.text)
 ```
 
-##### Create the Metadata File
+### Create the Metadata File
 
 This step is optional. You might want to include a metadata file to provide additional data about the article.
 
@@ -182,7 +182,7 @@ This is an example `metadata.json` file.
 }
 ```
 
-##### Run the Script
+### Run the Script
 
 Start the command prompt and change to the directory containing `create_article.py`. Run this script to make a [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) request to the Apple News API. This script takes five arguments: API URL (https://news-api.apple.com), Channel ID, Key ID, Secret, and the path to the article directory.
 
@@ -190,11 +190,11 @@ Start the command prompt and change to the directory containing `create_article.
 python create_article.py https://news-api.apple.com channel_id key_id key_secret path/to/article/directory/
 ```
 
-##### Result
+### Result
 
 The server returns the `ArticleResponse` object. For more information, see [`Article`](../AppleNewsAPI/article.md), `ArticleLinks`, and [`Meta`](../AppleNewsAPI/meta.md).
 
-##### How It Works
+### How It Works
 
 To publish an article, you build the publish-article URL using the POST method.
 

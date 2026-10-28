@@ -22,7 +22,7 @@ var livePhotoVideoCodecType: AVVideoCodecType { get set }
 @property (nonatomic, copy) AVVideoCodecType livePhotoVideoCodecType;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be one of the video codec types listed in the photo output’s [`availableLivePhotoVideoCodecTypes`](../avcapturephotooutput/availablelivephotovideocodectypes.md) array.
 

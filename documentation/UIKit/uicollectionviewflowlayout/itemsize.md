@@ -23,7 +23,7 @@ var itemSize: CGSize { get set }
 @property (nonatomic) CGSize itemSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement the [`collectionView(_:layout:sizeForItemAt:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,sizeforitemat%29.md) method, the flow layout uses the value in this property to set the size of each cell. This results in cells that all have the same size.
 

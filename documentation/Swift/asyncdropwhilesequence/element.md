@@ -23,7 +23,7 @@ typealias Element = Base.Element
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The drop-while sequence produces whatever type of element its base sequence produces.
 

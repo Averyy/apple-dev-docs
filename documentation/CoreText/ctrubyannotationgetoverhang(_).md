@@ -25,7 +25,7 @@ func CTRubyAnnotationGetOverhang(_ rubyAnnotation: CTRubyAnnotation) -> CTRubyOv
 extern CTRubyOverhang CTRubyAnnotationGetOverhang(CTRubyAnnotationRef rubyAnnotation);
 ```
 
-#### Return Value
+## Return Value
 
 The overhang value of `rubyAnnotation`, if the `rubyAnnotation` object is valid; otherwise, [`CTRubyOverhang.invalid`](./ctrubyoverhang/invalid.md).
 

@@ -24,7 +24,7 @@ protocol MTLCounter : NSObjectProtocol, Sendable
 @protocol MTLCounter <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can determine which counters a GPU supports within a counter set (see [`MTLCounterSet`](./mtlcounterset.md)) by checking the elements of its [`counters`](./mtlcounterset/counters.md) property. A counter’s [`name`](./mtlcounter/name.md) property typically matches one of the common counter set names that [`MTLCommonCounter`](./mtlcommoncounter.md) defines. For more information, see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents a symbol.
 var isSymbol: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` only for characters composed of scalars in the “Math_Symbol”, “Currency_Symbol”, “Modifier_Symbol”, or “Other_Symbol” categories in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

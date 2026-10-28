@@ -19,7 +19,7 @@ var requiresFrameReordering: Bool { get set }
 @property (nonatomic) BOOL requiresFrameReordering;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if frame reordering occurs, otherwise [`false`](../../Swift/false.md). This property is only valid for tracks with video media type and is [`false`](../../Swift/false.md) for other track types.
 

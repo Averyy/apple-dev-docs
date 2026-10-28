@@ -29,7 +29,7 @@ class UISwitch
 - [Choosing a user interface idiom for your Mac app](./choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Displaying a checkbox in your Mac app built with Mac Catalyst](./displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Overview
+## Overview
 
 The [`UISwitch`](./uiswitch.md) class declares a property and a method to control its on/off state. When a person manipulates the switch control (“flips” it), it triggers the [`valueChanged`](./uicontrol/event/valuechanged.md) event.
 

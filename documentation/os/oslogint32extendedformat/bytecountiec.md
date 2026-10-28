@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as IEC bytes.
 case byteCountIEC
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as IEC bytes, such as `100 KiB`. The following example applies the `byteCountIEC` formatter to the 32-bit integer value `102_400`:
 

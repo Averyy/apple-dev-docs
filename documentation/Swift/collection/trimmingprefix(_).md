@@ -23,7 +23,7 @@ func trimmingPrefix<Prefix>(_ prefix: Prefix) -> Self.SubSequence where Prefix :
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A collection containing the elements of the collection that are not removed by `prefix`.
 

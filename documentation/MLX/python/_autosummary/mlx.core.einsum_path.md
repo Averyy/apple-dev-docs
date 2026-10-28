@@ -6,17 +6,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ei
 
 # mlx.core.einsum_path
 
-**einsum_path(*subscripts: str*, **operands*)**
-: Compute the contraction order for the given Einstein summation.
+```python
+einsum_path(subscripts: str, *operands)
+```
 
-Parameters:
+Compute the contraction order for the given Einstein summation.
 
-**subscripts** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The Einstein summation convention equation.
-***operands** ([array](mlx.core.array.md#mlx.core.array)) – The input arrays.
+**Parameters:**
 
-Returns:
-The einsum path and a string containing information about the
+- **subscripts** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The Einstein summation convention equation.
+- **\*operands** ([array](mlx.core.array.md#mlx.core.array)) – The input arrays.
+
+**Returns:**
+: The einsum path and a string containing information about the
 chosen path.
 
-Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([list](https://docs.python.org/3/builtins/stdtypes.html#list)([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int), [int](https://docs.python.org/3/builtins/functions.html#int))), [str](https://docs.python.org/3/builtins/stdtypes.html#str))
+**Return type:**
+: [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([list](https://docs.python.org/3/builtins/stdtypes.html#list)([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int), [int](https://docs.python.org/3/builtins/functions.html#int))), [str](https://docs.python.org/3/builtins/stdtypes.html#str))

@@ -25,7 +25,7 @@ static var atomic: CKRecordZone.Capabilities { get }
 CKRecordZoneCapabilityAtomic
 ```
 
-#### Discussion
+## Discussion
 
 When you use a [`CKModifyRecordsOperation`](../../ckmodifyrecordsoperation.md) object to save records, if the server is unable to save the changes for one record, it doesn’t save the changes for any of the records. Combining this capability with the [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](../../ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md) policy of the operation object prevents your app from overwriting changes to a group of records if one or more of the records on the server has recent changes.
 

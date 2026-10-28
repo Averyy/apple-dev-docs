@@ -23,11 +23,11 @@ class var applicationMusicPlayer: MPMusicPlayerController { get }
 @property (class, nonatomic, readonly) MPMusicPlayerController * applicationMusicPlayer;
 ```
 
-#### Return Value
+## Return Value
 
 The application music player.
 
-#### Discussion
+## Discussion
 
 The application music player plays music locally within your app. The music player doesn’t affect the Music app’s state. When your app moves to the background, the music player stops playing the current media.
 

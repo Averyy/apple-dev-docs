@@ -23,11 +23,11 @@ var canResignFirstResponder: Bool { get }
 @property (nonatomic, readonly) BOOL canResignFirstResponder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the responder can resign first-responder status; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) by default. You can override this method in your custom responders and return a different value if needed. For example, a text field containing invalid content might want to return [`false`](../../Swift/false.md) to ensure that the user corrects that content first.
 

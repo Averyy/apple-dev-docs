@@ -19,7 +19,7 @@ class let didEndEditingNotification: NSNotification.Name
 extern NSNotificationName NSTextDidEndEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the notifying `NSText` object. The `userInfo` dictionary contains the following information:
 

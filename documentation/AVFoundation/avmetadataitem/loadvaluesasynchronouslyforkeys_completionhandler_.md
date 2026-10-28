@@ -21,7 +21,7 @@ Tells the object to load the values of any of the specified keys that aren’t a
 - (void) loadValuesAsynchronouslyForKeys:(NSArray<NSString *> *) keys completionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 For full discussion, see [`AVAsynchronousKeyValueLoading`](../avasynchronouskeyvalueloading.md).
 

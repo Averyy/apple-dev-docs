@@ -5,13 +5,13 @@
 
 Recreate a string from an archive file.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to decompress and parse a previously compressed string.
 
 The code below decompresses and parses the file generated using the steps explained in [Compressing and saving a string to the file system](./compressing-and-saving-a-string-to-the-file-system.md). The operation obtains the contents of the `DAT` blob for the first file in the archive and creates a string from that data.
 
-##### Specify the compressed file path
+### Specify the compressed file path
 
 Create a [`FilePath`](../System/filepath.md) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [Configure App Sandbox](https://help.apple.com/xcode/mac/current/#/devbd04af149).
 
@@ -31,7 +31,7 @@ let archiveFilePath: FilePath = {
 }()
 ```
 
-##### Create the file stream to read the source archive
+### Create the file stream to read the source archive
 
 The [`ArchiveByteStream`](../AppleArchive/archivebytestream.md) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create a byte stream that reads the source file:
 
@@ -49,7 +49,7 @@ defer {
 }
 ```
 
-##### Create the decompression stream
+### Create the decompression stream
 
 Create the decompression stream. Specify the file-reading stream as the input stream that provides the compressed data:
 
@@ -63,7 +63,7 @@ defer {
 }
 ```
 
-##### Create the decoding stream
+### Create the decoding stream
 
 Create a decoding stream that provides archive elements from the raw, decompressed data:
 
@@ -77,7 +77,7 @@ defer {
 }
 ```
 
-##### Derive the size of the uncompressed string
+### Derive the size of the uncompressed string
 
 Use the size of the `DAT` blob field that you specified in [Compressing and saving a string to the file system](./compressing-and-saving-a-string-to-the-file-system.md) to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:
 
@@ -102,7 +102,7 @@ guard byteCount != 0 else {
 }
 ```
 
-##### Decompress the archived string
+### Decompress the archived string
 
 Create an [`UnsafeMutableRawBufferPointer`](../Swift/unsafemutablerawbufferpointer.md) structure and allocate to it it the size of the original string to receive the decompressed data:
 
@@ -127,7 +127,7 @@ do {
 }
 ```
 
-##### Create a string from the raw buffer pointer
+### Create a string from the raw buffer pointer
 
 Create a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](../Swift/cchar.md), and use [`init(cString:)`](../Swift/string/init%28cstring%29-2p84k.md) to initialize the new string:
 

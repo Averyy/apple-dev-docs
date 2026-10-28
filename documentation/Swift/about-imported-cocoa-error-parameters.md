@@ -5,11 +5,11 @@
 
 Learn how Cocoa error parameters are converted to Swift throwing methods.
 
-#### Overview
+## Overview
 
 In Cocoa, methods that produce errors take an [`NSError`](../Foundation/nserror.md) pointer parameter as their last parameter, which populates its argument with an [`NSError`](../Foundation/nserror.md) object if an error occurs. Swift automatically translates Objective-C methods that produce errors into methods that throw an error according to Swift’s native error handling functionality.
 
-##### Understand How Error Parameters Are Imported
+### Understand How Error Parameters Are Imported
 
 Swift examines Objective-C method declarations and translates them into Swift throwing methods, with shorter names when possible.
 

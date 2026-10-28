@@ -14,7 +14,7 @@ Rotates a Vector3 (Float) about a specified unit axis vector.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -26,7 +26,7 @@ Rotates a Vector3 (Float) about a specified unit axis vector.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The vector to rotate.
 - **`Amount`**: The amount of degrees to rotate the `In` vector; the default is `0`.

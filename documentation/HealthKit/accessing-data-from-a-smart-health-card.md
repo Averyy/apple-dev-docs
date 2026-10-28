@@ -12,11 +12,11 @@ Query for and validate a verifiable clinical record.
 - Mac Catalyst 15.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10089: Explore Verifiable Health Records](https://developer.apple.com/wwdc21/10089/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

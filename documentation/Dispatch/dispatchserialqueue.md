@@ -21,7 +21,7 @@ A custom dispatch queue that schedules tasks for serial execution on an arbitrar
 class DispatchSerialQueue
 ```
 
-#### Overview
+## Overview
 
 You do not create objects of this type directly. You receive a queue of the appropriate type when you create a new [`DispatchQueue`](./dispatchqueue.md) object.
 

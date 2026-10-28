@@ -24,7 +24,7 @@ func cancelConnectPeer(_ peerID: MCPeerID)
 - (void) cancelConnectPeer:(MCPeerID *) peerID;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to cancel connections to peers when you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. It should be called in two situations:
 

@@ -56,18 +56,6 @@ enum VendingMachineError: Error {
 }
 ```
 
-<!--
-  - test: `throw-enum-error`
-
-  ```swifttest
-  -> enum VendingMachineError: Error {
-         case invalidSelection
-         case insufficientFunds(coinsNeeded: Int)
-         case outOfStock
-     }
-  ```
--->
-
 Throwing an error lets you indicate that something unexpected happened
 and the normal flow of execution can't continue.
 You use a `throw` statement to throw an error.
@@ -78,15 +66,6 @@ that five additional coins are needed by the vending machine:
 ```swift
 throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
 ```
-
-<!--
-  - test: `throw-enum-error`
-
-  ```swifttest
-  -> throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
-  xx fatal error
-  ```
--->
 
 ## Handling Errors
 
@@ -131,60 +110,11 @@ A function marked with `throws` is called a *throwing function*.
 If the function specifies a return type,
 you write the `throws` keyword before the return arrow (`->`).
 
-<!--
-  TODO Add discussion of throwing initializers
--->
-
 ```swift
 func canThrowErrors() throws -> String
 
 func cannotThrowErrors() -> String
 ```
-
-<!--
-  - test: `throwingFunctionDeclaration`
-
-  ```swifttest
-  -> func canThrowErrors() throws -> String
-  >> { return "foo" }
-
-  -> func cannotThrowErrors() -> String
-  >> { return "foo" }
-  ```
--->
-
-<!--
-  - test: `throwing-function-cant-overload-nonthrowing`
-
-  ```swifttest
-  -> func f() -> Int { return 10 }
-  -> func f() throws -> Int { return 10 } // Error
-  !$ error: invalid redeclaration of 'f()'
-  !! func f() throws -> Int { return 10 } // Error
-  !! ^
-  !$ note: 'f()' previously declared here
-  !! func f() -> Int { return 10 }
-  !! ^
-  ```
--->
-
-<!--
-  - test: `throwing-parameter-can-overload-nonthrowing`
-
-  ```swifttest
-  -> func f(callback: () -> Int) {}
-  -> func f(callback: () throws -> Int) {} // Allowed
-  ```
--->
-
-<!--
-  TODO: Add more assertions to test these behaviors
--->
-
-<!--
-  TODO: Write about the fact the above rules that govern overloading
-  for throwing and nonthrowing functions.
--->
 
 A throwing function propagates errors that are thrown inside of it
 to the scope from which it's called.
@@ -238,53 +168,6 @@ class VendingMachine {
 }
 ```
 
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  >> enum VendingMachineError: Error {
-  >>     case invalidSelection
-  >>     case insufficientFunds(coinsNeeded: Int)
-  >>     case outOfStock
-  >> }
-  -> struct Item {
-        var price: Int
-        var count: Int
-     }
-
-  -> class VendingMachine {
-  ->     var inventory = [
-             "Candy Bar": Item(price: 12, count: 7),
-             "Chips": Item(price: 10, count: 4),
-             "Pretzels": Item(price: 7, count: 11)
-         ]
-  ->     var coinsDeposited = 0
-
-  ->     func vend(itemNamed name: String) throws {
-             guard let item = inventory[name] else {
-                 throw VendingMachineError.invalidSelection
-             }
-
-             guard item.count > 0 else {
-                 throw VendingMachineError.outOfStock
-             }
-
-             guard item.price <= coinsDeposited else {
-                 throw VendingMachineError.insufficientFunds(coinsNeeded: item.price - coinsDeposited)
-             }
-
-             coinsDeposited -= item.price
-
-             var newItem = item
-             newItem.count -= 1
-             inventory[name] = newItem
-
-             print("Dispensing \(name)")
-         }
-     }
-  ```
--->
-
 The implementation of the `vend(itemNamed:)` method
 uses `guard` statements to exit the method early and throw appropriate errors
 if any of the requirements for purchasing a snack aren't met.
@@ -313,26 +196,6 @@ func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
 }
 ```
 
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> let favoriteSnacks = [
-         "Alice": "Chips",
-         "Bob": "Licorice",
-         "Eve": "Pretzels",
-     ]
-  -> func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
-         let snackName = favoriteSnacks[person] ?? "Candy Bar"
-         try vendingMachine.vend(itemNamed: snackName)
-     }
-  >> var v = VendingMachine()
-  >> v.coinsDeposited = 100
-  >> try buyFavoriteSnack(person: "Alice", vendingMachine: v)
-  << Dispensing Chips
-  ```
--->
-
 In this example,
 the `buyFavoriteSnack(person: vendingMachine:)` function looks up a given person's favorite snack
 and tries to buy it for them by calling the `vend(itemNamed:)` method.
@@ -354,35 +217,6 @@ struct PurchasedSnack {
     }
 }
 ```
-
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> struct PurchasedSnack {
-         let name: String
-         init(name: String, vendingMachine: VendingMachine) throws {
-             try vendingMachine.vend(itemNamed: name)
-             self.name = name
-         }
-     }
-  >> do {
-  >>     let succeeds = try PurchasedSnack(name: "Candy Bar", vendingMachine: v)
-  >>     print(succeeds)
-  >> } catch {
-  >>     print("Threw unexpected error.")
-  >> }
-  << Dispensing Candy Bar
-  << PurchasedSnack(name: "Candy Bar")
-  >> do {
-  >>     let throwsError = try PurchasedSnack(name: "Jelly Baby", vendingMachine: v)
-  >>     print(throwsError)
-  >> } catch {
-  >>     print("Threw EXPECTED error.")
-  >> }
-  << Threw EXPECTED error.
-  ```
--->
 
 ### Handling Errors Using Do-Catch
 
@@ -417,12 +251,6 @@ and binds the error to a local constant named `error`.
 For more information about pattern matching,
 see [Patterns](../ReferenceManual/Patterns.md).
 
-<!--
-  TODO: Call out the reasoning why we don't let you
-  consider a catch clause exhaustive by just matching
-  the errors in an given enum without a general catch/default.
--->
-
 For example, the following code matches against all three cases
 of the `VendingMachineError` enumeration.
 
@@ -443,28 +271,6 @@ do {
 }
 // Prints "Insufficient funds. Please insert an additional 2 coins."
 ```
-
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> var vendingMachine = VendingMachine()
-  -> vendingMachine.coinsDeposited = 8
-  -> do {
-         try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
-         print("Success! Yum.")
-     } catch VendingMachineError.invalidSelection {
-         print("Invalid Selection.")
-     } catch VendingMachineError.outOfStock {
-         print("Out of Stock.")
-     } catch VendingMachineError.insufficientFunds(let coinsNeeded) {
-         print("Insufficient funds. Please insert an additional \(coinsNeeded) coins.")
-     } catch {
-         print("Unexpected error: \(error).")
-     }
-  <- Insufficient funds. Please insert an additional 2 coins.
-  ```
--->
 
 In the above example,
 the `buyFavoriteSnack(person:vendingMachine:)` function is called in a `try` expression,
@@ -515,27 +321,6 @@ do {
 // Prints "Couldn't buy that from the vending machine."
 ```
 
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> func nourish(with item: String) throws {
-         do {
-             try vendingMachine.vend(itemNamed: item)
-         } catch is VendingMachineError {
-             print("Couldn't buy that from the vending machine.")
-         }
-     }
-
-  -> do {
-         try nourish(with: "Beet-Flavored Chips")
-     } catch {
-         print("Unexpected non-vending-machine-related error: \(error)")
-     }
-  <- Couldn't buy that from the vending machine.
-  ```
--->
-
 In the `nourish(with:)` function,
 if `vend(itemNamed:)` throws an error that's
 one of the cases of the `VendingMachineError` enumeration,
@@ -557,30 +342,6 @@ func eat(item: String) throws {
     }
 }
 ```
-
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> func eat(item: String) throws {
-         do {
-             try vendingMachine.vend(itemNamed: item)
-         } catch VendingMachineError.invalidSelection, VendingMachineError.insufficientFunds, VendingMachineError.outOfStock {
-             print("Invalid selection, out of stock, or not enough money.")
-         }
-     }
-  >> do {
-  >>     try eat(item: "Beet-Flavored Chips")
-  >> } catch {
-  >>     print("Unexpected error: \(error)")
-  >> }
-  << Invalid selection, out of stock, or not enough money.
-  ```
--->
-
-<!--
-  FIXME the catch clause is getting indented oddly in HTML output if I hard wrap it
--->
 
 The `eat(item:)` function lists the vending machine errors to catch,
 and its error text corresponds to the items in that list.
@@ -612,30 +373,6 @@ do {
 }
 ```
 
-<!--
-  - test: `optional-try`
-
-  ```swifttest
-  -> func someThrowingFunction() throws -> Int {
-        // ...
-  >>    return 40
-  -> }
-
-  -> let x = try? someThrowingFunction()
-  >> print(x as Any)
-  << Optional(40)
-
-  -> let y: Int?
-     do {
-         y = try someThrowingFunction()
-     } catch {
-         y = nil
-     }
-  >> print(y as Any)
-  << Optional(40)
-  ```
--->
-
 If `someThrowingFunction()` throws an error,
 the value of `x` and `y` is `nil`.
 Otherwise, the value of `x` and `y` is the value that the function returned.
@@ -657,21 +394,6 @@ func fetchData() -> Data? {
 }
 ```
 
-<!--
-  - test: `optional-try-cached-data`
-
-  ```swifttest
-  >> struct Data {}
-  >> func fetchDataFromDisk() throws -> Data { return Data() }
-  >> func fetchDataFromServer() throws -> Data { return Data() }
-  -> func fetchData() -> Data? {
-         if let data = try? fetchDataFromDisk() { return data }
-         if let data = try? fetchDataFromServer() { return data }
-         return nil
-     }
-  ```
--->
-
 ### Disabling Error Propagation
 
 Sometimes you know a throwing function or method
@@ -691,18 +413,6 @@ so it's appropriate to disable error propagation.
 ```swift
 let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
 ```
-
-<!--
-  - test: `forceTryStatement`
-
-  ```swifttest
-  >> struct Image {}
-  >> func loadImage(atPath path: String) throws -> Image {
-  >>     return Image()
-  >> }
-  -> let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
-  ```
--->
 
 ## Specifying the Error Type
 
@@ -952,32 +662,6 @@ func processFile(filename: String) throws {
 }
 ```
 
-<!--
-  - test: `defer`
-
-  ```swifttest
-  >> func exists(_ file: String) -> Bool { return true }
-  >> struct File {
-  >>    func readline() throws -> String? { return nil }
-  >> }
-  >> func open(_ file: String) -> File { return File() }
-  >> func close(_ fileHandle: File) {}
-  -> func processFile(filename: String) throws {
-        if exists(filename) {
-           let file = open(filename)
-           defer {
-              close(file)
-           }
-           while let line = try file.readline() {
-              // Work with the file.
-  >>          print(line)
-           }
-           // close(file) is called here, at the end of the scope.
-        }
-     }
-  ```
--->
-
 The above example uses a `defer` statement
 to ensure that the `open(_:)` function
 has a corresponding call to `close(_:)`.
@@ -986,13 +670,3 @@ You can use a `defer` statement
 even when no error handling code is involved.
 For more information,
 see [Deferred Actions](ControlFlow.md#Deferred-Actions).
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

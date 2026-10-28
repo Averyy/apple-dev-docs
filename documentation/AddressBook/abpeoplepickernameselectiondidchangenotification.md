@@ -15,7 +15,7 @@ Posted when the selection in the name list is changed.
 extern NSString * const ABPeoplePickerNameSelectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

@@ -21,7 +21,7 @@ An ACME identity that the device generates.
 object ACMECredential
 ```
 
-#### Discussion
+## Discussion
 
 This schema specifies how the device requests a client certificate from an Automated Certificate Management Environment (ACME) server. Use this to create a JSON document that the device downloads when resolving an asset.
 
@@ -29,7 +29,7 @@ When the device resolves the asset, first it generates an asymmetric key pair ba
 
 For details on the content of the attestation provided to the ACME server, see the documentation of the `DevicePropertiesAttestation` key in the [`DeviceInformationResponse.QueryResponses`](./deviceinformationresponse/queryresponses-data.dictionary.md) response. In the attestation certificate the value of the freshness code OID is the SHA-256 hash of the `token` from the `device-attest-01` challenge.
 
-##### ACME attestation hardware support
+### ACME attestation hardware support
 
 The following table indicates which System on Chips (SoCs) support ACME attestation. If the Attest key is ignored, the ACME server does not receive an attestation.
 
@@ -38,7 +38,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 | Ignored | A10x Fusion and earlier | Intel | A10x Fusion and earlier | S3 and earlier | none |
 | Supported | A11 Bionic and laterAll M series | Apple silicon | A12 Bionic and later | S4 and later | All |
 
-##### Credential example
+### Credential example
 
 ```json
 {

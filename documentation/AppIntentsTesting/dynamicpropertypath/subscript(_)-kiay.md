@@ -21,7 +21,7 @@ Accesses a collection element by index, for comparison with a known value.
 subscript<T>(index: Int) -> T where T : IntentValueConvertible { get throws }
 ```
 
-#### Overview
+## Overview
 
 The code below shows the syntactic sugar and the equivalent, desugared, subscript syntax.
 

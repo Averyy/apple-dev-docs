@@ -5,37 +5,37 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 15.5 SDK provides support to develop apps for Mac computers running Sequoia 15.5. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [Xcode 16.4 Release Notes](../Xcode-Release-Notes/xcode-16_4-release-notes.md).
 
-##### Finder
+### Finder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Network shares containing large amounts of data are incorrectly enumerated.  (148408379)
 
-##### hvf
+### hvf
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Availability checking is disabled for C APIs in hvf.  (148385341)
 
-##### Pro Display Calibrator
+### Pro Display Calibrator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Customizing display calibration using the Pro Display Calibrator causes a system reboot on 14-inch and 16-inch M4 MacBook Pros.  (148038484)
 
-##### Service Management
+### Service Management
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue preventing apps from registering helper executables on macOS.  (147420361) (FB16933413)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)
 

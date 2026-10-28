@@ -20,11 +20,11 @@ func DCSCopyTextDefinition(_ dictionary: DCSDictionary?, _ textString: CFString,
 CFStringRef DCSCopyTextDefinition(DCSDictionaryRef dictionary, CFStringRef textString, CFRange range);
 ```
 
-#### Return Value
+## Return Value
 
 The definition of the word or phrase, as plain text. The returned text does not contain any elements that are marked with a `priority` attribute whose value is `2`.
 
-#### Discussion
+## Discussion
 
 This function returns the description of the first matching record found in the active dictionaries. It searches first in the default word definition dictionary which, in the English environment, is the Oxford dictionary.
 

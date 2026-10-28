@@ -5,7 +5,7 @@
 
 Deliver app intents in an app extension or other package that lives outside your app’s code.
 
-#### Overview
+## Overview
 
 Create an app extension to run your custom app intents when your app isn’t running. To make it easier to share your intent code between your app and app extension, you can also place that code in a Swift package and import it into each target.
 

@@ -30,7 +30,7 @@ typedef struct { ... } DenseVector_Double;
 - [Solving systems using direct methods](./solving-systems-using-direct-methods.md)
 - [Solving systems using iterative methods](./solving-systems-using-iterative-methods.md)
 
-#### Overview
+## Overview
 
 You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Double`](./densevector_double.md) structure provides a pointer to its underlying data and a count of its number of elements.
 

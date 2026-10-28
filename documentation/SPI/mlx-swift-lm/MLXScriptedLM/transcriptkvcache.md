@@ -17,7 +17,7 @@ The tokens a model has processed, kept as an entry in its KV cache.
 final class TranscriptKVCache
 ```
 
-#### Overview
+## Overview
 
 A scripted model appends this entry to its inner model’s caches and keeps it in step with them. Generation trims, rewinds, copies, and saves the whole cache together, so `tokens` always matches what the inner caches hold, across speculative rejections, prompt-cache reuse, and `ChatSession` rebuilds.
 

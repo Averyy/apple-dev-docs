@@ -22,11 +22,11 @@ typealias UIButtonPointerStyleProvider = (UIButton, __UIPointerEffect, __UIPoint
 typedef UIPointerStyle *(^)(UIButton *, UIPointerEffect *, UIPointerShape *) UIButtonPointerStyleProvider;
 ```
 
-#### Return Value
+## Return Value
 
 The pointer style to apply to the button when the pointer hovers over it. Return `nil` when you don’t want to apply a pointer style to the button.
 
-#### Discussion
+## Discussion
 
 To change the appearance of the pointer when it hovers over the button, create a pointer style provider block and assign it to the button’s [`pointerStyleProvider`](./uibutton/pointerstyleprovider-1d4d2.md) property.
 

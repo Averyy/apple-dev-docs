@@ -19,7 +19,7 @@ var representedObject: Any? { get set }
 @property (strong, nullable) id representedObject;
 ```
 
-#### Discussion
+## Discussion
 
 This property *retains* the object you provide to it; it does not *copy* it. In another words, a view controller has a *to-one* relationship with its represented object and does not own it as an attribute.
 

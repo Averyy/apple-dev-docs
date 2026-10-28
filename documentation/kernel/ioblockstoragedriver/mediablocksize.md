@@ -9,7 +9,7 @@
 UInt64 _mediaBlockSize;
 ```
 
-#### Overview
+## Overview
 
 The block size of the media, in bytes.
 

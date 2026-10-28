@@ -31,7 +31,7 @@ object MDM
 - [Migrating managed devices](./migrating-managed-devices.md)
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.mdm` as the payload type.
 
@@ -44,7 +44,7 @@ Also define the following four standard payload values in your MDM payload:
 
 > **Note**:  MDM reserves profile payload dictionary keys with the *Payload* prefix. Don’t treat them as managed preferences.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -56,7 +56,7 @@ Also define the following four standard payload values in your MDM payload:
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

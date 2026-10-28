@@ -13,7 +13,7 @@
 typedef void (*SCSITaskCompletion)(SCSITaskIdentifier completedTask);
 ```
 
-#### Discussion
+## Discussion
 
 This is the typedef for completion routines that work with SCSITaskIdentifiers.
 

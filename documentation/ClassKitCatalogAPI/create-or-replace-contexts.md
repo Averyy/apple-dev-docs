@@ -9,13 +9,13 @@ Store information about the assignable content that your educational app provide
 **Availability**:
 - ClassKit 1.0+
 
-#### Discussion
+## Discussion
 
 Define parent contexts of any of the contexts defined in this call, either in a previous call to the same endpoint, or as part of the same call.
 
 You can specify up to 200 contexts for any one call to this endpoint. The call overwrites any contexts that already exist with the same identifier path and locale.
 
-##### Example
+### Example
 
 **Request**:
 

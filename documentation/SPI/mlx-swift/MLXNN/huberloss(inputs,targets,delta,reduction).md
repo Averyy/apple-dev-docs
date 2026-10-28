@@ -17,11 +17,11 @@ Computes the Huber loss between inputs and targets.
 func huberLoss(inputs: MLXArray, targets: MLXArray, delta: Float = 1.0, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed Huber loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

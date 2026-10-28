@@ -5,7 +5,7 @@
 
 Use sample group structures to represent encoder delay for AAC sound tracks.
 
-#### Overview
+## Overview
 
 When using sample group structures in representing encoder delay for AAC sound tracks:
 

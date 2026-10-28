@@ -5,13 +5,13 @@
 
 Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
 
-#### Overview
+## Overview
 
 An *app intent* is an action that your app performs, and that you make available to the system and other apps. App intents serve as a bridge between your app’s features and Apple Intelligence to enable system experiences like Siri, widgets, the Shortcuts app, and more. For example, when someone asks Siri to play a song using your app, Siri fulfills the request using an app intent you provide. Similarly, people use the Shortcuts app to assemble workflows from the app intents that various apps make available.
 
 As you build your app, create app intents for features that people might want to use from Siri or other parts of the system. For common features that multiple apps share, the system provides templates to use when defining your app intent. These templates simplify the creation of your code and define a common structure that Apple Intelligence uses when responding to prompts. When a template isn’t available, create the app intent code yourself using the available types of the App Intents framework.
 
-##### Declare your app intent type
+### Declare your app intent type
 
 An app intent is a structure that implements the [`AppIntent`](./appintent.md) protocol, which defines the required behavior for all app intents. You use this structure to provide the basic information about your app intent’s action, and to store the data and code you need to perform the action. You create this structure manually for app intents that are unique to your app. However, if you support app intents from one of the system-defined schemas, you can also use Xcode code completion to generate it for you.
 
@@ -35,7 +35,7 @@ For some app intents, you need to declare your type using one of the other proto
 
 For a list of specialized protocols you can use to define app intents, see [App intent types](./app-intent-types.md). For a list of app intent schemas organized by functional domains, see [App schema domains](./app-schema-domains.md).
 
-##### Add parameters for any data you require
+### Add parameters for any data you require
 
 An app intent performs an action, and its parameters specify what data to use when performing the action. Parameters are properties with app-specfic data or settings your app intent code needs to run, and you use them to make your app intent more flexible. For example, instead of creating one app intent type to play songs and another to play albums, you can create one app intent type to play any music your app supports. The parameters of the app intent tell it whether to play a song, an album, or some other type of audio content.
 
@@ -52,7 +52,7 @@ Before asking an app intent to perform its action, the system resolves all requi
 
 For more information about adding parameters to your app intent, including the supported types you can use, see [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md).
 
-##### Write code for the action
+### Write code for the action
 
 An app intent’s main purpose is to perform its designated action, which you do in the [`perform()`](./appintent/perform%28%29.md) method of your type. Use this method to run your app’s code with the provided parameter data and return a result. The system calls the method only after resolving all required parameters, so your code can rely on the values being present. The following example shows an implementation of this method that navigates to the destination in the `navigationOption` parameter using the same `navigator` object the rest of the app uses for this purpose.
 
@@ -71,7 +71,7 @@ The system can call your [`perform()`](./appintent/perform%28%29.md) method unde
 - **Respond gracefully to cancellation requests.** Support system- or person-initiated requests to cancel an in-progress action using the [`CancellableIntent`](./cancellableintent.md) protocol. Typically, you combine this protocol with [`LongRunningIntent`](./longrunningintent.md) to give people a way to cancel long-running operations safely.
 - **Support undoable actions.** If an action affects your app’s interface or content in a way people might want to reverse, add support for the [`UndoableIntent`](./undoableintent.md) protocol. This protocol provides an [`UndoManager`](../Foundation/undomanager.md) type you can use to add your action to your app’s undo stack.
 
-##### Return a result back to the caller
+### Return a result back to the caller
 
 At the end of your app intent’s [`perform()`](./appintent/perform%28%29.md) method, you need to return a result back to the system. Results indicate the success or failure of the action, but you can also use them to deliver relevant information back to the system. The following example returns a custom view with information about the selected trail as part of the result. If the system is able to display this view, it can do so to present the result. However, if it isn’t available to display the view, perhaps because the person is using Siri while in their car, it can display or speak the dialog information instead.
 
@@ -109,7 +109,7 @@ For an example of how to design custom responses, see [Design custom responses](
 
 > **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display `IntentDialog` or `ShowsSnippetView`.
 
-##### Register dependencies to other parts of your code
+### Register dependencies to other parts of your code
 
 Most app intents are lightweight wrappers that call your app’s existing code to perform their actions. To ensure an app intent has the code it needs to function, you can add dependencies to other types in your app. A dependency tells the system that it can’t run the app intent until the specified object is available. For example, if an app intent requires access to your app’s database, you can create a dependency between the app intent and the object you use to access that database. Configure a dependency by doing the following in your code:
 
@@ -164,7 +164,7 @@ struct OpenFavorites: AppIntent {
 }
 ```
 
-##### Customize your app intent’s description and behavior
+### Customize your app intent’s description and behavior
 
 Several properties of the [`AppIntent`](./appintent.md) protocol provide the system with information about your app intent instance. Implement these properties and use them to describe the action your app intent performs and provide additional configuration details. For each app intent, implement the following properties:
 
@@ -175,7 +175,7 @@ Several properties of the [`AppIntent`](./appintent.md) protocol provide the sys
 
 For more information about how to create a parameter summary, see [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md).
 
-##### Test the behavior of your code
+### Test the behavior of your code
 
 During development, validate that your intents behave as you expect by writing integration tests using the [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md) framework and additional verification steps that build on top of each other. For more information, see [Verifying your App Intents implementation](./verifying-your-app-intents-implementation.md).
 

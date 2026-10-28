@@ -23,7 +23,7 @@ var kDNSServiceFlagsBrowseDomains: UInt32 { get }
 kDNSServiceFlagsBrowseDomains
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates domains recommended for browsing. Used for specifying domain enumeration type in DNSServiceEnumerateDomains.
 

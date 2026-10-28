@@ -17,7 +17,7 @@ typedef union CMAppleProfileHeader {
 } CMAppleProfileHeader;
 ```
 
-#### Discussion
+## Discussion
 
 The ColorSync Manager defines the `CMAppleProfileHeader` structure to provide access to both version 2.x and version 1.0 profiles, as specified by the International Color Consortium. To obtain a copy of the International Color Consortium Profile Format Specification, or to get other information about the ICC, visit the ICC Web site at [http://www.color.org/](http://www.color.org/).
 

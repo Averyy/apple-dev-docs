@@ -21,7 +21,7 @@ func vSgemv(_ forma: CChar, _ m: Int32, _ n: Int32, _ alpha: Float, _ a: UnsafeP
 extern void vSgemv(char forma, int32_t m, int32_t n, float alpha, const vFloat *a, const vFloat *x, float beta, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 Vector `y` is multiplied by `beta`. Matrix `a` is multiplied by `alpha`. Then if `forma` = ‘N’, `a` is multiplied by vector `x`; if `forma` = ‘T’, the transpose of `a` is multiplied by `x`. The resulting vector is added to vector `y`, and the results are stored in `y`.
 

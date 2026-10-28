@@ -24,7 +24,7 @@ var identifier: String { get }
 @property (strong, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each object type has a unique identifier. The identifiers can be grouped into different categories: [`HKQuantityTypeIdentifier`](../hkquantitytypeidentifier.md), [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md), [`HKCharacteristicTypeIdentifier`](../hkcharacteristictypeidentifier.md), [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md), and [`HKDocumentTypeIdentifier`](../hkdocumenttypeidentifier.md) Each group of identifiers is associated with a different concrete subclass of `HKObjectType`.
 

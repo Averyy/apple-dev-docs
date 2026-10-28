@@ -25,11 +25,11 @@ init?(maskWidth width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: In
 extern CGImageRefCGImageMaskCreate(size_t width, size_t height, size_t bitsPerComponent, size_t bitsPerPixel, size_t bytesPerRow, CGDataProviderRef provider, const CGFloat *decode, bool shouldInterpolate);
 ```
 
-#### Return Value
+## Return Value
 
 A bitmap image mask. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
-#### Discussion
+## Discussion
 
 A bitmap image mask is used the same way an artist uses a silkscreen, or a sign painter uses a stencil. The bitmap represents a mask through which a color is transferred. The bitmap itself does not have a color. It gets its color from the fill color currently set in the graphics state.
 

@@ -17,7 +17,7 @@ A response containing a single marketplace webhook endpoint configuration.
 object MarketplaceWebhookResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Add a Marketplace Webhook Configuration`](./post-v1-marketplacewebhooks.md).
 

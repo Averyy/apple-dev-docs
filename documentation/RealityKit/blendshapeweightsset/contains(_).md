@@ -20,7 +20,7 @@ Checks if the set contains a blend shape weights data instance with the given na
 func contains(_ blendShapeName: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` blend shape weights data associated with the matching name is contained in the set.
 

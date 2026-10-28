@@ -19,7 +19,7 @@ func insertItem(withObjectValue object: Any, at index: Int)
 - (void) insertItemWithObjectValue:(id) object atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 

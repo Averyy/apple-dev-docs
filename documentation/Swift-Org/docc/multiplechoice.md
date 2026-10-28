@@ -22,7 +22,7 @@ Defines a single question and multiple possible answers to include in the Assess
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `MultipleChoice` directive to define a descriptive question that assesses the reader’s knowledge after they complete the steps in a tutorial. Multiple choice questions appear in the assessments section of a tutorial  page. Provide a question and several choices.
 
@@ -61,13 +61,13 @@ Use the `MultipleChoice` directive to define a descriptive question that assesse
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A multiple choice question contains the following items:
 
 - **[`Choice`](./choice.md)**: A possible correct or incorrect answer to the question. It’s a good idea to include 2-4 choices. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items include multiple choice questions:
 

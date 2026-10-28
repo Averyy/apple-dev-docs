@@ -23,7 +23,7 @@ func buttonTitle(at buttonIndex: Int) -> String?
 - (NSString *) buttonTitleAtIndex:(NSInteger) buttonIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the button specified by index `buttonIndex`.
 

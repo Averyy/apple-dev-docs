@@ -5,13 +5,13 @@
 
 Detects when you access stack variable memory after its declaring function returns.
 
-#### Overview
+## Overview
 
 Use this check to detect access to a stack variable that a function declares after that function returns. Attempting to access stack memory in this manner can lead to crashes, or result in unpredictable behavior. Available in Xcode 9 and later.
 
 > **Note**: This check is in a disabled state by default. You can enable it under the Address Sanitizer option in the Edit Scheme dialogue.
 
-##### Use of stack memory after return in C
+### Use of stack memory after return in C
 
 In the following example, the `integer_pointer_returning_function` function returns a pointer to a stack variable, and there’s an attempt to access the memory of the returned pointer:
 
@@ -25,7 +25,7 @@ int *integer_pointer = integer_returning_function();
 *integer_pointer = 43; // Error: invalid access of returned stack memory
 ```
 
-###### Solution
+#### Solution
 
 Use pointer arguments to allow a function to return values by reference.
 

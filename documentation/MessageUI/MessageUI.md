@@ -12,7 +12,7 @@ Create a user interface for composing email and text messages, so users can edit
 - Mac Catalyst 13.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The Message UI framework provides specialized view controllers for presenting standard composition interfaces for email and SMS (Short Messaging Service) text messages. Use these interfaces to add message delivery capabilities, without requiring the user to leave your app.
 

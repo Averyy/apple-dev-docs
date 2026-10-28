@@ -23,7 +23,7 @@ var kDNSServiceType_MX: Int { get }
 kDNSServiceType_MX
 ```
 
-#### Discussion
+## Discussion
 
 Mail routing information.
 

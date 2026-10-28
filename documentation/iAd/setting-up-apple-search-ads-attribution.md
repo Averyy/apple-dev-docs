@@ -5,7 +5,7 @@
 
 Retrieve the attribution dictionary.
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See `ADClient/requestAttributionDetails(_:)`. Use the [AdServices](../AdServices/AdServices.md) framework for current attribution integration with the [Apple Ads](../apple_ads/apple_ads.md) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
@@ -15,7 +15,7 @@ The attribution dictionary contains attribution data that the system retrieves f
 
 To retrieve the attribution dictionary, use the following process in sequence.
 
-##### Retrieve the Attribution Dictionary
+### Retrieve the Attribution Dictionary
 
 See the `ADClient/requestAttributionDetails(_:)` method for the conditions to retrieve the dictionary that contains the attribution object. Next, check for Apple Search Ads attribution, such as at app first open or when registration is complete. Store the data locally, so you don’t need to repeat the method call.
 
@@ -54,7 +54,7 @@ The following example shows the dictionary structure you receive when you call `
 }
 ```
 
-##### Download Attribution Data
+### Download Attribution Data
 
 After your app retrieves the attribution dictionary, upload the attribution data to your server using the method of your choice. Next, check for Apple Search Ads attribution. Store the data locally, so you don’t need to repeat the method call.
 
@@ -77,7 +77,7 @@ The following list contains the data dictionary keys and data types the iAd fram
 - **`iad-keyword-matchtype`**: String. The match type of the keyword for the ad impression. Values are `Broad`, `Exact`, or search match. See [Ad Groups](../apple_ads/ad-groups.md) for more information.
 - **`iad-ad-id`**: Integer. The `Id` of the ad that the corresponding ad belongs to.
 
-###### Report Attribution Data
+#### Report Attribution Data
 
 Attribution data reporting helps you track performance of your campaigns. The following conditions apply to attribution data:
 

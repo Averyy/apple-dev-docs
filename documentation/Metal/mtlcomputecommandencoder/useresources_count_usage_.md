@@ -20,7 +20,7 @@ Ensures kernel calls that the system encodes in subsequent commands have access 
 - (void) useResources:(id<MTLResource> const[]) resources count:(NSUInteger) count usage:(MTLResourceUsage) usage;
 ```
 
-#### Discussion
+## Discussion
 
 You can make many resources *resident* (available in GPU memory) for the remaining duration of the compute pass by calling this method. Call the method before encoding function calls that may access these `resources` through an argument buffer. The method ensures the resource is in a format that’s compatible with the kernels that depend on it.
 

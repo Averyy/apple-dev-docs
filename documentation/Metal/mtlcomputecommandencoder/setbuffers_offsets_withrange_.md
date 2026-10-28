@@ -20,7 +20,7 @@ Binds multiple buffers to the buffer argument table at once, allowing compute ke
 - (void) setBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the length of `buffers` and `offsets` are equal to the length of `range`.
 

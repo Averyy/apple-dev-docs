@@ -30,7 +30,7 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 - [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
-#### Overview
+## Overview
 
 To use a data model object to app intents, update it to conform to the `AppEntity` protocol. Declare properties using the `@Property` property wrapper to make them visible to the system. The following example from the [Accelerating app interactions with App Intents](./acceleratingappinteractionswithappintents.md) sample app shows a data model for a trail:
 

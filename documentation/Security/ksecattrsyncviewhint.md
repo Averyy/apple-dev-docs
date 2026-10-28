@@ -25,7 +25,7 @@ let kSecAttrSyncViewHint: CFString
 extern CFStringRef const kSecAttrSyncViewHint;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md), and is included as part of the primary key of an item. It can be used to help distinguish Sync Views when defining their queries.
 

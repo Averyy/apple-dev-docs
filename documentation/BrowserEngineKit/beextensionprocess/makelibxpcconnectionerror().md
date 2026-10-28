@@ -22,11 +22,11 @@ func makeLibXPCConnectionError() throws -> xpc_connection_t
 - (xpc_connection_t) makeLibXPCConnectionError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The connection object representing the created libXPC connection or `nil`.
 
-#### Discussion
+## Discussion
 
 This method creates a connection to the extension process and returns it. If it isn’t possible to make an XPC connection, this method returns `nil` and populates the `error` parameter.
 

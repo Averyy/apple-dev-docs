@@ -25,11 +25,11 @@ init(code: INAddTasksIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INAddTasksIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, populate the [`addedTasks`](./addedtasks.md) and [`modifiedTaskList`](./modifiedtasklist.md) properties with information about the changes that you made.
 

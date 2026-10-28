@@ -21,7 +21,7 @@ The preferred initial scene session role for your app.
 - `UISceneSessionRoleImmersiveSpaceApplication`
 - `CPSceneSessionRoleImmersiveSpaceApplication`
 
-#### Discussion
+## Discussion
 
 The system references this key to determine the preferred initial scene session role to create the first scene for your app. If you specify [`UISceneSessionRoleImmersiveSpaceApplication`](./uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md) or [`CPSceneSessionRoleImmersiveSpaceApplication`](./uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.md), the system creates an immersive space scene which connects to your application at launch. To define the style that [`UISceneSessionRoleImmersiveSpaceApplication`](./uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md) uses initially, use the [`UISceneInitialImmersionStyle`](./uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication/uisceneinitialimmersionstyle.md) key.
 

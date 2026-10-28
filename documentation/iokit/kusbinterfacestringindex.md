@@ -14,7 +14,7 @@
 #define kUSBInterfaceStringIndex
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Interface Descriptor corresponding to the index for the interface name's string
 

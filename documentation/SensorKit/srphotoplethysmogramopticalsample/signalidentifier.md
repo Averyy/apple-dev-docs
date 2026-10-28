@@ -21,7 +21,7 @@ var signalIdentifier: Int { get }
 @property (nonatomic, assign, readonly) NSInteger signalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 To provide the same quality of service, certain system conditions may require that you configure the PPG sensor behavior differently while using the same photodiodes and emitters. Use this identifier to distinguish between the signals that the different configurations generate.
 

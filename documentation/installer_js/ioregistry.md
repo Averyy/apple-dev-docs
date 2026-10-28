@@ -5,7 +5,7 @@
 
 An object that provides access to the IOKit registry. 
 
-#### Overview
+## Overview
 
 This object is accessed using the `system.ioregistry` property.
 

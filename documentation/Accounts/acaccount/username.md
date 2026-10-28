@@ -32,7 +32,7 @@ var username: String! { get set }
 @property (atomic, copy) NSString * username;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set before the account is saved. After the account is saved, this property is available if the user grants the application access to this account; otherwise it’s `nil`.
 

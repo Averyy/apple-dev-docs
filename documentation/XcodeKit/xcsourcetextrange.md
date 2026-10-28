@@ -19,7 +19,7 @@ class XCSourceTextRange
 @interface XCSourceTextRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 Source text ranges are half-open ranges. As a result, source text ranges include the character at the start position but exclude the character at the end position.
 

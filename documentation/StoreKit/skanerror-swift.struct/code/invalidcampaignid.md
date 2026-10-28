@@ -22,7 +22,7 @@ case invalidCampaignId
 SKANErrorInvalidCampaignId
 ```
 
-#### Discussion
+## Discussion
 
 Check that the campaign identifier is a valid value. For more information, see [`SKStoreProductParameterAdNetworkCampaignIdentifier`](../../skstoreproductparameteradnetworkcampaignidentifier.md) for StoreKit-rendered ads, and [`adCampaignIdentifier`](../../skadimpression/adcampaignidentifier.md) for view-through ads.
 

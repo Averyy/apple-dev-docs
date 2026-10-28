@@ -15,11 +15,11 @@ Base response wrapper used by all response types.
 object Response
 ```
 
-#### Discussion
+## Discussion
 
 The `Response` object is the base response wrapper used across all response types in the Apple Ads Platform API.
 
-##### Example
+### Example
 
 ```json
 {

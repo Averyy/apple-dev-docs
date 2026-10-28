@@ -25,11 +25,11 @@ func classification(forIdentifier identifier: String) -> SNClassification?
 - (SNClassification *) classificationForIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A sound classification with a corresponding identifier if it exists in the result; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 The `identifier` parameter corresponds to the [`identifier`](../snclassification/identifier.md) property in an [`SNClassification`](../snclassification.md).
 

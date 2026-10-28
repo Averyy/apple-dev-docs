@@ -21,7 +21,7 @@ Indicates whether the sample is a sync sample.
 var isNotSync: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to true for samples which should not be treated as sync samples.
 

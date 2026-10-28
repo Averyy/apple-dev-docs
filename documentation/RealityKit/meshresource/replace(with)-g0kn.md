@@ -28,7 +28,7 @@ nonisolated
 func replace(with content: MeshResource.Contents) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The contents of the modified mesh resource will not be synced between network clients.
 

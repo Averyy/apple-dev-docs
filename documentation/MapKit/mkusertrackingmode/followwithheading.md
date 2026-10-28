@@ -21,7 +21,7 @@ case followWithHeading
 MKUserTrackingModeFollowWithHeading
 ```
 
-#### Discussion
+## Discussion
 
 This mode requires the device to have an available magnetometer. This mode isn’t available for compatible iPad or iPhone apps running in visionOS.
 

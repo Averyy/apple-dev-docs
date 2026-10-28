@@ -24,11 +24,11 @@ optional func score(for player: any GKGameModelPlayer) -> Int
 - (NSInteger) scoreForPlayer:(id<GKGameModelPlayer>) player;
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating the specified player’s evaluation of the game model’s current state. Higher values indicate that a state is more desirable than lower values.
 
-#### Discussion
+## Discussion
 
 The score you return from this method is the primary heuristic by which the [`GKMinmaxStrategist`](../gkminmaxstrategist.md) class evaluates possible moves. GameplayKit speculates about the effects of possible future moves by making copies of the active game model, applying possible moves to that model, and calling your [`score(for:)`](./score%28for%29.md) method to rate the effects of those moves. Returning a high rating from your score method indicates a state of the game model that is advantageous to the given player; a low rating indicates a state that is less advantageous. GameplayKit then collects and sorts the scores resulting from many possible moves (including future moves that follow the move currently being planned) to find the most advantageous move for the active player’s current turn.
 

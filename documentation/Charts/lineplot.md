@@ -21,11 +21,11 @@ Chart content that represents a function or a collection of data using a sequenc
 struct LinePlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `LinePlot` when you want to visualize data in the same way as with [`LineMark`](./linemark.md), but you want to plot a function or visualize an entire data collection with a single plot.
 
-##### Plotting lines from a collection
+### Plotting lines from a collection
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -41,7 +41,7 @@ Chart {
 }
 ```
 
-##### Plotting functions
+### Plotting functions
 
 In addition to providing data points, you can provide a function to a `LinePlot` to plot a function. For example, you can plot the function y = x^2 with:
 

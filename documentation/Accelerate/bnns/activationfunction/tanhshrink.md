@@ -23,7 +23,7 @@ An activation function that returns its input minus the hyperbolic tangent of it
 case tanhShrink
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

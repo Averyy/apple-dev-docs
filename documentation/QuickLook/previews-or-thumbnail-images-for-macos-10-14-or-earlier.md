@@ -5,7 +5,7 @@
 
 Create thumbnail images or previews of common files and custom file types in earlier versions of macOS.
 
-#### Overview
+## Overview
 
 The Quick Look framework provides functionality to create a miniature representation, or *thumbnail*, of a file and its contents for display in apps that target macOS 10.14 and earlier.
 

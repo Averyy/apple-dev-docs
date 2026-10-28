@@ -25,7 +25,7 @@ var activeComplications: [CLKComplication]? { get }
 
 - [Keeping your complications up to date](../keeping-your-complications-up-to-date.md)
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`CLKComplication`](../clkcomplication.md) objects; each represents a version of your complication currently displayed on the clock face. If the property contains an empty array, it means your app has no complications on the active watch face. If it’s `nil`, it means the server is still connecting to the active complications.
 

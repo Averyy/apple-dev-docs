@@ -21,7 +21,7 @@ The URL Loading System received bad data from the server.
 var NSURLErrorBadServerResponse: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the “500 Server Error” message sent by HTTP servers.
 

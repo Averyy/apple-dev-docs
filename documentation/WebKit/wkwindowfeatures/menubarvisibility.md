@@ -23,7 +23,7 @@ var menuBarVisibility: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * menuBarVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 If the webpage didn’t request a visible menu bar, this property is `nil`.
 

@@ -18,7 +18,7 @@ An effect where visual changes apply to the view and the pointer retains its def
 @interface UIPointerHoverEffect : UIPointerEffect
 ```
 
-#### Overview
+## Overview
 
 Use the properties of [`UIPointerHoverEffect`](./uipointerhovereffect.md) to define the visual changes to apply to the view.
 

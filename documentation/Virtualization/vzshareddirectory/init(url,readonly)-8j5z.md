@@ -19,7 +19,7 @@ init(url: URL, readOnly: Bool)
 - (instancetype) initWithURL:(NSURL *) url readOnly:(BOOL) readOnly;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

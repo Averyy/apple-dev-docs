@@ -20,11 +20,11 @@ func remove(_ sender: Any?)
 - (void) remove:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Removes the receiver’s content object using [`removeObject(_:)`](./removeobject%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

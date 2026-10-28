@@ -19,7 +19,7 @@ func isRowSelected(_ row: Int) -> Bool
 - (BOOL) isRowSelected:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the row at `rowIndex` is selected, otherwise [`false`](../../Swift/false.md).
 

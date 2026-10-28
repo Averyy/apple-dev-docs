@@ -22,7 +22,7 @@ class func predicateForUserAnnotatedMedications(hasSchedule: Bool) -> NSPredicat
 + (NSPredicate *) predicateForUserAnnotatedMedicationsWithHasSchedule:(BOOL) hasSchedule;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKUserAnnotatedMedicationQuery.
 

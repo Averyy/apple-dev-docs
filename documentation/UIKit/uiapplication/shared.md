@@ -23,11 +23,11 @@ class var shared: UIApplication { get }
 @property (class, nonatomic, readonly) UIApplication * sharedApplication;
 ```
 
-#### Return Value
+## Return Value
 
 The app instance is created in the [`UIApplicationMain(_:_:_:_:)`](../uiapplicationmain%28_,_,_,_%29-1yub7.md) function.
 
-#### Discussion
+## Discussion
 
 The [`UIApplicationMain(_:_:_:_:)`](../uiapplicationmain%28_,_,_,_%29-1yub7.md) function creates the shared app instance at launch time.
 

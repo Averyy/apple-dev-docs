@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioControl channel ID attribute
 #define kIOAudioControlChannelIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an integer which may be driver defined. Default values for common channel types are provided in the following defines.
 

@@ -20,7 +20,7 @@ var startSubelementIndex: Int { get set }
 @property NSInteger startSubelementIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The index position of the first sub-element within the range of objects being tested that pass the receiver’s test.
 

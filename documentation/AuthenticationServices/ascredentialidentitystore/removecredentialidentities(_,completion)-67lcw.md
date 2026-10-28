@@ -27,7 +27,7 @@ func removeCredentialIdentities(_ credentialIdentities: [any ASCredentialIdentit
 - (void) removeCredentialIdentityEntries:(NSArray<id<ASCredentialIdentity>> *) credentialIdentities completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if the credential store supports incremental updates to remove previously-added credential identities. On failure, this method calls the callback with an error with domain [`ASCredentialIdentityStoreErrorDomain`](../ascredentialidentitystoreerrordomain.md) and doesn’t remove any of the objects in `credentialIdentities` from the store.
 

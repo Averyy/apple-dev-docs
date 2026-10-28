@@ -24,7 +24,7 @@ class func predicateForGroups(withIdentifiers identifiers: [String]) -> NSPredic
 + (NSPredicate *) predicateForGroupsWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that can be used to fetch groups from [`CNContactStore`](../cncontactstore.md).
 

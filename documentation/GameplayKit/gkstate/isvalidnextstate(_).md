@@ -24,11 +24,11 @@ func isValidNextState(_ stateClass: AnyClass) -> Bool
 - (BOOL) isValidNextState:(Class) stateClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a transition into the specified state should be allowed; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When you call the [`canEnterState(_:)`](../gkstatemachine/canenterstate%28_%29.md) or [`enter(_:)`](../gkstatemachine/enter%28_%29.md) method of a [`GKStateMachine`](../gkstatemachine.md) object [`currentState`](../gkstatemachine/currentstate.md) property is this state, the state machine calls this method to determine whether a transition to the proposed next state is allowed. Override this method in each custom state class you implement to choose which other states should be valid transitions from this state.
 

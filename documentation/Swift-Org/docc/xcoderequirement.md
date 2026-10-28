@@ -20,7 +20,7 @@ Lists the Xcode version required by a tutorial, and provides a link to download 
 @XcodeRequirement(title: String, destination: URL)
 ```
 
-#### Overview
+## Overview
 
 If a tutorial page (`Tutorial`) requires a specific version of Xcode in order for the reader to follow along, use the `XcodeRequirement` directive to denote the requirement and provide a download link.
 
@@ -35,7 +35,7 @@ If a tutorial page (`Tutorial`) requires a specific version of Xcode in order fo
 }
 ```
 
-##### Containing Elements
+### Containing Elements
 
 The following pages can display an Xcode requirement:
 

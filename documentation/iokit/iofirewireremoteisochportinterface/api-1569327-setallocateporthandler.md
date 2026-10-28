@@ -14,7 +14,7 @@
 IOFireWireLibIsochPortAllocateCallback (*SetAllocatePortHandler)(IOFireWireLibRemoteIsochPortRef self, IOFireWireLibIsochPortAllocateCallback inHandler);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -25,7 +25,7 @@ struct SparseOpaqueFactorization_Float
 typedef struct { ... } SparseOpaqueFactorization_Float;
 ```
 
-#### Overview
+## Overview
 
 Use the [`SparseCleanup(_:)`](./sparsecleanup%28_%29-3cnxt.md) function to free resources that these objects hold.
 

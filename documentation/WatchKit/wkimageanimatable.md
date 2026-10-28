@@ -19,7 +19,7 @@ protocol WKImageAnimatable : NSObjectProtocol
 @protocol WKImageAnimatable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Existing classes adopt this protocol and you use the methods to control the animation of those images. Do not adopt this protocol in your own classes.
 

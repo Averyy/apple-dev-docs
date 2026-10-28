@@ -17,7 +17,7 @@ let CWErrorDomain: String
 extern NSString * const CWErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

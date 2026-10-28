@@ -25,7 +25,7 @@ class MXMetricManager
 @interface MXMetricManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `MXMetricManager` shared object manages your subscription for receiving on-device daily metrics. It receives daily metric reports when the device your app is installed on is running iOS 13 and later or macOS 26 and later.
 

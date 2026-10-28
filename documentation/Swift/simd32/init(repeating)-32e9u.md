@@ -23,7 +23,7 @@ init(repeating scalar: Float16)
 
 Available when `Scalar` is `Float16`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

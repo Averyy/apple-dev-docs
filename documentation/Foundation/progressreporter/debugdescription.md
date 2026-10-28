@@ -21,7 +21,7 @@ A textual representation of the progress reporter suitable for debugging.
 final var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the same value as `description`, providing detailed information about the progress reporter’s state for debugging purposes.
 

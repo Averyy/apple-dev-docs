@@ -25,7 +25,7 @@ var fileHandleForReading: FileHandle { get }
 @property (retain, readonly) NSFileHandle * fileHandleForReading;
 ```
 
-#### Discussion
+## Discussion
 
 The descriptor represented by this object is deleted, and the object itself is automatically deallocated when the receiver is deallocated.
 

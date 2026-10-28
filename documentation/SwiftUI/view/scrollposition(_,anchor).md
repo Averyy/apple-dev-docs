@@ -22,7 +22,7 @@ nonisolated
 func scrollPosition(_ position: Binding<ScrollPosition>, anchor: UnitPoint? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control where a scroll view is positioned. You can use the [`ScrollPosition`](../scrollposition.md) type to scroll in a variety of ways:
 

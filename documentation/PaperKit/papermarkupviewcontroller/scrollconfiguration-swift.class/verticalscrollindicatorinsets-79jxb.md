@@ -18,7 +18,7 @@ The vertical scroll indicator’s insets.
 final var verticalScrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.zero`.
 

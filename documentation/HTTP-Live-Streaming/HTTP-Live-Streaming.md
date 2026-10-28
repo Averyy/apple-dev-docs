@@ -4,7 +4,7 @@
 
 Send audio and video to iOS, tvOS, and macOS devices.
 
-#### Overview
+## Overview
 
 HTTP Live Streaming (HLS) sends audio and video over HTTP from an ordinary web server for playback on iOS-based devices—including iPhone, iPad, iPod touch, and Apple TV—and on desktop computers (macOS). Using the same protocol that powers the web, HLS deploys content using ordinary web servers and content delivery networks. HLS is designed for reliability and dynamically adapts to network conditions by optimizing playback for the available speed of wired and wireless connections.
 
@@ -15,7 +15,7 @@ HLS supports the following:
 - Intelligent switching of streams in response to network bandwidth changes
 - Media encryption and user authentication
 
-##### Encode and deliver streaming media
+### Encode and deliver streaming media
 
 The following figure shows the three components of an HTTP Live Stream: the server component, the distribution component, and the client software.
 
@@ -23,17 +23,17 @@ The following figure shows the three components of an HTTP Live Stream: the serv
 
 In a typical configuration, a hardware encoder takes audio-video input, encodes it as HEVC video and AC-3 audio, and outputs a fragmented MPEG-4 file or an MPEG-2 transport stream. A software stream segmenter then breaks the stream into a series of short media files, which are placed on a web server. The segmenter also creates and maintains an index file containing a list of the media files. The URL of the index file is published on the web server. Client software reads the index, then requests the listed media files in order and displays them without any pauses or gaps between segments.
 
-##### Prepare media with the server component
+### Prepare media with the server component
 
 The server component is responsible for taking input streams of media and encoding them digitally. It encapsulates them in a format suitable for delivery and prepares the encapsulated media for distribution.
 
 For live events, the server requires a media encoder, which can be off-the-shelf hardware, and a way to break the encoded media into segments and save them as files, which can either be software such as the media stream segmenter provided by Apple or part of an integrated third-party solution.
 
-##### Deliver files with the distribution component
+### Deliver files with the distribution component
 
 The distribution system is a web server or a web-caching system that delivers the media files and index files to the client over HTTP. No custom server modules are required to deliver the content, and typically very little configuration is needed on the web server. To actually deploy HTTP Live Streaming, you need to create either an HTML page for browsers or a client app to act as a receiver. You also need the use of a web server and a way to encode live streams as fragmented MPEG-4 media files containing HEVC or H.264 video, and AAC or AC-3 audio.
 
-##### Access media through client software
+### Access media through client software
 
 Client software is responsible for determining the appropriate media to request, downloading those resources, and then reassembling them so that the media can be presented to the user in a continuous stream. For the rules governing the interaction between an HLS player and its server, see [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis). For the Apple device specification, see [HTTP Live Streaming (HLS) authoring specification for Apple devices](https://developer.apple.com/streaming/hls-authoring-specification-for-apple-devices.html).
 

@@ -20,7 +20,7 @@ The intensity value for the resource, which RealityKit defines on a logarithmic 
 var intensityExponent: Float
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit multiplies the intensity of the probe by `2^intensityExponent`. An `intensityExponent` of `0.0` means using the diffuse and specular intensities as-is.
 

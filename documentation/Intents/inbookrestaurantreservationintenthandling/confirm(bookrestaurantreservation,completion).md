@@ -26,7 +26,7 @@ optional func confirm(bookRestaurantReservation intent: INBookRestaurantReservat
 - (void) confirmBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent completion:(void (^)(INBookRestaurantReservationIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can complete the reservation. For example, you might use this method to verify the user’s account information and that your service is available. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to complete the reservation.
 

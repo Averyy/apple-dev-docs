@@ -21,7 +21,7 @@ let kSecOAEPMessageLengthAttributeName: CFString
 extern CFStringRef const kSecOAEPMessageLengthAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Optionally set the value to a [`CFNumber`](../CoreFoundation/cfnumber.md) indicating a specific message size when the [`kSecPaddingKey`](./ksecpaddingkey.md) attribute is set to [`kSecPaddingOAEPKey`](./ksecpaddingoaepkey.md). If you don’t set this attribute, the minimum padding is used by default.
 

@@ -17,7 +17,7 @@ var kPDFWorkflowItemsKey: String { get }
 #define kPDFWorkflowItemsKey
 ```
 
-#### Discussion
+## Discussion
 
 A Core Foundation array describing the PDF workflow items in the folder.
 

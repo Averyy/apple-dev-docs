@@ -19,7 +19,7 @@ func scrollWheel(with event: NSEvent)
 - (void) scrollWheel:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation passes this message to the next responder.
 

@@ -24,7 +24,7 @@ convenience init(minValue: NSNumber, maxValue: NSNumber)
 + (instancetype) numberRangeWithMinValue:(NSNumber *) minValue maxValue:(NSNumber *) maxValue;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized number range.
 

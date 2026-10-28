@@ -5,7 +5,7 @@
 
 Constants for SOCKS Proxy `CFDictionary` keys.
 
-#### Overview
+## Overview
 
 When setting the stream’s SOCKS Proxy property, the property’s value is a `CFDictionary` object containing at minimum the kCFStreamPropertySOCKSProxyHost and kCFStreamPropertySOCKSProxyPort keys. The dictionary may also contain the other keys described in this section.
 

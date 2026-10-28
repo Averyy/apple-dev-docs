@@ -21,7 +21,7 @@ Returns the byte offsets within this span where the memory represented by other 
 func byteOffsets(of other: borrowing RawSpan) -> Range<Int>?
 ```
 
-#### Return Value
+## Return Value
 
 A range of byte offsets within `self`, or `nil`.
 

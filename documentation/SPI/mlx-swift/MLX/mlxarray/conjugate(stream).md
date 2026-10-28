@@ -17,7 +17,7 @@ Element-wise complex conjugate of the input.
 func conjugate(stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`conjugate(_:stream:)`](../conjugate%28_,stream%29.md)

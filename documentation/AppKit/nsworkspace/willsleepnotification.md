@@ -19,7 +19,7 @@ class let willSleepNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceWillSleepNotification;
 ```
 
-#### Discussion
+## Discussion
 
 An observer of this message can delay sleep for up to 30 seconds while handling this notification.
 

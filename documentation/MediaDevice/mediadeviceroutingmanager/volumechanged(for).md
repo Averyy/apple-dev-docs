@@ -22,7 +22,7 @@ final func volumeChanged(for device: MediaOutputDevice)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when the remote device’s volume level or mute state changes independently of system-initiated volume control calls. This is typically needed when:
 

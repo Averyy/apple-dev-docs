@@ -25,7 +25,7 @@ func resetToDefaultState()
 - (void) resetToDefaultState;
 ```
 
-#### Discussion
+## Discussion
 
 During testing, your tests may override the property settings such as the [`timeRate`](./timerate-swift.property.md), [`askToBuyEnabled`](./asktobuyenabled.md), [`interruptedPurchasesEnabled`](./interruptedpurchasesenabled.md), and [`billingGracePeriodIsEnabled`](./billinggraceperiodisenabled.md). Call this method to revert all the property settings to the states defined in the StoreKit configuration file that you use to initialize this [`SKTestSession`](../sktestsession.md) instance.
 

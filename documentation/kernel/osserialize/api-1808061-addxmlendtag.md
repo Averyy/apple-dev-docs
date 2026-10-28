@@ -12,11 +12,11 @@ virtual bool addXMLEndTag(
  const char *tagString);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if an XML end tag for `tagString` is successfully added to the XML stream, `false` otherwise.
 
-#### Overview
+## Overview
 
 This function emits the named tag, preceded by a slash character to indicate the closing of an entity, all enclosed within a pair of angle brackets.
 

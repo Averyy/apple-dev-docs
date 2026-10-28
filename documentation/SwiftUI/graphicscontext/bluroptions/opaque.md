@@ -21,7 +21,7 @@ An option that causes the filter to ensure the result is completely opaque.
 static var opaque: GraphicsContext.BlurOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 The filter ensure opacity by dividing each pixel by its alpha value. The result may be undefined if the input to the filter isn’t also completely opaque.
 

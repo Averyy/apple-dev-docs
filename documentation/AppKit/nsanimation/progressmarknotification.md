@@ -19,7 +19,7 @@ class let progressMarkNotification: NSNotification.Name
 extern NSNotificationName NSAnimationProgressMarkNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a running `NSAnimation` object. The `userInfo` dictionary contains the current progress mark, accessed via the key `NSAnimationProgressMark`.
 

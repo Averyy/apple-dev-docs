@@ -24,7 +24,7 @@ class AVMIDIPlayer
 @interface AVMIDIPlayer : NSObject
 ```
 
-#### Overview
+## Overview
 
 For more information about preparing your app to play audio, see [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md).
 

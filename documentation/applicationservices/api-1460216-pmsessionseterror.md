@@ -19,11 +19,11 @@ func PMSessionSetError(_ printSession: PMPrintSession, _ printError: OSStatus) -
 OSStatus PMSessionSetError(PMPrintSession printSession, OSStatus printError);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

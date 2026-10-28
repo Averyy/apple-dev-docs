@@ -23,7 +23,7 @@ var isJitteredMotionVectorsEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isJitteredMotionVectorsEnabled) BOOL jitteredMotionVectorsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this property to [`true`](../../Swift/true.md), the scaler internally subtracts the jitter from the motion vectors using the jitter offset values provided each frame via [`jitterOffsetX`](../mtlfxtemporalscalerbase/jitteroffsetx.md) and [`jitterOffsetY`](../mtlfxtemporalscalerbase/jitteroffsety.md).
 

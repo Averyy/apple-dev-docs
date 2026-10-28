@@ -23,7 +23,7 @@ class CFBag
 typedef const struct __CFBag * CFBagRef;
 ```
 
-#### Overview
+## Overview
 
 CFBag and its derived mutable type, [`CFMutableBag`](./cfmutablebag.md), manage non-sequential collections of values called bags in which there can be duplicate values. CFBag creates static bags and CFMutableBag creates dynamic bags.
 

@@ -19,7 +19,7 @@ A value that describes the reason the app terminated.
 struct TerminationReason
 ```
 
-#### Discussion
+## Discussion
 
 `TerminationReason` is [`RawRepresentable`](../../Swift/rawrepresentable.md) and [`CustomStringConvertible`](../../Swift/customstringconvertible.md). Use `rawValue` to access the underlying string value, or rely on the [`CustomStringConvertible`](../../Swift/customstringconvertible.md) conformance to print the termination reason or interpolate it into a string:
 

@@ -23,7 +23,7 @@ var kGSSICCertificate: String { get }
 #define kGSSICCertificate
 ```
 
-#### Discussion
+## Discussion
 
 The value is either a `SecIdentityRef`, a `SecCertificateRef`, or a `CFDataRef` (corresponding to a persistent keychain reference).
 

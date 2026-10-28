@@ -15,7 +15,7 @@ Provides a header search path relative to the target’s directory.
 static func headerSearchPath(_ path: String, _ condition: BuildSettingCondition? = nil) -> CXXSetting
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to add a search path for headers within your target. You can’t use absolute paths and you can’t use this setting to provide headers that are visible to other targets.
 

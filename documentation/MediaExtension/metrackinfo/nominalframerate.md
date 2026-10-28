@@ -19,7 +19,7 @@ var nominalFrameRate: Float32 { get set }
 @property (nonatomic) Float32 nominalFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 For field-based video tracks that carry one field per media sample, the value of this property is the field rate, not the frame rate. `MediaToolbox` uses this property to calculate the maximum playback speed.
 

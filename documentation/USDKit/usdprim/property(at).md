@@ -20,7 +20,7 @@ Returns the property at a given path, relative to this prim.
 func property(at path: USDLayer.Path) -> USDPrim.Property
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is anchored to this prim’s path. If no property exists at the resolved path, returns an invalid property handle.
 

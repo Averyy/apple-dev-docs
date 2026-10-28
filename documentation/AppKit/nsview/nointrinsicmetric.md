@@ -19,7 +19,7 @@ class let noIntrinsicMetric: CGFloat
 extern const CGFloat NSViewNoIntrinsicMetric;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value if a view doesn’t have an intrinsic height or width. For example, a horizontal slider has an intrinsic height but might have no intrinsic width.
 

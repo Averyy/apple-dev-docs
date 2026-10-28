@@ -11,7 +11,7 @@ Disable the command gate
 virtual void disable();
 ```
 
-#### Overview
+## Overview
 
 When a command gate is disabled all future calls to runAction and runCommand will stall until the gate is enable()d later. This can be used to block client threads when a system sleep is requested. The IOWorkLoop thread itself will never stall, even when making runAction/runCommand calls. This call must be made from a gated context, to clear potential race conditions.
 

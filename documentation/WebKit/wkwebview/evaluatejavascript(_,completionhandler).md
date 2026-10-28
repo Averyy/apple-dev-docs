@@ -27,7 +27,7 @@ func evaluateJavaScript(_ javaScriptString: String) async throws -> Any?
 - (void) evaluateJavaScript:(NSString *) javaScriptString completionHandler:(void (^)(id, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After evaluating the script, this method executes the completion handler block with either the result of the script evaluation or an error. The completion handler always runs on the app’s main thread.
 

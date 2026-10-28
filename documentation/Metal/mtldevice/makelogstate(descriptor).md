@@ -25,7 +25,7 @@ func makeLogState(descriptor: MTLLogStateDescriptor) throws -> any MTLLogState
 - (id<MTLLogState>) newLogStateWithDescriptor:(MTLLogStateDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLogState`](../mtllogstate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

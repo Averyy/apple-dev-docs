@@ -25,7 +25,7 @@ class func initialize()
 + (void) initialize;
 ```
 
-#### Discussion
+## Discussion
 
 The runtime sends [`initialize()`](./initialize%28%29.md) to each class in a program just before the class, or any class that inherits from it, is sent its first message from within the program. Superclasses receive this message before their subclasses.
 
@@ -43,7 +43,7 @@ The superclass implementation may be called multiple times if subclasses do not 
 
 Because [`initialize()`](./initialize%28%29.md) is called in a blocking manner, it’s important to limit method implementations to the minimum amount of work necessary possible. Specifically, any code that takes locks that might be required by other classes in their [`initialize()`](./initialize%28%29.md) methods is liable to lead to deadlocks. Therefore, you should not rely on [`initialize()`](./initialize%28%29.md) for complex initialization, and should instead limit it to straightforward, class local initialization.
 
-##### Special Considerations
+### Special Considerations
 
 [`initialize()`](./initialize%28%29.md) is invoked only once per class. If you want to perform independent initialization for the class and for categories of the class, you should implement [`load()`](./load%28%29.md) methods.
 

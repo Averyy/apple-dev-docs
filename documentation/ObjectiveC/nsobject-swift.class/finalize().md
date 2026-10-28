@@ -27,7 +27,7 @@ func finalize()
 - (void) finalize;
 ```
 
-#### Discussion
+## Discussion
 
 The garbage collector invokes this method on the receiver before disposing of the memory it uses. When garbage collection is enabled, this method is invoked instead of `dealloc`.
 
@@ -45,7 +45,7 @@ You can override this method to relinquish resources the receiver has obtained, 
 
 Typically, however, you are encouraged to relinquish resources prior to finalization if at all possible. For more details, see Implementing a finalize Method.
 
-##### Special Considerations
+### Special Considerations
 
 It is an error to store `self` into a new or existing live object (colloquially known as “resurrection”), which implies that this method will be called only once. However, the receiver may be messaged after finalization by other objects also being finalized at this time, so your override should guard against future use of resources that have been reclaimed, as shown by the `log_file = NULL` statement in the example. The `finalize` method itself will never be invoked more than once for a given object.
 

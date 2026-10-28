@@ -26,7 +26,7 @@ class var availableHDRModes: AVPlayer.HDRMode { get }
 @property (class, readonly) AVPlayerHDRMode availableHDRModes;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates all of the HDR modes that the device can play. A value of `0` indicates the device doesn’t support HDR. Each value indicates that an appropriate HDR display is available for the specified HDR mode. Additionally, the device must be capable of playing the specified HDR type.
 

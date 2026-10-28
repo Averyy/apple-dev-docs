@@ -21,7 +21,7 @@ The current phase of the asynchronous image loading operation.
 enum AsyncImagePhase
 ```
 
-#### Overview
+## Overview
 
 When you create an [`AsyncImage`](./asyncimage.md) instance with the [`init(url:scale:transaction:content:)`](./asyncimage/init%28url,scale,transaction,content%29.md) initializer, you define the appearance of the view using a `content` closure. SwiftUI calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to draw. For example, you can draw the loaded image if it exists, a view that indicates an error, or a placeholder:
 

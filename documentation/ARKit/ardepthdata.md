@@ -20,7 +20,7 @@ class ARDepthData
 @interface ARDepthData : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object contains the following depth information that the LiDAR scanner captures at runtime:
 

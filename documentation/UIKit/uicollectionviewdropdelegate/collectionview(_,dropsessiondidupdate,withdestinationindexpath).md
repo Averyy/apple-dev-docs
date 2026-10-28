@@ -26,11 +26,11 @@ optional func collectionView(_ collectionView: UICollectionView, dropSessionDidU
 
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
-#### Return Value
+## Return Value
 
 Your proposal for how to handle the content if it is dropped at the specified location.
 
-#### Discussion
+## Discussion
 
 While the user is dragging content, the collection view calls this method repeatedly to determine how you would handle the drop if it occurred at the specified location. The collection view provides visual feedback to the user based on your proposal.
 

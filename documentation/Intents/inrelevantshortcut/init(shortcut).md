@@ -23,7 +23,7 @@ init(shortcut: INShortcut)
 - (instancetype) initWithShortcut:(INShortcut *) shortcut;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized relevant shortcut object.
 

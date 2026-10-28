@@ -19,11 +19,11 @@ class var layoutAttributesClass: AnyClass { get }
 @property (class, readonly) Class layoutAttributesClass;
 ```
 
-#### Return Value
+## Return Value
 
 The default return value is [`NSScrubberLayoutAttributes`](../nsscrubberlayoutattributes.md).
 
-#### Discussion
+## Discussion
 
 Create a custom subclass of [`NSScrubberLayout`](../nsscrubberlayout.md) and override this method if you wish to use a custom layout attributes subclass.
 

@@ -25,7 +25,7 @@ static let languageCode: NSLocale.Key
 extern NSLocaleKey const NSLocaleLanguageCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"zh"`.
 

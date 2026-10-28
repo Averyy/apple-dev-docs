@@ -17,11 +17,11 @@ CancellablePromise getContainers(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CancellablePromise` with the following resolutions.
 
-#### Discussion
+## Discussion
 
 If the promise is successful, it will resolve with one of the following dictionaries:
 
@@ -34,7 +34,7 @@ The promise may reject and throw the following:
 - `ValidationError`, if the parameters to the method are incorrect.
 - A `FetchError` descendant, if there is a problem with the network request. A reference to the request object can be used to examine the underlying cause.
 
-#### Discussion
+## Discussion
 
 The `params` dictionary has the following properties:
 

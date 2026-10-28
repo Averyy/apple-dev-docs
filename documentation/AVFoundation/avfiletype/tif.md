@@ -25,7 +25,7 @@ static let tif: AVFileType
 extern AVFileType const AVFileTypeTIFF;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.tiff`. Files of this type have a `.tiff` or `.tif` extension.
 

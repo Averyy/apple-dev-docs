@@ -13,11 +13,11 @@
 errno_t ifnet_release(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 May return EINVAL if the interface is not valid.
 
-#### Discussion
+## Discussion
 
 Release a reference of the ifnet, this may trigger a free if the reference count reaches 0.
 

@@ -21,7 +21,7 @@ func quantizedQuantizedMM(_ x: MLXArray, _ w: MLXArray, scales: MLXArray?, group
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 If `w` is quantized, `scales` must be provided, and `groupSize`, `bits`, and `mode` must match the parameters that were used to quantize `w`.
 

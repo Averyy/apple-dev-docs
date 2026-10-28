@@ -24,7 +24,7 @@ func encode(_ offset: UIOffset, forKey key: String)
 - (void) encodeUIOffset:(UIOffset) offset forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeUIOffset(forKey:)`](./decodeuioffset%28forkey%29.md) method to retrieve the data.
 

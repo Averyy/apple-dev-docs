@@ -27,7 +27,7 @@ class IdentityProof
 
 - [Adding custom collaboration to your app](../../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 This object represents an opaque Merkle tree proof of inclusion. Inclusion hashes are provided to verify that the individual device has access to the document.
 

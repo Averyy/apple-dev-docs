@@ -25,7 +25,7 @@ func xpc_dictionary_create(_ keys: UnsafePointer<UnsafePointer<CChar>>?, _ value
 extern xpc_object_txpc_dictionary_create(const char * const*keys, xpc_object_t const*values, size_t count);
 ```
 
-#### Return Value
+## Return Value
 
 The new dictionary object.
 

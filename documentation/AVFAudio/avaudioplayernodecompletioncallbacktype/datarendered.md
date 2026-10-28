@@ -25,7 +25,7 @@ case dataRendered
 AVAudioPlayerNodeCompletionDataRendered
 ```
 
-#### Discussion
+## Discussion
 
 This case doesn’t account for any signal processing latencies downstream of the player in the engine.
 

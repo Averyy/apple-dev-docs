@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Chains two or more asynchronous sequences together sequentially.
 
-#### Overview
+## Overview
 
 [[Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChain2Sequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncChain3Sequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestChain.swift)]
 
@@ -33,7 +33,7 @@ for try await line in lines {
 
 The above example shows how two `AsyncSequence` types can be chained together. In this case it prepends a preamble to the `lines` content of the file.
 
-#### Detailed Design
+## Detailed Design
 
 This function family and the associated family of return types are prime candidates for variadic generics. Until that proposal is accepted, these will be implemented in terms of two- and three-base sequence cases.
 
@@ -77,7 +77,7 @@ When any of the asynchronous sequences being chained together come to their end 
 
 At any point in time, if one of the comprising asynchronous sequences throws an error during iteration, the resulting `AsyncChainSequence` iteration will throw that error and end iteration. The throwing behavior of `AsyncChainSequence` is that it will throw when any of its comprising bases throw, and will not throw when all of its comprising bases do not throw.
 
-##### Naming
+### Naming
 
 This function’s and type’s name match the term of art used in other languages and libraries.
 

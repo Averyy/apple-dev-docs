@@ -28,7 +28,7 @@ Asynchronously creates an environment resource from a cube texture.
 @preconcurrency convenience init(cube cubeTexture: TextureResource, options: EnvironmentResource.CreateOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit generates an environment resource from a skybox cube texture of the environment. The created environment shares the input skybox.
 

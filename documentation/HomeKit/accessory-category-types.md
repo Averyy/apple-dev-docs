@@ -5,7 +5,7 @@
 
 The accessory category types supported by HomeKit.
 
-#### Overview
+## Overview
 
 An [`HMAccessoryCategory`](./hmaccessorycategory.md) instance’s read-only [`categoryType`](./hmaccessorycategory/categorytype.md) property contains one of the values listed below to tell you what the associated accessory does.
 

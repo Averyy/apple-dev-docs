@@ -24,7 +24,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Stopping the player leaves it in an unprerolled state, but stores the playback position so that a subsequent call to [`start()`](./start%28%29.md) resumes where it stops. This action doesn’t stop an audio engine you associate with it.
 

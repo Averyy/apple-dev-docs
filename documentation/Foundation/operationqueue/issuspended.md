@@ -25,7 +25,7 @@ var isSuspended: Bool { get set }
 @property (getter=isSuspended) BOOL suspended;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md), the queue actively starts operations that are in the queue and ready to execute. Setting this property to [`true`](../../Swift/true.md) prevents the queue from starting any queued operations, but already executing operations continue to execute. You may continue to add operations to a queue that is suspended but those operations are not scheduled for execution until you change this property to [`false`](../../Swift/false.md).
 

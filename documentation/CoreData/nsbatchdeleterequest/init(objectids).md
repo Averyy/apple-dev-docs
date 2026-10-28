@@ -25,7 +25,7 @@ convenience init(objectIDs objects: [NSManagedObjectID])
 - (instancetype) initWithObjectIDs:(NSArray<NSManagedObjectID *> *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The identifiers your provide must be from managed objects of the same entity type; mixing entity types results in an error when you execute the request.
 

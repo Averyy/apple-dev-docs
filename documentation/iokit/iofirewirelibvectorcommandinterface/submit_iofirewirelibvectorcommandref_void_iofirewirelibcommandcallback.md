@@ -11,11 +11,11 @@ Submit this command object to FireWire for execution.
 IOReturn ( *SubmitWithRefconAndCallback)( IOFireWireLibVectorCommandRef self, void *refCon, IOFireWireLibCommandCallback inCallback);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 
-#### Overview
+## Overview
 
 A convienence method to set the callback and refcon and then submit.
 

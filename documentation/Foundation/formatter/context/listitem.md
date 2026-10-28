@@ -25,7 +25,7 @@ case listItem
 NSFormattingContextListItem
 ```
 
-#### Discussion
+## Discussion
 
 Use this context for dates or date symbols appearing in a list or menu item.
 

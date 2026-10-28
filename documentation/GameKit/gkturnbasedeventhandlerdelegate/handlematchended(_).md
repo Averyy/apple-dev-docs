@@ -24,7 +24,7 @@ optional func handleMatchEnded(_ match: GKTurnBasedMatch)
 - (void) handleMatchEnded:(GKTurnBasedMatch *) match;
 ```
 
-#### Discussion
+## Discussion
 
 When your delegate receives this message, it should display the match’s final results to the player and allow the player the option of saving or removing the match data from Game Center.
 

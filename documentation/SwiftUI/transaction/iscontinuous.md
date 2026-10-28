@@ -21,7 +21,7 @@ A Boolean value that indicates whether the transaction originated from an action
 var isContinuous: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if a continuous action created the transaction, and is `false` otherwise. Continuous actions include things like dragging a slider or pressing and holding a stepper, as opposed to tapping a button.
 

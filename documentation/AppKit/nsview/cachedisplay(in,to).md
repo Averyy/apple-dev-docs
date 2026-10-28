@@ -19,7 +19,7 @@ func cacheDisplay(in rect: NSRect, to bitmapImageRep: NSBitmapImageRep)
 - (void) cacheDisplayInRect:(NSRect) rect toBitmapImageRep:(NSBitmapImageRep *) bitmapImageRep;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for initializing the bitmap to the desired configuration before calling this method. However, once initialized, you can reuse the same bitmap multiple times to refresh the cached copy of your view’s contents.
 

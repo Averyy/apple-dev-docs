@@ -19,7 +19,7 @@ func SCDynamicStoreRemoveValue(_ store: SCDynamicStore?, _ key: CFString) -> Boo
 Boolean SCDynamicStoreRemoveValue(SCDynamicStoreRef store, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the key was removed; `FALSE` if no value was located or an error occurred.
 

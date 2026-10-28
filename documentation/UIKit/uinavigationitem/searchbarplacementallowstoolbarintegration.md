@@ -21,7 +21,7 @@ var searchBarPlacementAllowsToolbarIntegration: Bool { get set }
 @property (nonatomic) BOOL searchBarPlacementAllowsToolbarIntegration;
 ```
 
-#### Overview
+## Overview
 
 Defaults to [`true`](../../Swift/true.md). Set to [`false`](../../Swift/false.md) to prevent the system from placing the search bar among other [`UIToolbar`](../uitoolbar.md) items on iPhone.
 

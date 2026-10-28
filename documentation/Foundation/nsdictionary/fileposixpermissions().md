@@ -25,7 +25,7 @@ func filePosixPermissions() -> Int
 - (NSUInteger) filePosixPermissions;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`posixPermissions`](../fileattributekey/posixpermissions.md) file attributes key as an `Int` (`unsigned long` in Objective-C), or `0` if the file attributes dictionary has no entry for the key.
 

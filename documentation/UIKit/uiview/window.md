@@ -23,7 +23,7 @@ var window: UIWindow? { get }
 @property (nonatomic, readonly, nullable) UIWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the view has not yet been added to a window.
 

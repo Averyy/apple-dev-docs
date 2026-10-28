@@ -20,7 +20,7 @@ class NSCollectionView
 @interface NSCollectionView : NSView
 ```
 
-#### Overview
+## Overview
 
 The simplest type of collection view displays its items in a grid, but you can define layouts to arrange items however you like. For example, you might create a layout where items are arranged in a circle. You can also change layouts dynamically at runtime whenever you need to present items differently.
 
@@ -30,7 +30,7 @@ In addition to displaying items, collection views support the display of supplem
 
 The layout of a collection view can be changed dynamically by assigning a new layout object to the [`collectionViewLayout`](./nscollectionview/collectionviewlayout.md) property. Changing the layout object updates the appearance of the collection view without animating the changes.
 
-##### The Objects of a Collection View Interface
+### The Objects of a Collection View Interface
 
 An `NSCollectionView` object itself is a facilitator, taking information from disparate sources and merging them together to create an overall interface:
 
@@ -45,7 +45,7 @@ An `NSCollectionView` object itself is a facilitator, taking information from di
 
 There are other helper classes and protocols that you can use to customize the layout behavior and other aspects of the collection view interface. For example, when using a flow layout object ([`NSCollectionViewFlowLayout`](./nscollectionviewflowlayout.md)), you can modify the flow layout’s behavior using the methods of the [`NSCollectionViewDelegateFlowLayout`](./nscollectionviewdelegateflowlayout.md) protocol. When implementing a custom layout, you might also work with [`NSCollectionViewUpdateItem`](./nscollectionviewupdateitem.md) and [`NSCollectionViewLayoutInvalidationContext`](./nscollectionviewlayoutinvalidationcontext.md) objects, which help the layout object manage updates.
 
-##### Managing the Collection View’s Content
+### Managing the Collection View’s Content
 
 Data for the collection view is managed by the *data source object*—that is an object that adopts the methods of the [`NSCollectionViewDataSource`](./nscollectionviewdatasource.md) protocol. You are responsible for defining the data source used by your collection view. The data source provides information about the number of sections and items in the collection view and it provides the visual representation of that data. Every data source object is required to implement the following methods:
 
@@ -60,7 +60,7 @@ When your content changes in a way that requires you to update what the collecti
 
 For more information on defining your data source object, see [`NSCollectionViewDataSource`](./nscollectionviewdatasource.md).
 
-##### Inserting, Deleting, and Moving Content
+### Inserting, Deleting, and Moving Content
 
 The collection view includes methods for inserting, deleting, and moving items and sections. All of these methods affect only what the collection view displays onscreen; they do not change the data in the associated data source object. As a result, when updating your collection view’s content, always do the following:
 
@@ -73,7 +73,7 @@ The layout object determines how inserted and deleted items are animated into po
 
 Because individual methods for inserting, deleting, and moving content animate their changes right away, you must use the [`performBatchUpdates(_:completionHandler:)`](./nscollectionview/performbatchupdates%28_,completionhandler%29.md) method when you want to animate multiple changes together. The [`performBatchUpdates(_:completionHandler:)`](./nscollectionview/performbatchupdates%28_,completionhandler%29.md) method takes a block containing all of the insert, delete, move, and reload method calls you need to update the collection view. All of those operations are captured and performed as a single animated sequence.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your collection view in your storyboard and nib files. The table below shows the basic collection view attributes. Additional attributes are available based on the selected value for the Layout attribute.
 
@@ -117,7 +117,7 @@ The table below shows the attributes you can configure when you set the Layout a
 | --- | --- |
 | Dimensions | The number of rows and columns to display. Use these attributes to configure the grid dimensions. |
 
-##### Legacy Collection View Support
+### Legacy Collection View Support
 
 Prior to OS X v10.11, the collection view always displayed its contents in a grid structure that could not be changed. The data for the collection view was stored in the [`content`](./nscollectionview/content.md) property, which was often populated with data using bindings. You specified the visual appearance for the collection view’s data by creating an [`NSCollectionViewItem`](./nscollectionviewitem.md) object and assigning it to the [`itemPrototype`](./nscollectionview/itemprototype.md) property. That item object acted as a template and was used to create all of the items in the collection view.
 

@@ -23,7 +23,7 @@ var dragState: MKAnnotationView.DragState { get set }
 @property (nonatomic) MKAnnotationViewDragState dragState;
 ```
 
-#### Discussion
+## Discussion
 
 If your app runs in iOS 4.2 or later, override the [`setDragState(_:animated:)`](./setdragstate%28_,animated%29.md) method and use it to manage the drag state instead.
 

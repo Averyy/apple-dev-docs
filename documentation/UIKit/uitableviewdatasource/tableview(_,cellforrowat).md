@@ -29,11 +29,11 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 - [Filling a table with data](../filling-a-table-with-data.md)
 
-#### Return Value
+## Return Value
 
 An object inheriting from [`UITableViewCell`](../uitableviewcell.md) that the table view can use for the specified row. UIKit raises an assertion if you return `nil`.
 
-#### Discussion
+## Discussion
 
 In your implementation, create and configure an appropriate cell for the given index path. Create your cell using the table view’s [`dequeueReusableCell(withIdentifier:for:)`](../uitableview/dequeuereusablecell%28withidentifier,for%29.md) method, which recycles or creates the cell for you. After creating the cell, update the properties of the cell with appropriate data values.
 

@@ -22,7 +22,7 @@ static let postToVimeo: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypePostToVimeo;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide data from [`NSURL`](../../../Foundation/nsurl.md) whose contents use the file scheme and point to a video. You can use [`NSData`](../../../Foundation/nsdata.md) objects whose contents are video data as data for the activty items.
 

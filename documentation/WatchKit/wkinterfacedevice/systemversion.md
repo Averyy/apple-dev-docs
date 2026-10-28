@@ -19,7 +19,7 @@ var systemVersion: String { get }
 @property (nonatomic, copy, readonly) NSString * systemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the numerical version number of the system. For example, the value is `2.0` for the initial release of watchOS 2.
 

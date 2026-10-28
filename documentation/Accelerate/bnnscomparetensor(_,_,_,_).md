@@ -27,7 +27,7 @@ func BNNSCompareTensor(_ in0: UnsafePointer<BNNSNDArrayDescriptor>, _ in1: Unsaf
 int BNNSCompareTensor(const BNNSNDArrayDescriptor *in0, const BNNSNDArrayDescriptor *in1, BNNSRelationalOperator op, BNNSNDArrayDescriptor *out);
 ```
 
-#### Discussion
+## Discussion
 
 Use relational operators, for example [`BNNSRelationalOperatorGreater`](./bnnsrelationaloperatorgreater.md) and [`BNNSRelationalOperatorLess`](./bnnsrelationaloperatorless.md), to compare floating-point elements. The following code compares the elements of two arrays of single-precision values for equality:
 

@@ -16,7 +16,7 @@
 kSENSE_KEY_RECOVERED_ERROR
 ```
 
-#### Discussion
+## Discussion
 
 A recovered error has occurred.
 

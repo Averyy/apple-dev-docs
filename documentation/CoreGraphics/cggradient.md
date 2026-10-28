@@ -25,7 +25,7 @@ class CGGradient
 typedef struct CGGradient * CGGradientRef;
 ```
 
-#### Overview
+## Overview
 
 A gradient defines a smooth transition between colors across an area. A `CGGradient` has a color space, two or more colors, and a location for each color. The color space cannot be a pattern or indexed color space, otherwise it can be any Core Graphics color space ([`CGColorSpace`](./cgcolorspace.md)).
 

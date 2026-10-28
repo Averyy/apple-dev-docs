@@ -17,7 +17,7 @@ func hv_vcpu_get_serror(_ vcpu: hv_vcpu_t, _ pending: UnsafeMutablePointer<Bool>
 extern hv_return_t hv_vcpu_get_serror(hv_vcpu_t vcpu, bool *pending);
 ```
 
-#### Discussion
+## Discussion
 
 Gets pending SError for a vcpu.
 

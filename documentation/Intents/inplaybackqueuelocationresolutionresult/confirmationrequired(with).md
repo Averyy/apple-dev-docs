@@ -24,11 +24,11 @@ class func confirmationRequired(with playbackQueueLocationToConfirm: INPlaybackQ
 + (instancetype) confirmationRequiredWithPlaybackQueueLocationToConfirm:(INPlaybackQueueLocation) playbackQueueLocationToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlaybackQueueLocationResolutionResult`](../inplaybackqueuelocationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a media item that’s similar, but not equal to, the one specified in the intent. Don’t use this method to resolve media items your app doesn’t support.
 

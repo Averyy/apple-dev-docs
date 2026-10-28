@@ -25,11 +25,11 @@ func NSCopyHashTableWithZone(_ table: NSHashTable<AnyObject>, _ zone: NSZone?) -
 extern NSHashTable *NSCopyHashTableWithZone(NSHashTable *table, NSZone *zone);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new copy of `table`, created in `zone` and containing pointers to the data elements of `table`.
 
-#### Discussion
+## Discussion
 
 If `zone` is `NULL`, the new table is created in the default zone.
 

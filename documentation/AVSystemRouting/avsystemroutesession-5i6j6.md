@@ -17,7 +17,7 @@ An object that manages a single media playback session on a remote device.
 @interface AVSystemRouteSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`AVSystemRouteSession`](./avsystemroutesession-5i6j6.md) manages a single media playback session on a remote device. Create a session to initiate playback on a connected device, communicate with a remote application, and control the lifecycle of the remote playback experience.
 
@@ -31,7 +31,7 @@ To use a session:
 
 Sessions are single-use. After calling [`stop`](./avsystemroutesession-5i6j6/stop.md), the session cannot be restarted or added to another route. Create a new [`AVSystemRouteSession`](./avsystemroutesession-5i6j6.md) for each new playback.
 
-#### Reporting Playback Metadata
+## Reporting Playback Metadata
 
 Report playback metadata to `MPNowPlayingInfoCenter` to ensure the system displays accurate information about the current media across a person’s devices and in system UI.
 

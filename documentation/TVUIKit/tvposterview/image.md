@@ -19,7 +19,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The size of the poster view is determined by the natural size of the supplied image when no frame or content size is explicitly set.
 

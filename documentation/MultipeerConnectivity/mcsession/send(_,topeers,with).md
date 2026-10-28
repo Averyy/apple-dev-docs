@@ -26,7 +26,7 @@ func send(_ data: Data, toPeers peerIDs: [MCPeerID], with mode: MCSessionSendDat
 - (BOOL) sendData:(NSData *) data toPeers:(NSArray<MCPeerID *> *) peerIDs withMode:(MCSessionSendDataMode) mode error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is asynchronous (nonblocking).
 

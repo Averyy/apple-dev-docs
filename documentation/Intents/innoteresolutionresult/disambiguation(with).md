@@ -25,11 +25,11 @@ class func disambiguation(with notesToDisambiguate: [INNote]) -> Self
 + (instancetype) disambiguationWithNotesToDisambiguate:(NSArray<INNote *> *) notesToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteResolutionResult`](../innoteresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one note matches the given information and you can’t pick one definitively. Ask the user to select from among the notes that you specify.
 

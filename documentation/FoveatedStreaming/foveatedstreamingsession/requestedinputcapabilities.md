@@ -16,7 +16,7 @@ A list of input data types which should be included as part of the stream.
 final var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapability> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `[]`.
 

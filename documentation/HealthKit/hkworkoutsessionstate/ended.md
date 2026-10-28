@@ -24,7 +24,7 @@ case ended
 HKWorkoutSessionStateEnded
 ```
 
-#### Discussion
+## Discussion
 
 The watch can no longer run in the background. Its sensors return to normal, and it no longer generates workout data. You can’t restart or reuse the workout session.
 

@@ -15,7 +15,7 @@ Sets the coordinate of the annotation.
 coordinate?: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 The framework ignores the coordinate option in the constructor, if it generates a warning.
 

@@ -22,7 +22,7 @@ func setSystemTrackingEnabled(_ isEnabled: Bool) async throws
 
 - [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
-#### Discussion
+## Discussion
 
 DockKit enables system tracking by default, and any camera stream automatically generates and sends tracking events when a device docks to a compatible dock accessory.
 

@@ -21,7 +21,7 @@ func vSgemul(_ l: Int32, _ m: Int32, _ n: Int32, _ a: UnsafePointer<vFloat>, _ f
 extern void vSgemul(int32_t l, int32_t m, int32_t n, const vFloat *a, char forma, const vFloat *b, char formb, vFloat *matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Matrix `a` (or its transpose) is multiplied by matrix `b` (or its transpose); the result is stored in matrix `matrix`.
 

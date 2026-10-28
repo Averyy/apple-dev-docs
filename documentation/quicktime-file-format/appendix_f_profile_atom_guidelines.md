@@ -5,7 +5,7 @@
 
 Summarize profile information about a QuickTime movie so readers can easily determine features and complexity.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
 

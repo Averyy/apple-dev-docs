@@ -20,7 +20,7 @@ A structure that represents the time spent in a specific zone during a workout o
 struct HKWorkoutZoneDuration
 ```
 
-#### Overview
+## Overview
 
 This structure pairs a zone with the duration of time the person spent in that zone. The system calculates durations based on quantity samples collected during the workout.
 

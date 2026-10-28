@@ -23,7 +23,7 @@ var image: UIImage? { get set }
 @property (nonatomic, copy, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is a [`UIImage`](../uiimage.md) object. The associated array of representation types is [`typeListImage`](./typelistimage.md), which includes types `kUTTypePNG` and `kUTTypeJPEG`. Setting this property replaces all current items in the pasteboard with the new item.  If the first item has no value of the indicated type, `nil` is returned.
 

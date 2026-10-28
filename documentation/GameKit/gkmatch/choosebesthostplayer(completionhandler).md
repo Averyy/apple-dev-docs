@@ -33,7 +33,7 @@ func chooseBestHostPlayer() async -> String?
 - (void) chooseBestHostPlayerWithCompletionHandler:(void (^)(NSString *playerID)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes GameKit to attempt to estimate which player has the best overall network connection using a variety of metrics such as bandwidth, latency, and network reliability. Typically, you call this method when your game implements a client-server model on top of the match’s peer-to-peer connection.
 

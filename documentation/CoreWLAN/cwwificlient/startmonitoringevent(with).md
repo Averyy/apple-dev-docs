@@ -19,7 +19,7 @@ func startMonitoringEvent(with type: CWEventType) throws
 - (BOOL) startMonitoringEventWithType:(CWEventType) type error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After registering for notifications, when an event of the given type happens, the client sends an appropriate message to its delegate. See the [`CWEventDelegate`](../cweventdelegate.md) protocol for the complete list of possible messages.
 

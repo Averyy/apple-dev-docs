@@ -23,7 +23,7 @@ static var naturalScale: MeasurementFormatter.UnitOptions { get }
 NSMeasurementFormatterUnitOptionsNaturalScale
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that representations of measurements are reduced and converted into a more convenient unit, when possible. For example, a quantity of 12000 meters would be represented as `12 kilometers`.
 

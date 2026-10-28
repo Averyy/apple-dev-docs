@@ -18,7 +18,7 @@ Indicates the media library has changed.
 static let MPMediaLibraryDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 When the system posts this notification, your app should reevaluate items or playlists that you previously cached.
 

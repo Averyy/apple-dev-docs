@@ -21,11 +21,11 @@ Determines whether the view is compatible with the provided configuration.
 func supports(_ configuration: any UIContentConfiguration) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view supports this configuration being set to its [`configuration`](./configuration.md) property and is capable of updating itself for the configuration; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation assumes the view is compatible with configuration types that match the type of the view’s existing configuration.
 

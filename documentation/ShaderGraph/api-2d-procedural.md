@@ -6,7 +6,7 @@
 
 Generate 2D gradients, noise, and other patterns programmatically for your material.
 
-#### Overview
+## Overview
 
 Use these nodes to generate gradients, noise, and other types of patterns and apply them to textures or other 2D surfaces. For example, you might use a horizontal or vertical ramp node to create a color gradient on a surface.
 

@@ -27,7 +27,7 @@ func prepareInterfaceToProvideCredential(for credentialRequest: any ASCredential
 
 - [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when your extension can’t supply the requested credential without user interaction. Limit user interaction to operations required for providing the requested credential, like showing an authentication UI to unlock the person’s passwords database.
 

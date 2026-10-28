@@ -21,7 +21,7 @@ Creates a signature object from raw data.
 + (SHSignature *) signatureWithDataRepresentation:(NSData *) dataRepresentation error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A signature if the raw data is a valid signature; otherwise, `nil`.
 

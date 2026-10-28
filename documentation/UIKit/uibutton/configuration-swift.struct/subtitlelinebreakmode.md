@@ -19,7 +19,7 @@ The line break mode the button uses to lay out the button’s subtitle.
 var subtitleLineBreakMode: NSLineBreakMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Word and character wrapping modes enable multiline text, while other modes restrict the text to a single line.
 

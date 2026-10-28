@@ -19,7 +19,7 @@ Creates a new authentication scheme with the specified raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the raw value you specify doesn’t correspond to a valid authentication scheme type.
 

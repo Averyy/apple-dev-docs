@@ -29,7 +29,7 @@ class func fade(withDuration sec: TimeInterval) -> SKTransition
 
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Return Value
+## Return Value
 
 A new transition.
 

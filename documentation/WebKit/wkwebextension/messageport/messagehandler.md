@@ -23,7 +23,7 @@ var messageHandler: ((Any?, (any Error)?) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^messageHandler)(id message, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 An optional block to be invoked when a message is received, taking two parameters: the message and an optional error.
 

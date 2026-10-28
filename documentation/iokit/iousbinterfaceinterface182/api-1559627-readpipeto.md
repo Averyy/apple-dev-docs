@@ -16,7 +16,7 @@ Performs a read on a **BULK IN** pipe, specifying timeout values.
 IOReturn (*ReadPipeTO)(void *self, UInt8 pipeRef, void *buf, UInt32 *size, UInt32 noDataTimeout, UInt32 completionTimeout);
 ```
 
-#### Discussion
+## Discussion
 
 The interface must be open for the pipe to exist.
 

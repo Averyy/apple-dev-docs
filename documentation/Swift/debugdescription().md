@@ -18,11 +18,11 @@ Converts description definitions to a debugger Type Summary.
 ## Declaration
 
 ```swift
-@attached
-(member) @attached(memberAttribute) macro DebugDescription()
+@attached(member)
+@attached(memberAttribute) macro DebugDescription()
 ```
 
-#### Overview
+## Overview
 
 This macro converts compatible description implementations written in Swift to an LLDB format known as a Type Summary. A Type Summary is LLDB’s equivalent to `debugDescription`, with the distinction that it does not execute code inside the debugged process. By avoiding code execution, descriptions can be produced faster, without potential side effects, and shown in situations where code execution is not performed, such as the variable list of an IDE.
 
@@ -42,7 +42,7 @@ struct Team: CustomDebugStringConvertible {
 
 The `DebugDescription` macro supports both `debugDescription`, `description`, as well as a third option: a property named `lldbDescription`. The first two are implemented when conforming to the `CustomDebugStringConvertible` and `CustomStringConvertible` protocols. The additional `lldbDescription` property is useful when both `debugDescription` and `description` are implemented, but don’t meet the requirements of the `DebugDescription` macro. If `lldbDescription` is implemented, `DebugDescription` choose it over `debugDescription` and `description`. Likewise, `debugDescription` is preferred over `description`.
 
-##### Description Requirements
+### Description Requirements
 
 The description implementation has the following requirements:
 

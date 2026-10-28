@@ -5,7 +5,7 @@
 
 Securely store an identity in the keychain.
 
-#### Overview
+## Overview
 
 You store an identity in or retrieve an identity from a keychain much as you would a certificate, as described in [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md).
 

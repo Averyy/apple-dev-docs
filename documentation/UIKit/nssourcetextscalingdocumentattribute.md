@@ -20,7 +20,7 @@ The text-scaling mode you used when creating the text.
 extern NSAttributedStringDocumentAttributeKey const NSSourceTextScalingDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the options of the [`NSTextScalingType`](./nstextscalingtype.md) type. Some platforms scale fonts to improve their appearance. Include this attribute to specify the original text-scaling mode you used to create the text.
 

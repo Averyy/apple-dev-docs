@@ -24,11 +24,11 @@ func SSLGetSupportedCiphers(_ context: SSLContext, _ ciphers: UnsafeMutablePoint
 OSStatus SSLGetSupportedCiphers(SSLContextRef context, SSLCipherSuite *ciphers, size_t *numCiphers);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md). If the supplied buffer is too small, [`errSSLBufferOverflow`](./errsslbufferoverflow.md) is returned.
 
-#### Discussion
+## Discussion
 
 All the supported cipher suites are enabled by default. Use the [`SSLSetEnabledCiphers(_:_:_:)`](./sslsetenabledciphers%28_,_,_%29.md) function to enable a subset of the supported cipher suites. Use the [`SSLGetEnabledCiphers(_:_:_:)`](./sslgetenabledciphers%28_,_,_%29.md) function to determine which cipher suites are currently enabled.
 

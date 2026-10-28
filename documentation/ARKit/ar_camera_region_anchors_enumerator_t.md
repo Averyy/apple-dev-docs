@@ -15,7 +15,7 @@ Handler for enumerating a collection of camera region anchors.
 typedef _Bool (^)(NSObject<OS_ar_camera_region_anchor> *) ar_camera_region_anchors_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

@@ -25,7 +25,7 @@ static let NSUndoManagerCheckpoint: NSNotification.Name
 extern NSNotificationName const NSUndoManagerCheckpointNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSUndoManager` object. This notification doesn’t contain a `userInfo` dictionary.
 

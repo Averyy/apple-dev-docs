@@ -25,7 +25,7 @@ var alwaysSpecifyCompaction: Float { get set }
 @property (nonatomic) float alwaysSpecifyCompaction;
 ```
 
-#### Discussion
+## Discussion
 
 Set to nil for automatic.
 

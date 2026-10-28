@@ -19,7 +19,7 @@ A component that drives a compute graph–based particle simulation on an entity
 struct ComputeGraphComponent
 ```
 
-#### Overview
+## Overview
 
 Attach this component to any `Entity` to with a loaded `ComputeGraphResource` and execute it each frame using Metal compute pipelines. The system automatically creates and manages child entities for each graph output, each carrying its own `ModelComponent` and material.
 

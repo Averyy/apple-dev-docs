@@ -28,7 +28,7 @@ var screenSize: MTLSize { get set }
 
 - [Creating a rasterization rate map](../creating-a-rasterization-rate-map.md)
 
-#### Discussion
+## Discussion
 
 Metal ignores the depth component of this property.
 

@@ -5,7 +5,7 @@
 
 Get App Store categories and subcategories for apps.
 
-#### Overview
+## Overview
 
 `appCategories` provides read-only information that includes the list of choices for an app’s App Store category, subcategory, and secondary category.
 

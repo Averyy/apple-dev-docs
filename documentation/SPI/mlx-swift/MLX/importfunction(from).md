@@ -17,11 +17,11 @@ Imports a function from a `.mlxfn` file.
 func importFunction(from url: URL) throws -> ImportedFunction
 ```
 
-#### Return Value
+## Return Value
 
 A callable that represents the loaded function
 
-#### Discussion
+## Discussion
 
 ```swift
 // f is a callable that represents the loaded function
@@ -34,7 +34,7 @@ let b = MLXArray([5, 10, 20])
 let r = try f(a, y: b)[0]
 ```
 
-##### See Also
+### See Also
 
 - [`exportFunction(to:shapeless:_:)`](./exportfunction%28to,shapeless,_%29.md)
 - [`exportFunctions(to:shapeless:_:build:)`](./exportfunctions%28to,shapeless,_,build%29.md)

@@ -23,7 +23,7 @@ func notifyUser(hapticType type: WKHapticType, repeatHandler: ((UnsafeMutablePoi
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 For schedulable sessions such as smart alarms, call this method during the session to alert the user. When you call the method, the system plays repeating haptic feedback. If the app isn’t active, the system also displays a system alarm alert on the watch.
 

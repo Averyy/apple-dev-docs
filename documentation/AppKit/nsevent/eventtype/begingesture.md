@@ -21,7 +21,7 @@ case beginGesture
 NSEventTypeBeginGesture
 ```
 
-#### Discussion
+## Discussion
 
 Note that apps that link against macOS 10.11 and later no longer receive this event type. If you need to access the phases of a specific gesture, you can implement the responder for that gesture and examine its [`phase`](../phase-swift.property.md) property instead.
 

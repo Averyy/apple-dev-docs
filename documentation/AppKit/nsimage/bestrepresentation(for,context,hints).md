@@ -19,7 +19,7 @@ func bestRepresentation(for rect: NSRect, context referenceContext: NSGraphicsCo
 - (NSImageRep *) bestRepresentationForRect:(NSRect) rect context:(NSGraphicsContext *) referenceContext hints:(NSDictionary<NSString *,id> *) hints;
 ```
 
-#### Return Value
+## Return Value
 
 The image representation that most closely matches the specified criteria.
 

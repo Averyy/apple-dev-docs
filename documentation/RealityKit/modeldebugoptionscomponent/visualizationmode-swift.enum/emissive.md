@@ -20,7 +20,7 @@ A mode that displays the emissive channel of a material as the surface color.
 case emissive
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `emissive` to an entity to tell RealityKit to draw that entity’s calculated emissive values as its surface color. The emissive channel indicates which parts of the entity emit light. When using this mode, RealityKit draws any part of the entity that emits light in the color of the light it emits and draws any part of the entity that doesn’t emit light as black.
 

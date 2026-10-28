@@ -28,7 +28,7 @@ init(eventStore: EKEventStore)
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 The created event.
 

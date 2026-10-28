@@ -16,7 +16,7 @@ The absolute URL of the media resource. (read-only)
 readonly attribute USVString currentSrc;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an empty string if the [`networkState`](./api-1633289-networkstate.md) property is [`NETWORK_EMPTY`](./api-1629429-network_empty.md).
 

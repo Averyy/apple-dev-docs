@@ -24,7 +24,7 @@ init(device: any MTLDevice)
 - (instancetype) initWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized allocator object.
 

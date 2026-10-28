@@ -20,7 +20,7 @@ var textureType: MTLTextureType { get }
 MTLTextureType cp_texture_topology_get_texture_type(cp_texture_topology_t texture_topology);
 ```
 
-#### Discussion
+## Discussion
 
 A texture might store the content of one view or multiple views. For example, a single texture might store one or both views for the left and right eyes of a head-mounted display. The texture type indicates this content organization strategy.
 

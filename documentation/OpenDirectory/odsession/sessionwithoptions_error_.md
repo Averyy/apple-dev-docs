@@ -16,7 +16,7 @@ Returns an autoreleased session object directed over proxy to another host.
 + (instancetype) sessionWithOptions:(NSDictionary *) inOptions error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized session object.
 

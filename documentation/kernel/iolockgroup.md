@@ -13,7 +13,7 @@
 lck_grp_t *IOLockGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Global lock group used by all IOKit locks. To simplify kext debugging and lock-heat analysis, consider using lck_* locks with a per-driver lock group, as defined in kern/locks.h.
 

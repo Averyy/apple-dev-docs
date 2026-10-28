@@ -25,7 +25,7 @@ func SCNExportJavaScriptModule(_ context: JSContext)
 extern void SCNExportJavaScriptModule(JSContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 By controlling SceneKit using JavaScript code supplied at run time, you can enable rapid development for parts of your game or app. For example, a designer can easily experiment with visual effects or game-character behaviors without needing to compile and deploy your complete Xcode project.
 

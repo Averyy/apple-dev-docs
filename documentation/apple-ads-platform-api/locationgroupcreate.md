@@ -15,11 +15,11 @@ The request body object for creating a new location group.
 object LocationGroupCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationGroupCreate` object is the payload sent to [`Create Location Group`](./create-location-group.md).
 
-##### groupType Details
+### groupType Details
 
 The `groupType` you choose determines how membership is defined and maintained:
 
@@ -46,17 +46,17 @@ Creating a group also requires satisfying the following constraints:
 | `groupTotal` on creation | For `STATIC` groups, `groupTotal` equals the number of IDs supplied. For `DYNAMIC` groups, `groupTotal` is `null` while `systemStatus` is `PENDING` and populated once it becomes `VALID`. |
 | `locality` value format | A `rules` entry with `field: locality` must use the pipe-delimited format `countryOrRegion|adminArea|locality`, for example `"US|New York|Brooklyn"`, not a bare city name. |
 
-##### Dynamic Rule Field Values
+### Dynamic Rule Field Values
 
 When `field` is `adminArea`, the `value` must be the full English name of the administrative area, such as `"Illinois"` rather than `"IL"` or `"California"` rather than `"CA"`.
 
 > **Note**: **Important:** The API accepts abbreviated codes without returning an error, but the system creates the location group with `groupTotal: 0` because no locations match. There is no validation error to indicate the mismatch. Use the full name exactly as it appears in a location’s `adminArea` field (returned by [`Query for Locations`](./query-locations.md) or [`Get a Location`](./get-location-by-id.md)) to ensure rules evaluate correctly.
 
-##### Status
+### Status
 
 After creation, a `DYNAMIC` group’s `systemStatus` is initially `PENDING` while Apple Ads evaluates the rules. The `STATIC` groups are `VALID` immediately, since membership is an explicit list rather than something to evaluate. Wait for `systemStatus: VALID` before using a `DYNAMIC` group in ad group targeting.
 
-##### Example
+### Example
 
 ```json
 {

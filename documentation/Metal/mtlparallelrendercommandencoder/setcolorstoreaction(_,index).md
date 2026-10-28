@@ -25,7 +25,7 @@ func setColorStoreAction(_ storeAction: MTLStoreAction, index colorAttachmentInd
 - (void) setColorStoreAction:(MTLStoreAction) storeAction atIndex:(NSUInteger) colorAttachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If the store action for the given color attachment was set to [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md) when the parallel render command encoder was created, you need to call this method to specify another store action before you call the [`endEncoding()`](../mtlcommandencoder/endencoding%28%29.md) method.
 

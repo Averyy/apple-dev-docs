@@ -18,7 +18,7 @@ nonisolated
 func matchedTransitionSource(id: some Hashable, in namespace: Namespace.ID) -> some CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier in conjunction with [`navigationTransition(_:)`](../view/navigationtransition%28_%29.md) to provide a source for the transition effect:
 

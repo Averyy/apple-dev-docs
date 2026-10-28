@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the value of the first argument is gr
 static func >= (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `lhs` is greater than or equal to `rhs`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This is the default implementation of the greater-than-or-equal-to operator (`>=`) for any type that conforms to `Comparable`.
 

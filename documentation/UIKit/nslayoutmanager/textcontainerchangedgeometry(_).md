@@ -23,7 +23,7 @@ func textContainerChangedGeometry(_ container: NSTextContainer)
 - (void) textContainerChangedGeometry:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically by other components of the text system; you should rarely need to invoke it directly. Subclasses of `NSTextContainer`, however, must invoke this method any time their size of shape changes (a text container that dynamically adjusts its shape to wrap text around placed graphics, for example, must do so when a graphic is added, moved, or removed).
 

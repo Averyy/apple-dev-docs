@@ -20,7 +20,7 @@ Sets the identifier to be associated with a column when persisting its state wit
 @preconcurrency func customizationID(_ id: String) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
 ```
 
-#### Discussion
+## Discussion
 
 This is required to allow user customization of a specific table column, in addition to the table as a whole being provided a binding to a `TableColumnCustomization`.
 

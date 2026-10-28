@@ -20,7 +20,7 @@ func `break`()
 - (void) breakLock;
 ```
 
-#### Discussion
+## Discussion
 
 This method always succeeds unless the lock has been damaged. If another process has already unlocked or broken the lock, this method has no effect. You should generally use [`unlock()`](./unlock%28%29.md) rather than [`break()`](./break%28%29.md) to relinquish a lock.
 

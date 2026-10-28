@@ -19,7 +19,7 @@ func columnTitle(forProperty property: String!) -> String!
 - (NSString *) columnTitleForProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the custom property.
 

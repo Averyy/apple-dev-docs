@@ -21,7 +21,7 @@ Writes information about a warning to the log.
 func warning(_ message: OSLogMessage)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](../oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

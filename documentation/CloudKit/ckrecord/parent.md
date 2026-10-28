@@ -26,7 +26,7 @@ var parent: CKRecord.Reference? { get set }
 @property (copy, nullable) CKReference * parent;
 ```
 
-#### Discussion
+## Discussion
 
 Use parent references to inform CloudKit about the hierarchy of your records. CloudKit shares the hierarchy when a [`CKShare`](../ckshare.md) includes a referenced record. Add relationships between records as you create them, even if you don’t plan to share them. This allows you to manage the sharing of a hierarchy by only modifying the root record’s [`share`](./share.md) reference.
 

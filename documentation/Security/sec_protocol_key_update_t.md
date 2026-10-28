@@ -23,7 +23,7 @@ typealias sec_protocol_key_update_t = (sec_protocol_metadata_t, @escaping sec_pr
 typedef void (^)(NSObject<OS_sec_protocol_metadata> *, void (^)(void)) sec_protocol_key_update_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when the protocol key MUST be updated.
 

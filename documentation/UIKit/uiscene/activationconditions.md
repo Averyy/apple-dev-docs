@@ -23,7 +23,7 @@ var activationConditions: UISceneActivationConditions { get set }
 @property (nonatomic, strong) UISceneActivationConditions * activationConditions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to tell UIKIt when you want it to activate this scene.
 

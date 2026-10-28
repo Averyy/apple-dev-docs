@@ -23,7 +23,7 @@ var needsInputModeSwitchKey: Bool { get }
 @property (nonatomic, readonly) BOOL needsInputModeSwitchKey;
 ```
 
-#### Discussion
+## Discussion
 
 The input switcher key allows the user to switch between different keyboards. When this property is true, your custom keyboard should provide such a key.
 

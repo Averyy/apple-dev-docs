@@ -19,7 +19,7 @@ var childViewControllerForTouchBar: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForTouchBar;
 ```
 
-#### Discussion
+## Discussion
 
 Override this property to have the system use the [`touchBar`](../uiresponder/touchbar.md) object from a child view controller instead of the current view controller. If [`childViewControllerForTouchBar`](./childviewcontrollerfortouchbar.md) is `nil`, the system uses the current view controller’s [`touchBar`](../uiresponder/touchbar.md) object.
 

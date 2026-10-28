@@ -22,7 +22,7 @@ static let addToReadingList: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeAddToReadingList;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide an [`NSURL`](../../../Foundation/nsurl.md) object whose contents uses the `http` or `https` scheme that points to the page to add.
 

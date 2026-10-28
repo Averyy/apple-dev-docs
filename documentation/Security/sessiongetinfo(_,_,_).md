@@ -20,11 +20,11 @@ func SessionGetInfo(_ session: SecuritySessionId, _ sessionId: UnsafeMutablePoin
 OSStatus SessionGetInfo(SecuritySessionId session, SecuritySessionId *sessionId, SessionAttributeBits *attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sessions API Result Codes](./sessions-api-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can ask about any session whose identifier you know. Use the [`callerSecuritySession`](./callersecuritysession.md) constant to ask about your own session (the one your process is in).
 

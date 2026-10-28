@@ -21,7 +21,7 @@ A mode that multiplies the source image samples with the background image sample
 static var multiply: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Drawing in this mode results in colors that are at least as dark as either of the two contributing sample colors.
 

@@ -22,7 +22,7 @@ func toUInt64() -> UInt64
 - (uint64_t) toUInt64;
 ```
 
-#### Discussion
+## Discussion
 
 Convert a JSValue to a uint64_t.
 

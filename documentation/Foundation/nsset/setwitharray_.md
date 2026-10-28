@@ -21,7 +21,7 @@ Creates and returns a set containing a uniqued collection of the objects contain
 + (instancetype) setWithArray:(NSArray<id> *) array;
 ```
 
-#### Return Value
+## Return Value
 
 A new set containing a uniqued collection of the objects contained in `array`.
 

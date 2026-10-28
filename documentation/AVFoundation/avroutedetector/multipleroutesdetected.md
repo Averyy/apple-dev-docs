@@ -24,7 +24,7 @@ var multipleRoutesDetected: Bool { get }
 @property (readonly) BOOL multipleRoutesDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts a [`AVRouteDetectorMultipleRoutesDetectedDidChangeNotification`](../avroutedetectormultipleroutesdetecteddidchangenotification.md) notification when this property value changes.
 

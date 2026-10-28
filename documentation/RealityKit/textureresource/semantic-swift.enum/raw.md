@@ -20,7 +20,7 @@ Use the texture unmodified.
 case raw
 ```
 
-#### Discussion
+## Discussion
 
 For texture properties that use the `raw` semantic, the number of channels and values is the same as the source image. If the source image contains color space information, RealityKit ignores it. For `raw` textures, each individual pixel contains one floating-point value between `0.0` and `1.0` for each channel in the source image. For example, a grayscale source image results in a texture that contains one value per pixel, and an RGB source image results in three values per pixel.
 

@@ -24,7 +24,7 @@ var markedTextRange: UITextRange? { get }
 @property (nonatomic, readonly, nullable) UITextRange * markedTextRange;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no marked text, the value of the property is `nil`. Marked text is provisionally inserted text that requires user confirmation; it occurs in multistage text input. The current selection, which can be a caret or an extended range, always occurs within the marked text.
 

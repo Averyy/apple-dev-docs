@@ -25,11 +25,11 @@ func CMFormatDescriptionEqual(_ formatDescription: CMFormatDescription?, otherFo
 extern Boolean CMFormatDescriptionEqual(CMFormatDescriptionRef formatDescription, CMFormatDescriptionRef otherFormatDescription);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two descriptions are equal; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This calls `CFEqual` on the provided `CMFormatDescription` objects. In contrast to the Core Foundation call it is `NULL` safe.
 

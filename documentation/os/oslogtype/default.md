@@ -21,7 +21,7 @@ The default log level.
 static let `default`: OSLogType
 ```
 
-#### Discussion
+## Discussion
 
 Logging a message of this type is equivalent to calling the [`os_log`](../os_log.md) function. Use this level to capture information about things that might result in a failure.
 

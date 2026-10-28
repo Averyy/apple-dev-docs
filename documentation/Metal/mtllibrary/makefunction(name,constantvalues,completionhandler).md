@@ -29,7 +29,7 @@ func makeFunction(name: String, constantValues: MTLFunctionConstantValues) async
 - (void) newFunctionWithName:(NSString *) name constantValues:(MTLFunctionConstantValues *) constantValues completionHandler:(void (^)(id<MTLFunction>function, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Function constant values are first looked up by their index, then by their name. Metal ignores any values that don’t correspond to a function constant in the named function without generating errors or warnings.
 

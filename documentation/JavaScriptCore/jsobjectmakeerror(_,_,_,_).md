@@ -24,7 +24,7 @@ func JSObjectMakeError(_ ctx: JSContextRef!, _ argumentCount: Int, _ arguments: 
 JSObjectRefJSObjectMakeError(JSContextRef ctx, size_t argumentCount, JSValueRef const arguments[], JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is an error.
 

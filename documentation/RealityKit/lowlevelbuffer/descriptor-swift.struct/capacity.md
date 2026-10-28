@@ -20,7 +20,7 @@ Length of the buffer in bytes.
 var capacity: Int
 ```
 
-#### Discussion
+## Discussion
 
 Where it is more efficient to do so, returned buffers may have capacity larger than this value.
 

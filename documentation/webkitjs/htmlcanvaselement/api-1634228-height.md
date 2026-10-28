@@ -16,7 +16,7 @@ An integer containing the height of the canvas in CSS pixels.
 attribute unsigned long height;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the `width` or `height` property, even without changing it, clears the canvas to transparent black and resets all context settings to their defaults, including the coordinate system and transformation matrix. If the `height` attribute is not specified in the `<canvas>` tag, the default height is 150 pixels.
 

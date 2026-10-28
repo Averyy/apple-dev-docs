@@ -19,7 +19,7 @@ Generates the resolved color for the specified color, using the text color and c
 func resolvedColor() -> UIColor
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`color`](./color.md) and [`colorTransformer`](./colortransformer.md).
 

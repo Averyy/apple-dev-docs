@@ -24,7 +24,7 @@ func asset(forIdentifier identifier: String) -> PHASEAsset?
 - (PHASEAsset *) assetForIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A framework asset by the destignated name, if the app registers the asset prior. Otherwise, returns `nil`.
 

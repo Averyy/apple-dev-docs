@@ -15,7 +15,7 @@ The orientation of the text.
 extern NSTextLayoutSectionKey NSTextLayoutSectionOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../Foundation/nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](./nslayoutmanager/textlayoutorientation.md) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](./nslayoutmanager/textlayoutorientation/horizontal.md).
 

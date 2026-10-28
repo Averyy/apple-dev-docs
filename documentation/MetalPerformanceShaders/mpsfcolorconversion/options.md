@@ -22,7 +22,7 @@ var options: MPSFColorConversionOptions { get }
 @property (nonatomic, readonly) MPSFColorConversionOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 The options used when creating the object
 

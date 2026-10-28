@@ -23,11 +23,11 @@ func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool
 - (BOOL) canPerformAction:(SEL) action withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the command identified by `action` should be enabled or [`false`](../../Swift/false.md) if it should be disabled. Returning [`true`](../../Swift/true.md) means that your class can handle the command in the current context.
 
-#### Discussion
+## Discussion
 
 This default implementation of this method returns [`true`](../../Swift/true.md) if the responder class implements the requested action and calls the next responder if it doesn’t. Subclasses may override this method to enable menu commands based on the current state; for example, you would enable the Copy command if there’s a selection or disable the Paste command if the pasteboard didn’t contain data with the correct pasteboard representation type. If no responder in the responder chain returns [`true`](../../Swift/true.md), the menu command is disabled. Note that if your class returns [`false`](../../Swift/false.md) for a command, another responder further up the responder chain may still return [`true`](../../Swift/true.md), enabling the command.
 

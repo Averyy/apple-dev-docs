@@ -23,7 +23,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 You set the duration value when creating the animator and cannot change it later. Animations added while the animator is in the inactive state are run for the specified duration. Animations added later run only for the remaining time, which is determined by the formula `(1.0 - fractionComplete) * duration`.
 

@@ -20,11 +20,11 @@ Adjusts a rectangle by the given edge insets.
 static CGRect UIEdgeInsetsInsetRect(CGRect rect, UIEdgeInsets insets);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that is adjusted by the `UIEdgeInsets` structure passed in insets.
 
-#### Discussion
+## Discussion
 
 This inline function increments the origin of `rect` and decrements the size of `rect` by applying the appropriate member values of the `UIEdgeInsets` structure.
 

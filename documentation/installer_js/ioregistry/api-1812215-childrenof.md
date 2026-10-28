@@ -11,7 +11,7 @@ Returns the children of the given IOKit object.
 childrenOf(objectName)
 ```
 
-#### Return Value
+## Return Value
 
 An array of IOKit object dictionaries.
 

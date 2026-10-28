@@ -24,7 +24,7 @@ var kAudioUnitProperty_RenderQuality: AudioUnitPropertyID { get }
 kAudioUnitProperty_RenderQuality
 ```
 
-#### Discussion
+## Discussion
 
 A value in the range 0 through 127 that indicates an audio unit’s rendering quality. You should set this property to its maximum value unless doing so results in excessive CPU usage.
 

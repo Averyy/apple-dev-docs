@@ -19,11 +19,11 @@ class var main: NSScreen? { get }
 @property (class, strong, readonly, nullable) NSScreen * mainScreen;
 ```
 
-#### Return Value
+## Return Value
 
 The main screen object.
 
-#### Discussion
+## Discussion
 
 The main screen is not necessarily the same screen that contains the menu bar or has its origin at `(0, 0)`. The main screen refers to the screen containing the window that is currently receiving keyboard events. It is the main screen because it is the one with which the user is most likely interacting.
 

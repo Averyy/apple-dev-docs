@@ -23,7 +23,7 @@ var hasOptionsPage: Bool { get }
 @property (nonatomic, readonly) BOOL hasOptionsPage;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the extension includes a dedicated options page where users can customize settings. The app should provide access to this page through a user interface element, which can be accessed via [`optionsPageURL`](../wkwebextensioncontext/optionspageurl.md) on an extension context.
 

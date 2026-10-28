@@ -23,11 +23,11 @@ func hasInjectedContent(for url: URL) -> Bool
 - (BOOL) hasInjectedContentForURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the extension has content that can be injected by matching the URL against the extension’s requested match patterns.
 
-#### Discussion
+## Discussion
 
 The extension context will still need to be loaded and have granted website permissions for its content to actually be injected.
 

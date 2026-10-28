@@ -25,11 +25,11 @@ protocol EntityQuery : DynamicOptionsProvider, PersistentlyIdentifiable, Sendabl
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 An entity query defines how Apple Intelligence, Siri, and the Shortcuts app retrieve instances of a specific [`AppEntity`](./appentity.md) type, and implements the lookup logic. To let Siri and Shortcuts retrieve `AppEntity` instances, create a type that conforms to [`EntityQuery`](./entityquery.md).
 
-##### Resolve entities by identifier
+### Resolve entities by identifier
 
 In some scenarios, Apple Intelligence already knows exactly which entity the person is referring to, and needs to retrieve the actual entity instance given its unique identifier.
 

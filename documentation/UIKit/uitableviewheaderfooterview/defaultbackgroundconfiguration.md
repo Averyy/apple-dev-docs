@@ -19,7 +19,7 @@ Retrieves a background configuration with system default values.
 - (UIBackgroundConfiguration *) defaultBackgroundConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A default background configuration. The system determines default values for the configuration according to the section where the view appears.
 

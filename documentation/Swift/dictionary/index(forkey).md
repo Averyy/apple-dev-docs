@@ -23,11 +23,11 @@ func index(forKey key: Key) -> Dictionary<Key, Value>.Index?
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The index for `key` and its associated value if `key` is in the dictionary; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 If the given key is found in the dictionary, this method returns an index into the dictionary that corresponds with the key-value pair.
 

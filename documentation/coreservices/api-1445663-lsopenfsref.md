@@ -19,11 +19,11 @@ func LSOpenFSRef(_ inRef: UnsafePointer<FSRef>!, _ outLaunchedRef: UnsafeMutable
 OSStatus LSOpenFSRef(const FSRef *inRef, FSRef *outLaunchedRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The designated item is opened in the default manner, as if it had been opened with the `LSOpenFromRefSpec` function with a launch specification specifying the launch flag `kLSLaunchDefaults`: that is, asynchronously, starting the Classic emulation environment if necessary, and with the remaining launch parameters taken from the application’s information property list. For greater control, call `LSOpenFromRefSpec` directly. See [`LSLaunchFlags`](./lslaunchflags.md) for more information about launch flags.
 
@@ -35,7 +35,7 @@ The application is launched or activated, as required, and sent an appropriate A
 
 As of macOS 10.4 and later, [`LSOpenItemsWithRole(_:_:_:_:_:_:_:)`](./api-1449783-lsopenitemswithrole.md) is the preferred way of opening an item.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

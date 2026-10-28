@@ -19,11 +19,11 @@ func targetContentOffset(forProposedContentOffset proposedContentOffset: NSPoint
 - (NSPoint) targetContentOffsetForProposedContentOffset:(NSPoint) proposedContentOffset;
 ```
 
-#### Return Value
+## Return Value
 
 The offset value that you want to use for the content.
 
-#### Discussion
+## Discussion
 
 During layout updates, or when transitioning between layouts, the collection view calls this method to give you the opportunity to tweak the position of the collection view’s content at the end of animations. The default implementation of this method returns the value in the `proposedContentOffset` parameter. Subclasses can override it and return an offset value that positions content in a way that is more optimal for the custom layout.
 

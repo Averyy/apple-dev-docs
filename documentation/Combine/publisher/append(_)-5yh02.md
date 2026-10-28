@@ -21,11 +21,11 @@ Appends the output of this publisher with the elements emitted by the given publ
 func append<P>(_ publisher: P) -> Publishers.Concatenate<Self, P> where P : Publisher, Self.Failure == P.Failure, Self.Output == P.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that appends the appending publisher’s elements after this publisher’s elements.
 
-#### Discussion
+## Discussion
 
 Use [`append(_:)`](./append%28_%29-5yh02.md) to append the output of one publisher to another. The [`append(_:)`](./append%28_%29-5yh02.md) operator produces no elements until this publisher finishes. It then produces this publisher’s elements, followed by the given publisher’s elements. If this publisher fails with an error, the given publishers elements aren’t published.
 

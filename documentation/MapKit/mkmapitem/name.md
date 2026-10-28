@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (nonatomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the name associated with the location. For example, if there’s a business at the specified location, use this property to specify the name of the business.
 

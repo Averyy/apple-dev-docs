@@ -25,7 +25,7 @@ case msgPropertyChanged
 kMIDIMsgPropertyChanged
 ```
 
-#### Discussion
+## Discussion
 
 This type’s data is [`MIDIObjectPropertyChangeNotification`](../midiobjectpropertychangenotification.md).
 

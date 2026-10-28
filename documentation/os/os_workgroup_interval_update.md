@@ -21,11 +21,11 @@ Schedules a new deadline for workgroup threads that run at regular intervals.
 extern int os_workgroup_interval_update(os_workgroup_interval_t wg, uint64_t deadline, os_workgroup_interval_data_t data);
 ```
 
-#### Return Value
+## Return Value
 
 A value of `0` on success, or a nonzero error code indicating why the function failed. Common error codes include `EINVAL` or `EPERM`. For example, this method returns `EINVAL` if you didn’t start the workgroup.
 
-#### Discussion
+## Discussion
 
 Call this function between calls to the [`os_workgroup_interval_start`](./os_workgroup_interval_start.md) and [`os_workgroup_interval_finish`](./os_workgroup_interval_finish.md) functions. Typically, you call it at regular intervals to set a new deadline for any ongoing work. For example, after delivering content for the current video frame, call this function to set the deadline for finishing the next video frame. Call this function only once for each new interval. If your workgroup contains multiple threads, designate one thread to start, stop, and update the group.
 

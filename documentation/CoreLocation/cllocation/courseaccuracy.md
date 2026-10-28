@@ -25,7 +25,7 @@ var courseAccuracy: CLLocationDirectionAccuracy { get }
 @property (nonatomic, readonly) CLLocationDirectionAccuracy courseAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains `0` or a positive number, the value in the course property is plus or minus the specified number degrees, modulo 360. When this property contains a negative number, the value in the course property is invalid.
 

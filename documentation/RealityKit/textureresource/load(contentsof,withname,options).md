@@ -21,11 +21,11 @@ Synchronously loads a texture resource from a URL with options.
 @preconcurrency static func load(contentsOf url: URL, withName resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
 ```
 
-#### Return Value
+## Return Value
 
 The loaded resource.
 
-#### Discussion
+## Discussion
 
 Loading a [`TextureResource`](../textureresource.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](./init%28named,in%29.md) for an example that demonstrates how to safely load content.
 

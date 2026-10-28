@@ -22,7 +22,7 @@ var mediaType: MLMediaType { get }
 @property (assign, readonly) MLMediaType mediaType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible media types, see [`MLMediaType`](../mlmediatype.md).
 

@@ -20,7 +20,7 @@ A component that provides access to the current weights associated with all blen
 struct BlendShapeWeightsComponent
 ```
 
-#### Overview
+## Overview
 
 You can access the weights associated with an entity’s blend shapes by using the [`weightSet`](./blendshapeweightscomponent/weightset.md) variable after an initialized `BlendShapeWeightsComponent` is added to an entity.
 

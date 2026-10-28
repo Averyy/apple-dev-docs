@@ -20,7 +20,7 @@ The language, represented as a BCP-47 identifier, for which this asset pack is l
 @property (copy, readonly, nullable) NSString * language;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the asset pack isn’t localized and therefore isn’t language-specific.
 

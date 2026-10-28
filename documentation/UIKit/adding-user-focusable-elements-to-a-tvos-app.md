@@ -5,11 +5,11 @@
 
 Create intuitive and easily manipulated user-interactive controls for your tvOS app.
 
-#### Overview
+## Overview
 
 On Apple TV, people use a remote or game controller to navigate through interface elements like movie posters, apps, or buttons, highlighting each item as they come to it. The highlighted item is said to be *focused* or *in focus*. It appears elevated or otherwise distinct from other items. An item is considered focused when the user has highlighted it, but not selected it. The user moves focus by navigating through different UI items, which triggers a focus update.
 
-##### Add focusable items to the view
+### Add focusable items to the view
 
 In Xcode, search the Library pane for the item you want to add to your app, and drag it to your app’s storyboard. Several UIKit elements are focusable by default, including buttons ([`UIButton`](./uibutton.md)), text fields ([`UITextField`](./uitextfield.md)), and table cells ([`UITableViewCell`](./uitableviewcell.md)). The top-left item is in focus when your app launches. (In right-to-left languages, the top-right item is initially in focus.) You don’t need to do anything to UIKit elements that are focusable by default. However, you can add SceneKit and SpriteKit nodes as focusable elements. To make a SceneKit or SpriteKit node focusable, set the [`focusBehavior`](../SpriteKit/sknode/focusbehavior.md) property of the node to `focusable`, as shown below.
 
@@ -17,7 +17,7 @@ In Xcode, search the Library pane for the item you want to add to your app, and 
 node.focusBehavior = .focusable
 ```
 
-##### Design your layout in a grid pattern
+### Design your layout in a grid pattern
 
 The easiest way to ensure that focus moves between focusable items is to arrange the items in a grid pattern. Swiping on the remote triggers the focus engine—the system that controls focus and movement—to find all of the focusable items in the direction of the swipe. The first item found then becomes the newly focused item. The following image shows the items found by the focus engine when the user swipes right, and the resulting focused item.
 

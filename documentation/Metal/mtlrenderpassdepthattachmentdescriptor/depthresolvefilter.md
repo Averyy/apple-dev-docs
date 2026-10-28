@@ -24,7 +24,7 @@ var depthResolveFilter: MTLMultisampleDepthResolveFilter { get set }
 @property (nonatomic) MTLMultisampleDepthResolveFilter depthResolveFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLMultisampleDepthResolveFilter.sample0`](../mtlmultisampledepthresolvefilter/sample0.md).
 

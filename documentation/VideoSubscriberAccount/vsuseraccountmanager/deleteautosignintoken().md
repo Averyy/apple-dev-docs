@@ -23,7 +23,7 @@ func deleteAutoSignInToken() async throws
 
 - [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 This method sets the contents of [`value`](./autosignintoken-swift.struct/value.md) to `nil` for the current [`autoSignInToken`](./autosignintoken-swift.property.md).
 

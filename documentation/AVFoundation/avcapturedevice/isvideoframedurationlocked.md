@@ -23,7 +23,7 @@ var isVideoFrameDurationLocked: Bool { get }
 @property (nonatomic, readonly, getter=isVideoFrameDurationLocked) BOOL videoFrameDurationLocked;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `true` when an [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) associated with the device has its [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) property set to something other than `kCMTimeInvalid`. See [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) for more information on video frame duration locking.
 

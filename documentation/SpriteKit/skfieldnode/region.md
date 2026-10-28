@@ -25,7 +25,7 @@ var region: SKRegion? { get set }
 @property (nonatomic, retain, nullable) SKRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 A field node applies its effect to all physics bodies that are partially or completely inside its region. The default value is a region of infinite size.
 

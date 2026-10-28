@@ -15,7 +15,7 @@ Communicate with MIDI devices such as hardware keyboards and synthesizers.
 - visionOS 1.0+
 - watchOS 8.0+
 
-#### Overview
+## Overview
 
 The Core MIDI framework provides APIs to communicate with MIDI (Musical Instrument Digital Interface) devices, including hardware keyboards and synthesizers. Connect from an iOS device using the dock connector or a network. For more information about using the dock connector, see the [MFi Program](https://developer.apple.com/programs/mfi/).
 

@@ -5,7 +5,7 @@
 
 Atoms that defines relationships between tracks.
 
-#### Overview
+## Overview
 
 Track reference atoms define relationships between tracks. Track reference atoms allow one track to specify how it is related to other tracks. For example, if a movie has three video tracks and three sound tracks, track references allow you to identify the related sound and video tracks. Track reference atoms have an atom type value of `'tref'`.
 

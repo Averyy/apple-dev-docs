@@ -28,7 +28,7 @@ func fetchAvailableRoomTypes() async throws -> [EKVirtualConferenceRoomTypeDescr
 - (void) fetchAvailableRoomTypesWithCompletionHandler:(void (^)(NSArray<EKVirtualConferenceRoomTypeDescriptor *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your virtual conference provider implements this method to provide the list of rooms where users schedule events using your service. Create an instance of [`EKVirtualConferenceRoomTypeDescriptor`](../ekvirtualconferenceroomtypedescriptor.md) for each room that’s available for users to schedule events in.
 

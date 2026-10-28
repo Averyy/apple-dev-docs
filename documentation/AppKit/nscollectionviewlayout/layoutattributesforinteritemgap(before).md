@@ -19,11 +19,11 @@ func layoutAttributesForInterItemGap(before indexPath: IndexPath) -> NSCollectio
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForInterItemGapBeforeIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the layout information to apply to the inter-item gap, or `nil` if no attributes are available.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns `nil`. Subclasses can override this method to provide layout attributes for inter-item gaps. In your implementation, use the specified index path to compute the location of the gap in collection view’s content. If the gap represents a valid location, use the [`init(forInterItemGapBefore:)`](../nscollectionviewlayoutattributes/init%28forinteritemgapbefore%29.md) class method of [`NSCollectionViewLayoutAttributes`](../nscollectionviewlayoutattributes.md) to create a new layout attributes object and set the [`frame`](../nscollectionviewlayoutattributes/frame.md) property to the rectangle you computed.
 

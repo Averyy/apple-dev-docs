@@ -15,7 +15,7 @@ Returns the type identifier for the CFXMLParser opaque type.
 extern CFTypeID CFXMLParserGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFXMLParser opaque type.
 

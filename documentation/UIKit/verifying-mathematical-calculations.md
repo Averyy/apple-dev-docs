@@ -5,11 +5,11 @@
 
 Ensure the accuracy of your math operations in 64-bit architecture.
 
-#### Overview
+## Overview
 
 Math operations are affected by numbers in the 64-bit runtime. Review the accuracy of the results of any calculations your app performs. Check signed value results to ensure that they’re correct for their operation and operands. Verify that your bit mask code doesn’t make assumptions about type size.
 
-##### Verify the accuracy of signed math operations
+### Verify the accuracy of signed math operations
 
 C and similar languages use a set of *sign extension rules* to determine whether to treat the top bit in an integer as a sign bit when the value is assigned to a variable of larger width. The sign extension rules are as follows:
 
@@ -47,7 +47,7 @@ There are two reasons for this result. First, when the left-shift operator `<<` 
 
 The solution is to cast the initial value to a `long` integer before the shift. The `short` integer is promoted only once — this time, to a 64-bit type (when compiled as a 64-bit executable).
 
-##### Check your code for assumptions about type size
+### Check your code for assumptions about type size
 
 When working with bit masks with 64-bit values, follow these tips to avoid inadvertently getting 32-bit values.
 

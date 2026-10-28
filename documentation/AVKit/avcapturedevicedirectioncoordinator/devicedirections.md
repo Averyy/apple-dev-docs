@@ -25,7 +25,7 @@ var deviceDirections: AVCaptureDeviceDirectionMap { get }
 
 - [Choosing a camera by the direction it faces](../choosing-a-camera-by-the-direction-it-faces.md)
 
-#### Discussion
+## Discussion
 
 The map groups the device types you passed at initialization by the direction they face. One array holds the devices that face the same direction as the view, and the other holds the devices that face away from it. Reading this property gives you the state at that moment. The change handler reports later changes.
 

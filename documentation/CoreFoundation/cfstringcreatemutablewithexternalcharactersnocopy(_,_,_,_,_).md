@@ -25,11 +25,11 @@ func CFStringCreateMutableWithExternalCharactersNoCopy(_ alloc: CFAllocator!, _ 
 extern CFMutableStringRefCFStringCreateMutableWithExternalCharactersNoCopy(CFAllocatorRef alloc, UniChar *chars, CFIndex numChars, CFIndex capacity, CFAllocatorRef externalCharactersAllocator);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable string, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function permits you to create a `CFMutableString` object whose backing store is an external Unicode character buffer—that is, a buffer that you control (or can control) entirely. This function allows you to take advantage of the features of `CFString`, particularly the `CFMutableString` functions that add and modify character data. But at the same time you can directly add, delete, modify, and examine the characters in the buffer. You can even replace the buffer entirely. If, however, you directly modify or replace the character buffer, you should inform the `CFString` object of this change with the [`CFStringSetExternalCharactersNoCopy(_:_:_:_:)`](./cfstringsetexternalcharactersnocopy%28_,_,_,_%29.md) function.
 

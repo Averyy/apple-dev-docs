@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.set_default_device
 
-**set_default_device(*device: Device | DeviceType*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
-: Set the default device.
+```python
+set_default_device(device: Device | DeviceType) → None
+```
+
+Set the default device.

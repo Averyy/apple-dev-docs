@@ -25,7 +25,7 @@ func SCNVector3ToGLKVector3(_ vector: SCNVector3) -> GLKVector3
 static GLKVector3 SCNVector3ToGLKVector3(SCNVector3 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A three-element GLKit vector structure representing the same vector as the input parameter.
 

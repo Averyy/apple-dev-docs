@@ -5,7 +5,7 @@
 
 Define how Exposure Notifications work for a region by assigning server-based key-value pairs.
 
-#### Overview
+## Overview
 
 The configuration fields listed below define the behavior for Exposure Notifications features such as exposure matching, Exposure Risk Value (ERV) calculation, and messaging for regions managed by a Public Health Authority (PHA). These values can be changed by using the server-to-server API or by contacting Apple to request a change. PHAs that only support Exposure Notifications Express can also change these values by logging into Apple Business Register (ABR).
 
@@ -19,7 +19,7 @@ For keys marked Required, a PHA must configure these values for a region before 
 
 Using keys marked Localizable, you can provide different values for different languages by appending an underscore followed by the ISO two-letter language code, then another underscore, and then the ISO two-letter country code for the region. For example, to provide a localized value of `agencyDisplayName` for French-Canadians, use the key `agencyDisplayName_FR_CA`. When using the server-to-server API, you can provide multiple localized versions of the same key in the same request. In ABR, localizable fields provide a button that allows you to enter additional localized values.
 
-##### Specify API Version
+### Specify API Version
 
 Exposure Notifications’ APIs are available in two versions. Version 1 requires a client app to function, while Version 2 — available on iOS 13.7 and later —  works both with a client app or without an app by using Exposure Notifications Express.
 
@@ -27,7 +27,7 @@ Exposure Notifications’ APIs are available in two versions. Version 1 requires
 
 > **Note**:  Keys you use to display information to users, customize the UI, adjust exposure calculations, and configure test verification servers are only used by Exposure Notifications Express, including any field that takes a color, image, or URL, or that includes `header`, `message`, or `text` as part of its name.
 
-##### Set Region Information
+### Set Region Information
 
 A PHA can manage more than one region and can configure each region with different values. These values allow you to change region-specific information:
 
@@ -95,7 +95,7 @@ A string that contains the App Store bundle identifier of the app for the given 
 
 A Boolean that indicates whether this is a test region.
 
-##### Set Signing Key
+### Set Signing Key
 
 These keys define the security keys used to authenticate requests and sign key archives:
 
@@ -107,7 +107,7 @@ A string that contains the public key used to verify the Temporary Exposure Key 
 
 A string that contains the version of the public key from the PHA.
 
-##### Configure Duration Weights
+### Configure Duration Weights
 
 These keys define the attenuation weights that Exposure Notifications Express uses to compute the ERV:
 
@@ -139,7 +139,7 @@ An unsigned 8-bit integer that contains the attenuation threshold for near to me
 
 An unsigned 8-bit integer that contains the attenuation threshold for medium to far.
 
-##### Calculate Exposure Risk Values
+### Calculate Exposure Risk Values
 
 These keys define weights and thresholds that Exposure Notifications Express uses to compute the ERV:
 
@@ -175,7 +175,7 @@ An unsigned 8-bit integer that maps the None value to an existing report type.
 
 An unsigned 8-bit integer that contains the threshold in days that EN considers history valid. For example, `10` means only the past 10 days of history is valid.
 
-##### Set Exposure Classifications
+### Set Exposure Classifications
 
 These keys define values that set the calculation threshold for customizable exposure classifications in Exposure Notifications Express. A PHA can define up to four classifications. If a PHA creates more than one classification, they will be checked in order, only moving on to the next classification if the threshold is not met.
 
@@ -229,7 +229,7 @@ A 32-bit integer that contains the per day maximum threshold in ERV from when th
 
 A 32-bit integer that contains the threshold in weighted duration-at-attenuation when the OS raises a notification.
 
-##### Set Exposure Revoked Notifications
+### Set Exposure Revoked Notifications
 
 These keys define values that set text presented to the user by Exposure Notifications Express upon revocation of an exposure diagnosis:
 
@@ -249,7 +249,7 @@ A string that contains body text presented to the user when navigating to their 
 
 A URL to the PHA’s website for further guidance when the user navigates to their latest exposure details in the Settings app. **Required**.
 
-##### Configure Key Server Information
+### Configure Key Server Information
 
 These keys define values the system uses to interact with your key server.
 
@@ -269,7 +269,7 @@ An unsigned 8-bit integer that contains how often the PHA expects to update TEK 
 
 A URL that contains the agency’s upload key server. **Required**.
 
-##### Configure Test Verification Server Information
+### Configure Test Verification Server Information
 
 These keys define values used to verify a positive diagnosis before uploading key files to the key server when using Exposure Notifications Express:
 

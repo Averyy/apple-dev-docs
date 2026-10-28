@@ -27,7 +27,7 @@ optional func resolveGoalValue(for intent: INStartWorkoutIntent) async -> INDoub
 - (void) resolveGoalValueForStartWorkout:(INStartWorkoutIntent *) intent withCompletion:(void (^)(INDoubleResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the numerical goal for the user’s workout. Use it to validate the goal supplied by the user. If you don’t implement this method, SiriKit assumes that you’re able to start the workout with the specified goal.
 

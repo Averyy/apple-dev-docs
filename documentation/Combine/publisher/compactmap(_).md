@@ -21,11 +21,11 @@ Calls a closure with each received element and publishes any returned optional t
 func compactMap<T>(_ transform: @escaping (Self.Output) -> T?) -> Publishers.CompactMap<Self, T>
 ```
 
-#### Return Value
+## Return Value
 
 Any non-`nil` optional results of the calling the supplied closure.
 
-#### Discussion
+## Discussion
 
 Combine’s [`compactMap(_:)`](./compactmap%28_%29.md) operator performs a function similar to that of [`compactMap(_:)`](../../Swift/sequence/compactmap%28_%29.md) in the Swift standard library: the [`compactMap(_:)`](./compactmap%28_%29.md) operator in Combine removes `nil` elements in a publisher’s stream and republishes non-`nil` elements to the downstream subscriber.
 

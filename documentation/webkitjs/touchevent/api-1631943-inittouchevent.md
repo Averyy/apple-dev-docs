@@ -35,7 +35,7 @@ void initTouchEvent(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to programmatically create a `TouchEvent` object.
 

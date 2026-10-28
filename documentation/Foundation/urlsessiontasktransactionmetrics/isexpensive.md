@@ -25,7 +25,7 @@ var isExpensive: Bool { get }
 @property (readonly, getter=isExpensive) BOOL expensive;
 ```
 
-#### Discussion
+## Discussion
 
 The system considers an interface expensive if it’s more costly or consumes more power, such as 3G or LTE as compared to ethernet or Wi-Fi. You permit or deny use of expensive interfaces with the [`allowsExpensiveNetworkAccess`](../urlsessionconfiguration/allowsexpensivenetworkaccess.md) property on [`URLSessionConfiguration`](../urlsessionconfiguration.md) or [`allowsExpensiveNetworkAccess`](../urlrequest/allowsexpensivenetworkaccess.md) on [`URLRequest`](../urlrequest.md).
 

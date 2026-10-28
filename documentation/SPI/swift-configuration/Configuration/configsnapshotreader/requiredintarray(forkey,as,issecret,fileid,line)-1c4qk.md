@@ -24,11 +24,11 @@ Synchronously gets a required array of config values for the given config key, c
 func requiredIntArray<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) throws -> [Value] where Value : RawRepresentable, Value.RawValue == Int
 ```
 
-#### Return Value
+## Return Value
 
 The config array converted to the expected type.
 
-#### Discussion
+## Discussion
 
 Use this method when a integer-convertible array configuration value is mandatory for your application to function. The method throws an error if the value is missing or can’t be converted to the expected type.
 

@@ -15,7 +15,7 @@ Kernel debugger nub.
 class IOKernelDebugger : IOService
 ```
 
-#### Overview
+## Overview
 
 This object interfaces with the KDP (kernel debugger protocol) module and dispatches KDP requests to its target (provider). The target, designated as the debugger device, must implement a pair of handler functions that are called to handle KDP transmit and receive requests during a debugging session. Only a single IOKernelDebugger in the system can be active at a given time. The active IOKernelDebugger is the one that has an IOKDP object attached as a client.
 

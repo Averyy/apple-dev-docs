@@ -10,7 +10,7 @@ Learn about the Service Management API with a GUI-less agent app.
 - macOS 13.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to structure your app package installer and use the new Service Management APIs. The sample project places the helper executable’s `launchd` property lists in the helper executable’s bundle, rather than relying on shared locations like `/Library/LaunchDaemons`. The advantages of this approach include containing your `LaunchDaemon` and `LaunchAgent` property lists in a fully codesigned app bundle that neither the system nor a third party can modify without breaking the code signature. Users can also see which app is providing the launch daemons or launch agents by choosing System Settings > General > Login Items.
 
@@ -56,7 +56,7 @@ let service = SMAppService.agent(plistName: "com.xpc.example.agent.plist")
 print("\(service) has status \(service.status)")
 ```
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To set the Team ID for the sample app and package targets, follow these steps:
 
@@ -66,7 +66,7 @@ To set the Team ID for the sample app and package targets, follow these steps:
 4. Choose your team from the Team pop-up menu.
 5. Select the `SMAppServiceSamplePackage` from the project editor and repeat step 4.
 
-##### Build the sample app service
+### Build the sample app service
 
 1. Open Terminal and change to the directory into which you downloaded the `UpdatingYourAppPackageInstallerToUseTheNewServiceManagementAPI` source code.
 2. Run the command `xcodebuild -target SMAppServiceSamplePackage`.
@@ -75,13 +75,13 @@ Xcode builds the `SMAppServiceSamplePackage` installer package, and the process 
 
 > ❗ **Important**: When building your own projects, follow the packaging steps in the `generatePackage.zsh` script to generate a correctly configured installer package.
 
-##### Install the login item and launch agent
+### Install the login item and launch agent
 
 1. In Terminal, navigate to the `build/Release` directory using the command `cd build/Release`.
 2. Open the build directory in Finder with the command `open .`.
 3. The Finder window contains all the products that the Xcode build process creates, including a package installer named `SMAppServiceSample`. Double-click the installer icon to run it, and follow the instructions to approve the installation of the `SMAppServiceSampleCode` login item and its supporting `SampleLaunchAgent` helper executable.
 
-##### Run the sample launch agent
+### Run the sample launch agent
 
 The installer adds a new login item in System Settings and installs the sample launch agent `SampleLaunchAgent` in the directory `/Library/Application Support/YOURDEVELOPERNAME`. Run the `SampleLaunchAgent` executable from the Terminal by invoking the command line app inside the app bundle with an additional command argument:
 
@@ -117,7 +117,7 @@ Running the app before registering the service, or after unregistering the servi
 Unable to create xpc_session <OS_xpc_rich_error: Can Retry: 0. Description:"Underlying connection was invalidated. Reason: failed at lookup with error 3 - No such process">
 ```
 
-##### Uninstall the login item and launch agent
+### Uninstall the login item and launch agent
 
 To uninstall the sample app’s login item from System Settings, as well as the `SampleLaunchAgent`, use the following command:
 

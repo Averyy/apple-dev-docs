@@ -16,7 +16,7 @@ Starts AR processing for the session with the specified configuration.
 - (void) runWithConfiguration:(ARConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 The session tracks device motion, captures and processes scene imagery from the device camera, and coordinates with your [`delegate`](./delegate.md) object or [`ARSCNView`](../arscnview.md) or [`ARSKView`](../arskview.md) view only when running.
 

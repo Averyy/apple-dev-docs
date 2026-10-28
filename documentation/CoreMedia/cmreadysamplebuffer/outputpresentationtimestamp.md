@@ -21,7 +21,7 @@ The output presentation timestamp of the sample buffer.
 var outputPresentationTimeStamp: CMTime { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the time at which the decoded, trimmed, stretched and possibly reversed samples should commence being presented. If this property has been set explicitly, the same value is returned.
 

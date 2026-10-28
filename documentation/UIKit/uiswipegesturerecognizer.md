@@ -28,7 +28,7 @@ class UISwipeGestureRecognizer
 
 - [Handling swipe gestures](./handling-swipe-gestures.md)
 
-#### Overview
+## Overview
 
 [`UISwipeGestureRecognizer`](./uiswipegesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).` `
 

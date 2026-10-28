@@ -19,11 +19,11 @@ Creates the default configuration you use to style a cell in a list.
 + (instancetype) cellConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in a list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a cell. When you apply this configuration to a cell, the cell displays one label, which resizes automatically based on the length of the text you provide and the device’s Dynamic Type and accessibility settings.
 

@@ -17,15 +17,15 @@ Creates a font object from an Apple Type Services (ATS) font.
 extern CGFontRefCGFontCreateWithPlatformFont(void *platformFontReference);
 ```
 
-#### Return Value
+## Return Value
 
 The font object, or `NULL` if the platform font could not be located. In Objective-C, you’re responsible for releasing this object using [`CGFontRelease`](./cgfontrelease.md).
 
-#### Discussion
+## Discussion
 
 Before drawing text in a Core Graphics context, you must set the font in the current graphics state. For ATS Fonts, call this function to create a font, and pass it to [`setFont(_:)`](./cgcontext/setfont%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated because it takes a pointer to an `ATSFontRef` object—itself deprecated—and is used almost solely by QuickDraw-based applications. There’s no direct one-to-one replacement for the function. Clients using ATSUI and QuickDraw should move to Core Text and Core Graphics instead.
 

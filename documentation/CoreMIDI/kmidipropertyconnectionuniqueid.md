@@ -23,7 +23,7 @@ let kMIDIPropertyConnectionUniqueID: CFString
 extern CFStringRef const kMIDIPropertyConnectionUniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 The value provided may be an integer. To indicate that a driver connects to multiple external objects, pass the array of big-endian `SInt32` values as a [`CFData`](../CoreFoundation/cfdata.md) object.
 

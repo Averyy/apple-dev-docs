@@ -26,11 +26,11 @@ func AUGraphNodeInfo(_ inGraph: AUGraph, _ inNode: AUNode, _ outDescription: Uns
 extern OSStatus AUGraphNodeInfo(AUGraph inGraph, AUNode inNode, AudioComponentDescription *outDescription, AudioUnit*outAudioUnit);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 You can pass `NULL` for any output parameter whose value you don’t care about.
 

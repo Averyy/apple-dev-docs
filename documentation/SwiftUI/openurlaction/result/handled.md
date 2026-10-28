@@ -21,7 +21,7 @@ The handler opened the URL.
 static let handled: OpenURLAction.Result
 ```
 
-#### Discussion
+## Discussion
 
 The action invokes its completion handler with `true` when your handler returns this value.
 

@@ -26,11 +26,11 @@ optional func browserViewController(_ browserViewController: MCBrowserViewContro
 - (BOOL) browserViewController:(MCBrowserViewController *) browserViewController shouldPresentNearbyPeer:(MCPeerID *) peerID withDiscoveryInfo:(NSDictionary<NSString *,NSString *> *) info;
 ```
 
-#### Return Value
+## Return Value
 
 This delegate method should return [`true`](../../Swift/true.md) if the newly discovered peer should be shown in the user interface, or [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If this method is not provided, all peers are shown.
 

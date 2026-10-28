@@ -24,11 +24,11 @@ class func localizedString(forKey key: String) -> String
 + (NSString *) localizedStringForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string containing the contact property name.
 
-#### Discussion
+## Discussion
 
 This method returns a localized string for a contact property key. For example, the value of a Canadian `CNContactPostalAddressesKey` field would be “Postal Code”, while the value of a French one would be “Code Postal”.
 

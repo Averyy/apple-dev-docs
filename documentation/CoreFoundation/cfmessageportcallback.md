@@ -25,11 +25,11 @@ typealias CFMessagePortCallBack = (CFMessagePort?, Int32, CFData?, UnsafeMutable
 typedef const struct __CFData *(*)(struct __CFMessagePort *, int, const struct __CFData *, void *) CFMessagePortCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 Data to send back to the sender of the message. The system releases the returned CFData object. Return `NULL` if you want an empty reply returned to the sender.
 
-#### Discussion
+## Discussion
 
 If you want the message data to persist beyond this callback, you must explicitly create a copy of `data` rather than merely retain it; the contents of `data` will be deallocated after the callback exits.
 

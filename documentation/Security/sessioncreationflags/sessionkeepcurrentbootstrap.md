@@ -20,7 +20,7 @@ static var sessionKeepCurrentBootstrap: SessionCreationFlags { get }
 sessionKeepCurrentBootstrap
 ```
 
-#### Discussion
+## Discussion
 
 If you create a subset port on your own, you can force
 

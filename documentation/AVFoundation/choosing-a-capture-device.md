@@ -5,13 +5,13 @@
 
 Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
 
-#### Overview
+## Overview
 
 Devices offer many options for capturing photos and video, including front- and back-facing cameras, dual cameras, and the TrueDepth camera. Choosing the appropriate camera automatically or offering a user interface for camera selection is an important part of developing any app with camera features.
 
 AVFoundation offers two main paths to selecting a camera device: the [`default(_:for:position:)`](./avcapturedevice/default%28_,for,position%29.md) method and the [`AVCaptureDevice.DiscoverySession`](./avcapturedevice/discoverysession.md) class.
 
-##### Quickly choose a default device
+### Quickly choose a default device
 
 If you know exactly what kind of capture devices you’re looking for, use one of the [`AVCaptureDevice`](./avcapturedevice.md) convenience methods to select a default device. For example, the code below selects the best available back-facing camera: either the dual camera on supported devices, or the single (wide-angle) camera on single-camera devices.
 
@@ -27,7 +27,7 @@ if let device = AVCaptureDevice.default(.builtInDualCamera,
 }
 ```
 
-##### Sort and filter devices with a discovery session
+### Sort and filter devices with a discovery session
 
 To see the entire set of devices matching certain criteria so that you can use your own logic to choose one, use the [`AVCaptureDevice.DiscoverySession`](./avcapturedevice/discoverysession.md) class. First, create a discovery session for the kinds of devices you need:
 

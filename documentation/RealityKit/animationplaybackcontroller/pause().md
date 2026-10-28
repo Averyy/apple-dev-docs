@@ -21,7 +21,7 @@ Pauses the animation.
 @preconcurrency func pause()
 ```
 
-#### Discussion
+## Discussion
 
 Resume a paused animation by calling the [`resume()`](./resume%28%29.md) method.
 

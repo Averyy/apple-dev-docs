@@ -29,15 +29,15 @@ OSStatus SecItemUpdate(CFDictionaryRef query, CFDictionaryRef attributesToUpdate
 
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The query dictionary for update can’t contain [Item return result keys](./item-return-result-keys.md), because [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md) only returns a status.
 
-##### Performance considerations
+### Performance considerations
 
 `SecItemUpdate` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemUpdate` from a background dispatch queue or `async` function:
 

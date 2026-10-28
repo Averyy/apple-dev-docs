@@ -24,11 +24,11 @@ func concatTensors(_ tensors: [MPSGraphTensor], dimension dimensionIndex: Int, i
 - (MPSGraphTensor *) concatTensors:(NSArray<MPSGraphTensor *> *) tensors dimension:(NSInteger) dimensionIndex interleave:(BOOL) interleave name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Concatenates all input tensors along specified dimension. All inputs must be broadcast compatible along all other dimensions, and have the same type. When interleave is specified, all tensors will be interleaved. To interleave, make sure to provide broadcast compatible inputs along the specified dimension as well. For example:
 

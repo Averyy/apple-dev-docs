@@ -25,7 +25,7 @@ func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?, stages: MTLRend
 - (void) setArgumentTable:(id<MTL4ArgumentTable>) argumentTable atStages:(MTLRenderStages) stages;
 ```
 
-#### Discussion
+## Discussion
 
 Metal takes a snapshot of the resources in the argument table when you encode a draw, dispatch, or execute command. This snapshot becomes available to the `stages` you specify to this method.
 

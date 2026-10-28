@@ -20,7 +20,7 @@ The compression to apply when importing an image as a texture.
 struct Compression
 ```
 
-#### Overview
+## Overview
 
 Compression allows varying levels of memory usage gains at the cost of image-quality reduction.
 

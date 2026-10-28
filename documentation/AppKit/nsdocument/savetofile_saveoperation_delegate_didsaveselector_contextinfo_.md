@@ -17,7 +17,7 @@ Called after the user has been given the opportunity to select a destination thr
 - (void) saveToFile:(NSString *) fileName saveOperation:(NSSaveOperationType) saveOperation delegate:(id) delegate didSaveSelector:(SEL) didSaveSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Called after the user has been given the opportunity to select a destination through the modal Save panel presented by [`runModalSavePanel(for:delegate:didSave:contextInfo:)`](./runmodalsavepanel%28for,delegate,didsave,contextinfo%29.md). The `delegate` is assigned to the Save panel. If `fileName` is non-`nil`, this method writes the document to `fileName`, sets the document’s file location and document type (if a native type), and clears the document’s edited status. `didSaveSelector` gets called with [`true`](../../Swift/true.md) if the document is saved successfully, and [`false`](../../Swift/false.md) otherwise. The `saveOperation` is one of the constants in `Constants`. Pass `contextInfo` with the callback.
 

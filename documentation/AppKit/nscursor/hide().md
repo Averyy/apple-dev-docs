@@ -22,7 +22,7 @@ class func hide()
 + (void) hide;
 ```
 
-#### Discussion
+## Discussion
 
 If another cursor becomes current, that cursor will be invisible, too. It will remain invisible until you invoke the [`unhide()`](./unhide%28%29.md) method.
 

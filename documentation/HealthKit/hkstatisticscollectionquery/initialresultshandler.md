@@ -24,7 +24,7 @@ var initialResultsHandler: (@Sendable (HKStatisticsCollectionQuery, HKStatistics
 @property (nonatomic, copy, nullable) void (^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection *result, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 If this property is not set to `nil`, the query executes the results handler on a background queue after it has finished calculating the statistics for all matching samples currently stored in HealthKit.
 

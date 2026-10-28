@@ -17,7 +17,7 @@ object BundleId.Relationships.Profiles
 ### Objects
 - [object BundleId.Relationships.Profiles.Data](./profiles-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
-- [links](./profiles-data.dictionary/links.md)
+- links
   The links to the related data and the relationship’s self-link.
 
 ## Properties

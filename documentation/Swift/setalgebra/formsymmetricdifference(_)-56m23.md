@@ -23,7 +23,7 @@ mutating func formSymmetricDifference(_ other: Self)
 
 Available when `RawValue` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 This method is implemented as a `^` (bitwise XOR) operation on the two sets’ raw values.
 

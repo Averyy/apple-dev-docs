@@ -16,7 +16,7 @@ An object the compositer uses for rendering all effects associated with a layer 
 struct RenderContext
 ```
 
-#### Overview
+## Overview
 
 A `RenderContext` is required for apps to render using the progressive immersion style.
 

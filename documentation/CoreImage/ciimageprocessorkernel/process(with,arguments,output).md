@@ -24,7 +24,7 @@ class func process(with inputs: [any CIImageProcessorInput]?, arguments: [String
 + (BOOL) processWithInputs:(NSArray<id<CIImageProcessorInput>> *) inputs arguments:(NSDictionary<NSString *,id> *) arguments output:(id<CIImageProcessorOutput>) output error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When a `CIImage` containing your `CIImageProcessorKernel` class is rendered, your class’ implementation of this method will be called as needed for that render.  The method may be called more than once if Core Image needs to tile to limit memory usage.
 

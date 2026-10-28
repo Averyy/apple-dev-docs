@@ -23,7 +23,7 @@ var kCTFontTableAcnt: Int { get }
 kCTFontTableAcnt
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for accent attachment.
 

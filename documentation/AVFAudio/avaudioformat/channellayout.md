@@ -25,7 +25,7 @@ var channelLayout: AVAudioChannelLayout? { get }
 @property (nonatomic, readonly, nullable) AVAudioChannelLayout * channelLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Only formats with more than two channels require channel layouts.
 

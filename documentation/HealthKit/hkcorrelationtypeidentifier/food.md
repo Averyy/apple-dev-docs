@@ -24,7 +24,7 @@ static let food: HKCorrelationTypeIdentifier
 extern HKCorrelationTypeIdentifier const HKCorrelationTypeIdentifierFood;
 ```
 
-#### Discussion
+## Discussion
 
 When creating food samples, specify the type of food using the [`HKMetadataKeyFoodType`](../hkmetadatakeyfoodtype.md) metadata key.
 

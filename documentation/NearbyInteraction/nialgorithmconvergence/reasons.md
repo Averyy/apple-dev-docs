@@ -18,7 +18,7 @@ An array of reasons that contribute to the convergence status.
 @property (nonatomic, readonly) NSArray<NSString *> * reasons;
 ```
 
-#### Discussion
+## Discussion
 
 To improve the results of the framework’s Camera Assistance feature, coach the user to resolve the issues that each reason describe. For example, present text that explains what the user needs to do for each value in the array.
 

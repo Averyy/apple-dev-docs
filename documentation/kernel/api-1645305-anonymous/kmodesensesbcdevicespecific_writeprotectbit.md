@@ -13,7 +13,7 @@
 kModeSenseSBCDeviceSpecific_WriteProtectBit = 7
 ```
 
-#### Discussion
+## Discussion
 
 Bit to indicate medium is write protected.
 

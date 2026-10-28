@@ -25,7 +25,7 @@ class NSRecursiveLock
 @interface NSRecursiveLock : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSRecursiveLock`](./nsrecursivelock.md) defines a lock that may be acquired multiple times by the same thread without causing a deadlock, a situation where a thread is permanently blocked waiting for itself to relinquish a lock. While the locking thread has one or more locks, all other threads are prevented from accessing the code protected by the lock.
 

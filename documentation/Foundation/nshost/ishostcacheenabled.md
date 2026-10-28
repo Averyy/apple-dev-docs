@@ -17,7 +17,7 @@ Indicates whether caching is turned on or off.
 + (BOOL) isHostCacheEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when caching is turned on; [`false`](../../Swift/false.md) otherwise.
 

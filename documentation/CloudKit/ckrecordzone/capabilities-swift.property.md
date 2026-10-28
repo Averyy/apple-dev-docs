@@ -25,7 +25,7 @@ var capabilities: CKRecordZone.Capabilities { get }
 @property (assign, readonly) CKRecordZoneCapabilities capabilities;
 ```
 
-#### Discussion
+## Discussion
 
 The server determines the capabilities of the zone and sets the value of this property when you save the record zone. Always check this property before performing tasks that require a specific capability.
 

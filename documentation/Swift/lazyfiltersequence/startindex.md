@@ -23,7 +23,7 @@ var startIndex: LazyFilterSequence<Base>.Index { get }
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 In an empty collection, `startIndex == endIndex`.
 

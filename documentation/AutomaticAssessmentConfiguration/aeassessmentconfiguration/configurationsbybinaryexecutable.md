@@ -20,7 +20,7 @@ var configurationsByBinaryExecutable: [AEAssessmentBinaryExecutable : AEAssessme
 @property (nonatomic, copy, readonly) NSDictionary<AEAssessmentBinaryExecutable *,AEAssessmentBinaryExecutableConfiguration *> * configurationsByBinaryExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 Add executables with [`setConfiguration(_:for:)`](./setconfiguration%28_,for%29-16sed.md) and remove them with `AEAssessmentConfiguration/removeBinaryExecutable(_:)`.
 

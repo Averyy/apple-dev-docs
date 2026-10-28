@@ -20,7 +20,7 @@ case invalidCollaborationData
 ARErrorCodeInvalidCollaborationData
 ```
 
-#### Discussion
+## Discussion
 
 ARKit produces this error when an app passes invalid data into the [`update(with:)`](../../arsession/update%28with%29.md) function.
 

@@ -20,7 +20,7 @@ func CGDisplayRegisterReconfigurationCallback(_ callback: CGDisplayReconfigurati
 extern CGError CGDisplayRegisterReconfigurationCallback(CGDisplayReconfigurationCallBack callback, void *userInfo);
 ```
 
-#### Discussion
+## Discussion
 
 Whenever local displays are reconfigured, the callback function you register is invoked twice for each display that’s added, removed, or currently online—once before the reconfiguration, and once after the reconfiguration. For more information, see the callback type [`CGDisplayReconfigurationCallBack`](./cgdisplayreconfigurationcallback.md).
 

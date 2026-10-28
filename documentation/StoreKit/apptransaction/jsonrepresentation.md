@@ -21,7 +21,7 @@ The JSON representation of the app transaction information.
 var jsonRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`jsonRepresentation`](./jsonrepresentation.md) is UTF-8 string data that contains the same information as the properties of the [`AppTransaction`](../apptransaction.md). You can use this JSON data to decode the app transaction information into your own data type instead of using [`AppTransaction`](../apptransaction.md) properties directly.
 

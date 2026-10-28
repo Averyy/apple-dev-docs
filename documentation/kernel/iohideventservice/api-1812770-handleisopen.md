@@ -12,11 +12,11 @@ virtual bool handleIsOpen(
  const IOService *client) const;
 ```
 
-#### Return Value
+## Return Value
 
 true if the specified client, or any client if none (0) is specified, presently has an open on this object.
 
-#### Overview
+## Overview
 
 This method is always called by IOService with the arbitration lock held. Subclasses should not override this method.
 

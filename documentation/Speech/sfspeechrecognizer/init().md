@@ -23,11 +23,11 @@ convenience init?()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized speech recognizer object, or `nil` if there was a problem creating the object.
 
-#### Discussion
+## Discussion
 
 If the user’s default language is not supported for speech recognition, this method attempts to fall back to the language used by the keyboard for dictation. If that fails, this method returns `nil`.
 

@@ -19,11 +19,11 @@ func canAsynchronouslyWrite(to url: URL, ofType typeName: String, for saveOperat
 - (BOOL) canAsynchronouslyWriteToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) by default; subclasses can override to return [`true`](../../Swift/true.md), thereby enabling asynchronous writing.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). You are strongly encouraged to override it and make it return [`true`](../../Swift/true.md), after making sure your overrides of document writing methods can be safely invoked on a non-main thread, and making sure that the [`unblockUserInteraction()`](./unblockuserinteraction%28%29.md) method is invoked at some appropriate time during writing.
 

@@ -22,7 +22,7 @@ let MPMoviePlayerThumbnailErrorKey: String
 extern NSString * const MPMoviePlayerThumbnailErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSError`](../Foundation/nserror.md) object identifying the error that occurred, if any.
 

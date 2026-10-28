@@ -21,7 +21,7 @@ Creates a box mesh from a width, height, depth and a corner radius, with the abi
 @preconcurrency static func generateBox(width: Float, height: Float, depth: Float, cornerRadius: Float = 0, splitFaces: Bool = false) -> MeshResource
 ```
 
-#### Discussion
+## Discussion
 
 The method centers the box at the entity’s origin and aligns the box’s faces with the coordinate system’s axes.
 

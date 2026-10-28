@@ -20,7 +20,7 @@ A change that invalidates a view’s configuration.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 Use [`configuration`](../../uiviewinvalidating/configuration.md) to create an instance of this type.
 

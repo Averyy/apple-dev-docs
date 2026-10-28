@@ -25,7 +25,7 @@ func CFRunLoopSourceIsValid(_ source: CFRunLoopSource!) -> Bool
 extern Boolean CFRunLoopSourceIsValid(CFRunLoopSourceRef source);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `source` is valid, otherwise `false`.
 

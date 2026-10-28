@@ -17,11 +17,11 @@ Creates a custom protocol with the provided unique string.
 init?(_ data: Data)
 ```
 
-#### Return Value
+## Return Value
 
 A new [`WASharedSecret.ProtocolName`](../protocolname.md), or `nil` if the provided data was too short.
 
-#### Discussion
+## Discussion
 
 Custom protocols need to specify data that identifies the protocol that will use the shared secret. Set the same value on the local and remote devices in order to generate the same shared secret.
 

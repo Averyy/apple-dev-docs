@@ -31,7 +31,7 @@ optional func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WK
 
 - [Replacing UIWebView in your app](../replacing-uiwebview-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this method to allow or deny a navigation request that originated with the specified action. The web view calls this method after the interaction occurs but before it attempts to load any content. If you implement this method, always execute the `decisionHandler` block at some point. You may execute it synchronously from your delegate method’s implementation, or execute it asynchronously after your method returns.
 

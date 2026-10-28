@@ -9,7 +9,7 @@
 virtual IOMediumType getType() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the medium type assigned to this medium object.
 

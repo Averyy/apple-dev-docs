@@ -19,11 +19,11 @@ object Divider
 
 - [Positioning the Content in Your Article](../AppleNews/positioning-the-content-in-your-article.md)
 
-#### Discussion
+## Discussion
 
 A `divider` component appears as a horizontal line to create a visual division. The `divider` component can be used to separate title components and section components, and so on.
 
-##### Example
+### Example
 
 ```json
 {

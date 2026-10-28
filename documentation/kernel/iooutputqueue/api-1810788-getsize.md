@@ -11,7 +11,7 @@ Gets the number of packets currently held in the queue.
 virtual UInt32 getSize() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size of the queue.
 

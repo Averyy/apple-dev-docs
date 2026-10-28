@@ -22,7 +22,7 @@ var isHighResolutionStillImageOutputEnabled: Bool { get set }
 @property (nonatomic, getter=isHighResolutionStillImageOutputEnabled) BOOL highResolutionStillImageOutputEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `AVCaptureStillImageOutput` emits images with the same dimensions as its source [`AVCaptureDevice`](../avcapturedevice.md) instance’s `activeFormat.formatDescription`.  However, if you set this property to [`true`](../../Swift/true.md), the receiver emits still images at the capture device’s [`highResolutionStillImageDimensions`](../avcapturedevice/format/highresolutionstillimagedimensions.md) value.
 

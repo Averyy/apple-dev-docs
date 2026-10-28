@@ -24,7 +24,7 @@ convenience init(cgPath CGPath: CGPath)
 + (instancetype) bezierPathWithCGPath:(CGPathRef) CGPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the specified path information.
 

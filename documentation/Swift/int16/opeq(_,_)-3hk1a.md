@@ -21,7 +21,7 @@ Stores the result of performing a bitwise XOR operation on the two given values 
 static func ^= (lhs: inout Int16, rhs: Int16)
 ```
 
-#### Discussion
+## Discussion
 
 A bitwise XOR operation, also known as an exclusive OR operation, results in a value that has each bit set to `1` where *one or the other but not both* of its arguments had that bit set to `1`. For example:
 

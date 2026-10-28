@@ -16,7 +16,7 @@ CFDictionary key for the current power source's time remaining until empty.
 #define kIOPSTimeToEmptyKey
 ```
 
-#### Discussion
+## Discussion
 
 Only valid if the power source is running off its own power. That's when the [`kIOPSPowerSourceStateKey`](./kiopspowersourcestatekey.md) has value [`kIOPSBatteryPowerValue`](./kiopsbatterypowervalue.md) and the value of [`kIOPSIsChargingKey`](./kiopsischargingkey.md) is kCFBooleanFalse.
 

@@ -5,7 +5,7 @@
 
 Validate a response from mobile document information derived from a passport.
 
-#### Overview
+## Overview
 
 Beginning in iOS 26.1 and watchOS 26.1, people can add passports in the form of mobile documents (mdocs) to their Wallet using a valid government-issued passport. If approved, those credentials are signed by Apple and provisioned to an iOS or watchOS device. You can validate a passport Digital ID response using the ISO/IEC 23220-2 standard. It inherits the functionality of ISO 18013-5 standard.
 
@@ -18,7 +18,7 @@ A Digital ID is a way for people to securely create an ID in Wallet using inform
 
 > **Note**: Using the [`MobileDocumentDisplayRequest`](../ProximityReader/mobiledocumentdisplayrequest.md) or [`MobilePhotoIDDataRequest`](../ProximityReader/mobilephotoiddatarequest.md) API in the [ProximityReader](../ProximityReader/ProximityReader.md) framework automatically verifies Digital IDs.
 
-#### Verify the passport mobile document response
+## Verify the passport mobile document response
 
 You can validate a Digital ID response by verifying the issuer and device signatures.
 
@@ -75,7 +75,7 @@ The following table is a list of elements in the ISO/IEC 23220 issuer namespace:
 | `document_number` | String | The number assigned or calculated by the issuing authority. |
 | `issuing_authority_latin1` | String | The Digital ID-issuing authority name in Latin-1 characters. |
 
-#### Decode the device response
+## Decode the device response
 
 The device response is a [CBOR (RFC 8949 Concise Binary Object Representation)](https://cbor.io) encoded byte array. You can check the validity of the response by using a CBOR library or parser in your chosen programming language.
 
@@ -87,7 +87,7 @@ A valid Digital ID device response has:
 
 If this step fails, you can choose to allow users to retry or fall back to a different verification method.
 
-#### Validate the device response and Mobile Security Object
+## Validate the device response and Mobile Security Object
 
 You can validate the `deviceResponse` by verifying the issuer and device signatures. Section 9.1.2 of ISO/IEC 18013-5 defines a procedure for validating the issuer data in the device response. This procedure helps your app authenticate data to ensure it comes from a source you trust.
 
@@ -117,7 +117,7 @@ Because the MSO revocation list is signed daily, each partition consists of a `C
 
 > **Note**: Apple systems generate the revocation list when a Digital ID is removed from Wallet, becomes inactive for more than 60 days, or is deleted by the user in Find My or via Apple Care. The list doesn’t contain government-sourced data. For offline use cases, download and cache all partitions with a maximum cache duration of one day.
 
-#### Validate the data elements
+## Validate the data elements
 
 Verify that the user information in the response matches the data from the issuing authority. The MSO includes an array of digests or hashes, covering every element in the mdoc.
 
@@ -130,7 +130,7 @@ To validate the date elements, ensure that each data element in the response mat
 
 There can be more digests than you see in the `issuerSigned` items structure because you only receive signed items for each element you request.
 
-#### Verify the device signatures
+## Verify the device signatures
 
 Section 9.1.3 of ISO/IEC 18013-5 defines a procedure for authenticating mdocs. This procedure helps your app verify that the response came from the issued device. Using this procedure helps prevent mdoc cloning to an unauthorized device and intermediary attacks. Digital ID credentials use Elliptic Curve Digital Signature Algorithm (ECDSA) for mdoc authentication.
 

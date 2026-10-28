@@ -24,7 +24,7 @@ var selectionIndicatorTintColor: UIColor? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIColor * selectionIndicatorTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit combines the color in this property with the image in the [`selectionIndicatorImage`](./selectionindicatorimage.md) to create the final appearance for the selected item. If you supplied a template image in [`selectionIndicatorImage`](./selectionindicatorimage.md), UIKit uses this color to tint that image. If [`selectionIndicatorImage`](./selectionindicatorimage.md) is `nil`, UIKit provides a default selection indicator image that accepts your tint color. If this property is `nil` or contains a clear color, UIKit doesn’t display a selection indicator.
 

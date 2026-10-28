@@ -25,7 +25,7 @@ var associatedIndex: Int { get }
 @property (readonly) NSUInteger associatedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Pairs of changes with opposite types that refer to each other represent the index location of their counterpart with the [`associatedIndex`](./associatedindex.md) property. The following example creates a diff where the object `@”Red”` moves from index `8` to index `3`:
 

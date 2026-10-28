@@ -17,7 +17,7 @@ An error that indicates the system can’t reach the network.
 case networkUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Check the device’s network connection.
 

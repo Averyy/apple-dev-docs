@@ -24,7 +24,7 @@ var subtype: CATransitionSubtype? { get set }
 @property (copy, nullable) CATransitionSubtype subtype;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are shown in  [Common Transition Subtypes](../common-transition-subtypes.md). The default is `nil`.
 

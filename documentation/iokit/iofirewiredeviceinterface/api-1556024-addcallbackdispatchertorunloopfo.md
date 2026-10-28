@@ -16,11 +16,11 @@ Add a run loop event source to allow IOFireWireLib callbacks to function.
 IOReturn (*AddCallbackDispatcherToRunLoopForMode)(IOFireWireLibDeviceRef self, CFRunLoopRef inRunLoop, CFStringRef inRunLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Installs the proper run loop event source to allow callbacks to function. This method must be called before callback notifications for this interface or any interfaces created using this interface can function. With this function, you can additionally specify for which run loop modes this source should be added.
 

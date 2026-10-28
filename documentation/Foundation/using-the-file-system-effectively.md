@@ -5,7 +5,7 @@
 
 Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 
-#### Overview
+## Overview
 
 When apps persist data, they often use different files for different purposes. For example, when someone uses your app to create a document, the app stores the document permanently, and makes it available for automated backup. Your app may also create files it requires to function, but that won’t be visible while someone’s using the app. Still other types of files may be useful for a time, but eventually eligible for deletion. Foundation provides special directories for different kinds of files, some of which offer unique behaviors that can help your app to store files more efficiently.
 
@@ -20,7 +20,7 @@ In addition, using the right directories for the right files provides useful fea
 
 > 💡 **Tip**: If the data you need to persist is very small – several strings or name-value pairs – you might find it more convenient to use [`UserDefaults`](./userdefaults.md) instead of managing flat files.
 
-##### Access common directories
+### Access common directories
 
 On iOS, tvOS, watchOS, and visionOS, apps perform all their file access within the app’s bundle. There’s no access outside of the bundle, except in cases where higher-level APIs access outside files on the app’s behalf, like when you use [Media Player](../MediaPlayer/MediaPlayer.md) to play songs from the device’s music library. A sandboxed macOS app uses a similar setup.
 
@@ -31,7 +31,7 @@ Within the bundle, the system provides specific directories, some with distinct 
 
 Use these APIs whenever possible. Don’t hard-code paths to what appear to be common directories, since apps like Finder may localize directory names and omit file extensions when presenting them in the user interface.
 
-##### Store long-lived files
+### Store long-lived files
 
 When writing a document-based app with APIs like [`UIDocument`](../UIKit/uidocument.md) and [`NSDocument`](../AppKit/nsdocument.md), store files in the `Documents` folder. You can access this folder with the URL [`documentsDirectory`](./url/documentsdirectory.md) or the search path [`FileManager.SearchPathDirectory.documentDirectory`](./filemanager/searchpathdirectory/documentdirectory.md).
 
@@ -45,7 +45,7 @@ For support files that your app needs to operate but that you don’t want to be
 
 > ❗ **Important**: If you want to exclude an item in `Documents` or `ApplicationSupport` from backup, call [`setResourceValues(_:)`](./url/setresourcevalues%28_%29.md) with the value [`isExcludedFromBackup`](./urlresourcevalues/isexcludedfrombackup.md) in Swift, or [`setResourceValue(_:forKey:)`](./nsurl/setresourcevalue%28_,forkey%29.md) with the key [`isExcludedFromBackupKey`](./urlresourcekey/isexcludedfrombackupkey.md) in Objective-C. Exclude from the backup any file that your app can recreate or redownload, particularly large media files.
 
-##### Store short-lived files
+### Store short-lived files
 
 Your app may also use shorter-lived files that you don’t need backed up or stored permanently. Foundation provides several directories for storing these kinds of files.
 
@@ -63,7 +63,7 @@ The following decision tree summarizes the factors to consider when choosing a s
 
 ![A graphic showing a decision tree, reading from left to right. The first decision point reads ‘Is your file long-lived?’ The ‘yes’ answer leads to another decision point: ‘Who manages the file?](https://developer.apple.com/tutorials/images/com.apple.foundation/storage-usage-best-practices-decision-flow@2x.png)
 
-##### Access the rest of the file system in a non-sandboxed macOS app
+### Access the rest of the file system in a non-sandboxed macOS app
 
 A non-sandboxed macOS app can access files outside of its own container. This ability can be useful for apps that read from and write to other locations in the file system.
 

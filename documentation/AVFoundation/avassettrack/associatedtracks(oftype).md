@@ -26,11 +26,11 @@ func associatedTracks(ofType trackAssociationType: AVAssetTrack.AssociationType)
 - (NSArray<AVAssetTrack *> *) associatedTracksOfType:(AVTrackAssociationType) trackAssociationType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks matching the specified track association type, or an empty array if none are found.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load associated tracks asynchronously using [`loadAssociatedTracks(ofType:completionHandler:)`](./loadassociatedtracks%28oftype,completionhandler%29.md) instead.
 

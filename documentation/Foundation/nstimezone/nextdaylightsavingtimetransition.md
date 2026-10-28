@@ -25,7 +25,7 @@ var nextDaylightSavingTimeTransition: Date? { get }
 @property (copy, readonly, nullable) NSDate * nextDaylightSavingTimeTransition;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the date of the next (after the current instant) daylight saving time transition for the receiver. Depending on the time zone of the receiver, the value of this property may represent a change of the time zone’s offset from GMT. Returns `nil` if the time zone of the receiver does not currently observe daylight saving time.
 

@@ -21,7 +21,7 @@ static var `default`: StreamOrDevice { get }
 
 - [Using Streams](../using-streams.md)
 
-#### Discussion
+## Discussion
 
 See [`defaultStream`](../stream/defaultstream.md).
 

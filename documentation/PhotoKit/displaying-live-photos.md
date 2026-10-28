@@ -5,7 +5,7 @@
 
 Provide the same interactive playback of Live Photos as in the iOS Photos app.
 
-#### Overview
+## Overview
 
 The [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) class provides a way to display Live Photos—pictures, taken on compatible hardware, that include motion and sound from the moments just before and after their capture. A Live Photo view provides the same interactive playback features found in the Photos app.
 
@@ -13,7 +13,7 @@ In iOS and tvOS, you can fetch Live Photo objects to display in a Live Photo vie
 
 To display Live Photo content on the web, use the [LivePhotosKit JS](../LivePhotosKitJS/LivePhotosKitJS.md) framework.
 
-##### Control Live Photo Playback
+### Control Live Photo Playback
 
 After obtaining a [`PHLivePhoto`](../Photos/phlivephoto.md) object, use a Live Photo view to display the photo and control playback of its motion and sound content. In iOS and tvOS, you can obtain Live Photos from the user’s photo library using the [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md), [`PHAsset`](../Photos/phasset.md), and [`PHImageManager`](../Photos/phimagemanager.md) classes, or by creating one from asset resources exported from a photo library. In macOS, Live Photos are available only when editing Live Photo content in a photo editing extension that runs in the Photos app—see the [`PHContentEditingInput`](../Photos/phcontenteditinginput.md) class to access Live Photos in an editing session.
 

@@ -25,7 +25,7 @@ var groupedSummary: String { get }
 
 - [Evaluating language model responses](../evaluating-language-model-responses.md)
 
-#### Example Output
+## Example Output
 
 ```swift
 Text Matching:

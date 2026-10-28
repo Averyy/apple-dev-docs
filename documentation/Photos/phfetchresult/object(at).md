@@ -24,11 +24,11 @@ func object(at index: Int) -> ObjectType
 - (ObjectType) objectAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object located at `index` in the fetch result.
 
-#### Discussion
+## Discussion
 
 Raises a range exception if `index` is beyond the end of the fetch result (that is, greater than or equal to the value of the [`count`](./count.md) property).
 

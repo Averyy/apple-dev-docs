@@ -24,7 +24,7 @@ var showsFPS: Bool { get set }
 @property (nonatomic) BOOL showsFPS;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rate is a good indicator of the performance of your scene. Avoid creating scenes that have widely varying frame rates.
 

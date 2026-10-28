@@ -25,7 +25,7 @@ var changeShuffleModeCommand: MPChangeShuffleModeCommand { get }
 @property (nonatomic, readonly) MPChangeShuffleModeCommand * changeShuffleModeCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for changing the shuffle mode for the playlist. In your handler, change the shuffle mode to the new value. You can disable the command if your app does not support it.
 

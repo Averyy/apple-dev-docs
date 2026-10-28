@@ -24,11 +24,11 @@ class func disambiguation(with filesToDisambiguate: [INFile]) -> Self
 + (instancetype) disambiguationWithFilesToDisambiguate:(NSArray<INFile *> *) filesToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INFileResolutionResult`](../infileresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there’s more one value that might match the given parameter. Siri prompts the user to select from among the objects you provide.
 

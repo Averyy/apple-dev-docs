@@ -23,7 +23,7 @@ func issueChallenge(toPlayers playerIDs: [String]?, message: String?)
 - (void) issueChallengeToPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 Set up your game to issue a challenge request only in direct response to a player action.
 

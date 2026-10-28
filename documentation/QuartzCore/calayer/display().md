@@ -24,7 +24,7 @@ func display()
 - (void) display;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. The layer calls this method at appropriate times to update the layer’s content. If the layer has a delegate object, this method attempts to call the delegate’s [`display(_:)`](../calayerdelegate/display%28_%29.md) method, which the delegate can use to update the layer’s contents. If the delegate does not implement the [`display(_:)`](../calayerdelegate/display%28_%29.md) method, this method creates a backing store and calls the layer’s [`draw(in:)`](./draw%28in%29.md) method to fill that backing store with content. The new backing store replaces the previous contents of the layer.
 

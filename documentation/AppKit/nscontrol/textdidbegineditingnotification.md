@@ -19,7 +19,7 @@ class let textDidBeginEditingNotification: NSNotification.Name
 extern NSNotificationName NSControlTextDidBeginEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The field editor of the edited cell originally sends an [`didBeginEditingNotification`](../nstext/didbegineditingnotification.md) to the control, which passes it on in this form to its delegate. The notification object is the `NSControl` object posting the notification. The `userInfo` dictionary contains the following information:
 

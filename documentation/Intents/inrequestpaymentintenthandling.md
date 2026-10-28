@@ -23,7 +23,7 @@ protocol INRequestPaymentIntentHandling : NSObjectProtocol
 @protocol INRequestPaymentIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INRequestPaymentIntentHandling`](./inrequestpaymentintenthandling.md) protocol to resolve, confirm, and handle the requesting of money from another user of your app. Adopt this protocol in an object of your Intents extension that is capable of contacting the designated user and communicating the request for payment.
 

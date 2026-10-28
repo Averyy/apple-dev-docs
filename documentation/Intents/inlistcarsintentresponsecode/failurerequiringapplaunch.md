@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INListCarsIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 The system launches the host app when you specify this code. Use this response code when there is a failure that the host app can resolve. Don’t use this code for general errors, or to force a user into the host app even when the extension can handle the intent.
 

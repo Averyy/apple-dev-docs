@@ -18,11 +18,11 @@ Sets an object as the member of the array at a given index.
 bool setObject(uint32_t index, const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 True on success, which retains the object, or false on failure which does not retain the object.
 
-#### Discussion
+## Discussion
 
 Sets an object as the member of the array at a given index. The array capacity will be grown if necessary.
 

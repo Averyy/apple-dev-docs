@@ -5,40 +5,40 @@
 
 Released January 22, 2024 — Version 17.3 (19617.2.4)
 
-#### Overview
+## Overview
 
 Safari 17.3 is available for iOS 17.3, iPadOS 17.3, macOS Sonoma, macOS Monterey, and macOS Ventura.
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed nested `@supports` queries with declarations.  (113652033)
 - Fixed the caret color on iOS following an explicitly-set CSS color attribute.  (118401826)
 
-##### Loading
+### Loading
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed cookies not always working as expected with `Samesite=Lax`.  (119362503)
 - Fixed an issue causing sign in to fail on Delta.com.  (120431796)
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed to not loop if current time or duration is zero.  (118902468)
 - Fixed in-band captions wrapping unnecessarily.  (119138261)
 
-##### Privacy
+### Privacy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed unauthenticated cross-site Fetch requests to not use the global HSTS cache.  (119047103)
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Prevent scheduling for an effect targeting an element with `display: none`.  (119191813)
 

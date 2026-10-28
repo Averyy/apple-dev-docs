@@ -12,7 +12,7 @@ Collect performance metrics, diagnostic reports, and experiment data related to 
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 MetricKit provides the data you need to understand how your app performs in the real world, from launch times and UI responsiveness to crash diagnostics. This sample app shows you how to integrate MetricKit into a SwiftUI app to collect performance metrics, correlate them with experiments and user activities, and inspect the resulting reports.
 
@@ -22,7 +22,7 @@ The app is an expense report manager that lets you create reports, scan receipts
 
 > **Note**: MetricKit delivers reports on a system-determined schedule. To generate reports during development, import MetricKit, subscribe to reports in code, and run your app from Xcode, then choose Debug > MetricKit > Simulate MetricKit Payloads.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To build and run this sample, you need:
 
@@ -37,7 +37,7 @@ To configure the project:
 
 The app creates sample expense data on first launch. Receipt images and metric payloads are stored in the app’s Documents directory, accessible through the Files app.
 
-#### Create a metrics collector
+## Create a metrics collector
 
 The sample centralizes all MetricKit integration in a `MetricsCollector` class. This class initializes a [`MetricManager`](./metricmanager.md) with the state reporting domains the app uses — one for experiments and one for user activity:
 
@@ -71,7 +71,7 @@ struct MetricKit_SampleApp: App {
 }
 ```
 
-#### Receive metric and diagnostic reports
+## Receive metric and diagnostic reports
 
 The sample listens for two types of reports using async sequences on [`MetricManager`](./metricmanager.md). Metric reports contain aggregated performance data, and diagnostic reports contain information about crashes, hangs, and other issues.
 
@@ -99,7 +99,7 @@ Each report handler encodes the report to JSON and writes it to the app’s Docu
 encoder.userInfo[MetricReport.encodingFormatKey] = MetricReport.EncodingFormat.byStateReportingDomain
 ```
 
-#### Track experiment variants with state reporting
+## Track experiment variants with state reporting
 
 The sample uses state reporting to correlate performance data with specific experiment variants. By tracking which variant is active, the resulting metric reports reveal whether a particular layout causes performance regressions.
 
@@ -151,7 +151,7 @@ The expense report detail view reports the active variant when the view appears 
 }
 ```
 
-#### Report user activity state
+## Report user activity state
 
 The sample tracks which workflow a person is performing so that metric reports reflect performance data in the context of specific activities. By reporting which tab is active, the resulting reports reveal whether performance issues are isolated to a particular area of the app.
 
@@ -188,7 +188,7 @@ The main tab view reports a transition whenever the selected tab changes, using 
 
 The `metricsCollector` reports a state transition each time the person switches between the Reports and Spending tabs, allowing the system to attribute performance data to the active workflow.
 
-#### Measure launch performance
+## Measure launch performance
 
 The sample measures the time spent creating initial sample data during app launch by wrapping the operation in a call to [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-jnu1.md). The framework includes this timing data in subsequent metric reports, which helps identify slow launch operations:
 
@@ -198,7 +198,7 @@ metricsCollector.trackLaunchTask(idString: "create-seed-data") {
 }
 ```
 
-#### Measure document capture with signpost metrics
+## Measure document capture with signpost metrics
 
 The sample uses [`SignpostIntervalMetric`](./signpostintervalmetric.md) to measure resource usage during the receipt scanning workflow. By wrapping the document camera session in a signpost interval, MetricKit aggregates CPU time, memory, logical writes, and duration across scanning sessions and includes them in metric reports.
 
@@ -241,7 +241,7 @@ The resulting metric reports include an [`SignpostIntervalMetric`](./signpostint
 
 The sample also triggers a fatal error when a person attempts to submit an expense report with no expenses. This intentional crash generates a crash diagnostic report.
 
-#### Identify crash diagnostics in reports
+## Identify crash diagnostics in reports
 
 Each [`DiagnosticReport`](./diagnosticreport.md) contains a `result` property of type [`DiagnosticResult`](./diagnosticresult.md), which is an enum indicating the kind of diagnostic:
 

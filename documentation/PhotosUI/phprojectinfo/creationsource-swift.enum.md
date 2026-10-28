@@ -19,7 +19,7 @@ enum CreationSource
 enum PHProjectCreationSource : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Each source represents a file type from which users can create a project extension.
 

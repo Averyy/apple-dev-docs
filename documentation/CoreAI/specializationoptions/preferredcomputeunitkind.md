@@ -19,7 +19,7 @@ The preferred compute unit kind, if one was specified.
 var preferredComputeUnitKind: ComputeUnitKind? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When set, the specialization process maximizes use of this compute unit kind. Fallback to other kinds in [`allowedComputeUnitKinds`](./allowedcomputeunitkinds.md) may still occur for operations or operation patterns that are incompatible with the preferred kind. Operation patterns refer to groups of operations that are fused or transformed together during specialization; an operation that is individually compatible with the preferred unit kind may be part of a fused pattern that is not.
 

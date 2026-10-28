@@ -17,7 +17,7 @@ Creates a new event.
 init(applications: Set<ApplicationToken> = [], categories: Set<ActivityCategoryToken> = [], webDomains: Set<WebDomainToken> = [], threshold: DateComponents)
 ```
 
-#### Discussion
+## Discussion
 
 An application’s extension receives a callback once the combination of specified [`applications`](./applications.md), [`categories`](./categories.md), and [`webDomains`](./webdomains.md) have been in use longer than the event’s threshold within the activity’s scheduled interval. If your app didn’t specify any `applications`, `categories`, or `webDomains`, the event includes all `applications`, `categories`, and `web domains`.
 

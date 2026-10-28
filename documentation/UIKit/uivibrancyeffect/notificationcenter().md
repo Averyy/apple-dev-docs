@@ -22,7 +22,7 @@ class func notificationCenter() -> UIVibrancyEffect
 + (UIVibrancyEffect *) notificationCenterVibrancyEffect;
 ```
 
-#### Return Value
+## Return Value
 
 The vibrancy effect that’s appropriate for use in Today widgets in Notification Center. To learn more about Today widgets, see [Today](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Today.html#//apple_ref/doc/uid/TP40014214-CH11).
 

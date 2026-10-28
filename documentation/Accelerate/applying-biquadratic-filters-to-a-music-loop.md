@@ -10,7 +10,7 @@ Change the frequency response of an audio signal using a cascaded biquadratic fi
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 You can shape the output of an audio signal, such as by boosting or cutting the bass or treble of a music track, with the single-channel and multichannel biquadratic filters that the vDSP library provides.
 
@@ -22,7 +22,7 @@ The sample code app displays the magnitude response of the selected section, the
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different parameters on the music loop.
 
-##### Initialize the biquadratic filter
+### Initialize the biquadratic filter
 
 The `biquadSectionCount` constant defines the number of sections that the biquadratic filter implements. The sample code app sets this to `3` by default.
 
@@ -43,7 +43,7 @@ biquadSetup = vDSP_biquad_CreateSetup(vDSP.floatToDouble(coefficients),
                                       biquadSectionCount)!
 ```
 
-##### Define the biquadratic coefficients
+### Define the biquadratic coefficients
 
 Five coefficients define each section of a biquadratic filter. The following formula describes the underlying math of the biquadratic filter, with *z* referring to the complex frequency-domain representation of the signal:
 
@@ -72,7 +72,7 @@ case .lowpass:
     a2 = 1 - alpha
 ```
 
-##### Set the biquadratic coefficients
+### Set the biquadratic coefficients
 
 The [`vDSP_biquad_SetCoefficientsSingle`](./vdsp_biquad_setcoefficientssingle.md) function sets the coefficients for a section of the biquadratic filter. The sample code app defines `selectedSectionIndex` as the index of the currently selected section, and the `BiquadCoefficientCalculator.SectionCoefficients` structure provides an `array` variable that returns `[b0, b1, b2, a1, a2]`.
 
@@ -83,7 +83,7 @@ vDSP_biquad_SetCoefficientsSingle(biquadSetup,
                                   1)
 ```
 
-##### Apply the biquadratic filter to the audio sample
+### Apply the biquadratic filter to the audio sample
 
 The [`vDSP_biquad`](./vdsp_biquad.md) function applies the biquadratic filter to a page of input samples and writes the result to the `outputSignal` array. The `delay` array contains the past state for each section of the biquadratic filter.
 

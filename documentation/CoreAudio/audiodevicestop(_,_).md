@@ -20,11 +20,11 @@ func AudioDeviceStop(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIOProcID?
 extern OSStatus AudioDeviceStop(AudioObjectID inDevice, AudioDeviceIOProcID inProcID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Stops IO for the given AudioDeviceIOProcID.
 

@@ -5,7 +5,7 @@
 
 Migrate complex data models containing changes that are incompatible with lightweight migrations.
 
-#### Overview
+## Overview
 
 Core Data uses lightweight migrations to keep the data in your app’s persistent store consistent with the app’s managed object model. A lightweight migration automatically determines the differences between two model versions and generates a mapping model that Core Data then uses to make the necessary changes to the persistent store. Lightweight migrations support a number of common operations, such as adding an entity, removing a relationship, changing a nonoptional attribute to an optional attribute, renaming an entity, and so on.
 

@@ -25,11 +25,11 @@ func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?
 - (id<MTLTexture>) newTextureViewWithPixelFormat:(MTLPixelFormat) pixelFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object that shares the same storage allocation of the texture.
 
-#### Discussion
+## Discussion
 
 When you create a texture normally, Metal allocates memory for the textureʼs pixel data. These storage allocations can be quite large. You can reduce memory use and avoid copying texture data by using a *texture view*—a texture object that shares another textureʼs storage allocation, reinterpreting the pixel data in some other format.
 

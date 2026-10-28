@@ -25,7 +25,7 @@ static var brokenPipe: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to write to a pipe, socket, or FIFO that doesn’t have a process reading its data.
 

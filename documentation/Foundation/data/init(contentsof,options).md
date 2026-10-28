@@ -21,7 +21,7 @@ Creates data by reading from the specified URL.
 init(contentsOf url: URL, options: Data.ReadingOptions = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error in the Cocoa domain, if `url` cannot be read.
 

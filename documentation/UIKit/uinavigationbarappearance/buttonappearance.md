@@ -24,7 +24,7 @@ var buttonAppearance: UIBarButtonItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * buttonAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 To configure the appearance of the back or done buttons separately, use the [`backButtonAppearance`](./backbuttonappearance.md) and [`doneButtonAppearance`](./donebuttonappearance.md) properties instead.
 

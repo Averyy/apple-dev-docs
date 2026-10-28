@@ -23,11 +23,11 @@ init(bounds: CGRect, format: UIGraphicsPDFRendererFormat)
 - (instancetype) initWithBounds:(CGRect) bounds format:(UIGraphicsPDFRendererFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized PDF graphics renderer.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a PDF renderer when you want to override the default format for the current device. Otherwise, use the [`init(bounds:)`](../uigraphicsrenderer/init%28bounds%29.md) method present on the abstract superclass, [`UIGraphicsRenderer`](../uigraphicsrenderer.md).
 

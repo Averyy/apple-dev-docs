@@ -19,7 +19,7 @@ Asks the delegate to provide the frame of an element.
 func indirectScribbleInteraction(_ interaction: any UIInteraction, frameForElement elementIdentifier: Self.ElementIdentifier) -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 Returns the frame for the element, in the view coordinate system of the interaction.
 

@@ -24,7 +24,7 @@ var selectionRects: [UITextSelectionRect] { get set }
 @property (nonatomic, strong) NSArray<UITextSelectionRect *> * selectionRects;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the rectangles to draw in a custom highlight view. The rectangles are in the coordinate space of the view that adopts this protocol.
 

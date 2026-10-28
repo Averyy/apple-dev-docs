@@ -21,7 +21,7 @@ enum NIDLTDOACoordinatesType
 enum NIDLTDOACoordinatesType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`NIDLTDOAMeasurement`](./nidltdoameasurement.md) class [`coordinates`](./nidltdoameasurement/coordinates.md) property is of this type.
 

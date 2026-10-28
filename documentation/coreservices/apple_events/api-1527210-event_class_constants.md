@@ -4,7 +4,7 @@
 
 Specify the event class for an Apple event.
 
-#### Overview
+## Overview
 
 Apple events are identified by their event class and event ID attributes, each of which specifies an arbitrary four-character code. The event class appears in the `message` field of the event record for an Apple event. For example, certain Apple events that are sent by the Mac OS have the value `'aevt'` in the `message` fields of their event records. This value can be represented with the constant `kCoreEventClass`.
 

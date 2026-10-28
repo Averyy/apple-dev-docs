@@ -21,7 +21,7 @@ A publisher that appears to send a specified failure type.
 struct SetFailureType<Upstream, Failure> where Upstream : Publisher, Failure : Error, Upstream.Failure == Never
 ```
 
-#### Overview
+## Overview
 
 The publisher can’t actually fail with the specified type and finishes normally. Use this publisher type when you need to match the error types for two mismatched publishers.
 

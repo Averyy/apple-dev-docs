@@ -15,7 +15,7 @@ A component that supports general image presentation.
 struct ImagePresentationComponent
 ```
 
-#### Overview
+## Overview
 
 `ImagePresentationComponent` supports the presentation of three different kinds of images in RealityKit:
 
@@ -27,7 +27,7 @@ To present a 2D image or a spatial photo, create a new `ImagePresentationCompone
 
 To generate and present a spatial scene from an existing image, create a [`ImagePresentationComponent.Spatial3DImage`](./imagepresentationcomponent/spatial3dimage.md) from the image; call the [`generate()`](./imagepresentationcomponent/spatial3dimage/generate%28%29.md) method on your new spatial 3D image; then create a new `ImagePresentationComponent` with [`init(spatial3DImage:)`](./imagepresentationcomponent/init%28spatial3dimage%29.md).
 
-##### Viewing modes
+### Viewing modes
 
 By default, an `ImagePresentationComponent` presents its image in a [`mono`](./imagepresentationcomponent/viewingmode-swift.struct/mono.md) viewing mode, regardless of what kind of image you create it with.
 

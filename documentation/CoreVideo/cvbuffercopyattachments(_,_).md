@@ -25,11 +25,11 @@ func CVBufferCopyAttachments(_ buffer: CVBuffer, _ attachmentMode: CVAttachmentM
 extern CFDictionaryRefCVBufferCopyAttachments(CVBufferRef buffer, CVAttachmentMode attachmentMode);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of all attachments identified by their keys, or `nil` if no attachment is present or you specify an invalid attachment mode.
 
-#### Discussion
+## Discussion
 
 This function returns a retained dictionary, which you need to release when you’re done with it.
 

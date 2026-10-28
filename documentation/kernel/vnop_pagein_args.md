@@ -16,7 +16,7 @@ struct vnop_pagein_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_ALLOCATE() changes the amount of backing store set aside to a file. It can be used to either shrink or grow a file. If the file shrinks, its ubc size will be modified accordingly, but if it grows, then the ubc size is unchanged; space is set aside without being actively used by the file. VNOP_ALLOCATE() is currently only called as part of the F_PREALLOCATE fcntl.
 

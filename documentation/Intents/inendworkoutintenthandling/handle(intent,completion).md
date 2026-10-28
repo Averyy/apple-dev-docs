@@ -28,7 +28,7 @@ func handle(intent: INEndWorkoutIntent) async -> INEndWorkoutIntentResponse
 - (void) handleEndWorkout:(INEndWorkoutIntent *) intent completion:(void (^)(INEndWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method transfers control of ending the workout over to your app. When your response object contains the [`INEndWorkoutIntentResponseCode.continueInApp`](../inendworkoutintentresponsecode/continueinapp.md) code, SiriKit automatically launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response object.
 

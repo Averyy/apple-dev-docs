@@ -21,11 +21,11 @@ The value of a variable used for expanding a template.
 struct Value
 ```
 
-#### Overview
+## Overview
 
 A value can either be some text, a list, or an associate list (a dictionary).
 
-##### Examples
+### Examples
 
 ```swift
 let hello: URL.Template.Value = .text("Hello World!")

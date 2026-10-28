@@ -25,7 +25,7 @@ var userInfo: [AnyHashable : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if no application-specific data exists. As an example, if a method’s return value caused the exception to be raised, the return value might be available to the exception handler through this method.
 

@@ -25,7 +25,7 @@ init(avAudioNode node: AVAudioNode?)
 - (instancetype) initWithAVAudioNode:(AVAudioNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized audio node.
 

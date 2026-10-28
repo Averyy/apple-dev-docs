@@ -21,7 +21,7 @@ func activate(for session: LiveActivityForwarding.Session)
 
 - [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Store a reference to the session and use it to receive life-cycle events and updates to ongoing Live Activities. The session becomes invalid after the system calls [`sessionInvalidated()`](./sessioninvalidated%28%29.md) to indicate that the system won’t deliver Live Activities to your accessory. Don’t use the session after invalidation.
 

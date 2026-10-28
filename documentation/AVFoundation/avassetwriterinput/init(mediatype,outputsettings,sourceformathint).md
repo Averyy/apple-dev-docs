@@ -24,7 +24,7 @@ init(mediaType: AVMediaType, outputSettings: [String : Any]?, sourceFormatHint: 
 - (instancetype) initWithMediaType:(AVMediaType) mediaType outputSettings:(NSDictionary<NSString *,id> *) outputSettings sourceFormatHint:(CMFormatDescriptionRef) sourceFormatHint;
 ```
 
-#### Discussion
+## Discussion
 
 To guarantee successful file writing, ensure that sample buffers you append are of the specified format.
 

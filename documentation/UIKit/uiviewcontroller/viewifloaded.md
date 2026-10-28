@@ -23,7 +23,7 @@ var viewIfLoaded: UIView? { get }
 @property (nonatomic, strong, readonly, nullable) UIView * viewIfLoaded;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller’s view has already been loaded, this property contains that view. If the view has not yet been loaded, this property is set to `nil`.
 

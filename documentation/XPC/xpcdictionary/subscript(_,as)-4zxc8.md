@@ -21,7 +21,7 @@ Reads and writes the value associated with the given key as a string.
 subscript(key: String, as type: String.Type = String.self) -> String? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with key in the dictionary; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 

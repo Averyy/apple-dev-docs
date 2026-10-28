@@ -10,7 +10,7 @@ virtual UInt16 GetVendorID(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the Vendor ID of the device
 

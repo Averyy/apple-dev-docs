@@ -5,7 +5,7 @@
 
 Global variables associated with print errors.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Use [`UIPrintError`](./uiprinterror.md) instead.
 

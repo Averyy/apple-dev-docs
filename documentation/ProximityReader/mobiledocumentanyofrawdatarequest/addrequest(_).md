@@ -17,7 +17,7 @@ Adds the request as a candidate of this composite request.
 mutating func addRequest(_ request: any MobileDocumentRawDataRequest)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: A request isn’t considered valid if it contains requests that are not raw data requests. If you call [`requestDocument(_:)`](../mobiledocumentreadersession/requestdocument%28_%29.md) with an invalid request, the framework throws a [`MobileDocumentReaderError.invalidRequest`](../mobiledocumentreadererror/invalidrequest.md) error.
 

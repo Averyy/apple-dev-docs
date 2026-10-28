@@ -19,7 +19,7 @@ static let horizontalPagination: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintHorizontalPagination;
 ```
 
-#### Discussion
+## Discussion
 
 `NSAutoPagination`, `NSFitPagination`, or `NSClipPagination`. See [`horizontalPagination`](../horizontalpagination.md) for details.
 

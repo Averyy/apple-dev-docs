@@ -25,15 +25,15 @@ func CFDateFormatterCreateDateFormatFromTemplate(_ allocator: CFAllocator!, _ tm
 extern CFStringRefCFDateFormatterCreateDateFormatFromTemplate(CFAllocatorRef allocator, CFStringRef tmplate, CFOptionFlags options, CFLocaleRef locale);
 ```
 
-#### Return Value
+## Return Value
 
 A localized date format string representing the date format components given in `template`, arranged appropriately for the locale specified by `locale`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The returned string may not contain exactly those components given in `template`, but may—for example—have locale-specific adjustments applied.
 
-#### Discussion
+## Discussion
 
 Different locales have different conventions for the ordering of date components. You use this method to get an appropriate format string for a given set of components for a specified locale (typically you use the current locale—see [`CFLocaleCopyCurrent()`](./cflocalecopycurrent%28%29.md)).
 

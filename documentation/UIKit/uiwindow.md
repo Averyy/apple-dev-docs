@@ -30,7 +30,7 @@ class UIWindow
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Overview
+## Overview
 
 Windows work with your view controllers to handle events and to perform many other tasks that are fundamental to your app’s operation. UIKit handles most window-related interactions, working with other objects as needed to implement many app behaviors.
 
@@ -55,7 +55,7 @@ Windows don’t have any visual appearance of their own. Instead, a window hosts
 
 You should rarely need to subclass [`UIWindow`](./uiwindow.md). The kinds of behaviors you might implement in a window can usually be implemented in a higher-level view controller more easily. One of the few times you might want to subclass is to override the [`becomeKey()`](./uiwindow/becomekey%28%29.md) or [`resignKey()`](./uiwindow/resignkey%28%29.md) methods to implement custom behaviors when a window’s key status changes. For information about how to display a window on a specific screen, see [`UIScreen`](./uiscreen.md).
 
-##### Understand keyboard interactions
+### Understand keyboard interactions
 
 Whereas touch events are delivered to the window where they occurred, events that don’t have a relevant coordinate value are delivered to the *key window*. Only one window at a time can be the key window, and you can use a window’s [`isKeyWindow`](./uiwindow/iskeywindow.md) property to determine its status. Most of the time, your app’s main window is the key window, but UIKit may designate a different window as needed.
 

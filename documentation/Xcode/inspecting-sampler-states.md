@@ -5,11 +5,11 @@
 
 Verify your sampler state configurations by examining their properties.
 
-#### Overview
+## Overview
 
 The Metal debugger allows you to inspect a sampler state with the Sampler State viewer. After opening a sampler state, you can view its associated properties and preview the sampling behavior. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md) or [Analyzing memory usage](./analyzing-memory-usage.md).
 
-##### Navigate your sampler state
+### Navigate your sampler state
 
 The Sampler State viewer shows the properties of your sampler state on the left (as configured by [`MTLSamplerDescriptor`](../Metal/mtlsamplerdescriptor.md)) and a preview on the right. The preview illustrates how pixels in a texture appear when using your sampler state.
 
@@ -23,7 +23,7 @@ You can use the preview to quickly verify the configuration for your sampler sta
 
 ![A screenshot of the Sampler State viewer displaying a sampler state configured with nearest filtering and clamp-to-border address mode. The border color is opaque black.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sv-nearest-clamp-border-black-plus-overview@2x.png)
 
-##### Try various combinations
+### Try various combinations
 
 The properties you configure when creating a sampler state determine how a texture looks when sampling it. The properties related to filtering control how pixels combine when the sample footprint is either larger or smaller than a pixel, or when it’s between mipmap levels. The address mode determines the texture coordinate at each pixel when a read falls outside the bounds of a texture. You can try using different combinations of filtering and addressing modes until you achieve your desired look.
 

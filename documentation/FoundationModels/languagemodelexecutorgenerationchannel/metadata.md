@@ -20,7 +20,7 @@ Snapshot of an entry’s metadata dictionary.
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 Each event replaces the prior metadata wholesale; keys absent from `values` are considered removed.
 

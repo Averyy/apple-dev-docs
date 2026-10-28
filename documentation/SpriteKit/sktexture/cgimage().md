@@ -25,7 +25,7 @@ func cgImage() -> CGImage
 - (CGImageRef) CGImage;
 ```
 
-#### Discussion
+## Discussion
 
 The [`cgImage()`](./cgimage%28%29.md) property returns the contents of a texture as a Quartz Image.
 

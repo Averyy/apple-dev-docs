@@ -25,7 +25,7 @@ static let secure: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieSecure;
 ```
 
-#### Discussion
+## Discussion
 
 Providing any value for this key indicates that the cookie should remain secure.
 

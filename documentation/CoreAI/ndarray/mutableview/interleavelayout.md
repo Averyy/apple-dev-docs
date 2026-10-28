@@ -21,7 +21,7 @@ var interleaveLayout: NDArray.InterleaveLayout? { get }
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md) for full documentation.
 

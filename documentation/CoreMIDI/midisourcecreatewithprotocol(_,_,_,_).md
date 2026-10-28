@@ -23,11 +23,11 @@ func MIDISourceCreateWithProtocol(_ client: MIDIClientRef, _ name: CFString, _ p
 extern OSStatus MIDISourceCreateWithProtocol(MIDIClientRef client, CFStringRef name, MIDIProtocolID protocol, MIDIEndpointRef *outSrc);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Drivers don’t need to call this function. When they create devices and entities, the system automatically creates sources and destinations at that time. After creating a virtual source, use [`MIDIReceivedEventList(_:_:)`](./midireceivedeventlist%28_,_%29.md) to transmit MIDI messages from your virtual source to any clients connected to the virtual source.
 

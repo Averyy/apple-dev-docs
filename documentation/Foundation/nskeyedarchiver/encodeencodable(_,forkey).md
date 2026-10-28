@@ -22,7 +22,7 @@ Encodes a given value and associates it with a key.
 func encodeEncodable<T>(_ value: T, forKey key: String) throws where T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 

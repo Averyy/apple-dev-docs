@@ -24,7 +24,7 @@ var color: CGColor? { get set }
 @property (nonatomic, nullable) CGColorRef color;
 ```
 
-#### Discussion
+## Discussion
 
 The default color corresponds to a color temperature of 6500 K, as described by the [`setColorByTemperature(_:)`](./setcolorbytemperature%28_%29.md) method.
 

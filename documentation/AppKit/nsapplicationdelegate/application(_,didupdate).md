@@ -20,7 +20,7 @@ optional func application(_ application: NSApplication, didUpdate userActivity: 
 - (void) application:(NSApplication *) application didUpdateUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when any user activity managed by AppKit has been updated. Use this as a last chance to add additional data to the user activity object.
 

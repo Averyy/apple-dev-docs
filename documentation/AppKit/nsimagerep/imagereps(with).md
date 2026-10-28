@@ -19,11 +19,11 @@ class func imageReps(with pasteboard: NSPasteboard) -> [NSImageRep]?
 + (NSArray<NSImageRep *> *) imageRepsWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 An array of image representation objects. The array contains one object for each image in the specified pasteboard.
 
-#### Discussion
+## Discussion
 
 If sent to the `NSImageRep` class object, this method returns an array of objects (all newly-allocated instances of a subclass of `NSImageRep`) that have been initialized with the data in the specified pasteboard. If sent to a subclass of `NSImageRep` that recognizes the pasteboard data, it returns an array of objects (all instances of that subclass) initialized with the pasteboard data.
 

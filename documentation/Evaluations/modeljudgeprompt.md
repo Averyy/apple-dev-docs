@@ -25,7 +25,7 @@ struct ModelJudgePrompt<Input> where Input : ModelSampleProtocol
 
 - [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
 
-#### Overview
+## Overview
 
 ```swift
 let prompt = ModelJudgePrompt<ModelSample<String>>(

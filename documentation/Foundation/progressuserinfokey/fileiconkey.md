@@ -19,7 +19,7 @@ static let fileIconKey: ProgressUserInfoKey
 extern NSProgressUserInfoKey const NSProgressFileIconKey;
 ```
 
-#### Discussion
+## Discussion
 
 If present, the Finder uses this corresponding value to show the icon of a file that a progress object is tracking.
 

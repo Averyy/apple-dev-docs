@@ -21,7 +21,7 @@ A message a file handle sends when it determines data is available for reading f
 struct DataAvailableMessage
 ```
 
-#### Overview
+## Overview
 
 Before adding an observer for this message type, call either [`waitForDataInBackgroundAndNotify()`](./waitfordatainbackgroundandnotify%28%29.md) or [`waitForDataInBackgroundAndNotify(forModes:)`](./waitfordatainbackgroundandnotify%28formodes%29.md) on an appropriate [`FileHandle`](../filehandle.md) object.
 

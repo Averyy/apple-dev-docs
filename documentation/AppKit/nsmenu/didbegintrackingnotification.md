@@ -19,7 +19,7 @@ class let didBeginTrackingNotification: NSNotification.Name
 extern NSNotificationName NSMenuDidBeginTrackingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the main menu bar (`[NSApp mainMenu]`) or the root menu of a popup button. This notification does not contain a `userInfo` dictionary.
 

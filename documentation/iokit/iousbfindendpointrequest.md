@@ -16,7 +16,7 @@ typedef struct IOUSBFindEndpointRequest {
 } IOUSBFindEndpointRequest;
 ```
 
-#### Overview
+## Overview
 
 Struct used to find endpoints of an interface type and direction are used to match endpoints, type, direction, maxPacketSize and interval are updated with the properties of the found endpoint.
 

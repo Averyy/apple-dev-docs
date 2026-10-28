@@ -19,7 +19,7 @@ class NSScrubber
 @interface NSScrubber : NSView
 ```
 
-#### Overview
+## Overview
 
 On supported MacBook Pro models, you can use a scrubber (an instance of the [`NSScrubber`](./nsscrubber.md) class) to provide a horizontally-oriented, item-picker control in the Touch Bar. Use a scrubber to let the user pick an item from a related collection, such as a photo from a library or a date from a date range.
 
@@ -43,7 +43,7 @@ A scrubber employs:
 
 Before learning how to use a scrubber in the Touch Bar, be sure you read the overview for the [`NSTouchBar`](./nstouchbar.md) class.
 
-##### Scrubber data source and delegate
+### Scrubber data source and delegate
 
 A scrubber employs a data source and a delegate, using a pattern similar to that used for collection views, as follows:
 
@@ -114,7 +114,7 @@ func scrubber(_ scrubber: NSScrubber, didSelectItemAt index: Int) {
 }
 ```
 
-##### Choose a scrubber touch-interaction model
+### Choose a scrubber touch-interaction model
 
 A scrubber offers many built-in permutations for touch interaction. By subclassing a scrubber, you can customize touch interaction.
 
@@ -134,7 +134,7 @@ To specify a scrubber’s touch-interaction model, set values for the following,
 
 Your choices for scrolling, selection, and alignment jointly impact highlighting and selection behavior. For details on highlighting and selection, see [Position-based scrubber item selection](./nsscrubber.md#Position-based-scrubber-item-selection). Your choice for alignment also impacts scrubber-item resting-position behavior following a scroll interaction. For details on resting position, see [Scrubber item resting position](./nsscrubber.md#Scrubber-item-resting-position).
 
-##### Position-based scrubber item selection
+### Position-based scrubber item selection
 
 In free mode with continuous selection style (the [`mode`](./nsscrubber/mode-swift.property.md) property value is [`NSScrubber.Mode.free`](./nsscrubber/mode-swift.enum/free.md) and the [`isContinuous`](./nsscrubber/iscontinuous.md) property value is `YES` for this configuration), the scrubber item on the alignment axis is automatically highlighted and selected. The *alignment axis* is the left edge, right edge, or center of the scrubber, as you specify by setting the value of the [`itemAlignment`](./nsscrubber/itemalignment.md) property using constants from the [`NSScrubber.Alignment`](./nsscrubber/alignment.md) enumeration. Specifying an alignment axis of [`NSScrubber.Alignment.none`](./nsscrubber/alignment/none.md) is equivalent to a value of [`NSScrubber.Alignment.center`](./nsscrubber/alignment/center.md) for position-based item selection.
 
@@ -142,7 +142,7 @@ In free mode with deliberate selection style (the [`mode`](./nsscrubber/mode-swi
 
 In fixed mode (the [`mode`](./nsscrubber/mode-swift.property.md) property value is [`NSScrubber.Mode.fixed`](./nsscrubber/mode-swift.enum/fixed.md) for this configuration), the system ignores the [`itemAlignment`](./nsscrubber/itemalignment.md) property value in terms of item selection — no matter which value you specify for the [`isContinuous`](./nsscrubber/iscontinuous.md) property.
 
-##### Scrubber item resting position
+### Scrubber item resting position
 
 The value you provide in the [`itemAlignment`](./nsscrubber/itemalignment.md) property specifies the automatic scrubber item resting position that follows manual or automatic scrolling. (This value also affects item highlighting and selection, as described in [Choose a scrubber touch-interaction model](./nsscrubber.md#Choose-a-scrubber-touch-interaction-model).) The system respects your setting for resting position irrespective of the values of the [`mode`](./nsscrubber/mode-swift.property.md) and [`isContinuous`](./nsscrubber/iscontinuous.md) properties.
 
@@ -153,11 +153,11 @@ Specifically:
 - [`NSScrubber.Alignment.trailing`](./nsscrubber/alignment/trailing.md) — In a left-to-right language, the scrubber comes to rest, following manual or automatic scrolling, so that the right edge of the rightmost scrubber item is coincident with the right edge of the scrubber.
 - [`NSScrubber.Alignment.none`](./nsscrubber/alignment/none.md) — Following manual or automatic scrolling, the scrubber comes to rest without attempting to align any scrubber item.
 
-##### Scrubber layout
+### Scrubber layout
 
 A scrubber configures the views for its items with the help of two classes, [`NSScrubberLayout`](./nsscrubberlayout.md) and [`NSScrubberLayoutAttributes`](./nsscrubberlayoutattributes.md), as described in this section.
 
-###### Layout implementation
+#### Layout implementation
 
 A *layout* is a concrete implementation of the [`NSScrubberLayout`](./nsscrubberlayout.md) abstract class. AppKit provides two concrete, preconfigured layout subclasses: [`NSScrubberFlowLayout`](./nsscrubberflowlayout.md) and [`NSScrubberProportionalLayout`](./nsscrubberproportionallayout.md). If you use one of these built-in layout types, there’s no additional layout code to write, apart from adding your choice of built-in layout to the scrubber’s [`scrubberLayout`](./nsscrubber/scrubberlayout.md) property. This Swift example shows this simple step for the flow layout:
 
@@ -200,13 +200,13 @@ You can specify additional item attributes by subclassing the [`NSScrubberLayout
 
 If you’re using a custom [`NSScrubberLayout`](./nsscrubberlayout.md) subclass, provide an implementation for the [`invalidateLayout()`](./nsscrubberlayout/invalidatelayout%28%29.md) method to clear any custom layout state, such as by discarding cached data.
 
-###### Prepare for redrawing
+#### Prepare for redrawing
 
 The flip side of layout invalidation (as described in [Layout implementation](./nsscrubber.md#Layout-implementation)) is preparation for redrawing, which you perform in a layout’s [`prepare()`](./nsscrubberlayout/prepare%28%29.md) method. The goal of layout preparation is to optimize performance. A scrubber calls the [`prepare()`](./nsscrubberlayout/prepare%28%29.md) method exactly once between invalidation and redrawing. Complete as much one-time, up-front layout work as you can, in advance of redrawing, in this step. For example, your [`prepare()`](./nsscrubberlayout/prepare%28%29.md) implementation should perform initial layout calculations and should fill caches needed during drawing.
 
 After the [`prepare()`](./nsscrubberlayout/prepare%28%29.md) method returns, the system updates the scrubber view hierarchy with repeated calls to three [`NSScrubberLayout`](./nsscrubberlayout.md) methods: [`layoutAttributesForItem(at:)`](./nsscrubberlayout/layoutattributesforitem%28at%29.md), [`layoutAttributesForItems(in:)`](./nsscrubberlayout/layoutattributesforitems%28in%29.md), and [`scrubberContentSize`](./nsscrubberlayout/scrubbercontentsize.md). Implement these methods to provide return values as quickly as possible, taking advantage of the work you did during layout preparation.
 
-##### Scrubber items
+### Scrubber items
 
 The view that represents a scrubber item is provided by your data source object, using the [`scrubber(_:viewForItemAt:)`](./nsscrubberdatasource/scrubber%28_,viewforitemat%29.md) protocol method. AppKit provides two purpose-built view classes you can use, both of which are concrete subclasses of the abstract [`NSScrubberItemView`](./nsscrubberitemview.md) class:
 
@@ -215,11 +215,11 @@ The view that represents a scrubber item is provided by your data source object,
 
 To create a custom item, subclass these or their abstract superclass, [`NSScrubberItemView`](./nsscrubberitemview.md).
 
-##### Scrubbers and the responder chain
+### Scrubbers and the responder chain
 
 To show a scrubber, associate it with an [`NSTouchBar`](./nstouchbar.md) object (adding it, as the view for a custom item or popover item, to the bar) and then associate the bar with the appropriate responder object in your app. The system then shows the scrubber in the Touch Bar only at appropriate times. For more information on bars and the responder chain, read the overview for the [`NSTouchBar`](./nstouchbar.md) class.
 
-##### Choose between a scrubber and a scroll view
+### Choose between a scrubber and a scroll view
 
 When choosing between a scrubber and a scroll view, use a scrubber unless the amount of content, or the nature of your content, doesn’t work well in a scrubber. Scrubber interaction is optimized for the Touch Bar, typically making a scrubber the better option for letting the user pick from among several choices, such as dates in a calendar.
 

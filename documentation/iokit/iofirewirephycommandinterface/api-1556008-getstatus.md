@@ -16,11 +16,11 @@ Return command completion status.
 IOReturn (*GetStatus)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code indicating the completion error (if any) returned the last time this command object was executed
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

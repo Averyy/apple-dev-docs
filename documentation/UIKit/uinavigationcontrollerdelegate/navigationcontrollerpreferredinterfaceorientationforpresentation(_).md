@@ -22,7 +22,7 @@ optional func navigationControllerPreferredInterfaceOrientationForPresentation(_
 - (UIInterfaceOrientation) navigationControllerPreferredInterfaceOrientationForPresentation:(UINavigationController *) navigationController;
 ```
 
-#### Return Value
+## Return Value
 
 The preferred orientation for presenting the navigation controller.
 

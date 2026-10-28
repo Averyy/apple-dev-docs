@@ -23,7 +23,7 @@ class func supportsMetal4FX(_ device: any MTLDevice) -> Bool
 + (BOOL) supportsMetal4FX:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports frame interpolation for Metal 4, [`false`](../../Swift/false.md) otherwise.
 

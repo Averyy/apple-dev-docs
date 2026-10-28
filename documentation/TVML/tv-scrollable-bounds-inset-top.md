@@ -5,7 +5,7 @@
 
 Specifies the size of an unscrollable region only at the top of the stack template.
 
-#### Overview
+## Overview
 
 The` tv-scrollable-bounds-inset-top` style creates an unscrollable region of a specified number of points down from the top of the `stackTemplate.`
 
@@ -28,7 +28,7 @@ Here’s an example that sets the inset at the top to 100 points.
 </stackTemplate>
 ```
 
-##### Elements That Use tv-scrollable-bounds-inset-top
+### Elements That Use tv-scrollable-bounds-inset-top
 
 - [stackTemplate](https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html#//apple_ref/doc/uid/TP40015064-CH21)
 

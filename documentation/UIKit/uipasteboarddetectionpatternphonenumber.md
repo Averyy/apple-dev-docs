@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects a string that contains a phone n
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternPhoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains a phone number, the system reports the value as an array of [`NSString`](../Foundation/nsstring.md). You can return the detected results in a paste operation with `UIPasteboardDetectionResultPhoneNumber`, which contains a semantic representation of the phone number and label values.
 

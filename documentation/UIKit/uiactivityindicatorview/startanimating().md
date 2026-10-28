@@ -23,7 +23,7 @@ func startAnimating()
 - (void) startAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 When the progress indicator is animated, the gear spins to indicate indeterminate progress. The indicator is animated until [`stopAnimating()`](./stopanimating%28%29.md) is called.
 

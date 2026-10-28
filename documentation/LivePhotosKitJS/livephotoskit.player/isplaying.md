@@ -15,7 +15,7 @@ A Boolean value that indicates whether or not the Player is playing.
 readonly attribute Boolean isPlaying;
 ```
 
-#### Discussion
+## Discussion
 
 If this Boolean value is `true`, the Player is advancing [`currentTime`](./currenttime.md) automatically, as close to every one-sixtieth of a second as it can achieve.
 

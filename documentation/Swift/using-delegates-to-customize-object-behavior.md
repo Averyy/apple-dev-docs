@@ -5,11 +5,11 @@
 
 Respond to events on behalf of a delegator.
 
-#### Overview
+## Overview
 
 You use delegates to interact with Cocoa objects that inform you of events in an app.
 
-##### Adopt a Delegate Protocol
+### Adopt a Delegate Protocol
 
 Cocoa APIs often provide protocols that include delegate methods. When an event occurs—such as a user resizing a window—a class that’s a delegator will detect the event and call delegate methods on the class you specify as the delegate. Delegate methods can customize how an app responds to an event.
 
@@ -23,7 +23,7 @@ class MyDelegate: NSObject, NSWindowDelegate {
 }
 ```
 
-##### Check That Delegates Exist
+### Check That Delegates Exist
 
 The Cocoa delegation pattern doesn’t require that delegates are instantiated. If you don’t need to respond to events, you don’t need to create a delegate. Before you call a method on an object’s delegate, make sure that the delegate isn’t `nil`.
 

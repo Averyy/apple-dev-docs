@@ -12,7 +12,7 @@ Allow users to collaborate on the design of ice cream sundae stickers.
 - Mac Catalyst 12.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 In this sample project, two or more users work together to build ice cream sundae stickers inside an iMessage Extension. Each completed sticker consists of a base, scoops of ice cream, and a topping. The process of building the sundae is collaborative and each step can be completed by any user who has the app installed. The participants can then send the stickers as images or attach them to any sent message.
 
@@ -25,7 +25,7 @@ The iMessage Extension target uses a [MSMessagesAppViewController](./msmessagesa
 
 When the iMessage Extension target is first initialized, the [willBecomeActive(with:)](./msmessagesappviewcontroller/willbecomeactive%28with%29.md) method of the `MessagesViewController` configures and displays the appropriate child view controller.
 
-##### Use Presentation Styles
+### Use Presentation Styles
 
 iMessage Extensions can be required to display in [several different presentation styles](./msmessagesapppresentationstyle.md). This sample code demonstrates the [compact](./msmessagesapppresentationstyle/compact.md) and [expanded](./msmessagesapppresentationstyle/expanded.md) styles.
 
@@ -51,11 +51,11 @@ if presentationStyle == .compact {
 }
 ```
 
-##### Attach Stickers to Messages
+### Attach Stickers to Messages
 
 The `IceCreamsViewController` uses a collection view to display all previously created ice cream sundae stickers. Each cell uses a [MSStickerView](./msstickerview.md) object that displays a [MSSticker](./mssticker.md) and also implements the standard functionality of dragging and dropping stickers to attach them to messages in the transcript, or sending the sticker as an image.
 
-##### Pass Data with Messages
+### Pass Data with Messages
 
 All data passed between users in a conversation needs to be encoded in a URL; you should use [URLComponents](../Foundation/urlcomponents.md) to build and parse these URLs.
 

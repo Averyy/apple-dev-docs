@@ -25,7 +25,7 @@ func CGPointCreateDictionaryRepresentation(_ point: CGPoint) -> CFDictionary
 extern CFDictionaryRefCGPointCreateDictionaryRepresentation(CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary representation of the point.
 

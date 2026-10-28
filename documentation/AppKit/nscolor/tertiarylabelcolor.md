@@ -19,7 +19,7 @@ class var tertiaryLabelColor: NSColor { get }
 @property (class, strong, readonly) NSColor * tertiaryLabelColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color for disabled text and for other less important text in your interface. You can also use it for other types of tertiary app content.
 

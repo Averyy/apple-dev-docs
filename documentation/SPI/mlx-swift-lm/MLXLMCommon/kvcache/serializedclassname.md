@@ -18,7 +18,7 @@ The class name written to prompt cache files, or `nil` if this cache cannot be s
 static var serializedClassName: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use a unique name, for example with a module prefix. A subclass that does not override it saves under its parent’s name and restores as the parent.
 

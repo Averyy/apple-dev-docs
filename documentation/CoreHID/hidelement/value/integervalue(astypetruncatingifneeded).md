@@ -19,7 +19,7 @@ func integerValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> In
 
 - [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
-#### Return Value
+## Return Value
 
 The data cast as the requested type.
 

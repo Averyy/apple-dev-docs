@@ -23,7 +23,7 @@ case videoDeviceNotAvailableWithMultipleForegroundApps
 AVCaptureSessionInterruptionReasonVideoDeviceNotAvailableWithMultipleForegroundApps
 ```
 
-#### Discussion
+## Discussion
 
 If your capture session configuration disallows accessing the camera while multitasking, the system interrupts it with this reason when a user switches to a multitasking mode like Split View. The system doesn’t interrupt your capture session with this reason if [`isMultitaskingCameraAccessEnabled`](../ismultitaskingcameraaccessenabled.md) is [`true`](../../../Swift/true.md).
 

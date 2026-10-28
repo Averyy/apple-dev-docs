@@ -24,11 +24,11 @@ class func disambiguation(with urlsToDisambiguate: [URL]) -> Self
 + (instancetype) disambiguationWithURLsToDisambiguate:(NSArray<NSURL *> *) urlsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INURLResolutionResult`](../inurlresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one URL matches the given information and you can’t pick one definitively. Ask the user to select from among the notes that you specify.
 

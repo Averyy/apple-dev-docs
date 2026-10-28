@@ -22,7 +22,7 @@ nonisolated
 func tabBarMinimizeBehavior(_ behavior: TabBarMinimizeBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following TabView minimizes its tab bar when scrolling in the ‘Numbers’ or ‘Alerts’ tabs on iPhone.
 

@@ -22,7 +22,7 @@ class ASAccountAuthenticationModificationExtensionContext
 @interface ASAccountAuthenticationModificationExtensionContext : NSExtensionContext
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
 

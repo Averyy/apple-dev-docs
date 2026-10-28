@@ -17,7 +17,7 @@ Derive a shared secret to bootstrap IPSec, using the resulting shared secret as 
 static let ipsecPSK: WASharedSecret.ProtocolName
 ```
 
-#### Discussion
+## Discussion
 
 Best practices for IPSec security are described in [NIST Special Publication 800-77](https://csrc.nist.gov/pubs/sp/800/77/r1/final). IKEv2 and IPSec-v3 are recommended.
 

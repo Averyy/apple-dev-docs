@@ -25,7 +25,7 @@ class let sRGB: CFString
 extern CFStringRef const kCGColorSpaceSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 The sRGB colorimetry and non-linear transfer function are specified in IEC 61966-2-1.
 

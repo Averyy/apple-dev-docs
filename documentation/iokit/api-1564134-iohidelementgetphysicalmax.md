@@ -16,11 +16,11 @@ Returns the scaled maximum value possible for the element.
 CFIndex IOHIDElementGetPhysicalMax(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the physical maximum.
 
-#### Discussion
+## Discussion
 
 Maximum value for the physical extent of a variable element. This represents the value for the logical maximum with units applied to it.
 

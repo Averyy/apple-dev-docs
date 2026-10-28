@@ -28,7 +28,7 @@ optional func resolveEnableHeating(for intent: INSetSeatSettingsInCarIntent) asy
 - (void) resolveEnableHeatingForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether the app can enable the seat heating system.
 

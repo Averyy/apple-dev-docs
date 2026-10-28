@@ -5,7 +5,7 @@
 
 This header contains the IOPartitionScheme class definition.
 
-#### Overview
+## Overview
 
 ## Topics
 

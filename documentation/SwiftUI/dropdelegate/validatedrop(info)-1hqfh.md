@@ -20,7 +20,7 @@ Tells the delegate that a drop containing items conforming to one of the expecte
 @preconcurrency func validateDrop(info: DropInfo) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Specify the expected types when you apply the drop modifier to the view. The default implementation returns `true`.
 

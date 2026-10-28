@@ -27,7 +27,7 @@ func handle(getAvailableRestaurantReservationBookingDefaults intent: INGetAvaila
 - (void) handleGetAvailableRestaurantReservationBookingDefaults:(INGetAvailableRestaurantReservationBookingDefaultsIntent *) intent completion:(void (^)(INGetAvailableRestaurantReservationBookingDefaultsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should construct a response object containing the default values to use. Use the information in the `intent` parameter to fetch any restaurant-specific information. When done, execute the provided block with your response object.
 

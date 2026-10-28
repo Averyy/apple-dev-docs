@@ -24,7 +24,7 @@ let HMCharacteristicTypeAudioFeedback: String
 extern NSString * const HMCharacteristicTypeAudioFeedback;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding Boolean value indicates whether audio feedback is enabled.
 

@@ -19,7 +19,7 @@ Creates a tensor with the shape, scalar value, and data type you specify.
 + (instancetype) tensorWithShape:(NSArray<NSNumber *> *) shape fillWithData:(NSNumber *) fillData dataType:(MLCDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor.
 

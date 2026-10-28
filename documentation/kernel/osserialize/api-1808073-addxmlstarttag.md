@@ -13,11 +13,11 @@ virtual bool addXMLStartTag(
  const char *tagString);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if an XML start tag for `tagString` is successfully added to the XML stream, `false` otherwise.
 
-#### Overview
+## Overview
 
 This function emits the named tag, enclosed within a pair of angle brackets.
 

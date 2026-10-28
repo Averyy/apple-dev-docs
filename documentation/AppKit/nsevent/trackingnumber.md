@@ -19,7 +19,7 @@ var trackingNumber: Int { get }
 @property (readonly) NSInteger trackingNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains either an [`NSTrackingArea`](../nstrackingarea.md) object or an [`NSView.TrackingRectTag`](../nsview/trackingrecttag.md) constant, depending on how AppKit generated the event. Valid mouse-tracking event types are [`NSMouseEntered`](../nsmouseentered.md), [`NSMouseExited`](../nsmouseexited.md), and [`NSCursorUpdate`](../nscursorupdate.md). For other types of events, accessing this property raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md).
 

@@ -24,7 +24,7 @@ class GCDualShockGamepad
 @interface GCDualShockGamepad : GCExtendedGamepad
 ```
 
-#### Overview
+## Overview
 
 The DualShock 4 controller profile is similar to an extended gamepad ([`GCExtendedGamepad`](./gcextendedgamepad.md)), but has a touchpad with a button and two-finger tracking.
 

@@ -19,7 +19,7 @@ func setWindowsNeedUpdate(_ needUpdate: Bool)
 - (void) setWindowsNeedUpdate:(BOOL) needUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 This method is especially useful for making sure menus are updated to reflect changes not initiated by user actions, such as messages received from remote objects.
 

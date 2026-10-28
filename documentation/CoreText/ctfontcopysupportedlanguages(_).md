@@ -25,7 +25,7 @@ func CTFontCopySupportedLanguages(_ font: CTFont) -> CFArray
 extern CFArrayRefCTFontCopySupportedLanguages(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to an array of languages supported by the font. The array contains language identifier strings as `CFStringRef` objects. The format of the language identifier conforms to the RFC 3066bis standard.
 

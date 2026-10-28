@@ -5,7 +5,7 @@
 
 Give people the option to customize their widgets by adding a custom app intent to your project.
 
-#### Overview
+## Overview
 
 To make the most relevant information easily accessible to people, widgets can provide customizable properties. For example, a person can select a specific stock for a stock quote widget, or enter a tracking number for a package delivery widget. Widgets define customizable properties by using app intents, the same mechanism that Siri Suggestions and Siri Shortcuts use for customizing those interactions.
 
@@ -19,7 +19,7 @@ If your app already supports Siri Suggestions or Siri Shortcuts and you have a c
 
 > **Note**: Prior to iOS 17, iPadOS 17, and macOS 14, configurable widgets used SiriKit Intents. For information on migrating your configurable widgets from the SiriKit Intents to the App Intents framework, see [Migrating widgets from SiriKit Intents to App Intents](./migrating-from-sirikit-intents-to-app-intents.md).
 
-##### Add a custom app intent to your project
+### Add a custom app intent to your project
 
 To show the character’s information, the person needs a way to select the character. The following code shows how to define a custom app intent to represent the choice the person makes:
 
@@ -84,7 +84,7 @@ A second option is to use a query type that implements `defaultResult()`, as sho
 
 For custom intents with parameters that conform to `AppEntity`, implement initializer methods to provide default values for the nonoptional parameters, such as the `init(character:)` method in the code for `SelectCharacterIntent` shown above. In your timeline provider’s `placeholder(in:)` method, use one of these initializer methods to initialize the app intent that you pass to the timeline entry. These methods enable you to customize the placeholder with values that might be different from the default, if needed.
 
-##### Implement a query to provide dynamic values
+### Implement a query to provide dynamic values
 
 Some of the tasks that an [`EntityQuery`](../AppIntents/entityquery.md) performs include:
 
@@ -116,7 +116,7 @@ With the configuration of the custom app intent done, a person can edit the widg
 
 After the person edits the widget and selects a character, the next step is to incorporate that choice into the widget’s display.
 
-##### Handle customized values in your widget
+### Handle customized values in your widget
 
 To support configurable properties, a widget uses the [`AppIntentTimelineProvider`](./appintenttimelineprovider.md) configuration. For example, the character-details widget defines its configuration as follows:
 
@@ -155,13 +155,13 @@ struct CharacterDetailProvider: AppIntentTimelineProvider {
 
 When you include the customized values in the timeline entry, your widget’s view can display the appropriate content.
 
-##### Access customized values in your app
+### Access customized values in your app
 
 When a person taps on a widget to open your app, WidgetKit passes the customized intent to your app in an [`NSUserActivity`](../Foundation/nsuseractivity.md). In your app’s code that handles the user activity, such as [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) for a SwiftUI app or [`scene(_:continue:)`](../UIKit/uiscenedelegate/scene%28_,continue%29.md) for a UIKit app, use the [`widgetConfigurationIntent(of:)`](../Foundation/nsuseractivity/widgetconfigurationintent%28of%29.md) method to access the widget’s intent.
 
 To access the intent of any widget that the user has installed, use [`getCurrentConfigurations(_:)`](./widgetcenter/getcurrentconfigurations%28_%29.md) to fetch the [`WidgetInfo`](./widgetinfo.md) objects. Iterate over the `WidgetInfo` objects and call [`widgetConfigurationIntent(of:)`](./widgetinfo/widgetconfigurationintent%28of%29.md).
 
-##### Offer configurable widgets and complications on Apple Watch
+### Offer configurable widgets and complications on Apple Watch
 
 Like widgets in iOS and macOS, watch complications use app intents to display user-configurable data, and implementing configurable complications and widgets in watchOS works the same as in iOS or macOS. However, you have a choice whether you want to offer a preconfigured complication or widget or allow people to configure it themselves.
 

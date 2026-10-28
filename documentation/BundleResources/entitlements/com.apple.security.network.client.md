@@ -14,7 +14,7 @@ A Boolean value indicating whether your app may open outgoing network connection
 - **Name**: `com.apple.security.network.client` (Outgoing Network Connections)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this key to allow your sandboxed app to connect to a server process running on another machine, or on the same machine.
 

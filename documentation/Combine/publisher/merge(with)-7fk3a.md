@@ -21,7 +21,7 @@ Combines elements from this publisher with those from another publisher of the s
 func merge(with other: Self) -> Publishers.MergeMany<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits an event when either upstream publisher emits an event.
 

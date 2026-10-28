@@ -21,7 +21,7 @@ Reshape to a one-dimensional tensor.
 func flattened() -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Flattening a zero-dimensional tensor will return a one-dimensional tensor.
 

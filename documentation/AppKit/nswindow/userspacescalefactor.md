@@ -17,11 +17,11 @@ Returns the scale factor applied to the window.
 - (CGFloat) userSpaceScaleFactor;
 ```
 
-#### Return Value
+## Return Value
 
 The scale factor applied to the window.
 
-#### Discussion
+## Discussion
 
 Clients can multiply view coordinates by the returned scale factor to get a set of new coordinates that are scaled to the resolution of the target screen. For example, if the scale factor is 1.25 and the view frame size is 80 x 80, the actual size of the view frame is 100 x 100 pixels on the target screen.
 

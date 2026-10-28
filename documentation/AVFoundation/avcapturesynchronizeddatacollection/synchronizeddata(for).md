@@ -22,7 +22,7 @@ func synchronizedData(for captureOutput: AVCaptureOutput) -> AVCaptureSynchroniz
 - (AVCaptureSynchronizedData *) synchronizedDataForCaptureOutput:(AVCaptureOutput *) captureOutput;
 ```
 
-#### Return Value
+## Return Value
 
 A synchronized data object corresponding to the specified capture output.
 

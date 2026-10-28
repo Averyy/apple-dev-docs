@@ -15,7 +15,7 @@ Navigation bar visibility and configuration during launch.
 - **Name**: `UINavigationBar` (Show Navigation bar)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 When you provide a dictionary for this key, the system displays a navigation bar during launch. You can optionally set the dictionary’s [`UIImageName`](./uinavigationbar/uiimagename.md) key to define a custom image for the navigation bar.
 

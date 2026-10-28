@@ -19,11 +19,11 @@ var currentSystemPresentationOptions: NSApplication.PresentationOptions { get }
 @property (readonly) NSApplicationPresentationOptions currentSystemPresentationOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The presentation options. The constants are listed in [`NSApplication.PresentationOptions`](./presentationoptions-swift.struct.md) and can combined using a C bitwise OR operator.
 
-#### Discussion
+## Discussion
 
 This property contains the presentation options that have been put into effect by the currently active app. You can use key-value observing on this property to receive notifications when:
 

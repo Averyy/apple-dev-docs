@@ -18,7 +18,7 @@ A Boolean value that determines whether to scale the content.
 @property (nonatomic) BOOL prefersScaledContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

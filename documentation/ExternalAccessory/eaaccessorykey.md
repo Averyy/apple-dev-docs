@@ -24,7 +24,7 @@ let EAAccessoryKey: String
 extern NSString * const EAAccessoryKey;
 ```
 
-#### Discussion
+## Discussion
 
 The [`EAAccessoryDidConnectNotification`](./eaaccessorydidconnectnotification.md) and [`EAAccessoryDidDisconnectNotification`](./eaaccessorydiddisconnectnotification.md) notifications contain this key in their userInfo dictionary. The value is an [`EAAccessory`](./eaaccessory.md) object.
 

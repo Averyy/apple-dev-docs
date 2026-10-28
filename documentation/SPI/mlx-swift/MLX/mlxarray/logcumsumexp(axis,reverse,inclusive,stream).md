@@ -17,7 +17,7 @@ Return the cumulative logsumexp of the elements along the given axis.
 func logCumsumExp(axis: Int, reverse: Bool = false, inclusive: Bool = true, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](../cumulative.md)
 

@@ -23,7 +23,7 @@ func queryPedometerData(from start: Date, to end: Date, withHandler handler: @es
 - (void) queryPedometerDataFromDate:(NSDate *) start toDate:(NSDate *) end withHandler:(CMPedometerHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve historical pedestrian data between the specified dates. This method runs asynchronously and delivers the data to the block you provide. Only the past seven days worth of data is stored and available for you to retrieve. Specifying a start date that is more than seven days in the past returns only the available data.
 

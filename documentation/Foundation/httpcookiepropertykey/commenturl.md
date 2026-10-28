@@ -25,7 +25,7 @@ static let commentURL: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieCommentURL;
 ```
 
-#### Discussion
+## Discussion
 
 Only valid for Version 1 cookies or later. This cookie attribute is optional.
 

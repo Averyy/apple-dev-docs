@@ -22,7 +22,7 @@ var separatorStyle: UITableViewCell.SeparatorStyle { get set }
 @property (nonatomic) UITableViewCellSeparatorStyle separatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the separator-style constants described in [`UITableViewCell`](../uitableviewcell.md). `UITableView` uses this property to set the separator style on the cell returned from the delegate in [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md).
 

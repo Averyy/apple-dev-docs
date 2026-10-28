@@ -27,11 +27,11 @@ static func .== (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 static func .== (lhs: MLTensor, rhs: some MLTensorScalar & Numeric) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean tensor where each element is true if `self` is equal to than the corresponding element of `other`, and false otherwise.
 
-#### Discussion
+## Discussion
 
 Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
 

@@ -17,7 +17,7 @@ Presents a modeless Open panel.
 - (void) beginForDirectory:(NSString *) path file:(NSString *) name types:(NSArray *) fileTypes modelessDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Similar to [`beginSheetForDirectory:file:types:modalForWindow:modalDelegate:didEndSelector:contextInfo:`](./beginsheetfordirectory_file_types_modalforwindow_modaldelegate_didendselector_contextinfo_.md), but allows for modeless operation of the panel.
 

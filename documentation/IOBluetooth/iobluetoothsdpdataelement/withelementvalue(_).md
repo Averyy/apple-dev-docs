@@ -19,11 +19,11 @@ class func withElementValue(_ element: NSObject!) -> Self!
 + (instancetype) withElementValue:(NSObject *) element;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly allocated data element object. Returns nil if there was an error parsing the element value. The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.
 
-#### Discussion
+## Discussion
 
 The value must follow the format listed above and must be an instance of NSData, NSString, NSNumber, NSArray, NSDictionary, IOBluetoothSDPUUID.
 

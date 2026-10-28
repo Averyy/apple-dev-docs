@@ -19,7 +19,7 @@ func viewWillDraw()
 - (void) viewWillDraw;
 ```
 
-#### Discussion
+## Discussion
 
 In response to receiving one of the `display` methods, the view recurses down the view hierarchy, sending this message to each of the views that may be involved in the display operation.
 

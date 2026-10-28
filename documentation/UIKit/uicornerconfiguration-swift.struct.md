@@ -19,7 +19,7 @@ A configuration that defines how corner radii are mapped to the corners of a rec
 struct UICornerConfiguration
 ```
 
-#### Overview
+## Overview
 
 Create a `UICornerConfiguration` that expresses how you want the corners of your view to appear. Your configuration can apply to corners independently or uniformly, and can form the following types of corners:
 
@@ -32,7 +32,7 @@ Select a method to create a configuration that describes which corners of your v
 
 The system uses squared corners by default, so you don’t need to set a configuration to get squared corners.
 
-##### Configure a rounded corner
+### Configure a rounded corner
 
 To configure a rounded corner with a fixed radius, provide [`fixed(_:)`](./uicornerradius-swift.struct/fixed%28_%29.md) with a value greater than zero for the radius. Since `UICornerRadius` conforms to `ExpressibleByFloatLiteral` and `ExpressibleByIntegerLiteral`, you can also provide a float or integer value for the radius:
 
@@ -40,7 +40,7 @@ To configure a rounded corner with a fixed radius, provide [`fixed(_:)`](./uicor
 myView.cornerConfiguration = .corners(radius: 12.0)
 ```
 
-##### Configure a concentric rounded corner
+### Configure a concentric rounded corner
 
 To configure a rounded corner that’s concentric relative to the containing view, use [`containerConcentric(minimum:)`](./uicornerradius-swift.struct/containerconcentric%28minimum%29.md):
 
@@ -50,7 +50,7 @@ myView.cornerConfiguration = .corners(radius: .containerConcentric())
 
 Set the `minimum` parameter to indicate a minimum radius for the rounded corner.
 
-##### Configure a corner as a capsule
+### Configure a corner as a capsule
 
 To configure rounded corners that form a capsule, use [`capsule(maximumRadius:)`](./uicornerconfiguration-swift.struct/capsule%28maximumradius%29.md):
 

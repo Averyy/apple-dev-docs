@@ -21,7 +21,7 @@ A request that analyzes an image for aesthetically pleasing attributes.
 struct CalculateImageAestheticsScoresRequest
 ```
 
-#### Overview
+## Overview
 
 The request returns the resulting aesthetics score in an instance of [`ImageAestheticsScoresObservation`](./imageaestheticsscoresobservation.md).
 

@@ -21,7 +21,7 @@ Returns a rectangle that results from applying the specified projective transfor
 static SPRect3D SPRect3DUnapplyProjectiveTransform(SPRect3D rect, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from applying the specified projective transform.
 

@@ -20,7 +20,7 @@ Creates a movie minder and adds a movie with a minding interval.
 + (instancetype) fragmentedMovieMinderWithMovie:(AVFragmentedMovie *) movie mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVFragmentedMovieMinder` instance.
 

@@ -24,7 +24,7 @@ var isGamutMappingEnabled: Bool { get set }
 @property (readwrite, getter=isGamutMappingEnabled) BOOL gamutMappingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

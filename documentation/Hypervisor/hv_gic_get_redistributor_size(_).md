@@ -19,7 +19,7 @@ func hv_gic_get_redistributor_size(_ redistributor_size: UnsafeMutablePointer<In
 extern hv_return_t hv_gic_get_redistributor_size(size_t *redistributor_size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

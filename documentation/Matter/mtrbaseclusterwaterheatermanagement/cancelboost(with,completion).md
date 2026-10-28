@@ -29,7 +29,7 @@ func cancelBoost(with params: MTRWaterHeaterManagementClusterCancelBoostParams?)
 - (void) cancelBoostWithParams:(MTRWaterHeaterManagementClusterCancelBoostParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to cancel an ongoing Boost operation.
 

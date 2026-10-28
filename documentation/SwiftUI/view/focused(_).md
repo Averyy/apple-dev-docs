@@ -22,11 +22,11 @@ nonisolated
 func focused(_ condition: FocusState<Bool>.Binding) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 The modified view.
 
-#### Discussion
+## Discussion
 
 Use this modifier to cause the view to receive focus whenever the `condition` value is `true`. You can use this modifier to observe the focus state of a single view, or programmatically set and remove focus from the view.
 

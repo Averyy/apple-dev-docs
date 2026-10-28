@@ -23,7 +23,7 @@ var titleLabel: UILabel? { get }
 @property (nonatomic, strong, readonly, nullable) UILabel * titleLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Although this property is read-only, its own properties are read/write. Use these properties primarily to configure the text of the button. For example:
 

@@ -19,7 +19,7 @@ func SCPreferencesScheduleWithRunLoop(_ prefs: SCPreferences, _ runLoop: CFRunLo
 Boolean SCPreferencesScheduleWithRunLoop(SCPreferencesRef prefs, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notifications are successfully scheduled; otherwise, `FALSE`.
 

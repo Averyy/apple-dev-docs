@@ -21,11 +21,11 @@ func SecKeychainSetPreferenceDomain(_ domain: SecPreferencesDomain) -> OSStatus
 OSStatus SecKeychainSetPreferenceDomain(SecPreferencesDomain domain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A preference domain is a set of security-related preferences, such as the default keychain and the current keychain search list. The default preference domain for system daemons (that is, for daemons running in the root session) is the system domain. The default preference domain for all other programs is the user domain.
 

@@ -4,11 +4,11 @@
 
 An action that animates from one transform to another.
 
-#### Overview
+## Overview
 
 This action animates from the target prim’s current transform to the [xformTarget](./xformtarget.md) transform.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "TransformAction"

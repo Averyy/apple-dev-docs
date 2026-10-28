@@ -22,7 +22,7 @@ case mismatchedSourceAppId
 SKANErrorMismatchedSourceAppId
 ```
 
-#### Discussion
+## Discussion
 
 Check that the [`sourceAppStoreItemIdentifier`](../../skadimpression/sourceappstoreitemidentifier.md) you provide in the [`SKAdImpression`](../../skadimpression.md) object matches the app identifier of the app displaying the ad.
 

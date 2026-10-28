@@ -23,7 +23,7 @@ var typingAttributes: [NSAttributedString.Key : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * typingAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary contains the attribute keys (and corresponding values) to apply to newly typed text. When the text field’s selection changes, the contents of the dictionary are cleared automatically.
 

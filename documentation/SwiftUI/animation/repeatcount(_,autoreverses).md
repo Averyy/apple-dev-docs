@@ -21,11 +21,11 @@ Repeats the animation for a specific number of times.
 func repeatCount(_ repeatCount: Int, autoreverses: Bool = true) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An animation that repeats for specific number of times.
 
-#### Discussion
+## Discussion
 
 Use this method to repeat the animation a specific number of times. For example, in the following code, the animation moves a truck from one edge of the view to the other edge. It repeats this animation three times.
 

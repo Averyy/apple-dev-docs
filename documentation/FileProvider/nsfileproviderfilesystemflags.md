@@ -23,7 +23,7 @@ struct NSFileProviderFileSystemFlags
 enum NSFileProviderFileSystemFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The flags define the on-disk properties of the item. The system modifies the item’s appearance based on these flags.
 

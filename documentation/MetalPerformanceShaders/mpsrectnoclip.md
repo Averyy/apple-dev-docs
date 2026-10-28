@@ -22,7 +22,7 @@ let MPSRectNoClip: MTLRegion
 extern const MTLRegion MPSRectNoClip;
 ```
 
-#### Discussion
+## Discussion
 
 If this constant is used in an image filter operation, no clipping is done and the entire image is used.
 

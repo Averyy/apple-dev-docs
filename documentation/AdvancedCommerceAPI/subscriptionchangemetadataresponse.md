@@ -15,7 +15,7 @@ The response body for a successful subscription metadata change.
 object SubscriptionChangeMetadataResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Change Subscription Metadata`](./change-subscription-metadata.md) endpoint.
 

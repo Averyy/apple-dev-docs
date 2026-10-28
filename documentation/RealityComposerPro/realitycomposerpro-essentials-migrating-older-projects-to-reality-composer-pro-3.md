@@ -5,11 +5,11 @@
 
 Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
 
-#### Overview
+## Overview
 
 This article describes how to migrate a project from Reality Composer Pro 2 to Reality Composer Pro 3. It provides a brief overview of the new Reality Composer Pro 3 interface, describes key differences between Reality Composer Pro 3 and older versions, and explains what to expect before, during, and after migration.
 
-#### Review Reality Composer Pro 3 panels
+## Review Reality Composer Pro 3 panels
 
 Reality Composer Pro 2 projects contain one or more USD scenes that you edit directly from Reality Composer Pro 2. Reality Composer Pro 3, however, is not a USD editor. Scenes in Reality Composer Pro 3 consist of entities and assets. Entities are general-purpose objects that can contain any number of project assets. Assets are files stored on disk and applied to entities.
 
@@ -23,7 +23,7 @@ Assets can be images used for textures, audio files, materials, graphs, or anima
 
 > **Note**: See [Navigating the Reality Composer Pro workspace](./realitycomposerpro-essentials-workspaceoverview.md) and [Configuring the project workspace](./realitycomposerpro-essentials-configuringprojectworkspace.md) to learn more about navigating and customizing the Reality Composer Pro 3 Project Workspace.
 
-#### Compare the Reality Composer Pro 3 component system to the USD editor
+## Compare the Reality Composer Pro 3 component system to the USD editor
 
 Reality Composer Pro is a scene authoring tool for RealityKit. Projects are organized like RealityKit itself. Both Reality Composer Pro 3 and Reality Composer Pro 2 work with entities and components; however, the underlying model used to edit scenes has changed in Reality Composer Pro 3. In previous versions of Reality Composer Pro, your project was a USD scene. Everything you see in the hierarchy is a USD primitive, and you edit USD directly. When you open a  Reality Composer Pro 2 project in Reality Composer Pro 3, the USD primitives are converted into the assets, entities, and components used in Reality Composer Pro 3. Briefly:
 
@@ -35,7 +35,7 @@ Reality Composer Pro is a scene authoring tool for RealityKit. Projects are orga
 
 The conversion process causes most of the surprises you may encounter after migrating projects from earlier versions of Reality Composer Pro. Some primitives map cleanly to the Reality Composer Pro 3 ECS format. Others only map partially. A small number of Reality Composer Pro 2 primitives don’t map to a direct counterpart in Reality Composer Pro 3 and will need to be rebuilt by hand. See [Updating migrated assets to Reality Composer Pro 3](./realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md) for more information.
 
-#### Migrate custom components as placeholders
+## Migrate custom components as placeholders
 
 When you first migrate project from a previous version of Reality Composer Pro, Reality Composer Pro 3 preserves all custom component data in a placeholder format.
 
@@ -43,11 +43,11 @@ Connect the Reality Composer Pro 3 project to the Xcode project containing the p
 
 As long as the Swift definitions haven’t changed since you used them to create the project being migrated, this transition occurs seamlessly when you connect the Xcode project. Reality Composer Pro 3 propagates subsequent changes to the Swift definitions to the Reality Composer Pro 3 custom components whenever you reload the plugin.
 
-#### Optionally adopt live component editing in Reality Composer Pro 3
+## Optionally adopt live component editing in Reality Composer Pro 3
 
 Your custom component code from your migrated project continues to work without changes when you run your Xcode project on a device or simulator — the experience is the same as before, and this step is entirely optional. Optionally, in Reality Composer Pro 3 you can also run your custom component directly in the Viewport and edit its parameters in real time. To adopt this experience, import the [Reality Composer Pro Plugin](https://github.com/apple/reality-composer-pro-plugin) Swift package, conform to the `RealityComposerProPlugin` protocol, and register your custom systems.
 
-#### Work with Reality Composer Pro 3 independently of Xcode
+## Work with Reality Composer Pro 3 independently of Xcode
 
 In Reality Composer Pro 2, Reality Composer Pro content lives inside your Xcode project as the `RealityKitContent` Swift package created by the visionOS app template. You edit your app and its content in the same workspace. Starting with the 2026 releases, Reality Composer Pro 3 is a standalone app. Your Reality Composer Pro project is no longer part of your Xcode project, so the workflow has changed. Key things to know about how this changes your workflow:
 
@@ -66,7 +66,7 @@ For faster iteration, link an Xcode project instead. After linking, you can edit
 > - Direct USD export (mesh) is available only in Reality Composer Pro 3 and later.
 > - Because Reality Composer Pro 3 isn’t a USD editor, exporting from it rebuilds a fresh USD stage rather than round-tripping the original. Exporting doesn’t preserve hand-authored layer structures, references, payloads, comments, primitive ordering, or many names.
 
-#### Migrate a Reality Composer Pro 2 project
+## Migrate a Reality Composer Pro 2 project
 
 When you open an older project, Reality Composer Pro 3 detects the legacy package and prompts you to migrate. Migrating an older project is one way but does not modify or write to the original `.realitycomposerpro` project. Reality Composer Pro 3 names the new project after the old Swift package, not the folder you clicked, and the project has no default save location until after you save it.
 
@@ -81,7 +81,7 @@ Reality Composer Pro 2 commonly uses USD Scope nodes just to group things, but b
 
 ![A screenshot of the RCP3 Project Browser showing an asset and subfolders after importing an RCP2 project into RCP3.](https://developer.apple.com/tutorials/images/RealityComposerPro/RCP3Migration@2x.png)
 
-#### Link your migrated project to Xcode
+## Link your migrated project to Xcode
 
 After migrating your RCP2 project to RCP3, you may need to re-link it to its associated Xcode project.
 
@@ -89,7 +89,7 @@ After migrating your RCP2 project to RCP3, you may need to re-link it to its ass
 2. In the Launch Control bar, next to Run with Xcode, choose Link an Xcode project.
 3. Click Link Existing Project, then locate the project and click Link Project. See [Linking an Xcode project](./realitycomposerpro-essentials-linkingxcodeproject.md) to learn more.
 
-#### Use Xcode 27 (or later) to use assets in the `.reality` file
+## Use Xcode 27 (or later) to use assets in the `.reality` file
 
 After migration, your Xcode project still has the older Reality Composer Pro 2 package in it, and any remaining Swift files still point to the older `RealityKitContent` bundle.
 

@@ -19,7 +19,7 @@ func setFieldName(_ name: String!)
 - (void) setFieldName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Field names are optional, internal names that identify text fields in a PDF form. You use field names with the [`PDFActionResetForm`](../pdfactionresetform.md) action.
 

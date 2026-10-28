@@ -24,7 +24,7 @@ func beginSeekingForward()
 - (void) beginSeekingForward;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to move the current playback position forward in time at an accelerated rate. Seeking begins when you call this method and continues until you call the [`endSeeking()`](./endseeking%28%29.md) method.
 

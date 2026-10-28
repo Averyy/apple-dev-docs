@@ -21,7 +21,7 @@ An implementation of MD5 hashing.
 struct MD5
 ```
 
-#### Overview
+## Overview
 
 The [`Insecure.MD5`](./md5.md) hash implements the [`HashFunction`](../hashfunction.md) protocol to produce an MD5 digest ([`Insecure.MD5Digest`](./md5digest.md)).
 

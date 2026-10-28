@@ -15,7 +15,7 @@ Given a filesystem ID, look up a mount structure.
 mount_t vfs_getvfs(fsid_t *fsid);
 ```
 
-#### Return Value
+## Return Value
 
 Mountpoint if found, else NULL. Note unmounting mountpoints can be returned.
 

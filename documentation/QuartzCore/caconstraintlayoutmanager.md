@@ -20,7 +20,7 @@ class CAConstraintLayoutManager
 @interface CAConstraintLayoutManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use the shared instance of this object by assigning it to the [`layoutManager`](./calayer/layoutmanager.md) property of any layer objects to which you have added constraints. During a layout update, Core Animation uses the layout manager to update the size and position of the sublayers based on the registered set of constraints.
 

@@ -21,9 +21,9 @@ The status item that reports the device’s push magic value.
 object StatusMDMPushMagic
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ object StatusMDMPushMagic
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

@@ -25,7 +25,7 @@ func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?)
 - (void) setArgumentTable:(id<MTL4ArgumentTable>) argumentTable;
 ```
 
-#### Discussion
+## Discussion
 
 The argument table provides inputs to all subsequent Machine Learning dispatches.
 

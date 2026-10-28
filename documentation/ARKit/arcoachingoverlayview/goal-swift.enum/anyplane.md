@@ -20,7 +20,7 @@ case anyPlane
 ARCoachingGoalAnyPlane
 ```
 
-#### Discussion
+## Discussion
 
 When you use this goal, coaching overlay won’t hide until the user has moved their device in a way that facilitates ARKit finding at least one surface. For the available surface types, see [`ARPlaneClassification`](../../arplaneclassification.md).
 

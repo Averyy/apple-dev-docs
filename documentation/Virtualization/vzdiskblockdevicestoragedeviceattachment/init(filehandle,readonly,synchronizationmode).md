@@ -19,7 +19,7 @@ init(fileHandle: FileHandle, readOnly: Bool, synchronizationMode: VZDiskSynchron
 - (instancetype) initWithFileHandle:(NSFileHandle *) fileHandle readOnly:(BOOL) readOnly synchronizationMode:(VZDiskSynchronizationMode) synchronizationMode error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The disk attachment retains the file handle, and the handle must be open when the virtual machine starts.
 

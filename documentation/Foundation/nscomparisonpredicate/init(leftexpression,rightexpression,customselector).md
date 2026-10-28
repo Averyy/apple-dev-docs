@@ -25,7 +25,7 @@ init(leftExpression lhs: NSExpression, rightExpression rhs: NSExpression, custom
 - (instancetype) initWithLeftExpression:(NSExpression *) lhs rightExpression:(NSExpression *) rhs customSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized by combining the left and right expressions using `selector`.
 

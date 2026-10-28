@@ -18,7 +18,7 @@ Creates a media item collection by copying an array of media items.
 + (MPMediaItemCollection *) collectionWithItems:(NSArray<MPMediaItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A media item collection.
 

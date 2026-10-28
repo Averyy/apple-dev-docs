@@ -21,7 +21,7 @@ A value that describes why an evaluator failed while scoring a produced subject.
 enum EvaluatorError
 ```
 
-#### Overview
+## Overview
 
 The evaluation runner records these values in the `"EvaluatorErrors"` column of [`detailed`](./evaluationresult/detailed.md) as an array. Multiple evaluators can fail for the same sample. The evaluation runner omits this column entirely when no evaluator fails, so check for the column’s presence before reading it.
 

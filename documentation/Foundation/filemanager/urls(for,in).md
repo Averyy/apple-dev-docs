@@ -29,11 +29,11 @@ func urls(for directory: FileManager.SearchPathDirectory, in domainMask: FileMan
 
 - [Using the file system effectively](../using-the-file-system-effectively.md)
 
-#### Return Value
+## Return Value
 
 An array of [`NSURL`](../nsurl.md) objects identifying the requested directories. The directories are ordered according to the order of the domain mask constants, with items in the user domain first and items in the system domain last.
 
-#### Discussion
+## Discussion
 
 This method is intended to locate known and common directories in the system. For example, setting the directory to [`FileManager.SearchPathDirectory.applicationDirectory`](./searchpathdirectory/applicationdirectory.md), will return the Applications directories in the requested domain. There are a number of common directories available in the [`FileManager.SearchPathDirectory`](./searchpathdirectory.md), including: [`FileManager.SearchPathDirectory.desktopDirectory`](./searchpathdirectory/desktopdirectory.md), [`FileManager.SearchPathDirectory.applicationSupportDirectory`](./searchpathdirectory/applicationsupportdirectory.md), and many more.
 

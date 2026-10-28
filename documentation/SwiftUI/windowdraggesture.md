@@ -16,7 +16,7 @@ nonisolated
 struct WindowDragGesture
 ```
 
-#### Overview
+## Overview
 
 To recognize a window drag gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:isEnabled:)`](./view/gesture%28_,isenabled%29.md) modifier. Consider also letting the gesture [handle events that activate the containing window](./view/allowswindowactivationevents%28_%29.md) so that dragging the containing window works even when it’s inactive.
 

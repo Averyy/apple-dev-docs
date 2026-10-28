@@ -21,11 +21,11 @@ Creates a hybrid map style that includes the elevation, point of interest, and t
 static func hybrid(elevation: MapStyle.Elevation = .automatic, pointsOfInterest: PointOfInterestCategories = .all, showsTraffic: Bool = false) -> MapStyle
 ```
 
-#### Return Value
+## Return Value
 
 A [`MapStyle`](../mapstyle.md) with the configuration you specified.
 
-#### Discussion
+## Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 

@@ -20,7 +20,7 @@ The identifiers of tracks that contain source metadata.
 @property (nonatomic, readonly) NSArray<NSNumber *> * sourceSampleDataTrackIDs;
 ```
 
-#### Discussion
+## Discussion
 
 The track identifiers are of type [`kCMMediaType_Metadata`](../../CoreMedia/kcmmediatype_metadata.md).
 

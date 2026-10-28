@@ -5,7 +5,7 @@
 
 Declare the user interface groupings that make up the parts of your app.
 
-#### Overview
+## Overview
 
 A scene represents a part of your app’s user interface that has a life cycle that the system manages. An [`App`](./app.md) instance presents the scenes it contains, while each [`Scene`](./scene.md) acts as the root element of a [`View`](./view.md) hierarchy.
 

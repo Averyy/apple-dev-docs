@@ -18,7 +18,7 @@ A compiled Metal function that evaluates lighting.
 final class LightingFunction
 ```
 
-#### Overview
+## Overview
 
 Create a `LightingFunction` through a context’s [`lighting`](../lowlevelrendercontext/lighting.md) provider, using [`makeImageBasedLightingFunction()`](../lowlevelrendercontextlighting/makeimagebasedlightingfunction%28%29.md) for image-based lighting or [`makeUnlitLightingFunction()`](../lowlevelrendercontextlighting/makeunlitlightingfunction%28%29.md) for unlit shading.
 

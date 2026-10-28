@@ -16,7 +16,7 @@ class XCTestRun
 @interface XCTestRun : NSObject
 ```
 
-#### Overview
+## Overview
 
 `XCTestRun` classifies failures in explicit test assertions as *expected*, and failures from unrelated or uncaught exceptions as *unexpected*.
 

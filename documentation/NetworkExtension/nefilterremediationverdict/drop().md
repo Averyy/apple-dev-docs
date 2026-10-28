@@ -22,7 +22,7 @@ class func drop() -> NEFilterRemediationVerdict
 + (NEFilterRemediationVerdict *) dropVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterRemediationVerdict` object.
 

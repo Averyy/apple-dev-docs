@@ -3,7 +3,7 @@
 **Framework**: Core Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 MDQuery is a CF-compliant object, follows the CF conventions,and can be used with the CF polymorphic functions, such as `CFRetain`.MDQuery encapsulates queries against the System store of the filemetadata. 
 

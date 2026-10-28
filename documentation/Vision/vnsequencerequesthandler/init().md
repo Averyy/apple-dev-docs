@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the [`VNImageRequestHandler`](../vnimagerequesthandler.md), this initializer accepts no input because image data and auxiliary parameters may change from frame to frame, and are handled dynamically in the request-handling `perform` methods.
 

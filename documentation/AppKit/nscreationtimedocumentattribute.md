@@ -15,7 +15,7 @@ The creation date of the document.
 extern NSAttributedStringDocumentAttributeKey NSCreationTimeDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDate`](../Foundation/nsdate.md) object containing the creation date of the document; note that this is not the file system creation date of the file, but of the document.
 

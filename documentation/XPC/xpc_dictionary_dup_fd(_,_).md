@@ -25,7 +25,7 @@ func xpc_dictionary_dup_fd(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>) -
 extern int xpc_dictionary_dup_fd(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 A new file descriptor created from the value for the specified key. You are responsible for closing this descriptor. -1 if the value for the specified key is not a file descriptor value or if there is no value for the specified key.
 

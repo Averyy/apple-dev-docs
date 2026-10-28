@@ -19,7 +19,7 @@ A response from the extension to a live assistance request.
 enum Response
 ```
 
-#### Overview
+## Overview
 
 You return this type from your implementations of [`prepareAssistanceRequest(_:)`](../liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](../liveassistanceextension/resumerequest%28_%29.md) to express how the request should continue. Both cases are outcomes that indicate the request should continue. If the request can’t continue, your implementations of the protocol methods throws [`LiveAssistanceRequestError`](../liveassistancerequesterror.md) instead of returning a response.
 

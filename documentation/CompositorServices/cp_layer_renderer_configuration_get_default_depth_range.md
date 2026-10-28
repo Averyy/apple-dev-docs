@@ -16,11 +16,11 @@ Returns the distances for the far and near clipping planes you use during drawin
 simd_float2 cp_layer_renderer_configuration_get_default_depth_range(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The distances to the far and near planes in meters. Compositor Services returns values in reverse-z ordering, with the value for the far plane in the vector’s `x` property and the value for the near plane in the vector’s `y` property.
 
-#### Discussion
+## Discussion
 
 The near and far planes reflect the distances from the person viewing the content. Compositor Services uses these values to compute the perspective projection matrix and to clip content that is between the camera and the near plane, or located beyond the far plane.
 

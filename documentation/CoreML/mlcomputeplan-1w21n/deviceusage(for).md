@@ -31,7 +31,7 @@ func deviceUsage(for operation: MLModelStructure.Program.Operation) -> MLCompute
 
 - [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
-#### Return Value
+## Return Value
 
 The anticipated compute devices that would be used for evaluating the layer or `nil` if the usage couldn’t be determined.
 

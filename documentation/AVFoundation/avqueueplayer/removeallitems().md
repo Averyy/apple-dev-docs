@@ -26,7 +26,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method removes all currently enqueued player items and stops playback.
 

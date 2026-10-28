@@ -21,7 +21,7 @@ Counts and finds the zero crossings in a single-precision vector.
 extern void vDSP_nzcros(const float *__A, vDSP_Stride __IA, vDSP_Length __B, vDSP_Length *__C, vDSP_Length *__D, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This performs the following operation:
 

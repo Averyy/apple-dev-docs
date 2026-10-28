@@ -22,7 +22,7 @@ A type that specifies the appearance and interaction of navigation split views w
 @preconcurrency protocol NavigationSplitViewStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the navigation split view style for a view hierarchy, use the [`navigationSplitViewStyle(_:)`](./view/navigationsplitviewstyle%28_%29.md) modifier.
 

@@ -23,7 +23,7 @@ var isAnchored: Bool { get set }
 @property (nonatomic, getter=isAnchored) BOOL anchored;
 ```
 
-#### Discussion
+## Discussion
 
 An anchored item participates in collisions but is not affected by those collisions. Instead, the item behaves like a collision boundary. The default value of this property is [`false`](../../Swift/false.md).
 

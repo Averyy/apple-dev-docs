@@ -17,7 +17,7 @@ The session became invalid.
 case sessionInvalidated(reason: CardSession.Error)
 ```
 
-#### Discussion
+## Discussion
 
 This is the last event produced by the event stream before the stream finishes. The reason can be any [`CardSession.Error`](../error.md) except [`CardSession.Error.transmissionError`](../error/transmissionerror.md).
 

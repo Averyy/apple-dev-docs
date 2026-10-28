@@ -31,7 +31,7 @@ var color: CGColor? { get }
 @property (atomic, readonly, nullable) CGColorRef color;
 ```
 
-#### Discussion
+## Discussion
 
 Maps displays this value when it presents information about the electric vehicle.
 

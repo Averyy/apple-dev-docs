@@ -25,7 +25,7 @@ static let currencyCode: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCurrencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString object, for example “USD” or “GBP”.
 

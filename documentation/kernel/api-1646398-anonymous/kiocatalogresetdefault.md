@@ -13,7 +13,7 @@
 kIOCatalogResetDefault = 1
 ```
 
-#### Discussion
+## Discussion
 
 Removes all entries from IOCatalogue except those used for booting the system.
 

@@ -22,11 +22,11 @@ optional func replacementDepthData(for photo: AVCapturePhoto) -> AVDepthData?
 - (AVDepthData *) replacementDepthDataForPhoto:(AVCapturePhoto *) photo;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVDepthData`](../avdepthdata.md).  To preserve the existing depth data, return `photo.depthData`. To strip existing depth data, provide a replacement [`AVDepthData`](../avdepthdata.md) instance.
 
-#### Discussion
+## Discussion
 
 This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written directly to the file data representation.
 

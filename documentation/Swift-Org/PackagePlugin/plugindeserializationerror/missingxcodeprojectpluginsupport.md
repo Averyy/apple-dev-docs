@@ -17,7 +17,7 @@ The plugin doesn’t support Xcode
 case missingXcodeProjectPluginSupport
 ```
 
-#### Discussion
+## Discussion
 
 Typically, it doesn’t link against XcodeProjectPlugin.
 

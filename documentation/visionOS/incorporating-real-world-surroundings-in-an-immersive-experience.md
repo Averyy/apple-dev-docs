@@ -10,7 +10,7 @@ Create an immersive experience by making your app’s content respond to the loc
 - visionOS 1.0+
 - Xcode 15.1+
 
-#### Overview
+## Overview
 
 Scene reconstruction helps bridge the gap between the rendered 3D content in your app and the person’s surroundings. Use scene reconstruction in ARKit to give your app an idea of the shape of the person’s surroundings and to bring your app experience into their world. Immersive experiences  — those that use the [`mixed`](../SwiftUI/immersionstyle/mixed.md) space style — are best positioned to incorporate this kind of contextual information: scene reconstruction is only available in spaces and isn’t as relevant for the [`full`](../SwiftUI/immersionstyle/full.md) space style.
 
@@ -18,7 +18,7 @@ In addition to providing a 3D mesh of the shape of different nearby objects, ARK
 
 [Video: A recording showing a table with a vertical stack of three virtual cubic blocks on it in visionOS. A person moves their hand toward the blocks from right to left, and their extended fingers touch and push aside the center block. The center block falls to the side, and the other block also tumbles onto the tabletop.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/visionos-spatial-gesture-direct.mp4)
 
-##### Configure a scene reconstruction session
+### Configure a scene reconstruction session
 
 Scene reconstruction requires the [`ARKitSession.AuthorizationType.worldSensing`](../ARKit/arkitsession/authorizationtype/worldsensing.md) authorization type and corresponding usage description that you supply in your app’s `Info.plist` file. The following starts a session and processes updates as ARKit refines its reconstruction of the person’s surroundings:
 
@@ -54,7 +54,7 @@ RealityView { content in
 })
 ```
 
-##### Add real-world interactivity using collision components
+### Add real-world interactivity using collision components
 
 You can make rendered 3D content more lifelike by having it appear to interact physically with objects in the person’s surroundings, like furniture and floors. Use RealityKit’s collision components and physics support to provide these interactions in your app. The [`generateStaticMesh(from:)`](../RealityKit/shaperesource/generatestaticmesh%28from%29.md) method bridges between scene reconstruction and RealityKit’s physics simulation.
 
@@ -95,7 +95,7 @@ func processReconstructionUpdates() async {
 
 Each object in the scene reconstruction mesh updates its [`originFromAnchorTransform`](../ARKit/meshanchor/originfromanchortransform.md) information independently and requires a separate static mesh because ARKit subdivides its representation of the world into multiple, distinct sections.
 
-##### Display scene reconstruction meshes during debugging
+### Display scene reconstruction meshes during debugging
 
 People using an app that leverages scene reconstruction typically don’t need to see a visual rendering of the scene reconstruction mesh. The system already shows passthrough video in an immersive experience. However, temporarily displaying the scene reconstruction mesh can help while you’re developing and debugging your app. In Xcode’s debugging toolbar, click the Enable Visualizations button and select Collision Shapes. Because each element of the scene reconstruction mesh has a collision component, the details of the mesh appear in the debug visualization. For more information, see [Diagnosing issues in the appearance of a running app](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md).
 

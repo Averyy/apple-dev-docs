@@ -25,7 +25,7 @@ var latency: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval latency;
 ```
 
-#### Discussion
+## Discussion
 
 This latency reflects the delay due to signal processing. A value of `0` indicates either no latency or an unknown latency.
 

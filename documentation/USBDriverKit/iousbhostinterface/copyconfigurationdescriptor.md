@@ -15,7 +15,7 @@ Retrieves the parent configuration descriptor for this interface.
 virtual const IOUSBConfigurationDescriptor * CopyConfigurationDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 The configuration descriptor for this interface. It’s your responsibility to free the returned descriptor.
 

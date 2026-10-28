@@ -22,11 +22,11 @@ func CVDisplayLinkGetActualOutputVideoRefreshPeriod(_ displayLink: CVDisplayLink
 extern double CVDisplayLinkGetActualOutputVideoRefreshPeriod(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 A double-precision floating-point value representing the actual refresh period in seconds. This value may be zero if the device is not running or is otherwise unavailable.
 
-#### Discussion
+## Discussion
 
 This call returns the actual output refresh period computed relative to the system time (as measured using the [`CVGetCurrentHostTime()`](./cvgetcurrenthosttime%28%29.md) function).
 

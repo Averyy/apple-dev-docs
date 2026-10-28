@@ -19,7 +19,7 @@ class NSTitlebarAccessoryViewController
 @interface NSTitlebarAccessoryViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Because a title bar accessory view controller is contained in a visual effect view (that is, [`NSVisualEffectView`](./nsvisualeffectview.md)), it automatically handles the blur behind the accessory view and the size and location changes for the content of the view when a window goes in and out of full screen mode. If you’re currently using [`NSToolbar`](./nstoolbar.md) fullscreen accessory APIs, such as [`fullScreenAccessoryView`](./nstoolbar/fullscreenaccessoryview.md), you should use [`NSTitlebarAccessoryViewController`](./nstitlebaraccessoryviewcontroller.md) APIs instead.
 

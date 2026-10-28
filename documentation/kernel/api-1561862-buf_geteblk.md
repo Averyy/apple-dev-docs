@@ -15,11 +15,11 @@ Get a metadata buffer which is marked invalid and not associated with any vnode.
 buf_t buf_geteblk(int size);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns a new buffer.
 
-#### Discussion
+## Discussion
 
 A buffer is returned with zone-allocated storage of the specified size, marked B_META and invalid. It has no vnode and is not visible in the buffer hash.
 

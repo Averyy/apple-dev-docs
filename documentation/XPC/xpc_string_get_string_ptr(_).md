@@ -25,7 +25,7 @@ func xpc_string_get_string_ptr(_ xstring: xpc_object_t) -> UnsafePointer<CChar>?
 extern const char *xpc_string_get_string_ptr(xpc_object_t xstring);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the string object’s internal storage.
 

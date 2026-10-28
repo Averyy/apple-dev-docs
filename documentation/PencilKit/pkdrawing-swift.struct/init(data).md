@@ -19,7 +19,7 @@ Creates a drawing object and populates it with previously drawn content.
 init(data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new canvas object initialized with the specified data.
 

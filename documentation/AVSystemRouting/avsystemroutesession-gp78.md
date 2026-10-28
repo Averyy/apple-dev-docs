@@ -22,7 +22,7 @@ final class AVSystemRouteSession
 - [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
 - [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
-#### Overview
+## Overview
 
 [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) manages a single media playback session on a remote device. Create a session to initiate playback on a connected device, communicate with a remote application, and control the lifecycle of the remote playback experience.
 
@@ -36,7 +36,7 @@ To use a session:
 
 Sessions are single-use. After calling [`stop()`](./avsystemroutesession-gp78/stop%28%29.md), the session cannot be restarted or added to another route. Create a new [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) for each new playback.
 
-#### Reporting Playback Metadata
+## Reporting Playback Metadata
 
 Report playback metadata to `MPNowPlayingInfoCenter` to ensure the system displays accurate information about the current media across a person’s devices and in system UI.
 

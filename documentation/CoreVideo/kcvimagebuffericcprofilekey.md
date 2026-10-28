@@ -25,7 +25,7 @@ let kCVImageBufferICCProfileKey: CFString
 extern CFStringRef const kCVImageBufferICCProfileKey;
 ```
 
-#### Discussion
+## Discussion
 
 The ICC color profile value is of type [`CFData`](../CoreFoundation/cfdata.md).
 

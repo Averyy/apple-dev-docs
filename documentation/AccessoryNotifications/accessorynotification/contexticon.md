@@ -15,7 +15,7 @@ A secondary icon that provides additional contextual information about the notif
 let contextIcon: AccessoryNotification.File?
 ```
 
-#### Discussion
+## Discussion
 
 For communication notifications, this image might be a message sender’s avatar or group chat icon.
 

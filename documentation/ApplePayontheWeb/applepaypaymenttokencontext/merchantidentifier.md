@@ -16,7 +16,7 @@ The Apply Pay merchant identifier.
 required DOMString merchantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The merchant identifier you provide when you make an Apple Pay payment request. If you request a payment token for another merchant, use their merchant identifier, if available. Otherwise, use your own merchant identifier.
 

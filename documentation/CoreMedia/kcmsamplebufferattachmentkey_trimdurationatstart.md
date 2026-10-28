@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_TrimDurationAtStart: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_TrimDurationAtStart;
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is not present, the trim duration is zero (nothing removed).        This is a [`CMTime`](./cmtime.md) in Core Foundation dictionary format as made by [`CMTimeCopyAsDictionary(_:allocator:)`](./cmtimecopyasdictionary%28_,allocator%29.md);         use [`CMTimeMakeFromDictionary(_:)`](./cmtimemakefromdictionary%28_%29.md) to convert to [`CMTime`](./cmtime.md).        In cases where all the output after decoding the sample buffer is to be discarded         (for example, the samples are only being decoded to prime the decoder) the usual convention        is to set [`kCMSampleBufferAttachmentKey_TrimDurationAtStart`](./kcmsamplebufferattachmentkey_trimdurationatstart.md) to the whole duration         and not to set a [`kCMSampleBufferAttachmentKey_TrimDurationAtEnd`](./kcmsamplebufferattachmentkey_trimdurationatend.md) attachment.
 

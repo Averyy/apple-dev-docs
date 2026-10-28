@@ -20,7 +20,7 @@ var fdtype: UInt32
 uint32_t fdtype;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `PROX_FDTYPE_PIPE`, the [`es_fd_t`](../es_fd_t.md) structure also contains a `pipe.pipe_id` field. This field represents the unique ID of the pipe for correlation with other file descriptors pointing to the same or other end of the same pipe.
 

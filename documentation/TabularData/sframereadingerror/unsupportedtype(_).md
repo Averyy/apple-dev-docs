@@ -21,7 +21,7 @@ An error that indicates the scalable data frame contains an unknown or unsupport
 case unsupportedType(Int)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value contains the unknown data type identifier.
 

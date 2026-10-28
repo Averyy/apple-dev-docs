@@ -23,7 +23,7 @@ func matches(_ url: URL?) -> Bool
 - (BOOL) matchesURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating if the pattern matches the specified URL.
 

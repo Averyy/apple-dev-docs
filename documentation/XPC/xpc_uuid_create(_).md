@@ -25,7 +25,7 @@ func xpc_uuid_create(_ uuid: UnsafePointer<UInt8>) -> xpc_object_t
 extern xpc_object_txpc_uuid_create(const uuid_t uuid);
 ```
 
-#### Return Value
+## Return Value
 
 A new UUID object.
 

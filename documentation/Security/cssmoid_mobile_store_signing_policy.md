@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_MOBILE_STORE_SIGNING_POLICY;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

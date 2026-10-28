@@ -25,7 +25,7 @@ class AVAudioPCMBuffer
 @interface AVAudioPCMBuffer : AVAudioBuffer
 ```
 
-#### Overview
+## Overview
 
 The PCM buffer class provides methods that are useful for manipulating buffers of audio in PCM format.
 

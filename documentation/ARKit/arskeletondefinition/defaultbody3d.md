@@ -20,7 +20,7 @@ class var defaultBody3D: ARSkeletonDefinition { get }
 @property (class, nonatomic, readonly) ARSkeletonDefinition * defaultBody3DSkeletonDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 The default height of this skeleton is 1.66 meters.
 

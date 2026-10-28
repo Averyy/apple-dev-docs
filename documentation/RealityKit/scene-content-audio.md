@@ -5,7 +5,7 @@
 
 Create personalized and realistic spatial audio experiences.
 
-#### Overview
+## Overview
 
 Creating a compelling audio experience with RealityKit is as simple as playing audio on your existing RealityKit entities. Use RealityKit’s default audio settings to create a personalized and realistic experience or utilize advanced customization options to tailor the audio for the needs of your application. Utilizing acoustic ray tracing and a personalized HRTF, RealityKit provides lifelike and high-quality sound.
 

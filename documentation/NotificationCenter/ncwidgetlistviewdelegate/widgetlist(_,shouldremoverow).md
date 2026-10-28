@@ -21,11 +21,11 @@ optional func widgetList(_ list: NCWidgetListViewController, shouldRemoveRow row
 - (BOOL) widgetList:(NCWidgetListViewController *) list shouldRemoveRow:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified row can be removed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 List item deletion is not enabled unless the delegate implements this method and [`widgetList(_:didRemoveRow:)`](./widgetlist%28_,didremoverow%29.md). Returning [`false`](../../Swift/false.md) prohibits `row` from being deleted. Returning YES allows `row` to be deleted, and the delegate will be called again when the item that `row` represents is deleted from the list view controller’s [`contents`](../ncwidgetlistviewcontroller/contents.md) array.
 

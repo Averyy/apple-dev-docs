@@ -20,7 +20,7 @@ class NSCollectionLayoutSpacing
 @interface NSCollectionLayoutSpacing : NSObject
 ```
 
-#### Overview
+## Overview
 
 In a collection view layout, you use a spacing object to specify both the amount of space and the way in which it’s calculated.
 

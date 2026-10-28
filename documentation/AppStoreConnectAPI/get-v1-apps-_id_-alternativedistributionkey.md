@@ -15,9 +15,9 @@ Get the alternative distribution keys for a specific app.
 - [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
 - [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

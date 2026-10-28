@@ -5,7 +5,7 @@
 
 Create a more customized and optimized gaming experience by using matchmaking rules to find players in a real-time game.
 
-#### Overview
+## Overview
 
 Matchmaking rules can improve the quality of matches, reduce wait times, and increase player retention by offering a more engaging and fair gaming experience. You create rules that customize the matchmaking criteria using your game-specific properties, such as rules that match players by skill level, game mode, geolocation, and language. You can also create rules that gradually loosen the matchmaking criteria over time to find matches more quickly.
 
@@ -13,7 +13,7 @@ Matchmaking rules contain compound expressions that Game Center applies to group
 
 In your game code, you configure a match request to use matchmaking rules by setting its queue and game-specific properties. Then submit the match request using familiar GameKit APIs, and Game Center uses the matchmaking rules to find the best matches.
 
-##### Create rule sets that contain the matchmaking rules
+### Create rule sets that contain the matchmaking rules
 
 A rule set is a collection of matchmaking rules for finding players in a multiplayer game. Use one or more rule sets to group matchmaking rules for the different configurations, levels, or other types of features in your game. You need to create at least one rule set before you can add matchmaking rules.
 
@@ -56,7 +56,7 @@ Retain the `id` field of the [`GameCenterMatchmakingRuleSet`](../AppStoreConnect
 }
 ```
 
-##### Add matchmaking rules to the rule sets
+### Add matchmaking rules to the rule sets
 
 You add a rule to the rule set by passing the rule type, an expression, and a rule set, along with other settings, to the [`Create a Rule`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingrules.md) endpoint.
 
@@ -89,7 +89,7 @@ In the `relationships` field, set the `gameCenterRuleSet` field to the rule set 
 
 Next write an expression for the rule that Game Center applies to two or more matches depending on the type.
 
-##### Write rich expressions using a JSON query language
+### Write rich expressions using a JSON query language
 
 In the [`GameCenterMatchmakingRuleCreateRequest.Data.Attributes`](../AppStoreConnectAPI/gamecentermatchmakingrulecreaterequest/data-data.dictionary/attributes-data.dictionary.md) object, set the `expression` field to an expression that returns either a Boolean or numeric value.
 
@@ -105,7 +105,7 @@ To loosen the matchmaking criteria over time, set the type to `MATCH` and use ei
 
 For  more information on these functions, see [Getting value based on age](../AppStoreConnectAPI/getting-value-based-on-age.md) and [Getting value based on age using an array](../AppStoreConnectAPI/getting-value-based-on-age-using-an-array.md). For more information on the different types of rules and when Game Center applies the rules in the algorithm, see [Expressions](../AppStoreConnectAPI/expressions.md) in App Store Connect API.
 
-##### Configure a queue for the match requests
+### Configure a queue for the match requests
 
 You associate each rule set with a match request queue. Then Game Center applies the rules in the rule set to all active match requests in that queue.
 
@@ -133,7 +133,7 @@ POST /v1/gameCenterMatchmakingQueues
 
 > ❗ **Important**:  If you have previous versions of your game that don’t use matchmaking rules, you can apply the same rules to match requests from those versions. Set the `classicMatchmakingBundleIds` field to the bundle IDs of the versions that you want to include when Game Center applies the rules. Otherwise, Game Center doesn’t match players running previous versions with current versions that specify a queue name. To create rules that include players running previous versions, see [Creating matchmaking rules for backward compatibility](./creating-matchmaking-rules-for-backward-compatibility.md).
 
-##### Create match requests that use the matchmaking rules
+### Create match requests that use the matchmaking rules
 
 In your code, create a [`GKMatchRequest`](./gkmatchrequest.md) object and set the parameters of the game.
 
@@ -161,7 +161,7 @@ If you set the matchmaking rule properties ([`queueName`](./gkmatchrequest/queue
 
 If you set the [`recipients`](./gkmatchrequest/recipients.md) property to invite other players, you can also set their game-specific properties using the [`recipientProperties`](./gkmatchrequest/recipientproperties.md) property.
 
-##### Submit match requests to Game Center
+### Submit match requests to Game Center
 
 You submit a match request using the same APIs regardless of whether you configure matchmaking rules. For example, present the [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) interface to enable players to invite others and automatch to fill empty spots.
 

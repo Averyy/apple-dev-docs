@@ -19,7 +19,7 @@ A diagnostic for a disk write exception.
 struct DiskWriteExceptionDiagnostic
 ```
 
-#### Discussion
+## Discussion
 
 Disk write exceptions occur when your app writes data to disk at an excessive rate. The diagnostic includes a [`CallStackTree`](./callstacktree.md) to identify the responsible code path, and `totalBytesWritten` to quantify the I/O.
 

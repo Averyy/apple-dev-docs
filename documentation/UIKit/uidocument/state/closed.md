@@ -22,7 +22,7 @@ static var closed: UIDocument.State { get }
 UIDocumentStateClosed
 ```
 
-#### Discussion
+## Discussion
 
 The document has either not been successfully opened, or has been since closed. The document properties might not be valid.
 

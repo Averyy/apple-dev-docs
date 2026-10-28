@@ -15,7 +15,7 @@ A Boolean value that indicates whether the CarPlay app offers public safety info
 - **Name**: `com.apple.developer.carplay-public-safety`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Fire, ambulance, police, and other public safety organizations can add this entitlement to an app they use to deliver safety-related information to the general public.
 

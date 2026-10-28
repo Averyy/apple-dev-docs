@@ -18,7 +18,7 @@ Specifies which map features should have selection disabled.
 @preconcurrency func mapFeatureSelectionDisabled(_ selectionDisabled: @escaping (MapFeature) -> Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The `selectionDisabled` parameter takes a closure which maps map features, to booleans. If that closure returns true for a given map feature, that map feature will be considered unselectable.
 

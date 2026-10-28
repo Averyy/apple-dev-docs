@@ -21,7 +21,7 @@ func selectedComposition() -> QCComposition!
 - (QCComposition *) selectedComposition;
 ```
 
-#### Return Value
+## Return Value
 
 A `QCComposition` object, or `nil` if a composition is not selected.
 

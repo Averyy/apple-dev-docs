@@ -29,7 +29,7 @@ struct Button<Label> where Label : View
 - [Managing search interface activation](./managing-search-interface-activation.md)
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Overview
+## Overview
 
 You create a button by providing an action and a label. The action is either a method or closure property that does something when a user clicks or taps the button. The label is a view that describes the button’s action — for example, by showing text, an icon, or both.
 
@@ -72,7 +72,7 @@ How the user activates the button varies by platform:
 
 The appearance of the button depends on factors like where you place it, whether you assign it a role, and how you style it.
 
-##### Adding buttons to containers
+### Adding buttons to containers
 
 Use buttons for any user interface element that initiates an action. Buttons automatically adapt their visual style to match the expected style within these different containers and contexts. For example, to create a [`List`](./list.md) cell that initiates an action when selected by the user, add a button to the list’s content:
 
@@ -106,7 +106,7 @@ Similarly, to create a context menu item that initiates an action, add a button 
 
 This pattern extends to most other container views in SwiftUI that have customizable, interactive content, like [`Form`](./form.md) instances.
 
-##### Assigning a role
+### Assigning a role
 
 You can optionally initialize a button with a [`ButtonRole`](./buttonrole.md) that characterizes the button’s purpose. For example, you can create a [`destructive`](./buttonrole/destructive.md) button for a deletion action:
 
@@ -120,7 +120,7 @@ The system uses the button’s role to style the button appropriately in every c
 
 If you don’t specify a role for a button, the system applies an appropriate default appearance.
 
-##### Styling buttons
+### Styling buttons
 
 You can customize a button’s appearance using one of the standard button styles, like [`bordered`](./primitivebuttonstyle/bordered.md), and apply the style with the [`buttonStyle(_:)`](./view/buttonstyle%28_%29.md) modifier:
 

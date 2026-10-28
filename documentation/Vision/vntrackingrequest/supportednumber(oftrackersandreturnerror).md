@@ -24,7 +24,7 @@ func supportedNumber(ofTrackersAndReturnError error: NSErrorPointer) -> Int
 - (NSUInteger) supportedNumberOfTrackersAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of trackers given a combination; or `0` if such combination doesn’t exist.
 

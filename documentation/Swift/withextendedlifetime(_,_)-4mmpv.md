@@ -21,7 +21,7 @@ Evaluates a closure while ensuring that the given instance is not destroyed befo
 func withExtendedLifetime<T, E, Result>(_ x: borrowing T, _ body: () throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, T : ~Escapable, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 

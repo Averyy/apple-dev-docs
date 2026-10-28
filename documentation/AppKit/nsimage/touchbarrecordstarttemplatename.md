@@ -22,7 +22,7 @@ class let touchBarRecordStartTemplateName: String
 extern NSImageName const NSImageNameTouchBarRecordStartTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for start recording](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825126@2x.png)
 

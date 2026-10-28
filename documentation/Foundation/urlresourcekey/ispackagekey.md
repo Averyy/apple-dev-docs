@@ -25,7 +25,7 @@ static let isPackageKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsPackageKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the value as a Boolean [`NSNumber`](../nsnumber.md) object read-write in macOS 10.8 and later, and read-only in previous versions. A `true` value means that the resource is a file package.
 

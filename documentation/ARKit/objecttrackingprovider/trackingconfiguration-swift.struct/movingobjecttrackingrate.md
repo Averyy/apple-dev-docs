@@ -17,7 +17,7 @@ The frequency at which object tracking runs for moving objects, in Hz.
 var movingObjectTrackingRate: Float
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps this to between `0` and `30` Hz.
 

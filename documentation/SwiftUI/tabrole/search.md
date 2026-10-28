@@ -21,7 +21,7 @@ The search role.
 static var search: TabRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 Searchable tab views will prefer to have the first tab with this role implement search. If no tabs are specified as the search tab, the tab view will apply search to all tabs, resetting search state as the selected tab changes.
 

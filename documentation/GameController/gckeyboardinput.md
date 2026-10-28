@@ -24,7 +24,7 @@ class GCKeyboardInput
 @interface GCKeyboardInput : GCPhysicalInputProfile
 ```
 
-#### Overview
+## Overview
 
 Use this profile to get the state of the keyboard buttons that the [`GCKeyCode`](./gckeycode.md) structure defines.
 

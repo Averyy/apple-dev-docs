@@ -20,7 +20,7 @@ class CMIOExtensionProviderProperties
 @interface CMIOExtensionProviderProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an instance of this object to manage the provider’s property state.
 

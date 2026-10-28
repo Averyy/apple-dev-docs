@@ -5,7 +5,7 @@
 
 Specify how Platform SSO authenticates with the identity provider.
 
-#### Overview
+## Overview
 
 Use a login configuration to instruct Platform SSO how to authenticate with the identity provider.
 
@@ -13,7 +13,7 @@ Use [`additionalAuthorizationScopes`](./asauthorizationproviderextensionlogincon
 
 The [`accountDisplayName`](./asauthorizationproviderextensionloginconfiguration/accountdisplayname.md) is the user-friendly name for the IdP, and replaces “identity provider” in notifications and the authentication dialog.
 
-##### Configure for federation
+### Configure for federation
 
 Federation enables authentication between security domains, such as from a local IdP to a cloud IdP.  You have two options to configure Platform SSO for federation:
 
@@ -32,7 +32,7 @@ To use Dynamic WS-Trust, set [`federationType`](./asauthorizationproviderextensi
 - **[`federationPredicate`](./asauthorizationproviderextensionloginconfiguration/federationpredicate.md)**: The predicate to evaluate the pre-authentication response. If it evaluates to [`true`](../Swift/true.md), then the authentication proceeds with WS-Trust. If [`false`](../Swift/false.md), the system uses normal password authentication.
 - **[`federationMEXURLKeypath`](./asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)**: The key path in the pre-authentication response for the MEX URL, for use only if the `federationPredicate` evaluates to [`true`](../Swift/true.md).
 
-##### Use the login manager to interface with Platform SSO
+### Use the login manager to interface with Platform SSO
 
 The SSO extension uses [`ASAuthorizationProviderExtensionLoginManager`](./asauthorizationproviderextensionloginmanager.md) to interface with Platform SSO. The system provides and instance of the login manager for each authentication request. The login manager can:
 
@@ -46,7 +46,7 @@ If the extension detects that the keys or the device become compromised due to a
 
 The loginConfiguration.additionalAuthorizationScopes can be used to differentiate authentication requests for Network Account Authorization from other login requests. For example, temporary admin group membership could be returned for these requests.
 
-##### Migrate from per-user device keys to shared device keys
+### Migrate from per-user device keys to shared device keys
 
 Devices keys represent the device to the IdP. They keys can either be *per-user*, which means each user on the device has separate keys, or *shared*, which means all users on the device use the same keys. Shared device keys enable a device to authenticate with the IdP before a user logs in. Shared keys are available in macOS 14 and later.
 

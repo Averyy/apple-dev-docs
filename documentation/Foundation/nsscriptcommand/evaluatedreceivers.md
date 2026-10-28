@@ -20,7 +20,7 @@ var evaluatedReceivers: Any? { get }
 @property (retain, readonly, nullable) id evaluatedReceivers;
 ```
 
-#### Discussion
+## Discussion
 
 It evaluates receivers, which are always object specifiers, to a proper object. If the command does not specify a receiver, or if the receiver doesn’t accept the command, it returns `nil`.
 

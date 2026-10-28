@@ -23,11 +23,11 @@ init()
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Return Value
+## Return Value
 
 The initialized interface controller object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for interface controller objects. Override this method as needed and use it to prepare your interface controller for use. In your implementation, call `super` first and then perform your own initialization.
 

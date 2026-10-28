@@ -16,7 +16,7 @@ The activation state of the pass.
 required ApplePayPaymentPassActivationState activationState;
 ```
 
-#### Discussion
+## Discussion
 
 The activation state is of type [`ApplePayPaymentPassActivationState`](../applepaypaymentpassactivationstate.md).
 

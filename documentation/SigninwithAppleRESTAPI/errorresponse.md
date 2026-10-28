@@ -19,7 +19,7 @@ object ErrorResponse
 
 - [Incorporating Sign in with Apple into other platforms](../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md)
 
-#### Discussion
+## Discussion
 
 The `error` property contains exactly one of the following values:
 

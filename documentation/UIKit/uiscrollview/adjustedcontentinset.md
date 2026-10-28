@@ -23,7 +23,7 @@ var adjustedContentInset: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets adjustedContentInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to obtain the adjusted area in which to draw content. The [`contentInsetAdjustmentBehavior`](./contentinsetadjustmentbehavior-swift.property.md) property determines whether the safe area insets are included in the adjustment. The safe area insets are then added to the values in the [`contentInset`](./contentinset.md) property to obtain the final value of this property.
 

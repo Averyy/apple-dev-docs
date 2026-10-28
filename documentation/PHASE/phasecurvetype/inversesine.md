@@ -24,7 +24,7 @@ case inverseSine
 PHASECurveTypeInverseSine
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `sin^-1(x)` shapes this curve. The inverse sine curve behaves like [`PHASECurveType.sine`](./sine.md), only rotated `90` degrees.
 

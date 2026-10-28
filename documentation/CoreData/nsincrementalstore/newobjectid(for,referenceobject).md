@@ -25,11 +25,11 @@ func newObjectID(for entity: NSEntityDescription, referenceObject data: Any) -> 
 - (NSManagedObjectID *) newObjectIDForEntity:(NSEntityDescription *) entity referenceObject:(id) data;
 ```
 
-#### Return Value
+## Return Value
 
 A new object ID for an instance of the entity specified by `entity` and that uses `data` as the key.
 
-#### Discussion
+## Discussion
 
 You should not override this method.
 

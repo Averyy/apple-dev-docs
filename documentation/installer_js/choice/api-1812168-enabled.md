@@ -5,7 +5,7 @@
 
 A Boolean value that indicates whether the choice is enabled.
 
-#### Overview
+## Overview
 
 `true` when the choice is enabled, false otherwise.
 

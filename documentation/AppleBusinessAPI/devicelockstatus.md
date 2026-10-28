@@ -20,7 +20,7 @@ string DeviceLockStatus
 - `LOCKED`
 - `UNLOCKED`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

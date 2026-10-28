@@ -5,13 +5,13 @@
 
 Discover who signed a framework, and take action when that changes.
 
-#### Overview
+## Overview
 
 When you add third-party binary SDKs to your target as XCFrameworks, the behaviors of those packages become part of the behavior of your product. An attacker who’s able to inject a compromised version of the SDK into your project could change your app’s behavior and cause security and privacy issues for your developers, testers, and people who use your product.
 
 Use Xcode to inspect the information in the code signature embedded in an XCFramework when you add it to your project. The build system fails with an error if the code signature’s subsequently removed, becomes invalid, or a different developer signs an update to the framework. If any of these happens, take action to resolve the issue.
 
-##### Inspect a dependency’s code signing identity
+### Inspect a dependency’s code signing identity
 
 In Xcode, select your dependency’s XCFramework folder in the Project navigator. The File inspector shows you the XCFramework’s code signing status. If the framework is signed with an Apple Developer certificate, the inspector also shows which team signed the framework.
 
@@ -21,7 +21,7 @@ If the XCFramework is signed by a self-issued code signing identity, the inspect
 
 ![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework is signed using a self-signed certificate, and shows the certificate’s SHA-256 checksum.](https://developer.apple.com/tutorials/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-2@2x.png)
 
-##### Diagnose build failures caused by code signature changes
+### Diagnose build failures caused by code signature changes
 
 An XCFramework’s code signature can change for legitimate reasons, like:
 
@@ -53,7 +53,7 @@ If your team and the SDK provider can’t account for the change to the XCFramew
 
 Xcode also warns you if the XCFramework is signed with an expired or revoked code signing identity, even if the identity hasn’t changed since you added the XCFramework to your project. If this happens, work with the SDK provider to obtain a new version of the framework that’s signed by a valid code signing identity.
 
-##### Diagnose failures caused when a code signature is removed
+### Diagnose failures caused when a code signature is removed
 
 If someone removes the code signature for an XCFramework, Xcode shows the change in the File inspector.
 

@@ -19,7 +19,7 @@ Indicates whether the item with the specified identifier is in an expanded state
 func isExpanded(_ item: ItemIdentifierType) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This expansion state persists along with the section snapshot.
 

@@ -25,7 +25,7 @@ func decodeBool(forKey key: String) -> Bool
 - (BOOL) decodeBoolForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

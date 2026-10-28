@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>) where X : Plottable, Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a horizontal rule at x positions from `xStart` to `xEnd` to a y position:
 

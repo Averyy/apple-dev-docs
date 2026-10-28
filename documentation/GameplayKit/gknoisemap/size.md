@@ -24,7 +24,7 @@ var size: vector_double2 { get }
 @property (nonatomic, readonly) vector_double2 size;
 ```
 
-#### Discussion
+## Discussion
 
 If you later generate a texture image from the noise map with the [`SKTexture`](../../SpriteKit/sktexture.md) class, this size is also the pixel dimensions of the texture to generate.
 

@@ -22,11 +22,11 @@ func canPerform(withActivityItems activityItems: [Any]) -> Bool
 - (BOOL) canPerformWithActivityItems:(NSArray *) activityItems;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your service can act on the specified data items or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). Subclasses must override it and return [`true`](../../Swift/true.md) if the data in the `activityItems` parameter can be operated on by your service. Your implementation should check the types of the objects in the array and use that information to determine if your service can act on the corresponding data.
 

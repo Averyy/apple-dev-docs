@@ -22,7 +22,7 @@ func webView(_ webView: WKWebView, shouldAllowImmersiveEnvironmentFrom frame: WK
 - (void) webView:(WKWebView *) webView shouldAllowImmersiveEnvironmentFromFrame:(WKFrameInfo *) frame completionHandler:(void (^)(BOOL allow)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Asks the delegate whether to allow an immersive environment from the specified frame.
 

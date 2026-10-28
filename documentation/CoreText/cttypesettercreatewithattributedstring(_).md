@@ -25,11 +25,11 @@ func CTTypesetterCreateWithAttributedString(_ string: CFAttributedString) -> CTT
 extern CTTypesetterRefCTTypesetterCreateWithAttributedString(CFAttributedStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CTTypesetter object if the call was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 The resultant typesetter can be used to create lines, perform line breaking, and do other contextual analysis based on the characters in the string.
 

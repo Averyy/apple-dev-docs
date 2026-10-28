@@ -15,11 +15,11 @@ The host calls this method to allow the device to perform a configuration change
 virtual kern_return_t PerformDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Subclass and override this method to handle any custom configuration change requests. Then call the superclass implementation to update state. The driver stops IO before performing the configuration change.
 

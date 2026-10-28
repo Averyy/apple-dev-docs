@@ -23,7 +23,7 @@ class var cinematicVideoMetadataFormatDescription: CMFormatDescription? { get }
 @property (class, nonatomic, readonly, nullable) CMFormatDescriptionRef cinematicVideoMetadataFormatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this format description when creating your [`AVAssetWriterInput`](../avassetwriterinput.md) for the Cinematic video timed metadata track.
 

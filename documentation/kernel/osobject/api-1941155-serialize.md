@@ -12,11 +12,11 @@ virtual bool serialize(
  OSSerialize *serializer) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if serialization succeeds, `false` if not.
 
-#### Overview
+## Overview
 
 OSObject's implementation writes a string indicating that the class of the object receiving the function call is not serializable. Subclasses that can meaningfully encode themselves in I/O Kit-style property list XML can override this function to do so. See OSSerialize for more information.
 

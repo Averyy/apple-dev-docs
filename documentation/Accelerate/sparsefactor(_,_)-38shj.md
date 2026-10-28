@@ -25,11 +25,11 @@ func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrix_Float) -
 static SparseOpaqueFactorization_Float SparseFactor(SparseFactorization_t type, SparseMatrix_Float Matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaqueFactorization_Float`](./sparseopaquefactorization_float.md) structure that represents the matrix factorization.
 
-#### Discussion
+## Discussion
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions. The following figure shows a system of equations where the coefficient matrix is sparse:
 

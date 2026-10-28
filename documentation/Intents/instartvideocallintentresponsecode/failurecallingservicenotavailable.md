@@ -24,7 +24,7 @@ case failureCallingServiceNotAvailable
 INStartVideoCallIntentResponseCodeFailureCallingServiceNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when your calling service is temporarily unavailable for any reason.
 

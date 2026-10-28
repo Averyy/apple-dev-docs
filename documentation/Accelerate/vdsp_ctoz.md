@@ -27,7 +27,7 @@ extern void vDSP_ctoz(const DSPComplex *__C, vDSP_Stride __IC, const DSPSplitCom
 - [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 - [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
 
-#### Discussion
+## Discussion
 
 For example, the following code converts the contents of an array of [`DSPComplex`](./dspcomplex.md) structures to a [`DSPSplitComplex`](./dspsplitcomplex.md) structure:
 

@@ -11,7 +11,7 @@ Returns the number of bytes used to represent the OSNumber object's integer valu
 virtual unsigned int numberOfBytes() const;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes used to represent the OSNumber object's integer value. See numberOfBits.
 

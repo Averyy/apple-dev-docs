@@ -5,11 +5,11 @@
 
 Create a custom control that adds AirPlay to your Safari media player. 
 
-#### Overview
+## Overview
 
 Although default controls are available for audio and video elements in your Safari webpage, you can also create your own custom media controls. One of the custom controls you should add is an AirPlay button.
 
-##### Write markup for a custom control 
+### Write markup for a custom control 
 
 In this example, the custom controls for a video have only a Play button and a hidden Pause button: 
 
@@ -21,7 +21,7 @@ In this example, the custom controls for a video have only a Play button and a h
 </div>
 ```
 
-##### Add an AirPlay element to your markup 
+### Add an AirPlay element to your markup 
 
 Add markup for the AirPlay button, setting it to hidden by default to mimic the behavior of the AirPlay button in default controls. The default button appears only when AirPlay is available.
 
@@ -34,7 +34,7 @@ Add markup for the AirPlay button, setting it to hidden by default to mimic the 
 </div> 
 ```
 
-##### Add an event listener 
+### Add an event listener 
 
 To show the AirPlay button when AirPlay is available, you add an event listener for the `webkitplaybacktargetavailabilitychanged` event. This event detects when AirPlay availability changes, and it changes the visibility of the AirPlay button from the above default markup. 
 
@@ -57,7 +57,7 @@ if (window.WebKitPlaybackTargetAvailabilityEvent) {
 } 
 ```
 
-##### Select the AirPlay device 
+### Select the AirPlay device 
 
 Add this block of code to use the native AirPlay route picker in your controls. With this route picker, you can add and select an available AirPlay device:
 
@@ -71,7 +71,7 @@ airPlayButton.addEventListener('click', function(event) {
 });
 ```
 
-##### Ensure that styles persist when playing over AirPlay 
+### Ensure that styles persist when playing over AirPlay 
 
 Use the code below to listen for the event `webkitcurrentplaybacktargetiswirelesschanged`. This event fires when a media element starts or stops AirPlay playback. Use this event to update styles.
 

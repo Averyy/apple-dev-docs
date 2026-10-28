@@ -5,7 +5,7 @@
 
 Record the user’s route during a workout.
 
-#### Overview
+## Overview
 
 Your app can create a route (for example, the user’s path when walking, running, or cycling) and associate it with a workout in HealthKit. During the workout, your app can track the user, gathering a series of location updates. These updates represent both the user’s location (longitude, latitude, and altitude) and the update’s time. Other apps can then use these locations to plot the route on a map, or to calculate metrics not already provided by HealthKit (for example, the user’s speed over specific intervals during the workout).
 
@@ -19,13 +19,13 @@ To create a workout route:
 
 ![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-2955571@2x.png)
 
-##### Request Permissions
+### Request Permissions
 
 As noted in [Setting up HealthKit](./setting-up-healthkit.md), you must request permission from the user before using any data in HealthKit. Specifically for route data, you must request permission to read and share both [`HKWorkout`](./hkworkout.md) and [`HKWorkoutRoute`](./hkworkoutroute.md) samples.
 
 You must also request permission to use location services before your app receives location updates from [Core Location](../CoreLocation/CoreLocation.md). For more information on requesting permission to use location services, see [`CLLocationManager`](../CoreLocation/cllocationmanager.md).
 
-##### Start the Workout
+### Start the Workout
 
 When the user starts a new workout, begin tracking the user’s location using a [`CLLocationManager`](../CoreLocation/cllocationmanager.md) object from the Core Location framework. After you call the location manager’s [`startUpdatingLocation()`](../CoreLocation/cllocationmanager/startupdatinglocation%28%29.md) method, the location manager’s delegate begins receiving updates containing the user’s current location.
 
@@ -44,7 +44,7 @@ guard let routeBuilder = workoutBuilder.seriesBuilder(for: HKSeriesType.workoutR
 }
 ```
 
-##### Add Locations to the Builder
+### Add Locations to the Builder
 
 As your app receives location updates from Core Location, filter and smooth the locations, and then call [`insertRouteData(_:completion:)`](./hkworkoutroutebuilder/insertroutedata%28_,completion%29.md) to add the locations to the route builder.
 
@@ -70,11 +70,11 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 Because raw Core Location data can contain a significant amount of noise, your app needs to filter out any inaccurate locations before adding them to the route builder. Don’t add any locations whose accuracy is greater than 50 meters. For best results, try to keep the time between locations to 3 seconds or less.
 
-##### End the Workout
+### End the Workout
 
 When the user ends the workout, stop tracking the user and save the workout to the HealthKit store. For more information on saving workouts, see [Saving data to HealthKit](./saving-data-to-healthkit.md).
 
-##### Finish the Route
+### Finish the Route
 
 After saving the workout, add any remaining locations to the route builder and call [`finishRoute(with:metadata:completion:)`](./hkworkoutroutebuilder/finishroute%28with,metadata,completion%29.md).
 

@@ -22,7 +22,7 @@ The average bit rate for the variant.
 var averageBitRate: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the variant doesn’t define a peak bit rate, the value is negative.
 

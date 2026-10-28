@@ -17,7 +17,7 @@ A jit-compiled custom Metal kernel defined from a source string.
 static func metalKernel(name: String, inputNames: some Sequence<String>, outputNames: some Sequence<String>, source: String, header: String = "", ensureRowContiguous: Bool = true, atomicOutputs: Bool = false) -> MLXFast.MLXFastKernel
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLXFast.MLXFastKernel`](./mlxfastkernel.md) – see that for information on how to call it
 

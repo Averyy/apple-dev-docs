@@ -19,7 +19,7 @@ var collectionViewLayout: NSCollectionViewLayout? { get set }
 @property (strong, nullable) NSCollectionViewLayout * collectionViewLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you specify the layout object at design time in Interface Builder. The layout object works with your data source object to generate the needed items and views to display. In macOS 10.11 and later, using a data source object is recommended, but you may specify `nil` for this property if your collection view does not use a data source object. The collection view uses the [`NSCollectionViewGridLayout`](../nscollectionviewgridlayout.md) object by default.
 

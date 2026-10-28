@@ -5,7 +5,7 @@
 
 Configure your app for simple enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
 
-#### Overview
+## Overview
 
 The [`AVPlayer`](./avplayer.md) and [`AVQueuePlayer`](./avqueueplayer.md) classes provide the simplest way to enhance buffering for your content with AirPlay 2.
 

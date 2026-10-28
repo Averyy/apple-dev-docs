@@ -23,7 +23,7 @@ static func supportsBidirectionalStreaming() -> Bool
 extern BOOL AXSupportsBidirectionalAXMFiHearingDeviceStreaming();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the iOS device supports bidirectional streaming; otherwise, [`false`](../../Swift/false.md).
 

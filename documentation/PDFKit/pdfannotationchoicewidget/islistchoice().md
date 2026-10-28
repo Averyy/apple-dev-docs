@@ -19,11 +19,11 @@ func isListChoice() -> Bool
 - (BOOL) isListChoice;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the widget annotation is a list, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 A choice widget annotation can be either a list or a pop-up menu.
 

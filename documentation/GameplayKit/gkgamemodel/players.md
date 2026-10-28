@@ -25,7 +25,7 @@ var players: [any GKGameModelPlayer]? { get }
 @property (nonatomic, readonly, nullable) NSArray<id<GKGameModelPlayer>> * players;
 ```
 
-#### Discussion
+## Discussion
 
 This array should contain instances of your player class (a custom class implementing the [`GKGameModelPlayer`](../gkgamemodelplayer.md) protocol) representing the players in the game. When you use the [`GKMinmaxStrategist`](../gkminmaxstrategist.md) class to find an optimal move for a specific player, GameplayKit uses this array to rate the moves of that player’s opponent(s).
 

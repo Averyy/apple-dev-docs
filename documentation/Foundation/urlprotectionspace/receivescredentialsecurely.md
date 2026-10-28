@@ -25,7 +25,7 @@ var receivesCredentialSecurely: Bool { get }
 @property (readonly) BOOL receivesCredentialSecurely;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the credentials for the protection space represented by the receiver can be sent securely, [`false`](../../Swift/false.md) otherwise.
 

@@ -24,11 +24,11 @@ class func vibrance() -> any CIFilter & CIVibrance
 + (CIFilter<CIVibrance> *) vibranceFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the vibrance filter to an image. The effect adjusts the saturation of the image while preserving skin tone colors.
 

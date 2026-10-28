@@ -13,7 +13,7 @@ Build an immersive game using RealityKit audio, simulation, and rendering featur
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session [10103: Discover RealityKit APIs for iOS, macOS and visionOS](https://developer.apple.com/wwdc24/10103/), and WWDC24 session [111801: Enhance your spatial computing app with RealityKit audio](https://developer.apple.com/wwdc24/111801/).
 
@@ -23,7 +23,7 @@ Build an immersive game using RealityKit audio, simulation, and rendering featur
 
 ![A screenshot that shows the spaceship with trailer flying in outer space](https://developer.apple.com/tutorials/images/com.apple.RealityKit/outerspace_work_headlight_on_asteroids.jpeg)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need one of the following:
 

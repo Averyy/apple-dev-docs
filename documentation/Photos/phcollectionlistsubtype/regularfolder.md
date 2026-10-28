@@ -24,7 +24,7 @@ case regularFolder
 PHCollectionListSubtypeRegularFolder
 ```
 
-#### Discussion
+## Discussion
 
 This subtype applies only to collection lists whose type is [`PHCollectionListType.folder`](../phcollectionlisttype/folder.md).
 

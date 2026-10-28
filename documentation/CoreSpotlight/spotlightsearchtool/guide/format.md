@@ -23,7 +23,7 @@ let format: SpotlightSearchTool.FormatLevel
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 Controls how search results are serialized in the model’s context window. Use [`SpotlightSearchTool.FormatLevel.compact`](../formatlevel/compact.md) to reduce token consumption when working with small-context models or long conversations.
 

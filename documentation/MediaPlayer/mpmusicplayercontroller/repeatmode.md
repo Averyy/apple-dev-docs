@@ -23,7 +23,7 @@ var repeatMode: MPMusicRepeatMode { get set }
 @property (nonatomic) MPMusicRepeatMode repeatMode;
 ```
 
-#### Discussion
+## Discussion
 
 For the available repeat modes, see [`MPMusicRepeatMode`](../mpmusicrepeatmode.md). If not explicitly set, `repeatMode` defaults to [`MPMusicRepeatMode.default`](../mpmusicrepeatmode/default.md).
 

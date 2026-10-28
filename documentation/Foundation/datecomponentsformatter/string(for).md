@@ -25,11 +25,11 @@ func string(for obj: Any?) -> String?
 - (NSString *) stringForObjectValue:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representing the specified date information.
 
-#### Discussion
+## Discussion
 
 This method has the same behavior as the [`string(from:)`](./string%28from%29-9exxn.md) method.
 

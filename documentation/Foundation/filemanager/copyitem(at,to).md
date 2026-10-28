@@ -29,7 +29,7 @@ func copyItem(at srcURL: URL, to dstURL: URL) throws
 
 - [About Apple File System](../about-apple-file-system.md)
 
-#### Discussion
+## Discussion
 
 When copying items, the current process must have permission to read the file or directory at `srcURL` and write the parent directory of `dstURL`. If the item at `srcURL` is a directory, this method copies the directory and all of its contents, including any hidden files. If a file with the same name already exists at `dstURL`, this method stops the copy attempt and returns an appropriate error. If the last component of `srcURL` is a symbolic link, only the link is copied to the new path.
 

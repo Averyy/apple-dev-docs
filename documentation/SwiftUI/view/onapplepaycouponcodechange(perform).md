@@ -19,7 +19,7 @@ nonisolated
 func onApplePayCouponCodeChange(perform action: @escaping (String) async -> PKPaymentRequestCouponCodeUpdate) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 An update to the payment request with the coupon code.
 

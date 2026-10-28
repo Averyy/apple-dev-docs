@@ -5,13 +5,13 @@
 
 Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
 
-#### Overview
+## Overview
 
 In iOS 14 and later, CarPlay adds more app categories and further entitlements to support them. The framework also provides new templates that you can use to build your app’s user interface.
 
 Some of the new app categories supersede existing ones, such as audio and communication. Using the proper combination of frameworks and entitlements, you can ensure that your app is compatible with iOS 13 and earlier, and iOS 14 and later. To learn about requesting entitlements for your CarPlay-enabled app, see [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md).
 
-##### Add Backward Compatibility to Audio Apps
+### Add Backward Compatibility to Audio Apps
 
 In iOS 14 and later, the CarPlay framework includes templates that you can use to build your audio app’s user interface. To use these templates, include the `com.apple.developer.carplay-audio` entitlement.
 
@@ -26,7 +26,7 @@ Audio apps can use the CarPlay framework, the Media Player framework, or both. I
 <true/>
 ```
 
-##### Add Backward Compatibility to Communication Apps
+### Add Backward Compatibility to Communication Apps
 
 In iOS 14 and later, the CarPlay framework includes templates that you can use to build your communication app’s user interface. To use these templates, include the `com.apple.developer.carplay-communication` entitlement.
 

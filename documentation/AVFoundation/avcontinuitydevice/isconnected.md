@@ -19,7 +19,7 @@ var isConnected: Bool { get }
 @property (nonatomic, readonly, getter=isConnected) BOOL connected;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property can change from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md), but not the reverse. Instead, the system creates a new [`AVContinuityDevice`](../avcontinuitydevice.md) instance when the same physical device reconnects to the system.
 

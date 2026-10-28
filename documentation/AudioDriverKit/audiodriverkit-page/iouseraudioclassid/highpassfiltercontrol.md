@@ -15,7 +15,7 @@ The identifier for the audio high pass filter control class.
 HighPassFilterControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that indicates the setting of the high pass filter on the element.
 

@@ -5,17 +5,17 @@
 
 An option that implements different kinds of animation timing.
 
-#### Overview
+## Overview
 
 The default value is `basic`.
 
-##### Styles
+### Styles
 
 - **`basic`**: Animates with steady motion.
 - **`playful`**: Animates with whimsical motion.
 - **`wild`**: Animates with sporadic motion.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform token style = "basic" (

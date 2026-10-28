@@ -25,7 +25,7 @@ case incoming
 INInteractionDirectionIncoming
 ```
 
-#### Discussion
+## Discussion
 
 Choose this value when the interaction involves a message sent to the user of the device.
 

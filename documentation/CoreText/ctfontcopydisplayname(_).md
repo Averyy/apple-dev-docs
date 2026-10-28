@@ -25,7 +25,7 @@ func CTFontCopyDisplayName(_ font: CTFont) -> CFString
 extern CFStringRefCTFontCopyDisplayName(CTFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 A retained reference to the localized display name of the font.
 

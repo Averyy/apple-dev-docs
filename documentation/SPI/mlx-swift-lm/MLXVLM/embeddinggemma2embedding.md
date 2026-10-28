@@ -17,7 +17,7 @@ Embeddings of text, images, video and audio from an EmbeddingGemma 2 checkpoint,
 actor EmbeddingGemma2Embedding
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let embeddings = try await EmbeddingGemma2Embedding(

@@ -24,7 +24,7 @@ class VNGenerateImageFeaturePrintRequest
 @interface VNGenerateImageFeaturePrintRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This request returns the feature print data it generates as an array of [`VNFeaturePrintObservation`](./vnfeatureprintobservation.md) objects.
 

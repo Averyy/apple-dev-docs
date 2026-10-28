@@ -5,7 +5,7 @@
 
 Retrieve asset metadata or request full asset content.
 
-#### Overview
+## Overview
 
 You fetch assets to begin working with them. Use the class methods listed in Fetching Assets to retrieve one or more [`PHAsset`](../Photos/phasset.md) instances representing the assets you want to display or edit. For example, to fetch all the assets in an asset collection (such as an album or moment), use the [`fetchAssets(in:options:)`](../Photos/phasset/fetchassets%28in,options%29.md) method. Each fetch method takes a [`PHFetchOptions`](../Photos/phfetchoptions.md) parameter that you use to specify the assets to retrieve and how to sort them.
 

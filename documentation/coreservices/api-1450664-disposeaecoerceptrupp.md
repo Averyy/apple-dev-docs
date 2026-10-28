@@ -19,7 +19,7 @@ func DisposeAECoercePtrUPP(_ userUPP: AECoercePtrUPP!)
 void DisposeAECoercePtrUPP(AECoercePtrUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`AECoercePtrProcPtr`](./aecoerceptrprocptr.md) callback function. 
 

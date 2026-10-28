@@ -25,11 +25,11 @@ func CMFormatDescriptionEqualIgnoringExtensionKeys(_ formatDescription: CMFormat
 extern Boolean CMFormatDescriptionEqualIgnoringExtensionKeys(CMFormatDescriptionRef formatDescription, CMFormatDescriptionRef otherFormatDescription, CFTypeRef formatDescriptionExtensionKeysToIgnore, CFTypeRef sampleDescriptionExtensionAtomKeysToIgnore);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two descriptions are equal; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When you specify any keys, the function ignores `kCMFormatDescriptionExtension_VerbatimSampleDescription` and `kCMFormatDescriptionExtension_VerbatimISOSampleEntry` for the purpose of comparison.
 

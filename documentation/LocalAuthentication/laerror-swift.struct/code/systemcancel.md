@@ -24,7 +24,7 @@ case systemCancel
 LAErrorSystemCancel
 ```
 
-#### Discussion
+## Discussion
 
 This might happen if another app comes to the foreground while your app displays the authentication dialog.
 

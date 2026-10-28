@@ -27,7 +27,7 @@ var toolbarItemPresentationSize: UINSToolbarItemPresentationSize { get }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 [`NSToolbar`](../../AppKit/nstoolbar.md) supports various display modes that affect the amount of space available for displaying toolbar items. If you use [`NSUIViewToolbarItem`](../nsuiviewtoolbaritem.md) to host a [`UIView`](../uiview.md) in an [`NSToolbar`](../../AppKit/nstoolbar.md) when you build your app with Mac Catalyst, that view receives information about its expected size through this trait. Use this trait to make any necessary adjustments to your custom view when the trait collection changes, such as when the toolbar switches to a new display mode.
 

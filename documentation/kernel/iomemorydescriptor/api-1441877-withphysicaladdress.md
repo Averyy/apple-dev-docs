@@ -15,11 +15,11 @@ Creates an IOMemoryDescriptor to describe one physical range.
 static OSPtr<IOMemoryDescriptor> withPhysicalAddress(IOPhysicalAddress address, IOByteCount withLength, IODirection withDirection);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This method creates and initializes an IOMemoryDescriptor for memory consisting of a single physical memory range.
 

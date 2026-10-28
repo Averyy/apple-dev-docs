@@ -26,7 +26,7 @@ var location: CLLocation? { get }
 @property (nonatomic, copy, readonly, nullable) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if no location data has ever been retrieved.
 

@@ -21,7 +21,7 @@ Executes a block object only once for the lifetime of an application.
 extern void dispatch_once(dispatch_once_t *predicate, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function is useful for initialization of global data (singletons) in an application. Always call this function before using or testing any variables that are initialized by the block.
 

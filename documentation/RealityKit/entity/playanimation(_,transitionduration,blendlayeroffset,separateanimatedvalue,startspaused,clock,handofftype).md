@@ -21,7 +21,7 @@ Plays an animation with the specified options.
 @MainActor @preconcurrency func playAnimation(_ animation: AnimationResource, transitionDuration: TimeInterval = 0, blendLayerOffset: Int = 0, separateAnimatedValue: Bool = false, startsPaused: Bool = false, clock: CMClockOrTimebase? = nil, handoffType: AnimationHandoffType = .default) -> AnimationPlaybackController
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to play an animation and configure playback options. RealityKit supports blending up to two different animations at the same time. When RealityKit applies multiple animations to an entity, the order in which it applies the animations affects the final animation. Use the `blendLayerOffset` parameter to specify the order of animations when playing multiple animations at the same time.
 

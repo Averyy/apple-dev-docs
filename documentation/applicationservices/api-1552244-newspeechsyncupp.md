@@ -15,7 +15,7 @@ Creates a new universal procedure pointer (UPP) to a synchronizationcallback fun
 SpeechSyncUPP NewSpeechSyncUPP(SpeechSyncProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 A UPP to the synchronizationcallback function. See the description of the `SpeechSyncUPP` data type.
 

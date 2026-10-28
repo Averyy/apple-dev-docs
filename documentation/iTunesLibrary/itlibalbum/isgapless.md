@@ -20,7 +20,7 @@ var isGapless: Bool { get }
 @property (nonatomic, assign, readonly, getter=isGapless) BOOL gapless;
 ```
 
-#### Discussion
+## Discussion
 
 A gapless album doesn’t have silence (gaps) between tracks.
 

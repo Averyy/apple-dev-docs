@@ -23,7 +23,7 @@ convenience init?(type activationType: MLCActivationType, a: Float)
 + (instancetype) descriptorWithType:(MLCActivationType) activationType a:(float) a;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create one of the following activation descriptors:
 

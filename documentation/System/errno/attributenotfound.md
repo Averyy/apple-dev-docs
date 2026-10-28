@@ -25,7 +25,7 @@ static var attributeNotFound: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The specified extended attribute doesn’t exist.
 

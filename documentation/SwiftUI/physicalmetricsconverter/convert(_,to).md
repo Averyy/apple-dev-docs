@@ -53,11 +53,11 @@ Converts a point’s coordinates to physical length measurements in the specifie
 @preconcurrency func convert<V>(_ pointValues: V, to unit: UnitLength) -> V where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 A point value with physical length measurements, in the given unit
 
-#### Discussion
+## Discussion
 
 The point is assumed to be in the coordinate system of the scene that this converter is associated with. If the scene is scaled, the physical measurement will take this scale into account.
 

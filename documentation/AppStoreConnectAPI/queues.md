@@ -5,7 +5,7 @@
 
 Manage the queues that contain matchmaking rule sets and that you submit match requests to.
 
-#### Overview
+## Overview
 
 The `queue` resource represents a queue of match requests that Game Center applies the associated set of matchmaking rules to. For more information, see [Matchmaking rules](../GameKit/matchmaking-rules.md) in the GameKit framework.
 

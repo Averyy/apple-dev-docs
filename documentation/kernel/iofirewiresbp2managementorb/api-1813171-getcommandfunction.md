@@ -12,11 +12,11 @@ virtual UInt32 getCommandFunction(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the function of the management ORB.
 
-#### Overview
+## Overview
 
 Returns the function of the management ORB. This is the same value that was set with setCommandFunction.
 

@@ -14,7 +14,7 @@ func simd_add(_ p: simd_quath, _ q: simd_quath) -> simd_quath
 static simd_quath simd_add(simd_quath p, simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The sum of the quaternions `p` and `q`.
 

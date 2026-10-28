@@ -20,7 +20,7 @@ Calculates a locally available asset pack’s installation size.
 - (void) getLocalSizeOfAssetPackWithIdentifier:(NSString *) assetPackIdentifier calculationMethod:(BASizeCalculationMethod) calculationMethod completionHandler:(void (^)(long long size, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This is different than the download size, which could be smaller. Calculating the size of an asset pack that contains many files can take a long time.
 

@@ -19,7 +19,7 @@ A user info key to retrieve the center point of the keyboard after its animation
 extern NSString * const UIKeyboardCenterEndUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value retrieved with this key is an [`NSValue`](../Foundation/nsvalue.md) object containing a [`CGPoint`](../CoreFoundation/cgpoint.md) indicating the keyboard’s center point, in the window’s coordinate space, after its animation ends. These coordinates take into account any rotation factors applied to the window’s contents as a result of interface orientation changes. Thus, the center point of the keyboard is different in portrait versus landscape orientations.
 

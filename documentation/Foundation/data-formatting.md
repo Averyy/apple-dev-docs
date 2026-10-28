@@ -5,7 +5,7 @@
 
 Convert numbers, dates, measurements, and other values to and from locale-aware string representations.
 
-#### Overview
+## Overview
 
 Foundation supports two approaches for data formatting:
 

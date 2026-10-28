@@ -19,11 +19,11 @@ Returns the current status of the specified vehicle function.
 func status(for function: FunctionIdentifier) throws -> FunctionStatus?
 ```
 
-#### Return Value
+## Return Value
 
 The status of the feature, or `nil` if the status is currently unknown.
 
-#### Discussion
+## Discussion
 
 Each feature of your vehicle has one or more associated states, which you define. For example, the door locks of a vehicle might be in the locked or unlocked state. This method returns the state if it is known.
 

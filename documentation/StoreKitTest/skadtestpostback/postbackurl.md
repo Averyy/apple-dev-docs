@@ -21,7 +21,7 @@ var postbackURL: String { get }
 @property (nonatomic, strong, readonly) NSString * postbackURL;
 ```
 
-#### Discussion
+## Discussion
 
 The testing environment sends the test postback to the [`postbackURL`](./postbackurl.md) when you call [`flushPostbacks(responses:)`](../skadtestsession/flushpostbacks%28responses%29.md).
 

@@ -24,7 +24,7 @@ static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailur
 extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonUnsupportedForPresetOnPlatform;
 ```
 
-#### Discussion
+## Discussion
 
 You can continue the export, but it runs as a non-resumable (default) export.
 

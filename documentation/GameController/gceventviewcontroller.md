@@ -36,7 +36,7 @@ class GCEventViewController
 
 - [Adding virtual controls to games that support game controllers in iOS](./adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
-#### Overview
+## Overview
 
 On systems, such as tvOS, where the player uses the game controller to both navigate the system interface and play your game, use a [`GCEventViewController`](./gceventviewcontroller.md) object as the root view controller to selectively receive input directly from the game controller. You can’t simultaneously process input through the responder chain and Game Controller input elements.
 

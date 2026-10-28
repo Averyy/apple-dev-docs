@@ -19,11 +19,11 @@ func selectedTag() -> Int
 - (NSInteger) selectedTag;
 ```
 
-#### Return Value
+## Return Value
 
 The tag of the selected cell, or `-1` if no cell is selected.
 
-#### Discussion
+## Discussion
 
 When you set the tag of a control with a single cell in Interface Builder, it sets the tags of both the control and the cell with the same value as a convenience.
 

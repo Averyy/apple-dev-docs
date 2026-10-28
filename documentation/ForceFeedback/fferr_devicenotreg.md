@@ -14,7 +14,7 @@
 #define FFERR_DEVICENOTREG
 ```
 
-#### Discussion
+## Discussion
 
 The device or device instance or effect is not registered.
 

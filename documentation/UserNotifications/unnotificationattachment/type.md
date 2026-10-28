@@ -32,7 +32,7 @@ var type: String { get }
 @property (atomic, copy, readonly) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 The system derives the value of this property from the attachment data.
 

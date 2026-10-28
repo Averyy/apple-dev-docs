@@ -23,7 +23,7 @@ func indexPath(for cell: UICollectionViewCell) -> IndexPath?
 - (NSIndexPath *) indexPathForCell:(UICollectionViewCell *) cell;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the cell or `nil` if the specified cell is not in the collection view.
 

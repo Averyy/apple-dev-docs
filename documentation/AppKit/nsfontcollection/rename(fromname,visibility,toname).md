@@ -19,7 +19,7 @@ class func rename(fromName oldName: NSFontCollection.Name, visibility: NSFontCol
 + (BOOL) renameFontCollectionWithName:(NSFontCollectionName) oldName visibility:(NSFontCollectionVisibility) visibility toName:(NSFontCollectionName) newName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Named collections are shown by user interfaces such as the Font panel. When you change the collection, you must show it again to see the changes reflected on disk or in the Font panel.
 

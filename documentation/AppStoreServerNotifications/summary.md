@@ -19,7 +19,7 @@ object summary
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `summary` object appears in the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) when the [`notificationType`](./notificationtype.md) is `RENEWAL_EXTENSION` and the [`subtype`](./subtype.md) is `SUMMARY`. This notification occurs when the App Store completes your request to extend the subscription renewal date for eligible subscribers. For more information about this request, see [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md) in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md).
 

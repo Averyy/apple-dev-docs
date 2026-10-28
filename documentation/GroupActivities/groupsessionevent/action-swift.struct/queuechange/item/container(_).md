@@ -20,7 +20,7 @@ Creates an item that contains the name of a container.
 static func container(_ name: String) -> GroupSessionEvent.Action.QueueChange.Item
 ```
 
-#### Discussion
+## Discussion
 
 When a participant changes an entire queue, call this method to create an item with the queue name. When you show the change notice, SharePlay displays the container name to the participant.
 

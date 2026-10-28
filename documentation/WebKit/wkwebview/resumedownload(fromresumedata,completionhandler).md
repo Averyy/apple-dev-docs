@@ -27,7 +27,7 @@ func resumeDownload(fromResumeData resumeData: Data) async -> WKDownload
 - (void) resumeDownloadFromResumeData:(NSData *) resumeData completionHandler:(void (^)(WKDownload *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To receive progress updates, set the delegate of the download object in the completion handler.
 

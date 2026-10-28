@@ -21,7 +21,7 @@ A collection containing just the values of the dictionary.
 var values: [xpc_object_t] { get }
 ```
 
-#### Discussion
+## Discussion
 
 A collection containing just the values of the dictionary. When iterated over, values appear in this collection in the same order as they occur in the dictionary’s key-value pairs.
 

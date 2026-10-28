@@ -16,7 +16,7 @@ case success
 INGetAvailableRestaurantReservationBookingDefaultsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app was successful in providing a set of default values.
 

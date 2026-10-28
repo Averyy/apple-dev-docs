@@ -24,7 +24,7 @@ func JSObjectIsFunction(_ ctx: JSContextRef!, _ object: JSObjectRef!) -> Bool
 bool JSObjectIsFunction(JSContextRef ctx, JSObjectRef object);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if you can call the object as a function; otherwise, [`false`](../Swift/false.md).
 

@@ -5,7 +5,7 @@
 
 Changes an element’s color when it comes into focus.
 
-#### Overview
+## Overview
 
 Here’s an example of how to change a button’s text color when the button comes into focus.
 
@@ -15,13 +15,13 @@ Here’s an example of how to change a button’s text color when the button com
 </button>
 ```
 
-##### Values for tv-highlight-color
+### Values for tv-highlight-color
 
 - **`rgb(r,g,b)`**: The background color of an element, where `r,g,b` are the red, green, and blue color components, and have a value range from `0-255`.
 - **`rgba(r,g,b,a)`**: The background color of an element, where `r,g,b` are the red, green, and blue color components, and have a value range from `0-255`, and `a` is the alpha applied to the color, ranging from `0.0-1.0`.
 - **`transparent`**: The background color of the element, which is transparent.
 
-##### Elements that Use tv-highlight-color
+### Elements that Use tv-highlight-color
 
 - [badge](./badge.md)
 - [decorationLabel](./decorationlabel.md)

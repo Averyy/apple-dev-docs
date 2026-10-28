@@ -20,7 +20,7 @@ Events the scene invokes.
 enum SceneEvents
 ```
 
-#### Overview
+## Overview
 
 For more information on subscribing to scene events, see `RealityKit/Scene/Event`.
 

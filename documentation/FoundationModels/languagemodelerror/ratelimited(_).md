@@ -20,7 +20,7 @@ The session has been rate limited.
 case rateLimited(LanguageModelError.RateLimited)
 ```
 
-#### Discussion
+## Discussion
 
 This failure can happen if you make too many requests in a short window. You can recover from this error by spacing your requests or reducing system load. The exact solution may be model dependent.
 

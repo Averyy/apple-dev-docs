@@ -25,7 +25,7 @@ struct DenseVector_Complex_Float
 typedef struct { ... } DenseVector_Complex_Float;
 ```
 
-#### Overview
+## Overview
 
 - **`count`**: Number of entries in the vector.
 - **`data`**: The array of complex float values.

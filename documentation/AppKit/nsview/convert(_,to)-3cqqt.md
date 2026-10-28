@@ -19,7 +19,7 @@ func convert(_ rect: NSRect, to view: NSView?) -> NSRect
 - (NSRect) convertRect:(NSRect) rect toView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The converted rectangle.
 

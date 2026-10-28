@@ -22,7 +22,7 @@ var row1Column2TextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * row1Column2TextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`highlightColumn2`](./highlightcolumn2.md) property is [`true`](../../Swift/true.md), a tint color is applied to this text. In multicolor environments, the text provider or template provides the tint color. In monochrome environments, the clock face provides the tint color.
 

@@ -19,7 +19,7 @@ static var deviceIndependentFlagsMask: NSEvent.ModifierFlags { get }
 NSEventModifierFlagDeviceIndependentFlagsMask
 ```
 
-#### Discussion
+## Discussion
 
 Use this symbol to preserve key event flags and mask all other flags.
 

@@ -25,11 +25,11 @@ func DNSServiceSetDispatchQueue(_ service: DNSServiceRef!, _ queue: dispatch_que
 DNSServiceErrorType DNSServiceSetDispatchQueue(DNSServiceRef service, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_NoMemory if it cannot create a dispatch source Returns kDNSServiceErr_BadParam if the service param is invalid or the queue param is invalid
 
-#### Discussion
+## Discussion
 
 It is the client’s responsibility to ensure that the provided dispatch queue is running.
 

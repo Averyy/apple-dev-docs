@@ -24,11 +24,11 @@ class func perspectiveTransformWithExtent() -> any CIFilter & CIPerspectiveTrans
 + (CIFilter<CIPerspectiveTransformWithExtent> *) perspectiveTransformWithExtentFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the perspective transform with extent filter to an image. The effect alters the geometry of an image to simulate the observer changing viewing position. The extent filter crops the image within the bounds specified. You can use the perspective filter to skew an image.
 

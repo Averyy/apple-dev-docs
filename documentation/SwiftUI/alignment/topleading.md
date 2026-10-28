@@ -21,7 +21,7 @@ A guide that marks the top and leading edges of the view.
 static let topLeading: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`top`](../verticalalignment/top.md) vertical guide:
 

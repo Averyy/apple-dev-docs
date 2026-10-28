@@ -25,11 +25,11 @@ func NSMapInsertIfAbsent(_ table: NSMapTable<AnyObject, AnyObject>, _ key: Unsaf
 extern void *NSMapInsertIfAbsent(NSMapTable *table, const void *key, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 If `key` matches a key already in `table`, the preexisting value; otherwise, `key` and `value` are added to `table` and returns `NULL`.
 
-#### Discussion
+## Discussion
 
 Raises `NSInvalidArgumentException` if `key` is equal to the `notAKeyMarker` field of the table’s `NSMapTableKeyCallBacks` structure.
 

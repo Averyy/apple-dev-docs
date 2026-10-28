@@ -24,7 +24,7 @@ let kIOSurfacePlaneWidth: CFString
 extern CFStringRef const kIOSurfacePlaneWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Required for image planes.
 

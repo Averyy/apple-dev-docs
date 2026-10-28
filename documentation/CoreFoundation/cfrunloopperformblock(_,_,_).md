@@ -25,7 +25,7 @@ func CFRunLoopPerformBlock(_ rl: CFRunLoop!, _ mode: CFTypeRef!, _ block: (() ->
 extern void CFRunLoopPerformBlock(CFRunLoopRef rl, CFTypeRef mode, void (^block)());
 ```
 
-#### Discussion
+## Discussion
 
 When the runloop runs in the specified `mode`, the block object is executed. You can use this function as a means to offload work to another thread similar to Cocoa’s [`perform(_:on:with:waitUntilDone:)`](../ObjectiveC/nsobject-swift.class/perform%28_,on,with,waituntildone%29.md) and related methods. You can also use it as an alternative to mechanisms such as putting a CFRunLoopTimer in the other thread’s run loop, or using CFMessagePort to pass information between threads.
 

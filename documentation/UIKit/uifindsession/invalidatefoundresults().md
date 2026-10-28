@@ -22,7 +22,7 @@ func invalidateFoundResults()
 - (void) invalidateFoundResults;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`searchText`](../uifindinteraction/searchtext.md) for the find interaction is non-empty, a call to this method this triggers a call to [`performSearch(query:options:)`](./performsearch%28query,options%29.md) immediately after to begin a new search.
 

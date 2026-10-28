@@ -23,7 +23,7 @@ func ensureLayout(forGlyphRange glyphRange: NSRange)
 - (void) ensureLayoutForGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager reserves the right to perform layout for larger ranges. If noncontiguous layout is disabled, then the affected range is always effectively extended to start at the beginning of the text.
 

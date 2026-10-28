@@ -25,11 +25,11 @@ func CMSampleBufferGetSampleAttachmentsArray(_ sbuf: CMSampleBuffer, createIfNec
 extern CFArrayRefCMSampleBufferGetSampleAttachmentsArray(CMSampleBufferRef sbuf, Boolean createIfNecessary);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the `CMSampleBuffer's` immutable array of mutable sample attachments dictionaries (one dictionary per sample in the `CMSampleBuffer`). `NULL` is returned if there is an error
 
-#### Discussion
+## Discussion
 
 Attachments can then be added/removed directly by the caller, using Core Foundation APIs. On return, the caller doesn’t own the returned array of attachments dictionaries, and must retain it if the caller needs to maintain a reference to it. If there are no sample attachments yet, and createIfNecessary is true, a new `CFArray` containing N empty `CFMutableDictionaries` is returned (where N is the number of samples in the `CMSampleBuffer`), so that attachments can be added directly by the caller. If there are no sample attachments yet, and `createIfNecessary` is false, `NULL` is returned. Once the `CFArray` has been created, subsequent calls will return it, even if there are still no sample attachments in the array.
 

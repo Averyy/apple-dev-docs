@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioEngine sample rate attribute
 #define kIOAudioSampleRateKey
 ```
 
-#### Discussion
+## Discussion
 
 This value is represented as an integer in samples per second.
 

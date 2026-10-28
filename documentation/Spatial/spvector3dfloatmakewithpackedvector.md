@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMakeWithPackedVector(simd_packed_float4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial vector from a packed simd vector.
 

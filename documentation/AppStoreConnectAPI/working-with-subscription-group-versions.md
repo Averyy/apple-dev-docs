@@ -5,7 +5,7 @@
 
 Manage draft versions of a subscription group’s localized metadata before submitting for App Review.
 
-#### Overview
+## Overview
 
 A subscription group version is a draft container for the group’s localized names — the display names and optional custom app names that customers see for the whole subscription group. Group versions carry only localizations; they don’t have review images. Create a version, attach localizations to it, then submit the version through the review submissions workflow. The parent subscription group holds properties that stay stable across versions — its reference name and app relationship — while each version captures the reviewable metadata for a single review cycle.
 
@@ -13,7 +13,7 @@ A subscription group version is a draft container for the group’s localized na
 
 Group-level localizations submit to App Review with the subscriptions they belong to. Submit a subscription group version independently only when you change group-level localization without changing any subscription in the group.
 
-##### Understand the version lifecycle
+### Understand the version lifecycle
 
 A version moves through these states, exposed on `SubscriptionGroupVersion/Attributes/state`:
 
@@ -27,7 +27,7 @@ A version moves through these states, exposed on `SubscriptionGroupVersion/Attri
 
 Versions are read-only after creation. To change a version’s contents, create a new version.
 
-##### Create a version
+### Create a version
 
 Create a draft version with `POST /v1/subscriptionGroupVersions` ([`Create a subscription group version`](./post-v1-subscriptiongroupversions.md)). Relate it to the subscription group whose metadata you’re updating:
 
@@ -49,7 +49,7 @@ Create a draft version with `POST /v1/subscriptionGroupVersions` ([`Create a sub
 
 The response returns the new version’s `id` and a `state` of `PREPARE_FOR_SUBMISSION`. Note the `id` — every subsequent step references it.
 
-##### Attach a localization to the version
+### Attach a localization to the version
 
 Add a localized display name and optional custom app name with `POST /v2/subscriptionGroupLocalizations` ([`Create a subscription group localization`](./post-v2-subscriptiongrouplocalizations.md)). The payload relates the localization to the version, not the parent subscription group:
 
@@ -76,11 +76,11 @@ Add a localized display name and optional custom app name with `POST /v2/subscri
 
 Repeat for each locale you support. To list the localizations attached to a version, use `GET /v1/subscriptionGroupVersions/{id}/localizations` ([`List the localizations of a subscription group version`](./get-v1-subscriptiongroupversions-_id_-localizations.md)).
 
-##### List all versions for a subscription group
+### List all versions for a subscription group
 
 To see every version on a parent subscription group, use `GET /v1/subscriptionGroups/{id}/versions` ([`List the versions of a subscription group`](./get-v1-subscriptiongroups-_id_-versions.md)). The response includes each version’s state, so you can find the current draft, the most recently approved version, and any versions currently in review.
 
-##### Submit the version
+### Submit the version
 
 Submit a completed version through the review submissions workflow. Create a review submission for the app, add the version as an item, and mark the submission as `submitted`. For step-by-step instructions, see [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md).
 

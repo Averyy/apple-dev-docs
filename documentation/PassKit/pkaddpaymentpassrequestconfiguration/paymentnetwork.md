@@ -23,7 +23,7 @@ var paymentNetwork: PKPaymentNetwork? { get set }
 @property (nonatomic, copy, nullable) PKPaymentNetwork paymentNetwork;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines which cards are shown in the [`PKAddPaymentPassViewController`](../pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to `nil`, and the [`PKAddPaymentPassViewController`](../pkaddpaymentpassviewcontroller.md) shows all the networks for the card’s region. To specify a single network, assign a constant to the property. See Payment Networks in [`PKPaymentRequest`](../pkpaymentrequest.md).
 

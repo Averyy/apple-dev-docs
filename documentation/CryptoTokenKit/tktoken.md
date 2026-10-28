@@ -25,7 +25,7 @@ class TKToken
 @interface TKToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  When working with smart card tokens, use or inherit from the [`TKSmartCardToken`](./tksmartcardtoken.md) subclass instead.
 

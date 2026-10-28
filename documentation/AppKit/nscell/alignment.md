@@ -19,7 +19,7 @@ var alignment: NSTextAlignment { get set }
 @property NSTextAlignment alignment;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `NSNaturalTextAlignment`. For a list of possible text alignments, see [`NSTextAlignment`](../nstextalignment.md).
 

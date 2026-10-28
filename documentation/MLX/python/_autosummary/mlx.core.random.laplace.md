@@ -6,20 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.laplace
 
-**laplace(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *loc: float = 0.0*, *scale: float = 1.0*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Sample numbers from a Laplace distribution.
+```python
+laplace(shape: Sequence[int] = [], dtype: Dtype | None = float32, loc: float = 0.0, scale: float = 1.0, key: array | None = None, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Sample numbers from a Laplace distribution.
 
-**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Shape of the output. Default: `()`.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)*, **optional*) – Type of the output. Default: `float32`.
-**loc** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Mean of the distribution. Default: `0.0`.
-**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The scale “b” of the Laplace distribution.
+**Parameters:**
+
+- **shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – Shape of the output. Default: `()`.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype), *optional*) – Type of the output. Default: `float32`.
+- **loc** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – Mean of the distribution. Default: `0.0`.
+- **scale** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – The scale “b” of the Laplace distribution.
 Default:`1.0`.
-**key** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.
+- **key** ([array](mlx.core.array.md#mlx.core.array), *optional*) – A PRNG key. Default: `None`.
 
-Returns:
-The output array of random values.
+**Returns:**
+: The output array of random values.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

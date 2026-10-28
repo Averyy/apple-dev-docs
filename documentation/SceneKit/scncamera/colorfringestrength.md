@@ -25,7 +25,7 @@ var colorFringeStrength: CGFloat { get set }
 @property (nonatomic) CGFloat colorFringeStrength;
 ```
 
-#### Discussion
+## Discussion
 
 Color fringing applies an effect that separately blurs the color components of each rendered pixel, adding subtle rainbow edge effects to the rendered scene that simulate the effects of chromatic aberration in a physical camera. Higher values create a more pronounced color shift, creating wider rainbow fringes; lower values spread colors across shorter distances, creating a subtler effect. The default value of `0.0` disables the color fringing effect entirely.
 

@@ -22,11 +22,11 @@ func password(withIdentifier identifier: String) async throws(ManagedAppError) -
 
 - [Accessing provisioned secrets with identifiers](../accessing-provisioned-secrets-with-identifiers.md)
 
-#### Return Value
+## Return Value
 
 The requested password.
 
-#### Discussion
+## Discussion
 
 The MDM server can update the password at any time. After that, [`identifiers`](../managedappidentitiesprovider/identifiers.md) yields a new array of identifiers. Call this method again to obtain the updated password.
 

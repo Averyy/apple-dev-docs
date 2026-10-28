@@ -23,7 +23,7 @@ class INPauseWorkoutIntentResponse
 @interface INPauseWorkoutIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INPauseWorkoutIntentResponse`](./inpauseworkoutintentresponse.md) object to specify whether your app is able to pause a workout. The response object contains only the status code that indicates whether to launch your app or whether there was a problem.
 

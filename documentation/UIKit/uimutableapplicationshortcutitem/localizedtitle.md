@@ -22,7 +22,7 @@ var localizedTitle: String { get set }
 @property (nonatomic, copy) NSString * localizedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Every Home Screen mutable quick action must have a user-visible title.
 

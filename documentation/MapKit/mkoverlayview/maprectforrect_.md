@@ -19,11 +19,11 @@ Returns the map rectangle that corresponds to the rectangle in the overlay viewâ
 - (MKMapRect) mapRectForRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle on the two-dimensional map project that corresponds to the specified view rectangle.
 
-#### Discussion
+## Discussion
 
 Because the bounds and frame rectangles of an overlay view do not change after the view has been created, you may call this method from multiple threads simultaneously. Therefore, you may call this method safely from your viewâ€™s [`drawMapRect:zoomScale:inContext:`](./drawmaprect_zoomscale_incontext_.md) method.
 

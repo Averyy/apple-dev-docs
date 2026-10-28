@@ -16,7 +16,7 @@ A Boolean value that determines whether the audio content should be muted.
 attribute boolean muted;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the audio track is muted; otherwise, it is not.
 

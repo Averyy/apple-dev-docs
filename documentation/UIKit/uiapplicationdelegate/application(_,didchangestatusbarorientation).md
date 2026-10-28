@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didChangeStatusBarOrient
 - (void) application:(UIApplication *) application didChangeStatusBarOrientation:(UIInterfaceOrientation) oldStatusBarOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can get the current device orientation from the shared [`UIDevice`](../uidevice.md) object.
 

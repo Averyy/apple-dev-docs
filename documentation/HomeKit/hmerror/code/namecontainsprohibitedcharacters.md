@@ -24,7 +24,7 @@ case nameContainsProhibitedCharacters
 HMErrorCodeNameContainsProhibitedCharacters
 ```
 
-#### Discussion
+## Discussion
 
 Only letters, symbols, numbers, spaces, and apostrophes are permitted in names.
 

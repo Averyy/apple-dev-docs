@@ -25,7 +25,7 @@ case incompatibleAsset
 AVErrorIncompatibleAsset
 ```
 
-#### Discussion
+## Discussion
 
 This might occur if the device doesn’t support playing a particular video profile level.
 

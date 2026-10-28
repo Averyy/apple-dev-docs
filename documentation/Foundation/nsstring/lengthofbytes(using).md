@@ -25,11 +25,11 @@ func lengthOfBytes(using enc: UInt) -> Int
 - (NSUInteger) lengthOfBytesUsingEncoding:(NSStringEncoding) enc;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes required to store the receiver in the encoding `enc` in a non-external representation. The length does not include space for a terminating `NULL` character. Returns `0` if the specified encoding cannot be used to convert the receiver or if the amount of memory required for storing the results of the encoding conversion would exceed [`NSIntegerMax`](../../ObjectiveC/nsintegermax.md).
 
-#### Discussion
+## Discussion
 
 The result is exact and is returned in `O(n)` time.
 

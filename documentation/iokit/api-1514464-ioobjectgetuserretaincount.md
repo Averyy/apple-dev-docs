@@ -23,11 +23,11 @@ func IOObjectGetUserRetainCount(_ object: io_object_t) -> UInt32
 uint32_t IOObjectGetUserRetainCount(io_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 If the object handle is valid, the objects user retain count is returned, otherwise zero is returned.
 
-#### Discussion
+## Discussion
 
 This function may be used in diagnostics to determine the current retain count for the calling process of the kernel object.
 

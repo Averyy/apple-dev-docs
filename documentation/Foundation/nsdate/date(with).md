@@ -24,11 +24,11 @@ class func date(with aString: String) -> Any
 + (id) dateWithString:(NSString *) aString;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object with a date and time value specified by `aString`.
 
-#### Discussion
+## Discussion
 
 To create a date object from a string, you should typically use a date formatter object instead (see [`DateFormatter`](../dateformatter.md) and [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)).
 

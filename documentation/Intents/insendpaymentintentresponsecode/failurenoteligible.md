@@ -23,7 +23,7 @@ case failureNotEligible
 INSendPaymentIntentResponseCodeFailureNotEligible
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the sender or recipient of the request is ineligible to take part in monetary transfers.
 

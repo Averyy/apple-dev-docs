@@ -23,7 +23,7 @@ optional func deviceDidBecomeReady(_ device: ICDevice)
 - (void) deviceDidBecomeReady:(ICDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 Execution of the delegate callback occurs on the main thread.
 

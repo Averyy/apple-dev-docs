@@ -21,11 +21,11 @@ Sets a custom pronoun behavior for this morphology to apply to the given languag
 - (BOOL) setCustomPronoun:(NSMorphologyCustomPronoun *) features forLanguage:(NSString *) language error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether setting the custom pronoun succeeded.
 
-#### Discussion
+## Discussion
 
 This method throws if the system doesn’t support custom pronouns for the given language, or if any of the required pronoun keys aren’t set.
 

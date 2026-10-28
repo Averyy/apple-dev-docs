@@ -19,7 +19,7 @@ init(viewAnimations: [[NSViewAnimation.Key : Any]])
 - (instancetype) initWithViewAnimations:(NSArray<NSDictionary<NSString *,id> *> *) viewAnimations;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSViewAnimation` object or `nil` if there was a problem initializing the object.
 

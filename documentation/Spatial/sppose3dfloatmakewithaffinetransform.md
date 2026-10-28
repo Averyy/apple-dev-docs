@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMakeWithAffineTransform(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a position and rotation that are defined by an affine transform.
 
-#### Discussion
+## Discussion
 
 Returns a pose with with a position and rotation that are defined by an affine transform.
 

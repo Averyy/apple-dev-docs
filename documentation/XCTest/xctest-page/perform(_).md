@@ -16,7 +16,7 @@ func perform(_ run: XCTestRun)
 - (void) performTest:(XCTestRun *) run;
 ```
 
-#### Discussion
+## Discussion
 
 Must be overridden by subclasses.
 

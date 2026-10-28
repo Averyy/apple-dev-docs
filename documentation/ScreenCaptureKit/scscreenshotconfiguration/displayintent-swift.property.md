@@ -20,7 +20,7 @@ var displayIntent: SCScreenshotConfiguration.DisplayIntent { get set }
 @property (nonatomic, assign) SCScreenshotDisplayIntent displayIntent;
 ```
 
-#### Discussion
+## Discussion
 
 Performing a screenshot with either the local or canonical display attributes optimizes output for presentation on either the capture display or any high dynamic range display respectively.
 

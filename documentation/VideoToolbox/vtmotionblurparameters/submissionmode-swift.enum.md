@@ -22,7 +22,7 @@ enum SubmissionMode
 enum VTMotionBlurParametersSubmissionMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Set to VTMotionBlurParametersSubmissionModeSequential to indicate that the current submission follows the presentation time order without jumping or skipping when compared to the previous submission. Using the submission mode sequential will yield better performance. Set to VTMotionBlurParametersSubmissionModeRandom to indicate a skip or a jump in frame sequence. If the submission mode random is set, the internal cache will be cleared during the processWithParameters call.
 

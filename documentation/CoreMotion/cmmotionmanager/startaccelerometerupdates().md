@@ -27,7 +27,7 @@ func startAccelerometerUpdates()
 
 - [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
-#### Discussion
+## Discussion
 
 You can get the latest accelerometer data through the [`accelerometerData`](./accelerometerdata.md) property. You must call [`stopAccelerometerUpdates()`](./stopaccelerometerupdates%28%29.md) when you no longer want your app to process accelerometer updates.
 

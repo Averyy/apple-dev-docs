@@ -21,7 +21,7 @@ func indexPath(for item: any CPListTemplateItem) -> IndexPath?
 - (NSIndexPath *) indexPathForItem:(id<CPListTemplateItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s index path in the list, or [`nil`](../../ObjectiveC/nil-227m0.md) if the list doesn’t contain the item.
 

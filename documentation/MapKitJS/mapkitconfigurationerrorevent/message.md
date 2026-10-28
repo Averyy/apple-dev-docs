@@ -15,7 +15,7 @@ The message associated with the configuration error.
 readonly message: string;
 ```
 
-#### Discussion
+## Discussion
 
 The `message` property may contain additional information about the error.
 

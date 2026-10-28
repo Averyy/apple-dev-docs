@@ -28,7 +28,7 @@ func loadTile(at path: MKTileOverlayPath) async throws -> Data
 - (void) loadTileAtPath:(MKTileOverlayPath) path result:(void (^)(NSData *tileData, NSError *error)) result;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method uses the [`url(forTilePath:)`](./url%28fortilepath%29.md) method to retrieve the URL for the specified tile and then loads that tile into memory asynchronously using a [`URLSession`](../../Foundation/urlsession.md) object. The specified tile may be located either on the local file system or on a remote server. Subclasses may override this method and implement their own custom tile-loading behavior.
 

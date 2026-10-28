@@ -21,13 +21,13 @@ object Chapter
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 
-#### Discussion
+## Discussion
 
 A `chapter` is a full-width container component that lets you nest components so you can divide a large article into separate parts with potentially different styling. The c`hapter` component is a structural component intended to organize an entire article, so you generally use it in the `components` array in the [`ArticleDocument`](./articledocument.md) properties. The overall height of a chapter is determined by the height of its child components.
 
 > **Note**:  The `chapter` component has the same properties as the `section` component, so you can use the one that fits best for your content.
 
-##### Example
+### Example
 
 ```json
 {

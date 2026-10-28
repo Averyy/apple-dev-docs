@@ -25,7 +25,7 @@ class AVPlayerItemAccessLogEvent
 @interface AVPlayerItemAccessLogEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object provides named properties for accessing the data fields of each log event. Each event is a single entry in an [`AVPlayerItem`](./avplayeritem.md) object’s access log.
 

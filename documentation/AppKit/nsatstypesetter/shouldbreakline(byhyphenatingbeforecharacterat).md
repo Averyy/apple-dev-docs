@@ -19,7 +19,7 @@ func shouldBreakLine(byHyphenatingBeforeCharacterAt charIndex: Int) -> Bool
 - (BOOL) shouldBreakLineByHyphenatingBeforeCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The typesetter calls this method, if implemented by a subclass, before breaking a line by hyphenating before the character at the given character index, enabling the subclass to control line breaking. A subclass can override this method to customize the text layout process. If the method returns [`false`](../../Swift/false.md), the typesetter continues looking for a break point.
 

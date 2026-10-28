@@ -19,11 +19,11 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, writeItemsAt itemIndexes: Ind
 - (NSUInteger) imageBrowser:(IKImageBrowserView *) aBrowser writeItemsAtIndexes:(NSIndexSet *) itemIndexes toPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items written to the pasteboard.
 
-#### Discussion
+## Discussion
 
 This method is optional. It is invoked after Image Kit determines that a drag should begin, but before the drag has been started.
 

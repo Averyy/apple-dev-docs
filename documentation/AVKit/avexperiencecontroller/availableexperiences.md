@@ -16,7 +16,7 @@ The allowed experiences that are available to use on the device at this time.
 final var availableExperiences: AVExperienceController.Experiences { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a subset of [`allowedExperiences`](./allowedexperiences.md), filtered for platform, device configuration, and system state.
 

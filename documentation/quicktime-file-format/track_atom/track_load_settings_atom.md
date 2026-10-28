@@ -6,7 +6,7 @@
 
 An atom that indicates how the track is to be used in its movie.
 
-#### Overview
+## Overview
 
 See [`Track load settings atom`](../track_load_settings_atom.md).
 

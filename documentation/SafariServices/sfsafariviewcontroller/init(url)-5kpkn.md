@@ -22,7 +22,7 @@ convenience init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created Safari view controller.
 

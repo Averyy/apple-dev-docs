@@ -30,7 +30,7 @@ var dateStatusModified: Date { get set }
 @property (atomic, copy) NSDate * dateStatusModified;
 ```
 
-#### Discussion
+## Discussion
 
 When you change the [`status`](./status.md) property of the reservation, update this property with the date on which the status changed.
 

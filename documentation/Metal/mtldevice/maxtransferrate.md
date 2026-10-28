@@ -22,7 +22,7 @@ var maxTransferRate: UInt64 { get }
 @property (readonly) uint64_t maxTransferRate;
 ```
 
-#### Discussion
+## Discussion
 
 Metal calculates this value from the raw data-clock rate, and the GPU may not be able to reach this speed in real-world conditions.
 

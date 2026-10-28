@@ -18,7 +18,7 @@ typealias FFCoordinateSystemFlag = UInt32
 typedef UInt32 FFCoordinateSystemFlag;
 ```
 
-#### Discussion
+## Discussion
 
 Different coordinates used by the Force Feedback framework.
 

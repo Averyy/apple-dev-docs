@@ -22,7 +22,7 @@ var captions: [AVCaption] { get set }
 @property (nonatomic, copy) NSArray<AVCaption *> * captions;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is an empty array if there are no captions for the system to render.
 

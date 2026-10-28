@@ -12,7 +12,7 @@ Share data between iPad apps during a drag and drop operation using an item prov
 - Mac Catalyst 11.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 With drag and drop, users can copy data from one iPad app to another. The data is shared between the apps using an [`NSItemProvider`](../Foundation/nsitemprovider.md) object. This sample code project shows how to use an item provider to:
 
@@ -21,7 +21,7 @@ With drag and drop, users can copy data from one iPad app to another. The data i
 
 The sample iPad app uses a table view to display a list of contacts. The user can drag one or more contacts and drop them into another app such as Contacts or Notes. Also, the user can use another app, like Contacts or Notes, to drag and drop new contacts into the sample app.
 
-##### Add drag support
+### Add drag support
 
 The table view in the sample app displays a list of contacts. When the user begins dragging a contact, the system calls the [`tableView(_:itemsForBeginning:at:)`](./uitableviewdragdelegate/tableview%28_,itemsforbeginning,at%29.md) method. The method’s implementation retrieves the contact from the list using the `at` parameter to determine the contact’s location within the list. The method then creates an item provider with the contact object and wraps the item provider in a [`UIDragItem`](./uidragitem.md) object. The method places the drag item into an array which it returns to the system. Finally, the system adds the drag item to the current drag session.
 
@@ -58,7 +58,7 @@ In both cases, the [`UITableViewDragDelegate`](./uitableviewdragdelegate.md) met
 
 By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s [`loadData(withTypeIdentifier:forItemProviderCompletionHandler:)`](../Foundation/nsitemproviderwriting/loaddata%28withtypeidentifier,foritemprovidercompletionhandler%29.md) method.
 
-##### Add drop support
+### Add drop support
 
 When the user drops contact information from another app into the sample app, the system calls the [`tableView(_:performDropWith:)`](./uitableviewdropdelegate/tableview%28_,performdropwith%29.md) method. `ContactsTableViewController` implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call [`loadObject(ofClass:completionHandler:)`](../Foundation/nsitemprovider/loadobject%28ofclass,completionhandler%29-8ak5d.md), which retrieves a `ContactCard` object representing the dropped contact information.
 

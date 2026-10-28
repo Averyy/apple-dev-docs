@@ -19,7 +19,7 @@ init!(delegate: Any!)
 - (instancetype) initWithDelegate:(id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the initialized IOBluetoothDeviceInquiry object.
 

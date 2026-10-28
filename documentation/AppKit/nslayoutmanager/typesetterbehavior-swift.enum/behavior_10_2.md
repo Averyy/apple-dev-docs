@@ -19,7 +19,7 @@ case behavior_10_2
 NSTypesetterBehavior_10_2
 ```
 
-#### Discussion
+## Discussion
 
 This typesetter behavior provides enhanced line and character spacing accuracy and supports more languages than the original typesetter behavior.
 

@@ -23,7 +23,7 @@ var isTranslucent: Bool { get set }
 @property (nonatomic, assign, getter=isTranslucent) BOOL translucent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If the search bar has a custom background image, the default is [`true`](../../Swift/true.md) if any pixel of the image has an alpha value of less than `1.0`, and [`false`](../../Swift/false.md) otherwise.
 

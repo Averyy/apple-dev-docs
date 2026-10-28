@@ -16,7 +16,7 @@ Sets the scale factor of the rendered output.
 void output::setScale(float2 scale)
 ```
 
-#### Discussion
+## Discussion
 
 This function applies a scale transformation to the rendered particle output, allowing independent control of horizontal and vertical scaling. This affects only the rendered appearance and does not modify the particle itself.
 

@@ -19,7 +19,7 @@ The time range in the source audio corresponding to the associated transcription
 struct TimeRangeAttribute
 ```
 
-#### Overview
+## Overview
 
 > 💡 **Tip**: Use [`rangeOfAudioTimeRangeAttributes(intersecting:)`](../../attributedstring/rangeofaudiotimerangeattributes%28intersecting%29.md) to locate text corresponding to a source audio time range.
 

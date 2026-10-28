@@ -19,7 +19,7 @@ Creates a validation dataset from a data source.
 case dataSource(MLHandActionClassifier.DataSource)
 ```
 
-#### Discussion
+## Discussion
 
 - dataSource: An [`MLHandActionClassifier.DataSource`](../../datasource.md) instance.
 

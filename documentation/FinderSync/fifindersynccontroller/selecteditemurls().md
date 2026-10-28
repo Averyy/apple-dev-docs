@@ -19,11 +19,11 @@ func selectedItemURLs() -> [URL]?
 - (NSArray<NSURL *> *) selectedItemURLs;
 ```
 
-#### Return Value
+## Return Value
 
 An array of items currently selected in the Finder window.
 
-#### Discussion
+## Discussion
 
 Use this method when creating a shortcut menu or a menu for the extension’s toolbar button. You can then modify the menu’s content based on the items currently selected.
 

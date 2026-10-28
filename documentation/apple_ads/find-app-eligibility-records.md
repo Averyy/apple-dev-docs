@@ -15,11 +15,11 @@ Fetches app eligibility records by adam ID.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to determine whether an app is eligible to promote in a campaign. Use a [`Selector`](./selector.md) [`Condition`](./condition.md) to search for a specific country or region, [`DeviceClass`](./deviceclass.md), [`AgeCriteria`](./agecriteria.md), or [`SupplySource`](./supplysource.md).  See the [`EligibilityRecord`](./eligibilityrecord.md) object for parameter descriptions and selector condition operators.
 
-##### Payload example: Find app eligibility records
+### Payload example: Find app eligibility records
 
 **Request**:
 

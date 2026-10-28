@@ -15,7 +15,7 @@ Sends a block of data in the channel.
 - (IOReturn) writeSimple:(void *) data length:(UInt16) length sleep:(BOOL) sleep bytesSent:(UInt32 *) numBytesSent;
 ```
 
-#### Discussion
+## Discussion
 
 ***WARNING*** This method is being deprecated in favor of -writeSync:… and -writeAsync:… Sends data through the channel. The number of bytes to be sent is arbitrary. The caller does not have to worry about the MTU.
 

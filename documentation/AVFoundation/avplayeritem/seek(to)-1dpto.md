@@ -26,7 +26,7 @@ func seek(to time: CMTime)
 - (void) seekToTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 The time seeked to may differ from the specified time for efficiency. For sample accurate seeking see [`seek(to:toleranceBefore:toleranceAfter:)`](./seek%28to,tolerancebefore,toleranceafter%29.md).
 

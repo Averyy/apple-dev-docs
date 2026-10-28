@@ -25,7 +25,7 @@ func setTriangleFillMode(_ fillMode: MTLTriangleFillMode)
 - (void) setTriangleFillMode:(MTLTriangleFillMode) fillMode;
 ```
 
-#### Discussion
+## Discussion
 
 The render pass’s default mode is [`MTLTriangleFillMode.fill`](../mtltrianglefillmode/fill.md).
 

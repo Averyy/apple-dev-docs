@@ -24,7 +24,7 @@ case topUp
 PKPaymentButtonTypeTopUp
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

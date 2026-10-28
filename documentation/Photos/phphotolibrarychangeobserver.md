@@ -28,11 +28,11 @@ protocol PHPhotoLibraryChangeObserver : NSObjectProtocol
 
 - [Observing Changes in the Photo Library](../PhotoKit/observing-changes-in-the-photo-library.md)
 
-#### Overview
+## Overview
 
 The [`PHPhotoLibraryChangeObserver`](./phphotolibrarychangeobserver.md) protocol notifies you of changes that occur in the photo library, regardless of whether those changes are made by your app, by a user in the Photos app, or by another app that uses the Photos framework. To receive change messages, register your observer with the [`register(_:)`](./phphotolibrary/register%28_%29-6y3b9.md) method. For any assets or collections that you fetch, Photos sends change messages whenever those assets or collections change. Use this protocol to track changes across multiple parts of your app or respond to changes made in another app or extension.
 
-##### Handling Changes: An Example
+### Handling Changes: An Example
 
 The example code below shows how you might implement this protocol in a view controller that uses a [`UICollectionView`](../UIKit/uicollectionview.md) interface to display the contents of an album. The view controller keeps a reference to the [`PHAssetCollection`](./phassetcollection.md) object representing the displayed album and the [`PHFetchResult`](./phfetchresult.md) object (returned by the [`fetchAssets(in:options:)`](./phasset/fetchassets%28in,options%29.md) method) listing the album’s contents. Then, in its [`photoLibraryDidChange(_:)`](./phphotolibrarychangeobserver/photolibrarydidchange%28_%29.md) method, the view controller checks for differences between the objects it fetched and the new state of the photo library, and updates its collection view accordingly.
 

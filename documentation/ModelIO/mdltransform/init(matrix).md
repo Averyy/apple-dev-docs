@@ -24,11 +24,11 @@ convenience init(matrix: matrix_float4x4)
 - (instancetype) initWithMatrix:(matrix_float4x4) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 A new transform object.
 
-#### Discussion
+## Discussion
 
 A transform matrix defines the local coordinate space transformations for a 3D object—that is, its position, orientation, shear, and scale.
 

@@ -22,7 +22,7 @@ let environment: MetricReport.Environment?
 
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This is `nil` when device or app metadata cannot be determined during metric aggregation.
 

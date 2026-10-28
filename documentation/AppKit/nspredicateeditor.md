@@ -19,7 +19,7 @@ class NSPredicateEditor
 @interface NSPredicateEditor : NSRuleEditor
 ```
 
-#### Overview
+## Overview
 
 `NSPredicateEditor` provides an [`NSPredicate`](../Foundation/nspredicate.md) property—[`objectValue`](./nscontrol/objectvalue.md) (inherited from [`NSControl`](./nscontrol.md))—that you can get and set directly, and that you can bind using Cocoa bindings (you typically configure a predicate editor in Interface Builder). `NSPredicateEditor` depends on another class, [`NSPredicateEditorRowTemplate`](./nspredicateeditorrowtemplate.md), that describes the available predicates and how to display them.
 

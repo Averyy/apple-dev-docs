@@ -16,11 +16,11 @@ Releases a buffer that was previously allocated using LowLatencyCreateBuffer().
 IOReturn (*LowLatencyDestroyBuffer)(void *self, void *buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the interface is not open for exclusive access. If the buffer was not previously allocated using LowLatencyCreateBuffer() it will return kIOReturnBadArgument.
 
-#### Discussion
+## Discussion
 
 The interface must be open for the pipe to exist.
 

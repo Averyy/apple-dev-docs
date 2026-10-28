@@ -25,7 +25,7 @@ static let notificationIsPriorKey: NSKeyValueChangeKey
 extern NSKeyValueChangeKey const NSKeyValueChangeNotificationIsPriorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The change dictionary contains an [`notificationIsPriorKey`](./notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](../../Swift/true.md).
 

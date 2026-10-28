@@ -19,11 +19,11 @@ func preferredTextFieldWidth() -> CGFloat
 - (CGFloat) preferredTextFieldWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The field’s width.
 
-#### Discussion
+## Discussion
 
 If the width is negative, the [`cellSize`](../nscell/cellsize.md) matches the historic behavior, which is that it is large enough to accommodate the title, bezel, and the current text.
 

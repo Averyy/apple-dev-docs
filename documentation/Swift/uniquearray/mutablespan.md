@@ -21,7 +21,7 @@ A mutable span over the elements of this array, providing direct mutating access
 var mutableSpan: MutableSpan<Element> { mutating get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

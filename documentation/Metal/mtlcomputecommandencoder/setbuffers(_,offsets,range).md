@@ -20,7 +20,7 @@ Binds multiple buffers to the buffer argument table at once, allowing compute ke
 func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the length of `buffers` and `offsets` are equal to the length of `range`.
 

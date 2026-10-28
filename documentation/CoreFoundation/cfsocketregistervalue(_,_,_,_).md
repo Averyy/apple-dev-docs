@@ -25,11 +25,11 @@ func CFSocketRegisterValue(_ nameServerSignature: UnsafePointer<CFSocketSignatur
 extern CFSocketError CFSocketRegisterValue(const CFSocketSignature *nameServerSignature, CFTimeInterval timeout, CFStringRef name, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 
-#### Discussion
+## Discussion
 
 To remove a registered value from the name server, use [`CFSocketUnregister(_:_:_:)`](./cfsocketunregister%28_,_,_%29.md).
 

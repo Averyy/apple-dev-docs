@@ -5,7 +5,7 @@
 
 Use CloudKit, Sign in with Apple, shared user defaults or containers, and the keychain to offer a smooth transition from your App Clip to your app.
 
-#### Overview
+## Overview
 
 When users of your App Clip install your full app, the full app replaces the App Clip and receives all invocations in its place. It’s important you provide a good user experience to users who have become familiar with the App Clip and are now starting to use the full app; for example:
 
@@ -20,7 +20,7 @@ Making App Clip data accessible to your full app is key to offering a smooth tra
 - Store sensitive App Clip data in the keychain and access it in your full app.
 - Use Sign in with Apple to offer a seamless login experience.
 
-##### Access your public iCloud database
+### Access your public iCloud database
 
 Making sure your App Clip has access to the same data as your full app and keeping its data up to date are important things to consider when you create your App Clip. For example, an App Clip for restaurants needs to always show the latest weekly lunch menu that’s also available to users of your full app. Starting with iOS 16, your App Clip can use [CloudKit](../CloudKit/CloudKit.md) to read data you store in a public iCloud database with [CloudKit](../CloudKit/CloudKit.md) — including a Core Data store you mirror with a public [CloudKit](../CloudKit/CloudKit.md) database. This enables your App Clip to access information that’s available to all users of your app — like the previously mentioned lunch menu for a restaurant app and App Clip.
 
@@ -30,7 +30,7 @@ To read your app’s public iCloud database, add the iCloud capability to your A
 
 For more information on iCloud and public databases, refer to [Build Apps Using CloudKit](https://developer.apple.com/icloud/cloudkit/) and [Designing apps using CloudKit](https://developer.apple.com/icloud/cloudkit/designing/).
 
-##### Make local App Clip data available to the full app
+### Make local App Clip data available to the full app
 
 Your App Clip can make its local data accessible to your corresponding full app by storing data in a shared container. The full app can then access this local data when it replaces the App Clip, providing a positive user experience.
 
@@ -63,7 +63,7 @@ guard let migratedData = sharedUserDefaults.string(forKey: "sharedText") else { 
 
 To preserve user privacy across apps and App Clips, an App Clip can only share its data with its corresponding app. Don’t store sensitive user information, such as passwords, in a shared app container or in user defaults. However, if your App Clip requires people to log in to an account to offer its functionality, you likely want to offer a seamless upgrade experience to the full app. In this case, you might store an API key, hashed user ID, or similarly anonymized identifier in the shared app container or in user defaults. Then, you can use the identifier when the user launches the full app to offer a more seamless upgrade experience that doesn’t require them to again log in.
 
-##### Review keychain usage
+### Review keychain usage
 
 The keychain offers a secure way to store sensitive information. Storing and reading App Clip data in the keychain generally works the same as for your full app. However, be aware of the following behavior when using the keychain:
 
@@ -112,7 +112,7 @@ SecItemCopyMatching(readSecretsQuery as CFDictionary, &secretsCopy)
 
 For more information on using the keychain to store sensitive information, refer to [Using the keychain to manage user secrets](../Security/using-the-keychain-to-manage-user-secrets.md) and [Keychain services](../Security/keychain-services.md).
 
-##### Offer Sign in with Apple
+### Offer Sign in with Apple
 
 App Clips may use any technology to allow users to sign in to their account or create one. However, if your App Clip requires users to log in to an account, consider offering [Sign in with Apple](../SigninwithApple/SigninwithApple.md). In addition to helping provide a simple, secure, and privacy-preserving account creation and sign-in experience, it offers a positive experience when a user starts using the full app.
 

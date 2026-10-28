@@ -12,7 +12,7 @@ virtual IOReturn removeBuffer(
  IOStreamBufferIDbufferID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the buffer was removed.
 

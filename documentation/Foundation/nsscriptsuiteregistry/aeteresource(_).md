@@ -20,7 +20,7 @@ func aeteResource(_ languageName: String) -> Data?
 - (NSData *) aeteResource:(NSString *) languageName;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically invoked to implement the `get aete` Apple event for an application that provides scriptability information in the script suite format. The `languageName` argument is the name of a language for which a localized resource directory (such as `English.lproj`) exists. This language indication specifies the set of `.scriptTerminology` files to be used to generate the data. `NSScriptSuiteRegistry` does not create an `'aete'` resource unless this method is called.
 

@@ -21,7 +21,7 @@ A type that provides you with more content when the phase of a scroll view chang
 struct ScrollPhaseChangeContext
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. Instead, SwiftUI provides an instance of this type in the [`onScrollPhaseChange(_:)`](./view/onscrollphasechange%28_%29.md) modifier.
 

@@ -24,7 +24,7 @@ let HKMetadataKeyHeartRateRecoveryTestType: String
 extern NSString * const HKMetadataKeyHeartRateRecoveryTestType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this metadata key to identify the type of test that the [`HKSource`](./hksource.md) used to calculate the value for a [`heartRateRecoveryOneMinute`](./hkquantitytypeidentifier/heartraterecoveryoneminute.md) sample.
 

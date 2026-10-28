@@ -19,7 +19,7 @@ func display()
 - (void) display;
 ```
 
-#### Discussion
+## Discussion
 
 If a custom content view is provided, Cocoa calls the `drawRect:` method of that view (and its subviews) to draw the tile’s content.
 

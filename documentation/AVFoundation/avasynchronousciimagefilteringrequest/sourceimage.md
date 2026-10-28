@@ -26,7 +26,7 @@ var sourceImage: CIImage { get }
 @property (nonatomic, readonly) CIImage * sourceImage;
 ```
 
-#### Discussion
+## Discussion
 
 To apply a Core Image filter to this image, assign it to the `inputImage` parameter of a [`CIFilter`](../../CoreImage/cifilter-swift.class.md) object, or use a [`CIImage`](../../CoreImage/ciimage.md) convenience method such as the [`applyingFilter(_:parameters:)`](../../CoreImage/ciimage/applyingfilter%28_,parameters%29.md) method.
 

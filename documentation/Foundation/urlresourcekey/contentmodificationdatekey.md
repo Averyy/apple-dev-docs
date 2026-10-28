@@ -25,7 +25,7 @@ static let contentModificationDateKey: URLResourceKey
 extern NSURLResourceKey const NSURLContentModificationDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key corresponds to an [`NSDate`](../nsdate.md) value, or `nil` if the volume doesn’t support modification dates.
 

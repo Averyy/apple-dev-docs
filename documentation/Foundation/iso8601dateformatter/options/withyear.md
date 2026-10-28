@@ -23,7 +23,7 @@ static var withYear: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithYear
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the year. The format for year is inferred based on the other specified options.
 

@@ -21,7 +21,7 @@ string AuditUserType
 - `CUSTOMER_API`: An automated process acting through the Apple Ads Platform API.
 - `APPLE_SUPPORT`: An Apple support representative performing an account operation on behalf of an advertiser.
 
-#### Discussion
+## Discussion
 
 The `AuditUserType` appears in the `userType` field of [`AuditSummary`](./auditsummary.md) and [`ChangeDetails`](./changedetails.md) records. Use it to distinguish manual advertiser-initiated changes from API-driven automation or Apple-initiated actions.
 

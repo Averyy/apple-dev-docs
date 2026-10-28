@@ -21,7 +21,7 @@ A person is touching content indirectly.
 static let indirectTouch: GestureInputKinds
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

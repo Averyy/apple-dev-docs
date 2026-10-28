@@ -28,7 +28,7 @@ class HMHomeManager
 
 - [Enabling HomeKit in your app](./enabling-homekit-in-your-app.md)
 
-#### Overview
+## Overview
 
 HomeKit stores the user’s home automation information in a database that’s shared among Apple’s built-in iOS Home app, your HomeKit-enabled app, and apps from other developers. All these apps access the database as peers using the HomeKit framework.
 

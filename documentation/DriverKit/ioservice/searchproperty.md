@@ -18,11 +18,11 @@ Searches for a property with the specified name in the current service or one of
 virtual kern_return_t SearchProperty(const IOPropertyName name, const IORegistryPlaneName plane, uint64_t options, OSContainer **property);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or [`kIOReturnNotFound`](../kioreturnnotfound.md) if the property was not found.
 
-#### Discussion
+## Discussion
 
 This method searches for the property in the current service first, followed by any parent services when applicable. The method returns the first instance of the property it finds.
 

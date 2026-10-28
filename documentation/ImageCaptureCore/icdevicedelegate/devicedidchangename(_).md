@@ -19,7 +19,7 @@ optional func deviceDidChangeName(_ device: ICDevice)
 - (void) deviceDidChangeName:(ICDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 This happens if the device module overrides the default name of the device reported by the device’s transport layer, or if the name of the filesystem volume mounted by the device is changed by the user.
 

@@ -9,7 +9,7 @@ Get information about a specific Game Center leaderboard set localization.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - fields[gameCenterLeaderboardSetImages]:

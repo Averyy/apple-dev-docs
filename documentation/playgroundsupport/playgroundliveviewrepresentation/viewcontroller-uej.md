@@ -16,7 +16,7 @@ An AppKit view controller whose view is displayed as the live view.
 case viewController(NSViewController)
 ```
 
-#### Discussion
+## Discussion
 
 This view controller must be the root of a view controller hierarchy (it must not have a parent view controller), and its view must not have a superview.
 

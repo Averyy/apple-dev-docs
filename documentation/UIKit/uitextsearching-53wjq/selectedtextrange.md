@@ -18,7 +18,7 @@ The range of selected text in a document.
 @property (readonly, nullable) UITextRange * selectedTextRange;
 ```
 
-#### Discussion
+## Discussion
 
 If the text range has a length, it indicates the currently selected text. If it has zero length, it indicates the caret (insertion point). If the text-range object is `nil`, it indicates that there’s no current selection.
 

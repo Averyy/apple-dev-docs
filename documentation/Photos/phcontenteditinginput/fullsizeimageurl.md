@@ -24,7 +24,7 @@ var fullSizeImageURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * fullSizeImageURL;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, your app or extension does not need to load a full-sized image for use in an editing UI. Instead, use the [`displaySizeImage`](./displaysizeimage.md) property to retrieve an image suitable for screen display. You can then load the full-sized image on a background queue so that it will be ready by the time the user finishes editing the display-size image. At that time, apply the user’s adjustments to the full-sized image and then use the [`PHContentEditingOutput`](../phcontenteditingoutput.md) class to commit the edit to the photo library.
 

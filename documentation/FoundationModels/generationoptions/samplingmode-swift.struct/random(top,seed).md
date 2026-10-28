@@ -20,7 +20,7 @@ A sampling mode that considers a fixed number of high-probability tokens.
 static func random(top k: Int, seed: UInt64? = nil) -> GenerationOptions.SamplingMode
 ```
 
-#### Discussion
+## Discussion
 
 Also known as top-k.
 

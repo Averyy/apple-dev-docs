@@ -22,11 +22,11 @@ Creates an asynchronous sequence that maps an error-throwing closure over the ba
 func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that contains, in order, the non-`nil` elements produced by the `transform` closure. The sequence ends either when the base sequence ends or when `transform` throws an error.
 
-#### Discussion
+## Discussion
 
 Use the `compactMap(_:)` method to transform every element received from a base asynchronous sequence, while also discarding any `nil` results from the closure. Typically, you use this to transform from one type of element to another.
 

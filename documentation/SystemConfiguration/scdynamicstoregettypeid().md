@@ -19,7 +19,7 @@ func SCDynamicStoreGetTypeID() -> CFTypeID
 CFTypeID SCDynamicStoreGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of all `SCDynamicStore` instances.
 

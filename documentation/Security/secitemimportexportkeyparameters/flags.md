@@ -19,7 +19,7 @@ var flags: SecKeyImportExportFlags
 SecKeyImportExportFlags flags;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values from [`SecKeyImportExportFlags`](../seckeyimportexportflags.md).
 

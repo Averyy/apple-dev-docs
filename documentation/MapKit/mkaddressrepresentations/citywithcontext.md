@@ -25,7 +25,7 @@ var cityWithContext: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * cityWithContext;
 ```
 
-#### Discussion
+## Discussion
 
 This returns the same value as `cityWithContext(.automatic)`.
 

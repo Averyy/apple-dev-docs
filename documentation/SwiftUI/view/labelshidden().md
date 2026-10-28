@@ -22,7 +22,7 @@ nonisolated
 func labelsHidden() -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to omit a label from one or more controls in your user interface. For example, the first [`Toggle`](../toggle.md) in the following example hides its label:
 

@@ -13,11 +13,11 @@
 u_int32_t mbuf_get_mlen(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes of available data.
 
-#### Discussion
+## Discussion
 
 This routine returns the number of data bytes in a normal mbuf, i.e. an mbuf that is not a packet header, nor one with an external cluster attached to it. This is equivalent to the legacy MLEN macro.
 

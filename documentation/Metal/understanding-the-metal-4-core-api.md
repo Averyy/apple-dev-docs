@@ -5,7 +5,7 @@
 
 Discover the features and functionality in the Metal 4 foundational APIs.
 
-#### Overview
+## Overview
 
 Metal 4 improves runtime performance and memory efficiency while making it easier to adapt your apps and games from other platforms, such as DirectX and Vulkan.
 
@@ -32,7 +32,7 @@ At runtime, your app can detect whether the current system supports Metal 4. For
 
 You can incrementally adopt Metal 4 over time, which is convenient for larger projects. Portions of your app can individually switch to submitting work to an [`MTL4CommandQueue`](./mtl4commandqueue.md) instance. When applicable, an app can synchronize the work it sends to an [`MTL4CommandQueue`](./mtl4commandqueue.md) with other parts of the app that send work to [`MTLCommandQueue`](./mtlcommandqueue.md) instances. For more information, see [Resource synchronization](./resource-synchronization.md).
 
-##### Command queues
+### Command queues
 
 Metal 4 introduces a new command queue protocol, [`MTL4CommandQueue`](./mtl4commandqueue.md), which reduces CPU runtime and memory overhead by sending work to the GPU when you commit a command buffer. This means your app can submit work from any thread. You create a Metal 4 command queue by calling an [`MTLDevice`](./mtldevice.md) factory method, such as [`makeMTL4CommandQueue()`](./mtldevice/makemtl4commandqueue%28%29.md).
 
@@ -45,7 +45,7 @@ You can synchronize work between command queues with an [`MTLEvent`](./mtlevent.
 
 You can synchronize work within the same queue by adding a barrier (see [Resource synchronization](./resource-synchronization.md)).
 
-##### Command buffers
+### Command buffers
 
 Metal 4 introduces [`MTL4CommandBuffer`](./mtl4commandbuffer.md), which is more efficient and works differently than [`MTLCommandBuffer`](./mtlcommandbuffer.md) in the following ways:
 
@@ -58,7 +58,7 @@ Metal 4 introduces [`MTL4CommandBuffer`](./mtl4commandbuffer.md), which is more 
 
 After committing a command buffer to a queue, you can use it again by calling its [`beginCommandBuffer(allocator:)`](./mtl4commandbuffer/begincommandbuffer%28allocator%29.md) method. You can then encode commands to the buffer as if it were a new instance. This is different from previous versions of Metal that require you to create a new transient, single-use command buffer when you need to commit more work to a queue.
 
-##### Command allocators
+### Command allocators
 
 The *command allocator* is a companion type that provides memory for command buffers. You associate a command allocator with one command buffer at a time by calling its [`beginCommandBuffer(allocator:)`](./mtl4commandbuffer/begincommandbuffer%28allocator%29.md) method. When you finish encoding commands to a command buffer, you can apply the allocator to another command buffer by first calling the current command buffer’s [`endCommandBuffer()`](./mtl4commandbuffer/endcommandbuffer%28%29.md) method and then another command buffer’s [`beginCommandBuffer(allocator:)`](./mtl4commandbuffer/begincommandbuffer%28allocator%29.md) method.
 
@@ -166,7 +166,7 @@ At any point, each in-flight frame is in a different part of its life cycle.
 - Meanwhile, the GPU is rendering the first future frame from the most recent command buffers that the app submits to the GPU.
 - The app encodes the second future frame — either on the CPU or GPU — and submits the frame when other frames advance to the next stage in their life cycle.
 
-##### Command encoders
+### Command encoders
 
 The *command encoder*, [`MTL4CommandEncoder`](./mtl4commandencoder.md), is a base protocol for other work-specific protocols that Metal provides, including:
 
@@ -199,7 +199,7 @@ The [`MTL4ComputeCommandEncoder`](./mtl4computecommandencoder.md) protocol is a 
 - [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md)
 - [`MTLAccelerationStructureCommandEncoder`](./mtlaccelerationstructurecommandencoder.md)
 
-##### Argument tables
+### Argument tables
 
 Metal 4 introduces an *argument table* type that stores bindings to resources, such as data buffers, textures, and samplers, on an encoder’s behalf. Argument tables can reduce your app’s memory footprint because:
 
@@ -221,7 +221,7 @@ The design adds flexibility for reducing your app’s CPU and memory overhead. F
 
 > 💡 **Tip**:  Create and configure separate argument tables for your app’s disparate types of work so that each table only manages the common resources for similar or overlapping tasks.
 
-##### Barriers
+### Barriers
 
 Earlier versions of Metal support tracking data hazards for textures and heaps you create with hazard tracking (see the `hazardTrackingMode` property of the [`MTLTextureDescriptor`](./mtltexturedescriptor.md) and [`MTLHeapDescriptor`](./mtlheapdescriptor.md) types, respectively).
 
@@ -229,7 +229,7 @@ In Metal 4, the framework considers all resources untracked. You need to synchro
 
 One of the most efficient ways to synchronize work between two or more passes is to add a *barrier*. A barrier tells the GPU that it needs to avoid a race condition by delaying the start of a pipeline stage until a previous stage finishes, so that it’s safe to access the results of that stage. For example, if an app encodes a compute pass that produces data that a subsequent render pass consumes in its fragment shader, the app needs to add a barrier between the dispatch stage of the compute pass and the fragment stage of the render pass. In that scenario, the barrier signals to the GPU that it needs to wait before running the fragment stage of the render pass until the dispatch stage of the compute pass finishes modifying common resources.
 
-##### Texture view pools
+### Texture view pools
 
 Metal 4 introduces the [`MTLTextureViewPool`](./mtltextureviewpool.md) protocol which creates lightweight texture views that can reduce your app’s memory footprint compared to creating the equivalent instances of [`MTLTexture`](./mtltexture.md). Each [`MTLTexture`](./mtltexture.md) instance is a heavyweight type that stores a texture’s underlying data and metadata. Each texture also has an implicit *texture view*, which is the default format interpretation of the texture’s underlying data. With a texture view pool, you can create lightweight texture views that interpret and access a texture’s underlying data with a different format than its original. For example, you can create an [`MTLTexture`](./mtltexture.md) instance with its [`pixelFormat`](./mtltexture/pixelformat.md) equal to [`MTLPixelFormat.rgba32Uint`](./mtlpixelformat/rgba32uint.md), and then create a new texture view of the same texture that interprets the underlying data as if its pixel format is [`MTLPixelFormat.rg11b10Float`](./mtlpixelformat/rg11b10float.md).
 

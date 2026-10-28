@@ -15,7 +15,7 @@ A Boolean value that indicates whether the customer consented to provide consump
 boolean customerConsented
 ```
 
-#### Discussion
+## Discussion
 
 Set this field to `true` if the customer provided consent to send the App Store the consumption data related to their refund request, including all the data you provide in the [`ConsumptionRequest`](./consumptionrequest.md) or [`ConsumptionRequestV1`](./consumptionrequestv1.md) request body. If not, don’t respond to the `CONSUMPTION_REQUEST` notification.
 

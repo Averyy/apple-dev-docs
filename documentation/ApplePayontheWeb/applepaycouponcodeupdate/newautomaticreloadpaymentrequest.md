@@ -16,7 +16,7 @@ An updated request for an automatic reload payment.
 ApplePayAutomaticReloadPaymentRequest newAutomaticReloadPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Provide this object to update the [`automaticReloadPaymentRequest`](../applepaypaymentrequest/automaticreloadpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated the coupon code.
 

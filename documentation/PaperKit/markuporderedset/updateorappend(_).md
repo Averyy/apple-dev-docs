@@ -20,7 +20,7 @@ Adds the given element to the set unconditionally, either appending it to the se
 mutating func updateOrAppend(_ item: MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The element this operation replaced, or `nil` if the operation appended the value to the end of the collection.
 

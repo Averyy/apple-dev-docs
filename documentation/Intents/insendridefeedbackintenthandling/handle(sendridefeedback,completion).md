@@ -27,7 +27,7 @@ func handle(sendRideFeedback sendRideFeedbackintent: INSendRideFeedbackIntent) a
 - (void) handleSendRideFeedback:(INSendRideFeedbackIntent *) sendRideFeedbackintent completion:(void (^)(INSendRideFeedbackIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, apply the feedback in the provided intent object to the specified ride.
 

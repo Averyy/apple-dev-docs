@@ -28,11 +28,11 @@ func earliestPermittedSampleDate() -> Date
 
 - [About the HealthKit framework](../about-the-healthkit-framework.md)
 
-#### Return Value
+## Return Value
 
 The earliest date that samples can use. HealthKit doesn’t allow saving or querying samples prior to this date.
 
-#### Discussion
+## Discussion
 
 Attempts to save samples earlier than this date fail with an [`HKError.Code.errorInvalidArgument`](../hkerror/code/errorinvalidargument.md) error. Attempts to query samples before this date return samples after this date.
 

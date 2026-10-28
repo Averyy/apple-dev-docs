@@ -26,7 +26,7 @@ var hasActions: Bool { get }
 @property (nonatomic, readonly) BOOL hasActions;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the node has any executing actions; otherwise the value is [`false`](../../Swift/false.md).
 

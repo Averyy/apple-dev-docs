@@ -19,11 +19,11 @@ func contextsForSegue(withIdentifier segueIdentifier: String) -> [Any]?
 - (NSArray *) contextsForSegueWithIdentifier:(NSString *) segueIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects to pass to the new interface controllers. The number of objects in the array must match the number of interface controllers that are present in the page-based interface that is the target of the segue. Use this object to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may return `nil` if you want, but doing so is not recommended.
 
-#### Discussion
+## Discussion
 
 When you create a modal segue from a button to a set of interface controllers in a page-based arrangement, the system calls this method when that segue is triggered. Use this method to provide the new interface controllers with any contextual data they need to display their content. The objects in the array are passed directly to the [`awake(withContext:)`](./awake%28withcontext%29.md) method of the corresponding interface controllers.
 

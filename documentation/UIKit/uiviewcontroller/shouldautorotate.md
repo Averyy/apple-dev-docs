@@ -24,7 +24,7 @@ var shouldAutorotate: Bool { get }
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the content should rotate, otherwise [`false`](../../Swift/false.md). This method returns [`true`](../../Swift/true.md) by default.
 

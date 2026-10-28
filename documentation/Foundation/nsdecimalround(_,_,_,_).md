@@ -25,7 +25,7 @@ func NSDecimalRound(_ result: UnsafeMutablePointer<Decimal>, _ number: UnsafePoi
 extern void NSDecimalRound(NSDecimal *result, const NSDecimal *number, NSInteger scale, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Rounds `number` off according to the parameters `scale` and `roundingMode` and stores the result in `result`.
 

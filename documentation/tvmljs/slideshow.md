@@ -15,7 +15,7 @@ An object used to display images on Apple TV in a slideshow format.
 interface Slideshow
 ```
 
-#### Overview
+## Overview
 
 There is no constructor for the `Slideshow` class. Use the [`start`](./slideshow/api-1657265-start.md) method to create and begin a new slideshow.
 

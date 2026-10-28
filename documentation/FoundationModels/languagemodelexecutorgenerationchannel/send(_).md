@@ -17,8 +17,8 @@ Sends a generation event on the channel.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func send(_ event: LanguageModelExecutorGenerationChannel.Event) async
+nonisolated(nonsending)
+func send(_ event: LanguageModelExecutorGenerationChannel.Event) async
 ```
 
 ## Parameters

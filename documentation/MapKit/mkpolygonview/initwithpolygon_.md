@@ -19,7 +19,7 @@ Initializes and returns a new overlay view using the specified polygon overlay o
 - (instancetype) initWithPolygon:(MKPolygon *) polygon;
 ```
 
-#### Return Value
+## Return Value
 
 A new polygon overlay view.
 

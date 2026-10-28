@@ -21,7 +21,7 @@ Tools that the model must NOT call.
 var disallowed: [ToolExpectation]
 ```
 
-#### Discussion
+## Discussion
 
 If a disallowed expectation includes argument matchers, only calls matching those specific arguments trigger a failure — the model can still call the tool with different arguments.
 

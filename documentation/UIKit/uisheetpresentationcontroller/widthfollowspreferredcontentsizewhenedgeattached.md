@@ -22,7 +22,7 @@ var widthFollowsPreferredContentSizeWhenEdgeAttached: Bool { get set }
 @property (nonatomic) BOOL widthFollowsPreferredContentSizeWhenEdgeAttached;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), which means the sheet’s width equals the width of its container’s safe area. Set this value to [`true`](../../Swift/true.md) to use your view controller’s [`preferredContentSize`](../uiviewcontroller/preferredcontentsize.md) to determine the width of the sheet instead.
 

@@ -46,7 +46,7 @@ dictionary ApplePayPaymentRequest {
 - [Apple Pay on the Web Version 4 Release Notes](./apple-pay-on-the-web-version-4-release-notes.md)
 - [Creating an Apple Pay Session](./creating-an-apple-pay-session.md)
 
-#### Overview
+## Overview
 
 Use an [`ApplePayPaymentRequest`](./applepaypaymentrequest.md) dictionary to represent a merchant request for payment for goods or services. Your website creates a payment request as soon as the user taps the Apple Pay button to make a purchase.
 

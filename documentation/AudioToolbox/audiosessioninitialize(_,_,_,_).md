@@ -22,11 +22,11 @@ func AudioSessionInitialize(_ inRunLoop: CFRunLoop!, _ inRunLoopMode: CFString!,
 extern OSStatus AudioSessionInitialize(CFRunLoopRef inRunLoop, CFStringRef inRunLoopMode, AudioSessionInterruptionListener inInterruptionListener, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Your application must call this function before making any other Audio Session Services calls. You may activate and deactivate your audio session as needed (see [`AudioSessionSetActive(_:)`](./audiosessionsetactive%28_%29.md)), but should initialize it only once.
 

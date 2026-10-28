@@ -22,7 +22,7 @@ case handover
 NSURLSessionMultipathServiceTypeHandover
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option for long-lived or persistent connections. You must also set the [`Multipath Entitlement`](../../../BundleResources/entitlements/com.apple.developer.networking.multipath.md) in the Xcode Capabilities pane for your app.
 

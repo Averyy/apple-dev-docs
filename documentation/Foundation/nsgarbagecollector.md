@@ -15,7 +15,7 @@ A convenient interface to the garbage collection system.
 @interface NSGarbageCollector : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Garbage collection is deprecated in OS X 10.8. Use ARC instead—see [Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226).
 

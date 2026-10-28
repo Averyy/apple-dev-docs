@@ -12,7 +12,7 @@ virtual void enable(
  boolwas ) = 0;
 ```
 
-#### Overview
+## Overview
 
 Restores the enable state of the notification request, given the previous state passed in.
 

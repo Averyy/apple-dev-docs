@@ -19,7 +19,7 @@ var resizingMask: NSTableColumn.ResizingOptions { get set }
 @property NSTableColumnResizingOptions resizingMask;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property specifies the resizability of the table column. See [Resizing Modes](../resizing-modes.md) for possible values. Values can be combined using the C bitwise OR operator.
 

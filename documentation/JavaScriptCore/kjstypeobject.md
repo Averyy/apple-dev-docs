@@ -24,7 +24,7 @@ var kJSTypeObject: JSType { get }
 kJSTypeObject
 ```
 
-#### Discussion
+## Discussion
 
 This [`JSValueRef`](./jsvalueref.md) represents a [`JSObjectRef`](./jsobjectref.md).
 

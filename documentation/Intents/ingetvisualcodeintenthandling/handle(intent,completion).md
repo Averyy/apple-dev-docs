@@ -30,7 +30,7 @@ func handle(intent: INGetVisualCodeIntent) async -> INGetVisualCodeIntentRespons
 - (void) handleGetVisualCode:(INGetVisualCodeIntent *) intent completion:(void (^)(INGetVisualCodeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should create an image for the requested visual code. Place that image in your response object and call the provided handler block.
 

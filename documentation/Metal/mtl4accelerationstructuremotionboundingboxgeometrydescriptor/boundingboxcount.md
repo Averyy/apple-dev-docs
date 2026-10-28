@@ -24,7 +24,7 @@ var boundingBoxCount: Int { get set }
 @property (nonatomic) NSUInteger boundingBoxCount;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same bounding box count.
 

@@ -21,11 +21,11 @@ class var current: NSAppearance! { get set }
 @property (class, strong, null_resettable) NSAppearance * currentAppearance;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance object that’s set on the current thread.
 
-#### Discussion
+## Discussion
 
 When a UI element draws to the screen, it automatically sets its appearance object to the active appearance on the current thread.
 

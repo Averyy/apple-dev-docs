@@ -24,7 +24,7 @@ var identityReference: Data? { get set }
 @property (copy, nullable) NSData * identityReference;
 ```
 
-#### Discussion
+## Discussion
 
 The keychain item must have the [`kSecClassIdentity`](../../Security/ksecclassidentity.md) class.
 

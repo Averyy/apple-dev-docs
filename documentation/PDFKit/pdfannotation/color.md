@@ -42,7 +42,7 @@ var color: NSColor { get set }
 @property (nonatomic, copy) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 Where this color is used depends on the annotation type.
 

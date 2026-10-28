@@ -21,7 +21,7 @@ Returns the primitive that results from applying a scaled pose to the primitive.
 func applying(_ scaledPose: ScaledPose3DFloat) -> Vector3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

@@ -23,7 +23,7 @@ string EligibilityStatus
 - `PENDING`: The entity requires review before it can be used.
 - `UNDEFINED`: Eligibility has not yet been determined.
 
-#### Discussion
+## Discussion
 
 The `EligibilityStatus` is a string enumeration embedded within [`Eligibility`](./eligibility.md). Use it to decide quickly whether to proceed before configuring campaigns.
 

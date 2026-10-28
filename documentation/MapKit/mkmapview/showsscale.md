@@ -24,7 +24,7 @@ var showsScale: Bool { get set }
 @property (nonatomic) BOOL showsScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

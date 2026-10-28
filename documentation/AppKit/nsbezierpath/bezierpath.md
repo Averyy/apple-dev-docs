@@ -15,7 +15,7 @@ Creates and returns a new Bézier path object.
 + (NSBezierPath *) bezierPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new empty path object.
 

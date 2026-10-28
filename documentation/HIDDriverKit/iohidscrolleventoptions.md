@@ -16,7 +16,7 @@ Options that you use to dispatch scrolling-related events.
 typedef enum { ... } IOHIDScrollEventOptions;
 ```
 
-#### Overview
+## Overview
 
 Pass these options to the [`dispatchRelativeScrollWheelEvent`](./iohideventservice/dispatchrelativescrollwheelevent.md) method of [`IOHIDEventService`](./iohideventservice.md).
 

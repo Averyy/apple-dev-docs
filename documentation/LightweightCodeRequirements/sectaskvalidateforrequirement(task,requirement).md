@@ -16,11 +16,11 @@ Tests whether a task’s executable satisfies a lightweight code requirement.
 func SecTaskValidateForRequirement(task: SecTask, requirement: ProcessCodeRequirement) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 If the requirement matches the process, then `true`; `false` if it doesn’t.
 
-#### Discussion
+## Discussion
 
 This function throws a value from [`ConstraintError`](./constrainterror.md) if it can’t evaluate whether the executable satisfies the lightweight code requirement.
 

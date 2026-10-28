@@ -24,7 +24,7 @@ var sourceLevel: Int
 NSUInteger sourceLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a value between `0` and the source texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 

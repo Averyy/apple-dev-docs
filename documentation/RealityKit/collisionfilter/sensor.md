@@ -20,7 +20,7 @@ A collision filter for an entity that collides with everything.
 static let sensor: CollisionFilter
 ```
 
-#### Discussion
+## Discussion
 
 The sensor collision filter is typically used by rays in ray casts, shapes in convex shape casts, and trigger volumes. It corresponds to a [`group`](./group.md) and [`mask`](./mask.md) both set to [`all`](../collisiongroup/all.md).
 

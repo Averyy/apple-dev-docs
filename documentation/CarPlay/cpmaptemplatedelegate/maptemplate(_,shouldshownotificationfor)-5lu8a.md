@@ -21,7 +21,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldShowNotificationFo
 - (BOOL) mapTemplate:(CPMapTemplate *) mapTemplate shouldShowNotificationForNavigationAlert:(CPNavigationAlert *) navigationAlert;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system should display the navigation alert as a notification; otherwise, [`false`](../../Swift/false.md).
 

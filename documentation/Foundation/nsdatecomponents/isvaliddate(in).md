@@ -25,11 +25,11 @@ func isValidDate(in calendar: Calendar) -> Bool
 - (BOOL) isValidDateInCalendar:(NSCalendar *) calendar;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the date corresponding to the receiver’s values is valid and exists in the given calendar, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the [`timeZone`](./timezone.md) property is set on the receiver, the time zone property value is used.
 

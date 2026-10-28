@@ -19,7 +19,7 @@ class NSColorWell
 @interface NSColorWell : NSControl
 ```
 
-#### Overview
+## Overview
 
 An [`NSColorWell`](./nscolorwell.md) object lets people select colors from your interface. Incorporate this type of control if your app supports custom color selection. For example, a drawing app might include a color well to let someone choose the color to use when drawing. A color well control displays the currently selected color, and interactions with the color well display interfaces for selecting new colors.
 

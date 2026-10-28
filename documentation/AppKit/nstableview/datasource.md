@@ -19,7 +19,7 @@ weak var dataSource: (any NSTableViewDataSource)? { get set }
 @property (weak, nullable) id<NSTableViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source for the table view must implement the appropriate methods of the [`NSTableViewDataSource`](../nstableviewdatasource.md) protocol. For more information, see the [`NSTableViewDataSource`](../nstableviewdatasource.md) `protocol` specification. Note that in versions of macOS prior to v10.12, the table view did not retain the data source in a managed memory environment.
 

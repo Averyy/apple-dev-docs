@@ -21,7 +21,7 @@ Retains a vImage converter.
 void vImageConverter_Retain(vImageConverterRef converter);
 ```
 
-#### Discussion
+## Discussion
 
 Retain a [`vImageConverter`](./vimageconverter.md) instance when you receive it from elsewhere (that is, you didn’t create or copy it) and you want it to persist. If you retain a [`vImageConverter`](./vimageconverter.md) instance you’re responsible for releasing it (see [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i)).
 

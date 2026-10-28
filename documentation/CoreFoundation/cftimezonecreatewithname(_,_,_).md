@@ -25,7 +25,7 @@ func CFTimeZoneCreateWithName(_ allocator: CFAllocator!, _ name: CFString!, _ tr
 extern CFTimeZoneRefCFTimeZoneCreateWithName(CFAllocatorRef allocator, CFStringRef name, Boolean tryAbbrev);
 ```
 
-#### Return Value
+## Return Value
 
 A time zone corresponding to `name`, or `NULL` if no match was found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -10,13 +10,13 @@ Extend the capabilities of your app by using entities, components, and systems t
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Set up an interaction using [`ManipulationComponent`](../RealityKit/manipulationcomponent.md),  [`ForceEffectComponent`](../RealityKit/forceeffectcomponent.md), and custom components that maintain solid collisions while manipulating entities. This sample shows how to create a proxy [`Entity`](../RealityKit/entity.md) that follows the manipulated entity using forces. Because it is moved with forces, the proxy bumps into solid objects as person drags the entity with their hand.
 
 [Video: A screen recording showing a person manipulating a toy car and a toy robot on visionOS while maintaining solid collisions between objects.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/device.mp4)
 
-#### Configure the entity with a custom component
+## Configure the entity with a custom component
 
 After configuring an entity with [`ManipulationComponent`](../RealityKit/manipulationcomponent.md), it passes through other colliders while using the gesture. The entity ignores other colliders because its motion is guided by the person’s hand. To create an interaction where an entity respects collisions and forces during a gesture, this sample moves the visual components from the “real” entity to a “proxy” entity for the duration of the gesture. With the real entity invisible and the proxy entity visible, [`ForceEffectComponent`](../RealityKit/forceeffectcomponent.md) applies forces to the proxy entity that move it toward the real entity. This creates an interaction where you can manipulate the entity, but it no longer passes through solid colliders.
 
@@ -24,7 +24,7 @@ An extension for the custom [`Component`](../RealityKit/component.md), `Manipula
 
 For more information about the entity component system (ECS) in RealityKit, see [Implementing systems for entities in a scene](../RealityKit/implementing-systems-for-entities-in-a-scene.md).
 
-#### Modify entities at specific moments during a gesture
+## Modify entities at specific moments during a gesture
 
 To run code at specific moments during a manipulation gesture for a specific entity use [`ManipulationEvents.WillBegin`](../RealityKit/manipulationevents/willbegin.md) and [`ManipulationEvents.WillRelease`](../RealityKit/manipulationevents/willrelease.md). To subscribe to these events, the sample first subscribes to [`ComponentEvents.DidAdd`](../RealityKit/componentevents/didadd.md) inside the initializer for a custom system.
 
@@ -70,7 +70,7 @@ event.entity.components[OpacityComponent.self]?.opacity = 0
 
 The inverse operations occur when a person releases the entity and the app transfers the components back to the real entity.
 
-#### Use forces to move the entity with realistic physics
+## Use forces to move the entity with realistic physics
 
 During the manipulation gesture, a custom [`System`](../RealityKit/system.md) runs code each frame to apply a [`ForceEffectComponent`](../RealityKit/forceeffectcomponent.md) to the real entity. [`ConstantRadialForceEffect`](../RealityKit/constantradialforceeffect.md) attracts physics bodies to its center. [`DragForceEffect`](../RealityKit/dragforceeffect.md) applies a force opposite to an entity’s direction of motion. Together these forces move the proxy entity toward the real entity during the manipulation gesture.
 

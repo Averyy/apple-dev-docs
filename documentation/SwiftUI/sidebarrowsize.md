@@ -21,7 +21,7 @@ The standard sizes of sidebar rows.
 enum SidebarRowSize
 ```
 
-#### Overview
+## Overview
 
 On macOS, sidebar rows have three different sizes: small, medium, and large. The size is primarily controlled by the current users’ “Sidebar Icon Size” in Appearance settings, and applies to all applications.
 

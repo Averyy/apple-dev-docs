@@ -15,7 +15,7 @@ A spatial experience that does not take user motion into account.
 @interface CAFixedSpatialAudio : CASpatialAudioExperience
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the [`FixedSpatialAudio`](./fixedspatialaudio.md) Swift type.
 

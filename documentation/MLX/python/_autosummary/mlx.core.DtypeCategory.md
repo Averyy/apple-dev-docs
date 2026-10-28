@@ -6,60 +6,59 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.Dt
 
 # mlx.core.DtypeCategory
 
-**class DtypeCategory(**values*)**
-: Type to hold categories of [dtypes](mlx.core.Dtype.md#mlx.core.Dtype).
+```python
+class DtypeCategory(*values)
+```
 
-`generic`
+Type to hold categories of [dtypes](mlx.core.Dtype.md#mlx.core.Dtype).
 
-[bool_](../data_types.md#data-types)
-`number`
+- `generic`
 
-`integer`
+  - [bool_](../data_types.md#data-types)
+  - `number`
 
-`unsignedinteger`
+    - `integer`
 
-[uint8](../data_types.md#data-types)
-[uint16](../data_types.md#data-types)
-[uint32](../data_types.md#data-types)
-[uint64](../data_types.md#data-types)
+      - `unsignedinteger`
 
-`signedinteger`
+        - [uint8](../data_types.md#data-types)
+        - [uint16](../data_types.md#data-types)
+        - [uint32](../data_types.md#data-types)
+        - [uint64](../data_types.md#data-types)
 
-[int8](../data_types.md#data-types)
-[int32](../data_types.md#data-types)
-[int64](../data_types.md#data-types)
+      - `signedinteger`
 
-`inexact`
+        - [int8](../data_types.md#data-types)
+        - [int32](../data_types.md#data-types)
+        - [int64](../data_types.md#data-types)
 
-`floating`
+    - `inexact`
 
-[float16](../data_types.md#data-types)
-[bfloat16](../data_types.md#data-types)
-[float32](../data_types.md#data-types)
-[float64](../data_types.md#data-types)
+      - `floating`
 
-`complexfloating`
+        - [float16](../data_types.md#data-types)
+        - [bfloat16](../data_types.md#data-types)
+        - [float32](../data_types.md#data-types)
+        - [float64](../data_types.md#data-types)
 
-[complex64](../data_types.md#data-types)
+      - `complexfloating`
+
+        - [complex64](../data_types.md#data-types)
 
 See also [issubdtype()](mlx.core.issubdtype.md#mlx.core.issubdtype).
 
-__init__(**args*, ***kwds*)
+```python
+__init__(*args, **kwds)
+```
 
 Attributes
 
-`complexfloating`
-
-`floating`
-
-`inexact`
-
-`signedinteger`
-
-`unsignedinteger`
-
-`integer`
-
-`number`
-
-`generic`
+| `complexfloating` |  |
+| --- | --- |
+| `floating` |  |
+| `inexact` |  |
+| `signedinteger` |  |
+| `unsignedinteger` |  |
+| `integer` |  |
+| `number` |  |
+| `generic` |  |

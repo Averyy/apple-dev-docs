@@ -21,7 +21,7 @@ func cellBaselineOffset() -> NSPoint
 - (NSPoint) cellBaselineOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The image should be drawn so its lower-left corner lies on this point.
 

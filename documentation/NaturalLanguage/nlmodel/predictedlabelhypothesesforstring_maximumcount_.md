@@ -21,7 +21,7 @@ Predicts multiple possible labels for the given input string.
 - (NSDictionary<NSString *,NSNumber *> *) predictedLabelHypothesesForString:(NSString *) string maximumCount:(NSUInteger) maximumCount;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of label hypotheses. Each dictionary entry is a predicted label with its associated probability score. These labels are the top candidates proposed as possible labels for the input string. The dictionary contains up to `maximumCount` entries.
 

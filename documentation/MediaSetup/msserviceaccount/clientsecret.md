@@ -22,7 +22,7 @@ var clientSecret: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * clientSecret;
 ```
 
-#### Discussion
+## Discussion
 
 The Media Setup framework uses the `clientSecret` to create a token request. Hashed passwords are acceptable, but plaintext passwords are not.
 

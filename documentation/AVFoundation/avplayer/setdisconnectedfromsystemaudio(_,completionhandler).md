@@ -20,7 +20,7 @@ nonisolated
 func setDisconnectedFromSystemAudio(_ disconnected: Bool, completionHandler: (@Sendable () -> Void)? = nil)
 ```
 
-#### Using the completion handler
+## Using the completion handler
 
 In a scenario where changing the value from `false` to `true` should also allow other system audio to resume, you should only deactivate the audio session once the player has disconnected from system audio.
 

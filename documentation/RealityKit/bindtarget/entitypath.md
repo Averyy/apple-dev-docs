@@ -20,7 +20,7 @@ A bind path context for a particular entity.
 struct EntityPath
 ```
 
-#### Overview
+## Overview
 
 This structure references all the animated properties of an entity.
 

@@ -21,7 +21,7 @@ A color volume transform that maps HDR content into a display’s dynamic range.
 struct ColorVolumeTransform
 ```
 
-#### Overview
+## Overview
 
 A color volume transform can override the standard HDR reference white and, optionally, supply headroom-adaptive tone mapping.
 

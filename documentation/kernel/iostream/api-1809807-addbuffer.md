@@ -12,7 +12,7 @@ virtual IOReturn addBuffer(
  IOStreamBuffer *buffer);
 ```
 
-#### Overview
+## Overview
 
 Adds an IOStreamBuffer to an IOStream. It will be added to the end of the buffer array, so the buffer ID of existing buffers will not change.
 

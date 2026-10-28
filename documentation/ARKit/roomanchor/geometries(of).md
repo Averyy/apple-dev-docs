@@ -17,11 +17,11 @@ Returns the disjoint mesh geometries of a given classification.
 func geometries(of classification: MeshAnchor.MeshClassification) -> [MeshAnchor.Geometry]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`MeshAnchor.Geometry`](../meshanchor/geometry-swift.struct.md) structures that match the provided classification.
 
-#### Discussion
+## Discussion
 
 `RoomAnchor.geometries(of:)` supports the [`ARMeshClassification.floor`](../armeshclassification/floor.md) and [`ARMeshClassification.wall`](../armeshclassification/wall.md) mesh classifications.
 

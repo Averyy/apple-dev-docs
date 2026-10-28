@@ -19,11 +19,11 @@ func SCPreferencesUnlock(_ prefs: SCPreferences) -> Bool
 Boolean SCPreferencesUnlock(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 After exclusive access has been released, other clients can establish exclusive access to the preferences.
 

@@ -32,7 +32,7 @@ class INIntent
 - [Displaying Shortcut Information in a Siri Watch Face Card](../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 - [Offering Actions in the Shortcuts App](../SiriKit/offering-actions-in-the-shortcuts-app.md)
 
-#### Overview
+## Overview
 
 The [`INIntent`](./inintent.md) class is abstract and provides behaviors shared by all intent objects. You don’t create instances of this class directly or implement your own custom subclasses. For a list of intent types that SiriKit already handles, see the Standard Intents section of [Intents](./Intents.md). You may also define custom intent types in an Intent Definition file.
 

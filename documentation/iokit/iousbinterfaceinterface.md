@@ -16,7 +16,7 @@ The object you use to access a USB device interface from user space, returned by
 typedef IOUSBInterfaceInterface942 IOUSBInterfaceInterface;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here will work with any version of the IOUSBInterfaceInterface, including the one shipped with OS X version 10.0.
 

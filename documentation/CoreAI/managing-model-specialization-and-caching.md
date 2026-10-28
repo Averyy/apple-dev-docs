@@ -5,7 +5,7 @@
 
 Configure model specialization, manage cached assets, and reduce your app’s storage footprint.
 
-#### Overview
+## Overview
 
 When you load a `.aimodel` file with [`AIModel`](./aimodel.md), Core AI performs *specialization*, the process of optimizing the model for the current device’s hardware. The `.aimodel` file contains your model in a portable format that works across Apple devices. Before the model can run, Core AI specializes it for the current device, producing executable code tied to that device’s hardware and OS version.
 
@@ -13,7 +13,7 @@ By default, an `AIModel` automatically specializes the model and caches the resu
 
 Core AI provides APIs to control how, when, and where specialization happens.
 
-#### Check for a cached specialization
+## Check for a cached specialization
 
 To avoid re-specializing your model whenever your app launches, check if a cached version already exists. Call [`model(for:options:)`](./aimodelcache/model%28for,options%29.md) on the app’s default AI model cache. The `options` parameter specifies which [`SpecializationOptions`](./specializationoptions.md) to match against:
 
@@ -39,7 +39,7 @@ func loadModel(from modelURL: URL) async throws -> AIModel {
 
 This method checks whether a cached specialization exists for the given model and options; however, it doesn’t perform specialization. If a cached version exists, the method returns the model instantly. If it returns `nil`, no cached specialization exists.
 
-#### Choose how Core AI specializes your model
+## Choose how Core AI specializes your model
 
 Use [`SpecializationOptions`](./specializationoptions.md) to configure how Core AI specializes your model. By default, the system selects the combination of compute units (CPU, GPU, and Neural Engine) to minimize inference latency:
 
@@ -51,7 +51,7 @@ For advanced use cases, restrict specialization to CPU only with `.cpuOnly`, or 
 
 In most scenarios, the default configuration offers the best performance, so test your app’s performance carefully before overriding it. Because not all devices have the same compute units available, check what’s available with [`availableKinds`](./computeunitkind/availablekinds.md). For details on all available specialization options, see [`SpecializationOptions`](./specializationoptions.md).
 
-#### Optimize for variable shapes
+## Optimize for variable shapes
 
 By default, for models with dynamic shapes, Core AI optimizes the inference function for each new input shape it encounters. If your app calls the same function with a new shape often, such as when it runs a dynamic-shape large language model whose sequence grows one token at a time, this per-shape optimization can cost more time than it saves.
 
@@ -59,7 +59,7 @@ In those cases, set [`expectFrequentReshapes`](./specializationoptions/expectfre
 
 See [Core AI Models](https://github.com/apple/coreai-models) for examples of applying this flag to dynamic-shape models.
 
-#### Specialize a model before loading it
+## Specialize a model before loading it
 
 When your app downloads a model or enables a feature that uses one, you can specialize the model at a convenient moment so the person doesn’t notice a delay when they use it. Use [`specialize(contentsOf:options:cache:cachePolicy:)`](./aimodel/specialize%28contentsof,options,cache,cachepolicy%29.md) to specialize a model without loading it for inference:
 
@@ -81,7 +81,7 @@ This method stores the specialized assets in [`default`](./aimodelcache/default.
 
 The `specialize` method differs from ahead-of-time compilation. With ahead-of-time compilation, most of the heavy computation happens on your Mac at build time, so on-device specialization finishes faster. With `specialize`, the full specialization process runs on the person’s device. You are controlling *when* specialization happens, not reducing the work it does.
 
-#### Control cache persistence with policies
+## Control cache persistence with policies
 
 Because the system can automatically delete specialized assets to free up storage, use [`AIModelCache.Policy`](./aimodelcache/policy.md) to control whether the system can remove your app’s cached assets.
 
@@ -105,7 +105,7 @@ try await AIModel.specialize(
 
 > **Note**: `.persistent` isn’t available on tvOS.  Local storage on tvOS is limited and [`AIModelCache`](./aimodelcache.md) entries must be puragable by tvOS when space is low. Use the default policy on tvOS.
 
-#### Delete cached assets you no longer need
+## Delete cached assets you no longer need
 
 To reduce your app’s storage footprint, delete cached assets when they’re no longer needed. For example, when your app downloads an updated version of a model and the previous version’s cached assets are no longer valid:
 
@@ -137,7 +137,7 @@ Core AI provides methods for deleting cached assets:
 
 If an [`AIModel`](./aimodel.md) instance still uses a cache entry, Core AI defers deletion until that instance is deallocated.
 
-#### Share specialized models across apps
+## Share specialized models across apps
 
 If you have multiple apps or extensions that use the same model, create an app group using the [`App Groups Entitlement`](../BundleResources/entitlements/com.apple.security.application-groups.md). Then use [`init(appGroup:)`](./aimodelcache/init%28appgroup%29.md) to target the group identifier and load a shared cache. This avoids duplicating specializations across apps:
 
@@ -169,7 +169,7 @@ if let model = try groupCache.model(for: sharedModelURL, options: .default) {
 }
 ```
 
-#### Delete the source model and load from cache
+## Delete the source model and load from cache
 
 The unspecialized `.aimodel` file, along with the [`SpecializationOptions`](./specializationoptions.md) you pass, is what Core AI uses to index and retrieve the cached specialization at runtime when you call [`init(contentsOf:options:)`](./aimodel/init%28contentsof,options%29.md) or [`model(for:options:)`](./aimodelcache/model%28for,options%29.md). Because of this, you can’t simply delete the source file and expect those APIs to keep working. Instead, save a bookmark to the cached specialization and load the model directly from that bookmark on later launches.
 

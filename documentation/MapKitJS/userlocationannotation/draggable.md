@@ -16,7 +16,7 @@ get draggable(): boolean;
 set draggable(_: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the draggable property of the user location annotation. This property always returns `false`.
 

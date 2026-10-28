@@ -21,7 +21,7 @@ Collapse `.` and `..` components lexically (i.e. without following symlinks).
 mutating func lexicallyNormalize()
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

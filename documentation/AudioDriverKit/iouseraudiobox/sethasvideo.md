@@ -15,11 +15,11 @@ Sets a Boolean value that indicates the box’s video support.
 kern_return_t SetHasVideo(bool in_has_video);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the video support value sends a notification to the host to update the object state.
 

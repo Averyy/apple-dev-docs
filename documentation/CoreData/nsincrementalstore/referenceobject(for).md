@@ -25,11 +25,11 @@ func referenceObject(for objectID: NSManagedObjectID) -> Any
 - (id) referenceObjectForObjectID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 The reference data used to construct objectID.
 
-#### Discussion
+## Discussion
 
 This method raises an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if the object ID was not created by the receiving store.
 

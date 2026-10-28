@@ -20,7 +20,7 @@ A Boolean value that indicates whether Spotlight prevents the inclusion of the e
 var hideInSpotlight: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, Spotlight doesn’t include the entity in search results. The default value of this property is `false`.
 

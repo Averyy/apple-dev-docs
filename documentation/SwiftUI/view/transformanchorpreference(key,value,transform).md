@@ -22,7 +22,7 @@ nonisolated
 func transformAnchorPreference<A, K>(key _: K.Type = K.self, value: Anchor<A>.Source, transform: @escaping (inout K.Value, Anchor<A>) -> Void) -> some View where K : PreferenceKey
 ```
 
-#### Return Value
+## Return Value
 
 A new version of the view that writes the preference.
 

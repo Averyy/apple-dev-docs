@@ -25,7 +25,7 @@ func blockRequesters(_ requesters: [CKShare.AccessRequester])
 - (void) blockRequesters:(NSArray<CKShareAccessRequester *> *) requesters;
 ```
 
-#### Discussion
+## Discussion
 
 Blocking prevents users from submitting future access requests and removes existing participants from the share. Blocked requesters appear in the [`blockedIdentities`](./blockedidentities.md) array.
 

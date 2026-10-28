@@ -19,7 +19,7 @@ var isSelectable: Bool { get set }
 @property (getter=isSelectable) BOOL selectable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the user to select text of all text views sharing the receiver’s layout manager; otherwise, [`false`](../../Swift/false.md).
 

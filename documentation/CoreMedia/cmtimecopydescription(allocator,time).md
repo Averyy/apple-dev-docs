@@ -25,7 +25,7 @@ func CMTimeCopyDescription(allocator: CFAllocator?, time: CMTime) -> CFString?
 extern CFStringRefCMTimeCopyDescription(CFAllocatorRef allocator, CMTime time);
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the time.
 

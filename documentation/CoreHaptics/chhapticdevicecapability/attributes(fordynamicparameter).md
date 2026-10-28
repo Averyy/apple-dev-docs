@@ -25,7 +25,7 @@ func attributes(forDynamicParameter inParameter: CHHapticDynamicParameter.ID) th
 - (id<CHHapticParameterAttributes>) attributesForDynamicParameter:(CHHapticDynamicParameterID) inParameter error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The haptic device’s attributes for the given dynamic parameter ID.
 

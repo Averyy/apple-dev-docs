@@ -23,7 +23,7 @@ var initialVelocity: CGVector { get }
 @property (nonatomic, readonly) CGVector initialVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 To create a smooth transition from an object in motion into a spring animation, initialize the spring timing parameters with an initial velocity. One common use of this property is to animate a view to a final resting position at the end of a pan gesture.
 

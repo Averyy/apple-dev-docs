@@ -19,11 +19,11 @@ func expansionFrame(withFrame contentFrame: NSRect) -> NSRect
 - (NSRect) expansionFrameWithFrame:(NSRect) contentFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The frame in which the tool tip should be displayed, or [`NSZeroRect`](../../Foundation/nszerorect.md) by default.
 
-#### Discussion
+## Discussion
 
 This method lets the control  return an expansion tool tip frame if `contentFrame` is too small for the entire contents in the view. When the pointer hovers over the text in certain controls, the full contents will be shown in a special floating tool tip view. If the frame is big enough to display the contents, return an empty rect from this method and no expansion tool tip view will be shown. Note that some subclasses, such as [`NSTextField`](../nstextfield.md), return the proper frame when required.
 

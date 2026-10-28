@@ -21,11 +21,11 @@ Initializes the buffer’s memory with the given elements, binding the initializ
 func initializeMemory<S>(as type: S.Element.Type, from source: S) -> (unwritten: S.Iterator, initialized: UnsafeMutableBufferPointer<S.Element>) where S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 An iterator to any elements of `source` that didn’t fit in the buffer, and a typed buffer of the written elements. The returned buffer references memory starting at the same base address as this buffer.
 
-#### Discussion
+## Discussion
 
 When calling the `initializeMemory(as:from:)` method on a buffer `b`, the memory referenced by `b` must be uninitialized or initialized to a trivial type, and must be properly aligned for accessing `S.Element`. The buffer must contain sufficient memory to accommodate `source.underestimatedCount`.
 

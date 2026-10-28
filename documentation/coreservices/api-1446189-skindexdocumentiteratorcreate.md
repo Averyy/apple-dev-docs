@@ -19,11 +19,11 @@ func SKIndexDocumentIteratorCreate(_ inIndex: SKIndex!, _ inParentDocument: SKDo
 SKIndexDocumentIteratorRef SKIndexDocumentIteratorCreate(SKIndexRef inIndex, SKDocumentRef inParentDocument);
 ```
 
-#### Return Value
+## Return Value
 
 An index-based document iterator.
 
-#### Discussion
+## Discussion
 
 When you want to iterate across all the documents represented in an index, use this function to create an iterator and then call [`SKIndexDocumentIteratorCopyNext(_:)`](./api-1442212-skindexdocumentiteratorcopynext.md) in turn for each document URL object (of type [`SKDocument`](./skdocument.md)) in the index.
 

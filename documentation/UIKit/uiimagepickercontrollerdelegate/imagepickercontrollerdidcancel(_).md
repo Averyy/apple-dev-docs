@@ -22,7 +22,7 @@ optional func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
 - (void) imagePickerControllerDidCancel:(UIImagePickerController *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate’s implementation of this method should dismiss the picker view by calling the [`dismiss(animated:completion:)`](../uiviewcontroller/dismiss%28animated,completion%29.md) method of the parent view controller.
 

@@ -15,7 +15,7 @@ The maximum allowed length of the path to the UNIX domain socket.
 @property (class, readonly) NSUInteger maximumPathLength;
 ```
 
-#### Discussion
+## Discussion
 
 The `sockaddr_un` structure in Linux defines the maximum length for this path.
 

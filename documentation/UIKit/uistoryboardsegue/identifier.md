@@ -25,7 +25,7 @@ var identifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 You assign identifiers to your segues in Interface Builder. An identifier is a string that your application uses to distinguish one segue from another. For example, if you have a source view controller that can segue to two or more different destination view controllers, you’d assign different identifiers to each segue so that the source view controller’s [`prepare(for:sender:)`](../uiviewcontroller/prepare%28for,sender%29.md) method could tell them apart and prepare each segue appropriately.
 

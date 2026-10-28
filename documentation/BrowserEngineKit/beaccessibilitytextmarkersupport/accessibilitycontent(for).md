@@ -25,7 +25,7 @@ func accessibilityContent(for range: BEAccessibilityTextMarker.Range) -> String?
 - (NSString *) accessibilityContentForTextMarkerRange:(BEAccessibilityTextMarkerRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 The string of text within the marker range, or `nil` if there’s no text in the range.
 

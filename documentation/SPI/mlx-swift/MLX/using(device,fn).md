@@ -19,7 +19,7 @@ Execute a block of code using a specific device.
 func using<R>(device: Device, fn: () throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

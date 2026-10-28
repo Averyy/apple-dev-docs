@@ -25,7 +25,7 @@ typealias SCNAnimationEventBlock = (any SCNAnimationProtocol, Any, Bool) -> Void
 typedef void (^)(id<SCNAnimation>, id, _Bool) SCNAnimationEventBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

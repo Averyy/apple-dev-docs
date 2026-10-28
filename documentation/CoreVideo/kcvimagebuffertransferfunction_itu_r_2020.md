@@ -23,7 +23,7 @@ let kCVImageBufferTransferFunction_ITU_R_2020: CFString
 extern CFStringRef const kCVImageBufferTransferFunction_ITU_R_2020;
 ```
 
-#### Discussion
+## Discussion
 
 The [`kCVImageBufferTransferFunction_ITU_R_709_2`](./kcvimagebuffertransferfunction_itu_r_709_2.md) is equivalent and preferred.
 

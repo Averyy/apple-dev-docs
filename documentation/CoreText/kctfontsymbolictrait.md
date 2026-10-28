@@ -25,7 +25,7 @@ let kCTFontSymbolicTrait: CFString
 extern CFStringRef const kCTFontSymbolicTrait;
 ```
 
-#### Discussion
+## Discussion
 
 The value is returned as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

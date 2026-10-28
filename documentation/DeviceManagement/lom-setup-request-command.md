@@ -9,11 +9,11 @@ Get information from a device to set up lights-out management (LOM).
 **Availability**:
 - macOS 11.0+
 
-#### Discussion
+## Discussion
 
 This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](./lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [supported macOS devices](https://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -23,7 +23,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

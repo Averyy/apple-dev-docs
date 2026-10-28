@@ -5,13 +5,13 @@
 
 Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 
-#### Overview
+## Overview
 
 When you build an intelligence-powered feature, an early milestone is getting it working for a handful of cases. The harder work comes next: making sure your feature handles the full range of inputs it meets in production, and that fixes for one problem don’t silently break cases that already work.
 
 Evaluation gives you that signal. This article covers the practices that turn ad-hoc tests into evaluations you can rely on: how to define measurable criteria, structure your dataset, interpret results, and iterate without overfitting. For the API walkthrough of running an evaluation, see [Evaluating language model responses](./evaluating-language-model-responses.md).
 
-#### Adapt your testing approach for model responses
+## Adapt your testing approach for model responses
 
 Testing an intelligence-powered feature includes some unique complexities that impact how you design a robust evaluation approach:
 
@@ -23,7 +23,7 @@ Testing an intelligence-powered feature includes some unique complexities that i
 
 Traditional unit tests verify deterministic behavior in code: if a test passes today, it passes tomorrow unless you change the code. Intelligence-powered features break this assumption. Build a robust evaluation practice, so you can maintain consistent quality at scale.
 
-#### Treat evaluations as your living specification
+## Treat evaluations as your living specification
 
 A traditional specification document becomes outdated the moment you start building. A comprehensive set of evaluations stays useful because it is:
 
@@ -35,7 +35,7 @@ In Evaluations, the [`Evaluation`](./evaluation.md) protocol captures these thre
 
 Thinking of your evaluation as your specification forces you to define, from the beginning, exactly what your feature must do, what it must not do, and how you measure the difference.
 
-##### Create precise, measurable criteria
+### Create precise, measurable criteria
 
 Evaluation transforms a subjective “is this good?” into a precise, measurable signal that you can track over time. What “looks good” to you isn’t a scalable quality signal; you might approve an output that seems reasonable without noticing a subtle error that a user with more context might catch immediately.
 
@@ -50,7 +50,7 @@ Turn vague goals into concrete, measurable targets:
 
 The pattern is the same regardless of your feature: replace vague, subjective impressions with criteria that code or model-judge evaluators can verify. For guidance on defining measurable criteria, see [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md).
 
-#### Adopt an evaluation-driven development life cycle
+## Adopt an evaluation-driven development life cycle
 
 Successful intelligence-powered features are built in a tight feedback loop where evaluation drives every step. It’s not the last step before shipping; it’s part of every step from the beginning.
 
@@ -64,7 +64,7 @@ Each pass through this loop produces measurable feedback, so you iterate with co
 
 Small changes show up as score shifts, so you can iterate toward a better feature without introducing regressions.
 
-#### Avoid the cost of skipping evaluation
+## Avoid the cost of skipping evaluation
 
 Skipping systematic evaluation can quietly undermine your product in ways that don’t become obvious until it’s too late:
 
@@ -76,7 +76,7 @@ Skipping systematic evaluation can quietly undermine your product in ways that d
 
 A quantified score for your feature’s performance means you can make objective decisions, track quality over time, compare different prompts or models, and set a clear threshold for what “good enough to ship” means.
 
-#### Understand the components of an evaluation
+## Understand the components of an evaluation
 
 As described in [Evaluating language model responses](./evaluating-language-model-responses.md), to create an evaluation, you:
 
@@ -92,7 +92,7 @@ Evaluations supports two kinds of evaluators:
 - Code-based evaluators verify criteria with computable definitions: format compliance, word limits, schema validation, exact matches. They are instant, free, and perfectly reproducible.
 - Model-judge evaluators score subjective qualities that code can’t capture: tone, clarity, helpfulness, accuracy of open-ended responses. A language model reads the output and scores it against scoring levels you define. For best practices on configuring model-judge evaluators, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 
-#### Analyze your results for patterns
+## Analyze your results for patterns
 
 Running an evaluation gives you measurable data on how your feature is performing. Follow these best practices as you interpret the results, form hypotheses about failures, make targeted changes, and verify the improvements across your dataset.
 
@@ -118,7 +118,7 @@ aggregator.computeMedian(of: qualityScore) // Central tendency for scored metric
 
 > ❗ **Important**: Always verify that your metric is measuring what you think it is. A perfect score can be misleading: a bias evaluation that returns zero bias might mean your model is unbiased, or it might mean your model isn’t answering the questions at all. When scores seem too good, inspect the underlying outputs to confirm the metric captures genuine quality, not an artifact of unexpected behavior.
 
-#### Iterate through an improvement cycle
+## Iterate through an improvement cycle
 
 The Improve step in the life cycle has its own loop. When you identify a failure pattern, follow this cycle to fix it without introducing new problems:
 
@@ -136,7 +136,7 @@ For example, if a feature produces outputs that violate a stated constraint, you
 
 Each iteration of this cycle either raises your score or teaches you something new about your feature’s failure modes.
 
-#### Avoid overfitting as you iterate
+## Avoid overfitting as you iterate
 
 As you iterate through the improvement cycle, there is a risk of *overfitting*: tuning your prompts so precisely to your test cases that improvements stop generalizing to real-world inputs. A prompt engineered to pass 50 specific test cases might fail on the 51st because it’s optimized for your dataset’s quirks rather than the underlying quality criteria.
 
@@ -150,7 +150,7 @@ Here are some additional safeguards:
 
 To see these practices in use in a complete app, where a model judge is calibrated against expert scores so you can trust it while iterating on a prompt, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Capture result failures to prevent regressions
+## Capture result failures to prevent regressions
 
 When you discover an input that your model handles poorly, add it to your dataset with the expected behavior documented. Over time, your dataset becomes a regression suite that prevents previously fixed issues from reappearing. For more information about structuring your dataset, see [Designing datasets to test your feature](./designing-evaluation-datasets.md).
 
@@ -164,7 +164,7 @@ Here’s a straightforward workflow:
 
 This creates an incrementing effect: your quality level can only go up. Each failure you capture and fix becomes a permanent guard against regression.
 
-#### Grow your evaluation suite over time
+## Grow your evaluation suite over time
 
 Start with small evaluations and build them into a comprehensive evaluation suite over time. Here’s what that might look like:
 
@@ -174,7 +174,7 @@ Start with small evaluations and build them into a comprehensive evaluation suit
 
 As your feature evolves, your evaluation evolves with it. Remove evaluators that no longer provide useful signals. Split evaluators that are measuring too many things at once. Add evaluators when you discover new failure modes.
 
-#### Integrate evaluations into your workflow
+## Integrate evaluations into your workflow
 
 Evaluations provide the most value when you run them consistently and treat the results as actionable. Run evaluations on:
 

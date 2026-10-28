@@ -24,7 +24,7 @@ var masterClock: CMClock? { get }
 @property (nonatomic, readonly, nullable) CMClockRef masterClock;
 ```
 
-#### Discussion
+## Discussion
 
 The returned [`CMClock`](../../CoreMedia/cmclock.md) object is read-only and provides a timebase for all sample buffers in capture output. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](../avcaptureinput/port.md) object to synchronize capture output with external data sources such as motion samples.
 

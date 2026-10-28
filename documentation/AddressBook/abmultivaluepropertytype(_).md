@@ -19,7 +19,7 @@ func ABMultiValuePropertyType(_ multiValue: ABMultiValueRef!) -> ABPropertyType
 extern ABPropertyType ABMultiValuePropertyType(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 The property typeof `multiValue`. If the list is emptyor its values are of different types, returns [`kABErrorInProperty`](./kaberrorinproperty.md).
 

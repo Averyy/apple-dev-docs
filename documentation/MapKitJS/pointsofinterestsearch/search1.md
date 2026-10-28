@@ -20,11 +20,11 @@ search(
 ): Promise<PointsOfInterestSearchResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`PointsOfInterestSearchResponse`](../pointsofinterestsearchresponse.md) on success.
 
-#### Discussion
+## Discussion
 
 The [`search()`](./search1.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](../pointofinterestfilter.md).
 

@@ -17,7 +17,7 @@ A unique identifier for the session.
 let sessionIdentifier: UUID?
 ```
 
-#### Discussion
+## Discussion
 
 Provide the session identifier if the status event corresponds to an active charging session. The session identifier associates status snapshots with session-based energy flow data.
 

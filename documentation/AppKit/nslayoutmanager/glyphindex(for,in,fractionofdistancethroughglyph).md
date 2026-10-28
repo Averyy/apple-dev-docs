@@ -19,11 +19,11 @@ func glyphIndex(for point: NSPoint, in container: NSTextContainer, fractionOfDis
 - (NSUInteger) glyphIndexForPoint:(NSPoint) point inTextContainer:(NSTextContainer *) container fractionOfDistanceThroughGlyph:(CGFloat *) partialFraction;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the glyph falling under the given point, expressed in the given container’s coordinate system.
 
-#### Discussion
+## Discussion
 
 If no glyph is under `point`, the nearest glyph is returned, where nearest is defined according to the requirements of selection by mouse. Clients who wish to determine whether the the point actually lies within the bounds of the glyph returned should follow this with a call to [`boundingRect(forGlyphRange:in:)`](./boundingrect%28forglyphrange,in%29.md) and test whether the point falls in the rectangle returned by that method. If `partialFraction` is non-NULL, it returns by reference the fraction of the distance between the location of the glyph returned and the location of the next glyph.
 

@@ -19,7 +19,7 @@ var request: URLRequest { get }
 @property (copy, readonly) NSURLRequest * request;
 ```
 
-#### Return Value
+## Return Value
 
 The URL request that initiated the receiver’s download.
 

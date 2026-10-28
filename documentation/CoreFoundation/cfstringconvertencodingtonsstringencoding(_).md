@@ -25,11 +25,11 @@ func CFStringConvertEncodingToNSStringEncoding(_ encoding: CFStringEncoding) -> 
 extern unsigned long CFStringConvertEncodingToNSStringEncoding(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The Cocoa encoding (of type [`NSStringEncoding`](../Foundation/nsstringencoding.md)) that is closest to the Core Foundation encoding `encoding`. The behavior is undefined if an invalid string encoding is passed.
 
-#### Discussion
+## Discussion
 
 The [`CFStringConvertNSStringEncodingToEncoding(_:)`](./cfstringconvertnsstringencodingtoencoding%28_%29.md) function is complementary to this function.
 

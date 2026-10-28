@@ -5,13 +5,13 @@
 
 Released July 24, 2023 — Version 16.6 (18615.3.12)
 
-#### Overview
+## Overview
 
 Safari 16.6 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.6, and iOS 16.6.
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed using `currentcolor` with `color-mix()`.
 - Fixed content at `block-start` edge to have their trimmed margins reflected in the computed style.
@@ -22,15 +22,15 @@ Safari 16.6 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed container query length units to use the content box instead of the border box.
 - Fixed serializing properties directly in the parent group rule only for the first nested style rule.
 
-##### Forms
+### Forms
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the value not updating on `<meter>` and `<progress>` elements.
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `putImageData` to draw on the correct canvas.
 

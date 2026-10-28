@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceFlags
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceFlags property has an OSNumber value that specifies the current value of the interface flags. The flag constants are defined in bsd/net/if.h.
 

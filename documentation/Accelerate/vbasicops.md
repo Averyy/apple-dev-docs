@@ -5,7 +5,7 @@
 
 Perform basic arithmetic and logical functions on 128-bit vectors.
 
-#### Overview
+## Overview
 
 vBasicOps.h declares a set of basic arithmetic and logical functions on 128-bit vectors, using the integer types from vecLibTypes.h.
 

@@ -21,7 +21,7 @@ A calendar that tracks changes to user’s preferred calendar.
 static var autoupdatingCurrent: Calendar { get }
 ```
 
-#### Discussion
+## Discussion
 
 If mutated, this calendar will no longer track the user’s preferred calendar.
 

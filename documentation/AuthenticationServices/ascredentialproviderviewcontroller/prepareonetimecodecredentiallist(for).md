@@ -27,9 +27,9 @@ func prepareOneTimeCodeCredentialList(for serviceIdentifiers: [ASCredentialServi
 
 - [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
-#### Overview
+## Overview
 
-#### Discussion
+## Discussion
 
 The system calls this method to tell your extension’s view controller to prepare a list of OTPs to present. After calling this method, the system presents the view controller to the person.
 

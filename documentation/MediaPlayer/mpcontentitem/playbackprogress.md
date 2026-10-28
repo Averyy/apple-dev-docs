@@ -24,7 +24,7 @@ var playbackProgress: Float { get set }
 @property (nonatomic, assign) float playbackProgress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property ranges from `0.0` to `1.0`. A value `0.0` indicates that the media item hasn’t played, while `1.0` indicates that the media item has completely played. The default value is `–1.0` indicates that the progress indicator isn’t displayed. The system displays a progress indicator automatically if this property has a value between `0.0` and `1.0`.
 

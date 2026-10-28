@@ -21,7 +21,7 @@ var style: CPAlertAction.Style { get }
 @property (nonatomic, assign, readonly) CPAlertActionStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The combination of [`style`](./style-swift.property.md) and the template type, [`CPActionSheetTemplate`](../cpactionsheettemplate.md) or [`CPAlertTemplate`](../cpalerttemplate.md), determines the appearance of the action button.
 

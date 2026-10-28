@@ -23,7 +23,7 @@ class NSCoreDataCoreSpotlightDelegate
 @interface NSCoreDataCoreSpotlightDelegate : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Core Spotlight integration is only available for persistent stores that have a store type of [`sqlite`](./nspersistentstore/storetype/sqlite.md), and which use persistent history tracking. For more information, see [Consuming relevant store changes](./consuming-relevant-store-changes.md).
 

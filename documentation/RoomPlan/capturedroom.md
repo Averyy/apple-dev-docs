@@ -21,7 +21,7 @@ struct CapturedRoom
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 This structure represents the post-processed result of the room-scanning process.
 

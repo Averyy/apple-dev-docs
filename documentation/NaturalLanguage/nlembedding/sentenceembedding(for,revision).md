@@ -25,7 +25,7 @@ class func sentenceEmbedding(for language: NLLanguage, revision: Int) -> NLEmbed
 + (NLEmbedding *) sentenceEmbeddingForLanguage:(NLLanguage) language revision:(NSUInteger) revision;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NLEmbedding`](../nlembedding.md) if available, otherwise `nil`.
 

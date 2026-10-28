@@ -20,7 +20,7 @@ var components: [Any]? { get }
 @property (copy, readonly, nullable) NSArray * components;
 ```
 
-#### Return Value
+## Return Value
 
 The data components of the receiver. See [`PortMessage`](../portmessage.md) for more information.
 

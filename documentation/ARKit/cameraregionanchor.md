@@ -15,7 +15,7 @@ Represents a region in space for capturing a camera stream.
 struct CameraRegionAnchor
 ```
 
-#### Overview
+## Overview
 
 `CameraRegionAnchor` requires the [`Camera Region access`](../BundleResources/entitlements/com.apple.developer.arkit.camera-region.allow.md) entitlement.
 

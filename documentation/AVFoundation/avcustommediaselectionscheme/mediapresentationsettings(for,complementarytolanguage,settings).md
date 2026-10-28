@@ -25,7 +25,7 @@ func mediaPresentationSettings(for selector: AVMediaPresentationSelector, comple
 - (NSArray<AVMediaPresentationSetting *> *) mediaPresentationSettingsForSelector:(AVMediaPresentationSelector *) selector complementaryToLanguage:(NSString *) language settings:(NSArray<AVMediaPresentationSetting *> *) settings;
 ```
 
-#### Discussion
+## Discussion
 
 If the content is authored to provide a collection of AVMediaSelectionOptions that include one or more with all of the combinations of media characteristics of the specified AVMediaPresentationSettings together with all of the settings of the specified AVMediaPresentationSelector, this method will return all of the settings for that selector. However, if one or more of the available combinations are not possessed by any of the AVMediaSelectionOptions, it will return fewer.
 

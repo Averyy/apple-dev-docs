@@ -25,7 +25,7 @@ func CFBundleCopyExecutableArchitectures(_ bundle: CFBundle!) -> CFArray!
 extern CFArrayRefCFBundleCopyExecutableArchitectures(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 If the bundle’s executable exists and is a Mach-O file, returns an array of CFNumbers whose values are integers representing the architectures the file provides. Possible values are listed in [Architecture Types](./api-1537096-architecture-types.md). If the executable is not a Mach-O file, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

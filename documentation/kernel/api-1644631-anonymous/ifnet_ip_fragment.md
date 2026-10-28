@@ -13,7 +13,7 @@
 IFNET_IP_FRAGMENT = 0x00000010
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will fragment IP packets.
 

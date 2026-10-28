@@ -15,7 +15,7 @@ Attributes that describe a Game Center leaderboard image v2 resource.
 object GameCenterLeaderboardImageV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - assetDeliveryState:
 - fileName:

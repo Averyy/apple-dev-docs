@@ -20,7 +20,7 @@ An archive of assets that the system downloads together.
 @interface BAAssetPack : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of this class can be invalidated when the asset pack that it represents is updated on the server.
 

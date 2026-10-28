@@ -16,7 +16,7 @@ The notification by this name fires when system "SystemLoadAdvisory" status chan
 #define kIOSystemLoadAdvisoryNotifyName
 ```
 
-#### Discussion
+## Discussion
 
 Pass this string as an argument to register via notify(3). You can query SystemLoadAdvisory state via notify_get_state() when this notification fires - this is more efficient than calling IOGetSystemLoadAdvisory(), and returns an identical combined SystemLoadAdvisory value.
 

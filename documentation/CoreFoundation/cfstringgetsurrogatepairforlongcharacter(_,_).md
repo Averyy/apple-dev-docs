@@ -25,7 +25,7 @@ func CFStringGetSurrogatePairForLongCharacter(_ character: UTF32Char, _ surrogat
 static Boolean CFStringGetSurrogatePairForLongCharacter(UTF32Char character, UniChar *surrogates);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `character` is mapped to a surrogate pair, otherwise `false`.
 

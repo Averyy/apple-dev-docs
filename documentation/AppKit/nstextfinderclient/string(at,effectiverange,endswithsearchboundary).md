@@ -19,11 +19,11 @@ optional func string(at characterIndex: Int, effectiveRange outRange: NSRangePoi
 - (NSString *) stringAtIndex:(NSUInteger) characterIndex effectiveRange:(NSRangePointer) outRange endsWithSearchBoundary:(BOOL *) outFlag;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the found string.
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for more information.
 

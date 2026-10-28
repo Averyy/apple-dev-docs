@@ -9,7 +9,7 @@ Queries the localized content of custom product pages (CPPs).
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns locale details for custom product pages. For each language version, the response returns the metadata that Apple Ads will show (including the localized `appName`, `subTitle`, `promotionalText`, and `shortDescription`) along with asset references organized by device class in the `assetsByDevice` field.
 
@@ -21,9 +21,9 @@ Filter on `productPageId` to retrieve the locale details for one custom product 
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -42,11 +42,11 @@ Keep the following constraints in mind when querying locale details:
 | All locales by default | Omitting `languageCode` returns all locales configured for the product page. |
 | assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
 
-#### Payload Examples
+## Payload Examples
 
 **All Locales for a Page**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/product-pages/locale-details/query
@@ -62,7 +62,7 @@ POST /v1/product-pages/locale-details/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -128,7 +128,7 @@ POST /v1/product-pages/locale-details/query
 
 **Specific Language**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/product-pages/locale-details/query
@@ -149,7 +149,7 @@ POST /v1/product-pages/locale-details/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

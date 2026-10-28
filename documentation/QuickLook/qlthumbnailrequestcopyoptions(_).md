@@ -21,15 +21,15 @@ func QLThumbnailRequestCopyOptions(_ thumbnail: QLThumbnailRequest!) -> Unmanage
 extern CFDictionaryRefQLThumbnailRequestCopyOptions(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the options that the client specified for the thumbnail request. See `General Thumbnail Options` for supported options. You should explicitly release the dictionary when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 The client sets options in the thumbnail request to give hints to the generator. For macOS 10.5, no options are supported. You should explicitly release the dictionary when it’s no longer needed.
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

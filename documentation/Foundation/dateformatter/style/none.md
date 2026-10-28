@@ -23,7 +23,7 @@ case none
 NSDateFormatterNoStyle
 ```
 
-#### Discussion
+## Discussion
 
 Specifies no style.
 

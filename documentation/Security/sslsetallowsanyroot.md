@@ -17,11 +17,11 @@ Specifies whether root certificates from unrecognized certification authorities 
 OSStatus SSLSetAllowsAnyRoot(SSLContextRef context, Boolean anyRoot);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The system maintains a set of root certificates signed by known, trusted root CAs. When the `anyRoot` flag is `true`, Secure Transport does not return an error if one of the following two conditions occurs:
 

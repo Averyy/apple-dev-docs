@@ -8,7 +8,7 @@ Build your app for all Apple platforms using the Swift programming language and 
 
 ![A SwiftUI app running in macOS, iPadOS, and iOS.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/landmarks-app-article-hero@2x.png)
 
-#### Assemble your app’s core content
+## Assemble your app’s core content
 
 When someone launches your app, your app needs to initialize itself, prepare its interface, check in with the system, begin its main event loop, and start handling events as quickly as possible. When you build your app using SwiftUI, you initialize your app’s custom data and SwiftUI handles the rest.
 
@@ -48,7 +48,7 @@ struct MyDocApp: App {
 
 SwiftUI creates the app structure at launch time, so it’s the only object guaranteed to be present at startup. At startup, initialize the data structures you need to display your app’s initial interface. Keep your initialization code fast to minimize any delays in presenting your interface. If needed, move any noncritical work to background tasks that can finish after your app’s UI appears.
 
-#### Declare your interface
+## Declare your interface
 
 [Creating an interface](../SwiftUI/declaring-a-custom-view.md) involves telling SwiftUI what views you want to include in each scene, how you want them arranged, and what data each one contains. SwiftUI uses your declarations to build and manage your app’s actual interface. With this approach, your focus stays on [your app’s data](./swiftui.md#Make-data-driven-changes) and making sure that data is correct. SwiftUI assumes responsibility for your interface and making sure it stays consistent with your data.
 
@@ -72,7 +72,7 @@ struct LibraryItemView: View {
 }
 ```
 
-#### Preview your content live
+## Preview your content live
 
 To help you design your views, Xcode provides intuitive design tools to [show you what you’re building](../Xcode/adding-previews-to-your-interface-files.md) while you build it. As you edit the code for your view, Xcode updates the preview next to your code
 to reflect the changes you made. This immediate feedback lets you see if those changes match your expectations.
@@ -81,7 +81,7 @@ to reflect the changes you made. This immediate feedback lets you see if those c
 
 Xcode displays previews only when a source file includes a [preview macro](../SwiftUI/previews-in-xcode.md). This macro tells Xcode what view to create and how to configure it. You can incorporate test data into your previews, and you can configure multiple previews with different content or configurations. You can even see your previews on different device types and with different system appearance settings.
 
-#### Make data-driven changes
+## Make data-driven changes
 
 In SwiftUI, your app’s data model is the source of truth, and the way you modify that data drives your app’s behavior. When building your app’s interface, think about the types of data each view needs. A view might have properties that refer to part of your app’s data model, or have properties that store state information such as the current selection. The [wrappers](../SwiftUI/model-data.md) you apply to each property declaration tell SwiftUI how to respond when the data in the property changes.
 
@@ -126,7 +126,7 @@ struct CategoryView: View {
 
 The [Destination Video](../visionOS/destination-video.md) sample demonstrates how you use data to drive interface changes in a multiplatform app. The app uses SwiftUI to support iOS, iPadOS, macOS, tvOS, and visionOS using the same set of views and controls. See how you can build your app once and deploy it on multiple platforms.
 
-#### Handle events and interactions
+## Handle events and interactions
 
 Interactions with your app can come from a variety of sources. On a Mac, people interact with your app primarily using the mouse and keyboard, but they can also use the trackpad of a MacBook Pro, an input tablet, or other input devices. On iPad, people interact by touching the screen, but can also interact with apps using Apple Pencil or a Magic Keyboard. SwiftUI takes all of the events coming from the system and distributes them to the views of your interface and your event-handling code.
 
@@ -154,7 +154,7 @@ SwiftUI also supports many other types of events that you might need to support,
 - [Focus](../SwiftUI/focus.md)-related events that aid navigation and selection
 - [System events](../SwiftUI/system-events.md) to open URLs and user activity objects, handle background tasks, and import and export transferable data.
 
-#### Explore other features
+## Explore other features
 
 SwiftUI offers additional features to help you create the features you want. Use these features to differentiate your app’s content.
 

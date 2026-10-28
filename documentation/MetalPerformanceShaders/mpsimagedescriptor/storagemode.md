@@ -24,7 +24,7 @@ var storageMode: MTLStorageMode { get set }
 @property (nonatomic, readwrite) MTLStorageMode storageMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLStorageMode.shared`](../../Metal/mtlstoragemode/shared.md).
 

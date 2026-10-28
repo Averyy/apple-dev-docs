@@ -15,7 +15,7 @@ The distance provided in meters or the longest distance derived from the center 
 get radius(): number;
 ```
 
-#### Discussion
+## Discussion
 
 When fetching points of interest with a region, you may compare this value with [`MaxRadius`](../pointsofinterestsearch/maxradius.md) to determine if this region is larger than the maximum available radius for a points-of-interest search.
 

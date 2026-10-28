@@ -21,7 +21,7 @@ A handle passed by the plug-in to the authorization engine when creating an inst
 typedef void * AuthorizationMechanismRef;
 ```
 
-#### Discussion
+## Discussion
 
 Your [`MechanismCreate`](./authorizationplugininterface/mechanismcreate.md) function assigns this value and returns it to the authorization engine. The authorization engine passes this reference back to you in any subsequent calls to your [`MechanismInvoke`](./authorizationplugininterface/mechanisminvoke.md), [`MechanismDeactivate`](./authorizationplugininterface/mechanismdeactivate.md), and [`MechanismDestroy`](./authorizationplugininterface/mechanismdestroy.md) functions.
 

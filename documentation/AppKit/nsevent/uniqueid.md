@@ -19,7 +19,7 @@ var uniqueID: UInt64 { get }
 @property (readonly) unsigned long long uniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 Also known as tool ID, this is a unique number recorded in the chip inside every pointing device. The unique ID makes it possible to assign a specific pointing device to a specific tablet. You can also use it to “sign” documents or to restrict access to document layers to a specific pointing device. This method is valid for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events.
 

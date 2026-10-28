@@ -19,7 +19,7 @@ A tool for selecting stroked lines and shapes in a canvas view.
 struct PKLassoTool
 ```
 
-#### Overview
+## Overview
 
 A [`PKLassoTool`](./pklassotool-swift.struct.md) object supports the selection of content on a [`PKCanvasView`](./pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
 

@@ -16,7 +16,7 @@ Is notification on?
 Boolean (*NotificationIsOn)(IOFireWireLibIRMAllocationRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if notifications for this IRMAllocation are enabled
 

@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_AERC_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 AERC bit definition.
 

@@ -21,7 +21,7 @@ A type that represents plain text encoded as UTF-16 with an optional BOM.
 extern UTType * const UTTypeUTF16ExternalPlainText;
 ```
 
-#### Discussion
+## Discussion
 
 If the bill of materials isn’t present, the encoding uses “external byte order (big-endian),
 

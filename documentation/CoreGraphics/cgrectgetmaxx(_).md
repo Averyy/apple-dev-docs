@@ -25,7 +25,7 @@ func CGRectGetMaxX(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetMaxX(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The largest value of the x-coordinate for the rectangle.
 

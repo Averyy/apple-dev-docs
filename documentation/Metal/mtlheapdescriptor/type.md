@@ -24,7 +24,7 @@ var type: MTLHeapType { get set }
 @property (nonatomic, readwrite) MTLHeapType type;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value is [`MTLHeapType.automatic`](../mtlheaptype/automatic.md).
 

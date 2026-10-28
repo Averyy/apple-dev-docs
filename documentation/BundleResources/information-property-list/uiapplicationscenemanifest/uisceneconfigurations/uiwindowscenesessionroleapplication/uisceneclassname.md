@@ -16,7 +16,7 @@ The name of the scene class you want UIKit to instantiate.
 - **Name**: `UISceneClassName` (Class Name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Specify [`UIWindowScene`](../../../../../UIKit/uiwindowscene.md) for scenes meant for your app or an external display. Don’t specify [`UIScene`](../../../../../UIKit/uiscene.md).
 

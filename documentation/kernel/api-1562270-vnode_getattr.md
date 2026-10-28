@@ -15,11 +15,11 @@ Get vnode attributes.
 int vnode_getattr(vnode_t vp, struct vnode_attr *vap, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or an error code.
 
-#### Discussion
+## Discussion
 
 Desired attributes are set with VATTR_SET_ACTIVE and VNODE_ATTR* macros. Supported attributes are determined after call with VATTR_IS_SUPPORTED.
 

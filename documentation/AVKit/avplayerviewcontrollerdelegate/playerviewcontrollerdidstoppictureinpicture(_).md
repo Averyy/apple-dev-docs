@@ -27,7 +27,7 @@ optional func playerViewControllerDidStopPictureInPicture(_ playerViewController
 
 - [Adopting Picture in Picture in a standard player](../adopting-picture-in-picture-in-a-standard-player.md)
 
-#### Discussion
+## Discussion
 
 Don’t restore your app’s user interface in your implementation of this method. Instead, do it in the [`playerViewController(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)`](./playerviewcontroller%28_,restoreuserinterfaceforpictureinpicturestopwithcompletionhandler%29.md) method.
 

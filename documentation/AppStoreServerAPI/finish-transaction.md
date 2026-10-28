@@ -14,7 +14,7 @@ Notifies the App Store server that your system has finished processing the custo
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 If you manage entitlement logic on your server, your server can call `Finish Transaction` after it finishes providing the customer with the new content. If you call [`finish()`](../StoreKit/transaction/finish%28%29.md) in your app, there’s no need to call the `Finish Transaction` endpoint from your server.
 

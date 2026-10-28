@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.isneginf
 
-**isneginf(*a: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return a boolean array indicating which elements are negative infinity.
+```python
+isneginf(a: array, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Return a boolean array indicating which elements are negative infinity.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**stream** (*StreamOrDevice*) – Optional stream or device.
+**Parameters:**
 
-Returns:
-The boolean array indicating which elements are negative infinity.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **stream** (*StreamOrDevice*) – Optional stream or device.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array indicating which elements are negative infinity.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

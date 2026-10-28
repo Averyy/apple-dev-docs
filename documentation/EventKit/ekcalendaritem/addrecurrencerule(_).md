@@ -29,7 +29,7 @@ func addRecurrenceRule(_ rule: EKRecurrenceRule)
 - [Creating a recurring event](../creating-a-recurring-event.md)
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 The implementation only supports a single recurrence rule. Adding a recurrence rule replaces the single recurrence rule.
 

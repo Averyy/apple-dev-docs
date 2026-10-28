@@ -21,7 +21,7 @@ Creates a USDStageComponent in manual mode.
 init(allowsHitTesting: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 In manual mode, you control when rendering occurs by calling [`render(_:to:at:)`](./render%28_,to,at%29.md).
 

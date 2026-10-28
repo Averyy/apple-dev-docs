@@ -20,7 +20,7 @@ A workout session of any type.
 static var workout: AudioContext { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to donate entities relevant to any workout, regardless of activity type or intensity.
 

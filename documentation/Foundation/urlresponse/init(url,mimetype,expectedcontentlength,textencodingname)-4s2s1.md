@@ -25,11 +25,11 @@ init(url URL: URL, mimeType MIMEType: String?, expectedContentLength length: Int
 - (instancetype) initWithURL:(NSURL *) URL MIMEType:(NSString *) MIMEType expectedContentLength:(NSInteger) length textEncodingName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized URL response.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for [`URLResponse`](../urlresponse.md).
 

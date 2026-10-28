@@ -17,7 +17,7 @@ Repeat a flattened array along axis 0.
 static func repeated(_ array: MLXArray, count: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.repeated(MLXArray(0 ..< 4, [2, 2]), count: 4)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`repeated(_:count:axis:stream:)`](./repeated%28_,count,axis,stream%29.md)

@@ -21,7 +21,7 @@ The size of the container of the scrollable view.
 var containerSize: CGSize { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the size of the bounds of the scroll view subtracting any insets applied to the scroll view (like the safe area).
 

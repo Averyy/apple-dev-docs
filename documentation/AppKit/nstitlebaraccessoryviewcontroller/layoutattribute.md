@@ -19,7 +19,7 @@ var layoutAttribute: NSLayoutConstraint.Attribute { get set }
 @property NSLayoutAttribute layoutAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSLayoutConstraint.Attribute.bottom`](../../UIKit/nslayoutconstraint/attribute/bottom.md), which means that the accessory view should display below the title bar. You can also set this property to [`NSLayoutConstraint.Attribute.right`](../../UIKit/nslayoutconstraint/attribute/right.md) or (in apps linked on macOS 10.11 or later) [`NSLayoutConstraint.Attribute.left`](../../UIKit/nslayoutconstraint/attribute/left.md). All other values are invalid and will cause an assertion to be raised.
 

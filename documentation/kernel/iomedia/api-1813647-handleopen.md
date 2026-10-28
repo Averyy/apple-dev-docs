@@ -12,11 +12,11 @@ virtual bool handleOpen(
  void *access);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the open was successful, false otherwise.
 
-#### Overview
+## Overview
 
 The handleOpen method grants or denies permission to access this object to an interested client. The argument is an IOStorageAccess value that specifies the level of access desired -- reader or reader-writer.
 

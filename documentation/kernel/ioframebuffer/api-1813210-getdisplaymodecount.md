@@ -12,11 +12,11 @@ virtual IOItemCount getDisplayModeCount(
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A count of the display modes available.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return a count of the display modes available. This count should change unless a connection change is posted for the device indicated the framebuffer and/or display configuration has changed.
 

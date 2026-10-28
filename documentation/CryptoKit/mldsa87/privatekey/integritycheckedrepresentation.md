@@ -21,7 +21,7 @@ The integrity-checked data representation of the private key.
 var integrityCheckedRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 This representation is 64 bytes long, and contains the seed and a hash of the public key.
 

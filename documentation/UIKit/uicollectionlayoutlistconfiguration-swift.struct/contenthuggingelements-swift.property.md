@@ -19,7 +19,7 @@ A setting that determines which type of items tightly hug their content.
 var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingElements { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`supplementaryHeader`](./contenthuggingelements-swift.struct/supplementaryheader.md) in visionOS, and `[]` on all other platforms.
 

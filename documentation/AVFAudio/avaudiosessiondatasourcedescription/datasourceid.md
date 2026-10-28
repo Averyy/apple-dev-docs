@@ -24,7 +24,7 @@ var dataSourceID: NSNumber { get }
 @property (readonly) NSNumber * dataSourceID;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value of this property to assign a specific data source to some input or output within an audio session.
 

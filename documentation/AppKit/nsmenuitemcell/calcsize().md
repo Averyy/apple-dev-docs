@@ -19,7 +19,7 @@ func calcSize()
 - (void) calcSize;
 ```
 
-#### Discussion
+## Discussion
 
 The calculated values are cached for future use. This method also calculates the sizes of individual components of the cell’s menu item and caches those values.
 

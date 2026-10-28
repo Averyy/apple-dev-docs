@@ -24,7 +24,7 @@ var cubicTimingParameters: UICubicTimingParameters? { get }
 @property (nonatomic, readonly, nullable) UICubicTimingParameters * cubicTimingParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property and use it to provide your custom cubic timing information. If the value of the [`timingCurveType`](./timingcurvetype.md) property is [`UITimingCurveType.builtin`](../uitimingcurvetype/builtin.md), [`UITimingCurveType.cubic`](../uitimingcurvetype/cubic.md), or [`UITimingCurveType.composed`](../uitimingcurvetype/composed.md), you must return an object from this property. The object you return can specify one of the built-in UIKit curves, such as [`UIView.AnimationCurve.linear`](../uiview/animationcurve/linear.md), or it can specify a timing curve based on a custom Bézier path.
 

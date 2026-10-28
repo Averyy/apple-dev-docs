@@ -24,7 +24,7 @@ class func supportsDisbursements(using supportedNetworks: [PKPaymentNetwork], ca
 + (BOOL) supportsDisbursementsUsingNetworks:(NSArray<NSString *> *) supportedNetworks capabilities:(PKMerchantCapability) capabilities;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device can process disbursement requests using the specified payment networks and merchant capabilities; otherwise, [`false`](../../Swift/false.md).
 

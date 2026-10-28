@@ -12,11 +12,11 @@ virtual bool didYouWakeSystem(
  void ) __attribute__((deprecated));
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the driver's device woke the system and `false` otherwise.
 
-#### Overview
+## Overview
 
 Power management calls a power managed driver with this method to ask if its device is the one that just woke the system from sleep. If a device is capable of waking the system from sleep, its driver should implement `didYouWakeSystem` and return `true` if its device was responsible for waking the system.
 

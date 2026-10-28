@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether the value of the first argument is gr
 static func > (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This is the default implementation of the greater-than operator (`>`) for any type that conforms to `Comparable`.
 

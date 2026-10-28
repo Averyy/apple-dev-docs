@@ -5,11 +5,11 @@
 
 Create and run activity summary queries.
 
-#### Overview
+## Overview
 
 Use activity summary queries to read [`HKActivitySummary`](./hkactivitysummary.md) objects from the HealthKit store. Apps can display summary information using an activity ring view ([`HKActivityRingView`](../HealthKitUI/hkactivityringview.md) on iOS or [`WKInterfaceActivityRing`](../WatchKit/wkinterfaceactivityring.md) on watchOS).
 
-##### Create the Predicate
+### Create the Predicate
 
 Start by creating a predicate for summaries over the previous week.
 
@@ -34,7 +34,7 @@ let summariesWithinRange = HKQuery.predicate(forActivitySummariesBetweenStart: s
                                              end: endDateComponents)
 ```
 
-##### Create the Query
+### Create the Query
 
 Then create an activity summary query by calling the [`init(predicate:resultsHandler:)`](./hkactivitysummaryquery/init%28predicate,resultshandler%29.md) initializer.
 
@@ -61,7 +61,7 @@ let query = HKActivitySummaryQuery(predicate: summariesWithinRange) { (query, su
 
 The query returns an array of activity summary objects. The results handler should check for errors before processing the summaries. It should also dispatch updates to the user interface back to the main thread.
 
-##### Run the Query
+### Run the Query
 
 After instantiating the query, call the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 

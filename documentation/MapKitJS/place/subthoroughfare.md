@@ -15,7 +15,7 @@ The number on the street at the place.
 subThoroughfare: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`subThoroughfare`](./subthoroughfare.md) for an address in Golden Gate Park in San Francisco, California, is `"1054"`.
 

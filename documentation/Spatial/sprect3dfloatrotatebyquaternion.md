@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatRotateByQuaternion(SPRect3DFloat rect, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s rotated by the specified quaternion around the origin.
 

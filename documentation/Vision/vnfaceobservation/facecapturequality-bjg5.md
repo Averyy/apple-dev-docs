@@ -20,7 +20,7 @@ A value that indicates the quality of the face capture.
 var faceCaptureQuality: Float? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The capture quality of the face allows you to compare the quality of the face in terms of its capture attributes: lighting, blur, and prime positioning. Use this value to compare the capture quality of a face against other captures of the same face in a specified set.
 

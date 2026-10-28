@@ -19,7 +19,7 @@ A representation of a resource that a webpage previously visited.
 struct Item
 ```
 
-#### Overview
+## Overview
 
 Two items with equal titles, urls, and initial urls may not necessarily be equal to one another.
 

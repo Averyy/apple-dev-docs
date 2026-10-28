@@ -21,7 +21,7 @@ Determines the response to an authentication challenge.
 mutating func decideAuthenticationChallengeDisposition(for challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 
-#### Return Value
+## Return Value
 
 The option to use to handle the challenge, and the credential to use for authentication when the disposition is `URLSession/AuthChallengeDisposition/useCredential`.
 

@@ -19,7 +19,7 @@ func firstKeyView() -> NSView!
 - (NSView *) firstKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the first view in the keyboard loop of your custom [`NSView`](../../AppKit/nsview.md) object.
 

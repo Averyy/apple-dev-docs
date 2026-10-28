@@ -23,7 +23,7 @@ static var forwardForInference: MLCExecutionOptions { get }
 MLCExecutionOptionsForwardForInference
 ```
 
-#### Discussion
+## Discussion
 
 If you include this option and execute a training graph using one of the `execute` methods, such as [`execute(inputsData:lossLabelsData:lossLabelWeightsData:batchSize:options:completionHandler:)`](../mlctraininggraph/execute%28inputsdata,losslabelsdata,losslabelweightsdata,batchsize,options,completionhandler%29.md), the framework only executes the forward pass of the training graph, and it executes that forward pass for inference only.
 

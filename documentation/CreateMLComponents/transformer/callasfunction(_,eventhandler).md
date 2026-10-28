@@ -27,7 +27,7 @@ func callAsFunction(_ input: Self.Input, eventHandler: EventHandler? = nil) asyn
 func callAsFunction<S>(_ input: S, eventHandler: EventHandler? = nil) async throws -> [Self.Output] where S : Sequence, Self.Input == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 An output produced by applying the transformer to the input.
 

@@ -21,7 +21,7 @@ The maximum number of iterations.
 var maximumIterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 More iterations will produce better models as long as there is no over-fitting. Over-fitting happens when the dropout probability is too low or there is not enough training data.
 

@@ -20,7 +20,7 @@ An option that resolves an entity from the specified name within the scene of th
 case entityNamed(String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Consider unique entity names when resolving with this option.
 

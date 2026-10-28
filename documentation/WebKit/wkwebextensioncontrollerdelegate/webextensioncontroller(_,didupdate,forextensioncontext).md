@@ -23,7 +23,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, did
 - (void) webExtensionController:(WKWebExtensionController *) controller didUpdateAction:(WKWebExtensionAction *) action forExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when an action’s properties are updated and should be reflected in the app’s user interface.
 

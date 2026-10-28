@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatScaleBySize(SPVector3DFloat vector, SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that’s scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a vector with elements scaled by the specified size.
 

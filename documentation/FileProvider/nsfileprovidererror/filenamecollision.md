@@ -18,7 +18,7 @@ An error indicating that an item with the same name already exists in the same d
 static var filenameCollision: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`fileProviderErrorForCollision(with:)`](../../Foundation/nserror/fileprovidererrorforcollision%28with%29.md) method to create properly formatted [`filenameCollision`](./filenamecollision.md) errors.
 

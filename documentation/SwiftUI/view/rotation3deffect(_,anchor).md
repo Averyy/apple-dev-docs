@@ -16,11 +16,11 @@ Rotates the view’s content by the specified 3D rotation value.
 nonisolated func rotation3DEffect(_ rotation: Rotation3D, anchor: UnitPoint3D = .center) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with rotated content.
 
-#### Discussion
+## Discussion
 
 This modifier rotates the view’s content without changing the view’s frame. The following code displays a 3D model with a rotation of 45° about the y-axis using the default anchor point at the center of the view:
 

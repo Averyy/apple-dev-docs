@@ -24,7 +24,7 @@ var isOpaque: Bool { get set }
 @property (getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). If your app draws completely opaque content that fills the layer’s bounds, setting this property to [`true`](../../Swift/true.md) lets the system optimize the rendering behavior for the layer. Specifically, when the layer creates the backing store for your drawing commands, Core Animation omits the alpha channel of that backing store. Doing so can improve the performance of compositing operations. If you set the value of this property to [`true`](../../Swift/true.md), you must fill the layer’s bounds with opaque content.
 

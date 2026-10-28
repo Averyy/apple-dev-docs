@@ -22,7 +22,7 @@ var sourceFrame: VTFrameProcessorFrame { get }
 @property (nonatomic, readonly) VTFrameProcessorFrame * sourceFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This must be a non-nil value.
 

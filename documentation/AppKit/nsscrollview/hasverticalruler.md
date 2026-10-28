@@ -19,7 +19,7 @@ var hasVerticalRuler: Bool { get set }
 @property BOOL hasVerticalRuler;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this method is [`true`](../../Swift/true.md), the scroll view allocates a vertical ruler the first time it’s needed.
 

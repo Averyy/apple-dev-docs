@@ -22,7 +22,7 @@ optional func collectionView(_ collectionView: UICollectionView, dropSessionDidE
 - (void) collectionView:(UICollectionView *) collectionView dropSessionDidExit:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when dragged content exits the bounds rectangle of the specified collection view. The method isn’t called again until the dragged content enters the collection view’s bounds (triggering a call to the [`collectionView(_:dropSessionDidEnter:)`](./collectionview%28_,dropsessiondidenter%29.md) method) and exits again.
 

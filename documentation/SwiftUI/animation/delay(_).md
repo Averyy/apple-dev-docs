@@ -21,11 +21,11 @@ Delays the start of the animation by the specified number of seconds.
 func delay(_ delay: TimeInterval) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An animation with a delayed start.
 
-#### Discussion
+## Discussion
 
 Use this method to delay the start of an animation. For example, the following code animates the height change of two capsules. Animation of the first [`Capsule`](../capsule.md) begins immediately. However, animation of the second one doesn’t begin until a half second later.
 

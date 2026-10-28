@@ -13,7 +13,7 @@ url: https://github.com/apple/container/blob/main/docs/container-system-config.m
 
 For a guided walk-through on setting default values, see [Container system config tutorial](./tutorials/container-system-config-tutorial.md). 
 
-Source of truth: [`Sources/ContainerPersistence/ContainerSystemConfig.swift`](../Sources/ContainerPersistence/ContainerSystemConfig.swift). 
+Source of truth: [`Sources/ContainerPersistence/ContainerSystemConfig.swift`](https://github.com/apple/container/blob/main/Sources/ContainerPersistence/ContainerSystemConfig.swift). 
 
 ## Viewing your configuration
 
@@ -105,7 +105,7 @@ Defaults applied when `container run` / `container create` is invoked without `-
 
 ## `[kernel]`
 
-Guest kernel used when launching container VMs. Defaults change per release as kernels are bumped — check the [source](../Sources/ContainerPersistence/ContainerSystemConfig.swift) for current values.
+Guest kernel used when launching container VMs. Defaults change per release as kernels are bumped — check the [source](https://github.com/apple/container/blob/main/Sources/ContainerPersistence/ContainerSystemConfig.swift) for current values.
 
 | Key          | Type      | Default                                                                                                | Description                                                                  |
 |--------------|-----------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -161,7 +161,7 @@ All units are **binary** (powers of 1024), even when written with `kb`/`mb`/`gb`
 
 A bare integer (e.g. `"2048"`) parses as bytes.
 
-Source: [`Sources/ContainerPersistence/Measurement+Parse.swift`](../Sources/ContainerPersistence/Measurement+Parse.swift).
+Source: [`Sources/ContainerPersistence/Measurement+Parse.swift`](https://github.com/apple/container/blob/main/Sources/ContainerPersistence/Measurement+Parse.swift).
 
 ### `CIDRv4` / `CIDRv6`
 

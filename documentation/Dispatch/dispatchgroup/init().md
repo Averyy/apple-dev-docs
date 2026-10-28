@@ -25,11 +25,11 @@ init()
 extern dispatch_group_tdispatch_group_create();
 ```
 
-#### Return Value
+## Return Value
 
 The newly created group. In Objective-C returns `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 This function creates a new group with which block objects can be associated (by using the [`dispatch_group_async`](../dispatch_group_async.md) function). The dispatch group maintains a count of its outstanding associated tasks, incrementing the count when a new task is associated and decrementing it when a task completes. Functions such as [`dispatch_group_notify`](../dispatch_group_notify.md) and [`dispatch_group_wait`](../dispatch_group_wait.md) use that count to allow your application to determine when all tasks associated with the group have completed. At that time, your application can take any appropriate action.
 

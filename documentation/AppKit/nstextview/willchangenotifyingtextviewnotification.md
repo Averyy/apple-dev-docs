@@ -19,7 +19,7 @@ class let willChangeNotifyingTextViewNotification: NSNotification.Name
 extern NSNotificationName NSTextViewWillChangeNotifyingTextViewNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification allows observers to reregister themselves for the new text view. Methods such as [`removeTextContainer(at:)`](../nslayoutmanager/removetextcontainer%28at%29.md), [`textContainerChangedTextView(_:)`](../nslayoutmanager/textcontainerchangedtextview%28_%29.md), and [`insertTextContainer(_:at:)`](../nslayoutmanager/inserttextcontainer%28_,at%29.md) cause this notification to be posted.
 

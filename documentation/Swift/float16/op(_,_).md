@@ -21,7 +21,7 @@ Returns the quotient of dividing the first value by the second, rounded to a rep
 static func / (lhs: Float16, rhs: Float16) -> Float16
 ```
 
-#### Discussion
+## Discussion
 
 The division operator (`/`) calculates the quotient of the division if `rhs` is nonzero. If `rhs` is zero, the result of the division is infinity, with the sign of the result matching the sign of `lhs`.
 

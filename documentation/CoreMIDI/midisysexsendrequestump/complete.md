@@ -25,7 +25,7 @@ var complete: DarwinBoolean
 Boolean complete;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `true` at any time to abort transmission. The implementation sets the value to `true` after it sends all data.
 

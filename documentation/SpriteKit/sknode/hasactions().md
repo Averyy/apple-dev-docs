@@ -25,7 +25,7 @@ func hasActions() -> Bool
 - (BOOL) hasActions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the node has any executing actions; otherwise [`false`](../../Swift/false.md).
 

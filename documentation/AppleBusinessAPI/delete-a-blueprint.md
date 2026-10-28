@@ -9,7 +9,7 @@ Delete a Blueprint from an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

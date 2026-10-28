@@ -24,7 +24,7 @@ class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Ope
 + (NSPredicate *) predicateForWorkoutActivitiesWithOperatorType:(NSPredicateOperatorType) operatorType quantityType:(HKQuantityType *) quantityType averageQuantity:(HKQuantity *) averageQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches workouts with the specified average quantity. To use this predicate, call [`predicateForWorkouts(activityPredicate:)`](./predicateforworkouts%28activitypredicate%29.md) to wrap this predicate inside a workout predicate. You can then use the workout predicate in your query.
 

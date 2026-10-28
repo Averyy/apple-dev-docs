@@ -20,7 +20,7 @@ Recommended pixel buffer attributes for optimal performance when using CMSampleB
 @property (readonly, nonnull) NSDictionary<NSString *,id> * recommendedPixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The returned dictionary does not contain all of the attributes needed for creating pixel buffers. Use `CVPixelBufferCreateResolvedAttributesDictionary()` to reconcile these attributes with the pixel buffer creation attributes.
 

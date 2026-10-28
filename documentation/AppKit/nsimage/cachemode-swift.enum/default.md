@@ -19,7 +19,7 @@ case `default`
 NSImageCacheDefault
 ```
 
-#### Discussion
+## Discussion
 
 Use the image rep’s default.
 

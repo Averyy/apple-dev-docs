@@ -20,7 +20,7 @@ var xmlData: Data { get }
 @property (copy, readonly) NSData * XMLData;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`xmlData(options:)`](./xmldata%28options%29.md) with an option of `NSXMLNodeOptionsNone`. The encoding used is based on the value returned from [`characterEncoding`](./characterencoding.md) or UTF-8 if no valid encoding is returned by that method.
 

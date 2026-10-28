@@ -17,7 +17,7 @@ A value to indicate the extension’s progress as it imports resources.
 var resourcesImportProgress: Progress { get }
 ```
 
-#### Discussion
+## Discussion
 
 Update this value in your implementation of [`importResources(at:request:)`](./importresources%28at,request%29.md) as you process files in the provided directory.
 

@@ -25,7 +25,7 @@ func zoomIn(_ sender: Any?)
 - (void) zoomIn:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Each invocation of `zoomIn` muliplies the scaling factor by the square root of 2.
 

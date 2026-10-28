@@ -24,7 +24,7 @@ var subtitleVisibility: MKFeatureVisibility { get set }
 @property (nonatomic) MKFeatureVisibility subtitleVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit shows the text when the user selects a marker.
 

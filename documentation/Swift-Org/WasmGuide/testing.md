@@ -10,11 +10,11 @@ framework: "Swift-Org/WasmGuide"
 
 Swift for WebAssembly supports both `swift-testing` and `XCTest` for writing test suites. Your project needs to have a `Package.swift` package manifest with test targets configured.
 
-#### Testing in JavaScript environments
+## Testing in JavaScript environments
 
 If you’re building a Wasm app that runs in JavaScript environments (browsers or Node.js), you can use JavaScriptKit’s testing utilities to run your tests directly in those environments. For detailed information on how to set up and run tests in JavaScript environments, please refer to the [JavaScriptKit Testing documentation](https://swiftpackageindex.com/swiftwasm/javascriptkit/documentation/javascriptkit/testing).
 
-#### Standalone testing with WASI
+## Standalone testing with WASI
 
 If you prefer to run tests in a standalone environment without JavaScript, you can use WasmKit as described below.
 
@@ -31,9 +31,9 @@ targets: [
 ]
 ```
 
-#### Running test suites
+## Running test suites
 
-##### Swift Development Snapshots
+### Swift Development Snapshots
 
 In Swift development snapshots, running `swift test --swift-sdk <wasm_swift_sdk_id>` is fully supported. When you have `jq` installed, you can run this command to compute Swift SDK ID automatically:
 
@@ -41,7 +41,7 @@ In Swift development snapshots, running `swift test --swift-sdk <wasm_swift_sdk_
 swift test --swift-sdk "$(swiftc -print-target-info | jq -r '.swiftCompilerTag')_wasm"
 ```
 
-##### Swift 6.2
+### Swift 6.2
 
 In Swift 6.2, `swift test` doesn’t know what WebAssembly environment you’d like to use to run your tests; building tests and running them are two separate steps. To build tests for WebAssembly, use the following command:
 
@@ -62,7 +62,7 @@ wasmkit run .build/debug/{YOURPACKAGE}PackageTests.wasm list --testing-library s
 wasmkit run .build/debug/{YOURPACKAGE}PackageTests.wasm --testing-library swift-testing --filter "FoodTruckTests.foodTruckExists"
 ```
 
-##### Code coverage
+### Code coverage
 
 You can also generate code coverage reports for your test suite when using development snapshots of the toolchain (not supported in Swift 6.2). To do this, you need to build your test suite with the `--enable-code-coverage` flag and the linker options `-Xlinker -lwasi-emulated-getpid`:
 

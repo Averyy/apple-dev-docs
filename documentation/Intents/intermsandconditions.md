@@ -22,7 +22,7 @@ class INTermsAndConditions
 @interface INTermsAndConditions : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INTermsAndConditions`](./intermsandconditions.md) object contains information about the terms and conditions that your company applies to users when handling restaurant reservations. Use this object to communicate the details of your company’s policies. The system presents your terms and conditions to the user through the built-in reservation interfaces. You create instances of this class when providing a response to a [`INGetAvailableRestaurantReservationBookingsIntent`](./ingetavailablerestaurantreservationbookingsintent.md) object.
 

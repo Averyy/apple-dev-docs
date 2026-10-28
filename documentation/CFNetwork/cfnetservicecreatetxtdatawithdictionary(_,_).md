@@ -26,17 +26,17 @@ func CFNetServiceCreateTXTDataWithDictionary(_ alloc: CFAllocator?, _ keyValuePa
 extern CFDataRefCFNetServiceCreateTXTDataWithDictionary(CFAllocatorRef alloc, CFDictionaryRef keyValuePairs);
 ```
 
-#### Return Value
+## Return Value
 
 A CFData object containing the flattened form of `keyValuePairs`, or `NULL` if the dictionary could not be flattened. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function flattens the key/value pairs in the dictionary specified by `keyValuePairs` into a CFDataRef suitable for passing to [`CFNetServiceSetTXTData(_:_:)`](./cfnetservicesettxtdata%28_,_%29.md). Note that this function is not a general purpose function for flattening CFDictionaryRefs.
 
 The keys in the dictionary referenced by `keyValuePairs` must be CFStringRefs and the values must be CFDataRefs. Any values that are CFStringRefs are converted to CFDataRefs representing the flattened UTF-8 bytes of the string. The types of the values are not encoded in the CFDataRefs, so any CFStringRefs that are converted to CFDataRefs remain CFDataRefs when the CFDataRef produced by this function is processed by [`CFNetServiceCreateDictionaryWithTXTData(_:_:)`](./cfnetservicecreatedictionarywithtxtdata%28_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

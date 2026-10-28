@@ -21,7 +21,7 @@ Returns a point that results from applying the specified projective transform.
 static SPPoint3D SPPoint3DApplyProjectiveTransform(SPPoint3D point, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from applying the specified projective transform.
 

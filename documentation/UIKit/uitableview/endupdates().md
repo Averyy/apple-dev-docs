@@ -23,7 +23,7 @@ func endUpdates()
 - (void) endUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`performBatchUpdates(_:completion:)`](./performbatchupdates%28_,completion%29.md) method instead of this one whenever possible.
 

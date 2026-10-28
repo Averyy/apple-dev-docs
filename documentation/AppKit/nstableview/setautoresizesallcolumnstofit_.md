@@ -17,7 +17,7 @@ Controls whether the table view proportionally resizes its columns to fit when i
 - (void) setAutoresizesAllColumnsToFit:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the difference in width is distributed among the table view’s table columns; if `flag` is [`false`](../../Swift/false.md), only the last column is resized to fit.
 

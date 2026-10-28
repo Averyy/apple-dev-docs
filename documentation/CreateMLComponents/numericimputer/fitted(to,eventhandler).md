@@ -21,7 +21,7 @@ Fits a numeric imputer to a sequence of elements.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) -> NumericImputer<Element>.Transformer where S : Sequence, S.Element == Element?
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

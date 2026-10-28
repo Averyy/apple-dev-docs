@@ -27,7 +27,7 @@ var selectedText: String? { get }
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 Return `nil` if no active selection exists.
 

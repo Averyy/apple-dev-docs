@@ -23,7 +23,7 @@ let kCTFontDesignerURLNameKey: CFString
 extern CFStringRef const kCTFontDesignerURLNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the designer URL name.
 

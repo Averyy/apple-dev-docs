@@ -12,11 +12,11 @@ virtual UInt32 getCommandFlags(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Return The current ORB flags.
 
-#### Overview
+## Overview
 
 Returns the current configuration flags set on this ORB.
 

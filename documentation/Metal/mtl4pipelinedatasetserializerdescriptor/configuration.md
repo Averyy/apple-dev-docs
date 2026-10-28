@@ -24,7 +24,7 @@ var configuration: MTL4PipelineDataSetSerializerConfiguration { get set }
 @property (nonatomic, readwrite) MTL4PipelineDataSetSerializerConfiguration configuration;
 ```
 
-#### Discussion
+## Discussion
 
 The configuration of the serialization process determines the mechanisms you use to serialize pipeline data sets.
 

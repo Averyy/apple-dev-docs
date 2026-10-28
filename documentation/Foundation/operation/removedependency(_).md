@@ -25,7 +25,7 @@ func removeDependency(_ op: Operation)
 - (void) removeDependency:(NSOperation *) op;
 ```
 
-#### Discussion
+## Discussion
 
 This method may change the `isReady` and `dependencies` properties of the receiver.
 

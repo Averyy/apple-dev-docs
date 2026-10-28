@@ -25,7 +25,7 @@ var intensity: CGFloat { get set }
 @property (nonatomic) CGFloat intensity;
 ```
 
-#### Discussion
+## Discussion
 
 The default intensity is `1.0`. Reducing the intensity fades out the contents of the material property, causing different effects depending on which visual property of an [`SCNMaterial`](../scnmaterial.md) object it represents:
 

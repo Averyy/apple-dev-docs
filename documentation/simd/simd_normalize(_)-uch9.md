@@ -16,11 +16,11 @@ func simd_normalize(_ q: simd_quatf) -> simd_quatf
 static simd_quatf simd_normalize(simd_quatf q);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized vector.
 
-#### Discussion
+## Discussion
 
 This function returns an undefined value if the supplied vector has zero length or is poorly scaled such that an intermediate computation overflows or underflows.
 

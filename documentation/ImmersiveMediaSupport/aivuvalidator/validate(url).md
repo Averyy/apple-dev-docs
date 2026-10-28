@@ -19,7 +19,7 @@ Validates the AIVU file given its URL. It throws an error message with error det
 static func validate(url: URL) async throws -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws an exception with error details, if any.
 

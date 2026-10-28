@@ -13,11 +13,11 @@ Initializes a download monitor to report progress for the specified download.
 ## Declaration
 
 ```swift
-@objc
-(initWithSourceURL:destinationURL:observedProgress:liveActivityAccessToken:) init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)
+@objc(initWithSourceURL:destinationURL:observedProgress:liveActivityAccessToken:)
+init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)
 ```
 
-#### Discussion
+## Discussion
 
 Generate an access token for the download by calling [`createAccessToken()`](./createaccesstoken%28%29.md).
 

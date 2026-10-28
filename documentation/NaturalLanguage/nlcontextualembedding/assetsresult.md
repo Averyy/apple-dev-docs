@@ -25,7 +25,7 @@ enum AssetsResult
 enum NLContextualEmbeddingAssetsResult : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The framework downloads models over-the-air, so check asset availability and download them if needed.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the publisher immediately sends a complet
 let completeImmediately: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the publisher finishes immediately after sending a subscription to the subscriber. If `false`, it never completes.
 

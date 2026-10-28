@@ -24,11 +24,11 @@ subscript(idx: Int) -> GKGoal { get }
 - (GKGoal *) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The goal at the specified index.
 
-#### Discussion
+## Discussion
 
 The order of goals in a behavior is undefined. However, you can use this method to enumerate all goals in a behavior.
 

@@ -25,7 +25,7 @@ func object_getClassName(_ obj: Any?) -> UnsafePointer<CChar>
 extern const char *object_getClassName(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class of which `obj` is an instance.
 

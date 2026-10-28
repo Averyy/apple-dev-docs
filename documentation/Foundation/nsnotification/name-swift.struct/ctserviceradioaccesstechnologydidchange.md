@@ -17,7 +17,7 @@ A notification that posts when radio access technology changes.
 static let CTServiceRadioAccessTechnologyDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s `object` is a string that represents the identifier of the service with changes to its radio access technology.  Use this identifier as the key in [`serviceCurrentRadioAccessTechnology`](../../../CoreTelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 

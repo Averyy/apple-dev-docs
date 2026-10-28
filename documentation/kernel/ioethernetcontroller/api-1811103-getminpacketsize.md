@@ -12,7 +12,7 @@ virtual IOReturn getMinPacketSize(
  UInt32 *minSize) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error code otherwise.
 

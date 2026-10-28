@@ -21,7 +21,7 @@ var maneuverState: CPManeuverState { get set }
 @property (nonatomic) CPManeuverState maneuverState;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property with the current [`CPManeuverState`](../cpmaneuverstate.md) based on how close the maneuver is and whether a person needs to act to execute the maneuver.
 

@@ -23,7 +23,7 @@ var isElementFullscreenEnabled: Bool { get set }
 @property (nonatomic, getter=isElementFullscreenEnabled) BOOL elementFullscreenEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this preference is [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ var exceptionList: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * exceptionList;
 ```
 
-#### Discussion
+## Discussion
 
 The pattern strings may contain ‘*’ characters as wildcards.
 

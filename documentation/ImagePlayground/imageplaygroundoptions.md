@@ -19,7 +19,7 @@ A type that stores the options that affect the image-generation process.
 struct ImagePlaygroundOptions
 ```
 
-#### Overview
+## Overview
 
 Create an instance of this structure and use it to specify the options you want to use when generating images. Apply these options to your SwiftUI sheet using the [`imagePlaygroundOptions(_:)`](../SwiftUI/view/imageplaygroundoptions%28_%29.md) modifier, or assign them to properties of the [`ImagePlaygroundViewController`](./imageplaygroundviewcontroller.md) or [`ImageCreator`](./imagecreator.md) type before generating any images.
 

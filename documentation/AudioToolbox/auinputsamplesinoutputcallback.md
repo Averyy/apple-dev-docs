@@ -24,15 +24,15 @@ typealias AUInputSamplesInOutputCallback = (UnsafeMutableRawPointer, UnsafePoint
 typedef void (*)(void *, const struct AudioTimeStamp *, double, double) __attribute__((nonblocking)) AUInputSamplesInOutputCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAUInputSamplesInOutputCallback`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 When your application uses a *varispeed* or pitch-shifting audio unit, it may not be clear which input samples are represented in a buffer of output samples. This callback function addresses this issue by providing the input sample number corresponding to the first sample in an output buffer.
 

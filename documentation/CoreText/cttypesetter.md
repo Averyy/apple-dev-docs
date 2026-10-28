@@ -25,7 +25,7 @@ class CTTypesetter
 typedef const struct __CTTypesetter * CTTypesetterRef;
 ```
 
-#### Overview
+## Overview
 
 Line layout includes word wrapping, hyphenation, and line breaking in either vertical or horizontal rectangles. A typesetter object takes as input an attributed string and produces a line of typeset glyphs (composed into glyph runs) in a [`CTLine`](./ctline.md) object. The typesetter performs character-to-glyph encoding, glyph ordering, and positional operations, such as kerning, tracking, and baseline adjustments. If multiline layout is needed, it is performed by a [`CTFramesetter`](./ctframesetter.md) object, which calls into the typesetter to generate the typeset lines to fill the frame.
 

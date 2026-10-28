@@ -24,7 +24,7 @@ case rgb10a2Unorm
 MTLDataTypeRGB10A2Unorm
 ```
 
-#### Discussion
+## Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha. The red, green, and blue components each have 10 bits, and the alpha component has 2 bits.
 

@@ -16,7 +16,7 @@ nonisolated
 struct GroupedTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`grouped`](./tabviewstyle/grouped.md) to construct this style.
 

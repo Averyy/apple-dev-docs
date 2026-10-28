@@ -21,7 +21,7 @@ A type of dispatch source for monitoring changes to a file system object.
 #define DISPATCH_SOURCE_TYPE_VNODE
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors a file descriptor for events defined by `Dispatch Source Vnode Event Flags`. The handle is a file descriptor (`int`). The mask is a mask of desired events from `Dispatch Source Vnode Event Flags`.
 

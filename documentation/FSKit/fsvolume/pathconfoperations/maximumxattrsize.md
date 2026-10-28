@@ -19,7 +19,7 @@ optional var maximumXattrSize: Int { get }
 @property (readonly) NSInteger maximumXattrSize;
 ```
 
-#### Discussion
+## Discussion
 
 Implement at least one of `maximumXattrSize` or [`maximumXattrSizeInBits`](./maximumxattrsizeinbits.md). FSKit automatically converts from one to another if needed. If you implement both, FSKit uses only the `maximumXattrSizeInBits` implementation.
 

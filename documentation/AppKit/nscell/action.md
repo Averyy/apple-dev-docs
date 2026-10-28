@@ -19,7 +19,7 @@ var action: Selector? { get set }
 @property (nullable) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the selector to call on the cell’s [`target`](./target.md) object. Set the value of this property to `nil` to stop the delivery of action messages.
 

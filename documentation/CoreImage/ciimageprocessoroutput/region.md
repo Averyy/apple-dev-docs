@@ -25,7 +25,7 @@ var region: CGRect { get }
 @property (nonatomic, readonly) CGRect region;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This may be different (larger or smaller) than the `extent` that was passed to `/CIImageProcessorKernel/applyWithExtent:inputs:arguments:error:`.
 

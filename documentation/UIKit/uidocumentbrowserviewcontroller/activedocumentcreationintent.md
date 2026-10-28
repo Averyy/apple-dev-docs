@@ -26,7 +26,7 @@ var activeDocumentCreationIntent: UIDocument.CreationIntent? { get }
 
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 Use this property to access the current intent. For more information, see [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md).
 

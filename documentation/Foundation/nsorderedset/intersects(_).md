@@ -25,7 +25,7 @@ func intersects(_ other: NSOrderedSet) -> Bool
 - (BOOL) intersectsOrderedSet:(NSOrderedSet<id> *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if at least one object in the receiving ordered set is also present in `other`, otherwise [`false`](../../Swift/false.md).
 

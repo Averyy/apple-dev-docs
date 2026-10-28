@@ -23,7 +23,7 @@ var message: String? { get set }
 @property (nonatomic, copy, nullable) NSString * message;
 ```
 
-#### Discussion
+## Discussion
 
 The message string is displayed below the title string and is less prominent. Use this string to provide additional context about the reason for the alert or about the actions that the user might take.
 

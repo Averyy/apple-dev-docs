@@ -24,7 +24,7 @@ func AudioFileSetProperty(_ inAudioFile: AudioFileID, _ inPropertyID: AudioFileP
 extern OSStatus AudioFileSetProperty(AudioFileID inAudioFile, AudioFilePropertyID inPropertyID, UInt32 inDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

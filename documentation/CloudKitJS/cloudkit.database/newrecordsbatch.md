@@ -17,7 +17,7 @@ CloudKit.RecordsBatchBuilder newRecordsBatch(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A [`CloudKit.RecordsBatchBuilder`](../cloudkit.recordsbatchbuilder.md) object for this database.
 

@@ -21,11 +21,11 @@ Returns the double-precision minimum value of a vector.
 static func minimum<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The minimum value of the vector.
 
-#### Discussion
+## Discussion
 
 This function calculates the minimum value of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

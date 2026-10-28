@@ -21,7 +21,7 @@ Logical conditions to evaluate within a given execution context.
 enum DispatchPredicate
 ```
 
-#### Overview
+## Overview
 
 You use dispatch predicates with the [`dispatchPrecondition(condition:)`](./dispatchprecondition%28condition%29.md) method.
 

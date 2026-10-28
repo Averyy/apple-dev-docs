@@ -24,11 +24,11 @@ func apply(extent: CGRect, roiCallback callback: @escaping CIKernelROICallback, 
 - (CIImage *) applyWithExtent:(CGRect) extent roiCallback:(CIKernelROICallback) callback inputImage:(CIImage *) image arguments:(NSArray<id> *) args;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object describing the result of applying the kernel.
 
-#### Discussion
+## Discussion
 
 This method is analogous to the [`CIFilter`](../cifilter-swift.class.md) method [`apply(_:arguments:options:)`](../cifilter-swift.class/apply%28_,arguments,options%29.md), but it does not require construction of a [`CIFilter`](../cifilter-swift.class.md) object, and it allows you to specify a callback for determining the kernel’s region of interest as a block or closure. As with the similar [`CIFilter`](../cifilter-swift.class.md) method, calling this method does not execute the kernel code—filters and their kernel code are evaluated only when rendering a final output image.
 

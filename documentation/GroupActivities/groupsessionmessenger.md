@@ -25,7 +25,7 @@ final class GroupSessionMessenger
 - [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md)
 - [Configure your visionOS app for sharing with people nearby](./configure-your-app-for-sharing-with-people-nearby.md)
 
-#### Overview
+## Overview
 
 Use a `GroupSessionMessenger` object to coordinate your app’s behavior across the devices attached to a group session. This object leverages the existing FaceTime communication channel to send app-specific data related to a SharePlay experience. For example, a movie-watching app might share user comments or tags while the movie plays.
 
@@ -48,7 +48,7 @@ class CowatchingExperience : ObservableObject {
 
 For more information about establishing a group session, see [`GroupSession`](./groupsession.md).
 
-##### Receive Messages from Other Devices
+### Receive Messages from Other Devices
 
 The system delivers messages to your app asynchronously when they arrive and adds them to a message sequence. Use the [`messages(of:)`](./groupsessionmessenger/messages%28of%29-626qo.md) or [`messages(of:)`](./groupsessionmessenger/messages%28of%29-jvoz.md) method to retrieve the sequence you want and iterate over its results. Use a `for`-`in` loop with the `await` keyword to iterate asynchronously over the results. The following example shows how a Tic Tac Toe game might retrieve moves sent by the current opponent. After receiving each move, the code adds that move to the current participant’s board.
 

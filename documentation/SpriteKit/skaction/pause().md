@@ -25,11 +25,11 @@ class func pause() -> SKAction
 + (SKAction *) pause;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action may only be executed on an [`SKAudioNode`](../skaudionode.md) object. The audio is paused, and if restarted, resumes at where it was paused.
 

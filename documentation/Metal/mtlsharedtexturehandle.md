@@ -24,7 +24,7 @@ class MTLSharedTextureHandle
 @interface MTLSharedTextureHandle : NSObject
 ```
 
-#### Overview
+## Overview
 
 `MTLSharedTextureHandle` objects may be passed between processes using XPC connections and then used to create a reference to the texture in another process. The texture in the other process needs to be created using the same [`MTLDevice`](./mtldevice.md) on which the shared texture was originally created. To identify which device it was created on, you can use the [`device`](./mtlsharedtexturehandle/device.md) property of the `MTLSharedTextureHandle` object.
 

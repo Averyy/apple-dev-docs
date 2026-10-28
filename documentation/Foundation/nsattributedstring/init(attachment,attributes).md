@@ -25,7 +25,7 @@ convenience init(attachment: NSTextAttachment, attributes: [NSAttributedString.K
 + (instancetype) attributedStringWithAttachment:(NSTextAttachment *) attachment attributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the attachment.
 

@@ -20,7 +20,7 @@ func toggleTouchBarCustomizationPalette(_ sender: Any?)
 - (void) toggleTouchBarCustomizationPalette:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method yourself when you want to show or hide the Touch Bar customization interface.
 

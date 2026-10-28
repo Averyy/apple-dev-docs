@@ -24,7 +24,7 @@ class HKUserAnnotatedMedication
 @interface HKUserAnnotatedMedication : NSObject
 ```
 
-#### Overview
+## Overview
 
 The details are relevant to the medication tracking experience.
 

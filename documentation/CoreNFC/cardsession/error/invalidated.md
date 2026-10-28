@@ -17,7 +17,7 @@ The system invalidated the card session.
 case invalidated
 ```
 
-#### Discussion
+## Discussion
 
 Handle this error by creating a new card session.
 

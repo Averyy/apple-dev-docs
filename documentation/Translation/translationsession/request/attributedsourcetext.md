@@ -18,7 +18,7 @@ The text to translate, including styling like bold text, italics, and hyperlink 
 var attributedSourceText: AttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you translate an attributed string, the framework makes a best effort to preserve formatting and attributes such as accessibility instructions or timestamps for synchronized captions or lyrics. To exclude specific ranges of the string from translation, set the [`skipsTranslation`](../../../Foundation/attributescopes/translationattributes/skipstranslation.md) attribute on those ranges before translating.
 

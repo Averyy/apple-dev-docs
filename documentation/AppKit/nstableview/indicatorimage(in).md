@@ -19,7 +19,7 @@ func indicatorImage(in tableColumn: NSTableColumn) -> NSImage?
 - (NSImage *) indicatorImageInTableColumn:(NSTableColumn *) tableColumn;
 ```
 
-#### Discussion
+## Discussion
 
 An indicator image is an arbitrary (small) image that is rendered on the right side of the column header. An example of its use is in Mail to indicate the sorting direction of the currently sorted column in a mailbox.
 

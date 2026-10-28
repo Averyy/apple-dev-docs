@@ -23,7 +23,7 @@ unowned(unsafe) var delegate: (any UIWebViewDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<UIWebViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is sent messages when content is loading. See [`UIWebViewDelegate`](../uiwebviewdelegate.md) for the optional methods this delegate may implement.
 

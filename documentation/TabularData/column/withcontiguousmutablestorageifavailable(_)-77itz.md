@@ -21,7 +21,7 @@ This method always returns `nil` without calling `body`.
 mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout UnsafeMutableBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?
 ```
 
-#### Discussion
+## Discussion
 
 Use the version of this method that uses a buffer of non-optional elements.
 

@@ -24,7 +24,7 @@ var sourceDirectivityModelParameters: PHASEDirectivityModelParameters? { get set
 @property (nonatomic, strong, nullable) PHASEDirectivityModelParameters * sourceDirectivityModelParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The framework applies directivity to sound sources that emanate from a point.
 

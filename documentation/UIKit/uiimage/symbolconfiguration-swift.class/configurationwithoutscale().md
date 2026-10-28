@@ -24,11 +24,11 @@ func configurationWithoutScale() -> Self
 - (instancetype) configurationWithoutScale;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object without the specified information.
 
-#### Discussion
+## Discussion
 
 This method sets the scale value in the new object to [`UIImage.SymbolScale.unspecified`](../symbolscale/unspecified.md).
 

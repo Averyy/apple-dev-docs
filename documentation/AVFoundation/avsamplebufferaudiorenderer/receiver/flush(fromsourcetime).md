@@ -18,15 +18,15 @@ Flushes enqueued sample buffers with presentation time stamps later than or equa
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func flush(fromSourceTime sourceTime: CMTime) async -> Bool
+nonisolated(nonsending)
+func flush(fromSourceTime sourceTime: CMTime) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 If the flush was successful, this method returns `true`. Otherwise it returns `false`.
 
-#### Discussion
+## Discussion
 
 This method can be used to replace media data scheduled to be rendered in the future, without interrupting playback.  One example of this is when the data that has already been enqueued is from a sequence of two songs and the second song is swapped for a new song.  In this case, this method would be called with the time stamp of the first sample buffer from the second song.  After this method resumes returning `true`, media data may again be enqueued with timestamps at the specified time.
 

@@ -18,11 +18,11 @@ The declaration to configure the device to allow WebAuthn enterprise attestation
 object SecurityPasskeyAttestation
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.security.passkey.attestation` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration enables enterprise passkey attestation for a relying party.
 

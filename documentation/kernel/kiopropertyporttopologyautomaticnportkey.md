@@ -14,7 +14,7 @@
 #define kIOPropertyPortTopologyAutomaticNPortKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Automatic (N_Port) for the key kIOPropertyPortTopologyKey. If the topology of the port is N_Port and is automatically determined by host software, this key should be used.
 

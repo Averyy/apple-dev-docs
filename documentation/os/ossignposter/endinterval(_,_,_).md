@@ -21,7 +21,7 @@ Ends a signposted interval and attaches the specified message.
 func endInterval(_ name: StaticString, _ state: OSSignpostIntervalState, _ message: SignpostMetadata)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](../signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

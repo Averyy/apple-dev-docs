@@ -20,11 +20,11 @@ func setValue(_ value: Any?, forVariableWithName variableName: String) -> Bool
 - (BOOL) setValue:(id) value forVariableWithName:(NSString *) variableName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `variableName` was found and its value is set; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method does nothing if the variable specified by `variableName` is not found.
 

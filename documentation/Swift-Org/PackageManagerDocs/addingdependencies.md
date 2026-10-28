@@ -9,7 +9,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Use other Swift packages, system libraries, or binary dependencies in your package.
 
-#### Overview
+## Overview
 
 To depend on another Swift package, define a dependency and the requirements for its version if it’s remote, then add a product of that dependency to one or more of your targets.
 
@@ -45,7 +45,7 @@ let package = Package(
 
 The package manager automatically resolves packages when you invoke [swift run](./swiftrun.md) or [swift build](./swiftbuild.md). You can explicitly resolve the packages with the command [swift package resolve](./packageresolve.md). For more information on resolving package versions, see [Resolving and updating dependencies](./resolvingpackageversions.md).
 
-##### Constraining dependency versions
+### Constraining dependency versions
 
 Constrain the version of a remote dependency when you declare the dependency. The package manager uses git tags, interpreted as a semantic version, to identify eligible versions of packages.
 
@@ -53,7 +53,7 @@ Constrain the version of a remote dependency when you declare the dependency. Th
 
 Use the version requirement when you declare the dependency to limit what the package manager can choose. The version requirement can be a range of possible semantic versions, a specific semantic version, a branch name, or a commit hash. The API reference documentation for [Package.Dependency](https://docs.swift.org/swiftpm/documentation/packagedescription/package/dependency) defines the methods to use.
 
-##### Packages with Traits
+### Packages with Traits
 
 Traits, introduced with Swift 6.1, allow packages to offer additional API that may include optional dependencies. Packages should offer traits to provide API beyond the core of a package. For example, a package may provide an experimental API, an optional API that requires additional dependencies, or functionality that isn’t critical that a developer may want to enable only in specific circumstances.
 
@@ -84,17 +84,17 @@ Swift package manager determines the traits to enable using the entire graph of 
 
 To learn how to provide packages with traits, see [Providing configurable packages using traits](./packagetraits.md).
 
-##### Local Dependencies
+### Local Dependencies
 
 To use a local package as a dependency, use either [package(name:path:)](https://developer.apple.com/documentation/packagedescription/package/dependency/package(name:path:)) or [package(path:)](https://developer.apple.com/documentation/packagedescription/package/dependency/package(path:)) to define it with the local path to the package. Local dependencies do not enforce version constraints, and instead use the version that is available at the path you provide.
 
-##### System Library Dependencies
+### System Library Dependencies
 
 In addition to depending on Swift packages, you can also depend on system libraries or, on Apple platforms, precompiled binary dependencies.
 
 For more information on using a library provided by the system as a dependency, see [Adding a dependency on a system library.](./addingsystemlibrarydependency.md).
 
-##### Precompiled Binary Targets for Apple platforms
+### Precompiled Binary Targets for Apple platforms
 
 To add a dependency on a precompiled binary target, specify a `.binaryTarget` in your list of targets, using either [binarytarget(name:url:checksum:)](https://developer.apple.com/documentation/packagedescription/target/binarytarget(name:url:checksum:)) for a downloadable target, or [binarytarget(name:path:)](https://developer.apple.com/documentation/packagedescription/target/binarytarget(name:path:)) for a local binary. After adding the binary target, you can add it to the list of dependencies for any other target.
 

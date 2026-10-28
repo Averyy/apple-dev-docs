@@ -15,7 +15,7 @@ The pointer style appropriate for precise rectangular selection, such as selecti
 static let rectSelection: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This pointer style displays a crosshair. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

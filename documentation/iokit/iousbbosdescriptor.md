@@ -16,7 +16,7 @@ typedef struct IOUSBBOSDescriptor {
 } IOUSBBOSDescriptor;
 ```
 
-#### Overview
+## Overview
 
 BOS Descriptor for a USB Device. .
 

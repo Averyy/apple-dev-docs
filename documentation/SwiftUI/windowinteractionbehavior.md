@@ -15,7 +15,7 @@ Options for enabling and disabling window interaction behaviors.
 struct WindowInteractionBehavior
 ```
 
-#### Overview
+## Overview
 
 Use values of this type in conjunction with the following view and scene modifiers to adjust the supported functionality for the window:
 

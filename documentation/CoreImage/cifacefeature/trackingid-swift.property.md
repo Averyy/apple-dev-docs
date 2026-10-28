@@ -24,7 +24,7 @@ var trackingID: Int32 { get }
 @property (assign, readonly) int trackingID;
 ```
 
-#### Discussion
+## Discussion
 
 Core Image provides a tracking identifier for faces it detects in a video stream, which you can use to identify when a CIFaceFeature objects detected in one video frame is the same face detected in a previous video frame.
 

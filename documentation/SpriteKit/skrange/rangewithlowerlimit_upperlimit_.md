@@ -21,7 +21,7 @@ Creates and initializes a new range object.
 + (instancetype) rangeWithLowerLimit:(CGFloat) lower upperLimit:(CGFloat) upper;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object.
 

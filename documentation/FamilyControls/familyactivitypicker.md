@@ -17,7 +17,7 @@ A view in which users specify applications, web domains, and categories without 
 @preconcurrency struct FamilyActivityPicker
 ```
 
-#### Overview
+## Overview
 
 To prompt the user for their selection, create a binding to a [`FamilyActivitySelection`](./familyactivityselection.md) instance, and use the binding to create a [`FamilyActivityPicker`](./familyactivitypicker.md) instance. You can then display the picker like any SwiftUI view.
 

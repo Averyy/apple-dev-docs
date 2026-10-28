@@ -24,11 +24,11 @@ subscript(idx: Int) -> GKBehavior { get }
 - (GKBehavior *) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The behavior at the specified index.
 
-#### Discussion
+## Discussion
 
 The order of individual behaviors in a composite behavior is undefined. However, you can use this method to enumerate all individual behaviors in a composite behavior.
 

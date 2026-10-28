@@ -13,11 +13,11 @@ CMError CMGetSystemProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The following functions allow you to pass `NULL` as a parameter value to specify the system profile as a source or destination profile:
 
@@ -36,7 +36,7 @@ To identify the location of the physical file, call the function [CMGetProfileLo
 
 When your application has finished using the current system profile, it must close the reference to the profile by calling the function [CMCloseProfile](./api-1804861-cmcloseprofile.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Starting with version 2.5, use of the system profile has changed. So rather than call `CMGetSystemProfile` to obtain a reference to the system profile, you may be able to obtain a profile that is more appropriate for the current operation by calling [CMGetDefaultProfileBySpace](./api-1804940-cmgetdefaultprofilebyspace.md) to get the default profile for a color space or by calling [CMGetProfileByAVID](./api-1804955-cmgetprofilebyavid.md) to get the profile for a specific display.
 

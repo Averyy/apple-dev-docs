@@ -5,7 +5,7 @@
 
 Learn how vImage resamples image data during geometric operations.
 
-#### Overview
+## Overview
 
 Most vImage geometric functions use resampling kernels, which combine data from a target pixel and other nearby pixels to calculate a value for the destination pixel. Resampling image data reduces unwanted artifacts, like interference patterns, in the destination image.
 

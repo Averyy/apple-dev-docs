@@ -25,7 +25,7 @@ init?(from fromFormat: AVAudioFormat, to toFormat: AVAudioFormat)
 - (instancetype) initFromFormat:(AVAudioFormat *) fromFormat toFormat:(AVAudioFormat *) toFormat;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVAudioConverter`](../avaudioconverter.md) instance, or `nil` if the format conversion isn’t possible.
 

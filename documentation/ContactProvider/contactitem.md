@@ -16,7 +16,7 @@ An item in the contact database.
 enum ContactItem
 ```
 
-#### Overview
+## Overview
 
 Your app creates instances of this type in your implementations of [`ContactItemEnumerator`](./contactitemenumerator.md), delivering arrays of contact items to [`ContactItemContentObserver`](./contactitemcontentobserver.md) and [`ContactItemChangeObserver`](./contactitemchangeobserver.md) instances.
 

@@ -22,11 +22,11 @@ func valueAndGrad<Model>(model: Model, _ f: @escaping (Model, MLXArray, MLXArray
 - [Creating Modules](./custom-layers.md)
 - [Training a Model](./training.md)
 
-#### Return Value
+## Return Value
 
 Function that returns the value of `f()` and the gradient of the parameters of the model
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -53,7 +53,7 @@ let lg = valueAndGrad(model: m, loss)
 let (loss, grads) = lg(m, x, y)
 ```
 
-##### Other Arguments
+### Other Arguments
 
 If other arguments to the loss function are needed there are two variants of `valueAndGrad()` that can be used to build these:
 
@@ -62,7 +62,7 @@ If other arguments to the loss function are needed there are two variants of `va
 
 Prefer the former as it can cache the value of the underlying `valueAndGrad()` call while the latter must rebuild it for each call.
 
-##### See Also
+### See Also
 
 - [Training a Model](./training.md)
 

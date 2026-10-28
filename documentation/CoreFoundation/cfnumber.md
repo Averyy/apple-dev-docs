@@ -23,7 +23,7 @@ class CFNumber
 typedef const struct __CFNumber * CFNumberRef;
 ```
 
-#### Overview
+## Overview
 
 CFNumber encapsulates C scalar (numeric) types. It provides functions for setting and accessing the value as any basic C type. It also provides a compare function to determine the ordering of two CFNumber objects. CFNumber objects are used to wrap numerical values for use in Core Foundation property lists and collections.
 

@@ -25,7 +25,7 @@ func simdConvertTransform(_ transform: simd_float4x4, from node: SCNNode?) -> si
 - (simd_float4x4) simdConvertTransform:(simd_float4x4) transform fromNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A transform relative to the node’s coordinate space.
 

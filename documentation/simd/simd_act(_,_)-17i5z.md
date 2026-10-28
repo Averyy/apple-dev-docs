@@ -14,7 +14,7 @@ func simd_act(_ q: simd_quath, _ v: simd_half3) -> simd_half3
 static simd_half3 simd_act(simd_quath q, simd_half3 v);
 ```
 
-#### Discussion
+## Discussion
 
 Rotates the vector `v` by the quaternion `q`.
 

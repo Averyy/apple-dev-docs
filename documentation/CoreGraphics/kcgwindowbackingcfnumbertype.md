@@ -14,7 +14,7 @@
 #define kCGWindowBackingCFNumberType
 ```
 
-#### Discussion
+## Discussion
 
 The encoding type for window backing values inside a [`CFNumber`](../CoreFoundation/cfnumber.md) opaque type.
 

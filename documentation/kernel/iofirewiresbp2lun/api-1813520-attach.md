@@ -12,11 +12,11 @@ virtual bool attach(
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 false if the provider is inactive or on a resource failure, otherwise true.
 
-#### Overview
+## Overview
 
 See IOService for discussion.
 

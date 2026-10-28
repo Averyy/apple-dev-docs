@@ -27,7 +27,7 @@ class let itur_2020_PQ_EOTF: CFString
 extern CFStringRef const kCGColorSpaceITUR_2020_PQ_EOTF;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`itur_2020`](./itur_2020.md), but uses the Perceptual Quantizer (PQ) transfer function. A pixel value of `1.0` is assumed to be `100` nits. See the current active version of the BT.2100 recommendation on the ITU website ([https://www.itu.int/](https://www.itu.int/)).
 

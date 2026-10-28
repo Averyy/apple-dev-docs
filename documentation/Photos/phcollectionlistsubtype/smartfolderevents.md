@@ -24,7 +24,7 @@ case smartFolderEvents
 PHCollectionListSubtypeSmartFolderEvents
 ```
 
-#### Discussion
+## Discussion
 
 This subtype applies only to collection lists whose type is [`PHCollectionListType.smartFolder`](../phcollectionlisttype/smartfolder.md).
 

@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_OnlyTheseFrames: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_OnlyTheseFrames;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement.  If supported, it requests that the decoder limit decoding to the frame type specified by one of the `Only These Frames Constants`. This key may be used on its own, or may appear in the dictionaries returned in the array obtained from [`kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers`](./kvtdecompressionpropertykey_suggestedqualityofservicetiers.md).
 

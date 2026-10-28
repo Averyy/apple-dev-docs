@@ -23,7 +23,7 @@ case invalidItemError
 CSIndexErrorCodeInvalidItemError
 ```
 
-#### Discussion
+## Discussion
 
 Verify the information in your [`CSSearchableItem`](../../cssearchableitem.md) object is correct.
 

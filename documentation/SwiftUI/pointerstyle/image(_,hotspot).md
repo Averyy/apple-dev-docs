@@ -21,7 +21,7 @@ static func image(_ image: Image, hotSpot: UnitPoint) -> PointerStyle
 static func image(_ resource: ImageResource, hotSpot: UnitPoint) -> PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 The hot spot is the part of the pointer that must be positioned over an onscreen element for clicking to have an effect.
 

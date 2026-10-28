@@ -25,7 +25,7 @@ init?(url: URL, resolvingAgainstBaseURL resolve: Bool)
 - (instancetype) initWithURL:(NSURL *) url resolvingAgainstBaseURL:(BOOL) resolve;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized URL components object, or `nil` if the URL could not be parsed.
 

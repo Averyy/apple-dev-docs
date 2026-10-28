@@ -24,11 +24,11 @@ func accessibilityPerformMagicTap() -> Bool
 - (BOOL) accessibilityPerformMagicTap;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the magic tap action succeeds; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 The exact action performed by this method depends your app, typically toggling the most important state of the app. For example, in the Phone app it answers and ends phone calls, in the Music app it plays and pauses playback, in the Clock app it starts and stops a timer, and in the Camera app it takes a picture.
 

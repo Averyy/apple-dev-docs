@@ -31,7 +31,7 @@ func setRelevantShortcuts(_ shortcuts: [INRelevantShortcut]) async throws
 
 - [Defining Relevant Shortcuts for the Siri Watch Face](../../SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Call this method to give Siri the list of relevant shortcuts for your app. To replace the list, call the method again, passing in a new list of relevant shortcuts. If you want to remove all relevant shortcuts associated with your app, call the method passing in an empty array.
 

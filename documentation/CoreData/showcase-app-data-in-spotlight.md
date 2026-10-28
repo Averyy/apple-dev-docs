@@ -12,7 +12,7 @@ Index app data so users can find it by using Spotlight search.
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10098: Showcase App Data in Spotlight](https://developer.apple.com/wwdc21/10098/).
 

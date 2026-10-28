@@ -24,7 +24,7 @@ func accessibilityElementDidLoseFocus()
 - (void) accessibilityElementDidLoseFocus;
 ```
 
-#### Discussion
+## Discussion
 
 Override `accessibilityElementDidLoseFocus` if you need to know when an assistive technology has removed its virtual focus from an accessibility element. Note that `accessibilityElementDidLoseFocus` is sent before [`accessibilityElementDidBecomeFocused()`](./accessibilityelementdidbecomefocused%28%29.md).
 

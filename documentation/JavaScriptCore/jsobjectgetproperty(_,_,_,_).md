@@ -24,7 +24,7 @@ func JSObjectGetProperty(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ propert
 JSValueRefJSObjectGetProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The property’s value, if `object` has the property; otherwise, the undefined value.
 

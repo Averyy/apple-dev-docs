@@ -22,7 +22,7 @@ nonisolated
 func hidden(_ hidden: Bool = true) -> some ToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to conditionally display a toolbar item in the toolbar.
 

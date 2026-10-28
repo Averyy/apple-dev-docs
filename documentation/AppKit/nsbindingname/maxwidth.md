@@ -19,7 +19,7 @@ static let maxWidth: NSBindingName
 extern NSBindingName NSMaxWidthBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

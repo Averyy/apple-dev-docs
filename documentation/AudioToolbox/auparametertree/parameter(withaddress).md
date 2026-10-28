@@ -24,7 +24,7 @@ func parameter(withAddress address: AUParameterAddress) -> AUParameter?
 - (AUParameter *) parameterWithAddress:(AUParameterAddress) address;
 ```
 
-#### Return Value
+## Return Value
 
 The parameter corresponding to the supplied address, or `nil` if no such parameter exists.
 

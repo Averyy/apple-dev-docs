@@ -16,7 +16,7 @@ The authentication token supplied to your web service.
 required DOMString authenticationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Required if you provide a web service.
 

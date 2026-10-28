@@ -23,7 +23,7 @@ void setTransform(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Replaces the current transformation matrix with the matrix shown in [Figure 1](./api-1630015-settransform.md#1965802). Each point in the canvas coordinate system is multiplied by the transformation matrix.
 

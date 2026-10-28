@@ -22,7 +22,7 @@ case inline
 UIDatePickerStyleInline
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you want to let users edit the date picker value without having to tap the label shown in the [`UIDatePickerStyle.compact`](./compact.md) style.
 

@@ -16,7 +16,7 @@ struct vnop_rmdir_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The newly created directory should be returned with an iocount which will be dropped by the caller.
 

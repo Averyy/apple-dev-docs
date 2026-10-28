@@ -19,7 +19,7 @@ func SCBondInterfaceCreate(_ prefs: SCPreferences) -> SCBondInterface?
 SCBondInterfaceRefSCBondInterfaceCreate(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The new Ethernet bond interface, represented by an [`SCBondInterface`](./scbondinterface.md) object. You must release the returned value.
 

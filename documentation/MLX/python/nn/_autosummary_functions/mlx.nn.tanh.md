@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.tanh
 
-**class tanh(*x*)**
-: Applies the hyperbolic tangent function.
+```python
+class tanh(x)
+```
+
+Applies the hyperbolic tangent function.
+
 Simply `mx.tanh(x)`.

@@ -19,7 +19,7 @@ var skippingBehavior: AVPlayerViewControllerSkippingBehavior { get set }
 @property (nonatomic) AVPlayerViewControllerSkippingBehavior skippingBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 This property lets you override the default skipping behavior in tvOS, which is to skip forward or backward 10 seconds when a user presses the right or left sides, respectively, of the Touch surface on the Siri Remote.
 

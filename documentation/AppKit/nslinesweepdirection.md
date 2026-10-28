@@ -15,7 +15,7 @@ Values that describe the progression of text on a page.
 enum NSLineSweepDirection : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The typesetter decides which way text should flow and passes these values as arguments to the text container, which uses them to calculate the next line rectangle.
 

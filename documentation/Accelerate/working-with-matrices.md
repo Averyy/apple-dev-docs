@@ -5,7 +5,7 @@
 
 Solve simultaneous equations and transform points in space.
 
-#### Overview
+## Overview
 
 A matrix is a 2D array of values arranged in rows and columns. The simd library provides support for matrices of up to four rows and four columns, containing 16 elements. It uses a *column major* naming convention; for example, a [`simd_double4x2`](../simd/simd_double4x2.md) is a matrix containing four columns and two rows.
 
@@ -36,7 +36,7 @@ let b = simd_double4x2(rows: [x, y])
 
 The following examples show a few common uses of matrices.
 
-##### Solve Simultaneous Equations
+### Solve Simultaneous Equations
 
 You can use matrices to solve simultaneous equations of the form *AX = B*; for example, to find *x* and *y* in the following equations:
 
@@ -68,7 +68,7 @@ let x = simd_mul(a.inverse, b)
 
 The result, `x`, is a two-element vector containing `(x = -2.6, y = 1.8)`.
 
-##### Transform Vectors with Matrix Multiplication
+### Transform Vectors with Matrix Multiplication
 
 Matrices provide a convenient way to transform (translate, rotate, and scale) points in 2D and 3D space.
 
@@ -86,7 +86,7 @@ let positionVector = simd_float3(x: 3, y: 2, z: 1)
 
 Transform matrices for 2D coordinates are represented by 3 x 3 matrices.
 
-###### Translate
+#### Translate
 
 A translate matrix takes the following form:
 
@@ -119,7 +119,7 @@ let translatedVector = translationMatrix * positionVector
 
 The resulting `translatedVector` has the values `(x: 4.0, y: 5.0, z: 1.0)`, shown as **B** in the illustration above.
 
-###### Rotate
+#### Rotate
 
 A rotation matrix around the z-axis (that is, on the xy plane) takes the following form:
 
@@ -155,7 +155,7 @@ let rotatedVector = rotationMatrix * translatedVector
 
 The resulting `rotatedVector` has the values `(x: 0.964102, y: 6.33013, z: 1.0)`, shown as **C** in the illustration above.
 
-###### Scale
+#### Scale
 
 A scale matrix takes the following form:
 

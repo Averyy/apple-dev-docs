@@ -21,7 +21,7 @@ An artwork image representation, such as music album cover art, associated with 
 struct ArtworkRepresentation
 ```
 
-#### Overview
+## Overview
 
 The system may display this artwork on the Lock Screen, in Control Center, and on connected accessories.
 

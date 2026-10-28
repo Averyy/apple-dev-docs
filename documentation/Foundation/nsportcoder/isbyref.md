@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether the receiver is encoding an objec
 - (BOOL) isByref;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is encoding an object `byref`, [`false`](../../Swift/false.md) if it expects a copy.
 
-#### Discussion
+## Discussion
 
 See [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i) for more information.
 

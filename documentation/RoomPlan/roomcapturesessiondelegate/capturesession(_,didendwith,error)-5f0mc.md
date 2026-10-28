@@ -21,7 +21,7 @@ func captureSession(_ session: RoomCaptureSession, didEndWith data: CapturedRoom
 
 - [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didEndWith:error:)`](./capturesession%28_,didendwith,error%29.md).
 

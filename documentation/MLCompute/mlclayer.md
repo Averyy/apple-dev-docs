@@ -23,7 +23,7 @@ class MLCLayer
 @interface MLCLayer : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines a polymorphic interface for `MLCLayer` subclasses. There are subclasses for each supported neural network layer type. Use the appropriate subclass initializer to create a layer object.
 

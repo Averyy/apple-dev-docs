@@ -17,7 +17,7 @@ Disables background delivery for the specified types.
 func disableBackgroundDelivery(for types: [FinanceStore.BackgroundDataType])
 ```
 
-#### Discussion
+## Discussion
 
 The app’s background delivery extension will no longer receive updates when data of the given types change in the finance store.
 

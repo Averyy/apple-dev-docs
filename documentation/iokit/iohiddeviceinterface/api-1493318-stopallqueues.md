@@ -16,7 +16,7 @@ Stops data delivery on all queues for this device.
 IOReturn (*stopAllQueues)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

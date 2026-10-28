@@ -21,7 +21,7 @@ Creates a URL that refers to the location specified by resolving an alias file.
 init(resolvingAliasFileAt url: URL, options: URL.BookmarkResolutionOptions = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the `url` argument doesn’t refer to an alias file (as defined by the [`isAliasFileKey`](../urlresourcekey/isaliasfilekey.md) property), the returned URL is the same as the `url` argument.
 

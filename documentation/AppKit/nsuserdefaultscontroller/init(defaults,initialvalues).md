@@ -19,7 +19,7 @@ init(defaults: UserDefaults?, initialValues: [String : Any]?)
 - (instancetype) initWithDefaults:(NSUserDefaults *) defaults initialValues:(NSDictionary<NSString *,id> *) initialValues;
 ```
 
-#### Discussion
+## Discussion
 
 If `defaults` is `nil`, the receiver uses `[NSUserDefaults standardUserDefaults]`.
 

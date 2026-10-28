@@ -27,7 +27,7 @@ func BNNSShuffle(_ type: BNNSShuffleType, _ input: UnsafePointer<BNNSNDArrayDesc
 int BNNSShuffle(const BNNSShuffleType type, const BNNSNDArrayDescriptor *input, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSShuffle(_:_:_:_:)`](./bnnsshuffle%28_,_,_,_%29.md) to rearrange the elements in a tensor between the depth dimension and blocks of 2D spatial data.
 

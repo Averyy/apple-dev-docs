@@ -19,7 +19,7 @@ var mediaEnhanceApplication: SRAcousticSettings.Accessibility.HeadphoneAccommoda
 @property (nonatomic, assign, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceApplication mediaEnhanceApplication;
 ```
 
-#### Discussion
+## Discussion
 
 Headphone Accommodations Application
 

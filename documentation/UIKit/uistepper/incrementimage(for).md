@@ -22,7 +22,7 @@ func incrementImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) incrementImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the increment glyph of the control.
 

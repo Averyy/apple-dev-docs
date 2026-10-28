@@ -29,7 +29,7 @@ nw_parameters_attribution_user
 
 - [Indicating the source of network activity](../indicating-the-source-of-network-activity.md)
 
-#### Discussion
+## Discussion
 
 Use this value for the `attribution` parameter of a call to the [`nw_parameters_get_attribution(_:)`](../nw_parameters_get_attribution%28_%29.md) method when constructing a network request that satisfies a user request to access an explicit, unmodified URL. In all other cases, use the [`nw_parameters_attribution_t.developer`](./developer.md) value instead.
 

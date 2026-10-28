@@ -24,7 +24,7 @@ var systemVersion: UInt32 { get }
 @property (readonly) unsigned int systemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This information is available as soon as the receiver has been initialized.
 

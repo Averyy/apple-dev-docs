@@ -30,7 +30,7 @@ func handle(intent: INAppendToNoteIntent) async -> INAppendToNoteIntentResponse
 - (void) handleAppendToNote:(INAppendToNoteIntent *) intent completion:(void (^)(INAppendToNoteIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, update the note’s content in your app, create a response object with the updated note information, and call the provided completion handler.
 

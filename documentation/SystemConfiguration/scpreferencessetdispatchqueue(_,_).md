@@ -19,7 +19,7 @@ func SCPreferencesSetDispatchQueue(_ prefs: SCPreferences, _ queue: dispatch_que
 Boolean SCPreferencesSetDispatchQueue(SCPreferencesRef prefs, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notifications are successfully scheduled; otherwise, `FALSE`.
 

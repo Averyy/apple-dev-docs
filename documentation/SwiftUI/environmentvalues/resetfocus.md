@@ -17,7 +17,7 @@ An action that requests the focus system to reevaluate default focus.
 var resetFocus: ResetFocusAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Get this environment value and call and call it as a function to force a default focus reevaluation at runtime.
 

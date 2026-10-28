@@ -19,13 +19,13 @@ A speech-to-text transcription module that’s similar to system dictation featu
 final class DictationTranscriber
 ```
 
-#### Overview
+## Overview
 
 This transcriber uses the same speech-to-text machine learning models as system dictation features do, or as [`SFSpeechRecognizer`](./sfspeechrecognizer.md) does when it is configured for on-device operation. This transcriber does not support languages or locales that `SFSpeechRecognizer` only supports via network access.
 
 Several transcriber instances can share the same backing engine instances and models, so long as the transcribers are configured similarly in certain respects.
 
-##### Improve accuracy
+### Improve accuracy
 
 You can bias recognition towards certain words, supply custom vocabulary, or adjust the transcriber’s algorithm to improve the transcriber’s accuracy.
 

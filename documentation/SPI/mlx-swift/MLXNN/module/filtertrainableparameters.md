@@ -17,7 +17,7 @@ Filter that will accept all structure (`.array` and `.dictionary`) and [`ModuleV
 static let filterTrainableParameters: @Sendable (Module, String, ModuleItem) -> Bool
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`freeze(recursive:keys:strict:)`](./freeze%28recursive,keys,strict%29.md)

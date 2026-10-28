@@ -25,7 +25,7 @@ var expectedSendSize: CKOperationGroup.TransferSize { get set }
 @property (assign) CKOperationGroupTransferSize expectedSendSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property informs the system about the amount of data your app can transfer. An order-of-magnitude estimate is better than no estimate, and accuracy helps performance. The system checks this value when it schedules discretionary network requests.
 

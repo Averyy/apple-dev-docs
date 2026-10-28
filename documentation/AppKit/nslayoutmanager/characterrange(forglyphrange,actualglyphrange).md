@@ -19,11 +19,11 @@ func characterRange(forGlyphRange glyphRange: NSRange, actualGlyphRange: NSRange
 - (NSRange) characterRangeForGlyphRange:(NSRange) glyphRange actualGlyphRange:(NSRangePointer) actualGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters that generated the glyphs in `glyphRange`.
 
-#### Discussion
+## Discussion
 
 If the length of `glyphRange` is `0`, the resulting character range is a zero-length range just after the character(s) corresponding to the preceding glyph, and `actualGlyphRange` is also zero-length. If `glyphRange` extends beyond the text length, the method truncates the result to the number of characters in the text.
 

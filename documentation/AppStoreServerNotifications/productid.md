@@ -15,7 +15,7 @@ The product identifier of the In-App Purchase.
 string productId
 ```
 
-#### Discussion
+## Discussion
 
 You create product identifiers for in-app purchases in App Store Connect.
 

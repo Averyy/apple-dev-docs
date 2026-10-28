@@ -19,7 +19,7 @@ class PHProject
 @interface PHProject : PHAssetCollection
 ```
 
-#### Overview
+## Overview
 
 This class represents the project when extended from macOS Photos. Projects can have the following types:
 

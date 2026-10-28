@@ -23,7 +23,7 @@ func titleForSegment(at segment: Int) -> String?
 - (NSString *) titleForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the string (title) assigned to the receiver as content. If there is no title, it returns `nil`.
 

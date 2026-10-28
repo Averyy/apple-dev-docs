@@ -31,7 +31,7 @@ var destinationType: INCallDestinationType { get }
 @property (atomic, assign, readonly) INCallDestinationType destinationType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate regular calls from specialized types of calls. For example, when the value of this property is [`voicemailDestination`](../incalldestinationtype/voicemaildestination.md), the user is attempting to connect to their voicemail messages.
 

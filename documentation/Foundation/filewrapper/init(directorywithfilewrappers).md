@@ -25,11 +25,11 @@ init(directoryWithFileWrappers childrenByPreferredName: [String : FileWrapper])
 - (instancetype) initDirectoryWithFileWrappers:(NSDictionary<NSString *,NSFileWrapper *> *) childrenByPreferredName;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized file wrapper for `fileWrappers`.
 
-#### Discussion
+## Discussion
 
 After initialization, the file wrapper is not associated with a file-system node until you save it using [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md).
 

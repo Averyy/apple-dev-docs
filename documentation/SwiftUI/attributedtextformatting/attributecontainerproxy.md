@@ -22,7 +22,7 @@ A proxy for a partially validated set of attributes.
 struct AttributeContainerProxy<Scope, Attribute> where Scope : AttributeScope, Attribute : AttributedStringKey, Attribute.Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 Exposes `Attribute` as read-write and all other attributes as read-only. The type automatically queries the underlying [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) to constrain values that are accessed.
 

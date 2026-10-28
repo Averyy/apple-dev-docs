@@ -23,7 +23,7 @@ var selectedOptionIdentifier: String { get set }
 @property (nonatomic, strong, readwrite) NSString * selectedOptionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system defaults this value to the first [`SWCollaborationOption`](../swcollaborationoption.md) identifier.
 

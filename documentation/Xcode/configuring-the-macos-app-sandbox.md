@@ -5,7 +5,7 @@
 
 Protect system resources and user data from compromised apps by restricting access to the file system, network connections, and more.
 
-#### Overview
+## Overview
 
 The *App Sandbox* is an access control technology that macOS provides and enforces at the kernel level. The sandbox’s primary function is to contain damage to the system and the user’s data if the user executes a compromised app. While the sandbox doesn’t prevent attacks against your app, it does reduce the harm a successful attack can cause by restricting your app to the minimum set of privileges it requires to function properly.
 
@@ -21,7 +21,7 @@ To ensure the App Sandbox is in an enabled state, launch your macOS app using Xc
 
 > **Note**: When you use Mac Catalyst to enable your iPad app to run in macOS, Xcode automatically adds the App Sandbox and Hardened Runtime capabilities to the macOS target. For more information, see [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md).
 
-##### Enable access to restricted resources
+### Enable access to restricted resources
 
 If your app requires access to restricted or sensitive system resources, such as network connections or connected Bluetooth devices, it must include the relevant entitlements that provide access to those resources. Follow these steps to add those entitlements:
 
@@ -52,7 +52,7 @@ The following table describes the resource access entitlements the App Sandbox s
 |  | Location | Your app determines the user’s location using Location Services. For more information, see [`Location entitlement`](../BundleResources/entitlements/com.apple.security.personal-information.location.md). |
 |  | Calendar | Your app requires read-write access to the user’s calendar. For more information, see [`Calendars entitlement`](../BundleResources/entitlements/com.apple.security.personal-information.calendars.md). |
 
-##### Enable managed file access
+### Enable managed file access
 
 The first time the user launches your sandboxed app, the system creates its *container* — a folder in `~/Library/Containers` that your app has exclusive read-write access to.
 

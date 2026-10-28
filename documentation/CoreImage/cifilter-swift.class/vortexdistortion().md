@@ -24,11 +24,11 @@ class func vortexDistortion() -> any CIFilter & CIVortexDistortion
 + (CIFilter<CIVortexDistortion> *) vortexDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the vortex distortion filter to an image. This effect distorts an image by rotating pixels around the defined center to simulate a vortex. You can specify the number of rotations to control the strength of the effect.
 

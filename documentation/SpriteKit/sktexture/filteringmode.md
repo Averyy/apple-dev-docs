@@ -25,7 +25,7 @@ var filteringMode: SKTextureFilteringMode { get set }
 @property (nonatomic) SKTextureFilteringMode filteringMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [`SKTextureFilteringMode`](../sktexturefilteringmode.md). The default value is [`SKTextureFilteringMode.linear`](../sktexturefilteringmode/linear.md) where each pixel is drawn by using a linear filter of multiple texels in the texture. The other option is [`SKTextureFilteringMode.nearest`](../sktexturefilteringmode/nearest.md) where each pixel is drawn using the nearest point in the texture.
 

@@ -19,7 +19,7 @@ func setPropertyList(_ propertyList: Any, forType type: NSPasteboard.PasteboardT
 - (BOOL) setPropertyList:(id) propertyList forType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value was set successfully, otherwise [`false`](../../Swift/false.md).
 

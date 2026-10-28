@@ -21,7 +21,7 @@ Produces the next element in the prefix sequence.
 mutating func next() async rethrows -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 Until reaching the number of elements to include, this iterator calls `next()` on its base iterator and passes through the result. After reaching the maximum number of elements, subsequent calls to `next()` return `nil`.
 

@@ -16,7 +16,7 @@ A builder type that composes a collection of cameras for previewing a view in a 
 struct PreviewCameraBuilder
 ```
 
-#### Overview
+## Overview
 
 You implicitly use a preview camera builder when you define a list of [`PreviewCamera`](./previewcamera.md) instances for a preview macro:
 

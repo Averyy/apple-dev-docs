@@ -23,7 +23,7 @@ The format the CSV file generator uses to create date strings.
 var dateFormat: String?
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`, which uses ISO 8601 encoding.
 

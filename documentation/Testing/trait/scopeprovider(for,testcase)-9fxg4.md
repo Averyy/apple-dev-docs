@@ -18,7 +18,7 @@ func scopeProvider(for test: Test, testCase: Test.Case?) -> Never?
 
 Available when `TestScopeProvider` is `Never`.
 
-#### Discussion
+## Discussion
 
 The testing library uses this implementation of [`scopeProvider(for:testCase:)`](./scopeprovider%28for,testcase%29.md) when the trait type’s associated [`TestScopeProvider`](./testscopeprovider.md) type is `Never`.
 

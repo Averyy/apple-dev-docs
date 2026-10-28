@@ -23,7 +23,7 @@ var protectionClasses: [FileProtectionType] { get set }
 @property (copy) NSArray<NSString *> * protectionClasses;
 ```
 
-#### Discussion
+## Discussion
 
 When creating an index to store your app’s data, you can associate a file protection type with that index to encrypt the data it contains. File protections prevent access to the data unless specific conditions occur. For example, you can make the data available only when the device is unlocked, or make it available after the first successful unlocking of the device. This property indicates which of your app’s protected indexes you want to search.
 

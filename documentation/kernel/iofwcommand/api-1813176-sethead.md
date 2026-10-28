@@ -10,7 +10,7 @@ virtual void setHead(
  IOFWCmdQ &queue);
 ```
 
-#### Overview
+## Overview
 
 inserts a command at the head of a queue.
 

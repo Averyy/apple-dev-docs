@@ -23,7 +23,7 @@ class let stateRestorationTimestampKey: String
 extern NSString * const UIApplicationStateRestorationTimestampKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSDate`](../../Foundation/nsdate.md) object containing the date when the restoration archive was saved. The date is specified using coordinated universal time (UTC).
 

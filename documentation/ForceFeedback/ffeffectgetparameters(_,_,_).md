@@ -20,11 +20,11 @@ func FFEffectGetParameters(_ effectReference: FFEffectObjectReference!, _ pFFEff
 extern HRESULT FFEffectGetParameters(FFEffectObjectReference effectReference, FFEFFECT *pFFEffect, FFEffectParameterFlag flags);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -32,7 +32,7 @@ FFERR_NOTDOWNLOADED
 
 FFERR_MOREDATA
 
-#### Discussion
+## Discussion
 
 Common errors resulting in a FFERR_INVALIDPARAM error include not setting the dwSize member of the FFEFFECT structure, passing invalid flags, or not setting up the members in the FFEFFECT structure properly in preparation for receiving the effect information.
 

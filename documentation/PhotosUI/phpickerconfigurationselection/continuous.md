@@ -23,7 +23,7 @@ case continuous
 PHPickerConfigurationSelectionContinuous
 ```
 
-#### Discussion
+## Discussion
 
 This option notifies the app of photo selections dynamically, as someone taps the photo picker.
 

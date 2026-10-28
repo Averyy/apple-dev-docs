@@ -19,7 +19,7 @@ case changeDone
 NSChangeDone
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value to the [`updateChangeCount(_:)`](../updatechangecount%28_%29.md) method to indicate that a single change has been done. For example, the built-in undo support in the [`NSDocument`](../../nsdocument.md) class passes this value whenever a document receives an [`NSUndoManagerDidCloseUndoGroup`](../../../Foundation/nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup.md) notification from its own undo manager.
 

@@ -18,7 +18,7 @@ An object that generates a skybox cube texture from an equirectangular source.
 class SkyboxGenerator
 ```
 
-#### Overview
+## Overview
 
 Use a skybox generator to convert a latitude/longitude (equirectangular) Metal texture into a cube texture that you can render as a scene background or feed into [`ImageBasedLightTextureGenerator`](./imagebasedlighttexturegenerator.md) to derive image-based-lighting diffuse and specular textures. The generator dispatches its work onto a Metal command buffer that you provide, so it composes naturally with other GPU work and with RealityKit’s `LowLevelTexture`.
 

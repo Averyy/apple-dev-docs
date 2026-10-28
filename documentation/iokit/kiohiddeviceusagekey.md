@@ -16,7 +16,7 @@ A key that specifies a usage type of the device.
 #define kIOHIDDeviceUsageKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the number for a HID usage type.
 

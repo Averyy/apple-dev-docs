@@ -20,7 +20,7 @@ var BE_KEVENT_RETURN_IMMEDIATELY: Int32 { get }
 #define BE_KEVENT_RETURN_IMMEDIATELY
 ```
 
-#### Overview
+## Overview
 
 Use this constant in the `be_flags` parameter of [`be_kevent(_:_:_:_:_:_:)`](./be_kevent%28_,_,_,_,_,_%29.md), or the `flags` parameter of [`be_kevent64(_:_:_:_:_:_:)`](./be_kevent64%28_,_,_,_,_,_%29.md), to poll for kernel events.
 

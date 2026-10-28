@@ -12,7 +12,7 @@ void RejectTask (
  SCSITaskIdentifierrequest );
 ```
 
-#### Overview
+## Overview
 
 Internal method called to reject a particular SCSITask.
 

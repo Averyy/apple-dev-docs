@@ -22,7 +22,7 @@ optional func printInteractionControllerWillStartJob(_ printInteractionControlle
 - (void) printInteractionControllerWillStartJob:(UIPrintInteractionController *) printInteractionController;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to do set-up tasks related to the print job. For example, an application that needs to do intensive rendering could implement this method to pause animations. This method is called before drawing begins but after the printing user interface is dismissed.
 

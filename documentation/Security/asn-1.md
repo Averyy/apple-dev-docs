@@ -5,7 +5,7 @@
 
 Encode and decode Distinguished Encoding Rules (DER) and Basic Encoding Rules (BER) data streams.
 
-#### Overview
+## Overview
 
 You use an ASN.1 coder to encode and decode both DER and BER data streams based on templates that you supply, which in turn are based upon ASN.1 specifications. You must import this API explicitly:
 

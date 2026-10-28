@@ -25,7 +25,7 @@ var friction: CGFloat { get set }
 @property (nonatomic) CGFloat friction;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to apply a frictional force to physics bodies in contact with this physics body. The property must be a value between `0.0` and `1.0`. The default value is `0.2`.
 

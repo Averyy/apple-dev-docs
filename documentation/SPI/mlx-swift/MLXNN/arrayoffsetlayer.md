@@ -17,7 +17,7 @@ A layer ([`Module`](./module.md) subclass) that can be evaluated with an input a
 protocol ArrayOffsetLayer : Module
 ```
 
-#### Overview
+## Overview
 
 Use this for batched inference when each sequence in the batch may be at a different position in the prompt. The `offset` is provided as an `MLXArray` so it can be:
 

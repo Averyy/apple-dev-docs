@@ -21,11 +21,11 @@ Wraps a key using the AES wrap algorithm.
 static func wrap(_ keyToWrap: SymmetricKey, using kek: SymmetricKey) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The wrapped key.
 
-#### Discussion
+## Discussion
 
 Wrap is an implementation of the AES key wrap algorithm as specified in IETF RFC 3394.
 

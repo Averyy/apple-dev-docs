@@ -13,7 +13,7 @@
 extern NSString * const NSPrintPagesPerSheet;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Do not use.
 

@@ -25,11 +25,11 @@ func convexSweepTest(with shape: SCNPhysicsShape, from: SCNMatrix4, to: SCNMatri
 - (NSArray<SCNPhysicsContact *> *) convexSweepTestWithShape:(SCNPhysicsShape *) shape fromTransform:(SCNMatrix4) from toTransform:(SCNMatrix4) to options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNPhysicsContact`](../scnphysicscontact.md) objects describing any contacts that would occur when moving the physics shape through the physics world.
 
-#### Discussion
+## Discussion
 
 Use this method when it’s important to plan for (or avoid) collisions ahead of the physics simulation. For example, in a game you might plan maneuvers for a flying character to fit through the gaps between static bodies in the physics world, as illustrated below:
 

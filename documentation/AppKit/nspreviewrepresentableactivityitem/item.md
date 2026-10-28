@@ -20,7 +20,7 @@ var item: Any { get }
 @property (strong, readonly) id item;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide the data you want to pass to the sharing service. The item must conform to the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](../../Foundation/nsitemprovider.md) or [`NSDocument`](../nsdocument.md) object.
 

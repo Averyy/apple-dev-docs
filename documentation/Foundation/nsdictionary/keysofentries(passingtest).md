@@ -25,7 +25,7 @@ func keysOfEntries(passingTest predicate: (Any, Any, UnsafeMutablePointer<ObjCBo
 - (NSSet<id> *) keysOfEntriesPassingTest:(BOOL (^)(KeyType key, ObjectType obj, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The set of keys whose corresponding value satisfies `predicate`.
 

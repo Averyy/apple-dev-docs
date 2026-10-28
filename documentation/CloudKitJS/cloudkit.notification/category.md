@@ -15,7 +15,7 @@ Name of the action group corresponding to this notification.
 readonly attribute String category;
 ```
 
-#### Discussion
+## Discussion
 
 Categories of actions allow you to present custom actions to the user on your push notifications. For details, see [`UIUserNotificationCategory`](../../UIKit/uiusernotificationcategory.md).
 

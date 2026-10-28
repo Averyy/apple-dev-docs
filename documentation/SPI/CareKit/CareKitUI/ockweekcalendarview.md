@@ -18,7 +18,7 @@ A horizontal row of seven selectable completion rings and corresponding labels.
 class OCKWeekCalendarView
 ```
 
-#### Overview
+## Overview
 
 ```
 +--------------------------------------+

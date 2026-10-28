@@ -22,7 +22,7 @@ enum UIBehavioralStyle
 enum UIBehavioralStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 If you build your app with Mac Catalyst and use the Mac idiom, you can specify the preferred behavior style for a control to change its appearance and behavior. For instance, consider an iPad app that displays a slider with a custom thumb image. By default, the Mac version of the app, built with Mac Catalyst, displays a standard macOS slider when the user interface idiom of the app is [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md).
 

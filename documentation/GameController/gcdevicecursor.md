@@ -24,7 +24,7 @@ class GCDeviceCursor
 @interface GCDeviceCursor : GCControllerDirectionPad
 ```
 
-#### Overview
+## Overview
 
 This controller element allows you to use the cursor as a directional pad with the values of the [`xAxis`](./gccontrollerdirectionpad/xaxis.md) and [`yAxis`](./gccontrollerdirectionpad/yaxis.md) elements scaled to the width and height of the screen, not ranging from `-1` to `1`.
 

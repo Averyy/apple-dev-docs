@@ -25,7 +25,7 @@ func leave()
 extern void dispatch_group_leave(dispatch_group_t group);
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function decrements the current count of outstanding tasks in the group. Using this function (with [`enter()`](./enter%28%29.md)) allows your application to properly manage the task reference count if it explicitly adds and removes tasks from the group by a means other than using the [`dispatch_group_async`](../dispatch_group_async.md) function.
 

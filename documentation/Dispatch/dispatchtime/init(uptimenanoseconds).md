@@ -21,7 +21,7 @@ Creates a time relative to the amount of time the system has been running.
 init(uptimeNanoseconds: UInt64)
 ```
 
-#### Discussion
+## Discussion
 
 On Apple platforms, this clock is the same as the value returned by [`mach_absolute_time`](../../kernel/api-1462446-mach_absolute_time.md) when converted into nanoseconds.
 

@@ -23,11 +23,11 @@ optional func primaryViewController(forCollapsing splitViewController: UISplitVi
 - (UIViewController *) primaryViewControllerForCollapsingSplitViewController:(UISplitViewController *) splitViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The new primary view controller to display onscreen.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

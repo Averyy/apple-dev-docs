@@ -16,7 +16,7 @@ A transform matrix which maps from the streamed scene’s coordinate space origi
 final var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the origin of the remote scene matches the origin of your app’s immersive space. You can use this API to manipulate that conversion – e.g. to travel around a larger scene.
 

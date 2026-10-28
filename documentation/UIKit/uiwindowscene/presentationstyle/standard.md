@@ -25,7 +25,7 @@ case standard
 UIWindowScenePresentationStyleStandard
 ```
 
-#### Discussion
+## Discussion
 
 On iPad, the system displays the window scene in Split View, side-by-side with the scene that originated the request for the new scene.
 

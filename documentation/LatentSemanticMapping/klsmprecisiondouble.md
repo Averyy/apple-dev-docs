@@ -20,7 +20,7 @@ var kLSMPrecisionDouble: String { get }
 #define kLSMPrecisionDouble
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value for [`kLSMAlgorithmSparse`](./klsmalgorithmsparse.md).
 

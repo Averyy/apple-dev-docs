@@ -24,13 +24,13 @@ class MPSGRUDescriptor
 @interface MPSGRUDescriptor : MPSRNNDescriptor
 ```
 
-#### Overview
+## Overview
 
 The recurrent neural network (RNN) layer initialized with a [`MPSGRUDescriptor`](./mpsgrudescriptor.md) transforms the input data (image or matrix) and previous output with a set of filters. Each produces one feature map in the output data according to the gated recurrent unit (GRU) unit formula detailed below.
 
 You may provide the GRU unit with a single input or a sequence of inputs. The layer also supports p-norm gating.
 
-##### Description of Operation
+### Description of Operation
 
 1. Let `x_j` be the input data (at time index `t` of sequence, `j` index containing quadruplet: batch index, `x,y` and feature index (`x = y = 0` for matrices)).
 2. Let `h0_`j be the recurrent input (previous output) data from previous time step (at time index `t-1` of sequence).

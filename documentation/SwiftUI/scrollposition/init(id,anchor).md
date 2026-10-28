@@ -21,7 +21,7 @@ Creates a new scroll position to a view with a provided identity value.
 init(id: some Hashable & Sendable, anchor: UnitPoint? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The type of the ID indicates the type of ID of views within a scroll target layout the scroll view should look for.
 

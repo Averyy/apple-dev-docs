@@ -22,7 +22,7 @@ case add
 UIApplicationShortcutIconTypeAdd
 ```
 
-#### Discussion
+## Discussion
 
 ![Add icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934512@2x.png)
 

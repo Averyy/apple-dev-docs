@@ -19,7 +19,7 @@ case tabletPoint
 NSEventTypeTabletPoint
 ```
 
-#### Discussion
+## Discussion
 
 Tablets generate tablet-point events between a mouse-down event and the first mouse drag event.
 

@@ -5,11 +5,11 @@
 
 Observe the playback of a media asset to update your app’s user-interface state.
 
-#### Overview
+## Overview
 
 Media playback apps commonly need to monitor playback progress to drive the state of player UI or perform other actions. Monitoring this state requires a higher level of time precision than key-value observing can deliver, so [`AVPlayer`](./avplayer.md) provides specific API to observe playback time. This article describes how you can observe this state at regular intervals or as playback crosses specific time boundaries.
 
-##### Observe the current playback time at regular intervals
+### Observe the current playback time at regular intervals
 
 The most common way to observe a player’s current time is at regular intervals. Observing it this way is useful when driving the state of a time display in a player’s user interface.
 
@@ -45,7 +45,7 @@ private func removePeriodicTimeObserver() {
 
 Always pair a call to the player’s [`addPeriodicTimeObserver(forInterval:queue:using:)`](./avplayer/addperiodictimeobserver%28forinterval,queue,using%29.md) method with a call to [`removeTimeObserver(_:)`](./avplayer/removetimeobserver%28_%29.md) when you’re finished monitoring the state. Failing to observe this rule results in undefined behavior.
 
-##### Observe the playback of specific times within a media presentation
+### Observe the playback of specific times within a media presentation
 
 Another way to observe the player is when it crosses specific times boundaries during playback. You can respond to the passage of these times by updating your player UI or performing other actions.
 

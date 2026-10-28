@@ -25,7 +25,7 @@ var momentumScale: Float { get }
 @property (nonatomic, readonly) float momentumScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

@@ -25,11 +25,11 @@ func unitString(fromMeters numberInMeters: Double, usedUnit unitp: UnsafeMutable
 - (NSString *) unitStringFromMeters:(double) numberInMeters usedUnit:(NSLengthFormatterUnit *) unitp;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string representing the unit.
 
-#### Discussion
+## Discussion
 
 This method selects the correct unit based on the formatter’s locale, the magnitude of the value, and the [`isForPersonHeightUse`](./isforpersonheightuse.md) property.
 

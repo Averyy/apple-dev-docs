@@ -16,7 +16,7 @@ Specifies the signal level.
 UInt32 signalLevels;
 ```
 
-#### Discussion
+## Discussion
 
 One of:
 

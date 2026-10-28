@@ -24,7 +24,7 @@ Encode this test argument.
 func encodeTestArgument(to encoder: some Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any error encountered during encoding.
 

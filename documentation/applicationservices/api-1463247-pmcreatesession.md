@@ -19,11 +19,11 @@ func PMCreateSession(_ printSession: UnsafeMutablePointer<PMPrintSession?>) -> O
 OSStatus PMCreateSession(PMPrintSession  _Nullable *printSession);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function allocates memory for a new printing session object in your application’s memory space and sets its reference count to 1. The new printing session object is initialized with information that the printing system uses for a print job.
 

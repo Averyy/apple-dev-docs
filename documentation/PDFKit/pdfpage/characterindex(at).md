@@ -40,7 +40,7 @@ func characterIndex(at point: NSPoint) -> Int
 - (NSInteger) characterIndexAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no character at the specified point, the method returns `-1`.
 

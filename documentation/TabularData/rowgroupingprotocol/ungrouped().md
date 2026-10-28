@@ -22,7 +22,7 @@ Generates a data frame that contains all the rows from each group in the row gro
 func ungrouped() -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 A row grouping can only use this method if all its groups have the same column names and types.
 

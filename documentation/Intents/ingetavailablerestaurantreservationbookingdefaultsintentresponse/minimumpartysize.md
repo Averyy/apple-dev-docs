@@ -31,7 +31,7 @@ var minimumPartySize: NSNumber? { get set }
 @property (atomic, copy, nullable) NSNumber * minimumPartySize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the minimum party size that the restaurant allows. The system provides the user with this information and prevents the user from booking reservations when the party size is below this value.
 

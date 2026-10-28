@@ -23,7 +23,7 @@ var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory> { get }
 @property (atomic, copy, readonly) NSSet<EAWiFiUnconfiguredAccessory *> * unconfiguredAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 The set of accessories in this property represents a snapshot that includes only those objects that match the filter predicate defined when starting the search. You can think of this property as representing the primary list of unconfigured accessories that have been found. Note that the [`accessoryBrowser(_:didFindUnconfiguredAccessories:)`](../eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didfindunconfiguredaccessories%29.md) delegate method is called when accessories are added to this list; similarly, [`accessoryBrowser(_:didRemoveUnconfiguredAccessories:)`](../eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didremoveunconfiguredaccessories%29.md) is called when accessories are removed from this list.
 

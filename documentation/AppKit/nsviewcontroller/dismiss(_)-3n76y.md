@@ -18,7 +18,7 @@ func dismiss(_ sender: Any?)
 - (void) dismissController:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

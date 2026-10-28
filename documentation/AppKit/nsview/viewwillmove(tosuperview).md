@@ -19,7 +19,7 @@ func viewWillMove(toSuperview newSuperview: NSView?)
 - (void) viewWillMoveToSuperview:(NSView *) newSuperview;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to perform whatever actions are necessary.
 

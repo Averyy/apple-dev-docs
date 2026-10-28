@@ -20,7 +20,7 @@ Determines whether pasteboard items match the specified patterns, reading the co
 func detectValues(for patterns: Set<UIPasteboard.DetectionPattern>, inItemSet itemSet: IndexSet?, completionHandler: @escaping (Result<[[UIPasteboard.DetectionPattern : Any]], any Error>) -> ())
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Calling this method notifies the user that the app has read the contents of the pasteboard.
 

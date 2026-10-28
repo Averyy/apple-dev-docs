@@ -16,7 +16,7 @@ case reference
 VNHumanBodyPose3DObservationHeightEstimationReference
 ```
 
-#### Discussion
+## Discussion
 
 If there’s no depth data available, the framework uses a reference height of `1.8` meters.
 

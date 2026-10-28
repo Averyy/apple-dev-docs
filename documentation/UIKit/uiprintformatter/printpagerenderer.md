@@ -22,7 +22,7 @@ weak var printPageRenderer: UIPrintPageRenderer? { get }
 @property (nonatomic, weak, readonly, nullable) UIPrintPageRenderer * printPageRenderer;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiving print formatter was not added to a page renderer—that is, it was assigned to the [`printFormatter`](../uiprintinteractioncontroller/printformatter.md) property of the [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) class—the value returned is `nil`.
 

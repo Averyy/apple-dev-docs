@@ -21,7 +21,7 @@ var accessibilityLabel: String? { get set }
 @property (nonatomic, retain, nullable) NSString * accessibilityLabel;
 ```
 
-#### Discussion
+## Discussion
 
 An accessibility label should be a very short, localized string that identifies the purpose of the image presented by the image provider.
 

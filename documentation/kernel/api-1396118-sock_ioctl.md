@@ -13,11 +13,11 @@
 errno_t sock_ioctl(socket_t so, unsigned long request, void *argp);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Performs an ioctl operation on a socket. See 'man 2 ioctl'.
 

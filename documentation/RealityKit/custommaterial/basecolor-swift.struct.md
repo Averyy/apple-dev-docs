@@ -23,7 +23,7 @@ struct BaseColor
 
 - [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
 
-#### Overview
+## Overview
 
 For more information on using base color values in a custom material, see [`baseColor`](./basecolor-swift.property.md).
 

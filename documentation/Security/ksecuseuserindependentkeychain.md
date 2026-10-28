@@ -19,7 +19,7 @@ let kSecUseUserIndependentKeychain: CFString
 extern CFStringRef const kSecUseUserIndependentKeychain;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) stores the item in a shared keychain that your app can access even when a different user is active. A value of [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) or omitting this key-value pair stores the item in the current user’s keychain.
 

@@ -23,7 +23,7 @@ optional func uneditedDuration() async throws -> CMTime
 - (void) loadUneditedDurationWithCompletionHandler:(void (^)(CMTime uneditedDuration, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Media Toolbox uses this information to validate edit information and to check if the media is suitable for gapless playback.
 

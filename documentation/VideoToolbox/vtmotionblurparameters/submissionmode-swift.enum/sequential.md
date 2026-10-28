@@ -22,7 +22,7 @@ case sequential
 VTMotionBlurParametersSubmissionModeSequential
 ```
 
-#### Discussion
+## Discussion
 
 This submission mode will yield a better performance.
 

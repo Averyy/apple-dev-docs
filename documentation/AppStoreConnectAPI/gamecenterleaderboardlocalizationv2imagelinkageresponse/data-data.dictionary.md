@@ -13,7 +13,7 @@
 object GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

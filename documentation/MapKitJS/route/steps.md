@@ -15,7 +15,7 @@ An array of steps that compose the overall route.
 steps: RouteStep[];
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`RouteStep`](../routestep.md) objects representing distinct portions of the route. Each step corresponds to a single direction to follow along the route.
 

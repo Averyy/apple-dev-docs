@@ -19,11 +19,11 @@ optional func previewPanel(_ panel: QLPreviewPanel!, handle event: NSEvent!) -> 
 - (BOOL) previewPanel:(QLPreviewPanel *) panel handleEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver handled the event; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The preview panel invokes this optional method when it receives an event it doesn’t handle.
 

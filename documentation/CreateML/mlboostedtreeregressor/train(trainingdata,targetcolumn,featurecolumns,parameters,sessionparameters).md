@@ -26,11 +26,11 @@ static func train(trainingData: DataFrame, targetColumn: String, featureColumns:
 static func train(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLBoostedTreeRegressor.ModelParameters = ModelParameters(validation: .split(strategy: .automatic)), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLBoostedTreeRegressor>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLJob` that can be used to observe training progress.
 
-#### Discussion
+## Discussion
 
 If `sessionDirectory` is provided it will save training progress. If there is progress already saved training will resume from the last checkpoint.
 

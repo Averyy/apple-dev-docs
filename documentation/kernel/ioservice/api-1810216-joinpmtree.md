@@ -12,7 +12,7 @@ virtual void joinPMtree(
  IOService *driver );
 ```
 
-#### Overview
+## Overview
 
 A driver uses this method to call its nub when initializing (usually in its `start` routine after calling PMinit), to be attached into the power management hierarchy (i.e., the power plane). A driver usually calls this method on the driver for the device that provides it power (this is frequently the nub). Before this call returns, the caller will probably be called at setPowerParent and setAggressiveness and possibly at addPowerChild as it is added to the hierarchy. This method may be overridden by a nub subclass.
 

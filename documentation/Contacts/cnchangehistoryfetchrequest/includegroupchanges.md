@@ -24,7 +24,7 @@ var includeGroupChanges: Bool { get set }
 @property (nonatomic) BOOL includeGroupChanges;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`true`](../../Swift/true.md) to receive group changes. Default is [`false`](../../Swift/false.md).
 

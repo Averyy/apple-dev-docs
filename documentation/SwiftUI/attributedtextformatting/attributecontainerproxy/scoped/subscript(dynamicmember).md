@@ -27,7 +27,7 @@ subscript(dynamicMember keyPath: KeyPath<Subscope, Attribute>) -> Attribute.Valu
 subscript<K>(dynamicMember keyPath: KeyPath<Subscope, K>) -> K.Value? where K : AttributedStringKey, K.Value : Sendable { mutating get }
 ```
 
-#### Overview
+## Overview
 
 For details on how attribute value constraining works, refer to [`constrain(_:)`](../../../attributedtextvalueconstraint/constrain%28_%29.md).
 

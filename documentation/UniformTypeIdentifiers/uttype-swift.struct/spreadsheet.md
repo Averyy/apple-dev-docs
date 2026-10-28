@@ -21,7 +21,7 @@ A base type that represents a spreadsheet document.
 static var spreadsheet: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.spreadsheet`.
 

@@ -21,7 +21,7 @@ The rectangle that describes the region within your view.
 var frame: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The frame uses your view’s own coordinates. It already includes the region’s [`margins`](./margins.md), so you don’t need to add the margins yourself.
 

@@ -24,7 +24,7 @@ nonisolated
 var modelExecutor: any ModelExecutor { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Don’t use the executor to access the model context. Instead, use the [`modelContext`](./modelcontext.md) property.
 

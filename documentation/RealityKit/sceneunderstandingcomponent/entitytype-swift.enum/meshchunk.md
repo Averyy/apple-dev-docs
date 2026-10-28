@@ -19,7 +19,7 @@ An entity that models the physical shape of the environment within a given cubic
 case meshChunk
 ```
 
-#### Discussion
+## Discussion
 
 When `SpotLightComponent.SurroundingsLight` or `PointLightComponent.SurroundingsLight` is enabled:
 

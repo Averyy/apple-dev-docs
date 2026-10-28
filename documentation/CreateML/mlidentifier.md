@@ -15,7 +15,7 @@ A type the Create ML framework can use as a machine learning identifier.
 protocol MLIdentifier
 ```
 
-#### Overview
+## Overview
 
 You can use any type that conforms to the [`MLIdentifier`](./mlidentifier.md) protocol, typically [`Int`](../Swift/int.md) or [`String`](../Swift/string.md), to uniquely identify users and items in these [`MLRecommender`](./mlrecommender.md) methods:
 

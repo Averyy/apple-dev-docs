@@ -16,7 +16,7 @@ Specifies one of three possible transaction types.
 IOOptionBits sendTransactionType;
 ```
 
-#### Discussion
+## Discussion
 
 The following types of transaction are defined for the send part of the request:
 

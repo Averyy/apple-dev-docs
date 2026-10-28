@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, validateDrop info: any N
 - (NSDragOperation) outlineView:(NSOutlineView *) outlineView validateDrop:(id<NSDraggingInfo>) info proposedItem:(id) item proposedChildIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates which dragging operation the data source will perform.
 
-#### Discussion
+## Discussion
 
 Based on the mouse position, the outline view will suggest a proposed drop location. The data source may “retarget” a drop if desired by calling [`setDropItem(_:dropChildIndex:)`](../nsoutlineview/setdropitem%28_,dropchildindex%29.md) and returning something other than `NSDragOperationNone`. You may choose to retarget for various reasons (for example, for better visual feedback when inserting into a sorted position).
 

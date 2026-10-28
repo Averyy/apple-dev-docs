@@ -20,7 +20,7 @@ Values for the function constant inputs declared in `shaderNodeGraph`.
 var constantValues: MTLFunctionConstantValues
 ```
 
-#### Discussion
+## Discussion
 
 Function constants are compiled directly into the shader and cannot be changed after the program is created.
 

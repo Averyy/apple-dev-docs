@@ -25,7 +25,7 @@ var savePolicy: CKModifyRecordsOperation.RecordSavePolicy { get set }
 @property (nonatomic, assign) CKRecordSavePolicy savePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The server uses this property to determine how to proceed when saving record changes. The exact behavior depends on the policy you choose:
 

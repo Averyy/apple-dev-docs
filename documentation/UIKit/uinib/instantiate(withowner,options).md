@@ -25,11 +25,11 @@ func instantiate(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.Option
 - (NSArray *) instantiateWithOwner:(id) ownerOrNil options:(NSDictionary<NSString *,id> *) optionsOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased `NSArray` object containing the top-level objects from the nib file.
 
-#### Discussion
+## Discussion
 
 You can use this method to instantiate the objects in a nib and provide them to your code. This method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. For detailed information about the nib-loading process, see [Resource Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
 

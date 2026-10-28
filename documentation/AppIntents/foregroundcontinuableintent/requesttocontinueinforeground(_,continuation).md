@@ -24,7 +24,7 @@ A method you call to ask a person to continue an action in the foreground.
 func requestToContinueInForeground<ResultValue>(_ dialog: IntentDialog? = nil, continuation: @MainActor () async throws -> ResultValue = { () }) async throws -> ResultValue where ResultValue : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 To update your app’s state after a person permits the action to continue execution in the foreground, provide an optional continuation closure that the system executes on the main thread. The system passes the result of the closure back to the function’s caller.
 

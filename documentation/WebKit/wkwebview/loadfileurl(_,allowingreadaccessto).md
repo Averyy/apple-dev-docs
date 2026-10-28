@@ -23,11 +23,11 @@ func loadFileURL(_ URL: URL, allowingReadAccessTo readAccessURL: URL) -> WKNavig
 - (WKNavigation *) loadFileURL:(NSURL *) URL allowingReadAccessToURL:(NSURL *) readAccessURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object you use to track the loading progress of the request.
 
-#### Discussion
+## Discussion
 
 This method sets the source of this load request for app activity data to [`NSURLRequest.Attribution.developer`](../../Foundation/nsurlrequest/attribution-swift.enum/developer.md). To specify the source of this load, use [`loadFileRequest(_:allowingReadAccessTo:)`](./loadfilerequest%28_,allowingreadaccessto%29.md) instead.
 

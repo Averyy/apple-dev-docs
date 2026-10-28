@@ -23,7 +23,7 @@ func setNeedsUpdateConfiguration()
 - (void) setNeedsUpdateConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to make the system call [`updateConfiguration()`](./updateconfiguration%28%29.md). The system calls this method automatically when the button’s state changes. If you call this method multiple times before the system calls [`updateConfiguration()`](./updateconfiguration%28%29.md), the system calls [`updateConfiguration()`](./updateconfiguration%28%29.md) once.
 

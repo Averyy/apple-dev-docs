@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app may access the notes in contact e
 - **Name**: `com.apple.developer.contacts.notes`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 When your app loads one or more entries from the user’s contacts — for example, by calling the [`unifiedContacts(matching:keysToFetch:)`](../../Contacts/cncontactstore/unifiedcontacts%28matching,keystofetch%29.md) method — you provide a list of keys specifying the fields to fetch. To request the [`note`](../../Contacts/cncontact/note.md) field using [`CNContactNoteKey`](../../Contacts/cncontactnotekey.md) in iOS 13 or later or macOS 13 or later, your app must have the [`com.apple.developer.contacts.notes`](./com.apple.developer.contacts.notes.md) entitlement. When your app tries to fetch notes without the entitlement, it receives an [`unauthorizedKeys`](../../Contacts/cnerror/unauthorizedkeys.md) error. Your app only needs the entitlement if it reads or writes notes.
 

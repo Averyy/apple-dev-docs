@@ -14,7 +14,7 @@
 const IOOptionBits kIOHIDTransactionOptionDefaultOutputValue;
 ```
 
-#### Discussion
+## Discussion
 
 Option to set the default element value to be used with an IOHIDDeviceTransactionInterface of direction kIOHIDTransactionDirectionTypeOutput.
 

@@ -25,7 +25,7 @@ func draw(with box: PDFDisplayBox)
 
 - [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
-#### Discussion
+## Discussion
 
 The annotation is drawn relative to the origin of `box` in page-space coordinates.
 

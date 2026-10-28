@@ -21,7 +21,7 @@ The sync engine state was updated, and you should persist it locally.
 struct StateUpdate
 ```
 
-#### Overview
+## Overview
 
 In order to function properly and efficiently, [`CKSyncEngine`](../../cksyncengine-5sie5.md) tracks some state internally. When the sync engine state changes, it gives you the latest serialized version in a [`CKSyncEngine.Event.StateUpdate`](./stateupdate.md) event. This event happens occasionally when the sync engine modifies the state internally during normal sync operation. This event also happens when you change the state yourself.
 

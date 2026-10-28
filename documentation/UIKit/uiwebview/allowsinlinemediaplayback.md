@@ -21,7 +21,7 @@ var allowsInlineMediaPlayback: Bool { get set }
 @property (nonatomic) BOOL allowsInlineMediaPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 You must set this property to play inline video. Set this property to `true` to play videos inline. Set this property to `false` to use the native full-screen controller. When adding a video element to a  HTML document on the iPhone, you must also include the `playsinline` attribute.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Update installed toolchains.
 
-#### Overview
+## Overview
 
 Update replaces a given toolchain with a later version of that toolchain. For a stable release, this means updating to a later patch, minor, or major version. For snapshots, swiftly helps you stay up-to-date by updating to the most recently available snapshot. Swiftly only updates toolchains that it installed.
 

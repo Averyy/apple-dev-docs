@@ -25,11 +25,11 @@ func SCNMatrix4Mult(_ a: SCNMatrix4, _ b: SCNMatrix4) -> SCNMatrix4
 extern SCNMatrix4 SCNMatrix4Mult(SCNMatrix4 a, SCNMatrix4 b);
 ```
 
-#### Return Value
+## Return Value
 
 The matrix product of the `matA` and `matB` parameters.
 
-#### Discussion
+## Discussion
 
 Matrix multiplication is not commutative. As a transformation, the result of multiplying a matrix `A` by a matrix `B` is the transformation represented by `B` followed by the transformation represented by `A`.
 

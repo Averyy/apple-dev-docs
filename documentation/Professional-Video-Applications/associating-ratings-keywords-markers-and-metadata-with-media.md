@@ -5,7 +5,7 @@
 
 Organize and annotate the media and projects your users send to and receive from Final Cut Pro.
 
-#### Overview
+## Overview
 
 Metadata, markers, and annotations, such as ratings and keywords, help your users sort, organize, and find their media. Include any of the following items in the FCPXML documents that your app sends to Final Cut Pro. If these items are in the FCPXML that your app receives from Final Cut Pro, you can use them to organize the incoming media.
 
@@ -18,7 +18,7 @@ Metadata, markers, and annotations, such as ratings and keywords, help your user
 | Keywords | Labeled sections of a clip used to categorize clips into keyword collections. ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) For more information on adding keywords to clips, see [Add Ratings, Keywords, and Markers](./associating-ratings-keywords-markers-and-metadata-with-media.md#Add-Ratings-Keywords-and-Markers); also see [Add keywords to clips in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/add-keywords-ver68416335/mac). |
 | Markers | Labeled locations that let video editors jump to a specific point in time in a project sequence. A marker has no duration.  ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) For more information on adding markers, see [Add Ratings, Keywords, and Markers](./associating-ratings-keywords-markers-and-metadata-with-media.md#Add-Ratings-Keywords-and-Markers); also see [Intro to markers in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/intro-to-markers-ver397279dd/mac).) |
 
-##### Include Common Metadata
+### Include Common Metadata
 
 *Common metadata* includes information about how a user created a piece of media, notes about the editing or production process, or additional information about the item’s origin. Final Cut Pro provides an extensive list of both basic and specialized metadata; users can review and modify items in that list using the Info inspector. For more information on viewing and editing common metadata, see [View and change clip metadata in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/view-and-change-clip-metadata-ver397298cc/mac).
 
@@ -38,7 +38,7 @@ The following table shows a small subset of common metadata keys recognized by F
 
 > **Note**:  If the purpose of your app includes *writing* media files (for example, if your app is a recording app or a transcoding utility), then you may decide to include some of that metadata when your app writes the new media file—even though the metadata was read-only when the source file was consumed. When read-only metadata is included in the FCPXML, it doesn’t overwrite what’s already in the media file. However, where possible, your app should ingest the metadata directly from the media file.
 
-##### Add Custom Metadata
+### Add Custom Metadata
 
 While Final Cut Pro already recognizes a comprehensive set of metadata, there are times when a particular workflow requires custom metadata.
 
@@ -60,7 +60,7 @@ If you don’t include a metadata view in the `.plist` file, the custom metadata
 
 > **Note**:  If the FCPXML document your app sends to Final Cut Pro includes custom metadata values, Final Cut Pro uses the values for any editable metadata items and ignores the values for any noneditable (read-only) metadata.
 
-##### Review Share Metadata
+### Review Share Metadata
 
 When your app receives a project or clip as a rendered media file through a Final Cut Pro custom share destination, the file may include predetermined metadata keys called share metadata. *Share metadata* represents administrative information about a piece of media, such as its copyright information or an episode number, that helps identify media when it’s distributed to consumers. Final Cut Pro users decide which share metadata to include with the media, but the default items — Title, Description, Creator, and Tags — are included automatically.
 
@@ -93,7 +93,7 @@ The following table shows the share metadata and keys that may be included with 
 | TV Network | `com.apple.proapps.share.tvNetwork` | String |
 | US Rating | `com.apple.quicktime.rating.user` | String |
 
-##### Add Ratings, Keywords, and Markers
+### Add Ratings, Keywords, and Markers
 
 Final Cut Pro ratings, keywords, and markers, along with keyword collections_,_ help users annotate, sort, and organize their media. Your app can make use of this information when Final Cut Pro includes it in the FCPXML your app receives. (For more information about using ratings, keywords, and markers, see [Rate Clips in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/rate-clips-ver30ccd91f/mac), [Add keywords to clips in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/add-keywords-ver68416335/mac), and [Intro to markers in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/intro-to-markers-ver397279dd/mac). For information about sample FCPXML code, see [Describing Final Cut Pro Items in FCPXML](./describing-final-cut-pro-items-in-fcpxml.md).)
 
@@ -129,7 +129,7 @@ In a project, markers represent a point in time with no duration. In FCPXML, mar
 </asset-clip>
 ```
 
-##### Define and Register Custom Metadata Keys
+### Define and Register Custom Metadata Keys
 
 If the FCPXML document your app is sending to Final Cut Pro contains custom metadata and you want that metadata to be visible and available to users in Final Cut Pro, create a `.plist` file to define the custom metadata keys and the metadata views to display them in the Final Cut Pro Info inspector window.
 

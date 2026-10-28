@@ -24,7 +24,7 @@ var cameraProfiles: [HMCameraProfile]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<HMCameraProfile *> * cameraProfiles;
 ```
 
-#### Discussion
+## Discussion
 
 An accessory can contain one or more cameras. Each camera is represented as a an [`HMCameraProfile`](../hmcameraprofile.md) instance. If the accessory doesn’t contain a camera, this property is `nil`.
 

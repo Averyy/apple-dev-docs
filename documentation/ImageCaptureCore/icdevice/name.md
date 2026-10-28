@@ -23,7 +23,7 @@ var name: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

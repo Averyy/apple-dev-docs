@@ -24,7 +24,7 @@ typealias AudioUnit = AudioComponentInstance
 typedef AudioComponentInstance AudioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The various types of audio units are described in the [Audio Unit Types](./api-1584142-audio_unit_types.md) enumeration. The subtypes of audio units provided by Apple are described in [Converter Audio Unit Subtypes](./api-1584145-converter_audio_unit_subtypes.md), [Effect Audio Unit Subtypes](./api-1584154-effect_audio_unit_subtypes.md), [Mixer Audio Unit Subtypes](./api-1584150-mixer_audio_unit_subtypes.md), and [Input/Output Audio Unit Subtypes](./api-1584139-input_output_audio_unit_subtypes.md).
 

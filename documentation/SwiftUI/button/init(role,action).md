@@ -24,7 +24,7 @@ nonisolated init(role: ButtonRole, action: @escaping @MainActor () -> Void)
 
 Available when `Label` is `DefaultButtonLabel`.
 
-#### Discussion
+## Discussion
 
 For example, the following view would display a button with a ‘x’ symbol in the toolbar.
 

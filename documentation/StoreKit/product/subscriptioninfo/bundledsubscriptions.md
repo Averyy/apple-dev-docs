@@ -21,7 +21,7 @@ Properties and functionality specific to auto-renewable subscriptions included i
 let bundledSubscriptions: [Product.SubscriptionInfo.BundledSubscription]
 ```
 
-#### Discussion
+## Discussion
 
 This list is only populated if `type` is `.subscriptionBundle`, and always empty for all other product types.
 

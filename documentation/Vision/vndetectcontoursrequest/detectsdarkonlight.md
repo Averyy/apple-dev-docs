@@ -24,7 +24,7 @@ var detectsDarkOnLight: Bool { get set }
 @property (nonatomic, readwrite) BOOL detectsDarkOnLight;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

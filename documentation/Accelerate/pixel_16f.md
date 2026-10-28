@@ -23,7 +23,7 @@ typealias Pixel_16F = UInt16
 typedef uint16_t Pixel_16F;
 ```
 
-#### Discussion
+## Discussion
 
 A 16-bit half precision floating-point planar pixel value.
 

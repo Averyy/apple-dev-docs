@@ -25,7 +25,7 @@ let kCVImageBufferCleanApertureHorizontalOffsetKey: CFString
 extern CFStringRef const kCVImageBufferCleanApertureHorizontalOffsetKey;
 ```
 
-#### Discussion
+## Discussion
 
 The horizontal offset value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

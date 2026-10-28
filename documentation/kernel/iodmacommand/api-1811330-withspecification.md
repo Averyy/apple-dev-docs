@@ -19,11 +19,11 @@ static IODMACommand * withSpecification(
  void *refCon = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
-#### Overview
+## Overview
 
 Factory function to create and initialize an IODMACommand in one operation.
 

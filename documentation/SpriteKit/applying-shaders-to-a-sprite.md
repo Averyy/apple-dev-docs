@@ -5,7 +5,7 @@
 
 Write custom GLSL code that modifies the look of your sprite.
 
-#### Overview
+## Overview
 
 You can use the [`shader`](./skspritenode/shader.md) property of a sprite node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within a [`SKShader`](./skshader.md) object. Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures to generating imagery such as random noise.
 

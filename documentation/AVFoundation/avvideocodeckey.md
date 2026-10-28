@@ -28,7 +28,7 @@ extern NSString * const AVVideoCodecKey;
 
 - [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of [`NSString`](../Foundation/nsstring.md), equivalent to [`CMVideoCodecType`](../CoreMedia/cmvideocodectype.md). Use this key to set the video compression format to H.264, HEVC, or JPEG, depending on the video codec types available in [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md). Check available video codec types by consulting [`availableVideoCodecTypes`](./avcapturemoviefileoutput/availablevideocodectypes.md).
 

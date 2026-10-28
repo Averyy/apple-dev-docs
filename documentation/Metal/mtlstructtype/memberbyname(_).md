@@ -24,7 +24,7 @@ func memberByName(_ name: String) -> MTLStructMember?
 - (MTLStructMember *) memberByName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the named struct member. If `name` does not match a member name, `nil` is returned.
 

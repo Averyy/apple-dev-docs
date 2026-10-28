@@ -21,7 +21,7 @@ An array of UI elements that represent subelements in the view hierarchy.
 var subelements: [AppEntityUIElement]
 ```
 
-#### Discussion
+## Discussion
 
 This property holds an array of UI elements that represents a UI element’s composition. Each element has no defined coordinate space on its own, but instead uses the coordinate space of the root element. As a result, the bounds of the list of elements a provider returns have the same coordinate space as the provider’s attached view.
 

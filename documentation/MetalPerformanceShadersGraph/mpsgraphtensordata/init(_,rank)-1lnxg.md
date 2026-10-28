@@ -24,11 +24,11 @@ init(_ matrix: MPSMatrix, rank: Int)
 - (instancetype) initWithMPSMatrix:(MPSMatrix *) matrix rank:(NSUInteger) rank;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData of given rank, or nil if allocation failure.
 
-#### Discussion
+## Discussion
 
 The device of the MPSMatrix will be used to get the MPSDevice for this MPSGraphTensorData.
 

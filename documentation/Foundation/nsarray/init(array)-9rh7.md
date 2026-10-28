@@ -22,11 +22,11 @@ Initializes a newly allocated array by placing in it the objects contained in a 
 convenience init(array anArray: NSArray)
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized to contain the objects in `anArray``. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 Discussion: After an immutable array has been initialized in this way, it cannot be modified.
 

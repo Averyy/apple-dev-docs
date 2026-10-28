@@ -21,7 +21,7 @@ case canCycle
 kSecTransformMetaAttributeCanCycle
 ```
 
-#### Discussion
+## Discussion
 
 A transform group is a directed graph which is typically acyclic. Some transforms need to work with cycles. For example, a transform that emits a header and trailer around the data of another transform must create a cycle. If this metadata set to [`true`](../../Swift/true.md), no error is returned if a cycle is detected for this attribute.
 

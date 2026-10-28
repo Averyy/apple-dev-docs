@@ -25,7 +25,7 @@ func minimumTextureBufferAlignment(for format: MTLPixelFormat) -> Int
 - (NSUInteger) minimumTextureBufferAlignmentForPixelFormat:(MTLPixelFormat) format;
 ```
 
-#### Discussion
+## Discussion
 
 Metal aligns textures to their minimum alignment value, which directly affects the [`makeTexture(descriptor:offset:bytesPerRow:)`](../mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md) method’s `offset` and `bytesPerRow` parameters.
 

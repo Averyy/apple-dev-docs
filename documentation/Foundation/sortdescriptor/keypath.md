@@ -21,7 +21,7 @@ The key path to the field for comparison.
 var keyPath: PartialKeyPath<Compared>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` when `Compared` is not an NSObject
 

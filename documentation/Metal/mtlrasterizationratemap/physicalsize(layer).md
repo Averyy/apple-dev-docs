@@ -29,11 +29,11 @@ func physicalSize(layer layerIndex: Int) -> MTLSize
 
 - [Rendering with a rasterization rate map](../rendering-with-a-rasterization-rate-map.md)
 
-#### Return Value
+## Return Value
 
 The dimensions, in pixels, of the area in the render target affected by the rasterization rate map.
 
-#### Discussion
+## Discussion
 
 Your render targets should be at least as large as the physical size returned by this method. Each layer may have different rasterization rates and therefore different physical size requirements.
 

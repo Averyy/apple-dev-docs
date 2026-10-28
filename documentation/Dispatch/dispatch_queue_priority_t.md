@@ -21,7 +21,7 @@ The execution priority for tasks in a global concurrent queue.
 typedef long dispatch_queue_priority_t;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.10 and later, use quality-of-service (QoS) classes to specify the priority of tasks instead.
 

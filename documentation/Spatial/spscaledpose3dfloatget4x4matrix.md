@@ -19,11 +19,11 @@
 static simd_float4x4 SPScaledPose3DFloatGet4x4Matrix(SPScaledPose3DFloat scaledPose);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a 4 x 4 matrix that represents the scaled pose’s translation, rotation, and scale.
 

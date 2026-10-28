@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Dump symbol graphs.
 
-#### Overview
+## Overview
 
 ```
 package dump-symbol-graph [--package-path=<package-path>]

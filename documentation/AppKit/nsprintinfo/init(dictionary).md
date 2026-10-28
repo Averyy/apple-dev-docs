@@ -19,11 +19,11 @@ init(dictionary attributes: [NSPrintInfo.AttributeKey : Any])
 - (instancetype) initWithDictionary:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSPrintInfo` object, or nil if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for this class. Non-object values should be stored in `NSValue` objects (or an appropriate subclass like `NSNumber`) in the dictionary. See [`NSNumber`](../../Foundation/nsnumber.md) for a list of types which should be stored using the `NSNumber` class; otherwise use `NSValue`.
 

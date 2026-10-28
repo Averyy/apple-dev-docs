@@ -25,7 +25,7 @@ var advanceIntervalForDelegateInvocation: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval advanceIntervalForDelegateInvocation;
 ```
 
-#### Discussion
+## Discussion
 
 If  possible, an `AVPlayerItemMetadataOutput` will message its delegate `advanceIntervalForDelegateInvocation` seconds earlier than otherwise. If the value you provide is large, effectively requesting provision of samples earlier than the `AVPlayerItemMetadataOutput` is prepared to act on them, the delegate will be invoked as soon as possible.
 

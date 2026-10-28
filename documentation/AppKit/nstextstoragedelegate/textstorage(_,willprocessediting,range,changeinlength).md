@@ -19,7 +19,7 @@ optional func textStorage(_ textStorage: NSTextStorage, willProcessEditing edite
 - (void) textStorage:(NSTextStorage *) textStorage willProcessEditing:(NSTextStorageEditActions) editedMask range:(NSRange) editedRange changeInLength:(NSInteger) delta;
 ```
 
-#### Discussion
+## Discussion
 
 Sent inside [`processEditing()`](../nstextstorage/processediting%28%29.md) right before fixing attributes. Delegates can change the characters or attributes.
 

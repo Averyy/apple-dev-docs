@@ -22,7 +22,7 @@ final func failedToActivateDevice(_ device: MediaOutputDevice, session: MediaOut
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when activation has failed for a device.
 

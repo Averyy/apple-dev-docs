@@ -17,7 +17,7 @@ Creates a new object capture session.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 [`isSupported`](./issupported.md) needs to be true on the device in order to create a session.
 

@@ -25,7 +25,7 @@ static let `default`: RunLoop.Mode
 extern NSRunLoopMode const NSDefaultRunLoopMode;
 ```
 
-#### Discussion
+## Discussion
 
 This is the most commonly used run-loop mode.
 

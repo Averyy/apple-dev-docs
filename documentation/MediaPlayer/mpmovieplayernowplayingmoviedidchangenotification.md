@@ -18,7 +18,7 @@ Posted when the currently playing movie has changed. There is no `userInfo` dict
 extern NSString * const MPMoviePlayerNowPlayingMovieDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the URL for currently playing movie, access the movie player’s [`contentURL`](./mpmovieplayercontroller/contenturl.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

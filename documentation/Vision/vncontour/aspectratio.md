@@ -24,7 +24,7 @@ var aspectRatio: Float { get }
 @property (readonly) float aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The aspect ratio is the original image’s width divided by its height.
 

@@ -12,13 +12,13 @@ Display an interface that lets people connect iOS, iPadOS, tvOS, watchOS, and Ma
 - Mac Catalyst 26.0+
 - tvOS 16.0+
 
-#### Overview
+## Overview
 
 The DeviceDiscoveryUI framework provides a secure, encrypted pairing mechanism to enable communications between your iOS, iPadOS, tvOS, watchOS, and Mac Catalyst apps, or between apps and accessories using peer-to-peer networks. For example, someone might control a tvOS game from their iPad or Apple Watch with  [`NSApplicationServices`](../BundleResources/information-property-list/nsapplicationservices.md) and a connection using the Network framework’s [`NWListener`](../Network/nwlistener.md), or a file-sharing app might connect two iOS devices– or an iOS device and an accessory – without a direct internet connection using a fully peer-to-peer network through [Wi-Fi Aware](../WiFiAware/WiFiAware.md).
 
 The DeviceDiscoveryUI and AccessorySetupKit frameworks enable wireless pairing between apps, and between apps and devices. Use DeviceDiscoveryUI to enable pairing from app to app and from apps to another device; the framework supports pairing with Apple and third-party devices. For pairing to enable the setup of hardware devices, use the AccessorySetupKit framework. It provides capabilities that help accessory makers to enable people to onboard and set up accessories quickly. For more information, see [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md).
 
-#### Describe your service and present the pairing interface
+## Describe your service and present the pairing interface
 
 To create an app-to-app or app-to-device connection, start by defining the services your app provides. The following example shows how to describe a named network service an app provides — the *publisher* — and demonstrates how to use a [`DevicePairingView`](./devicepairingview.md)  to present a pairing interface using SwiftUI that waits for a peer or *subscriber*.
 
@@ -76,7 +76,7 @@ This view displays a list of all the devices to which your app can connect, or a
 
 DeviceDiscoveryUI provides several advantages over creating a connection using the [Network](../Network/Network.md) framework directly. DeviceDiscoveryUI automatically sets up an optimized, encrypted connection between versions of your app running on different devices. It helps preserve people’s privacy by providing access to iOS, iPadOS, and watchOS devices only through secure peer-to-peer connections. Also, because the system securely manages the connection, people don’t need to authorize full access to their local network.
 
-#### Plan for Apple TV-specific behavior
+## Plan for Apple TV-specific behavior
 
 When using DeviceDiscoveryUI with Apple TV, the following requirements apply:
 

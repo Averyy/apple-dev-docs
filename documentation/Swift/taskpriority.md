@@ -21,7 +21,7 @@ The priority of a task.
 struct TaskPriority
 ```
 
-#### Overview
+## Overview
 
 The executor determines how priority information affects the way tasks are scheduled. The behavior varies depending on the executor currently being used. Typically, executors attempt to run tasks with a higher priority before tasks with a lower priority. However, the semantics of how priority is treated are left up to each platform and `Executor` implementation.
 

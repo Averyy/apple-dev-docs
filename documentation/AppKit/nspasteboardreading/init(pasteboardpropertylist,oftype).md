@@ -20,11 +20,11 @@ init?(pasteboardPropertyList propertyList: Any, ofType type: NSPasteboard.Pasteb
 - (id) initWithPasteboardPropertyList:(id) propertyList ofType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An object initialized using the data in `propertyList`.
 
-#### Discussion
+## Discussion
 
 This method is considered optional because, if [`readableTypes(for:)`](./readabletypes%28for%29.md) returns just a single type, and that type uses the [`asKeyedArchive`](../nspasteboard/readingoptions/askeyedarchive.md) reading option, then instances are initialized using [`init(coder:)`](../../Foundation/nscoding/init%28coder%29.md) instead of this method.
 

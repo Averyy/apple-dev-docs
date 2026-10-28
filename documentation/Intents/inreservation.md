@@ -28,7 +28,7 @@ class INReservation
 
 - [Donating Reservations](../SiriKit/donating-reservations.md)
 
-#### Overview
+## Overview
 
 Don’t create instances of this class directly. Instead, use the subclass associated with the type of reservation created.
 

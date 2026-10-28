@@ -25,7 +25,7 @@ func value(ofAttribute attrName: String, forResultAt idx: Int) -> Any?
 - (id) valueOfAttribute:(NSString *) attrName forResultAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 Value for `attrName` in the result object at `idx` in the query result array.
 

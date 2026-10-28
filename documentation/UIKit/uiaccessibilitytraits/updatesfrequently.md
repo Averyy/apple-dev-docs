@@ -25,7 +25,7 @@ static let updatesFrequently: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitUpdatesFrequently;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that updates its label or value too frequently to send update notifications. Include this trait when you want an assistive app to avoid handling continual notifications and, instead, poll for changes when it needs updated information. For example, you might use this trait to characterize the readout of a stopwatch.
 

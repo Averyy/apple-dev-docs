@@ -25,7 +25,7 @@ static let protectionKey: FileAttributeKey
 extern NSFileAttributeKey const NSFileProtectionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSString`](../nsstring.md) value. For a list of possible values, see `File Protection Values`.
 

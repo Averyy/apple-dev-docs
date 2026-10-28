@@ -5,13 +5,13 @@
 
 Discover potential shader performance issues by examining pipeline states.
 
-#### Overview
+## Overview
 
 One key method of triaging performance bottlenecks is to look at the most expensive shaders to understand which functions and lines are the most costly. The shader cost graph allows you to quickly find and triage expensive pipeline states and shaders.
 
 > ❗ **Important**: The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-##### View the shader cost graph
+### View the shader cost graph
 
 To open the shader cost graph, click the Performance button in the Metal debugger’s Debug navigator, and then click the Shaders tab above the Performance timeline.
 
@@ -21,19 +21,19 @@ When you select a pipeline state in the Timeline navigator, the shader cost grap
 
 ![A screenshot of the Metal debugger’s shader cost graph.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph@2x.png)
 
-##### Switch between shader types
+### Switch between shader types
 
 By default, selecting a render pipeline state shows the fragment shader cost graph. Selecting a compute pipeline state shows the compute shader cost graph.
 
 You can switch between different shader types using the Vertex and Fragment tabs above the shader cost graph.
 
-##### Navigate the shader cost graph
+### Navigate the shader cost graph
 
 The shader cost graph in the top section left-aligns the most expensive shader function calls, and shows the function call stack from top to bottom. The shader source code of the corresponding shader type appears below the graph.
 
 You can select a function in the shader cost graph to view its shader source code below in the source editor.
 
-##### Understand per-line costs
+### Understand per-line costs
 
 The percentage weights appear in the gutter of the shader source code to the left of the lines of code.
 
@@ -85,7 +85,7 @@ Each arithmetic instruction may operate on different data types, such as half-fl
 - Integer
 - Bits
 
-##### Switch between per-line metric modes
+### Switch between per-line metric modes
 
 In the shader source code control bar, you can choose different modes for the per-line shader profiling statistics in the gutter. Options include the following:
 

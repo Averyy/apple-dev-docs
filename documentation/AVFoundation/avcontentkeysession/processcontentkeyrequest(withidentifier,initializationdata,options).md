@@ -25,7 +25,7 @@ func processContentKeyRequest(withIdentifier identifier: (any Sendable)?, initia
 - (void) processContentKeyRequestWithIdentifier:(id) identifier initializationData:(NSData *) initializationData options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Either the `identifier` or `initializationData` parameters must be non-`nil`. If required by the protocol, both parameters can be non-`nil`.
 

@@ -17,7 +17,7 @@ Returns a selection of files chosen by the user in the Open panel.
 - (NSArray *) fileNamesFromRunningOpenPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Each file in the returned `NSArray` is a fully qualified path to the file’s location in the file system. This method is called by [`openDocument(_:)`](./opendocument%28_%29.md), and it calls [`runModalOpenPanel(_:forTypes:)`](./runmodalopenpanel%28_,fortypes%29.md) after initializing the Open panel (which includes getting the starting directory with [`currentDirectory`](./currentdirectory.md)). Returns `nil` if the user cancels the Open panel or makes no selection.
 

@@ -21,7 +21,7 @@ A view spacing instance that contains zero on all edges.
 static let zero: ViewSpacing
 ```
 
-#### Discussion
+## Discussion
 
 You typically only use this value for an empty view.
 

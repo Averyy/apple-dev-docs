@@ -19,7 +19,7 @@ enum CFXMLNodeTypeCode
 enum CFXMLNodeTypeCode : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 When the parser encounters a new XML structure, its data type and contents are placed in a CFXMLNode object.
 

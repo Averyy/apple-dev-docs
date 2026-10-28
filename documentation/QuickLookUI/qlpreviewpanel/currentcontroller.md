@@ -19,7 +19,7 @@ var currentController: Any! { get }
 @property (readonly) id currentController;
 ```
 
-#### Discussion
+## Discussion
 
 You should never change the preview panel’s state (for example, its delegate, datasource, and so on) if you aren’t controlling it.
 

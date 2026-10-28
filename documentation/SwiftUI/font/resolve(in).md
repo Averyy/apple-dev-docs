@@ -21,7 +21,7 @@ Evaluates this font to a resolved font given the current context.
 func resolve(in context: Font.Context) -> Font.Resolved
 ```
 
-#### Discussion
+## Discussion
 
 The system resolves a font’s value at the time it uses the font in a given environment’s context because [`Font`](../font.md) is a late-binding token.
 

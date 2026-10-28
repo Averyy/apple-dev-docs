@@ -15,7 +15,7 @@ Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 - **Name**: `WiFiAwareServices` (Wi-Fi Aware Services)
 - **Type**: dictionary
 
-#### Overview
+## Overview
 
 This key works with the [Wi-Fi Aware](../../WiFiAware/WiFiAware.md) framework, to define the services your app publishes, or to specify the services your app subscribes to, or both.
 

@@ -5,7 +5,7 @@
 
 Load a sequence of images and play them back at a rate you define, while optionally looping the resulting animation.
 
-#### Overview
+## Overview
 
 A sprite’s texture property points to its current texture. You can change this property to point to a new texture. The next time the scene renders a new frame, it renders with the new texture. Whenever you change the texture, you may also need to change other sprite properties—such as `size`, [`anchorPoint`](./skspritenode/anchorpoint.md), and [`centerRect`](./skspritenode/centerrect.md)—to be consistent with the new texture. Usually, it is better to ensure that all the artwork is consistent so that the same values can be used for all of the textures. That is, the textures should have a consistent size and anchor point placement so that your game does not need to update anything other than the texture.
 

@@ -19,7 +19,7 @@ func NSShowsServicesMenuItem(_ itemName: String) -> Bool
 extern BOOL NSShowsServicesMenuItem(NSString *itemName);
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. This function simply returns [`true`](../Swift/true.md).
 

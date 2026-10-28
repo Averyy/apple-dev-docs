@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_LensDomain: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_LensDomain;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the kind of lens (e.g., color).
 

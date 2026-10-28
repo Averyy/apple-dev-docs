@@ -18,7 +18,7 @@ Exports the base part of this document to a `PDFDocument`.
 func exportBaseAsPDF() async -> PDFDocument
 ```
 
-#### Return Value
+## Return Value
 
 The base part of this document as a `PDFDocument`.
 

@@ -23,11 +23,11 @@ func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint
 - (CGPoint) targetContentOffsetForProposedContentOffset:(CGPoint) proposedContentOffset withScrollingVelocity:(CGPoint) velocity;
 ```
 
-#### Return Value
+## Return Value
 
 The content offset that you want to use instead. This value reflects the adjusted upper-left corner of the visible area. The default implementation of this method returns the value in the `proposedContentOffset` parameter.
 
-#### Discussion
+## Discussion
 
 If you want the scrolling behavior to snap to specific boundaries, you can override this method and use it to change the point at which to stop. For example, you might use this method to always stop scrolling on a boundary between items, as opposed to stopping in the middle of an item.
 

@@ -23,7 +23,7 @@ let product: Product
 - [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 To enable users to complete the purchase they start on the App Store, call [`purchase(options:)`](../product/purchase%28options%29.md) on this product instance.
 

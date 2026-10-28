@@ -19,7 +19,7 @@ var pathSeparator: String { get set }
 @property (copy) NSString * pathSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `/`.
 

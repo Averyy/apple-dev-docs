@@ -17,7 +17,7 @@ The metadata for the configuration that specifies categories of apps for the sys
 static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`ShieldSettings.ActivityCategoryPolicy.none`](./activitycategorypolicy/none.md).
 

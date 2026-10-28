@@ -22,7 +22,7 @@ struct LaunchTaskError
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `LaunchTaskError` is delivered to the `onTrackingError` closure passed to [`trackLaunchTask(id:onTrackingError:_:)`](./tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md) or [`trackLaunchTask(id:onTrackingError:_:)`](./tracklaunchtask%28id,ontrackingerror,_%29-jnu1.md). Inspect [`reason`](./launchtaskerror/reason-swift.property.md) to determine the cause:
 

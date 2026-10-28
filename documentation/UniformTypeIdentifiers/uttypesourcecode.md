@@ -21,7 +21,7 @@ A base type that represents source code of any programming language.
 extern UTType * const UTTypeSourceCode;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.source-code`.
 

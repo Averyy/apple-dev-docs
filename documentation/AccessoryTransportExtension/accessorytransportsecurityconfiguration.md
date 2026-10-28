@@ -15,7 +15,7 @@ A protocol that configures and manages communication between your security exten
 protocol AccessoryTransportSecurityConfiguration : AppExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) protocol uses this configuration to establish communication with the system.
 

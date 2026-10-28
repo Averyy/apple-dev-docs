@@ -21,7 +21,7 @@ Verifies a MLDSA87 signature, in a specific context.
 func isValidSignature<S, D, C>(_ signature: S, for data: D, context: C) -> Bool where S : DataProtocol, D : DataProtocol, C : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the signature is valid in the specified context, `false` otherwise.
 

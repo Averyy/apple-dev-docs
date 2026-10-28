@@ -24,7 +24,7 @@ var device: (any MTLDevice)? { get set }
 @property (nonatomic, retain, nullable) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. You must explicitly set the device object.
 

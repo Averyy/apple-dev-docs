@@ -23,7 +23,7 @@ var identifier: String { get }
 @property (nonatomic, strong, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each identifier must be unique across all the tabs managed by a [`UITabBarController`](../uitabbarcontroller.md).
 

@@ -23,11 +23,11 @@ class func success(with resolvedTemporalEventTrigger: INTemporalEventTrigger) ->
 + (instancetype) successWithResolvedTemporalEventTrigger:(INTemporalEventTrigger *) resolvedTemporalEventTrigger;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemporalEventTriggerResolutionResult`](../intemporaleventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you successfully identify the trigger object to modify. Provide an [`INTemporalEventTrigger`](../intemporaleventtrigger.md) object with as much information about the trigger conditions you have available.
 

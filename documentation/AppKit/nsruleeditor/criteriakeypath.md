@@ -19,7 +19,7 @@ var criteriaKeyPath: String { get set }
 @property (copy) NSString * criteriaKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The key path is used to get the criteria for a row in the “rows” binding. The criteria objects are the objects returned by calling the delegate’s [`ruleEditor(_:child:forCriterion:with:)`](../nsruleeditordelegate/ruleeditor%28_,child,forcriterion,with%29.md) method once for every child in the specified row. The corresponding property is an ordered to-many relationship.
 

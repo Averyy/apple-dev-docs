@@ -23,11 +23,11 @@ func gss_export_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cred_han
 OM_uint32 gss_export_cred(OM_uint32 *minor_status, gss_cred_id_t cred_handle, gss_buffer_t token);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 You can recover the credential exported this way using [`gss_import_cred(_:_:_:)`](./gss_import_cred%28_,_,_%29.md).
 

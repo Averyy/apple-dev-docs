@@ -24,7 +24,7 @@ var color2: CGColor? { get set }
 @property (nonatomic, nullable) CGColorRef color2;
 ```
 
-#### Discussion
+## Discussion
 
 This color appears in the second square from top left (in either direction) of the generated pattern, and in alternate squares thereafter.
 

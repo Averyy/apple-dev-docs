@@ -23,7 +23,7 @@ var transmissionRiskLevel: ENRiskLevel { get }
 @property (nonatomic, assign, readonly) ENRiskLevel transmissionRiskLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Each app defines its own meaning for each of the risk levels (0-7).
 

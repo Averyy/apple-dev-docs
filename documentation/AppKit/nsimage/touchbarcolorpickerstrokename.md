@@ -22,7 +22,7 @@ class let touchBarColorPickerStrokeName: String
 extern NSImageName const NSImageNameTouchBarColorPickerStroke;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for color picker for stroke](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793529@2x.png)
 

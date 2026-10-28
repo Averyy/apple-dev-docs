@@ -24,7 +24,7 @@ func setExplicitPaddingWithPaddingLeft(_ paddingLeft: Int, paddingRight: Int, pa
 - (void) setExplicitPaddingWithPaddingLeft:(NSUInteger) paddingLeft paddingRight:(NSUInteger) paddingRight paddingTop:(NSUInteger) paddingTop paddingBottom:(NSUInteger) paddingBottom;
 ```
 
-#### Discussion
+## Discussion
 
 Note: this method also sets `paddingStyle` to `MPSGraphPaddingStyleExplicit` (see [`MPSGraphPaddingStyle`](../mpsgraphpaddingstyle.md)).
 

@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, shouldRemove marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldRemoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 If the client returns [`true`](../../Swift/true.md) the ruler view allows the user to remove the marker; if the client returns [`false`](../../Swift/false.md) the marker is kept pinned to the ruler’s baseline. This message is sent as many times as needed while the user drags the marker.
 

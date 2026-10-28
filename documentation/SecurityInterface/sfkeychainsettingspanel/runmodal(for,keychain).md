@@ -19,7 +19,7 @@ func runModal(for settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain
 - (NSInteger) runModalForSettings:(SecKeychainSettings *) settings keychain:(SecKeychainRef) keychain;
 ```
 
-#### Discussion
+## Discussion
 
 The method result indicates which button the user clicks: [`NSOKButton`](../../AppKit/nsokbutton.md) or [`NSCancelButton`](../../AppKit/nscancelbutton.md) .
 

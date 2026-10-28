@@ -21,7 +21,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdatePanGestureWithT
 - (void) mapTemplate:(CPMapTemplate *) mapTemplate didUpdatePanGestureWithTranslation:(CGPoint) translation velocity:(CGPoint) velocity;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay doesn’t call this method when connected to some CarPlay systems.
 

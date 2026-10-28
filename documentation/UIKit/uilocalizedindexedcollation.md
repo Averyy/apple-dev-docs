@@ -24,7 +24,7 @@ class UILocalizedIndexedCollation
 @interface UILocalizedIndexedCollation : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UILocalizedIndexedCollation`](./uilocalizedindexedcollation.md) object in conjunction with your table’s data source object to sort and manage the data in an indexed table view. An index is an ideal way for users to navigate a table view containing sequential content. For example, the Contacts app sorts contacts alphabetically and displays an index for navigating those contacts quickly. You use the collation object as the source of the table’s section titles and index titles in your table view. You also use it to sort items in each section of your table.
 

@@ -28,7 +28,7 @@ A Boolean value indicating whether to enable the seat cooling system.
 @property (atomic, copy, readonly, nullable) NSNumber * enableCooling;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modifies the heating or massage settings.
 

@@ -24,7 +24,7 @@ var backgroundFilters: [Any]? { get set }
 @property (copy, nullable) NSArray * backgroundFilters;
 ```
 
-#### Discussion
+## Discussion
 
 Background filters affect the content behind the layer that shows through into the layer itself. Typically this content belongs to the superlayer that acts as the parent of the layer. These filters do not affect the content of the layer itself, including the layer’s background color and border.
 
@@ -97,7 +97,7 @@ However, if the foreground layer’s [`masksToBounds`](./maskstobounds.md) is se
 
 ![Background filter effect without mask to bounds](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851424@2x.png)
 
-##### Special Considerations
+### Special Considerations
 
 This property is not supported on layers in iOS.
 

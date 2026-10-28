@@ -25,7 +25,7 @@ func addPointer(_ pointer: UnsafeMutableRawPointer?)
 - (void) addPointer:(void *) pointer;
 ```
 
-#### Discussion
+## Discussion
 
 `pointer` is added at index [`count`](./count.md).
 

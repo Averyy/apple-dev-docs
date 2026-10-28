@@ -5,7 +5,7 @@
 
 Equivalent to [`SCNWrapMode.repeat`](./scnwrapmode/repeat.md).
 
-#### Overview
+## Overview
 
 Deprecated in OS X v10.9. Use [`SCNWrapMode.repeat`](./scnwrapmode/repeat.md) instead.
 

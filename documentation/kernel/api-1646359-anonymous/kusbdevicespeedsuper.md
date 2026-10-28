@@ -13,7 +13,7 @@
 kUSBDeviceSpeedSuper = 3
 ```
 
-#### Discussion
+## Discussion
 
 The device is a SuperSpeed device
 

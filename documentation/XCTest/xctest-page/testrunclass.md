@@ -16,7 +16,7 @@ var testRunClass: AnyClass? { get }
 @property (readonly, nullable) Class testRunClass;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override `testRunClass`.
 

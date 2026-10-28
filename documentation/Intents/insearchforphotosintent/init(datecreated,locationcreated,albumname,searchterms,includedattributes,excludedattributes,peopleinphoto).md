@@ -25,11 +25,11 @@ init(dateCreated: INDateComponentsRange?, locationCreated: CLPlacemark?, albumNa
 - (instancetype) initWithDateCreated:(INDateComponentsRange *) dateCreated locationCreated:(CLPlacemark *) locationCreated albumName:(NSString *) albumName searchTerms:(NSArray<NSString *> *) searchTerms includedAttributes:(INPhotoAttributeOptions) includedAttributes excludedAttributes:(INPhotoAttributeOptions) excludedAttributes peopleInPhoto:(NSArray<INPerson *> *) peopleInPhoto;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks for a photo-related search. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

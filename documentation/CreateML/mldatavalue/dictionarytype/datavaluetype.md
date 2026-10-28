@@ -20,7 +20,7 @@ The underlying type a machine learning dictionary uses when it wraps itself in a
 static var dataValueType: MLDataValue.ValueType { get }
 ```
 
-#### Discussion
+## Discussion
 
 A machine learning dictionary is an [`MLDataValue.ValueType.dictionary`](../valuetype/dictionary.md).
 

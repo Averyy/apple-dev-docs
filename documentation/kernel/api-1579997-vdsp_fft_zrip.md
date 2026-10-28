@@ -15,7 +15,7 @@ Computes a forward or inverse in-place, single-precision real FFT.
 void vDSP_fft_zrip(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __Log2N, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 Forward transforms read real input and write packed complex output. Inverse transforms read packed complex input and write real output. As a result of packing the frequency-domain data, time-domain data and its equivalent frequency-domain data have the same storage requirements. You can find more details on the packing format in Data Packing for Real FFTs in vDSP Programming Guide.
 

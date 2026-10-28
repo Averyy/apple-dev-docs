@@ -5,7 +5,7 @@
 
 Improve the performance and appearance of video in your website in Safari.
 
-#### Overview
+## Overview
 
 When adding video content to your website you have several playback and optimization options which can help to improve the playback controls and performance of video for the user:
 
@@ -19,13 +19,13 @@ To deliver video content in your website:
 2. Optimize your video playback by making use of low-power mode or by using a short video file in an image element instead of animated GIFs.
 3. Add the appropriate playback controls for inline, full screen, or WebRTC, depending on the type of content in the video.
 
-##### Play a Video in Your Webpage
+### Play a Video in Your Webpage
 
 Using `<video>` elements in HTML5 markup allows you to embed video on your website.
 
 Safari honors the `preload="metadata"` attribute, allowing `<video>` and `<audio>` elements to load enough media data to determine that media’s size, duration, and available tracks. A `<video>` element can use the `play()` method to automatically play without user gestures only when it contains no audio tracks or has its `muted` property set to `true`. If this video element gains an audio track or becomes unmuted without a user gesture,  playback pauses. Playback stops if the video element isn’t visible onscreen or is out of the viewport.
 
-###### Enable Video Autoplay
+#### Enable Video Autoplay
 
 Video elements that include `<video autoplay>` play automatically when the video loads in Safari on macOS and iOS, only if those elements also include the  `playsinline` attribute. For more information on inline playback, see [Enable Inline Video Playback](./delivering-video-content-for-safari.md#Enable-Inline-Video-Playback).
 
@@ -33,11 +33,11 @@ By default, autoplay executes only if the video doesn’t contain an audio track
 
 Autoplay video when the user expects it to autoplay in your website. For example, autoplay video in interfaces where video playback is the purpose of the webpage, like a video-sharing or hosting website.
 
-##### Optimize Video Content for Safari
+### Optimize Video Content for Safari
 
 To ensure that video content takes advantage of the hardware and software optimizations of your machine and Safari, get your video into low-power mode and use MP4 files instead of animated GIFs.
 
-###### Reduce Power Usage in Video Playback
+#### Reduce Power Usage in Video Playback
 
 On certain macOS devices, such as the Retina MacBook or MacBook Pro, hardware configurations make video elements play in low-power mode. This mode allows your video to render efficiently to the display without an expensive color processing step.
 
@@ -45,7 +45,7 @@ Low-power mode is available for a video element that is in full screen, against 
 
 Set the CSS property `display:none` for all non-video elements on your webpage while the video is playing, to ensure that low-power mode is enabled for your video element. Then, check that the remaining background behind the video is black.
 
-###### Use Quartz Debug to Test Low-Power Regions
+##### Use Quartz Debug to Test Low-Power Regions
 
 To ensure that low-power mode is working correctly, test the efficiency of your web content using the Show Detached Regions feature of Quartz Debug.
 
@@ -63,7 +63,7 @@ This tool places a color overlay on the desktop. Red represents normal power usa
 
 If you use `<video controls>`, then in full screen your video will get low-power mode automatically when the controls disappear. If you make your own custom media controls, then make sure everything is hidden when the user is watching the video. Avoid having items such as timelines remain after it’s clear the user is just watching the video. For more information on debugging low-power mode and other media issues, see [Debugging Media in Web Inspector](https://webkit.org/blog/8923/debugging-media-in-web-inspector/).
 
-###### Use MP4 Video Instead of Animated GIFs
+#### Use MP4 Video Instead of Animated GIFs
 
 GIFs can be up to 12 times as expensive in bandwidth and twice as expensive in energy use when compared to a modern video codec. Instead, use H.264-encoded MP4 files for animations; for example:
 
@@ -83,17 +83,17 @@ To maintain compatibility with other web browsers, also include a fallback image
 </picture>
 ```
 
-##### Select Playback Controls for Your Video
+### Select Playback Controls for Your Video
 
 Use the best playback mode and controls for your video, depending on what type of content you are playing in your webpage.
 
-###### Enable Inline Video Playback
+#### Enable Inline Video Playback
 
 When you want to display short-form content, it is more optimal to play your video inline. Use `<video playsinline>` to play videos inline.
 
 Without the `playsinline` attribute, videos must be in full-screen mode for playback on iPhone. If videos do play in full-screen mode, they will continue to play inline when the user exits full-screen mode, even if the video element doesn’t contain the `playsinline` property.
 
-###### Enable Full-Screen Video Playback
+#### Enable Full-Screen Video Playback
 
 When you want to display long-form content, it is more optimal to display your video in full-screen mode. On iPhone, when users play a video, they enter full screen automatically, unless inline playback has been explicitly specified. For all other platforms, if you use the video element’s default playback controls, the full-screen button is always available.
 
@@ -101,7 +101,7 @@ If, however, you want to add custom playback controls to your video element, you
 
 To see all full-screen functions in the API, see Displaying Video Fullscreen. To add additional playback controls for Picture in Picture and AirPlay, see [Adding Picture in Picture to your Safari media controls](../webkitjs/adding_picture_in_picture_to_your_safari_media_controls.md) and [Adding an AirPlay button to your Safari media controls](../webkitjs/adding_an_airplay_button_to_your_safari_media_controls.md).
 
-###### Add WebRTC Playback Controls
+#### Add WebRTC Playback Controls
 
 WebRTC is also available for video broadcasting and conferencing in Safari. There is an expectation when joining a conference or webinar, that any remote video autoplays.
 

@@ -16,7 +16,7 @@ typedef struct IOOutputQueueStats {
 } IOOutputQueueStats;
 ```
 
-#### Overview
+## Overview
 
 Statistics recorded by IOOutputQueue objects.
 

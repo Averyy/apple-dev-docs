@@ -20,7 +20,7 @@ An arbitrary name that assigns an audio resource to an audio mix group.
 var mixGroupName: String?
 ```
 
-#### Discussion
+## Discussion
 
 See [`AudioMixGroup`](../audiomixgroup.md) and [`AudioMixGroupsComponent`](../audiomixgroupscomponent.md) for more information.
 

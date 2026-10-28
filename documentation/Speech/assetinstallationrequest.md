@@ -21,7 +21,7 @@ An object that describes, downloads, and installs a selection of assets.
 final class AssetInstallationRequest
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this type directly; obtain them from [`assetInstallationRequest(supporting:)`](./assetinventory/assetinstallationrequest%28supporting%29.md).
 

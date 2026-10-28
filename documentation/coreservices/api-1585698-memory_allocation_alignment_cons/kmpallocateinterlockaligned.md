@@ -14,7 +14,7 @@
 kMPAllocateInterlockAligned = 255
 ```
 
-#### Discussion
+## Discussion
 
 Use interlock alignment, which is the alignment needed to allow the use of CPU interlock instructions (that is, `lwarx` and `stwcx`.) on the returned memory address. This alignment is set at runtime. In most cases you would never need to use this alignment. 
 

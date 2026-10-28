@@ -15,13 +15,13 @@ Pagination settings specific to reporting requests.
 object RequestPagination
 ```
 
-#### Discussion
+## Discussion
 
 The `RequestPagination` controls which page of results is returned for a reporting request.
 
 The `ResponsePagination` object on the report response returns the total number of available results. Use it to calculate how many additional pages exist and to determine the `offset` for subsequent requests when iterating through large result sets.
 
-##### Example
+### Example
 
 ```json
 {

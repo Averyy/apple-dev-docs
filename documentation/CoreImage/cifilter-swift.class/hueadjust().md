@@ -24,11 +24,11 @@ class func hueAdjust() -> any CIFilter & CIHueAdjust
 + (CIFilter<CIHueAdjust> *) hueAdjustFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the hue-adjust filter to an image. The effect changes the hue or color of the pixels by using the angle to modify the image’s color data.
 

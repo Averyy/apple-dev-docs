@@ -19,7 +19,7 @@ Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
 struct ComputeGraphRuntimeComponent
 ```
 
-#### Overview
+## Overview
 
 RealityKit creates the ComputeGraphRuntimeComponent automatically on the first frame that a ComputeGraphComponent becomes active. You do not need to add it manually.
 

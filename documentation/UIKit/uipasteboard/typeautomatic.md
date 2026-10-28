@@ -22,7 +22,7 @@ class let typeAutomatic: String
 extern NSString * const UIPasteboardTypeAutomatic;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type in the [`setItems(_:options:)`](./setitems%28_,options%29.md) method to automatically insert appropriate UTIs for supported types. In iOS 10, supported types are [`NSString`](../../Foundation/nsstring.md), [`NSAttributedString`](../../Foundation/nsattributedstring.md), [`NSURL`](../../Foundation/nsurl.md), [`UIImage`](../uiimage.md), and [`UIColor`](../uicolor.md).
 

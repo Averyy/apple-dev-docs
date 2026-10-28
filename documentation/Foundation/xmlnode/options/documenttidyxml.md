@@ -20,7 +20,7 @@ static var documentTidyXML: XMLNode.Options { get }
 NSXMLDocumentTidyXML
 ```
 
-#### Discussion
+## Discussion
 
 It also eliminates “pretty-printing” formatting, such as leading tab characters. It does respect the `xml:space="preserve"` attribute.
 

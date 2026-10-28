@@ -23,7 +23,7 @@ var tracksTextAttachmentViewBounds: Bool { get set }
 @property BOOL tracksTextAttachmentViewBounds;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the framework calls the `textAttachment` property’s [`attachmentBounds(for:location:textContainer:proposedLineFragment:position:)`](./attachmentbounds%28for,location,textcontainer,proposedlinefragment,position%29.md) method and examines the text attachment view provider to determine the bounds instead of using the `bounds` property of this instance. Defaults to `false`.
 

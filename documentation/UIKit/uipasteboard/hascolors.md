@@ -22,7 +22,7 @@ var hasColors: Bool { get }
 @property (nonatomic, readonly) BOOL hasColors;
 ```
 
-#### Discussion
+## Discussion
 
 Employ this property to determine if a pasteboard contains color data.
 

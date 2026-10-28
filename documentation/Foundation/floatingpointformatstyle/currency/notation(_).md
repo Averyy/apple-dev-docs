@@ -21,7 +21,7 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point currency format style modified to use the specified notation.
 

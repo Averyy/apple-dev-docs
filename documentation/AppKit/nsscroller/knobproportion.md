@@ -19,7 +19,7 @@ var knobProportion: CGFloat { get set }
 @property CGFloat knobProportion;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a floating-point value from 0.0 (minimal size) to 1.0 (fills the slot).
 

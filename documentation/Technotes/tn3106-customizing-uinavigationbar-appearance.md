@@ -5,9 +5,9 @@
 
 Adopt UINavigationBarAppearance for a navigation bar background color that’s consistent on iOS 13 through 18.
 
-#### Overview
+## Overview
 
-[UINavigationBar](../UIKit/uinavigationbar.md) in iOS 15 introduces changes to its appearance settings. It extends the usage of its [scrollEdgeAppearance](../UIKit/uinavigationbar/api-3198027-scrolledgeappearance.md), which by default produces a transparent background, to all navigation bar styles.
+[UINavigationBar](../UIKit/uinavigationbar.md) in iOS 15 introduces changes to its appearance settings. It extends the usage of its [scrollEdgeAppearance](../UIKit/uinavigationbar/scrolledgeappearance.md), which by default produces a transparent background, to all navigation bar styles.
 
 The iOS 13 SDK introduced an appearance settings class [UINavigationBarAppearance](../UIKit/uinavigationbarappearance.md). If you’re seeing a view controller with appearance issues like a black navigation bar or incorrect status bar content color when building with Xcode 13 and running on iOS 15, adopt `UINavigationBarAppearance`. For a view controller that scrolls its content, use it to apply both `standardAppearance` and `scrollEdgeAppearance` to the `UINavigationBar`.
 
@@ -19,7 +19,7 @@ The iOS 13 SDK introduced an appearance settings class [UINavigationBarAppearanc
 > - WWDC25 session 356: [Get to know the new design system](https://developer.apple.com/videos/play/wwdc2025/356/)
 > - WWDC25 session 284: [Build a UIKit app with the new design](https://developer.apple.com/videos/play/wwdc2025/284/).
 
-#### Configure the UINavigationBarAppearance
+## Configure the UINavigationBarAppearance
 
 Consider an app that uses `UITableViewController`, and has the following code in `application(_ :didFinishLaunchingWithOptions:)`:
 
@@ -59,7 +59,7 @@ func customNavBarAppearance() -> UINavigationBarAppearance {
 }
 ```
 
-#### Configure the entire app
+## Configure the entire app
 
 To apply this appearance to the navigation bar throughout the entire app:
 
@@ -79,7 +79,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-#### Configure a view controller
+## Configure a view controller
 
 To apply this appearance to the navigation bar of an individual view controller:
 
@@ -114,7 +114,7 @@ Change the color of the title and button elements:
 2. Change the Standard Text Attributes “Title” from “Inherited” to “Custom”.
 3. Change the Standard Title Attributes “Title Color” from “Default” to “White Color”. Repeat steps 2 and 3 for: Scroll Edge and Compact Scroll Edge appearances.
 
-#### Revision History
+## Revision History
 
 - **2025-09-03** Added information about the new design in iOS 26.
 - **2022-03-01** First published.

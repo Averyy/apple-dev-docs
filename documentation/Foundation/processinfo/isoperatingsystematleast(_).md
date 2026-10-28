@@ -25,11 +25,11 @@ func isOperatingSystemAtLeast(_ version: OperatingSystemVersion) -> Bool
 - (BOOL) isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion) version;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operating system on which the process is executing is the same or later than the given version; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method accounts for major, minor, and update versions of the operating system.
 

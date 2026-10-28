@@ -27,7 +27,7 @@ func viewDidLayoutSubviews()
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Discussion
+## Discussion
 
 When the bounds change for a view controller’s view, the view adjusts the positions of its subviews and then the system calls this method. However, this method being called *does not* indicate that the individual layouts of the view’s subviews have been adjusted. Each subview is responsible for adjusting its own layout.
 

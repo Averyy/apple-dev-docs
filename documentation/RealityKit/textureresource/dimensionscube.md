@@ -20,7 +20,7 @@ The dimensions of the cube texture.
 struct DimensionsCube
 ```
 
-#### Overview
+## Overview
 
 This specifies the face size of the cube texture.
 

@@ -22,7 +22,7 @@ var isFaceDrivenAutoExposureEnabled: Bool { get set }
 @property (nonatomic, getter=isFaceDrivenAutoExposureEnabled) BOOL faceDrivenAutoExposureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Face-driven autoexposure takes a subject’s face into account when performing automatic exposure adjustments. Enabling this feature can better expose subjects with darker skin tones or those who are backlit. For apps that link against iOS 15.4 or later, the value of this property defaults to [`true`](../../Swift/true.md) for devices that support autoexposure.
 

@@ -21,11 +21,11 @@ Returns an array containing the concatenated results of calling the given transf
 func flatMap<SegmentOfResult>(_ transform: (Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element] where SegmentOfResult : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 The resulting flattened array.
 
-#### Discussion
+## Discussion
 
 Use this method to receive a single-level collection when your transformation produces a sequence or collection for each element.
 

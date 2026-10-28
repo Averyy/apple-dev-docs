@@ -21,7 +21,7 @@ func setNeedsStatusBarAppearanceUpdate()
 - (void) setNeedsStatusBarAppearanceUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if the view controller’s status bar attributes, such as hidden/unhidden status or style, change. If you call this method within an animation block, the changes are animated along with the rest of the animation block.
 

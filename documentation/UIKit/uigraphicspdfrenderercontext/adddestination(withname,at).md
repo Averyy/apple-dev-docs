@@ -23,7 +23,7 @@ func addDestination(withName name: String, at point: CGPoint)
 - (void) addDestinationWithName:(NSString *) name atPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in conjunction with the [`setDestinationWithName(_:for:)`](./setdestinationwithname%28_,for%29.md) method to create internal links within a PDF. This method represents the creation of the points to which the PDF viewer will jump when a user clicks a link.
 

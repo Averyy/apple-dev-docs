@@ -22,7 +22,7 @@ nonisolated
 convenience init(_ type: NSManagedObjectContext.ConcurrencyType)
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Concurrency](../nsmanagedobjectcontext.md#Concurrency).
 

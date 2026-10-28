@@ -24,7 +24,7 @@ let kVTScalingMode_Trim: CFString
 extern CFStringRef const kVTScalingMode_Trim;
 ```
 
-#### Discussion
+## Discussion
 
 If a destination pixel aspect ratio is not set, the source image’s pixel aspect ratio is used. The pixel aspect ratio used is set on the destination image buffer.
 

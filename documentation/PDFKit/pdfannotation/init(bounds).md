@@ -21,11 +21,11 @@ convenience init(bounds: NSRect)
 - (instancetype) initWithBounds:(NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFAnnotation` instance, or `NULL` if the object can’t initialize.
 
-#### Discussion
+## Discussion
 
 Subclasses of `PDFAnnotation` use this method to initialize annotation instances. Provide `bounds` in page-space coordinates. Invoking `initWithBounds:` directly on a `PDFAnnotation` object creates an illegal `NULL` type.
 

@@ -20,11 +20,11 @@ func accessibilityPerformDecrement() -> Bool
 - (BOOL) accessibilityPerformDecrement;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
-#### Discussion
+## Discussion
 
 This method must post an [`valueChanged`](../nsaccessibility-swift.struct/notification/valuechanged.md) notification after changing the stepper’s value.
 

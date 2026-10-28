@@ -21,11 +21,11 @@ Modifies the date format style to use the specified quarter format style.
 func quarter(_ format: Date.FormatStyle.Symbol.Quarter = .abbreviated) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified quarter style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Quarter`](./symbol/quarter.md) include [`abbreviated`](./symbol/quarter/abbreviated.md), [`narrow`](./symbol/quarter/narrow.md), [`oneDigit`](./symbol/quarter/onedigit.md), [`twoDigits`](./symbol/month/twodigits.md), and [`wide`](./symbol/month/wide.md).
 

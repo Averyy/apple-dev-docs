@@ -23,7 +23,7 @@ static let rdd18InstanceUID: AVCaptureAncillaryDataUserKey
 extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18InstanceUID;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may set the Instance UID with `AVCaptureAncillaryDataEncoder/setUserInstanceUID:userUdamVersion:`
 

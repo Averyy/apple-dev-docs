@@ -23,7 +23,7 @@ var allTargets: Set<AnyHashable> { get }
 @property (nonatomic, readonly) NSSet * allTargets;
 ```
 
-#### Return Value
+## Return Value
 
 A set of all target objects associated with the control. The returned set may include one or more [`NSNull`](../../Foundation/nsnull.md) objects to indicate actions that are dispatched to the responder chain.
 

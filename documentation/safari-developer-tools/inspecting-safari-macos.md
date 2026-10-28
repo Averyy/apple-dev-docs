@@ -5,11 +5,11 @@
 
 Inspect webpages, service workers, and extensions in Safari on macOS.
 
-#### Overview
+## Overview
 
 Safari supports inspecting all webpages, service workers, and extensions. The way in which you inspect content depends on the type of content.
 
-#### Inspecting a webpage
+## Inspecting a webpage
 
 In Safari, there are two ways to begin inspecting a webpage.
 
@@ -19,25 +19,25 @@ The second way to show Web Inspector is to right click on the webpage and choose
 
 Once opened, Web Inspector will continue to inspect the tab for which it was opened, even as you navigate to other pages in that tab.
 
-#### Inspecting a service worker
+## Inspecting a service worker
 
 [Service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
 When a service worker is running, you can inspect it by going to the **Develop** menu, selecting **Service Workers**, and then choosing the service worker you wish to inspect.
 
-#### Inspecting extensions
+## Inspecting extensions
 
-Extensions can run script or create webpages in several places, and how you inspect them varies depending on what the content is. [Learn more about debugging web extensions…](../SafariServices/safari_web_extensions/troubleshooting_your_safari_web_extension.md#3734523)
+Extensions can run script or create webpages in several places, and how you inspect them varies depending on what the content is. [Learn more about debugging web extensions…](../SafariServices/troubleshooting-your-safari-web-extension.md#3734523)
 
-##### Content scripts
+### Content scripts
 
 To debug the scripts that web extensions have injected into webpages, first [inspect the webpage](./inspecting-safari-macos.md#Inspectingawebpage). Once Web Inspector is opened, click the Sources tab, and select your content script file from the Extension Scripts folder at the lower left. Then select your extension’s execution context by using the selector in the lower-right corner of the inspector. Set breakpoints by clicking the gutter with line numbers in the source view. Inspect other source files for your extension, such as style sheets, in the Sources area at the lower left.
 
-##### Background scripts
+### Background scripts
 
 To debug background scripts, open the **Develop** menu and go to the **Web Extension Background Pages** submenu. From there, select background script for the extension you wish to inspect.
 
-##### Toolbar pop-up
+### Toolbar pop-up
 
 To debug your extension’s pop-up, click the button for your extension in the Safari toolbar to display the pop-up. Control-click the pop-up and select **Inspect Element** to open Web Inspector for the pop-up.
 

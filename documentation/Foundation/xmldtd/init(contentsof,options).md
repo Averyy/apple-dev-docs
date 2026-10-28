@@ -20,11 +20,11 @@ convenience init(contentsOf url: URL, options mask: XMLNode.Options = []) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url options:(NSXMLNodeOptions) mask error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLDTD` object or `nil` if initialization fails because of parsing errors or other reasons.
 
-#### Discussion
+## Discussion
 
 You use this method to create a stand-alone DTD which you can thereafter query and use for validation. You can associate the DTD created through this message with a document by setting the [`dtd`](../xmldocument/dtd.md) property on an [`XMLDocument`](../xmldocument.md) object.
 

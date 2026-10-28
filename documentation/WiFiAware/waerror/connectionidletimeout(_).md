@@ -17,7 +17,7 @@ An error that occurs due to an idle or unused connection.
 case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a connection is unused for an excessive duration and closed as a result.
 

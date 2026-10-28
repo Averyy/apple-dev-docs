@@ -22,7 +22,7 @@ var allowsCalendarPreview: Bool { get set }
 @property (nonatomic) BOOL allowsCalendarPreview;
 ```
 
-#### Discussion
+## Discussion
 
 If the event is an invitation and this property is [`true`](../../Swift/true.md), then a table cell appears allowing the user to preview the event along with other events on the same day. If [`false`](../../Swift/false.md) (the default), the calendar day preview does not appear. This property applies only to invitations.
 

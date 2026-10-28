@@ -19,7 +19,7 @@ func addAccessoryController(_ accessoryController: any NSViewController & NSPrin
 - (void) addAccessoryController:(NSViewController<NSPrintPanelAccessorizing> *) accessoryController;
 ```
 
-#### Discussion
+## Discussion
 
 You can invoke this method multiple times to add multiple accessory views to the receiver’s Print panel.
 

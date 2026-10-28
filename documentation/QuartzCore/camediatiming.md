@@ -24,7 +24,7 @@ protocol CAMediaTiming
 @protocol CAMediaTiming
 ```
 
-#### Overview
+## Overview
 
 Absolute time is defined as mach time converted to seconds. The [`CACurrentMediaTime()`](./cacurrentmediatime%28%29.md) function is provided as a convenience for getting the current absolute time.
 

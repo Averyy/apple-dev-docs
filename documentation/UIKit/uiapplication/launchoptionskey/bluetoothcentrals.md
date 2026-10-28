@@ -25,7 +25,7 @@ static let bluetoothCentrals: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsBluetoothCentralsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The presence of this key indicates that the app previously had one or more [`CBCentralManager`](../../../CoreBluetooth/cbcentralmanager.md) objects and was relaunched by the Bluetooth system to continue actions associated with those objects. The value of this key is an [`NSArray`](../../../Foundation/nsarray.md) object containing one or more [`NSString`](../../../Foundation/nsstring.md) objects.
 

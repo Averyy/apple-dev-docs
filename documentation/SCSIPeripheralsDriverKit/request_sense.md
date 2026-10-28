@@ -15,11 +15,11 @@ Fills a Command Descriptor Block (CDB) to perform a SCSI sense-request command.
 bool REQUEST_SENSE(SCSIDeviceOutParameters *request, UInt64 bufAddr, UInt8 senseLength, SCSIDeviceInParameters *response);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the call successfully fills the CDB; `false`, otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method in your dext to prefill a 16-byte CDB for the standard `REQUEST SENSE` SCSI command.
 

@@ -21,7 +21,7 @@ struct AVLegibleMediaOptionsMenuState
 typedef struct AVLegibleMediaOptionsMenuState { ... } AVLegibleMediaOptionsMenuState;
 ```
 
-#### Overview
+## Overview
 
 A struct describing the state of the legible options menu.
 

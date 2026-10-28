@@ -23,7 +23,7 @@ optional func splitViewController(_ svc: UISplitViewController, willShow aViewCo
 - (void) splitViewController:(UISplitViewController *) svc willShowViewController:(UIViewController *) aViewController invalidatingBarButtonItem:(UIBarButtonItem *) barButtonItem;
 ```
 
-#### Discussion
+## Discussion
 
 When the view controller rotates from a portrait to landscape orientation, it shows its hidden view controller once more. If you added the specified button to your toolbar to facilitate the display of the hidden view controller in a popover, you must implement this method and use it to remove that button.
 

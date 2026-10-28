@@ -23,7 +23,7 @@ optional func isPlayingAudio(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isPlayingAudioForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO` if not implemented.
 

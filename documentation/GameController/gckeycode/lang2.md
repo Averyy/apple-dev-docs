@@ -24,7 +24,7 @@ static let LANG2: GCKeyCode
 extern const GCKeyCode GCKeyCodeLANG2;
 ```
 
-#### Discussion
+## Discussion
 
 For Japanese, this is the code for the alphanumeric (英数) key on Apple keyboards. On Korean keyboards, this is the code for the Hanja conversion key.
 

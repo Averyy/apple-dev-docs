@@ -20,7 +20,7 @@ typealias vmnet_start_interface_completion_handler_t = (vmnet_return_t, xpc_obje
 typedef void (^)(enum vmnet_return_t, NSObject<OS_xpc_object> *) vmnet_start_interface_completion_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 - Parfameters:
 

@@ -23,11 +23,11 @@ func format(_ value: Value) -> String
 
 Available when `Value` conforms to `BinaryInteger`.
 
-#### Return Value
+## Return Value
 
 A string representation of `value`, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance and use it to format multiple integers. The following example creates a style that uses the `en_US` locale, and adds the [`compactName`](../numberformatstyleconfiguration/notation/compactname.md) modifier. It applies this style to all the integers in an array.
 

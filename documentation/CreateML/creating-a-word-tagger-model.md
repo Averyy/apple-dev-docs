@@ -5,13 +5,13 @@
 
 Train a machine learning model to tag individual words in natural language text.
 
-#### Overview
+## Overview
 
 A *word tagger* is a machine learning model that’s been trained to classify natural language text at the word level.
 
 You train a word tagger by showing it multiple examples of sentences containing words you’ve already tagged — for example, Apple product names like *iPad* and *iPhone*.
 
-##### Import your data
+### Import your data
 
 Start by gathering textual data and importing it into an [`MLDataTable`](./mldatatable.md) instance. You can create a data table from JSON and CSV formats.
 
@@ -55,7 +55,7 @@ The resulting data table has two columns, named `tokens` and `labels`, derived f
 
 You’ll use the data you gathered for two critical tasks: model training and evaluation.
 
-##### Prepare your data for training and evaluation
+### Prepare your data for training and evaluation
 
 After you train your word tagger model, you need to evaluate how good it’s at its tagging task. To test the model’s performance, set aside part of your data in a testing dataset. Training and testing data must be entirely separate, with no overlap. This way, the metrics you calculate based on your testing data tell you how well the classifier performs on examples it hasn’t already seen.
 
@@ -69,7 +69,7 @@ let (trainingData, testingData) = data.randomSplit(by: 0.8, seed: 5)
 
 Although [`randomSplit(by:seed:)`](./mldatatable/randomsplit%28by,seed%29.md) provides a quick way to split your dataset, consider creating separate training and testing datasets manually. That way, you can ensure that your testing data is high quality.
 
-##### Create and train the word tagger
+### Create and train the word tagger
 
 Create an instance of [`MLWordTagger`](./mlwordtagger.md) with your training data table and the names of your columns. Training begins immediately.
 
@@ -93,7 +93,7 @@ let trainingAccuracy = (1.0 - wordTagger.trainingMetrics.taggingError) * 100
 let validationAccuracy = (1.0 - wordTagger.validationMetrics.taggingError) * 100
 ```
 
-##### Evaluate the tagger’s accuracy
+### Evaluate the tagger’s accuracy
 
 Next, evaluate your trained model’s performance by testing it against sentences it’s never seen before. Pass your testing data table to the [`evaluation(on:tokenColumn:labelColumn:)`](./mlwordtagger/evaluation%28on,tokencolumn,labelcolumn%29-31x1l.md) method, which returns an [`MLWordTaggerMetrics`](./mlwordtaggermetrics.md) instance.
 
@@ -112,7 +112,7 @@ let evaluationAccuracy = (1.0 - evaluationMetrics.taggingError) * 100
 
 If the evaluation performance isn’t good enough, you may need to retrain with more data or make other adjustments. For information about improving model performance, see `Improving Your Model’s Accuracy`.
 
-##### Save the Core ML model
+### Save the Core ML model
 
 When your model is performing well enough, you’re ready to save it so you can use it in your app. Use the [`write(to:metadata:)`](./mltextclassifier/write%28to,metadata%29.md) method to write the Core ML model file (in this example, `AppleTagger.mlmodel`) to disk. Provide any information about the model, like its author, version, or description, in an [`MLModelMetadata`](./mlmodelmetadata.md) instance.
 
@@ -125,7 +125,7 @@ try wordTagger.write(to: URL(fileURLWithPath: "<#/path/to/save/AppleTagger.mlmod
                               metadata: metadata)
 ```
 
-##### Add the model to your app
+### Add the model to your app
 
 With your app open in Xcode, drag the `AppleTagger.mlmodel` file into the navigation pane. Xcode compiles the model and generates an `AppleTagger` class for use in your app. Select the `AppleTagger.mlmodel` file in Xcode to view additional information about the model.
 

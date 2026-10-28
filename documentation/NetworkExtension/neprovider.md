@@ -24,17 +24,17 @@ class NEProvider
 @interface NEProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 See the documentation for the `NEProvider` subclasses for details about how to create Network Extension Provider extensions.
 
 The `NEProvider` class and its subclasses expose methods and properties that allow Network Extension Provider extensions to participate in and affect the network data path on iOS and macOS. For example, the `handleNewFlow:` method in [`NEFilterDataProvider`](./nefilterdataprovider.md) allows Filter Data Provider extensions to make pass/block decisions on TCP connections as the connections are established on the system.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The `NEProvider` class should not be subclassed directly. Instead, you should create subclasses of `NEProvider` subclasses (and in some cases subsubclasses).
 
-###### Methods to Override
+#### Methods to Override
 
 - [`sleep(completionHandler:)`](./neprovider/sleep%28completionhandler%29.md)
 - [`wake()`](./neprovider/wake%28%29.md)

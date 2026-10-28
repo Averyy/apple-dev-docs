@@ -5,7 +5,7 @@
 
 Build high-performance camera drivers that are secure and simple to deploy.
 
-#### Overview
+## Overview
 
 Camera extensions are a new type of system extension available in macOS 12.3 and later. They provide a simple, secure model for building high-performance camera drivers for macOS. You package and install them with your app, which makes them simple to deploy, including through the App Store.
 
@@ -25,7 +25,7 @@ To simplify creating your own extensions, Xcode provides a Camera Extension temp
 
 > **Note**:  See the [System Extensions](../SystemExtensions/SystemExtensions.md) framework for additional information on building, installing, and debugging system extensions.
 
-##### Add entitlements to your host app
+### Add entitlements to your host app
 
 You package your camera extension as part of your app bundle. To allow your app to install and communicate with the extension, your app target requires two additional capabilities. Select the target in Xcode, and click the Signing & Capabilities pane. Add the following capabilities to the target:
 
@@ -49,7 +49,7 @@ Adding the capabilities to the target writes the values to an entitlements file.
 </plist>
 ```
 
-##### Create a camera extension target
+### Create a camera extension target
 
 Add a new target to your app using the Camera Extension template. In Xcode, go to the File menu and choose File > New and select the Target menu item. In the dialog that appears, select the macOS pane and find the Camera Extension template as shown below.
 
@@ -64,7 +64,7 @@ The template creates a new target and folder with the name you specified. The fo
 - An `Info.plist` that defines the `CMIOExtensionMachServiceName` for the extension and a [`NSSystemExtensionUsageDescriptionKey`](../SystemExtensions/nssystemextensionusagedescriptionkey.md) that describes the extension’s purpose to the user.
 - A `[CameraExtensionName].entitlements` file that defines a default app group.
 
-##### Configure the extension
+### Configure the extension
 
 So that your app and extension can communicate, open the `[CameraExtensionName].entitlements` file and update it to use the same app group name that you defined in your app, as in the example below.
 
@@ -85,7 +85,7 @@ Next, open the `[CameraExtensionName]Provider.swift` file. This file provides a 
 
 You can quickly find essential user-customizable strings by searching the file for the string, `SampleCapture`, and replacing the values as appropriate. A particularly important string to customize is the [`localizedName`](./cmioextensiondevice/localizedname.md) that you specify for the [`CMIOExtensionDevice`](./cmioextensiondevice.md), because it’s the string that apps display in their camera selection UI.
 
-##### Activate the extension
+### Activate the extension
 
 The system automatically installs a camera extension when a user installs your app. However, before your extension is available for the system to use, your app needs to activate it by performing an activation request like shown below.
 
@@ -109,7 +109,7 @@ Before the extension is available to the system, a person with Admin privileges 
 
 > 💡 **Tip**:  During development of your extension, it’s often useful to temporarily disable some security restrictions imposed by the system. See [Debugging and testing system extensions](../DriverKit/debugging-and-testing-system-extensions.md) for more information.
 
-##### Access the custom camera
+### Access the custom camera
 
 After you’ve allowed the system to use your custom extension, it’s automatically available as a selectable camera in system apps like FaceTime and PhotoBooth. Camera extensions are also fully compatible with [AVFoundation](../AVFoundation/AVFoundation.md) capture APIs, which means you can access your extension as an [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) object and use it like any other device. For example, to retrieve your custom camera extension (as well as any others on the system), retrieve it as an [`externalUnknown`](../AVFoundation/avcapturedevice/devicetype-swift.struct/externalunknown.md) device type as shown below.
 

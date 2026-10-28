@@ -25,11 +25,11 @@ func mutableCopy() -> Any
 - (id) mutableCopy;
 ```
 
-#### Return Value
+## Return Value
 
 The object returned by the [`NSMutableCopying`](../../Foundation/nsmutablecopying.md) protocol method [`mutableCopy(with:)`](../../Foundation/nsmutablecopying/mutablecopy%28with%29.md), where the zone is `nil`.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for classes that adopt the [`NSMutableCopying`](../../Foundation/nsmutablecopying.md) protocol. An exception is raised if there is no implementation for [`mutableCopy(with:)`](../../Foundation/nsmutablecopying/mutablecopy%28with%29.md).
 

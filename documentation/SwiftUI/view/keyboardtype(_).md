@@ -20,7 +20,7 @@ nonisolated
 func keyboardType(_ type: UIKeyboardType) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `keyboardType(_:)` to specify the keyboard type to use for text entry. A number of different keyboard types are available to meet specialized input needs, such as entering email addresses or phone numbers.
 

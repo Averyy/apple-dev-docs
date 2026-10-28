@@ -16,11 +16,11 @@ An interface you use to receive images and handle events related to an image-gen
 ## Declaration
 
 ```swift
-@objc
-(ImageGenerationViewControllerDelegate) protocol Delegate : NSObjectProtocol
+@objc(ImageGenerationViewControllerDelegate)
+protocol Delegate : NSObjectProtocol
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`ImagePlaygroundViewController.Delegate`](./delegate-swift.protocol.md) protocol in a custom type and assign that type as the delegate of an [`ImagePlaygroundViewController`](../imageplaygroundviewcontroller.md) object. When you present the view controller, the system interface handles interactions with the person and reports the results back to your delegate object.
 

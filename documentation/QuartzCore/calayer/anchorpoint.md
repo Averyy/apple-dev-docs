@@ -24,7 +24,7 @@ var anchorPoint: CGPoint { get set }
 @property CGPoint anchorPoint;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the value for this property using the unit coordinate space. The default value of this property is (0.5, 0.5), which represents the center of the layer’s bounds rectangle. All geometric manipulations to the view occur about the specified point. For example, applying a rotation transform to a layer with the default anchor point causes the layer to rotate around its center. Changing the anchor point to a different location would cause the layer to rotate around that new point.
 

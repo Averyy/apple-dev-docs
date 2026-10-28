@@ -15,7 +15,7 @@ The localization codes that some HID devices declare to specify conformance to a
 enum HIDDeviceLocalizationCode
 ```
 
-#### Overview
+## Overview
 
 This maps to the optional `bCountryCode` value in the HID descriptor.
 

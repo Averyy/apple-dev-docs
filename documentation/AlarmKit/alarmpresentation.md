@@ -17,7 +17,7 @@ An object that describes the content required for the alarm UI.
 struct AlarmPresentation
 ```
 
-#### Overview
+## Overview
 
 The following example shows how to set different views for an alarm using the `AlarmPresentation` model.
 

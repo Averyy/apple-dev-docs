@@ -16,7 +16,7 @@ This key refers to the current of the external AC power adapter attached to a po
 #define kIOPSPowerAdapterCurrentKey
 ```
 
-#### Discussion
+## Discussion
 
 This key may be present in the dictionary returned from [`IOPSCopyExternalPowerAdapterDetails`](./api-1523866-iopscopyexternalpoweradapterdeta.md) This key might not be defined in the adapter details dictionary.
 

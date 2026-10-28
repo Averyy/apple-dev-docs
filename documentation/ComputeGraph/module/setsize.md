@@ -16,7 +16,7 @@ Sets the size of an element to the specified dimensions. Size is in meters.
 void module::setSize(float2 size)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setSize.svg)
 

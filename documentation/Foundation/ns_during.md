@@ -21,7 +21,7 @@ Marks the start of the exception-handling domain.
 #define NS_DURING
 ```
 
-#### Discussion
+## Discussion
 
 The `NS_DURING` macro marks the start of the exception-handling domain for a section of code. (The [`NS_HANDLER`](./ns_handler.md)macro marks the end of the domain.) Within the exception-handling domain you can raise an exception, giving the local exception handler (or lower exception handlers) a chance to handle it.
 

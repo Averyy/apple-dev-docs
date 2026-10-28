@@ -29,7 +29,7 @@ optional func application(_ application: UIApplication, handle intent: INIntent)
 - (void) application:(UIApplication *) application handleIntent:(INIntent *) intent completionHandler:(void (^)(INIntentResponse *intentResponse)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 With this method, an app can handle an intent directly, rather than handling it in the app’s Intent extension. You might use this method to implement workflows that you can’t implement easily in your extension. For example, you might use it to start or manage a user’s workout session. If your app isn’t running, SiriKit launches your app in the background so that the Siri interface remains active.
 

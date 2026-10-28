@@ -28,7 +28,7 @@ final class IntentParameter<Value> where Value : _IntentValue, Value : Sendable
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 When you implement an [`AppIntent`](./appintent.md) type, declare its parameters using the `@Parameter` property wrapper.
 

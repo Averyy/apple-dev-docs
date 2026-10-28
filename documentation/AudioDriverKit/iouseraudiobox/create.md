@@ -15,11 +15,11 @@ Allocates and initializes an instance of the audio box class.
 static OSSharedPtr<IOUserAudioBox> Create(IOUserAudioDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioBox`](../iouseraudiobox.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioBox`](../iouseraudiobox.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

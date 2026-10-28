@@ -19,11 +19,11 @@ init(audioUnit au: AudioUnit)
 + (AUPannerView *) AUPannerViewWithAudioUnit:(AudioUnit) au;
 ```
 
-#### Return Value
+## Return Value
 
 The newly instantiated panner view. On error, returns `nil`.
 
-#### Discussion
+## Discussion
 
 Call this static constructor as follows:
 

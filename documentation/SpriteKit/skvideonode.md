@@ -30,7 +30,7 @@ class SKVideoNode
 - [Adding a Video to a Scene](./adding-a-video-to-a-scene.md)
 - [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
 
-#### Overview
+## Overview
 
 This class renders a video at a given size and location in your scene with no exposed player controls.
 

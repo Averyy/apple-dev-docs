@@ -25,11 +25,11 @@ func scanHexInt64(_ result: UnsafeMutablePointer<UInt64>?) -> Bool
 - (BOOL) scanHexLongLong:(unsigned long long *) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid hexadecimal long long representation, otherwise [`false`](../../Swift/false.md). Overflow is considered a valid hexadecimal long long representation.
 
-#### Discussion
+## Discussion
 
 The hexadecimal integer representation may optionally be preceded by `0x` or `0X`. Skips past excess digits in the case of overflow, so the receiver’s position is past the entire hexadecimal representation.
 

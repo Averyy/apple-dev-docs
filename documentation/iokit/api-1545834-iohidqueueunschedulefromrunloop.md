@@ -16,7 +16,7 @@ Unschedules queue with run loop.
 void IOHIDQueueUnscheduleFromRunLoop(IOHIDQueueRef queue, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally disassociates queue with client's run loop.
 

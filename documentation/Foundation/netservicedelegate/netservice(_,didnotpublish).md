@@ -24,7 +24,7 @@ optional func netService(_ sender: NetService, didNotPublish errorDict: [String 
 - (void) netService:(NSNetService *) sender didNotPublish:(NSDictionary<NSString *,NSNumber *> *) errorDict;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called long after a [`netServiceWillPublish(_:)`](./netservicewillpublish%28_%29.md) message has been delivered to the delegate.
 

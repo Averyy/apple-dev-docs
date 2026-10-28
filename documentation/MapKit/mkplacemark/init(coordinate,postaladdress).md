@@ -24,7 +24,7 @@ init(coordinate: CLLocationCoordinate2D, postalAddress: CNPostalAddress)
 - (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate postalAddress:(CNPostalAddress *) postalAddress;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`MKPlacemark`](../mkplacemark.md) object.
 

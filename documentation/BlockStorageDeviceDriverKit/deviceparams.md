@@ -15,7 +15,7 @@ A structure that represents hardware-specific properties of the block storage de
 struct DeviceParams;
 ```
 
-#### Discussion
+## Discussion
 
 Implement the [`GetDeviceParams`](./iouserblockstoragedevice/getdeviceparams.md) method to provide the framework with the device-specific properties indicated by this structure.
 

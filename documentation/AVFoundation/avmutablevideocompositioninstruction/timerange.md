@@ -26,7 +26,7 @@ var timeRange: CMTimeRange { get set }
 @property (nonatomic, assign) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 If the time range is invalid, the video compositor ignores it.
 

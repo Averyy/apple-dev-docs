@@ -23,7 +23,7 @@ func visibleSupplementaryViews(ofKind elementKind: String) -> [UICollectionReusa
 - (NSArray<UICollectionReusableView *> *) visibleSupplementaryViewsOfKind:(NSString *) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the visible supplementary views. If no supplementary views are visible, the returned array is empty.
 

@@ -19,7 +19,7 @@ var selectedSegment: Int { get set }
 @property NSInteger selectedSegment;
 ```
 
-#### Discussion
+## Discussion
 
 If the control allows multiple selections, this property contains the most recently selected segment. If the index is out of bounds, an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) is raised.
 

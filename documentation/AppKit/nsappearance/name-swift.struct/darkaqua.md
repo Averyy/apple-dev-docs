@@ -19,7 +19,7 @@ static let darkAqua: NSAppearance.Name
 extern NSAppearanceName const NSAppearanceNameDarkAqua;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to retrieve the named [`NSAppearance`](../../nsappearance.md) associated with the standard dark system appearance. You can assign that appearance object to the views and windows of your interface or to your entire app.
 

@@ -21,7 +21,7 @@ func stopVideoCapture()
 - (void) stopVideoCapture;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method to stop video capture, the system calls the image picker delegate’s [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](../uiimagepickercontrollerdelegate/imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md) method.
 

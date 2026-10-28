@@ -15,7 +15,7 @@ The value represented by the receiver.
 var representedValue: SuggestionItemType
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Use this to associate an underlying model object with a suggestion item. This is useful to refer back to later if/when the user selects this suggestion item.
 

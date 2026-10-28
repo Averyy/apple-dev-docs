@@ -11,7 +11,7 @@ Get'ter for $link autoDisable variable.
 virtual bool getAutoDisable() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of autoDisable.
 

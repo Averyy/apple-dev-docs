@@ -20,7 +20,7 @@ func NSHFSTypeOfFile(_ fullFilePath: String!) -> String!
 extern NSString *NSHFSTypeOfFile(NSString *fullFilePath);
 ```
 
-#### Return Value
+## Return Value
 
 A string that encodes `fullFilePath`’s HFS file type, or `nil` if the operation was not successful
 

@@ -25,11 +25,11 @@ func reduce<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Self.Outpu
 
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Return Value
+## Return Value
 
 A publisher that applies the closure to all received elements and produces an accumulated value when the upstream publisher finishes. If [`reduce(_:_:)`](./reduce%28_,_%29.md) receives an error from the upstream publisher, the operator delivers it to the downstream subscriber, the publisher terminates and publishes no value.
 
-#### Discussion
+## Discussion
 
 Use [`reduce(_:_:)`](./reduce%28_,_%29.md) to collect a stream of elements and produce an accumulated value based on a closure you provide.
 

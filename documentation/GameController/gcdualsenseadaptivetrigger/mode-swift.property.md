@@ -24,7 +24,7 @@ var mode: GCDualSenseAdaptiveTrigger.Mode { get }
 @property (nonatomic, readonly) GCDualSenseAdaptiveTriggerMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 There may be a delay updating this property value after you set the mode using one of the set mode methods because setting the mode requires a response from the controller.
 

@@ -25,7 +25,7 @@ struct IntentDonationManager
 
 - [Donating your app’s data and actions to the system](./donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Overview
+## Overview
 
 Use the shared `IntentDonationManager` instance to share your app’s actions with the system. When someone completes an interaction with your app, create a relevant app intent and donate it using this type. Over time, the system combines your donations with other information to identify patterns and predict the actions a person might take in the future. System features can then proactively suggest actions on the Lock Screen, in the Siri Suggestions widget, in Search, and in other system interfaces.
 

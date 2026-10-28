@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.isinf
 
-**isinf(*a: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return a boolean array indicating which elements are +/- inifnity.
+```python
+isinf(a: array, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+Return a boolean array indicating which elements are +/- inifnity.
 
-Returns:
-The boolean array indicating which elements are +/- infinity.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array indicating which elements are +/- infinity.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

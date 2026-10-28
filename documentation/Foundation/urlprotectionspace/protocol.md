@@ -25,7 +25,7 @@ var `protocol`: String? { get }
 @property (copy, readonly, nullable) NSString * protocol;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the receiver represents a proxy protection space.
 

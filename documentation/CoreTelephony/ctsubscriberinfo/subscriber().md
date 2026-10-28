@@ -23,7 +23,7 @@ class func subscriber() -> CTSubscriber
 + (CTSubscriber *) subscriber;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CTSubscriber`](../ctsubscriber.md) instances.
 

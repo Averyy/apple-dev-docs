@@ -13,7 +13,7 @@ virtual void handleClose(
  IOOptionBitsoptions);
 ```
 
-#### Overview
+## Overview
 
 This method is called by IOService::close() with the arbitration lock held. This method will in turn call handleClientClose() to notify interested subclasses about the client close. If this represents the last close, then the interface will also close the controller before this method returns. The controllerWillClose() method will be called before closing the controller. Subclasses should not override this method.
 

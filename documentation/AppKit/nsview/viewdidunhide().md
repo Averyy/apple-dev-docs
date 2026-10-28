@@ -19,7 +19,7 @@ func viewDidUnhide()
 - (void) viewDidUnhide;
 ```
 
-#### Discussion
+## Discussion
 
 The view receives this message when its `isHiddenOrHasHiddenAncestor` state goes from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md).  This can happen when the view or an ancestor is marked as not hidden, or when the view or an ancestor is removed from its containing view hierarchy.
 

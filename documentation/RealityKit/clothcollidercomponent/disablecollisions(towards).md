@@ -17,7 +17,7 @@ Disables one-way collisions towards the selected groups.
 mutating func disableCollisions(towards groups: ClothCollisionGroupSet)
 ```
 
-#### Discussion
+## Discussion
 
 This removes the selected groups from the collider’s mask, so that body particles in those groups will no longer be pushed away by this collider.
 

@@ -19,7 +19,7 @@ get polyline(): PolylineOverlay;
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 You can add the value of the `polyline` property directly to the map.
 

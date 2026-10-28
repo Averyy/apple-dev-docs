@@ -21,7 +21,7 @@ The strategy used by a decoder when it encounters exceptional floating-point val
 var nonConformingFloatDecodingStrategy: JSONDecoder.NonConformingFloatDecodingStrategy { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default strategy is the [`JSONDecoder.NonConformingFloatDecodingStrategy.throw`](./nonconformingfloatdecodingstrategy-swift.enum/throw.md) strategy.
 

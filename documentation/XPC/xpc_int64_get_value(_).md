@@ -25,7 +25,7 @@ func xpc_int64_get_value(_ xint: xpc_object_t) -> Int64
 extern int64_t xpc_int64_get_value(xpc_object_t xint);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying signed 64-bit value.
 

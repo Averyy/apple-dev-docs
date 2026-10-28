@@ -13,17 +13,17 @@ Incorporate a custom PencilKit tool picker with a variety of system and custom t
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app shows how to configure a [`PKToolPicker`](./pktoolpicker.md). The app is a simple drawing tool that allows a person to draw on a canvas using tools from the tool picker. In addition to showing system tools, the tool picker provides a custom tool that a person can use to place stamps on the canvas. The tool picker also contains an accessory item for adding a signature to the canvas.
 
 > **Note**: This sample code project is associated with WWDC24 session 10214: [Squeeze the most out of Apple Pencil](https://developer.apple.com/wwdc24/10214/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Although this sample app’s basic functionality is available in Simulator, running the project with physical devices is recommended to demonstrate the full capabilities of the hardware. Run this project with Apple Pencil Pro and a compatible iPad.
 
-##### Create a system tool
+### Create a system tool
 
 This sample app creates and configures a system tool to show in the tool picker: a pen, which is a [`PKToolPickerInkingItem`](./pktoolpickerinkingitem.md) with the [`PKInkingTool.InkType.pen`](./pkinkingtool-swift.struct/inktype-swift.enum/pen.md) ink type.
 
@@ -37,7 +37,7 @@ let secondPen = PKToolPickerInkingItem(type: .pen,
 
 This sample app uses an `identifier` to differentiate between this pen and the default system pen so they can both show up in the picker. If you don’t specify an identifier to differentiate between multiple system tools of the same type, the picker treats those tool items as duplicates and only shows the first item in the list.
 
-##### Create a custom tool
+### Create a custom tool
 
 The PencilKit tool picker can contain a combination of system tools and custom tools. To add a custom tool to the picker, this sample app creates a [`PKToolPickerCustomItem.Configuration`](./pktoolpickercustomitem/configuration-swift.struct.md) to define details about the custom tool. This sample app creates a custom tool to place stamps in the shape of animals on the canvas.
 
@@ -67,7 +67,7 @@ config.viewControllerProvider = { item in
 }
 ```
 
-##### Specify the order of the tools in the picker
+### Specify the order of the tools in the picker
 
 Tools in the tool picker can appear in any order you specify when you create the picker using [`init(toolItems:)`](./pktoolpicker/init%28toolitems%29.md). This sample app places the custom tool item first, but it can appear in any order in the `toolItems` array. After the custom tool item, this sample app adds the second pen and the default set of `PKToolPicker` tools.
 
@@ -77,7 +77,7 @@ let toolItems = [self.animalStampWrapper.toolItem, secondPen] + PKToolPicker().t
 self.toolPicker = PKToolPicker(toolItems: toolItems)
 ```
 
-##### Add an accessory item
+### Add an accessory item
 
 An [`accessoryItem`](./pktoolpicker/accessoryitem.md) adds an optional button to the tool picker to provide quick access to additional behavior. This sample app adds an accessory item that allows placing a signature on the canvas.
 
@@ -87,9 +87,9 @@ toolPicker.accessoryItem = UIBarButtonItem(image: UIImage(systemName: "signature
 }))
 ```
 
-##### Draw a hover preview for tools
+### Draw a hover preview for tools
 
-A hover preview can provide useful feedback about where a tool might touch down on the canvas. This sample app checks the value of [prefersHoverToolPreview](../UIKit/uipencilinteraction/api-4375593-prefershovertoolpreview.md) to see the user preference for displaying a hover tool preview, and uses that to determine whether to draw the preview. Then, it draws the preview view in response to the state of a [UIHoverGestureRecognizer](../UIKit/uihovergesturerecognizer.md) gesture. This sample app uses [rollAngle](../UIKit/uihovergesturerecognizer/api-4391655-rollangle.md) to rotate the preview view in response to the barrel-roll angle of Apple Pencil Pro.
+A hover preview can provide useful feedback about where a tool might touch down on the canvas. This sample app checks the value of [prefersHoverToolPreview](../UIKit/uipencilinteraction/prefershovertoolpreview.md) to see the user preference for displaying a hover tool preview, and uses that to determine whether to draw the preview. Then, it draws the preview view in response to the state of a [UIHoverGestureRecognizer](../UIKit/uihovergesturerecognizer.md) gesture. This sample app uses [rollAngle](../UIKit/uihovergesturerecognizer/rollangle.md) to rotate the preview view in response to the barrel-roll angle of Apple Pencil Pro.
 
 ```swift
 let point = sender.location(in: stampView)

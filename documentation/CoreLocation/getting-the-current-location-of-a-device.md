@@ -5,7 +5,7 @@
 
 Start location services and provide information the system needs to optimize power usage for those services.
 
-#### Overview
+## Overview
 
 Core Location offers many different services for getting location-related data, but the most common services return the device’s current location. You might use this information to:
 
@@ -20,7 +20,7 @@ Core Location offers many different services for getting location-related data, 
 
 Core Location can determine the current location using many different types of hardware, including Wi-Fi, cellular, and GPS radios. Core Location doesn’t need every one of these radios to determine the location. Instead, it selectively enables radios to get the required location data in the most power-efficient way possible. The configuration of your [`CLLocationManager`](./cllocationmanager.md) object affects which radios the system uses and your app’s power consumption.
 
-##### Start the service that delivers the location data you need
+### Start the service that delivers the location data you need
 
 Always choose the most power-efficient location service that meets the needs of your app. Core Location provides the following services for getting location data:
 
@@ -34,7 +34,7 @@ When adding support for a location service, make sure to implement all of the se
 
 For information about the behavior of individual services and how to start and stop them, see [`CLLocationManager`](./cllocationmanager.md).
 
-##### Enable power-saving features
+### Enable power-saving features
 
 Core Location optimizes power usage as much as possible, but you can still help. The best optimization is to turn off location services when your app doesn’t need new location data. Other optimizations require you to adjust the configuration of your location manager object:
 

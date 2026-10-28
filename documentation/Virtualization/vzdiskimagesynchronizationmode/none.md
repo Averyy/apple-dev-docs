@@ -19,7 +19,7 @@ case none
 VZDiskImageSynchronizationModeNone
 ```
 
-#### Discussion
+## Discussion
 
 This option doesn’t guarantee data integrity if any error condition occurs, such as disk full on the host, panic, power loss, and so on.
 

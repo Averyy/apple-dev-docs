@@ -25,7 +25,7 @@ func segment(forTrackTime trackTime: CMTime) -> AVCompositionTrackSegment?
 - (AVCompositionTrackSegment *) segmentForTrackTime:(CMTime) trackTime;
 ```
 
-#### Return Value
+## Return Value
 
 The [`AVCompositionTrackSegment`](../avcompositiontracksegment.md) associated with the track time.
 

@@ -19,7 +19,7 @@ An action that sends a permission question to a parent or guardian.
 var askPermission: AskPermissionAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this environment value to get an `AskPermissionAction` instance for the current [`Environment`](../environment.md). Then call the instance to send a permission question. You call the instance directly because it defines a `AskPermissionAction/callAsFunction(_:)` method that Swift calls when you call the instance directly.
 

@@ -4,7 +4,7 @@
 
 Display view controllers using different techniques, and pass data between them during transitions.
 
-#### Overview
+## Overview
 
 You change your app’s interface by presenting and dismissing view controllers. Every window has a root view controller, which provides the initial content for your window. Presenting a new view controller changes that content by installing a new set of views in the window. When you no longer need the view controller, dismissing it removes its views from the window. You present view controllers in one of these ways:
 
@@ -14,7 +14,7 @@ You change your app’s interface by presenting and dismissing view controllers.
 
 Each technique gives you different amounts of control over the presentation and dismissal process.
 
-##### Specify presentations visually in your storyboard file
+### Specify presentations visually in your storyboard file
 
 Using segues in your storyboard is the recommended way to present and dismiss view controllers. A segue is a visual representation of a transition from one view controller to another. A segue starts with an action such as a button tap or table-row selection in the initial view controller. When that action occurs, UIKit creates the view controller at the other end of the segue and presents it automatically. Because you create and configure segues in your storyboard, you can change them very quickly.
 
@@ -30,7 +30,7 @@ The storyboard shows segues as an arrow between two view controllers. Selecting 
 
 For information about how to dismiss a view controller in your storyboards, see [Dismissing a view controller with an unwind segue](./dismissing-a-view-controller-with-an-unwind-segue.md).
 
-##### Let the current context define the presentation technique
+### Let the current context define the presentation technique
 
 Reusing the same view controller in multiple places creates a potential problem: presenting it in different ways based on the current context. For example, you might want to embed it in a navigation controller in one instance, but present it modally in another. UIKit solves this problem with the [`show(_:sender:)`](./uiviewcontroller/show%28_,sender%29.md) and [`showDetailViewController(_:sender:)`](./uiviewcontroller/showdetailviewcontroller%28_,sender%29.md) methods of [`UIViewController`](./uiviewcontroller.md), which present the view controller in the most appropriate way for the current context.
 
@@ -51,7 +51,7 @@ After showing a view controller, use the current context to determine how to dis
 
 > **Note**:  When implementing a custom container view controller, implement the [`show(_:sender:)`](./uiviewcontroller/show%28_,sender%29.md) and [`showDetailViewController(_:sender:)`](./uiviewcontroller/showdetailviewcontroller%28_,sender%29.md) methods to handle presentations. For more information, see [Creating a custom container view controller](./creating-a-custom-container-view-controller.md).
 
-##### Embed a view controller inside a container view controller
+### Embed a view controller inside a container view controller
 
 A container view controller embeds content from one or more child view controllers, and presents the combined interface onscreen. Embedding a child view controller presents it using a container-specific approach. For example, a navigation controller initially positions the child view controller offscreen and then animates it into position onscreen.
 
@@ -66,7 +66,7 @@ The standard UIKit container view controllers work with segues and the [`show(_:
 
 Always use the container view controller’s API to remove or replace a presented view controller.
 
-##### Present a view controller modally
+### Present a view controller modally
 
 Use modal presentations to create temporary interruptions in your app’s workflow, such as prompting the user for important information. A modal presentation covers the current view controller wholly or partially, depending on the presentation style you use. Full-screen presentations always replace the previous content, but sheet-style presentations may leave some of the underlying content visible. The actual appearance of each presentation style depends on the current trait environment.
 

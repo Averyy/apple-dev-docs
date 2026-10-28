@@ -25,7 +25,7 @@ init(string str: String)
 - (instancetype) initWithString:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSAttributedString`](../nsattributedstring.md) object initialized with the characters of `str` and no attribute information.
 

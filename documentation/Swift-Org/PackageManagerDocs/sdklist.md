@@ -13,7 +13,7 @@ Print a list of IDs of available Swift SDKs available on the filesystem.
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 ```
 sdk list [--package-path=<package-path>]

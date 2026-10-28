@@ -25,7 +25,7 @@ static func ramp(in range: ClosedRange<Double>, count: Int) -> [Double]
 
 - [Finding an interpolating polynomial using the Vandermonde method](../finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

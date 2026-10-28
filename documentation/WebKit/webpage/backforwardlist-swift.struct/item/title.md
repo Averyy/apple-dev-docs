@@ -19,7 +19,7 @@ The title of the page this item represents.
 let title: String?
 ```
 
-#### Discussion
+## Discussion
 
 If the resource this item represents does not have a title specified, this value will be `nil`.
 

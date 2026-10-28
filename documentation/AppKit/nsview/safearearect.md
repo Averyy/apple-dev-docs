@@ -19,7 +19,7 @@ var safeAreaRect: NSRect { get }
 @property (readonly) NSRect safeAreaRect;
 ```
 
-#### Discussion
+## Discussion
 
 The safe area of a view reflects the area not covered by navigation bars, tab bars, toolbars, and other ancestor views that might obscure the current view. Draw content inside this rectangle to ensure it isn’t covered by other content.
 

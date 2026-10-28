@@ -15,20 +15,20 @@ Neural Networks support for MLX
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 Writing arbitrarily complex neural networks in MLX can be done using only `MLXArray` and `valueAndGrad()`. However, this requires the user to write again and again the same simple neural network operations as well as handle all the parameter state and initialization manually and explicitly.
 
 The `MLXNN` package solves this problem by providing an intuitive way of composing neural network layers, initializing their parameters, freezing them for finetuning and more.
 
-#### Modules
+## Modules
 
 The workhorse of any neural network library is the [`Module`](./module.md) class. In MLX the [`Module`](./module.md) class is a container of `MLXArray` or [`Module`](./module.md) instances. Its main function is to provide a way to recursively access and update its parameters and those of its submodules.
 
 - [`Module`](./module.md)
 - [Creating Modules](./custom-layers.md)
 
-##### Parameters
+### Parameters
 
 A parameter of a module is any member of type `MLXArray` (its name should not start with `_`). It can be nested in other [`Module`](./module.md) instances or `Array` and `Dictionary`.
 
@@ -36,11 +36,11 @@ A parameter of a module is any member of type `MLXArray` (its name should not st
 
 A Module can also keep track of “frozen” parameters. See the [`freeze(recursive:keys:strict:)`](./module/freeze%28recursive,keys,strict%29.md) method for more details. [`valueAndGrad(model:_:)`](./valueandgrad%28model,_%29-12a2c.md) the gradients returned will be with respect to these trainable parameters.
 
-##### Training
+### Training
 
 See [Training a Model](./training.md)
 
-#### Other MLX Packages
+## Other MLX Packages
 
 - [MLX](../MLX/MLX.md)
 - [MLXOptimizers](../MLXOptimizers/MLXOptimizers.md)

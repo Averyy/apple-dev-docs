@@ -19,7 +19,7 @@ func enrollDefaultSecureBootSignatures() throws
 - (BOOL) enrollDefaultSecureBootSignaturesWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This operation adds Microsoft Key Exchange Keys, UEFI CA signatures, and the latest UEFI revocation list to the Key Exchange Key (KEK) database, allowed signature database (db), and forbidden signature database (dbx) respectively. You can add these signatures before or after enrolling a Platform Key. The framework preserves the Platform Key, if present.
 

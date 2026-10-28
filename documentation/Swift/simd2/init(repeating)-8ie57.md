@@ -23,7 +23,7 @@ init(repeating scalar: UInt16)
 
 Available when `Scalar` is `UInt16`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

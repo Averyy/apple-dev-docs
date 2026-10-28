@@ -23,7 +23,7 @@ optional func voiceChatService(_ voiceChatService: GKVoiceChatService, didStopWi
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService didStopWithParticipantID:(NSString *) participantID error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Your application can implement this method to notify the user that an established voice connection has ended. This may occur when another participant ends the chat or if the network connection was lost.
 

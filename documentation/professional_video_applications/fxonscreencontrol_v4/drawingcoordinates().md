@@ -24,7 +24,7 @@ func drawingCoordinates() -> FxDrawingCoordinates
 
 - [Adding onscreen controls to plug-ins](../../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 Returns the appropriate coordinate space.
 

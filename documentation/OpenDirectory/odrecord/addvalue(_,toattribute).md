@@ -20,7 +20,7 @@ func addValue(_ inValue: Any!, toAttribute inAttribute: String!) throws
 - (BOOL) addValue:(id) inValue toAttribute:(ODAttributeType) inAttribute error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

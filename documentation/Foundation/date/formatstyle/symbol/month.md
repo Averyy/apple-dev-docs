@@ -21,7 +21,7 @@ A type that specifies a format for the month in a date format style.
 struct Month
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Month`](./month.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Month`](./month.md) objects:
 

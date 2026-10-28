@@ -21,7 +21,7 @@ class var readingAvailable: Bool { get }
 @property (class, nonatomic, readonly) BOOL readingAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Before creating a reader session, always check the [`readingAvailable`](./readingavailable.md) property to determine whether the user’s device supports scanning for and detecting NFC tags.
 

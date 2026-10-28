@@ -23,7 +23,7 @@ var stateRestorationActivity: NSUserActivity? { get set }
 @property (nonatomic, strong, nullable) NSUserActivity * stateRestorationActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Before disconnecting a scene, the system asks your delegate for an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object containing state information for that scene. If you provide that object, the system puts a copy of it in this property. Use the information in the user activity object to restore the scene to its previous state.
 

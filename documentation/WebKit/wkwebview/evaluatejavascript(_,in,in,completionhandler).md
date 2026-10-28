@@ -20,7 +20,7 @@ Evaluates a JavaScript string in the context of the specified frame and content 
 @preconcurrency func evaluateJavaScript(_ javaScript: String, in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor @Sendable (Result<Any, any Error>) -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The evaluation of your script may change global state in a way that remains visible to subsequent JavaScript code. The changes are restricted to scripts you execute using the same [`WKContentWorld`](../wkcontentworld.md) object. In fact, you can use this method to set up global state in the specified content world, and use that state in subsequent JavaScript code. If you do so, consider using [`callAsyncJavaScript(_:arguments:in:in:completionHandler:)`](./callasyncjavascript%28_,arguments,in,in,completionhandler%29.md) for more flexible interactions with the JavaScript programming model.
 

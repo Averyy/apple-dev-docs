@@ -33,7 +33,7 @@ class UIApplication
 - [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Overview
+## Overview
 
 Every iOS app has exactly one instance of [`UIApplication`](./uiapplication.md) (or, very rarely, a subclass of [`UIApplication`](./uiapplication.md)). When an app launches, the system calls the [`UIApplicationMain(_:_:_:_:)`](./uiapplicationmain%28_,_,_,_%29-1yub7.md) function. Among its other tasks, this function creates a singleton [`UIApplication`](./uiapplication.md) object that you access using [`shared`](./uiapplication/shared.md).
 
@@ -54,7 +54,7 @@ The APIs in this class allow you to manage device-specific behavior. Use your [`
 - Coordinate the reception of remote-control events ([`beginReceivingRemoteControlEvents()`](./uiapplication/beginreceivingremotecontrolevents%28%29.md) and [`endReceivingRemoteControlEvents()`](./uiapplication/endreceivingremotecontrolevents%28%29.md))
 - Perform app-level state restoration tasks (methods in the [Managing state restoration](./uiapplication.md#Managing-state-restoration) task group)
 
-##### Subclassing notes
+### Subclassing notes
 
 Most apps don’t need to subclass [`UIApplication`](./uiapplication.md). Instead, use an app delegate to manage interactions between the system and the app.
 

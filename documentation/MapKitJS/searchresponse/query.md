@@ -15,7 +15,7 @@ The query string for performing the search.
 query: string | SearchAutocompleteResult | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property is empty when you use a [`SearchAutocompleteResult`](../searchautocompleteresult.md) object to perform the search.
 

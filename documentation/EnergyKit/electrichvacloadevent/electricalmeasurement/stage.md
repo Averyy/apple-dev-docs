@@ -17,7 +17,7 @@ An indirect measurement of power consumption by an HVAC electric heating or cool
 let stage: Int
 ```
 
-#### Discussion
+## Discussion
 
 An integer ranging from `0` to `100` that’s proportional to the amount of power consumed, where `0` and `100` correspond to the min and max power levels respectively.
 

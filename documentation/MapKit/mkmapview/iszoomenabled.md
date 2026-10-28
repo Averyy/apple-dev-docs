@@ -24,7 +24,7 @@ var isZoomEnabled: Bool { get set }
 @property (nonatomic, getter=isZoomEnabled) BOOL zoomEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls only user interactions with the map. If you set the value of this property to [`false`](../../Swift/false.md), you may still change the zoom level programmatically by changing the value in the [`region`](./region.md) property.
 

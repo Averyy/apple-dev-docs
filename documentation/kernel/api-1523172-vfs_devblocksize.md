@@ -15,7 +15,7 @@ Get the block size of the device underlying a mount.
 int vfs_devblocksize(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Block size.
 

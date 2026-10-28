@@ -17,7 +17,7 @@ A traffic class for network signaling and control messages.
 case signaling
 ```
 
-#### Discussion
+## Discussion
 
 Use the signaling traffic class for control-plane messages and session management that require reliable, timely delivery to establish and maintain connections.
 

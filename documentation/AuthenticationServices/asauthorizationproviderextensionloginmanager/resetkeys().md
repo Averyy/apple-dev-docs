@@ -19,7 +19,7 @@ func resetKeys()
 - (void) resetKeys;
 ```
 
-#### Discussion
+## Discussion
 
 This call permanently destroys the keys and you can’t undo it.
 

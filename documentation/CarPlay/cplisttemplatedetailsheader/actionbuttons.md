@@ -21,7 +21,7 @@ var actionButtons: [CPButton] { get set }
 @property (nonatomic, copy) NSArray<CPButton *> * actionButtons;
 ```
 
-#### Discussion
+## Discussion
 
 These buttons provide user interaction capabilities such as play/pause, favorite/unfavorite, share, or other content-specific actions. The buttons are displayed horizontally and are limited by maximumActionButtonCount.
 

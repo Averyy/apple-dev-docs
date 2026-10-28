@@ -9,7 +9,7 @@ Delete a provisioning profile that is used for app development or distribution.
 **Availability**:
 - App Store Connect API 1.1+
 
-#### Discussion
+## Discussion
 
 You can delete provisioning profiles, and may wish to do so if they are expiring or obsolete.
 

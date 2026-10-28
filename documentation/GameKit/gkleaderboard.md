@@ -29,7 +29,7 @@ class GKLeaderboard
 
 - [Creating recurring leaderboards](./creating-recurring-leaderboards.md)
 
-#### Overview
+## Overview
 
 Leaderboards allow players to compare their scores against other players in your game. You configure a classic or recurring leaderboard in App Store Connect and then access the localized information for a leaderboard in your code using [`GKLeaderboard`](./gkleaderboard.md) objects.
 

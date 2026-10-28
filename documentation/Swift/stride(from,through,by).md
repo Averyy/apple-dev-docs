@@ -21,11 +21,11 @@ Returns a sequence from a starting value toward, and possibly including, an end 
 func stride<T>(from start: T, through end: T, by stride: T.Stride) -> StrideThrough<T> where T : Strideable
 ```
 
-#### Return Value
+## Return Value
 
 A sequence from `start` toward, and possibly including, `end`. Each value in the sequence is separated by `stride`.
 
-#### Discussion
+## Discussion
 
 You can use this function to stride over values of any type that conforms to the `Strideable` protocol, such as integers or floating-point types. Starting with `start`, each successive value of the sequence adds `stride` until the next value would be beyond `end`.
 

@@ -25,7 +25,7 @@ func remove(_ anObject: Any)
 - (void) removeObject:(ObjectType) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method determines a match by comparing `anObject` to the objects in the receiver using the `isEqual:` method. If the array does not contain `anObject`, the method has no effect (although it does incur the overhead of searching the contents).
 

@@ -15,11 +15,11 @@ Closes the communication channel to the device.
 virtual kern_return_t HwDeactivate();
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method as needed and use it to close the connection to your device’s hardware. Always call the `super` version of the method at the end of your implementation.
 

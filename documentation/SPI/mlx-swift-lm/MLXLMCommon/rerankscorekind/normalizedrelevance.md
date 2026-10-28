@@ -17,7 +17,7 @@ A model-specific relevance score normalized to the closed range `0...1`.
 case normalizedRelevance
 ```
 
-#### Discussion
+## Discussion
 
 This value is not necessarily a calibrated probability. Its scale can differ across models, revisions, quantizations, prompts, and instructions.
 

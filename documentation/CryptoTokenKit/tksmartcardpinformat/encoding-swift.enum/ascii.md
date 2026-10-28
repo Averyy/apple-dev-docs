@@ -23,7 +23,7 @@ case ascii
 TKSmartCardPINEncodingASCII
 ```
 
-#### Discussion
+## Discussion
 
 Characters are encoded in ASCII format (for example, `1234` is encoded as `31h 32h 33h 34h`).
 

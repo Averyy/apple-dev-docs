@@ -15,7 +15,7 @@ used for configuring and communicating the desired transfer modes of a device. A
 class IOATADevConfig : OSObject
 ```
 
-#### Overview
+## Overview
 
 usually use the initWithBestSelection to make a best mode match. The Mode accessors use bit significance to indicate a selected mode or supported modes(s) ie, 00000001b indicates Mode-0, 00000010b indicates mode 1, etc. Selected mode is indicated by a single set bit. No bit set indicates no mode in that class is selected. ie, a bus will support multiple possible modes, but will only have one mode selected at that time.
 

@@ -10,11 +10,11 @@ Use a Core Audio tap to capture outgoing audio from a process or group of proces
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project shows you how to use a tap as an input in a HAL aggregate device, just like a microphone. An audio tap object can specify which outputs it captures from a process or group of processes, as well as different mixdown options (mono, stereo, and so on). Taps can be public (visible to all users), or private (only visible inside the process that created the tap). Taps can also mute the process output so that the process will no longer play to the speaker or selected audio device, and all process output will go to the tap.
 
-##### Create a tap and an aggregate device
+### Create a tap and an aggregate device
 
 You create a tap by passing a [`CATapDescription`](./catapdescription.md) to [`AudioHardwareCreateProcessTap(_:_:)`](./audiohardwarecreateprocesstap%28_,_%29.md). This returns an `AudioObjectID` for the new tap object. You can destroy a tap using [`AudioHardwareDestroyProcessTap(_:)`](./audiohardwaredestroyprocesstap%28_%29.md):
 
@@ -46,7 +46,7 @@ var id: AudioObjectID = 0
 AudioHardwareCreateAggregateDevice(description as CFDictionary, &id)
 ```
 
-##### Add a tap to an aggregate device
+### Add a tap to an aggregate device
 
 To use a tap as an input source, add it to an aggregate device that you configure for playback. First get the tap’s unique identifier by passing the `kAudioTapPropertyUID` selector and the tap’s audio object ID to [`AudioObjectGetPropertyData(_:_:_:_:_:_:)`](./audioobjectgetpropertydata%28_,_,_,_,_,_%29.md):
 
@@ -86,7 +86,7 @@ if var listAsArray = list as? [CFString] {
 }
 ```
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode, ensure that you’re using macOS 14.2 or later.
 

@@ -5,7 +5,7 @@
 
 Track a generic spatial accessory by helping ARKit find the device’s reference accessory file.
 
-#### Overview
+## Overview
 
 To track a generic spatial accessory, your app needs a `.referenceaccessory` file that describes the device’s physical characteristics. ARKit uses the metadata in this file to recognize and track the device in physical space.
 
@@ -15,7 +15,7 @@ When your app initializes an [`Accessory`](../ARKit/accessory.md) from a connect
 
 This article covers the two ways to make a `.referenceaccessory` file available to your app: bundle the file with your app, or rely on ARKit to read it from the accessory manufacturer’s app when that app is also installed on the device.
 
-#### Bundle the reference accessory file
+## Bundle the reference accessory file
 
 Make sure you have the `.referenceaccessory` file for the generic spatial accessory you want to track. If you’re not the manufacturer, check with the device manufacturer to see whether they provide one. If they don’t, your app can instead rely on the manufacturer’s app to supply the file at runtime. For details, see [Rely on the manufacturer’s app](./setting-up-access-to-a-reference-accessory-file.md#Rely-on-the-manufacturers-app).
 
@@ -84,7 +84,7 @@ If you prefer editing `Info.plist` file’s source, use the exported declaration
 </array>
 ```
 
-#### Rely on the manufacturer’s app
+## Rely on the manufacturer’s app
 
 If the manufacturer doesn’t make their `.referenceaccessory` file available for bundling, your app can instead rely on ARKit to find the file in the manufacturer’s app when that app is installed on the device. Your app doesn’t need any configuration changes for this path; just ensure your app handles initialization failures gracefully. When [`init(device:)`](../ARKit/accessory/init%28device%29.md) throws, display an error with a button that helps the person install the manufacturer’s app.
 

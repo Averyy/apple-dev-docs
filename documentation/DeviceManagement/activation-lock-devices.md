@@ -13,7 +13,7 @@ Enable activation lock on a remote device.
 
 - [Migrating managed devices](./migrating-managed-devices.md)
 
-#### Discussion
+## Discussion
 
 Find My iPhone Activation Lock is a feature of iCloud and Automated Device Enrollment that makes it harder for anyone to use or resell a lost or stolen device. Activation Lock is a feature of iCloud, and MDM has the ability to allow users to enable the feature on supervised devices.
 

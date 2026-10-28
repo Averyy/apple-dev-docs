@@ -23,11 +23,11 @@ func IORegistryEntryGetName(_ entry: io_registry_entry_t, _ name: UnsafeMutableP
 kern_return_t IORegistryEntryGetName(io_registry_entry_t entry, io_name_t name);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Registry entries can be named in a particular plane, or globally. This function returns the entry's global name. The global name defaults to the entry's meta class name if it has not been named.
 

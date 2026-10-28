@@ -31,7 +31,7 @@ class SKPhysicsBody
 - [Getting Started with Physics Bodies](./getting-started-with-physics-bodies.md)
 - [Responding to Frame-Cycle Events](./responding-to-frame-cycle-events.md)
 
-#### Overview
+## Overview
 
 Assign a [`SKPhysicsBody`](./skphysicsbody.md) object to the [`physicsBody`](./sknode/physicsbody.md) property of the [`SKNode`](./sknode.md) object to add physics simulation to the node. When a scene processes a new frame, it performs physics calculations on physics bodies attached to nodes in the scene. These calculations include gravity, friction, and collisions with other bodies. You can also apply your own forces and impulses to a body. After the scene completes these calculations, it updates the positions and orientations of the node objects.
 

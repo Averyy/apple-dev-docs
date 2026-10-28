@@ -19,7 +19,7 @@ Registers a block of teardown code to run after the current test method ends.
 func addTeardownBlock(_ block: @escaping @Sendable () async throws -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method during a test method’s execution to register a block of code to be called when the test method ends. The block of code may contain asynchronous teardown logic; the test system waits until the asynchronous teardown is complete before proceeding.
 

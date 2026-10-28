@@ -21,11 +21,11 @@ convenience init(hov hovInfo: String)
 + (instancetype) routeDetailWithHOV:(NSString *) hovInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing HOV lane information
 
-#### Discussion
+## Discussion
 
 Use this method to display information about HOV lane eligibility and requirements for the route. This helps users understand whether they can use faster HOV lanes based on vehicle occupancy.
 

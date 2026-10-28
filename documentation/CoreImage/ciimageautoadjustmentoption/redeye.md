@@ -24,7 +24,7 @@ static let redEye: CIImageAutoAdjustmentOption
 extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustRedEye;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a `CFBoolean` value. Supply `false` to indicate not to return a red eye filter. If you don’t specify this option, Core Image assumes its value is `true`.
 

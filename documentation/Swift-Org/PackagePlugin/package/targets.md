@@ -17,7 +17,7 @@ Any regular targets defined in this packagewith the exception of plugin targets.
 let targets: [Target]
 ```
 
-#### Discussion
+## Discussion
 
 The targets are specified in the same order as the package manifest.
 

@@ -21,11 +21,11 @@ Formats the duration, using the provided format style.
 func formatted<S>(_ v: S) -> S.FormatOutput where S : FormatStyle, S.FormatInput == Duration
 ```
 
-#### Return Value
+## Return Value
 
 A localized, formatted string that describes the duration. For example, a duration of 1 hour, 30 minutes, and 56 seconds in the `en_US` locale with a [`Duration.TimeFormatStyle`](./timeformatstyle.md) returns `1:30:56`. In the Finnish locale, this returns `1.30.56`.
 
-#### Discussion
+## Discussion
 
 Use this formatting method to apply a custom style when formatting a duration.
 

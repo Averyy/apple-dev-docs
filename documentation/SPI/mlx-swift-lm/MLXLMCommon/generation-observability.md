@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 Compose a token handler to observe generation without changing ordinary text or tool-call events.
 
-#### Cached chat sessions
+## Cached chat sessions
 
 Observe a [`ChatSession`](./chatsession.md) response while retaining its transcript and KV cache. The `observe` method accepts a [`GenerationTransformer`](./generationtransformer.md) that configures this request and wraps a fresh text/tool handler for every generation pass:
 
@@ -28,7 +28,7 @@ for try await event in session.observe(to: "Explain gravity.", using: .logProbab
 
 `topCount` is the number of top candidates; `0` reports only the chosen token. [`LogProbabilityGenerationTransformer`](./logprobabilitygenerationtransformer.md) configures a copy of the session’s parameters. This applies to the entire request, including automatic tool restarts, without changing `generateParameters`, later calls, or forks.
 
-#### Custom transformers
+## Custom transformers
 
 A transformer’s [`configure(_:)`](./generationtransformer/configure%28_%29.md) enables the computation its handler needs. Its [`makeHandler(wrapping:)`](./generationtransformer/makehandler%28wrapping%29.md) creates fresh decoding state for each pass. The output can be any [`GenerationProviding`](./generationproviding.md) type, including custom events unrelated to probabilities. Observation-only events return `nil` from [`generation`](./generationproviding/generation.md). [`TextGenerationTransformer`](./textgenerationtransformer.md) passes through the standard handler and parameters.
 
@@ -40,7 +40,7 @@ The ordinary `streamDetails` overload, `respond`, and `streamResponse` retain th
 
 Requesting log probabilities with active speculative decoding throws [`ChatSession.ObservationError.unsupportedSpeculativeDecoding`](./chatsession/observationerror/unsupportedspeculativedecoding.md). A configuration that falls back to standard decoding can still report probabilities. Observation does not silently change the decoding strategy.
 
-#### Overview
+## Overview
 
 [`Generation`](./generation.md) and [`TokenGeneration`](./tokengeneration.md) keep their existing cases. For token-level observations, wrap a [`TextToolTokenLoopHandler`](./texttooltokenloophandler.md) or [`RawTokenLoopHandler`](./rawtokenloophandler.md) in [`LogProbabilityTokenLoopHandler`](./logprobabilitytokenloophandler.md) and pass it to [`generateLoopTask(promptTokenCount:modelConfiguration:tokenizer:iterator:wiredMemoryTicket:includeStopToken:handler:)`](./generatelooptask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,includestoptoken,handler%29.md).
 

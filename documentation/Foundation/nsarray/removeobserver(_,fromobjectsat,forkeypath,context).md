@@ -25,7 +25,7 @@ func removeObserver(_ observer: NSObject, fromObjectsAt indexes: IndexSet, forKe
 - (void) removeObserver:(NSObject *) observer fromObjectsAtIndexes:(NSIndexSet *) indexes forKeyPath:(NSString *) keyPath context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 `NSArray` objects are not observable, so this method raises an exception when invoked on an `NSArray` object. Instead of observing an array, observe the to-many relationship for which the array is the collection of related objects.
 

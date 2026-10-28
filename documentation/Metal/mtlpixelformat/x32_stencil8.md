@@ -24,7 +24,7 @@ case x32_stencil8
 MTLPixelFormatX32_Stencil8
 ```
 
-#### Discussion
+## Discussion
 
 You can’t directly read the stencil value of a texture with the [`MTLPixelFormat.depth32Float_stencil8`](./depth32float_stencil8.md) format. To read stencil values from a texture with the [`MTLPixelFormat.depth32Float_stencil8`](./depth32float_stencil8.md) format, create a texture view of that texture using the [`MTLPixelFormat.x32_stencil8`](./x32_stencil8.md) format, and sample the texture view instead.
 

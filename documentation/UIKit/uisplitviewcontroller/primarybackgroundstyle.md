@@ -26,7 +26,7 @@ var primaryBackgroundStyle: UISplitViewController.BackgroundStyle { get set }
 
 - [Optimizing your iPad app for Mac](../optimizing-your-ipad-app-for-mac.md)
 
-#### Discussion
+## Discussion
 
 In macOS, the sidebar of a split view has Liquid Glass behind its view. To achieve this effect in your iPad app when it runs in macOS, set [`primaryBackgroundStyle`](./primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.sidebar`](./backgroundstyle/sidebar.md). Set the style to [`UISplitViewController.BackgroundStyle.none`](./backgroundstyle/none.md) when you want to control the background appearance of the primary view controller.
 

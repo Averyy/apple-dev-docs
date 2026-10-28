@@ -21,7 +21,7 @@ Returns a vector that results from shearing over an axis by shear factors for th
 func sheared(_ shear: AxisWithFactors) -> Vector3D
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from shearing over an axis by shear factors for the other two axes.
 

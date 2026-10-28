@@ -17,7 +17,7 @@ Returns an energy venue for the given HomeKit identifier.
 static func venue(matchingHomeUniqueIdentifier: UUID) async throws -> EnergyVenue
 ```
 
-#### Discussion
+## Discussion
 
 This method throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if the framework can’t provide the requested venue.
 

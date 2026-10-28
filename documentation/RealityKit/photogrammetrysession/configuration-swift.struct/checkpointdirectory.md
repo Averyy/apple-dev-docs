@@ -18,7 +18,7 @@ The directory that a the photogrammetry session uses for checkpoints during reco
 var checkpointDirectory: URL?
 ```
 
-#### Discussion
+## Discussion
 
 For macOS reconstruction, the `checkpointDirectory` serves as a temporary reconstruction space if it is not `nil`. Reconstruction starts from scratch, and does not resume from previous checkpoints.
 

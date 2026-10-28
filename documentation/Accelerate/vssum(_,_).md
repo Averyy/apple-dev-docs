@@ -21,7 +21,7 @@ func vSsum(_ count: Int32, _ x: UnsafePointer<vFloat>) -> Float
 extern float vSsum(int32_t count, const vFloat *x);
 ```
 
-#### Return Value
+## Return Value
 
 The sum of the values of the elements in the vector.
 

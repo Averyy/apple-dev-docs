@@ -18,7 +18,7 @@ Per-camera viewport rectangles within the render target.
 var viewports: [MTLViewport]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Each entry corresponds to a camera’s `viewportArrayIndex`. Corresponds to `MTLRenderCommandEncoder.setViewports(_:)`.
 

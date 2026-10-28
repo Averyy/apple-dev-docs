@@ -25,7 +25,7 @@ static func custom(key: String, value: Data) -> Product.PurchaseOption
 
 - [Sending Advanced Commerce API requests from your app](../../sending-advanced-commerce-api-requests-from-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this custom option with the [Advanced Commerce API](../../../AdvancedCommerceAPI/AdvancedCommerceAPI.md).
 

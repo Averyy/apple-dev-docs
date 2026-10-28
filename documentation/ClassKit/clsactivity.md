@@ -27,17 +27,17 @@ class CLSActivity
 
 - [Recording student progress](./recording-student-progress.md)
 
-#### Overview
+## Overview
 
 An activity represents a student’s attempt to complete the task corresponding to a [`CLSContext`](./clscontext.md) instance. For example, if a context represents a quiz, the associated activity represents the student’s attempt to take the quiz. As such, an activity is always associated with a context. You never initialize an activity in isolation or store a reference to it. Rather, you ask a context to create the activity and retrieve it from the context.
 
-##### Starting and Stopping Activities
+### Starting and Stopping Activities
 
 You start the activity with a call to the [`start()`](./clsactivity/start%28%29.md) method when the user begins the task, and stop it with a call to the [`stop()`](./clsactivity/stop%28%29.md) method when the user finishes. You can also use the [`stop()`](./clsactivity/stop%28%29.md) method to stop it temporarily if the user pauses the task, in which case you can start it again later with another call to [`start()`](./clsactivity/start%28%29.md) when the user resumes. The activity keeps track of the total time spent in the running state, which you can read via the [`duration`](./clsactivity/duration.md) property.
 
 Whether you implement activity pausing depends on how the parts of your app work. For example, you might pause a game activity when the user presses the pause button to reflect that the user has stepped away from the activity, but is likely to return soon to complete the task. On the other hand, you might not provide a way to pause a quiz activity because you require that it be completed without interruption, once started. If you do pause, you can start and stop an activity as many times as you want, but when you create a new activity (representing a new attempt at a task), you can no longer access the older activity from your app.
 
-##### Recording Progress
+### Recording Progress
 
 You can also assign [`progress`](./clsactivity/progress.md) to an activity. How you define progress depends on the task. For example, you can record progress through a quiz as a fraction of questions answered, or progress through a game level as a fraction of obstacles overcome.
 

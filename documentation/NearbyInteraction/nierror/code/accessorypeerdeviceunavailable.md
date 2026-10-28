@@ -21,7 +21,7 @@ case accessoryPeerDeviceUnavailable
 NIErrorCodeAccessoryPeerDeviceUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 For more on the backgrounding requirements of accessory interaction, see [`NINearbyAccessoryConfiguration`](../../ninearbyaccessoryconfiguration.md).
 

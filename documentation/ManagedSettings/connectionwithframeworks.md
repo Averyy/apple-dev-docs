@@ -5,11 +5,11 @@
 
 Empower parents and guardians to configure constraints on other devices while preserving the family’s privacy.
 
-#### Overview
+## Overview
 
 Use Managed Settings together with [Managed Settings UI](../ManagedSettingsUI/ManagedSettingsUI.md), [Device Activity](../DeviceActivity/DeviceActivity.md), and [Family Controls](../FamilyControls/FamilyControls.md) to manage a device’s settings while preserving the user’s privacy. Managed Settings can’t function without a parent or guardian in the same Family Sharing group authorizing your app using Family Controls. To help implement time-based settings, Device Activity executes your code on a schedule without a child running your app. The parent or guardian in the Family Sharing group makes the decisions about setting management, and no one outside of the group can see the apps the group uses or the activities they participate in on their devices.
 
-##### Request authorization for your app
+### Request authorization for your app
 
 The Family Controls framework contributes privacy-preserving capabilities to the suite of development tools. When you create an app with the Managed Settings framework, users must authorize your app when they open it for the first time on a device. After a parent or guardian authorizes your app, only a parent or guardian can delete your app. Family Controls uses tokens to represent applications and websites on a user’s device. The tokens ensure that no one outside of the user’s Family Sharing group can see the apps the family uses or the websites they visit.
 
@@ -28,7 +28,7 @@ AuthorizationCenter.shared.requestAuthorization { result in
 }
 ```
 
-##### Handle time limits and schedule constraints
+### Handle time limits and schedule constraints
 
 Since a child might not use your app independently, Device Activity executes your code even when your app isn’t running. A parent or guardian can set device usage schedules and time limits with your app. The system notifies your app when scheduled events occur and when usage approaches time limits. You can provide notifications on a device to warn the user that a scheduled event or time limit is approaching.
 

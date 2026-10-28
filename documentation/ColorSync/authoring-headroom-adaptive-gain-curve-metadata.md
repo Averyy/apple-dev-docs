@@ -5,13 +5,13 @@
 
 Create tone-mapping metadata that adapts HDR content to a display’s headroom.
 
-#### Overview
+## Overview
 
 A display’s *headroom* is the luminance it can show above reference white. When that headroom is less than an HDR image or video needs, the system tone maps the content to fit. A Headroom Adaptive Gain Curve (HAGC) lets you control that tone mapping instead of relying on the system default, and stores it in a form that travels with both stills and video. You attach a curve to a [`ColorSyncProfile`](./colorsyncprofile.md), either by building it from [Swift](../Swift/Swift.md) value types or by supplying a [`CFDictionary`](../CoreFoundation/cfdictionary.md). To move a curve between a still image and a video, serialize it to a compact binary encoding defined by SMPTE ST 2094-50, the industry standard for this tone-mapping metadata.
 
 For images, attach a curve only to an ICC profile that has a PQ, HLG, or linear transfer function. For a standard-dynamic-range profile, the profile-creation functions return `nil`.
 
-#### Add headroom-adaptive tone mapping to an ICC profile
+## Add headroom-adaptive tone mapping to an ICC profile
 
 The simplest tone mapping metadata carries only a reference white and a baseline headroom. This reproduces the system’s Reference White Tone Mapping Operator (RWTMO), so rendering stays consistent without defining an explicit curve.
 
@@ -54,7 +54,7 @@ ColorSyncProfileRef profile =
 
 > **Note**: Setting `kColorSyncCustomHDRReferenceWhite` to a custom value encodes that value in the binary data. Passing 203 is redundant, because 203 nits is the default the system applies when you omit the key. Leave the key unset to keep the encoding compact and let the default take effect.
 
-#### Define a custom gain curve
+## Define a custom gain curve
 
 A *gain curve* controls how the system tone maps the input signal when the display’s headroom is lower than the content’s headroom (indicated by `kColorSyncBaselineHeadroomStops`). As the system brightness changes, the display’s headroom varies, so you supply one or more custom alternate gain curves, each targeting a specific display headroom. When the content plays, the system interpolates between the two curves closest to the display’s actual headroom and applies the interpolated curve to the input signal. The baseline headroom from the previous section reproduces the system’s default operator, which suits most content. Define custom gain curves when you need precise control over how an image adapts at a given headroom; for example, to shape how highlights compress when a display has less headroom than the content.
 
@@ -109,7 +109,7 @@ NSDictionary *curveInfo = @{
 
 Place `curveInfo` under `kColorSyncHeadroomAdaptiveGainCurveInfo` inside the tone-mapping dictionary, then create the profile copy, as shown in the previous section.
 
-#### Derive a curve from a gain-map image
+## Derive a curve from a gain-map image
 
 An HDR image that uses a gain map, as specified in ISO 21496-1, already carries what the system needs to generate a gain curve between full HDR and SDR. When [Image I/O](../ImageIO/ImageIO.md) decodes such an image to HDR with [`kCGImageSourceDecodeToHDR`](../ImageIO/kcgimagesourcedecodetohdr.md), it derives HAGC metadata and attaches it to the resulting image. Read that metadata back through the image’s color space:
 
@@ -133,7 +133,7 @@ CFRelease(source);
 
 This connects gain-map images to HAGC: take an existing ISO 21496-1 file, let [Image I/O](../ImageIO/ImageIO.md) produce the metadata, then save the rendition to a non gain-map image format (for example, ISO 22028-5) with an ICC HDR profile, or to an HDR video.
 
-#### Round trip a curve between a still and a video
+## Round trip a curve between a still and a video
 
 HAGC metadata shares the same binary payload between video (SMPTE ST 2094-50) and images (the ICC HAGC tag), so you can move the metadata you add to a still image directly into a video stream, and move metadata from a video stream into an image. Read the binary from a profile with [`ColorSyncProfileCopyHeadroomAdaptiveGainCurveMetadata`](./colorsyncprofilecopyheadroomadaptivegaincurvemetadata.md), and rebuild a profile from binary with [`ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveMetadata`](./colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata.md):
 

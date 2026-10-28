@@ -21,7 +21,7 @@ let url: URL?
 
 - [Accepting loyalty passes from Wallet](../../accepting-loyalty-passes-from-wallet.md)
 
-#### Discussion
+## Discussion
 
 If the customer isn’t part of the merchant’s loyalty program, they can use the provided URL to get more information about that program.
 

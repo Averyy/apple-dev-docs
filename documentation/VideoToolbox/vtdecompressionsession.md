@@ -24,7 +24,7 @@ class VTDecompressionSession
 typedef struct OpaqueVTDecompressionSession * VTDecompressionSessionRef;
 ```
 
-#### Overview
+## Overview
 
 A decompression session supports the decompression of a sequence of video frames. The session is a reference-counted Core Foundation (CF) object.
 

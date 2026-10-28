@@ -21,7 +21,7 @@ Determine whether the block buffer is contiguous.
 var isContiguous: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 `true` if block buffer references a single contiguous memory block `false` otherwise. Also `false` if the buffer is empty.
 

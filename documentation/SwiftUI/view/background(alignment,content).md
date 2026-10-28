@@ -26,11 +26,11 @@ func background<V>(alignment: Alignment = .center, @ContentBuilder content: () -
 
 - [Adding a background to your view](../adding-a-background-to-your-view.md)
 
-#### Return Value
+## Return Value
 
 A view that uses the specified content as a background.
 
-#### Discussion
+## Discussion
 
 Use this modifier to place one or more views behind another view. For example, you can place a collection of stars behind a [`Text`](../text.md) view:
 

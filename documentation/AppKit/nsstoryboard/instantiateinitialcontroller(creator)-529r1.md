@@ -15,7 +15,7 @@ Creates the initial window controller from the storyboard and initializes it usi
 func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)? = nil) -> Controller? where Controller : NSWindowController
 ```
 
-#### Discussion
+## Discussion
 
 Every storyboard file has an initial controller object that represents the default interface to create. Use this method to construct that object using a custom code that you provide. Use this method when the constructor for your object takes parameters in addition to the specified `coder` object.
 

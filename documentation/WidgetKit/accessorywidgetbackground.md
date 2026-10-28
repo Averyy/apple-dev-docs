@@ -26,7 +26,7 @@ An adaptive background view that provides a standard appearance based on the the
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 - [Displaying the right widget background](./displaying-the-right-widget-background.md)
 
-#### Overview
+## Overview
 
 Use this view to provide a standardized background for your accessory widgets. Place the view in a [`ZStack`](../SwiftUI/zstack.md) behind your widget’s content.
 

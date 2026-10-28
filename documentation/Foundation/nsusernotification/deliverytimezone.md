@@ -21,7 +21,7 @@ var deliveryTimeZone: TimeZone? { get set }
 @property (copy, nullable) NSTimeZone * deliveryTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil` and the user switches time zones, the notification center will adjust the time of presentation to account for the time zone change.
 

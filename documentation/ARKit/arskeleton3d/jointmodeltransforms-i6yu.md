@@ -17,7 +17,7 @@ The model space transforms for each joint.
 var jointModelTransforms: [simd_float4x4] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Model space refers to a joint’s position relative to the hip joint. Note, the hip joint is located at the body anchor’s origin.
 

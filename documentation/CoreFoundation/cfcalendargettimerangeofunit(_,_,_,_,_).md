@@ -25,11 +25,11 @@ func CFCalendarGetTimeRangeOfUnit(_ calendar: CFCalendar!, _ unit: CFCalendarUni
 extern Boolean CFCalendarGetTimeRangeOfUnit(CFCalendarRef calendar, CFCalendarUnit unit, CFAbsoluteTime at, CFAbsoluteTime *startp, CFTimeInterval *tip);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the values of `startp` and `tip` could be calculated, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 The function may fail if, for example, you try to get the range of a `kCFCalendarUnitWeekday` and specify a time (`at`) that is during a weekend.
 

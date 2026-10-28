@@ -24,7 +24,7 @@ let CNContactNonGregorianBirthdayKey: String
 extern NSString * const CNContactNonGregorianBirthdayKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

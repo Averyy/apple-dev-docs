@@ -25,7 +25,7 @@ var damping: CGFloat { get set }
 @property (nonatomic) CGFloat damping;
 ```
 
-#### Discussion
+## Discussion
 
 This property simulates the effect of fluid friction or air resistance on a body. A damping factor of `0.0` specifies no loss in velocity, and a damping factor of `1.0` prevents the body from moving. The default damping factor is `0.1`.
 

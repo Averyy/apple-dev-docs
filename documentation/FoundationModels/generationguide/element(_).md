@@ -20,7 +20,7 @@ Enforces a guide on the elements within the array.
 static func element<Element>(_ guide: GenerationGuide<Element>) -> GenerationGuide<[Element]> where Value == [Element]
 ```
 
-#### Discussion
+## Discussion
 
 An `element` generation guide may be used when you want to apply guides to the values a model produces within an array. For example, you may want to generate an array of integers, where all the integers are in the range 0-9.
 

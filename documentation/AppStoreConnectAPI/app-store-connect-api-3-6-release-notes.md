@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 3.6 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - Win-back offers can now be configured using [Win-back offers](./win-back-offers.md). These are offers to bring back churned or expired customers to a subscription.  To learn more, see [Creating and configuring win-back offers](./creating-and-configuring-win-back-offers.md).
 - Developers can now use [Subscription images](./subscription-images.md) and [In-App Purchase images](./in-app-purchase-images.md) endpoints to manage images for promoting subscriptions and In-App Purchases.
@@ -20,7 +20,7 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 - Developers can now upload screenshots for Apple Watch Series 10, to learn more about possible values, see [`ScreenshotDisplayType`](./screenshotdisplaytype.md).
 - Developers can now add an app encryption declaration for a given app using [`Create an app encryption declaration`](./post-v1-appencryptiondeclarations.md).
 
-##### Improvements
+### Improvements
 
 - The OpenAPI specification ([downloadable here](https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip)) values has improved `operationId` names and the Apple managed [Swift OpenAPI generator](https://github.com/apple/swift-openapi-generator) now produces more readable names for the App Store Connect API operations.
 - [`SubscriptionStatusUrlVersion`](./subscriptionstatusurlversion.md) normalized to all caps values such as `V1` and `V2`.
@@ -29,12 +29,12 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 - The [`List all price points for a subscription`](./get-v1-subscriptions-_id_-pricepoints.md) endpoint now requires a `territory` filter.
 - The `purchaseRequirement` attribute for [`AppEvent.Attributes`](./appevent/attributes-data.dictionary.md) now correctly shows as a `string` type.
 
-##### Deprecations
+### Deprecations
 
 - The `app` relationship to [`Create an app encryption declaration`](./post-v1-appencryptiondeclarations.md) has been deprecated.
 - The [Promoted Purchase Images](./promoted-purchase-images.md) endpoints have been deprecated and replaced with [Subscription images](./subscription-images.md) and [In-App Purchase images](./in-app-purchase-images.md).
 
-##### Removals
+### Removals
 
 - The duration `ONE_DAY` has been removed from [`SubscriptionOfferDuration`](./subscriptionofferduration.md).
 

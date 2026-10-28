@@ -19,7 +19,7 @@ class let didFinishRestoringWindowsNotification: NSNotification.Name
 extern NSNotificationName const NSApplicationDidFinishRestoringWindowsNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification is posted on the main actor when the app is finished restoring windows, that is, when all the completion handlers from [`restoreWindow(withIdentifier:state:completionHandler:)`](../nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md) have been called. This is always posted after [`willFinishLaunchingNotification`](./willfinishlaunchingnotification.md), but may be posted before or after [`didFinishLaunchingNotification`](./didfinishlaunchingnotification.md), depending on whether clients copy the completion handlers and invoke them later. If there were no windows to restore, then this notification is still posted at the corresponding point in app launch (between [`willFinishLaunchingNotification`](./willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](./didfinishlaunchingnotification.md)).
 

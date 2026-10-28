@@ -19,11 +19,11 @@ func getObjectID() -> IOBluetoothObjectID
 - (IOBluetoothObjectID) getObjectID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothObjectID of the given IOBluetoothRFCOMMChannel.
 
-#### Discussion
+## Discussion
 
 The IOBluetoothObjectID can be used as a global reference for a given IOBluetoothRFCOMMChannel. It allows two separate applications to refer to the same IOBluetoothRFCOMMChannel.
 

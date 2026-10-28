@@ -16,7 +16,7 @@ Removes the command at a give index. Commands at and afte this index will be mov
 void (*RemoveCommandAtIndex)(IOFireWireLibVectorCommandRef self, UInt32 index);
 ```
 
-#### Discussion
+## Discussion
 
 Returns kIOReturnBadArgument if the index is out of bounds.
 

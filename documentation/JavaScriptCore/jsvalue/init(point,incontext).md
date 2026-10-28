@@ -20,11 +20,11 @@ Creates a JavaScript representation of the specified point.
 init!(point: CGPoint, inContext context: JSContext!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript object representing the specified point.
 
-#### Discussion
+## Discussion
 
 Converting a point creates a JavaScript object value with fields named `x` and `y`.
 

@@ -24,7 +24,7 @@ protocol NSCollectionLayoutEnvironment : NSObjectProtocol
 @protocol NSCollectionLayoutEnvironment <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In a section provider, you use the layout environment to get information about the context that the layout appears in. You can get information about the layout’s container, such as its size and content insets, and the traits of its environment, such as size classes, display scale factor, and user interface idiom. You use this information while rendering the layout’s sections to help you make decisions about how to display the layout.
 

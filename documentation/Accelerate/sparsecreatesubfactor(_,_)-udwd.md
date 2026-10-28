@@ -25,11 +25,11 @@ func SparseCreateSubfactor(_ subfactor: SparseSubfactor_t, _ Factor: SparseOpaqu
 static SparseOpaqueSubfactor_Complex_Float SparseCreateSubfactor(SparseSubfactor_t subfactor, SparseOpaqueFactorization_Complex_Float Factor);
 ```
 
-#### Return Value
+## Return Value
 
 Object representing the requested sub-factor. Must be cleaned up by a call to `SparseCleanup` once it is no longer required.
 
-#### Discussion
+## Discussion
 
 Here the term “sub-factor” is used to mean one or more parts of the whole factorization. For example, just the `Q` factor from `A=QRP`. The returned object is a wrapper around the orignal factorization, and does not actually perform any extraction (sub-factors are stored in non-standard formats that exploit implicit structure for efficiency, and formation of the sub-factor explicitly can be expensive). It is intended to be used as an argument to `SparseMultiply` and `SparseSolve` functions only.
 

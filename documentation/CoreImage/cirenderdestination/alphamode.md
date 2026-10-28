@@ -24,7 +24,7 @@ var alphaMode: CIRenderDestinationAlphaMode { get set }
 @property CIRenderDestinationAlphaMode alphaMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to an appropriate value given the object with which you initialized the [`CIRenderDestination`](../cirenderdestination.md).
 

@@ -18,7 +18,7 @@ typealias FFEffectParameterFlag = UInt32
 typedef UInt32 FFEffectParameterFlag;
 ```
 
-#### Discussion
+## Discussion
 
 Effect Parameter flags for use in calls to **FFEffectGetParameters()** and **FFEffectSetParameters()**.
 

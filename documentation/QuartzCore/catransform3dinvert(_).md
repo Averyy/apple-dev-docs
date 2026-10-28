@@ -24,7 +24,7 @@ func CATransform3DInvert(_ t: CATransform3D) -> CATransform3D
 extern CATransform3D CATransform3DInvert(CATransform3D t);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the original matrix if `t` has no inverse.
 

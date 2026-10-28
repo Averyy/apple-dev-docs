@@ -23,7 +23,7 @@ consuming func relinquish() -> mach_port_name_t
 
 Available when `RightType` is `Mach.SendOnceRight`.
 
-#### Discussion
+## Discussion
 
 Returns the Mach port name representing the right.
 

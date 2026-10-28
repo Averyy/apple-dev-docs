@@ -17,13 +17,13 @@ Returns the result from a streaming response, after it completes.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func collect() async throws -> sending LanguageModelSession.Response<Content>
+nonisolated(nonsending)
+func collect() async throws -> sending LanguageModelSession.Response<Content>
 ```
 
 Available when `Content` conforms to `Generable`.
 
-#### Discussion
+## Discussion
 
 If the streaming response was finished successfully before calling `collect()`, this method `Response` returns immediately.
 

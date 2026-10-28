@@ -19,7 +19,7 @@ convenience init(for screen: NSScreen, sizeInPoints: NSSize)
 - (instancetype) initForScreen:(NSScreen *) screen sizeInPoints:(NSSize) sizeInPoints;
 ```
 
-#### Discussion
+## Discussion
 
 The framework initializes the pixel dimensions and pixel density based on the specified screen and size. An instance of macOS running in the VM may not necessarily provide a display mode with a backing scale factor matching the specified screen.
 

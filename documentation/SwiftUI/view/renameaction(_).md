@@ -29,11 +29,11 @@ nonisolated
 func renameAction(_ isFocused: FocusState<Bool>.Binding) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that has the specified rename action.
 
-#### Discussion
+## Discussion
 
 Use this modifier in conjunction with the [`RenameButton`](../renamebutton.md) to implement standard rename interactions. A rename button receives its action from the environment. Use this modifier to customize the action provided to the rename button.
 

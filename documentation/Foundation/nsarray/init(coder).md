@@ -23,9 +23,9 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

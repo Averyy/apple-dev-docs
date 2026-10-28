@@ -13,7 +13,7 @@
 @property (copy, nonnull) CASpatialAudioExperience * intendedSpatialExperience;
 ```
 
-#### Discussion
+## Discussion
 
 The CHHapticEngine’s intended `CASpatialAudioExperience`.
 

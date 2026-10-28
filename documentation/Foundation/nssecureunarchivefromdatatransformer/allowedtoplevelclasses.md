@@ -25,7 +25,7 @@ class var allowedTopLevelClasses: [AnyClass] { get }
 @property (class, copy, readonly) NSArray<Class> * allowedTopLevelClasses;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the value of [`transformedValueClass()`](../valuetransformer/transformedvalueclass%28%29.md) if that value isn’t `nil`. Otherwise, it holds a list of the top level classes that it decodes, which includes [`NSArray`](../nsarray.md), [`NSDictionary`](../nsdictionary.md), [`NSSet`](../nsset.md), [`NSString`](../nsstring.md), [`NSNumber`](../nsnumber.md), [`NSDate`](../nsdate.md), [`NSData`](../nsdata.md), [`NSURL`](../nsurl.md), [`NSUUID`](../nsuuid.md), and [`NSNull`](../nsnull.md).
 

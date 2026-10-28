@@ -26,7 +26,7 @@ var boundingMapRect: MKMapRect { get }
 @property (nonatomic, readonly) MKMapRect boundingMapRect;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the smallest rectangle that completely encompasses the overlay. Implementers of this protocol need to set this area when implementing their overlay class, and after setting it, not change it. Specify the rectangle using projected coordinates — that is, coordinates you obtain by projecting the globe onto a two-dimensional surface.
 

@@ -20,13 +20,13 @@ A self-contained skeleton asset for animating characters and articulated objects
 final class SkeletonResource
 ```
 
-#### Overview
+## Overview
 
 A `SkeletonResource` encapsulates a skeleton’s joint hierarchy together with optional inverse-kinematics resources and blend masks in a single value. Use a skeleton resource to define the joint structure of a character, then share it with animation-related APIs such as retargeting configurations, IK rigs, and animation graphs.
 
 You create a skeleton resource by providing a name and the root of a joint hierarchy. A skeleton resource is immutable once created — the same instance is safe to reuse anywhere in your app, including from background threads, without copying.
 
-##### Build a skeleton from a joint hierarchy
+### Build a skeleton from a joint hierarchy
 
 Build a skeleton’s joint hierarchy using the [`SkeletonResource.Joint`](./skeletonresource/joint.md) type and the [`SkeletonResource.JointBuilder`](./skeletonresource/jointbuilder.md) result builder. Each joint has a name and a rest-pose transform relative to its parent; nesting joints inside the trailing closure declares parent-child relationships. Joint names must be unique among siblings — the initializer throws an error if any children of the same parent share a name.
 
@@ -48,7 +48,7 @@ let skeleton = try SkeletonResource(
 )
 ```
 
-##### Add blend masks and inverse-kinematics resources
+### Add blend masks and inverse-kinematics resources
 
 Blend masks let you control which joints an animation affects. Inverse-kinematics (IK) resources let the runtime solve joint poses that meet positional or orientational targets — for example, making a hand reach a point in space rather than following only pre-baked motion. Bundle either or both into an [`SkeletonResource.AnimationEvaluation`](./skeletonresource/animationevaluation-swift.struct.md) value and supply it when you create the skeleton; that data then stays fixed for the lifetime of the resource. Both lists default to empty if you don’t need them.
 
@@ -83,7 +83,7 @@ let skeleton = try SkeletonResource(
 )
 ```
 
-##### Extract a skeleton from a loaded model
+### Extract a skeleton from a loaded model
 
 To pull a skeleton out of a USD-loaded model for use with the animation APIs, convert the model’s [`MeshResource.Skeleton`](./meshresource/skeleton.md) with [`init(from:)`](./skeletonresource/init%28from%29.md).
 
@@ -95,7 +95,7 @@ if let meshSkeleton = modelEntity.model?.mesh.contents.skeletons.first {
 }
 ```
 
-##### Use with retargeting
+### Use with retargeting
 
 Pair a source and target `SkeletonResource` to build a retargeting configuration that remaps animations across characters with different joint names or proportions, then process source animations through it. See [`RetargetingConfiguration`](./retargetingconfiguration.md) for the full flow and the available matching strategies.
 
@@ -104,7 +104,7 @@ let config = try RetargetingConfiguration.automatchBiped(sourceSkeleton, to: tar
 let retargeted = try sourceAnimation.processAndCreateAnimation(retargeting: config)
 ```
 
-#### Related Types
+## Related Types
 
 - [`SkeletonResource.Joint`](./skeletonresource/joint.md) — a single joint in the skeleton hierarchy.
 - [`SkeletonResource.AnimationEvaluation`](./skeletonresource/animationevaluation-swift.struct.md) — bundle of IK resources and blend masks baked into the resource.

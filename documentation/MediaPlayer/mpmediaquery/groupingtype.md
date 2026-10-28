@@ -22,7 +22,7 @@ var groupingType: MPMediaGrouping { get set }
 @property (nonatomic) MPMediaGrouping groupingType;
 ```
 
-#### Discussion
+## Discussion
 
 The default grouping type is [`MPMediaGrouping.title`](../mpmediagrouping/title.md). See [`MPMediaGrouping`](../mpmediagrouping.md) for the list of available grouping types.
 

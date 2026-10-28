@@ -23,11 +23,11 @@ optional func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UI
 - (BOOL) navigationBar:(UINavigationBar *) navigationBar shouldPopItem:(UINavigationItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be popped; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Sent to the delegate before popping an item from the navigation bar.
 

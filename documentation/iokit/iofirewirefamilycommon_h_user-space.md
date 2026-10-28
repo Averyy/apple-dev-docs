@@ -5,9 +5,9 @@
 
 This file contains useful definitions for working with FireWire in the kernel and in user space
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <IOKit/IOKitLib.h>

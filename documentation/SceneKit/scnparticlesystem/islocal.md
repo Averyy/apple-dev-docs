@@ -25,7 +25,7 @@ var isLocal: Bool { get set }
 @property (nonatomic, getter=isLocal) BOOL local;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md) (the default), all positions, distances, and velocities in the particle system are in the scene’s world coordinate system. If [`true`](../../Swift/true.md), the particle system runs in the local coordinate space of the node containing it.
 

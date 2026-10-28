@@ -12,7 +12,7 @@ Create your first markup experience by setting up a view controller, adding mark
 - macOS 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 Whether you’re building a document viewer, note-taking app, design tool, or an app that requires content annotation, PaperKit provides the foundation for rich markup experiences.
 
@@ -20,7 +20,7 @@ To add PaperKit to your existing app, start by creating a [`PaperMarkupViewContr
 
 PaperKit works seamlessly with PencilKit, whether you already use PencilKit in your app or plan to add it. The frameworks complement each other: PencilKit provides freeform drawing capabilities, while PaperKit adds structured markup elements. You can use them together or independently based on your app’s needs.
 
-#### Add a markup view and data model
+## Add a markup view and data model
 
 In PaperKit, *markup* refers to structured annotation elements that your app can add to content. These markup elements include shapes, images, text boxes, and much more. The [`PaperMarkup`](./papermarkup.md) data model container handles saving and loading both PaperKit markup and PencilKit drawing data, and it handles rendering the markup on screen.
 
@@ -151,7 +151,7 @@ class DocumentViewController: NSViewController {
 }
 ```
 
-#### Add markup editing tools
+## Add markup editing tools
 
 Now that you have a markup view controller displaying content, the next step is to allow markup element creation. [`MarkupEditViewController`](./markupeditviewcontroller.md) (UIKit / SwiftUI) and [`MarkupToolbarViewController`](./markuptoolbarviewcontroller.md) (AppKit) provide this functionality by presenting a tool palette for selecting and configuring markup tools.
 
@@ -306,7 +306,7 @@ class DocumentViewController: NSViewController {
 }
 ```
 
-#### Save and load markup
+## Save and load markup
 
 With your markup view controller set up and editing tools available, the final step in creating your markup experience is to implement data persistence. After creating markup content in your app, you need to save the work so it persists between app launches. PaperKit handles this through the [`PaperMarkup`](./papermarkup.md) data model, which can serialize all markup elements — including shapes, text boxes, annotations, and even PencilKit drawings — into a single data representation.
 
@@ -468,7 +468,7 @@ class DocumentViewController: NSViewController {
 }
 ```
 
-#### Configure PaperKit with PencilKit
+## Configure PaperKit with PencilKit
 
 If your app already uses PencilKit for drawing, PaperKit seamlessly integrates to add structured markup capabilities alongside existing freeform drawing features. This combination enables natural sketching with Apple Pencil while also providing precise, editable markup elements.
 

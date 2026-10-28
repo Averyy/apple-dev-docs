@@ -22,7 +22,7 @@ typealias ACAccountStoreRemoveCompletionHandler = (Bool, (any Error)?) -> Void
 typedef void (^)(_Bool, NSError *) ACAccountStoreRemoveCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler parameters are:
 

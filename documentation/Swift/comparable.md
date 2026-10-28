@@ -21,7 +21,7 @@ A type that can be compared using the relational operators `<`, `<=`, `>=`, and 
 protocol Comparable : Equatable, ~Copyable, ~Escapable
 ```
 
-#### Overview
+## Overview
 
 The `Comparable` protocol is used for types that have an inherent order, such as numbers and strings. Many types in the standard library already conform to the `Comparable` protocol. Add `Comparable` conformance to your own custom types when you want to be able to compare instances using relational operators or use standard library methods that are designed for `Comparable` types.
 
@@ -49,7 +49,7 @@ print(measurements)
 // Prints "[1.1, 1.2, 1.2, 1.3, 1.5, 1.5, 2.9]"
 ```
 
-### Conforming to the Comparable Protocol
+## Conforming to the Comparable Protocol
 
 Types with Comparable conformance implement the less-than operator (`<`) and the equal-to operator (`==`). These two operations impose a strict total order on the values of a type, in which exactly one of the following must be true for any two values `a` and `b`:
 

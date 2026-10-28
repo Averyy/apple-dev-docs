@@ -23,7 +23,7 @@ func flashScrollIndicators()
 - (void) flashScrollIndicators;
 ```
 
-#### Discussion
+## Discussion
 
 You should call this method whenever you bring the scroll view to front.
 

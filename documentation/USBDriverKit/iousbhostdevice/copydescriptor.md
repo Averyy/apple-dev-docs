@@ -15,11 +15,11 @@ Retrieves any type of descriptor from the cache or the device.
 virtual kern_return_t CopyDescriptor(uint8_t type, uint16_t *length, uint8_t index, uint16_t languageID, uint8_t requestType, uint8_t requestRecipient, uint8_t *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method searches the descriptor cache for the descriptor that matches the specified parameters. If the descriptor isn’t in the cache, the method retrieves it from the device using a `GET_DESCRIPTOR` control request (USB 2.0, section 9.4.3) and adds it to the cache. (The method puts the `index` value in the low byte of the `wValue` field, and puts the `languageID` value in the `wIndex` field of the request structure.) When making the `GET_DESCRIPTOR` control request, this method acquires the service’s workloop lock and may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md).
 

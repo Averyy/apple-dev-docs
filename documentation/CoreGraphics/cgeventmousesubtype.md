@@ -20,7 +20,7 @@ enum CGEventMouseSubtype
 enum CGEventMouseSubtype : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Tablets may generate specially annotated mouse events that contain values associated with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field. To learn how to set these values, see the function [`setIntegerValueField(_:value:)`](./cgevent/setintegervaluefield%28_,value%29.md).
 

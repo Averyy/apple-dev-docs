@@ -20,7 +20,7 @@
 typealias MTLPackedFloat3 = _MTLPackedFloat3
 ```
 
-#### Discussion
+## Discussion
 
 A structure that contains three 32-bit floating-point values with no additional padding.
 

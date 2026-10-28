@@ -21,7 +21,7 @@ A static context representing the total stream of bytes on a connection.
 static let defaultStream: NWConnection.ContentContext
 ```
 
-#### Discussion
+## Discussion
 
 Once this context is used for sending, and the send is marked as complete, no more data can be sent on the connection.
 

@@ -23,7 +23,7 @@ func index(before i: LazyFilterSequence<Base>.Index) -> LazyFilterSequence<Base>
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

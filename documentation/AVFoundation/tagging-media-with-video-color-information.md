@@ -5,11 +5,11 @@
 
 Inspect and set video color space information when writing and transcoding media.
 
-#### Overview
+## Overview
 
 Media files may contain video color space information tags that describe the video media. The system’s color management uses these video color tags to ensure a consistent color appearance across all environments. You can retrieve and inspect the color information tags from your media, and specify new tags when writing and transcoding media. You can also detect wide color media to prevent clamping of the media to a smaller gamut color space.
 
-##### Video tags describe key video parameters
+### Video tags describe key video parameters
 
 For historical reasons, color scientists defined many permutations of broadcast video color spaces. As a result, you should *tag* your media files with color information that describes the video media. If you don’t, the untagged media content might not match your intentions across all the different configurations and environments your customers encounter.
 
@@ -32,7 +32,7 @@ ColorSync uses these video parameters to generate one of the following video col
 
 [ISO/IEC 23001-8:2016](https://www.iso.org/standard/69661.html), *Coding-Independent Code Points* defines these standard tag numbers.
 
-##### Tag your video using asset writer
+### Tag your video using asset writer
 
 When you initialize an [`AVAssetWriterInput`](./avassetwriterinput.md) object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The [`AVVideoColorPropertiesKey`](./avvideocolorpropertieskey.md) is a dictionary that contains properties specifying video color (see [Setting color properties for a specific resolution](./setting-color-properties-for-a-specific-resolution.md) for the details). Set this key in the `AVAssetWriterInput` output settings dictionary to override the tagging of color properties in the video.
 
@@ -70,7 +70,7 @@ let input = AVAssetWriterInput(mediaType: .video,
 writer.add(input)
 ```
 
-##### Specify color space information for your video composition
+### Specify color space information for your video composition
 
 You configure video compositions with color space information using analogous properties.
 
@@ -87,7 +87,7 @@ videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2
 
 > **Note**:  The default value for the above properties is `nil`. When the value of a property is `nil`, the system adopts and propogates the source’s value.
 
-##### Tag your core video buffers with color space information
+### Tag your core video buffers with color space information
 
 If you generate Core Video source buffers for rendering (for example, using a pixel buffer pool in Metal), you should tag them with color information.
 
@@ -100,7 +100,7 @@ CVBufferSetAttachment(pixelBuffer, kCVImageBufferYCbCrMatrixKey, kCVImageBufferY
 inputPixelBufferAdaptor.append(pixelBuffer, withPresentationTime: presentationTime)
 ```
 
-##### Get your media’s color space information
+### Get your media’s color space information
 
 You access the low-level details about an asset’s video track media using [`CMFormatDescription`](../CoreMedia/cmformatdescription.md). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](./avassettrack.md) [`formatDescriptions`](./avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](../CoreVideo/kcvimagebuffercolorprimarieskey.md) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
 
@@ -130,7 +130,7 @@ for assetTrack in assetTracks {
 }
 ```
 
-##### View your media’s color information
+### View your media’s color information
 
 You can use the Show Movie Inspector command in the macOS QuickTime Player app to view the color space information for the video media in a file. Open the file in the app and choose Window > Show Movie Inspector. The Inspector window displays the color information and other details about the video media.
 
@@ -140,7 +140,7 @@ The Finder Get Info command also shows the color information for the video media
 
 ![Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3677442@2x.png)
 
-##### Detect wide color tags in your media
+### Detect wide color tags in your media
 
 The [`usesWideGamutColorSpace`](./avmediacharacteristic/useswidegamutcolorspace.md) media characteristic indicates that the video track contains color primaries wider than Rec. 709 that the system can’t accurately represent. A wide color space, such as P3 D65, contains additional dynamic range that may benefit from special treatment when compositing in your workflow. You should exercise care to avoid clamping the colors back to the Rec. 709 space. If you don’t, it’s generally best to stay within the Rec. 709 space for your processing.
 
@@ -156,7 +156,7 @@ if wideGamutTracks.count > 0 {
 }
 ```
 
-##### Preserve wide color in your media
+### Preserve wide color in your media
 
 Set the [`AVAssetReaderOutput`](./avassetreaderoutput.md) [`AVVideoAllowWideColorKey`](./avvideoallowwidecolorkey.md) property to `true` to receive buffers in their original color space. The default value (`false`) permits implicit color conversions to a nonwide gamut color space.
 
@@ -165,7 +165,7 @@ let allowWideColorSettings = [AVVideoAllowWideColorKey: true]
 let readerOutput = AVAssetReaderOutput(outputSettings: allowWideColorSettings) 
 ```
 
-##### Support wide color in custom video compositors
+### Support wide color in custom video compositors
 
 You implement the optional [`supportsWideColorSourceFrames`](./avvideocompositing/supportswidecolorsourceframes.md) property and return `true` to indicate your custom video compositor handles frames that contain wide color properties. In this case, the compositor examines and honors color space tags on every single source frame buffer.
 

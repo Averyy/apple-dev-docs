@@ -27,7 +27,7 @@ var dateValue: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * dateValue;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the system can’t represent the value as a date.
 

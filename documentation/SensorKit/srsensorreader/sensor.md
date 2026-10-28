@@ -23,7 +23,7 @@ var sensor: SRSensor { get }
 @property (copy, readonly) SRSensor sensor;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this property to the sensor you pass into [`init(sensor:)`](./init%28sensor%29.md).
 

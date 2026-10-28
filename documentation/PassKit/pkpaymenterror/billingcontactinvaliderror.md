@@ -20,7 +20,7 @@ The error code to indicate an invalid billing address or billing name.
 static var billingContactInvalidError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the billing contact information on the Apple Pay sheet has an error in the address or name.
 

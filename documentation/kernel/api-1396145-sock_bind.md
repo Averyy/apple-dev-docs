@@ -13,11 +13,11 @@
 errno_t sock_bind(socket_t so, const struct sockaddr *to);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Binds a socket to a specific address. See 'man 2 bind' for more information.
 

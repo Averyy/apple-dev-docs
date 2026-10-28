@@ -6,7 +6,7 @@
 
 A field that indirectly specifies where to find the hint track sample data.
 
-#### Overview
+## Overview
 
 The data reference is a file or resource specified by the data reference atom (`'dref'`) inside the data information atom (`'dinf'`) of the hint track. The data information atom can contain a table of data references, and the data reference index is a 16-bit integer that tells you which entry in that table should be used. Normally, the hint track has a single data reference, and this index entry is set to `0`.
 

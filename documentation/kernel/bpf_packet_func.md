@@ -13,11 +13,11 @@
 typedef errno_t (*bpf_packet_func)(ifnet_t interface, mbuf_t data);
 ```
 
-#### Return Value
+## Return Value
 
 An errno value or zero upon success.
 
-#### Discussion
+## Discussion
 
 bpf_packet_func The bpf_packet_func is used to intercept inbound and outbound packets. The tap function will never free the mbuf. The tap function will only copy the mbuf in to various bpf file descriptors tapping this interface.
 

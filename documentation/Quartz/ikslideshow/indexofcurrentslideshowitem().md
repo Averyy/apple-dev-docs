@@ -19,7 +19,7 @@ func indexOfCurrentSlideshowItem() -> Int
 - (NSUInteger) indexOfCurrentSlideshowItem;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the current item in the slideshow.
 

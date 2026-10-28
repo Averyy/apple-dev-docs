@@ -19,7 +19,7 @@ Create a credential registration request, for registering a new passkey with the
 func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest
 ```
 
-#### Return Value
+## Return Value
 
 The credential registration request, that you pass to [`ASAuthorizationController`](../asauthorizationcontroller.md).
 

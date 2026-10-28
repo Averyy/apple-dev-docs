@@ -25,7 +25,7 @@ var languageCode: String { get }
 @property (copy, readonly) NSString * languageCode;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of language codes include `"en"`, `"es"`, and `"zh"`.
 

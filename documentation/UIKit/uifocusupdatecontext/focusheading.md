@@ -23,7 +23,7 @@ var focusHeading: UIFocusHeading { get }
 @property (nonatomic, assign, readonly) UIFocusHeading focusHeading;
 ```
 
-#### Discussion
+## Discussion
 
 To view all the possible focus heading directions, see the [`UIFocusHeading`](../uifocusheading.md) data type.
 

@@ -21,7 +21,7 @@ Accesses a contiguous subrange of the array’s elements.
 subscript(bounds: Range<Int>) -> ArraySlice<Element> { get set }
 ```
 
-#### Overview
+## Overview
 
 The returned `ArraySlice` instance uses the same indices for the same elements as the original array. In particular, that slice, unlike an array, may have a nonzero `startIndex` and an `endIndex` that is not equal to `count`. Always use the slice’s `startIndex` and `endIndex` properties instead of assuming that its indices start or end at a particular value.
 

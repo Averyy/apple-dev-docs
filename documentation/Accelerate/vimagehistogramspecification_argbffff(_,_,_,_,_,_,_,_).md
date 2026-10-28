@@ -25,11 +25,11 @@ func vImageHistogramSpecification_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, 
 vImage_Error vImageHistogramSpecification_ARGBFFFF(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, const vImagePixelCount * desired_histogram[4], unsigned int histogram_entries, Pixel_F minVal, Pixel_F maxVal, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 Use this function to apply a histogram — that you’ve generated using [`vImageHistogramSpecification_ARGBFFFF(_:_:_:_:_:_:_:_:)`](./vimagehistogramspecification_argbffff%28_,_,_,_,_,_,_,_%29.md) — to each channel of another image.
 
@@ -104,7 +104,7 @@ vImageHistogramSpecification_ARGBFFFF(&buffer, &buffer,
                                       kvImageNoFlags);
 ```
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

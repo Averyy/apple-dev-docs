@@ -25,7 +25,7 @@ var geometry: SCNGeometry? { get set }
 @property (nonatomic, retain, nullable) SCNGeometry * geometry;
 ```
 
-#### Discussion
+## Discussion
 
 A node can have only one geometry attached to it. To combine geometries so they can be controlled or animated together, create a node with no geometry and add other nodes to it.
 

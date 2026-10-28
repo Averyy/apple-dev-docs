@@ -22,7 +22,7 @@ class Configuration
 @interface SFSafariViewControllerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a configuration object with the [`init(url:configuration:)`](./init%28url,configuration%29-305vl.md) method to initialize your view controller.
 

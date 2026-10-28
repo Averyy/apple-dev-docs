@@ -13,7 +13,7 @@
 MBUF_EXT = 0x0001
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this mbuf has external data.
 

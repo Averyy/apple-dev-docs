@@ -21,7 +21,7 @@ var isRadial: Bool { get set }
 @property (nonatomic, assign, getter=isRadial) BOOL radial;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, the control behaves as a swipable radial button, rather than a collection of 4 separate buttons.
 

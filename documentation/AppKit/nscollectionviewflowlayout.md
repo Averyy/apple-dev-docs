@@ -19,13 +19,13 @@ class NSCollectionViewFlowLayout
 @interface NSCollectionViewFlowLayout : NSCollectionViewLayout
 ```
 
-#### Overview
+## Overview
 
 In a flow layout, the first item is positioned in the top-left corner and other items are laid out either horizontally or vertically based on the scroll direction, which is configurable. Items may be the same size or different sizes, and you may use the flow layout object or the collection view’s delegate object to specify the size of items and the spacing around them. The flow layout also lets you specify custom header and footer views for each section.
 
 You can use an [`NSCollectionViewFlowLayout`](./nscollectionviewflowlayout.md) object as-is or subclass it to modify more aspects of the layout behavior. There are several ways to customize the basic layout behavior that do not require subclassing. For example, you can use a delegate object to change the size and spacing of items dynamically. Subclassing is appropriate for more advanced layout changes, such as adding supplementary views or decoration views, supporting custom layout attributes, or customizing the layout animations when inserting or deleting items.
 
-##### Configuring a Collection View to Use a Flow Layout
+### Configuring a Collection View to Use a Flow Layout
 
 You can configure a collection view to use a flow layout object programmatically or at design time:
 
@@ -36,7 +36,7 @@ Normally, you specify the size of items and their spacing using the properties o
 
 For more information about customizing the layout dynamically using a delegate, see [`NSCollectionViewDelegateFlowLayout`](./nscollectionviewdelegateflowlayout.md).
 
-##### Adding Header and Footer Views to Sections
+### Adding Header and Footer Views to Sections
 
 The flow layout supports custom header and footer views for each section, displaying them as supplementary views in the layout. [Figure 1](./nscollectionviewflowlayout.md#1965629) shows how header and footer views are presented in your layout. The header view appears above the items in a section and the footer view appears below those items.
 
@@ -53,7 +53,7 @@ When registering your header view, specify [`elementKindSectionHeader`](./nscoll
 
 You configure the contents of your header and footer views in the same way you configure items. Use your app data to configure the content of the supplementary view and its subviews. When you want to update the content in a header or footer, call the [`reloadSections(_:)`](./nscollectionview/reloadsections%28_%29.md) method and force the collection view to update the section, including its headers and footers. Reloading the section is safer than maintaining references to the views themselves because of how the collection view recycles views. If you do want to update views directly, use the methods of the [`NSCollectionViewDelegate`](./nscollectionviewdelegate.md) protocol to track when your views are added and removed from the collection view.
 
-##### Understanding How the Flow Layout is Generated
+### Understanding How the Flow Layout is Generated
 
 The flow layout builds its grid dynamically, using the item size and spacing information to place items sequentially into rows (for a vertically scrolling layout) or columns (for a horizontally scrolling layout). The number of items displayed in each row or column is determined by the collection view’s size and the size of the items in that row. When items have a uniform size, the number of items in each row is the same, but when items are different sizes, some rows may contain more or fewer items. [Figure 2](./nscollectionviewflowlayout.md#1965630) illustrates how the flow layout places items in a row until there is no more space and then begins a new row and continues the layout process.
 
@@ -68,11 +68,11 @@ The flow layout follows a specific set of steps to determine the size of each it
 
 Individual spacing between items and between different lines of items is controlled by the properties of this class and the delegate. For line spacing, the largest item in the line defines the line’s height and thereby controls the spacing between that line and other lines. The minimum inter-item spacing controls only how many items are placed on the line, and does not set the spacing between items.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 When you want to do more than specify the size or spacing of items, subclass `NSCollectionViewFlowLayout` and override the appropriate methods. When subclassing, the best approach is to take advantage of the built-in flow layout behavior and then make tweaks as needed.
 
-###### Adding New Supplementary or Decoration Views to the Layout
+#### Adding New Supplementary or Decoration Views to the Layout
 
 The standard flow layout object supports only header and footer supplementary views for each section. To support additional supplementary views, or to add decoration views, you must override the following methods:
 
@@ -83,11 +83,11 @@ The standard flow layout object supports only header and footer supplementary vi
 
 Your implementations of these methods should adjust the position of items and views to accommodate your custom content. For each of your implementations, call `super` first so that you can modify the attributes returned by the default flow layout behavior before adding any custom layout attributes.
 
-###### Tweaking the Layout Attributes
+#### Tweaking the Layout Attributes
 
 To tweak the flow layout algorithm, override the [`layoutAttributesForElements(in:)`](./nscollectionviewlayout/layoutattributesforelements%28in%29.md) method and any other methods that return layout attributes that you need to modify. In each method, call `super` first and then modify the attributes returned by the default flow layout behavior.
 
-###### Changing the Initial or Final Attributes of Elements
+#### Changing the Initial or Final Attributes of Elements
 
 To customize the insertion or deletion animations performed by the layout, override some or all of the following methods:
 
@@ -100,7 +100,7 @@ To customize the insertion or deletion animations performed by the layout, overr
 
 In your custom implementations, specify the layout attributes for each item or view being inserted or deleted. The flow layout handles the creation of the appropriate animations, using the initial or final attributes that you provide. It is also recommended that you override the [`prepare(forCollectionViewUpdates:)`](./nscollectionviewlayout/prepare%28forcollectionviewupdates%29.md) and [`finalizeCollectionViewUpdates()`](./nscollectionviewlayout/finalizecollectionviewupdates%28%29.md) methods to track the insertions and deletions.
 
-###### Supporting Custom Layout Attributes
+#### Supporting Custom Layout Attributes
 
 Subclassing is required if you want the flow layout to manage attributes other than the size and visibility of items and views. If you subclass [`NSCollectionViewLayoutAttributes`](./nscollectionviewlayoutattributes.md) and define additional layout attributes, you must also subclass `NSCollectionViewFlowLayout` to provide values for those attributes . In your flow layout subclass, override the following:
 

@@ -22,7 +22,7 @@ Performs the request on a Core Media buffer and produces observations.
 func perform(on sampleBuffer: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result
 ```
 
-#### Return Value
+## Return Value
 
 The observation — or list of observations — the request produces.
 

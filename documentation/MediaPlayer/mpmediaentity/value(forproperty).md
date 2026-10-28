@@ -23,11 +23,11 @@ func value(forProperty property: String) -> Any?
 - (id) valueForProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the media `property` key.
 
-#### Discussion
+## Discussion
 
 Use [`enumerateValues(forProperties:using:)`](./enumeratevalues%28forproperties,using%29.md) to efficiently access more than one property at a time.
 

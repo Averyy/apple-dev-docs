@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the string contains the given string,
 func localizedStandardContains<T>(_ string: T) -> Bool where T : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This is the most appropriate method for doing user-level string searches, similar to how searches are done generally in the system.  The search is locale-aware, case and diacritic insensitive.  The exact list of search options applied may change over time.
 

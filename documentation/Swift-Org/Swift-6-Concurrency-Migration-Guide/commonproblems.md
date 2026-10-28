@@ -13,13 +13,13 @@ The data isolation guarantees made by the compiler affect all Swift code. This m
 
 After enabling complete checking, many projects can contain a large number of warnings and errors. *Don’t* get overwhelmed! Most of these can be tracked down to a much smaller set of root causes. And these causes, frequently, are a result of common patterns which aren’t just easy to fix, but can also be very instructive while learning about Swift’s concurrency system.
 
-#### Unsafe Global and Static Variables
+## Unsafe Global and Static Variables
 
 Global state, including static variables, are accessible from anywhere in a program. This visibility makes them particularly susceptible to concurrent access. Before data-race safety, global variable patterns relied on programmers carefully accessing global state in ways that avoided data-races without any help from the compiler.
 
 > **Experiment**: These code examples are available in package form. Try them out yourself in [Globals.swift](https://github.com/apple/swift-migration-guide/blob/main/Sources/Examples/Globals.swift).
 
-##### Sendable Types
+### Sendable Types
 
 ```swift
 var supportedStyleCount = 42
@@ -85,7 +85,7 @@ nonisolated(unsafe) var supportedStyleCount = 42
 
 Only use `nonisolated(unsafe)` when you are carefully guarding all access to the variable with an external synchronization mechanism such as a lock or dispatch queue.
 
-##### Non-Sendable Types
+### Non-Sendable Types
 
 In the above examples, the variable is an `Int`, a value type that is inherently `Sendable`. Global *reference* types present an additional challenge, because they are typically not `Sendable`.
 
@@ -116,7 +116,7 @@ class StyleStore {
 
 Here, we see two functions that could access the internal state of the `WindowStyler.defaultStyler` concurrently. The compiler only permits these kinds of cross-isolation accesses with `Sendable` types. One option is to isolate the variable to a single domain using a global actor. Alternatively, it might make sense to add a conformance to `Sendable` directly.
 
-#### Protocol Conformance Isolation Mismatch
+## Protocol Conformance Isolation Mismatch
 
 A protocol defines requirements that a conforming type must satisfy, including static isolation. This can result in isolation mismatches between a protocol’s declaration and conforming types.
 
@@ -124,7 +124,7 @@ There are many possible solutions to this class of problem, but they often invol
 
 > **Experiment**: These code examples are available in package form. Try them out yourself in [ConformanceMismatches.swift](https://github.com/apple/swift-migration-guide/blob/main/Sources/Examples/ConformanceMismatches.swift).
 
-##### Under-Specified Protocol
+### Under-Specified Protocol
 
 The most commonly-encountered form of this problem happens when a protocol has no explicit isolation. In this case, as with all other declarations, this implies *non-isolated*. Non-isolated protocol requirements can be called from generic code in any isolation domain. If the requirement is synchronous, it is invalid for a conforming type’s implementation to access actor-isolated state:
 
@@ -169,7 +169,7 @@ class WindowStyler: Styler {
 }
 ```
 
-###### Adding Isolation
+#### Adding Isolation
 
 If protocol requirements are always called from the main actor, adding `@MainActor` is the best solution.
 
@@ -204,7 +204,7 @@ protocol Styler {
 }
 ```
 
-###### Asynchronous Requirements
+#### Asynchronous Requirements
 
 For methods that implement synchronous protocol requirements the isolation of implementations must match exactly. Making a requirement *asynchronous* offers more flexibility for conforming types.
 
@@ -229,7 +229,7 @@ The above code is safe, because generic code must always call `applyStyle()` asy
 
 However, this flexibility comes at a cost. Changing a method to be asynchronous can have a significant impact at every call site. In addition to an async context, both the parameters and return values may need to cross isolation boundaries. Together, these could require significant structural changes to address. This may still be the right solution, but the side-effects should be carefully considered first, even if only a small number of types are involved.
 
-###### Preconcurrency Conformance
+#### Preconcurrency Conformance
 
 Swift has a number of mechanisms to help you adopt concurrency incrementally and interoperate with code that has not yet begun using concurrency at all. These tools can be helpful both for code you do not own, as well as code you do own, but cannot easily change.
 
@@ -248,11 +248,11 @@ This inserts runtime checks to ensure that that static isolation of the conformi
 
 > **Note**: To learn more about incremental adoption and dynamic isolation, see [Dynamic Isolation](./incrementaladoption.md#Dynamic-Isolation)
 
-##### Isolated Conforming Type
+### Isolated Conforming Type
 
 So far, the solutions presented assume that the causes of isolation mismatches are ultimately rooted in protocol definitions. But it could be that the protocol’s static isolation is appropriate, and the issue instead is only caused by the conforming type.
 
-###### Non-Isolated
+#### Non-Isolated
 
 Even a completely non-isolated function could still be useful.
 
@@ -268,7 +268,7 @@ class WindowStyler: Styler {
 
 The constraint on this implementation is isolated state and functions become unavailable. This can still be an appropriate solution, especially if the function is used as a source of instance-independent configuration.
 
-###### Conformance by Proxy
+#### Conformance by Proxy
 
 It’s possible to use an intermediate type to help address static isolation differences. This can be particularly effective if the protocol requires inheritance by its conforming types.
 
@@ -301,13 +301,13 @@ extension CustomWindowStyle: Styler {
 
 Here, a new type has been created that can satisfy the needed inheritance. Incorporating will be easiest if the conformance is only used internally by `WindowStyler`.
 
-#### Crossing Isolation Boundaries
+## Crossing Isolation Boundaries
 
 The compiler will only permit a value to move from one isolation domain to another when it can prove it will not introduce data races. Attempting to use values that do not satisfy this requirement in contexts that can cross isolation boundaries is a very common problem. And because libraries and frameworks may be updated to use Swift’s concurrency features, these issues can come up even when your code hasn’t changed.
 
 > **Experiment**: These code examples are available in package form. Try them out yourself in [Boundaries.swift](https://github.com/apple/swift-migration-guide/blob/main/Sources/Examples/Boundaries.swift).
 
-##### Implicitly-Sendable Types
+### Implicitly-Sendable Types
 
 Many value types consist entirely of `Sendable` properties. The compiler will treat types like this as implicitly `Sendable`, but *only* when they are non-public.
 
@@ -349,7 +349,7 @@ public struct ColorComponents: Sendable {
 
 Even when trivial, adding `Sendable` conformance should always be done with care. Remember that `Sendable` is a guarantee of thread-safety and removing the conformance is an API-breaking change.
 
-##### Preconcurrency Import
+### Preconcurrency Import
 
 Even if the type in another module is actually `Sendable`, it is not always possible to modify its definition. In this case, you can use a `@preconcurrency import` to downgrade diagnostics until the library is updated.
 
@@ -365,7 +365,7 @@ func updateStyle(backgroundColor: ColorComponents) async {
 
 With the addition of this `@preconcurrency import`, `ColorComponents` remains non-`Sendable`. However, the compiler’s behavior will be altered. When using the Swift 6 language mode, the error produced here will be downgraded to a warning. The Swift 5 language mode will produce no diagnostics at all.
 
-##### Latent Isolation
+### Latent Isolation
 
 Sometimes the *apparent* need for a `Sendable` type can actually be the symptom of a more fundamental isolation problem. The only reason a type needs to be `Sendable` is to cross isolation boundaries. If you can avoid crossing boundaries altogether, the result can often be both simpler and a better reflection of the true nature of your system.
 
@@ -394,7 +394,7 @@ Now, there is no longer an isolation boundary for the non-`Sendable` type to cro
 
 Lack of `MainActor` isolation like this is, by far, the most common form of latent isolation. It is also very common for developers to hesitate to use this as a solution. It is completely normal for programs with a user interface to have a large set of `MainActor`-isolated state. Concerns around long-running *synchronous* work can often be addressed with just a handful of targeted `nonisolated` functions.
 
-##### Computed Value
+### Computed Value
 
 Instead of trying to pass a non-`Sendable` type across a boundary, it may be possible to use a `Sendable` function that creates the needed values.
 
@@ -406,7 +406,7 @@ func updateStyle(backgroundColorProvider: @Sendable () -> ColorComponents) async
 
 Here, it does not matter that `ColorComponents` is not `Sendable`. By using `@Sendable` function that can compute the value, the lack of sendability is side-stepped entirely.
 
-##### Sending Argument
+### Sending Argument
 
 The compiler will permit non-`Sendable` values to cross an isolation boundary if the compiler can prove it can be done safely. Functions that explicitly state they require this can use the values within their implementations with less restrictions.
 
@@ -419,11 +419,11 @@ func updateStyle(backgroundColor: sending ColorComponents) async {
 
 A `sending` argument does impose some restrictions at call sites. But, this can still be easier or more appropriate than adding a `Sendable` conformance. This technique also works for types you do not control.
 
-##### Sendable Conformance
+### Sendable Conformance
 
 When encountering problems related to crossing isolation domains, a very natural reaction is to just try to add a conformance to `Sendable`. You can make a type `Sendable` in four ways.
 
-###### Global Isolation
+#### Global Isolation
 
 Adding global isolation to any type will make it implicitly `Sendable`.
 
@@ -436,7 +436,7 @@ public struct ColorComponents {
 
 By isolating this type to the `MainActor`, any accesses from other isolation domains must be done asynchronously. This makes it possible to safely pass instances around across domains.
 
-###### Actors
+#### Actors
 
 Actors have an implicit `Sendable` conformance because their properties are protected by actor isolation.
 
@@ -462,7 +462,7 @@ actor Style {
 
 By moving both the non-Sendable data *and* operations on that data into the actor, no isolation boundaries need to be crossed. This provides a `Sendable` interface to those operations that can be freely accessed from any asynchronous context.
 
-###### Manual Synchronization
+#### Manual Synchronization
 
 If you have a type that is already doing manual synchronization, you can express this to the compiler by marking your `Sendable` conformance as `unchecked`.
 
@@ -475,7 +475,7 @@ class Style: @unchecked Sendable {
 
 You should not feel compelled to remove the use of queues, locks, or other forms of manual synchronization to integrate with Swift’s concurrency system. However, most types are not inherently thread-safe. As a general rule, if a type isn’t already thread-safe, attempting to make it `Sendable` should not be your first approach. It is often easier to try other techniques first, falling back to manual synchronization only when truly necessary.
 
-###### Retroactive Sendable Conformance
+#### Retroactive Sendable Conformance
 
 Your dependencies may also expose types that are using manual synchronization. This is usually visible only via documentation. It is possible to add an `@unchecked Sendable` conformance in this case as well.
 
@@ -488,7 +488,7 @@ Because `Sendable` is a marker protocol, a retroactive conformance does not have
 
 > **Note**: To learn more about retroactive conformances, see the associated [Swift evolution proposal](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0364-retroactive-conformance-warning.md).
 
-###### Sendable Reference Types
+#### Sendable Reference Types
 
 It is possible for reference types to be validated as `Sendable` without the `unchecked` qualifier, but this is only done under very specific circumstances.
 
@@ -510,7 +510,7 @@ final class Style: Sendable {
 
 A reference type that conforms to `Sendable` is sometimes a sign that a value type would be preferable. But there are circumstances where reference semantics need to be preserved, or where compatibility with a mixed Swift/Objective-C code base is required.
 
-###### Using Composition
+#### Using Composition
 
 You do not need to select one single technique for making a reference type `Sendable.` One type can use many techniques internally.
 
@@ -526,7 +526,7 @@ final class Style: Sendable {
 
 The `background` property is protected by manual synchronization, while the `foreground` property uses actor isolation. Combining these two techniques results in a type that better describes its internal semantics. By doing this, the type continues to take advantage of the compiler’s automated isolation checking.
 
-##### Non-Isolated Initialization
+### Non-Isolated Initialization
 
 Actor-isolated types can present a problem when they are initialized in a non-isolated context. This frequently occurs when the type is used in a default value expression or as a property initializer.
 
@@ -574,7 +574,7 @@ class WindowStyler {
 
 All `Sendable` properties can still be safely accessed in this `init` method. And while any non-`Sendable` properties cannot, they can still be initialized by using default expressions.
 
-##### Non-Isolated Deinitialization
+### Non-Isolated Deinitialization
 
 Even if a type has actor isolation, deinitializers are *always* non-isolated.
 

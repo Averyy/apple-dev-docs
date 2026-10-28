@@ -22,7 +22,7 @@ class UIMutableApplicationShortcutItem
 @interface UIMutableApplicationShortcutItem : UIApplicationShortcutItem
 ```
 
-#### Overview
+## Overview
 
 This class is a convenience subclass of [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md), helping you work with registered, and therefore immutable, quick actions. For information about how to use objects of this class in your app, read the overview in [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md).
 

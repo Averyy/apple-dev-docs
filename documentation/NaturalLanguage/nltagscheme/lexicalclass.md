@@ -29,7 +29,7 @@ extern NLTagScheme const NLTagSchemeLexicalClass;
 
 - [Identifying parts of speech](../identifying-parts-of-speech.md)
 
-#### Discussion
+## Discussion
 
 For possible values, see Lexical classes in [`NLTag`](../nltag.md).
 

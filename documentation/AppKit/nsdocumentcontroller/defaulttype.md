@@ -19,7 +19,7 @@ var defaultType: String? { get }
 @property (readonly, nullable) NSString * defaultType;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns the first Editor type declared by the `CFBundleDocumentTypes` array in the application’s `Info.plist`, or returns `nil` if no Editor type is declared. You can override it to customize the type of document that is created when, for instance, the user chooses New in the File menu.
 

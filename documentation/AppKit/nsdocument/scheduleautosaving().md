@@ -19,7 +19,7 @@ func scheduleAutosaving()
 - (void) scheduleAutosaving;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method checks to see if autosaving is turned on and, if so and if `[self hasUnautosavedChanges]` returns [`true`](../../Swift/true.md), schedules an `NSTimer` to invoke [`autosave(withDelegate:didAutosave:contextInfo:)`](./autosave%28withdelegate,didautosave,contextinfo%29.md) in the future. If `[self hasUnautosavedChanges]` returns [`false`](../../Swift/false.md) it unschedules any previously scheduled timer. It takes care not to cause [`autosave(withDelegate:didAutosave:contextInfo:)`](./autosave%28withdelegate,didautosave,contextinfo%29.md) to be invoked before a previous invocation caused by it has finished. The exact timings it uses are complicated and subject to change in future releases of macOS. You can override this method to control when exactly periodic autosaving happens. It is invoked by [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) and [`updateChangeCount(withToken:for:)`](./updatechangecount%28withtoken,for%29.md).
 

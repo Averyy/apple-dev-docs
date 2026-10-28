@@ -17,7 +17,7 @@ func AXValueGetValue(_ value: AXValue, _ theType: AXValueType, _ valuePtr: Unsaf
 Boolean AXValueGetValue(AXValueRef value, AXValueType theType, void *valuePtr);
 ```
 
-#### Discussion
+## Discussion
 
 Decodes the structure stored in value and copies it into valuePtr. If the structure stored in value is not the same as requested by theType, the function returns false.
 

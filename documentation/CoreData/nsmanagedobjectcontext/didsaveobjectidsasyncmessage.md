@@ -21,7 +21,7 @@ Posted after a private queue context saves, containing object IDs rather than fu
 struct DidSaveObjectIDsAsyncMessage
 ```
 
-#### Overview
+## Overview
 
 Only use this message type for contexts with `NSPrivateQueueConcurrencyType`. For main queue contexts, use [`NSManagedObjectContext.DidSaveObjectIDsMessage`](./didsaveobjectidsmessage.md).
 

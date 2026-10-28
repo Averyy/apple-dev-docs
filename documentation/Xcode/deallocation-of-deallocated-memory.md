@@ -5,11 +5,11 @@
 
 Detects attempts to free deallocated memory.
 
-#### Overview
+## Overview
 
 Use this check to detect when you call `free` on deallocated memory, commonly referred to as a *double free* error. Attempting to deallocate memory more than once can result in a crash or other unpredictable behavior. Available in Xcode 7 and later.
 
-##### Deallocation of freed memory in C
+### Deallocation of freed memory in C
 
 In the following example, the code deallocates the `p_int` variable after the call to free its memory:
 
@@ -19,7 +19,7 @@ free(pointer);
 free(pointer); // Error: free called twice with the same memory address 
 ```
 
-###### Solution
+#### Solution
 
 Ensure that you call the `free` function just once for memory you allocate.
 

@@ -5,7 +5,7 @@
 
 Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
 
-#### Overview
+## Overview
 
 Swift packages are a convenient and lightweight solution for creating a modular app architecture and reusing code across your apps or with other developers. Over time, you may want to develop your published Swift package in tandem with your app, or create a sample app to showcase its features. To develop a Swift package in tandem with an app, you can leverage the behavior whereby a local package overrides a package dependency with the same name:
 

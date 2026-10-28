@@ -23,7 +23,7 @@ var allowsMoveOperation: Bool { get }
 @property (nonatomic, readonly) BOOL allowsMoveOperation;
 ```
 
-#### Discussion
+## Discussion
 
 A move operation can be applied only within the same app. Drag items shared with another app are always copied.
 

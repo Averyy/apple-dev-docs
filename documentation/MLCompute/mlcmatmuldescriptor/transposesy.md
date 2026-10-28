@@ -23,7 +23,7 @@ var transposesY: Bool { get }
 @property (nonatomic, readonly) BOOL transposesY;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

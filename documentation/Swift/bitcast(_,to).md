@@ -21,11 +21,11 @@ Returns the bits of the given instance, interpreted as having the specified type
 func bitCast<T, U>(_ original: T, to type: U.Type) -> U where T : ConvertibleToBytes, U : ConvertibleFromBytes
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of type `U`, cast from `original`.
 
-#### Discussion
+## Discussion
 
 `T` and `U` must have the same-sized memory representation. If they don’t, this function will trap.
 

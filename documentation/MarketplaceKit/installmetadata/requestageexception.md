@@ -20,7 +20,7 @@ var requestAgeException: Bool
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 Set this property to `true` if the app to install has an age rating beyond the maximum allowed for the device (see [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md)). Instead of installing the app, the framework presents a sheet that enables the person to send an installation exception request to the parent or guardian. For more information, see [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md).
 

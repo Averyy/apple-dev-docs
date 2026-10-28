@@ -11,7 +11,7 @@ Factory member function to construct and intialize a work loop.
 static IOWorkLoop *workLoop();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a workLoop instance if constructed successfully, 0 otherwise.
 

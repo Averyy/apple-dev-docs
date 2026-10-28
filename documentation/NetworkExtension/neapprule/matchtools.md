@@ -19,7 +19,7 @@ var matchTools: [NEAppRule]? { get set }
 @property (copy, nullable) NSArray<NEAppRule *> * matchTools;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to restrict this rule so it only matches network traffic that the matching app generates and all helper tool processes that the matching app spawns.
 

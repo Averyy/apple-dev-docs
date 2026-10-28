@@ -25,7 +25,7 @@ struct CTLineBoundsOptions
 enum CTLineBoundsOptions : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 Passing `0` (no options) returns the typographic bounds, including typographic leading and shifts.
 

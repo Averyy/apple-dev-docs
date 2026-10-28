@@ -5,7 +5,7 @@
 
 Adds a person’s first name to an element.
 
-#### Overview
+## Overview
 
 Here’s an example that sets the first name for a monogram.
 
@@ -17,11 +17,11 @@ Here’s an example that sets the first name for a monogram.
 </monogramLockup>
 ```
 
-##### Values for firstName
+### Values for firstName
 
 - **String**: The first name of a person.
 
-##### Elements that Use firstName
+### Elements that Use firstName
 
 - [monogram](./monogram.md)
 

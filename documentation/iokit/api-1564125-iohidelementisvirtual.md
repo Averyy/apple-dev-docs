@@ -16,11 +16,11 @@ Returns the virtual property for the element.
 Boolean IOHIDElementIsVirtual(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the TRUE if virtual or FALSE if not.
 
-#### Discussion
+## Discussion
 
 Indicates whether the element is a virtual element.
 

@@ -33,7 +33,7 @@ var displayName: String? { get }
 @property (atomic, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 Players only see the display name of other players who are in their contacts list.
 

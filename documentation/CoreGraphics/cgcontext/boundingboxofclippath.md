@@ -25,7 +25,7 @@ var boundingBoxOfClipPath: CGRect { get }
 extern CGRect CGContextGetClipBoundingBox(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 The bounding box is the smallest rectangle completely enclosing all points in the clipping path, including control points for any Bezier curves in the path.
 

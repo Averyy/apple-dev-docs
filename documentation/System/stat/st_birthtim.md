@@ -21,7 +21,7 @@ Time of file creation, given as a C `timespec` since the Epoch.
 var st_birthtim: timespec { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_birthtim` (or `st_birthtimespec` on Darwin).
 

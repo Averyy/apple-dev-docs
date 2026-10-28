@@ -19,7 +19,7 @@ class NSScreen
 @interface NSScreen : NSObject
 ```
 
-#### Overview
+## Overview
 
 An app may use an [`NSScreen`](./nsscreen.md) object to retrieve information about a screen and use this information to decide what to display on that screen. For example, an app may use the [`deepest`](./nsscreen/deepest.md) method to find out which of the available screens can best represent color and then might choose to display all of its windows on that screen.
 

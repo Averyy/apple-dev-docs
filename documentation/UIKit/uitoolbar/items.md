@@ -22,7 +22,7 @@ var items: [UIBarButtonItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UIBarButtonItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The items, instances of [`UIBarButtonItem`](../uibarbuttonitem.md), that are visible on the toolbar in the order they appear in this array. Any changes to this property aren’t animated. Use the [`setItems(_:animated:)`](./setitems%28_,animated%29.md) method to animate changes.
 

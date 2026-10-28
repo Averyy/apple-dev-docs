@@ -5,7 +5,7 @@
 
 Determine whether you can recover from a failed trust evaluation.
 
-#### Overview
+## Overview
 
 Many factors affect the outcome of a trust evaluation. These include whether the system can locate all of the intermediate certificates, the validity of the certificates in the chain, and the characteristics of the certificates. Some issues, like a revoked certificate, result in an absolute failure and should *not* be circumvented. In other cases, you might get a different result by changing the conditions of the evaluation. For example, an expired certificate might have been valid when the corresponding identity was used to sign a document.
 

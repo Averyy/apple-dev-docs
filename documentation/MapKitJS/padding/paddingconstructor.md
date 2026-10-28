@@ -15,7 +15,7 @@ Creates a padding object with no inset margins.
 constructor();
 ```
 
-#### Discussion
+## Discussion
 
 If you provide no arguments, the framework initializes the padding object with default values of `0` for all inset margins. Use other initializers to create padding objects with different values.
 

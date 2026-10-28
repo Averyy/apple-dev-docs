@@ -21,7 +21,7 @@ Prepares the collection to store the specified number of elements, when doing so
 mutating func reserveCapacity(_ n: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If you will be adding a known number of elements to a collection, use this method to avoid multiple reallocations. A type that conforms to `RangeReplaceableCollection` can choose how to respond when this method is called. Depending on the type, it may make sense to allocate more or less storage than requested or to take no action at all.
 

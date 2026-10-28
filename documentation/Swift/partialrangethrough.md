@@ -22,7 +22,7 @@ A partial interval up to, and including, an upper bound.
 struct PartialRangeThrough<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You create `PartialRangeThrough` instances by using the prefix closed range operator (prefix `...`).
 

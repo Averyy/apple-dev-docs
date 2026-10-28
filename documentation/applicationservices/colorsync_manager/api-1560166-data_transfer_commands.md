@@ -4,7 +4,7 @@
 
 Specify commands for caller-supplied ColorSync data transfer functions.
 
-#### Overview
+## Overview
 
 When your application calls the function [CMFlattenProfile](./api-1804897-cmflattenprofile.md), any of the functions in the group [Accessing Profile Elements](../colorsync_manager.md#1666059), or the PostScript-related functions of type [Working With PostScript](../colorsync_manager.md#1666896), the selected CMM—or, for the `CMUnflattenProfile` function, the ColorSync Manager—calls the flatten function you supply to transform profile data. The call passes one of the command constants defined by this enumeration.
 

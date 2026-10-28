@@ -20,7 +20,7 @@ typealias AEStreamRef = OpaquePointer
 typedef struct OpaqueAEStreamRef *AEStreamRef;
 ```
 
-#### Discussion
+## Discussion
 
 You create `AEStreamRef` objects and manipulate their contents using the stream routines found in the section [Apple Event Manager](../applicationservices/apple_event_manager.md).
 

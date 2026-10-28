@@ -12,7 +12,7 @@ An atom that summarizes the features and complexity of a movie.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The movie profile atom summarizes the features and complexity of a movie, such as the required codecs and maximum bit rate, in order to help player applications or devices quickly determine whether they have the necessary resources to play the movie.
 

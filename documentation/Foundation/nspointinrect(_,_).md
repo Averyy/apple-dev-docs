@@ -20,15 +20,15 @@ func NSPointInRect(_ aPoint: NSPoint, _ aRect: NSRect) -> Bool
 extern BOOL NSPointInRect(NSPoint aPoint, NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aPoint` is located within the rectangle represented by `aRect`, otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Point-in-rectangle functions generally assume that the “upper” and “left” edges of a rectangle are inside  the rectangle boundaries, while the “lower” and “right” edges are outside the boundaries. This method treats the “upper” and “left” edges of the rectangle as the ones containing the origin of the rectangle.
 
-##### Special Considerations
+### Special Considerations
 
 The meanings of “upper” and “lower” (and “left” and “right”) are relative to the current coordinate system and the location of the rectangle. For a rectangle of positive height located in positive x and y coordinates:
 

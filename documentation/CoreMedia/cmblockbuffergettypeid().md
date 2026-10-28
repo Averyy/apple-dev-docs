@@ -25,11 +25,11 @@ func CMBlockBufferGetTypeID() -> CFTypeID
 extern CFTypeID CMBlockBufferGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the `CFTypeID` corresponding to `CMBlockBuffer`.
 
-#### Discussion
+## Discussion
 
 Obtains the CoreFoundation type ID for the `CMBlockBuffer` type.
 

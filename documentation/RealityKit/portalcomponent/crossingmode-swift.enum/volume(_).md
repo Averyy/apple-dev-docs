@@ -20,7 +20,7 @@ Allows contents within the portal to cross a box-shaped boundary.
 case volume(PortalComponent.Volume)
 ```
 
-#### Discussion
+## Discussion
 
 Entities inside the portal world that have a [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cross the faces of the box. Parts of a crossing entity inside the volume render as portal content, parts outside render in the host scene.
 

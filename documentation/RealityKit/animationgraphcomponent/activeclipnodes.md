@@ -20,7 +20,7 @@ The animation clip nodes that were active during the most recent graph evaluatio
 var activeClipNodes: [AnimationGraphComponent.ActiveClipNode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the typed view of [`activeNodes`](./activenodes.md) filtered to [`AnimationGraphComponent.ActiveClipNode`](./activeclipnode.md).
 

@@ -19,7 +19,7 @@ var safeAreaInsets: NSEdgeInsets { get }
 @property (readonly) NSEdgeInsets safeAreaInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The safe area reflects the unobscured portion of the screen. On some Macs, the insets reflect the portion of the screen covered by the camera housing. If your app offers a custom full-screen experience, apply the specified insets to the screen’s frame rectangle to obtain the area within which it is safe to display your content. Content in the safe area is guaranteed to be unobscured.
 

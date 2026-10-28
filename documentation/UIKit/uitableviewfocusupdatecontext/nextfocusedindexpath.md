@@ -23,7 +23,7 @@ var nextFocusedIndexPath: IndexPath? { get }
 @property (nonatomic, strong, readonly, nullable) NSIndexPath * nextFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the index path only when the [`nextFocusedView`](../uifocusupdatecontext/nextfocusedview.md) is located within a cell of the table view. Otherwise, it returns `nil`. This can happen if focus is moving out of the table view, because the [`nextFocusedView`](../uifocusupdatecontext/nextfocusedview.md) isn’t associated with an index path in this table view.
 

@@ -15,7 +15,7 @@ Enables collection after collection has been disabled.
 - (void) enable;
 ```
 
-#### Discussion
+## Discussion
 
 This method balances a single invocation of [`disable`](./disable.md). To reenable collection, this method must be invoked as many times as was [`disable`](./disable.md).
 

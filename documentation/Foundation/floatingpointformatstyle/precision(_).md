@@ -21,11 +21,11 @@ Modifies the format style to use the specified precision.
 func precision(_ p: FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified precision.
 
-#### Discussion
+## Discussion
 
 The [`NumberFormatStyleConfiguration.Precision`](../numberformatstyleconfiguration/precision.md) type lets you specify a fixed number of digits to show for a number’s integer and fractional parts. You can also set a fixed number of significant digits.
 

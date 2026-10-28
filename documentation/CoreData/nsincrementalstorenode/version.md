@@ -25,7 +25,7 @@ var version: UInt64 { get }
 @property (nonatomic, readonly) uint64_t version;
 ```
 
-#### Discussion
+## Discussion
 
 The version number is used by the persistent store coordinator to detect and handle merge conflicts. The version number should be stored with the record. The version number should (implicitly) start at zero (where zero indicates an unsaved object in memory) and be incremented by exactly one every time you save. In addition, you increment the version number when you or the Core Data framework have marked the associated managed object for optimistic locking.
 

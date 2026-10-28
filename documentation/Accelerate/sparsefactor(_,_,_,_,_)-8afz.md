@@ -25,11 +25,11 @@ func SparseFactor(_ symbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix:
 static SparseOpaqueFactorization_Float SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Float Matrix, SparseNumericFactorOptions nfoptions, void *factorStorage, void *workspace);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaqueFactorization_Float`](./sparseopaquefactorization_float.md) structure that represents the matrix factorization.
 
-#### Discussion
+## Discussion
 
 - symbolicFactor: A symbolic factorization that returns by calling [`SparseFactor(_:_:_:_:_:)`](./sparsefactor%28_,_,_,_,_%29-8afz.md).
 - Matrix: The matrix to factorize.
@@ -37,7 +37,7 @@ A [`SparseOpaqueFactorization_Float`](./sparseopaquefactorization_float.md) stru
 - factorStorage: A pointer to space for storing the factorization of size at least [`factorSize_Float`](./sparseopaquesymbolicfactorization/factorsize_float.md) bytes. Don’t alter this storage during the lifetime of the return value.
 - workspace: A pointer to a workspace of size at least [`workspaceSize_Float`](./sparseopaquesymbolicfactorization/workspacesize_float.md) bytes. You can reuse or deallocate the workspace storage after the function returns.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a symbolic factorization that [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-3697o.md) creates.
 

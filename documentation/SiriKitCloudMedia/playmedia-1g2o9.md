@@ -9,7 +9,7 @@ Interpret the user’s request to play a media item, and provide instructions to
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Discussion
+## Discussion
 
 Processing a play media request requires a few steps:
 

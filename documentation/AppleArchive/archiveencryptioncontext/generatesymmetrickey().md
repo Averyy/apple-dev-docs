@@ -21,11 +21,11 @@ Generates a symmetric encryption key.
 func generateSymmetricKey() throws -> SymmetricKey
 ```
 
-#### Return Value
+## Return Value
 
 The new symmetric encryption key.
 
-#### Discussion
+## Discussion
 
 This function generates a new symmetric encryption key, stores it in the context, and returns it.
 

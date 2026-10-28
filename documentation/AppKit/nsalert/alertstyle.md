@@ -19,7 +19,7 @@ var alertStyle: NSAlert.Style { get set }
 @property NSAlertStyle alertStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`NSAlert.Style`](./style.md) enumeration for the list of alert style constants.
 

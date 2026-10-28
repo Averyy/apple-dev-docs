@@ -26,7 +26,7 @@ func addTimeInterval(_ seconds: TimeInterval) -> Any
 - (id) addTimeInterval:(NSTimeInterval) seconds;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSDate`](../nsdate.md) object that is set to `seconds` seconds relative to the receiver. The date returned might have a representation different from the receiver’s.
 

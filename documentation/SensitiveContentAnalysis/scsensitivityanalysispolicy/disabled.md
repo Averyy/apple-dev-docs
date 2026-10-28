@@ -27,7 +27,7 @@ SCSensitivityAnalysisPolicyDisabled
 
 - [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
-#### Discussion
+## Discussion
 
 If this value is [`analysisPolicy`](../scsensitivityanalyzer/analysispolicy.md), the framework doesn’t detect sensitive content. The system disables sensitive content analysis under any of the following conditions:
 

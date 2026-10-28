@@ -29,7 +29,7 @@ func stop(with params: MTROvenCavityOperationalStateClusterStopParams?) async th
 - (void) stopWithParams:(MTROvenCavityOperationalStateClusterStopParams *) params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command SHALL be supported if the device supports remotely stopping the operation.
 

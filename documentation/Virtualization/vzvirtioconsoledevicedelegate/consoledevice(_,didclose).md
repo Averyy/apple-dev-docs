@@ -19,7 +19,7 @@ optional func consoleDevice(_ consoleDevice: VZVirtioConsoleDevice, didClose con
 - (void) consoleDevice:(VZVirtioConsoleDevice *) consoleDevice didClosePort:(VZVirtioConsolePort *) consolePort;
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to finish processing or flushing any remaining data from the [`VZVirtioConsolePort`](../vzvirtioconsoleport.md) attachment after closing a port, or the additional data might remain on the serial port.
 

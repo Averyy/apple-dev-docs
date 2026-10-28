@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the set contains a component of t
 @preconcurrency func has(_ componentType: any Component.Type) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the set contains a component of the given type.
 

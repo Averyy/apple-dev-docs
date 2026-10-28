@@ -24,7 +24,7 @@ var xHeight: CGFloat { get }
 @property (nonatomic, readonly) CGFloat xHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This value measures (in points) the height of the lowercase character “x”. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 

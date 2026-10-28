@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether two transforms are equal within a
 static bool SPProjectiveTransform3DAlmostEqualToTransform(SPProjectiveTransform3D t1, SPProjectiveTransform3D t2, double tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two transforms are nearly equal to each other.
 
-#### Discussion
+## Discussion
 
 The default absolute tolerance is [`ulpOfOne`](../Swift/floatingpoint/ulpofone-3j2pj.md) in Swift or `DBL_EPSILON` in Objective-C.
 

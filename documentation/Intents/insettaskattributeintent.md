@@ -25,13 +25,13 @@ class INSetTaskAttributeIntent
 @interface INSetTaskAttributeIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INSetTaskAttributeIntent`](./insettaskattributeintent.md) object when the user marks a task as complete or changes the triggers used to generate reminders for the task. The intent object can contain the task information and values for any changed attributes.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSetTaskAttributeIntentHandling`](./insettaskattributeintenthandling.md) protocol. Your handler should confirm the request and create an [`INSetTaskAttributeIntentResponse`](./insettaskattributeintentresponse.md) object with the updated task information.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -40,7 +40,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents |
 | Always requires unlocked device | No |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to modify task attributes in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

@@ -17,7 +17,7 @@ All reduce sum.
 static func allSum(_ x: MLXArray, group: MLXDistributed.Group? = nil, stream: StreamOrDevice = .cpu) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Sum `x` across all processes in the group.
 

@@ -21,7 +21,7 @@ var status: CPLaneStatus { get set }
 @property (nonatomic, assign) CPLaneStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 One of the [`CPLaneStatus`](../cplanestatus.md) values that describes the lane’s status.
 

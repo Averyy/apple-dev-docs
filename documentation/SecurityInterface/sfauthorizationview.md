@@ -19,7 +19,7 @@ class SFAuthorizationView
 @interface SFAuthorizationView : NSView
 ```
 
-#### Overview
+## Overview
 
 The lock appears locked when the user must be authorized and appears open when the user has been authorized. The closed and open lock icons of the authorization view are shown in the following figure.
 

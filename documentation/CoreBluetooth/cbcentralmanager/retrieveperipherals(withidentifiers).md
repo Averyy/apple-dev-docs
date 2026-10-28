@@ -25,7 +25,7 @@ func retrievePeripherals(withIdentifiers identifiers: [UUID]) -> [CBPeripheral]
 - (NSArray<CBPeripheral *> *) retrievePeripheralsWithIdentifiers:(NSArray<NSUUID *> *) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A list of peripherals that the central manager is able to match to the provided identifiers.
 

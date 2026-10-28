@@ -23,7 +23,7 @@ static var focused: UIControl.State { get }
 UIControlStateFocused
 ```
 
-#### Discussion
+## Discussion
 
 In focus-based navigation systems, a control enters this state when it receives the focus. A focused control changes its appearance to indicate that it has focus, and this appearance differs from the appearance of the control when it’s highlighted or selected. Further interactions with the control can result in it also becoming highlighted or selected.
 

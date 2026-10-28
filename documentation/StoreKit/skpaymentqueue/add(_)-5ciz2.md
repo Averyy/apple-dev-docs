@@ -32,7 +32,7 @@ func add(_ observer: any SKPaymentTransactionObserver)
 - [Choosing a receipt validation technique](../choosing-a-receipt-validation-technique.md)
 - [Testing transaction observer code](../testing-transaction-observer-code.md)
 
-#### Discussion
+## Discussion
 
 Your application should add an observer to the payment queue during application initialization. If there are no observers attached to the queue, the payment queue does not synchronize its list of pending transactions with the Apple App Store, because there is no observer to respond to updated transactions.
 

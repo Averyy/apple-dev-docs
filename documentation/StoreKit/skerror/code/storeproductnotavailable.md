@@ -24,7 +24,7 @@ case storeProductNotAvailable
 SKErrorStoreProductNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 See [`SKStorefront`](../../skstorefront.md) for more information.
 

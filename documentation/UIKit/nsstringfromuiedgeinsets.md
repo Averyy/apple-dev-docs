@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an edge insets structure.
 extern NSString *NSStringFromUIEdgeInsets(UIEdgeInsets insets);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `insets`. See [`UIEdgeInsetsFromString`](./uiedgeinsetsfromstring.md) for a discussion of the string format.
 

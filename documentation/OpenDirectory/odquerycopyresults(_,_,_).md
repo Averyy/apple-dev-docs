@@ -20,7 +20,7 @@ func ODQueryCopyResults(_ query: ODQueryRef!, _ allowPartialResults: Bool, _ err
 extern CFArrayRefODQueryCopyResults(ODQueryRef query, bool allowPartialResults, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The results of the query in an array of `ODRecord` objects.
 

@@ -20,7 +20,7 @@ Assigns multiple visible function tables to a range of entries in the tile shade
 - (void) setTileVisibleFunctionTables:(id<MTLVisibleFunctionTable> const[]) functionTables withBufferRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the visible function table at each index is `nil`.
 

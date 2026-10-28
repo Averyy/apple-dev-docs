@@ -24,7 +24,7 @@ protocol UISplitViewControllerDelegate
 @protocol UISplitViewControllerDelegate
 ```
 
-#### Overview
+## Overview
 
 Use the methods of this protocol to respond to changes in the current display mode and to the current interface orientation. When the split view interface collapses and expands, or when a new view controller is added to the interface, you can also use these methods to configure the child view controllers.
 
@@ -32,7 +32,7 @@ The methods of this protocol are all optional. If you don’t implement any of t
 
 For more information, see [`UISplitViewController`](./uisplitviewcontroller.md).
 
-##### Column-style split views
+### Column-style split views
 
 In a column-style split view interface, you use these delegate methods to customize interface transition behavior:
 
@@ -45,7 +45,7 @@ In a column-style split view interface, you use these delegate methods to custom
 - [`splitViewController(_:didShow:)`](./uisplitviewcontrollerdelegate/splitviewcontroller%28_,didshow%29.md)
 - [`splitViewControllerDidExpand(_:)`](./uisplitviewcontrollerdelegate/splitviewcontrollerdidexpand%28_%29.md)
 
-##### Classic split views
+### Classic split views
 
 In a classic split view interface, you use these delegate methods to customize interface transition behavior:
 

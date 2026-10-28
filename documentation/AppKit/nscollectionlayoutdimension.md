@@ -20,7 +20,7 @@ class NSCollectionLayoutDimension
 @interface NSCollectionLayoutDimension : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each item in a collection view has an explicit width dimension and height dimension, which combine to define the item’s size ([`NSCollectionLayoutSize`](./nscollectionlayoutsize.md)).
 

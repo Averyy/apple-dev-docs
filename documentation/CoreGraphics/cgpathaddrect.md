@@ -21,7 +21,7 @@ Appends a rectangle to a mutable graphics path.
 extern void CGPathAddRect(CGMutablePathRef path, const CGAffineTransform *m, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds a rectangle to a path. Calling this function is equivalent to using [`CGRectGetMinX(_:)`](./cgrectgetminx%28_%29.md) and related functions to find the corners of the rectangle, then using the [`CGPathMoveToPoint`](./cgpathmovetopoint.md), [`CGPathAddLineToPoint`](./cgpathaddlinetopoint.md), and [`closeSubpath()`](./cgmutablepath/closesubpath%28%29.md) functions to add each line segment of the rectangle.
 

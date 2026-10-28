@@ -21,7 +21,7 @@ init(contentIdentifier ident: TVContentIdentifier)
 - (instancetype) initWithContentIdentifier:(TVContentIdentifier *) ident;
 ```
 
-#### Return Value
+## Return Value
 
 A new content item.
 

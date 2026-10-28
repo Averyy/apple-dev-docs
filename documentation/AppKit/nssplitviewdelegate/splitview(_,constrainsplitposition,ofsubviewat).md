@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, constrainSplitPosition propose
 - (CGFloat) splitView:(NSSplitView *) splitView constrainSplitPosition:(CGFloat) proposedPosition ofSubviewAt:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The position for constraining the divider.
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method, the split view calls it repeatedly as the user moves the divider.
 

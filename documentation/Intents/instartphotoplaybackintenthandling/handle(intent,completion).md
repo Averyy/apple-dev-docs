@@ -30,7 +30,7 @@ func handle(intent: INStartPhotoPlaybackIntent) async -> INStartPhotoPlaybackInt
 - (void) handleStartPhotoPlayback:(INStartPhotoPlaybackIntent *) intent completion:(void (^)(INStartPhotoPlaybackIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must perform the search and return the number of matching photos in the response. If you’re unable to perform the search, return a response object whose result code indicates the reason for the failure. Upon returning a successful response, Siri launches your app to start the slideshow.
 

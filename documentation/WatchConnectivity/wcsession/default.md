@@ -23,11 +23,11 @@ class var `default`: WCSession { get }
 @property (class, readonly) WCSession * defaultSession;
 ```
 
-#### Return Value
+## Return Value
 
 The session object for the current device.
 
-#### Discussion
+## Discussion
 
 Call the [`isSupported()`](./issupported%28%29.md) method before calling this method to make sure you can use session objects for communication.
 

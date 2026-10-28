@@ -25,7 +25,7 @@ func CFStringGetLongCharacterForSurrogatePair(_ surrogateHigh: UniChar, _ surrog
 static UTF32Char CFStringGetLongCharacterForSurrogatePair(UniChar surrogateHigh, UniChar surrogateLow);
 ```
 
-#### Return Value
+## Return Value
 
 A UTF32Char that corresponds to the combination of `surrogateHigh` and `surrogateLow`.
 

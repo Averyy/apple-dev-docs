@@ -21,7 +21,7 @@ var expectedResponseLength: Int { get }
 @property (nonatomic, assign, readonly) NSInteger expectedResponseLength;
 ```
 
-#### Discussion
+## Discussion
 
 Setting [`expectedResponseLength`](./expectedresponselength.md) with a value less than 0 means the Le field is absent.
 

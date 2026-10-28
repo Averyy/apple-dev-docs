@@ -23,7 +23,7 @@ let NSPersonNameComponentPrefix: String
 extern NSString * const NSPersonNameComponentPrefix;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a name prefix component.
 

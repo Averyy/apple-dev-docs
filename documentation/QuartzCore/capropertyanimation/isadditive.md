@@ -24,7 +24,7 @@ var isAdditive: Bool { get set }
 @property (getter=isAdditive) BOOL additive;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the value specified by the animation will be added to the current render tree value of the property to produce the new render tree value. The addition function is type-dependent, e.g. for affine transforms the two matrices are concatenated. The default is [`false`](../../Swift/false.md).
 

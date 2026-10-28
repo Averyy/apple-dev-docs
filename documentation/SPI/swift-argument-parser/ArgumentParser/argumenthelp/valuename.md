@@ -17,7 +17,7 @@ An alternative name to use for the argument’s value when showing usage informa
 var valueName: String?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property is ignored when generating help for flags, since flags don’t include a value.
 

@@ -21,7 +21,7 @@ var playingIndicatorLocation: CPListItemPlayingIndicatorLocation { get set }
 @property (nonatomic, assign) CPListItemPlayingIndicatorLocation playingIndicatorLocation;
 ```
 
-#### Discussion
+## Discussion
 
 If the list item’s [`isPlaying`](./isplaying.md) property is set to [`true`](../../Swift/true.md), it uses the value of this property to position its Now Playing indicator. The default value is [`CPListItemPlayingIndicatorLocation.leading`](../cplistitemplayingindicatorlocation/leading.md).
 

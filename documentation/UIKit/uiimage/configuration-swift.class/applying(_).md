@@ -28,11 +28,11 @@ func applying(_ otherConfiguration: UIImage.Configuration?) -> Self
 
 - [Configuring and displaying symbol images in your UI](../../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 A configuration object with the specified image configuration attributes and merged traits.
 
-#### Discussion
+## Discussion
 
 This method merges the traits from `otherConfiguration` with the current object’s trait collection, giving precedence to traits in `otherConfiguration` unless the trait is unspecified. For image-specific traits, this method replaces the current image attributes with the attributes in `otherConfiguration`.
 

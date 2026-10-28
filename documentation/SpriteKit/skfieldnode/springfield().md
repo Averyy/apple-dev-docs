@@ -25,11 +25,11 @@ class func springField() -> SKFieldNode
 + (SKFieldNode *) springField;
 ```
 
-#### Return Value
+## Return Value
 
 A new spring field node.
 
-#### Discussion
+## Discussion
 
 The strength of the field measures the strength of the spring. A positive number indicates that the body is accelerating toward the field node. The [`falloff`](./falloff.md) property of a spring field node is set by default to `-1`.
 

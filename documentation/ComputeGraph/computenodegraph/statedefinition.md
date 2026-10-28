@@ -21,7 +21,7 @@ A declaration of a named state value and where it lives in the simulation.
 struct StateDefinition
 ```
 
-#### Overview
+## Overview
 
 State definitions are used by `ComputeNodeGraph/Node/Kind/loadState(definition:)` and `ComputeNodeGraph/Node/Kind/storeState(definition:)` nodes to read and write values at a particular scope.
 

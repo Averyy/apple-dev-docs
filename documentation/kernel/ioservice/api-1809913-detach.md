@@ -12,7 +12,7 @@ virtual void detach(
  IOService *provider );
 ```
 
-#### Overview
+## Overview
 
 This function called in an IOService client removes the client as a child of the provider in the service plane of the I/O Registry. If the provider is not a parent of the client this is a no-op, otherwise the I/O Registry releases both the client and provider.
 

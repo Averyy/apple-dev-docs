@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, dragSessionAllowsMoveOperation
 - (BOOL) tableView:(UITableView *) tableView dragSessionAllowsMoveOperation:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your app allows content to be moved instead of copied, or [`false`](../../Swift/false.md) if moves are not supported.
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to prevent the dragged content from being moved. If your delegate returns [`false`](../../Swift/false.md) and the drop operation type is [`UIDropOperation.move`](../uidropoperation/move.md), the system cancels the drop.
 

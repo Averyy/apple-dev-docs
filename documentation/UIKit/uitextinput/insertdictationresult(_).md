@@ -23,7 +23,7 @@ optional func insertDictationResult(_ dictationResult: [UIDictationPhrase])
 - (void) insertDictationResult:(NSArray<UIDictationPhrase *> *) dictationResult;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this optional method if you want to support dictation phrase alternatives. If you do not implement this method, iOS inserts the most likely interpretation of the dictated phrase.
 

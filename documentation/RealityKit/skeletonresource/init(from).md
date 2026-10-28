@@ -20,7 +20,7 @@ Creates a skeleton resource from a mesh resource skeleton.
 convenience init(from skeleton: MeshResource.Skeleton) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the skeleton asset cannot be created.
 

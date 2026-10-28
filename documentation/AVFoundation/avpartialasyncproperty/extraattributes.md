@@ -23,7 +23,7 @@ static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey :
 
 Available when `Root` inherits `AVMetadataItem`.
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

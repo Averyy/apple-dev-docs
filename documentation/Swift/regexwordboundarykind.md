@@ -21,7 +21,7 @@ A word boundary algorithm to use during regex matching.
 struct RegexWordBoundaryKind
 ```
 
-#### Overview
+## Overview
 
 See [`wordBoundaryKind(_:)`](./regex/wordboundarykind%28_%29.md) for information about specifying the word boundary kind for all or part of a regex.
 

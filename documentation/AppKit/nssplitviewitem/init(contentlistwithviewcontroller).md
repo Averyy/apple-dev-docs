@@ -19,7 +19,7 @@ convenience init(contentListWithViewController viewController: NSViewController)
 + (instancetype) contentListWithViewController:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 You use a content list to display information like the Mail app’s list of messages or the Notes app’s list of notes.
 

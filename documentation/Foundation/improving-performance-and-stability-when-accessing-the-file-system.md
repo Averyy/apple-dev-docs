@@ -5,19 +5,19 @@
 
 Prevent data loss and app crashes by interacting with the file system in a coordinated, asynchronous manner and by avoiding unnecessary disk I/O.
 
-#### Overview
+## Overview
 
 A device’s file system is a shared resource available to all running processes. If multiple processes (or multiple threads in the same process) attempt to act on the same file simultaneously, data corruption or loss may occur, and your app may even crash.
 
 To establish safe and efficient file access, avoid performing immediate file I/O on the app’s main thread. Use [`NSFileCoordinator`](./nsfilecoordinator.md) to choreograph file access, opt for the I/O-free variants of file-related APIs, and implement the prefetching mechanisms of [`UICollectionView`](../UIKit/uicollectionview.md) and [`UITableView`](../UIKit/uitableview.md) to efficiently prepare file-related data for display.
 
-##### Coordinate file access to reduce hangs
+### Coordinate file access to reduce hangs
 
 A *blocking call* is a task that may temporarily suspend the calling thread’s execution, such as checking whether a file or directory exists. When a blocking call originates from the app’s main thread, the suspended execution manifests as user interface hangs and high scroll hitch rates, negatively impacting the user experience. The duration of this specific blocking call is often indeterminate if the related files are external to the device, such as those in iCloud Drive or other file providers, or on a mounted USB drive or SMB server.
 
 Adopt [`NSFileCoordinator`](./nsfilecoordinator.md) and [`NSFilePresenter`](./nsfilepresenter.md) to coordinate safe file access across different threads and processes. A *file coordinator* notifies interested file presenters whenever a file they care about is due to change. Each presenter then has an opportunity to perform any work necessary to safeguard their integrity. The file coordinator waits on all file presenters to respond before it executes the requested actions on the file. By specifying a background operation queue, the coordinator works asynchronously and is therefore safe to call from the main thread. For more information, see [`coordinate(with:queue:byAccessor:)`](./nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md).
 
-##### Prefetch displayable file data to maintain a low scroll hitch rate
+### Prefetch displayable file data to maintain a low scroll hitch rate
 
 If your app displays list- or collection-based layouts of any size, adopt [`UITableView`](../UIKit/uitableview.md) or [`UICollectionView`](../UIKit/uicollectionview.md) — and the corresponding data source and prefetching protocols — to provide a smooth scrolling experience. An object that implements the data source protocol provides the view with items to display, whereas an object that implements the prefetching protocol is responsible for preparing and caching the data for those items.
 
@@ -25,7 +25,7 @@ The system provides a few milliseconds to prepare content for a cell, and exceed
 
 For more information, see [`UICollectionViewDataSourcePrefetching`](../UIKit/uicollectionviewdatasourceprefetching.md), [`UITableViewDataSourcePrefetching`](../UIKit/uitableviewdatasourceprefetching.md), and the sample code [Prefetching collection view data](../UIKit/prefetching-collection-view-data.md).
 
-##### Request access to multiple files in parallel to boost efficiency
+### Request access to multiple files in parallel to boost efficiency
 
 When taking some action on a list of files, an app may iterate over that list and process each file sequentially, such as in a `for` or `while` loop. However, accessing files that are external to the device, such as those in iCloud Drive, may result in expensive, blocking network requests as the system must download the files before it can make them available for your app to use.
 
@@ -55,7 +55,7 @@ for url in fileURLs {
 }
 ```
 
-##### Provide directory hints for file URLs to avoid wasteful I/O
+### Provide directory hints for file URLs to avoid wasteful I/O
 
 Many convenience methods make it possible to create URLs that represent files and directories in the file system, local or otherwise. If you know that the destination of such a URL is a directory, use the method variants that require the `isDirectory` parameter and specify [`true`](../Swift/true.md) as the value. If you use a more succinct method that omits the parameter, the system performs a potentially blocking call to the file system to determine if the URL’s destination is a file or a directory.
 

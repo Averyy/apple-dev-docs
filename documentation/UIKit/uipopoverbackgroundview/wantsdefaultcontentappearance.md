@@ -24,7 +24,7 @@ class var wantsDefaultContentAppearance: Bool { get }
 @property (class, nonatomic, readonly) BOOL wantsDefaultContentAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be overridden to prevent the drawing of the content inset and drop shadow inside the popover. The default implementation of this method returns [`true`](../../Swift/true.md), which means that the content inset and drop shadow will be drawn. Overriding this method simply means implementing it to return [`false`](../../Swift/false.md), which would mean that the content inset and drop shadow will not be drawn.
 

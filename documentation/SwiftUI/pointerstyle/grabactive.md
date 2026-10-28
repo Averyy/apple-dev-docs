@@ -15,7 +15,7 @@ The pointer style appropriate for actively dragging to reposition content within
 static let grabActive: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This pointer style displays a closed hand to indicate that the content is currently being repositioned. Typically it’s used along with the `PointerStyle.grabIdle` pointer style to indicate that repositioning the content is possible.
 

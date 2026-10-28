@@ -19,7 +19,7 @@ case emphasized
 NSBackgroundStyleEmphasized
 ```
 
-#### Discussion
+## Discussion
 
 You might use this style to show selection. You might need to alter the appearance of the cell’s content to achieve the needed emphasis.
 

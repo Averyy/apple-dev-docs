@@ -17,7 +17,7 @@ An object that renders an immersive video frame into a texture and exposes the c
 class ImmersivePreviewRenderer
 ```
 
-#### Overview
+## Overview
 
 `ImmersivePreviewRenderer` provides a high-level interface for rendering immersive video content with support for stereoscopic rendering, presentation commands, and venue-specific camera models. It manages the rendering pipeline including geometry setup, texture management, and frame processing.
 

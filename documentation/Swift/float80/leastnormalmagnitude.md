@@ -15,7 +15,7 @@ The least positive normal number.
 static var leastNormalMagnitude: Float80 { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value compares less than or equal to all positive normal numbers. There may be smaller positive numbers, but they are *subnormal*, meaning that they are represented with less precision than normal numbers.
 

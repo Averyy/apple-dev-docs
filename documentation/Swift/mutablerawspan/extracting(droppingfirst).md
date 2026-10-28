@@ -21,11 +21,11 @@ Returns a span over all but the given number of initial bytes.
 mutating func extracting(droppingFirst k: Int) -> MutableRawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A span starting after the specified number of bytes.
 
-#### Discussion
+## Discussion
 
 If the number of bytes to drop exceeds the number of bytes in the span, the result is an empty span.
 

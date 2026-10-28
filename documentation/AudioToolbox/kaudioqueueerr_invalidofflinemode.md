@@ -24,7 +24,7 @@ var kAudioQueueErr_InvalidOfflineMode: OSStatus { get }
 kAudioQueueErr_InvalidOfflineMode
 ```
 
-#### Discussion
+## Discussion
 
 To use offline mode or to return to normal mode, use the [`AudioQueueSetOfflineRenderFormat(_:_:_:)`](./audioqueuesetofflinerenderformat%28_,_,_%29.md) function.
 

@@ -25,11 +25,11 @@ func vImageErode_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePoi
 vImage_Error vImageErode_ARGBFFFF(const vImage_Buffer *src, const vImage_Buffer *dest, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const float *kernel, vImagePixelCount kernel_height, vImagePixelCount kernel_width, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Use the erode operation to enlarge dark structural elements in an image. In the case where the kernel contains all zeros, use the corresponding minimize function instead.
 

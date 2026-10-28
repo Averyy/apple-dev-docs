@@ -21,11 +21,11 @@ Creates a new map item request with the specified place descriptor
 convenience init(placeDescriptor: PlaceDescriptor)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized map item object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a `MKMapItemRequest` from a [`PlaceDescriptor`](../../GeoToolbox/placedescriptor.md) which you can then attempt to resolve asynchronously as shown here.
 

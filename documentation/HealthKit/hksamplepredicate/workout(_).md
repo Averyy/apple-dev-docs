@@ -20,7 +20,7 @@ Returns a sample predicate that matches workout samples.
 static func workout(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKWorkout>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKWorkout`](../hkworkout.md) objects.
 

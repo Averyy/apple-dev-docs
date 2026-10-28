@@ -28,7 +28,7 @@ class HKSourceRevision
 
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 
-#### Overview
+## Overview
 
 The [`HKSourceRevision`](./hksourcerevision.md) class acts as a wrapper for the [`HKSource`](./hksource.md) class, adding information about the source’s version, operating system, and product type.
 
@@ -36,7 +36,7 @@ Source revision objects are immutable: you set the source revision’s propertie
 
 When an [`HKObject`](./hkobject.md) instance is created, its [`sourceRevision`](./hkobject/sourcerevision.md) property is set to `nil`. When the object is saved to the HealthKit store, HealthKit assigns a new source revision to the object’s [`sourceRevision`](./hkobject/sourcerevision.md) property. The source revision can be accessed only on objects retrieved from the HealthKit store.
 
-##### Subclassing Source Revisions
+### Subclassing Source Revisions
 
 As with many HealthKit classes, don’t subclass the [`HKSourceRevision`](./hksourcerevision.md) class.
 

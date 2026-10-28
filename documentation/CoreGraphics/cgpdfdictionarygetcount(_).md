@@ -25,7 +25,7 @@ func CGPDFDictionaryGetCount(_ dict: CGPDFDictionaryRef) -> Int
 extern size_t CGPDFDictionaryGetCount(CGPDFDictionaryRef dict);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of entries in the dictionary.
 

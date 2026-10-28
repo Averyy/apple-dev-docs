@@ -21,7 +21,7 @@ Information about linguistic, cultural, and technological conventions for use in
 struct Locale
 ```
 
-#### Overview
+## Overview
 
 [`Locale`](./locale.md) encapsulates information about linguistic, cultural, and technological conventions and standards. Examples of information encapsulated by a locale include the symbol used for the decimal separator in numbers and the formatting conventions for dates and times.
 
@@ -29,7 +29,7 @@ Apps use locales to provide, format, and interpret information about and accordi
 
 You can create a [`Locale`](./locale.md) from a common identifier like `en-US`, or by specifying its components. More commonly, you access the current system locale with the [`current`](./locale/current.md) or [`autoupdatingCurrent`](./locale/autoupdatingcurrent.md) static variables.
 
-##### Working with locale components
+### Working with locale components
 
 A [`Locale`](./locale.md) exposes its various traits — the appropriate measurement system, currency symbols, date and time conventions, and more — as strongly-typed properties like [`currency`](./locale/currency-swift.property.md), `numberingSystem`, and `firstDayOfWeek`.
 
@@ -45,7 +45,7 @@ if let script = zhCN.language.script {
 }
 ```
 
-##### Creating custom locales from components
+### Creating custom locales from components
 
 You can create a custom locale by creating a [`Locale`](./locale.md) instance from a customized [`Locale.Components`](./locale/components.md). Do this when you want to tweak specific aspects of a locale. The following example creates a locale that uses language conventions of British English (language region `GB`), but otherwise uses US conventions for things like currency and measurement.
 

@@ -21,11 +21,11 @@ Loads and returns a specific object in the scene source.
 func entryWithIdentifier<T>(_ uid: String, withClass entryClass: T.Type) -> T? where T : AnyObject
 ```
 
-#### Return Value
+## Return Value
 
 A new SceneKit object (of the specified class) containing the requested scene source entry, or `nil` if no such object exists in the scene source.
 
-#### Discussion
+## Discussion
 
 SceneKit recognizes objects of the following classes in scene files:
 

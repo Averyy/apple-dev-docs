@@ -25,11 +25,11 @@ func tracks(withMediaType mediaType: AVMediaType) -> [AVMovieTrack]
 - (NSArray<AVMovieTrack *> *) tracksWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks, which is empty if there are no tracks with the media type.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load tracks asynchronously using [`loadTracks(withMediaType:completionHandler:)`](./loadtracks%28withmediatype,completionhandler%29.md) instead.
 

@@ -25,7 +25,7 @@ func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Boo
 - (BOOL) hasMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the media selection option has media with mediaCharacteristic, otherwise [`false`](../../Swift/false.md).
 

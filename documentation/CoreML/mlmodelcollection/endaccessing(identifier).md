@@ -24,7 +24,7 @@ class func endAccessing(identifier: String) async throws -> Bool
 + (void) endAccessingModelCollectionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(BOOL success, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when your app no longer needs access to a model collection.
 

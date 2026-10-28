@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Prefer method and function names that make use sites form grammatical English phrases.
 
-#### Overview
+## Overview
 
 ✅ Each of these reads as a grammatical English phrase at the call site:
 

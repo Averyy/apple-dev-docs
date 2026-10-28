@@ -35,7 +35,7 @@ convenience init<C>(_ data: C) throws where C : Collection, C.Element == Float
 convenience init<ShapedArray>(_ shapedArray: ShapedArray) where ShapedArray : MLShapedArrayProtocol
 ```
 
-#### Discussion
+## Discussion
 
 ```
 let v:[Int32] = [3, 2, 1]

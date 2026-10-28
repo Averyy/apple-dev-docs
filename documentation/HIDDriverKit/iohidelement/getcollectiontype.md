@@ -14,7 +14,7 @@
 virtual IOHIDElementCollectionType getCollectionType();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element type. Types are defined by the IOHIDElementCollectionType enumerator in - [`IOHIDElementCollectionType`](../iohidelementcollectiontype.md).
 

@@ -25,11 +25,11 @@ class func scale(by scale: CGFloat, duration sec: TimeInterval) -> SCNAction
 + (SCNAction *) scaleBy:(CGFloat) scale duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`scale`](../scnnode/scale.md) property animates to the new value.
 

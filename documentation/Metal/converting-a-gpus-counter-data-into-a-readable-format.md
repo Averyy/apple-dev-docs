@@ -5,13 +5,13 @@
 
 Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
 
-#### Overview
+## Overview
 
 To use the data a GPU driver stores in an [`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md) instance (see [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)), your app needs to *resolve* it. Resolving the data converts the counter data from the GPU’s internal data structure into a common format that Metal defines.
 
 You can resolve the data in a counter sample buffer by creating a blit pass that converts the data as it copies it to an [`MTLBuffer`](./mtlbuffer.md). If the CPU can access a counter sample buffer, you can also resolve the data after the GPU finishes running a command buffer. See [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) for information about making a CPU-accessible counter sample buffer.
 
-##### Resolve the counter sample buffer with the CPU
+### Resolve the counter sample buffer with the CPU
 
 For an [`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md) instance that you create with shared memory (see [`storageMode`](./mtlcountersamplebufferdescriptor/storagemode.md) and [`MTLStorageMode.shared`](./mtlstoragemode/shared.md)), you can resolve the data by calling its [`resolveCounterRange(_:)`](./mtlcountersamplebuffer/resolvecounterrange%28_%29.md) method.
 
@@ -69,7 +69,7 @@ commandBuffer.addCompletedHandler { commandBuffer in
 }];
 ```
 
-##### Resolve the counter sample buffer with a blit pass on the GPU
+### Resolve the counter sample buffer with a blit pass on the GPU
 
 You can also resolve an [`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md) instance’s data into an [`MTLBuffer`](./mtlbuffer.md) by running a blit pass on the GPU. For some GPUs, this technique is the only way to resolve a counter sample buffer that uses private storage (see [`storageMode`](./mtlcountersamplebufferdescriptor/storagemode.md) and [`MTLStorageMode.private`](./mtlstoragemode/private.md)).
 
@@ -135,7 +135,7 @@ func resolveSampleBuffer(_ sampleBuffer: MTLCounterSampleBuffer,
 }
 ```
 
-##### Cast the counter sample’s data to a result type
+### Cast the counter sample’s data to a result type
 
 Your app can inspect and use the resolved data by casting it to the result type that corresponds to the counter set.
 
@@ -209,7 +209,7 @@ func resolveSampleBuffer() {
 
 The code example above also checks whether the result type array has the correct number of elements of the counter set for the app.
 
-##### Inspect the information and check for error values
+### Inspect the information and check for error values
 
 You can also use the result type instances to check whether the GPU stores any error values. The following code example determines whether any of the timestamp samples are equal to `0` or a sentinel error value:
 

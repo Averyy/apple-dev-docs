@@ -27,7 +27,7 @@ var httpShouldUsePipelining: Bool { get set }
 @property BOOL HTTPShouldUsePipelining;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the request should continue transmitting data, [`false`](../../Swift/false.md) if the request should wait for a response. The default value is [`false`](../../Swift/false.md).
 

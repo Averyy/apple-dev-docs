@@ -30,7 +30,7 @@ var appliesMediaSelectionCriteriaAutomatically: Bool { get set }
 
 - [Selecting subtitles and alternative audio tracks](../selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Discussion
+## Discussion
 
 By default, the `AVPlayer` instance applies selection criteria based on system accessibility preferences. To override the default criteria for any media selection group, use [`setMediaSelectionCriteria(_:forMediaCharacteristic:)`](./setmediaselectioncriteria%28_,formediacharacteristic%29.md).
 

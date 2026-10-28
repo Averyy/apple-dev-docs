@@ -23,7 +23,7 @@ var isAirPlayVideoActive: Bool { get }
 @property (nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive;
 ```
 
-#### Discussion
+## Discussion
 
 You can query this property after receiving an [`MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification`](../mpmovieplayerisairplayvideoactivedidchangenotification.md) notification to find out whether the AirPlay video started or stopped.
 

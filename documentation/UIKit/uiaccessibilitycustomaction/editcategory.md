@@ -24,7 +24,7 @@ class let editCategory: String
 extern NSString * const UIAccessibilityCustomActionCategoryEdit;
 ```
 
-#### Discussion
+## Discussion
 
 This value provides information to VoiceOver that helps organize the action into the edit rotor
 

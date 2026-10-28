@@ -21,7 +21,7 @@ object Image
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Image is the general component for images in an article. If possible, choose one of the more specific image-related components such as [`Figure`](./figure.md), [`Logo`](./logo.md), [`Portrait`](./portrait.md), or [`Photo`](./photo.md).
 
@@ -29,7 +29,7 @@ Image is the general component for images in an article. If possible, choose one
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

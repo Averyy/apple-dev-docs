@@ -9,7 +9,7 @@ Retrieve performance metrics for Apple Maps ad groups.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Brand ad group reports return one row per ad group. Each row contains a `metadata` object with ad group identifiers (including `campaignId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,7 +17,7 @@ Filter by `campaignId` or `adGroupId` in the `filters` array to scope results. U
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
@@ -48,13 +48,13 @@ Beyond granularity, note that `EMPTY_METRICS` isn’t supported for `business-br
 | Filter scope | Always filter by `campaignId` to reduce response size. |
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Brands, By Location**:
 
 Retrieve daily ad group metrics for all ad groups in a campaign, grouped by location ID.
 
-##### Request
+### Request
 
 Filters by `campaignId` to retrieve all brand ad groups in a campaign, groups by `locationId`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
@@ -85,7 +85,7 @@ POST /v1/reports/business-brands/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -180,7 +180,7 @@ POST /v1/reports/business-brands/adgroups/query
 
 Retrieve monthly ad group metrics grouped by device class to understand performance differences between iPhone and iPad users.
 
-##### Request
+### Request
 
 Filters by `adGroupId` for a specific brand ad group, groups by `deviceClass`, and uses monthly granularity over a 3-month date range in UTC.
 
@@ -211,7 +211,7 @@ POST /v1/reports/business-brands/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

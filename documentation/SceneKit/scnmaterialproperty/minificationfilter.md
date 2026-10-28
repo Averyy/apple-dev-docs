@@ -25,7 +25,7 @@ var minificationFilter: SCNFilterMode { get set }
 @property (nonatomic) SCNFilterMode minificationFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Texture filtering determines the appearance of a material property’s contents when portions of the material surface appear larger or smaller than the original texture image. For example, the texture coordinates at a point far from the camera may correspond to an area of several pixels in the texture image. SceneKit uses the minification filter to determine the color of the sampled texel at that point.
 

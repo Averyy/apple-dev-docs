@@ -23,7 +23,7 @@ var metadata: [AnyHashable : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` unless a [`requestMetadata()`](./requestmetadata%28%29.md) message is sent to this object.
 

@@ -19,7 +19,7 @@ var keyUsage: Unmanaged<CFArray>?
 CFArrayRef keyUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The array may contain any of the following key usage constants:
 

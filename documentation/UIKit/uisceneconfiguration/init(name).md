@@ -23,7 +23,7 @@ convenience init(name: String?)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Scene sessions created from this configuration will have their role automatically set by the system.
 

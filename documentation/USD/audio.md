@@ -5,17 +5,17 @@
 
 The location of an audio file.
 
-#### Overview
+## Overview
 
 The default value is blank. Each instance of `AudioAction` must supply its own value for this property and an accompanying music file by the same name within the asset.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform asset audio
 ```
 
-##### Define an Audio File
+### Define an Audio File
 
 The following line shows how to define a path to an audio file named `backgroundMusic.m4a`:
 

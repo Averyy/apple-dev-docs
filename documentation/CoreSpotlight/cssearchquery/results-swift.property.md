@@ -23,7 +23,7 @@ var results: CSSearchQuery.Results { get }
 
 - [Searching for information in your app](../searching-for-information-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Getting the value of this property starts the query automatically and begins the delivery of results. Typically, you get this property as part of a `for..in` loop and iterate over the responses, as shown in the following example:
 

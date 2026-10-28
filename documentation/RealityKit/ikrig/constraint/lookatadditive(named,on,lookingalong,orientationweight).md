@@ -20,7 +20,7 @@ Creates a constraint with only an orientational demand in additive look-at mode.
 static func lookAtAdditive(named name: String, on jointName: String, lookingAlong targetAxis: SIMD3<Float>, orientationWeight: SIMD3<Float> = [1, 1, 1]) -> IKRig.Constraint
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `IKOrientationDemand.Mode.additiveLookAt`
 

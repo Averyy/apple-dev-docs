@@ -9,7 +9,7 @@ List the score moderation IDs for a Game Center leaderboard.
 **Availability**:
 - App Store Connect API 4.5+
 
-#### Overview
+## Overview
 
 The response contains the score moderations’ resource identifiers in a [`GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse`](./gamecenterleaderboardv2gamecenterscoremoderationslinkagesresponse.md).
 

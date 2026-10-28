@@ -25,11 +25,11 @@ func decodeXPCObject(ofType type: xpc_type_t, forKey key: String) -> xpc_object_
 - (xpc_object_t) decodeXPCObjectOfType:(xpc_type_t) type forKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 An object that XPC can encode.
 
-#### Discussion
+## Discussion
 
 The [`decodeXPCObject(ofType:forKey:)`](./decodexpcobject%28oftype,forkey%29.md) method validates that the type of the decoded object matches the type of the encoded object. If they don’t match, the [`NSXPCCoder`](../nsxpccoder.md) throws an exception in support of [`NSSecureCoding`](../nssecurecoding.md).
 

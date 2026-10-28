@@ -20,7 +20,7 @@ A query interface that reads the underlying voltage measurements for an electroc
 struct HKElectrocardiogramQueryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`HKElectrocardiogramQueryDescriptor`](./hkelectrocardiogramquerydescriptor.md) to access the individual voltage measurements associated with an [`HKElectrocardiogram`](./hkelectrocardiogram.md) sample. To read the individual voltage measurements, create an electrocardiogram query descriptor using the desired sample, and then call the [`results(for:)`](./hkheartbeatseriesquerydescriptor/results%28for%29.md) method on the descriptor.
 

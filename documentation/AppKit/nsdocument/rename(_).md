@@ -20,7 +20,7 @@ func rename(_ sender: Any?)
 - (void) renameDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action method of the Rename menu item in a document-based app. The default implementation of this method initiates a renaming session in a window created by the `[self windowForSheet]` message.
 

@@ -31,7 +31,7 @@ var userBooking: INRestaurantReservationUserBooking? { get set }
 @property (atomic, copy, nullable) INRestaurantReservationUserBooking * userBooking;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the details of the user’s reservation. When creating the [`INRestaurantReservationUserBooking`](../inrestaurantreservationuserbooking.md) object, provide as much information as possible. The system conveys information from this object back to the user through the system’s reservation interfaces.
 

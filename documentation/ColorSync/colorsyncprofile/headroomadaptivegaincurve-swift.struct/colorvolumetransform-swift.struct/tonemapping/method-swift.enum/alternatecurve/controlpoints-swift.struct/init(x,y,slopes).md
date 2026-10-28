@@ -21,7 +21,7 @@ Creates a set of spline control points.
 init(x: [Float], y: [Float], slopes: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes = .interpolate) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.mismatchedControlPointArrays(x:y:)`](../../../../../error/mismatchedcontrolpointarrays%28x,y%29.md) if `x` and `y` differ in count, [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.tooManyControlPoints(count:limit:)`](../../../../../error/toomanycontrolpoints%28count,limit%29.md) if there are more than 32 points, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.mismatchedTangentCount(got:expected:)`](../../../../../error/mismatchedtangentcount%28got,expected%29.md) if explicit `slopes` don’t match the point count.
 

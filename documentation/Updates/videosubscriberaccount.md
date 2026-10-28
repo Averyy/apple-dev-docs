@@ -5,13 +5,13 @@
 
 Learn about important changes in Video Subscriber Account.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Video Subscriber Account](../VideoSubscriberAccount/VideoSubscriberAccount.md).
 
-#### June 2025
+## June 2025
 
-##### Automatic Sign-In
+### Automatic Sign-In
 
 - Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account. For more information, see [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md).
 

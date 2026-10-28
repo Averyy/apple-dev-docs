@@ -11,7 +11,7 @@ Calls enable() in all event sources.
 virtual void enableAllEventSources() const;
 ```
 
-#### Overview
+## Overview
 
 For all event sources in eventChain, call enable() function. See IOEventSource::enable().
 

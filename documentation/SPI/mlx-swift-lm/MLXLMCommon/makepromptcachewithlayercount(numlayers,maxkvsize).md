@@ -17,7 +17,7 @@ Fallback function to create cache when layer count is known
 func makePromptCacheWithLayerCount(numLayers: Int, maxKVSize: Int? = nil) throws -> [KVCache]
 ```
 
-#### Discussion
+## Discussion
 
 This function creates a default cache structure when the number of layers is known. Use this when `makePromptCache` cannot determine the layer count automatically.
 

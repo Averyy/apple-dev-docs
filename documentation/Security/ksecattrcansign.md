@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrCanSign;
 
 - [Signing and Verifying](./signing-and-verifying.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to create a digital signature.
 

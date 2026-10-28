@@ -25,7 +25,7 @@ static var resourceTemporarilyUnavailable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 This is a temporary condition; later calls to the same routine may complete normally. Make the same function call again later.
 

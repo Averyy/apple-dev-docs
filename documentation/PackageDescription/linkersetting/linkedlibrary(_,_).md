@@ -15,7 +15,7 @@ Declares linkage to a system library.
 static func linkedLibrary(_ library: String, _ condition: BuildSettingCondition? = nil) -> LinkerSetting
 ```
 
-#### Discussion
+## Discussion
 
 This setting is most useful when the library can’t be linked automatically, such as C++ based libraries and non-modular libraries.
 

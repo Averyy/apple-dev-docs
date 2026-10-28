@@ -20,7 +20,7 @@ var smoothedSceneDepth: ARDepthData? { get }
 @property (nonatomic, strong, readonly, nullable) ARDepthData * smoothedSceneDepth;
 ```
 
-#### Discussion
+## Discussion
 
 This property describes the distance between a device’s camera and objects or areas in the real world, including ARKit’s confidence in the estimated distance. This is similar to [`sceneDepth`](./scenedepth.md) except that the framework smoothes the depth data over time to lessen its frame-to-frame delta.
 

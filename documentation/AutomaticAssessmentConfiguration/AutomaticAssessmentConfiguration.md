@@ -12,7 +12,7 @@ Enter single-app mode and prevent students from accessing specific system featur
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
 
-#### Overview
+## Overview
 
 Use the AutomaticAssessmentConfiguration framework to create an assessment session that limits access to system features. The session prevents a user from using the device to retrieve information beyond that which your app provides, or distributing sensitive information from within your app. This limited access helps you protect the integrity of an assessment, like an exam, conducted by your app.
 

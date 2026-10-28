@@ -26,7 +26,7 @@ var supplementarySubLocality: String? { get set }
 @property (nonatomic, retain, nullable) NSString * supplementarySubLocality;
 ```
 
-#### Discussion
+## Discussion
 
 If the transaction requires the contact’s address, and the region requires a sublocality, then the Apple Pay sheet automatically prompts the user to enter their sublocality. The contact’s sublocality information is stored in this property.
 

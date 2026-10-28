@@ -19,7 +19,7 @@ var state: NSControl.StateValue { get set }
 @property NSControlStateValue state;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents the button’s state. A button can have two or three states.  If it has two, this value is either on (`NSOnState`) or off (`NSOffState`). If it has three, this value is on, off, or mixed (`NSMixedState`). A three-state button can be enabled by calling the [`allowsMixedState`](./allowsmixedstate.md) method. On and off states (also referred to as alternate and normal) indicate that the button is either clicked or not clicked. Mixed state is typically used for checkboxes or radio buttons, which allow for an additional intermediate state. For example, suppose the state of a checkbox is used to denote whether a text field contains bold text. If all of the text in the text field is bold, then the checkbox appears checked (on). If none of the text is bold, then the checkbox appears unchecked (off). If some of the text is bold, then the checkbox contains a dash (mixed).
 

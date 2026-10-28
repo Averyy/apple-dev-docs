@@ -24,7 +24,7 @@ protocol UIAppearance : NSObjectProtocol
 @protocol UIAppearance <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can customize the appearance of instances of a class by sending appearance-modification messages to the class’s appearance proxy.
 

@@ -5,7 +5,7 @@
 
 A four-byte value that indicates a locale.
 
-#### Overview
+## Overview
 
 The locale indicator is formatted as a four-byte value. It is formed from two two-byte values: a country indicator, and a language indicator. In each case, the two-byte field has the possible values shown in the following table.
 

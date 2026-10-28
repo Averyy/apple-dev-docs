@@ -17,7 +17,7 @@ Sum `x` across the group and shard the result along the first axis.
 static func sumScatter(_ x: MLXArray, group: MLXDistributed.Group? = nil, stream: StreamOrDevice = .cpu) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 `x.dim(0)` must be divisible by the group size.  The result is equivalent to `allSum(x)` sliced to this process’ chunk, but is performed as a single reduce-scatter collective.
 

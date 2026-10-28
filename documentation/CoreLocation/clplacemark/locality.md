@@ -31,7 +31,7 @@ var locality: String? { get }
 
 - [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Discussion
+## Discussion
 
 If the placemark location is Apple’s headquarters, for example, the value for this property would be the string “Cupertino”.
 

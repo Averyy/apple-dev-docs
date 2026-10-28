@@ -21,11 +21,11 @@ Custom format style portraying the minimum number of digits that represents the 
 static func defaultDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour
 ```
 
-#### Return Value
+## Return Value
 
 An hour format style customized according to the specified day period format style and the given locale.
 
-#### Discussion
+## Discussion
 
 This style may include the day period symbol (a.m. or p.m.), depending on locale. For example, `7a` (`narrow`), `7AM` (`abbreviated`), `7A.M.` (`wide`).
 

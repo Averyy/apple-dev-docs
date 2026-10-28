@@ -12,11 +12,11 @@ virtual UInt32 getMbufPriority(
  mbuf_tm);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 representing the priority of the packet. 0 is the highest priority.
 
-#### Overview
+## Overview
 
 A queue can prioritize certain classes of traffic. This method facilitates that by evaluating an mbuf and returning its priority.
 

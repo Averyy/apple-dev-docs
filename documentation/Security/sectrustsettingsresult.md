@@ -20,7 +20,7 @@ enum SecTrustSettingsResult
 enum SecTrustSettingsResult : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These values appear in the usage constraints dictionaries returned by the [`SecTrustSettingsCopyTrustSettings(_:_:_:)`](./sectrustsettingscopytrustsettings%28_,_,_%29.md) and [`SecTrustSettingsSetTrustSettings(_:_:_:)`](./sectrustsettingssettrustsettings%28_,_,_%29.md) functions.
 

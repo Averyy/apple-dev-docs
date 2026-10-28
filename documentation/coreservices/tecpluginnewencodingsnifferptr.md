@@ -16,7 +16,7 @@ Defines a pointer to a function that createsa sniffer object and returns a refer
 typedef OSStatus (*TECPluginNewEncodingSnifferPtr)(TECSnifferObjectRef *encodingSniffer, TECSnifferContextRec *snifContext, TextEncoding inputEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

@@ -24,7 +24,7 @@ case threadPositionInGridYIndexed
 MTLStepFunctionThreadPositionInGridYIndexed
 ```
 
-#### Discussion
+## Discussion
 
 This step function uses the `y` coordinate of the thread position in a grid as an index into the `[[stage_in]]` index buffer, which is then used to fetch data. In tessellation compute kernels, you use this step function to identify a control point in a given patch.
 

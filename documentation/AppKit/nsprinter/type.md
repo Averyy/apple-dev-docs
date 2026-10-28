@@ -19,7 +19,7 @@ var type: NSPrinter.TypeName { get }
 @property (copy, readonly) NSPrinterTypeName type;
 ```
 
-#### Return Value
+## Return Value
 
 A description of the printer’s make and model.
 

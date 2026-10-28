@@ -20,11 +20,11 @@ func DCSGetTermRangeInString(_ dictionary: DCSDictionary?, _ textString: CFStrin
 CFRange DCSGetTermRangeInString(DCSDictionaryRef dictionary, CFStringRef textString, CFIndex offset);
 ```
 
-#### Return Value
+## Return Value
 
 The range that specifies the location, around the specified offset, of the word or phrase , or the constant `kCFNotFound`.
 
-#### Discussion
+## Discussion
 
 You can use this function to determine the range of text that contains a word or phrase. After you determine the range, you can pass the result to the  functions [`DCSCopyTextDefinition(_:_:_:)`](./api-1446842-dcscopytextdefinition.md) and `HIDictionaryWindowShow(_:_:_:_:_:_:_:)`.
 

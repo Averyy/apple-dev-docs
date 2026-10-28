@@ -19,7 +19,7 @@ The notification the delegate posts after Spotlight updates the index.
 static let indexDidUpdateNotification: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s `userInfo` dictionary contains the keys [`NSStoreUUIDKey`](../nsstoreuuidkey.md) and [`NSPersistentHistoryTokenKey`](../nspersistenthistorytokenkey.md).
 

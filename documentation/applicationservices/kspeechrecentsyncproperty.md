@@ -19,7 +19,7 @@ let kSpeechRecentSyncProperty: CFString
 const CFStringRef kSpeechRecentSyncProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object that specifies the most recently encountered synchronization command. This property works with the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function.
 

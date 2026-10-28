@@ -24,7 +24,7 @@ class MTL4MeshRenderPipelineDescriptor
 @interface MTL4MeshRenderPipelineDescriptor : MTL4PipelineDescriptor
 ```
 
-#### Overview
+## Overview
 
 Compared to [`MTLMeshRenderPipelineDescriptor`](./mtlmeshrenderpipelinedescriptor.md), this interface doesn’t offer a mechanism to hint to Metal mutability of object, mesh, or fragment buffers. Additionally, when you use this descriptor, you don’t specify binary archives.
 

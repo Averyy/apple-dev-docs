@@ -22,7 +22,7 @@ var useFastSameViewOperations: Bool { get set }
 @property (nonatomic) BOOL useFastSameViewOperations;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the drag item data isn’t used. Instead, the drop operation moves or copies the text from its original position to the dropped position within the text view. The default value is [`true`](../../Swift/true.md).
 

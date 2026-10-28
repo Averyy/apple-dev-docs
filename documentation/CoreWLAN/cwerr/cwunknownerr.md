@@ -17,7 +17,7 @@ case cwUnknownErr
 kCWUnknownErr
 ```
 
-#### Discussion
+## Discussion
 
 Unexpected error condition encountered for which no error code exists.
 

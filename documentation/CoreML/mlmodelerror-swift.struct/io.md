@@ -21,7 +21,7 @@ An error code for problems related to the system’s input or output.
 static var io: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when the file system encounters an error.
 

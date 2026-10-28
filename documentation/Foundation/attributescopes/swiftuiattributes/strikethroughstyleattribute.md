@@ -22,7 +22,7 @@ A key for the line drawn through a run of attributed text.
 enum StrikethroughStyleAttribute
 ```
 
-#### Overview
+## Overview
 
 Set this key to mark text as no longer current, such as a completed item or a superseded price. The value carries both the pattern and the color of the line:
 

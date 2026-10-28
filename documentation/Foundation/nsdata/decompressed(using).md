@@ -25,11 +25,11 @@ func decompressed(using algorithm: NSData.CompressionAlgorithm) throws -> Self
 - (instancetype) decompressedDataUsingAlgorithm:(NSDataCompressionAlgorithm) algorithm error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../nsdata.md) instance that contains the decompressed buffer data.
 
-#### Discussion
+## Discussion
 
 Use this method to inflate in-memory data when you need uncompressed bytes. Specify the same algorithm used to compress the data to successfully decompress it.
 

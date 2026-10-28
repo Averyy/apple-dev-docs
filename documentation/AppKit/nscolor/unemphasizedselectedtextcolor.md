@@ -19,7 +19,7 @@ class var unemphasizedSelectedTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * unemphasizedSelectedTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when the window containing the text is not key, or when the view containing the text does not have key focus.
 

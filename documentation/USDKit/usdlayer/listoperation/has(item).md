@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether `item` appears in any slot of thi
 func has(item: T) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `item` appears in any slot; otherwise, `false`.
 

@@ -25,7 +25,7 @@ var fieldOfView: CGFloat { get set }
 @property (nonatomic) CGFloat fieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 The [`projectionDirection`](./projectiondirection.md) property determines whether this [`fieldOfView`](./fieldofview.md) property measures the camera’s vertical or horizontal viewing angle, and SceneKit automatically calculates the viewing angle in the other direction to match the aspect ratio of the view displaying the scene. For example, a [`fieldOfView`](./fieldofview.md) of `60` and the default [`SCNCameraProjectionDirection.vertical`](../scncameraprojectiondirection/vertical.md) projection, presented fullscreen on a 16:9 display in portrait orientation, results in a vertical viewing angle of 60° and a horizontal viewing angle of 33.75°.
 

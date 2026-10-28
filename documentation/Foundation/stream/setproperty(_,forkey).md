@@ -25,7 +25,7 @@ func setProperty(_ property: Any?, forKey key: Stream.PropertyKey) -> Bool
 - (BOOL) setProperty:(id) property forKey:(NSStreamPropertyKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value is accepted by the receiver, otherwise [`false`](../../Swift/false.md).
 

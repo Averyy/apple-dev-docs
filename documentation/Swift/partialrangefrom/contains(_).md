@@ -23,7 +23,7 @@ func contains(_ element: Bound) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if `element` is contained in the range expression; otherwise, `false`.
 

@@ -19,7 +19,7 @@ var allowsContextMenuPlugIns: Bool { get set }
 @property BOOL allowsContextMenuPlugIns;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean value indicating whether the pop-up menu allows appending of contextual menu plug-in items.
 

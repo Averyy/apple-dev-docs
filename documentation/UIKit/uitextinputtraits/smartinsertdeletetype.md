@@ -23,7 +23,7 @@ optional var smartInsertDeleteType: UITextSmartInsertDeleteType { get set }
 @property (nonatomic) UITextSmartInsertDeleteType smartInsertDeleteType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure whether UIKit may insert an extra space after a paste operation or delete one or two spaces after a cut or delete operation. The default value of this property is [`UITextSmartInsertDeleteType.default`](../uitextsmartinsertdeletetype/default.md), which selectively enables the behavior based on the keyboard type.
 

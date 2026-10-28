@@ -19,7 +19,7 @@ func endRefreshing()
 - (void) endRefreshing;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your refresh operation completes. The refresh controller returns to its default appearance and exits the refreshing state.
 

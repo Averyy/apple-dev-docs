@@ -21,11 +21,11 @@ func cloudIdentifiers(forLocalIdentifiers localIdentifiers: [String]) -> [PHClou
 - (NSArray<PHCloudIdentifier *> *) cloudIdentifiersForLocalIdentifiers:(NSArray<NSString *> *) localIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 The array of corresponding iCloud identifiers.
 
-#### Discussion
+## Discussion
 
 Retrieving iCloud identifiers can be an expensive operation, so you should perform this lookup sparingly. Instead, work with local identifiers and retrieve their iCloud identifier equivalents only once: either after loading from or before saving to persistent storage.
 

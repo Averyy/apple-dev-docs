@@ -26,7 +26,7 @@ static let vibrant: WidgetRenderingMode
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Displaying the right widget background](../displaying-the-right-widget-background.md)
 
-#### Discussion
+## Discussion
 
 The system displays vibrant widgets on the Lock Screen on iPhone.
 

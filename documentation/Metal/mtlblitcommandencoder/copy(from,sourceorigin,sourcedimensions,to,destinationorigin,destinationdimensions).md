@@ -25,7 +25,7 @@ func copy(from sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sour
 - (void) copyFromTensor:(id<MTLTensor>) sourceTensor sourceOrigin:(MTLTensorExtents *) sourceOrigin sourceDimensions:(MTLTensorExtents *) sourceDimensions toTensor:(id<MTLTensor>) destinationTensor destinationOrigin:(MTLTensorExtents *) destinationOrigin destinationDimensions:(MTLTensorExtents *) destinationDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 If `sourceTensor` and `destinationTensor` are not aliasable, this command applies a reshape operation.
 

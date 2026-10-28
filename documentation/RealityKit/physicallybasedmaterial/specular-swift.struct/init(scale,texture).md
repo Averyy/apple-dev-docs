@@ -20,7 +20,7 @@ Creates an object from a single value or a texture.
 init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](../roughness-swift.property.md) and [`metallic`](../metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 

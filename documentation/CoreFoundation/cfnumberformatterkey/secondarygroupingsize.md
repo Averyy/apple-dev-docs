@@ -25,7 +25,7 @@ static let secondaryGroupingSize: CFNumberFormatterKey!
 extern CFNumberFormatterKey const kCFNumberFormatterSecondaryGroupingSize;
 ```
 
-#### Discussion
+## Discussion
 
 See [Creating and Using CFNumberFormatter Objects](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/dfCreatingCFNumberFormatters.html#//apple_ref/doc/uid/TP40002342) for more information.
 

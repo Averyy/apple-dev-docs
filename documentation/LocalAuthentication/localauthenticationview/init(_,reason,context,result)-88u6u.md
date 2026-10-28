@@ -16,7 +16,7 @@ Creates a new `LocalAuthenticationView`.
 @preconcurrency init(_ title: LocalizedStringResource, reason: Text, context: LAContext? = nil, result: @escaping (Result<Void, any Error>) -> Void) where Label == Text
 ```
 
-#### Discussion
+## Discussion
 
 The view takes `LAContext` instance or creates own one if none provided and starts evaluating `deviceOwnerAuthenticationWithBiometricsOrCompanion` policy. The result of authentication is reported back using `result` closure.
 

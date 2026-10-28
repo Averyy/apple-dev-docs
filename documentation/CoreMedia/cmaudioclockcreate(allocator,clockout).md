@@ -24,7 +24,7 @@ func CMAudioClockCreate(allocator: CFAllocator?, clockOut: UnsafeMutablePointer<
 extern OSStatus CMAudioClockCreate(CFAllocatorRef allocator, CMClockRef*clockOut);
 ```
 
-#### Discussion
+## Discussion
 
 This clock doesn’t drift from audio output, but may drift from [`CMClockGetHostTimeClock()`](./cmclockgethosttimeclock%28%29.md). When audio output is completely stopped, the clock continues to advance, tracking `CMClockGetHostTimeClock` until audio output starts up again.
 

@@ -17,7 +17,7 @@ Perform the softmax along the given axis.
 func softmax(_ array: MLXArray, precise: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This operation is a numerically stable version of:
 
@@ -25,7 +25,7 @@ This operation is a numerically stable version of:
 exp(a) / sum(exp(a), axis, keepdims: true)
 ```
 
-##### See Also
+### See Also
 
 - [`softmax(_:axes:precise:stream:)`](./softmax%28_,axes,precise,stream%29.md)
 - [`softmax(_:axis:precise:stream:)`](./softmax%28_,axis,precise,stream%29.md)

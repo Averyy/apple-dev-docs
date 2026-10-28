@@ -19,7 +19,7 @@ A Boolean value that indicates whether the view is in a pinned state.
 var isPinned: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This state applies to header and footer views.
 

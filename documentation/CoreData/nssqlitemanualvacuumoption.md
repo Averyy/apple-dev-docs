@@ -25,7 +25,7 @@ let NSSQLiteManualVacuumOption: String
 extern NSString * const NSSQLiteManualVacuumOption;
 ```
 
-#### Discussion
+## Discussion
 
 This invokes SQLite’s `VACUUM` command. It is ignored by stores other than the SQLite store.
 

@@ -12,7 +12,7 @@ The configuration of a Swift package.
 final class Package
 ```
 
-#### Overview
+## Overview
 
 Pass configuration options as parameters to your package’s initializer statement to provide the name of the package, its targets, products, dependencies, and other configuration options.
 

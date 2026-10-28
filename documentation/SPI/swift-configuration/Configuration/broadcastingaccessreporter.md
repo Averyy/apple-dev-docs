@@ -24,7 +24,7 @@ An access reporter that forwards events to multiple other reporters.
 struct BroadcastingAccessReporter
 ```
 
-#### Overview
+## Overview
 
 Use this reporter to send configuration access events to multiple destinations simultaneously. Each upstream reporter receives a copy of every event in the order you provide during initialization.
 

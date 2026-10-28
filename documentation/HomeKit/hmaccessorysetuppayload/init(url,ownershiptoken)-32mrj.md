@@ -22,7 +22,7 @@ init?(url setupPayloadURL: URL, ownershipToken: HMAccessoryOwnershipToken?)
 - (instancetype) initWithURL:(NSURL *) setupPayloadURL ownershipToken:(HMAccessoryOwnershipToken *) ownershipToken;
 ```
 
-#### Discussion
+## Discussion
 
 For details about the payload’s content, join the [MFi Program](https://developer.apple.com/programs/mfi/).
 

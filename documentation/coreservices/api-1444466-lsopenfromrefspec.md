@@ -19,11 +19,11 @@ func LSOpenFromRefSpec(_ inLaunchSpec: UnsafePointer<LSLaunchFSRefSpec>!, _ outL
 OSStatus LSOpenFromRefSpec(const LSLaunchFSRefSpec *inLaunchSpec, FSRef *outLaunchedRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 This function affords greater control of how items are opened or applications launched than is possible with the `LSOpenFSRef` function. For instance, you can use it to open multiple items in a single call, in either the same or different applications; open documents for printing rather than for simple viewing or editing; or force a document to open in an application other than its own preferred application.
 
@@ -40,7 +40,7 @@ The launch specification supplied for the `inLaunchSpec` parameter may designate
 
 As of macOS 10.4 and later, [`LSOpenItemsWithRole(_:_:_:_:_:_:_:)`](./api-1449783-lsopenitemswithrole.md) is the preferred way of opening items.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

@@ -15,7 +15,7 @@ The number of bytes that the system actually transferred for this frame.
 uint32_t completeCount;
 ```
 
-#### Discussion
+## Discussion
 
 The system updates this field upon completion of the frame.
 

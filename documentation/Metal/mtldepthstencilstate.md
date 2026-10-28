@@ -24,7 +24,7 @@ protocol MTLDepthStencilState : NSObjectProtocol, Sendable
 @protocol MTLDepthStencilState <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`MTLDepthStencilState`](./mtldepthstencilstate.md) protocol defines the interface for a lightweight instance used to encode how a graphics rendering pass should perform depth and stencil operations. The [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) uses an [`MTLDepthStencilState`](./mtldepthstencilstate.md) instance to set the depth and stencil state for a rendering pass.
 

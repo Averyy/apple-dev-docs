@@ -21,7 +21,7 @@ Performs a prediction on a single input.
 func prediction<S, Label>(from input: S) async throws -> Self.OutputSequence where S : TemporalSequence, Label : Hashable, Self.Input == S.Feature, Self.Output == ClassificationDistribution<Label>
 ```
 
-#### Return Value
+## Return Value
 
 A classification array.
 

@@ -19,7 +19,7 @@ A network connection endpoint for the device that a person selected.
 @preconcurrency var endpoint: NWEndpoint { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Your app can asynchronously read from this property. The system populates this property when someone selects a device from the endpoint picker. If someone cancels the picker, the system throws an error.
 

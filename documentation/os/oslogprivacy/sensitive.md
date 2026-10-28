@@ -21,7 +21,7 @@ The option to always redact interpolated values that contain sensitive informati
 static var sensitive: OSLogPrivacy { get }
 ```
 
-#### Discussion
+## Discussion
 
 This option behaves identically to the [`private`](./private.md) option. When it redacts a value, the system displays a generic string in place of the value. If you want to correlate log messages that contain the same value, use the [`sensitive(mask:)`](./sensitive%28mask%29.md) function to create the structure with the [`OSLogPrivacy.Mask.hash`](./mask/hash.md) mask.
 

@@ -27,7 +27,7 @@ extern NSString * const SKStoreProductParameterAdNetworkTimestamp;
 - [Combining parameters to generate a signature for SKAdNetwork 1](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 - [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). Ad networks generate the timestamp, represented as UNIX time in milliseconds, at the time you’re preparing to serve the ad.
 

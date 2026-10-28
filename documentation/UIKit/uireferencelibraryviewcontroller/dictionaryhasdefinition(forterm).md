@@ -22,7 +22,7 @@ class func dictionaryHasDefinition(forTerm term: String) -> Bool
 + (BOOL) dictionaryHasDefinitionForTerm:(NSString *) term;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a definition for `term` is available; otherwise, [`false`](../../Swift/false.md).
 

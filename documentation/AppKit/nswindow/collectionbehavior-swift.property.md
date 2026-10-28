@@ -19,7 +19,7 @@ var collectionBehavior: NSWindow.CollectionBehavior { get set }
 @property NSWindowCollectionBehavior collectionBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [`NSWindow.CollectionBehavior`](./collectionbehavior-swift.struct.md).
 

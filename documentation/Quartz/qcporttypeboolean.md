@@ -21,7 +21,7 @@ let QCPortTypeBoolean: String
 extern NSString * const QCPortTypeBoolean;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value can be an [`NSNumber`](../Foundation/nsnumber.md) object or any object that responds to the `-intValue`, `-floatValue`, or `-doubleValue` methods.
 

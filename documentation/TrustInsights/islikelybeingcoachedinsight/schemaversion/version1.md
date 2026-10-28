@@ -16,7 +16,7 @@ Values available in schema version1.
 case version1
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this version of the [`IsLikelyBeingCoachedInsight`](../../islikelybeingcoachedinsight.md)are “unknown”,  “medium”, and “high.”
 

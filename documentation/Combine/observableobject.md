@@ -21,7 +21,7 @@ A type of object with a publisher that emits before the object has changed.
 protocol ObservableObject : AnyObject
 ```
 
-#### Overview
+## Overview
 
 By default an [`ObservableObject`](./observableobject.md) synthesizes an [`objectWillChange`](./observableobject/objectwillchange.md) publisher that emits the changed value before any of its `@Published` properties changes.
 

@@ -19,7 +19,7 @@ object GetGroupMembersResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This response contains information that you request by calling the [`Get Group Members`](./get-group-members.md) endpoint.
 

@@ -15,7 +15,7 @@ The 3D bounding box of the manipulated view.
 let frame: Rect3D
 ```
 
-#### Discussion
+## Discussion
 
 This rect is in the coordinate space configured in the view modifier.
 

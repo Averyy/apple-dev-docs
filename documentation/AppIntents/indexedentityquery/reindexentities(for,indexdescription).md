@@ -20,7 +20,7 @@ Reindexes a specific subset of app entities within an index.
 func reindexEntities(for identifiers: [Self.Entity.ID], indexDescription: CSSearchableIndexDescription) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when it needs you to reindex only some of the app entities in one of your app’s searchable indexes. In your implementation of this method, use the `identifiers` parameter to fetch the app entities again and donate them to the index.
 

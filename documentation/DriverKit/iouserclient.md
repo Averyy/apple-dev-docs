@@ -18,7 +18,7 @@ A connection to another service that the system manages.
 class IOUserClient;
 ```
 
-#### Overview
+## Overview
 
 An application may open an IOUserClient by calling IOServiceOpen(). This results in a call to the IOService::NewUserClient API to create an instance representing the connection. and to receive untyped data via IOConnectMethod/IOConnectAsyncMethod. As an IOService subclass, IOUserClient receives the normal Start()/Stop() lifecyle calls.
 

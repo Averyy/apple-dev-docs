@@ -23,7 +23,7 @@ class INSendPaymentIntentResponse
 @interface INSendPaymentIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSendPaymentIntentResponse`](./insendpaymentintentresponse.md) object to specify the details of the financial transaction that you perform. After creating the object, assign the details of the payment transaction to the [`paymentRecord`](./insendpaymentintentresponse/paymentrecord.md) property, the details of which Siri communicates to the user at appropriate times.
 

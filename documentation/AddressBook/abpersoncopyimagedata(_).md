@@ -40,11 +40,11 @@ extern CFDataRefABPersonCopyImageData(ABRecordRef person);
 extern CFDataRefABPersonCopyImageData(ABPersonRef person);
 ```
 
-#### Return Value
+## Return Value
 
 The data representing an image of `person`. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 The returned data is in a QuickTime-compatible format. To create an image from it, use the NSImage method [`init(data:)`](../AppKit/nsimage/init%28data%29.md).
 

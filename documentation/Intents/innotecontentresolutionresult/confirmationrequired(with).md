@@ -25,11 +25,11 @@ class func confirmationRequired(with noteContentToConfirm: INNoteContent?) -> Se
 + (instancetype) confirmationRequiredWithNoteContentToConfirm:(INNoteContent *) noteContentToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteContentResolutionResult`](../innotecontentresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the parameter exactly as intended, but can resolve it to an appropriate value and want the user to confirm that value before continuing.
 

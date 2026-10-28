@@ -24,11 +24,11 @@ class func softLightBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) softLightBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the soft-light blend mode filter to an image. The effect calculates the brightness of the colors in the background image. Colors that are lighter than 50 percent gray become lighter, while the filter further darkens colors that are darker than 50 percent. The filter then uses the calculated result to create the output image.
 

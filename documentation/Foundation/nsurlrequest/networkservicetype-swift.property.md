@@ -25,7 +25,7 @@ var networkServiceType: NSURLRequest.NetworkServiceType { get }
 @property (readonly) NSURLRequestNetworkServiceType networkServiceType;
 ```
 
-#### Discussion
+## Discussion
 
 The network service type provides a hint to the operating system about what the underlying traffic is used for. This hint enhances the system’s ability to prioritize traffic, determine how quickly it needs to wake up the cellular or Wi-Fi radio, and so on. By providing accurate information, you improve the ability of the system to optimally balance battery life, performance, and other considerations.
 

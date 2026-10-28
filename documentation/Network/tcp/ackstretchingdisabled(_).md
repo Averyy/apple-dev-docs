@@ -21,7 +21,7 @@ Disable ACK stretching.
 func ackStretchingDisabled(_ disableAckStretching: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A boolean to cause TCP to disable ACK stretching (`TCP_SENDMOREACKS`).
 

@@ -16,11 +16,11 @@ nonisolated
 func hoverEffectGroup(_ group: HoverEffectGroup?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that activates the given hover group, as well as all effects added to subviews.
 
-#### Discussion
+## Discussion
 
 You use this modifier when all effects defined on a view and its subviews should activate together. In the following example hovering anywhere over the view will activate the `hoverEffect`s added to the `Text` and the background view, as well as any effects added to the group by other views:
 

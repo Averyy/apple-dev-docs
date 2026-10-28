@@ -22,7 +22,7 @@ case before
 AVCaptionRegionDisplayAlignmentBefore
 ```
 
-#### Discussion
+## Discussion
 
 Aligns lines to the top for English captions, for example.
 

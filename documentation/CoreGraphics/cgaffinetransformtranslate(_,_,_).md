@@ -25,11 +25,11 @@ func CGAffineTransformTranslate(_ t: CGAffineTransform, _ tx: CGFloat, _ ty: CGF
 extern CGAffineTransform CGAffineTransformTranslate(CGAffineTransform t, CGFloat tx, CGFloat ty);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix.
 
-#### Discussion
+## Discussion
 
 You use this function to create a new affine transform by adding translation values to an existing affine transform. The resulting structure represents a new affine transform, which you can use (and reuse, if you want) to move a coordinate system.
 

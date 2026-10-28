@@ -20,7 +20,7 @@ A sequence of all the navigation events that occur throughout the webpage, inclu
 final var navigations: some AsyncSequence<WebPage.NavigationEvent, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 A specific navigation is comprised of a sequential set of [`WebPage.NavigationEvent`](./navigationevent.md)s; a new navigation begins when an event is [`WebPage.NavigationEvent.startedProvisionalNavigation`](./navigationevent/startedprovisionalnavigation.md).
 

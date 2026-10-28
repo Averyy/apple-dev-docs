@@ -19,7 +19,7 @@ var isCoalescingUndo: Bool { get }
 @property (readonly, getter=isCoalescingUndo) BOOL coalescingUndo;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if undo coalescing is in progress, otherwise [`false`](../../Swift/false.md).
 

@@ -17,7 +17,7 @@ Centroid-routed sparse LM head used when `use_ordered_embeddings=true`.
 final class Gemma4AssistantMaskedEmbedder
 ```
 
-#### Overview
+## Overview
 
 Mirrors mlx-vlm’s `mlx_vlm/speculative/drafters/gemma4_assistant/masked_embedder.py`.
 

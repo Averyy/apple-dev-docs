@@ -21,7 +21,7 @@ case startCall
 CPAssistantCellActionTypeStartCall
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This action is only available in communication apps that include an Intents Extension capable of handling [`INStartCallIntent`](../../Intents/instartcallintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 

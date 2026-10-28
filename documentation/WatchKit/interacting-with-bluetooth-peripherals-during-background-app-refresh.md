@@ -13,11 +13,11 @@ Keep your complications up-to-date by reading values from a Bluetooth peripheral
 - watchOS 8.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2022 session [10135: Get timely alerts from Bluetooth devices in watchOS](https://developer.apple.com/wwdc22/10135/), and with WWDC 2021 session [10005: Connect Bluetooth Devices to Apple Watch](https://developer.apple.com/wwdc21/10005/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample runs only on physical devices.
 

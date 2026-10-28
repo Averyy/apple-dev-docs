@@ -25,7 +25,7 @@ static let isNilTransformerName: NSValueTransformerName
 extern NSValueTransformerName const NSIsNilTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 This transformer is not reversible.
 

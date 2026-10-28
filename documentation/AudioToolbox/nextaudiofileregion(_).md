@@ -24,11 +24,11 @@ func NextAudioFileRegion(_ inAFRegionPtr: UnsafePointer<AudioFileRegion>) -> Uns
 static AudioFileRegion *NextAudioFileRegion(const AudioFileRegion *inAFRegionPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the next region after the region pointed to by the `inAFRegionPtr` parameter. This value can be beyond the end of the list, so pay attention to the total number of regions in the list.
 
-#### Discussion
+## Discussion
 
 Because audio file regions are of variable length, you cannot easily walk the list. Use this convenience function when you call the [`AudioFileGetProperty(_:_:_:_:)`](./audiofilegetproperty%28_,_,_,_%29.md) function with the [`kAudioFilePropertyRegionList`](./kaudiofilepropertyregionlist.md) property to walk through the list of regions returned.
 

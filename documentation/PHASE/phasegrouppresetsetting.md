@@ -24,7 +24,7 @@ class PHASEGroupPresetSetting
 @interface PHASEGroupPresetSetting : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines playback speed and volume rates of change that an app can apply to groups. To create a group preset setting, instantiate an object of this type and pass it to the `settings` parameter of [`init(engine:settings:timeToTarget:timeToReset:)`](./phasegrouppreset/init%28engine,settings,timetotarget,timetoreset%29.md).
 

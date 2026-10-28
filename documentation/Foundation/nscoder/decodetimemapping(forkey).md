@@ -25,7 +25,7 @@ func decodeTimeMapping(forKey key: String) -> CMTimeMapping
 - (CMTimeMapping) decodeCMTimeMappingForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CMTimeMapping` structure associated with `key` in the archive.
 

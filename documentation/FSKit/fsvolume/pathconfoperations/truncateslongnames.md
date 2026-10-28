@@ -20,7 +20,7 @@ var truncatesLongNames: Bool { get }
 @property (readonly) BOOL truncatesLongNames;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the volume truncates the filename to [`maximumNameLength`](./maximumnamelength.md) if the filename is longer than that. If this value is false, the file system responds with the error code `ENAMETOOLONG` if the filename is longer than [`maximumNameLength`](./maximumnamelength.md).
 

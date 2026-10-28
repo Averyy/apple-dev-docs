@@ -26,7 +26,7 @@ func makeRemoteTextureView(_ device: any MTLDevice) -> (any MTLTexture)?
 
 - [Transferring data between connected GPUs](../transferring-data-between-connected-gpus.md)
 
-#### Discussion
+## Discussion
 
 The device instance that created this texture and the device instance passed into this method need to have the same nonzero peer group identifier ([`peerGroupID`](../mtldevice/peergroupid.md)). This texture needs to either use the private storage mode ([`MTLStorageMode.private`](../mtlstoragemode/private.md)) or be backed by an [`IOSurface`](../../IOSurface/iosurface-page.md).
 

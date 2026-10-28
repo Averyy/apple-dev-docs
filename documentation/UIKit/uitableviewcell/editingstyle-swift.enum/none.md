@@ -23,7 +23,7 @@ case none
 UITableViewCellEditingStyleNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value.
 

@@ -21,7 +21,7 @@ Synchronously returns a new context that wraps a graph object which represents t
 init(compileFromPath path: String, functionName: String? = nil, options: BNNSGraph.CompileOptions = CompileOptions()) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `BNNSGraphCompileFromFile`
 

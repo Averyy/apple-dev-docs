@@ -20,7 +20,7 @@ class Activity<Attributes> where Attributes : ActivityAttributes
 
 - [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
 
-#### Overview
+## Overview
 
 The `Activity` object offers functionality to start, update, and end a Live Activity from within your app. You can update or end a Live Activity while your app is in the background, but you can only start a Live Activity while the app is in the foreground, unless you adopt [App Intents](../AppIntents/AppIntents.md) and start the Live Activity using a [`LiveActivityIntent`](../AppIntents/liveactivityintent.md).
 

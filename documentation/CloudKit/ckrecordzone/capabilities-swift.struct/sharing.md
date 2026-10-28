@@ -25,7 +25,7 @@ static var sharing: CKRecordZone.Capabilities { get }
 CKRecordZoneCapabilitySharing
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit allows you to share record hierarchies from custom record zones that you create in the user’s private database. For more information, see [Shared Records](../../shared-records.md).
 

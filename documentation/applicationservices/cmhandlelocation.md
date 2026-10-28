@@ -17,7 +17,7 @@ typedef struct CMHandleLocation {
 } CMHandleLocation;
 ```
 
-#### Overview
+## Overview
 
 Your application uses the `CMHandleLocation` structure to provide a handle specification for a profile stored in relocatable memory. You provide the handle specification structure in the `CMProfileLocation` structure’s `u` field to specify an existing profile or a profile to be created. 
 

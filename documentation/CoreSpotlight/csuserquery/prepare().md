@@ -27,7 +27,7 @@ class func prepare()
 
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method once during your app’s lifecycle to give Spotlight time to load the resources it needs for search. This preparation comes at a cost, so measure your app’s performance and determine an appropriate time to call it. For example, you might call it when you load an interface that includes search features.
 

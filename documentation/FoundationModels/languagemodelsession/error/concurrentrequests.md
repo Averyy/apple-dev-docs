@@ -20,7 +20,7 @@ The session received multiple concurrent requests.
 case concurrentRequests
 ```
 
-#### Discussion
+## Discussion
 
 A language model session only supports one request at a time. Wait for the current request to complete before starting another.
 

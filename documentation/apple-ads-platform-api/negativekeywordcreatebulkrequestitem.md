@@ -15,11 +15,11 @@ A single item in a negative-keyword bulk-create request.
 object NegativeKeywordCreateBulkRequestItem
 ```
 
-#### Discussion
+## Discussion
 
 The `data` object accepts only the fields defined on [`BulkNegativeKeywordCreate`](./bulknegativekeywordcreate.md), keeping each item’s payload identical in shape to a single-item create request.
 
-##### Example
+### Example
 
 ```json
 {

@@ -28,7 +28,7 @@ class PHContentEditingInputRequestOptions
 
 - [Editing Asset Content](../PhotoKit/editing-asset-content.md)
 
-#### Overview
+## Overview
 
 You use the [`PHContentEditingInputRequestOptions`](./phcontenteditinginputrequestoptions.md) class with the [`requestContentEditingInput(with:completionHandler:)`](./phasset/requestcontenteditinginput%28with,completionhandler%29.md) method for editing the contents of a [`PHAsset`](./phasset.md) object.
 

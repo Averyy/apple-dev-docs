@@ -15,7 +15,7 @@ Retains a texture cache object.
 extern CVOpenGLTextureCacheRefCVOpenGLTextureCacheRetain(CVOpenGLTextureCacheRef textureCache);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), but is `NULL` safe.
 

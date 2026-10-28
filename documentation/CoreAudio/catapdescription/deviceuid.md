@@ -20,7 +20,7 @@ var deviceUID: String? { get set }
 @property (atomic, copy, nullable) NSString * deviceUID;
 ```
 
-#### Discussion
+## Discussion
 
 An optional deviceUID that will have a value if this tap only taps a specific hardware device
 

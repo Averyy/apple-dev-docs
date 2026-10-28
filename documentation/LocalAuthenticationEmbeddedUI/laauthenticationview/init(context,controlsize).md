@@ -19,7 +19,7 @@ init(context: LAContext, controlSize: NSControl.ControlSize)
 - (instancetype) initWithContext:(LAContext *) context controlSize:(NSControlSize) controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer behaves like [`init(context:)`](./init%28context%29.md), except that it also allows you to specify a size for the view. If you don’t specify a size, the view uses the [`NSControl.ControlSize.regular`](../../AppKit/nscontrol/controlsize-swift.enum/regular.md) size by default.
 

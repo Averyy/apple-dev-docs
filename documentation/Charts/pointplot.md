@@ -21,7 +21,7 @@ Chart content that represents a collection of data using points.
 struct PointPlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `PointPlot` when you want to visualize data in the same way as with [`PointMark`](./pointmark.md), but you want to visualize an entire data collection with a single plot.
 

@@ -17,7 +17,7 @@ An opaque object that holds the raw results of a scan.
 struct CapturedRoomData
 ```
 
-#### Overview
+## Overview
 
 When your app completes a scan session by calling [`stop()`](./roomcapturesession/stop%28%29.md), the framework provides your app with raw scan results in one of the following ways:
 

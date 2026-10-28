@@ -25,7 +25,7 @@ var revisionLevel: (UInt8, UInt8, UInt8, UInt8)
 uint8_t revisionLevel[4];
 ```
 
-#### Discussion
+## Discussion
 
 This value is 2 bytes long.
 

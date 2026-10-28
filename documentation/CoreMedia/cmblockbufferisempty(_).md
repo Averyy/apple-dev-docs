@@ -25,11 +25,11 @@ func CMBlockBufferIsEmpty(_ theBuffer: CMBlockBuffer) -> Bool
 extern Boolean CMBlockBufferIsEmpty(CMBlockBufferRef theBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 False if the `CMBlockBuffer` is `NULL`.
 
-#### Discussion
+## Discussion
 
 Determines whether the given `CMBlockBuffer` is empty, i.e., devoid of any `memoryBlocks` or `CMBlockBuffer` references. Note that a `CMBlockBuffer` containing a not-yet allocated `memoryBlock` is not considered empty.
 

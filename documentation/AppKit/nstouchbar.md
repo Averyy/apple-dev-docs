@@ -23,7 +23,7 @@ class NSTouchBar
 @interface NSTouchBar : NSObject
 ```
 
-#### Overview
+## Overview
 
 On supported MacBook Pro models, the Touch Bar, above the keyboard, shows instances of the [`NSTouchBar`](./nstouchbar.md) class from the front-most app. Such an instance is called a *bar*. You define a bar to provide controls relevant to the user’s context. Each such control is an instance of the [`NSTouchBarItem`](./nstouchbaritem.md) class, called an *item*.
 
@@ -56,7 +56,7 @@ The Touch Bar dims automatically and wakes when the user touches it. Don’t sho
 
 For Touch Bar design guidance, read [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/).
 
-##### Bar objects
+### Bar objects
 
 You can think of an [`NSTouchBar`](./nstouchbar.md) object (or *bar*), with its array of [`NSTouchBarItem`](./nstouchbaritem.md) objects (or *items*), as analogous to a window toolbar with its toolbar items, or a menu with its menu items.
 
@@ -86,7 +86,7 @@ If you explicitly adopt the [`NSTouchBarProvider`](./nstouchbarprovider.md) prot
 
 To programmatically invalidate a bar associated with a bar provider, such as because you’re changing the bar’s state, set its [`touchBar`](./nstouchbarprovider/touchbar.md) property to a value of `nil`.
 
-##### Item objects
+### Item objects
 
 A bar itself (an [`NSTouchBar`](./nstouchbar.md) object) has no visible representation in a MacBook Pro Touch Bar. A user instead sees the bar’s items, each of which is an instance of the [`NSTouchBarItem`](./nstouchbaritem.md) class.
 
@@ -107,7 +107,7 @@ Whichever of these two approaches you employ, the system is in charge of populat
 
 As your app runs, you can obtain the identifiers of the items eligible for presentation in a bar — specifically, those in its private items array — by accessing the read-only [`itemIdentifiers`](./nstouchbar/itemidentifiers.md) property. This property reflects the current state of the bar instance, including any customization that has been performed by the user and any dynamic composition that has been performed by the system.
 
-##### Customization
+### Customization
 
 AppKit provides a rich Touch Bar customization facility for users that appears, upon user request, on the main display. Make your bars customizable unless you have a specific UI need not to do so.
 
@@ -138,7 +138,7 @@ If your app design requires a noncustomizable [`NSTouchBar`](./nstouchbar.md) ob
 - List all of the bar’s items in the [`defaultItemIdentifiers`](./nstouchbar/defaultitemidentifiers.md) property, and only in this property.
 - Don’t use the other properties described in this section and, in particular, don’t assign the bar a [`customizationIdentifier`](./nstouchbar/customizationidentifier-swift.property.md) property value.
 
-###### Group item, popover item, and composed bar customization
+#### Group item, popover item, and composed bar customization
 
 AppKit lets you specify any bar as customizable or not. The customization configuration you provide for a bar remains associated with the bar and its items — even when those items are nested by the system into another bar higher in the responder chain.
 
@@ -154,7 +154,7 @@ The system also respects your bar customization configuration when you use group
 - If you configure a bar as customizable, and give it a popover item whose [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar you configure as *not* customizable, the [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar never appears in the customization UI. If the user invokes the customization UI when the (noncustomizable) popover item itself (not the button’s associated [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar) is visible in the Touch Bar, the customization UI lets the user rearrange the position of the popover item relative to the other items in the containing bar. If, on the other hand, the user invokes the customization UI when the (noncustomizable) [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar is visible in the Touch Bar, the system dismisses the popover bar and shows, in the customization UI, customization options for the bar that contains the popover item.
 - If you configure a [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar as customizable, the user can invoke the [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar (by tapping the popover item that owns it, in the Touch Bar) and then use the customization UI to manipulate the items in the [`popoverTouchBar`](./nspopovertouchbaritem/popovertouchbar.md) bar itself.
 
-###### Customization menu item
+#### Customization menu item
 
 A user invokes the customization UI for a particular [`NSTouchBar`](./nstouchbar.md) object, when it’s visible in the Touch Bar, by choosing the bar customization menu item. To enable this menu item you must explicitly opt-in, which you can do in the following ways:
 
@@ -165,7 +165,7 @@ If you attempt to employ the customization menu item (using either of these two 
 
 If your app attempts to use both automatic and explicit placement of the customization menu item, the system respects your explicit control and doesn’t place the item automatically.
 
-##### Layout
+### Layout
 
 The user controls the width of the Control Strip and can choose to hide it, and the system is in charge of the nesting of [`NSTouchBar`](./nstouchbar.md) instances (for the bars you make eligible for composition). As a result, the available display width for your bars can vary. There’s no API for you to obtain the current available display width.
 
@@ -177,7 +177,7 @@ In geometric-space-constrained scenarios, the system hides [`NSTouchBarItem`](./
 
 If you need to center an item in the Touch Bar, designate it as a *principal item* by assigning it to its bar’s [`principalItemIdentifier`](./nstouchbar/principalitemidentifier.md) property. Don’t hard-code spacing in an attempt to ensure an item is centered. If you want a group of items to appear centered in the Touch Bar, designate the group item (of type [`NSGroupTouchBarItem`](./nsgrouptouchbaritem.md)) as the principal item.
 
-##### Composition and nesting
+### Composition and nesting
 
 You can configure a bar to support dynamic composition, in which the system shows the bar in an expanded form that contains items from bars lower in the responder chain (closer to the first responder).
 
@@ -195,7 +195,7 @@ If a bar doesn’t employ the [`otherItemsProxy`](./nstouchbaritem/identifier-sw
 
 When determining which items to show in the Touch Bar for the current first responder, the system traverses up the entire responder chain. This lets the system accommodate any proxy items in bars defined for objects higher in the chain, thereby respecting the fact that any bar, defined for an object at any position in the responder chain, might include the other-items-proxy identifier.
 
-###### Customization for composed bars
+#### Customization for composed bars
 
 The logical, geometric boundary for a nested [`NSTouchBar`](./nstouchbar.md) object isn’t visible to the user in the Touch Bar. However, the boundary remains in effect in terms of customization. A user can’t rearrange a nested bar’s items outside of its boundary.
 
@@ -219,11 +219,11 @@ The composed bar would correspond to this arrangement in the Touch Bar:
 
 With the customization UI, the user could then rearrange the items represented here by `(A)`, `(B)`, and `(C)`, but only as long as those items remained contiguous during the rearrangement, thereby respecting the logical boundary of the bar that defines them.
 
-###### Item spacing for composed bars
+#### Item spacing for composed bars
 
 When the system nests [`NSTouchBar`](./nstouchbar.md) objects that include spacing items, it merges any resulting adjacent spacing. Ensure that your bars appear as you expect them to, testing on the versions of macOS that you support. For more on spacing items, see [`NSTouchBarItem`](./nstouchbaritem.md).
 
-##### Bar discovery and the responder chain
+### Bar discovery and the responder chain
 
 At runtime, the system traverses up the responder chain, starting at the object with focus, to discover objects that conform to the [`NSTouchBarProvider`](./nstouchbarprovider.md) protocol. Such objects are called *bar providers*. The system then populates the Touch Bar, potentially with multiple, nested bars, according to system policy and available geometric space.
 
@@ -256,7 +256,7 @@ For example, in a complicated but otherwise standard app, bar discovery might pr
 
 The Touch Bar can show one bar nested within another, as described in [Composition and nesting](./nstouchbar.md#Composition-and-nesting).
 
-##### Accessibility and the Touch Bar
+### Accessibility and the Touch Bar
 
 AppKit views and controls adopt the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol and automatically send appropriate accessibility notifications. Because the Touch Bar is designed to work with AppKit, it’s fully accessible.
 
@@ -264,7 +264,7 @@ Be sure to use the `customizationLabel` property on every [`NSTouchBarItem`](./n
 
 To learn more about accessibility, read [Accessibility for AppKit](./accessibility-for-appkit.md).
 
-##### AppKit support for the Touch Bar
+### AppKit support for the Touch Bar
 
 To support the Touch Bar feature, AppKit provides several enhancements, first available in macOS 10.12.1:
 
@@ -286,7 +286,7 @@ To support the Touch Bar feature, AppKit provides several enhancements, first av
 - Manages inter-item spacing
 - Supports user customization for the individual items
 
-##### Development considerations for the Touch Bar
+### Development considerations for the Touch Bar
 
 The Xcode Touch Bar simulator represents the Touch Bar onscreen and supports some user interaction. However, some interactions are unavailable in the simulator. For example, you can’t perform two-finger gestures in the Touch Bar simulator.
 
@@ -294,7 +294,7 @@ If you’re adopting Touch Bar support for your app, but running Xcode on a Mac 
 
 Interface Builder supports development for the Touch Bar with nib objects available in the object library. Drag and drop bars and items from the object library into your canvas, and then attach them to your app’s responders as desired. For more information, see Xcode Help.
 
-##### Performance considerations for the Touch Bar
+### Performance considerations for the Touch Bar
 
 The Touch Bar’s display and the MacBook screen share resources, including the main CPU and GPU of the MacBook. To ensure that your Touch Bar controls perform well, follow the usual best practice of protecting your app’s main thread from doing too much work. For example, don’t perform rendering work for the main display on the main thread.
 

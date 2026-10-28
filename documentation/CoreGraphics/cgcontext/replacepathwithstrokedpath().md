@@ -25,7 +25,7 @@ func replacePathWithStrokedPath()
 extern void CGContextReplacePathWithStrokedPath(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 A stroked path is created using the parameters of the current graphics context. The new path is created so that filling it draws the same pixels as stroking the original path.You can use this path in the same way you use the path of any context. For example, you can clip to the stroked version of a path by calling this function followed by a call to the function [`CGContextClip`](../cgcontextclip.md).
 

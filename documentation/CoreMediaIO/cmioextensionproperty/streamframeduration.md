@@ -20,7 +20,7 @@ static let streamFrameDuration: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a dictionary that represents a [`CMTime`](../../CoreMedia/cmtime.md) value that matches the frame duration of the active stream format.
 

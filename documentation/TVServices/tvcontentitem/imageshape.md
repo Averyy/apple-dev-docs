@@ -21,7 +21,7 @@ var imageShape: TVContentItemImageShape { get set }
 @property (nonatomic) TVContentItemImageShape imageShape;
 ```
 
-#### Discussion
+## Discussion
 
 When the TV Content object is being used to represent Top Shelf items, then the allowed values for this property depend on the [`topShelfStyle`](../tvtopshelfprovider/topshelfstyle.md) property of the object that implements the TV TopShelf extension. For more information, see [`TVTopShelfProvider`](../tvtopshelfprovider.md).
 

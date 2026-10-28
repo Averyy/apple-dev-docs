@@ -24,7 +24,7 @@ func disconnect()
 - (void) disconnect;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before ending a match.
 

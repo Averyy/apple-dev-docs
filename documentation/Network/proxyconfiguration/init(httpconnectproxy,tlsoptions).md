@@ -21,7 +21,7 @@ Initializes a legacy HTTP CONNECT configuration for a proxy server accessible us
 init(httpCONNECTProxy: NWEndpoint, tlsOptions: NWProtocolTLS.Options? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 These HTTP CONNECT proxies only handle TCP connections. To support UDP proxying, use [`init(relayHops:)`](./init%28relayhops%29.md).
 

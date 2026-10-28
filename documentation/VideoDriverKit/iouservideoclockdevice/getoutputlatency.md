@@ -15,7 +15,7 @@ Gets the output latency of the clock device.
 uint32_t GetOutputLatency();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

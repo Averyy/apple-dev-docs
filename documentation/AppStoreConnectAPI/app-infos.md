@@ -5,7 +5,7 @@
 
 Manage or read the app metadata that applies across all versions of your app.
 
-#### Overview
+## Overview
 
 `appInfos` represents your app’s metadata that applies across all versions of your app. You can update your app’s App Store category, subcategory, and secondary category through the `appInfos` resource. You can also find your app’s status, which tells you if the app metadata is editable. For more information, see [App and submission statuses](https://developer.apple.com/help/app-store-connect/reference/app-and-submission-statuses).
 

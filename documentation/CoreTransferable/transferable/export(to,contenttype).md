@@ -21,11 +21,11 @@ Using the type’s `Transferable` conformance implementation, exports a value by
 func export(to destinationDirectory: URL, contentType: UTType?) async throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 A URL of the created file. The file is owned by the application, and it is responsible for removing it when the file is not needed anymore.
 
-#### Discussion
+## Discussion
 
 If the [`Transferable`](../transferable.md) is not backed by a file, this will write the data to specified destination. This function uses the first representation provided for a given type in `static var transferRepresentation` requirement of the `Transferable` protocol or in the `body` of a custom `TransferRepresentation`.
 

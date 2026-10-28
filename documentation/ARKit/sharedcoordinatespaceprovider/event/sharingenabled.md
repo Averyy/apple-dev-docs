@@ -13,7 +13,7 @@
 case sharingEnabled
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Provider has been enabled to produce data and the user is allowed to push data to the provider.
 

@@ -25,11 +25,11 @@ func CMSampleBufferIsValid(_ sbuf: CMSampleBuffer) -> Bool
 extern Boolean CMSampleBufferIsValid(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the sample buffer is still valid.
 
-#### Discussion
+## Discussion
 
 Returns false if `sbuf` is `NULL` or `CMSampleBufferInvalidate` was called, true otherwise. Doesn’t perform any kind of exhaustive validation of the sample buffer.
 

@@ -29,7 +29,7 @@ func presentScene(_ scene: SKScene?)
 - [Drawing SpriteKit Content in a View](../drawing-spritekit-content-in-a-view.md)
 - [Responding to Frame-Cycle Events](../responding-to-frame-cycle-events.md)
 
-#### Discussion
+## Discussion
 
 The new scene immediately replaces the current scene, if one exists.
 

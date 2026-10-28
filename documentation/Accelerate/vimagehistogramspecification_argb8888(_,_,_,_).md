@@ -25,11 +25,11 @@ func vImageHistogramSpecification_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, 
 vImage_Error vImageHistogramSpecification_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, const vImagePixelCount * desired_histogram[4], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Use this function to apply a histogram — that you’ve generated using [`vImageHistogramSpecification_ARGBFFFF(_:_:_:_:_:_:_:_:)`](./vimagehistogramspecification_argbffff%28_,_,_,_,_,_,_,_%29.md) — to each channel of another image.
 

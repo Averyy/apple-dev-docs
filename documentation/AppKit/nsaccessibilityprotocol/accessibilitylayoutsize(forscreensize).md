@@ -20,7 +20,7 @@ func accessibilityLayoutSize(forScreenSize size: NSSize) -> NSSize
 - (NSSize) accessibilityLayoutSizeForScreenSize:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A size in the layout area’s coordinate system.
 

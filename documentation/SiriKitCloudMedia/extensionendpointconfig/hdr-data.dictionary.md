@@ -15,7 +15,7 @@ Headers to include with requests to intent endpoints.
 object ExtensionEndpointConfig.Hdr
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary of header names and values.
 

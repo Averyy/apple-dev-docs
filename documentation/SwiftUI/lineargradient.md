@@ -26,7 +26,7 @@ nonisolated struct LinearGradient
 
 - [Laying out a simple view](./laying-out-a-simple-view.md)
 
-#### Overview
+## Overview
 
 The gradient applies the color function along an axis, as defined by its start and end points. The gradient maps the unit space points into the bounding rectangle of each shape filled with the gradient.
 

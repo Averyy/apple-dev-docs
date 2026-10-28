@@ -28,7 +28,7 @@ protocol UITextDocumentProxy : UIKeyInput
 
 - [Handling text interactions in custom keyboards](./handling-text-interactions-in-custom-keyboards.md)
 
-#### Overview
+## Overview
 
 Through conformance to the [`UIKeyInput`](./uikeyinput.md) protocol, a text document proxy enables a custom keyboard (which is based on the [`UIInputViewController`](./uiinputviewcontroller.md) class) to insert and delete text, to adjust the position of the insertion point, and to determine whether a text input object is empty. The text document proxy uses the keyboard’s [`textDocumentProxy`](./uiinputviewcontroller/textdocumentproxy.md) property to do this.
 

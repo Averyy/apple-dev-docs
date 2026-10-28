@@ -25,7 +25,7 @@ var nrNoiseLevel: Float { get set }
 @property (nonatomic) float NRNoiseLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Increasing the noise level helps to clean up the traced edges of the image.
 

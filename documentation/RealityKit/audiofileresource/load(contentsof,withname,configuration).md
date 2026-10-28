@@ -21,7 +21,7 @@ Loads an AudioFileResource synchronously.
 @preconcurrency static func load(contentsOf url: URL, withName name: String? = nil, configuration: AudioFileResource.Configuration = .init()) throws -> AudioFileResource
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The name provided **must** be unique.
 

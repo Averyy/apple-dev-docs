@@ -16,7 +16,7 @@ get lineCap(): "square" | "butt" | "round";
 set lineCap(lineCap: "square" | "butt" | "round");
 ```
 
-#### Discussion
+## Discussion
 
 The three options for line endings are `butt` (squared-off ends), `round` (rounded ends), or `square` (ends that have a half-square extension). The default is `round`.
 

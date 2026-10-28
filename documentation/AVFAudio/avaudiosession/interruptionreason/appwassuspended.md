@@ -26,7 +26,7 @@ case appWasSuspended
 AVAudioSessionInterruptionReasonAppWasSuspended
 ```
 
-#### Discussion
+## Discussion
 
 Starting in iOS 10, the system deactivates the audio session of most apps when it suspends the app process. The next time the app runs, it receives a notification that the system deactivated its audio session. This notification is necessarily delayed in time, because the system can’t send it until the app restarts.
 

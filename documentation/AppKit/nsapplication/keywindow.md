@@ -19,7 +19,7 @@ weak var keyWindow: NSWindow? { get }
 @property (weak, readonly, nullable) NSWindow * keyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when there is no window receiving keyboard events. The property might be `nil` because the app’s storyboard file has not yet finished loading or when the receiver is not active.
 

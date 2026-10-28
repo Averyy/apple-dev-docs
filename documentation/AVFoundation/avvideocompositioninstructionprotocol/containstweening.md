@@ -25,7 +25,7 @@ var containsTweening: Bool { get }
 @property (nonatomic, readonly) BOOL containsTweening;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`true`](../../Swift/true.md) indicates that rendering a frame from the same source buffers and the same composition instruction at two different [`compositionTime`](../avasynchronousvideocompositionrequest/compositiontime.md) values may yield different output frames. A value of [`false`](../../Swift/false.md) indicates that two compositions yield the same frame.
 

@@ -26,7 +26,7 @@ class PKToolPicker
 
 - [Supporting backward compatibility for ink types](./supporting-backward-compatibility-for-ink-types.md)
 
-#### Overview
+## Overview
 
 A [`PKToolPicker`](./pktoolpicker.md) manages a draggable palette that displays drawing tools, colors, and additional options. You add a tool picker to your interface and configure it to display its palette at appropriate times. While the palette is onscreen, a person may reposition it anywhere within the current window. When a person interacts with the palette, the tool picker notifies registered observers of the changes so that they can respond.
 

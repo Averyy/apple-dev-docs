@@ -24,7 +24,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method returns the descriptor to its original state, as is produced when initializing a vertex descriptor with the inherited [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method. After calling this method, the descriptor contains a single empty [`MDLVertexAttribute`](../mdlvertexattribute.md) object and a single empty [`MDLVertexBufferLayout`](../mdlvertexbufferlayout.md) object.
 

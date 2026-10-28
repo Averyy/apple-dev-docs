@@ -24,7 +24,7 @@ let kIOSurfaceAllocSize: CFString
 extern CFStringRef const kIOSurfaceAllocSize;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to BufferHeight * BytesPerRow if not specified. Must be specified for dimensionless buffers.
 

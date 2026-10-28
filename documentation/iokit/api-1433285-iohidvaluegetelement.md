@@ -16,7 +16,7 @@ Returns the element value associated with this IOHIDValueRef.
 IOHIDElementRef IOHIDValueGetElement(IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a IOHIDElementRef referenced by this value.
 

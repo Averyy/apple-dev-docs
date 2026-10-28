@@ -25,7 +25,7 @@ var BNNSInterpolationMethodNearest: BNNSInterpolationMethod { get }
 BNNSInterpolationMethodNearest
 ```
 
-#### Discussion
+## Discussion
 
 Nearest-neighbor interpolation is suitable for any number of interpolation dimensions.
 

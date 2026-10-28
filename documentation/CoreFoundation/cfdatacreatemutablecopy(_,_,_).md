@@ -25,7 +25,7 @@ func CFDataCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ t
 extern CFMutableDataRefCFDataCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFDataRef theData);
 ```
 
-#### Return Value
+## Return Value
 
 A CFMutableData object that has the same contents as the original object. Returns `NULL` if there was a problem copying the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

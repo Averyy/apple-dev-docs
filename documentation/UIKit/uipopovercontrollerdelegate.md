@@ -26,7 +26,7 @@ protocol UIPopoverControllerDelegate : NSObjectProtocol
 @protocol UIPopoverControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Popover controllers notify their delegate whenever user interactions would cause the dismissal of the popover and, in some cases, give the user a chance to prevent that dismissal.
 

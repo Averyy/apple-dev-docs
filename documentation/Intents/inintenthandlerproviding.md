@@ -25,7 +25,7 @@ protocol INIntentHandlerProviding : NSObjectProtocol
 @protocol INIntentHandlerProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `INIntentHandlerProviding` protocol defines the method for routing SiriKit requests to the appropriate objects of your Intents extension. The method in this protocol acts as a dispatcher, returning an object capable of resolving, confirming, and handling a specific intent object. This protocol is adopted by the [`INExtension`](./inextension.md) class and you must provide a custom implementation.
 

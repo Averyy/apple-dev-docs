@@ -5,7 +5,7 @@
 
 Understand HTTP server-side errors and how to debug them.
 
-#### Overview
+## Overview
 
 Apple’s HTTP APIs report transport errors and server-side errors:
 
@@ -18,7 +18,7 @@ The status codes returned by the server aren’t always easy to interpret (see S
 
 The following sections explain how to debug these server-side problems.
 
-##### Print the HTTP Response Body
+### Print the HTTP Response Body
 
 In some cases, the error response from the server includes an HTTP response body that explains what the problem is. Look at the HTTP response body to see whether such an explanation is present. If it is, that’s the easiest way to figure out what went wrong. For example, consider this standard [`URLSession`](../Foundation/urlsession.md) request code.
 
@@ -50,7 +50,7 @@ A server-side error runs the line labeled “Handle HTTP server-side error.” T
         }
 ```
 
-##### Compare Against a Working Client
+### Compare Against a Working Client
 
 If the HTTP response body doesn’t help, compare your request to a request issued by a working client. For example, the server might not fail if you send it the same request from:
 
@@ -66,7 +66,7 @@ If you have a working client, it’s relatively straightforward to debug your pr
 4. Retry with your updated client.
 5. If things still fail, go back to step 1.
 
-##### Debug on the Server
+### Debug on the Server
 
 If you don’t have access to a working client, or you can’t get things to work using the steps described in the previous section, your only remaining option is to debug the problem on the server. Ideally, the server has documented debugging options that offer more insight into the failure. If not, escalate the problem through the support channel associated with your server software.
 

@@ -28,7 +28,7 @@ optional func webAppManifest() async -> BEWebAppManifest?
 - (void) getWebAppManifestWithCompletionHandler:(void (^)(BEWebAppManifest *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls this method in browser apps that include an alternative browser engine.
 

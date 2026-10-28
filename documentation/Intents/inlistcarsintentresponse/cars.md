@@ -31,7 +31,7 @@ var cars: [INCar]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INCar *> * cars;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an array of [`INCar`](../incar.md) objects that represents the user’s electric vehicles. Maps requires these vehicles to respond to [`INGetCarPowerLevelStatusIntent`](../ingetcarpowerlevelstatusintent.md) requests so that it can use them during route planning and navigation.
 

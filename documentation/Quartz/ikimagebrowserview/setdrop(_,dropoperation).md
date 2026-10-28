@@ -19,7 +19,7 @@ func setDrop(_ index: Int, dropOperation operation: IKImageBrowserDropOperation)
 - (void) setDropIndex:(NSInteger) index dropOperation:(IKImageBrowserDropOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 For example, To specify a drop on the second item, one would specify index as `1`, and operation as [`IKImageBrowserDropOn`](../ikimagebrowserdropon.md). To specify a drop after the last item, one would specify index as the number of items and operation as [`IKImageBrowserDropBefore`](../ikimagebrowserdropbefore.md).
 

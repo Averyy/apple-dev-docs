@@ -17,13 +17,13 @@ Return specified diagonals.
 func diagonal(_ array: MLXArray, offset: Int = 0, axis1: Int = 0, axis2: Int = 1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 If `array` is 2-D, then a 1-D array containing the diagonal at the given `offset` is returned.
 
 If `array` has more than two dimensions, then `axis1` and `axis2` determine the 2D subarrays from which diagonals are extracted. The new shape is the original shape with `axis1` and `axis2` removed and a new dimension inserted at the end corresponding to the diagonal.
 
-##### See Also
+### See Also
 
 - [`diag(_:k:stream:)`](./diag%28_,k,stream%29.md)
 

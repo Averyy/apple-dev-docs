@@ -15,7 +15,7 @@ Invoice billing contact details supplied when creating a budget order.
 object SharedBudgetCreate.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 Required for accounts on the Line of Credit (`LOC`) payment model. For all accounts, `name`, `primaryBuyerName`, `primaryBuyerEmail`, and `billingEmail` are required.
 

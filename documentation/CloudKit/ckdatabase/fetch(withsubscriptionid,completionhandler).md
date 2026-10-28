@@ -23,7 +23,7 @@ Fetches a specific subscription and delivers it to a completion handler.
 func fetch(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping @Sendable (CKSubscription?, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

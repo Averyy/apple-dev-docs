@@ -24,7 +24,7 @@ func JSValueMakeString(_ ctx: JSContextRef!, _ string: JSStringRef!) -> JSValueR
 JSValueRefJSValueMakeString(JSContextRef ctx, JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) of the string type that represents the value of `string`.
 

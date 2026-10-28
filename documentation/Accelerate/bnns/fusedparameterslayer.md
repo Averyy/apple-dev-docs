@@ -23,7 +23,7 @@ A layer object that wraps a fused layer and manages its deinitialization.
 class FusedParametersLayer
 ```
 
-#### Overview
+## Overview
 
 Use a [`BNNS.FusedParametersLayer`](./fusedparameterslayer.md) instance to fuse component layers with the following configurations:
 

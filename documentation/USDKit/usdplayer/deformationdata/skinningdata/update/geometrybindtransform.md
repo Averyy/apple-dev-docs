@@ -20,7 +20,7 @@ Changed geometry bind transform.
 let geometryBindTransform: float4x4?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

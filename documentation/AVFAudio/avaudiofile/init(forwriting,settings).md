@@ -25,11 +25,11 @@ init(forWriting fileURL: URL, settings: [String : Any]) throws
 - (instancetype) initForWriting:(NSURL *) fileURL settings:(NSDictionary<NSString *,id> *) settings error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFile` instance for writing.
 
-#### Discussion
+## Discussion
 
 This method infers the file type to create from the file extension of `fileURL`, and overwrites a file at the specified URL if a file exists.
 

@@ -21,7 +21,7 @@ nonisolated
 struct MenuControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`menu`](./controlgroupstyle/menu.md) to construct this style.
 

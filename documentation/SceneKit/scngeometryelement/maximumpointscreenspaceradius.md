@@ -25,7 +25,7 @@ var maximumPointScreenSpaceRadius: CGFloat { get set }
 @property (nonatomic) CGFloat maximumPointScreenSpaceRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Some visual effects call for rendering a geometry as a collection of individual points—that is, a point cloud, not a solid surface or wireframe mesh. When you use this option, SceneKit can render each point as a small 2D surface that always faces the camera. By applying a texture or custom shader to that surface, you can efficiently render many small objects at once.
 

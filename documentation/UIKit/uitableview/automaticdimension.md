@@ -23,7 +23,7 @@ class let automaticDimension: CGFloat
 extern const CGFloat UITableViewAutomaticDimension;
 ```
 
-#### Discussion
+## Discussion
 
 Return this value from your table view’s delegate methods when you want the table view to choose a default value for the given dimension. For example, if you return this constant from [`tableView(_:heightForHeaderInSection:)`](../uitableviewdelegate/tableview%28_,heightforheaderinsection%29.md) or [`tableView(_:heightForFooterInSection:)`](../uitableviewdelegate/tableview%28_,heightforfooterinsection%29.md), the table view uses a height that fits the value returned from [`tableView(_:titleForHeaderInSection:)`](../uitableviewdatasource/tableview%28_,titleforheaderinsection%29.md) or [`tableView(_:titleForFooterInSection:)`](../uitableviewdatasource/tableview%28_,titleforfooterinsection%29.md), if the title is not `nil`.
 

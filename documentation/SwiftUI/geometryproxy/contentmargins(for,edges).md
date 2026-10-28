@@ -21,11 +21,11 @@ The insets of a content margin guide for the given edges.
 func contentMargins(for guide: ContentMarginGuide, edges: Edge.Set = .all) -> EdgeInsets
 ```
 
-#### Return Value
+## Return Value
 
 The insets `guide` provides for `edges`. Edges not in the set have a value of zero.
 
-#### Discussion
+## Discussion
 
 Read a guide when you need its value rather than the inset, like a view that draws its own content:
 

@@ -23,7 +23,7 @@ mutating func reserveCapacity(_ minimumCapacity: Int)
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 If you are adding a known number of key-value pairs to a dictionary, use this method to avoid multiple reallocations. This method ensures that the dictionary has unique, mutable, contiguous storage, with space allocated for at least the requested number of key-value pairs.
 

@@ -20,11 +20,11 @@ func accessibilityValue() -> Any?
 - (id) accessibilityValue;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the slider.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityValue`](../nsaccessibility-c.protocol/accessibilityvalue.md) property.
 

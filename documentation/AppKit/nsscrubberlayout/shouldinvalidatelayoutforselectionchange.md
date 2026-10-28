@@ -19,7 +19,7 @@ var shouldInvalidateLayoutForSelectionChange: Bool { get }
 @property (readonly) BOOL shouldInvalidateLayoutForSelectionChange;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the scrubber invalidates its layout when the selection changes. Subclasses should return [`true`](../../Swift/true.md) if the selection index affects the item layout.
 

@@ -21,7 +21,7 @@ A set of options that describes which process performs an intent or entity query
 struct IntentExecutionTargets
 ```
 
-#### Overview
+## Overview
 
 If you reuse intents and entities between your app, widget extension, or App Intents extension by using a Swift package or framework, the system may perform your [`AppIntent`](./appintent.md) or [`EntityQuery`](./entityquery.md) from the app or App Intents extension. By default, the system performs an intent or entity query using any available target. Use `IntentExecutionTargets` to tell the system which targets can perform your [`AppIntent`](./appintent.md) or [`EntityQuery`](./entityquery.md). For example, a browser app might represent browser tabs and bookmarks as app entities and offer app intents to add a bookmark or open a browser tab. Adding a bookmark might be an action that can happen while the app isn’t visible, so performing the action in the App Intents extension makes sense. However, opening a new tab makes sense only when the app is visible, requiring the system to perform the intent in the app’s process.
 

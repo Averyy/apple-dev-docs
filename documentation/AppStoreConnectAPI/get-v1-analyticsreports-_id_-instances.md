@@ -13,9 +13,9 @@ Read list of all the granularity options for a specific type of analytics report
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

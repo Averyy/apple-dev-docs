@@ -7,7 +7,7 @@
 **Availability**:
 - App Store Connect API 1.1+
 
-#### Discussion
+## Discussion
 
 You can only delete bundle IDs that are used for development. You can’t delete bundle IDs that are being used by an app in App Store Connect.
 

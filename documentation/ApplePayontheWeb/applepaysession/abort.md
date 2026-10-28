@@ -16,7 +16,7 @@ Aborts the current Apple Pay session.
 undefined abort();
 ```
 
-#### Discussion
+## Discussion
 
 Dismisses the payment sheet and ends the Apple Pay session without completing a transaction. Only the web page can call [`abort`](./abort.md).
 

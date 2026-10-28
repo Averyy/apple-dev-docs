@@ -24,11 +24,11 @@ func MusicSequenceSetAUGraph(_ inSequence: MusicSequence, _ inGraph: AUGraph?) -
 extern OSStatus MusicSequenceSetAUGraph(MusicSequence inSequence, AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 After you call this function, the system directs a played music sequence’s output to the associated audio processing graph. By default, all music tracks in the sequence are directed to the first node in the graph that is an Instrument unit (of type `DLSMusicDevice`).
 

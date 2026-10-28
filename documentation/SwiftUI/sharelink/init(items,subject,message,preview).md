@@ -23,7 +23,7 @@ init(items: Data, subject: Text? = nil, message: Text? = nil, preview: @escaping
 
 Available when `Data` conforms to `RandomAccessCollection`, `PreviewImage` conforms to `Transferable`, `PreviewIcon` conforms to `Transferable`, `Label` is `DefaultShareLinkLabel`, and `Data.Element` conforms to `Transferable`.
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want the system-standard appearance for `ShareLink`.
 

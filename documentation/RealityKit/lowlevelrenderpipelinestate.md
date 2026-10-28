@@ -18,7 +18,7 @@ A compiled Metal render pipeline state for a specific mesh descriptor, material,
 final class LowLevelRenderPipelineState
 ```
 
-#### Overview
+## Overview
 
 The mesh descriptor, material, render target descriptors, and blending are specified via the descriptor and cannot be changed after the pipeline state is created.
 

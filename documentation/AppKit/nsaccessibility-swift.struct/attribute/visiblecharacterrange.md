@@ -19,7 +19,7 @@ static let visibleCharacterRange: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityVisibleCharacterRangeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Returns ranges for entire lines. For example, characters that are horizontally clipped will be reported in the visible range.
 

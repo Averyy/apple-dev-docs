@@ -18,7 +18,7 @@ A way to build [`Sequential`](./sequential.md).
 struct SequentialBuilder
 ```
 
-#### Overview
+## Overview
 
 See [`init(layers:)`](./sequential/init%28layers%29-43yu.md)
 

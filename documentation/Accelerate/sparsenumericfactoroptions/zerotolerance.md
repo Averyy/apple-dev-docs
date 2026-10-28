@@ -25,7 +25,7 @@ var zeroTolerance: Double
 double zeroTolerance;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Only the symmetric factorization algorithms use the [`zeroTolerance`](./zerotolerance.md) parameter. [`SparseFactorizationQR`](../sparsefactorizationqr.md) ignores the zero tolerance value.
 

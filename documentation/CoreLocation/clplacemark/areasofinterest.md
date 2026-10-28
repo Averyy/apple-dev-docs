@@ -27,7 +27,7 @@ var areasOfInterest: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * areasOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of an area of interest are the name of a military base, large national park, or an attraction such as the Eiffel Tower, Disneyland, or Golden Gate Park.
 

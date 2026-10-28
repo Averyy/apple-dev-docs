@@ -14,13 +14,13 @@ Use Core Data and CloudKit to synchronize data between devices of an iCloud user
 - watchOS 9.4+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 More and more people own multiple devices and use them for digital asset sharing and collaboration. They expect seamless data synchronization and sharing experiences with robust privacy and security features. Apps can support such use cases by implementing a data-sharing flow using Core Data and CloudKit.
 
 This sample code project demonstrates how to use Core Data and CloudKit to share photos between iCloud users. People who share photos, called *owners*, can create a share, send an invitation, manage the permissions, and stop the sharing. People who accept the share, called *participants*, can view and edit the photos, or stop participating in the share.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Open the sample code project in Xcode. Before building it, perform the following steps:
 
@@ -38,7 +38,7 @@ To run the sample app on a device, configure the device as follows:
 
 For more information about the project configuration, see [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md).
 
-##### Create the CloudKit schema
+### Create the CloudKit schema
 
 CloudKit apps require a schema to declare the data types they use. When apps create a record in the CloudKit development environment, CloudKit automatically creates the record type if it doesn’t exist. In the production environment, CloudKit doesn’t have that capability, nor does it allow removing an existing record type or field, so after finalizing the schema, developers need to deploy it to the production environment. Without this step, apps that work in the production environment, like the ones people download from the App Store or TestFlight, can’t communicate with the CloudKit server. For more information, see [Deploying an iCloud Container’s Schema](../CloudKit/deploying-an-icloud-container-s-schema.md).
 
@@ -50,7 +50,7 @@ For apps that use the CloudKit public database, use CloudKit Console to manually
 
 For more information, see [Creating a Core Data Model for CloudKit](./creating-a-core-data-model-for-cloudkit.md).
 
-##### Try out the sharing flow
+### Try out the sharing flow
 
 To create and share a photo using the sample app, follow these steps:
 
@@ -69,7 +69,7 @@ To discover more features of the sample app:
 - On device B, touch and hold the photo, tap Participants, and then tap the Remove Me icon to stop the participation. The photo disappears.
 - Tap the Manage Shares icon, and then tap a trailing icon of the share to present and use the sharing management UI.
 
-##### Set up the Core Data stack
+### Set up the Core Data stack
 
 Every CloudKit container has a [private database](../CloudKit/ckcontainer/privateclouddatabase.md) and a [shared database](../CloudKit/ckcontainer/sharedclouddatabase.md). To mirror both of them, the sample app sets up a Core Data stack with two stores, sets one store’s [database scope](./nspersistentcloudkitcontaineroptions/databasescope-4c72t.md) to `.private` and the other to `.shared`, and then uses [`affectedStores`](./nsfetchrequest/affectedstores.md) or [`assign(_:to:)`](./nsmanagedobjectcontext/assign%28_,to%29.md) to specify the target store for data fetching or saving.
 
@@ -86,7 +86,7 @@ To synchronize data through CloudKit, apps need to use the same CloudKit contain
 let cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: gCloudKitContainerIdentifier)
 ```
 
-##### Share a Core Data object
+### Share a Core Data object
 
 Sharing a Core Data object between iCloud users includes creating a share ([`CKShare`](../CloudKit/ckshare.md)) from the owner side, accepting the sharing invitation from the participant side, and managing the share from both sides. Owners can stop their sharing or change the share permission. Participants can stop their participation. The sample app uses the following system sharing UI to implement the flow:
 
@@ -110,7 +110,7 @@ The sample app doesn’t interact with the system sharing UI for other purposes.
 
 > **Note**: For more information about Core Data and CloudKit sharing, see [Build apps that share data through CloudKit and Core Data](https://developer.apple.com/videos/play/wwdc2021/10015/) and [What’s new in CloudKit](https://developer.apple.com/videos/play/wwdc2021/10086).
 
-##### Detect relevant changes by consuming store persistent history
+### Detect relevant changes by consuming store persistent history
 
 When importing data from CloudKit, `NSPersistentCloudKitContainer` records the changes on Core Data objects in the store’s persistent history, and triggers remote change notifications (`.NSPersistentStoreRemoteChange`) so apps can keep their state up-to-date. The sample app observes the notification and performs the following actions in the notification handler:
 
@@ -146,7 +146,7 @@ The persistent history stays on the device as a part of the Core Data store, and
 
 For more information about persistent history processing, see [Consuming Relevant Store Changes](./consuming-relevant-store-changes.md).
 
-##### Remove duplicate data
+### Remove duplicate data
 
 In the CloudKit environment, duplicate data is sometimes inevitable because:
 
@@ -176,7 +176,7 @@ The following code shows how the app determines the deduplicated tags it can saf
 func containerEventChanged(_ notification: Notification)
 ```
 
-##### Implement a custom sharing flow
+### Implement a custom sharing flow
 
 Apps can implement a custom sharing flow when the system sharing UI is unavailable or doesn’t fit. The sample app performs the following tasks so users can share photos from watchOS:
 

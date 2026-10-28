@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didAdd servic
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didAddService:(CBService *) service error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`add(_:)`](../cbperipheralmanager/add%28_%29.md) method to publish a service to the local peripheral’s GATT database. If the service published successfully to the local database, the `error` parameter is `nil`. If unsuccessful, the `error` parameter provides the cause of the failure.
 

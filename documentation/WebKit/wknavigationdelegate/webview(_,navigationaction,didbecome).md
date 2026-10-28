@@ -23,7 +23,7 @@ optional func webView(_ webView: WKWebView, navigationAction: WKNavigationAction
 - (void) webView:(WKWebView *) webView navigationAction:(WKNavigationAction *) navigationAction didBecomeDownload:(WKDownload *) download;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to begin tracking download progress.
 

@@ -19,7 +19,7 @@ case temporary
 NSWritingToolsCoordinatorTextReplacementReasonTemporary
 ```
 
-#### Discussion
+## Discussion
 
 When the user interacts with a grammar issue and the UI is shown, in some cases the suggestion needs to be shown temporarily. Update your view’s text storage without animating the change.
 

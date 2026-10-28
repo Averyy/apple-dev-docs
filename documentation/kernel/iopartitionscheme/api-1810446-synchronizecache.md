@@ -10,11 +10,11 @@ virtual IOReturn synchronizeCache(
  IOService *client);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the cache synchronization.
 
-#### Overview
+## Overview
 
 Flush the cached data in the storage object, if any, synchronously.
 

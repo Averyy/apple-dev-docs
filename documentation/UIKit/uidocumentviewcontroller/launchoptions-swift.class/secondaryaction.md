@@ -27,7 +27,7 @@ var secondaryAction: UIAction? { get set }
 
 - [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 Set this property to add a secondary action to the document launch scene. If you set this property, the system adds a button for the secondary action to the title view.
 

@@ -27,7 +27,7 @@ func BNNSMatMul(_ transA: Bool, _ transB: Bool, _ alpha: Float, _ inputA: Unsafe
 int BNNSMatMul(const _Bool transA, const _Bool transB, const float alpha, const BNNSNDArrayDescriptor *inputA, const BNNSNDArrayDescriptor *inputB, const BNNSNDArrayDescriptor *output, void *workspace, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to perform the operation `C = alpha * op(A) * op(B)` where `op` transposes the corresponding matrix if the appropriate transpose parameter is `true`. The function broadcasts dimensions that are absent on either input matrix. The matrix multiplication is always on the final two indices of each operand.
 

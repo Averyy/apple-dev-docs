@@ -5,31 +5,31 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and macOS Catalina 10.15.4. The Xcode 11.4 release supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.4 requires a Mac running macOS Catalina 10.15.2 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 11.4 supports building and distributing macOS apps as a universal purchase. To distribute your macOS app as a universal purchase, specify the same bundle identifier as your iOS app in the Xcode template assistant when creating a new project. If you have an existing project, edit its bundle identifier in the Project Editor.
 - Universal purchase is enabled by default for new Mac Catalyst apps created in Xcode 11.4. When you create a new Mac Catalyst app, it will use the same bundle identifier as your iOS app.
 - Automatic signing in Xcode 11.4 supports building Mac Catalyst apps with a custom bundle identifier. You can edit the bundle identifier of your app using the Signing & Capabilities tab in the Project Editor. If you choose to build your Mac Catalyst app with a custom bundle identifier that doesn’t match your iOS app, you won’t be able to distribute the app as a universal purchase.
 
-###### Known Issues
+#### Known Issues
 
 - When targeting devices running iOS 13.3.1, tvOS 13.3.1, watchOS 6.1, or later using a free Apple Developer account, app extensions incorrectly count against the limit of three apps installed simultaneously. When this happens, Xcode reports an error: “The maximum number of apps for free development profiles has been reached.” (59264389) (FB7568073)
 
   **Workaround**: Delete apps signed with your free account from your device and also remove any associated provisioning profiles from the device using Xcode’s Devices window. If your app contains more than two app extensions, remove them to remain under the three app limit.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Creating an Objective-C category file by choosing File > New > File no longer creates a file that includes an import of the AppKit framework. (55977950) (FB7346800)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Xcode 11.4 turns the `-Watimport-in-framework-header` warning on by default. Using `@import` in framework headers is discouraged, because doing so requires all importers to use modules. (59222634) (FB7566046)
 
@@ -45,20 +45,20 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   #endif
   ```
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### Known Issues
+#### Known Issues
 
 - Assets localized in the asset catalog are now used at runtime, regardless of whether an associated `.lproj` directory exists. (49565973)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where previews of symbol images in the asset catalog had flipped baselines. (57540017) (FB7473079)
 - Asset Catalog `Contents.json` files ending in a newline will retain that newline when saved. (50630207) (FB6058998)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Build settings have a new evaluation operator, `default`, which you can use to specify the default value of a build setting if it evaluates to `empty` in the context of the evaluation. For example:
 
@@ -69,13 +69,13 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   If `$(SETTING)` is empty, this expression evaluates to ‘something’. The default value may itself be an expression that contains build setting evaluations. (57402718)
 - Building codeless kernel extensions with the new build system now requires you to set the `GENERATE_KERNEL_MODULE_INFO_FILE` build setting to `NO`. (57247534)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a link failure that could occur when building for testing while using bitcode. (57857082)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - Xcode 11.4 adds support to copy and paste breakpoints in the Breakpoint Navigator. (11723352)
 - The view debugger now presents layout guides ([`UILayoutGuide`](../UIKit/uilayoutguide.md), [`NSLayoutGuide`](../AppKit/nslayoutguide.md)) and their referencing constraints. (20387325)
@@ -83,7 +83,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - The exception reason now surfaces as an editor annotation. You can inspect the Exception object in Variables View and find the backtrace of the original uncaught exception, if any, in the Debug Navigator. (8045587)
 - You can now use the Terminal for standard I/O, instead of Xcode’s Console. Make this choice using the Scheme Editor’s Options tab. (33552211)
 
-###### Known Issues
+#### Known Issues
 
 - The Build & Run action may fail to launch a watchOS app on series 2 and series 3 watch simulators when attempting to deploy soon after booting the simulator. (60281738)
 
@@ -92,23 +92,23 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 
   **Workaround**: If you find that diagnostics you enabled, such as Malloc Stack Logging, aren’t working, please check the scheme editor because the relevant checkboxes may have spontaneously become unchecked. Re-enable the desired preference. Xcode will recover in a few minutes and save the selections you’ve made.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - View outlines in the view debugger are now more visible. (44861893) (FB5361403)
 
-##### Devices
+### Devices
 
-###### Known Issues
+#### Known Issues
 
 - Xcode 11.4 doesn’t work with devices running iOS 13.4 beta 1 and beta 2. (60055806)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Icons and names for devices running iOS 13.0 reflect the correct OS version in the Devices and Simulators window. (55044395)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - State restoration in Instruments now depends on the scope selection. As a result, you may need to reconfigure and re-save custom templates in Instruments 11.4. (37746235)
 - Fixed an issue where removing one run from Instruments removed all of them. (53451989)
@@ -118,16 +118,16 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - Instruments now properly tracks processes that exited during “All Processes” recordings. (59072482)
 - Fixed an issue where the Allocations instrument wouldn’t record on watchOS devices. (59268958) (FB7568204)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Added Pointer Button property to [`UITapGestureRecognizer`](../UIKit/uitapgesturerecognizer.md) to control which mouse events trigger the gesture recognizer to succeed. (59330235)
 - Added new Pointer Interaction property on [`UIButton`](../UIKit/uibutton.md). (59337826)
 - [`UIDatePicker`](../UIKit/uidatepicker.md) has a new Style property, and will use a new compact style by default in Mac Catalyst apps on macOS 10.15.4. (56384950)
 - Added dynamic system gray colors to inspector color pickers. (55403376) (FB7281404)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that prevented the color picker panel from having any effect when a text field in the inspector was focused. (56067005) (FB7358220)
 - Added Scroll Types property to [`UIPanGestureRecognizer`](../UIKit/uipangesturerecognizer.md) to control which mouse events trigger the gesture recognizer to succeed. (59330150)
@@ -167,29 +167,29 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - [`UIDatePicker`](../UIKit/uidatepicker.md) compact style is available. (58963416)
 - Removed inspector support for configuring [`NSTableColumn`](../AppKit/nstablecolumn.md) header cell fonts to match the API. You can configure header cell fonts by subclassing [`NSTableHeaderCell`](../AppKit/nstableheadercell.md) and overriding the `font` property in code. (23664679) (FB5630174)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - The Metal Frame Debugger now supports iOS and tvOS simulators. (54273848)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The SIMD-group functions (see section 6.8.2 of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)) compile for iOS. (59338106)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - The Crashes Organizer now shows crash logs for universal purchase macOS apps. (57607495)
 
-##### Playgrounds
+### Playgrounds
 
-###### Known Issues
+#### Known Issues
 
 - SwiftUI views aren’t rendered by Quick Look previews or inline result views. (59908350)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Inline results no longer obscure lines below them. (35682773) (FB5729414)
 - Automatic code suggestions are more reliable for Playgrounds embedded within projects. (59411425)
@@ -197,9 +197,9 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - iOS live views now use the system background color by default. (54516552)
 - Improved reliability of issue annotations in Playground source code. (43793952) (FB5423160)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Xcode Previews now saves the zoom and pin state of the canvas. (49168788)
 - You can now turn off the device bezels in Xcode Previews using the Editor > Previews menu. (48676867)
@@ -208,7 +208,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - Selecting a SwiftUI preview in code now highlights the corresponding preview in the canvas, and vice versa. (56412209)
 - Xcode Previews now supports previewing iPad applications brought to the Mac. (41416222)
 
-###### Known Issues
+#### Known Issues
 
 - On-device debugging of SwiftUI Previews may not work for Series 2 and Series 3 watches because the preview is built for the wrong architecture. (59909746)
 
@@ -220,7 +220,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 
   **Workaround**: Use [`Group`](../SwiftUI/group.md) to set Preview properties.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The Xcode Previews canvas now surfaces better accessibility information for selectable views. (55538520)
 - Fixed an issue where the popover SwiftUI inspector could open empty. (58064269)
@@ -231,26 +231,26 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 - Xcode Previews now correctly builds previews in frameworks that depend on other frameworks in the project. (56956786) (FB7431181)
 - Fixed a crash in Xcode Previews that could occur when using the inspectors. (55933725)
 
-##### Project Navigator
+### Project Navigator
 
-###### Known Issues
+#### Known Issues
 
 - When restoring a workspace, the Canvas and Assistant checkboxes are sometimes unexpectedly disabled in the Editor Options menu. (59962740)
 
   **Workaround**: Use the Canvas and Assistant items in the Editor menu, or their respective keyboard shortcuts, to toggle the visibility of these views.
 
-##### Server
+### Server
 
-###### Known Issues
+#### Known Issues
 
 - An Xcode Server bot loses authentication when a user clicks the “Replace Repositories” button under the Repositories tab. (59066142)
 
   **Workaround**: Either don’t click “Replace Repositories”, or reauthenticate after doing so.
 - Users can no longer select which branch to use for integrations under the Repositories tab of an Xcode Server bot. (59068222, 58615215)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Simulator supports pointer capture for iPadOS. When pointer capture is enabled, any events for connected mice or trackpads are sent to the simulator instead of to macOS. (55401573)
 - Dragging and dropping an SSL certificate (CER or PEM file) will now install the certificate into the simulated device’s trusted root store. (56225826)
@@ -290,7 +290,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   ```
 - Simulator has a new UI that streamlines working with simulated devices. Simulated device windows have a standard title bar, with buttons for common tasks. App-level settings are now available in the Preferences window. (57715023, 57380865, 58013098)
 
-###### Known Issues
+#### Known Issues
 
 - Pointer capture isn’t supported over a Screen Sharing session. If you enable pointer capture all input will be blocked and you will be unable to exit capturing mode. Capture mode monitors for HID events, so any system that injects CGEvents directly isn’t usable with Simulator’s capturing support. (59411574)
 
@@ -300,15 +300,15 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 
   **Workaround**: Uninstall the third-party software.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - CoreSimulator now cleans up temporary files generated by Interface Builder during the build process. (53568836)
 - When multiple GPUs are installed, Simulator assigns each booted simulator to one of the available GPUs. (50608554)
 - Fixed an issue that could cause certain kinds of IOSurfaces in simulators to corrupt memory or be created with the wrong memory protection. (52899754)
 
-##### Siri Intents
+### Siri Intents
 
-###### Known Issues
+#### Known Issues
 
 - Xcode 11.4 fails to generate source files from your intent definition files when using the Legacy Build System. (60591035)
 
@@ -324,43 +324,43 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   xcrun intentbuilderc help
   ```
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - Improved stability of core source-control functionality, and reduced memory footprint related issues. (54765574)
 - Split functionality of “Fetch and Refresh Status” menu item into two separate menu items to separate fetching and refreshing status. (54326241)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that prevented adding a GitHub account. (59205637)
 
-###### Deprecations
+#### Deprecations
 
 - Personal access tokens are now the default method of authentication for GitHub.com Source Control accounts in Xcode. Newly added accounts will require a personal access token and you may need to update existing accounts with a personal access token after July 1, 2020.  For more information, see [Deprecated APIs and authentication](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api). (59388185)
 
-##### Source Editor
+### Source Editor
 
-###### Resolved Issues
+#### Resolved Issues
 
 - A rename refactor of a Swift or Objective-C object correctly renames the file that contains the object. (32408445)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Remote Swift packages with tools version 5.2 and above no longer resolve package dependencies that are only used in their test targets, improving performance and reducing the chance of dependency version conflicts. (56925017)
 - Swift Package Manager uses a new strategy to resolve package dependencies that significantly improves the quality of error messages and performance in complex package graphs. (45371461)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - iOS, tvOS, or watchOS apps with a Swift Package that builds a dynamic library can be submitted to the App Store. (55564324) (FB7303066)
 - You can now use Swift-only [XCTest](../XCTest/XCTest.md) APIs (such as [`XCTUnwrap(_:_:file:line:)`](../XCTest/xctunwrap%28_,_,file,line%29.md)) when building a package using command-line SwiftPM. (51959291)
 - You can import `libxml2`, `libxslt`, and `libexslt` modules in both Swift package targets and regular Xcode targets, without any additional search paths. (52043828)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Type checking is now more precise.  In many situations, this precision allows code completion to be 1.2 to 1.6 times faster for large files in Xcode 11.4, compared to Xcode 11.3.1.
 - Code completion of implicit members is now available for incomplete dictionary literals and incomplete ternary expressions.
@@ -478,7 +478,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   }
   ```
 
-##### Known Issues
+### Known Issues
 
 - If an Objective-C class is defined with the `objc_runtime_name` attribute and imported into Swift, Swift code may crash when trying to access the class. (60888835)
 
@@ -519,7 +519,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   }
   ```
 
-##### Resolved Issues
+### Resolved Issues
 
 - The compiler now correctly strips argument labels from function references used with the `as` operator in a function call. As a result, you can now use the `as` operator to disambiguate a call to a function with argument labels:
 
@@ -547,9 +547,9 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   (foo as Magic)(5)
   ```
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - To enable test timeout behavior from `xcodebuild`, or to override the corresponding setting in the test plan, pass the `-test-timeouts-enabled` option. To configure the default execution time allowance for an individual test when timeouts are enabled, pass the `-default-test-execution-time-allowance` option. To enforce an absolute cap on the amount of time a test can run (if it requests additional time via the [`executionTimeAllowance`](../XCTest/xctestcase/executiontimeallowance.md) API), pass the `-maximum-test-execution-time-allowance` option. Refer to the `xcodebuild` man page (`man xcodebuild`) for more information. (58413928)
 - You can enable test timeouts through the “Test Timeouts” option in the test plan. You can override this value from the command-line through the `-test-timeouts-enabled` option to `xcodebuild`. (58125818)
@@ -584,7 +584,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
   The [`XCTSkipUnless(_:_:file:line:)`](../XCTest/xctskipunless%28_,_,file,line%29.md) API is similar to [`XCTSkipIf(_:_:file:line:)`](../XCTest/xctskipif%28_,_,file,line%29.md) but skips if the provided expression is false instead of true, and the [`XCTSkip`](../XCTest/xctskip-swift.struct.md) API can be used to skip unconditionally. (13696693)
 - [XCTest](../XCTest/XCTest.md) now allows individual tests to time out if they exceed a configurable duration of time. If timeouts are enabled, either via a test-plan option or via an `xcodebuild` command-line option, a test will be given a default allowance within which it must complete. Tests that exceed this length of time will fail, and a spindump of the test process will be attached to the test in the test report. If the test needs additional time to run, it can request that time via the [`executionTimeAllowance`](../XCTest/xctestcase/executiontimeallowance.md) property on [`XCTestCase`](../XCTest/xctestcase.md). For more information, refer to the documentation in `XCTestCase.h`. (12584283)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [XCTest](../XCTest/XCTest.md) now correctly handles large wait-timeout values passed to [`XCTWaiter`](../XCTest/xctwaiter.md) “wait” APIs, such as `DBL_MAX`. (56503613)
 - Source editor test diamonds for tests in Swift packages now appear automatically upon opening the package in Xcode. (51105554)

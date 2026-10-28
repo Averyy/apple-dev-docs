@@ -19,7 +19,7 @@ var allowsTextAttachmentView: Bool { get set }
 @property BOOL allowsTextAttachmentView;
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the text attachment tries to use a text attachment view returned by [`viewProvider(for:location:textContainer:)`](../nstextattachmentlayout/viewprovider%28for,location,textcontainer%29.md). Default is `true`.
 

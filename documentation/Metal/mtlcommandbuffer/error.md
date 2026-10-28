@@ -29,7 +29,7 @@ var error: (any Error)? { get }
 
 - [Preparing your Metal app to run in the background](../preparing-your-metal-app-to-run-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 You typically check this property during development to get more information about a runtime issue. The property remains `nil` unless the GPU can’t successfully run the command buffer.
 

@@ -21,7 +21,7 @@ Destroys a single-precision multichannel biquadratic filter setup object.
 extern void vDSP_biquadm_DestroySetup(vDSP_biquadm_Setup __setup);
 ```
 
-#### Discussion
+## Discussion
 
 This function frees all resources associated with a biquadratic filter setup object.
 

@@ -24,7 +24,7 @@ case cfsocks4ErrorUnknownStatusCode
 kCFSOCKS4ErrorUnknownStatusCode
 ```
 
-#### Discussion
+## Discussion
 
 This error is specific to SOCKS4.
 

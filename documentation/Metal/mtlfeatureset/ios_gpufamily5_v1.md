@@ -22,7 +22,7 @@ case iOS_GPUFamily5_v1
 MTLFeatureSet_iOS_GPUFamily5_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A12 devices running iOS 12.
 

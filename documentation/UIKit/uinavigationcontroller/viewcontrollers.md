@@ -23,7 +23,7 @@ var viewControllers: [UIViewController] { get set }
 @property (nonatomic, copy) NSArray<__kindof UIViewController *> * viewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 The root view controller is at index `0` in the array, the back view controller is at index `n-2`, and the top controller is at index `n-1`, where `n` is the number of items in the array.
 

@@ -30,7 +30,7 @@ func handle(intent: INSearchForPhotosIntent) async -> INSearchForPhotosIntentRes
 - (void) handleSearchForPhotos:(INSearchForPhotosIntent *) intent completion:(void (^)(INSearchForPhotosIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must perform the search and return the number of matching photos in the response. If you aren’t to perform the search, return a response object whose result code indicates the reason for the failure. Upon returning a successful response, Siri launches your display the photos.
 

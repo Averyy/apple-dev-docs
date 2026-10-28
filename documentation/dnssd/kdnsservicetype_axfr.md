@@ -23,7 +23,7 @@ var kDNSServiceType_AXFR: Int { get }
 kDNSServiceType_AXFR
 ```
 
-#### Discussion
+## Discussion
 
 Transfer zone of authority.
 

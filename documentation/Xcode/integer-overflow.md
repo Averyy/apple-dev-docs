@@ -5,11 +5,11 @@
 
 Detects overflow in arithmetic.
 
-#### Overview
+## Overview
 
 Overflows result in undefined behavior. Use this check to detect overflows in addition, subtraction, multiplication, and division. Available in Xcode 9 and later.
 
-##### Signed addition overflow in C
+### Signed addition overflow in C
 
 In the following code, the `x` variable has the maximum `int32_t` value before the addition, and the result of the addition overflows `x`, which the optimizer may not handle in a predictable way:
 
@@ -20,7 +20,7 @@ x += 1; // Error: the add result can't fit in x
 
 > **Note**: With the exception of the signed division check, enabling the `-fwrapv` compiler flag disables UBSan overflow checks.
 
-###### Solution
+#### Solution
 
 One way to address signed overflow is to use larger types.
 

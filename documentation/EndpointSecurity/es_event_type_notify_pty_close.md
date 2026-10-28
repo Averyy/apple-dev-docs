@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_PTY_CLOSE: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_PTY_CLOSE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`pty_close`](./es_events_t/pty_close.md), which has the type [`es_event_pty_close_t`](./es_event_pty_close_t.md).
 

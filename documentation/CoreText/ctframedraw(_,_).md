@@ -25,7 +25,7 @@ func CTFrameDraw(_ frame: CTFrame, _ context: CGContext)
 extern void CTFrameDraw(CTFrameRef frame, CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 If both the frame and the context are valid, the frame is drawn in the context. This call can leave the context in any state and does not flush it after the draw operation.
 

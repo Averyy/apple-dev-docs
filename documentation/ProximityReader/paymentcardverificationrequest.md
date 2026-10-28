@@ -17,7 +17,7 @@ A request to verify details for a contactless payment card.
 struct PaymentCardVerificationRequest
 ```
 
-#### Overview
+## Overview
 
 Create a `PaymentCardVerificationRequest` object to verify details of a person’s payment card before performing a transaction with that card. For example, you might use a verification request to make sure the person’s card supports a specific currency. After creating a request object, pass it to the [`readPaymentCard(_:)`](./paymentcardreadersession/readpaymentcard%28_%29-hr97.md) or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](./paymentcardreadersession/readpaymentcard%28_,vasrequest,stoponvasresult%29.md) method of your session to read the card details.
 

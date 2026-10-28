@@ -19,7 +19,7 @@ let kSpeechSyncCallBack: CFString
 const CFStringRef kSpeechSyncCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined synchronization callback function, whose syntax is described in [`SpeechSyncProcPtr`](./speechsyncprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the synchronization callback function.
 

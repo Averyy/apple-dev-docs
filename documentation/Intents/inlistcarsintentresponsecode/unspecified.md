@@ -23,7 +23,7 @@ case unspecified
 INListCarsIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 You shouldn’t use this response code directly, and doing so results in an error.
 

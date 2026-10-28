@@ -5,7 +5,7 @@
 
 Focus on a part of an image by applying Gaussian blur and gradient masks.
 
-#### Overview
+## Overview
 
 You can selectively blur areas of an image using [`maskedVariableBlur()`](./cifilter-swift.class/maskedvariableblur%28%29.md) filter.
 
@@ -18,7 +18,7 @@ You specify the region to blur by applying a mask image; the shape and values of
 3. Composite the gradients into a mask.
 4. Apply Core Image’s [`maskedVariableBlur()`](./cifilter-swift.class/maskedvariableblur%28%29.md) filter to the original image, inputting the created mask.
 
-##### Focusing on a Strip of the Image
+### Focusing on a Strip of the Image
 
 You can build your mask in any shape, but the general strategy remains the same: leave the mask transparent where you want the original image to stay sharp and focused. This section covers focusing on a horizontal strip.
 
@@ -54,7 +54,7 @@ bottomGradient.point1 = CGPointMake(0, 0.6 * h);
 bottomGradient.color1 = [CIColor colorWithRed:0 green:1 blue:0 alpha:0];
 ```
 
-##### Creating a Mask by Compositing Linear Gradients
+### Creating a Mask by Compositing Linear Gradients
 
 To create a mask that dilineates where and how strong a blur to apply, combine the two linear gradients.
 
@@ -70,7 +70,7 @@ gradientMask.backgroundImage = bottomGradient.outputImage;
 
 The resulting mask is now ready to be applied as part of the [`maskedVariableBlur()`](./cifilter-swift.class/maskedvariableblur%28%29.md) filter.
 
-##### Focusing on a Circular Region
+### Focusing on a Circular Region
 
 In order to focus on a circular region of an image, you can create a Core Image [`radialGradient()`](./cifilter-swift.class/radialgradient%28%29.md) filter.
 
@@ -100,7 +100,7 @@ This yields a circular mask to use with the [`maskedVariableBlur()`](./cifilter-
 
 ![Circular gradient mask for blurring out all pixels except those in a circular region](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2959646@2x.png)
 
-##### Masking the Blurred Image to Apply Selective Focus
+### Masking the Blurred Image to Apply Selective Focus
 
 The final step is applying your choice of mask with the input image. The [`maskedVariableBlur()`](./cifilter-swift.class/maskedvariableblur%28%29.md) built-in [`CIFilter`](./cifilter-swift.class.md) accomplishes this task with the following input parameters:
 

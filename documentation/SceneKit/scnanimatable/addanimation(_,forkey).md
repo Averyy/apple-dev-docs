@@ -26,7 +26,7 @@ func addAnimation(_ animation: any SCNAnimationProtocol, forKey key: String?)
 - (void) addAnimation:(id<SCNAnimation>) animation forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Newly added animations begin executing after the current run loop cycle ends.
 

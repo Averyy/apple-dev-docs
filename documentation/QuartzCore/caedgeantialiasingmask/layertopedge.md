@@ -22,7 +22,7 @@ static var layerTopEdge: CAEdgeAntialiasingMask { get }
 kCALayerTopEdge
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the top edge of the receiver’s content should be antialiased.
 

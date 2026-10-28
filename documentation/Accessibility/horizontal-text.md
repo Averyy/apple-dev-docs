@@ -5,7 +5,7 @@
 
 Lay out vertical text horizontally in your app when people turn on the Prefer Horizontal Text setting.
 
-#### Overview
+## Overview
 
 People use the Prefer Horizontal Text setting to specify a preference for laying out text horizontally in languages that support vertical text. By default, the setting is off, which allows languages that support vertical text to lay out text vertically. A person can turn on the setting to indicate that they prefer a horizontal text layout where possible.
 

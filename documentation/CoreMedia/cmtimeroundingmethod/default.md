@@ -25,7 +25,7 @@ static var `default`: CMTimeRoundingMethod { get }
 kCMTimeRoundingMethod_Default
 ```
 
-#### Discussion
+## Discussion
 
 This value is equal to [`CMTimeRoundingMethod.roundHalfAwayFromZero`](./roundhalfawayfromzero.md).
 

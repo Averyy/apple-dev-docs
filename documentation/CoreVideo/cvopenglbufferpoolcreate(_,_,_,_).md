@@ -21,7 +21,7 @@ func CVOpenGLBufferPoolCreate(_ allocator: CFAllocator?, _ poolAttributes: CFDic
 extern CVReturn CVOpenGLBufferPoolCreate(CFAllocatorRef allocator, CFDictionaryRef poolAttributes, CFDictionaryRef openGLBufferAttributes, CVOpenGLBufferPoolRef*poolOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See[Core Video Constants](./core-video-constants.md) for possible values.
 

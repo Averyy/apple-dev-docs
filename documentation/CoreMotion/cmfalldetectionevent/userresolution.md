@@ -19,7 +19,7 @@ enum UserResolution
 enum CMFallDetectionEventUserResolution : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The resolution of an event reflects the user’s action in response to the fall detection notification. For example, the user might tap a button to respond inside the notification, or press the digital crown to dismiss the notification.
 

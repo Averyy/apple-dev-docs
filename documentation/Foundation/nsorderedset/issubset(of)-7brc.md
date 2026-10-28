@@ -25,7 +25,7 @@ func isSubset(of other: NSOrderedSet) -> Bool
 - (BOOL) isSubsetOfOrderedSet:(NSOrderedSet<id> *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if every object in the receiving set is also present in `other`, otherwise [`false`](../../Swift/false.md).
 

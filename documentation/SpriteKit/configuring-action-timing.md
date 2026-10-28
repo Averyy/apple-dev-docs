@@ -5,11 +5,11 @@
 
 Time an action in a scene, by adding or modifying timing properties, or cancel an action.
 
-#### Overview
+## Overview
 
 By default, an action with a duration applies its changes linearly over the duration you specify. However, you can adjust the timing of actions.
 
-##### Add or Change Properties to Adjust the Timing of an Action
+### Add or Change Properties to Adjust the Timing of an Action
 
 These options are available:
 
@@ -21,7 +21,7 @@ These options are available:
 
 Because there are multiple rates involved in an animation’s speed, SpriteKit finds all the rates that apply to the action and multiplies them to determine the final rate.
 
-##### Cancel Actions that Should Be Stopped
+### Cancel Actions that Should Be Stopped
 
 To cancel actions that a node is running, call its [`removeAllActions()`](./sknode/removeallactions%28%29.md) method. All actions are removed from the node immediately. If a removed action had a duration, any changes it already made to the node remain intact, but further changes are not executed.
 

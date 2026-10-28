@@ -24,11 +24,11 @@ class func exclusionBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) exclusionBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the exclusion-blend mode filter to an image. The effect calculates the brightness value for both images and subtracts the smaller value, resulting in a darker image.
 

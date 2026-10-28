@@ -23,7 +23,7 @@ var extensionContext: NSExtensionContext? { get }
 @property (nonatomic, strong, readonly, nullable) NSExtensionContext * extensionContext;
 ```
 
-#### Discussion
+## Discussion
 
 The view controller can check this property to see if it participates in an extension request. If no extension context is set for the current view controller, the system walks up the view controller hierarchy to find a parent view controller that has a non `nil` `extensionContext` value.
 

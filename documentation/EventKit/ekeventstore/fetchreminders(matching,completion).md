@@ -28,11 +28,11 @@ func fetchReminders(matching predicate: NSPredicate, completion: @escaping ([EKR
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 A value that represents the asynchronous fetch request. To cancel a fetch request before it completes, pass this value to [`cancelFetchRequest(_:)`](./cancelfetchrequest%28_%29.md).
 
-#### Discussion
+## Discussion
 
 Only committed reminders are included in the results. To include reminders saved using [`save(_:commit:)`](./save%28_,commit%29.md) with the `commit` parameter set to [`false`](../../Swift/false.md), call [`commit()`](./commit%28%29.md) first.
 

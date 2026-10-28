@@ -13,7 +13,7 @@
 kINQUIRY_Page83_PageCode = 0x83
 ```
 
-#### Discussion
+## Discussion
 
 Page Code 83h.
 

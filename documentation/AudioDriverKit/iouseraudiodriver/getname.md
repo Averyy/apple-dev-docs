@@ -15,11 +15,11 @@ Gets the name of the driver.
 OSSharedPtr<OSString> GetName();
 ```
 
-#### Return Value
+## Return Value
 
 A `OSSharedPtr` to an [`OSString`](../../DriverKit/osstring.md) containing the driver name.
 
-#### Discussion
+## Discussion
 
 Getting the name synchronizes by using the work queue created by the object.
 

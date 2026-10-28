@@ -15,7 +15,7 @@ A text string that a person provides in response to the notification.
 var userText: String?
 ```
 
-#### Discussion
+## Discussion
 
 This property contains text for notifications that support the [`AccessoryNotification.Action.ActionType.textInput(placeholder:)`](../accessorynotification/action/actiontype/textinput%28placeholder%29.md) action type.
 

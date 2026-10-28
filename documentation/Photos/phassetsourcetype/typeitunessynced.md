@@ -24,7 +24,7 @@ static var typeiTunesSynced: PHAssetSourceType { get }
 PHAssetSourceTypeiTunesSynced
 ```
 
-#### Discussion
+## Discussion
 
 iTunes-synced assets cannot be edited or deleted.
 

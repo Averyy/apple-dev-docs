@@ -6,7 +6,7 @@
 
 A 1-bit value indicating the time’s sign.
 
-#### Overview
+## Overview
 
 If bit is set to `1`, the timecode record value is negative.
 

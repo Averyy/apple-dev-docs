@@ -21,7 +21,7 @@ The set of sharp and flat symbols for the notes.
 struct KeySignature
 ```
 
-#### Overview
+## Overview
 
 A key signature pairs a root note, [`tonic`](./keysignature/tonic.md) with a [`mode`](./keysignature/mode.md), major or minor, to describe the harmonic center of a section of audio.
 

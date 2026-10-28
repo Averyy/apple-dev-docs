@@ -11,11 +11,11 @@ Releases all packets held in the free packet queue.
 virtual UInt32 releaseFreePackets();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets queued and released.
 
-#### Overview
+## Overview
 
 The free packet queue is not protected by a lock. This function must be called in a single-threaded manner with respect to all calls to freePacket() with the kDelayFree option set.
 

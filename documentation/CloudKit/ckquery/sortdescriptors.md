@@ -25,7 +25,7 @@ var sortDescriptors: [NSSortDescriptor]? { get set }
 @property (copy, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 You can add sort descriptors to a query and change them later as necessary. Each sort descriptor contains a field name of the intended record type and information about whether to sort values in that field in ascending or descending order. The default value of this property is `nil`, which means that records return in an indeterminate order.
 

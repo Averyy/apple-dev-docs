@@ -13,7 +13,7 @@
 kIOHIDElementTypeInput_Button = 2
 ```
 
-#### Discussion
+## Discussion
 
 One bit input data field.
 

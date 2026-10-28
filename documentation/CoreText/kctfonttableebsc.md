@@ -23,7 +23,7 @@ var kCTFontTableEBSC: Int { get }
 kCTFontTableEBSC
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for embedded bitmap scaling.
 

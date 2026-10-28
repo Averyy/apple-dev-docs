@@ -24,7 +24,7 @@ case notifyWhenFinished
 CHHapticEngineStoppedReasonNotifyWhenFinished
 ```
 
-#### Discussion
+## Discussion
 
 Restart the engine before starting another pattern player.
 

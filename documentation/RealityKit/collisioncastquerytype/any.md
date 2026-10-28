@@ -20,7 +20,7 @@ Report one hit.
 case any
 ```
 
-#### Discussion
+## Discussion
 
 This query type typically executes fastest, but doesn’t guarantee anything about which hit it returns. If you need the hit closest to the origin of the cast, use [`CollisionCastQueryType.nearest`](./nearest.md) instead.
 

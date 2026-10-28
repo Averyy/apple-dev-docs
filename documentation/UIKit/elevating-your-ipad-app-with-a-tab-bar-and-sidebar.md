@@ -5,7 +5,7 @@
 
 Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
 
-#### Overview
+## Overview
 
 In iPadOS, the tab bar floats over your content at the top, giving you more space for your app’s content. Additionally, because the tab bar shares space with the navigation bar, it places your tabs closer to your app’s other controls.
 
@@ -13,7 +13,7 @@ In iPadOS, the tab bar floats over your content at the top, giving you more spac
 
 > **SwiftUI equivalent**:  For information about adopting this tab bar appearance in SwiftUI, read [Enhancing your app’s content with tab navigation](../SwiftUI/enhancing-your-app-content-with-tab-navigation.md).
 
-##### Create a tab bar
+### Create a tab bar
 
 Create a [`UITabBarController`](./uitabbarcontroller.md) and assign an array of [`UITab`](./uitab.md) objects to its [`tabs`](./uitabbarcontroller/tabs.md) property. To create a tab, call [`init(title:image:identifier:viewControllerProvider:)`](./uitab/init%28title,image,identifier,viewcontrollerprovider%29.md). In the closure, return the view controller your app presents when someone selects the tab. If you use SF Symbols for your tab’s image, be sure to select the outline variant. The system automatically selects the correct variant (outline or filled) based on the context. Additionally, you can change a tab’s properties, such as [`title`](./uitab/title.md) or [`image`](./uitab/image.md), at runtime, and the system automatically updates its appearance.
 
@@ -66,7 +66,7 @@ In addition to configuring a tab with a system-provided symbol for search, `UISe
 
 The iPad tab bar supports an unlimited number of items. If there isn’t enough room to display all the tabs, the system collapses any tabs that can’t fit onscreen, and lets people scroll through them. However, consider limiting your tabs to just those that fit in the tab bar. This ensures that people can access key parts of your app with one tap.
 
-##### Integrate the tab bar and sidebar
+### Integrate the tab bar and sidebar
 
 Although both tab bars and sidebars play a similar navigation role in iPadOS apps, they have different strengths. A tab bar is always available and represents the key parts of your app. A sidebar provides a richer collection of possible destinations; however, people typically need to navigate back to the sidebar to select a different option.
 
@@ -89,7 +89,7 @@ sidebar.isHidden = false
 
 By default, the system presents the sidebar in landscape orientation and hides it in portrait orientation; however, people can toggle between the tab bar and sidebar in either orientation. You can also programmatically show and hide the sidebar by setting its [`isHidden`](./uitabbarcontroller/sidebar-swift.class/ishidden.md) property.
 
-##### Build a hierarchy of items for the sidebar
+### Build a hierarchy of items for the sidebar
 
 You can use [`UITabGroup`](./uitabgroup.md) to define a section of items in the sidebar. Provide an array of tabs for the section’s content and a view controller to display when someone selects the section from the tab bar.
 
@@ -135,7 +135,7 @@ The tab bar displays a tab group as a single tab item, and the sidebar displays 
 
 You can nest a [`UITabGroup`](./uitabgroup.md) inside another [`UITabGroup`](./uitabgroup.md) to create a deeper hierarchy in the sidebar; however, consider limiting your app to two, or at most three, layers. Also, you can dynamically change a tab group’s content at runtime by modifying its [`children`](./uitabgroup/children.md) property.
 
-##### Add actions to the sidebar
+### Add actions to the sidebar
 
 You can add actions to the sidebar by setting a tab group’s [`sidebarActions`](./uitabgroup/sidebaractions.md) property. These actions function like buttons that you place inside the tab group.
 
@@ -157,7 +157,7 @@ To support swipe actions or context menus, assign a delegate to your sidebar tha
 
 To support drag-and-drop operations, assign a delegate to your tab bar that adopts the [`UITabBarControllerDelegate`](./uitabbarcontrollerdelegate.md) protocol, and implement the [`tabBarController(_:tab:operationForAcceptingItemsFrom:)`](./uitabbarcontrollerdelegate/tabbarcontroller%28_,tab,operationforacceptingitemsfrom%29.md) and [`tabBarController(_:tab:acceptItemsFrom:)`](./uitabbarcontrollerdelegate/tabbarcontroller%28_,tab,acceptitemsfrom%29.md) methods.
 
-##### Enable customization
+### Enable customization
 
 People can customize the content in both the tab bar and sidebar using a system-provided button that puts the bars into edit mode. While editing, people can:
 
@@ -212,7 +212,7 @@ You can also programmatically set the order of items in a tab group using its [`
 
 > ❗ **Important**:  When someone customizes the tab bar or sidebar, the system persists those changes. The next time your app launches, it sets each tab’s [`isHidden`](./uitab/ishidden.md) and [`displayOrderIdentifiers`](./uitabgroup/displayorderidentifiers.md) properties to the customized values. The system assigns these values when it adds the tab to the [`UITabBarController`](./uitabbarcontroller.md). If your app programmatically sets the [`isHidden`](./uitab/ishidden.md) or [`displayOrderIdentifiers`](./uitabgroup/displayorderidentifiers.md) properties before adding the tabs, the customized values override the values your app assigns. If, however, you change the values after adding the tabs, your values override the customizations.
 
-##### Use the tab bar and sidebar on other platforms
+### Use the tab bar and sidebar on other platforms
 
 The [`UITab`](./uitab.md) API is available on all platforms that support UIKit. Consider using this API to create tab bars in your UIKit-based projects in iOS, Mac Catalyst, tvOS, and visionOS.
 

@@ -23,7 +23,7 @@ init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: In
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 Pass `nil` to `byteCountPerRow` to have the function calculate the bytes per row as `width * MemoryLayout<T.ComponentType>.stride * T.channelCount`.
 

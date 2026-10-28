@@ -19,7 +19,7 @@ Alternate names you use to refer to the contact.
 var names: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Specify each alternate name as a separate string in the array.
 

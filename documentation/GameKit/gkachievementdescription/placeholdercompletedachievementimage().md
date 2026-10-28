@@ -40,11 +40,11 @@ class func placeholderCompletedAchievementImage() -> NSImage
 + (NSImage *) placeholderCompletedAchievementImage;
 ```
 
-#### Return Value
+## Return Value
 
 A common image that represents a completed achievement.
 
-#### Discussion
+## Discussion
 
 When the player completes the achievement, you can display this image as a placeholder until GameKit downloads the achievement’s image that you upload to App Store Connect.
 

@@ -25,7 +25,7 @@ static var multiHop: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 This error is reserved for future use.
 

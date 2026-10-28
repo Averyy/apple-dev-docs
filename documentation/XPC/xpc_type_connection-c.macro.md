@@ -21,7 +21,7 @@ A type that represents a connection to a named service.
 #define XPC_TYPE_CONNECTION
 ```
 
-#### Discussion
+## Discussion
 
 This connection is bidirectional and can both send and receive messages. A connection carries the credentials of the remote service provider.
 

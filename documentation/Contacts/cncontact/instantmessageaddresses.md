@@ -32,7 +32,7 @@ var instantMessageAddresses: [CNLabeledValue<CNInstantMessageAddress>] { get }
 @property (atomic, copy, readonly) NSArray<CNLabeledValue<CNInstantMessageAddress *> *> * instantMessageAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNInstantMessageAddress`](../cninstantmessageaddress.md) value.
 

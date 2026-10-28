@@ -20,7 +20,7 @@ The underlying type of the column.
 var type: MLDataValue.ValueType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to determine the underlying type of the column. Then use a corresponding property or method to create an [`MLDataColumn`](../mldatacolumn.md) of the untyped column. For example, if [`type`](./type.md) is equal to [`MLDataValue.ValueType.double`](../mldatavalue/valuetype/double.md), then use the [`MLUntypedColumn`](../mluntypedcolumn.md) [`doubles`](./doubles.md) property.
 

@@ -24,11 +24,11 @@ convenience init(toSeparateFrom agents: [GKAgent], maxDistance: Float, maxAngle:
 + (instancetype) goalToSeparateFromAgents:(NSArray<GKAgent *> *) agents maxDistance:(float) maxDistance maxAngle:(float) maxAngle;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 The `agents` array can safely include the agent(s) affected by the goal—an agent pursuing this goal will ignore itself in the array. Therefore, you can use a single goal created with this method to cause an entire group of agents to mutually avoid one another.
 

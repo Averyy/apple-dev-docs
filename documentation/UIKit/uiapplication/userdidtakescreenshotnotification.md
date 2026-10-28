@@ -24,7 +24,7 @@ class let userDidTakeScreenshotNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationUserDidTakeScreenshotNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t contain a `userInfo` dictionary. This notification posts after the screenshot is taken.
 

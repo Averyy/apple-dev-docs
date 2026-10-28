@@ -19,7 +19,7 @@ class NSWindowController
 @interface NSWindowController : NSResponder
 ```
 
-#### Overview
+## Overview
 
 Managing a window entails:
 
@@ -35,7 +35,7 @@ The relationship between a window controller and a nib file is important. Althou
 
 For simple documents—that is, documents with only one nib file containing a window—you need to do little directly with `NSWindowController`; AppKit creates one for you. However, if the default window controller is not sufficient, you can create a custom subclass of `NSWindowController`. For documents with multiple windows or panels, your document must create separate instances of `NSWindowController` (or of custom subclasses of `NSWindowController`), one for each window or panel. An example is a CAD app that has different windows for side, top, and front views of drawn objects. What you do in your [`NSDocument`](./nsdocument.md) subclass determines whether the default `NSWindowController` or separately created and configured `NSWindowController` objects are used.
 
-##### Subclassing NSWindowController
+### Subclassing NSWindowController
 
 You should create a subclass of `NSWindowController` when you want to augment the default behavior, such as to give the window a custom title or to perform some setup tasks before the window is loaded. In your class’s initialization method, be sure to invoke on `super` either one of the `initWithWindowNibName:...` initializers or the [`init(window:)`](./nswindowcontroller/init%28window%29.md) initializer. The initializer you choose depends on whether the window object originates in a nib file or is programmatically created.
 

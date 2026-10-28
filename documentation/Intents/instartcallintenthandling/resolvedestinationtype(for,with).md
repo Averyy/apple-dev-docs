@@ -28,7 +28,7 @@ optional func resolveDestinationType(for intent: INStartCallIntent) async -> INC
 - (void) resolveDestinationTypeForStartCall:(INStartCallIntent *) intent withCompletion:(void (^)(INCallDestinationTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method verifies that you can initiate the specified call type. Return a successful resolution if you can place the specified call type. If you don’t support the specified call type, return a not required resolution and report the failure in your [`confirm(intent:completion:)`](./confirm%28intent,completion%29.md) method.
 

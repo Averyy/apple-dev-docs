@@ -26,7 +26,7 @@ protocol FxTileableEffect : NSObjectProtocol
 - [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 - [Thread safety in plug-ins](../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 
-#### Overview
+## Overview
 
 Using this protocol, your plug-in can render select portions of its output, or tiles, to increase efficiency and to operate outside the host’s process. Your plug-in should saves a weak reference to the `apiManager` object to use in subsequent calls. The plug-in initializes its properties and instance variables and returns a pointer to `self`. If any part of initialization fails in an unrecoverable way, this method returns `nil`.
 

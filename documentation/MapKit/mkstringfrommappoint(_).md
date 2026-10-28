@@ -25,7 +25,7 @@ func MKStringFromMapPoint(_ point: MKMapPoint) -> String
 static NSString *MKStringFromMapPoint(MKMapPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string containing the x and y coordinates of the map point.
 

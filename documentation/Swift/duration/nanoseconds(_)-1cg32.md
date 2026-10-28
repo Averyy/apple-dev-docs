@@ -21,11 +21,11 @@ Construct a `Duration` given a number of nanoseconds as a `Double` by converting
 static func nanoseconds(_ nanoseconds: Double) -> Duration
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of nanoseconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .nanoseconds(382.9)

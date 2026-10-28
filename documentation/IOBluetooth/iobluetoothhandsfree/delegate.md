@@ -19,11 +19,11 @@ unowned(unsafe) var delegate: (any IOBluetoothHandsFreeDelegate)! { get set }
 @property (assign) id<IOBluetoothHandsFreeDelegate> delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The delegate for the hands free object or nil if it doesn’t have a delegate.
 
-#### Discussion
+## Discussion
 
 Returns the hands free object’s delegate.
 

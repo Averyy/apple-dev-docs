@@ -21,7 +21,7 @@ func startVideoCapture() -> Bool
 - (BOOL) startVideoCapture;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) on success or [`false`](../../Swift/false.md) on failure. This method may return a value of [`false`](../../Swift/false.md) for various reasons, among them the following:
 
@@ -29,7 +29,7 @@ func startVideoCapture() -> Bool
 - The device does not support movie capture
 - The device is out of disk space
 
-#### Discussion
+## Discussion
 
 Use this method in conjunction with a custom overlay view to initiate the programmatic capture of a movie. You can take more than one movie without leaving the interface, but to do so requires you to hide the default image picker controls.
 

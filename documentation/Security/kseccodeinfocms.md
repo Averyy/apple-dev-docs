@@ -20,7 +20,7 @@ let kSecCodeInfoCMS: CFString
 extern CFStringRef const kSecCodeInfoCMS;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object. Empty for ad-hoc signed code.
 

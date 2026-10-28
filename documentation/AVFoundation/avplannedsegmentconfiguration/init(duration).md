@@ -24,11 +24,11 @@ init(duration: CMTime)
 - (instancetype) initWithDuration:(CMTime) duration;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of AVPlannedSegmentConfiguration, or nil if initialization fails.
 
-#### Discussion
+## Discussion
 
 The duration parameter must be numeric and greater than 0. Otherwise, the initializer throws NSInvalidArgumentException.
 

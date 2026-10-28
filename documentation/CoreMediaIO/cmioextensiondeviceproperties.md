@@ -20,7 +20,7 @@ class CMIOExtensionDeviceProperties
 @interface CMIOExtensionDeviceProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an instance of this object to manage the device’s property state.
 

@@ -25,7 +25,7 @@ let CBUUIDCharacteristicUserDescriptionString: String
 extern NSString * const CBUUIDCharacteristicUserDescriptionString;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value for this descriptor is an [`NSString`](../Foundation/nsstring.md) object.
 

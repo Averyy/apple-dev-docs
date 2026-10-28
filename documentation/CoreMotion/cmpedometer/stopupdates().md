@@ -23,7 +23,7 @@ func stopUpdates()
 - (void) stopPedometerUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to stop the delivery of continuous updates that were initiated by a call to the [`startUpdates(from:withHandler:)`](./startupdates%28from,withhandler%29.md) method.
 

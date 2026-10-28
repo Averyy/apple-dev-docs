@@ -26,7 +26,7 @@ struct ProgressView<Label, CurrentValueLabel> where Label : View, CurrentValueLa
 
 - [Declaring a custom view](./declaring-a-custom-view.md)
 
-#### Overview
+## Overview
 
 Use a progress view to show that a task is incomplete but advancing toward completion. A progress view can show both determinate (percentage complete) and indeterminate (progressing or not) types of progress.
 
@@ -75,7 +75,7 @@ struct DateRelativeProgressDemoView: View {
 
 ![A horizontal progress view that shows a bar partially filled with as it](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-3-macOS@2x.png)
 
-##### Styling progress views
+### Styling progress views
 
 You can customize the appearance and interaction of progress views by creating styles that conform to the [`ProgressViewStyle`](./progressviewstyle.md) protocol. To set a specific style for all progress view instances within a view, use the [`progressViewStyle(_:)`](./view/progressviewstyle%28_%29.md) modifier. In the following example, a custom style adds a rounded pink border to all progress views within the enclosing [`VStack`](./vstack.md):
 

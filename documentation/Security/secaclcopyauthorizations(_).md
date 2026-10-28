@@ -21,11 +21,11 @@ func SecACLCopyAuthorizations(_ acl: SecACL) -> CFArray
 CFArrayRefSecACLCopyAuthorizations(SecACLRef acl);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the authorizations for this entry. In Objective-C, free this object with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) method when you are done with it.
 
-#### Discussion
+## Discussion
 
 An ACL instance includes a list of trusted apps, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies. Use this method to retrieve the list of operations for an ACL entry. Use the [`SecACLCopyContents(_:_:_:_:)`](./secaclcopycontents%28_,_,_,_%29.md) method to retrieve the other information.
 

@@ -19,7 +19,7 @@ func InvokeAEDisposeExternalUPP(_ dataPtr: UnsafeRawPointer!, _ dataLength: Size
 void InvokeAEDisposeExternalUPP(const void *dataPtr, Size dataLength, SRefCon refcon, AEDisposeExternalUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`AEDisposeExternalProcPtr`](./aedisposeexternalprocptr.md) function. 
 

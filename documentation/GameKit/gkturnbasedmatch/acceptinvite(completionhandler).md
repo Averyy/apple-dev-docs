@@ -33,7 +33,7 @@ func acceptInvite() async throws -> GKTurnBasedMatch
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 When you provide a custom interface for managing matches, use this method to programmatically accept an invitation on behalf of the local player.
 

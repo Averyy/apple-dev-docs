@@ -19,7 +19,7 @@ var typingAttributes: [NSAttributedString.Key : Any] { get set }
 @property (copy) NSDictionary<NSString *,id> * typingAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Typing attributes are reset automatically whenever the selection changes. However, if you add any user actions that change text attributes, the action should use this method to apply those attributes afterwards. User actions that change attributes should always set the typing attributes because there might not be a subsequent change in selection before the next typing.
 

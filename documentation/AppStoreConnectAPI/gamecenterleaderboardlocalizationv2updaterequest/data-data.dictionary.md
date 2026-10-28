@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard localization update
 object GameCenterLeaderboardLocalizationV2UpdateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

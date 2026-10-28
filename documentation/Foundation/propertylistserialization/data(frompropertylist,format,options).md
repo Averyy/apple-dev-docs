@@ -25,11 +25,11 @@ class func data(fromPropertyList plist: Any, format: PropertyListSerialization.P
 + (NSData *) dataWithPropertyList:(id) plist format:(NSPropertyListFormat) format options:(NSPropertyListWriteOptions) opt error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object containing `plist` in the format specified by `format`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

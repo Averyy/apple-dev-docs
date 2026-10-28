@@ -24,7 +24,7 @@ var reductionMode: MPSGraphReductionMode { get set }
 @property (nonatomic, readwrite) MPSGraphReductionMode reductionMode;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `MPSGraphReductionModeSum`.
 

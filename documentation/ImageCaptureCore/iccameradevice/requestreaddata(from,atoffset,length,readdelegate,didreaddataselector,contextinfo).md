@@ -23,7 +23,7 @@ func requestReadData(from file: ICCameraFile, atOffset offset: off_t, length: of
 - (void) requestReadDataFromFile:(ICCameraFile *) file atOffset:(off_t) offset length:(off_t) length readDelegate:(id) readDelegate didReadDataSelector:(SEL) selector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `readDelegate` must implement a function with the signature `didReadData(data:NSData, fromFile:ICCameraFile, error:NSError, contextInfo:Any)`, to be called when the request is completed.
 

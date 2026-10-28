@@ -24,7 +24,7 @@ func startCachingImages(for assets: [PHAsset], targetSize: CGSize, contentMode: 
 - (void) startCachingImagesForAssets:(NSArray<PHAsset *> *) assets targetSize:(CGSize) targetSize contentMode:(PHImageContentMode) contentMode options:(PHImageRequestOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos begins to fetch image data and generates thumbnail images on a background thread. At any time afterward, you can use the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](../phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method to request individual images from the cache. If Photos has finished preparing a requested image, that method provides the image immediately.
 

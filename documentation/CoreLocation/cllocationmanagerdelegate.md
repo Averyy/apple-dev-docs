@@ -25,7 +25,7 @@ protocol CLLocationManagerDelegate : NSObjectProtocol
 @protocol CLLocationManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The location manager calls its delegate’s methods to report location-related events to your app. Implement this protocol in an app-specific object and use the methods to update your app. For example, you might use the current location to update the user’s position on a map or you might return search results relevant only to the user’s current location.
 

@@ -17,7 +17,7 @@ Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> deleteRecordZones(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 

@@ -29,7 +29,7 @@ extern CFStringRef const kSecMatchItemList;
 
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Discussion
+## Discussion
 
 To provide your own set of items to be filtered by a search query rather than searching the keychain, specify this search key in a call to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function with a value that consists of an object of type [`CFArray`](../CoreFoundation/cfarray.md) where the array contains either [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), [`SecIdentity`](./secidentity.md), or [`CFData`](../CoreFoundation/cfdata.md) items. The objects in the provided array must all be of the same type.
 

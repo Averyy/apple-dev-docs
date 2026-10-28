@@ -5,7 +5,7 @@
 
 Learn how to customize the UIKit state restoration process.
 
-#### Overview
+## Overview
 
 The following diagram shows the sequence of calls that happens from the time your app launches until the time it’s restored. Restoration occurs during the middle of your app’s initialization, and it proceeds only when a state restoration archive is available and your app delegate’s [`application(_:shouldRestoreApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoreapplicationstate%29.md) method returns [`true`](../Swift/true.md).
 
@@ -15,7 +15,7 @@ The first step in the restoration process is to create the view controller objec
 
 After state restoration finishes, UIKit calls the app delegate’s [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method. Use that method to make any last minute changes or additions to your interface. For example, you might add a login screen to the view controller hierarchy.
 
-##### Recreate your view controllers
+### Recreate your view controllers
 
 During restoration, UIKit tries to create or locate view controller objects from your preserved interface. UIKit first asks you to provide the view controller object. If you don’t provide the view controller, UIKit looks for it implicitly. Here’s the sequence of steps that UIKit follows to recreate view controllers:
 

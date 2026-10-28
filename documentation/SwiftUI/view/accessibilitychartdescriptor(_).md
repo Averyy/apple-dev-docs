@@ -22,7 +22,7 @@ nonisolated
 func accessibilityChartDescriptor<R>(_ representable: R) -> some View where R : AXChartDescriptorRepresentable
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide information about your chart view to allow VoiceOver and other assistive technology users to perceive and interact with your chart and its data.
 

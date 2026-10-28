@@ -17,7 +17,7 @@ Parser for XML function format: <function=name><parameter=key>value Reference: h
 struct XMLFunctionParser
 ```
 
-#### Overview
+## Overview
 
 Structure is validated with the shared `QwenXMLPayloadScanner`, the same grammar used by [`Qwen35ToolCallParser`](./qwen35toolcallparser.md) and by cross-dialect recovery. A payload becomes a call only when it is canonical in full:
 

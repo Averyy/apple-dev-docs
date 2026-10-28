@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftAndroid"
 
 Cross-compile Swift code and package it into Android applications
 
-#### Overview
+## Overview
 
 Swift on Android uses cross-compilation: you build on a macOS or Linux host, and the compiler produces native ARM or x86_64 binaries targeting Android.
 
@@ -18,7 +18,7 @@ Swift on Android uses cross-compilation: you build on a macOS or Linux host, and
 $ swift build --swift-sdk aarch64-unknown-linux-android28
 ```
 
-#### Conditional compilation
+## Conditional compilation
 
 Use `#if os(Android)` to conditionalize code for Android:
 
@@ -30,7 +30,7 @@ import Darwin
 #endif
 ```
 
-#### Foundation
+## Foundation
 
 Foundation networking types require a separate import on non-Apple platforms:
 
@@ -41,7 +41,7 @@ import FoundationNetworking
 #endif
 ```
 
-#### JNI integration
+## JNI integration
 
 Export Swift functions for JNI using `@_cdecl`:
 

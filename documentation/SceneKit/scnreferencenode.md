@@ -34,7 +34,7 @@ class SCNReferenceNode
 @interface SCNReferenceNode : SCNNode
 ```
 
-#### Overview
+## Overview
 
 When you tell a reference node to load its content, SceneKit loads the referenced scene file and makes children of the scene file’s root node become children of the reference node.
 

@@ -24,7 +24,7 @@ func max(_ operand: Int128, ordering: AtomicUpdateOrdering) -> (oldValue: Int128
 
 Available when `Value` is `Int128`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 

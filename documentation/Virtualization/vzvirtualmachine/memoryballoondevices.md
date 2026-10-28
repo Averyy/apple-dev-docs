@@ -19,7 +19,7 @@ var memoryBalloonDevices: [VZMemoryBalloonDevice] { get }
 @property (copy, readonly) NSArray<VZMemoryBalloonDevice *> * memoryBalloonDevices;
 ```
 
-#### Discussion
+## Discussion
 
 If you included a [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](../vzvirtiotraditionalmemoryballoondeviceconfiguration.md) object in the configuration of your VM, this property contains a corresponding [`VZVirtioTraditionalMemoryBalloonDevice`](../vzvirtiotraditionalmemoryballoondevice.md) object. Use that object to adjust the amount of memory available to the guest operating system.
 

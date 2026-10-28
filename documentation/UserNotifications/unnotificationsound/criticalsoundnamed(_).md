@@ -23,11 +23,11 @@ class func criticalSoundNamed(_ name: UNNotificationSoundName) -> Self
 + (instancetype) criticalSoundNamed:(UNNotificationSoundName) name;
 ```
 
-#### Return Value
+## Return Value
 
 A sound object representing a custom critical alert sound.
 
-#### Discussion
+## Discussion
 
 Critical alerts ignore the mute switch and Do Not Disturb. They require a special entitlement issued by Apple.
 

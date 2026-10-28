@@ -25,7 +25,7 @@ class func dominantLanguage(for string: String) -> NLLanguage?
 + (NLLanguage) dominantLanguageForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The most probable language of the piece of text.
 

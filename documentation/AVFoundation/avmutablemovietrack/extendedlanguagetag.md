@@ -24,7 +24,7 @@ var extendedLanguageTag: String? { get set }
 @property (nonatomic, copy, nullable) NSString * extendedLanguageTag;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 

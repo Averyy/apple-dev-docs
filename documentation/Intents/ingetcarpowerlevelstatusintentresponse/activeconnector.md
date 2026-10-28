@@ -31,7 +31,7 @@ var activeConnector: INCar.ChargingConnectorType? { get set }
 @property (atomic, copy, readwrite, nullable) INCarChargingConnectorType activeConnector;
 ```
 
-#### Discussion
+## Discussion
 
 If [`charging`](./charging-6xnqj.md) is [`true`](../../Swift/true.md), set this property to the connector type that’s currently delivering charge to the vehicle. The [`supportedChargingConnectors`](../incar/supportedchargingconnectors.md) array of the corresponding [`INCar`](../incar.md) object must contain the value you use.
 

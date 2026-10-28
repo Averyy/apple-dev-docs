@@ -19,11 +19,11 @@ func newObject() -> Any
 - (id) newObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new object of the appropriate class. The returned object is implicitly retained, the sender is responsible for releasing it (with either release or autorelease).
 
-#### Discussion
+## Discussion
 
 If an entity name is set (see [`entityName`](./entityname.md)), the object created is an instance of the class specified for that entity (and the object is inserted into the receiver’s managed object context). Otherwise the object created is an instance of the class returned by [`objectClass`](./objectclass.md).
 

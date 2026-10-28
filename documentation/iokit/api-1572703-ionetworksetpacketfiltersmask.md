@@ -16,11 +16,11 @@ Set the packet filters for a given filter group.
 IOReturn IONetworkSetPacketFiltersMask(io_connect_t connect, const io_name_t filterGroup, UInt32 filtersMask, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 A network controller may support a number of packets filters that can accept or reject a type of packet seen on the network. A filter group identifies a set of related filters, such as all filters that will allow a packet to pass upstream based on the destination address encoded within the packet. This function allows an user-space program to set the filtering performed by a given filter group.
 

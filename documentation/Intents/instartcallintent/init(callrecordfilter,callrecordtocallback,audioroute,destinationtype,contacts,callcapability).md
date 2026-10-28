@@ -24,7 +24,7 @@ init(callRecordFilter: INCallRecordFilter?, callRecordToCallBack: INCallRecord?,
 - (instancetype) initWithCallRecordFilter:(INCallRecordFilter *) callRecordFilter callRecordToCallBack:(INCallRecord *) callRecordToCallBack audioRoute:(INCallAudioRoute) audioRoute destinationType:(INCallDestinationType) destinationType contacts:(NSArray<INPerson *> *) contacts callCapability:(INCallCapability) callCapability;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if it couldn’t create the object.
 

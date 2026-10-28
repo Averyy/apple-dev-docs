@@ -23,7 +23,7 @@ var preferredPrimaryColumnWidthFraction: CGFloat { get set }
 @property (nonatomic, assign) CGFloat preferredPrimaryColumnWidthFraction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify your preferred width for the primary view controller’s view. The value of this property is a floating-point number between `0.0` and `1.0` that represents the percentage of the overall width of the split view controller. For example, the value `0.4` represents 40% of the current width. The default value of this property is [`automaticDimension`](./automaticdimension.md), which results in an appropriate width for the primary view controller.
 

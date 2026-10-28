@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS 16.1 SDK provides support to develop apps for iPhone and iPad running iOS 16.1. The SDK comes bundled with Xcode 14.1, available from [Beta Software Downloads](https://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [Xcode 14.1 Release Notes](../Xcode-Release-Notes/xcode-14_1-release-notes.md).
 
-##### Home
+### Home
 
-###### Known issues
+#### Known issues
 
 - You might receive an alert to turn on Wi-Fi when pairing a Matter accessory. (98460235)
 
@@ -20,9 +20,9 @@ The iOS 16.1 SDK provides support to develop apps for iPhone and iPad running iO
 - Accessory details might not open if a Matter accessory is unreachable. (99232316)
 - The device that initiates the pairing needs to use the same iCloud account as the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
 
-##### Memory Allocation
+### Memory Allocation
 
-###### Known Issues
+#### Known Issues
 
 - The system memory allocator `free` operation zeroes out all deallocated blocks in iOS 16.1 beta or later. Invalid accesses to free memory might result in new crashes or corruption, including:
 
@@ -31,9 +31,9 @@ The iOS 16.1 SDK provides support to develop apps for iPhone and iPad running iO
 
   To debug these issues, use Address Sanitizer and Guard Malloc (see `libgmalloc(3)`). (97449075)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where restoring transactions wouldn’t prompt for authentication or restore any transactions if there was no App Store account signed in. (99506258)
 

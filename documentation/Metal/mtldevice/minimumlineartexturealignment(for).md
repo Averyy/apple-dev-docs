@@ -29,7 +29,7 @@ func minimumLinearTextureAlignment(for format: MTLPixelFormat) -> Int
 
 - [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 
-#### Discussion
+## Discussion
 
 Metal aligns linear textures to their minimum alignment value, which directly affects the [`makeTexture(descriptor:offset:bytesPerRow:)`](../mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md) method’s `offset` and `bytesPerRow` parameters.
 

@@ -25,7 +25,7 @@ class CTRunDelegate
 typedef const struct __CTRunDelegate * CTRunDelegateRef;
 ```
 
-#### Overview
+## Overview
 
 A run delegate is assigned to a run (attribute range) to control typographic traits such glyph ascent, glyph descent, and glyph width.
 

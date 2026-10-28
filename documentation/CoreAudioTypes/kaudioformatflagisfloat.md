@@ -25,7 +25,7 @@ var kAudioFormatFlagIsFloat: AudioFormatFlags { get }
 kAudioFormatFlagIsFloat
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate the format is floating point, and clear to indicate it’s integer.
 

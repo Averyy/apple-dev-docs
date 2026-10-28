@@ -25,7 +25,7 @@ func send(before limitDate: Date, msgid msgID: Int, components: NSMutableArray?,
 - (BOOL) sendBeforeDate:(NSDate *) limitDate msgid:(NSUInteger) msgID components:(NSMutableArray *) components from:(NSPort *) receivePort reserved:(NSUInteger) headerSpaceReserved;
 ```
 
-#### Discussion
+## Discussion
 
 `NSConnection` calls this method at the appropriate times. This method should not be called directly. This method could raise an `NSInvalidSendPortException`, `NSInvalidReceivePortException`, or an `NSPortSendException`, depending on the type of send port and the type of error.
 

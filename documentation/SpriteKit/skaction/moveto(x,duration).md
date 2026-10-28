@@ -25,11 +25,11 @@ class func moveTo(x: CGFloat, duration: TimeInterval) -> SKAction
 + (SKAction *) moveToX:(CGFloat) x duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`position`](../sknode/position.md) property animates from its current position to its new position.
 

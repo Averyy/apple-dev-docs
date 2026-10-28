@@ -23,7 +23,7 @@ var angle: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat angle;
 ```
 
-#### Discussion
+## Discussion
 
 Modify this property when you want to change the angle of the gravity vector separately from the magnitude of that vector. The value in this property is tied to the value in the [`gravityDirection`](./gravitydirection.md) property, so changes in one affect the other.
 

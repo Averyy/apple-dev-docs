@@ -25,7 +25,7 @@ var hasPassword: Bool { get }
 @property (readonly) BOOL hasPassword;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the receiver has a password, [`false`](../../Swift/false.md) otherwise.
 

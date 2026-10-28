@@ -24,7 +24,7 @@ optional func netServiceBrowserWillSearch(_ browser: NetServiceBrowser)
 - (void) netServiceBrowserWillSearch:(NSNetServiceBrowser *) browser;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent to the delegate only if the underlying network layer is ready to begin a search. The delegate can use this notification to prepare its data structures to receive data.
 

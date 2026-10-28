@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 A reference of module map directives, attributes, and syntax for defining C and C++ module interfaces.
 
-#### Overview
+## Overview
 
 Module maps use a domain-specific language to describe how C, Objective-C, and C++ headers are organized into modules. This reference documents the syntax and semantics of module map declarations.
 
@@ -18,11 +18,11 @@ For instructions on creating module maps, see [Creating Module Maps](./modulemap
 
 The [Clang Modules Documentation](https://clang.llvm.org/docs/Modules.html) is the official specification for module maps. The content below summarizes that reference for common Swift use cases.
 
-#### Module declarations
+## Module declarations
 
 A module declaration defines a named module and specifies its contents.
 
-##### Basic syntax
+### Basic syntax
 
 ```
 module ModuleName {
@@ -32,7 +32,7 @@ module ModuleName {
 
 The module name must be a valid identifier. It can contain letters, numbers, and underscores, but can’t start with a number. The module name must match the product or target name in Swift Package Manager.
 
-##### Framework modules
+### Framework modules
 
 Framework modules use a specialized syntax for macOS and iOS frameworks:
 
@@ -46,7 +46,7 @@ framework module FrameworkName {
 
 The `framework` keyword indicates the module represents a framework bundle. The `module * { export * }` pattern automatically creates and exports submodules for all headers.
 
-##### Explicit submodules
+### Explicit submodules
 
 Submodules divide a module into smaller units:
 
@@ -68,11 +68,11 @@ The `explicit` keyword requires clients to explicitly import the submodule. Code
 
 Without the `explicit` keyword, the submodule is imported automatically when the parent module is imported.
 
-##### Header declarations
+### Header declarations
 
 Header declarations specify which header files belong to a module.
 
-###### header
+#### header
 
 Includes a header file in the module:
 
@@ -82,7 +82,7 @@ header "HeaderName.h"
 
 The path is relative to the module map file’s location. The compiler parses the header and makes its declarations available when the module is imported.
 
-###### umbrella header
+#### umbrella header
 
 Includes a header that itself includes all other public headers:
 
@@ -92,7 +92,7 @@ umbrella header "ModuleName.h"
 
 Umbrella headers provide a single entry point for all module functionality. The header typically includes all other public headers with `#include` directives.
 
-###### private header
+#### private header
 
 Includes a header that’s only visible within the module implementation:
 
@@ -102,7 +102,7 @@ private header "InternalAPI.h"
 
 Private headers aren’t visible to clients that import the module. Use private headers for implementation details that other files within the module need to access.
 
-###### textual header
+#### textual header
 
 Includes a header that’s textually included rather than compiled as part of the module:
 
@@ -112,7 +112,7 @@ textual header "Macros.h"
 
 Textual headers are typically used for macro-only headers or headers that can’t be parsed in isolation. The compiler includes the header’s contents directly into each translation unit rather than precompiling it as part of the module.
 
-###### exclude header
+#### exclude header
 
 Explicitly excludes a header from an umbrella:
 
@@ -123,7 +123,7 @@ exclude header "Internal.h"
 
 When using an umbrella header that includes files you don’t want in the module, use `exclude header` to omit specific headers.
 
-###### umbrella directory
+#### umbrella directory
 
 Includes all headers in a directory:
 
@@ -133,11 +133,11 @@ umbrella "include"
 
 The compiler includes all headers found in the specified directory and its subdirectories. This is less common than umbrella headers because it provides less control over which headers are public.
 
-##### Export declarations
+### Export declarations
 
 Export declarations control which modules are re-exported to clients.
 
-###### export *
+#### export *
 
 Re-exports all imported modules:
 
@@ -147,7 +147,7 @@ export *
 
 When a client imports your module, they also see declarations from modules your module imports. This is the most common export pattern for C libraries.
 
-###### Selective exports
+#### Selective exports
 
 Re-exports specific modules:
 
@@ -161,11 +161,11 @@ module MyModule {
 
 Only the specified modules are visible to clients. Modules imported but not exported remain private implementation details.
 
-##### Link declarations
+### Link declarations
 
 Link declarations specify libraries the linker should include.
 
-###### Basic syntax
+#### Basic syntax
 
 ```
 link "libraryname"
@@ -175,7 +175,7 @@ Specify the library name without the `lib` prefix or file extension. For example
 
 The build system passes this information to the linker automatically.
 
-###### Framework links
+#### Framework links
 
 For macOS and iOS frameworks:
 
@@ -185,11 +185,11 @@ link framework "FrameworkName"
 
 This tells the linker to link against the specified framework.
 
-##### Requirements
+### Requirements
 
 Requirements specify conditions that must be met for the module to be available.
 
-###### Language requirements
+#### Language requirements
 
 - **cplusplus**: Requires C++ language support
 - **cplusplus11**: Requires C++11 or later
@@ -211,7 +211,7 @@ module CppLibrary {
 
 The compiler rejects the module if the build doesn’t satisfy the requirements.
 
-###### Feature requirements
+#### Feature requirements
 
 - **blocks**: Requires blocks (closures) support
 - **gnuinlineasm**: Requires GNU inline assembly support
@@ -222,7 +222,7 @@ Use the negation operator to exclude features:
 requires !gnuinlineasm
 ```
 
-###### Combining requirements
+#### Combining requirements
 
 Combine multiple requirements with commas:
 
@@ -232,11 +232,11 @@ requires cplusplus, !blocks
 
 All requirements must be satisfied for the module to be available.
 
-##### Module attributes
+### Module attributes
 
 Attributes modify module behavior and semantics.
 
-###### [system]
+#### [system]
 
 Marks a module as a system module:
 
@@ -255,7 +255,7 @@ System modules receive special treatment:
 
 Use `[system]` for SDK-provided libraries and system headers.
 
-###### [extern_c]
+#### [extern_c]
 
 Indicates C linkage for C++ code:
 
@@ -268,7 +268,7 @@ module [extern_c] CLibrary {
 
 This is useful when wrapping C libraries in C++ contexts.
 
-###### [no_undeclared_includes]
+#### [no_undeclared_includes]
 
 Prevents implicit inclusion of headers:
 
@@ -281,11 +281,11 @@ module StrictModule [no_undeclared_includes] {
 
 Clients must explicitly import all modules they use. This makes dependencies explicit and prevents accidental reliance on transitive includes.
 
-##### Configuration macros
+### Configuration macros
 
 Configuration macros allow different module variants based on preprocessor definitions.
 
-###### config_macros
+#### config_macros
 
 Declares macros that affect the module’s interface:
 
@@ -301,11 +301,11 @@ The `exhaustive` keyword lists all macros that affect the module’s API. The co
 
 Without configuration macros declared, the compiler assumes the module’s interface is independent of preprocessor state.
 
-##### Conflict declarations
+### Conflict declarations
 
 Conflict declarations specify incompatible modules.
 
-###### conflict
+#### conflict
 
 Declares that a module conflicts with another:
 
@@ -319,11 +319,11 @@ module NewModule {
 
 The compiler produces an error if both modules are imported in the same translation unit. The message explains why the modules conflict, and what to do instead.
 
-##### Extern modules
+### Extern modules
 
 Extern modules reference module maps in other files.
 
-###### extern module
+#### extern module
 
 References a module defined in another module map:
 
@@ -333,11 +333,11 @@ extern module ExternalModule "path/to/other.modulemap"
 
 This allows organizing large module hierarchies across multiple files. The path is relative to the current module map file.
 
-##### Use declarations
+### Use declarations
 
 Use declarations specify dependencies between modules.
 
-###### use
+#### use
 
 Declares that a module depends on another:
 
@@ -351,7 +351,7 @@ module DependentModule {
 
 This is informational and helps document module dependencies. Most module maps don’t need explicit `use` declarations.
 
-#### Complete syntax example
+## Complete syntax example
 
 A comprehensive module map demonstrating multiple features:
 
@@ -398,7 +398,7 @@ module CompleteExampleOld {
 }
 ```
 
-#### Module map file naming
+## Module map file naming
 
 Module map files must follow specific naming conventions:
 
@@ -407,7 +407,7 @@ Module map files must follow specific naming conventions:
 
 Swift Package Manager looks for `module.modulemap` by default.
 
-##### System library wrapper
+### System library wrapper
 
 ```
 module SystemLib [system] {
@@ -419,7 +419,7 @@ module SystemLib [system] {
 
 The shim header includes the actual system header, allowing the compiler to find it through search paths.
 
-##### C++ library
+### C++ library
 
 ```
 module CppLib {
@@ -431,7 +431,7 @@ module CppLib {
 
 The `requires cplusplus11` directive ensures the module is only available in C++11 mode or later.
 
-##### Framework with submodules
+### Framework with submodules
 
 ```
 framework module MyFramework {
@@ -448,7 +448,7 @@ framework module MyFramework {
 
 Public headers are automatically modularized, while private headers require explicit import.
 
-##### Multiple libraries
+### Multiple libraries
 
 ```
 module CompositeLib {
@@ -468,7 +468,7 @@ module CompositeLib {
 
 Each submodule can link to its own library.
 
-#### Diagnostic directives
+## Diagnostic directives
 
 Module maps don’t support preprocessor directives like `#if` or `#ifdef`. All content in a module map is always active.
 
@@ -490,7 +490,7 @@ module CrossPlatform {
 }
 ```
 
-#### Module map parsing
+## Module map parsing
 
 The compiler parses module maps with these characteristics:
 
@@ -501,7 +501,7 @@ The compiler parses module maps with these characteristics:
 - Whitespace is insignificant outside string literals.
 - Module map files must be valid UTF-8.
 
-#### Limitations and constraints
+## Limitations and constraints
 
 Module maps have several limitations:
 
@@ -511,7 +511,7 @@ Module maps have several limitations:
 - Conditional compilation directives aren’t supported in module maps.
 - Module maps assume headers are well-formed and can be parsed in isolation.
 
-#### Integration with Swift Package Manager
+## Integration with Swift Package Manager
 
 Swift Package Manager uses module maps to bridge C and C++ libraries:
 
@@ -522,7 +522,7 @@ Swift Package Manager uses module maps to bridge C and C++ libraries:
 
 For instructions on creating a module map, see [Creating Module Maps](./modulemaps.md).
 
-#### Best practices
+## Best practices
 
 Follow these practices when writing module maps:
 

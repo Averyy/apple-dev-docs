@@ -28,7 +28,7 @@ AVDepthDataAccuracyRelative
 
 - [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 This level of accuracy indicates that values within a depth map are usable relative to one another (that is, a depth value of 2 is twice as far as a depth value of 1), but do not accurately convey real-world distance.
 

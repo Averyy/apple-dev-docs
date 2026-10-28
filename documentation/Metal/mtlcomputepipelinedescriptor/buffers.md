@@ -24,7 +24,7 @@ var buffers: MTLPipelineBufferDescriptorArray { get }
 @property (readonly) MTLPipelineBufferDescriptorArray * buffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) instances, where each index corresponds to the same entry in the buffer argument table.
 

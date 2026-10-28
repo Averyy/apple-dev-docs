@@ -21,7 +21,7 @@ func show(from item: UIBarButtonItem, animated: Bool)
 - (void) showFromBarButtonItem:(UIBarButtonItem *) item animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 On iPad, this method presents the action sheet in a popover and adds the toolbar that owns the button to the popover’s list of passthrough views. Thus, taps in the toolbar result in the action methods of the corresponding toolbar items being called. If you want the popover to be dismissed when a different toolbar item is tapped, you must implement that behavior in your action handler methods.
 

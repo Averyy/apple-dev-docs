@@ -22,7 +22,7 @@ nonisolated
 init(initialValue: Value, trigger: some Equatable, @ContentBuilder content: @escaping (Value) -> Content, @KeyframesBuilder<Value> keyframes: @escaping (Value) -> KeyframePath)
 ```
 
-#### Discussion
+## Discussion
 
 Note that the `content` closure will be updated on every frame while animating, so avoid performing any expensive operations directly within `content`.
 

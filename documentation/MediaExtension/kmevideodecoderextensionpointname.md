@@ -20,7 +20,7 @@ var kMEVideoDecoderExtensionPointName: String { get }
 #define kMEVideoDecoderExtensionPointName
 ```
 
-#### Discussion
+## Discussion
 
 The value for this string is `com.apple.mediaextension.videodecoder`.
 

@@ -23,7 +23,7 @@ var maximumSupplementaryColumnWidth: CGFloat { get set }
 @property (nonatomic, assign) CGFloat maximumSupplementaryColumnWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in conjunction with the [`minimumSupplementaryColumnWidth`](./minimumsupplementarycolumnwidth.md) property to ensure the width of the supplementary view controller’s content is set to an acceptable value. The preliminary width is specified by the [`preferredSupplementaryColumnWidthFraction`](./preferredsupplementarycolumnwidthfraction.md) property, which is applied to the split view controller’s width and checked against these bounds. If the resulting width is greater than the maximum value specified by this property, the width is set to the value in this property.
 

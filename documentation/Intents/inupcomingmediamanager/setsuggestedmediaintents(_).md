@@ -23,7 +23,7 @@ func setSuggestedMediaIntents(_ intents: NSOrderedSet)
 - (void) setSuggestedMediaIntents:(NSOrderedSet<INPlayMediaIntent *> *) intents;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to have Siri suggest media content to the user that:
 

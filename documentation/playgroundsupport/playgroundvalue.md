@@ -16,7 +16,7 @@ The types you can save in the key-value store or send in messages to live views.
 enum PlaygroundValue
 ```
 
-#### Overview
+## Overview
 
 The example below stores a dictionary in a [`PlaygroundValue`](./playgroundvalue.md) instance and then stores the value in a [`PlaygroundKeyValueStore`](./playgroundkeyvaluestore.md).
 

@@ -21,7 +21,7 @@ Creates an image feature option key from a string.
 init(_ rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer directly. Create an image option key with [`cropAndScale`](./cropandscale.md) or [`cropRect`](./croprect.md) instead.
 

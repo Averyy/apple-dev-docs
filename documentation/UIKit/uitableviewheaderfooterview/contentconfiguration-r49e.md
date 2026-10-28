@@ -19,7 +19,7 @@ The current content configuration of the view.
 @property (nonatomic, copy, nullable) id<UIContentConfiguration> contentConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Using a content configuration, you can set the view’s content and styling for a variety of different view states. You can get the default configuration using [`defaultContentConfiguration`](./defaultcontentconfiguration.md), assign your content to the configuration, customize any other properties, and assign it to the view as the current [`contentConfiguration`](./contentconfiguration-r49e.md).
 

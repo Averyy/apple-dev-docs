@@ -25,7 +25,7 @@ class func currentSentenceEmbeddingRevision(for language: NLLanguage) -> Int
 + (NSUInteger) currentSentenceEmbeddingRevisionForLanguage:(NLLanguage) language;
 ```
 
-#### Return Value
+## Return Value
 
 An integer representing the current version number of a sentence embedding.
 

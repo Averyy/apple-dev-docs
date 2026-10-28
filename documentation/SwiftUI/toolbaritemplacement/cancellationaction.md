@@ -21,7 +21,7 @@ A placement for cancellation actions in a modal interface.
 static let cancellationAction: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation actions dismiss the modal interface without taking any action, usually by tapping or clicking a Cancel button.
 

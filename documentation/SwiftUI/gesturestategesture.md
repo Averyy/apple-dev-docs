@@ -22,7 +22,7 @@ A gesture that updates the state provided by a gesture’s updating callback.
 nonisolated struct GestureStateGesture<Base, State> where Base : Gesture
 ```
 
-#### Overview
+## Overview
 
 A gesture’s [`updating(_:body:)`](./gesture/updating%28_,body%29.md) callback returns a `GestureStateGesture` instance for updating a transient state property that’s annotated with the [`GestureState`](./gesturestate.md) property wrapper.
 

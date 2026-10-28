@@ -21,7 +21,7 @@ Constructs a token watcher.
 int (*)(struct __OpaqueAuthorizationEngine *, const void **) GetTKTokenWatcher;
 ```
 
-#### Discussion
+## Discussion
 
 The caller owns the returned token watcher and is responsible for releasing it.
 

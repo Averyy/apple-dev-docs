@@ -24,7 +24,7 @@ var maxVertexAmplificationCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxVertexAmplificationCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the maximum count you pass to [`setVertexAmplificationCount:viewMappings:`](../mtl4rendercommandencoder/setvertexamplificationcount_viewmappings_.md) when using vertex amplification with this pipeline.
 

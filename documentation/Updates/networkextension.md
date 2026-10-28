@@ -5,11 +5,11 @@
 
 Learn about important changes to Network Extension.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Network Extension](../NetworkExtension/NetworkExtension.md).
 
-#### June 2026
+## June 2026
 
 - Fine-tune your use of URL filters by setting the [`NEURLFilterManager`](../NetworkExtension/neurlfiltermanager.md) properties [`urlParsingConfiguration`](../NetworkExtension/neurlfiltermanager/urlparsingconfiguration.md) and [`urlParsingRegularExpression`](../NetworkExtension/neurlfiltermanager/urlparsingregularexpression.md).
 - Produce reports of filtered URLs and send them back to your server by setting the [`reportEndpoint`](../NetworkExtension/neurlfiltermanager/reportendpoint.md) property of [`NEURLFilterManager`](../NetworkExtension/neurlfiltermanager.md). Configure reporting with the properties [`reportFormat`](../NetworkExtension/neurlfiltermanager/reportformat-swift.property.md) and [`reportInterval`](../NetworkExtension/neurlfiltermanager/reportinterval.md). Note that filtered URL reporting is available only from supervised devices.

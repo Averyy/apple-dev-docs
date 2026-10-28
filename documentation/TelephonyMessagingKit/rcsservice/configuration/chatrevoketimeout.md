@@ -15,7 +15,7 @@ The maximum duration the service provider allows for delivery notification befor
 let chatRevokeTimeout: Duration?
 ```
 
-#### Discussion
+## Discussion
 
 After the app sends a message, the system expects to receive a delivery notification for that message. When your app sends a message, start a timer with this timeout value. If the timer expires without receiving a delivery notification, revoke the message with [`revokeMessage(_:)`](../revokemessage%28_%29.md), and resend with SMS or MMS.
 

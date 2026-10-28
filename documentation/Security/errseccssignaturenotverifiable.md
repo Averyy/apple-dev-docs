@@ -20,7 +20,7 @@ var errSecCSSignatureNotVerifiable: OSStatus { get }
 errSecCSSignatureNotVerifiable
 ```
 
-#### Discussion
+## Discussion
 
 This error might be due to a filesystem that maps root to an unprivileged user, for example.
 

@@ -17,7 +17,7 @@ Unprojects a 2D point in image space onto a 3D plane in world space.
 func unprojectPoint(_ point: CGPoint, ontoPlane planeTransform: simd_float4x4, viewRotationAngle: CGFloat, viewportSize: CGSize) -> simd_float3?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D point in world space, or `nil` if the point cannot be unprojected.
 

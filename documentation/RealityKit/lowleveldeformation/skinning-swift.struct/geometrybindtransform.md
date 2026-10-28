@@ -18,7 +18,7 @@ The geometry bind transform applied to vertex positions before the joint skinnin
 var geometryBindTransform: simd_float4x4 { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `matrix_identity_float4x4`. Can be changed between `encode()` calls.
 

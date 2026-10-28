@@ -21,7 +21,7 @@ var leadingItem: CPMessageLeadingItem { get }
 @property (nonatomic, readonly) CPMessageLeadingItem leadingItem;
 ```
 
-#### Discussion
+## Discussion
 
 Configurations are immutable. To change or remove the item that the message list item’s leading region shows, create a new configuration and update the list item’s [`leadingConfiguration`](../cpmessagelistitem/leadingconfiguration.md) property.
 

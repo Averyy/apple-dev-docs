@@ -21,7 +21,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title appears prominently below or alongside the thumbnail image. Use this property for the main content identifier such as song titles, show names, or primary content descriptions.
 

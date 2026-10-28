@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 To be useful as a result builder, a result builder type must provide a sufficient subset of function-building methods that enable the transformation of various statement kinds (`if`, `switch`, `for`..`in`, etc.). The following example result builder illustrates the various function-building methods one can define:
 

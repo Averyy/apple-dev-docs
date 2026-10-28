@@ -25,7 +25,7 @@ typealias CMBufferQueueTriggerCondition = Int32
 typedef int32_t CMBufferQueueTriggerCondition;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [Buffer Trigger Conditions](./buffer-trigger-conditions.md).
 

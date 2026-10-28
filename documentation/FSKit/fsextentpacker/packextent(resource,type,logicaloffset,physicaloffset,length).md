@@ -19,7 +19,7 @@ func packExtent(resource: FSBlockDeviceResource, type: FSExtentType, logicalOffs
 - (BOOL) packExtentWithResource:(FSBlockDeviceResource *) resource type:(FSExtentType) type logicalOffset:(off_t) logicalOffset physicalOffset:(off_t) physicalOffset length:(size_t) length;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the packer can pack more extents.
 

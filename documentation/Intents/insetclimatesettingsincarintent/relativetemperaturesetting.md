@@ -32,7 +32,7 @@ var relativeTemperatureSetting: INRelativeSetting { get }
 @property (atomic, assign, readonly) INRelativeSetting relativeTemperatureSetting;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the temperature up or down based relative to its current position. When adjusting temperatures up or down to the next setting, you define the number of degrees to add or subtract from the current setting. The value of this property is [`INRelativeSetting.unknown`](../inrelativesetting/unknown.md) when the user modified a different climate control setting.
 

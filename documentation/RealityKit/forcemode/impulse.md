@@ -20,7 +20,7 @@ A direct adjustment to a body’s linear or angular momentum.
 case impulse
 ```
 
-#### Discussion
+## Discussion
 
 The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of mass * distance / time. `impulse` mode causes a change in linear momentum.
 

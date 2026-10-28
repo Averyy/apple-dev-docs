@@ -15,11 +15,11 @@ Returns a Boolean value indicating if device can be used for default system outp
 uint32_t CanBeDefaultSystemOutputDevice();
 ```
 
-#### Return Value
+## Return Value
 
 True if device can be used for default system output.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

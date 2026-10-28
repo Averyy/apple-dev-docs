@@ -24,7 +24,7 @@ var midiNote: Float { get set }
 @property (readwrite) float midiNote;
 ```
 
-#### Discussion
+## Discussion
 
 If the instrument within the [`AVMusicTrack`](../avmusictrack.md) destination audio unit supports fractional values, you use this to generate arbitrary tunings. The valid range of values depends on the destination audio unit, and is usually between `0.0` and `127.0`.
 

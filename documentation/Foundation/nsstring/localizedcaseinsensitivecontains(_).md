@@ -25,7 +25,7 @@ func localizedCaseInsensitiveContains(_ str: String) -> Bool
 - (BOOL) localizedCaseInsensitiveContainsString:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains `str`, otherwise [`false`](../../Swift/false.md).
 

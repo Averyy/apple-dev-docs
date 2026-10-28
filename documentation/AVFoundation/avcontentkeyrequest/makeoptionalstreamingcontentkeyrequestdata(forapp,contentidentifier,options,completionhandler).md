@@ -26,7 +26,7 @@ func makeOptionalStreamingContentKeyRequestData(forApp appIdentifier: Data, cont
 - (void) makeOptionalStreamingContentKeyRequestDataForApp:(NSData *) appIdentifier contentIdentifier:(NSData *) contentIdentifier options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method generates key request data to be sent to a key server, with support for advisory key handling. When advisory keys are enabled (supportsAdvisoryKeys = YES), this method may return nil data without error if the requested key is already cached by the system, avoiding redundant server requests.
 

@@ -24,11 +24,11 @@ class func defaultCriticalSound(withAudioVolume volume: Float) -> Self
 + (instancetype) defaultCriticalSoundWithAudioVolume:(float) volume;
 ```
 
-#### Return Value
+## Return Value
 
 A sound object representing the default critical alert sound at the specified volume.
 
-#### Discussion
+## Discussion
 
 Critical alerts ignore the mute switch and Do Not Disturb. They require a special entitlement issued by Apple.
 

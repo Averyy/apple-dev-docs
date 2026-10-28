@@ -19,7 +19,7 @@ Security restriction mode for this navigation.
 var securityRestrictionMode: WebPage.NavigationPreferences.SecurityRestrictionMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Security restriction modes provide different levels of security hardening for high-risk browsing contexts. `SecurityRestrictionMode.maximizeCompatibility` provides additional hardening while maintaining full web compatibility:
 

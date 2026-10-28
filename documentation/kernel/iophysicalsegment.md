@@ -13,7 +13,7 @@
 #define IOPhysicalSegment
 ```
 
-#### Discussion
+## Discussion
 
 Backward compatibility define for the old non-class scoped type definition. See IOMemoryCursor::PhysicalSegment
 

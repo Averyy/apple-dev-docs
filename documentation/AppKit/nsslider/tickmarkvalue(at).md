@@ -19,11 +19,11 @@ func tickMarkValue(at index: Int) -> Double
 - (double) tickMarkValueAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the specified tick mark.
 
-#### Discussion
+## Discussion
 
 In its implementation of this method, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance.
 

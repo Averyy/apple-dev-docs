@@ -24,7 +24,7 @@ static var description: String { get }
 
 - [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 The model uses the value in this property as instructions on how to use the stage.
 

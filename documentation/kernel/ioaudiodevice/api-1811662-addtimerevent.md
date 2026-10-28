@@ -14,11 +14,11 @@ virtual IOReturn addTimerEvent(
  AbsoluteTimeinterval);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the timer event was successfully added.
 
-#### Overview
+## Overview
 
 The frequency of the timer event callbacks will be the smallest interval specified by all targets. Only one interval and callback may be specified per target. If a addTimerEvent is called twice with the same target, the second one overrides the first. There is currently a bug triggered if the first call had the smallest interval. In that case, that smallest interval would still be used.
 

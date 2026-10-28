@@ -24,7 +24,7 @@ func evaluate(x: Double) -> Double
 - (double) evaluateForValue:(double) x;
 ```
 
-#### Return Value
+## Return Value
 
 The curve’s height for the argument *x* value.
 

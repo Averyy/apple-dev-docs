@@ -25,11 +25,11 @@ func CFBundleCopyAuxiliaryExecutableURL(_ bundle: CFBundle!, _ executableName: C
 extern CFURLRefCFBundleCopyAuxiliaryExecutableURL(CFBundleRef bundle, CFStringRef executableName);
 ```
 
-#### Return Value
+## Return Value
 
 The URL location of the specified bundle’s auxiliary executable code, or `NULL` if it could not be found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function can be used to find executables other than your main executable. This is useful, for instance, for applications that have some command line tool that is packaged with and used by the application. The tool can be packaged in the various platform executable directories in the bundle and can be located with this function. This allows an application to ship versions of the tool for each platform as it does for the main application executable.
 

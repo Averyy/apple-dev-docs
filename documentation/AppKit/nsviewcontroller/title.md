@@ -19,7 +19,7 @@ var title: String? { get set }
 @property (copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 You can employ the [`title`](./title.md) property as needed for your app’s user interface, such as to enable a user to choose among multiple named views in a menu or other affordance. The [`NSViewController`](../nsviewcontroller.md) class does not use this property for its own purposes.
 

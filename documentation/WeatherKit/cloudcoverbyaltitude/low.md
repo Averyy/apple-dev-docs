@@ -21,7 +21,7 @@ The percentage of the sky covered with low-altitude clouds. Low-level Cloud Cove
 var low: Double
 ```
 
-#### Discussion
+## Discussion
 
 The value is from `0` (no cloud cover)  to `1` (complete cloud cover).
 

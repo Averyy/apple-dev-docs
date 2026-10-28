@@ -20,11 +20,11 @@ optional func comboBox(_ comboBox: NSComboBox, objectValueForItemAt index: Int) 
 - (id) comboBox:(NSComboBox *) comboBox objectValueForItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object corresponding to the specified index number.
 
-#### Discussion
+## Discussion
 
 An `NSComboBox` object uses this method to populate the items displayed in its pop-up list.
 

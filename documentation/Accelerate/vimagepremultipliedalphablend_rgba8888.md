@@ -21,11 +21,11 @@ Performs premultiplied alpha compositing of two 8-bit-per-channel, 4-channel RGB
 #define vImagePremultipliedAlphaBlend_RGBA8888(_srcTop, _srcBottom, _dest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 On return of this function, the value of each pixel in the destination buffer is:
 

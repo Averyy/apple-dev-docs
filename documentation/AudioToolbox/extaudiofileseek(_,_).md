@@ -24,11 +24,11 @@ func ExtAudioFileSeek(_ inExtAudioFile: ExtAudioFileRef, _ inFrameOffset: Int64)
 extern OSStatus ExtAudioFileSeek(ExtAudioFileRef inExtAudioFile, SInt64 inFrameOffset);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Sets the file’s read position to the specified sample frame number. A subsequent call to the [`ExtAudioFileRead(_:_:_:)`](./extaudiofileread%28_,_,_%29.md) function returns samples from precisely this location, even if it is located in the middle of a packet.
 

@@ -23,7 +23,7 @@ var controlStyle: MPMovieControlStyle { get set }
 @property (nonatomic) MPMovieControlStyle controlStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`default`](../mpmoviecontrolstyle/default.md). You can change the value of this property to change the style of the controls or to hide the controls altogether. For a list of available control styles, see [`MPMovieControlStyle`](../mpmoviecontrolstyle.md).
 

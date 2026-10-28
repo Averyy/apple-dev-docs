@@ -19,7 +19,7 @@ func find(_ query: String, inBook book: NSHelpManager.BookName?)
 - (void) findString:(NSString *) query inBook:(NSHelpBookName) book;
 ```
 
-#### Discussion
+## Discussion
 
 To search for a string in your bundle’s localized help book, you could use code similar to the following:
 

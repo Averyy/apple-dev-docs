@@ -20,11 +20,11 @@ init?(blendShapes: [ARFaceAnchor.BlendShapeLocation : NSNumber])
 - (instancetype) initWithBlendShapes:(NSDictionary<NSString *,NSNumber *> *) blendShapes;
 ```
 
-#### Return Value
+## Return Value
 
 A face geometry object, or `nil` if ARKit face tracking is not supported on the current device.
 
-#### Discussion
+## Discussion
 
 Each key in the `blendShapes` dictionary is an [`ARFaceAnchor.BlendShapeLocation`](../arfaceanchor/blendshapelocation.md) constant identifying a facial feature. The corresponding value is the position of that feature relative to its neutral configuration, ranging from `0.0` (neutral) to `1.0` (maximum movement).
 

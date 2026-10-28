@@ -25,7 +25,7 @@ struct MKMapRect
 typedef struct { ... } MKMapRect;
 ```
 
-#### Overview
+## Overview
 
 If you project the curved surface of the globe onto a flat surface, what you get is a two-dimensional version of a map where longitude lines appear to be parallel. Such maps are often used to show the entire surface of the globe all at once. An `MKMapRect` data structure represents a rectangular area as seen on this two-dimensional map.
 

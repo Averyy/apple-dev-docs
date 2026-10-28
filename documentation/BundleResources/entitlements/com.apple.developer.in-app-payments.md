@@ -17,7 +17,7 @@ A list of merchant IDs your app uses for Apple Pay support.
 - **Name**: `com.apple.developer.in-app-payments` (Merchant IDs)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 The value for this key is an array of strings containing the merchant IDs—typically in reverse domain name notation, starting with the string ‘`merchant`’.
 

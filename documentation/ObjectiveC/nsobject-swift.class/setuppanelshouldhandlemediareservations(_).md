@@ -19,9 +19,9 @@ func setupPanelShouldHandleMediaReservations(_ aPanel: DRSetupPanel!) -> Bool
 - (BOOL) setupPanelShouldHandleMediaReservations:(DRSetupPanel *) aPanel;
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 Return `NO` to indicate the delegate will handle media reservations. Return `YES` to indicate the setupPanel should handle media reservations itself.
 

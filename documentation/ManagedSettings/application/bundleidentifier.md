@@ -17,7 +17,7 @@ The unique string that identifies this app.
 let bundleIdentifier: String?
 ```
 
-#### Discussion
+## Discussion
 
 In an extension that provides shield configurations, this property provides the app’s bundle identifier. When you access this property outside that extension, the value is `nil`. See `ShieldConfigurationDataSource` in the `ManagedSettingsUI` framework for more information.
 

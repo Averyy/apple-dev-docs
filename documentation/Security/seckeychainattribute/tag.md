@@ -19,7 +19,7 @@ var tag: SecKeychainAttrType
 SecKeychainAttrType tag;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SecItemAttr`](../secitemattr.md) for valid attribute types.
 

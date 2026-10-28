@@ -17,7 +17,7 @@ typedef struct CMNamedColor {
 } CMNamedColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in a named color space is composed of a single component, `namedColorIndex`, represented as a numeric value within the range of an unsigned long, or 1 to 232 – 1 inclusive. 
 

@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a valid enumeration value.
 interface ValueNotEnumValueError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

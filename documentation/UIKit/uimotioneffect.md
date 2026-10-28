@@ -24,11 +24,11 @@ class UIMotionEffect
 @interface UIMotionEffect : NSObject
 ```
 
-#### Overview
+## Overview
 
 Subclasses of [`UIMotionEffect`](./uimotioneffect.md) are responsible for defining the behavior to apply to a view when motion is detected. They do this by overriding the [`keyPathsAndRelativeValues(forViewerOffset:)`](./uimotioneffect/keypathsandrelativevalues%28forvieweroffset%29.md) method and returning one or more key paths representing the view properties to modify.
 
-##### Subclassing notes
+### Subclassing notes
 
 This class is abstract and can’t be instantiated directly. You can use the [`UIInterpolatingMotionEffect`](./uiinterpolatingmotioneffect.md) class to implement effects or you can subclass and implement your own effects. If you subclass, your subclass must conform to the [`NSCopying`](../Foundation/nscopying.md) and [`NSCoding`](../Foundation/nscoding.md) protocols and must implement the [`keyPathsAndRelativeValues(forViewerOffset:)`](./uimotioneffect/keypathsandrelativevalues%28forvieweroffset%29.md) method.
 

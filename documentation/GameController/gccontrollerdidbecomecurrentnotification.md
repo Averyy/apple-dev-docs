@@ -20,7 +20,7 @@ A notification that posts when a controller becomes the current controller.
 extern NSString * const GCControllerDidBecomeCurrentNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](./gccontroller.md) object that’s current.
 

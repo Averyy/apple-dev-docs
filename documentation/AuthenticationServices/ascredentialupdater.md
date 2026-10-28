@@ -21,7 +21,7 @@ A class to pass credential update events to credential managers enabled on the s
 final class ASCredentialUpdater
 ```
 
-#### Overview
+## Overview
 
 The `ASCredentialUpdater` implements the functionality of the WebAuthn Signal API, allowing apps to update credential managers with information about existing credentials. By informing credential managers of updated, removed, or revoked credentials, the credential managers can stay synchronized with the credential information of the person using the device.
 

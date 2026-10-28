@@ -21,7 +21,7 @@ The total allocated size on-disk for the file, in bytes.
 var fileAllocatedSize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The allocated size in bytes is the number of blocks times block size.
 

@@ -12,7 +12,7 @@ Base your symbol on an existing symbol in the SF Symbols app. For example, the c
 
 For design guidance, see [Human Interface Guidelines > SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/).
 
-#### Export a custom symbol template file
+## Export a custom symbol template file
 
 After you locate a symbol image to use as a base for your design, choose File > Duplicate as Custom Symbol. The app creates a new category at the bottom of the categories sidebar where you find your custom symbols. To create an SVG file for your custom symbol, export a symbol template file for design customization by selecting the symbol and choosing File > Export Template.
 
@@ -22,7 +22,7 @@ Choose between static or variable when exporting a template. Use a static setup 
 
 After you export a template file, you use a vector-drawing app, such as Adobe Illustrator or Sketch, to begin modifying it.
 
-#### Manage symbol image variants
+## Manage symbol image variants
 
 The Symbols layer contains up to 27 sublayers, each representing a symbol image variant. Identifiers of symbol variants have the form `<weight>-<{S, M, L}>`, where `weight` corresponds to a weight of the San Francisco system font and `S`, `M`, or `L` matches the small, medium, or large symbol scale.
 
@@ -42,7 +42,7 @@ SF Symbols treats a symbol as path-based, rather than stroke-based, if all the s
 
 A template doesn’t need to contain all 27 variants. You can add as many variants to your template as you want, and if they’re present, the system uses them instead of interpolation. You can delete the variants you don’t need, so you can produce as many weights and scales as your app requires.
 
-#### Organize the Guides layer
+## Organize the Guides layer
 
 The system uses guides to align your custom symbol image with surrounding text. For example, it uses the provided baseline and cap height information for each of the three font scales to compute the symbol image’s baseline offset and cap height.
 
@@ -59,7 +59,7 @@ Each image variant of a symbol can have its own margin guides. This allows the m
 
 Symbols can contain negative margins to aid with horizontal alignment. If you don’t specify explicit margin guides, the system uses the next available margins it finds — interpolated margins (if the template is interpolatable), `Regular-M`, `Regular-S`, and, finally, any available margins the system can use.
 
-#### Create your custom symbol image
+## Create your custom symbol image
 
 Start creating your custom symbol image by modifying the symbol in the template file you export. If you export a variable template, modify all three symbol configurations so the system can generate the other variants.
 
@@ -83,13 +83,13 @@ When you create a symbol, you work on the monochrome representation. To ensure t
 
 Image variants adapt automatically according to a person’s device language, including right-to-left writing systems. If you’re designing for left-to-right and right-to-left writing systems, consider the directionality and overall look of both localized variants. Some symbols don’t have the intended look when you mirror them. For design guidance, see [Human Interface Guidelines > Right to left](https://developer.apple.com/design/human-interface-guidelines/right-to-left/).
 
-#### Preserve annotations and meta information in the Notes layer
+## Preserve annotations and meta information in the Notes layer
 
 The Notes layer contains optional annotations and meta information about the template file that can help you understand its contents. The `template-version` layer contains a required version string that indicates the template format version, so don’t remove it, or SF Symbols can’t read the file. The `artboard` layer makes sure design tools display the template with a convenient canvas size and legible symbols.
 
 > **Note**:  You don’t need to modify the contents of the Notes layer. Lock the `artboard` layer in your vector-drawing app before making any modifications to the file to avoid accidentally moving the artboard layer.
 
-#### Export your custom symbol and preserve all names
+## Export your custom symbol and preserve all names
 
 When you finish designing your symbol, export it from your vector-drawing app as an SVG file with maximum precision. Some vector-drawing apps export SVGs at low precision by default, so export your SVG by changing the default decimal place value to 7 or greater. Confirm that the SVG file preserves all of the identifiers for your symbol variants and guides.
 

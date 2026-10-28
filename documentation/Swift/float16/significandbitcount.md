@@ -21,7 +21,7 @@ The available number of fractional significand bits.
 static var significandBitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For fixed-width floating-point types, this is the actual number of fractional significand bits.
 

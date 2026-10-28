@@ -21,11 +21,11 @@ Returns a texture resource by synchronously loading it from a bundle.
 @preconcurrency static func load(named name: String, in bundle: Bundle? = nil) throws -> TextureResource
 ```
 
-#### Return Value
+## Return Value
 
 The loaded resource.
 
-#### Discussion
+## Discussion
 
 Loading a [`TextureResource`](../textureresource.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](./init%28named,in%29.md) for an example that demonstrates how to safely load content.
 

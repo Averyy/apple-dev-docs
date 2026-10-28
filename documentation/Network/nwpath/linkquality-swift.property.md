@@ -21,7 +21,7 @@ Represents the link quality measurement of the link layer network attachment
 var linkQuality: NWPath.LinkQuality { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to tune initial values for algorithms that can scale with the capabilities of the network. Do not use this value to gate connection attempts or to override adjustments that would be made based on actual network performance.
 

@@ -5,11 +5,11 @@
 
 Find text in your app that needs translation and verify that your interface adapts to translated text.
 
-#### Overview
+## Overview
 
 Before you localize your app, use Xcode to identify nonlocalized strings in your interface and to verify whether your interface adjusts to the characteristics of localized strings.
 
-##### Find nonlocalized strings
+### Find nonlocalized strings
 
 Nonlocalized strings are text that appears in your interface that Xcode won’t include in exported files. To find nonlocalized strings in your app, choose Product > Scheme > Edit Scheme in Xcode. In the sheet that appears, select the Run scheme action in the left column, and click Options on the right. Then select “Show non-localized strings” under Localization Debugging and click Close.
 
@@ -17,7 +17,7 @@ When you run your app, the nonlocalized strings appear in all caps.
 
 ![Screenshot of the Xcode Scheme editor with the Run scheme selected and showing the App Language and App Region menus in the detail area.](https://developer.apple.com/tutorials/images/com.apple.Xcode/preparing-your-interface-for-localization-1@2x.png)
 
-##### Run your app using pseudolanguages
+### Run your app using pseudolanguages
 
 You can test your interface with samples of text that exhibit the characteristics of different types of languages. In Xcode, choose Product > Scheme > Edit Scheme. In the sheet that appears, select the Run scheme action in the left column, and click Options on the right. Choose one of the pseudolanguages at the bottom of the App Language pop-up menu and click Close in the sheet.
 

@@ -20,11 +20,11 @@ func ODRecordContainsMember(_ group: ODRecordRef!, _ member: ODRecordRef!, _ err
 extern bool ODRecordContainsMember(ODRecordRef group, ODRecordRef member, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `inMember` is a member of `inGroup`; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This function uses system APIs instead of examining attributes to determine membership.
 

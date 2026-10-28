@@ -19,7 +19,7 @@ func update()
 - (void) updateCandidates;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the Input Method Kit  calls the candidates method of the [`IMKInputController`](../imkinputcontroller.md) class. Note that the candidates list is updated, but the visible state of the window does not change. In other words, if the window is hidden, it remains hidden. If the window is visible, it remains visible.
 

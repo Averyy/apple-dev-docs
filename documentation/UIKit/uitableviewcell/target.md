@@ -19,7 +19,7 @@ The target object to receive action messages.
 @property (nonatomic, assign, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 The target object receives action messages when the user taps a cell’s insert button, delete button, or accessory view. The default value is `nil`, which tells the application to go up the responder chain to find a target. Note that the target is a weak reference.
 

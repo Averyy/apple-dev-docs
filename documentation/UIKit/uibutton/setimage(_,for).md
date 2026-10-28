@@ -23,7 +23,7 @@ func setImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 At a minimum, always set an image for the [`normal`](../uicontrol/state-swift.struct/normal.md) state when associating images to a button. If you don’t specify an image for the other states, the button uses the image associated with [`normal`](../uicontrol/state-swift.struct/normal.md). If you don’t specify an image for the [`normal`](../uicontrol/state-swift.struct/normal.md) state, the button uses a system value.
 

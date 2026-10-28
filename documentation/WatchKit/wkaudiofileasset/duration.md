@@ -19,7 +19,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 The duration of the audio file is obtained from the audio file itself.
 

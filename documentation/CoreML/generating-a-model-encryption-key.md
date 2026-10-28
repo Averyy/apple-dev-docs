@@ -5,13 +5,13 @@
 
 Create a model encryption key to encrypt a compiled model or model archive.
 
-#### Overview
+## Overview
 
 Use a model’s encryption key to encrypt a model archive for deployment or to encrypt a model compiled and bundled into your app.
 
 > ❗ **Important**:  You must have signed in with your Apple ID in the Apple ID pane in System Preferences to generate a model encryption key in Xcode.
 
-##### Create the model encryption key
+### Create the model encryption key
 
 Open a model in Xcode, click the Utilities tab, and click Create Encryption Key.
 
@@ -25,7 +25,7 @@ Xcode’s confirmation dialog provides an arrow button that takes you to the enc
 
 ![Screenshot of an Xcode confirmation dialog, “Model Key Generated”, highlighting a circular button with an inscribed right arrow to the right of the text, “Classifier dot ML model key saved to disk.” The dialog has two additional informational tips: The first reads, “Encrypt this model for a specific target by navigating to Build Phases (right arrow), Compile Sources and adding “dash-dash path to dot ML model key” to the model’s Compiler Flags.” The second reads, “Optionally, to encrypt a model for Cloud Kit deployment, you can use this dot ML model key when you generate a Model Archive.”](https://developer.apple.com/tutorials/images/com.apple.coreml/media-3691090@2x.png)
 
-##### Locate the model encryption key
+### Locate the model encryption key
 
 Use the first button in the confirmation dialog to show the model encryption key in Finder, or navigate to the model’s enclosing folder.
 

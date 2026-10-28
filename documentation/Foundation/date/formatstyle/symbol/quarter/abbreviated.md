@@ -21,7 +21,7 @@ The abbreviated representation of a quarter.
 static var abbreviated: Date.FormatStyle.Symbol.Quarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys an abbreviated representation of a quarter. For example, `Q2`.
 

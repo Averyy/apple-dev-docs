@@ -25,7 +25,7 @@ var flatness: CGFloat { get set }
 @property (nonatomic) CGFloat flatness;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses line segments to approximate the curved shapes of text characters when converting text into a three-dimensional geometry. (These segments become side polygons when SceneKit extrudes the text.) Higher flatness values result in fewer segments, reducing the smoothness of curves and improving rendering performance. Lower values result in more segments, increasing the smoothness of curves at a cost to rendering performance.
 

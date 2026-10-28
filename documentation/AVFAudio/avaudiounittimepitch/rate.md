@@ -24,7 +24,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.0. The range of supported values is `1/32` to `32.0`.
 

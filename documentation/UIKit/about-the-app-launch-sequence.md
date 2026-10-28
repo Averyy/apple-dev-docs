@@ -5,7 +5,7 @@
 
 Learn the order in which the system executes your code at app launch time.
 
-#### Overview
+## Overview
 
 An app launch involves a complex sequence of steps, most of which the system handles automatically. During the launch sequence, UIKit calls methods in your app delegate and scene delegate so you can prepare your app for user interaction and perform any tasks specific to your app’s requirements. The following illustrates the individual steps of this launch sequence, from when the user or system launches your app to when the sequence completes:
 
@@ -24,7 +24,7 @@ Depending on device conditions, the system may *prewarm* your app — launch non
 
 After the system prewarms your app’s process, that new process remains in a suspended state until the system wakes your app to continue into the standard launch sequence, or the system ends the prewarmed process to reclaim resources. The system can prewarm your app after a device reboot, and periodically as system conditions allow.
 
-##### Optimize app launch performance
+### Optimize app launch performance
 
 To achieve faster startup times, minimize the amount of work your app performs before the call to [`UIApplicationMain(_:_:_:_:)`](./uiapplicationmain%28_,_,_,_%29-1yub7.md). Running expensive or time-consuming code in methods that the system calls automatically before `main()`, such as [`load()`](../ObjectiveC/nsobject-swift.class/load%28%29.md), can slow down your app’s launch time.
 

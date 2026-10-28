@@ -15,7 +15,7 @@ A unique identifier for bookmarks.
 struct StateBookmarkIdentifier
 ```
 
-#### Overview
+## Overview
 
 A bookmark identifier needs to be unique across all instances of the same tabletop game.
 

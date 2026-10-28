@@ -19,7 +19,7 @@ let kSecMatchSubjectEndsWith: CFString
 extern CFStringRef const kSecMatchSubjectEndsWith;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md). If provided, returned certificates or identities are limited to those whose subject ends with this string.
 

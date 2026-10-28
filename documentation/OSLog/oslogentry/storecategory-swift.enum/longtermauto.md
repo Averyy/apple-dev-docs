@@ -25,7 +25,7 @@ case longTermAuto
 OSLogEntryStoreCategoryLongTermAuto
 ```
 
-#### Discussion
+## Discussion
 
 Instead of tagging a hint with a number of days that the entry should be preserved, the `longTermAuto` case is preserved based on the amount of space available. Therefore, it will automatically make determinations on how long to preserve the entry. Entries using this case should be persisted in a filesystem-backed data store.
 

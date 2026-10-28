@@ -21,7 +21,7 @@ func ABMultiValueGetPropertyType(_ multiValue: ABMultiValue!) -> ABPropertyType
 extern ABPropertyType ABMultiValueGetPropertyType(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 The type of the values contained in `multiValue` or kABInvalidPropertyType when `multiValue` is empty or contains values of different types.
 

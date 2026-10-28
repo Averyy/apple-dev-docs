@@ -13,11 +13,11 @@ virtual IOReturn setHardwareAddress(
  UInt32addrBytes) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error otherwise.
 
-#### Overview
+## Overview
 
 This method call is synchronized by the workloop's gate.
 

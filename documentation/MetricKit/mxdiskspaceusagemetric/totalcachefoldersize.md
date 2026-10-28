@@ -25,7 +25,7 @@ var totalCacheFolderSize: Measurement<UnitInformationStorage> { get }
 @property (strong, readonly, nonnull) NSMeasurement<NSUnitInformationStorage *> * totalCacheFolderSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this metric represents total size of [`cachesDirectory`](../../Foundation/url/cachesdirectory.md).
 

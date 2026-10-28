@@ -24,11 +24,11 @@ class func success(with resolvedCurrencyAmount: INCurrencyAmount) -> Self
 + (instancetype) successWithResolvedCurrencyAmount:(INCurrencyAmount *) resolvedCurrencyAmount;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCurrencyAmountResolutionResult`](../incurrencyamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

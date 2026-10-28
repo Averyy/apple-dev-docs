@@ -13,7 +13,7 @@ Add a new collection.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand adds a package collection hosted on the web (HTTPS required):
 
@@ -36,7 +36,7 @@ $ swift package-collection add https://www.example.com/packages.json [--order N]
 Added "Sample Package Collection" to your package collections.
 ```
 
-##### Signed package collections
+### Signed package collections
 
 Publishers of a package collection may [sign a collection to protect its contents](./packagecollections.md#Protecting-package-collections). The package manager will check if a signed collection’s signature is valid before importing it. If the validation check fails, the package manager returns an error:
 
@@ -62,7 +62,7 @@ Users should NOT add the package collection in this case.
 
 For more details on signature validation, see [Signed package collections](./packagesecurity.md#Signed-package-collections).
 
-###### Trusted root certificates
+##### Trusted root certificates
 
 The package manager [validates the certificate](./packagesecurity.md#Trusted-root-certificates) of a signed collection as a part of its signature validation to make sure that the root certificate is trusted.
 
@@ -73,7 +73,7 @@ The collection's signature cannot be verified due to missing configuration.
 
 Users can explicitly specify they trust a publisher and any collections they publish, by obtaining that publisher’s root certificate and saving it to `~/.swiftpm/config/trust-root-certs`. The root certificates must be DER-encoded. Since the package manager trusts all certificate chains under a root, depending on what roots are installed, some publishers may already be trusted implicitly and users don’t need to explicitly specify each one.
 
-###### Unsigned package collections
+#### Unsigned package collections
 
 Users will get an error when trying to add an unsigned package collection:
 
@@ -90,7 +90,7 @@ $ swift package-collection add https://www.example.com/packages.json --trust-uns
 
 The `--skip-signature-check` flag has no effects on unsigned collections.
 
-#### Usage
+## Usage
 
 ```
 package-collection add <collection-url> [--order=<order>]

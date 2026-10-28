@@ -24,7 +24,7 @@ case none
 AVAudioSessionPortOverrideNone
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to route audio to the system default outputs for the current category and mode.
 

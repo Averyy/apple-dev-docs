@@ -15,7 +15,7 @@ A promise that has a function to cancel its operation.
 interface CancellablePromise
 ```
 
-#### Overview
+## Overview
 
 This class wraps an ordinary promise, but also provides a method that can be used to cancel the promise. The `cancel` function throws `CancelledError` if called.
 

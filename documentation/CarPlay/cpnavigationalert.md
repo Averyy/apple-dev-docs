@@ -22,7 +22,7 @@ class CPNavigationAlert
 @interface CPNavigationAlert : NSObject
 ```
 
-#### Overview
+## Overview
 
 To display a navigation alert, create an instance of [`CPNavigationAlert`](./cpnavigationalert.md) and pass it to the map template’s [`present(navigationAlert:animated:)`](./cpmaptemplate/present%28navigationalert,animated%29.md) method. When creating an alert, you must provide a title, action, and duration. The duration tells the system how long to show the alert before automatically dismissing it. You can also include a subtitle and secondary action when needed.
 

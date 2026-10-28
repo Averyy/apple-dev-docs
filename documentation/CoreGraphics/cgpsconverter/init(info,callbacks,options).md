@@ -20,7 +20,7 @@ init?(info: UnsafeMutableRawPointer?, callbacks: UnsafePointer<CGPSConverterCall
 extern CGPSConverterRefCGPSConverterCreate(void *info, const CGPSConverterCallbacks *callbacks, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new PostScript converter, or `NULL` if a converter could not be created. You are responsible for releasing this object.
 

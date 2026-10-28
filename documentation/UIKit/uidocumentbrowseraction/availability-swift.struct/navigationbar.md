@@ -22,7 +22,7 @@ static var navigationBar: UIDocumentBrowserAction.Availability { get }
 UIDocumentBrowserActionAvailabilityNavigationBar
 ```
 
-#### Discussion
+## Discussion
 
 The system enables this action as soon as the user makes a valid selection, as determined by the [`supportedContentTypes`](../supportedcontenttypes.md) and [`supportsMultipleItems`](../supportsmultipleitems.md) properties.
 

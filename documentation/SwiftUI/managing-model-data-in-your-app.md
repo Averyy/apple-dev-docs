@@ -13,7 +13,7 @@ Create connections between your app’s data model and views.
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 A SwiftUI app can display data that people can change using the app’s user interface (UI). To manage that data, an app creates a data model, which is a custom type that represents the data. A data model provides separation between the data and the views that interact with the data. This separation promotes modularity, improves testability, and helps make it easier to reason about how the app works.
 
@@ -23,7 +23,7 @@ SwiftUI helps keep your app’s UI up to date with changes made to the data than
 
 > **Note**: [Observation](../Observation/Observation.md) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [Migrating from the Observable Object protocol to the Observable macro](./migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
-##### Make model data observable
+### Make model data observable
 
 To make data changes visible to SwiftUI, apply the [`Observable()`](../Observation/observable%28%29.md) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
 
@@ -37,7 +37,7 @@ To make data changes visible to SwiftUI, apply the [`Observable()`](../Observati
 
 > ❗ **Important**: The [`Observable()`](../Observation/observable%28%29.md) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](../Observation/observable.md) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
 
-##### Observe model data in a view
+### Observe model data in a view
 
 In SwiftUI, a view forms a dependency on an observable data model object, such as an instance of `Book`, when the view’s [`body`](./view/body-8kl5o.md) property reads a property of the object. If `body` doesn’t read any properties of an observable data model object, the view doesn’t track any dependencies.
 
@@ -191,7 +191,7 @@ struct LibraryItemView: View {
 }
 ```
 
-##### Create the source of truth for model data
+### Create the source of truth for model data
 
 To create and store the source of truth for model data, declare a private variable and initialize it with a instance of an observable data model type. Then add the [`State()`](./state%28%29.md) macro to declare that SwiftUI manages the property. For example, the following code stores an instance of the data model type `Book` in the state variable `book`:
 
@@ -223,7 +223,7 @@ struct BookReaderApp: App {
 }
 ```
 
-##### Share model data throughout a view hierarchy
+### Share model data throughout a view hierarchy
 
 If you have a data model object, like `Library`, that you want to share throughout your app, you can either:
 
@@ -313,7 +313,7 @@ In cases where there is no guarantee that an object is in the environment, retri
 @Environment(Library.self) private var library: Library?
 ```
 
-##### Change model data in a view
+### Change model data in a view
 
 In most apps, people can change data that the app presents. When data changes, any views that display the data should update to reflect the changed data. With Observation in SwiftUI, a view can support data changes without using property wrappers or bindings. For example, the following toggles the `isAvailable` property of a book in the action closure of a button:
 

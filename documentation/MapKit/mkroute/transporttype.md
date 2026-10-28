@@ -25,7 +25,7 @@ var transportType: MKDirectionsTransportType { get }
 @property (nonatomic, readonly) MKDirectionsTransportType transportType;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the primary transport type used for the route. Individual steps of the route might use different transport types.
 

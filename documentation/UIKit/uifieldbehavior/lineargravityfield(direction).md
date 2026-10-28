@@ -23,11 +23,11 @@ class func linearGravityField(direction: CGVector) -> Self
 + (instancetype) linearGravityFieldWithVector:(CGVector) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a directional gravitation force to items with mass.
 
-#### Discussion
+## Discussion
 
 This field creates a directional gravitational force that applies uniformly to all dynamic items with mass. When setting the [`strength`](./strength.md) of the field, positive values attract items in the direction of the vector and negative values repel items. The force on a given item can be determined by the equation `F = ma`, where force equals the mass of the item multiplied by the acceleration imposed by the gravitational field, which with this type of field is constant.
 

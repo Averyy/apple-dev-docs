@@ -21,7 +21,7 @@ func unmatchEthernet()
 - (void) unmatchEthernet;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the provider doesn’t need to operate if the device’s active network connection is Ethernet. Typically, you call this if you determine the provider isn’t compatible with the network when running over Ethernet.
 

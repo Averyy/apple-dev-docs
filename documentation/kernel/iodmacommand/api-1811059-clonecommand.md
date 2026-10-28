@@ -12,11 +12,11 @@ virtual IODMACommand *cloneCommand(
  void *refCon = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialised, 0 otherwise.
 
-#### Overview
+## Overview
 
 Factory function to create and initialise an IODMACommand in one operation. The current command's specification will be duplicated in the new object, but however none of its state will be duplicated. This means that it is safe to clone a command even if it is currently active and running, however you must be certain that the command to be duplicated does have a valid reference for the duration.
 

@@ -24,7 +24,7 @@ class PKRecurringPaymentSummaryItem
 @interface PKRecurringPaymentSummaryItem : PKPaymentSummaryItem
 ```
 
-#### Overview
+## Overview
 
 [`PKRecurringPaymentSummaryItem`](./pkrecurringpaymentsummaryitem.md) is a subclass of [`PKPaymentSummaryItemType`](./pkpaymentsummaryitemtype.md) and inherits all properties of the parent class.
 

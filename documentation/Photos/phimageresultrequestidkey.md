@@ -24,7 +24,7 @@ let PHImageResultRequestIDKey: String
 extern NSString * const PHImageResultRequestIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key provides information about an image loading result in the `resultHandler` block for methods listed in Requesting Images. The corresponding value is an `NSNumber` object containing an integer value.This identifier matches that returned when making a request. You can use it with the [`cancelImageRequest(_:)`](./phimagemanager/cancelimagerequest%28_%29.md) method to cancel requests with pending results that are no longer needed.
 

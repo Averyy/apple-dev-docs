@@ -24,11 +24,11 @@ func reversing() -> UIBezierPath
 - (UIBezierPath *) bezierPathByReversingPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the same path shape but for which the path has been created in the reverse direction.
 
-#### Discussion
+## Discussion
 
 Reversing a path does not necessarily change the appearance of the path when rendered. Instead, it changes the direction in which path segments are drawn. For example, reversing the path of a rectangle (whose line segments are normally drawn starting at the origin and proceeding in a counterclockwise direction) causes its line segments to be drawn in a clockwise direction instead. Drawing a reversed path could affect the appearance of a filled pattern, depending on the pattern and the fill rule in use.
 

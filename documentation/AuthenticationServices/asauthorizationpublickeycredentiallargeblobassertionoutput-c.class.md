@@ -19,7 +19,7 @@ A type to represent the output of the requested large binary object operation, w
 @interface ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput : NSObject
 ```
 
-#### Overview
+## Overview
 
 For a read operation, this type contains the saved blob, if one is present and the read succeeds. For a write operation, this type indicates whether the write succeeds.
 

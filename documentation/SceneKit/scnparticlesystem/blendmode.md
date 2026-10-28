@@ -25,7 +25,7 @@ var blendMode: SCNParticleBlendMode { get set }
 @property (nonatomic) SCNParticleBlendMode blendMode;
 ```
 
-#### Discussion
+## Discussion
 
 Together with the [`sortingMode`](./sortingmode.md) property, blend modes affect the appearance of overlapping particle images when rendered.
 

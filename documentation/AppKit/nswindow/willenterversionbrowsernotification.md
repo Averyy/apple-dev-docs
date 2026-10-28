@@ -19,7 +19,7 @@ class let willEnterVersionBrowserNotification: NSNotification.Name
 extern NSNotificationName const NSWindowWillEnterVersionBrowserNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that will enter version browser mode. This notification doesn’t contain a `userInfo` dictionary.
 

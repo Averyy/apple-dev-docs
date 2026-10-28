@@ -21,11 +21,11 @@ Returns the range of absolute time values that a smaller calendar component (suc
 func range(of smaller: Calendar.Component, in larger: Calendar.Component, for date: Date) -> Range<Int>?
 ```
 
-#### Return Value
+## Return Value
 
 The range of absolute time values smaller can take on in larger at the time specified by date. Returns `nil` if larger is not logically bigger than smaller in the calendar, or the given combination of components does not make sense (or is a computation which is undefined).
 
-#### Discussion
+## Discussion
 
 You can use this method to calculate, for example, the range the `day` component can take on in the `month` in which `date` lies.
 

@@ -22,7 +22,7 @@ Predicts multiple possible labels for each string in the given array.
 func predictedLabelHypotheses(forTokens tokens: [String], maximumCount maxCount: Int) -> [[String : Double]]
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries. Each dictionary corresponds to the token at the same index in the input array `tokens`. Within each dictionary, each entry is a predicted label with its associated probability score. These labels are the top candidates proposed as possible labels for the token. Each dictionary contains up to `maxCount` entries.
 

@@ -25,7 +25,7 @@ init(totalUnitCount unitCount: Int64)
 + (NSProgress *) progressWithTotalUnitCount:(int64_t) unitCount;
 ```
 
-#### Discussion
+## Discussion
 
 If a current progress object exists, the initializer uses it to set the value of the [`totalUnitCount`](./totalunitcount.md) property.
 

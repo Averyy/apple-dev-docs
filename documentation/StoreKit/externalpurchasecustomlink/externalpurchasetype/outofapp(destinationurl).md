@@ -21,7 +21,7 @@ The external purchase happens outside of the app.
 case outOfApp(destinationURL: URL?)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This API requires the `destinationURL` parameter in all regions except the EU; omitting it in other regions throws an error.
 

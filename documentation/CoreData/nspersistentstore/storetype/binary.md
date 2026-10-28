@@ -21,7 +21,7 @@ A store that reads from and writes to a persistent binary file.
 static let binary: NSPersistentStore.StoreType
 ```
 
-#### Discussion
+## Discussion
 
 A binary store is atomic, which means Core Data reads and writes the file in its entirety. This behavior is different from a [`sqlite`](./sqlite.md) store, which you can partially modify.
 

@@ -25,11 +25,11 @@ init(url: URL, settings: [String : Any]) throws
 - (instancetype) initWithURL:(NSURL *) url settings:(NSDictionary<NSString *,id> *) settings error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new audio recorder, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 
-#### Discussion
+## Discussion
 
 The system supports the following keys when defining the format settings:
 

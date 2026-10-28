@@ -23,11 +23,11 @@ func index(after i: Range<Bound>.Index) -> Range<Bound>.Index
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Return Value
+## Return Value
 
 The index value immediately after `i`.
 
-#### Discussion
+## Discussion
 
 The successor of an index must be well defined. For an index `i` into a collection `c`, calling `c.index(after: i)` returns the same index every time.
 

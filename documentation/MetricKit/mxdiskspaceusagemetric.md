@@ -25,7 +25,7 @@ class MXDiskSpaceUsageMetric
 @interface MXDiskSpaceUsageMetric : MXMetric
 ```
 
-#### Overview
+## Overview
 
 This object provides insights on how your app utilizes disk space and related storage technologies, such as cache folders and clone files.
 
@@ -33,13 +33,13 @@ Disk space is a limited resource shared by many apps. Optimize your app’s disk
 
 > **Note**: MetricKit reports MXDiskSpaceUsageMetric on devices running iOS 26 or later.
 
-##### Disk Space Measurements
+### Disk Space Measurements
 
 Modern file systems such APFS provide enhanced features to maximize space utilization, such as file cloning. The disk space usage metric reports size accurately without double counting the cloned files.
 
 For example, if you copy a file using [`copyItem(at:to:)`](../Foundation/filemanager/copyitem%28at,to%29.md), the file system shows two separate files. However, due to the file system optimization, the copied file shares the same storage space with the original file. If you manually calculate the size of all your files, your calculation may also include the copied file, resulting in a larger size than expected.
 
-##### Storing App-Specific Files
+### Storing App-Specific Files
 
 Use the [`totalCacheFolderSize`](./mxdiskspaceusagemetric/totalcachefoldersize.md) property of MXDiskSpaceUsageMetric to gain insights into how the operating system manages your app’s cached content in the field. Placing files in the appropriate directories, such as the [`cachesDirectory`](../Foundation/url/cachesdirectory.md) and [`temporaryDirectory`](../Foundation/url/temporarydirectory.md) (see [File System Basics](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)), allows the system to intelligently manage and purge content when necessary, ensuring optimal disk space utilization and a better user experience.
 

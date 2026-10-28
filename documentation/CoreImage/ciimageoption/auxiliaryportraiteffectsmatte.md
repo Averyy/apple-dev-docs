@@ -24,7 +24,7 @@ static let auxiliaryPortraitEffectsMatte: CIImageOption
 extern CIImageOption const kCIImageAuxiliaryPortraitEffectsMatte;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) containing a Boolean `true` or `false`.
 

@@ -18,7 +18,7 @@ Notifies the delegate when the session updates the scan results.
 func captureSession(_ session: RoomCaptureSession, didUpdate room: CapturedRoom)
 ```
 
-#### Discussion
+## Discussion
 
 The `room` structure contains all surfaces/objects in the captured room regardless of the recent changes.
 

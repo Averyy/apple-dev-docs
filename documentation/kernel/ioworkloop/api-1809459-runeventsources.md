@@ -9,11 +9,11 @@
 virtual bool runEventSources();
 ```
 
-#### Return Value
+## Return Value
 
 Return false if the work loop is shutting down, true otherwise.
 
-#### Overview
+## Overview
 
 Consists of the inner 2 loops of the threadMain function(qv). The outer loop terminates when there is no more work, and the inside loop walks the event list calling the checkForWork method in each event source. If an event source has more work to do, it can set the more flag and the outer loop will repeat.
 

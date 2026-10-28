@@ -24,7 +24,7 @@ let kCIInputTimeKey: String
 extern NSString * const kCIInputTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for z scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies a time.
 

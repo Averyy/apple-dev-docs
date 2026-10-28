@@ -29,7 +29,7 @@ var handlerQueue: dispatch_queue_t { get set }
 
 - [Handling input events](../handling-input-events.md)
 
-#### Discussion
+## Discussion
 
 The default queue is the main queue. Set this property to another queue to asynchronously call value change handlers (see [`GCControllerAxisInput`](../gccontrolleraxisinput.md), [`GCControllerButtonInput`](../gccontrollerbuttoninput.md), [`GCControllerDirectionPad`](../gccontrollerdirectionpad.md), and [`GCMotion`](../gcmotion.md)). For example, if you handle input on another queue, set this property when you first access the input device.
 

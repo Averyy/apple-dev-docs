@@ -33,7 +33,7 @@ class URLSessionConfiguration
 - [Improving network reliability using Multipath TCP](./improving-network-reliability-using-multipath-tcp.md)
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 An [`URLSessionConfiguration`](./urlsessionconfiguration.md) object defines the behavior and policies to use when uploading and downloading data using an [`URLSession`](./urlsession.md) object. When uploading or downloading data, creating a configuration object is always the first step you must take. You use this object to configure the timeout values, caching policies, connection requirements, and other types of information that you intend to use with your [`URLSession`](./urlsession.md) object.
 
@@ -43,7 +43,7 @@ It is important to configure your [`URLSessionConfiguration`](./urlsessionconfig
 
 For more information about using configuration objects to create sessions, see [`URLSession`](./urlsession.md).
 
-##### Types of session configurations
+### Types of session configurations
 
 The behavior and capabilities of a URL session are largely determined by the kind of configuration used to create the session.
 

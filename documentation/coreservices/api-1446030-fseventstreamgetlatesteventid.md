@@ -18,11 +18,11 @@ func FSEventStreamGetLatestEventId(_ streamRef: ConstFSEventStreamRef) -> FSEven
 FSEventStreamEventId FSEventStreamGetLatestEventId(ConstFSEventStreamRef streamRef);
 ```
 
-#### Return Value
+## Return Value
 
 The sinceWhen attribute of the stream.
 
-#### Discussion
+## Discussion
 
 Fetches the sinceWhen property of the stream. Upon receiving an event (and just before invoking the client's callback) this attribute is updated to the highest-numbered event ID mentioned in the event.
 

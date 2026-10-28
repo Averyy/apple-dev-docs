@@ -21,11 +21,11 @@ func refreshCarrierToken() -> Bool
 - (BOOL) refreshCarrierToken;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the system performs a token refresh in response to this call; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Call this method to update the [`carrierToken`](./carriertoken.md) when the token exists but the server rejects it.
 

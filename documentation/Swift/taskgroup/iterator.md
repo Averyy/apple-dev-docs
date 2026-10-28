@@ -23,7 +23,7 @@ struct Iterator
 
 Available when `ChildTaskResult` conforms to `Sendable`.
 
-#### Overview
+## Overview
 
 The elements returned by this iterator appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group.
 

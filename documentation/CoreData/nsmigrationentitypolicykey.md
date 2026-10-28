@@ -25,7 +25,7 @@ let NSMigrationEntityPolicyKey: String
 extern NSString * const NSMigrationEntityPolicyKey;
 ```
 
-#### Discussion
+## Discussion
 
 To access this key in a custom value expression string in the Xcode mapping model editor use `$entityPolicy`.
 

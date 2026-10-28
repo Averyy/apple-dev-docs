@@ -20,7 +20,7 @@ A buffer in memory containing normalized landmark points.
 @property (assign, readonly, nullable) const CGPoint * normalizedPoints;
 ```
 
-#### Discussion
+## Discussion
 
 This pointer points to the address of a buffer containing [`CGPoint`](../../CoreFoundation/cgpoint.md) structs representing landmark points.
 

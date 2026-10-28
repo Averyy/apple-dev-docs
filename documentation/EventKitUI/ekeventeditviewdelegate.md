@@ -22,7 +22,7 @@ protocol EKEventEditViewDelegate : NSObjectProtocol
 @protocol EKEventEditViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates of an [`EKEventEditViewController`](./ekeventeditviewcontroller.md) object conform to this protocol. Use `EKEventEditViewController` to allow the user to either create an event or edit an existing event. To be notified when the user finishes editing the event, set the delegate to an object conforming to this protocol.
 

@@ -25,7 +25,7 @@ func ColorSyncProfileGetURL(_ prof: ColorSyncProfile!, _ error: UnsafeMutablePoi
 extern CFURLRefColorSyncProfileGetURL(ColorSyncProfileRef prof, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The profile’s URL on success, or `NULL` in case of failure.
 

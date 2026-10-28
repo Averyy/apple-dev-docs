@@ -19,7 +19,7 @@
 static SPVector3DFloat SPVector3DFloatNormalize(SPVector3DFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a vector pointing in the same direction of the supplied vector with a length of 1.
 

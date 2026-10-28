@@ -15,11 +15,11 @@ Reporting options for apps promoted object type reports.
 object AppsOptions
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsOptions` configures optional row behavior for apps report responses. Omitting `options` entirely returns only rows with actual metric data and no summary row.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,11 +24,11 @@ func dequantize(_ tensor: MPSGraphTensor, LUTTensor: MPSGraphTensor, name: Strin
 - (MPSGraphTensor *) dequantizeTensor:(MPSGraphTensor *) tensor LUTTensor:(MPSGraphTensor *) LUTTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
-#### Discussion
+## Discussion
 
 Converts a `tensor` of integer indices to a float tensor by applying a lookup operation:
 

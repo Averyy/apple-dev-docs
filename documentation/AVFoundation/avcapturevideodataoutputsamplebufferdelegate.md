@@ -24,7 +24,7 @@ protocol AVCaptureVideoDataOutputSampleBufferDelegate : NSObjectProtocol
 @protocol AVCaptureVideoDataOutputSampleBufferDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol defines an interface for delegates of an [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) object to receive captured video sample buffers and be notified of late sample buffers that were dropped.
 

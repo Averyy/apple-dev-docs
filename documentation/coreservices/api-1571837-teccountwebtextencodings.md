@@ -15,11 +15,11 @@ Counts and returns the number of currently supported textencodings for a region 
 OSStatus TECCountWebTextEncodings(RegionCode locale, ItemCount *numberEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function counts every instance of the same encoding.That is, if different conversion plug-ins support the same textencoding for a conversion process, the text encoding is countedmore than once. Since the `TECGetWebTextEncodings` functionignores duplicate text encoding specifications, `TECCountWebTextEncodings` mayreturn a number greater than the number of array elements neededfor the `availableEncodings[]` parameter. 
 

@@ -10,7 +10,7 @@ Play and edit Cinematic mode video with an adjustable depth of field and focus p
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session [10137: Support Cinematic mode videos in your app](https://developer.apple.com/wwdc23/10137/).
 

@@ -22,7 +22,7 @@ A type that represents a position in the collection.
 associatedtype Index : Comparable where Self.Index == Self.Indices.Element, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index
 ```
 
-#### Discussion
+## Discussion
 
 Valid indices consist of the position of every element and a “past the end” position that’s not valid for use as a subscript argument.
 

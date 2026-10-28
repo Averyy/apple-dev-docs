@@ -19,11 +19,11 @@ Creates an empty background configuration with a transparent background and no d
 static func clear() -> UIBackgroundConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 An empty background configuration with a transparent background and no default styling.
 
-#### Discussion
+## Discussion
 
 Create this configuration for the background of a view. It configures the view with a transparent background and no default styling.
 

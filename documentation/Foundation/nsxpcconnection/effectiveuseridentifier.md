@@ -25,7 +25,7 @@ var effectiveUserIdentifier: uid_t { get }
 @property (readonly) uid_t effectiveUserIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 

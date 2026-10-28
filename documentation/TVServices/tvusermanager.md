@@ -19,7 +19,7 @@ class TVUserManager
 @interface TVUserManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Some apps rely on profiles to maintain separate information for each person who uses a shared device, such as a video content app that retains which shows they watch. To avoid interrupting people with a profile picker each time they launch your app, you can save and retrieve the current user’s selection on a shared device.
 

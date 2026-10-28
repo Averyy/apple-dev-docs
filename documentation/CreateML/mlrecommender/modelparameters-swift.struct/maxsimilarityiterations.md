@@ -15,7 +15,7 @@ The largest number of iterations the recommender uses to build its lookup table.
 var maxSimilarityIterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 This value limits the number of iterations the recommender can use to construct a lookup table. The default value is `1024`.
 

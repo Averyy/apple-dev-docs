@@ -21,7 +21,7 @@ Do not dump the file during backups.
 static var noDump: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_NODUMP`.
 

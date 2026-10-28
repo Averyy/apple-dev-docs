@@ -25,7 +25,7 @@ func fileIsAppendOnly() -> Bool
 - (BOOL) fileIsAppendOnly;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`appendOnly`](../fileattributekey/appendonly.md) file attributes key, or [`false`](../../Swift/false.md) if the file attributes dictionary has no entry for the key.
 

@@ -21,7 +21,7 @@ The extension of this file or directory component.
 var `extension`: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `self` does not contain a `.` anywhere, or only at the start, returns `nil`. Otherwise, returns everything after the dot.
 

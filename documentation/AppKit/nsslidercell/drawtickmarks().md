@@ -19,7 +19,7 @@ func drawTickMarks()
 - (void) drawTickMarks;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method explicitly. It’s included so you can override it in a subclass and draw custom tick marks.
 

@@ -28,7 +28,7 @@ func identify() async throws
 - (void) identifyWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Accessories typically identify themselves by briefly doing something the user can see or hear. The behavior is specific to the device. For example, a light bulb might identify itself by briefly turning on if it is currently off, or by briefly dimming if it is currently on. This can help a user pinpoint one device among several that are similar.
 

@@ -23,7 +23,7 @@ var ports: [AVCaptureInput.Port] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureInputPort *> * ports;
 ```
 
-#### Discussion
+## Discussion
 
 Individual ports post an [`formatDescriptionDidChangeNotification`](./port/formatdescriptiondidchangenotification.md) notification when their [`formatDescription`](./port/formatdescription.md) changes.
 

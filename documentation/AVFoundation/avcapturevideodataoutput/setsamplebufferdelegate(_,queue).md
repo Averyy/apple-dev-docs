@@ -24,7 +24,7 @@ func setSampleBufferDelegate(_ sampleBufferDelegate: (any AVCaptureVideoDataOutp
 - (void) setSampleBufferDelegate:(id<AVCaptureVideoDataOutputSampleBufferDelegate>) sampleBufferDelegate queue:(dispatch_queue_t) sampleBufferCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 When a new video sample buffer is captured, it is sent to the sample buffer delegate using [`captureOutput(_:didOutput:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md). All delegate methods are invoked on the specified dispatch queue.
 
@@ -34,7 +34,7 @@ If your frame processing is consistently unable to keep up with the rate of inco
 
 If you need to minimize the chances of frames being dropped, you should specify a queue on which a sufficiently small amount of processing is being done outside of receiving sample buffers. However, if you migrate extra processing to another queue, you are responsible for ensuring that memory usage does not grow without bound from frames that have not been processed.
 
-##### Special considerations
+### Special considerations
 
 This method uses [`dispatch_retain`](../../Dispatch/dispatch_retain.md) and [`dispatch_release`](../../Dispatch/dispatch_release.md) to manage the queue.
 

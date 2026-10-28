@@ -19,7 +19,7 @@ class var unemphasizedSelectedContentBackgroundColor: NSColor { get }
 @property (class, strong, readonly) NSColor * unemphasizedSelectedContentBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when the window containing the content is not key, or when the view containing the content does not have key focus.
 

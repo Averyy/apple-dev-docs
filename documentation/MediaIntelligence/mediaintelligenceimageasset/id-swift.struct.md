@@ -20,7 +20,7 @@ A unique identifier for an image asset.
 struct ID
 ```
 
-#### Overview
+## Overview
 
 [`MediaIntelligenceImageAsset.ID`](./id-swift.struct.md) is a string-backed identifier you assign to each image asset. The framework uses this value to track assets across calls to [`insertOrUpdateAssets(_:)`](../facegroupanalyzer/insertorupdateassets%28_%29.md) and [`deleteAssets(_:)`](../facegroupanalyzer/deleteassets%28_%29.md).
 

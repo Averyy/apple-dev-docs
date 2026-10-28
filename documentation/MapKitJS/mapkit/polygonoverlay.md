@@ -15,7 +15,7 @@ The getter to use to access the polygon overlay class.
 get PolygonOverlay(): typeof PolygonOverlay;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the getter, otherwise, the getter throws an `Error`.
 

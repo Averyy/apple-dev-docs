@@ -19,7 +19,7 @@ var lastVisitedTimeInterval: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval lastVisitedTimeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The interval is from a reference date as determined by [`NSDate`](../../Foundation/nsdate.md).
 

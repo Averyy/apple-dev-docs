@@ -26,7 +26,7 @@ Chart content that represents data using bars.
 
 - [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
-#### Overview
+## Overview
 
 You can create different kinds of bar charts using the `BarMark` chart content. To create a simple vertical bar chart that plots categories with x positions and numbers with y positions, use [`init(x:y:width:height:stacking:)`](./barmark/init%28x,y,width,height,stacking%29.md). For example, you can display profit by department:
 
@@ -56,7 +56,7 @@ var body: some View {
 
 Swift Charts provides several other initializers for `BarMark`. Below are a few more examples using them. For a full list of initializers see the topic section.
 
-##### Stacked Bar Chart
+### Stacked Bar Chart
 
 `BarkMark` automatically stacks content when more than one bar maps to the same location. You can see this if you split the profit data up by category:
 
@@ -107,7 +107,7 @@ Chart(data) {
 
 You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [`MarkStackingMethod`](./markstackingmethod.md) for the stacking options.
 
-##### 1D Bar Chart
+### 1D Bar Chart
 
 To build a one dimensional chart, use one of the initializers that only requires a [`PlottableValue`](./plottablevalue.md) for one dimension, like [`init(x:yStart:yEnd:width:stacking:)`](./barmark/init%28x,ystart,yend,width,stacking%29.md) for plotting with x. The example below reuses the data from the previous example to get the production department values:
 
@@ -122,7 +122,7 @@ Chart(data) { // Get the Production values.
 
 ![Horizontal bar chart with one bar on the x-axis showing profit ranging from 0 to 15000 with stacked categoreis Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](https://developer.apple.com/tutorials/images/com.apple.Charts/BarMarkSwift.BarMarkHorizontalStacked1DBarChartWithForegroundColor@2x.png)
 
-##### Interval Bar Chart
+### Interval Bar Chart
 
 Use `BarMark` to represent intervals by using the [`init(xStart:xEnd:y:height:)`](./barmark/init%28xstart,xend,y,height%29.md), [`init(xStart:xEnd:y:height:stacking:)`](./barmark/init%28xstart,xend,y,height,stacking%29.md), [`init(x:yStart:yEnd:width:)`](./barmark/init%28x,ystart,yend,width%29.md) or  [`init(x:yStart:yEnd:width:stacking:)`](./barmark/init%28x,ystart,yend,width,stacking%29.md). The example below displays a Gantt chart by plotting the `start` and `end` properties to x positions and the `task` property to y positions:
 

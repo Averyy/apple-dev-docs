@@ -21,7 +21,7 @@ An optional setting that tells the Vision algorithm how to scale an input image.
 var cropAndScaleAction: ImageCropAndScaleAction
 ```
 
-#### Discussion
+## Discussion
 
 Scaling an image ensures that the entire image fits into the algorithm’s input image dimensions, which may require a change in aspect ratio. The default value is [`ImageCropAndScaleAction.scaleToFill`](../imagecropandscaleaction/scaletofill.md).
 

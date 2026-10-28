@@ -21,7 +21,7 @@ Sends an error-level message to the logging system.
 #define os_log_error(log, format, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function is equivalent to calling the [`os_log_with_type`](./os_log_with_type.md) function and specifying a log type of [`OS_LOG_TYPE_ERROR`](../kernel/os_log_type_t/os_log_type_error.md).
 

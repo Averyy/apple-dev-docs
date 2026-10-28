@@ -17,7 +17,7 @@ Creates a payment card reader with the specified options.
 init(options: PaymentCardReader.Options = .init())
 ```
 
-#### Discussion
+## Discussion
 
 Keep a strong reference to the returned object for the duration of the reader session.
 

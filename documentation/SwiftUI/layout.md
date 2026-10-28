@@ -22,7 +22,7 @@ A type that defines the geometry of a collection of views.
 protocol Layout : Sendable, Animatable
 ```
 
-#### Overview
+## Overview
 
 You traditionally arrange views in your app’s user interface using built-in layout containers like [`HStack`](./hstack.md) and [`Grid`](./grid.md). If you need more complex layout behavior, you can define a custom layout container by creating a type that conforms to the `Layout` protocol and implementing its required methods:
 
@@ -61,7 +61,7 @@ BasicVStack {
 }
 ```
 
-##### Support additional behaviors
+### Support additional behaviors
 
 You can optionally implement other protocol methods and properties to provide more layout container features:
 
@@ -72,7 +72,7 @@ You can optionally implement other protocol methods and properties to provide mo
 
 The protocol provides default implementations for these symbols if you don’t implement them. See each method or property for details.
 
-##### Add input parameters
+### Add input parameters
 
 You can define parameters as inputs to the layout, like you might for a [`View`](./view.md):
 
@@ -120,13 +120,13 @@ init() {
 
 For information about Swift initializers, see [Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in *The Swift Programming Language*.
 
-##### Interact with subviews through their proxies
+### Interact with subviews through their proxies
 
 To perform layout, you need information about all of its subviews, which are the views that your container arranges. While your layout can’t interact directly with its subviews, it can access a set of subview proxies through the [`Layout.Subviews`](./layout/subviews.md) collection that each protocol method receives as an input parameter. That type is an alias for the [`LayoutSubviews`](./layoutsubviews.md) collection type, which in turn contains [`LayoutSubview`](./layoutsubview.md) instances that are the subview proxies.
 
 You can get information about each subview from its proxy, like its dimensions and spacing preferences. This enables you to measure subviews before you commit to placing them. You also assign a position to each subview by calling its proxy’s [`place(at:anchor:proposal:)`](./layoutsubview/place%28at,anchor,proposal%29.md) method. Call the method on each subview from within your implementation of the layout’s [`placeSubviews(in:proposal:subviews:cache:)`](./layout/placesubviews%28in,proposal,subviews,cache%29.md) method.
 
-##### Access layout values
+### Access layout values
 
 Views have layout values that you set with view modifiers. Layout containers can choose to condition their behavior accordingly. For example, a built-in [`HStack`](./hstack.md) allocates space to its subviews based in part on the priorities that you set with the [`layoutPriority(_:)`](./view/layoutpriority%28_%29.md) view modifier. Your layout container accesses this value for a subview by reading the proxy’s [`priority`](./layoutsubview/priority.md) property.
 

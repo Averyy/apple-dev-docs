@@ -19,7 +19,7 @@ func CFUserNotificationGetResponseValue(_ userNotification: CFUserNotification!,
 extern CFStringRefCFUserNotificationGetResponseValue(CFUserNotificationRef userNotification, CFStringRef key, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the text field identified by `key` and `idx`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

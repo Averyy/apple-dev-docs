@@ -21,7 +21,7 @@ func addThrottle(descriptor: TCThrottleDescriptor) -> TCThrottle
 - (TCThrottle *) addThrottleWithDescriptor:(TCThrottleDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCThrottle` instance.
 

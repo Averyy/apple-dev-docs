@@ -21,7 +21,7 @@ Returns a point that results from unapplying the specified affine transform.
 static SPPoint3D SPPoint3DUnapplyAffineTransform(SPPoint3D point, SPAffineTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from unapplying the specified affine transform.
 

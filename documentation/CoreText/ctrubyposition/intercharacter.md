@@ -25,7 +25,7 @@ case interCharacter
 kCTRubyPositionInterCharacter
 ```
 
-#### Discussion
+## Discussion
 
 This is the way that Bopomofo annotations are attached to Chinese text in Taiwan.
 

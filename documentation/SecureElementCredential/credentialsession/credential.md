@@ -20,7 +20,7 @@ struct Credential
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 A credential is an abstraction of the cryptographic elements of your applet bundle installed in the Secure Element. You perform this installation with [`provisionCredential(configurationUUID:name:)`](./provisioncredential%28configurationuuid,name%29.md), which retrieves the applet bundle you registered with the [Apple Business Register](https://register.apple.com/login), installs it in the Secure Element, and returns a `Credential` instance.
 

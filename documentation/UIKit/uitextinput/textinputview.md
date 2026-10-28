@@ -23,7 +23,7 @@ optional var textInputView: UIView { get }
 @property (nonatomic, readonly) UIView * textInputView;
 ```
 
-#### Discussion
+## Discussion
 
 The view that both draws the text and provides a coordinate system for all geometric values in this protocol. (This is typically an instance of the [`UITextInput`](../uitextinput.md)-adopting class.) If this property is unimplemented, the first view in the responder chain is selected.
 

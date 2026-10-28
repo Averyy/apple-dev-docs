@@ -25,11 +25,11 @@ func isEqual(to otherArray: [Any]) -> Bool
 - (BOOL) isEqualToArray:(NSArray<id> *) otherArray;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `otherArray` are equal to the contents of the receiving array, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two arrays have equal contents if they each hold the same number of objects and objects at a given index in each array satisfy the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) test.
 

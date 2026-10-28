@@ -25,7 +25,7 @@ func xpc_string_get_length(_ xstring: xpc_object_t) -> Int
 extern size_t xpc_string_get_length(xpc_object_t xstring);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the underlying string, not including the `NULL`-terminator.
 

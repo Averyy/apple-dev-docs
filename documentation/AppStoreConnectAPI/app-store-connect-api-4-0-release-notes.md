@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.0 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - Use the new `webhooks` endpoints to setup and configure notifications for events that happen with your apps, including App version state events and TestFlight feedback events. For more information about webhook notifications, see [Webhook notifications](./webhook-notifications.md).
 - The [Accessibility declarations](./accessibility-declarations.md) resources are now available to automate creating, updating, and reading accessibility declarations for your app per device family. You can also now use [`Modify an app`](./patch-v1-apps-_id_.md) to update the `accessibilityURL` for your app. For more information about accessibility declarations, see [Configuring accessibility declarations for your app](./configuring-accessibility-declarations.md).
@@ -19,7 +19,7 @@ App Store Connect API version 4.0 provides resources that enable you to automate
 - Activities for Game Center resources are now available; for more information, see [Game Center activities](./game-center-activities.md).
 - You can now setup and configure Game Center challenges. For more information on these challenges, see [Game Center challenges](./game-center-challenges.md).
 
-##### Improvements
+### Improvements
 
 - XcodeMetrics now includes `recommendedMetricGoal`. Use [`Get power and performance metrics for an app`](./get-v1-apps-_id_-perfpowermetrics.md) to view the available recommendations for your app metrics.
 - There are new enums available for `mapAction` when creating or modifying an App Clip advanced experience. To learn more, see [`AppClipAdvancedExperience.Attributes.Place`](./appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary.md).
@@ -27,12 +27,12 @@ App Store Connect API version 4.0 provides resources that enable you to automate
 - The attribute `streamlinedPurchasingEnabled` has a default value of `true` for the object [`App.Attributes`](./app/attributes-data.dictionary.md).
 - The attribute `APPLE_VISION_PRO` is now documented for [`Device.Attributes`](./device/attributes-data.dictionary.md).
 
-##### Deprecations
+### Deprecations
 
 - The attribute `challengeEnabled` is now deprecated from [`Enable game center for an app`](./post-v1-gamecenterdetails.md) and [`Modify a game center detail for an app`](./patch-v1-gamecenterdetails-_id_.md). Use `challenges` instead.
 - [`Create a Leaderboard Set Member Localization`](./post-v1-gamecenterleaderboardsetmemberlocalizations.md) and [`Modify a Leaderboard Set Member Localization`](./patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md) are deprecated.
 
-##### Removals
+### Removals
 
 - Create an App Store version submission is now removed. Use [`Create a Review Submission`](./post-v1-reviewsubmissions.md) instead.
 - The `gamblingAndContests` and `seventeenPlus` properties are now removed from [`Read the age-rating declaration`](./get-v1-appinfos-_id_-ageratingdeclaration.md) and [`Modify an age rating declaration`](./patch-v1-ageratingdeclarations-_id_.md). Use the `contests` or `gambling` properties instead.

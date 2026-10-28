@@ -21,11 +21,11 @@ func willResume(withSuspendState suspendState: Data, error: NSErrorPointer) -> B
 - (bool) willResumeWithSuspendState:(NSData *) suspendState error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the framework was able to start restoring the graphics data.
 
-#### Discussion
+## Discussion
 
 This method sets up the device to appear in the same state it was in before the suspend. The device object doesn’t access guest memory during the call to this method.
 

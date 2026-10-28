@@ -17,7 +17,7 @@ Access the activity divided into segments.
 var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`segmentInterval`](./segmentinterval.md) that your app requests via a [`DeviceActivityFilter`](../deviceactivityfilter.md) determines the length of each activity segment.
 

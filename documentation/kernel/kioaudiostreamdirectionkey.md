@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioStream direction attribute.
 #define kIOAudioStreamDirectionKey
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key may be either "Output" or "Input".
 

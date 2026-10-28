@@ -25,7 +25,7 @@ var worldFront: SCNVector3 { get }
 @property (nonatomic, readonly) SCNVector3 worldFront;
 ```
 
-#### Discussion
+## Discussion
 
 Reading this property is equivalent to reading the [`localFront`](./localfront.md) class property and using the [`convertVector(_:to:)`](./convertvector%28_,to%29.md) or [`convertVector(_:from:)`](./convertvector%28_,from%29.md) method to convert that vector from the node’s local coordinate space to the scene’s world coordinate space.
 

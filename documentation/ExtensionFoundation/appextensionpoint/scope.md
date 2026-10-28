@@ -21,7 +21,7 @@ A type that regulates which app extensions may access an extension point.
 struct Scope
 ```
 
-#### Overview
+## Overview
 
 Add a `Scope` type to your extension point definition to restrict the set of app extensions that may bind to the host app. If you don’t include this type in your definition, the default behavior requires app extensions to reside inside the host app. Configure this type with the [`AppExtensionPoint.Scope.Restriction.none`](./scope/restriction/none.md) option to allow app extensions from outside the host app to connect as well. The following example shows an extension point definition that allows all app extensions to connect, including ones outside the host app:
 

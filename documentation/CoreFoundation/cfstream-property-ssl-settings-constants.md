@@ -4,7 +4,7 @@
 
 Constants for use in a `CFDictionary` object that is the value of the `kCFStreamPropertySSLSettings` stream property key.
 
-#### Overview
+## Overview
 
 This enumeration defines the constants for keys in a `CFDictionary` object that is the value of the kCFStreamPropertySSLSettings key.
 

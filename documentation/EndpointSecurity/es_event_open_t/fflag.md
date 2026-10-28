@@ -20,7 +20,7 @@ var fflag: Int32
 int32_t fflag;
 ```
 
-#### Discussion
+## Discussion
 
 This mask differs from the `oflag` values used in `open(2)`. When responding to this event, use `FFLAG` values such as `FREAD` and `FWRITE` instead, rather than `O_RDONLY`, `O_RDWR` and the like.
 

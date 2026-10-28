@@ -23,7 +23,7 @@ struct UpdateListenerOptions
 enum CSSearchableItemUpdateListenerOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When you configure a [`CSSearchableItem`](../cssearchableitem.md) with a listener option, Core Spotlight conveys your request to Apple Intelligence, which is responsible for generating the information. When the information becomes available, Core Spotlight updates the item and reports the change to the [`searchableItemsDidUpdate(_:)`](../cssearchableindexdelegate/searchableitemsdidupdate%28_%29.md) method of your index’s delegate. If your app isn’t running but has a CoreSpotlight delegate app extension, the system calls your app extension’s implementation of this method instead.
 

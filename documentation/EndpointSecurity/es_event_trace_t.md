@@ -20,7 +20,7 @@ struct es_event_trace_t
 typedef struct { ... } es_event_trace_t;
 ```
 
-#### Overview
+## Overview
 
 Endpoint Security may generate this event multiple times for a single trace attempt. This can occur when then targeted process changes parents during the operation.
 

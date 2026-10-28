@@ -19,7 +19,7 @@ var maxWidth: CGFloat { get set }
 @property CGFloat maxWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `MAXFLOAT`.
 

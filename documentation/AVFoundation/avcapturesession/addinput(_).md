@@ -24,7 +24,7 @@ func addInput(_ input: AVCaptureInput)
 - (void) addInput:(AVCaptureInput *) input;
 ```
 
-#### Discussion
+## Discussion
 
 It’s only valid to call this method if [`canAddInput(_:)`](./canaddinput%28_%29.md) returns [`true`](../../Swift/true.md).
 

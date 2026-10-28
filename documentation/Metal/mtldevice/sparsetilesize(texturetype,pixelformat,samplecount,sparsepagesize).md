@@ -25,7 +25,7 @@ func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sa
 - (MTLSize) sparseTileSizeWithTextureType:(MTLTextureType) textureType pixelFormat:(MTLPixelFormat) pixelFormat sampleCount:(NSUInteger) sampleCount sparsePageSize:(MTLSparsePageSize) sparsePageSize;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLSize`](../mtlsize.md) instance.
 

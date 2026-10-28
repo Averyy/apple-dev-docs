@@ -16,11 +16,11 @@ Returns default render quality for drawing on this platform.
 cp_render_quality_t cp_layer_renderer_capabilities_get_default_render_quality(cp_layer_renderer_capabilities_t layer_capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 The default render quality allowed for drawing.
 
-#### Discussion
+## Discussion
 
 This should be used as a base value for the platform quality for drawing.
 

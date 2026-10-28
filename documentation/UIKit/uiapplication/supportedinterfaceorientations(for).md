@@ -24,11 +24,11 @@ func supportedInterfaceOrientations(for window: UIWindow?) -> UIInterfaceOrienta
 - (UIInterfaceOrientationMask) supportedInterfaceOrientationsForWindow:(UIWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask specifying which orientations are supported. See [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) for valid bit-mask values. The value returned by this method must not be `0`.
 
-#### Discussion
+## Discussion
 
 Starting in iOS 8, you should employ the [`UITraitCollection`](../uitraitcollection.md) and [`UITraitEnvironment`](../uitraitenvironment.md) APIs, and size class properties as used in those APIs, instead of using this method or otherwise writing your app in terms of interface orientation.
 

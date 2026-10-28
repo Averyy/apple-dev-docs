@@ -5,7 +5,7 @@
 
 Learn about infrastructure validation builds and whether you need to opt out.
 
-#### Overview
+## Overview
 
 Xcode Cloud may occasionally run validation builds alongside your primary production build to ensure new Xcode Cloud features and optimizations work well for your specific workflows.
 
@@ -19,7 +19,7 @@ These temporary, duplicate Xcode Cloud builds don’t appear in the Xcode Cloud 
 
 Your source code remains fully protected during infrastructure validation. All builds meet Xcode Cloud’s security guarantees. For more information about protecting your data, see [Xcode Cloud security](https://developer.apple.com/xcode-cloud/security/)
 
-##### Opt out of infrastructure validation builds in App Store Connect
+### Opt out of infrastructure validation builds in App Store Connect
 
 You can opt out at any time if your workflows have specific requirements — for example, if your custom build scripts interact with external services that shouldn’t receive duplicate requests.
 

@@ -26,7 +26,7 @@ var isBlacklisted: Bool { get }
 @property (nonatomic, assign, readonly, getter=isBlacklisted) BOOL blacklisted;
 ```
 
-#### Discussion
+## Discussion
 
 A blocked pass isn’t accepted at a transit terminal.
 

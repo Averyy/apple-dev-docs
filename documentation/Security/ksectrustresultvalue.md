@@ -25,7 +25,7 @@ let kSecTrustResultValue: CFString
 extern CFStringRef const kSecTrustResultValue;
 ```
 
-#### Discussion
+## Discussion
 
 The key is present after trust evaluation completes. Its value is a [`CFNumber`](../CoreFoundation/cfnumber.md) that holds one of the values listed in [`SecTrustResultType`](./sectrustresulttype.md), indicating the outcome of the trust evaluation.
 

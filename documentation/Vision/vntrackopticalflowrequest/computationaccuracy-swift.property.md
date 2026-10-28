@@ -24,7 +24,7 @@ var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy { get set
 @property (nonatomic, assign, readwrite) VNTrackOpticalFlowRequestComputationAccuracy computationAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 The computational time trends with accuracy level. The default value is [`VNTrackOpticalFlowRequest.ComputationAccuracy.medium`](./computationaccuracy-swift.enum/medium.md).
 

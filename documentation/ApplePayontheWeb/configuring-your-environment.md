@@ -5,13 +5,13 @@
 
 Create your Apple Pay merchant ID and certificates, and verify your domain.
 
-#### Overview
+## Overview
 
 To support Apple Pay on your website, you must complete the setup steps in your developer account. The steps include registering a merchant ID, creating two certificates, and verifying your domain. Completing the setup enables you to use either or both web APIs: [Apple Pay JS API](./apple-pay-js-api.md) or [Payment Request API](./payment-request-api.md).
 
 > **Note**:  Incorporating Apple Pay on your website is subject to the [Apple Pay Acceptable Use Guidelines](https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/). You must have an [Apple Developer Account](https://developer.apple.com/account/) to complete the setup, and log in with a Team Agent or Admin role.
 
-##### Configure Merchant ID and Certificates
+### Configure Merchant ID and Certificates
 
 Follow the instructions in [Configure Apple Pay on the Web](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay-on-the-web). They guide you to create the following:
 
@@ -23,7 +23,7 @@ While your merchant ID never expires, the payment processing certificate, mercha
 
 > 💡 **Tip**:  You can use the same merchant ID and payment processing certificate in iOS and watchOS apps. If you’re developing apps, enable Apple Pay in Xcode as a last step. See [Setting up Apple Pay](../PassKit/setting-up-apple-pay.md) for more information.
 
-##### Register and Verify Your Domain
+### Register and Verify Your Domain
 
 You must register and verify all top-level domains and subdomains where you’ll display the Apple Pay button. Apple Pay associates domains with your Apple Developer Team ID. As a result:
 
@@ -35,7 +35,7 @@ Domains can’t be behind a proxy or redirect, and must be accessible to the App
 
 To register and verify your domain, log in to your Apple Developer account as an Account Holder or Admin. See [Register a merchant domain](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay-on-the-web#register-a-merchant-domain) and [Verify a merchant domain](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay-on-the-web#register-a-merchant-domain) for the setup steps.
 
-##### Use the Merchant ID in Multiple Environments
+### Use the Merchant ID in Multiple Environments
 
 It’s up to you to determine how many merchant IDs you need. Most merchants need only one for all environments: in multiple websites, iOS or watchOS apps, across test environments, and production environments.
 

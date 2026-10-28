@@ -23,11 +23,11 @@ func isDisjoint<S>(with other: S) -> Bool where Element == S.Element, S : Sequen
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if the set has no elements in common with `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 In the following example, the `employees` set is disjoint with the elements of the `visitors` array because no name appears in both.
 

@@ -23,7 +23,7 @@ case payloadTooLarge
 WCErrorCodePayloadTooLarge
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur for both data dictionaries and files.
 

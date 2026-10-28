@@ -25,7 +25,7 @@ var getDecodeTimeStamp: CMBufferGetTimeCallback?
 CMBufferGetTimeCallback getDecodeTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called once from [`CMBufferQueueGetFirstDecodeTimeStamp(_:)`](../cmbufferqueuegetfirstdecodetimestamp%28_%29.md) and multiple times from [`CMBufferQueueGetMinDecodeTimeStamp(_:)`](../cmbufferqueuegetmindecodetimestamp%28_%29.md).
 

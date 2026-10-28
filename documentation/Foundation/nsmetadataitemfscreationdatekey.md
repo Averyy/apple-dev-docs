@@ -23,7 +23,7 @@ let NSMetadataItemFSCreationDateKey: String
 extern NSString * const NSMetadataItemFSCreationDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSDate`](./nsdate.md) object that contains the date and time that the file was created.
 

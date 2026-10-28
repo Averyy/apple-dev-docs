@@ -20,7 +20,7 @@ The clipping behavior of the portal component.
 var clippingMode: PortalComponent.ClippingMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Provide a [`PortalComponent.ClippingMode`](./clippingmode-swift.enum.md) to configure the clipping behaviors.
 

@@ -33,7 +33,7 @@ var rank: Int { get }
 @property (atomic, assign, readonly) NSInteger rank;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is only valid on score objects returned from Game Center. The `rank` property represents the position of the score in the returned results, with `1` being the best score, `2` being the second best, and so on.
 

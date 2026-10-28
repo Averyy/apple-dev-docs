@@ -24,7 +24,7 @@ var light: GCDeviceLight? { get }
 @property (nonatomic, retain, readonly, nullable) GCDeviceLight * light;
 ```
 
-#### Discussion
+## Discussion
 
 Use the light settings to signal the user or to create a more immersive experience. If the controller doesn’t provide light settings, this property is `nil`.
 

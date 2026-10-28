@@ -15,11 +15,11 @@ virtual IOReturn controllerDidChangePowerState(
  IOService *policyMaker);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns kIOReturnSuccess.
 
-#### Overview
+## Overview
 
 If the controller did transition to a usable state, and it was previously disabled due to a previous power change, then it is re-enabled.
 

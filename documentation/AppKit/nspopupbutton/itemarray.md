@@ -19,7 +19,7 @@ var itemArray: [NSMenuItem] { get }
 @property (copy, readonly) NSArray<NSMenuItem *> * itemArray;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSMenuItem`](../nsmenuitem.md) objects representing the items in the menu. Usually, you access menu items using the methods and properties of this class rather than accessing the items directly.
 

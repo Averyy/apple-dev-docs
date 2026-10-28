@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetGenerateDebugInfo(_ options: bnns_graph_compile_o
 void BNNSGraphCompileOptionsSetGenerateDebugInfo(bnns_graph_compile_options_t options, bool value);
 ```
 
-#### Discussion
+## Discussion
 
 The default option is to exclude debugging information.
 

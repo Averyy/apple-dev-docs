@@ -24,7 +24,7 @@ class CAEmitterLayer
 @interface CAEmitterLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 The particles, defined by instances of [`CAEmitterCell`](./caemittercell.md), are drawn above the layer’s background color and border.
 

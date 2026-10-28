@@ -21,7 +21,7 @@ The closure to execute when CloudKit processes a share access request.
 var perShareAccessRequestResultBlock: ((URL, Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

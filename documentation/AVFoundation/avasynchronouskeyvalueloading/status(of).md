@@ -25,11 +25,11 @@ func status<T>(of property: AVAsyncProperty<Self, T>) -> AVAsyncProperty<Self, T
 
 - [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
-#### Return Value
+## Return Value
 
 A status value.
 
-#### Discussion
+## Discussion
 
 A status of [`AVAsyncProperty.Status.loaded(_:)`](../avasyncproperty/status/loaded%28_%29.md) provides the property value, and a status of [`AVAsyncProperty.Status.failed(_:)`](../avasyncproperty/status/failed%28_%29.md) provides an error that describes the failure.
 

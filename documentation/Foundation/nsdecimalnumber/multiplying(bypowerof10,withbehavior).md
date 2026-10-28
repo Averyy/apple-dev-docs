@@ -25,7 +25,7 @@ func multiplying(byPowerOf10 power: Int16, withBehavior behavior: (any NSDecimal
 - (NSDecimalNumber *) decimalNumberByMultiplyingByPowerOf10:(short) power withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

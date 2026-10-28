@@ -23,7 +23,7 @@ var availablePhotoCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availablePhotoCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 To capture a photo in a compressed format, such as JPEG, use the [`init(format:)`](../avcapturephotosettings/init%28format%29.md) initializer to create your photo settings object. In that initializer’s `format` dictionary, pass the key [`AVVideoCodecKey`](../avvideocodeckey.md), whose value must be one of the codec identifiers listed in this array.
 

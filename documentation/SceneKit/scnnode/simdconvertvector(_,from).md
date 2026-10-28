@@ -25,11 +25,11 @@ func simdConvertVector(_ vector: simd_float3, from node: SCNNode?) -> simd_float
 - (simd_float3) simdConvertVector:(simd_float3) vector fromNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A direction vector in the node’s local coordinate space.
 
-#### Discussion
+## Discussion
 
 Unlike the [`simdConvertPosition(_:from:)`](./simdconvertposition%28_,from%29.md) method, this method ignores the translational aspect of both nodes’ transforms. As such, this method is more appropriate for use with vectors that represent only directional information, such as velocity or facing.
 

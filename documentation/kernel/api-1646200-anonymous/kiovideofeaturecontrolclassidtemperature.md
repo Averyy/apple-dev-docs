@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDTemperature = 'temp'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the temperature inside of the device and/or controlling temperature. The units for the control's absolute value are undefined.
 

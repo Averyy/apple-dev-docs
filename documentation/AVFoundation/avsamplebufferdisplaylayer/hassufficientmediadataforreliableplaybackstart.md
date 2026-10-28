@@ -26,7 +26,7 @@ var hasSufficientMediaDataForReliablePlaybackStart: Bool { get }
 @property (nonatomic, readonly) BOOL hasSufficientMediaDataForReliablePlaybackStart;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`hasSufficientMediaDataForReliablePlaybackStart`](../avqueuedsamplebufferrendering/hassufficientmediadataforreliableplaybackstart.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

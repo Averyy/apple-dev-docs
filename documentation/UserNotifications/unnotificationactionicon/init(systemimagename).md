@@ -25,7 +25,7 @@ convenience init(systemImageName: String)
 + (instancetype) iconWithSystemImageName:(NSString *) systemImageName;
 ```
 
-#### Return Value
+## Return Value
 
 An action icon that the system initializes with the system symbol image that your app specifies.
 

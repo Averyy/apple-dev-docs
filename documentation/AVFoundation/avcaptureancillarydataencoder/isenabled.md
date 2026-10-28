@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether ancillary data is encoded and sent along with video buffers in AVCaptureBroadcastVideoOutput. Default value is `true`.
 

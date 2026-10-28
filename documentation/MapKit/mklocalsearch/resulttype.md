@@ -25,7 +25,7 @@ struct ResultType
 enum MKLocalSearchResultType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options configure the types of search results you want to receive from [`MKLocalSearch.Request`](./request.md), including points of interest and addresses.
 

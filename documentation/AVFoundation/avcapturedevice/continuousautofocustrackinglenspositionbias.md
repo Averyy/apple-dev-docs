@@ -23,7 +23,7 @@ var continuousAutoFocusTrackingLensPositionBias: Float { get set }
 @property (nonatomic) float continuousAutoFocusTrackingLensPositionBias;
 ```
 
-#### Discussion
+## Discussion
 
 While the device is actively tracking a subject to keep in focus, this property may be used to specify a bias applied to the lens position so that different portions of the subject are in focus. This property’s default value is 0 which aims to keep the median of the subject’s depth profile in focus. Values approaching -1 bias the lens position towards the closest portion of the depth profile while values approaching 1 bias the lens position towards the furthest portion of the profile. As the subject moves, the bias continues to apply to the subject’s new depth profile.
 

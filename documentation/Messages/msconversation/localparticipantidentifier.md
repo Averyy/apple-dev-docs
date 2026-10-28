@@ -21,7 +21,7 @@ var localParticipantIdentifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * localParticipantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This UUID is scoped to this device. It remains stable as long as the extension is enabled. If the extension is disabled and reenabled, or if the containing app is removed and reinstalled, the UUID for the local participant changes.
 

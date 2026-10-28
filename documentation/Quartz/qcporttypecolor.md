@@ -21,7 +21,7 @@ let QCPortTypeColor: String
 extern NSString * const QCPortTypeColor;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value must be an [`NSColor`](../AppKit/nscolor.md) object.
 

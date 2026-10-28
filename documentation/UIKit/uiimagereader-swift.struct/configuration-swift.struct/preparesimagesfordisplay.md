@@ -20,7 +20,7 @@ A Boolean value that indicates whether the image reader prepares the image for d
 var preparesImagesForDisplay: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../../Swift/false.md).
 

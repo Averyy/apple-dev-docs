@@ -19,7 +19,7 @@ func setAction(_ selector: Selector?)
 - (void) setAction:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 When you select a color in the color panel `NSColorPanel` sends its action to its target, provided that neither the action nor the target is `nil`. The action is `NULL` by default.
 

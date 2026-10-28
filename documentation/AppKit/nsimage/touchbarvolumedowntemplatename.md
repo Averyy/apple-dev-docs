@@ -22,7 +22,7 @@ class let touchBarVolumeDownTemplateName: String
 extern NSImageName const NSImageNameTouchBarVolumeDownTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for volume down](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793510@2x.png)
 

@@ -20,7 +20,7 @@ type ImageHashObject = Record<string, string | undefined> & {};
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Discussion
+## Discussion
 
 The framework automatically loads the appropriate image for the device’s screen scale. Use [`ImageDelegate`](./imagedelegate.md) to dynamically provide images for different scales, or use an [`ImageSource`](./imagesource.md) to provide a preloaded or dynamically generated image directly.
 

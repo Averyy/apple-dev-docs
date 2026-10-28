@@ -15,7 +15,7 @@ An object that represents a notes attribute.
 object EditorialNotes
 ```
 
-#### Discussion
+## Discussion
 
 Notes may include XML tags for formatting (`<b>` for bold, `<i>` for italic, or `<br>` for line break) and special characters (`&amp;` for `&`, `&lt;` for `<`, `&gt;` for `>`, `&apos;` for `‘`, and `&quot;` for `“`).
 

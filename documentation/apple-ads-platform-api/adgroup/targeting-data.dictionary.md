@@ -15,11 +15,11 @@ The comprehensive audience and placement configuration for an ad group.
 object AdGroup.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Defines the audience dimensions, such as geography, demographics, device, and behavior, that this ad group targets. Each dimension supports an `include` list, an `exclude` list, or both, depending on the field.
 
-##### Example
+### Example
 
 ```json
 {

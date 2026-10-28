@@ -22,11 +22,11 @@ Saves evaluation results to a single JSON file.
 func saveJSON(to directory: URL, includeReportMetadata: Bool = false, includeTranscripts: Bool = false) throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the saved file
 
-#### Discussion
+## Discussion
 
 The file contains sections for summary, results, metadata, and optionally report metadata.
 

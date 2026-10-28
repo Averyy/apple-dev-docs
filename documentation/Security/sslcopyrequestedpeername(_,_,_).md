@@ -24,11 +24,11 @@ func SSLCopyRequestedPeerName(_ context: SSLContext, _ peerName: UnsafeMutablePo
 OSStatus SSLCopyRequestedPeerName(SSLContextRef context, char *peerName, size_t *peerNameLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use the `peerNameLen` returned by this function when calling the [`SSLCopyRequestedPeerNameLength(_:_:)`](./sslcopyrequestedpeernamelength%28_,_%29.md) function.
 

@@ -25,7 +25,7 @@ optional func centralManager(_ central: CBCentralManager, willRestoreState dict:
 - (void) centralManager:(CBCentralManager *) central willRestoreState:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Discussion
+## Discussion
 
 This method only applies to your app if it opts in to state restoration by providing [`CBCentralManagerOptionRestoreIdentifierKey`](../cbcentralmanageroptionrestoreidentifierkey.md) when initializing a [`CBCentralManager`](../cbcentralmanager.md). The system invokes this method when relaunching your app to service active or pending connections and scans that were in progress when your app stopped.
 

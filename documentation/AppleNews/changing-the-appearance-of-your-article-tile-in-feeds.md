@@ -5,7 +5,7 @@
 
 Change the information that News displays about your published article.
 
-#### Overview
+## Overview
 
 Every article you publish has an article tile that provides information about the article. The article tile appears in feeds, such as the Today feed, channel feeds, and topic feeds.
 

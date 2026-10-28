@@ -19,7 +19,7 @@ A closure that configures and returns a cell for a table view from its diffable 
 typealias CellProvider = (UITableView, IndexPath, ItemIdentifierType) -> UITableViewCell?
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured cell object. The cell provider must return a valid cell object to the table view.
 

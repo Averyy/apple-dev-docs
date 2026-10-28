@@ -21,7 +21,7 @@ The string’s past-the-end position — the position one greater than the last 
 var endIndex: AttributedString.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty string, `endIndex` is equal to `startIndex`.
 

@@ -20,7 +20,7 @@ A request that detects a human body pose.
 struct DetectHumanBodyPoseRequest
 ```
 
-#### Overview
+## Overview
 
 This type of request produces a collection of [`HumanBodyPoseObservation`](./humanbodyposeobservation.md) objects that describe the body pose.
 

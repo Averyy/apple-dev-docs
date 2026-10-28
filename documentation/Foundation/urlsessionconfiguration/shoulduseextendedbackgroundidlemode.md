@@ -27,7 +27,7 @@ var shouldUseExtendedBackgroundIdleMode: Bool { get set }
 @property BOOL shouldUseExtendedBackgroundIdleMode;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to requesting that the connection be kept open, setting this value to [`true`](../../Swift/true.md) asks the system to delay reclaiming the connection when the app moves to the background.
 

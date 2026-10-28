@@ -20,11 +20,11 @@ class func tapIsEnabled(tap: CFMachPort) -> Bool
 extern bool CGEventTapIsEnabled(CFMachPortRef tap);
 ```
 
-#### Return Value
+## Return Value
 
 If [`true`](../../Swift/true.md), the specified event tap is enabled; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For more information, see the function [`tapEnable(tap:enable:)`](./tapenable%28tap,enable%29.md).
 

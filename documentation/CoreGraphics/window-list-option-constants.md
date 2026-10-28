@@ -5,7 +5,7 @@
 
 Specifies which windows in the current user session to include in a generated list.
 
-#### Overview
+## Overview
 
 The [`optionIncludingWindow`](./cgwindowlistoption/optionincludingwindow.md) and [`excludeDesktopElements`](./cgwindowlistoption/excludedesktopelements.md) constants may be combined with the other constants by adding (or ORing) them together and passing the resulting value to the appropriate function.
 

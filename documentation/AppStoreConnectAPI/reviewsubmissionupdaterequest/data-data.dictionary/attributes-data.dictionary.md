@@ -15,7 +15,7 @@ Attributes that describe a review submission update request resource.
 object ReviewSubmissionUpdateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: You can optionally add the attribute platform when using [`Modify a Review Submission`](../../patch-v1-reviewsubmissions-_id_.md).
 

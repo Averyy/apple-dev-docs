@@ -21,11 +21,11 @@ Prepares and plays a real-time audio playback instance.
 @preconcurrency func playAudio(configuration: AudioGeneratorConfiguration = .init(), _ generatorRenderHandler: @escaping Audio.GeneratorRenderHandler) throws -> AudioGeneratorController
 ```
 
-#### Return Value
+## Return Value
 
 An [`AudioGeneratorController`](../audiogeneratorcontroller.md) instance that you use to manage audio playback. Use the controller to set the volume and start or stop playback.
 
-#### Discussion
+## Discussion
 
 Maintain playback by keeping a reference to the generator controller.
 

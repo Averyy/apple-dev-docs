@@ -15,11 +15,11 @@ framework: "mlx-swift-lm/MLXLMCommon"
 func audioFeatures(_ features: MLXArray) throws -> MLXArray?
 ```
 
-#### Return Value
+## Return Value
 
 `[1, soft tokens, hidden]` features that fill its placeholder tokens, or `nil` when this checkpoint has no audio encoder.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Loading errors, or `OnDemandComponentError` if audio was excluded.
 

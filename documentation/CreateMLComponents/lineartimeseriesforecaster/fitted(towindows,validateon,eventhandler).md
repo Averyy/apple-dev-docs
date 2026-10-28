@@ -21,7 +21,7 @@ Fits a model to a sequence of annotated windows with validation.
 func fitted(toWindows input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn validation: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler? = nil) async throws -> LinearTimeSeriesForecaster<Scalar>.Model
 ```
 
-#### Return Value
+## Return Value
 
 The fitted model.
 

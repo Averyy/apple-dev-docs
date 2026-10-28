@@ -25,7 +25,7 @@ let NSURLAuthenticationMethodHTMLForm: String
 extern NSString * const NSURLAuthenticationMethodHTMLForm;
 ```
 
-#### Discussion
+## Discussion
 
 The URL loading system never issues authentication challenges based on this authentication method. However, if your app authenticates by submitting a web form (or in some other protocol-neutral way), you can specify this protection space when you persist or look up credentials using the [`URLCredentialStorage`](./urlcredentialstorage.md) class.
 

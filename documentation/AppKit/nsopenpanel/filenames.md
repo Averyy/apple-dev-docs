@@ -17,11 +17,11 @@ Returns an array containing the absolute paths (as NSString objects) of the sele
 - (NSArray *) filenames;
 ```
 
-#### Return Value
+## Return Value
 
 The array of filenames.
 
-#### Discussion
+## Discussion
 
 If multiple selections aren’t allowed, the array contains a single name. The [`filenames`](./filenames.md) method is preferable over NSSavePanel’s [`filename`](../nssavepanel/filename.md) to get the name or names of files and directories that the user has selected.
 

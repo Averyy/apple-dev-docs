@@ -19,7 +19,7 @@ An error that indicates a content rule list data store didn’t find a rule list
 static var contentRuleListStoreLookUpFailed: WKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error might occur if you previously deleted the rule list.
 

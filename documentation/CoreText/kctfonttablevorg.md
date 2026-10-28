@@ -23,7 +23,7 @@ var kCTFontTableVORG: Int { get }
 kCTFontTableVORG
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for vertical origin.
 

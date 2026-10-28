@@ -19,7 +19,7 @@ func startAnimation()
 - (void) startAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when it’s time for you to start animating your screen saver’s content. The system calls this method only once at the start of animations. Use this method to set up any initial state information you require or to allocate expensive resources. If you override this method, you must call the inherited implementation at some point.
 

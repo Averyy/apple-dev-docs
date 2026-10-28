@@ -13,11 +13,11 @@
 size_t mbuf_leadingspace(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The number of unused bytes at the start of the mbuf.
 
-#### Discussion
+## Discussion
 
 Determines the space available in the mbuf proceeding the current data.
 

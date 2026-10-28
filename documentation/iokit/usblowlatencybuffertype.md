@@ -16,7 +16,7 @@ typedef enum USBLowLatencyBufferType : unsigned int {
 } USBLowLatencyBufferType;
 ```
 
-#### Overview
+## Overview
 
 Used to specify what kind of buffer to create when calling LowLatencyCreateBuffer().
 

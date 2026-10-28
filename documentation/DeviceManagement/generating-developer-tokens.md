@@ -5,11 +5,11 @@
 
 Create a JSON Web Token to authorize your requests to the Apps and Books Metadata for Organizations API.
 
-#### Overview
+## Overview
 
 The header of every Apps and Books Metadata for Organizations API request requires authorization in the form of a developer token. A developer token is a signed token that authenticates you as a trusted developer and member of the Apple Developer Program.
 
-#### Construct your developer token
+## Construct your developer token
 
 The Apps and Books Metadata for Organizations API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [JWT specification](https://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
 
@@ -47,7 +47,7 @@ After you create the token, sign it with your private key using the ES256 algori
 
 > **Note**:  ES256 is the [JSON Web Algorithms (JWA)](https://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-#### Authorize requests
+## Authorize requests
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 
@@ -57,7 +57,7 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://api.ent.apple.com/
 
 For more information about requests, responses, and error handling, see [Handling requests and responses](./handling-requests-and-responses.md).
 
-#### Limit request rate
+## Limit request rate
 
 The Apps and Books Metadata for Organizations API limits the number of requests your app can make using a developer token within a specific period of time. If you exceed this limit, you temporarily receive `429 Too Many Requests` error responses for requests that use the token. This error resolves itself shortly after the request rate reduces.
 

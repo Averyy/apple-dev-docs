@@ -5,7 +5,7 @@
 
 Beta test information about builds, specific to a locale.
 
-#### Overview
+## Overview
 
 A `betaBuildLocalizations` resource represents the localized content that appears in the “What’s New” text in TestFlight. You should change this text for every build.
 

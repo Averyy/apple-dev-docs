@@ -24,7 +24,7 @@ var colors: [Any]? { get set }
 @property (copy, nullable) NSArray * colors;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`.
 

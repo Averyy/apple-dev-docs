@@ -22,7 +22,7 @@ Encodes the elements of the given sequence.
 mutating func encode<T>(contentsOf sequence: T) throws where T : Sequence, T.Element == String
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if any of the contained values throws an error.
 

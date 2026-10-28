@@ -19,7 +19,7 @@ func stop(_ sender: Any!)
 - (void) stopSlideshow:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when the user clicks a button or issues a stop command.
 

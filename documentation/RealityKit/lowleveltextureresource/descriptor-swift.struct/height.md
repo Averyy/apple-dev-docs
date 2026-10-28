@@ -18,7 +18,7 @@ The height of the texture image for the base mipmap level, in pixels.
 var height: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.height`.
 

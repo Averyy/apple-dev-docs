@@ -19,7 +19,7 @@ string storefrontCountryCode
 
 **Maximum Length**: `3`
 
-#### Discussion
+## Discussion
 
 This type uses the ISO 3166-1 Alpha-3 country code representation.
 

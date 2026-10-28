@@ -20,7 +20,7 @@ Binds multiple buffers with data in stride to the buffer argument table at once,
 - (void) setBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets attributeStrides:(const NSUInteger[]) strides withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the length of `buffers`, `offsets`, and `strides` are all equal to the length of `range`.
 

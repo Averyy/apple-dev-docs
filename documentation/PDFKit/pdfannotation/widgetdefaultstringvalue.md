@@ -24,7 +24,7 @@ var widgetDefaultStringValue: String? { get set }
 @property (nonatomic, copy, nullable) NSString * widgetDefaultStringValue;
 ```
 
-#### Discussion
+## Discussion
 
 For text and choice widgets, this property specifies the string value that a reset form action sets on a widget.
 

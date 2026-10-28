@@ -24,7 +24,7 @@ var preferredMediaChunkAlignment: Int { get set }
 @property (nonatomic) NSInteger preferredMediaChunkAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports file types that support media chunk alignment, such as QuickTime Movie files. The default value is `0`, which means that the input chooses an appropriate default value. A value of `1` indicates not to use padding to achieve a particular chunk alignment. It’s an error to set a negative value for chunk alignment.
 

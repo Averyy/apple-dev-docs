@@ -15,7 +15,7 @@ The offer-reference name of the subscription offer code that the customer redeem
 string offer_code_ref_name
 ```
 
-#### Discussion
+## Discussion
 
 When a customer successfully redeems an offer code, this field is present in the receipt and contains the reference name of the offer. You establish the offer reference name in App Store Connect when you configure offers and create the offer codes. For more information about setting up offers, see [Set Up Offer Codes](https://help.apple.com/app-store-connect/#/dev6a098e4b1).
 

@@ -16,7 +16,7 @@ Set callback for user space message routine.
 void (*setMessageCallback)(void *self, void *refCon, IOFWSBP2MessageCallback callback);
 ```
 
-#### Discussion
+## Discussion
 
 In FireWire & SBP2 bus status messages are delivered via IOKit's message routine. This routine is emulated in user space for SBP2 & FireWire messages via this callback. You should register here for bus reset, and reconnect messages.
 

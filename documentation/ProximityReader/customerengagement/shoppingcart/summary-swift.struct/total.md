@@ -17,7 +17,7 @@ A decimal value indicating the total amount of the shopping cart.
 let total: Decimal
 ```
 
-#### Discussion
+## Discussion
 
 The total always appears at the bottom as floating text, even when the shopping cart content scrolls. The framework formats this value using the region and currency defined in [`CustomerEngagementSession.Configuration`](../../../customerengagementsession/configuration-swift.struct.md).
 

@@ -20,11 +20,11 @@ Randomly split a MLDataTable into a number partitions while stratifying on a use
 func stratifiedSplit<RNG>(proportions: [Double], on column: String, generator: inout RNG) throws -> MLDataTable where RNG : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 A new MLDataTable with an additional partition column with the index of the partition for each row.
 
-#### Discussion
+## Discussion
 
 The proportions specified will be applied uniformly to each label being partitioned on.
 

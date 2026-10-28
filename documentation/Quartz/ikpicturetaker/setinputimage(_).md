@@ -19,7 +19,7 @@ func setInputImage(_ image: NSImage!)
 - (void) setInputImage:(NSImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 The input image is never modified by the picture taker.
 

@@ -10,13 +10,13 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Integrate Swift with Zephyr RTOS for embedded systems development.
 
-#### Overview
+## Overview
 
 [Zephyr](https://www.zephyrproject.org/) is an open-source RTOS for embedded systems that is sponsored by the Linux Foundation. Since it depends on CMake primarily for its build system, it can easily be integrated to be used with Embedded Swift.
 
 The following document outlines how to setup a Swift to Zephyr project for an emulated ARM Cortex M0, explaining a few key concepts along the way. For a complete working example on real hardware, however, refer to the [nrfx-blink-sdk](https://github.com/swiftlang/swift-embedded-examples/tree/main/nrfx-blink-sdk) project that is compatible with nRF or other boards.
 
-#### Target Architecture Compatibility
+## Target Architecture Compatibility
 
 Zephyr [supports quite a few target architectures](https://docs.zephyrproject.org/latest/introduction/index.html), but not all are supported by Embedded Swift. Please refer to the following table for an overview of Zephyr-supported architectures that are supported by Swift, along with the correct target triple to use:
 
@@ -31,7 +31,7 @@ Zephyr [supports quite a few target architectures](https://docs.zephyrproject.or
 | RISC-V | 32-bit | riscv32-none-none-eabi |
 | RISC-V | 64-bit | riscv64-none-none-eabi |
 
-#### Zephyr Setup
+## Zephyr Setup
 
 Before setting up a Swift project that works with Zephyr, you need to setup dependencies and a Zephyr workspace as per the [Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html). Regardless of your platform (macOS or Linux), ensure that you can build the blinky example without errors before starting with Swift integration:
 
@@ -54,7 +54,7 @@ pip install -r ~/zephyrproject/zephyr/scripts/requirements.txt
 
 Refer to the [Zephyr Releases](https://docs.zephyrproject.org/latest/releases/index.html) page for more information on current and LTS releases.
 
-#### Project Setup
+## Project Setup
 
 Once Zephyr is setup, the next step is to setup a project with the following files included:
 
@@ -123,7 +123,7 @@ Finally, add the following line to `prj.conf` so that the output of `print()` st
 CONFIG_STDOUT_CONSOLE=y
 ```
 
-##### CMakeLists.txt Setup
+### CMakeLists.txt Setup
 
 The `CMakeLists.txt` setup is more involved and complex since target, compilation flags, and library linking must be specified for Swift. First, some initial setup and flags:
 
@@ -239,7 +239,7 @@ target_include_directories(app_swift PRIVATE
 target_link_libraries(app PRIVATE app_swift)
 ```
 
-##### Building and Running
+### Building and Running
 
 To build the project, ensure that the Zephyr workspace is sourced first:
 
@@ -292,7 +292,7 @@ Loop
 
 Congrats, you now have a Swift project running using Zephyr!
 
-#### West Integration
+## West Integration
 
 Up to now we have setup a project that works perfectly fine when used with just CMake and Ninja. However, projects can also be integrated with West, which is the official CLI tool used for Zephyr projects. To use `west`, start by adding a `west.yml` file to the root of the project:
 
@@ -360,11 +360,11 @@ ninja: no work to do.
 
 The `-r jlink` param is needed for this example to use the J-Link tools instead of using `nrfjprog`, which is the default for this board and also [deprecated](https://www.nordicsemi.com/Products/Development-tools/nRF-Command-Line-Tools).
 
-#### Customizing the Linker
+## Customizing the Linker
 
 The default linker configuration for building a Zephyr project from CMake works well for simple projects, but it can be customized as needed. The following sections show off some useful ways to customize linking Zephyr projects for Swift.
 
-##### Stripping Out Unused Sections
+### Stripping Out Unused Sections
 
 When compiling Swift to Zephyr projects, you may see some warnings about orphaned sections from the linker, like `.swift_modhash`:
 
@@ -390,7 +390,7 @@ zephyr_linker_sources(SECTIONS "sections.ld")
 
 This can also help to reduce the size of the output elf/binary since unused sections are stripped out. Be careful what sections you strip out, however, as some sections may be required.
 
-##### Linking Swift Libraries
+### Linking Swift Libraries
 
 This example adds the `swiftUnicodeDataTables` library from Swift to be linked into the Zephyr project. This is useful for linking unicode symbols when using strings. See [Using strings](./strings.md) for more information on this.
 

@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, typeSelectStringFor tabl
 - (NSString *) outlineView:(NSOutlineView *) outlineView typeSelectStringForTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The string that is used for type selection. You may want to change what is searched for based on what is displayed, or simply return nil for that row and/or column to not be searched
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to control the string that is used for type selection. You may want to change what is searched for based on what is displayed, or simply return `nil` to specify that the given row and/or column should not be searched. By default, all cells with text in them are searched.
 

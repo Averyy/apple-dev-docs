@@ -15,11 +15,11 @@ Creates a tag for use with OSMalloc functions.
 OSMallocTag OSMalloc_Tagalloc(const char *name, uint32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 An opaque tag to be used with OSMalloc functions for tracking memory usage.
 
-#### Discussion
+## Discussion
 
 OSMalloc tags can have arbitrary names of a length up to 63 characters. Calling this function twice with the same name creates two tags, which share that name.
 

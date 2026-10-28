@@ -19,7 +19,7 @@ var rawData: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * rawData;
 ```
 
-#### Discussion
+## Discussion
 
 The content is available after MailKit downloads the message. MailKit provides the content as unprocessed data. For details about the format of the data, see [RFC 2822](https://tools.ietf.org/html/rfc2822).
 

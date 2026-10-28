@@ -26,7 +26,7 @@ weak var previewControllerDelegate: (any RPPreviewViewControllerDelegate)? { get
 @property (nonatomic, weak, nullable) id<RPPreviewViewControllerDelegate> previewControllerDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying the preview view controller, your app must set a delegate in order to respond to changes in the view controller. Implement the methods described in [`RPPreviewViewControllerDelegate`](../rppreviewviewcontrollerdelegate.md).
 

@@ -14,7 +14,7 @@ Get a paginated list of all of a customer’s refunded in-app purchases for your
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to get the customer’s complete refund history for your app by providing the transaction identifier ([`transactionId`](./transactionid.md)) for any of the customer’s in-app purchases. Each response ([`RefundHistoryResponse`](./refundhistoryresponse.md)) contains a maximum of 20 refunded transactions. If the [`hasMore`](./hasmore.md) property in the response is `true`, call the endpoint again using the [`revision`](./get-refund-history/revision.md) token from the response to get the next set of refunded transactions.
 

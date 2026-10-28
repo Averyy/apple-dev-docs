@@ -19,7 +19,7 @@ static var stop: NSApplication.ModalResponse { get }
 static const NSModalResponse NSModalResponseStop;
 ```
 
-#### Discussion
+## Discussion
 
 This constant is also used as the default response for sheet.
 

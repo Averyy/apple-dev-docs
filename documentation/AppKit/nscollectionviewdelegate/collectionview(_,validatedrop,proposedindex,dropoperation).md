@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, validateDrop dr
 - (NSDragOperation) collectionView:(NSCollectionView *) collectionView validateDrop:(id<NSDraggingInfo>) draggingInfo proposedIndex:(NSInteger *) proposedDropIndex dropOperation:(NSCollectionViewDropOperation *) proposedDropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates which dragging operation to perform. Return [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md) to disallow the drop.
 
-#### Discussion
+## Discussion
 
 Based on the mouse position, the collection view will suggest a proposed index and drop operation. These values are in/out parameters and can be changed by the delegate to retarget the drop operation.
 

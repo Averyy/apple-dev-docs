@@ -5,7 +5,7 @@
 
 Incorporate the system text cursor into your custom text UI in AppKit.
 
-#### Overview
+## Overview
 
 People can enter text into your app in a variety of ways, such as typing, copy and paste, or dictation. macOS 14 introduces enhancements to the system UI for the text cursor to provide a more seamless text experience.
 
@@ -17,7 +17,7 @@ If your app handles text input through standard AppKit views such as [`NSTextVie
 
 If you have a highly customized UI for displaying text, you can adopt this system UI in your AppKit app.
 
-##### Add the system text cursor to a custom text view
+### Add the system text cursor to a custom text view
 
 If your app handles text input through a custom view that builds on [`NSTextInputClient`](./nstextinputclient.md), you can display the system text cursor manually. Create an [`NSTextInsertionIndicator`](./nstextinsertionindicator.md) view and add it on top of the view that displays text in your app.
 
@@ -36,7 +36,7 @@ func didBecomeActive() {
 }
 ```
 
-##### Configure the text cursor animations
+### Configure the text cursor animations
 
 Depending on the behavior you need at a particular point in time, you can determine how the text cursor handles animations by selecting one of these display modes:
 
@@ -57,7 +57,7 @@ textCursor.effectsViewInserter = { view in
 }
 ```
 
-##### Update the text cursor position
+### Update the text cursor position
 
 Your custom text view is responsible for updating the position of the text cursor when a person inputs text, but the system provides the appropriate animated effect. For example, the following image shows the system animation effect that applies to the text cursor during dictation.
 
@@ -65,7 +65,7 @@ Your custom text view is responsible for updating the position of the text curso
 
 As a person types or inserts text during dictation, update the [`frame`](./nsview/frame.md) of the [`NSTextInsertionIndicator`](./nstextinsertionindicator.md) view. The view automatically changes its appearance in response to that movement, matching the system UI for the corresponding type of input (typing or dictation).
 
-##### Configure the placements of text cursor accessories
+### Configure the placements of text cursor accessories
 
 The system text cursor displays accessories that indicate state, such as current input source language, dictation, and Caps Lock. For example, the following image shows the text cursor with the dictation indicator and the current input language set to English.
 
@@ -77,7 +77,7 @@ When a person changes the input language, the accessory expands to show the lang
 
 [`NSTextInsertionIndicator`](./nstextinsertionindicator.md) draws these accessories automatically, but you can specify where in relation to the text cursor to draw them. In your custom text view, you can override the placement of these accessories by specifying [`preferredTextAccessoryPlacement()`](./nstextinputclient/preferredtextaccessoryplacement%28%29.md) in your implementation of [`NSTextInputClient`](./nstextinputclient.md). When the system renders the text cursor in your custom view, it uses the return value of this method to determine where to draw the accessories.
 
-##### Indicate the offscreen text cursor position during dictation
+### Indicate the offscreen text cursor position during dictation
 
 The system text cursor shows a dictation indicator accessory during an active dictation session. When a person scrolls the text cursor offscreen during dictation, the system also draws a scroll-away indicator to indicate the position of the cursor. For example, the following image shows a scroll-away indicator that points downwards, indicating that the text cursor is out of view below.
 
@@ -88,7 +88,7 @@ For the system to show the scroll-away indicator on a custom text view, you need
 - Adopt [`NSTextInputClient`](./nstextinputclient.md) and implement [`unionRectInVisibleSelectedRange`](./nstextinputclient/unionrectinvisibleselectedrange.md) and [`documentVisibleRect`](./nstextinputclient/documentvisiblerect.md). These properties provide the system with the coordinate information it needs to draw the scroll-away indicator in the appropriate position.
 - Notify the system when a person starts or stops scrolling, so the system can display the indicator at the appropriate time. Call [`textInputClientWillStartScrollingOrZooming()`](./nstextinputcontext/textinputclientwillstartscrollingorzooming%28%29.md) when scrolling starts, and [`textInputClientDidEndScrollingOrZooming()`](./nstextinputcontext/textinputclientdidendscrollingorzooming%28%29.md) when scrolling ends.
 
-##### Hide the system text cursor
+### Hide the system text cursor
 
 When your custom text view resigns first responder status, update the display mode of the text cursor to [`NSTextInsertionIndicator.DisplayMode.hidden`](./nstextinsertionindicator/displaymode-swift.enum/hidden.md).
 

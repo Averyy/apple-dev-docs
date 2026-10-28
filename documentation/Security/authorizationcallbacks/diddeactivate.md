@@ -21,11 +21,11 @@ Reports the successful deactivation of an authorization mechanism.
 int (*)(struct __OpaqueAuthorizationEngine *) DidDeactivate;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 Call this function after deactivating your authorization mechanism in response to a call to your [`MechanismDeactivate`](../authorizationplugininterface/mechanismdeactivate.md) function. The authorization engine waits for confirmation that all mechanisms have deactivated before continuing.
 

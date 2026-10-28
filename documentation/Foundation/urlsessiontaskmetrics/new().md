@@ -27,7 +27,7 @@ class func new() -> Self
 + (instancetype) new;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to create your own [`URLSessionTaskMetrics`](../urlsessiontaskmetrics.md) instances.
 

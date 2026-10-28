@@ -10,17 +10,17 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Target a Raspberry Pi Pico as an embedded device that runs a simple Swift program.
 
-#### Overview
+## Overview
 
 In this guide we’ll be targeting a Raspberry Pi Pico as the embedded device that our Swift application will run on. If you don’t physically have one, don’t worry! You can still run the application in an online emulator.
 
-#### Installing Swift
+## Installing Swift
 
 To install Swift for embedded development, follow the instructions in [Installing Embedded Swift](./installembeddedswift.md), which guides you through using `swiftly` to install the latest development snapshot with Embedded Swift support.
 
 To test that you have Swift installed, run `swift --version` from your shell or terminal app. It should say “6.2-dev” or similar, confirming you have a “Development Snapshot” toolchain.
 
-#### Installing dependencies for embedded development
+## Installing dependencies for embedded development
 
 Install the Raspberry Pi Pico SDK, and the Arm Embedded Toolchain by following the [Getting Started With Pico guide](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) (specifically the “Manually Configure your environment” section in Appendix C). Export three environment variables to match your setup and hardware:
 
@@ -53,7 +53,7 @@ arm-none-eabi/                                     lib/
 bin/                                               libexec/
 ```
 
-#### Building a “blinky” embedded app
+## Building a “blinky” embedded app
 
 The standard “Hello, World” in embedded development is a program that repeatedly blinks an LED. Let’s build one. A more fleshed out setup supporting all Pico boards can be found in [swift-embedded-examples](https://github.com/swiftlang/swift-embedded-examples/blob/main/rpi-pico-blink-sdk/README.md), but we’re going to show below that all you need is just three small files. Let’s create a new empty directory and prepare a simple structure for a CMake-based project that can be used on top of the Pico SDK:
 
@@ -143,7 +143,7 @@ $ ls -al build/blinky*
 -rw-r--r--  1 kuba  staff    16K Jan  1 12:00 build/blinky.uf2
 ```
 
-#### Running the firmware on a device
+## Running the firmware on a device
 
 If you have a Raspberry Pi Pico, we’re now going to upload the built firmware and run it. If you don’t have one, skip to the next section and run the exact same firmware file **in an emulator instead**.
 
@@ -167,7 +167,7 @@ This will make the Pico automatically install the firmware, reboot itself, and r
 
 The green LED should now be blinking repeatedly. Hooray! Our first Embedded Swift program is running on an embedded device!
 
-#### Running the firmware in an emulator
+## Running the firmware in an emulator
 
 If you don’t have a physical Pico, or if you want to iterate quickly, [Wokwi](https://wokwi.com/) is free online emulator of various embedded microcontrollers, including a Raspberry Pi Pico. It executes the same firmware binary that you would normally upload to a physical device, and emulates one instruction at a time.
 

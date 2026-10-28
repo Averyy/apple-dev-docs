@@ -15,7 +15,7 @@ Used to hold a double-precision complex value.
 typedef struct DSPDoubleComplex DSPDoubleComplex;
 ```
 
-#### Discussion
+## Discussion
 
 Double complex data are stored as ordered pairs of double-precision floating-point numbers. Because they are stored as ordered pairs, complex vectors require address strides that are multiples of two.
 

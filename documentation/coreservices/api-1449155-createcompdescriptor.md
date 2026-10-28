@@ -19,7 +19,7 @@ func CreateCompDescriptor(_ comparisonOperator: DescType, _ operand1: UnsafeMuta
 OSErr CreateCompDescriptor(DescType comparisonOperator, AEDesc *operand1, AEDesc *operand2, Boolean disposeInputs, AEDesc *theDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 

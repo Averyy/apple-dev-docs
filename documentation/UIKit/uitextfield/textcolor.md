@@ -23,7 +23,7 @@ var textColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the entire text string. The default value for this property is a black color. The value for the property can only be set to a non-`nil` value; setting this property to `nil` raises an exception.
 

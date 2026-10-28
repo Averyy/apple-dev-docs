@@ -19,7 +19,7 @@ struct ASAuthorizationCustomMethod
 typedef NSString * ASAuthorizationCustomMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`ASAuthorizationCustomMethod`](./asauthorizationcustommethod.md) to specify a type of custom sign-in in tvOS, like enabling the user to sign in manually or by restoring a purchase.
 

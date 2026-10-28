@@ -9,7 +9,7 @@ Get a list of devices in an organization that enroll using Automated Device Enro
 **Availability**:
 - Apple School Manager API 1.7+
 
-##### Example
+### Example
 
 **Request**:
 

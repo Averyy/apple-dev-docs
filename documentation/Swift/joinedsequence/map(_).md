@@ -21,11 +21,11 @@ Returns an array containing the results of mapping the given closure over the se
 func map<T, E>(_ transform: (Self.Element) throws(E) -> T) throws(E) -> [T] where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the transformed elements of this sequence.
 
-#### Discussion
+## Discussion
 
 In this example, `map` is used first to convert the names in the array to lowercase strings and then to count their characters.
 

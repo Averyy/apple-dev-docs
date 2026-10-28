@@ -25,7 +25,7 @@ optional func application(_ application: UIApplication, didUpdate userActivity: 
 - (void) application:(UIApplication *) application didUpdateUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called on the main thread when a user activity managed by UIKit has been updated. You can implement this method as a final opportunity to add data to the user activity object.
 

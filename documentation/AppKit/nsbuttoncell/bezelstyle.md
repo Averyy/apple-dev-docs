@@ -19,7 +19,7 @@ var bezelStyle: NSButton.BezelStyle { get set }
 @property NSBezelStyle bezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant that specifies the bezel style used by the button. See [`NSButton.BezelStyle`](../nsbutton/bezelstyle-swift.enum.md) for a list of possible values. If a button is borderless, the value of this property is ignored.
 

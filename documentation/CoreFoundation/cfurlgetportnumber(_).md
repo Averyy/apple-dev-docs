@@ -25,7 +25,7 @@ func CFURLGetPortNumber(_ anURL: CFURL!) -> Int32
 extern SInt32 CFURLGetPortNumber(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The port number of `anURL`, or `-1` if no port number exists.
 

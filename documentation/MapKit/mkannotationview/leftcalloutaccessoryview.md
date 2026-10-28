@@ -40,7 +40,7 @@ var leftCalloutAccessoryView: NSView? { get set }
 @property (nonatomic, strong, nullable) NSView * leftCalloutAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. Typically, you use the left callout view to display information about the annotation or to link to custom information that your app provides.
 

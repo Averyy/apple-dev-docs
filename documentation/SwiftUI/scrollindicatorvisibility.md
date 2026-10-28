@@ -21,7 +21,7 @@ The visibility of scroll indicators of a UI element.
 struct ScrollIndicatorVisibility
 ```
 
-#### Overview
+## Overview
 
 Pass a value of this type to the [`scrollIndicators(_:axes:)`](./view/scrollindicators%28_,axes%29.md) method to specify the preferred scroll indicator visibility of a view hierarchy.
 

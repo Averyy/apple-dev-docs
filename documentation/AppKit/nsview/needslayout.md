@@ -19,11 +19,11 @@ var needsLayout: Bool { get set }
 @property BOOL needsLayout;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view needs a layout pass, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 You only ever need to change the value of this property if your view implements the [`layout()`](./layout%28%29.md) method because it has custom layout that is not expressible in the constraint-based layout system. Setting this property to [`true`](../../Swift/true.md) lets the system know that the view’s layout needs to be updated before it is drawn. The system checks the value of this property prior to applying constraint-based layout rules for the view.
 

@@ -19,7 +19,7 @@ case radioModeMatrix
 NSRadioModeMatrix
 ```
 
-#### Discussion
+## Discussion
 
 Any time an [`NSCell`](../../nscell.md) is selected, the previously selected [`NSCell`](../../nscell.md) is unselected.
 

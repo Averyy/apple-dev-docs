@@ -24,7 +24,7 @@ var fence: (any MTLFence)? { get set }
 @property (nonatomic, retain, nullable) id<MTLFence> fence;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for synchronizing access to untracked resources.
 

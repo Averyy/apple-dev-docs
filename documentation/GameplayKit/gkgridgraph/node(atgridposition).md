@@ -24,11 +24,11 @@ func node(atGridPosition position: vector_int2) -> NodeType?
 - (NodeType) nodeAtGridPosition:(vector_int2) position;
 ```
 
-#### Return Value
+## Return Value
 
 The grid node at the specified location, or `nil` if there is no node at that location.
 
-#### Discussion
+## Discussion
 
 This method finds nodes that are part of the grid created by the graph. You can attach other nodes to the graph (for example, to represent the positions of game entities in the grid) with the [`connectToAdjacentNodes(node:)`](./connecttoadjacentnodes%28node%29.md) method, but such nodes are not part of the grid itself.
 

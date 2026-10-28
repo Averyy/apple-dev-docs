@@ -20,7 +20,7 @@ var status: IOReturn
 IOReturn status;
 ```
 
-#### Discussion
+## Discussion
 
 [IOUSBHost](../IOUSBHost.md) initializes this to [`kIOReturnInvalid`](../../iokit/kioreturninvalid.md) and updates the field with a valid status code upon completion of the frame.
 

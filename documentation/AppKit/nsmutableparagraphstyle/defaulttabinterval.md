@@ -19,7 +19,7 @@ var defaultTabInterval: CGFloat { get set }
 @property CGFloat defaultTabInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the default tab interval in points. The system places tabs after the last specified in [tabStops](https://developer.apple.com/library/archive/#id(tabStops)) at integer multiples of this distance (if positive). Default value is `0.0`.
 

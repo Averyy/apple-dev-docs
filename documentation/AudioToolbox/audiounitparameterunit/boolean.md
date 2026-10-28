@@ -24,7 +24,7 @@ case boolean
 kAudioUnitParameterUnit_Boolean
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0.0 means `FALSE` and a nonzero value means `TRUE`.
 

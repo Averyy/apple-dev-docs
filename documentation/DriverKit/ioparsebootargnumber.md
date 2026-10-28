@@ -18,11 +18,11 @@ Parses any boot arguments in the macOS kernel boot-args.
 bool IOParseBootArgNumber(const char *arg_string, void *arg_ptr, int max_len);
 ```
 
-#### Return Value
+## Return Value
 
 True if the argument was found and parsed successfully to arg_ptr.
 
-#### Discussion
+## Discussion
 
 If the named argument is present in the kernel boot-args, return its value as an integer.
 

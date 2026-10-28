@@ -20,7 +20,7 @@ Assigns multiple visible function tables to a range of entries in the tile shade
 func setTileVisibleFunctionTables(_ functionTables: [(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the visible function table at each index is `nil`.
 

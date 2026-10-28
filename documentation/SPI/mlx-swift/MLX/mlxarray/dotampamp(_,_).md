@@ -17,7 +17,7 @@ Element-wise logical and.
 static func .&& (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Logical and on two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -30,7 +30,7 @@ let b = a + 1
 let r = (a .< b) .&& ((a + 1) .> b)
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`logicalAnd(_:_:stream:)`](../logicaland%28_,_,stream%29.md)

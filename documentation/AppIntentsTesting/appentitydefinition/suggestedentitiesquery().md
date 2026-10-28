@@ -21,7 +21,7 @@ Creates an entity query that retrieves suggested entities of this type.
 func suggestedEntitiesQuery() -> AnyEntityQuery
 ```
 
-#### Return Value
+## Return Value
 
 An entity query configured to fetch suggested entities.
 

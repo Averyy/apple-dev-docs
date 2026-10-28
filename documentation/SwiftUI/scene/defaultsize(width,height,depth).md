@@ -16,11 +16,11 @@ nonisolated
 func defaultSize(width: CGFloat, height: CGFloat, depth: CGFloat) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses a default size for new windows.
 
-#### Discussion
+## Discussion
 
 Use this modifier to indicate the default initial size for a new 3D window created from a [`Scene`](../scene.md) using [`VolumetricWindowStyle`](../volumetricwindowstyle.md):
 

@@ -30,7 +30,7 @@ var partySize: Int { get set }
 @property (atomic) NSUInteger partySize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this information to identify time slots available at the restaurant. For large parties, restaurants may have a more limited number of time slots available.
 

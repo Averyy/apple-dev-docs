@@ -22,7 +22,7 @@ protocol MFMailComposeViewControllerDelegate : NSObjectProtocol
 @protocol MFMailComposeViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`MFMailComposeViewControllerDelegate`](./mfmailcomposeviewcontrollerdelegate.md) protocol defines the method that your delegate must implement to manage the mail composition interface. The method of this protocol notifies your delegate object when the user has finished with the interface and is ready to dismiss it.
 

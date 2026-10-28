@@ -19,7 +19,7 @@ The subelements of the paper markup.
 var subelements: MarkupOrderedSet { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Includes shapes, images, strokes, etc.
 

@@ -28,7 +28,7 @@ class CHHapticPattern
 
 - [Playing a single-tap haptic pattern](./playing-a-single-tap-haptic-pattern.md)
 
-#### Overview
+## Overview
 
 A haptic pattern represents the waveform of a haptic through a hierarchical set of key-value pairs, starting at the topmost level with a [`CHHapticPattern.Key`](./chhapticpattern/key.md). This key marks the beginning of an array of events and [`parameterID`](./chhapticpattern/key/parameterid.md) definitions. Each event has an associated time that indicates when the system delivers the event to the haptic engine.
 
@@ -36,7 +36,7 @@ A haptic pattern represents the waveform of a haptic through a hierarchical set 
 
 These key-value pairs represent not only events constituting the pattern, but also individual parameters of each event, which are characteristics of the haptic, such as sharpness and intensity. More complicated patterns also contain key-value pairs for parameter curves, which you can use to modulate parameters over time.
 
-##### Haptic Patterns
+### Haptic Patterns
 
 To add haptics to your app, you create an instance of [`CHHapticEngine`](./chhapticengine.md), load a pattern, and use the engine to create a player to play that pattern. You create a pattern in one of three ways:
 
@@ -46,7 +46,7 @@ To add haptics to your app, you create an instance of [`CHHapticEngine`](./chhap
 
 You can produce the same kind of content with all forms of pattern creation.
 
-##### Haptic Intensity and Sharpness
+### Haptic Intensity and Sharpness
 
 Regardless of the building block you choose to generate a custom haptic, you can control its intensity and sharpness. Intensity varies the haptic’s amplitude or strength. Sharpness lets you determine the character of the haptic experience. For example, you can use sharpness values to convey an experience that’s crisp, precise, and mechanical, or one that’s soft, rounded, and organic.
 

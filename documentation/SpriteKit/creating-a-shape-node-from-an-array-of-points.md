@@ -5,7 +5,7 @@
 
 Create jagged or smooth shapes from the same array of points.
 
-#### Overview
+## Overview
 
 An [`SKShapeNode`](./skshapenode.md) object can be initialized with an array of points describing a path. The [`init(splinePoints:count:)`](./skshapenode/init%28splinepoints,count%29.md) method can smoothly interpolate between these points to create a curve rather than the series of straight lines created by [`init(points:count:)`](./skshapenode/init%28points,count%29.md). The following Swift code shows how to create two shape nodes using the same array of points for both initializers.
 

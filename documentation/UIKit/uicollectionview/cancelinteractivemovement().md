@@ -23,7 +23,7 @@ func cancelInteractiveMovement()
 - (void) cancelInteractiveMovement;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to cancel movement tracking and return the item to its original location. For example, when using a gesture recognizer to track interactions, call this method when the gesture is cancelled. Calling this method lets the collection view know to end the tracking process and return the item to its original location.
 

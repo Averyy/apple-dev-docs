@@ -24,7 +24,7 @@ case destinationColor
 MTLBlendFactorDestinationColor
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = Dest.rgb`
 

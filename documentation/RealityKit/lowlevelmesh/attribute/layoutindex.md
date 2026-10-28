@@ -20,7 +20,7 @@ The index of the layout that contains this attribute.
 var layoutIndex: Int
 ```
 
-#### Discussion
+## Discussion
 
 The index refers to an entry in [`vertexLayouts`](../descriptor-swift.struct/vertexlayouts.md).
 

@@ -27,7 +27,7 @@ class XCUIElement
 @interface XCUIElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 In macOS and iPadOS 15 and later, [`XCUIElement`](./xcuielement.md) provides a way to test your app with keyboard and mouse interactions, such as typing, clicking, scrolling, and moving and pausing the pointer. In iOS, [`XCUIElement`](./xcuielement.md) provides a way to test your app with gestures, such as tapping, swiping, pinching, and rotating.
 

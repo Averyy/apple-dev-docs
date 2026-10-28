@@ -25,7 +25,7 @@ static let omnidirectional: AVAudioSession.PolarPattern
 extern AVAudioSessionPolarPattern const AVAudioSessionPolarPatternOmnidirectional;
 ```
 
-#### Discussion
+## Discussion
 
 The omnidirectional pattern is circular and picks up sounds from all directions at the same level.
 

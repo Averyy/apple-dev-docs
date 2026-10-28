@@ -19,11 +19,11 @@
 static bool SPRay3DFloatIsNaN(SPRay3DFloat ray);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the ray contains any NaN values.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the ray contains any NaN values.
 

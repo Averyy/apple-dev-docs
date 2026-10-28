@@ -21,7 +21,7 @@ The interval between the date value and 00:00:00 UTC on 1 January 1970.
 var timeIntervalSince1970: TimeInterval { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is negative if the date object is earlier than 00:00:00 UTC on 1 January 1970.
 

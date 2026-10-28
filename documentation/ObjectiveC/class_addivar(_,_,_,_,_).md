@@ -25,11 +25,11 @@ func class_addIvar(_ cls: AnyClass?, _ name: UnsafePointer<CChar>, _ size: Int, 
 extern BOOL class_addIvar(Class cls, const char *name, size_t size, uint8_t alignment, const char *types);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if the instance variable was added successfully, otherwise [`NO`](./no.md) (for example, the class already contains an instance variable with that name).
 
-#### Discussion
+## Discussion
 
 This function may only be called after [`objc_allocateClassPair(_:_:_:)`](./objc_allocateclasspair%28_,_,_%29.md) and before [`objc_registerClassPair(_:)`](./objc_registerclasspair%28_%29.md). Adding an instance variable to an existing class is not supported.
 

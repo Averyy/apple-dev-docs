@@ -19,7 +19,7 @@ init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 + (NSColor *) colorWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 This method accepts extended color component values. If the red, green, blue, or alpha values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 

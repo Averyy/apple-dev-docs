@@ -24,7 +24,7 @@ struct Attachment<Content>
 
 - [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
 
-#### Overview
+## Overview
 
 Use `Attachment` to include media such as images alongside text in your prompts and instructions.
 

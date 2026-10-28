@@ -28,11 +28,11 @@ func copy(with zone: NSZone? = nil, device: (any MTLDevice)?) -> Self
 
 - [The MPSKernel Class](../the-mpskernel-class.md)
 
-#### Return Value
+## Return Value
 
 A copy of this kernel object.
 
-#### Discussion
+## Discussion
 
 The same kernel objects should not be used to encode separate kernel operations on multiple command buffers from multiple threads. Many kernels have mutable properties that might be changed by another thread while the kernel is being encoded. If you need to use a kernel from multiple threads, make a copy of it for each additional thread using [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) or [`copy(with:device:)`](./copy%28with,device%29.md). Note that the [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method makes a copy of the kernel object on the same device.
 

@@ -30,7 +30,7 @@ var defaultBookingDate: Date { get }
 @property (atomic, copy, readonly) NSDate * defaultBookingDate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

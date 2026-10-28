@@ -27,11 +27,11 @@ init(item: (any NSSecureCoding)?, typeIdentifier: String?)
 - (instancetype) initWithItem:(id<NSSecureCoding>) item typeIdentifier:(NSString *) typeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An item provider for the specified item.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize an item provider for objects in your app. The item provider registers your object with the specified type. Subsequent requests for that same type return the specified `item`.
 

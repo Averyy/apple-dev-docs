@@ -24,7 +24,7 @@ case front
 INCarSeatFront
 ```
 
-#### Discussion
+## Discussion
 
 Use this to specify all front seats.
 

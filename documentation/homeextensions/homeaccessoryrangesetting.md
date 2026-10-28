@@ -18,7 +18,7 @@ A setting that represents a numeric value within a range.
 final class HomeAccessoryRangeSetting<Value> where Value : Comparable, Value : Numeric
 ```
 
-#### Overview
+## Overview
 
 The Home app presents this setting as a slider. The slider appears only when the setting has both a lower and an upper bound.
 

@@ -21,7 +21,7 @@ Adds a `ProgressReporter` as a child, with its progress representing a portion o
 final func assign(count: Int, to reporter: ProgressReporter)
 ```
 
-#### Discussion
+## Discussion
 
 If a cycle is detected, this will cause a crash at runtime.
 

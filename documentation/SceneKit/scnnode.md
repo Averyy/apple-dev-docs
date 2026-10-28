@@ -29,11 +29,11 @@ class SCNNode
 
 - [Animating SceneKit Content](./animating-scenekit-content.md)
 
-#### Overview
+## Overview
 
 An [`SCNNode`](./scnnode.md) object by itself has no visible content when the scene containing it is rendered—it represents only a coordinate space transform (position, orientation, and scale) relative to its parent node. To construct a scene, you use a hierarchy of nodes to create its structure, then add lights, cameras, and geometry to nodes to create visible content.
 
-##### Nodes Determine the Structure of a Scene
+### Nodes Determine the Structure of a Scene
 
 The hierarchy of nodes, or **scene graph**, in a scene defines both the organization of its contents and your ability to present and manipulate those contents using SceneKit. You may create a node hierarchy programmatically using SceneKit, load one from a file created using 3D authoring tools, or combine the two approaches. SceneKit provides many utilities for organizing and searching the scene graph—for details, see the methods in Managing the Node Hierarchy and Searching the Node Hierarchy.
 
@@ -41,7 +41,7 @@ The [`rootNode`](./scnscene/rootnode.md) object in a scene defines the coordinat
 
 You use a hierarchy of nodes and transformations to model the contents of your scene in a way that suits the needs of your app. For example, if your app presents an animated view of a solar system, you can construct a node hierarchy that models celestial bodies relative to one another: Each planet can be a node, with its orbit and its current position in that orbit defined in the coordinate system of the sun. A planet node defines its own coordinate space, useful both for specifying the planet’s rotation and the orbits of its moons (each of which is a child node of its planet). With this scene hierarchy, you can easily add realistic animation to the scene—animating both the revolution of a moon around its planet and the planet around the sun will combine the animations so that the moon follows the planet.
 
-##### A Node’s Attachments Define Visual Content and Behavior
+### A Node’s Attachments Define Visual Content and Behavior
 
 The node hierarchy determines the spatial and logical structure of a scene, but not its visible contents. You add 2D and 3D objects to a scene by attaching [`SCNGeometry`](./scngeometry.md) objects to nodes. (Geometries, in turn, have attached [`SCNMaterial`](./scnmaterial.md) objects that determine their appearance.) To shade the geometries in a scene with light and shadow effects, add nodes with attached [`SCNLight`](./scnlight.md) objects. To control the viewpoint from which the scene appears when rendered, add nodes with attached [`SCNCamera`](./scncamera.md) objects.
 

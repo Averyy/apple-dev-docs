@@ -21,7 +21,7 @@ var showsTimecodes: Bool { get set }
 @property (nonatomic) BOOL showsTimecodes;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

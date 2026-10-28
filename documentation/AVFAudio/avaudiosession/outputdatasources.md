@@ -24,7 +24,7 @@ var outputDataSources: [AVAudioSessionDataSourceDescription]? { get }
 @property (readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> * outputDataSources;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of [`AVAudioSessionDataSourceDescription`](../avaudiosessiondatasourcedescription.md) objects representing available output sources, or `nil` if switching between multiple output sources isn’t currently possible. Only certain USB accessories support this feature.
 

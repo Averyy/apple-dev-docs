@@ -15,13 +15,13 @@ A category suggestion returned by the category suggestions endpoint, for either 
 object CategorySuggestion
 ```
 
-#### Discussion
+## Discussion
 
 The `CategorySuggestion` object represents a single category suggestion for targeting.
 
 To discover high-value categories to add as targeting criteria, use category suggestions. For App Store app campaigns, results reflect app categories. For Apple Maps campaigns, results reflect the categories associated with the brand. Sort results by `popularity` to prioritize the most impactful categories.
 
-##### Example
+### Example
 
 ```json
 {

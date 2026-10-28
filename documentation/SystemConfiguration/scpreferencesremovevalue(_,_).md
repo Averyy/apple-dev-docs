@@ -19,7 +19,7 @@ func SCPreferencesRemoveValue(_ prefs: SCPreferences, _ key: CFString) -> Bool
 Boolean SCPreferencesRemoveValue(SCPreferencesRef prefs, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the value was removed; `FALSE` if the key does not exist or if an error occurred.
 

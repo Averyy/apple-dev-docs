@@ -19,7 +19,7 @@ func updatePanels()
 - (void) updatePanels;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be called when a client changes some relevant setting, such as what kind of spelling, grammar checking, or substitutions it uses.
 

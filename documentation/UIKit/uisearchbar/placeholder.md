@@ -23,7 +23,7 @@ var placeholder: String? { get set }
 @property (nonatomic, copy, nullable) NSString * placeholder;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

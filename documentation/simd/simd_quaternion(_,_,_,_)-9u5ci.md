@@ -14,7 +14,7 @@ func simd_quaternion(_ ix: Float16, _ iy: Float16, _ iz: Float16, _ r: Float16) 
 static simd_quath simd_quaternion(_Float16 ix, _Float16 iy, _Float16 iz, _Float16 r);
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a quaternion from four scalar values.
 

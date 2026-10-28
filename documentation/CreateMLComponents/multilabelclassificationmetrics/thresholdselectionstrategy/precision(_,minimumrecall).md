@@ -21,7 +21,7 @@ A confidence threshold strategy for a specific precision that has at least a min
 case precision(Float, minimumRecall: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This strategy selects a threshold for each label by searching for the specified precision value on the label’s precision-recall curve. At the precision, the recall must be greater than or equal to the minimum recall value, otherwise a NaN threshold for the corresponding label is returned.
 

@@ -32,7 +32,7 @@ var playerAttributes: UInt32 { get }
 @property (atomic, readonly) uint32_t playerAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property matches the [`playerAttributes`](../gkmatchrequest/playerattributes.md) property of the match request that the other player uses to create the match.
 

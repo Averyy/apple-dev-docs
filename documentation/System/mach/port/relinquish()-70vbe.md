@@ -17,7 +17,7 @@ consuming func relinquish() -> (name: mach_port_name_t, context: mach_port_conte
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 Returns a tuple containing the Mach port name representing the right, and the context value used to guard the right.
 

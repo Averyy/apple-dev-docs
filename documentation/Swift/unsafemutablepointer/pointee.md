@@ -21,7 +21,7 @@ Reads or updates the instance referenced by this pointer.
 var pointee: Pointee { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 When reading from the `pointee` property, the instance referenced by this pointer must already be initialized. When `pointee` is used as the left side of an assignment, the instance is updated. The instance must be initialized or this pointer’s `Pointee` type must be a trivial type.
 

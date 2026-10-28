@@ -21,7 +21,7 @@ Creates and initializes a new uniform object that holds a floating-point number.
 + (instancetype) uniformWithName:(NSString *) name float:(float) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.float`](../skuniformtype/float.md).
 

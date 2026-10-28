@@ -21,11 +21,11 @@ Returns the result of a tapered merge between two double-precision vectors.
 static func taperedMerge<T, U>(_ vectorA: T, _ vectorB: U) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The result of the tapered merge operation.
 
-#### Discussion
+## Discussion
 
 The following code performs a tapered merge between two vectors that represent sine waves at different frequencies:
 

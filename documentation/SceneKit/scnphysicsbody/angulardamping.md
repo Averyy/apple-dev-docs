@@ -25,7 +25,7 @@ var angularDamping: CGFloat { get set }
 @property (nonatomic) CGFloat angularDamping;
 ```
 
-#### Discussion
+## Discussion
 
 This property simulates the effect of rotational friction on a body. A damping factor of `0.0` specifies no loss in angular velocity, and a damping factor of `1.0` prevents the body from rotating. The default damping factor is `0.1`.
 

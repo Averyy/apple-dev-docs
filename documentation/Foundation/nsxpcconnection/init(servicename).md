@@ -19,7 +19,7 @@ init(serviceName: String)
 - (instancetype) initWithServiceName:(NSString *) serviceName;
 ```
 
-#### Discussion
+## Discussion
 
 XPC services are helper processes that are usually part of your application bundle. The service should use [`NSXPCListener`](../nsxpclistener.md) to wait for new connections.
 

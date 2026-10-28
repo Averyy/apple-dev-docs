@@ -22,7 +22,7 @@ class UIPrintPageRenderer
 @interface UIPrintPageRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 A page renderer is an instance of a custom subclass of [`UIPrintPageRenderer`](./uiprintpagerenderer.md). When you compose a print job using the shared instance of [`UIPrintInteractionController`](./uiprintinteractioncontroller.md), you assign the page renderer to the [`printPageRenderer`](./uiprintinteractioncontroller/printpagerenderer.md) property of that instance. The subclass typically overrides one or more of the five `draw...` methods.
 

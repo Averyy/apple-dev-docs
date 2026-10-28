@@ -25,7 +25,7 @@ static let tokenType: NLTagScheme
 extern NLTagScheme const NLTagSchemeTokenType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see Token types in [`NLTag`](../nltag.md).
 

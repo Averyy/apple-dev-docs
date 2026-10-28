@@ -19,7 +19,7 @@ case createSymbolicLink
 NSWorkspaceAuthorizationTypeCreateSymbolicLink
 ```
 
-#### Discussion
+## Discussion
 
 Signifies that the user has granted authorization for [`createSymbolicLink(at:withDestinationURL:)`](../../../Foundation/filemanager/createsymboliclink%28at,withdestinationurl%29.md).
 

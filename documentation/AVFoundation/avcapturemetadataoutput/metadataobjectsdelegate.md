@@ -23,7 +23,7 @@ var metadataObjectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)? { get
 @property (nonatomic, readonly, nullable) id<AVCaptureMetadataOutputObjectsDelegate> metadataObjectsDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](../avcapturemetadataoutputobjectsdelegate.md) protocol. The object in this property is used to process all metadata objects captured from the capture metadata output object’s connection.
 

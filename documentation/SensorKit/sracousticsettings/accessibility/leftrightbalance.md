@@ -19,7 +19,7 @@ var leftRightBalance: Double { get }
 @property (nonatomic, assign, readonly) double leftRightBalance;
 ```
 
-#### Discussion
+## Discussion
 
 Audio volume between left and right channels
 

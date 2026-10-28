@@ -19,7 +19,7 @@ func addRow(with views: [NSView]) -> NSGridRow
 - (NSGridRow *) addRowWithViews:(NSArray<NSView *> *) views;
 ```
 
-#### Discussion
+## Discussion
 
 You can insert and remove rows and columns dynamically in a grid view. The grid is enlarged as needed to hold the specified views.
 

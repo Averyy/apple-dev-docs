@@ -22,7 +22,7 @@ var alwaysAvailable: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL alwaysAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to ensure that the functionality in this group is available to people regardless of the customization of the groups.
 

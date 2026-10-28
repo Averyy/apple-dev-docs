@@ -24,7 +24,7 @@ let HKMetadataKeyTimeZone: String
 extern NSString * const HKMetadataKeyTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value compatible with the [`NSTimeZone`](../Foundation/nstimezone.md) class’s [`timeZoneWithName:`](../Foundation/nstimezone/timezonewithname_.md) method. For best results when analyzing sleep samples, it’s recommended that you store time zone metadata with your sleep sample data.
 

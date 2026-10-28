@@ -15,7 +15,7 @@ The style to use when drawing joins between line segments.
 lineJoin?: "bevel" | "miter" | "round";
 ```
 
-#### Discussion
+## Discussion
 
 The three options for line joins are `miter` (the join is a sharp corner), `round` (the join is a rounded corner), or `bevel` (the join is a beveled corner). The default line join is `round`.
 

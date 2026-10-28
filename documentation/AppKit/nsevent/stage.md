@@ -19,7 +19,7 @@ var stage: Int { get }
 @property (readonly) NSInteger stage;
 ```
 
-#### Discussion
+## Discussion
 
 Gesture events of type [`NSEvent.EventType.pressure`](./eventtype/pressure.md) can go through multiple stages. This property indicates the current stage of the event.
 

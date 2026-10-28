@@ -19,11 +19,11 @@ func connectToObjectPushService() -> OBEXError
 - (OBEXError) connectToObjectPushService;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXSessionAlreadyConnectedError, kOBEXNoResourcesError initially. Further results returned through the fileTransferServicesConnectionComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 If the OBEXSession given to OBEXFileTransferServices on creation is not connected it can be manually connected through this method.
 

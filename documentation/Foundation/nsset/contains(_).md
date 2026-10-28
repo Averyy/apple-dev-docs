@@ -25,11 +25,11 @@ func contains(_ anObject: Any) -> Bool
 - (BOOL) containsObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `anObject` is present in the set, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Each element of the set is checked for equality with `anObject` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) returns [`true`](../../Swift/true.md).
 

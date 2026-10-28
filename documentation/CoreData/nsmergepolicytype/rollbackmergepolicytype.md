@@ -25,7 +25,7 @@ case rollbackMergePolicyType
 NSRollbackMergePolicyType
 ```
 
-#### Discussion
+## Discussion
 
 This policy merges conflicts between the persistent store’s version of the object and the current in-memory version by discarding unsaved changes.
 

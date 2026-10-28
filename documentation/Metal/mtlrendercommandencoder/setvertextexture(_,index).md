@@ -25,7 +25,7 @@ func setVertexTexture(_ texture: (any MTLTexture)?, index: Int)
 - (void) setVertexTexture:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

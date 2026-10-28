@@ -19,7 +19,7 @@ Finish constructing the detection track and return it.
 func finishDetectionTrack() -> CNDetectionTrack
 ```
 
-#### Return Value
+## Return Value
 
 A detection track which tracks the object
 

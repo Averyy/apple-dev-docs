@@ -34,7 +34,7 @@ var badge: NSNumber? { get }
 @property (atomic, copy, readonly, nullable) NSNumber * badge;
 ```
 
-#### Discussion
+## Discussion
 
 When the number in this property is `0`, the system doesn’t display a badge. When the number is greater than `0`, the system displays the badge with the specified number. When the value in this property is `nil`, the system leaves the current badge unchanged.
 

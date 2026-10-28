@@ -30,7 +30,7 @@ class func authorizationStatus() -> PHAuthorizationStatus
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 
-#### Return Value
+## Return Value
 
 The current authorization status.
 

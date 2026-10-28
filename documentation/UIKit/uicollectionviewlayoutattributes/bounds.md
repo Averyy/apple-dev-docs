@@ -23,7 +23,7 @@ var bounds: CGRect { get set }
 @property (nonatomic) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 When setting the bounds, the origin of the bounds rectangle must always be at (0, 0). Changing the bounds rectangle also changes the value in the [`size`](./size.md) property to match the new bounds size.
 

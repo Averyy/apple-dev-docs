@@ -25,7 +25,7 @@ static let fileSecurityKey: URLResourceKey
 extern NSURLResourceKey const NSURLFileSecurityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-write value as an [`NSFileSecurity`](../nsfilesecurity.md) object.
 

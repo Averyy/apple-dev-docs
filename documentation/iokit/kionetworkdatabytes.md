@@ -16,7 +16,7 @@ A property of IONetworkData objects.
 #define kIONetworkDataBytes
 ```
 
-#### Discussion
+## Discussion
 
 The kIONetworkDataBytes property is an OSData that describes the data buffer of an IONetworkData object. This property is present only if kIONetworkDataAccessTypeSerialize access is supported.
 

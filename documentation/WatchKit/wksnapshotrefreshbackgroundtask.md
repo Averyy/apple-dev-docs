@@ -23,7 +23,7 @@ class WKSnapshotRefreshBackgroundTask
 
 - [Preparing to take your watchOS app’s snapshot](./preparing-to-take-your-watchos-app-s-snapshot.md)
 
-#### Overview
+## Overview
 
 Using the methods of [`WKSnapshotRefreshBackgroundTask`](./wksnapshotrefreshbackgroundtask.md), you can push, pop, or present other interface controllers, and then update the content of the desired interface controller. The system automatically takes a snapshot of your user interface as soon as this task completes.
 

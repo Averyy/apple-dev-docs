@@ -33,7 +33,7 @@ class AVPlayerItem
 - [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
 - [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Overview
+## Overview
 
 A player item stores a reference to an [`AVAsset`](./avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
 

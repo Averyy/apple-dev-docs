@@ -34,7 +34,7 @@ var pronunciationHint: String? { get }
 @property (atomic, strong, readonly, nullable) NSString * pronunciationHint;
 ```
 
-#### Discussion
+## Discussion
 
 This value provides a hint to Siri about how a string is pronounced. This string is not a phonetic spelling of the original phrase, but is a string that has an equivalent sound when spoken. For example, the phrase “iTunes” could be have “eye toons” as its pronunciation string.
 

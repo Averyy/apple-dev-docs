@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to include the year in the formatted out
 func year() -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the year.
 
-#### Discussion
+## Discussion
 
 This example shows an ISO 8601 format with, and without, a year.
 

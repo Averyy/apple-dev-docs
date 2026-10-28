@@ -18,7 +18,7 @@
 extern NSString * const AVFragmentedMovieTrackTimeRangeDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Posted when the timeRange of an AVFragmentedMovieTrack changes while the associated instance of AVFragmentedMovie is being minded by an AVFragmentedMovieMinder, but only for changes that occur after the status of the value of @“timeRange” has reached AVKeyValueStatusLoaded.
 

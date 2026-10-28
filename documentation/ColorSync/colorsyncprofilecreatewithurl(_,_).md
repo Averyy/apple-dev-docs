@@ -25,7 +25,7 @@ func ColorSyncProfileCreateWithURL(_ url: CFURL!, _ error: UnsafeMutablePointer<
 extern ColorSyncProfileRefColorSyncProfileCreateWithURL(CFURLRef url, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 

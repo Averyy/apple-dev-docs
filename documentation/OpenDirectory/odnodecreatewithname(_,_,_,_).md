@@ -20,7 +20,7 @@ func ODNodeCreateWithName(_ allocator: CFAllocator!, _ session: ODSessionRef!, _
 extern ODNodeRefODNodeCreateWithName(CFAllocatorRef allocator, ODSessionRef session, CFStringRef nodeName, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The created node.
 

@@ -19,7 +19,7 @@ case revoke
 FSKernelCacheCoherencyActionRevoke
 ```
 
-#### Discussion
+## Discussion
 
 Use this action when the module determines that an item no longer exists or is no longer accessible. Common scenarios include:
 

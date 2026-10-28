@@ -21,7 +21,7 @@ A single flexible item.
 case flexible(minimum: CGFloat = 10, maximum: CGFloat = .infinity)
 ```
 
-#### Discussion
+## Discussion
 
 The size of this item is the size of the grid with spacing and inflexible items removed, divided by the number of flexible items, clamped to the provided bounds.
 

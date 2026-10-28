@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 11.1 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 11.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [Xcode 16.1 Release Notes](../Xcode-Release-Notes/xcode-16_1-release-notes.md).
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In StoreKit Testing in Xcode, the offer identifier in the subscription renewal info might be reported incorrectly for offer codes.  (133774710)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using `if #available` in @WidgetBundleBuilder and @SceneBuilder crashes on prior OS versions due to “unknown OS version.”  (136098106)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Rectangular complications and Watch-specific custom Live Activity views use the wrong font metrics, causing title2 and title3 to render much larger than intended and largeTitle to render much smaller than intended. Additionally, custom Live Activity views use the wrong default font (SF Pro instead of SF Compact).  (135831317)
 

@@ -20,7 +20,7 @@ A notification that is posted when an accessory is disconnected and no longer av
 extern NSString * const EAAccessoryDidDisconnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared accessory manager. The `userInfo` dictionary contains an [`EAAccessoryKey`](./eaaccessorykey.md), whose value is the [`EAAccessory`](./eaaccessory.md) object representing the accessory that was disconnected. Before delivery of this notification can occur, you must call the [`registerForLocalNotifications()`](./eaaccessorymanager/registerforlocalnotifications%28%29.md) method to let the system know you are interested in receiving this notification.
 

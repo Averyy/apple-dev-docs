@@ -25,7 +25,7 @@ let kSecReturnPersistentRef: CFString
 extern CFStringRef const kSecReturnPersistentRef;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that a persistent reference to an item should be returned as a [`CFData`](../CoreFoundation/cfdata.md) object. Unlike normal references, a persistent reference may be stored on disk or passed between processes.
 

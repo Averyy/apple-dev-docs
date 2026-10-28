@@ -30,7 +30,7 @@ var totalEnergyBurned: HKQuantity? { get }
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Discussion
+## Discussion
 
 This property contains a quantity using energy units, or `nil`.
 

@@ -26,11 +26,11 @@ convenience init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new player item, prepared to use `URL`.
 
-#### Discussion
+## Discussion
 
 This method immediately returns the item, but with the status [`AVPlayerItem.Status.unknown`](./status-swift.enum/unknown.md).
 

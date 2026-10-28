@@ -24,11 +24,11 @@ func MusicSequenceBarBeatTimeToBeats(_ inSequence: MusicSequence, _ inBarBeatTim
 extern OSStatus MusicSequenceBarBeatTimeToBeats(MusicSequence inSequence, const CABarBeatTime *inBarBeatTime, MusicTimeStamp *outBeats);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The sequence’s tempo track time signature events are used to to calculate the bar-beat representation. If there are no Time Sig events added to the sequence 4/4 is assumed. A time signature event is a MIDI Meta Event as specified for MIDI files.
 

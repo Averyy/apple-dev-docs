@@ -19,7 +19,7 @@ init(frame buttonFrame: NSRect, pullsDown flag: Bool)
 - (instancetype) initWithFrame:(NSRect) buttonFrame pullsDown:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSPopUpButton` object, or `nil` if the object could not be initialized.
 

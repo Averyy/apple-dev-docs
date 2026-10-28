@@ -19,7 +19,7 @@ The conversation is active and can be temporarily paused.
 static let pausing: Conversation.Capabilities
 ```
 
-#### Discussion
+## Discussion
 
 Pausing a conversation can include stopping all microphone, camera, and speaker interaction.
 

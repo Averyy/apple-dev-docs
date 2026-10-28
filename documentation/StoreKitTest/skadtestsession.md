@@ -21,13 +21,13 @@ class SKAdTestSession
 @interface SKAdTestSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the `SKAdTestSession` class to test your implementations of SKAdNetwork. Create one instance of this class to use in multiple test cases. The instance represents a test session, and holds a set of test postbacks. Use [`SKAdTestPostback`](./skadtestpostback.md) to create test postbacks. Call [`setPostbacks(_:)`](./skadtestsession/setpostbacks%28_%29.md) to add test postbacks to the test session. The test session deletes the postbacks from the instance after you call [`flushPostbacks(responses:)`](./skadtestsession/flushpostbacks%28responses%29.md).
 
 > **Note**:  Check [`SKAdTestPostbackVersion`](./skadtestpostbackversion.md) for the list of SKAdNetwork versions that the testing environment supports.
 
-##### Validate ad impressions
+### Validate ad impressions
 
 In the production environment, ad networks sign the ad impressions that apps display. In the testing environment, you have the opportunity to validate the ad impression signature. Ad networks provide two types of ads: StoreKit-rendered ads and view-through ads. To validate the ad impressions, use the following methods:
 
@@ -37,7 +37,7 @@ In the production environment, ad networks sign the ad impressions that apps dis
 
 You need a cryptographic private key to generate signatures. Use a public/private key pair that you create using an Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256V1 curve. Provide the public key in the validation methods. Secure your private keys as you would other credentials, such as passwords. Never share your private keys, store keys in a code repository, or include keys in client-facing code.
 
-##### Test conversion values and postbacks
+### Test conversion values and postbacks
 
 In the production environment, ad networks receive postbacks on their server after users install an advertised app and a timer expires. In the testing environment, you can control all aspects of the postback, including when it’s sent.
 

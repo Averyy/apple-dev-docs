@@ -9,7 +9,7 @@ Enqueue the next instance of a recurring request.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 The `requestId` you pass must be the most recent instance of the series identified by the `parentRequestId`.
 

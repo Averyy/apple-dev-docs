@@ -22,7 +22,7 @@ case interactive
 NSURLSessionMultipathServiceTypeInteractive
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option for latency-sensitive, low-volume connections that might use cellular data. You must also set the [`Multipath Entitlement`](../../../BundleResources/entitlements/com.apple.developer.networking.multipath.md) in the Xcode Capabilities pane for your app.
 

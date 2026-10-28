@@ -5,11 +5,11 @@
 
 Learn about important changes to AppleMapsServerAPI.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md).
 
-#### June 2025
+## June 2025
 
 - Request cycling directions and ETAs using the cycling transport type; see [`Search for directions and estimated travel time between locations`](../AppleMapsServerAPI/v1-directions.md).
 

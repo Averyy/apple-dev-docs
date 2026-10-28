@@ -24,7 +24,7 @@ func insertChildCollections(_ collections: any NSFastEnumeration, at indexes: In
 - (void) insertChildCollections:(id<NSFastEnumeration>) collections atIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that the index set you specify is valid even if the collection list has changed since you fetched it, create a change request with a snapshot of the collection list’s contents using the [`init(for:childCollections:)`](./init%28for,childcollections%29.md) method before inserting child collections.
 

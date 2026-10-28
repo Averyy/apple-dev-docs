@@ -18,7 +18,7 @@ Arguments to pass to IOConnectMethod calls.
 struct IOUserClientMethodArguments;
 ```
 
-#### Discussion
+## Discussion
 
 Any argument may be passed as NULL if not passed by the caller.
 

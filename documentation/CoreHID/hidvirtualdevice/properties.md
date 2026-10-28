@@ -19,7 +19,7 @@ struct Properties
 
 - [Creating virtual devices](../creatingvirtualdevices.md)
 
-#### Overview
+## Overview
 
 A virtual device has many properties, required and optional, that determine or alter its functionality. Use this class to provide these properties during the creation of a virtual device.
 

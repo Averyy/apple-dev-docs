@@ -18,7 +18,7 @@ Returns the text color at the index position.
 - (CGColorRef) textColorAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The text color.
 

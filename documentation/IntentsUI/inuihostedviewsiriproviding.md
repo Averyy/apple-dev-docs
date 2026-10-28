@@ -27,7 +27,7 @@ protocol INUIHostedViewSiriProviding : NSObjectProtocol
 
 - [Configuring the View Controller for Your Custom Interface](../SiriKit/configuring-the-view-controller-for-your-custom-interface.md)
 
-#### Overview
+## Overview
 
 The properties of the [`INUIHostedViewSiriProviding`](./inuihostedviewsiriproviding.md) protocol let you notify Siri that you want to replace some parts of the standard interface with your custom content. You can never remove the entire default interface provided by Siri, but you can remove specific types of information if your view controller already provides the same information.
 

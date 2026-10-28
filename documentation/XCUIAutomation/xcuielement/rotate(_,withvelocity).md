@@ -23,7 +23,7 @@ func rotate(_ rotation: CGFloat, withVelocity velocity: CGFloat)
 - (void) rotate:(CGFloat) rotation withVelocity:(CGFloat) velocity;
 ```
 
-#### Discussion
+## Discussion
 
 The system makes a best effort to synthesize the requested rotation and velocity, but absolute accuracy isn’t guaranteed. Some values may not be possible based on the size of the element’s frame, and they result in test failures.
 

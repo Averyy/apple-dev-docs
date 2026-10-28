@@ -24,7 +24,7 @@ var uniqueID: String { get }
 @property (nonatomic, readonly) NSString * uniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 Capture devices have a unique identifier that persists on one system across device connections and disconnections, application restarts, and reboots of the system itself. You can store the value returned by this property to recall or track the status of a specific device in the future.
 

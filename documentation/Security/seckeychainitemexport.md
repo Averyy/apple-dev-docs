@@ -17,15 +17,15 @@ Exports one or more certificates, keys, or identities.
 OSStatus SecKeychainItemExport(CFTypeRef keychainItemOrArray, SecExternalFormat outputFormat, SecItemImportExportFlags flags, const SecKeyImportExportParameters *keyParams, CFDataRef*exportedData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function works only with keys, certificates, and identities. An identity is the combination of a certificate and its associated private key. Although public keys are commonly stored in certificates, they can be stored separately in the keychain as well; for example, when you call the [`SecKeyCreatePair`](./seckeycreatepair.md) function to create a key pair, both the public and private keys are stored in the keychain. Use the [`SecKeychainSearchCopyNext`](./seckeychainsearchcopynext.md) function to find a key or certificate. Use the [`SecIdentitySearchCopyNext`](./secidentitysearchcopynext.md) function in the Certificate, Key, and Trust API to find an identity.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecItemExport(_:_:_:_:_:)`](./secitemexport%28_,_,_,_,_%29.md) instead.
 

@@ -25,7 +25,7 @@ var uuidString: String { get }
 @property (copy, readonly) NSString * UUIDString;
 ```
 
-#### Discussion
+## Discussion
 
 A string containing a formatted UUID for example `E621E1F8-C36C-495A-93FC-0C247A3E6E5F`.
 

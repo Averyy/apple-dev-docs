@@ -20,7 +20,7 @@ optional func textField(_ textField: NSTextField, textView: NSTextView, candidat
 - (NSArray *) textField:(NSTextField *) textField textView:(NSTextView *) textView candidatesForSelectedRange:(NSRange) selectedRange;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked from `updateCandidates`. `NSTextView` uses the candidates returned from this method and suppress its built-in candidate generation. Returning `nil` from this delegate method allows `NSTextView` to query candidates from `NSSpellChecker`.
 

@@ -17,7 +17,7 @@ An app intent you use in widgets to open another app or perform an App Shortcut,
 struct RunSystemShortcutIntent
 ```
 
-#### Overview
+## Overview
 
 Only use `RunSystemShortcutIntent` to initialize a [`Button`](../SwiftUI/button.md) with the [`init(_:intent:)`](../SwiftUI/button/init%28_,intent%29.md) initializer and place the button in a widget. The run system shortcut intent doesn’t provide functionality in other contexts.
 

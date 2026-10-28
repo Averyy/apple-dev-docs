@@ -23,7 +23,7 @@ func scheduleBackgroundRefresh(withPreferredDate preferredFireDate: Date, userIn
 
 - [Using background tasks](../using-background-tasks.md)
 
-#### Discussion
+## Discussion
 
 Call this method to update the contents of your app in the background. Background refresh tasks only trigger when the app is in the background. If the app is still running in the foreground at the scheduled time, the system ignores the task.
 

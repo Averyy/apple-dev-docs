@@ -24,7 +24,7 @@ var backgroundStyle: SWAttributionView.BackgroundStyle { get set }
 @property (nonatomic, assign, readwrite) SWAttributionViewBackgroundStyle backgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a background style, the system chooses one automatically. In general, [`SWAttributionView.BackgroundStyle.color`](./backgroundstyle-swift.enum/color.md) looks best on monochrome backgrounds, while [`SWAttributionView.BackgroundStyle.material`](./backgroundstyle-swift.enum/material.md) looks better on colored backgrounds.
 

@@ -23,7 +23,7 @@ var kExtAudioFileError_CodecUnavailableInputNotConsumed: OSStatus { get }
 kExtAudioFileError_CodecUnavailableInputNotConsumed
 ```
 
-#### Discussion
+## Discussion
 
 For additional information, refer to [Audio Guidelines By App Type](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioGuidelinesByAppType/AudioGuidelinesByAppType.html#//apple_ref/doc/uid/TP40007875-CH11) in [Audio Session Programming Guide](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
 

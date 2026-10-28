@@ -20,7 +20,7 @@ func deleteSelectedItems(_ sender: Any!)
 - (void) deleteSelectedItems:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
 

@@ -21,7 +21,7 @@ The summary of the presentation of an App Shortcut parameter.
 struct AppShortcutParameterPresentationSummary<Intent, Value, Parameter, ParameterKeyPath> where Intent : AppIntent, Value : _IntentValue, Value : Sendable, Parameter : IntentParameter<Value>, ParameterKeyPath : KeyPath<Intent, Parameter>
 ```
 
-#### Overview
+## Overview
 
 Make sure to provide a summary string that includes the parameter in the interpolation; for example, `"Call \(\.$person)"`.
 

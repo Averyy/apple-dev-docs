@@ -21,7 +21,7 @@ Creates an inflection rule with the given morphology.
 - (instancetype) initWithMorphology:(NSMorphology *) morphology;
 ```
 
-#### Return Value
+## Return Value
 
 An inflection rule that uses the given morphology.
 

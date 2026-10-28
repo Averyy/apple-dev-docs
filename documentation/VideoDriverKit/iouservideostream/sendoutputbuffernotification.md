@@ -15,11 +15,11 @@ Sends a notification to the host that data is available for reading on the outpu
 kern_return_t SendOutputBufferNotification();
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the notification was successfully sent.
 
-#### Discussion
+## Discussion
 
 This will result in the user’s output handler being called, if they registered one.
 

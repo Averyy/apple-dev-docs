@@ -19,7 +19,7 @@ enum WKUserInterfaceDirectionPolicy
 enum WKUserInterfaceDirectionPolicy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When `WKUserInterfaceDirectionPolicyContent` is specified, the directionality of user interface elements is affected by the `dir` attribute or the `direction` CSS property. When `WKUserInterfaceDirectionPolicySystem` is specified, the directionality of user interface elements is affected by the direction of the view.
 

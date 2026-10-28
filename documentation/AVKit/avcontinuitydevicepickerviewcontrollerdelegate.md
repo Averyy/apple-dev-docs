@@ -19,7 +19,7 @@ protocol AVContinuityDevicePickerViewControllerDelegate : NSObjectProtocol
 @protocol AVContinuityDevicePickerViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Your app can respond to the various outcome events from an [`AVContinuityDevicePickerViewController`](./avcontinuitydevicepickerviewcontroller.md) instance with the following steps:
 

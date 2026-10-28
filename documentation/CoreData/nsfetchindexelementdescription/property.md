@@ -25,7 +25,7 @@ var property: NSPropertyDescription? { get }
 @property (retain, readonly, nullable) NSPropertyDescription * property;
 ```
 
-#### Discussion
+## Discussion
 
 This property may also be an [`NSExpressionDescription`](../nsexpressiondescription.md) that expresses a function.
 

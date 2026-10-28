@@ -21,7 +21,7 @@ A Boolean value that indicates whether the type is in the public domain.
 var isPublic: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Types in the public domain have identifiers starting with `public`, and are generally defined by a standards body or by convention. Public types aren’t dynamic.
 

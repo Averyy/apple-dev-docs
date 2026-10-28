@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, didFailToFormatString string: String
 - (BOOL) control:(NSControl *) control didFailToFormatString:(NSString *) string errorDescription:(NSString *) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value in the string parameter should be accepted as is; otherwise, [`false`](../../Swift/false.md) if the value in the parameter should be rejected.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should evaluate the error or query the user an appropriate value indicating whether the string should be accepted or rejected.
 

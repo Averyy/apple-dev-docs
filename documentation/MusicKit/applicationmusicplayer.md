@@ -20,7 +20,7 @@ An object your app uses to play music in a way that doesn’t affect the Music a
 class ApplicationMusicPlayer
 ```
 
-#### Overview
+## Overview
 
 The application music player plays music specifically for your app, and doesn’t affect the Music app’s state.
 

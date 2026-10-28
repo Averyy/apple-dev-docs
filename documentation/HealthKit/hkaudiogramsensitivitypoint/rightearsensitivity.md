@@ -27,7 +27,7 @@ var rightEarSensitivity: HKQuantity? { get }
 @property (copy, readonly, nullable) HKQuantity * rightEarSensitivity;
 ```
 
-#### Discussion
+## Discussion
 
 This object uses [`decibelHearingLevel()`](../hkunit/decibelhearinglevel%28%29.md) units to measure sensitivity in attenuated dB from a baseline of 0 dB.
 

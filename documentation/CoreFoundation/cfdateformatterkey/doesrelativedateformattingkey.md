@@ -25,7 +25,7 @@ static let doesRelativeDateFormattingKey: CFDateFormatterKey!
 extern CFDateFormatterKey const kCFDateFormatterDoesRelativeDateFormattingKey;
 ```
 
-#### Discussion
+## Discussion
 
 This is used to specify whether the receiver uses phrases such as “today” and “tomorrow” for the date component.
 

@@ -17,7 +17,7 @@ Dismiss the sheet that prompts someone to present their card for reading.
 func cancelRead() async throws -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can cancel a read operation before the device detects the card and starts reading it, but not after. Once the device begins reading the card, you cannot dismiss the sheet.
 

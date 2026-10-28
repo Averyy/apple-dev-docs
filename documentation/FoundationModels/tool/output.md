@@ -21,7 +21,7 @@ The output that this tool produces for the language model to reason about in sub
 associatedtype Output : PromptRepresentable
 ```
 
-#### Discussion
+## Discussion
 
 Typically output is either a `String` or a [`Generable`](../generable.md) type.
 

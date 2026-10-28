@@ -5,7 +5,7 @@
 
 Implicit encoder delay uses the most common delay of 2112 audio samples.
 
-#### Overview
+## Overview
 
 In the original AAC implementations, as stated above the common practice was to propagate the encoder delay in the provided AAC bitstream. With these original implementations, the most common delay used was 2112 audio samples. An AAC bitstream would therefore generally be 3 AAC packets larger than what was theoretically required by the original signal.
 

@@ -25,7 +25,7 @@ var duration: CFTimeInterval { get set }
 @property CFTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0.
 

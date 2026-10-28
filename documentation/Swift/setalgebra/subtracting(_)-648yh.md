@@ -21,11 +21,11 @@ Returns a new set containing the elements of this set that do not occur in the g
 func subtracting(_ other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new set.
 
-#### Discussion
+## Discussion
 
 In the following example, the `nonNeighbors` set is made up of the elements of the `employees` set that are not elements of `neighbors`:
 

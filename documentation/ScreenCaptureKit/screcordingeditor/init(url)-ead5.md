@@ -22,11 +22,11 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized SCRecordingEditor.
 
-#### Discussion
+## Discussion
 
 Initialize an SCRecordingEditor with the file URL of a completed recording.
 

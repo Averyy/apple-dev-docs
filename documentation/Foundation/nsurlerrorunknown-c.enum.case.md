@@ -21,7 +21,7 @@ The URL Loading System encountered an error that it can’t interpret.
 NSURLErrorUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This can occur when an error originates from a lower level framework or library. Whenever this error code is received, it is a bug, and should be reported to Apple.
 

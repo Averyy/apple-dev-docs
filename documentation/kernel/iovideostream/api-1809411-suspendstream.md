@@ -12,7 +12,7 @@ virtual IOReturn suspendStream(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully suspended.
 

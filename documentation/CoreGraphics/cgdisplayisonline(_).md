@@ -20,11 +20,11 @@ func CGDisplayIsOnline(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsOnline(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is connected; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 A display is considered connected or online when the framebuffer hardware is connected to a monitor.
 

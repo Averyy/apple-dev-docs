@@ -29,7 +29,7 @@ var storeAction: MTLStoreAction { get set }
 - [Setting load and store actions](../setting-load-and-store-actions.md)
 - [Storing data a pass makes with custom sample positions for a subsequent pass](../storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
-#### Discussion
+## Discussion
 
 If your app doesn’t need the data in the texture after completing the rendering pass, use the [`MTLStoreAction.dontCare`](../mtlstoreaction/dontcare.md) action. Otherwise, use the [`MTLStoreAction.store`](../mtlstoreaction/store.md) action if the texture is directly stored or the [`MTLStoreAction.multisampleResolve`](../mtlstoreaction/multisampleresolve.md) action if the texture is a multisampled texture. In some feature sets, you can use the [`MTLStoreAction.storeAndMultisampleResolve`](../mtlstoreaction/storeandmultisampleresolve.md) action to store and resolve the texture in a single rendering pass. For more information, see:
 

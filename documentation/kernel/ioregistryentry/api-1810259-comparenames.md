@@ -13,11 +13,11 @@ virtual bool compareNames(
  OSString **matched = 0 ) const;
 ```
 
-#### Return Value
+## Return Value
 
 True if one of the names compared true with the entry's global name.
 
-#### Overview
+## Overview
 
 This method is called during IOService name matching and elsewhere to compare the entry's global name with a list of names, or a single name. A list of names may be passed as any OSCollection of OSStrings, while a single name may be passed an OSString, in the name parameter. compareNames will call the compareName method for each name, for overrides.
 

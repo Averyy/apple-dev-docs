@@ -24,7 +24,7 @@ func beginUpdates()
 - (void) beginUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start a synchronized batch update of `MPContentItems` objects.
 

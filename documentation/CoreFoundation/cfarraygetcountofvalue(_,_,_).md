@@ -25,7 +25,7 @@ func CFArrayGetCountOfValue(_ theArray: CFArray!, _ range: CFRange, _ value: Uns
 extern CFIndex CFArrayGetCountOfValue(CFArrayRef theArray, CFRange range, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of times `value` occurs in `theArray`, within the specified range.
 

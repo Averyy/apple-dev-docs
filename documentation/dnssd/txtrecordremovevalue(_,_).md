@@ -25,7 +25,7 @@ func TXTRecordRemoveValue(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ ke
 DNSServiceErrorType TXTRecordRemoveValue(TXTRecordRef *txtRecord, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_NoSuchKey if the “key” does not exist in the TXTRecordRef.
 

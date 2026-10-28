@@ -19,7 +19,7 @@ var controlSize: NSControl.ControlSize { get set }
 @property NSControlSize controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 The valid values for this property are described inControl Sizes in [`NSCell`](../nscell.md). The default value of this property is [`NSRegularControlSize`](../nsregularcontrolsize.md).
 

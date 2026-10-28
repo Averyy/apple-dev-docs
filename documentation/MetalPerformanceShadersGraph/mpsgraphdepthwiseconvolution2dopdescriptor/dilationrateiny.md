@@ -24,7 +24,7 @@ var dilationRateInY: Int { get set }
 @property (nonatomic, readwrite) NSUInteger dilationRateInY;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: 1.
 

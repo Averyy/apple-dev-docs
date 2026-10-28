@@ -14,7 +14,7 @@ static IOGatedOutputQueue * withTarget(
  UInt32 capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOGatedOutputQueue object on success, or 0 otherwise.
 

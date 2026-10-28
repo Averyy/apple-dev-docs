@@ -5,7 +5,7 @@
 
 Configure your app and website to enable people to install your app on their devices from your website.
 
-#### Overview
+## Overview
 
 Alternative app marketplaces install on a person’s device from your website. To distribute your marketplace app, fill out a webform that outlines the qualifications, and if it’s approved, Apple enables you to download a framework that facilitates the secure installation of your app from your website. Coordinate with App Store Connect by providing your web domain and a public key that the system uses to validate your app’s installations. When you submit your app and pass review, App Store Connect enables you to access your approved app’s alternative distribution package. For more information, see [Submit for Notarization](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/submit-for-notarization).
 
@@ -15,7 +15,7 @@ Deploy a web server and modify your website to link to your marketplace app, whi
 
 > ❗ **Important**: To distribute your app from your website, request approval from Apple. The request process varies by geographic region; for more information, see [Participating in alternative distribution for specific regions](./participating-in-alternative-distribution-for-specific-regions.md). Only people in the European Union can install apps that aren’t marketplaces from a website.
 
-#### Set up your app in App Store Connect
+## Set up your app in App Store Connect
 
 Distributing your app on the web requires one-time setup with App Store Connect. First, define the domain where you distribute the app by calling the `alternativeDistributionDomains` endpoint:
 
@@ -37,13 +37,13 @@ If you’re developing an alternative marketplace app, create one distribution k
 
 For more information about setting up a marketplace app in App Store Connect, see [Create a marketplace app](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/create-an-marketplace-app).
 
-#### Modify your app for alternative distribution
+## Modify your app for alternative distribution
 
 Some apps that Apple approves for web distribution can also install from the App Store or an alternative app marketplace. You can customize people’s experience depending on the source from which they download your app. For more information, see [Customize your app depending on the installation source](./distributing-your-app-on-an-alternative-marketplace.md#Customize-your-app-depending-on-the-installation-source).
 
 Web-distributed apps must report transactions for the Core Technology Commssion. Track any eligible purchases you offer that relate to your app, and report them to Apple using tokens provided by MarketplaceKit. For more information, see [Reporting transactions for the Core Technology Commission](./reporting-transactions-for-core-technology-commission.md).
 
-#### Submit your app and host it on your web server
+## Submit your app and host it on your web server
 
 When you’re ready to distribute your app, submit it to App Store Connect for review. Choose the review type:
 
@@ -54,7 +54,7 @@ If Apple approves your app for distribution, download your app’s *alternative 
 
 Assemble and host the alternative distribution package on your web server in a location accessible to the device; see [Ingesting an alternative distribution package](./ingesting-an-alternative-distribution-package.md). When you want to update your app, submit it to App Store Connect and repeat the process.
 
-#### Add a Download button on your website
+## Add a Download button on your website
 
 People download your app by tapping a button on your website with a URL scheme reserved for app installations. The browser forwards the installation request to the system, which retrieves the right app variant or delta from the alternative distribution package for the app that you host on your server.
 
@@ -88,11 +88,11 @@ The system enforces the following criteria for a website that invokes an app dow
 
 > 💡 **Tip**: In the European Union, in addition to a Download button on your website, people can request your app’s installation from within another app you develop by using [`requestInlineAppInstallation(_:subjectToken:)`](./applibrary/requestinlineappinstallation%28_,subjecttoken%29.md).
 
-#### Coordinate with the device from your web server
+## Coordinate with the device from your web server
 
 When the system receives an install request for your app such as a page visitor tapping the Download button, the system communicates with your web server to validate the request and retrieve the necessary data to perform the installation. If you supply an authentication token in the installation request URL, the system checks if your authentication server authorizes the download. The system then requests an app license from your server, followed by the app itself. For more information, see [Installing your app from your website](./installing-your-app-from-your-website.md).
 
-#### Test your app during development
+## Test your app during development
 
 Your app can install over the web only after passing [Notarization](https://developer.apple.com/support/dma-and-apps-in-the-eu/#notarization-for-ios-apps). To test your app beforehand, set the installation source for development builds. Setting the installation source enables you to simulate a web distribution in production.
 

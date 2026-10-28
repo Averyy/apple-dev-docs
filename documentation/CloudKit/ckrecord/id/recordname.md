@@ -25,7 +25,7 @@ var recordName: String { get }
 @property (nonatomic, copy, readonly) NSString * recordName;
 ```
 
-#### Discussion
+## Discussion
 
 For share records that manage a shared record zone, this property’s value is always [`CKRecordNameZoneWideShare`](../../ckrecordnamezonewideshare.md).
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the given language supports setti
 + (BOOL) isSupportedForLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the language supports custom pronouns; otherwise, `false`.
 

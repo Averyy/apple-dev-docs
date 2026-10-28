@@ -25,11 +25,11 @@ func vImageConvert_RGB16UtoARGB16U(_ rgbSrc: UnsafePointer<vImage_Buffer>, _ aSr
 vImage_Error vImageConvert_RGB16UtoARGB16U(const vImage_Buffer *rgbSrc, const vImage_Buffer *aSrc, Pixel_16U alpha, const vImage_Buffer *argbDest, bool premultiply, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

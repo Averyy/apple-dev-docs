@@ -28,7 +28,7 @@ struct Spacer
 - [Adding a background to your view](./adding-a-background-to-your-view.md)
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 A spacer creates an adaptive view with no content that expands as much as it can. For example, when placed within an [`HStack`](./hstack.md), a spacer expands horizontally as much as the stack allows, moving sibling views out of the way, within the limits of the stack’s size. SwiftUI sizes a stack that doesn’t contain a spacer up to the combined ideal widths of the content of the stack’s child views.
 

@@ -19,7 +19,7 @@ func setPosterImage(_ posterImage: WKImage?)
 - (void) setPosterImage:(WKImage *) posterImage;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the poster image that is displayed for the movie.
 

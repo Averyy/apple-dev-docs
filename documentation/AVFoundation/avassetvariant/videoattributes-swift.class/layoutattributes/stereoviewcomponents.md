@@ -25,7 +25,7 @@ var stereoViewComponents: CMStereoViewComponents { get }
 @property (nonatomic, readonly) CMStereoViewComponents stereoViewComponents;
 ```
 
-#### Discussion
+## Discussion
 
 In the case of 3D or stereoscopic content, the value contains [`leftEye`](../../../../CoreMedia/cmstereoviewcomponents/lefteye.md) and [`rightEye`](../../../../CoreMedia/cmstereoviewcomponents/righteye.md) components. In the case of monoscopic content, this value is [`kCMStereoView_None`](../../../../CoreMedia/cmstereoviewcomponents/kcmstereoview_none.md).
 

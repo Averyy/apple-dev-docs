@@ -24,7 +24,7 @@ class UIArrangementViewController
 @interface UIArrangementViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use an arrangement view controller to lay out two related content view controllers differently depending on the current size classes, orientation, and status of reserved regions such as the fold on iPhone Duo. The arrangement view helps you improve how your app handles a folded display in addition to a flat display.
 
@@ -40,7 +40,7 @@ Arrangement view controllers offer two distinct types of arrangement: *split* an
 
 For more information on designing your app to use an arrangement view, see [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
 
-#### Configure an overlay arrangement
+## Configure an overlay arrangement
 
 An overlay arrangement view controller places a primary view controller and a secondary view controller in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a device in landscape orientation or above and below each other when someone is holding a device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
@@ -81,7 +81,7 @@ UIOverlayArrangement *arrangement = [UIOverlayArrangement overlayArrangement];
 
 For more information on configuring layout for a folded iPhone Duo in an overlay arrangement, see [Customize a folded layout](./uioverlayarrangement-c.class.md#Customize-a-folded-layout).
 
-#### Configure a split arrangement
+## Configure a split arrangement
 
 Unlike an overlay arrangement, which typically layers its two views and only separates them when the device folds, a split arrangement view always keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
@@ -122,7 +122,7 @@ UISplitArrangement *arrangement = [UISplitArrangement splitArrangement];
 
 For more information on adjusting view sizes in a split arrangement, see [Adjust a split arrangement’s layout sizing](./uisplitarrangement-swift.struct.md#Adjust-a-split-arrangements-layout-sizing).
 
-#### Limit an arrangement by orientation
+## Limit an arrangement by orientation
 
 You can limit which axes your split or overlay arrangement view controller supports by specifying the axes for the arrangement. The following example shows an arrangement that only splits vertically:
 

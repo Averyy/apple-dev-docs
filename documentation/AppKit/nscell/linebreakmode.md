@@ -19,7 +19,7 @@ var lineBreakMode: NSLineBreakMode { get set }
 @property NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property can also be modified when you change the value of the [`wraps`](./wraps.md) property. For a list of supported line break modes, see NSLineBreakMode.
 

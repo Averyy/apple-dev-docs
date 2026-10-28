@@ -23,7 +23,7 @@ static var calculationModePaced: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionCalculationModePaced
 ```
 
-#### Discussion
+## Discussion
 
 This option results in an evenly paced animation.
 

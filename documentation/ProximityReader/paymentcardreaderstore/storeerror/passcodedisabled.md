@@ -17,7 +17,7 @@ To fetch a batch device’s passcode needs to be enabled.
 case passcodeDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Your app needs to ask the user to set a security passcode on their device.
 

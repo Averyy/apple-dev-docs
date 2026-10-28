@@ -19,7 +19,7 @@ var CPU_BASED2_USER_WAIT_PAUSE: UInt32 { get }
 CPU_BASED2_USER_WAIT_PAUSE
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

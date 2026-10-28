@@ -22,7 +22,7 @@ static let mediaType: AVCaptionSettingsKey
 extern AVCaptionSettingsKey const AVCaptionMediaTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 This includes the media types [`closedCaption`](../avmediatype/closedcaption.md) or [`subtitle`](../avmediatype/subtitle.md), for example.
 

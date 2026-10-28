@@ -19,7 +19,7 @@ static let named: NSColorSpaceName
 extern NSColorSpaceName NSNamedColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The components of this color space are indexes into lists or catalogs of prepared colors. The catalogs of named colors come with lookup tables that are able to generate the correct color on a given device.
 

@@ -25,7 +25,7 @@ func class_setVersion(_ cls: AnyClass?, _ version: Int32)
 extern void class_setVersion(Class cls, int version);
 ```
 
-#### Discussion
+## Discussion
 
 You can use the version number of the class definition to provide versioning of the interface that your class represents to other classes. This is especially useful for object serialization (that is, archiving of the object in a flattened form), where it is important to recognize changes to the layout of the instance variables in different class-definition versions.
 

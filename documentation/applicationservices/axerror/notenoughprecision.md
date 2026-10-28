@@ -13,7 +13,7 @@
 case notEnoughPrecision = -25214
 ```
 
-#### Discussion
+## Discussion
 
 Not enough precision.
 

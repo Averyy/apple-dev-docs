@@ -19,7 +19,7 @@ Returns a collaboration highlight for a specified identifier string.
 func collaborationHighlight(forIdentifier: String) throws -> SWCollaborationHighlight
 ```
 
-#### Return Value
+## Return Value
 
 The `SWCollaborationHighlight` associated with the `identifier`.
 

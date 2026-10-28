@@ -17,7 +17,7 @@ The alarm is counting down to its alert time.
 case countdown
 ```
 
-#### Discussion
+## Discussion
 
 Alarms are in this state when they are requested with a countdown duration, or when a person snoozes the alarm.
 

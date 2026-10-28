@@ -17,7 +17,7 @@ typedef struct CMConcatProfileSet {
 } CMConcatProfileSet;
 ```
 
-#### Overview
+## Overview
 
 You can call the function [NCWNewColorWorld](./colorsync_manager/api-1805079-ncwnewcolorworld.md) to create a color world for operations such as color matching and color conversion. A color world is normally based on two profiles—source and destination. But it can include a series of profiles that describe the processing for a work-flow sequence, such as scanning, printing, and previewing an image. To create a color world that includes a series of profiles, you use the function [CWConcatColorWorld](./colorsync_manager/api-1805087-cwconcatcolorworld.md).
 

@@ -23,7 +23,7 @@ var DISPATCH_VNODE_EXTEND: Int32 { get }
 #define DISPATCH_VNODE_EXTEND
 ```
 
-#### Discussion
+## Discussion
 
 The file-system object changed in size.
 

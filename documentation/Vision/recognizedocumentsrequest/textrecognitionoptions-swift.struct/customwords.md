@@ -20,7 +20,7 @@ An array of strings to supplement the recognized languages at the word-recogniti
 var customWords: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Custom words take precedence over the standard lexicon. The request ignores this value if [`useLanguageCorrection`](./uselanguagecorrection.md) is `false`.
 

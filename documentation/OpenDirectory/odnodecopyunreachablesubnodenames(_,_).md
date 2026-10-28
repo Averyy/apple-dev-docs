@@ -20,11 +20,11 @@ func ODNodeCopyUnreachableSubnodeNames(_ node: ODNodeRef!, _ error: UnsafeMutabl
 extern CFArrayRefODNodeCopyUnreachableSubnodeNames(ODNodeRef node, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An array of unreachable subnodes, or `NULL` if all subnodes are reachable.
 
-#### Discussion
+## Discussion
 
 This function is typically used to detect unreachable search policy nodes.
 

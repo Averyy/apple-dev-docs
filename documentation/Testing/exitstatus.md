@@ -16,7 +16,7 @@ An enumeration describing possible status a process will report on exit.
 enum ExitStatus
 ```
 
-#### Overview
+## Overview
 
 You can convert an instance of this type to an instance of [`ExitTest.Condition`](./exittest/condition.md) using [`init(_:)`](./exittest/condition/init%28_%29.md). That value can then be used to describe the condition under which an exit test is expected to pass or fail by passing it to [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](./require%28processexitswith,observing,_,sourcelocation,performing%29.md).
 

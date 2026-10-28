@@ -22,7 +22,7 @@ func GLKMatrix3Subtract(_ matrixLeft: GLKMatrix3, _ matrixRight: GLKMatrix3) -> 
 static GLKMatrix3 GLKMatrix3Subtract(GLKMatrix3 matrixLeft, GLKMatrix3 matrixRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix whose components each represent the difference between the components found in the same positions of the two source matrices.
 

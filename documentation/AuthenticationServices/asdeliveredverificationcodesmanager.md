@@ -19,7 +19,7 @@ This class allows interacting with one-time codes delivered to the system.
 class ASDeliveredVerificationCodesManager
 ```
 
-#### Overview
+## Overview
 
 The codes may be delivered from many different sources, for example, email or SMS.
 

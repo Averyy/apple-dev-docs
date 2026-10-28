@@ -22,7 +22,7 @@ Creates a new instance from the specified integer.
 init?(intValue: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed as `intValue` does not correspond to any instance of this type, the result is `nil`.
 

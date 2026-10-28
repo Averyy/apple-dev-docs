@@ -23,7 +23,7 @@ var preferredContentMode: WKWebpagePreferences.ContentMode { get set }
 @property (nonatomic) WKContentMode preferredContentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`WKWebpagePreferences.ContentMode.recommended`](./contentmode/recommended.md). The web view ignores this preference for subframe navigation.
 

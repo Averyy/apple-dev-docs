@@ -24,7 +24,7 @@ class VNFaceObservation
 @interface VNFaceObservation : VNDetectedObjectObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNDetectFaceRectanglesRequest`](./vndetectfacerectanglesrequest.md). It contains information about facial landmarks and regions it finds in the image.
 

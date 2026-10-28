@@ -22,7 +22,7 @@ protocol INCancelRideIntentHandling : NSObjectProtocol
 @protocol INCancelRideIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INCancelRideIntentHandling`](./incancelrideintenthandling.md) protocol to confirm and handle requests to cancel the user’s currently active ride. Adopt this protocol in an object of your Intents extension that is capable of canceling the ride with your service.
 

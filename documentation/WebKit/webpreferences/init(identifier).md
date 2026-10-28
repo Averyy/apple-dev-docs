@@ -19,11 +19,11 @@ init!(identifier anIdentifier: String!)
 - (instancetype) initWithIdentifier:(NSString *) anIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`WebPreferences`](../webpreferences.md) object with the identifier; if an existing `WebPreferences` object with that identifier exists, it is returned instead.
 
-#### Discussion
+## Discussion
 
 The `anIdentifier` argument should be unique—it is prepended to the keys used to store the receiver’s attributes in the user defaults database. [`WebView`](../webview-swift.class.md) objects can share a [`WebPreferences`](../webpreferences.md) object by using the same preferences identifier.
 

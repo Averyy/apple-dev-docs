@@ -25,7 +25,7 @@ func run(until limitDate: Date)
 - (void) runUntilDate:(NSDate *) limitDate;
 ```
 
-#### Discussion
+## Discussion
 
 If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the receiver in the `NSDefaultRunLoopMode` by repeatedly invoking [`run(mode:before:)`](./run%28mode,before%29.md) until the specified expiration date.
 

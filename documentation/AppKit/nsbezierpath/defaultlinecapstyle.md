@@ -19,11 +19,11 @@ class var defaultLineCapStyle: NSBezierPath.LineCapStyle { get set }
 @property (class) NSLineCapStyle defaultLineCapStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The default line cap style or `NSButtLineCapStyle` if no other style has been set. For a list of values, see Constants.
 
-#### Discussion
+## Discussion
 
 The default line cap style can be overridden for individual paths by setting a custom style for that path using the [`NSBezierPath`](../nsbezierpath.md) method.
 

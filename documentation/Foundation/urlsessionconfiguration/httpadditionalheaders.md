@@ -25,7 +25,7 @@ var httpAdditionalHeaders: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * HTTPAdditionalHeaders;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies additional headers that are added to all tasks within sessions based on this configuration. For example, you might set the `User-Agent` header so that it is automatically included in every request your app makes through sessions based on this configuration.
 

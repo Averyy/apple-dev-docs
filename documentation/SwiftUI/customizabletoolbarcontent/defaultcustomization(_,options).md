@@ -21,7 +21,7 @@ Configures the way customizable toolbar items with the default behavior behave.
 func defaultCustomization(_ defaultVisibility: Visibility = .automatic, options: ToolbarCustomizationOptions = []) -> some CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Default customizable items support a variety of edits by the user.
 

@@ -21,7 +21,7 @@ The hash value.
 var hashValue: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 **Axiom:** `x == y` implies `x.hashValue == y.hashValue`.
 

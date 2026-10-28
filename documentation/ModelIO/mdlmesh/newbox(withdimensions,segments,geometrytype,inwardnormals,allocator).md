@@ -24,11 +24,11 @@ class func newBox(withDimensions dimensions: vector_float3, segments: vector_uin
 + (instancetype) newBoxWithDimensions:(vector_float3) dimensions segments:(vector_uint3) segments geometryType:(MDLGeometryType) geometryType inwardNormals:(BOOL) inwardNormals allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for a box centered at the origin of its local coordinate system.
 

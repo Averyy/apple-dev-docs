@@ -17,7 +17,7 @@ Applies the Exponential Linear Unit.
 class ELU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.which(x .> 0, x, alpha * (exp(x) - 1))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`elu(_:alpha:)`](./elu%28_,alpha%29.md)

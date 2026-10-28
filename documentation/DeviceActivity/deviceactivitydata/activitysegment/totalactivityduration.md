@@ -17,7 +17,7 @@ Access the total activity time during the activity segment.
 var totalActivityDuration: TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the total amount of time the device’s screen remained on during [`dateInterval`](./dateinterval.md).
 

@@ -25,7 +25,7 @@ let kCGImagePropertyProfileName: CFString
 extern CFStringRef const kCGImagePropertyProfileName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFString`](../CoreFoundation/cfstring.md).
 

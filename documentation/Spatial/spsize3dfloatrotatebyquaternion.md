@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatRotateByQuaternion(SPSize3DFloat size, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A size that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s rotated by the specified quaternion around the origin.
 

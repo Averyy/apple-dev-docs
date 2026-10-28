@@ -5,7 +5,7 @@
 
 Build a distributable pass.
 
-#### Overview
+## Overview
 
 The pass you distribute to a user is a signed [`Bundle`](../Foundation/bundle.md) that contains the JSON description of the pass, images, and optional localizations.
 
@@ -17,7 +17,7 @@ To build a pass, you:
 - Create a digital signature for the pass.
 - Create the signed bundle.
 
-##### Create a Pass Type Identifier
+### Create a Pass Type Identifier
 
 You build one or more groups of related passes, such as the tickets for different events. Each group has a unique pass type identifier, a reverse DNS string that identifies your organization, the kind of pass, and the group, such as `com.example-company.passes.ticket.event-4631A`.
 
@@ -33,7 +33,7 @@ For more information on signing in to your account and creating identifiers, see
 
 Set the `passTypeIdentifier` of [`Pass`](./pass.md) in the `pass.json` file to the identifier. Set the `serialNumber` key to the unique serial number for that identifier.
 
-##### Generate a Signing Certificate
+### Generate a Signing Certificate
 
 Signing a pass requires a signing certificate for the pass type identifier. Before you can generate a signing certificate you need a certificate signing request (CSR). To learn how to generate a CSR, see [Create a certificate signing request](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request).
 
@@ -48,7 +48,7 @@ After uploading the CSR, generate the certificate and download it to the machine
 
 For more information on signing into your account and creating signing certificates, see [Developer Account Help](https://developer.apple.com/help/account/).
 
-##### Sign the Pass and Create the Bundle
+### Sign the Pass and Create the Bundle
 
 To sign the pass, follow these steps:
 
@@ -85,7 +85,7 @@ Test your pass by dropping it onto an iPhone that’s running on Simulator. Wall
 
 ![A graphic that show the add pass sheet on an iPhone 12 running in Simulator. ](https://developer.apple.com/tutorials/images/com.apple.walletpasses/media-3737826@2x.png)
 
-##### Common Problems
+### Common Problems
 
 If your pass doesn’t build correctly, check whether the following are all true:
 

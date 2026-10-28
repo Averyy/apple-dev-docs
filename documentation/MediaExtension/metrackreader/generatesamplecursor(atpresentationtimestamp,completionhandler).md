@@ -24,7 +24,7 @@ func sampleCursor(atPresentationTimeStamp presentationTimeStamp: CMTime) async t
 - (void) generateSampleCursorAtPresentationTimeStamp:(CMTime) presentationTimeStamp completionHandler:(void (^)(id<MESampleCursor>sampleCursor, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The new sample cursor points to the last sample with a presentation time stamp (PTS) less than or equal to `presentationTimeStamp`, or if there are no such samples, the first sample in PTS order.
 

@@ -17,7 +17,7 @@ Creates a new app impression with the provided compact JSON Web Signature (JWS).
 init(compactJWS: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Create a new `AppImpression` by providing a compact string representation of the JWS as the following example shows:
 

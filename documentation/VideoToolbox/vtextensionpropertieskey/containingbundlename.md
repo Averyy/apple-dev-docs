@@ -19,7 +19,7 @@ static let containingBundleName: VTExtensionPropertiesKey
 extern VTExtensionPropertiesKey const kVTExtensionProperties_ContainingBundleNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFStringRef` value with the localized name of the application hosting the extension.
 

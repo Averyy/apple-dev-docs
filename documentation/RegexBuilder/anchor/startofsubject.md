@@ -21,7 +21,7 @@ An anchor that matches at the start of the input string.
 static var startOfSubject: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This anchor is equivalent to `\A` in regex syntax.
 

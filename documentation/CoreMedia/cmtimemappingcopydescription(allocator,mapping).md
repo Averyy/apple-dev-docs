@@ -25,7 +25,7 @@ func CMTimeMappingCopyDescription(allocator: CFAllocator?, mapping: CMTimeMappin
 extern CFStringRefCMTimeMappingCopyDescription(CFAllocatorRef allocator, CMTimeMapping mapping);
 ```
 
-#### Return Value
+## Return Value
 
 A string description of a time mapping.
 

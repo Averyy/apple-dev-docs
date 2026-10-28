@@ -28,7 +28,7 @@ protocol ShowInAppSearchResultsIntent : SystemIntent
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 - [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md)
 
-#### Overview
+## Overview
 
 The system uses this protocol to route search requests for your app’s entities to your app. If your app has a search interface, implement this protocol in a custom type and use it to display the entities that match the provided search criteria. If your app supports multiple entity types and displays results for each of them differently, provide separate implementations of this type for each entity.
 

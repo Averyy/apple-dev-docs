@@ -13,11 +13,11 @@ virtual UInt32 setInterfaceState(
  UInt32 clear = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new interface state flags.
 
-#### Overview
+## Overview
 
 The flags reflect the current state of the interface, and is also published through the `kIOInterfaceState` property.
 

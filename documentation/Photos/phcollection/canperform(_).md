@@ -24,11 +24,11 @@ func canPerform(_ anOperation: PHCollectionEditOperation) -> Bool
 - (BOOL) canPerformEditOperation:(PHCollectionEditOperation) anOperation;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the asset supports the specified editing operation; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If an asset collection or collection list supports editing, you can create a [`PHAssetCollectionChangeRequest`](../phassetcollectionchangerequest.md) or [`PHCollectionListChangeRequest`](../phcollectionlistchangerequest.md) object inside a [`PHPhotoLibrary`](../phphotolibrary.md) change block to submit a change.
 

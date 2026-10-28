@@ -22,7 +22,7 @@ Encodes this value into the given encoder.
 override final func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the value fails to encode anything, `encoder` will encode an empty keyed container in its place.
 

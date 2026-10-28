@@ -10,11 +10,11 @@ virtual bool handleIsOpen(
  const IOService *client) const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the client was (or clients were) open, false otherwise.
 
-#### Overview
+## Overview
 
 The handleIsOpen method determines whether the specified client, or any client if none is specified, presently has an open on this object.
 

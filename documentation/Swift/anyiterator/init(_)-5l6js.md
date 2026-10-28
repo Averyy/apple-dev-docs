@@ -21,7 +21,7 @@ Creates an iterator that wraps the given closure in its `next()` method.
 init(_ body: @escaping () -> Element?)
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates an iterator that counts up from the initial value of an integer `x` to 15:
 

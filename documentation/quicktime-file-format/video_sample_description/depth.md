@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates the pixel depth of the compressed image.
 
-#### Overview
+## Overview
 
 Values of 1, 2, 4, 8 ,16, 24, and 32 indicate the depth of color images. The value 32 should be used only if the image contains an alpha channel. Values of 34, 36, and 40 indicate 2-, 4-, and 8-bit grayscale, respectively, for grayscale images.
 

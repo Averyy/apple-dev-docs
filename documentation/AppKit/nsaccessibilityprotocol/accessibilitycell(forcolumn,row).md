@@ -20,11 +20,11 @@ func accessibilityCell(forColumn column: Int, row: Int) -> Any?
 - (id) accessibilityCellForColumn:(NSInteger) column row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The cell specified by the column and row indexes.
 
-#### Discussion
+## Discussion
 
 This property is required for all elements that function as cell-based tables.
 

@@ -17,7 +17,7 @@ var kAXShowDefaultUIAction: String { get }
 #define kAXShowDefaultUIAction
 ```
 
-#### Discussion
+## Discussion
 
 Show default UI. This is often used to trigger the same change that would occur when a mouse hover ends.
 

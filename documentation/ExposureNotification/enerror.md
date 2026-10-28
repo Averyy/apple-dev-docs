@@ -19,7 +19,7 @@ Errors that the exposure notification framework issues.
 struct ENError
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This structure is available in iOS 12.5, and in iOS 13.5 and later.
 

@@ -13,7 +13,7 @@ The Account-Driven Enrollment profile defines key attributes related to service 
 
 - [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md)
 
-#### Overview
+## Overview
 
 This profile includes the MDM Service Discovery URL, which redirects users to the MDM server to start the enrollment process during account-driven enrollment.
 

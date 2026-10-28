@@ -19,7 +19,7 @@ func xpc_set_event_stream_handler(_ stream: UnsafePointer<CChar>, _ targetq: dis
 extern void xpc_set_event_stream_handler(const char *stream, dispatch_queue_t targetq, xpc_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 Multiple calls to this function for the same event stream will result in undefined behavior.
 

@@ -22,7 +22,7 @@ An object that scans the camera live video for text, data in text, and machine-r
 
 - [Scanning data with the camera](./scanning-data-with-the-camera.md)
 
-#### Overview
+## Overview
 
 Use a `DataScannerViewController` object to get input from physical objects that appear in the camera’s live video, such as printed text and QR codes on packages.
 

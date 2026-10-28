@@ -20,11 +20,11 @@ Initializes an AVSpatialVideoConfiguration with a format description.
 init(formatDescription: CMFormatDescription)
 ```
 
-#### Return Value
+## Return Value
 
 An instance of AVSpatialVideoConfiguration
 
-#### Discussion
+## Discussion
 
 The format description is not stored.
 

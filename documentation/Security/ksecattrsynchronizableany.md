@@ -25,7 +25,7 @@ let kSecAttrSynchronizableAny: CFString
 extern CFStringRef const kSecAttrSynchronizableAny;
 ```
 
-#### Discussion
+## Discussion
 
 This may be used as a value for the [`kSecAttrSynchronizable`](./ksecattrsynchronizable.md) dictionary key (in place of `kCFBooleanTrue` or `kCFBooleanFalse`) in a call to [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md), [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md), or [`SecItemDelete(_:)`](./secitemdelete%28_%29.md).
 

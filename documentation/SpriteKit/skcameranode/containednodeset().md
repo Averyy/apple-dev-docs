@@ -25,11 +25,11 @@ func containedNodeSet() -> Set<SKNode>
 - (NSSet<SKNode *> *) containedNodeSet;
 ```
 
-#### Return Value
+## Return Value
 
 The set of nodes that are in the same scene as the camera and contained in the camera’s viewport.
 
-#### Discussion
+## Discussion
 
 The camera must be part of a scene’s node hierarchy and the scene must be presented in an view.
 

@@ -21,7 +21,7 @@ Calculates the linear interpolation between the supplied single-precision vector
 static func linearInterpolate<T, U, V>(_ vectorA: T, _ vectorB: U, using interpolationConstant: Float, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Single-precision and double-precision [`linearInterpolate(_:_:using:result:)`](./linearinterpolate%28_,_,using,result%29-6o7a9.md) functions calculate a vector that’s the element-wise linear interpolation between the two supplied vectors.
 

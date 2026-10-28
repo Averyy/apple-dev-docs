@@ -15,7 +15,7 @@ A closure that configures and returns an item for a collection view from its dif
 typealias ItemProvider = (NSCollectionView, IndexPath, ItemIdentifierType) -> NSCollectionViewItem?
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured item object. The item provider must return a valid item object to the collection view.
 

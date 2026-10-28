@@ -19,11 +19,11 @@ func AEFlattenDesc(_ theAEDesc: UnsafePointer<AEDesc>!, _ buffer: Ptr!, _ buffer
 OSStatus AEFlattenDesc(const AEDesc *theAEDesc, Ptr buffer, Size bufferSize, Size *actualSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Flattening a descriptor serializes the data it contains. That is, it reduces a complex, possibly deeply nested structure to a series of bytes that can conveniently be stored. The descriptor can be reconstituted from the stored bytes with the [`AEUnflattenDesc(_:_:)`](./api-1448997-aeunflattendesc.md) function.
 
@@ -35,7 +35,7 @@ Flattening and unflattening works across OS versions, including between Mac OS 9
 
 Flattening is endian-neutral. That is, you can save flattened data on a machine that is either big-endian or little-endian, then retrieve and unflatten the data on either type of machine, without any special steps by your application.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

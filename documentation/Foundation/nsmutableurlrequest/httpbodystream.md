@@ -25,7 +25,7 @@ var httpBodyStream: InputStream? { get set }
 @property (retain, nullable) NSInputStream * HTTPBodyStream;
 ```
 
-#### Discussion
+## Discussion
 
 The request body of the receiver will be this input stream. The entire contents of the stream will be sent as the body, as in an HTTP `POST` request. The input stream should be unopened and the receiver will take over as the stream’s delegate.
 

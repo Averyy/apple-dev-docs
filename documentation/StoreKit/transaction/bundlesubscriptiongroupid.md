@@ -22,7 +22,7 @@ Identifies the subscription bundle group the transaction is for.
 var bundleSubscriptionGroupID: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only for transactions of subscriptions included in a bundle.
 

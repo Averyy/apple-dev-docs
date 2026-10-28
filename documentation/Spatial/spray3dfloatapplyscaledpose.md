@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatApplyScaledPose(SPRay3DFloat ray, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed ray.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s transformed by the specified scaled pose.
 

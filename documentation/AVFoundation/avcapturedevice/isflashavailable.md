@@ -23,7 +23,7 @@ var isFlashAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isFlashAvailable) BOOL flashAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The flash may become unavailable if, for example, the device overheats and needs to cool off.
 

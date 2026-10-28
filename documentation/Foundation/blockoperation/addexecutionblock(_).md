@@ -25,7 +25,7 @@ func addExecutionBlock(_ block: @escaping @Sendable () -> Void)
 - (void) addExecutionBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 The specified block should not make any assumptions about its execution environment.
 

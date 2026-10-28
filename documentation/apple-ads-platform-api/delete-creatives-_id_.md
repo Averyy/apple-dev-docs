@@ -9,13 +9,13 @@ Remove an ad creative by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes an ad creative: the system retains the ad creative record with `deleted: true`, but you can no longer use it to create new ads. The system automatically sets existing ads that reference the ad creative to `systemStatus: NOT_RUNNING`.
 
 Deleted ad creatives can’t be restored. To use a similar ad creative, create a new ad creative with the same properties.
 
-##### Understand the Impact on Ads
+### Understand the Impact on Ads
 
 Deleting an ad creative affects all ads that reference it:
 
@@ -33,9 +33,9 @@ Keep these constraints in mind before issuing the delete request.
 | Associated ads paused | All ads linked to a deleted ad creative stop serving immediately. |
 | Cannot delete already-deleted | Attempting to delete an already-deleted ad creative returns 404. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Deletes an ad creative by its unique identifier. The system soft-deletes the ad creative and automatically sets existing ads that reference it to `systemStatus: NOT_RUNNING`.
 
@@ -43,7 +43,7 @@ Deletes an ad creative by its unique identifier. The system soft-deletes the ad 
 DELETE /v1/creatives/666777888
 ```
 
-##### Response
+### Response
 
 ```json
 {}

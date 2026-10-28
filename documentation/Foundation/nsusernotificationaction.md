@@ -21,7 +21,7 @@ class NSUserNotificationAction
 @interface NSUserNotificationAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 User notifications can specify one or more actions to show to the user by using the [`additionalActivationAction`](./nsusernotification/additionalactivationaction.md) or [`additionalActions`](./nsusernotification/additionalactions.md) properties. [`NSUserNotificationAction`](./nsusernotificationaction.md) objects contain the localized title shown to the user and an identifier used to differentiate between presented actions.
 

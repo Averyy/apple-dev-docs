@@ -24,11 +24,11 @@ init(type correlationType: HKCorrelationType, predicate: NSPredicate?, samplePre
 - (instancetype) initWithType:(HKCorrelationType *) correlationType predicate:(NSPredicate *) predicate samplePredicates:(NSDictionary<HKSampleType *,NSPredicate *> *) samplePredicates completion:(void (^)(HKCorrelationQuery *query, NSArray<HKCorrelation *> *correlations, NSError *error)) completion;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized correlation object.
 
-#### Discussion
+## Discussion
 
 After instantiating the query, run it by calling the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method. Queries run on a background thread. As soon as the query is complete, the results handler is executed on the background thread. You typically dispatch these results to the main thread to update the user interface.
 

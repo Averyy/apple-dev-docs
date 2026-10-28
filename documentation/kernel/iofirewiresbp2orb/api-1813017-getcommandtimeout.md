@@ -12,11 +12,11 @@ virtual UInt32 getCommandTimeout(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the timeout for the orb in milliseconds.
 
-#### Overview
+## Overview
 
 This method gets the timeout for this ORB in milliseconds.
 

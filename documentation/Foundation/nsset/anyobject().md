@@ -25,7 +25,7 @@ func anyObject() -> Any?
 - (ObjectType) anyObject;
 ```
 
-#### Return Value
+## Return Value
 
 One of the objects in the set, or `nil` if the set contains no objects. The object returned is chosen at the set’s convenience—the selection is not guaranteed to be random.
 

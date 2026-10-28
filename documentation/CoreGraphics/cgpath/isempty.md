@@ -25,7 +25,7 @@ var isEmpty: Bool { get }
 extern bool CGPathIsEmpty(CGPathRef path);
 ```
 
-#### Discussion
+## Discussion
 
 An empty path contains no elements.
 

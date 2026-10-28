@@ -24,7 +24,7 @@ var includeZeroPadToAverage: Bool { get set }
 @property (nonatomic, readwrite) BOOL includeZeroPadToAverage;
 ```
 
-#### Discussion
+## Discussion
 
 Otherwise the result is sum over samples divided by number of samples that didn’t come from padding. Default value: `NO`.
 

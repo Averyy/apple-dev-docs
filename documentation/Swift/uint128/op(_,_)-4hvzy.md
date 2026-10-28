@@ -21,7 +21,7 @@ Returns the quotient of dividing the first value by the second.
 static func / (a: UInt128, b: UInt128) -> UInt128
 ```
 
-#### Discussion
+## Discussion
 
 For integer types, any remainder of the division is discarded.
 

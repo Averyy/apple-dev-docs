@@ -23,7 +23,7 @@ func addArrangedSubview(_ view: UIView)
 - (void) addArrangedSubview:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 The stack view ensures that the [`arrangedSubviews`](./arrangedsubviews.md) array is always a subset of its [`subviews`](../uiview/subviews.md) array. This method automatically adds the provided view as a subview of the stack view, if it isn’t already. If the view is already a subview, this operation doesn’t alter the subview ordering.
 

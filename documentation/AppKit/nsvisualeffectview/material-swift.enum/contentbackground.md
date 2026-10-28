@@ -19,7 +19,7 @@ case contentBackground
 NSVisualEffectMaterialContentBackground
 ```
 
-#### Discussion
+## Discussion
 
 You might use this material as the background for content in a scroll view, table view, or collection view.
 

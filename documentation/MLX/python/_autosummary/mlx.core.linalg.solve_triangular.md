@@ -6,20 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.solve_triangular
 
-**solve_triangular(*a: array*, *b: array*, ***, *upper: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Computes the solution of a triangular system of linear equations `AX = B`.
+```python
+solve_triangular(a: array, b: array, *, upper: bool = False, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Computes the solution of a triangular system of linear equations `AX = B`.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether the array is upper or lower
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – Whether the array is upper or lower
 triangular. Default: `False`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-The unique solution to the system `AX = B`.
+**Returns:**
+: The unique solution to the system `AX = B`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

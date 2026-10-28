@@ -14,7 +14,7 @@
 - (instancetype) initWithProcesses:(NSArray<NSNumber *> *) processesObjectIDsToIncludeInTap andDeviceUID:(NSString *) deviceUID withStream:(NSInteger) stream;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all given process audio streams destined for the selected device stream
 

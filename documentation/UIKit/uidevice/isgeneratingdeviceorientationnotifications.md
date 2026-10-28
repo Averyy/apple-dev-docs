@@ -21,7 +21,7 @@ var isGeneratingDeviceOrientationNotifications: Bool { get }
 @property (nonatomic, readonly, getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the shared [`UIDevice`](../uidevice.md) object posts a [`orientationDidChangeNotification`](./orientationdidchangenotification.md) notification when the device changes orientation. If the value is [`false`](../../Swift/false.md), it generates no orientation notifications. Device orientation notifications can only be generated between calls to the [`beginGeneratingDeviceOrientationNotifications()`](./begingeneratingdeviceorientationnotifications%28%29.md) and [`endGeneratingDeviceOrientationNotifications()`](./endgeneratingdeviceorientationnotifications%28%29.md) methods.
 

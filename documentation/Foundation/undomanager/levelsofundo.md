@@ -25,7 +25,7 @@ var levelsOfUndo: Int { get set }
 @property NSUInteger levelsOfUndo;
 ```
 
-#### Discussion
+## Discussion
 
 An integer specifying the number of undo groups. A limit of `0` indicates no limit, so the manager never drops old undo groups.
 

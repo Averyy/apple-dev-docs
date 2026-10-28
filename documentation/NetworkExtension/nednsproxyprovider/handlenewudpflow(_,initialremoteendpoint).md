@@ -23,7 +23,7 @@ func handleNewUDPFlow(_ flow: NEAppProxyUDPFlow, initialRemoteEndpoint remoteEnd
 - (BOOL) handleNewUDPFlow:(NEAppProxyUDPFlow *) flow initialRemoteEndpoint:(NWEndpoint *) remoteEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this function to deliver a new UDP data flow to the proxy provider implementation. Subclasses can override this method to perform whatever steps are necessary to ready the proxy to receive data from the flow.
 

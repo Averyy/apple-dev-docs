@@ -24,7 +24,7 @@ var sortDescriptors: [NSSortDescriptor]? { get }
 @property (copy, readonly, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the value passed to the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](./init%28documenttype,predicate,limit,sortdescriptors,includedocumentdata,resultshandler%29.md) method’s `sortDescriptors` parameter.
 

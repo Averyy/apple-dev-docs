@@ -24,7 +24,7 @@ var maxInteger: Int { get set }
 @property (nonatomic, readwrite) NSInteger maxInteger;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Uniform with integer data types Defaults to INT32_MAX for uniform distributions and 0 for normal distributions.
 

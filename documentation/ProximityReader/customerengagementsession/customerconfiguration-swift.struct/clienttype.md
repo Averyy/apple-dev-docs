@@ -17,7 +17,7 @@ An enum value that indicates the type of connected peer client.
 let clientType: CustomerEngagementSession.PeerClientType
 ```
 
-#### Discussion
+## Discussion
 
 Only certain request types are available if the peer client is the `web` type.
 

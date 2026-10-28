@@ -23,7 +23,7 @@ static var overrideInheritedDuration: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionOverrideInheritedDuration
 ```
 
-#### Discussion
+## Discussion
 
 If this option isn’t present, the animation inherits the remaining duration of the in-flight animation, if any.
 

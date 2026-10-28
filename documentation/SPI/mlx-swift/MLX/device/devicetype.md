@@ -17,7 +17,7 @@ The [`DeviceType`](../devicetype.md) for the device.
 var deviceType: DeviceType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: previously this returned an Optional [`DeviceType`](../devicetype.md).  Now it is not optional and it will be a `fatalError` if the DeviceType is unknown.
 

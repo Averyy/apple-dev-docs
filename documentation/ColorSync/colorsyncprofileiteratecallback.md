@@ -25,7 +25,7 @@ typealias ColorSyncProfileIterateCallback = (CFDictionary?, UnsafeMutableRawPoin
 typedef _Bool (*)(const struct __CFDictionary *, void *) ColorSyncProfileIterateCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The framework passes only validated profiles to the callback. Return `false` to stop the iteration.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (CGSize) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout referenceSizeForFooterInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the footer. If you return a value of size (0, 0), no footer is added.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the value in its [`footerReferenceSize`](../uicollectionviewflowlayout/footerreferencesize.md) property to set the size of the footer.
 

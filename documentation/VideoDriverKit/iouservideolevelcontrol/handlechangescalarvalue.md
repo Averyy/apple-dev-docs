@@ -15,11 +15,11 @@ The system calls this virtual method when the control’s value changes.
 virtual kern_return_t HandleChangeScalarValue(float in_scalar_value);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success the control’s value should be updated.
 
-#### Discussion
+## Discussion
 
 The default implementation calls SetScalarValue() and returns `kIOReturnSuccess`. Subclass and override this method to handle changes to this control value and return `kIOReturnSuccess` upon success.
 

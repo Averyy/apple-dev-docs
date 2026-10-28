@@ -22,7 +22,7 @@ An unsigned integer value type.
 struct UInt
 ```
 
-#### Overview
+## Overview
 
 On 32-bit platforms, `UInt` is the same size as `UInt32`, and on 64-bit platforms, `UInt` is the same size as `UInt64`.
 

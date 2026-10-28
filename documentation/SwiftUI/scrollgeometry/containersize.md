@@ -21,7 +21,7 @@ The size of the container of the scroll view.
 var containerSize: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the overall size of the scroll view. Combining this and the content offset will give you the current visible rect of the scroll view.
 

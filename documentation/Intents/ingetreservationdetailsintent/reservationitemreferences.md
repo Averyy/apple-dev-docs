@@ -32,7 +32,7 @@ var reservationItemReferences: [INSpeakableString]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INSpeakableString *> * reservationItemReferences;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of unique identifiers for user-created reservations. You can provide a textual representation for this property, such as “Flight to Los Angeles” to describe an airline reservation.
 

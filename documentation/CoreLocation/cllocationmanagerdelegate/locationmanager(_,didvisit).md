@@ -22,7 +22,7 @@ optional func locationManager(_ manager: CLLocationManager, didVisit visit: CLVi
 - (void) locationManager:(CLLocationManager *) manager didVisit:(CLVisit *) visit;
 ```
 
-#### Discussion
+## Discussion
 
 The location manager calls this method whenever it has new visit event to report to your app.
 

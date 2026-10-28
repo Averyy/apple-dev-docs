@@ -25,11 +25,11 @@ func write(to url: URL, atomically: Bool) -> Bool
 - (BOOL) writeToURL:(NSURL *) url atomically:(BOOL) atomically;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation succeeds, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Since at present only `file://` URLs are supported, there is no difference between this method and [`write(toFile:atomically:)`](./write%28tofile,atomically%29.md), except for the type of the first argument.
 

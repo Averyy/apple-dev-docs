@@ -15,7 +15,7 @@ Get extended file attributes.
 errno_t VNOP_GETXATTR(vnode_t vp, const char *name, uio_t uio, size_t *size, int options, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error code.
 

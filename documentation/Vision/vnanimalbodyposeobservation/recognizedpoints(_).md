@@ -24,7 +24,7 @@ func recognizedPoints(_ jointsGroupName: VNAnimalBodyPoseObservation.JointsGroup
 - (NSDictionary<NSString *,VNRecognizedPoint *> *) recognizedPointsForJointsGroupName:(VNAnimalBodyPoseObservationJointsGroupName) jointsGroupName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of points the observation associates with the group name.
 

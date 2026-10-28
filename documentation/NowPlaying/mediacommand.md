@@ -25,7 +25,7 @@ struct MediaCommand
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use static factory methods to create commands for your session:
 

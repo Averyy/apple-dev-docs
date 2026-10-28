@@ -25,7 +25,7 @@ static let quickTimeMetadataLivePhotoVitalityScore: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataLivePhotoVitalityScore;
 ```
 
-#### Discussion
+## Discussion
 
 Live Photo movies may be algorithmically scored from `0.0` to `1.0` on their level of vitality. A Live Photo movie with a low vitality score offers little dynamism to the still photo it accompanies. The vitality score is normalized and independent of the vitality scoring version of the algorithm defined by [`quickTimeMetadataLivePhotoVitalityScoringVersion`](./quicktimemetadatalivephotovitalityscoringversion.md).
 

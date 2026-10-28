@@ -5,7 +5,7 @@
 
 Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
 
-#### Overview
+## Overview
 
 A *monthly subscription with a 12-month commitment* is an auto-renewable subscription that bills monthly and has a yearly commitment. The commitment automatically renews for another 12-month commitment after all 12 payments are complete, unless the customer cancels before the renewal date. By comparison, a standard annual subscription bills customers once, up front; it renews for a year, with a single up-front payment, unless the customer cancels.
 
@@ -25,13 +25,13 @@ Use  [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-st
 
 This article uses the term *commitment plan* to refer to a monthly subscription with a 12-month commitment.
 
-#### Understand the customer experience
+## Understand the customer experience
 
 The first time a customer subscribes to a monthly subscription with a 12-month commitment, the system automatically presents a one-time disclosure sheet. This sheet explains the number of monthly payments and provides cancellation guidance. The system shows it once per Apple Account, and it requires no action from you.
 
 In subscription settings, customers see a commitment module that displays how many payments remain and when their commitment renews. A cancellation applies to the annual renewal, not to the remaining months in the commitment period. If a customer initiates cancellation, a message on the cancellation sheet reminds them of their commitment status and the number of remaining payments. After canceling, the customer can view the remaining scheduled payments for the commitment period.
 
-#### Understand the billing plan type
+## Understand the billing plan type
 
 Every auto-renewable subscription carries a [`Product.SubscriptionInfo.BillingPlanType`](./product/subscriptioninfo/billingplantype.md) value that describes how the subscription bills. There are two billing plans:
 
@@ -47,7 +47,7 @@ The transaction information in StoreKit and the server APIs provides the billing
 
 The product metadata, transactions, and subscription renewal information contain this value.
 
-#### Configure the subscription in App Store Connect
+## Configure the subscription in App Store Connect
 
 A monthly subscription with a 12-month commitment isn’t a new product type; you configure it directly on an existing yearly auto-renewable subscription in App Store Connect. The product ID and subscription group remain the same — you add a new billing plan to an existing product.
 
@@ -60,7 +60,7 @@ To configure the billing plan:
 
 Because both the up-front annual plan and the monthly commitment plan share the same product ID, customers and your app interact with a single subscription product that now offers two billing options.
 
-#### Manage subscription groups for upgrades and downgrades
+## Manage subscription groups for upgrades and downgrades
 
 When configuring subscriptions in App Store Connect, you place subscriptions in subscription groups. The order in which subscriptions appear in a group determine the upgrade, downgrade, and cross-grade choices that customers see for each group.
 
@@ -72,7 +72,7 @@ Plan changes within a subscription group follow the existing upgrade, downgrade,
 
 Plan the tiers in your subscription group carefully to achieve the desired upgrade, downgrade, and cross-grade behavior.
 
-#### Merchandise monthly subscriptions with 12-month commitments
+## Merchandise monthly subscriptions with 12-month commitments
 
 Use the [`Product`](./product.md) API to fetch information for all your Apple In-App Purchases, including monthly subscriptions with 12-month commitments. Use this information to display a store within your app to offer Apple In-App Purchases.
 
@@ -105,13 +105,13 @@ if let commitmentTerms = product.subscription?.pricingTerms.first(where: { $0.bi
 
 You’re required to display both the monthly billing price and the total commitment amount to the customer before they initiate a purchase.
 
-#### Provide subscription offers
+## Provide subscription offers
 
 Subscription offers—including introductory offers, promotional offers, win-back offers, and offer codes—are specific to each billing plan. When you fetch the pricing terms for a product, [`pricingTerms`](./product/subscriptioninfo/pricingterms-swift.property.md) for a [`Product`](./product.md), each entry’s [`subscriptionOffers`](./product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers.md) property contains only the offers that apply to that billing plan.
 
 To display offers for the commitment plan, read the [`subscriptionOffers`](./product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers.md) property from the pricing terms entry where the [`Product.SubscriptionInfo.BillingPlanType`](./product/subscriptioninfo/billingplantype.md) is [`monthly`](./product/subscriptioninfo/billingplantype/monthly.md).
 
-#### Initiate a purchase
+## Initiate a purchase
 
 To initiate a purchase for a commitment plan, use the same `product.purchase(options:)` call you already use for other subscriptions. The only addition is a new purchase option, a [`Product.SubscriptionInfo.BillingPlanType`](./product/subscriptioninfo/billingplantype.md) set to [`monthly`](./product/subscriptioninfo/billingplantype/monthly.md), which tells StoreKit which billing plan the customer is purchasing for the subscription.
 
@@ -134,7 +134,7 @@ case .userCancelled:
 
 When the customer successfully completes the purchase, StoreKit delivers a new transaction through the [`Product.PurchaseResult`](./product/purchaseresult.md), as shown in the code example above. Subsequent monthly renewals deliver a new transaction through the [`updates`](./transaction/updates.md) sequence in [`Transaction`](./transaction.md).
 
-#### Grant access based on entitlements
+## Grant access based on entitlements
 
 Each billing period in a commitment plan produces a new, independent transaction. Granting access to the monthly subscription with a 12-month commitment works the same way as for a standard monthly subscription.
 
@@ -148,7 +148,7 @@ You can also check each transaction ([`Transaction`](./transaction.md)) to verif
 
 If these conditions are met, grant the customer access to the subscription for that billing period. These conditions are the same for standard subscriptions, so if your app already handles standard subscriptions, you can use the same logic.
 
-#### Distinguish between period and commitment expiration
+## Distinguish between period and commitment expiration
 
 Transactions for commitment plans include two distinct expiration date fields. It’s important to use each field for its intended purpose, as follows:
 
@@ -159,7 +159,7 @@ Transactions for commitment plans include two distinct expiration date fields. I
 
 > **Note**: Use [`expirationDate`](./transaction/expirationdate.md) in [`Transaction`](./transaction.md), not [`expirationDate`](./transaction/commitmentinfo-swift.struct/expirationdate.md) in [`Transaction.CommitmentInfo`](./transaction/commitmentinfo-swift.struct.md), to help determine whether to grant access for the current period of a monthly subscription with a 12-month commitment.
 
-#### Display commitment progress
+## Display commitment progress
 
 To show customers the number of months remaining in their commitment, call [`showManageSubscriptions(in:)`](./appstore/showmanagesubscriptions%28in%29.md) or [`showManageSubscriptions(in:subscriptionGroupID:)`](./appstore/showmanagesubscriptions%28in,subscriptiongroupid%29.md) to open the system-provided subscription management page. The system displays the billing progress, next payment date, and commitment renewal date.
 

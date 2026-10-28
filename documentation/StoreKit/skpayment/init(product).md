@@ -27,11 +27,11 @@ convenience init(product: SKProduct)
 + (instancetype) paymentWithProduct:(SKProduct *) product;
 ```
 
-#### Return Value
+## Return Value
 
 A new payment object.
 
-#### Discussion
+## Discussion
 
 This [Object creation](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectCreation.html#//apple_ref/doc/uid/TP40008195-CH39) uses the `productIdentifier` property obtained from the `product` parameter to create and return a new payment with that identifier. The quantity property defaults to `1`.
 

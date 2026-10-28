@@ -21,7 +21,7 @@ Gets or sets custom integer properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> Int where P : ProgressManager.Property, P.Summary == Int, P.Value == Int { get }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where both the value and summary types are `Int`. If the property has not been set, the getter returns the property’s default value.
 

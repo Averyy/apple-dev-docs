@@ -20,7 +20,7 @@ The expansion factor of the text.
 extern NSAttributedStringKey const NSExpansionAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a floating point value indicating the log of the expansion factor to be applied to glyphs. The default value is `0`, indicating no expansion.
 

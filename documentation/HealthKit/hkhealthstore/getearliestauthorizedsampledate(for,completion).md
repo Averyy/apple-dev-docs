@@ -32,7 +32,7 @@ func earliestAuthorizedSampleDate(for types: Set<HKObjectType>) async throws -> 
 
 - [Authorizing access to health data](../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 This method derives the earliest sample date from availability in the HealthKit store as well as from the time frame a person chooses in the authorization prompt.
 
@@ -52,7 +52,7 @@ If your app makes inferences on partial data, consider informing people that gra
 
 > **Note**: This method reflects data access that’s scoped by the person’s choices in the authorization prompt. By contrast, [`earliestPermittedSampleDate()`](./earliestpermittedsampledate%28%29.md) returns the earliest date HealthKit permits any app to save or query samples, regardless of what someone authorizes.
 
-#### Adjust queries for limited authorization
+## Adjust queries for limited authorization
 
 If your app queries HealthKit data by date range, consider incorporating the returned dates into your query predicate. If your app uses [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md) with a saved anchor, the anchor automatically  scopes the query to changes since the last fetch.
 

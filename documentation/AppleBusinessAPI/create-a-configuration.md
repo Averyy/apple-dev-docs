@@ -9,13 +9,13 @@ Create a new custom Configuration in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Only Configurations with type `CUSTOM_SETTING` can be created with the API.
 
 > **Note**: `configurationProfile` is required. `filename` is optional — if omitted, a default filename is generated from the Configuration ID. `configuredForPlatforms` is optional — if omitted, supported platforms are auto-detected from the payload content in the Configuration profile. The profile must be compatible with the resolved platforms.
 
-##### Example
+### Example
 
 **Request**:
 

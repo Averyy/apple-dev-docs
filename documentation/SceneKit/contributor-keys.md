@@ -5,7 +5,7 @@
 
 Metadata identifying the user and authoring tool that created a scene file, used with the [`SCNSceneSourceAssetContributorsKey`](./scnscenesourceassetcontributorskey.md) key.
 
-#### Overview
+## Overview
 
 Authoring tools that generate scene files may include metadata identifying the name and version of the authoring software and the name of the user who created the file. The values for these keys are [`NSString`](../Foundation/nsstring.md) objects.
 

@@ -24,7 +24,7 @@ static let carriesVideoStereoMetadata: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicCarriesVideoStereoMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 This characteristic doesnindicate whether the encoded video contains stereoscopic views. It instead indicates that it contains additional information that may influence the interpretation of those views and contribute to a better experience.
 

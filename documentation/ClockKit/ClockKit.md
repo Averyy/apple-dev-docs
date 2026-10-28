@@ -12,7 +12,7 @@ Display app-specific data on the clock face.
 - Mac Catalyst 14.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications. For more information, see [Migrating to WidgetKit](./clkcomplicationdatasource.md#Migrating-to-WidgetKit).
 
@@ -24,7 +24,7 @@ ClockKit defines the size and placement of the complications on each watch face.
 
 ClockKit organizes complications into families based on their size and style, and provides a variety of templates for each family. Use the templates to display text, images, and graphical gauges.
 
-##### Improve your app with complications
+### Improve your app with complications
 
 Complications provide a unique way to interact with your users. Consider creating complications, even if they only act as a launcher for your watchOS app. A complication on the active watch face provides:
 

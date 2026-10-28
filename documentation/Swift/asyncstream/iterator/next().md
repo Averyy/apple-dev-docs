@@ -21,7 +21,7 @@ The next value from the asynchronous stream.
 mutating func next() async -> Element?
 ```
 
-#### Discussion
+## Discussion
 
 When `next()` returns `nil`, this signifies the end of the `AsyncStream`.
 

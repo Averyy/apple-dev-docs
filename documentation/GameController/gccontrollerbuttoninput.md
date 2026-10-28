@@ -24,7 +24,7 @@ class GCControllerButtonInput
 @interface GCControllerButtonInput : GCControllerElement
 ```
 
-#### Overview
+## Overview
 
 A `GCControllerButtonInput` object represents a button on a controller that can report either analog or digital values.
 

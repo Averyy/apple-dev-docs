@@ -25,7 +25,7 @@ case modelDecryptionKeyFetch
 MLModelErrorModelDecryptionKeyFetch
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the device doesn’t have access to the network.
 

@@ -17,7 +17,7 @@ Removes adapter layers (LoRA or DoRA) and restores the model to its original for
 func unload(from model: LanguageModel)
 ```
 
-#### Discussion
+## Discussion
 
 This method reverts each adapted layer to its original linear layer, if possible.
 

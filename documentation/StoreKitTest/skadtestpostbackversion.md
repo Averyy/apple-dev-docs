@@ -21,7 +21,7 @@ struct SKAdTestPostbackVersion
 typedef NSString * SKAdTestPostbackVersion;
 ```
 
-#### Overview
+## Overview
 
 This postback version number corresponds to a version of SKAdNetwork. All versions of [`SKAdNetwork`](../StoreKit/skadnetwork.md) have specific instructions for signing ads and validating postbacks. The testing environment supports testing the versions indicated by the constants listed in the Getting SKAdNetwork Versions section below.
 

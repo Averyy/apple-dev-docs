@@ -25,7 +25,7 @@ static let toLatin: StringTransform
 extern NSStringTransform const NSStringTransformToLatin;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`kCFStringTransformToLatin`](../../CoreFoundation/kcfstringtransformtolatin.md).
 

@@ -5,7 +5,7 @@
 
 Analyze how users engage with your App Clips.
 
-#### Overview
+## Overview
 
 The App Clip Usage Report includes App Clip engagement and usage data from users who have opted-in to share their data with Apple and developers. Use these reports to estimate the number of App Clip card views, App Clip installations, App Clip Sessions, and session duration.
 
@@ -25,7 +25,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 > **Note**: Download the standard report unless you need to analyze the unique fields in the detailed report.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |
 | --- | --- | --- | --- | --- |
@@ -44,7 +44,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Total Session Duration | Total duration, in seconds, of all sessions being reported. | `integer` | ✔ | ✔ |
 | Unique Devices | The count of App Clip events on unique devices. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

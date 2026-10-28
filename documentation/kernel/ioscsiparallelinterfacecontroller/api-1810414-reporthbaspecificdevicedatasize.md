@@ -12,11 +12,11 @@ virtual UInt32 ReportHBASpecificDeviceDataSize (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 returns memory required in bytes
 
-#### Overview
+## Overview
 
 This method is used to retrieve the amount of memory that will be allocated in the SCSI Parallel Device for HBA specific use.
 

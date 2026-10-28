@@ -24,7 +24,7 @@ var finalize: MTAudioProcessingTapFinalizeCallback?
 MTAudioProcessingTapFinalizeCallback finalize;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this callback only once when the [`MTAudioProcessingTap`](../mtaudioprocessingtap.md) object is finalized. This field can be `NULL`.
 

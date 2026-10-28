@@ -20,7 +20,7 @@ A notification posted when changes are made to the Calendar or Reminders databas
 struct EventStoreChanged
 ```
 
-#### Overview
+## Overview
 
 Let observation = NotificationCenter.default.addObserver(of: eventStore, for: .changed) { message in … }
 

@@ -20,7 +20,7 @@ func setLocalEventsFilterDuringSuppressionState(_ filter: CGEventFilterMask, sta
 extern void CGEventSourceSetLocalEventsFilterDuringSuppressionState(CGEventSourceRef source, CGEventFilterMask filter, CGEventSuppressionState state);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system does not suppress local hardware events from the keyboard or mouse during a short interval after a Quartz event is posted—see [`CGEventSourceSetLocalEventsSuppressionInterval`](../cgeventsourcesetlocaleventssuppressioninterval.md)—and during a synthetic mouse drag (mouse movement with the left or only mouse button down).
 

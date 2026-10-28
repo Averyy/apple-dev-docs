@@ -20,7 +20,7 @@ case best
 SCCaptureResolutionBest
 ```
 
-#### Discussion
+## Discussion
 
 This streaming resolution only applies to independent window capture.
 

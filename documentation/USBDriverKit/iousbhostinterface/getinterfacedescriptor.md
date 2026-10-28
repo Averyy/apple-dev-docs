@@ -15,7 +15,7 @@ Returns the version of the interface descriptor that is associated with the spec
 virtual const IOUSBInterfaceDescriptor * GetInterfaceDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The interface descriptor structure.
 

@@ -25,11 +25,11 @@ func appending(_ aString: String) -> String
 - (NSString *) stringByAppendingString:(NSString *) aString;
 ```
 
-#### Return Value
+## Return Value
 
 A new string made by appending `aString` to the receiver.
 
-#### Discussion
+## Discussion
 
 This code excerpt, for example:
 

@@ -16,7 +16,7 @@ The customer’s address, used for sending products or services for to the perso
 ApplePayPaymentContact shippingContact;
 ```
 
-#### Discussion
+## Discussion
 
 If you have an up-to-date shipping address on file for the customer, you can set it here. See [`ApplePayPaymentContact`](../applepaypaymentcontact.md) for the fields in [`shippingContact`](../applepaypaymentrequest/shippingcontact.md).
 

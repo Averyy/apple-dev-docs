@@ -25,7 +25,7 @@ var components: [NSTextCheckingKey : String]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,NSString *> * components;
 ```
 
-#### Discussion
+## Discussion
 
 Currently used by the transit checking result. The supported keys are located in [Keys for Transit Components](../keys-for-transit-components.md).
 

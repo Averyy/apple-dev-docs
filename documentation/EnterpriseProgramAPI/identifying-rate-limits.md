@@ -5,11 +5,11 @@
 
 Recognize the rate limits that REST API responses provide and handle them in your code.
 
-#### Overview
+## Overview
 
 The Enterprise Program API limits the volume of requests that you can submit within a specified timeframe. The limits apply to requests you send using the same API key.
 
-##### Identify Limits Provided in the HTTP Header
+### Identify Limits Provided in the HTTP Header
 
 The API presents rate limits to users in an HTTP header. Every response from the API includes an `X-Rate-Limit` HTTP header. Its value has the form:
 
@@ -26,11 +26,11 @@ In this example, you are limited to 3500 requests per hour, with 500 remaining. 
 
 The time frame is a “rolling hour.” At any moment, the `user-hour-rem` value is your per-hour limit, minus the total requests you’ve made in the previous 60 minutes.
 
-##### Interpret the Error Response
+### Interpret the Error Response
 
 If you exceed a per-hour limit, the API rejects requests with an HTTP 429 response, with the `RATE_LIMIT_EXCEEDED` error code. See [About the HTTP Status Code](./about-the-http-status-code.md) for more information.
 
-##### Handle Exceeded Limits Gracefully
+### Handle Exceeded Limits Gracefully
 
 Consider rate limits as you integrate the API:
 

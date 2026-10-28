@@ -24,7 +24,7 @@ var kAudioConverterPropertyBitDepthHint: AudioConverterPropertyID { get }
 kAudioConverterPropertyBitDepthHint
 ```
 
-#### Discussion
+## Discussion
 
 This is a hint used by some encoders, such as the Apple lossless encoder. The converter usually tries to preserve as many bits as possible. A lossless encoder does poorly if more bits are supplied than are desired in the output.
 

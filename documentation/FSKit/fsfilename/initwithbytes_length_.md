@@ -15,7 +15,7 @@ Initializes a file name by copying a character sequence from a byte array.
 - (instancetype) initWithBytes:(const char *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This initializer is unavailable in Swift. Use [`init(data:)`](./init%28data%29.md) or [`init(string:)`](./init%28string%29.md) instead.
 

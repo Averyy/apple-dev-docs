@@ -28,7 +28,7 @@ var kIOHIDGCSyntheticDeviceKey: String { get }
 
 - [Understanding game controller backward compatibility](./understanding-game-controller-backward-compatibility.md)
 
-#### Discussion
+## Discussion
 
 This key is present with a Boolean value of `true` on all game controller synthetic HID devices that the Game Controller framework creates.
 

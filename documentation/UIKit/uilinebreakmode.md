@@ -19,7 +19,7 @@ Options for wrapping and truncating text.
 enum UILineBreakMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For methods that draw at a specified point (as opposed to those that draw in a rectangular region), these options specify the clipping behavior that UIKit applies to the string.
 

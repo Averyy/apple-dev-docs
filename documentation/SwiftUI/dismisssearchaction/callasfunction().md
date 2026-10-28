@@ -22,7 +22,7 @@ Dismisses the current search operation, if any.
 @preconcurrency func callAsFunction()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it for you when you call the [`DismissSearchAction`](../dismisssearchaction.md) structure that you get from the [`Environment`](../environment.md):
 

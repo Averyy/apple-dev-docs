@@ -21,7 +21,7 @@ enum TokenGeneration
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 This mirrors `Generation`, but yields raw token IDs instead of decoded text/tool calls.
 

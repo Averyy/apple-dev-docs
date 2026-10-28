@@ -10,11 +10,11 @@ virtual IOReturn splitTrack(
  UInt32address);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Issue an MMC RESERVE TRACK command with the ARSV bit.
 

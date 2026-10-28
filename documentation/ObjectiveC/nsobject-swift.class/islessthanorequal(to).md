@@ -20,11 +20,11 @@ func isLessThanOrEqual(to object: Any?) -> Bool
 - (BOOL) isLessThanOrEqualTo:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is less than or equal to `object`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 During the evaluation of an `NSWhoseSpecifier` object that contains a test whose operator is `NSLessThanOrEqualToComparison`, an [`isLessThanOrEqual(to:)`](./islessthanorequal%28to%29.md) message may be sent to each potentially specified object, if the potentially specified object does not implement a [`scriptingIsLessThanOrEqual(to:)`](./scriptingislessthanorequal%28to%29.md) method and the object being tested against does not implement a [`scriptingIsGreaterThan(_:)`](./scriptingisgreaterthan%28_%29.md) method.
 

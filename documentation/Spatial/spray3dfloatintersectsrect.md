@@ -19,11 +19,11 @@
 static bool SPRay3DFloatIntersectsRect(SPRay3DFloat ray, SPRect3DFloat rect);
 ```
 
-#### Return Value
+## Return Value
 
 A  Boolean value that indicates whether the ray intersects a specified rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the ray intersects a specified rectangle.
 

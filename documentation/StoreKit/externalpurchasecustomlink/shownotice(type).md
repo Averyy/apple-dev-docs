@@ -23,11 +23,11 @@ Displays the system disclosure notice sheet and asks the customer whether to con
 static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`ExternalPurchaseCustomLink.NoticeResult.continued`](./noticeresult/continued.md) to indicate the customer chooses to continue, or [`ExternalPurchaseCustomLink.NoticeResult.cancelled`](./noticeresult/cancelled.md) to indicate the customer chooses not to continue to view external purchases. This method throws an error if your app isn’t eligible, at runtime, to use this API.
 
-#### Discussion
+## Discussion
 
 Use this method if your app configures the [`SKExternalPurchaseCustomLinkRegions`](../../BundleResources/information-property-list/skexternalpurchasecustomlinkregions.md) or [`SKExternalPurchaseLinkStreamingRegions`](../../BundleResources/information-property-list/skexternalpurchaselinkstreamingregions.md) property list keys.
 

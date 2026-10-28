@@ -20,7 +20,7 @@ The size in points of the frame where the text is laid out.
 var containerFrame: CGRect?
 ```
 
-#### Discussion
+## Discussion
 
 The points are scaled at a ratio of 72 points per meter.
 

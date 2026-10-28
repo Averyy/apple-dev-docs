@@ -20,7 +20,7 @@ A list of the quantum-secure key exchange methods the Security Association uses.
 @property (copy) NSArray<NSNumber *> * postQuantumKeyExchangeMethods;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify up to seven key-exchange methods, which correspond to the Additional Key Exchange transform types `ADDKE1`–`ADDKE7` in RFC 9370.
 

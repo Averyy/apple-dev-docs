@@ -10,7 +10,7 @@ Create a browser that renders content using an alternative browser engine.
 - iOS 17.4+
 - iPadOS 18.0+
 
-#### Overview
+## Overview
 
 A web browser loads content and code from remote — and potentially untrusted — servers. Design your browser app to isolate access to system resources, the data of the person using the app, and untrusted data from the web. Code defensively to reduce the risk posed by vulnerabilities in your browser code.
 
@@ -21,13 +21,13 @@ Whether you use [WebKit](../WebKit/WebKit.md) or write your own alternative brow
 - Request the entitlement to act as a person’s default web browser. For more information, see [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md).
 - Watch for the [`MarketplaceKitURIScheme`](../MarketplaceKit/marketplacekiturischeme.md) within web content to support alternative distribution apps that install from a website. For more information, see [Enabling alternative distribution app installation in a browser](../MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser.md).
 
-##### Build a multi-process browser
+### Build a multi-process browser
 
 If you use an alternative browser engine in your app, you must design your secure browser infrastructure to separate different components into extensions that your browser manages. Design a limited inter-process communication (IPC) protocol that coordinates work across the extensions. Separating your alternative browser engine into distinct extensions limits the impact of security vulnerabilities in any one process.
 
 For more information on designing your browser extensions, see [Designing your browser architecture](./designing-your-browser-architecture.md). For information on using the extensions in your browser, see [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md).
 
-##### Render websites
+### Render websites
 
 Your browser app can get significant benefits by integrating closely with UIKit. You can customize the way your app handles many low-level user interface events, ensure that your browser app correctly renders CSS, and that it properly manipulates the Javascript DOM. You can use view classes in [BrowserEngineKit](./BrowserEngineKit.md) to handle scrolling, drag interactions, and the context menu in your browser app.
 
@@ -35,7 +35,7 @@ For information on integrating a custom text view with the UIKit text system, se
 
 In your browser app, launch extensions as the person browses web content to make network requests, load the web content, and render media. For more information, see [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md). Use [XPC](../XPC/XPC.md) to communicate between your browser app and extension processes. For more information, see [Using XPC to communicate with browser extensions](./using-xpc-to-communicate-with-browser-extensions.md).
 
-##### Develop by region
+### Develop by region
 
 To distribute an app that uses an alternative browser engine, request the relevant entitlements for your developer account. You must also request an entitlement if your app isn’t a web browser but embeds an alternative browser engine for in-app browsing.
 

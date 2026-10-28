@@ -24,7 +24,7 @@ func analyze(_ timeRange: CMTimeRange) throws
 - (BOOL) analyzeTimeRange:(CMTimeRange) timeRange error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The system executes this method synchronously, so you typically call it from a separate dispatch queue. It returns when the video processor finishes analyzing the time range or if an error prevents processing.
 

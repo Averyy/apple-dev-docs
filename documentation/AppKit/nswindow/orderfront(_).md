@@ -19,7 +19,7 @@ func orderFront(_ sender: Any?)
 - (void) orderFront:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default animation based on the window type will be used when the window is ordered front unless it has been modified by the [`animationBehavior`](./animationbehavior-swift.property.md) property.
 

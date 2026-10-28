@@ -22,7 +22,7 @@ let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString
 extern CFStringRef const kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle;
 ```
 
-#### Discussion
+## Discussion
 
 CGRect within the image to be used for content analysis, cropped before applying rotation.
 

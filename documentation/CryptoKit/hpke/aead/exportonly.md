@@ -21,7 +21,7 @@ An export-only mode.
 case exportOnly
 ```
 
-#### Discussion
+## Discussion
 
 In export-only mode, HPKE negotiates key derivation, but you can’t use it to encrypt or decrypt data.
 

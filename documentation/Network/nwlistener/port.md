@@ -21,7 +21,7 @@ The port on which the listener can accept connections.
 final var port: NWEndpoint.Port? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The listener’s port is available once the listener is in the ready state.
 

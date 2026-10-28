@@ -19,7 +19,7 @@ Initializes and returns a new overlay view using the specified polyline overlay 
 - (instancetype) initWithPolyline:(MKPolyline *) polyline;
 ```
 
-#### Return Value
+## Return Value
 
 A new polyline overlay view.
 

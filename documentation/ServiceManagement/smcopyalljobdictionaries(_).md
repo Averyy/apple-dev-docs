@@ -22,7 +22,7 @@ func SMCopyAllJobDictionaries(_ domain: CFString!) -> Unmanaged<CFArray>!
 extern CFArrayRefSMCopyAllJobDictionaries(CFStringRef domain);
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing all job dictionaries, or `NULL` if an error occurred. The caller must release the array.
 

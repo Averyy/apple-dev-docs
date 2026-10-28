@@ -639,7 +639,7 @@ nonisolated
 init<V>(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, V>, @ContentBuilder content: @escaping (RowValue) -> Content) where V : Comparable
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 

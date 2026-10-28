@@ -15,7 +15,7 @@
 OSErr FSExchangeObjects(const FSRef *ref, const FSRef *destRef);
 ```
 
-#### Discussion
+## Discussion
 
 To determine whether [`FSExchangeObjects`](./api-1565474-fsexchangeobjects.md) is supported in the current file system, call the [`FSGetVolumeParms`](./api-1565147-fsgetvolumeparms.md) function and check whether the [`bSupportsFSExchangeObjects`](./api-1565582-anonymous/bsupportsfsexchangeobjects.md) bit is set in the [`vMAttrib`](./getvolparmsinfobuffer/api-1565870-vmattrib.md) field of the resulting [`GetVolParmsInfoBuffer`](./getvolparmsinfobuffer.md) value.
 

@@ -22,7 +22,7 @@ static func presentOfferCodeRedeemSheet(from controller: NSViewController) async
 
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This method displays a system sheet in the view, where customers can enter and redeem offer codes. Use this method if you generate offer codes in App Store Connect and your app uses AppKit.
 
@@ -41,8 +41,7 @@ When customers redeem an offer code, StoreKit emits the resulting transaction in
 ### Deprecated
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](./presentoffercoderedeemsheet%28in%29.md)
   Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View\n](../../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
 
 
 ---

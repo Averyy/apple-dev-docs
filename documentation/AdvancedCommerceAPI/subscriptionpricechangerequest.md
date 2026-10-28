@@ -15,7 +15,7 @@ The request body you use to change the price of an auto-renewable subscription.
 object SubscriptionPriceChangeRequest
 ```
 
-##### Discussion
+### Discussion
 
 This is the request body for the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 

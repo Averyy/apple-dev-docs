@@ -28,7 +28,7 @@ class func isValidPartyCode(_ partyCode: String) -> Bool
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 Party code should be two parts of strings with the same length (2-6) connected with a dash, and the code can be either pure digits (0-9), or both parts are uppercased characters from [`validPartyCodeAlphabet`](./validpartycodealphabet.md).
 

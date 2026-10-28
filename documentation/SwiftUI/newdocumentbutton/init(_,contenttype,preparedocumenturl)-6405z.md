@@ -1,0 +1,113 @@
+# init(_:contentType:prepareDocumentURL:)
+
+**Framework**: SwiftUI  
+**Kind**: init  
+**Role**: Initializer
+
+Creates and opens new documents.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+nonisolated
+init(_ title: some StringProtocol, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+```swift
+nonisolated
+init(_ label: Text? = nil, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+```swift
+nonisolated
+init(_ title: LocalizedStringKey, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+```
+
+## Discussion
+
+This initializer allows presenting a template picker, where a document can be prepopulated or preconfigured using a template.
+
+```swift
+@State private var isTemplatePickerPresented = false
+@State private var documentCreationContinuation:
+    CheckedContinuation<TextDocument?, any Error>?
+
+var body: some Scene {
+    DocumentGroupLaunchScene("My Documents") {
+        NewDocumentButton("Start Writing…")
+        NewDocumentButton("Choose a Template", for: TextDocument.self) {
+            try await withCheckedThrowingContinuation { continuation in
+                documentCreationContinuation = continuation
+                isTemplatePickerPresented = true
+            }
+        }
+        .fullScreenCover(isPresented: $isTemplatePickerPresented) {
+            TemplatePicker(
+                continuation: $documentCreationContinuation
+            )
+        }
+    }
+
+    DocumentGroup(newDocument: TextDocument()) { configuration in
+        MyDocumentView(document: configuration.$document))
+    }
+}
+
+struct TemplatePicker: View {
+    @Binding var continuation:
+        CheckedContinuation<TextDocument?, any Error>?
+
+    var body: some View {
+        VStack {
+            Text("Choose a template")
+                .font(.title)
+            Button("Meeting minutes") {
+                let document = makeMeetingMinutes()
+                documentCreationContinuation?.resume(returning: document)
+                dismiss()
+            }
+            Button("Letter") {
+                let document = makeLetter()
+                documentCreationContinuation?.resume(returning: document)
+                dismiss()
+            }
+            Button("Cancel") {
+                documentCreationContinuation?.resume(throwing: CancellationError())
+                dismiss()
+            }
+        }
+    }
+
+    private func makeMeetingMinutes() -> TextDocument { ... }
+    private func makeLetter() -> TextDocument { ... }
+}
+
+struct TextDocument: FileDocument { ... }
+```
+
+## Parameters
+
+- `title`: A title key for the button title.
+- `contentType`: A content type of the document to create.
+- `prepareDocumentURL`: A closure that is called when a user presses the button. At this point, you can present a document template picker or another UI that allows users to choose a theme, configuration, or a template to create a document from. Return a prepared document, or throw an error if document creation failed. Return `nil` to request creation of an empty document.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/newdocumentbutton/init(_:contenttype:preparedocumenturl:)-6405z)*

@@ -20,7 +20,7 @@ Represents a single variant set on a prim.
 struct VariantSet
 ```
 
-#### Overview
+## Overview
 
 `USDPrim.VariantSet` provides methods to add variants, query available variants, and control which variant is currently selected. Each variant set contains named variants that represent different configurations of the prim’s data.
 

@@ -27,7 +27,7 @@ func selectPosition(at point: CGPoint, for request: BETextDocumentRequest) async
 - (void) selectPositionAtPoint:(CGPoint) point withContextRequest:(BETextDocumentRequest *) request completionHandler:(void (^)(BETextDocumentContext *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The returned document context includes autocorrect information for the new caret location, as a convenience.
 

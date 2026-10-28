@@ -19,7 +19,7 @@ Creates an array with the specified shape, scalar type, and strides.
 init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 The `shape` and `strides` arrays must have the same number of elements.
 

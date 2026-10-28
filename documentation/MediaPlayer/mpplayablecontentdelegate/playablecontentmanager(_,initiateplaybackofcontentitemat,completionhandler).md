@@ -28,7 +28,7 @@ optional func playableContentManager(_ contentManager: MPPlayableContentManager,
 - (void) playableContentManager:(MPPlayableContentManager *) contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *) indexPath completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a media player interface needs to play a media item. Your app responds by beginning playback of the requested media item. After beginning playback, call the provided `completionHandler` block with an argument of `nil`; or, if your app can’t begin playback, call the completion handler with an error that indicates the reason.
 

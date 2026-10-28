@@ -15,7 +15,7 @@ The IOCDMedia class is a random-access disk device abstraction for CDs.
 class IOCDMedia : IOMedia
 ```
 
-#### Overview
+## Overview
 
 The IOCDMedia class is a random-access disk device abstraction for CDs. It extends the IOMedia class by implementing special CD APIs, such as readCD, and publishing the TOC as a property of the IOCDMedia object.
 

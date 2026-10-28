@@ -25,7 +25,7 @@ func clone() -> Self
 - (instancetype) clone;
 ```
 
-#### Discussion
+## Discussion
 
 This method recursively copies the node and its child nodes. For a nonrecursive copy, use the inherited [`copy()`](../../ObjectiveC/nsobject-swift.class/copy%28%29.md) method, which creates a copy of the node without any child nodes.
 

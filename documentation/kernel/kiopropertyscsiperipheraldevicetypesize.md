@@ -13,7 +13,7 @@
 #define kIOPropertySCSIPeripheralDeviceTypeSize
 ```
 
-#### Discussion
+## Discussion
 
 Size of the kIOPropertySCSIPeripheralDeviceType key.
 

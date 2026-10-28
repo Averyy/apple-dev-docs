@@ -5,7 +5,7 @@
 
 An array structure within a PDF document.
 
-#### Overview
+## Overview
 
 PDF arrays may be heterogeneous—that is, they may contain any other PDF objects, including PDF strings, PDF dictionaries, and other PDF arrays.
 

@@ -16,7 +16,7 @@ Provides the current world scale compensation of this converter.
 @preconcurrency var worldScalingCompensation: WorldScalingCompensation { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: [`WorldScalingCompensation`](../worldscalingcompensation.md)
 

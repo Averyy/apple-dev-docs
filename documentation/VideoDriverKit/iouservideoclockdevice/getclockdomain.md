@@ -15,7 +15,7 @@ Gets the clock domain value of the clock device.
 uint32_t GetClockDomain();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

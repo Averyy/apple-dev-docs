@@ -19,7 +19,7 @@ var imageDimsWhenDisabled: Bool { get set }
 @property BOOL imageDimsWhenDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the button’s image and text are dimmed when the button is disabled; when it is [`false`](../../Swift/false.md), the image and text are not dimmed in the disabled state. By default, all button types except [`NSSwitchButton`](../nsswitchbutton.md) and [`NSRadioButton`](../nsradiobutton.md) dim when disabled. When buttons of type [`NSSwitchButton`](../nsswitchbutton.md) and [`NSRadioButton`](../nsradiobutton.md) are disabled, only the associated text dims.
 

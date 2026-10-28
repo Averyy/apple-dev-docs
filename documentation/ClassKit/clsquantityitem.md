@@ -23,7 +23,7 @@ class CLSQuantityItem
 @interface CLSQuantityItem : CLSActivityItem
 ```
 
-#### Overview
+## Overview
 
 Use an activity item of this type to associate a discrete value with a task. For example, you might use it to indicate how many times the user requested a hint while taking a quiz.
 

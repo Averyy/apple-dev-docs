@@ -19,7 +19,7 @@ A validation dataset represented by a data source.
 case dataSource(MLSoundClassifier.DataSource)
 ```
 
-#### Discussion
+## Discussion
 
 - dataSource: An [`MLSoundClassifier.DataSource`](../../datasource.md) instance that contains a validation dataset.
 

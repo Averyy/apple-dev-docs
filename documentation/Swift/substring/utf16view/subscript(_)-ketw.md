@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(index: Substring.UTF16View.Index) -> Substring.UTF16View.Element { get }
 ```
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

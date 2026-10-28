@@ -19,7 +19,7 @@ var bounds: NSRect { get }
 @property (readonly) NSRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the crop box specified by the PDF data.
 

@@ -5,11 +5,11 @@
 
 The initial version of the Enterprise Program API.
 
-#### Overview
+## Overview
 
 This REST API provides resources that enable you to automate actions you take in developer.apple.com
 
-##### New features
+### New features
 
 - The API supports provisioning, including managing bundle IDs with the [Bundle IDs](./bundle-ids.md) and [Bundle ID Capabilities](./bundle-id-capabilities.md) resources, managing pass type IDs with [Pass Type Ids](./passtypeids.md) resource, managing certificates with the [Certificates](./certificates.md) resource, registering test devices with the [Devices](./devices.md) resource, and managing provisioning profiles with [Profiles](./profiles.md).
 - Manage your users and their access with the [Users](./users.md) resources. Invite users to join your team with the [User Invitations](./user-invitations.md) resource.

@@ -25,11 +25,11 @@ init(commonFormat format: AVAudioCommonFormat, sampleRate: Double, interleaved: 
 - (instancetype) initWithCommonFormat:(AVAudioCommonFormat) format sampleRate:(double) sampleRate interleaved:(BOOL) interleaved channelLayout:(AVAudioChannelLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance.
 
-#### Discussion
+## Discussion
 
 For information about possible `format` values, see [`AVAudioCommonFormat`](../avaudiocommonformat.md).
 

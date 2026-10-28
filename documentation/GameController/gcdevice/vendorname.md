@@ -25,7 +25,7 @@ var vendorName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * vendorName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may be `nil` and may not be unique. Use this property to present information about the device to the user.
 

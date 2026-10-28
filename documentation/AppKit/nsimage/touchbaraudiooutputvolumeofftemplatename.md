@@ -22,7 +22,7 @@ class let touchBarAudioOutputVolumeOffTemplateName: String
 extern NSImageName const NSImageNameTouchBarAudioOutputVolumeOffTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for audio output volume off](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825106@2x.png)
 

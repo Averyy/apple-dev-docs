@@ -21,7 +21,7 @@ static let textureFormat: CIImageOption
 extern CIImageOption const kCIImageTextureFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key must be an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Core Image pixel format constant. (See `Pixel Formats`.) You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](../ciimage/init%28texture,size,flipped,options%29.md) method.
 

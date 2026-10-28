@@ -21,7 +21,7 @@ optional func widgetDidEndEditing()
 - (void) widgetDidEndEditing;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a user chooses the widget’s end editing button or when editing is deactivated because editing begins in a different widget. This method can be called when [`widgetAllowsEditing`](./widgetallowsediting.md) is [`true`](../../Swift/true.md).
 

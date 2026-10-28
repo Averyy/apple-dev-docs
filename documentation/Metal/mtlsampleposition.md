@@ -28,7 +28,7 @@ typedef struct { ... } MTLSamplePosition;
 
 - [Positioning samples programmatically](./positioning-samples-programmatically.md)
 
-#### Overview
+## Overview
 
 Subpixel sample positions are in a 16 x 16 grid across a pixel. Each subsample position’s [`x`](./mtlsampleposition/x.md) and [`y`](./mtlsampleposition/y.md) values are in 1/16 increments in the floating-point range `[0.0, 15.0/16.0)`. The pixel’s origin point `(0,0)` is at the top-left corner.
 

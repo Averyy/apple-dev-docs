@@ -20,7 +20,7 @@ The capsule radius.
 var radius: Float
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value in the entity’s coordinate system.
 

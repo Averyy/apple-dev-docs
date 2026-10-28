@@ -23,7 +23,7 @@ init!(title: String!, price: NSDecimalNumber!, currencyCode: String!)
 - (instancetype) initWithTitle:(NSString *) title price:(NSDecimalNumber *) price currencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized line item object or `nil` if the object could not be created.
 

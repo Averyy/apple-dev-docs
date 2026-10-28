@@ -19,7 +19,7 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, backgroundWasRightClickedWith
 - (void) imageBrowser:(IKImageBrowserView *) aBrowser backgroundWasRightClickedWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals  that the user either right-clicked the background or left-clicked it with the Alt key pressed. You can implement this method if you want to perform custom tasks at that time.
 

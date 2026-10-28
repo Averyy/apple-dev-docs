@@ -19,7 +19,7 @@ func MDQueryCreate(_ allocator: CFAllocator!, _ queryString: CFString!, _ valueL
 MDQueryRef MDQueryCreate(CFAllocatorRef allocator, CFStringRef queryString, CFArrayRef valueListAttrs, CFArrayRef sortingAttrs);
 ```
 
-#### Return Value
+## Return Value
 
 An MDQueryRef, or `NULL` on failure. If the query string is empty or malformed the function returns NULL.
 

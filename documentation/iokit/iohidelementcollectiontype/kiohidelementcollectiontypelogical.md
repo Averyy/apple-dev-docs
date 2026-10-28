@@ -14,7 +14,7 @@
 kIOHIDElementCollectionTypeLogical
 ```
 
-#### Discussion
+## Discussion
 
 Used when a set of data items form a composite data structure.
 

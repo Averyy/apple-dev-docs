@@ -24,7 +24,7 @@ static let paddleSportsSpeed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPaddleSportsSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use distance per time units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor paddling sports workouts, the system automatically records distance samples on Apple Watch.
 

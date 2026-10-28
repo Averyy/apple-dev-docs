@@ -16,7 +16,7 @@ typedef struct IOUSBGetFrameStruct {
 } IOUSBGetFrameStruct;
 ```
 
-#### Overview
+## Overview
 
 Structure used from user space to return the frame number and a timestamp on when the frame register was read.
 

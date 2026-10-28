@@ -17,7 +17,7 @@ Present an activity picker sheet for selecting apps and websites to manage.
 @preconcurrency func familyActivityPicker(title: String?, headerText: String? = nil, footerText: String? = nil, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this view modifier to present a `FamilyControls/FamilyActivityPicker` with a custom title.
 

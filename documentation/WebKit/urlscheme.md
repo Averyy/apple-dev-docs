@@ -19,7 +19,7 @@ A type representing a valid URL scheme.
 struct URLScheme
 ```
 
-#### Overview
+## Overview
 
 Scheme names are case sensitive, must start with an ASCII letter, and may contain only ASCII letters, numbers, the “+” character, the “-” character, and the “.” character.
 

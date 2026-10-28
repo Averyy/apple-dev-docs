@@ -17,7 +17,7 @@ Resolve a legacy `kvScheme` string for variance-normalized compression.
 func resolveVarianceNormalizedScheme(_ scheme: String?) -> (keyBits: Int, valueBits: Int, tileSize: Int, sinkhornIterations: Int)?
 ```
 
-#### Discussion
+## Discussion
 
 Supported schemes:
 

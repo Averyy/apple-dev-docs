@@ -24,7 +24,7 @@ enum AVAuthorizationStatus
 enum AVAuthorizationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Call [`authorizationStatus(for:)`](./avcapturedevice/authorizationstatus%28for%29.md) to determine the app’s current permission to capture media.
 

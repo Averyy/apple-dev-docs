@@ -25,7 +25,7 @@ func CFBinaryHeapGetMinimum(_ heap: CFBinaryHeap!) -> UnsafeRawPointer!
 extern const void *CFBinaryHeapGetMinimum(CFBinaryHeapRef heap);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum value in `heap` as determined by the binary heap’s compare callback. If `heap` contains several equal minimum values, any one may be returned. If the value is a Core Foundation object, ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

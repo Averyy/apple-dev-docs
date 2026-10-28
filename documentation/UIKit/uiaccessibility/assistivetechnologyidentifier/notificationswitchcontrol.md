@@ -25,7 +25,7 @@ static let notificationSwitchControl: UIAccessibility.AssistiveTechnologyIdentif
 extern UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationSwitchControlIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This accessibility feature allows users with mobility impairments to access an app using a single physical button. When the user enables Switch Control, iOS cycles a cursor around the screen from element to element. Users press their switch to operate on the accessibility element beneath the cursor.
 

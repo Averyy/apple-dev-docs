@@ -24,7 +24,7 @@ class AVAssetResourceLoadingContentInformationRequest
 @interface AVAssetResourceLoadingContentInformationRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a resource loading delegate, which must implement the [`AVAssetResourceLoaderDelegate`](./avassetresourceloaderdelegate.md) protocol, receives an instance of [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) when the [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./avassetresourceloaderdelegate/resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md) is invoked and accepts responsibility for loading the resource, it must check whether the [`contentInformationRequest`](./avassetresourceloadingrequest/contentinformationrequest.md) property of the [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) is not `nil`. Whenever the value is not `nil`, the request includes a query for the information that `AVAssetResourceLoadingContentInformationRequest` encapsulates. In response to such queries, the resource loading delegate should set the values of the content information request’s properties appropriately before invoking the [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) method [`finishLoading()`](./avassetresourceloadingrequest/finishloading%28%29.md).
 

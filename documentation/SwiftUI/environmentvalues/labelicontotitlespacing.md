@@ -21,7 +21,7 @@ The spacing between the icon and title of a label.
 var labelIconToTitleSpacing: CGFloat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value that should be used for the icon-to-title spacing in labels. To set a different value for labels, use the `labelIconToTitleSpacing` modifier.
 

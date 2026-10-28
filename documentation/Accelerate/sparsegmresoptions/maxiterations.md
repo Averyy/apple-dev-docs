@@ -25,7 +25,7 @@ var maxIterations: Int32
 int maxIterations;
 ```
 
-#### Discussion
+## Discussion
 
 If `0`, the operation uses the default value of `100`.
 

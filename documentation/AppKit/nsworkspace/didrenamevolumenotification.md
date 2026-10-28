@@ -19,7 +19,7 @@ class let didRenameVolumeNotification: NSNotification.Name
 extern NSNotificationName const NSWorkspaceDidRenameVolumeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 These notifications typically change simultaneously, in which case, the workspace posts only one notification.
 

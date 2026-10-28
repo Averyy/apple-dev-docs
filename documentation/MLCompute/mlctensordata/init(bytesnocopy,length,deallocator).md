@@ -23,7 +23,7 @@ convenience init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, deallo
 + (instancetype) dataWithBytesNoCopy:(void *) bytes length:(NSUInteger) length deallocator:(void (^)(void *bytes, NSUInteger length)) deallocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCTensorData` instance.
 

@@ -19,7 +19,7 @@ enum ColumnResizingType
 enum NSBrowserColumnResizingType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`columnResizingType`](./columnresizingtype-swift.property.md) methods.
 

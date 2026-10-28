@@ -24,7 +24,7 @@ static let peripheralUUIDs: CBConnectionEventMatchingOption
 extern CBConnectionEventMatchingOption const CBConnectionEventMatchingOptionPeripheralUUIDs;
 ```
 
-#### Discussion
+## Discussion
 
 A connected peer with any matching peripheral UUIDs results in a call to [`centralManager(_:connectionEventDidOccur:for:)`](../cbcentralmanagerdelegate/centralmanager%28_,connectioneventdidoccur,for%29.md).
 

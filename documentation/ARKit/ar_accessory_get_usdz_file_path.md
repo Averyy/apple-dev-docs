@@ -15,11 +15,11 @@ Get path to a USDZ file for the accessory, if it has one.
 extern CFURLRefar_accessory_get_usdz_file_path(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 The path to the USDZ file.
 
-#### Discussion
+## Discussion
 
 > **Note**: The returned value will have the same lifetime as the `ar_accessory_t`.
 

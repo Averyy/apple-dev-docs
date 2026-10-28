@@ -16,7 +16,7 @@ A 3D bounding box that encloses the equipment.
 override var boundingBox: Rect3D { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This bounding box is object oriented, so remains the same regardless of the equipment orientation.
 

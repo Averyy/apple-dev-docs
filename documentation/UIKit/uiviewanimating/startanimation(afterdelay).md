@@ -24,7 +24,7 @@ func startAnimation(afterDelay delay: TimeInterval)
 - (void) startAnimationAfterDelay:(NSTimeInterval) delay;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start the animations or to resume a set of paused animations after the specified time delay. This method sets the state of the animator to [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md), if it is not already there. It is a programmer error to call this method while the state of the animator is set to [`UIViewAnimatingState.stopped`](../uiviewanimatingstate/stopped.md).
 

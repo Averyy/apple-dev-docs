@@ -19,7 +19,7 @@ var numberOfSections: Int { get }
 @property (readonly) NSInteger numberOfSections;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the number of sections reported by the data source object. If the collection view does not use a data source object, the value in this property is `1`.
 

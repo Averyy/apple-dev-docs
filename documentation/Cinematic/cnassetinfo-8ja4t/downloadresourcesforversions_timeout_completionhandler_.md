@@ -18,7 +18,7 @@ Downloads the resources required to render cinematic effects on assets Resources
 + (NSProgress *) downloadResourcesForVersions:(NSSet<NSNumber *> *) resourceVersions timeout:(NSTimeInterval) downloadTimeout completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A \c NSProgress tracking the download.
 

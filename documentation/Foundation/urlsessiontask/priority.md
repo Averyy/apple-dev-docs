@@ -25,7 +25,7 @@ var priority: Float { get set }
 @property float priority;
 ```
 
-#### Discussion
+## Discussion
 
 To provide hints to a host on how to prioritize URL session tasks from your app, specify a priority for each task. Specifying a priority provides only a hint and does not guarantee performance. If you don’t specify a priority, a URL session task has a priority of [`defaultPriority`](./defaultpriority.md), with a value of `0.5`.
 

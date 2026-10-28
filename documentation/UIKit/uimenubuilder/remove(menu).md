@@ -24,7 +24,7 @@ func remove(menu removedIdentifier: UIMenu.Identifier)
 - (void) removeMenuForIdentifier:(UIMenuIdentifier) removedIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove menus ([`UIMenu`](../uimenu.md) objects) from a menu system.
 

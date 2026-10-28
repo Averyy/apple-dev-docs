@@ -19,7 +19,7 @@
 BNNSDataTypeUIntBit
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

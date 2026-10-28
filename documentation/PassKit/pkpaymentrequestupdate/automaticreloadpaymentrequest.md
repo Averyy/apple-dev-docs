@@ -23,7 +23,7 @@ var automaticReloadPaymentRequest: PKAutomaticReloadPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKAutomaticReloadPaymentRequest * automaticReloadPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is nil, which indicates the automatic reload payment request needs no update.
 

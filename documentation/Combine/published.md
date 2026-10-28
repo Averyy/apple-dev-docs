@@ -22,7 +22,7 @@ A type that publishes a property marked with an attribute.
 struct Published<Value>
 ```
 
-#### Overview
+## Overview
 
 Publishing a property with the `@Published` attribute creates a publisher of this type. You access the publisher with the `$` operator, as shown here:
 
@@ -50,7 +50,7 @@ When the property changes, publishing occurs in the property’s `willSet` block
 
 > ❗ **Important**: The `@Published` attribute is class constrained. Use it with properties of classes, not with non-class types like structures.
 
-##### See Also
+### See Also
 
 - [`assign(to:)`](./publisher/assign%28to%29.md)
 

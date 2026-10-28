@@ -24,7 +24,7 @@ func union(with s2: CIFilterShape) -> CIFilterShape
 - (CIFilterShape *) unionWith:(CIFilterShape *) s2;
 ```
 
-#### Return Value
+## Return Value
 
 The filter shape object that results from the union.
 

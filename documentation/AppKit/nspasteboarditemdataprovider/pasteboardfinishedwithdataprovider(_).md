@@ -20,7 +20,7 @@ optional func pasteboardFinishedWithDataProvider(_ pasteboard: NSPasteboard)
 - (void) pasteboardFinishedWithDataProvider:(NSPasteboard *) pasteboard;
 ```
 
-#### Discussion
+## Discussion
 
 One data provider can provide data for more than one pasteboard item. This method is called when the pasteboard no longer needs the data provider for any of its pasteboard items. This can be either because the data provider has fulfilled all promises, or because ownership of the pasteboard has changed.
 

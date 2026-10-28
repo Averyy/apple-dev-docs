@@ -25,7 +25,7 @@ var languageMap: [String : [String]] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSArray<NSString *> *> * languageMap;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary’s keys are ISO 15924 script codes (such as `"Latn"` or `"Cyrl"`) and its values are arrays of BCP-47 language tags (such as `"en"`, `"fr"`, or `"de"`).
 

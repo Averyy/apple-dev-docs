@@ -21,7 +21,7 @@ var presentationStyle: MSMessagesAppPresentationStyle { get }
 @property (nonatomic, assign, readonly) MSMessagesAppPresentationStyle presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The presentation style defines how the extension appears in the Messages app. The property’s value is set by the following actions:
 

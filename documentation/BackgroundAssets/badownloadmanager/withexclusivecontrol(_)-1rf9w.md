@@ -21,11 +21,11 @@ Attempts to acquire immediate, exclusive control over the download manager.
 final func withExclusiveControl<ReturnType>(_ body: @escaping () throws -> sending ReturnType) async throws -> sending ReturnType
 ```
 
-#### Return Value
+## Return Value
 
 `body`’s return value.
 
-#### Discussion
+## Discussion
 
 To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Unlike [`withExclusiveControl(_:)`](./withexclusivecontrol%28_%29-2ang9.md), this method waits for exclusive control to be acquired and then relinquished before it returns.
 

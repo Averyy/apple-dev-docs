@@ -21,7 +21,7 @@ Initializes a preconfigured AudioFileResource asynchronously from a Reality Comp
 @preconcurrency convenience init(named name: String, from scene: String, in bundle: Bundle? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The name provided **must** be unique.
 

@@ -21,7 +21,7 @@ Controls whether the format input is formatted as a positive or negative range.
 var isPositive: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When the range is formatted as a positive value, the returned string describes the time from `lowerBound` to `upperBound`. When `isPositive` is set to `false`, the returned string describes the time from `upperBound` to `lowerBound`.
 

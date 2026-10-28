@@ -25,7 +25,7 @@ var countStyle: ByteCountFormatter.CountStyle { get set }
 @property NSByteCountFormatterCountStyle countStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default setting is [`ByteCountFormatter.CountStyle.file`](./countstyle-swift.enum/file.md), which is the system specific value for file and storage sizes.
 

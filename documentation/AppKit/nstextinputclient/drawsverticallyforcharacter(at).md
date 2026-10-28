@@ -19,7 +19,7 @@ optional func drawsVerticallyForCharacter(at charIndex: Int) -> Bool
 - (BOOL) drawsVerticallyForCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the character is rendered vertically; otherwise [`false`](../../Swift/false.md).
 

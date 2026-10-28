@@ -20,7 +20,7 @@ optional func application(_ application: NSApplication, didReceiveRemoteNotifica
 - (void) application:(NSApplication *) application didReceiveRemoteNotification:(NSDictionary<NSString *,id> *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives this message when the application is running and a remote notification arrives for it. In response, the application typically connects with its provider and downloads the data waiting for it. It may also process the notification in any other way it deems useful.
 

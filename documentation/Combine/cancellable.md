@@ -26,7 +26,7 @@ protocol Cancellable
 - [Receiving and Handling Events with Combine](./receiving-and-handling-events-with-combine.md)
 - [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
 
-#### Overview
+## Overview
 
 Calling [`cancel()`](./cancellable/cancel%28%29.md) frees up any allocated resources. It also stops side effects such as timers, network access, or disk I/O.
 

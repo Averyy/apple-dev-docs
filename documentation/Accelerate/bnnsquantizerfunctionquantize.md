@@ -25,7 +25,7 @@ var BNNSQuantizerFunctionQuantize: BNNSQuantizerFunction { get }
 BNNSQuantizerFunctionQuantize
 ```
 
-#### Discussion
+## Discussion
 
 The following code quantizes a single-precision matrix to a 16-bit integer matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements:
 

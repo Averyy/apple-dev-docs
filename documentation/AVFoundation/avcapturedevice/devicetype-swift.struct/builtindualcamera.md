@@ -26,7 +26,7 @@ extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDualCamera;
 
 - [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 This device type supports the following features:
 

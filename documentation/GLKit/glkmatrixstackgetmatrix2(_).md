@@ -22,7 +22,7 @@ func GLKMatrixStackGetMatrix2(_ stack: GLKMatrixStack) -> GLKMatrix2
 GLKMatrix2 GLKMatrixStackGetMatrix2(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 A `2x2` matrix created by taking the top-left corner of the top matrix.
 

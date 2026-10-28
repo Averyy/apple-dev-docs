@@ -25,7 +25,7 @@ typealias xpc_dictionary_applier_t = (UnsafePointer<CChar>, xpc_object_t) -> Boo
 typedef _Bool (^)(const char *, NSObject<OS_xpc_object> *) xpc_dictionary_applier_t;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether iteration should continue.
 

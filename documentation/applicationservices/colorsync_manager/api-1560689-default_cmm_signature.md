@@ -4,7 +4,7 @@
 
 Specifies a signature for the default color management module supplied by Color Sync.
 
-#### Overview
+## Overview
 
 A color management module (CMM) uses profiles to convert and match a color in a given color space on a given device to or from another color space or device. 
 

@@ -25,11 +25,11 @@ convenience init(geometry: SCNGeometry?, screenSpaceRadius radius: CGFloat)
 + (instancetype) levelOfDetailWithGeometry:(SCNGeometry *) geometry screenSpaceRadius:(CGFloat) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A level-of-detail object. You associate levels of detail with a [`SCNGeometry`](../scngeometry.md) object using its [`levelsOfDetail`](../scngeometry/levelsofdetail.md) property.
 
-#### Discussion
+## Discussion
 
 When rendering a geometry with associated levels of detail, SceneKit calculates the radius in pixels of the circle covered by a geometry’s bounding sphere, then renders the geometry for the [`SCNLevelOfDetail`](../scnlevelofdetail.md) object with the largest `radius` parameter smaller than that circle.
 

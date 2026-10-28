@@ -22,11 +22,11 @@ func AudioSessionSetActive(_ active: Bool) -> OSStatus
 extern OSStatus AudioSessionSetActive(Boolean active);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Activating your audio session may interrupt audio sessions belonging to other applications running in the background, depending on categories and priorities. Deactivating your audio session allows other, interrupted audio sessions to resume.
 

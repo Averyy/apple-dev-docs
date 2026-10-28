@@ -22,7 +22,7 @@ A type that collects multiple instances of a content type — like views, scenes
 struct Group<Content>
 ```
 
-#### Overview
+## Overview
 
 Use a group to collect multiple views into a single instance, without affecting the layout of those views, like an [`HStack`](./hstack.md), [`VStack`](./vstack.md), or [`Section`](./section.md) would. After creating a group, any modifier you apply to the group affects all of that group’s members. For example, the following code applies the [`headline`](./font/headline.md) font to three views in a group.
 

@@ -21,7 +21,7 @@ Registers a file-backed representation for an item with item visibility, an open
 func registerFileRepresentation(for contentType: UTType, visibility: NSItemProviderRepresentationVisibility = .all, openInPlace: Bool = false, loadHandler: @escaping @Sendable (@escaping (URL?, Bool, (any Error)?) -> Void) -> Progress?)
 ```
 
-#### Discussion
+## Discussion
 
 If a destination app must access the represented file using a file coordinator, set the `coordinated` parameter in the load handler block to [`true`](../../Swift/true.md).
 

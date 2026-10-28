@@ -24,7 +24,7 @@ func finishAuthorization(for accessory: ASAccessory, settings: ASAccessorySettin
 - (void) finishAuthorization:(ASAccessory *) accessory settings:(ASAccessorySettings *) settings completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in scenarios where an accessory has multiple wireless interfaces. For example, when an accessory has both Bluetooth and Wi-Fi, and your descriptor may only provides an SSID prefix. In this case, the Bluetooth interface onboards first and your app needs to then finish authorization with the full SSID.
 

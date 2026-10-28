@@ -21,7 +21,7 @@ Writes to the file may only append.
 static var systemAppend: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SF_APPEND`.
 

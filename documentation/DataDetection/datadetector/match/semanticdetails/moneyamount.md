@@ -21,7 +21,7 @@ A match that the data detector determines represents an amount of money.
 struct MoneyAmount
 ```
 
-#### Discussion
+## Discussion
 
 The framework returns [`currency`](./moneyamount/currency.md) as the match’s currency, though it may be a best guess. The [`amount`](./moneyamount/amount.md) is the amount of money in the specified currency.
 

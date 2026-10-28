@@ -24,7 +24,7 @@ var pinColor: MKPinAnnotationColor { get set }
 @property (nonatomic) MKPinAnnotationColor pinColor;
 ```
 
-#### Discussion
+## Discussion
 
 The Maps application uses different pin colors for different types of map annotations. Your own map annotation should use the available pin colors in the same way. For a description of when to use each type of pin, see the constants of [`MKPinAnnotationColor`](../mkpinannotationcolor.md).
 

@@ -24,7 +24,7 @@ weak var delegate: (any HKWorkoutSessionDelegate)? { get set }
 @property (weak, nullable) id<HKWorkoutSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives notifications when a workout session’s state changes or when a workout session fails.
 

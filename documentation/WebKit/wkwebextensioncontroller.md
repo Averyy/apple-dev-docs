@@ -24,7 +24,7 @@ class WKWebExtensionController
 @interface WKWebExtensionController : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can have one or more extension controller instances, allowing different parts of the app to use different sets of extensions.
 

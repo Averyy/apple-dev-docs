@@ -27,7 +27,7 @@ class func remove(forIdentifier identifier: UUID) async throws
 + (void) removeDataStoreForIdentifier:(NSUUID *) identifier completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to remove the data store for the unique identifier. Release any [`WKWebView`](../wkwebview.md) instances using the data store before you call this method. If the system cannot complete removal of the data store, this throws an error.
 

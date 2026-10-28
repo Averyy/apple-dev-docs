@@ -19,7 +19,7 @@ An ordered set of markup elements.
 struct MarkupOrderedSet
 ```
 
-#### Overview
+## Overview
 
 The set ensures all elements have unique `id` values.
 

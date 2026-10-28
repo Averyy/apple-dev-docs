@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may use the microphone.
 - **Name**: `com.apple.security.device.microphone`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and under Hardware select Audio Input.
 

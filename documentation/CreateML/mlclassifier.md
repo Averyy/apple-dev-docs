@@ -19,7 +19,7 @@ enum MLClassifier
 
 - [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 Use an [`MLClassifier`](./mlclassifier.md) to train a general-purpose model to recognize categories.
 

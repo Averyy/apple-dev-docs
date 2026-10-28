@@ -28,7 +28,7 @@ class HKUnit
 
 - [Defining and converting units and quantities](./defining-and-converting-units-and-quantities.md)
 
-#### Overview
+## Overview
 
 The unit class supports most standard SI units (meters, seconds, and grams), SI units with prefixes (centimeters, milliseconds and kilograms) and equivalent non-SI units (feet, minutes, and pounds). HealthKit also supports creating complex units by mathematically combining existing units.
 
@@ -36,7 +36,7 @@ You use units when working with HealthKit quantities. Quantities store both the 
 
 > **Note**: Number formatters that use units (for example, [`EnergyFormatter`](../Foundation/energyformatter.md), [`LengthFormatter`](../Foundation/lengthformatter.md), and [`MassFormatter`](../Foundation/massformatter.md)) use a custom enumeration to specify their units. For example, the [`EnergyFormatter`](../Foundation/energyformatter.md) class uses the [`EnergyFormatter.Unit`](../Foundation/energyformatter/unit.md) enum. The [`HKUnit`](./hkunit.md) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
 
-##### Using Units
+### Using Units
 
 As with many HealthKit classes, don’t subclass the [`HKUnit`](./hkunit.md) class.
 

@@ -21,7 +21,7 @@ Accesses the element at the specified index in the `MutableSpan`.
 subscript(unchecked position: MutableSpan<Element>.Index) -> Element { borrow mutate }
 ```
 
-#### Overview
+## Overview
 
 This subscript does not validate `position`; this is an unsafe operation.
 

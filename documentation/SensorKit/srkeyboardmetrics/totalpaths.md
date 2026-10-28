@@ -21,7 +21,7 @@ var totalPaths: Int { get }
 @property (readonly) NSInteger totalPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Each path refers to one word the user enters by using QuickPath.
 

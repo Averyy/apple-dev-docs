@@ -17,11 +17,11 @@ Converts the size from the view’s coordinate system to the base coordinate sys
 - (NSSize) convertSizeToBase:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The size converted to the base coordinate system.
 
-#### Discussion
+## Discussion
 
 For more information, see [View Coordinates](../view-coordinates.md).
 

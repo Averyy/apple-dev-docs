@@ -29,7 +29,7 @@ nonisolated
 init<P>(make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void, update: (@MainActor (inout RealityViewContent) -> Void)? = nil, @ViewBuilder placeholder: () -> P) where Content == RealityViewContent.Body<P>, P : View
 ```
 
-#### Discussion
+## Discussion
 
 For example, your app can asynchronously load an [`Entity`](../entity.md) from a `.reality` or `.usdz` file, and display a [`ProgressView`](../../SwiftUI/progressview.md) while the system loads the file:
 

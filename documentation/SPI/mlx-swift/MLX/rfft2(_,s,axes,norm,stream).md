@@ -17,15 +17,15 @@ Two dimensional real discrete Fourier Transform.
 func rfft2(_ array: MLXArray, s: (some Collection<Int>)? = [Int]?.none, axes: (some Collection<Int>)? = [-2, -1], norm: FFTNorm = .backward, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 DFT of the input along the given axes.  The output data type will be complex.
 
-#### Discussion
+## Discussion
 
 The output has the same shape as the input except along the dimensions in `axes` in which case it has sizes from `s`. The last axis in `axes` is treated as the real axis and will have size `s[s.lastIndex] / 2 + 1`.
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](./mlxfft.md)
 

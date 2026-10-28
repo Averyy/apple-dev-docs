@@ -25,11 +25,11 @@ func subpathsOfDirectory(atPath path: String) throws -> [String]
 - (NSArray<NSString *> *) subpathsOfDirectoryAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings, each containing the path of an item in the directory specified by `path`. When using Objective-C, returns `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method recurses the specified directory and its subdirectories. The method skips the “`.`” and “`..`” directories at each level of the recursion.
 

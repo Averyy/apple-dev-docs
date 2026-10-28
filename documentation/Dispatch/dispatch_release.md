@@ -21,7 +21,7 @@ Decrements the reference count (the retain count) of a dispatch object.
 extern void dispatch_release(dispatch_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch object is asynchronously deallocated once all references to it are released (the reference count becomes zero). When your application no longer needs a dispatch object that it has created, it should call this function to release its interest in the object and allow its memory to be deallocated when appropriate. Note that GCD does not guarantee that a given client has the last or only reference to a given object.
 

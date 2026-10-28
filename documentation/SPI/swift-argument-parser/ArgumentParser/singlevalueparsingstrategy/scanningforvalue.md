@@ -17,7 +17,7 @@ Parse the next input, as long as that input can’t be interpreted as an option 
 static var scanningForValue: SingleValueParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This will skip other options and *read ahead* in the input to find the next available value. This may be *unexpected* for users. Use with caution.
 

@@ -17,7 +17,7 @@
 + (instancetype) credentialWithCode:(NSString *) code;
 ```
 
-#### Discussion
+## Discussion
 
 Creates and initializes a new ASOneTimeCodeCredential object.
 

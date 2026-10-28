@@ -20,7 +20,7 @@ A notification that a write operation begins working on a document.
 static let PDFDocumentDidBeginWrite: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself.
 

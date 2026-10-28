@@ -24,7 +24,7 @@ class func unitVector(for vector: VNVector) -> VNVector
 + (VNVector *) unitVectorForVector:(VNVector *) vector;
 ```
 
-#### Return Value
+## Return Value
 
 The unit vector.
 

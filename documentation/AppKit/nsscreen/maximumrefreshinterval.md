@@ -19,7 +19,7 @@ var maximumRefreshInterval: TimeInterval { get }
 @property (readonly) NSTimeInterval maximumRefreshInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This interval represents the maximum amount of time (in seconds) your app has to generate new frames. It corresponds to the lowest refresh rate of the display.
 

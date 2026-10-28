@@ -15,7 +15,7 @@ An event that indicates that playback has stalled.
 attribute  playbackDidStall;
 ```
 
-#### Discussion
+## Discussion
 
 The listener is passed an event object with the following attributes:
 

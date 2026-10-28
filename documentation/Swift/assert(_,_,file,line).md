@@ -21,7 +21,7 @@ Performs a traditional C-style assert with an optional message.
 func assert(_ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = String(), file: StaticString = #file, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function for internal consistency checks that are active during testing but do not impact performance of shipping code. To check for invalid usage in Release builds, see `precondition(_:_:file:line:)`.
 

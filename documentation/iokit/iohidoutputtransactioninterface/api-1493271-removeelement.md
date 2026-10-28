@@ -16,11 +16,11 @@ Removes an element from the transaction.
 IOReturn (*removeElement)(void *self, IOHIDElementCookie elementCookie);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 If the element has not been added to transaction, an error will be returned.
 

@@ -15,11 +15,11 @@ The system calls this virtual method when the stream active state changes.
 virtual kern_return_t HandleChangeStreamIsActive(bool in_is_active);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success the stream’s active state should be changed.
 
-#### Discussion
+## Discussion
 
 The default implementation calls `SetStreamIsActive()` and returns `kIOReturnSuccess`. Subclass and override this method to handle changing stream active state and return `kIOReturnSuccess` upon success.
 

@@ -19,7 +19,7 @@ func setIconImage(_ image: NSImage!)
 - (void) setIconImage:(NSImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 The panel icon should be set to the icon of the calling application. If not set, the panel will try to load up the correct icon for the target device, and will default to the icon of the running application on fail.
 

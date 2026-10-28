@@ -27,7 +27,7 @@ Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 - [Adding parameters to an app intent](../adding-parameters-to-an-app-intent.md)
 
-#### Return Value
+## Return Value
 
 An error that should be thrown within the intent `perform()` method.
 

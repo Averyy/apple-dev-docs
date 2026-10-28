@@ -21,11 +21,11 @@ Chart content that represents a function or a collection of data using the area 
 struct AreaPlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `AreaPlot` when you want to visualize data in the same way as with [`AreaMark`](./areamark.md), but you want to plot a function or visualize an entire data collection with a single plot.
 
-##### Plotting areas from a collection
+### Plotting areas from a collection
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -42,7 +42,7 @@ Chart {
 }
 ```
 
-##### Plotting functions
+### Plotting functions
 
 In addition to providing data points, you can provide a function to an `AreaPlot` to plot a function. For example, you can plot the area between y = x and y = x^2 - 1 with:
 

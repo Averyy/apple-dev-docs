@@ -25,11 +25,11 @@ typealias CGDataConsumerPutBytesCallback = (UnsafeMutableRawPointer?, UnsafeRawP
 typedef unsigned long (*)(void *, const void *, unsigned long) CGDataConsumerPutBytesCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied. If no more data can be written to the consumer, you should return `0`.
 
-#### Discussion
+## Discussion
 
 When Core Graphics is ready to send data to the consumer, your function is called. It should copy the specified number of bytes from `buffer` into some resource under your control—for example, a file.
 

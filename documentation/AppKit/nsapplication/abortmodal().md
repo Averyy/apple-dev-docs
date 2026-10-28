@@ -19,7 +19,7 @@ func abortModal()
 - (void) abortModal;
 ```
 
-#### Discussion
+## Discussion
 
 When stopped with this method, [`runModal(for:)`](./runmodal%28for%29.md) and [`runModalSession(_:)`](./runmodalsession%28_%29.md) return `NSModalResponseAbort`.
 

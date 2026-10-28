@@ -23,7 +23,7 @@ var contentVersion: Data { get }
 @property (nonatomic, readonly) NSData * contentVersion;
 ```
 
-#### Discussion
+## Discussion
 
 If the system stores a local copy of an item’s content, it downloads a new copy when the [`contentVersion`](./contentversion.md) changes. The content version also invalidates the system’s thumbnail cache.
 

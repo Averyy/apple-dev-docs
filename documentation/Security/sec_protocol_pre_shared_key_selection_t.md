@@ -23,7 +23,7 @@ typealias sec_protocol_pre_shared_key_selection_t = (sec_protocol_metadata_t, di
 typedef void (^)(NSObject<OS_sec_protocol_metadata> *, NSObject<OS_dispatch_data> *, void (^)(NSObject<OS_dispatch_data> *)) sec_protocol_pre_shared_key_selection_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when the client must choose a PSK identity given a hint from its peer.
 

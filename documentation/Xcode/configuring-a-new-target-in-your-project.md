@@ -5,7 +5,7 @@
 
 Configure your project to build a new product, and add the code and resources the product requires.
 
-#### Overview
+## Overview
 
 A target specifies a product to build, such as an app, framework, app extension, or unit test. A project can contain multiple targets that represent related parts of a single product. For example, a project might contain separate targets for an app, a private framework, an app extension, and a suite of tests.
 
@@ -17,7 +17,7 @@ The editor area displays the current project and target information. To view gen
 
 To view settings of the project, select the project in the sidebar above the list of targets. Changes you make to a target affect that target only, whereas changes you make to the project affect all targets.
 
-##### Add a new target to your project
+### Add a new target to your project
 
 Add new targets to create separate products in your project, augment an existing app using app extensions, or factor code into a private framework. You can also add new apps, system extensions, test suites, and other types of targets to your project.
 
@@ -34,7 +34,7 @@ To add a new target:
 
 You can embed some types of targets directly into the bundle of an existing app. This option simplifies the setup process for frameworks, app extensions, and other products that you plan to ship inside your app. When you embed a target, Xcode configures the necessary project settings to build the target and copy it into your app. Xcode also creates the necessary dependencies to ensure that the targets build in the proper order.
 
-##### Add source files and other content to a target
+### Add source files and other content to a target
 
 Use file templates to help you get started quickly developing your app.
 
@@ -48,7 +48,7 @@ To assign an existing file to a new target, select the file in the Project navig
 
 For more information about how to add files to a project, see [Managing files and folders in your Xcode project](./managing-files-and-folders-in-your-xcode-project.md).
 
-##### Configure a dependency between two targets
+### Configure a dependency between two targets
 
 Dependencies tell Xcode the correct order in which to build a set of targets. Xcode builds targets in parallel when it can, but sometimes it must build targets serially.
 

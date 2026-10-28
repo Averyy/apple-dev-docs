@@ -19,7 +19,7 @@ class let mobileMeName: String
 extern NSImageName const NSImageNameMobileMe;
 ```
 
-#### Discussion
+## Discussion
 
 Use of this image is discouraged; instead, use [`networkName`](./networkname.md).
 

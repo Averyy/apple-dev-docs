@@ -29,7 +29,7 @@ optional func complicationDescriptors() async -> [CLKComplicationDescriptor]
 
 - [Declaring complications for your app](../declaring-complications-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 ClockKit calls this method to determine the complications that an app supports. Implement this method to define your app’s complications. For example, a weather app may support different complications for the current condition, temperature, or chance of precipitation.
 

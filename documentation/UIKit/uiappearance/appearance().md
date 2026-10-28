@@ -24,7 +24,7 @@ static func appearance() -> Self
 + (instancetype) appearance;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance proxy for the receiver.
 

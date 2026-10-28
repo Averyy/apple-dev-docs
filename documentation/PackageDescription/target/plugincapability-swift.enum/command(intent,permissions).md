@@ -15,7 +15,7 @@ Specifies that the plug-in provides a user command capability.
 case command(intent: PluginCommandIntent, permissions: [PluginPermission] = [])
 ```
 
-#### Discussion
+## Discussion
 
 Plug-ins that specify a `command` capability define commands that can run using the SwiftPM command line interface, or in an IDE that supports Swift packages. You can invoke the command manually on one or more targets in a package.
 

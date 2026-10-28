@@ -25,11 +25,11 @@ func CMTimeRangeMakeFromDictionary(_ dictionaryRepresentation: CFDictionary) -> 
 extern CMTimeRange CMTimeRangeMakeFromDictionary(CFDictionaryRef dictionaryRepresentation);
 ```
 
-#### Return Value
+## Return Value
 
 A valid time range structure, or an invalid time range if `dict` doesn’t have the necessary values.
 
-#### Discussion
+## Discussion
 
 This is useful when getting Core Media time ranges from Core Foundation container types. For keys in the dictionary, see [Dictionary Keys](./cmtimerange-dictionary-keys.md).
 

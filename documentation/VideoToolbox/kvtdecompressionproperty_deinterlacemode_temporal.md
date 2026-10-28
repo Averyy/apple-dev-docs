@@ -24,7 +24,7 @@ let kVTDecompressionProperty_DeinterlaceMode_Temporal: CFString
 extern CFStringRef const kVTDecompressionProperty_DeinterlaceMode_Temporal;
 ```
 
-#### Discussion
+## Discussion
 
 Applies a filter that uses a window of multiple frames to generate deinterlaced results, and provides a better result at the expense of a pipeline delay.
 

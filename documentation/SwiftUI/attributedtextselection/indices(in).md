@@ -21,11 +21,11 @@ The current text selection indices.
 func indices(in text: AttributedString) -> AttributedTextSelection.Indices
 ```
 
-#### Return Value
+## Return Value
 
 The current selection if valid for the given `text` or a valid fallback index otherwise.
 
-#### Discussion
+## Discussion
 
 Always make sure to keep selection and text synchronized. Use `Foundation/AttributedString/transform(updating:body:)`, `Foundation/AttributedString/transformAttributes(in:body:)` or `Foundation/AttributedString/replaceSelection(_:with:)` to do so automatically.
 

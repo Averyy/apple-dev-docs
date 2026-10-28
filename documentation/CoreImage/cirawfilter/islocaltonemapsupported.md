@@ -24,7 +24,7 @@ var isLocalToneMapSupported: Bool { get }
 @property (readonly, getter=isLocalToneMapSupported) BOOL localToneMapSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of local tone curve to apply to the image by setting [`localToneMapAmount`](./localtonemapamount.md).
 

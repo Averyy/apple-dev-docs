@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `false` when your app can’t or won’t respond to the action callbacks to avoid non-interactive buttons or UI elements.
 

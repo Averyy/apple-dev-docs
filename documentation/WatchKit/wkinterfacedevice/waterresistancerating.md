@@ -19,7 +19,7 @@ var waterResistanceRating: WKWaterResistanceRating { get }
 @property (nonatomic, readonly) WKWaterResistanceRating waterResistanceRating;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible water resistance ratings, see [`WKWaterResistanceRating`](../wkwaterresistancerating.md).
 

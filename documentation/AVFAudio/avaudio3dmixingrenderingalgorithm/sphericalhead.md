@@ -25,7 +25,7 @@ case sphericalHead
 AVAudio3DMixingRenderingAlgorithmSphericalHead
 ```
 
-#### Discussion
+## Discussion
 
 This is slightly less CPU-intensive than [`AVAudio3DMixingRenderingAlgorithm.HRTF`](./hrtf.md).
 

@@ -21,7 +21,7 @@ func pushConfigurationViewController(_ viewController: UIViewController!)
 - (void) pushConfigurationViewController:(UIViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, this method is called in the tap handler for a configuration item. A user selects a configuration item from the list displayed in the compose view and the associated configuration view controller is displayed. Only one configuration view controller can be visible at a time.
 

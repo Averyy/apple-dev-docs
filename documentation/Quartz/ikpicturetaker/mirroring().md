@@ -19,7 +19,7 @@ func mirroring() -> Bool
 - (BOOL) mirroring;
 ```
 
-#### Return Value
+## Return Value
 
 Returns YES if video mirroring is enabled, NO otherwise.
 

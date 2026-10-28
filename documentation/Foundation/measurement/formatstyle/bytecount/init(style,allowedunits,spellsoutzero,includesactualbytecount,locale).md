@@ -21,7 +21,7 @@ Initializes a byte count format style.
 init(style: Measurement<UnitType>.FormatStyle.ByteCount.Style, allowedUnits: Measurement<UnitType>.FormatStyle.ByteCount.Units, spellsOutZero: Bool, includesActualByteCount: Bool, locale: Locale)
 ```
 
-#### Discussion
+## Discussion
 
 In situations that infer the [`Measurement.FormatStyle.ByteCount`](../bytecount.md) type, you can call `Measurement/FormatStyle/ByteCount/byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)` instead of explicitly using this initializer. This is the case when you call [`formatted()`](../../formatted%28%29.md) on a [`Measurement`](../../../measurement.md) whose unit type is [`UnitInformationStorage`](../../../unitinformationstorage.md).
 

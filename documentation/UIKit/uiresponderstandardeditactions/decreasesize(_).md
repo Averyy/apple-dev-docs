@@ -23,7 +23,7 @@ optional func decreaseSize(_ sender: Any?)
 - (void) decreaseSize:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to decrease the size of the selected text or other content. You are responsible for defining the magnitude of the change.
 

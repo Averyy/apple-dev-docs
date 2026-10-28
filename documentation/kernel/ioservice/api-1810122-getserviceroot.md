@@ -12,11 +12,11 @@ static IOService * getServiceRoot(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IOService instance at the root of the service plane. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method provides an accessor to the root of the service plane for the computer.
 

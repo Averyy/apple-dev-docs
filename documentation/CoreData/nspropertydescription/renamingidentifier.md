@@ -25,7 +25,7 @@ var renamingIdentifier: String? { get set }
 @property (copy, nullable) NSString * renamingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This is used to resolve naming conflicts between models. When creating an entity mapping between entities in two managed object models, a source entity property and a destination entity property that share the same identifier indicate that a property mapping should be configured to migrate from the source to the destination. If unset, the identifier will return the property’s name.
 

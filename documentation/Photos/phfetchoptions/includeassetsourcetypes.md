@@ -24,7 +24,7 @@ var includeAssetSourceTypes: PHAssetSourceType { get set }
 @property (nonatomic, assign) PHAssetSourceType includeAssetSourceTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Asset source types identify the means by which an asset enters the Photos library, and affect the possible actions you can perform on an asset. For example, assets synced from iTunes cannot be edited or deleted.
 

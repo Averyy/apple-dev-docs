@@ -19,7 +19,7 @@ func SSCenteredRectInRect(_ innerRect: NSRect, _ outerRect: NSRect) -> NSRect
 static NSRect SSCenteredRectInRect(NSRect innerRect, NSRect outerRect);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s the same size as `innerRect`, but is centered inside `outerRect`.
 

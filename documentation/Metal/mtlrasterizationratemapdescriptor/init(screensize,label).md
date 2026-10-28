@@ -20,7 +20,7 @@ A convenience initializer that creates a rate map descriptor with a given size a
 convenience init(screenSize: MTLSize, label: String? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object whose [`screenSize`](./screensize.md) and [`label`](./label.md) properties are set to the provided values. You need to add at least one layer rate map to the descriptor.
 

@@ -22,11 +22,11 @@ nonisolated
 func overlay<S, T>(_ style: S, in shape: T, fillStyle: FillStyle = FillStyle()) -> some View where S : ShapeStyle, T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified shape drawn in front of it.
 
-#### Discussion
+## Discussion
 
 Use this modifier to layer a type that conforms to the [`Shape`](../shape.md) protocol — like a [`Rectangle`](../rectangle.md), [`Circle`](../circle.md), or [`Capsule`](../capsule.md) — in front of a view. Specify a [`ShapeStyle`](../shapestyle.md) that’s used to fill the shape. For example, you can overlay the outline of one rectangle in front of another:
 

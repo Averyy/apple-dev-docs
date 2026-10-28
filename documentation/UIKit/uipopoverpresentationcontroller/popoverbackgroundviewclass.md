@@ -22,7 +22,7 @@ var popoverBackgroundViewClass: (any UIPopoverBackgroundViewMethods.Type)? { get
 @property (nonatomic, strong, readwrite, nullable) Class<UIPopoverBackgroundViewMethods> * popoverBackgroundViewClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which causes the presentation controller to use the default popover appearance. Setting this property to a value other than `nil` causes the presentation controller to use the specified class to draw the popover’s background content. The class you specify must be a subclass of [`UIPopoverBackgroundView`](../uipopoverbackgroundview.md).
 

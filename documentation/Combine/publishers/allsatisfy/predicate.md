@@ -21,7 +21,7 @@ A closure that evaluates each received element.
 let predicate: (Upstream.Output) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Return `true` to continue, or `false` to cancel the upstream and finish.
 

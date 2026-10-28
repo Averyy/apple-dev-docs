@@ -19,7 +19,7 @@ class let applicationIconName: String
 extern NSImageName const NSImageNameApplicationIcon;
 ```
 
-#### Discussion
+## Discussion
 
 On versions of macOS prior to v10.6, you can use the string `@"NSApplicationIcon"`.
 

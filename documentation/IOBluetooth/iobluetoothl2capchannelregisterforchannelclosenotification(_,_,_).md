@@ -19,11 +19,11 @@ func IOBluetoothL2CAPChannelRegisterForChannelCloseNotification(_ channel: IOBlu
 IOBluetoothUserNotificationRefIOBluetoothL2CAPChannelRegisterForChannelCloseNotification(IOBluetoothL2CAPChannelRef channel, IOBluetoothUserNotificationCallback callback, void *inRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothUserNotificationRef representing the outstanding L2CAP channel close notification. To unregister the notification, call IOBluetoothUserNotificationUnregister() with the returned IOBluetoothUserNotificationRef. If an error is encountered creating the notification, NULL is returned. The returned IOBluetoothUserNotificationRef will be valid for as long as the notification is registered. It is not necessary to retain the result. Once the notification is unregistered, it will no longer be valid.
 
-#### Discussion
+## Discussion
 
 The given callback will be called when the L2CAP channel is closed.
 

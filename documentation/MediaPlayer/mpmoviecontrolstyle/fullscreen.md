@@ -21,7 +21,7 @@ case fullscreen
 MPMovieControlStyleFullscreen
 ```
 
-#### Discussion
+## Discussion
 
 Controls for fullscreen playback are displayed. The controls include a start/pause button, a scrubber bar, forward and reverse seeking buttons, a button for toggling between fullscreen and embedded display modes, a button for toggling the aspect fill mode, and a Done button. Tapping the done button pauses the video and exits fullscreen mode.
 

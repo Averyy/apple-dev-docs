@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, or false otherwise.
 
-#### Overview
+## Overview
 
 IOHIDInterface will allocate resources. Before returning true to indicate success, registerService() is called to trigger client matching.
 

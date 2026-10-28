@@ -21,7 +21,7 @@ func lockFocusIfCanDraw() -> Bool
 - (BOOL) lockFocusIfCanDraw;
 ```
 
-#### Discussion
+## Discussion
 
 Your thread will not be preempted by other threads between the `canDraw` method and the lock. This method fails to lock focus and returns [`false`](../../Swift/false.md), when the view is hidden and the current context is drawing to the screen (as opposed to a printing context).
 

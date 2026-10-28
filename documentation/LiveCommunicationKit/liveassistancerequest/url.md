@@ -19,7 +19,7 @@ The FaceTime-generated URL for this request.
 let url: URL
 ```
 
-#### Discussion
+## Discussion
 
 Forward this URL to your backend in your implementations of [`prepareAssistanceRequest(_:)`](../liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](../liveassistanceextension/resumerequest%28_%29.md). When opened, this URL matches an interpreter and joins the call.
 

@@ -5,7 +5,7 @@
 
 Learn the basic Apple News Format container concepts required for the three advanced tutorials.
 
-#### Overview
+## Overview
 
 Most of the design and layout effects in this tutorial require you to create hierarchies of nested components. In Apple News Format JSON, a container is a component that can hold other components. Container components include four types: `chapter`, `header`, `section`, and `container`.
 

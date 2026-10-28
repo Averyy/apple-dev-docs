@@ -23,7 +23,7 @@ var dispatchQueue: dispatch_queue_t { get set }
 @property (nonatomic, strong, readwrite) dispatch_queue_t dispatchQueue;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

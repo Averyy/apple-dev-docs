@@ -10,11 +10,11 @@ Expose an existing path as its own file system by using the FSKit framework.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 You can use the FSKit framework to implement any kind of file system, whether based on an existing storage device or as an abstraction of the contents of a URL. To offer a simple implementation of FSKit, this sample code project serves as a passthrough file system, one which passes its file-related API calls to the underlying file system on the device. The `PassthroughFS` example reads from an existing path on your current file system and exposes it as a new file system.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To use the sample file system, do the following:
 
@@ -25,7 +25,7 @@ To use the sample file system, do the following:
 5. In Terminal, use the `mount` command to mount an arbitrary directory as the source for the passthrough file system. For example, `mount -t passthrough ~/Documents ~/passthrough-fs` tells the extension to present the contents of your Documents directory as another file system, mounted at `passthrough-fs`. The `-t passthrough` flag tells `mount` that the type of the file system is `passthrough`, which sends its requests to the extension.
 6. Examine the contents of the mounted directory with commands like `ls ~/passthrough-fs` to show that the contents of the source directory are indeed mounted at the target location.
 
-##### Create an app and an FSKit extension
+### Create an app and an FSKit extension
 
 To create a file system with FSKit, you create an FSKit app extension. You can do this in Xcode by adding a “File system extension” target to your project, which creates a new target with four files:
 
@@ -36,7 +36,7 @@ To create a file system with FSKit, you create an FSKit app extension. You can d
 
 The sample code project already contains these items; you don’t need to create a new target. Aside from the entitlements file and the information property list, `PassthroughAppEx` defines the app extension, and `PassthroughFileSystem` is the base of the file system implementation.
 
-##### Implement the file system protocols
+### Implement the file system protocols
 
 Most of the functionality of an FSKit file system actually comes from subclassing the [`FSVolume`](./fsvolume.md) class as a custom type, which the [`FSUnaryFileSystem`](./fsunaryfilesystem.md) implementation then instantiates and manages.
 
@@ -97,7 +97,7 @@ public func unloadResource(resource: FSResource, options: FSTaskOptions, replyHa
 }
 ```
 
-##### Implement the volume protocols
+### Implement the volume protocols
 
 The sample code project uses two source files to implement the `PassthroughFSVolume` type: `PassthroughFSVolume.swift` and `PassthroughFSVolume+FSVolumeOperations.swift`. Between these two files, it implements the base [`FSVolume`](./fsvolume.md) protocol along with five protocols that define sets of related operations that a file system volume may provide:
 

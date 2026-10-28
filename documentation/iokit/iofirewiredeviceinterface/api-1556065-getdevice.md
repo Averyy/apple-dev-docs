@@ -16,7 +16,7 @@ Get the IOKit service to which this interface is connected.
 io_object_t (*GetDevice)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an io_object_t corresponding to the device the interface is using
 

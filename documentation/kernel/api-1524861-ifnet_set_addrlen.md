@@ -13,11 +13,11 @@
 errno_t ifnet_set_addrlen(ifnet_t interface, u_int8_t addrlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function is intended to be called by the driver. A kext must not call this function on an interface the kext does not own.
 

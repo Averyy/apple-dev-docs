@@ -5,7 +5,7 @@
 
 The basic data unit in a QuickTime file is the atom.
 
-#### Overview
+## Overview
 
 The basic data unit in a QuickTime file is the atom. Each atom contains size and type fields that precede any other data. The size field indicates the total number of bytes in the atom, including the size and type fields. The type field specifies the type of data stored in the atom and, by implication, the format of that data. In some cases, the size and type fields are followed by a version field and a flags field. An atom with these version and flags fields is sometimes called a *full atom*.
 
@@ -21,7 +21,7 @@ An atom that does not contain other atoms is called a *leaf atom*, and typically
 
 The format of the data stored within a given atom cannot always be determined by the type field of the atom alone; the type of the parent atom may also be significant. In other words, a given atom type can contain different kinds of information depending on its parent atom. For example, the profile atom inside a movie atom contains information about the movie, while the profile atom inside a track atom contains information about the track. This means that all QuickTime file readers must take into consideration not only the atom type, but also the atom’s containment hierarchy.
 
-#### Atom layout
+## Atom layout
 
 The following figure shows the layout of a sample atom. Each atom carries its own size and type information as well as its data. Leaf atoms contain data, usually in the form of tables.
 
@@ -31,7 +31,7 @@ A leaf atom, as shown in the preceeding figure, simply contains a series of data
 
 Atoms within container atoms do not generally have to be in any particular order, unless such an order is specifically called out in this documentation. One such example is the handler description atom, which must come before the data being handled. For example, a media handler description atom must come before a media information atom, and a data handler description atom must come before a data information atom.
 
-#### Atom structure
+## Atom structure
 
 Atoms consist of a header, followed by atom data. The header contains the atom’s size and type fields, giving the size of the atom in bytes and its type. It may also contain an extended size field, giving the size of a large atom as a 64-bit integer. If an extended size field is present, the size field is set to 1. The actual size of an atom cannot be less than 8 bytes (the minimum size of the type and size fields).
 

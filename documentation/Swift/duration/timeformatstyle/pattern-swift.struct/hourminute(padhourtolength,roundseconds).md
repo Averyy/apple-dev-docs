@@ -21,7 +21,7 @@ Returns a pattern to format a duration with hours and minutes only, with the giv
 static func hourMinute(padHourToLength: Int, roundSeconds: FloatingPointRoundingRule = .toNearestOrEven) -> Duration.TimeFormatStyle.Pattern
 ```
 
-#### Return Value
+## Return Value
 
 A [`Duration.TimeFormatStyle.Pattern`](../pattern-swift.struct.md) that formats a duration with hours and minutes only, using the given unit configurations.
 

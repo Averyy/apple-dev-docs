@@ -25,11 +25,11 @@ init(asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping @Sendable (
 + (AVVideoComposition *) videoCompositionWithAsset:(AVAsset *) asset applyingCIFiltersWithHandler:(void (^)(AVAsynchronousCIImageFilteringRequest *request)) applier;
 ```
 
-#### Return Value
+## Return Value
 
 A new video composition object.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 16, tvOS 16, and macOS 13 or later. Create a video composition asynchronously using [`videoComposition(with:applyingCIFiltersWithHandler:completionHandler:)`](./videocomposition%28with,applyingcifilterswithhandler,completionhandler%29.md) instead.
 

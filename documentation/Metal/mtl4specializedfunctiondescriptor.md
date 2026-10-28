@@ -24,7 +24,7 @@ class MTL4SpecializedFunctionDescriptor
 @interface MTL4SpecializedFunctionDescriptor : MTL4FunctionDescriptor
 ```
 
-#### Overview
+## Overview
 
 You can pass an instance of this class to any methods that accept a [`MTL4FunctionDescriptor`](./mtl4functiondescriptor.md) parameter to provide extra configuration, such as function constants or a name.
 

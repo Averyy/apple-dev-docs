@@ -25,7 +25,7 @@ var preferredMetalDevice: (any MTLDevice)? { get set }
 @property (nonatomic, readwrite, nullable) id<MTLDevice> preferredMetalDevice;
 ```
 
-#### Discussion
+## Discussion
 
 If [`preferredMetalDevice`](./preferredmetaldevice.md) is `nil`, the default value, Core ML chooses a metal device for you.
 

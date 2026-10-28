@@ -23,7 +23,7 @@ func locationForCharacter(at index: Int) -> CGPoint
 - (CGPoint) locationForCharacterAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGPoint`](../../CoreFoundation/cgpoint.md) that’s on the upstream edge of the glyph. It’s in the coordinate system relative to the line fragment origin.
 

@@ -21,7 +21,7 @@ A type that represents data in AVI movie format.
 static var avi: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.avi`.
 

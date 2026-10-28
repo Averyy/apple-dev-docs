@@ -24,11 +24,11 @@ func shouldUpdateFocus(in context: UIFocusUpdateContext) -> Bool
 - (BOOL) shouldUpdateFocusInContext:(UIFocusUpdateContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the focus update; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When a focus update is about to occur, the focus engine calls this method on all focus environments that contain either the previously focused view, the next focused view, or both, in ascending order. If any environment returns [`false`](../../Swift/false.md), the update is cancelled. Override this method to prevent the focus from moving to or from certain areas of the screen.
 

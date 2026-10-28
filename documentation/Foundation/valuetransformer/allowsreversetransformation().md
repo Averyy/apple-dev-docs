@@ -25,13 +25,13 @@ class func allowsReverseTransformation() -> Bool
 + (BOOL) allowsReverseTransformation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver supports reverse value transformations, otherwise [`false`](../../Swift/false.md).
 
 The default is [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 Subclasses should override this method to return [`false`](../../Swift/false.md) if they do not support reverse value transformations.
 

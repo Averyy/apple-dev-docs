@@ -20,7 +20,7 @@ func setHostKeyCommands(_ newCommands: [[AnyHashable : Any]]!)
 - (void) setHostKeyCommands:(NSArray<NSDictionary *> *) newCommands;
 ```
 
-#### Discussion
+## Discussion
 
 If your plug-in displays its own custom window, you may wish to support the passing of some key presses to the application in order for the application to handle them. This method gives you a mapping from some common functions that plug-ins would like to pass on to the host application to their key commands. This method will be called whenever the user changes the key bindings for the application.
 

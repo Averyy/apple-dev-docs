@@ -22,11 +22,11 @@ nonisolated
 func allowsTightening(_ flag: Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can compress the space between characters when necessary to fit text in a line.
 
-#### Discussion
+## Discussion
 
 Use `allowsTightening(_:)` to enable the compression of inter-character spacing of text in a view to try to fit the text in the view’s bounds.
 

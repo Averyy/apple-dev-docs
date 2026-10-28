@@ -13,7 +13,7 @@
 MBUF_CSUM_REQ_TCPIPV6 = 0x0020
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the TCP checksum for IPv6 has not been calculated yet.
 

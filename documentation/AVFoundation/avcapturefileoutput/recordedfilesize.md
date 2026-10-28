@@ -23,7 +23,7 @@ var recordedFileSize: Int64 { get }
 @property (nonatomic, readonly) int64_t recordedFileSize;
 ```
 
-#### Discussion
+## Discussion
 
 If a recording is in progress, this property returns the size in bytes of the data recorded so far.
 

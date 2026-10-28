@@ -21,11 +21,11 @@ Find recurrences of the given date
 func recurrences(of start: Date, in range: Range<Date>? = nil) -> some Sendable & Sequence<Date>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of dates conforming to the recurrence rule, in the given `range`. An empty sequence if the rule doesn’t match any dates.
 
-#### Discussion
+## Discussion
 
 The calculations are implemented according to RFC-5545 and RFC-7529.
 

@@ -29,7 +29,7 @@ var endOfFragmentSampleIndex: Int { get set }
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 Specify [`MTLCounterDontSample`](../mtlcounterdontsample.md) if you don’t want to sample GPU counters at the end of the fragment stage. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
 

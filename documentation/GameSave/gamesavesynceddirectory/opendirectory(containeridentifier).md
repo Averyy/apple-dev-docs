@@ -19,7 +19,7 @@ Requests an instance of the game-save directory.
 class func openDirectory(containerIdentifier: String? = nil) -> GameSaveSyncedDirectory
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing()`](./finishsyncing%28%29.md) method.
 

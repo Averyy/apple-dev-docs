@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Shape is a term to describe the number and size of the dimensions of an N dimension (ND) array.
 
-#### Overview
+## Overview
 
 [`MLXArray`](./mlxarray.md) is an N dimensional array.  The number of dimensions is described by [`ndim`](./mlxarray/ndim.md) and the size of each dimension can be examined with [`dim(_:)`](./mlxarray/dim%28_%29.md) or [`shape`](./mlxarray/shape.md).
 

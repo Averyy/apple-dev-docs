@@ -24,7 +24,7 @@ func onDeactivate(perform action: sending @escaping @isolated(any) () async -> V
 
 - [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Discussion
 
 A profile becomes inactive when it is no longer included in the session’s resolved configuration after previously being active. Use this to tear down state tied to the profile’s lifecycle:
 

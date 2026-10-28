@@ -21,7 +21,7 @@ Sets the destination pixel as the product of the corresponding source pixels.
 case multiply
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows the result of compositing using the multiply blend mode:
 

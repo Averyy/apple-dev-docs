@@ -27,7 +27,7 @@ func CFStreamCreatePairWithSocketToHost(_ alloc: CFAllocator!, _ host: CFString!
 extern void CFStreamCreatePairWithSocketToHost(CFAllocatorRef alloc, CFStringRef host, UInt32 port, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream);
 ```
 
-#### Discussion
+## Discussion
 
 The streams do not create a socket, resolve the hostname, or connect to the remote host until you open one of the streams.
 

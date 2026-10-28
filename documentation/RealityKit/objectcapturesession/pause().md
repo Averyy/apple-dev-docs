@@ -17,7 +17,7 @@ Pauses the automatic capture and other resource-intense algorithms.
 func pause()
 ```
 
-#### Discussion
+## Discussion
 
 Call this when object capture view is not visible, such as when a help screen is shown.
 

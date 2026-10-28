@@ -21,7 +21,7 @@ class SRElectrocardiogramSample
 @interface SRElectrocardiogramSample : NSObject
 ```
 
-#### Overview
+## Overview
 
 The electrocardiogram (ECG) sensor provides an array of these objects as its [`sample`](./srfetchresult/sample.md) type.
 

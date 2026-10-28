@@ -23,7 +23,7 @@ var transportBarCustomMenuItems: [UIMenuElement] { get set }
 
 - [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
-#### Discussion
+## Discussion
 
 Use this property to display custom pop-up menus in transport bar. This property only supports menu elements of type [`UIAction`](../../UIKit/uiaction.md) and [`UIMenu`](../../UIKit/uimenu.md), and supports displaying inline one level of submenus.
 

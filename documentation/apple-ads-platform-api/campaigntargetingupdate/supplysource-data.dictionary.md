@@ -15,7 +15,7 @@ The supply source where an existing campaign’s ads are eligible to appear.
 object CampaignTargetingUpdate.SupplySource
 ```
 
-#### Discussion
+## Discussion
 
 The `supplySource` field is fixed at creation and can’t be changed by update. Including this field in an update request is unsupported, even when the value matches the campaign’s current `supplySource`. Valid values:
 

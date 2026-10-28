@@ -16,7 +16,7 @@ An Int containing the number of frames of latency in the stream.
 var latency: Int { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Note that the owning device may have additional latency so it should be queried as well. If both the device and the stream say they have latency, then the total latency for the stream is the device latency summed with the stream latency.
 

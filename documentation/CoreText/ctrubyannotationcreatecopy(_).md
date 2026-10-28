@@ -25,7 +25,7 @@ func CTRubyAnnotationCreateCopy(_ rubyAnnotation: CTRubyAnnotation) -> CTRubyAnn
 extern CTRubyAnnotationRefCTRubyAnnotationCreateCopy(CTRubyAnnotationRef rubyAnnotation);
 ```
 
-#### Return Value
+## Return Value
 
 A valid reference to an immutable [`CTRubyAnnotation`](./ctrubyannotation.md) object that’s a copy of `rubyAnnotation`, if the `rubyAnnotation` object is valid.
 

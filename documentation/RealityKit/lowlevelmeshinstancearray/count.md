@@ -18,7 +18,7 @@ The number of instance slots in this array.
 final var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Represents the total capacity allocated at creation time; some slots may be unoccupied. Use `setMeshInstance(_:index:)` to populate slots and the `subscript` to check occupancy.
 

@@ -25,7 +25,7 @@ var currentTime: CMTime { get }
 @property (readonly) CMTime currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value doesn’t change as time progresses.
 

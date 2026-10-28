@@ -34,7 +34,7 @@ var serviceType: String { get }
 @property (atomic, readonly) NSString * serviceType;
 ```
 
-#### Discussion
+## Discussion
 
 You set this property’s value when you initialize the object. It cannot be changed later.
 

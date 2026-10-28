@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 To develop apps for iOS & iPadOS 14.7, build your apps against the iOS 14.5 SDK or later. The SDK comes bundled with Xcode 12.5.1. For information on the compatibility requirements for Xcode 12.5.1, see [Xcode 12.5.1 Release Notes](../Xcode-Release-Notes/xcode-12_5_1-release-notes.md).
 
-##### Battery Health
+### Battery Health
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Restored battery service messages that may have disappeared after reboot on some iPhone 11 models. (78844328, 79351111)
 
-##### SKAdNetwork
+### SKAdNetwork
 
-###### Known Issues
+#### Known Issues
 
 - Devices with the [`SKAdNetwork`](../StoreKit/skadnetwork.md) developer profile installed running iOS & iPadOS 14.7 beta 3 and later can send postbacks through a manually configured HTTP proxy. By using the proxy, you can monitor the traffic between your device and the network, including SKAdNetwork postbacks, see [Testing ad attributions with a downloaded profile](../StoreKit/testing-ad-attributions-with-a-downloaded-profile.md). (77851124)
 

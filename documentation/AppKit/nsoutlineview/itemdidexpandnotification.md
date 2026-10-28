@@ -19,7 +19,7 @@ class let itemDidExpandNotification: NSNotification.Name
 extern NSNotificationName NSOutlineViewItemDidExpandNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSOutlineView` object in which an item was expanded. The `userInfo` dictionary contains the following information:
 

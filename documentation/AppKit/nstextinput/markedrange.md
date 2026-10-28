@@ -15,11 +15,11 @@ Returns the range of the marked text.
 - (NSRange) markedRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of marked text.
 
-#### Discussion
+## Discussion
 
 The returned range measures from the start of the receiver’s text storage. The return value’s `location` is `NSNotFound`, and its `length` is 0 if and only if [`hasMarkedText`](./hasmarkedtext.md) returns [`false`](../../Swift/false.md).
 

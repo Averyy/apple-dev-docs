@@ -19,7 +19,7 @@ optional var metalDeviceRegistryID: UInt64 { get set }
 @property (nonatomic) uint64_t metalDeviceRegistryID;
 ```
 
-#### Discussion
+## Discussion
 
 This optional property requests that [`MERAWProcessor`](../merawprocessor.md) use `MTLDevice` corresponding to this ID for any Metal-based processing. This is optional and doesn’t need to be implemented if the processor does not use Metal.
 

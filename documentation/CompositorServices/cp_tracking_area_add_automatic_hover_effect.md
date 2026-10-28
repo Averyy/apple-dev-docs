@@ -16,11 +16,11 @@ Returns the hover effect opaque object for the tracking area for this frame.
 cp_hover_effect_tcp_tracking_area_add_automatic_hover_effect(cp_tracking_area_t tracking_area);
 ```
 
-#### Return Value
+## Return Value
 
 The hover effect for the tracking area.
 
-#### Discussion
+## Discussion
 
 The hover effect contains information used to render the hover effect using the tracking area textures and gaze once application render pass has completed. Can only create 1 hover effect per-tracking area, to destroy and disable the hover effect see `cp_hover_effect_destroy`
 

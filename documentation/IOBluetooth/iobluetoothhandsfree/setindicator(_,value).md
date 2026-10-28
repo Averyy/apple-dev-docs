@@ -19,7 +19,7 @@ func setIndicator(_ indicatorName: String!, value indicatorValue: Int32)
 - (void) setIndicator:(NSString *) indicatorName value:(int) indicatorValue;
 ```
 
-#### Discussion
+## Discussion
 
 Sets an indicator’s value.
 

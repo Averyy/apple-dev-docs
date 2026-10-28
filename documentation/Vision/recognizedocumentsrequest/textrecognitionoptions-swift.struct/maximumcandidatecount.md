@@ -20,7 +20,7 @@ The maximum number of text candidates to return.
 var maximumCandidateCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 There are different variations of this candiate count, the default value is `3`, and the maximum value is `10`.
 

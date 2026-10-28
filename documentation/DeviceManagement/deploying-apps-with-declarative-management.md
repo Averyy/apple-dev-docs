@@ -4,7 +4,7 @@
 
 Use declarative app configurations to deploy managed apps to devices.
 
-#### Overview
+## Overview
 
 Device management services can install, manage, update, configure, and remove apps using the [`AppManaged`](./appmanaged.md) configuration. Devices can report managed app status using the [`StatusAppManagedList`](./statusappmanagedlist.md) status item.
 

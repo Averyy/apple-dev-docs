@@ -3,7 +3,7 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### Overview
+## Overview
 
 | Animated GIF | Description |
 | --- | --- |

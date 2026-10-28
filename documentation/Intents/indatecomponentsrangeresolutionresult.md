@@ -23,7 +23,7 @@ class INDateComponentsRangeResolutionResult
 @interface INDateComponentsRangeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INDateComponentsRangeResolutionResult`](./indatecomponentsrangeresolutionresult.md) object is what you return when resolving parameters containing an [`INDateComponentsRange`](./indatecomponentsrange.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

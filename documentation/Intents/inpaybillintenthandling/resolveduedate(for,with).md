@@ -29,7 +29,7 @@ optional func resolveDueDate(for intent: INPayBillIntent) async -> INDateCompone
 - (void) resolveDueDateForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the due date of the bill. The due date is usually provided by the bill payee and reflects the date after which the institution may apply late fees. If the intent doesn’t contain the due date, retrieve the due date from your own internal records and return it as part of your successful resolution. Providing the due date is always encouraged because it helps the user determine the date on which to schedule payment.
 

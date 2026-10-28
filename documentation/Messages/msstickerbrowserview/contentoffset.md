@@ -21,7 +21,7 @@ var contentOffset: CGPoint { get set }
 @property (nonatomic, assign, readwrite) CGPoint contentOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Positive `x` values shift the content to the left. Positive `y` values shift the content upward. The default value is [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 

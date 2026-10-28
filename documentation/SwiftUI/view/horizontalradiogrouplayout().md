@@ -16,7 +16,7 @@ nonisolated
 func horizontalRadioGroupLayout() -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `horizontalRadioGroupLayout()` to configure the visual layout of radio buttons in a [`Picker`](../picker.md) so that the radio buttons are arranged horizontally in the view.
 

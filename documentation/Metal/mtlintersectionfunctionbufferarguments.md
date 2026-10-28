@@ -22,7 +22,7 @@ struct MTLIntersectionFunctionBufferArguments
 typedef struct { ... } MTLIntersectionFunctionBufferArguments;
 ```
 
-#### Overview
+## Overview
 
 Struct containing arguments for intersection function buffers.
 

@@ -21,11 +21,11 @@ func shouldDrawColor() -> Bool
 - (BOOL) shouldDrawColor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view’s window supports color drawing or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 A view object can base its drawing behavior on the return value of this method to improve its appearance in grayscale windows. This method might return [`false`](../../Swift/false.md) when the view’s window does not store color information because the content is destined for a grayscale printer.
 

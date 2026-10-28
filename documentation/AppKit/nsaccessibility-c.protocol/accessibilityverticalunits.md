@@ -15,7 +15,7 @@ The units that the layout area uses for vertical values.
 @property NSAccessibilityUnits accessibilityVerticalUnits;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSAccessibilityUnits`](../nsaccessibilityunits.md).
 

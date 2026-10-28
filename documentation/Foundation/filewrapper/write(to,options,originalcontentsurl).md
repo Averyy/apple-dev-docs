@@ -25,7 +25,7 @@ func write(to url: URL, options: FileWrapper.WritingOptions = [], originalConten
 - (BOOL) writeToURL:(NSURL *) url options:(NSFileWrapperWritingOptions) options originalContentsURL:(NSURL *) originalContentsURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

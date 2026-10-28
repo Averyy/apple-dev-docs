@@ -21,7 +21,7 @@ The symmetric encryption key used to encrypt or decrypt an archive.
 var symmetricKey: SymmetricKey? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`generateSymmetricKey()`](./generatesymmetrickey%28%29.md) function to generate random keys.
 

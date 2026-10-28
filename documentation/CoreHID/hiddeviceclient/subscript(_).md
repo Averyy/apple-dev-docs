@@ -15,11 +15,11 @@ Get or set a property from the device.
 subscript(key: String) -> HIDDeviceClient.UnsafeProperty? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The value of the requested property, if any. The return type and value are device implementation specific.
 
-#### Overview
+## Overview
 
 Properties can be inherently present on the device, or set manually. Any number of properties can be valid or invalid and return varying types, depending on the device specific implementation. Properties are typically only for advanced use cases when it’s known exactly what is returned when queried, or exactly what happens when set for a specific device.
 

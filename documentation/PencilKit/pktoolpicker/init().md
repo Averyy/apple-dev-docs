@@ -22,7 +22,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a tool picker with a default set of system tools, which the picker displays in an order the system determines.
 

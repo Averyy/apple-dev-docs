@@ -30,7 +30,7 @@ var privacyPolicyURL: URL? { get }
 @property (atomic, readonly, nullable) NSURL * privacyPolicyURL;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

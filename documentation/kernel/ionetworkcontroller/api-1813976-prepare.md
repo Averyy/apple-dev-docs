@@ -11,11 +11,11 @@ Prepares the controller before an IOService is created and attached as a client.
 virtual IOReturn prepare();
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error code otherwise. Returning an error will fail the client attach.
 
-#### Overview
+## Overview
 
 This method is called by attachInterface() or attachDebuggerClient() to prepare the controller before the new client object is attached. This method will call publishProperties() to publish controller capabilities and properties that may be used by client objects. However, publishProperties() will be called only once, even if prepare() is called multiple times. This method call is synchronized by the workloop's gate.
 

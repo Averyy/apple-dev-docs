@@ -22,11 +22,11 @@ nonisolated
 func brightness(_ amount: Double) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that brightens this view by the specified amount.
 
-#### Discussion
+## Discussion
 
 Use `brightness(_:)` to brighten the intensity of the colors in a view. The example below shows a series of red squares, with their brightness increasing from 0 (fully red) to 100% (white) in 20% increments.
 

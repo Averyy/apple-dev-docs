@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, dragSessionWillBegin session: 
 - (void) tableView:(UITableView *) tableView dragSessionWillBegin:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after it has been determined that a drag will begin, after any lift animations have occurred, and before the position of the drag changes significantly. Use this method to perform any tasks related to the management of the drag session in your app.
 

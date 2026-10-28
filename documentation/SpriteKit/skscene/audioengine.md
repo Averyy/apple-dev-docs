@@ -25,7 +25,7 @@ var audioEngine: AVAudioEngine { get }
 @property (nonatomic, retain, readonly) AVAudioEngine * audioEngine;
 ```
 
-#### Discussion
+## Discussion
 
 An audio engine instance is automatically created for you when the scene is created. You can use methods and properties on a scene’s audio engine for overall control of all of its child audio nodes. The following code shows how a scene’s overall volume can be reduced from its default of 1.0 down to 0.2 and then paused:
 

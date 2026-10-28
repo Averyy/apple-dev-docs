@@ -19,7 +19,7 @@ class MEVideoDecoderPixelBufferManager
 @interface MEVideoDecoderPixelBufferManager : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Contains the interfaces that the [`MEVideoDecoder`](./mevideodecoder.md) uses for two tasks. First, to declare its set of requirements for output `CVPixelBuffer` objects in the form of a [`pixelBufferAttributes`](./mevideodecoderpixelbuffermanager/pixelbufferattributes.md) dictionary. Second, to create pixel buffers that match decoder output requirements but also satisfy [Video Toolbox](../VideoToolbox/VideoToolbox.md) and client requirements.
 

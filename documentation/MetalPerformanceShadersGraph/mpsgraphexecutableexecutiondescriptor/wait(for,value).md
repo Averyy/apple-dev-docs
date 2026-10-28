@@ -24,7 +24,7 @@ func wait(for event: any MTLSharedEvent, value: UInt64)
 - (void) waitForEvent:(id<MTLSharedEvent>) event value:(uint64_t) value;
 ```
 
-#### Discussion
+## Discussion
 
 This does not include encoding which can still continue.
 

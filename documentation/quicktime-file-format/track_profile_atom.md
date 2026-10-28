@@ -12,7 +12,7 @@ A child atom of movie atoms or track atoms.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 Profile atoms can be children of movie atoms or track atoms. For details on profile atoms, see [`Movie profile atom`](./movie_profile_atom.md).
 

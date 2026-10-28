@@ -29,7 +29,7 @@ GKTurnBasedParticipantStatusMatching
 
 - [Starting turn-based matches and passing turns between players](../../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 When you make this participant the next person to take a turn in the match, Game Center fills the position and updates the [`status`](../status-swift.property.md) and [`playerID`](../playerid.md) properties.
 

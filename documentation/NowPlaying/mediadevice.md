@@ -22,7 +22,7 @@ struct MediaDevice
 
 - [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type to represent playback devices in your remote sessions.
 

@@ -21,7 +21,7 @@ Returns a localized string for a specified ISO 4217 currency code.
 func localizedString(forCurrencyCode currencyCode: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"USD"` is `"US Dollar"`.
 

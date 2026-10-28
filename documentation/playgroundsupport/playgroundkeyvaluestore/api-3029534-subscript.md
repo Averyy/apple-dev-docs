@@ -16,7 +16,7 @@ Reads or stores the value associated with the given key in the key-value store.
 subscript(key: String) -> PlaygroundValue? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the `key` parameter.
 

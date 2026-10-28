@@ -23,7 +23,7 @@ var isActive: Bool { get }
 @property (nonatomic, readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When this property returns `true`, the external display is successfully configured to match the device. If it returns`false`, the configurator is not making any configuration changes to the external display. If another [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) instance takes over the configuration of the external display, this property returns `false`.
 

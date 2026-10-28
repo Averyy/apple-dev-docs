@@ -23,11 +23,11 @@ func layoutAttributesForInteractivelyMovingItem(at indexPath: IndexPath, withTar
 - (UICollectionViewLayoutAttributes *) layoutAttributesForInteractivelyMovingItemAtIndexPath:(NSIndexPath *) indexPath withTargetPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes of the item while it is at the specified position.
 
-#### Discussion
+## Discussion
 
 When an item is moving because of user interactivity, the layout object uses this method to retrieve layout attributes to use for the item while it is at the specified position. The default implementation of this method returns a copy of the item’s existing attributes with two changes: the [`center`](../uicollectionviewlayoutattributes/center.md) point is set to the value in `position` and the [`zIndex`](../uicollectionviewlayoutattributes/zindex.md) value is set to [`NSIntegerMax`](../../ObjectiveC/nsintegermax.md) so that the item floats above other items in the collection view.
 

@@ -19,7 +19,7 @@ Returns the array of detections in the detection track within the given time ran
 - (NSArray<CNDetection *> *) detectionsInTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 The array of detections in the detection track within the given time range. The return value is only appropriate for discrete detection tracks.
 

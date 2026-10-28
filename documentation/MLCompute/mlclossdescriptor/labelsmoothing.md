@@ -23,7 +23,7 @@ var labelSmoothing: Float { get }
 @property (nonatomic, readonly) float labelSmoothing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

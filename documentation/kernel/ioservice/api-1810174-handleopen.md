@@ -14,11 +14,11 @@ virtual bool handleOpen(
  void *arg );
 ```
 
-#### Return Value
+## Return Value
 
 `true`if the open was successful; `false` otherwise.
 
-#### Overview
+## Overview
 
 IOService calls this method in its subclasses in response to the open method, so the subclass may implement the request. The default implementation provides single owner access to an IOService object via `open`. The object is locked via lockForArbitration before `handleOpen` is called.
 

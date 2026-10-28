@@ -24,11 +24,11 @@ func toDictionary() -> [AnyHashable : Any]!
 - (NSDictionary *) toDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary representation of the value.
 
-#### Discussion
+## Discussion
 
 If the value is a JavaScript object, this method creates an [`NSDictionary`](../../Foundation/nsdictionary.md) object of the corresponding size, and recursively copies and converts all enumerable properties of the object into the dictionary with correspondingly named keys. JavaScript converts each element to a native object using the rules listed in [Convert Between JavaScript and Native Types](../jsvalue.md#Convert-Between-JavaScript-and-Native-Types).
 

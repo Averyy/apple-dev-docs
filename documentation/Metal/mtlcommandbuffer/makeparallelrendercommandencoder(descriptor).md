@@ -25,7 +25,7 @@ func makeParallelRenderCommandEncoder(descriptor renderPassDescriptor: MTLRender
 - (id<MTLParallelRenderCommandEncoder>) parallelRenderCommandEncoderWithDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 An [`MTLParallelRenderCommandEncoder`](../mtlparallelrendercommandencoder.md) instance can create multiple, independent render command encoders that contribute to the same render pass on different threads.
 

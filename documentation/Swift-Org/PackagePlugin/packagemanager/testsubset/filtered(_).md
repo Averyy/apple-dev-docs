@@ -17,7 +17,7 @@ One or more tests filtered by regular expression. Use the format `<test-target>.
 case filtered([String])
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as the `--filter` option of `swift test`.
 

@@ -20,7 +20,7 @@ static var useEnDecryptKey: SecTrustSettingsKeyUsage { get }
 kSecTrustSettingsKeyUseEnDecryptKey
 ```
 
-#### Discussion
+## Discussion
 
 Private keys must be wrapped before they can be exported from a keychain.
 

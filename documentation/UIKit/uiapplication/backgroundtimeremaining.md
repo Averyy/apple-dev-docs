@@ -28,7 +28,7 @@ var backgroundTimeRemaining: TimeInterval { get }
 
 - [Extending your app’s background execution time](../extending-your-app-s-background-execution-time.md)
 
-#### Discussion
+## Discussion
 
 The value is valid only after the app enters the background and has started at least one task using [`beginBackgroundTask(expirationHandler:)`](./beginbackgroundtask%28expirationhandler%29.md) in the foreground.
 

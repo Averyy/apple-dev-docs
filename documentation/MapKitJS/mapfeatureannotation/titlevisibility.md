@@ -15,7 +15,7 @@ A value that determines the behavior of the title’s visibility.
 get titleVisibility(): FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the [`FeatureVisibility`](../featurevisibility.md) values to control how the framework displays the title’s visibility. The default is [`Adaptive`](../featurevisibility/adaptive.md).
 

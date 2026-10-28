@@ -25,17 +25,17 @@ func BNNSGraphContextSetDynamicShapes(_ context: bnns_graph_context_t, _ functio
 int BNNSGraphContextSetDynamicShapes(bnns_graph_context_t context, const char *function, size_t shapes_count, bnns_graph_shape_t *shapes);
 ```
 
-#### Return Value
+## Return Value
 
 - `0` on success if all tensor shapes were exactly determined. That is, the workspace size is exact.
 
-#### Discussion
+## Discussion
 
 - `1` on success if one or more tensor shapes are merely bounds, but no tensor is unbounded. That is, the workspace size is bounded.
 - `2` on success if one or more tensor shapes are unbounded and BNNS will allocate workspace memory during execution.
 - A negative value indicates an error.
 
-#### Discussion
+## Discussion
 
 Don’t call this function while existing calls to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](./bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) are running.
 

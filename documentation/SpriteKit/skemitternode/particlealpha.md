@@ -25,7 +25,7 @@ var particleAlpha: CGFloat { get set }
 @property (nonatomic) CGFloat particleAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 The particle alpha value is equivalent to the [`alpha`](../sknode/alpha.md) property of the [`SKNode`](../sknode.md) class. The alpha component of the color that results from the texture and color blending state is multiplied by a particle’s alpha value. The resulting particle color is then blended with the parent’s framebuffer. The default value is `1.0`.
 

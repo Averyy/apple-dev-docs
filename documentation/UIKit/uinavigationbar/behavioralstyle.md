@@ -26,7 +26,7 @@ var behavioralStyle: UIBehavioralStyle { get }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to determine the actual behavior style when the [`preferredBehavioralStyle`](./preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md).
 

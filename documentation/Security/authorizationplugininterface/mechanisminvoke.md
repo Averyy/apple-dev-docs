@@ -25,11 +25,11 @@ int (*)(void *) MechanismInvoke;
 
 - [Extending authorization services with plug-ins](../extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. Return [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) if the function completes successfully and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error) if any error occurs.
 
-#### Discussion
+## Discussion
 
 When the authorization engine calls your `MechanismInvoke` function, you should perform the authorization operation indicated by the mechanism reference. You can use the functions [`GetArguments`](../authorizationcallbacks/getarguments.md), [`GetContextValue`](../authorizationcallbacks/getcontextvalue.md), and [`GetHintValue`](../authorizationcallbacks/gethintvalue.md) to get more information, if any, about the authorization.
 

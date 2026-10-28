@@ -21,7 +21,7 @@ let QCPlugInAttributeDescriptionKey: String
 extern NSString * const QCPlugInAttributeDescriptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSString`](../Foundation/nsstring.md) object.
 

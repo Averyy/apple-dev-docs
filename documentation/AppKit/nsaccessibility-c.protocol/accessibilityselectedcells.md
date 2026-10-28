@@ -15,7 +15,7 @@ The currently selected cells for the table.
 @property (copy, nullable) NSArray * accessibilitySelectedCells;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required for all elements that act like cell-based tables.
 

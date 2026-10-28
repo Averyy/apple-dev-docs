@@ -19,7 +19,7 @@ A Boolean value that determines whether scrolling is disabled in a particular di
 final var isDirectionalLockEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the scroll view tries to lock scrolling to the vertical or horizontal direction while dragging. Default is `false`.
 

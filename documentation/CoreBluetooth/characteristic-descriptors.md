@@ -5,7 +5,7 @@
 
 Values that represent the UUIDs of the characteristic descriptors.
 
-#### Overview
+## Overview
 
 Use these UUIDs to add well-known descriptors to characteristics you create, or to find specific descriptors from characteristics of remote services.
 

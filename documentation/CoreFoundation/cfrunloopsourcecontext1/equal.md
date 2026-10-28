@@ -25,11 +25,11 @@ var equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!
 unsigned char (*)(const void *, const void *) equal;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `info1` and `info2` should be considered equal; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 An equality test callback for your program-defined `info` pointer. Can be `NULL`.
 

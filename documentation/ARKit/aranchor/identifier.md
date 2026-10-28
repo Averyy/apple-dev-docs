@@ -20,7 +20,7 @@ var identifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Whether an anchor is created manually (with the [`init(transform:)`](./init%28transform%29.md) initializer) or automatically by ARKit (and provided to you through [`ARSessionDelegate`](../arsessiondelegate.md), [`ARSCNViewDelegate`](../arscnviewdelegate.md), or [`ARSKViewDelegate`](../arskviewdelegate.md) methods), each anchor automatically receives a unique identifier value.
 

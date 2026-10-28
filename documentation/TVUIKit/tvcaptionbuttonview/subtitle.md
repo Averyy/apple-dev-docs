@@ -19,7 +19,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The subtitle appears below the title of the caption button.
 

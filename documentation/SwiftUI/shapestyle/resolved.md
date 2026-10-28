@@ -22,7 +22,7 @@ The type of shape style this will resolve to.
 associatedtype Resolved : ShapeStyle = Never
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom shape style, Swift infers this type from your implementation of the required `resolve` function.
 

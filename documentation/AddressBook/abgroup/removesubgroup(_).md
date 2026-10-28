@@ -19,11 +19,11 @@ func removeSubgroup(_ group: ABGroup!) -> Bool
 - (BOOL) removeSubgroup:(ABGroup *) group;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the `group` argument is not a subgroup, this method does nothing and returns [`false`](../../Swift/false.md). If `group` is `nil`, this method raises an exception.
 

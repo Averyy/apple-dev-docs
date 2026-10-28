@@ -19,7 +19,7 @@
 extern OSStatus CMTaggedBufferGroupFormatDescriptionCreateForTaggedBufferGroupWithExtensions(CFAllocatorRef allocator, CMTaggedBufferGroupRef taggedBufferGroup, CFDictionaryRef extensions, CMTaggedBufferGroupFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Discussion
+## Discussion
 
 Creates a format description for a CMTaggedBufferGroup with extensions.
 

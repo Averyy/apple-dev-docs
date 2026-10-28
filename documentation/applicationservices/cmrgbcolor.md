@@ -17,7 +17,7 @@ typedef struct CMRGBColor {
 } CMRGBColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the RGB color space is composed of `red`, `green`, and `blue` component values. Each color component is expressed as a numeric value within the range of 0 to 65535. 
 

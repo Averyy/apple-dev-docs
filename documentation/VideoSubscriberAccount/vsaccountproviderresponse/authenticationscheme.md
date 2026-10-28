@@ -24,7 +24,7 @@ var authenticationScheme: VSAccountProviderAuthenticationScheme { get }
 @property (nonatomic, copy, readonly) VSAccountProviderAuthenticationScheme authenticationScheme;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the authentication scheme the account provider used to construct the response. For a list of types, see [`VSAccountProviderAuthenticationScheme`](../vsaccountproviderauthenticationscheme.md).
 

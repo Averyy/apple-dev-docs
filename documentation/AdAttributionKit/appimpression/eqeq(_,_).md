@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: AppImpression, rhs: AppImpression) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the values are equal; `false`, otherwise.
 

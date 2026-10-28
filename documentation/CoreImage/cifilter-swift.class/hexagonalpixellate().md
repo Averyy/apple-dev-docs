@@ -24,11 +24,11 @@ class func hexagonalPixellate() -> any CIFilter & CIHexagonalPixellate
 + (CIFilter<CIHexagonalPixellate> *) hexagonalPixellateFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the hexagonal pixelate filter to an image. The effect creates an image containing colored hexagons.
 

@@ -24,7 +24,7 @@ The default custom input configuration.
 static var `default`: YAMLSnapshot.ParsingOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Uses base64 byte decoding and treats no values as secrets.
 

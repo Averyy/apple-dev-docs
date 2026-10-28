@@ -19,7 +19,7 @@ enum Identifier
 enum FSItemID : UInt64;
 ```
 
-#### Overview
+## Overview
 
 Use this type when packing items for an enumeration in [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](../fsdirectoryentrypacker/packentry%28name,itemtype,itemid,nextcookie,attributes%29.md). Either provide a unique identifier like an inode number, or one of the special enumeration cases this type defines, like [`FSItem.Identifier.rootDirectory`](./identifier/rootdirectory.md).
 

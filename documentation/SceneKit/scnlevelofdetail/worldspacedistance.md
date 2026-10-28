@@ -25,7 +25,7 @@ var worldSpaceDistance: CGFloat { get }
 @property (readonly) CGFloat worldSpaceDistance;
 ```
 
-#### Discussion
+## Discussion
 
 When rendering a geometry with associated levels of detail, SceneKit calculates the distance from the current point of view to the geometry’s parent node, then renders the geometry for the [`SCNLevelOfDetail`](../scnlevelofdetail.md) object with the largest `distance` parameter less than that distance.
 

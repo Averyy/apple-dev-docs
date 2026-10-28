@@ -25,7 +25,7 @@ func add(_ service: CBMutableService)
 - (void) addService:(CBMutableService *) service;
 ```
 
-#### Discussion
+## Discussion
 
 When you add a service to the database, the peripheral manager calls the [`peripheralManager(_:didAdd:error:)`](../cbperipheralmanagerdelegate/peripheralmanager%28_,didadd,error%29.md) method of its delegate object. If the service contains any included services, you must first publish them.
 

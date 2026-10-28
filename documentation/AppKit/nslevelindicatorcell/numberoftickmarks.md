@@ -19,7 +19,7 @@ var numberOfTickMarks: Int { get set }
 @property NSInteger numberOfTickMarks;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents all of the tick marks displayed by the control, including those positioned at the minimum and maximum values. The default value of this property is `0`, which results in no tick marks being displayed.
 

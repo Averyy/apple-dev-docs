@@ -26,7 +26,7 @@ A type that represents the structure and behavior of an app.
 
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 Create an app by declaring a structure that conforms to the `App` protocol. Implement the required [`body`](./app/body-swift.property.md) computed property to define the app’s content:
 

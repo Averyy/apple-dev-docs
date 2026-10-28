@@ -25,7 +25,7 @@ func copyICCData() -> CFData?
 extern CFDataRefCGColorSpaceCopyICCData(CGColorSpaceRef space);
 ```
 
-#### Return Value
+## Return Value
 
 The ICC profile data or `NULL` if the color space does not have an ICC data profile.
 

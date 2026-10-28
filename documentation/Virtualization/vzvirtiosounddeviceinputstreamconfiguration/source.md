@@ -19,7 +19,7 @@ var source: VZAudioInputStreamSource? { get set }
 @property (strong, nullable) VZAudioInputStreamSource * source;
 ```
 
-#### Discussion
+## Discussion
 
 Not specifying a source results in a default handler that produces audio silence. The default is `nil`.
 

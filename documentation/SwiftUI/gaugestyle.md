@@ -21,7 +21,7 @@ Defines the implementation of all gauge instances within a view hierarchy.
 @preconcurrency protocol GaugeStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the style for all the [`Gauge`](./gauge.md) instances in a view hierarchy, use the [`gaugeStyle(_:)`](./view/gaugestyle%28_%29.md) modifier. For example, you can configure a gauge to use the [`circular`](./gaugestyle/circular.md) style:
 

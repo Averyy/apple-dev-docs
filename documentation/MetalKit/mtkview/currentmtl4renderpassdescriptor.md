@@ -22,7 +22,7 @@ var currentMTL4RenderPassDescriptor: MTL4RenderPassDescriptor? { get }
 @property (nonatomic, readonly, nullable) MTL4RenderPassDescriptor * currentMTL4RenderPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 A render pass descriptor generated from the currentDrawable’s texture and the view’s depth, stencil, and sample buffers and clear values.
 

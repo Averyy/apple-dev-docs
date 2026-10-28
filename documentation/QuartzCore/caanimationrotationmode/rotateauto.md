@@ -22,7 +22,7 @@ static let rotateAuto: CAAnimationRotationMode
 extern CAAnimationRotationMode const kCAAnimationRotateAuto;
 ```
 
-#### Discussion
+## Discussion
 
 The objects travel on a tangent to the path.
 

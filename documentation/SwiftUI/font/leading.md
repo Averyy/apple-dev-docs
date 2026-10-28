@@ -21,7 +21,7 @@ A line spacing adjustment that you can apply to a font.
 enum Leading
 ```
 
-#### Overview
+## Overview
 
 Apply one of the `Leading` values to a font using the [`leading(_:)`](./leading%28_%29.md) method to increase or decrease the line spacing.
 

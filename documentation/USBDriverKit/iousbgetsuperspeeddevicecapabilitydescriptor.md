@@ -15,11 +15,11 @@ Finds the first SuperSpeed device capability descriptor in a BOS descriptor.
 const IOUSBDeviceCapabilitySuperSpeedUSB *IOUSBGetSuperSpeedDeviceCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor pointer, or `NULL` if no matching descriptor can be found.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextCapabilityDescriptorWithType` to fetch the first device capability descriptor.
 

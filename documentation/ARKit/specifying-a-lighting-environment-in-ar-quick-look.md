@@ -5,13 +5,13 @@
 
 Add metadata to your USDZ file to specify its lighting characteristics.
 
-#### Overview
+## Overview
 
 AR Quick Look in iOS 16 and later enhances lighting to deliver more brightness, contrast, and visual definition for your scene’s virtual content.
 
 You can set an asset’s lighting environment, or *image-based lighting* (IBL), by adding the [preferredIblVersion](../USD/preferrediblversion.md) metadata to the file’s `.usda` textual definition, or by generating the asset with Apple-provided tools.
 
-##### Set the lighting metadata
+### Set the lighting metadata
 
 To define the lighting environment in the asset’s `.usda` textual format using a tool like [USD Toolset](https://graphics.pixar.com/usd/docs/USD-Toolset.html), add the following metadata:
 
@@ -33,7 +33,7 @@ A value of `1` indicates the classic lighting environment, and a value of `2` in
 
 If you omit the [preferredIblVersion](../USD/preferrediblversion.md) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
 
-##### Set the lighting environment with Apple-provided tools
+### Set the lighting environment with Apple-provided tools
 
 With [Reality Converter](https://developer.apple.com/news/?id=01132020a), you can choose a lighting preference for your 3D asset by previewing the available options one after the other. By default, Reality Converter previews an imported 3D asset with `preferrediblversion` = `2`. You can select the Use Classic Lighting option to set `preferrediblversion` to `1` in the file.
 
@@ -45,7 +45,7 @@ Alternatively, you can use `usdzconvert` in the Apple [USDZ Tools](https://devel
 usdzconvert fireHydrant.obj --useObjMtl --preferrediblversion 2 
 ```
 
-##### Match AR Quick Look lighting in third-party apps and tools
+### Match AR Quick Look lighting in third-party apps and tools
 
 To design your content in a third-party digital content creation tool (DCC) under the same lighting conditions as AR Quick Look’s lighting environment, configure the tool to use one of the following `.exr` files. Alternatively, you can apply an `.exr` file in your third-party app, such as one that renders with RealityKit, to accommodate the new lighting environment in your app’s runtime experience.
 

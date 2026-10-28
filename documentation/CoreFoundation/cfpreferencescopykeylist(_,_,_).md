@@ -25,7 +25,7 @@ func CFPreferencesCopyKeyList(_ applicationID: CFString, _ userName: CFString, _
 extern CFArrayRefCFPreferencesCopyKeyList(CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Return Value
+## Return Value
 
 The list of keys. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

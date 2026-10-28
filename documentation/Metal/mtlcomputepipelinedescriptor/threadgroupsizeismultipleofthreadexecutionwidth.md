@@ -24,7 +24,7 @@ var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
 @property (nonatomic, readwrite) BOOL threadGroupSizeIsMultipleOfThreadExecutionWidth;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  When this configuration value is `true` and the threadgroup size isn’t a multiple of thread execution width, the compute pass’s execution results are undefined.
 

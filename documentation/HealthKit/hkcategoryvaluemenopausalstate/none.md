@@ -28,7 +28,7 @@ HKCategoryValueMenopausalStateNone
 
 - [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
-#### Discussion
+## Discussion
 
 This value represents a confirmed entry that the person is neither in menopause nor perimenopause at the recorded date. It doesn’t represent unknown, unset, or missing data. Apps can use this value to record that someone explicitly confirmed the absence of a menopausal state at a particular point in time.
 

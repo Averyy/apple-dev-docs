@@ -25,7 +25,7 @@ let NSMigrationManagerKey: String
 extern NSString * const NSMigrationManagerKey;
 ```
 
-#### Discussion
+## Discussion
 
 To access this key in a custom value expression string in the Xcode mapping model editor use `$manager`.
 

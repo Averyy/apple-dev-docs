@@ -23,7 +23,7 @@ var kDNSServiceErr_NoMemory: Int { get }
 kDNSServiceErr_NoMemory
 ```
 
-#### Discussion
+## Discussion
 
 Out of memory.
 

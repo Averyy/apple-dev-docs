@@ -21,7 +21,7 @@ Accesses the element at the specified index.
 subscript(index: OutputSpan<Element>.Index) -> Element { borrow mutate }
 ```
 
-#### Overview
+## Overview
 
 > **Complexity**: O(1)
 

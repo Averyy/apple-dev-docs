@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a point.
 class func string(for point: CGPoint) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `point`. See [`cgPoint(for:)`](./cgpoint%28for%29.md) for a discussion of the string format.
 

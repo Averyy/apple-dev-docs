@@ -17,11 +17,11 @@ Uses locale-specific text-break information to find boundaries in Unicode text.
 OSStatus UCFindTextBreak(TextBreakLocatorRef breakRef, UCTextBreakType breakType, UCTextBreakOptions options, const UniChar *textPtr, UniCharCount textLength, UniCharArrayOffset startOffset, UniCharArrayOffset *breakOffset);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  The text-break locator referenced by the `breakRef` parameter must support the type of boundary specified in the `breakType` parameter; otherwise, the function returns `kUCTextBreakLocatorMissingType`.
 
-#### Discussion
+## Discussion
 
 The `UCFindTextBreak` function starts from a specified offset in a text buffer, and then proceeds forward or backward (as requested) until it finds the next text boundary of a particular locale-specific type, using a given set of options. The different types of breaks or boundaries in a line of Unicode text can include
 

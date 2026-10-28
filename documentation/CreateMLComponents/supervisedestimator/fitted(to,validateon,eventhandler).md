@@ -26,7 +26,7 @@ func fitted<Input, Validation>(to input: Input, validateOn validation: Validatio
 
 - [Creating a multi-label image classifier](../creating-a-multi-label-image-classifier.md)
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

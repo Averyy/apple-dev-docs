@@ -16,7 +16,7 @@ The event listener that is called while the device orientation changes around th
 attribute EventHandler ondeviceorientation;
 ```
 
-#### Discussion
+## Discussion
 
 Read [`DeviceOrientationEvent`](../deviceorientationevent.md) for details.
 

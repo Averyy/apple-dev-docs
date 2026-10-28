@@ -17,7 +17,7 @@ The reader initialization failed, try again.
 case readerInitializationFailed
 ```
 
-#### Discussion
+## Discussion
 
 If the error persists, contact support.
 

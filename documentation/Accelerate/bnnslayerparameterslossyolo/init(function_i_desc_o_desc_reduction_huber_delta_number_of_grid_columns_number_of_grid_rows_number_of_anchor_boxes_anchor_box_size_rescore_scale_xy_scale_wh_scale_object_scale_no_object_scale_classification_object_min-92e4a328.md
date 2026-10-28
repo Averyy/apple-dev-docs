@@ -23,7 +23,7 @@ Returns a new You Only Look Once (YOLO) loss layer parameters structure from the
 init(function: BNNSLossFunction, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, reduction: BNNSLossReductionFunction, huber_delta: Float, number_of_grid_columns: Int, number_of_grid_rows: Int, number_of_anchor_boxes: Int, anchor_box_size: Int, rescore: Bool, scale_xy: Float, scale_wh: Float, scale_object: Float, scale_no_object: Float, scale_classification: Float, object_minimum_iou: Float, no_object_maximum_iou: Float, anchors_data: UnsafeMutablePointer<Float>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](../bnns/lossreduction/none.md).
 
@@ -51,4 +51,4 @@ init(function: BNNSLossFunction, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDAr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnnslayerparameterslossyolo/init(function:i_desc:o_desc:reduction:huber_delta:number_of_grid_columns:number_of_grid_rows:number_of_anchor_boxes:anchor_box_size:rescore:scale_xy:scale_wh:scale_object:scale_no_object:scale_classification:object_minimum_iou:no_object_max-4sykc)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnnslayerparameterslossyolo/init%28function:i_desc:o_desc:reduction:huber_delta:number_of_grid_columns:number_of_grid_rows:number_of_anchor_boxes:anchor_box_size:rescore:scale_xy:scale_wh:scale_object:scale_no_object:scale_classification:object_minimum_iou:no_object_max-4sykc)*

@@ -16,7 +16,7 @@ A type that indicates the available appearances for an Apple Pay Button.
 enum ApplePayButtonStyle
 ```
 
-#### Overview
+## Overview
 
 The values for the button style:
 

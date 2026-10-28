@@ -5,7 +5,7 @@
 
 Border your scene with an obstacle that physics bodies cannot penetrate.
 
-#### Overview
+## Overview
 
 When you want to confine your in-app objects to a specific region, use an edge-based physics body to define the area. In an app that models a pool table, for example, the balls are the in-app objects, and the table edges collectively create an *edge loop*. The following code demonstrates creating an edge loop to implement an impenetrable boundary that extends from edge to edge in the scene.
 

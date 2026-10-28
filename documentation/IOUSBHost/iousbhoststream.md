@@ -20,7 +20,7 @@ class IOUSBHostStream
 @interface IOUSBHostStream : IOUSBHostIOSource
 ```
 
-#### Overview
+## Overview
 
 The [`copyStream(withStreamID:)`](./iousbhostpipe/copystream%28withstreamid%29.md) method creates stream objects.
 

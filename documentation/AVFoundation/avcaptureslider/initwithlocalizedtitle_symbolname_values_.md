@@ -19,7 +19,7 @@ Creates a discrete slider control that selects a value from a list.
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName values:(NSArray<NSNumber *> *) values;
 ```
 
-#### Discussion
+## Discussion
 
 Use discrete sliders when your app supports selecting from a specific list of values.
 

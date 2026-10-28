@@ -21,11 +21,11 @@ A span over the elements of this array.
 var span: Span<Element> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the elements of this array.
 
-#### Discussion
+## Discussion
 
 > **Note**: On Apple platforms, this property copies bridged `NSArray` instances into contiguous storage on first access and caches the result. Subsequent calls can reuse the cached copy.
 

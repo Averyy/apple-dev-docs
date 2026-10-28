@@ -22,7 +22,7 @@ class var shared: UIPrintInteractionController { get }
 @property (class, nonatomic, readonly) UIPrintInteractionController * sharedPrintController;
 ```
 
-#### Return Value
+## Return Value
 
 The singleton instance of the `UIPrintInteractionController` class or `nil` if the object could not be created.
 

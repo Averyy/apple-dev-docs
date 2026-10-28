@@ -19,7 +19,7 @@ The action that the user prefers to perform after double-tapping their Apple Pen
 var preferredPencilDoubleTapAction: PencilPreferredAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can read this value by creating a property with the [`Environment`](../environment.md) property wrapper and using it inside the action closure of the [`onPencilDoubleTap(perform:)`](../view/onpencildoubletap%28perform%29.md) view modifier as an indication of what to do after the user double-taps their Apple Pencil:
 

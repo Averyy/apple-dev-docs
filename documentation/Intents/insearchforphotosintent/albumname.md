@@ -33,7 +33,7 @@ var albumName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * albumName;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains an [`NSString`](../../Foundation/nsstring.md) object, your search should return only photos from the album specified by that string. Apps may register a user’s custom photo album names using the [`INVocabulary`](../invocabulary.md) class. Registering custom names helps the system identify those albums when the user speaks them.
 

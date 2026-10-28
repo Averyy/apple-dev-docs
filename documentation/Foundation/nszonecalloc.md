@@ -23,7 +23,7 @@ Allocates memory in a zone.
 extern void *NSZoneCalloc(NSZone *zone, NSUInteger numElems, NSUInteger byteSize);
 ```
 
-#### Discussion
+## Discussion
 
 Allocates enough memory from `zone` for `numElems` elements, each with a size `numBytes` bytes, and returns a pointer to the allocated memory. The memory is initialized with zeros. This function returns `NULL` if it was unable to allocate the requested memory.
 

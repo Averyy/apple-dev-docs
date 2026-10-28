@@ -19,7 +19,7 @@ Posted when the currently playing media item has changed.
 extern NSNotificationName const MPMusicPlayerControllerNowPlayingItemDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object associated with the notification is the music player whose Now Playing item changed. The notification has no `userInfo` dictionary.
 

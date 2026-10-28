@@ -21,7 +21,7 @@ Creates an operation for modifying the specified records.
 - (instancetype) initWithRecordsToSave:(NSArray<CKRecord *> *) records recordIDsToDelete:(NSArray<CKRecordID *> *) recordIDs;
 ```
 
-#### Discussion
+## Discussion
 
 The records that you intend to save or delete must all reside in the same database, which you specify when you configure the operation. If your app saves a record in a database that doesn’t exist, the server creates the database.
 

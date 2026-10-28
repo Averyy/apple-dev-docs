@@ -24,7 +24,7 @@ init(horizontal: CGFloat, vertical: CGFloat)
 static UIOffset UIOffsetMake(CGFloat horizontal, CGFloat vertical);
 ```
 
-#### Return Value
+## Return Value
 
 An offset structure with offsets `horizontal` and `vertical`.
 

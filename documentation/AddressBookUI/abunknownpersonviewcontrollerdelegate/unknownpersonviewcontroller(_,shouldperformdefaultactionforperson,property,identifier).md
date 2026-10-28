@@ -21,7 +21,7 @@ optional func unknownPersonViewController(_ personViewController: ABUnknownPerso
 - (BOOL) unknownPersonViewController:(ABUnknownPersonViewController *) personViewController shouldPerformDefaultActionForPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `unknownPersonViewController` should perform its default action. Your application may quit as a result of this action. [`false`](../../Swift/false.md): if `unknownPersonViewController` should do nothing. The delegate may perform custom action processing.
 

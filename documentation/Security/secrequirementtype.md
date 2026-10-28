@@ -20,7 +20,7 @@ enum SecRequirementType
 enum SecRequirementType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These constants are indexes into requirement sets and are not currently used in any public API.
 

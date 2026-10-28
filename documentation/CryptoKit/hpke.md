@@ -21,7 +21,7 @@ A container for hybrid public key encryption (HPKE) operations.
 enum HPKE
 ```
 
-#### Overview
+## Overview
 
 Hybrid public key encryption (HPKE) uses a symmetric encryption algorithm to encrypt data, and encapsulates the symmetric encryption material using a public key encryption algorithm.
 

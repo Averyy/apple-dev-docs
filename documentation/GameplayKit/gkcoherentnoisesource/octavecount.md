@@ -24,7 +24,7 @@ var octaveCount: Int { get set }
 @property (nonatomic) NSInteger octaveCount;
 ```
 
-#### Discussion
+## Discussion
 
 Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or *octave*, increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water.
 

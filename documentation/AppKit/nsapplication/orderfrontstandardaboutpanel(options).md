@@ -19,7 +19,7 @@ func orderFrontStandardAboutPanel(options optionsDictionary: [NSApplication.Abou
 - (void) orderFrontStandardAboutPanelWithOptions:(NSDictionary<NSString *,id> *) optionsDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to the keys in AboutPanelOptionKey, you may also include the following key in `optionsDictionary`:
 

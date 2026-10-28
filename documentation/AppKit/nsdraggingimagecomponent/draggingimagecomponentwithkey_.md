@@ -15,7 +15,7 @@ Creates and returns a dragging image component with the specified key.
 + (NSDraggingImageComponent *) draggingImageComponentWithKey:(NSDraggingImageComponentKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 A dragging image component with the specified key.
 

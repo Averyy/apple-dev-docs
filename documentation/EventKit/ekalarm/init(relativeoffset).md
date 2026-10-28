@@ -24,11 +24,11 @@ init(relativeOffset offset: TimeInterval)
 + (EKAlarm *) alarmWithRelativeOffset:(NSTimeInterval) offset;
 ```
 
-#### Return Value
+## Return Value
 
 The created alarm.
 
-#### Discussion
+## Discussion
 
 Negative offset values fire before the start of the event, while positive values fire after the start.
 

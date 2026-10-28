@@ -16,11 +16,11 @@ Connects the caller to the Root Power Domain IOService for the purpose of receiv
 io_connect_t IORegisterForSystemPower(void *refcon, IONotificationPortRef *thePortRef, IOServiceInterestCallback callback, io_object_t *notifier);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a io_connect_t session for the IOPMrootDomain or MACH_PORT_NULL if request failed. Caller must close return value via IOServiceClose() after calling IODeregisterForSystemPower on the notifier argument.
 
-#### Discussion
+## Discussion
 
 Provides sleep/wake notifications to applications. Requires that applications acknowledge some, but not all notifications. Register for sleep/wake notifications will deliver these messages over the sleep/wake lifecycle:
 

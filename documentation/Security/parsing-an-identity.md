@@ -5,7 +5,7 @@
 
 Extract the private key and certificate from an identity.
 
-#### Overview
+## Overview
 
 After you have an identity, you can extract the private key from it with a call to the [`SecIdentityCopyPrivateKey(_:_:)`](./secidentitycopyprivatekey%28_,_%29.md) function:
 

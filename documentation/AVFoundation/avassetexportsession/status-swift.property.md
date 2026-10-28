@@ -26,7 +26,7 @@ var status: AVAssetExportSession.Status { get }
 @property (nonatomic, readonly) AVAssetExportSessionStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`AVAssetExportSession.Status`](./status-swift.enum.md).
 

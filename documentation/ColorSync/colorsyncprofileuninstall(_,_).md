@@ -20,11 +20,11 @@ func ColorSyncProfileUninstall(_ profile: ColorSyncProfile!, _ error: UnsafeMuta
 extern bool ColorSyncProfileUninstall(ColorSyncProfileRef profile, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, or `false` in case of error.
 
-#### Discussion
+## Discussion
 
 The profile must return a valid URL for [`ColorSyncProfileGetURL(_:_:)`](./colorsyncprofilegeturl%28_,_%29.md); that is, it must be created with [`ColorSyncProfileCreateWithURL(_:_:)`](./colorsyncprofilecreatewithurl%28_,_%29.md). Also, the URL must be in either [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md), including subfolders of those.
 

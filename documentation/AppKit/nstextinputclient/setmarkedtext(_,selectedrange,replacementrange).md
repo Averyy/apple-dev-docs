@@ -20,7 +20,7 @@ func setMarkedText(_ string: Any, selectedRange: NSRange, replacementRange: NSRa
 - (void) setMarkedText:(id) string selectedRange:(NSRange) selectedRange replacementRange:(NSRange) replacementRange;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no marked text, the current selection is replaced. If there is no selection, the string is inserted at the insertion point.
 

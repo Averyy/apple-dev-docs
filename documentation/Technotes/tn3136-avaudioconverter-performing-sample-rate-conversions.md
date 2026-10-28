@@ -5,7 +5,7 @@
 
 Use AVAudioConverter to perform sample rate conversions between PCM audio buffers.
 
-#### Overview
+## Overview
 
 Using [AVAudioConverter](../AVFAudio/avaudioconverter.md) to perform sample rate conversions between PCM audio buffers requires making calls to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md). This method takes an instance of [AVAudioBuffer](../AVFAudio/avaudiobuffer.md), which stores the output of the conversion, as well as a closure that provides instances of [AVAudioBuffer](../AVFAudio/avaudiobuffer.md) to serve as input to the conversion.
 
@@ -15,7 +15,7 @@ When converting between sample rates, the total number of input frames may be ha
 
 The [Resampler](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-resampler) class gathers all of the components necessary for the conversion: the sample provider that conforms to [SampleProvider](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-protocol-for-providing-samples), the [AVAudioConverter](../AVFAudio/avaudioconverter.md) instance, and the source [AVAudioPCMBuffer](../AVFAudio/avaudiopcmbuffer.md) instance used in the call to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md). While the [Resampler](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-resampler) class is concerned with providing the output of the sample rate conversion, the [SampleProvider](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-protocol-for-providing-samples) implementation is concerned with providing the input.
 
-#### Defining a protocol for providing samples
+## Defining a protocol for providing samples
 
 The [SampleProvider](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-protocol-for-providing-samples) protocol is an example of how the [Resampler](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-resampler) class might interface with a provider class that produces audio samples. The protocol requires a single method to achieve this behavior, which returns the next sample in time.
 
@@ -31,7 +31,7 @@ protocol SampleProvider {
 
 The [SampleProvider](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-protocol-for-providing-samples) protocol might be implemented by a signal generator, such as the one described in [Building a Signal Generator](../AVFAudio/building-a-signal-generator.md), by a synthesizer or by a circular buffer, for example.
 
-#### Creating a resampler
+## Creating a resampler
 
 The [Resampler](./tn3136-avaudioconverter-performing-sample-rate-conversions.md#Creating-a-resampler) class takes the output of a sample provider, resamples it using [AVAudioConverter](../AVFAudio/avaudioconverter.md), and copies the result to all channels of an [AudioBufferList](../CoreAudioTypes/audiobufferlist.md):
 
@@ -123,7 +123,7 @@ func resample(ioData: UnsafeMutablePointer<AudioBufferList>) {
 
 The call to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md) attempts to fill the output buffer to its capacity, hence a single call is made to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md) in `resample(ioData:)`. Other conversion scenarios, such as audio data streamed from a file or over a network, or when the conversion involves compressed formats will often involve multiple calls to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md), depending on the returned [AVAudioConverterOutputStatus](../AVFAudio/avaudioconverteroutputstatus.md).
 
-#### Revision History
+## Revision History
 
 - **2023-01-10** First published.
 

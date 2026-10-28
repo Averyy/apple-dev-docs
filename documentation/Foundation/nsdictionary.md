@@ -29,7 +29,7 @@ class NSDictionary
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 You can use this type in Swift instead of a [`Dictionary`](../Swift/dictionary.md) in cases that require reference semantics.
 
@@ -41,7 +41,7 @@ A key-value pair within a dictionary is called an entry. Each entry consists of 
 
 `NSDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFDictionary`](../CoreFoundation/cfdictionary.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-##### Creating NSDictionary Objects Using Dictionary Literals
+### Creating NSDictionary Objects Using Dictionary Literals
 
 In addition to the provided initializers, such as [`init(objects:forKeys:)`](./nsdictionary/init%28objects,forkeys%29.md), you can create an `NSDictionary` object using a *dictionary literal*.
 
@@ -82,7 +82,7 @@ Unlike [`dictionaryWithObjectsAndKeys:`](./nsdictionary/dictionarywithobjectsand
 
 In Swift, the `NSDictionary` class conforms to the `DictionaryLiteralConvertible` protocol, which allows it to be initialized with dictionary literals. For more information about object literals in Swift, see [Literal Expression](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-ID390) in [The Swift Programming Language (Swift 4.1)](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
 
-##### Accessing Values Using Subscripting
+### Accessing Values Using Subscripting
 
 In addition to the provided instance methods, such as [`object(forKey:)`](./nsdictionary/object%28forkey%29.md), you can access `NSDictionary` values by their keys using *subscripting*.
 
@@ -98,7 +98,7 @@ let value = dictionary["helloString"]
 id value = dictionary[@"helloString"];
 ```
 
-##### Enumerating Entries Using for-in Loops
+### Enumerating Entries Using for-in Loops
 
 In addition to the provided instance methods, such as [`enumerateKeysAndObjects(_:)`](./nsdictionary/enumeratekeysandobjects%28_%29.md), you can enumerate `NSDictionary` entries using *for-in loops*.
 
@@ -123,11 +123,11 @@ In Objective-C, `NSDictionary` conforms to the [`NSFastEnumeration`](./nsfastenu
 
 In Swift, `NSDictionary` conforms to the `SequenceType` protocol.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You generally shouldn’t need to subclass `NSDictionary`. Custom behavior can usually be achieved through composition rather than subclassing.
 
-###### Methods to Override
+#### Methods to Override
 
 If you do need to subclass `NSDictionary`, take into account that it is a [Class cluster](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ClassCluster.html#//apple_ref/doc/uid/TP40008195-CH7). Any subclass must override the following primitive methods:
 
@@ -138,7 +138,7 @@ If you do need to subclass `NSDictionary`, take into account that it is a [Class
 
 The other methods of `NSDictionary` operate by invoking one or more of these primitives. The non-primitive methods provide convenient ways of accessing multiple entries at once.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 Before making a custom class of `NSDictionary`, investigate [`NSMapTable`](./nsmaptable.md) and the corresponding Core Foundation type, [`CFDictionary`](../CoreFoundation/cfdictionary.md). Because `NSDictionary` and `CFDictionary` are “toll-free bridged,” you can substitute a `CFDictionary` object for a `NSDictionary` object in your code (with appropriate casting). Although they are corresponding types, `CFDictionary` and `NSDictionary` do not have identical interfaces or implementations, and you can sometimes do things with `CFDictionary` that you cannot easily do with `NSDictionary`.
 

@@ -23,7 +23,7 @@ class func handlesURLScheme(_ urlScheme: String) -> Bool
 + (BOOL) handlesURLScheme:(NSString *) urlScheme;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if WebKit provides native support for the URL scheme, or [`false`](../../Swift/false.md) if it doesn’t.
 

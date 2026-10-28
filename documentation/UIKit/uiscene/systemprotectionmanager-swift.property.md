@@ -21,7 +21,7 @@ var systemProtectionManager: UIScene.SystemProtectionManager? { get }
 @property (nonatomic, readonly, nullable) UISceneSystemProtectionManager * systemProtectionManager;
 ```
 
-#### Discussion
+## Discussion
 
 To check whether the scene requires user authentication, inspect the manager’s [`isUserAuthenticationEnabled`](./systemprotectionmanager-swift.class/isuserauthenticationenabled.md) property.
 

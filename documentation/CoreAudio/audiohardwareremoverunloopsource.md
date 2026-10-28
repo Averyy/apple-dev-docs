@@ -14,11 +14,11 @@
 extern OSStatus AudioHardwareRemoveRunLoopSource(CFRunLoopSourceRef inRunLoopSource);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Remove the given CFRunLoopSource from the the HAL’s notification CFRunLoop.
 

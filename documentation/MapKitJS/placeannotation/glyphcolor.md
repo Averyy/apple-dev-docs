@@ -15,7 +15,7 @@ The selected glyph color for the place.
 get glyphColor(): string;
 ```
 
-#### Discussion
+## Discussion
 
 Not all places have a glyph color. This property returns a default color when the place doesn’t have a glyph color. You can’t set the glyph color property of the place annotation.
 

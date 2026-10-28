@@ -24,7 +24,7 @@ var kJSClassAttributeNoAutomaticPrototype: Int { get }
 kJSClassAttributeNoAutomaticPrototype
 ```
 
-#### Discussion
+## Discussion
 
 Use [`kJSClassAttributeNoAutomaticPrototype`](./kjsclassattributenoautomaticprototype.md) with [`JSObjectSetPrototype(_:_:_:)`](./jsobjectsetprototype%28_,_,_%29.md) to manage prototypes manually.
 

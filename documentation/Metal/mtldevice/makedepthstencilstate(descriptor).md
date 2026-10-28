@@ -25,7 +25,7 @@ func makeDepthStencilState(descriptor: MTLDepthStencilDescriptor) -> (any MTLDep
 - (id<MTLDepthStencilState>) newDepthStencilStateWithDescriptor:(MTLDepthStencilDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLDepthStencilState`](../mtldepthstencilstate.md) instance if the method completed successfully; otherwise `nil`.
 

@@ -26,7 +26,7 @@ var creationDate: AVMetadataItem? { get }
 @property (nonatomic, readonly, nullable) AVMetadataItem * creationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset contains metadata that the framework can convert to an [`NSDate`](../../Foundation/nsdate.md), you can retrieve it from the metadata item using its [`dateValue`](../avmetadataitem/datevalue.md) property. Otherwise, you retrieve it as a string by using the metadata item’s [`stringValue`](../avmetadataitem/stringvalue.md) property.
 

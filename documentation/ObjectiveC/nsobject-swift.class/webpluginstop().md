@@ -19,7 +19,7 @@ func webPlugInStop()
 - (void) webPlugInStop;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called more than once, provided that the application has already called [`webPlugInInitialize()`](./webplugininitialize%28%29.md) and that each call to this method is preceded by a call to [`webPlugInStart()`](./webpluginstart%28%29.md).
 

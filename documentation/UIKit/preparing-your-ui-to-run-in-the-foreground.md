@@ -4,7 +4,7 @@
 
 Configure your app to appear onscreen.
 
-#### Overview
+## Overview
 
 Use foreground transitions to prepare your app’s UI to appear onscreen. An app’s transition to the foreground is usually in response to a user action. For example, when the user taps the app’s icon, the system launches the app and brings it to the foreground. Use a foreground transition to update your app’s UI, acquire resources, and start the services you need to handle user requests.
 
@@ -15,7 +15,7 @@ All state transitions result in UIKit sending notifications to the appropriate d
 
 You can support both types of delegate objects, but UIKit always uses scene delegate objects when they’re available. UIKit notifies only the scene delegate associated with the specific scene that’s entering the foreground. For information about how to configure scene support, see [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md).
 
-##### Update your app’s data model when entering the foreground
+### Update your app’s data model when entering the foreground
 
 At launch time, the system starts your app in the inactive state before transitioning it to the foreground. Use your app’s launch-time methods to perform any work needed at that time. For an app that’s in the background, UIKit moves your app to the inactive state by calling one of the following methods:
 
@@ -26,7 +26,7 @@ When transitioning from the background to the foreground, use these methods to l
 
 For information about how to prepare your app at launch time, see [Responding to the launch of your app](./responding-to-the-launch-of-your-app.md).
 
-##### Configure your user interface and initial tasks at activation
+### Configure your user interface and initial tasks at activation
 
 The system moves your app to the active state immediately before displaying the app’s UI. Activation is a good time to configure your app’s UI and runtime behavior; specifically:
 
@@ -45,7 +45,7 @@ Put your configuration code in one of the following methods:
 
 Activation is also the time to put finishing touches on your UI before displaying it to the user. Don’t run any code that might block your activation method. Instead, make sure you have everything you need in advance. For example, if your data changes frequently outside of the app, use background tasks to fetch updates from the network before your app returns to the foreground. Otherwise, be prepared to display existing data while you fetch changes asynchronously.
 
-##### Start UI-specific tasks when your view appears
+### Start UI-specific tasks when your view appears
 
 When your activation method returns, UIKit shows any windows that you made visible. It also notifies any relevant view controllers that their views are about to appear. Use your view controller’s [`viewWillAppear(_:)`](./uiviewcontroller/viewwillappear%28_%29.md) method to perform any final updates to your interface. For example:
 

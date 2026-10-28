@@ -17,11 +17,11 @@ Call the prepared metal kernel.
 func callAsFunction(_ inputs: [any ScalarOrArray], template: [(String, any KernelTemplateArg)]? = nil, grid: (Int, Int, Int), threadGroup: (Int, Int, Int), outputShapes: some Sequence<Array<Int>>, outputDTypes: some Sequence<DType>, initValue: Float? = nil, verbose: Bool = false, stream: StreamOrDevice = .default) -> [MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 Array of `MLXArray`
 
-#### Discussion
+## Discussion
 
 See [`MLXFast.MLXFastKernel`](../mlxfastkernel.md) for example.  Use [`metalKernel(name:inputNames:outputNames:source:header:ensureRowContiguous:atomicOutputs:)`](../metalkernel%28name,inputnames,outputnames,source,header,ensurerowcontiguous,atomicoutputs%29.md) to create an instance.
 

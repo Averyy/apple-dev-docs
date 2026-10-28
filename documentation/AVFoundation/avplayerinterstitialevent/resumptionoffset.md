@@ -25,7 +25,7 @@ var resumptionOffset: CMTime { get set }
 @property (nonatomic, readonly) CMTime resumptionOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports definite time values. Specify [`indefinite`](../../CoreMedia/cmtime/indefinite.md) to indicate that the effective resumption time offset should align with the clock time elapsed during interstitial playback; this value is typically suitable for live broadcasts.
 

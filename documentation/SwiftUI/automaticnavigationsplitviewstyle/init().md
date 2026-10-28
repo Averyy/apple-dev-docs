@@ -22,7 +22,7 @@ Creates an instance of the automatic navigation split view style.
 @preconcurrency init()
 ```
 
-#### Discussion
+## Discussion
 
 Use [`automatic`](../navigationsplitviewstyle/automatic.md) to construct this style.
 

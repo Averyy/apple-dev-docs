@@ -25,7 +25,7 @@ func createRequest() -> ASAuthorizationPasswordRequest
 - (ASAuthorizationPasswordRequest *) createRequest;
 ```
 
-#### Return Value
+## Return Value
 
 A password authorization request that you can execute with an instance of [`ASAuthorizationController`](../asauthorizationcontroller.md).
 

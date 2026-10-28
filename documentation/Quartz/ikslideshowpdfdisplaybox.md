@@ -19,7 +19,7 @@ let IKSlideshowPDFDisplayBox: String
 extern NSString * const IKSlideshowPDFDisplayBox;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a type of display box, such as [`PDFDisplayBox.mediaBox`](../PDFKit/pdfdisplaybox/mediabox.md) or [`PDFDisplayBox.mediaBox`](../PDFKit/pdfdisplaybox/mediabox.md). See [`PDFPage`](../PDFKit/pdfpage.md) for more information.
 

@@ -24,7 +24,7 @@ var userInfo: [String : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains one or more of the values from [`AVAudioSequencer.InfoDictionaryKey`](./infodictionarykey.md).
 

@@ -19,7 +19,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title appears below the person’s name and usually describes the person’s role in the media item.
 

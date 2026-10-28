@@ -13,11 +13,11 @@
 OBEXError OBEXSessionSetServerCallback(OBEXSessionRef inSessionRef, OBEXSessionEventCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 Sets callback to be used when an event occurs on an OBEXSession. This is important for OBEX servers, as you will need a way to be called back when the first command is sent to you. So, be sure to set yourself up to listen for events when you are ready to receive them.
 

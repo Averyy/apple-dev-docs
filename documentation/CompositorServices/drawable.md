@@ -5,7 +5,7 @@
 
 A type that provides information on how to render content into the frame’s textures.
 
-#### Overview
+## Overview
 
 When you draw a frame of content, the frame’s  [`cp_drawable_t`](./cp_drawable_t.md) type provides the actual textures and rendering information you need. Do as much work as possible in advance to prepare for rendering, and retrieve the [`cp_drawable_t`](./cp_drawable_t.md) only when you’re ready to start encoding commands into your Metal command buffers. The system recycles frames and their drawables for efficiency, so if you retrieve the drawable too early, it might not be ready to use.
 

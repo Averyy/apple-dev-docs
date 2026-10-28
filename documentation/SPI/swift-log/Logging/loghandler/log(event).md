@@ -22,7 +22,7 @@ func log(event: LogEvent)
 
 - [Implementing a log handler](../implementingaloghandler.md)
 
-#### Discussion
+## Discussion
 
 There is no need for the `LogHandler` to check if the level is above or below the configured `logLevel` as `Logger` already performed this check and determined that a message should be logged.
 

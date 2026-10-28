@@ -26,7 +26,7 @@ var embeddedThumbnailPhotoFormat: [String : Any]? { get set }
 
 - [Capturing thumbnail and preview images](../capturing-thumbnail-and-preview-images.md)
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`, specifying that the photo output should not embed thumbnail images in photo file output. To enable embedding, set this property to a dictionary describing the format for thumbnail images, containing the following keys and values:
 

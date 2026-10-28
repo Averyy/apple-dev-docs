@@ -1,0 +1,67 @@
+# convert(_:to:)
+
+**Framework**: SwiftUI  
+**Kind**: method  
+**Role**: Instance Method
+
+Converts a point’s coordinates to physical length measurements in the specified unit.
+
+**Availability**:
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+@MainActor
+@preconcurrency func convert(_ point: Point3D, to unit: UnitLength) -> Point3D
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func convert(_ point: CGPoint, to unit: UnitLength) -> CGPoint
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ pointsValue: CGFloat, to unit: UnitLength) -> CGFloat
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ rect: CGRect, to unit: UnitLength) -> CGRect
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ rect: Rect3D, to unit: UnitLength) -> Rect3D
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ size: CGSize, to unit: UnitLength) -> CGSize
+```
+
+```swift
+@MainActor
+@preconcurrency func convert(_ size: Size3D, to unit: UnitLength) -> Size3D
+```
+
+```swift
+@MainActor
+@preconcurrency func convert<V>(_ pointValues: V, to unit: UnitLength) -> V where V : VectorArithmetic
+```
+
+## Return Value
+
+A point value with physical length measurements, in the given unit
+
+## Discussion
+
+The point is assumed to be in the coordinate system of the scene that this converter is associated with. If the scene is scaled, the physical measurement will take this scale into account.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/physicalmetricsconverter/convert(_:to:)-788cl)*

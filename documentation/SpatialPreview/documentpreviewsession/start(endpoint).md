@@ -16,7 +16,7 @@ Connects to the specified endpoint and prepares the session to send document upd
 final nonisolated(nonsending) func start(endpoint: SpatialPreviewEndpoint) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method once before sending document content via [`updateContents(data:)`](./updatecontents%28data%29.md) or [`updateContents(url:)`](./updatecontents%28url%29.md). The method establishes connection and transitions the session’s `state` to [`SpatialPreviewSessionState.connected`](../spatialpreviewsessionstate/connected.md).
 

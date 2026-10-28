@@ -23,7 +23,7 @@ class let keyboardIsLocalUserInfoKey: String
 extern NSString * const UIKeyboardIsLocalUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value that indicates whether the keyboard belongs to the current app. With Multitasking in iPadOS, the system notifies all visible apps when the keyboard appears and disappears. The value is [`true`](../../Swift/true.md) for the app that caused the keyboard to appear and [`false`](../../Swift/false.md) for the other apps.
 

@@ -25,7 +25,7 @@ var dominantScript: String { get }
 @property (copy, readonly) NSString * dominantScript;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an ISO 15924 script code, such as `"Latn"` or `"Cyrl"`, that identifies the dominant script.
 

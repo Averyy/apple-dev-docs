@@ -19,7 +19,7 @@ optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
 - (void) handleExtendedRuntimeSession:(WKExtendedRuntimeSession *) extendedRuntimeSession;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after launching your app in response to a scheduled extended runtime session. This occurs if your app terminates after scheduling a session but before that session’s start date. The system may also call this method if your app crashes during an extended runtime session, letting you resume that session.
 

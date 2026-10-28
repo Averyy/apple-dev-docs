@@ -24,7 +24,7 @@ var strideInZ: Int { get set }
 @property (nonatomic, readwrite) NSUInteger strideInZ;
 ```
 
-#### Discussion
+## Discussion
 
 Source `z`-coordinate, `sz` is computed from destination `z`-coordinate, `dz` as `sz = strideInZ*dz`. Default value is 1.
 

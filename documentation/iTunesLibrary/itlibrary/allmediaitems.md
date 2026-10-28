@@ -20,7 +20,7 @@ var allMediaItems: [ITLibMediaItem] { get }
 @property (nonatomic, retain, readonly) NSArray<ITLibMediaItem *> * allMediaItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`ITLibMediaItem`](../itlibmediaitem.md) items.
 

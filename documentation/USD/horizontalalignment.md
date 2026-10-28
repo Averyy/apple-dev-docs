@@ -5,18 +5,18 @@
 
 An option that controls the text’s horizontal placement within its bounding box.
 
-#### Overview
+## Overview
 
 The default value is `center`.
 
-##### Horizontal Alignments
+### Horizontal Alignments
 
 - **`left`**: Left-aligns each line of text.
 - **`center`**: Center-aligns each line of text.
 - **`right`**: Right-aligns each line of text.
 - **`justified`**: Left- and right-aligns the text by adding additional spaces between words.
 
-##### Declaration
+### Declaration
 
 ```other
 token horizontalAlignment = "center" (

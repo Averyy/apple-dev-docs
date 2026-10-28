@@ -24,7 +24,7 @@ static let features: CIImageAutoAdjustmentOption
 extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an array of `CIFeature` objects. If you don’t supply an array, the Core Image searches for features using the `CIDetector` class.
 

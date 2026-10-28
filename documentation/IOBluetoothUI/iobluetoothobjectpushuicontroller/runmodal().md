@@ -19,7 +19,7 @@ func runModal()
 - (void) runModal;
 ```
 
-#### Discussion
+## Discussion
 
 Returns when the modal session has ended. This object will call back over the delegate method (above) when the transfer is complete. Users should release the object then. If no delegate is set the object will release itself.
 

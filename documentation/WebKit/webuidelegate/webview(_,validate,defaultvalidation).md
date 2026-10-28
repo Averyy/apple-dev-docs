@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, validate item: (any NSValidatedUserIn
 - (BOOL) webView:(WebView *) webView validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item defaultValidation:(BOOL) defaultValidation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified user interface item is valid; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 See [`NSUserInterfaceValidations`](../../AppKit/nsuserinterfacevalidations.md) and [`NSValidatedUserInterfaceItem`](../../AppKit/nsvalidateduserinterfaceitem.md) for more information about user interface validation. If you do not implement this method, the value of `defaultValidation` is used.
 

@@ -24,7 +24,7 @@ func willExit(to nextState: GKState)
 - (void) willExitWithNextState:(GKState *) nextState;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method when the actions you want to perform in response to a state change should be associated with state being exited, or when those actions depend on which state a state machine will enter as a result of the transition.
 

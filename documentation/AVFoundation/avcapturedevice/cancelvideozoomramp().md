@@ -22,7 +22,7 @@ func cancelVideoZoomRamp()
 - (void) cancelVideoZoomRamp;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling [`ramp(toVideoZoomFactor:withRate:)`](./ramp%28tovideozoomfactor,withrate%29.md) with a rate of zero. If a zoom transition is in progress, the transition slows to a stop (instead of stopping abruptly).
 

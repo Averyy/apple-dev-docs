@@ -25,7 +25,7 @@ func failWithError(_ error: any Error)
 - (void) failWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you call this method in your [`init(coder:)`](../nscoding/init%28coder%29.md) implementation. You should set the error when you detect problems such as lack of secure coding, data corruption, or a domain validation failure.
 

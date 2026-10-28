@@ -25,7 +25,7 @@ var defaultAudioSession: AVAudioSession? { get async }
 - (void) getDefaultAudioSessionWithCompletionHandler:(void (^)(AVAudioSession *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 In visionOS, the default [`AVAudioSession`](../../AVFAudio/avaudiosession.md) for a [`UIScene`](../uiscene.md) contains all of the RealityKit sounds from any [`RealityView`](../../RealityKit/realityview.md) in the scene’s view hierarchy.
 

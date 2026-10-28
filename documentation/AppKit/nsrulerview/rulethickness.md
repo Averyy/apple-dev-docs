@@ -19,7 +19,7 @@ var ruleThickness: CGFloat { get set }
 @property CGFloat ruleThickness;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the height of the ruler area for a horizontal ruler or the width of the ruler area for a vertical ruler. Rulers are by default 16.0 PostScript units thick. You should rarely need to change this layout attribute, but subclasses might do so to accommodate custom drawing.
 

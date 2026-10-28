@@ -19,7 +19,7 @@ Invalidates the view in the given map rectangle at all zoom scales.
 - (void) setNeedsDisplayInMapRect:(MKMapRect) mapRect;
 ```
 
-#### Discussion
+## Discussion
 
 Marking a rectangle as invalid causes that portion of the view to be redrawn during the next update cycle. This method invalidates the overlay regardless of the current zoom scale associated with the map.
 

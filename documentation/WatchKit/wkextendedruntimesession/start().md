@@ -23,7 +23,7 @@ func start()
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use [`start()`](./start%28%29.md) to begin a session. You must call this method while your app is running in the foreground.
 

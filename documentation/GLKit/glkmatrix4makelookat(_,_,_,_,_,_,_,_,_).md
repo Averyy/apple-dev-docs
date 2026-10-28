@@ -22,11 +22,11 @@ func GLKMatrix4MakeLookAt(_ eyeX: Float, _ eyeY: Float, _ eyeZ: Float, _ centerX
 static GLKMatrix4 GLKMatrix4MakeLookAt(float eyeX, float eyeY, float eyeZ, float centerX, float centerY, float centerZ, float upX, float upY, float upZ);
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized view matrix.
 
-#### Discussion
+## Discussion
 
 This function creates a matrix in a way similar to the `gluLookAt` function previously provided in OpenGL ES 1.1.
 

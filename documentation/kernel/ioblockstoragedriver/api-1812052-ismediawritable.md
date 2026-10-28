@@ -9,11 +9,11 @@
 virtual bool isMediaWritable() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the media is writable, false otherwise.
 
-#### Overview
+## Overview
 
 Ask the driver whether the media is writable.
 

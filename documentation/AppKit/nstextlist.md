@@ -19,7 +19,7 @@ class NSTextList
 @interface NSTextList : NSObject
 ```
 
-#### Overview
+## Overview
 
 The visible elements of the list, including list markers, appear in the text as they do for lists created by hand. The list object, however, allows the list to be recognized as such by the text system. This enables automatic creation of markers and spacing. Text lists are used in HTML import and export.
 

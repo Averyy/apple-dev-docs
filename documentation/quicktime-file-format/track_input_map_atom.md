@@ -6,7 +6,7 @@
 
 An atom that defines how data being sent to this track from its nonprimary sources is to be interpreted.
 
-#### Overview
+## Overview
 
 This atom contains one or more track input atoms. Note that the track input map atom is a QT atom structure.
 

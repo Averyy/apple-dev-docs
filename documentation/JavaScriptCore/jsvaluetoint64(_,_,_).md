@@ -22,11 +22,11 @@ func JSValueToInt64(_ ctx: JSContextRef, _ value: JSValueRef, _ exception: Unsaf
 int64_t JSValueToInt64(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 An int64_t with the result of conversion, or 0 if an exception is thrown. Since 0 is valid value, `exception` must be checked after the call.
 
-#### Discussion
+## Discussion
 
 Converts a JSValue to a singed 64-bit integer and returns the resulting integer.
 

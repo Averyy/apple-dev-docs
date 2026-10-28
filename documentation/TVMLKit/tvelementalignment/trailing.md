@@ -21,7 +21,7 @@ case trailing
 TVElementAlignmentTrailing
 ```
 
-#### Discussion
+## Discussion
 
 For left-to-right languages, the trailing edge is the right edge. For right-to-left languages, the trailing edge is the left edge.
 

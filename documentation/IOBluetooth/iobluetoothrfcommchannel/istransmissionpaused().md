@@ -19,11 +19,11 @@ func isTransmissionPaused() -> Bool
 - (BOOL) isTransmissionPaused;
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the action of sending data will block the current thread, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 Returns true if the remote device flow control is stopping out transmission. This is useful because we do not buffer data, we stop the transmitting actor. With this method the transmitter can check if sending data is going to be successful or is going to block.
 

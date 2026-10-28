@@ -23,7 +23,7 @@ let binaryUUID: UUID?
 
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This may be nil if symbolication information is unavailable or the binary is unidentified.
 

@@ -16,7 +16,7 @@ Command to give a UPS when it should either enable or disable the audible alarm.
 #define kIOPSCommandEnableAudibleAlarmKey
 ```
 
-#### Discussion
+## Discussion
 
 - The matching argument should be a CFBooleanRef where kCFBooleanTrue enables the alarm and
 - kCFBooleanFalse diables the alarm

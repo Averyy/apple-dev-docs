@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Kind**: data
 
-#### Overview
+## Overview
 
 kIOPMDriverAssertionCPUBit When set, PM kernel will prefer to leave the CPU and core hardware running in "Dark Wake" state, instead of sleeping.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a variation selector.
 var isVariationSelector: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Variation selectors allow rendering engines that support them to choose different glyphs to display for a particular code point.
 

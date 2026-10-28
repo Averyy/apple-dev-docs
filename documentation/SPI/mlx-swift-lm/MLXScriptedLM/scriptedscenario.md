@@ -17,7 +17,7 @@ A transcript, a tokenizer built from it, and a model that follows it.
 struct ScriptedScenario
 ```
 
-#### Overview
+## Overview
 
 ```swift
 // @_spi(Testing) import MLXLLM

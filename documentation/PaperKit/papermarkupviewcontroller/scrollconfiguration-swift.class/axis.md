@@ -19,7 +19,7 @@ The axes you use to specify scroll view behavior.
 struct Axis
 ```
 
-#### Overview
+## Overview
 
 This struct mirrors UIKit’s `UIAxis` type for cross-platform compatibility.
 

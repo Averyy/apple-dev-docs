@@ -23,7 +23,7 @@ var backgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a background view to change the color behind your table’s sections and rows. The default value of this property is `nil`.
 

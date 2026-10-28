@@ -14,7 +14,7 @@ The minimum version of macOS required for the app to run on a set of architectur
 - **Name**: `LSMinimumSystemVersionByArchitecture` (Minimum system versions, per-architecture)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The possible dictionary keys are: `i386`, `ppc`, `ppc64`, and `x86_64`. The values are the minimum version for the architecture. The default values are `10.0.0`.
 

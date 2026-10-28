@@ -19,7 +19,7 @@ func selectItem(withObjectValue object: Any?)
 - (void) selectItemWithObjectValue:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md). Posts an [`selectionDidChangeNotification`](../nscombobox/selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method doesn’t alter the contents of the combo box cell’s text field.
 

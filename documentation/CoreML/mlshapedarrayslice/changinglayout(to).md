@@ -23,7 +23,7 @@ func changingLayout(to bufferLayout: MLShapedArrayBufferLayout) -> MLShapedArray
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 The returned shaped array slice will have `.strides` property according to the requested layout.
 

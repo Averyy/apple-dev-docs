@@ -22,7 +22,7 @@ func ramp(toVideoZoomFactor factor: CGFloat, withRate rate: Float)
 - (void) rampToVideoZoomFactor:(CGFloat) factor withRate:(float) rate;
 ```
 
-#### Discussion
+## Discussion
 
 Allowed values for `factor` range from `1.0` (full field of view) to the [`videoMaxZoomFactor`](./format/videomaxzoomfactor.md) specified by the active capture format.
 

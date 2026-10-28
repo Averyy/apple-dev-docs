@@ -24,7 +24,7 @@ var globalObject: JSValue! { get }
 @property (strong, readonly) JSValue * globalObject;
 ```
 
-#### Discussion
+## Discussion
 
 In a web browser, the global object of a JavaScript context is the browser window (the `window` object in JavaScript). Outside of web-browser use, a context’s global object serves a similar role, separating the JavaScript namespaces of different contexts. Global variables within a script appear as fields or subscripts in the global object—you can access them either through this [`JSValue`](../jsvalue.md) object or through the methods listed in the Accessing JavaScript global state with subscripts section in [`JSContext`](../jscontext.md).
 

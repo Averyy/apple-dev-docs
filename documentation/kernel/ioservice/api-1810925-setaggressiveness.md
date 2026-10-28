@@ -13,11 +13,11 @@ virtual IOReturn setAggressiveness(
  unsigned longnewLevel );
 ```
 
-#### Return Value
+## Return Value
 
 `IOPMNoErr`.
 
-#### Overview
+## Overview
 
 Implement `setAggressiveness` to receive a notification when an "aggressiveness Aggressiveness factors are a loose set of power management variables that contain values for system sleep timeout, display sleep timeout, whether the system is on battery or AC, and other power management features. There are several aggressiveness factors that can be broadcast and a driver may take action on whichever factors apply to it. A driver that has joined the power plane via joinPMtree will receive `setAgressiveness` calls when aggressiveness factors change. A driver may override this call if it needs to do something with the new factor (such as change its idle timeout). If overridden, the driver must call its superclass's `setAgressiveness` method in its own `setAgressiveness` implementation. Most drivers do not need to implement `setAgressiveness`.
 

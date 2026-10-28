@@ -17,7 +17,7 @@ Returns an alert panel.
 extern idNSGetAlertPanel(NSString *title, NSString *msgFormat, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`NSPanel`](./nspanel.md) that can be used to set up a modal session. A modal session is useful for allowing the user to interrupt the program. During a modal session, you can perform activities while the panel is displayed and check at various points in your program whether the user has clicked one of the panel’s buttons. The arguments for this function are the same as those for [`NSRunAlertPanel`](./nsrunalertpanel.md), but unlike that function, no button is displayed if `defaultButton` is `nil`.
 

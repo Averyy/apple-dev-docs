@@ -20,11 +20,11 @@ optional func tokenField(_ tokenField: NSTokenField, shouldAdd tokens: [Any], at
 - (NSArray *) tokenField:(NSTokenField *) tokenField shouldAddObjects:(NSArray *) tokens atIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An array of validated tokens.
 
-#### Discussion
+## Discussion
 
 The delegate can return the array unchanged or return a modified array of tokens. To reject the add completely, return an empty array. Returning `nil` causes an error.
 

@@ -19,7 +19,7 @@ unowned(unsafe) var presentingViewController: NSViewController? { get }
 @property (assign, readonly, nullable) NSViewController * presentingViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The *presenting view controller* is the one that is ultimately responsible for presenting the view controller whose [`presentingViewController`](./presentingviewcontroller.md) property you are accessing.
 

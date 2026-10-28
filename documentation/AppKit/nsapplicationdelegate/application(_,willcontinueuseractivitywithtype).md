@@ -20,11 +20,11 @@ optional func application(_ application: NSApplication, willContinueUserActivity
 - (BOOL) application:(NSApplication *) application willContinueUserActivityWithType:(NSString *) userActivityType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you notify the user that your app is about to continue the activity or [`false`](../../Swift/false.md) if you want AppKit to notify the user.
 
-#### Discussion
+## Discussion
 
 Use this method to provide immediate feedback to the user that an activity is about to continue on this device. The app calls this method as soon as the user confirms that an activity should be continued but possibly before the data associated with that activity is available.
 

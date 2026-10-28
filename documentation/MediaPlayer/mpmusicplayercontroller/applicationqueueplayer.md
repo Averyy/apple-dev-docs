@@ -23,11 +23,11 @@ class var applicationQueuePlayer: MPMusicPlayerApplicationController { get }
 @property (class, nonatomic, readonly) MPMusicPlayerApplicationController * applicationQueuePlayer;
 ```
 
-#### Return Value
+## Return Value
 
 The application queue music player.
 
-#### Discussion
+## Discussion
 
 The application queue music player plays music locally within your app. The application queue music player provides more functionality and greater control over the music played than the application music player.
 

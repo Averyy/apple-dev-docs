@@ -5,7 +5,7 @@
 
 Manually release an App Store approved version of your app to the App Store.
 
-#### Overview
+## Overview
 
 The `appStoreVersionReleaseRequests` resource handles requests to manually release a version of your app that’s in the Pending Developer Release state. For more information about app states, see [App and submission statuses](https://developer.apple.com/help/app-store-connect/reference/app-and-submission-statuses).
 

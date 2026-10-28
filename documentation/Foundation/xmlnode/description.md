@@ -18,7 +18,7 @@ var description: String { get }
 @property (copy, readonly) NSString * description;
 ```
 
-#### Discussion
+## Discussion
 
 Used for debugging. May give more information than XMLString.
 

@@ -25,7 +25,7 @@ optional func willSetProfile(_ aProfile: MIDICIProfile, onChannel channel: MIDIC
 - (BOOL) willSetProfile:(MIDICIProfile *) aProfile onChannel:(MIDIChannelNumber) channel enabled:(BOOL) shouldEnable;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the system enabled the profile.
 

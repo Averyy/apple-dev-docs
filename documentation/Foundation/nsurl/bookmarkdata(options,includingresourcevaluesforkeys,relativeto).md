@@ -25,11 +25,11 @@ func bookmarkData(options: NSURL.BookmarkCreationOptions = [], includingResource
 - (NSData *) bookmarkDataWithOptions:(NSURLBookmarkCreationOptions) options includingResourceValuesForKeys:(NSArray<NSString *> *) keys relativeToURL:(NSURL *) relativeURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A bookmark for the URL.
 
-#### Discussion
+## Discussion
 
 This method returns bookmark data that can later be resolved into a URL object for a file even if the user moves or renames it (if the volume format on which the file resides supports doing so).
 

@@ -24,7 +24,7 @@ var depthStencilStorageMode: MTLStorageMode { get set }
 @property (nonatomic) MTLStorageMode depthStencilStorageMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLStorageMode.private`](../../Metal/mtlstoragemode/private.md).
 

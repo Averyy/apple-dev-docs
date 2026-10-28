@@ -24,7 +24,7 @@ enum AVAudio3DMixingSourceMode
 enum AVAudio3DMixingSourceMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The source mode determines how the individual channels of an input bus distribute in space.
 

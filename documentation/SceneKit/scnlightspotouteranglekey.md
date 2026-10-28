@@ -27,7 +27,7 @@ let SCNLightSpotOuterAngleKey: String
 extern NSString * const SCNLightSpotOuterAngleKey;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s default value is `45.0`.
 

@@ -24,7 +24,7 @@ Enumerates the contents of the data’s buffer.
 func enumerateBytes(_ block: (UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, (for example, a [`Data`](../data.md) backed by a `dispatch_data_t`, the bytes may be stored discontiguously. In those cases, this function invokes the closure for each contiguous region of bytes.
 

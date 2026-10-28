@@ -17,7 +17,7 @@ Overload of [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,
 func compile(inputs: [any Updatable] = [], outputs: [any Updatable] = [], shapeless: Bool = false, _ f: @escaping (MLXArray, MLXArray) -> MLXArray) -> @Sendable (MLXArray, MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Compilation](./compilation.md)
 - [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md)

@@ -25,7 +25,7 @@ case INVERSE
 vDSP_DFT_INVERSE
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vDSP_DFT_Direction.INVERSE`](./inverse.md) to transform a signal from the frequency domain to the time domain.
 

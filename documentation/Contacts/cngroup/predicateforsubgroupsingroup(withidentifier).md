@@ -19,7 +19,7 @@ class func predicateForSubgroupsInGroup(withIdentifier parentGroupIdentifier: St
 + (NSPredicate *) predicateForSubgroupsInGroupWithIdentifier:(NSString *) parentGroupIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that you can use to fetch subgroup information from [`CNContactStore`](../cncontactstore.md).
 

@@ -23,7 +23,7 @@ var localObject: Any? { get }
 @property (nonatomic, readonly, nullable) id localObject;
 ```
 
-#### Discussion
+## Discussion
 
 The local object is available only to the app that initiates the copy or drag activity.
 

@@ -13,7 +13,7 @@
 sock_evt_closing = 9
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the socket is closing.
 

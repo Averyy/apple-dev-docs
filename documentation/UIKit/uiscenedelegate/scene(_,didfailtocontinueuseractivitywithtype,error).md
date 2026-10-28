@@ -23,7 +23,7 @@ optional func scene(_ scene: UIScene, didFailToContinueUserActivityWithType user
 - (void) scene:(UIScene *) scene didFailToContinueUserActivityWithType:(NSString *) userActivityType error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to let the user know that the specified activity couldn’t be completed. If you don’t implement this method, UIKit displays an error to the user with an appropriate message about the reason for the failure.
 

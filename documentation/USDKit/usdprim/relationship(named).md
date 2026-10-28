@@ -20,7 +20,7 @@ Returns the relationship with a given name on this prim.
 func relationship(named name: USDToken) -> USDPrim.Relationship
 ```
 
-#### Discussion
+## Discussion
 
 If no relationship named `name` exists on this prim, returns an invalid relationship handle.
 

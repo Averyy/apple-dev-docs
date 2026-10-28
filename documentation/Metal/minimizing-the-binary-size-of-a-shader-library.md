@@ -5,7 +5,7 @@
 
 Reduce the storage footprint of your shaders, and potentially reduce their compile time, by selecting the Metal compiler’s size optimization option.
 
-#### Overview
+## Overview
 
 By default, the Metal compiler optimizes your shader code for runtime speed. For example, the compiler may use *inlining* or *loop unrolling*, techniques that make copies of executable code to avoid branch penalties at runtime. Depending on the specifics of your shader code, these runtime-optimization efforts can significantly increase your shader library’s binary size and your shaders’ compile time.
 
@@ -21,7 +21,7 @@ You can set the Metal compiler’s size optimization option in the following way
 
 The simplest way to compile your shaders is to have Xcode compile them along with the rest of your app. As your shaders increase in complexity, size, or build time, you may consider precompiling them with the Metal command-line tools to avoid compiling them in Xcode. Some apps may need to compile shaders on the device, at runtime, with the Metal API.
 
-##### Compile shaders at build time
+### Compile shaders at build time
 
 To optimize for size while compiling shaders at build time, set the Metal compiler’s size optimization setting in Xcode:
 
@@ -33,7 +33,7 @@ To optimize for size while compiling shaders at build time, set the Metal compil
 
 Xcode passes this setting to the Metal compiler each time you build a target that includes shader code.
 
-##### Precompile shaders on the command line
+### Precompile shaders on the command line
 
 For apps that use numerous or complex shaders, consider precompiling your shaders outside of Xcode to save build time each time you compile your app. For more information on manually compiling your shader library, see [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md).
 
@@ -45,7 +45,7 @@ To optimize for size when compiling a Metal shader source file in a command-line
 
 > **Note**:  This example uses the `macosx` SDK, but you can use any SDK your app targets.
 
-##### Compile shaders at runtime
+### Compile shaders at runtime
 
 If you want to compile shaders at runtime, your app can configure the Metal API to optimize for size. For some apps, it may be more practical to compile a shader on the device when the app is running, typically to reduce the app’s storage size. You can also compile shaders at runtime for rapid prototyping and debugging.
 

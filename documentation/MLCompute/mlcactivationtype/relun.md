@@ -23,7 +23,7 @@ case relun
 MLCActivationTypeReLUN
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

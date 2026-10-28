@@ -19,11 +19,11 @@ func monitorNotifications(matchingCriteria: [HIDDeviceManager.DeviceMatchingCrit
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Return Value
+## Return Value
 
 An asynchronous stream that receives notifications.
 
-#### Discussion
+## Discussion
 
 Notifications come in asynchronously from the manager at arbitrary times when relevant events occur.
 

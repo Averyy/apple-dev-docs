@@ -9,7 +9,7 @@ Design, create, and publish signature content for Apple News.
 - Apple News API 1.0+
 - Apple News Format 1.7+
 
-#### Overview
+## Overview
 
 Apple News is an iOS, iPadOS, macOS, and visionOS app that delivers articles from newspapers, magazines, websites, and other sources. News automatically optimizes your content for iPhone, iPad, Mac, and Apple Vision Pro to give your readers the best experience for their device.
 

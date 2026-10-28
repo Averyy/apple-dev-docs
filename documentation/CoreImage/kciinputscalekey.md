@@ -24,7 +24,7 @@ let kCIInputScaleKey: String
 extern NSString * const kCIInputScaleKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies  the amount of the effect.
 

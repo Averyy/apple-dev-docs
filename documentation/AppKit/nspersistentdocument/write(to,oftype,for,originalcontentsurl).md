@@ -20,7 +20,7 @@ func write(to absoluteURL: URL, ofType typeName: String, for saveOperation: NSDo
 - (BOOL) writeToURL:(NSURL *) absoluteURL ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation originalContentsURL:(NSURL *) absoluteOriginalContentsURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

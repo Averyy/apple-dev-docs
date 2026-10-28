@@ -21,11 +21,11 @@ func top(_ array: MLXArray, k: Int, axis: Int = -1, stream: StreamOrDevice = .de
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The elements will not necessarily be in sorted order.
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`top(_:k:stream:)`](./top%28_,k,stream%29.md)

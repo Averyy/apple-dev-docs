@@ -24,11 +24,11 @@ func localizedAssetPacks(for language: Locale.Language) -> Set<AssetPack>
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 The localized asset packs.
 
-#### Discussion
+## Discussion
 
 Depending on which languages are available, the returned asset packs’ respective languages may not exactly match the specified language.
 

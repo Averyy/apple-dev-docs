@@ -20,7 +20,7 @@ var criticalFillColor: NSColor! { get set }
 @property (copy, null_resettable) NSColor * criticalFillColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is a system-defined color which may vary between level indicator styles and OS releases.
 

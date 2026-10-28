@@ -23,7 +23,7 @@ weak var searchResultsUpdater: (any UISearchResultsUpdating)? { get set }
 @property (nonatomic, weak, nullable) id<UISearchResultsUpdating> searchResultsUpdater;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object that adopts the [`UISearchResultsUpdating`](../uisearchresultsupdating.md) protocol. Use the methods of that protocol to search your content and deliver the results to your search results view controller. The object contained by the [`searchResultsUpdater`](./searchresultsupdater.md) property is often the view controller that’s set during initialization.
 

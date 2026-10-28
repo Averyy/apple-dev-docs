@@ -24,7 +24,7 @@ struct Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Overview
+## Overview
 
 > **Note**: This is the associated `Iterator` of `LazyFilterSequence` and `LazyFilterCollection`.
 

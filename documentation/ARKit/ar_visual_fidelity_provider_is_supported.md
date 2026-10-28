@@ -15,7 +15,7 @@ Determine whether this device supports the visual fidelity data provider.
 extern bool ar_visual_fidelity_provider_is_supported();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the visual fidelity data provider is supported on this device, `false` otherwise.
 

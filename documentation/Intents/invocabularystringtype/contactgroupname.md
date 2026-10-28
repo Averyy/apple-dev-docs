@@ -24,7 +24,7 @@ case contactGroupName
 INVocabularyStringTypeContactGroupName
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might include the string “Tahoe Trip” to describe the members of a vacation party.
 

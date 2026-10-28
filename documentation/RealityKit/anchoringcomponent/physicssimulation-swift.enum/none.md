@@ -20,7 +20,7 @@ Opts out the entity and its descendants from having their own physics space.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 `none` implies the anchor entity does not have its own physics simulation.
 

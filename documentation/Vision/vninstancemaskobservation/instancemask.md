@@ -24,7 +24,7 @@ var instanceMask: CVPixelBuffer { get }
 @property (nonatomic, readonly) CVPixelBufferRef instanceMask;
 ```
 
-#### Discussion
+## Discussion
 
 A pixel can only correspond to one instance. A `0` represents the background, and all other values represent the indices of the instances.
 

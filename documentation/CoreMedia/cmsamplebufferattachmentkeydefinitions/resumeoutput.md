@@ -21,7 +21,7 @@ If present, indicates that output should be resumed following a discontinuity.
 static let resumeOutput: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to request that a decode pipeline resume producing output after a discontinuity announced using the [`kCMSampleBufferConduitNotification_InhibitOutputUntil`](../kcmsamplebufferconduitnotification_inhibitoutputuntil.md) notification. The getter returns the default value of false if this attachment is not present.
 

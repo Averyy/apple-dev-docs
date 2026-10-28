@@ -24,7 +24,7 @@ static var portraitUpsideDown: PreviewTrait<Preview.ViewTraits> { get }
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`portraitUpsideDown`](../../SwiftUI/interfaceorientation/portraitupsidedown.md).
 

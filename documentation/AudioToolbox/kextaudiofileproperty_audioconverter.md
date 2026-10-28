@@ -24,11 +24,11 @@ var kExtAudioFileProperty_AudioConverter: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_AudioConverter
 ```
 
-#### Discussion
+## Discussion
 
 The value is a read-only [`AudioConverterRef`](./audioconverterref.md) object.
 
-#### Discussion
+## Discussion
 
 If you alter any properties of the converter—the bit rate, for instance—you must then set the `kExtAudioFileProperty_ConverterConfig` property. When you do so, using a `NULL` configuration is sufficient. Setting that property ensure that the output file’s data format is consistent with the format being produced by the converter.
 

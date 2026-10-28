@@ -20,7 +20,7 @@ A status value that indicates that the downloaded asset pack is out of date.
 static let outOfDate: AssetPack.Status
 ```
 
-#### Discussion
+## Discussion
 
 The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`updateAvailable`](./updateavailable.md) to determine whether an update can currently be downloaded.
 

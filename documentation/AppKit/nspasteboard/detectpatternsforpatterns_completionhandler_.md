@@ -15,7 +15,7 @@ Determines whether the first pasteboard item matches the specified patterns, wit
 - (void) detectPatternsForPatterns:(NSSet<NSString *> *) patterns completionHandler:(void (^)(NSSet<NSString *> *detectedPatterns, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method only gives an indication of whether the first pasteboard item matches a particular pattern, and doesn’t allow the app to access the item’s contents. As a result, the system doesn’t notify the person using the app about reading the contents of the pasteboard.
 

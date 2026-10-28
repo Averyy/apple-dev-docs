@@ -23,7 +23,7 @@ let NSPersonNameComponentGivenName: String
 extern NSString * const NSPersonNameComponentGivenName;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a given name component.
 

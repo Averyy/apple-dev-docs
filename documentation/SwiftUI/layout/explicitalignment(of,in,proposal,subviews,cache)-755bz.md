@@ -21,7 +21,7 @@ Returns the result of merging the vertical alignment guides of all subviews.
 func explicitAlignment(of guide: VerticalAlignment, in bounds: CGRect, proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache) -> CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement the [`explicitAlignment(of:in:proposal:subviews:cache:)`](./explicitalignment%28of,in,proposal,subviews,cache%29-755bz.md) method in your custom layout, the protocol uses this default implementation instead, which merges the guides of all the subviews.
 

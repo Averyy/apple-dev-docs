@@ -21,7 +21,7 @@ func identifier() -> String!
 - (NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The unique identifier for the composition if it comes from the composition repository; `nil` otherwise.
 

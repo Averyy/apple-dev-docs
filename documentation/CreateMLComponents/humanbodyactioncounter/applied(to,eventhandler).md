@@ -20,7 +20,7 @@ Predicts cumulative human body action counts from a sequence of human body pose 
 func applied<S>(to input: S, eventHandler: EventHandler? = nil) async throws -> HumanBodyActionCounter.OutputSequence where S : TemporalSequence, S.Feature == [Pose]
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of cumulative human body action counts.
 

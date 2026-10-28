@@ -9,7 +9,7 @@ Retrieve performance metrics for ads.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Ad reports return one row per ad. Each row contains a `metadata` object with ad identifiers (including `campaignId` and `adGroupId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,11 +17,11 @@ Filter by the required `campaignId` in the `filters` array, optionally narrowed 
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### groupBy Dimensions
+### groupBy Dimensions
 
 `countryOrRegion`
 
@@ -45,13 +45,13 @@ Only `DAILY` granularity or coarser is available for ads, and either `ORTZ` or `
 | HOURLY granularity | Not available for ads. Use `DAILY` as the finest granularity. |
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Daily by Country**:
 
 Retrieve daily ad metrics for a specific ad group, grouped by country or region.
 
-##### Request
+### Request
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
 
@@ -87,7 +87,7 @@ POST /v1/reports/apps/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -162,7 +162,7 @@ POST /v1/reports/apps/ads/query
 
 Retrieve daily ad metrics without dimensional grouping. The `granularMetrics` array returns one entry per day with aggregate figures across all devices and countries.
 
-##### Request
+### Request
 
 Filters by `campaignId` with no `groupBy` dimension, returning daily ad metrics aggregated across all devices and countries for a 7-day window.
 
@@ -190,7 +190,7 @@ POST /v1/reports/apps/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

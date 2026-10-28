@@ -24,7 +24,7 @@ func disallowDeferredLocationUpdates()
 - (void) disallowDeferredLocationUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if you previously deferred location event delivery using the [`allowDeferredLocationUpdates(untilTraveled:timeout:)`](./allowdeferredlocationupdates%28untiltraveled,timeout%29.md) method and now want to resume the delivery of events at normal intervals.
 

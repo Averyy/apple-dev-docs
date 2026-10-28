@@ -28,7 +28,7 @@ optional func resolveRelativeFanSpeedSetting(for intent: INSetClimateSettingsInC
 - (void) resolveRelativeFanSpeedSettingForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the fan speed setting. Use the intent object to identify the fan speed index specified by the user. This maps to the next or previous fan speed setting in the vehicle.
 

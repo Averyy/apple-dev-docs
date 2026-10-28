@@ -24,7 +24,7 @@ func CATransform3DMakeTranslation(_ tx: CGFloat, _ ty: CGFloat, _ tz: CGFloat) -
 extern CATransform3D CATransform3DMakeTranslation(CGFloat tx, CGFloat ty, CGFloat tz);
 ```
 
-#### Discussion
+## Discussion
 
 `t =  [1 0 0 0; 0 1 0 0; 0 0 1 0; tx ty tz 1].`
 

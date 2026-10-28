@@ -25,7 +25,7 @@ var mainDocumentURL: URL? { get set }
 @property (copy, nullable) NSURL * mainDocumentURL;
 ```
 
-#### Discussion
+## Discussion
 
 The caller should set the main document URL to an appropriate main document, if known. For example, when loading a web page the URL of the HTML document for the top-level frame would be appropriate. This URL will be used for the “only from same domain as main document” cookie accept policy.
 

@@ -21,7 +21,7 @@ A stylistic override to transform the case of `Text` when displayed, using the e
 var textCase: Text.Case? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, displaying the `Text` without any case changes.
 

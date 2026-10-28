@@ -25,11 +25,11 @@ typealias AudioSessionInterruptionListener = (UnsafeMutableRawPointer?, UInt32) 
 typedef void (*)(void *, unsigned int) AudioSessionInterruptionListener;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your function `MyInterruptionListener`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 To register your interruption listener callback with your application’s audio session object, specify it in the [`AudioSessionInitialize(_:_:_:_:)`](./audiosessioninitialize%28_,_,_,_%29.md) function.
 

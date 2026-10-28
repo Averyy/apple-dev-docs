@@ -15,7 +15,7 @@ Returns the rectangle associated with the specified key.
 - (NSRect) rectForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle value. Returns `NSZeroRect` if the key is not in the table or the receiver lacks a PPD file.
 

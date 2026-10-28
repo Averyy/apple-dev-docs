@@ -6,7 +6,7 @@
 
 An atom that specifies the clipping region.
 
-#### Overview
+## Overview
 
 The clipping region atom contains the data that specifies the clipping region, including its size, bounding box, and region. Clipping region atoms have an atom type value of `'crgn'`.
 

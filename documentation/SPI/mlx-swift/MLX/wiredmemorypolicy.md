@@ -21,7 +21,7 @@ protocol WiredMemoryPolicy : Identifiable, Sendable where Self.ID == AnyHashable
 
 - [Wired Memory Management](./wired-memory.md)
 
-#### Overview
+## Overview
 
 Policies are grouped by their `id` so that multiple tickets can coordinate through a shared policy instance. The manager computes one limit per policy group, then uses the maximum across groups to avoid double-counting and to allow heterogeneous strategies to coexist. For reference-type policies, provide a stable `id` to define grouping semantics.
 

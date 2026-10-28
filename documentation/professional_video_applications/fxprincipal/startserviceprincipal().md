@@ -19,7 +19,7 @@ class func startServicePrincipal()
 + (void) startServicePrincipal;
 ```
 
-#### Discussion
+## Discussion
 
 The purpose of this method is so that plug-ins don’t have to link against `PlugInKit.framework`. You can simply link against `FxPlug.framework` and call `[FxPrincipal startServicePrincipal]` from the service principal’s `main()` function.
 

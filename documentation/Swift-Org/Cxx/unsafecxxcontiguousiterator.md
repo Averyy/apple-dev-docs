@@ -17,7 +17,7 @@ Bridged C++ iterator that allows traversing elements of a random access collecti
 protocol UnsafeCxxContiguousIterator : UnsafeCxxRandomAccessIterator
 ```
 
-#### Overview
+## Overview
 
 Mostly useful for optimizing operations with containers that conform to `CxxRandomAccessCollection` and should not generally be used directly.
 

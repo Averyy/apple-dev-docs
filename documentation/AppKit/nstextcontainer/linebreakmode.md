@@ -19,7 +19,7 @@ var lineBreakMode: NSLineBreakMode { get set }
 @property NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSLineBreakMode`](../nslinebreakmode.md) constants specify what happens when a line is too long for its container. For example, wrapping can occur on word boundaries (the default) or character boundaries, or the line can be clipped or truncated. The default value of this property is [`NSLineBreakMode.byWordWrapping`](../nslinebreakmode/bywordwrapping.md).
 

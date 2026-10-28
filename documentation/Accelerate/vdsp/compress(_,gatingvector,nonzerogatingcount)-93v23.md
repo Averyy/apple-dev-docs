@@ -21,11 +21,11 @@ Returns a compressed copy of the specified double-precision vector using the non
 static func compress<T, U>(_ vector: T, gatingVector: U, nonZeroGatingCount: Int?) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The result of the compression operation.
 
-#### Discussion
+## Discussion
 
 The following code shows an example of compressing the values in `source` using the nonzero values in `gatingVector`:
 

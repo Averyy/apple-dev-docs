@@ -21,7 +21,7 @@ Rejects an incoming client session request.
 func reject(reason: String) -> XPCListener.IncomingSessionRequest.Decision
 ```
 
-#### Return Value
+## Return Value
 
 A decision that indicates that the request was canceled.
 

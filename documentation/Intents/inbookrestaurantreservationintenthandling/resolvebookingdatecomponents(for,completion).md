@@ -26,7 +26,7 @@ optional func resolveBookingDateComponents(for intent: INBookRestaurantReservati
 - (void) resolveBookingDateComponentsForBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent withCompletion:(void (^)(INDateComponentsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the date associated with the reservation.
 

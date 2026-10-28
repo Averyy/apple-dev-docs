@@ -24,7 +24,7 @@ var cgPointValue: CGPoint { get }
 @property (nonatomic, readonly) CGPoint CGPointValue;
 ```
 
-#### Return Value
+## Return Value
 
 The CoreGraphics point structure representation of the value.
 

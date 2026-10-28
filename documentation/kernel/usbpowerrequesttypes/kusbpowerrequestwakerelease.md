@@ -15,7 +15,7 @@ The system requests a release of power upon waking.
 kUSBPowerRequestWakeRelease = 2
 ```
 
-#### Discussion
+## Discussion
 
 When you use this enumeration with [`ReturnExtraPower`](../../iokit/iousbdeviceinterface942/api-2977171-returnextrapower.md), it  sends a message to all devices to return any extra wake power, if possible.
 

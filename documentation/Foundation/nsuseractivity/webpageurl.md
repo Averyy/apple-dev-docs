@@ -30,7 +30,7 @@ var webpageURL: URL? { get set }
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 When no suitable app is installed on a resuming device and the [`webpageURL`](./webpageurl.md) property is set, the specified webpage is loaded and the user activity is continued in a web browser.
 

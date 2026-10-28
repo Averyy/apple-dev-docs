@@ -19,7 +19,7 @@ object GradientFill
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 This is an abstract definition. Don’t use this object type directly; use only the object that extends it, such as [`LinearGradientFill`](./lineargradientfill.md).
 

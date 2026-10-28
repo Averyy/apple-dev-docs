@@ -20,7 +20,7 @@ A Boolean value that indicates whether a person can edit the canvas contents.
 @preconcurrency var isEditable: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether a person can edit content. The default value is `true`. Coordinate this property with your `MarkupEditViewController` or `MarkupToolbarViewController` to prevent people from adding new canvas elements.
 

@@ -15,11 +15,11 @@ Extracts the type of an endpoint from an endpoint descriptor.
 uint8_t IOUSBGetEndpointType(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The endpoint type.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its type.
 

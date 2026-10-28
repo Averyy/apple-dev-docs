@@ -23,7 +23,7 @@ func executeForward(batchSize: Int, options: MLCExecutionOptions = [], outputsDa
 - (BOOL) executeForwardWithBatchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options outputsData:(NSDictionary<NSString *,MLCTensorData *> *) outputsData completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 

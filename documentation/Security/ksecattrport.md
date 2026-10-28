@@ -25,7 +25,7 @@ let kSecAttrPort: CFString
 extern CFStringRef const kSecAttrPort;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and represents an Internet port number. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

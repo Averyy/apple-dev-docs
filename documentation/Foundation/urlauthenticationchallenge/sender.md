@@ -25,7 +25,7 @@ var sender: (any URLAuthenticationChallengeSender)? { get }
 @property (retain, readonly, nullable) id<NSURLAuthenticationChallengeSender> sender;
 ```
 
-#### Discussion
+## Discussion
 
 If you are using the [`URLSession`](../urlsession.md) API, this value is purely informational, because you *must* respond to authentication challenges in your [`URLSessionDelegate`](../urlsessiondelegate.md) or [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md) implementations, by passing [`URLSession.AuthChallengeDisposition`](../urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
 

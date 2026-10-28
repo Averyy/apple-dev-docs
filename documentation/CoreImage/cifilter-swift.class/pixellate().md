@@ -28,11 +28,11 @@ class func pixellate() -> any CIFilter & CIPixellate
 
 - [Customizing Image Transitions](../customizing-image-transitions.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the pixelate filter to an image. The effect produces a result by mapping the image to colored squares with colors defined by the pixels of the input image.
 

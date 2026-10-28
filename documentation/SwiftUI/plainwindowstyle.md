@@ -16,7 +16,7 @@ The plain window style.
 struct PlainWindowStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plain`](./windowstyle/plain.md) to construct this style.
 

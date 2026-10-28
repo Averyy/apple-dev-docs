@@ -24,7 +24,7 @@ case notLogged
 HKMedicationDoseEventLogStatusNotLogged
 ```
 
-#### Discussion
+## Discussion
 
 The system clears the prior status.
 

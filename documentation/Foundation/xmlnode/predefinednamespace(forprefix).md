@@ -20,7 +20,7 @@ class func predefinedNamespace(forPrefix name: String) -> XMLNode?
 + (NSXMLNode *) predefinedNamespaceForPrefix:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object of kind [`XMLNode.Kind.namespace`](./kind-swift.enum/namespace.md) or `nil` if the object couldn’t be created. If something other than a predefined-namespace prefix is specified, the method returns `nil`.
 

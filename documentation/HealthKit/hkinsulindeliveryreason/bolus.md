@@ -24,7 +24,7 @@ case bolus
 HKInsulinDeliveryReasonBolus
 ```
 
-#### Discussion
+## Discussion
 
 Users administer bolus insulin to meet episodic needs, such as during a meal or to correct their blood glucose levels.
 

@@ -25,7 +25,7 @@ class SCNPhysicsWorld
 @interface SCNPhysicsWorld : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create [`SCNPhysicsWorld`](./scnphysicsworld.md) objects directly; instead, read the [`physicsWorld`](./scnscene/physicsworld.md) property of an [`SCNScene`](./scnscene.md) object. Use physics world object to perform the following tasks:
 

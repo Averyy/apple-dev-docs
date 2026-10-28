@@ -6,7 +6,7 @@
 
 A 32-bit integer that indicates the structure used in the metadata atom.
 
-#### Overview
+## Overview
 
 Set to `‘mdta’`.
 

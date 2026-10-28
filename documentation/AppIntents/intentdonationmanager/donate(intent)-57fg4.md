@@ -22,11 +22,11 @@ Donates the specified app intent to the system synchronously.
 func donate(intent: some AppIntent) -> IntentDonationIdentifier
 ```
 
-#### Return Value
+## Return Value
 
 A unique identifier you can use to refer to the donation later. The method returns this value whether the donation succeeds or fails.
 
-#### Discussion
+## Discussion
 
 When someone completes an action in your app, call this method to donate a matching app intent. The system doesn’t run the app intent you provide, but uses the information to predict future actions. If an error occurs during the donation process, this method ignores the error.
 

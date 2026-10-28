@@ -17,7 +17,7 @@ Gets the SSL protocol version.
 OSStatus SSLGetProtocolVersion(SSLContextRef context, SSLProtocol *protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

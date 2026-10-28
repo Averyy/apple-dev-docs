@@ -19,11 +19,11 @@ func PMPrinterGetPaperList(_ printer: PMPrinter, _ paperList: UnsafeMutablePoint
 OSStatus PMPrinterGetPaperList(PMPrinter printer, CFArrayRef  _Nullable *paperList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function obtains a list of the papers that a given printer claims to support. The paper list does not include any custom paper sizes that may be available.
 

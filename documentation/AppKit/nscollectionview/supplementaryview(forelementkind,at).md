@@ -19,11 +19,11 @@ func supplementaryView(forElementKind elementKind: NSCollectionView.Supplementar
 - (NSView<NSCollectionViewElement> *) supplementaryViewForElementKind:(NSCollectionViewSupplementaryElementKind) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The view for the specified index path or `nil` if no view is available.
 
-#### Discussion
+## Discussion
 
 For efficiency, the collection view does not create supplementary views until they are needed. Typically, views are created only when they need to be displayed onscreen. If the collection view does not currently have a supplementary view for the specified index path, because that view would be positioned offscreen, this method returns `nil`.
 

@@ -23,7 +23,7 @@ var focusStyle: UITableViewCell.FocusStyle { get set }
 @property (nonatomic) UITableViewCellFocusStyle focusStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UITableViewCell.FocusStyle.default`](./focusstyle-swift.enum/default.md). For the list of possible focus styles, see [`UITableViewCell.FocusStyle`](./focusstyle-swift.enum.md).
 

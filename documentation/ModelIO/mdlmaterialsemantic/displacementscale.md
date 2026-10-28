@@ -24,7 +24,7 @@ case displacementScale
 MDLMaterialSemanticDisplacementScale
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `objectDisplacementScale` and `map_objectDisplacementScale` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

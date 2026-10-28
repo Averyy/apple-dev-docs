@@ -24,7 +24,7 @@ func setConstantValue(_ value: UnsafeRawPointer, type: MTLDataType, withName nam
 - (void) setConstantValue:(const void *) value type:(MTLDataType) type withName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 The first example declares a single function constant in a Metal Shading Language file.
 

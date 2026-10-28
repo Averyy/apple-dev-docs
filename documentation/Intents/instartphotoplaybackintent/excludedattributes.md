@@ -33,7 +33,7 @@ var excludedAttributes: INPhotoAttributeOptions { get }
 @property (atomic, assign, readonly) INPhotoAttributeOptions excludedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 None of the specified attributes may be present in the photos.
 

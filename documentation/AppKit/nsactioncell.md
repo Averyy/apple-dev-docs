@@ -19,13 +19,13 @@ class NSActionCell
 @interface NSActionCell : NSCell
 ```
 
-#### Overview
+## Overview
 
 An [`NSActionCell`](./nsactioncell.md) does three things: it displays text or an icon; it provides the target object and action method used by its [`NSControl`](./nscontrol.md) object; and it handles mouse (cursor) tracking by properly highlighting its area and sending action messages to its target based on cursor movement.
 
 The [`controlView`](./nscell/controlview.md) of an [`NSActionCell`](./nsactioncell.md) is the view in which the receiver was last drawn.
 
-##### Obtaining and Setting Cell Values
+### Obtaining and Setting Cell Values
 
 The [`floatValue`](./nscell/floatvalue.md), [`intValue`](./nscell/intvalue.md), and [`integerValue`](./nscell/integervalue.md) methods return the value with their corresponding types after validating any editing of cell content. If the cell is not a text-type cell or the cell value is not scannable to the appropriate type, these return 0.
 
@@ -33,7 +33,7 @@ The [`stringValue`](./nscell/stringvalue.md) method returns the receiver’s val
 
 Calling `setObjectValue:` discards any editing of the receiver’s text and sets its object value to the specified object. After doing so, if the object value is different from what it was before the method was invoked, the method marks the receiver as needing redisplay.
 
-##### Configuring an NSActionCell Object
+### Configuring an NSActionCell Object
 
 The `NSActionCell` implementation of [`setFloatingPointFormat:left:right:`](./nscell/setfloatingpointformat_left_right_.md) supplements the `NSCell` implementation by marking the receiver as needing redisplay after discarding any editing changes that were being made to cell text.
 
@@ -74,8 +74,6 @@ The `NSActionCell` implementation of [`setFloatingPointFormat:left:right:`](./ns
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

@@ -19,7 +19,7 @@ class NSAccessibilityCustomAction
 @interface NSAccessibilityCustomAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Apps that support custom actions can create instances of this class, specifying the user-readable name of the action, and either a handler closure or the object and selector to use when performing the action. Assistive apps display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor.
 

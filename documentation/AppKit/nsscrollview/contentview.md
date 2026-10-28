@@ -19,7 +19,7 @@ var contentView: NSClipView { get set }
 @property (strong) NSClipView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to an `NSClipView` that has a document view also sets the scroll view’s document view to be the document view of that `NSClipView`. The original content view retains its document view.
 

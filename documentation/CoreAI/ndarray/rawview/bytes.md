@@ -19,7 +19,7 @@ A span over the backing bytes of this tensor.
 var bytes: RawSpan { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: When accessing the bytes directly you are responsible for interpreting the layout of the tensor according to the `strides` property of this view. This means you must either ensure the logical elements are contiguous, or dynamically handle nontrivial striding. If the view has an [`interleaveLayout`](./interleavelayout.md), the strides for that dimension are block strides and must be interpreted accordingly — see [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md).
 

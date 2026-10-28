@@ -5,7 +5,7 @@
 
 Extend the functionality of your app playground by finding and adding a publicly available Swift package.
 
-#### Overview
+## Overview
 
 Swift packages solve the problem of sharing code and resources between projects — and with other developers. You can use the same code in more than one playground without having to maintain multiple copies. You can write a powerful app without having to write it all yourself building on work shared by others.
 

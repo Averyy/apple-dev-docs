@@ -19,7 +19,7 @@ var frameCenterRotation: CGFloat { get set }
 @property CGFloat frameCenterRotation;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the angle of rotation of the view’s frame around its center. If you changed the underlying layer’s [`anchorPoint`](../../QuartzCore/calayer/anchorpoint.md) property, the result of setting this property is undefined.
 

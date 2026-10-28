@@ -15,11 +15,11 @@ Retrieves the value of the reference constant for your component.
 long GetComponentRefcon(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 The reference constant for the specified component. 
 
-#### Discussion
+## Discussion
 
 There is one reference constant for each component, regardless of the number of connections to that component. When your component is registered, the Component Manager sets this reference constant to 0.
 

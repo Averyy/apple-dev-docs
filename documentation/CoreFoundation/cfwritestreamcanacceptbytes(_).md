@@ -25,7 +25,7 @@ func CFWriteStreamCanAcceptBytes(_ stream: CFWriteStream!) -> Bool
 extern Boolean CFWriteStreamCanAcceptBytes(CFWriteStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if data can be written to `stream` without blocking, `false` otherwise. If `stream` cannot tell if data can be written without actually trying to write the data, this function returns `true`.
 

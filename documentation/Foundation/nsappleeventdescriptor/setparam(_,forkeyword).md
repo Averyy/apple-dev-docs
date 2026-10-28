@@ -20,7 +20,7 @@ func setParam(_ descriptor: NSAppleEventDescriptor, forKeyword keyword: AEKeywor
 - (void) setParamDescriptor:(NSAppleEventDescriptor *) descriptor forKeyword:(AEKeyword) keyword;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event or Apple event record, both of which can contain parameters.
 

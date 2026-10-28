@@ -23,7 +23,7 @@ func ABPersonCopyLocalizedPropertyName(_ property: ABPropertyID) -> Unmanaged<CF
 extern CFStringRefABPersonCopyLocalizedPropertyName(ABPropertyID property);
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of `property`.
 

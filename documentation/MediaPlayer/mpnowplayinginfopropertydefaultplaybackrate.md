@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyDefaultPlaybackRate: String
 extern NSString * const MPNowPlayingInfoPropertyDefaultPlaybackRate;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as a `double`. Set this property if your app is playing a media item at a playback rate other than `1.0` as its default rate.
 

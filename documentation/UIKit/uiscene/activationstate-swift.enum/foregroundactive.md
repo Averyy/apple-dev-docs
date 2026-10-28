@@ -23,7 +23,7 @@ case foregroundActive
 UISceneActivationStateForegroundActive
 ```
 
-#### Discussion
+## Discussion
 
 The interface for an active scene is onscreen and visible to the user.
 

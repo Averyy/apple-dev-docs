@@ -24,7 +24,7 @@ var levelsOfDetail: Int { get set }
 @property size_t levelsOfDetail;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1. Each level of detail is half the resolution of the previous level. If too many levels are specified for the current size of the layer, then the number of levels is clamped to the maximum value (the bottom most level of detail must contain at least a single pixel in each dimension.)
 

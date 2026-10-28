@@ -18,7 +18,7 @@ Removes a text range from the set of matches.
 func invalidateFoundRange(_ range: UITextRange, document: DocumentIdentifier)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to invalidate a text range when removing or changing text in the document. This causes the system find panel to update it’s current state, and if the range is the highlighted range, the find panel advances to the next found result.
 

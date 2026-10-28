@@ -20,7 +20,7 @@ Updates the cell’s configuration using the current state.
 @objc(_bridgedUpdateConfigurationUsingState:) @preconcurrency dynamic func updateConfiguration(using state: UICellConfigurationState)
 ```
 
-#### Discussion
+## Discussion
 
 Avoid calling this method directly. Instead, use [`setNeedsUpdateConfiguration()`](./setneedsupdateconfiguration%28%29.md) to request an update.
 

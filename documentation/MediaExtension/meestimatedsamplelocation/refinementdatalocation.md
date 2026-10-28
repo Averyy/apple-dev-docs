@@ -19,7 +19,7 @@ var refinementDataLocation: AVSampleCursorStorageRange { get }
 @property (nonatomic, readonly) AVSampleCursorStorageRange refinementDataLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this refinement data to the [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](../mesamplecursor/refinesamplelocation%28_,refinementdata,refinementdatalength,refinedlocation%29.md) to determine the exact sample location.
 

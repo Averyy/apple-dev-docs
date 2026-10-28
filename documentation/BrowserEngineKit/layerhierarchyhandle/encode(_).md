@@ -20,7 +20,7 @@ func encode(_ block: (mach_port_t, Data) -> Void)
 - (void) encodeWithBlock:(void (^)(mach_port_t copiedPort, NSData *data)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the supplied closure with a `mach_port_t` and `Data` object that together represent the serialized layer hierarchy handle. The port serves as a reference to the layer hierarchy that you can share with another process. Use the port and data together to reconstruct the handle using [`init(port:data:)`](./init%28port,data%29.md).
 

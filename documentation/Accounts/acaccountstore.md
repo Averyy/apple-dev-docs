@@ -24,7 +24,7 @@ class ACAccountStore
 @interface ACAccountStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`ACAccountStore`](./acaccountstore.md) class provides an interface for accessing, managing, and storing accounts. To create and retrieve accounts from the Accounts database, you must create an [`ACAccountStore`](./acaccountstore.md) object. Each [`ACAccount`](./acaccount.md) object belongs to a single account store object.
 

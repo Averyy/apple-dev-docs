@@ -23,11 +23,11 @@ func needsUpdateConstraints() -> Bool
 - (BOOL) needsUpdateConstraints;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view’s constraints need updating, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The constraint-based layout system uses the return value of this method to determine whether it needs to call [`updateConstraints()`](./updateconstraints%28%29.md) on your view as part of its normal layout pass.
 

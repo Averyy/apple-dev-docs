@@ -26,7 +26,7 @@ init(upgradeFor connection: NWTCPConnection)
 - (instancetype) initWithUpgradeForConnection:(NWTCPConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 An upgraded connection will be initialized using the same remote endpoint and set of parameters from the original connection. If the original connection becomes disconnected or cancelled, the new upgrade connection will automatically be considered better.
 

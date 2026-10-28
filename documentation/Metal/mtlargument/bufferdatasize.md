@@ -24,7 +24,7 @@ var bufferDataSize: Int { get }
 @property (readonly) NSUInteger bufferDataSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the argument is not a buffer, querying this property is a fatal error.
 

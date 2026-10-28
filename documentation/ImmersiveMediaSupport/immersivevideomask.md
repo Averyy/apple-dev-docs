@@ -19,7 +19,7 @@ A video mask to use during video rendering to smooth the edges of the mesh.
 struct ImmersiveVideoMask
 ```
 
-#### Overview
+## Overview
 
 This type holds the generated video mask texture and its relevant information.
 

@@ -19,7 +19,7 @@ A structure that encapsulates state for a content-unavailable view.
 struct UIContentUnavailableConfigurationState
 ```
 
-#### Overview
+## Overview
 
 Typically, you don’t create a configuration state yourself. To obtain a configuration state, override [`updateContentUnavailableConfiguration(using:)`](./uiviewcontroller/updatecontentunavailableconfiguration%28using%29.md) in your view controller subclass and use the state parameter. Outside of this method, you can get a view controller’s configuration state from the [`contentUnavailableConfigurationState`](./uiviewcontroller/contentunavailableconfigurationstate-7sczw.md) property.
 

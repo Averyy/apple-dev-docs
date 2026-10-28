@@ -13,7 +13,7 @@
 GetMissingComponentResourceUPP NewGetMissingComponentResourceUPP(GetMissingComponentResourceProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `GetMissingComponentResourceUPP` data type.
 

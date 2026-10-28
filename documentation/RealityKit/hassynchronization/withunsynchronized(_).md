@@ -21,7 +21,7 @@ Calls the given closure in a way such that component changes that the closure ma
 @preconcurrency func withUnsynchronized(_ changes: () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make local changes that don’t affect remote peers, like aligning a billboard component to face the local camera.
 

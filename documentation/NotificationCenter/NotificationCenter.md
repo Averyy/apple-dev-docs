@@ -14,7 +14,7 @@ Create and manage widgets for the Today view.
 
 > **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) instead.
 
-#### Overview
+## Overview
 
 The Notification Center framework helps you create and manage app extensions that implement Today widgets. The framework provides an API you can use to specify whether a Today widget has content to display, and to customize aspects of its appearance and behavior. In macOS, the Notification Center framework also provides ways to customize the editing and searching experience in a widget.
 

@@ -25,11 +25,11 @@ init(identifiers: [String]?, classifyingLabels: [String]?)
 - (instancetype) initWithIdentifiers:(NSArray<NSString *> *) identifiers classifyingLabels:(NSArray<NSString *> *) classifyingLabels;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `AVPlayerItemMetadataCollector`.
 
-#### Discussion
+## Discussion
 
 You can use the `identifiers` and `classifyingLabels` arguments to configure the metadata collector to filter its output to only the metadata items matching the specified criteria.
 

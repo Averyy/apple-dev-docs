@@ -16,7 +16,7 @@ enum tIOUSB30ResetTimeout : unsigned int {
 };
 ```
 
-#### Discussion
+## Discussion
 
 For information about these constants, see USB 3.2, 6.9.1.
 

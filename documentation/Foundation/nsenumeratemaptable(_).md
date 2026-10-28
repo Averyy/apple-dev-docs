@@ -25,7 +25,7 @@ func NSEnumerateMapTable(_ table: NSMapTable<AnyObject, AnyObject>) -> NSMapEnum
 extern NSMapEnumerator NSEnumerateMapTable(NSMapTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSMapEnumerator` structure that will cause successive key-value pairs of `table` to be visited each time this enumerator is passed to `NSNextMapEnumeratorPair`.
 

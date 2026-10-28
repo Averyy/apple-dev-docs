@@ -24,7 +24,7 @@ let CIDetectorMaxFeatureCount: String
 extern NSString * const CIDetectorMaxFeatureCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.  Valid values fall between 1 and 256 inclusive.
 

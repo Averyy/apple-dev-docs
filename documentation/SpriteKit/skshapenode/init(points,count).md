@@ -29,7 +29,7 @@ convenience init(points: UnsafeMutablePointer<CGPoint>, count numPoints: Int)
 
 - [Creating a Shape Node from an Array of Points](../creating-a-shape-node-from-an-array-of-points.md)
 
-#### Return Value
+## Return Value
 
 A new shape node. The node is created with a path that starts at the first point in the array, joining each adjacent pair of points with a line segment.
 

@@ -20,7 +20,7 @@ class NSRefreshController
 @interface NSRefreshController : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NSRefreshController` enables users to trigger refresh operations by pulling down on scrollable content. Add a refresh controller to an `NSScrollView` to provide this functionality. Configure the target and action to handle refresh events.
 

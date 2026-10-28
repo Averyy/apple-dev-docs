@@ -22,7 +22,7 @@ nonisolated
 var axes: Axis.Set { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`Axis.vertical`](../axis/vertical.md).
 

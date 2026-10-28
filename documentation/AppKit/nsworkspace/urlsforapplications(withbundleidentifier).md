@@ -19,11 +19,11 @@ func urlsForApplications(withBundleIdentifier bundleIdentifier: String) -> [URL]
 - (NSArray<NSURL *> *) URLsForApplicationsWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An array of URLs to available apps that can open the specified `bundleIdentifier`. Returns an empty array if no app associates with the bundle identifier.
 
-#### Discussion
+## Discussion
 
 The system sorts the resulting array accounts according to each app’s suitability to launch. The returned array lists the best match first.
 

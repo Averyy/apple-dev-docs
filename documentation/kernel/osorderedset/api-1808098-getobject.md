@@ -12,11 +12,11 @@ virtual OSObject * getObject(
  unsigned intindex) const;
 ```
 
-#### Return Value
+## Return Value
 
 The object at the given index, or `NULL` if none exists at that location.
 
-#### Overview
+## Overview
 
 The returned object will be released if removed from the set; if you plan to store the reference, you should call retain on that object.
 

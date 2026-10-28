@@ -23,7 +23,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, didSelect
 - (void) tabBarController:(UITabBarController *) tabBarController didSelectViewController:(UIViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS v3.0 and later, the tab bar controller calls this method regardless of whether the selected view controller changed. In addition, it is called only in response to user taps in the tab bar and is not called when your code changes the tab bar contents programmatically.
 

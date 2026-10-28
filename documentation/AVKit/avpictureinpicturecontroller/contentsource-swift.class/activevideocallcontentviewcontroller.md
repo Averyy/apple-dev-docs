@@ -22,7 +22,7 @@ var activeVideoCallContentViewController: AVPictureInPictureVideoCallViewControl
 @property (nonatomic, readonly) AVPictureInPictureVideoCallViewController * activeVideoCallContentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This view controller may indicate a preferred content size which influences the aspect ratio and the size of the Picture in Picture window. The view it presents isn’t interactive and doesn’t receive touches or user input.
 

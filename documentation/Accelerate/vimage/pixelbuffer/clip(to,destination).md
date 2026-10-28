@@ -23,7 +23,7 @@ func clip(to bounds: ClosedRange<Float>, destination: vImage.PixelBuffer<Format>
 
 Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `Float`.
 
-#### Discussion
+## Discussion
 
 Use this function to set all pixel values outside of the clipping range to the lower and upper bounds. For example, the following code clips pixel values to the range `0.25 ... 0.75`.
 

@@ -24,11 +24,11 @@ func parametersForOverview(withCount count: Int) -> [NSNumber]
 - (NSArray<NSNumber *> *) parametersForOverviewWithCount:(NSInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 An array of addresses representing the audio unit’s most important parameters.
 
-#### Discussion
+## Discussion
 
 This method allows a host to query an audio unit for a small number of its most important parameters, to be displayed in a compact generic view.
 

@@ -25,7 +25,7 @@ func isSupertype(of type: UTType) -> Bool
 - (BOOL) isSupertypeOfType:(UTType *) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `type` directly or indirectly conforms to the type, but returns [`false`](../../Swift/false.md) if it’s equal to the type.
 

@@ -27,7 +27,7 @@ class BGAppRefreshTask
 
 - [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
-#### Overview
+## Overview
 
 Use app refresh tasks for updating your app with small bits of information, such as the latest stock values.
 

@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_BQUE_Bit
 ```
 
-#### Discussion
+## Discussion
 
 BQUE bit definition.
 

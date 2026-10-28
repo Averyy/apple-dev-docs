@@ -15,7 +15,7 @@ An object that contains options for creating a map’s features.
 interface MapConstructorOptions
 ```
 
-#### Overview
+## Overview
 
 Use [`MapConstructorOptions`](./mapconstructoroptions.md) to set the initial characteristics for your map, including the visible portion of the map, which controls are visible, the configuration of overlays and annotations, and the visibility of the user’s location.
 

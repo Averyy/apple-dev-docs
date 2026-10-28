@@ -20,7 +20,7 @@ A notification that posts after a mouse connects to the device.
 extern NSString * const GCMouseDidConnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCMouse`](./gcmouse.md) object that represents the mouse.
 

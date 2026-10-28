@@ -18,7 +18,7 @@ case desktopIconWindow
 kCGDesktopIconWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for desktop icons.
 

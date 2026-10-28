@@ -18,7 +18,7 @@ typealias AudioDeviceIOProcID = AudioDeviceIOProc
 typedef AudioDeviceIOProc AudioDeviceIOProcID;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioDeviceIOProcID represents both an IOProc and the client data that goes with it. Once created, an AudioDeviceIOProcID can be used everywhere one would use a regular IOProc. The purpose for an AudioDeviceIOProcID is to allow a client to register the same function pointer as an IOProc with a device multiple times provided
 

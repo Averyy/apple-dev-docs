@@ -22,7 +22,7 @@ case handleInApp
 INStartWorkoutIntentResponseCodeHandleInApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you want SiriKit to launch your app in the background so that you can handle the intent there. With this code, the user continues to interact with Siri, but your app has an opportunity to set up a workout session or any other information needed to manage the user’s workout more effectively.
 

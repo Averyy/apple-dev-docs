@@ -23,7 +23,7 @@ typealias NSFileProviderItem = any NSFileProviderItemProtocol
 typedef id<NSFileProviderItem> NSFileProviderItem;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of all the properties defined by [`NSFileProviderItem`](./nsfileprovideritem-swift.typealias.md), see [`NSFileProviderItemProtocol`](./nsfileprovideritemprotocol.md).
 

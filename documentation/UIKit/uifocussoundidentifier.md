@@ -27,7 +27,7 @@ typedef NSString * UIFocusSoundIdentifier;
 
 - [Using custom sounds for focus movement](./using-custom-sounds-for-focus-movement.md)
 
-#### Overview
+## Overview
 
 To assign an identifier to a custom sound file, call the [`register(_:forSoundIdentifier:)`](./uifocussystem/register%28_,forsoundidentifier%29.md) method of [`UIFocusSystem`](./uifocussystem.md).
 

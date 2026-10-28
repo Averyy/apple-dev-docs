@@ -24,7 +24,7 @@ var subsurface: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * subsurface;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.9`.
 

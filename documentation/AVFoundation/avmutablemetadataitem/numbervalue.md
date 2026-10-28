@@ -21,7 +21,7 @@ The value of the metadata item as a number.
 var numberValue: NSNumber? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the system can’t represent the value as a number.
 

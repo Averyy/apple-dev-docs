@@ -11,9 +11,9 @@ Query a carrier URL for active eSIM cellular-plan profiles on a device.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
-#### Discussion
+## Discussion
 
-##### Error codes
+### Error codes
 
 An error response uses one of the following error codes:
 
@@ -21,7 +21,7 @@ An error response uses one of the following error codes:
 - `36002`: The hardware doesn’t support this command.
 - `36003`: The cellular stack was unable to perform the request. This error can also occur if the cellular stack is busy, in which case, retrying the command later may resolve the issue.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ An error response uses one of the following error codes:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

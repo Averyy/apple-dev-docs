@@ -15,11 +15,11 @@ Allocates and initializes an instance of the custom property class.
 static OSSharedPtr<IOUserAudioCustomProperty> Create(IOUserAudioDriver *in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

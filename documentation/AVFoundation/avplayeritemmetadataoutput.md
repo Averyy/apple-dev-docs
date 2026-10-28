@@ -25,7 +25,7 @@ class AVPlayerItemMetadataOutput
 @interface AVPlayerItemMetadataOutput : AVPlayerItemOutput
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Setting the value of [`suppressesPlayerRendering`](./avplayeritemoutput/suppressesplayerrendering.md) on an instance of `AVPlayerItemMetadataOutput` has no effect.
 

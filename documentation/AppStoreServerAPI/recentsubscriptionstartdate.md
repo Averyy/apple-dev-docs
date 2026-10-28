@@ -19,7 +19,7 @@ timestamp recentSubscriptionStartDate
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The recent subscription start date is in UNIX time, in milliseconds.
 

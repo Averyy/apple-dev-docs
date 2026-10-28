@@ -21,7 +21,7 @@ Creates an opaque symbolic factorization.
 init(status: SparseStatus_t, rowCount: Int32, columnCount: Int32, attributes: SparseAttributes_t, blockSize: UInt8, type: SparseFactorization_t, factorization: UnsafeMutableRawPointer?, workspaceSize_Float: Int, workspaceSize_Double: Int, factorSize_Float: Int, factorSize_Double: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new opaque symbolic factorization.
 

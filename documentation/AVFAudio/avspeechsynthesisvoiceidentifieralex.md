@@ -25,7 +25,7 @@ let AVSpeechSynthesisVoiceIdentifierAlex: String
 extern NSString * const AVSpeechSynthesisVoiceIdentifierAlex;
 ```
 
-#### Discussion
+## Discussion
 
 The Alex voice is only available for the `en-US` language code.
 

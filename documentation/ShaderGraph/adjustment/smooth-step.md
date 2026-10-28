@@ -14,7 +14,7 @@ Outputs a smooth remapping from low-high to 0-1.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Smooth Step (float)**:
 
@@ -232,13 +232,13 @@ Outputs a smooth remapping from low-high to 0-1.
 | --- | --- |
 | `Out` | Vector3h |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value to remap.
 - **`Low`**: The low end value of the input range; the default value is `0.0`.
 - **`High`**: The high end value of the input range; the default value is `1.0`.
 
-#### Discussion
+## Discussion
 
 The `Smooth Step` node outputs a smooth remapping using Hermite interpolation. Any input with a value lower than the `Low` parameter results in an output of `0`. Any input with a value higher than the `High` parameter results in an output of `1`.
 

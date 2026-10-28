@@ -27,7 +27,7 @@ var hidden_size: Int
 size_t hidden_size;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to a nonzero value that doesn’t match the corresponding array descriptor’s size, BNNS throws an error.
 

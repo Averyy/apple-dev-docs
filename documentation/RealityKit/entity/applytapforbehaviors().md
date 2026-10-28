@@ -21,11 +21,11 @@ Apply a tap to an Entity or one of its ancestors to trigger a RealityComposer be
 @preconcurrency func applyTapForBehaviors() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a tap trigger was fired, otherwise returns `false`.
 
-#### Discussion
+## Discussion
 
 This method looks for a RealityComposer tap trigger, starting with `self` and moving up the Entity hierarchy. As soon as an entity with a tap trigger is found, the trigger is fired, and the method returns `true`.  If no tap trigger is found, the method returns `false`.
 

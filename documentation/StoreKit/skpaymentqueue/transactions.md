@@ -27,7 +27,7 @@ var transactions: [SKPaymentTransaction] { get }
 @property (nonatomic, readonly) NSArray<SKPaymentTransaction *> * transactions;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is undefined when there are no observers attached to the payment queue.
 

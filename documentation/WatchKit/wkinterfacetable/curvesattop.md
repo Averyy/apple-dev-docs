@@ -19,7 +19,7 @@ var curvesAtTop: Bool { get set }
 @property (nonatomic, assign) BOOL curvesAtTop;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), table rows near the top of the screen shrink so that the curved corners don’t clip them. Typically, this property has no effect when the status bar is visible. It also has no effect on Apple Watch Series 3 or earlier.
 

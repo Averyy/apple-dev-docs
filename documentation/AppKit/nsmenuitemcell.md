@@ -19,7 +19,7 @@ class NSMenuItemCell
 @interface NSMenuItemCell : NSButtonCell
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  `NSMenuItemCell` is no longer used to draw menus. Using it does not affect the appearance of your menus.
 

@@ -19,7 +19,7 @@ func setContentInset(_ contentInset: UIEdgeInsets)
 - (void) setContentInset:(UIEdgeInsets) contentInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the default insets you set in Interface Builder. Changes to the content insets of a group are animatable.
 

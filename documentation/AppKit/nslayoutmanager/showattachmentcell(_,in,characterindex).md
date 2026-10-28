@@ -19,7 +19,7 @@ func showAttachmentCell(_ cell: NSCell, in rect: NSRect, characterIndex attachme
 - (void) showAttachmentCell:(NSCell *) cell inRect:(NSRect) rect characterIndex:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The `attachmentIndex` parameter is provided for cells that alter their appearance based on their location.
 

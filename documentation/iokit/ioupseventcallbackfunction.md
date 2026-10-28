@@ -14,7 +14,7 @@
 typedef void (*IOUPSEventCallbackFunction)(void *target, IOReturn result, void *refcon, void *sender, CFDictionaryRef event);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when a completion routine is called. This function pointer is set via setEventCallback and is called when an event is available from the UPS.
 

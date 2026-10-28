@@ -23,7 +23,7 @@ var collectionViewLayout: UICollectionViewLayout { get set }
 @property (nonatomic, strong) UICollectionViewLayout * collectionViewLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new layout object to this property causes the new layout to be applied (without animations) to the collection view’s items.
 

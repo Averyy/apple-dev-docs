@@ -23,7 +23,7 @@ func layoutMarginsDidChange()
 - (void) layoutMarginsDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override this method and use it to respond when the value in the view’s [`layoutMargins`](./layoutmargins.md) property changes. For example, you might override this method if your view subclass handles layout manually or uses the layout margins during drawing. In both cases, you could use this method to initiate a drawing or layout update.
 

@@ -24,7 +24,7 @@ case notificationNotSent
 HKMedicationDoseEventLogStatusNotificationNotSent
 ```
 
-#### Discussion
+## Discussion
 
 The system can generate this status because of a person’s notification restrictions or issues with notification delivery.
 

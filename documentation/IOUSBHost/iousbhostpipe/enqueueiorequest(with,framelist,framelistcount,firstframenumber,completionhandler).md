@@ -24,11 +24,11 @@ func enqueueIORequest(with data: NSMutableData, frameList: UnsafeMutablePointer<
 - (BOOL) enqueueIORequestWithData:(NSMutableData *) data frameList:(IOUSBHostIsochronousFrame *) frameList frameListCount:(NSUInteger) frameListCount firstFrameNumber:(uint64_t) firstFrameNumber error:(NSError **) error completionHandler:(IOUSBHostIsochronousCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request queues successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

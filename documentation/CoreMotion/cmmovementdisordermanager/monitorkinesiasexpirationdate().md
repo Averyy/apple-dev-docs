@@ -19,11 +19,11 @@ func monitorKinesiasExpirationDate() -> Date?
 - (NSDate *) monitorKinesiasExpirationDate;
 ```
 
-#### Return Value
+## Return Value
 
 The current expiration date, or `nil` if you have not yet begun monitoring.
 
-#### Discussion
+## Discussion
 
 This date is set when you call the [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) method. You can extend the date by calling [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) again; however, you can’t shorten the monitoring duration.
 

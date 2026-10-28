@@ -24,7 +24,7 @@ init(sources: [EKSource])
 - (instancetype) initWithSources:(NSArray<EKSource *> *) sources;
 ```
 
-#### Return Value
+## Return Value
 
 An event store that contains data for a specific collection of event sources.
 

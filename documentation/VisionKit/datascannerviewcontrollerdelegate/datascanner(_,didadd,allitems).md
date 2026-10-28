@@ -23,7 +23,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didAdd addedItems: [R
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 To identify an item in the `addedItems` and `allItems` parameters, use the item’s `id` property.
 

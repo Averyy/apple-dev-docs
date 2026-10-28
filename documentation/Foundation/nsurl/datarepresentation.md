@@ -25,7 +25,7 @@ var dataRepresentation: Data { get }
 @property (copy, readonly) NSData * dataRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 If the URL was initialized with `initWithData:relativeToURL:`, the data representation returned are the same bytes as those used at initialization; otherwise, the data representation returned are the bytes of the relativeString encoded with `NSUTF8StringEncoding`.
 

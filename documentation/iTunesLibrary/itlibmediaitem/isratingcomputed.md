@@ -20,7 +20,7 @@ var isRatingComputed: Bool { get }
 @property (nonatomic, assign, readonly, getter=isRatingComputed) BOOL ratingComputed;
 ```
 
-#### Discussion
+## Discussion
 
 If the user has rated an album, all tracks within that album that have no rating receive the album rating by default. The user can override the ratings by supplying actual ratings for each track.
 

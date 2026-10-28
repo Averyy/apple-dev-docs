@@ -21,7 +21,7 @@ A discontinuity was caused by a camera mode switch.
 case cameraModeSwitch
 ```
 
-#### Discussion
+## Discussion
 
 When the module providing sample buffers has experienced a discontinuity due to a camera mode switch. Short discontinuities of this type can occur when the session is configured for still image capture on some devices.
 

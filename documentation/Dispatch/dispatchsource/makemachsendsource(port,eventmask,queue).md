@@ -21,11 +21,11 @@ A dispatch source that monitors a Mach port for dead name notifications.
 class func makeMachSendSource(port: mach_port_t, eventMask: DispatchSource.MachSendEvent, queue: DispatchQueue? = nil) -> any DispatchSourceMachSend
 ```
 
-#### Return Value
+## Return Value
 
 A dispatch source object that conforms to the [`DispatchSourceMachSend`](../dispatchsourcemachsend.md) protocol.
 
-#### Discussion
+## Discussion
 
 After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](../dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](../dispatchobject/activate%28%29.md) method.
 

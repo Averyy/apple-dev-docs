@@ -22,7 +22,7 @@ case audio
 UIApplicationShortcutIconTypeAudio
 ```
 
-#### Discussion
+## Discussion
 
 ![Audio quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934536@2x.png)
 

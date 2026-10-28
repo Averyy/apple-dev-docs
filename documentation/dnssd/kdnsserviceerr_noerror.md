@@ -23,7 +23,7 @@ var kDNSServiceErr_NoError: Int { get }
 kDNSServiceErr_NoError
 ```
 
-#### Discussion
+## Discussion
 
 No error
 

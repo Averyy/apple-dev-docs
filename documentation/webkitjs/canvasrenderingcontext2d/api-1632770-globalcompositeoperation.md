@@ -16,7 +16,7 @@ A string representing the compositing method for drawing operations.
 attribute DOMString globalCompositeOperation;
 ```
 
-#### Discussion
+## Discussion
 
 By default, drawings layer on top of one another in drawing order, with opaque areas obscuring existing layers and transparent or translucent areas being blended with existing layers according to their alpha value. Set the `globalCompositeOperation` property to one of the `globalCompositeOperation` constants to override the default compositing method. The allowed values are `source-atop`, `source-in`, `source-out`, `source-over`, `destination-atop`, `destination-in`, `destination-out`, `destination-over`, `lighter`, `copy`, and `xor`. See [Global Compositing Operation Constants](./global_compositing_operation_constants.md) for details.
 

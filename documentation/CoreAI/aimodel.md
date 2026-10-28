@@ -25,7 +25,7 @@ struct AIModel
 - [Compiling Core AI models ahead of time](./compiling-core-ai-models-ahead-of-time.md)
 - [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 An `AIModel` represents a specialized `.aimodel` asset, optimized for the current device’s hardware. You create one by loading the asset from disk:
 

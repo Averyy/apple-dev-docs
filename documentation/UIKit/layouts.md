@@ -5,7 +5,7 @@
 
 Arrange your collection view content in a highly configurable layout.
 
-#### Overview
+## Overview
 
 A collection view *layout* defines the visual arrangement of the content in your collection. Layouts are designed to be flexible to let you create any kind of arrangement you need for your content, from simple to complex. The simplest type of collection view layout displays its items in a grid, but you can define layouts to arrange items however you like. For example, you might create a layout where items are arranged in a circle or vary in size. You can also change layouts dynamically at runtime whenever you need to present items differently, such as when a user rotates the device.
 

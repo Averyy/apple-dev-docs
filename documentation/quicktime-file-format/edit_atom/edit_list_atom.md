@@ -6,7 +6,7 @@
 
 An atom that maps from a time in a movie to a time in a media, and ultimately to media data.
 
-#### Overview
+## Overview
 
 See [`Edit list atom`](../edit_list_atom.md).
 

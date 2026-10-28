@@ -13,15 +13,15 @@ Informs the system to start monitoring the download.
 ## Declaration
 
 ```swift
-@objc
-(beginMonitoring:) func beginMonitoring() async throws -> BEDownloadMonitor.Location?
+@objc(beginMonitoring:)
+func beginMonitoring() async throws -> BEDownloadMonitor.Location?
 ```
 
 ## Mentions
 
 - [Downloading files in a web browser with an alternative browser engine](../downloading-files-in-a-web-browser.md)
 
-#### Return Value
+## Return Value
 
 If you called [`useDownloadsFolder(placeholderType:finalFileCreatedHandler:)`](./usedownloadsfolder%28placeholdertype,finalfilecreatedhandler%29.md), this method returns the placeholder location that the system creates to host the downloaded content; otherwise, it returns `nil`.
 

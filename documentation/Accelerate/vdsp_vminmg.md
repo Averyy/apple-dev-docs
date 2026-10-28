@@ -21,7 +21,7 @@ Calculates the single-precision minimum magnitude of the corresponding values of
 extern void vDSP_vminmg(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function compares the magnitudes (absolute values) of the first `N` elements of `A` with corresponding elements of `B`, leaving the lesser (or equal) values as corresponding elements of `C`:
 

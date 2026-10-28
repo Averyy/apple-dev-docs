@@ -20,7 +20,7 @@ Creates a resolution metric for a level of detail component to switch with.
 static func resolutionMetric(switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions], boundingBox: BoundingBox) -> LevelOfDetailComponent.SelectionStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A configured resolution metric selection strategy.
 

@@ -25,7 +25,7 @@ class func writeJSONObject(_ obj: Any, to stream: OutputStream, options opt: JSO
 + (NSInteger) writeJSONObject:(id) obj toStream:(NSOutputStream *) stream options:(NSJSONWritingOptions) opt error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written to the stream, or `0` if an error occurs.
 

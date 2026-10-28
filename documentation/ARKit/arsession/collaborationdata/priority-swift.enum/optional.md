@@ -20,7 +20,7 @@ case optional
 ARCollaborationDataPriorityOptional
 ```
 
-#### Discussion
+## Discussion
 
 ARKit sets the data [`priority`](../priority-swift.property.md) to [`ARSession.CollaborationData.Priority.optional`](./optional.md) when the data is important and time-sensitive but the session can continue if it’s not received.
 

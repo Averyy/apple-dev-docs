@@ -14,7 +14,7 @@
 kUnicodeKeepSameEncodingMask = 1L << kUnicodeKeepSameEncodingBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the keep-same-encoding control flag. Determines how the Unicode Converter treats the conversion of Unicode text following a text element that could not be converted to the first destination encoding when multiple destination encodings exist. This control flag applies only if the `kUnicodeTextRunMask` control flag is set. 
 

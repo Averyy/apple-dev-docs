@@ -23,7 +23,7 @@ var layerID: Int { get }
 @property (nonatomic, readonly) NSUInteger layerID;
 ```
 
-#### Discussion
+## Discussion
 
 The framework assigns `layerID` during layer initialization.
 

@@ -23,7 +23,7 @@ The number of divisions SceneKit uses to create each chamfered edge of the text 
 @property (nonatomic) NSInteger chamferSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry, creating a smoother curve for chamfered edges at a cost to rendering performance.
 

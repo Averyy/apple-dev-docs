@@ -24,7 +24,7 @@ typealias AudioServicesPropertyID = UInt32
 typedef UInt32 AudioServicesPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 System Audio Services properties are listed in [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md).
 

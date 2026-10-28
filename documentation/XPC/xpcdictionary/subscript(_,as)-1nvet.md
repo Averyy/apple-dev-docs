@@ -21,7 +21,7 @@ Get a value in this dictionary as data.
 subscript(key: String, as type: RawSpan.Type = RawSpan.self) -> RawSpan? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A RawSpan containing the data or `nil` if no such value was found.
 

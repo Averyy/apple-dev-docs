@@ -24,7 +24,7 @@ func stopTunnel()
 - (void) stopTunnel;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately after starting the process of disconnecting the tunnel. In order to be notified when the tunnel is fully disconnected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the [`NETunnelProviderSession`](../netunnelprovidersession.md) object and examine its status property when the notification is received.
 

@@ -25,7 +25,7 @@ let MPMediaItemPropertyLyrics: String
 extern NSString * const MPMediaItemPropertyLyrics;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSString`](../Foundation/nsstring.md) object.
 

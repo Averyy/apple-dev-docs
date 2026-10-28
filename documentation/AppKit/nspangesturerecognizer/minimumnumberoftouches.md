@@ -19,7 +19,7 @@ var minimumNumberOfTouches: Int { get set }
 @property NSInteger minimumNumberOfTouches;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.
 

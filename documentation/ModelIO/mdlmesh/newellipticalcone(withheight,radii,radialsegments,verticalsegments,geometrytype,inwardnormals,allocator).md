@@ -24,11 +24,11 @@ class func newEllipticalCone(withHeight height: Float, radii: vector_float2, rad
 + (instancetype) newEllipticalConeWithHeight:(float) height radii:(vector_float2) radii radialSegments:(NSUInteger) radialSegments verticalSegments:(NSUInteger) verticalSegments geometryType:(MDLGeometryType) geometryType inwardNormals:(BOOL) inwardNormals allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for a cone whose apex is at the origin of its local coordinate system and whose body extends in the negative y-axis direction.
 

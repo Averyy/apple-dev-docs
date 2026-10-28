@@ -24,7 +24,7 @@ case configurationStale
 NEVPNErrorConfigurationStale
 ```
 
-#### Discussion
+## Discussion
 
 This error also occurs if the app tries to save the VPN configuration before loading it from the Network Extension preferences the first time after the app launches.
 

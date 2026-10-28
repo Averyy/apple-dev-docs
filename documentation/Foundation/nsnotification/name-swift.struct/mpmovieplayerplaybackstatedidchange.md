@@ -20,7 +20,7 @@ Posted when a movie player’s playback state has changed. There is no `userInfo
 static let MPMoviePlayerPlaybackStateDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 Playback state can change programmatically (see [`MPMediaPlayback`](../../../MediaPlayer/mpmediaplayback.md)) or by user interaction. To retrieve the playback state of a movie player, access its [`playbackState`](../../../MediaPlayer/mpmovieplayercontroller/playbackstate.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

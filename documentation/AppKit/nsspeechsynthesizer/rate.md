@@ -19,7 +19,7 @@ var rate: Float { get set }
 @property float rate;
 ```
 
-#### Discussion
+## Discussion
 
 The range of supported rates is not predefined by the Speech Synthesis framework; but the synthesizer may only respond to a limited range of speech rates. Average human speech occurs at a rate of 180 to 220 words per minute.
 

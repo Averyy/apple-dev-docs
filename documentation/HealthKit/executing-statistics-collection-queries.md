@@ -5,7 +5,7 @@
 
 Calculate statistical data for graphs and charts.
 
-#### Overview
+## Overview
 
 Produce data for graphs and charts using statistics collection queries. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour.
 
@@ -19,7 +19,7 @@ For example, if you use a 1-day time interval, the anchor point defines the time
 
 The statistics collection query then calculates common statistics over each time interval. You can use statistics queries to calculate the minimum, maximum, or average value of a set of discrete quantities, or to calculate the sum for cumulative quantities. Also, like observer queries, statistics collection queries can act as long-running queries, receiving updates when the HealthKit store’s content changes.
 
-##### Create the Query
+### Create the Query
 
 Start by creating your anchor date and time interval. The following sample starts by creating a 1-week time interval. Next, it sets the anchor date to Monday morning at 3:00 a.m. Because the interval is 1 week long, the anchor’s exact date doesn’t matter. Each set of statistics represents exactly 1 week, starting on Monday at 3:00 a.m.
 
@@ -61,7 +61,7 @@ let query = HKStatisticsCollectionQuery(quantityType: quantityType,
                                         intervalComponents: interval)
 ```
 
-##### Add Callback Handlers
+### Add Callback Handlers
 
 Unlike most other queries, you don’t set the callback block when you instantiate a statistics collection query. Instead, you can either set the initial result handler or the statistics update handler (or both) as needed for your app. In this case, the sample code just sets the initial results handler, letting it calculate statistics over the samples currently stored in HealthKit.
 

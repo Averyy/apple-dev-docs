@@ -23,7 +23,7 @@ var strength: CGFloat { get set }
 @property (nonatomic, assign) CGFloat strength;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `1.0`. The effect of this value is dependent on the type of field. In practice, the best approach for determining the strength of the field you want is to experiment with different values until you get the behavior you want.
 

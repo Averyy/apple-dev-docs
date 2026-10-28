@@ -20,7 +20,7 @@ init(event: CareStoreFetchedResult<OCKAnyEvent>, @ViewBuilder header: () -> Head
 
 Available when `Header` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 This view displays a button to toggle completion for the event.
 

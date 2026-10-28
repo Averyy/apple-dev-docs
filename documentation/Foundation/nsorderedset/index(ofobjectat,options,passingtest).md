@@ -25,11 +25,11 @@ func index(ofObjectAt s: IndexSet, options opts: NSEnumerationOptions = [], pass
 - (NSUInteger) indexOfObjectAtIndexes:(NSIndexSet *) s options:(NSEnumerationOptions) opts passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the corresponding value in the ordered set passes the test specified by predicate. If no objects in the ordered set pass the test, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 By default, the enumeration starts with the first object and continues serially through the ordered set to the last element specified by `s`. You can specify [`concurrent`](../nsenumerationoptions/concurrent.md) and/or [`reverse`](../nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
 

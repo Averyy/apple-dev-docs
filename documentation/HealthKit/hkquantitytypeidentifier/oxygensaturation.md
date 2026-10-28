@@ -24,7 +24,7 @@ static let oxygenSaturation: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierOxygenSaturation;
 ```
 
-#### Discussion
+## Discussion
 
 Oxygen saturation samples measure the percentage of oxygen in the bloodstream. These samples use percent units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

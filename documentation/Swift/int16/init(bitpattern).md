@@ -21,7 +21,7 @@ Creates a new instance with the same memory representation as the given value.
 init(bitPattern x: UInt16)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer does not perform any range or overflow checking. The resulting instance may not have the same numeric value as `bitPattern`—it is only guaranteed to use the same pattern of bits in its binary representation.
 

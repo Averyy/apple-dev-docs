@@ -12,7 +12,7 @@ virtual bool lockForArbitration(
  bool isSuccessRequired = true );
 ```
 
-#### Overview
+## Overview
 
 The registration, termination and open / close functions of IOService use `lockForArbtration` to single-thread access to an IOService object. `lockForArbitration` grants recursive access to the same thread.
 

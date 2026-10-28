@@ -23,7 +23,7 @@ func drawPlaceholder(in rect: CGRect)
 - (void) drawPlaceholderInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to customize the drawing behavior for the placeholder text, you can override this method to do your drawing.
 

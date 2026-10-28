@@ -23,7 +23,7 @@ optional func cookiesDidChange(in cookieStore: WKHTTPCookieStore)
 - (void) cookiesDidChangeInCookieStore:(WKHTTPCookieStore *) cookieStore;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of a cookie changes, the cookie store calls this method on all registered observer objects. Use this method to fetch the new cookie values and update any app-specific data structures or JavaScript environment variables that use those values.
 

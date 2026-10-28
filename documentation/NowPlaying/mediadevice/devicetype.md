@@ -18,7 +18,7 @@ The type of device that plays media.
 enum DeviceType
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify the type of playback device in a remote session. The system uses the device type to display an appropriate icon in the Now Playing interface.
 

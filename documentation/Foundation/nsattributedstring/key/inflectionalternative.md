@@ -25,7 +25,7 @@ static let inflectionAlternative: NSAttributedString.Key
 extern NSAttributedStringKey const NSInflectionAlternativeAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 In languages that change the form of words to match someone’s gender, the system can automatically change (or inflect) the gender to match someone’s personal preferences. If a suitable inflection doesn’t exist, the system uses the value of this attribute instead. Add this attribute to specify a suitable translation that applies to anyone. For example, if a language has only masculine and feminine genders, specify an appropriately neutral translation of the text.
 

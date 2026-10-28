@@ -22,7 +22,7 @@ class VTSuperResolutionScalerParameters
 @interface VTSuperResolutionScalerParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object in the `processWithParameters` call of the `VTFrameProcessor` class. The output parameter for this class is `destinationFrame`, where the processor returns the output frame (as `VTFrameProcessorFrame`) back to you once `processWithParameters` completes.
 

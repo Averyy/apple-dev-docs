@@ -19,7 +19,7 @@ Creates a padding layer with the symmetric padding sizes you specify.
 + (instancetype) layerWithSymmetricPadding:(NSArray<NSNumber *> *) padding;
 ```
 
-#### Return Value
+## Return Value
 
 A symmetric padding layer.
 

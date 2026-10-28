@@ -25,9 +25,9 @@ func vvcos(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 void vvcos(double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

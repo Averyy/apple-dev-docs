@@ -6,19 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.re
 
 # mlx.core.remainder
 
-**remainder(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise remainder of division.
+```python
+remainder(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+```
+
+Element-wise remainder of division.
+
 Computes the remainder of dividing a with b with numpy-style
 broadcasting semantics. Either or both input arrays can also be
 scalars.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
-Returns:
-The remainder of `a // b`.
+**Returns:**
+: The remainder of `a // b`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

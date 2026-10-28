@@ -21,7 +21,7 @@ A Boolean value that indicates whether the shaped array lacks a shape.
 var isScalar: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is equivalent to [`shape`](./shape.md).[`isEmpty`](../../Swift/array/isempty.md).
 

@@ -5,28 +5,28 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, watchOS 9.4, and macOS Ventura 13.3. The Xcode 14.3 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14.3 requires a Mac running macOS Ventura 13.0 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 14.3 includes a new module verifier that generates diagnostics for issues in a framework’s modules. (97345247)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Crash logs from App Extensions and extension-based Watch apps weren’t being delivered to the Xcode Organizer. This issue is resolved in iOS 16.4, macOS 13.3, watchOS 9.4 and tvOS 16.4. (90882288)
 - Fixed: You can now use Xcode’s documentation viewer to view Xcode documentation or view it on the web at [https://developer.apple.com/documentation/Xcode](../Xcode/Xcode.md). (102522035)
 
-###### Deprecations
+#### Deprecations
 
 - Xcode isn’t supported under Rosetta.  See Developer Technote [“Resolving architecture build errors on Apple silicon“](../Technotes/tn3117-resolving-build-errors-for-apple-silicon.md) for more information. (92772361)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Clang and the build system support a new mode for building module dependencies called explicit modules which improves build performance, reliability, and correctness. The new mode is opt-in, and can be enabled by setting `_EXPERIMENTAL_CLANG_EXPLICIT_MODULES` as a user-defined build setting in C and Objective-C projects which build with modules enabled. (104438594)
 - The following C++23 features have been implemented:
@@ -36,23 +36,23 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
   - Introduce auto(x) for decay-copy in the language (P0849R8). (104887755)
 - The `-ffp-model=strict` is fully supported for the ARM architecture. The generated code adheres to the IEEE-754 standard. Specifically, floating point exceptions and rounding modes are handled according to the standard. `#pragma STDC FENV ACCESS` is supported.  By default, `-ffp-contract=ON` is set. This option enables shorter and faster floating-point code by fusing floating point operations like multiplies and adds, but it may impact the accuracy of numerically sensitive applications. (105573336)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The compiler no longer emits erroneous warnings for images included into Objective-C documentation comments using the `<img/>` tag. (91464292)
 - Fixed: Standard C++ modules are disabled in ObjectiveC++ with the C++ language mode set to C++20. This doesn’t impact Clang modules. (104670658)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Xcode now prompts a user prior to performing a clean action. This prompt can be bypassed by holding the option key while performing a clean, or by permanently hiding the prompt by enabling the “Don’t Ask Me” setting within the prompt. (98914489)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: UI test targets no longer force `SWIFT_SERIALIZE_DEBUGGING_OPTIONS` to `YES` at build time, and respect that setting being overridden in the project. (94845934)
 - Fixed: Run scripts in a scheme’s pre-actions and post-actions for the Build section now cause the build to fail if any run script exits with a non-zero exit code, instead of reporting a false-positive successful build. (102896200)
 
-###### Known Issues
+#### Known Issues
 
 - Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (103716225)
 
@@ -62,9 +62,9 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
   **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
 
-##### C++ Standard Library
+### C++ Standard Library
 
-###### New Features
+#### New Features
 
 - The following new features have been implemented:
 
@@ -79,7 +79,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
   - `std::pop_heap` now uses an algorithm known as “bottom-up heapsort” or “heapsort with bounce” to reduce the number of comparisons, and rearranges elements using move-assignment instead of `std::swap`.
   - `std::boyer_moore_searcher` and `std::boyer_moore_horspool_searcher` have been implemented. (104702784)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated:
 
@@ -90,28 +90,28 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
   - The contents of `<codecvt>`, `std::wstring_convert` and `std::wbuffer_convert` have been marked as deprecated. To disable deprecation warnings you have to define `_LIBCPP_DISABLE_DEPRECATION_WARNINGS`. Note that this disables all deprecation warnings.
   - The integer distributions `std::binomial_distribution`, `std::discrete_distribution`, `std::geometric_distribution`, `std::negative_binomial_distribution`, `std::poisson_distribution`, and `std::uniform_int_distribution` now conform to the Standard by rejecting template parameter types other than `short`, `int`, `long`, `long long`, and the unsigned versions thereof. As an extension, `int8_t`, `__int128_t` and their unsigned versions are supported too. In particular, instantiating these distributions with non-integer types like `bool` and `char` won’t compile anymore. (105097623)
 
-##### Debugging
+### Debugging
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When stopped in a C++11 lambda body in an enclosing class method, LLDB now supports evaluating expressions containing members of the captured ‘this’ pointer. (50140179)
 - Fixed: LLDB is now more resilient against Swift module deserialization failures that previously would have ended the the debug session. (64511878)
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - The documentation toolchain for Objective-C has migrated to the open-source Clang extract-api tool. (101761719)
 
-##### DriverKit
+### DriverKit
 
-###### New Features
+#### New Features
 
 - Clang now automatically initializes uninitialized local variables on the stack to zero for DriverKit extensions. (99166509)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - When attempting to launch an application using Instruments on a locked target device, Instruments now prompts the user and waits for the unlock to happen instead of presenting an error. (41464216)
 - `xctrace export` now supports requesting binary image load information for processes in a trace file.
@@ -129,7 +129,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - The Heaviest Stack Trace UI has a new contextual menu for showing frames as a load address and binary offset. (102116922)
 - os-signpost-interval-schema now exposes a way to bind a CLIPS variable to a duration field of a signpost interval and use it as part of other column definitions. (102447071)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Instruments’ launch time performance is now improved. Launching the application should be up to 3 times faster. (12219587)
 - Fixed: Selecting ‘Open in Xcode’ from an Instruments Source Viewer now opens the selected file in an existing workspace. (76846286)
@@ -141,14 +141,14 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Fixed: Performance of adding a new Instrument from the library to an existing trace document has been significantly improved. (100873173)
 - Fixed an issue in the CPU Counters Instrument where `RETIRE_UOP` events wouldn’t be counted on Apple Silicon machines. (101330117)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - The “Introduced Variations Based On:” inspector popup will now remember the last picked size class and variation settings. (98647372)
 - The enabled property is configurable on UISearchBar through the attribute inspector. (101423711)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Line Break Strategy can now be configured on a NS/UITextView paragraph style popup inspector and UILabel’s attributes inspector. (70369164)
 - Fixed: The SF Symbol library search results have improved to include search terms besides the name of the symbol. For example, searching for “writing” will also show related “pencil” SF symbols. (94857888)
@@ -159,70 +159,70 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Fixed an issue where frames sometimes shift when a storyboard is opened. (102221237)
 - Fixed an issue with the resizing cursor not showing when attempting to resize a `NSViewController`. (102609072)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - You can now specify the default localization of an Xcode project. Configure it from the language list in the project editor’s Info tab. (4886288)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue when exporting a project for localization, where referenced projects might not be exported. (91126400)
 
-##### Playgrounds
+### Playgrounds
 
-###### Known Issues
+#### Known Issues
 
 - Manual execution mode for Xcode Playgrounds may fail. (104976410)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode automatic signing now creates managed provisioning profiles for Developer ID. This resolves an issue that caused Xcode to throw an error when cloud signing with a Developer ID certificate during the app distribution workflow. (90026719)
 - Fixed: Resolved an issue when distributing apps that use Game Center. If necessary, Xcode automatic signing can now enable the Game Center feature on your app ID during distribution. (103426363)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When simulating a user gesture in the iOS simulator, loading a WebView may cause a black box to appear on the entire screen. (107143140)
 
-###### Known Issues
+#### Known Issues
 
 - Repeated Build & Run targeting iOS 16.1 and later simulator runtimes may sometimes result in a hung launch. (101990080)
 
   **Workaround:** Reboot the simulator device and reattempt the launch.
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode’s Git integration now supports mailmap. Users who have changed their names or email addresses can set up a `.mailmap` file in their repository and Xcode now displays the correct canonical name on commits and branch history. (62682973)
 - Fixed: Re-added support for perl compatible regular expressions to `git grep`. (101318680)
 - Fixed: Addressed security vulnerabilities CVE-2022-23521 and CVE-2022-41903. (102376850)
 
-###### Known Issues
+#### Known Issues
 
 - The branch history view may display an incomplete branch history in rare cases. (96024292)
 
   **Workaround:** Select a different branch, then, once again, select the desired branch.
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Improved code completion ranking for Swift. (98687334)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - The [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework now supports testing SKAdNetwork 4.0. (91782868)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - The `@backDeployed(before:)` attribute may now be used to extend the availability of a function to OS releases prior to the introduction of that function as ABI.
 
@@ -321,16 +321,16 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
   Features can be detected in source code with `#if hasFeature(X)`. [SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md) (105198978)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an occasional crash when suspending at an `await` in apps using Swift concurrency running on macOS 12.3 and earlier, on iOS 15.4 and earlier, watchOS 8.5 and earlier, and tvOS 15.4 and earlier. (101299662)
 - Fixed: The Swift compiler may fail to build modules for XCFramework dependencies that were built with `BUILD_LIBRARY_FOR_DISTRIBUTION` enabled. These failures will occur when the XCFramework contains public Swift declarations that have `@MainActor` constraints implicitly added, such as subclasses of `UIView` or `NSView`. The Swift compiler expects those declarations to be marked `@available` for an operating system version where Swift concurrency is available.
 
   (105610970)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - A proper diagnostic is shown instead of an ambiguous error when a tool needed by a plugin isn’t supported on the target platform. (91000836)
 - Packages with duplicate product names are now allowed. Note this only applies to the command-line builds. (94744134)
@@ -338,7 +338,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Binary targets can now directly be vended as products without requiring the declaration of an additional source target. (101096803)
 - SwiftPM now supports piecemeal adoption of upcoming Swift language improvements per [SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md). (104718540)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Conditional target dependencies ([SE-0273](https://github.com/apple/swift-evolution/blob/main/proposals/0273-swiftpm-conditional-target-dependencies.md)) in packages are now correctly applied to binary targets and leads to top-level targets being filtered out from builds of root packages. (85762201)
 - Fixed: Removed implicit availability of `Foundation` from package manifests using tools-version 5.8 or later. An explicit import of Foundation is now required if APIs from Foundation are used in a manifest. (92879696)
@@ -349,17 +349,17 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Fixed: Warnings and errors associated with packages are now shown under the packages to which they apply in the package resolution log. (102879707)
 - Fixed multiple bugs that could cause a “Unable to resolve build file: XCBCore.BuildFile” build error when using packages. (102912126)
 
-###### Known Issues
+#### Known Issues
 
 - When a package build tool plugin generates a build command for a particular input file, that file is considered to have been handled by the plugin and isn’t passed to the build system. If the input file is a source code file (such as a Swift or Objective-C source file), it won’t be compiled into the product being built. (102789077)
 
-##### SwiftUI Previews
+### SwiftUI Previews
 
-###### New Features
+#### New Features
 
 - `print` output now appears in the console for SwiftUI Previews by selecting “Preview” tab in the console. Currently output is limited to Swift’s `print` function. (96569171)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Previews can fail when previewing a file inside of a Swift package target that is the dependency of an executable target. (97630721)
 - Fixed: Previews may fail in the Xcode canvas when previewing two files side-by-side when only one of them is in a Swift Package. (99296071)
@@ -371,14 +371,14 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Fixed: Previews can fail when using opaque types as the generic parameter of another type in the return type of `body`. (101832285)
 - Fixed: Previews can fail when previewing inside of apps that have an app identifier that differs from the bundle identifier. (102753115)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - Xcode now defaults to using a test plan for new projects. The test plan is marked as “Auto-created” and can be viewed and modified in the Test Plan Editor. To change an Auto-created Test Plan, a user will need to first save it to disk. This can be done by making a change in the Test Plan Editor, and then migrating the file to an on-disk representation with the on-screen prompts, or by explicitly saving the Auto-created Test Plan from within the Test Plan Editor. (97048381)
 - The `timeout` argument of `XCTestCase.wait(for:timeout:enforceOrder:)` and related methods is now optional—if you don’t specify it, the function waits indefinitely (until the overall test times out.) To ensure reasonable execution time, set an appropriate value for the `executionTimeAllowance` property of the running `XCTestCase` instance (`self`). (100811826)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Errors thrown by `async` Swift test methods, as well as `async` `setUp` or `tearDown` methods, now show the source location where they were thrown when symbol information is present, and include a higher-fidelity description. (72813349)
 - Fixed: If test timeouts are enabled in the test plan and a test observer is registered with the shared `XCTestObservationCenter`, the observer’s `-testCaseWillStart:` and `-testCaseDidFinish:` methods now count towards each test’s time allowance. This allows the harness to prevent hangs that could occur in the observer’s implementation of these methods. (78408785)
@@ -391,7 +391,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 - Fixed: A number of Swift code coverage bugs have been fixed. Most notably, code coverage should now correctly work in -O builds. (100327359)
 - Fixed: `XCTKeyPathExpectation` now emits a warning when an asynchronous predicate function is used with a non-Sendable observed object. (102092338)
 
-###### Known Issues
+#### Known Issues
 
 - When attempting to launch an application in a watchOS UI test under Xcode Cloud, the test may fail with an error message that the application `has not loaded accessibility`. (90334748)
 - Adding an auto-created test plan as part of a Run, Profile, Analyze, or Archive action leads to a crash when the project file is re-opened. (90378346)
@@ -405,34 +405,34 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
   **Workaround:** Open and close the Scheme Editor to cause Xcode to persist changes to the Scheme’s contents to the .xcscheme file backing it.
 
-##### UI Testing
+### UI Testing
 
-###### New Features
+#### New Features
 
 - You can now set a simulated location for your device to use in real time, or retrieve the simulated location that was previously set. (18825683)
 - You can now open a URL using a specified application, or tell the device to open a URL using the default application for it. (21387710)
 - You can now get or set the light or dark appearance mode of your device. (81016755)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Ensured orientation lock is disabled if the user requests the orientation to change during a UI test. (98693525)
 - Fixed: Improvements have been made in auto-dismissal of single-button alerts. (102036701)
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode Cloud workflows using Xcode 14.3 now correctly report build warnings and static analyzer issues encountered while building Xcode projects. (99978366)
 
-###### Known Issues
+#### Known Issues
 
 - Connecting Slack may not complete successfully when using Xcode’s UI to connect. (106153362)
 
   **Workaround:** Connect Slack from Xcode Cloud’s web UI.
 
-##### Xcode Previews
+### Xcode Previews
 
-###### New Features
+#### New Features
 
 - When using Xcode Previews, any `print()` output will be logged to the debug console. (71080261)
 

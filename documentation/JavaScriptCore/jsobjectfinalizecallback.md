@@ -24,7 +24,7 @@ typealias JSObjectFinalizeCallback = (JSObjectRef?) -> Void
 typedef void (*)(struct OpaqueJSValue *) JSObjectFinalizeCallback;
 ```
 
-#### Discussion
+## Discussion
 
 You can finalize an object on any thread.
 

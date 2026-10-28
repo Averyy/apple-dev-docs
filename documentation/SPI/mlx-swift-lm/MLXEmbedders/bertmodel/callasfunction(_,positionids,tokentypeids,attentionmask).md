@@ -17,7 +17,7 @@ Primary inference entry point.
 func callAsFunction(_ inputs: MLXArray, positionIds: MLXArray? = nil, tokenTypeIds: MLXArray? = nil, attentionMask: MLXArray? = nil) -> EmbeddingModelOutput
 ```
 
-#### Return Value
+## Return Value
 
 An `EmbeddingModelOutput` containing hidden states and/or pooled vectors.
 

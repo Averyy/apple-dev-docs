@@ -24,7 +24,7 @@ func withAlignmentRectInsets(_ alignmentInsets: UIEdgeInsets) -> UIImage
 - (UIImage *) imageWithAlignmentRectInsets:(UIEdgeInsets) alignmentInsets;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object.
 

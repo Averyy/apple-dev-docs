@@ -21,7 +21,7 @@ class SRVisit
 @interface SRVisit : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`visits`](./srsensor/visits.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

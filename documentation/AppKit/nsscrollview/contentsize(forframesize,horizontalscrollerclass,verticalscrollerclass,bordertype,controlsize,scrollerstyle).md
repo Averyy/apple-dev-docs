@@ -19,11 +19,11 @@ class func contentSize(forFrameSize fSize: NSSize, horizontalScrollerClass: AnyC
 + (NSSize) contentSizeForFrameSize:(NSSize) fSize horizontalScrollerClass:(Class) horizontalScrollerClass verticalScrollerClass:(Class) verticalScrollerClass borderType:(NSBorderType) type controlSize:(NSControlSize) controlSize scrollerStyle:(NSScrollerStyle) scrollerStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The content view frame size.
 
-#### Discussion
+## Discussion
 
 For an existing scroll view, you can simply use the [`contentSize`](./contentsize.md) property.
 

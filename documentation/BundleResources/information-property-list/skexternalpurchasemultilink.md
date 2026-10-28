@@ -20,7 +20,7 @@ A dictionary that contains an array of URLs to websites where people using your 
 - **Name**: `SKExternalPurchaseMultiLink`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](../entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
 
@@ -71,7 +71,7 @@ The order of the links is not significant.
 
 For more information, see [External Purchase](../../StoreKit/external-purchase.md) and [`ExternalPurchaseLink`](../../StoreKit/externalpurchaselink.md).
 
-##### Provide up to the maximum number of links
+### Provide up to the maximum number of links
 
 The following country codes have a maximum of five links for apps that qualify for the StoreKit External Purchase Link entitlement as described in [Distributing music streaming apps in the EEA that provide an external purchase link](https://developer.apple.com/support/music-streaming-services-entitlement-eea/): Austria (`at`), Belgium (`be`), Bulgaria (`bg`), Croatia (`hr`), Cyprus (`cy`), Czechia (`cz`), Denmark (`dk`), Estonia (`ee`), Finland (`fi`), France (`fr`), Germany (`de`), Greece (`gr`), Hungary (`hu`), Ireland (`ie`), Italy (`it`), Latvia (`lv`), Lithuania (`lt`), Luxembourg (`lu`), Malta (`mt`), Netherlands (`nl`), Poland (`pl`), Portugal (`pt`), Romania (`ro`), Slovakia (`sk`), Slovenia (`si`), Spain (`es`), Sweden (`se`), Iceland (`is`), Norway (`no`). Otherwise, the maximum is one link, for valid country codes.
 

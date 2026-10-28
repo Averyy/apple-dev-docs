@@ -19,7 +19,7 @@ func showAnnotation(_ annotationString: NSAttributedString!)
 - (void) showAnnotation:(NSAttributedString *) annotationString;
 ```
 
-#### Discussion
+## Discussion
 
 An annotation string explains or comments on the candidate string in the candidates window. An annotation window is a small, borderless window that is aligned with the current candidates window. An input method calls `showAnnotation:` when the `candidateSelectionChanged:` method of the [`IMKInputController`](../imkinputcontroller.md) class is called, and the candidate string has annotations.
 

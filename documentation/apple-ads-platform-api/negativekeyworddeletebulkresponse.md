@@ -16,13 +16,13 @@ The response from a bulk negative keyword deletion request.
 object NegativeKeywordDeleteBulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 The API returns `NegativeKeywordDeleteBulkResponse` after a bulk negative keyword deletion request. It doesn’t return the deleted `NegativeKeyword`, only whether each item succeeded.
 
 To confirm that all targeted negative keywords were removed, use this response before re-querying to validate the updated state.
 
-##### Example
+### Example
 
 ```json
 {

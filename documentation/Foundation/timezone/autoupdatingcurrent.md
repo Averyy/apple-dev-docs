@@ -21,7 +21,7 @@ The time zone currently used by the system, automatically updating to the userâ€
 static var autoupdatingCurrent: TimeZone { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this time zone is mutated, then it no longer tracks the system time zone.
 

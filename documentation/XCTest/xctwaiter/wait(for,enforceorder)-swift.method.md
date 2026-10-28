@@ -16,11 +16,11 @@ func wait(for expectations: [XCTestExpectation], enforceOrder enforceOrderOfFulf
 - (XCTWaiterResult) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations enforceOrder:(BOOL) enforceOrderOfFulfillment;
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`.
 
-#### Discussion
+## Discussion
 
 The call may return before the timeout if the test fulfills all the expectations you provide.
 

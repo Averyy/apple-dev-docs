@@ -23,7 +23,7 @@ static func bonjour(name: String? = nil, type: String, domain: String? = nil, tx
 
 Available when `Self` is `BonjourListenerProvider`.
 
-#### Discussion
+## Discussion
 
 Advertised services should be registered with IANA.
 

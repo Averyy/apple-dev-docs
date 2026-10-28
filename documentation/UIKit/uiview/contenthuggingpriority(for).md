@@ -23,11 +23,11 @@ func contentHuggingPriority(for axis: NSLayoutConstraint.Axis) -> UILayoutPriori
 - (UILayoutPriority) contentHuggingPriorityForAxis:(UILayoutConstraintAxis) axis;
 ```
 
-#### Return Value
+## Return Value
 
 The priority with which the view should resist being enlarged from its intrinsic size on the specified axis.
 
-#### Discussion
+## Discussion
 
 The constraint-based layout system uses these priorities when determining the best layout for views that are encountering constraints that would require them to be larger than their intrinsic size.
 

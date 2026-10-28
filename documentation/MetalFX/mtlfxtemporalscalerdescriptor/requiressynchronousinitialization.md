@@ -23,7 +23,7 @@ var requiresSynchronousInitialization: Bool { get set }
 @property (nonatomic, readwrite) BOOL requiresSynchronousInitialization;
 ```
 
-#### Overview
+## Overview
 
 This property gives you the option to decide when it’s better for your app to give MetalFX the time it needs to compile the underlying upscaler of the temporal scaling effect. The two choices are:
 

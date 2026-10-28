@@ -21,7 +21,7 @@ The locale of the format style.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`locale(_:)`](../formatstyle/locale%28_%29.md) modifier to create a copy of this format style with a different locale.
 

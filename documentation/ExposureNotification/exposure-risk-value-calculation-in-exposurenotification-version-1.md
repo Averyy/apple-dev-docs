@@ -5,7 +5,7 @@
 
 Learn how to determine a user’s risk of exposure.
 
-#### Overview
+## Overview
 
 The ExposureNotification framework uses an Exposure Risk Value to assist the user in determining whether they may have been exposed to the coronavirus. Health authorities have flexibility in calculating this value by setting weights and values in a configuration object.
 

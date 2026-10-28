@@ -24,7 +24,7 @@ var tessellationPartitionMode: MTLTessellationPartitionMode { get set }
 @property (nonatomic, readwrite) MTLTessellationPartitionMode tessellationPartitionMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLTessellationPartitionMode.pow2`](../mtltessellationpartitionmode/pow2.md).
 

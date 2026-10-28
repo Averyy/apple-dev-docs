@@ -24,11 +24,11 @@ func SSLSetEncryptionCertificate(_ context: SSLContext, _ certRefs: CFArray) -> 
 OSStatus SSLSetEncryptionCertificate(SSLContextRef context, CFArrayRef certRefs);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this function in one of the following cases:
 

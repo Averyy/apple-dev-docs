@@ -21,7 +21,7 @@ The p of the Lp norm.
 var pNorm: Float? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can set this value to [`infinity`](../../Swift/float/infinity.md).
 

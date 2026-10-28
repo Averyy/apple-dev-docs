@@ -21,7 +21,7 @@ Resets the filter state of a double-precision multichannel biquadratic IIR filte
 extern void vDSP_biquadm_ResetStateD(vDSP_biquadm_SetupD __setup);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_biquadm_ResetState`](../kernel/api-1579974-vdsp_biquadm_resetstate.md) except for the type of the `setup` object.
 

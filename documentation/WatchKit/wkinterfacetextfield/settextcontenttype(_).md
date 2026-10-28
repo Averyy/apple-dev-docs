@@ -19,7 +19,7 @@ func setTextContentType(_ textContentType: WKTextContentType?)
 - (void) setTextContentType:(WKTextContentType) textContentType;
 ```
 
-#### Discussion
+## Discussion
 
 The text field’s content type modifies how the text input controller and Apple Continuity Keyboard behave.
 

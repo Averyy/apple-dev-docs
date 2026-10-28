@@ -16,7 +16,7 @@ get opacity(): number;
 set opacity(opacity: number);
 ```
 
-#### Discussion
+## Discussion
 
 Opacity can be a decimal value ranging from `0` to `1`, inclusive:
 

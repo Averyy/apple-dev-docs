@@ -21,7 +21,7 @@ string AuditEventPurchaseSourceType
 - `MANUALLY_ADDED`
 - `RESELLER`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

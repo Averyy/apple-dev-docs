@@ -23,7 +23,7 @@ static var overrideInheritedCurve: UIView.AnimationOptions { get }
 UIViewAnimationOptionOverrideInheritedCurve
 ```
 
-#### Discussion
+## Discussion
 
 If this key is not present, the animation inherits the curve of the in-flight animation, if any.
 

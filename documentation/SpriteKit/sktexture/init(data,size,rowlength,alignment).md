@@ -25,11 +25,11 @@ convenience init(data pixelData: Data, size: CGSize, rowLength: UInt32, alignmen
 + (instancetype) textureWithData:(NSData *) pixelData size:(CGSize) size rowLength:(unsigned int) rowLength alignment:(unsigned int) alignment;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The image data is copied before control is returned to your game.
 

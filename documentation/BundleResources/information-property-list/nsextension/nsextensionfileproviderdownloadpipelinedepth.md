@@ -14,7 +14,7 @@ The per-domain limit of concurrent calls that a file provider extension can make
 - **Name**: `NSExtensionFileProviderDownloadPipelineDepth`
 - **Type**: integer
 
-#### Discussion
+## Discussion
 
 Use this value to set the limit of concurrent calls to methods like [`fetchContents(for:version:request:completionHandler:)`](../../../FileProvider/nsfileproviderreplicatedextension/fetchcontents%28for,version,request,completionhandler%29.md). Set the value for this key to an integer in the range `1` to `128`.
 

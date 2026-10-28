@@ -5,7 +5,7 @@
 
 Schedule the element and its contained or anchored items in a timeline.
 
-#### Overview
+## Overview
 
 Typically, timing attribute values are a multiple of the frame duration for the respective timeline. Otherwise, Final Cut Pro inserts a gap to maintain the specified timing upon import. A warning message appears when this happens.
 

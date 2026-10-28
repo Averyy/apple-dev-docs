@@ -23,7 +23,7 @@ optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRa
 - (BOOL) searchBar:(UISearchBar *) searchBar shouldChangeTextInRange:(NSRange) range replacementText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if text in `range` should be replaced by `text`, otherwise, [`false`](../../Swift/false.md).
 

@@ -17,11 +17,11 @@ Sends a notification to interested configuration agents to have them immediately
 Boolean SCNetworkInterfaceRefreshConfiguration(CFStringRef ifName);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notification was sent; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function must be invoked by root (in other words, the user with uid equal to `0`).
 

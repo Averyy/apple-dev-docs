@@ -20,7 +20,7 @@ A string that indicates the version to use for the NIAP Functional Package for T
 - **Name**: `NSExceptionRequiresNIAPTLSPackageVersion`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 App Transport Security (ATS) allows you to further restrict default TLS client behavior to help meet requirements outlined by the United States government’s National Information Assurance Partnership (NIAP) Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options to help developers create NIAP-compliant modes of operations for their apps.
 

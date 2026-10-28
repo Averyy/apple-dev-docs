@@ -19,7 +19,7 @@ func showContextHelp(for object: Any, locationHint pt: NSPoint) -> Bool
 - (BOOL) showContextHelpForObject:(id) object locationHint:(NSPoint) pt;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when help content is successfully displayed. [`false`](../../Swift/false.md) if help content is not displayed (for example, when there is no context-sensitive help associated with `object`).
 

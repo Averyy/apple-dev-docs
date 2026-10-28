@@ -24,7 +24,7 @@ case tooVerbose
 
 - [Inspecting session transcripts and reporting model feedback](../../../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
-#### Discussion
+## Discussion
 
 A verbose issue might be where you asked for a simple recipe, and the model wrote introductory and conclusion paragraphs.
 

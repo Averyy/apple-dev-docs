@@ -19,7 +19,7 @@ func draw(in path: NSBezierPath, angle: CGFloat)
 - (void) drawInBezierPath:(NSBezierPath *) path angle:(CGFloat) angle;
 ```
 
-#### Discussion
+## Discussion
 
 This convenience method behaves in a similar way to the [`draw(in:angle:)`](./draw%28in,angle%29-7sdyh.md) method, with the path object replacing the rectangle as the clipping region. Like the other method, the start and end colors are guaranteed to be visible at the farthest ends of the path.
 

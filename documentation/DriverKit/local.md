@@ -18,7 +18,7 @@ Tells the system that the method runs locally in the driver extension’s proces
 #define LOCAL
 ```
 
-#### Discussion
+## Discussion
 
 DriverKit adds this macro to methods that must run locally in your driver extension. A method tagged with this macro may still be called by a remote process such as the kernel. Don’t add this macro to your own methods.
 

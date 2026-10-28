@@ -15,7 +15,7 @@ Mark a buffer as being likely to contain static data.
 void buf_markstatic(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

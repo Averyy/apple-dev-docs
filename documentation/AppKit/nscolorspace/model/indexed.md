@@ -19,7 +19,7 @@ case indexed
 NSColorSpaceModelIndexed
 ```
 
-#### Discussion
+## Discussion
 
 An indexed color value (a color specification in indexed color space) consists of an index value that refers to a color in a color list.
 

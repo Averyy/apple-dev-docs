@@ -19,7 +19,7 @@ init!(frame frameRect: NSRect, filter inFilter: CIFilter!)
 - (id) initWithFrame:(NSRect) frameRect filter:(CIFilter *) inFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The  `IKFilterUIView` object initialized with controls for the input parameters of the provided filter.
 

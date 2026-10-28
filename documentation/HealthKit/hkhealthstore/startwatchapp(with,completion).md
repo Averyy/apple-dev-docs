@@ -27,7 +27,7 @@ func startWatchApp(toHandle workoutConfiguration: HKWorkoutConfiguration) async 
 - (void) startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to launch the companion watchOS app on a paired Apple Watch. After launching, the system calls the handle method on the watchOS app’s delegate and passes the provided workout configuration. Use the workout configuration to start a new workout session on the watch.
 

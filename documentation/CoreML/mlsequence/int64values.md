@@ -25,7 +25,7 @@ var int64Values: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * int64Values;
 ```
 
-#### Discussion
+## Discussion
 
 Only use this property when the sequence’s [`type`](./type.md) is [`MLFeatureType.int64`](../mlfeaturetype/int64.md).
 

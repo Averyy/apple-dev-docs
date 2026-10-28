@@ -20,7 +20,7 @@ A Boolean that controls whether the physics simulation performs continuous colli
 var isContinuousCollisionDetectionEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `true` to perform continuous collision detection. The value is `false` by default, indicating the simulation should apply discrete collision detection.
 

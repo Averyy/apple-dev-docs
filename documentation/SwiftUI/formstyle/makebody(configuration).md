@@ -23,7 +23,7 @@ Creates a view that represents the body of a form.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Return Value
+## Return Value
 
 A view that has behavior and appearance that enables it to function as a [`Form`](../form.md).
 

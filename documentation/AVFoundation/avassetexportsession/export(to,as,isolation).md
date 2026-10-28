@@ -21,7 +21,7 @@ Exports the asset to the output location in the specified file type.
 final func export(to url: URL, as fileType: AVFileType, isolation: isolated (any Actor)? = #isolation) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an error if you cancel the export or you specify a file type value that isn’t contained in the session’s [`supportedFileTypes`](./supportedfiletypes.md).
 

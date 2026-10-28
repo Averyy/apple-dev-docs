@@ -19,7 +19,7 @@ weak var clientView: NSView? { get set }
 @property (weak, nullable) NSView * clientView;
 ```
 
-#### Discussion
+## Discussion
 
 `aView` is either the document view of the NSScrollView that contains the receiver or a subview of the document view.
 

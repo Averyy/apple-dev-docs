@@ -20,7 +20,7 @@ class SCDisplay
 @interface SCDisplay : NSObject
 ```
 
-#### Overview
+## Overview
 
 A display object represents a physical display connected to a Mac. Query the display to retrieve its unique identifier and onscreen coordinates.
 

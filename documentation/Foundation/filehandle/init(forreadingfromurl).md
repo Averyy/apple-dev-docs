@@ -21,11 +21,11 @@ Returns a file handle initialized for reading the file, device, or named socket 
 convenience init(forReadingFromURL url: URL) throws
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `url`.
 
-#### Discussion
+## Discussion
 
 The file pointer is set to the beginning of the file. You cannot write data to the returned file handle object. Use the [`readDataToEndOfFile()`](./readdatatoendoffile%28%29.md) or [`readData(ofLength:)`](./readdata%28oflength%29.md) methods to read data from it.
 

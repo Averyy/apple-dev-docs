@@ -28,7 +28,7 @@ init(cgRect rect: CGRect)
 + (NSValue *) valueWithCGRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the rectangle information.
 

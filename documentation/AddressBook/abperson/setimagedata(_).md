@@ -19,7 +19,7 @@ func setImageData(_ data: Data!) -> Bool
 - (BOOL) setImageData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 The `data` argument must be in a QuickTime-compatible format. Pass `nil` to specify that there is no image for this person.
 

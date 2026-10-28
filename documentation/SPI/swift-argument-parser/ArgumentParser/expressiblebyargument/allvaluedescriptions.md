@@ -18,7 +18,7 @@ A dictionary containing the descriptions for each possible value of this type, f
 static var allValueDescriptions: [String : String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this property returns an empty dictionary. If the conforming type is also `CaseIterable`, the default implementation returns a dictionary with a description for each value as its key-value pair. Note that the conforming type must implement the `defaultValueDescription` for each value - if the description and the value are the same string, it’s assumed that a description is not implemented.
 
@@ -26,9 +26,7 @@ The default implementation of this property returns an empty dictionary. If the 
 
 ### ExpressibleByArgument Implementations
 - [static var allValueDescriptions: [String : String]](./allvaluedescriptions-9vi91.md)
-  A dictionary containing the descriptions for each possible value of this type, for display in the help screen.
 - [static var allValueDescriptions: [String : String]](./allvaluedescriptions-hx56.md)
-  A dictionary containing the descriptions for each possible value of this type, for display in the help screen.
 
 
 ---

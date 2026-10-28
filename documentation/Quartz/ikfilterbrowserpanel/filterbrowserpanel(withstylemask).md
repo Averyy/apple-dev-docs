@@ -19,7 +19,7 @@ class func filterBrowserPanel(withStyleMask styleMask: UInt32) -> Any!
 + (id) filterBrowserPanelWithStyleMask:(unsigned int) styleMask;
 ```
 
-#### Return Value
+## Return Value
 
 The shared instance.
 

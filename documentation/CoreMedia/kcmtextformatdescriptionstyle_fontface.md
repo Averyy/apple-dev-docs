@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionStyle_FontFace: CFString
 extern CFStringRef const kCMTextFormatDescriptionStyle_FontFace;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a `SInt8`.
 

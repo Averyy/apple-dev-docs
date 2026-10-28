@@ -29,11 +29,11 @@ func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throw
 
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLCounterSampleBuffer`](../mtlcountersamplebuffer.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 The method may produce an error if the GPU driver has exhausted its underlying resources for counter sample buffers.
 

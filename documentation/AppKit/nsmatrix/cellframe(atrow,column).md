@@ -19,7 +19,7 @@ func cellFrame(atRow row: Int, column col: Int) -> NSRect
 - (NSRect) cellFrameAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle of the cell (whether or not the specified cell actually exists).
 

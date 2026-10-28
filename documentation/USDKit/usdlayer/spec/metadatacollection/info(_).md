@@ -20,7 +20,7 @@ Returns the value of `key`, or `nil` if the key is unauthored.
 func info(_ key: USDToken) -> USDValue?
 ```
 
-#### Return Value
+## Return Value
 
 The authored value, or `nil` if unauthored.
 

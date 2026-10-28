@@ -14,7 +14,7 @@
 func process(for PID: pid_t) throws -> AudioHardwareProcess?
 ```
 
-#### Return Value
+## Return Value
 
 The AudioHardwareProcess that corresponds with the given PID, or nil if the PID does not correspond with any process object.
 

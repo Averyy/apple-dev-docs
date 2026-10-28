@@ -22,7 +22,7 @@ var isAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 A tag removed from the RF field becomes unavailable, and a tag in a disconnected state is also unavailable.
 

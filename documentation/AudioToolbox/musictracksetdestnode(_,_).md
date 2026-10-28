@@ -24,11 +24,11 @@ func MusicTrackSetDestNode(_ inTrack: MusicTrack, _ inNode: AUNode) -> OSStatus
 extern OSStatus MusicTrackSetDestNode(MusicTrack inTrack, AUNode inNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The audio unit node that you specify must be a member of the audio processing graph that the music track’s sequence is using. When played, the track sends its events to that node.
 

@@ -24,7 +24,7 @@ init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized instance of this class.
 

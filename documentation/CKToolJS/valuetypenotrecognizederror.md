@@ -15,7 +15,7 @@ An error that a deserializer emits when it fails to recognize the type of object
 interface ValueTypeNotRecognizedError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

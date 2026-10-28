@@ -20,11 +20,11 @@ Creates a render pipeline state from the archive with a render descriptor and a 
 func makeRenderPipelineState(descriptor: MTL4PipelineDescriptor, dynamicLinkingDescriptor: MTL4RenderPipelineDynamicLinkingDescriptor? = nil) throws -> any MTLRenderPipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A compute pipeline state object upon success, otherwise this function throws.
 
-#### Discussion
+## Discussion
 
 You create any kind of render pipeline states with this method, including:
 

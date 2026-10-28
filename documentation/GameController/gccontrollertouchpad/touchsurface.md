@@ -24,7 +24,7 @@ var touchSurface: GCControllerDirectionPad { get }
 @property (nonatomic, readonly) GCControllerDirectionPad * touchSurface;
 ```
 
-#### Discussion
+## Discussion
 
 This element provides the recent or last touch positions on the two axes. Use the [`touchState`](./touchstate-swift.property.md) property to determine whether the user is currently touching the surface.
 

@@ -22,7 +22,7 @@ var locationNumber: Int { get }
 @property (readonly) NSUInteger locationNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of the location number depends on a device’s [`location`](./location.md) property:
 

@@ -23,7 +23,7 @@ static func .> (a: Scalar, b: SIMD16<Scalar>) -> SIMDMask<SIMD16<Scalar>.MaskSto
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if a is greater than the corresponding lane of b, and false otherwise.
 

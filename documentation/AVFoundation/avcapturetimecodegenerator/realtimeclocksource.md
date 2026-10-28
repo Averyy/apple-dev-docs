@@ -23,7 +23,7 @@ class var realTimeClockSource: AVCaptureTimecode.Source { get }
 @property (class, nonatomic, readonly) AVCaptureTimecodeSource * realTimeClockSource;
 ```
 
-#### Discussion
+## Discussion
 
 This class property provides a default timecode source based on the real-time system clock, requiring no external device. It is ideal for live events or scenarios where alignment with the current time of day is necessary.
 

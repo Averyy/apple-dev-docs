@@ -24,7 +24,7 @@ var secondaryEdgeMode: MPSImageEdgeMode { get set }
 @property (nonatomic, readwrite) MPSImageEdgeMode secondaryEdgeMode;
 ```
 
-#### Discussion
+## Discussion
 
 Most kernel objects can read off the edge of a source image. This can happen because of a negative offset property, because the `offset + clipRect.size` is larger than the source image, or because the filter uses neighboring pixels in its calculations (e.g. convolution filters).
 

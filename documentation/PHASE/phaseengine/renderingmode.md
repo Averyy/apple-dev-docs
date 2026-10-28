@@ -19,7 +19,7 @@ enum RenderingMode
 enum PHASERenderingMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 To define the manner in which PHASE renders audio content, select an option from this enumeration and pass it to the `renderingMode` parameter of the [`PHASEEngine`](../phaseengine.md) initializer, [`init(updateMode:renderingMode:)`](./init%28updatemode,renderingmode%29.md).
 

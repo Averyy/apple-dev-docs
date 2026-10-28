@@ -25,7 +25,7 @@ var wantsHDR: Bool { get set }
 @property (nonatomic) BOOL wantsHDR;
 ```
 
-#### Discussion
+## Discussion
 
 When this property’s value is [`false`](../../Swift/false.md) (the default), SceneKit performs lighting calculations in a color space whose brightness range is similar to that of the output display. This approach limits the ability to perform realistic rendering of scenes with fine details in brightness levels.
 

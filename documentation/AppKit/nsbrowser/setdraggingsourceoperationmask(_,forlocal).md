@@ -19,7 +19,7 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 - (void) setDraggingSourceOperationMask:(NSDragOperation) mask forLocal:(BOOL) isLocal;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Do not override this method.
 

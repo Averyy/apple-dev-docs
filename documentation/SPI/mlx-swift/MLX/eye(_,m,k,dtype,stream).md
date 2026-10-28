@@ -17,7 +17,7 @@ Create an identity matrix or a general diagonal matrix given a [`DType`](./dtype
 func eye(_ n: Int, m: Int? = nil, k: Int = 0, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.eye(10, dtype: .int32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`identity(_:type:stream:)`](./identity%28_,type,stream%29.md)

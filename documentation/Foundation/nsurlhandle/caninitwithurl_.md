@@ -17,11 +17,11 @@ Returns whether a URL handle can be initialized with a given URL.
 + (BOOL) canInitWithURL:(NSURL *) anURL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a URL handle can be initialized with `aURL`, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Subclasses of `NSURLHandle` must override this method to identify which URLs they can service.
 

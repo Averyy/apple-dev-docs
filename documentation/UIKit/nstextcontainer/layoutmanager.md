@@ -23,7 +23,7 @@ unowned(unsafe) var layoutManager: NSLayoutManager? { get set }
 @property (nonatomic, assign, nullable) NSLayoutManager * layoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 Avoid assigning a layout manager directly through this property. Instead, use the [`replaceLayoutManager(_:)`](./replacelayoutmanager%28_%29.md) method when you want to replace the layout manager. The framework sets the value of this property automatically when you add a text container to your layout manager using the [`addTextContainer(_:)`](../nslayoutmanager/addtextcontainer%28_%29.md) method.
 

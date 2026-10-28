@@ -21,7 +21,7 @@ The extra space around the reserved area that keeps interactive content clear of
 var margins: EdgeInsets { get }
 ```
 
-#### Discussion
+## Discussion
 
 The region’s [`frame`](./frame.md) already includes these margins.
 

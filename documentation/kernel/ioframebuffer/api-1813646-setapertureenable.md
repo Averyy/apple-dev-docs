@@ -13,11 +13,11 @@ virtual IOReturn setApertureEnable(
  IOOptionBitsenable );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement this method to set enable a non standard aperture. The system does not call this method.
 

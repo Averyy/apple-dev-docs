@@ -25,7 +25,7 @@ var isLenient: Bool { get set }
 @property (getter=isLenient) BOOL lenient;
 ```
 
-#### Discussion
+## Discussion
 
 If the formatter is set to be lenient, as with any guessing it may get the result number wrong (that is, a number other than that which was intended).
 

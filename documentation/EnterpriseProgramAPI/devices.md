@@ -5,7 +5,7 @@
 
 Register devices for development and testing.
 
-#### Overview
+## Overview
 
 A `devices` resource represents the Apple devices that you register to use for development and testing. You can register a limited number of new devices and get information about them.
 

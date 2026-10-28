@@ -6,7 +6,7 @@
 
 A string holding the track name.
 
-#### Overview
+## Overview
 
 A `NULL`-terminated UTF-8 or UTF-16 string holding the track name. If this is a UTF-16 string, the string must start with a byte-order mark (`0xFEFF`).
 

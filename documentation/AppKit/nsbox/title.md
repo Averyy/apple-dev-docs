@@ -19,7 +19,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title of the `NSBox`. By default, a box’s title is “Title.” If the size of the new title is different from that of the old title, the content view is resized to absorb the difference.
 

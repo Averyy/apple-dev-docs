@@ -52,7 +52,7 @@ init<T>(column: MLDataColumn<T>) where T : MLDataValueConvertible
 init<T>(column: MLDataColumn<T>) where T : MLDataValueConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of sequences from another column. Start by creating a column that is convertible to a column of sequences.
 

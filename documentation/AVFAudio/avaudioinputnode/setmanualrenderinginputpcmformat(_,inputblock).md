@@ -25,7 +25,7 @@ func setManualRenderingInputPCMFormat(_ format: AVAudioFormat, inputBlock block:
 - (BOOL) setManualRenderingInputPCMFormat:(AVAudioFormat *) format inputBlock:(AVAudioIONodeInputBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 The block must be non-`nil` when using an input node while the engine is operating in manual rendering mode. If you switch the engine to render to and from an audio device, it invalidates any previous block.
 

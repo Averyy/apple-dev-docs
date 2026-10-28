@@ -25,7 +25,7 @@ typealias MPMediaEntityPersistentID = UInt64
 typedef uint64_t MPMediaEntityPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 The value persists across application launches and across syncs that don’t change the sync status of the media item. The value isn’t guaranteed to persist across a sync/unsync/sync cycle.
 

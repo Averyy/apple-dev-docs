@@ -21,7 +21,7 @@ Tracks the location of the provided range throughout the mutation closure, retur
 mutating func transform<E>(updating range: Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E) -> Range<AttributedString.Index>? where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The updated `Range` that is valid after the mutation has been performed, or `nil` if the mutation performed does not allow for tracking to succeed (such as replacing the provided inout variable with an entirely different `AttributedString`).
 

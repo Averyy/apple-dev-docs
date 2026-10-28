@@ -21,7 +21,7 @@ Error information for product purchase errors.
 enum PurchaseError
 ```
 
-#### Overview
+## Overview
 
 The [`purchase(options:)`](./purchase%28options%29.md) function may throw a purchase error.
 

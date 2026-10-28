@@ -16,7 +16,7 @@ The peripheral is in the process of connecting to a connection view’s central 
 case connecting
 ```
 
-#### Discussion
+## Discussion
 
 The connection view title corresponding to this state should be in the following format:
 

@@ -19,11 +19,11 @@ init?(contentsOfFile filename: String)
 + (NSImageRep *) imageRepWithContentsOfFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of an `NSImageRep` subclass, or `nil` if the image data could not be read.
 
-#### Discussion
+## Discussion
 
 If sent to the `NSImageRep` class object, this method returns a newly allocated instance of a subclass of `NSImageRep` (chosen through the use of [`class(forFileType:)`](./class%28forfiletype%29.md)) initialized with the contents of the specified file. If sent to a subclass of `NSImageRep` that recognizes the type of data in the file, it returns an instance of that subclass initialized with the contents of the file.
 

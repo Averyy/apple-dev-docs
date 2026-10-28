@@ -21,7 +21,7 @@ func index(of item: any CPListTemplateItem) -> Int
 - (NSUInteger) indexOfItem:(id<CPListTemplateItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s index in the section, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) if the section doesn’t contain the item.
 

@@ -23,7 +23,7 @@ func openApplication(at applicationURL: URL, configuration: NSWorkspace.OpenConf
 - (void) openApplicationAtURL:(NSURL *) applicationURL configuration:(NSWorkspaceOpenConfiguration *) configuration completionHandler:(void (^)(NSRunningApplication *app, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

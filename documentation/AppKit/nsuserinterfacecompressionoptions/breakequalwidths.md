@@ -20,7 +20,7 @@ class var breakEqualWidths: NSUserInterfaceCompressionOptions { get }
 @property (class, copy, readonly) NSUserInterfaceCompressionOptions * breakEqualWidthsOption;
 ```
 
-#### Discussion
+## Discussion
 
 This option is handled by the system, and no action is required by the views.
 

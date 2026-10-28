@@ -23,7 +23,7 @@ unowned(unsafe) var unknownPersonViewDelegate: (any ABUnknownPersonViewControlle
 @property (nonatomic, assign, nullable) id<ABUnknownPersonViewControllerDelegate> unknownPersonViewDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`ABUnknownPersonViewControllerDelegate`](../abunknownpersonviewcontrollerdelegate.md) protocol.
 

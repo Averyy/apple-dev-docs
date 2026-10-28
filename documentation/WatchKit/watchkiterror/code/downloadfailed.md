@@ -19,7 +19,7 @@ case downloadFailed
 WatchKitDownloadError
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it can’t download a media file.
 

@@ -23,7 +23,7 @@ enum Kind
 enum CLSProgressReportingCapabilityKind : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use one of these values to set the [`kind`](./kind-swift.property.md) property in each [`CLSProgressReportingCapability`](../clsprogressreportingcapability.md) instance when constructing a set of capabilities used to configure a context. Each kind corresponds to a different metric that you provide, like a score or a progress indication.
 

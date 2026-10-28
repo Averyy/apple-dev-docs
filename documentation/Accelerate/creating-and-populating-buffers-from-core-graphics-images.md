@@ -5,13 +5,13 @@
 
 Initialize vImage buffers from Core Graphics images.
 
-#### Overview
+## Overview
 
 [`vImage_Buffer`](./vimage_buffer.md) structures are the basic data structures that vImage uses for working with images. They describe an image’s dimensions and contain the pixel data that vImage routines operate on.
 
 Typically, you’ll initialize a source buffer from an image and initialize and allocate a destination buffer to receive the result of a vImage operation.
 
-##### Initialize a Source Buffer from a Core Graphics Image
+### Initialize a Source Buffer from a Core Graphics Image
 
 The vImage functions that initialize a buffer’s size and data require an instantiated [`vImage_Buffer`](./vimage_buffer.md) structure. Typically, you declare a buffer as a variable because these functions mutate the buffer.
 
@@ -26,7 +26,7 @@ guard
 }
 ```
 
-##### Initialize and Allocate a Destination Buffer
+### Initialize and Allocate a Destination Buffer
 
 Typically, in addition to creating a buffer to represent your source image, you create a destination buffer to receive the result of the vImage operation. In this case, you use the [`init(width:height:bitsPerPixel:)`](./vimage_buffer/init%28width,height,bitsperpixel%29.md) function to initialize a buffer of a specified size and the correct memory allocation for the bit-depth of the image:
 
@@ -38,7 +38,7 @@ guard var destinationBuffer = try? vImage_Buffer(width: Int(sourceBuffer.width),
 }
 ```
 
-##### Free the Buffer Memory
+### Free the Buffer Memory
 
 After you’re finished with buffers that have have their own memory allocation, it’s important that you free the memory allocated to them:
 

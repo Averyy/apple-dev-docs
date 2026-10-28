@@ -13,7 +13,7 @@ bool addDrivers(
  bool doNubMatching = true );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if driver personality was added to the database successfully. Failure is due to a memory allocation failure.
 

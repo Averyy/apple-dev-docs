@@ -26,7 +26,7 @@ var canStepForward: Bool { get }
 @property (readonly) BOOL canStepForward;
 ```
 
-#### Discussion
+## Discussion
 
 Once the item becomes ready to play, the value of this property does not change. This behavior applies even when boundary conditions, such as when the item’s current time is equal to its end time, have been reached.
 

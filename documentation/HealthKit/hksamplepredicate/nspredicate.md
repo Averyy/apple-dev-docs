@@ -17,8 +17,8 @@ An optional predicate that further restricts the results that the query returns.
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) let nsPredicate: NSPredicate?
+nonisolated(unsafe)
+let nsPredicate: NSPredicate?
 ```
 
 ## See Also

@@ -17,7 +17,7 @@ A Boolean value that indicates whether your app prevents the user joining multip
 var denyMultiplayerGaming: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t set this value, it is `nil`.
 

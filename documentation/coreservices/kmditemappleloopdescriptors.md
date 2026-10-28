@@ -19,7 +19,7 @@ let kMDItemAppleLoopDescriptors: CFString!
 const CFStringRef kMDItemAppleLoopDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 Besides genre and instrument, files can contain descriptive information that help users in refining searches.
 

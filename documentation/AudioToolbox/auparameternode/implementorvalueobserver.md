@@ -32,7 +32,7 @@ var implementorValueObserver: AUImplementorValueObserver { get set }
 @property (atomic, copy) AUImplementorValueObserver implementorValueObserver;
 ```
 
-#### Discussion
+## Discussion
 
 This block receives all externally-generated changes to parameter values. It should store the new value in its audio signal processing state (assuming that state is separate from the parameter object).
 

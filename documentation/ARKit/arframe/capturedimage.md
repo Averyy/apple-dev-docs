@@ -24,7 +24,7 @@ var capturedImage: CVPixelBuffer { get }
 
 - [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 
-#### Discussion
+## Discussion
 
 ARKit captures pixel buffers in a full-range planar YCbCr format (also known as YUV) format according to the ITU R. 601-4 standard. (You can verify this by checking the [`kCVImageBufferYCbCrMatrixKey`](../../CoreVideo/kcvimagebufferycbcrmatrixkey.md) pixel buffer attachment.)
 

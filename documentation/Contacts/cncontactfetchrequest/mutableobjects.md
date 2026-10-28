@@ -32,7 +32,7 @@ var mutableObjects: Bool { get set }
 @property (atomic) BOOL mutableObjects;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the fetch returns [`CNMutableContact`](../cnmutablecontact.md) objects; otherwise it returns [`CNContact`](../cncontact.md) objects. The default value of this property is [`false`](../../Swift/false.md).
 

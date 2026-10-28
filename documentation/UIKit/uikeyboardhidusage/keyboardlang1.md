@@ -23,7 +23,7 @@ case keyboardLANG1
 UIKeyboardHIDUsageKeyboardLANG1
 ```
 
-#### Discussion
+## Discussion
 
 On Japanese language keyboards from Apple, the [`UIKeyboardHIDUsage.keyboardLANG1`](./keyboardlang1.md) key is the Kana switch (かな) key. On Korean language keyboards, it’s the Hangul/English toggle key.
 

@@ -19,7 +19,7 @@ weak var delegate: (any NSTokenFieldDelegate)? { get set }
 @property (weak, nullable) id<NSTokenFieldDelegate> delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The token field’s delegate
 

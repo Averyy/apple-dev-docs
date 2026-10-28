@@ -20,7 +20,7 @@ optional func outlineViewItemDidCollapse(_ notification: Notification)
 - (void) outlineViewItemDidCollapse:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked as a result of posting an [`itemDidCollapseNotification`](../nsoutlineview/itemdidcollapsenotification.md).
 

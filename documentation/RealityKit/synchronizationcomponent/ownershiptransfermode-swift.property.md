@@ -20,7 +20,7 @@ The entity’s transfer ownership mode.
 var ownershipTransferMode: SynchronizationComponent.OwnershipTransferMode
 ```
 
-#### Discussion
+## Discussion
 
 By default, the transfer mode is [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](./ownershiptransfermode-swift.enum/autoaccept.md). You can set it to [`SynchronizationComponent.OwnershipTransferMode.manual`](./ownershiptransfermode-swift.enum/manual.md) to require explicit confirmation of the request by your app.
 

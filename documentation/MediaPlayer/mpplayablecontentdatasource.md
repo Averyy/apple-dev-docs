@@ -24,7 +24,7 @@ protocol MPPlayableContentDataSource : NSObjectProtocol
 @protocol MPPlayableContentDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To support external media players, create a class that conforms to the `MPPlayableContentDataSource` protocol. When your app launches, create an instance of this class and assign it to the shared [`dataSource`](./mpplayablecontentmanager/datasource.md) property. This data source provides media metadata to external media players so that they can build user interfaces displaying your app’s content. It’s best to set this data source as early as possible in your app’s lifecycle, as iOS may start asking for content right away.
 

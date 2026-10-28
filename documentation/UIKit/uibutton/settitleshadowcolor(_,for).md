@@ -23,7 +23,7 @@ func setTitleShadowColor(_ color: UIColor?, for state: UIControl.State)
 - (void) setTitleShadowColor:(UIColor *) color forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 In general, if a property is not specified for a state, the default is to use the [`normal`](../uicontrol/state-swift.struct/normal.md) value. If the [`normal`](../uicontrol/state-swift.struct/normal.md) value is not set, then the property defaults to a system value. Therefore, at a minimum, you should set the value for the normal state.
 

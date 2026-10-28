@@ -19,7 +19,7 @@ var acceptsFirstResponder: Bool { get }
 @property (readonly) BOOL acceptsFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 As first responder, the receiver is the first object in the responder chain to be sent key events and action messages. By default, this property is [`false`](../../Swift/false.md). Subclasses set this property to [`true`](../../Swift/true.md) if the receiver accepts first responder status.
 

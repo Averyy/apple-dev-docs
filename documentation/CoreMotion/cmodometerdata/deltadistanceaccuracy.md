@@ -24,7 +24,7 @@ var deltaDistanceAccuracy: CLLocationAccuracy { get }
 @property (nonatomic, readonly) CLLocationAccuracy deltaDistanceAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures the accuracy of the [`deltaDistance`](./deltadistance.md) property.
 

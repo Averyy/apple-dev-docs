@@ -15,7 +15,7 @@ These constants are to set the preferred channel layout on video device.
 enum IOUserVideoChannelLabel : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These channel labels attempt to list all labels in common use. Due to the ambiguities in channel labeling by various groups, there may be some overlap or duplication in the labels below. Use the label which most clearly describes what you mean.
 

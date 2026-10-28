@@ -23,7 +23,7 @@ var caseSensitive: Bool { get set }
 @property (nonatomic) BOOL caseSensitive;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the web view takes case into account when matching the search string. The default value of this property is [`false`](../../Swift/false.md).
 

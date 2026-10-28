@@ -21,7 +21,7 @@ class let didCloseNotification: NSNotification.Name
 extern NSNotificationName NSDrawerDidCloseNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSDrawer` object that closed. This notification does not contain a `userInfo` dictionary.
 

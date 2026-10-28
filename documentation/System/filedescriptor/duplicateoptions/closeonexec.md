@@ -21,7 +21,7 @@ Indicates that executing a program closes the file.
 static var closeOnExec: FileDescriptor.DuplicateOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Normally, file descriptors remain open across calls to the `exec(2)` family of functions. If you specify this option, the file descriptor is closed when replacing this process with another process.
 

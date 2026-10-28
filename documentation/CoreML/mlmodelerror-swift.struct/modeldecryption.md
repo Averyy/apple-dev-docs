@@ -21,7 +21,7 @@ An error code for problems related to decrypting models.
 static var modelDecryption: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when the framework can’t decrypt a model.
 

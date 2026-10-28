@@ -15,7 +15,7 @@ Tells the delegate when the user selects a specific subtitle option.
 - (void) playerViewController:(AVPlayerViewController *) playerViewController didSelectExternalSubtitleOptionLanguage:(NSString *) language;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method only for external subtitle languages specified by the player item’s [`externalSubtitleOptionLanguages`](../../AVFoundation/avplayeritem/externalsubtitleoptionlanguages.md) property. For all other options, the framework calls [`playerViewController(_:didSelect:in:)`](./playerviewcontroller%28_,didselect,in%29.md) instead. The delegate is responsible for displaying the corresponding subtitles.
 

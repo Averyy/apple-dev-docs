@@ -23,7 +23,7 @@ var isForMainFrame: Bool { get }
 @property (nonatomic, readonly, getter=isForMainFrame) BOOL forMainFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the response targets the main frame. The value is [`false`](../../Swift/false.md) if the response targets a different frame, such as the frame in a new window.
 

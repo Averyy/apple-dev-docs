@@ -20,7 +20,7 @@ func reply(toShouldUnselect shouldUnselect: Bool)
 - (void) replyToShouldUnselect:(BOOL) shouldUnselect;
 ```
 
-#### Discussion
+## Discussion
 
 If you override [`shouldUnselect`](./shouldunselect.md) to return [`NSPreferencePaneUnselectReply.unselectLater`](../nspreferencepaneunselectreply/unselectlater.md), you must invoke [`reply(toShouldUnselect:)`](./reply%28toshouldunselect%29.md) when you have determined whether or not the preference pane can be deselected.
 

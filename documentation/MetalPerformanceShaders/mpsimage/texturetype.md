@@ -24,7 +24,7 @@ var textureType: MTLTextureType { get }
 @property (nonatomic, readonly) MTLTextureType textureType;
 ```
 
-#### Discussion
+## Discussion
 
 A property that defines the type of texture the image represents. In most cases, this will be [`MTLTextureType.type2D`](../../Metal/mtltexturetype/type2d.md) or [`MTLTextureType.type2DArray`](../../Metal/mtltexturetype/type2darray.md).
 

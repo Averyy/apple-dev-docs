@@ -23,7 +23,7 @@ var audioRendition: AVMetricMediaRendition { get }
 @property (readonly) AVMetricMediaRendition * audioRendition;
 ```
 
-#### Discussion
+## Discussion
 
 Contains information corresponding to the currently selected audio rendition.
 

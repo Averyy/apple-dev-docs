@@ -23,7 +23,7 @@ var showsVerticalScrollIndicator: Bool { get set }
 @property (nonatomic) BOOL showsVerticalScrollIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). The indicator is visible while tracking is underway and fades out after tracking.
 

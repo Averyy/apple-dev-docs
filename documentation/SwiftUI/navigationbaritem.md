@@ -20,7 +20,7 @@ A configuration for a navigation bar that represents a view at the top of a navi
 struct NavigationBarItem
 ```
 
-#### Overview
+## Overview
 
 Use one of the [`NavigationBarItem.TitleDisplayMode`](./navigationbaritem/titledisplaymode.md) values to configure a navigation bar title’s display mode with the [`navigationBarTitleDisplayMode(_:)`](./view/navigationbartitledisplaymode%28_%29.md) view modifier.
 

@@ -24,7 +24,7 @@ var weightsLayout: MPSGraphTensorNamedDataLayout { get set }
 @property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout weightsLayout;
 ```
 
-#### Discussion
+## Discussion
 
 It defines the order of named dimensions (Output channels, Input channels, Kernel height, Kernel width). The convolution operation uses this to interpret data in the weights tensor. For example, if `weightsLayout` is `MPSGraphTensorNamedDataLayoutOIHW`, frameork interprets data in weights tensor as `outputChannels x inputChannels x kernelHeight x kernelWidth` with `kernelWidth` as fastest moving dimension.
 

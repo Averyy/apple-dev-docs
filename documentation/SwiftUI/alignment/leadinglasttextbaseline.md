@@ -22,7 +22,7 @@ A guide that marks the leading edge and bottom-most text baseline in a view.
 static var leadingLastTextBaseline: Alignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`lastTextBaseline`](../verticalalignment/lasttextbaseline.md) vertical guide:
 

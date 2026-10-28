@@ -19,7 +19,7 @@ var maxDate: Date? { get set }
 @property (copy, nullable) NSDate * maxDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the maximum value that the date picker allows as input. `nil` indicates no maximum date.
 

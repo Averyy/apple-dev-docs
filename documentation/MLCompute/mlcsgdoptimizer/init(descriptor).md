@@ -23,11 +23,11 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor)
 + (instancetype) optimizerWithDescriptor:(MLCOptimizerDescriptor *) optimizerDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An SGD optimizer.
 
-#### Discussion
+## Discussion
 
 Sets [`momentumScale`](./momentumscale.md) to `0.0` and [`usesNesterovMomentum`](./usesnesterovmomentum.md) to `false` by default.
 

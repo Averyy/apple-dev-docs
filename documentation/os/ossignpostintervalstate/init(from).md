@@ -21,7 +21,7 @@ Decodes the interval state from the provided decoder.
 required init(from decoder: any Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to decode the interval state, which must adopt the [`Decoder`](../../Swift/decoder.md) protocol, calls it on your behalf as part of the serialization process.
 

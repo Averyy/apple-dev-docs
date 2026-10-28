@@ -22,7 +22,7 @@ weak var delegate: (any SCRecordingEditorDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SCRecordingEditorDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Delegate The delegate for the recording preview.
 

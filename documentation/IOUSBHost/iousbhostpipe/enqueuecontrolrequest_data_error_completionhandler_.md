@@ -16,11 +16,11 @@ Enqueues a request on a control endpoint with a default completion timeout.
 - (BOOL) enqueueControlRequest:(IOUSBDeviceRequest) request data:(NSMutableData *) data error:(NSError **) error completionHandler:(IOUSBHostCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the abort completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method enqueues an asynchronous request on a control endpoint. If successful, the provided completion routine executes to report the status of the completed input/output request. This method uses [`IOUSBHostDefaultControlCompletionTimeout`](../iousbhostdefaultcontrolcompletiontimeout.md) as the input/output request’s `completionTimeout`.
 

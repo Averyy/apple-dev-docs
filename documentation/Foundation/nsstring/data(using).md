@@ -25,7 +25,7 @@ func data(using encoding: UInt) -> Data?
 - (NSData *) dataUsingEncoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 The result of invoking [`data(using:allowLossyConversion:)`](./data%28using,allowlossyconversion%29.md) with [`false`](../../Swift/false.md) as the second argument (that is, requiring lossless conversion).
 

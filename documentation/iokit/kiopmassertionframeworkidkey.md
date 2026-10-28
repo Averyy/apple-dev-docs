@@ -16,7 +16,7 @@ Specify if the assertion creator is a framework.
 #define kIOPMAssertionFrameworkIDKey
 ```
 
-#### Discussion
+## Discussion
 
 If the code that creates the assertion resides in a framework or library, the caller should specify a CFBundleIdentifier, as a CFString, identifying that bundle here. This info helps developers and administrators determine the source of an assertion.
 

@@ -21,7 +21,7 @@ var supportsVideoPlayback: Bool { get }
 @property (nonatomic, readonly) BOOL supportsVideoPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Video playback will remain supported throughout the session but the availability of video playback may change at any time.
 

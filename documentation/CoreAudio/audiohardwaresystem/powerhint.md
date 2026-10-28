@@ -16,7 +16,7 @@ An AudioHardwarePowerHint enum which allows a process to indicate how aggressive
 var powerHint: AudioHardwarePowerHint { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Note that the value of this property can be set in an application’s info.plist using the key, “AudioHardwarePowerHint”. The values for this key are the strings that correspond to the values in the Power Hints enum.
 

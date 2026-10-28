@@ -17,7 +17,7 @@ When the user clicks the button (on state), the button appears illuminated.
 static const NSButtonType NSMomentaryPushInButton;
 ```
 
-#### Discussion
+## Discussion
 
 This type of button is best for simply triggering actions, as it doesn’t show its state; it always displays its normal image or title. This option is called Momentary Push In in Interface Builder’s Button inspector.
 

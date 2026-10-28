@@ -21,7 +21,7 @@ A GPU memory address space.
 enum AddressSpace
 ```
 
-#### Overview
+## Overview
 
 Used to indicate where variables and buffers reside.
 

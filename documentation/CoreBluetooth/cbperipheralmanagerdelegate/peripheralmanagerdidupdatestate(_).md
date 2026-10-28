@@ -26,7 +26,7 @@ func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager)
 - (void) peripheralManagerDidUpdateState:(CBPeripheralManager *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this required method to ensure that Bluetooth low energy is available to use on the local peripheral device.
 

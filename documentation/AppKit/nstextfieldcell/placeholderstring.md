@@ -19,7 +19,7 @@ var placeholderString: String? { get set }
 @property (copy, nullable) NSString * placeholderString;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new value to this property also clears out any value set for the [`placeholderAttributedString`](./placeholderattributedstring.md) property.
 

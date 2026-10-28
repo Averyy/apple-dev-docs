@@ -15,11 +15,11 @@ Gets the list of destination encodings from a converterobject.
 OSStatus TECGetEncodingList(TECObjectRef encodingConverter, ItemCount *numEncodings, Handle *encodingList);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The `TECDisposeConverter` functionautomatically disposes of the pointer for you. This means you shouldnot reference the pointer after you have disposed of the converter object. 
 

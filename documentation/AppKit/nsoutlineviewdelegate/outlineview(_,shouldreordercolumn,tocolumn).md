@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldReorderColumn colu
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldReorderColumn:(NSInteger) columnIndex toColumn:(NSInteger) newColumnIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the column reordering should be allowed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When a column is initially dragged by the user, the delegate is first called with a `newColumnIndex` value of `-1`. Returning [`false`](../../Swift/false.md) will disallow that column from being reordered at all. Returning [`true`](../../Swift/true.md) allows it to be reordered, and the delegate will be called again when the column reaches a new location.
 

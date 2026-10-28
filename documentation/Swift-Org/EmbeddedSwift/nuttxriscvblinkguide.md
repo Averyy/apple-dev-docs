@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a Swift LED-blink program on Apache NuttX RTOS, emulated on a RISC-V QEMU target.
 
-#### Overview
+## Overview
 
 This example demonstrates how to build a NuttX application in Swift using CMake to drive the NuttX and NuttX-apps Makefile-based build system. The Swift code implements the `leds_swift` NuttX example app, which spawns a background task that cycles the emulated board’s user LEDs. The example targets the `rv-virt` QEMU board, so no physical hardware is required.
 
@@ -39,7 +39,7 @@ public func cMain(
 }
 ```
 
-#### Install dependencies
+## Install dependencies
 
 Install the following tools:
 
@@ -49,11 +49,11 @@ Install the following tools:
 - [QEMU](https://www.qemu.org/)
 - [RISC-V GNU Toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/releases)
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot. Swift 6.1 or newer is required.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and configure the build for the `rv-virt` board with the `leds_swift` example enabled:
 
@@ -68,7 +68,7 @@ Build the project:
 $ cmake --build build
 ```
 
-#### Run in QEMU
+## Run in QEMU
 
 Run the resulting `nuttx.elf` binary in QEMU:
 
@@ -99,7 +99,7 @@ board_userled: LED 3 set to 0
 
 The emulated LEDs cycle in a binary counting pattern. Quit QEMU with `Ctrl-a x`.
 
-#### Try additional CMake targets
+## Try additional CMake targets
 
 The project’s `CMakeLists.txt` provides a few extra targets:
 

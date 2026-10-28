@@ -19,7 +19,7 @@ var secondarySelectionLocation: (any NSTextLocation)? { get set }
 @property (strong, nullable) id<NSTextLocation> secondarySelectionLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a non-`nil` location has a side effect of making `isLogical` to `false`.
 

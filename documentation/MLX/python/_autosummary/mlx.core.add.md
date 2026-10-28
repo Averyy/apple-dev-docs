@@ -6,18 +6,22 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ad
 
 # mlx.core.add
 
-**add(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise addition.
+```python
+add(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+```
+
+Element-wise addition.
+
 Add two arrays with numpy-style broadcasting semantics. Either or both input arrays
 can also be scalars.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
-Returns:
-The sum of `a` and `b`.
+**Returns:**
+: The sum of `a` and `b`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

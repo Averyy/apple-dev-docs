@@ -15,7 +15,7 @@ A point that’s centered vertically on the trailing-back edge of a view.
 static let trailingBack: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

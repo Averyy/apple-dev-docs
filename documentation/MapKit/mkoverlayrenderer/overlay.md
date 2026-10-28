@@ -24,7 +24,7 @@ var overlay: any MKOverlay { get }
 @property (nonatomic, readonly) id<MKOverlay> overlay;
 ```
 
-#### Discussion
+## Discussion
 
 The overlay object contains the coordinate at which to draw the overlay and other information that your app provides.
 

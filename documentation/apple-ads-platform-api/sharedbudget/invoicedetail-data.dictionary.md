@@ -15,7 +15,7 @@ Invoice billing details for accounts on the Line of Credit (LOC) payment model.
 object SharedBudget.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 Captures the billing contact information required for a Line of Credit (`LOC`) payment model budget order, including buyer name, buyer email, and billing email. This field is nullable, and the system only populates it for accounts on the `LOC` payment model. The `primaryBuyerEmail` and `billingEmail` fields must be valid email addresses.
 

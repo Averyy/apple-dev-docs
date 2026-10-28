@@ -19,7 +19,7 @@ func eraseProgressPanelDidFinish(_ aNotification: Notification!)
 - (void) eraseProgressPanelDidFinish:(NSNotification *) aNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method it will receive the message after the panel is removed from display.
 

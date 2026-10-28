@@ -23,7 +23,7 @@ optional var itemVersion: NSFileProviderItemVersion { get }
 @property (nonatomic, strong, readonly) NSFileProviderItemVersion * itemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The version object lets you track changes to an item’s content and metadata separately. Updating the version also invalidates the thumbnail cache. For more information, see [`NSFileProviderItemVersion`](../nsfileprovideritemversion.md).
 

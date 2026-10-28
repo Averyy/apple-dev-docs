@@ -15,11 +15,11 @@ Get the input latency of the clock device.
 uint32_t GetInputLatency();
 ```
 
-#### Return Value
+## Return Value
 
 The input latency of the clock device.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

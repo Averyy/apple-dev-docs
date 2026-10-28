@@ -21,7 +21,7 @@ The standard directory for files on the desktop.
 static var desktopDirectory: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this directory is within the app’s sandbox directory. In macOS, it’s within the app’s sandbox directory for sandboxed apps, or in the current user’s home directory `(~/Desktop)` if the app isn’t sandboxed.
 

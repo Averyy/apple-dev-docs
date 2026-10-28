@@ -23,11 +23,11 @@ func gss_encapsulate_token(_ input_token: gss_const_buffer_t, _ oid: gss_const_O
 OM_uint32 gss_encapsulate_token(gss_const_buffer_t input_token, gss_const_OID oid, gss_buffer_t output_token);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
-#### Discussion
+## Discussion
 
 Use this function to encapsulate the initial token of a GSS-API context establishment sequence. It incorporates an identifier of the mechanism type used on that context, and enables unambiguous interpretation of tokens at GSS-API peers.
 

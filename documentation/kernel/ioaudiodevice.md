@@ -15,7 +15,7 @@ Abstract base class for a single piece of audio hardware. The IOAudioDevice prov
 class IOAudioDevice : IOService
 ```
 
-#### Overview
+## Overview
 
 An audio driver is required to subclass IOAudioDevice in order to provide working audio to the system. A single driver instance will contain a single instance of the driver's IOAudioDevice subclass. The subclass is responsible for mapping all hardware device resources from the service provider nub. It must control access to the hardware so that the hardware doesn't get into an inconsistent state. It is possible that different threads may make requests of the hardware at the same time. The IOAudioDevice superclass provides an IOWorkLoop and IOCommandGate on the IOWorkLoop through which all hardware accesses may be synchronized. All entry points to all parts of the driver controlled by the IOAudioFamily will be synchronized through this one IOWorkLoop.
 

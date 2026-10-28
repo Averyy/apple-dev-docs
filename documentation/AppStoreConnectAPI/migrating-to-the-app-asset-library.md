@@ -5,7 +5,7 @@
 
 Move your screenshots, app previews, and in-app event media from the deprecated set-based resources to the asset library.
 
-#### Overview
+## Overview
 
 The asset library replaces an approach where each App Store surface owned its own media. When you use the asset library, you upload each image or video once into a per-app library, then create placements that position it on surfaces.
 
@@ -13,7 +13,7 @@ In the previous approach, you created an app screenshot set for a specific displ
 
 For more information about the App Asset Library, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
 
-#### Compare the two models
+## Compare the two models
 
 The asset library replaces the set-based resources, which are deprecated:
 
@@ -38,7 +38,7 @@ There are several conceptual shifts with the new asset library approach:
 - **Checksums go away.** Committing an upload takes `uploaded` alone. There’s no `sourceFileChecksum` to compute.
 - **Ordering is explicit.** Instead of patching an ordered list of relationships on a set, post an ordering request naming the placements in sequence.
 
-#### Rewrite the upload sequence
+## Rewrite the upload sequence
 
 The new sequence removes the set and the checksum that the previous approach used. Previously, a screenshot upload took four resource-touching steps: find or create the screenshot set, reserve the screenshot against that set, upload the parts, then commit with a filename, size, and checksum.
 
@@ -52,7 +52,7 @@ Now, the steps are:
 
 Steps 1 through 4 run once per distinct file. Step 5 repeats for each place the file appears, which is where the savings come from.
 
-#### Replace display targets with placement groups
+## Replace display targets with placement groups
 
 One of the biggest changes with the asset library approach is that display-target constants become runtime lookups. Your code now reads `placementProfileGroups` and `placementTypes` from the reference data and maps a target device family to a placement group identifier such as `IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE`; previously, it held a table of display types.
 
@@ -60,19 +60,19 @@ Do this lookup rather than hard-coding the strings. Apple adds new device famili
 
 Specifications behave the same way. You no longer decide which specification a file satisfies; App Store Connect matches the file during processing and reports the result as `specId`. Read that value back and confirm it’s the specification you intended. For more information about specifications, see [Discovering asset specifications](./discovering-asset-specifications.md).
 
-#### Understand asset library deduplication
+## Understand asset library deduplication
 
 The asset library makes manual deduplication unnecessary: upload each file once, then create a placement per surface. You no longer need to hash each file, remember which localizations already have it, and can skip redundant uploads.
 
 The practical consequence of the new approach is that your local bookkeeping changes shape. Instead of tracking “which screenshot record belongs to which set,” track “which library asset backs which placements.” Query it directly rather than storing it: `GET /v1/appAssetLibraryImages/{id}/placements` ([`List related placements`](./get-v1-appassetlibraryimages-_id_-placements.md)) returns every placement that uses an asset.
 
-#### Watch the deletion order
+## Watch the deletion order
 
 Asset library deletes don’t cascade like set-based deletes do, where removing a screenshot set removed its screenshots. You can’t delete an asset that has placements; the request fails with the code `STATE_ERROR.ASSET_HAS_PLACEMENTS`.
 
 > ❗ **Important**:  Delete the placements first, then the asset. This reverses the previous deletion order, where you deleted a set and let its media go with it. Cleanup code that you carry over unchanged fails on the asset delete.
 
-#### Plan the transition
+## Plan the transition
 
 A migration that runs in one pass per app works well:
 

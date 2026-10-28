@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the receiver allows the user to edit text and attributes; if `flag` is [`false`](../../Swift/false.md), it doesn’t.
 

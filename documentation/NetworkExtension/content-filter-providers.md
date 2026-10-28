@@ -5,7 +5,7 @@
 
 Create an on-device network content filter.
 
-#### Overview
+## Overview
 
 An on-device network content filter examines user network content as it passes through the network stack and determines if it should block that content or allow it to pass on to its final destination. You might create a content filter and sell it to organizations, like schools and businesses, that want to prevent users from accessing specific Internet content.
 

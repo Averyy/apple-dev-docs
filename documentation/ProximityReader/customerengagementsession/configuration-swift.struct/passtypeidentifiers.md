@@ -17,7 +17,7 @@ An array of pass type identifiers for the your passes.
 var passTypeIdentifiers: [String]
 ```
 
-#### Discussion
+## Discussion
 
 The session queries the Wallet app using this array when you request the pass attribute option in the [`requestCustomerInfo(for:fields:message:)`](../requestcustomerinfo%28for,fields,message%29.md). The session also validates this array against `AddPassRequest` to ensure only the merchant supported passes are added to the Wallet.
 

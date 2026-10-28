@@ -21,7 +21,7 @@ case none
 
 - [Creating a media device extension](../../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 The device does not support any form of volume control. Volume adjustment methods will not be available and volume controls should not be shown in the user interface.
 

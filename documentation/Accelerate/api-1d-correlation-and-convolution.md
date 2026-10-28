@@ -5,7 +5,7 @@
 
 Use correlation to compare and convolution to combine vectors of real or complex data.
 
-#### Overview
+## Overview
 
 The vDSP library provides functions that calculate the convolution and correlation of a signal and a filter. Both operations compute the sliding dot product of the filter and the section of the input signal that the filter is over. What the operation produced depends on whether the stride is positive or negative:
 

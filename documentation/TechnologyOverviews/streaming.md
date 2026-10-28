@@ -6,13 +6,13 @@ Stream audio and video content to a device, or to AirPlay-enabled hardware.
 
 Streaming technologies allow people to enjoy their favorite media wherever they are. Whether streaming live events, watching on-demand shows, or sharing content wirelessly between devices, these technologies ensure playback is adaptive, secure, and responsive. With built-in privacy protections and broad compatibility across TVs, speakers, and mobile devices, Apple’s streaming technologies deliver engaging experiences that reach users in more places than ever.
 
-#### Stream media to AirPlay-enabled devices
+## Stream media to AirPlay-enabled devices
 
 [AirPlay](https://www.apple.com/airplay/) enables people stream audio and video from their Apple devices to Apple TV, AirPlay-enabled [speakers](https://www.apple.com/home-app/accessories/#section-speakers) and [receivers](https://www.apple.com/home-app/accessories/#section-receivers), and [smart TVs](https://www.apple.com/home-app/accessories/#section-tvs), expanding where and how they enjoy their content. Designed with privacy in mind, AirPlay ensures that shared content stays personal and secure, giving people the freedom to enjoy their media anywhere.
 
 Adopting AirPlay in your playback app is simple and requires only [minimal configuration](../AVFoundation/configuring-your-app-for-media-playback.md). [AVFoundation](../AVFoundation/AVFoundation.md) is the framework you use to play audiovisual media and it provides built-in support for AirPlay. You use AVFoundation together with [AVKit](../AVKit/AVKit.md) to provide the interface for people to select which AirPlay-enabled devices, like Apple TV or HomePod speaker, to send their media. By enabling seamless playback on external devices and offering system-standard AirPlay controls, you can deliver a compelling, multi-device experience that aligns with people’s expectations for media across the Apple ecosystem.
 
-#### Deliver media with HTTP Live Streaming
+## Deliver media with HTTP Live Streaming
 
 [HTTP Live Streaming](https://developer.apple.com/streaming/) (HLS) is Apple’s adaptive streaming technology designed to deliver high-quality audio and video content over standard HTTP connections. Whether you’re broadcasting a live sports event or delivering a on-demand content, HLS enables scalable, reliable playback across all Apple platforms. It dynamically adjusts the stream quality based on the user’s network conditions, which helps to provide smooth playback with minimal buffering and reduced interruptions wherever they are.
 

@@ -15,11 +15,11 @@ Gets the available basic descriptions for the stream.
 size_t GetAvailableStreamFormats(IOUserVideoStreamBasicDescription *out_formats, size_t in_num_formats);
 ```
 
-#### Return Value
+## Return Value
 
 The number of formats were set in the `out_formats` buffer.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

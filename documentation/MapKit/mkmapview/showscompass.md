@@ -23,7 +23,7 @@ var showsCompass: Bool { get set }
 @property (nonatomic) BOOL showsCompass;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to show or hide a control that lets users change the heading orientation of the map.
 

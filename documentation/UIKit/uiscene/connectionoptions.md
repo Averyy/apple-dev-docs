@@ -24,7 +24,7 @@ class ConnectionOptions
 @interface UISceneConnectionOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 UIKit creates scenes for many reasons. It might do so in response to a Handoff request or a request to open a URL. When there’s a specific reason for creating a scene, UIKit fills a [`UIScene.ConnectionOptions`](./connectionoptions.md) object with the associated data and passes it to your delegate at connection time. Use the information in this object to respond accordingly. For example, open the URLs that UIKit provides, and display their contents in the scene.
 

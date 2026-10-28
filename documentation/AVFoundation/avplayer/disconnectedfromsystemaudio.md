@@ -25,7 +25,7 @@ var disconnectedFromSystemAudio: Bool { get }
 @property (nonatomic, readonly) BOOL disconnectedFromSystemAudio;
 ```
 
-#### Discussion
+## Discussion
 
 When NO (the default), the player is connected to system audio and coordinates with the application’s shared `AVAudioSession`. This implies that the player will activate the audio session when playback starts, render audio, and automatically reconfigure itself after events like route changes.
 

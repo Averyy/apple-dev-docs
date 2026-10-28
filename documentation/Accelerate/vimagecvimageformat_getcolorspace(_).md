@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetColorSpace(_ format: vImageConstCVImageFormat) -> Un
 CGColorSpaceRefvImageCVImageFormat_GetColorSpace(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 The color space of the specified image format.
 
-#### Discussion
+## Discussion
 
 For RGB, indexed, and grayscale images, the color space of a Core Video image format describes the image encoding.
 

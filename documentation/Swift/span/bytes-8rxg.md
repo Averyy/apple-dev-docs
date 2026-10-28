@@ -23,7 +23,7 @@ var bytes: RawSpan { get }
 
 Available when `Element` conforms to `ConvertibleToBytes`.
 
-#### Return Value
+## Return Value
 
 A RawSpan over the memory represented by this span.
 

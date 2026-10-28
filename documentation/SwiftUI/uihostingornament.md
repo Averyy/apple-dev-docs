@@ -15,7 +15,7 @@ A model that represents an ornament suitable for being hosted in UIKit.
 class UIHostingOrnament<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Use a `UIHostingOrnament` when you want to add ornaments to a UIKit view controller. For example, the following adds a single bottom ornament to the current view controller:
 

@@ -25,7 +25,7 @@ var percentEncodedPath: String? { get set }
 @property (copy, nullable) NSString * percentEncodedPath;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the path is `/index.html`.
 

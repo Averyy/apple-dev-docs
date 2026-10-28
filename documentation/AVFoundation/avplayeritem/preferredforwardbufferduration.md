@@ -26,7 +26,7 @@ var preferredForwardBufferDuration: TimeInterval { get set }
 @property NSTimeInterval preferredForwardBufferDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the preferred forward buffer duration in seconds. If set to 0, the player will choose an appropriate level of buffering for most use cases. Setting this property to a low value will increase the chance that playback will stall and re-buffer, while setting it to a high value will increase demand on system resources.
 

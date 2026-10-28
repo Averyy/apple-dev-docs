@@ -22,7 +22,7 @@ nonisolated
 func onTapGesture(count: Int = 1, perform action: @escaping () -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform the specified `action` when the user clicks or taps on the view or container `count` times.
 

@@ -4,7 +4,7 @@
 
 Create animations by changing specific adjustment attributes and effect parameters over time.
 
-#### Overview
+## Overview
 
 You can create animations with a [Parameter Element](./adjustment-attributes-and-effect-parameters.md#Parameter-Element) for the attribute or parameter to animate, along with a [keyframeAnimation](./keyframeanimation.md) element that has a series of `keyframe` elements, each of which defines a value at a point in time.
 

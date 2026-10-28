@@ -22,7 +22,7 @@ func beginGeneratingLibraryChangeNotifications()
 - (void) beginGeneratingLibraryChangeNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 This method is nestable, that is, you can call it multiple times. To turn off notifications, call [`endGeneratingLibraryChangeNotifications()`](./endgeneratinglibrarychangenotifications%28%29.md) the same number of times that you called [`beginGeneratingLibraryChangeNotifications()`](./begingeneratinglibrarychangenotifications%28%29.md).
 

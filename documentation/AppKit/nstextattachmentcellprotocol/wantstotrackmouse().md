@@ -21,7 +21,7 @@ func wantsToTrackMouse() -> Bool
 - (BOOL) wantsToTrackMouse;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`true`](../../Swift/true.md). The [`NSView`](../nsview.md) containing the cell should invoke this method before sending a [`trackMouse(with:in:of:untilMouseUp:)`](./trackmouse%28with,in,of,untilmouseup%29.md) message.
 

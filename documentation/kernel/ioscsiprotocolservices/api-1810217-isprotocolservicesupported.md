@@ -13,11 +13,11 @@ virtual bool IsProtocolServiceSupported (
  void *serviceValue ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 True if the requested service is supported, otherwise false.
 
-#### Overview
+## Overview
 
 IsProtocolServiceSupported will return true if the specified feature is supported by the protocol layer.
 

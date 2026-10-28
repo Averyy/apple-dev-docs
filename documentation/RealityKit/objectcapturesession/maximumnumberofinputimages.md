@@ -17,7 +17,7 @@ The maximum number of images that can be used for on-device reconstruction.
 var maximumNumberOfInputImages: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: the session will stop capturing images when this limit is reached unless [`isOverCaptureEnabled`](./configuration-swift.struct/isovercaptureenabled.md) is true.
 

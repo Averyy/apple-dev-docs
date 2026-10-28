@@ -23,7 +23,7 @@ var translatesAutoresizingMaskIntoConstraints: Bool { get set }
 @property (nonatomic) BOOL translatesAutoresizingMaskIntoConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is [`true`](../../Swift/true.md), the system creates a set of constraints that duplicate the behavior specified by the view’s autoresizing mask. You can also modify the view’s size and location using the view’s [`frame`](./frame.md), [`bounds`](./bounds.md), or [`center`](./center.md) properties, creating a static, frame-based layout within Auto Layout.
 

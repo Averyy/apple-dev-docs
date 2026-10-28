@@ -16,7 +16,7 @@ Creates a provider manager.
 init(domainIdentifier: String = DefaultContactProviderDomain.identifier) throws
 ```
 
-#### Discussion
+## Discussion
 
 If needed, the manager registers the [`DefaultContactProviderDomain`](../defaultcontactproviderdomain.md) for the extension.
 

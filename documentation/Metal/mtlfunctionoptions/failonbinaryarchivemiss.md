@@ -24,7 +24,7 @@ static var failOnBinaryArchiveMiss: MTLFunctionOptions { get }
 MTLFunctionOptionFailOnBinaryArchiveMiss
 ```
 
-#### Discussion
+## Discussion
 
 By default, Metal compiles a function if it isn’t in a binary archive. When you set this option, Metal returns an error instead of compiling a missing function.
 

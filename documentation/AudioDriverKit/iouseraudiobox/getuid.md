@@ -15,11 +15,11 @@ Returns the UID of the audio box.
 OSSharedPtr<OSString> GetUID();
 ```
 
-#### Return Value
+## Return Value
 
 The UID of the audio box.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

@@ -24,11 +24,11 @@ func AudioQueueReset(_ inAQ: AudioQueueRef) -> OSStatus
 extern OSStatus AudioQueueReset(AudioQueueRef inAQ);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This function immediately resets an audio queue, flushes any queued buffers (invoking callbacks as necessary), removes all buffers from previously scheduled use, and resets decoder and digital signal processing (DSP) state.
 

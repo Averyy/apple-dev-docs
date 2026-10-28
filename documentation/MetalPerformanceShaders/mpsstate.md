@@ -24,7 +24,7 @@ class MPSState
 @interface MPSState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Some MPS CNN kernels produce additional information beyond an [`MPSImage`](./mpsimage.md). These may be pooling indices where the result came from, convolution weights, or other information not contained in the usual [`MPSImage`](./mpsimage.md) result from a [`MPSCNNKernel`](./mpscnnkernel.md). An [`MPSState`](./mpsstate.md) object typically contains one or more expensive [`MTLResource`](../Metal/mtlresource.md) objects such as textures or buffers to store this information. It provides a base class with interfaces for managing this storage. Child classes may add additional functionality specific to their contents.
 

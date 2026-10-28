@@ -25,7 +25,7 @@ typealias dispatch_queue_t = DispatchQueue
 typedef NSObject<OS_dispatch_queue> * dispatch_queue_t;
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch queue invokes blocks submitted to it serially in FIFO order. A serial queue invokes only one block at a time, but independent queues may each invoke their blocks concurrently with respect to each other.
 

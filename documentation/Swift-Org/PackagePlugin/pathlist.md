@@ -20,7 +20,7 @@ Provides information about a list of paths.
 struct PathList
 ```
 
-#### Overview
+## Overview
 
 The order is not defined but is guaranteed to be stable. This allows the implementation to be more efficient than a static path list.
 

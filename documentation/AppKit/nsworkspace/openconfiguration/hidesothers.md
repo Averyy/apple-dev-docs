@@ -19,7 +19,7 @@ var hidesOthers: Bool { get set }
 @property BOOL hidesOthers;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../../Swift/false.md), which leaves the visibility of other apps unchanged. Setting the property to [`true`](../../../Swift/true.md) hides all apps except the one that launched.
 

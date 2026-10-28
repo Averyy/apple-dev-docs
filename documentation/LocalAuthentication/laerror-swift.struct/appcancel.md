@@ -20,7 +20,7 @@ The app canceled authentication.
 static var appCancel: LAError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error if you call the [`invalidate()`](../lacontext/invalidate%28%29.md) method while authentication is in process.
 

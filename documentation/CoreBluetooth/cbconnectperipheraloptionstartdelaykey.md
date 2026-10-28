@@ -25,7 +25,7 @@ let CBConnectPeripheralOptionStartDelayKey: String
 extern NSString * const CBConnectPeripheralOptionStartDelayKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../Foundation/nsnumber.md) that indicates the duration of the delay in seconds.
 

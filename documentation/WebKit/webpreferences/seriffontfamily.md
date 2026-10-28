@@ -19,7 +19,7 @@ var serifFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * serifFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties indicate that it should be displayed in a serif font but do not specify a particular font.
 

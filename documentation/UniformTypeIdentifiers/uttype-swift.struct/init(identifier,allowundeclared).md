@@ -21,11 +21,11 @@ Create a type given a type identifier, optionally allowing identifiers that do n
 init?(identifier: String, allowUndeclared: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A type object, or `nil` if the input `identifier` was not a Uniform Type Identifier.
 
-#### Discussion
+## Discussion
 
 When `allowUndeclared` is `true`, this initializer can be used to obtain a type object that keeps the “identity” of the input identifier even if no type with that identifier is (currently) known to the system. In that case, the type is neither dynamic nor declared, and has no conformances or tags (or any other properties).
 

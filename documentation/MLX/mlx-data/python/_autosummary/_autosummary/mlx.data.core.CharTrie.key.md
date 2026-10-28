@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/_autos
 
 # mlx.data.core.CharTrie.key
 
-**CharTrie.key(*self: mlx.data._c.core.CharTrie*, *id: int*) → List[[str](https://docs.python.org/3/library/stdtypes.html#str)]**
-: Get the `id`-th token as a list of characters.
+```python
+CharTrie.key(self: mlx.data._c.core.CharTrie, id: int) → List[str]
+```
+
+Get the `id`-th token as a list of characters.

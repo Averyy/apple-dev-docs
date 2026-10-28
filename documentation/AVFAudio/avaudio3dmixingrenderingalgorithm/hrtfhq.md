@@ -25,7 +25,7 @@ case HRTFHQ
 AVAudio3DMixingRenderingAlgorithmHRTFHQ
 ```
 
-#### Discussion
+## Discussion
 
 In comparison to [`AVAudio3DMixingRenderingAlgorithm.HRTF`](./hrtf.md), this option’s improvements focus on the frequency response and localization of sources in 3D space.
 

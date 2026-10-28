@@ -25,7 +25,7 @@ static let replacementIndex: NSAttributedString.Key
 extern NSAttributedStringKey const NSReplacementIndexAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 When creating an attributed string from a format string and one or more replacement values, this attribute indicates the ordinal index of each replacement. You must specify the [`NSAttributedStringFormattingApplyReplacementIndexAttribute`](../../nsattributedstringformattingoptions/nsattributedstringformattingapplyreplacementindexattribute.md) option at creation time to add this attribute to the substituted text. The value of this key is an `NSNumber` with the replacement position of the substitute text.
 

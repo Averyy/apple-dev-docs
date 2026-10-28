@@ -20,7 +20,7 @@ var geometry: ARMeshGeometry { get }
 @property (nonatomic, readonly) ARMeshGeometry * geometry;
 ```
 
-#### Discussion
+## Discussion
 
 Contains the anchor’s portion of mesh data that, with any other mesh anchors in the AR session, collectively reconstruct the scene around the user. The mesh anchor records this data in it’s own coordinate system.
 

@@ -17,7 +17,7 @@ A string that describes the order type.
 var orderTypeIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This is a string the merchant uses to identify the set of orders associated with a given type. Merchants can set up order types on the developer portal.
 

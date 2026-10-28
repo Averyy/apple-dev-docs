@@ -24,7 +24,7 @@ var endDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 While a workout activity is in progress, this value is `nil`. When set to a non-`nil` value, the end date must be equal to or later than its start date.
 

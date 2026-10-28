@@ -15,7 +15,7 @@ Creates multiple reference images based on their group name in an asset catalog.
 static func loadReferenceImages(inGroupNamed groupName: String, bundle: Bundle? = nil) -> [ReferenceImage]
 ```
 
-#### Return Value
+## Return Value
 
 An array of reference images loaded from the group you specify.
 

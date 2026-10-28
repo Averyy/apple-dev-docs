@@ -27,7 +27,7 @@ class SKOverlay
 - [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md)
 - [Signing and providing ads](./signing-and-providing-ads.md)
 
-#### Overview
+## Overview
 
 By displaying an overlay, you can recommend another app to users and enable them to download it immediately. To recommend media that’s not an app, or to display a product page within your app, use [`SKStoreProductViewController`](./skstoreproductviewcontroller.md).
 

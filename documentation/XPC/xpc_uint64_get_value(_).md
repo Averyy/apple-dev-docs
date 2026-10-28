@@ -25,7 +25,7 @@ func xpc_uint64_get_value(_ xuint: xpc_object_t) -> UInt64
 extern uint64_t xpc_uint64_get_value(xpc_object_t xuint);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying unsigned integer value.
 

@@ -21,7 +21,7 @@ Resolve multiple attribute specifications into a single instance.
 init?(merging values: [CVBuffer.Attributes])
 ```
 
-#### Discussion
+## Discussion
 
 This is useful when you need to resolve multiple requirements between different potential clients of a buffer.
 

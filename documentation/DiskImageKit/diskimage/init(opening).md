@@ -15,7 +15,7 @@ Opens an existing disk image using the specified image URL.
 convenience init(opening configuration: some OpenConfigurationProtocol) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to open any existing disk image — standalone or a disk image layer. To append this image to a stacked disk image, use [`appending(_:)`](./appending%28_%29-4wifj.md). Encrypted disk images are not supported.
 

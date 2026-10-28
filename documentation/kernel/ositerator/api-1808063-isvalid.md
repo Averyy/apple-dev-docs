@@ -11,11 +11,11 @@ Check that the collection hasn't been modified during iteration.
 virtual bool isValid() = 0;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the iterator is valid for continued use, `false` otherwise (typically because the collection being iterated has been modified).
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function.
 

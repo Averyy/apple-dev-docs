@@ -5,7 +5,7 @@
 
 Trace the movement of fingers around the screen, and apply that movement to your content.
 
-#### Overview
+## Overview
 
 A pan gesture occurs any time a person moves one or more fingers around the screen. A screen-edge pan gesture is a specialized pan gesture that originates from the edge of the screen. Use the [`UIPanGestureRecognizer`](./uipangesturerecognizer.md) class for pan gestures and the [`UIScreenEdgePanGestureRecognizer`](./uiscreenedgepangesturerecognizer.md) class for screen-edge pan gestures.
 

@@ -24,7 +24,7 @@ case rgb9e5Float
 MTLDataTypeRGB9E5Float
 ```
 
-#### Discussion
+## Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha. The red, green, and blue components each have 9 bits, and the alpha component has 5 bits.
 

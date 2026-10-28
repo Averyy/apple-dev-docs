@@ -21,7 +21,7 @@ Releases a pixel buffer pool.
 extern void CVPixelBufferPoolRelease(CVPixelBufferPoolRef pixelBufferPool);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except it’s `NULL` safe.
 

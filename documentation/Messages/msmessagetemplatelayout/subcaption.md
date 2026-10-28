@@ -21,7 +21,7 @@ var subcaption: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subcaption;
 ```
 
-#### Discussion
+## Discussion
 
 The subcaption is drawn using gray text, and is positioned below the caption. This property defaults to `nil`.
 

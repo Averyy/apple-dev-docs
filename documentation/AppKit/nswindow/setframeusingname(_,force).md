@@ -19,7 +19,7 @@ func setFrameUsingName(_ name: NSWindow.FrameAutosaveName, force: Bool) -> Bool
 - (BOOL) setFrameUsingName:(NSWindowFrameAutosaveName) name force:(BOOL) force;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when `name` is read and the frame is set successfully; otherwise, [`false`](../../Swift/false.md).
 

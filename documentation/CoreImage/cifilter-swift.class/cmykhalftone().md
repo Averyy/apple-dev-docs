@@ -24,11 +24,11 @@ class func cmykHalftone() -> any CIFilter & CICMYKHalftone
 + (CIFilter<CICMYKHalftone> *) CMYKHalftone;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a CMYK halftone filter to an image. The effect generates an image containing a series of dots. The dots contain only cyan, magenta, yellow, and black colors. Halftone effect is a set of lines, dots, or circles that contain detail. When viewing the image from a distance, the markings blend together creating the illusion of continuous lines and shapes. Print media commonly uses this effect.
 

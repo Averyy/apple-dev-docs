@@ -15,11 +15,11 @@ Send a put command to a remote OBEX server.
 OBEXError OBEXSessionPut(OBEXSessionRef inSessionRef, Boolean inIsFinalChunk, void *inHeadersData, size_t inHeadersDataLength, void *inBodyData, size_t inBodyDataLength, OBEXSessionEventCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 As all commands for OBEX sessions, this command is asynchronous only. A NULL callback paramter will result in an error.
 

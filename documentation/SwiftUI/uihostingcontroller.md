@@ -20,7 +20,7 @@ A UIKit view controller that manages a SwiftUI view hierarchy.
 @preconcurrency class UIHostingController<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Create a `UIHostingController` object when you want to integrate SwiftUI views into a UIKit view hierarchy. At creation time, specify the SwiftUI view you want to use as the root view for this view controller; you can change that view later using the [`rootView`](./uihostingcontroller/rootview.md) property. Use the hosting controller like you would any other view controller, by presenting it or embedding it as a child view controller in your interface.
 

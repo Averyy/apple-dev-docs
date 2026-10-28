@@ -18,7 +18,7 @@ Requests that the data detection system identify the types of data that you spec
 func detectValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: @escaping (Result<UIPasteboard.DetectedValues, any Error>) -> ())
 ```
 
-#### Discussion
+## Discussion
 
 Because this method gives the app access to the values it detects in the pasteboard, the system notifies the user about reading the contents of the pasteboard.
 

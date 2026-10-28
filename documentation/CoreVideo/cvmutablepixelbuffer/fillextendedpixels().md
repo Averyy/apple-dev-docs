@@ -22,7 +22,7 @@ Fills the extended pixels of the pixel buffer. This method replicates the edge p
 mutating func fillExtendedPixels() -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 - Returns false if this operation is not supported by the pixel format.
 

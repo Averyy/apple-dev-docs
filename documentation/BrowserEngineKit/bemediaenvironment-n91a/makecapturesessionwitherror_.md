@@ -16,7 +16,7 @@ Creates a new capture session in this media environment.
 - (AVCaptureSession *) makeCaptureSessionWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The system only allows a capture session to start when its media environment is active (see [`activateWithError:`](./activatewitherror_.md)).
 

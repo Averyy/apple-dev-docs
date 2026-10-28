@@ -32,7 +32,7 @@ var secondaryBalance: INBalanceAmount? { get }
 @property (atomic, copy, readonly, nullable) INBalanceAmount * secondaryBalance;
 ```
 
-#### Discussion
+## Discussion
 
 A secondary balance might represent something other than a monetary debit or credit. For example, it might represent reward points or frequent flier miles.
 

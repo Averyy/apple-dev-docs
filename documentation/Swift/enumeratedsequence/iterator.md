@@ -24,7 +24,7 @@ struct Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Overview
+## Overview
 
 An instance of this iterator wraps a base iterator and yields successive `Int` values, starting at zero, along with the elements of the underlying base iterator. The following example enumerates the elements of an array:
 

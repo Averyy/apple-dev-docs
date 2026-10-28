@@ -24,7 +24,7 @@ struct MTLRenderStages
 enum MTLRenderStages : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Render stage boundaries provide synchronization opportunities within a render pass for specific resources and resource types. For example, you can designate render stage a synchronization point for a memory barrier or a fence (see [`memoryBarrier(resources:after:before:)`](./mtlrendercommandencoder/memorybarrier%28resources,after,before%29.md) and [`MTLFence`](./mtlfence.md), respectively). This allows a GPU to overlap its execution of two adjacent stages, which can shorten its overall runtime for the render pass.
 

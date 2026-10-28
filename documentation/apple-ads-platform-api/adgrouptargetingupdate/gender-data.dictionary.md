@@ -15,7 +15,7 @@ Gender targeting for the audience.
 object AdGroupTargetingUpdate.Gender
 ```
 
-#### Discussion
+## Discussion
 
 Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 

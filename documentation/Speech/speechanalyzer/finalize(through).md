@@ -20,7 +20,7 @@ Finalizes the modules’ analyses.
 final func finalize(through: CMTime?) async throws
 ```
 
-#### Discussion
+## Discussion
 
 At the return of this method, input up to and including the given time will have been analyzed. Modules will have published the finalized results to their stream, but the application may not have consumed them from the results stream yet. [`volatileRange`](./volatilerange.md) will post-date the given time.
 

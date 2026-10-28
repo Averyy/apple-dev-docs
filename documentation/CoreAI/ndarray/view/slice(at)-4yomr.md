@@ -22,7 +22,7 @@ func slice<let indexRank : Int>(at ranges: [indexRank of any NDArray.RangeExpres
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 For example if you have a 2D NDArray and want to compute the sum of a specific row, you can slice that row and then access a span over it (or use `withUnsafePointer` if not contiguous).
 

@@ -23,7 +23,7 @@ var isEditing: Bool { get }
 @property (nonatomic, readonly, getter=isEditing) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) when the user begins editing text in this text field, and it is set to [`false`](../../Swift/false.md) again when editing ends. The text field notifies its delegate when editing begins and ends.
 

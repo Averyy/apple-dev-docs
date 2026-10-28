@@ -15,7 +15,7 @@ A data source made up of keypoints in a data frame.
 case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String = __Defaults.sessionIdColumnName, labelColumn: String = __Defaults.labelColumnName, featureColumn: String = __Defaults.featureColumnName)
 ```
 
-#### Discussion
+## Discussion
 
 The data frame must contain a column of session identifiers, a column of labels, and a column of keypoints. Each set of keypoints must be a multi-dimensional `1x3x18` array that contains the x, y, and z coordinates of each of the 18 keypoints. See `VNRecognizedPointsObservation` for more details.
 

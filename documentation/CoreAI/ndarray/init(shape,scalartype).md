@@ -19,7 +19,7 @@ Creates an array with the specified shape and scalar type.
 init(shape: [Int], scalarType: NDArray.ScalarType)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an array with contiguous, row-major strides.
 

@@ -33,7 +33,7 @@ var authorizationStatus: UNAuthorizationStatus { get }
 @property (atomic, readonly) UNAuthorizationStatus authorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`UNAuthorizationStatus.authorized`](../unauthorizationstatus/authorized.md), your app is allowed to schedule and receive local and remote notifications. When authorized, use the [`alertSetting`](./alertsetting.md), [`badgeSetting`](./badgesetting.md), and [`soundSetting`](./soundsetting.md) properties to specify which types of interactions are allowed. When the value of the property is [`UNAuthorizationStatus.denied`](../unauthorizationstatus/denied.md), the system doesn’t deliver notifications to your app, and the system ignores any attempts to schedule local notifications.
 

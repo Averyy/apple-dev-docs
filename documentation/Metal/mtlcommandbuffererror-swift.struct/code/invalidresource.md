@@ -24,7 +24,7 @@ case invalidResource
 MTLCommandBufferErrorInvalidResource
 ```
 
-#### Discussion
+## Discussion
 
 Typically, apps trigger this error by deleting a resource and then running a command buffer that refers to it.
 

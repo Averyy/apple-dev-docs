@@ -19,11 +19,11 @@ func hv_vcpu_set_sme_zt0_reg(_ vcpu: hv_vcpu_t, _ value: UnsafePointer<hv_sme_zt
 extern hv_return_t hv_vcpu_set_sme_zt0_reg(hv_vcpu_t vcpu, const hv_sme_zt0_uchar64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You need to call this on the owning thread.
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether the system detected available networks yo
 let newShareableNetworkAvailable: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Your app extension can use [`presentAskToShareUI(scanProvider:)`](../presentasktoshareui%28scanprovider%29.md) to request that people share the network with your accessory when your accessory needs it. This flag clears when people share the available networks to your accessory or when the networks are no longer available.
 

@@ -15,7 +15,7 @@ The audio configuration to apply to the object over the course of the interactio
 var audioConfiguration: ManipulationComponent.AudioConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system applies standard audio for key moments of the interaction, such as when the interaction begins, a handoff occurs, or the object is released. To apply custom sounds, set the configuration to [`none`](./audioconfiguration-swift.struct/none.md) and apply audio as needed using the various `ManipulationEvents` you can subscribe to in the scene.
 

@@ -25,7 +25,7 @@ func lineRange(for range: NSRange) -> NSRange
 - (NSRange) lineRangeForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters representing the line or lines containing `aRange`, including the line termination characters. See [`getLineStart(_:end:contentsEnd:for:)`](./getlinestart%28_,end,contentsend,for%29.md) for a discussion of line terminators.
 

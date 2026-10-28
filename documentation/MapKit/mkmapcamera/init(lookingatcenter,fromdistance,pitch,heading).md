@@ -25,11 +25,11 @@ convenience init(lookingAtCenter centerCoordinate: CLLocationCoordinate2D, fromD
 + (instancetype) cameraLookingAtCenterCoordinate:(CLLocationCoordinate2D) centerCoordinate fromDistance:(CLLocationDistance) distance pitch:(CGFloat) pitch heading:(CLLocationDirection) heading;
 ```
 
-#### Return Value
+## Return Value
 
 A new camera object that initializes with the specified information.
 
-#### Discussion
+## Discussion
 
 You can obtain the altitude of the camera by multiplying `distance` by the cosine of the `pitch` value.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_STAT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_STAT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`stat`](./es_events_t/stat.md), which has the type [`es_event_stat_t`](./es_event_stat_t.md).
 

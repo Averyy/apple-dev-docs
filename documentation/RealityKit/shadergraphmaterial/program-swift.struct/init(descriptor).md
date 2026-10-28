@@ -20,7 +20,7 @@ Creates a program by compiling the shader node graph in the given descriptor.
 init(descriptor: ShaderGraphMaterial.Program.Descriptor) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the graph is invalid or shader compilation fails.
 

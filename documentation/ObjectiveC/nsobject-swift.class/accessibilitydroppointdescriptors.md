@@ -23,7 +23,7 @@ var accessibilityDropPointDescriptors: [UIAccessibilityLocationDescriptor]? { ge
 @property (nonatomic, copy, nullable) NSArray<UIAccessibilityLocationDescriptor *> * accessibilityDropPointDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 To restore the default automatic behavior for this property, assign or return the default value of `nil`.
 

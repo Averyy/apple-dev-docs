@@ -23,7 +23,7 @@ var textLineFragments: [NSTextLineFragment] { get }
 @property (copy, readonly) NSArray<NSTextLineFragment *> * textLineFragments;
 ```
 
-#### Discussion
+## Discussion
 
 Valid when [`NSTextLayoutFragment.State.layoutAvailable`](./state-swift.enum/layoutavailable.md). This property is KVO-compliant.
 

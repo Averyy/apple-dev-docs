@@ -19,7 +19,7 @@ class let didUpdateNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidUpdateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that received the [`update()`](./update%28%29.md) message. This notification doesn’t contain a `userInfo` dictionary.
 

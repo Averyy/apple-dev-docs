@@ -17,7 +17,7 @@ Returns the text of the help screen for this type.
 static func helpMessage(includeHidden: Bool = false, columns: Int? = nil) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The full help screen for this type.
 

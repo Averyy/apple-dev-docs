@@ -24,11 +24,11 @@ func VTFrameSiloCallBlockForEachSampleBuffer(_ silo: VTFrameSilo, in timeRange: 
 extern OSStatus VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSiloRef silo, CMTimeRange timeRange, int (^)(struct opaqueCMSampleBuffer *)handler);
 ```
 
-#### Return Value
+## Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if any time ranges are non-numeric, overlap, or are not in ascending order. Returns any nonzero status returned by the handler block.
 
-#### Discussion
+## Discussion
 
 You call this function to retrieve sample buffers at the end of a multipass compression session.
 

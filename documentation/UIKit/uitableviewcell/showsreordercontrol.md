@@ -23,7 +23,7 @@ var showsReorderControl: Bool { get set }
 @property (nonatomic) BOOL showsReorderControl;
 ```
 
-#### Discussion
+## Discussion
 
 The reordering control is gray, multiple horizontal bar control on the right side of the cell. Users can drag this control to reorder the cell within the table. The default value is [`false`](../../Swift/false.md). If the value is [`true`](../../Swift/true.md) , the reordering control temporarily replaces any accessory view.
 

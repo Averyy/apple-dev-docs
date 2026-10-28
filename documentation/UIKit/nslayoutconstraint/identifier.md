@@ -23,7 +23,7 @@ var identifier: String? { get set }
 @property (copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 A constraint’s identifier is available in its description. Identifiers that start with `NS` are reserved by the system.
 

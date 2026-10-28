@@ -24,7 +24,7 @@ let HKMetadataKeyHeartRateSensorLocation: String
 extern NSString * const HKMetadataKeyHeartRateSensorLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) containing an [`HKHeartRateSensorLocation`](./hkheartratesensorlocation.md) as its value.
 

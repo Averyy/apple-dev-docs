@@ -21,7 +21,7 @@ Compares two entity identifiers for equality.
 static func == (lhs: EntityIdentifier, rhs: EntityIdentifier) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `entityType` and `identifier` are compared.
 >

@@ -19,7 +19,7 @@ class let willStartLiveResizeNotification: NSNotification.Name
 extern NSNotificationName const NSWindowWillStartLiveResizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends this notification only once for a series of window resize operations.
 

@@ -25,7 +25,7 @@ func nw_connection_copy_description(_ connection: nw_connection_t) -> UnsafeMuta
 char *nw_connection_copy_description(nw_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 This function allocates a new string. You should free the returned buffer when done using the string.
 

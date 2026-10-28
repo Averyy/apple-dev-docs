@@ -24,7 +24,7 @@ case eac_r11Snorm
 MTLPixelFormatEAC_R11Snorm
 ```
 
-#### Discussion
+## Discussion
 
 Only [`MTLTextureType.type2D`](../mtltexturetype/type2d.md), [`MTLTextureType.type2DArray`](../mtltexturetype/type2darray.md), and [`MTLTextureType.typeCube`](../mtltexturetype/typecube.md) textures are supported.
 

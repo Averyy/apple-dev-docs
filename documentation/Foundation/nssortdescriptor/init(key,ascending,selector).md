@@ -25,7 +25,7 @@ init(key: String?, ascending: Bool, selector: Selector?)
 - (instancetype) initWithKey:(NSString *) key ascending:(BOOL) ascending selector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 A sort descriptor that initializes with the specified key path, sort order, and comparison selector.
 

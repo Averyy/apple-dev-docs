@@ -24,7 +24,7 @@ var symbologies: [VNBarcodeSymbology] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSString *> * symbologies;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a request scans for all symbologies. Specify a subset of symbologies to limit the request’s detection range.
 

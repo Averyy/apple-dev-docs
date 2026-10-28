@@ -15,7 +15,7 @@ Specifies a callback to be made when parsing the XML in a method response.
 void WSMethodInvocationAddDeserializationOverride(WSMethodInvocationRef invocation, CFStringRef typeNamespace, CFStringRef typeName, WSMethodInvocationDeserializationProcPtr deserializationProc, WSClientContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a callback to be made when parsing an XML method response.  Used to deserialize types the default deserializer does not handle. The callback should return a `CFTypeRef` containing the deserialized object value.  If the callback returns `NULL`, the default deserializer is used.
 

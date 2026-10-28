@@ -25,7 +25,7 @@ func flushPostbacksWithResponses() async throws -> [String : SKAdTestPostbackRes
 - (void) flushPostbacksWithResponses:(SKANTestPostbackResponseHandler) responses;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends the test postbacks that you set up using [`setPostbacks(_:)`](./setpostbacks%28_%29.md) to the server URL provided in each postback, and then deletes them from this test session. Note that you set up the postback server URL when you create the postback instance using [`SKAdTestPostback`](../skadtestpostback.md).
 

@@ -19,7 +19,7 @@ case errorCacheOperationConflict
 FSErrorCacheOperationConflict
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when multiple cache operations on the same item conflict, such as attempting to change cache mode while I/O is active.
 

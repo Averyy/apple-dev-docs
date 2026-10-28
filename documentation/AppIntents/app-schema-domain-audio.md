@@ -5,7 +5,7 @@
 
 Make your audio app’s actions available to Apple Intelligence and Siri by adopting schemas for common audio playback actions.
 
-#### Overview
+## Overview
 
 The `.audio` domain defines app schemas that provide a structured representation for common audio playback actions and content. Apply schemas in the `.audio` domain to make your app’s audio functionality available to Apple Intelligence and Siri. The [Media Intents](../MediaIntents/MediaIntents.md) framework provides the types that describe a person’s audio search and playback request. Your app implements an [`IntentValueQuery`](./intentvaluequery.md) to receive these types, find matching audio content, and return app entities. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across audio apps. For example, a person can play a song on different apps that support the [`playAudio`](./appschema/audiointent/playaudio.md) schema with the same phrases.
 
@@ -24,7 +24,7 @@ The following table maps example phrases that apply to each schema:
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md).
 
-#### Audio playback use-case group
+## Audio playback use-case group
 
 A *use-case group* is a set of related schemas that share a single purpose. The [`playAudio`](./appschema/audiointent/playaudio.md) schema and the [`IntentValueQuery`](./intentvaluequery.md) that returns matching audio form a use-case group for playback. Xcode reports a build warning if your app supports one without the other.
 

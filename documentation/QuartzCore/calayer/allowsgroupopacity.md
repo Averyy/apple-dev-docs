@@ -24,7 +24,7 @@ var allowsGroupOpacity: Bool { get set }
 @property BOOL allowsGroupOpacity;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md) and the layer’s opacity property value is less than `1.0`, the layer is allowed to composite itself as a group separate from its parent. This gives correct results when the layer contains multiple opaque components, but may reduce performance.
 

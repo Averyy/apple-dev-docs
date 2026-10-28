@@ -5,13 +5,13 @@
 
 Learn how macOS brings support for the latest game controllers to software that predates the introduction of the Game Controller framework.
 
-#### Overview
+## Overview
 
 Many existing games and third-party input libraries use the IOKit framework to interface with hardware game controllers. Because the IOKit APIs facilitate communication with hardware only at a low level, you need to write device-specific code for each game controller your app supports. This is often just for one or two popular models, so someone with a different controller model may become frustrated to discover that your app doesn’t recognize their game controller.
 
 macOS 14 introduces a human-interface device (HID) emulation layer for apps that use the IOKit HID APIs to discover and receive input from game controllers. It emulates basic inputs from the full roster of controllers that the Game Controller framework supports. This HID emulation is mostly transparent to your app, and it works with all apps that interface with game controllers using the APIs in [IOHIDManager.h](../iokit/iohidmanager_h.md). However, your app may need to determine whether an [`IOHIDDeviceRef`](../iokit/iohiddeviceref.md) refers to a HID device that the emulation layer synthesizes, or your app may need to prevent matching on all such devices.
 
-##### Understand the operation of game controller synthetic HID devices
+### Understand the operation of game controller synthetic HID devices
 
 When you connect a game controller that the Game Controller framework supports to a Mac running macOS 14 or later, the system creates a *synthetic HID device* in the I/O registry. There can only be one synthetic HID device per connected game controller. If the game controller is HID-compatible, the system creates the corresponding synthetic HID device in the I/O registry alongside the HID device for the game controller. The characteristics of each synthetic HID device match those of a well-supported game controller, the Xbox 360 wired controller.
 
@@ -19,7 +19,7 @@ When your app calls [`IOHIDDeviceOpen`](../iokit/api-1588670-iohiddeviceopen.md)
 
 The emulation layer is disabled by default. People can enable it for your game in the system game controller settings by adding a game-specific input customization, and enabling the “Increase controller compatibility” switch.
 
-##### Discover and identify game controller synthetic HID devices
+### Discover and identify game controller synthetic HID devices
 
 When your app uses the APIs in `IOHIDManager.h` or `IOKitLib.h` to query the HID devices in the I/O registry, game controller synthetic HID devices that match your specified criteria also return. Each game controller synthetic HID device contains a `GCSyntheticDevice` property with a value of [`true`](../Swift/true.md) in its I/O registry entry property table. Your app can check for the presence of this key to determine whether an [`IOHIDDeviceRef`](../iokit/iohiddeviceref.md) or an [`io_service_t`](../kernel/io_service_t.md) refers to a game controller synthetic HID device.
 

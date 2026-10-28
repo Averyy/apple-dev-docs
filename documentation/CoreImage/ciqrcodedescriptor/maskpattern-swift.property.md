@@ -24,7 +24,7 @@ var maskPattern: UInt8 { get }
 @property (readonly) uint8_t maskPattern;
 ```
 
-#### Discussion
+## Discussion
 
 QR Codes support eight data mask patterns, which are used to avoid large black or large white areas inside the symbol body. Valid values range from 0 to 7.
 

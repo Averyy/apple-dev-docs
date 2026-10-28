@@ -25,11 +25,11 @@ func prepareToPlay() -> Bool
 - (BOOL) prepareToPlay;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system successfully prepares the player; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method preloads audio buffers and acquires the audio hardware necessary for playback. This method activates the audio session, so pass [`false`](../../Swift/false.md) to [`setActive:error:`](../avaudiosession/setactive_error_.md) if immediate playback isn’t necessary. For example, when using the category option [`duckOthers`](../avaudiosession/categoryoptions-swift.struct/duckothers.md), this method lowers the audio outside of the app.
 

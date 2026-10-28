@@ -23,7 +23,7 @@ func hasSameAddress(as other: MIDINetworkHost) -> Bool
 - (BOOL) hasSameAddressAs:(MIDINetworkHost *) other;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the hosts have the same address value.
 

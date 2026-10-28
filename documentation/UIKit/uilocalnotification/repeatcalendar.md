@@ -24,7 +24,7 @@ var repeatCalendar: Calendar? { get set }
 @property (nonatomic, copy, nullable) NSCalendar * repeatCalendar;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates that the current user calendar is used. (The current user calendar is returned by the [`current`](../../Foundation/nscalendar/current.md) class method of `NSCalendar`.)
 

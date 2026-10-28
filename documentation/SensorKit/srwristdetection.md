@@ -21,7 +21,7 @@ class SRWristDetection
 @interface SRWristDetection : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`onWristState`](./srsensor/onwriststate.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

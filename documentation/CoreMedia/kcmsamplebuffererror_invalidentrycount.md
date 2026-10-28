@@ -25,7 +25,7 @@ var kCMSampleBufferError_InvalidEntryCount: OSStatus { get }
 kCMSampleBufferError_InvalidEntryCount
 ```
 
-#### Discussion
+## Discussion
 
 Timing and size values must be `0`, `1`, or the number of samples.
 

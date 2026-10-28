@@ -35,7 +35,7 @@ weak var delegate: (any SKPaymentQueueDelegate)? { get set }
 @property (atomic, weak, nullable) id<SKPaymentQueueDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate implements the [`SKPaymentQueueDelegate`](../skpaymentqueuedelegate.md) protocol.
 

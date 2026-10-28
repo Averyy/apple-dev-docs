@@ -19,7 +19,7 @@ func deauthorize(_ inSender: Any!) -> Bool
 - (BOOL) deauthorize:(id) inSender;
 ```
 
-#### Discussion
+## Discussion
 
 If this method succeeds, it returns [`true`](../../Swift/true.md); if it fails, the lock icon remains unlocked and the method returns [`false`](../../Swift/false.md).
 

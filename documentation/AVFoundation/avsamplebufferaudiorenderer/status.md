@@ -27,7 +27,7 @@ var status: AVQueuedSampleBufferRenderingStatus { get }
 @property (nonatomic, readonly) AVQueuedSampleBufferRenderingStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer begins with a status of [`AVQueuedSampleBufferRenderingStatus.unknown`](../avqueuedsamplebufferrenderingstatus/unknown.md). As you add sample buffers to the queue for rendering, the renderer transitions to either [`AVQueuedSampleBufferRenderingStatus.rendering`](../avqueuedsamplebufferrenderingstatus/rendering.md) or [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md).
 

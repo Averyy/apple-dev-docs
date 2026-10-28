@@ -25,11 +25,11 @@ func CMSampleBufferGetSampleTimingInfo(_ sbuf: CMSampleBuffer, at sampleIndex: C
 extern OSStatus CMSampleBufferGetSampleTimingInfo(CMSampleBufferRef sbuf, CMItemIndex sampleIndex, CMSampleTimingInfo *timingInfoOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 A sample-specific [`CMSampleTimingInfo`](./cmsampletiminginfo.md) struct will be returned with a sample-specific `presentationTimeStamp` and `decodeTimeStamp`, even if a single `CMSampleTimingInfo` struct was used during creation to describe all the samples in the buffer. The timing info struct must be allocated by the caller. If the sample index isn’t in the range 0…numSamples-1, [`CMSampleBuffer`](./cmsamplebuffer.md) will be returned. If there’s no `timingInfo` in this `CMSampleBuffer`, [`CMSampleBuffer`](./cmsamplebuffer.md) will be returned.
 

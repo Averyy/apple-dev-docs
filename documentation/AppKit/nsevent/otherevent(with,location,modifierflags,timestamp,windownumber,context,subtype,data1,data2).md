@@ -19,7 +19,7 @@ class func otherEvent(with type: NSEvent.EventType, location: NSPoint, modifierF
 + (NSEvent *) otherEventWithType:(NSEventType) type location:(NSPoint) location modifierFlags:(NSEventModifierFlags) flags timestamp:(NSTimeInterval) time windowNumber:(NSInteger) wNum context:(NSGraphicsContext *) unusedPassNil subtype:(short) subtype data1:(NSInteger) d1 data2:(NSInteger) d2;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSEvent` object or `nil` if the object couldn’t be created.
 

@@ -10,11 +10,11 @@ virtual IOReturn getSubdirectories(
  OSIterator *&iterator);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the iterator could be created
 
-#### Overview
+## Overview
 
 Creates an iterator over the subdirectories of the directory.
 

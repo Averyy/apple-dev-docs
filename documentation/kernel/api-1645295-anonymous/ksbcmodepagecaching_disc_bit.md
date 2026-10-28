@@ -13,7 +13,7 @@
 kSBCModePageCaching_DISC_Bit = 4
 ```
 
-#### Discussion
+## Discussion
 
 DISC Bit definition.
 

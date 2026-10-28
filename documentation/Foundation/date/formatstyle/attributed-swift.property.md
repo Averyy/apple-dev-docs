@@ -23,7 +23,7 @@ An attributed format style created from the date format style.
 var attributed: Date.AttributedStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`Date.FormatStyle`](../formatstyle.md) instance to customize the lexical representation of a date as a string. Use the format style’s [`attributed`](./attributed-swift.property.md) property to customize the visual representation of the date as a string. Attributed strings can represent the subcomponent characters, words, and phrases of a string with a custom combination of font size, weight, and color.
 

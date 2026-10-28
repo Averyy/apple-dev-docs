@@ -23,7 +23,7 @@ func requestOpenSession()
 - (void) requestOpenSession;
 ```
 
-#### Discussion
+## Discussion
 
 Set the receiver’s delegate before calling this method; otherwise, the request is ignored.
 

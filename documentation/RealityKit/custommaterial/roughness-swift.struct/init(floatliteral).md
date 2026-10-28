@@ -19,7 +19,7 @@ Creates an object to specify the amount of roughness, using a single value that 
 init(floatLiteral value: Float)
 ```
 
-#### Discussion
+## Discussion
 
 The `roughness` property represents how much the surface of the entity scatters light that it reflects. A material with a high roughness has a matte appearance, and one with a low roughness has a shiny appearance.
 

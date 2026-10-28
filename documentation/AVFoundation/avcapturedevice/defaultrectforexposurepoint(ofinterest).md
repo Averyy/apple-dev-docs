@@ -23,7 +23,7 @@ func defaultRectForExposurePoint(ofInterest pointOfInterest: CGPoint) -> CGRect
 - (CGRect) defaultRectForExposurePointOfInterest:(CGPoint) pointOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 For example, pass `(0.5, 0.5)` to get the exposure rectangle of interest used for the default exposure point of interest at `(0.5, 0.5)`.
 

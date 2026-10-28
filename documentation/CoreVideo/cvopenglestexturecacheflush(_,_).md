@@ -23,7 +23,7 @@ func CVOpenGLESTextureCacheFlush(_ textureCache: CVOpenGLESTextureCache, _ optio
 extern void CVOpenGLESTextureCacheFlush(CVOpenGLESTextureCacheRef textureCache, CVOptionFlags options);
 ```
 
-#### Discussion
+## Discussion
 
 The texture cache automatically flushes currently unused resources when you call the [`CVOpenGLESTextureCacheCreateTextureFromImage(_:_:_:_:_:_:_:_:_:_:_:_:)`](./cvopenglestexturecachecreatetexturefromimage%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) function, but can you can also flush the cache explicitly by calling this function. The EAGLContext associated with the cache may be used to delete or unbind textures.
 

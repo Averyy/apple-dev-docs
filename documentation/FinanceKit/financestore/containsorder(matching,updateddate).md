@@ -17,7 +17,7 @@ Checks whether the finance store contains an order.
 func containsOrder(matching fqoid: FullyQualifiedOrderIdentifier, updatedDate: Date? = nil) async throws -> FinanceStore.ContainsOrderResult
 ```
 
-#### Discussion
+## Discussion
 
 This returns `.notFound` for any orders that the process isn’t entitled to access.
 

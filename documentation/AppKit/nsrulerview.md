@@ -19,30 +19,30 @@ class NSRulerView
 @interface NSRulerView : NSView
 ```
 
-#### Overview
+## Overview
 
 Views within the scroll view can become clients of the ruler view, having it display markers for their elements, and receiving messages from the ruler view when the user manipulates the markers.
 
-##### Principal Attributes
+### Principal Attributes
 
 - Displays markers that represent elements of the client view.
 - Displays in arbitrary units.
 - Provides for an accessory view containing extra controls.
 
-##### Creation
+### Creation
 
 - [`hasHorizontalRuler`](./nsscrollview/hashorizontalruler.md) (`NSScrollView`)
 - [`hasVerticalRuler`](./nsscrollview/hasverticalruler.md) (`NSScrollView`)
 - [`init(scrollView:orientation:)`](./nsrulerview/init%28scrollview,orientation%29.md) Designated initializer.
 
-##### Commonly Used Methods
+### Commonly Used Methods
 
 - **[`clientView`](./nsrulerview/clientview.md)**: Changes the ruler’s client view.
 - **[`markers`](./nsrulerview/markers.md)**: Sets the markers displayed by the ruler view.
 - **[`accessoryView`](./nsrulerview/accessoryview.md)**: Sets the accessory view.
 - **[`trackMarker(_:withMouseEvent:)`](./nsrulerview/trackmarker%28_,withmouseevent%29.md)**: Allows the user to add a new marker.
 
-##### Overview
+### Overview
 
 See NSRulerMarkerClientViewDelegation for delegate methods that may be of interest.
 

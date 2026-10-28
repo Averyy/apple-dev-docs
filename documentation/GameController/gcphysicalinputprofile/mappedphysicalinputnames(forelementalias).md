@@ -24,11 +24,11 @@ func mappedPhysicalInputNames(forElementAlias elementAlias: String) -> Set<Strin
 - (NSSet<NSString *> *) mappedPhysicalInputNamesForElementAlias:(NSString *) elementAlias;
 ```
 
-#### Return Value
+## Return Value
 
 The names of the physical input element to which the user remaps the given element.
 
-#### Discussion
+## Discussion
 
 For example, if the user maps a physical press of A button , B button, and X button to button B, then passing [`GCInputButtonB`](../gcinputbuttonb-6z361.md) returns a set that contains [`GCInputButtonA`](../gcinputbuttona-8z15w.md), [`GCInputButtonB`](../gcinputbuttonb-6z361.md), and [`GCInputButtonX`](../gcinputbuttonx-32i2z.md).
 

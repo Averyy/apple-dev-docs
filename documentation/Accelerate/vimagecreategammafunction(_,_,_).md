@@ -25,11 +25,11 @@ func vImageCreateGammaFunction(_ gamma: Float, _ gamma_type: Int32, _ flags: vIm
 GammaFunctionvImageCreateGammaFunction(float gamma, int gamma_type, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A gamma function object that encapsulates a gamma value, a gamma function type, and option flags.
 
-#### Discussion
+## Discussion
 
 Use this function to create a gamma function object that you pass to [`vImageGamma_Planar8toPlanarF(_:_:_:_:)`](./vimagegamma_planar8toplanarf%28_,_,_,_%29.md), [`vImageGamma_PlanarFtoPlanar8(_:_:_:_:)`](./vimagegamma_planarftoplanar8%28_,_,_,_%29.md), or [`vImageGamma_PlanarF(_:_:_:_:)`](./vimagegamma_planarf%28_,_,_,_%29.md).
 

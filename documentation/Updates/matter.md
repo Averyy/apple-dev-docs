@@ -5,11 +5,11 @@
 
 Learn about important changes to Matter.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Matter](../Matter/Matter.md).
 
-#### June 2024
+## June 2024
 
 - Control more Matter device types, such as robot vacuums.
 - Obtain the names of clusters and attributes by ID.

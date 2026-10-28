@@ -23,7 +23,7 @@ var allowsEditingTextAttributes: Bool { get set }
 @property (nonatomic) BOOL allowsEditingTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the text view allows the user to change the basic styling of the currently selected text. The available style options are listed in the edit menu and only apply to the selection.
 

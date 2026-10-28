@@ -23,7 +23,7 @@ VZVirtualMachineStateStopped
 
 - [Installing macOS on a Virtual Machine](../../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 This state is the initial state of the virtual machine.
 

@@ -5,7 +5,7 @@
 
 Authenticate devices and maintain push tokens.
 
-#### Overview
+## Overview
 
 The Mobile Device Management (MDM) check-in protocol validates a deviceʼs eligibility for enrollment and informs the device management service that a deviceʼs push token has been updated.
 

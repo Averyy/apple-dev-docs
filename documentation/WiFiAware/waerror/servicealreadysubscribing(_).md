@@ -17,7 +17,7 @@ An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be 
 case serviceAlreadySubscribing(WAError.ServiceAlreadySubscribingDetails)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs if a subscriber is already active on the service.
 

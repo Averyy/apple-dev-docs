@@ -21,11 +21,11 @@ Retains the pixel buffer pool that you specify.
 extern CVPixelBufferPoolRefCVPixelBufferPoolRetain(CVPixelBufferPoolRef pixelBufferPool);
 ```
 
-#### Return Value
+## Return Value
 
 The same pixel buffer pool that you specified.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except it’s `NULL` safe.
 

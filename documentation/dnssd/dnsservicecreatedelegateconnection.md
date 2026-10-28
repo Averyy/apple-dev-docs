@@ -5,7 +5,7 @@
 
 Create a delegate connection to the daemon allowing efficient registration of multiple individual records.
 
-#### Overview
+## Overview
 
 ```objc
 DNSServiceErrorType DNSServiceCreateDelegateConnection (
@@ -15,7 +15,7 @@ DNSServiceErrorType DNSServiceCreateDelegateConnection (
 );
 ```
 
-#### Parameters
+## Parameters
 
 **sdRef**
 
@@ -31,7 +31,7 @@ UUID of the delegate
 
 Note that only one of the two arguments (pid or uuid) can be specified. If pid is zero, uuid will be assumed to be a valid value; otherwise pid will be used.
 
-#### Return Value
+## Return Value
 
 Returns kDNSServiceErr_NoError on success, otherwise returns an error code indicating the specific failure that occurred (in which case the DNSServiceRef is not initialized). kDNSServiceErr_NotAuth is returned to indicate that the calling process does not have entitlements to use this API.
 

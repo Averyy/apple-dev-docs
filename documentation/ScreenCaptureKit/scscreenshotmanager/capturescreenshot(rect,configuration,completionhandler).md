@@ -22,7 +22,7 @@ class func captureScreenshot(rect: CGRect, configuration config: SCScreenshotCon
 + (void) captureScreenshotWithRect:(CGRect) rect configuration:(SCScreenshotConfiguration *) config completionHandler:(void (^)(SCScreenshotOutput *output, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 captureScreenshotWithRect:configuration:completionHandler:
 

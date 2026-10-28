@@ -25,7 +25,7 @@ class Output
 @interface XCUIVoiceOverOutput : NSObject
 ```
 
-#### Overview
+## Overview
 
 The speech output that VoiceOver produces when focusing an element.
 

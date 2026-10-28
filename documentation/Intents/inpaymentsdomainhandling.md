@@ -41,7 +41,7 @@ protocol INPaymentsDomainHandling : INRequestPaymentIntentHandling, INSendPaymen
 @protocol INPaymentsDomainHandling <INSendPaymentIntentHandling, INRequestPaymentIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INPaymentsDomainHandling`](./inpaymentsdomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle payment-related intents. When your app adopts all of the protocols associated with payments, you can adopt this one protocol instead of adopting the [`INSendPaymentIntentHandling`](./insendpaymentintenthandling.md), [`INRequestPaymentIntentHandling`](./inrequestpaymentintenthandling.md), [`INPayBillIntentHandling`](./inpaybillintenthandling.md), [`INSearchForBillsIntentHandling`](./insearchforbillsintenthandling.md), [`INSearchForAccountsIntentHandling`](./insearchforaccountsintenthandling.md), and [`INTransferMoneyIntentHandling`](./intransfermoneyintenthandling.md) protocols separately.
 

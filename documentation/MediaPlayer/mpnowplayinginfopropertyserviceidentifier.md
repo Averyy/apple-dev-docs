@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyServiceIdentifier: String
 extern NSString * const MPNowPlayingInfoPropertyServiceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Value is a unique [NSString](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_198) that identifies the service provider for the now-playing item. If the Now Playing item belongs to a channel or subscription service, you can use this key to coordinate various types of Now Playing content from the service provider.
 

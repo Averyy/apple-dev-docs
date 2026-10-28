@@ -22,7 +22,7 @@ func setToolbarItems(_ toolbarItems: [UIBarButtonItem]?, animated: Bool)
 - (void) setToolbarItems:(NSArray<UIBarButtonItem *> *) toolbarItems animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 View controllers that are managed by a navigation controller can use this method to specify toolbar items for the navigation controller’s built-in toolbar. You can set the toolbar items for your view controller before your view controller is displayed or after it is already visible.
 

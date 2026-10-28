@@ -14,7 +14,7 @@
 kUSBNotificationPostForcedSuspend = (1 << kUSBNotificationPostForcedSuspendBit)
 ```
 
-#### Discussion
+## Discussion
 
 A notification is sent after a forced suspend has been completed (e.g. system sleep).
 

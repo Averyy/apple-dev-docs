@@ -22,11 +22,11 @@ Creates an intent value container that represents this value.
 func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer
 ```
 
-#### Return Value
+## Return Value
 
 An intent value container representing this value.
 
-#### Discussion
+## Discussion
 
 This method converts the value to a type-erased container that App Intents can use. The container encapsulates the value and provides mechanisms for type-safe access and conversion.
 

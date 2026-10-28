@@ -22,7 +22,7 @@ var domain: Int32
 SInt32 domain;
 ```
 
-#### Discussion
+## Discussion
 
 See Error Domains for possible values of this property.
 

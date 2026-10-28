@@ -13,7 +13,7 @@
 void mbuf_outbound_finalize(mbuf_t mbuf, u_int32_t protocol_family, size_t protocol_offset);
 ```
 
-#### Discussion
+## Discussion
 
 This function will "finalize" the packet allowing your code to inspect the final packet.
 

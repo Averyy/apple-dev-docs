@@ -21,7 +21,7 @@ func argMax(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: Stream
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(4 ..< 16, [4, 3])
@@ -30,7 +30,7 @@ let array = MLXArray(4 ..< 16, [4, 3])
 let i = array.argMax(axis=0)
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argMax(_:keepDims:stream:)`](./argmax%28_,keepdims,stream%29.md)

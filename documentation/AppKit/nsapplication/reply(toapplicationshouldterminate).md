@@ -19,7 +19,7 @@ func reply(toApplicationShouldTerminate shouldTerminate: Bool)
 - (void) replyToApplicationShouldTerminate:(BOOL) shouldTerminate;
 ```
 
-#### Discussion
+## Discussion
 
 If your app delegate returns `NSTerminateLater` from its [`applicationShouldTerminate(_:)`](../nsapplicationdelegate/applicationshouldterminate%28_%29.md) method, your code must subsequently call this method to let the `NSApplication` object know whether it can actually terminate itself.
 

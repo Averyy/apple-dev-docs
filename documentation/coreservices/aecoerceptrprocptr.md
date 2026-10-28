@@ -20,11 +20,11 @@ typealias AECoercePtrProcPtr = (DescType, UnsafeRawPointer?, Size, DescType, SRe
 typedef OSErr (*AECoercePtrProcPtr)(DescType typeCode, const void *dataPtr, Size dataSize, DescType toType, SRefCon handlerRefcon, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your handler should return `noErr` if it successfully handled the coercion, `errAECoercionFailed` if it can’t handle the coercion and it wants the Apple Event Manager to continue dispatching to other coercion handlers, or a nonzero result code otherwise.
 
-#### Discussion
+## Discussion
 
 To provide a pointer to your coercion callback function, you create a universal procedure pointer (UPP) of type [`AECoercePtrUPP`](./aecoerceptrupp.md), using the function [`NewAECoercePtrUPP(_:)`](./api-1449962-newaecoerceptrupp.md). You can do so with code like the following:
 

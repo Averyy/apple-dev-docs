@@ -19,7 +19,7 @@ class var updateWindowsRunLoopOrdering: Int { get }
 NSUpdateWindowsRunLoopOrdering
 ```
 
-#### Discussion
+## Discussion
 
 This constant is used by the [`RunLoop`](../../Foundation/runloop.md) method [`perform(_:target:argument:order:modes:)`](../../Foundation/runloop/perform%28_,target,argument,order,modes%29.md).
 

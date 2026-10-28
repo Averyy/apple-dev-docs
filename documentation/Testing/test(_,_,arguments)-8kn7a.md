@@ -20,11 +20,11 @@ Declare a test parameterized over a collection of values.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Test<C>(_ displayName: String? = nil, _ traits: any TestTrait..., arguments collection: C) where C : Collection, C : Sendable, C.Element : Sendable
+@attached(peer)
+macro Test<C>(_ displayName: String? = nil, _ traits: any TestTrait..., arguments collection: C) where C : Collection, C : Sendable, C.Element : Sendable
 ```
 
-#### Overview
+## Overview
 
 You can prefix the expression you pass to `collection` with `try` or `await`. The testing library evaluates the expression lazily only if it determines that the associated test will run. During testing, the testing library calls the associated test function once for each element in `collection`.
 

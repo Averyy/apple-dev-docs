@@ -12,7 +12,7 @@ virtual bool enqueue(
  IOPacketQueue *queue);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 

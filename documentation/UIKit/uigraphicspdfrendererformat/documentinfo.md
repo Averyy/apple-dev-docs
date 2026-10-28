@@ -23,7 +23,7 @@ var documentInfo: [String : Any] { get set }
 @property (nonatomic, copy) NSDictionary<NSString *,id> * documentInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can use these keys to specify additional metadata and security information for the PDF, such as the author or the password for accessing it.
 

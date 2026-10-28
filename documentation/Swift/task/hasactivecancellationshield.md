@@ -23,7 +23,7 @@ static var hasActiveCancellationShield: Bool { get }
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the [`isCancelled`](./iscancelled-swift.type.property.md) property will always return `false` when the task is executing with an active shield.
 

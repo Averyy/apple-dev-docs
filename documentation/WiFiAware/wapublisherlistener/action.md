@@ -17,7 +17,7 @@ The structure that configures the Wi-Fi Aware publisher operation that the netwo
 struct Action
 ```
 
-#### Overview
+## Overview
 
 The configuration includes the service and devices it operates on.
 

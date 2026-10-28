@@ -25,7 +25,7 @@ let kCGImagePropertyIPTCReleaseTime: CFString
 extern CFStringRef const kCGImagePropertyIPTCReleaseTime;
 ```
 
-#### Discussion
+## Discussion
 
 This time is valid on the release date, which is available in the [`kCGImagePropertyIPTCReleaseDate`](./kcgimagepropertyiptcreleasedate.md) property.
 

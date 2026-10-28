@@ -21,7 +21,7 @@ func accessibilityIndex(ofChild child: Any) -> Int
 - (NSUInteger) accessibilityIndexOfChild:(id) child;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the accessibility child object in the parent. Returns `NSNotFound` if the child does not exist.
 

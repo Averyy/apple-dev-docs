@@ -25,7 +25,7 @@ case bandPass
 AVAudioUnitEQFilterTypeBandPass
 ```
 
-#### Discussion
+## Discussion
 
 The necessary parameters for this type are [`frequency`](../avaudiouniteqfilterparameters/frequency.md) (center) and [`bandwidth`](../avaudiouniteqfilterparameters/bandwidth.md).
 

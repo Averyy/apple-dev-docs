@@ -46,11 +46,11 @@ subscript<R>(slice: R) -> MLDataTable where R : RangeExpression, R.Bound == Int 
 subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 
-#### Overview
+## Overview
 
 Use this untyped column–based subscript to create a new table by masking a subset of the table rows. The derived table will not include rows where `mask` contains a default value for its underlying type, such as:
 

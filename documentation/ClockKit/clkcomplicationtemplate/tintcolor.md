@@ -22,7 +22,7 @@ var tintColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The color in this property is the default color applied to images and highlighted text in the template. This color is applied only on clock faces that support multiple colors and only when the text or image provider doesn’t provide a custom color. If the value in this property is `nil`, ClockKit uses white for the default color.
 

@@ -24,7 +24,7 @@ protocol GCAxis2DInput : NSObjectProtocol
 @protocol GCAxis2DInput <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The normalized point with coordinates that range between `-1` and `1`. The origin `(0, 0)` represents the neutral state of the input.
 

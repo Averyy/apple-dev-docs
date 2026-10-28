@@ -18,7 +18,7 @@ A condition that describes a circular geographic area that a center point and ra
 struct CircularGeographicCondition
 ```
 
-#### Overview
+## Overview
 
 Use `CLMonitor.CircularGeographicCondition` to monitor events that occur in a circular geographic condition that you describe.
 

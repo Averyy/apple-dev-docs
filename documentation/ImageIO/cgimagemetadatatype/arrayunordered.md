@@ -25,7 +25,7 @@ case arrayUnordered
 kCGImageMetadataTypeArrayUnordered
 ```
 
-#### Discussion
+## Discussion
 
 During serialization, this type becomes `<rdf:Bag>` in the XMP format.
 

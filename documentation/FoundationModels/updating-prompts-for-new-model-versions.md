@@ -5,7 +5,7 @@
 
 Manage the prompts your app uses by versioning them to make the most out of model improvements.
 
-#### Overview
+## Overview
 
 When a new version of the foundation model your app uses becomes available, test the prompts your app uses against the old and new model versions to check whether there are unexpected differences in output. The new version of a model brings with it improvements, like improved tool calling and the model’s ability to follow instructions.
 
@@ -18,7 +18,7 @@ To adopt the latest model improvements, and make sure your app works for people 
 
 For more information on prompting an on-device model, see [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md).
 
-#### Use availability checks to version your prompts
+## Use availability checks to version your prompts
 
 Ideally, your prompt should be relatively stable across model versions. However, to take advantage of new model improvements, or handle behavioral changes, choose a strategy of prompt versioning that works best for your app.
 
@@ -36,7 +36,7 @@ if #available(iOS 26.4, macOS 26.4, visionOS 26.4, *) {
 
 Order the availability attribute from the newest version to the oldest version. The asterisk (`*`) indicates availability to future versions newer than the OS version you list. The availability of the [Foundation Models](./FoundationModels.md) framework starts at 26.0, so you don’t need to check for versions prior to that.
 
-#### Record the output your prompt produced before updating
+## Record the output your prompt produced before updating
 
 Because the older model is only included as part of the beta program, it’s essential to produce a record of what output your prompt produces with the prior model. The method you use to track model input and output responses is up to you. The goal is so you can identify how the model responds to your prompt when the model changes.
 
@@ -44,7 +44,7 @@ One way to maintain your prompts is to put them in individual text files instead
 
 Each time you modify your prompt it can also be helpful to keep a changelog you associate with it to know what changes.
 
-#### Use Xcode string catalogs to version your prompts
+## Use Xcode string catalogs to version your prompts
 
 Xcode string catalogs let you localize and translate all your app’s text in a visual editor. You don’t need to localize your prompts for all of the languages you support, but doing so can help the model respond more reliably in the correct language. For more information on localization, see [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md).
 
@@ -70,7 +70,7 @@ if #available(iOS 26.4, macOS 26.4, visionOS 26.4, *) {
 
 For more information about Xcode string catalogs, see [Localizing and varying text with a string catalog](../Xcode/localizing-and-varying-text-with-a-string-catalog.md).
 
-#### Use a server to version your prompts
+## Use a server to version your prompts
 
 Using a server for prompt versioning lets your app fetch prompts dynamically at runtime, enabling much faster updates when you need them. This allows you to test new iterations across a small subset of people or even perform rollbacks if something is wrong with a prompt.
 

@@ -19,7 +19,7 @@ case notYetStarted
 WKExtendedRuntimeSessionErrorNotYetStarted
 ```
 
-#### Discussion
+## Discussion
 
 The app called the [`invalidate()`](../wkextendedruntimesession/invalidate%28%29.md) method on a session before calling its [`start()`](../wkextendedruntimesession/start%28%29.md) method.
 

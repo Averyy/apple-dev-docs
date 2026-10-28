@@ -25,7 +25,7 @@ var isPhonetic: Bool { get set }
 @property (getter=isPhonetic) BOOL phonetic;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

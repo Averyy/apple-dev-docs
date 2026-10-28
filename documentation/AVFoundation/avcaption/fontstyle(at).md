@@ -19,7 +19,7 @@ Returns the font style and range at the index position.
 func fontStyle(at index: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the font style and range to which it applies.
 

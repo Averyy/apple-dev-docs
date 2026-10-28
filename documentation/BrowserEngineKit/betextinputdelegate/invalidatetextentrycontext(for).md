@@ -24,7 +24,7 @@ func invalidateTextEntryContext(for textInput: any BETextInput)
 - (void) invalidateTextEntryContextForTextInput:(id<BETextInput>) textInput;
 ```
 
-#### Discussion
+## Discussion
 
 This is a costly operation and should only used with intention.  For example, when switching focus between different elements.
 

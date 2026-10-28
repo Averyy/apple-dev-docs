@@ -24,7 +24,7 @@ var type: CAGradientLayerType { get set }
 @property (copy) CAGradientLayerType type;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`axial`](../cagradientlayertype/axial.md).
 

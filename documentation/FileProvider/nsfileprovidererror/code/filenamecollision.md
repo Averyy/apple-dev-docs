@@ -27,7 +27,7 @@ NSFileProviderErrorFilenameCollision
 
 - [Handling Errors with User-Driven Actions](../../handling-errors-with-user-driven-actions.md)
 
-#### Discussion
+## Discussion
 
 Use the [`fileProviderErrorForCollision(with:)`](../../../Foundation/nserror/fileprovidererrorforcollision%28with%29.md) method to create properly formatted [`filenameCollision`](../filenamecollision.md) errors.
 

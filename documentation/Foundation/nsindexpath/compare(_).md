@@ -25,11 +25,11 @@ func compare(_ otherObject: IndexPath) -> ComparisonResult
 - (NSComparisonResult) compare:(NSIndexPath *) otherObject;
 ```
 
-#### Return Value
+## Return Value
 
 The depth-first traversal ordering of the receiving index path and `indexPath`.
 
-#### Discussion
+## Discussion
 
 - [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md): The receiving index path comes before `indexPath`.
 - [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md): The receiving index path comes after `indexPath`.

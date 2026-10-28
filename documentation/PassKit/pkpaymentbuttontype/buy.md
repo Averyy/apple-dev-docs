@@ -24,7 +24,7 @@ case buy
 PKPaymentButtonTypeBuy
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

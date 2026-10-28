@@ -1731,7 +1731,16 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "excluded_pages": [
+        "logging/slg-0001-metadata-providers",
+        "logging/slg-0002",
+        "logging/slg-0003",
+        "logging/slg-0004-metadata-value-attributes",
+        "logging/slg-0005-log-event-loghandler-api",
+        "logging/slg-0006-task-local-logger",
+        "logging/slg-nnnn"
+      ],
+      "version": 4
     },
     "total_pages": 432
   }

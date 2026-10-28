@@ -25,7 +25,7 @@ var formatOptions: ISO8601DateFormatter.Options { get set }
 @property NSISO8601DateFormatOptions formatOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The ISO 8601 specification allows for dates to be expressed in a variety of ways. You can configure the format used to parse and generate representations by specifying various combinations of format options.
 

@@ -24,7 +24,7 @@ struct UIAccessibilityTraits
 typedef uint64_t UIAccessibilityTraits;
 ```
 
-#### Overview
+## Overview
 
 Set these traits to tell an assistive app how an accessibility element behaves or how to treat it.
 

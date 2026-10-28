@@ -21,7 +21,7 @@ The current value of the environment property.
 var wrappedValue: Value { get }
 ```
 
-#### Discussion
+## Discussion
 
 The wrapped value property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you read the property variable created with the [`Environment`](../environment.md) property wrapper:
 

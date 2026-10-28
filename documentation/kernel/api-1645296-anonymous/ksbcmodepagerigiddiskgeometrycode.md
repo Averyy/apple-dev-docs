@@ -13,7 +13,7 @@
 kSBCModePageRigidDiskGeometryCode = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 Rigid Disk Geometry Page value.
 

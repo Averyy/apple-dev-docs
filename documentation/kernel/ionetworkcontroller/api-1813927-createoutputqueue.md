@@ -11,11 +11,11 @@ Creates an IOOutputQueue to handle output packet queueing, and also to resolve c
 virtual IOOutputQueue * createOutputQueue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated and initialized IOOutputQueue object.
 
-#### Overview
+## Overview
 
 This method is called by start() to create an IOOutputQueue object to handle output packet queueing. The default implementation will always return 0, hence no output queue will be created. A driver may override this method and return a subclass of IOOutputQueue. IONetworkController will keep a reference to the queue created, and will release this object when IONetworkController is freed. Also see getOutputQueue().
 

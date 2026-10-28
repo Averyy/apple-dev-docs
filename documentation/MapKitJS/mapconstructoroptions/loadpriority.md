@@ -15,7 +15,7 @@ A value MapKit JS uses for prioritizing the visibility of specific map features 
 loadPriority?: MapLoadPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optimize the map-loading experience and prioritize the visibility of specific map features. The available prioritization options are:
 

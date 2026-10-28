@@ -22,7 +22,7 @@ var icSerialNumber: Data { get }
 @property (nonatomic, copy, readonly) NSData * icSerialNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The IC serial number comes from bits 1 through 48 of the [`identifier`](./identifier.md) data and is in big-endian byte order.
 

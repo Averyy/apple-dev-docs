@@ -25,7 +25,7 @@ static var concurrent: NSSortOptions { get }
 NSSortConcurrent
 ```
 
-#### Discussion
+## Discussion
 
 This option is a hint and may be ignored by the implementation under some circumstances; the code of the Block must be safe against concurrent invocation.
 

@@ -19,7 +19,7 @@ func interfaceDidScrollToTop()
 - (void) interfaceDidScrollToTop;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. You can override it to take actions after the scroll-to-top action completes. If the interface is already scrolled to the top, this method may be called immediately.
 

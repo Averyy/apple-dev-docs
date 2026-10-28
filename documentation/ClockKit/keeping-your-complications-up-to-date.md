@@ -5,7 +5,7 @@
 
 Replace or extend the data in your complication’s timeline.
 
-#### Overview
+## Overview
 
 When you have new data for your watch app, you can replace or extend your complication’s timeline. Call one of the following complication server methods to update the timeline:
 
@@ -18,13 +18,13 @@ A watchOS app provides several opportunities to update your complication’s tim
 
 > ❗ **Important**:  If the system launches your app in the background (for example, in response to a background download, task, or HealthKit observer query), your complication server’s [`activeComplications`](./clkcomplicationserver/activecomplications.md) property may not contain a valid value. If this property is `nil`, the server is still connecting to the active complications on the watch face. For more information on safely accessing the list of active complications, see [`activeComplications`](./clkcomplicationserver/activecomplications.md).
 
-##### Update When Your App Runs
+### Update When Your App Runs
 
 If the user’s actions affect your complications, call the [`reloadTimeline(for:)`](./clkcomplicationserver/reloadtimeline%28for%29.md) or [`extendTimeline(for:)`](./clkcomplicationserver/extendtimeline%28for%29.md) method to update them. You can also use active runtime as an opportunity to refresh the complications, even when the user is doing something else. For example, you could try to quickly download data or transfer data from the iOS device while your app is actively running.
 
 Don’t rely on this strategy as the primary way to update your data. You can’t predict when the user will launch your app, and any download, transfer, or update actions that don’t finish while the app is running will need to schedule background tasks. Still, taking advantage of these runtime opportunities can keep your app and complications refreshed.
 
-##### Use Background URL Sessions
+### Use Background URL Sessions
 
 Use background URL sessions to download updated data from a server. The system triggers a background task after the download completes, and you can use this task to set up your next download, keeping your app up to date. The system automatically throttles the downloads as needed to preserve battery life. To schedule a background URL session, start by creating a background session configuration.
 
@@ -75,7 +75,7 @@ The system calls the following delegate methods in this order:
 
 For more information, see [Downloading files in the background](../Foundation/downloading-files-in-the-background.md) and [`WKURLSessionRefreshBackgroundTask`](../WatchKit/wkurlsessionrefreshbackgroundtask.md).
 
-##### Use Background Observer Queries
+### Use Background Observer Queries
 
 In watchOS 8 and later, HealthKit supports background observer queries. Background observer queries share a budget with [`WKApplicationRefreshBackgroundTask`](../WatchKit/wkapplicationrefreshbackgroundtask.md) tasks. Your app can receive four updates (or background app refresh tasks) an hour, as long as it has a complication on the active watch face.
 
@@ -121,7 +121,7 @@ When you have an active observer query, HealthKit wakes your app when the store 
 
 To ensure that your app recieves updates, create and execute the observer query soon after your app launches. For example, in your extension delegate’s [`applicationDidFinishLaunching()`](../WatchKit/wkextensiondelegate/applicationdidfinishlaunching%28%29.md) method. For more information, see [Executing Observer Queries](../HealthKit/executing-observer-queries.md).
 
-##### Schedule Background Tasks
+### Schedule Background Tasks
 
 You can schedule background tasks to update your watchOS content periodically. This strategy works best when your data changes at predictable times. Call your extension’s [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](../WatchKit/wkextension/schedulebackgroundrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md) method to trigger a [`WKApplicationRefreshBackgroundTask`](../WatchKit/wkapplicationrefreshbackgroundtask.md), in which the system launches your app in the background and calls your extension delegate’s [`handle(_:)`](../WatchKit/wkextensiondelegate/handle%28_%29-92ulv.md) method.
 
@@ -131,13 +131,13 @@ The system carefully budgets background refresh tasks. You can schedule only one
 
 Also, when the system call your extension delegate’s [`handle(_:)`](../WatchKit/wkextensiondelegate/handle%28_%29-92ulv.md) method, it gives your app a maximum of 4 seconds of CPU processing time, which you can use over 15 seconds of elapsed real time. In general, set up your requests for the next background task before you begin requesting and processing data—just in case those tasks exceed the time limits.
 
-##### Send Push Notifications
+### Send Push Notifications
 
 Push notifications let you process data on your server, and update the watch as soon as the data is available. This update method allows you to perform complex, time-consuming data-gathering tasks that wouldn’t otherwise be practical on Apple Watch. It also lets you send an update as soon as the data is available, instead of waiting for a periodic refresh task.
 
 To update your watchOS content from your server, send a [`complication`](../PushKit/pkpushtype/complication.md) push notification. For watchOS 6 and later, send the push notification directly to Apple Watch. For watchOS 5 and earlier, you must send it to the iOS companion instead. The system limits you to 50 push notifications per day. For more information on setting up and sending push notifications, see [PushKit](../PushKit/PushKit.md).
 
-##### Transfer Data from iOS
+### Transfer Data from iOS
 
 Alternatively, if your watchOS app has a companion iOS app, you can gather the data in the iOS app, and then transmit that data to Apple Watch. However, this update strategy tethers the watch to the companion iPhone. You can’t update the complication if the user ventures out without their phone, a circumstance that can result in out-of-date or inaccurate complications. Also, like push notifications, the system limits you to 50 complication transfers a day.
 

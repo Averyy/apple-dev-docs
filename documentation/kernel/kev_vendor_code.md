@@ -14,7 +14,7 @@ struct kev_vendor_code {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used with the SIOCGKEVVENDOR ioctl to convert from a string identifying a kext or vendor, in the form of a bundle identifier, to a vendor code.
 

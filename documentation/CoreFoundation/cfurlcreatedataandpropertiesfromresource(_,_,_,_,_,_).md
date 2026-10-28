@@ -26,11 +26,11 @@ func CFURLCreateDataAndPropertiesFromResource(_ alloc: CFAllocator!, _ url: CFUR
 extern Boolean CFURLCreateDataAndPropertiesFromResource(CFAllocatorRef alloc, CFURLRef url, CFDataRef*resourceData, CFDictionaryRef*properties, CFArrayRef desiredProperties, SInt32 *errorCode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 If you are interested in loading only the resource data or the resource’s properties, pass `NULL` for the one you don’t want. If `properties` is non-`NULL` and `desiredProperties` is `NULL` then all properties are fetched. Note that as much work as possible is done even if `false` is returned. For instance, if one property is not available, the others are fetched anyway. This function is intended for convenience, not performance.
 

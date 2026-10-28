@@ -25,7 +25,7 @@ var ambient: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * ambient;
 ```
 
-#### Discussion
+## Discussion
 
 Ambient shading describes the amount and color of ambient light reflected by the material. Ambient shading is uniform in all directions at all points on a surface. If a scene does not contain lights whose type is [`ambient`](../scnlight/lighttype/ambient.md), this property has no effect on a material’s appearance.
 

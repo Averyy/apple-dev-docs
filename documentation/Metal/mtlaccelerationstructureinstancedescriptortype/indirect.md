@@ -24,7 +24,7 @@ case indirect
 MTLAccelerationStructureInstanceDescriptorTypeIndirect
 ```
 
-#### Discussion
+## Discussion
 
 This instance type corresponds to the [`MTLIndirectAccelerationStructureInstanceDescriptor`](../mtlindirectaccelerationstructureinstancedescriptor.md) memory layout.
 

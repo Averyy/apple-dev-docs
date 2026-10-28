@@ -21,7 +21,7 @@ A lazy wrapper that includes the elements of an underlying collection after any 
 typealias LazyDropWhileCollection<T> = LazyDropWhileSequence<T> where T : Collection
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The performance of accessing `startIndex`, `first`, or any methods that depend on `startIndex` depends on how many elements satisfy the predicate at the start of the collection, and may not offer the usual performance given by the `Collection` protocol. Be aware, therefore, that general operations on lazy collections may not have the documented complexity.
 

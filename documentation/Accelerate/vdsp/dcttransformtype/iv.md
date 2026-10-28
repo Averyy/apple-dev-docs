@@ -21,7 +21,7 @@ A constant that represents a type-IV discrete cosine transform.
 case IV
 ```
 
-#### Discussion
+## Discussion
 
 The type-IV DCT uses the following operation for a discrete cosine transform:
 

@@ -19,7 +19,7 @@ class WKInterfaceTimer
 @interface WKInterfaceTimer : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Use a timer object to configure the amount of time and the appearance of the timer text. When you start the timer, WatchKit updates the displayed text automatically on the user’s Apple Watch without further interactions from your extension. To know when the timer reaches 0, configure a [`Timer`](../Foundation/timer.md) object with the same target date you used to set up the timer.
 
@@ -41,7 +41,7 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 > ❗ **Important**:  This class provides methods for configuring interface objects at initialization time or while an interface controller is active on the user’s Apple Watch. WatchKit coalesces the data from all setter method calls made during the same run loop iteration and transmits it to the device at the end of the run loop. If you set an attribute to different values in the same run loop iteration,  only the last value is transmitted. If you set an attribute to the same value in the same run loop iteration, WatchKit generates a log message so that you can track down the duplicate change.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your timer interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

@@ -25,7 +25,7 @@ protocol INSearchCallHistoryIntentHandling : NSObjectProtocol
 @protocol INSearchCallHistoryIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchCallHistoryIntentHandling`](./insearchcallhistoryintenthandling.md) protocol to resolve, confirm, and handle requests to search for calls in the user’s call history. Adopt this protocol in an object of your Intents extension that’s capable of performing the search and finding any matching records. Siri doesn’t display the call information found during the search. After a successful search, Siri launches your app to display that information.
 

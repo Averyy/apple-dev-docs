@@ -23,7 +23,7 @@ var summarizedDOTDescription: String { get }
 @property (nonatomic, readonly) NSString * summarizedDOTDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Edges with solid lines indicate layers whose gradients the framework backpropagates through those edges. Edges with dashed lines indicate layers whose gradients the framework doesn’t backpropagate.
 

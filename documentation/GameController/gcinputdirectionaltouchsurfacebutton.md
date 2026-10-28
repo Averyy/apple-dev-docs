@@ -24,7 +24,7 @@ let GCInputDirectionalTouchSurfaceButton: String
 extern NSString * const GCInputDirectionalTouchSurfaceButton;
 ```
 
-#### Discussion
+## Discussion
 
 For the second-generation Siri Remote and later, this represents the button on the entire touch surface including the inner and outer rings.
 

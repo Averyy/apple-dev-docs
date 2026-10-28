@@ -11,11 +11,11 @@ Return the physical address of the first byte in the memory.
 IOPhysicalAddress getPhysicalAddress();
 ```
 
-#### Return Value
+## Return Value
 
 A physical address.
 
-#### Overview
+## Overview
 
 This method returns the physical address of the first byte in the memory. It is most useful on memory known to be physically contiguous.
 

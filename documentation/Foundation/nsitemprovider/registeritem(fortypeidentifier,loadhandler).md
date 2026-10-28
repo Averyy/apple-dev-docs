@@ -27,7 +27,7 @@ func registerItem(forTypeIdentifier typeIdentifier: String, loadHandler: @escapi
 - (void) registerItemForTypeIdentifier:(NSString *) typeIdentifier loadHandler:(NSItemProviderLoadHandler) loadHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register blocks that can take the item provider’s file or data object and convert it to a specific data format. Your `loadHandler` block is executed when a client passes the same `typeIdentifier` string to the [`loadItem(forTypeIdentifier:options:completionHandler:)`](./loaditem%28fortypeidentifier,options,completionhandler%29.md) method. In the implementation of your block, coerce the data to the specified type and call the provided completion handler. You must call the completion handler, either with the requested data or with an error.
 

@@ -24,7 +24,7 @@ class CIColorKernel
 @interface CIColorKernel : CIKernel
 ```
 
-#### Overview
+## Overview
 
 The kernel language routine for a color kernel has the following characteristics:
 

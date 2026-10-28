@@ -9,11 +9,11 @@
 virtual IOMediaState getMediaState() const;
 ```
 
-#### Return Value
+## Return Value
 
 An IOMediaState value.
 
-#### Overview
+## Overview
 
 Ask the driver about the media's current state.
 

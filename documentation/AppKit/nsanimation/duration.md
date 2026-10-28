@@ -19,7 +19,7 @@ var duration: TimeInterval { get set }
 @property NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be greater than or equal to `0`. Setting the duration to a negative value raises an exception.
 

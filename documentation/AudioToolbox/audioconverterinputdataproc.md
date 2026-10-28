@@ -24,11 +24,11 @@ typealias AudioConverterInputDataProc = (AudioConverterRef, UnsafeMutablePointer
 typedef int (*)(struct OpaqueAudioConverter *, unsigned int *, void **, void *) AudioConverterInputDataProc;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAudioConverterInputDataProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This deprecated callback supplies input data to the [`AudioConverterFillBuffer`](./audioconverterfillbuffer.md) function. Use [`AudioConverterComplexInputDataProc`](./audioconvertercomplexinputdataproc.md) instead.
 

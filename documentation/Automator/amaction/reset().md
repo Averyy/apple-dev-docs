@@ -20,7 +20,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 Resetting causes the action to release its output generated from the current execution of the workflow.
 

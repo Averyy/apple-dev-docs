@@ -24,7 +24,7 @@ var scalingMode: MPSGraphFFTScalingMode { get set }
 @property (nonatomic, readwrite) MPSGraphFFTScalingMode scalingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the scaling mode is independent from the phase factor. Default value: `MPSGraphFFTScalingModeNone`.
 

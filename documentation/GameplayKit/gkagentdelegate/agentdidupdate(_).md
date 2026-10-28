@@ -24,7 +24,7 @@ optional func agentDidUpdate(_ agent: GKAgent)
 - (void) agentDidUpdate:(GKAgent *) agent;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to update a display based on the latest data from the agent simulation. Read the [`position`](../gkagent2d/position.md) and [`rotation`](../gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](../gkagent2d.md) or [`GKAgent3D`](../gkagent3d.md) object), then set the corresponding attributes of the object that provides the agent’s visual representation.
 

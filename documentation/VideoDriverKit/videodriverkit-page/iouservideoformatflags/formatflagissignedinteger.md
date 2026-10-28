@@ -15,7 +15,7 @@ Set for signed integer, clear for unsigned integer.
 FormatFlagIsSignedInteger
 ```
 
-#### Discussion
+## Discussion
 
 This flag is only valid if `FormatFlagIsFloat` is clear.
 

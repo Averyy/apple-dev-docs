@@ -19,7 +19,7 @@ class WKInterfaceActivityRing
 @interface WKInterfaceActivityRing : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 The [`WKInterfaceActivityRing`](./wkinterfaceactivityring.md) view displays data from an [`HKActivitySummary`](../HealthKit/hkactivitysummary.md) object, using the Move, Exercise, and Stand activity rings (see [Figure 1](./wkinterfaceactivityring.md#1965772)).
 

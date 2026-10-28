@@ -23,7 +23,7 @@ class CFBinaryHeap
 typedef struct __CFBinaryHeap * CFBinaryHeapRef;
 ```
 
-#### Overview
+## Overview
 
 `CFBinaryHeap` implements a container that stores values sorted using a binary search algorithm. All binary heaps are mutable; there is not a separate immutable variety. Binary heaps can be useful as priority queues.
 

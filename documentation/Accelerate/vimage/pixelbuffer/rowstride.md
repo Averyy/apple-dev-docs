@@ -23,7 +23,7 @@ var rowStride: Int { get }
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 Use this property when working with the [`AccelerateBuffer`](../../acceleratebuffer.md) and [`AccelerateMutableBuffer`](../../acceleratemutablebuffer.md) functions. The property allows you to limit work you do on the underlying memory of a pixel buffer to just the visible pixels.
 
@@ -42,7 +42,7 @@ In this case, the [`rowStride`](./rowstride.md) is `8`. This equates to the buff
 
 Each pixel contains two 32-bit values, which is equivalent to 8 bytes per pixel, and 8 bytes per pixel multiplied by the [`rowStride`](./rowstride.md) of 8 pixels equals 64.
 
-##### Working with the underlying row-bytes property.
+### Working with the underlying row-bytes property.
 
 If you’re accessing the underlying bytes of a pixel buffer, note that the [`rowStride`](./rowstride.md) `*` [`channelCount`](./channelcount.md) `*` [`bitCountPerPixel`](../../staticpixelformat/bitcountperpixel.md) may not correspond to the [`rowBytes`](../../vimage_buffer/rowbytes.md) properly of the underlying [`vImage_Buffer`](../../vimage_buffer.md). This may happen when the integer row stride multiplied by the number of bytes per pixel isn’t a factor of the row bytes.
 

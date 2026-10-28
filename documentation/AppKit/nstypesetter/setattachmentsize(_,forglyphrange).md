@@ -19,7 +19,7 @@ func setAttachmentSize(_ attachmentSize: NSSize, forGlyphRange glyphRange: NSRan
 - (void) setAttachmentSize:(NSSize) attachmentSize forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to interact with custom glyph storage.
 

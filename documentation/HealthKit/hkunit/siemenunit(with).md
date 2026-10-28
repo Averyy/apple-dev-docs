@@ -24,11 +24,11 @@ class func siemenUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) siemenUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring electrical conductance based on siemens and the provided prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of siemens. HealthKit often records electrodermal activity in microsiemens, as shown below.
 

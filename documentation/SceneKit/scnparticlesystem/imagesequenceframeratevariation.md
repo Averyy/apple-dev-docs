@@ -25,7 +25,7 @@ var imageSequenceFrameRateVariation: CGFloat { get set }
 @property (nonatomic) CGFloat imageSequenceFrameRateVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`imageSequenceFrameRate`](./imagesequenceframerate.md) property. SceneKit randomly adjusts the animation speed for each particle by up to half the [`imageSequenceFrameRateVariation`](./imagesequenceframeratevariation.md) value. For example, if the [`imageSequenceFrameRate`](./imagesequenceframerate.md) value is `10.0` frames per second and the [`imageSequenceFrameRateVariation`](./imagesequenceframeratevariation.md) value is `10.0` seconds, each particle animates at a random rate between `5.0` and `15.0` frames per second.
 

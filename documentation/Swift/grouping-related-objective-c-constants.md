@@ -5,7 +5,7 @@
 
 Add macros to your Objective-C types to group their values in Swift.
 
-#### Overview
+## Overview
 
 You use one of the following macros to declare that several Objective-C constants are related to each other:
 
@@ -15,7 +15,7 @@ You use one of the following macros to declare that several Objective-C constant
 - `NS_TYPED_ENUM` for enumerations with a raw value type that you specify
 - `NS_TYPED_EXTENSIBLE_ENUM` for enumerations that you expect might gain more cases
 
-##### Declare Simple Enumerations
+### Declare Simple Enumerations
 
 Use the `NS_ENUM` macro for simple groups of constants.
 
@@ -45,7 +45,7 @@ Enumerations imported using the `NS_ENUM` macro won’t fail when you initialize
 
 The `NS_ENUM` macro is the only enumeration macro that results in an actual enumeration type when imported to Swift. The other enumeration macros generate structures.
 
-##### Declare Closed Enumerations
+### Declare Closed Enumerations
 
 Use the `NS_CLOSED_ENUM` macro for a simple group of constants that you can never add new cases to. Closed enumerations are useful for representing a finite set of states that you expect people to switch over using a switch statement. The three cases of [`ComparisonResult`](../Foundation/comparisonresult.md)—[`ComparisonResult.orderedAscending`](../Foundation/comparisonresult/orderedascending.md), [`ComparisonResult.orderedSame`](../Foundation/comparisonresult/orderedsame.md), and [`ComparisonResult.orderedDescending`](../Foundation/comparisonresult/ordereddescending.md)—are an example of a finite set. They’re the only logical cases for performing an ordered comparison during tasks like sorting.
 
@@ -57,7 +57,7 @@ Don’t use the `NS_CLOSED_ENUM` macro if:
 
 In these scenarios, use the `NS_ENUM` macro instead.
 
-##### Declare Option Sets
+### Declare Option Sets
 
 You use the `NS_OPTIONS` macro when two or more constants in a grouping of constants can be combined. For example, the output formatting for a [`JSONEncoder`](../Foundation/jsonencoder.md) instance can be sorted and can use ample white space at the same time, so it’s valid to specify both options in an option set: `[.sorted, .prettyPrinted]`.
 
@@ -92,7 +92,7 @@ public struct UIViewAutoresizing: OptionSet {
 }
 ```
 
-##### Declare Typed Enumerations
+### Declare Typed Enumerations
 
 You use the `NS_TYPED_ENUM` to group constants with a raw value type that you specify. Use `NS_TYPED_ENUM` for sets of constants that *can’t* logically have values added in a Swift extension, and use `NS_TYPED_EXTENSIBLE_ENUM` for sets of constants that *can* be expanded in an extension.
 
@@ -124,7 +124,7 @@ struct TrafficLightColor: RawRepresentable, Equatable, Hashable {
 }
 ```
 
-###### Declare Typed Extensible Enumerations
+#### Declare Typed Extensible Enumerations
 
 Extensible enumerations are imported in a similar fashion to nonextensible ones, except that they receive an additional initializer.
 

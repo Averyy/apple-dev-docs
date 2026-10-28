@@ -25,7 +25,7 @@ var properties: CBCharacteristicProperties { get }
 @property (nonatomic, readonly) CBCharacteristicProperties properties;
 ```
 
-#### Discussion
+## Discussion
 
 The properties of a characteristic determine the access to and use of the characteristic’s value and descriptors. For a list of the possible values representing the properties of a characteristic, see [`CBCharacteristicProperties`](../cbcharacteristicproperties.md).
 

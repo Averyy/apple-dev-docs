@@ -22,7 +22,7 @@ A radial gradient that draws an ellipse.
 nonisolated struct EllipticalGradient
 ```
 
-#### Overview
+## Overview
 
 The gradient maps its coordinate space to the unit space square in which its center and radii are defined, then stretches that square to fill its bounding rect, possibly also stretching the circular gradient to have elliptical contours.
 

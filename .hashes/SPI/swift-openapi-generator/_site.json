@@ -1,6 +1,25 @@
 {
   "hashes": {},
   "metadata": {
+    "excluded_pages": {
+      "swift-openapi-generator/proposals": [
+        "swift-openapi-generator/soar-0001",
+        "swift-openapi-generator/soar-0002",
+        "swift-openapi-generator/soar-0003",
+        "swift-openapi-generator/soar-0004",
+        "swift-openapi-generator/soar-0005",
+        "swift-openapi-generator/soar-0007",
+        "swift-openapi-generator/soar-0008",
+        "swift-openapi-generator/soar-0009",
+        "swift-openapi-generator/soar-0010",
+        "swift-openapi-generator/soar-0011",
+        "swift-openapi-generator/soar-0012",
+        "swift-openapi-generator/soar-0013",
+        "swift-openapi-generator/soar-0014",
+        "swift-openapi-generator/soar-0015",
+        "swift-openapi-generator/soar-nnnn"
+      ]
+    },
     "index_roots": [
       "swift-openapi-generator",
       "swift_openapi_generator"

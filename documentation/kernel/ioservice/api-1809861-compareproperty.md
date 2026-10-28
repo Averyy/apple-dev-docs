@@ -13,11 +13,11 @@ virtual bool compareProperty(
  const OSString *key );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the property does not exist in the matching table. If the property exists in the matching dictionary but not the IOService property table, failure is returned. Otherwise the result of calling the property from the matching dictionary's `isEqualTo` method with the IOService property as an argument is returned.
 
-#### Overview
+## Overview
 
 This is a helper function to aid in implementing matchPropertyTable. If the property specified by `key` exists in the matching dictionary, it is compared with a property of the same name in the IOService object's property table. The comparison is performed with the `isEqualTo` method. If the property does not exist in the matching table, success is returned. If the property exists in the matching dictionary but not the IOService property table, failure is returned.
 

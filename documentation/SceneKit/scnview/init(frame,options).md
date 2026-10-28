@@ -41,7 +41,7 @@ init(frame: NSRect, options: [String : Any]? = nil)
 - (instancetype) initWithFrame:(NSRect) frame options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object, or `nil` if the object couldn’t be created.
 

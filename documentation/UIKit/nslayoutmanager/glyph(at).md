@@ -25,11 +25,11 @@ func glyph(at glyphIndex: Int) -> CGGlyph
 - (CGGlyph) glyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph at `glyphIndex`.
 
-#### Discussion
+## Discussion
 
 Raises an `NSRangeException` if `glyphIndex` is out of bounds.
 

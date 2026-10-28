@@ -20,7 +20,7 @@ Sets an array of viewports to transform vertices from normalized device coordina
 func setViewports(_ viewports: [MTLViewport])
 ```
 
-#### Discussion
+## Discussion
 
 Metal clips fragments that lie outside of the viewport, and optionally clamps fragments outside of z-near/z-far range, depending on the value you assign to [`setDepthClipMode(_:)`](./setdepthclipmode%28_%29.md).
 

@@ -28,7 +28,7 @@ protocol GKMatchmakerViewControllerDelegate : NSObjectProtocol
 
 - [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
 
-#### Overview
+## Overview
 
 The delegate of a [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) object implements this protocol to handle when players accept invitations, the player cancels matchmaking, or an error occurs. In all these cases, except when a hosted player accepts a invitation, for example, [`matchmakerViewController(_:hostedPlayerDidAccept:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,hostedplayerdidaccept%29.md), the delegate needs to dismiss the view controller.
 

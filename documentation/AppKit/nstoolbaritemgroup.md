@@ -22,7 +22,7 @@ class NSToolbarItemGroup
 @interface NSToolbarItemGroup : NSToolbarItem
 ```
 
-#### Overview
+## Overview
 
 An [`NSToolbarItemGroup`](./nstoolbaritemgroup.md) represents a collection set of subitems in a toolbar that the system displays based on available space and settings that you specify. The system uses the views and labels of the subitems, but the parent’s attributes take precedence. This differs from other [`NSToolbarItem`](./nstoolbaritem.md) objects because they’re attached — the user drags them together as a single item rather than separately.
 

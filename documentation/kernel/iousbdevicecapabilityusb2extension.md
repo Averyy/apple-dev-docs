@@ -15,7 +15,7 @@ The structure for the USB 2.0 extension device capability.
 typedef struct IOUSBDeviceCapabilityUSB2Extension IOUSBDeviceCapabilityUSB2Extension;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.2.1 for more information.
 

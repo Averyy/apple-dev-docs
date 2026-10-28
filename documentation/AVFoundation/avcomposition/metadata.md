@@ -21,7 +21,7 @@ An array of metadata items for all metadata identifiers for which a value is ava
 var metadata: [AVMetadataItem] { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can filter the metadata items by language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method, or by identifier with the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 

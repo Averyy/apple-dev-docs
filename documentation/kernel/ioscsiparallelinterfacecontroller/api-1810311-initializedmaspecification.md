@@ -12,7 +12,7 @@ virtual bool InitializeDMASpecification (
  IODMACommand *command );
 ```
 
-#### Return Value
+## Return Value
 
 boolean value indicating success or failure.
 

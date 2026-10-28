@@ -24,7 +24,7 @@ The three-letter ISO 4217 currency code for the price of the product.
 var currencyCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`currencyCode`](./currencycode.md) property contains an ISO 4217 alpha-3 string that represents the currency of the price of the product. Use [`currencyCode`](../product/subscriptioninfo/renewalinfo/currencycode.md) to access the currency of the price on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9. Otherwise, use [`currency`](../product/subscriptioninfo/renewalinfo/currency.md).
 

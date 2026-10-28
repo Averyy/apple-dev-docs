@@ -23,7 +23,7 @@ var canStopPictureInPicture: Bool { get }
 
 - [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
-#### Discussion
+## Discussion
 
 When this value is `true`, calling [`stopPictureInPicture()`](./stoppictureinpicture%28%29.md) stops the active Picture in Picture session. Apps should update the state of UI that starts Picture in Picture when this property value changes.
 

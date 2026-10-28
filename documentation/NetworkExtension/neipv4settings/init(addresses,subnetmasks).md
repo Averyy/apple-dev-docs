@@ -24,7 +24,7 @@ init(addresses: [String], subnetMasks: [String])
 - (instancetype) initWithAddresses:(NSArray<NSString *> *) addresses subnetMasks:(NSArray<NSString *> *) subnetMasks;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized NEIPv4Settings object.
 

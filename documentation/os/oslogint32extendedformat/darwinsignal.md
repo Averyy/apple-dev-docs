@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as a Darwin signal.
 case darwinSignal
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as a Darwin signal, such as `sigsegv: Segmentation fault`. The following example applies the `darwinSignal` formatter to the 32-bit integer value `25`:
 

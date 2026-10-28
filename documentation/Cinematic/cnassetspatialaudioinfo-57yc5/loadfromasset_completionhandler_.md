@@ -17,7 +17,7 @@
 + (void) loadFromAsset:(AVAsset *) asset completionHandler:(void (^)(CNAssetSpatialAudioInfo *assetInfo, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an instance of CNAssetAudioInfo for an AVAsset object asynchronously.
 

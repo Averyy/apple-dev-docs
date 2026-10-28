@@ -22,7 +22,7 @@ nonisolated
 func defaultAppStorage(_ store: UserDefaults) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, the default store for a view hierarchy is `UserDefaults.standard`, but can be set a to a custom one. For example, sharing defaults between an app and an extension can override the default store to one created with `UserDefaults.init(suiteName:_)`.
 

@@ -25,7 +25,7 @@ func remoteObjectProxyWithErrorHandler(_ handler: @escaping (any Error) -> Void)
 - (id) remoteObjectProxyWithErrorHandler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 See descriptions in [`NSXPCProxyCreating`](../nsxpcproxycreating.md) for more details.
 

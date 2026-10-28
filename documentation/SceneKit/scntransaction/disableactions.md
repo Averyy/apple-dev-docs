@@ -25,11 +25,11 @@ class var disableActions: Bool { get set }
 @property (class, nonatomic) BOOL disableActions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if implicit animation is disabled; [`false`](../../Swift/false.md) if implicit animation is allowed.
 
-#### Discussion
+## Discussion
 
 By default (when this property is [`false`](../../Swift/false.md)), any changes to animatable properties of objects in the scene graph implicitly create animations. (These animations may not be visible unless you use the [`animationDuration`](./animationduration.md) property to set a nonzero duration for the transaction.) Set this property to [`true`](../../Swift/true.md) to disable implicit animation during the transaction.
 

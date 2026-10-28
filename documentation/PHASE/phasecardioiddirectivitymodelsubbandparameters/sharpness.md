@@ -24,7 +24,7 @@ var sharpness: Double { get set }
 @property (nonatomic) double sharpness;
 ```
 
-#### Discussion
+## Discussion
 
 This property condenses the shape of the [`pattern`](./pattern.md) such that higher values extend the shape frontwards. Increasing sharpness for dipole (a [`pattern`](./pattern.md) value of `1.0`), extends the shape frontwards and backwards.
 

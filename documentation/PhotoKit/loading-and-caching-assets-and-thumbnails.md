@@ -5,7 +5,7 @@
 
 Request image, video, or Live Photos content, and cache for quick reuse.
 
-#### Overview
+## Overview
 
 Photos automatically downloads or generates images to your specification, caching them for quick reuse. Use the [`PHImageManager`](../Photos/phimagemanager.md) class to request images of assets at a specified size, or AVFoundation objects to work with video assets. When working with large numbers of assets—for example, when populating a collection view with thumbnails—preload images in batches using the [`PHCachingImageManager`](../Photos/phcachingimagemanager.md) subclass.
 

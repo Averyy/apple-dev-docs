@@ -25,7 +25,7 @@ var portList: [NSNumber]? { get }
 @property (copy, readonly, nullable) NSArray<NSNumber *> * portList;
 ```
 
-#### Discussion
+## Discussion
 
 The list of ports for the cookie, returned as an array of `NSNumber` objects containing integers. If the cookie has no port list, the value of this property is `nil` and the cookie will be sent to any port. Otherwise, the cookie is only sent to ports specified in the port list.
 

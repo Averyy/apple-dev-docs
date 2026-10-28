@@ -14,7 +14,7 @@
 kIOFWEnableRetryOnAckD = (1 << 2)
 ```
 
-#### Discussion
+## Discussion
 
 Enable retry on Ack D
 

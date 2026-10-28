@@ -19,7 +19,7 @@ var registeredNibsByIdentifier: [NSUserInterfaceItemIdentifier : NSNib]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,NSNib *> * registeredNibsByIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each key in the dictionary is the identifier string (given by [`NSUserInterfaceItemIdentifier`](../nsuserinterfaceitemidentifier.md)) used to register the nib file in the [`register(_:forIdentifier:)`](./register%28_,foridentifier%29.md) method. The value of each key is the corresponding [`NSNib`](../nsnib.md) object.
 

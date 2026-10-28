@@ -20,7 +20,7 @@ The degree to which an entity’s clear, shiny coating scatters light to create 
 var clearcoatRoughness: PhysicallyBasedMaterial.ClearcoatRoughness { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you enable clearcoat rendering for a material, RealityKit renders the clearcoat as a separate layer just above the surface of the entity. You can specify a clearcoat roughness value for the clearcoat to indicate how much the clearcoat scatters light that bounces off of it, which softens and spreads out the highlights.
 

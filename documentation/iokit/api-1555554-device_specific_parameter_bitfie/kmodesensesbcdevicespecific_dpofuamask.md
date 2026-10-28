@@ -14,7 +14,7 @@
 kModeSenseSBCDeviceSpecific_DPOFUAMask = (1 << kModeSenseSBCDeviceSpecific_DPOFUABit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to test for kModeSenseSBCDeviceSpecific_DPOFUABit.
 

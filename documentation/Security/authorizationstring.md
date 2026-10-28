@@ -20,7 +20,7 @@ typealias AuthorizationString = UnsafePointer<CChar>
 typedef const char * AuthorizationString;
 ```
 
-#### Discussion
+## Discussion
 
 Use this in a call to the [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) function for the `tag` parameter.
 

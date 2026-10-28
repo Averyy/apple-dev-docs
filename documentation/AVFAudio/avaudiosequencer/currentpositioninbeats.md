@@ -24,7 +24,7 @@ var currentPositionInBeats: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval currentPositionInBeats;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property positions the sequencer’s player to the specified beat. You can update this property while the player is in a playing state, in which case, playback resumes at the new position.
 

@@ -5,7 +5,7 @@
 
 Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
 
-#### Overview
+## Overview
 
 When the user interacts with Siri to request media, the system may send your app an intent that represents the user’s request. To effectively communicate the user’s request to your app, the system relies on the intents your app supports, the names of media items and performers, and the user’s listening habits. The system also uses this information to make proactive suggestions and provide relevant search results. Your app can contribute to this information with Core Spotlight and Intents to improve the accuracy, relevance, and convenience of playing media.
 
@@ -19,7 +19,7 @@ For information about how Apple protects user privacy when your app shares infor
 >
 > Session 10060: [Design High Quality Siri Media Interactions](https://developer.apple.com/videos/play/wwdc2020/10060/)
 
-##### Support Media Intents
+### Support Media Intents
 
 Use [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) to receive media intents from Siri and Shortcuts. Support other system-defined media intents, such as [`INUpdateMediaAffinityIntent`](../Intents/inupdatemediaaffinityintent.md) or [`INAddMediaIntent`](../Intents/inaddmediaintent.md), that reflect interactions the user can perform directly in your app.
 
@@ -43,13 +43,13 @@ Once you have the PlayMedia system intent in a SiriKit Intent Definition file, m
 
 > **Note**:  The system offers the user audio suggestions based on donations the system can play in an audio-only situation. The system excludes the following media types when generating audio suggestions: [`INMediaItemType.news`](../Intents/inmediaitemtype/news.md), [`INMediaItemType.musicVideo`](../Intents/inmediaitemtype/musicvideo.md), [`INMediaItemType.movie`](../Intents/inmediaitemtype/movie.md), [`INMediaItemType.tvShow`](../Intents/inmediaitemtype/tvshow.md), [`INMediaItemType.tvShowEpisode`](../Intents/inmediaitemtype/tvshowepisode.md), and [`INMediaItemType.unknown`](../Intents/inmediaitemtype/unknown.md).
 
-##### Donate Interactions
+### Donate Interactions
 
 Improve App Selection, Shortcuts, and Shortcut Suggestions by donating interactions from your app. Each time the user starts playing media directly in your app, create and donate an [`INInteraction`](../Intents/ininteraction.md) containing an [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) to tell the system what the user is listening to. Provide as much detail as possible in each donation to help the system interact more accurately with the user in the future. If the user starts a playlist or radio station, donate that information instead of each individual song.
 
 > ❗ **Important**:  Suggestions improve as the system accumulates donated interactions. If some media becomes irrelevant or unavailable, use [`delete(with:completion:)`](../Intents/ininteraction/delete%28with,completion%29-2d1gs.md) to remove interactions associated with those specific media items. Don’t call [`deleteAll(completion:)`](../Intents/ininteraction/deleteall%28completion%29.md) unless you really mean to reset what the system has learned about the way the user interacts with your app.
 
-##### Set the Current User Context
+### Set the Current User Context
 
 When your app launches, create an [`INMediaUserContext`](../Intents/inmediausercontext.md), add the user’s information, and make the context current. The system uses this information to optimize the user experience for App Selection. The following code listing shows how to set the current context for a user with a paid subscription and a few hundred items in their library:
 
@@ -60,7 +60,7 @@ context.subscriptionStatus = .subscribed
 context.becomeCurrent()
 ```
 
-##### Populate the Spotlight Database
+### Populate the Spotlight Database
 
 Add metadata about playlists and individual media items from the user’s local library to the Core Spotlight database. When the user searches for the item, the system can offer to play the media in your app alongside any other search results.
 
@@ -83,7 +83,7 @@ CSSearchableIndex.default().indexSearchableItems([item]) { ... }
 
 > ⚠️ **Warning**:  If you need to delete items from the index, use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](../CoreSpotlight/cssearchableindex/deletesearchableitems%28withdomainidentifiers,completionhandler%29.md). Calling [`deleteAllSearchableItems(completionHandler:)`](../CoreSpotlight/cssearchableindex/deleteallsearchableitems%28completionhandler%29.md) deletes not only the searchable items you’ve added directly to the searchable index, but also every [`INInteraction`](../Intents/ininteraction.md) your app has donated or Siri has donated on behalf of your app.
 
-##### Define Relevant Vocabulary
+### Define Relevant Vocabulary
 
 Define vocabulary for Siri, both specific to the individual user and relevant for all users but exclusive to your app. Providing vocabulary helps Siri match a user’s request to media items you’ve added to the Spotlight database or included in donated intents and interactions. Take care to include terms that include numbers or have other unusual spellings. There are two ways to provide vocabulary, and each one helps Siri interpret and route user requests:
 

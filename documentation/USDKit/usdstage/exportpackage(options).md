@@ -20,7 +20,7 @@ Packages the stage into a USDZ archive and returns it as in-memory data.
 func exportPackage(options: USDStage.ExportOptions = []) throws -> Data
 ```
 
-#### Discussion
+## Discussion
 
 The stage and its referenced assets are bundled into a USDZ archive in memory. Layer structure is preserved - this operation does not flatten.
 

@@ -21,7 +21,7 @@ class func setGraphicsState(_ gState: Int)
 + (void) setGraphicsState:(NSInteger) gState;
 ```
 
-#### Discussion
+## Discussion
 
 The `graphicState` identifier must be created in the calling thread.
 

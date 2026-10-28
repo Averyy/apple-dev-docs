@@ -22,7 +22,7 @@ class INCancelRideIntentResponse
 @interface INCancelRideIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INCancelRideIntentResponse`](./incancelrideintentresponse.md) object contains your app’s response to the cancellation of a ride. After creating the response object, specify any cancellation-related fees using the properties of this object. Siri and Maps display your response information to the user during the confirmation phase.
 

@@ -16,11 +16,11 @@ Returns a transform matrix for converting from world space to camera space.
 - (simd_float4x4) viewMatrixForOrientation:(UIInterfaceOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 A view matrix appropriate for the camera with the specified orientation.
 
-#### Discussion
+## Discussion
 
 This method has no effect on ARKit. Instead, this method uses the orientation parameter and the camera’s state to construct a view matrix for your own rendering code.
 

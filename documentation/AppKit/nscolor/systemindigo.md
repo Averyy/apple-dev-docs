@@ -19,7 +19,7 @@ class var systemIndigo: NSColor { get }
 @property (class, strong, readonly) NSColor * systemIndigoColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when you want a tint color that looks great on both light and dark backgrounds.
 

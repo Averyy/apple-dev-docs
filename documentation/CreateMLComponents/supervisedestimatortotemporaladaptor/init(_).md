@@ -20,7 +20,7 @@ Creates a temporal supervised estimator from a supervised estimator.
 init(_ base: Base)
 ```
 
-#### Discussion
+## Discussion
 
 The resulting estimator collects all elements of the input sequence before calling fit on the underlying estimator. The transformer returned from fit is also converted to a temporal transformer.
 

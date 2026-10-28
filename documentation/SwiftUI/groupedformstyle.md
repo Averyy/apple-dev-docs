@@ -22,7 +22,7 @@ nonisolated
 struct GroupedFormStyle
 ```
 
-#### Overview
+## Overview
 
 Rows in this form style have leading aligned labels and trailing aligned controls within visually grouped sections.
 

@@ -15,11 +15,11 @@ Packs a variable amount of parameters into a buffer according to a printf-style 
 extern long IOBluetoothPackData(void *ioBuffer, const char *inFormat, ...);
 ```
 
-#### Return Value
+## Return Value
 
 Number of bytes packed or -1 if an error occurred.
 
-#### Discussion
+## Discussion
 
 Pass the parameters to send data as the remaining arguments after the format string.
 

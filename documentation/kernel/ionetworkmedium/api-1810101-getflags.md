@@ -9,7 +9,7 @@
 virtual UInt32 getFlags() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the medium flags.
 

@@ -25,7 +25,7 @@ var seekingWaitsForVideoCompositionRendering: Bool { get set }
 @property BOOL seekingWaitsForVideoCompositionRendering;
 ```
 
-#### Discussion
+## Discussion
 
 By default, item timing is updated as quickly as possible during seeking. Specifically, the item does not wait for new frames to be rendered when seeking during normal playback. In most situations, the latency between the completion of a seek operation and the display of a video frame at the new time is negligible. However, when video compositions are in use, the processing of video may introduce noticeable latency. Setting the value of this property to [`true`](../../Swift/true.md) causes the item’s timing to be updated only after the corresponding video frame has been displayed. For example, this allows an AVSynchronizedLayer object associated with the item to remain in sync with the displayed video.
 

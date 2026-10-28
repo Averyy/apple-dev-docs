@@ -11,15 +11,15 @@ Detect surfaces in the physical environment and visualize their shape and locati
 - iPadOS 15.6+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app runs an [ARKit](./ARKit.md) world tracking session with content displayed in a SceneKit view. To demonstrate plane detection, the app visualizes both the estimated shape of and a bounding rectangle for each detected [`ARPlaneAnchor`](./arplaneanchor.md) object. On supported devices, ARKit can recognize many types of real-world surfaces, so the app also labels each detected plane with identifying text.
 
-#### Getting started
+## Getting started
 
 ARKit requires iOS 11 and a device with an A9 (or later) processor. ARKit is not available in iOS Simulator. Building the sample code requires Xcode 9 or later.
 
-#### Configure and run the AR session
+## Configure and run the AR session
 
 The [`ARSCNView`](./arscnview.md) class is a SceneKit view that includes an [`ARSession`](./arsession.md) object that manages the motion tracking and image processing required to create an augmented reality (AR) experience. However, to run a session you must provide a session configuration.
 
@@ -37,7 +37,7 @@ Run your session only when the view that will display it is onscreen.
 
 > ❗ **Important**: If your app requires ARKit for its core functionality, use the [arkit](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) key in the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md) section of your app’s `Info.plist` file to make your app available only on devices that support ARKit. If AR is a secondary feature of your app, use the [`isSupported`](./arconfiguration/issupported.md) property to determine whether to offer AR-based features.
 
-#### Place 3D content for detected planes
+## Place 3D content for detected planes
 
 After you’ve set up your AR session, you can use SceneKit to place virtual content in the view.
 

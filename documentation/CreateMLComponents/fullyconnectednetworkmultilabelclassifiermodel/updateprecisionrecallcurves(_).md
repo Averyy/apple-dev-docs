@@ -20,7 +20,7 @@ Updates the per-label precision-recall curve using the input data.
 mutating func updatePrecisionRecallCurves(_ input: some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before exporting to a Core ML Model and using Vision `VNCoreMLRequest` to make predictions.
 

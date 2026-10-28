@@ -14,7 +14,7 @@ Returns the fractional part of a floating point number.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Fractional (float)**:
 

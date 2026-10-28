@@ -23,7 +23,7 @@ static var fitted: FittedPresentationSizing { get }
 
 Available when `Self` is `FittedPresentationSizing`.
 
-#### Discussion
+## Discussion
 
 On macOS, presentations with `.fitted` sizing are user-resizable by default. Because of this, is best practice to define a presentation frame with any of the `frame` modifiers, either specifying a fixed frame or minimum/maximum bounds. If you specify a [`fixedSize()`](../view/fixedsize%28%29.md) or a frame with fixed dimensions on the content, the sheet will not be user resizable.
 

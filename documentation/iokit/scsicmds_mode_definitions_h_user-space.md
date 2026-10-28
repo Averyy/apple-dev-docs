@@ -5,9 +5,9 @@
 
 This file contains all definitions for the data returned from the MODE_SENSE_6 and MODE_SENSE_10 commands.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

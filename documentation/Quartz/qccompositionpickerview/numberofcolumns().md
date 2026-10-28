@@ -21,7 +21,7 @@ func numberOfColumns() -> Int
 - (NSUInteger) numberOfColumns;
 ```
 
-#### Return Value
+## Return Value
 
 The number of columns.
 

@@ -21,7 +21,7 @@ Reads or updates the pointee at the specified offset from this pointer.
 subscript(i: Int) -> Pointee { get nonmutating set }
 ```
 
-#### Overview
+## Overview
 
 For a pointer `p`, the memory at `p + i` must be initialized when reading the value by using the subscript. When the subscript is used as the left side of an assignment, the memory at `p + i` is updated. The memory must be initialized or the pointer’s `Pointee` type must be a trivial type.
 

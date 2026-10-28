@@ -25,7 +25,7 @@ class let thermalStateDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSProcessInfoThermalStateDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`ProcessInfo`](../processinfo.md) instance.
 

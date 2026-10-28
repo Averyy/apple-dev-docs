@@ -20,11 +20,11 @@ func AuthorizationCreate(_ rights: UnsafePointer<AuthorizationRights>?, _ enviro
 OSStatus AuthorizationCreate(const AuthorizationRights *rights, const AuthorizationEnvironment *environment, AuthorizationFlags flags, AuthorizationRef*authorization);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The primary purpose of this function is to create the opaque authorization reference structure associated with the authorization reference. You use the authorization reference in other authorization functions.
 

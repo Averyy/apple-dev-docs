@@ -16,7 +16,7 @@ An error that indicates the framework fails to parse collaboration data the app 
 static var invalidCollaborationData: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 ARKit produces this error when an app passes invalid data into the [`update(with:)`](../arsession/update%28with%29.md) function.
 

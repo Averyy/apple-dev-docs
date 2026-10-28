@@ -21,7 +21,7 @@ Values that suggest how to style a highlighted item.
 enum HighlightStyle
 ```
 
-#### Discussion
+## Discussion
 
 When visually highlighting a match in some text, `HighlightStyle` suggests how to style a highlight.
 

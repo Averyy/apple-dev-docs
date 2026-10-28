@@ -21,7 +21,7 @@ Whether the provided tag is valid.
 static Boolean CMTagIsValid(CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` when a tag contains valid data for its [`category`](./cmtag-c.struct/category.md), [`dataType`](./cmtag-c.struct/datatype.md), and [`value`](./cmtag-c.struct/value.md).
 

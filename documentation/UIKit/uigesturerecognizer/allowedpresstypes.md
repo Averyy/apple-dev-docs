@@ -23,7 +23,7 @@ var allowedPressTypes: [NSNumber] { get set }
 @property (nonatomic, copy) NSArray<NSNumber *> * allowedPressTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of `UIPressTypes` that activates the gesture recognizer to distinguish the type of button press. The default press type is [`UIPress.PressType.select`](../uipress/presstype/select.md). When this property is set to an empty array, the gesture recognizer will respond to taps like a touch pad like surface. For a list of possible press types, see [`UIPress.PressType`](../uipress/presstype.md) enumeration in the [`UIPress`](../uipress.md).
 

@@ -24,7 +24,7 @@ class MDLSubmesh
 @interface MDLSubmesh : NSObject
 ```
 
-#### Overview
+## Overview
 
 Submeshes are contained in [`MDLMesh`](./mdlmesh.md) objects, which provide vertex buffer data that a submesh’s index data refers to. Together, the vertex and index data describe the geometric form of a portion of the mesh, and the submesh’s [`material`](./mdlsubmesh/material.md) property determines its intended surface appearance for rendering.
 

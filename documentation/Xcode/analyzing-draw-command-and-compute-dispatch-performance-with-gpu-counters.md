@@ -5,13 +5,13 @@
 
 Identify issues within your frame capture by examining performance counters.
 
-#### Overview
+## Overview
 
 The Performance Statistics viewer displays counters to help you understand the automatically generated insights for hotspots and bottlenecks so you can improve GPU performance. GPU performance counters are granular statistics that relate to the specific render, compute, or blit work your app performed in the captured frame.
 
 ![A screenshot of the Performance Statistics viewer displaying GPU counters in a table.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-pv-overview@2x.png)
 
-##### Show columns for performance counters
+### Show columns for performance counters
 
 Control-click a column header to show and hide counter value columns for median, maximum, and total values. You can view the following columns:
 
@@ -21,7 +21,7 @@ Control-click a column header to show and hide counter value columns for median,
 - **Max**: The maximum counter value across all passes in the GPU trace.
 - **Total**: The total of counter values for all passes in the GPU trace.
 
-##### Check counters data for anomalies
+### Check counters data for anomalies
 
 Move the pointer over a counter to reveal its description.
 
@@ -29,7 +29,7 @@ Move the pointer over a counter to reveal its description.
 
 By analyzing values that may be hotspots, counters can suggest a specific cause of your app’s performance problem. For example, if the number of vertices is twice as high as you expect, it’s likely that your code has duplicate meshes or render encoder draw calls.
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Use the filter field at the bottom of the table to adjust filtering criteria by typing filter terms into it. The table shows individual counters and groups of counters with names that match those filter terms.
 

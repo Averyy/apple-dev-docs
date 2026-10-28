@@ -23,7 +23,7 @@ case top
 UIBarPositionTop
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this as a hint to draw directional decoration accordingly. For example, any shadow would be drawn below the bar.
 

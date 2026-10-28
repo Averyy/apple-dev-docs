@@ -18,7 +18,7 @@ static func fixedLayout(width: CGFloat, height: CGFloat, depth: CGFloat) -> Prev
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`PreviewLayout.fixed3D(width:height:depth:)`](../previewlayout/fixed3d%28width,height,depth%29.md).
 

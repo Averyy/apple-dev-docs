@@ -17,7 +17,7 @@ Build the [`LogitProcessor`](../logitprocessor.md) for a single generation.
 func logitProcessor(parameters: GenerateParameters) -> LogitProcessor?
 ```
 
-#### Discussion
+## Discussion
 
 Composes the built-in penalty processor from [`processor()`](../generateparameters/processor%28%29.md) with the custom processor produced by [`logitProcessorFactory`](./logitprocessorfactory.md) (if any). The custom processor runs *after* the penalty processor, matching Python mlx-lm where user `logits_processors` append after `make_logits_processors`.
 

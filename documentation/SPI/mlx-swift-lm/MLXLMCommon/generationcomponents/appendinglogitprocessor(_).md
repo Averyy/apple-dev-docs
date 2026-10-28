@@ -17,7 +17,7 @@ Return a copy with another custom [`LogitProcessor`](../logitprocessor.md) appen
 func appendingLogitProcessor(_ factory: @escaping @Sendable () -> any LogitProcessor) -> GenerationComponents
 ```
 
-#### Discussion
+## Discussion
 
 Processors are applied in insertion order. The returned component keeps factories—not processor instances—so every generation receives a fresh stateful chain. This is the generic composition primitive used by higher-level features such as [`applyingThinkingBudget(_:reasoning:tokenizer:diagnosticHandler:)`](./applyingthinkingbudget%28_,reasoning,tokenizer,diagnostichandler%29.md).
 

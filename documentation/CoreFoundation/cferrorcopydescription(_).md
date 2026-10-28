@@ -25,11 +25,11 @@ func CFErrorCopyDescription(_ err: CFError!) -> CFString!
 extern CFStringRefCFErrorCopyDescription(CFErrorRef err);
 ```
 
-#### Return Value
+## Return Value
 
 A localized, human-presentable description of `err`. This function never returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is a complete sentence or two which says what failed and why it failed. The structure of the description depends on the details provided in the user info dictionary. The rules for computing the return value are as follows:
 

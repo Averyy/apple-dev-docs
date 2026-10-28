@@ -5,7 +5,7 @@
 
 Specifies any input event type.
 
-#### Overview
+## Overview
 
 This constant is typically used with the function [`secondsSinceLastEventType(_:eventType:)`](./cgeventsource/secondssincelasteventtype%28_,eventtype%29.md) to specify that you want the elapsed time since the last input event of any type.
 

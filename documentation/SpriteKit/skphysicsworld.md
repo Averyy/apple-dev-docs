@@ -31,7 +31,7 @@ class SKPhysicsWorld
 - [Disconnecting Bodies from Joints](./disconnecting-bodies-from-joints.md)
 - [Getting Started with Physics](./getting-started-with-physics.md)
 
-#### Overview
+## Overview
 
 `SKPhysicsWorld` runs the physics engine of a scene and is the place that contact detection occurs. Do not create a `SKPhysicsWorld` directly; the system creates a physics world and adds it to the scene’s [`physicsWorld`](./skscene/physicsworld.md) property.
 

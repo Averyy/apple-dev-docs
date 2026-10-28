@@ -25,7 +25,7 @@ final class ImageRequestHandler
 
 - [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
-#### Overview
+## Overview
 
 Instantiate this handler to perform Vision requests on a single image. You specify the image, and then call [`perform(_:)`](./imagerequesthandler/perform%28_%29-7b6g5.md) to begin executing the request.
 

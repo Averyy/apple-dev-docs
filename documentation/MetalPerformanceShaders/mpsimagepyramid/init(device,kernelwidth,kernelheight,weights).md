@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights kernelW
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight weights:(const float *) kernelWeights;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImagePyramid`](../mpsimagepyramid.md) object or `nil`, if failure.
 

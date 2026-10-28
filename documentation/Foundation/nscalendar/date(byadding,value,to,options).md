@@ -25,7 +25,7 @@ func date(byAdding unit: NSCalendar.Unit, value: Int, to date: Date, options: NS
 - (NSDate *) dateByAddingUnit:(NSCalendarUnit) unit value:(NSInteger) value toDate:(NSDate *) date options:(NSCalendarOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object representing the absolute time calculated by adding to `date` the `value` of the given calendrical `unit` using the options specified by `options`. Returns `nil` if `date` falls outside the defined range of the receiver or if the computation cannot be performed.
 

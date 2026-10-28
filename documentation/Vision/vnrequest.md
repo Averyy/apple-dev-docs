@@ -24,7 +24,7 @@ class VNRequest
 @interface VNRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Other Vision request handlers that perform image analysis inherit from this abstract base class. Instantiate one of its subclasses to perform image analysis.
 

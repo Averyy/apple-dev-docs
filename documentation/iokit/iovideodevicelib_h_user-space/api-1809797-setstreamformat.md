@@ -12,7 +12,7 @@ IOReturn ( *SetStreamFormat)(
    IOVideoStreamDescription *streamFormat);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the call was successfully.
 

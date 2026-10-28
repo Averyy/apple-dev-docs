@@ -24,7 +24,7 @@ var buttonOptions: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * buttonOptions;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the secondary menu to configure graphics and sound, and to pause the game.
 

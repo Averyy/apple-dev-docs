@@ -24,7 +24,7 @@ class PHLivePhotoRequestOptions
 @interface PHLivePhotoRequestOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 A Live Photo is a picture that includes movement and sound from the moments just before and after its capture.
 

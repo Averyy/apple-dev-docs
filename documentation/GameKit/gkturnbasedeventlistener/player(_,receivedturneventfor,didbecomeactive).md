@@ -31,7 +31,7 @@ optional func player(_ player: GKPlayer, receivedTurnEventFor match: GKTurnBased
 - [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 GameKit invokes this method when these turn-based events occur:
 

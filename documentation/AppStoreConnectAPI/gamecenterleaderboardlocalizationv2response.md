@@ -15,7 +15,7 @@ A response that contains a single Game Center leaderboard localization v2 resour
 object GameCenterLeaderboardLocalizationV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

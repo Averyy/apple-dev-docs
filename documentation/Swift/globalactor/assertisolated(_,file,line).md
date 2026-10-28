@@ -22,7 +22,7 @@ Stops program execution if the current task is not executing on this actor’s s
 static func assertIsolated(_ message: @autoclosure () -> String = String(), file: StaticString = #fileID, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 This function’s effect varies depending on the build flag used:
 

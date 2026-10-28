@@ -16,7 +16,7 @@ Iterates through relative pointer elements and dispatches them if the element va
 virtual void handleRelativePointerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
-#### Discussion
+## Discussion
 
 This method iterates over the relative pointer elements from the report and dispatches events for any changed values. The system calls this method automatically when a new report arrives; don’t call this method yourself.
 

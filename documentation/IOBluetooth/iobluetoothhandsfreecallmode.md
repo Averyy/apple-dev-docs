@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeCallMode: String
 extern NSString * const IOBluetoothHandsFreeCallMode;
 ```
 
-#### Discussion
+## Discussion
 
 The string contains a single digit with one of the following values:
 

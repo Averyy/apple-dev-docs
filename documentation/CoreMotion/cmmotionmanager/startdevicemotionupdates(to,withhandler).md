@@ -23,7 +23,7 @@ func startDeviceMotionUpdates(to queue: OperationQueue, withHandler handler: @es
 - (void) startDeviceMotionUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMDeviceMotionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method reports motion relative to the reference frame in the [`attitudeReferenceFrame`](./attitudereferenceframe.md) property. You must call [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) when you no longer want your app to process device-motion updates.
 

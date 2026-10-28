@@ -15,7 +15,7 @@ An error an array validator emits when an array’s elements fail validation.
 interface ArrayError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`. The indices of the elements that failed validation are in the `indices` member. The `errors` array has the errors that correspond to the elements identified by the `indices` member.
 

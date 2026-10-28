@@ -25,7 +25,7 @@ var mutableBytes: UnsafeMutableRawPointer { get }
 @property (readonly) void * mutableBytes;
 ```
 
-#### Discussion
+## Discussion
 
 If the length of the receiver’s data is not zero, this property is guaranteed to contain a pointer to the object’s internal bytes. If the length of receiver’s data *is* zero, this property may or may not contain `NULL` dependent upon many factors related to how the object was created (moreover, in this case the method result might change between different releases). The returned pointer is valid until the data object is deallocated.
 

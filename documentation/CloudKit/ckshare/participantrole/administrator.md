@@ -25,7 +25,7 @@ case administrator
 CKShareParticipantRoleAdministrator
 ```
 
-#### Discussion
+## Discussion
 
 An administrator of a share can add and remove participants and change their permissions.
 

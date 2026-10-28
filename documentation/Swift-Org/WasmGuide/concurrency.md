@@ -10,11 +10,11 @@ framework: "Swift-Org/WasmGuide"
 
 On macOS, iOS, and Linux, the `libdispatch`-based executor is used by default, but `libdispatch` is not supported in a single-threaded WebAssembly environment. However, there are still two global task executors available in Swift for Wasm.
 
-#### Overview
+## Overview
 
 If you need multi-threading support, please see [Multithreading guide](./multithreading.md) for more details.
 
-#### Cooperative Task Executor
+## Cooperative Task Executor
 
 `Cooperative Task Executor` is the default task executor when targeting Wasm. It is a simple single-threaded cooperative task executor implemented in [Swift Concurrency library](https://github.com/swiftlang/swift/blob/0c67ce64874d83b2d4f8d73b899ee58f2a75527f/stdlib/public/Concurrency/CooperativeGlobalExecutor.inc). If you are not familiar with the term “Cooperative” in the context of concurrent programming, see [its definition for more details](https://en.wikipedia.org/wiki/Cooperative_multitasking).
 
@@ -35,7 +35,7 @@ struct Main {
 }
 ```
 
-#### JavaScript Event Loop-based Task Executor
+## JavaScript Event Loop-based Task Executor
 
 `JavaScript Event Loop-based Task Executor` is a task executor that cooperates with JavaScript’s event loop. It is provided by [JavaScriptKit](https://github.com/swiftwasm/JavaScriptKit), and you need to activate it explicitly by calling a predefined `JavaScriptEventLoop.installGlobalExecutor()` function (see below for more details).
 

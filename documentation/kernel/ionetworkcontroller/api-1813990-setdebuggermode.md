@@ -12,11 +12,11 @@ virtual bool setDebuggerMode(
  boolactive);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success and false otherwise.
 
-#### Overview
+## Overview
 
 This method should be implemented by a driver that wishes to be notified when entering or leaving KDP. After a debugger client has been attached through attachDebuggerClient(), this method will be called by the debugger to inform the driver that the kernel debugger is going active or inactive. This method may be called from the primary interrupt context. As a result, the implementation must avoid any memory allocation, not use spinlocks, and never block.
 

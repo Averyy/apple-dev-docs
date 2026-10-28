@@ -24,7 +24,7 @@ func assertFact(_ fact: any NSObjectProtocol)
 - (void) assertFact:(id<NSObject>) fact;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`assertFact(_:grade:)`](./assertfact%28_,grade%29.md) method with a `grade` value of 1.0. Asserting a fact adds it to the [`facts`](./facts.md) array if it is not already present.
 

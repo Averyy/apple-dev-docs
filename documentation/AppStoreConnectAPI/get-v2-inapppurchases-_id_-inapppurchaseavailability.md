@@ -13,9 +13,9 @@ Get information about the territory availablity for an In-App Purchase.
 
 - [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

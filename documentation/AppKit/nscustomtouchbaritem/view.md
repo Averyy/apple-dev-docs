@@ -19,7 +19,7 @@ var view: NSView { get set }
 @property (strong, readwrite) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property returns the value of [`view`](../nsviewcontroller/view.md) property from the view controller assigned to the [`viewController`](./viewcontroller.md) property.
 

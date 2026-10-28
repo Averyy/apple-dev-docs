@@ -20,7 +20,7 @@ The name of the column you selected at initialization to define which feature th
 var targetColumn: String
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property doesn’t retrain the model or affect its behavior.
 

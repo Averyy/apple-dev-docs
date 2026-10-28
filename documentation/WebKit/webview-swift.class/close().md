@@ -21,7 +21,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 Closes the web view by unloading its webpage and canceling any pending load requests. A closed web view no longer responds to new requests nor sends delegate messages. It is invoked automatically if the receiver’s enclosing window or host window is closed and sending [`shouldCloseWithWindow`](./shouldclosewithwindow.md) to the receiver returns [`true`](../../Swift/true.md). Use this method to stop the receiver from loading and sending delegate messages.
 

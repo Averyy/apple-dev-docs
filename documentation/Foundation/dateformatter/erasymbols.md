@@ -25,7 +25,7 @@ var eraSymbols: [String]! { get set }
 @property (copy, null_resettable) NSArray<NSString *> * eraSymbols;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing `NSString` objects representing the era symbols for the receiver (for example, {“B.C.E.”, “C.E.”}).
 

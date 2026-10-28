@@ -25,7 +25,7 @@ var sortDescriptors: [NSSortDescriptor]? { get set }
 @property (nonatomic, strong, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 The sort descriptors specify how the objects returned when the [`NSFetchRequest`](../nsfetchrequest.md) is issued should be ordered—for example, by last name and then by first name. The sort descriptors are applied in the order in which they appear in the `sortDescriptors` array (serially in lowest-array-index-first order).
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app may, with user permission, provid
 - **Name**: `com.apple.developer.authentication-services.autofill-credential-provider` (AutoFill Credential Provider)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to a target, enable the AutoFill Credential Provider capability in Xcode. Do this for both your Password AutoFill extension and its host app.
 

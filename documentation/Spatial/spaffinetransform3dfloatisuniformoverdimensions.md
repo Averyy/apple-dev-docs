@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DFloatIsUniformOverDimensions(SPAffineTransform3DFloat transform, SPAxis dimensionFlags);
 ```
 
-#### Return Value
+## Return Value
 
 @P true if the transform is rectilinear and the specified axes have equal scales.
 
-#### Discussion
+## Discussion
 
 Returns `true` if the transform scales equally over the specified dimensions.
 

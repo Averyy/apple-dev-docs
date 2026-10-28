@@ -13,7 +13,7 @@
 IFNET_WAKE_ON_MAGIC_PACKET = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Wake on Magic Packet.
 

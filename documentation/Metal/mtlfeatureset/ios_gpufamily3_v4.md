@@ -22,7 +22,7 @@ case iOS_GPUFamily3_v4
 MTLFeatureSet_iOS_GPUFamily3_v4
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A9 devices running iOS 12.
 

@@ -21,7 +21,7 @@ The file system’s internal inode identifier for the item.
 var fileIdentifier: UInt64? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value isn’t stable for all file systems or across all mounts. Use this value sparingly and don’t persist it. You can use it, for example, to match URLs from the URL enumerator with paths from `FSEvents`.
 

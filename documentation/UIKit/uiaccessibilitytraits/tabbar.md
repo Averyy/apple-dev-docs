@@ -25,7 +25,7 @@ static let tabBar: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitTabBar;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that represents an ordered list of tabs.
 

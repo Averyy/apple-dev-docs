@@ -19,7 +19,7 @@ var draggedColumn: Int { get }
 @property (readonly) NSInteger draggedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 If the user is dragging a column, this property contains the index of that column; otherwise, it contains `-1`.
 

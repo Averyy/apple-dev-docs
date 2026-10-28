@@ -19,7 +19,7 @@ func removeFile()
 - (void) removeFile;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to removing the file, this method removes the color list from the contents of the [`availableColorLists`](./availablecolorlists.md) property. If there are no outstanding references to the color list, this method might also deallocate the object.
 

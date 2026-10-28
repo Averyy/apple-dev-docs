@@ -30,7 +30,7 @@ nonisolated
 init(items: Data, subject: Text? = nil, message: Text? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want the system-standard appearance for `ShareLink`.
 

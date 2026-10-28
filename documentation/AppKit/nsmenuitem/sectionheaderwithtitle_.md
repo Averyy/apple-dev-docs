@@ -15,11 +15,11 @@ Returns a menu item representing a section header for a logical grouping of menu
 + (instancetype) sectionHeaderWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A menu item representing a section header for a logical grouping of menu commands.
 
-#### Discussion
+## Discussion
 
 Use section headers to provide context to a group of menu items. Items created using this method are non-interactive and don’t perform actions.
 

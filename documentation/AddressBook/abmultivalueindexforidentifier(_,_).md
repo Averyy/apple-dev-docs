@@ -19,7 +19,7 @@ func ABMultiValueIndexForIdentifier(_ multiValue: ABMultiValueRef!, _ identifier
 extern CFIndex ABMultiValueIndexForIdentifier(ABMultiValueRef multiValue, CFStringRef identifier);
 ```
 
-#### Return Value
+## Return Value
 
 The index of `identifier`.
 

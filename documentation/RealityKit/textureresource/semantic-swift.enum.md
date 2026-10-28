@@ -20,7 +20,7 @@ An object for specifying the intended use of a texture.
 enum Semantic
 ```
 
-#### Overview
+## Overview
 
 RealityKit uses image textures to transmit different types of data Metal shaders. For example, it uses textures to send RGB images with the base color of the entity, to send grayscale images holding roughness and metallic information, and to send surface normals for doing lighting calculations.
 

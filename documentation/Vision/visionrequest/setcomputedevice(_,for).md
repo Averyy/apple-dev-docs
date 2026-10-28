@@ -22,7 +22,7 @@ Assigns a compute device for a compute stage.
 mutating func setComputeDevice(_ computeDevice: MLComputeDevice?, for computeStage: ComputeStage)
 ```
 
-#### Discussion
+## Discussion
 
 If the parameter `computeDevice` is `nil`, the framework removes any explicit compute device assignment and allows the framework to select the device.
 

@@ -20,11 +20,11 @@ Retrieves the best-quality audio format that the specified modules can work with
 static func bestAvailableAudioFormat(compatibleWith modules: [any SpeechModule], considering naturalFormat: AVAudioFormat?) async -> AVAudioFormat?
 ```
 
-#### Return Value
+## Return Value
 
 `nil` if the specified modules require you to install additional assets.
 
-#### Discussion
+## Discussion
 
 Use this method to set up an audio pipeline or pre-convert audio to a usable format. In order to keep `CMTime` values sample-accurate, the analyzer does not transparently upsample, downsample, or convert audio input.
 

@@ -25,7 +25,7 @@ static var criticalAlert: UNAuthorizationOptions { get }
 UNAuthorizationOptionCriticalAlert
 ```
 
-#### Discussion
+## Discussion
 
 Critical alerts ignore the mute switch and Do Not Disturb; the system plays a critical alert’s sound regardless of the device’s mute or Do Not Disturb settings. You can specify a custom sound and volume.
 

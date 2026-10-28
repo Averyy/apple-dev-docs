@@ -13,11 +13,11 @@
 int sock_isnonblocking(socket_t so);
 ```
 
-#### Return Value
+## Return Value
 
 0 - socket will block. 1 - socket will not block.
 
-#### Discussion
+## Discussion
 
 Returns whether or not the socket is non-blocking. In the context of this KPI, non-blocking means that functions to perform operations on a socket will not wait for completion.
 

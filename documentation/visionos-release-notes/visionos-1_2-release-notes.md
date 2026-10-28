@@ -5,33 +5,33 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 1.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.2. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [Xcode 15.4 Release Notes](../Xcode-Release-Notes/xcode-15_4-release-notes.md).
 
-##### FaceTime
+### FaceTime
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Recent calls from an iPhone, iPad, or Apple Watch will not sync to Vision Pro and vice versa.  (125375528)
 
-##### Keyboards
+### Keyboards
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Trying to access the emoji keyplane from the mini keyboard redirects the user to a letter keyplane with extra platter space.  (125951731)
 
-##### Notifications
+### Notifications
 
-###### Known Issues
+#### Known Issues
 
 - Developers might see session interruption notifications that are not relevant to their app.  (125360716)
 
   **Workaround:** Developers should filter notifications against their audio session of choice like so: `NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { ... }`
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When testing a compatible iOS or iPadOS app on visionOS, the UI presented from the App Store review request APIs will now render correctly.  (125912511)
 

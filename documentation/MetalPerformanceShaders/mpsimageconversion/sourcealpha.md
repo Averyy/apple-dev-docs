@@ -24,7 +24,7 @@ var sourceAlpha: MPSAlphaType { get }
 @property (nonatomic, readonly) MPSAlphaType sourceAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 Most color space conversion operations can not work directly on premultiplied data. Use this property to tag premultiplied data so that the source texture can be un-premultiplied prior to the application of these transforms. The default value is [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md).
 

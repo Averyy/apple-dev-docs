@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didChangeStatusBarFrame 
 - (void) application:(UIApplication *) application didChangeStatusBarFrame:(CGRect) oldStatusBarFrame;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, the app also posts a [`didChangeStatusBarFrameNotification`](../uiapplication/didchangestatusbarframenotification.md) notification to give interested objects a chance to respond to the change.
 

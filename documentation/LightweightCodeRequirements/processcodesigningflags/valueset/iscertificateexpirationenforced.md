@@ -21,7 +21,7 @@ Flag indicating that the signature on this code should be treated as invalid if 
 static let isCertificateExpirationEnforced: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 By default code signatures are valid if the certificate they were signed with was valid at the time of signing. This flag invalidates signatures from certificates that are expired at the time of use. This is equivalent to `CS_CHECK_EXPIRATION` in C APIs.
 

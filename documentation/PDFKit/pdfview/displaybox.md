@@ -24,7 +24,7 @@ var displayBox: PDFDisplayBox { get set }
 @property (nonatomic) PDFDisplayBox displayBox;
 ```
 
-#### Discussion
+## Discussion
 
 The available values for display boxes are defined in the Constants section in the [`PDFPage`](../pdfpage.md) class.
 

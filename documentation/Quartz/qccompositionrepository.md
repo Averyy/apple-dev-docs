@@ -21,7 +21,7 @@ class QCCompositionRepository
 @interface QCCompositionRepository : NSObject
 ```
 
-#### Overview
+## Overview
 
 Compositions in the repository are represented by the [`QCComposition`](./qccomposition.md) class. You can use the methods of the `QCCompositionRepository` class to fetch all compositions or only those that meet specific criteria.
 

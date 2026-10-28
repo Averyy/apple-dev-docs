@@ -22,7 +22,7 @@ nonisolated
 func accessibilityHeading(_ level: AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to set the level of this heading in relation to other headings. The system speaks the level number of levels [`AccessibilityHeadingLevel.h1`](../accessibilityheadinglevel/h1.md) through [`AccessibilityHeadingLevel.h6`](../accessibilityheadinglevel/h6.md) alongside the text.
 

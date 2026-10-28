@@ -23,7 +23,7 @@ func cancelWithError(_ error: any Error)
 
 - [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method from your browser app when the authentication attempt fails to complete, for example because the user cancels it.
 

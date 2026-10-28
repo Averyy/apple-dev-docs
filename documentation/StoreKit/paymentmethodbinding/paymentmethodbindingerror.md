@@ -18,7 +18,7 @@ Error information for payment method binding.
 enum PaymentMethodBindingError
 ```
 
-#### Overview
+## Overview
 
 The methods of [`PaymentMethodBinding`](../paymentmethodbinding.md) may return these errors, as well as the [`StoreKitError.userCancelled`](../storekiterror/usercancelled.md) error.
 

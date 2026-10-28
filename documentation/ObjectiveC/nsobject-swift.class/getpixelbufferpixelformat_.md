@@ -13,7 +13,7 @@
 - (void) getPixelBufferPixelFormat:(OSType *) pixelFormatOut;
 ```
 
-#### Discussion
+## Discussion
 
 This method is optional. Called once after setVideoDataSource:, if implemented.
 

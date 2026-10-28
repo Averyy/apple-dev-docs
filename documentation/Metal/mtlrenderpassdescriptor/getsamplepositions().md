@@ -20,7 +20,7 @@ Returns the programmable sample positions set for a render pass.
 func getSamplePositions() -> [MTLSamplePosition]
 ```
 
-#### Return Value
+## Return Value
 
 An array of programmable sample positions.
 

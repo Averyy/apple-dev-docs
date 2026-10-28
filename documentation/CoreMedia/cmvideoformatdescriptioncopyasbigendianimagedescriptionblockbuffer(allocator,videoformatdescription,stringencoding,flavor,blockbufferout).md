@@ -25,7 +25,7 @@ func CMVideoFormatDescriptionCopyAsBigEndianImageDescriptionBlockBuffer(allocato
 extern OSStatus CMVideoFormatDescriptionCopyAsBigEndianImageDescriptionBlockBuffer(CFAllocatorRef allocator, CMVideoFormatDescriptionRef videoFormatDescription, CFStringEncoding stringEncoding, CMImageDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 

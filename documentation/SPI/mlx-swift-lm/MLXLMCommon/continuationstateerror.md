@@ -17,7 +17,7 @@ Errors thrown when a warm KV cache is continued without the model state it requi
 enum ContinuationStateError
 ```
 
-#### Overview
+## Overview
 
 Models that place tokens with M-RoPE (the Qwen vision families, GLM-OCR) keep a continuation anchor in [`LMOutput.State`](./lmoutput/state-swift.struct.md) alongside the KV cache. Continuing a warm cache without that anchor positions new tokens as if the cached prefix contained no images, silently changing the output rather than failing.
 

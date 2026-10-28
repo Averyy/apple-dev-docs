@@ -22,11 +22,11 @@ Asks the delegate to provide the next set of record changes to send to the serve
 func nextRecordZoneChangeBatch(_ context: CKSyncEngine.SendChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.RecordZoneChangeBatch?
 ```
 
-#### Return Value
+## Return Value
 
 If there are pending record changes, a batch of those changes for the sync engine to process; otherwise, `nil` to indicate there are no changes to send.
 
-#### Discussion
+## Discussion
 
 In your implementation, ask the sync engine’s state for any pending record zone changes and then return a change batch containing a [`CKRecord`](../ckrecord.md) instance for each record identifier the state provides, as the following example shows:
 

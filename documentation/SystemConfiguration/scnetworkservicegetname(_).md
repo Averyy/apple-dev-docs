@@ -19,7 +19,7 @@ func SCNetworkServiceGetName(_ service: SCNetworkService) -> CFString?
 CFStringRefSCNetworkServiceGetName(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 The user-specified name associated with the service.
 

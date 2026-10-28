@@ -25,11 +25,11 @@ func contains(_ point: MKMapPoint) -> Bool
 extern BOOL MKMapRectContainsPoint(MKMapRect rect, MKMapPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the rectangle isn’t `null` or empty and the point is inside the rectangle; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For this method, a point is inside the rectangle if its coordinates lie inside the rectangle or on the minimum X or minimum Y edge.
 

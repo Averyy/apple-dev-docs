@@ -20,7 +20,7 @@ func ColorSyncProfileCreateDisplayTransferTablesFromVCGT(_ profile: ColorSyncPro
 extern CFDataRefColorSyncProfileCreateDisplayTransferTablesFromVCGT(ColorSyncProfileRef profile, size_t *nSamplesPerChannel);
 ```
 
-#### Discussion
+## Discussion
 
 Creates three tables of floats (a red table, a green table, and a blue table), each of size `nSamplesPerChannel`, packed into contiguous memory contained in the returned `CFDataRef`, from the `vcgt` tag of the profile (if a `vcgt` tag exists in the profile). `CGSetDisplayTransferByTable` uses these tables.
 

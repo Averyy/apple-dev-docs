@@ -10,7 +10,7 @@ Enhance your visionOS app by adding an immersive space using RealityKit.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) in visionOS, showcasing a collection of rocks orbiting around a person, like the scene in the following video:
 
@@ -18,7 +18,7 @@ This sample code project demonstrates how to create an [`ImmersiveSpace`](../Swi
 
 The `TurnTableSystem` runs the core functionality to manage the rotational dynamics of entities through the `TurnTableComponent`, which defines the speed and rotation axis. The `Entity` class extends with a method to populate the immersive space with 3D rock entities and then apply a random transformation to create a halo effect. The `ImmersiveView` integrates these features and showcases the potential of SwiftUI and RealityKit to build an exciting augmented reality experience.
 
-##### Create the turntable system
+### Create the turntable system
 
 The sample creates a custom system and corresponding component to apply a series of random rotations to the content in the immersive environment, resulting in a collection of objects that orbit around a person.
 
@@ -79,7 +79,7 @@ struct TurnTableSystem: System {
 }
 ```
 
-##### Extend the entity class
+### Extend the entity class
 
 The sample extends the [`Entity`](../RealityKit/entity.md) class to load a file as a model component and apply the model for the halo effect.
 
@@ -157,7 +157,7 @@ extension Entity {
 
 The method constructs and returns a single entity that contains multiple subentities, each with a model that applies unique rotations and speed through the `TurnTableComponent`.
 
-##### Create the immersive view
+### Create the immersive view
 
 The sample defines a custom view for an immersive space that creates a single entity and applies the `addHalo()` method.
 
@@ -200,7 +200,7 @@ struct ImmersiveView: View {
 
 The `rootEntity` includes a `TurnTableComponent` to enable an orbit effect similar to the collective rotation of all the rock entities.
 
-##### Run the immersive scene
+### Run the immersive scene
 
 The `Immersion` app structure includes an `ImmersiveSpace` entry to the scene to include in the app’s environment.
 
@@ -245,9 +245,9 @@ struct MainView: View {
 
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
@@ -258,7 +258,7 @@ struct MainView: View {
 - [Creating an interactive 3D model in visionOS](./creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 
-###### Related articles
+#### Related articles
 
 - [Understanding the modular architecture of RealityKit](./understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

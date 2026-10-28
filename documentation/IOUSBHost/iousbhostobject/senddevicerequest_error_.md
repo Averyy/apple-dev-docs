@@ -16,11 +16,11 @@ Sends a request on the default control endpoint without a data phase and default
 - (BOOL) sendDeviceRequest:(IOUSBDeviceRequest) request error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method sends a synchronous request on the default control endpoint, and doesn’t return until the request completes or times out.
 

@@ -25,7 +25,7 @@ class AVMetadataItemFilter
 @interface AVMetadataItemFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Filter instances are opaque, unmodifiable objects, that you create with the [`forSharing()`](./avmetadataitemfilter/forsharing%28%29.md) class method.
 

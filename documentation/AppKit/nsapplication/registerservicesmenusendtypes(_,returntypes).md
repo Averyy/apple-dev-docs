@@ -19,7 +19,7 @@ func registerServicesMenuSendTypes(_ sendTypes: [NSPasteboard.PasteboardType], r
 - (void) registerServicesMenuSendTypes:(NSArray<NSString *> *) sendTypes returnTypes:(NSArray<NSString *> *) returnTypes;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has a Services menu, a menu item is added for each service provider that can accept one of the specified `sendTypes` or return one of the specified `returnTypes`. You should typically invoke this method at app startup time or when an object that can use services is created. You can invoke it more than once—its purpose is to ensure there is a menu item for every service the app can use. The event-handling mechanism will dynamically enable the individual items to indicate which services are currently appropriate. All the `NSResponder` objects in your app (typically `NSView` objects) should register every possible type they can send and receive by sending this message to `NSApp`.
 

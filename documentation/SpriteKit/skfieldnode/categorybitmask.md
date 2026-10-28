@@ -25,7 +25,7 @@ var categoryBitMask: UInt32 { get set }
 @property (nonatomic) uint32_t categoryBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 Every field in a scene can be assigned to up to 32 different categories, each corresponding to a bit in the bit mask. The mask values are not predetermined by Sprite Kit. You define the mask values that are used in your game. The field node’s [`categoryBitMask`](./categorybitmask.md) property is compared to a physics body’s [`fieldBitMask`](../skphysicsbody/fieldbitmask.md) property using a logical AND operation. If the result is nonzero, the field is applied to the physics body.
 

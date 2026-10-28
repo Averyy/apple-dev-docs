@@ -25,7 +25,7 @@ case type1
 kCGFontPostScriptFormatType1
 ```
 
-#### Discussion
+## Discussion
 
 This is documented in *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

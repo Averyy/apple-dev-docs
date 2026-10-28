@@ -23,7 +23,7 @@ var cgContext: CGContext { get }
 @property (nonatomic, readonly) CGContextRef CGContext;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to gain access to the underlying Core Graphics context when you need more drawing functionality than is offered by UIKit and `UIGraphicsRendererContext`.
 

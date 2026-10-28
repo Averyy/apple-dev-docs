@@ -25,7 +25,7 @@ class DDMatchMoneyAmount
 @interface DDMatchMoneyAmount : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns a match for an amount of money in a `DDMatchMoneyAmount` object, which contains an amount of money and an ISO currency code.
 

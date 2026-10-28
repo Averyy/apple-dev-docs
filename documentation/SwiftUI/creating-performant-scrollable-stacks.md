@@ -5,11 +5,11 @@
 
 Display large numbers of repeated views efficiently with scroll views, stack views, and lazy stacks.
 
-#### Overview
+## Overview
 
 Your apps often need to display more data within a container view than there is space for on a device’s screen. Horizontal and vertical stacks are a good solution for repeating views or groups of views, but they don’t have a built-in mechanism for scrolling. You can add scrolling by wrapping stacks inside a [`ScrollView`](./scrollview.md), and switch to lazy stacks as performance issues arise.
 
-##### Display groups of views in a scrollable container
+### Display groups of views in a scrollable container
 
 Implementing repeating views or groups of views can be as simple as wrapping them in an [`HStack`](./hstack.md) or [`VStack`](./vstack.md) inside a [`ScrollView`](./scrollview.md).
 
@@ -32,7 +32,7 @@ If the `ProfileView` in the example code above has an intrinsic content size of 
 
 For an introduction to using stacks to group views together, see [Building layouts with stack views](./building-layouts-with-stack-views.md).
 
-##### Repeat views for your data
+### Repeat views for your data
 
 Use [`ForEach`](./foreach.md) to repeat views for the data in your app. From a list of profile data in a `profiles` array, use [`ForEach`](./foreach.md) to create one `ProfileView` per element in the array inside an [`HStack`](./hstack.md).
 
@@ -49,7 +49,7 @@ ScrollView(.horizontal) {
 
 > **Note**: When you use [`ForEach`](./foreach.md), each element you iterate over must be uniquely identifiable. Either conform elements to the [`Identifiable`](../Swift/identifiable.md) protocol, or pass a key path to a unique identifier as the `id` parameter of [`init(_:id:content:)`](./foreach/init%28_,id,content%29.md).
 
-##### Consider lazy stacks for large numbers of views
+### Consider lazy stacks for large numbers of views
 
 The three standard stack views, [`HStack`](./hstack.md), [`VStack`](./vstack.md), and [`ZStack`](./zstack.md), all load their contained view hierarchy when they display, and loading large numbers of views all at once can result in slow runtime performance.
 
@@ -63,7 +63,7 @@ Stack views and lazy stacks have similar functionality, and they may feel interc
 
 When choosing the type of stack view to use, always start with a standard stack view and only switch to a lazy stack if profiling your code shows a worthwhile performance improvement.
 
-##### Profile to find performance problems
+### Profile to find performance problems
 
 When considering which type of stack to use, use the Instruments tool to profile your application to identify the areas of your user interface code where large numbers of views are loading inside a stack.
 

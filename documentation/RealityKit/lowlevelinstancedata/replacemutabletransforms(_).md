@@ -20,7 +20,7 @@ Replaces the per instance transform data synchronously on the CPU.
 final func replaceMutableTransforms(_ callback: (UnsafeMutableBufferPointer<float4x4>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The transform buffer’s contents are unspecified, and it is the caller’s responsibility to populate the buffer with valid data. The transform buffer provided is only valid for the lifetime of the callback.
 

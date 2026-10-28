@@ -25,7 +25,7 @@ var timeout: TimeInterval { get set }
 @property NSTimeInterval timeout;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for setting the [`NSPersistentStoreTimeoutOption`](../nspersistentstoretimeoutoption.md) on the associated store.
 

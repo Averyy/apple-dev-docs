@@ -20,7 +20,7 @@ The prompt contains content that the model cannot process.
 case unsupportedTranscriptContent(LanguageModelError.UnsupportedTranscriptContent)
 ```
 
-#### Discussion
+## Discussion
 
 This failure occurs when you include unsupported file types, corrupted data, or custom content formats that the model doesn’t recognize.
 

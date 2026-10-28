@@ -19,11 +19,11 @@ class func preferringMulticolor() -> Self
 + (instancetype) configurationPreferringMulticolor;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object that prefers its multicolor variant.
 
-#### Discussion
+## Discussion
 
 You can combine this configuration with one of the palette-based configurations. In that case, the symbol uses the multicolor variant if one exists; otherwise the symbol uses the palette version.
 

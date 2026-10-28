@@ -22,7 +22,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 When the cancel animation finishes, this method calls [`didSelectCancel()`](./didselectcancel%28%29.md). A subclass shouldn’t need to override `cancel`. In rare cases a subclass may call `cancel`, such as in response to a catastrophic failure during user interaction with the compose view.
 

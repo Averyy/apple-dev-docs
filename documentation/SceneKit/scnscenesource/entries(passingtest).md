@@ -25,11 +25,11 @@ func entries(passingTest predicate: (Any, String, UnsafeMutablePointer<ObjCBool>
 - (NSArray<id> *) entriesPassingTest:(BOOL (^)(id entry, NSString *identifier, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An array of SceneKit objects from the scene source that pass the test.
 
-#### Discussion
+## Discussion
 
 SceneKit recognizes objects of the following classes in scene files:
 

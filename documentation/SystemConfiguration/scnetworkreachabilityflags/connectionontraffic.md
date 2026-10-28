@@ -24,7 +24,7 @@ static var connectionOnTraffic: SCNetworkReachabilityFlags { get }
 kSCNetworkReachabilityFlagsConnectionOnTraffic
 ```
 
-#### Discussion
+## Discussion
 
 This flag was previously named `kSCNetworkReachabilityFlagsConnectionAutomatic`.
 

@@ -19,7 +19,7 @@ var allowsEditingTextAttributes: Bool { get set }
 @property BOOL allowsEditingTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user can modify the font and other textual attributes of the cell. When the value is [`false`](../../Swift/false.md), the user cannot edit the text or import graphics, which effectively means the cell cannot support RTFD text.
 

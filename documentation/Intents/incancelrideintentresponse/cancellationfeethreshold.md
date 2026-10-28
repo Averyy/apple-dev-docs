@@ -30,7 +30,7 @@ var cancellationFeeThreshold: DateComponents? { get set }
 @property (atomic, copy, readwrite, nullable) NSDateComponents * cancellationFeeThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the time after which cancellation fees apply. If cancellation fees apply immediately after booking, set this property to `nil`. The default value of this property is `nil`.
 

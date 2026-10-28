@@ -21,17 +21,17 @@ func CGRegisterScreenRefreshCallback(_ callback: CGScreenRefreshCallback, _ user
 extern CGError CGRegisterScreenRefreshCallback(CGScreenRefreshCallback callback, void *userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 A callback function may be registered multiple times with different user-defined data pointers, resulting in multiple registration entries.  For each registration, when notification is no longer needed, you should call the function [`CGUnregisterScreenRefreshCallback(_:_:)`](./cgunregisterscreenrefreshcallback%28_,_%29.md) to remove the registration.
 
 The callback function you register is invoked only if your application has an active event loop. The callback is invoked in the same thread of execution that is processing events within your application.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.4 and earlier, the result code returned by this function is a random value and should be ignored. In macOS 10.5 and later, the result code is valid.
 

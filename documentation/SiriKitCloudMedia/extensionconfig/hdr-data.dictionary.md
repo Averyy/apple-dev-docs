@@ -15,7 +15,7 @@ Headers to include with all requests to the media service.
 object ExtensionConfig.Hdr
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary of header names and values.
 

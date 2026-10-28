@@ -15,7 +15,7 @@ The response body for endpoints that read a single alternative distribution pack
 object AlternativeDistributionPackageVersionResponse
 ```
 
-#### Discussion
+## Discussion
 
 This object is the response that contains a single alternative distribution package version. For more information, see [`Read Information for an Alternative Distribution Package Version`](./get-v1-alternativedistributionpackageversions-_id_.md). The schema of the response body is below.
 

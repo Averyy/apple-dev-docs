@@ -24,7 +24,7 @@ case inProgress
 INSetRadioStationIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the radio station information and initiated the changes, but that you haven’t yet received confirmation of the completed changes.
 

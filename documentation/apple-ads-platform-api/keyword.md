@@ -15,7 +15,7 @@ The targeting unit that connects a user’s search query to the ad group’s ads
 object Keyword
 ```
 
-#### Discussion
+## Discussion
 
 A `Keyword` is the targeting unit that connects a user’s App Store search query to an ad group’s ads. Each keyword belongs to a single ad group and inherits the ad group’s default bid unless you set a bid in the keyword’s `bid` field. The `text` and `matchType` fields are immutable after creation. To change them, delete the keyword and create a new one.
 
@@ -28,7 +28,7 @@ Pausing a keyword via `status` halts delivery without deleting the object, prese
 
 You can use fields marked **Filterable** in the dictionary keys as filter criteria in query endpoint requests. See [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md) for details on constructing queries.
 
-##### Example
+### Example
 
 ```json
 {

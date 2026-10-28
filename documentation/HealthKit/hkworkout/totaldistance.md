@@ -30,7 +30,7 @@ var totalDistance: HKQuantity? { get }
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Discussion
+## Discussion
 
 This property contains a quantity using length units, or `nil`.
 

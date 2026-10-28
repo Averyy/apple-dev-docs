@@ -16,11 +16,11 @@ Get maximum transfer speed to device to which this interface is attached.
 IOReturn (*GetSpeedToNode)(IOFireWireLibDeviceRef self, UInt32 checkGeneration, IOFWSpeed *outSpeed);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid speed has been returned in 'outSpeed'. Returns kIOFireWireBusReset if 'checkGeneration' does not match the current bus generation number.
 
-#### Discussion
+## Discussion
 
 Availability: IOFireWireDeviceInterface_v4 and newer
 

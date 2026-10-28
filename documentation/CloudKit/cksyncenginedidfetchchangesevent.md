@@ -21,7 +21,7 @@ The sync engine finished fetching changes from the server.
 @interface CKSyncEngineDidFetchChangesEvent : CKSyncEngineEvent
 ```
 
-#### Overview
+## Overview
 
 You should receive one `CKSyncEngineDidFetchChangesEvent` for each [`CKSyncEngineWillFetchChangesEvent`](./cksyncenginewillfetchchangesevent.md).
 

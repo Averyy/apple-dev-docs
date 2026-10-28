@@ -16,11 +16,11 @@ nonisolated
 func windowResizeAnchor(_ anchor: UnitPoint?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view whose scene resizes on `anchor`.
 
-#### Discussion
+## Discussion
 
 In SwiftUI life cycle apps, this modifier can be used to control how a window anchors when animating: drive window animations by changing the size of a view in a way that causes the window size to change. Note that if the window size is decreasing and an animation is desired, it is often necessary to (temporarily, if desired) set the [`windowResizability(_:)`](../scene/windowresizability%28_%29.md) to [`contentSize`](../windowresizability/contentsize.md).
 

@@ -19,11 +19,11 @@ var doubleValueForSelectedSegment: Double { get }
 @property (readonly) double doubleValueForSelectedSegment;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the selected segment interpreted as a double-precision floating-point number.
 
-#### Discussion
+## Discussion
 
 This method is intended for use with controls whose tracking mode is set to [`NSSegmentedControl.SwitchTracking.momentaryAccelerator`](./switchtracking/momentaryaccelerator.md). An assertion will occur if this method is called for other types of segmented controls.
 

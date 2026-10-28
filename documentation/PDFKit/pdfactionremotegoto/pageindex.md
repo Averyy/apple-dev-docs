@@ -24,7 +24,7 @@ var pageIndex: Int { get set }
 @property (nonatomic) NSUInteger pageIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The page index referenced by the remote go-to action.
 

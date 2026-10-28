@@ -19,7 +19,7 @@ convenience init(labelWithString stringValue: String)
 + (instancetype) labelWithString:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 A text field that displays the specified string as a static label.
 

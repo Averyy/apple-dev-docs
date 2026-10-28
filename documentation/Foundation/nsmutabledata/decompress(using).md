@@ -25,7 +25,7 @@ func decompress(using algorithm: NSData.CompressionAlgorithm) throws
 - (BOOL) decompressUsingAlgorithm:(NSDataCompressionAlgorithm) algorithm error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to inflate in-memory data when you need uncompressed bytes. Specify the same algorithm used to compress the data to successfully decompress it.
 

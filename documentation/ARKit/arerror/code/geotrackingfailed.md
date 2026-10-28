@@ -20,7 +20,7 @@ case geoTrackingFailed
 ARErrorCodeGeoTrackingFailed
 ```
 
-#### Discussion
+## Discussion
 
 ARKit will raise an error with this error code when visual localization is taking too long. This situation indicates that the app has met all requirements for geo tracking except for visual localization. To try again, the app needs to ask the user pan the device around the physical environment to acquire different camera-feed imagery. For more information, see [Assisting the User with Visual Localization](../../argeotrackingstatus/state-swift.enum/localizing.md#Assisting-the-User-with-Visual-Localization).
 

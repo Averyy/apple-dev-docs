@@ -19,7 +19,7 @@ var visibleFrame: NSRect { get }
 @property (readonly) NSRect visibleFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle defines the portion of the screen in which it is currently safe to draw your app’s content.
 

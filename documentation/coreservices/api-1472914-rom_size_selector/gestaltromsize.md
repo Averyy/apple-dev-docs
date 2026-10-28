@@ -14,7 +14,7 @@
 gestaltROMSize = 'rom '
 ```
 
-#### Discussion
+## Discussion
 
 The selector you pass to the `Gestalt` function to determine the size of the installed ROM, in bytes. The value is returned in only one word.
 

@@ -25,11 +25,11 @@ init?(url: CFURL)
 extern CGDataProviderRefCGDataProviderCreateWithURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A new data provider or `NULL` if the data from the URL could not be accessed. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
-#### Discussion
+## Discussion
 
 You use this function to create a direct-access data provider that supplies data from a URL. When you supply Core Graphics with a direct-access data provider, Core Graphics obtains data from your program in a single entire block.
 

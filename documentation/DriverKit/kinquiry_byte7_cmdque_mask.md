@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_CMDQUE_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the CMDQUE bit.
 

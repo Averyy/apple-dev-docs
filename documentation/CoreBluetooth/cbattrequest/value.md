@@ -25,7 +25,7 @@ var value: Data? { get set }
 @property (copy, readwrite, nullable) NSData * value;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property depends on whether the request type is read or write. For read requests, the property is `nil,` and you should set it before responding to the remote central through the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method. For write requests, the value is the data to write to the characteristic’s value.
 

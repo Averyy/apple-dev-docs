@@ -25,11 +25,11 @@ func CFPlugInRegisterPlugInType(_ factoryUUID: CFUUID!, _ typeUUID: CFUUID!) -> 
 extern Boolean CFPlugInRegisterPlugInType(CFUUIDRef factoryUUID, CFUUIDRef typeUUID);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the factory function was successfully registered, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This function is used by a plug-in or host when performing dynamic registration.
 

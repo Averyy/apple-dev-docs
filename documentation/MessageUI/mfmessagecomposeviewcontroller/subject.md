@@ -22,7 +22,7 @@ var subject: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subject;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to provide an initial subject for a message, do so before you display it. After the message is displayed you cannot change the value of this property.
 

@@ -23,7 +23,7 @@ var searchResultsController: UIViewController? { get }
 @property (nonatomic, strong, readonly, nullable) UIViewController * searchResultsController;
 ```
 
-#### Discussion
+## Discussion
 
 When the user enters text in the search bar, the search controller displays this view controller immediately and without any animations. You’re responsible for passing the search results to this view controller so that they can be displayed. You do this using the object in the [`searchResultsUpdater`](./searchresultsupdater.md) property.
 

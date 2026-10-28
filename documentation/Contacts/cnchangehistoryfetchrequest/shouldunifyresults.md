@@ -24,7 +24,7 @@ var shouldUnifyResults: Bool { get set }
 @property (nonatomic) BOOL shouldUnifyResults;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the fetch returns unified contact history. Otherwise the system returns individual contact history. A unified contact is the aggregation of properties from a set of linked individual contacts. If an individual contact is not linked then the unified contact is simply that individual contact.
 

@@ -14,7 +14,7 @@
 void (*PrintDCL)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

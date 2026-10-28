@@ -25,7 +25,7 @@ class MTRBaseClusterServiceArea
 @interface MTRBaseClusterServiceArea : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 The Service Area cluster provides an interface for controlling the areas where a device should operate, and for querying the current area being serviced.
 

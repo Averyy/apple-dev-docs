@@ -16,7 +16,7 @@ A change that invalidates a view’s intrinsic size.
 struct IntrinsicContentSize
 ```
 
-#### Overview
+## Overview
 
 Use [`intrinsicContentSize`](../../nsviewinvalidating/intrinsiccontentsize.md) to create an instance of this type.
 

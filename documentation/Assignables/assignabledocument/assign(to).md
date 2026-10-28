@@ -20,7 +20,7 @@ Assign this document to a user.
 func assign(to userIdentity: AnyUserIdentity) throws -> AssignedWorkDocument
 ```
 
-#### Return Value
+## Return Value
 
 A work document for the taker of the assignable document.
 

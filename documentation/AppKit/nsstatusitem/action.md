@@ -19,7 +19,7 @@ var action: Selector? { get set }
 @property (nullable) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 If the status item has a menu set, clicking the status item doesn’t send the action to the target; instead, the click causes the menu to appear.
 

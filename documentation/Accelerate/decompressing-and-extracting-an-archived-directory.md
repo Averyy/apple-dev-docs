@@ -5,13 +5,13 @@
 
 Recreate an entire file system directory from an archive file.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to decompress and extract a previously compressed file system directory.
 
 The code below decompresses the file generated using the steps explained in [Compressing file system directories](./compressing-file-system-directories.md) and writes the files to a directory named `dest`.
 
-##### Create the file stream to read the source archive
+### Create the file stream to read the source archive
 
 The [`ArchiveByteStream`](../AppleArchive/archivebytestream.md) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create a byte stream that reads the source file:
 
@@ -30,7 +30,7 @@ defer {
 }
 ```
 
-##### Create the decompression stream
+### Create the decompression stream
 
 Create the decompression stream. Specify the file-reading stream as the input stream that provides the compressed data:
 
@@ -43,7 +43,7 @@ defer {
 }
 ```
 
-##### Create the decoding stream
+### Create the decoding stream
 
 Create a decoding stream that provides archive elements from the raw, decompressed data:
 
@@ -57,7 +57,7 @@ defer {
 }
 ```
 
-##### Specify the destination
+### Specify the destination
 
 Specify a destination path for the decompressed directory contents. The following code checks that the destination directory exists and creates the destination if neccessary:
 
@@ -76,7 +76,7 @@ if !FileManager.default.fileExists(atPath: decompressPath) {
 let decompressDestination = FilePath(decompressPath)
 ```
 
-##### Create the extract stream
+### Create the extract stream
 
 Create an extract stream that receives archive elements, and extracts to the specified directory:
 
@@ -90,7 +90,7 @@ defer {
 }
 ```
 
-##### Decompress and extract the archived directory
+### Decompress and extract the archived directory
 
 Finally, call [`process(readingFrom:writingTo:)`](../AppleArchive/archivebytestream/process%28readingfrom,writingto%29.md) to write the output of the decode stream to the extract stream. In turn, the extract stream extracts each archive element to the decompression destination:
 

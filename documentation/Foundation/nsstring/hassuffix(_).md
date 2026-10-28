@@ -25,11 +25,11 @@ func hasSuffix(_ str: String) -> Bool
 - (BOOL) hasSuffix:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aString` matches the ending characters of the receiver, otherwise [`false`](../../Swift/false.md). Returns [`false`](../../Swift/false.md) if `aString` is empty.
 
-#### Discussion
+## Discussion
 
 This method is a convenience for comparing strings using the `NSAnchoredSearch` and `NSBackwardsSearch` options. See [String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for more information.
 

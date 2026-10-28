@@ -23,11 +23,11 @@ func MIDIDeviceNewEntity(_ device: MIDIDeviceRef, _ name: CFString, _ protocol: 
 extern OSStatus MIDIDeviceNewEntity(MIDIDeviceRef device, CFStringRef name, MIDIProtocolID protocol, Boolean embedded, ItemCount numSourceEndpoints, ItemCount numDestinationEndpoints, MIDIEntityRef *newEntity);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Beginning with macOS 11 and iOS 14, non-drivers may call this function to add entities to external devices.
 

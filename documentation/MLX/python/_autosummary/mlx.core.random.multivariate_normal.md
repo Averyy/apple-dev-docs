@@ -6,27 +6,31 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.multivariate_normal
 
-**multivariate_normal(*mean: array*, *cov: array*, *shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Generate jointly-normal random samples given a mean and covariance.
+```python
+multivariate_normal(mean: array, cov: array, shape: Sequence[int] = [], dtype: Dtype | None = float32, key: array | None = None, stream: StreamOrDevice = None) → array
+```
+
+Generate jointly-normal random samples given a mean and covariance.
+
 The matrix `cov` must be positive semi-definite. The behavior is
 undefined if it is not.  The only supported `dtype` is `float32`.
 
-Parameters:
+**Parameters:**
 
-**mean** ([array](mlx.core.array.md#mlx.core.array)) – array of shape `(..., n)`, the mean of the
+- **mean** ([array](mlx.core.array.md#mlx.core.array)) – array of shape `(..., n)`, the mean of the
 distribution.
-**cov** ([array](mlx.core.array.md#mlx.core.array)) – array  of shape `(..., n, n)`, the covariance
+- **cov** ([array](mlx.core.array.md#mlx.core.array)) – array  of shape `(..., n, n)`, the covariance
 matrix of the distribution. The batch shape `...` must be
 broadcast-compatible with that of `mean`.
-**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The output shape must be
+- **shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – The output shape must be
 broadcast-compatible with `mean.shape[:-1]` and `cov.shape[:-2]`.
 If empty, the result shape is determined by broadcasting the batch
 shapes of `mean` and `cov`. Default: `[]`.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)*, **optional*) – The output type. Default: `float32`.
-**key** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype), *optional*) – The output type. Default: `float32`.
+- **key** ([array](mlx.core.array.md#mlx.core.array), *optional*) – A PRNG key. Default: `None`.
 
-Returns:
-The output array of random values.
+**Returns:**
+: The output array of random values.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

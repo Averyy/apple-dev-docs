@@ -22,11 +22,11 @@ init(dictionary: [AnyHashable : Any]?)
 + (UIPrintInfo *) printInfoWithDictionary:(NSDictionary *) dictionary;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `UIPrintInfo` or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 You use the `dictionary` parameter to initialize a `UIPrintInfo` object with stored print-job information.  Some applications might archive a previous `UIPrintInfo` object and use that for a future print job with this method.
 

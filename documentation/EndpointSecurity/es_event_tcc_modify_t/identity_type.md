@@ -20,7 +20,7 @@ var identity_type: es_tcc_identity_type_t
 es_tcc_identity_type_t identity_type;
 ```
 
-#### Discussion
+## Discussion
 
 Represent the identity type of an application which has access to a TCC service.
 

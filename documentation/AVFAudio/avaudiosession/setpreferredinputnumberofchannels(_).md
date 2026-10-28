@@ -23,7 +23,7 @@ func setPreferredInputNumberOfChannels(_ count: Int) throws
 - (BOOL) setPreferredInputNumberOfChannels:(NSInteger) count error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests a change to the number of input channels. To determine whether the change has taken effect, query or key-value observe the [`inputNumberOfChannels`](./inputnumberofchannels.md) property.
 

@@ -21,7 +21,7 @@ A structure containing the activity levels and detected time ranges for instrume
 struct InstrumentActivityResult
 ```
 
-#### Overview
+## Overview
 
 The [`activity`](./instrumentactivityresult/activity.md) property provides a continuous signal for each instrument. The values range from `0.0`, which indicates the instrument isn’t  present, to `1.0`, which indicates the instrument is fully active. The [`ranges`](./instrumentactivityresult/ranges.md) property provides discrete time windows during which the framework detected each instrument. Use both properties together to determine when an instrument is present and how prominently it features at each moment.
 

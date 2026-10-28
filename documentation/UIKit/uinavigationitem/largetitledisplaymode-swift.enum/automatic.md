@@ -23,7 +23,7 @@ case automatic
 UINavigationItemLargeTitleDisplayModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 This is the default mode. If the previous item’s title was large, the current item also displays a large title. Similarly, if the previous item’s title was small, the current item displays a small title.
 

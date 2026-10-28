@@ -19,7 +19,7 @@ var CPU_BASED_UNCOND_IO: UInt32 { get }
 CPU_BASED_UNCOND_IO
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`; the VM exits on the execution of the following I/O instructions: IN, INS/INSB/INSW/INSD, OUT, OUTS/OUTSB/OUTSW/OUTSD.
 

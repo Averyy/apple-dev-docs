@@ -22,7 +22,7 @@ var relativeAltitude: NSNumber { get }
 @property (nonatomic, readonly) NSNumber * relativeAltitude;
 ```
 
-#### Discussion
+## Discussion
 
 For the first altitude event delivered to your altimeter object, the value of this property is `0`. Subsequent events contain a number that reflects the relative change in altitude with respect to the first reported event. For example, if the altitude changed five meters between the first and second events, the value in this property is `5` for the second event.
 

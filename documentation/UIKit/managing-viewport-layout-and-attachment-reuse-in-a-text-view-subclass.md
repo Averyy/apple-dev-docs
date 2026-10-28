@@ -5,7 +5,7 @@
 
 Customize layout and preserve attachment views in your text view subclass.
 
-#### Overview
+## Overview
 
 If you build a text editor with rich attachments — like images, videos, or interactive controls — you may notice that attachment views flicker or lose their state when someone scrolls the attachment out of the viewport, or types in the same paragraph. This is because text views discard and recreate attachment views as part of their normal layout process.
 
@@ -13,7 +13,7 @@ If you build a text editor with rich attachments — like images, videos, or int
 
 You can also register reuse policies to tell the text view which attachment views to preserve across scrolling and editing, eliminating flicker and preserving states like focus and playback position.
 
-##### Override viewport layout methods
+### Override viewport layout methods
 
 [`layoutViewport()`](./nstextviewportlayoutcontroller/layoutviewport%28%29.md) encompasses the viewport layout process. Each time the visual state within the viewport changes, TextKit calls it. During each viewport layout process, [`NSTextViewportLayoutController`](./nstextviewportlayoutcontroller.md) calls the text view’s delegate methods at three points — before it starts, before each text layout fragment is about to be rendered, and after it completes. Override any of these methods in your [`UITextView`](./uitextview.md) (or [`NSTextView`](../AppKit/nstextview.md) in macOS) subclass to customize what happens at each stage:
 
@@ -56,7 +56,7 @@ The following table shows the set of available override points:
 | [`textViewportLayoutControllerReceivedSetNeedsLayout(_:)`](./uitextview/textviewportlayoutcontrollerreceivedsetneedslayout%28_%29.md) | When the viewport requests a layout invalidation |
 | [`viewportBounds(for:)`](./uitextview/viewportbounds%28for%29.md) | To query the current viewport bounds |
 
-##### Register reuse policies
+### Register reuse policies
 
 Use the registration API to preserve attachment views across layout passes. Call [`register(_:forTextAttachmentViewProviderType:)`](./uitextview/register%28_,fortextattachmentviewprovidertype%29.md) once during setup to declare the reuse behavior per provider type:
 

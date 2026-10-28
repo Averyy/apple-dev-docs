@@ -22,11 +22,11 @@ convenience init(region: CLRegion, repeats: Bool)
 + (instancetype) triggerWithRegion:(CLRegion *) region repeats:(BOOL) repeats;
 ```
 
-#### Return Value
+## Return Value
 
 A new location trigger object with the specified region.
 
-#### Discussion
+## Discussion
 
 If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove notification requests that are no longer needed.
 

@@ -29,11 +29,11 @@ OSStatus SecTrustGetTrustResult(SecTrustRef trust, SecTrustResultType *result);
 
 - [Discovering Why a Trust Evaluation Failed](./discovering-why-a-trust-evaluation-failed.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If the trust object has not yet been evaluated, the result type is [`SecTrustResultType.invalid`](./sectrustresulttype/invalid.md).
 

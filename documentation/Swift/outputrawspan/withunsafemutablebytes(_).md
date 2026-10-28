@@ -21,11 +21,11 @@ Call the given closure with the unsafe buffer pointer addressed by this OutputRa
 mutating func withUnsafeMutableBytes<E, R>(_ body: (UnsafeMutableRawBufferPointer, inout Int) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure.
 
-#### Discussion
+## Discussion
 
 This method provides a way to process or populate an `OutputRawSpan` using unsafe operations, such as dispatching to code written in legacy (memory-unsafe) languages.
 

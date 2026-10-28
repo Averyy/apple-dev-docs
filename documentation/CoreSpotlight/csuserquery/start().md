@@ -27,7 +27,7 @@ func start()
 
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 This method uses the configured search parameters and query string to begin a search of the index. It then delivers the results of that search to the closures in the [`foundItemsHandler`](../cssearchquery/founditemshandler.md), [`foundSuggestionsHandler`](./foundsuggestionshandler.md), and [`completionHandler`](../cssearchquery/completionhandler.md) properties of the query object.
 

@@ -19,7 +19,7 @@ static let urlReadingFileURLsOnly: NSPasteboard.ReadingOptionKey
 extern NSPasteboardReadingOptionKey const NSPasteboardURLReadingFileURLsOnlyKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an `NSNumber` object with a boolean value.
 

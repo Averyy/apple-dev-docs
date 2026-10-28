@@ -5,7 +5,7 @@
 
 Create sets of app previews to upload to App Store Connect.
 
-#### Overview
+## Overview
 
 An `appPreviewSets` resource represents a collection of app previews for an app locale and display target; for example, a set of screenshots for the Simplified Chinese listing of your app for an iPhone with a 6.5” display size. Use app preview sets to:
 

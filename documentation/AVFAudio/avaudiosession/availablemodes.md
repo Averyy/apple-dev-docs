@@ -24,7 +24,7 @@ var availableModes: [AVAudioSession.Mode] { get }
 @property (readonly) NSArray<NSString *> * availableModes;
 ```
 
-#### Discussion
+## Discussion
 
 Not every device supports every audio session mode. For example, the [`videoRecording`](./mode-swift.struct/videorecording.md) mode isn’t available on a device that doesn’t support video recording.
 

@@ -16,11 +16,11 @@ Returns an `NSData` object to be used as an authentication stamp for an outgoing
 - (NSData *) authenticationDataForComponents:(NSArray *) components;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object to be used as an authentication stamp for an outgoing message.
 
-#### Discussion
+## Discussion
 
 The delegate should use only the `NSData` elements to create the authentication stamp. See the [`PortMessage`](../portmessage.md) class specification for more information on the components.
 

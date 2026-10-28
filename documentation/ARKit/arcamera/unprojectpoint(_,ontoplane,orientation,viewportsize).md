@@ -19,11 +19,11 @@ Returns the projection of a point from the 2D space of a view rendering the scen
 func unprojectPoint(_ point: CGPoint, ontoPlane planeTransform: simd_float4x4, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> simd_float3?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D point in world space where a ray projected from the specified 2D point intersects the specified plane, or `nil` if the ray does not intersect the plane.
 
-#### Discussion
+## Discussion
 
 If you display AR content with SceneKit, the [`ARSCNView`](../arscnview.md) class provides an otherwise equivalent [`unprojectPoint(_:ontoPlane:)`](../arscnview/unprojectpoint%28_,ontoplane%29.md) method that requires fewer parameters (because the view can infer its orientation and size).
 

@@ -22,7 +22,7 @@ let kCFProxyPasswordKey: CFString
 extern CFStringRef const kCFProxyPasswordKey;
 ```
 
-#### Discussion
+## Discussion
 
 The password to be used when contacting the proxy. This key is only present if the password can be determined from the information passed in. (External credential stores such as the keychain are not consulted.)
 

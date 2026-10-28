@@ -5,21 +5,21 @@
 
 Return the absolute difference between the maximum and minimum numerical values in an array.
 
-#### Overview
+## Overview
 
 Use the `diff()` function in the expression of a matchmaking rule to compute the greatest difference between two or more values. For example, `diff([ `4`, `3`, `2`, `1` ])` returns `3`, and  `diff([ `50`, `19`, `21`, `61` ]` returns `42`.
 
-##### Declaration
+### Declaration
 
 ```other
 number diff(array[number] $values)
 ```
 
-##### Parameters
+### Parameters
 
 -`values`: An array that contains the numeric values to compare.
 
-##### Return value
+### Return value
 
 The absolute difference between the maximum and minimum items in the `values` array.
 

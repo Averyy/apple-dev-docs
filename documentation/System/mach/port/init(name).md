@@ -21,7 +21,7 @@ Transfer ownership of an existing unmanaged Mach port right into a `Mach.Port` b
 init(name: mach_port_name_t)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer traps if `name` is `MACH_PORT_NULL`, or if `name` is `MACH_PORT_DEAD` and the `RightType` is `Mach.ReceiveRight`.
 

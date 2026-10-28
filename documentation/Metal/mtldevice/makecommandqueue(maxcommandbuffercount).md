@@ -25,11 +25,11 @@ func makeCommandQueue(maxCommandBufferCount: Int) -> (any MTLCommandQueue)?
 - (id<MTLCommandQueue>) newCommandQueueWithMaxCommandBufferCount:(NSUInteger) maxCommandBufferCount;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLCommandQueue`](../mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 A Command queue can only submit commands to the GPU device instance that created it.
 

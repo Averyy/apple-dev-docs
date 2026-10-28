@@ -21,7 +21,7 @@ func getValues(_ vals: UnsafeMutablePointer<GLint>, forAttribute attrib: NSOpenG
 - (void) getValues:(GLint *) vals forAttribute:(NSOpenGLPixelFormatAttribute) attrib forVirtualScreen:(GLint) screen;
 ```
 
-#### Discussion
+## Discussion
 
 Because the value for an attribute may be different on each virtual screen, the virtual screen must be specified along with the attribute.
 

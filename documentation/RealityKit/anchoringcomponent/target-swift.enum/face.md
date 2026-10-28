@@ -19,7 +19,7 @@ An anchor point attached to the user’s face.
 case face
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS, visionOS and tvOS apps don’t track this type of anchor.
 

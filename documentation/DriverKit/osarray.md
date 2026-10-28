@@ -18,7 +18,7 @@ A container for an ordered, random-access collection of objects.
 class OSArray;
 ```
 
-#### Overview
+## Overview
 
 OSArray is a collection class for objects derived from OSObject. Storage and access are by array index.
 

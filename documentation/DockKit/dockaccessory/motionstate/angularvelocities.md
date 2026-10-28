@@ -18,7 +18,7 @@ The angular velocity of each axis of rotation in radians.
 let angularVelocities: Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 The X, Y, and Z values are in radians per second corresponding to pitch, yaw, and roll axes.
 

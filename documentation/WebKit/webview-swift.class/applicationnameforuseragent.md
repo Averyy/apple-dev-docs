@@ -21,7 +21,7 @@ var applicationNameForUserAgent: String! { get set }
 @property (nonatomic, copy) NSString * applicationNameForUserAgent;
 ```
 
-#### Discussion
+## Discussion
 
 The user-agent is used by websites to identify the client browser.
 

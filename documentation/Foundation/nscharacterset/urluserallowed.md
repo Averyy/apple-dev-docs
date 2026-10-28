@@ -25,7 +25,7 @@ class var urlUserAllowed: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * URLUserAllowedCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The user component of a URL is an optional component that precedes the host component, and ends at either a colon (if a password is specified) or an `@` sign (if no password is specified). For example, in the URL `http://username:password@www.example.com/index.html`, the user component is `username`.
 

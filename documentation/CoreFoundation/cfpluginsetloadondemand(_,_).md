@@ -25,7 +25,7 @@ func CFPlugInSetLoadOnDemand(_ plugIn: CFPlugIn!, _ flag: Bool)
 extern void CFPlugInSetLoadOnDemand(CFPlugInRef plugIn, Boolean flag);
 ```
 
-#### Discussion
+## Discussion
 
 Plug-ins that do static registration are load on demand by default. Plug-ins that do dynamic registration are not load on demand by default.
 

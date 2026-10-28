@@ -40,7 +40,7 @@ func areaOfInterest(forMouse event: NSEvent) -> PDFAreaOfInterest
 - (PDFAreaOfInterest) areaOfInterestForMouse:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The `PDFAreaOfInterest` enumeration defines the various area types. This method is for custom subclasses of the `PDFView` class. Use it if you override the `NSResponder` class’s [`mouseMoved(with:)`](../../AppKit/nsresponder/mousemoved%28with%29.md) method or related methods.
 

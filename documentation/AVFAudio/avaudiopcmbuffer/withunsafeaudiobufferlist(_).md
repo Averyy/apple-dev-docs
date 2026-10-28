@@ -21,7 +21,7 @@ Provides scoped read-only access to the audio buffer list.
 func withUnsafeAudioBufferList<R>(_ body: (UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 

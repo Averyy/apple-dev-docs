@@ -5,7 +5,7 @@
 
 Make your whiteboard app’s actions available in the Shortcuts app by adopting schemas for common whiteboard actions.
 
-#### Overview
+## Overview
 
 The `.whiteboard` domain defines app schemas that provide a structured representation for common whiteboard actions and content. Apply schemas in the `.whiteboard` domain to make your app’s whiteboard functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

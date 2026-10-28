@@ -24,7 +24,7 @@ let HKMetadataKeyWasTakenInLab: String
 extern NSString * const HKMetadataKeyWasTakenInLab;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the sample was taken by a lab; otherwise, set it to [`false`](../Swift/false.md).
 

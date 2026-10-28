@@ -25,9 +25,9 @@ func vvnextafter(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: U
 void vvnextafter(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The input array, *y*.

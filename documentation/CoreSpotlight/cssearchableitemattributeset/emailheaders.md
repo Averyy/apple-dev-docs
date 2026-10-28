@@ -23,7 +23,7 @@ var emailHeaders: [String : [Any]]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSArray *> * emailHeaders;
 ```
 
-#### Discussion
+## Discussion
 
 Dictionary keys are header names and the values are arrays of strings, because one header can occur more than once in an email message.
 

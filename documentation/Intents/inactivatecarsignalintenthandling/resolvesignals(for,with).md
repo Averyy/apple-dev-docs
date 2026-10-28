@@ -27,7 +27,7 @@ optional func resolveSignals(for intent: INActivateCarSignalIntent) async -> INC
 - (void) resolveSignalsForActivateCarSignal:(INActivateCarSignalIntent *) intent withCompletion:(void (^)(INCarSignalOptionsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify the requested signal type (audible or visual). For the complete list of possible signals, see [`INCarSignalOptions`](../incarsignaloptions.md).
 

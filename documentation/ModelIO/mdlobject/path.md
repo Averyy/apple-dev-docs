@@ -24,7 +24,7 @@ var path: String { get }
 @property (nonatomic, readonly) NSString * path;
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O forms a path for each object in an asset’s object hierarchy by concatenating the [`name`](../mdlnamed/name.md) properties of objects in the hierarchy, separated by slashes and preceded by an initial slash.
 

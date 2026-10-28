@@ -10,13 +10,13 @@ Extend the media formats the system can open by providing a format reader and a 
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 With the MediaExtension framework, you can add support for media formats macOS doesn’t handle on its own, using two kinds of app extension. A format reader turns a file the system doesn’t recognize into tracks that apps can play. A video decoder turns the compressed samples in those tracks into pixel buffers. Write a format reader when the system can’t parse your container, and a video decoder when it can’t decode your samples.
 
 This sample builds a Mac app that plays and exports movies, and embeds one MediaExtension app extension of each kind in its bundle. It defines both formats so you can follow the whole path end to end. The `SimpleContainerReader` extension parses the Simple Container Format, whose files use the `simpl` filename extension, and the `RLEVideoDecoder` extension decodes `XRLE`, a run-length video codec. The app writes test movies in both formats: a `simpl` file needs both extensions, and an `XRLE` QuickTime movie needs only the decoder because AVFoundation already parses the QuickTime container.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Each extension declares a MediaExtension entitlement that a provisioning profile has to carry. Both, listed below, are public capabilities. Select the extension’s target, open the Signing & Capabilities tab, click the Add Capability button, and choose the capability that matches the extension:
 
@@ -42,7 +42,7 @@ The first build that installs the extensions posts a system notification naming 
 
 The extensions stay on across restarts. To create media that needs them, drag a QuickTime or Simple Container Format movie onto the app’s window, click the Export button in the toolbar, and choose an output format in the save panel.
 
-#### Declare the container and codec
+## Declare the container and codec
 
 An extension’s implementation code alone doesn’t make it reachable. The system learns which files and codecs an extension handles from an `EXAppExtensionAttributes` dictionary in the extension’s information property list, and it doesn’t load anything until that dictionary matches the media at hand.
 
@@ -88,7 +88,7 @@ A decoder claims a codec rather than a container, so its dictionary carries a `C
 
 The `CodecType` value is the four-character code that identifies the codec in a video format description. The sample declares the same code a second time in `RLECodec.h`, as `kRLECodecCode`, for the decoder to compare against at instantiation, and the two declarations have to agree. For a description of supporting keys, see [Video decoder property list dictionary](./video-decoder-property-list-dictionary.md).
 
-#### Parse the container
+## Parse the container
 
 Media Toolbox creates a format reader when an app opens a file of a type the extension defines. The extension’s principal class, `ExtensionFormatReaderFactory`, conforms to [`MEFormatReaderExtension`](./meformatreaderextension.md), and `formatReaderWithByteSource:options:error:` is its entry point. Media Toolbox creates an [`MEByteSource`](./mebytesource.md) around the asset, which is how the extension reads the file’s bytes, and passes it to the method. The method returns an object that conforms to [`MEFormatReader`](./meformatreader.md), as shown:
 
@@ -107,7 +107,7 @@ The `ExtensionFormatReader` protocol parses the container in its initializer rat
 
 The three `load` protocol methods the system calls afterward return values the initializer previously computed, which keeps each of them to one line. A format that streams, or one too large to parse up front, defers that work into those methods instead and calls each completion handler when the data arrives.
 
-#### Describe the tracks and the file
+## Describe the tracks and the file
 
 A format reader presents a container as a list of tracks. Then `setupTracks` asks `SimpleContainerReader` how many samples each media type holds, and creates one `ExtensionTrackReader` subclass for each type that has samples, like this:
 
@@ -159,7 +159,7 @@ if (CMTIME_COMPARE_INLINE(videoDuration, >=, audioDuration)) {
 
 The format reader also reports that this format can’t contain fragments, which tells Media Toolbox not to look for samples appended after the file was written. It parses the format’s two metadata fields, a creation date and a name, into [`AVMutableMetadataItem`](../AVFoundation/avmutablemetadataitem.md) objects the same way, using the common metadata identifiers so that any AVFoundation client can read them.
 
-#### Deliver sample data with cursors
+## Deliver sample data with cursors
 
 Tracks expose their samples through cursors. A cursor points at one sample, steps forward and backward in decode or presentation order, and delivers that sample’s data. The `ExtensionSampleCursor` class conforms to [`MESampleCursor`](./mesamplecursor.md), and `ExtensionVideoSampleCursor`, `ExtensionAudioSampleCursor`, and `ExtensionTimecodeSampleCursor` subclass it, one for each track type. Every sample-data method in that protocol is optional because a cursor delivers data in one of two ways: it reports where the sample lives and lets Core Media read the bytes, or it reads the bytes itself and returns a sample buffer. Reporting the location is the better choice whenever the format allows it because Core Media can then coalesce adjacent reads into a single I/O request.
 
@@ -231,7 +231,7 @@ err = CMSampleBufferCreate(NULL, tcCounterbbuf, true, NULL, NULL, tcFormatDescri
 
 A cursor implements this method when it doesn’t implement `sampleLocationReturningError:`, and implements both when some of a format’s samples are contiguous and others aren’t. Returning buffers gives up the read coalescing that location reporting allows, so it suits samples the extension has to synthesize or unpack, as it does here.
 
-#### Create the video decoder
+## Create the video decoder
 
 Video Toolbox creates a decoder when it encounters a video format description whose codec type matches the `CodecType` the extension declares. The decoder’s principal class is `ExtensionRLEDecoderFactory`, which conforms to [`MEVideoDecoderExtension`](./mevideodecoderextension.md), as shown here:
 
@@ -304,7 +304,7 @@ The `supportedPixelFormatsOrderedByQuality` method answers a different question,
 
 Reduced-resolution decoding, in which a decoder produces frames smaller than the media’s native size, is available through `setReducedResolution:` and `reducedResolution`. This decoder implements both to report full resolution and to log any request it can’t satisfy.
 
-#### Decode sample buffers into frames
+## Decode sample buffers into frames
 
 Decoding happens in `decodeFrameFromSampleBuffer:options:completionHandler:`. Video Toolbox hands the decoder one compressed sample buffer, and the decoder returns a `CVImageBuffer` through the completion handler, like this:
 
@@ -361,7 +361,7 @@ Frames in the `XRLE` format carry no interframe dependencies, which the decoder 
 
 This decoder accepts a new description when the codec type and the dimensions both match the ones it was created with because its pixel buffer attributes and decompressor depend on those. Any other change means the system creates a new decoder instead.
 
-#### Play extension-backed media
+## Play extension-backed media
 
 Media extensions are opt-in, so an app that wants to use them registers for them at launch. The `MovieModel` class makes both calls in a detached task it creates as it initializes:
 
@@ -380,7 +380,7 @@ Apart from that wait, those two calls are the whole of the client-side work; the
 
 Several system apps register already, which makes them a quick way to check an extension without writing a client. Selecting a test movie in the Finder and pressing the Space bar previews it in Quick Look, and QuickTime Player opens movies in both formats and names the custom codec in its movie inspector. The extensions run in their own processes that the system starts on demand, so playback doesn’t depend on the host app running.
 
-#### Debug the extensions
+## Debug the extensions
 
 Because extensions run as separate processes, debugging one means attaching to a process the system starts on demand rather than launching a target:
 

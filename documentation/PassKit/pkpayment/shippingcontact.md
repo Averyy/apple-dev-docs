@@ -24,7 +24,7 @@ var shippingContact: PKContact? { get }
 @property (nonatomic, strong, readonly, nullable) PKContact * shippingContact;
 ```
 
-#### Discussion
+## Discussion
 
 Only the fields specified in the [`requiredShippingAddressFields`](../pkpaymentrequest/requiredshippingaddressfields.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object are populated. If no required shipping fields were specified, the value of this property is `nil`.
 

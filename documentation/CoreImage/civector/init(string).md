@@ -24,7 +24,7 @@ convenience init(string representation: String)
 - (instancetype) initWithString:(NSString *) representation;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIVector`](../civector.md) object.
 

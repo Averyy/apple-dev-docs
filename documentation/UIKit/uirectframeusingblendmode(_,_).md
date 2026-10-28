@@ -24,7 +24,7 @@ func UIRectFrameUsingBlendMode(_ rect: CGRect, _ blendMode: CGBlendMode)
 extern void UIRectFrameUsingBlendMode(CGRect rect, CGBlendMode blendMode);
 ```
 
-#### Discussion
+## Discussion
 
 This function draws a frame around the inside of rect in the fill color of the current graphics context and using the specified blend mode. The width is equal to 1.0 in the current coordinate system. Since the frame is drawn inside the rectangle, it’s visible even if drawing is clipped to the rectangle. If the current graphics context is `nil`, this function does nothing.
 

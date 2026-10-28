@@ -17,7 +17,7 @@ A C++ type that represents a pair of two values.
 protocol CxxPair<First, Second> : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 C++ standard library type `std::pair` conforms to this protocol.
 

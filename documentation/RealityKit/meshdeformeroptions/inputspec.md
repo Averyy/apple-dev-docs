@@ -20,7 +20,7 @@ The expected vertex buffer input spec for the deformer type.
 let inputSpec: MeshDeformerVertexOptions
 ```
 
-#### Discussion
+## Discussion
 
 This is used to determine dependencies lower in the deformation stack that may re-trigger this deformation.
 

@@ -21,7 +21,7 @@ The primitive topology used to assemble output geometry for an output stage.
 enum Topology
 ```
 
-#### Overview
+## Overview
 
 Set on an output stage via the `topology` property. The output’s topology determines how the compute graph emits vertex data for each element and how that data is consumed by the render pipeline.
 

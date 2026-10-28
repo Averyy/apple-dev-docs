@@ -6,7 +6,7 @@
 
 Each sample in the movie media is a QuickTime atom container.
 
-#### Overview
+## Overview
 
 All root-level atoms and their contents are enumerated in the following list. Note that the contents of all atoms are stored in big-endian format.
 

@@ -23,11 +23,11 @@ func touchesShouldCancel(in view: UIView) -> Bool
 - (BOOL) touchesShouldCancelInContentView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to cancel further touch messages to `view`, [`false`](../../Swift/false.md) to have `view` continue to receive those messages. The default returned value is [`true`](../../Swift/true.md) if `view` is not a [`UIControl`](../uicontrol.md) object; otherwise, it returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The scroll view calls this method just after it starts sending tracking messages to the content view. If it receives [`false`](../../Swift/false.md) from this method, it stops dragging and forwards the touch events to the content subview. The scroll view doesn’t call this method if the value of the [`canCancelContentTouches`](./cancancelcontenttouches.md) property is [`false`](../../Swift/false.md).
 

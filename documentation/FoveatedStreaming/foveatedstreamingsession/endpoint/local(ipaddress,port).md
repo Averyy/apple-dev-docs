@@ -15,7 +15,7 @@ Connects to a local endpoint by IP address and port number.
 static func local(ipAddress: any IPAddress, port: NWEndpoint.Port) -> FoveatedStreamingSession.Endpoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The port is independent from the one used for streaming content, which is determined by the streaming provider.
 

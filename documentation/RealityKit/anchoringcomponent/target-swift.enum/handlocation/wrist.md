@@ -15,7 +15,7 @@ An anchor location at the center of the wrist on the back of the hand.
 static let wrist: AnchoringComponent.Target.HandLocation
 ```
 
-#### Discussion
+## Discussion
 
 Content anchored this way has its positive y-axis pointing out of the back of the hand and its positive z-axis pointing towards the side where the thumb is.
 

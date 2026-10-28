@@ -12,11 +12,11 @@ virtual IORegistryEntry * getNextObjectRecursive(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The next registry entry in the iteration (the current entry), or zero if its finished, or the iteration is invalid (see isValid). The entry returned is retained while the iterator is pointing at it (its the current entry), or recursing into it. The caller should not release it.
 
-#### Overview
+## Overview
 
 If the iterator has a current entry, and the iterator has not already entered previously, enterEntry is called to recurse into it, ie. make it the new root, and the next child, or parent if the kIORegistryIterateParents option was used to create the iterator, at this new level of recursion is returned. If there is no current entry at this level of recursion, exitEntry is called and the process repeats, until the iteration returns to the entry the iterator was created with and zero is returned. The object returned is retained while the iterator is pointing at it (its the current entry), or recursing into it. The caller should not release it.
 

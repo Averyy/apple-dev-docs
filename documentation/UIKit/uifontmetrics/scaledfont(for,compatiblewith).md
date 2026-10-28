@@ -23,7 +23,7 @@ func scaledFont(for font: UIFont, compatibleWith traitCollection: UITraitCollect
 - (UIFont *) scaledFontForFont:(UIFont *) font compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A version of the specified font with the appropriate style information applied to it, and scaled to the current Dynamic Type setting.
 

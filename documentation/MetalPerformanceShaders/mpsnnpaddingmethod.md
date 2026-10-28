@@ -24,7 +24,7 @@ struct MPSNNPaddingMethod
 enum MPSNNPaddingMethod : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`MPSNNGraph`](./mpsnngraph.md) must make automatic decisions about how big to make the result of each filter node. This is typically determined by a combination of input image size, size of the filter window (for example, convolution weights), filter stride, and a description of how much extra space beyond the edges of the image to allow the filter read. By knowing the properties of the filter, you can then infer the size of the result image. Most of this information is known to the [`MPSNNGraph`](./mpsnngraph.md) as part of its normal operation. However, the amount of padding to add and where to add it is a matter of choice left to you. Different neural network frameworks such as TensorFlow and Caffe make different choices here. Depending on where your network was trained, you will need to adjust the policies used by MPS during inference. In the event that the padding method is not simply described by this enumeration, you may provide you own custom policy definition by overriding the [`destinationImageDescriptor(forSourceImages:sourceStates:for:suggestedDescriptor:)`](./mpsnnpadding/destinationimagedescriptor%28forsourceimages,sourcestates,for,suggesteddescriptor%29.md) method in a custom [`MPSNNPadding`](./mpsnnpadding.md) child class. Common values that influence the size of the result image by adjusting the amount of padding added to the source images:
 
@@ -59,7 +59,7 @@ so the result size is exactly the one needed for the source size and there are n
 
 Tensorflow does not appear to provide a full padding method, but instead appears to use its valid-only padding mode for reverse filters to in effect achieve what is called [`sizeFull`](./mpsnnpaddingmethod/sizefull.md) here.
 
-##### Walkthrough of Operation of Padding Policy
+### Walkthrough of Operation of Padding Policy
 
 Most [`MPSCNNKernel`](./mpscnnkernel.md) objects have two types of encode calls. There is one for which you must pass in a preallocated [`MPSImage`](./mpsimage.md) to receive the results. This is for manual configuration. It assumes you know what you are doing, and asks you to correctly set a diversity of properties to correctly position image inputs and size results. It does not use the padding policy. You must size the result correctly, set the [`clipRect`](./mpscnnkernel/cliprect.md), [`offset`](./mpscnnkernel/offset.md) and other properties as needed yourself.
 

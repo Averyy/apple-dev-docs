@@ -19,7 +19,7 @@ unowned(unsafe) var delegate: AnyObject! { get set }
 @property (assign) id delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The class assigned as the delegate should conform to the [`QLPreviewPanelDelegate`](../qlpreviewpaneldelegate.md) protocol.
 

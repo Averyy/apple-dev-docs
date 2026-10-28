@@ -22,7 +22,7 @@ Displays a set of related download links in the resources section of a tutorial�
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Downloads` directive to add links to related downloads in the resources section at the bottom of your tutorial’s table of contents page.
 
@@ -72,7 +72,7 @@ A “View downloads” link with additional specific download links:
 
 You can include downloads alongside other types of resources, like [`Documentation`](./documentation.md),  [`Forums`](./forums.md), [`SampleCode`](./samplecode.md), and [`Videos`](./videos.md).
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain download resources:
 

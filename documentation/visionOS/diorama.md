@@ -10,7 +10,7 @@ Design scenes for your visionOS app using Reality Composer Pro.
 - visionOS 2.0+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 Use Reality Composer Pro to compose, edit, and preview RealityKit content for your visionOS app. In your Reality Composer Pro project, you can create one or more scenes, each of which contains a hierarchy of virtual objects called entities that your app can efficiently load and display.
 
@@ -22,7 +22,7 @@ You can also design the visual appearance of entities using *Shader Graph*, a no
 
 Diorama demonstrates many of RealityKit and Reality Composer Pro’s features. It displays an interactive, virtual topographical trail map, much like the real-world dioramas you find at trailheads and ranger stations in national parks. This virtual map has points of interest you can tap to bring up more detailed information. You can also smoothly transition between two trail maps: Yosemite and Catalina Island.
 
-##### Import assets for building the scene
+### Import assets for building the scene
 
 Your Reality Composer Pro project must contain assets, which you use to compose scenes for your app. Diorama’s project has several assets, including 3D models like the diorama table, trail map, some birds and clouds that fly over the map, and a number of sounds and images. Reality Composer Pro provides a library of 3D models you can use. Access the library by clicking the Add (+) button on the right side of the toolbar. Selecting objects from the library imports them into your project.
 
@@ -34,7 +34,7 @@ Diorama uses custom assets instead of the available library assets. To use custo
 
 > **Note**: Although you can still load USDZ files and other assets directly in visionOS, RealityKit compiles assets in your Reality Composer Pro project into a binary format that loads considerably faster than loading from individual files.
 
-##### Create scenes containing the app’s entities
+### Create scenes containing the app’s entities
 
 A single Reality Composer Pro project can have multiple scenes. A *scene* is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](../RealityKit/realityview.md). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
 
@@ -42,7 +42,7 @@ At the top of the Reality Composer Pro window, there’s a separate tab for ever
 
 ![A screenshot showing Reality Composer Pro with multiple scenes open. At the top of the window are several tabs, one for each open scene.](https://developer.apple.com/tutorials/images/com.apple.visionOS/rcpro-scene-tabs@2x.png)
 
-##### Add assets to your scenes
+### Add assets to your scenes
 
 RealityKit can only include entities in a scene, but it can’t use every type of asset that Reality Composer Pro supports as an entity. Reality Composer Pro automatically turns some assets, like 3D models, into an entity when you place them in a scene. It uses other assets indirectly. It uses image files, for example, primarily to define the surface details of model entities.
 
@@ -52,7 +52,7 @@ Diorama uses multiple scenes to group assets together and then, at runtime, comb
 
 To add entities to a scene, drag assets from the project browser to the scene’s hierarchy view or 3D view. If the asset you drag is a type that can be represented as an entity, Reality Composer Pro adds it to your scene. You can select any asset in the scene hierarchy or the 3D view and change its location, rotation, and scale using the inspector on the right side of the window or the manipulator in the 3D view.
 
-##### Add components to entities
+### Add components to entities
 
 RealityKit follows a design pattern called Entity Component System (ECS). In an ECS app, you store additional data on an entity using components and can implement entity behavior by writing systems that use the data from those components. You can add and configure components to entities in Reality Composer Pro, including both shipped components like `PhysicsBodyComponent`, and custom components that you write and place in the Sources folder of your Reality Composer Pro Swift package. You can even create new components in Reality Composer Pro and then edit them in Xcode. For more information about ECS, see [Understanding the modular architecture of RealityKit](./understanding-the-realitykit-modular-architecture.md).
 
@@ -64,7 +64,7 @@ If you look at the list of components, you see the `PointOfInterestComponent` th
 
 ![A screenshot showing Reality Composer Pro's inspector with a new component button and the list of available components showing.](https://developer.apple.com/tutorials/images/com.apple.visionOS/rcpro-new-component@2x.png)
 
-##### Use transforms to mark locations
+### Use transforms to mark locations
 
 In Reality Composer Pro, a *transform* is an empty entity that marks a point in space. A transform contains a location, rotation, and scale, and its child entities inherit those. But, transforms have no visual representation and do nothing by themselves. Use transforms to mark locations in your scene or organize your entity hierarchy. For example, you might make several entities that need to move together into child entities of the same transform, so you can move them together by moving the parent transform.
 
@@ -72,7 +72,7 @@ Diorama uses transforms with a `PointOfInterestComponent` to indicate points of 
 
 ![A screenshot showing the `PointOfInterestComponent` as represented in Reality Composer Pro's inspector. It contains a menu called region, currently set to yosemite, a text field called name that reads Cathedral Rocks, a text field called description that reads A prominent rock formation, and three blank text fields called mainImageName, secondImageName, and thirdImageName.](https://developer.apple.com/tutorials/images/com.apple.visionOS/rcpro-point-of-interest-component@2x.png)
 
-##### Load a scene at runtime
+### Load a scene at runtime
 
 To load a Reality Composer Pro scene, use [`load(named:in:)`](../RealityKit/entity/load%28named,in%29.md), passing the name of the scene you want to load and the project’s bundle. Reality Composer Pro Swift packages define a constant that provides ready access to its bundle. The constant is the name of the Reality Composer Pro project with “Bundle” appended to the end. In this case, the project is called `RealityKitContent`, so the constant is called `RealityKitContentBundle`. Here’s how Diorama loads the map table in the [`RealityView`](../RealityKit/realityview.md) initializer:
 
@@ -83,7 +83,7 @@ let entity = try await Entity.load(named: "DioramaAssembled",
 
 The [`load(named:in:)`](../RealityKit/entity/load%28named,in%29.md) function is asynchronous when called from an asynchronous context. Because the content closure of the [`RealityView`](../RealityKit/realityview.md) initializer is asynchronous, it automatically uses the `async` version to load the scene.  Note that when using it asynchronously, you must call it using the `await` keyword.
 
-##### Create the floating view
+### Create the floating view
 
 Diorama adds a `PointOfInterestComponent` to a transform to display details about interesting places. Every point of interest’s name appears in a view that floats above its location on the map. When you tap the floating view, it expands to show detailed information, which the app pulls from the `PointOfInterestComponent`. The app shows these details by creating a SwiftUI view for each point of interest and querying for all entities that have a `PointOfInterestComponent` using this query declared in `ImmersiveView.swift`:
 
@@ -99,7 +99,7 @@ subscriptions.append(content.subscribe(to: ComponentEvents.DidAdd.self, componen
 }))
 ```
 
-##### Create attachments for points of interest
+### Create attachments for points of interest
 
 Diorama displays the information added to a `PointOfInterestComponent` in a `LearnMoreView`, which it stores as an attachment. *Attachments* are SwiftUI views that are also RealityKit entities and that you can place into a RealityKit scene at a specific location. Diorama uses attachments to position the view that floats above each point of interest.
 
@@ -129,7 +129,7 @@ entity.components[PointOfInterestRuntimeComponent.self] = PointOfInterestRuntime
 attachmentsProvider.attachments[tag] = AnyView(view)
 ```
 
-##### Display point of interest attachments
+### Display point of interest attachments
 
 Assigning a view to an attachment provider doesn’t actually display that view in the scene. The initializer for [`RealityView`](../RealityKit/realityview.md) has an optional view builder called `attachments` that’s used to specify the attachments.
 
@@ -156,7 +156,7 @@ viewModel.rootEntity?.scene?.performQuery(Self.runtimeQuery).forEach { entity in
 }
 ```
 
-##### Create custom materials with Shader Graph
+### Create custom materials with Shader Graph
 
 To switch between the two different topographical maps, Diorama shows a slider that morphs the map between the two locations. To accomplish this, and to draw elevation lines on the map, the `FlatTerrain` entity in the `DioramaAssembled` scene uses a *Shader Graph material*. Shader Graph is a node-based material editor that’s built into Reality Composer Pro. Shader Graph gives you the ability to create dynamic materials that you can change at runtime. Prior to Reality Composer Pro, the only way to implement a dynamic material like this was to create a [`CustomMaterial`](../RealityKit/custommaterial.md) and write Metal shaders to implement the necessary logic.
 
@@ -168,7 +168,7 @@ When you build Shader Graph materials, you can give them input parameters called
 
 Node graphs can contain *subgraphs*, which are similar to functions. They contain reusable sets of nodes with inputs and outputs. Subgraphs contain the logic to draw the contour lines and the logic to offset the vertices. Double-click a subgraph to edit it. For more information about building materials using Shader Graph, see [Explore Materials in Reality Composer Pro](https://developer.apple.com/wwdc23/10202).
 
-##### Update the Shader Graph material at runtime
+### Update the Shader Graph material at runtime
 
 To change the map, `DynamicTerrainMaterialEnhanced` has a promoted input called `Progress`. If that parameter is set to `1.0`, it displays Catalina Island. If it’s set to `0`, it displays Yosemite. Any other number shows a state in transition between the two. When someone manipulates the slider, the app updates that input parameter based on the slider’s value.
 
@@ -198,9 +198,9 @@ private func handleMaterial() {
 }
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Hello World](./world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
@@ -209,7 +209,7 @@ private func handleMaterial() {
 - [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 
-###### Related articles
+#### Related articles
 
 - [Adding 3D content to your app](./adding-3d-content-to-your-app.md)
   Add depth and dimension to your visionOS app and discover how to incorporate your app’s content into a person’s surroundings.
@@ -220,7 +220,7 @@ private func handleMaterial() {
 - [Implementing systems for entities in a scene](../RealityKit/implementing-systems-for-entities-in-a-scene.md)
   Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
 
-###### Related videos
+#### Related videos
 
 - [Meet Reality Composer Pro](https://developer.apple.com/videos/play/wwdc2023/10083)
   Discover how to easily compose, edit, and preview 3D content with Reality Composer Pro. Follow along as we explore this developer tool by setting up a new project, composing scenes, adding particle emitters and audio, and even previewing content on device.

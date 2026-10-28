@@ -4,7 +4,7 @@
 
 Identify how an Apple event was delivered.
 
-#### Overview
+## Overview
 
 For an example of how you might use these constants with the [`AEGetAttributePtr(_:_:_:_:_:_:_:)`](../api-1445109-aegetattributeptr.md) function, see the data type [`AEEventSource`](../aeeventsource.md). 
 

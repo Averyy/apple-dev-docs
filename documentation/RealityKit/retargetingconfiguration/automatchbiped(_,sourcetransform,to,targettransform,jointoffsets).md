@@ -20,17 +20,17 @@ Creates a retargeting configuration for bipedal characters with custom root tran
 static func automatchBiped(_ sourceSkeleton: SkeletonResource, sourceTransform: Transform = .identity, to targetSkeleton: SkeletonResource, targetTransform: Transform = .identity, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configured retargeting instance ready for animation processing.
 
-#### Discussion
+## Discussion
 
 This overload allows you to specify custom transforms for the root bones of both skeletons, which is useful when the characters are positioned or oriented differently in their bind poses. The function applies the transforms during the automatic matching process to establish proper correspondences.
 
 The automatic matching algorithm has the same joint requirements and behavior as [`automatchBiped(_:to:jointOffsets:)`](./automatchbiped%28_,to,jointoffsets%29.md).
 
-#### Example
+## Example
 
 ```swift
 do {

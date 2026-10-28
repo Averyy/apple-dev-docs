@@ -21,7 +21,7 @@ var carrierToken: Data? { get }
 @property (nonatomic, retain, readonly, nullable) NSData * carrierToken;
 ```
 
-#### Discussion
+## Discussion
 
 May contain `nil` if no token is available.
 

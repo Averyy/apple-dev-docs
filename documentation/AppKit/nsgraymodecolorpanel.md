@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSGrayModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Grayscale-alpha
 

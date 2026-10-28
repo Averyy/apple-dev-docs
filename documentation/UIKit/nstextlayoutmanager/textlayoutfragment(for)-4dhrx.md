@@ -23,7 +23,7 @@ func textLayoutFragment(for position: CGPoint) -> NSTextLayoutFragment?
 - (NSTextLayoutFragment *) textLayoutFragmentForPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextLayoutFragment`](../nstextlayoutfragment.md).
 

@@ -15,7 +15,7 @@ A request for an item’s content protection key.
 object ContentProtectionKeyRequest
 ```
 
-#### Discussion
+## Discussion
 
 If your service implements content protection, the client requests an item’s content protection key after each of the following events:
 

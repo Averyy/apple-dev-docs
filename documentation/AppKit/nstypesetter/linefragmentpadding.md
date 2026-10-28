@@ -19,11 +19,11 @@ var lineFragmentPadding: CGFloat { get set }
 @property CGFloat lineFragmentPadding;
 ```
 
-#### Return Value
+## Return Value
 
 The current line fragment padding, in points; that is, the portion on each end of the line fragment rectangle left blank.
 
-#### Discussion
+## Discussion
 
 Text is inset within the line fragment rectangle by this amount.
 

@@ -25,7 +25,7 @@ func CMFormatDescriptionGetTypeID() -> CFTypeID
 extern CFTypeID CMFormatDescriptionGetTypeID();
 ```
 
-#### Discussion
+## Discussion
 
 You can check if a `CFTypeRef` object is a `CMFormatDescription` by comparing CFGetTypeID(object) with `CMFormatDescriptionGetTypeID`().
 

@@ -19,11 +19,11 @@ func loadNibNamed(_ nibName: NSNib.Name, owner: Any?, topLevelObjects: Autorelea
 - (BOOL) loadNibNamed:(NSNibName) nibName owner:(id) owner topLevelObjects:(NSArray **) topLevelObjects;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the nib file was loaded successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Unlike legacy methods, the objects adhere to the standard cocoa memory management rules; it is necessary to keep a strong reference to them by using IBOutlets or holding a reference to the array to prevent the nib contents from being deallocated.
 

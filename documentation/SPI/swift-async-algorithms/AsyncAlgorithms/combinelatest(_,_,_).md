@@ -23,7 +23,7 @@ Creates an asynchronous sequence that combines the latest values from three `Asy
 func combineLatest<Base1, Base2, Base3>(_ base1: Base1, _ base2: Base2, _ base3: Base3) -> AsyncCombineLatest3Sequence<Base1, Base2, Base3> where Base1 : Sendable, Base1 : AsyncSequence, Base2 : Sendable, Base2 : AsyncSequence, Base3 : Sendable, Base3 : AsyncSequence, Base1.Element : Sendable, Base2.Element : Sendable, Base3.Element : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 Finishes: [`combineLatest(_:_:_:)`](./combinelatest%28_,_,_%29.md) finishes when one of the bases finishes before emitting any value or when all bases finished.
 

@@ -24,11 +24,11 @@ typedef int (*)(const void *, void *, unsigned long *) SSLReadFunc;
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 Your callback must return an appropriate result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Before using the secure transport API, you must create a read function (conforming to the [`SSLReadFunc`](./sslreadfunc.md) prototype) and a write function (conforming to  the [`SSLWriteFunc`](./sslwritefunc.md) prototype) and provide them to the library by calling the [`SSLSetIOFuncs(_:_:_:)`](./sslsetiofuncs%28_,_,_%29.md) function.
 

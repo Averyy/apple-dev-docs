@@ -21,7 +21,7 @@ Causes the caller to wait synchronously until the dispatch work item finishes ex
 func wait()
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately if the current work item has already finished executing.
 

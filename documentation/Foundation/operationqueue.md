@@ -25,7 +25,7 @@ class OperationQueue
 @interface NSOperationQueue : NSObject
 ```
 
-#### Overview
+## Overview
 
 An operation queue invokes its queued [`Operation`](./operation.md) objects based on their priority and readiness. After you add an operation to a queue, it remains in the queue until the operation finishes its task. You can’t directly remove an operation from a queue after you add it.
 
@@ -33,7 +33,7 @@ An operation queue invokes its queued [`Operation`](./operation.md) objects base
 
 For more information about using operation queues, see the [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
-##### Determine the Execution Order
+### Determine the Execution Order
 
 An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same [`queuePriority`](./operation/queuepriority-swift.property.md) and the [`isReady`](./operation/isready.md) property returns [`true`](../Swift/true.md), the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations.
 
@@ -41,7 +41,7 @@ However, don’t rely on queue semantics to ensure a specific execution order of
 
 For details on how to set priority levels and dependencies, see Managing Dependencies in [`Operation`](./operation.md).
 
-##### Respond to Operation Cancelation
+### Respond to Operation Cancelation
 
 Finishing its task doesn’t necessarily mean that the operation performed that task to completion; an operation can also be canceled. Canceling an operation object leaves the object in the queue but notifies the object that it should stop its task as quickly as possible. For currently executing operations, this means that the operation object’s work code must check the cancellation state, stop what it is doing, and mark itself as finished. For operations that are queued but not yet executing, the queue must still call the operation object’s [`start()`](./operation/start%28%29.md) method so that it can processes the cancellation event and mark itself as finished.
 
@@ -49,7 +49,7 @@ Finishing its task doesn’t necessarily mean that the operation performed that 
 
 For more information about operation cancellation, see [Responding to the Cancel Command](./operation.md#Responding-to-the-Cancel-Command) in [`Operation`](./operation.md).
 
-##### Observe Operations Using Key-Value Observing
+### Observe Operations Using Key-Value Observing
 
 The [`OperationQueue`](./operationqueue.md) class is key-value coding (KVC) and key-value observing (KVO) compliant. You can observe these properties to control other parts of your application. To observe the properties, use the following key paths:
 
@@ -63,7 +63,7 @@ Although you can attach observers to these properties, don’t use Cocoa binding
 
 For more information about KVO and how to attach observers to an object, see the [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
-##### Plan for Thread Safety
+### Plan for Thread Safety
 
 You can safely use a single [`OperationQueue`](./operationqueue.md) object from multiple threads without creating additional locks to synchronize access to that object.
 

@@ -19,7 +19,7 @@ var spacing: CGFloat { get set }
 @property CGFloat spacing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value, zero, is sufficient for batch processing eligible glass effect views, while avoiding distortion and merging effects for other views in close proximity.
 

@@ -22,11 +22,11 @@ Decodes a single value of the given type.
 func decode(_ type: UInt128.Type) throws -> UInt128
 ```
 
-#### Return Value
+## Return Value
 
 A value of the requested type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered encoded value cannot be converted to the requested type.
 

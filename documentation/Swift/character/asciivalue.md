@@ -21,7 +21,7 @@ The ASCII encoding value of this character, if it is an ASCII character.
 var asciiValue: UInt8? { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let chars: [Character] = ["a", " ", "™"]

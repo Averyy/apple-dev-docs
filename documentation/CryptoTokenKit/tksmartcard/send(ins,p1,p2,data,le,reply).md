@@ -21,7 +21,7 @@ Asynchronously transmits an APDU command to the card, returning the response in 
 func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data? = nil, le: Int? = nil, reply: @escaping (Data?, UInt16, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This call handles all ISO7816-4 APDU cases, translating to proper the sequences according to the protocol.  It consults the [`useExtendedLength`](./useextendedlength.md) and [`useCommandChaining`](./usecommandchaining.md) properties and uses these modes whenever appropriate for sending the APDU request.
 

@@ -22,11 +22,11 @@ class func isCadenceAvailable() -> Bool
 + (BOOL) isCadenceAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if cadence information is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Cadence measurement indicates the ability to determine the rate at which the user takes steps, in steps per second. This capability is not supported on all devices.
 

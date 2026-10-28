@@ -23,7 +23,7 @@ func draw(_ rect: CGRect)
 - (void) drawRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses that use technologies such as Core Graphics and UIKit to draw their view’s content should override this method and implement their drawing code there. You don’t need to override this method if your view sets its content in other ways. For example, you don’t need to override this method if your view just displays a background color or if your view sets its content directly using the underlying layer object.
 

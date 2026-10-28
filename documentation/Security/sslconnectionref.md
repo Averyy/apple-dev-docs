@@ -20,7 +20,7 @@ typealias SSLConnectionRef = UnsafeRawPointer
 typedef const void * SSLConnectionRef;
 ```
 
-#### Discussion
+## Discussion
 
 The I/O connection object refers to data that identifies a connection. The connection data is opaque to Secure Transport; you can set it to any value that your application can use in the callback functions [`SSLReadFunc`](./sslreadfunc.md) and [`SSLWriteFunc`](./sslwritefunc.md) to uniquely identify the connection, such as a socket or endpoint. Use the [`SSLSetConnection(_:_:)`](./sslsetconnection%28_,_%29.md) function to assign a value to the connection object.
 

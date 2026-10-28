@@ -13,9 +13,9 @@ Get information about an app asset library placement.
 
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

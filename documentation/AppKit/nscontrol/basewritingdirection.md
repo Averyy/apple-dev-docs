@@ -19,7 +19,7 @@ var baseWritingDirection: NSWritingDirection { get set }
 @property NSWritingDirection baseWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This property can have one of the following values: `NSWritingDirectionNatural`, `NSWritingDirectionLeftToRight`, or `NSWritingDirectionRightToLeft`. The default value is `NSWritingDirectionNatural`. The text system uses this value as a hint for calculating the actual direction for displaying Unicode characters. You should not need to access this value directly. If you know the base writing direction of the text you are rendering, you can set this property to specify that direction to the text system.
 

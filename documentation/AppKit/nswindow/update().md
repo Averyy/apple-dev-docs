@@ -19,7 +19,7 @@ func update()
 - (void) update;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSWindow` implementation of this method does nothing more than post an [`didUpdateNotification`](./didupdatenotification.md) notification to the default notification center. A subclass can override this method to perform specialized operations, but it should send an update message to `super` just before returning. For example, the `NSMenu` class implements this method to disable and enable menu commands.
 

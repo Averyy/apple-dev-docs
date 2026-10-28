@@ -25,7 +25,7 @@ let MPMediaItemPropertyAssetURL: String
 extern NSString * const MPMediaItemPropertyAssetURL;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSURL`](../Foundation/nsurl.md) object. The URL has the custom scheme of `ipod-library`. For example, a URL might look like this:
 

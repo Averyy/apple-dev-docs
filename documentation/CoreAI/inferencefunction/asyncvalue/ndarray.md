@@ -19,7 +19,7 @@ Waits for any pending write access on the underlying ndArray to complete, then r
 final var ndArray: NDArray? { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If this value was constructed from a provided MTLBuffer directly, then this will return a copy of the data to avoid unsafe aliasing. If aliasing is desired, you can work with the original MTLBuffer directly.
 

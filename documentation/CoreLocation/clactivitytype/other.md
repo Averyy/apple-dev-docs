@@ -25,7 +25,7 @@ case other
 CLActivityTypeOther
 ```
 
-#### Discussion
+## Discussion
 
 Use this activity type to describe positioning in activities that aren’t covered by one of the other activity types. This includes activities without a specific user intention, for example, positioning while a user sits on a bench interacting with a device.
 

@@ -19,7 +19,7 @@ The result of the load operation.
 var result: Result<Output, any Error>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A load operation can have the following results:
 

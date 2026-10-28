@@ -20,7 +20,7 @@ An object that defines a transformation the framework applies to a material’s 
 struct TextureCoordinateTransform
 ```
 
-#### Overview
+## Overview
 
 An entity’s UV texture coordinates define how RealityKit maps image textures onto an entity. This object defines a transformation to texture coordinates that changes the way this material maps textures onto an entity. You might, for example, continuously rotate, translate, or scale the texture coordinates and animate materials to create special effects, such as fire or flowing liquids.
 

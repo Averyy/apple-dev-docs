@@ -15,11 +15,11 @@ Returns a Boolean value indicating whether this instance is less than or equal t
 func isLessThanOrEqualTo(_ other: Float80) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `other` is greater than this value; otherwise, `false`. If either this value or `other` is NaN, the result of this method is `false`.
 
-#### Discussion
+## Discussion
 
 This method serves as the basis for the less-than-or-equal-to operator (`<=`) for floating-point values. Some special cases apply:
 

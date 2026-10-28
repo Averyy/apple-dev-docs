@@ -25,11 +25,11 @@ func CMTimeMapDurationFromRangeToRange(_ dur: CMTime, fromRange: CMTimeRange, to
 extern CMTime CMTimeMapDurationFromRangeToRange(CMTime dur, CMTimeRange fromRange, CMTimeRange toRange);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure that represents the translated duration.
 
-#### Discussion
+## Discussion
 
 The function scales the duration in proportion to the ratio between the ranges’ durations:
 

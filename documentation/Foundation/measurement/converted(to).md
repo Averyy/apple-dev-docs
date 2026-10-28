@@ -23,7 +23,7 @@ func converted(to otherUnit: UnitType) -> Measurement<UnitType>
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Return Value
+## Return Value
 
 A converted measurement.
 

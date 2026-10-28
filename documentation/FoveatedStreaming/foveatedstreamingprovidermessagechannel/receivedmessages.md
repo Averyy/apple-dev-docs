@@ -16,7 +16,7 @@ The messages the host app has sent to the extension.
 final var receivedMessages: some AsyncSequence<Data, Never> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The sequence yields each message as the host sends it and finishes when the channel closes.
 

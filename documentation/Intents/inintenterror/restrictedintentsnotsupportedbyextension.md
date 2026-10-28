@@ -21,7 +21,7 @@ An intent was listed in the `IntentsRestrictedWhileLocked` key of the app’s `I
 static var restrictedIntentsNotSupportedByExtension: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 All intents in the `IntentsRestrictedWhileLocked` key must also be present in the `IntentsSupported` key.
 

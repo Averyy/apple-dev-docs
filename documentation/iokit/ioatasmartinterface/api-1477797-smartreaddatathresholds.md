@@ -16,7 +16,7 @@ Retrieves 512 byte device SMART data thresholds structure.
 IOReturn (*SMARTReadDataThresholds)(void *interface, ATASMARTDataThresholds *dataThresholds);
 ```
 
-#### Discussion
+## Discussion
 
 Retrieves 512 byte device SMART data thresholds structure. This command is not defined as part of ATA/ATAPI-6, but is implemented by a large variety of manufacturers. Will return an appropiate error if command can not be completed.
 

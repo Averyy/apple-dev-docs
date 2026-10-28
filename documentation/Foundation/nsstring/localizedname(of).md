@@ -25,7 +25,7 @@ class func localizedName(of encoding: UInt) -> String
 + (NSString *) localizedNameOfStringEncoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 A human-readable string giving the name of `encoding` in the current locale.
 

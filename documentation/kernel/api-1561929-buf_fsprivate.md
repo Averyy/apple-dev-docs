@@ -15,7 +15,7 @@ Get filesystem-specific data from a buffer.
 void * buf_fsprivate(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Opaque filesystem data.
 

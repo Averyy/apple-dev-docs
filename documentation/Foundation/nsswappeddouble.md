@@ -25,7 +25,7 @@ struct NSSwappedDouble
 typedef struct { ... } NSSwappedDouble;
 ```
 
-#### Overview
+## Overview
 
 The fields of an [`NSSwappedDouble`](./nsswappeddouble.md) are private.
 

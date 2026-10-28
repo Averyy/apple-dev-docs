@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceCapabilitySuperSpeedUSB {
 } IOUSBDeviceCapabilitySuperSpeedUSB;
 ```
 
-#### Overview
+## Overview
 
 Device Capability SuperSpeed USB
 

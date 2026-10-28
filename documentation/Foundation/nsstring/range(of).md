@@ -25,11 +25,11 @@ func range(of searchString: String) -> NSRange
 - (NSRange) rangeOfString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRange` structure giving the location and length in the receiver of the first occurrence of `searchString`. Returns `{``NSNotFound``, 0}` if `searchString` is not found or is empty (`""`).
 
-#### Discussion
+## Discussion
 
 Invokes [`range(of:options:)`](./range%28of,options%29.md) with no options.
 

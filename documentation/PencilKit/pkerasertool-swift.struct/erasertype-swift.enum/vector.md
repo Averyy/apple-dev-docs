@@ -19,7 +19,7 @@ An eraser that removes an entire drawn line.
 case vector
 ```
 
-#### Discussion
+## Discussion
 
 When a vector eraser touches any portion of a drawn line, it removes the entire line.
 

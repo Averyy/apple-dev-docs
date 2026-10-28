@@ -24,7 +24,7 @@ var timescale: CMTimeScale { get set }
 @property (nonatomic, readwrite) CMTimeScale timescale;
 ```
 
-#### Discussion
+## Discussion
 
 The default movie time scale is `600`. In certain cases, you may want to set this to a different value. For example, a movie that contains a single audio track should set the movie time scale to the media time scale of that track. Set the value of this property on a new empty movie before you perform any edits on it.
 

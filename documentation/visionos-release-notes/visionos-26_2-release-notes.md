@@ -5,48 +5,48 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 26.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.2. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### AirDrop
+### AirDrop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices set to “Everyone” on 26.2 beta 1 are not discoverable by devices on 26.2 beta 2.  (163636875)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - Include the new `GCUIEventTypeStylus` option in the bit-mask passed to `GCEventInteraction.handledEventTypes` (UIKit) or `.handlesGameControllerEvents(matching:)` (SwiftUI) if your application needs to handle input from Logitech Muse using the Game Controller framework.  By default, input from Logitech Muse is delivered to your application as UIKit or SwiftUI events.  (160811739)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The force values reported for the Logitech Muse tip and secondary buttons are not normalized.
 
   Use the `GCPhysicalInputExtents` object obtained from the `physicalExtents` property to inspect the range of measurable force values and to scale the normalized value into that range.  (159136834)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Allocations instrument sometimes fails to report reference counting operations for native Swift types.  (163080666)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [AppStore.ageRatingCode](../StoreKit/appstore/ageratingcode.md) API provides the current age rating code for your app. Use this property to fetch the age rating and compare it with the last known rating to check for changes.  (160960740)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An issue prevents the purchase of a subscription using a win-back offer when testing with StoreKit Testing in Xcode.  (162357552) (FB20604848)
 - Fixed: `SubscriptionStatus.all` returning old `SubscriptionStatus` after a subscription change.  (163505178)
 
-##### TV SharePlay
+### TV SharePlay
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users are unable to SharePlay DRM content from the TV app.  (163515064)
 

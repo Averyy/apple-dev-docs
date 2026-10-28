@@ -24,7 +24,7 @@ case success
 INSaveProfileInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully saved the settings to the designated profile.
 

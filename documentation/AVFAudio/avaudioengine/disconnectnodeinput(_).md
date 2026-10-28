@@ -25,7 +25,7 @@ func disconnectNodeInput(_ node: AVAudioNode)
 - (void) disconnectNodeInput:(AVAudioNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 Connections break on each of the audio node’s input buses.
 

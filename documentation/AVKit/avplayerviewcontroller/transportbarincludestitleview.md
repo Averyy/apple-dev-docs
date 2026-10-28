@@ -23,7 +23,7 @@ var transportBarIncludesTitleView: Bool { get set }
 
 - [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
-#### Discussion
+## Discussion
 
 By default, the player presents a title view. This view displays title ([`commonIdentifierTitle`](../../AVFoundation/avmetadataidentifier/commonidentifiertitle.md)) and subtitle ([`iTunesMetadataTrackSubTitle`](../../AVFoundation/avmetadataidentifier/itunesmetadatatracksubtitle.md)) metadata embedded in a media asset or set as a player item’s [`externalMetadata`](../../AVFoundation/avplayeritem/externalmetadata.md).
 

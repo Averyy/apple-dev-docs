@@ -24,7 +24,7 @@ case oneMinusSourceColor
 MTLBlendFactorOneMinusSourceColor
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = 1 - Source.rgb`
 

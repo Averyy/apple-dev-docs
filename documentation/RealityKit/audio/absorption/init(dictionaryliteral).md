@@ -20,7 +20,7 @@ Creates an absorption data set from a sequence of pairs of center frequency and 
 init(dictionaryLiteral elements: (Float, Float)...)
 ```
 
-#### Discussion
+## Discussion
 
 The Sabine absorption coefficient is a value between zero and one that describes the proportion of incident sound energy a surface absorbs.
 

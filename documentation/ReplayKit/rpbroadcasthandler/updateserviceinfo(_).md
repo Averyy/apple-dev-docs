@@ -26,7 +26,7 @@ func updateServiceInfo(_ serviceInfo: [String : any NSCoding & NSObjectProtocol]
 - (void) updateServiceInfo:(NSDictionary<NSString *,NSObject<NSCoding> *> *) serviceInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method populates the [`serviceInfo`](../rpbroadcastcontroller/serviceinfo.md) property on [`RPBroadcastController`](../rpbroadcastcontroller.md) to send viewing stats or messages to the broadcasting app.
 

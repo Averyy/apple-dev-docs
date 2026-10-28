@@ -19,7 +19,7 @@ An error indicating that the session is inactive.
 static var sessionInactive: WCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you try to send data using an inactive session.
 

@@ -22,11 +22,11 @@ nonisolated
 func assumeIsolated<T>(_ operation: (isolated Self) throws -> T, file: StaticString = #fileID, line: UInt = #line) rethrows -> T where T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `operation`
 
-#### Discussion
+## Discussion
 
 This method allows to *assume and verify* that the currently executing synchronous function is actually executing on the serial executor of the this (local) distributed actor.
 

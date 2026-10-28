@@ -23,7 +23,7 @@ var isConstantColorFallbackPhotoDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isConstantColorFallbackPhotoDeliveryEnabled) BOOL constantColorFallbackPhotoDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to receive a fallback photo that you can use if the main constant color photo’s confidence level doesn’t meet your requirement.
 

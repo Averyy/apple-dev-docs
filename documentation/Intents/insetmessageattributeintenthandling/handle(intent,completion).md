@@ -27,7 +27,7 @@ func handle(intent: INSetMessageAttributeIntent) async -> INSetMessageAttributeI
 - (void) handleSetMessageAttribute:(INSetMessageAttributeIntent *) intent completion:(void (^)(INSetMessageAttributeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must try to modify the attributes of the messages. The response object you provide should indicate whether you were successful at making the changes.
 

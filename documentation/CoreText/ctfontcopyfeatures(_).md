@@ -25,7 +25,7 @@ func CTFontCopyFeatures(_ font: CTFont) -> CFArray?
 extern CFArrayRefCTFontCopyFeatures(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 An array of font feature dictionaries for the font reference.
 

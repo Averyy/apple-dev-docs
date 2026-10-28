@@ -25,11 +25,11 @@ func mutableCopy() -> CGMutablePath?
 extern CGMutablePathRefCGPathCreateMutableCopy(CGPathRef path);
 ```
 
-#### Return Value
+## Return Value
 
 A new, mutable, copy of the specified path. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 You can modify a mutable graphics path by calling the various path geometry functions, such as [`CGPathAddArc`](../cgpathaddarc.md), [`CGPathAddLineToPoint`](../cgpathaddlinetopoint.md), and [`CGPathMoveToPoint`](../cgpathmovetopoint.md).
 

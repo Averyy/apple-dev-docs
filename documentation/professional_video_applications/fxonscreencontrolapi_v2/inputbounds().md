@@ -20,7 +20,7 @@ func inputBounds() -> NSRect
 - (NSRect) inputBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the input filter or transition.
 

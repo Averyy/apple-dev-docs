@@ -16,7 +16,7 @@ The list of manufacturer-declared extension features available for this accessor
 var manufacturerFeatures: [HMAccessory.ManufacturerFeature] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Discovery is performed by homed, which enumerates installed manufacturer extensions and (when none is installed) falls back to ProductKit-provided branding content. The getter is `async` because that discovery happens across an XPC boundary; awaiting it gives callers a fully resolved list rather than a stale snapshot.
 

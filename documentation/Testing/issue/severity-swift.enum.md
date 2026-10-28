@@ -16,7 +16,7 @@ An enumeration representing the level of severity of a recorded issue.
 enum Severity
 ```
 
-#### Overview
+## Overview
 
 The supported levels, in increasing order of severity, are:
 

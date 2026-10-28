@@ -19,7 +19,7 @@ The location URL of the app’s manifest file that contains the names and sizes 
 - **Name**: `BAManifestURL`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The manifest file contains information that your extension needs to schedule asset downloads, such as the names, URLs, and sizes of the assets. The format and content of the manifest file is your responsibility. The system uses this key to download the manifest file and pass it to your extension. This key is required to use Background Assets.
 

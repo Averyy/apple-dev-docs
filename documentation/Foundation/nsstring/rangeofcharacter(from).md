@@ -25,11 +25,11 @@ func rangeOfCharacter(from searchSet: CharacterSet) -> NSRange
 - (NSRange) rangeOfCharacterFromSet:(NSCharacterSet *) searchSet;
 ```
 
-#### Return Value
+## Return Value
 
 The range in the receiver of the first character found from `aSet`. Returns a range of `{``NSNotFound``, 0}` if none of the characters in `aSet` are found.
 
-#### Discussion
+## Discussion
 
 Invokes [`rangeOfCharacter(from:options:)`](./rangeofcharacter%28from,options%29.md) with no options.
 

@@ -20,7 +20,7 @@ func setNeedsLayout(_ flag: Bool)
 - (void) setNeedsLayout:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 A view conforming to this protocol should store the most recent value of this flag in an internal variable. Then, in its drawRect method, if the most recent value of this flag was [`true`](../../Swift/true.md), it should invoke [`layout()`](./layout%28%29.md) and reset the internal variable before updating the contents of the view.
 

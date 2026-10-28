@@ -20,7 +20,7 @@ optional func browserColumnConfigurationDidChange(_ notification: Notification)
 - (void) browserColumnConfigurationDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies only to browsers with resize type [`NSBrowser.ColumnResizingType.userColumnResizing`](../nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md). It is invoked when the [`setWidth(_:ofColumn:)`](../nsbrowser/setwidth%28_,ofcolumn%29.md) method of [`NSBrowser`](../nsbrowser.md) is used to change the width of any browser columns or when the user resizes any columns. If the user resizes more than one column, a single notification is posted when the user is finished resizing.
 

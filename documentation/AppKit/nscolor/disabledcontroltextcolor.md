@@ -19,7 +19,7 @@ class var disabledControlTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * disabledControlTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color used for text on disabled controls. For more information, see [`NSColor`](../nscolor.md).
 

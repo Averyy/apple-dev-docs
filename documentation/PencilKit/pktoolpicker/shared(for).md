@@ -24,11 +24,11 @@ class func shared(for window: UIWindow) -> PKToolPicker?
 + (PKToolPicker *) sharedToolPickerForWindow:(UIWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The tool picker associated with the window, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to retrieve the tool picker assigned to one of your app’s windows. If the specified window doesn’t yet have a tool picker, this method creates and associates it with that window.
 

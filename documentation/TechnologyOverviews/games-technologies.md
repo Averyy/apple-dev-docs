@@ -8,7 +8,7 @@ Game development starts with [Xcode](../Xcode/Xcode.md), Apple’s integrated de
 
 Great games take advantage of the characteristics and capabilities of the devices that they run on. For example, someone might use their iPhone when travelling or relaxing on the couch, or use their Mac when they’re sitting at their desk. [Design your game](https://developer.apple.com/design/human-interface-guidelines/designing-for-games) with these factors in mind and take advantage of all available hardware connected to the device.
 
-#### Create gorgeous graphics
+## Create gorgeous graphics
 
 Get the best graphics performance on all Apple platforms using [Metal](https://developer.apple.com/metal/) — Apple’s API for hardware-accelerated 2D and 3D graphics. With Metal, you have the power of the graphics processing unit (GPU) at your fingertips. Deliver smooth 3D animations with realistic visual effects from your game’s rendering code. Tune the performance of that code to maximize frame rates and efficiency on a variety of Apple devices.
 
@@ -37,7 +37,7 @@ Make sure you tune your graphics code specifically for Apple silicon:
 - Accelerate your code’s performance using the open source [SSE2Neon](https://github.com/DLTcollab/sse2neon) and [AVX2Neon](https://github.com/kunpengcompute/AvxToNeon) libraries. The Neon instruction set provides single instruction multiple data (SIMD) operations to accelerate performance on ARM processors.
 - [Optimize for Apple GPUs and Tile-Based Deferred Rendering](../Metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md). Write your Metal code to use features like imageblocks, tile shading, and raster order groups.
 
-#### Build a spatial computing game for visionOS
+## Build a spatial computing game for visionOS
 
 Apple Vision Pro gives you an opportunity to create immersive 3D experiences. Whether you’re creating a fully immersive game or an augmented reality experience, take advantage of [visionOS](../visionOS/visionOS.md) features. And if you’re making a game for iPad or iPhone, that game can also run run on Apple Vision Pro in a window and use direct and indirect gestures as input.
 
@@ -50,7 +50,7 @@ Apple Vision Pro gives you an opportunity to create immersive 3D experiences. Wh
 
 Get started by [learning about the building blocks](https://developer.apple.com/videos/play/wwdc2023/10260/) that make up spatial computing, and find out how you use these elements to build your game experiences. Adapt your 2D games by adjusting your content to [take advantage of 3D](https://developer.apple.com/videos/play/wwdc2023/10076/). For example, render objects in separate layers to create a parallax effect, and add smoke, sparks, and other visual elements that come out of visual plane.
 
-#### Create exceptional soundtracks
+## Create exceptional soundtracks
 
 Increase engagement and realism by adding sound effects and music that complement the action within your game.
 
@@ -62,7 +62,7 @@ Increase engagement and realism by adding sound effects and music that complemen
 
 On iPhone and Apple TV, get the player’s attention and reinforce actions with tactile and audio feedback using the [Core Haptics](../CoreHaptics/CoreHaptics.md) framework. Play both transient and continues patterns to match the events in your app. For example, play a short vibration pattern when someone toggles a switch, and play a continuous pattern to represent the ringing of a telephone. Generate haptics for an attached game controller using the [Game Controller](../GameController/GameController.md) framework instead.
 
-#### Support input devices
+## Support input devices
 
 Let players interact with your game in more natural ways using [Game Controller](../GameController/GameController.md). Support the latest
 
@@ -72,7 +72,7 @@ Let players interact with your game in more natural ways using [Game Controller]
 
 The App Store adds a game controller badge to your game if it supports controllers.
 
-#### Build a social network
+## Build a social network
 
 Take advantage of the services Apple provides for social gaming and storing game data using [Game Center](https://developer.apple.com/game-center/). Let Apple help promote your game organically through players sharing and interacting with each other.
 
@@ -87,7 +87,7 @@ Take advantage of the services Apple provides for social gaming and storing game
 - Let people communicate with each other using FaceTime or Messages by turning your game into a [shared activity](../GroupActivities/GroupActivities.md).
 - Add a screen-sharing or game-streaming feature to your macOS game using [ScreenCaptureKit](../ScreenCaptureKit/ScreenCaptureKit.md).
 
-#### Distribute your game
+## Distribute your game
 
 The [App Store](https://developer.apple.com/app-store/features/) lets you easily distribute your game to hundreds of millions of people around the world on all Apple platforms. The App Store processes customer payments, provides secure and reliable downloads, manages releases, and helps promote your game.
 

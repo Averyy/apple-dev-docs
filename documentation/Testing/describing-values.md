@@ -5,11 +5,11 @@
 
 Add custom descriptions and mirrors to values you use in your tests.
 
-#### Overview
+## Overview
 
 The testing library provides two protocols, [`CustomTestStringConvertible`](./customteststringconvertible.md) and [`CustomTestReflectable`](./customtestreflectable.md), that you can use to customize the appearance of values in Swift. The testing library uses these protocols to describe parameterized test arguments and, if a call to [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) or [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md) fails, to describe any values you pass to them.
 
-#### Customize the description of a value
+## Customize the description of a value
 
 You use the [`CustomTestStringConvertible`](./customteststringconvertible.md) protocol when you want to customize the description of a value *during testing only*. Values whose types conform to this protocol use it to describe themselves when the testing library presents them as part of the output of a test. For example, this protocol affects the display of values you pass as arguments to test functions or that are elements of an expectation failure.
 
@@ -63,7 +63,7 @@ The testing library then uses [`testDescription`](./customteststringconvertible/
 ◇ Test case passing 1 argument food → ragù alla bolognese to isDelicious(_:) started.
 ```
 
-#### Customize the reflection of a value
+## Customize the reflection of a value
 
 When a call to [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) or to [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md) fails, the testing library presents the value or values you pass to these macros in its output.
 
@@ -107,7 +107,7 @@ With this conformance, the output of the failed test is instead:
 ↳   isDelicious → false
 ```
 
-#### Implement custom descriptions using private properties
+## Implement custom descriptions using private properties
 
 If part or all of your type’s state is `private` or otherwise not visible to your test target, you may not be able to implement [`testDescription`](./customteststringconvertible/testdescription.md) or [`customTestMirror`](./customtestreflectable/customtestmirror.md) in your test target. You can implement these properties, without adding conformances to either protocol, in your production target, and then add empty protocol conformances in your test target. Make sure to use `internal` or `package` visibility for the properties so that your test target is able to use them.
 

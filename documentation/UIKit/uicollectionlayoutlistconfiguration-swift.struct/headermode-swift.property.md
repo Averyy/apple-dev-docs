@@ -19,7 +19,7 @@ The type of header to use for the list.
 var headerMode: UICollectionLayoutListConfiguration.HeaderMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UICollectionLayoutListConfiguration.HeaderMode.none`](./headermode-swift.enum/none.md).
 

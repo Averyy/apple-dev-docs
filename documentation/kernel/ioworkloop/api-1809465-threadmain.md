@@ -9,7 +9,7 @@
 virtual void threadMain();
 ```
 
-#### Overview
+## Overview
 
 Work loop threads main function. This function consists of 3 loops: the outermost loop is the semaphore clear and wait loop, the middle loop terminates when there is no more work, and the inside loop walks the event list calling the checkForWork method in each event source. If an event source has more work to do, it can set the more flag and the middle loop will repeat. When no more work is outstanding the outermost will sleep until an event is signalled.
 

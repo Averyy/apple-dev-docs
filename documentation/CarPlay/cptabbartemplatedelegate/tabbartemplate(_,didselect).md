@@ -22,7 +22,7 @@ func tabBarTemplate(_ tabBarTemplate: CPTabBarTemplate, didSelect selectedTempla
 - (void) tabBarTemplate:(CPTabBarTemplate *) tabBarTemplate didSelectTemplate:(CPTemplate *) selectedTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 The tab bar template calls this method each time the user selects a tab. `tabBarTemplate` is the same template that the tab bar’s [`selectedTemplate`](../cptabbartemplate/selectedtemplate.md) property returns.
 

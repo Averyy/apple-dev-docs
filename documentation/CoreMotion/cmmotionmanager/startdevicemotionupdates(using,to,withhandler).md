@@ -23,7 +23,7 @@ func startDeviceMotionUpdates(using referenceFrame: CMAttitudeReferenceFrame, to
 - (void) startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame) referenceFrame toQueue:(NSOperationQueue *) queue withHandler:(CMDeviceMotionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 You must call [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) when you no longer want your app to process device-motion updates.
 

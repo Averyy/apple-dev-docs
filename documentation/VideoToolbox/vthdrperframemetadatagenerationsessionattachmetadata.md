@@ -20,7 +20,7 @@ Attaches per-frame metadata to the pixel buffer and the backing IOSurface.
 extern OSStatus VTHDRPerFrameMetadataGenerationSessionAttachMetadata(VTHDRPerFrameMetadataGenerationSessionRef hdrPerFrameMetadataGenerationSession, CVPixelBufferRef pixelBuffer, Boolean sceneChange);
 ```
 
-#### Discussion
+## Discussion
 
 Call this to analyze and attach HDR Metadata. This call will change CVPixelBuffer attachments and backing IOSurface attachments.
 

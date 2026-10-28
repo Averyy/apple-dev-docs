@@ -25,7 +25,7 @@ struct CVFillExtendedPixelsCallBackData
 typedef struct { ... } CVFillExtendedPixelsCallBackData;
 ```
 
-#### Overview
+## Overview
 
 You must fill out this structure and store it as part of your pixel format description Core Foundation dictionary (key: `kCVPixelFormatFillExtendedPixelsCallback`, type: `CFData`). However, if your custom pixel format never needs the functionality of [`CVPixelBufferFillExtendedPixels(_:)`](./cvpixelbufferfillextendedpixels%28_%29.md), you don’t need to add this key or implement the associated callback.
 

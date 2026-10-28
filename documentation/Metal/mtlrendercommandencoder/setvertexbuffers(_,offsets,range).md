@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the vertex shader argument tab
 func setVertexBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the buffer at each index is `nil`.
 

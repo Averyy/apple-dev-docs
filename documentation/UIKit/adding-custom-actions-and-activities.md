@@ -5,7 +5,7 @@
 
 Add custom document browser actions, activities, and bar items.
 
-#### Overview
+## Overview
 
 There are three different ways to add custom actions to the document browser:
 
@@ -13,7 +13,7 @@ There are three different ways to add custom actions to the document browser:
 - Add activities to the activity view.
 - Add bar items to the navigation bar.
 
-##### Add document browser actions
+### Add document browser actions
 
 By default, the system provides standard actions such as copy, move, rename, delete, and share. To add custom actions, assign an array of [`UIDocumentBrowserAction`](./uidocumentbrowseraction.md) objects to the browser’s [`customActions`](./uidocumentbrowserviewcontroller/customactions.md) property.
 
@@ -24,7 +24,7 @@ Document browser actions can be accessed in two ways:
 
 When someone initiates one of these actions, the actions receive the URLs of the currently selected items.
 
-##### Add activities
+### Add activities
 
 The browser displays an activity view when someone taps the Share button (for example, when someone long presses on a document or folder and selects Share from the Edit Menu).
 
@@ -34,7 +34,7 @@ Your delegate object receives an array of URLs for the currently selected items.
 
 For design guidance, see Human Interface Guidelines >  [Collaboration and sharing](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing).
 
-##### Add bar button items
+### Add bar button items
 
 Use the [`additionalLeadingNavigationBarButtonItems`](./uidocumentbrowserviewcontroller/additionalleadingnavigationbarbuttonitems.md) and [`additionalTrailingNavigationBarButtonItems`](./uidocumentbrowserviewcontroller/additionaltrailingnavigationbarbuttonitems.md) properties to add buttons to the navigation bar.
 

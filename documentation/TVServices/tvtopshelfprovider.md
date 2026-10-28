@@ -21,7 +21,7 @@ protocol TVTopShelfProvider
 @protocol TVTopShelfProvider
 ```
 
-#### Overview
+## Overview
 
 You adopt this protocol in the principal class of your app’s TV Services extension. Apps that implement this extension can provide dynamic content to the Top Shelf element rather than having the system use the static image submitted with the app. The [`topShelfStyle`](./tvtopshelfprovider/topshelfstyle.md) property specifies the interface style you want, and the [`topShelfItems`](./tvtopshelfprovider/topshelfitems.md) property specifies the content items to display. Whenever you change the content provided by the extension, post a [`TVTopShelfItemsDidChangeNotification`](./tvtopshelfitemsdidchangenotification.md) notification to prompt the system to reload your content.
 

@@ -21,7 +21,7 @@ Returns a sequence of `Date`s, calculated by repeatedly adding an amount of `Dat
 func dates(byAdding components: DateComponents, startingAt start: Date, in range: Range<Date>? = nil, wrappingComponents: Bool = false) -> some Sendable & Sequence<Date>
 ```
 
-#### Return Value
+## Return Value
 
 A `Sequence` of `Date` values, or an empty sequence if no addition could be performed.
 

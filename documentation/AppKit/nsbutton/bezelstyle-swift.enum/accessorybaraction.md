@@ -19,7 +19,7 @@ case accessoryBarAction
 NSBezelStyleAccessoryBarAction
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you need to perform an action on a button that appears in an accessory or scope bar.
 

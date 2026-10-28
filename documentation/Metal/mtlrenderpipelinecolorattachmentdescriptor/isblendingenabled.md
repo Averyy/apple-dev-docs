@@ -24,7 +24,7 @@ var isBlendingEnabled: Bool { get set }
 @property (nonatomic, getter=isBlendingEnabled) BOOL blendingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), meaning blending is disabled and pixel values are unaffected by blending. Disabled blending is effectively the same as the `MTLBlendOperationAdd` blend operation with a source blend factor of `1.0` and a destination blend factor of `0.0` for both RGB and alpha.
 

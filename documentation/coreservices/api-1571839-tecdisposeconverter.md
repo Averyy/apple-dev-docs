@@ -15,11 +15,11 @@ Disposes of a converter object.
 OSStatus TECDisposeConverter(TECObjectRef newEncodingConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 If you want to reuse the converter object for a differenttext stream with the same source and destination encoding, you shouldclear the converter object using the  [`TECClearConverterContextInfo`](./api-1571844-tecclearconvertercontextinfo.md)  functionrather than disposing of it and then creating a new converter object. 
 

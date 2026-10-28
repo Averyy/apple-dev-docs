@@ -17,7 +17,7 @@ Notifies the view when the device orientation changes.
 @preconcurrency override dynamic func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 ```
 
-#### Overview
+## Overview
 
 This property inherits from [`UIView`](../../UIKit/uiview.md).
 

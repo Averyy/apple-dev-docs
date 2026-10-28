@@ -25,7 +25,7 @@ func endIgnoringInteractionEvents()
 - (void) endIgnoringInteractionEvents;
 ```
 
-#### Discussion
+## Discussion
 
 You typically call this method when, after calling the [`beginIgnoringInteractionEvents()`](./beginignoringinteractionevents%28%29.md) method, the animation or transition concludes. Nested calls of this method should match nested calls of the [`beginIgnoringInteractionEvents()`](./beginignoringinteractionevents%28%29.md) method.
 

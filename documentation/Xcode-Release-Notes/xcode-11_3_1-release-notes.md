@@ -5,47 +5,47 @@
 
 Update your apps to use new features, and test your apps against API changes
 
-#### Overview
+## Overview
 
 Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchOS 6.1, and macOS Catalina 10.15.2. Xcode 11.3.1 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.3.1 requires a Mac running macOS Mojave 10.14.4 or later.
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - When you create an Objective-C category file by choosing File > New > File, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800)
 
   **Workaround:** Remove the import of AppKit from the source file.
 
-##### Debugging
+### Debugging
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Inspection of global variables in Swift and Objective-C works properly in `lldb`. (57884467)
 
-##### Interface Builder
+### Interface Builder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when using an attributed string in a [`UILabel`](../UIKit/uilabel.md). (55737956, 57990674)
 - Fixed a crash that could occur after dragging a toolbar item out of the Allowed set in the canvas. (18133890, 57982132)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that would cause Xcode to time out waiting for Simulator.app to become ready, when multiple copies of Xcode are installed. (57050823, 57676897)
 - Resolved an issue that prevented Xcode from launching processes with Thread Sanitizer enabled on macOS Catalina 10.15.2. (57822138)
 
-##### Source Editor
+### Source Editor
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when typing a doc comment after invoking undo. (56522994, 57762965)
 
-##### Swift
+### Swift
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Reduced the size of dependency files (`.d`) produced by the Swift compiler, which can improve incremental build times and disk usage for targets with many source files. (57361722, 57865813)
 

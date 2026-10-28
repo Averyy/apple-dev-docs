@@ -21,7 +21,7 @@ Creates an array containing the elements of a sequence.
 init<S>(_ s: S) where Element == S.Element, S : Sequence
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create an array from any other type that conforms to the `Sequence` protocol. For example, you might want to create an array with the integers from 1 through 7. Use this initializer around a range instead of typing all those numbers in an array literal.
 

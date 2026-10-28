@@ -15,7 +15,7 @@ A Boolean value indicating whether the numbers in fields are represented as stri
 readonly attribute Boolean numbersAsStrings;
 ```
 
-#### Discussion
+## Discussion
 
 Set the `numbersAsStrings` key in the `options` parameter when requesting records using the [`fetchRecords`](../cloudkit.database/fetchrecords.md) and similar methods.
 

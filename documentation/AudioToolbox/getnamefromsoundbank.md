@@ -15,11 +15,11 @@ Gets the name of a sound bank from a sound bank file.
 extern OSStatus GetNameFromSoundBank(const struct FSRef *inSoundBankRef, CFStringRef*outName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The caller is responsible for releasing the sound bank name.
 

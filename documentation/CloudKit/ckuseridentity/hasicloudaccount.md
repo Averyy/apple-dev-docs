@@ -25,7 +25,7 @@ var hasiCloudAccount: Bool { get }
 @property (assign, readonly) BOOL hasiCloudAccount;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the user identity has an iCloud account; otherwise, `false`.
 

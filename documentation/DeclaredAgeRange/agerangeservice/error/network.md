@@ -18,7 +18,7 @@ Indicates a network or server issue prevented completing the age range request.
 case network
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error when the system can’t reach the server to fetch or update the age range or related parental controls information. Retry the request when network conditions improve.
 

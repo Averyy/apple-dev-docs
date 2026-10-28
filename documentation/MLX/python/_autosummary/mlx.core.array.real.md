@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.real
 
-**property array.real**
-: The real part of a complex array.
+```python
+property array.real
+```
+
+The real part of a complex array.

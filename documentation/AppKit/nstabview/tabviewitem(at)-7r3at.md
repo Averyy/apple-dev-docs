@@ -19,7 +19,7 @@ func tabViewItem(at index: Int) -> NSTabViewItem
 - (NSTabViewItem *) tabViewItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The tab view item at the specified index.
 

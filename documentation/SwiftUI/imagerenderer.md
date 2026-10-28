@@ -21,7 +21,7 @@ An object that creates images from SwiftUI views.
 final class ImageRenderer<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Use `ImageRenderer` to export bitmap image data from a SwiftUI view. You initialize the renderer with a view, then render images on demand, either by calling the [`render(rasterizationScale:renderer:)`](./imagerenderer/render%28rasterizationscale,renderer%29.md) method, or by using the renderer’s properties to create a [`CGImage`](../CoreGraphics/cgimage.md), [`NSImage`](../AppKit/nsimage.md), or [`UIImage`](../UIKit/uiimage.md).
 
@@ -66,7 +66,7 @@ Because `ImageRenderer` conforms to [`ObservableObject`](../Combine/observableob
 
 > ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It does not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](./view/drawinggroup%28opaque,colormode%29.md). Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
-##### Rendering to a PDF context
+### Rendering to a PDF context
 
 The [`render(rasterizationScale:renderer:)`](./imagerenderer/render%28rasterizationscale,renderer%29.md) method renders the specified view to any [`CGContext`](../CoreGraphics/cgcontext.md). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
 
@@ -101,7 +101,7 @@ var body: some View {
 }
 ```
 
-##### Creating an image from drawing instructions
+### Creating an image from drawing instructions
 
 `ImageRenderer` makes it possible to create a custom image by drawing into a [`Canvas`](./canvas.md), rendering a `CGImage` from it, and using that to initialize an [`Image`](./image.md). To simplify this process, use the `Image` initializer [`init(size:label:opaque:colorMode:renderer:)`](./image/init%28size,label,opaque,colormode,renderer%29.md), which takes a closure whose argument is a [`GraphicsContext`](./graphicscontext.md) that you can directly draw into.
 

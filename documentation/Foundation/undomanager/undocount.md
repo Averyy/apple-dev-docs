@@ -25,7 +25,7 @@ var undoCount: Int { get }
 @property (readonly) NSUInteger undoCount;
 ```
 
-#### Discussion
+## Discussion
 
 A nonzero value doesn’t imply you can safely invoke [`undo()`](./undo%28%29.md) immediately, because you may have to close open undo groups first.
 

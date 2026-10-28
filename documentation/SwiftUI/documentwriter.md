@@ -19,7 +19,7 @@ A type that writes a document’s content to a file.
 protocol DocumentWriter<Snapshot>
 ```
 
-#### Overview
+## Overview
 
 SwiftUI calls your document’s [`snapshot(contentType:)`](./writabledocument/snapshot%28contenttype%29.md) on the main actor to capture the current state, then obtains a `DocumentWriter` from [`writer(configuration:)`](./writabledocument/writer%28configuration%29.md) and invokes `write(content:to:previous:progress:)` in the background with coordinated file access.
 

@@ -25,7 +25,7 @@ func handle(_ event: SCNParticleEvent, forProperties properties: [SCNParticleSys
 - (void) handleEvent:(SCNParticleEvent) event forProperties:(NSArray<NSString *> *) properties withBlock:(SCNParticleEventBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 By associating a block with one or more particle properties, you can run arbitrary code that modifies those properties when a significant event in the particle simulation occurs for one or more particles. For example, you can use the following code with a confetti effect to randomly switch between two distinct colors for each spawned particle:
 

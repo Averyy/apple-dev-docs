@@ -25,11 +25,11 @@ func replaceMatches(in string: NSMutableString, options: NSRegularExpression.Mat
 - (NSUInteger) replaceMatchesInString:(NSMutableString *) string options:(NSMatchingOptions) options range:(NSRange) range withTemplate:(NSString *) templ;
 ```
 
-#### Return Value
+## Return Value
 
 The number of matches.
 
-#### Discussion
+## Discussion
 
 See [Flag Options](../nsregularexpression.md#Flag-Options) for the format of `templ`.
 

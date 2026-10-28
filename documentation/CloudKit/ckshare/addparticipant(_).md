@@ -25,7 +25,7 @@ func addParticipant(_ participant: CKShare.Participant)
 - (void) addParticipant:(CKShareParticipant *) participant;
 ```
 
-#### Discussion
+## Discussion
 
 If a participant with a matching [`userIdentity`](./participant/useridentity.md) already exists in the share, the system updates the existing participant’s properties and doesn’t add a new participant.
 

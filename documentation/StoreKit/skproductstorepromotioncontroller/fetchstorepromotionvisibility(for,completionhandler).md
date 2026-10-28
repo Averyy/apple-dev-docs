@@ -33,7 +33,7 @@ func promotionVisibility(for product: SKProduct) async throws -> SKProductStoreP
 
 - [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 The default visibility for a promoted product is set in App Store Connect. Call [`fetchStorePromotionVisibility(for:completionHandler:)`](./fetchstorepromotionvisibility%28for,completionhandler%29.md) to determine if a product’s visibility is set to the default value or if it has been overridden to be hidden or shown.
 

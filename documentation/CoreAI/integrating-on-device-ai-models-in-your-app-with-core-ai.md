@@ -5,19 +5,19 @@
 
 Power your app’s intelligent features with an on-device AI model.
 
-#### Overview
+## Overview
 
 Core AI allows you to deploy AI models within your app. Inference happens on device, so data stays private, AI features can be readily available and work offline, and there is no per-inference cost to you or the people using your app.
 
 You start with an `.aimodel` file, either converted from a model using the [Core AI PyTorch Extensions Python package](https://apple.github.io/coreai-torch) or already prepared in the correct format. The model it represents should contain one or more inference functions needed to power your app’s intelligent features.
 
-#### Choose a model
+## Choose a model
 
 When you have more than one model to choose from, you can compare their quality using the [Evaluations](../Evaluations/Evaluations.md) framework. Comparing models this way doesn’t require matching input or output shapes; your own code adapts each model’s output into a form the evaluation can score.
 
 Quality can also shift over time: a different dataset, a new model judge, or a newer model version can change which model scores best, even after you’ve already bundled one. `Evaluating a Core AI model` shows this pattern: one evaluation definition run against two different models with the same metrics, compared side by side. For details, see [Evaluating a Core AI model](../Evaluations/evaluating-a-core-ai-model.md).
 
-#### Add the model file to your project
+## Add the model file to your project
 
 To use a Core AI model, your app needs access to the `.aimodel` file at runtime. You can bundle the file directly in your Xcode project or Swift package, or your app can download it over the network. The following steps show how to bundle and configure the model in Xcode.
 
@@ -31,7 +31,7 @@ Start by adding the model file to an Xcode target:
 
 > **Note**: After adding the file, you should also see the model in the Compile Sources build phase for that target.
 
-#### Add the Metal Toolchain to Xcode
+## Add the Metal Toolchain to Xcode
 
 Core AI model integration in Xcode requires the Metal Toolchain, which isn’t installed by default. There are two options for adding the Metal Toolchain:
 
@@ -44,7 +44,7 @@ Core AI model integration in Xcode requires the Metal Toolchain, which isn’t i
 
 > ❗ **Important**: If the Metal toolchain isn’t included, builds that include `.aimodel` files fail with a missing Metal compiler error.
 
-#### Inspect the model in Xcode
+## Inspect the model in Xcode
 
 Before writing the code to use the model in your app, you can view its details in the Xcode model viewer by selecting the `.aimodel` file in the Project Navigator.
 
@@ -58,7 +58,7 @@ The General tab also shows the model’s numeric precision, split into compute a
 - Storage types are the representations used for the model’s weights on disk.
 - The operation distribution shows a breakdown of operations in the model’s graph, sorted by count.
 
-#### Review inference functions
+## Review inference functions
 
 The Functions tab shows the exact function signature of each function in the model, including the names, types, and optional descriptions for each input and output.
 
@@ -66,7 +66,7 @@ The Functions tab shows the exact function signature of each function in the mod
 
 Most models have a single function. The named inputs and outputs describe what data your code provides and what it returns. A question mark in an `NDArray` dimension means the dimension is dynamic and is supplied or determined at runtime.
 
-#### Load the model
+## Load the model
 
 Load the model in your app by creating an [`AIModel`](./aimodel.md) from the `.aimodel` file.
 
@@ -90,7 +90,7 @@ Call [`loadFunction(named:)`](./aimodel/loadfunction%28named%29.md) to get an [`
 
 Most models have a single function. If the model contains multiple functions, check [`functionNames`](./aimodel/functionnames.md) to see all available names. If your app processes multiple inputs simultaneously, you can safely call the same inference function from different tasks.
 
-#### Inspect function inputs and outputs
+## Inspect function inputs and outputs
 
 Depending on your model deployment strategy, you may need to inspect the model’s inference function at runtime. Each inference function has an [`InferenceFunctionDescriptor`](./inferencefunctiondescriptor.md) that describes the names, types, and shapes of its inputs and outputs. You can use this descriptor to verify that a function accepts the inputs your app provides, or to dynamically adapt your app’s behavior as the model’s inputs and outputs change between deployments, without needing to change your code.
 
@@ -116,7 +116,7 @@ guard arrayDescriptor.scalarType == .float32 else {
 
 The [`inputDescriptor(of:)`](./inferencefunctiondescriptor/inputdescriptor%28of%29.md) method returns an [`InferenceValue.Descriptor`](./inferencevalue/descriptor.md) for a named input. The descriptor tells you whether the input expects an [`NDArray`](./ndarray.md) or an image, along with its shape and type.
 
-#### Run inference
+## Run inference
 
 The [`NDArray`](./ndarray.md) type represents the input and output tensors from the converted model function at runtime. Values marked as images at conversion time use [`CVMutablePixelBuffer`](../CoreVideo/cvmutablepixelbuffer.md). Pass your data using the same input names defined at model conversion time.
 
@@ -170,7 +170,7 @@ guard let prediction = predictionValue.ndArray else {
 processOutput(prediction.view())
 ```
 
-#### Run inference with image inputs and outputs
+## Run inference with image inputs and outputs
 
 When a function expects an image instead of an [`NDArray`](./ndarray.md), the input or output uses [`CVMutablePixelBuffer`](../CoreVideo/cvmutablepixelbuffer.md). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
 

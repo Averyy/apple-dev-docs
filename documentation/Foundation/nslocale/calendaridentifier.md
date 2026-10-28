@@ -25,7 +25,7 @@ var calendarIdentifier: String { get }
 @property (copy, readonly) NSString * calendarIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are listed in `Calendar Identifiers`.
 

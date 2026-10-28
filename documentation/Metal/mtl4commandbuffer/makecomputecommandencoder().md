@@ -25,7 +25,7 @@ func makeComputeCommandEncoder() -> (any MTL4ComputeCommandEncoder)?
 - (id<MTL4ComputeCommandEncoder>) computeCommandEncoder;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`MTL4ComputeCommandEncoder`](../mtl4computecommandencoder.md) instance, or `nil` if the function fails.
 

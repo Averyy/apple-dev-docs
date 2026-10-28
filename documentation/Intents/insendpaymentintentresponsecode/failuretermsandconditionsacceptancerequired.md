@@ -23,7 +23,7 @@ case failureTermsAndConditionsAcceptanceRequired
 INSendPaymentIntentResponseCodeFailureTermsAndConditionsAcceptanceRequired
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the sender of the payment must accept your app’s payment-related terms and conditions.
 

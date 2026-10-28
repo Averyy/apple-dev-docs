@@ -15,11 +15,11 @@ Returns an identity authority specified by a given Core Services Identity author
 + (CBIdentityAuthority *) identityAuthorityWithCSIdentityAuthority:(CSIdentityAuthorityRef) CSIdentityAuthority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity authority object for use with the Collaboration framework.
 
-#### Discussion
+## Discussion
 
 This method, along with [`CSIdentityAuthority`](./csidentityauthority.md), is used for interoperability with the Core Services Identity API.
 

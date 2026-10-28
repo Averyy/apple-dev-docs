@@ -23,7 +23,7 @@ var kDNSServiceFlagsValidateOptional: UInt32 { get }
 kDNSServiceFlagsValidateOptional
 ```
 
-#### Discussion
+## Discussion
 
 This flag is identical to kDNSServiceFlagsValidate except for the case where the response cannot be validated. If this flag is set in DNSServiceQueryRecord or DNSServiceGetAddrInfo, the DNSSEC records will be requested for validation. If they cannot be received for some reason during the validation (e.g., zone is not signed, zone is signed but cannot be traced back to root, recursive server does not understand DNSSEC etc.), then this falls back to the default behavior where the validation is not performed and no DNSSEC results are provided.
 

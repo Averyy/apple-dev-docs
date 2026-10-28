@@ -23,7 +23,7 @@ An activation function that returns the sigmoid linear unit (SiLU) function of i
 case silu
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

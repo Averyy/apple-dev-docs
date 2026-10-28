@@ -25,7 +25,7 @@ var lastIndex: Int { get }
 @property (readonly) NSUInteger lastIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Last index in the index set or NSNotFound when the index set is empty.
 

@@ -19,7 +19,7 @@ func viewWillAppear()
 - (void) viewWillAppear;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the accessory view is about to be added to the window’s view hierarchy or the window is about to become visible, such as coming to the front or becoming unhidden. If you override this method, you must call `super` in your implementation.
 

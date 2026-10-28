@@ -16,11 +16,11 @@ CMError CMGetIndProfileElement (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Before you call the `CMGetIndProfileElement` function to obtain the element data for an element at a specific index, you first determine the size in bytes of the element data. To determine the data size, you can
 

@@ -21,7 +21,7 @@ final var routeSymbolName: String { get }
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Discussion
+## Discussion
 
 This property returns a system symbol name as a `String` that identifies the type of device (such as a TV, speaker, or other compatible endpoint). Use this value with `Image(systemName:)` to create an icon for display in your app’s user interface.
 

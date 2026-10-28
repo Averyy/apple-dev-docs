@@ -13,7 +13,7 @@ Detect and respond to car crash events in your app.
 - macOS 13.0+
 - watchOS 10.1+
 
-#### Overview
+## Overview
 
 SafetyKit provides Crash Detection, a feature that sends a crash event to an authorized app if a person is in a severe vehicular crash as detected by their iPhone 14, iPhone 14 Pro, Apple Watch Series 8, Apple Watch SE (2nd generation), or Apple Watch Ultra. These devices provide a feature called Emergency SOS - Call After Severe Crash. If enabled, Emergency SOS dials a municipal emergency service such as 911 in the event of a vehicular crash. After Emergency SOS places its call, Crash Detection can assist someone by initiating a call to a contact designated by the app, such as a roadside assistance provider.
 

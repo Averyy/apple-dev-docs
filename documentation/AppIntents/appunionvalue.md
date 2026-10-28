@@ -21,7 +21,7 @@ A protocol that provides nominal type identity and metadata for union values.
 protocol AppUnionValue : TypeDisplayRepresentable
 ```
 
-#### Overview
+## Overview
 
 Union values conforming to this protocol can be used as Shortcuts parameters with rich metadata support, enabling appropriate picker UI and parameter summaries.
 

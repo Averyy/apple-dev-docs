@@ -25,7 +25,7 @@ func setDictionary(_ otherDictionary: [AnyHashable : Any])
 - (void) setDictionary:(NSDictionary<id,id> *) otherDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 All entries are removed from the receiving dictionary (with [`removeAllObjects()`](./removeallobjects%28%29.md)), then each entry from `otherDictionary` added into the receiving dictionary.
 

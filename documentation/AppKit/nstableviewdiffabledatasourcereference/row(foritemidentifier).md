@@ -19,7 +19,7 @@ func row(forItemIdentifier identifier: ItemIdentifierType) -> Int
 - (NSInteger) rowForItemIdentifier:(ItemIdentifierType) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s row, or `nil` if the method doesn’t find an item with the provided item identifier.
 

@@ -19,7 +19,7 @@ The destructive dismiss behavior.
 static let destructive: DismissBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when you want to dismiss a window regardless of any conditions that would normally prevent the dismissal. Dismissing windows in this matter may result in loss of state.
 

@@ -19,7 +19,7 @@ var scrollDirection: NSCollectionView.ScrollDirection { get set }
 @property NSCollectionViewScrollDirection scrollDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSCollectionView.ScrollDirection.vertical`](../nscollectionview/scrolldirection/vertical.md).
 

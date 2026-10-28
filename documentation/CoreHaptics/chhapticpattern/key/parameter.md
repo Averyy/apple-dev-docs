@@ -24,7 +24,7 @@ static let parameter: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyParameter;
 ```
 
-#### Discussion
+## Discussion
 
 The haptic parameter definition includes a parameter type, a parameter value, and a time.
 

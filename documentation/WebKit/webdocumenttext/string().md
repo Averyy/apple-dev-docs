@@ -20,7 +20,7 @@ func string() -> String!
 - (NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The entire content of the web document.
 

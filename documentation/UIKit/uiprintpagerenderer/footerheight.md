@@ -22,7 +22,7 @@ var footerHeight: CGFloat { get set }
 @property (nonatomic) CGFloat footerHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The footer is measured in points from the bottom of [`printableRect`](./printablerect.md) and is below the content area. The default footer height is 0.0
 

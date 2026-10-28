@@ -23,7 +23,7 @@ A function that is used to match known issues.
 typealias KnownIssueMatcher = @Sendable (Issue) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether or not `issue` is known to occur.
 

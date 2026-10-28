@@ -17,7 +17,7 @@ Applies the Rectified Linear Unit.
 func relu(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(x, 0)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`ReLU`](./relu.md)

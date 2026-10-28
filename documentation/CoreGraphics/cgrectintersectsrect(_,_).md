@@ -25,7 +25,7 @@ func CGRectIntersectsRect(_ rect1: CGRect, _ rect2: CGRect) -> Bool
 extern bool CGRectIntersectsRect(CGRect rect1, CGRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two specified rectangles intersect; otherwise, [`false`](../Swift/false.md). The first rectangle intersects the second if the intersection of the rectangles is not equal to the null rectangle.
 

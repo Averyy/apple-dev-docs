@@ -23,7 +23,7 @@ var editingStyle: UITableViewCell.EditingStyle { get }
 @property (nonatomic, readonly) UITableViewCellEditingStyle editingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 One of the constants described in [`UITableViewCell.EditingStyle`](./editingstyle-swift.enum.md) is used as the value of this property; it specifies whether the cell is in an editable state and, if it is, whether it shows an insertion or deletion control. The default value is [`UITableViewCell.EditingStyle.none`](./editingstyle-swift.enum/none.md) (not editable). The delegate returns the value of this property for a particular cell in its implementation of the [`tableView(_:editingStyleForRowAt:)`](../uitableviewdelegate/tableview%28_,editingstyleforrowat%29.md) method.
 

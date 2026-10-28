@@ -17,11 +17,11 @@ Makes a CFNetService available on the network.
 extern Boolean CFNetServiceRegister(CFNetServiceRef theService, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if an asynchronous service registration was started; `FALSE` if an asynchronous or synchronous registration failed or if a synchronous registration was canceled.
 
-#### Discussion
+## Discussion
 
 If the service is to run in asynchronous mode, you must call [`CFNetServiceSetClient(_:_:_:)`](./cfnetservicesetclient%28_,_,_%29.md) to associate a callback function with this CFNetService before calling this function.
 
@@ -29,7 +29,7 @@ When registering a service that runs in asynchronous mode, this function returns
 
 When registering a service that runs in synchronous mode, this function blocks until an error occurs, in which case this function returns `FALSE`. Until this function returns `FALSE`, the service is available on the network. To force this function to return `FALSE`, thereby shutting down the service, call [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md) from another thread.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

@@ -13,7 +13,7 @@
 kIOHIDElementCollectionTypeNamedArray
 ```
 
-#### Discussion
+## Discussion
 
 Contains an array of selector usages.
 

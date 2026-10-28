@@ -24,7 +24,7 @@ func settingLabel(_ label: String?) -> Self
 - (instancetype) labeledValueBySettingLabel:(NSString *) label;
 ```
 
-#### Return Value
+## Return Value
 
 A labeled value object with an existing value and identifier.
 

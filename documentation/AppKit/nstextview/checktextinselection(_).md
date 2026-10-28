@@ -19,7 +19,7 @@ func checkTextInSelection(_ sender: Any?)
 - (void) checkTextInSelection:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Immediately performs the text checking and replaces the selection with the checked content.
 

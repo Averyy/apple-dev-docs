@@ -23,7 +23,7 @@ var creationDate: Date { get }
 @property (nonatomic, readonly) NSDate * creationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The time offset of the contained stroke points is relative to this date.
 

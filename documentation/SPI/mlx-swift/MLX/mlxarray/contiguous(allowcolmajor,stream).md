@@ -17,7 +17,7 @@ Force an array to be row contiguous. Copy if necessary.
 func contiguous(allowColMajor: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The row or col contiguous output.
 

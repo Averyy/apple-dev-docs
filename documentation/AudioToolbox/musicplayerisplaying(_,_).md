@@ -24,11 +24,11 @@ func MusicPlayerIsPlaying(_ inPlayer: MusicPlayer, _ outIsPlaying: UnsafeMutable
 extern OSStatus MusicPlayerIsPlaying(MusicPlayer inPlayer, Boolean *outIsPlaying);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 If a music player has started playing and has not been explicitly stopped, the `outIsPlaying` value is `true`. Specifically, if the player’s music sequence has completed—so there is no more audible output—but the player has not been explicitly stopped, the `outIsPlaying` value is `true` and the music player’s time value continues to increase.
 

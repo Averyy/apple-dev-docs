@@ -9,7 +9,7 @@ Provide users the ability to sign in to your apps and websites using their Apple
 - Sign in with Apple JS 1.0+
 - Sign in with Apple REST API 1.0+
 
-#### Overview
+## Overview
 
 Sign in with Apple gives your users a fast and safe way to sign in to your apps and websites using their Apple Account. Incorporating Sign in with Apple eliminates the need for additional sign-up steps, allowing users to engage and focus on your app or website.
 

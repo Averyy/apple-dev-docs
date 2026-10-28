@@ -24,7 +24,7 @@ var externalContentProtectionStatus: AVExternalContentProtectionStatus { get }
 @property (readonly) AVExternalContentProtectionStatus externalContentProtectionStatus;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable. Instead, use the [`contentKeySession(_:externalProtectionStatusDidChangeFor:)`](../avcontentkeysessiondelegate/contentkeysession%28_,externalprotectionstatusdidchangefor%29.md) delegate method to monitor changes to this value.
 

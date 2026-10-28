@@ -17,7 +17,7 @@ A caption option that displays a default value.
 case defaultText
 ```
 
-#### Discussion
+## Discussion
 
 The default option omits the caption from the contact access button, showing only the contact name.
 

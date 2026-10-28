@@ -20,7 +20,7 @@ class NSAppleScript
 @interface NSAppleScript : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides applications with the ability to
 

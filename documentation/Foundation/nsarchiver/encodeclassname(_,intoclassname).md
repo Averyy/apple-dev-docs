@@ -24,7 +24,7 @@ func encodeClassName(_ trueName: String, intoClassName inArchiveName: String)
 - (void) encodeClassName:(NSString *) trueName intoClassName:(NSString *) inArchiveName;
 ```
 
-#### Discussion
+## Discussion
 
 Any subsequently encountered objects of class `trueName` are archived as instances of class `inArchiveName`. It is safest not to invoke this method during the archiving process (that is, within an [`encode(with:)`](../nscoding/encode%28with%29.md) method). Instead, invoke it before [`encodeRootObject(_:)`](./encoderootobject%28_%29.md).
 

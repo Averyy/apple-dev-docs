@@ -22,7 +22,7 @@ var isMultipleTouchEnabled: Bool { get set }
 @property (nonatomic, getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the view receives all touches associated with a multi-touch sequence and starting within the view’s bounds. When set to [`false`](../../Swift/false.md), the view receives only the first touch event in a multi-touch sequence that start within the view’s bounds. The default value of this property is [`false`](../../Swift/false.md).
 

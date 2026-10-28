@@ -16,7 +16,7 @@ An error that indicates the app lacks user permission for the microphone.
 static var microphoneUnauthorized: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this error occurs, the app needs to prompt the user to give permission to use the microphone in Settings.
 

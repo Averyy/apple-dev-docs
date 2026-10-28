@@ -16,7 +16,7 @@ The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovere
 @property (nonatomic, copy, readonly, nullable) NSNumber * bluetoothRSSI;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the signal strength in dBm when the session discovered the accessory.
 

@@ -5,7 +5,7 @@
 
 Learn how Rosetta translates executables, and understand what Rosetta can’t translate.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Rosetta was designed to make the transition to Apple silicon easier, and will be available through macOS 27 — as a general-purpose tool for Intel apps to help developers complete the migration of their apps. Beyond this timeframe, we will keep a subset of Rosetta functionality aimed at supporting older unmaintained gaming titles, that rely on Intel-based frameworks.
 
@@ -19,7 +19,7 @@ The system prefers to execute a Mac app’s `arm64` instructions on Apple silico
 
 > ❗ **Important**: The system prevents you from mixing `arm64` code and `x86_64` code in the same process. Rosetta translation applies to an entire process, including all code modules that the process loads dynamically. For information on how to determine when your app is running under Rosetta translation, see [Determine whether your app is running as a translated binary](./about-the-rosetta-translation-environment.md#Determine-whether-your-app-is-running-as-a-translated-binary).
 
-##### Learn what Rosetta can’t translate
+### Learn what Rosetta can’t translate
 
 Rosetta can translate most Intel-based apps, including apps that contain just-in-time (JIT) compilers. However, Rosetta doesn’t translate the following executables:
 
@@ -28,7 +28,7 @@ Rosetta can translate most Intel-based apps, including apps that contain just-in
 
 Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2  instruction set, but it doesn’t support the execution of AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) function to check the `hw.optional.avx512f` attribute.
 
-##### Determine whether your app is running as a translated binary
+### Determine whether your app is running as a translated binary
 
 On Apple silicon, a universal binary may run either natively or as a translated binary. The system runs the native version whenever possible, but the user might opt to run the code using Rosetta to support older plug-ins.
 

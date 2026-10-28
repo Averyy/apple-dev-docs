@@ -20,7 +20,7 @@ A 3D scene composed from one or more Universal Scene Description (USD) documents
 struct USDStage
 ```
 
-#### Overview
+## Overview
 
 Stages support authoring, animating, and composing 3D data from various 3D file formats. A stage can contain meshes, materials, cameras, lights, or arbitrary custom data, as well as references to textures or additional scene data stored in separate files.
 

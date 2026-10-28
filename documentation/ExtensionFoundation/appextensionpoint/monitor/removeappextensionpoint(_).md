@@ -21,7 +21,7 @@ Removes the specified extension point and stops tracking the associated app exte
 final func removeAppExtensionPoint(_ appExtensionPoint: AppExtensionPoint) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the state of the monitor, removing the specified extension point from the list of those it’s tracking. Removing an extension point causes the monitor to update the [`identities`](./identities.md) property as needed.
 

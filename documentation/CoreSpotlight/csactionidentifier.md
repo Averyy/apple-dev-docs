@@ -22,7 +22,7 @@ let CSActionIdentifier: String
 extern NSString * const CSActionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects a custom action on an indexed item, the system launches your app and invokes [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md). The `userInfo` dictionary of the specified [`NSUserActivity`](../Foundation/nsuseractivity.md) includes the corresponding `Info.plist` using this key.
 

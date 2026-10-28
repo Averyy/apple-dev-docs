@@ -22,7 +22,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, item: UIDragItem
 - (void) dropInteraction:(UIDropInteraction *) interaction item:(UIDragItem *) item willAnimateDropWithAnimator:(id<UIDragAnimating>) animator;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called for each drag item in the session, whether the item’s visible or not.
 

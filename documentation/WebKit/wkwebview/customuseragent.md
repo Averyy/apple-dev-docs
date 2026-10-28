@@ -23,7 +23,7 @@ var customUserAgent: String? { get set }
 @property (nonatomic, copy, nullable) NSString * customUserAgent;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a custom user agent string for your web view. The default value of this property is `nil`.
 

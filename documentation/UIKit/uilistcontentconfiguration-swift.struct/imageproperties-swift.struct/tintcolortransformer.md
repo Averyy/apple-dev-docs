@@ -19,7 +19,7 @@ The color transformer for resolving the tint color.
 var tintColorTransformer: UIConfigurationColorTransformer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`tintColor`](./tintcolor.md) without any transformations.
 

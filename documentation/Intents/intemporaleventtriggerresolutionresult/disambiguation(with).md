@@ -23,11 +23,11 @@ class func disambiguation(with temporalEventTriggersToDisambiguate: [INTemporalE
 + (instancetype) disambiguationWithTemporalEventTriggersToDisambiguate:(NSArray<INTemporalEventTrigger *> *) temporalEventTriggersToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemporalEventTriggerResolutionResult`](../intemporaleventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one trigger condition matches the provided information and you cannot pick one definitively. Ask the user to select from among the triggers that you specify.
 

@@ -23,7 +23,7 @@ func setContentScrollView(_ scrollView: UIScrollView?, for edge: NSDirectionalRe
 - (void) setContentScrollView:(UIScrollView *) scrollView forEdge:(NSDirectionalRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 Toolbars, navigation bars, and tab bars adjust their appearance when the edge of a scroll view’s content aligns with the edge of the bar. The view controller identifies a scroll view to observe by analyzing the view hierarchy to select a scroll view. If the view hierarchy is complex, the view controller might not select the appropriate scroll view to observe. Use this method to indicate a specific scroll view for the view controller to observe.
 

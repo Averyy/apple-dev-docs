@@ -17,7 +17,7 @@ Sets whether the user can resize the receiver in its NSTableView.
 - (void) setResizable:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 You can change the table column size programmatically regardless of this setting, with the minimum and maximum constraints defined by [`minWidth`](./minwidth.md) and [`maxWidth`](./maxwidth.md).
 

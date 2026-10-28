@@ -18,7 +18,7 @@ The number of buffers the stream requires for startup.
 var sinkBuffersRequiredForStartup: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property translates to the [`kCMIOStreamPropertyOutputBuffersRequiredForStartup`](../kcmiostreampropertyoutputbuffersrequiredforstartup.md) property.
 

@@ -43,7 +43,7 @@ typedef SInt16 AudioSampleType;
 typedef Float32 AudioSampleType;
 ```
 
-#### Discussion
+## Discussion
 
 The canonical audio sample type for input and output in iPhone OS is linear PCM with 16-bit integer samples.
 

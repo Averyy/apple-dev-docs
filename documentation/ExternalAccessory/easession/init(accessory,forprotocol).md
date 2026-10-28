@@ -24,11 +24,11 @@ init?(accessory: EAAccessory, forProtocol protocolString: String)
 - (instancetype) initWithAccessory:(EAAccessory *) accessory forProtocol:(NSString *) protocolString;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized session object. This method may return `nil` if the accessory does not recognize the specified protocol or there was an error communicating with the accessory.
 
-#### Discussion
+## Discussion
 
 There can be only one session object at a time for a given accessory and protocol combination.
 

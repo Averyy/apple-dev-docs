@@ -17,7 +17,7 @@ The status of your app’s authorization to provide parental controls.
 <AuthorizationStatus> var authorizationStatus: AuthorizationStatus { get }
 ```
 
-#### Discussion
+## Discussion
 
 The initial value is always [`AuthorizationStatus.notDetermined`](../authorizationstatus/notdetermined.md). The system sets this property only after a call to [`requestAuthorization(for:)`](./requestauthorization%28for%29.md) succeeds. It then updates the property until a call to [`revokeAuthorization(completionHandler:)`](./revokeauthorization%28completionhandler%29.md) succeeds or your app exits.
 

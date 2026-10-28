@@ -25,11 +25,11 @@ func vImageConvert_RGBFFFtoRGB888_dithered(_ src: UnsafePointer<vImage_Buffer>, 
 vImage_Error vImageConvert_RGBFFFtoRGB888_dithered(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_F maxFloat[3], const Pixel_F minFloat[3], int dither, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function supports the following dithering algorithms:
 

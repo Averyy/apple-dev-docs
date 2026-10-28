@@ -21,7 +21,7 @@ An error code for problems related to retrieving a model’s decryption key.
 static var modelDecryptionKeyFetch: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when the device doesn’t have access to the network.
 

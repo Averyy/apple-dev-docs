@@ -15,7 +15,7 @@ Leverage compression algorithms for lossless data compression.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The Compression framework enables your app to provide lossless compression when saving or sharing files and data. Compression is a process in which you compress (encode) and decompress (decode) data. For example, a text editor may save its files in a compressed format, and automatically decompress the saved file when the user opens it.
 

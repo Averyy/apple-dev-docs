@@ -17,7 +17,7 @@ An object that manages an ARKit session.
 var arSession: ARSession
 ```
 
-#### Discussion
+## Discussion
 
 You may use this object to display your own AR experience.
 

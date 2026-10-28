@@ -14,11 +14,11 @@
 virtual bool conformsTo(uint32_t usagePage, uint32_t usage);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a bool specifying if the element conforms to the provided usage page and usage.
 
-#### Discussion
+## Discussion
 
 Checks if the element conforms to the provided usage page and usage somewhere in its hierarchy.
 

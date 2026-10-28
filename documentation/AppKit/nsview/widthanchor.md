@@ -19,7 +19,7 @@ var widthAnchor: NSLayoutDimension { get }
 @property (strong, readonly) NSLayoutDimension * widthAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s width. You can only combine this anchor with other [`NSLayoutDimension`](../../UIKit/nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

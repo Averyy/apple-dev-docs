@@ -22,7 +22,7 @@ weak var activityItemsConfigurationSource: (any UIActivityItemsConfigurationProv
 @property (nonatomic, weak, nullable) id<UIActivityItemsConfigurationProviding> activityItemsConfigurationSource;
 ```
 
-#### Discussion
+## Discussion
 
 When a user asks Siri to “share this” on iOS, or clicks an [`NSSharingServicePickerToolbarItem`](../../AppKit/nssharingservicepickertoolbaritem.md) in the toolbar of an app built with Mac Catalyst, the system asks the current scene or view controller what to share. You can supply multiple representations of the current content, such as a file, image, and URL.
 

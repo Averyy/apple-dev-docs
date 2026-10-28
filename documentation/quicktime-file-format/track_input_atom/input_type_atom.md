@@ -6,7 +6,7 @@
 
 An atom that specifies how to interpret track input data.
 
-#### Overview
+## Overview
 
 For more information, see [`Input type atom`](../input_type_atom.md).
 

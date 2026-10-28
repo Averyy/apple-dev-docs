@@ -22,7 +22,7 @@ nonisolated
 func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier along with the [`scrollTargetLayout(isEnabled:)`](./scrolltargetlayout%28isenabled%29.md) modifier to know the identity of the view that is actively scrolled. As the scroll view scrolls, the binding will be updated with the identity of the leading-most / top-most view.
 

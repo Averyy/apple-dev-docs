@@ -5,7 +5,7 @@
 
 Create and manage typed data your app uses to exchange information with its shader functions.
 
-#### Overview
+## Overview
 
 [`MTLTexture`](./mtltexture.md) instances can serve as input and output resources to shader functions, as well as render pass destinations, or *render attachments*. Unlike buffers, textures define the underlying pixel type and structure. Textures can:
 

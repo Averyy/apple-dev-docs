@@ -25,7 +25,7 @@ case ready
 INAppendToNoteIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Return this response code during the confirmation phase after you’ve verified that you’re able to update the note. Don’t return this response code when handling the intent; doing so causes the device to display an error.
 

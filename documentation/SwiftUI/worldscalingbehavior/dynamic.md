@@ -15,7 +15,7 @@ The window will scale up as it moves further away, maintaining the same angular 
 static var dynamic: WorldScalingBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Prefer dynamic window scaling for windows that display dense UI or a lot of text. Using dynamic scaling ensures that controls and text remain at a comfortable size regardless of the window’s position.
 

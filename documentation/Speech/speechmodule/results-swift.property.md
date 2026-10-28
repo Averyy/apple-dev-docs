@@ -21,7 +21,7 @@ An asynchronous sequence containing this module’s analysis results. Results ar
 var results: Self.Results { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each module has its own result sequence and data structure.
 

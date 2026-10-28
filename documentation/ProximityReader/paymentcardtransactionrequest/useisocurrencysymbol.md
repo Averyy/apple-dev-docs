@@ -17,7 +17,7 @@ A boolean value that sets the system UI’s currency symbol to ISO 4217 three-le
 var useISOCurrencySymbol: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value  is `false`.
 

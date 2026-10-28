@@ -21,7 +21,7 @@ A view that lists different types of recent events in a person’s life.
 - [Presenting the suggestions picker and processing a selection](./presenting-the-suggestions-picker-and-processing-a-selection.md)
 - [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
-#### Overview
+## Overview
 
 This interface displays several grids of content that layout visual mementos, each representing unique, personal events that occur in a person’s life. It enables a person to reflect and choose a particular event as a topic for derivative work. For example, a workout can serve as the beginnings of a new journal entry or illustration.
 

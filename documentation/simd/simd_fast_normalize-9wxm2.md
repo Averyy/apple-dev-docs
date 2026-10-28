@@ -12,11 +12,11 @@ Returns the fast normalized vector.
 static simd_float2 simd_fast_normalize(simd_float2 __x);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized vector.
 
-#### Discussion
+## Discussion
 
 This function returns an undefined value if the supplied vector has zero length or is poorly scaled such that an intermediate computation overflows or underflows.
 

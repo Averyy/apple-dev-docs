@@ -22,7 +22,7 @@ case wheels
 UIDatePickerStyleWheels
 ```
 
-#### Discussion
+## Discussion
 
 Editing the date picker value occurs inline when using this style.
 

@@ -19,7 +19,7 @@ struct Value
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 Elements can have data associated with them. This data could be received as an update from the device to indicate user interaction, or could be provided to the device to alter functionality, such as turning on an LED. As the data for an element could be constantly changing, values should be seen as a snapshot of the element’s data at a specific time, and not valid at any other times.
 

@@ -19,7 +19,7 @@ string header
 
 **Maximum Length**: `66`
 
-#### Discussion
+## Discussion
 
 Provide the `header` as a UTF-8-encoded string. The maximum string length is `66`.
 

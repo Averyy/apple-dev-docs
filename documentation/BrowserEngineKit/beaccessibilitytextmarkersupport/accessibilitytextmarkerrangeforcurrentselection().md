@@ -25,7 +25,7 @@ func accessibilityTextMarkerRangeForCurrentSelection() -> BEAccessibilityTextMar
 - (BEAccessibilityTextMarkerRange *) accessibilityTextMarkerRangeForCurrentSelection;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s no text selected in the element, return `nil`.
 

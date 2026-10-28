@@ -23,7 +23,7 @@ var videoMaxZoomFactorForDepthDataDelivery: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoMaxZoomFactorForDepthDataDelivery;
 ```
 
-#### Discussion
+## Discussion
 
 Depth data capture requires coordinating the zoom factors of the two cameras on a dual-camera device. Therefore, when you enable depth data delivery for a capture format using the [`AVCaptureDepthDataOutput`](../../avcapturedepthdataoutput.md) class, the range of available values for the device’s [`videoZoomFactor`](../videozoomfactor.md) property is reduced.
 

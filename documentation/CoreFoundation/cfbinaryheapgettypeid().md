@@ -25,7 +25,7 @@ func CFBinaryHeapGetTypeID() -> CFTypeID
 extern CFTypeID CFBinaryHeapGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of the `CFBinaryHeap` opaque type.
 

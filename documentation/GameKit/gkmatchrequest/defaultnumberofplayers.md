@@ -25,7 +25,7 @@ var defaultNumberOfPlayers: Int { get set }
 @property (assign) NSUInteger defaultNumberOfPlayers;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit uses the default number of players to present the available slots in the matchmaking user interface. The player can choose to override this to add or remove slots. If you don’t set this property, GameKit uses the value of the [`maxPlayers`](./maxplayers.md) property as the default number of players.
 

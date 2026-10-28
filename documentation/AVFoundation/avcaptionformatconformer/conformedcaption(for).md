@@ -22,7 +22,7 @@ func conformedCaption(for caption: AVCaption) throws -> AVCaption
 - (AVCaption *) conformedCaptionForCaption:(AVCaption *) caption error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A caption that conforms to the defined caption format.
 

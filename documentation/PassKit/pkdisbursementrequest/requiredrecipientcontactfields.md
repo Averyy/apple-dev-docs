@@ -23,7 +23,7 @@ var requiredRecipientContactFields: [PKContactField] { get set }
 @property (nonatomic, strong) NSArray<NSString *> * requiredRecipientContactFields;
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses these details to display the input fields for name, email address, phone number, and so on on the payment sheet. The framework always shows them in a specific order, regardless of the order of API input.
 

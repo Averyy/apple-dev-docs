@@ -23,7 +23,7 @@ class CKAllowedSharingOptions
 @interface CKAllowedSharingOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 Register an instance of this class with an [`NSItemProvider`](../Foundation/nsitemprovider.md) or when preparing a [`CKShareTransferRepresentation.ExportedShare`](./cksharetransferrepresentation/exportedshare.md) before your app invokes the share sheet. The share sheet uses the registered `CKAllowedSharingOptions` object to let the user choose between the allowed options when sharing.
 

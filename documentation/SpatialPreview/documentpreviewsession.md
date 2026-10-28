@@ -20,7 +20,7 @@ final class DocumentPreviewSession
 
 - [Bridging an external USD runtime to Spatial Preview](./bridging-an-external-usd-runtime-to-spatial-preview.md)
 
-#### Overview
+## Overview
 
 To start a `DocumentPreviewSession` preview, obtain an [`SpatialPreviewEndpoint`](./spatialpreviewendpoint.md) through one of two paths:
 

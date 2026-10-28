@@ -5,7 +5,7 @@
 
 Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 
-#### Overview
+## Overview
 
 In visionOS, you can use accessory tracking to make spatial accessories available in your app and to other apps. Spatial accessories are electronic devices that communicate with visionOS to track their physical location and orientation in a person’s environment.
 
@@ -21,7 +21,7 @@ Using your 3D model asset, train a machine learning model with the accessory tra
 
 ![Two views of a yellow and black handheld flashlight-style spatial accessory with LED markers on its top surface: one showing the front, and one showing the rear panel with a power button and additional controls.](https://developer.apple.com/tutorials/images/com.apple.arkit/spatial-accessory@2x.png)
 
-#### Ensure your items are suitable for accessory tracking
+## Ensure your items are suitable for accessory tracking
 
 Before you start building the accessory model, verify that your spatial accessory meets the hardware and protocol requirements for tracking.
 
@@ -31,13 +31,13 @@ Trackable spatial accessories need to:
 - Send HID reports only in response to a direct action from the person using the spatial accessory.
 - Configure an LED constellation, a layout formed on the spatial accessory consisting of LEDs, suitable for visual tracking.
 
-#### Bring your spatial accessory to Apple Vision Pro
+## Bring your spatial accessory to Apple Vision Pro
 
 Apple Vision Pro cameras track spatial accessories using both the *inertial measurement unit* (IMU) and an *LED constellation* pattern on the physical device. The LED constellation is the arrangement of LEDs on your spatial accessory that the cameras use to determine the accessory’s position and orientation. visionOS learns about the spatial accessory through a model-training process that uses a 3D model of the physical spatial accessory, annotated with its IMU pose and LED constellation.
 
 For specifications on LED placement, constellation uniqueness, material requirements, and distance-dependent design parameters, see the [Accessory Design Guidelines](https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf).
 
-#### Obtain a 3D model of your object
+## Obtain a 3D model of your object
 
 Provide an annotated 3D model of your spatial accessory in USDZ format that includes your LED constellation and IMU pose information. The accessory tracking tool uses this information to train a machine learning model and generate the reference accessory file.
 
@@ -49,7 +49,7 @@ When creating your 3D model, ensure that:
 - The 3D model only has one mesh before exporting to USDZ. If your 3D model contains a large number of individual part meshes, merge them into a single mesh, then export to USDZ.
 - The base USDZ is color accurate and matches the appearance of your physical spatial accessory.
 
-#### Convert your model to USD format
+## Convert your model to USD format
 
 If your model is already in USDZ format, skip to [Add LEDs to your 3D model](./preparing-spatial-accessories-for-tracking-in-your-visionos-app.md#Add-LEDs-to-your-3D-model). If your model is in `OBJ`, `glTF`, `GLB`, `PLY`, `ABC`, or `STL` format, convert it to USD first.
 
@@ -64,7 +64,7 @@ To batch-convert other supported formats, use the USD command line tools:
 - Use `usdcat <inputFile> -o <output.usdc>` to convert a non-USD file to USDC format.
 - Use `usdzip <output.usdz> -a <model.usdc>` to package the USDC file along with any resources into a USDZ package.
 
-#### Add LEDs to your 3D model
+## Add LEDs to your 3D model
 
 For the LED constellation, add the LED points that match the pose on the physical device so that the system can accurately track each part. To set up the LED constellation:
 
@@ -96,7 +96,7 @@ Adjust the size of the LED and use the Transform section to the right of the vie
 
 ![Reality Composer Pro showing the Transform Component with position, rotation, and scale values for an LED, and the Radius field for sizing.](https://developer.apple.com/tutorials/images/com.apple.arkit/spatial-accessory-transform-led@2x.png)
 
-##### Define the material of the LED
+### Define the material of the LED
 
 Also in the Transform section, define the material of the LED. Make sure that:
 
@@ -105,7 +105,7 @@ Also in the Transform section, define the material of the LED. Make sure that:
 - The texture resolution is less than or equal to 4096 x 4096 pixels.
 - The material of the controller body is nonreflective and nontransparent.
 
-##### Confirm your LED constellation
+### Confirm your LED constellation
 
 As you add more LEDs to the model to create the constellation, make sure your model has:
 
@@ -115,7 +115,7 @@ As you add more LEDs to the model to create the constellation, make sure your mo
 
 > **Note**: Address these requirements when designing your physical spatial accessory. You can’t correct these specifications when adding the LEDs to the model if you didn’t design your device to meet them.
 
-##### Add the IMU transform to the model
+### Add the IMU transform to the model
 
 In addition to the LED constellation, add the IMU transform to your model. The IMU transform defines the location and orientation of the IMU within the spatial accessory, representing the rotation and translation of the IMU frame relative to the USD frame.
 
@@ -127,11 +127,11 @@ LEDs allow you to mark each section of the spatial accessory so visionOS accurat
 
 > ❗ **Important**: After exporting your annotated USDZ from Reality Composer Pro, open the file in Preview to verify that all materials and textures exported correctly. If any materials appear transparent, re-export the file.
 
-#### Train your assets with the accessory tracking tool
+## Train your assets with the accessory tracking tool
 
 Use `xcrun createml accessorytracker` to create, configure, and train reference accessory files unique to your chosen spatial accessories. Training runs locally on your Mac and can take a day or two depending on your hardware.
 
-##### Create a training workspace
+### Create a training workspace
 
 Start by creating a new workspace package and adding your spatial accessories. Each accessory requires a name, a source USDZ file, and a uniform type identifier (UTI):
 
@@ -145,7 +145,7 @@ The tool validates your source files and runs pretraining diagnostics. Review an
 
 > **Note**: The tool ignores any animations, virtual cameras, and lights within the asset during training, treating them as static.
 
-##### Inspect your accessories
+### Inspect your accessories
 
 Use the `inspect` command to review your accessories’ settings, including IMU transforms and coordinate frames:
 
@@ -159,7 +159,7 @@ To inspect a specific accessory by its UTI, use the following command:
 % xcrun createml accessorytracker inspect my-project.package com.example.game-controller
 ```
 
-##### Update accessory attributes
+### Update accessory attributes
 
 To modify an accessory after creating the workspace, use the `update-object`, `rename-object`, or `add-frame` commands. As long as you don’t change the source USDZ file, you don’t need to retrain the accessory.
 
@@ -177,7 +177,7 @@ To add a coordinate frame:
     name=grip transform=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
 ```
 
-##### Launch training
+### Launch training
 
 After configuring your accessories, run the `train` command:
 
@@ -189,7 +189,7 @@ Training can take a day or two depending on the configuration of your Mac. A mor
 
 > **Note**: Apple Vision Pro can track up to two reference spatial accessories simultaneously.
 
-#### Export the reference accessory file
+## Export the reference accessory file
 
 When training is complete, export your workspace to produce the reference accessory file:
 
@@ -200,13 +200,13 @@ When training is complete, export your workspace to produce the reference access
 
 The reference accessory file contains the trained model packaged with your 3D model assets in the `.referenceaccessory` file format. Use the USDZ file within the reference accessory for visualizing the tracking quality by rendering it as an overlay on the real-world spatial accessory, and as a guide for adding immersive effects.
 
-#### Distribute your reference accessory file
+## Distribute your reference accessory file
 
 Apps need access to your `.referenceaccessory` file to use your accessory. By default, manufacturers can ship an app that exports the file system-wide. However, this means that people need to install your app to use your accessory.
 
 To avoid this dependency, Apple recommends also making the `.referenceaccessory` file available for developers to download. Apps that bundle the file work with your accessory the moment it connects, with no dependency on your app being installed. When your app is installed, its exported declaration still takes precedence.
 
-#### Integrate the reference accessory file into your app
+## Integrate the reference accessory file into your app
 
 For accessory tracking to work at runtime:
 

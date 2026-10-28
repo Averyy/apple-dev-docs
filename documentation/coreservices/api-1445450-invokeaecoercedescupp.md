@@ -19,11 +19,11 @@ func InvokeAECoerceDescUPP(_ fromDesc: UnsafePointer<AEDesc>!, _ toType: DescTyp
 OSErr InvokeAECoerceDescUPP(const AEDesc *fromDesc, DescType toType, SRefCon handlerRefcon, AEDesc *toDesc, AECoerceDescUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`AECoerceDescProcPtr`](./aecoercedescprocptr.md) callback function. 
 

@@ -25,7 +25,7 @@ static let NSUndoManagerDidOpenUndoGroup: NSNotification.Name
 extern NSNotificationName const NSUndoManagerDidOpenUndoGroupNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification originates in the implementation of the [`beginUndoGrouping()`](../../undomanager/beginundogrouping%28%29.md) method.
 

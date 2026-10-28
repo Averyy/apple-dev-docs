@@ -21,7 +21,7 @@ Append a given number of items to the end of this array by populating an output 
 mutating func append<E>(addingCount newItemCount: Int, initializingWith initializer: @_lifetime(0: copy 0) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold the requested number of new elements, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 

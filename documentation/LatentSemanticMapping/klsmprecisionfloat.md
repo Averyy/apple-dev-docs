@@ -20,7 +20,7 @@ var kLSMPrecisionFloat: String { get }
 #define kLSMPrecisionFloat
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value for [`kLSMAlgorithmDense`](./klsmalgorithmdense.md).
 

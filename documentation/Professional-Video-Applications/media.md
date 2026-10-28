@@ -4,7 +4,7 @@
 
 Describe a compound clip or a multi-camera media definition.
 
-#### Overview
+## Overview
 
 A `media` element describes the construction of a compound clip media or a multicam media. Use the `sequence` element to describe a compound clip media, and the `multicam` element to describe a multicam media.
 

@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_ViewPackingKind: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ViewPackingKind;
 ```
 
-#### Discussion
+## Discussion
 
 The value will be set on the format description (`kCMFormatDescriptionExtension_ViewPackingKind`) for output samples and may affect the decoded frame presentation.
 

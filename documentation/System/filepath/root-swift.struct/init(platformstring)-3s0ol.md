@@ -21,7 +21,7 @@ Creates a file path root by copying bytes from a null-terminated platform string
 init?(platformString: [CInterop.PlatformChar])
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `platformString` is empty or is not a root.
 

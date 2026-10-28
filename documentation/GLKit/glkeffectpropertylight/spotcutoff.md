@@ -24,7 +24,7 @@ var spotCutoff: GLfloat { get set }
 @property (nonatomic, assign) GLfloat spotCutoff;
 ```
 
-#### Discussion
+## Discussion
 
 If the `w` component of the position is not equal to `0.0`, the value of the [`spotCutoff`](./spotcutoff.md) property determines whether the light is a point light or a spotlight. A cutoff value of `180.0` indicates that the light is a point light; for a point light, the [`spotDirection`](./spotdirection.md) and [`spotExponent`](./spotexponent.md) properties are ignored. Otherwise, the [`spotCutoff`](./spotcutoff.md) property represents the maximum angle at which the light contributes lighting to the scene. The angle is measured between the vector provided by the [`spotDirection`](./spotdirection.md) property and a vector drawn from the light’s position to the point being lit. If the angle exceeds this amount, then the light contributes no light to the scene.
 

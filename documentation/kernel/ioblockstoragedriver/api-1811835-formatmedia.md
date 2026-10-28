@@ -10,11 +10,11 @@ virtual IOReturn formatMedia(
  UInt64byteCapacity);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Format the media with the specified byte capacity. The driver is responsible for tearing down the media object and recreating it.
 

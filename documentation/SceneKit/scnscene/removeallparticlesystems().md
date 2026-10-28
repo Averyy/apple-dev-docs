@@ -25,7 +25,7 @@ func removeAllParticleSystems()
 - (void) removeAllParticleSystems;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method does not remove particle systems attached to nodes within the scene.
 

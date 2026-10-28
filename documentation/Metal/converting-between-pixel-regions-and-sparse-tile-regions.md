@@ -5,11 +5,11 @@
 
 Learn how a sparse texture’s contents are organized in memory.
 
-#### Overview
+## Overview
 
 In Metal, when you create textures or copy data into or out of them, you specify sizes and regions in pixels. (Usually, this means creating [`MTLSize`](./mtlsize.md) and [`MTLRegion`](./mtlregion.md) structures that specify sizes and offsets in pixel units.) You still use [`MTLSize`](./mtlsize.md) and [`MTLRegion`](./mtlregion.md) when working with sparse textures. However, some new actions, such as mapping and unmapping of memory in sparse textures, require you to specify sizes in tile-sized units instead. Metal provides utility methods that convert between pixel measurements and tile-sized measurements.
 
-##### Determine the dimensions of a sparse tile
+### Determine the dimensions of a sparse tile
 
 All sparse tiles created by a given device object have the same size in bytes. However, the number of pixels in a sparse tile varies for each texture, depending on pixel size. To get the dimensions, in pixels, of a sparse tile for a specific texture format, call the [`sparseTileSize(with:pixelFormat:sampleCount:)`](./mtldevice/sparsetilesize%28with,pixelformat,samplecount%29.md) method on the device object, passing in the texture format and sample count:
 
@@ -25,7 +25,7 @@ All tiles in a texture have the same dimensions, and the texture is laid out as 
 
 If the tile size is `64 x 64`, to cover the texture, you need a `4 x 4` grid of sparse tiles. An [`MTLRegion`](./mtlregion.md) in tile coordinates with an origin of `(0,0)` and a size of `(1,1)` corresponds to a pixel region with an origin of `(0,0)` and a size of `(64,64)`. Similarly, a tile region with an origin of `(2,1)` and a size of `(2,3)` corresponds to a pixel region with an origin of `(128,64)` and a size of `(128,196)`.
 
-##### Convert from pixels to tiles
+### Convert from pixels to tiles
 
 To convert from a pixel region to a tile region, call the [`convertSparsePixelRegions(_:toTileRegions:withTileSize:alignmentMode:numRegions:)`](./mtldevice/convertsparsepixelregions%28_,totileregions,withtilesize,alignmentmode,numregions%29.md) method on a device object, as shown in the code below:
 
@@ -42,7 +42,7 @@ MTLRegion tileRegion[1];
 
 If the pixel region doesn’t precisely align to the tile size, the alignment mode parameter determines whether the tile region expands outward to encompass any partially covered tiles ([`MTLSparseTextureRegionAlignmentMode.outward`](./mtlsparsetextureregionalignmentmode/outward.md)) or whether those partially covered regions are ignored ([`MTLSparseTextureRegionAlignmentMode.inward`](./mtlsparsetextureregionalignmentmode/inward.md)).
 
-##### Convert from tiles to pixels
+### Convert from tiles to pixels
 
 Similarly, you can convert from tile units into pixel units. The resulting pixel region is always aligned to tile boundaries, so you don’t need to specify an alignment parameter.
 

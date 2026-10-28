@@ -19,7 +19,7 @@ func setEnabled(_ enabled: Bool)
 - (void) setEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps an enabled button, WatchKit executes the associated action method (if any) in your WatchKit extension code. A disabled button does not respond to taps in its content area.
 

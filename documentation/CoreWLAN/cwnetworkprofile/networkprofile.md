@@ -15,7 +15,7 @@ Convenience method for getting a CWNetworkProfile object.
 + (instancetype) networkProfile;
 ```
 
-#### Return Value
+## Return Value
 
 An CWNetworkProfile object.
 

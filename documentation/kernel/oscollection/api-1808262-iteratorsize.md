@@ -11,11 +11,11 @@ Returns the size in bytes of a subclass's iteration context.
 virtual unsigned int iteratorSize() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The size in bytes of the iteration context needed by the subclass of OSCollection.
 
-#### Overview
+## Overview
 
 This pure virtual member function, which subclasses must implement, is called by an OSCollectionIterator object so that it can allocate the storage needed for the iteration context. An iteration context contains the data necessary to iterate through the collection.
 

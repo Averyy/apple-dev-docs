@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The Apple Event Manager, a part of the Open Scripting Architecture (OSA), provides facilities for applications to send and respond to Apple events and to make their operations and data available to AppleScript scripts. For related API reference, see Open Scripting Architecture Reference.
 
@@ -21,7 +21,7 @@ The Apple Event Manager is implemented by the AE framework, a subframework of th
 
 The AE framework does not force a connection to the window server. This allows daemons and startup items that work with Apple events to continue working across log outs.
 
-##### Gestalt Constants
+### Gestalt Constants
 
 You can check for version and feature availabilityinformation by using the Apple Event Manager selectors defined inthe Gestalt Manager. For more information see *Inside macOS: Gestalt Manager Reference*. 
 

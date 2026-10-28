@@ -25,11 +25,11 @@ func string(withFileSystemRepresentation str: UnsafePointer<CChar>, length len: 
 - (NSString *) stringWithFileSystemRepresentation:(const char *) str length:(NSUInteger) len;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSString`](../nsstring.md) object converted from the C-string representation `string` with length `len` of a pathname in the current file system.
 
-#### Discussion
+## Discussion
 
 Use this method if your code receives paths as C strings from system routines.
 

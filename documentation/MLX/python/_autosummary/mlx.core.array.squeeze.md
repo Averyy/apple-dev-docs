@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.squeeze
 
-**array.squeeze(*self*, *axis: int | Sequence[int] | None = None*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [squeeze()](mlx.core.squeeze.md#mlx.core.squeeze).
+```python
+array.squeeze(self, axis: int | Sequence[int] | None = None, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [squeeze()](mlx.core.squeeze.md#mlx.core.squeeze).

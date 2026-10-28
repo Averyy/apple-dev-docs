@@ -24,7 +24,7 @@ var maximumTLSVersion: NEVPNIKEv2TLSVersion { get set }
 @property NEVPNIKEv2TLSVersion maximumTLSVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NEVPNIKEv2TLSVersion.versionDefault`](../nevpnikev2tlsversion/versiondefault.md).
 

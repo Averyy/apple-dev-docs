@@ -21,7 +21,7 @@ Creates a sort descriptor using a sort descriptor and a type that you specify.
 init?(_ descriptor: NSSortDescriptor, comparing comparedType: Compared.Type) where Compared : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there isn’t a [`SortDescriptor`](../sortdescriptor.md) equivalent to the [`NSSortDescriptor`](../nssortdescriptor.md) you specify, or if the selector to [`NSSortDescriptor`](../nssortdescriptor.md) isn’t one of the standard string comparison algorithms or `compare(_:)`.
 

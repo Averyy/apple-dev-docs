@@ -24,7 +24,7 @@ var keepNetworkOutput: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL keepNetworkOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md); otherwise, the request ignores [`outputPixelFormat`](./outputpixelformat.md).
 

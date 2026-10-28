@@ -5,13 +5,13 @@
 
 Integrate Writing Tools support, including support for inline replacement animations, to your custom text views on macOS.
 
-#### Overview
+## Overview
 
 Even if you don’t use a [`NSTextView`](./nstextview.md) or [`NSTextField`](./nstextfield.md) object in your app, you can still add Writing Tools support to other views that contain text. You might use this support when you prefer not to use the standard text views. For example, you might use it if you build your own text view using TextKit or your own proprietary text engine. The AppKit API for this support gives you access to the same Writing Tools features available in the system views, including the ability to animate changes to the text in your view.
 
 When a person triggers the Writing Tools UI from your custom view, AppKit works with your view to evaluate the relevant text and incorporate changes. You specify the type of Writing Tools experience you want for your view. The complete experience animates changes to your view’s content directly, working with your view to create those animations. The limited experience displays changes in the Writing Tools UI, and only incorporates the final changes back into your view’s text storage. All of these interactions happen with the help of the [`NSWritingToolsCoordinator`](./nswritingtoolscoordinator.md) object you assign to your view.
 
-##### Add a Writing Tools coordinator to your view
+### Add a Writing Tools coordinator to your view
 
 An [`NSWritingToolsCoordinator`](./nswritingtoolscoordinator.md) object manages interactions between your view and the Writing Tools feature. You attach this object to your view by assigning it to the [`writingToolsCoordinator`](./nsview/writingtoolscoordinator.md) property of [`NSView`](./nsview.md). To manage your view-specific behavior, you provide a delegate object when setting up the coordinator. Your delegate provides Writing Tools with initial text to evaluate, incorporates changes, provides proofreading marks, and provides preview objects to use during animations.
 
@@ -41,7 +41,7 @@ The presence of a coordinator object on your view causes AppKit to enable Writin
 
 For a complete list of delegate methods you must implement to support Writing Tools, see [`NSWritingToolsCoordinator.Delegate`](./nswritingtoolscoordinator/delegate-swift.protocol.md).
 
-##### Configure your view’s Writing Tools behavior
+### Configure your view’s Writing Tools behavior
 
 When setting up Writing Tools for your view, configure your coordinator’s [`preferredBehavior`](./nswritingtoolscoordinator/preferredbehavior.md) property with the types of interactions you support. Writing Tools offers different levels of integration with your view’s content, which also affects how much work you need to do to support the feature. With the complete experience, you provide AppKit with more information so that it can make changes directly in your view. The limited experience pushes more interactions into the Writing Tools UI, giving you a less integrated experience, but one that’s easier to implement.
 
@@ -63,7 +63,7 @@ func configureWritingTools() {
 
 The availability of Writing Tools depends on the current device, its operating system, and its readiness to execute requests. On devices with appropriate hardware, some Writing Tools features operate locally after the system downloads the required models. However, more complex requests require a network connection so the system can use [Private Cloud Compute](https://security.apple.com/documentation/private-cloud-compute) to evaluate the provided text.
 
-##### Supply your view’s text for evaluation
+### Supply your view’s text for evaluation
 
 When someone starts Writing Tools in your view, the system asks your delegate to provide the text to evaluate. Depending on what the person wants to do, Writing Tools might ask for only the selected text or it might ask for all of your view’s text. For example, they might want to proof only the currently selected text, or they might want to proofread all of the text in your view. You provide that text from your delegate inside a context object.
 
@@ -145,7 +145,7 @@ func getContextObjectForSelection() -> NSWritingToolsCoordinator.Context {
 
 After you create a context object, you can use its unique identifier as a key for saving other data. The context objects you create remain in existence for the duration of the current Writing Tools operation. If the person rejects the current changes and starts a new operation, Writing Tools asks you for a new set of context objects.
 
-##### Incorporate changes back into your text storage
+### Incorporate changes back into your text storage
 
 After evaluating your view’s text, Writing Tools delivers any suggested changes to your delegate object. If your view adopts the limited experience, Writing Tools waits until the person accepts any changes before delivering them to your view. If you adopt the complete experience, Writing Tools delivers the changes before the person accepts them. If the person later rejects the changes, Writing Tools delivers a new set of changes that restore your view’s original text.
 
@@ -179,7 +179,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 
 After each replacement operation, update other parts of your app as needed to account for the change. An [`NSTextContentManager`](./nstextcontentmanager.md) object automatically generates the required layout updates when you make changes using a transaction. If you need to update other parts of your interface, initiate those changes from your [`writingToolsCoordinator(_:replace:in:proposedText:reason:animationParameters:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,replace,in,proposedtext,reason,animationparameters,completion%29.md) method. For example, you might update a view that displays the current character count for your document. Check the `reason` parameter to determine when Writing Tools is making changes interactively, and use the provided animation parameters object to create the actual animations.
 
-##### Update your view’s selected text
+### Update your view’s selected text
 
 When working on your view’s selected text, Writing Tools updates the text selection to account for any text updates. Use your delegate’s [`writingToolsCoordinator(_:select:in:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,select,in,completion%29.md) method to update the selected text in your view. The method delivers an array of range values to allow for views to create discontiguous selections. If your view supports only a continuous range of selected characters, update your view’s selection based on the first element in the `ranges` array.
 
@@ -207,7 +207,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 }
 ```
 
-##### Generate preview images for inline animated changes
+### Generate preview images for inline animated changes
 
 When you choose the complete Writing Tools experience for your view, the system animates changes to your content directly in your view. The system creates animations when Writing Tools starts evaluating your text, when it removes old text, and when it inserts new text. Because the animations involve your content, you must help the system create them. At appropriate times, the coordinator asks your delegate object to perform the following tasks:
 
@@ -274,7 +274,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 
 In addition to providing the initial image, use the [`writingToolsCoordinator(_:prepareFor:for:in:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,preparefor,for,in,completion%29.md) method to hide the specified range of text in your view. UIKit places the image from your [`NSTextPreview`](./nstextpreview.md) object in your view at the location you specified. When the animations finish, Writing Tools calls the [`writingToolsCoordinator(_:finish:for:in:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,finish,for,in,completion%29.md) method so you can show the text in the specified range again.
 
-##### Create proofreading marks for your content
+### Create proofreading marks for your content
 
 If someone chooses a proofreading option, Writing Tools evaluates your view’s text and asks you to provide proofreading marks to decorate the view. For each mark, Writing Tools asks you to provide a Bézier path that underlines the text in a particular range. The following example uses the view’s layout manager to get the bounding rectangles for the specified range of text. It then flattens those rectangles to create a line shape underneath the text and passes the resulting paths to the completion handler. The code creates separate shapes for each rectangle to account for situations where a proofreading mark extends onto multiple lines of text.
 
@@ -317,7 +317,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 }
 ```
 
-##### Respond to state changes
+### Respond to state changes
 
 During the course of changing content, the state of the Writing Tools system changes based on what’s happening. Writing Tools starts in the inactive state, but quickly moves to other states based on the type of experience it creates. When a person accepts or rejects the changes for the current operation, Writing Tools moves back to inactive state. You might use your delegate’s [`writingToolsCoordinator(_:willChangeTo:completion:)`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,willchangeto,completion%29.md) method to respond to the following types of changes:
 
@@ -327,7 +327,7 @@ During the course of changing content, the state of the Writing Tools system cha
 
 For more information about how to handle individual states, see the [`NSWritingToolsCoordinator.State`](./nswritingtoolscoordinator/state-swift.enum.md) type.
 
-##### Inform the coordinator of external changes to your content
+### Inform the coordinator of external changes to your content
 
 When Writing Tools is active, it tracks changes to the text in your view. If you make changes to your view’s text storage while Writing Tools is active, let the system know immediately. Writing Tools tracks the changes it makes internally, so it needs to know about any external changes to make sure it delivers accurate information to your delegate object. To notify Writing Tools of any changes, use one of the following methods:
 

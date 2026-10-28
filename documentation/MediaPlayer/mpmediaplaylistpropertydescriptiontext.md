@@ -25,7 +25,7 @@ let MPMediaPlaylistPropertyDescriptionText: String
 extern NSString * const MPMediaPlaylistPropertyDescriptionText;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSString`](../Foundation/nsstring.md) object.
 

@@ -25,11 +25,11 @@ func CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_ allocator: CFAllocato
 extern CVReturn CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(CFAllocatorRef allocator, CVPixelBufferPoolRef pixelBufferPool, CFDictionaryRef auxAttributes, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 This function creates a new [`CVPixelBuffer`](./cvpixelbuffer.md) object using the pixel buffer attributes specified during pool creation and the attributes specified in the `auxAttributes` parameter.
 

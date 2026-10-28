@@ -5,7 +5,7 @@
 
 These keys are used by the outline view to create disclosure buttons that collapse and expand items.
 
-#### Overview
+## Overview
 
 The outline view creates these buttons by calling its inherited [`makeView(withIdentifier:owner:)`](./nstableview/makeview%28withidentifier,owner%29.md) method, passing in the key as the identifier and the delegate as the owner.
 

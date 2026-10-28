@@ -19,11 +19,11 @@ func displayName(forType typeName: String) -> String?
 - (NSString *) displayNameForType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptive name for the document type specified by `documentTypeName`. If there is no descriptive name, returns `documentTypeName`.
 
-#### Discussion
+## Discussion
 
 For a document-based application, supported document types are specified in the `Info.plist` file by the `CFBundleDocumentTypes` array. Each document type is specified by a dictionary in this array, and is named by the `CFBundleTypeName` attribute. You can provide a descriptive, localized, representation of this name by providing a corresponding entry in the `InfoPlist.strings` file(s). For example, given an `Info.plist` file that contains the following fragment:
 

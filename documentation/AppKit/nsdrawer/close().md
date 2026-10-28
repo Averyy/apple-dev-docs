@@ -21,7 +21,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 Calling `close` on a closed drawer does nothing. You can get the state of a drawer by sending it [`state`](./state-swift.property.md).
 

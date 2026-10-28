@@ -11,7 +11,7 @@ Resets the iterator to the beginning of the collection, as if it had just been c
 virtual void reset() = 0;
 ```
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function.
 

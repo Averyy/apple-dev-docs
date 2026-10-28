@@ -9,7 +9,7 @@ Use CryptoKit to carry out operations like hashing, key generation, and encrypti
 **Availability**:
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [709: Cryptography and Your Apps](https://developer.apple.com/videos/play/wwdc19/709/).
 

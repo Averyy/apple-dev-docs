@@ -22,7 +22,7 @@ case GET
 SLRequestMethodGET
 ```
 
-#### Discussion
+## Discussion
 
 Use a GET request to fetch information from the specified server, such as character limits or a user’s timeline.
 

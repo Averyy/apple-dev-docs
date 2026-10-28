@@ -17,7 +17,7 @@ The time left before an alert, in seconds.
 var countdownDuration: Alarm.CountdownDuration?
 ```
 
-#### Discussion
+## Discussion
 
 When set to a non-nil value, the system shows the countdown in the Lock Screen for the specified duration. The UI will appear at a time equal to the next scheduled alert date minus the duration.
 

@@ -20,7 +20,7 @@ let kSecCodeInfoPlatformIdentifier: CFString
 extern CFStringRef const kSecCodeInfoPlatformIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If this code was signed as part of an operating system release, the value identifies that release.
 

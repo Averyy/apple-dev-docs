@@ -15,7 +15,7 @@ The representation of a room ARKit is currently tracking.
 struct RoomAnchor
 ```
 
-#### Overview
+## Overview
 
 A `RoomAnchor` structure describes an approximate representation of the room’s geometry, and contains arrays with identifiers of mesh and plane anchors that the framework associates with that room.
 

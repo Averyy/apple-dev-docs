@@ -15,7 +15,7 @@ The CHHapticEngine’s intended [`SpatialAudioExperience`](../../AudioToolbox/sp
 var intendedSpatialExperience: any SpatialAudioExperience { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Only useful for engines that have audio output.
 

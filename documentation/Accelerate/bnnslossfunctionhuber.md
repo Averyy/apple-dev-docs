@@ -25,7 +25,7 @@ var BNNSLossFunctionHuber: BNNSLossFunction { get }
 BNNSLossFunctionHuber
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionHuber`](./bnnslossfunctionhuber.md) performs huber loss computation between input logits and one hot encoded labels.
 

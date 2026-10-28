@@ -19,19 +19,19 @@ func LSCopyAllRoleHandlersForContentType(_ inContentType: CFString, _ inRole: LS
 CFArrayRef LSCopyAllRoleHandlersForContentType(CFStringRef inContentType, LSRolesMask inRole);
 ```
 
-#### Return Value
+## Return Value
 
 The bundle identifiers for apps capable of handling the specified content type in the specified roles, or `NULL` if no handlers are available.
 
 In macOS 10.15 and later, the returned array is sorted so that the first element contains the bundle identifier of the best available app for opening the content type. Prior to macOS 10.15, the order of elements in the array was undefined.
 
-#### Discussion
+## Discussion
 
 This function returns all of the bundle identifiers that are capable of handling the specified content type in the specified roles.
 
 The [CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-101685) key in an app’s `Info.plist` can be used to set an app’s content handling capabilities. The [`LSItemContentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes/lsitemcontenttypes.md) key is particularly useful because it supports the use of UTIs in document claims.
 
-##### Version Notes
+### Version Notes
 
 Thread-safe since macOS 10.4.
 

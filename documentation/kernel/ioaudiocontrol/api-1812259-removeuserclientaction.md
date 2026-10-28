@@ -16,11 +16,11 @@ static IOReturn removeUserClientAction(
  void *arg4);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of removeUserClient() - kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This is needed to allow removeUserClient() to be called on the IOWorkLoop.
 

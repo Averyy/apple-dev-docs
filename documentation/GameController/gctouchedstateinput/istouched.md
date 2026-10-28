@@ -25,7 +25,7 @@ var isTouched: Bool { get }
 @property (readonly, getter=isTouched) BOOL touched;
 ```
 
-#### Discussion
+## Discussion
 
 For controllers that support capacitive touch, the user can start touching the button without pressure when the value property is `0`. For controllers that don’t support capacitive touch, the user starts touching the button when the value property is greater than `0`.
 

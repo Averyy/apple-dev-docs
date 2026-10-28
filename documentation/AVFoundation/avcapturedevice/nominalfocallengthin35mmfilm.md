@@ -21,7 +21,7 @@ var nominalFocalLengthIn35mmFilm: Float { get }
 @property (nonatomic, readonly) float nominalFocalLengthIn35mmFilm;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents a nominal measurement of the device’s field of view, expressed as a 35mm equivalent focal length, measured diagonally. The value is similar to the `FocalLengthIn35mmFormat` EXIF entry (see [`kCGImagePropertyExifFocalLenIn35mmFilm`](../../ImageIO/kcgimagepropertyexiffocallenin35mmfilm.md)) for a photo captured using the device’s format where [`isHighestPhotoQualitySupported`](./format/ishighestphotoqualitysupported.md) is `true` or when you’ve configured the session with the [`photo`](../avcapturesession/preset/photo.md) preset.
 

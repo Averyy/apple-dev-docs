@@ -15,7 +15,7 @@ Invoice billing contact details supplied when creating a campaign or budget orde
 object CampaignCreate.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 Supply these contact and reference details when creating a campaign or budget order on a Line of Credit account. Line of Credit accounts require this object. Pay As You Go accounts can omit it.
 

@@ -25,7 +25,7 @@ func setUserInfoObject(_ objectOrNil: Any?, forKey key: ProgressUserInfoKey)
 - (void) setUserInfoObject:(id) objectOrNil forKey:(NSProgressUserInfoKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set a value in the [`userInfo`](./userinfo.md) dictionary, with appropriate KVO notification for properties with values that can depend on values in the user info dictionary, like [`localizedDescription`](./localizeddescription.md).
 

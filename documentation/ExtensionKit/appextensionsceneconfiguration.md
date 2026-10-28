@@ -22,7 +22,7 @@ An object you use to configure an app extension that provides a custom UI.
 @preconcurrency struct AppExtensionSceneConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this type to provide the configuration details for an [`AppExtension`](../ExtensionFoundation/appextension.md) type when the corresponding app extension provides a custom UI.
 

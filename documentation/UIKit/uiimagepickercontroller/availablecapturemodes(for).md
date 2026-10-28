@@ -21,11 +21,11 @@ class func availableCaptureModes(for cameraDevice: UIImagePickerController.Camer
 + (NSArray<NSNumber *> *) availableCaptureModesForCameraDevice:(UIImagePickerControllerCameraDevice) cameraDevice;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSNumber`](../../Foundation/nsnumber.md) objects indicating the capture modes supported by `cameraDevice`.
 
-#### Discussion
+## Discussion
 
 See [`UIImagePickerController.CameraCaptureMode`](./cameracapturemode-swift.enum.md) for possible values.
 

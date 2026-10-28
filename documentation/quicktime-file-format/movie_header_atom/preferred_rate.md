@@ -6,7 +6,7 @@
 
 A 32-bit fixed-point number that specifies the rate at which to play this movie.
 
-#### Overview
+## Overview
 
 A value of 1.0 indicates normal rate.
 

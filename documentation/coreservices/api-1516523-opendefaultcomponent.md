@@ -15,7 +15,7 @@ Opens a connection to a registered component of the component type and subtype s
 ComponentInstance OpenDefaultComponent(OSType componentType, OSType componentSubType);
 ```
 
-#### Return Value
+## Return Value
 
 A component instance that identifies the connection opened to the component which matches your search criteria. You must supply this component instance whenever you call the functions provided by the component. When you close the component, you must also supply this component instance to the [`CloseComponent`](./api-1516436-closecomponent.md) function.
 
@@ -23,7 +23,7 @@ If more than one component in the list of registered components meets the search
 
 See the description of the `ComponentInstance` data type.
 
-#### Discussion
+## Discussion
 
 Your application must open a component before it can call any component functions. This function searches for a component by type and subtype. You do not have to supply a component description structure or call the  [`FindNextComponent`](./api-1516552-findnextcomponent.md)  function to use this function. If you want to exert more control over the selection process, you can use the `FindNextComponent` and  [`OpenComponent`](./api-1516607-opencomponent.md)  functions. 
 

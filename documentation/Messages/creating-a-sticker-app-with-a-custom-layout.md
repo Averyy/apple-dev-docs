@@ -12,7 +12,7 @@ Expand on the Messages sticker app template to create an app with a customized u
 - Mac Catalyst 14.0+
 - Xcode 13.2+
 
-#### Overview
+## Overview
 
 Xcode provides a template for creating sticker pack apps, but the template’s presets limit customization. The Stickers sample project demonstrates how to create your own sticker pack app using an application template instead of the Xcode template, and how to customize the app’s layout.
 
@@ -23,7 +23,7 @@ The Xcode project consists of two targets:
 
 When the iMessage Extension target first initializes, the `viewDidAppear` method of the `MessagesViewController` configures and displays the `UICollectionView`, which contains several sections of stickers, as well as actions to create new ones.
 
-##### Customize the Sticker Layout
+### Customize the Sticker Layout
 
 The Stickers app uses a `UICollectionView` to display its stickers. While the Xcode template only allows for two, three, or four items per row, the sample displays five items per row using a `UICollectionViewCompositionalLayout`.
 
@@ -119,7 +119,7 @@ snapshot.appendItems(["Happy " + formatter.string(from: Date())].compactMap({ (n
 datasource.apply(snapshot, animatingDifferences: true, completion: nil)
 ```
 
-##### Create a Custom Cell
+### Create a Custom Cell
 
 The `UICollectionView` includes a custom `UICollectionViewCell`. The cells use a custom `UIContentConfiguration` to provide an `MSStickerView`, each of which contains an `MSSticker` instance.
 

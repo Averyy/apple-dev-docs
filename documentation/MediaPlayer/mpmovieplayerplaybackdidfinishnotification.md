@@ -18,7 +18,7 @@ Posted when a movie has finished playing. The `userInfo` dictionary of this noti
 extern NSString * const MPMoviePlayerPlaybackDidFinishNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The movie player whose state has changed is available as the object associated with the notification.
 

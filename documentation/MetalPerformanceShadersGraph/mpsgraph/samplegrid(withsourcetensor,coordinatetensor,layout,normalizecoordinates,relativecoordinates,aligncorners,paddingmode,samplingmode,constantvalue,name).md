@@ -24,11 +24,11 @@ func sampleGrid(withSourceTensor source: MPSGraphTensor, coordinateTensor coordi
 - (MPSGraphTensor *) sampleGridWithSourceTensor:(MPSGraphTensor *) source coordinateTensor:(MPSGraphTensor *) coordinates layout:(MPSGraphTensorNamedDataLayout) layout normalizeCoordinates:(BOOL) normalizeCoordinates relativeCoordinates:(BOOL) relativeCoordinates alignCorners:(BOOL) alignCorners paddingMode:(MPSGraphPaddingMode) paddingMode samplingMode:(MPSGraphResizeMode) samplingMode constantValue:(double) constantValue name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Given an input tensor (N, H1, W1, C) or (N, C, H1, W1) and coordinates tensor (N, H2, W2, 2) this operation outputs a tensor of size (N, H2, W2, C) or (N, C, H2, W2) by sampling the input tensor at the coordinates provided by the coordinates tensor.
 

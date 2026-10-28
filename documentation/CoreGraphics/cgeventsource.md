@@ -20,7 +20,7 @@ class CGEventSource
 typedef struct __CGEventSource * CGEventSourceRef;
 ```
 
-#### Overview
+## Overview
 
 A Quartz event source is an object that contains accumulated state related to event generation and event posting. Every event source has an associated global event state table called a source state. When you call [`init(stateID:)`](./cgeventsource/init%28stateid%29.md) to create an event source, you specify which source state to use. For more information about source states, see [`CGEventSourceStateID`](./cgeventsourcestateid.md).
 

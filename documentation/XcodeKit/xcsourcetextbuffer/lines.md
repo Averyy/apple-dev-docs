@@ -19,7 +19,7 @@ var lines: NSMutableArray { get }
 @property (strong, readonly) NSMutableArray<NSString *> * lines;
 ```
 
-#### Discussion
+## Discussion
 
 Line breaks within a single buffer should be consistent. Adding a line containing additional line breaks modifies the array such that each line added is a separate element. Changes to the `completeBuffer` property are immediately reflected in this property, and vice versa.
 

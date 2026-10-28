@@ -19,7 +19,7 @@ var type: EKAlarmType { get }
 @property (nonatomic, readonly) EKAlarmType type;
 ```
 
-#### Discussion
+## Discussion
 
 To set the type of alarm, define one of [`emailAddress`](./emailaddress.md), [`soundName`](./soundname.md), or [`url`](./url.md).
 

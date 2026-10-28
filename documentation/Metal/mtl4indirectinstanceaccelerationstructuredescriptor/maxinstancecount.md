@@ -24,7 +24,7 @@ var maxInstanceCount: Int { get set }
 @property (nonatomic) NSUInteger maxInstanceCount;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via a buffer reference in [`instanceCountBuffer`](./instancecountbuffer.md), is less than or equal to this number.
 

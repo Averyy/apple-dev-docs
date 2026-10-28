@@ -22,7 +22,7 @@ A structure that represents the view to show at the user’s location on the map
 @preconcurrency struct DefaultUserAnnotationContent
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, MapKit creates this type on your behalf.
 

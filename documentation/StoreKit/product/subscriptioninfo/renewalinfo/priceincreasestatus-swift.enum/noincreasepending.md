@@ -25,7 +25,7 @@ case noIncreasePending
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 For more information about this value, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 

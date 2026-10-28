@@ -34,7 +34,7 @@ var title: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title text represents the initial text that user’s see for the note.
 

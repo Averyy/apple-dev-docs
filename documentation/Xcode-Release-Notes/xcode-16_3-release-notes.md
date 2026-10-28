@@ -5,34 +5,34 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, macOS Sequoia 15.4, and visionOS 2.4. The Xcode 16.3 release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16.3 requires a Mac running macOS Sequoia 15.2 or later.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Clipboard Viewer is not included with Additional Tools for Xcode 16.3 beta.  (142986262)
 - Fixed: Using `LD_CLIENT_NAME` could cause a runtime crash where the debug dylib could not be found on some platforms. The workaround setting `ENABLE_DEBUG_DYLIB=NO` should no longer be necessary in this case.  (144577495)
 - Fixed: The debugger variables view may have previously loaded unecessary child node content when pausing on a stack frame.  (147855714)
 
-###### Known Issues
+#### Known Issues
 
 - Using the `-stack_size` linker flag for an app bundle target may fail. Set `ENABLE_DEBUG_DYLIB=NO` as a workaround.  (135877478) (FB15112909)
 - Downloads of the Predictive Code Completion model may look like they have failed right after they have almost reached 100% completion.   (144245083)
 
   **Workaround:** Retry enabling Predictive Code Completion from Xcode Settings or restart your computer.
 
-##### App Intents
+### App Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: OpenIntent required parameters incorrectly being marked as an error  (143909972)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Clang now defines `TARGET_OS_*` conditionals as built-in macros based on the provided target triple. This extension can be disabled with the flag `-fno-define-target-os-macros`.  (111414452)
 - You can now annotate C++ methods using API Notes.  (131387880)
@@ -70,19 +70,19 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
   - Class types as non-type template parameters ([P0732R2](https://wg21.link/P0732R2))
   - Immediate functions `(consteval)` ([P1073R3](https://wg21.link/P1073R3))  (144371212)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In rare cases compiler generated code for Intel x86 processors may overwrite function parameters on the stack.  (143354182)
 
-##### Build System
+### Build System
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Validating embedded binaries like App Extensions and App Clips now uses less total memory.  (147873253)
 
-##### C++ Standard Library
+### C++ Standard Library
 
-###### New Features
+#### New Features
 
 - The following C++26 features have been implemented:
 
@@ -117,7 +117,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
   - The `std::set_intersection` and `std::ranges::set_intersection` algorithms have been optimized to `O(log N)` instead of `O(N)` in certain best-case scenarios.
   - `std::stable_sort` uses radix sort for integral types now, which can improve the performance up to 10x in the best case.  (144568843)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated or removed:
 
@@ -135,28 +135,28 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
   - The `_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES` and `_LIBCPP_ENABLE_CXX20_REMOVED_FEATURES` compatibility macros have been removed.
   - Several incidental transitive includes have been removed from libc++. If you see errors related to missing `std::` entities in your code after upgrading, ensure you have all required includes.  (144887966)
 
-##### CarPlay Simulator
+### CarPlay Simulator
 
-###### New Features
+#### New Features
 
 - CarPlay Simulator allows you to go between simulated automaker backup camera UI and CarPlay via car button in CarPlay Simulator UI.  (125863514)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - Rendering of LLDB and Swift REPL error diagnostics is improved. Inline diagnostics can now directly point to command input without echoing the command first.
 
   (138057894)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolves a crash that sometimes occurs when fetching variables or running Swift expressions (more prevalent on macOS 15.4)  (137006656)
 - Fixed: In some cases LLDB may not correctly handle breakpoints or symbolication of libraries loaded in simulator processes.  (144655033)
 
-##### Developer Documentation Window
+### Developer Documentation Window
 
-###### Known Issues
+#### Known Issues
 
 - Searching in the documentation viewer may start an indexing process which makes no progress. This may result in missing search results and increased CPU usage.  (147380194) (FB16926964)
 
@@ -166,52 +166,52 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
    defaults write com.apple.dt.Xcode IDEDocumentationSpotlightIndexDisable -bool YES
   ```
 
-##### Devices
+### Devices
 
-###### New Features
+#### New Features
 
 - Xcodebuild now has a command to prepare debug symbols for an device without needing to have run Xcode. Pass -prepareDeviceSupport and a -destination predicate to prepare an unlocked and attached device.  (124411614)
 
-##### Distribution
+### Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The app store has began to enforce all app groups prefixed with ‘group.’ are registered in a provisioning profile. During distribution, Xcode will fail to sign with the correct profile if you have used this machine to distribute before. This issue still occurs even if you have set the `REGISTER_APP_GROUPS` build setting, which ensures your project contains the correct app groups.  (145875812)
 
-##### Foundation
+### Foundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Foundation encoders/decoders user info dictionaries now require `Sendable` values. This may cause build errors even in the Swift 5 language mode in small edge cases where the userInfo property is set to a value like `init(myCustomInitializer:)` where the initializer is defined in an extension on `Dictionary` with a `Value == Any` constraint.  (113200224)
 - Fixed: Passing Sendable Formatter subclasses across isolation boundaries in Swift may incorrectly cause compiler errors indicating that the type is not Sendable  (144869425)
 
-##### Frameworks
+### Frameworks
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using the `ManagedApp` framework with the the iOS or visionOS SDK will fail to compile.  (145665850)
 
-##### GameKit
+### GameKit
 
-###### New Features
+#### New Features
 
 - GameKit provides social-gaming network features that you use to enhance engagement in your game. Starting in Xcode 16.3, you can update your game’s leaderboards and achievements locally in Xcode. Use Xcode to pull your existing configuration from App Store Connect. Once you’ve made changes, you can push updates to App Store connect. You can also test your leaderboards and achievements in Xcode by enabling Debug Mode. Update the progress for a leaderboard or achievement and the system sends an update to your app so you can verify that the leaderboard or achievement changed as expected in real time.   (110809856)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Adding a new leaderboard to an existing leaderboard set that already contains a leaderboard won’t function as expected.  (144418655)
 - Fixed: Game Progress Manager is now compatible with macOS, iOS, iPadOS, tvOS and visionOS.  (145687441)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - Call Trees now allow for listing all the samples aggregated to a node by context clicking on it and selecting ‘Show (Self) Samples’  (89381694)
 - Instruments 16.3 includes a new Processor Trace Instrument which uses hardware-supported, low-overhead CPU execution tracing to accurately reconstruct execution of the program. This tool provides metrics like duration, number of cycles, and instructions retired for every function executed on the CPU. Timeline in Instruments presents execution flame graph, while detail views provide aggregate-level data like Call Tree or aggregated metrics (min, max, count, sum), divided by function. Traces can be recorded using the new Processor Trace template on supported devices: M4 Mac, M4 iPad, and iPhone 16/16 Pro. Tracing on the device requires additional configuration in the System Settings.  (131079807)
 - Double clicking on an interval in the timeline while holding Option modifier will now filter and zoom-in to the interval location.  (140099146) (FB15872554)
 - Clicking on a selected track will now expand it’s height to fit all the plots.  (143853314)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Gesture handling for timeline events has been simplified. Single click now selects an item, while double click sets the inspection range of a trace to interval location. Triple click gesture handling has been removed.  (91116149)
 - Fixed: Threads are no longer named based on backtraces attributed to that thread. This improves performance of Instruments and ensures consistency of thread names with other tools.  (107272376)
@@ -221,24 +221,24 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - Fixed: Source Viewer performance has been improved and will no longer be slower than the initial load of the Call Tree view.  (138136953)
 - Fixed an issue where Call Tree view would occasionally cause application crashes.  (146034535)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for profiling Notification Center Widget Extensions.  (138192293)
 
-##### Interface Builder
+### Interface Builder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: iPhone 16e does not appear in the Interface Builder device bar.  (144352490)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - The String Catalog Editor now displays the number of strings in the file (or the number of strings that match the active filter).  (122523913)
 - The String Catalog Editor now emits errors for more cases of contradictory format specifiers in varied strings.  (128285700)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed non-determinism in choosing string values when multiple targets share an InfoPlist.strings file. Additionally, more info plist keys may be extracted to `InfoPlist.xc/strings` files automatically. Keys such as `CFBundleDisplayName` will now be auto-extracted as “Don’t Translate” when they come from targets such as frameworks that typically do not display these values in the UI.  (116603462)
 - Fixed: Format specifiers in String Catalog strings now have simplified rules for inferring argument numbers in order to avoid unexpected crashes at runtime. In most cases, the string “%@ has %lld books” is inferred to be equivalent to “%1$@ has %2$lld books”. In Xcode 16.3, this also applies to plural variations. An exception continues to be plural variations inside substitutions, which begin assigning implicit argument numbers starting with the substitution’s own assigned argument in the Attributes Inspector. To change behavior away from the default, use explicit argument numbers in strings (e.g. “%1$@ has %2$lld books”).  (128509959)
@@ -249,22 +249,22 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - Fixed: Within buildable folders, .strings files are now properly grouped together with same-named Base-localized IB files and will share target membership.  (139114187)
 - Fixed: Resolved various issues that could occur when localizable files are inside buildable folders.  (139114232)
 
-##### Playgrounds
+### Playgrounds
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A playground that imports a module from a shared workspace may fail to run.  (143923367)
 
-##### Predictive Code Completion
+### Predictive Code Completion
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Expanded the amount of in-project context that will be used when providing suggestions for Predictive Code Completion.  (141363041)
 - Fixed an issue that could cause some suggestions in Predictive Code Completion to contain unnecessary symbols or placeholder text.  (141952159)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In some project configurations, switching between Previews in different targets could show an error in the canvas that would not go away until a manual build was triggered.  (138953897)
 - Fixed: Previews for a file in a static library or static package target could fail if they depended on a dynamic library or framework also built in the same project.  (140224924) (FB15892343)
@@ -278,15 +278,15 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
   If you double checked your configuration and still believe the preview should be found, please file a feedback. If possible, also please include a simplified reproduction of the problem to help triage your specific setup. New diagnostics and logging have been added so fresh feedback will include important details.  (143507303)
 - Fixed: As a general note, in addition to other correctness fixes in Xcode and our paired OS releases, diagnostics collection has been improved to help resolve remaining issues with the previews pipeline. If you have experienced timeouts or strange crashes in your code when using the new Previews execution engine, please see if your issues are resolved. If not, please file new feedback with fresh diagnostics to provide the latest information.  (143628687)
 
-##### RealityKit
+### RealityKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `EntityAction`, `ForceEffectProtocol`, and `RealityRenderer` methods that take closures are now marked as always executing on the main actor. Closures passed to `EntityAction` and `ForceEffectProtocol` are now marked as always executing on the main actor, and closures passed to `RealityRenderer` are now marked as executing without isolation.  (133462227)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Simulator no longer discards key up events for keys when the command key is held.  (63086391) (FB7697257)
 - Fixed: simctl now supports –json-fd and –json-output command line arguments for directing JSON output to a destination other than stdout.  (141441027)
@@ -296,33 +296,33 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - Fixed: Simulator runtimes may complete download but not show as usable from Xcode.  (145242743)
 - Fixed: Incorrect icons are used for recently released iPad hardware in Xcode’s run destination menu and devices window.  (145902433)
 
-###### Known Issues
+#### Known Issues
 
 - The simulator runtime may be come unavailable when logging out and then back in, or if its disk image unmount gets cancelled. The workaround is to re-kick the coresimulator service with a reboot or by running: `pkill com.apple.CoreSimulator.CoreSimulatorService`  (136557160) (FB15246609)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Editing JSON in Xcode now supports JSON5 syntax, including comments.  (117205049)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that sometimes caused horizontal scroll bars to be hidden from view when the Minimap was enabled.  (102106707)
 - Fixed an issue where Code Completion may present a symbol as from the incorrect framework after using Jump to Definition.  (137079926)
 - Fixed an issue where expanding short macros inside the Source Editor may crash Xcode.  (142656554)
 
-##### Swift
+### Swift
 
-###### Known Issues
+#### Known Issues
 
 - `DistributedActorSystem`, `DistributedTargetInvocationDecoder`, `DistributedTargetInvocationEncoder`, and `DistributedTargetInvocationResultHandler` may cause a compiler crash when conforming type is a class and is built in release mode.   (146101172)
 
   **Workaround:** Change conforming type to `struct` or make remoteCall, onReturn and other methods which use the SerializationRerquirement constraint `final`.
 
-##### Swift/C++ Interoperability
+### Swift/C++ Interoperability
 
-###### New Features
+#### New Features
 
 - You can now call C++ functions that use `char8_t` type from Swift.  (39988329)
 - You can now use Swift static variables from C++.  (115564118)
@@ -342,19 +342,19 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - You can now annotate C++ functions and methods returning `SWIFT_SHARED_REFERENCE` types with `SWIFT_RETURNS_RETAINED` or `SWIFT_RETURNS_UNRETAINED` using the new `SwiftReturnOwnership:` API Notes attribute. Set its value to `retained` or `unretained`, respectively, to explicitly specify the ownership convention of the returned value.  (141007510)
 - Compiler now produces an error when a public member of a C++ type and a private member of the type are imported into Swift with the same name. For example, a private field `name` and a method `getName()` annotated as SWIFT_COMPUTED_PROPERTY  will have a name conflict when they are imported into Swift and will result in an error. SWIFT_NAME attribute can be used to import them differently.  (144736093)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode targets using Swift/C++ interoperability and having a deployment target of less than iOS 16 or tvOS 16 may not build for iOS or tvOS simulators.  (141232269)
 
-##### Test Report
+### Test Report
 
-###### New Features
+#### New Features
 
 - The Test Report now displays XCUIElementQuery suggestions for UI elements selected using the Automation Explorer at a point of test failure.  (131473847)
 
-##### Testing and Automation
+### Testing and Automation
 
-###### New Features
+#### New Features
 
 - In Xcode when you are in a test context you are now able to query for your test plan name and scheme name in the environment with the keys `XCODE_TEST_PLAN_NAME` and `XCODE_SCHEME_NAME`.  (66632690)
 - When a Swift Testing issue is recorded from an unknown context, such as a detached Task, the error message shown in Xcode now includes a description of the issue and the backtrace indicates where it occurred, for easier diagnosis.  (131564494)
@@ -389,7 +389,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - Swift Testing now allows specifying a range of expected counts when calling `confirmation()`.  (138499457)
 - When using a Swift.org toolchain, Xcode now prefers the copy of Swift Testing in that toolchain for building and running tests if one is available for the current platform.  (144709027) (FB16490332)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `XCTAttachment` does not support attaching directories on iOS, watchOS, tvOS, or visionOS.  (31157453)
 - Fixed: Swift Testing and XCTest tests and suites written in Swift which are surrounded by `#if` conditions may not be shown in Xcode’s Test navigator or source editor.  (117387631)
@@ -402,22 +402,22 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 - Fixed: Resolved an issue where XCTest UI Automation tests may fail on macOS if the test interruption handler is invoked during a test run.  (147359471)
 - Fixed: XCTest UI Automation test results may not have UI element snapshot overlays as expected when viewing a test result in the Test Results UI.  (147527762)
 
-###### Known Issues
+#### Known Issues
 
 - UI tests and unit testing using `USES_XCTRUNNER=YES` may see a UIKit warning about adopting scenes. This warning can be ignored.  (142567138)
 - Test action may stall when running with debug executable and parallel testing enabled against the Mac run destinations.  (145872120)
 
   **Workaround:** Disable the Debug Executable in the Test Scheme.
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### New Features
+#### New Features
 
 - You can now share environment variables across multiple workflows and use them in your custom build scripts. Learn about [Shared Environment Variables](../Xcode/sharing-environment-variables-across-xcode-cloud-workflows.md).  (76150704)
 
-##### xcresulttool
+### xcresulttool
 
-###### New Features
+#### New Features
 
 - In Xcode 16, xcresulttool introduced new commands, including: `get test-results summary`, `get test-results tests`, `get test-results test-details`, `get test-results activities`, `get test-results insights`, `get build-results`, `get log`, `export attachments`, `and export metrics`. Please run `xcresulttool help <command> [<subcommand>]` to get more details for these commands as well as the output format. In Xcode 16.3 there are the following additions:
 
@@ -426,7 +426,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
   - Command that compares the content of two result bundles. Optional flags allow you to customize the outputted results: `xcresulttool compare <comparison-path> ... --baseline-path <baseline-path> [--summary] [--test-failures] [--tests] [--build-warnings] [--analyzer-issues]`
   - All the commands that use `test-id` as an argument now accept both `testIdentifier` and `testIdentifierURL` values. Identifier URL (`testIdentifierURL`) is a recommended way of identification for Test Cases and Test Suites as it resolves identifier ambiguity across multiple testing targets.  (129712945)
 
-###### Deprecations
+#### Deprecations
 
 - Some parts of `xcresulttool` API are deprecated and will be removed in the future. Upon removal they can be used with `--legacy` flag provided. Please use the new commands from above instead. List of deprecated commands:
 

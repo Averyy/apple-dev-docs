@@ -29,7 +29,7 @@ class UIPageViewController
 - [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
 - [Managing content in your app’s windows](./managing-content-in-your-app-s-windows.md)
 
-#### Overview
+## Overview
 
 Page view controller–navigation can be controlled programmatically by your app or directly by the user using gestures. When navigating from page to page, the page view controller uses the transition that you specify to animate the change.
 

@@ -24,7 +24,7 @@ enum MTLIOCompressionStatus
 enum MTLIOCompressionStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`MTLIOFlushAndDestroyCompressionContext(_:)`](./mtlioflushanddestroycompressioncontext%28_%29.md) returns an [`MTLIOCompressionStatus`](./mtliocompressionstatus.md) instance to reflect the final state of a compression context.
 

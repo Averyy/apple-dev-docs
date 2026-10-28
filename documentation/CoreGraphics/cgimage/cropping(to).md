@@ -25,11 +25,11 @@ func cropping(to rect: CGRect) -> CGImage?
 extern CGImageRefCGImageCreateWithImageInRect(CGImageRef image, CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGImage`](../cgimage.md) object that specifies a subimage of the image. If the `rect` parameter defines an area that is not in the image, returns `NULL`.
 
-#### Discussion
+## Discussion
 
 Cropping removes content around the designated rectangle; it cuts out the desired area of the input image and returns an image of the cropped size.
 

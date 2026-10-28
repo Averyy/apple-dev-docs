@@ -21,7 +21,7 @@ init(title: String?, buttons: [CPTextButton], image: UIImage?)
 - (instancetype) initWithTitle:(NSString *) title buttons:(NSArray<CPTextButton *> *) buttons image:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 Your app should provide a @c UIImage that is display-ready, containing two @c UIImageAssets, corresponding to night and day mode.
 

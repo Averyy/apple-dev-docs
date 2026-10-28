@@ -24,7 +24,7 @@ var kernelDiameter: Int { get }
 @property (nonatomic, readonly) NSUInteger kernelDiameter;
 ```
 
-#### Discussion
+## Discussion
 
 The median filter is applied to a `kernelDiameter * kernelDiameter` window of pixels centered on the corresponding source pixel for each destination pixel.  The kernel diameter must be an odd number.
 

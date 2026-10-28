@@ -20,7 +20,7 @@ class ITLibMediaItemVideoInfo
 @interface ITLibMediaItemVideoInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Video media items include TV shows, movies, and video podcasts.
 

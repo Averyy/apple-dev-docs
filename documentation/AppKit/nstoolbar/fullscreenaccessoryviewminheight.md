@@ -21,7 +21,7 @@ var fullScreenAccessoryViewMinHeight: CGFloat { get set }
 @property CGFloat fullScreenAccessoryViewMinHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The [`fullScreenAccessoryViewMinHeight`](./fullscreenaccessoryviewminheight.md) is used when the menu bar is hidden. During the reveal, the toolbar’s accessory view’s frame is interpolated between its [`fullScreenAccessoryViewMinHeight`](./fullscreenaccessoryviewminheight.md) and [`fullScreenAccessoryViewMaxHeight`](./fullscreenaccessoryviewmaxheight.md).
 

@@ -21,7 +21,7 @@ Whether this span has the same bytes as `other`.
 func bytesEqual(to other: some Sequence<UInt8>) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(n)
 

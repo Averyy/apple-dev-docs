@@ -19,7 +19,7 @@ A configuration that applies the given radius independently to all corners.
 + (instancetype) configurationWithRadius:(UICornerRadius *) radius;
 ```
 
-#### Discussion
+## Discussion
 
 When used with a container concentric radius, this allows each individual corner to resolve to different radii.
 

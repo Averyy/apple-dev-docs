@@ -24,7 +24,7 @@ var unitsPerSecond: Double { get set }
 @property (nonatomic, assign) double unitsPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 Time-based properties throughout the framework apply the value you supply for this property to their value.
 

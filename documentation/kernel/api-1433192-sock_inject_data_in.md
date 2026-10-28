@@ -13,11 +13,11 @@
 errno_t sock_inject_data_in(socket_t so, const struct sockaddr *from, mbuf_t data, mbuf_t control, sflt_data_flag_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error. If the function returns an error, the caller is responsible for freeing the mbuf.
 
-#### Discussion
+## Discussion
 
 Inject data in to the receive buffer of the socket as if it had come from the network.
 

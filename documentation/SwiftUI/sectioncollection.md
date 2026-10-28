@@ -21,7 +21,7 @@ An opaque collection representing the sections of view.
 struct SectionCollection
 ```
 
-#### Overview
+## Overview
 
 Sections are constructed lazily, on demand, so access only as much of this collection as is necessary to create the resulting content.
 

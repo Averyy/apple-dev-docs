@@ -21,7 +21,7 @@ class NCWidgetListViewController
 @interface NCWidgetListViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetListViewController` class provides a list view for displaying content in a Today widget. A list view controller works together with its delegate to display content and support user interaction with the list. To learn about the list view controller delegate methods, see [`NCWidgetListViewDelegate`](./ncwidgetlistviewdelegate.md).
 

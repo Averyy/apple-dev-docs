@@ -19,7 +19,7 @@ let kCIApplyOptionDefinition: String
 extern NSString * const kCIApplyOptionDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is either a Core Image filter shape or a four-element array ([`NSArray`](../Foundation/nsarray.md)) that specifies a rectangle.
 

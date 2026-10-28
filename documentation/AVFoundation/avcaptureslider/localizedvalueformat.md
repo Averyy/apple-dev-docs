@@ -23,7 +23,7 @@ var localizedValueFormat: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedValueFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a format string to modify the presentation of a slider’s value. The format string may only contain `%@` and no other placeholders like `%d`, `%s`, and so on. Setting an Invalid format string results in the value’s default presentation.
 

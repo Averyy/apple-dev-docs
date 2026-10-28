@@ -15,11 +15,11 @@ One row in the query change history response, grouping a single actor’s entity
 object AuditSummary
 ```
 
-#### Overview
+## Overview
 
 The query endpoint returns one `AuditSummary` row per unique (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination. The `count` field reports how many entity changes of that type, user, and transaction grouping the row includes. Fetching full field-level data for those changes requires the per-entity `detailId`, which this summary object does not provide on its own. See the Discussion section below.
 
-##### Example
+### Example
 
 ```json
 {
@@ -34,9 +34,9 @@ The query endpoint returns one `AuditSummary` row per unique (`userType`, `modif
 }
 ```
 
-#### Discussion
+## Discussion
 
-##### Use `count` to decide fetch strategy
+### Use `count` to decide fetch strategy
 
 Each `AuditSummary` row reports a `count` of entity changes for that entity type, user, and transaction grouping. The detail endpoint (`GET /v1/change-history/{detailId}` ([`Get Change History Detail`](./get-change-details-by-detailid.md))) requires a composite `detailId` in the form `EntityType.entityId.txnId`, but `AuditSummary` doesn’t include `entityId` directly.
 

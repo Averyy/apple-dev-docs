@@ -20,7 +20,7 @@ var kSecCSBasicValidateOnly: UInt32 { get }
 kSecCSBasicValidateOnly
 ```
 
-#### Discussion
+## Discussion
 
 This flag is the bitwise OR of the [`kSecCSDoNotValidateExecutable`](./kseccsdonotvalidateexecutable.md) and [`kSecCSDoNotValidateResources`](./kseccsdonotvalidateresources.md) flags.
 

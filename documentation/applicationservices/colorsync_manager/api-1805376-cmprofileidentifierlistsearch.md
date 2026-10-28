@@ -17,11 +17,11 @@ CMError CMProfileIdentifierListSearch (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295). It is not an error condition if the `CMProfileIdentifierListSearch` function finds no matching profiles. The function returns an error only if a Memory Manager or other low-level system error occurs. 
 
-#### Overview
+## Overview
 
 When your application or device driver processes an image, it can keep a list of profile references for each unique profile or profile identifier it encounters in the image. Each time it encounters an embedded profile identifier, your application can call the `CMProfileIdentifierListSearch` function to see if there is already a matching profile reference in the list. Although your list of profile references would normally contain at most one reference that matches the profile identifier, it is possible to have two or more matches. For information on how a profile identifier match is determined, see `CMProfileIdentifier`.
 

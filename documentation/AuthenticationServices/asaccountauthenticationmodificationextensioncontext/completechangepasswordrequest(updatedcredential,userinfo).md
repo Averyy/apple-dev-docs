@@ -26,7 +26,7 @@ func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, user
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Discussion
+## Discussion
 
 To receive the `userInfo` dictionary in your app, set a delegate on the [`ASAccountAuthenticationModificationController`](../asaccountauthenticationmodificationcontroller.md) when initiating the request. The delegate receives the `userInfo` dictionary as a parameter to [`accountAuthenticationModificationController(_:didSuccessfullyComplete:userInfo:)`](../asaccountauthenticationmodificationcontrollerdelegate/accountauthenticationmodificationcontroller%28_,didsuccessfullycomplete,userinfo%29.md).
 

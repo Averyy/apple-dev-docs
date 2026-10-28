@@ -24,7 +24,7 @@ func variance(of tensor: MPSGraphTensor, mean meanTensor: MPSGraphTensor, axes: 
 - (MPSGraphTensor *) varianceOfTensor:(MPSGraphTensor *) tensor meanTensor:(MPSGraphTensor *) meanTensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object.
 

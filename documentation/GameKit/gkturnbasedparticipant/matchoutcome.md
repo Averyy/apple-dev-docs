@@ -37,7 +37,7 @@ var matchOutcome: GKTurnBasedMatch.Outcome { get set }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Initially, GameKit sets this property to [`GKTurnBasedMatch.Outcome.none`](../gkturnbasedmatch/outcome/none.md). Then before a player forfeits a match or you end a match, set this property to a value that reflects the participant’s outcome. Optionally, set this property to a custom value using an `OR` operation that fits in the range specified by the [`GKTurnBasedMatch.Outcome.customRange`](../gkturnbasedmatch/outcome/customrange.md) enumeration case.
 

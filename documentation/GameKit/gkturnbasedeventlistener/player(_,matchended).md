@@ -29,7 +29,7 @@ optional func player(_ player: GKPlayer, matchEnded match: GKTurnBasedMatch)
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to stop gameplay, notify the player that the match is over, and show the participant outcomes.
 

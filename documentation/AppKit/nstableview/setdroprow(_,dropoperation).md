@@ -19,7 +19,7 @@ func setDropRow(_ row: Int, dropOperation: NSTableView.DropOperation)
 - (void) setDropRow:(NSInteger) row dropOperation:(NSTableViewDropOperation) dropOperation;
 ```
 
-#### Discussion
+## Discussion
 
 For example, to specify a drop on the second row, specify `row` as 1, and `operation` as `NSTableViewDropOn`. To specify a drop below the last row, specify `row` as `[self numberOfRows]` and `operation` as `NSTableViewDropAbove`.
 

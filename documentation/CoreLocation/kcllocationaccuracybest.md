@@ -25,7 +25,7 @@ let kCLLocationAccuracyBest: CLLocationAccuracy
 extern const CLLocationAccuracy kCLLocationAccuracyBest;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant when you want very high accuracy but don’t need the same level of accuracy required for navigation apps.
 

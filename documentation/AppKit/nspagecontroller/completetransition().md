@@ -19,7 +19,7 @@ func completeTransition()
 - (void) completeTransition;
 ```
 
-#### Discussion
+## Discussion
 
 See [Completing the Page Controller Transition](../nspagecontroller.md#Completing-the-Page-Controller-Transition) for a complete description.
 

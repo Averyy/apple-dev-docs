@@ -21,11 +21,11 @@ Splits a tensor into multiple tensors. The tensor is split  into `sizes.shape[0]
 func split(sizes: [Int], alongAxis axis: Int = 0) -> [MLTensor]
 ```
 
-#### Return Value
+## Return Value
 
 Array containing the tensors parts.
 
-#### Discussion
+## Discussion
 
 For example:
 

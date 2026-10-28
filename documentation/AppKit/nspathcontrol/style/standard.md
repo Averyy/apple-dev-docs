@@ -17,7 +17,7 @@ case standard
 NSPathStyleStandard
 ```
 
-#### Discussion
+## Discussion
 
 The standard display style and behavior. All path component cells are displayed with an icon image and component name. If the path can not fully be displayed, the middle parts are truncated as required.
 

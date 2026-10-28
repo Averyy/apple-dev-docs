@@ -17,7 +17,7 @@ A mode indicating an alarm emits an alert.
 case alert(AlarmPresentationState.Mode.Alert)
 ```
 
-#### Discussion
+## Discussion
 
 An alarm can only be in one of these states at a time.
 

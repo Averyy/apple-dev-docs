@@ -21,11 +21,11 @@ A type that describes how to animate a property of a view.
 protocol Animatable
 ```
 
-#### Overview
+## Overview
 
 When an animatable value changes inside a [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) block (or is affected by an `animation(_:value:)` modifier), SwiftUI reads the old and new [`animatableData`](./animatable/animatabledata-6nydg.md) values, then interpolates between them over successive frames using [`VectorArithmetic`](./vectorarithmetic.md) operations. The framework calls the [`animatableData`](./animatable/animatabledata-6nydg.md) setter on each frame, giving your type a chance to update any derived state.
 
-##### Use the Animatable macro
+### Use the Animatable macro
 
 To conform a type to the `Animatable` protocol, use the [`Animatable()`](./animatable%28%29.md) macro to avoid writing the [`animatableData`](./animatable/animatabledata-6nydg.md) property by hand:
 
@@ -50,7 +50,7 @@ struct RingSegment: Shape {
 }
 ```
 
-##### Manual conformance for custom interpolation
+### Manual conformance for custom interpolation
 
 Reach for a handwritten [`animatableData`](./animatable/animatabledata-6nydg.md) when the interpolated value needs custom logic that does not correspond one-to-one with a stored property, such as normalization, clamping, or driving a derived value.
 

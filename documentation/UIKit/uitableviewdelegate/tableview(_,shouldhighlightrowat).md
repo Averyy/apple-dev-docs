@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath
 - (BOOL) tableView:(UITableView *) tableView shouldHighlightRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the row should be highlighted or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 As touch events arrive, the table view highlights rows in anticipation of the user selecting them. As it processes those touch events, the table view calls this method to ask your delegate if a given cell should be highlighted. Your delegate can implement this method and use it to prevent the highlighting of a row when another row is already selected or when other relevant criteria occur.
 

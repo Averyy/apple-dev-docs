@@ -19,7 +19,7 @@ class let accessibilityDisplayOptionsDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSWorkspaceAccessibilityDisplayOptionsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared `NSWorkspace` instance. The notification doesn’t contain a `userInfo` dictionary.
 

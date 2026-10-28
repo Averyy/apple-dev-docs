@@ -25,7 +25,7 @@ init(key: String?, ascending: Bool, comparator cmptr: @escaping Comparator)
 - (instancetype) initWithKey:(NSString *) key ascending:(BOOL) ascending comparator:(NSComparator) cmptr;
 ```
 
-#### Return Value
+## Return Value
 
 A sort descriptor that initializes with the specified key, ordering, and comparator.
 

@@ -21,7 +21,7 @@ Scroll indicators should never be visible.
 static var never: ScrollIndicatorVisibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value behaves like [`hidden`](./hidden.md), but overrides scrollable views that choose to keep their indicators visible. When using this value, provide an alternative method of scrolling. The typical horizontal swipe gesture might not be available, depending on the current input device.
 

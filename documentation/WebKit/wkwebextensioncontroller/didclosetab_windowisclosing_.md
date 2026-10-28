@@ -19,7 +19,7 @@ Should be called by the app when a tab is closed to fire appropriate events with
 - (void) didCloseTab:(id<WKWebExtensionTab>) closedTab windowIsClosing:(BOOL) windowIsClosing;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the closing of a tab, ensuring consistent understanding across extensions.
 

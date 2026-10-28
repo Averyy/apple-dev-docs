@@ -26,7 +26,7 @@ PHAssetResourceUploadJobActionAcknowledge
 
 - [Uploading asset resources in the background](../../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 An acknowledgeable job has a [`state`](../state-swift.property.md) of `succeeded` or `failed` and hasn’t been acknowledged.
 

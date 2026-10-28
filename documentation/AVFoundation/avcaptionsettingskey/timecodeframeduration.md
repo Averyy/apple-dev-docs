@@ -22,7 +22,7 @@ static let timeCodeFrameDuration: AVCaptionSettingsKey
 extern AVCaptionSettingsKey const AVCaptionTimeCodeFrameDurationKey;
 ```
 
-#### Discussion
+## Discussion
 
 Some formats, such as TTML, use time code notation to indicate the timing of a caption. Use this key to specify the frame rate of the time code.
 

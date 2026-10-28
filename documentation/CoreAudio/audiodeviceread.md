@@ -14,11 +14,11 @@
 extern OSStatus AudioDeviceRead(AudioDeviceID inDevice, const AudioTimeStamp *inStartTime, AudioBufferList *outData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. kAudioHardwareUnsupportedOperationError will be returned if the AudioDevice does not support direct reading.
 
-#### Discussion
+## Discussion
 
 Read some data from an AudioDevice starting at the given time.
 

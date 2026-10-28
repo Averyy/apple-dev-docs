@@ -15,11 +15,11 @@ Retrieves the accessory’s current configuration.
 static func current(for accessory: ASAccessory) throws -> AccessoryControlDevice
 ```
 
-#### Return Value
+## Return Value
 
 The accessory’s current configuration.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Call this method only from your app extension.
 

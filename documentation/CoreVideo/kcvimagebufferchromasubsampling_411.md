@@ -25,7 +25,7 @@ let kCVImageBufferChromaSubsampling_411: CFString
 extern CFStringRef const kCVImageBufferChromaSubsampling_411;
 ```
 
-#### Discussion
+## Discussion
 
 Each pixel has a `Y` value, and `U` and `V` values are shared along a horizontal line of 4 pixels.
 

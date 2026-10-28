@@ -22,7 +22,7 @@ var automaticallyConfiguresCaptureDeviceForWideColor: Bool { get set }
 @property (nonatomic) BOOL automaticallyConfiguresCaptureDeviceForWideColor;
 ```
 
-#### Discussion
+## Discussion
 
 All devices and formats support capture in the sRGB color space. Some devices and formats can also capture in the P3 color space, which includes a much wider gamut of colors. Wide-gamut capture is appropriate for only certain capture workflows, so this property controls automatic configuration for those workflows.
 

@@ -13,11 +13,11 @@
 errno_t inet_arp_handle_input(ifnet_t ifp, u_int16_t arpop, const struct sockaddr_dl *sender_hw, const struct sockaddr_in *sender_ip, const struct sockaddr_in *target_ip);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success or an errno error value on failure.
 
-#### Discussion
+## Discussion
 
 This function should be called by code that handles inbound arp packets. The caller should parse the ARP packet to pull out the operation and the relevant addresses. If a response is required, the proto_media_send_arp function will be called.
 

@@ -22,7 +22,7 @@ struct ActivityType
 typedef NSString * UIActivityType;
 ```
 
-#### Overview
+## Overview
 
 These constants represent the values that can be stored in the [`activityType`](./activitytype-swift.property.md) property of system-defined activity objects.
 

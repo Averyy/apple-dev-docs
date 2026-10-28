@@ -21,7 +21,7 @@ A format style that shows durations in a compact, localized format with separato
 struct TimeFormatStyle
 ```
 
-#### Overview
+## Overview
 
 This style produces formatted strings that uses separators between components, like “2:03”
 

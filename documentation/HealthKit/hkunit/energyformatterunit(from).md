@@ -24,7 +24,7 @@ class func energyFormatterUnit(from unit: HKUnit) -> EnergyFormatter.Unit
 + (NSEnergyFormatterUnit) energyFormatterUnitFromUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 An energy formatter unit value. For a list of possible energy formatter unit values, see [`EnergyFormatter.Unit`](../../Foundation/energyformatter/unit.md).
 

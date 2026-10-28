@@ -24,11 +24,11 @@ class func success(with resolvedCallRecord: INCallRecord) -> Self
 + (instancetype) successWithResolvedCallRecord:(INCallRecord *) resolvedCallRecord;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordResolutionResult`](../incallrecordresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method for when the app extension wants to tell Siri to proceed, with a given `INCallRecord`.
 

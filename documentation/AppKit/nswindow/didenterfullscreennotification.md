@@ -19,7 +19,7 @@ class let didEnterFullScreenNotification: NSNotification.Name
 extern NSNotificationName const NSWindowDidEnterFullScreenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that entered full-screen mode. This notification doesn’t contain a `userInfo` dictionary.
 

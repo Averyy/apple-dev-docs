@@ -21,7 +21,7 @@ Returns an asynchronous sequence of messages produced by this center for a given
 func messages<Identifier, Message>(of subject: Message.Subject, for identifier: Identifier, bufferSize limit: Int = 10) -> some Sendable & AsyncSequence<Message, Never> where Identifier : NotificationCenter.MessageIdentifier, Message : NotificationCenter.AsyncMessage, Message == Identifier.MessageType, Message.Subject : AnyObject
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of messages produced by this center.
 

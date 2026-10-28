@@ -17,7 +17,7 @@ The content of log message.
 struct Message
 ```
 
-#### Overview
+## Overview
 
 It is usually created using string literals.
 

@@ -17,7 +17,7 @@ Deprecated. Does nothing.
 - (void) configureAsServer;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, this method does nothing.
 

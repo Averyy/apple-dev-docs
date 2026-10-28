@@ -19,7 +19,7 @@ case preferred
 UISceneCollectionJoinBehaviorPreferred
 ```
 
-#### Discussion
+## Discussion
 
 If [`requestingScene`](../uiscene/activationrequestoptions/requestingscene.md) is set, this behavior adds the new scene to its collection and activates it. Otherwise, the scene attempts to join a compatible collection.
 

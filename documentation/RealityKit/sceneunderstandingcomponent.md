@@ -23,7 +23,7 @@ struct SceneUnderstandingComponent
 
 - [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 
-#### Overview
+## Overview
 
 Scene understanding refers to RealityKit features like physics collision, shadows, and occlusion with real-world geometry. In iOS, `SceneUnderstandingComponent` is a read-only component. Manually adding it doesn’t have any effect.
 

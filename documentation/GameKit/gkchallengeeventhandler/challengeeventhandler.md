@@ -19,11 +19,11 @@ Returns the shared instance of the event handler
 + (GKChallengeEventHandler *) challengeEventHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An event handler object.
 
-#### Discussion
+## Discussion
 
 Your game never directly creates a [`GKChallengeEventHandler`](../gkchallengeeventhandler.md) object. Instead, retrieve the shared instance using this class method.
 

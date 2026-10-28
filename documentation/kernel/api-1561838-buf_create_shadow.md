@@ -15,7 +15,7 @@ Create a shadow buffer with optional private storage and an optional callback.
 buf_t buf_create_shadow(buf_t bp, boolean_t force_copy, uintptr_t external_storage, void (*iodone)(buf_t, void *), void *arg);
 ```
 
-#### Return Value
+## Return Value
 
 NULL if the buffer to be shadowed is not B_META or a primary buffer (i.e. not a shadow buffer); otherwise, the new buffer.
 

@@ -16,7 +16,7 @@ The fields of billing information the user must provide to process the transacti
 sequence <ApplePayContactField> requiredBillingContactFields;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`requiredBillingContactFields`](./requiredbillingcontactfields.md) to request the user’s billing address that’s associated with their payment method, as shown in the following listing.
 

@@ -21,7 +21,7 @@ An open polygon overlay consisting of one or more connected line segments.
 struct MapPolyline
 ```
 
-#### Overview
+## Overview
 
 Use this view to create map polylines instances in the closure you provide to the `content` parameter in the [`Map`](./map.md) initializers.
 

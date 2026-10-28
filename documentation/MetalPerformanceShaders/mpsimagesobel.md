@@ -24,7 +24,7 @@ class MPSImageSobel
 @interface MPSImageSobel : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 When the color model (e.g. RGB, two-channel, grayscale, etc.) of the source and destination textures match, the filter is applied to each color channel separately. If the destination is single-channel (i.e. monochrome) but the source is multi-channel, the pixel values are converted to grayscale before applying the Sobel operator by using the linear gray color transform vector `v` shown in the code listing below.
 

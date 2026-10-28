@@ -17,11 +17,11 @@ Gets the user type for an alias record referenced by a handle.
 OSType GetAliasUserType(AliasHandle alias);
 ```
 
-#### Return Value
+## Return Value
 
 The user type associated with the alias.
 
-#### Discussion
+## Discussion
 
 This routine is thread safe.
 

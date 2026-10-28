@@ -15,7 +15,7 @@ Sets or gets the swap interval.
 static const NSOpenGLContextParameter NSOpenGLCPSwapInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The swap interval is represented as one `long`. If the swap interval is set to `0` (the default), the [`flushBuffer()`](./nsopenglcontext/flushbuffer%28%29.md) method executes as soon as possible, without regard to the vertical refresh rate of the monitor. If the swap interval is set to `1`, the buffers are swapped only during the vertical retrace of the monitor.
 

@@ -25,7 +25,7 @@ case full
 NSDateIntervalFormatterFullStyle
 ```
 
-#### Discussion
+## Discussion
 
 For dates, this style displays the numerical day and year and a spelled out version of the month and day of week using a format appropriate for the current locale. For example, formatting the date January 15, 2015 with this style results in the value “Thursday, January 15, 2015” for US English and the value “Donnerstag, 15. Januar 2015” for German.
 

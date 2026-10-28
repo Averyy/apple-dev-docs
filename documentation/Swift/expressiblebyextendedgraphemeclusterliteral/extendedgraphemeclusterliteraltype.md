@@ -22,7 +22,7 @@ A type that represents an extended grapheme cluster literal.
 associatedtype ExtendedGraphemeClusterLiteralType : _ExpressibleByBuiltinExtendedGraphemeClusterLiteral
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `ExtendedGraphemeClusterLiteralType` are `Character`, `String`, and `StaticString`.
 

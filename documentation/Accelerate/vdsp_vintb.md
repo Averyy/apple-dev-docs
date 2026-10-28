@@ -21,7 +21,7 @@ Calculates the linear interpolation between the supplied single-precision vector
 extern void vDSP_vintb(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, const float *__C, float *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function interpolates between the first `N` elements of `A` and `B` by taking the difference between corresponding elements, multiplying it by the constant `C`, and adding this to the corresponding element of `A`; results are left in corresponding elements of `D`:
 

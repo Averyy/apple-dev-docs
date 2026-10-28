@@ -20,7 +20,7 @@ func enumerateValuesExcept(forProperties properties: Set<String>?, using block: 
 - (void) enumerateValuesExceptForProperties:(NSSet<NSString *> *) properties usingBlock:(void (^)(NSString *property, id value, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get property values in a batch fashion. In some cases, enumerating over a set of property keys can be more efficient than fetching each individual property with [`value(forProperty:)`](./value%28forproperty%29.md).
 

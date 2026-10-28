@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.softplus
 
-**class softplus(*x*)**
-: Applies the Softplus function.
+```python
+class softplus(x)
+```
+
+Applies the Softplus function.
+
 Applies \(\log(1 + \exp(x))\) element wise.

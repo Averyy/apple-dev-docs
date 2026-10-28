@@ -17,7 +17,7 @@ case cwUnspecifiedFailureErr
 kCWUnspecifiedFailureErr
 ```
 
-#### Discussion
+## Discussion
 
 Access point did not specify a reason for authentication/association failure.
 

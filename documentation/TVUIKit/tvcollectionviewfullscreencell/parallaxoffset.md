@@ -19,7 +19,7 @@ var parallaxOffset: CGFloat { get }
 @property (nonatomic, readonly) CGFloat parallaxOffset;
 ```
 
-#### Discussion
+## Discussion
 
 A larger offset value creates a more dramatic parallax effect, and a smaller offset value creates a less dramatic effect.
 

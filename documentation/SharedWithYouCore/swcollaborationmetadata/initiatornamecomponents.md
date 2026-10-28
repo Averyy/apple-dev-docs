@@ -23,7 +23,7 @@ var initiatorNameComponents: PersonNameComponents? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSPersonNameComponents * initiatorNameComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The app that initiates a collaboration sets the `initiatorNameComponents` to allow the user to confirm the components before the system begins the collaboration. The value of the components will not be transmitted to recipients, and is `nil` before the system initiates a collaboration.
 

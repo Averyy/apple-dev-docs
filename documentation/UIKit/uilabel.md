@@ -30,7 +30,7 @@ class UILabel
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 - [Adding a custom font to your app](./adding-a-custom-font-to-your-app.md)
 
-#### Overview
+## Overview
 
 You can configure the overall appearance of a label’s text, and use attributed strings to customize the appearance of substrings within the text. Add and customize labels in your interface programmatically, or with the Attributes inspector in Interface Builder.
 
@@ -41,7 +41,7 @@ Follow these steps to add a label to your interface:
 - Set up Auto Layout rules to govern the size and position of the label in your interface.
 - Provide accessibility information and localized strings.
 
-##### Customize the label’s appearance
+### Customize the label’s appearance
 
 You provide the content for a label by assigning either a [`NSString`](../Foundation/nsstring.md) object to the [`text`](./uilabel/text.md) property, or an [`NSAttributedString`](../Foundation/nsattributedstring.md) object to the [`attributedText`](./uilabel/attributedtext.md) property. The label displays the property set most recently.
 
@@ -65,7 +65,7 @@ When the label has its size completely defined externally, you can specify how i
 
 ![A screenshot showing two labels containing the same text, displayed side by side. The label on the left side truncates the text at the end. The label on the right side displays the full text in an adjusted, smaller font that fits within the display area of the label.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2759885@2x.png)
 
-##### Design labels for a wide audience
+### Design labels for a wide audience
 
 Labels provide valuable information to your users. To make sure that information reaches a wide audience, internationalize text and support accessibility in your labels. For information about how to implement internationalization and localization, see [Internationalization](https://developer.apple.com/internationalization/). Labels are accessible to VoiceOver by default. The default accessibility traits for a label are Static Text and User Interaction Enabled. For more information, see [Supporting VoiceOver in your app](./supporting-voiceover-in-your-app.md). To learn about using text styles to support Dynamic Type, see [Scaling fonts automatically](./scaling-fonts-automatically.md).
 

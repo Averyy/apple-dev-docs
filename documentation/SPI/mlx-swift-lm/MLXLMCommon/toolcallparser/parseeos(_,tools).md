@@ -18,7 +18,7 @@ Parse remaining buffered content at end-of-sequence.
 func parseEOS(_ toolCallBuffer: String, tools: [[String : any Sendable]]?) -> [ToolCall]
 ```
 
-#### Discussion
+## Discussion
 
 Called when generation ends to extract any tool calls still in the buffer. The default implementation splits on `startTag` (if present) and parses each segment individually.
 

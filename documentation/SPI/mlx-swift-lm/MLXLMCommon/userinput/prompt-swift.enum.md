@@ -17,7 +17,7 @@ Representation of a prompt or series of messages (conversation).
 enum Prompt
 ```
 
-#### Overview
+## Overview
 
 This may be a single string with a user prompt or a series of back and forth responses representing a conversation.
 

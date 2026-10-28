@@ -20,7 +20,7 @@ case requiresApproval
 SMAppServiceStatusRequiresApproval
 ```
 
-#### Discussion
+## Discussion
 
 The Service Management framework successfully registered this service, but the user needs to take action in System Settings before the service is eligible to run. The framework also returns this status if the user revokes consent for the service to run in System Settings.
 

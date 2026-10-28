@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetChannelNames(_ format: vImageConstCVImageFormat) -> 
 const vImageBufferTypeCode *vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an array that contains the [`vImageBufferTypeCode`](./vimagebuffertypecode.md) elements that correspond to the names of the channels in the image.
 
-#### Discussion
+## Discussion
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelNames(_:)`](./vimagecvimageformat_getchannelnames%28_%29.md):
 

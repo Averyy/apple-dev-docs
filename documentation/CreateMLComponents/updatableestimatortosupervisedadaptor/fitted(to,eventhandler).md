@@ -21,7 +21,7 @@ Fits a transformer to a sequence of examples, ignoring the annotations and the v
 func fitted<Input>(to input: Input, eventHandler: EventHandler? = nil) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer where Input : Sequence, Input.Element == AnnotatedFeature<Estimator.Transformer.Input, Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The pre-defined transformer.
 

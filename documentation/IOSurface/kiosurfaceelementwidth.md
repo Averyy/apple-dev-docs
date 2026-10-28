@@ -24,7 +24,7 @@ let kIOSurfaceElementWidth: CFString
 extern CFStringRef const kIOSurfaceElementWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.
 

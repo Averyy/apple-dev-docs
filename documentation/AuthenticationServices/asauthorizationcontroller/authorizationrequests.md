@@ -25,7 +25,7 @@ var authorizationRequests: [ASAuthorizationRequest] { get }
 @property (nonatomic, strong, readonly) NSArray<ASAuthorizationRequest *> * authorizationRequests;
 ```
 
-#### Discussion
+## Discussion
 
 Use an authorization provider, like [`ASAuthorizationAppleIDProvider`](../asauthorizationappleidprovider.md), [`ASAuthorizationPasswordProvider`](../asauthorizationpasswordprovider.md), or [`ASAuthorizationSingleSignOnProvider`](../asauthorizationsinglesignonprovider.md), to create a request for a particular purpose.
 

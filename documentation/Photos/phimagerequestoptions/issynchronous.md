@@ -24,7 +24,7 @@ var isSynchronous: Bool { get set }
 @property (nonatomic, assign, getter=isSynchronous) BOOL synchronous;
 ```
 
-#### Discussion
+## Discussion
 
 If `false` (the default), the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](../phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method returns immediately. Depending on the [`deliveryMode`](./deliverymode.md) property, Photos may call your `resultHandler` block before the method returns, at some later time, or both.
 

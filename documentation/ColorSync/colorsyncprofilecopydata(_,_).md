@@ -25,7 +25,7 @@ func ColorSyncProfileCopyData(_ prof: ColorSyncProfile!, _ error: UnsafeMutableP
 extern CFDataRefColorSyncProfileCopyData(ColorSyncProfileRef prof, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The profile data on success, or `NULL` in case of failure.
 

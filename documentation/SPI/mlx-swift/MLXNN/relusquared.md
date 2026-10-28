@@ -17,7 +17,7 @@ Applies the squared Rectified Linear Unit.
 class ReLUSquared
 ```
 
-#### Overview
+## Overview
 
 This is:
 

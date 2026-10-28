@@ -22,7 +22,7 @@ class let currentExposureTargetBias: Float
 extern const float AVCaptureExposureTargetBiasCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value to the [`setExposureTargetBias(_:completionHandler:)`](./setexposuretargetbias%28_,completionhandler%29.md) method to lock exposure bias to its current value, which disables autoexposure.
 

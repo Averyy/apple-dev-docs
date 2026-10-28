@@ -21,7 +21,7 @@ class func getStreamsTo(_ host: Host, port: Int, inputStream: AutoreleasingUnsaf
 + (void) getStreamsToHost:(NSHost *) host port:(NSInteger) port inputStream:(NSInputStream **) inputStream outputStream:(NSOutputStream **) outputStream;
 ```
 
-#### Discussion
+## Discussion
 
 If neither `port` nor `host` is properly specified, no socket connection is made.
 

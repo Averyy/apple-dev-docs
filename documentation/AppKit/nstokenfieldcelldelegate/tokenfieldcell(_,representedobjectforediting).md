@@ -20,11 +20,11 @@ optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, representedObje
 - (id) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell representedObjectForEditingString:(NSString *) editingString;
 ```
 
-#### Return Value
+## Return Value
 
 A represented object that is displayed rather than the editing string.
 
-#### Discussion
+## Discussion
 
 If your application uses some object other than an `NSString` for their represented objects, you should return a new, autoreleased instance of that object from this method.
 

@@ -25,11 +25,11 @@ func urls(forResourcesWithExtension ext: String?, subdirectory subpath: String?)
 - (NSArray<NSURL *> *) URLsForResourcesWithExtension:(NSString *) ext subdirectory:(NSString *) subpath;
 ```
 
-#### Return Value
+## Return Value
 
 An array of file URLs for the resource files or `nil` if no files could be located at `subpath` with `extension`. Returns an empty array if no matching resource files are found.
 
-#### Discussion
+## Discussion
 
 If `subpath` is `nil`, this method searches the top-level non-localized resource directory and the top-level of any language-specific directories. (In macOS, the top-level non-localized resource directory is typically called `Resources` but in iOS, it is the main bundle directory.)
 

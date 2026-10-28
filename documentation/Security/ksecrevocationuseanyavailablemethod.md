@@ -25,7 +25,7 @@ var kSecRevocationUseAnyAvailableMethod: CFOptionFlags { get }
 kSecRevocationUseAnyAvailableMethod
 ```
 
-#### Discussion
+## Discussion
 
 The checking is performed according to the method(s) specified in the certificate and the value of [`kSecRevocationPreferCRL`](./ksecrevocationprefercrl.md).
 

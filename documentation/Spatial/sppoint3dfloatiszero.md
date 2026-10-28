@@ -19,11 +19,11 @@
 static bool SPPoint3DFloatIsZero(SPPoint3DFloat point);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the point is zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the point is zero.
 

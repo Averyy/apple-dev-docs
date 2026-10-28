@@ -20,11 +20,11 @@ func isEqual(to object: Any?) -> Bool
 - (BOOL) isEqualTo:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is equal to `object`, otherwise [`NO`](../no.md). In effect returns [`NO`](../no.md) if receiver is `nil`.
 
-#### Discussion
+## Discussion
 
 During the evaluation of an `NSWhoseSpecifier` object that contains a test whose operator is `NSEqualToComparison`, an [`isEqual(to:)`](./isequal%28to%29.md) message may be sent to each potentially specified object, if neither the potentially specified object nor the object being tested against implements a [`scriptingIsEqual(to:)`](./scriptingisequal%28to%29.md) method.
 

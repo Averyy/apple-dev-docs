@@ -25,7 +25,7 @@ init(enabledProfiles enabled: [MIDICIProfile], disabledProfiles disabled: [MIDIC
 - (instancetype) initWithEnabledProfiles:(NSArray<MIDICIProfile *> *) enabled disabledProfiles:(NSArray<MIDICIProfile *> *) disabled;
 ```
 
-#### Return Value
+## Return Value
 
 A new profile state instance.
 

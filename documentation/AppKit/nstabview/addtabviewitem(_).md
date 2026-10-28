@@ -19,7 +19,7 @@ func addTabViewItem(_ tabViewItem: NSTabViewItem)
 - (void) addTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 The item is added at the end of the array of tab items, so the new tab appears on the right side of the view. If the delegate supports it, it invokes the delegate’s [`tabViewDidChangeNumberOfTabViewItems(_:)`](../nstabviewdelegate/tabviewdidchangenumberoftabviewitems%28_%29.md) method.
 

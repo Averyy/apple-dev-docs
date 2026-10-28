@@ -19,7 +19,7 @@ func setBadgeIdentifier(_ badgeID: String, for url: URL)
 - (void) setBadgeIdentifier:(NSString *) badgeID forURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Adds the specified badge to the given file or directory. Setting the identifier to an empty string (`@""`) removes the badge.
 

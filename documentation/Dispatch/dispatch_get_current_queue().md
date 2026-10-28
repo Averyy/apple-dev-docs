@@ -26,11 +26,11 @@ func dispatch_get_current_queue() -> dispatch_queue_t
 extern dispatch_queue_tdispatch_get_current_queue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current queue.
 
-#### Discussion
+## Discussion
 
 This function is defined to never return `NULL`.
 

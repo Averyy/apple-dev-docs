@@ -25,7 +25,7 @@ func NSEndHashTableEnumeration(_ enumerator: UnsafeMutablePointer<NSHashEnumerat
 extern void NSEndHashTableEnumeration(NSHashEnumerator *enumerator);
 ```
 
-#### Discussion
+## Discussion
 
 This function should be called when you have finished using the enumeration struct `enumerator`.
 

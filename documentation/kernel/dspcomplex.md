@@ -15,7 +15,7 @@ Used to hold a complex value.
 typedef struct DSPComplex DSPComplex;
 ```
 
-#### Discussion
+## Discussion
 
 Complex data are stored as ordered pairs of floating-point numbers. Because they are stored as ordered pairs, complex vectors require address strides that are multiples of two. 
 

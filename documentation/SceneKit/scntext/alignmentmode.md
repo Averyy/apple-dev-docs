@@ -25,7 +25,7 @@ var alignmentMode: String { get set }
 @property (nonatomic, copy) NSString * alignmentMode;
 ```
 
-#### Discussion
+## Discussion
 
 When you define a layout rectangle for the text using its [`containerFrame`](./containerframe.md) property, SceneKit uses the [`alignmentMode`](./alignmentmode.md) property to determine where each line of text is placed horizontally relative to the layout rectangle. For possible values, see [Horizontal alignment modes](../../QuartzCore/horizontal-alignment-modes.md) in [`CATextLayer`](../../QuartzCore/catextlayer.md).
 

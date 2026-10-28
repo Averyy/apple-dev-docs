@@ -21,7 +21,7 @@ The number of channels, including alpha, for the Core Video image format.
 var channelCount: UInt32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code prints the number of channels in a [`kCVPixelFormatType_420YpCbCr8Planar`](../../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md) Core Video image format:
 

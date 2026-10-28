@@ -17,7 +17,7 @@ Sets whether each image representation uses a separate offscreen window to cache
 - (void) setCachedSeparately:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify [`false`](../../Swift/false.md), a representation can be cached together with other images, though in practice it might not be. This method does not invalidate any existing caches.
 

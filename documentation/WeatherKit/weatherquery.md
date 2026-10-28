@@ -21,7 +21,7 @@ A structure that encapsulates a generic weather dataset request.
 struct WeatherQuery<T>
 ```
 
-#### Overview
+## Overview
 
 Use the properties of this structure to create a weather query. You can combine multiple weather queries into a single [`WeatherService`](./weatherservice.md) request.
 

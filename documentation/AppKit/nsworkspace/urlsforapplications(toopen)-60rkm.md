@@ -19,11 +19,11 @@ func urlsForApplications(toOpen contentType: UTType) -> [URL]
 - (NSArray<NSURL *> *) URLsForApplicationsToOpenContentType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of URLs to available apps that can open the specified `contentType`. Returns an empty array if no app can open the content type.
 
-#### Discussion
+## Discussion
 
 The system sorts the resulting array according to each app’s suitability to open the `contentType`. The returned array lists the best match first.
 

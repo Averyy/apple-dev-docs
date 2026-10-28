@@ -21,11 +21,11 @@ An atomic operation that wakes one thread blocked on a futex wait, used to imple
 extern int os_sync_wake_by_address_any(void *addr, size_t size, os_sync_wake_by_address_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 on success, and -1 on error with `errno` set.
 
-#### Discussion
+## Discussion
 
 This function wakes a single thread waiting on `addr`. There’s no guarantee which thread wakes in the case of multiple waiters.
 
@@ -33,7 +33,7 @@ Pass consistent values across wait and wake APIs for `addr`, `size`, and `flags`
 
 > ❗ **Important**: Use this function only for implementing synchronization primitives that don’t have a sense of ownership, such as condition variables or semaphores. In particular, this function doesn’t provide priority inversion avoidance. For locking APIs, use existing OS primitives, such as `pthread` threads or [Unfair Locking](./synchronization.md#Unfair-Locking) APIs. For synchronization and threading managed by the OS, use a higher-level API, such as [Dispatch](../Dispatch/Dispatch.md).
 
-##### Error Codes
+### Error Codes
 
 When this function returns `-1`, the global `errno` contains one of these values, indicating the corresponding error.
 

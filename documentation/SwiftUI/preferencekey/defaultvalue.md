@@ -22,7 +22,7 @@ The default value of the preference.
 static var defaultValue: Self.Value { get }
 ```
 
-#### Discussion
+## Discussion
 
 Views that have no explicit value for the key produce this default value. Combining child views may remove an implicit value produced by using the default. This means that `reduce(value: &x, nextValue: {defaultValue})` shouldn’t change the meaning of `x`.
 

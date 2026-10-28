@@ -15,7 +15,7 @@ Headers to include with requests to media endpoints.
 object ExtensionConfig.Media.Queues.PlayMedia.Hdr
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary of header names and values.
 

@@ -25,11 +25,11 @@ func SecTrustSetExceptions(_ trust: SecTrust, _ exceptions: CFData?) -> Bool
 bool SecTrustSetExceptions(SecTrustRef trust, CFDataRef exceptions);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that is [`true`](../Swift/true.md) if the exceptions cookies was valid and matches the current leaf certificate, [`false`](../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Even if this function returns true, you must still call [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) because the evaluation can still fail if something changes between the initial evaluation and the reevaluation.
 

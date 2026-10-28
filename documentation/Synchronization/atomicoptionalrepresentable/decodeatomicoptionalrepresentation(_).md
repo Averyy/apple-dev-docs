@@ -22,11 +22,11 @@ Recovers the logical atomic type `Self?` by destroying some `AtomicOptionalRepre
 static func decodeAtomicOptionalRepresentation(_ representation: consuming Self.AtomicOptionalRepresentation) -> Self?
 ```
 
-#### Return Value
+## Return Value
 
 The newly decoded logical type `Self?`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply decodes the storage representation used in atomic operations on `Optional` back into the logical type for normal use, `Self?`.
 

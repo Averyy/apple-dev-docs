@@ -24,7 +24,7 @@ class MPSCNNFullyConnected
 @interface MPSCNNFullyConnected : MPSCNNConvolution
 ```
 
-#### Overview
+## Overview
 
 A fully connected layer in  a Convolutional Neural Network (CNN) is one where every input channel is connected to every output channel. The kernel width is equal to the width of the source image, and the kernel height is equal to the height of the source image. The width and height of the output is `1 x 1`.
 

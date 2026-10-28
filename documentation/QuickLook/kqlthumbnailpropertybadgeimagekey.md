@@ -21,7 +21,7 @@ let kQLThumbnailPropertyBadgeImageKey: CFString!
 extern CFStringRef const kQLThumbnailPropertyBadgeImageKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value for this key is a [`CGImage`](../CoreGraphics/cgimage.md).
 

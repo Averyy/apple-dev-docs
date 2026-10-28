@@ -20,7 +20,7 @@ The prim designated as this stage’s default entry point when the stage is refe
 var defaultPrim: USDPrim? { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property can be `nil` even if [`hasDefaultPrim`](./hasdefaultprim.md) is true. This indicates that there is an authored reference to a default prim, but it is invalid.
 

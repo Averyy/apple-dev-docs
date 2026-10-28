@@ -21,7 +21,7 @@ func activate(ignoringOtherApps ignoreOtherApps: Bool)
 - (void) activateIgnoringOtherApps:(BOOL) ignoreOtherApps;
 ```
 
-#### Discussion
+## Discussion
 
 The `flag` parameter is normally set to [`false`](../../Swift/false.md). When the Finder launches an app, using a value of [`false`](../../Swift/false.md) for `flag` allows the app to become active if the user waits for it to launch, but the app remains unobtrusive if the user activates another app. Regardless of the setting of `flag`, there may be a time lag before the app activates—you shouldn’t assume the app will be active immediately after sending this message.
 

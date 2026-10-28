@@ -17,7 +17,7 @@ A value indicating the total price of the item.
 var totalPrice: Decimal
 ```
 
-#### Discussion
+## Discussion
 
 The [ProximityReader](../../../ProximityReader.md) framework formats the total price using the customer’s locale and currency symbol.
 

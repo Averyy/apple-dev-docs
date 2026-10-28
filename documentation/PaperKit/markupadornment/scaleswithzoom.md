@@ -19,7 +19,7 @@ A Boolean value that indicates whether the adornment scales with the zoom level 
 var scalesWithZoom: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, the adornment image adjusts to the zoom scale of the `PaperMarkupViewController`. When `false`, the adornment image remains fixed in the base coordinate system.
 

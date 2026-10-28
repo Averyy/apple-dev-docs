@@ -15,7 +15,7 @@ Display and allow editing of the era of the date, if applicable.
 static const NSDatePickerElementFlags NSEraDatePickerElementFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This flag has been declared for possible future use, and does not yet have any effect.
 

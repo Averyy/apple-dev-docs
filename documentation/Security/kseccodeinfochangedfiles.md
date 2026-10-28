@@ -20,7 +20,7 @@ let kSecCodeInfoChangedFiles: CFString
 extern CFStringRef const kSecCodeInfoChangedFiles;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFArray`](../CoreFoundation/cfarray.md) array of [`CFURL`](../CoreFoundation/cfurl.md) objects. Files not in this list have not been touched by the signing operation.
 

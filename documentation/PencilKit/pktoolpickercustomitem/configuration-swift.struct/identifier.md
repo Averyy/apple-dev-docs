@@ -18,7 +18,7 @@ A string that uniquely identifies the tool in the picker.
 var identifier: String
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might use the name `com.example.example-company.custom-tool`. If you use multiple tool items with the same identifier to create the picker, the picker only shows the first instance of that item.
 

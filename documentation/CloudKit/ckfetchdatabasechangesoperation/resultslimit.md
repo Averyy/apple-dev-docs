@@ -25,7 +25,7 @@ var resultsLimit: Int { get set }
 @property (nonatomic, assign) NSUInteger resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the number of changes this operation returns. When the operation reaches the limit, it updates the change token and returns it to indicate that more results are available.
 

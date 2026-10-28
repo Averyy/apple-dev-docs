@@ -21,7 +21,7 @@ The array’s “past the end” position—that is, the position one greater th
 var endIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

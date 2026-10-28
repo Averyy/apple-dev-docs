@@ -24,7 +24,7 @@ var activeOperationalDataSet: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * activeOperationalDataSet;
 ```
 
-#### Discussion
+## Discussion
 
 The framework parses this property, then extracts and sets [`channel`](./channel.md), [`extendedPANID`](./extendedpanid.md), [`networkKey`](./networkkey.md), [`networkName`](./networkname.md), [`panID`](./panid.md), and [`pskc`](./pskc.md) when you call [`storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)`](../thclient/storecredentials%28forborderagent,activeoperationaldataset,completion%29.md).
 

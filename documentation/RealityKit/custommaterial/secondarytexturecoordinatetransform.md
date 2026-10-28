@@ -19,7 +19,7 @@ A two-dimensional transformation RealityKit applies to the entity’s secondary 
 var secondaryTextureCoordinateTransform: CustomMaterial.TextureCoordinateTransform { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity’s UV texture coordinates define how RealityKit maps image textures onto an entity. Use this property to transform the secondary texture coordinates and change the way this material maps textures onto an entity. If an entity has multiple materials assigned to it, the transformation doesn’t affect how the other materials map their textures.
 

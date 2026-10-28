@@ -21,7 +21,7 @@ The relative portion of a URL.
 var relativeString: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `baseURL` is nil, or if the URL is itself absolute, this is the same as `absoluteString`.
 

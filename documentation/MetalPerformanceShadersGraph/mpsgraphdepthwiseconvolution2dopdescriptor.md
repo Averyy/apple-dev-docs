@@ -24,7 +24,7 @@ class MPSGraphDepthwiseConvolution2DOpDescriptor
 @interface MPSGraphDepthwiseConvolution2DOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 An `MPSGraphDepthwiseConvolution2DOpDescriptor` defines constant parameters for 2D-depthwise convolutions. Use this class with [`depthwiseConvolution2D(_:weights:descriptor:name:)`](./mpsgraph/depthwiseconvolution2d%28_,weights,descriptor,name%29.md), [`depthwiseConvolution2DDataGradient(_:weights:outputShape:descriptor:name:)`](./mpsgraph/depthwiseconvolution2ddatagradient%28_,weights,outputshape,descriptor,name%29.md), and [`depthwiseConvolution2DWeightsGradient(_:source:outputShape:descriptor:name:)`](./mpsgraph/depthwiseconvolution2dweightsgradient%28_,source,outputshape,descriptor,name%29.md) methods.
 

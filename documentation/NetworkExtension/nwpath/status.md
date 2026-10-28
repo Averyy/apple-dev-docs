@@ -26,7 +26,7 @@ var status: NWPathStatus { get }
 @property (nonatomic, readonly) NWPathStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 The status of a path indicates whether or not the process is able to make connection attempts to any, or a specific, network endpoint. A satisfied status does not guarantee that a connection will be successful, but it does ensure that there is some interface over which an attempt can be made.
 

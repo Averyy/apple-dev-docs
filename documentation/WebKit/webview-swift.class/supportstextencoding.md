@@ -21,7 +21,7 @@ var supportsTextEncoding: Bool { get }
 @property (nonatomic, readonly) BOOL supportsTextEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver’s document view can support different text encodings; otherwise, [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ func CTGlyphInfoGetGlyph(_ glyphInfo: CTGlyphInfo) -> CGGlyph
 extern CGGlyph CTGlyphInfoGetGlyph(CTGlyphInfoRef glyphInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGGlyph`](../CoreGraphics/cgglyph.md) value, if the glyph info object was created with a font; otherwise, `0`.
 

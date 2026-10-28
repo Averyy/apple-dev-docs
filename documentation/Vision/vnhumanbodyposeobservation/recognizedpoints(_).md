@@ -28,7 +28,7 @@ func recognizedPoints(_ jointsGroupName: VNHumanBodyPoseObservation.JointsGroupN
 
 - [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
-#### Return Value
+## Return Value
 
 The array of points associated with the joint group name.
 

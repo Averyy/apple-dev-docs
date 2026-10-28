@@ -16,7 +16,7 @@ get collisionMode(): AnnotationCollisionMode;
 set collisionMode(value: AnnotationCollisionMode);
 ```
 
-#### Discussion
+## Discussion
 
 The collision mode indicates whether the annotation collides, and, if so, the shape of an annotation’s collision frame:
 

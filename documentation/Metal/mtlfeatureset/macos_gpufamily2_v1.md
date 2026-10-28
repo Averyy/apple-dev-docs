@@ -19,7 +19,7 @@ case macOS_GPUFamily2_v1
 MTLFeatureSet_macOS_GPUFamily2_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with macOS 10.14 and the following GPUs:
 

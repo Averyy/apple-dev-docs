@@ -19,11 +19,11 @@
 static float SPAngleFloatSin(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The sine of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the sine of the specified angle.
 

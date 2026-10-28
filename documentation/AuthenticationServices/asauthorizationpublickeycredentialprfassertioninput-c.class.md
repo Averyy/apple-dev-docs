@@ -19,7 +19,7 @@ A type that represents input for the web authentication PRF extension in passkey
 @interface ASAuthorizationPublicKeyCredentialPRFAssertionInput : NSObject
 ```
 
-#### Overview
+## Overview
 
 The PRF extension lets you create general purpose `SymmetricKey` keys from passkeys, which can be useful for tasks like encryption of user data. Using the same input values with the same passkey produces the same `SymmetricKey`.
 

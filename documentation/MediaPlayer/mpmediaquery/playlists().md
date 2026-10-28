@@ -22,7 +22,7 @@ class func playlists() -> MPMediaQuery
 + (MPMediaQuery *) playlistsQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches all media items and that has a grouping type of [`MPMediaGrouping.playlist`](../mpmediagrouping/playlist.md).
 

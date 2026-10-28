@@ -21,7 +21,7 @@ Computes the cross-spectrum of two complex single-precision vectors.
 extern void vDSP_zcspec(const DSPSplitComplex *__A, const DSPSplitComplex *__B, const DSPSplitComplex *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function computes the cross-spectrum of complex input vectors `A` and `B`: it multiplies elements of `B` by the complex conjugates of elements of `A`. The results are added to complex input-output vector `C`. `C` should contain valid  data from previous processing or should be initialized according to your needs before calling this function.
 

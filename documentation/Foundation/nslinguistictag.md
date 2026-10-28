@@ -25,7 +25,7 @@ struct NSLinguisticTag
 typedef NSString * NSLinguisticTag;
 ```
 
-#### Overview
+## Overview
 
 When you create a linguistic tagger, you specify one or more [`NSLinguisticTagScheme`](./nslinguistictagscheme.md) constants that correspond to the kind of information you want to know about a selection of natural language text.  When working with linguistic tags using the methods described in Getting Linguistic Tags and Enumerating Linguistic Tags, the returned value depends on the specified scheme. The [`NSLinguisticTag`](./nslinguistictag.md) type represents the constant values that can be returned for certain [`NSLinguisticTagScheme`](./nslinguistictagscheme.md) values.
 

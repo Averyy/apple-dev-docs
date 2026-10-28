@@ -15,11 +15,11 @@ Specifies bitmap spaces with a wide range of data formats appropriate for multip
 typedef UInt32 CMBitmapColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 This enumeration defines constants for color spaces which can specify color values for a bitmap image. As a rule, these constants include a packing format, defined in [Color Packing for Color Spaces](./api-1560270-color_packing_for_color_spaces.md). You can use these constants to set the `space` field of the `CMBitmap` type definition identifies the color space in which the colors of the bitmap image are specified, as described in [Abstract Color Space Constants](./api-1560701-abstract_color_space_constants.md).
 
-##### Version-Notes
+### Version-Notes
 
 The constants `cmRGBASpace` and `cmGrayASpace` were moved to [Abstract Color Space Constants](./api-1560701-abstract_color_space_constants.md) in ColorSync version 2.5.
 

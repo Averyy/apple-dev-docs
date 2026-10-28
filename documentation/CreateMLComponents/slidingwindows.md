@@ -21,7 +21,7 @@ A sequence of windows on a time series shaped array.
 struct SlidingWindows<Scalar> where Scalar : MLShapedArrayScalar
 ```
 
-#### Overview
+## Overview
 
 The shape of each window in the sequence is `[length, featureSize]`. The sequence will return as many windows as fit in the input. For example, an input shaped array of shape `[8, 1]` using `stride` of 1 and `length` of 4 will produce 5 examples:
 

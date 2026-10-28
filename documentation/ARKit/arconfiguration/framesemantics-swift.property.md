@@ -20,11 +20,11 @@ var frameSemantics: ARConfiguration.FrameSemantics { get set }
 @property (nonatomic, assign) ARFrameSemantics frameSemantics;
 ```
 
-#### Discussion
+## Discussion
 
 You can choose whether ARKit reports information about a particular per-frame metric, or *semantic*. Before enabling a frame sementic, call [`supportsFrameSemantics(_:)`](./supportsframesemantics%28_%29.md) to ensure device support.
 
-##### Enable 2D Body Detection
+### Enable 2D Body Detection
 
 To get information about the 2D location of a person that ARKit recognizes in a frame, you enable the [`bodyDetection`](./framesemantics-swift.struct/bodydetection.md) frame semantic.
 
@@ -37,7 +37,7 @@ if let config = mySession.configuration as? ARBodyTrackingConfiguration {
 
 ```
 
-##### Enable People Occlusion
+### Enable People Occlusion
 
 People occlusion is a feature that enables people in the camera feed to cover your app’s virtual content.
 

@@ -21,7 +21,7 @@ case playing
 MPMoviePlaybackStatePlaying
 ```
 
-#### Discussion
+## Discussion
 
 Playback is currently under way.
 

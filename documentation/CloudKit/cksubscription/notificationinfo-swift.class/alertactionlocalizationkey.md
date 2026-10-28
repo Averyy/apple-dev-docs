@@ -24,7 +24,7 @@ var alertActionLocalizationKey: String? { get set }
 @property (copy, nullable) NSString * alertActionLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to have the system use a localized string for the text of the notification’s button that opens your app. The system uses the key to find the matching string in your app’s `Localizable.string` file.
 

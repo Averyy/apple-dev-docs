@@ -26,7 +26,7 @@ func CFURLCreateFromFSRef(_ allocator: CFAllocator!, _ fsRef: OpaquePointer!) ->
 extern CFURLRefCFURLCreateFromFSRef(CFAllocatorRef allocator, const struct FSRef *fsRef);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

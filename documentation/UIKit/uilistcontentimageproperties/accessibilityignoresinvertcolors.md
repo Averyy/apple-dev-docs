@@ -19,7 +19,7 @@ A Boolean value that determines whether the image inverts its colors when the us
 @property (nonatomic) BOOL accessibilityIgnoresInvertColors;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the image doesn’t invert its colors when the user turns on Invert Colors. The default value is [`false`](../../Swift/false.md).
 

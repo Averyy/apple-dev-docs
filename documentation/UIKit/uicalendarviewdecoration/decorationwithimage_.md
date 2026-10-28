@@ -18,11 +18,11 @@ Creates a new calendar view decoration with the image you specify, using the sys
 + (instancetype) decorationWithImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 
-#### Discussion
+## Discussion
 
 The color defaults to [`systemFill`](../uicolor/systemfill.md) if you don’t specify it.
 

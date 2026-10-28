@@ -25,11 +25,11 @@ func CFReadStreamSetProperty(_ stream: CFReadStream!, _ propertyName: CFStreamPr
 extern Boolean CFReadStreamSetProperty(CFReadStreamRef stream, CFStreamPropertyKey propertyName, CFTypeRef propertyValue);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `stream` recognizes and accepts the given property-value pair, otherwise`FALSE`.
 
-#### Discussion
+## Discussion
 
 Each type of stream can define a set of properties that either describe or configure individual streams. A property can be any interesting information about a stream. Examples include the headers from an HTTP transmission, the expected number of bytes, file permission information, and so on. Properties that can be set configure the behavior of the stream and may be modifiable only at particular times, such as before the stream has been opened. (In fact, you should assume that you can set properties only before opening the stream, unless otherwise noted.) To read the value of a property use [`CFReadStreamCopyProperty(_:_:)`](./cfreadstreamcopyproperty%28_,_%29.md), although some properties are write-only.
 

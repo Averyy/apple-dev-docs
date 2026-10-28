@@ -25,7 +25,7 @@ func performAccessorySetup(using request: HMAccessorySetupRequest) async throws 
 - (void) performAccessorySetupUsingRequest:(HMAccessorySetupRequest *) request completionHandler:(void (^)(HMAccessorySetupResult *result, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 During the setup process, the framework adds each accessory to a home, assigns it to a room, and provides further configuration based on its services.
 

@@ -25,7 +25,7 @@ func load()
 - (void) load;
 ```
 
-#### Discussion
+## Discussion
 
 This method reads audio data from the source file (specified when initializing the audio source) and performs any decompression necessary to prepare for playing audio. Use this method to control when your app or game incurs the run-time performance cost of such work—for example, you can load all audio source before starting a game level, instead of suffering a frame rate drop upon playing a new audio source during gameplay.
 

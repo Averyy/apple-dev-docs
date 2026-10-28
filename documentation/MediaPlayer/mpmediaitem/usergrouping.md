@@ -23,7 +23,7 @@ var userGrouping: String? { get }
 @property (nonatomic, readonly, nullable) NSString * userGrouping;
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to the “Grouping” field in the Info tab in the Get Info dialog in iTunes.
 

@@ -24,7 +24,7 @@ convenience init?(strides: [NSNumber], dilationRates: [NSNumber], paddingValues:
 + (instancetype) descriptorWithStrides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingValues:(NSArray<NSNumber *> *) paddingValues paddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor on autoreleasepool.
 

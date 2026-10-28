@@ -25,7 +25,7 @@ init(block: @escaping (Any?, [NSExpression], NSMutableDictionary?) -> Any, argum
 + (NSExpression *) expressionForBlock:(id (^)(id evaluatedObject, NSArray<NSExpression *> *expressions, NSMutableDictionary *context)) block arguments:(NSArray<NSExpression *> *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 An expression that filters a collection using the specified Block.
 

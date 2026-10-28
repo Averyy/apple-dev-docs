@@ -23,11 +23,11 @@ func IODataQueuePeek(_ dataQueue: UnsafeMutablePointer<IODataQueueMemory>!) -> U
 IODataQueueEntry * IODataQueuePeek(IODataQueueMemory *dataQueue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the next IODataQueueEntry if one is available. Zero is returned if the queue is empty.
 
-#### Discussion
+## Discussion
 
 This function can be used to look at the next entry which allows the entry to be received without having to copy it with IODataQueueDequeue. In order to do this, call IODataQueuePeek to get the entry. Then call IODataQueueDequeue with a NULL data pointer. That will cause the head to be moved to the next entry, but no memory to be copied.
 

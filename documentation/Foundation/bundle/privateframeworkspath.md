@@ -25,7 +25,7 @@ var privateFrameworksPath: String? { get }
 @property (copy, readonly, nullable) NSString * privateFrameworksPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the appropriate path for modern application and framework bundles. This property may not contain a path for non-standard bundle formats or for some older bundle formats.
 

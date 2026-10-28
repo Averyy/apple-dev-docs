@@ -19,7 +19,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 When successful, this method posts a notification ([`WebHistoryAllItemsRemovedNotification`](../webhistoryallitemsremovednotification.md)).
 

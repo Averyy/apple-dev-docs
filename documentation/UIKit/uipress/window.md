@@ -23,7 +23,7 @@ var window: UIWindow? { get }
 @property (nonatomic, strong, readonly, nullable) UIWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the window in which the press originally occurred. This object might not be the window in which the press is currently located.
 

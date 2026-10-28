@@ -10,7 +10,7 @@ Create a team-based guessing game for visionOS using Group Activities.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample shows how to build a guessing game for two competing teams. Participants, using an Apple Vision Pro during a FaceTime call, can play as members of the red or blue team or watch from the audience. At each stage of the game, the sample positions participants according to their role as a team member or spectator.
 
@@ -20,7 +20,7 @@ After the initial welcome screen for the game, the participants select categorie
 
 > **Note**: SharePlay requires the  [`com.apple.developer.group-session`](../BundleResources/entitlements/com.apple.developer.group-session.md) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
 
-##### Define the group activity
+### Define the group activity
 
 The [`GroupActivity`](./groupactivity.md) protocol provides the system with the context and metadata to start an activity-related session. The sample defines a single `GroupActivity` to represent the game:
 
@@ -36,7 +36,7 @@ struct GuessTogetherActivity: GroupActivity, Transferable, Sendable {
 
 For more information, see [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md).
 
-##### Encourage people to start a game
+### Encourage people to start a game
 
 The welcome screen displays a custom `SharePlayButton`; tapping it starts the game. If the player is already in a FaceTime call, the `GuessTogetherActivity` activates. Otherwise, a [`GroupActivitySharingController`](./groupactivitysharingcontroller-ybcy.md) displays a sheet inviting the player to start the FaceTime call. When a recipient accepts the FaceTime call, the system prompts them to join the `GuessTogetherActivity`:
 
@@ -111,7 +111,7 @@ struct ActivitySharingView<ActivityType: GroupActivity & Sendable>: UIViewContro
 
 For more information, see [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md).
 
-##### Join and manage the activity
+### Join and manage the activity
 
 The system creates a [`GroupSession`](./groupsession.md) when a player activates an activity. Players can activate an activity in several ways, at any time. This sample uses an asynchronous task in `MainView` to monitor the creation of new `GroupSession` instances for `GuessTogetherActivity`. This task calls the `observeGroupSessions` method, which receives new sessions and creates a `SessionController` to manage gameplay. A separate task detects when the session ends and cleans up the `SessionController`.
 
@@ -159,7 +159,7 @@ struct MainView: View {
 
 For more information, see [Joining and managing a shared activity](./joining-and-managing-a-shared-activity.md).
 
-##### Synchronize game state by sending and receiving messages
+### Synchronize game state by sending and receiving messages
 
 When a player’s action changes the game state, `SessionController` uses [`GroupSessionMessenger`](./groupsessionmessenger.md) to send an update to the other players. For example, when player X joins the red team, `TeamSelectionView` calls `SessionController.joinTeam`. This sets `SessionController.localPlayer.team`, sending a call to `SessionController.shareLocalPlayerState`.
 
@@ -219,7 +219,7 @@ private func observeRemotePlayerModelUpdates() {
 
 For more information, see [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md).
 
-##### Enable spatial personas in an immersive space
+### Enable spatial personas in an immersive space
 
 To display spatial Personas when an immersive space is open, set the [`supportsGroupImmersiveSpace`](./systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace.md) property on [`SystemCoordinator.Configuration`](./systemcoordinator/configuration-swift.struct.md) to `true`:
 
@@ -237,7 +237,7 @@ In an immersive space, the system provides a shared coordinate system for partic
 
 For more information, see [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md).
 
-##### Specify custom positions for participants
+### Specify custom positions for participants
 
 The game has three distinct stages:
 

@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Customize your shell to automatically complete swift package commands.
 
-#### Overview
+## Overview
 
 Package manager ships with completion scripts for Bash, Zsh, and Fish. Generate completion lists for your shell in order to use it.
 
-##### Bash
+### Bash
 
 Use the following commands to install the Bash completions to `~/.swift-package-complete.bash` and automatically load them using your `~/.bash_profile` file.
 
@@ -33,7 +33,7 @@ if [ -n "`which swift`" ]; then
 fi
 ```
 
-##### Zsh
+### Zsh
 
 Use the following commands to install the Zsh completions to `~/.zsh/_swift`. You can chose a different folder, but the filename should be `_swift`. This will also add `~/.zsh` to your `$fpath` using your `~/.zshrc` file.
 

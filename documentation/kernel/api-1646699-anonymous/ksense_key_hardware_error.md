@@ -13,7 +13,7 @@
 kSENSE_KEY_HARDWARE_ERROR = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected a hardware error.
 

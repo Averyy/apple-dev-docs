@@ -29,7 +29,7 @@ class EKEvent
 - [Creating events and reminders](./creating-events-and-reminders.md)
 - [Retrieving events and reminders](./retrieving-events-and-reminders.md)
 
-#### Overview
+## Overview
 
 Use the [`init(eventStore:)`](./ekevent/init%28eventstore%29.md) method to create a new event. Use the properties in the class to get and modify certain information about an event. Other properties, such as the event’s title and calendar, are inherited from the parent class [`EKCalendarItem`](./ekcalendaritem.md).
 

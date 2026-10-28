@@ -23,7 +23,7 @@ var publisher: Result<Success, Failure>.Publisher { get }
 
 Available when `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 In the following example, `goodResult` provides a successful result with the integer value `1`. A sink subscriber connected to the result’s publisher receives the output `1`, followed by a normal completion ([`Subscribers.Completion.finished`](../../Combine/subscribers/completion/finished.md)).
 

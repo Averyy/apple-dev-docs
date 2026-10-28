@@ -23,7 +23,7 @@ optional var selectionAffinity: UITextStorageDirection { get set }
 @property (nonatomic) UITextStorageDirection selectionAffinity;
 ```
 
-#### Discussion
+## Discussion
 
 For text selections that wrap across line boundaries, this property determines whether the insertion point appears after the last character on the line or before the first character on the following line. The selection affinity is set in response to the user navigating via the keyboard (for example, command-right-arrow). The text input system checks this property when it moves the insertion point around in a document.
 

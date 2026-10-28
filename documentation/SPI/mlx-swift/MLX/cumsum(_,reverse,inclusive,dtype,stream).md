@@ -17,7 +17,7 @@ Return the cumulative sum of the elements over the flattened array.
 func cumsum(_ array: MLXArray, reverse: Bool = false, inclusive: Bool = true, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.cumsum()
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](./cumulative.md)
 - [`cumsum(_:axis:reverse:inclusive:dtype:stream:)`](./cumsum%28_,axis,reverse,inclusive,dtype,stream%29.md)

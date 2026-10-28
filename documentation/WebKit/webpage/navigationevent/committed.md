@@ -19,7 +19,7 @@ This event occurs when the page has started to receive content for the main fram
 case committed
 ```
 
-#### Discussion
+## Discussion
 
 This happens immediately before the page starts to update the main frame.
 

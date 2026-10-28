@@ -22,7 +22,7 @@ A property wrapper type for an observable object that a parent or ancestor view 
 @frozen @propertyWrapper @preconcurrency struct EnvironmentObject<ObjectType> where ObjectType : ObservableObject
 ```
 
-#### Overview
+## Overview
 
 An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](../Combine/observableobject.md) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](./view/environmentobject%28_%29.md) modifier.
 

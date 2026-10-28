@@ -5,18 +5,18 @@
 
 Learn the expected use cases for Network Extension packet tunnel providers, and about use cases that are not supported.
 
-#### Overview
+## Overview
 
 [`NEPacketTunnelProvider`](../NetworkExtension/nepackettunnelprovider.md) is very powerful and useful on Apple platforms. It has many valid use cases such as providing users access to secure resources and securing network traffic on an insecure network. While this API is very powerful, there are certain use cases that do not line up with its intended purpose. This technote briefly explains the recommended use cases for packet tunnel providers, along with common scenarios that are unsupported.
 
-#### Recommended use cases for packet tunnel providers
+## Recommended use cases for packet tunnel providers
 
 Recommended use cases for a packet tunnel provider include:
 
 - Do use a packet tunnel provider to access secure resources on an isolated network. For example, use `NEPacketTunnelProvider` to implement an iOS or macOS VPN client that tunnels network traffic through a VPN connection into a private enterprise network. This can be done by tunneling specific destination IP and DNS traffic to the isolated network.
 - Do use a packet tunnel provider to secure network access while on an insecure network.  For example, use `NEPacketTunnelProvider` to implement an iOS or macOS VPN client that tunnels network traffic through a public VPN service that provides access to the wider internet.  Common techniques used to achieve this functionality include creating a full tunnel VPN that routes all traffic to the remote VPN server that then forwards the traffic to its final destination.
 
-#### Unsupported uses of packet tunnel providers
+## Unsupported uses of packet tunnel providers
 
 While there are many reasons to use a packet tunnel provider, there are also many unsupported uses of this API. If you find yourself implementing any one of the code paths below, consider using one of the suggested alternatives:
 
@@ -31,7 +31,7 @@ While there are many reasons to use a packet tunnel provider, there are also man
 
 Avoiding the unsupported scenarios will save your project many edges cases and bugs during the development and deployment process.
 
-#### Revision History
+## Revision History
 
 - **2025-07-22** Added a reference to the new [URL filters](../NetworkExtension/url-filters.md) mechanism.  Added links to documents that further explain specific topics.  Fixed a broken link.  Made other minor editorial changes.
 - **2022-05-24** Made minor editorial changes.

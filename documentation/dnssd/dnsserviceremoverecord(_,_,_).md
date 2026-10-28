@@ -25,7 +25,7 @@ func DNSServiceRemoveRecord(_ sdRef: DNSServiceRef!, _ RecordRef: DNSRecordRef!,
 DNSServiceErrorType DNSServiceRemoveRecord(DNSServiceRef sdRef, DNSRecordRef RecordRef, DNSServiceFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the error that occurred.
 

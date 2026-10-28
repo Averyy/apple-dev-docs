@@ -24,7 +24,7 @@ var batteryLevel: Float { get }
 @property (nonatomic, readonly) float batteryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The battery level is a percentage ranging from `0.0` (fully discharged) to `1.0` (100% charged). The default value for this property is `0.0`.
 

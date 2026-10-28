@@ -21,7 +21,7 @@ class TCThrottle
 @interface TCThrottle : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is mirrored by a `GCControllerButtonInput` on the associated `GCController` instance.
 

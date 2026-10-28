@@ -25,7 +25,7 @@ func makeReference(identifier: String) -> AnyAppEntity
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let entityDefinition: AppEntityDefinition!

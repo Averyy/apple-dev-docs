@@ -24,7 +24,7 @@ The default parsing options.
 static var `default`: PropertyListSnapshot.ParsingOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Treats no values as secrets.
 

@@ -21,7 +21,7 @@ func any(axes: some Collection<Int>, keepDims: Bool = false, stream: StreamOrDev
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 12, [3, 4])
@@ -36,7 +36,7 @@ let allRows = array.any(axes: [0])
 let allRows2 = array.any(axis: 0)
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`any(axis:keepDims:stream:)`](./any%28axis,keepdims,stream%29.md)

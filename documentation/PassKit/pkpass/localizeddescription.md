@@ -24,7 +24,7 @@ var localizedDescription: String { get }
 @property (nonatomic, copy, readonly) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the description string from the pass’s JSON file. For more information about the JSON format, see [Pass Design and Creation](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Creating.html#//apple_ref/doc/uid/TP40012195-CH4) in [Wallet Developer Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195). For information about adding localized strings to the JSON file, see [Passes Support Localization](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Creating.html#//apple_ref/doc/uid/TP40012195-CH4-SW54) in that same guide.
 

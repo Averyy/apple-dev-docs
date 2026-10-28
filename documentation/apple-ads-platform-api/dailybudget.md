@@ -15,13 +15,13 @@ Daily budget cap for a campaign.
 object DailyBudget
 ```
 
-#### Discussion
+## Discussion
 
 The `DailyBudget` object is the campaign-level daily spend cap. Once the daily budget is exhausted, the campaign stops delivering ads for the remainder of that day.
 
 The `dailyBudget` field is required on all campaigns and caps daily spending. When a campaign also has shared budget assignments, both operate independently: `dailyBudget` enforces a daily cap. Each shared budget enforces a flight-period cap defined by its `startTime` and `endTime`.
 
-##### Example
+### Example
 
 ```json
 {

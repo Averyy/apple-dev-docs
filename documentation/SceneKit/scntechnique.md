@@ -25,7 +25,7 @@ class SCNTechnique
 @interface SCNTechnique : NSObject
 ```
 
-#### Overview
+## Overview
 
 Examples of multipass rendering techniques include:
 
@@ -38,7 +38,7 @@ To create an [`SCNTechnique`](./scntechnique.md) object, you supply a technique 
 
 To use a technique, assign it to the [`technique`](./scntechniquesupport/technique.md) property of a view (or other SceneKit renderer object) or a camera.
 
-##### Defining a Technique
+### Defining a Technique
 
 SceneKit treats rendering techniques—along with shaders, 3D models, and 2D art assets—as resources rather than as part of your application code. Because the effects you create with techniques are highly visual, this approach allows you to separate design efforts from development efforts and quickly iterate on creating the visual content of your app or game.
 
@@ -86,11 +86,11 @@ Create a technique object using the [`init(dictionary:)`](./scntechnique/init%28
 | `type` | String | The GLSL type of the input variable: `float`, `vec2`, `vec3`, `vec4`, `mat4`, `int`, `ivec2`, `ivec3`, `ivec4`, `mat3`, `sampler2D`, or `none`. ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) Use this option when providing custom values to shader programs (see Handling Parameters for a Technique’s Shader Programs). |
 | `image` (optional) | String | If the symbol’s type is `sampler2D`, the name of an image file in the app’s bundle resources directory. |
 
-###### Category Masks
+#### Category Masks
 
 When SceneKit performs a rendering pass whose `draw` option is `DRAW_SCENE` or `DRAW_NODE`, you can use category masks to filter the set of nodes drawn during that pass. For each node in the scene (or for `DRAW_NODE`, in the node subtree), SceneKit compares the node’s [`categoryBitMask`](./scnnode/categorybitmask.md) property and the `includeCategoryMask` and `excludeCategoryMask` options in the pass definition using bitwise AND operations. If the node’s category mask and the include mask overlap (that is, the bitwise AND results in a nonzero value) and the node’s category mask and the exclude mask do not overlap, SceneKit includes the node in the drawing pass. Otherwise the node is not rendered in the pass.
 
-###### Render Targets, Inputs and Outputs
+#### Render Targets, Inputs and Outputs
 
 A drawing pass renders pixel data into one or more target image buffer (or framebuffer). In SceneKit’s main drawing pass, the color render target is the screen (or rather, a view or layer for screen display), and a depth render target temporarily stores the information needed to ensure that rendered surfaces appear in the correct depth order.
 
@@ -119,7 +119,7 @@ To specify a render target or image sampler in the `inputs` dictionary of a pass
 | `mipFilter` (optional) | String | `linear`, `nearest`, or `none`. |
 | `wrapS` (optional) ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) `wrapT` (optional) ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) `wrapP` (optional) | String | `clamp`, `repeat`, `clampToBorder`, `mirror`. |
 
-###### Blending
+#### Blending
 
 The `blendStates` key of a pass definition defines color blending options. Blending is disabled by default for faster rendering performance. Including a dictionary for this key enables blending (unless the dictionary’s `enable` key specifies [`false`](../Swift/false.md)). Color blending combines a source color (the color output by the drawing pass’s shader program) with a destination color (the existing contents of the output buffer) using specified modes and operations.
 
@@ -128,7 +128,7 @@ The `blendStates` key of a pass definition defines color blending options. Blend
 
 These values correspond to blending options defined by the OpenGL specification. For further details, consult the [OpenGL API Registry](http://www.opengl.org/registry/) or [OpenGL ES API Registry](http://www.khronos.org/registry/gles/).
 
-##### Example Technique Definition
+### Example Technique Definition
 
 Listing 1 shows an example definition dictionary for a technique that uses displacement mapping with a noise texture to postprocess a rendered scene. For ease of reading, the dictionary is formatted in JSON syntax. (To load an [`NSDictionary`](../Foundation/nsdictionary.md) object from text in this format, use the [`JSONSerialization`](../Foundation/jsonserialization.md) class.) Listing 2 and Listing 3 show the GLSL source code for the technique’s vertex and fragment shaders.
 

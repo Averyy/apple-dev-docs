@@ -25,7 +25,7 @@ func CFSocketEnableCallBacks(_ s: CFSocket!, _ callBackTypes: CFOptionFlags)
 extern void CFSocketEnableCallBacks(CFSocketRef s, CFOptionFlags callBackTypes);
 ```
 
-#### Discussion
+## Discussion
 
 If a callback type is not automatically reenabled, you can use this function to enable the callback (once).
 

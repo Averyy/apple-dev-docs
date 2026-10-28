@@ -20,7 +20,7 @@ Returns the name of the arcade stick button at the specified location.
 static func arcadeButton(row: Int, column: Int) -> GCButtonElementName
 ```
 
-#### Return Value
+## Return Value
 
 The name of an arcade stick button.
 

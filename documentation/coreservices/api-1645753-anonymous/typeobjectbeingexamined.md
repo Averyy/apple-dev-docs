@@ -14,7 +14,7 @@
 typeObjectBeingExamined = 'exmn'
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a descriptor that acts as a placeholder for each of the successive elements in a container when the Apple Event Manager tests those elements one at a time. The descriptor has a null data storage pointer. This descriptor type is used only with `formTest`.
 

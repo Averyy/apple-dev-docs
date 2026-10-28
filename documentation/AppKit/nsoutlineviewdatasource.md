@@ -19,13 +19,13 @@ protocol NSOutlineViewDataSource : NSObjectProtocol
 @protocol NSOutlineViewDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 [`NSOutlineView`](./nsoutlineview.md) objects support a data source delegate in addition to the regular delegate object.
 
 All the methods in the [`NSOutlineViewDataSource`](./nsoutlineviewdatasource.md) protocol are marked as `@optional`. While this is true, there are cases were you must implement some methods to achieve required functionality, specifically when working with conventional data sources rather than data that is provided by Cocoa bindings.
 
-##### Required and Optional Methods Using Programmatic Conventions and Cocoa Bindings
+### Required and Optional Methods Using Programmatic Conventions and Cocoa Bindings
 
 If you are using conventional data sources for content you must implement the basic methods that provide the outline view with data: [`outlineView(_:child:ofItem:)`](./nsoutlineviewdatasource/outlineview%28_,child,ofitem%29.md), [`outlineView(_:isItemExpandable:)`](./nsoutlineviewdatasource/outlineview%28_,isitemexpandable%29.md), [`outlineView(_:numberOfChildrenOfItem:)`](./nsoutlineviewdatasource/outlineview%28_,numberofchildrenofitem%29.md), and [`outlineView(_:objectValueFor:byItem:)`](./nsoutlineviewdatasource/outlineview%28_,objectvaluefor,byitem%29.md). Applications that acquire their data using Cocoa bindings do not need to implement these methods.
 

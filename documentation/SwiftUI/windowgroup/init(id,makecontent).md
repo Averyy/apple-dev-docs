@@ -24,7 +24,7 @@ nonisolated init(id: String, @ContentBuilder makeContent: @escaping () -> Conten
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The window group uses the given view as a template to form the content of each window in the group.
 

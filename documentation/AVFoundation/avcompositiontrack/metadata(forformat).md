@@ -25,7 +25,7 @@ func metadata(forFormat format: AVMetadataFormat) -> [AVMetadataItem]
 - (NSArray<AVMetadataItem *> *) metadataForFormat:(AVMetadataFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 An array of metadata items matching the specified format, or an empty array if none are found.
 

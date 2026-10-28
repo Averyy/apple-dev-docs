@@ -19,11 +19,11 @@ Handles a given hotspot command, in response to a request from the framework.
 func handleCommand(_ command: NEHotspotHelperCommand) async -> NEHotspotHelperResponse
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEHotspotHelperResponse`](../nehotspothelperresponse.md) with the result of the call.
 
-#### Discussion
+## Discussion
 
 In your implementation, handle the specified command and return an appropriate [`NEHotspotHelperResponse`](../nehotspothelperresponse.md). The framework is responsible for delivering this response to the system; don’t invoke the [`deliver()`](../nehotspothelperresponse/deliver%28%29.md) method of [`NEHotspotHelperResponse`](../nehotspothelperresponse.md) manually.
 

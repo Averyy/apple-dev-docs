@@ -16,11 +16,11 @@ Obtains the most recent value of an element.
 IOReturn (*getElementValue)(void *self, IOHIDElementCookie elementCookie, IOHIDEventStruct *valueEvent);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 This call is most useful for interrupt driven elements, such as input type elements. Since feature type element values need to be polled from the device, it is recommended to use the queryElementValue method to obtain the current value. The timestamp field in the event details the last time the element value was altered.
 

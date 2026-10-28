@@ -19,7 +19,7 @@ typealias ToolTipTag = Int
 typedef NSInteger NSToolTipTag;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this type is 0, it is invalid. See the methods [`addToolTip(_:owner:userData:)`](./addtooltip%28_,owner,userdata%29.md) and[`removeToolTip(_:)`](./removetooltip%28_%29.md).
 

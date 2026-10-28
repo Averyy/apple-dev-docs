@@ -16,7 +16,7 @@ nonisolated
 func alternatingRowBackgrounds(_ behavior: AlternatingRowBackgroundBehavior = .enabled) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This can be used in conjunction with an explicit list or table style or used by itself to customize the row backgrounds of the automatic style. The only list style this has no effect on is `.sidebar.`
 

@@ -19,11 +19,11 @@ class var doubleClickInterval: TimeInterval { get }
 @property (class, readonly) NSTimeInterval doubleClickInterval;
 ```
 
-#### Return Value
+## Return Value
 
 The double-click time interval, in seconds.
 
-#### Discussion
+## Discussion
 
 This is a system setting. You can’t change the value by overriding this method.
 

@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: 
 - (void) tableView:(UITableView *) tableView didEndEditingRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the table view exits editing mode after having been put into the mode by the user swiping across the row identified by `indexPath`. As a result, a Delete button appears in the row; however, in this “swipe to delete” mode the table view does not display any insertion, deletion, and reordering controls. When entering this “swipe to delete” editing mode, the table view sends a [`tableView(_:willBeginEditingRowAt:)`](./tableview%28_,willbegineditingrowat%29.md) message to the delegate to allow it to adjust its user interface.
 

@@ -24,7 +24,7 @@ static let LANG5: GCKeyCode
 extern const GCKeyCode GCKeyCodeLANG5;
 ```
 
-#### Discussion
+## Discussion
 
 For Japanese USB word-processing keyboards, this is the code for the Zenkaku/Hankaku key.
 

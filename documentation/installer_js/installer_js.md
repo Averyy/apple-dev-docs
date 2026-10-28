@@ -4,7 +4,7 @@
 
 Manage and customize the installation and distribution experience.
 
-#### Overview
+## Overview
 
 A distribution definition file defines the install experience for a product. The Installer application opens and interprets distribution definition files to generate the user interface users manipulate to execute and customize a product install.
 

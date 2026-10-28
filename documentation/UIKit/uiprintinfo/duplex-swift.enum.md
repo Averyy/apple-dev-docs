@@ -22,7 +22,7 @@ enum Duplex
 enum UIPrintInfoDuplex : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants when setting the value of the [`duplex`](./duplex-swift.property.md) property of a `UIPrintInfo` object.
 

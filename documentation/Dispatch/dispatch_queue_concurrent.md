@@ -21,7 +21,7 @@ A dispatch queue that executes blocks concurrently.
 #define DISPATCH_QUEUE_CONCURRENT
 ```
 
-#### Discussion
+## Discussion
 
 Although they execute blocks concurrently, you can use barrier blocks to create synchronization points within the queue.
 

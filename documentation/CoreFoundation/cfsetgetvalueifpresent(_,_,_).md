@@ -25,11 +25,11 @@ func CFSetGetValueIfPresent(_ theSet: CFSet!, _ candidate: UnsafeRawPointer!, _ 
 extern Boolean CFSetGetValueIfPresent(CFSetRef theSet, const void *candidate, const void **value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` exists in `theSet`, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This function uses the equal callback. `candidate` and all elements in the set must be understood by the equal callback. Depending on the implementation of the equal callback specified when creating `theSet`, the value returned in `value` may not have the same pointer equality as `candidate`.
 

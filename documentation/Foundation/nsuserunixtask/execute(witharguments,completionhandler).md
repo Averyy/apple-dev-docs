@@ -23,7 +23,7 @@ func execute(withArguments arguments: [String]?) async throws
 - (void) executeWithArguments:(NSArray<NSString *> *) arguments completionHandler:(NSUserUnixTaskCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be invoked no more than once for a given instance of the class.
 

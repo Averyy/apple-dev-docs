@@ -21,11 +21,11 @@ Returns the distance between two indices.
 func distance(from i: String.UTF8View.Index, to j: String.UTF8View.Index) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`. The result can be negative only if the collection conforms to the `BidirectionalCollection` protocol.
 
-#### Discussion
+## Discussion
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 

@@ -22,11 +22,11 @@ init(value: Any?, forProperty property: String)
 + (MPMediaPropertyPredicate *) predicateWithValue:(id) value forProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 A media property predicate.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that uses the default logical comparison type of [`MPMediaPredicateComparison.equalTo`](../mpmediapredicatecomparison/equalto.md).
 

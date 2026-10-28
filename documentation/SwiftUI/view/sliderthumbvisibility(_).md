@@ -21,7 +21,7 @@ nonisolated
 func sliderThumbVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to override the default slider thumb visibility. For example, the code below creates a `Slider` without an indicator:
 

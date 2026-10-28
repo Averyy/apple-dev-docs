@@ -16,7 +16,7 @@ The identifier for the payment method to use for the transaction.
 readonly attribute DOMString methodName;
 ```
 
-#### Discussion
+## Discussion
 
 The [`methodName`](./methodname.md) for Apple Pay transactions is the Apple Pay URL.
 

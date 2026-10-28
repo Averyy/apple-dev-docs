@@ -15,7 +15,7 @@ Creates a geocoder object and sets optional language and user location propertie
 constructor(options?: ServiceConstructorOptions);
 ```
 
-#### Discussion
+## Discussion
 
 To use geocoding, create an instance of [`Geocoder`](../geocoder.md). Optionally, you can set the [`language`](../serviceconstructoroptions/language.md) and [`getsUserLocation`](../serviceconstructoroptions/getsuserlocation.md) properties of a [`Geocoder`](../geocoder.md) object on initialization, as the following examples shows:
 

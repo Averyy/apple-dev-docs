@@ -25,7 +25,7 @@ var inputScale: CGFloat { get set }
 @property (nonatomic) CGFloat inputScale;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property and the [`inputBias`](./inputbias.md) property to pre-process input values to the controller’s animation. For example, you use the [`SCNParticleInputMode.overDistance`](../scnparticleinputmode/overdistance.md) option to animate a particle’s opacity as a function of its distance from a specified point, a scale specifies the range of distances over which the animation takes effect.
 

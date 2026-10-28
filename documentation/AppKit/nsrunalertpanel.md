@@ -17,7 +17,7 @@ Creates an alert panel.
 extern NSInteger NSRunAlertPanel(NSString *title, NSString *msgFormat, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Creates and runs an alert panel (or dialog) with the title of `title` and buttons with titles of `defaultButton`, `alternateButton`, and `otherButton`. The optional alert message specified by `msgFormat` should be a static value that can consist of variable values using a format string (list any necessary arguments for this formatted string at the end of the function’s argument list), an unformatted string, or an empty string (`@""`), but not `nil`. Note that passing an untrusted string in `msgFormat` can lead to security issues. See the description of [`NSBeginAlertSheet`](./nsbeginalertsheet.md) for information on layout of buttons, default parameters, and possible return values. `NSRunAlertPanel` runs the panel in a modal event loop.
 

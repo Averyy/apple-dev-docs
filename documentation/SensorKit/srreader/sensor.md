@@ -17,7 +17,7 @@ The sensor instance associated with this reader.
 final let sensor: Sensor
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the specific sensor type that this reader manages. The sensor type determines the kind of data that can be fetched and the operations available.
 

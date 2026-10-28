@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaLeafKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaLeafKey property has an OSBoolean value and describes whether the media is a leaf, that is, it is the deepest media object in this branch of the I/O Registry.
 

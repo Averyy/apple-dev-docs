@@ -20,7 +20,7 @@ var documentContentKind: XMLDocument.ContentKind { get set }
 @property NSXMLDocumentContentKind documentContentKind;
 ```
 
-#### Discussion
+## Discussion
 
 Most of the differences among document-content kind have to do with the handling of content-less tags such as `<br>`.
 

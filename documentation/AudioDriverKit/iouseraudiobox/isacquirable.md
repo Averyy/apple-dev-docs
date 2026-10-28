@@ -15,11 +15,11 @@ Returns a Boolean value that indicates the box’s acquirabilty state.
 bool IsAcquirable();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the box is acquirable; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

@@ -25,7 +25,7 @@ var COMPRESSION_LZFSE: compression_algorithm { get }
 COMPRESSION_LZFSE
 ```
 
-#### Discussion
+## Discussion
 
 LZFSE is the Apple proprietary, general-purpose compression algorithm. It pairs an LZ77-style match finder with Finite State Entropy (FSE, a variant of tabled Asymmetric Numeral Systems) to encode literals and match metadata, which lets it match the compression ratio of [`COMPRESSION_ZLIB`](./compression_zlib.md) (zlib level 5) while running 2x to 3x faster for both encoding and decoding. LZFSE is also substantially more energy-efficient than [`COMPRESSION_ZLIB`](./compression_zlib.md), which makes it a good default for mobile and battery-powered devices.
 

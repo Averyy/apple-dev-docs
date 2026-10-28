@@ -19,7 +19,7 @@ func applying(_ configuration: NSImage.SymbolConfiguration) -> Self
 - (instancetype) configurationByApplyingConfiguration:(NSImageSymbolConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object that prioritizes the values from the configuration you specify.
 

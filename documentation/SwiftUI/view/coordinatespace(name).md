@@ -24,7 +24,7 @@ nonisolated
 func coordinateSpace<T>(name: T) -> some View where T : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Use `coordinateSpace(name:)` to allow another function to find and operate on a view and operate on dimensions relative to that view.
 

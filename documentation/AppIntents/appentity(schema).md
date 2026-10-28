@@ -18,8 +18,8 @@ A Swift macro you use to make sure your app entity conforms to a schema.
 ## Declaration
 
 ```swift
-@attached
-(memberAttribute) @attached(extension, conformances: AppEntity, AssistantSchemaEntity, FileEntity, UniqueAppEntity, URLRepresentableEntity, names: named(__appSchemaEntity)) macro AppEntity<T>(schema: T) where T : AppSchemaEntity
+@attached(memberAttribute)
+@attached(extension, conformances: AppEntity, AssistantSchemaEntity, FileEntity, UniqueAppEntity, URLRepresentableEntity, names: named(__appSchemaEntity)) macro AppEntity<T>(schema: T) where T : AppSchemaEntity
 ```
 
 ## Mentions

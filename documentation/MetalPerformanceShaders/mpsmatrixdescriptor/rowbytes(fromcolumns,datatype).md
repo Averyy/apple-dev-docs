@@ -24,11 +24,11 @@ class func rowBytes(fromColumns columns: Int, dataType: MPSDataType) -> Int
 + (size_t) rowBytesFromColumns:(NSUInteger) columns dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 The recommended matrix row stride, in bytes.
 
-#### Discussion
+## Discussion
 
 The optimal stride between the rows of a matrix is not necessarily equivalent to the number of columns in the matrix. This method returns the row stride, in bytes, which gives the best performance for a given number of columns. Using this row stride to construct your matrix descriptor is recommended, but not required (as long as the stride used is still large enough to allocate a full row of data).
 

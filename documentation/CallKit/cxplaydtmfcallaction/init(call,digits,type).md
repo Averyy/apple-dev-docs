@@ -23,9 +23,9 @@ init(call callUUID: UUID, digits: String, type: CXPlayDTMFCallAction.ActionType)
 - (instancetype) initWithCallUUID:(NSUUID *) callUUID digits:(NSString *) digits type:(CXPlayDTMFCallActionType) type;
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 A new action for the specified call UUID, type, and digits.
 

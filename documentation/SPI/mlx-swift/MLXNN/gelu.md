@@ -17,7 +17,7 @@ Applies the Gaussian Error Linear Units function.
 class GELU
 ```
 
-#### Overview
+## Overview
 
 There are three variations:
 
@@ -25,7 +25,7 @@ There are three variations:
 - [`GELU.Approximation.precise`](./gelu/approximation-swift.enum/precise.md)
 - [`GELU.Approximation.fast`](./gelu/approximation-swift.enum/fast.md)
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`gelu(_:)`](./gelu%28_%29.md)

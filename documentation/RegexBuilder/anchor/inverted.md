@@ -21,7 +21,7 @@ The inverse of this anchor, which matches at every position that this anchor doe
 var inverted: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 For the [`wordBoundary`](./wordboundary.md) and [`textSegmentBoundary`](./textsegmentboundary.md) anchors, the inverted version corresponds to `\B` and `\Y`, respectively.
 

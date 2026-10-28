@@ -15,11 +15,11 @@ Sets a Boolean value to represent whether the device is alive.
 kern_return_t SetDeviceIsAlive(bool in_is_alive);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 A `true` value means the device is ready and available. `false` means the device is unusable and will most likely go away shortly.
 

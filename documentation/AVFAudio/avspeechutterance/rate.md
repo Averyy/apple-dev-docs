@@ -25,7 +25,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 The speech rate is a decimal representation within the range of [`AVSpeechUtteranceMinimumSpeechRate`](../avspeechutteranceminimumspeechrate.md) and [`AVSpeechUtteranceMaximumSpeechRate`](../avspeechutterancemaximumspeechrate.md). Lower values correspond to slower speech, and higher values correspond to faster speech. The default value is [`AVSpeechUtteranceDefaultSpeechRate`](../avspeechutterancedefaultspeechrate.md). Set this property before enqueing the utterance because setting it afterward has no effect.
 

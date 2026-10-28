@@ -21,7 +21,7 @@ var wantsSoftwareDimming: Bool { get set }
 @property (nonatomic) BOOL wantsSoftwareDimming;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Enabling it may cause a loss in performance.
 

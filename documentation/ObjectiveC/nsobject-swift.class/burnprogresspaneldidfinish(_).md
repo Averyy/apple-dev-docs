@@ -19,7 +19,7 @@ func burnProgressPanelDidFinish(_ aNotification: Notification!)
 - (void) burnProgressPanelDidFinish:(NSNotification *) aNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method it will receive the message after the panel is removed from display.
 

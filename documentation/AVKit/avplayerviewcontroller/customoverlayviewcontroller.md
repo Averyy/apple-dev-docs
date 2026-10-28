@@ -19,7 +19,7 @@ var customOverlayViewController: UIViewController? { get set }
 @property (nonatomic, strong, nullable) UIViewController * customOverlayViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents the overlay view when the user swipes up on the Siri Remote during playback when the transport bar is hidden, or when they select a button when the transport bar is visible.
 

@@ -15,7 +15,7 @@ Requests remote capability discovery for a given handle
 final func remoteCapabilities(for request: RCSService.RemoteCapabilitiesRequest) async throws -> RCSService.RemoteCapabilities?
 ```
 
-#### Return Value
+## Return Value
 
 Remote capabilities for requested handle, if available.
 

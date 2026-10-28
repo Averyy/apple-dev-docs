@@ -19,7 +19,7 @@ optional func download(_ download: NSURLDownload, didCancel challenge: URLAuthen
 - (void) download:(NSURLDownload *) download didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate receives this message the download will fail and the delegate will receive a [`download(_:didFailWithError:)`](./download%28_,didfailwitherror%29.md) message.
 

@@ -11,7 +11,7 @@ Update the territory availability of a specific subscription.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create a subscription plan availability`](./post-v1-subscriptionplanavailabilities.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

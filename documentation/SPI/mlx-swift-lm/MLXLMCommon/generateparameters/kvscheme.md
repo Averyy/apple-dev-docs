@@ -17,7 +17,7 @@ KV cache compression scheme. Overrides kvBits when set.
 var kvScheme: String?
 ```
 
-#### Discussion
+## Discussion
 
 Built-in affine: “affine4”, “affine8” (equivalent to kvBits 4/8).
 

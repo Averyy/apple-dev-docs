@@ -15,7 +15,7 @@ Determine if a vnode is a named pipe.
 int vnode_isfifo(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is of type VFIFO, 0 otherwise.
 

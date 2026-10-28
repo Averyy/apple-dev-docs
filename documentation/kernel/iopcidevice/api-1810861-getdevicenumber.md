@@ -12,11 +12,11 @@ virtual UInt8 getDeviceNumber(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The 5-bit value of device's device number.
 
-#### Overview
+## Overview
 
 This method is an accessor to return the PCI device's device number.
 

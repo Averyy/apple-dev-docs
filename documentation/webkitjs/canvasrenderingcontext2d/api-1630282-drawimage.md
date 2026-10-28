@@ -20,7 +20,7 @@ void drawImage(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The image object can be an `img` element, a `canvas` element, or a `video` element. Use of the `video` element is not supported in Safari on iOS, however.
 

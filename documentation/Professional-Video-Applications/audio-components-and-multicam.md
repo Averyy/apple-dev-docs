@@ -5,7 +5,7 @@
 
 Specify configuration of audio components using the `mc-clip` element.
 
-#### Overview
+## Overview
 
 Configure the following audio components using the `mc-clip` element:
 

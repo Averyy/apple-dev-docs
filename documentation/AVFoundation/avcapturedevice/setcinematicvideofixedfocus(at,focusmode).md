@@ -23,7 +23,7 @@ func setCinematicVideoFixedFocus(at point: CGPoint, focusMode: AVCaptureDevice.C
 - (void) setCinematicVideoFixedFocusAtPoint:(CGPoint) point focusMode:(AVCaptureCinematicVideoFocusMode) focusMode;
 ```
 
-#### Discussion
+## Discussion
 
 The distance at which focus is set is determined internally using signals such as depth data.
 

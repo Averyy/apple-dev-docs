@@ -24,7 +24,7 @@ let HMCharacteristicTypeLockPhysicalControls: String
 extern NSString * const HMCharacteristicTypeLockPhysicalControls;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueLockPhysicalControlsState`](./hmcharacteristicvaluelockphysicalcontrolsstate.md) enumeration.
 

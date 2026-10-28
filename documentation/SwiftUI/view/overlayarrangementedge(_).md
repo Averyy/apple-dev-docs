@@ -29,7 +29,7 @@ nonisolated
 func overlayArrangementEdge(_ edge: VerticalEdge?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to anchor the given view when its overlay layout transitions into a landscape orientation. For example, to move the view to the trailing side of the arrangement view, use the [`HorizontalEdge.trailing`](../horizontaledge/trailing.md) edge.
 

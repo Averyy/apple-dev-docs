@@ -24,7 +24,7 @@ var strideInX: Int { get set }
 @property (nonatomic, readwrite) NSUInteger strideInX;
 ```
 
-#### Discussion
+## Discussion
 
 Source `x`-coordinate, `sx` is computed from destination `x`-coordinate, `dx` as `sx = strideInX*dx`. Default value is 1.
 

@@ -24,7 +24,7 @@ var nowPlayingItem: MPMediaItem? { get set }
 @property (nonatomic, copy, nullable) MPMediaItem * nowPlayingItem;
 ```
 
-#### Discussion
+## Discussion
 
 To specify that playback should begin at a particular media item in the playback queue, set this property to that item while the music player is in a stopped or paused state.
 

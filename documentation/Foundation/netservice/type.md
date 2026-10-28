@@ -26,7 +26,7 @@ var type: String { get }
 @property (copy, readonly) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 This value is set when the object is first initialized, whether by your code or by a browser object. See [`init(domain:type:name:)`](./init%28domain,type,name%29.md) for more information.
 

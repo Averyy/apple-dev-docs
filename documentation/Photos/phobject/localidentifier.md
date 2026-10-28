@@ -28,7 +28,7 @@ var localIdentifier: String { get }
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 Use this string to find the object by using the [`fetchAssets(withLocalIdentifiers:options:)`](../phasset/fetchassets%28withlocalidentifiers,options%29.md), [`fetchAssetCollections(withLocalIdentifiers:options:)`](../phassetcollection/fetchassetcollections%28withlocalidentifiers,options%29.md), or [`fetchCollectionLists(withLocalIdentifiers:options:)`](../phcollectionlist/fetchcollectionlists%28withlocalidentifiers,options%29.md) method.
 

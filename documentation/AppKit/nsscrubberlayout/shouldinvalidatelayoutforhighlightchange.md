@@ -19,7 +19,7 @@ var shouldInvalidateLayoutForHighlightChange: Bool { get }
 @property (readonly) BOOL shouldInvalidateLayoutForHighlightChange;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the scrubber invalidates its layout when an item is highlighted. Subclasses should return [`true`](../../Swift/true.md) if the highlight state affects the item layout.
 

@@ -25,7 +25,7 @@ func useResource(_ resource: any MTLResource, usage: MTLResourceUsage)
 - (void) useResource:(id<MTLResource>) resource usage:(MTLResourceUsage) usage;
 ```
 
-#### Discussion
+## Discussion
 
 This method makes the resource resident for the duration of a compute pass and ensures that it’s in a format compatible with the compute function.
 

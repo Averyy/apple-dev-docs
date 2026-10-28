@@ -23,7 +23,7 @@ init(name: String, itemSearch itemSearchBlock: @escaping UIAccessibilityCustomRo
 - (instancetype) initWithName:(NSString *) name itemSearchBlock:(UIAccessibilityCustomRotorSearch) itemSearchBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized rotor object.
 

@@ -25,7 +25,7 @@ func setLimit(highWater high_water: Int)
 extern void dispatch_io_set_high_water(dispatch_io_t channel, size_t high_water);
 ```
 
-#### Discussion
+## Discussion
 
 During a read or write operation, the channel uses the high- and low-water mark values to determine how often to enqueue the associated handler block. It enqueues the block when the number of bytes read or written is between these two values.
 

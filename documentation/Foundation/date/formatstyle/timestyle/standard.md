@@ -21,7 +21,7 @@ A time style with all components except the time zone represented.
 static let standard: Date.FormatStyle.TimeStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `standard` time style represents the hour, minute, second, and day period components in the format. For example, `9:54:29 PM.`
 

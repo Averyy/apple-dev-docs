@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatInverted(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform that’s constructed by inverting an existing projective transform.
 
-#### Discussion
+## Discussion
 
 Returns a new transform that’s constructed by inverting an existing projective transform.
 

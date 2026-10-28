@@ -25,11 +25,11 @@ func xpc_array_create(_ objects: UnsafePointer<xpc_object_t>?, _ count: Int) -> 
 extern xpc_object_txpc_array_create(xpc_object_t const*objects, size_t count);
 ```
 
-#### Return Value
+## Return Value
 
 A new array object.
 
-#### Discussion
+## Discussion
 
 This array must be contiguous and cannot contain any NULL values. If you wish to insert the equivalent of a NULL value, you may use the result of [`xpc_null_create()`](./xpc_null_create%28%29.md).
 

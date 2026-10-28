@@ -16,7 +16,7 @@ A view for displaying static three-dimensional models.
 @preconcurrency struct ResolvedModel3D
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate this type directly, instead [`Model3D`](./model3d.md) creates instances for you.
 

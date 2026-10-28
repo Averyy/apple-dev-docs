@@ -19,7 +19,7 @@ typealias NSCollectionViewDiffableDataSourceReferenceItemProvider = (NSCollectio
 typedef NSCollectionViewItem *(^)(NSCollectionView *, NSIndexPath *, id) NSCollectionViewDiffableDataSourceItemProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured item object. The item provider must return a valid item object to the collection view.
 

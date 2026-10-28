@@ -24,7 +24,7 @@ var annotations: [any MKAnnotation] { get }
 @property (nonatomic, readonly) NSArray<id<MKAnnotation>> * annotations;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in this array adopt the [`MKAnnotation`](../mkannotation.md) protocol. If the map view has no associated annotations, the value of this property is an empty array.
 

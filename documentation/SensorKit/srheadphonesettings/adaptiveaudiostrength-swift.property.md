@@ -19,7 +19,7 @@ var adaptiveAudioStrength: SRHeadphoneSettings.AdaptiveAudioStrength { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsAdaptiveAudioStrength adaptiveAudioStrength;
 ```
 
-#### Discussion
+## Discussion
 
 Adaptive Audio dynamically responds to your environment and cancels or allows external noise.
 

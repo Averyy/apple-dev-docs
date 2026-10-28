@@ -17,7 +17,7 @@ Unfreeze the `Module`’s parameters or subset.
 override func unfreeze(recursive: Bool = true, keys: [String]? = nil, strict: Bool = false) throws
 ```
 
-#### Discussion
+## Discussion
 
 A frozen parameter does not compute gradients.  The function is idempotent – unfreezing a frozen model is a no-op.
 
@@ -29,7 +29,7 @@ model.freeze()
 try model.unfreeze(keys: ["bias"])
 ```
 
-##### See Also
+### See Also
 
 - [`freeze(recursive:keys:)`](../module/freeze%28recursive,keys%29.md)
 - [`unfreeze(recursive:keys:strict:)`](../module/unfreeze%28recursive,keys,strict%29.md)

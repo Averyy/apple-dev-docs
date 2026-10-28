@@ -5,7 +5,7 @@
 
 Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
 
-#### Overview
+## Overview
 
 There are two ways to display the Apple Pay button on your website— [canMakePaymentsWithActiveCard](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaysession/1778000-canmakepaymentswithactivecard) and [canMakePayments](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaysession/1778027-canmakepayments/). Use `canMakePaymentsWithActiveCard` to display the Apple Pay button on any Apple Pay supported device with at least one provisioned card in Wallet. Otherwise, use `canMakePayments` to display the Apple Pay button on any Apple Pay supported device.
 
@@ -19,7 +19,7 @@ It is recommended that merchants display the [Apple Pay button using JavaScript]
 - The button’s corner radius can be configured to match the style of your UI.
 - The button contains a system-provided alternative text label for VoiceOver support.
 
-#### Possible reasons for Apple Pay button display issues
+## Possible reasons for Apple Pay button display issues
 
 Some common button display issues that you may encounter during your Apple Pay implementation include:
 
@@ -27,7 +27,7 @@ Some common button display issues that you may encounter during your Apple Pay i
 - Apple Pay is displayed as a payment option although no cards are provisioned in Wallet.
 - The Apple Pay button does nothing when tapped or clicked.
 
-##### Issue: The canMakePaymentsWithActiveCard method unexpectedly returns false
+### Issue: The canMakePaymentsWithActiveCard method unexpectedly returns false
 
 When you invoke the `canMakePaymentsWithActiveCard` method, it verifyies whether the device is capable of making Apple Pay payments, and the customer has at least one eligible card provisioned in Wallet. The method also verifies that the [merchantIdentifier](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951611-merchantidentifier) is registered for Apple Pay, has active certificates, and a verified merchant domain configured for your Apple Developer account.
 
@@ -38,11 +38,11 @@ If you are testing your Apple Pay integration with a device that has an active c
 - The domain shown in your web browser’s address bar is identical to the merchant domain registered and verified for your Apple Developer account.
 - Your devices are running iOS 10 and later, or macOS 10.12 and later. See [Apple Pay on the web version history](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_on_the_web_version_history).
 
-##### Issue: Apple Pay is displayed as a payment option although no cards are provisioned in Wallet
+### Issue: Apple Pay is displayed as a payment option although no cards are provisioned in Wallet
 
 This issue usually occurs when you have implemented the `canMakePayments` method (or no method at all), which returns `true` if the user has an Apple Pay capable device. If the customer selects the Apple Pay button in this state, you may prompt the customer to start an inline provisioning flow to add a card to their Wallet before proceeding with the payment flow. Once the card is added, the customer can automatically be brought back to your website to complete their purchase.
 
-##### Issue: The Apple Pay button does nothing when tapped or clicked
+### Issue: The Apple Pay button does nothing when tapped or clicked
 
 This issue often occurs when you provide invalid values to the properties of the
 [ApplePayPaymentRequest](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest) after the customer taps or clicks the Apple Pay button. To resolve this issue, please confirm the following:
@@ -51,7 +51,7 @@ This issue often occurs when you provide invalid values to the properties of the
 - The payment request is configured with all of the required properties.
 - The payment request properties all include a value; you cannot provide an empty or `nil` value.
 
-#### Revision History
+## Revision History
 
 - **2024-06-25** First published.
 

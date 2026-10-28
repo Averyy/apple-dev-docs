@@ -21,13 +21,13 @@ An atomic compare-and-wait operation, used to implement higher-level synchroniza
 extern int os_sync_wait_on_address(void *addr, uint64_t value, size_t size, os_sync_wait_on_address_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 If the thread is woken up by a corresponding futex wake, or the value at `addr` is different than expected, this function returns successfully and the return value indicates the number of outstanding waiters blocked on this address.
 
 In the event of an error, the function returns `-1` with `errno` set.
 
-#### Discussion
+## Discussion
 
 This function reads a value from `addr`, compares it to the expected `value`, and blocks the thread if the two are equal. This sequence of operations is atomic with respect to other concurrent operations performed on `addr` with [Futex Conditional Wait Primitives](./synchronization.md#Futex-Conditional-Wait-Primitives).
 
@@ -37,7 +37,7 @@ Pass consistent values across wait and wake APIs for `addr`, `size`, and `flags`
 
 > ❗ **Important**: Use this function only for implementing synchronization primitives that don’t have a sense of ownership, such as condition variables or semaphores. In particular, this function doesn’t provide priority inversion avoidance. For locking APIs, use existing OS primitives, such as `pthread` threads or [Unfair Locking](./synchronization.md#Unfair-Locking) APIs. For synchronization and threading managed by the OS, use a higher-level API, such as [Dispatch](../Dispatch/Dispatch.md).
 
-##### Error Handling
+### Error Handling
 
 When this function returns `-1`, the global variable `errno` contains one of these values, indicating the corresponding error:
 

@@ -24,7 +24,7 @@ case singlePage
 kPDFDisplaySinglePage
 ```
 
-#### Discussion
+## Discussion
 
 Vertical and horizontal scrolling apply only to the current page.
 

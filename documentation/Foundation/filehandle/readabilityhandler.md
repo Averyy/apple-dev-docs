@@ -25,7 +25,7 @@ var readabilityHandler: (@Sendable (FileHandle) -> Void)? { get set }
 @property (copy, nullable) void (^readabilityHandler)(NSFileHandle *);
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. Assigning a valid [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to this property creates a dispatch source for reading the contents of the file or socket. Your block is submitted to the file handle’s dispatch queue when there is data to read. When reading a file, your handler block is typically executed repeatedly until the entire contents of the file have been read. When reading data from a socket, your handler block is executed whenever there is data on the socket waiting to be read.
 

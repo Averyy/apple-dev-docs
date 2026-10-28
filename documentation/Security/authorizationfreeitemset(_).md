@@ -20,11 +20,11 @@ func AuthorizationFreeItemSet(_ set: UnsafeMutablePointer<AuthorizationItemSet>)
 OSStatus AuthorizationFreeItemSet(AuthorizationItemSet *set);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 When your application no longer needs the authorization item sets created by the Security Server in the [`AuthorizationCopyRights(_:_:_:_:_:)`](./authorizationcopyrights%28_,_,_,_,_%29.md) and [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) functions, call this function to free it.
 

@@ -12,7 +12,7 @@ Create, preview, and sync workout compositions to the Workout app.
 - Mac Catalyst 17.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 The WorkoutKit framework provides models and utilities for creating and previewing workouts in your iOS and watchOS apps, and for syncing scheduled workouts to the Workout app on Apple Watch. The framework supports the following types of workouts:
 

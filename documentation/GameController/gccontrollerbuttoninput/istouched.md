@@ -24,7 +24,7 @@ var isTouched: Bool { get }
 @property (nonatomic, readonly, getter=isTouched) BOOL touched;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the user is touching the button; otherwise, the user isn’t. For controllers that support capacitive touch, the user can start touching the button without pressure when the value property is `0`. For controllers that don’t support capacitive touch, the user starts touching the button when the value property is greater than `0`.
 

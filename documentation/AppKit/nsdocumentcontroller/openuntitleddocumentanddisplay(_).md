@@ -19,11 +19,11 @@ func openUntitledDocumentAndDisplay(_ displayDocument: Bool) throws -> NSDocumen
 - (NSDocument *) openUntitledDocumentAndDisplay:(BOOL) displayDocument error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new [`NSDocument`](../nsdocument.md) object, or `nil` if a new untitled document could not be created. If this method returns `nil`, it also sets the address referenced by `outError` to an `NSError` object that tell why the document could not be created.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method calls [`defaultType`](./defaulttype.md) to determine the type of new document to create, calls [`makeUntitledDocument(ofType:)`](./makeuntitleddocument%28oftype%29.md) to create it, then calls [`addDocument(_:)`](./adddocument%28_%29.md) to record its opening.
 

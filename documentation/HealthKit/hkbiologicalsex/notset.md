@@ -24,7 +24,7 @@ case notSet
 HKBiologicalSexNotSet
 ```
 
-#### Discussion
+## Discussion
 
 For more information on permissions, see `HealthKit`.
 

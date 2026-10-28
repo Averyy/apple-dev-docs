@@ -19,7 +19,7 @@ case usableButLimited
 FSMatchResultUsableButLimited
 ```
 
-#### Discussion
+## Discussion
 
 This match result is appropriate when the file system module identifies the resource’s format but also identifies incompatibilities. For example, if the module determines the resource uses new features that the module doesn’t support, the module may only offer read-only access.
 

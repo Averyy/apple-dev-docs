@@ -23,7 +23,7 @@ static func bootstrap(_ factory: @escaping @Sendable (String) -> any LogHandler)
 - [003: Logger propagation in libraries](../api-003-acceptingloggers.md)
 - [004: Testing code that logs](../api-004-testinglogging.md)
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  `bootstrap` can be called at maximum once in any given program, calling it more than once will lead to undefined behavior, most likely a crash.
 

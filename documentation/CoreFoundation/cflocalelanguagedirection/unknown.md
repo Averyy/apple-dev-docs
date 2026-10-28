@@ -23,7 +23,7 @@ case unknown
 kCFLocaleLanguageDirectionUnknown
 ```
 
-#### Discussion
+## Discussion
 
 The direction of the language is unknown.
 

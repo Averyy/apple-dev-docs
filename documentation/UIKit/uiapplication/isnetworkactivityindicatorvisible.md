@@ -23,7 +23,7 @@ var isNetworkActivityIndicatorVisible: Bool { get set }
 @property (nonatomic, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`true`](../../Swift/true.md) if the app should show network activity and [`false`](../../Swift/false.md) if it should not. The default value is [`false`](../../Swift/false.md). A spinning indicator in the status bar shows network activity. The app may explicitly hide or show this indicator.
 

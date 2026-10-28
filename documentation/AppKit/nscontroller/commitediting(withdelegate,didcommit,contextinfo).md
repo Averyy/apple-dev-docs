@@ -20,7 +20,7 @@ func commitEditing(withDelegate delegate: Any?, didCommit didCommitSelector: Sel
 - (void) commitEditingWithDelegate:(id) delegate didCommitSelector:(SEL) didCommitSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Provides support for the NSEditor informal protocol. This method attempts to commit pending changes in known editors. Known editors are either instances of a subclass of `NSController` or (more rarely) user interface controls that may contain pending edits—such as text fields—that registered with the context using [`objectDidBeginEditing(_:)`](./objectdidbeginediting%28_%29.md) and have not yet unregistered using a subsequent invocation of [`objectDidEndEditing(_:)`](./objectdidendediting%28_%29.md).
 

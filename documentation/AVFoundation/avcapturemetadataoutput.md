@@ -23,7 +23,7 @@ class AVCaptureMetadataOutput
 @interface AVCaptureMetadataOutput : AVCaptureOutput
 ```
 
-#### Overview
+## Overview
 
 An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its associated capture connection and forwards them to a delegate object for processing. You can use instances of this class to process specific types of metadata included with the input data. You use this class the way you do other output objects, typically by adding it as an output to an [`AVCaptureSession`](./avcapturesession.md) object.
 

@@ -16,11 +16,11 @@ Method to reset the SCSITask to defaults.
 IOReturn (*ResetForNewTask)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if reset was successful, otherwise kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to reset the SCSITask to defaults.
 

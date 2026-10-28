@@ -16,7 +16,7 @@ An event object that contains the payment method.
 interface ApplePayPaymentMethodSelectedEvent
 ```
 
-#### Overview
+## Overview
 
 The event handler [`onpaymentmethodselected`](./applepaysession/onpaymentmethodselected.md) receives this event object when the payment method is selected.
 

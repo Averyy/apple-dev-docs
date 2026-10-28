@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func supportsDataAttachmentType(_ type: UTType) async throws -> Bool
+nonisolated(nonsending)
+func supportsDataAttachmentType(_ type: UTType) async throws -> Bool
 ```
 
 ## Default Implementations

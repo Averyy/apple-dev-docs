@@ -21,7 +21,7 @@ func setOutputMuted(_ muted: Bool) throws
 - (BOOL) setOutputMuted:(BOOL) muted error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This property is supported with all categories and modes, except for [`playAndRecord`](./category-swift.struct/playandrecord.md) where it is only supported with [`default`](./mode-swift.struct/default.md). Changing the mode to non-default mode with [`playAndRecord`](./category-swift.struct/playandrecord.md) category will cause the session to unmute.
 

@@ -21,11 +21,11 @@ A collection that supports backward as well as forward traversal.
 protocol BidirectionalCollection<Element> : Collection where Self.Indices : BidirectionalCollection, Self.SubSequence : BidirectionalCollection
 ```
 
-#### Overview
+## Overview
 
 Bidirectional collections offer traversal backward from any valid index, not including a collection’s `startIndex`. Bidirectional collections can therefore offer additional operations, such as a `last` property that provides efficient access to the last element and a `reversed()` method that presents the elements in reverse order. In addition, bidirectional collections have more efficient implementations of some sequence and collection methods, such as `suffix(_:)`.
 
-### Conforming to the BidirectionalCollection Protocol
+## Conforming to the BidirectionalCollection Protocol
 
 To add `BidirectionalProtocol` conformance to your custom types, implement the `index(before:)` method in addition to the requirements of the `Collection` protocol.
 

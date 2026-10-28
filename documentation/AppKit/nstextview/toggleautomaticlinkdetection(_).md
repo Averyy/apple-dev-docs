@@ -19,7 +19,7 @@ func toggleAutomaticLinkDetection(_ sender: Any?)
 - (void) toggleAutomaticLinkDetection:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Automatic link detection causes strings representing URLs typed in the view to be automatically made into links to those URLs.
 

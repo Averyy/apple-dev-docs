@@ -14,7 +14,7 @@ struct ctl_info {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used with the CTLIOCGINFO ioctl to translate from a kernel control name to a control id.
 

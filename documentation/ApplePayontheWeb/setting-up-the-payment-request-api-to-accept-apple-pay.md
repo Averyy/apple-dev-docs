@@ -5,7 +5,7 @@
 
 Support payments using Apple Pay on your website.
 
-#### Overview
+## Overview
 
 Throughout the [W3C Payment Request API specification](https://www.w3.org/TR/payment-request/), properties and attributes with the type `object` contain specific data related to payment methods. When using Apple Pay, keep in mind that these properties and attributes with the type `object` have a concrete type.
 

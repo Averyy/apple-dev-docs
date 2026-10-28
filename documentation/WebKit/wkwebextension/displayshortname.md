@@ -23,7 +23,7 @@ var displayShortName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * displayShortName;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no short name specified.
 

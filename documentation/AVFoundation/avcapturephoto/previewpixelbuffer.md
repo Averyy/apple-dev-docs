@@ -26,7 +26,7 @@ var previewPixelBuffer: CVPixelBuffer? { get }
 
 - [Capturing thumbnail and preview images](../capturing-thumbnail-and-preview-images.md)
 
-#### Discussion
+## Discussion
 
 If you requested a preview image by specifying the [`previewPhotoFormat`](../avcapturephotosettings/previewphotoformat.md) property of your photo settings when requesting capture, this property offers access to the resulting preview image pixel data. The pixel buffer contains only the minimal attachments required for correct display. If you did not request a preview image, this property’s value is `nil`.
 

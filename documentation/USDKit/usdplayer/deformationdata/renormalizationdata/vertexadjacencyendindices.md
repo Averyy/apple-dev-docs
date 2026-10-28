@@ -20,7 +20,7 @@ Cumulative end indices into `vertexAdjacencies`, one per vertex.
 let vertexAdjacencyEndIndices: [UInt32]
 ```
 
-#### Discussion
+## Discussion
 
 `vertexAdjacencyEndIndices[i]` marks where vertex `i`’s adjacency data ends.
 

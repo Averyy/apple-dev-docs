@@ -24,7 +24,7 @@ var localizedName: String { get }
 @property (nonatomic, copy, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 The pass’s template defines the pass’s basic layout. For more information about the available templates, see [Pass Style Sets the Overall Visual Appearance](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Creating.html#//apple_ref/doc/uid/TP40012195-CH4-SW45) in [Wallet Developer Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195).
 

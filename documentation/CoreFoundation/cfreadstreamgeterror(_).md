@@ -27,11 +27,11 @@ func CFReadStreamGetError(_ stream: CFReadStream!) -> CFStreamError
 extern CFStreamError CFReadStreamGetError(CFReadStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 The error status of `stream` returned in a [`CFStreamError`](./cfstreamerror.md) structure.
 
-#### Discussion
+## Discussion
 
 The error field is `0` if no error has occurred. If the error field is not `0`, the `domain` field contains a code that identifies the domain in which the value of the `error` field should be interpreted.
 

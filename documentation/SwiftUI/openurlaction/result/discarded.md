@@ -21,7 +21,7 @@ The handler discarded the URL.
 static let discarded: OpenURLAction.Result
 ```
 
-#### Discussion
+## Discussion
 
 The action invokes its completion handler with `false` when your handler returns this value.
 

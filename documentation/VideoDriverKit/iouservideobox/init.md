@@ -15,11 +15,11 @@ Initializes a video box.
 virtual bool init(IOUserVideoDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 
-#### Discussion
+## Discussion
 
 Always pass in the `IOUserVideoDriver` and arguments; calling `init()` always returns false.
 

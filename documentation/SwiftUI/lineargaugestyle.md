@@ -16,7 +16,7 @@ nonisolated
 struct LinearGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`linear`](./gaugestyle/linear.md) to construct this style.
 

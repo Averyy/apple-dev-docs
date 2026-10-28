@@ -25,7 +25,7 @@ Creates a Core ML model instance asynchronously from a compiled model file, a cu
 
 - [Encrypting a Model in Your App](../encrypting-a-model-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this method to load a model asynchronously. Core ML calls your completion handler after it successfully loads the model, or encounters an error attempting to load it.
 

@@ -19,7 +19,7 @@ func updateInsertionPointStateAndRestartTimer(_ restartFlag: Bool)
 - (void) updateInsertionPointStateAndRestartTimer:(BOOL) restartFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically whenever the insertion point needs to be moved; you should never need to invoke it directly, but you can override it to modify insertion point behavior.
 

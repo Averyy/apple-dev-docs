@@ -22,7 +22,7 @@ var printingItems: [Any]? { get set }
 @property (nonatomic, copy, nullable) NSArray * printingItems;
 ```
 
-#### Discussion
+## Discussion
 
 The array must contain [`NSURL`](../../Foundation/nsurl.md), [`NSData`](../../Foundation/nsdata.md), [`UIImage`](../uiimage.md), or [`ALAsset`](../../AssetsLibrary/alasset.md) objects in any combination. Objects of the first two types must reference or contain image data or PDF data. `NSURL` objects must use the `file:` or `assets-library:` scheme or any scheme that can return an [`NSData`](../../Foundation/nsdata.md) object with a registered protocol. Image data (including that encapsulated by [`UIImage`](../uiimage.md) and [`ALAsset`](../../AssetsLibrary/alasset.md) objects) must be in a format supported by the Image I/O framework; see [`UIImage`](../uiimage.md) for more information. An [`ALAsset`](../../AssetsLibrary/alasset.md) object must be of type [`ALAssetTypePhoto`](../../AssetsLibrary/alassettypephoto.md). Items are printed in array-index order. The array is released at the end of the print job. The default value is `nil`.
 

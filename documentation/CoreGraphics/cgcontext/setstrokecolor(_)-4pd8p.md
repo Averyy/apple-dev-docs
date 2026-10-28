@@ -25,7 +25,7 @@ func setStrokeColor(_ components: UnsafePointer<CGFloat>)
 extern void CGContextSetStrokeColor(CGContextRef c, const CGFloat *components);
 ```
 
-#### Discussion
+## Discussion
 
 The current stroke color space must not be a pattern color space. For information on setting the stroke color when using a pattern color space, see [`setStrokePattern(_:colorComponents:)`](./setstrokepattern%28_,colorcomponents%29.md). Note that the preferred API is now [`setStrokeColor(_:)`](./setstrokecolor%28_%29-1sskg.md).
 

@@ -21,11 +21,11 @@ Returns the subdivision representing the given region as a whole.
 static func subdivision(for region: Locale.Region) -> Locale.Subdivision
 ```
 
-#### Return Value
+## Return Value
 
 A subdivision that represents the entire region.
 
-#### Discussion
+## Discussion
 
 For example, this method returns a subdivision with the `uszzzz` identifier for the entire US region.
 

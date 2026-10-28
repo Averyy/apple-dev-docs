@@ -18,7 +18,7 @@ let vmnet_interface_id_key: UnsafePointer<CChar>
 extern const char * const vmnet_interface_id_key;
 ```
 
-#### Discussion
+## Discussion
 
 Interface identifier of the previously created interface.
 

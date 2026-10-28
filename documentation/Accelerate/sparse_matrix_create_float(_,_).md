@@ -25,11 +25,11 @@ func sparse_matrix_create_float(_ M: sparse_dimension, _ N: sparse_dimension) ->
 sparse_matrix_floatsparse_matrix_create_float(sparse_dimension M, sparse_dimension N);
 ```
 
-#### Return Value
+## Return Value
 
 A matrix object that is ready for receiving entries. If an error occurs, `nil` is returned.
 
-#### Discussion
+## Discussion
 
 This function creates a sparse matrix object that is stored in point-wise format and is ready to receive values from the various insert routines.  Point-wise format means individual values are stored for a given `i,j` location as opposed to blocks of values.  For block support use the block create routines.  See the various insert routines for details on inserting entries into this matrix object.
 

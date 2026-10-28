@@ -19,7 +19,7 @@ func MDQueryGetBatchingParameters(_ query: MDQuery!) -> MDQueryBatchingParams
 MDQueryBatchingParams MDQueryGetBatchingParameters(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 An MDQueryBatchingParams structure with the current batching parameters.
 

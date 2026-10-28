@@ -24,11 +24,11 @@ class func whitePointAdjust() -> any CIFilter & CIWhitePointAdjust
 + (CIFilter<CIWhitePointAdjust> *) whitePointAdjustFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the white-point adjust filter to an image. The effect adjusts the white-point of the input image by mapping all shades of gray to shades of the color property.
 

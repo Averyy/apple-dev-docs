@@ -19,7 +19,7 @@ A 5-bit signed integer.
 case int5
 ```
 
-#### Discussion
+## Discussion
 
 Five-bit signed integers can represent values in the range [-16, 15]. This type is used for quantization.
 

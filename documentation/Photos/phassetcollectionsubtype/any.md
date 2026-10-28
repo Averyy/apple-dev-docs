@@ -24,7 +24,7 @@ case any
 PHAssetCollectionSubtypeAny
 ```
 
-#### Discussion
+## Discussion
 
 When fetching asset collections, use this value to fetch collections of any subtype.
 

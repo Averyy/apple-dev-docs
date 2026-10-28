@@ -21,7 +21,7 @@ Show the scroll indicators.
 static var visible: ScrollIndicatorVisibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 The actual visibility of the indicators depends on platform conventions like auto-hiding behaviors in iOS or user preference behaviors in macOS.
 

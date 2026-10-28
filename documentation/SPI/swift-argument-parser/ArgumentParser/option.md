@@ -22,7 +22,7 @@ struct Option<Value>
 
 - [Declaring Arguments, Options, and Flags](./declaringarguments.md)
 
-#### Overview
+## Overview
 
 Use the `@Option` wrapper to define a property of your custom command as a command-line option. An *option* is a named value passed to a command-line tool, like `--configuration debug`. Options can be specified in any order.
 
@@ -65,22 +65,22 @@ Congrats on making it to the ripe old age of 28!
   Creates an optional property that reads its value from a labeled option.
 - [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,parsing,help,completion%29-7ilku.md)
   Creates a property with a default value that reads its value from a labeled option.
-- [init(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./option/init%28name,parsing,help,completion,transform%29-2wf44.md)
+- [init(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./option/init%28name,parsing,help,completion,transform%29-2wf44.md)
   Creates a required property that reads its value from a labeled option, parsing with the given closure.
-- [init<T>(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-25g7b.md)
+- [init<T>(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-25g7b.md)
   Creates an optional property that reads its value from a labeled option, parsing with the given closure.
-- [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-2llve.md)
+- [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-2llve.md)
   Creates a property with a default value that reads its value from a labeled option, parsing with the given closure.
 - [struct SingleValueParsingStrategy](./singlevalueparsingstrategy.md)
   The strategy to use when parsing a single value from `@Option` arguments.
 ### Array Options
 - [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28name,parsing,help,completion%29-238hg.md)
   Creates a required array property that reads its values from zero or more labeled options.
-- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-74hnp.md)
+- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-74hnp.md)
   Creates a required array property that reads its values from zero or more labeled options, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,parsing,help,completion%29-1dtbf.md)
   Creates an array property that reads its values from zero or more labeled options.
-- [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-1kpto.md)
+- [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-1kpto.md)
   Creates an array property that reads its values from zero or more labeled options, parsing each element with the given closure.
 - [struct ArrayParsingStrategy](./arrayparsingstrategy.md)
   The strategy to use when parsing multiple values from `@Option` arguments into an array.
@@ -90,15 +90,15 @@ Congrats on making it to the ripe old age of 28!
 ### Initializers
 - [init<T>(name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28name,defaultasflag,parsing,help,completion%29.md)
   Creates an optional property that reads its value from a labeled option, with a default value when the flag is provided without a value.
-- [init<T>(name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28name,defaultasflag,parsing,help,completion,transform%29.md)
+- [init<T>(name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28name,defaultasflag,parsing,help,completion,transform%29.md)
   Creates an optional property that reads its value from a labeled option, parsing with the given closure, with a default value when the flag is provided without a value.
 - [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,defaultasflag,parsing,help,completion%29.md)
   Creates an optional property that reads its value from a labeled option, with a default value when the flag is provided without a value.
-- [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28wrappedvalue,name,defaultasflag,parsing,help,completion,transform%29.md)
+- [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, defaultAsFlag: T, parsing: DefaultAsFlagParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28wrappedvalue,name,defaultasflag,parsing,help,completion,transform%29.md)
   Creates an optional property that reads its value from a labeled option, parsing with the given closure, with a default value when the flag is provided without a value.
 - [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,parsing,help,completion%29-24mra.md)
   Creates an optional property that reads its value from a labeled option, with an explicit `nil` default.
-- [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-75p6e.md)
+- [init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-75p6e.md)
   Creates an optional property that reads its value from a labeled option, parsing with the given closure, with an explicit `nil` default.
 ### Default Implementations
 - [CustomStringConvertible Implementations](./option/customstringconvertible-implementations.md)

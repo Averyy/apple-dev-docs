@@ -24,7 +24,7 @@ var borderColor: MTLSamplerBorderColor { get set }
 @property (nonatomic) MTLSamplerBorderColor borderColor;
 ```
 
-#### Discussion
+## Discussion
 
 This value is only used when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](../mtlsampleraddressmode/clamptobordercolor.md).
 

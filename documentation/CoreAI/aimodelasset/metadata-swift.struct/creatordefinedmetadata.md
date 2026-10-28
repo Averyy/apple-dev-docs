@@ -19,7 +19,7 @@ The custom key-value pairs defined by the model’s creator.
 var creatorDefinedMetadata: [String : AIModelAsset.Metadata.CreatorDefinedValue] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty dictionary if the model has no creator-defined metadata.
 

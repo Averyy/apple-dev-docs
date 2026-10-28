@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_QAS_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the QAS bit.
 

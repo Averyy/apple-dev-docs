@@ -24,7 +24,7 @@ typealias MPSGraphIfThenElseBlock = () -> [MPSGraphTensor]
 typedef NSArray<MPSGraphTensor *> *(^)() MPSGraphIfThenElseBlock;
 ```
 
-#### Return Value
+## Return Value
 
 Tensors returned by user. If not empty, the user must define both the then and else blocks, both should have the same number of arguments, and each corresponding argument should have the same element types.
 

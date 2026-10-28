@@ -19,7 +19,7 @@ static let title: NSBindingName
 extern NSBindingName NSTitleBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

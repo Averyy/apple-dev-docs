@@ -24,7 +24,7 @@ let CNLabelURLAddressHomePage: String
 extern NSString * const CNLabelURLAddressHomePage;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

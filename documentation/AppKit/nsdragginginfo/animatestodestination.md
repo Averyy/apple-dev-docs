@@ -21,7 +21,7 @@ var animatesToDestination: Bool { get set }
 @property BOOL animatesToDestination;
 ```
 
-#### Discussion
+## Discussion
 
 During the conclusion of an accepted drag, if this property is set to [`true`](../../Swift/true.md), the drag manager will animate each dragging image to their [`NSDraggingFormation.none`](../nsdraggingformation/none.md) locations. Otherwise, the drag images are removed without any animation.
 

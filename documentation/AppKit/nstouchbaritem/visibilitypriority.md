@@ -22,7 +22,7 @@ var visibilityPriority: NSTouchBarItem.Priority { get set }
 @property NSTouchBarItemPriority visibilityPriority;
 ```
 
-#### Discussion
+## Discussion
 
 The bar hides items of lower priority when there is not enough space to show all items. Use this property to specify the relative priority of the items in your bar.
 

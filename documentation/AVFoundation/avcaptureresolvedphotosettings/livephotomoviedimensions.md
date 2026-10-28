@@ -22,7 +22,7 @@ var livePhotoMovieDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions livePhotoMovieDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`livePhotoMovieFileURL`](../avcapturephotosettings/livephotomoviefileurl.md) property in your photo settings object to request Live Photo capture. Live Photo movie dimensions can change depending on which device camera is used for capture.
 

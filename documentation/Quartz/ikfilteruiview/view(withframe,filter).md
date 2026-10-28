@@ -19,7 +19,7 @@ class func view(withFrame frameRect: NSRect, filter inFilter: CIFilter!) -> Any!
 + (id) viewWithFrame:(NSRect) frameRect filter:(CIFilter *) inFilter;
 ```
 
-#### Return Value
+## Return Value
 
 An `IKFilterUIView` object that contains controls for the input parameters of the provided filter.
 

@@ -25,7 +25,7 @@ final class SystemLanguageModel
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
 
-#### Overview
+## Overview
 
 The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](./systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](./systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](./systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently, there are 3 model versions that align with:
 

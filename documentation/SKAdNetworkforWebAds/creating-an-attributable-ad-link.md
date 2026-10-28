@@ -5,15 +5,15 @@
 
 Create click-through web ads that attribute App Store app installations to your ad network.
 
-#### Overview
+## Overview
 
 The web provides a broad platform for advertising apps to a wide audience. In iOS 16.1 and later, ad networks can use the [SKAdNetwork for Web Ads](./SKAdNetworkforWebAds.md) API to get [`SKAdNetwork`](../StoreKit/skadnetwork.md) attributions for App Store app installations that originate from web ads in Safari.
 
-##### Register an ad network
+### Register an ad network
 
 Before creating an attributable ad link, you need to register your ad network with Apple. For information, see [Registering an ad network](../StoreKit/registering-an-ad-network.md).
 
-##### Create a link with the expected format
+### Create a link with the expected format
 
 To receive app-installation attribution from a web ad, provide a specialized link that directs a person to download the advertised app from the App Store. The link needs to be in the following format:
 
@@ -34,11 +34,11 @@ The `attributionSourceNonce` in a web ad link, the `source_nonce` in an [`AdImpr
 
 To generate an `attributionSourceNonce` for a web ad, Base64URL-encode the raw bytes of the UUID. Don’t encode a string representation of the UUID or lowercase the encoded UUID. The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](./adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](./adimpressionresponse.md).
 
-##### Use the link in a web ad
+### Use the link in a web ad
 
 Add the link to an advertisement or an app promotion on the webpage where you want people to encounter it. You can cover the entire advertisement with the link or include it as a pure hyperlink to the App Store.
 
-##### Implement the signed web ad impression endpoint
+### Implement the signed web ad impression endpoint
 
 When a person clicks the web ad, their device generates an [`AdImpressionRequest`](./adimpressionrequest.md) using the information from the web ad link. The device then sends a request to the [`Get a Signed Web Ad Impression Payload`](./get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md) endpoint with the ad-impression request in the request body.
 

@@ -26,7 +26,7 @@ class UIScreenEdgePanGestureRecognizer
 
 - [Handling pan gestures](./handling-pan-gestures.md)
 
-#### Overview
+## Overview
 
 The system uses screen edge gestures in some cases to initiate view controller transitions. You can use this class to replicate the same gesture behavior for your own actions.
 

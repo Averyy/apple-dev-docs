@@ -17,7 +17,7 @@ Initialize the SGD optimizer.
 init(learningRate: Float, momentum: Float = 0, weightDecay: Float = 0, dampening: Float = 0, nesterov: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 `learningRate` is the only required parameter and `0.1` might be a reasonable number to try.
 

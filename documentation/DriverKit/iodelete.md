@@ -18,7 +18,7 @@ Frees the memory associated with a valid, typed array.
 #define IODelete(ptr, type, count)
 ```
 
-#### Discussion
+## Discussion
 
 Use this macro to free memory that you allocated with [`IONew`](./ionew.md) or [`IONewZero`](./ionewzero.md). It is a programmer error to pass a `NULL` pointer to this macro.
 

@@ -22,7 +22,7 @@ optional func popoverControllerDidDismissPopover(_ popoverController: UIPopoverC
 - (void) popoverControllerDidDismissPopover:(UIPopoverController *) popoverController;
 ```
 
-#### Discussion
+## Discussion
 
 The popover controller does not call this method in response to programmatic calls to the [`dismiss(animated:)`](../uipopovercontroller/dismiss%28animated%29.md) method. If you dismiss the popover programmatically, you should perform any cleanup actions immediately after calling the [`dismiss(animated:)`](../uipopovercontroller/dismiss%28animated%29.md) method.
 

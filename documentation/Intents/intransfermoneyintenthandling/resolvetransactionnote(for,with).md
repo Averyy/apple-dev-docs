@@ -29,7 +29,7 @@ optional func resolveTransactionNote(for intent: INTransferMoneyIntent) async ->
 - (void) resolveTransactionNoteForTransferMoney:(INTransferMoneyIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether you can record notes with the transaction. Return a successful resolution if you can record the note with the transaction. If your app doesn’t store notes with transactions, return a resolution indicating that the value isn’t required.
 

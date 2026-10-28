@@ -24,11 +24,11 @@ class func canImportFileExtension(_ extension: String) -> Bool
 + (BOOL) canImportFileExtension:(NSString *) extension;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the [`MDLAsset`](../mdlasset.md) class can read asset data from files with the specified extension; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If this method returns [`true`](../../Swift/true.md), you can use the [`init(url:)`](./init%28url%29-1f4ym.md) or [`init(url:vertexDescriptor:bufferAllocator:)`](./init%28url,vertexdescriptor,bufferallocator%29-1tchi.md) initializer to import an asset with the specified filename extension.
 

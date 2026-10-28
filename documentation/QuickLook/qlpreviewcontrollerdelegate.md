@@ -22,7 +22,7 @@ protocol QLPreviewControllerDelegate : NSObjectProtocol
 @protocol QLPreviewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate of a [`QLPreviewController`](./qlpreviewcontroller.md) object needs to adopt this protocol to:
 

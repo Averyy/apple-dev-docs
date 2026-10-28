@@ -18,7 +18,7 @@ The filter to use when resolving the depth attachment at the end of a multisampl
 var depthResolveFilter: MTLMultisampleDepthResolveFilter { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDepthAttachmentDescriptor.depthResolveFilter`.
 

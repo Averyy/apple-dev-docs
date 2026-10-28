@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 7.3 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 7.3. The SDK comes bundled with Xcode 12.4. For information on the compatibility requirements for Xcode 12.4, see [Xcode 12.4 Release Notes](../Xcode-Release-Notes/xcode-12_4-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

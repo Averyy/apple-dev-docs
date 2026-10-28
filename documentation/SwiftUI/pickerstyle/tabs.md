@@ -23,7 +23,7 @@ static var tabs: TabsPickerStyle { get }
 
 Available when `Self` is `TabsPickerStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS, this style produces a segmented picker with a visual treatment that distinguishes tab navigation from value selection. On iOS, tvOS, and visionOS, the visual appearance matches that of the standard standard `.segmented` style. On all supported platforms, VoiceOver announces options as tabs.
 

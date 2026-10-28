@@ -24,7 +24,7 @@ var stereoPan: Float { get set }
 @property (nonatomic) float stereoPan;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, and the range of valid values is `-100.0` to `100.0`.
 

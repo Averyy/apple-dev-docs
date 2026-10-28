@@ -25,7 +25,7 @@ unowned(unsafe) var managedObjectContext: NSManagedObjectContext? { get }
 @property (nonatomic, assign, readonly, nullable) NSManagedObjectContext * managedObjectContext;
 ```
 
-#### Discussion
+## Discussion
 
 May be `nil` if the receiver has been deleted from its context.
 

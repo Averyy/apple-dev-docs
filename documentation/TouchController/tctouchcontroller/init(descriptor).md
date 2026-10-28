@@ -21,7 +21,7 @@ init(descriptor: TCTouchControllerDescriptor)
 - (instancetype) initWithDescriptor:(TCTouchControllerDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCTouchController` instance.
 

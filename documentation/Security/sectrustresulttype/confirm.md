@@ -24,7 +24,7 @@ case confirm
 kSecTrustResultConfirm
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that the user previously chose to always be asked for permission before accepting one of the certificates in the chain. The Keychain Access utility refers to this value as “Ask Permission.” This return value is no longer used, but may occur in older versions of macOS.
 

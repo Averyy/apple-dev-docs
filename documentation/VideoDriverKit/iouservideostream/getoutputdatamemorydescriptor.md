@@ -15,7 +15,7 @@ Gets the memory descriptor used for the video data part of a buffer.
 OSSharedPtr<IOMemoryDescriptor> GetOutputDataMemoryDescriptor(IOUserVideoObjectID in_object_id);
 ```
 
-#### Return Value
+## Return Value
 
 The memory descriptor.
 

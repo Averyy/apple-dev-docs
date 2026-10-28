@@ -25,7 +25,7 @@ protocol Scheduler<SchedulerTimeType>
 
 - [Receiving and Handling Events with Combine](./receiving-and-handling-events-with-combine.md)
 
-#### Overview
+## Overview
 
 You can use a scheduler to execute code as soon as possible, or after a future date. Individual scheduler implementations use whatever time-keeping system makes sense for them. Schedulers express this as their `SchedulerTimeType`. Since this type conforms to [`SchedulerTimeIntervalConvertible`](./schedulertimeintervalconvertible.md), you can always express these times with the convenience functions like `.milliseconds(500)`. Schedulers can accept options to control how they execute the actions passed to them. These options may control factors like which threads or dispatch queues execute the actions.
 

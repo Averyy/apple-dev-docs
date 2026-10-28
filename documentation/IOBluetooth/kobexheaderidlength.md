@@ -17,7 +17,7 @@ var kOBEXHeaderIDLength: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDLength
 ```
 
-#### Discussion
+## Discussion
 
 The length of the object in bytes. 4 byte unsigned integer value.
 

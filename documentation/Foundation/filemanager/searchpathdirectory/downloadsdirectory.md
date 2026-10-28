@@ -25,7 +25,7 @@ case downloadsDirectory
 NSDownloadsDirectory
 ```
 
-#### Discussion
+## Discussion
 
 The [`FileManager.SearchPathDirectory.downloadsDirectory`](./downloadsdirectory.md) flag only produces a path when you provide a [`userDomainMask`](../searchpathdomainmask/userdomainmask.md).
 

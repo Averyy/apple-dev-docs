@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_FontTable: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_FontTable;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

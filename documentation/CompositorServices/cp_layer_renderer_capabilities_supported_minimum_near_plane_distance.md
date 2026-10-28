@@ -16,11 +16,11 @@ Returns the minimum distance in meters to the layer’s near projection plane.
 float cp_layer_renderer_capabilities_supported_minimum_near_plane_distance(cp_layer_renderer_capabilities_t layer_capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum allowed distance in meters from the camera origin to the near projection plane.
 
-#### Discussion
+## Discussion
 
 Compositor Services uses the near and far projection planes to compute the perspective projection matrix and to clip content that’s too close to the camera, or too far from it. Use this method to retrieve the minimum distance to the near plane that the layer allows. When you configure your layer, you can specify a different near-plane distance, but that value must be greater than or equal to the minimum distance.
 

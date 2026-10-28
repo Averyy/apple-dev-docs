@@ -25,11 +25,11 @@ class var local: GKLocalPlayer { get }
 @property (class, readonly, nonnull) GKLocalPlayer * localPlayer;
 ```
 
-#### Return Value
+## Return Value
 
 The local player object.
 
-#### Discussion
+## Discussion
 
 You never directly create a local player object. Instead, use this method to get the shared instance.
 

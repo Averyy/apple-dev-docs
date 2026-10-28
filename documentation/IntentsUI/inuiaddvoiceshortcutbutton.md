@@ -31,7 +31,7 @@ class INUIAddVoiceShortcutButton
 @interface INUIAddVoiceShortcutButton : NSButton
 ```
 
-#### Overview
+## Overview
 
 When the user performs an action such as placing an order for tomato soup, the app should provide the option to add the action to Siri as a shortcut. To present this option in your app, use [`INUIAddVoiceShortcutButton`](./inuiaddvoiceshortcutbutton.md) to display an “Add to Siri” button. Using this button makes your app consistent with other apps that support Siri Shortcuts.
 

@@ -25,11 +25,11 @@ func string(from startDate: Date, to endDate: Date) -> String?
 - (NSString *) stringFromDate:(NSDate *) startDate toDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representing the specified time information.
 
-#### Discussion
+## Discussion
 
 This method calculates the elapsed time between the `startDate` and `endDate` values and uses that information to generate the string. For example, if there is exactly one hour and ten minutes difference between the start and end dates, generating an abbreviated string would result in a string of “1h 10m”.
 

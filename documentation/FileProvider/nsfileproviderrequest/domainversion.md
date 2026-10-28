@@ -23,7 +23,7 @@ var domainVersion: NSFileProviderDomainVersion? { get }
 @property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
 ```
 
-#### Discussion
+## Discussion
 
 If the file provider extension doesn’t implement the [`NSFileProviderDomainState`](../nsfileproviderdomainstate.md) protocol, this property is `nil`.
 

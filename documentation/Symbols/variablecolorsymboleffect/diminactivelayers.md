@@ -21,7 +21,7 @@ An effect that dims inactive layers in a symbol-based image.
 var dimInactiveLayers: VariableColorSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This effect draws inactive layers with reduced, but nonzero, opacity.
 

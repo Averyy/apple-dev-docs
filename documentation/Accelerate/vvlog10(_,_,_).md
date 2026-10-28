@@ -25,7 +25,7 @@ func vvlog10(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 void vvlog10(double *, const double *, const int *);
 ```
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

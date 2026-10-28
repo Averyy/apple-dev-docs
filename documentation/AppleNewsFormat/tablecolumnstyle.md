@@ -15,7 +15,7 @@ The object for applying styles to columns in a table.
 object TableColumnStyle
 ```
 
-#### Discussion
+## Discussion
 
 You can apply styles that affect the look of the columns in your table, including a column background color, the color for divider lines between columns, and the minimum width for a column.
 
@@ -23,7 +23,7 @@ You can also set up conditional column styles — styles applied to columns that
 
 You can use this object in [`TableStyle`](./tablestyle.md).
 
-##### Example
+### Example
 
 ```json
 {

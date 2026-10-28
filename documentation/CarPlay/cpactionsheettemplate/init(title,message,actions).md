@@ -21,7 +21,7 @@ init(title: String?, message: String?, actions: [CPAlertAction])
 - (instancetype) initWithTitle:(NSString *) title message:(NSString *) message actions:(NSArray<CPAlertAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized action sheet template.
 

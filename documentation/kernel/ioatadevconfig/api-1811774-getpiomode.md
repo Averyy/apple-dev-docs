@@ -10,7 +10,7 @@ UInt8 getPIOMode(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 bit-significant map of PIO mode
 

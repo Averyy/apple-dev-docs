@@ -19,7 +19,7 @@ class let didFinishLaunchingNotification: NSNotification.Name
 extern NSNotificationName NSApplicationDidFinishLaunchingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./shared.md). See [NSApplicationDidFinishLaunching User Info Keys](../nsapplicationdidfinishlaunching-user-info-keys.md) for the possible `userInfo` keys and values. The system posts this notification on the main actor.
 

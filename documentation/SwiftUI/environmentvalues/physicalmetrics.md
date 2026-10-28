@@ -15,7 +15,7 @@ The physical metrics associated with a scene.
 var physicalMetrics: PhysicalMetricsConverter { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Reading this value returns a `PhysicalMetricsConverter` corresponding to the window scene associated with the environment’s reader. The converter can convert point sizes into physical measurements of length, and vice versa.
 

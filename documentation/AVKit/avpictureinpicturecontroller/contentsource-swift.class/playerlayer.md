@@ -24,7 +24,7 @@ var playerLayer: AVPlayerLayer? { get }
 @property (nonatomic, readonly, nullable) AVPlayerLayer * playerLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the content source doesn’t represent a player layer.
 

@@ -24,11 +24,11 @@ init(componentDescription: AudioComponentDescription, options: AudioComponentIns
 - (instancetype) initWithComponentDescription:(AudioComponentDescription) componentDescription options:(AudioComponentInstantiationOptions) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized audio unit, or `nil` if initialization failed.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

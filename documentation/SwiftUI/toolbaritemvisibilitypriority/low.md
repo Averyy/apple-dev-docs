@@ -18,7 +18,7 @@ A priority that moves the item to the overflow menu before items with the defaul
 static let low: ToolbarItemVisibilityPriority
 ```
 
-#### Discussion
+## Discussion
 
 Use for secondary actions, such as archive or delete, that don’t need persistent visibility in the toolbar.
 

@@ -21,7 +21,7 @@ Creates an [`ArtworkRepresentation`](../artworkrepresentation.md) from image dat
 init(data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable`](./artworkrepresentationerror/norepresentationavailable.md) if the data doesn’t represent a valid image or uses an unsupported format.
 

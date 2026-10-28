@@ -23,7 +23,7 @@ var autoSignInToken: VSUserAccountManager.AutoSignInToken { get async throws }
 
 - [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 The framework sets this property to the current Automatic Sign-In token value and authorization status according to information on the person’s Account Account.
 

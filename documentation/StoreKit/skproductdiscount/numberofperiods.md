@@ -27,7 +27,7 @@ var numberOfPeriods: Int { get }
 @property (nonatomic, readonly) NSUInteger numberOfPeriods;
 ```
 
-#### Discussion
+## Discussion
 
 A product discount may be available for one or more periods. The period, defined in [`subscriptionPeriod`](./subscriptionperiod.md), is a set number of days, weeks, months, or years.
 

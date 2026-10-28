@@ -18,7 +18,7 @@ Remove an object by key from the dictionary.
 void removeObject(const OSObject *aKey);
 ```
 
-#### Discussion
+## Discussion
 
 An object in the dictionary with the given key object is removed and released.
 

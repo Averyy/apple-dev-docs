@@ -5,19 +5,19 @@
 
 Update your code to use new language features and test your apps against changes.
 
-#### Overview
+## Overview
 
 Read these notes when you’re writing Swift apps in Xcode 10.2.
 
-##### General
+### General
 
-###### Swift 5 Runtime Support for Command-Line Tools Package
+#### Swift 5 Runtime Support for Command-Line Tools Package
 
 - Starting with Xcode 10.2, Swift command-line tools require the Swift libraries in macOS. They’re included by default starting with macOS Mojave 10.14.4. In macOS Mojave 10.14.3 and earlier, there’s an optional package to provide these runtime support libraries for Swift command-line tools that you can download from [More Downloads for Apple Developers](https://developer.apple.com/download/more/). If you installed the beta version of this package, replace it with the release version. This package is only needed for Swift command-line tools, not for apps with graphical user interfaces.
 
-##### App Thinning
+### App Thinning
 
-###### New Features
+#### New Features
 
 - Swift apps no longer include dynamically linked libraries for the Swift standard library and Swift SDK overlays in build variants for devices running iOS 12.2, watchOS 5.2, and tvOS 12.2. As a result, Swift apps can be smaller when they’re shipped in the App Store, deployed for testing using TestFlight, or thinned in an app archive for local development distribution.
 
@@ -25,9 +25,9 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
 
   For information about app thinning, see [What is app thinning?](https://help.apple.com/xcode/mac/current/#/devbbdc5ce4f) in [Xcode Help](https://help.apple.com/xcode/mac/current/). For information about app file sizes, see [View builds and file sizes](https://help.apple.com/app-store-connect/#/dev3b56ce97c) in [App Store Connect Help](https://help.apple.com/app-store-connect/).
 
-##### Swift Language
+### Swift Language
 
-###### New Features
+#### New Features
 
 - String literals can now be expressed using enhanced delimiters. A string literal with one or more number signs (`#`) before the opening quote treats backslashes and double-quote characters as literal unless they’re followed by the same number of number signs. Use enhanced delimiters to avoid cluttering string literals that contain many double-quote or backslash characters with extra escapes ([SE-0200](https://github.com/apple/swift-evolution/blob/master/proposals/0200-raw-string-escaping.md)) (47725014):
 
@@ -130,9 +130,9 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
   #endif
   ```
 
-##### Swift Standard Library
+### Swift Standard Library
 
-###### New Features
+#### New Features
 
 - The standard library now includes the [`Result`](../Swift/result.md) enumeration with [`Result.success(_:)`](../Swift/result/success%28_%29.md) and [`Result.failure(_:)`](../Swift/result/failure%28_%29.md) cases. Use [`Result`](../Swift/result.md) to manually propagate and handle errors in situations where `do-catch` statements and the `try` expression can’t be used, such as when you’re using asynchronous APIs that can fail. As part of this addition, the [`Error`](../Swift/error.md) protocol now conforms to itself, which makes working with errors in a generic context easier. ([SE-0235](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md)) (21200405)
 - [`SIMD`](../Swift/simd.md) types and basic operators are now defined in the standard library. The types provided by the [`SIMD`](../Swift/simd.md) framework, like [`float2`](../simd/float2.md) and [`float3`](../simd/float3.md), are now type aliases of the new standard library types.
@@ -236,7 +236,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
   ```
 - The [`String`](../Swift/string.md) structure’s native encoding switched from UTF-16 to UTF-8, which may improve the relative performance of [`String.UTF8View`](../Swift/string/utf8view.md) compared to [`String.UTF16View`](../Swift/string/utf16view.md). Consider re-evaluating any code specifically tuned to use [`String.UTF16View`](../Swift/string/utf16view.md) for performance. (42339222)
 
-###### Known Issues
+#### Known Issues
 
 - The `count(where:)` method on the [`Sequence`](../Swift/sequence.md) protocol available in beta versions of Xcode 10.2 is now removed. (47549309)
 
@@ -246,14 +246,14 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
   let occurrences = sequence.reduce(0) { predicate($1) ? $0 + 1 : $0 }
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Setting the [`utf8`](../Swift/string/utf8.md) property on a string now works as expected. (47864538)
 - Passing a null [`UnsafeBufferPointer`](../Swift/unsafebufferpointer.md)`<UInt8>` to the [`String`](../Swift/string.md) structure’s [`init(decoding:as:)`](../Swift/string/init%28decoding,as%29.md) initializer now returns an empty string as expected. (47864610)
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### New Features
+#### New Features
 
 - Targets can now declare some commonly used, target-specific build settings when using the Swift 5 `Package.swift` `tools-version`. The new settings can also be conditionalized based on platform and build configuration. The included build settings support Swift- and C-language defines, C language header search paths, linked libraries, and linked frameworks. ([SE-0238](https://github.com/apple/swift-evolution/blob/master/proposals/0238-package-manager-build-settings.md)) (23270646)
 - Packages can now customize the minimum deployment target setting for Apple platforms when using the Swift 5 `Package.swift` `tools-version`. Building a package emits an error if any of the package dependencies of the package specify a minimum deployment target greater than the package’s own minimum deployment target. ([SE-0236](https://github.com/apple/swift-evolution/blob/master/proposals/0236-package-manager-platform-deployment-settings.md)) (28253354)
@@ -272,9 +272,9 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
 - The `swift run` command has a new `--repl` option that launches the Swift REPL with support for importing library targets of a package. This allows you to easily experiment with API from a package target without needing to build an executable that calls that API. (44889181)
 - For more information about using the Swift Package Manager, visit [Using the Package Manager](https://swift.org/getting-started/#using-the-package-manager) on [swift.org](https://swift.org).
 
-##### Swift Compiler
+### Swift Compiler
 
-###### New Features
+#### New Features
 
 - To reduce the size taken up by Swift metadata, convenience initializers defined in Swift now only allocate an object ahead of time if they’re calling a designated initializer defined in Objective-C. In most cases, this has no effect on your app, but if your convenience initializer is called from Objective-C and doesn’t in turn delegate via `self.init` to an initializer exposed to Objective-C, the initial allocation from [`alloc`](../ObjectiveC/nsobject-swift.class/alloc.md) is released without any initializer being called. This can be problematic for users of the initializer that don’t expect any sort of object replacement to happen. One instance of this is with [`init(coder:)`](../Foundation/nscoding/init%28coder%29.md): the implementation of [`NSKeyedUnarchiver`](../Foundation/nskeyedunarchiver.md) may behave incorrectly if it calls into Swift implementations of [`init(coder:)`](../Foundation/nscoding/init%28coder%29.md) and the archived object graph contains cycles.To avoid this, ensure that convenience initializers that don’t support object replacement always delegate to initializers that are also exposed to Objective-C, either because they’re defined in Objective-C, or because they’re marked with `@objc`, or because they override initializers exposed to Objective-C, or because they satisfy requirements of an `@objc` protocol. (46823518)
 - C types with an alignment greater than 16 bytes are no longer available in Swift. The Swift compiler never handled these types correctly. (31411216)
@@ -285,7 +285,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
 - Default arguments are now printed in SourceKit-generated interfaces for Swift modules, instead of just using a placeholder default. (18675831)
 - `unowned` and `unowned(unsafe)` variables now support [`Optional`](../Swift/optional.md) types. (47326769)
 
-###### Known Issues
+#### Known Issues
 
 - A key path literal that refers to a property in a protocol extension from another module may cause the compiler to crash. (48001932)
 
@@ -302,7 +302,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.2.
 
   **Workaround:** Use `super.init(frame:)` instead.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Swift command line projects won’t run on macOS 10.14.3 and earlier unless you install the Swift 5 Runtime Support for Command Line Tools package. Without that package, Swift command line projects crash on launch with “dyld: Library not loaded” errors. (46824656)
 - Linking a Swift program directly from the command line with the `swiftc` compiler now results in output that runs without issue on macOS Mojave 10.14.4. (43616773)

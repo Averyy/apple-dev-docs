@@ -19,7 +19,7 @@ var isBatteryMonitoringEnabled: Bool { get set }
 @property (nonatomic, getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`false`](../../Swift/false.md). To monitor the device’s battery, set this property to [`true`](../../Swift/true.md). This enables both the [`batteryLevel`](./batterylevel.md) and [`batteryState`](./batterystate.md) properties.
 

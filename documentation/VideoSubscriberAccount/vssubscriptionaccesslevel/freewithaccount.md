@@ -26,7 +26,7 @@ case freeWithAccount
 VSSubscriptionAccessLevelFreeWithAccount
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to content in your availability feed with the *account* offering type.
 

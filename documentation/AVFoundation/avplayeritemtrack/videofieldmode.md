@@ -20,7 +20,7 @@ var videoFieldMode: String? { get set }
 @property (nonatomic, copy, nullable) NSString * videoFieldMode;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` indicates default processing of video frames. To deinterlace video fields, set this property value to [`AVPlayerItemTrackVideoFieldModeDeinterlaceFields`](../avplayeritemtrackvideofieldmodedeinterlacefields.md).
 

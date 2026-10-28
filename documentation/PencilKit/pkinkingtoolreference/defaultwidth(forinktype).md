@@ -23,7 +23,7 @@ class func defaultWidth(forInkType inkType: __PKInkType) -> CGFloat
 + (CGFloat) defaultWidthForInkType:(PKInkType) inkType;
 ```
 
-#### Return Value
+## Return Value
 
 The default line width (in points) for the specified tool type.
 

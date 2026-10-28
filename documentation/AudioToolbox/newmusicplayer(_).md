@@ -24,11 +24,11 @@ func NewMusicPlayer(_ outPlayer: UnsafeMutablePointer<MusicPlayer?>) -> OSStatus
 extern OSStatus NewMusicPlayer(MusicPlayer*outPlayer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 A music player can send its output to an audio processing graph, to a MIDI endpoint, or to a combination of both.
 

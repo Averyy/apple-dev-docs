@@ -21,7 +21,7 @@ Creates a custom exponential format with a system-determined precision value.
 static func exponential(explicitPositiveSign: Bool = false, uppercase: Bool = false) -> OSLogFloatFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom exponential format for floating-point numbers.
 

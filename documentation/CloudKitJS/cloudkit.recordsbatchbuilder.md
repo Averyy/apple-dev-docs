@@ -15,7 +15,7 @@ A [`CloudKit.RecordsBatchBuilder`](./cloudkit.recordsbatchbuilder.md) object enc
 interface CloudKit.RecordsBatchBuilder
 ```
 
-#### Overview
+## Overview
 
 It is more efficient to use this class to batch multiple record changes into a single operation than to use the individual record change methods in the [`CloudKit.Database`](./cloudkit.database.md) class. Using this class is especially important if the record types contain `Reference` fields. CloudKit ensures that in a graph of related records, target records are saved before source records.
 

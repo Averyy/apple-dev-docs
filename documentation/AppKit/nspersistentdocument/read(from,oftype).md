@@ -20,7 +20,7 @@ func read(from absoluteURL: URL, ofType typeName: String) throws
 - (BOOL) readFromURL:(NSURL *) absoluteURL ofType:(NSString *) typeName error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the URL for the persistent object store associated with the receiver’s managed object context to `absoluteURL`.
 

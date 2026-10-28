@@ -20,11 +20,11 @@ func ColorSyncCMMCopyLocalizedName(_: ColorSyncCMM!) -> Unmanaged<CFString>?
 extern CFStringRefColorSyncCMMCopyLocalizedName(ColorSyncCMMRef );
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the CMM.
 
-#### Discussion
+## Discussion
 
 Use this function to get the name of the built-in CMM.
 

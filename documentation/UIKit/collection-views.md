@@ -5,7 +5,7 @@
 
 Display nested views using a configurable and highly customizable layout.
 
-#### Overview
+## Overview
 
 A collection view manages an ordered set of content, such as the grid of photos in the Photos app, and presents it visually.
 

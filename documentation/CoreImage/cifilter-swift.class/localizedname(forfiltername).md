@@ -24,7 +24,7 @@ class func localizedName(forFilterName filterName: String) -> String?
 + (NSString *) localizedNameForFilterName:(NSString *) filterName;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name for the filter.
 

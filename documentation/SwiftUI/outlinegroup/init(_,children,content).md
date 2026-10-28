@@ -43,7 +43,7 @@ init<DataElement>(_ root: DataElement, children: KeyPath<DataElement, Data?>, @C
 init<DataElement>(_ root: DataElement, children: KeyPath<DataElement, Data?>, @TableRowBuilder<DataElement> content: @escaping (DataElement) -> Leaf) where ID == DataElement.ID, DataElement == Data.Element
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an instance that uniquely identifies views across updates based on the identity of the underlying data element.
 

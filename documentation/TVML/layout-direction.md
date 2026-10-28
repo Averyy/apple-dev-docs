@@ -5,7 +5,7 @@
 
 Sets the text direction based on the user’s language preference.
 
-#### Overview
+## Overview
 
 All base style sheets now use `text-align:natural`. You must use the `layout-direction` query to change the language layout. Here’s an example for specifying styles for right-to-left languages.
 
@@ -33,7 +33,7 @@ All base style sheets now use `text-align:natural`. You must use the `layout-dir
 </style>
 ```
 
-##### Values for layout-direction
+### Values for layout-direction
 
 - **`ltr`**: Test for left-to-right language layout.
 - **`rtl`**: Test for right-to-left language layout.

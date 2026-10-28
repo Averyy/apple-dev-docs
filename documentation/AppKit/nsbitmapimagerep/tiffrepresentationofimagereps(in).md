@@ -19,11 +19,11 @@ class func tiffRepresentationOfImageReps(in array: [NSImageRep]) -> Data?
 + (NSData *) TIFFRepresentationOfImageRepsInArray:(NSArray<NSImageRep *> *) array;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing a TIFF image representation.
 
-#### Discussion
+## Discussion
 
 This method uses the compression returned by [`getCompression(_:factor:)`](./getcompression%28_,factor%29.md) (if applicable). If a problem is encountered during generation of the TIFF, this method raises an [`NSTIFFException`](../nstiffexception.md) or an [`NSBadBitmapParametersException`](../nsbadbitmapparametersexception.md).
 

@@ -25,7 +25,7 @@ var deletingLastPathComponent: String { get }
 @property (copy, readonly) NSString * stringByDeletingLastPathComponent;
 ```
 
-#### Discussion
+## Discussion
 
 A new string made by deleting the last path component from the receiver, along with any final path separator. If the receiver represents the root path it is returned unaltered.
 

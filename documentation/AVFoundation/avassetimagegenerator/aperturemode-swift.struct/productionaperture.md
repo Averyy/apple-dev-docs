@@ -24,7 +24,7 @@ static let productionAperture: AVAssetImageGenerator.ApertureMode
 extern AVAssetImageGeneratorApertureMode const AVAssetImageGeneratorApertureModeProductionAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The image isn’t cropped to the clean aperture region, but it’s scaled according to the pixel aspect ratio. Use this option when you want to see all the pixels in your video, including the edges.
 

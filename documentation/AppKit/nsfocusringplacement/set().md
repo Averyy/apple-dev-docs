@@ -19,7 +19,7 @@ func set()
 extern void NSSetFocusRingStyle(NSFocusRingPlacement placement);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`NSFocusRingPlacement.above`](./above.md) to draw the focus ring over an image, use [`NSFocusRingPlacement.below`](./below.md) to draw the focus ring under text, and use [`NSFocusRingPlacement.only`](./only.md) if you don’t have an image or text. For the [`NSFocusRingPlacement.only`](./only.md) case, fills a shape to add the focus ring around the shape.
 

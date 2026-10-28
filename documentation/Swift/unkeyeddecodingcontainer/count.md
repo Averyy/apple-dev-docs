@@ -22,7 +22,7 @@ The number of elements contained within this container.
 var count: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the number of elements is unknown, the value is `nil`.
 

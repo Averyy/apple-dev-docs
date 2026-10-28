@@ -20,7 +20,7 @@ The most likely interpretation of the audio in this range.
 var text: AttributedString { get }
 ```
 
-#### Discussion
+## Discussion
 
 An empty string indicates that the audio contains no recognizable speech and, for results in the volatile range, that previous results for this range are revoked.
 

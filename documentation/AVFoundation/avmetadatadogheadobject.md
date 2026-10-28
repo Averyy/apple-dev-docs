@@ -23,7 +23,7 @@ class AVMetadataDogHeadObject
 @interface AVMetadataDogHeadObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 [`AVMetadataDogHeadObject`](./avmetadatadogheadobject.md) is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) representing a dog head.
 

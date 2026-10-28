@@ -23,7 +23,7 @@ static func .<= (a: SIMD4<Scalar>, b: SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.M
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is less than or equal to the corresponding lane of b, and false otherwise.
 

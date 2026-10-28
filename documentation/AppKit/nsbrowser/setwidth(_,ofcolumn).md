@@ -19,7 +19,7 @@ func setWidth(_ columnWidth: CGFloat, ofColumn columnIndex: Int)
 - (void) setWidth:(CGFloat) columnWidth ofColumn:(NSInteger) columnIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used to set the initial width of browser columns unless the column sizing is automatic; [`setWidth(_:ofColumn:)`](./setwidth%28_,ofcolumn%29.md) does nothing if [`columnResizingType`](./columnresizingtype-swift.property.md) is [`NSBrowser.ColumnResizingType.autoColumnResizing`](./columnresizingtype-swift.enum/autocolumnresizing.md). To set the default width for new columns (that don’t otherwise have initial widths from defaults or via the delegate), use a `columnIndex` of –1. A value set for `columnIndex` of –1 is persistent. An [`columnConfigurationDidChangeNotification`](./columnconfigurationdidchangenotification.md) notification is posted (not immediately), if necessary, so that the browser can autosave the new column configuration.
 

@@ -24,7 +24,7 @@ var emissionLongitude: CGFloat { get set }
 @property CGFloat emissionLongitude;
 ```
 
-#### Discussion
+## Discussion
 
 The emission longitude is the orientation of the emission angle in the xy-plane. it is also often referred to as the azimuth.
 

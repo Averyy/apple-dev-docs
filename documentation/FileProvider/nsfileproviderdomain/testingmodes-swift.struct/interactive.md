@@ -23,7 +23,7 @@ static var interactive: NSFileProviderDomain.TestingModes { get }
 NSFileProviderDomainTestingModeInteractive
 ```
 
-#### Discussion
+## Discussion
 
 Disable the system’s automatic scheduling and execution of operations. Instead, the File Provider extension can manually determine the order of execution.
 

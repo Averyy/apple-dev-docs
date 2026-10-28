@@ -23,7 +23,7 @@ weak var delegate: (any UIDocumentMenuDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIDocumentMenuDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UIDocumentMenuDelegate`](../uidocumentmenudelegate.md) protocol.
 

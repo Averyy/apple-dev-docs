@@ -16,7 +16,7 @@ C-string key for a notification that fires when the power source(s) time remaini
 #define kIOPSTimeRemainingNotificationKey
 ```
 
-#### Discussion
+## Discussion
 
 Use notify(3) API to register for notifications.
 

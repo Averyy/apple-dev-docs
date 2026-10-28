@@ -24,7 +24,7 @@ var wetDryMix: Float { get set }
 @property (nonatomic) float wetDryMix;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the blend as a percentage. The default value is `100%`. The valid range of values is `0%` through `100%`, where `0%` represents all dry.
 

@@ -25,7 +25,7 @@ case unspecified
 
 - [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
-#### Discussion
+## Discussion
 
 The person says something like “Play something” without specifying particular content. Provide recommended or recently played content in your response.
 

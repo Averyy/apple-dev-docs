@@ -22,7 +22,7 @@ optional var isEditable: Bool { get }
 @property (nonatomic, readonly, getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 Text views are normally editable, and the default value of this property is [`true`](../../Swift/true.md) if you don’t provide an implementation. When implementing a custom text view, you might implement this property and return [`false`](../../Swift/false.md) to prevent outside agents from modifying the content of your view. For example, you might disable editing to prevent the system’s writing tools panel from pasting content into your view.
 

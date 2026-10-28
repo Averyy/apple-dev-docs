@@ -15,11 +15,11 @@ Makes the calling thread the proxy for a specified guest.
 OSStatus SecHostSelectGuest(SecGuestRef guestRef, SecCSFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The specified guest must be dynamically valid. This function works both for hosts acting in proxy mode and those acting in dynamic mode. The selected guest setting remains in effect until it is changed or the thread terminates.
 

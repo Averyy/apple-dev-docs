@@ -15,11 +15,11 @@ Traditional buffer cache routine to get a buffer corresponding to a logical bloc
 buf_t buf_getblk(vnode_t vp, daddr64_t blkno, int size, int slpflag, int slptimeo, int operation);
 ```
 
-#### Return Value
+## Return Value
 
 Buffer found in core or newly allocated, either containing valid data or ready for I/O.
 
-#### Discussion
+## Discussion
 
 buf_getblk() gets a buffer, not necessarily containing valid data, representing a block in a file. A metadata buffer will be returned with its own zone-allocated storage, managed by the traditional buffer-cache layer, whereas data buffers will be returned hooked into backing by the UBC (which in fact controls the caching of data). buf_getblk() first looks for the buffer header in cache; if the buffer is in-core but busy, buf_getblk() will wait for it to become unbusy, depending on the slpflag and slptimeo parameters. If the buffer is found unbusy and is a metadata buffer, it must already contain valid data and will be returned directly; data buffers will have a UPL configured to prepare for interaction with the underlying UBC. If the buffer is found in core, it will be marked as such and buf_fromcache() will return truth. A buffer is allocated and initialized (but not filled with data) if none is found in core. buf_bread(), buf_breadn(), buf_meta_bread(), and buf_meta_breadn() all return buffers obtained with buf_getblk().
 

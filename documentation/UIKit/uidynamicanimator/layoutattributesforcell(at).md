@@ -23,7 +23,7 @@ func layoutAttributesForCell(at indexPath: IndexPath) -> UICollectionViewLayoutA
 - (UICollectionViewLayoutAttributes *) layoutAttributesForCellAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The collection view layout attributes for the specified collection view cell.
 

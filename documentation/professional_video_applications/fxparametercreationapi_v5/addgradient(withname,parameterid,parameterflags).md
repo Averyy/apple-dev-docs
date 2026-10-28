@@ -20,7 +20,7 @@ func addGradient(withName name: String, parameterID: UInt32, parameterFlags flag
 - (BOOL) addGradientWithName:(NSString *) name parameterID:(UInt32) parameterID parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a gradient parameter; `NO` otherwise.
 

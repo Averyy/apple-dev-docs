@@ -23,7 +23,7 @@ optional func textViewportLayoutControllerDidLayout(_ textViewportLayoutControll
 - (void) textViewportLayoutControllerDidLayout:(NSTextViewportLayoutController *) textViewportLayoutController;
 ```
 
-#### Discussion
+## Discussion
 
 Layout information on `textViewportLayoutController` is up-to-date at the point of this call.
 

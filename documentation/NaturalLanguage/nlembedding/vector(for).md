@@ -26,11 +26,11 @@ func vector(for string: String) -> [Double]?
 
 - [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
-#### Return Value
+## Return Value
 
 A vector represented as an array of doubles if present in the word embedding, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This method isn’t safe to call concurrently on a shared [`NLEmbedding`](../nlembedding.md) instance. Calling it from multiple threads, queues, or tasks at the same time can corrupt the embedding’s state and crash your app. Serialize calls into a shared instance, or give each thread its own instance.
 

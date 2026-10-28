@@ -21,7 +21,7 @@ var caption: String? { get set }
 @property (nonatomic, copy, nullable) NSString * caption;
 ```
 
-#### Discussion
+## Discussion
 
 The caption is drawn using black text and is positioned at the bottom-left corner of the message bubble, just below the image or media file. The caption can wrap to three lines before being truncated. This property defaults to `nil`.
 

@@ -23,7 +23,7 @@ var startIndex: ReversedCollection<Base>.Index { get }
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

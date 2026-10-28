@@ -19,7 +19,7 @@ var isInputMuted: Bool { get set }
 @property (assign, getter=isInputMuted) BOOL inputMuted;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the inputs mute state.
 

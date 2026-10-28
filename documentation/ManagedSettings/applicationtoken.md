@@ -17,7 +17,7 @@ A representation of an application.
 typealias ApplicationToken = Token<Application>
 ```
 
-#### Discussion
+## Discussion
 
 Use `ApplicationToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](../FamilyControls/familyactivityselection.md) provides tokens that devices within the same Family Sharing group can use to identify applications.
 

@@ -46,7 +46,7 @@ convenience init<Failure>(model: some LanguageModel, tools: [any Tool] = [], @In
 - [Adding server-side intelligence with Private Cloud Compute](../adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Running a Core AI model in a Foundation Models session](../running-a-core-ai-model-in-a-foundation-models-session.md)
 
-#### Discussion
+## Discussion
 
 - Parameters
 

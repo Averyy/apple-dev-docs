@@ -26,7 +26,7 @@ var sslCipherSuites: Set<NSNumber>? { get set }
 @property (copy, nullable) NSSet<NSNumber *> * SSLCipherSuites;
 ```
 
-#### Discussion
+## Discussion
 
 Values for cipher suites are defined in `<Security/CipherSuite.h>`. These values should be wrapped as [`NSNumber`](../../Foundation/nsnumber.md) objects in a set. If this property is set to `nil`, the default cipher suites will be used.
 

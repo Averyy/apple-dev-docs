@@ -5,7 +5,7 @@
 
 Learn about timeframes and priorities for ad impressions that result in ad attributions, and how additional impressions qualify for postbacks.
 
-#### Overview
+## Overview
 
 Ad networks receive attributions in the form of install-validation postbacks. Before an ad network can receive a postback, the following events need to occur within limited time-windows:
 
@@ -36,7 +36,7 @@ Devices send one or more postbacks depending on the SKAdNetwork and iOS versions
 
 Time-windows for events apply equally to winning and nonwinning postbacks.
 
-##### Receive a winning postback
+### Receive a winning postback
 
 When multiple ad impressions qualify for install-validation postbacks, a device sends the winning postback to the ad network based on the following rules:
 
@@ -52,7 +52,7 @@ Indicate the `fidelity-type` when you generate the ad signature. Recorded ad imp
 
 In version 3 and later, the system indicates winning postbacks with a `did-win` parameter of value `true`.
 
-##### Receive a nonwinning postback
+### Receive a nonwinning postback
 
 Starting in iOS 14.6, devices can send multiple postbacks to ad networks that sign ads using version 3 or later. The system indicates nonwinning postbacks with a `did-win` parameter of value `false`. These postbacks don’t include `conversion-value` or `source-app-id`.
 
@@ -60,17 +60,17 @@ Each ad network can receive only one install-validation postback, winning or not
 
 Up to five ad networks receive one nonwinning postback each. The system orders the recorded ad impressions using recency and `fidelity-type`, with the most recent ad views and highest `fidelity-type` taking precedence. Devices send nonwinning postbacks for the top five ad impressions from different ad networks that qualify for ad attribution.
 
-##### Opt in to receive a copy of the winning postback
+### Opt in to receive a copy of the winning postback
 
 Starting in iOS 15, devices can send a copy of the winning install-validation postback to the developer of the advertised app. Developers opt in to receive the postback by specifying a server endpoint in their app’s `Info.plist` file. For more information about opting in and specifying the endpoint, see [Configuring an advertised app](./configuring-an-advertised-app.md).
 
 The postback that developers receive is an exact copy of the winning install-validation postback that the device sends to the ad network. The device sends the postback to developers at the same time it sends the winning postback to the ad network. To verify the postback, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### Limit view-through ad impressions
+### Limit view-through ad impressions
 
 StoreKit records a maximum of 15 view-through ad impressions per source app before discarding the oldest one. The recorded ad impressions may advertise various products, and are each eligible to become pending attributions until they expire (after 24 hours).
 
-##### Test ad impressions and postbacks
+### Test ad impressions and postbacks
 
 Use the [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework to validate your ad impressions and test your postbacks by creating unit tests. For more information, see [`SKAdTestSession`](../StoreKitTest/skadtestsession.md) and [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md).
 

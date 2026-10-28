@@ -16,11 +16,11 @@ Returns an arbitrary object identifying a new conversation being created for the
 - (id) createConversationForConnection:(NSConnection *) conn;
 ```
 
-#### Return Value
+## Return Value
 
 An arbitrary object identifying a new conversation being created for the connection in the current thread.
 
-#### Discussion
+## Discussion
 
 New conversations are created only if [`independentConversationQueueing`](../nsconnection/independentconversationqueueing.md) is [`true`](../../Swift/true.md) for `conn`. If you do not implement this method, `NSConnection` object creates an instance of `NSObject`.
 

@@ -25,7 +25,7 @@ let kSecPolicyAppleIDValidation: CFString
 extern CFStringRef const kSecPolicyAppleIDValidation;
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about Apple ID certificates, read [App Distribution Guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
 

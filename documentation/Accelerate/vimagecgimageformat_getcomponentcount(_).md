@@ -25,7 +25,7 @@ func vImageCGImageFormat_GetComponentCount(_ format: UnsafePointer<vImage_CGImag
 uint32_t vImageCGImageFormat_GetComponentCount(const vImage_CGImageFormat *format);
 ```
 
-#### Return Value
+## Return Value
 
 The number of color and alpha channels in the image.
 

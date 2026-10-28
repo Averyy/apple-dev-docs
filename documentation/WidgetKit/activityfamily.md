@@ -16,7 +16,7 @@ A family that defines the Live Activity’s size.
 enum ActivityFamily
 ```
 
-#### Overview
+## Overview
 
 Live Activities support one or more sizes, giving you the flexibility to configure them for different devices. A Live Activity renders for a specific family, depending on both the device and the location in which it’s displayed.
 

@@ -15,11 +15,11 @@ The Query Brands endpoint returns this response object.
 object BrandQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Query Brands`](./query-brands.md) returns `BrandQueryResponse` as the top-level envelope. The `result` array contains all [`Brand`](./brand.md) objects that match the supplied filters, subject to pagination. To page through large result sets, use `pagination.totalCount` and `pagination.offset`.
 
-##### Example
+### Example
 
 ```json
 {

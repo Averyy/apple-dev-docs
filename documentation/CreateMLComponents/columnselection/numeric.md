@@ -21,7 +21,7 @@ Select all numeric columns in the data frame.
 case numeric
 ```
 
-#### Discussion
+## Discussion
 
 Numeric columns are columns with elements of type `Int`, `UInt8`, `Float`, `Double`. Also arrays of those types and shaped arrays of those types.
 

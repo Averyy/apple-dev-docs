@@ -19,7 +19,7 @@ class let columnDidResizeNotification: NSNotification.Name
 extern NSNotificationName NSTableViewColumnDidResizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the table view in which a column was resized. The `userInfo` dictionary contains the following information:
 

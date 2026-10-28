@@ -17,7 +17,7 @@ A context indicating how your device activity report extension should configure 
 struct Context
 ```
 
-#### Overview
+## Overview
 
 You can use a [`DeviceActivityReport.Context`](./context.md) to create a [`DeviceActivityReport`](../deviceactivityreport.md), which the system then provides to your app’s extension and allows it to configure the resulting report `View` in a particular way. For example, if you want to render either a pie chart or bar graph representing the user’s device activity, you can create the following custom contexts:
 

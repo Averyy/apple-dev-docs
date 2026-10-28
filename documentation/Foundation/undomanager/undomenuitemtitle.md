@@ -25,7 +25,7 @@ var undoMenuItemTitle: String { get }
 @property (copy, readonly) NSString * undoMenuItemTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Returns “Undo” if no action name has been assigned or `nil` if there is nothing to undo.
 

@@ -24,7 +24,7 @@ class PHASEGlobalMetaParameterAsset
 @interface PHASEGlobalMetaParameterAsset : PHASEAsset
 ```
 
-#### Overview
+## Overview
 
 The engine’s [`registerGlobalMetaParameter(metaParameterDefinition:)`](./phaseassetregistry/registerglobalmetaparameter%28metaparameterdefinition%29.md) function returns an instance of this class for a parameter you register. Then, you access the actual metaparameter by using this class’s [`identifier`](./phaseasset/identifier.md) as the key for metaparameter dictionary, for example, a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) or the asset registry’s [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md).
 

@@ -23,7 +23,7 @@ var magnitude: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat magnitude;
 ```
 
-#### Discussion
+## Discussion
 
 The default magnitude is `0.0`, equivalent to no force. A continuous force vector with a magnitude of `1.0`, applied to a 100 point x 100 point view whose density value is `1.0`, results in view acceleration of 100 points / second² in the direction indicated by the [`angle`](./angle.md) or [`pushDirection`](./pushdirection.md) property.
 

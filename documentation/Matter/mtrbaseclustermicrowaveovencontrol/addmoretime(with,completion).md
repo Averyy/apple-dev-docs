@@ -29,7 +29,7 @@ func addMoreTime(with params: MTRMicrowaveOvenControlClusterAddMoreTimeParams) a
 - (void) addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to add more time to the CookTime attribute of the server.
 

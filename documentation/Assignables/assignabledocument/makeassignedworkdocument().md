@@ -18,7 +18,7 @@ Create a new instance of an [`AssignedWorkDocument`](../assignedworkdocument.md)
 func makeAssignedWorkDocument() throws -> AssignedWorkDocument
 ```
 
-#### Return Value
+## Return Value
 
 A work document based on this assignable document.
 

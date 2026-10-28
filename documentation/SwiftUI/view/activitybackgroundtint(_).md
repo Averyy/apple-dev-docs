@@ -17,7 +17,7 @@ Sets the tint color for the background of a Live Activity that appears on the Lo
 @preconcurrency func activityBackgroundTint(_ color: Color?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When you set a custom background tint color, consider setting a custom text color for the auxiliary button people use to end a Live Activity on the Lock Screen. To set a custom text color, use the [`activitySystemActionForegroundColor(_:)`](./activitysystemactionforegroundcolor%28_%29.md) view modifier.
 

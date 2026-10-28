@@ -15,11 +15,11 @@ Returns an object representing a deferred or asynchronous operation that resolve
 Promise<Undefined, CloudKit.CKError> whenUserSignsOut();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to `Undefined` when the user signs out, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use the [`whenUserSignsOut`](./whenusersignsout.md) method to call a function when the user signs out.
 

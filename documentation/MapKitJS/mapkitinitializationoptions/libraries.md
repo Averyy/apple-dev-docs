@@ -15,7 +15,7 @@ An array of libraries to load at initialization.
 libraries?: string[];
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The full bundle of MapKit JS ignores this option.
 

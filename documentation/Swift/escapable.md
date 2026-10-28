@@ -21,7 +21,7 @@ A type whose values can persist beyond their immediate local scope.
 protocol Escapable
 ```
 
-#### Overview
+## Overview
 
 Escapable values can be assigned to global or static variables, returned from functions, captured by escaping closures, and so on. All Swift types implicitly conform to this protocol by default, allowing them to be moved across scopes freely because they lack any lifetime dependencies.
 

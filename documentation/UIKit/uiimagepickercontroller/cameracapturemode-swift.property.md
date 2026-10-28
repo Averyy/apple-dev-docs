@@ -21,7 +21,7 @@ var cameraCaptureMode: UIImagePickerController.CameraCaptureMode { get set }
 @property (nonatomic) UIImagePickerControllerCameraCaptureMode cameraCaptureMode;
 ```
 
-#### Discussion
+## Discussion
 
 The various capture modes are listed in the [`UIImagePickerController.CameraCaptureMode`](./cameracapturemode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraCaptureMode.photo`](./cameracapturemode-swift.enum/photo.md).
 

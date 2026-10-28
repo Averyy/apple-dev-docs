@@ -20,11 +20,11 @@ func addCustomParameter(withName name: String, parameterID: UInt32, defaultValue
 - (BOOL) addCustomParameterWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(NSObject<NSCopying,NSSecureCoding> *) defaultValue parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a custom parameter; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 The `defaultValue` argument is an instance, created by the plug-in, of the custom parameter’s class, which must conform to the [`NSCoding`](../../Foundation/nscoding.md) protocol. `NSCoding` is used for serializing and unserializing the custom parameter’s value object for saving and loading.
 

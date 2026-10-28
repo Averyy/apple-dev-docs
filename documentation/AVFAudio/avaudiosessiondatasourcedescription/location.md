@@ -24,7 +24,7 @@ var location: AVAudioSession.Location? { get }
 @property (readonly, nullable) AVAudioSessionLocation location;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if the data source’s location isn’t known.
 

@@ -21,7 +21,7 @@ A default set of effect options that prefers to repeat indefinitely.
 + (instancetype) optionsWithRepeating;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of effect options that prefers to repeat indefinitely.
 

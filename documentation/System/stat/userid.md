@@ -21,7 +21,7 @@ User ID of owner
 var userID: UserID { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_uid`.
 

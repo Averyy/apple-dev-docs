@@ -24,7 +24,7 @@ case high
 AVDepthDataQualityHigh
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

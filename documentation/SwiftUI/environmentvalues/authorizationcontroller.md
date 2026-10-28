@@ -20,7 +20,7 @@ A value provided in the SwiftUI environment that views can use to perform author
 var authorizationController: AuthorizationController { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can perform authorization requests when the user taps a button:
 

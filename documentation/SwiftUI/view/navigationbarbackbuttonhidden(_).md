@@ -22,7 +22,7 @@ nonisolated
 func navigationBarBackButtonHidden(_ hidesBackButton: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `navigationBarBackButtonHidden(_:)` to hide the back button for this view.
 

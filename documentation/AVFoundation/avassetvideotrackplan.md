@@ -24,7 +24,7 @@ class AVAssetVideoTrackPlan
 @interface AVAssetVideoTrackPlan : AVAssetTrackPlan
 ```
 
-#### Overview
+## Overview
 
 Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method to add an AVAssetTrackPlan to the planner’s plan to include it in the incremental writing session. Use this class instead of the base class AVAssetTrackPlan if you are setting up AVAssetWriter with video compression. This configuration hints to the planner that it must coordinate segment boundaries transitions between segments. This is abstracted from the client via using either the resumableAssetWriterInputWithMediaType or createResumableCompressionSessionWithAllocator helper functions within the AVPlannedVideoSegmentWritingRequest.
 

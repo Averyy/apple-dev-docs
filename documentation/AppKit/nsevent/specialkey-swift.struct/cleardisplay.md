@@ -15,7 +15,7 @@ The clear display key.
 static let clearDisplay: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -25,7 +25,7 @@ var axle: SCNVector3 { get set }
 @property SCNVector3 axle;
 ```
 
-#### Discussion
+## Discussion
 
 This vector is expressed in the coordinate space of the node containing the vehicle’s chassis. The default axle direction is `{-1.0, 0.0, 0.0}`.
 

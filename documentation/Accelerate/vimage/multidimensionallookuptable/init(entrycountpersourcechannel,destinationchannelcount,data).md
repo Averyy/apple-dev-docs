@@ -21,7 +21,7 @@ Returns a new multidimensional lookup table.
 init<T>(entryCountPerSourceChannel: [UInt8], destinationChannelCount: Int, data: T) where T : AccelerateBuffer, T.Element == UInt16
 ```
 
-#### Discussion
+## Discussion
 
 Supply the values in `data` in the range `0 ... 65535`, the function interprets the values as `0 ... 1` by dividing by `65535`.
 

@@ -19,7 +19,7 @@ func withDesign(_ design: NSFontDescriptor.SystemDesign) -> Self?
 - (instancetype) fontDescriptorWithDesign:(NSFontDescriptorSystemDesign) design;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

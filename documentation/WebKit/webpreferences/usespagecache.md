@@ -19,7 +19,7 @@ var usesPageCache: Bool { get set }
 @property (nonatomic) BOOL usesPageCache;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the web views should use a page cache; otherwise, [`false`](../../Swift/false.md).
 

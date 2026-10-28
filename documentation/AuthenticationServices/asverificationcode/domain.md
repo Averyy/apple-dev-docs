@@ -19,7 +19,7 @@ The domain associated with the code, if one exists.
 var domain: String?
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: https://github.com/WICG/sms-one-time-codes
 

@@ -12,11 +12,11 @@ virtual bool InitializeTargetForID (
  SCSITargetIdentifier targetID ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the target was successfully initialized.
 
-#### Overview
+## Overview
 
 This method will be called to initialize a target device in a single-threaded manner. The HBA can use this method to probe the target or do anything else necessary before the device object is registered with IOKit for matching.
 

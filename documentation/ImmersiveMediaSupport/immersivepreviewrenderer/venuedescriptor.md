@@ -17,7 +17,7 @@ The venue descriptor for rendering immersive video frames.
 var venueDescriptor: VenueDescriptor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The venue descriptor provides the necessary camera calibration data, mesh geometry, and masking information required to properly render immersive video frames. Update this property to switch between different venues or camera configurations.
 

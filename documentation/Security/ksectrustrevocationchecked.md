@@ -25,7 +25,7 @@ let kSecTrustRevocationChecked: CFString
 extern CFStringRef const kSecTrustRevocationChecked;
 ```
 
-#### Discussion
+## Discussion
 
 This key is only present if the evaluation process conducted revocation checking on the chain. The value is a Boolean set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if revocation checking was successful and none of the certificates in the chain were revoked. The value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) if no current revocation status could be obtained for one or more certificates in the chain due to connection problems or timeouts. You can take this outcome as a hint to retry revocation checking again at a later time.
 

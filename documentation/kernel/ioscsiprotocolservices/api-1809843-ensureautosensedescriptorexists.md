@@ -12,7 +12,7 @@ void EnsureAutosenseDescriptorExists (
  SCSITaskIdentifierrequest );
 ```
 
-#### Overview
+## Overview
 
 Internal method, not to be called by subclasses.
 

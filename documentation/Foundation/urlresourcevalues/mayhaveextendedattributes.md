@@ -21,7 +21,7 @@ A Boolean value that indicates the file may have extended attributes.
 var mayHaveExtendedAttributes: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the file may have extended attributes; otherwise, `false` indicates there are none.
 

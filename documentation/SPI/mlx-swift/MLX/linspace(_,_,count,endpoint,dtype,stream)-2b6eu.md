@@ -17,7 +17,7 @@ Generate `count` evenly spaced numbers over interval `[start, stop]`.
 func linspace<T>(_ start: T, _ stop: T, count: Int = 50, endpoint: Bool = true, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The result is floating point (`float32` by default), matching python’s `mx.linspace`, even for integer bounds: evenly spaced values between two integers are generally not integers.  Pass `dtype:` for anything else:
 
@@ -29,7 +29,7 @@ let r = MLXArray.linspace(0, 1, count: 3)
 let i = MLXArray.linspace(0, 10, count: 6, dtype: .int32)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`linspace(_:_:count:endpoint:dtype:stream:)`](./linspace%28_,_,count,endpoint,dtype,stream%29-2b6eu.md)

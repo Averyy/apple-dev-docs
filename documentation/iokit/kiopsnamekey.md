@@ -16,7 +16,7 @@ CFDictionary key for the current power source's name.
 #define kIOPSNameKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key.
 - For power source creators: Providing this key is REQUIRED.

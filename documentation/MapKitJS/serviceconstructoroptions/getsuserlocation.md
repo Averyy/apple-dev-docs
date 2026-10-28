@@ -15,7 +15,7 @@ A Boolean value that indicates whether to limit the results to the user’s loca
 getsUserLocation?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to `true`, the request queries the browser for the user’s location to deliver relevant local results. The default value is `false`.
 

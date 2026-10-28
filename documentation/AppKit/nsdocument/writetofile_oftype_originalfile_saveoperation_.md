@@ -17,7 +17,7 @@ Writes the receiver document’s contents to a file.
 - (BOOL) writeToFile:(NSString *) fullDocumentPath ofType:(NSString *) documentTypeName originalFile:(NSString *) fullOriginalDocumentPath saveOperation:(NSSaveOperationType) saveOperationType;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called from [`writeWithBackupToFile:ofType:saveOperation:`](./writewithbackuptofile_oftype_saveoperation_.md) to actually write the file of type `docType` to `fullDocumentPath`. `fullOriginalDocumentPath` is the path to the original file if there is one and `nil` otherwise. The default implementation simply calls [`writeToFile:ofType:`](./writetofile_oftype_.md). You should not need to call this method directly, but subclasses that need access to the previously saved copy of their document while saving the new one can override this method. The `saveOperationType` argument is one of the constants listed in `Constants`.
 

@@ -23,11 +23,11 @@ optional func textField(_ textField: UITextField, shouldChangeCharactersIn range
 - (BOOL) textField:(UITextField *) textField shouldChangeCharactersInRange:(NSRange) range replacementString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified text range should be replaced; otherwise, [`false`](../../Swift/false.md) to keep the old text.
 
-#### Discussion
+## Discussion
 
 The text field calls this method whenever user actions cause its text to change. Use this method to validate text as it is typed by the user. For example, you could use this method to prevent the user from entering anything but numerical values.
 

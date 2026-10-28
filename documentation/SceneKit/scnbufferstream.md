@@ -25,7 +25,7 @@ protocol SCNBufferStream : NSObjectProtocol
 @protocol SCNBufferStream <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Your app does not define classes that implement this protocol. Instead, you use the [`SCNProgram`](./scnprogram.md) method [`handleBinding(ofBufferNamed:frequency:handler:)`](./scnprogram/handlebinding%28ofbuffernamed,frequency,handler%29.md) to register a block to be called by SceneKit. In that block, SceneKit provides a buffer stream object that you can use to write data to the buffer.
 

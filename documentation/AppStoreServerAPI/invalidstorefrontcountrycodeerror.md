@@ -15,7 +15,7 @@ An error that indicates a storefront code is invalid.
 object InvalidStorefrontCountryCodeError
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`storefrontCountryCodes`](./storefrontcountrycodes.md) list you provide in the [`MassExtendRenewalDateRequest`](./massextendrenewaldaterequest.md) object for the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
 

@@ -24,7 +24,7 @@ var endpointAvailable: Bool { get }
 @property (nonatomic, readonly) BOOL endpointAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the content server is available.
 

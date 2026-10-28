@@ -19,7 +19,7 @@ func resignFocus()
 - (void) resignFocus;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you no longer want to receive crown events in the current crown sequencer. If the user taps a picker object or a scrollable scene in your interface, the system automatically removes the focus from any active crown sequencer.
 

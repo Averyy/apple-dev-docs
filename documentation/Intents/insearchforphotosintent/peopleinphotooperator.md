@@ -33,7 +33,7 @@ var peopleInPhotoOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator peopleInPhotoOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the photo must contain all, some, or none of the people listed in the [`peopleInPhoto`](./peopleinphoto.md) property.
 

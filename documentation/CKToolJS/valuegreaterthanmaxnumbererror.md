@@ -15,7 +15,7 @@ An error a validator emits when a given value is greater than the allowed maximu
 interface ValueGreaterThanMaxNumberError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueRangeError`.
 

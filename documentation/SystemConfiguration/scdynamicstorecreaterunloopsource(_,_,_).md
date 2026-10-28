@@ -19,11 +19,11 @@ func SCDynamicStoreCreateRunLoopSource(_ allocator: CFAllocator?, _ store: SCDyn
 CFRunLoopSourceRefSCDynamicStoreCreateRunLoopSource(CFAllocatorRef allocator, SCDynamicStoreRef store, CFIndex order);
 ```
 
-#### Return Value
+## Return Value
 
 The new run loop source object. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 Note that all dynamic store notifications are delivered using the run loop source this function returns.
 

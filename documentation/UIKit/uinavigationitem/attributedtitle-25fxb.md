@@ -18,7 +18,7 @@ An attributed string that the system renders as the title in the navigation bar.
 @preconcurrency var attributedTitle: AttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If [`titleView`](./titleview.md) is non-`nil`, the system ignores this property.
 

@@ -5,17 +5,17 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 16.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 16.2. The SDK comes bundled with Xcode 14.2. For information on the compatibility requirements for Xcode 14.2, see [Xcode 14.2 Release Notes](../Xcode-Release-Notes/xcode-14_2-release-notes.md).
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Disable animations of `NavigationStack` push and pop by wrapping path mutation in `withTransaction(transaction) { … }` where `transaction` has `disablesAnimations` set to `true`. (88993253)
 
-###### Deprecations
+#### Deprecations
 
 - In order to improve compiler type-checking performance, we’ve deprecated some `Table` initializers. They’re replaced with initializers which require an additional parameter that explicitly specifies the type they generate their contents from. This improves type-check performance by avoiding the need to infer a shared type from the bodies of separate closure parameters. For now, these initializers are deprecated. In a future release, those deprecation warnings will become errors. The new initializers add the parameter `of:`.
 

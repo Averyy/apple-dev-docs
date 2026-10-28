@@ -20,7 +20,7 @@ A Boolean value that indicates whether the track is decodable in the current env
 var isDecodable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the system can decode the track, even if decoding may be too slow for real-time playback.
 

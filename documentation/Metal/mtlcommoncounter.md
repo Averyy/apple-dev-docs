@@ -28,7 +28,7 @@ typedef NSString * const MTLCommonCounter;
 
 - [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
-#### Overview
+## Overview
 
 This type defines the constants that let a GPU device declare which counters it supports within a counter set. For more information, see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 

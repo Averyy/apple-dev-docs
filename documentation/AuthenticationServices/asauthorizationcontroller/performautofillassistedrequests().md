@@ -27,7 +27,7 @@ func performAutoFillAssistedRequests()
 - [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
 - [Supporting passkeys](../supporting-passkeys.md)
 
-#### Discussion
+## Discussion
 
 The authorization controller presents a user interface when a text field with the appropriate text content type obtains focus.
 

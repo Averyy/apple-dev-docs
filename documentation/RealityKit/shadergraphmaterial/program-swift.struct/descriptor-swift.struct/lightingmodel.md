@@ -20,7 +20,7 @@ The lighting model to use when rendering this material.
 var lightingModel: LightingModel
 ```
 
-#### Discussion
+## Discussion
 
 Must match the type of the surface output node in [`shaderGraph`](./shadergraph.md).
 

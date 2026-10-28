@@ -15,7 +15,7 @@ The item of this index path, when used with `NSCollectionView`.
 var item: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The index path must have exactly two elements.
 

@@ -19,11 +19,11 @@ typealias CFXMLParserHandleErrorCallBack = (CFXMLParser?, CFXMLParserStatusCode,
 typedef unsigned char (*)(struct __CFXMLParser *, enum CFXMLParserStatusCode, void *) CFXMLParserHandleErrorCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the parser should continue parsing the XML, `false` if the parser should stop.
 
-#### Discussion
+## Discussion
 
 If this callback is not defined, the parser will silently attempt to recover. Otherwise, this callback may return false to force the parser to stop. If this callback returns true, the parser will attempt to recover (fatal errors will still cause the parse to abort immediately). This callback is optional.
 

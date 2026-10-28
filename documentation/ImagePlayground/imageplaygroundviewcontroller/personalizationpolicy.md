@@ -22,7 +22,7 @@ The policy to apply when determining whether to include people in generated imag
 @preconcurrency var personalizationPolicy: ImagePlaygroundPersonalizationPolicy { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Personalization lets the view controller offer support for incorporating people into the images it generates. When enabled, the view controller allows someone to build images that include:
 

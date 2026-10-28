@@ -24,7 +24,7 @@ struct AssetPack
 
 - [Downloading Apple-hosted asset packs](./downloading-apple-hosted-asset-packs.md)
 
-#### Overview
+## Overview
 
 An instance of this structure can be invalidated when the asset pack that it represents is updated on the server.
 

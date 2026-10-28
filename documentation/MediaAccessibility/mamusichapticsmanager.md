@@ -24,7 +24,7 @@ class MAMusicHapticsManager
 @interface MAMusicHapticsManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`shared`](./mamusichapticsmanager/shared.md) instance of `MAMusicHapticsManager` to check information about the Music Haptics feature so you can respond accordingly in your app. For example, you can check whether Music Haptics is on, get a notification when it turns on or off, or check whether a haptic track is currently playing along with the Now Playing item.
 

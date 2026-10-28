@@ -26,7 +26,7 @@ func UIGraphicsBeginImageContext(_ size: CGSize)
 extern void UIGraphicsBeginImageContext(CGSize size);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling the [`UIGraphicsBeginImageContextWithOptions(_:_:_:)`](./uigraphicsbeginimagecontextwithoptions%28_,_,_%29.md) function with the opaque parameter set to [`false`](../Swift/false.md) and a scale factor of `1.0`.
 

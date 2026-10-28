@@ -24,7 +24,7 @@ var duration: TimeInterval { get set }
 @property (readwrite) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum duration of a continuous haptic event is 30 seconds.
 

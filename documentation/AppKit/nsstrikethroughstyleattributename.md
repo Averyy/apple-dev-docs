@@ -15,7 +15,7 @@ The strikethrough style of the text.
 extern NSAttributedStringKey NSStrikethroughStyleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer. This value indicates whether the text has a line through it and corresponds to one of the constants described in [`NSUnderlineStyle`](./nsunderlinestyle.md). The default value for this attribute is [`NSUnderlineStyleNone`](./nsunderlinestyle/nsunderlinestylenone.md).
 

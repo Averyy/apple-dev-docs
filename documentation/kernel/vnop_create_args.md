@@ -16,7 +16,7 @@ struct vnop_create_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_LOOKUP is the key pathway through which VFS asks a filesystem to find a file. The vnode should be returned with an iocount to be dropped by the caller. A VNOP_LOOKUP() calldown can come without a preceding VNOP_OPEN().
 

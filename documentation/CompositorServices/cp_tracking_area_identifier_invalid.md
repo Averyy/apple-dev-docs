@@ -16,7 +16,7 @@ Identifier reserved as invalid.
 static const cp_tracking_area_identifier cp_tracking_area_identifier_invalid;
 ```
 
-#### Discussion
+## Discussion
 
 Should not be used as identifier for [`addTrackingArea(identifier:)`](./layerrenderer/drawable/addtrackingarea%28identifier%29.md).
 

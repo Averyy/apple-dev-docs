@@ -24,7 +24,7 @@ var animations: [CAAnimation]? { get set }
 @property (copy, nullable) NSArray<CAAnimation *> * animations;
 ```
 
-#### Discussion
+## Discussion
 
 The animations run concurrently in the receiver’s time space.
 

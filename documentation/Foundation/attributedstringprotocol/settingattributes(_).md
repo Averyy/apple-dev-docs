@@ -21,7 +21,7 @@ Returns an attributed string by setting the attributed string’s attributes to 
 func settingAttributes(_ attributes: AttributeContainer) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string from setting the attributed string’s attributes to those in a specified attribute container.
 

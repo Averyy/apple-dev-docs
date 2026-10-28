@@ -22,7 +22,7 @@ class let touchBarTextItalicTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextItalicTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for italicize text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793518@2x.png)
 

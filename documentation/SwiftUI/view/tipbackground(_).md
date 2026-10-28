@@ -22,7 +22,7 @@ nonisolated
 func tipBackground<S>(_ style: S) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified style drawn behind it.
 

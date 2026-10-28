@@ -21,7 +21,7 @@ Constructs a group from the sections of the given view.
 init<Base, Result>(sections view: Base, @ContentBuilder transform: @escaping (SectionCollection) -> Result) where Content == GroupSectionsOfContent<Base, Result>, Base : View, Result : View
 ```
 
-#### Discussion
+## Discussion
 
 Sections are constructed lazily, on demand, so access only as much of this collection as is necessary to create the resulting content.
 

@@ -27,11 +27,11 @@ func addingPercentEscapes(using enc: UInt) -> String?
 - (NSString *) stringByAddingPercentEscapesUsingEncoding:(NSStringEncoding) enc;
 ```
 
-#### Return Value
+## Return Value
 
 A representation of the receiver using `encoding` to determine the percent escapes necessary to convert the receiver into a legal URL string. Returns `nil` if `encoding` cannot encode a particular character.
 
-#### Discussion
+## Discussion
 
 It may be difficult to use this function to “clean up” unescaped or partially escaped URL strings where sequences are unpredictable. See [`CFURLCreateStringByAddingPercentEscapes(_:_:_:_:_:)`](../../CoreFoundation/cfurlcreatestringbyaddingpercentescapes%28_,_,_,_,_%29.md) for more information.
 

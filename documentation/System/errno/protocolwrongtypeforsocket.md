@@ -25,7 +25,7 @@ static var protocolWrongTypeForSocket: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A protocol was specified that doesn’t support the semantics of the socket type requested. For example, you can’t use the ARPA Internet UDP protocol with type `SOCK_STREAM`.
 

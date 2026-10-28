@@ -23,7 +23,7 @@ var contentRect: CGRect { get }
 @property (nonatomic, readonly) CGRect contentRect;
 ```
 
-#### Discussion
+## Discussion
 
 In icon mode, the content rectangle is the undecorated rectangle, or frame, that the image sits in.
 

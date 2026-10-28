@@ -19,7 +19,7 @@ var searchButtonBounds: NSRect { get }
 @property (readonly) NSRect searchButtonBounds;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override `searchButtonBounds` for custom layout purposes.
 

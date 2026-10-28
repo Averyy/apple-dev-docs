@@ -5,7 +5,7 @@
 
 Customize your apps to deliver accessibility information to your users in measured portions as they need it.
 
-#### Overview
+## Overview
 
 The Custom Content API is useful for delivering accessibility information from complex data sets to your users in measured portions. Using this API allows you to leverage assistive technologies to present only the accessible content your app’s users need, when they need it.
 

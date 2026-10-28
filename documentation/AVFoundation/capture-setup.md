@@ -5,7 +5,7 @@
 
 Configure built-in cameras and microphones, and external capture devices, for media capture.
 
-#### Overview
+## Overview
 
 The AVFoundation Capture subsystem provides a common high-level architecture for video, photo, and audio capture services in iOS and macOS. Use this system if you want to:
 

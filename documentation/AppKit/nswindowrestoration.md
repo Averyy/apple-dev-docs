@@ -19,7 +19,7 @@ protocol NSWindowRestoration : NSObjectProtocol
 @protocol NSWindowRestoration <NSObject>
 ```
 
-#### Overview
+## Overview
 
 At launch time, the application object retrieves the restoration class and uses its [`restoreWindow(withIdentifier:state:completionHandler:)`](./nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md) method to obtain a new window whose type matches the type that was preserved previously. Classes that adopt this protocol can use the provided information to create (or obtain a reference to) the window in the new application. As part of creating the window, the class should also create any related objects, such as window controllers, normally used to manage the window.
 

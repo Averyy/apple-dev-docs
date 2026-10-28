@@ -19,7 +19,7 @@ func remove(contentsOf objects: [Any])
 - (void) removeObjects:(NSArray *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 See [`removeObject(_:)`](./removeobject%28_%29.md) for a discussion of the semantics of removing objects when using Core Data.
 

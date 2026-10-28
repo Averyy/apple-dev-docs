@@ -17,7 +17,7 @@ Standard or implementation-defined attention KV.
 case attention(maxSize: Int?)
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` `maxSize` is unbounded. A non-nil value describes a bounded custom cache that is not a [`RotatingKVCache`](../rotatingkvcache.md).
 

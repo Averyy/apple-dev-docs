@@ -22,7 +22,7 @@ optional func translate(_ sender: Any?)
 - (void) translate:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To present the standard system UI for translating text, call [`translate(text:from:)`](../betextinteraction/translate%28text,from%29.md) in your implementation of this method.
 

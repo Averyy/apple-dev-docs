@@ -19,7 +19,7 @@ func CTFontManagerGetAutoActivationSetting(_ bundleIdentifier: CFString?) -> CTF
 extern CTFontManagerAutoActivationSetting CTFontManagerGetAutoActivationSetting(CFStringRef bundleIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 The auto-activation setting for the specified bundle identifier. See [`CTFontManagerAutoActivationSetting`](./ctfontmanagerautoactivationsetting.md) for possible values.
 

@@ -15,13 +15,13 @@ Pagination state in change history list responses.
 object Pagination
 ```
 
-#### Discussion
+## Discussion
 
 The `Pagination` object is returned in the `pagination` field of [`BaseAuditResponse`](./baseauditresponse.md) (and its subtypes [`AuditSummaryResponse`](./auditsummaryresponse.md) and [`ChangeDetailsResponse`](./changedetailsresponse.md)).
 
 To page through results, increment `offset` by `pageSize` on each subsequent request until `offset >= totalCount`. When `needTotals` is `"false"` in the [`AuditQuery`](./auditquery.md) options, page forward instead until the response `result` array is empty.
 
-##### Example
+### Example
 
 ```json
 {

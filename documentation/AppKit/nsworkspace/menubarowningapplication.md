@@ -19,7 +19,7 @@ var menuBarOwningApplication: NSRunningApplication? { get }
 @property (strong, readonly, nullable) NSRunningApplication * menuBarOwningApplication;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the running app instance for the app that owns the displayed menu bar. This value is key-value observing compliant.
 

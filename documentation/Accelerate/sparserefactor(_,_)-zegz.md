@@ -25,7 +25,7 @@ func SparseRefactor(_ Matrix: SparseMatrix_Complex_Float, _ Factorization: Unsaf
 static void SparseRefactor(SparseMatrix_Complex_Float Matrix, SparseOpaqueFactorization_Complex_Float *Factorization);
 ```
 
-#### Discussion
+## Discussion
 
 `Matrix` must have the same non-zero structure as that used for the original factorization.
 

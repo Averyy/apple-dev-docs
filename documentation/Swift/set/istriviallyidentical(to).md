@@ -23,7 +23,7 @@ func isTriviallyIdentical(to other: Set<Element>) -> Bool
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Two set values are identical if there is no way to distinguish between them.
 

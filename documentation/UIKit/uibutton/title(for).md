@@ -23,7 +23,7 @@ func title(for state: UIControl.State) -> String?
 - (NSString *) titleForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The title for the specified state. If no title has been set for the specific state, this method returns the title associated with the [`normal`](../uicontrol/state-swift.struct/normal.md) state.
 

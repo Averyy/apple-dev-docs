@@ -22,7 +22,7 @@ init(placeholderItem: Any)
 - (instancetype) initWithPlaceholderItem:(id) placeholderItem;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized provider object.
 

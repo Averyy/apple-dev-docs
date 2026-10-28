@@ -19,7 +19,7 @@ A Boolean that indicates whether you include zero padding in the averaging calcu
 @property (nonatomic, readonly) BOOL countIncludesPadding;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Use only with average pooling.
 

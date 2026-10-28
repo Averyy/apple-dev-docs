@@ -24,7 +24,7 @@ case volatile
 MPSPurgeableStateVolatile
 ```
 
-#### Overview
+## Overview
 
 Use this value to indicate that a resource is volatile and, therefore, the system may purge the data if it needs to make more memory available. This value is equivalent to [`MTLPurgeableState.volatile`](../../Metal/mtlpurgeablestate/volatile.md).
 

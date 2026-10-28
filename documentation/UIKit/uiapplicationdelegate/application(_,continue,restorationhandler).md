@@ -25,11 +25,11 @@ optional func application(_ application: UIApplication, continue userActivity: N
 - (BOOL) application:(UIApplication *) application continueUserActivity:(NSUserActivity *) userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> *restorableObjects)) restorationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to indicate that your app handled the activity or [`false`](../../Swift/false.md) to let iOS know that your app didn’t handle the activity.
 
-#### Discussion
+## Discussion
 
 The app calls this method when it receives data associated with a user activity, for example, when the user transfers an activity from a different device using Handoff.
 
@@ -39,7 +39,7 @@ Calling the block in the `restorationHandler` is optional and only needed when s
 
 This method isn’t called if either [`application(_:willFinishLaunchingWithOptions:)`](./application%28_,willfinishlaunchingwithoptions%29.md) or [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md) returns [`false`](../../Swift/false.md).
 
-##### Handling Activities from SiriKit
+### Handling Activities from SiriKit
 
 This method is called whenever your app is launched to handle a SiriKit intent. Update your app’s user interface based on the `userActivity` parameter. Your app should seamlessly continue the interaction that began in Siri.
 

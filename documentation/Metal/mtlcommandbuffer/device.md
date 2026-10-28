@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 The command buffer can only work with other instances that [`device`](./device.md) creates, directly or indirectly, such as buffers and textures.
 

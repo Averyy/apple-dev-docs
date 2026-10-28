@@ -11,11 +11,11 @@ Frees all packets currently held in the queue and releases them back to the free
 virtual UInt32 flush();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets freed.
 
-#### Overview
+## Overview
 
 The size of the queue is cleared to zero.
 

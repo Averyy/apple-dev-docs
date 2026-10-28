@@ -25,7 +25,7 @@ func CMTimeCodeFormatDescriptionGetFrameDuration(_ timeCodeFormatDescription: CM
 extern CMTime CMTimeCodeFormatDescriptionGetFrameDuration(CMTimeCodeFormatDescriptionRef timeCodeFormatDescription);
 ```
 
-#### Return Value
+## Return Value
 
 The duration of each frame represented in `CMTime` format.
 

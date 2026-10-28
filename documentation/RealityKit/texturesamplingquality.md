@@ -18,7 +18,7 @@ A discrete trade-off between generation time and texture quality, used by [`Skyb
 enum TextureSamplingQuality
 ```
 
-#### Overview
+## Overview
 
 Higher quality reduces noise and banding at the cost of proportionally more GPU work.
 

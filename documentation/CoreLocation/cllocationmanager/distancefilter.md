@@ -29,13 +29,13 @@ var distanceFilter: CLLocationDistance { get set }
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 This location manager measures this relative to the previously delivered location. Specify the value [`kCLDistanceFilterNone`](../kcldistancefilternone.md) to receive notifications for all movements. The default value of this property is [`kCLDistanceFilterNone`](../kcldistancefilternone.md).
 
 Use this property only in conjunction with the Standard location services and not with the Significant-change or Visits services.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

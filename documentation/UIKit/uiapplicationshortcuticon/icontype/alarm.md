@@ -22,7 +22,7 @@ case alarm
 UIApplicationShortcutIconTypeAlarm
 ```
 
-#### Discussion
+## Discussion
 
 ![Alarm clock icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934533@2x.png)
 

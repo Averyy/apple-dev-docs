@@ -6,22 +6,25 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pu
 
 # mlx.core.put_along_axis
 
-**put_along_axis(*a: array*, */*, *indices: array*, *values: array*, *axis: int | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Put values along an axis at the specified indices.
+```python
+put_along_axis(a: array, /, indices: array, values: array, axis: int | None = None, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Put values along an axis at the specified indices.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Destination array.
-**indices** ([array](mlx.core.array.md#mlx.core.array)) – Indices array. These should be broadcastable with
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Destination array.
+- **indices** ([array](mlx.core.array.md#mlx.core.array)) – Indices array. These should be broadcastable with
 the input array excluding the axis dimension.
-**values** ([array](mlx.core.array.md#mlx.core.array)) – Values array. These should be broadcastable with
+- **values** ([array](mlx.core.array.md#mlx.core.array)) – Values array. These should be broadcastable with
 the indices.
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None*) – Axis in the destination to put the values to. If
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* *None*) – Axis in the destination to put the values to. If
 `axis == None` the destination is flattened prior to the put
 operation.
 
-Returns:
-The output array.
+**Returns:**
+: The output array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

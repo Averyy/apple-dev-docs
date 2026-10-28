@@ -19,7 +19,7 @@ func setBoundsRect(_ rect: NSRect, for block: NSTextBlock, glyphRange: NSRange)
 - (void) setBoundsRect:(NSRect) rect forTextBlock:(NSTextBlock *) block glyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation but not layout. Block layout rectangles and bounds rectangles are always in container coordinates.
 

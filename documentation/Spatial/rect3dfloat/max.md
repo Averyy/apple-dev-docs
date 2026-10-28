@@ -23,7 +23,7 @@ var max: Point3DFloat { get }
 static SPPoint3DFloat SPRect3DFloatGetMaximum(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a point that represents the corner of the rectangle with largest x-, y-, and z-coordinates.
 

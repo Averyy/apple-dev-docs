@@ -23,7 +23,7 @@ optional func textStorage(_ textStorage: NSTextStorage, didProcessEditing edited
 - (void) textStorage:(NSTextStorage *) textStorage didProcessEditing:(NSTextStorageEditActions) editedMask range:(NSRange) editedRange changeInLength:(NSInteger) delta;
 ```
 
-#### Discussion
+## Discussion
 
 Sent inside [`processEditing()`](../nstextstorage/processediting%28%29.md) right before notifying layout managers. Delegates can change the attributes.
 

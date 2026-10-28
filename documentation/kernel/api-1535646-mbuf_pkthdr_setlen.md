@@ -13,7 +13,7 @@
 void mbuf_pkthdr_setlen(mbuf_t mbuf, size_t len);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the length of the packet in the packet header.
 

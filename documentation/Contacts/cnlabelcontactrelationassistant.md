@@ -24,7 +24,7 @@ let CNLabelContactRelationAssistant: String
 extern NSString * const CNLabelContactRelationAssistant;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

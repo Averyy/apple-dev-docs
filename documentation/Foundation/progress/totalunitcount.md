@@ -25,7 +25,7 @@ var totalUnitCount: Int64 { get set }
 @property int64_t totalUnitCount;
 ```
 
-#### Discussion
+## Discussion
 
 For an [`Progress`](../progress.md) with a kind of [`file`](../progresskind/file.md), the unit of this property is bytes, and the [`fileTotalCountKey`](../progressuserinfokey/filetotalcountkey.md) and [`fileCompletedCountKey`](../progressuserinfokey/filecompletedcountkey.md) keys in the `userInfo` dictionary report the overall count of files.
 

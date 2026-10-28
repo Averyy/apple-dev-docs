@@ -21,7 +21,7 @@ static var split: UISplitArrangement { get }
 
 Available when `Self` is `UISplitArrangement`.
 
-#### Discussion
+## Discussion
 
 For more information about an overlay arrangement, see [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 

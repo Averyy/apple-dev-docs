@@ -20,7 +20,7 @@ optional func textView(_ textView: UITextView, willBeginFormattingWith viewContr
 - (void) textView:(UITextView *) textView willBeginFormattingWithViewController:(UITextFormattingViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Informs the delegate that text formatting controller is about to be presented.
 

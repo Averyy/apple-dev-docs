@@ -5,7 +5,7 @@
 
 Metadata keys for the Digital Negative (DNG) archival format.
 
-#### Overview
+## Overview
 
 For more information about the DNG format, see *Digital Negative (DNG) Specification* at [www.adobe.com](https://www.adobe.com).
 

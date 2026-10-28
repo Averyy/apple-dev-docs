@@ -19,7 +19,7 @@ A Boolean value that determines whether the accessory view is hidden when the ce
 @property (nonatomic) BOOL hidesAccessoryWhenEditing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

@@ -20,11 +20,11 @@ init(contentsOf fileURL: URL) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) fileURL error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized action.
 
-#### Discussion
+## Discussion
 
 This method is typically invoked by app that use the [`AMWorkflow`](../amworkflow.md) class to embed Automator workflows. It is used to allow creation of actions for a workflow.
 

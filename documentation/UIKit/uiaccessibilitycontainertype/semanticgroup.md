@@ -24,7 +24,7 @@ case semanticGroup
 UIAccessibilityContainerTypeSemanticGroup
 ```
 
-#### Discussion
+## Discussion
 
 Assistive technologies might query the accessibility properties set on the container, such as the `accessibilityLabel`, in order to output appropriate information about the semantic group to the user.
 

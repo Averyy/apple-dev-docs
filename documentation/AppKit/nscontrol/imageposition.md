@@ -19,7 +19,7 @@ enum ImagePosition
 enum NSCellImagePosition : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`imagePosition`](../nsbutton/imageposition.md) property of [`NSButton`](../nsbutton.md) and [`NSButtonCell`](../nsbuttoncell.md).
 

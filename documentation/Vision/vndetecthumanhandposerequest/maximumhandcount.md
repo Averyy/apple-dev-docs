@@ -24,7 +24,7 @@ var maximumHandCount: Int { get set }
 @property (assign, readwrite) NSUInteger maximumHandCount;
 ```
 
-#### Discussion
+## Discussion
 
 The request orders detected hands by relative size, with only the largest ones having key points determined.
 

@@ -9,7 +9,7 @@ Get the information for a specific device management service.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

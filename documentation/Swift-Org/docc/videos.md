@@ -22,7 +22,7 @@ Displays a set of video links in the resources section of a tutorial’s table o
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Videos` directive to add links to related videos in the Resources section at the bottom of your tutorial’s table of contents page.
 
@@ -68,7 +68,7 @@ A “Watch videos” link with additional specific video links:
 
 You can include video links alongside other types of resources, like [`Documentation`](./documentation.md),  [`Downloads`](./downloads.md), [`Forums`](./forums.md), and [`SampleCode`](./samplecode.md).
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain video resources:
 

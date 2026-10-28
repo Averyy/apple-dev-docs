@@ -26,11 +26,11 @@ func frame(minWidth: CGFloat? = nil, idealWidth: CGFloat? = nil, maxWidth: CGFlo
 
 - [Creating performant scrollable stacks](../creating-performant-scrollable-stacks.md)
 
-#### Return Value
+## Return Value
 
 A view with flexible dimensions given by the call’s non-`nil` parameters.
 
-#### Discussion
+## Discussion
 
 Always specify at least one size characteristic when calling this method. Pass `nil` or leave out a characteristic to indicate that the frame should adopt this view’s sizing behavior, constrained by the other non-`nil` arguments.
 

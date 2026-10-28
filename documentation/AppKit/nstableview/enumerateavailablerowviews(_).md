@@ -19,7 +19,7 @@ func enumerateAvailableRowViews(_ handler: (NSTableRowView, Int) -> Void)
 - (void) enumerateAvailableRowViewsUsingBlock:(void (^)(NSTableRowView *rowView, NSInteger row)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The enumeration includes all views in the [`visibleRect`](../nsview/visiblerect.md); however, it may also include ones that are “in flight” due to animations or other attributes of the table.
 

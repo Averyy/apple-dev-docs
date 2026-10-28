@@ -21,7 +21,7 @@ A set of headroom-adaptive gain curves and the chromaticities used to drive them
 struct AdaptiveGainCurve
 ```
 
-#### Overview
+## Overview
 
 Each [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve`](./alternatecurve.md) targets a different display headroom; the renderer selects the curve closest to the display’s actual headroom.
 

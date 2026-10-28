@@ -20,7 +20,7 @@ An invisible material that hides objects rendered behind it.
 struct OcclusionMaterial
 ```
 
-#### Overview
+## Overview
 
 Add an `OcclusionMaterial` to a model by setting it as one of the [`materials`](./modelcomponent/materials.md) in a [`ModelComponent`](./modelcomponent.md).
 

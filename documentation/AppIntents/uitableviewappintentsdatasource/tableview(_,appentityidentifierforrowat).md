@@ -21,11 +21,11 @@ Asks the data source to return an app entity identifier for a cell at a particul
 func tableView(_ tableView: UITableView, appEntityIdentifierForRowAt indexPath: IndexPath) -> EntityIdentifier?
 ```
 
-#### Return Value
+## Return Value
 
 The app entity identifier for the item at the specified location in the table view.
 
-#### Discussion
+## Discussion
 
 For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../AppIntents.md).
 

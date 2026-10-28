@@ -21,7 +21,7 @@ Computes element-wise logical OR where both operands are expected contain Boolea
 static func .| (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

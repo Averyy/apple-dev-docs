@@ -25,7 +25,7 @@ var entity: NSEntityDescription { get }
 @property (nonatomic, strong, readonly) NSEntityDescription * entity;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a fault, accessing this property does not cause it to fire.
 

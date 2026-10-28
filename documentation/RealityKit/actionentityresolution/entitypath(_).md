@@ -20,7 +20,7 @@ An option that resolves an entity by specifying a bind path relative to the enti
 case entityPath(BindTarget.EntityPath)
 ```
 
-#### Discussion
+## Discussion
 
 Use this to resolve a `BindTarget.EntityPath` from the entity playing the action. The targeted entity will have the action applied to it.
 

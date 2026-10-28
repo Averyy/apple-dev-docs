@@ -19,7 +19,7 @@ A time duration, in seconds, the training session uses for each audio sample it 
 var featureExtractionTimeWindowSize: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The time-window size value defaults to `0.975` seconds and must be in the range `[0.5, 15.0]`.
 

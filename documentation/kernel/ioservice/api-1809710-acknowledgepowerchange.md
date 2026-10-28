@@ -12,11 +12,11 @@ IOReturn acknowledgePowerChange(
  IOService *whichDriver );
 ```
 
-#### Return Value
+## Return Value
 
 `IOPMNoErr`.
 
-#### Overview
+## Overview
 
 When power management informs an interested object (via powerStateWillChangeTo or powerStateDidChangeTo), the object can return an immediate acknowledgement via a return code, or it may return an indication that it will acknowledge later by calling `acknowledgePowerChange`. Interested objects are those that have registered as interested drivers, as well as power plane children of the power changing driver. A driver that calls registerInterestedDriver must call `acknowledgePowerChange`, or use an immediate acknowledgement return from `powerStateWillChangeTo` or `powerStateDidChangeTo`.
 

@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `Double` or isn’t castable t
 interface ValueNotDoubleError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

@@ -24,7 +24,7 @@ func finishLoading()
 - (void) finishLoading;
 ```
 
-#### Discussion
+## Discussion
 
 If a [`dataRequest`](./datarequest.md) is present and the resource does not contain the full extent of the data that has been requested according to the values of the [`requestedOffset`](../avassetresourceloadingdatarequest/requestedoffset.md) and [`requestedLength`](../avassetresourceloadingdatarequest/requestedlength.md) properties of the request, invoke `finishLoading` after providing as much of the requested data as the resource contains.
 

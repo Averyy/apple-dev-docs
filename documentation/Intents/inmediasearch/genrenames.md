@@ -32,7 +32,7 @@ var genreNames: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * genreNames;
 ```
 
-#### Discussion
+## Discussion
 
 The following tables contain genres the user can search for. The information in the tables may not be exhaustive and is subject to change without notice.
 

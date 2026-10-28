@@ -17,11 +17,11 @@ Promise<CloudKit.RecordInfosResponse, CKError> fetchRecordInfos(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](../cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to show details about a record to a user before asking them to accept a share.
 

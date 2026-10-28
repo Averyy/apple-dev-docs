@@ -19,11 +19,11 @@ func vR64Rotate2(_ vA: vUInt32, _ vRotateFactor: vUInt8) -> vUInt32
 extern vUInt32 vR64Rotate2(vUInt32 vA, vUInt8 vRotateFactor);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the shifted vector.
 
-#### Discussion
+## Discussion
 
 This function treats the vector as a pair of 64-bit values to rotate.
 

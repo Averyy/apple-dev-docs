@@ -19,7 +19,7 @@ var ioSize: Int { get set }
 @property NSInteger ioSize;
 ```
 
-#### Discussion
+## Discussion
 
 For best performance, specify an `ioSize` that’s an even multiple of [`blockSize`](./blocksize.md).
 

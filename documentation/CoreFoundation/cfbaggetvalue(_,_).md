@@ -25,11 +25,11 @@ func CFBagGetValue(_ theBag: CFBag!, _ value: UnsafeRawPointer!) -> UnsafeRawPoi
 extern const void *CFBagGetValue(CFBagRef theBag, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to `value`, or `NULL` if `value` is not in `theBag`. If the value is a Core Foundation object, ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 Depending on the implementation of the equal callback specified when creating `theBag`, the value returned may not have the same pointer equality as `value`.
 

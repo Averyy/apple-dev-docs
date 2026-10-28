@@ -29,7 +29,7 @@ NSURLRequestReturnCacheDataDontLoad
 
 - [Accessing cached data](../../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 If there is no existing data in the cache corresponding to a URL load request, no attempt is made to load the data from the originating source, and the load is considered to have failed. This constant specifies a behavior that is similar to an “offline” mode.
 

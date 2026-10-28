@@ -19,7 +19,7 @@ Apply chat template to messages and return token IDs.
 func applyChatTemplate(messages: [[String : String]]) async throws -> [Int]
 ```
 
-#### Return Value
+## Return Value
 
 Array of token IDs
 

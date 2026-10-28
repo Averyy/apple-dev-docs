@@ -24,11 +24,11 @@ A protocol for decoding string configuration values into byte arrays.
 protocol ConfigBytesFromStringDecoder : Sendable
 ```
 
-#### Overview
+## Overview
 
 This protocol defines the interface for converting string-based configuration values into binary data. Different implementations can support various encoding formats such as base64, hexadecimal, or other custom encodings.
 
-#### Usage
+## Usage
 
 Implementations of this protocol are used by configuration providers that need to convert string values to binary data, such as cryptographic keys, certificates, or other binary configuration data.
 

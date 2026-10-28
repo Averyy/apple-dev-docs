@@ -16,7 +16,7 @@ An event handler to call when the user selects a shipping method.
 attribute EventHandler onshippingmethodselected;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function that accepts an `events` argument; for example, `session.onshippingmethodselected = function(event) {}`.
 

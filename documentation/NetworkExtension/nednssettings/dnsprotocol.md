@@ -24,7 +24,7 @@ var dnsProtocol: NEDNSProtocol { get }
 @property (readonly) NEDNSProtocol dnsProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, an [`NEDNSSettings`](../nednssettings.md) object will use [`NEDNSProtocol.cleartext`](../nednsprotocol/cleartext.md). In order to use encryption, create an [`NEDNSOverHTTPSSettings`](../nednsoverhttpssettings.md) or [`NEDNSOverTLSSettings`](../nednsovertlssettings.md) object.
 

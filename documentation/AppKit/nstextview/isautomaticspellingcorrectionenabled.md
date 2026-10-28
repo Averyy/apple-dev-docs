@@ -19,7 +19,7 @@ var isAutomaticSpellingCorrectionEnabled: Bool { get set }
 @property (getter=isAutomaticSpellingCorrectionEnabled) BOOL automaticSpellingCorrectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if it is enabled, otherwise [`false`](../../Swift/false.md).
 

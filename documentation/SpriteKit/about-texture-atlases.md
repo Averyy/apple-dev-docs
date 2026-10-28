@@ -5,7 +5,7 @@
 
 Learn about the benefits of having a texture atlas, and the process for using it.
 
-#### Overview
+## Overview
 
 In most cases, a SpriteKit texture atlas is created automatically by the Xcode build system after you put multiple images in an `.atlas` file in the app bundle. Then, you access those images at runtime using [`textureNamed(_:)`](./sktextureatlas/texturenamed%28_%29.md).
 
@@ -14,13 +14,13 @@ The benefits are:
 1. Minimized bundle size.
 2. Maximized runtime perfomance when rendering more than one of the atlas’s textures at the same time, because SpriteKit is able to effectively render them at the same time.
 
-##### Creating a Texture Atlas
+### Creating a Texture Atlas
 
 You create texture atlases using Xcode. Add a folder with the `.atlas` extension to your project and place the artwork to be included in the atlas inside this folder. Xcode builds a texture atlas from the artwork and adds it to the app bundle. The format for a compiled texture atlas is private and subject to change.
 
 For more information about creating texture atlases, see [Use texture atlases to improve performance](https://help.apple.com/xcode/mac/current/#/dev0bfaf1ab7).
 
-##### Loading Textures from a Texture Atlas
+### Loading Textures from a Texture Atlas
 
 Creating a texture using [`init(imageNamed:)`](./sktexture/init%28imagenamed%29.md) will create a new [`SKTexture`](./sktexture.md) object from an image file in a texture atlas if one is available.
 
@@ -52,7 +52,7 @@ NSArray *monsterWalkTextures = @[f1,f2,f3,f4];
 
 Whether your project uses a texture atlas or a sprite atlas, the code used to load assets is identical.
 
-##### Creating a Texture Atlas at Runtime
+### Creating a Texture Atlas at Runtime
 
 In Swift, provide a dictionary that points to the various image files that should be part of the atlas. The following code shows how you can create an [`SKTextureAtlas`](./sktextureatlas.md) object using the [`init(dictionary:)`](./sktextureatlas/init%28dictionary%29.md) from three image files. The initializer doesn’t allow for optional values in the dictionary, so a guard statement is used to ensure that all of the images exist.
 
@@ -70,7 +70,7 @@ let textureAtlas = SKTextureAtlas(dictionary: ["panda": pandaImage,
 
 In Objective-C, texture atlas objects can be created at runtime by providing a dictionary that points to the various image files that should be part of the atlas.
 
-##### Creating a Sprite Atlas
+### Creating a Sprite Atlas
 
 A sprite atlas offers the advantages of a texture atlas with the management functionality of an asset catalog. For example, if you supply assets with different resolutions for different devices, sprite atlases support app thinning, and your users will only download the required images.
 
@@ -78,7 +78,7 @@ You create a sprite atlas using Xcode. First add a new asset catalog to your pro
 
 The process is described in detail in [Create asset catalogs and sets](https://help.apple.com/xcode/mac/current/#/dev10510b1f7). In this document, the term *texture atlas* can refer to either a sprite atlas or a texture atlas.
 
-##### Deciding on Texture Count and Size
+### Deciding on Texture Count and Size
 
 To get the most out of a texture atlas, pack it full of textures you’ll be using simultaneously. But be aware that you need a balance between too many textures and too few.
 

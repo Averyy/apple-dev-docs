@@ -5,7 +5,7 @@
 
 Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
 
-#### Overview
+## Overview
 
 The Project navigator displays your project’s files and lets you open, add, delete, and rearrange those files. To open the Project navigator, at the top of your project window’s navigator area, click the icon that resembles a file folder.
 
@@ -19,7 +19,7 @@ To locate files based on keywords or other criteria, use the filter bar at the b
 - To show only recently modified files, click the Recent Files icon.
 - To show only files with a changed source-control status, click the Source Control icon.
 
-##### Add new files to a project
+### Add new files to a project
 
 Xcode provides templates for the common types of files you might want to add to your project, such as Swift files or playgrounds. In the Project navigator, select the folder or group where you want to add a file and perform one of the following actions:
 
@@ -37,7 +37,7 @@ The final step is to save your file to the file system. When Xcode prompts you f
 
 ![A sheet shows the options for copying files, creating groups, and adding files to an existing target.](https://developer.apple.com/tutorials/images/com.apple.Xcode/files-add-existing@2x.png)
 
-##### Add existing files and folders to a project
+### Add existing files and folders to a project
 
 Xcode offers several ways to add existing files and folders to your project. You can:
 
@@ -65,7 +65,7 @@ For more information about managing Swift packages, see [Swift packages](./swift
 
 > **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [Composing interactive 3D content with RealityKit and Reality Composer Pro](../RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md).
 
-##### Organize project files in the navigator
+### Organize project files in the navigator
 
 Most new projects contain some structure to organize the project’s content — for example, to separate source files from generated products. You can create additional groups and folders to organize your content and make it easier to navigate large projects.
 
@@ -85,14 +85,14 @@ In the Project navigator, create and modify groups using direct interaction or m
 
 > ❗ **Important**: If a group is associated with a folder, Xcode performs all rename, delete, move, and copy operations on the folder in the file system. For projects under source control, Xcode uses the source-control system to perform the operations and track the changes. If you move files between groups in the same Git repository, Xcode moves the files in the file system. If the files are in different repositories, Xcode copies the files into the folder in the new repository.
 
-##### Delete files and folders
+### Delete files and folders
 
 To delete a file or folder from your project, select it and press the Delete key, or select Edit > Delete. Xcode prompts you to choose how to delete any selected items.
 
 - **Move to Trash**: This option removes files and folders from your project and the file system. Choose this option when you no longer need the information in the files.
 - **Remove Reference**: This option removes files and folders only from your project. Xcode doesn’t remove them from the file system.
 
-##### Convert groups to folders
+### Convert groups to folders
 
 There are several benefits to using folders instead of groups when organizing your Xcode project files. Folders have a much smaller representation in the project file, which can result in fewer merge conflicts because when you add or remove files to the project you don’t modify the project file. Additionally, your Xcode project file automatically updates as you make changes to the file system.
 

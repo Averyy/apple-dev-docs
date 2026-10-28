@@ -25,7 +25,7 @@ func setFragmentBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 - (void) setFragmentBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method if you create an indirect command buffer with its [`inheritBuffers`](../mtlindirectcommandbufferdescriptor/inheritbuffers.md) equal to [`true`](../../Swift/true.md). The command gets the arguments from the parent encoder when it runs.
 

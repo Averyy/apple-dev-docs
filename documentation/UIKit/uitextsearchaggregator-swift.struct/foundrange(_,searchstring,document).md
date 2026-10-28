@@ -18,7 +18,7 @@ Adds a text range to the set of matches.
 func foundRange(_ range: UITextRange, searchString: String, document: DocumentIdentifier)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to add a text range found in your document to the set of matches.
 

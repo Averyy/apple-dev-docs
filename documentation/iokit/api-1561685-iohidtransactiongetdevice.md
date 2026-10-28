@@ -16,7 +16,7 @@ Obtain the device associated with the transaction.
 IOHIDDeviceRef IOHIDTransactionGetDevice(IOHIDTransactionRef transaction);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the a reference to the device.
 

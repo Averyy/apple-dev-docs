@@ -21,7 +21,7 @@ An image associated with the map feature.
 var image: Image? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this feature doesn’t have an associated image, this property is `nil`.
 

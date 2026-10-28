@@ -24,7 +24,7 @@ case longFormAudio
 AVAudioSessionRouteSharingPolicyLongFormAudio
 ```
 
-#### Discussion
+## Discussion
 
 Apps that play long-form audio, such as music or audio books, can use this policy to play to the same output as the built-in Music and Podcast apps. Long-form audio apps should also use the [Media Player](../../../MediaPlayer/MediaPlayer.md) framework to add support for remote control events and to provide Now Playing information.
 

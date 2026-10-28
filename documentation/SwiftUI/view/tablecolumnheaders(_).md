@@ -20,7 +20,7 @@ nonisolated
 func tableColumnHeaders(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, `Table` will display a global header view with the labels of each table column. This area is also where users can sort, resize, and rearrange the columns. For simple cases that don’t require those features, this header can be hidden.
 

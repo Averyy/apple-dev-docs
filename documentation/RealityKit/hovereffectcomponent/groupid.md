@@ -19,7 +19,7 @@ A struct for grouping hover effects together.
 struct GroupID
 ```
 
-#### Overview
+## Overview
 
 Use this struct to group hover effects together and activate them at the same time from a single input. Hover effects in a group will not respond to the default hierarchical system behaviors.
 

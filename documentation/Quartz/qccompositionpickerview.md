@@ -21,7 +21,7 @@ class QCCompositionPickerView
 @interface QCCompositionPickerView : NSView
 ```
 
-#### Overview
+## Overview
 
 Note that the composition picker view does not automatically refresh its content when the composition repository is updated. It’s your responsibility to perform any necessary updating.
 

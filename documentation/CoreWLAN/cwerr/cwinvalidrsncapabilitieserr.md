@@ -17,7 +17,7 @@ case cwInvalidRSNCapabilitiesErr
 kCWInvalidRSNCapabilitiesErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid RSN capabilities specified in association request.
 

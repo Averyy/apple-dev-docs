@@ -23,7 +23,7 @@ var stateHash: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * stateHash;
 ```
 
-#### Discussion
+## Discussion
 
 ```
      the list of paired companions has not changed.

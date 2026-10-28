@@ -15,7 +15,7 @@ Function for enumerating a collection of camera region anchors.
 typedef _Bool (*)(void *, NSObject<OS_ar_camera_region_anchor> *) ar_camera_region_anchors_enumerator_function_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

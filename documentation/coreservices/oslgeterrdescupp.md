@@ -20,7 +20,7 @@ typealias OSLGetErrDescUPP = OSLGetErrDescProcPtr
 typedef OSLGetErrDescProcPtr OSLGetErrDescUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a get error descriptor callback function, see [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md). 
 

@@ -19,11 +19,11 @@ var usesAlternatingRowBackgroundColors: Bool { get set }
 @property BOOL usesAlternatingRowBackgroundColors;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the table view uses standard alternating row colors for the background, [`false`](../../Swift/false.md) if it uses a solid color.
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the table uses the standard alternating row colors for the background. When the value is [`false`](../../Swift/false.md), the table view uses a single solid color for the background.
 

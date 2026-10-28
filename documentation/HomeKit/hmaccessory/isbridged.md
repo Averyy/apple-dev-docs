@@ -24,7 +24,7 @@ var isBridged: Bool { get }
 @property (nonatomic, readonly, getter=isBridged) BOOL bridged;
 ```
 
-#### Discussion
+## Discussion
 
 A bridge is a special type of accessory that allows you to communicate with accessories that can’t communicate directly with HomeKit. For example, a bridge might be a hub for multiple lights that use a communication protocol other than HomeKit Accessory Protocol.
 

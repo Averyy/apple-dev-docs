@@ -13,11 +13,11 @@ virtual bool willTerminate(
  IOOptionBitsoptions );
 ```
 
-#### Return Value
+## Return Value
 
 `true`.
 
-#### Overview
+## Overview
 
 Notification that a provider has been terminated, sent before recursing up the stack, in root-to-leaf order.
 

@@ -17,7 +17,7 @@ A type-erased view representing the icon of the family activity.
 @preconcurrency struct FamilyActivityIconView
 ```
 
-#### Overview
+## Overview
 
 Family Controls uses this type as a generic constraint for the `Icon` of the [`Label`](../SwiftUI/label.md) instances it creates.
 

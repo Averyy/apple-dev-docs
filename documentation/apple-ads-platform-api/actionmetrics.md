@@ -15,11 +15,11 @@ Action count metrics breakdown by attribution type.
 object ActionMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `ActionMetrics` object is used within brands metrics to report action counts segmented by how the action was attributed. Each field on this object corresponds to one attribution category. Currently, `tap` is the only defined field. Future API versions may add additional attribution types.
 
-##### Example
+### Example
 
 ```json
 {

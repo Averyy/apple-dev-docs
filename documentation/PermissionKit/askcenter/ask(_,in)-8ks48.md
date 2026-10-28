@@ -17,7 +17,7 @@ Tells the system to request that a person send the the significant app update pe
 final func ask(_ question: PermissionQuestion<SignificantAppUpdateTopic>, in viewController: UIViewController) async throws
 ```
 
-#### Overview
+## Overview
 
 Throws an error if the system is unable to request to send the question.
 

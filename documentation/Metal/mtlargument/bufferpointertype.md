@@ -24,7 +24,7 @@ var bufferPointerType: MTLPointerType? { get }
 @property (readonly, nullable) MTLPointerType * bufferPointerType;
 ```
 
-#### Discussion
+## Discussion
 
 This property describes the type of the pointer to the buffer.
 

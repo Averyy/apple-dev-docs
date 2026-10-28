@@ -19,11 +19,11 @@ func visibleItems() -> [NSCollectionViewItem]
 - (NSArray<NSCollectionViewItem *> *) visibleItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSCollectionViewItem`](../nscollectionviewitem.md) objects. The returned array may be empty.
 
-#### Discussion
+## Discussion
 
 The items returned by this method represent the ones that are active and currently being managed by the collection view. This array may contain items that are outside of the collection view’s actual visible rectangle. For example, it may contain items that were recently visible but have since been scrolled out of view. To test whether an item is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 

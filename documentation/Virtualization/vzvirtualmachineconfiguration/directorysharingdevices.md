@@ -19,7 +19,7 @@ var directorySharingDevices: [VZDirectorySharingDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZDirectorySharingDeviceConfiguration *> * directorySharingDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more directory sharing devices, assign an array of [`VZDirectorySharingDeviceConfiguration`](../vzdirectorysharingdeviceconfiguration.md) objects to this property.
 

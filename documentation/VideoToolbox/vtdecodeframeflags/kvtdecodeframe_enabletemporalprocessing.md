@@ -20,7 +20,7 @@ A flag that indicates to enable temporal processing.
 kVTDecodeFrame_EnableTemporalProcessing
 ```
 
-#### Discussion
+## Discussion
 
 With this bit cleared, the video decoder should emit every frame once that frame’s decoding is done–frames may not be delayed indefinitely.  With the bit set, it is legal for the decoder to delay frames indefinitely–at least until [`VTDecompressionSessionFinishDelayedFrames(_:)`](../vtdecompressionsessionfinishdelayedframes%28_%29.md) or [`VTDecompressionSessionInvalidate(_:)`](../vtdecompressionsessioninvalidate%28_%29.md) is called.
 

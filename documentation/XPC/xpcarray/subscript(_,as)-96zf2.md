@@ -21,7 +21,7 @@ Get a value in this array as data.
 subscript(index: Int, as type: RawSpan.Type = RawSpan.self) -> RawSpan? { get }
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the data or `nil` if no such value was found.
 

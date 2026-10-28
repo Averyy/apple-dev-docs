@@ -21,11 +21,11 @@ Modifies the format style to use the specified precision.
 func precision(_ p: Decimal.FormatStyle.Percent.Configuration.Precision) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified precision.
 
-#### Discussion
+## Discussion
 
 The [`NumberFormatStyleConfiguration.Precision`](../../../numberformatstyleconfiguration/precision.md) type lets you specify a fixed number of digits to show for a number’s integer and fractional part.
 

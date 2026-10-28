@@ -31,7 +31,7 @@ var conversationIdentifiers: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * conversationIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more strings, your search should return only messages with conversation IDs matching the specified identifiers. The value of the [`conversationIdentifiersOperator`](./conversationidentifiersoperator.md) property determines whether searches should be for all, some, or none of the specified conversation identifiers.
 

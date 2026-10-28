@@ -25,7 +25,7 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool, encoding enc:
 - (BOOL) writeToFile:(NSString *) path atomically:(BOOL) useAuxiliaryFile encoding:(NSStringEncoding) enc error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method overwrites any existing file at `path`.
 

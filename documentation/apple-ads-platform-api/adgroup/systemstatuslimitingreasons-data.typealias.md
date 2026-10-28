@@ -21,11 +21,11 @@ string AdGroup.SystemStatusLimitingReasons
 - `LOCATION_GROUP_ISSUES`: The ad group’s location group targeting has issues that limit delivery.
 - `ADS_LIMITED`: One or more ads in the ad group are limited, reducing overall delivery.
 
-#### Discussion
+## Discussion
 
 These reasons can stem from the ad group’s own location targeting or cascade up from limited ads within it, as with `ADS_LIMITED`.
 
-##### Example
+### Example
 
 ```json
 {

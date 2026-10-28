@@ -16,7 +16,7 @@ The main entry point for receiving data from ARKit.
 final class ARKitSession
 ```
 
-#### Overview
+## Overview
 
 Sessions in ARKit require either implicit or explicit authorization. To explicitly ask for permission for a particular kind of data and choose when a person is prompted for that permission, call [`requestAuthorization(for:)`](./arkitsession/requestauthorization%28for%29.md) before [`run(_:)`](./arkitsession/run%28_%29.md).
 

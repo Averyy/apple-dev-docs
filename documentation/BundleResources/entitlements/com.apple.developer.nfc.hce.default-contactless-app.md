@@ -15,7 +15,7 @@ A Boolean value indicating whether your app can be a default app for contactless
 - **Name**: `com.apple.developer.nfc.hce.default-contactless-app`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 A value of `YES` indicates a person can use the iOS settings app to set this app as a default NFC contactless app.
 

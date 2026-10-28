@@ -25,11 +25,11 @@ static func multiply<T, U>(subtraction: (a: T, b: U), _ scalar: Float) -> [Float
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector `D` in `D = (A - B) * C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise difference of vectors `A` and `B`, multiplies the difference by scalar value `C`, and writes the result to vector `D`, as follows:
 

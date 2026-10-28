@@ -25,7 +25,7 @@ func activate(_ paymentPass: PKPaymentPass, withActivationCode activationCode: S
 - (void) activatePaymentPass:(PKPaymentPass *) paymentPass withActivationCode:(NSString *) activationCode completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You can only activate a provisioned pass, and it must be in the [`PKPaymentPassActivationState.requiresActivation`](../pkpaymentpassactivationstate/requiresactivation.md) state.
 

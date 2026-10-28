@@ -19,11 +19,11 @@ func SKIndexRenameDocument(_ inIndex: SKIndex!, _ inDocument: SKDocument!, _ inN
 Boolean SKIndexRenameDocument(SKIndexRef inIndex, SKDocumentRef inDocument, CFStringRef inNewName);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` if the document URL object name was successfully changed, or `false` on failure.
 
-#### Discussion
+## Discussion
 
 When your application changes the name of a document, use this function to update the index to reflect the change.
 

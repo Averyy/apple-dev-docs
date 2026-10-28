@@ -20,7 +20,7 @@ A Boolean value that controls whether subscribing to the event suppresses automa
 var suppressesAutomaticApplication: Bool { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true` — while the event has subscribers, the system doesn’t apply the delta automatically and the subscriber takes over. Set to `false` to keep automatic application in place while still observing the event.
 

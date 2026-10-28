@@ -25,7 +25,7 @@ var kvImageHDRContent: Int { get }
 kvImageHDRContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag in order to provide correct results for input images with pixel values outside the otherwise limited (typically `[-2,2]`) range.
 

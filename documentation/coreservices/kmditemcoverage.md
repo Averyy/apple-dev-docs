@@ -19,7 +19,7 @@ let kMDItemCoverage: CFString!
 const CFStringRef kMDItemCoverage;
 ```
 
-#### Discussion
+## Discussion
 
 Coverage will typically include spatial location (a place name or geographic co-ordinates), temporal period (a period label, date, or date range) or jurisdiction (such as a named administrative entity). 
 

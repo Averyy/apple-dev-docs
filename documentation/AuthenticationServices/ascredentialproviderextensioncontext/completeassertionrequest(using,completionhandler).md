@@ -27,7 +27,7 @@ func completeAssertionRequest(using credential: ASPasskeyAssertionCredential) as
 - (void) completeAssertionRequestWithSelectedPasskeyCredential:(ASPasskeyAssertionCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The synchronous version of this method calls its completion handler with [`background`](../../Dispatch/dispatchqos/background.md) priority.
 

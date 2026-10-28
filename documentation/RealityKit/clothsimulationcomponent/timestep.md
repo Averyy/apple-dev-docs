@@ -17,7 +17,7 @@ The amount of time the simulation advances each time step, in seconds.
 var timeStep: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A smaller number means more time steps are computed each frame, leading to higher simulation accuracy but also higher computation load.
 

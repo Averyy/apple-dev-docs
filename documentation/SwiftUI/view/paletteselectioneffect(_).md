@@ -20,7 +20,7 @@ nonisolated
 func paletteSelectionEffect(_ effect: PaletteSelectionEffect) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 [`automatic`](../paletteselectioneffect/automatic.md) applies the system’s default appearance when selected. When using un-tinted SF Symbols or template images, the current tint color is applied to the selected items’ image. If the provided SF Symbols have custom tints, a stroke is drawn around selected items.
 

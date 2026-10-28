@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Kind**: econst
 
-#### Overview
+## Overview
 
 In response to this request code, your CMM must extract the profile data from the profile to flatten, identified by the `prof` parameter, and pass the profile data to the function specified in the `proc` parameter. For more information, see the function [CMFlattenProfile](../api-1804897-cmflattenprofile.md). 
 

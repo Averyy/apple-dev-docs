@@ -23,7 +23,7 @@ var translation: CGVector { get }
 @property (nonatomic, readonly) CGVector translation;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents an X,Y-axis translation expressed in points.
 

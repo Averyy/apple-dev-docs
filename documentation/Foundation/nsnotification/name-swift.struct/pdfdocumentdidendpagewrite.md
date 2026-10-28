@@ -20,7 +20,7 @@ A notification that a write operation finishes working on a page in a document.
 static let PDFDocumentDidEndPageWrite: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself. To determine the page, use the `@”PDFDocumentPageIndex”` key to obtain userinfo of type `NSNumber`.
 

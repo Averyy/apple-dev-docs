@@ -23,7 +23,7 @@ class func current() -> UITextInputContext!
 + (UITextInputContext *) current;
 ```
 
-#### Return Value
+## Return Value
 
 The shared text input context object.
 

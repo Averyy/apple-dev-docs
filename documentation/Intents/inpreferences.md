@@ -28,7 +28,7 @@ class INPreferences
 
 - [Requesting Authorization to Use Siri](../SiriKit/requesting-authorization-to-use-siri.md)
 
-#### Overview
+## Overview
 
 Use the class methods of [`INPreferences`](./inpreferences.md) to perform tasks related to the use of SiriKit. An iOS app must request authorization to use SiriKit before Siri or Maps are allowed to call on its Intents extension to handle intents. To request authorization, call the [`requestSiriAuthorization(_:)`](./inpreferences/requestsiriauthorization%28_%29.md) method at some point during your app’s execution. The first time you call this method, the user is prompted to grant or deny authorization for your app. The user can change the authorization settings for your app later in the system settings. You can get your app’s current authorization status using the [`siriAuthorizationStatus()`](./inpreferences/siriauthorizationstatus%28%29.md) method.
 

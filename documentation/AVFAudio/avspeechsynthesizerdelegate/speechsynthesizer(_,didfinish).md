@@ -25,7 +25,7 @@ optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish ut
 - (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores the final utterance’s [`postUtteranceDelay`](../avspeechutterance/postutterancedelay.md) and calls this method immediately when speech ends.
 

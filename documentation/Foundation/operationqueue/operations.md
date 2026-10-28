@@ -27,7 +27,7 @@ var operations: [Operation] { get }
 @property (copy, readonly) NSArray<__kindof NSOperation *> * operations;
 ```
 
-#### Discussion
+## Discussion
 
 The array in this property contains zero or more [`Operation`](../operation.md) objects in the order you added them to the queue. This order doesn’t necessarily reflect the order in which the queue invokes those operations.
 

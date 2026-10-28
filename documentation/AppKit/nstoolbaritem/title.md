@@ -22,7 +22,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 If you assign a custom view to the toolbar item, modifying this property updates the [`title`](./title.md) property of the view if one exists. If the toolbar item contains a button, modifying this property updates the button title. If the item doesn’t contain a custom view, the toolbar item manages the content directly.
 

@@ -20,7 +20,7 @@ func remove(withKeyword keyword: AEKeyword)
 - (void) removeDescriptorWithKeyword:(AEKeyword) keyword;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event or Apple event record. Currently provides no indication if an error occurs.
 

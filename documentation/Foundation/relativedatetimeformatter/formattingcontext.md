@@ -25,7 +25,7 @@ var formattingContext: Formatter.Context { get set }
 @property NSFormattingContext formattingContext;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`Formatter.Context.unknown`](../formatter/context/unknown.md). For additional details about specifying contexts, see [`Formatter.Context`](../formatter/context.md).
 

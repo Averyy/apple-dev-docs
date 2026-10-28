@@ -23,7 +23,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is the same as the one used to register the launch handler in [`register(forTaskWithIdentifier:using:launchHandler:)`](../bgtaskscheduler/register%28fortaskwithidentifier,using,launchhandler%29.md).
 

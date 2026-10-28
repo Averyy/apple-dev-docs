@@ -24,7 +24,7 @@ var fontName: String { get }
 @property (nonatomic, strong, readonly) NSString * fontName;
 ```
 
-#### Discussion
+## Discussion
 
 The font name is a name such as `HelveticaBold` that incorporates the family name and any specific style information for the font. The value in this property is intended for an application’s internal usage only and should not be displayed.
 

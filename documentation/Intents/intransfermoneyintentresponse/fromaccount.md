@@ -34,7 +34,7 @@ var fromAccount: INPaymentAccount? { get set }
 @property (atomic, copy, readwrite, nullable) INPaymentAccount * fromAccount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the details about the account to transfer funds from. Siri may display the information in this object to the user at appropriate times.
 

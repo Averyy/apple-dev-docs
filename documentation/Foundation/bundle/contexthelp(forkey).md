@@ -19,11 +19,11 @@ func contextHelp(forKey key: NSHelpManager.ContextHelpKey) -> NSAttributedString
 - (NSAttributedString *) contextHelpForKey:(NSHelpManagerContextHelpKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The help string or `nil` if the application does not have a `Help.plist` file or the file does not contain an entry for the specified `key`.
 
-#### Discussion
+## Discussion
 
 When you build your application, you can merge multiple RTF-based help files together using the `/usr/bin/compileHelp` tool, which then packages your help file information into a property list named `Help.plist`. After placing this property-list file in your application bundle, you can use this method to extract context help information from it. To look up a particular entry, you specify the name of the original RTF help file in the `key` parameter of this method. For example, if your application project contains a help file named `Copy.rtf`, you would retrieve the text from this file by passing the value `@"Copy.rtf"` to the `key` parameter.
 

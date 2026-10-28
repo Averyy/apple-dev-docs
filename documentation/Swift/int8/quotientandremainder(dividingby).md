@@ -21,11 +21,11 @@ Returns the quotient and remainder of this value divided by the given value.
 func quotientAndRemainder(dividingBy rhs: Self) -> (quotient: Self, remainder: Self)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the quotient and remainder of this value divided by `rhs`. The remainder has the same sign as `lhs`.
 
-#### Discussion
+## Discussion
 
 Use this method to calculate the quotient and remainder of a division at the same time.
 

@@ -19,7 +19,7 @@ var windowControllers: [NSWindowController] { get }
 @property (copy, readonly) NSArray<__kindof NSWindowController *> * windowControllers;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`NSWindowController`](../nswindowcontroller.md) objects belonging to the current document. If there are no window controllers, the value is an empty array object.
 

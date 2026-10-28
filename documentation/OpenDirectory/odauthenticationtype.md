@@ -20,7 +20,7 @@ typealias ODAuthenticationType = NSString
 typedef NSString * ODAuthenticationType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Authentication Types](./authentication-types.md) for recognized authentication type values.
 

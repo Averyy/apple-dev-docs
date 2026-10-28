@@ -20,11 +20,11 @@ typealias AECoerceDescProcPtr = (UnsafePointer<AEDesc>?, DescType, SRefCon?, Uns
 typedef OSErr (*AECoerceDescProcPtr)(const AEDesc *fromDesc, DescType toType, SRefCon handlerRefcon, AEDesc *toDesc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your handler should return `noErr` if it successfully handled the coercion, `errAECoercionFailed` if it can’t handle the coercion and it wants the Apple Event Manager to continue dispatching to other coercion handlers, or a nonzero result code otherwise.
 
-#### Discussion
+## Discussion
 
 Your coercion handler should coerce the data to the desired descriptor type and return the resulting data in the descriptor specified by the `result` parameter.
 

@@ -24,7 +24,7 @@ var columnCount: Int { get }
 @property (readonly) NSInteger columnCount;
 ```
 
-#### Discussion
+## Discussion
 
 Refer to ISO/IEC 16022:2006(E) for valid module row and column count combinations.
 

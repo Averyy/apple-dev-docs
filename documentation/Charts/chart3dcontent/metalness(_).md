@@ -20,7 +20,7 @@ nonisolated
 func metalness(_ ratio: Double) -> some Chart3DContent
 ```
 
-#### Discussion
+## Discussion
 
 Zero represents a non-metallic (dielectric) surface. One represents a metallic surface. In real life, materials are either metallic or dielectric (0 or 1).
 

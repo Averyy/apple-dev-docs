@@ -25,7 +25,7 @@ case inProgress
 INSnoozeTasksIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you began snoozing tasks in the task list but didn’t confirm that the process was complete. For example, when a server handles the snoozing and you’ve not yet received a confirmation from that server. Configure a timer to fire if your server doesn’t return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri.
 

@@ -22,7 +22,7 @@ var sourcePixelBufferAttributes: [String : any Sendable] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * sourcePixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary with your pixel buffer attributes dictionary.
 

@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSHSBModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Hue-saturation-brightness
 

@@ -21,11 +21,11 @@ func registerSceneAccessory(_ accessory: UISceneAccessory) -> UISceneAccessoryRe
 - (UISceneAccessoryRegistration *) registerSceneAccessory:(UISceneAccessory *) accessory;
 ```
 
-#### Return Value
+## Return Value
 
 A registration object which can be used to monitor changes for the scene accessory or unregister it.
 
-#### Discussion
+## Discussion
 
 The delegate type that the configuration defines will be called for all lifecycle events associated with the scene accessory.
 

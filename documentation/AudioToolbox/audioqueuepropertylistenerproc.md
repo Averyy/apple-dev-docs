@@ -24,11 +24,11 @@ typealias AudioQueuePropertyListenerProc = (UnsafeMutableRawPointer?, AudioQueue
 typedef void (*)(void *, struct OpaqueAudioQueue *, unsigned int) AudioQueuePropertyListenerProc;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback function `MyAudioQueuePropertyListenerProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 Install this callback in an audio queue by calling the [`AudioQueueAddPropertyListener(_:_:_:_:)`](./audioqueueaddpropertylistener%28_,_,_,_%29.md) function. For example, say you want your application to be notified, after you call the [`AudioQueueStop(_:_:)`](./audioqueuestop%28_,_%29.md) function with the `inImmedate` parameter set to `false`, that audio has finished playing. Perform these steps:
 

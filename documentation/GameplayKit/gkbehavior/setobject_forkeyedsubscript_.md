@@ -20,7 +20,7 @@ Sets the weight for the goal specified by subscript syntax.
 - (void) setObject:(NSNumber *) weight forKeyedSubscript:(GKGoal *) goal;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`setWeight(_:for:)`](./setweight%28_,for%29.md) method, but allows access using subscript syntax. Like that method, setting a goal weight by subscript adds the specified goal to the behavior if not already present.
 

@@ -15,11 +15,11 @@ The object that contains information about the color scheme of the document, inc
 object ArticleDocument.colorScheme
 ```
 
-#### Discussion
+## Discussion
 
 Use the c`olorScheme` object to enable or disable automatic Dark Mode in a document.
 
-##### Example
+### Example
 
 ```json
 {

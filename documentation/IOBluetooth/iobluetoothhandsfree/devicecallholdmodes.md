@@ -19,11 +19,11 @@ var deviceCallHoldModes: UInt32 { get }
 @property (readonly) uint32_t deviceCallHoldModes;
 ```
 
-#### Return Value
+## Return Value
 
 The SMS services supported
 
-#### Discussion
+## Discussion
 
 Returns the device’s supported call hold modes bitmap. The values are described in “IOBluetoothHandsFreeCallHoldModes.”
 

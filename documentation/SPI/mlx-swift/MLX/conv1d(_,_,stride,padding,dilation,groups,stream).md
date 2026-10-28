@@ -21,11 +21,11 @@ func conv1d(_ array: MLXArray, _ weight: MLXArray, stride: Int = 1, padding: Int
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: Only the default `groups=1` is currently supported.
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`conv2d(_:_:stride:padding:dilation:groups:stream:)`](./conv2d%28_,_,stride,padding,dilation,groups,stream%29.md)

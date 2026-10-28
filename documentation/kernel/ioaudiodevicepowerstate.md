@@ -17,7 +17,7 @@ typedef enum _IOAudioDevicePowerState : unsigned int {
 } IOAudioDevicePowerState;
 ```
 
-#### Overview
+## Overview
 
 A newly created IOAudioDevices defaults to the idle state.
 

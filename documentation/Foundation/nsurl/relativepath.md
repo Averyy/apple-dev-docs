@@ -25,7 +25,7 @@ var relativePath: String? { get }
 @property (copy, readonly, nullable) NSString * relativePath;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the relative path of the receiver’s URL without resolving against its base URL. Any percent-encoded characters are not unescaped. If the path has a trailing slash it is stripped. If the receiver is an absolute URL, this property contains the same value as [`path`](./path.md). If the receiver does not conform to RFC 1808, it contains `nil`.
 

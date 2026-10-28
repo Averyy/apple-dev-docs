@@ -24,7 +24,7 @@ func replaceFormatDescription(_ formatDescription: CMFormatDescription, with new
 - (void) replaceFormatDescription:(CMFormatDescriptionRef) formatDescription withFormatDescription:(CMFormatDescriptionRef) newFormatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change a track’s format descriptions, such as adding format description extensions to a format description or changing the audio channel layout of an audio track. Format description can have extensions of type [`kCMFormatDescriptionExtension_VerbatimSampleDescription`](../../CoreMedia/kcmformatdescriptionextension_verbatimsampledescription.md) and [`kCMFormatDescriptionExtension_VerbatimISOSampleEntry`](../../CoreMedia/kcmformatdescriptionextension_verbatimisosampleentry.md). If you modify a copy of a format description, delete those extensions from the copy or your changes might be ignored.
 

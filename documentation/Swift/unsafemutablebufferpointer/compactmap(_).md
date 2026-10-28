@@ -21,11 +21,11 @@ Returns an array containing the non-`nil` results of calling the given transform
 func compactMap<ElementOfResult>(_ transform: (Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]
 ```
 
-#### Return Value
+## Return Value
 
 An array of the non-`nil` results of calling `transform` with each element of the sequence.
 
-#### Discussion
+## Discussion
 
 Use this method to receive an array of non-optional values when your transformation produces an optional value.
 

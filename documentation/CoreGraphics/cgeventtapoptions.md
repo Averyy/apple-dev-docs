@@ -20,7 +20,7 @@ enum CGEventTapOptions
 enum CGEventTapOptions : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 When you create an event tap, you indicate whether it is a passive listener or active event filter. A passive listener receives events but cannot modify or divert them. An active filter may pass an event through unmodified, modify an event, or discard an event.
 

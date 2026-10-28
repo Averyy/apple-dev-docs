@@ -25,11 +25,11 @@ func NSOpenStepRootDirectory() -> String
 extern NSString *NSOpenStepRootDirectory();
 ```
 
-#### Return Value
+## Return Value
 
 A string identifying the root directory of the user’s system.
 
-#### Discussion
+## Discussion
 
 For more information on file system utilities, see Low-Level File Management Programming Topics.
 

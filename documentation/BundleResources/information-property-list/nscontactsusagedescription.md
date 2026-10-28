@@ -17,7 +17,7 @@ A message that tells people why the app is requesting access to their contacts.
 - **Name**: `NSContactsUsageDescription` (Privacy - Contacts Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s contacts.
 

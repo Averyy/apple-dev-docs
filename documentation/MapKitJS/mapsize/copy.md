@@ -15,7 +15,7 @@ Returns a copy of the map size object.
 copy(): MapSize;
 ```
 
-#### Return Value
+## Return Value
 
 A MapSize object that is a copy of the original.
 

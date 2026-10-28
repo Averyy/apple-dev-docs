@@ -15,7 +15,7 @@ A structure that contains an RCS message’s content and metadata.
 struct RCSMessage
 ```
 
-#### Overview
+## Overview
 
 When handling received messages, use the [`content`](./rcsmessage/content-swift.property.md) property to distinguish between different types of messages, such as [`RCSMessage.Text`](./rcsmessage/text.md) or [`RCSMessage.DispositionNotification`](./rcsmessage/dispositionnotification.md).
 

@@ -20,7 +20,7 @@ An option that determines the animation’s pace over time.
 var timing: AnimationTimingFunction { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the option you pick, the animation’s progress moves at varying speeds along its duration.
 

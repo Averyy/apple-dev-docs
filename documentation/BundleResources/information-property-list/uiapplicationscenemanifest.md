@@ -17,7 +17,7 @@ The information about the app’s scene-based life-cycle support.
 - **Name**: `UIApplicationSceneManifest` (Application Scene Manifest)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background.
 

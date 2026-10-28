@@ -22,7 +22,7 @@ func bufferPixelsWide() -> Int
 - (NSUInteger) bufferPixelsWide;
 ```
 
-#### Return Value
+## Return Value
 
 The width, expressed in pixels.
 

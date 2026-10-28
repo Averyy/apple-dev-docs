@@ -19,7 +19,7 @@ Creates a tensor descriptor with the shape and data type you specify.
 + (instancetype) descriptorWithShape:(NSArray<NSNumber *> *) shape dataType:(MLCDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor descriptor, or `nil` if initialization fails.
 

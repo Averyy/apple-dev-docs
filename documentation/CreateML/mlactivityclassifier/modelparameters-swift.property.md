@@ -12,8 +12,8 @@ The model configuration parameters the activity classifier used during its train
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) let modelParameters: MLActivityClassifier.ModelParameters
+nonisolated(unsafe)
+let modelParameters: MLActivityClassifier.ModelParameters
 ```
 
 ## See Also

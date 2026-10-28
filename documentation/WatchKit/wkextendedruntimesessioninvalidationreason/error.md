@@ -19,7 +19,7 @@ case error
 WKExtendedRuntimeSessionInvalidationReasonError
 ```
 
-#### Discussion
+## Discussion
 
 When the system passes this value to your extension delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](../wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md) method, check the `error` parameter for additional information about the error.
 

@@ -21,7 +21,7 @@ The capacity of the index buffer, measured in indices.
 var indexCapacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to [`indexCapacity`](./descriptor-swift.struct/indexcapacity.md).
 

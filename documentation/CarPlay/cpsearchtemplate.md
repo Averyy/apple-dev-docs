@@ -22,7 +22,7 @@ class CPSearchTemplate
 @interface CPSearchTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 Use this template to provide the ability to search for a destination. When CarPlay displays the template, the user sees a search field, a Cancel button, and a localized keyboard. The template also shows the list of search results after your app completes the search request.
 

@@ -20,7 +20,7 @@ typealias AEDataStorageType = OpaquePointer
 typedef struct OpaqueAEDataStorageType *AEDataStorageType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AEDesc`](./aedesc.md) for related information.
 

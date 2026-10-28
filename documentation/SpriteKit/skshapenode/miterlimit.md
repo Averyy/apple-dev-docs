@@ -25,7 +25,7 @@ var miterLimit: CGFloat { get set }
 @property (nonatomic) CGFloat miterLimit;
 ```
 
-#### Discussion
+## Discussion
 
 If the line join style is set to [`CGLineJoin.miter`](../../CoreGraphics/cglinejoin/miter.md), SpriteKit uses the miter limit to determine whether the lines should be joined with a bevel instead of a miter. SpriteKit divides the length of the miter by the line width. If the result is greater than the miter limit, SpriteKit converts the style to a bevel.
 

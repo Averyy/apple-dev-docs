@@ -17,7 +17,7 @@ Runs the page layout modal panel with the receiver’s printing information obje
 - (NSInteger) runModalPageLayoutWithPrintInfo:(NSPrintInfo *) printInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Runs the page layout modal panel with the receiver’s printing information object (`printInfo`) as argument and returns the result constant (indicating the button pressed by the user). To run as sheet on the receiver’s document window, use [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](./runmodalpagelayout%28with,delegate,didrun,contextinfo%29.md) instead.
 

@@ -22,11 +22,11 @@ var accessoryStateChanges: DockAccessory.StateChanges { get throws }
 
 - [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
-#### Return Value
+## Return Value
 
 A value that indicates the dock accessory that changed and its new state.
 
-#### Discussion
+## Discussion
 
 A docking or undocking notification occurs when a person docks or removes a device such as iPhone from a compatible dock accessory. The notification is a prequisite for modifying the tracking behavior of a dock accessory. For more information on controlling a dock accessory, see [`DockAccessory`](../dockaccessory.md).
 

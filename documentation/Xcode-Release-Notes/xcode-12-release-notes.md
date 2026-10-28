@@ -5,44 +5,44 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Catalina 10.15.6. The Xcode 12 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12 requires an Intel-based Mac running macOS Catalina 10.15.4 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Documents can now be opened in their own tab, making it easy to quickly switch between files while maintaining the rest of Xcode’s configuration. Option-click or double-click to open a document in a tab. The tab bar appears when you have more than one document open, or you choose View > Always Show Tab Bar. (7954451)
 - Xcode now supports previewing widgets, App Clips, and content in Swift packages. For more seamless live previewing on device, Xcode installs the new Xcode Previews app for iOS 14 and iPadOS 14. (56388008)
 - The new [`LibraryContentProvider`](../DeveloperToolsSupport/librarycontentprovider.md) protocol gives you the ability to show your views and modifiers in Xcode’s library. (56423420)
 - Code completions have a new, focused user interface, making it easier to find a completion. Completions are also more accurate and up to 15 times faster in Xcode 12. (56087948, 58010475)
 
-###### Resolved
+#### Resolved
 
 - Compilable code completions for SwiftUI APIs now correctly handle overloaded methods. (64037686)
 - Fixed an issue in Xcode 12 build 12A7208 which could cause build failures for iOS or tvOS apps using [StoreKit](../StoreKit/StoreKit.md) or [Authentication Services](../AuthenticationServices/AuthenticationServices.md) with SwiftUI, when targeting simulated devices or using SwiftUI Previews. (68252534)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Clang now warns about incorrect format strings that are specified in an [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro. (23622446) (FB5412403)
 - The `std::is_scalar` trait is now true for Block types. This allows using blocks in new places like `std::optional`. (57892832)
 
-###### Resolved
+#### Resolved
 
 - `@dynamic` on a property is ignored if the property is redeclared in a protocol that inherits from another protocol. (45503561)
 - Clang now reports an error when you use a function without an explicit declaration when building C or Objective-C code for macOS (`-Werror=implicit-function-declaration` flag is on). This additional error detection unifies Clang’s behavior for iOS/tvOS and macOS 64-bit targets for this diagnostic. (49917738)
 - Fixed type checking for block parameters using `id` with protocols. The compiler now emits an error for method calls with a block that uses parameters more specific than the arguments with which it will be called. (57980961)
 
-###### Deprecations
+#### Deprecations
 
 - The stand-alone system assemblers for i386, x86_64, and arm are deprecated. Using the `as` command with the `-Q` flag shows a warning that instructs you to transition to Clang’s integrated assembler and the `-q` flag. The `as(1)` driver will remain, as a standard way to invoke Clang’s integrated assembler, as well as any assemblers installed by the developer. (61299833)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### New Features
+#### New Features
 
 - Added support for Scalable Vector Graphic (SVG) image assets. These preserve their vector representation with deployment targets of macOS 10.15 or later, iOS 13 or later, and iPadOS 13 or later. (18389814)
 - The required pixel size is now shown for complication placeholder images. (21135944)
@@ -50,14 +50,14 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - The “Mac Catalyst” asset variant is now named “Mac Scaled”. Xcode will use this asset in targets that build with Mac Catalyst when “Scale Interface to Match iPad” is selected (including on macOS 10.15). When “Optimize Interface for Mac” is selected, Xcode will prefer the Mac asset variant. (58883008)
 - The “New Asset” menu now organizes asset types by platform. (59233882)
 
-###### Resolved
+#### Resolved
 
 - Resolved an issue where hidden folders inside an Asset Catalog could cause Xcode to repeatedly reload the catalog. (35275782) (FB5390092)
 - Xcode normalizes Asset Catalog `Contents.json` files when modifying them, for better stability and compatibility with future edits. A normalized file contains keys in alphabetical order and a newline character at the end of the file. (53886564)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - You can now use `momc` on the command line to generate Core Data code from your models. (58713955)
 
@@ -68,7 +68,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
   ```
 - XCFrameworks can now include `.dSYM` and `.bcsymbolmap` debugging symbol files in your library bundle with the `-debug-symbols` flag. Run the command `xcodebuild -create-xcframework -help` for additional usage information. (64910707)
 
-###### Resolved
+#### Resolved
 
 - Fixed a bug where a regenerated dSYM file isn’t copied with the product in an incremental build if `DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT` is enabled. (44696736)
 - Restored support for `PRODUCT_DEFINITION_PLIST` in the new build system. (45800765) (FB5711777)
@@ -78,36 +78,36 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Input files for Run Script Phases are now tracked as inputs to code-signing tasks, allowing modifications to those files to properly trigger code signing on incremental builds. (59353913)
 - Fixed an issue that caused [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) in a macOS application’s `Info.plist` and [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md) on other platforms to be set to an earlier value than the deployment target of the build target. (62617478) (FB7681463)
 
-###### Known Issues
+#### Known Issues
 
 - A newly-created iOS project using the Swift language may no longer build after enabling Mac Catalyst. (67885114)
 
   **Workaround**: Replace the  `@main` annotation on the App Delegate with `@UIApplicationMain`.
 
-###### Deprecations
+#### Deprecations
 
 - The Build Settings editor no longer includes the Valid Architectures build setting (`VALID_ARCHS`), and its use is discouraged. Instead, there is a new Excluded Architectures build setting (`EXCLUDED_ARCHS`). If a project includes `VALID_ARCHS`, the setting is displayed in the User-Defined section of the Build Settings editor. (15145028)
 - The legacy build system is deprecated, and will be removed in a future release. (62742902)
 
-##### Core Data
+### Core Data
 
-###### Resolved
+#### Resolved
 
 - When you create a multi-platform app project with Core Data, Xcode now correctly uses the name of the project for its data model. (67534882) (FB8483330)
 
-##### Core ML
+### Core ML
 
-###### Known Issues
+#### Known Issues
 
 - The Core ML editor’s Preview tab for sound classifier models doesn’t show a classification result when you click on ‘Listen’. In addition, when you add an audio file, clicking the Play button doesn’t update the audio timeline as the audio plays. This issue also occurs in the Create ML app. (67515312)
 
-###### Deprecations
+#### Deprecations
 
 - The default initializer on an auto-generated model interface in Xcode is deprecated in favor of `init(configuration:)`. Use `init(configuration:)` or the newly introduced `.load()` method on the auto generated model interface instead, and handle model-load errors appropriately. (62875309)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - When a process pauses at a breakpoint, Xcode displays the hit count for that particular breakpoint location as part of the breakpoint’s annotation in the editor. An example is “Breakpoint 2.1 (7)”, where the “(7)” represents 7 hits at location 2.1. (3836838)
 - When a process crashes under the debugger, Xcode prints the crash messages in the Console. These messages are similar to the ones displayed in CrashReporter. (8931901)
@@ -141,7 +141,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - View hierarchies captured with Xcode can now be exported to `.viewhierarchy` files. (61065771)
 - The ClockKit framework generates Runtime Issues in Xcode, to help you analyze runtime bugs. (61346475)
 
-###### Resolved
+#### Resolved
 
 - Resolved an issue where clicked buttons in the debug bar didn’t suitably change their appearance in Dark Mode. (46294176)
 - Fixed a crash that could occur when you select the memory browser in the Debug navigator. (54767689)
@@ -150,21 +150,21 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Xcode now launches applications with Launch Services to better reflect a real application running environment. (59478437)
 - Resolved an issue which caused the view debugger to show no content when the user selects “Focus on View” in the view hierarchy of the debugged process. (60255111)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode may crash when opening a debug gauge. (64181692)
 - Debugging a Widget on iOS 14 doesn’t launch the extension, or the debugger doesn’t attach to the Widget. (64274027, 66920094)
 
   **Workaround**: Delete the Widget from the Home screen, clean the project, then build and run again.
 
-##### Devices
+### Devices
 
-###### New Features
+#### New Features
 
 - The “Add Device” sheet in the Devices and Simulators window is now resizable. (59611308)
 - The Devices and Simulators window permits selecting multiple devices in the navigator, so they can be unpaired together. This makes it easier for you to clean up old records for devices you aren’t using anymore. (63290367)
 
-###### Known Issues
+#### Known Issues
 
 - You can’t debug a WatchKit App when an App Clip is added to its paired iOS App, if that iOS App isn’t installed. (65784374) (FB8065876)
 
@@ -180,15 +180,15 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
   **Workaround**: If the symbol data isn’t populating, quit and restart Xcode to retry downloading.
 
-##### Documentation Viewer
+### Documentation Viewer
 
-###### New Features
+#### New Features
 
 - The Developer Documentation window has a new Featured page with an overview of Apple’s latest developer documentation. (59319966)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - You can now export Analysis Core Tables from existing Instruments `.trace` files using the `xctrace` command. See the `xctrace` man page for more details. (12491801)
 - Instruments now supports better expansion of inlined functions in call trees and event backtraces when a dSYM is present. (16252965)
@@ -201,24 +201,24 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Instruments includes a new Animation Hitches template for detecting scrolling and animation issues, to help you visualize and investigate an application’s graphics pipeline. (56553023)
 - Double-clicking events in the track view will now switch to a detail view that shows the underlying data at the inspected time so you can further investigate. (59173526)
 
-###### Resolved
+#### Resolved
 
 - Fixed an issue where double-clicking on a Call Tree node to move to source failed for any track without an instrument. (32751506)
 - Thread names in Instruments now reflect values set by developers utilizing thread-naming APIs. (51279758)
 - Significantly improved trace saving and loading performance. Saves are now up to 40% faster. Opening trace files is up to 80% faster. (51597633)
 - Fixed an issue where the `<slice>` attribute for a `<calltree>` detail was ignored on Custom instruments. (61944832)
 
-###### Known Issues
+#### Known Issues
 
 - The Animation Hitches template doesn’t show hitch intervals when instrumenting macOS apps. (61082729)
 
-###### Deprecations
+#### Deprecations
 
 - The `instruments` command is now deprecated in favor of its replacement: `xctrace`. Use `xctrace` to record, import, and export data from Instruments `.trace` files. (36641078)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Added support for the new [`safeAreaLayoutGuide`](../AppKit/nsview/safearealayoutguide.md) on [`NSView`](../AppKit/nsview.md) introduced in macOS 11. (16915977)
 - Interface Builder’s canvas has a new minimap. You can show and hide the minimap with Editor > Canvas > Minimap. Drag the minimap to any corner of the canvas. You can also double-click or command-click in the minimap to focus on a specific scene. (19218249, 63831585) (FB5891904)
@@ -240,7 +240,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Added support for the new [`NSView`](../AppKit/nsview.md) Layout Margins Guide. (62908200)
 - The Objects library contains a new Window Controller with Sidebar object, composed of a window controller and split view controller configured to provide a toolbar, sidebar, and full-size content view with safe area layout guides enabled. (63045604)
 
-###### Resolved
+#### Resolved
 
 - Fixed a bug where `IBDesignable` views weren’t using the intrinsic content size the first time Interface Builder displays the storyboard or `.xib`. (23234553) (FB5797024)
 - Fixed an issue that would sometimes omit iOS text styles from the inspectors. (51854358) (FB6169763)
@@ -255,30 +255,30 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Fixed a crash that could happen when using Image Stacks in tvOS storyboards. (62113733) (FB7671430)
 - Fixed some performance issues with [`NSTabView`](../AppKit/nstabview.md) and hidden views in a storyboard or `.xib` canvas. (63008369, 64314634)
 
-###### Known Issues
+#### Known Issues
 
 - On macOS Big Sur, Interface Builder displays macOS storyboards with the new look and feel. However, when you build and run an app with the macOS Catalina SDK in Xcode 12, split views, table views, toolbars, and window titles may not match the storyboards. (66612224)
 
-###### Deprecations
+#### Deprecations
 
 - Interface Builder no longer provides access to the Can Draw Concurrently property. You may still configure this behavior in code with [`canDrawConcurrently`](../AppKit/nsview/candrawconcurrently.md). (42437767)
 - QTCaptureView and QTMovieView are deprecated and no longer supported. Remove these views from storyboards and `.xib` files. (64263402)
 
-##### Linking
+### Linking
 
-###### New Features
+#### New Features
 
 - The linker now supports `@filename` response files. The contents of the file are substituted into the argument list in place of the file name. The linker is typically invoked through Clang, which already supports response files. To have the linker parse a response file instead of Clang, use `-Wl,@filename`. (54356464) (FB7037642)
 - The linker now reports a warning if you link with a dylib but don’t use any symbols from it. If you really mean to do this, you can either suppress all such warnings with `-Wl,-warn_unused_dylibs` or mark unused frameworks individually as needed, using `-needed_framework Foo` instead of `-framework Foo`. For example, in Other Linker Flags, add `-Wl,-needed_framework,Foo`. (60936600)
 
-###### Resolved
+#### Resolved
 
 - When using the `-map file` option, functions and data from `.o` files built for Link Time Optimization are now tracked more accurately. (50031245)
 - When encountering an error about misaligned pointers, the linker now shows all such pointers, instead of just the first. (61019996)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - The new Summary Page in Metal Debugger provides an overview of captured command buffers, performance metrics, and memory usage. Xcode analyzes the commands and provides a list of insights that describe potential issues you may want to investigate. From the summary screen, you can navigate to more detailed information about each topic area. (53887141)
 - When capturing data on a device with A11 or newer GPUs, Metal System Trace tracks start and end times for individual shaders, which provides more granular insights into how the GPU executes your code. (54615187)
@@ -286,34 +286,34 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Shader Validation detects common shader bugs. Turn on Shader Validation when debugging your app to look for illegal memory access and other problems that can otherwise be difficult to debug. (56194992)
 - The GPU Counter view in Metal Debugger has a new user interface, making it easier to filter and sort through the GPU counter data. Create your own counter sets to see the exact data you need to diagnose your app’s performance. (56792744)
 
-###### Known Issues
+#### Known Issues
 
 - Metal Debugger may show empty Summary and Memory reports when debugging a macOS Catalina App. (68599136)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - Metrics Charts in Xcode Organizer are now interactive, allowing developers to compare and contrast metrics associated with different versions of their applications. (49305896)
 - Xcode Organizer now displays scroll-hitch metrics. Use these metrics to help identify perceptible animation delays you encounter while scrolling in your application. To view the Scroll Hitch bar graph, click on the Scrolling section in the Metrics Organizer window. (53514128)
 - Xcode Organizer now provides Disk Writes diagnostic reports. Use these reports to optimize the disk-write performance of your apps. To view the reports, click on the Disk Writes item in the Reports section of the Organizer. (53514182)
 - Metrics in the Xcode Organizer now include data from app versions with limited field usage. App versions that don’t meet the previous year’s usage threshold are badged with a gauge icon next to the version number, and display a margin of error. As customer usage increases, the margin of error decreases until it is low enough that it can be omitted from the UI. (53514245)
 
-###### Known Issues
+#### Known Issues
 
 - Exporting a watchOS application for ad-hoc or development distribution may fail when using Xcode 12 and thinning for “all compatible device variants.” (66637482)
 
   **Workaround**: Don’t thin, or choose a specific target device.
 
-##### Playgrounds
+### Playgrounds
 
-###### New Features
+#### New Features
 
 - Xcode’s Report Navigator now includes Playground build logs. (56351128)
 - Xcode Playgrounds now build the active scheme’s targets and make them importable when Build Active Scheme is enabled in the File inspector. (60089627)
 - Xcode Playgrounds can now import and use Swift packages and frameworks. Select the Build Active Scheme checkbox in the playground’s File inspector and ensure that the active scheme builds the package or framework target. (60612584)
 
-###### Resolved
+#### Resolved
 
 - Live views are now accessible to VoiceOver. (40548790)
 - Resolved an issue causing the LLDB RPC server to crash while using Xcode Playgrounds. (59271354)
@@ -323,15 +323,15 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - If a Playground live view has a size of zero, a banner now indicates why the live view isn’t visible. (63033441)
 - An Xcode Playground now automatically compiles Core ML models in its Resources folder and Playground code can access the generated ML model interface. (63109576)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode may show the text “No Editor”, instead of opening the source editor of a Playground immediately after creating it. (56484197)
 
   **Workaround**: Use View > Navigators > Project to reveal the Project Navigator, then select the Playground manually.
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Xcode now considers edited files and open previews when selecting which app renders previews. Files contained in an application-linked framework now preview inside of the application, picking up any resources and entitlements provided by the application. (46057388)
 - Each preview now has buttons to start Live Preview, Preview on Device, Inspect Preview, and Duplicate Preview. (47472549)
@@ -347,12 +347,12 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - The bottom bar of the canvas now contains a button for quickly inspecting the selected view. (62990297)
 - Add custom SwiftUI views and modifiers to the Xcode library using the new [`LibraryContentProvider`](../DeveloperToolsSupport/librarycontentprovider.md) protocol. (63154504)
 
-###### Resolved
+#### Resolved
 
 - Packages that contain previews can now update without fully rebuilding the active scheme. (51030302)
 - Rebuilding against the iOS 14, macOS 11, watchOS 7, and tvOS 14 SDKs changes uses of [`GeometryReader`](../SwiftUI/geometryreader.md) to reliably top-leading align the views inside the [`GeometryReader`](../SwiftUI/geometryreader.md). This was the previous behavior, *except* when it wasn’t possible to detect a single static view inside the [`GeometryReader`](../SwiftUI/geometryreader.md). (59722992) (FB7597816)
 
-###### Known Issues
+#### Known Issues
 
 - You can’t select views in widgets in the Previews canvas. (62517078)
 - Animations may not work in live SwiftUI previews. (63333795)
@@ -360,15 +360,15 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Previewing a widget extension for iPad devices may show an excess blank bar at the top. (64277772)
 - A widget extension preview doesn’t adapt to the dark appearance when you apply a `.preferredColorScheme(.dark)` appearance modifier. (64277915)
 
-##### Project Editor
+### Project Editor
 
-###### New Features
+#### New Features
 
 - The Document Types, Exported Type Identifiers, and Imported Type Identifiers panes support the new templated document icons in macOS 11. (59314567)
 
-##### Project Navigator
+### Project Navigator
 
-###### New Features
+#### New Features
 
 - The selection in the Project navigator, Source Control navigator, Debug navigator (for View Debugger and Memory Graph) and Reports navigator now tracks the contents of the active editor. (9546415) (FB5634395)
 - Xcode’s navigators now respect the System “sidebar icon size” and also allow it to be changed independently of that setting. (11619444)
@@ -377,44 +377,44 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Open Quickly matches are now more targeted and focused. Open Quickly is better at finding discontiguous word matches. Typing “resetDownload” matches “resetDocumentDownload” as you’d expect. The improved accuracy focuses on the best matches, and excludes the worst. (59065704)
 - Text filtering in the jump bar, scheme menu, and run destination chooser is significantly improved. It shows the best matches, and suppresses the worst. Filtering for frequently occurring characters like ‘init’ will show just init methods, instead of every symbol that contains i, n, i, t. (59597035)
 
-###### Resolved
+#### Resolved
 
 - Resolved crashes when adding and moving items in the project structure. (48644008, 57752303)
 - Improved performance of Project navigator, in particular “Reveal in Project Navigator” and recursive expand or collapse operations on groups. (49189414, 60245991, 60925755)
 - Improved stability and accuracy of results when filtering the project structure for text and SCM status. Note that results now require all filter terms to match, instead of any term. (57708582, 58099589, 62128435)
 
-##### Reality Composer
+### Reality Composer
 
-###### Deprecations
+#### Deprecations
 
 - Reality files created by Xcode 12 can only be loaded in macOS 10.15.4 or later, iOS and iPadOS 13.4 or later, and Reality Composer 1.4 or later. (58825031)
 
-##### Refactoring
+### Refactoring
 
-###### New Features
+#### New Features
 
 - Editor > Refactor > Rename now handles renaming symbols with a definition or references that are escaped with backticks. (46409010)
 
-##### Sanitizers
+### Sanitizers
 
-###### Resolved
+#### Resolved
 
 - Xcode now supports Thread Sanitizer when debugging on simulated watchOS devices. (54654296, 64421085)
 
-##### Server
+### Server
 
-###### Resolved
+#### Resolved
 
 - You can select which branch to use for integrations on the Repositories tab of an Xcode Server bot. (58615215, 59068222)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - App Clips can use the [Network Extension](../NetworkExtension/NetworkExtension.md) framework and [`Hotspot Configuration Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.hotspotconfiguration.md) to configure Wi-Fi networks. (64966949)
 - Xcode 12 lets you build your iOS app for running on Macs with Apple silicon. Make sure you’ve registered your Mac with Apple silicon’s hardware identifier (available in the System Information app’s Hardware > Provisioning UDID field) in your account on [https://developer.apple.com/account](https://developer.apple.com/account), find the archive in the Organizer window, click on Distribute App, select either “Ad Hoc” or “Development,” choose your distribution options, select “Automatically manage signing,” and proceed through the remainder of the distribution assistant to create an IPA. Once you’ve created the IPA, you can transfer it to your Mac with Apple silicon, and double-click on it to install. During the app’s first launch, you will be prompted to open the Security & Privacy preferences pane to enable the app. To see the launch button in the preferences pane, make sure your Mac is configured to only allow apps from the App Store and identified developers. (68513041, 68528315).
 
-###### Known Issues
+#### Known Issues
 
 - App Clips can’t access Wallet passes with the Pass Type IDs Entitlement. However, App Clips can determine whether a specific pass is already present in Wallet and prompt the user to add a pass if necessary. If you’ve already added the Wallet capability to an App Clip target, you may not be able to build or submit your app to App Store Connect. Remove the Wallet capability in the target editor’s Signing & Capabilities pane and disable or delete any code that makes use of this removed feature. (65244156)
 - Xcode automatic signing may not automatically include Macs with Apple silicon in your provisioning profile when exporting an archive. (66857321)
@@ -424,9 +424,9 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
   **Workaround**: Re-build the software with Xcode 12, or re-sign the software with `codesign -s - --preserve-metadata=identifier,entitlements,flags,runtime -f <path to mach-O>`.
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Simulator can display a simulated device in full-screen mode, or tile its window alongside Xcode. (32866357)
 - Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876)
@@ -437,7 +437,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Simulator defaults to the internal microphone unless you explicitly choose a different audio source. This avoids triggering phone call mode on Bluetooth headsets, which degrades audio quality while listening to music. (59338925, 59803381)
 - Simulator supports simulating Nearby Interaction for devices that support the feature. Dragging the device window around on the screen will update the simulated distance between the two devices. The farther apart the windows are on screen the greater the reported distance. (62227375)
 
-###### Resolved
+#### Resolved
 
 - The Download Components preferences pane now prompts once for authentication to download and install legacy simulators, rather than prompting for authentication on each install. (22993731)
 - CoreSimulatorService doesn’t use as much CPU when clients rapidly connect and disconnect. (53220616)
@@ -448,7 +448,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Fixed a bug where launching apps in Simulator while Simulator is already running sometimes failed with an error of “Timed out waiting for Simulator.app to become ready”. (64508635)
 - Fixed an issue which prevented Xcode from compiling a project for a simulated watchOS device if the project used [`SignInWithAppleButton`](../AuthenticationServices/signinwithapplebutton.md). The error message was “Cannot find ‘SignInWithAppleButton’ in scope”. This occured even if the project imported [SwiftUI](../SwiftUI/SwiftUI.md) and [Authentication Services](../AuthenticationServices/AuthenticationServices.md). (67817241)
 
-###### Known Issues
+#### Known Issues
 
 - When simulating a push notification in Simulator with the `content-available` key set, the system calls [`application(_:performFetchWithCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,performfetchwithcompletionhandler%29.md) instead of [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md). (60426170, 60974170) (FB7625283)
 - Activating Display Zoom on a simulated 12.9” iPad Pro distorts the simulated device’s display. (67455180)
@@ -458,23 +458,23 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
   **Workaround**: Close the CarPlay window, then re-enable or re-disable CarPlay.
 
-###### Deprecations
+#### Deprecations
 
 - When running on macOS 11, Simulator supports iOS 11.4 or later. (59938106)
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - You can now specify the default branch name for new repositories in the Source Control pane of Xcode’s Preferences. This preference uses the `init.defaultBranch` Git config option available in Git version 2.28. (66232985)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Repeated code completion invocations inside Swift function bodies are now up to 15 times faster compared to Xcode 11.5. (59830963)
 
-###### Resolved
+#### Resolved
 
 - Fixed a crash that could occur with large amounts of log output in the debug console. (49261867)
 - The editor now preserves the relative indentation of pasted text, rather than re-indenting the text. This can be controlled in Preferences > Text Editing > Indentation. (52348424)
@@ -494,19 +494,19 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Fixed an issue where editing an Objective-C category name would sometimes cause a crash. (61860583)
 - Fixed an issue where folding code with trailing whitespace would sometimes cause a crash. (62218489) (FB7673070)
 
-###### Known Issues
+#### Known Issues
 
 - A new Xcode Source Editor Extension target doesn’t automatically set up embedding `XcodeKit.framework` in the extension. (59274389)
 
   **Workaround**: Embed `XcodeKit.framework` in the extension manually.
 
-###### Deprecations
+#### Deprecations
 
 - For compatibility with new security features in macOS 11, Xcode extensions must be built using Xcode 12 and must embed `XcodeKit.framework`. An Xcode extension rebuilt with these tools remains compatible with older versions of Xcode and macOS. (51822755)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Xcode 12 supports testing in-app purchases directly in Simulator or on a connected device, using a new local [StoreKit](../StoreKit/StoreKit.md) test environment.
 
@@ -516,15 +516,15 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
   Control the test environment, including clearing purchase history, resetting offer eligibility, and speeding up the renewal rate of time for testing subscriptions. (56504988)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode crashes when selecting “Subscription Options” in the [StoreKit](../StoreKit/StoreKit.md) transaction manager. (68354368)
 
   **Workaround**: Use the [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework to test downgrading, cross-grading, or upgrading a subscription.
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Improved indentation for chained method calls, especially those that involve nested or trailing closures. (25519439) (FB5472851)
 - Improved the error message when using SwiftUI’s [`List`](../SwiftUI/list.md) initializer that takes a collection of identifiable data with an element type that doesn’t conform to [`Identifiable`](../Swift/identifiable.md). (51519565) (FB6130940)
@@ -727,7 +727,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
   backward matching of the unlabeled trailing closure is deprecated; label the argument with 'b' to suppress this warning
   ```
 
-###### Resolved
+#### Resolved
 
 - Swift now supports unapplied references to protocol methods. Previously this only worked for methods defined in structs, enums, and classes. (21289579) (FB5819096)
 
@@ -774,28 +774,28 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Widgets no longer crash when built for release. If you previously disabled `DEAD_CODE_STRIPPING` to work around such a crash, you can re-enable it. (65862827)
 - Widgets no longer crash when bitcode is enabled or “Strip Style” is set to “All Symbols”. If you turned off `ENABLE_BITCODE` and unset `STRIP_STYLE` from “All Symbols” in the Widget target’s build settings, you can revert those workarounds. (66402358)
 
-###### Known Issues
+#### Known Issues
 
 - The compiler may crash when a function builder body contains an empty switch statement. This issue can also cause a SourceKit crash while typing a switch statement in a SwiftUI view body. (65983237) (FB8111944)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - You can now declare conditions for a Swift package’s target dependencies, such as limiting the dependencies by platform. This gives you more flexibility to describe complex target dependencies that support multiple platforms. (40237402)
 - Swift packages can now contain resources such as images, asset catalogs, storyboards, and other files. When Xcode builds an app that depends on a package, it adds the package’s code and resources to the app bundle for use at runtime. For more information see [Bundling resources with a Swift package](../Xcode/bundling-resources-with-a-swift-package.md). (54361843)
 - Swift packages can now vend prebuilt libraries distributed as XCFrameworks, allowing dependencies on libraries that can’t be distributed as source code. When Xcode builds an app that uses such a package, it embeds the libraries into the app bundle. For more information see [Distributing binary frameworks as Swift packages](../Xcode/distributing-binary-frameworks-as-swift-packages.md). (56592977)
 - Swift packages can now contain localized content for any resource in the package. In addition to localized content in asset catalogs, Xcode supports separate localization files in `.lproj` folders. For more information see [Localizing package resources](../Xcode/localizing-package-resources.md). (56925255)
 
-###### Known Issues
+#### Known Issues
 
 - A package resolution error with the message “database is locked” may occur when opening a workspace that contains package references. (61113361)
 
   **Workaround**: Close and reopen the workspace.
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - [`XCTAssert`](../XCTest/xctassert.md) and related assertion macros in Objective-C can now be used in contexts other than instance methods of [`XCTestCase`](../XCTest/xctestcase.md) subclasses. (4176422)
 - Xcode now captures backtraces for test failures which occur outside of test methods and lists the failure callstack frames in the Issue navigator, the source editor, and the test report. (9955893)
@@ -837,7 +837,7 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - It is now possible to customize Default Execution Time Allowance and Maximum Execution Time Allowance in the Test Plan Editor. These settings apply when Test Timeouts is enabled. (61607966)
 - XCTest now attaches a spindump diagnostic during UI testing when a UI query times out or the target app doesn’t become idle promptly. (62076023)
 
-###### Resolved
+#### Resolved
 
 - The Test navigator now correctly remembers its selection state and scroll offset when switching to and from other navigators, as well as when changing filters and schemes. (16308307, 24918098)
 - UI target queries can now target all cells in the iOS Share Sheet. (49961747)
@@ -851,13 +851,13 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 - Resolved an issue where `xcodebuild` wouldn’t respect the `-enableCodeCoverage` option if the scheme uses a test plan. (62605817)
 - `xcodebuild` no longer ignores the `-parallel-testing-worker-count` option when running tests in parallel. (64495567)
 
-###### Known Issues
+#### Known Issues
 
 - Simulated devices don’t support animation performance metrics (total number of hitches, hitches total duration, hitch time ratio, frame rate, and frame count) when using an animation `os_signpost` coupled with the [`XCTOSSignpostMetric`](../XCTest/xctossignpostmetric.md). (63766090)
 
   **Workaround**: Use [`XCTSkip`](../XCTest/xctskip-swift.struct.md) to skip over performance tests on simulated devices.
 
-###### Deprecations
+#### Deprecations
 
 - Xcode now supports debugging apps and running tests on iOS devices running iOS 9.0 and above. (59561001)
 - [`XCTAssert`](../XCTest/xctassert.md) and related assertion macros in Objective-C and Objective-C++ no longer include a reference to `self` to access the current test case. With the `-Wunused-variable` or `-Wunused-lambda-capture` flag set, the compiler may now emit new warnings about code which declares an explicit variable or lambda capture for `self`. Remove the `self` variable or lambda capture, because it’s no longer required by [`XCTAssert`](../XCTest/xctassert.md). (60017011)

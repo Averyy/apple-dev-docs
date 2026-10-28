@@ -21,7 +21,7 @@ enum Code
 enum CLLocationPushServiceError : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These error codes are returned from [`startMonitoringLocationPushes(completion:)`](../cllocationmanager/startmonitoringlocationpushes%28completion%29.md)
 

@@ -18,7 +18,7 @@ The session reconstruction could not fully stitch all images of the object.
 case stitchingIncomplete
 ```
 
-#### Discussion
+## Discussion
 
 This may indicate that sections of the reconstructed model (such as the bottom after a flip) are incomplete. This may occur if a non-rigid object is flipped such that its shape subtly changes before and after the flip or if an object is shiny and lighting causes highlight changes across a flip.  It is recommended that users are reminded of proper object and environment selection if this message is output, and that they check their model for potential issues.
 

@@ -19,7 +19,7 @@ Continues to track an object that you’ve started tracking, and adds a new dete
 - (CNBoundsPrediction *) continueTrackingAt:(CMTime) time sourceImage:(CVPixelBufferRef) sourceImage sourceDisparity:(CVPixelBufferRef) sourceDisparity;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a prediction of where the object is in the source image.
 

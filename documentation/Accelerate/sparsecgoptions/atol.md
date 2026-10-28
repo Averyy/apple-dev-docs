@@ -25,9 +25,9 @@ var atol: Double
 double atol;
 ```
 
-#### Discussion
+## Discussion
 
-*‖ b-Ax ‖₂ < * ‖ b-Ax₀ ‖₂ + `atol`* indicates convergence.
+*‖ b-Ax ‖₂ < \* ‖ b-Ax₀ ‖₂ + `atol`* indicates convergence.
 
 ## See Also
 

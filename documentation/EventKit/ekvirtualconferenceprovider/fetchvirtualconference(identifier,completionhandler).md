@@ -28,7 +28,7 @@ func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier) a
 - (void) fetchVirtualConferenceForIdentifier:(EKVirtualConferenceRoomTypeIdentifier) identifier completionHandler:(void (^)(EKVirtualConferenceDescriptor *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To add calendar events using your virtual conference services, EventKit calls this method to retrieve the details for a virtual conference, including how a user joins the virtual conference. The room type identifier is one that your provider identified in a previous call to [`fetchAvailableRoomTypes(completionHandler:)`](./fetchavailableroomtypes%28completionhandler%29.md).
 

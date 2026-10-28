@@ -19,7 +19,7 @@ var transitionStyle: NSPageController.TransitionStyle { get set }
 @property NSPageControllerTransitionStyle transitionStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the transition style are discussed in [`NSPageController.TransitionStyle`](./transitionstyle-swift.enum.md).
 

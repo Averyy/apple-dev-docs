@@ -25,7 +25,7 @@ func adding(_ anObject: Any) -> Set<AnyHashable>
 - (NSSet<id> *) setByAddingObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new set formed by adding `anObject` to the receiving set.
 

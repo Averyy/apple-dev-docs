@@ -12,11 +12,11 @@ Creates a preview of a SwiftUI view using the specified traits and custom viewpo
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera])
+@freestanding(declaration)
+macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera])
 ```
 
-#### Overview
+## Overview
 
 This macro behaves like [`Preview(_:traits:_:body:)`](./preview%28_,traits,_,body%29.md) except that it also enables you to specify one or more [`PreviewCamera`](../DeveloperToolsSupport/previewcamera.md) instances that define custom, fixed viewpoints from which to view the preview:
 

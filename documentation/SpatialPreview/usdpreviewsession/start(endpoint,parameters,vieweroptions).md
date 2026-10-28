@@ -13,11 +13,11 @@ Connects to the specified endpoint and begins streaming the USD stage for spatia
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func start(endpoint: SpatialPreviewEndpoint, parameters: USDPreviewSession.OptimizationParameters = .processed([.optimized, .compressed]), viewerOptions: USDPreviewSession.SpatialViewerOptions = .default) async throws
+nonisolated(nonsending)
+final func start(endpoint: SpatialPreviewEndpoint, parameters: USDPreviewSession.OptimizationParameters = .processed([.optimized, .compressed]), viewerOptions: USDPreviewSession.SpatialViewerOptions = .default) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The session automatically optimizes and compresses the `USDStage` to ensure it runs well on visionOS. Pass [`USDPreviewSession.OptimizationParameters.unmodified`](./optimizationparameters/unmodified.md) to opt out of this feature. Disabling optimization may cause the session to throw [`USDPreviewSession.Error.assetUnshareable`](./error/assetunshareable.md).
 

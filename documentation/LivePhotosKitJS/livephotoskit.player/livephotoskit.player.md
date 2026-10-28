@@ -18,7 +18,7 @@ new targetElement(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The target element passed in, modified with additional properties and methods to allow it to act as a Live Photo player. If no target element was provided, then a new `HTMLDivElement` will be created and returned with Live Photo player functionality.
 

@@ -27,7 +27,7 @@ func CFAbsoluteTimeGetWeekOfYear(_ at: CFAbsoluteTime, _ tz: CFTimeZone!) -> Int
 extern SInt32 CFAbsoluteTimeGetWeekOfYear(CFAbsoluteTime at, CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 An integer (`1-53`) representing the week of the year specified by `at`. The numbering follows the ISO 8601 definition of week.
 

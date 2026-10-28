@@ -14,7 +14,7 @@
 @property (atomic, copy, nullable) NSNumber * stream;
 ```
 
-#### Discussion
+## Discussion
 
 An optional NSNumber that will have a value if this tap taps a specific device stream. The value represents the index of the hardware stream.
 

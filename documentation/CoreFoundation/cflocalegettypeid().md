@@ -25,7 +25,7 @@ func CFLocaleGetTypeID() -> CFTypeID
 extern CFTypeID CFLocaleGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFLocale opaque type.
 

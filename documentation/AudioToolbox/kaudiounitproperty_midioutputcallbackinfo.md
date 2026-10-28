@@ -24,7 +24,7 @@ var kAudioUnitProperty_MIDIOutputCallbackInfo: AudioUnitPropertyID { get }
 kAudioUnitProperty_MIDIOutputCallbackInfo
 ```
 
-#### Discussion
+## Discussion
 
 The host will also need to determine how many MIDI output streams the audio unit can generate (and the name for each of these outputs). Each MIDI output is a complete MIDI data stream, such as embodied by a MIDIEndpointRef in CoreMIDI.
 

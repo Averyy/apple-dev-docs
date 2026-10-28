@@ -24,7 +24,7 @@ let HMCharacteristicTypeMotionDetected: String
 extern NSString * const HMCharacteristicTypeMotionDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean and is `true` when motion has been detected.
 

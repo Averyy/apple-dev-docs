@@ -24,7 +24,7 @@ class UITextChecker
 @interface UITextChecker : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`UITextChecker`](./uitextchecker.md) spell-checks using a lexicon for a specific language. You can tell it to ignore specific words when spell-checking a particular document and you can have it learn words, which adds those words to the lexicon. You generally use one instance of [`UITextChecker`](./uitextchecker.md) per document, although you can use a single instance to spell-check related pieces of text if you want to share ignored words and other state.
 

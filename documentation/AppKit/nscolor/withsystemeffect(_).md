@@ -19,7 +19,7 @@ func withSystemEffect(_ systemEffect: NSColor.SystemEffect) -> NSColor
 - (NSColor *) colorWithSystemEffect:(NSColorSystemEffect) systemEffect;
 ```
 
-#### Discussion
+## Discussion
 
 Instead of defining separate colors for user interactions with a view, use this method to retrieve the appropriate color for use with those interactions. This method blends the current color with an appropriate modifier and returns the results. For example, specifying [`NSColor.SystemEffect.pressed`](./systemeffect/pressed.md) for the `systemEffect` parameter yields the color to use when you want your view to appear as if it had been pressed. This method takes the current appearance into account, returning an appropriately modified color for both light and dark appearances.
 

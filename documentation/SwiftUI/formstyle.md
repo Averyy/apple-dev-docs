@@ -22,7 +22,7 @@ The appearance and behavior of a form.
 @preconcurrency protocol FormStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the style for a single [`Form`](./form.md) or for all form instances in a view hierarchy, use the [`formStyle(_:)`](./view/formstyle%28_%29.md) modifier.
 

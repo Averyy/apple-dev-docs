@@ -23,7 +23,7 @@ var layoutDirection: UITraitEnvironmentLayoutDirection { get }
 @property (nonatomic, readonly) UITraitEnvironmentLayoutDirection layoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to determine whether the underlying environment uses a left-to-right or right-to-left orientation.
 

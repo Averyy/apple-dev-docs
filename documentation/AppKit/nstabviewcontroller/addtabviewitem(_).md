@@ -19,7 +19,7 @@ func addTabViewItem(_ tabViewItem: NSTabViewItem)
 - (void) addTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new tabs to a tab view controller. This method adds the tab’s associated view controller as a child of the tab view controller, so you do not need to call the [`addChild(_:)`](../nsviewcontroller/addchild%28_%29.md) method directly. The view for the new view controller is not loaded until its corresponding tab is selected by the user.
 

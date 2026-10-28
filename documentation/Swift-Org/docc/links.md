@@ -22,7 +22,7 @@ A directive for authoring authoring embedded previews of documentation links (si
 }
 ```
 
-#### Overview
+## Overview
 
 `@Links` gives authors flexibility in choosing how they want to highlight documentation on the page itself versus in the navigation sidebar. It also allows for mixing and matching different visual styles of topics.
 

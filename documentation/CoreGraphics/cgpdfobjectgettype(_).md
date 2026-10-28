@@ -25,7 +25,7 @@ func CGPDFObjectGetType(_ object: CGPDFObjectRef) -> CGPDFObjectType
 extern CGPDFObjectType CGPDFObjectGetType(CGPDFObjectRef object);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the type of the `object` parameter. See [Abstract Types for PDF Document Content](./cgpdfdocument.md#Abstract-Types-for-PDF-Document-Content).
 

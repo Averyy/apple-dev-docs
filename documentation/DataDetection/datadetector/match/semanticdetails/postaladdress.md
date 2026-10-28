@@ -21,7 +21,7 @@ A match that the data detector determines represents a postal address.
 struct PostalAddress
 ```
 
-#### Discussion
+## Discussion
 
 The data detector attempts to populate as much of the postal address as possible. The properties the detector supports include:
 

@@ -11,7 +11,7 @@ Returns the C++ `bool` value for the OSBoolean object.
 virtual bool getValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the C++ `bool` value of the OSBoolean object.
 

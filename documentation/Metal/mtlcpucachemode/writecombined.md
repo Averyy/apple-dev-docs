@@ -24,7 +24,7 @@ case writeCombined
 MTLCPUCacheModeWriteCombined
 ```
 
-#### Discussion
+## Discussion
 
 Write-combined memory is optimized for resources that the CPU writes into, but never reads. On some implementations, writes may bypass caches to avoid cache pollution. Read actions may perform very poorly.
 

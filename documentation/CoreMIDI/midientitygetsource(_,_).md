@@ -23,7 +23,7 @@ func MIDIEntityGetSource(_ entity: MIDIEntityRef, _ sourceIndex0: Int) -> MIDIEn
 extern MIDIEndpointRef MIDIEntityGetSource(MIDIEntityRef entity, ItemCount sourceIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a source, or `NULL` if an error occurred.
 

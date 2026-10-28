@@ -19,7 +19,7 @@ struct Attribute
 enum FSItemAttribute : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This type is an option set in Swift. In Objective-C, you use the cases of this enumeration to create a bit field.
 

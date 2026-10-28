@@ -22,7 +22,7 @@ nonisolated
 init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat? = nil, yEnd: CGFloat? = nil) where X : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to show horizontal intervals for one category:
 

@@ -24,7 +24,7 @@ case reload
 PKPaymentButtonTypeReload
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

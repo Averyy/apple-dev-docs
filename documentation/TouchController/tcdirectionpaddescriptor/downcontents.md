@@ -21,7 +21,7 @@ var downContents: TCControlContents? { get set }
 @property (nonatomic, strong, nullable) TCControlContents * downContents;
 ```
 
-#### Discussion
+## Discussion
 
 May be `nil`.
 

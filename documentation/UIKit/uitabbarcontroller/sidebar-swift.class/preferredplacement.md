@@ -22,7 +22,7 @@ var preferredPlacement: UITabBarController.Sidebar.Placement { get set }
 @property (nonatomic, assign) UITabBarControllerSidebarPlacement preferredPlacement;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `UITabBarControllerSidebarPlacementAutomatic`, the system resolves to the platform default. On iOS, this resolves to showing the tab bar by default. This property has no effect on platforms where multiple placements are supported, like on iPadOS, where the sidebar can be minimized into the top tab bar.
 

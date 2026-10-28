@@ -23,7 +23,7 @@ The host component of a URL if the URL conforms to RFC 3986; otherwise, nil.
 var host: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function resolves against the base `URL`.
 

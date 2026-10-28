@@ -19,7 +19,7 @@ func SCNetworkSetCreate(_ prefs: SCPreferences) -> SCNetworkSet?
 SCNetworkSetRefSCNetworkSetCreate(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The new network set. You must release the returned value.
 

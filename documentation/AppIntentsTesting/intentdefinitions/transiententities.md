@@ -21,7 +21,7 @@ Retrieve a transient app entity definition using subscript syntax.
 var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access individual transient entity definitions using subscript syntax with the entity’s type name as shown in the following example:
 

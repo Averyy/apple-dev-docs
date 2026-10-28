@@ -19,7 +19,7 @@ var label: String? { get set }
 @property (copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses this string as part of the name of the virtual machine in some system services. The label must be non-empty, less than or equal to 64 characters in length, and contain at least one non-whitespace character.
 

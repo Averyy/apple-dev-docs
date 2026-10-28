@@ -22,7 +22,7 @@ var isComplicationEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isComplicationEnabled) BOOL complicationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the app’s complication is installed on the active clock face. When the value of this property is [`false`](../../Swift/false.md), calls to the [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md) method fail immediately.
 

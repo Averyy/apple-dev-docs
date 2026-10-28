@@ -25,7 +25,7 @@ var allowsFloats: Bool { get set }
 @property BOOL allowsFloats;
 ```
 
-#### Discussion
+## Discussion
 
 By default, floating point values are allowed.
 

@@ -24,7 +24,7 @@ var numberOfLoops: Int32
 SInt32 numberOfLoops;
 ```
 
-#### Discussion
+## Discussion
 
 To loop forever, set `numberOfLoops` to `0`.
 

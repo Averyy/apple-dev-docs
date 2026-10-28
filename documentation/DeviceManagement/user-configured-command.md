@@ -11,11 +11,11 @@ Inform the device that it can continue past Setup Assistant and finish login.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |

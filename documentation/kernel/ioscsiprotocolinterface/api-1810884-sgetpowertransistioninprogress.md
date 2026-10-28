@@ -12,11 +12,11 @@ static bool sGetPowerTransistionInProgress (
  IOSCSIProtocolInterface *self );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a power state is in progress, otherwise `false`.
 
-#### Overview
+## Overview
 
 The sGetPowerTransistionInProgress method is a static function used as C->C++ glue for going behind the command gate.
 

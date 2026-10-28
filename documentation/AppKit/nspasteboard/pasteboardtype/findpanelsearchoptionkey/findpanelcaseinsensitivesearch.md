@@ -19,7 +19,7 @@ static let findPanelCaseInsensitiveSearch: NSPasteboard.PasteboardType.FindPanel
 extern NSPasteboardTypeFindPanelSearchOptionKey NSFindPanelCaseInsensitiveSearch;
 ```
 
-#### Discussion
+## Discussion
 
 The value [`true`](../../../../Swift/true.md) indicates a case-insensitive search; [`false`](../../../../Swift/false.md) indicates a case-sensitive search.
 

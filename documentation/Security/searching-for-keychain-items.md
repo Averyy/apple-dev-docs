@@ -5,13 +5,13 @@
 
 Find keychain items based on search criteria that you specify.
 
-#### Overview
+## Overview
 
 You find keychain items using a query dictionary that tells the keychain services API what item attributes to look for and what to return when a match is found. The query dictionary also lets you specify additional parameters to refine the search. For example, you can control case sensitivity when matching string attributes or limit the number of matches.
 
 As an example of conducting a search, consider the password item stored in [Adding a password to the keychain](./adding-a-password-to-the-keychain.md). After providing credentials (that your app stores) for a network service, the user works with your app for a while and then eventually moves on to something else. When the user returns, your app may need to reauthenticate with the server in order to continue working. This time the app loads the password from the keychain instead of bothering the user with a login view.
 
-##### Create a search query
+### Create a search query
 
 Begin the search by constructing a query dictionary:
 
@@ -29,7 +29,7 @@ Finally, the query requests from the password item both its attributes and its d
 
 > **Note**:  By default, your app can freely retrieve its own keychain items but not those of other apps. However, keychain services does provide mechanisms for broadening or narrowing that accessibility, for example, using the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) attribute.
 
-##### Initiate the search
+### Initiate the search
 
 After you’ve created the query dictionary, you initiate the search with a call to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function:
 
@@ -44,7 +44,7 @@ As you do with many Security framework functions, you first test the returned st
 
 When the search succeeds, the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function provides a result through its `item` parameter. The type of the returned item depends on the nature of the query, as described in [Item return result keys](./item-return-result-keys.md).
 
-##### Extract the result
+### Extract the result
 
 Because in your search you requested multiple return types and allowed only a single result, you should expect the result to be a dictionary. You recover the user name from the attribute value associated with the [`kSecAttrAccount`](./ksecattraccount.md) key. Meanwhile, you use the [`kSecValueData`](./ksecvaluedata.md) key to extract the password data, which you then convert to a string:
 

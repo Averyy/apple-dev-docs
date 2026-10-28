@@ -21,7 +21,7 @@ A map style that represents a satellite image of the area, including the paths o
 static var hybrid: MapStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 

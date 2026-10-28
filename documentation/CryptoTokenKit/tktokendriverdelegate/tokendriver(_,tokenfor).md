@@ -25,11 +25,11 @@ optional func tokenDriver(_ driver: TKTokenDriver, tokenFor configuration: TKTok
 - (TKToken *) tokenDriver:(TKTokenDriver *) driver tokenForConfiguration:(TKTokenConfiguration *) configuration error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The created token.
 
-#### Discussion
+## Discussion
 
 The system invokes this method to request creation of a token instance, which the [`instanceID`](../tktoken/configuration-swift.class/instanceid.md) property of the configuration you specify identifies.
 

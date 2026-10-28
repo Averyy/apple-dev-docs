@@ -24,7 +24,7 @@ func features(in image: CIImage) -> [CIFeature]
 - (NSArray<CIFeature *> *) featuresInImage:(CIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CIFeature`](../cifeature.md) objects. Each object represents a feature detected in the image.
 

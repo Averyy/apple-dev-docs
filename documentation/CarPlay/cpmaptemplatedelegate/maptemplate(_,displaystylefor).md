@@ -21,11 +21,11 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, displayStyleFor maneuver
 - (CPManeuverDisplayStyle) mapTemplate:(CPMapTemplate *) mapTemplate displayStyleForManeuver:(CPManeuver *) maneuver;
 ```
 
-#### Return Value
+## Return Value
 
 A display style that determines the visual layout for the maneuver.
 
-#### Discussion
+## Discussion
 
 The display style only applies to the second maneuver that you provide in the navigation session’s [`upcomingManeuvers`](../cpnavigationsession/upcomingmaneuvers.md) array.
 

@@ -23,7 +23,7 @@ subscript(i: Int) -> PKStrokePoint { get }
 - (PKStrokePoint *) objectAtIndexedSubscript:(NSUInteger) i;
 ```
 
-#### Return Value
+## Return Value
 
 The [`PKStrokePointReference`](../pkstrokepointreference.md) at control point subscript location i.
 

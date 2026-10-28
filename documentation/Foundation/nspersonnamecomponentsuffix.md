@@ -23,7 +23,7 @@ let NSPersonNameComponentSuffix: String
 extern NSString * const NSPersonNameComponentSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a name suffix component.
 

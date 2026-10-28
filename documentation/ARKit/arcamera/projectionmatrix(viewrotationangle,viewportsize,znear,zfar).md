@@ -20,11 +20,11 @@ func projectionMatrix(viewRotationAngle: CGFloat, viewportSize: CGSize, zNear: C
 - (simd_float4x4) projectionMatrixForViewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize zNear:(CGFloat) zNear zFar:(CGFloat) zFar;
 ```
 
-#### Return Value
+## Return Value
 
 The projection matrix for the given parameters.
 
-#### Discussion
+## Discussion
 
 The projection matrix returned provides an aspect fill for the provided viewport size and view angle. If zFar is set to 0, an infinite projection matrix will be returned.
 

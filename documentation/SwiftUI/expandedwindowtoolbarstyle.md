@@ -15,7 +15,7 @@ A window toolbar style which displays its title bar area above the toolbar.
 struct ExpandedWindowToolbarStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`expanded`](./windowtoolbarstyle/expanded.md) to construct this style.
 

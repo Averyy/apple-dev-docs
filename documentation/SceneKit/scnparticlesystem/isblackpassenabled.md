@@ -25,7 +25,7 @@ var isBlackPassEnabled: Bool { get set }
 @property (nonatomic, getter=isBlackPassEnabled) BOOL blackPassEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to enhance visual contrast when using additive blending. The default value is [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ static let `default`: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeDefault;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this mode with every audio session category.
 

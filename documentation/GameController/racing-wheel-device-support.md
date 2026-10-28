@@ -5,7 +5,7 @@
 
 Add support for racing wheel devices in macOS.
 
-#### Overview
+## Overview
 
 For macOS apps that support racing wheel devices, follow these steps for your app:
 

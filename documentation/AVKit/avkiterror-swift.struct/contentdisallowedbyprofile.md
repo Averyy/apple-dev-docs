@@ -15,7 +15,7 @@ An installed profile restricts access to this content.
 static var contentDisallowedByProfile: AVKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The user can’t override this restriction by entering the passcode, but they may be able to override it in the Settings app.
 

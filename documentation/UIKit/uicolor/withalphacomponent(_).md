@@ -24,11 +24,11 @@ func withAlphaComponent(_ alpha: CGFloat) -> UIColor
 - (UIColor *) colorWithAlphaComponent:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The new `UIColor` object.
 
-#### Discussion
+## Discussion
 
 A subclass with explicit opacity components should override this method to return a color with the specified alpha.
 

@@ -29,7 +29,7 @@ class MTLCompileOptions
 - [Logging shader debug messages](./logging-shader-debug-messages.md)
 - [Minimizing the binary size of a shader library](./minimizing-the-binary-size-of-a-shader-library.md)
 
-#### Overview
+## Overview
 
 You can configure the Metal compiler’s options by setting any or all of an [`MTLCompileOptions`](./mtlcompileoptions.md) instance’s properties, including the following:
 

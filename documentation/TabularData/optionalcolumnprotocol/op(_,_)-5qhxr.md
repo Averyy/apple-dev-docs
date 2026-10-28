@@ -23,7 +23,7 @@ static func / (lhs: Self, rhs: Self.WrappedElement) -> Column<Self.WrappedElemen
 
 Available when `WrappedElement` conforms to `FloatingPoint`.
 
-#### Return Value
+## Return Value
 
 A new column.
 

@@ -22,7 +22,7 @@ Conforming types represent items that can be placed in various locations in a to
 @preconcurrency protocol ToolbarContent
 ```
 
-#### Overview
+## Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

@@ -15,11 +15,11 @@ Returns the pipe for the specified endpoint address.
 virtual kern_return_t CopyPipe(uint8_t address, IOUSBHostPipe **pipe);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If the specified pipe doesn’t exist yet, but is part of the interface, this method creates the pipe before returning it.
 

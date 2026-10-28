@@ -23,11 +23,11 @@ func rotatingHeaderView() -> UIView?
 - (UIView *) rotatingHeaderView;
 ```
 
-#### Return Value
+## Return Value
 
 The header view or `nil` if there is no header view. If the current view controller is a tab bar controller, this method returns the header view of the view controller in the selected tab. If the current view controller is a navigation controller, this method returns the associated navigation bar.
 
-#### Discussion
+## Discussion
 
 In most cases, the header view is the navigation bar and the footer view is the tab bar. If you are implementing this method in a custom view controller that has its own custom header view, you can override this method to return that header view. The view returned from this method should already be part of your view controller’s view hierarchy.
 

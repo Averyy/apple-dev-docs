@@ -19,7 +19,7 @@ typealias SpeechErrorUPP = SpeechErrorProcPtr
 typedef SpeechErrorProcPtr SpeechErrorUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`SpeechErrorProcPtr`](./speecherrorprocptr.md) callback function.
 

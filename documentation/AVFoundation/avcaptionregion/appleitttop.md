@@ -22,7 +22,7 @@ class var appleITTTop: AVCaptionRegion { get }
 @property (class, readonly) AVCaptionRegion * appleITTTopRegion;
 ```
 
-#### Discussion
+## Discussion
 
 This region is available when working with iTT captions. It occupies the top 15% of the display area, and it uses a LRTB layout where a line progresses from left to right and the block extends from top to bottom. Lines are top justified.
 

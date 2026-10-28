@@ -24,7 +24,7 @@ func stopCachingImages(for assets: [PHAsset], targetSize: CGSize, contentMode: P
 - (void) stopCachingImagesForAssets:(NSArray<PHAsset *> *) assets targetSize:(CGSize) targetSize contentMode:(PHImageContentMode) contentMode options:(PHImageRequestOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method cancels image preparation for the specified assets with the specified options. Use it when image preparation that might be in progress is no longer needed. For example, if you prepare images for a collection view filled with photo thumbnails and then the user chooses a different thumbnail size for your collection view, call this method to cancel generating thumbnail images at the old size.
 

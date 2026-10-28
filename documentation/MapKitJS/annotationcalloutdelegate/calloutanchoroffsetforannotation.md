@@ -18,11 +18,11 @@ calloutAnchorOffsetForAnnotation?(
 ): DOMPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The method returns a `DOMPoint` that you set as the callout’s `anchorOffset` property.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method after [`calloutElementForAnnotation()`](./calloutelementforannotation.md) on the annotation’s callout delegate with `annotation` and `size` as parameters. The `size` parameter represents the size of the callout element, which MapKit JS determines. It’s an object with two number properties, `width` and `height`, and you can use them to compute the anchor offset.
 

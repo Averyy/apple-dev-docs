@@ -25,7 +25,7 @@ func setStageInRegionWithIndirectBuffer(_ indirectBuffer: any MTLBuffer, indirec
 - (void) setStageInRegionWithIndirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Lay out the data in the buffer as described in the [`MTLStageInRegionIndirectArguments`](../mtlstageinregionindirectarguments.md) structure.
 

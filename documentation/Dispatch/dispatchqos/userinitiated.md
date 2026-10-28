@@ -21,7 +21,7 @@ The quality-of-service class for tasks that prevent the user from actively using
 static let userInitiated: DispatchQoS
 ```
 
-#### Discussion
+## Discussion
 
 User-initiated tasks are second only to user-interactive tasks in their priority on the system. Assign this class to tasks that provide immediate results for something the user is doing, or that would prevent the user from using your app. For example, you might use this quality-of-service class to load the content of an email that you want to display to the user.
 

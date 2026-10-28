@@ -16,7 +16,7 @@ An optional value that indicates how to ship purchased items.
 ApplePayShippingType shippingType;
 ```
 
-#### Discussion
+## Discussion
 
 The shipping type is optional. If it is specified, it must be one or more of these values:
 

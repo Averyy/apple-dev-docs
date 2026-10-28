@@ -22,7 +22,7 @@ class ActivationConfiguration
 @interface UIWindowSceneActivationConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIWindowScene.ActivationConfiguration`](./activationconfiguration.md) object to request a new window scene from the system. An activation configuration requires a [`NSUserActivity`](../../Foundation/nsuseractivity.md) object that represents the scene’s content. You can specify a preferred presentation style for the new scene by including an optional [`UIWindowScene.ActivationRequestOptions`](./activationrequestoptions.md) object. The system automatically animates the transition to the new scene, but you can customize the transition by providing an optional targeted preview.
 

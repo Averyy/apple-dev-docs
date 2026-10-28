@@ -15,7 +15,7 @@ Allows your component to associate memory with a connection.
 void SetComponentInstanceStorage(ComponentInstance aComponentInstance, Handle theStorage);
 ```
 
-#### Discussion
+## Discussion
 
 When an application or component opens a connection to your component, the Component Manager sends your component an open request. In response to this open request, your component should set up an environment to service the connection. Typically, your component should allocate some memory for the connection. Your component can then use that memory to maintain state information appropriate to the connection.
 

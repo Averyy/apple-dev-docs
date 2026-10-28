@@ -21,7 +21,7 @@ Creates a row grouping from a list of groups.
 init<D>(groups: [(GroupingKey?, D)], groupKeysColumnName: String) where D : DataFrameProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The member data frames must all have the same columns (count, names, and types).
 

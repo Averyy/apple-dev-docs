@@ -24,7 +24,7 @@ func displayIfNeeded()
 - (void) displayIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method as needed to force an update to your layer’s contents outside of the normal update cycle. Doing so is generally not needed, though. The preferred way to update a layer is to call [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) and let the system update the layer during the next cycle.
 

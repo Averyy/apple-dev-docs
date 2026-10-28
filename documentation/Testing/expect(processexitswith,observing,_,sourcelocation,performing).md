@@ -21,11 +21,11 @@ Check that an expression causes the process to terminate in a given fashion.
 
 - [Exit testing](./exit-testing.md)
 
-#### Return Value
+## Return Value
 
 If the exit test passes, an instance of [`ExitTest.Result`](./exittest/result.md) describing the state of the exit test when it exited. If the exit test fails, the result is `nil`.
 
-#### Overview
+## Overview
 
 Use this overload of `#expect()` when an expression will cause the current process to terminate and the nature of that termination will determine if the test passes or fails. For example, to test that calling `fatalError()` causes a process to terminate:
 

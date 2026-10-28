@@ -16,11 +16,11 @@ Attempts to login to the LUN.
 IOReturn (*submitLogin)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess login has successlly begun.
 
-#### Discussion
+## Discussion
 
 This call begins the login process. The login object should be configured prior to this call. If kIOReturnSuccess is returned from this call then the loginCompletion routine will be called when the login completes (successfully or unsuccesfully).
 

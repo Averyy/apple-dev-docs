@@ -17,7 +17,7 @@ case printingReplyLater
 NSPrintingReplyLater
 ```
 
-#### Discussion
+## Discussion
 
 The result of printing cannot be returned immediately, for example, if printing will cause the presentation of a sheet. If your method returns `NSPrintingReplyLater` it must always invoke [`reply(toOpenOrPrint:)`](../reply%28toopenorprint%29.md) when the entire print operation has been completed, successfully or not.
 

@@ -22,7 +22,7 @@ func AudioSessionRemovePropertyListener(_ inID: AudioSessionPropertyID) -> OSSta
 extern OSStatus AudioSessionRemovePropertyListener(AudioSessionPropertyID inID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

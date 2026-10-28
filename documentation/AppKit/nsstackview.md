@@ -19,11 +19,11 @@ class NSStackView
 @interface NSStackView : NSView
 ```
 
-#### Overview
+## Overview
 
 A stack view employs Auto Layout (the system’s constraint-based layout feature) to arrange and align an array of views according to your specification. For more information on using a stack view effectively, see [`NSLayoutConstraint`](./nslayoutconstraint.md).
 
-##### Basic Features of Stack Views
+### Basic Features of Stack Views
 
 A stack view supports vertical and horizontal layouts and interacts dynamically with window resizing and Cocoa animations. You can easily reconfigure the contents of a stack view at runtime. That is, after you create and configure a stack view in Interface Builder, you can add or remove views dynamically without explicitly working with layout constraints. For example, if you configure a stack view with three checkboxes and dynamically add a fourth, the stack view automatically adds constraints as needed, according to the stack view’s configuration. The new checkbox gains dynamic layout configuration from the stack view.
 
@@ -33,13 +33,13 @@ Stack views are nestable: a stack view is a valid element in the [`views`](./nss
 
 For more information on [`NSStackView`](./nsstackview.md), see [Organize Your User Interface with a Stack View](./organize-your-user-interface-with-a-stack-view.md).
 
-##### Layout Direction and Gravity Areas
+### Layout Direction and Gravity Areas
 
 A stack view has three so-called *gravity areas* that each identify a section of the stack view’s layout. A horizontal stack view, which is the default type, has a leading, a center, and a trailing gravity area. The ordering of these areas depends on the value of the stack view’s [`userInterfaceLayoutDirection`](./nsview/userinterfacelayoutdirection.md) property (inherited from the [`NSView`](./nsview.md) class). In a left to right language, the leading gravity area in a horizontal stack view is on the left. To enforce a left to right layout independently of language, explicitly set the layout direction by calling the inherited [`userInterfaceLayoutDirection`](./nsview/userinterfacelayoutdirection.md) method on your stack view instance.
 
 To specify vertical layout, use the [`orientation`](./nsstackview/orientation.md) property and the [`NSUserInterfaceLayoutOrientation.vertical`](./nsuserinterfacelayoutorientation/vertical.md) constant from the [`NSUserInterfaceLayoutOrientation`](./nsuserinterfacelayoutorientation.md) enumeration. In a vertical stack view, the gravity areas always are top, center, and bottom.
 
-##### View Detachment and Hiding
+### View Detachment and Hiding
 
 A stack view can automatically detach and reattach its views in response to layout changes, such as window resizing performed by the user, or resizing/repositioning of another view in the same view hierarchy. A view in a detached state is not present in the stack view’s view hierarchy, but it still consumes memory. A view that is hidden, but not detached, remains part of the view hierarchy and continues to participate in Auto Layout, but it is not visible and doesn’t receive input events.
 

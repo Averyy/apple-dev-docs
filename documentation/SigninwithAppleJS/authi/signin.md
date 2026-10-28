@@ -21,7 +21,7 @@ Promise<SignInResponseI|SignInErrorI>|void signIn(
 
 - [Configuring your webpage for Sign in with Apple](../../SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md)
 
-#### Discussion
+## Discussion
 
 By default, the [`signIn`](./signin.md) method uses the configuration object created during initialization. However, you can override the initialization values by passing in a new configuration object.
 

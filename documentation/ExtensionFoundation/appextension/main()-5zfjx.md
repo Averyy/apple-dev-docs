@@ -22,7 +22,7 @@ The main entry point for an app extension that doesn’t present any UI.
 @preconcurrency static func main() throws
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. When the host launches your app extension in a new process, the system calls this method to create your custom [`AppExtension`](../appextension.md) type and prepare your extension for requests from the host app.
 

@@ -15,11 +15,11 @@ Determines if the host bus adapter (HBA) manages devices in response to a call f
 virtual kern_return_t UserDoesHBAPerformDeviceManagement(bool *result);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of determining device management. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 This method determines if the HBA manages target device creation and destruction.
 

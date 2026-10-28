@@ -24,7 +24,7 @@ init(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object.
 

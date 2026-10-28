@@ -28,7 +28,7 @@ func deleteBackward()
 
 - [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
-#### Discussion
+## Discussion
 
 Remove the character just before the cursor from your class’s backing store and redisplay the text.
 

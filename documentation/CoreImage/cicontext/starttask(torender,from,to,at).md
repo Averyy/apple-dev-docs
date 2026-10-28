@@ -24,11 +24,11 @@ func startTask(toRender image: CIImage, from fromRect: CGRect, to destination: C
 - (CIRenderTask *) startTaskToRender:(CIImage *) image fromRect:(CGRect) fromRect toDestination:(CIRenderDestination *) destination atPoint:(CGPoint) atPoint error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous [`CIRenderTask`](../cirendertask.md) to render the image to the specified destination.
 
-#### Discussion
+## Discussion
 
 This method crops the image to the specified rectangle and renders the result at the indicated origin point. If the image’s [`extent`](../ciimage/extent.md) property and `fromRect` argument values are infinite, this call renders the image’s (0, 0) point starting from the origin `atPoint`.
 

@@ -26,7 +26,7 @@ class func createDocumentAction(withIntent intent: UIDocument.CreationIntent) ->
 
 - [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 Use this method to create an action that you can assign to your [`primaryAction`](./primaryaction.md) or [`secondaryAction`](./secondaryaction.md). When the system triggers the action, it calls your [`UIDocumentBrowserViewControllerDelegate`](../../uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](../../uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method. For more information, see [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md).
 

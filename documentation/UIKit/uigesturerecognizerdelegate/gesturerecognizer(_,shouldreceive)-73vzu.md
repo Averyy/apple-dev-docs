@@ -23,11 +23,11 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *) gestureRecognizer shouldReceivePress:(UIPress *) press;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) (the default) to allow the gesture recognizer to examine the press object, or [`false`](../../Swift/false.md) to prevent the gesture recognizer from seeing this press object.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before the [`pressesBegan(_:with:)`](../uigesturerecognizer/pressesbegan%28_,with%29.md) method of the gesture recognizer.
 

@@ -16,11 +16,11 @@ Obtains HID elements that match the criteria contained in the matching dictionar
 CFArrayRef IOHIDDeviceCopyMatchingElements(IOHIDDeviceRef device, CFDictionaryRef matching, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns CFArrayRef containing multiple IOHIDElement object.
 
-#### Discussion
+## Discussion
 
 Matching keys are prefixed by kIOHIDElement and declared in <IOKit/hid/IOHIDKeys.h>. Passing a NULL dictionary will result in all device elements being returned.
 

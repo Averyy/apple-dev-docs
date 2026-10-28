@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Provide a consistent and flexible way to configure your library.
 
-#### Overview
+## Overview
 
 Swift Configuration provides a pattern for configuring libraries that works across various configuration sources: environment variables, JSON files, and remote configuration services.
 
@@ -24,7 +24,7 @@ Adopt this pattern in three steps:
 
 This approach makes your library configurable regardless of the user’s chosen configuration source and composes well with other libraries.
 
-##### Define your configuration type
+### Define your configuration type
 
 Start by defining a type that encapsulates all the configuration options for your library.
 
@@ -58,7 +58,7 @@ public struct HTTPClientConfiguration {
 }
 ```
 
-##### Add a convenience method
+### Add a convenience method
 
 Next, extend your configuration type to provide a method that accepts a [`ConfigReader`](./configreader.md) as a parameter. In the example below, we use an initializer.
 
@@ -84,7 +84,7 @@ extension HTTPClientConfiguration {
 
 > 💡 **Tip**: To make it easier for your library’s adopters to configure their application, document the configuration values your convenience method is extracting, like in the example above.
 
-##### Example: Adopting your library
+### Example: Adopting your library
 
 Once you’ve made your library configurable, users can easily configure it from various sources. Here’s how someone might configure your library using environment variables:
 
@@ -119,7 +119,7 @@ export DEBUG_LOGGING=true
 
 Your library now adapts to the user’s environment without any code changes.
 
-##### Work with secrets
+### Work with secrets
 
 Mark configuration values that contain sensitive information as secret to prevent them from being logged:
 

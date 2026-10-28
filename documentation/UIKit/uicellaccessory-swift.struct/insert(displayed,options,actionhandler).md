@@ -19,7 +19,7 @@ Creates an insert system accessory with the specified display state, configurati
 static func insert(displayed: UICellAccessory.DisplayedState = .whenEditing, options: UICellAccessory.InsertOptions = InsertOptions(), actionHandler: UICellAccessory.ActionHandler? = nil) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured insert cell accessory. This accessory is a plus sign inside of a circle with the default system green color. This accessory appears on the leading edge of the cell.
 

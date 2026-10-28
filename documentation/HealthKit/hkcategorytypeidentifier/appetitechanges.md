@@ -24,7 +24,7 @@ static let appetiteChanges: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierAppetiteChanges;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueAppetiteChanges`](../hkcategoryvalueappetitechanges.md) enumeration.
 

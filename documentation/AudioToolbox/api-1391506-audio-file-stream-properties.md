@@ -5,7 +5,7 @@
 
 Audio file stream properties contain information that you can use to help interpret the audio data in a stream.
 
-#### Overview
+## Overview
 
 Use these property IDs when calling the `AudioFileStreamGetProperty` function.
 

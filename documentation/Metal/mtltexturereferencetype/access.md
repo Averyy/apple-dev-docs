@@ -24,7 +24,7 @@ var access: MTLBindingAccess { get }
 @property (readonly) MTLBindingAccess access;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the type of access qualifiers (read-only, write-only, or read-write) used in the Metal shading language code. For information on possible values, see [`MTLArgumentAccess`](../mtlargumentaccess.md).
 

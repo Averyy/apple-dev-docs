@@ -21,7 +21,7 @@ A notification that the coordinator posts after its registered stores change.
 static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the changed store coordinator. The framework posts the notification to an internal thread. Move to a known thread before peforming any work.
 

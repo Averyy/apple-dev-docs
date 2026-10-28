@@ -5,11 +5,11 @@
 
 A Boolean value that indicates whether the animation plays from beginning to end, then again from end to beginning.
 
-#### Overview
+## Overview
 
 The default value is `false`, which doesn’t reverse the animation. Set this property to `true` to play the animation once to the end, and once more in reverse.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform bool reverses = false

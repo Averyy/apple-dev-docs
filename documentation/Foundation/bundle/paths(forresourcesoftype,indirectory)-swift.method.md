@@ -25,11 +25,11 @@ func paths(forResourcesOfType ext: String?, inDirectory subpath: String?) -> [St
 - (NSArray<NSString *> *) pathsForResourcesOfType:(NSString *) ext inDirectory:(NSString *) subpath;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the full pathnames for all bundle resources matching the specified criteria. This method returns an empty array if no matching resource files are found.
 
-#### Discussion
+## Discussion
 
 This method provides a means for dynamically discovering multiple bundle resources of the same type. If `extension` is an empty string or `nil`, all bundle resources in the specified resource directory are returned.
 

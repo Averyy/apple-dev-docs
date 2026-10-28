@@ -19,7 +19,7 @@ class NSPrintInfo
 @interface NSPrintInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 A shared [`NSPrintInfo`](./nsprintinfo.md) object is automatically created for an app and is used by default for all printing jobs for that app. The printing information in an [`NSPrintInfo`](./nsprintinfo.md) object is stored in a dictionary. To access the standard attributes in the dictionary directly, this class defines a set of keys and provides the [`dictionary()`](./nsprintinfo/dictionary%28%29.md) method. You can also initialize an instance of this class using the [`init(dictionary:)`](./nsprintinfo/init%28dictionary%29.md) method.
 

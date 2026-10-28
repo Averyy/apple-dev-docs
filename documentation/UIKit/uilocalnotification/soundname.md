@@ -24,7 +24,7 @@ var soundName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * soundName;
 ```
 
-#### Discussion
+## Discussion
 
 For this property, specify the filename (including extension) of a sound resource in the app’s main bundle or [`UILocalNotificationDefaultSoundName`](../uilocalnotificationdefaultsoundname.md) to request the default system sound. When the system displays an alert for a local notification or badges an app icon, it plays this sound. The default value is `nil` (no sound). Sounds that last longer than 30 seconds are not supported. If you specify a file with a sound that plays over 30 seconds, the default sound is played instead.
 

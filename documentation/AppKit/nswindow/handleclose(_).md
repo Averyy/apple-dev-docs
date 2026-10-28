@@ -19,7 +19,7 @@ func handleClose(_ command: NSCloseCommand) -> Any?
 - (id) handleCloseScriptCommand:(NSCloseCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Extracts `close` command arguments from the `command` object and uses them to determine how to close the associated document—specifically, whether to ignore unsaved changes, save changes automatically, or ask the user—and identifies the file to save the document to. By default, the window saves the document to the file that was opened or previously saved to. Otherwise, the window saves it with an “untitled” name.
 

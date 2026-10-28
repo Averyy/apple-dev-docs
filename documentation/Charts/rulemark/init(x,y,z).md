@@ -20,7 +20,7 @@ nonisolated
 init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A 3D RuleMark requires exactly two numeric points and one numeric range.
 

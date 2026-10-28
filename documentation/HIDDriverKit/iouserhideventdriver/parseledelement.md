@@ -16,11 +16,11 @@ Parses an element to see if it supports LED usages.
 virtual bool parseLEDElement(IOHIDElement *element);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This method checks the element to determine if it contains LED data suitable for dispatching in an event. If it does, the method stores a reference to the element for later use. When the driver object receives subsequent reports from the device, it uses the information in the stored LED elements to dispatch LED-specific events.
 

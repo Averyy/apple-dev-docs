@@ -19,11 +19,11 @@ class func publishedServiceRecord(with serviceDict: [AnyHashable : Any]!) -> Sel
 + (instancetype) publishedServiceRecordWithDictionary:(NSDictionary *) serviceDict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPServiceRecord * with the attributes specified in the provided dictionary.
 
-#### Discussion
+## Discussion
 
 Each entry in the dictionary representing the service contains the individual attributes. Each attribute in the dict is keyed by a string that must begin with a hex number representing the attribute ID. The key string may contain additional characters if desired as long as they follow a space after the ID hex string. The attribute value must follow the dictionary format described by IOBluetoothSDPDataElement. This dictionary format allows a service dict to be created as a plist file and then loaded into the system rather than built up in code. See the example code for an example of how can be done.
 

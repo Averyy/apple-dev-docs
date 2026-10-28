@@ -16,7 +16,7 @@
 kSENSE_KEY_NOT_READY
 ```
 
-#### Discussion
+## Discussion
 
 Device server is not ready.
 

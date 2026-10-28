@@ -23,7 +23,7 @@ func enumeratorForPendingItems() -> any NSFileProviderPendingSetEnumerator
 - (id<NSFileProviderPendingSetEnumerator>) enumeratorForPendingItems;
 ```
 
-#### Discussion
+## Discussion
 
 When the set of pending items changes, the system calls [`pendingItemsDidChange(completionHandler:)`](../nsfileproviderreplicatedextension/pendingitemsdidchange%28completionhandler%29.md).
 

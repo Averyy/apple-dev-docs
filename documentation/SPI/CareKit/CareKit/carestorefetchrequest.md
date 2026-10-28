@@ -18,7 +18,7 @@ A property wrapper useful for streaming data from a CareKit store.
 @MainActor struct CareStoreFetchRequest<Result, Query>
 ```
 
-#### Overview
+## Overview
 
 The property wrapper offers a few initializers matching the different entities available in the CareKit store. Each initializer requires a query that is used to locate the desired data.
 

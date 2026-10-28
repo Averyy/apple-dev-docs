@@ -17,7 +17,7 @@ Replacement for `Swift.stride(from:to:by:)` for MLXArray indexing.
 func stride(from start: Int? = nil, to end: Int? = nil, by stride: Int? = nil) -> MLXSlice
 ```
 
-#### Discussion
+## Discussion
 
 Typicaly written with `.stride`:
 
@@ -27,7 +27,7 @@ let a = MLXArray(...)
 print(a[.stride(to: 8, by: 2)])
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](./indexing.md)
 - [`stride(from:to:by:)`](./mlxarrayindex/stride%28from,to,by%29.md)

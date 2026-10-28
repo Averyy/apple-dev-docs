@@ -25,7 +25,7 @@ func BNNSTensorGetAllocationSize(_ tensor: UnsafePointer<BNNSTensor>) -> Int
 size_t BNNSTensorGetAllocationSize(const BNNSTensor *tensor);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum allocation size, in bytes, of the specified tensor.
 

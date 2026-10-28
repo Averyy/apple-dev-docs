@@ -24,7 +24,7 @@ var outputs: [AVAudioSessionPortDescription] { get }
 @property (nonatomic, readonly) NSArray<AVAudioSessionPortDescription *> * outputs;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`AVAudioSessionPortDescription`](../avaudiosessionportdescription.md) objects representing the audio outputs associated with the current audio route for a session.
 

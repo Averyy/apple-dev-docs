@@ -15,11 +15,11 @@ Cost metrics breakdown by attribution type.
 object CostMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `CostMetrics` reports monetary cost values segmented by attribution type.
 
-##### Example
+### Example
 
 ```json
 {

@@ -15,11 +15,11 @@ Creates a new player object.
 new Player();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new player object.
 
-#### Discussion
+## Discussion
 
 After the player object is created, you must associate a [`Playlist`](../playlist.md) object with the player before media items can be played.
 

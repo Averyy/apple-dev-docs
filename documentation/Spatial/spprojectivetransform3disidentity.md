@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DIsIdentity(SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is the identity transform.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is the identity transform.
 

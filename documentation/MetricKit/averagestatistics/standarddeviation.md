@@ -22,7 +22,7 @@ let standardDeviation: Double?
 
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` when the standard deviation is not available.
 

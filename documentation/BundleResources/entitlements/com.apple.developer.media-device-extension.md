@@ -15,7 +15,7 @@ An array of media sharing protocol identifiers that an extension supports.
 - **Name**: `com.apple.developer.media-device-extension` (Media Sharing Extension)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your media device extension and its container app to integrate a third-party media sharing protocol into the system route picker. The entitlement’s value is an array of protocol identifiers using the `media-device-protocol.` prefix:
 

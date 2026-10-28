@@ -16,7 +16,7 @@ A CSS color, a gradient, or a pattern used to stroke lines and shapes.
 attribute custom strokeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property may be set to any CSS color, to a pattern object, or to a linear or radial gradient object. When the `stroke()`, `strokeRect()`, or `strokeText()` operation is performed, the lines are drawn using the style specified by `strokeStyle`.
 

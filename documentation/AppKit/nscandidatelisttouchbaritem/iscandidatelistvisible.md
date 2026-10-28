@@ -19,7 +19,7 @@ var isCandidateListVisible: Bool { get }
 @property (readonly, getter=isCandidateListVisible) BOOL candidateListVisible;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), then the candidate list is currently visible, [`false`](../../Swift/false.md) otherwise.
 

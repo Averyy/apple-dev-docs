@@ -25,7 +25,7 @@ let kCFPreferencesAnyHost: CFString
 extern CFStringRef const kCFPreferencesAnyHost;
 ```
 
-#### Discussion
+## Discussion
 
 This option is not supported.
 

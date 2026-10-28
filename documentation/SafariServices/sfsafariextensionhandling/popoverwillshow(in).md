@@ -23,7 +23,7 @@ optional func popoverWillShow(in window: SFSafariWindow)
 
 - [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
-#### Discussion
+## Discussion
 
 This method is called when a popover associated with the app extension is triggered.
 

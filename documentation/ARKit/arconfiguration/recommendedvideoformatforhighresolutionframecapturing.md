@@ -20,7 +20,7 @@ class var recommendedVideoFormatForHighResolutionFrameCapturing: ARConfiguration
 @property (class, nonatomic, readonly, nullable) ARVideoFormat * recommendedVideoFormatForHighResolutionFrameCapturing;
 ```
 
-#### Discussion
+## Discussion
 
 The framework determines the resolution of the camera feed and still-image capture for this format. Call this function when your app requires a high-resolution still capture regardless of format specifics. If instead, your app requires a particular resolution, iterate over the [`supportedVideoFormats`](./supportedvideoformats.md) array and choose a format with the desired configuration where [`isRecommendedForHighResolutionFrameCapturing`](./videoformat-swift.class/isrecommendedforhighresolutionframecapturing.md) is `true`.
 

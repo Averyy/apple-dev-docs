@@ -5,7 +5,7 @@
 
 Balance the appearance and performance of your AR experiences with modeling strategies.
 
-#### Overview
+## Overview
 
 AR Quick Look supports modeling features you can use to present your app’s virtual content at its most vivid and compelling. Make sure to optimize the performance of your AR experience by managing and testing the features you incorporate.
 
@@ -13,7 +13,7 @@ AR Quick Look uses RealityKit to display AR experiences, and you can design your
 
 ![Screenshot of two wooden toys side-by-side to demonstrate the effect of adding the model features. The image of the toy on the left is pictured without multiscattering roughtness and clearcoat; the image of the toy on the right uses multiscattering roughness and clearcoat.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3418297@2x.png)
 
-##### Add Gloss to Your 3D Content with Clearcoat
+### Add Gloss to Your 3D Content with Clearcoat
 
 You can add shine and highlights to the models in your AR experience with the clearcoat option.
 
@@ -28,7 +28,7 @@ The following figure shows the `clearcoat` parameter varying between 0 and 1 ver
 
 ![Screenshot showing an array of 3D models, each with varying clearcoat parameters. clearcoat varys between 0 and 1 vertically, and clearcoatRoughness varys between 0 and 1 horizontally. The bottom-right model is dark and matte in appearance, whereas the upper-left model is glossy in appearance.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3405896@2x.png)
 
-##### Design for Lighting and Reflection Accuracy
+### Design for Lighting and Reflection Accuracy
 
 RealityKit’s multiscattering roughness affects how light reflects from––or diffuses on––the surface of models with a matte finish. By displaying virtual content using RealityKit, AR Quick Look realistically honors the roughness, metallic, and specular components of a model. Configure your 3D assets’ roughness, metallic, and specular inputs to create the right blend of reflection and diffusion.
 
@@ -46,7 +46,7 @@ For dielectrics, the specular component enables you to control the reflectivenes
 
 > **Note**:  Environment lighting in AR Quick Look supports multiple models in iOS 13. To ensure your virtual content displays with the most realistic reflections in your app, check the iOS version at runtime and load multiple models only in iOS 13.
 
-##### Optimize Model Geometry and Transparency
+### Optimize Model Geometry and Transparency
 
 While utilizing features to present virtual content effectively, take steps to keep the AR experience responsive. Because each model mesh results in a draw call, for best results, limit the number of meshes in a USDZ file to around 50. To reduce draw calls while maintaining the same amount of geometry, merge objects that share a material. However, be aware that merging may not afford performance gains in situations where the result prevents the renderer from culling.
 
@@ -54,13 +54,13 @@ The cost of projective and raytraced shadows depends on the complexity of your m
 
 Transparency in models increases the number of times the fragment shader is run per pixel, which is expensive when the user views your model straight on or in full screen. To improve performance by reducing the time your app spends shading pixels, use transparency sparingly when authoring your app’s virtual content.
 
-##### Control Texture Memory
+### Control Texture Memory
 
 For best results, size your textures to 1024 x 1024 pixels or less, and don’t surpass a size of 2048 x 2048 pixels. If you have multiple small textures, combine them into one larger texture using texture coordinates to specify their location. To ensure your textures fit into memory as required for AR Quick Look to display your model, cap your total number of textures at six.
 
 If you observe any resolution discrepancies at runtime, switch to testing on a device with more memory and check for any differences. AR Quick Look automatically generates mipmaps for your model’s textures. AR Quick Look also scales down your texture at runtime if needed to keep its memory use under a certain budget depending on the device.
 
-##### Test Features on Various Devices
+### Test Features on Various Devices
 
 When developing your model for optimal performance, begin with a conservative configuration to ensure AR Quick Look supports your model on earlier iOS devices (iPhone 6s, and first-generation iPad Pro). By starting on the earliest devices that support AR Quick Look, you avoid having to prune back your virtual content’s features during the testing phase.
 

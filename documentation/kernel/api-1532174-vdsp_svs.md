@@ -15,7 +15,7 @@ Calculates the sum of signed squares in a single-precision vector.
 void vDSP_svs(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the mean of the signed squares of the first `N` elements of `A` and writes the result to `C`:
 

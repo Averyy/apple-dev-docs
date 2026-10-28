@@ -22,7 +22,7 @@ string PhasedReleaseState
 - `PAUSED`: The App Store paused the phased release, at your request.
 - `COMPLETE`: The process released the update to all devices that have automatic updates enabled. The phased-release process is complete.
 
-#### Discussion
+## Discussion
 
 For more information about phased releases including pausing an update, see [Release a version update in phases](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases/).
 

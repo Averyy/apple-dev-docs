@@ -20,7 +20,7 @@ Directs the motion-estimation session to emit all pending frames and waits for c
 extern OSStatus VTMotionEstimationSessionCompleteFrames(VTMotionEstimationSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 Directs the motion-estimation session to emit all pending frames, then waits for all outstanding requests to complete, then returns.
 

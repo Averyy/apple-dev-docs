@@ -24,7 +24,7 @@ init(title: String?, urlDescriptors URLDescriptors: [EKVirtualConferenceURLDescr
 - (instancetype) initWithTitle:(NSString *) title URLDescriptors:(NSArray<EKVirtualConferenceURLDescriptor *> *) URLDescriptors conferenceDetails:(NSString *) conferenceDetails;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes a virtual conference.
 

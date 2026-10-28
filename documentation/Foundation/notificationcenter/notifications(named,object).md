@@ -22,11 +22,11 @@ Returns an asynchronous sequence of notifications produced by this center for a 
 func notifications(named name: Notification.Name, object: (any AnyObject & Sendable)? = nil) -> NotificationCenter.Notifications
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of notifications from the center.
 
-#### Discussion
+## Discussion
 
 Use this method to receive notifications from the center as an [`AsyncSequence`](../../Swift/asyncsequence.md). You iterate over this sequence with `for`-`await`-`in` syntax.
 

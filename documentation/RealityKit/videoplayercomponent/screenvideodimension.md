@@ -20,7 +20,7 @@ The video resolution size.
 var screenVideoDimension: SIMD2<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property has the format `[width, height]`, for example, `[1920, 1080]`.
 

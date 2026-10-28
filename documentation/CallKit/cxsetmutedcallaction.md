@@ -23,7 +23,7 @@ class CXSetMutedCallAction
 @interface CXSetMutedCallAction : CXCallAction
 ```
 
-#### Overview
+## Overview
 
 [`CXSetMutedCallAction`](./cxsetmutedcallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md). When the user or the system mutes a call, the provider sends [`provider(_:perform:)`](./cxproviderdelegate/provider%28_,perform%29-4u3yu.md) to its delegate. The provider’s delegate calls the [`fulfill()`](./cxaction/fulfill%28%29.md) method to indicate that the action was successfully performed. When a caller mutes a call, that caller is unable to communicate with other callers until they unmute the call. A muted caller still receives communication from other unmuted callers.
 

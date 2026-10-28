@@ -25,7 +25,7 @@ init(symbol: String)
 - (instancetype) initWithSymbol:(NSString *) symbol;
 ```
 
-#### Return Value
+## Return Value
 
 A new unit with the specified symbol.
 

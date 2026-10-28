@@ -23,7 +23,7 @@ class CMPedometer
 @interface CMPedometer : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a pedometer object to retrieve step counts and other information about the distance traveled and the number of floors ascended or descended. The pedometer object manages a cache of historic data that you can query or you can ask for live updates as the data is processed.
 

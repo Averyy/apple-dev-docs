@@ -19,11 +19,11 @@ func sendAction(_ action: Selector?, to target: Any?) -> Bool
 - (BOOL) sendAction:(SEL) action to:(id) target;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the message was successfully sent; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method uses the [`sendAction(_:to:from:)`](../nsapplication/sendaction%28_,to,from%29.md) method of `NSApplication` to invoke the specified method on an object. The receiver is passed as the parameter to the action message. This method is invoked primarily by the  [`trackMouse(with:in:of:untilMouseUp:)`](../nscell/trackmouse%28with,in,of,untilmouseup%29.md) method of `NSCell`.
 

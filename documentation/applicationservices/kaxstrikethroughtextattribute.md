@@ -19,7 +19,7 @@ var kAXStrikethroughTextAttribute: Unmanaged<CFString>
 CFStringRef kAXStrikethroughTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

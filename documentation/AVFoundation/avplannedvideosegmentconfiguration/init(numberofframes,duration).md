@@ -24,11 +24,11 @@ init(numberOfFrames frameCount: Int, duration: CMTime)
 - (instancetype) initWithNumberOfFrames:(NSInteger) frameCount duration:(CMTime) duration;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of AVPlannedVideoSegmentConfiguration.
 
-#### Discussion
+## Discussion
 
 For best results, frameCount and duration should be greater or equal to the minimumFrameCount and minimumDuration of AVPlannedVideoSegmentBoundaryGuidelines respectively. This initializer throws NSInvalidArgumentException if frameCount is less than or equal to 0, or duration is not numeric, or duration is less than or equal to 0.
 

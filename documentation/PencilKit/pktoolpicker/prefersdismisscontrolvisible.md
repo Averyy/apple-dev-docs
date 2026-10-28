@@ -19,7 +19,7 @@ var prefersDismissControlVisible: Bool { get set }
 @property (nonatomic) BOOL prefersDismissControlVisible;
 ```
 
-#### Discussion
+## Discussion
 
 By default this is true.
 

@@ -15,7 +15,7 @@ Support Apple In-App Purchases and interactions with the App Store.
 - visionOS 1.0+
 - watchOS 6.2+
 
-#### Overview
+## Overview
 
 Use the StoreKit framework to provide the following features and services for your apps and Apple In-App Purchases:
 

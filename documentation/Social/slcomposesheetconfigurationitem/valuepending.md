@@ -21,7 +21,7 @@ var valuePending: Bool { get set }
 @property (nonatomic, assign) BOOL valuePending;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) if a progress indicator should be displayed, to show users that a configuration item’s value is about to display. The default value of this property is [`false`](../../Swift/false.md).
 

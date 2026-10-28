@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text block object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for `NSTextBlock`.
 

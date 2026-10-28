@@ -24,7 +24,7 @@ struct PHASEPushStreamBufferOptions
 enum PHASEPushStreamBufferOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When your app provides audio buffers that PHASE plays through a [`PHASEPushStreamNode`](./phasepushstreamnode.md), use this structure to inform PHASE of a particular buffer’s priority.
 

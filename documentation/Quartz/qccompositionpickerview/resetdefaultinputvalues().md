@@ -21,7 +21,7 @@ func resetDefaultInputValues()
 - (void) resetDefaultInputValues;
 ```
 
-#### Discussion
+## Discussion
 
 This method resets the defaults that were set with the method [`setDefaultValue(_:forInputKey:)`](./setdefaultvalue%28_,forinputkey%29.md).
 

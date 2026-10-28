@@ -23,7 +23,7 @@ var state: UIControl.State { get }
 @property (nonatomic, readonly) UIControlState state;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a bitmask of the constants in the [`UIControl.State`](./state-swift.struct.md) type. A control can be in more than one state at a time. For example, it can be focused and highlighted at the same time. You can also get the values for individual states using the properties of this class.
 

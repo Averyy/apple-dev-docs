@@ -29,7 +29,7 @@ func layoutSubviews()
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 - [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
-#### Discussion
+## Discussion
 
 The default implementation uses any constraints you set to determine the size and position of any subviews.
 

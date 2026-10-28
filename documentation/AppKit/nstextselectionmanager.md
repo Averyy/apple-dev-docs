@@ -20,7 +20,7 @@ class NSTextSelectionManager
 @interface NSTextSelectionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSTextSelectionManager`](./nstextselectionmanager.md) provides a centralized way to manage text selection interactions using a set of gesture recognizers. For keyboard-based selection, integrate [`NSTextSelectionNavigation`](./nstextselectionnavigation.md) with your view. The selection manager works with a delegate to update and respond to selection changes, and with a data source to query the text layout system.
 

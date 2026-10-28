@@ -19,7 +19,7 @@ func setToolTip(_ toolTip: String?, forSegment segment: Int)
 - (void) setToolTip:(NSString *) toolTip forSegment:(NSInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 Tooltips are currently not displayed.
 

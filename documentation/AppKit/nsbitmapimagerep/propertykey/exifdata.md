@@ -19,7 +19,7 @@ static let exifData: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageEXIFData;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used only when reading or writing JPEG files. The dictionary contains the EXIF keys and values. The standard dictionary keys (that is, those that are not specific to camera vendors) are identical to those for [`kCGImagePropertyExifDictionary`](../../../ImageIO/kcgimagepropertyexifdictionary.md) declared in the `CGImageSource` API. See [`kCGImagePropertyExifDictionary`](../../../ImageIO/kcgimagepropertyexifdictionary.md) Keys for details.
 

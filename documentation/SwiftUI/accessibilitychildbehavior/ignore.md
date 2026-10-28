@@ -21,7 +21,7 @@ Any child accessibility elements become hidden.
 static let ignore: AccessibilityChildBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when you want a view represented by a single accessibility element. The new accessibility element has no initial properties. So you will need to use other accessibility modifiers, such as [`accessibilityLabel(_:)`](../view/accessibilitylabel%28_%29.md), to begin making it accessible.
 

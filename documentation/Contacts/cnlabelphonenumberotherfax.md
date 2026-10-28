@@ -24,7 +24,7 @@ let CNLabelPhoneNumberOtherFax: String
 extern NSString * const CNLabelPhoneNumberOtherFax;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

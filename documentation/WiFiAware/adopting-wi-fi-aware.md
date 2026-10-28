@@ -5,7 +5,7 @@
 
 Add entitlements and declare your app’s services.
 
-#### Overview
+## Overview
 
 The Wi-Fi Aware™ technology enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point. Your app can use the Wi-Fi Aware framework to securely establish peer-to-peer (P2P) connections between Wi-Fi devices.
 
@@ -16,7 +16,7 @@ If you intend your app to use Wi-Fi Aware capabilities, you need to add the `com
 | `Publish` | Publish a service and allow incoming connections. |
 | `Subscribe` | Subscribe to a service and make outgoing connections. |
 
-#### Declare services
+## Declare services
 
 Services are the specific functionality and protocols that your app can either provide to other devices or consume from other devices. There are two supported service roles in Wi-Fi Aware:
 
@@ -58,7 +58,7 @@ The following examples show service names that follow the naming conventions:
 
 Use the exact same name in the `Info.plist`. Invalid service names in the `Info.plist` cause your app to crash.
 
-##### Configure a service
+### Configure a service
 
 For each service name key in the `WiFiAwareServices` dictionary, there’s a corresponding value dictionary. This dictionary contains a set of properties that configure each individual service. The configuration includes whether the service is published, subscribed, or both:
 
@@ -92,7 +92,7 @@ The following is an example of an `Info.plist` that declares a single service `_
 </plist>
 ```
 
-##### Access API services
+### Access API services
 
 After you declare the services your app uses in `Info.plist`, your app can access those services with the Wi-Fi Aware API. For each `Publishable` service, the system creates a [`WAPublishableService`](./wapublishableservice.md) available in [`allServices`](./wapublishableservice/allservices.md). Similarly, for each `Subscribable` service, the system creates a [`WASubscribableService`](./wasubscribableservice.md) available in [`allServices`](./wasubscribableservice/allservices.md).
 

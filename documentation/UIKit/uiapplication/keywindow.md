@@ -24,7 +24,7 @@ var keyWindow: UIWindow? { get }
 @property (nonatomic, readonly, nullable) UIWindow * keyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds the [`UIWindow`](../uiwindow.md) object in the [`windows`](./windows.md) array that is most recently sent the [`makeKeyAndVisible()`](../uiwindow/makekeyandvisible%28%29.md) message.
 

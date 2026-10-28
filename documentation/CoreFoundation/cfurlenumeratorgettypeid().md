@@ -25,7 +25,7 @@ func CFURLEnumeratorGetTypeID() -> CFTypeID
 extern CFTypeID CFURLEnumeratorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFURLEnumerator` opaque type identifier.
 

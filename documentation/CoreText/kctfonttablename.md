@@ -23,7 +23,7 @@ var kCTFontTableName: Int { get }
 kCTFontTableName
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for naming table.
 

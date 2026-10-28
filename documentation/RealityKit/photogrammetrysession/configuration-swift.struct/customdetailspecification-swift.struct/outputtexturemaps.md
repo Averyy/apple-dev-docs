@@ -16,7 +16,7 @@ The set of texture maps to create in the model.
 var outputTextureMaps: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs
 ```
 
-#### Discussion
+## Discussion
 
 This setting can reduce model size by only requesting maps that will be used on the target renderer. Example to get just color and normal maps:
 

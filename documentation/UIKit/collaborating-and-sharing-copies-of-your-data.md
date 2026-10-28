@@ -5,7 +5,7 @@
 
 Share data and collaborate with people from your app.
 
-#### Overview
+## Overview
 
 You can share data from your app using a [`UIActivityViewController`](./uiactivityviewcontroller.md) object. There are numerous options for packaging your data and instantiating the activity view controller. One approach is to create one or more [`NSItemProvider`](../Foundation/nsitemprovider.md) objects for the data you want to share. Use the item providers to create a [`UIActivityItemsConfiguration`](./uiactivityitemsconfiguration.md), and then use the configuration to create your activity view controller. You can then present the view controller.
 
@@ -29,7 +29,7 @@ This displays the share sheet, letting someone share a copy of the data with oth
 
 ![An iPhone screenshot showing the share sheet for a plain UTF-8 text file.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4403929@2x.png)
 
-##### Enable collaboration for iCloud documents
+### Enable collaboration for iCloud documents
 
 The example above shares a copy of your app’s data. You can also enable collaboration so that the recipients can see an updated view of the data, and even make their own changes to it, depending on the permissions in your app.
 
@@ -58,7 +58,7 @@ Then create and display the activity view controller as in the first code exampl
 
 ![An iPhone screenshot of the share sheet showing the options to either send a copy or to collaborate.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4403933@2x.png)
 
-##### Enable the copying and collaboration of CloudKit data
+### Enable the copying and collaboration of CloudKit data
 
 Because CloudKit doesn’t store its data as files, it requires a different approach for both sharing copies and collaborating. To share a copy of CloudKit data, you need to create a shareable representation of the data. Then register that data with an [`NSItemProvider`](../Foundation/nsitemprovider.md). For example, if you want to share your app’s data as UTF-8 text, you can use the previous example to create an item provider for your text.
 
@@ -100,7 +100,7 @@ itemProvider
 
 For more information about collaboration in CloudKit, see [Sharing CloudKit Data with Other iCloud Users](../CloudKit/sharing-cloudkit-data-with-other-icloud-users.md).
 
-##### Restrict the sharing mode
+### Restrict the sharing mode
 
 By default, if your item provider supports both copying and collaborating, the share sheet shows a pop-up menu, letting people select a sharing mode. In iOS 18 and later, you can restrict sharing to only one of the two modes.
 
@@ -153,7 +153,7 @@ configuration.perItemMetadataProvider = { _, key in
 
 In this case, the share sheet shows the pop-up menu with the allowed sharing mode already selected. When someone tries to change the sharing mode to the restricted mode, the system displays an alert. If they then tap the recovery button, it calls your scene delegate’s [`scene(_:openURLContexts:)`](./uiscenedelegate/scene%28_,openurlcontexts%29.md) method, passing in the provided URL. For more information about using launch URLs, see [Defining a custom URL scheme for your app](../Xcode/defining-a-custom-url-scheme-for-your-app.md).
 
-##### Specify the people to share with
+### Specify the people to share with
 
 In iOS 18 and later, you can also specify recipients for the shared data. Create an [`INPerson`](../Intents/inperson.md) instance for each recipient and add them to your activity configuration’s metadata.
 

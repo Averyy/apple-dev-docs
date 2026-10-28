@@ -25,11 +25,11 @@ init(_ value: UnsafeRawPointer, withObjCType type: UnsafePointer<CChar>)
 + (NSValue *) value:(const void *) value withObjCType:(const char *) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains `value`, which is interpreted as being of the Objective-C type `type`.
 
-#### Discussion
+## Discussion
 
 This method has the same effect as [`valueWithBytes:objCType:`](./valuewithbytes_objctype_.md) and may be deprecated in a future release. You should use [`valueWithBytes:objCType:`](./valuewithbytes_objctype_.md) instead.
 

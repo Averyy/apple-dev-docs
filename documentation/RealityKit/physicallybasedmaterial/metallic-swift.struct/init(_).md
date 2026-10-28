@@ -19,7 +19,7 @@ Creates a metallic object from a custom material’s metallic property.
 init(_ value: CustomMaterial.Metallic)
 ```
 
-#### Discussion
+## Discussion
 
 In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from the [`metallic`](../../custommaterial/metallic-swift.property.md) property of a [`CustomMaterial`](../../custommaterial.md).
 

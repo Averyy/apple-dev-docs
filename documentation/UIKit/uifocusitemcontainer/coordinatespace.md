@@ -24,7 +24,7 @@ var coordinateSpace: any UICoordinateSpace { get }
 @property (nonatomic, strong, readonly) id<UICoordinateSpace> coordinateSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The focus items returned by [`focusItems(in:)`](./focusitems%28in%29.md) should report their frames in this coordinate space.
 

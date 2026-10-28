@@ -24,7 +24,7 @@ case adjustmentBasePairedVideo
 PHAssetResourceTypeAdjustmentBasePairedVideo
 ```
 
-#### Discussion
+## Discussion
 
 This asset resource type appears when fetching the asset resources associated with a Live Photo asset. This resource type represents the input of the most recent edit (if any), to which you can apply the changes described in a [`PHAdjustmentData`](../phadjustmentdata.md) to reconstruct or alter that edit. The corresponding still image can be found in the [`PHAssetResourceType.adjustmentBasePhoto`](./adjustmentbasephoto.md) resource type.
 

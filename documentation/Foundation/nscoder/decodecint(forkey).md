@@ -25,7 +25,7 @@ func decodeCInt(forKey key: String) -> Int32
 - (int) decodeIntForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the encoded integer does not fit into the default integer size, the method raises an `NSRangeException`. Subclasses must override this method if they perform keyed coding.
 

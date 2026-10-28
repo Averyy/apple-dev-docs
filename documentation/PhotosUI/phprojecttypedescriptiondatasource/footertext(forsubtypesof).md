@@ -20,7 +20,7 @@ func footerText(forSubtypesOf projectType: PHProjectType) -> NSAttributedString?
 - (NSAttributedString *) footerTextForSubtypesOfProjectType:(PHProjectType) projectType;
 ```
 
-#### Return Value
+## Return Value
 
 Attributed footer text for the queried project type.
 

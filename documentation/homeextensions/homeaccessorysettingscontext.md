@@ -17,7 +17,7 @@ A type that holds the resources that your settings provider needs to communicate
 protocol HomeAccessorySettingsContext
 ```
 
-#### Overview
+## Overview
 
 For example, a context might hold a web service client, a Matter handle, or cached identifiers. The framework passes it to your provider on every call:
 

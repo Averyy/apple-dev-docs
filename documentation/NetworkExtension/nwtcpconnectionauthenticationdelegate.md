@@ -26,7 +26,7 @@ protocol NWTCPConnectionAuthenticationDelegate : NSObjectProtocol
 @protocol NWTCPConnectionAuthenticationDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A delegate is not required for an [`NWTCPConnection`](./nwtcpconnection.md) object.
 

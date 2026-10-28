@@ -19,7 +19,7 @@ protocol NSTableViewDelegate : NSControlTextEditingDelegate
 @protocol NSTableViewDelegate <NSControlTextEditingDelegate>
 ```
 
-#### Overview
+## Overview
 
 Using a table view delegate allows you to customize a table view’s behavior without creating a table view subclass. A table view delegate provides views for table rows and columns, and supports functionality such as column reordering and resizing and row selection. To learn more about table views, see [`NSTableView`](./nstableview.md).
 

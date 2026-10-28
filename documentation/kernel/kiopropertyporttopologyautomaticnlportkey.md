@@ -14,7 +14,7 @@
 #define kIOPropertyPortTopologyAutomaticNLPortKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Automatic (NL_Port) for the key kIOPropertyPortTopologyKey. If the topology of the port is NL_Port and is automatically determined by host software, this key should be used.
 

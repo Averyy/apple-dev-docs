@@ -21,7 +21,7 @@ var height: Double { get }
 @property (nonatomic, assign, readonly) double height;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the vertical distance, in meters, from the floor surface to the DL-TDOA anchor’s location in the environment.
 

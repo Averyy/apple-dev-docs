@@ -16,7 +16,7 @@ Returns a list of accounts a person added to their Wallet that meet the criteria
 func accounts(query: AccountQuery) async throws -> [Account]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`Account`](../account.md) structures.
 

@@ -29,11 +29,11 @@ func dataTask(with url: URL) -> URLSessionDataTask
 
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
-#### Return Value
+## Return Value
 
 The new session data task.
 
-#### Discussion
+## Discussion
 
 After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method. The task calls methods on the session’s delegate to provide you with the response metadata, response data, and so on.
 

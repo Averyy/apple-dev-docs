@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.ndim
 
-**property array.ndim**
-: The array’s dimension.
+```python
+property array.ndim
+```
+
+The array’s dimension.

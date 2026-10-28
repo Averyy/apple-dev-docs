@@ -21,7 +21,7 @@ Creates a file URL that references the local file or directory for the file syst
 init(fileURLWithFileSystemRepresentation path: UnsafePointer<Int8>, isDirectory: Bool, relativeTo base: URL?)
 ```
 
-#### Discussion
+## Discussion
 
 File system representation is a null-terminated C string with canonical UTF-8 encoding.
 

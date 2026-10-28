@@ -25,7 +25,7 @@ struct MLDataTable
 - [Creating a word tagger model](./creating-a-word-tagger-model.md)
 - [Creating a text classifier model](./creating-a-text-classifier-model.md)
 
-#### Overview
+## Overview
 
 [`MLDataTable`](./mldatatable.md) is Create ML’s version of a spreadsheet in which each row represents an entity (such as a book, in the example below) with observable features. Each column ([`MLDataColumn`](./mldatacolumn.md) or [`MLUntypedColumn`](./mluntypedcolumn.md)) in the table represents an observable feature of that entity, such as a book’s title or author.
 

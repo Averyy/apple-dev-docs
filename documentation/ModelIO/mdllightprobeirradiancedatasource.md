@@ -24,7 +24,7 @@ protocol MDLLightProbeIrradianceDataSource : NSObjectProtocol
 @protocol MDLLightProbeIrradianceDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`MDLAsset`](./mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](./mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method automatically creates [`MDLLightProbe`](./mdllightprobe.md) objects, setting their positions and lighting parameters to provide optimal light probe coverage within a scene you define. When you use that method, you must provide an object implementing this protocol, which Model I/O queries in order to evaluate your scene.
 

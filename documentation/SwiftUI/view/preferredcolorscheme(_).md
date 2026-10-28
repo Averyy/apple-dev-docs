@@ -22,11 +22,11 @@ nonisolated
 func preferredColorScheme(_ colorScheme: ColorScheme?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets the color scheme.
 
-#### Discussion
+## Discussion
 
 Use one of the values in [`ColorScheme`](../colorscheme.md) with this modifier to set a preferred color scheme for the nearest enclosing presentation, like a popover, a sheet, or a window. The value that you set overrides the user’s Dark Mode selection for that presentation. In the example below, the [`Toggle`](../toggle.md) controls an `isDarkMode` state variable, which in turn controls the color scheme of the sheet that contains the toggle:
 

@@ -24,7 +24,7 @@ struct AudioFramePacketTranslation
 struct AudioFramePacketTranslation;
 ```
 
-#### Overview
+## Overview
 
 A data structure used by the [`kAudioFilePropertyPacketToFrame`](./kaudiofilepropertypackettoframe.md) and [`kAudioFilePropertyFrameToPacket`](./kaudiofilepropertyframetopacket.md) properties.
 

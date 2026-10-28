@@ -27,11 +27,11 @@ func handleNewFlow(_ flow: NEAppProxyFlow) -> Bool
 
 - [Handling Flow Copying](../handling-flow-copying.md)
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to indicate that the App Proxy Provider will handle the flow. Return [`false`](../../Swift/false.md) to indicate that the flow should be closed.
 
-#### Discussion
+## Discussion
 
 This method is called by the system whenever an app which matches the current App Proxy configuration’s app rules opens a new network connection.
 

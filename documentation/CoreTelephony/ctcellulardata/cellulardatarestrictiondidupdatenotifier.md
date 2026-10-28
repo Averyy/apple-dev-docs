@@ -21,7 +21,7 @@ var cellularDataRestrictionDidUpdateNotifier: CellularDataRestrictionDidUpdateNo
 @property (copy, nullable) CellularDataRestrictionDidUpdateNotifier cellularDataRestrictionDidUpdateNotifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system executes this block when the app first sets the callback handler, and then every time the cellular data allowed policy changes. Execution of the block occurs on the default priority global dispatch queue.
 

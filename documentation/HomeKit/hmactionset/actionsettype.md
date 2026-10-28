@@ -24,7 +24,7 @@ var actionSetType: String { get }
 @property (nonatomic, copy, readonly) NSString * actionSetType;
 ```
 
-#### Discussion
+## Discussion
 
 An action set type can be user-defined, trigger-owned, or one of the built-in types. Note that built-in action sets cannot be removed from the home, and trigger-owned action sets cannot be executed, renamed, or associated with another trigger.
 

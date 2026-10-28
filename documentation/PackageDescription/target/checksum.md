@@ -15,7 +15,7 @@ The checksum for the archive file that contains the referenced binary artifact.
 final var checksum: String?
 ```
 
-#### Discussion
+## Discussion
 
 If you make a remote binary framework available as a Swift package, declare a remote, or *URL-based*, binary target in your package manifest with [`binaryTarget(name:url:checksum:)`](./binarytarget%28name,url,checksum%29.md). Always run `swift package compute-checksum path/to/MyFramework.zip` at the command line to make sure you create a correct SHA256 checksum.
 

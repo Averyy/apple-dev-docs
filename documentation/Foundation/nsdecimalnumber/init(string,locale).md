@@ -25,7 +25,7 @@ convenience init(string numberValue: String?, locale: Any?)
 - (instancetype) initWithString:(NSString *) numberValue locale:(id) locale;
 ```
 
-#### Discussion
+## Discussion
 
 The locale parameter determines whether the `decimalSeparator` is a period (like in the United States) or a comma (like in France).
 

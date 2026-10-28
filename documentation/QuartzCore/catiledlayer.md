@@ -24,7 +24,7 @@ class CATiledLayer
 @interface CATiledLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 As more data is required by the renderer, the layer’s [`draw(in:)`](./calayer/draw%28in%29.md) method is called on one or more background threads to supply the drawing operations to fill in one tile of data. The clip bounds and current transformation matrix (CTM) of the drawing context can be used to determine the bounds and resolution of the tile being requested.
 

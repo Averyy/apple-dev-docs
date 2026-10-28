@@ -19,7 +19,7 @@ var dateValue: Date { get set }
 @property (copy) NSDate * dateValue;
 ```
 
-#### Discussion
+## Discussion
 
 When selecting a date range, this property represents the time interval’s starting date.
 

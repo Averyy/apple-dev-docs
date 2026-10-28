@@ -19,7 +19,7 @@ An error that indicates JavaScript execution failed due to an app-bound domain r
 static var javaScriptAppBoundDomain: WKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a script targets a frame that is not in an app-bound domain.
 

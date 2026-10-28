@@ -19,7 +19,7 @@ func drawBezel(withFrame frame: NSRect, in controlView: NSView)
 - (void) drawBezelWithFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called automatically when the button is redrawn; you should not call it directly.
 

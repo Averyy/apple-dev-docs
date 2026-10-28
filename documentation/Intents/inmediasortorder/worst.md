@@ -24,7 +24,7 @@ case worst
 INMediaSortOrderWorst
 ```
 
-#### Discussion
+## Discussion
 
 The app displays the sorted media items with those items matching the lowest number of search fields first.
 

@@ -24,7 +24,7 @@ var isRouteDetectionEnabled: Bool { get set }
 @property (getter=isRouteDetectionEnabled) BOOL routeDetectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

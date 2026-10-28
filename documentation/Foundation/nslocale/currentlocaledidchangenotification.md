@@ -25,7 +25,7 @@ class let currentLocaleDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSCurrentLocaleDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Register for this notification if your app displays content (dates, times, numbers, and so on) that is affected by the locale. Use the notification to trigger updates to your app’s interface.
 

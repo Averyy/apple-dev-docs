@@ -25,11 +25,11 @@ func abbreviation(for aDate: Date) -> String?
 - (NSString *) abbreviationForDate:(NSDate *) aDate;
 ```
 
-#### Return Value
+## Return Value
 
 The abbreviation for the receiver at `aDate`.
 
-#### Discussion
+## Discussion
 
 Note that the abbreviation may be different at different dates. For example, during daylight saving time the US/Eastern time zone has an abbreviation of “EDT.” At other times, its abbreviation is “EST.”
 

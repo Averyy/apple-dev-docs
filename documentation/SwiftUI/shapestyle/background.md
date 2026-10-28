@@ -24,7 +24,7 @@ static var background: BackgroundStyle { get }
 
 Available when `Self` is `BackgroundStyle`.
 
-#### Discussion
+## Discussion
 
 Access this value to get the style SwiftUI uses for the background in the current context. The specific color that SwiftUI renders depends on factors like the platform and whether the user has turned on Dark Mode.
 

@@ -20,7 +20,7 @@ optional func modeDidChangeForWiFiInterface(withName interfaceName: String)
 - (void) modeDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for operating mode change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.modeDidChange`](../cweventtype/modedidchange.md) event type.
 

@@ -20,11 +20,11 @@ func send(before date: Date) -> Bool
 - (BOOL) sendBeforeDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation is successful, otherwise [`false`](../../Swift/false.md) (for example, if the operation times out).
 
-#### Discussion
+## Discussion
 
 If an error other than a time out occurs, this method could raise an `NSInvalidSendPortException`, `NSInvalidReceivePortException`, or an `NSPortSendException`, depending on the type of send port and the type of error.
 

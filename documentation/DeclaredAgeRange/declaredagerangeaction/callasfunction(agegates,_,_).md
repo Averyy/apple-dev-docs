@@ -18,11 +18,11 @@ Returns a response indicating whether the person shared their age range.
 func callAsFunction(ageGates threshold1: Int, _ threshold2: Int? = nil, _ threshold3: Int? = nil) async throws -> AgeRangeService.Response
 ```
 
-#### Return Value
+## Return Value
 
 A response indicating whether the person declared their age range. If the person shared their age range, the system also returns the age range.
 
-#### Discussion
+## Discussion
 
 Regional requirements may override your age gates based on the person’s location.
 

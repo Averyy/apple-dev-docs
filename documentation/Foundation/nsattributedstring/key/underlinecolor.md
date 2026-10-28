@@ -21,7 +21,7 @@ The color of the underline.
 static let underlineColor: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is a [`UIColor`](../../../UIKit/uicolor.md) object. The default value is `nil`, indicating same as foreground color.
 

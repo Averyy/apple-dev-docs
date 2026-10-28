@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetSupportedInterfaceTypes(_ interface: SCNetworkInterfac
 CFArrayRefSCNetworkInterfaceGetSupportedInterfaceTypes(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The list of network interface types supported by the specified interface, or `NULL` if no interface types are supported.
 

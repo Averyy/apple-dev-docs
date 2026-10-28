@@ -29,7 +29,7 @@ class CKAsset
 
 - [Encrypting User Data](./encrypting-user-data.md)
 
-#### Overview
+## Overview
 
 Use assets to incorporate external files into your app’s records, such as photos, videos, and binary files. Alternatively, use assets when a field’s value is more than a few kilobytes in size. To associate an instance of [`CKAsset`](./ckasset.md) with a record, assign it to one of its fields.
 

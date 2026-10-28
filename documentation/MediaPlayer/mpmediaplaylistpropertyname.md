@@ -25,7 +25,7 @@ let MPMediaPlaylistPropertyName: String
 extern NSString * const MPMediaPlaylistPropertyName;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSString`](../Foundation/nsstring.md) object. Can be used to build a media property predicate as described in [`MPMediaQuery`](./mpmediaquery.md).
 

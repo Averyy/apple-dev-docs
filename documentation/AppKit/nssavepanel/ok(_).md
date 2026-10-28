@@ -20,7 +20,7 @@ func ok(_ sender: Any?)
 - (void) ok:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.15 and later, you cannot call this method programmatically to trigger the OK action. Prior to macOS 10.15, AppKit prevented only sandboxed apps from calling this method.
 

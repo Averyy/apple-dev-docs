@@ -24,7 +24,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 If calling this method cancels an active authorization request, the authorization controller calls its delegate’s [`authorizationController(controller:didCompleteWithError:)`](../asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) method.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether to enable escaping.
 var usesEscaping: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, you can escape special characters, such as the field delimiter, by prefixing them with the escape character, which is the backslash (`\`) by default. Defaults to `false`.
 

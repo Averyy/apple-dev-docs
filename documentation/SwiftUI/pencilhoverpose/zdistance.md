@@ -19,7 +19,7 @@ The normalized distance between the screen and a hovering Apple Pencil.
 let zDistance: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 This value is `1` at the maximum distance from the screen and approaches `0` as the Apple Pencil gets closer to the screen.
 

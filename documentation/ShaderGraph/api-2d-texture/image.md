@@ -14,7 +14,7 @@ A texture referencing a 2D image file.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Image (float)**:
 
@@ -121,7 +121,7 @@ A texture referencing a 2D image file.
 | --- | --- |
 | `Out` | Vector4f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`Default`**: The default value to use if the ​file​ reference fails to resolve.
@@ -130,7 +130,7 @@ A texture referencing a 2D image file.
 - **`Vaddressmode`**: The way that the node will handle *V* values outside of the range of `0-1`.
 - **`Filter Type`**: The type of texture filtering the node will use.
 
-#### Discussion
+## Discussion
 
 The Image node creates a material from an image file. This node samples data from a single image, and maps it onto an object. The address modes for the Image node tell it how to handle *U* and *V* values outside of the normal range of `0-1`. `Uaddressmode` and `Vaddressmode`  take one of four values to determine their behavior.
 

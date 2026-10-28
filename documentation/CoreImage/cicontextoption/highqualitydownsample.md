@@ -24,7 +24,7 @@ static let highQualityDownsample: CIContextOption
 extern CIContextOption const kCIContextHighQualityDownsample;
 ```
 
-#### Discussion
+## Discussion
 
 The higher quality behavior performs downsampling operations in multiple passes in order to reduce aliasing artifacts.
 

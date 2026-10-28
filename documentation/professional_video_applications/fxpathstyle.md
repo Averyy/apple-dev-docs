@@ -19,7 +19,7 @@ typealias FxPathStyle = Int
 typedef NSUInteger FxPathStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This is used by the `styleOfPath:error:` method and the [`FxVertex`](./fxvertex.md) structure.
 

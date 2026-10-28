@@ -25,7 +25,7 @@ var mFramesPerPacket: UInt32
 UInt32 mFramesPerPacket;
 ```
 
-#### Discussion
+## Discussion
 
 For uncompressed audio, the value is 1. For variable bit-rate formats, the value is a larger fixed number, such as 1024 for AAC. For formats with a variable number of frames per packet, such as Ogg Vorbis, set this field to `0`.
 

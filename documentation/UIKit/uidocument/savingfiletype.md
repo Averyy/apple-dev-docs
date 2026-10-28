@@ -22,11 +22,11 @@ var savingFileType: String? { get }
 @property (nonatomic, readonly, nullable) NSString * savingFileType;
 ```
 
-#### Return Value
+## Return Value
 
 A Uniform Type Identifier (UTI) identifying a document type (for example, PDF or HTML).
 
-#### Discussion
+## Discussion
 
 The default implementation returns the current file type obtained from the [`fileType`](./filetype.md) property. The default implementation of the [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) method appends an extension to the file URL that’s based on the file type. So if you want to move the document to a new type and extension, you can override this method to supply that file type.
 

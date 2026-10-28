@@ -19,7 +19,7 @@ init!(urlString URLString: String!, title: String!, lastVisitedTimeInterval time
 - (instancetype) initWithURLString:(NSString *) URLString title:(NSString *) title lastVisitedTimeInterval:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 WebKit normally creates WebHistoryItem objects for you but on occasion you might want to create an item and add it to the WebBackForwardList yourself. Note that when an instance is first initialized the strings returned by [`urlString`](./urlstring.md) and [`originalURLString`](./originalurlstring.md) are the same.
 

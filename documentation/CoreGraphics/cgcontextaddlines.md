@@ -21,7 +21,7 @@ Adds a sequence of connected straight-line segments to the current path.
 extern void CGContextAddLines(CGContextRef c, const CGPoint *points, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that moves to the first point in the sequence and then adds a line to each of the other points, sequentially.
 

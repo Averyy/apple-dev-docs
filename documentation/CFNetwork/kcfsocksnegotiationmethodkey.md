@@ -22,7 +22,7 @@ let kCFSOCKSNegotiationMethodKey: CFString
 extern CFStringRef const kCFSOCKSNegotiationMethodKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error of type `kCFSOCKS5ErrorUnsupportedNegotiationMethod` is returned, querying this key returns the negotiation method requested by the SOCKS server.
 

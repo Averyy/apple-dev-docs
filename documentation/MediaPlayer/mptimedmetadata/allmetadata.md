@@ -23,7 +23,7 @@ var allMetadata: [AnyHashable : Any]! { get }
 @property (nonatomic, readonly) NSDictionary * allMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve metadata from the dictionary, use the keys described in [Timed metadata dictionary keys](../timed-metadata-dictionary-keys.md).
 

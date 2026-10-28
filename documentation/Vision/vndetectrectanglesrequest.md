@@ -24,7 +24,7 @@ class VNDetectRectanglesRequest
 @interface VNDetectRectanglesRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 A rectangle detection request locates regions of an image with rectangular shape, like credit cards, business cards, documents, and signs. The request returns its observations in the form of [`VNRectangleObservation`](./vnrectangleobservation.md) objects, which contain normalized coordinates of bounding boxes containing the rectangle.
 

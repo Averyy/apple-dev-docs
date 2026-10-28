@@ -5,7 +5,7 @@
 
 Remotely execute management commands and queries on managed devices.
 
-#### Overview
+## Overview
 
 The Mobile Device Management (MDM) protocol provides a way to tell a device to remotely execute certain management commands or queries. When a device registers with the device management service, the service sends push notifications to the device when there are commands to process on the device.
 

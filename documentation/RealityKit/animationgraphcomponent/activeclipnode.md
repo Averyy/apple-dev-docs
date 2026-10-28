@@ -20,7 +20,7 @@ Debug information for an active animation clip node within the graph.
 struct ActiveClipNode
 ```
 
-#### Overview
+## Overview
 
 Use this type to read the current playback position of an animation clip the graph is sampling.
 

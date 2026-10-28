@@ -21,7 +21,7 @@ protocol ARSessionProviding : NSObjectProtocol
 @protocol ARSessionProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 As an example usage, [`ARCoachingOverlayView`](./arcoachingoverlayview.md) exposes [`sessionProvider`](./arcoachingoverlayview/sessionprovider.md) to access your app’s current session.
 

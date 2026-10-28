@@ -19,7 +19,7 @@ enum TextUpdateReason
 enum NSWritingToolsCoordinatorTextUpdateReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 If you modify your view’s text storage while Writing Tools is active, report those changes to your [`NSWritingToolsCoordinator`](../nswritingtoolscoordinator.md) object so it can track them correctly. Call the [`updateRange(_:with:reason:forContextWithIdentifier:)`](./updaterange%28_,with,reason,forcontextwithidentifier%29.md) method to report changes that occur inside one of your context objects. Call the [`updateForReflowedTextInContextWithIdentifier(_:)`](./updateforreflowedtextincontextwithidentifier%28_%29.md) method for changes that affect the layout of your text, such as text insertions before a context object or changes to your view’s frame rectangle.
 

@@ -20,7 +20,7 @@ The inertia in kilograms per square meter.
 var inertia: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 The vector contains the diagonal elements of the diagonalized inertia matrix.
 

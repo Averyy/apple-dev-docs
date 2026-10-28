@@ -21,7 +21,7 @@ typedef struct VoiceDescription {
 } VoiceDescription;
 ```
 
-#### Overview
+## Overview
 
 By calling the [`GetVoiceDescription(_:_:_:)`](./api-1463940-getvoicedescription.md) function, you can obtain information about a voice in a voice description structure.
 

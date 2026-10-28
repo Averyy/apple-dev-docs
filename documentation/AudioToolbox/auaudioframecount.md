@@ -24,7 +24,7 @@ typealias AUAudioFrameCount = UInt32
 typedef uint32_t AUAudioFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 This alias is type `uint32_t` for impedance-matching with the pervasive use of `UInt32` in the Audio Toolbox framework and the C Audio Unit framework APIs, as well as the [`AVAudioFrameCount`](../AVFAudio/avaudioframecount.md) data type.
 

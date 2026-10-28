@@ -19,7 +19,7 @@ The amount of lateral particle jitter at the stroke edge for supported inks.
 var lateralJitter: CGFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 Lateral jitter applies only to some inks, such as `.pencil`.
 

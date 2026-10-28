@@ -17,7 +17,7 @@ A struct that defines the appearance of buttons.
 struct AlarmButton
 ```
 
-#### Overview
+## Overview
 
 The following example uses `AlarmButton` to define the appearance of the alarm.
 

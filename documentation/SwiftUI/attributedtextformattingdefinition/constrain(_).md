@@ -27,7 +27,7 @@ func constrain(_ container: inout AttributeContainer)
 func constrain(_ string: inout AttributedString)
 ```
 
-#### Discussion
+## Discussion
 
 Modifies the given `container` by applying all [`AttributedTextValueConstraint`](../attributedtextvalueconstraint.md)s that are part of this definition to the container.
 

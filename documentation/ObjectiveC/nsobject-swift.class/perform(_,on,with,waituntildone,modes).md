@@ -25,7 +25,7 @@ func perform(_ aSelector: Selector, on thr: Thread, with arg: Any?, waitUntilDon
 - (void) performSelector:(SEL) aSelector onThread:(NSThread *) thr withObject:(id) arg waitUntilDone:(BOOL) wait modes:(NSArray<NSString *> *) array;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to deliver messages to other threads in your application. The message in this case is a method of the current object that you want to execute on the target thread.
 
@@ -33,7 +33,7 @@ This method queues the message on the run loop of the target thread using the ru
 
 You cannot cancel messages queued using this method. If you want the option of canceling a message on the current thread, you must use either the [`perform(_:with:afterDelay:)`](./perform%28_,with,afterdelay%29.md) or [`perform(_:with:afterDelay:inModes:)`](./perform%28_,with,afterdelay,inmodes%29.md) method instead.
 
-##### Special Considerations
+### Special Considerations
 
 This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](../../Dispatch/dispatch_after.md) and related methods to get the behavior you want.
 

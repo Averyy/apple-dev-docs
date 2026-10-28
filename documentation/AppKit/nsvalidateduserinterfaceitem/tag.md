@@ -21,7 +21,7 @@ var tag: Int { get }
 @property (readonly) NSInteger tag;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s tag.
 

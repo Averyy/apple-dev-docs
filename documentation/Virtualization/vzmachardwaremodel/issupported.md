@@ -19,7 +19,7 @@ var isSupported: Bool { get }
 @property (readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 If this hardware model isn’t supported by the host, the [`VZVirtualMachineConfiguration`](../vzvirtualmachineconfiguration.md) won’t validate.
 

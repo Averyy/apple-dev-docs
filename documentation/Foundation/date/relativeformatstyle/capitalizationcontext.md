@@ -21,7 +21,7 @@ The capitalization context to use when formatting the relative dates.
 var capitalizationContext: FormatStyleCapitalizationContext
 ```
 
-#### Discussion
+## Discussion
 
 Setting the capitalization context to [`beginningOfSentence`](../../formatstylecapitalizationcontext/beginningofsentence.md) sets the first word of the relative date string to upper-case. A capitalization context set to [`middleOfSentence`](../../formatstylecapitalizationcontext/middleofsentence.md) keeps all words in the string lower-cased.
 

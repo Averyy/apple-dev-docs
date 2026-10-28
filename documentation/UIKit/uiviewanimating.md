@@ -24,13 +24,13 @@ protocol UIViewAnimating : NSObjectProtocol
 @protocol UIViewAnimating <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`UIViewAnimating`](./uiviewanimating.md) protocol defines the methods for implementing the basic flow control for animations, including the ability to start, stop, and pause animations. There are also several properties for reflecting the current state of the animation and for modifying that state while an animation is in progress.
 
 Normally, you use the methods of this protocol to manage animations associated with a [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) object. Specifically, you use these methods to start and stop your animations, to reverse animations, and to change the completion progress of the animation. You might also use these capabilities to implement interactive animations. You can also adopt this protocol to implement custom animator objects.
 
-##### Understand animation states
+### Understand animation states
 
 Animator objects move through a set of states during the processing of a set of animations. These states define the animator’s behavior, including how it handles changes. When implementing your own animators, you must respect these state transitions and keep the [`state`](./uiviewanimating/state.md) property updated accurately. The following image shows the states and the state transitions that occur.
 

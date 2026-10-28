@@ -24,7 +24,7 @@ var leftProjectionMatrix: matrix_float4x4 { get }
 @property (nonatomic, readonly) matrix_float4x4 leftProjectionMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O  automatically generates this matrix from the same properties that produce the [`projectionMatrix`](../mdlcamera/projectionmatrix.md) property of a monocular camera, additionally using the [`interPupillaryDistance`](./interpupillarydistance.md) and [`leftVergence`](./leftvergence.md) properties to account for the offset and angle of a stereoscopic camera’s left viewpoint.
 

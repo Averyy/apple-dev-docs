@@ -15,7 +15,7 @@ Gets the acquisition failure of the video box.
 kern_return_t GetAcquisitionFailure();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

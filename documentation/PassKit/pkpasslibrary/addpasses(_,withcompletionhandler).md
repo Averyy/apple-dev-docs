@@ -28,7 +28,7 @@ func addPasses(_ passes: [PKPass]) async -> PKPassLibraryAddPassesStatus
 - (void) addPasses:(NSArray<PKPass *> *) passes withCompletionHandler:(void (^)(PKPassLibraryAddPassesStatus status)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when someone initiates an action that generates a single pass, like purchasing a concert ticket, or multiple passes, like checking into a multiconnection flight. Your app adds the pass to the person’s Wallet automatically with [`PKPassLibrary.Capability.backgroundAddPasses`](./capability/backgroundaddpasses.md), or they receive a prompt to confirm the overall action or review the passes individually. If you want to the person to review individual passes visually before adding them, use an instance of [`PKAddPassesViewController`](../pkaddpassesviewcontroller.md).
 

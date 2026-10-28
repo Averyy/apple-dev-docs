@@ -24,7 +24,7 @@ func SCNetworkReachabilityUnscheduleFromRunLoop(_ target: SCNetworkReachability,
 Boolean SCNetworkReachabilityUnscheduleFromRunLoop(SCNetworkReachabilityRef target, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the target is unscheduled successfully; otherwise, `FALSE`.
 

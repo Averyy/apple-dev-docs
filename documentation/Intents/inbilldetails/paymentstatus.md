@@ -33,7 +33,7 @@ var paymentStatus: INPaymentStatus { get set }
 @property (atomic, assign, readwrite) INPaymentStatus paymentStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the current status of a scheduled payment. If the payment date of the bill is in the future, you typically set the payment status to [`INPaymentStatus.pending`](../inpaymentstatus/pending.md). For bills in the past, set the status to [`INPaymentStatus.completed`](../inpaymentstatus/completed.md) if payment was successful or to another value if the transaction wasn’t completed. If you haven’t scheduled the bill for payment, set its status to [`INPaymentStatus.unknown`](../inpaymentstatus/unknown.md).
 

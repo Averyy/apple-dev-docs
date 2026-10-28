@@ -19,7 +19,7 @@ dictionary CloudKit.UserIdentity {
 };
 ```
 
-#### Overview
+## Overview
 
 If a user is discoverable, the [`CloudKit.UserIdentity`](./cloudkit.useridentity.md) dictionary contains a `nameComponents` key that you can use to get the user’s first and last name; otherwise, to protect the users’s privacy, the [`CloudKit.UserIdentity`](./cloudkit.useridentity.md) dictionary contains only the `lookupInfo` key.
 

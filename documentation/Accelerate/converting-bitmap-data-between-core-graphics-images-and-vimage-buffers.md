@@ -5,13 +5,13 @@
 
 Pass image data between Core Graphics and vImage to create and manipulate images.
 
-#### Overview
+## Overview
 
 When you work with bitmap images, you typically work with Core Graphics [`CGImage`](../CoreGraphics/cgimage.md) instances. The vImage library provides functionality that allows you to work with Core Graphics bitmap images. Typically, you convert a [`CGImage`](../CoreGraphics/cgimage.md) instance to a vImage buffer, apply operations to the vImage buffer, and convert the transformed data to a new [`CGImage`](../CoreGraphics/cgimage.md) instance.
 
 Conversions between Core Graphics-backed images and vImage buffers require a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) format structure. The format describes properties such as the color space, the number of channels and how they’re ordered, and the size, in bits, of the color channels.
 
-##### Initialize an 8-bit Core Graphics image format from hard-coded values
+### Initialize an 8-bit Core Graphics image format from hard-coded values
 
 Create a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure with hard-coded values when you need to perform operations on image data with properties that your app defines at compile time. For example, the code below initializes an 8-bit-per-channel ARGB format that’s suitable for working with [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structures with a [`vImage.Interleaved8x4`](./vimage/interleaved8x4.md) format.
 
@@ -49,7 +49,7 @@ On return, `result` is a four-channel 8-bit-per-channel image with [`CGImageAlph
 
 ![A color photograph of a flower.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4265606@2x.png)
 
-##### Initialize a 32-bit Core Graphics image format from hard-coded values
+### Initialize a 32-bit Core Graphics image format from hard-coded values
 
 You can use the [`init(cgImage:cgImageFormat:pixelFormat:)`](./vimage/pixelbuffer/init%28cgimage,cgimageformat,pixelformat%29.md) initializer to convert an image’s color model and bit depth. For example, you can specify a grayscale 32-bit format such as the example below:
 
@@ -90,7 +90,7 @@ On return, `result` contains a grayscale version of the original image.
 
 ![A grayscale photograph of a flower.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4265605@2x.png)
 
-##### Initialize a Core Graphics image format from a Core Graphics image
+### Initialize a Core Graphics image format from a Core Graphics image
 
 The [`init(cgImage:)`](./vimage_cgimageformat/init%28cgimage%29.md) initializer creates a new [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that describes a Core Graphics image’s properties.
 
@@ -119,7 +119,7 @@ let buf = try vImage.PixelBuffer(cgImage: cgImage,
 print(buf.array[0 ..< 2 * format.componentCount])
 ```
 
-##### Initialize a Core Graphics image format from an image during pixel buffer initialization
+### Initialize a Core Graphics image format from an image during pixel buffer initialization
 
 You can pass an empty [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure to the [`init(cgImage:cgImageFormat:pixelFormat:)`](./vimage/pixelbuffer/init%28cgimage,cgimageformat,pixelformat%29.md) initializer to instruct the initializer to populate the format with an image’s properties. In this case, the initializer returns `nil` if the image’s and the pixel buffer’s bit depths aren’t equal.
 

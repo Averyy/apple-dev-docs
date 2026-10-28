@@ -16,7 +16,7 @@ Invalidates the receiver.
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 After withdrawing the ports the receiver has registered with the current run loop, `invalidate` posts an [`NSConnectionDidDieNotification`](../nsconnectiondiddienotification.md) and then invalidates all remote objects and exported local proxies.
 

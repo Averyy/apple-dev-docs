@@ -5,7 +5,7 @@
 
 Fulfill the intent and provide feedback to SiriKit about what you did.
 
-#### Overview
+## Overview
 
 After resolving and confirming an intent, SiriKit asks you to handle the intent by fulfilling the user’s request. When handling an intent, you do the following:
 
@@ -14,7 +14,7 @@ After resolving and confirming an intent, SiriKit asks you to handle the intent 
 
 You handle most intents directly from your Intents app extension, but in some cases you may ask SiriKit to let your app handle the request.
 
-##### Example: Handling a Start Workout Intent
+### Example: Handling a Start Workout Intent
 
 A workout app may need to configure timers and other health-related information, tasks that cannot be handled easily from the Intents app extension. Therefore, handling a workout intent involves directing SiriKit to launch your app.
 
@@ -30,7 +30,7 @@ func handle(startWorkout intent: INStartWorkoutIntent,
 }
 ```
 
-##### Example: Handling a Request Ride Intent
+### Example: Handling a Request Ride Intent
 
 A ride booking app needs to provide detailed information about a ride booked by the user. Retrieving ride booking information requires communicating with your service and using the returned information to create an [`INRideStatus`](../Intents/inridestatus.md) object.
 
@@ -109,7 +109,7 @@ func handle(requestRide intent: INRequestRideIntent,
 }
 ```
 
-##### Tips for Handling Intents
+### Tips for Handling Intents
 
 When handling intents, consider the following:
 

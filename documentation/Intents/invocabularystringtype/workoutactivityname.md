@@ -24,7 +24,7 @@ case workoutActivityName
 INVocabularyStringTypeWorkoutActivityName
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might include the string “Half Marathon” or “Kettlebell exercise” for specific regimens created by the user.
 

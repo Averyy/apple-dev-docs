@@ -17,7 +17,7 @@ The date of the first event of this schedule.
 func startDate() -> Date
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation has an upperbound complexity of O(NlogN).
 

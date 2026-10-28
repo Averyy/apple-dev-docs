@@ -25,7 +25,7 @@ func sendParameters(_ parameters: [CHHapticDynamicParameter], atTime time: TimeI
 - (BOOL) sendParameters:(NSArray<CHHapticDynamicParameter *> *) parameters atTime:(NSTimeInterval) time error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If `time` is `0` or any value less than the haptic engine’s [`currentTime`](../chhapticengine/currenttime.md), this method sends parameters immediately.
 

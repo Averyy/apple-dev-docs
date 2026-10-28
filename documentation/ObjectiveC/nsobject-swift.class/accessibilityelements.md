@@ -24,7 +24,7 @@ var accessibilityElements: [Any]? { get set }
 @property (nonatomic, strong, nullable) NSArray * accessibilityElements;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property on an [`NSObject`](../nsobject-swift.class.md) subclass to supplement the default accessibility element hierarchy with elements that you want assistive technologies — such as VoiceOver, Switch Control, and Voice Control — to interact with. In the array your implementation returns, you can include elements such as user interface controls, text, images, or custom accessibility elements that you want to make accessible.
 

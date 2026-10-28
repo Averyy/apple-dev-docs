@@ -18,7 +18,7 @@ The offset of the accessory from the primary pointer.
 var offset: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 This property only supports positive values.
 

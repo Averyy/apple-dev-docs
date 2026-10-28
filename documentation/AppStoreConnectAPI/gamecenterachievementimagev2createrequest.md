@@ -15,7 +15,7 @@ The request body you use to create a Game Center achievement image v2.
 object GameCenterAchievementImageV2CreateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

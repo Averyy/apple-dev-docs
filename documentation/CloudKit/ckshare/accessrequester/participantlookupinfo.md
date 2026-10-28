@@ -26,7 +26,7 @@ var participantLookupInfo: CKUserIdentity.LookupInfo { get }
 @property (nonatomic, copy, readonly) CKUserIdentityLookupInfo * participantLookupInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this lookup info with [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) to fetch the corresponding participant. Once fetched, add the participant to the share to approve the requester.
 

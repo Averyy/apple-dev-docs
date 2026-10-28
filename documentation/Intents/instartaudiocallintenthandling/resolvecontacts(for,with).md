@@ -29,7 +29,7 @@ optional func resolveContacts(for intent: INStartAudioCallIntent) async -> [INPe
 - (void) resolveContactsForStartAudioCall:(INStartAudioCallIntent *) intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify the identity of any intended call recipients. Always strive toward a successful resolution to a specific user, but feel free to ask for confirmation of the selected user if there’s some uncertainty.
 

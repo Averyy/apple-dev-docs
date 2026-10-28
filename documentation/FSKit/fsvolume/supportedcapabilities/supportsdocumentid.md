@@ -19,7 +19,7 @@ var supportsDocumentID: Bool { get set }
 @property (nonatomic) BOOL supportsDocumentID;
 ```
 
-#### Discussion
+## Discussion
 
 A document ID is an identifier that persists across object ID changes.
 

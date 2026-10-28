@@ -21,7 +21,7 @@ A notification that posts when a context makes changes to its registered objects
 static let didChangeObjectsNotification: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This notification posts only when there are changes to the context’s registered managed objects. It doesn’t post when a fetch adds managed objects to the context.
 

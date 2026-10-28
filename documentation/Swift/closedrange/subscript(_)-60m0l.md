@@ -23,7 +23,7 @@ subscript(position: ClosedRange<Bound>.Index) -> Bound { get }
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Overview
+## Overview
 
 You can subscript a collection with any valid index other than the collection’s end index. The end index refers to the position one past the last element of a collection, so it doesn’t correspond with an element.
 

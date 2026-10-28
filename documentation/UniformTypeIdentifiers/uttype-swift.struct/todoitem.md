@@ -21,7 +21,7 @@ A type that represents a to-do item.
 static var toDoItem: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.to-do-item`.
 

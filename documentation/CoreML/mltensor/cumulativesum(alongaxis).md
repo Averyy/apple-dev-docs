@@ -21,11 +21,11 @@ Computes the cumulative sum along the specified axis.
 func cumulativeSum(alongAxis axis: Int = 0) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The result of the cumulative sum operation.
 
-#### Discussion
+## Discussion
 
 The scalar type of the tensor must be numeric.
 

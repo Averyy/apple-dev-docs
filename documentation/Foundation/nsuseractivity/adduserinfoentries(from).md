@@ -29,7 +29,7 @@ func addUserInfoEntries(from otherDictionary: [AnyHashable : Any])
 
 - [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this method to add the keys from `otherDictionary` into the dictionary in the [`userInfo`](./userinfo.md) property. If the same key is in both dictionaries, the value of the key is set to the value in the `otherDictionary` parameter.
 

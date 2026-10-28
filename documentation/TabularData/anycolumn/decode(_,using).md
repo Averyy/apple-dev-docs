@@ -21,7 +21,7 @@ Decodes the data in each element of the column.
 mutating func decode<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws where T : Decodable, Decoder : TopLevelDecoder
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnDecodingError` if an element fails to decode.
 

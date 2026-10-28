@@ -19,7 +19,7 @@ func load(_ request: URLRequest!)
 - (void) loadRequest:(NSURLRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a provisional data source that will transition to a committed data source once any data has been received. Use the [`dataSource`](./datasource.md) method to check if a committed data source is available, and the [`stopLoading()`](./stoploading%28%29.md) method to stop the load. This method is typically invoked on the main frame.
 

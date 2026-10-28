@@ -23,7 +23,7 @@ case onlyPredictSuggestedIntents
 INUpcomingMediaPredictionModeOnlyPredictSuggestedIntents
 ```
 
-#### Discussion
+## Discussion
 
 Use this prediction mode when you want Siri to show the user only those media intent shortcuts set in the [`setSuggestedMediaIntents(_:)`](../inupcomingmediamanager/setsuggestedmediaintents%28_%29.md) method. For instance, a podcast app uses this mode when it wants to only show suggested shortcuts, rather than shortcuts it donated for media the user has already listened to or watched.
 

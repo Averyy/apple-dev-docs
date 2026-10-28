@@ -23,7 +23,7 @@ func gss_aapl_change_password(_ name: gss_name_t, _ mech: gss_const_OID, _ attri
 OM_uint32 gss_aapl_change_password(gss_name_t const name, gss_const_OID mech, CFDictionaryRef attributes, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A major status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) if the call succeeds, or some other value indicating the reason for failure if not.
 

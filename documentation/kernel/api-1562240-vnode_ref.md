@@ -15,11 +15,11 @@ Increment the usecount on a vnode.
 int vnode_ref(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success; ENOENT if the vnode is dead or in the process of being recycled AND the calling thread is not the vnode owner.
 
-#### Discussion
+## Discussion
 
 If vnode_ref() succeeds, the resulting usecount must be released with vnode_rele(). vnode_ref() is called to obtain a persistent reference on a vnode. This type of reference does not provide the same strong guarantee that a vnode will persist as does an iocount--it merely ensures that a vnode will not be reused to represent a different file. However, a usecount may be held for extended periods of time, whereas an iocount is intended to be obtained and released quickly as part of performing a vnode operation. A holder of a usecount must call vnode_getwithref()/vnode_put() in order to perform any operations on that vnode.
 

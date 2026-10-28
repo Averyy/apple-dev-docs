@@ -15,7 +15,7 @@ A map region that provides a hint for the geographic area to search.
 region?: CoordinateRegionData;
 ```
 
-#### Discussion
+## Discussion
 
 This property overrides the [`region`](../searchconstructoroptions/region.md) provided to the [`Search`](../search.md) constructor.
 

@@ -20,7 +20,7 @@ func lock(_ sender: Any?)
 - (void) lockDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action of the Lock menu item in a document-based app. This action method invokes the [`lock(completionHandler:)`](./lock%28completionhandler%29-6zuhh.md) method by default.
 

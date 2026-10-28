@@ -19,7 +19,7 @@ static var cmykModeMask: NSColorPanel.Options { get }
 NSColorPanelCMYKModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Cyan-yellow-magenta-black.
 

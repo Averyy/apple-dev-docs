@@ -23,7 +23,7 @@ class LAPersistedRight
 @interface LAPersistedRight : LARight
 ```
 
-#### Overview
+## Overview
 
 An [`LAPersistedRight`](./lapersistedright.md) is a right that’s backed by a unique key in the Secure Enclave with an access control list that matches the authorization requirements of the right. You can access the key that backs a right to perform cryptographic operations like encryption, decryption, signing, and verification.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Facilitate navigation between pages using links.
 
-#### Overview
+## Overview
 
 DocC supports the following link types to enable navigation between pages:
 
@@ -27,7 +27,7 @@ DocC only creates “mentioned in” links when an *article* links to a symbol a
 
 > **Earlier Versions**:  Before Swift-DocC 6.2, automatic “mentioned in” links require that you pass the `--enable-experimental-mentioned-in` command line flag to `docc`. This flag is available as of Swift-DocC 6.0.
 
-##### Navigate to a Symbol
+### Navigate to a Symbol
 
 To add a link to a symbol in your module, wrap the symbol’s name in a set of double backticks (``):
 
@@ -95,7 +95,7 @@ public struct Sloth {
 
 A ```Sloth/color``` symbol link unambiguously refers to the `color` property and a ```Sloth/Color``` symbol link unambiguously refers to the inner `Color` type.
 
-###### Symbols with Multiple Language Representations
+#### Symbols with Multiple Language Representations
 
 Symbol links to symbols that have representations in more than one programming language can use symbol paths in either source language. For example, consider a `Sloth` class with `@objc` attributes:
 
@@ -123,7 +123,7 @@ You can write a symbol link to the Sloth initializer using the symbol path in ei
 ``TLASloth/initWithName:color:power:``
 ```
 
-###### Ambiguous Symbol Links
+#### Ambiguous Symbol Links
 
 In some cases a symbol’s path isn’t unique. This makes it ambiguous what specific symbol a symbol link refers to. For example, consider a `Color` structure with `red`, `green`, and `blue` properties for color components and static properties for a handful of predefined color values:
 
@@ -269,7 +269,7 @@ The table below shows some examples of the types of link disambiguation suffixes
 | Parameter and return type names | `-(Bool)->()` | This symbol has one `Bool` parameter and no return value. |
 | Symbol identifier hash | `-4gcpg` | The hash of this symbol’s unique identifier is “`4gcpg`”. |
 
-##### Navigate to an Article
+### Navigate to an Article
 
 To add a link to an article, use the less-than symbol (`<`), the `doc` keyword, a colon (`:`), the article’s file name without file extension, and a greater-than symbol (`>`).
 
@@ -298,7 +298,7 @@ If you have an article file and a tutorial file with the same base name, DocC wi
 
 > 💡 **Tip**: You can also link to symbols using the `<doc:>` syntax. Just insert the symbol’s path between the colon (`:`) and the terminating greater-than symbol (`>`). `<doc:Sloth/init(name:color:power:)>`
 
-##### Navigate to a Heading or Task Group
+### Navigate to a Heading or Task Group
 
 To add a link to heading or task group on another page, use a `<doc:>` link to the page and end the link with a hash (`#`) followed by the name of the heading. If the heading text contains whitespace or punctuation characters, replace each consecutive sequence of whitespace characters with a dash and optionally remove the punctuation characters.
 
@@ -330,7 +330,7 @@ If a task group is empty or none of its links resolve successfully, it’s not p
 >
 > Before Swift-DocC 5.9, links to same-page headings don’t support a leading hash (`#`) character.
 
-##### Include web links
+### Include web links
 
 To include a regular web link, add a set of brackets (`[]`) and a set of parentheses (`()`). Then add the link’s text between the brackets, and add the link’s URL within the parentheses.
 

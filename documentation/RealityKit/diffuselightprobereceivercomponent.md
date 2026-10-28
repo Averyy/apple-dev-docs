@@ -20,7 +20,7 @@ A component that receives diffuse lighting from a referenced probe group.
 struct DiffuseLightProbeReceiverComponent
 ```
 
-#### Overview
+## Overview
 
 Attach this component to entities that should receive spatially-varying diffuse indirect lighting. As the entity moves through the scene, the system automatically interpolates diffuse lighting from the probe group based on the entity’s current position.
 

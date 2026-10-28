@@ -19,7 +19,7 @@ Request to initiate processing background upload jobs.
 func process() -> PHBackgroundResourceUploadProcessingResult
 ```
 
-#### Return Value
+## Return Value
 
 A result type of [`PHBackgroundResourceUploadProcessingResult`](../phbackgroundresourceuploadprocessingresult.md) based on the state of the processing task.
 

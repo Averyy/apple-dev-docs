@@ -37,7 +37,7 @@ var showsCompletionBanner: Bool { get set }
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), GameKit displays a notification banner to inform the player that they completed the achievement. If you want to present your own interface, set this property to [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

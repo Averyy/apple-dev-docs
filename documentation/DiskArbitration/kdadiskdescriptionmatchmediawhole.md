@@ -18,7 +18,7 @@ var kDADiskDescriptionMatchMediaWhole: Unmanaged<CFDictionary>
 extern CFDictionaryRef kDADiskDescriptionMatchMediaWhole;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFDictionary object containing a set of disk description keys and values appropriate for matching whole media using DARegister*Callback().
 

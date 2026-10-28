@@ -25,7 +25,7 @@ struct NSHashTableCallBacks
 typedef struct { ... } NSHashTableCallBacks;
 ```
 
-#### Overview
+## Overview
 
 All functions must know the types of things in the hash table to be able to operate on them. Sets of predefined call backs are described in [`NSHashTable`](./nshashtable.md).
 

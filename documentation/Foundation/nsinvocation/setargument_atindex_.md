@@ -21,7 +21,7 @@ Sets an argument of the receiver.
 - (void) setArgument:(void *) argumentLocation atIndex:(NSInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 This method copies the contents of `buffer` as the argument at `index`. The number of bytes copied is determined by the argument size.
 

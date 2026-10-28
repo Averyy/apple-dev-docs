@@ -21,7 +21,7 @@ Initializes and runs the widget.
 @preconcurrency static func main()
 ```
 
-#### Overview
+## Overview
 
 Because you precede your [`Widget`](../widget.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget’s `main()` method to launch the widget. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 

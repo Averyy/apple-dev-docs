@@ -19,11 +19,11 @@ var objectSpecifier: NSScriptObjectSpecifier { get }
 @property (strong, readonly) NSScriptObjectSpecifier * objectSpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 The document object specifier.
 
-#### Discussion
+## Discussion
 
 An object specifier represents an AppleScript reference form, which is a natural-language expression such as `words 10 through 20` or `front document`. During script processing, an object contained by a document (such as the `second paragraph` or the `third rectangle`) may need to specify its container (the document).
 

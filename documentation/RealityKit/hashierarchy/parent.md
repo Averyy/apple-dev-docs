@@ -21,7 +21,7 @@ The parent entity.
 @preconcurrency var parent: Entity? { get }
 ```
 
-#### Discussion
+## Discussion
 
 An entity has at most one parent entity. If an entity isn’t part of a hierarchy, or if it is a root entity, the [`parent`](./parent.md) property is `nil`.
 

@@ -23,7 +23,7 @@ case unentitled
 CXErrorCodeRequestTransactionErrorUnentitled
 ```
 
-#### Discussion
+## Discussion
 
 You most commonly receive this error code when the `voip` value is missing from the `UIBackgroundModes` array in your app’s `Info.plist` file.
 

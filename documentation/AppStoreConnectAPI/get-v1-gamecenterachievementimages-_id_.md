@@ -11,9 +11,9 @@ Get information about an achievement image and its upload and processing status.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Read Game Center Achievement Image Information`](./get-v2-gamecenterachievementimages-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

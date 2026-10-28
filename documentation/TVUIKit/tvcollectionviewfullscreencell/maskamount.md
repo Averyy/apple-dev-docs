@@ -19,7 +19,7 @@ var maskAmount: CGFloat { get }
 @property (nonatomic, readonly) CGFloat maskAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The amount of masking is determined by attributes of the collection view. A value of 0.0 is applied automatically when the cell is in full screen mode, indicating that there is no masking around the cell. A value of 1.0 is the default masking applied in browsing mode.
 

@@ -25,7 +25,7 @@ func startRequest(_ asyncVideoCompositionRequest: AVAsynchronousVideoComposition
 - (void) startVideoCompositionRequest:(AVAsynchronousVideoCompositionRequest *) asyncVideoCompositionRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The custom compositor is expected to invoke, either subsequently or immediately,  the `asyncVideoCompositionRequest` object’s [`finish(withComposedVideoFrame:)`](../avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md) or [`finish(with:)`](../avasynchronousvideocompositionrequest/finish%28with%29.md) methods.
 

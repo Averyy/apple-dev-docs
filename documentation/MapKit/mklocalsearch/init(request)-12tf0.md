@@ -25,11 +25,11 @@ init(request: MKLocalSearch.Request)
 - (instancetype) initWithRequest:(MKLocalSearchRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search object.
 
-#### Discussion
+## Discussion
 
 This method stores a copy of the object in the `request` parameter. So, the object ignores any changes you make to your request object after calling this method.
 

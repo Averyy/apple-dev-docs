@@ -19,7 +19,7 @@ var kFxLightType_Directional: Int { get }
 kFxLightType_Directional
 ```
 
-#### Discussion
+## Discussion
 
 This type of light is often used to simulate the sun, and it casts parallel light rays at every point in space.
 

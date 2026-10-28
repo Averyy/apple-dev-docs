@@ -25,11 +25,11 @@ func localizedStandardCompare(_ string: String) -> ComparisonResult
 - (NSComparisonResult) localizedStandardCompare:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The result of the comparison.
 
-#### Discussion
+## Discussion
 
 This method should be used whenever file names or other strings are presented in lists and tables where Finder-like sorting is appropriate. The exact sorting behavior of this method is different under different locales and may be changed in future releases. This method uses the current locale.
 

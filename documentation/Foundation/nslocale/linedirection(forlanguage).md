@@ -25,7 +25,7 @@ class func lineDirection(forLanguage isoLangCode: String) -> NSLocale.LanguageDi
 + (NSLocaleLanguageDirection) lineDirectionForLanguage:(NSString *) isoLangCode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the direction in which lines appear in the specified language. See [`NSLocale.LanguageDirection`](./languagedirection.md) for possible values. If the appropriate direction can’t be determined [`NSLocale.LanguageDirection.unknown`](./languagedirection/unknown.md) is returned.
 

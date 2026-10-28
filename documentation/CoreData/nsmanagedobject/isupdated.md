@@ -25,7 +25,7 @@ var isUpdated: Bool { get }
 @property (nonatomic, readonly, getter=isUpdated) BOOL updated;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has unsaved changes, otherwise [`false`](../../Swift/false.md). The receiver has unsaved changes if it has been updated since its managed object context was last saved.
 

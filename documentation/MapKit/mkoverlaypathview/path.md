@@ -19,7 +19,7 @@ The current path to use when drawing the overlay.
 @property CGPathRef path;
 ```
 
-#### Discussion
+## Discussion
 
 Getting the value of this property causes the path to be created (using the [`createPath`](./createpath.md) method) if it does not already exist. You can also assign a path object to this property explicitly.
 

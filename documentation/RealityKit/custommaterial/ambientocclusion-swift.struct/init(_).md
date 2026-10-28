@@ -19,7 +19,7 @@ Creates an object from a physically based material’s ambient occlusion propert
 init(_ value: PhysicallyBasedMaterial.AmbientOcclusion)
 ```
 
-#### Discussion
+## Discussion
 
 Ambient occlusion represents the entity’s exposure to ambient light. This initializer creates a new object by copying the values from an existing [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md) instance’s [`ambientOcclusion`](../../physicallybasedmaterial/ambientocclusion-swift.property.md) property.
 

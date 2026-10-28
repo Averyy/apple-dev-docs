@@ -24,7 +24,7 @@ static var notifyOthersOnDeactivation: AVAudioSession.SetActiveOptions { get }
 AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation
 ```
 
-#### Discussion
+## Discussion
 
 When passed in the `options` parameter of the [`setActive(_:options:)`](../setactive%28_,options%29.md) instance method, this option indicates that when your audio session deactivates, other audio sessions that had been interrupted by your session can return to their active state.
 

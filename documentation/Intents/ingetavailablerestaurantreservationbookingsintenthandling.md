@@ -22,7 +22,7 @@ protocol INGetAvailableRestaurantReservationBookingsIntentHandling : NSObjectPro
 @protocol INGetAvailableRestaurantReservationBookingsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INGetAvailableRestaurantReservationBookingsIntentHandling`](./ingetavailablerestaurantreservationbookingsintenthandling.md) protocol to resolve, confirm, and handle requests for an initial set of reservation times from which to select. The system delivers an [`INGetAvailableRestaurantReservationBookingsIntent`](./ingetavailablerestaurantreservationbookingsintent.md) object to your handler with information about the user’s party and preferred reservation time. Use that intent object to generate a list of potential reservation times from which the user can select.
 

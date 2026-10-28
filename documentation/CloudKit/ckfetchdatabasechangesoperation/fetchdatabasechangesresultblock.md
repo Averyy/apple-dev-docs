@@ -21,7 +21,7 @@ The closure to execute when the operation finishes.
 var fetchDatabaseChangesResultBlock: ((Result<(serverChangeToken: CKServerChangeToken, moreComing: Bool), any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure has no return value and takes the following parameter:
 

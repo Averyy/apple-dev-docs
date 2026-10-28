@@ -22,7 +22,7 @@ class PKIssuerProvisioningExtensionHandler
 @interface PKIssuerProvisioningExtensionHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 The principal class of your app’s extension target must be a subclass of `PKIssuerProvisioningExtensionHandler`.
 

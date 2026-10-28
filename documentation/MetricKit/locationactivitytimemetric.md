@@ -16,7 +16,7 @@ A metric that measures time spent using location services at each accuracy level
 struct LocationActivityTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.locationActivityTime(_:)`](./metricresult/locationactivitytime%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 

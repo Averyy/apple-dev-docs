@@ -21,7 +21,7 @@ optional func tabBarControllerSupportedInterfaceOrientations(_ tabBarController:
 - (UIInterfaceOrientationMask) tabBarControllerSupportedInterfaceOrientations:(UITabBarController *) tabBarController;
 ```
 
-#### Return Value
+## Return Value
 
 One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the tab bar controller.
 

@@ -24,7 +24,7 @@ class CNChangeHistoryFetchRequest
 @interface CNChangeHistoryFetchRequest : CNFetchRequest
 ```
 
-#### Overview
+## Overview
 
 The system always returns changes to contacts. The system coalesces changes to remove redundant adds, updates, and deletes.
 

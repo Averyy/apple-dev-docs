@@ -19,7 +19,7 @@ The length of each dimension of the array.
 var shape: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The shape contains [`rank`](./rank.md) elements. A value of `-1` in any dimension indicates a dynamic size.
 

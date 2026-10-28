@@ -22,7 +22,7 @@ class ParameterInfo<T>
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 For example:
 
@@ -36,7 +36,7 @@ class MyLayer : Module {
 
 will have keys `weights` and `bias`.
 
-##### See Also
+### See Also
 
 - [Creating Modules](./custom-layers.md)
 - [`ModuleInfo`](./moduleinfo.md)

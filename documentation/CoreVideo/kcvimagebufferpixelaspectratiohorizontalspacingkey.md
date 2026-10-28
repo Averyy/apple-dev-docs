@@ -25,7 +25,7 @@ let kCVImageBufferPixelAspectRatioHorizontalSpacingKey: CFString
 extern CFStringRef const kCVImageBufferPixelAspectRatioHorizontalSpacingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The horizontal spacing value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

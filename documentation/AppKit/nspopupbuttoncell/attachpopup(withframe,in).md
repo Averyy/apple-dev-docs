@@ -19,7 +19,7 @@ func attachPopUp(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) attachPopUpWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This call sets up the popup button cell to display a menu, which occurs in [`performClick(withFrame:in:)`](./performclick%28withframe,in%29.md). This method sets the cell’s control view and then highlights and redraws the cell. It does not show the menu.
 

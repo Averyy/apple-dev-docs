@@ -24,7 +24,7 @@ class let rateDidChangeOriginatingParticipantKey: String
 extern NSString * const AVPlayerRateDidChangeOriginatingParticipantKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a UUID of a participant in the playback coordinator’s [`otherParticipants`](../avplaybackcoordinator/otherparticipants.md) array.
 

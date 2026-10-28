@@ -24,7 +24,7 @@ var webViewConfiguration: WKWebViewConfiguration? { get }
 @property (nonatomic, copy, readonly, nullable) WKWebViewConfiguration * webViewConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a customized copy of the configuration, originally set in the web extension controller configuration, for this extension.
 

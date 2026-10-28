@@ -15,7 +15,7 @@ The world alignment behavior that is standard for the system.
 static var automatic: WorldAlignmentBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, volumes use the adaptive behavior.
 

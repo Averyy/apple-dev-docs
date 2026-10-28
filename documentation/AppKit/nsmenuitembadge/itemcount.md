@@ -19,7 +19,7 @@ var itemCount: Int { get }
 @property (readonly) NSInteger itemCount;
 ```
 
-#### Discussion
+## Discussion
 
 If you create a badge with a custom string, this value is `0`.
 

@@ -21,7 +21,7 @@ var copiesOnScroll: Bool { get set }
 @property BOOL copiesOnScroll;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the clip view copies its existing rendered image while scrolling (only drawing exposed portions of its document view); when it is [`false`](../../Swift/false.md), the view forces its contents to be redrawn each time.
 

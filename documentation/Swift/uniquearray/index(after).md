@@ -21,11 +21,11 @@ Returns the position immediately after the given index.
 func index(after index: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The index immediately following `i`.
 
-#### Discussion
+## Discussion
 
 > **Note**: To improve performance, this method does not validate that the index is valid before incrementing it. Index validation is deferred until the resulting index is used to access an element. This optimization may be removed in future versions; do not rely on it.
 

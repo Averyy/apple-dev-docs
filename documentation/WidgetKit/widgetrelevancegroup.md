@@ -20,7 +20,7 @@ A type for configuring widget behavior in the watchOS Smart Stack.
 struct WidgetRelevanceGroup
 ```
 
-#### Overview
+## Overview
 
 Use `WidgetRelevanceGroup` alongside [`WidgetRelevanceAttribute`](./widgetrelevanceattribute.md) to tell the system how it should group your widgets in the watchOS Smart Stack. The system may provide a default grouping mechanism for widgets in the Smart Stack; for example, per-app grouping. Creating a relevance group and choosing the `.ungrouped` option opts out of default grouping behavior. For additional information about widgets in Smart Stacks, refer to [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md).
 

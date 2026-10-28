@@ -13,7 +13,7 @@ Monitor In-App Purchase events in real time and learn of unreported external pur
 
 - [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md)
 
-#### Overview
+## Overview
 
 App Store Server Notifications is a server-to-server service that sends real-time notifications for In-App Purchase events, and notifications for unreported external purchase tokens. Use the data in the notifications to update your user-account database, and to monitor and respond to in-app purchase refunds. For notifications related to the [External Purchase](../StoreKit/external-purchase.md) API, see [`externalPurchaseToken`](./externalpurchasetoken.md).
 
@@ -23,19 +23,19 @@ To receive server notifications from the App Store, provide your server’s HTTP
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server notification posts. For more information, see [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md) and [Responding to App Store Server Notifications](./responding-to-app-store-server-notifications.md).
 
-##### Process in-app purchase notifications
+### Process in-app purchase notifications
 
 Notifications cover events in the in-app purchase life cycle, including purchases, subscription renewals, offer redemptions, refunds, and more. For a complete list of notification types, see [`notificationType`](./notificationtype.md) for [`App Store Server Notifications V2`](./app-store-server-notifications-v2.md).
 
 Use the notification type, along with the transaction and subscription renewal information, to update a customer’s service or to present promotional offers according to your business logic.
 
-##### Process external purchase token notifications
+### Process external purchase token notifications
 
 A [`notificationType`](./notificationtype.md) of `EXTERNAL_PURCHASE_TOKEN` with an `UNREPORTED` [`subtype`](./subtype.md) indicates that Apple generated an external purchase token for your app but hasn’t received a report for the token. The notification includes the token in the [`externalPurchaseToken`](./externalpurchasetoken.md) field of the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). Use the token information to report it to Apple, including if you don’t recognize the token in your system. To report tokens, with or without associated transactions, call the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md)’s [`Send External Purchase Report`](../ExternalPurchaseServerAPI/send-external-purchase-report.md) endpoint.
 
 For more information about token reporting requirements in the EU, Brazil, and Japan, see [Using alternative payment options on the App Store in the European Union](https://developer.apple.com/support/apps-using-alternative-payment-providers-in-the-eu/), [Using alternative payment options on the App Store in Brazil](https://developer.apple.com/support/payment-options-on-the-app-store-in-brazil/), and [Using alternative payment options on the App Store in Japan](https://developer.apple.com/support/payment-options-on-the-app-store-in-japan/).
 
-##### Test your server setup
+### Test your server setup
 
 To determine whether your server is receiving notifications, call the [`Request a Test Notification`](../AppStoreServerAPI/request-a-test-notification.md) endpoint in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) to ask the App Store server to send a notification with the [`notificationType`](./notificationtype.md) `TEST`. Use the `testNotificationToken` you receive to call the [`Get Test Notification Status`](../AppStoreServerAPI/get-test-notification-status.md) endpoint to learn how your server responds to the test notification.
 

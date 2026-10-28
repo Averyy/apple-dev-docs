@@ -23,7 +23,7 @@ var lateralJitter: CGFloat { get }
 @property (nonatomic, readonly) CGFloat lateralJitter;
 ```
 
-#### Discussion
+## Discussion
 
 Lateral jitter applies only to some inks, such as `PKInkIdentifierPencil`.
 

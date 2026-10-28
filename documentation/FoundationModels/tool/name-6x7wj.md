@@ -20,7 +20,7 @@ A unique name for the tool.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use whichever style reads best in your codebase, such as `get_weather`, `toggleDarkMode`, or `search contacts`.
 

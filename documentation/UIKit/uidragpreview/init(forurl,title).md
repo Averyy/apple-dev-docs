@@ -18,11 +18,11 @@ Initializes a drag item preview with a URL and title.
 convenience init(forURL url: URL, title: String?)
 ```
 
-#### Return Value
+## Return Value
 
 A drag preview for a URL that has a title.
 
-#### Discussion
+## Discussion
 
 This method creates a two-line drag item preview, with the title displayed on the first line. The second line is a textual representation of the URL that might not show the full URL string. Don’t use a file URL. Passing `nil` for the title is the same as calling [`init(forURL:)`](./init%28forurl%29.md).
 

@@ -19,7 +19,7 @@ static let enabled: NSBindingName
 extern NSBindingName NSEnabledBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

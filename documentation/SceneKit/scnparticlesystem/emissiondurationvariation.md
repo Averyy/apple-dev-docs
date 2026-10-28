@@ -25,7 +25,7 @@ var emissionDurationVariation: CGFloat { get set }
 @property (nonatomic) CGFloat emissionDurationVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`emissionDuration`](./emissionduration.md) property. For each emission period, SceneKit randomly adjusts the duration by up to half the [`emissionDurationVariation`](./emissiondurationvariation.md) value. For example, if the [`emissionDuration`](./emissionduration.md) value is `1.0` seconds and the [`emissionDurationVariation`](./emissiondurationvariation.md) value is `0.5` seconds, the system emits particles over a period of `0.75` to `1.25` seconds before stopping.
 

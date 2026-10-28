@@ -24,7 +24,7 @@ func beginFindString(_ string: String, withOptions options: NSString.CompareOpti
 - (void) beginFindString:(NSString *) string withOptions:(NSStringCompareOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately. It causes notifications to be issued when searching begins and ends, on each search hit, and when the search proceeds to a new page. For options, refer to [Searching, Comparing, and Sorting Strings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/SearchingStrings.html#//apple_ref/doc/uid/20000149).
 

@@ -5,7 +5,7 @@
 
 Use Swift Observation and automatic tracking to update your views in response to model data updates.
 
-#### Overview
+## Overview
 
 Traditionally, when your app’s model data changes, you need to update your views with the new data. Depending on what you update, you may also need to manually call methods like [`setNeedsLayout()`](./uiview/setneedslayout%28%29.md) or [`setNeedsDisplay()`](./uiview/setneedsdisplay%28%29.md) to refresh your view layouts. This approach requires you to remember when and where to invalidate views, creating opportunities for bugs and outdated displays.
 
@@ -15,7 +15,7 @@ UIKit provides methods and closures in several objects where [automatic observat
 
 > **Note**: In iOS 18, the system doesn’t enable automatic observation tracking by default. To enable it, add the [`UIObservationTrackingEnabled`](../BundleResources/information-property-list/uiobservationtrackingenabled.md) key to your app’s information property list and set the key’s value to [`true`](../Swift/true.md).
 
-##### Update view properties automatically
+### Update view properties automatically
 
 The [`updateProperties()`](./uiviewcontroller/updateproperties%28%29.md) method automatically tracks `Observable` properties and updates views when they change. For example, to show a message list with a status label that displays unread message information, start by creating an `Observable` model with the properties your view needs:
 
@@ -43,7 +43,7 @@ You can also automatically track changes in a custom view using [`updateProperti
 
 > **Note**: To get automatic observation tracking in iOS 18, use [`viewWillLayoutSubviews()`](./uiviewcontroller/viewwilllayoutsubviews%28%29.md).
 
-##### Configure collection view and table view cells automatically
+### Configure collection view and table view cells automatically
 
 Collection view and table view cells also support automatic observation tracking through their configuration update handler. For example, to show a list where each cell displays information from an `Observable` model, start by creating an `Observable` model for your list items:
 
@@ -70,7 +70,7 @@ cell.configurationUpdateHandler = { cell, state in
 
 UIKit automatically tracks the `Observable` model properties you use in the handler. When any of these properties change while the cell is visible, UIKit runs the handler again to update the cell. This pattern is especially useful for lists in your app where model data changes frequently.
 
-##### Separate property updates from layout
+### Separate property updates from layout
 
 Use `updateProperties()` for configuring content and styling, such as putting text in labels and adjusting colors based on data. Reserve `layoutSubviews()` for geometry calculations, such as setting a frame for a view when using Auto Layout constraints doesn’t work for your situation. This separation improves performance by avoiding unnecessary layout passes.
 
@@ -87,7 +87,7 @@ By using `updateProperties()` instead of `layoutSubviews()`, you avoid re-runnin
 
 If you need to manually trigger property updates, call [`setNeedsUpdateProperties()`](./uiviewcontroller/setneedsupdateproperties%28%29.md) on your view controller or [`setNeedsUpdateProperties()`](./uiview/setneedsupdateproperties%28%29.md) on your view. This method tells UIKit to call `updateProperties()` during the next update pass.
 
-##### Optimize the UIKit update pass
+### Optimize the UIKit update pass
 
 UIKit performs updates in a specific order to help your views display correctly. Place your code in the right method to keep your user interface up-to-date and avoid performance issues.
 

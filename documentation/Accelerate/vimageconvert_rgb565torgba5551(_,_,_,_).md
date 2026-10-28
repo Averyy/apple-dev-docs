@@ -25,11 +25,11 @@ func vImageConvert_RGB565toRGBA5551(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 vImage_Error vImageConvert_RGB565toRGBA5551(const vImage_Buffer *src, const vImage_Buffer *dest, int dither, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function supports the following dithering algorithms:
 

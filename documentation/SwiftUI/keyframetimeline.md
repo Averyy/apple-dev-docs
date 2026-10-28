@@ -21,7 +21,7 @@ A description of how a value changes over time, modeled using keyframes.
 struct KeyframeTimeline<Value>
 ```
 
-#### Overview
+## Overview
 
 Unlike other animations in SwiftUI (using [`Animation`](./animation.md)), keyframes don’t interpolate between from and to values that SwiftUI provides as state changes. Instead, keyframes fully define the path that a value takes over time using the tracks that make up their body.
 

@@ -24,7 +24,7 @@ var quadratureTolerance: VNDegrees { get set }
 @property (nonatomic, assign, readwrite) VNDegrees quadratureTolerance;
 ```
 
-#### Discussion
+## Discussion
 
 The tolerance value should range from `0` to `45`, inclusive. The default tolerance is `30`.
 

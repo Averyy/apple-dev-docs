@@ -25,7 +25,7 @@ var allowsRotation: Bool { get set }
 @property (nonatomic) BOOL allowsRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). This property is ignored on edge-based bodies, which are unaffected by forces in the system.
 

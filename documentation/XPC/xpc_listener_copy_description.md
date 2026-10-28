@@ -16,11 +16,11 @@ Copies the description string of a listener.
 extern char *xpc_listener_copy_description(xpc_listener_t listener);
 ```
 
-#### Return Value
+## Return Value
 
 A string that describes the listener.
 
-#### Discussion
+## Discussion
 
 To dispose of the string when it’s no longer needed, call `free()`.
 

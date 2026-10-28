@@ -20,7 +20,7 @@ var kMEVideoDecoderCodecInfoKey: String { get }
 #define kMEVideoDecoderCodecInfoKey
 ```
 
-#### Discussion
+## Discussion
 
 Each dictionary must contain the name and the codec format type key.
 

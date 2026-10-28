@@ -25,7 +25,7 @@ class CLKTimeIntervalGaugeProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 Use this gauge provider to visually show the amount of time that has elapsed within the specified time interval.
 

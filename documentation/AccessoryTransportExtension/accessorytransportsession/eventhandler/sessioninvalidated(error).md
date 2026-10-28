@@ -16,7 +16,7 @@ Handles session invalidation.
 func sessionInvalidated(error: AccessoryTransportSession.Error?)
 ```
 
-#### Discussion
+## Discussion
 
 Clean up connection state and resources when the system calls this method.
 

@@ -28,7 +28,7 @@ extern NSNotificationName const UISceneDidDisconnectNotification;
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 Use this notification to perform any final cleanup before your scene is purged from memory. For example, use it to release references to files or shared resources and to save user data. UIKit places the affected scene in the [`object`](../../Foundation/nsnotification/object.md) property of the notification.
 

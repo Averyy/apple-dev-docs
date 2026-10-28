@@ -16,11 +16,11 @@ Used to obtain the properties of the UPS device such as the name and transport.
 IOReturn (*getProperties)(void *thisPointer, CFDictionaryRef *properties);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Property keys are defined in IOPSKeys.h. This is not an allocation method. Thus the caller does not release the CFDictionary that is returned.
 

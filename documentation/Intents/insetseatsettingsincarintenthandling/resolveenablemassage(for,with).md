@@ -28,7 +28,7 @@ optional func resolveEnableMassage(for intent: INSetSeatSettingsInCarIntent) asy
 - (void) resolveEnableMassageForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether the app can enable the seat massage system.
 

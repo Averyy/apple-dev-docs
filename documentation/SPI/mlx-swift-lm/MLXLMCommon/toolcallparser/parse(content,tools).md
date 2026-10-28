@@ -18,7 +18,7 @@ Parse the content into a `ToolCall`.
 func parse(content: String, tools: [[String : any Sendable]]?) -> ToolCall?
 ```
 
-#### Return Value
+## Return Value
 
 A `ToolCall` if parsing succeeds, `nil` otherwise
 

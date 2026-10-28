@@ -23,7 +23,7 @@ case invalidClientProcess
 CXErrorCodeNotificationServiceExtensionErrorInvalidClientProcess
 ```
 
-#### Discussion
+## Discussion
 
 Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](../../cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method from a [`UNNotificationServiceExtension`](../../../UserNotifications/unnotificationserviceextension.md) object that is responding to an incoming notification request.
 

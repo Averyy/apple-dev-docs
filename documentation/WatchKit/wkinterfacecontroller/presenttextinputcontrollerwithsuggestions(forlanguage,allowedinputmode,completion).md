@@ -23,7 +23,7 @@ func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: (
 - (void) presentTextInputControllerWithSuggestionsForLanguage:(NSArray * (^)(NSString *inputLanguage)) suggestionsHandler allowedInputMode:(WKTextInputMode) inputMode completion:(void (^)(NSArray *results)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system calls your `suggestionsHandler` block to retrieve the text suggestions for the user’s current language. Shortly after, it displays a text input controller to the user. The input controller displays the list of input phrases you specify and provides options to enter new text phrases through dictation or to select from a list of emoji. If the user changes the input language, the system calls your `suggestionsHandler` block again to retrieve suggestions for the new language.
 

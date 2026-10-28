@@ -25,7 +25,7 @@ class NSXPCConnection
 @interface NSXPCConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class is the primary means of creating and configuring the communication mechanism between two processes. Each process has one instance of this class to represent the endpoint in the communication channel.
 

@@ -15,7 +15,7 @@ Tags that enable your app to manage image-analysis context menu items.
 struct MenuTag
 ```
 
-#### Overview
+## Overview
 
 Manage app context menu items by implementing the [`ImageAnalysisOverlayViewDelegate`](../imageanalysisoverlayviewdelegate.md) menu-related callbacks and referencing the menu item instances using tags from this enumeration. For example, see [`overlayView(_:updatedMenuFor:for:at:)`](../imageanalysisoverlayviewdelegate/overlayview%28_,updatedmenufor,for,at%29.md).
 

@@ -24,7 +24,7 @@ func JSGlobalContextRetain(_ ctx: JSGlobalContextRef!) -> JSGlobalContextRef!
 JSGlobalContextRefJSGlobalContextRetain(JSGlobalContextRef ctx);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSGlobalContextRef`](./jsglobalcontextref.md) that is the same as `ctx`.
 

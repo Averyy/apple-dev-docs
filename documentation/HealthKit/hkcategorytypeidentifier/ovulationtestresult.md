@@ -24,7 +24,7 @@ static let ovulationTestResult: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierOvulationTestResult;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueOvulationTestResult`](../hkcategoryvalueovulationtestresult.md) enum.
 

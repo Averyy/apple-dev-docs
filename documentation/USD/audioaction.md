@@ -4,11 +4,11 @@
 
 An action that plays audio.
 
-#### Overview
+## Overview
 
 This prim implements one of two ways to play audio in a scene; to play audio without [AudioAction](./audioaction.md), use [SpatialAudio](https://openusd.org/docs/UsdAudio-Proposal.html).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "AudioAction"

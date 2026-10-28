@@ -15,7 +15,7 @@ The response body for endpoints that list the downloadable segments of an analyt
 object AnalyticsReportSegmentsResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read the Segments for a Report`](./get-v1-analyticsreportinstances-_id_-segments.md).
 

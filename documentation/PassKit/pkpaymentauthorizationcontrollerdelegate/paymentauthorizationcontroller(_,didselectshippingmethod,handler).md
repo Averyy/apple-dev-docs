@@ -30,7 +30,7 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 - (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didSelectShippingMethod:(PKShippingMethod *) shippingMethod handler:(void (^)(PKPaymentRequestShippingMethodUpdate *requestUpdate)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update shipping costs based on the shipping address the user selected, as previously passed to the delegate in the [`paymentAuthorizationController(_:didSelectShippingContact:handler:)`](./paymentauthorizationcontroller%28_,didselectshippingcontact,handler%29.md) method. If the user didn’t select an address, use the prepopulated address on the payment request.
 

@@ -17,7 +17,7 @@ Applies the Rectified Linear Unit 6.
 class ReLU6
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.minimum(MLX.maximum(x, 0), 6)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`relu6(_:)`](./relu6%28_%29.md)

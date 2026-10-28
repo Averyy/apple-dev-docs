@@ -34,7 +34,7 @@ protocol MTLTexture : MTLResource
 - [Creating a mipmapped texture](./creating-a-mipmapped-texture.md)
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Overview
+## Overview
 
 Don’t implement this protocol yourself; instead, use one of the following methods to create an [`MTLTexture`](./mtltexture.md) instance:
 

@@ -20,11 +20,11 @@ var toManyRelationshipKeys: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * toManyRelationshipKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the names of the to-many relationship properties of instances of the described class.
 
-#### Discussion
+## Discussion
 
 To-many relationship properties are arrays of objects.
 

@@ -20,7 +20,7 @@ class var isClassificationSupported: Bool { get }
 @property (class, nonatomic, readonly, getter=isClassificationSupported) BOOL classificationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Plane classification is available on iOS devices with A12 or later GPU.
 

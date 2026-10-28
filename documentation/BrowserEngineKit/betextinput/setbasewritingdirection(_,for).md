@@ -27,7 +27,7 @@ func setBaseWritingDirection(_ writingDirection: NSWritingDirection, for range: 
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 - writingDirection: Whether the writing direction is left-to-right, right-to-left, or the natural direction for the current script.
 - range: The range in the text view’s document for which the writing direction applies.

@@ -25,7 +25,7 @@ func intersects(in range: NSRange) -> Bool
 - (BOOL) intersectsIndexesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the index set contains one or more of the indexes in `indexRange`, [`false`](../../Swift/false.md) otherwise.
 

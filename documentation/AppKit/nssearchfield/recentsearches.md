@@ -19,7 +19,7 @@ var recentSearches: [String] { get set }
 @property (copy) NSArray<NSString *> * recentSearches;
 ```
 
-#### Discussion
+## Discussion
 
 An array of `NSString` objects, each of which contains a search string either displayed in the search menu or from a recent autosave archive. If there have been no recent searches and no prior searches saved under an autosave name, this array may be empty.
 

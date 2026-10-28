@@ -25,7 +25,7 @@ func NSSetUncaughtExceptionHandler(_: ((NSException) -> Void)?)
 extern void NSSetUncaughtExceptionHandler(void (*)(NSException *));
 ```
 
-#### Discussion
+## Discussion
 
 Sets the top-level error-handling function where you can perform last-minute logging before the program terminates.
 

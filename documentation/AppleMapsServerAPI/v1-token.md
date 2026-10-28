@@ -13,9 +13,9 @@ Returns a JWT maps access token that you use to call the service API.
 
 - [Creating and using tokens with Maps Server API](./creating-and-using-tokens-with-maps-server-api.md)
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

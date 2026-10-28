@@ -21,7 +21,7 @@ An authentication tag.
 var tag: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The authentication tag has a length of 16 bytes.
 

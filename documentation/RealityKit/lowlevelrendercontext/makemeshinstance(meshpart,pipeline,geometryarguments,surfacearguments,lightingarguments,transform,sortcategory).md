@@ -19,11 +19,11 @@ Creates a drawable mesh instance pairing a mesh part with a compiled pipeline st
 func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelMeshInstance`](../lowlevelmeshinstance.md).
 
-#### Discussion
+## Discussion
 
 Pass `nil` for any argument table stage not required by the material.
 

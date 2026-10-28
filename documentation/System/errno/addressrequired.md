@@ -25,7 +25,7 @@ static var addressRequired: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A required address was omitted from a socket operation.
 

@@ -26,7 +26,7 @@ var requiresFlushToResumeDecoding: Bool { get }
 @property (nonatomic, readonly) BOOL requiresFlushToResumeDecoding;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`requiresFlushToResumeDecoding`](../avsamplebuffervideorenderer/requiresflushtoresumedecoding.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

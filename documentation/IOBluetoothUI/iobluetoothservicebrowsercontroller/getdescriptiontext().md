@@ -19,7 +19,7 @@ func getDescriptionText() -> String!
 - (NSString *) getDescriptionText;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the description text of the device selector panel.
 

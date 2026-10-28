@@ -5,35 +5,35 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 AppKit in macOS 10.14 includes new features, as well as API changes and deprecations. For information about earlier releases, see [AppKit Release Notes for macOS 10.13](https://developer.apple.com/library/archive/releasenotes/AppKit/RN-AppKit/).
 
 Pay special attention to the additions and changes described in *Supporting Dark Mode* and *Swift and Objective-C API Enhancements*.
 
-##### Supporting Dark Mode
+### Supporting Dark Mode
 
 In macOS 10.14, users can choose to adopt a systemwide light or dark appearance. The Light ([`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md)) appearance is the default appearance. When an app links on the macOS 10.14 SDK, it’s automatically opted in to supporting the dark appearance, with its [`NSApp`](../AppKit/nsapp.md) inheriting the [`darkAqua`](../AppKit/nsappearance/name-swift.struct/darkaqua.md) appearance from System Preferences.  You can override the automatic behavior to explicitly opt in to or opt out of supporting Dark mode using the optional `NSRequiresAquaSystemAppearance` `Info.plist` key: Setting the key to `NO` allows an app to support Dark mode regardless of link check; setting it to `YES` forces it to opt out. Use the `Info.plist` key to opt out only before you audit an app for compatibility with Dark mode. You may not be able to opt out of supporting Dark mode in future versions of macOS.
 
 For more information, see [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md) and [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md).
 
-###### Named Image and Color Support in Dark Mode
+#### Named Image and Color Support in Dark Mode
 
 When you add custom image and color sets to an asset catalog, you can define appearance-sensitive variants to be used when an image is shown in a context with that appearance. Images and colors that you create using the existing [`NSImage`](../AppKit/nsimage.md) [`init(named:)`](../AppKit/nsimage/init%28named%29.md) and [`NSColor`](../AppKit/nscolor.md) [`init(named:)`](../AppKit/nscolor/init%28named%29.md) initializers maintain a dynamic connection to the named asset catalog set and don’t need to be recreated when the appearance changes. When an image is drawn or a color is resolved, the instance queries the [`current`](../AppKit/nsappearance/current.md) appearance to determine the correct image or color to use.
 
 The asset catalog is backward compatible with older releases, where the Light ([`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md)) appearance asset is used.
 
-###### Automatic NSVisualEffectView Appearance Inheritance
+#### Automatic NSVisualEffectView Appearance Inheritance
 
 For apps linked against the macOS 10.14 SDK, [`NSVisualEffectView`](../AppKit/nsvisualeffectview.md) automatically uses the correct vibrant [`NSAppearance`](../AppKit/nsappearance.md) as its appearance, based on the appearance of its superview. For example, if its superview uses the [`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md) appearance, [`NSVisualEffectView`](../AppKit/nsvisualeffectview.md) uses [`vibrantLight`](../AppKit/nsappearance/name-swift.struct/vibrantlight.md). As a result, you shouldn’t explicitly set the appearance of the [`NSVisualEffectView`](../AppKit/nsvisualeffectview.md), either in code or in Interface Builder. Explicitly setting the appearance was necessary in earlier versions of macOS.
 
 Using the automatic appearance is especially important for supporting Dark mode where, for example, setting the [`vibrantLight`](../AppKit/nsappearance/name-swift.struct/vibrantlight.md) appearance makes the [`NSVisualEffectView`](../AppKit/nsvisualeffectview.md) visually clash with the rest of your app.
 
-###### New NSVisualEffectView Materials
+#### New NSVisualEffectView Materials
 
 [`NSVisualEffectView.Material`](../AppKit/nsvisualeffectview/material-swift.enum.md) includes new semantic materials in macOS 10.14. Semantic materials are like semantic colors: their names describe where they are used, not what they look like. They might look different in different system appearances.
 
-###### Desktop-Tinted Materials
+##### Desktop-Tinted Materials
 
 Three of the new semantic materials use a color tinting effect based on the user’s desktop picture when in Dark mode. In the [`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md) appearance, the new materials currently look the same as their corresponding [`NSColor`](../AppKit/nscolor.md):
 
@@ -51,7 +51,7 @@ If your app sets its background or fill colors differently, you can use [`NSVisu
 
 To avoid drawing issues, apps linked on macOS SDKs prior to 10.14 are opted out of the tinting effect  when a table view’s background color is set to [`controlBackgroundColor`](../AppKit/nscolor/controlbackgroundcolor.md) and the table view overrides [`isOpaque`](../AppKit/nsview/isopaque.md).
 
-###### Deprecation of Nonsemantic Materials
+#### Deprecation of Nonsemantic Materials
 
 The following nonsemantic materials are now deprecated:
 
@@ -61,19 +61,19 @@ The following nonsemantic materials are now deprecated:
 - [`NSVisualEffectView.Material.ultraDark`](../AppKit/nsvisualeffectview/material-swift.enum/ultradark.md)
 - [`NSVisualEffectView.Material.appearanceBased`](../AppKit/nsvisualeffectview/material-swift.enum/appearancebased.md)
 
-###### Printing Views
+#### Printing Views
 
 When you print an [`NSView`](../AppKit/nsview.md) through an [`NSPrintOperation`](../AppKit/nsprintoperation.md), its appearance now gets temporarily replaced by the [`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md) appearance during rendering. This is done to avoid printing with an inherited dark appearance. The [`NSView`](../AppKit/nsview.md) instance’s own appearance property—if it’s set—is left unaltered, so it remains possible to print views with a nonstandard appearance, if desired.
 
 Use separate, off-screen views to print the contents of on-screen windows. To avoid altering the contents of on-screen windows, the [`darkAqua`](../AppKit/nsappearance/name-swift.struct/darkaqua.md) appearance isn’t replaced when printing views that are simultaneously hosted in a window.
 
-###### Appearance-Aware Credits
+#### Appearance-Aware Credits
 
 You make the credits area match the appearance of an app by supplying the credits as an attributed string or by placing a `Credits.rtf` or `Credits.rtfd` in your app’s bundle. Use the proper system colors, like [`textColor`](../AppKit/nscolor/textcolor.md), [`linkColor`](../AppKit/nscolor/linkcolor.md), and [`labelColor`](../AppKit/nscolor/labelcolor.md), to make text display correctly in any appearance.
 
 If you use `.rtf` or `.rtfd` files to supply text for the credits area, the file must be saved using macOS 10.14 (beta 5 or later) to receive the appearance-aware treatment. If you create the file `.rtf` or `.rtfd` files on an earlier version of macOS, the appearance-aware treatment is only applied if the file contains only black text with no background color.
 
-##### Accent Colors
+### Accent Colors
 
 macOS 10.14 introduces a new user preference called the *accent color*. Use this color to tint the colorful parts of system controls, selection materials, and focus rings. A new system color, [`controlAccentColor`](../AppKit/nscolor/controlaccentcolor.md), draws dynamically using the user’s current preferred accent color. Your app’s views are automatically redrawn when the accent color changes.
 
@@ -81,7 +81,7 @@ macOS 10.14 introduces a new user preference called the *accent color*. Use this
 
 Named [`NSColor`](../AppKit/nscolor.md) objects defined in asset catalogs (`.xcassets`) can now vary their resolved color values based on the current [`NSAppearance`](../AppKit/nsappearance.md) at draw time. You use the asset catalog editor to specialize the color definition for the Dark and Increased Contrast modes. The resulting named colors are fully dynamic, and adapt to their context without requiring an explicit refresh.
 
-##### Rich Text Authoring
+### Rich Text Authoring
 
 When you save a rich text file (RTF) in macOS 10.14, the names of the [`NSColor`](../AppKit/nscolor.md) values that represent the colors in the rich text are saved in the file in addition to the individual evaluated components. When you open a rich text file that was saved in macOS 10.14, the named color values are used as the source of color information instead of the components.
 
@@ -89,11 +89,11 @@ When you save a rich text file (RTF) in macOS 10.14, the names of the [`NSColor`
 
 The new [`appearance`](../Foundation/nsattributedstring/documentattributekey/appearance.md) document attribute controls how the underlying unnamed colors are represented when you save rich text. If you omit this attribute in a document, named colors use the [`aqua`](../AppKit/nsappearance/name-swift.struct/aqua.md) appearance.
 
-##### Swift and Objective-C API Enhancements
+### Swift and Objective-C API Enhancements
 
 AppKit’s Swift interface is improved in macOS 10.14 in pursuit of greater clarity, consistency, concision, and a native Swift feel. In many cases, these enhancements go in hand with refinements to the corresponding Objective-C APIs. The changes include formalizing informal protocols; moving enumerations to a common-prefix identifier convention; hoisting Swift declarations into appropriate local namespaces; renaming some functions for Swift; replacing functions with computed properties; adding setters for some previously read-only array-valued properties; and similar enhancements that are discussed in these release notes.
 
-###### Automatically Sized Instances of NSToolbarItem
+#### Automatically Sized Instances of NSToolbarItem
 
 Beginning in apps linked on the macOS 10.14 SDK, if an [`NSToolbarItem`](../AppKit/nstoolbaritem.md) doesn’t have its [`minSize`](../AppKit/nstoolbaritem/minsize.md) and [`maxSize`](../AppKit/nstoolbaritem/maxsize.md) properties set, these values are calculated automatically by AppKit using constraints, similar to how the size properties for [`NSTouchBarItem`](../AppKit/nstouchbaritem.md) are set. (Previously, if the item’s minimum and maximum size properties weren’t set, the size of the containing view was used.) You can use constraints to define both a minimum and maximum size that will be calculated by AppKit.
 
@@ -108,13 +108,13 @@ The same applies for height. Omitting a minimum width or height constraint will 
 
 If the view being measured has an undefined height or width, the view’s frame size is used instead.
 
-###### Centered Toolbar Items
+#### Centered Toolbar Items
 
 [`NSToolbar`](../AppKit/nstoolbar.md) has a new [`centeredItemIdentifier`](../AppKit/nstoolbar/centereditemidentifier.md) property that lets a single item be centered absolutely in the window, assuming space allows. When the window shrinks, or more items are added by the user, the highest priority is to have the most items visible. As a result, centering is broken first by pushing the item off center to the left or right as necessary.
 
 To center multiple items together, you can specify an [`NSToolbarItemGroup`](../AppKit/nstoolbaritemgroup.md) object’s [`itemIdentifier`](../AppKit/nstoolbaritem/itemidentifier.md) as the [`centeredItemIdentifier`](../AppKit/nstoolbar/centereditemidentifier.md) of the [`NSToolbar`](../AppKit/nstoolbar.md). The centered item must still appear in the toolbar delegate’s allowed item identifiers array.
 
-###### Layer-Backed Views
+#### Layer-Backed Views
 
 Windows in apps linked against the macOS 10.14 SDK are displayed using Core Animation when the app is running in macOS 10.14. This *doesn’t* mean that all views are layer-backed; rather, it means that all views are either layer-backed or draw into a shared layer with other layers.
 
@@ -126,7 +126,7 @@ Views that implicitly depend on being redrawn when an ancestor, descendant, or i
 
 Views that return `true` from [`wantsUpdateLayer`](../AppKit/nsview/wantsupdatelayer.md) will typically be given an exclusive layer, even if the view’s [`wantsLayer`](../AppKit/nsview/wantslayer.md) property is set to `false`. Apps targeting macOS 10.14 should prefer the [`wantsUpdateLayer`](../AppKit/nsview/wantsupdatelayer.md) property over the [`wantsLayer`](../AppKit/nsview/wantslayer.md) property.
 
-###### Deprecated Underline Styles and Their Replacements
+#### Deprecated Underline Styles and Their Replacements
 
 The following [`NSUnderlineStyle`](../UIKit/nsunderlinestyle.md) members are soft deprecated as of macOS 10.14. *Soft deprecation* means that the members are still available, but that they’re slated for deprecation and using them in new code is discouraged.
 
@@ -137,11 +137,11 @@ The following [`NSUnderlineStyle`](../UIKit/nsunderlinestyle.md) members are sof
 - `NSUnderlinePatternDashDotDot` is replaced by [`patternDashDotDot`](../UIKit/nsunderlinestyle/patterndashdotdot.md).
 - `NSUnderlineByWord` is replaced by [`byWord`](../UIKit/nsunderlinestyle/byword.md).
 
-###### NSTableRowView Background Style Inference
+#### NSTableRowView Background Style Inference
 
 For apps linked on macOS 10.14 and later, the value of an [`NSTableRowView`](../AppKit/nstablerowview.md) instance’s [`interiorBackgroundStyle`](../AppKit/nstablerowview/interiorbackgroundstyle.md) property no longer infers its emphasized style using its [`backgroundColor`](../AppKit/nstablerowview/backgroundcolor.md) property. Instead, the [`interiorBackgroundStyle`](../AppKit/nstablerowview/interiorbackgroundstyle.md) property defaults to [`NSView.BackgroundStyle.normal`](../AppKit/nsview/backgroundstyle/normal.md), but becomes emphasized when it’s selected and focused by the table. If you want to use the emphasized style outside the context of selection, manually set [`backgroundStyle`](../AppKit/nstablecellview/backgroundstyle.md) or override [`interiorBackgroundStyle`](../AppKit/nstablerowview/interiorbackgroundstyle.md) to return [`NSView.BackgroundStyle.emphasized`](../AppKit/nsview/backgroundstyle/emphasized.md).
 
-###### NSTextView Enhancements
+#### NSTextView Enhancements
 
 Four new convenience factory methods for [`NSTextView`](../AppKit/nstextview.md) in macOS 10.14 are similar to ones for other [`NSControl`](../AppKit/nscontrol.md) subclasses. These include [`fieldEditor()`](../AppKit/nstextview/fieldeditor%28%29.md), [`scrollableDocumentContentTextView()`](../AppKit/nstextview/scrollabledocumentcontenttextview%28%29.md), [`scrollablePlainDocumentContentTextView()`](../AppKit/nstextview/scrollableplaindocumentcontenttextview%28%29.md), and [`scrollableTextView()`](../AppKit/nstextview/scrollabletextview%28%29.md).
 
@@ -151,7 +151,7 @@ Other than [`scrollableDocumentContentTextView()`](../AppKit/nstextview/scrollab
 
 Use the new [`performValidatedReplacement(in:with:)`](../AppKit/nstextview/performvalidatedreplacement%28in,with%29.md) method with [`NSTextView`](../AppKit/nstextview.md) to modify text as edited by the user. It validates the proposed change with [`shouldChangeText(in:replacementString:)`](../AppKit/nstextview/shouldchangetext%28in,replacementstring%29.md) and [`didChangeText()`](../AppKit/nstextview/didchangetext%28%29.md) so that the system services associated with the text view—such as spelling and undo—are properly handled. The method also substitutes attributes absent from the attributed string with the corresponding keys inside the typing attributes. This helps you focus on attributes you’re interested in without worrying about keeping track of essential attributes like [`foregroundColor`](../Foundation/nsattributedstring/key/foregroundcolor.md) in Dark mode.
 
-###### NSTextField Background Style Inference
+#### NSTextField Background Style Inference
 
 For apps linked on macOS 10.14 and later, [`NSTextField`](../AppKit/nstextfield.md) instances in an [`NSTableRowView`](../AppKit/nstablerowview.md) no longer infer the [`NSView.BackgroundStyle.emphasized`](../AppKit/nsview/backgroundstyle/emphasized.md) interior background style for their associated [`NSTextFieldCell`](../AppKit/nstextfieldcell.md) instances based on the background color. The inferred style now depends on whether you set [`drawsBackground`](../AppKit/nstextfieldcell/drawsbackground.md).
 
@@ -159,13 +159,13 @@ Text fields that *don’t* draw their own backgrounds now infer [`interiorBackgr
 
 Text fields that *do* draw their own backgrounds get the [`NSView.BackgroundStyle.normal`](../AppKit/nsview/backgroundstyle/normal.md) interior background style by default even if they’re inside a selected table row. If you want the emphasized interior background style, override [`interiorBackgroundStyle`](../AppKit/nstablerowview/interiorbackgroundstyle.md) on the text field’s cell to return [`NSView.BackgroundStyle.emphasized`](../AppKit/nsview/backgroundstyle/emphasized.md).
 
-###### NSRulerView and NSTextFinder View Sizing
+#### NSRulerView and NSTextFinder View Sizing
 
 For apps linked on macOS 10.14, the document of an [`NSScrollView`](../AppKit/nsscrollview.md) can scroll under the associated horizontal and vertical [`NSRulerView`](../AppKit/nsrulerview.md) or [`findBarView`](../AppKit/nstextfinderbarcontainer/findbarview.md). This means that the [`NSClipView`](../AppKit/nsclipview.md) is sized and positioned under those accessories, and that will be reflected in the clip view’s [`contentInsets`](../AppKit/nsclipview/contentinsets.md).
 
 If you’re writing a document view class that observes the containing clip view’s size to determine its own size, take these [`contentInsets`](../AppKit/nsclipview/contentinsets.md) into account when you’re determining the document size, to avoid it being larger than the inset document area.
 
-###### Action Extensions as Quick Actions
+#### Action Extensions as Quick Actions
 
 Your action extensions can now appear as Quick Actions in Finder and Touch Bar. Use the following keys to enable this new behavior:
 
@@ -179,7 +179,7 @@ Your action extensions can now appear as Quick Actions in Finder and Touch Bar. 
 
 The [`NSItemProvider`](../Foundation/nsitemprovider.md) class’s [`suggestedName`](../Foundation/nsitemprovider/suggestedname.md) property is now available on macOS, and the [`NSExtensionItem`](../Foundation/nsextensionitem.md) class’s [`attachments`](../Foundation/nsextensionitem/attachments.md) property is now explicitly typed as an array of [`NSItemProvider`](../Foundation/nsitemprovider.md) instances.
 
-###### Drag and Drop
+#### Drag and Drop
 
 If you’re using certain deprecated APIs in apps linked on macOS 10.14, you’ll see two kinds of exceptions being thrown.
 
@@ -191,7 +191,7 @@ If you encounter an exception about dragging multiple files using the deprecated
 
 If you encounter an exception noting that “there must be 1 draggingItem per pasteboardItem,” you need to ensure that the number of pasteboard items you add is the same as the number of drag items you’re using. The same exception occurs if you use the deprecated drag and drop API. Update your drag and drop code to [`NSDraggingSession`](../AppKit/nsdraggingsession.md) or [`collectionView(_:pasteboardWriterForItemAt:)`](../AppKit/nscollectionviewdelegate/collectionview%28_,pasteboardwriterforitemat%29-7ldvs.md) to avoid the exception in that case.
 
-###### API Changes
+#### API Changes
 
 - [`NSApplication`](../AppKit/nsapplication.md): [`NSApplication`](../AppKit/nsapplication.md) now conforms to the [`NSAppearanceCustomization`](../AppKit/nsappearancecustomization.md) protocol, which you use to query, override, and key-value observe the global [`NSAppearance`](../AppKit/nsappearance.md) of your app.
 
@@ -232,13 +232,13 @@ If you encounter an exception noting that “there must be 1 draggingItem per pa
 - [`NSViewController`](../AppKit/nsviewcontroller.md): The `childViewControllers` property is renamed [`children`](../AppKit/nsviewcontroller/children.md) in Swift. Many [`NSViewController`](../AppKit/nsviewcontroller.md) methods for managing and presenting child controllers are likewise renamed for greater conciseness in Swift by removing redundant occurrences of `ViewController`.
 - [`NSWindow`](../AppKit/nswindow.md): [`NSWindow`](../AppKit/nswindow.md) declares a new [`NSWindow.PersistableFrameDescriptor`](../AppKit/nswindow/persistableframedescriptor.md) type that encapsulates the results returned for the `stringWithSavedFrame` property. The `setFrameFrom(_:)` method is renamed [`setFrame(from:)`](../AppKit/nswindow/setframe%28from%29.md), and now takes an [`NSWindow.PersistableFrameDescriptor`](../AppKit/nswindow/persistableframedescriptor.md) parameter. In hand with this change, the read-only `stringWithSavedFrame` property is renamed [`frameDescriptor`](../AppKit/nswindow/framedescriptor.md) in Swift.
 
-##### New Macros in AppKit Headers
+### New Macros in AppKit Headers
 
 Uses of `NS_STRING_ENUM` in AppKit headers are replaced by the more general `NS_TYPED_ENUM`. Similarly, uses of `NS_EXTENSIBLE_STRING_ENUM` in AppKit headers are replaced by the more modern and general `NS_TYPED_EXTENSIBLE_ENUM`. The new macros are equivalent to the ones they replace, so this is purely a switch to more modern naming conventions that should have no effect on compiled code.
 
 Some uses of `NS_EXTENSIBLE_STRING_ENUM` are replaced by `NS_SWIFT_BRIDGED_TYPEDEF`. This new macro supports exporting the affected typedefs as Swift type aliases, as described below.
 
-###### Removed Macro Applications
+#### Removed Macro Applications
 
 To support simpler and more concise usage in Swift, some AppKit string enumeration types now import to Swift as type aliases of String, instead of as structures. This eliminates the need for you to explicitly wrap String constants in cases like:
 
@@ -256,7 +256,7 @@ This change was made for types with values that pass through the API to drive th
 
 The affected typedefs are now declared using the new `NS_SWIFT_BRIDGED_TYPEDEF` qualifier, whereas in macOS 10.13 they were declared as `NS_EXTENSIBLE_STRING_ENUM` types.
 
-##### New Formal Protocols
+### New Formal Protocols
 
 AppKit now provides formal `@protocol` declarations for sets of methods that were formerly declared as *informal protocols*, which are categories on [`NSObject`](../ObjectiveC/nsobject-swift.class.md) or some other class. Here are the new protcols:
 
@@ -274,13 +274,13 @@ Some of AppKit’s classes conform to these new formal protocols. The [`controlT
 
 To help ensure source compatibility, the corresponding informal protocol declarations remain in AppKit’s headers alongside the new formal protocols. Adopt the new formal protocols where appropriate, as the informal protocol declarations might be deprecated in a future release.
 
-##### Typesetter Behavior Changes
+### Typesetter Behavior Changes
 
 The default typesetter behavior has changed for apps that are compiled with the macOS 10.14 SDK and have a deployment target of macOS 10.14: String drawing now uses [`NSLayoutManager.TypesetterBehavior.behavior_10_4`](../AppKit/nslayoutmanager/typesetterbehavior-swift.enum/behavior_10_4.md) for all AppKit controls. Previously, only some portions of AppKit used [`NSLayoutManager.TypesetterBehavior.behavior_10_4`](../AppKit/nslayoutmanager/typesetterbehavior-swift.enum/behavior_10_4.md), and other portions used [`NSLayoutManager.TypesetterBehavior.behavior_10_2_WithCompatibility`](../AppKit/nslayoutmanager/typesetterbehavior-swift.enum/behavior_10_2_withcompatibility.md).
 
 The typesetter behavior change corrects a long-standing floating-point rounding error that resulted in an extra pixel being added to the default ascender, so text might now measure 1 point smaller than it did previously. Reevaluate any of your code that hardcodes heights or makes manual adjustments to the y-origin of cells or text baselines based on the new text measurement.
 
-##### Identifying New and Deprecated APIs in Headers
+### Identifying New and Deprecated APIs in Headers
 
 New APIs in headers are marked with availability macros that include references to macOS 10.14:
 
@@ -300,7 +300,7 @@ Deprecation macros might also include a suggested replacement API:
 NS_DEPRECATED_MAC(<#Release when introduced#>, 10_14, "Suggested alternative")
 ```
 
-##### Checking macOS and AppKit Versions
+### Checking macOS and AppKit Versions
 
 To check for new features provided by Cocoa frameworks at runtime, look for a given new class or method dynamically. Don’t use it if it isn’t there.
 
@@ -351,7 +351,7 @@ Unlike most AppKit software updates, macOS 10.10 software updates incremented th
 static const NSAppKitVersion NSAppKitVersionWithSuchAndSuchBugFix = 1138.42;
 ```
 
-##### Checking for Backward Compatibility
+### Checking for Backward Compatibility
 
 You can check for the version of the system an app was built against, and if your app is running on an older system, modify its behavior to be more compatible. You do this in cases where incompatibility problems are predicted or discovered; most of these problems are described in these release notes.
 

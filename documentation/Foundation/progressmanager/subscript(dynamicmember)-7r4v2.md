@@ -21,7 +21,7 @@ Gets or sets custom URL properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> URL? where P : ProgressManager.Property, P.Summary == [URL?], P.Value == URL? { get set }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where the value type is `URL?` and the summary type is `[URL?]`. If the property has not been set, the getter returns the property’s default value.
 

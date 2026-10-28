@@ -17,7 +17,7 @@ case cwipcFailureErr
 kCWIPCFailureErr
 ```
 
-#### Discussion
+## Discussion
 
 Error communicating with a separate process.
 

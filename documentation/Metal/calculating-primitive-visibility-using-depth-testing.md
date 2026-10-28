@@ -13,7 +13,7 @@ Determine which pixels are visible in a scene by using a depth texture.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 When graphics primitives overlap each other, by default, Metal renders them in the order in which you submitted them. This method for determining visibility is referred to as the *painter’s algorithm* because of its similarity to how paint is applied to a surface: The last coat is always the one that you’ll see. However, this method is insufficient to render complex 3D scenes.   To determine visibility independently from the submission order, you need to add *hidden-surface removal*. Metal provides depth testing as a way to determine visibility for each fragment as it is rendered.
 
@@ -25,7 +25,7 @@ This sample demonstrates depth testing by showing a triangle and letting you cha
 
 This sample only demonstrates how to use depth testing. It doesn’t cover concepts for rendering a 3D scene.
 
-##### Create a depth texture
+### Create a depth texture
 
 By default, `MTKView` doesn’t create depth textures. To add them, set the `depthStencilPixelFormat` property to the data format you want to use for depth textures. The view creates and manages them for you automatically.
 
@@ -35,7 +35,7 @@ mtkView.depthStencilPixelFormat = MTLPixelFormatDepth32Float;
 
 This sample uses a 32-bit floating-point depth value for each pixel. Pick a format that has the range and precision you need for your intended use case.
 
-##### Specify the depth format in the render pipeline
+### Specify the depth format in the render pipeline
 
 To enable depth testing for a render pipeline, set the `depthAttachmentPixelFormat` property on the descriptor when you create the render pipeline, as shown below:
 
@@ -47,7 +47,7 @@ As with color formats, the render pipeline needs information about the format of
 
 ![Flowchart showing a rendering pipeline with depth testing](https://developer.apple.com/tutorials/images/com.apple.metal/2-depth-testing-pipeline.png)
 
-##### Configure the depth test
+### Configure the depth test
 
 In Metal, you configure depth testing independently from the render pipeline, so you can mix and match combinations of render pipelines and depth tests. The depth test is represented by an [`MTLDepthStencilState`](./mtldepthstencilstate.md) object, and like you do with a render pipeline, you usually create this object when you initialize your app, and keep a reference to it as long as you need to execute that test.
 
@@ -62,7 +62,7 @@ _depthState = [_device newDepthStencilStateWithDescriptor:depthDescriptor];
 
 > **Note**: Metal combines depth testing with a *stencil test*, which performs a similar test using a count stored for each pixel, typically the number of times that fragments pass the depth test. Stencil operations are useful for implementing certain 3D algorithms. By default, the stencil test is disabled, and this sample doesn’t enable it.
 
-##### Generate depth values in your shaders
+### Generate depth values in your shaders
 
 To implement the depth test, you need to provide a value for the z coordinate in a vertex shader. The Normalized Device Coordinate (NDC) system in Metal uses four-dimensional coordinates, and your vertex shader needs to provide a position for each vertex.
 
@@ -78,7 +78,7 @@ When the rasterizer calculates the data to send to the fragment shader, it inter
 
 Your fragment function can read the z value, ignore it, or modify it, as needed. If you don’t modify the value calculated by the rasterizer, a GPU can sometimes perform additional optimizations. For example, it may be able to execute the z test before running the fragment shader, so that it doesn’t run the fragment shader for hidden fragments. If you change the depth value in the fragment shader, you may incur a performance penalty because the GPU needs to execute the fragment shader first.
 
-##### Clear the depth texture at the start of the render pass
+### Clear the depth texture at the start of the render pass
 
 A render pass includes a list of textures that it targets, including (optionally) a depth texture. If you plan to use depth testing, you need to configure the render pass’s depth texture attachment.  Because you configured the view to include a depth texture, when you ask the view for a render pass descriptor, it automatically configures the descriptor’s depth render target to point at a depth texture. It also configures the render pass to clear the depth texture at the start of the frame. All you need to do is provide the starting depth value for the depth texture.
 
@@ -88,7 +88,7 @@ mtkView.clearDepth = 1.0;
 
 When the GPU starts the render pass, every pixel in the depth texture is initialized to `1.0`.
 
-##### Encode a draw command
+### Encode a draw command
 
 As in other Metal rendering examples, this sample creates a render command encoder and then encodes a series of draw commands. When you configure the arguments for a draw call, you include a reference to the depth test to execute.
 

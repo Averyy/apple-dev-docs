@@ -23,7 +23,7 @@ var editingAccessoryType: UITableViewCell.AccessoryType { get set }
 @property (nonatomic) UITableViewCellAccessoryType editingAccessoryType;
 ```
 
-#### Discussion
+## Discussion
 
 The accessory view appears in the right side of the cell when the table view is in editing mode. The standard accessory views include the disclosure chevron; for a description of valid constants, see [`UITableViewCell.AccessoryType`](./accessorytype-swift.enum.md). The default is [`UITableViewCell.AccessoryType.none`](./accessorytype-swift.enum/none.md). If a custom accessory view for editing mode is set through the [`editingAccessoryView`](./editingaccessoryview.md) property, the value of this property is ignored. If the cell is enabled and the accessory type is [`UITableViewCell.AccessoryType.detailDisclosureButton`](./accessorytype-swift.enum/detaildisclosurebutton.md), the accessory view tracks touches and, when tapped, sends the delegate object a [`tableView(_:accessoryButtonTappedForRowWith:)`](../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) message.
 

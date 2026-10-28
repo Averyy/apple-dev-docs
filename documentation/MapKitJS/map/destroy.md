@@ -15,7 +15,7 @@ Removes the map’s element from the DOM and releases internal references to the
 destroy(): void;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns no value.
 

@@ -23,7 +23,7 @@ class func supportsDevice(_ device: any MTLDevice) -> Bool
 + (BOOL) supportsDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports denoising scaling, [`false`](../../Swift/false.md) otherwise.
 

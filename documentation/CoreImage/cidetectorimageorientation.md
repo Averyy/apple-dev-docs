@@ -24,7 +24,7 @@ let CIDetectorImageOrientation: String
 extern NSString * const CIDetectorImageOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object whose value is an integer between `1` and `8`. The TIFF and EXIF specifications define these values to indicate where the pixel coordinate origin (0,0) of the image should appear when it is displayed. The default value is `1`, indicating that the origin is in the top left corner of the image. For further details, see [`kCGImagePropertyOrientation`](../ImageIO/kcgimagepropertyorientation.md).
 

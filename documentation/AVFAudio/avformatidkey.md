@@ -25,7 +25,7 @@ let AVFormatIDKey: String
 extern NSString * const AVFormatIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the possible values for this key, see [Audio Format Identifiers](../CoreAudioTypes/audio-format-identifiers.md).
 

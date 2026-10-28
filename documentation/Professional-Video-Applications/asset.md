@@ -4,11 +4,11 @@
 
 Define file-based media managed in a Final Cut Pro library.
 
-#### Overview
+## Overview
 
 Use the `asset` element to define a file-based media. A file-based media can have an original media representation and a proxy media representation. Describe those using the `media-rep` element along with file URLs for the media files.
 
-##### Asset Element Attributes
+### Asset Element Attributes
 
 | Attribute | Description |
 | --- | --- |
@@ -24,7 +24,7 @@ It is possible that an importing XML may include a media asset with its unique i
 
 > **Note**:  In FCPXML 1.8 or earlier the `asset` element directly specifies the original media file URL through its `src` attribute.
 
-##### Implied Asset Attributes
+### Implied Asset Attributes
 
 Some `asset` element attributes are optional (or implied), because Final Cut Pro derives their values from the respective media file. However, the asset file may be offline when Final Cut Pro tries to access it; therefore, it is recommended that you specify the attributes listed below for all assets.
 
@@ -38,7 +38,7 @@ Some `asset` element attributes are optional (or implied), because Final Cut P
 | `videoSources` | The number of video sources in the asset. ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) This attribute captures the number of PSD layers, especially when you import the media offline. Final Cut Pro needs to establish the respective number of media components. You can omit the attribute for a normal video where there is only one video source. |
 | `auxVideoFlags` | Specifies the asset’s auxiliary video flags. |
 
-##### Override Attributes
+### Override Attributes
 
 Use the asset element override attributes to override the information in the media file:
 
@@ -49,7 +49,7 @@ Use the asset element override attributes to override the information in the med
 | `projectionOverride` | Specifies the projection type for the asset. ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) Valid values are `none, equirectangular, cubic, fisheye, and back-to-back fisheye.` |
 | `stereoscopicOverride` | Specifies the stereoscopic mode for the asset.  ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) Valid values are `mono`, `side by side`, and `over under`. |
 
-##### Well-Known Color Space Triplets
+### Well-Known Color Space Triplets
 
 FCPXML 1.7 and later use the following triplets for well-known color spaces:
 

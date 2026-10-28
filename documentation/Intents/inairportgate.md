@@ -24,7 +24,7 @@ class INAirportGate
 @interface INAirportGate : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class contains all of the relevant information for a flight’s arrival or departure gate. Ensure that an instance of the object contains as much information as available. At a minimum, always include the airport for the flight.
 

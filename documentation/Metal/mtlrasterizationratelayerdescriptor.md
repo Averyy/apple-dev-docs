@@ -24,7 +24,7 @@ class MTLRasterizationRateLayerDescriptor
 @interface MTLRasterizationRateLayerDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a layer map to divide the logical viewport coordinate system into a 2D grid of equal-sized rectangles, and choose different rasterization rates for each cell.
 

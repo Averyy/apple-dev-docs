@@ -19,7 +19,7 @@ var isCollapsed: Bool { get set }
 @property (getter=isCollapsed) BOOL collapsed;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the candidate list is collapsed and not visible to the user.
 

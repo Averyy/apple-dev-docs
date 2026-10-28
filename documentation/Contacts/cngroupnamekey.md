@@ -24,7 +24,7 @@ let CNGroupNameKey: String
 extern NSString * const CNGroupNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

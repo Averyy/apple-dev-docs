@@ -21,7 +21,7 @@ Convert a [`ProcessCodeRequirement`](../processcoderequirement.md) to a [`Launch
 init(_ processRequirement: ProcessCodeRequirement) throws
 ```
 
-#### Discussion
+## Discussion
 
 Conversion will faill if the [`ProcessCodeRequirement`](../processcoderequirement.md) contains a constraint that cannot be converted to [`LaunchConstraint`](../launchconstraint.md).
 

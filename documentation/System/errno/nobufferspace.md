@@ -25,7 +25,7 @@ static var noBufferSpace: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An operation on a socket or pipe wasn’t performed because the system lacked sufficient buffer space or because a queue was full.
 

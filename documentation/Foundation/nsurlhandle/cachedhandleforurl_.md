@@ -17,11 +17,11 @@ Returns the URL handle from the cache that has serviced the specified URL or ano
 + (NSURLHandle *) cachedHandleForURL:(NSURL *) anURL;
 ```
 
-#### Return Value
+## Return Value
 
 The URL handle from the cache that has serviced `aURL` or another identical URL. Returns `nil` if there is no such handle.
 
-#### Discussion
+## Discussion
 
 Subclasses of `NSURLHandle` must override this method.
 

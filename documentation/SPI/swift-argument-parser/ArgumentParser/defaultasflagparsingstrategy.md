@@ -17,7 +17,7 @@ The strategy to use when parsing a single value from `@Option` arguments with `d
 struct DefaultAsFlagParsingStrategy
 ```
 
-#### Overview
+## Overview
 
 This is a subset of `SingleValueParsingStrategy` that excludes strategies incompatible with default-as-flag behavior.
 

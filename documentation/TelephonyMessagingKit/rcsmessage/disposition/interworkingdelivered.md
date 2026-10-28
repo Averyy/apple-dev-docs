@@ -15,7 +15,7 @@ The carrier used a non-CPM technology to deliver the message.
 case interworkingDelivered
 ```
 
-#### Discussion
+## Discussion
 
 This disposition indicates that the carrier used a technology like SMS or MMS to deliver the message.
 

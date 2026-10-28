@@ -17,7 +17,7 @@ A metadata object that contains information about an alarm.
 protocol AlarmMetadata : Decodable, Encodable, Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Provide an implementation of this for your own custom content or other information. The implementation can be empty if you don’t want to provide any additional data for your alarm UI.
 

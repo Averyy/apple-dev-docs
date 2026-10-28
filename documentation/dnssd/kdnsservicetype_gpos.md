@@ -23,7 +23,7 @@ var kDNSServiceType_GPOS: Int { get }
 kDNSServiceType_GPOS
 ```
 
-#### Discussion
+## Discussion
 
 Geographical position (withdrawn).
 

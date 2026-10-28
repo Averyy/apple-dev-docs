@@ -25,7 +25,7 @@ static var dependencies: [SystemDependency] { get }
 
 - [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
-#### Discussion
+## Discussion
 
 If you need to specify the update order between your system and other systems in your app, you can do that using this property. If your system has no dependencies, you don’t need to declare this property. RealityKit provides a default implementation for systems with no dependencies.
 

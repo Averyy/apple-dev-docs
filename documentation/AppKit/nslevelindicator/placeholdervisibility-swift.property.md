@@ -19,7 +19,7 @@ var placeholderVisibility: NSLevelIndicator.PlaceholderVisibility { get set }
 @property NSLevelIndicatorPlaceholderVisibility placeholderVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 This property currently has no effect for other indicator styles. The default value is `NSLevelIndicatorPlaceholderVisibilityAutomatic`.
 

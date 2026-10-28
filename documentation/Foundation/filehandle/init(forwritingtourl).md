@@ -21,11 +21,11 @@ Returns a file handle initialized for writing to the file, device, or named sock
 convenience init(forWritingToURL url: URL) throws
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `url`.
 
-#### Discussion
+## Discussion
 
 The file pointer is set to the beginning of the file. The returned object responds only to [`write(_:)`](./write%28_%29.md).
 

@@ -15,7 +15,7 @@ Links that go to Apple News, other Apple apps, and external sites.
 string SupportedURLs
 ```
 
-#### Discussion
+## Discussion
 
 You can define the following Apple domain links for the `URL` property in [`Text`](./text.md) components:
 

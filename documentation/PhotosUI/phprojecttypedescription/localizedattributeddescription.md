@@ -20,7 +20,7 @@ var localizedAttributedDescription: NSAttributedString? { get }
 @property (nonatomic, copy, readonly, nullable) NSAttributedString * localizedAttributedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The attributed description is optional. If you don’t provide one, it defaults to the standard nonattributed description.
 

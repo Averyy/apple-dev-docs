@@ -10,11 +10,11 @@ Specify scrollable and fixed regions in a product page.
 - tvOS 13.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [211: Mastering the Living Room with tvOS](https://developer.apple.com/videos/play/wwdc19/211/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

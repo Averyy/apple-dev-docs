@@ -23,7 +23,7 @@ Construct a time limit duration given a number of minutes.
 static func minutes(_ minutes: some BinaryInteger) -> TimeLimitTrait.Duration
 ```
 
-#### Return Value
+## Return Value
 
 A duration representing the specified number of minutes.
 

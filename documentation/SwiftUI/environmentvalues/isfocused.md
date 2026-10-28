@@ -21,7 +21,7 @@ Returns whether the nearest focusable ancestor has focus.
 var isFocused: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If there is no focusable ancestor, the value is `false`.
 

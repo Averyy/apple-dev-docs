@@ -20,11 +20,11 @@ string KeywordCreate.Status
 - `ENABLED`: Keyword is active and eligible to serve.
 - `PAUSED`: Keyword is paused and will not serve.
 
-#### Discussion
+## Discussion
 
 Include `status` in the create request to determine whether the new keyword begins competing in auctions immediately or starts paused.
 
-##### Example
+### Example
 
 ```json
 {

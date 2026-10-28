@@ -25,7 +25,7 @@ var isIndexedBySpotlight: Bool { get set }
 @property (getter=isIndexedBySpotlight) BOOL indexedBySpotlight;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If you set this property to [`true`](../../Swift/true.md) for a property description that describes a relationship, you must override [`attributeSet(for:)`](../nscoredatacorespotlightdelegate/attributeset%28for%29.md) in your Core Spotlight delegate and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
 

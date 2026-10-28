@@ -19,7 +19,7 @@ var layoutQueue: OperationQueue? { get set }
 @property (strong, nullable) NSOperationQueue * layoutQueue;
 ```
 
-#### Discussion
+## Discussion
 
 If non-`nil`, the queue the framework uses for layout operations.
 

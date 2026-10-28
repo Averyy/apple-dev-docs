@@ -18,7 +18,7 @@ The popup menu system accessory.
 @interface UICellAccessoryPopUpMenu : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A popup menu accessory is a pair of chevrons that point upward and downward. This accessory indicates that tapping anywhere in the cell presents a popup menu. This accessory appears on the trailing edge of the cell.
 

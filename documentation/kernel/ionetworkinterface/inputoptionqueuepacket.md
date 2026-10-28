@@ -11,7 +11,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Options for `inputPacket()`.
 

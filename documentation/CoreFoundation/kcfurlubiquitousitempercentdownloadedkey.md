@@ -24,7 +24,7 @@ let kCFURLUbiquitousItemPercentDownloadedKey: CFString!
 extern CFStringRef const kCFURLUbiquitousItemPercentDownloadedKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFNumber` value that provides the status of the download in progress.
 

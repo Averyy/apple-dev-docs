@@ -13,7 +13,7 @@ Add search capabilities to your app, and index your content so people can find i
 - macOS 10.13+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Help people access activities and items within your app by adding details about those items to a Core Spotlight index. The framework provides APIs to add your content to an index, and search for items in that index. You decide what content makes sense to index, but typically you index anything that someone might look for in your app. For example, you might index photos, contacts, the items someone purchased, or data they see in your interface. You can then use Core Spotlight to search for your indexed content and display those results in your app.
 

@@ -22,11 +22,11 @@ nonisolated
 func rotation(_ angle: Angle, anchor: UnitPoint = .center) -> RotatedShape<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A rotated shape.
 
-#### Discussion
+## Discussion
 
 The following example rotates a square by 45 degrees to the right to create a diamond shape:
 

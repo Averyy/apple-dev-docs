@@ -23,11 +23,11 @@ mutating func remove(_ outputName: String) -> InferenceValue?
 
 - [Integrating on-device AI models in your app with Core AI](../../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Return Value
+## Return Value
 
 The output value, or `nil` if no output with the specified name exists.
 
-#### Discussion
+## Discussion
 
 After you remove a value, subsequent calls with the same name return `nil`.
 

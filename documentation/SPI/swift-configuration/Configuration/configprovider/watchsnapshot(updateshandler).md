@@ -25,11 +25,11 @@ Monitors the provider’s state for changes by emitting snapshots.
 func watchSnapshot<Return>(updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<any ConfigSnapshot, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 The async sequence provided to the handler should immediately emit the current snapshot (equivalent to calling [`snapshot()`](./snapshot%28%29.md)), followed by new snapshots as the provider’s state changes.
 

@@ -30,7 +30,7 @@ var bookingIdentifier: String? { get set }
 @property (atomic, copy, nullable) NSString * bookingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to booking, your Intents extension provides a set of potential reservation options in the form of [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) objects, each of which contains a unique booking identifier. When the user selects a reservation time, this property receives the booking identifier from the corresponding [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) object. Use that value to get the details about the reservation option chosen by the user.
 

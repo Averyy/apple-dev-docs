@@ -15,7 +15,7 @@ Function for enumerating a collection of accessories.
 typedef _Bool (*)(void *, NSObject<OS_ar_accessory> *) ar_accessories_enumerator_function_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

@@ -15,7 +15,7 @@ Additional headers in a received MMS message, as a key-value dictionary of strin
 var headers: [String : String]
 ```
 
-#### Discussion
+## Discussion
 
 Don’t populate this dictionary when sending a message.
 

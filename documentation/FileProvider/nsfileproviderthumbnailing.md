@@ -23,7 +23,7 @@ protocol NSFileProviderThumbnailing : NSObjectProtocol
 @protocol NSFileProviderThumbnailing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol if your File Provider extension supports downloading thumbnails from the remote storage.
 

@@ -15,17 +15,17 @@ OSStatus PMSessionDisableColorSync (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call the `PMSessionDisableColorSync` function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). You must call this function within the scope of calls to the functions `PMSessionBeginPage` and `PMSessionEndPage`.
 
 The function `PMSessionDisableColorSync` applies only to the current page. The function is useful only if the graphics context is QuickDraw and the current port is the printing port.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated because QuickDraw is deprecated. When drawing with Quartz, the current stroke and fill color space and the color space associated with an image are used to characterize color. Quartz provides ways to use ColorSync profiles to create color spaces, so you can characterize color using ColorSync simply by drawing with Quartz.
 

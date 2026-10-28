@@ -21,7 +21,7 @@ The auto-renewable subscription to merchandise.
 var subscription: Product { get }
 ```
 
-#### Discussion
+## Discussion
 
 [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) is a dynamic member lookup type, which code refers to as `Option` when it’s a nested type. You don’t need to use the [`subscription`](./subscription.md) property directly to access the properties of the [`Product`](../../product.md) value. Instead, access any properties of [`Product`](../../product.md) or [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on the `Option` value.
 

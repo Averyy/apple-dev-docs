@@ -19,7 +19,7 @@ func getPeriodicDelay(_ delay: UnsafeMutablePointer<Float>, interval: UnsafeMuta
 - (void) getPeriodicDelay:(float *) delay interval:(float *) interval;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns a delay of `0.2` and an interval of `0.025` seconds. Subclasses can override this method to supply their own delay and interval values.
 

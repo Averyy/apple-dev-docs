@@ -21,7 +21,7 @@ Enumerates a block over the tagger’s string, given a range, token unit, and ta
 - (void) enumerateTagsInRange:(NSRange) range unit:(NLTokenUnit) unit scheme:(NLTagScheme) scheme options:(NLTaggerOptions) options usingBlock:(void (^)(NLTag tag, NSRange tokenRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to iterate your block over the given range of a string. The method divides up the string with the given [`NLTokenUnit`](../nltokenunit.md) and [`NLTagScheme`](../nltagscheme.md) and then calls your block. For example, use the [`lexicalClass`](../nltagscheme/lexicalclass.md) tag scheme to identify which tokens are parts of speech, types of whitespace, or types of punctuation. Use the [`lemma`](../nltagscheme/lemma.md) tag scheme to identify the stem form of each word token, if known.
 

@@ -16,7 +16,7 @@ nonisolated
 init(constrainedToAxis: RotationAxis3D? = nil, minimumAngleDelta: Angle = .degrees(1))
 ```
 
-#### Discussion
+## Discussion
 
 If the constrained axis is `nil`, the gesture measures unconstrained 3D rotation.
 

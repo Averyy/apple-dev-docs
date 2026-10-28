@@ -27,13 +27,13 @@ Displays a tutorial page that teaches your Swift framework or package APIs throu
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 The `Tutorial` directive defines the structure of an individual tutorial page that teaches your Swift framework or package APIs through a series of interactive steps. Your tutorial can include one or more of these individual tutorial pages, and readers navigate to them from a table of contents page—defined by the [`Tutorials`](./tutorials.md) directive.
 
 ![A screenshot of the top portion of a tutorial page.](https://docs.swift.org/latest/images/org.swift.docc/tutorial-page@2x.png)
 
-##### Create the Tutorial File
+### Create the Tutorial File
 
 Use a text editor to add a Tutorial file to your documentation catalog and ensure the filename ends in `.tutorial`. Copy and paste the template below into your editor.
 
@@ -67,7 +67,7 @@ Use a text editor to add a Tutorial file to your documentation catalog and ensur
 }
 ```
 
-##### Estimate Completion Time
+### Estimate Completion Time
 
 You can give the reader an idea of how long the tutorial page might take to complete by providing an optional estimate in the `time` parameter. Completion time estimates help the reader understand how long they need to set aside to learn your APIs.
 
@@ -81,7 +81,7 @@ You can give the reader an idea of how long the tutorial page might take to comp
 
 When you provide estimates on your individual tutorial pages, the introduction section on the table of contents page automatically calculates and displays a total-completion time estimate for the entire tutorial.
 
-##### Provide Source Material
+### Provide Source Material
 
 If you need to add downloadable materials, like sample projects and code examples, for your tutorials, archive them and add them to your documentation catalog. Consider offering a base project to which the reader can add code as they work through the steps, as well as a finished project for comparison with their work.
 
@@ -97,7 +97,7 @@ To share project files with the reader, provide the archive’s name and extensi
 }
 ```
 
-##### Add an Introduction
+### Add an Introduction
 
 A tutorial page begins with an introduction section, defined by an [`Intro`](./intro.md) directive. The introduction is the first thing a reader sees on the page, so it needs to draw them into the content that follows and let them know what to expect. An introduction includes text and an image that serves as the section’s background, or a link to an introduction video.
 
@@ -114,7 +114,7 @@ A tutorial page begins with an introduction section, defined by an [`Intro`](./i
 }
 ```
 
-##### Add Sections of Steps
+### Add Sections of Steps
 
 A tutorial page includes sets of steps the reader performs, and those steps are organized into logical sections. For example, a tutorial might include a section of steps that guides a reader through setting up a Swift package, and another section that covers adding a class to that package.
 
@@ -178,7 +178,7 @@ Define sections using the [`Section`](./section.md) directive. You can optionall
 }
 ```
 
-##### Check the Reader’s Knowledge
+### Check the Reader’s Knowledge
 
 At the end of a tutorial page, you can optionally use an [`Assessments`](./assessments.md) directive to create a section that tests the reader’s knowledge. An assessment section includes a set of multiple-choice questions. If the reader gets a question wrong, you can provide a hint that points them toward the correct answer so they can try again.
 
@@ -238,7 +238,7 @@ At the end of a tutorial page, you can optionally use an [`Assessments`](./asses
 
 To see the creation of a simple tutorial project from start to finish, see [Building an Interactive Tutorial](./building-an-interactive-tutorial.md).
 
-##### Contained Elements
+### Contained Elements
 
 A tutorial page can contain the following items:
 

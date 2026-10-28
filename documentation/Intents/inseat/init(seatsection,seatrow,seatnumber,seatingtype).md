@@ -24,7 +24,7 @@ init(seatSection: String?, seatRow: String?, seatNumber: String?, seatingType: S
 - (instancetype) initWithSeatSection:(NSString *) seatSection seatRow:(NSString *) seatRow seatNumber:(NSString *) seatNumber seatingType:(NSString *) seatingType;
 ```
 
-#### Discussion
+## Discussion
 
 Create a new seat object when the reservation includes a seat assignment, such as for a flight or train reservation.
 

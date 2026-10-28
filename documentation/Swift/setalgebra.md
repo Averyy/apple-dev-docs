@@ -21,13 +21,13 @@ A type that provides mathematical set operations.
 protocol SetAlgebra<Element> : Equatable, ExpressibleByArrayLiteral
 ```
 
-#### Overview
+## Overview
 
 You use types that conform to the `SetAlgebra` protocol when you need efficient membership tests or mathematical set operations such as intersection, union, and subtraction. In the standard library, you can use the `Set` type with elements of any hashable type, or you can easily create bit masks with `SetAlgebra` conformance using the `OptionSet` protocol. See those types for more information.
 
 > **Note**: Unlike ordinary set types, the `Element` type of an `OptionSet` is identical to the `OptionSet` type itself. The `SetAlgebra` protocol is specifically designed to accommodate both kinds of set.
 
-### Conforming to the SetAlgebra Protocol
+## Conforming to the SetAlgebra Protocol
 
 When implementing a custom type that conforms to the `SetAlgebra` protocol, you must implement the required initializers and methods. For the inherited methods to work properly, conforming types must meet the following axioms. Assume that `S` is a custom type that conforms to the `SetAlgebra` protocol, `x` and `y` are instances of `S`, and `e` is of type `S.Element`—the type that the set holds.
 

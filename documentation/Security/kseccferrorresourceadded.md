@@ -20,7 +20,7 @@ let kSecCFErrorResourceAdded: CFString
 extern CFStringRef const kSecCFErrorResourceAdded;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when an unsealed resource is found.
 

@@ -25,7 +25,7 @@ func skipDescendants()
 - (void) skipDescendants;
 ```
 
-#### Discussion
+## Discussion
 
 This method is identical to [`skipDescendents()`](./skipdescendents%28%29.md) except for the spelling.
 

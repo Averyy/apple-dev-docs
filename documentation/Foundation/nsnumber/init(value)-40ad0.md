@@ -25,7 +25,7 @@ init(value: Int64)
 - (NSNumber *) initWithLongLong:(long long) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as a signed `long long`.
 

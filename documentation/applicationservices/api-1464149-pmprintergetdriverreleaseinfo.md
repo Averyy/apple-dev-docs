@@ -15,11 +15,11 @@ Obtains version information for the driver associated with the specified printer
 OSStatus PMPrinterGetDriverReleaseInfo(PMPrinter printer, VersRec *release);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is not recommended because it makes your application driver-dependent. If you do use this function, you must call it between the creation and release of a printing session. See the function [`PMCreateSession`](./api-1463247-pmcreatesession.md).
 

@@ -19,7 +19,7 @@ protocol NSAccessibilityProtocol : NSObjectProtocol
 @protocol NSAccessibility <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To be accessible, an app must provide information to the assistive app about its user interface and capabilities. There are three ways that apps and assistive apps interact:
 
@@ -33,7 +33,7 @@ If you’re using custom view or control subclasses, you need to add the appropr
 
 If you’re using custom user interface elements that don’t inherit from [`NSView`](./nsview.md) or one of the other accessibility-enabled AppKit classes, subclass the [`NSAccessibilityElement`](./nsaccessibilityelement-swift.class.md) class instead of adopting instead of [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md).
 
-##### Customizing User Interface Elements
+### Customizing User Interface Elements
 
 Often, you can adjust how an assistive app interacts with your user interface element without creating a custom subclass. If a user interface element inherits from [`NSView`](./nsview.md) or one of the other accessibility-enabled AppKit classes, you can customize it by:
 

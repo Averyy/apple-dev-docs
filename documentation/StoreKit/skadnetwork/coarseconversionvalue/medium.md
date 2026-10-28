@@ -21,7 +21,7 @@ static let medium: SKAdNetwork.CoarseConversionValue
 extern SKAdNetworkCoarseConversionValue const SKAdNetworkCoarseConversionValueMedium;
 ```
 
-#### Discussion
+## Discussion
 
 This constant has no special meaning. It’s up to the app or ad network to determine its meaning as needed.
 

@@ -30,7 +30,7 @@ var error: (any Error)? { get }
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 The value of this property is valid only when the [`downloadState`](./downloadstate.md) property is set to [`SKDownloadState.failed`](../skdownloadstate/failed.md).
 

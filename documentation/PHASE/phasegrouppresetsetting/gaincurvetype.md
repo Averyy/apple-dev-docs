@@ -24,7 +24,7 @@ var gainCurveType: PHASECurveType { get }
 @property (nonatomic, readonly) PHASECurveType gainCurveType;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](./init%28gain,rate,gaincurvetype,ratecurvetype%29.md) parameter.
 

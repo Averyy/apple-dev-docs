@@ -19,7 +19,7 @@ let kSCPropNetIPSecLocalIdentifierType: CFString
 extern CFStringRef const kSCPropNetIPSecLocalIdentifierType;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constant:
 

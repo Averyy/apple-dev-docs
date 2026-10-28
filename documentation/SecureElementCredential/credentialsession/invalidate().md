@@ -16,7 +16,7 @@ Inmediately invalidates a session.
 func invalidate() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your app no longer needs a credential session. The system automatically invalidates a session when it deallocates, or when it encounters underlying errors.
 

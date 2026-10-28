@@ -16,7 +16,7 @@ func invokeTest()
 - (void) invokeTest;
 ```
 
-#### Discussion
+## Discussion
 
 Invoking a test performs its setup, invocation, and teardown. In general this should not be called directly.
 

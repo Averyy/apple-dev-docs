@@ -23,7 +23,7 @@ var buttonType: UIButton.ButtonType { get }
 @property (nonatomic, readonly) UIButtonType buttonType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UIButton.ButtonType`](./buttontype-swift.enum.md) for the possible values.
 

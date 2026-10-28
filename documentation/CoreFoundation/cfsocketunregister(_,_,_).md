@@ -25,11 +25,11 @@ func CFSocketUnregister(_ nameServerSignature: UnsafePointer<CFSocketSignature>!
 extern CFSocketError CFSocketUnregister(const CFSocketSignature *nameServerSignature, CFTimeInterval timeout, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 
-#### Discussion
+## Discussion
 
 The value being unregistered was previously registered with [`CFSocketRegisterValue(_:_:_:_:)`](./cfsocketregistervalue%28_,_,_,_%29.md) or [`CFSocketRegisterSocketSignature(_:_:_:_:)`](./cfsocketregistersocketsignature%28_,_,_,_%29.md).
 

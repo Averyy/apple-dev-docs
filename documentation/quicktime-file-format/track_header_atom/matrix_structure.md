@@ -6,7 +6,7 @@
 
 The matrix structure associated with this track.
 
-#### Overview
+## Overview
 
 See [`Matrix structure`](../movie_header_atom/matrix_structure.md) for an illustration of a matrix structure.
 

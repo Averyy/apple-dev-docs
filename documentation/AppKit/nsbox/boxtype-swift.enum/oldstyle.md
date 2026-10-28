@@ -19,7 +19,7 @@ static var oldStyle: NSBox.BoxType { get }
 static const NSBoxType NSBoxOldStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the box is an OS X v10.2–style box.
 

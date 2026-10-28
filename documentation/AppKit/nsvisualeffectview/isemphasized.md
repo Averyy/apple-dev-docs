@@ -19,7 +19,7 @@ var isEmphasized: Bool { get set }
 @property (getter=isEmphasized) BOOL emphasized;
 ```
 
-#### Discussion
+## Discussion
 
 Some materials change their appearance when they are emphasized. For example, the first responder view conveys its status.
 

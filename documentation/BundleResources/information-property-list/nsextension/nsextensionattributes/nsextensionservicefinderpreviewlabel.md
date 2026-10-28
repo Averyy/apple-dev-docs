@@ -14,7 +14,7 @@ A name for display when the extension appears in the Finder Preview pane and Qui
 - **Name**: `NSExtensionServiceFinderPreviewLabel`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](./nsextensionserviceallowsfinderpreviewitem.md) key.
 

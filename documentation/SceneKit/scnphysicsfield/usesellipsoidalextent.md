@@ -25,7 +25,7 @@ var usesEllipsoidalExtent: Bool { get set }
 @property (nonatomic) BOOL usesEllipsoidalExtent;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`false`](../../Swift/false.md) (the default), the field’s area of effect is the box-shaped region of space defined by its [`halfExtent`](./halfextent.md) property and the [`position`](../scnnode/position.md) property of the node containing the field.
 

@@ -19,15 +19,15 @@ func AEInstallObjectAccessor(_ desiredClass: DescType, _ containerType: DescType
 OSErr AEInstallObjectAccessor(DescType desiredClass, DescType containerType, OSLAccessorUPP theAccessor, SRefCon accessorRefcon, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `AEInstallObjectAccessor` function adds or replaces an entry to either the application or system object accessor dispatch table. 
 
-##### Version-Notes
+### Version-Notes
 
 In macOS, your application can not make an object callback function available to other applications by installing it in a system object accessor dispatch table.
 

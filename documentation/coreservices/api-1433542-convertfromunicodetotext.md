@@ -15,11 +15,11 @@ Converts a Unicode text string to the destination encodingyou specify.
 OSStatus ConvertFromUnicodeToText(UnicodeToTextInfo iUnicodeToTextInfo, ByteCount iUnicodeLen, const UniChar iUnicodeStr[], OptionBits iControlFlags, ItemCount iOffsetCount, const ByteOffset iOffsetArray[], ItemCount *oOffsetCount, ByteOffset oOffsetArray[], ByteCount iOutputBufLen, ByteCount *oInputRead, ByteCount *oOutputLen, LogicalAddress oOutputStr);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function can also map offsets for style or font informationfrom the source text string to the returned converted string. Theconverter reads the application-supplied offsets and returns thecorresponding new offsets in the converted string. If you do notwant font or style information offsets mapped to the resulting string,you should pass `NULL` for `iOffsetArray` and `0 ` (zero) for `iOffsetCount`. 
 

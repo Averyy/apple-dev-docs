@@ -24,11 +24,11 @@ class func colorClamp() -> any CIFilter & CIColorClamp
 + (CIFilter<CIColorClamp> *) colorClampFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color clamp filter to an image. The effect calculates each pixel’s color component value. Using this calculation, the effect adjusts the values that are outside the range of the `minComponents` or `maxComponents` properties and clamps them within the range.
 

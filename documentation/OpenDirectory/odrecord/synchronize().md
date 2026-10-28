@@ -20,7 +20,7 @@ func synchronize() throws
 - (BOOL) synchronizeAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method only fetches those attributes that have been fetched before.
 

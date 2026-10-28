@@ -19,7 +19,7 @@ unowned(unsafe) var controlView: NSView? { get set }
 @property (assign, nullable) NSView * controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the view associated with the cell. This view is normally an [`NSControl`](../nscontrol.md) object. The default value of this property is `nil`.
 

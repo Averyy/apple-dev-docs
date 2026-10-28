@@ -17,7 +17,7 @@ Create a sharded layer from an existing [`Linear`](../linear.md).
 convenience init(_ other: Linear, segments: Segments = .count(1), group: MLXDistributed.Group? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Throws for a [`QuantizedLinear`](../quantizedlinear.md): shard it with [`shardLinear(_:sharding:segments:group:)`](../shardlinear%28_,sharding,segments,group%29.md) or [`QuantizedShardedToAllLinear`](../quantizedshardedtoalllinear.md).
 

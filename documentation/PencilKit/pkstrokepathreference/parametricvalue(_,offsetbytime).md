@@ -23,7 +23,7 @@ func parametricValue(_ parametricValue: CGFloat, offsetByTime timeStep: TimeInte
 - (CGFloat) parametricValue:(CGFloat) parametricValue offsetByTime:(NSTimeInterval) timeStep;
 ```
 
-#### Return Value
+## Return Value
 
 A parametric value offset by `timeStep` from `parametricValue`.
 

@@ -31,7 +31,7 @@ protocol MTLSharedEvent : MTLEvent
 - [Synchronizing passes with a fence](./synchronizing-passes-with-a-fence.md)
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 The [`MTLSharedEvent`](./mtlsharedevent.md) protocol inherits the [`MTLEvent`](./mtlevent.md) protocol. An event can only synchronize memory operations that run on a single Metal device. A shared event can synchronize memory operations across multiple Metal devices and the CPU. Shared events work anywhere you can work with a regular event.
 

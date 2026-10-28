@@ -24,7 +24,7 @@ typealias MDLVoxelIndex = vector_int4
 typedef vector_int4 MDLVoxelIndex;
 ```
 
-#### Discussion
+## Discussion
 
 A voxel index provides both location and description information for a voxel:
 

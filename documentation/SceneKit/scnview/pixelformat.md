@@ -27,7 +27,7 @@ var pixelFormat: NSOpenGLPixelFormat? { get set }
 @property (nonatomic, retain, nullable) NSOpenGLPixelFormat * pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 A pixel format object configures OpenGL attributes for rendering. For example, if you use OpenGL for custom rendering (see the [`SCNShadable`](../scnshadable.md), [`SCNNodeRendererDelegate`](../scnnoderendererdelegate.md), and [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md) protocols), setting the pixel format to one that specifies the OpenGL 3.2 Core Profile allows you to use modern OpenGL APIs in your custom rendering code.
 

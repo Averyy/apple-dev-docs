@@ -5,13 +5,13 @@
 
 Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
 Include time in your porting plans to migrate code that uses the Core Audio family of frameworks. In particular, update your Audio Units to support Apple silicon, and optimize any real-time code to run efficiently on all Mac computers.
 
-##### Create Universal Versions of Your Host App and Audio Units
+### Create Universal Versions of Your Host App and Audio Units
 
 Always create universal versions of your audio host app and Audio Unit plug-ins. Universal binaries ensure that your code runs natively on all platforms, which gives you the opportunity to optimize your code for each platform.
 
@@ -19,7 +19,7 @@ Because the host app controls the execution environment, providing universal Aud
 
 To learn how to create a universal binary, see [Building a universal macOS binary](./building-a-universal-macos-binary.md).
 
-##### Support the Modern Audio Component Architecture
+### Support the Modern Audio Component Architecture
 
 For the `arm64` architecture, always use the Audio Component API to load Audio Units, codecs, and other code modules into your app. The Audio Component API is the modern way to search for loadable code modules, and it’s available in macOS 10.6 and later. Apps that target the `arm64` architecture or link against the macOS 11 SDK cannot use the legacy Carbon Component Manager API to open Audio Units. If your app uses the Carbon Component Manager, plan to migrate off of it when porting your app.
 
@@ -29,7 +29,7 @@ If you develop Audio Units or codecs, update your code to support the Audio Comp
 
 For information about the Audio Component API, see the [Audio Toolbox](../AudioToolbox/AudioToolbox.md) framework.
 
-##### Prioritize Realtime Threads Using Workgroups
+### Prioritize Realtime Threads Using Workgroups
 
 Apps that perform realtime audio processing need to ensure that their threads run at regular intervals. In some cases, your app or Audio Unit may also need to coordinate with threads from the audio server or a host app to ensure timely processing of audio. For both of these situations, use workgroups to communicate the scheduling needs of your realtime threads to the system.
 

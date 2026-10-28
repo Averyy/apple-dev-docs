@@ -25,7 +25,7 @@ func validateForInsert() throws
 - (BOOL) validateForInsert:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses should invoke super’s implementation before performing their own validation, and should combine any error returned by super’s implementation with their own (see Managed Object Validation).
 

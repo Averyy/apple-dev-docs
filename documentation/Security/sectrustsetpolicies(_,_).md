@@ -25,11 +25,11 @@ func SecTrustSetPolicies(_ trust: SecTrust, _ policies: CFTypeRef) -> OSStatus
 OSStatus SecTrustSetPolicies(SecTrustRef trust, CFTypeRef policies);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The policies you set with this function replace any already in the trust management object.
 

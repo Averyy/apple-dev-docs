@@ -22,7 +22,7 @@ Removes the specified subrange of elements from the collection.
 mutating func removeSubrange(_ bounds: Range<Self.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 var bugs = ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig"]

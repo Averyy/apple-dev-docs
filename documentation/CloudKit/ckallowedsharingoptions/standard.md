@@ -23,7 +23,7 @@ class var standard: CKAllowedSharingOptions { get }
 @property (class, nonatomic, strong, readonly) CKAllowedSharingOptions * standardOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The `standardOptions` has [`allowedParticipantPermissionOptions`](./allowedparticipantpermissionoptions.md) set to [`any`](../cksharingparticipantpermissionoption/any.md) and [`allowedParticipantAccessOptions`](./allowedparticipantaccessoptions.md) set to [`any`](../cksharingparticipantaccessoption/any.md).
 

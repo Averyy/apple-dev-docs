@@ -19,7 +19,7 @@ var touchBar: NSTouchBar? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSTouchBar * touchBar;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value — on devices with a Touch Bar — is the [`NSTouchBar`](../../AppKit/nstouchbar.md) instance that the responder’s [`makeTouchBar()`](./maketouchbar%28%29.md) method returns. Otherwise, the default value is `nil`.
 

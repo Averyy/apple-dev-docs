@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetChromaSiting(_ format: vImageConstCVImageFormat) -> 
 CFStringRefvImageCVImageFormat_GetChromaSiting(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) that describes the positioning of the chrominance samples.
 
-#### Discussion
+## Discussion
 
 4:2:0 and 4:2:0 YpCbCr image formats that have subsampled chrominance require the position of the chrominance samples relative to the luminance samples.
 

@@ -15,7 +15,7 @@ A flag that indicates starting or stopping for prewarming.
 Prewarm
 ```
 
-#### Discussion
+## Discussion
 
 This option causes the minimal enabling or disabling of hardware, to minimize the transition to normal I/O operation.
 

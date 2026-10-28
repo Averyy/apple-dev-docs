@@ -26,7 +26,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Move into the `NWUDPSessionStateCancelled` state. The connection will be terminated, and all handlers will be cancelled.
 

@@ -25,11 +25,11 @@ class var decimalDigits: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * decimalDigitCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the decimal digit characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all characters used to represent the decimal values `0` through `9`. These characters include, for example, the decimal digits of the Indic scripts and Arabic.
 

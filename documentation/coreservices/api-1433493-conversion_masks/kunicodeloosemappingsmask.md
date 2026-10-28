@@ -14,7 +14,7 @@
 kUnicodeLooseMappingsMask = 1L << kUnicodeLooseMappingsBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask that determines whether the Unicode Converter should use the loose-mapping portion of a mapping table for character mapping if the strict mapping portion of the table does not include a destination encoding equivalent for the source text element. 
 

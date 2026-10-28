@@ -23,7 +23,7 @@ case center
 MKScaleViewAlignmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 The framework depicts the scale view distance using a legend that grows and shrinks around its horizontal center point.
 

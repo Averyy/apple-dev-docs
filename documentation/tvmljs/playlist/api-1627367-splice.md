@@ -19,11 +19,11 @@ Array splice(
 );
 ```
 
-#### Return Value
+## Return Value
 
 An array of the deleted elements.
 
-#### Discussion
+## Discussion
 
 Use this method to modify the contents of the playlist.
 

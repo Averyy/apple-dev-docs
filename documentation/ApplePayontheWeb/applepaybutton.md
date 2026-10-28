@@ -16,7 +16,7 @@ An object that displays a button either to trigger payments through Apple Pay or
 interface ApplePayButton
 ```
 
-#### Overview
+## Overview
 
 Choose the type and style of the button and the browser shows the button with the correct content and appearance. For design guidance, see [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

@@ -19,7 +19,7 @@ static let interlaced: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageInterlaced;
 ```
 
-#### Discussion
+## Discussion
 
 Used only when writing out PNG files.
 

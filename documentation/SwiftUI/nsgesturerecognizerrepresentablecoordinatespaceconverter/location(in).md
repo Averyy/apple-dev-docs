@@ -15,7 +15,7 @@ Converts the represented gesture recognizer’s current location to a SwiftUI co
 func location(in coordinateSpace: some CoordinateSpaceProtocol) -> CGPoint
 ```
 
-#### Return Value
+## Return Value
 
 The represrnted gesture recognizer’s current location converted into the given `coordinateSpace`.
 

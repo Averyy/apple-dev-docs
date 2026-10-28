@@ -5,13 +5,13 @@
 
 Use declarative management to deploy configurations and retrieve status updates more efficiently.
 
-#### Overview
+## Overview
 
 The declarations and the status channels of declarative management can coexist with MDM commands and profiles, which means you can gradually adopt the new features, without having to update all device management workflows at once. For example, a device management service might just implement status subscriptions to effectively add a status channel to the MDM protocol without having to adopt all of declarative management.
 
 Importantly, this integration doesn’t interfere with existing MDM behavior. Declarative management has to be explicitly enabled with a new MDM command, before you can use any of its features. Without that enablement, the MDM protocol functions exactly as before.
 
-#### Enable declarative management
+## Enable declarative management
 
 The device management service enables declarative management by sending a [`DeclarativeManagementCommand`](./declarativemanagementcommand.md) to the device through the usual MDM command processing flow. This command serves two purposes:
 
@@ -24,7 +24,7 @@ If you unenroll a device, the device removes all declarative management state, i
 
 > **Note**:  On macOS and Shared iPad, you must send the management commands separately on the device and user channels to turn on declarative management on each channel. Similarly, each channel reports declarative management status separately.
 
-#### Synchronize declarative management
+## Synchronize declarative management
 
 Synchronize declarations by following these steps:
 
@@ -37,7 +37,7 @@ Synchronize declarations by following these steps:
 
 The next sections describe the synchronization details in steps 4-6 in more detail.
 
-#### Check synchronization tokens
+## Check synchronization tokens
 
 The device management service maintains a token that represents the current state of the declarations to synchronize with a particular device. The service must persist this token on a per-device and per-user basis because declarations may be different for some devices and some users. Whenever the set of declarations changes (new ones added or existing ones changed or removed), the service must change the value of the token. The token value is an opaque string that the client uses for comparisons, so the service is free to use whatever format it prefers, but needs to limit the size to no more that 256 octets.
 
@@ -53,7 +53,7 @@ The device compares the new declaration token to the last declaration token rece
 - If the new and existing tokens match, the device assumes the declarations of the device management service are identical since the last synchronization, and the current synchronization operation ends.
 - If the new and existing tokens don’t match, the device continues the synchronization operation by fetching the declarations manifest from the device management service with a [`Declarative Management`](./declarative-management.md) `declaration-items` `Endpoint` request. The declaration manifest is a JSON object with keys for each declaration type, whose values are an array of declaration item descriptors. Those descriptors contain the Identifier and `ServerToken` values for each declaration for the device to synchronize.
 
-#### Synchronize device state
+## Synchronize device state
 
 The device uses the declaration items in the declaration manifest to synchronize its state with the device management service using the following logic:
 
@@ -64,7 +64,7 @@ After processing the entire declaration manifest, if there are declarations pres
 
 After processing the declaration manifest, and fetching any new or changed declarations, the device removes all declarations marked for removal, and then updates its state by applying the new and changed declarations, and un-applying the removed declarations.
 
-#### Download asset data
+## Download asset data
 
 Some asset declarations contain a `Reference` which in turn contains a `DataURL` that specifies the URL where the corresponding asset data resides. The device treats this URL as hosted by the device management service and applies normal MDM protocol rules to the request. There are additional keys in the `Reference` key that the system uses to verify the integrity of the downloaded asset data. The device procedure for fetching and verifying the data is:
 

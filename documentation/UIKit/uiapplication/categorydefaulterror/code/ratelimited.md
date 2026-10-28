@@ -21,7 +21,7 @@ case rateLimited
 UIApplicationCategoryDefaultErrorRateLimited
 ```
 
-#### Discussion
+## Discussion
 
 When you receive an error with this code, the error’s user info dictionary contains these keys:
 

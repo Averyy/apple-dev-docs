@@ -15,11 +15,11 @@ The metadata to include in server requests.
 object RequestInfo
 ```
 
-#### Discussion
+## Discussion
 
 You provide the `RequestInfo` in your Advanced Commerce API server requests to uniquely identify your requests. You also have the option to provide additional data in the `RequestInfo` object.
 
-##### Include the app account token, optionally
+### Include the app account token, optionally
 
 You can include an `appAccountToken` in `RequestInfo` to associate an account on your system with the purchase. The App Store returns the same `appAccountToken` value in the transaction information.
 
@@ -29,7 +29,7 @@ If you include `appAccountToken` in the `RequestInfo`, you don’t need to inclu
 
 For more information about sending API requests from your app, see [Sending Advanced Commerce API requests from your app](../StoreKit/sending-advanced-commerce-api-requests-from-your-app.md).
 
-##### Include the consistency token, optionally
+### Include the consistency token, optionally
 
 The consistency token helps prevent unintended operations that might occur when the server gets multiple or overlapping requests for the same subscription.
 

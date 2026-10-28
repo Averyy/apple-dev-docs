@@ -23,7 +23,7 @@ func applyMorphology(operation: vImage.MorphologyOperation<Format.ComponentType>
 
 Available when `Format` conforms to `MultiplePlanePixelFormat`, `Format.ComponentType` is `UInt8`, and `Format.PlanarPixelFormat.ComponentType` is `UInt8`.
 
-#### Discussion
+## Discussion
 
 > **Precondition**: Source and destination buffer must be the same size.
 

@@ -25,11 +25,11 @@ func CFPlugInGetBundle(_ plugIn: CFPlugIn!) -> CFBundle!
 extern CFBundleRefCFPlugInGetBundle(CFPlugInRef plugIn);
 ```
 
-#### Return Value
+## Return Value
 
 The bundle for `plugIn`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 You should *always* use this function to get a plug-in’s bundle. Never attempt to access the plug-in directly as a bundle.
 

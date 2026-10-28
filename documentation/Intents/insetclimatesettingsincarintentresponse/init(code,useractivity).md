@@ -24,7 +24,7 @@ init(code: INSetClimateSettingsInCarIntentResponseCode, userActivity: NSUserActi
 - (instancetype) initWithCode:(INSetClimateSettingsInCarIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 

@@ -25,7 +25,7 @@ var numberOfDroppedVideoFrames: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfDroppedVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-frames-dropped”.
 

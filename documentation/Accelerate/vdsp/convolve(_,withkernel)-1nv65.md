@@ -21,7 +21,7 @@ Returns the 1D convolution of a double-precision vector.
 static func convolve<T, U>(_ vector: T, withKernel kernel: U) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The convolution result.
 

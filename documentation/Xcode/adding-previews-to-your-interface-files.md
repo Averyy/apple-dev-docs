@@ -5,7 +5,7 @@
 
 Write code to test your views on different devices and configurations without needing to run your app.
 
-#### Overview
+## Overview
 
 Show previews of your views in the canvas by adding preview macros to your SwiftUI, UIKit, and AppKit files. The Swift preview macro is a snippet of code that displays and configures your view.
 
@@ -15,7 +15,7 @@ You can change environment and device settings in the code or using controls in 
 
 For more information on using the canvas, see [Interacting with previews in the canvas](./interacting-with-previews-in-the-canvas.md). To generate previews using coding intelligence instead, see [Generate playgrounds and previews](./using-coding-intelligence-in-the-source-editor.md#Generate-playgrounds-and-previews).
 
-#### Add a preview macro
+## Add a preview macro
 
 Add one of the `#Preview` macros to an interface file — such as [`Preview(_:body:)`](../SwiftUI/preview%28_,body%29.md) — to tell Xcode what to display in the canvas. In the body of the macro trailing closure, add code that creates and returns an instance of the view configuration you want to display.
 
@@ -90,7 +90,7 @@ class WeatherView: NSView {
 }
 ```
 
-#### Capture specific previews in code
+## Capture specific previews in code
 
 In addition to the preview options Xcode provides, you can also customize and configure previews you want to reuse programmatically.
 
@@ -138,7 +138,7 @@ Display a variant of the view by passing one or more configuration traits as a v
 }
 ```
 
-#### Tag dynamic properties for use in previews
+## Tag dynamic properties for use in previews
 
 When a view depends on a [`Binding`](../SwiftUI/binding.md) property wrapper, you can create a functional binding for that property and pass it into your preview using the [`Previewable()`](../SwiftUI/previewable%28%29.md) macro. This macro works on any variable conforming to the [`DynamicProperty`](../SwiftUI/dynamicproperty.md) protocol.
 
@@ -171,7 +171,7 @@ Tagging a dynamic property with the `Previewable` macro eliminates the need to c
 
 > **Note**: [`Previewable()`](../SwiftUI/previewable%28%29.md) is a SwiftUI-only macro and doesn’t apply to UIKit or AppKit previews.
 
-#### Make complex objects reusable with a preview modifier
+## Make complex objects reusable with a preview modifier
 
 To avoid recreating expensive objects for every preview that needs them, in SwiftUI you can create these objects once with the [`PreviewModifier`](../SwiftUI/previewmodifier.md) and then pass the preview modifier into your preview using the [`Preview(_:traits:_:body:)`](../SwiftUI/preview%28_,traits,_,body%29.md) macro.
 
@@ -252,7 +252,7 @@ struct SampleData: PreviewModifier {
 }
 ```
 
-#### Pass views only the data they need
+## Pass views only the data they need
 
 When creating views, pass in only the data the view needs to display. Avoid passing in objects that fetch data; objects make setting up a view’s preview more complicated and less performant.
 
@@ -379,7 +379,7 @@ class CollaboratorCell: NSView {
 }
 ```
 
-#### Reduce your app size with development assets
+## Reduce your app size with development assets
 
 To access resources in your previews, without shipping them in the final version of your app, use development assets in your Xcode project. Development assets give you access to resources such as images, video, JSON data, and code files in your previews, without increasing the size of your app.
 

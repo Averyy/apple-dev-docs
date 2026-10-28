@@ -6,7 +6,7 @@
 
 A sound sample description that supports only uncompressed audio in raw or twos-complement format.
 
-#### Overview
+## Overview
 
 There are currently three versions of the sound sample description, versions 0, 1 and 2. Version 0 supports only uncompressed audio in raw (`'raw '`) or twos-complement (`'twos'`) format, although these are sometimes incorrectly specified as either `'NONE'` or `0x00000000`.
 

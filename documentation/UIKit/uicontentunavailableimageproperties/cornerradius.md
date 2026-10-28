@@ -19,7 +19,7 @@ The preferred corner radius for the image.
 @property (nonatomic) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 0. If the image is too small to fit the requested radius, the view adjusts the corner curve and radius to fit.
 

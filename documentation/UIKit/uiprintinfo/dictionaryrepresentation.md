@@ -22,7 +22,7 @@ var dictionaryRepresentation: [AnyHashable : Any] { get }
 @property (nonatomic, readonly) NSDictionary * dictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representation of a `UIPrintInfo` object that can be archived and used to create a new `UIPrintInfo` object. Returns `nil` if no dictionary can be created.
 

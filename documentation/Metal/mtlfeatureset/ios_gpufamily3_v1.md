@@ -22,7 +22,7 @@ case iOS_GPUFamily3_v1
 MTLFeatureSet_iOS_GPUFamily3_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A9 devices running iOS 9.
 

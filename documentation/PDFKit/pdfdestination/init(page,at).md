@@ -40,11 +40,11 @@ init(page: PDFPage, at point: NSPoint)
 - (instancetype) initWithPage:(PDFPage *) page atPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFDestination` instance, or `NULL` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 Specify `point` in page space. Typically, there’s no need to initialize destinations. Instead, you get them from [`PDFAnnotationLink`](../pdfannotationlink.md), [`PDFOutline`](../pdfoutline.md), or [`PDFView`](../pdfview.md) objects.
 

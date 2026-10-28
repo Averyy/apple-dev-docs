@@ -21,7 +21,7 @@ Initializes a newly allocated dictionary with entries constructed from the speci
 - (instancetype) initWithObjectsAndKeys:(id) firstObject;
 ```
 
-#### Discussion
+## Discussion
 
 After the `firstObject` value, pass the key for `firstObject`, then a null-terminated list of alternating values and keys. If any key is `nil`, an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) is raised.
 

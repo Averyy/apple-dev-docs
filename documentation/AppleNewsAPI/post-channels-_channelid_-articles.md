@@ -16,7 +16,7 @@ Publish an article to your channel.
 - [Changing the Appearance of Your Article Tile in Feeds](../AppleNews/changing-the-appearance-of-your-article-tile-in-feeds.md)
 - [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
 
-#### Discussion
+## Discussion
 
 Use the Create an Article endpoint to publish an article to your channel.
 
@@ -50,7 +50,7 @@ Here are general guidelines for Apple News Format:
 - A canonical URL is required to do data collection and reporting for comScore analytics.
 - Don’t change the canonical URL of the article after it has been set.
 
-##### Example Code for Creating an Article Without Metadata
+### Example Code for Creating an Article Without Metadata
 
 **Request**:
 
@@ -214,7 +214,7 @@ Transfer-Encoding: chunked
 }
 ```
 
-##### Example Code for Creating an Article with Metadata
+### Example Code for Creating an Article with Metadata
 
 **Request**:
 

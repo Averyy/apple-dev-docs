@@ -19,7 +19,7 @@ class NSRotationGestureRecognizer
 @interface NSRotationGestureRecognizer : NSGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 This rotation gesture implies that the underlying view should rotate in a matching direction. The gesture is recognized when the trackpad touches end.
 

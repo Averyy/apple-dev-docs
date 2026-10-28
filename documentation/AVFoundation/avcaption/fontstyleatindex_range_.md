@@ -18,7 +18,7 @@ Returns the font style and range at the index position.
 - (AVCaptionFontStyle) fontStyleAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The font style.
 

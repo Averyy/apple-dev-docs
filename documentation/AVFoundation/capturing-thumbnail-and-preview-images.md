@@ -5,7 +5,7 @@
 
 Enable delivery of reduced-size images with the main image in a photo capture.
 
-#### Overview
+## Overview
 
 Generating your own preview or thumbnail images from high-resolution source images can be difficult and time-consuming. Instead, use [`AVCapturePhotoOutput`](./avcapturephotooutput.md) to get easy, fast preview and thumbnail generation as part of your capture process.
 
@@ -16,7 +16,7 @@ In the capture system, the names *preview* and *thumbnail* have specific meaning
 
 You can add preview images, thumbnail images, or both with minor additions to any [`AVCapturePhotoOutput`](./avcapturephotooutput.md) workflow (see [Capturing still and Live Photos](./capturing-still-and-live-photos.md) and related topics).
 
-##### Choose settings
+### Choose settings
 
 After you create an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object for the kind of photo you plan to shoot, use its [`previewPhotoFormat`](./avcapturephotosettings/previewphotoformat.md) dictionary to specify the format and size of preview image you want.
 
@@ -41,7 +41,7 @@ photoSettings.embeddedThumbnailPhotoFormat = [
 ]
 ```
 
-##### Handle results
+### Handle results
 
 When the photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method, you can get the preview image from the [`AVCapturePhoto`](./avcapturephoto.md) [`previewPixelBuffer`](./avcapturephoto/previewpixelbuffer.md) property. A pixel buffer provides direct access to pixel data, so you can process or display it using other graphics technologies such as Metal, Vision, or Core Image. One way to simply display the preview image in your UI is to use Core Image to wrap the buffer in a UIImage object:
 

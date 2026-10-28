@@ -22,7 +22,7 @@ var position: UIFocusHaloEffect.Position { get set }
 @property (nonatomic) UIFocusHaloEffectPosition position;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIFocusHaloEffect.Position.automatic`](./position-swift.enum/automatic.md).
 

@@ -20,7 +20,7 @@ set region(region: CoordinateRegionData);
 
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Discussion
+## Discussion
 
 This is the area currently displayed by the map, defined with a [`CoordinateRegion`](../coordinateregion.md):
 

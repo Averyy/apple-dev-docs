@@ -28,7 +28,7 @@ var testDescription: String { get }
 
 - [Describing and reflecting values](../describing-values.md)
 
-#### Discussion
+## Discussion
 
 Do not use this property directly. To get the test description of a value, use `Swift/String/init(describingForTest:)`.
 

@@ -17,15 +17,15 @@ Preview a timeline-style widget.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Widget>(_ name: String? = nil, as family: WidgetFamily, widget: @escaping () -> Widget, @PreviewTimelineBuilder timeline: @escaping @MainActor () async -> [any TimelineEntry]) where Widget : Widget
+@freestanding(declaration)
+macro Preview<Widget>(_ name: String? = nil, as family: WidgetFamily, widget: @escaping () -> Widget, @PreviewTimelineBuilder timeline: @escaping @MainActor () async -> [any TimelineEntry]) where Widget : Widget
 ```
 
 ## Mentions
 
 - [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
 
-#### Overview
+## Overview
 
 Provide the preview with sample data and use it to step through the timeline while ignoring the dates of the entries, and test out the transitions between them.
 

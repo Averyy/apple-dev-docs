@@ -19,7 +19,7 @@ func setDesktopImageURL(_ url: URL, for screen: NSScreen, options: [NSWorkspace.
 - (BOOL) setDesktopImageURL:(NSURL *) url forScreen:(NSScreen *) screen options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Instead of presenting a user interface for picking the options, choose appropriate defaults and allow the user to adjust them in the System Preference Pane.
 

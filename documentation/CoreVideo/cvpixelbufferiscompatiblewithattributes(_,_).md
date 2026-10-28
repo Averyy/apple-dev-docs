@@ -23,7 +23,7 @@ func CVPixelBufferIsCompatibleWithAttributes(_ pixelBuffer: CVPixelBuffer, _ att
 extern Boolean CVPixelBufferIsCompatibleWithAttributes(CVPixelBufferRef pixelBuffer, CFDictionaryRef attributes);
 ```
 
-#### Discussion
+## Discussion
 
 Returns true if given pixel buffer is compatible with pixelBufferAttributes dictionary.
 

@@ -11,7 +11,7 @@ Gets the number of packets accepted by the target.
 virtual UInt32 getOutputCount();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of times that kIOOutputStatusAccepted is returned by the target.
 

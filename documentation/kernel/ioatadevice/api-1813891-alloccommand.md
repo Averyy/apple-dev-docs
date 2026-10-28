@@ -12,7 +12,7 @@ virtual IOATACommand* allocCommand(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 null if allocation failed. Retain count is one.
 

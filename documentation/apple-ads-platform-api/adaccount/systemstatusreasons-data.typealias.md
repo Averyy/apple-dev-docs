@@ -36,11 +36,11 @@ string AdAccount.SystemStatusReasons
 - `TERM_NOT_ACCEPTED`: Required terms of service have not been accepted.
 - `USER_REQUESTED_ACCOUNT_SUSPENSION`: The account was suspended at user request.
 
-#### Discussion
+## Discussion
 
 Reasons here can originate from the ad account’s own payment method or cascade down from the parent organization, as with `ORG_NO_PAYMENT_METHOD_ON_FILE`.
 
-##### Example
+### Example
 
 ```json
 {

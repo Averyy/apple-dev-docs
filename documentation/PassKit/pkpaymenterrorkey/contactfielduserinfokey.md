@@ -24,7 +24,7 @@ static let contactFieldUserInfoKey: PKPaymentErrorKey
 extern PKPaymentErrorKey const PKPaymentErrorContactFieldUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PKContactField`](../pkcontactfield.md) for the values to use with this key.
 

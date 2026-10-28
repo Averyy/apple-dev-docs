@@ -24,7 +24,7 @@ func cancelContentEditing()
 - (void) cancelContentEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Photos may call this method at any time after your extension view controller’s view appears, including while your app is preparing the editing output.
 

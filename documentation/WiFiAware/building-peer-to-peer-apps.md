@@ -12,17 +12,17 @@ Communicate with nearby devices over a secure, high-throughput, low-latency conn
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample app uses the Wi-Fi Aware framework to build a peer-to-peer app. One device acts as a publisher by running a local simulation and advertising a service. Nearby devices connect to the publisher and subscribe to the simulation movements. The Wi-Fi Aware framework provides a secure, low-latency connection between the publisher and connected devices.
 
 The sample app shows the interactions between the publisher and subscriber devices. The publisher simulates a satellite orbiting a planet. It sends the satellite’s coordinates to connected subscriber devices. The subscribers receive the coordinates for each frame on the publisher simulation and update their local satellite’s position, mirroring the publisher’s.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because this sample app relies on using Wi-Fi Aware to make a network connection between devices, you can’t run this sample in Simulator — you’ll need to run it on physical devices.
 
-##### Launch and run the app
+### Launch and run the app
 
 1. Launch the app on two nearby devices.
 2. Tap Host Simulation on one device to start it in publisher mode.
@@ -39,7 +39,7 @@ Because this sample app relies on using Wi-Fi Aware to make a network connection
 
 The devices then make a Wi-Fi Aware connection, and the satellite position on the subscriber device mirrors that of the one on the publisher. You can control the position of the satellite on the publisher device by tapping on it and moving it around, and you can observe the position of the satellite on the subscriber devices mirroring the one on the publisher device.
 
-##### Authorize the app to publish and subscribe
+### Authorize the app to publish and subscribe
 
 The sample app uses the Wi-Fi Aware framework with the addition of the [`com.apple.developer.wifi-aware`](../BundleResources/entitlements/com.apple.developer.wifi-aware.md) entitlement as a capability array. To perform both publish and subscribe operations, the sample app adds the `Publish` and `Subscribe` strings to the capability array:
 
@@ -57,7 +57,7 @@ The sample app uses the Wi-Fi Aware framework with the addition of the [`com.app
 </plist>
 ```
 
-##### Declare and access services
+### Declare and access services
 
 For an app to perform any Wi-Fi Aware operations, it needs to declare the services that it intends to use for publishing and subscribing. The sample app declares the *_sat-simulation._udp* service in its `Info.plist` with `Publishable` and `Subscribable` keys:
 
@@ -98,7 +98,7 @@ extension WASubscribableService {
 }
 ```
 
-##### Pair devices to connect
+### Pair devices to connect
 
 To set up a connection between devices, you need to pair the devices. Both the  [DeviceDiscoveryUI](../DeviceDiscoveryUI/DeviceDiscoveryUI.md) and [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) frameworks work for pairing. The sample app uses `DeviceDiscoveryUI` to pair devices.
 
@@ -130,7 +130,7 @@ DevicePairingView(.wifiAware(.connecting(to: .simulationService, from: .userSpec
 
 To perform pairing, tap the **+** button in the app on the two devices, one running in publisher mode and the other in subscriber mode.
 
-##### Access paired devices
+### Access paired devices
 
 The sample app declares a `@State` variable to display the currently available paired devices ([`WAPairedDevice`](./wapaireddevice.md) instances) using a List view:
 
@@ -150,7 +150,7 @@ do {
 }
 ```
 
-##### Consider performance
+### Consider performance
 
 Before using Wi-Fi Aware in an app, it’s important to decide on the [`WAPerformanceMode`](./waperformancemode.md) to use for the connections. The first option is [`WAPerformanceMode.bulk`](./waperformancemode/bulk.md), the recommended option for almost all use cases. The second option is [`WAPerformanceMode.realtime`](./waperformancemode/realtime.md), which is for instances that require low latency. The sample app uses `realtime` as it needs to send position updates for every frame of the simulation scene and thus requires very low latency.
 
@@ -172,11 +172,11 @@ let appAccessCategory: WAAccessCategory = .interactiveVideo
 let appAccessCategory: WAAccessCategory = .bestEffort
 ```
 
-##### Connect using the Network framework
+### Connect using the Network framework
 
 The sample app uses the [Network](../Network/Network.md) framework to publish and subscribe. The Wi-Fi Aware framework implements the [`ListenerProvider`](../Network/listenerprovider.md) and [`BrowserProvider`](../Network/browserprovider.md) protocols in the Network framework. The app creates a network listener and browser using [`NetworkListener`](../Network/networklistener.md) and [`NetworkBrowser`](../Network/networkbrowser.md), respectively. Running these instances results in Wi-Fi Aware publish and subscribe operations. After the app discovers the network endpoints, it creates a Wi-Fi Aware connection using [`NetworkConnection`](../Network/networkconnection.md).
 
-##### Publish a service
+### Publish a service
 
 To start publishing, the app creates a `NetworkListener` instance by providing it `simulationService` as the service to advertise, and specifying the paired devices allowed to connect. In the sample app, [`allPairedDevices`](./wapublisherlistener/devices/allpaireddevices.md) allows a connection from any paired device. Using [`selected(_:)`](./wapublisherlistener/devices/selected%28_%29-56vig.md) limits connections to a smaller subset of devices, and using [`matching(_:)`](./wapublisherlistener/devices/matching%28_%29.md) provides a predicate filter on `WAPairedDevice`.
 
@@ -204,7 +204,7 @@ using: .parameters {
 
 > **Note**: The sample app uses the User Datagram Protocol (UDP) as the transport protocol because the use case doesn’t require reliable or in-order delivery. For most cases, using a protocol like the Transmission Control Protocol (TCP) or Quick UDP Internet Connections (QUIC) would likely be a better option.
 
-##### Subscribe to a service
+### Subscribe to a service
 
 To start subscribing, the app creates a `NetworkBrowser` instance by providing it `simulationService` as the service, and specifying the paired devices that it can discover.
 
@@ -232,7 +232,7 @@ let endpoint = try await browser.run { waEndpoints in
 }
 ```
 
-##### Make a connection
+### Make a connection
 
 The sample app uses the Network framework to make a connection. For convenience, the app declares a type alias `WiFiAwareConnection` for a parameterized [`NetworkConnection`](../Network/networkconnection.md), and a [`Codable`](../Swift/codable.md) and [`Sendable`](../Swift/sendable.md) enumeration to encode and send satellite position coordinates over the connection.
 
@@ -281,7 +281,7 @@ connection.onStateUpdate { connection, state in
 
 > **Note**: The `WAPerformanceMode` setting provided during connection should match the one the app provides when starting the listener. Mismatched performance modes lead to an undefined behavior.
 
-##### Send data to connected devices
+### Send data to connected devices
 
 The publisher instance of the sample app sends the coordinates of the *satellite* in the local simulation to all connected devices, for every frame:
 
@@ -301,7 +301,7 @@ func sendToAll(_ event: NetworkEvent) async {
 }
 ```
 
-##### Receive data from the connected device
+### Receive data from the connected device
 
 To receive data over the connection, the app uses the `Network` framework APIs available in the [`NetworkConnection`](../Network/networkconnection.md) instance:
 
@@ -313,7 +313,7 @@ for try await (event, _) in connection.messages {
 
 The sample app instance running on the subscriber side receives the coordinates of the satellite as it moves in the publisher simulation. It then updates the position of the local satellite based on the coordinates it receives.
 
-##### Monitor connection performance
+### Monitor connection performance
 
 The sample app uses the Wi-Fi Aware framework to monitor the performance of connections to peer devices. It gets the `WAPairedDevice` representing the remote endpoint and the current performance report of the connection by accessing the [`currentPath`](../Network/networkconnection/currentpath.md) property of the connection. The app accesses the [`WAPerformanceReport`](./waperformancereport.md) through the `.wifiAware` extension to `currentPath`, which contains Wi-Fi Aware-specific connection performance information:
 
@@ -328,7 +328,7 @@ if let wifiAwarePath = try await connection.currentPath?.wifiAware {
 
 The app displays two performance attributes for each connected device: signal strength and transmit latency.
 
-##### Get the signal strength
+### Get the signal strength
 
 Signal strength, represented as a number between `0.0` and `1.0`, is present in the [`WAPerformanceReport`](./waperformancereport.md) instance. A number closer to `1.0` indicates a stronger signal strength.
 
@@ -336,7 +336,7 @@ Signal strength, represented as a number between `0.0` and `1.0`, is present in 
 performanceReport.signalStrength
 ```
 
-##### Get the transmit latency
+### Get the transmit latency
 
 The Wi-Fi Aware framework reports the measured transmit latency of packets sent to a paired device, per access category (`WAAccessCategory`). Each `NetworkConnection` is bound to a specific `WAAccessCategory` based on the `serviceClass` configuration that was provided during the creation of the connection instance. In case of the sample app, the publisher specifies [interactiveVideo](../Network/nwparameters/serviceclass-swift.enum/interactivevideo.md) as the service class to transmit packets to the subscribers. To access the average transmit latency for the corresponding access category, use the following code:
 
@@ -344,7 +344,7 @@ The Wi-Fi Aware framework reports the measured transmit latency of packets sent 
 performanceReport.transmitLatency[appAccessCategory]?.average
 ```
 
-##### Get Wi-Fi Aware errors
+### Get Wi-Fi Aware errors
 
 The Wi-Fi Aware framework extends [`NWError`](../Network/nwerror.md) with a [`wifiAware`](../Network/nwerror/wifiaware.md) property that provides Wi-Fi Aware with specific errors that occur on the `NetworkListener`, `NetworkBrowser` or `NetworkConnection` instances. The app gets the underlying Wi-Fi Aware error from the NWError the Network framework provides as part of the [`NWListener.State.failed(_:)`](../Network/nwlistener/state-swift.enum/failed%28_%29.md), [`NWBrowser.State.failed(_:)`](../Network/nwbrowser/state-swift.enum/failed%28_%29.md), and [`NWConnection.State.failed(_:)`](../Network/nwconnection/state-swift.enum/failed%28_%29.md) states depending on whether the app is publishing, browsing, or connecting.
 

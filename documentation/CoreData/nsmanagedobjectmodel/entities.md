@@ -25,11 +25,11 @@ var entities: [NSEntityDescription] { get set }
 @property (strong) NSArray<NSEntityDescription *> * entities;
 ```
 
-#### Discussion
+## Discussion
 
 Entities are instances of [`NSEntityDescription`](../nsentitydescription.md).
 
-##### Special Considerations
+### Special Considerations
 
 Setting the entities for an object model raises an exception if the object model has been used by an object graph manager.
 

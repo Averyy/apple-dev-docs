@@ -27,7 +27,7 @@ class SKAdImpression
 - [Signing and providing ads](./signing-and-providing-ads.md)
 - [SKAdNetwork 2.2 release notes](./skadnetwork-2-2-release-notes.md)
 
-#### Overview
+## Overview
 
 Create a `SKAdImpression` instance when you’re preparing to present a view-through ad. In the instance, you set:
 

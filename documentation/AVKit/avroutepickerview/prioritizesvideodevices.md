@@ -22,7 +22,7 @@ var prioritizesVideoDevices: Bool { get set }
 @property (nonatomic) BOOL prioritizesVideoDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

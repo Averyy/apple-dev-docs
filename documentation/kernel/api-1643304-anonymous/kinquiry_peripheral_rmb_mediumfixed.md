@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_RMB_MediumFixed = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Medium type is fixed disk.
 

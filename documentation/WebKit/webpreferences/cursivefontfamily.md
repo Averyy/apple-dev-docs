@@ -19,7 +19,7 @@ var cursiveFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * cursiveFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties indicate that it should be displayed in a cursive font but do not specify a particular font.
 

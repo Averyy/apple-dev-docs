@@ -20,7 +20,7 @@ A path that determines the cross-sectional contour of each chamfered edge.
 var chamferProfile: Path? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If the chamfer profile is `nil`, a circular profile is used.
 

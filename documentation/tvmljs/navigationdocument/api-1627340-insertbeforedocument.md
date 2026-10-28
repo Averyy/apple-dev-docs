@@ -18,7 +18,7 @@ void insertBeforeDocument(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This function searches the stack for the first instance of the document contained in the `beforeDocument` parameter and inserts the document contained in the `document` parameter on top of it.
 

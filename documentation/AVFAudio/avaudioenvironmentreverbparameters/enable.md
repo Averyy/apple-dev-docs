@@ -25,7 +25,7 @@ var enable: Bool { get set }
 @property (nonatomic) BOOL enable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

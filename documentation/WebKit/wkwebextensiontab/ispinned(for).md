@@ -23,7 +23,7 @@ optional func isPinned(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isPinnedForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO` if not implemented.
 

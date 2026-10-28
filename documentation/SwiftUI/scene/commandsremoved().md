@@ -20,11 +20,11 @@ nonisolated
 func commandsRemoved() -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that excludes any commands defined by its children.
 
-#### Discussion
+## Discussion
 
 `WindowGroup`, `Window`, and other scene types all have an associated set of commands that they include by default. Apply this modifier to a scene to exclude those commands.
 

@@ -5,7 +5,7 @@
 
 Create a machine-readable summary of a set of playground books to make them available for others to download.
 
-#### Overview
+## Overview
 
 If you’re writing episodic content in your Swift Playgrounds learning material, or want to space out the releases of your lessons over time, you can build a subscription that guides people through your lessons one by one. To publish your playgrounds, you create and host the subscription data online so people can subscribe to them in Swift Playgrounds.
 
@@ -33,7 +33,7 @@ The feed format used by Swift Playgrounds has these two characteristics:
 - Feeds contain some details (metadata) used to name, describe, and identify the subscription.
 - Feeds contain a link to each individual playground book in a subscription.
 
-##### Create a subscription feed
+### Create a subscription feed
 
 Create the feed for a subscription by defining top-level metadata about the subscription. The top level of the JSON object that represents the feed must include following keys:
 
@@ -44,7 +44,7 @@ Create the feed for a subscription by defining top-level metadata about the subs
 - **`contactURL`**: The contact URL you use to get information about, and report problems with, the feed.
 - **`documents`**: An array of objects representing the playground books in your feed. For details about the format for the objects in this array, see doc:creating-a-subscription#Add-Documents-to-the-Feed.
 
-##### Add documents to the feed
+### Add documents to the feed
 
 For each book in your subscription, include an object with the following fields in your feed’s `documents` array:
 
@@ -74,7 +74,7 @@ For each book in your subscription, include an object with the following fields 
 - **`additionalInformation`**: An array of objects you use to supply metadata. The format for the objects in this array is described in doc:creating-a-subscription#Add-Metadata-to-the-Feed-Documents.
 - **`previewImageURLs`**: An array of URLs to images that highlight parts of the book. Preview images must be 800 x 600 pixels.
 
-##### Add metadata to the feed documents
+### Add metadata to the feed documents
 
 Store additional information and metadata about your feed in the format described below. This information is displayed alongside the book’s preview images to provide details about the book — such as available localizations — before a user downloads it.
 
@@ -84,7 +84,7 @@ Store additional information and metadata about your feed in the format describe
 
 For more information, see [Localizing a Subscription Feed](./localizing-a-subscription-feed.md).
 
-##### Update a Subscription by Adding Items to Its Feed
+### Update a Subscription by Adding Items to Its Feed
 
 Subscriptions are expected to be updated over time. The same expectation applies to the feeds distributing your playground subscriptions. To add, remove, or update a subscription, first create a new or updated playground book. Then adjust the JSON feed so it corresponds to the updates you’ve just made.
 

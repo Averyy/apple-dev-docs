@@ -13,7 +13,7 @@
 Component ResolveComponentAlias(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `Component` data type.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the Unicode scalar is an ASCII character.
 var isASCII: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 ASCII characters have a scalar value between 0 and 127, inclusive. For example:
 

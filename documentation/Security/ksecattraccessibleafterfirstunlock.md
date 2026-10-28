@@ -25,7 +25,7 @@ let kSecAttrAccessibleAfterFirstUnlock: CFString
 extern CFStringRef const kSecAttrAccessibleAfterFirstUnlock;
 ```
 
-#### Discussion
+## Discussion
 
 After the first unlock, the data remains accessible until the next restart.  This is recommended for items that need to be accessed by background applications. Items with this attribute migrate to a new device when using encrypted backups.
 

@@ -21,15 +21,15 @@ func LSCopyKindStringForRef(_ inFSRef: UnsafePointer<FSRef>!, _ outKindString: U
 OSStatus LSCopyKindStringForRef(const FSRef *inFSRef, CFStringRef *outKindString);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The kind string (which may be localized) is obtained from the item’s preferred application, if one is found in the Launch Services database; otherwise, a more generic kind string is chosen. For example, the kind string might be `FrameMakerDocument`, or just `Document` if the item is a document for which no application is found.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

@@ -21,7 +21,7 @@ A base type that represents a spreadsheet document.
 extern UTType * const UTTypeSpreadsheet;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.spreadsheet`.
 

@@ -21,7 +21,7 @@ Materials will automatically appear active or inactive based on context and plat
 static let automatic: MaterialActiveAppearance
 ```
 
-#### Discussion
+## Discussion
 
 Examples of automatic behavior on macOS:
 

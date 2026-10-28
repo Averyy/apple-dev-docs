@@ -22,7 +22,7 @@ class let touchBarTextCenterAlignTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextCenterAlignTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for center text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825136@2x.png)
 

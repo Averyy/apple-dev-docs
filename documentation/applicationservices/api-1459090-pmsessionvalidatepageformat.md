@@ -19,11 +19,11 @@ func PMSessionValidatePageFormat(_ printSession: PMPrintSession, _ pageFormat: P
 OSStatus PMSessionValidatePageFormat(PMPrintSession printSession, PMPageFormat pageFormat, Boolean *changed);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You must call this function between the creation and release of the printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

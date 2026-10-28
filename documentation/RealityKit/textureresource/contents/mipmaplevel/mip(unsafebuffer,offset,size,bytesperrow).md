@@ -20,7 +20,7 @@ Specifies a single mipmap level of a texture resource with pixel data that Reali
 static func mip(unsafeBuffer buffer: any MTLBuffer, offset: Int = 0, size: Int, bytesPerRow: Int) -> TextureResource.Contents.MipmapLevel
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A [`TextureResource.Contents.MipmapLevel`](../mipmaplevel.md) that you create with this function and use to create a [`TextureResource`](../../../textureresource.md) copies from the source buffer. That copy occurs when initializing the texture resource. The caller is responsible for ensuring that the system doesn’t modify the source Metal buffer while copying it to a texture.
 

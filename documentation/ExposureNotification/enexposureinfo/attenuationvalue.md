@@ -23,7 +23,7 @@ var attenuationValue: ENAttenuation { get }
 @property (nonatomic, assign, readonly) ENAttenuation attenuationValue;
 ```
 
-#### Discussion
+## Discussion
 
 Because attenuation can vary over a specific exposure event, the attenuation risk level value is calculated by weighting attenuation risk level values based on their durations during the exposure event.
 

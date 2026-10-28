@@ -24,7 +24,7 @@ var region: MKCoordinateRegion { get set }
 @property (nonatomic) MKCoordinateRegion region;
 ```
 
-#### Discussion
+## Discussion
 
 The *region* encompasses both the latitude and longitude center point of the map, and the span of coordinates to display. The span values provide an implicit zoom value for the map. The larger the displayed area, the lower the amount of zoom. Similarly, the smaller the displayed area, the greater the amount of zoom.
 

@@ -24,7 +24,7 @@ Executes the complete compatibility test suite.
 func runTest() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method runs all provider compatibility tests including:
 

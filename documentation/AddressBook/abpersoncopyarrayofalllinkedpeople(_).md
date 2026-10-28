@@ -23,11 +23,11 @@ func ABPersonCopyArrayOfAllLinkedPeople(_ person: ABRecord!) -> Unmanaged<CFArra
 extern CFArrayRefABPersonCopyArrayOfAllLinkedPeople(ABRecordRef person);
 ```
 
-#### Return Value
+## Return Value
 
 An array of all person records in the address book database that are linked to the given person record
 
-#### Discussion
+## Discussion
 
 Linked records contain information about the same person, and usually come from different sources.
 

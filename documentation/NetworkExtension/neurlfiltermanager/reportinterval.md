@@ -18,7 +18,7 @@ The time interval (in seconds) at which the system sends reports of blocked URLs
 var reportInterval: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to `86400`, equal to one day. The minimum allowed interval is `3600` (one hour).
 

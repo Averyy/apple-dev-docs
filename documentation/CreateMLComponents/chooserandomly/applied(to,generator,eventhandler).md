@@ -21,7 +21,7 @@ Chooses a random transformer from a list of transformers and applies the chosen 
 func applied(to input: Element, generator: inout some RandomNumberGenerator, eventHandler: EventHandler? = nil) async throws -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The augmented input.
 

@@ -24,7 +24,7 @@ init(queue: dispatch_queue_t?)
 - (instancetype) initWithQueue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A `PKPushRegistry` object that you can use to register for push tokens and use to receive notifications.
 

@@ -20,7 +20,7 @@ case cardEmulation(credential: CredentialSession.Credential)
 
 - [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 In the card emulation state, the session makes the selected credential available to NFC contactless readers.
 

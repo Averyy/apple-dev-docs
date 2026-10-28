@@ -12,11 +12,11 @@ Demonstrates adding widgets—interactive form elements—to a PDF document.
 - Mac Catalyst 11.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 The PDF file format allows for annotations to be associated with a page and a location on that page. One powerful annotation type is the widget, which represents interactive form elements. PDFKit supports three widget types: text, button, and choice widgets. Text widgets are basic text fields. Button widgets consist of three subtypes: radio buttons, checkboxes, and push buttons. Choice widgets consist of two subtypes: list (a table view) and combo box (a drop-down). This sample includes text and button widgets.
 
-##### Create Widget Annotations
+### Create Widget Annotations
 
 All widget annotations are instantiated using the [`PDFAnnotation`](./pdfannotation.md) constructor with subtype [`widget`](./pdfannotationsubtype/widget.md). To inform PDFKit which type of interactive element to add to the document, the `widgetFieldType` property is set for each widget:
 
@@ -35,7 +35,7 @@ widgetAnnotation.widgetFieldType = PDFAnnotationWidgetSubtype.button.rawValue
 widgetAnnotation.widgetFieldType = PDFAnnotationWidgetSubtype.choice.rawValue
 ```
 
-##### Set Widget Control Types
+### Set Widget Control Types
 
 Similarly, when creating a button widget annotation, the `widgetControlType` property is set to inform PDFKit which type of button to add:
 
@@ -54,7 +54,7 @@ widgetAnnotation.widgetControlType = .checkBoxControl
 widgetAnnotation.widgetControlType = .pushButtonControl
 ```
 
-##### Choose Widget Control Properties
+### Choose Widget Control Properties
 
 Toggles for the two kinds of choice widgets are set using the `isListChoice` property (list is the default):
 
@@ -68,7 +68,7 @@ widgetAnnotation.isListChoice = true
 widgetAnnotation.isListChoice = false
 ```
 
-##### Add Widgets to the PDF Page
+### Add Widgets to the PDF Page
 
 `ViewController` first loads a URL to the `MyForm.pdf` file through the app’s main bundle. This URL is then used to instantiate a [`PDFDocument`](./pdfdocument.md). On success, the document is assigned to the [`PDFView`](./pdfview.md) that was set up in Interface Builder. Once the document has been successfully loaded, The first page can be extracted so that widget annotations can be added.
 

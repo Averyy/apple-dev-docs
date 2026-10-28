@@ -25,7 +25,7 @@ var filterType: AVAudioUnitEQFilterType { get set }
 @property (nonatomic) AVAudioUnitEQFilterType filterType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`AVAudioUnitEQFilterType.parametric`](../avaudiouniteqfiltertype/parametric.md).
 

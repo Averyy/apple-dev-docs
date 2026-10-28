@@ -24,7 +24,7 @@ let HMCharacteristicTypeLabelNamespace: String
 extern NSString * const HMCharacteristicTypeLabelNamespace;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueLabelNamespace`](./hmcharacteristicvaluelabelnamespace.md) enumeration.
 

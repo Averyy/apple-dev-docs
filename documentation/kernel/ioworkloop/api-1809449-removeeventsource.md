@@ -10,11 +10,11 @@ virtual IOReturn removeEventSource(
  IOEventSource *toRemove);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnBadArgument if toRemove couldn't be found.
 
-#### Overview
+## Overview
 
 Remove an event source from the work loop. This function does not return until the work loop has acknowledged the removal of the event source. When an event has been removed the threadMain will always restart its loop and check all outstanding events. The event source will be released before return.
 

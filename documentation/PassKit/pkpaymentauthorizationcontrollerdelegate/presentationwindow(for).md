@@ -46,7 +46,7 @@ func presentationWindow(for controller: PKPaymentAuthorizationController) -> NSW
 - (NSWindow *) presentationWindowForPaymentAuthorizationController:(PKPaymentAuthorizationController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The window in which to present the payment authorization sheet.
 

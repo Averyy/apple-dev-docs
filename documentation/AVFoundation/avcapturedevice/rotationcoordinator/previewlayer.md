@@ -23,7 +23,7 @@ weak var previewLayer: CALayer? { get }
 @property (nonatomic, weak, readonly, nullable) CALayer * previewLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator updates its [`videoRotationAngleForHorizonLevelPreview`](./videorotationangleforhorizonlevelpreview.md) property by monitoring the layer and the physical rotation of [`device`](./device.md).
 

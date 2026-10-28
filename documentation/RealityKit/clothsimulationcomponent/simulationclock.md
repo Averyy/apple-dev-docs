@@ -17,7 +17,7 @@ The clock that tracks the pace of this simulation.
 var simulationClock: CMClockOrTimebase { get }
 ```
 
-#### Discussion
+## Discussion
 
 Syncing with this clock ensures synchronization with the simulation. For instance, an animation can be played using this clock to ensure that the motion of said animation is synchronized with the simulation.
 

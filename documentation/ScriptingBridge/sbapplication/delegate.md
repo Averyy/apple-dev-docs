@@ -20,7 +20,7 @@ var delegate: (any SBApplicationDelegate)? { get set }
 @property (strong, nullable) id<SBApplicationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should implement the [`eventDidFail(_:withError:)`](../sbapplicationdelegate/eventdidfail%28_,witherror%29.md) method of the [`SBApplicationDelegate`](../sbapplicationdelegate.md) informal protocol.
 

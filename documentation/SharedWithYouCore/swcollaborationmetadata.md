@@ -28,7 +28,7 @@ class SWCollaborationMetadata
 - [Adding custom collaboration to your app](../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 - [Adding shared content collaboration to your app](../SharedWithYou/adding-shared-content-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 Use `SWCollaborationMetadata` to share content without using iCloud. The system wraps the metadata object in an [`NSItemProvider`](../Foundation/nsitemprovider.md) object to implement a custom collaboration infrastructure.
 

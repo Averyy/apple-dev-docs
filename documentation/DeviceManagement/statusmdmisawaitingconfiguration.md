@@ -20,9 +20,9 @@ The status item that reports the device management awaiting configuration state.
 object StatusMDMIsAwaitingConfiguration
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ object StatusMDMIsAwaitingConfiguration
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

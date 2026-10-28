@@ -19,7 +19,7 @@ class let rowsDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSRuleEditorRowsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object is the rule editor; there is no `userInfo` object.
 

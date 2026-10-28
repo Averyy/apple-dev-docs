@@ -21,11 +21,11 @@ Decode an object as one of several expected types, failing if the archived type 
 func decodeTopLevelObject<DecodedObjectType>(of cls: DecodedObjectType.Type, forKey key: String) throws -> DecodedObjectType? where DecodedObjectType : NSObject, DecodedObjectType : NSCoding
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 
-#### Discussion
+## Discussion
 
 If the coder responds [`true`](../../Swift/true.md) to [`requiresSecureCoding`](./requiressecurecoding.md), then the coder calls [`failWithError(_:)`](./failwitherror%28_%29.md) in either the following cases:
 

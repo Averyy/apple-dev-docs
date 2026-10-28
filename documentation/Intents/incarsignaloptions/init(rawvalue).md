@@ -19,7 +19,7 @@ Initializes a new car signal option based on the provided raw value.
 init(rawValue: UInt)
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized car signal option.
 

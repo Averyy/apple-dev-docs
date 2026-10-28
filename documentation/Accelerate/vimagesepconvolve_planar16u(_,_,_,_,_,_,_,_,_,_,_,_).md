@@ -25,11 +25,11 @@ func vImageSepConvolve_Planar16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Un
 vImage_Error vImageSepConvolve_Planar16U(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const float *kernelX, uint32_t kernelX_width, const float *kernelY, uint32_t kernelY_width, float bias, Pixel_16U backgroundColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 A separable convolution applies two separate 1D filters along the rows and columns of an image in succession. This allows for a faster implementation compared to applying the corresponding 2D convolution filter.
 
@@ -132,7 +132,7 @@ The following image shows two photographs, with the original image on the left, 
 
 ![An image of some buildings before and after applying an edge detection filter.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3591850@2x.png)
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

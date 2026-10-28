@@ -10,7 +10,7 @@ Install and run macOS in a virtual machine using the Virtualization framework.
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Starting with macOS 27, this sample project includes an additional Swift scheme and app build target: `sharedBaseImageSampleApp`. This new app demonstrates Swift-only features, such as `DiskImageKit`. While the other versions of the sample `macOSVirtualMachineSampleApp-Objective-C` and `macOSVirtualMachineSampleApp-Swift` compile and run correctly, to take advantage of stacked disk images and other DiskImageKit features, use `sharedBaseImageSampleApp`.
 
@@ -24,7 +24,7 @@ There are five build targets in this project that represent the `InstallationToo
 
 > **Note**: The default deployment target is macOS 27, and the sample uses APIs present in that release. To build for an earlier version of macOS, change the deployment target as appropriate and adapt the code as necessary to either remove or conditionally compile support for macOS 27 API features.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 You need to install the virtual machine, and `VM.bundle` needs exist before launching the sample app.
 
@@ -42,7 +42,7 @@ You need to install the virtual machine, and `VM.bundle` needs exist before laun
 
    To reinstall the virtual machine, delete the `VM.bundle` package and run `InstallationTool` again.
 
-##### Install macOS from a restore image
+### Install macOS from a restore image
 
 After downloading a restore image, you can install macOS from that restore image.
 
@@ -83,7 +83,7 @@ NSLog(@"Starting installation.");
 [installer.progress addObserver:self forKeyPath:@"fractionCompleted" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:nil];
 ```
 
-##### Set up the virtual machine
+### Set up the virtual machine
 
 The `macOSVirtualMachineSampleApp` versions operate identically, using a single VM image to launch a single macOS VM; the `sharedBaseImageSampleApp` uses different initial setup and configuration methods to enable the app to support two VMs using a common, shared base image that both VMs run.
 
@@ -489,7 +489,7 @@ _virtualMachine = [[VZVirtualMachine alloc] initWithConfiguration:configuration]
 
 The Virtualization framework checks the configuration to make sure it supports saving and restoring.
 
-##### Start the VM
+### Start the VM
 
 After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](./vzvirtualmachine.md) object to start the execution of the macOS guest operating system.
 
@@ -573,7 +573,7 @@ if (![startOptions setGuestProvisioningOptions:guestOptions error:&error]) {
 }
 ```
 
-##### Listen for accessories and respond to connection changes
+### Listen for accessories and respond to connection changes
 
 After successfully starting the VM, the app starts listening for USB accessories with the [Accessory Access](../AccessoryAccess/AccessoryAccess.md) framework. As devices connect to or disconnect from the VM, the framework calls the [`usbAccessoryDidConnect(_:)`](../AccessoryAccess/aausbaccessorylistener/usbaccessorydidconnect%28_%29.md) and [`usbAccessoryDidDisconnect(_:)`](../AccessoryAccess/aausbaccessorylistener/usbaccessorydiddisconnect%28_%29.md) protocol methods to inform the app about these transitions.
 
@@ -792,7 +792,7 @@ func restoreVirtualMachine() {
 
 If the restore fails, the framework causes the virtual machine to reboot. In either case, the framework deletes `SaveFile.vzvmsave`  after restore completes because the VM disk no longer matches the state in the file.
 
-##### Save the VM
+### Save the VM
 
 When you close the sample app, it calls the VM’s [`pause(completionHandler:)`](./vzvirtualmachine/pause%28completionhandler%29.md) and [`saveMachineStateTo(url:completionHandler:)`](./vzvirtualmachine/savemachinestateto%28url,completionhandler%29.md) methods. This captures the runtime state of the VM to `SaveFile.vzvmsave`, which the app uses when calling `startOrRestoreVirtualMachine` to resume running the VM at the same point when you relaunch the sample app.
 

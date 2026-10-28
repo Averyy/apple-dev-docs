@@ -23,7 +23,7 @@ var effectiveContentHorizontalAlignment: UIControl.ContentHorizontalAlignment { 
 @property (nonatomic, readonly) UIControlContentHorizontalAlignment effectiveContentHorizontalAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property always contains the value [`UIControl.ContentHorizontalAlignment.left`](./contenthorizontalalignment-swift.enum/left.md) or [`UIControl.ContentHorizontalAlignment.right`](./contenthorizontalalignment-swift.enum/right.md), even when the actual horizontal alignment is [`UIControl.ContentHorizontalAlignment.leading`](./contenthorizontalalignment-swift.enum/leading.md) or [`UIControl.ContentHorizontalAlignment.trailing`](./contenthorizontalalignment-swift.enum/trailing.md).
 

@@ -5,7 +5,7 @@
 
 Detect extended duration taps on the screen, and use them to reveal contextually relevant content.
 
-#### Overview
+## Overview
 
 Long-press (also known as press-and-hold) gestures detect one or more fingers (or a stylus) touching the screen for an extended period of time. You configure the minimum duration required to recognize the press and the number of times the fingers must be touching the screen. (The gesture recognizer is triggered only by the duration of the touches and not by the force associated with them.) You might use a long-press gesture to initiate an action on the object being pressed. For example, you might use it to display a context-sensitive menu.
 

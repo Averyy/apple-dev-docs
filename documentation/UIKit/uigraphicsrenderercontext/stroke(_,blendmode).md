@@ -23,7 +23,7 @@ func stroke(_ rect: CGRect, blendMode: CGBlendMode)
 - (void) strokeRect:(CGRect) rect blendMode:(CGBlendMode) blendMode;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this method, select the stroke color with the [`setStroke()`](../uicolor/setstroke%28%29.md) method on an instance of [`UIColor`](../uicolor.md).
 

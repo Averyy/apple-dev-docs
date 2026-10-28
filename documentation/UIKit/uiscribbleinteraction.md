@@ -22,7 +22,7 @@ class UIScribbleInteraction
 @interface UIScribbleInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 By default, Scribble lets users enter text by writing directly into any editable view that implements [`UITextInput`](./uitextinput.md).
 

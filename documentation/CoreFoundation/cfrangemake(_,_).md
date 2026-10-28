@@ -25,11 +25,11 @@ func CFRangeMake(_ loc: CFIndex, _ len: CFIndex) -> CFRange
 static CFRange CFRangeMake(CFIndex loc, CFIndex len);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized structure of type [`CFRange`](./cfrange.md).
 
-#### Discussion
+## Discussion
 
 This is an in-line convenience function for creating initialized [`CFRange`](./cfrange.md) structures.
 

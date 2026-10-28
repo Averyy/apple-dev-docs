@@ -22,7 +22,7 @@ Organizes related chapters into a volume on a tutorial’s table of contents pag
 }
 ```
 
-#### Overview
+## Overview
 
 If you need a second level of organization on a table of contents page, use `Volume` directives to organize related chapters into volume groupings. For each volume, use the `name` parameter to specify a volume name, and provide some descriptive text. Then, insert [`Chapter`](./chapter.md) directives for the chapters each volume contains. Optionally, use an [`Image`](./image.md) directive to show an image for a volume.
 
@@ -63,14 +63,14 @@ If you need a second level of organization on a table of contents page, use `Vol
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A volume can contain the following items:
 
 - **[`Chapter`](./chapter.md)**: A chapter containing one or more tutorial pages. A volume must contain at least one chapter. **(optional)**
 - **[`Image`](./image.md)**: An image that represents the volume’s content. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following pages can include volumes:
 

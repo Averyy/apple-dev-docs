@@ -25,7 +25,7 @@ extern void vDSP_vgenpD(const double *__A, vDSP_Stride __IA, const double *__B, 
 
 - [Using linear interpolation to construct new data points](./using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Discussion
+## Discussion
 
 The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result:
 

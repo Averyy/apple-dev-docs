@@ -23,7 +23,7 @@ case `default`
 kCTFontManagerAutoActivationDefault
 ```
 
-#### Discussion
+## Discussion
 
 Default auto-activation setting. When specified, the application uses the global setting.
 

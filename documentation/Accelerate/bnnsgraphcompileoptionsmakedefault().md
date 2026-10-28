@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsMakeDefault() -> bnns_graph_compile_options_t
 bnns_graph_compile_options_t BNNSGraphCompileOptionsMakeDefault();
 ```
 
-#### Return Value
+## Return Value
 
 An allocated compilation options object with default values.
 

@@ -23,7 +23,7 @@ var keyCommands: [UIKeyCommand]? { get }
 @property (nonatomic, readonly, nullable) NSArray<UIKeyCommand *> * keyCommands;
 ```
 
-#### Discussion
+## Discussion
 
 A responder object that supports hardware keyboard commands can redefine this property and use it to return an array of [`UIKeyCommand`](../uikeycommand.md) objects that it supports. Each key command object represents the keyboard sequence to recognize and the action method of the responder to call in response.
 

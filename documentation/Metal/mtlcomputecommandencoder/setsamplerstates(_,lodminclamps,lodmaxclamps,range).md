@@ -20,7 +20,7 @@ Encodes multiple texture samplers for the compute function, specifying clamp val
 func setSamplerStates(_ samplers: [(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the lengths of `samplers`, `lodMinClamps`, and `lodMaxClamps` be the same as the length of `range`.
 

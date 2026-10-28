@@ -14,7 +14,7 @@
 #define kIOUPSPlugInInterfaceID_v140
 ```
 
-#### Discussion
+## Discussion
 
 Interface ID for the IOUPSPlugInInterface. Corresponds to an available UPS device.
 

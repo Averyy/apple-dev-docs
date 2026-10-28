@@ -23,7 +23,7 @@ func setPreferredSampleRate(_ sampleRate: Double) throws
 - (BOOL) setPreferredSampleRate:(double) sampleRate error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests a change to the input and output audio sample rate. To see the effect of this change, use the [`sampleRate`](./samplerate.md) property.
 

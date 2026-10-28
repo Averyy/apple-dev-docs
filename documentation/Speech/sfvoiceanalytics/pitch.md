@@ -24,7 +24,7 @@ var pitch: SFAcousticFeature { get }
 @property (nonatomic, copy, readonly) SFAcousticFeature * pitch;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a logarithm (base `e`) of the normalized pitch estimate for each frame.
 

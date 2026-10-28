@@ -21,7 +21,7 @@ An error that indicates the certificate chain includes a revoked certificate.
 case revokedCertificate
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, this error may resolve if you try again later.
 

@@ -19,7 +19,7 @@ var helpAnchor: NSHelpManager.AnchorName? { get set }
 @property (copy, nullable) NSHelpAnchorName helpAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the anchor name in your Apple Help file. The string you assign should contain only the name portion of the HTML anchor element.
 

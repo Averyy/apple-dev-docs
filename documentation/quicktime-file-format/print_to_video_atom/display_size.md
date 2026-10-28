@@ -6,7 +6,7 @@
 
 A 16-bit little-endian integer indicating the display size for the movie.
 
-#### Overview
+## Overview
 
 - `0` indicates playing the movie at its normal size
 - `1` indicates playing the movie at double size

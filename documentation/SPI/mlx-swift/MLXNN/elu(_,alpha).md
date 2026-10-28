@@ -17,7 +17,7 @@ Applies the Exponential Linear Unit.
 func elu(_ x: MLXArray, alpha: Float = 1.0) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.which(x .> 0, x, alpha * (exp(x) - 1))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 

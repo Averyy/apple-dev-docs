@@ -24,7 +24,7 @@ func setRegion(_ region: MKCoordinateRegion, animated: Bool)
 - (void) setRegion:(MKCoordinateRegion) region animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Changing just the center coordinate of the region can still cause the span values to change implicitly. The span values might change because the distances that a span repesents change at different latitudes and longitudes, and the map view may need to adjust the span to account for the new location. If you want to change the center coordinate without changing the zoom level, use the [`setCenter(_:animated:)`](./setcenter%28_,animated%29.md) instead.
 

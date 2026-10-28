@@ -23,7 +23,7 @@ var audioChannels: [AVCaptureAudioChannel] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureAudioChannel *> * audioChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection.
 

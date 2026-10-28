@@ -24,7 +24,7 @@ let NSBundleResourceRequestLoadingPriorityUrgent: Double
 extern const double NSBundleResourceRequestLoadingPriorityUrgent;
 ```
 
-#### Discussion
+## Discussion
 
 A special value for loading priority informing the system that the user cannot continue until the resources marked with the tags managed by the request are downloaded. The system will dedicate the maximum amount of capacity to completing the resource request.
 

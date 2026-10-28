@@ -23,7 +23,7 @@ init(lowHalf: SIMD4<UInt>, highHalf: SIMD4<UInt>)
 
 Available when `Scalar` is `UInt`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

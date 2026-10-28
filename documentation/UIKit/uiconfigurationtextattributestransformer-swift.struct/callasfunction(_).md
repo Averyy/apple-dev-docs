@@ -19,11 +19,11 @@ Calls the transform closure of the text attributes transformer.
 func callAsFunction(_ input: AttributeContainer) -> AttributeContainer
 ```
 
-#### Return Value
+## Return Value
 
 A new, transformed attributes container.
 
-#### Discussion
+## Discussion
 
 Using this syntax, you can call the text attributes transformer type as if it were a closure:
 

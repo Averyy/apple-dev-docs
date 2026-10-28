@@ -12,7 +12,7 @@ Create a search interface with a table view of suggested searches.
 - Mac Catalyst 13.2+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample project demonstrates how to implement a [`UISearchController`](./uisearchcontroller.md) in your application. `UISearchController` is a view controller that manages the display of search results based on interactions with a search bar.
 
@@ -20,7 +20,7 @@ The sample lists flower products. Users can search for them by title, price, yea
 
 This sample also demonstrates a scene-based architecture using [`UISceneDelegate`](./uiscenedelegate.md). It includes the recommended [`UIUserActivityRestoring`](./uiuseractivityrestoring.md) protocol to save and restore the search results. Adopt this protocol to save the search bar’s active state, first responder status, search bar text and token, and restore them when the app is relaunched.
 
-##### Create a search controller
+### Create a search controller
 
 The `MainTableViewController`, a subclass of [`UITableViewController`](./uitableviewcontroller.md), creates the search controller. The search controller’s search bar helps filter a set of `Product` objects and displays the results in the table view. The sample places the search controller in the `MainTableViewController's` navigation bar:
 
@@ -46,7 +46,7 @@ searchController.searchBar.delegate = self
 
 The `ResultsTableController` displays both the list of filtered flower products and the list of suggested search colors. As the user types text in the search field, the list of flower products matches what is typed. If the user doesn’t enter any text, the search controller displays a list of suggested search colors. A suggested search represents a single query to search for a specific color of a product.
 
-##### Create suggested searches
+### Create suggested searches
 
 The list of suggested searches is displayed by the results controller once the search bar is tapped:
 

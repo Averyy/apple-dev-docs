@@ -23,7 +23,7 @@ class CFPlugInInstance
 typedef struct __CFPlugInInstance * CFPlugInInstanceRef;
 ```
 
-#### Overview
+## Overview
 
 CFPlugInInstance is deprecated. Use the functions defined by [`CFPlugIn`](./cfplugin.md) instead.
 

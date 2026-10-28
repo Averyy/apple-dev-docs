@@ -32,7 +32,7 @@ class UIViewController
 - [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
 - [Responding to memory warnings](./responding-to-memory-warnings.md)
 
-#### Overview
+## Overview
 
 The [`UIViewController`](./uiviewcontroller.md) class defines the shared behavior that’s common to all view controllers. You rarely create instances of the [`UIViewController`](./uiviewcontroller.md) class directly. Instead, you subclass [`UIViewController`](./uiviewcontroller.md) and add the methods and properties needed to manage the view controller’s view hierarchy.
 
@@ -47,11 +47,11 @@ A view controller is tightly bound to the views it manages and takes part in han
 
 View controllers are rarely used in isolation. Instead, you often use multiple view controllers, each of which owns a portion of your app’s user interface. For example, one view controller might display a table of items while a different view controller displays the selected item from that table. Usually, only the views from one view controller are visible at a time. A view controller may present a different view controller to display a new set of views, or it may act as a container for other view controllers’ content and animate views however it wants.
 
-##### Subclassing notes
+### Subclassing notes
 
 Every app contains at least one custom subclass of [`UIViewController`](./uiviewcontroller.md). More often, apps contain many custom view controllers. Custom view controllers define the overall behaviors of your app, including the app’s appearance and how it responds to user interactions. The following sections provide a brief overview of some of the tasks your custom subclass performs. For detailed information about using and implementing view controllers, see [View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
 
-###### Manage views
+#### Manage views
 
 Each view controller manages a view hierarchy, the root view of which is stored in the [`view`](./uiviewcontroller/view.md) property of this class. The root view acts primarily as a container for the rest of the view hierarchy. The size and position of the root view is determined by the object that owns it, which is either a parent view controller or the app’s window. The view controller that’s owned by the window is the app’s root view controller and its view is sized to fill the window.
 
@@ -73,7 +73,7 @@ All of these techniques have the same end result, which is to create the appropr
 
 A view controller’s root view is always sized to fit its assigned space. For other views in your view hierarchy, use Interface Builder to specify the Auto Layout constraints that govern how each view is positioned and sized within its superview’s bounds. You can also create constraints programmatically and add them to your views at appropriate times. For more information about how to create constraints, see [Auto Layout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
 
-###### Handle view-related notifications
+##### Handle view-related notifications
 
 When the visibility of its views changes, a view controller automatically calls its own methods so that subclasses can respond to the change. Use a method like [`viewIsAppearing(_:)`](./uiviewcontroller/viewisappearing%28_%29.md) to prepare your views to appear onscreen, and use [`viewWillDisappear(_:)`](./uiviewcontroller/viewwilldisappear%28_%29.md) to save changes or other state information. Use other methods to make appropriate changes.
 
@@ -81,7 +81,7 @@ The following image shows the possible visible states for a view controller’s 
 
 ![A diagram of four spheres arranged in a circle. The sphere on the right is labeled Appearing and has a clockwise arrow leading to the bottom sphere, which is labeled Appeared. A small dot on the arrow is labeled viewDidAppear. A clockwise arrow leads from the bottom sphere to the left sphere, which is labeled Disappearing. A small dot along the arrow is labeled viewWillDisappear. A clockwise arrow leads from the left sphere to the top sphere, which is labeled Disappeared. Two small dots along the arrow are labeled viewDidDisappear and View removed. A clockwise arrow leads from the top sphere to the right sphere. Three small dots along the arrow are labeled viewWillAppear, View added, and viewIsAppearing.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-1965800@2x.png)
 
-###### Handle view rotations
+##### Handle view rotations
 
 As of iOS 8, all rotation-related methods are deprecated. Instead, rotations are treated as a change in the size of the view controller’s view and are therefore reported using the [`viewWillTransition(to:with:)`](./uicontentcontainer/viewwilltransition%28to,with%29.md) method. When the interface orientation changes, UIKit calls this method on the window’s root view controller. That view controller then notifies its child view controllers, propagating the message throughout the view controller hierarchy.
 
@@ -93,7 +93,7 @@ When a rotation occurs for a visible view controller, the [`willRotate(to:durati
 
 > **Note**:  At launch time, apps should always set up their interface in a portrait orientation. After the [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method returns, the app uses the view controller rotation mechanism described above to rotate the views to the appropriate orientation prior to showing the window.
 
-###### Implement a container view controller
+#### Implement a container view controller
 
 A custom [`UIViewController`](./uiviewcontroller.md) subclass can also act as a container view controller. A container view controller manages the presentation of content of other view controllers it owns, also known as its child view controllers. A child’s view can be presented as-is or in conjunction with views owned by the container view controller.
 
@@ -112,11 +112,11 @@ Here are the essential methods you might need to call:
 >
 > By default, rotation and appearance callbacks are automatically forwarded to children. You may optionally override the [`shouldAutomaticallyForwardRotationMethods()`](./uiviewcontroller/shouldautomaticallyforwardrotationmethods%28%29.md) and [`shouldAutomaticallyForwardAppearanceMethods`](./uiviewcontroller/shouldautomaticallyforwardappearancemethods.md) methods to take control of this behavior yourself.
 
-###### Manage memory
+#### Manage memory
 
 Memory is a critical resource in iOS, and view controllers provide built-in support for reducing their memory footprint at critical times. The [`UIViewController`](./uiviewcontroller.md) class provides some automatic handling of low-memory conditions through its [`didReceiveMemoryWarning()`](./uiviewcontroller/didreceivememorywarning%28%29.md) method, which releases unneeded memory.
 
-###### Support state preservation and restoration
+#### Support state preservation and restoration
 
 If you assign a value to the view controller’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property, the system may ask the view controller to encode itself when the app transitions to the background. When preserved, a view controller preserves the state of any views in its view hierarchy that also have restoration identifiers. View controllers don’t automatically save any other state. If you’re implementing a custom container view controller, you must encode any child view controllers yourself. Each child you encode must have a unique restoration identifier.
 

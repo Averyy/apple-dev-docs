@@ -24,7 +24,7 @@ class HKWorkoutConfiguration
 @interface HKWorkoutConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 As with many HealthKit classes, don’t subclass the [`HKWorkoutConfiguration`](./hkworkoutconfiguration.md) class.
 

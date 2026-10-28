@@ -23,7 +23,7 @@ var isVideoStabilizationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVideoStabilizationSupported) BOOL videoStabilizationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If the format supports video stabilization, you can enable it on an [`AVCaptureConnection`](../../avcaptureconnection.md) instance.
 

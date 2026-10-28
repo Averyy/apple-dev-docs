@@ -22,7 +22,7 @@ The configurations that describe how to manage the persisted data for specific g
 var configurations: Set<ModelConfiguration> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access or update the configurations that the container uses to manage model data. The default value is the set of configurations you specified when calling one of the container’s initializers.
 

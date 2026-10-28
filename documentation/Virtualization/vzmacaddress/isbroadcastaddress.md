@@ -19,7 +19,7 @@ var isBroadcastAddress: Bool { get }
 @property (readonly, getter=isBroadcastAddress) BOOL isBroadcastAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the address is a broadcast address, or [`false`](../../Swift/false.md) if it isn’t.
 

@@ -20,7 +20,7 @@ Encodes a producer barrier on work committed to the same command queue.
 - (void) barrierAfterStages:(MTLStages) afterStages beforeQueueStages:(MTLStages) beforeQueueStages visibilityOptions:(MTL4VisibilityOptions) visibilityOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This method encodes a barrier that guarantees that any work you encode using *subsequent command encoders*, corresponding to `beforeQueueStages`, don’t begin until all commands you previously encode in the current encoder (and prior encoders), corresponding to `afterStages`, complete.
 

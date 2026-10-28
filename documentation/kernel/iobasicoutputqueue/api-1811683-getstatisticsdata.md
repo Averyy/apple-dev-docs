@@ -11,7 +11,7 @@ Returns an IONetworkData object containing statistics counters updated by the qu
 virtual IONetworkData * getStatisticsData() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IONetworkData object.
 

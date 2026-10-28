@@ -24,7 +24,7 @@ case specular
 MDLMaterialSemanticSpecular
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `Ks` and `map_Ks` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

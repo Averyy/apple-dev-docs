@@ -24,11 +24,11 @@ init(mtlTexture texture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)
 - (instancetype) initWithMTLTexture:(id<MTLTexture>) texture commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a Metal buffer.
 
-#### Discussion
+## Discussion
 
 Rendering to a [`MTLTexture`](../../Metal/mtltexture.md)-backed [`CIRenderDestination`](../cirenderdestination.md) is supported by only [`MTLTexture`](../../Metal/mtltexture.md)-backed [`CIContext`](../cicontext.md) objects.  The texture must have [`MTLTextureType`](../../Metal/mtltexturetype.md) of [`MTLTextureType.type2D`](../../Metal/mtltexturetype/type2d.md).
 

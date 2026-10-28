@@ -24,7 +24,7 @@ protocol VNRequestRevisionProviding
 @protocol VNRequestRevisionProviding
 ```
 
-#### Overview
+## Overview
 
 Subclasses of [`VNRequest`](./vnrequest.md) should adopt this protocol to specify which revision of an algorithm the Vision framework uses to generate requests.
 

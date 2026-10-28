@@ -16,11 +16,11 @@ Sets callback to be used when the queue transitions to non-empty.
 IOReturn (*setValueAvailableCallback)(void *self, IOHIDCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 In order to make use of asynchronous behavior, the event source obtained using getAsyncEventSource must be added to a run loop.
 

@@ -26,7 +26,7 @@ var resolvedEndpoint: NWEndpoint? { get }
 @property (nonatomic, readonly, nullable) NWEndpoint * resolvedEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value Observing (KVO) to watch this property.
 

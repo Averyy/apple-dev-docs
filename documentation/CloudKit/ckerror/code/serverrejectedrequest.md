@@ -25,7 +25,7 @@ case serverRejectedRequest
 CKErrorServerRejectedRequest
 ```
 
-#### Discussion
+## Discussion
 
 This error is nonrecoverable.
 

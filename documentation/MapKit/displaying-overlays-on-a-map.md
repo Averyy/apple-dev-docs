@@ -12,11 +12,11 @@ Add regions of layered content to a map view.
 - Mac Catalyst 16.1+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Overlays offer a way to layer content over regions of a map and have that content scale with the map. This sample code project demonstrates how to draw common shapes, how to perform custom drawing outside of a common shape, and how to use map tiles from additional data sources.
 
-##### Define overlays with geographic coordinates
+### Define overlays with geographic coordinates
 
 Overlays are data objects that represent geographic information. Most overlays use geographic coordinates to create contiguous or noncontiguous sets of lines, rectangles, circles, and other shapes. For example, this sample app defines a rectangular area enclosing San Francisco as an array of [`CLLocationCoordinate2D`](../CoreLocation/cllocationcoordinate2d.md) coordinates.
 
@@ -43,7 +43,7 @@ Because MapKit defines overlays using a protocol, any class in an app can be an 
 
 An overlay contains two key properties, a [`coordinate`](./mkoverlay/coordinate.md) that defines the center point of the overlay, and the [`boundingMapRect`](./mkoverlay/boundingmaprect.md) that the system expresses as an [`MKMapRect`](./mkmaprect.md) that completely encompasses the overlay’s content. When the app uses system-provided overlay objects, the system automatically computes the values of these properties. When defining a custom overlay object, the class needs to implement these properties and return appropriate values, as the `PeakGroundAccelerationGrid` class in this app demonstrates.
 
-##### Load overlay data using GeoJSON
+### Load overlay data using GeoJSON
 
 [GeoJSON](https://tools.ietf.org/html/rfc7946) is a standards-based data format for representing geographic data, and apps often receive overlay data from a server in GeoJSON format. Rather than connect to a server, this app uses a local GeoJSON file containing `MultiPolygon` features into an `MKMultiPolygon` by using [`MKGeoJSONDecoder`](./mkgeojsondecoder.md).
 
@@ -93,7 +93,7 @@ private func parse(_ jsonObjects: [MKGeoJSONObject]) {
 }
 ```
 
-##### Display overlays on a map view
+### Display overlays on a map view
 
 The app adds the overlay data objects to the map in a specific order to ensure that certain overlays display on top of others. To specify whether an overlay is above or below content that the map provides, such as roads and labels, the app calls [`addOverlay(_:level:)`](./mkmapview/addoverlay%28_,level%29.md) with the `level` parameter as a value that [`MKOverlayLevel`](./mkoverlaylevel.md) provides.
 
@@ -134,7 +134,7 @@ After the app creates the renderer and returns it from `mapView(_:rendererFor:)`
 
 The [`overlays`](./mkmapview/overlays.md) property of [`MKMapView`](./mkmapview.md) stores the registered overlays, but the order of the array doesn’t necessarily reflect their visual order on the map. To understand the rendering order of overlays at a specific level, see [`overlays(in:)`](./mkmapview/overlays%28in%29.md).
 
-##### Use the standard overlay objects for common shapes
+### Use the standard overlay objects for common shapes
 
 The app highlights specific map regions with basic shapes by using the standard overlay classes, including [`MKCircle`](./mkcircle.md), [`MKPolyline`](./mkpolyline.md), and [`MKPolygon`](./mkpolygon.md). For example, it creates a circle overlay using `MKCircle` with a center coordinate and a radius specified in meters to highlight San Francisco.
 
@@ -164,7 +164,7 @@ func createCircleRenderer(for circle: MKCircle) -> MKCircleRenderer {
 
 When the app uses the provided renderer classes for common shapes, MapKit vectorizes overlay shapes so that they always remain sharp while the map scales. The app doesn’t change the default value of the [`shouldRasterize`](./mkoverlaypathrenderer/shouldrasterize.md) property, so the standard overlay shapes always remain sharp. Subclassing any of the provided renderer objects and providing a custom implementation of ``MKOverlayRenderer/draw(_:zoomScale:in:)`, like the `PeakGroundAccelerationOverlayRenderer` class, automatically enables rasterized rendering.
 
-##### Set drawing properties to customize the overlay rendering
+### Set drawing properties to customize the overlay rendering
 
 The standard overlay renderers allow customization of common drawing properties for the fill and edges. For example, the app displays an `MKPolyline` overlay using dashes instead of a solid line, and sets a customized dash pattern using the [`lineDashPattern`](./mkoverlaypathrenderer/linedashpattern.md) property of an [`MKPolylineRenderer`](./mkpolylinerenderer.md).
 
@@ -217,7 +217,7 @@ func createGradientPolylineRenderer(for line: MKPolyline) -> MKGradientPolylineR
 }
 ```
 
-##### Render multiple overlays with the same style efficiently
+### Render multiple overlays with the same style efficiently
 
 It’s common to have multiple related overlays appear on the map with an identical visual style. For example, the app displays a map of an outdoor event that uses multiple overlays to show where the stage is located in relation to different event booths. Because the app shows each of these overlays using the same color scheme, it groups the individual overlay objects together using an [`MKMultiPolygon`](./mkmultipolygon.md) object.
 
@@ -236,7 +236,7 @@ func createMultiPolylineRenderer(for multiPolygon: MKMultiPolygon) -> MKMultiPol
 
 > **Note**: To maximize rendering efficiency, developers need to group overlays using `MKMultiPolyline` or `MKMultiPolygon` whenever the visual style is the same. This is especially important when an app displays significant numbers of visually identical overlays.
 
-##### Create visual effects using blend modes
+### Create visual effects using blend modes
 
 *Blend modes* relate the content that draws in an overlay to the content that draws behind the overlay. This enables creating visual effects on the map by adding overlays with a specific Z-order and applying a blend mode on the different overlays. For example, the app highlights a park hosting an outdoor event by using blend modes to lighten the map areas outside the park and to amplify the colors within the park.
 
@@ -277,7 +277,7 @@ func createBlendModesPolygonRenderer(for overlay: MKPolygon) -> MKPolygonRendere
 
 For further information on blend modes, see “Setting Blend Modes” and “Using Blend Modes with Images” in [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
 
-##### Define a custom overlay renderer
+### Define a custom overlay renderer
 
 To draw complex overlays that go beyond drawing boundaries and filling standard overlay shapes, this sample code project creates a custom overlay renderer. The app contains data related to earthquake hazards, and defines a custom `MKOverlay` to represent that hazard data. It also defines a custom overlay renderer to draw a color-coded, shaded map of hazards based on the data.
 
@@ -305,7 +305,7 @@ let point1Conversion = point(for: coord1.mapPoint)
 
 MapKit also provides [`mapRect(for:)`](./mkoverlayrenderer/maprect%28for%29.md) for converting rectangles between MapKit geometry and Core Graphics geometry. When implementing a custom renderer, the app doesn’t use the `bounds` or `frame` of the `MKMapView` as reference points during drawing.
 
-##### Load custom map tiles
+### Load custom map tiles
 
 MapKit supports using custom bitmap map tiles to provide an underlying map that’s customizable. For example, this app displays map tiles that emphasize rivers and mountains.
 
@@ -324,7 +324,7 @@ When the app loads tiles from a server, it also does so with a URL template, rep
 
 The `CustomLoadingTileOverlay` class in this sample code project implements [`loadTile(at:result:)`](./mktileoverlay/loadtile%28at,result%29.md) to show how to customize tile-loading behavior for specialized loading needs.
 
-##### Use an overlay as an annotation
+### Use an overlay as an annotation
 
 The `MKOverlay` protocol conforms to the [`MKAnnotation`](./mkannotation.md) protocol. As a result, all overlay objects are also annotation objects. When adding an overlay as an annotation to the map, `MKMapView` displays it at the overlay’s `coordinate` property. For example, the app uses a polygon outlining the park for an outdoor concert as an annotation to label the concert location.
 

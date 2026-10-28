@@ -13,11 +13,11 @@ SCSIParallelFeatureRequest GetSCSIParallelFeatureNegotiation (
  SCSIParallelFeature requestedFeature );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIParallelFeatureControl.
 
-#### Overview
+## Overview
 
 Query as to whether the SCSI Parallel Device object has negotiated wide data transfers.
 

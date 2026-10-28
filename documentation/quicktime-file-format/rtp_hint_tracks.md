@@ -5,7 +5,7 @@
 
 Allow a streaming server to create RTP streams from a QuickTime movie.
 
-#### Overview
+## Overview
 
 RTP hint tracks contain information that allows a streaming server to create RTP streams from a QuickTime movie, without requiring the server to know anything about the media type, compression, or payload format.
 

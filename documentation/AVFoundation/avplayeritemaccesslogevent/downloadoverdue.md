@@ -25,7 +25,7 @@ var downloadOverdue: Int { get }
 @property (nonatomic, readonly) NSInteger downloadOverdue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

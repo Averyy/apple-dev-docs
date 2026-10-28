@@ -32,7 +32,7 @@ var componentName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * componentName;
 ```
 
-#### Discussion
+## Discussion
 
 By convention, an audio unit’s component name is “[`manufacturerName`](./manufacturername.md): [`audioUnitName`](./audiounitname.md)”.
 

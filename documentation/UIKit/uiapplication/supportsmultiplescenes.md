@@ -23,7 +23,7 @@ var supportsMultipleScenes: Bool { get }
 @property (nonatomic, readonly) BOOL supportsMultipleScenes;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit sets this property to [`true`](../../Swift/true.md) when the system allows the app to display multiple scenes and the app’s `Info.plist` file includes the [`UIApplicationSupportsMultipleScenes`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md) key with a value of [`true`](../../Swift/true.md). If either of those conditions isn’t true, the value of this property is [`false`](../../Swift/false.md).
 

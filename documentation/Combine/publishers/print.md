@@ -21,7 +21,7 @@ A publisher that prints log messages for all publishing events, optionally prefi
 struct Print<Upstream> where Upstream : Publisher
 ```
 
-#### Overview
+## Overview
 
 This publisher prints log messages when receiving the following events:
 

@@ -21,7 +21,7 @@ An interface for providing an app intent that you use to adapt your app’s beha
 protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 ```
 
-#### Overview
+## Overview
 
 > **Related sessions from WWDC22**:  Session 10121: [Meet Focus filters](https://developer.apple.com/videos/play/wwdc2022/10121).
 

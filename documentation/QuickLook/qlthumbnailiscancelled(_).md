@@ -21,7 +21,7 @@ func QLThumbnailIsCancelled(_ thumbnail: QLThumbnail!) -> Bool
 extern Boolean QLThumbnailIsCancelled(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 A `Boolean` value that indicates whether the creation of the thumbnail was canceled.
 

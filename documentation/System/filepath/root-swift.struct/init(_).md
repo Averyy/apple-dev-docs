@@ -21,7 +21,7 @@ Create a file path root from a string.
 init?(_ string: String)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `string` is empty or is not a root.
 

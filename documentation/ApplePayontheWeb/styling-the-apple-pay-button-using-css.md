@@ -5,7 +5,7 @@
 
 Choose a button color and size to suit your webpage.
 
-#### Overview
+## Overview
 
 You can experiment with styling and display of an Apple Pay button using the [Apple Pay on the Web Demo](https://applepaydemo.apple.com). To support devices running iOS 10 and macOS 10.12, use the CSS template sample code in [Displaying Apple Pay Buttons Using CSS](./displaying-apple-pay-buttons-using-css.md) to draw the appropriate button.
 
@@ -13,14 +13,14 @@ To display an Apple Pay button set the `-webkit-appearance` CSS property of the 
 
 See the [Human Interface Guidelines > Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for more information.
 
-##### Set the Button Size
+### Set the Button Size
 
 You can resize the Apple Pay button to fit your website. The minimum displayed width and height for Apple Pay buttons are:
 
 - For plain Apple Pay buttons the minimum displayed width is 100 points with a minimum displayed height of 30 points.
 - For Apple Pay buttons that include a directive, such as “Buy with Apple Pay” or “Donate with Apple Pay,” the minimum displayed width is 140 points with a minimum displayed height of 30 points.
 
-##### Set the Button Style
+### Set the Button Style
 
 You can choose from several style options for the Apple Pay button to match your web site. See [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for guidance on which style to choose.
 
@@ -38,7 +38,7 @@ lang=en></div>
 
 The color options for the `-apple-pay-button-style` CSS property are `white`, `white-outline`, or `black`.
 
-##### Set the Button’s Corner Radius
+### Set the Button’s Corner Radius
 
 You may configure the border radius of your Apple Pay button using the css `border-radius` property. The Apple Pay button supports a single `border-radius` value. If you set multiple `border-radius` properties, the largest value applies to all corners.
 

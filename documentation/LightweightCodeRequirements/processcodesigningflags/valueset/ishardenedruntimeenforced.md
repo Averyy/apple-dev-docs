@@ -21,7 +21,7 @@ Flag indicating that the process has enabled the Hardened Runtime
 static let isHardenedRuntimeEnforced: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This flag may be present on any on disk signature. This flag only has effect on main executables. This flag only has effect on macOS. On iOS/watchOS/tvOS/visionOS most of the same policies are enforced regardless of the state of this flag. This is equivalent to `CS_RUNTIME` in C APIs.
 

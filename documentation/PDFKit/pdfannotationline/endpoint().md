@@ -19,11 +19,11 @@ func endPoint() -> NSPoint
 - (NSPoint) endPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The ending point for the line, in page space.
 
-#### Discussion
+## Discussion
 
 Page space is a 72-dpi coordinate system with the origin at the lower-left corner of the current page.
 

@@ -24,7 +24,7 @@ class LayerHierarchyHandle
 
 - [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
 
-#### Overview
+## Overview
 
 By sharing a reference, or *handle*, to your app’s layer hierarchy between processes, you can coordinate layer updates across multiple processes. Get a handle from a [`LayerHierarchy`](./layerhierarchy.md) object, then share it with another process using one of the serialization methods.
 

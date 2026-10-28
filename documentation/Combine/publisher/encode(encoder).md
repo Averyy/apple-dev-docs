@@ -23,11 +23,11 @@ func encode<Coder>(encoder: Coder) -> Publishers.Encode<Self, Coder> where Coder
 
 Available when `Output` conforms to `Encodable`.
 
-#### Return Value
+## Return Value
 
 A publisher that encodes received elements using a specified encoder, and publishes the resulting data.
 
-#### Discussion
+## Discussion
 
 Use [`encode(encoder:)`](./encode%28encoder%29.md) with a [`JSONDecoder`](../../Foundation/jsondecoder.md) (or a [`PropertyListDecoder`](../../Foundation/propertylistdecoder.md) for property lists) to encode an [`Encodable`](../../Swift/encodable.md) struct into [`Data`](../../Foundation/data.md) that could be used to make a JSON string (or written to disk as a binary plist in the case of property lists).
 

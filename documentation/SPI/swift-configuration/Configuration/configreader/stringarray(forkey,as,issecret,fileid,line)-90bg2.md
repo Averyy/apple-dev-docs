@@ -24,11 +24,11 @@ Synchronously gets an array of config values for the given config key, convertin
 func stringArray<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) -> [Value]? where Value : RawRepresentable, Value.RawValue == String
 ```
 
-#### Return Value
+## Return Value
 
 An array of values converted to the expected type if found and convertible, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve configuration arrays where each element can be converted from strings. If the value doesn’t exist or can’t be converted to the expected type, the method returns `nil`.
 

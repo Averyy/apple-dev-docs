@@ -5,7 +5,7 @@
 
 Learn what’s new in the Apple Search Ads iAd Attribution API.
 
-#### Overview
+## Overview
 
 | **Release date** | **Release details** |
 | --- | --- |

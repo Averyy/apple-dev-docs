@@ -25,11 +25,11 @@ class func run(_ action: SKAction, onChildWithName name: String) -> SKAction
 + (SKAction *) runAction:(SKAction *) action onChildWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 Because this action references child nodes by name, it is especially handy for nodes that the scene subclass (or scene delegate) does not maintain a reference to, for example, child nodes that are defined in an `.sks` file.
 

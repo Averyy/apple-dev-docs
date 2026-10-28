@@ -24,7 +24,7 @@ enum Status
 enum AVAssetReaderStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You determine an asset reader’s status using its [`status`](./status-swift.property.md) property.
 

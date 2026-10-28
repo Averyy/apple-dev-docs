@@ -23,7 +23,7 @@ var primaryAccountIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * primaryAccountIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Users may have different passes installed on different paired devices (for example, on an iPhone and an Apple Watch). This property lets you filter out the devices that already contain a matching pass.
 

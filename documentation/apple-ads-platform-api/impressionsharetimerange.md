@@ -15,11 +15,11 @@ Time range for impression share queries.
 object ImpressionShareTimeRange
 ```
 
-#### Discussion
+## Discussion
 
 The `ImpressionShareTimeRange` object specifies the date window and granularity for an impression share report.
 
-##### Example
+### Example
 
 ```json
 {

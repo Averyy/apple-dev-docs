@@ -12,11 +12,11 @@ IOReturn ( *Close)(
    IOStreamRef stream );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully closed and the buffers unmapped.
 
-#### Overview
+## Overview
 
 Calling Close umaps all shared memory for the stream and frees all user resources used by the stream.
 

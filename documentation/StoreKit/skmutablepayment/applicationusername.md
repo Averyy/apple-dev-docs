@@ -33,7 +33,7 @@ var applicationUsername: String? { get set }
 - [Generating a signature for promotional offers](../generating-a-signature-for-promotional-offers.md)
 - [Restoring purchased products](../restoring-purchased-products.md)
 
-#### Discussion
+## Discussion
 
 Consider assigning a UUID to the [`applicationUsername`](./applicationusername.md) property. When this value is a UUID, the App Store server stores it as an [`appAccountToken`](../transaction/appaccounttoken.md). In this scenario, the following happens:
 

@@ -19,11 +19,11 @@ The declaration to configure a Calendar account.
 object AccountCalDAV
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.account.caldav` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.account.caldav` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a CalDAV account for calendars.
 

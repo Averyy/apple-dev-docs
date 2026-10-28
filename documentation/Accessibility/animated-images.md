@@ -5,7 +5,7 @@
 
 Pause animations in animated images in your app when people turn off the Animated Images setting.
 
-#### Overview
+## Overview
 
 People use the Animated Images setting to control whether to play animated images like GIFs on the web and in apps. By default, the setting is on, which allows animated images to play automatically. A person can turn off the setting to indicate that they want to pause animated images on their device.
 

@@ -20,7 +20,7 @@ class NSSetCommand
 @interface NSSetCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSSetCommand` sets one or more attributes or relationships to one or more values; for example, it may set the (x, y) coordinates for a window’s position or set the name of a document.
 

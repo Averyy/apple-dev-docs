@@ -19,7 +19,7 @@ func viewDidLoad()
 - (void) viewDidLoad;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSSplitViewController`](../nssplitviewcontroller.md) overrides this method from its parent class, [`NSViewController`](../nsviewcontroller.md). If you override this method in a subclass, you must call `super`.
 

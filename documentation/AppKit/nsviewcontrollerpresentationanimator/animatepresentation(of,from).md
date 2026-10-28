@@ -21,7 +21,7 @@ func animatePresentation(of viewController: NSViewController, from fromViewContr
 - (void) animatePresentationOfViewController:(NSViewController *) viewController fromViewController:(NSViewController *) fromViewController;
 ```
 
-#### Discussion
+## Discussion
 
 To add custom presentation animation, Implement it in this method.
 

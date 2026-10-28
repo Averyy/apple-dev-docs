@@ -21,7 +21,7 @@ case none
 MPMovieControlStyleNone
 ```
 
-#### Discussion
+## Discussion
 
 No controls are displayed.
 

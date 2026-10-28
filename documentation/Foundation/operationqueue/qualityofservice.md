@@ -25,7 +25,7 @@ var qualityOfService: QualityOfService { get set }
 @property NSQualityOfService qualityOfService;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the service level applied to operation objects added to the queue. If the operation object has an explicit service level set, that value is used instead. The default value of this property depends on how you created the queue. For queues you create yourself, the default value is `NSOperationQualityOfServiceBackground`. For the queue returned by the [`main`](./main.md) method, the default value is `NSOperationQualityOfServiceUserInteractive` and cannot be changed.
 

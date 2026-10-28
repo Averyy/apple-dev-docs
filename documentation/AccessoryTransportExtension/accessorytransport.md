@@ -15,7 +15,7 @@ Transport methods for communicating with an accessory.
 enum AccessoryTransport
 ```
 
-#### Overview
+## Overview
 
 The system selects the best available transport for each message by following this order: Bluetooth (if connected), local network (if available), then internet (if available).
 

@@ -5,37 +5,37 @@
 
 Offer introductory pricing for auto-renewable subscriptions to eligible users.
 
-#### Overview
+## Overview
 
 Apps with auto-renewable subscriptions can offer a discounted introductory price, including a free trial, to eligible users. You can make introductory offers to customers who haven’t previously received an introductory offer for the given product, or for any products in the same subscription group.
 
 Start by setting up introductory offers in App Store Connect. Then, in your app, determine if the user is eligible to receive an introductory offer. When the app queries the App Store for a list of available products, display the introductory pricing if the user is eligible to receive them.
 
-##### Set Up Introductory Offers
+### Set Up Introductory Offers
 
 Before you can display introductory offers in your app, you must first configure the offers in App Store Connect. For more information, see [Set an introductory offer for an auto-renewable subscription](https://help.apple.com/app-store-connect/#/deve1d49254f).
 
 Choose from one of three types of introductory offers, which differ in their mode of payment. All subscriptions renew at the regular price when the introductory period is over. The offer types are “pay as you go”, “pay up front”, and “free trial”.
 
-###### Pay As You Go
+#### Pay As You Go
 
 The [`SKProductDiscount.PaymentMode.payAsYouGo`](./skproductdiscount/paymentmode-swift.enum/payasyougo.md) value represents the pay as you go offer type. In this introductory offer, new subscribers pay an introductory price each billing period for a specific duration (for example, $1.99 per month for 3 months).
 
 ![Pay as you go timeline](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3149470@2x.png)
 
-###### Pay Up Front
+#### Pay Up Front
 
 The [`SKProductDiscount.PaymentMode.payUpFront`](./skproductdiscount/paymentmode-swift.enum/payupfront.md) value represents the pay up front offer type. In this introductory offer, new subscribers pay a one-time introductory price for a specific duration (for example, $1.99 for 2 months).
 
 ![Pay up front timeline](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3149471@2x.png)
 
-###### Free Trial
+#### Free Trial
 
 The [`SKProductDiscount.PaymentMode.freeTrial`](./skproductdiscount/paymentmode-swift.enum/freetrial.md) value represents a free trial offer type. In this introductory offer, new subscribers access content for free for a specified duration. Subscriptions begin immediately, but subscribers won’t be billed until the free trial period is over.
 
 ![Free trial timeline](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3174516@2x.png)
 
-##### Determine Eligibility
+### Determine Eligibility
 
 To determine if a user is eligible for an introductory offer, check their receipt:
 
@@ -53,7 +53,7 @@ Based on the receipt, you will find that new and returning customers are eligibl
 
 Existing subscribers are not eligible for an introductory offer for any product within the same subscription group. For example, customers are not eligible if they are upgrading, downgrading, or crossgrading their subscription from another product, regardless of whether they consumed an introductory offer in the past.
 
-##### Display the Introductory Offer
+### Display the Introductory Offer
 
 Once you determine the user is eligible for an introductory offer, query the App Store for available products, and present the offer to the user:
 

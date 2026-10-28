@@ -4,7 +4,7 @@
 
 Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 
-#### Overview
+## Overview
 
 Video captured on the iPhone 8, iPhone 8 Plus, and iPhone X running iOS 11 or later uses the HEVC codec by default. If your app shares the captured video using a system share sheet, the video will be automatically converted to a format compatible with the destination device.
 
@@ -12,7 +12,7 @@ AVFoundation supports many ways to capture photos. You can simply capture still 
 
 > **Note**:  For macOS, see [`AVCaptureStillImageOutput`](./avcapturestillimageoutput.md) instead.
 
-##### Prepare for photo capture
+### Prepare for photo capture
 
 First, set up an [`AVCaptureSession`](./avcapturesession.md) containing a supported camera device as one of its inputs and an [`AVCapturePhotoOutput`](./avcapturephotooutput.md) as one of its outputs. (For details, see [Choosing a capture device](./choosing-a-capture-device.md) and [Setting up a capture session](./setting-up-a-capture-session.md).) Each camera device supports a wide range of resolution and frame rate settings. To easily get the best photo quality for the user’s device, you can use the [`photo`](./avcapturesession/preset/photo.md) session preset instead of directly choosing individual settings.
 
@@ -37,7 +37,7 @@ self.captureSession.commitConfiguration()
 self.captureSession.startRunning()
 ```
 
-##### Choose settings
+### Choose settings
 
 To capture a photo, first create an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object describing the settings you want to use for that shot and the data format for the resulting still photo. For example:
 
@@ -62,13 +62,13 @@ photoSettings.isAutoStillImageStabilizationEnabled =
 
 Other possible photo settings include Live Photos, depth data capture, and multi-image (bracketed) capture, as well as options for embedding preview or thumbnail images in output image files. For more information, see Next Steps and More Capture Options below.
 
-##### Capture the photo
+### Capture the photo
 
 Pass your photo settings object to the [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method to trigger photo capture with the settings you’ve chosen.
 
 > ❗ **Important**:  Calling [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) is analogous to pressing a camera’s shutter button—each call starts a new photo capture. Each call requires a unique [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object with the settings for that capture. To reuse settings for multiple captures, see [`init(from:)`](./avcapturephotosettings/init%28from%29.md).
 
-##### Handle capture results
+### Handle capture results
 
 The `delegate` you pass to the [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method is an object to track the progress of and handle results from that photo capture. Capturing a photo is an asynchronous process with multiple steps that unfold over time. Because your app can trigger additional captures while earlier captures are still processing, your delegate implementation should be able to handle multiple captures at once. An easy way to handle concurrent captures is to define a class adopting the [`AVCapturePhotoCaptureDelegate`](./avcapturephotocapturedelegate.md) protocol and create a separate instance of that class for each capture:
 

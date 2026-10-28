@@ -19,11 +19,11 @@
 static SPRotationAxis3D SPRotationAxis3DMakeWithPackedVector(simd_packed_double4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial 3D rotation axis from a packed simd vector.
 

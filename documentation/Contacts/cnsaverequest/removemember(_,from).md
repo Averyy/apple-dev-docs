@@ -23,7 +23,7 @@ func removeMember(_ contact: CNContact, from group: CNGroup)
 - (void) removeMember:(CNContact *) contact fromGroup:(CNGroup *) group;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the contact from the group, but does not delete it from the contact store. This method overrides any previously made add membership request on the contact to the group.
 

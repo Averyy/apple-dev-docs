@@ -9,7 +9,7 @@
 IOWorkLoop *workLoop;
 ```
 
-#### Overview
+## Overview
 
 The IOWorkLoop for the audio driver - shared from the IOAudioDevice.
 

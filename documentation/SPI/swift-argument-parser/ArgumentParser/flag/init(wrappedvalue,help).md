@@ -17,7 +17,7 @@ Creates an array property that gets its values from the presence of zero or more
 init<Element>(wrappedValue: [Element], help: ArgumentHelp? = nil) where Value == [Element], Element : EnumerableFlag
 ```
 
-#### Discussion
+## Discussion
 
 This property has an empty array as its default value.
 

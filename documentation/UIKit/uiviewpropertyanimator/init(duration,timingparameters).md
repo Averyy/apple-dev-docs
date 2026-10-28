@@ -23,11 +23,11 @@ init(duration: TimeInterval, timingParameters parameters: any UITimingCurveProvi
 - (instancetype) initWithDuration:(NSTimeInterval) duration timingParameters:(id<UITimingCurveProvider>) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized animator object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize the animator with a custom timing curve. After initializing the animator, you must add one or more animation blocks before calling starting the animations.
 

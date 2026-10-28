@@ -5,13 +5,13 @@
 
 Integrate package dependencies to share code between projects, or leverage code from other developers.
 
-#### Overview
+## Overview
 
 Xcode comes with built-in support for source control accounts and makes it easy to leverage available Swift packages. Use Xcode to manage the versions of package dependencies and make sure your project has the most up-to-date code changes.
 
 > **Note**: A package author can publish their Swift package to either public or private repositories. Xcode supports both private and publicly available packages.
 
-##### Add a package dependency
+### Add a package dependency
 
 To add a package dependency to your Xcode project, select File > Add Package Dependency and enter its source control repository URL. You can also navigate to your target’s General pane, and in the “Frameworks, Libraries, and Embedded Content” section, click the + button, select Add Other, and choose Add Package Dependency.
 
@@ -29,7 +29,7 @@ If you’ve added a source control account in Xcode’s settings and you haven�
 
 > ❗ **Important**: Only add package dependencies by trustworthy authors. In addition, adding a binary dependency comes with drawbacks over adding a source-based dependency. See [Identifying binary dependencies](./identifying-binary-dependencies.md) to learn more.
 
-##### Decide on package requirements
+### Decide on package requirements
 
 When you enter the package dependency’s URL or pick a Swift package from the list of packages, choose one of three *package requirements*. Package requirements determine the allowed versions of the package dependency in your project, and Xcode updates your package dependency based on the requirement that you choose.
 
@@ -43,7 +43,7 @@ In Xcode’s Project navigator, the Swift Package Dependencies section shows the
 
 > 💡 **Tip**: Although Xcode updates your package dependencies and resolves package versions automatically, you can trigger both actions from the File > Packages menu.
 
-##### Use features and assets provided by a Swift package
+### Use features and assets provided by a Swift package
 
 To use a Swift package’s functionality in your app, import a package’s product as a Swift module. The following code snippet shows a view controller that imports a Swift package’s `MyLibrary` module and uses the package’s functionality:
 
@@ -82,17 +82,17 @@ class ViewController: UIViewController {
 }
 ```
 
-##### Edit a package dependency
+### Edit a package dependency
 
 You can’t edit the content of your package dependencies directly. If you want to make changes to a package dependency, you need to add it as a *local package* to your project. See [Editing a package dependency as a local package](./editing-a-package-dependency-as-a-local-package.md) to learn how you can override a package dependency with a local package and make edits.
 
-##### Coordinate package versions across your team
+### Coordinate package versions across your team
 
 When collaborating on a project, make sure everyone uses the same version of a package dependency. When you add a package dependency to a project, Xcode creates the `Package.resolved` file. It lists the specific Git commits to which each package dependency resolves and the [`checksum`](../PackageDescription/target/checksum.md) of each binary dependency. Commit this file in Git to ensure that everyone is using the same version of a package dependency.
 
 > 💡 **Tip**: You can find the `Package.resolved` file inside your .`xcodeproj` directory at *[appName]*`.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
-##### Delete a package dependency
+### Delete a package dependency
 
 To remove a package dependency from your Xcode project:
 

@@ -26,7 +26,7 @@ var isAppleProRAWEnabled: Bool { get set }
 
 - [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
-#### Discussion
+## Discussion
 
 If [`isAppleProRAWSupported`](./isappleprorawsupported.md) returns [`true`](../../Swift/true.md), you can enable Apple ProRAW capture by setting this property to [`true`](../../Swift/true.md). Compared to photos taken in Bayer RAW format, the system demosaics and partially processes Apple ProRAW photos. They’re still scene-referred, however, and allow capturing RAW photos in modes that don’t have a traditional Bayer RAW format available, such as modes that rely on fusing multiple captures.
 

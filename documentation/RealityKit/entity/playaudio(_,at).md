@@ -21,11 +21,11 @@ Asynchronously prepares and plays a new audio playback instance at a specified t
 @preconcurrency func playAudio(_ resource: AudioResource, at time: AVAudioTime) throws -> AudioPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An `AudioPlaybackController` object that you can use to start and stop audio playback for this specific instance of a resource playing on this entity. You can also use this controller to update playback properties, such as gain and speed, during playback.
 
-#### Discussion
+## Discussion
 
 Use this method to schedule playback of a sound source to a precise time in the future. This method enables sample-accurate timing for individual sounds and synchronization of multiple audio sources. The method prepares the audio by calling `prepareAudio(_:)`, and then immediately calls the `play(at: time)` method of the controller that it returns. Any call to play() will cancel pending scheduled time and play audio immediately, while any call to `playAudio(at: time)` will cancel current scheduled time and schedule for new time.
 

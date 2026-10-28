@@ -23,7 +23,7 @@ var contextMenuInteraction: UIContextMenuInteraction? { get }
 @property (nonatomic, strong, readonly, nullable) UIContextMenuInteraction * contextMenuInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a [`UIContextMenuInteraction`](../uicontextmenuinteraction.md) with the control set as its delegate. Before constructing the context menu interaction, the control verifies that it can serve as a viable delegate.
 

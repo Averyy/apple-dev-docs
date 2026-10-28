@@ -15,7 +15,7 @@ The extent of the detected barcode’s bounds.
 var extent: SIMD3<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The width of the detected barcode is the length along the X-axis, prior to rotation about the Y-axis.
 

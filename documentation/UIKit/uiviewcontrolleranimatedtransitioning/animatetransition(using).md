@@ -24,7 +24,7 @@ func animateTransition(using transitionContext: any UIViewControllerContextTrans
 - (void) animateTransition:(id<UIViewControllerContextTransitioning>) transitionContext;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when presenting or dismissing a view controller. Use this method to configure the animations associated with your custom transition. You can use view-based animations or Core Animation to configure your animations.
 

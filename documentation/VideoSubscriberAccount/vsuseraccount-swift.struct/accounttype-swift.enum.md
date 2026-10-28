@@ -19,7 +19,7 @@ Constants that represent whether a user has access to paid content.
 enum AccountType
 ```
 
-#### Overview
+## Overview
 
 The default is [`VSUserAccount.AccountType.free`](./accounttype-swift.enum/free.md).
 

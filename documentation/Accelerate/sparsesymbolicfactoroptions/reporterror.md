@@ -29,7 +29,7 @@ void (*)(const char *) reportError;
 
 - [Solving systems using direct methods](../solving-systems-using-direct-methods.md)
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, the system reports errors using [`os_log_error`](../../os/os_log_error.md) and then `__builtin_trap()`.
 

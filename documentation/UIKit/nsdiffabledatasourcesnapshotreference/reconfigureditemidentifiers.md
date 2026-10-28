@@ -23,7 +23,7 @@ var reconfiguredItemIdentifiers: [Any] { get }
 @property (nonatomic, readonly) NSArray<id> * reconfiguredItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 After you make updates to the snapshot, this method returns an array of identifiers corresponding to the items that the view reconfigures when you apply the snapshot to your data source.
 

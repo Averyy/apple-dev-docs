@@ -22,11 +22,11 @@ Calls the given closure with a pointer to the underlying bytes of the type’s c
 func withUnsafeBytes<R>(_ body: (UnsafeRawBufferPointer) throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 The following example copies the bytes from a string encoded using `utf8` into a buffer of `UInt8`:
 

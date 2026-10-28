@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withUnsafeThrowingContinuation<T>(_ fn: (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T
+nonisolated(nonsending)
+func withUnsafeThrowingContinuation<T>(_ fn: (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T
 ```
 
 ## See Also

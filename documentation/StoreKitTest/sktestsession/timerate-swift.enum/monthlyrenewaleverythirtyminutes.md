@@ -25,7 +25,7 @@ case monthlyRenewalEveryThirtyMinutes
 SKTestTimeRateMonthlyRenewalEveryThirtyMinutes
 ```
 
-#### Discussion
+## Discussion
 
 The following table shows how this time rate affects subscriptions with various renewal periods in the testing environment:
 

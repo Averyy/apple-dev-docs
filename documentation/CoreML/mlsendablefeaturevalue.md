@@ -21,7 +21,7 @@ A sendable feature value.
 struct MLSendableFeatureValue
 ```
 
-#### Overview
+## Overview
 
 This version of feature value is similar to [`MLFeatureValue`](./mlfeaturevalue.md) but it can be passed across concurrency domains. Once in the target concurrency domain, you can then convert it to a [`MLFeatureValue`](./mlfeaturevalue.md).
 

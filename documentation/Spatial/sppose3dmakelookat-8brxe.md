@@ -19,11 +19,11 @@
 static SPPose3D SPPose3DMakeLookAt(SPPoint3D target, SPVector3D up);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose at the origin with the rotation towards the target.
 

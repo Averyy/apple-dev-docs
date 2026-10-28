@@ -19,7 +19,7 @@ func willActivate(withUser inUserInformation: [AnyHashable : Any]!)
 - (void) willActivateWithUser:(NSDictionary *) inUserInformation;
 ```
 
-#### Discussion
+## Discussion
 
 Your [`SFAuthorizationPluginView`](../sfauthorizationpluginview.md) instance can use the user name to pre-populate a text field in the user interface.
 

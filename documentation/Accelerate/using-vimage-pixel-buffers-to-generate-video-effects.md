@@ -10,7 +10,7 @@ Render real-time video effects with the vImage Pixel Buffer.
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 ![A photograph of flowers.](https://developer.apple.com/tutorials/images/com.apple.accelerate/passThrough.png)
 
@@ -18,7 +18,7 @@ This sample code project captures video from a macOS device’s camera and appli
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results the app generates from the camera.
 
-##### Create the any-to-any converter
+### Create the any-to-any converter
 
 The code creates a [`vImageConverter`](./vimageconverter.md) instance that converts the YpCbCr video frames to three-channel, 32-bit-per-channel, floating-point interleaved image data.
 
@@ -51,7 +51,7 @@ lazy var converter: vImageConverter = {
 }()
 ```
 
-##### Convert a Core Video pixel buffer to RGB
+### Convert a Core Video pixel buffer to RGB
 
 The code defines `destinationBuffer` as a [`vImage.InterleavedFx3`](./vimage/interleavedfx3.md) pixel buffer. The conversion function creates a [`vImage.DynamicPixelFormat`](./vimage/dynamicpixelformat.md) source buffer that references the locked [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instance and passes that to the any-to-any converter.
 
@@ -75,7 +75,7 @@ func populateDestinationBuffer(pixelBuffer: CVPixelBuffer) {
 
 On return, `destinationBuffer` contains the RGB representation of the YpCbCr video frame.
 
-##### Apply the noise effect
+### Apply the noise effect
 
 The sample simulates noise or film grain by adding Gaussian noise (with a mean of zero) to each frame. The image below shows an example of the noise effect:
 
@@ -120,7 +120,7 @@ func applyNoise() {
 }
 ```
 
-##### Apply the temporal blur effect
+### Apply the temporal blur effect
 
 The temporal blur effect blurs the image over time by calculating a weighted average of the current frame and previous frames. The effect is analogous to an exaggerated motion blur.
 
@@ -146,7 +146,7 @@ func applyTemporalBlur() {
 }
 ```
 
-##### Apply the posterization effect
+### Apply the posterization effect
 
 The posterization effect reduces the continuous colors of an image to fewer tones. The effect produces results with regions of solid colors. The image below shows an example of the posterization effect:
 
@@ -176,7 +176,7 @@ func applyPosterization() {
 }
 ```
 
-##### Apply the color threshold effect
+### Apply the color threshold effect
 
 The color threshold effect is similar to the posterization effect, but reduces each color channel to a single-bit, so each color is either `0` or `1`. The image below shows the color threshold effect:
 

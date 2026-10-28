@@ -20,7 +20,7 @@ Returns a directional edge insets structure based on data in the specified strin
 class func nsDirectionalEdgeInsets(for string: String) -> NSDirectionalEdgeInsets
 ```
 
-#### Return Value
+## Return Value
 
 A directional edge insets data structure. If the string is not well-formed, the function returns [`NSDirectionalEdgeInsetsZero`](../../AppKit/nsdirectionaledgeinsetszero.md).
 

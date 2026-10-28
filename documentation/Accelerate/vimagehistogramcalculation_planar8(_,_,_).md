@@ -25,11 +25,11 @@ func vImageHistogramCalculation_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ h
 vImage_Error vImageHistogramCalculation_Planar8(const vImage_Buffer *src, vImagePixelCount *histogram, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code populates the `histogram` array with the histogram of the specified [`vImage_Buffer`](./vimage_buffer.md) structure:
 

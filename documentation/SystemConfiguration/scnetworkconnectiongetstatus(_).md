@@ -19,7 +19,7 @@ func SCNetworkConnectionGetStatus(_ connection: SCNetworkConnection) -> SCNetwor
 SCNetworkConnectionStatus SCNetworkConnectionGetStatus(SCNetworkConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 The status of the network connection. See [`SCNetworkConnectionStatus`](./scnetworkconnectionstatus.md) for a list of possible values.
 

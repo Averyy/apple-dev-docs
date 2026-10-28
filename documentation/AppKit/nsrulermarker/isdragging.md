@@ -19,7 +19,7 @@ var isDragging: Bool { get }
 @property (readonly, getter=isDragging) BOOL dragging;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is being dragged, [`false`](../../Swift/false.md) otherwise.
 

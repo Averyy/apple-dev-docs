@@ -23,7 +23,7 @@ var isLockdownModeEnabled: Bool { get set }
 @property (nonatomic, getter=isLockdownModeEnabled) BOOL lockdownModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this reflects whether the user has enabled Lockdown Mode on the device. Update this preference to override the device setting when you implement a per-website or similar setting.
 

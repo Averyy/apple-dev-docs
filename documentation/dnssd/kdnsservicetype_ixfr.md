@@ -23,7 +23,7 @@ var kDNSServiceType_IXFR: Int { get }
 kDNSServiceType_IXFR
 ```
 
-#### Discussion
+## Discussion
 
 Incremental zone transfer.
 

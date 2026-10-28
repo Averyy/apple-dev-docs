@@ -13,7 +13,7 @@
 OSErr InvokeGetMissingComponentResourceUPP(Component c, OSType resType, SInt16 resID, void *refCon, Handle *resource, GetMissingComponentResourceUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

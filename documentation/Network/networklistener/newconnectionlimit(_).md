@@ -21,7 +21,7 @@ Configure the listener’s new connection limit.
 final func newConnectionLimit(_ limit: Int) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Use the value NWListener.InfiniteConnectionLimit to disable connection limits.
 

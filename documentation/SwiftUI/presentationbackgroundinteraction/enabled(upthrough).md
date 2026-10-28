@@ -21,7 +21,7 @@ People can interact with the view behind a presentation up through a specified d
 static func enabled(upThrough detent: PresentationDetent) -> PresentationBackgroundInteraction
 ```
 
-#### Discussion
+## Discussion
 
 At detents larger than the one you specify, SwiftUI disables interaction.
 

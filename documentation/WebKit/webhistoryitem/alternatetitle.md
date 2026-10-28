@@ -19,7 +19,7 @@ var alternateTitle: String! { get set }
 @property (nonatomic, copy) NSString * alternateTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if no alternate title exists.
 

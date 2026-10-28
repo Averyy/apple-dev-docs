@@ -26,7 +26,7 @@ var defaultConfiguration: CKOperation.Configuration! { get set }
 @property (copy, null_resettable) CKOperationConfiguration * defaultConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If an operation in the group has its own configuration, that configuration’s values override the default configuration’s values. For more information, see [`CKOperation.Configuration`](../ckoperation/configuration-swift.class.md).
 

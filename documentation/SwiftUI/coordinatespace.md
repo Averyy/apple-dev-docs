@@ -21,7 +21,7 @@ A resolved coordinate space created by the coordinate space protocol.
 enum CoordinateSpace
 ```
 
-#### Overview
+## Overview
 
 You don’t typically use `CoordinateSpace` directly. Instead, use the static properties and functions of `CoordinateSpaceProtocol` such as `.global`, `.local`, and `.named(_:)`.
 

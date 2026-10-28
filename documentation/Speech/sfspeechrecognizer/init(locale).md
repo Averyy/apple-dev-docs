@@ -23,11 +23,11 @@ init?(locale: Locale)
 - (instancetype) initWithLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized speech recognizer object, or `nil` if the specified language was not supported.
 
-#### Discussion
+## Discussion
 
 If you specify a language that is not supported by the speech recognizer, this method attempts to fall back to the language used by the keyboard for dictation. If that fails, this method returns `nil`.
 

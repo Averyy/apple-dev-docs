@@ -23,7 +23,7 @@ class CKSystemSharingUIObserver
 @interface CKSystemSharingUIObserver : NSObject
 ```
 
-#### Overview
+## Overview
 
 Initialize a `CKSystemSharingUIObserver` instance with your [`CKContainer`](./ckcontainer.md) when preparing to share an item using the share sheet. Use your implementation to update the local state of a shared item when your app receives a [`CKShare`](./ckshare.md), or to delete a locally cached share when the system notifies your app about a share deletion.
 

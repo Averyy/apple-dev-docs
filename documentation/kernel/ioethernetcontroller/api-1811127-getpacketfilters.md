@@ -12,7 +12,7 @@ virtual IOReturn getPacketFilters(
  UInt32 *filters) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess. Drivers that override this method must return kIOReturnSuccess to indicate success, or an error return code otherwise.
 

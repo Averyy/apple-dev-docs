@@ -25,7 +25,7 @@ func CMVideoFormatDescriptionCreateFromH264ParameterSets(allocator: CFAllocator?
 extern OSStatus CMVideoFormatDescriptionCreateFromH264ParameterSets(CFAllocatorRef allocator, size_t parameterSetCount, const uint8_t * const*parameterSetPointers, const size_t *parameterSetSizes, int NALUnitHeaderLength, CMFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Discussion
+## Discussion
 
 This function parses the dimensions provided by the parameter sets and creates a format description suitable for a raw H.264 stream. The parameter sets’ data can come from raw NAL units and must have any emulation prevention bytes needed.The supported NAL unit types to be included in the format description are 7 (sequence parameter set), 8 (picture parameter set) and 13 (sequence parameter set extension). At least one sequence parameter set and one picture parameter set must be provided.
 

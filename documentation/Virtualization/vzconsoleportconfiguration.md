@@ -19,7 +19,7 @@ class VZConsolePortConfiguration
 @interface VZConsolePortConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZConsolePortConfiguration` directly, instead use one of its subclasses like [`VZVirtioConsolePortConfiguration`](./vzvirtioconsoleportconfiguration.md).
 

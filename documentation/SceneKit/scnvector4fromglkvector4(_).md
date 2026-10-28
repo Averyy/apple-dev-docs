@@ -25,7 +25,7 @@ func SCNVector4FromGLKVector4(_ vector: GLKVector4) -> SCNVector4
 static SCNVector4 SCNVector4FromGLKVector4(GLKVector4 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A four-element SceneKit vector structure representing the same vector as the input parameter.
 

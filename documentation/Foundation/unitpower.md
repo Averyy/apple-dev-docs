@@ -25,11 +25,11 @@ class UnitPower
 @interface NSUnitPower : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitPower`](./unitpower.md) to represent specific quantities of power using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Power
+### Power
 
 Power is the amount of energy used over time. The SI unit for power is the watt (W), which is derived as one joule per second (1W = 1J / 1s).
 

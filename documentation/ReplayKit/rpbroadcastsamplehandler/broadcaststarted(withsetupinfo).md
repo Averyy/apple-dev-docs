@@ -26,7 +26,7 @@ func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?)
 - (void) broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *) setupInfo;
 ```
 
-#### Discussion
+## Discussion
 
 ReplayKit calls this method when the the broadcasting app calls its [`startBroadcast(handler:)`](../rpbroadcastcontroller/startbroadcast%28handler%29.md) method.
 

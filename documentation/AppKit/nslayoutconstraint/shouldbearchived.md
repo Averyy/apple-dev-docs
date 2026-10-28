@@ -19,7 +19,7 @@ var shouldBeArchived: Bool { get set }
 @property BOOL shouldBeArchived;
 ```
 
-#### Discussion
+## Discussion
 
 When a view is archived, it archives some but not all constraints in its [`constraints`](../nsview/constraints.md) array. The value of [`shouldBeArchived`](./shouldbearchived.md) informs the view if a particular constraint should be archived by the view.
 

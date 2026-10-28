@@ -24,7 +24,7 @@ class func setAnimationRepeatAutoreverses(_ repeatAutoreverses: Bool)
 + (void) setAnimationRepeatAutoreverses:(BOOL) repeatAutoreverses;
 ```
 
-#### Discussion
+## Discussion
 
 If you enable autoreversing, a single animation cycle changes the properties being animated to their new values and then back to their original values. At the end of the animations, the affected views are then updated immediately to reflect the new values. This method does nothing if called from outside of an animation block. By default, autoreversing is disabled.
 

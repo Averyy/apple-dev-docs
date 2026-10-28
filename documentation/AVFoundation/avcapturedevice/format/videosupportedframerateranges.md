@@ -24,7 +24,7 @@ var videoSupportedFrameRateRanges: [AVFrameRateRange] { get }
 @property (nonatomic, readonly) NSArray<AVFrameRateRange *> * videoSupportedFrameRateRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an array of [`AVFrameRateRange`](../../avframeraterange.md) objects, one for each of the format’s supported video frame rate ranges.
 

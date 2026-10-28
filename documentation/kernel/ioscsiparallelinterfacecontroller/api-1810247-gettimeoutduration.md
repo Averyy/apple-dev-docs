@@ -12,11 +12,11 @@ UInt32 GetTimeoutDuration (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns timeout duration in milliseconds
 
-#### Overview
+## Overview
 
 Method to retrieve the timeout duration in milliseconds for a request. A value of zero represents an infinite timeout, or on hardware where infinite timeouts are not possible, substitute the longest timeout possible.
 

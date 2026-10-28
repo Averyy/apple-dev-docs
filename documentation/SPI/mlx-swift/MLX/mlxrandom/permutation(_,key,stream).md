@@ -17,7 +17,7 @@ Generate a random permutation of integers from `0` to `max`.
 static func permutation(_ max: Int, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Permuted array
 

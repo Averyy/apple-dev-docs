@@ -17,7 +17,7 @@ let kVTRAWProcessingPropertyKey_MetadataForSidecarFile: CFString!
 extern CFStringRef const kVTRAWProcessingPropertyKey_MetadataForSidecarFile;
 ```
 
-#### Discussion
+## Discussion
 
 This property, if supported, returns the current processing metadata on the RAW Processor. The returned value can be used by the caller to create, or overwrite an existing sidecar file.
 

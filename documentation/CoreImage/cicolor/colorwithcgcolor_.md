@@ -20,7 +20,7 @@ Create a Core Image color object with a Core Graphics color object.
 + (instancetype) colorWithCGColor:(CGColorRef) color;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIColor`](../cicolor.md) instance.
 

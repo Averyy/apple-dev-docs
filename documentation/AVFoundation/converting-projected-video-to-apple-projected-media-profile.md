@@ -10,11 +10,11 @@ Convert content with equirectangular or half-equirectangular projection to APMP.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 297: [Learn about the Apple Projected Media Profile](https://developer.apple.com/videos/play/wwdc2025/297).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The app takes a path to a monoscopic or stereoscopic (frame-packed) side-by-side or over-under stereo input video file as a single command-line argument. To run the app in Xcode, click the Run button to convert the included side-by-side frame-packed stereoscopic 180 sample asset (`Lighthouse_sbs.mp4`), or choose Product > Scheme > Edit Scheme, and edit the path to your file on the Arguments tab of the Run build scheme action.
 

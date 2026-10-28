@@ -16,7 +16,7 @@ A protocol for exporting transportable resources in an archive format.
 protocol ResourcesExportingWithOptions : AppMigrationExtension
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol in your app extension to export transportable resources: files on disk that can you can copy as-is to the destination device without converting to an intermediate transport format.
 

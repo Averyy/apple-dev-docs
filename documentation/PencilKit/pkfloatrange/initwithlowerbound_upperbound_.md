@@ -19,7 +19,7 @@ A utility class used to contain ranges returned by the PKStroke API.
 - (instancetype) initWithLowerBound:(CGFloat) lowerBound upperBound:(CGFloat) upperBound;
 ```
 
-#### Return Value
+## Return Value
 
 A new range instance with the supplied upper and lower bounds.
 

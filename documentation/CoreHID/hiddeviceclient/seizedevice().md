@@ -15,7 +15,7 @@ Attempt to obtain the device so that this client is the only active client.
 func seizeDevice() throws
 ```
 
-#### Discussion
+## Discussion
 
 If successful, this client is the only one that receives notifications using [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md), and the only one that can use certain functions to interact with the device. The device won’t be freed until the client that holds it is deinitialized. There must not be any outstanding calls when attempting to seize a device.
 

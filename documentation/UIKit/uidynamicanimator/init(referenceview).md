@@ -23,11 +23,11 @@ init(referenceView view: UIView)
 - (instancetype) initWithReferenceView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized dynamic animator, or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 When you initialize a dynamic animator with this method, the behaviors (and their dynamic items) that you add to the animator employ the reference view’s coordinate system.
 

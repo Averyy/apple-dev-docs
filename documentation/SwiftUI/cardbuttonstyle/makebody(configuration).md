@@ -16,7 +16,7 @@ nonisolated
 func makeBody(configuration: CardButtonStyle.Configuration) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`Button`](../button.md) instance in a view hierarchy in which [`CardButtonStyle`](../cardbuttonstyle.md) is the current button style.
 

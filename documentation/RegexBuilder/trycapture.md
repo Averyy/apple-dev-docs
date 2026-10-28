@@ -21,7 +21,7 @@ A regex component that attempts to transform a matched substring, saving the res
 struct TryCapture<Output>
 ```
 
-#### Overview
+## Overview
 
 You use a `TryCapture` component to capture part of a match as a transformed value, when a failure to transform should mean the regex continues matching, backtracking from that point if necessary.
 

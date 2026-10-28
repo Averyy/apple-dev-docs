@@ -21,11 +21,11 @@ Returns a new player to play a single audiovisual resource referenced by a given
 + (instancetype) playerWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new player initialized to play the audiovisual resource specified by `URL`.
 
-#### Discussion
+## Discussion
 
 This method implicitly creates an [`AVPlayerItem`](../avplayeritem.md) object. You can get the player item using [`currentItem`](./currentitem.md).
 

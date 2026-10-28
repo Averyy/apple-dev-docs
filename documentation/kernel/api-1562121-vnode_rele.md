@@ -15,11 +15,11 @@ Decrement the usecount on a vnode.
 void vnode_rele(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 vnode_rele() is called to relese a persistent reference on a vnode. Releasing the last usecount opens the door for a vnode to be reused as a new file; it also triggers a VNOP_INACTIVE call to the filesystem, though that will not happen immediately if there are outstanding iocount references.
 

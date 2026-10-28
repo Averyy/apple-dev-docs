@@ -19,7 +19,7 @@ var NSOpenGLPFANoRecovery: Int { get }
 NSOpenGLPFANoRecovery
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean attribute. If present, this attribute indicates that OpenGL’s failure recovery mechanisms are disabled. Normally, if an accelerated renderer fails due to lack of resources, OpenGL automatically switches to another renderer. This attribute disables these features so that rendering is always performed by the chosen renderer. This attribute is not generally useful.
 

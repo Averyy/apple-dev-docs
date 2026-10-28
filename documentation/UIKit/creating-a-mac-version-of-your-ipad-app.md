@@ -5,13 +5,13 @@
 
 Bring your iPad app to macOS with Mac Catalyst.
 
-#### Overview
+## Overview
 
 Configuring your iPad app for Mac can be as simple as adding an entry to the list of your target’s supported destinations in Xcode. Depending on the features and frameworks that your app uses, the configuration process may require a few extra steps, such as manually excluding other frameworks or content.
 
 > **Note**:  For information about designing a Mac version of your iPad app, see [Human Interface Guidelines > Mac Catalyst](https://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/introduction).
 
-##### Configure your app for Mac
+### Configure your app for Mac
 
 To add support for Mac, open your Xcode project and select the iOS target that you want to configure. In the General tab, under Supported Destinations, click the Add button (+) to add a destination. Select Mac, then Mac Catalyst to add the destination.
 
@@ -21,7 +21,7 @@ When you enable Mac support, Xcode adds the [`App Sandbox Entitlement`](../Bundl
 
 At this point, you may be able to build and run the Mac version of your app. To give it a try, select My Mac as the destination and run your project.
 
-##### Go beyond the checkbox
+### Go beyond the checkbox
 
 You may find that the Mac version of your app still doesn’t build because:
 
@@ -54,7 +54,7 @@ If you have source code referencing APIs unavailable to the Mac version of your 
 
 You can use these same approaches to include a framework and code that are available only in macOS. For a framework, select macOS for the platform setting, and enclose the code with a `#if targetEnvironment(macCatalyst)` (Swift) or `#if TARGET_OS_MACCATALYST` (Objective-C) statement.
 
-##### Make your app more like a Mac app
+### Make your app more like a Mac app
 
 After following these steps, you should be able to run your iPad app on Mac. But before you ship your new app to customers, it needs a few more changes to make it more like a Mac app. To learn more, see [Optimizing your iPad app for Mac](./optimizing-your-ipad-app-for-mac.md).
 

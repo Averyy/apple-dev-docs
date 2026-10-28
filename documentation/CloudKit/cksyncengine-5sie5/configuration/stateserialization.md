@@ -21,7 +21,7 @@ The sync engine’s serialized state.
 var stateSerialization: CKSyncEngine.State.Serialization?
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the value you specify for the initializer’s `stateSerialization` parameter. If you choose to set this property after initialization, assign the state from the most recent [`CKSyncEngine.Event.stateUpdate(_:)`](../event/stateupdate%28_%29.md) event handled by your delegate. However, if this is the first initialization of the associated sync engine, specify `nil` instead.
 

@@ -10,7 +10,7 @@ Ensure the academic integrity of your assessment app by using Automatic Assessme
 - macOS 12.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 Academic assessment apps need to ensure that students can’t use certain system resources, like network access, the dictionary, and the calculator. However, depending on the assessment, you might want to allow students to use one or more of these resources. Use the Automatic Assessment Configuration framework to enable assessment administrators to chose which of these system resources, if any, students can use during an assessment.
 
@@ -22,18 +22,18 @@ This app is a web browser, with a Lock and Unlock button to enter and exit from 
 
 You can choose either Objective-C or Swift to build and run the same sample app.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To build and run this sample on your device, you must first select your development team for the project’s target using these steps:
 
 1. Change the sample project’s bundle ID to something unique.
-2. Make sure your team has been granted the  [com.apple.developer.automatic-assessment-configuration](../BundleResources/entitlements/com_apple_developer_automatic-assessment-configuration.md) entitlement for macOS.
+2. Make sure your team has been granted the  [com.apple.developer.automatic-assessment-configuration](../BundleResources/entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement for macOS.
 3. Create an App ID with this capability on the [Provisioning Portal](https://developer.apple.com/account/resources/certificates/list). Make sure the ID matches the bundle ID.
 4. Create a Provisioning Profile for Mac Development with the App ID you created.
 5. For the project’s target, choose your team from the Team menu in the Signing & Capabilities pane, and deselect the checkbox so Xcode won’t automatically manage code signing.
 6. In the Provisioning Profiles drop-down, chose to download profiles.
 
-##### Start the Assessment Session
+### Start the Assessment Session
 
 Before the app can start an assessment session, it needs to initialize the session.
 
@@ -83,7 +83,7 @@ Finally, the sample starts the assessment session.
 [self.session begin];
 ```
 
-##### Handle Assessment Session Events
+### Handle Assessment Session Events
 
 Implement the [AEAssessmentSessionDelegate](./aeassessmentsessiondelegate.md) methods to be notified of assessment session lifecycle events. For example, the [assessmentSession(_:wasInterruptedWithError:)](./aeassessmentsessiondelegate/assessmentsession%28_,wasinterruptedwitherror%29.md) delegate method handles the case of a system failure interrupting the assessment session.
 
@@ -95,7 +95,7 @@ Implement the [AEAssessmentSessionDelegate](./aeassessmentsessiondelegate.md) me
 }
 ```
 
-##### End the Session
+### End the Session
 
 When the student finishes taking the assessment, save the results and end the assessment session.
 

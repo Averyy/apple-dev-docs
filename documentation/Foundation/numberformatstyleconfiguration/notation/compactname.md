@@ -21,7 +21,7 @@ A locale-appropriate compact name notation.
 static var compactName: NumberFormatStyleConfiguration.Notation { get }
 ```
 
-#### Discussion
+## Discussion
 
 A compact name notation, when available in the format style’s locale, that uses prefixes or suffixes corresponding to powers of ten. The following example shows a compact name notation in the `fr_FR` locale:
 

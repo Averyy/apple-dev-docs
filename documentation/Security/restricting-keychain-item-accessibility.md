@@ -5,7 +5,7 @@
 
 Set the conditions under which an app can access a keychain item such as a password.
 
-#### Overview
+## Overview
 
 When you use keychain services to store user secrets, the framework’s default behavior provides a reasonable trade-off between security and accessibility. However, in some cases, you might want to make different choices.
 
@@ -13,7 +13,7 @@ For example, by default, you can only access keychain items when the device is u
 
 Keychain services offers ways to manage the accessibility of individual keychain items according the state of the device, combined with inputs from the user.
 
-##### Control access based on device state
+### Control access based on device state
 
 You control an app’s access to a keychain item relative to the state of a device by setting the item’s [`kSecAttrAccessible`](./ksecattraccessible.md) attribute when you create the item. See [Adding a password to the keychain](./adding-a-password-to-the-keychain.md) for a general discussion of how to create an item.
 
@@ -40,7 +40,7 @@ In order of decreasing restrictiveness, the choices are:
 
 Always use the most restrictive option that makes sense for your app. For extremely sensitive data that you never want stored in iCloud, you might choose [`kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly`](./ksecattraccessiblewhenpasscodesetthisdeviceonly.md).
 
-##### Demand user presence
+### Demand user presence
 
 Allowing access only when the device is unlocked (the default) may not be secure enough in all cases. If your app provides direct control over a bank account, you can check for the presence of the authorized user at the very last minute before retrieving login credentials from the keychain. This helps secure the account even if the user hands the device in an unlocked state to someone else.
 
@@ -72,7 +72,7 @@ var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
                             kSecValueData as String: password]
 ```
 
-##### Require a password
+### Require a password
 
 In addition to requiring a particular device state and user presence, you can require an application-specific password. This is distinct from the passcode that unlocks the device: It specifically guards a particular keychain item.
 

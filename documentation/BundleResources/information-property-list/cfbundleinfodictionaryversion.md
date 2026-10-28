@@ -23,7 +23,7 @@ The current version of the Information Property List structure.
 
 **Default**: `6.0`
 
-#### Discussion
+## Discussion
 
 Xcode adds this key automatically. Don’t change the value.
 

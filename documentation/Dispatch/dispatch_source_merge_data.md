@@ -21,7 +21,7 @@ Merges data into a dispatch source and submits its event handler block to its ta
 extern void dispatch_source_merge_data(dispatch_source_t source, uintptr_t value);
 ```
 
-#### Discussion
+## Discussion
 
 Your application can use this function to indicate that an event has occurred on one of the application-defined dispatch event sources of type [`DISPATCH_SOURCE_TYPE_DATA_ADD`](./dispatch_source_type_data_add.md) or [`DISPATCH_SOURCE_TYPE_DATA_OR`](./dispatch_source_type_data_or.md).
 

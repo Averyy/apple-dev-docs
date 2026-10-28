@@ -21,7 +21,7 @@ A list of quarter names in this calendar, localized to the Calendar’s `locale`
 var quarterSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"]`.
 

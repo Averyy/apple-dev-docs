@@ -20,7 +20,7 @@ Creates a default compute pass descriptor.
 + (MTLComputePassDescriptor *) computePassDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new compute pass descriptor populated with default values.
 

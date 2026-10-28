@@ -16,7 +16,7 @@ A message to the user that explains why the app requested permission to read cli
 - **Name**: `NSHealthClinicalHealthRecordsShareUsageDescription` (Privacy - Health Records Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s clinical records.
 

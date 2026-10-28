@@ -18,7 +18,7 @@ An error that indicates the app isn’t authorized to perform the requested acti
 static var permissionDenied: UIAccessibility.GuidedAccessError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, this error might indicate that your app is requesting a configuration change but isn’t locked into Single App Mode through a configuration profile.
 

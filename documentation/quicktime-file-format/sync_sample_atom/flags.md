@@ -6,7 +6,7 @@
 
 A 3-byte space for sync sample flags.
 
-#### Overview
+## Overview
 
 Set this field to `0`.
 

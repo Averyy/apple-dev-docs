@@ -25,11 +25,11 @@ func CVPixelBufferPoolCreate(_ allocator: CFAllocator?, _ poolAttributes: CFDict
 extern CVReturn CVPixelBufferPoolCreate(CFAllocatorRef allocator, CFDictionaryRef poolAttributes, CFDictionaryRef pixelBufferAttributes, CVPixelBufferPoolRef*poolOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Use [`CVPixelBufferPoolRelease`](./cvpixelbufferpoolrelease.md) to release ownership of the `poolOut` object when you’re done with it.
 

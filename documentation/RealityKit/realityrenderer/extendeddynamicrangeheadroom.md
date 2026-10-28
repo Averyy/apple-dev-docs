@@ -19,7 +19,7 @@ The amount of headroom available for extended dynamic range content.
 var extendedDynamicRangeHeadroom: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When EDR output is enabled using [`extendedDynamicRangeOutput`](./extendeddynamicrangeoutput.md), standard dynamic range values output by this [`RealityRenderer`](../realityrenderer.md) will be scaled such that there’s some *headroom* to display extended range values.
 

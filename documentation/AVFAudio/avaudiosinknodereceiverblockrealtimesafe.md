@@ -19,7 +19,7 @@
 typedef int (^)(const struct AudioTimeStamp *, unsigned int, const struct AudioBufferList *) __attribute__((nonblocking)) AVAudioSinkNodeReceiverBlockRealtimeSafe;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to AVAudioSinkNodeReceiverBlock, with the addition of a realtime-safety guarantee.
 

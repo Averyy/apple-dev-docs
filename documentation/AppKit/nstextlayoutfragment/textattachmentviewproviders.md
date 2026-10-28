@@ -19,7 +19,7 @@ var textAttachmentViewProviders: [NSTextAttachmentViewProvider] { get }
 @property (copy, readonly) NSArray<NSTextAttachmentViewProvider *> * textAttachmentViewProviders;
 ```
 
-#### Discussion
+## Discussion
 
 The property contents are only valid with [`NSTextLayoutFragment.State.layoutAvailable`](./state-swift.enum/layoutavailable.md).
 

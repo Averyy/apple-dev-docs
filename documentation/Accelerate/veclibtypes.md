@@ -5,7 +5,7 @@
 
 Create and work with 128-bit vector data types.
 
-#### Overview
+## Overview
 
 The vecLibTypes.h header file defines a set of vector data types (`vFloat`, `vUInt32`, etc.), which represent 128-bit vectors containing values of type `float`, `UInt32`, etc. The vBasicOps.h and vfp.h headers make use of these types.
 

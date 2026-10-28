@@ -17,7 +17,7 @@ Default target edge length for mesh generation.
 static let defaultTargetEdgeLength: Float
 ```
 
-#### Discussion
+## Discussion
 
 It is convenient to have the same target edge length for all shapes, since self-collision assumes similar edge lengths across the whole simulation.
 

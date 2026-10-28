@@ -21,7 +21,7 @@ void clearRect(
 );
 ```
 
-#### Discussion
+## Discussion
 
 All parameter values are in the canvas’s current coordinate system, subject to the current transformation matrix.
 

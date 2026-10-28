@@ -19,11 +19,11 @@ func tiffRepresentation(using comp: NSBitmapImageRep.TIFFCompression, factor: Fl
 - (NSData *) TIFFRepresentationUsingCompression:(NSTIFFCompression) comp factor:(float) factor;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the TIFF data, or `nil` if the TIFF data could not be created.
 
-#### Discussion
+## Discussion
 
 You can use the returned data object to write the TIFF data to a file. If the specified compression isn’t applicable, no compression is used. If a problem is encountered during generation of the TIFF data, this method may raise an exception.
 

@@ -16,11 +16,11 @@ This property returns a UInt32 that identifies the kind of selector item the ite
 func selectorItemKind(fromID ID: UInt32) throws -> UInt32
 ```
 
-#### Return Value
+## Return Value
 
 A UInt32 that identifies the kind of selector item the item ID refers to.
 
-#### Discussion
+## Discussion
 
 This property is optional for selector controls and that the meaning of the value depends on the specific subclass being queried.
 

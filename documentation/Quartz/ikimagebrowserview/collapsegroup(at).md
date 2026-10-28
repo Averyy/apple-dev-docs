@@ -19,7 +19,7 @@ func collapseGroup(at index: Int)
 - (void) collapseGroupAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method is declared in OS X v10.5, but an implementation was not provided until OS X v10.6. Avoid using this method in OS X v10.5.
 

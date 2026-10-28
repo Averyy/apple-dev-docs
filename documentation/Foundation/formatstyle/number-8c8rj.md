@@ -23,7 +23,7 @@ static var number: FloatingPointFormatStyle<Double> { get }
 
 Available when `Self` is `FloatingPointFormatStyle<Double>`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 

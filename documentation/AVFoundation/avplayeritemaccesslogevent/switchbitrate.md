@@ -25,7 +25,7 @@ var switchBitrate: Double { get }
 @property (nonatomic, readonly) double switchBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

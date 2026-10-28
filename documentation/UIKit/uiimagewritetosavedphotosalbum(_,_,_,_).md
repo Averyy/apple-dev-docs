@@ -22,7 +22,7 @@ func UIImageWriteToSavedPhotosAlbum(_ image: UIImage, _ completionTarget: Any?, 
 extern void UIImageWriteToSavedPhotosAlbum(UIImage *image, id completionTarget, SEL completionSelector, void *contextInfo);
 ```
 
-#### Discussion
+## Discussion
 
 When used with an image picker controller, you would typically call this function within your [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](./uiimagepickercontrollerdelegate/imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md) delegate method implementation.
 

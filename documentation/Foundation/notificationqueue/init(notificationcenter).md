@@ -25,11 +25,11 @@ init(notificationCenter: NotificationCenter)
 - (instancetype) initWithNotificationCenter:(NSNotificationCenter *) notificationCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized notification queue.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for the [`NotificationQueue`](../notificationqueue.md) class.
 

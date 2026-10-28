@@ -19,7 +19,7 @@ func PMCopyPPDData(_ ppd: CFURL, _ data: UnsafeMutablePointer<Unmanaged<CFData>?
 OSStatus PMCopyPPDData(CFURLRef ppd, CFDataRef  _Nullable *data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

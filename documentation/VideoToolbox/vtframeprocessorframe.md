@@ -24,7 +24,7 @@ class VTFrameProcessorFrame
 @interface VTFrameProcessorFrame : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances retain the buffer backing them.
 

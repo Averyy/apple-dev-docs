@@ -27,7 +27,7 @@ class INDefaultCardTemplate
 
 - [Displaying Shortcut Information in a Siri Watch Face Card](../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 
-#### Overview
+## Overview
 
 The Siri watch face displays a relevant shortcut using information from the [`INIntent`](./inintent.md) or [`NSUserActivity`](../Foundation/nsuseractivity.md) provided when creating the shortcut. If you want to provide watch specific information—for example, to display a shorter title—provide the relevant shortcut a default card template by setting the [`watchTemplate`](./inrelevantshortcut/watchtemplate.md) property. The template allows your app to set the [`title`](./indefaultcardtemplate/title.md), [`subtitle`](./indefaultcardtemplate/subtitle.md), and [`image`](./indefaultcardtemplate/image.md). For more information, see [Displaying Shortcut Information in a Siri Watch Face Card](../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md).
 

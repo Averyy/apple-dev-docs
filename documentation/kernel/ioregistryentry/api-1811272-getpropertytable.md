@@ -12,11 +12,11 @@ OSDictionary * getPropertyTable(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the property table as an OSDictionary. The pointer is valid while the registry entry is retained, and should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method will return a pointer to the live property table as an OSDictionery. Its use is not recommended in most cases, instead use the synchronized accessors and helper functions of IORegistryEntry to access properties. It can only safely be used by one thread, which usually means it can only be used before a registry entry is entered into the registry.
 

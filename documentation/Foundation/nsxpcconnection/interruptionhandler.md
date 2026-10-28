@@ -25,7 +25,7 @@ var interruptionHandler: (() -> Void)? { get set }
 @property (copy, nullable) void (^interruptionHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 It may be possible to re-establish the connection by simply sending another message. The handler is invoked on the same queue as reply messages and other handlers, and it is always executed after any other messages or reply block handlers (except for the invalidation handler).
 

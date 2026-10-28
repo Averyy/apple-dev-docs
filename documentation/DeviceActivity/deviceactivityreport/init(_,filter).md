@@ -18,7 +18,7 @@ Creates a new device activity report.
 @preconcurrency init(_ context: DeviceActivityReport.Context, filter: DeviceActivityFilter = DeviceActivityFilter())
 ```
 
-#### Discussion
+## Discussion
 
 If you do not specify a filter, then the system will provide all device activity data for the current user and the current device to your device activity report app extension.
 

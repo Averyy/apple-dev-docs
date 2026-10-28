@@ -15,7 +15,7 @@ An abstract base class defining common methods for controlling a notification re
 class IONotifier : OSObject
 ```
 
-#### Overview
+## Overview
 
 IOService notification requests are represented as implementations of the IONotifier object. It defines methods to enable, disable and remove notification requests. These actions are synchronized with invocations of the notification handler, so removing a notification request will guarantee the handler is not being executed.
 

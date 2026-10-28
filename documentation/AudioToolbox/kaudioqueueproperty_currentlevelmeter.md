@@ -24,7 +24,7 @@ var kAudioQueueProperty_CurrentLevelMeter: AudioQueuePropertyID { get }
 kAudioQueueProperty_CurrentLevelMeter
 ```
 
-#### Discussion
+## Discussion
 
 Value is a read-only array of [`AudioQueueLevelMeterState`](./audioqueuelevelmeterstate.md) structures, one array element per audio channel. The member values in the structure are in the range `0` (for silence) to `1` (indicating maximum level).
 

@@ -5,7 +5,7 @@
 
 Configure your app for flexible enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
 
-#### Overview
+## Overview
 
 If you’re working with content that requires flexibility with buffering, use the [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md) and [`AVSampleBufferRenderSynchronizer`](./avsamplebufferrendersynchronizer.md) classes.
 

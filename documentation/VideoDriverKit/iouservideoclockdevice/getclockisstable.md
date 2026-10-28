@@ -15,11 +15,11 @@ Gets a Boolean value for clock stability of the clock device.
 bool GetClockIsStable();
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the clock is stable.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to this value.
 

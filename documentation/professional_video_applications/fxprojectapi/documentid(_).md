@@ -20,7 +20,7 @@ func documentID(_ documentID: UnsafeMutablePointer<Int>!) throws
 - (BOOL) documentID:(NSUInteger *) documentID error:(NSError * *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the document ID number of the host application’s project.
 

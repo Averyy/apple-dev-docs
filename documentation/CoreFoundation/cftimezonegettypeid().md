@@ -25,7 +25,7 @@ func CFTimeZoneGetTypeID() -> CFTypeID
 extern CFTypeID CFTimeZoneGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFTimeZone opaque type.
 

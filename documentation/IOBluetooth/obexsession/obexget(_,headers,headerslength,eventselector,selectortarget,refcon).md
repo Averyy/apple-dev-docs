@@ -19,7 +19,7 @@ func obexGet(_ isFinalChunk: Bool, headers inHeaders: UnsafeMutableRawPointer!, 
 - (OBEXError) OBEXGet:(Boolean) isFinalChunk headers:(void *) inHeaders headersLength:(size_t) inHeadersLength eventSelector:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.
 

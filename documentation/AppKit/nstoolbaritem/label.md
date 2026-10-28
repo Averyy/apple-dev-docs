@@ -22,7 +22,7 @@ var label: String { get set }
 @property (copy) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Integrating a Toolbar and Touch Bar into Your App](../integrating-a-toolbar-and-touch-bar-into-your-app.md).
 

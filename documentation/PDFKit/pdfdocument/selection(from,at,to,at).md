@@ -40,7 +40,7 @@ func selection(from startPage: PDFPage, at startPoint: NSPoint, to endPage: PDFP
 - (PDFSelection *) selectionFromPage:(PDFPage *) startPage atPoint:(NSPoint) startPoint toPage:(PDFPage *) endPage atPoint:(NSPoint) endPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The selection begins at `startPt` on `startPage` and ends at `endPt` on `endPage`. The starting and ending points should be specified in page space, relative to their respective pages.
 

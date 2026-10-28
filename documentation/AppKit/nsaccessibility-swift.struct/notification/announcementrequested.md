@@ -19,7 +19,7 @@ static let announcementRequested: NSAccessibility.Notification
 extern NSAccessibilityNotificationName const NSAccessibilityAnnouncementRequestedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification requires a `userInfo` dictionary with the key [`announcement`](../notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](../notificationuserinfokey/priority.md) to the `userInfo` dictionary.
 

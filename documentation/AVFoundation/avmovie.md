@@ -24,7 +24,7 @@ class AVMovie
 @interface AVMovie : AVAsset
 ```
 
-#### Overview
+## Overview
 
 `AVMovie` supports operations involving the format-specific portions of the QuickTime movie model that [`AVAsset`](./avasset.md) doesn’t support. For instance, retrieving the movie header from an existing QuickTime movie file. You can also use `AVMovie` to write a movie header into a new file, thereby creating a reference movie.
 

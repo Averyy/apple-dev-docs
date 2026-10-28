@@ -26,11 +26,11 @@ func CFNetServiceBrowserStopSearch(_ browser: CFNetServiceBrowser, _ error: Unsa
 extern void CFNetServiceBrowserStopSearch(CFNetServiceBrowserRef browser, CFStreamError *error);
 ```
 
-#### Discussion
+## Discussion
 
 This functions stops a search started by a previous call to [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md) or [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md). For asynchronous and synchronous searches, calling this function causes the callback function associated with the CFNetServiceBrowser to be called once for each domain or service found. If the search is asynchronous, `error` is passed to the callback function. If the search is synchronous, calling this function causes [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md) or [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md) to return `FALSE`. If the `error` parameter for either call pointed to a [`CFStreamError`](../CoreFoundation/cfstreamerror.md) structure, the [`CFStreamError`](../CoreFoundation/cfstreamerror.md) structure contains the error code and the error code’s domain as set when this function was called.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

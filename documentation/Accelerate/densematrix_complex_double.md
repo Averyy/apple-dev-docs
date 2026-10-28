@@ -25,7 +25,7 @@ struct DenseMatrix_Complex_Double
 typedef struct { ... } DenseMatrix_Complex_Double;
 ```
 
-#### Overview
+## Overview
 
 - **`rowCount`**: Number of rows in the matrix.
 - **`columnCount`**: Number of columns in the matrix.

@@ -19,7 +19,7 @@ var viewsNeedDisplay: Bool { get set }
 @property BOOL viewsNeedDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when any of the window’s views need to be displayed; otherwise, [`false`](../../Swift/false.md). You should rarely need to set this property; the `NSView` method [`needsDisplay`](../nsview/needsdisplay.md) and similar methods set it automatically.
 

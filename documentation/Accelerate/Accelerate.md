@@ -15,7 +15,7 @@ Make large-scale mathematical computations and image calculations, optimized for
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Accelerate provides high-performance, energy-efficient computation on the CPU by leveraging its vector-processing capability. The following Accelerate libraries abstract that capability so that code written for them executes appropriate instructions for the processor available at runtime:
 

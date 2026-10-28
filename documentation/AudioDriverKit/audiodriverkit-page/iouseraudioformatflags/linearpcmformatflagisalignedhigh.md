@@ -15,7 +15,7 @@ A flag to indicate whether PCM sample bits use the high bits of the channel.
 LinearPCMFormatFlagIsAlignedHigh
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsAlignedHigh`](./formatflagisalignedhigh.md).
 

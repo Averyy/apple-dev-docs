@@ -15,11 +15,11 @@ Check for a filename in a directory using the VFS name cache.
 int cache_lookup(vnode_t dvp, vnode_t *vpp, struct componentname *cnp);
 ```
 
-#### Return Value
+## Return Value
 
 ENOENT: the filesystem has previously added a negative entry with cache_enter() to indicate that there is no file of the given name in "dp." -1: successfully found a cached vnode (vpp is set). 0: No data in the cache, or operation is CRETE/RENAME.
 
-#### Discussion
+## Discussion
 
 cache_lookup() will flush negative cache entries and return 0 if the operation of the cn_nameiop is CREATE or RENAME. Often used from the filesystem during a lookup vnop. The filesystem will be called to if there is a negative cache entry for a file, so it can make sense to initially check for negative entries (and possibly lush them).
 

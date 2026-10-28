@@ -23,7 +23,7 @@ enum NavigationDirection
 enum UIPageViewControllerNavigationDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For horizontal navigation, pages turn from the right side of the screen to the left as you navigate forward.
 

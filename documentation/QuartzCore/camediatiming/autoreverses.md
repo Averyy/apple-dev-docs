@@ -25,7 +25,7 @@ var autoreverses: Bool { get set }
 @property BOOL autoreverses;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the receiver plays backwards after playing forwards. Defaults to [`false`](../../Swift/false.md).
 

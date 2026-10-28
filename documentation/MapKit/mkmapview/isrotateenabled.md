@@ -23,7 +23,7 @@ var isRotateEnabled: Bool { get set }
 @property (nonatomic, getter=isRotateEnabled) BOOL rotateEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) and the framework associates a valid camera with the map, the map uses the camera’s heading angle to rotate the plane of the map around its center point. When this property is [`false`](../../Swift/false.md), the map view ignores the camera’s heading angle and the map orients so that the map view situates true north at the top.
 

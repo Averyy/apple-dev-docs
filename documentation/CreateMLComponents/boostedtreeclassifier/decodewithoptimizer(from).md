@@ -23,7 +23,7 @@ func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> Tre
 
 Available when `Label` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

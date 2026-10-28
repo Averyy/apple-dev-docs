@@ -19,7 +19,7 @@ func reloadCriteria()
 - (void) reloadCriteria;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to indicate that the available criteria may have changed and should be refetched from the delegate and the popups recalculated. If any item in a given row is “orphaned” (that is, is no longer reported as a child of its previous parent), its criteria and display values are set to valid choices.
 

@@ -21,7 +21,7 @@ unowned(unsafe) var resourceLoadDelegate: (any WebResourceLoadDelegate)! { get s
 @property (nonatomic, assign) id<WebResourceLoadDelegate> resourceLoadDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Conforms to the WebResourceLoadDelegate protocol.
 

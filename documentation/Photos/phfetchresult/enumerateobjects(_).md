@@ -24,7 +24,7 @@ func enumerateObjects(_ block: @escaping (ObjectType, Int, UnsafeMutablePointer<
 - (void) enumerateObjectsUsingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes synchronously.
 

@@ -22,7 +22,7 @@ Creates a file URL that references the local file or directory at the file path 
 init?(_ path: FilePath, isDirectory: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This method avoids file system I/O to determine if the path is to a directory. When you know that information, prefer this method to initializers without the parameter.
 

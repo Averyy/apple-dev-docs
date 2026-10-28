@@ -27,7 +27,7 @@ var updateListenerOptions: CSSearchableItem.UpdateListenerOptions { get set }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 As Spotlight indexes your app’s searchable items, it can notify your Spotlight delegate app extension when specific information becomes available. For example, Spotlight can notify your delegate when Apple Intelligence generates a summary for your items. Use this property to tell Spotlight which types of notifications you want to receive for this item.
 

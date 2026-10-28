@@ -24,7 +24,7 @@ var kernelHeight: Int { get set }
 @property (nonatomic, readwrite) NSUInteger kernelHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `3`.
 

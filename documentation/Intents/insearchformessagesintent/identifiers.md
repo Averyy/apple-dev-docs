@@ -31,7 +31,7 @@ var identifiers: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`NSString`](../../Foundation/nsstring.md) objects, your search should return only messages whose IDs match the specified identifiers. The value of the [`identifiersOperator`](./identifiersoperator.md) property determines whether searches should be for all, some, or none of the specified identifiers.
 

@@ -25,7 +25,7 @@ case clamp
 SKRepeatModeClamp
 ```
 
-#### Discussion
+## Discussion
 
 Given a sequence with the key values of `[5, 1, 10]` and times of `[0, 0.25, 0.5]`, clamp repeat mode produces a set of values that follow straight line when the sample time is greater or equal to `0.5`:
 

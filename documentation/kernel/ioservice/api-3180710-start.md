@@ -24,11 +24,11 @@ virtual kern_return_t Start(IOService *provider);
 kern_return_t Start(IOService *provider, OSDispatchMethod supermethod);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
-#### Discussion
+## Discussion
 
 After successfully matching the specified `provider` to your driver's service, the system instantiates your service object and calls this method. Use this method to configure your driver's data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After you configure your driver, call the [`RegisterService`](./api-3180701-registerservice.md) method to let the system know your service is running.
 

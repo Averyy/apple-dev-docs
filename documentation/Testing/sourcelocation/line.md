@@ -23,7 +23,7 @@ The line in the source file.
 var line: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The value of this property must be greater than `0`.
 

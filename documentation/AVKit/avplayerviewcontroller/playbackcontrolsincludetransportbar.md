@@ -19,7 +19,7 @@ var playbackControlsIncludeTransportBar: Bool { get set }
 @property (nonatomic) BOOL playbackControlsIncludeTransportBar;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `false`, and set [`showsPlaybackControls`](./showsplaybackcontrols.md) to `true`, to selectively prevent the player from presenting the transport bar during user interaction. Changing the value of this property doesn’t immediately change the visibility of the transport bar.
 

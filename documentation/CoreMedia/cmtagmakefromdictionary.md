@@ -21,11 +21,11 @@ Create a new tag from a dictionary object.
 extern CMTag CMTagMakeFromDictionary(CFDictionaryRef dict);
 ```
 
-#### Return Value
+## Return Value
 
 A new tag defined by the dictionary values, or [`kCMTagInvalid`](./kcmtaginvalid.md) if no tag could be created.
 
-#### Discussion
+## Discussion
 
 To create a new tag, the dictionary should have values for the [`kCMTagCategoryKey`](./kcmtagcategorykey.md), [`kCMTagDataTypeKey`](./kcmtagdatatypekey.md), and [`kCMTagValueKey`](./kcmtagvaluekey.md) keys.
 

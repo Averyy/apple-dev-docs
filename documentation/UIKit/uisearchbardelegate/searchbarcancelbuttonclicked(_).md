@@ -22,7 +22,7 @@ optional func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
 - (void) searchBarCancelButtonClicked:(UISearchBar *) searchBar;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you implement this method to dismiss the search bar.
 

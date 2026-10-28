@@ -12,11 +12,11 @@ virtual IOReturn addAudioStream(
  IOAudioStream *stream);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully added.
 
-#### Overview
+## Overview
 
 This function is called by the driver to add an IOAudioStream to the audio engine. This must be called at least once to make sure the audio engine has at least one IOAudioStream.
 

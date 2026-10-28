@@ -21,7 +21,7 @@ A type-erased representation of an app enumeration that provides dynamic enumera
 struct AnyAppEnum
 ```
 
-#### Overview
+## Overview
 
 Use `AnyAppEnum` to work with enumerations when you don’t know the specific enumeration type at compile time. At compile, the [`AnyAppEnum`](./anyappenum.md) structure resolves to your app enum type and gives you access to its value as shown in the following example:
 

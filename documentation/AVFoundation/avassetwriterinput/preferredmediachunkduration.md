@@ -24,7 +24,7 @@ var preferredMediaChunkDuration: CMTime { get set }
 @property (nonatomic) CMTime preferredMediaChunkDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports file types that support media chunk alignment, such as QuickTime Movie files. Chunk duration can influence the granularity of the I/O the system performs when reading a media file; for example, during playback. A larger chunk duration can result in fewer reads from disk, at the potential expense of a higher memory footprint.
 

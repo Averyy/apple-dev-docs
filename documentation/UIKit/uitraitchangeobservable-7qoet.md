@@ -19,7 +19,7 @@ A type that calls your code in reaction to changes in the trait environment.
 @protocol UITraitChangeObservable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to `UITraitChangeObservable` can execute your code in response to changes in their trait collection. When you register for trait changes, the system observes the specified traits, and calls your code when any of the observed traits change value.
 

@@ -19,7 +19,7 @@ var rangesForUserCharacterAttributeChange: [NSValue]? { get }
 @property (copy, readonly, nullable) NSArray<NSValue *> * rangesForUserCharacterAttributeChange;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing the ranges of characters affected by an action method that changes character (not paragraph) attributes, such as the NSText action method [`changeFont(_:)`](../nstext/changefont%28_%29.md). For rich text these ranges are typically the ranges of the selections. For plain text the range is the entire contents of the receiver.
 

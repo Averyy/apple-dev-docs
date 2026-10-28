@@ -21,7 +21,7 @@ func CVOpenGLBufferPoolGetTypeID() -> CFTypeID
 extern CFTypeID CVOpenGLBufferPoolGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation ID for this data type.
 

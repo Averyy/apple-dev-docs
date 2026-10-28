@@ -18,11 +18,11 @@ Returns an image object that contains the specified portion of the drawing.
 func image(from rect: CGRect, scale: CGFloat) -> UIImage
 ```
 
-#### Return Value
+## Return Value
 
 A new image object that contains the rendered content.
 
-#### Discussion
+## Discussion
 
 This method creates a new image and renders content from the canvas into that image at the specified scale factor.
 

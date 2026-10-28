@@ -33,7 +33,7 @@ var predicate: NSPredicate? { get set }
 @property (atomic, copy, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `nil` to match all contacts or use the search predicates in [`CNContact`](../cncontact.md). Compound predicates are not supported.
 

@@ -5,11 +5,11 @@
 
 Manage background assets for your App store apps.
 
-#### Overview
+## Overview
 
 Use the Background assets API to manage content that Apple hosts, so people can download that content outside your main app bundle, for apps distributed through the App Store. You can also update additional content without creating a new app version.
 
-#### Create an asset pack record
+## Create an asset pack record
 
 Once you create your asset pack, you can start configuring your Apple hosted background assets. Begin by using [`Create Asset Pack Record`](./post-v1-backgroundassets.md).
 
@@ -38,7 +38,7 @@ This sample payload shows the structure of a [`Create Asset Pack Record`](./post
 
 This call’s response returns a UUID to your asset pack, which you can use in later API calls.
 
-#### Create an asset pack version record
+## Create an asset pack version record
 
 Next, you create a new version for your asset pack by using [`Create Asset Pack Version Record`](./post-v1-backgroundassetversions.md). In the relationships section, use the ID of the asset pack that the previous API response returned.
 
@@ -60,7 +60,7 @@ Next, you create a new version for your asset pack by using [`Create Asset Pack 
 }
 ```
 
-#### Upload an asset pack archive
+## Upload an asset pack archive
 
 This process is similar to uploading screenshots or app previews. First, you use [`Create a Reservation for an Asset Pack Upload`](./post-v1-backgroundassetuploadfiles.md) with a payload like this, where you use the UUID from the response when using [`Create Asset Pack Version Record`](./post-v1-backgroundassetversions.md):
 
@@ -110,7 +110,7 @@ You can optionally upload the asset manifest, to check its validity, by using [`
 
 Then, you upload the file with `PUT` request or requests, as necessary, which are included in the response of [`Create a Reservation for an Asset Pack Upload`](./post-v1-backgroundassetuploadfiles.md).
 
-#### Commit your asset pack to begin processing
+## Commit your asset pack to begin processing
 
 When you successfully upload your archive, you use [`Commit an Uploaded Asset Pack to a Background Asset Version`](./patch-v1-backgroundassetuploadfiles-_id_.md) to commit the upload. After this call, your upload starts processing. Use a payload like this including the upload file ID:
 
@@ -126,19 +126,19 @@ When you successfully upload your archive, you use [`Commit an Uploaded Asset Pa
 }
 ```
 
-#### Test your asset pack
+## Test your asset pack
 
 When the asset pack version is successfully processed by the App Store, you see an Internal Beta Release resource created with the “Ready for testing” state in App Store Connect. This means the new version is ready for use in your app builds in internal TestFlight.
 
 After successful upload and internal testing, to test your asset pack version with a wider audience via external TestFlight, submit it to beta-asset pack review using [`Submit an app for beta review`](./post-v1-betaappreviewsubmissions.md) or in App Store Connect.
 
-#### Submit your asset pack
+## Submit your asset pack
 
 When you are ready to publish the asset pack version to the App Store, you can submit it to review using [`Create a Review Submission`](./post-v1-reviewsubmissions.md). You can submit the asset pack version by itself, with other asset packs, and as an app build with all files.
 
 In this example, when the review submission state is `APPROVED`, version `1` of the asset pack is available to any version of your app live on the App Store.
 
-#### Update and version your asset packs
+## Update and version your asset packs
 
 Once you have live app versions and asset packs for TestFlight and the App Store, you can also  update either the app binary or the asset pack content.
 

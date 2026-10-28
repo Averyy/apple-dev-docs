@@ -33,7 +33,7 @@ weak var delegate: (any UNUserNotificationCenterDelegate)? { get set }
 @property (atomic, weak, nullable) id<UNUserNotificationCenterDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate object to respond to user-selected actions and to process incoming notifications when your app is in the foreground. For example, you might use your delegate to silence notifications when your app is in the foreground.
 

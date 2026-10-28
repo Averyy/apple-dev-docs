@@ -15,11 +15,11 @@ Compare and swap operation, performed atomically with respect to all devices tha
 Boolean OSCompareAndSwap(UInt32 oldValue, UInt32 newValue, volatile UInt32 *address);
 ```
 
-#### Return Value
+## Return Value
 
 true if newValue was written to the address.
 
-#### Discussion
+## Discussion
 
 The OSCompareAndSwap function compares the value at the specified address with oldVal. The value of newValue is written to the address only if oldValue and the value at the address are equal. OSCompareAndSwap returns true if newValue is written to the address; otherwise, it returns false.
 

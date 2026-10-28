@@ -5,11 +5,11 @@
 
 Select the resources that you want to localize for each language and region you support.
 
-#### Overview
+## Overview
 
 Add the language and region combinations you want to support to your project. For each localization, select the resources, such as image and audio files, that you want to localize.
 
-##### Add localizations
+### Add localizations
 
 In the project editor, select the project name under Project, and click Info. Under Localizations, click the Add button (+), then choose a language and region combination from the pop-up menu.
 
@@ -25,7 +25,7 @@ For storyboard and XIB interfaces, select the user interface files (files with a
 
 > **Note**: Xcode adds the `Base` and the development language to the localization table by default. Use the Base localization for resources that support string substitution at runtime, such as storyboard, XIB, and Siri intent definition files.
 
-##### View localizable resources
+### View localizable resources
 
 You can verify the resources for each localization in the Project navigator and Finder.
 

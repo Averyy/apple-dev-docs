@@ -21,7 +21,7 @@ The continent that contains this region, if any.
 var continent: Locale.Region? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil` when the system can’t determine the appropriate continent, such as when the region isn’t an ISO region.
 

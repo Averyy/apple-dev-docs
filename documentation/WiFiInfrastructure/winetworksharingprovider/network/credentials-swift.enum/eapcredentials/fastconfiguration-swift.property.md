@@ -17,7 +17,7 @@ The configuration to use for EAP-FAST.
 let fastConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration?
 ```
 
-#### Discussion
+## Discussion
 
 Set to this property to `nil` if this network doesn’t use EAP-FAST.
 

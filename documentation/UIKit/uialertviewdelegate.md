@@ -24,7 +24,7 @@ protocol UIAlertViewDelegate : NSObjectProtocol
 @protocol UIAlertViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate implements the button actions and any other custom behavior. Some of the methods defined in this protocol are optional.
 

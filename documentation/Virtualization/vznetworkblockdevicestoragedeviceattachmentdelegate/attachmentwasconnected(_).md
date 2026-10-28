@@ -19,7 +19,7 @@ optional func attachmentWasConnected(_ attachment: VZNetworkBlockDeviceStorageDe
 - (void) attachmentWasConnected:(VZNetworkBlockDeviceStorageDeviceAttachment *) attachment;
 ```
 
-#### Discussion
+## Discussion
 
 Connection with the server takes place when the VM is first started, and reconnection attempts take place when the connection times out or when the NBD client has encountered a recoverable error, such as an I/O error from the server. The Virtualization framework may call this method multiple times during a VM’s life cycle. Reconnections are transparent to the guest.
 

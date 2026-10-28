@@ -20,7 +20,7 @@ class AVDisplayCriteria
 @interface AVDisplayCriteria : NSObject
 ```
 
-#### Overview
+## Overview
 
 In tvOS, this object provides the display criteria that an [`AVDisplayManager`](../AVKit/avdisplaymanager.md) uses to set an appropriate display mode, such as switching to HDR, when presenting a video asset. If your app uses [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) for its player user interface, the system automatically applies the display critera when it presents the asset. If you use a custom player interface, load the value of an asset’s [`preferredDisplayCriteria`](./avpartialasyncproperty/preferreddisplaycriteria.md) property and set it on the window’s [`avDisplayManager`](../UIKit/uiwindow/avdisplaymanager.md) object.
 

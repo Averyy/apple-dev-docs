@@ -19,7 +19,7 @@ class NSTreeNode
 @interface NSTreeNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSTreeNode`](./nstreenode.md) simplifies the creation and management of trees of objects. Each tree node represents a model object. A tree node with `nil` as its parent node is considered the root of the tree.
 

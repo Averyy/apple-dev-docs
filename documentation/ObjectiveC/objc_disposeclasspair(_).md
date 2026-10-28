@@ -25,7 +25,7 @@ func objc_disposeClassPair(_ cls: AnyClass)
 extern void objc_disposeClassPair(Class cls);
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this function if instances of the `cls` class or any subclass exist.
 

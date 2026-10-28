@@ -25,11 +25,11 @@ func CTFontGetSymbolicTraits(_ font: CTFont) -> CTFontSymbolicTraits
 extern CTFontSymbolicTraits CTFontGetSymbolicTraits(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The symbolic traits of the font. This is equivalent to the `kCTFontSymbolicTrait` value of the traits dictionary.
 
-#### Discussion
+## Discussion
 
 See the Constants section of [`CTFontDescriptor`](./ctfontdescriptor.md) for a definition of the font traits.
 

@@ -21,7 +21,7 @@ var url: URL? { get set }
 @property (nonatomic, retain, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum length of the URL is 64 characters, including the schema. To disable the merchant URL, set [`url`](./url.md) to `nil.`
 

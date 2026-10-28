@@ -21,7 +21,7 @@ func vSgevv(_ l: Int32, _ n: Int32, _ A: UnsafePointer<vFloat>, _ B: UnsafePoint
 extern void vSgevv(int32_t l, int32_t n, const vFloat *A, const vFloat *B, vFloat *M);
 ```
 
-#### Discussion
+## Discussion
 
 The vectors `A` and `B` are multiplied and the result is stored in matrix `M`, that is, for `0 <= i < l` and `0 <= j < n`, `C[i*n + j] = A[i] * B[j]`..
 

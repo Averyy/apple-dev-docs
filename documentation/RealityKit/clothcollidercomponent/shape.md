@@ -17,7 +17,7 @@ The (simulation) shape of the collider.
 var shape: ClothColliderShape { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The shape type cannot be changed after creation. Assigning a shape of a different type will be silently ignored. To use a different shape type, create a new component.
 

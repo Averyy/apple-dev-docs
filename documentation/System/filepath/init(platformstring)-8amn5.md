@@ -21,7 +21,7 @@ Creates a file path by copying bytes from a null-terminated platform string.
 init(platformString: [CInterop.PlatformChar])
 ```
 
-#### Discussion
+## Discussion
 
 - Note It is a precondition that `platformString` must be null-terminated. The absence of a null byte will trigger a runtime error.
 

@@ -19,11 +19,11 @@ func localizedName(forFamily family: String, face faceKey: String?) -> String
 - (NSString *) localizedNameForFamily:(NSString *) family face:(NSString *) faceKey;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string with the name of the specified font family and face, or, if `face` is `nil`, the font family only.
 
-#### Discussion
+## Discussion
 
 The user’s locale is determined from the user’s `NSLanguages` default setting. The method also loads the localized strings for the font, if they aren’t already loaded.
 

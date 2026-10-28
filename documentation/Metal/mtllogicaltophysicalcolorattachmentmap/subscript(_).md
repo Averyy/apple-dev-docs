@@ -20,7 +20,7 @@ Maps a physical color attachment index to a logical index.
 subscript(logicalIndex: Int) -> Int { get set }
 ```
 
-#### Overview
+## Overview
 
 To set the physical index, which represents the render pass color attachment index `P`, for a logical index, which represents the pipeline state’s configuration for a color attachment `L`, assign: `myMapping[L] = P`. To retrieve a stored physical index use `let P = myMapping[L]`.
 

@@ -22,7 +22,7 @@ var contentTypesForRecentDocuments: [UTType] { get }
 @property (nonatomic, copy, readonly) NSArray<UTType *> * contentTypesForRecentDocuments;
 ```
 
-#### Discussion
+## Discussion
 
 The default list is the same as the list of content types you provide to the initializer, or the types you define in [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) in the app’s `Info.plist` file.
 

@@ -21,7 +21,7 @@ Performs a one-hot encoding on a sequence of inputs.
 func applied<S>(_ input: S, eventHandler: EventHandler? = nil) throws -> [[Int]] where S : Sequence, S.Element == Category?
 ```
 
-#### Return Value
+## Return Value
 
 An array of one-hot encoded arrays.
 

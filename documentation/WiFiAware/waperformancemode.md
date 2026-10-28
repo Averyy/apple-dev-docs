@@ -17,7 +17,7 @@ The performance mode that indicates what performance criterion to prioritize.
 enum WAPerformanceMode
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Each service must have the same [`WAPerformanceMode`](./waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](./waperformancemode/bulk.md) on both sides.
 

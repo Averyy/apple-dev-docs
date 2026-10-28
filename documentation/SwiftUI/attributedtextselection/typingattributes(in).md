@@ -21,7 +21,7 @@ Returns the typing attributes for a corresponding text.
 func typingAttributes(in text: AttributedString) -> AttributeContainer
 ```
 
-#### Discussion
+## Discussion
 
 The typing attributes are the attributes that will be applied to any new characters typed out by the user.
 

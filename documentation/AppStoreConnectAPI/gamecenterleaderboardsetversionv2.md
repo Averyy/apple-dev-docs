@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard set version v2 reso
 object GameCenterLeaderboardSetVersionV2
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

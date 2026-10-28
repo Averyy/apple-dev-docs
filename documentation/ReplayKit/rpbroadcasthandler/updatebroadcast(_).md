@@ -24,7 +24,7 @@ func updateBroadcast(_ broadcastURL: URL)
 - (void) updateBroadcastURL:(NSURL *) broadcastURL;
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the [`broadcastURL`](../rpbroadcastcontroller/broadcasturl.md) property for the broadcast controller.
 

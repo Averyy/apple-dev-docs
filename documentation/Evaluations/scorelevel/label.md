@@ -22,7 +22,7 @@ A short judge-facing label for this level.
 var label: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default is `String(describing: self)`, which for enums produces the case name.
 

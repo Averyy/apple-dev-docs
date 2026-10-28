@@ -18,7 +18,7 @@ typedef struct TextEncodingRun {
 } TextEncodingRun;
 ```
 
-#### Overview
+## Overview
 
 It is not always possible to convert text expressed in Unicode to another single encoding because no other single encoding encompasses the Unicode character encoding range. To adjust for this, you can create a Unicode mapping structure array that specifies the target encodings the Unicode text should be converted to when multiple encodings must be used. 
 

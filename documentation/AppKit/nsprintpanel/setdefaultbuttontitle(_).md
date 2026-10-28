@@ -19,7 +19,7 @@ func setDefaultButtonTitle(_ defaultButtonTitle: String?)
 - (void) setDefaultButtonTitle:(NSString *) defaultButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to change the default button title from “Print” to something more appropriate for your usage of the panel. For example, if you are using the Print panel to save a representation of the document to a file, you might change the title to “Save”.
 

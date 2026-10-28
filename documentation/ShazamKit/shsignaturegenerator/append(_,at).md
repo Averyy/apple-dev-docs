@@ -29,7 +29,7 @@ func append(_ buffer: AVAudioPCMBuffer, at time: AVAudioTime?) throws
 
 - [Generating a signature from an audio buffer](../generating-a-signature-from-an-audio-buffer.md)
 
-#### Discussion
+## Discussion
 
 Using noncontiguous audio may result in a lower-quality signature.
 

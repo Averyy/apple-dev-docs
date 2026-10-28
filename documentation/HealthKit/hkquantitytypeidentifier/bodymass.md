@@ -28,7 +28,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBodyMass;
 
 - [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
-#### Discussion
+## Discussion
 
 These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

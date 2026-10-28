@@ -24,11 +24,11 @@ subscript(idx: Int) -> ComponentType { get }
 - (ComponentType) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The component at the specified index in the [`components`](./components.md) array.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to accessing objects by index in the [`components`](./components.md) array, but allows access using subscript syntax on the component system itself.
 

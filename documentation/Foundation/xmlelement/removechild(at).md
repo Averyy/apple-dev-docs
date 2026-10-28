@@ -20,7 +20,7 @@ func removeChild(at index: Int)
 - (void) removeChildAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The XML node object is released upon removal. The indices of subsequent children are decremented by one.
 

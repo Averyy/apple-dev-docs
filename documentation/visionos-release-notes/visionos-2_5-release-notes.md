@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 2.5 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.5. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [Xcode 16.4 Release Notes](../Xcode-Release-Notes/xcode-16_4-release-notes.md).
 
-##### Personal Hotspot
+### Personal Hotspot
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: FaceTime calls might fail to initiate or be received when using certain configurations of Personal Hotspot.  (147881720)
 
-##### Siri
+### Siri
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Requests to play music on Amazon Music do not work.  (147879204)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)
 

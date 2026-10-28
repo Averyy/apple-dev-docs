@@ -21,7 +21,7 @@ func draw(in context: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLaye
 - (void) drawInOpenGLContext:(NSOpenGLContext *) context pixelFormat:(NSOpenGLPixelFormat *) pixelFormat forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a new frame needs to be generated for the layer time specified by timeInterval.
 

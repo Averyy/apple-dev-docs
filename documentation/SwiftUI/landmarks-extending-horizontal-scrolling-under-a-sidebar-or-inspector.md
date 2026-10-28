@@ -13,7 +13,7 @@ Improve your horizontal scrollbar’s appearance by extending it under a sidebar
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way.
 
@@ -21,7 +21,7 @@ This sample demonstrates how to extend horizontal scrolling under a sidebar or i
 
 ![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-3@2x.png)
 
-#### Configure the scroll view
+## Configure the scroll view
 
 To achieve this effect, the sample configures the `LandmarkHorizontalListView` so it touches the leading and trailing edges. When a scroll view touches the sidebar or inspector, the system automatically adjusts it to scroll under the sidebar or inspector and then off the edge of the screen.
 

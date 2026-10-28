@@ -21,7 +21,7 @@ An attribute that applies a text effect to the text.
 static let textEffect: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object. Use this attribute to specify a text effect, such as [`letterpressStyle`](../texteffectstyle/letterpressstyle.md). The default value of this property is `nil`, indicating no text effect.
 

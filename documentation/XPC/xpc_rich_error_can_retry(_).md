@@ -25,7 +25,7 @@ func xpc_rich_error_can_retry(_ error: xpc_rich_error_t) -> Bool
 extern bool xpc_rich_error_can_retry(xpc_rich_error_t error);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if you can try the operation again; otherwise [`false`](../Swift/false.md).
 

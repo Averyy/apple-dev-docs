@@ -24,7 +24,7 @@ case customSampleDepthStore
 MTLStoreActionCustomSampleDepthStore
 ```
 
-#### Discussion
+## Discussion
 
 You can only set this action on an [`MTLRenderPassDepthAttachmentDescriptor`](../mtlrenderpassdepthattachmentdescriptor.md) instance.
 

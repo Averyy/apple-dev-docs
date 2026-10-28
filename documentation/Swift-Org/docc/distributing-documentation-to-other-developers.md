@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Share your documentation by hosting it on a web server.
 
-#### Overview
+## Overview
 
 As soon as you create a Swift framework or package, DocC is ready to generate structured documentation for the public types in your code base. Whether you only have documentation comments in your source files, or you craft a full learning experience that includes articles and tutorials, you can easily share the documentation in your code base with other developers.
 
@@ -24,7 +24,7 @@ Distributing your documentation involves the following steps:
 1. Export your documentation using the `docc` command-line tool.
 2. Share your documentation by hosting it on a website.
 
-##### Generate a Publishable Archive of Your Documentation
+### Generate a Publishable Archive of Your Documentation
 
 To create a documentation archive for a Swift package, use the [SwiftPM DocC Plugin](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/) or use Xcode’s *Build Documentation* command.
 
@@ -39,7 +39,7 @@ docc convert MyNewPackage.docc \
   --output-dir MyNewPackage.doccarchive
 ```
 
-###### Include Links to your Project’s Sources
+#### Include Links to your Project’s Sources
 
 When publishing documentation to an audience that has access to your project’s sources; for example, with an open source project hosted on GitHub, consider configuring DocC to automatically include links to the declarations of your project’s symbols.
 
@@ -80,13 +80,13 @@ docc convert […] \
 
 These arguments can also be provided to `swift package generate-documentation` if you’re using the SwiftPM DocC Plugin or via the `OTHER_DOCC_FLAGS` build setting when building in Xcode.
 
-##### Send a Documentation Archive Directly to Developers
+### Send a Documentation Archive Directly to Developers
 
 Because a documentation archive is a self-contained bundle, you can easily share it with other developers. For example, you can send it by email just like a regular document, include it with a binary distribution of your framework or package, or make it downloadable from a website.
 
 To remove an imported documentation archive, place your pointer over the item to display the More button, and then choose Remove.
 
-##### Host a Documentation Archive on Your Website
+### Host a Documentation Archive on Your Website
 
 When DocC exports a documentation archive, it includes a single-page web app in the bundle. This web app renders the documentation content as HTML, letting you host the documentation archive on a web server.
 
@@ -96,7 +96,7 @@ For reference documentation and articles, the web app uses a URL path that begin
 https://www.example.com/documentation/MyNewPackage/MyNewProtocol
 ```
 
-###### Host a Documentation Archive with a File Server
+#### Host a Documentation Archive with a File Server
 
 You can host documentation archives you create with DocC from the Swift 5.7 toolchain and later using a regular file server. By default, the server hosts the documentation at the root of the website, like the “MyNewPackage” example above. To host the documentation at a specific subpath, pass a custom hosting base path for the `--hosting-base-path` option when you build the documentation archive.
 
@@ -117,7 +117,7 @@ https://www.example.com/MyProject/Base/Path/documentation/MyNewPackage/MyNewProt
 
 You can also configure the base path path via the `--hosting-base-path` option when [building documentation using the SwiftPM DocC Plugin](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/generating-documentation-for-hosting-online/) or via the `DOCC_HOSTING_BASE_PATH` build setting when building documentation in Xcode.
 
-###### Host a Documentation Archive Using Custom Routing
+#### Host a Documentation Archive Using Custom Routing
 
 A file server is the recommended solution to host your documentation. But, if you need more control over how the server hosts your content, you can configure the request routing of your web server so it responds to documentation requests with the data and assets within the documentation archive.
 

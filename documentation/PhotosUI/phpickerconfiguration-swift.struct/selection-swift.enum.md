@@ -19,7 +19,7 @@ Options that represent differing selection behavior.
 enum Selection
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the possible values of the photo picker configuration ([`PHPickerConfiguration`](../phpickerconfiguration-swift.struct.md)) property [`selection`](./selection-swift.property.md).
 

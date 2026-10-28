@@ -21,7 +21,7 @@ static func + (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 
 - [Numpy Style Broadcasting](../broadcasting.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`+(_:_:)`](./plus%28_,_%29-1rv98.md)

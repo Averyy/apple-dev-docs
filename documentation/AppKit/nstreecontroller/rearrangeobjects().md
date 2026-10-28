@@ -19,7 +19,7 @@ func rearrangeObjects()
 - (void) rearrangeObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses should invoke this method if any parameter that affects the arranged objects changes.
 

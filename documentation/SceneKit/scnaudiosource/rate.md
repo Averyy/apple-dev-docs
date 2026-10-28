@@ -25,7 +25,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the default rate for when a source begins playing. To vary the rate during playback through an [`SCNAudioPlayer`](../scnaudioplayer.md) object, use the player’s [`audioNode`](../scnaudioplayer/audionode.md) property to access real-time audio controls.
 

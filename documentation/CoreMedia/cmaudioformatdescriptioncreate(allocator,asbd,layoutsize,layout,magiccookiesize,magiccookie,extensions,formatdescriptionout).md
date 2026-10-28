@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionCreate(allocator: CFAllocator?, asbd: UnsafePointer
 extern OSStatus CMAudioFormatDescriptionCreate(CFAllocatorRef allocator, const AudioStreamBasicDescription *asbd, size_t layoutSize, const AudioChannelLayout *layout, size_t magicCookieSize, const void *magicCookie, CFDictionaryRef extensions, CMAudioFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The `absd` is required, the channel layout is optional, and the magic cookie is required  for some compression formats (and must be NULL for all others). The caller owns the returned `CMFormatDescription`, and must release it when done with it.  The `ASBD`, magic cookie, channel layout, and extensions are all copied (the extensions are deep-copied).  The caller can deallocate them or re-use them after making this call.
 

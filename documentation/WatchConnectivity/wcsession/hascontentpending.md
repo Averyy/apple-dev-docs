@@ -23,7 +23,7 @@ var hasContentPending: Bool { get }
 @property (nonatomic, readonly) BOOL hasContentPending;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the session has received data in the background but has not yet delivered that data to the session’s delegate. The following methods send data in the background:
 

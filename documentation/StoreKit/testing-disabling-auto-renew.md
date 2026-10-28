@@ -5,13 +5,13 @@
 
 Verify that your app receives subscription updates when a user cancels a subscription by verifying the receipt or receiving a notification.
 
-#### Overview
+## Overview
 
 Customers can manage their active subscriptions, as well as their expired subscriptions for up to a year after expiry, in the Subscriptions page on iOS, tvOS, iPadOS, and macOS. In this test scenario, the customer cancels a subscription, which disables auto-renew.
 
 To set up for this test, purchase an auto-renewable subscription for the Sandbox Apple Account.
 
-##### Begin testing
+### Begin testing
 
 To test disabling auto-renew:
 
@@ -25,7 +25,7 @@ Verify the change in the subscription status using either of these two methods:
 - If you’ve configured App Store Connect settings to receive App Store server notifications, your server receives the [`notification_type`](../AppStoreServerNotifications/notification_type.md) `DID_CHANGE_RENEWAL_STATUS` each time the subscription’s auto-renew status changes. For more information, see [Enabling App Store Server Notifications](../AppStoreServerNotifications/enabling-app-store-server-notifications.md).
 - Verify the receipt by calling [`verifyReceipt`](../AppStoreReceipts/verify-receipt.md) with the latest receipt. Check that the [`auto_renew_status`](../AppStoreReceipts/auto_renew_status.md) property of the [`responseBody.Pending_renewal_info`](../AppStoreReceipts/responsebody/pending_renewal_info-data.dictionary.md) object changes to `0`. The `auto_renew_status_change_date_ms` property of `responseBody` contains the timestamp of the change.
 
-##### Test reenabling the subscription renewal
+### Test reenabling the subscription renewal
 
 After disabling auto-renew, reenable the subscription on the same Manage Subscriptions page by tapping the subscription and confirming payment.
 

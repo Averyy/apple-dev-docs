@@ -23,11 +23,11 @@ func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>
 extern CFRunLoopRefMIDIGetDriverIORunLoop();
 ```
 
-#### Return Value
+## Return Value
 
 The [`CFRunLoop`](../CoreFoundation/cfrunloop.md) of the server’s driver I/O thread.
 
-#### Discussion
+## Discussion
 
 Drivers typically need to receive asynchronous I/O completion callbacks on a high-priority thread. So that the system can efficiently manage resources, the MIDI server provides a thread which drivers may use. This is a realtime-priority thread that drivers shouldn’t use for anything other than I/O.
 

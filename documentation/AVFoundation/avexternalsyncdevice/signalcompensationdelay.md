@@ -23,7 +23,7 @@ var signalCompensationDelay: CMTime { get set }
 @property (nonatomic) CMTime signalCompensationDelay;
 ```
 
-#### Discussion
+## Discussion
 
 An external sync is generally used to configure multiple devices in the real world. A display and a camera may receive a signal at the same time, but that does not mean the refresh of the display and camera are aligned in a way that does not cause tearing in the recording. The signal compensation delay can be used to offset the readout of a camera on an intra-frame scale.
 

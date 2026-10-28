@@ -23,7 +23,7 @@ var activePrimaryConstituent: AVCaptureDevice? { get }
 @property (nonatomic, readonly, nullable) AVCaptureDevice * activePrimaryConstituentDevice;
 ```
 
-#### Discussion
+## Discussion
 
 The primary constituent device may change when zoom, exposure, or focus changes. The value is `nil` for nonvirtual devices.
 

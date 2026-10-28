@@ -26,7 +26,7 @@ var status: AVQueuedSampleBufferRenderingStatus { get }
 @property (readonly) AVQueuedSampleBufferRenderingStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 If the status is [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md), check the value of the [`error`](./error.md) property to determine the failure. To resume rendering sample buffers after a failure, you must first reset the status to [`AVQueuedSampleBufferRenderingStatus.unknown`](../avqueuedsamplebufferrenderingstatus/unknown.md), which you do by invoking [`flush()`](../avqueuedsamplebufferrendering/flush%28%29.md) on the video renderer.
 

@@ -23,7 +23,7 @@ var injectionTime: WKUserScriptInjectionTime { get }
 @property (nonatomic, readonly) WKUserScriptInjectionTime injectionTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value is one of the constants of the enumerated type [`WKUserScriptInjectionTime`](../wkuserscriptinjectiontime.md).
 

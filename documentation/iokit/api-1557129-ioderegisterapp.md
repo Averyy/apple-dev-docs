@@ -16,7 +16,7 @@ Disconnects the caller from an IOService after receiving power state change noti
 IOReturn IODeregisterApp(io_object_t *notifier);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 

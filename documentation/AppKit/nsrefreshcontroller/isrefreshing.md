@@ -19,7 +19,7 @@ var isRefreshing: Bool { get }
 @property (readonly) BOOL isRefreshing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `NO`. When the user triggers a refresh, this property automatically becomes `YES`. Call [`endRefreshing()`](./endrefreshing%28%29.md) when your refresh operation completes to reset this property to `NO`.
 

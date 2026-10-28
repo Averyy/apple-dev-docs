@@ -24,7 +24,7 @@ var contactPredicate: NSPredicate { get }
 @property (nonatomic, readonly) NSPredicate * contactPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get a predicate that you can use with a [`CNContactStore`](../../Contacts/cncontactstore.md) to fetch a [`CNContact`](../../Contacts/cncontact.md) instance for this participant, if one exists.
 

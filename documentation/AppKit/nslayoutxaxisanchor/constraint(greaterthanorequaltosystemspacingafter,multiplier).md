@@ -19,11 +19,11 @@ func constraint(greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnch
 - (NSLayoutConstraint *) constraintGreaterThanOrEqualToSystemSpacingAfterAnchor:(NSLayoutXAxisAnchor *) anchor multiplier:(CGFloat) multiplier;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that imposes a minimum distance between the current anchor and the object in the `anchor` parameter.
 
-#### Discussion
+## Discussion
 
 The constraint causes the current anchor to trail the object in the `anchor` parameter. For example, in a left-to-right layout, the current anchor is to the right of `anchor`, but in a right-to-left layout, it’s to the left of `anchor`.
 

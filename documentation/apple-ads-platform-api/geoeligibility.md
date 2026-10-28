@@ -15,13 +15,13 @@ Eligibility restrictions for a geographic location, scoped to the supply source 
 object GeoEligibility
 ```
 
-#### Discussion
+## Discussion
 
 The `SearchEntity` responses embed `GeoEligibility`, which summarizes the serving eligibility for a geographic location relative to the supply source specified in the request. When present, `blockedGroups` is always non-empty. The API omits `GeoEligibility` entirely from the response when no restrictions apply. Each `GeoBlockedGroup` entry in `blockedGroups` identifies the supply source and the reason the geo is blocked.
 
 To pre-validate geo targeting choices before applying them to an ad group and avoid campaign configuration errors, use `GeoEligibility` data.
 
-##### Example
+### Example
 
 ```json
 {

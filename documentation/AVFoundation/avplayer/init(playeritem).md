@@ -26,7 +26,7 @@ init(playerItem item: AVPlayerItem?)
 - (instancetype) initWithPlayerItem:(AVPlayerItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 A new player initialized to play `item`.
 

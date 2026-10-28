@@ -25,11 +25,11 @@ func vImageConverter_GetNumberOfSourceBuffers(_ converter: vImageConverter) -> U
 unsigned long vImageConverter_GetNumberOfSourceBuffers(vImageConverterRef const converter);
 ```
 
-#### Return Value
+## Return Value
 
 The number of source buffers.
 
-#### Discussion
+## Discussion
 
 This function is for video formats that are planar data formats with data in more than one plane.
 

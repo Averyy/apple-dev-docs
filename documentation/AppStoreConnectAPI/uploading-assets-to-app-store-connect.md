@@ -5,7 +5,7 @@
 
 Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
 
-#### Overview
+## Overview
 
 While managing your App Store apps, you may need to upload various assets or files to App Store Connect. These assets may include screenshots, app previews, attachments for App Review, and routing app coverage files. The uploading APIs are designed to ensure reliability for large files, even over an unreliable connection. The API instructs you to divide individual large asset files into multiple upload requests. When you tell the API you’ve finished uploading, App Store Connect begins processing your files.
 
@@ -35,7 +35,7 @@ This workflow is the same for every asset type you manage and upload using the f
 | Subscription images | [Subscription images](./subscription-images.md) |
 | Routing app coverage files | [Routing App Coverages](./routing-app-coverages.md) |
 
-##### Make an Asset Reservation
+### Make an Asset Reservation
 
 The first step to upload an asset is making an asset reservation. You send a request that specifies the type of asset you’ll be uploading, its filename, and size in bytes. A successful response provides a set of operations you will use to upload the asset. If your asset is large, you may receive multiple operations in the response that ask you to divide the asset into parts for uploading.
 
@@ -135,7 +135,7 @@ After you make a successful reservation, your asset moves into the `AWAITING_UPL
 
 If your reservation request fails, the API returns an error code ([`ErrorResponse`](./errorresponse.md)). For more information, see [Interpreting and Handling Errors](./interpreting-and-handling-errors.md).
 
-##### Upload the Asset
+### Upload the Asset
 
 The next step in delivering an asset to App Store Connect is uploading the binary data that is the asset or file. Use the upload operations returned in the response to your reservation request to upload your asset to App Store Connect.
 
@@ -160,7 +160,7 @@ You can upload parts of your asset concurrently and in any order to improve perf
 
 The asset state remains as `AWAITING_UPLOAD` while you upload the parts that make up your file.
 
-##### Commit the Reservation
+### Commit the Reservation
 
 After you’ve uploaded all parts of your asset to App Store Connect, you must commit the reservation. The commit tells App Store Connect that you’ve finished uploading and the asset is ready to be processed.
 
@@ -189,7 +189,7 @@ A successful commit request changes the asset state to `UPLOAD_COMPLETE`.
 
 After you commit the asset, you can no longer upload component parts. To update your asset after committing it, delete it and create another upload, beginning with an asset reservation.
 
-##### Verify the Upload Succeeded
+### Verify the Upload Succeeded
 
 After receiving your commit request, App Store Connect validates and processes the uploaded asset. Processing is asynchronous and can take from a few seconds up to a few minutes, depending on the size and complexity of the asset. Your asset remains in the `UPLOAD_COMPLETE` state until App Store Connect finishes processing it. Use the API to re-fetch the asset at any time to check on its status.
 
@@ -197,13 +197,13 @@ If your asset processes successfully, the system changes the asset’s state to 
 
 If your asset’s processing fails, the system changes the asset’s state to `FAILED`. `FAILED` is a terminal state. To upload your asset you must delete the asset record and retry your upload, beginning with making an asset reservation.
 
-##### Validate Your Upload
+### Validate Your Upload
 
 App Store Connect validates uploads by confirming that the checksum of the final asset received matches the `sourceFileChecksum` you specified in your commit request. App Store Connect also checks other criteria, like file formats and screenshot dimensions.
 
 You can further validate your uploads by viewing your app’s metadata in App Store Connect or by using the API to download the final processed asset for review.
 
-##### Resolve Upload Failures
+### Resolve Upload Failures
 
 You may encounter errors at any stage of the upload process: during the upload due to power outages or an expired reservations, or after you’ve uploaded the asset if the App Store Connect processing fails.
 

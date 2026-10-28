@@ -20,7 +20,7 @@ class func prefix(forName name: String) -> String?
 + (NSString *) prefixForName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the qualified name is “bst:title”, this method returns “bst”.
 

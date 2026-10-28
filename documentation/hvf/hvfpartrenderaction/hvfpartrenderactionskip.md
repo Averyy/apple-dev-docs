@@ -21,7 +21,7 @@ Instruct the scaler to skip rendering this part.
 HVFPartRenderActionSkip
 ```
 
-#### Discussion
+## Discussion
 
 This action is ignored except in response to the `HVFPartRenderInstructionBeginPart` instruction.
 

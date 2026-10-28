@@ -21,11 +21,11 @@ func newItem(forRepresentedObject object: Any) -> NSCollectionViewItem
 - (NSCollectionViewItem *) newItemForRepresentedObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized collection view item with the specified object and the appropriate view set. The collection view item should not be autoreleased.
 
-#### Discussion
+## Discussion
 
 Whenever possible, register classes or nib files for your items instead of using this property. For more information, see Creating Collection View Items.
 

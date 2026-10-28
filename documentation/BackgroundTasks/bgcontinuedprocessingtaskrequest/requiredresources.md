@@ -25,7 +25,7 @@ var requiredResources: BGContinuedProcessingTaskRequest.Resources { get set }
 
 - [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Discussion
+## Discussion
 
 To request background GPU support for the task, set this property to [`gpu`](./resources/gpu.md). First, check whether the device supports background GPU use; see [`supportedResources`](../bgtaskscheduler/supportedresources.md).
 

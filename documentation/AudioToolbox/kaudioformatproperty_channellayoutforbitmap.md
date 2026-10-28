@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelLayoutForBitmap: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelLayoutForBitmap
 ```
 
-#### Discussion
+## Discussion
 
 The channel descriptions for a standard channel layout, in the form of an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure. In some uses, an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) can be valid with the `mChannelLayoutTag` field set to an [`kAudioChannelLayoutTag_UseChannelBitmap`](../CoreAudioTypes/kaudiochannellayouttag_usechannelbitmap.md) value and the bitmap set appropriately. The specifier is a `UInt32` value representing he `mChannelBitmap` field of the [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure that contains the layout.
 

@@ -19,7 +19,7 @@ var content: [Any] { get set }
 @property (copy) NSArray<id> * content;
 ```
 
-#### Discussion
+## Discussion
 
 The content object manages the data in the collection view. Use this object to specify an array of items directly. This property is observable using key-value observing. The collection view also exposes a `content` binding value so that you can specify the array of items using an ArrayController object in Interface Builder.
 

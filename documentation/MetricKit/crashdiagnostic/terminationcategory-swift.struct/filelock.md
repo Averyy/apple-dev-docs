@@ -19,7 +19,7 @@ The app was terminated while suspended for holding file locks.
 static let fileLock: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`fileLockTerminationCount`](../../backgroundterminationmetric/filelockterminationcount.md).
 

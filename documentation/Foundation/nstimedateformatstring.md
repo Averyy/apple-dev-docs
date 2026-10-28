@@ -17,7 +17,7 @@ Key for the value that specifies how dates with times are printed, affecting str
 extern NSString * const NSTimeDateFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is to use full month names and days with a 24-hour clock, as in “Sunday, January 01, 2001 23:00:00 Pacific Standard Time.”
 

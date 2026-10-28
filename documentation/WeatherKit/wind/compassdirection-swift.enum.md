@@ -22,7 +22,7 @@ A compass composed of cardinal and intercardinal directions.
 enum CompassDirection
 ```
 
-#### Overview
+## Overview
 
 This enumeration represents true headings.
 

@@ -12,7 +12,7 @@ Initializes a version struct with the provided components of a semantic version.
 init(_ major: Int, _ minor: Int, _ patch: Int, prereleaseIdentifiers: [String] = [], buildMetadataIdentifiers: [String] = [])
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `major >= 0 && minor >= 0 && patch >= 0`.
 

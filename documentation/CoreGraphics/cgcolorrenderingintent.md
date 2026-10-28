@@ -25,7 +25,7 @@ enum CGColorRenderingIntent
 enum CGColorRenderingIntent : int32_t;
 ```
 
-#### Overview
+## Overview
 
 The rendering intent specifies how Quartz should handle colors that are not located within the gamut of the destination color space of a graphics context. It determines the exact method used to map colors from one color space to another. If you do not explicitly set the rendering intent by calling the function [`setRenderingIntent(_:)`](./cgcontext/setrenderingintent%28_%29.md), the graphics context uses the relative colorimetric rendering intent, except when drawing sampled images.
 

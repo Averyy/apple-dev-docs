@@ -19,7 +19,7 @@ class NSTreeController
 @interface NSTreeController : NSObjectController
 ```
 
-#### Overview
+## Overview
 
 The [`NSTreeController`](./nstreecontroller.md) class provides selection and sort management. Its primary purpose is to act as the controller when binding [`NSOutlineView`](./nsoutlineview.md) and [`NSBrowser`](./nsbrowser.md) instances to a hierarchical collection of objects. The root content object of the tree can be a single object, or an array of objects.
 

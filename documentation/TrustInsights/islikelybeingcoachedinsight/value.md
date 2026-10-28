@@ -16,7 +16,7 @@ The levels of trust the framework returns for the “is likely being coached” 
 @nonexhaustive enum Value
 ```
 
-#### Discussion
+## Discussion
 
 The framework only returns additional result values when requesting a schema version that introduced a new value.
 

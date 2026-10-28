@@ -21,7 +21,7 @@ Decrements the retain count of a shading object.
 extern void CGShadingRelease(CGShadingRef shading);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `shading` parameter is `NULL`.
 

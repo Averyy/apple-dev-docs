@@ -17,7 +17,7 @@ A knowledge vector A is strictly less than another knowledge vector B if the clo
 static func < (lhs: OCKRevisionRecord.KnowledgeVector, rhs: OCKRevisionRecord.KnowledgeVector) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If A is strictly less than B, that means B had knowledge of A, therefore changes made by B should not be considered conflicts. If A is not strictly less than B, the changes in A and B are considered concurrent, and conflicts must be resolved.
 

@@ -22,7 +22,7 @@ var separatorColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * separatorColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is gray.
 

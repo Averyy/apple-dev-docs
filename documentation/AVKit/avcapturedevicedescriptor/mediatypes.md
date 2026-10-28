@@ -21,7 +21,7 @@ var mediaTypes: Set<AVMediaType> { get }
 @property (nonatomic, copy, readonly) NSSet<NSString *> * mediaTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The set of [`AVMediaType`](../../AVFoundation/avmediatype.md) values the camera supports, such as video or audio.
 

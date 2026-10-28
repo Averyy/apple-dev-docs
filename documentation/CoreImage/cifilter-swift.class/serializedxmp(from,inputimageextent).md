@@ -24,7 +24,7 @@ class func serializedXMP(from filters: [CIFilter], inputImageExtent extent: CGRe
 + (NSData *) serializedXMPFromFilters:(NSArray<CIFilter *> *) filters inputImageExtent:(CGRect) extent;
 ```
 
-#### Discussion
+## Discussion
 
 At this time the only filters classes that can be serialized using this method are, CIAffineTransform, CICrop, and the filters returned by the [`CIImage`](../ciimage.md) methods [`autoAdjustmentFilters()`](../ciimage/autoadjustmentfilters%28%29.md) and [`autoAdjustmentFilters(options:)`](../ciimage/autoadjustmentfilters%28options%29.md). The parameters of other filter classes will not be serialized.
 

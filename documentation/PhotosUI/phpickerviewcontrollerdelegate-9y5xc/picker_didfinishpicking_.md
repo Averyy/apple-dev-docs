@@ -19,7 +19,7 @@ Notifies the delegate that the user completed a selection or dismissed the picke
 - (void) picker:(PHPickerViewController *) picker didFinishPicking:(NSArray<PHPickerResult *> *) results;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t automatically dismiss the picker after calling this method.
 

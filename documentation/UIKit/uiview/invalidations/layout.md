@@ -20,7 +20,7 @@ A change that invalidates the layout of the containing view’s subviews.
 struct Layout
 ```
 
-#### Overview
+## Overview
 
 Use [`layout`](../../uiviewinvalidating/layout.md) to create an instance of this type.
 

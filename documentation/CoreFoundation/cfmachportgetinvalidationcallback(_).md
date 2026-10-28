@@ -25,7 +25,7 @@ func CFMachPortGetInvalidationCallBack(_ port: CFMachPort!) -> CFMachPortInvalid
 extern CFMachPortInvalidationCallBackCFMachPortGetInvalidationCallBack(CFMachPortRef port);
 ```
 
-#### Return Value
+## Return Value
 
 The callback function invoked when `port` is invalidated. `NULL` if no callback has been set with [`CFMachPortSetInvalidationCallBack(_:_:)`](./cfmachportsetinvalidationcallback%28_,_%29.md).
 

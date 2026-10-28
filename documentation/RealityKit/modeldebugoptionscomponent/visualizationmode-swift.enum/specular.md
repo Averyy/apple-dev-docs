@@ -20,7 +20,7 @@ A mode that displays en entity’s shininess as its surface color.
 case specular
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `specular` to an entity to tell RealityKit to draw the entity’s calculated specularity as its surface color. RealityKit uses `specular` to calculate bright highlights caused by shiny surfaces reflecting light. RealityKit draws the specularity value as a grayscale value from black (`0.0`) to white (`1.0`).
 

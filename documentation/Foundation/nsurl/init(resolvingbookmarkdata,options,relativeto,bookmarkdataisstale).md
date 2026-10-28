@@ -25,11 +25,11 @@ convenience init(resolvingBookmarkData bookmarkData: Data, options: NSURL.Bookma
 - (instancetype) initByResolvingBookmarkData:(NSData *) bookmarkData options:(NSURLBookmarkResolutionOptions) options relativeToURL:(NSURL *) relativeURL bookmarkDataIsStale:(BOOL *) isStale error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An NSURL initialized by resolving `bookmarkData`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

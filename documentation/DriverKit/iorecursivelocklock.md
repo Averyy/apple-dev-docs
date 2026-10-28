@@ -16,7 +16,7 @@
 void IORecursiveLockLock(struct IORecursiveLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock a recursive lock.
 

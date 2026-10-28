@@ -19,7 +19,7 @@ An error specific to the on-device system language model.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 > **Note**: If your app deploys to iOS 26, macOS 26, or visionOS 26, where this error is unavailable, use an availability check and fall back to [`LanguageModelSession.GenerationError.assetsUnavailable(_:)`](../languagemodelsession/generationerror/assetsunavailable%28_%29.md):
 >

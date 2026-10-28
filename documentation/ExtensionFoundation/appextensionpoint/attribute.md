@@ -21,7 +21,7 @@ An interface that marks a type as an extension point attribute.
 protocol Attribute
 ```
 
-#### Overview
+## Overview
 
 Types adopt this protocol if they comprise part of an extension point definition.
 

@@ -23,7 +23,7 @@ var isFollowingExternalSyncDevice: Bool { get }
 @property (nonatomic, readonly, getter=isFollowingExternalSyncDevice) BOOL followingExternalSyncDevice;
 ```
 
-#### Discussion
+## Discussion
 
 See [`follow(_:videoFrameDuration:delegate:)`](../avcapturedeviceinput/follow%28_,videoframeduration,delegate%29.md) for more information on external sync.
 

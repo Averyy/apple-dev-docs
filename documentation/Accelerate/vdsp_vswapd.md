@@ -21,7 +21,7 @@ Swaps the elements of two double-precision vectors using the specified stride.
 extern void vDSP_vswapD(double *__A, vDSP_Stride __IA, double *__B, vDSP_Stride __IB, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code swaps the elements in `vectorA` with those in `vectorB`:
 

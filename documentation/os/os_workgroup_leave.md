@@ -21,7 +21,7 @@ Removes the current thread from the workgroup it previously joined.
 extern void os_workgroup_leave(os_workgroup_t wg, os_workgroup_join_token_t token);
 ```
 
-#### Discussion
+## Discussion
 
 Always call this function using the same [`os_workgroup_t`](./os_workgroup_t.md) and [`os_workgroup_join_token_t`](./os_workgroup_join_token_t.md) structures you used at join time. If the workgroup or token information doesn’t match, this function aborts the current process. You may call this function safely from a real-time thread of your app.
 

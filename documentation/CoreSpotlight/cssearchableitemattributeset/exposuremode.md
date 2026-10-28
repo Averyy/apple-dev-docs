@@ -23,7 +23,7 @@ var exposureMode: NSNumber? { get set }
 @property (strong, nullable) NSNumber * exposureMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property can have the following values:
 

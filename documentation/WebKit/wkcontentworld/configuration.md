@@ -22,7 +22,7 @@ class Configuration
 @interface WKContentWorldConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A WKContentWorldConfiguration object allows you to specify custom behavior for a WKContentWorld instance.
 

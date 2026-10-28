@@ -23,7 +23,7 @@ case phaseDetection
 AVCaptureAutoFocusSystemPhaseDetection
 ```
 
-#### Discussion
+## Discussion
 
 Phase detection has the ability to achieve focus in many cases without a focus scan. Phase detection autofocus is typically less visually intrusive than contrast detection autofocus.
 

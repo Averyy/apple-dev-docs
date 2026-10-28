@@ -24,7 +24,7 @@ typealias MPSCopyAllocator = (MPSKernel, any MTLCommandBuffer, any MTLTexture) -
 typedef id<MTLTexture> (^)(MPSKernel *, id<MTLCommandBuffer>, id<MTLTexture>) MPSCopyAllocator;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

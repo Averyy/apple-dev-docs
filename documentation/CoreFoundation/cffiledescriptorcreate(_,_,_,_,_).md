@@ -25,7 +25,7 @@ func CFFileDescriptorCreate(_ allocator: CFAllocator!, _ fd: CFFileDescriptorNat
 extern CFFileDescriptorRefCFFileDescriptorCreate(CFAllocatorRef allocator, CFFileDescriptorNativeDescriptor fd, Boolean closeOnInvalidate, CFFileDescriptorCallBack callout, const CFFileDescriptorContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFFileDescriptor or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

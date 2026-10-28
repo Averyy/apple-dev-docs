@@ -24,7 +24,7 @@ var usage: MTLTextureUsage { get set }
 @property (nonatomic, readwrite) MTLTextureUsage usage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`shaderRead`](../../Metal/mtltextureusage/shaderread.md)`|`[`shaderWrite`](../../Metal/mtltextureusage/shaderwrite.md).
 

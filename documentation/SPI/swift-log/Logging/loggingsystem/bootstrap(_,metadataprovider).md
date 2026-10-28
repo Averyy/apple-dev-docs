@@ -18,7 +18,7 @@ A one-time configuration function that globally selects the implementation for y
 static func bootstrap(_ factory: @escaping @Sendable (String, Logger.MetadataProvider?) -> any LogHandler, metadataProvider: Logger.MetadataProvider?)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  `bootstrap` can be called at maximum once in any given program, calling it more than once will lead to undefined behavior, most likely a crash.
 

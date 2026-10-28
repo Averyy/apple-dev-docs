@@ -16,7 +16,7 @@ struct vnop_fsync_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 In general, no action is required of a filesystem for VNOP_MNOMAP.
 

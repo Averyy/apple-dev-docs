@@ -17,17 +17,17 @@ Retrieves selected access control lists from a given access object.
 OSStatus SecAccessCopySelectedACLList(SecAccessRef accessRef, CSSM_ACL_AUTHORIZATION_TAG action, CFArrayRef*aclList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecAccessCopyMatchingACLList(_:_:)`](./secaccesscopymatchingacllist%28_,_%29.md) instead.
 
 An access object can have any number of access control list (ACL) entries for specific operations or sets of operations. To retrieve all the ACL entries for an access object, use the [`SecAccessCopyACLList(_:_:)`](./secaccesscopyacllist%28_,_%29.md) function.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecAccessCopyMatchingACLList(_:_:)`](./secaccesscopymatchingacllist%28_,_%29.md) instead.
 

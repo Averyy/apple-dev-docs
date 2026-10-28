@@ -15,7 +15,7 @@ The delete line key.
 static let deleteLine: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -24,11 +24,11 @@ func canEvaluatePolicy(_ policy: LAPolicy, error: NSErrorPointer) -> Bool
 - (BOOL) canEvaluatePolicy:(LAPolicy) policy error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the policy can be evaluated, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some policies impose requirements that must be met before authentication can proceed. For example, a policy that requires biometrics can’t authenticate if Touch ID or Face ID is disabled. This method tests all the prerequisites for a given policy.
 

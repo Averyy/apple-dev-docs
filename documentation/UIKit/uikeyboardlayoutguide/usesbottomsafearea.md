@@ -22,7 +22,7 @@ var usesBottomSafeArea: Bool { get set }
 @property (nonatomic, readwrite) BOOL usesBottomSafeArea;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`true`](../../Swift/true.md), indicating that the layout guide ties to the [`bottomAnchor`](../uilayoutguide/bottomanchor.md) of the view’s [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md).
 

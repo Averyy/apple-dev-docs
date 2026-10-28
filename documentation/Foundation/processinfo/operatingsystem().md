@@ -27,7 +27,7 @@ func operatingSystem() -> Int
 - (NSUInteger) operatingSystem;
 ```
 
-#### Return Value
+## Return Value
 
 Operating system identifier. See Constants for a list of possible values. In macOS, it’s `NSMACHOperatingSystem`.
 

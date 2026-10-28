@@ -20,7 +20,7 @@ var scale: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 scale;
 ```
 
-#### Discussion
+## Discussion
 
 Multiplying the [`extent`](./extent.md) by this scale results in the physical size of the object in meters.
 

@@ -5,7 +5,7 @@
 
 Use these supplemental flags to create a guest object.
 
-#### Overview
+## Overview
 
 These flags supplement the flags described in [`SecCSFlags`](./seccsflags.md). Use these additional constants with the flags parameter of the [`SecHostCreateGuest`](./sechostcreateguest.md) function.
 

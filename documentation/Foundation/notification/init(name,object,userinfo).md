@@ -21,7 +21,7 @@ Initializes a new notification.
 init(name: Notification.Name, object: Any? = nil, userInfo: [AnyHashable : Any]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The default value for `userInfo` is nil.
 

@@ -16,7 +16,7 @@ nonisolated
 init(url: URL, transaction: Transaction = Transaction(), @ViewBuilder content: @escaping (Model3DPhase) -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 If you set the asynchronous model’s URL to `nil`, or after you set the URL to a value but before the load operation completes, the phase is [`Model3DPhase.empty`](../model3dphase/empty.md). After the operation completes, the phase becomes either [`Model3DPhase.failure(_:)`](../model3dphase/failure%28_%29.md) or [`Model3DPhase.success(_:)`](../model3dphase/success%28_%29.md). In the first case, the phase’s [`error`](../model3dphase/error.md) value indicates the reason for failure. In the second case, the phase’s [`model`](../model3dphase/model.md) property contains the loaded model. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 

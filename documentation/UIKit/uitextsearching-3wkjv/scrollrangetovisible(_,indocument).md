@@ -19,7 +19,7 @@ Scrolls to the containing view to make the text range visible.
 func scrollRangeToVisible(_ range: UITextRange, inDocument: Self.DocumentIdentifier?)
 ```
 
-#### Discussion
+## Discussion
 
 If the seachable object supports scrolling, use this method to implement scrolling your view to make the highlighted text range visible.
 

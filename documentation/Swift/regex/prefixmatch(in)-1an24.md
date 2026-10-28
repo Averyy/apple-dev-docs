@@ -21,11 +21,11 @@ Returns a match if this regex matches the given substring at its start.
 func prefixMatch(in string: Substring) throws -> Regex<Output>.Match?
 ```
 
-#### Return Value
+## Return Value
 
 The match, if this regex matches at the start of `string`; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Call this method if you want the regular expression to succeed only when it matches only at the start of the given string. This example uses `prefixMatch(in:)` and a regex that matches a title-case word to search for such a word at the start of different strings:
 

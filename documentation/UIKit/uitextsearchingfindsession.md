@@ -23,7 +23,7 @@ class UITextSearchingFindSession
 @interface UITextSearchingFindSession : UIFindSession
 ```
 
-#### Overview
+## Overview
 
 Implement the [`UITextSearching`](./uitextsearching-53wjq.md) protocol on the class that encapsulates the searchable content for your view to use an instance of [`UITextSearchingFindSession`](./uitextsearchingfindsession.md) as the session object. Alternatively, you can subclass [`UIFindSession`](./uifindsession.md) to manage the details of the session using a custom class.
 

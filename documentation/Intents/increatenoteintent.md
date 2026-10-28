@@ -25,13 +25,13 @@ class INCreateNoteIntent
 @interface INCreateNoteIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INCreateNoteIntent`](./increatenoteintent.md) object when the user asks to create a new note. (If the user asks to add a task and none of your Intents app extensions declare support for the [`INAddTasksIntent`](./inaddtasksintent.md) class, SiriKit uses this intent as a substitute). The intent object contains the content of the note and possibly additional information, such as the name of the folder in which to create the note.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INCreateNoteIntentHandling`](./increatenoteintenthandling.md) protocol. Your handler should confirm the request and create an [`INCreateNoteIntentResponse`](./increatenoteintentresponse.md) object with the updated note.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -40,7 +40,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents, Siri Suggestions |
 | Always requires unlocked device | No |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to create notes in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases.
 

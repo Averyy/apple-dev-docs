@@ -28,13 +28,13 @@ class INUpdateMediaAffinityIntent
 
 - [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Overview
+## Overview
 
 Siri creates an [`INUpdateMediaAffinityIntent`](./inupdatemediaaffinityintent.md) object when the user expresses a preference for or disinterest in a media item. The intent object contains the media to update.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INUpdateMediaAffinityIntentHandling`](./inupdatemediaaffinityintenthandling.md) protocol. Your handler should confirm the request and create an [`INUpdateMediaAffinityIntentResponse`](./inupdatemediaaffinityintentresponse.md) object with the media to update.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

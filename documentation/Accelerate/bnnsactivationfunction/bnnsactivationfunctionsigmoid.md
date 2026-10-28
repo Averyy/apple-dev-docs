@@ -21,7 +21,7 @@ An activation function that returns the sigmoid function of its input.
 BNNSActivationFunctionSigmoid
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the logistic function:
 

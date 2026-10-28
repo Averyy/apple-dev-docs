@@ -29,7 +29,7 @@ func commit()
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 Call the method when have no other changes to stage, such as with [`addAllocation(_:)`](./addallocation%28_%29.md), [`removeAllocation(_:)`](./removeallocation%28_%29.md), and their sibling methods.
 

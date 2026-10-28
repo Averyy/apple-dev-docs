@@ -19,11 +19,11 @@ func ABMultiValueCopyPrimaryIdentifier(_ multiValue: ABMultiValueRef!) -> Unmana
 extern CFStringRefABMultiValueCopyPrimaryIdentifier(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 The unique identifierfor the primary value. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 Use the [`ABMultiValueCopyIdentifierAtIndex(_:_:)`](./abmultivaluecopyidentifieratindex%28_,_%29.md) functionto get index for the returned identifier, and the [`ABMultiValueCopyValueAtIndex(_:_:)`](./abmultivaluecopyvalueatindex%28_,_%29.md)functionto get its value.
 

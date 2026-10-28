@@ -24,7 +24,7 @@ var shouldOptimizeForNetworkUse: Bool { get set }
 @property (nonatomic) BOOL shouldOptimizeForNetworkUse;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to [`true`](../../Swift/true.md) writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it.
 

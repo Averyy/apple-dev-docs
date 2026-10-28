@@ -12,7 +12,7 @@ virtual void removeObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Overview
+## Overview
 
 The object removed from the ordered set is released.
 

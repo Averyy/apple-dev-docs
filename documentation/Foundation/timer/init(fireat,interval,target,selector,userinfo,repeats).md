@@ -25,11 +25,11 @@ init(fireAt date: Date, interval ti: TimeInterval, target t: Any, selector s: Se
 - (instancetype) initWithFireDate:(NSDate *) date interval:(NSTimeInterval) ti target:(id) t selector:(SEL) s userInfo:(id) ui repeats:(BOOL) rep;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](../../Swift/true.md), every `ti` after that.
 
-#### Discussion
+## Discussion
 
 You must add the new timer to a run loop, using [`add(_:forMode:)`](../runloop/add%28_,formode%29-392ag.md). Upon firing, the timer sends the message `aSelector` to `target`. (If the timer is configured to repeat, there is no need to subsequently re-add the timer to the run loop.)
 

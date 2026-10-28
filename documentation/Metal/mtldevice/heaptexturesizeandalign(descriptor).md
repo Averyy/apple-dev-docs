@@ -25,11 +25,11 @@ func heapTextureSizeAndAlign(descriptor desc: MTLTextureDescriptor) -> MTLSizeAn
 - (MTLSizeAndAlign) heapTextureSizeAndAlignWithDescriptor:(MTLTextureDescriptor *) desc;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MTLSizeAndAlign`](../mtlsizeandalign.md) instance.
 
-#### Discussion
+## Discussion
 
 Use this method to help estimate an appropriate size for a new heap before you create it.
 

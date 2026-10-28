@@ -23,7 +23,7 @@ var textFields: [UITextField]? { get }
 @property (nonatomic, readonly, nullable) NSArray<UITextField *> * textFields;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the text fields displayed by the alert. The text fields are in the order in which you added them to the alert controller. This order also corresponds to the order in which they are displayed in the alert.
 

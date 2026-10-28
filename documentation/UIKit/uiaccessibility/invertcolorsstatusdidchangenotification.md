@@ -24,7 +24,7 @@ static let invertColorsStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityInvertColorsStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

@@ -23,7 +23,7 @@ init(bluetoothIdentifier: String?, iAP2Identifier: String?)
 - (instancetype) initWithBluetoothIdentifier:(NSString *) bluetoothIdentifier iAP2Identifier:(NSString *) iAP2Identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses these identifiers to match a vehicle in the user’s My Vehicles collection with its physical counterpart. You can’t change these values after initialization.
 

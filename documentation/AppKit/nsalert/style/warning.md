@@ -19,7 +19,7 @@ case warning
 NSAlertStyleWarning
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of alert when the alert’s content is more severe than [`NSAlert.Style.informational`](./informational.md) but less severe than [`NSAlert.Style.critical`](./critical.md). This is the default alert style.
 

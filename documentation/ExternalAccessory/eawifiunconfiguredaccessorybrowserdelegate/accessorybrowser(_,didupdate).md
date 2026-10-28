@@ -23,7 +23,7 @@ func accessoryBrowser(_ browser: EAWiFiUnconfiguredAccessoryBrowser, didUpdate s
 - (void) accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *) browser didUpdateState:(EAWiFiUnconfiguredAccessoryBrowserState) state;
 ```
 
-#### Discussion
+## Discussion
 
 When the browser state changes, the delegate typically provides feedback to users. For example, the delegate might show whether the scan is currently active or inactive, or it might indicate that Wi-Fi is unavailable if a user starts a scan while the device is in airplane mode.
 

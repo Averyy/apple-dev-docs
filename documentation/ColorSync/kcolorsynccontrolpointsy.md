@@ -25,7 +25,7 @@ var kColorSyncControlPointsY: Unmanaged<CFString>
 extern CFStringRef kColorSyncControlPointsY;
 ```
 
-#### Discussion
+## Discussion
 
 Values are in stops (float in the range [0.0, 6.0]) and must be non-negative; the framework infers the gain direction (expand vs. compress) from the relationship between this alternate’s headroom and the baseline headroom.
 

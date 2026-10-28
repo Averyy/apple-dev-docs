@@ -25,7 +25,7 @@ var randomSource: (any GKRandom)? { get set }
 @property (nonatomic, retain, nullable) id<GKRandom> randomSource;
 ```
 
-#### Discussion
+## Discussion
 
 A strategist class uses this random source when you call the [`bestMoveForActivePlayer()`](./bestmoveforactiveplayer%28%29.md) method. Different strategist classes use randomization in different ways:
 

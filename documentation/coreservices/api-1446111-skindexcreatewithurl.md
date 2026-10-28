@@ -19,11 +19,11 @@ func SKIndexCreateWithURL(_ inURL: CFURL!, _ inIndexName: CFString!, _ inIndexTy
 SKIndexRef SKIndexCreateWithURL(CFURLRef inURL, CFStringRef inIndexName, SKIndexType inIndexType, CFDictionaryRef inAnalysisProperties);
 ```
 
-#### Return Value
+## Return Value
 
  A unique reference to the newly created index.
 
-#### Discussion
+## Discussion
 
 `SKIndexCreateWithURL` creates an index in a file. Search Kit indexes are initially empty. Use this function when your application needs persistent storage of an index. To create a memory-based, nonpersistent index, use [`SKIndexCreateWithMutableData(_:_:_:_:)`](./api-1447500-skindexcreatewithmutabledata.md).
 
@@ -33,7 +33,7 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 When your application no longer needs the index, dispose of it by calling [`SKIndexClose(_:)`](./api-1442401-skindexclose.md). 
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with [`SKIndex`](./skindex.md) objects.
 

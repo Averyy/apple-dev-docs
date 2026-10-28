@@ -22,7 +22,7 @@ class let touchBarSkipBack30SecondsTemplateName: String
 extern NSImageName const NSImageNameTouchBarSkipBack30SecondsTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for skip back 30 seconds](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825130@2x.png)
 

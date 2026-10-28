@@ -24,7 +24,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A relay configuration must be enabled before it can be used to proxy application traffic.
 

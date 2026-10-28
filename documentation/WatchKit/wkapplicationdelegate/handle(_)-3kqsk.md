@@ -19,7 +19,7 @@ optional func handle(_ userActivity: NSUserActivity)
 - (void) handleActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method when it receives data associated with a user activity. Use this method to update your app on Apple Watch so that the user can continue the activity from where they left off.
 

@@ -25,7 +25,7 @@ class func setUserInfoValueProvider(forDomain errorDomain: String, provider: (@S
 + (void) setUserInfoValueProviderForDomain:(NSErrorDomain) errorDomain provider:(id (^)(NSError *err, NSErrorUserInfoKey userInfoKey)) provider;
 ```
 
-#### Discussion
+## Discussion
 
 This method specifies a block that is called from the implementations of [`localizedDescription`](./localizeddescription.md), [`localizedFailureReason`](./localizedfailurereason.md), [`localizedRecoverySuggestion`](./localizedrecoverysuggestion.md), [`localizedRecoveryOptions`](./localizedrecoveryoptions.md), [`recoveryAttempter`](./recoveryattempter.md), and [`helpAnchor`](./helpanchor.md) when the underlying value for any of those properties is not present in the [`userInfo`](./userinfo.md) dictionary of NSError instances with the specified domain.
 

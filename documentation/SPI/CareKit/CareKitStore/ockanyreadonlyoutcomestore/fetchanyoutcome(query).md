@@ -17,7 +17,7 @@ Asynchronously retrieve a single outcome from the store.
 func fetchAnyOutcome(query: OCKOutcomeQuery) async throws -> OCKAnyOutcome
 ```
 
-#### Discussion
+## Discussion
 
 If more than one outcome matches the query, only the first returns. If no matching outcomes exist, the completion handler receives an error.
 

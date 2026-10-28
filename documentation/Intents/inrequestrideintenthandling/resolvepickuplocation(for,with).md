@@ -27,7 +27,7 @@ optional func resolvePickupLocation(for intent: INRequestRideIntent) async -> IN
 - (void) resolvePickupLocationForRequestRide:(INRequestRideIntent *) intent withCompletion:(void (^)(INPlacemarkResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you can pick up the user at the specified location. You may specify a pickup location that is different than the one requested by the user. For example, you might specify a dedicated pickup spot or an easy to spot point of interest that is near the user’s location. If you do not implement this method, SiriKit assumes that you are able to start the ride at the specified location.
 

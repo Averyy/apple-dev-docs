@@ -19,11 +19,11 @@ var availableLanguages: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * availableLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing all the available spell checking languages. The languages are ordered in the user’s preferred order as set in the system preferences.
 
-#### Discussion
+## Discussion
 
 If [`automaticallyIdentifiesLanguages`](./automaticallyidentifieslanguages.md) is [`true`](../../Swift/true.md), then text checking will automatically use this method as appropriate; otherwise, it will use the language set by [`setLanguage(_:)`](./setlanguage%28_%29.md).
 

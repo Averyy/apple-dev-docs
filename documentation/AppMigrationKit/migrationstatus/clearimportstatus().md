@@ -16,7 +16,7 @@ Sets the import status to a nil value to prevent further notification.
 static func clearImportStatus()
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method sets [`importStatus`](./importstatus.md) to `nil`, which indicates that the app has notified the person using the app of the migration’s completion, and doesn’t need further notifications.
 

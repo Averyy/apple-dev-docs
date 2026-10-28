@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two geometry sources are equal.
 static func == (lhs: GeometrySource, rhs: GeometrySource) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two geometry sources are equal; otherwise, `false`.
 

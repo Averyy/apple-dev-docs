@@ -32,7 +32,7 @@ var dropOffLocation: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * dropOffLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property with the [`pickupLocation`](./pickuplocation.md) property to determine availability, pricing, and timing information for your rides.
 

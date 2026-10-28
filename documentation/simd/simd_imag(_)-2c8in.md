@@ -14,7 +14,7 @@ func simd_imag(_ q: simd_quath) -> simd_half3
 static simd_half3 simd_imag(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The imaginary (vector) part of the quaternion `q`.
 

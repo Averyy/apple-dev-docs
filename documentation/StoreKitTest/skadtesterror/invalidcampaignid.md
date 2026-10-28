@@ -17,7 +17,7 @@ The campaign ID isn’t an integer between one and one hundred.
 static var invalidCampaignId: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A campaign ID is an integer that is greater than or equal to one and less than or equal to one hundred.
 

@@ -23,7 +23,7 @@ typealias Elements = LazyFilterSequence<Base>
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 - See also: `elements`
 

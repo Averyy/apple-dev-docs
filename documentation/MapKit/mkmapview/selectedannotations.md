@@ -24,7 +24,7 @@ var selectedAnnotations: [any MKAnnotation] { get set }
 @property (nonatomic, copy) NSArray<id<MKAnnotation>> * selectedAnnotations;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new array to this property selects only the first annotation in the array.
 

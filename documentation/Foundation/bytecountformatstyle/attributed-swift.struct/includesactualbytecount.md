@@ -21,7 +21,7 @@ A Boolean value that indicates whether the format style should include the exact
 var includesActualByteCount: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, a format style produces output like `1 kB (1,024 bytes)`.
 

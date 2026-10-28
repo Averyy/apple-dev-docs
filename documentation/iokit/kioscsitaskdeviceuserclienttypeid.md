@@ -14,7 +14,7 @@
 #define kIOSCSITaskDeviceUserClientTypeID
 ```
 
-#### Discussion
+## Discussion
 
 Factory ID for creating an SCSITask Device User Client.
 

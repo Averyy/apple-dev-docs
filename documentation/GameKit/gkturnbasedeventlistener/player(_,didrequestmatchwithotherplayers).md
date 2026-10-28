@@ -28,7 +28,7 @@ optional func player(_ player: GKPlayer, didRequestMatchWithOtherPlayers players
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to present a turn-based matchmaker interface configured with the players to invite:
 

@@ -20,7 +20,7 @@ Updates multiple regions within a placement sparse buffer to alias specific tile
 - (void) updateBufferMappings:(id<MTLBuffer>) buffer heap:(id<MTLHeap>) heap operations:(const MTL4UpdateSparseBufferMappingOperation[]) operations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a `nil` parameter to the `heap` argument only when you perform unmap operations. Otherwise, you are responsible for ensuring parameter `heap` references an [`MTLHeap`](../mtlheap.md) that has a [`maxCompatiblePlacementSparsePageSize`](../mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md) of at least the buffer’s `placementSparsePageSize` you assign when creating the sparse buffer via [`makeBuffer(length:options:placementSparsePageSize:)`](../mtldevice/makebuffer%28length,options,placementsparsepagesize%29.md).
 

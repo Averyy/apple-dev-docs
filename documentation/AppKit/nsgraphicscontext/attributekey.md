@@ -19,7 +19,7 @@ struct AttributeKey
 typedef NSString * NSGraphicsContextAttributeKey;
 ```
 
-#### Discussion
+## Discussion
 
 You use these dictionary keys with [`init(attributes:)`](./init%28attributes%29.md) and [`attributes`](./attributes.md).
 

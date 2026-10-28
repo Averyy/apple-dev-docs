@@ -17,15 +17,15 @@ Computes the binary cross entropy loss.
 func binaryCrossEntropy(logits: MLXArray, targets: MLXArray, weights: MLXArray? = nil, withLogits: Bool = true, reduction: LossReduction = .mean) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed binary cross entropy loss
 
-#### Discussion
+## Discussion
 
 By default, this function takes the pre-sigmoid logits, which results in a faster and more precise loss. For improved numerical stability when `withLogits` is true, the loss calculation clips the input probabilities (in log-space) to a minimum value of `-100`.
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

@@ -24,7 +24,7 @@ class MDLURLTexture
 @interface MDLURLTexture : MDLTexture
 ```
 
-#### Overview
+## Overview
 
 Unlike the superclass [`MDLTexture`](./mdltexture.md), the [`MDLURLTexture`](./mdlurltexture.md) class loads texel data from the file at that URL only when that data is first referenced, and then caches it for future use.
 

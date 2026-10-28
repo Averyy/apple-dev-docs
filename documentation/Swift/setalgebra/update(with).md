@@ -23,13 +23,13 @@ Inserts the given element into the set unconditionally.
 mutating func update(with newMember: Self.Element) -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 For ordinary sets, an element equal to `newMember` if the set already contained such a member; otherwise, `nil`. In some cases, the returned element may be distinguishable from `newMember` by identity comparison or some other means.
 
 For sets where the set type and element type are the same, like `OptionSet` types, this method returns any intersection between the set and `[newMember]`, or `nil` if the intersection is empty.
 
-#### Discussion
+## Discussion
 
 If an element equal to `newMember` is already contained in the set, `newMember` replaces the existing element. In this example, an existing element is inserted into `classDays`, a set of days of the week.
 

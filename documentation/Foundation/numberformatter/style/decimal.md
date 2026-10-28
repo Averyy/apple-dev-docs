@@ -25,7 +25,7 @@ case decimal
 NSNumberFormatterDecimalStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the en_US locale, the number 1234.5678 is represented as 1,234.568.
 

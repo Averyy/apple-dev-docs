@@ -24,7 +24,7 @@ var edgeCreaseCount: Int { get set }
 @property (nonatomic) NSUInteger edgeCreaseCount;
 ```
 
-#### Discussion
+## Discussion
 
 The [`edgeCreases`](./edgecreases.md) buffer contains this number of crease values. Because each edge is composed of two vertices, the [`edgeCreaseIndices`](./edgecreaseindices.md) buffer contains twice this number of vertex indices.
 

@@ -18,7 +18,7 @@
 + (instancetype) assessmentWithDate:(NSDate *) date answers:(NSArray<NSNumber *> *) answers;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new PHQ-9 sample. There must be exactly 9 elements in answers, each answer must be of type `HKPHQ9AssessmentAnswer`. Question #9 is considered optional. If the user does not answer #9, use `HKPHQ9AssessmentAnswerPreferNotToAnswer`
 

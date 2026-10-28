@@ -24,7 +24,7 @@ var allowsFontSubpixelQuantization: Bool { get set }
 @property BOOL allowsFontSubpixelQuantization;
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, the graphics context used for text rendering may quantize the subpixel positions of glyphs.
 

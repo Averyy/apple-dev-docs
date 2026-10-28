@@ -5,7 +5,7 @@
 
 An object that provides methods to obtain information about the installation volume.
 
-#### Overview
+## Overview
 
 This object is accessed using the `my.target` property.
 

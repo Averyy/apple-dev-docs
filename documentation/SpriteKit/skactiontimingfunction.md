@@ -25,7 +25,7 @@ typealias SKActionTimingFunction = (Float) -> Float
 typedef float (^)(float) SKActionTimingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

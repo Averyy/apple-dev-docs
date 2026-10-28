@@ -19,7 +19,7 @@ A response that indicates the extension needs to complete a task in the containe
 case requiresUserInput(reason: LiveAssistanceLaunchReason)
 ```
 
-#### Discussion
+## Discussion
 
 Return this value from your implementations of [`prepareAssistanceRequest(_:)`](../../liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](../../liveassistanceextension/resumerequest%28_%29.md) when you need the person using the app to provide additional information. You use this case when you require actions like signing in, or setting a desired language for the interpreter service. The associated value `reason` supplies a [`LiveAssistanceLaunchReason`](../../liveassistancelaunchreason.md) to tell the container app what information it needs to collect.
 

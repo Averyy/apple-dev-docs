@@ -22,7 +22,7 @@ case pageSheet
 UIModalPresentationPageSheet
 ```
 
-#### Discussion
+## Discussion
 
 In a regular-width, regular-height size class, the system adds a dimming layer over the background content and centers the view controller’s content on top of this layer. The content is roughly the size of a page, where the height is greater than the width. The actual dimensions vary depending on several factors including the device’s screen size and orientation. A part of the background content always remains visible.
 

@@ -31,7 +31,7 @@ convenience init(model: some LanguageModel, tools: [any Tool] = [], transcript: 
 - [Managing the context window](../managing-the-context-window.md)
 - [Optimizing key-value caching in language model sessions](../optimizing-key-value-caching-in-language-model-sessions.md)
 
-#### Discussion
+## Discussion
 
 - Parameters
 

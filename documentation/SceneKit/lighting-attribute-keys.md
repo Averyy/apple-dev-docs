@@ -5,7 +5,7 @@
 
 Keys for specifying the behavior of a light using the [`attribute(forKey:)`](./scnlight/attribute%28forkey%29.md) and [`setAttribute(_:forKey:)`](./scnlight/setattribute%28_,forkey%29.md) methods.
 
-#### Overview
+## Overview
 
 You can also get, set, or animate changes to the values of lighting attributes using [Key-value coding](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) with the keys listed above.
 

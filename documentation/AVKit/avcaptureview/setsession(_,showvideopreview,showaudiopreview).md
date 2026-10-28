@@ -19,7 +19,7 @@ func setSession(_ session: AVCaptureSession?, showVideoPreview: Bool, showAudioP
 - (void) setSession:(AVCaptureSession *) session showVideoPreview:(BOOL) showVideoPreview showAudioPreview:(BOOL) showAudioPreview;
 ```
 
-#### Discussion
+## Discussion
 
 The view must show audio preview, video preview, or both. Furthermore, the view may modify the capture session, for example, to access media data for preview or when the user select a new capture source.
 

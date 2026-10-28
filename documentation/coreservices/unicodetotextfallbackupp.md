@@ -16,7 +16,7 @@ Defines a universal procedure pointer to a Unicode-to-text-fallback callback fun
 typedef UnicodeToTextFallbackProcPtr UnicodeToTextFallbackUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`UnicodeToTextFallbackProcPtr`](./unicodetotextfallbackprocptr.md) callback function.
 

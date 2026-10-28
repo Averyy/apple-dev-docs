@@ -18,8 +18,8 @@ Emits the given message as a fatal error and terminates the compilation process.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro error(_ message: String)
+@freestanding(declaration)
+macro error(_ message: String)
 ```
 
 ## Parameters

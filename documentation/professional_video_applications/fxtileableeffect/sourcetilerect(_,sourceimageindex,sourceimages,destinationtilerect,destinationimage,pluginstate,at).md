@@ -24,7 +24,7 @@ func sourceTileRect(_ sourceTileRect: UnsafeMutablePointer<FxRect>, sourceImageI
 
 - [Working with tiled images](../../Professional-Video-Applications/working-with-tiled-images.md)
 
-#### Discussion
+## Discussion
 
 This method is called for each image input your plug-in has requested. Use the passed-in information to calculate the portion of the current input image that you’ll need to render the output tile that will be rendered next.
 

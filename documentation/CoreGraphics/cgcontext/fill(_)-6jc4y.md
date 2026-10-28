@@ -21,7 +21,7 @@ Paints the areas contained within the provided rectangles, using the fill color 
 func fill(_ rects: [CGRect])
 ```
 
-#### Discussion
+## Discussion
 
 The current path is cleared as a side effect of calling this function.
 

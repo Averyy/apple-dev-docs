@@ -21,7 +21,7 @@ Subsample ratio of the training set in each iteration of tree construction.
 var rowSubsample: Double
 ```
 
-#### Discussion
+## Discussion
 
 This is called the bagging trick and can usually help prevent overfitting. Setting this to a value of 0.5 results in the model randomly sampling half of the examples (rows) to grow each tree. Must be in the range (0, 1).
 

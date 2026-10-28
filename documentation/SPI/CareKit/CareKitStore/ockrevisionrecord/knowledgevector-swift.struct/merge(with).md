@@ -17,7 +17,7 @@ Merge this vector with another.
 mutating func merge(with other: KnowledgeVector)
 ```
 
-#### Discussion
+## Discussion
 
 This method should be called to incorporate knowledge received from another node in the network.
 

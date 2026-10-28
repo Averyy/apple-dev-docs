@@ -25,19 +25,19 @@ class SCNSkinner
 @interface SCNSkinner : NSObject
 ```
 
-#### Overview
+## Overview
 
 Skeletal animation is a technique for simplifying the animation of complex geometries, such as humanoid characters in a game. An animation skeleton is a simple hierarchy of control nodes, which themselves have no visible geometry. Associating the skeleton with a geometry (also called “skinning” the skeleton or creating a skinned model) allows SceneKit to automatically deform the geometry when you move the skeleton’s control nodes, as shown below.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929790@2x.png)
 
-##### Working with an Animation Skeleton
+### Working with an Animation Skeleton
 
 Typically, an artist creates a skinned model using external 3D authoring tools and saves it, along with animations that use the skeleton, in a scene file. You load the model from the scene file and pose or animate it in your app, either by using animation objects also loaded from the scene file or by directly manipulating the nodes in the skeleton.
 
 You can also create a skinned model from separately defined geometry and skeleton data using the [`init(baseGeometry:bones:boneInverseBindTransforms:boneWeights:boneIndices:)`](./scnskinner/init%28basegeometry,bones,boneinversebindtransforms,boneweights,boneindices%29.md) method.
 
-##### Sharing a Skinner Object
+### Sharing a Skinner Object
 
 To work with a skinned model’s skeleton, use the [`skinner`](./scnnode/skinner.md) property of the model’s root node. For example, one file might contain an animated game character, and other files might contain accessories (such as hats or backpacks) for the character to wear. An artist using 3D authoring tools can specify that the character and the accessories be animated using identical skeletons. To attach a hat to the character so that they animate together, you link the skinner object responsible for animating the hat to the skeleton associated with the animated character, as in the following example:
 

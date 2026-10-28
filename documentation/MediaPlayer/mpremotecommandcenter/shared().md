@@ -25,7 +25,7 @@ class func shared() -> MPRemoteCommandCenter
 + (MPRemoteCommandCenter *) sharedCommandCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The shared instance of the `MPRemoteCommandCenter` class.
 

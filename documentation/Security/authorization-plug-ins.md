@@ -5,7 +5,7 @@
 
 Extend the authorization services API by creating plug-ins that can participate in authorization decisions.
 
-#### Overview
+## Overview
 
 Use plug-ins to extend macOS authorization services to perform authorizations in a new way or to implement a new policy that is too complex to be implemented entirely with the authorization policy database.
 

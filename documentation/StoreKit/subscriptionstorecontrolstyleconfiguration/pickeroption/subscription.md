@@ -20,7 +20,7 @@ The auto-renewable subscription that the picker option represents.
 var subscription: Product { get }
 ```
 
-#### Discussion
+## Discussion
 
 [`SubscriptionStoreControlStyleConfiguration.PickerOption`](../pickeroption.md) is a dynamic member lookup type, so you don’t need to use this property directly to access the properties of the [`Product`](../../product.md) value. Instead, access any properties of [`Product`](../../product.md) or [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on the `PickerOption` value.
 

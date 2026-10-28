@@ -21,7 +21,7 @@ A base type that represents data that contains video content that may or may not
 extern UTType * const UTTypeAudiovisualContent;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.audiovisual-content`.
 

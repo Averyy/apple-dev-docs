@@ -21,7 +21,7 @@ Hashes the entity identifier.
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `typeIdentifier` and `identifier` are used for hashing.
 >

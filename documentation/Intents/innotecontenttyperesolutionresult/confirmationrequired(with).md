@@ -25,11 +25,11 @@ class func confirmationRequired(with noteContentTypeToConfirm: INNoteContentType
 + (instancetype) confirmationRequiredWithNoteContentTypeToConfirm:(INNoteContentType) noteContentTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteContentTypeResolutionResult`](../innotecontenttyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot provide note content for the specified type but can provide it for a different type and want to confirm with the user before proceeding.
 

@@ -19,7 +19,7 @@ class let launchIsDefaultUserInfoKey: String
 extern NSString * const NSApplicationLaunchIsDefaultLaunchKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) containing a Boolean value. The value is [`false`](../../Swift/false.md) if the app was launched to open or print a file, to perform a Service action, if the app had saved state that will be restored, or if the app launch was in some other sense not a default launch. Otherwise its value will be [`true`](../../Swift/true.md).
 

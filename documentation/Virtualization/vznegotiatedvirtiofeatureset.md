@@ -19,7 +19,7 @@ class VZNegotiatedVirtioFeatureSet
 @interface VZNegotiatedVirtioFeatureSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`VZNegotiatedVirtioFeatureSet`](./vznegotiatedvirtiofeatureset.md) represents the set of Virtio features the device and the driver have negotiated.
 

@@ -25,7 +25,7 @@ func insertDebugSignpost(_ string: String)
 - (void) insertDebugSignpost:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method doesn’t change any behaviors, but can be useful for debugging purposes.
 

@@ -24,7 +24,7 @@ class func predicateForEvaluatingTrigger(withPresence presenceEvent: HMPresenceE
 + (NSPredicate *) predicateForEvaluatingTriggerWithPresence:(HMPresenceEvent *) presenceEvent;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

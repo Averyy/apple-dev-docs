@@ -23,7 +23,7 @@ class func showSystemUserInterface(_ systemUserInterface: AVCaptureDevice.System
 + (void) showSystemUserInterface:(AVCaptureSystemUserInterface) systemUserInterface;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prompt the user to make changes to Video Effects (such as Center Stage or Portrait Effect) or Microphone Modes. It presents the system user interface and deep links to the appropriate module.
 

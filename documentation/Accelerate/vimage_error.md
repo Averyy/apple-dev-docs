@@ -25,7 +25,7 @@ typealias vImage_Error = Int
 typedef ssize_t vImage_Error;
 ```
 
-#### Discussion
+## Discussion
 
 [Error codes](./api-1578972-error-codes.md) describes the constants that use this type.
 

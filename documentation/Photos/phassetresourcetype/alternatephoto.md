@@ -24,7 +24,7 @@ case alternatePhoto
 PHAssetResourceTypeAlternatePhoto
 ```
 
-#### Discussion
+## Discussion
 
 For example, a photo asset imported from an external camera may contain both a JPEG file (the primary form of the asset) and a RAW file (the alternate photo).
 

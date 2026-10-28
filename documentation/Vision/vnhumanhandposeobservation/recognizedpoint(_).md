@@ -24,7 +24,7 @@ func recognizedPoint(_ jointName: VNHumanHandPoseObservation.JointName) throws -
 - (VNRecognizedPoint *) recognizedPointForJointName:(VNHumanHandPoseObservationJointName) jointName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The point for the joint name.
 

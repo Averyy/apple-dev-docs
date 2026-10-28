@@ -25,7 +25,7 @@ var mass: CGFloat { get set }
 @property (nonatomic) CGFloat mass;
 ```
 
-#### Discussion
+## Discussion
 
 The mass of a body affects its momentum and how it responds to forces. The default mass for dynamic bodies is `1.0`. The default mass for static and kinematic bodies is `0.0`, but these bodies are unaffected by mass.
 

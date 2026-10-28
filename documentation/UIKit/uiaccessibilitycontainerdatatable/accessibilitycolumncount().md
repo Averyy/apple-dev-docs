@@ -24,7 +24,7 @@ func accessibilityColumnCount() -> Int
 - (NSUInteger) accessibilityColumnCount;
 ```
 
-#### Return Value
+## Return Value
 
 The number of columns.
 

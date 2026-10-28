@@ -20,11 +20,11 @@ func DADiskCreateFromBSDName(_ allocator: CFAllocator?, _ session: DASession, _ 
 extern DADiskRefDADiskCreateFromBSDName(CFAllocatorRef allocator, DASessionRef session, const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new DADisk.
 
-#### Discussion
+## Discussion
 
 The caller of this function receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it with CFRelease().
 

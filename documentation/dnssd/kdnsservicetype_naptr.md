@@ -23,7 +23,7 @@ var kDNSServiceType_NAPTR: Int { get }
 kDNSServiceType_NAPTR
 ```
 
-#### Discussion
+## Discussion
 
 Naming Authority PoinTeR
 

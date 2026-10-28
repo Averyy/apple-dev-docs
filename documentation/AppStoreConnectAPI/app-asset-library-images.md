@@ -5,7 +5,7 @@
 
 Upload and manage image assets in an app’s asset library.
 
-#### Overview
+## Overview
 
 The `appAssetLibraryImages` resource represents an image asset in an app’s asset library that you can reuse across App Store surfaces through placements. Use it to:
 

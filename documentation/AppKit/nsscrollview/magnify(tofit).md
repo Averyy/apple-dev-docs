@@ -19,7 +19,7 @@ func magnify(toFit rect: NSRect)
 - (void) magnifyToFitRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting magnification value is clipped to the [`minMagnification`](./minmagnification.md) and [`maxMagnification`](./maxmagnification.md) values. To animate the magnification, use the object’s animator.
 

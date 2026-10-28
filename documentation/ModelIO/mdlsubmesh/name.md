@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not used in rendering, but you can use it to keep track of multiple submeshes for debugging. This property can also be populated with useful descriptive information when importing submesh data from an asset file or other source.
 

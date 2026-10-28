@@ -19,7 +19,7 @@ class VZUSBKeyboardConfiguration
 @interface VZUSBKeyboardConfiguration : VZKeyboardConfiguration
 ```
 
-#### Overview
+## Overview
 
 A [`VZVirtualMachineView`](./vzvirtualmachineview.md) can use this device to send key events to the VM.
 

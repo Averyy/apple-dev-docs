@@ -20,7 +20,7 @@ The name of the default animation resource.
 var defaultKey: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if you don’t set a default animation, or if the component can’t find it.
 

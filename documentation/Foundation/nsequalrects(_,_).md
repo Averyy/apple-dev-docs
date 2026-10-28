@@ -20,7 +20,7 @@ func NSEqualRects(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 extern BOOL NSEqualRects(NSRect aRect, NSRect bRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aRect` and `bRect` are identical, otherwise [`false`](../Swift/false.md).
 

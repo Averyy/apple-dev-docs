@@ -24,7 +24,7 @@ enum HKQuantityAggregationStyle
 enum HKQuantityAggregationStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A quantity type’s aggregation style determines the type of statistics queries that you can perform. Discrete types support average, minimum, and maximum queries. Cumulative types support only sum queries. For more information, see [`HKStatisticsQuery`](./hkstatisticsquery.md).
 

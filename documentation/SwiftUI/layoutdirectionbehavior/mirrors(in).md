@@ -21,7 +21,7 @@ A behavior that mirrors when the layout direction has the specified value.
 case mirrors(in: LayoutDirection)
 ```
 
-#### Discussion
+## Discussion
 
 If you develop your view or shape in an LTR context, you can use `.mirrors(in: .rightToLeft)` (which is equivalent to `.mirrors`) to mirror your content when the layout direction is RTL (and keep the original version in LTR). If you developer in an RTL context, you can use `.mirrors(in: .leftToRight)` to mirror your content when the layout direction is LTR (and keep the original version in RTL).
 

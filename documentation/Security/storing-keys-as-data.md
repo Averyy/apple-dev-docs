@@ -5,11 +5,11 @@
 
 Create an external representation of a key for transmission.
 
-#### Overview
+## Overview
 
 If you have a key that you want to send somewhere, you package it in a form that’s suitable for transmission.
 
-##### Export the Key as a Data Instance
+### Export the Key as a Data Instance
 
 Create a data instance representing a key using the [`SecKeyCopyExternalRepresentation(_:_:)`](./seckeycopyexternalrepresentation%28_,_%29.md) function:
 
@@ -56,7 +56,7 @@ Avoid insecure distribution of cryptographic keys, and pay special attention to 
 
 > ❗ **Important**:  If there’s even a possibility that an untrusted entity has gained access to your private key, it is compromised and you should stop using it.
 
-##### Restore a Key from a Data Instance
+### Restore a Key from a Data Instance
 
 When you’re ready to restore the data instance back into a key, use the [`SecKeyCreateWithData(_:_:_:)`](./seckeycreatewithdata%28_,_,_%29.md) function:
 

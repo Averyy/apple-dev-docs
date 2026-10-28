@@ -12,11 +12,11 @@ SCSITaskState GetTaskState (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSITaskState value.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the SCSITaskState associated with the specified request.
 

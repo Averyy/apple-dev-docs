@@ -18,7 +18,7 @@ The name of the module produced by the target.
 var moduleName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Derived from the target name, though future Swift package manager versions may allow this to be customized.
 

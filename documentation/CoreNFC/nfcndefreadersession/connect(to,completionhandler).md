@@ -25,7 +25,7 @@ func connect(to tag: any NFCNDEFTag) async throws
 - (void) connectToTag:(id<NFCNDEFTag>) tag completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A tag stays connected until your app connects to a different tag or restarts polling. Connecting to a tag that is already connected has no effect.
 

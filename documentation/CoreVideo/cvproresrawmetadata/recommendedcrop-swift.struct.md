@@ -21,7 +21,7 @@ Recommended pixels to discard in the image after raw conversion.
 struct RecommendedCrop
 ```
 
-#### Overview
+## Overview
 
 The values may be nonintegral due to downscaling, in which case the handling of fractional parts is implementation-dependent.
 

@@ -25,7 +25,7 @@ var isExclusive: Bool { get set }
 @property (nonatomic, getter=isExclusive) BOOL exclusive;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md) and a physics body is within this field’s region, SceneKit ignores the effects of all other fields that might otherwise affect the body. The default value is [`false`](../../Swift/false.md).
 

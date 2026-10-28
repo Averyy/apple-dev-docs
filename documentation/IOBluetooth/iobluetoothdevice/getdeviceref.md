@@ -15,11 +15,11 @@ Returns an IOBluetoothDeviceRef representation of the target IOBluetoothDevice o
 - (IOBluetoothDeviceRef) getDeviceRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothDeviceRef representation of the target IOBluetoothDevice object.
 
-#### Discussion
+## Discussion
 
 IOBluetoothDeviceRef and it’s API are deprecated. An IOBluetoothDeviceRef can be cast to a IOBluetoothDevice *
 

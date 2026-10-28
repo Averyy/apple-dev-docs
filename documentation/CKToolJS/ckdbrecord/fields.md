@@ -15,7 +15,7 @@ The dictionary of key-value pairs whose keys are the record field names and valu
 attribute dictionary fields;
 ```
 
-#### Discussion
+## Discussion
 
 Values in this dictionary conform to `CKDBRecordFieldValue`. `CKDBRecordFieldValue` is the root of the hierarchy of valid record field value types, such as `CKDBRecordFieldStringValue`.
 

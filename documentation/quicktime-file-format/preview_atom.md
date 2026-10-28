@@ -6,7 +6,7 @@
 
 An atom that contains information that allows you to find the preview image associated with a QuickTime movie.
 
-#### Overview
+## Overview
 
 The preview image, or poster, is a representative image suitable for display to the user in, for example, Open dialog boxes.
 

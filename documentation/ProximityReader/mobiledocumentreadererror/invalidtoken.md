@@ -17,7 +17,7 @@ An error that indicates the provided reader token for framework’s prepare meth
 case invalidToken
 ```
 
-#### Discussion
+## Discussion
 
 Generate a valid reader token and call [`prepare(using:)`](../mobiledocumentreader/prepare%28using%29.md) again.
 

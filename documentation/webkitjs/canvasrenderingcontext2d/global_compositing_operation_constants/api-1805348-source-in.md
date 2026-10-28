@@ -3,7 +3,7 @@
 **Framework**: WebKit JS  
 **Kind**: clconst
 
-#### Overview
+## Overview
 
 Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.
 

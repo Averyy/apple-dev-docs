@@ -20,7 +20,7 @@ func start(_ startTime: UnsafeMutablePointer<CMTime>!, ofImageParameter paramete
 - (void) startTime:(CMTime *) startTime ofImageParameter:(UInt32) parameterID;
 ```
 
-#### Discussion
+## Discussion
 
 In Motion, `startTime` represents the native start time of the image well input, relative to timeline time.
 

@@ -24,7 +24,7 @@ The library treats all configuration values as secrets.
 case all
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when the provider exclusively handles sensitive information and all values should be protected from disclosure.
 

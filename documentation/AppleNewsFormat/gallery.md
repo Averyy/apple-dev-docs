@@ -19,13 +19,13 @@ object Gallery
 
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `Gallery` component for sequences of images where the ordering of the items is important to the story. To display images in no specific order, use the [`Mosaic`](./mosaic.md) component. People can swipe to view the images in a gallery as shown in this example:
 
 ![Screenshot of an Apple News article with a gallery on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3591432@2x.png)
 
-##### Example
+### Example
 
 ```json
 {

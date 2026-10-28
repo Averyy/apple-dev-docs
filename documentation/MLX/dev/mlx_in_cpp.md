@@ -101,6 +101,8 @@ And run it with:
 
 Note `find_package(MLX CONFIG REQUIRED)` sets the following variables:
 
+**Package Variables**
+
 | Variable | Description |
 | --- | --- |
 | MLX_FOUND | `True` if MLX is found |

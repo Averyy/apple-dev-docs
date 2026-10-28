@@ -25,7 +25,7 @@ init(gray: CGFloat, alpha: CGFloat)
 extern CGColorRefCGColorCreateGenericGray(CGFloat gray, CGFloat alpha);
 ```
 
-#### Return Value
+## Return Value
 
 A color object.
 

@@ -20,7 +20,7 @@ A filter which returns true or false for prims based on their flags.
 struct Predicate
 ```
 
-#### Overview
+## Overview
 
 A predicate checks flags on a [`USDPrim`](../usdprim.md) and can require that each flag is set or not set.
 

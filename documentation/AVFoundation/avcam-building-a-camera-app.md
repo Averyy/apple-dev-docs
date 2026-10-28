@@ -12,7 +12,7 @@ Capture photos and record video using the front and rear iPhone and iPad cameras
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 The AVCam sample shows you how to build a basic camera app for iOS. It demonstrates how to use AVFoundation to access device cameras and microphones, configure a capture session, capture photos and videos, and much more. It also shows how to use the [PhotoKit](../PhotoKit/PhotoKit.md) framework to save your captured media to the Photos library.
 
@@ -24,7 +24,7 @@ The key type the app defines is `CaptureService`, an actor that manages the inte
 
 > **Note**: Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because Simulator doesn’t have access to device cameras, it isn’t suitable for running the app—you’ll need to run it on a device. To run this sample, you’ll need the following:
 
@@ -32,7 +32,7 @@ Because Simulator doesn’t have access to device cameras, it isn’t suitable f
 
 AVCam adopts the [LockedCameraCapture](../LockedCameraCapture/LockedCameraCapture.md) framework, which makes the app eligible to launch from the Lock Screen, Control Center, Action Button, and the Camera Control. To support this framework, the sample adds a capture extension target and a Control Center extension target to the main app target. Set your signing credentials on each target to build and run the sample.
 
-##### Configure a capture session
+### Configure a capture session
 
 The central object in any capture app is an instance of [AVCaptureSession](./avcapturesession.md). A capture session is the central hub to which the app connects inputs from camera and microphone devices, and attaches them to outputs that capture media like photos and video. After configuring the session, the app uses it to control the flow of data through the capture pipeline.
 
@@ -80,7 +80,7 @@ if captureSession.canAddOutput(photoCapture.output) {
 }
 ```
 
-##### Set up a capture preview
+### Set up a capture preview
 
 To preview the content a camera is capturing, AVFoundation provides a Core Animation layer subclass called  [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md). SwiftUI doesn’t support using layers directly, so instead, the app hosts this layer in a [`UIView`](../UIKit/uiview.md) subclass called `PreviewView`. It overrides the [`layerClass`](../UIKit/uiview/layerclass.md) property to make the preview layer the backing for the view.
 
@@ -130,7 +130,7 @@ struct CameraPreview: UIViewRepresentable {
 
 To connect the preview to the capture session without directly exposing the capture service’s protected state, the sample defines app-specific `PreviewSource` and `PreviewTarget` protocols. The app passes the `CameraPreview` a preview source, which provides a reference to the capture session. Calling the preview source’s `connect(to:)` method sets the capture session on the `PreviewView` instance.
 
-##### Request authorization
+### Request authorization
 
 The initial capture configuration is complete, but before the app can successfully start the capture session, it needs to determine whether it has authorization to use device inputs. The system requires that a person explicitly authorize the app to capture input from cameras and microphones. To determine the app’s status, the capture service defines an asynchronous `isAuthorized` property as follows:
 
@@ -154,7 +154,7 @@ The property’s implementation uses the methods of [`AVCaptureDevice`](./avcapt
 
 To learn more about the configuration required to access cameras and microphones, see [Requesting authorization to capture and save media](./requesting-authorization-to-capture-and-save-media.md).
 
-##### Change the capture mode
+### Change the capture mode
 
 The app starts in photo capture mode. Changing modes requires a reconfiguration of the capture session as follows:
 
@@ -185,7 +185,7 @@ func setCaptureMode(_ captureMode: CaptureMode) throws {
 
 In photo capture mode, the app sets the [`photo`](./avcapturesession/preset/photo.md) preset on the capture session, which optimizes the capture pipeline for high-quality photo output. It also removes the movie capture output, which prevents the photo output from performing Live Photo capture. In video capture mode, it sets the session preset to [`high`](./avcapturesession/preset/high.md) and adds the movie file capture output to the session.
 
-##### Select a new camera
+### Select a new camera
 
 The app provides a button that lets people switch between the front and back cameras and, in iPadOS, connected external cameras. To change the active camera, the app reconfigures the session as follows:
 
@@ -221,7 +221,7 @@ private func changeCaptureDevice(to device: AVCaptureDevice) {
 
 > **Note**: If your app requires capturing from multiple cameras simultaneously, use [`AVCaptureMultiCamSession`](./avcapturemulticamsession.md) instead.
 
-##### Capture a photo
+### Capture a photo
 
 The capture service delegates handling of the app’s photo capture features to the `PhotoCapture` object, which manages the life cycle of and interaction with an [`AVCapturePhotoOutput`](./avcapturephotooutput.md). The app captures photos with this object by calling its [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method, passing it an object that describes photo capture settings to enable and a delegate for the system to call as capture proceeds. To use this delegate-based API in an `async` context , the app wraps this call with a checked throwing continuation as follows:
 
@@ -263,7 +263,7 @@ func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSet
 
 To learn more about capturing photos with AVFoundation, see [Capturing still and Live Photos](./capturing-still-and-live-photos.md).
 
-##### Record a movie
+### Record a movie
 
 The capture service delegates handling of the app’s video capture features to the `MovieCapture` object, which manages the life cycle of and interaction with an [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md). To start recording a movie, the app calls the movie file output’s [`startRecording(to:recordingDelegate:)`](./avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) method, which takes a URL to write the move to and a delegate for the system to call when recording completes.
 

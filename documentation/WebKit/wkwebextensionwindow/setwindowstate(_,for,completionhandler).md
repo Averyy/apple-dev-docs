@@ -27,7 +27,7 @@ optional func setWindowState(_ state: WKWebExtension.WindowState, for context: W
 - (void) setWindowState:(WKWebExtensionWindowState) state forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation of [`windowState(for:)`](./windowstate%28for%29.md) is a prerequisite.
 

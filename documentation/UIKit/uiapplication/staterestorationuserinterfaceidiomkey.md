@@ -23,7 +23,7 @@ class let stateRestorationUserInterfaceIdiomKey: String
 extern NSString * const UIApplicationStateRestorationUserInterfaceIdiomKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing one of the values for the [`UIUserInterfaceIdiom`](../uiuserinterfaceidiom.md) enum. This value reflects whether the interface that was saved was targeting the iPad or iPhone idiom.
 

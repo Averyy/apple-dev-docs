@@ -25,7 +25,7 @@ typealias CFDictionaryApplierFunction = (UnsafeRawPointer?, UnsafeRawPointer?, U
 typedef void (*)(const void *, const void *, void *) CFDictionaryApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to the [`CFDictionaryApplyFunction(_:_:_:)`](./cfdictionaryapplyfunction%28_,_,_%29.md) function which iterates over the key-value pairs in a dictionary and applies the behavior defined in the applier function to each key-value pair in a dictionary.
 

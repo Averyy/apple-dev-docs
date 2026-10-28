@@ -32,7 +32,7 @@ static var updates: Transaction.Transactions { get }
 - [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
-#### Discussion
+## Discussion
 
 Use [`updates`](./updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
 

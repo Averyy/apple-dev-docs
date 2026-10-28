@@ -22,7 +22,7 @@ Performs the specified authorization request.
 func performRequest(_ request: ASAuthorizationRequest) async throws -> ASAuthorizationResult
 ```
 
-#### Return Value
+## Return Value
 
 The request’s outcome. For more information, see [`ASAuthorizationResult`](../asauthorizationresult.md).
 

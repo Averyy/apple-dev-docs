@@ -24,7 +24,7 @@ var imageExportPreset: UIImagePickerController.ImageURLExportPreset { get set }
 @property (nonatomic) UIImagePickerControllerImageURLExportPreset imageExportPreset;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIImagePickerController.ImageURLExportPreset.compatible`](./imageurlexportpreset/compatible.md).
 

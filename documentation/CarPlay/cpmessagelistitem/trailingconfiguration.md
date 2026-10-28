@@ -21,7 +21,7 @@ var trailingConfiguration: CPMessageListItemTrailingConfiguration? { get set }
 @property (nonatomic, strong, nullable) CPMessageListItemTrailingConfiguration * trailingConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`CPMessageListItemTrailingConfiguration`](../cpmessagelistitemtrailingconfiguration.md) that describes the visual elements of the list item’s trailing region. The region can show a [`CPMessageTrailingItem`](../cpmessagetrailingitem.md) and an image.
 

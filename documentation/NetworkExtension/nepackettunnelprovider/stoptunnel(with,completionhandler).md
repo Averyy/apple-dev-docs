@@ -28,7 +28,7 @@ func stopTunnel(with reason: NEProviderStopReason) async
 - (void) stopTunnelWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to stop the network tunnel.
 

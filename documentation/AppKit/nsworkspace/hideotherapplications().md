@@ -19,7 +19,7 @@ func hideOtherApplications()
 - (void) hideOtherApplications;
 ```
 
-#### Discussion
+## Discussion
 
 In order to hide all apps except the current one, the user can Command-Option-click an app’s Dock icon.
 

@@ -19,7 +19,7 @@ class ICScannerDevice
 @interface ICScannerDevice : ICDevice
 ```
 
-#### Overview
+## Overview
 
 An instance of ICScannerDevice class is intended to be used by the ICScannerDeviceView object. The ICScannerDeviceView class encapsulates the complexities of setting scan parameters, performing scans and saving the result. The developer should consider using ICScannerDeviceView instead of building their own views using the ICScannerDevice object.
 

@@ -14,7 +14,7 @@ IOReturn ( *SetOutputCallback)(
    void *context );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the callback was successfully set or removed.
 

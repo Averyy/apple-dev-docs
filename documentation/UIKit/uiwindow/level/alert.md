@@ -23,7 +23,7 @@ static let alert: UIWindow.Level
 extern const UIWindowLevel UIWindowLevelAlert;
 ```
 
-#### Discussion
+## Discussion
 
 Windows at this level appear on top of the status bar.
 

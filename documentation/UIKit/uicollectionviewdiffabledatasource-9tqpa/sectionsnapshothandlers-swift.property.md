@@ -22,7 +22,7 @@ The diffable data source’s handlers for expanding and collapsing items.
 
 Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
 
-#### Discussion
+## Discussion
 
 Provide section snapshot handlers to support the expanding or collapsing of items in your collection view.
 

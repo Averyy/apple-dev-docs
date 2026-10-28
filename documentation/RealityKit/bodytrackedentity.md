@@ -22,7 +22,7 @@ An entity used to animate a virtual character in an AR scene by tracking a real 
 
 - [Loading entities from a file](./loading-entities-from-a-file.md)
 
-#### Overview
+## Overview
 
 Like a [`ModelEntity`](./modelentity.md), a [`BodyTrackedEntity`](./bodytrackedentity.md) has a [`ModelComponent`](./modelcomponent.md) that defines its physical appearance. Unlike a model entity, a body-tracked entity lacks the components required to participate in collisions or physics simulations. Instead, a [`BodyTrackingComponent`](./bodytrackingcomponent.md) drives the positioning and arrangement of the entity based on tracking information from the AR session.
 

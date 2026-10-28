@@ -19,7 +19,7 @@ func AXIsProcessTrustedWithOptions(_ options: CFDictionary?) -> Bool
 Boolean AXIsProcessTrustedWithOptions(CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the current process is a trusted accessibility client, FALSE if it is not.
 

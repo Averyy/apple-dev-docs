@@ -21,7 +21,7 @@ Description of the style used to draw the line for `StrikethroughStyleAttribute`
 struct LineStyle
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify `underlineStyle` and `strikethroughStyle` SwiftUI attributes of an `AttributedString`.
 

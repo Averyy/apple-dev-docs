@@ -17,11 +17,11 @@ Get this trait’s scope provider for the specified test and optional test case.
 func scopeProvider(for test: Test, testCase: Test.Case?) -> Self.TestScopeProvider?
 ```
 
-#### Return Value
+## Return Value
 
 A value conforming to [`TestScopeProvider`](./testscopeprovider.md) which you use to provide custom scoping for `test` or `testCase`. Returns `nil` if the trait doesn’t provide any custom scope for the test or test case.
 
-#### Discussion
+## Discussion
 
 If this trait’s type conforms to [`TestScoping`](../testscoping.md), the default value returned by this method depends on the values of`test` and `testCase`:
 

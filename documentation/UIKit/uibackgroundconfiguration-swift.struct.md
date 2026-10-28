@@ -19,7 +19,7 @@ A configuration that describes a specific background appearance.
 struct UIBackgroundConfiguration
 ```
 
-#### Overview
+## Overview
 
 Background configurations provide a lightweight way for you to create backgrounds for your views. Using a background configuration, you can obtain system default background styling for a variety of different view states. You apply background configurations directly to [`UIButton`](./uibutton.md) or to cells, headers, and footers in [`UICollectionView`](./uicollectionview.md) and [`UITableView`](./uitableview.md).
 

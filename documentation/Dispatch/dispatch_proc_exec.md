@@ -25,7 +25,7 @@ var DISPATCH_PROC_EXEC: Int32 { get }
 #define DISPATCH_PROC_EXEC
 ```
 
-#### Discussion
+## Discussion
 
 The process has become another executable image via an `exec` or `posix_spawn` function family call.
 

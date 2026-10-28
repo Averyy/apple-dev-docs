@@ -16,11 +16,11 @@ Returns the command at a given index.
 IOFireWireLibCommandRef (*GetCommandAtIndex)(IOFireWireLibVectorCommandRef self, UInt32 index);
 ```
 
-#### Return Value
+## Return Value
 
 The IOFireWireLibCommandRef at the specified index on return
 
-#### Discussion
+## Discussion
 
 Returns kIOReturnBadArgument if the index is out of bounds.
 

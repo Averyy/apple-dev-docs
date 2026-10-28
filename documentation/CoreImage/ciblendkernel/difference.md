@@ -24,7 +24,7 @@ class var difference: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * difference;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the difference blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926863@2x.png)
 

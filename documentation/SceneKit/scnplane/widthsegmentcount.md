@@ -25,7 +25,7 @@ var widthSegmentCount: Int { get set }
 @property (nonatomic) NSInteger widthSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry. Although the plane is flat, extra vertices can be useful for lighting or other special effects. For example, you can add a GLSL source code snippet to the plane’s [`shaderModifiers`](../scnshadable/shadermodifiers.md) property that modulates the position of each vertex. Adding vertices increases rendering cost, so use the minimal segment count that produces your desired visual effect.
 

@@ -19,7 +19,7 @@ func CTFontCollectionCopyExclusionDescriptors(_ collection: CTFontCollection) ->
 extern CFArrayRefCTFontCollectionCopyExclusionDescriptors(CTFontCollectionRef collection);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the array of descriptors for querying (matching) the system font database.
 

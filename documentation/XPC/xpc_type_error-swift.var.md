@@ -21,7 +21,7 @@ A type that represents an error object.
 var XPC_TYPE_ERROR: xpc_type_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 Errors in XPC are dictionaries, but [`xpc_get_type(_:)`](./xpc_get_type%28_%29.md) will return this type when given an error object. You cannot create an error object directly; XPC will only give them to handlers. These error objects have pointer values that are constant across the lifetime of your process and can be safely compared.
 

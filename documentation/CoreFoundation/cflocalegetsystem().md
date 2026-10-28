@@ -25,11 +25,11 @@ func CFLocaleGetSystem() -> CFLocale!
 extern CFLocaleRefCFLocaleGetSystem();
 ```
 
-#### Return Value
+## Return Value
 
 The root, canonical locale. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 The root locale contains fixed backstop settings for all locale information.
 

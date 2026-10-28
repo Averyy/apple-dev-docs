@@ -19,7 +19,7 @@ static var grayModeMask: NSColorPanel.Options { get }
 NSColorPanelGrayModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Grayscale-alpha.
 

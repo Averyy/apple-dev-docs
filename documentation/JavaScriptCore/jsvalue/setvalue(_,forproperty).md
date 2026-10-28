@@ -32,7 +32,7 @@ func setValue(_ value: Any!, forProperty property: String!)
 - (void) setValue:(id) value forProperty:(JSValueProperty) property;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the subscript operator with a string subscript in JavaScript. Use it to set or create fields or properties in JavaScript objects.
 

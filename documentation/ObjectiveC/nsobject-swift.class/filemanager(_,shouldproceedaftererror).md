@@ -26,11 +26,11 @@ func fileManager(_ fm: FileManager, shouldProceedAfterError errorInfo: [AnyHasha
 - (BOOL) fileManager:(NSFileManager *) fm shouldProceedAfterError:(NSDictionary *) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the operation (which is often continuous within a loop) should proceed, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 An `NSFileManager` object, `manager`, sends this message for each error it encounters when copying, moving, removing, or linking files or directories. The return value is passed back to the invoker of [`copyPath:toPath:handler:`](../../Foundation/nsfilemanager/copypath_topath_handler_.md), [`movePath:toPath:handler:`](../../Foundation/nsfilemanager/movepath_topath_handler_.md), [`removeFileAtPath:handler:`](../../Foundation/nsfilemanager/removefileatpath_handler_.md), or [`linkPath:toPath:handler:`](../../Foundation/nsfilemanager/linkpath_topath_handler_.md). If an error occurs and your handler has not implemented this method, the invoking method automatically returns [`NO`](../no.md).
 

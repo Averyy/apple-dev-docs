@@ -13,11 +13,11 @@
 typedef UInt32 (*IODebuggerLinkStatusHandler)(IOService *target);
 ```
 
-#### Return Value
+## Return Value
 
 Return link status.
 
-#### Discussion
+## Discussion
 
 Defines the link up handler that must be implemented by the target to service KDP link status requests. This handler is called by kdpLinkStatusDispatcher().
 

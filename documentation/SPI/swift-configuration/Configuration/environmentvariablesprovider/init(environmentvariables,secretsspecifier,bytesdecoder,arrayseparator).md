@@ -24,7 +24,7 @@ Creates a new provider from a custom dictionary of environment variables.
 init(environmentVariables: [String : String], secretsSpecifier: SecretsSpecifier<String, String> = .none, bytesDecoder: some ConfigBytesFromStringDecoder = .base64, arraySeparator: Character = ",")
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows you to provide a custom set of environment variables, which is useful for testing or when you want to override specific values.
 

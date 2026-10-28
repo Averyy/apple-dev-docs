@@ -19,7 +19,7 @@ var mouseLocationOutsideOfEventStream: NSPoint { get }
 @property (readonly) NSPoint mouseLocationOutsideOfEventStream;
 ```
 
-#### Discussion
+## Discussion
 
 For the same information in screen coordinates, use `NSEvent`’s [`mouseLocation`](../nsevent/mouselocation.md).
 

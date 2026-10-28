@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.contiguous
 
-**contiguous(*a: array*, */*, *allow_col_major: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Force an array to be row contiguous. Copy if necessary.
+```python
+contiguous(a: array, /, allow_col_major: bool = False, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Force an array to be row contiguous. Copy if necessary.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – The input to make contiguous
-**allow_col_major** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Consider column major as contiguous and don’t copy
+**Parameters:**
 
-Returns:
-The row or col contiguous output.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – The input to make contiguous
+- **allow_col_major** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Consider column major as contiguous and don’t copy
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The row or col contiguous output.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

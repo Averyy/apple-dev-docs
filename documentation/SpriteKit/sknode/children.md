@@ -30,7 +30,7 @@ var children: [SKNode] { get }
 - [Accessing and Modifying the Node Tree](../accessing-and-modifying-the-node-tree.md)
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 
-#### Discussion
+## Discussion
 
 The objects in this array are all `SKNode` objects.
 

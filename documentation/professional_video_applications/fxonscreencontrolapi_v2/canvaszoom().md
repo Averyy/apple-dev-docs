@@ -20,7 +20,7 @@ func canvasZoom() -> Double
 - (double) canvasZoom;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the zoom factor the user has set for the canvas. The unit is a percentage.
 

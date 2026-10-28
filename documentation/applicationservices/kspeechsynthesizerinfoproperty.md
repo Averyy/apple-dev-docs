@@ -19,7 +19,7 @@ let kSpeechSynthesizerInfoProperty: CFString
 const CFStringRef kSpeechSynthesizerInfoProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFDictionary` object that contains information about the speech synthesizer being used on the specified speech channel. See [Speech Synthesizer Information Keys](./speech_synthesis_manager/speech_synthesizer_information_keys.md) for a description of the keys present in the dictionary.
 

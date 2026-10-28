@@ -19,7 +19,7 @@ func obexAbort(_ inOptionalHeaders: UnsafeMutableRawPointer!, optionalHeadersLen
 - (OBEXError) OBEXAbort:(void *) inOptionalHeaders optionalHeadersLength:(size_t) inOptionalHeadersLength eventSelector:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.
 

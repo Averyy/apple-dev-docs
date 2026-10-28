@@ -23,7 +23,7 @@ var nextLayout: UICollectionViewLayout { get }
 @property (nonatomic, readonly) UICollectionViewLayout * nextLayout;
 ```
 
-#### Discussion
+## Discussion
 
 This object provides the layout attributes representing the new position of items in the collection view. If the transition completes as expected, the collection view animates its items to the positions provided by this object.
 

@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ProfileLevel: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ProfileLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Available profiles and levels vary across formats and among video encoders. Video encoders should use standard keys where available, and follow standard patterns when standard keys are unavailable.
 

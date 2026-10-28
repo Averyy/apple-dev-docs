@@ -19,7 +19,7 @@ static let applicationIcon: NSApplication.AboutPanelOptionKey
 extern NSAboutPanelOptionKey const NSAboutPanelOptionApplicationIcon;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSImage`](../../nsimage.md) object. If you do not specify an image, AppKit looks for an image with the name `NSApplicationIcon`. If neither is available, this method uses the generic app icon.
 

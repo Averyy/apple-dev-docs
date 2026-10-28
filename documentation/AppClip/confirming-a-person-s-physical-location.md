@@ -5,13 +5,13 @@
 
 Add code to quickly confirm a person’s physical location while respecting their privacy.
 
-#### Overview
+## Overview
 
 If you create an App Clip that people invoke at a physical location, you may need to confirm a person’s location before allowing them to perform a task. For a quick launch and to preserve user privacy, App Clips use a lightweight mechanism in which the system verifies that a person is at a specific, expected location. When you adopt this mechanism, and when people allow it, the *App Clip card* contains a note that tells people that the App Clip can verify their location. They can disable location verification by tapping the note on the App Clip card.
 
 ![An App Clip card for an App Clip that can verify a person’s physical location.](https://developer.apple.com/tutorials/images/com.apple.appclip/enabling-app-clips-card-location@2x.png)
 
-##### Enable your App Clip to verify a person’s location
+### Enable your App Clip to verify a person’s location
 
 To enable your App Clip to verify the person’s location, modify your App Clip’s `Info.plist` file:
 
@@ -24,7 +24,7 @@ Alternatively, open the `Info.plist` file in the property list editor and add th
 
 > **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](../BundleResources/information-property-list/nsappclip/nsappcliprequestlocationconfirmation.md) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [Core Location](../CoreLocation/CoreLocation.md) framework. For more information, refer to [Getting the current location of a device](../CoreLocation/getting-the-current-location-of-a-device.md).
 
-##### Add code that verifies the physical location
+### Add code that verifies the physical location
 
 After you modify your App Clip’s `Info.plist` file, add code to provide the expected physical location information to the App Clip. To retrieve this information, encode an identifier in the URL that launches the App Clip, and use the identifier to look up the location information for a business in your database. Alternatively, encode the location information in the URL that launches the App Clip.
 

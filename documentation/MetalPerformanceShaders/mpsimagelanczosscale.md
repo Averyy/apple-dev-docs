@@ -24,7 +24,7 @@ class MPSImageLanczosScale
 @interface MPSImageLanczosScale : MPSImageScale
 ```
 
-#### Overview
+## Overview
 
 You can use this filter to enlarge or reduce the size of an image, or to change the aspect ratio of an image. The filter uses a Lanczos resampling algorithm, that typically produces better quality for photographs, but is slower than linear sampling that uses GPU texture units. Lanczos downsampling does not require a low pass filter to be applied before it is used. Because the resampling function has negative lobes, Lanczos can result in ringing artifacts near sharp edges, making it less suitable for vector art.
 

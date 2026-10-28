@@ -21,7 +21,7 @@ A collection wrapper that iterates over the indices and identifiers of a collect
 struct IndexedIdentifierCollection<Base, ID> where Base : Collection, ID : Hashable
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead SwiftUI creates this type on your behalf.
 

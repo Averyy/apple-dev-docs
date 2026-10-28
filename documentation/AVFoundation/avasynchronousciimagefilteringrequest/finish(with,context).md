@@ -26,7 +26,7 @@ func finish(with filteredImage: CIImage, context: CIContext?)
 - (void) finishWithImage:(CIImage *) filteredImage context:(CIContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your handler block has finished applying filters, passing the [`outputImage`](../../CoreImage/cifilter-swift.class/outputimage.md) object from the final filter in your filter chain for the `filteredImage` parameter. The pixel format for this image must be the [`BGRA8`](../../CoreImage/ciformat/bgra8.md) format (of the [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) type).
 

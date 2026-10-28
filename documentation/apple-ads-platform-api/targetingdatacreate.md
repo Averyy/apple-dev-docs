@@ -15,11 +15,11 @@ A targeting dimension value set for creating ad group or campaign targeting, spe
 object TargetingDataCreate
 ```
 
-#### Discussion
+## Discussion
 
 Most targeting dimensions only support `include`, so setting `exclude` on those has no effect at creation.
 
-##### Example
+### Example
 
 ```json
 {

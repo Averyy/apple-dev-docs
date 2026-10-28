@@ -5,13 +5,13 @@
 
 Control when and how you compile an app’s shaders.
 
-#### Overview
+## Overview
 
 Metal 4 introduces a modular shader compilation API workflow that gives you more control over when, where, and how you compile your shaders. A major part of that workflow comes from a compiler protocol, which represents the compiler instances your app creates at runtime. The compiler protocol gives you the ability to monitor and control the shader compilation process.
 
 For example, an app can use a compiler instance to reduce or eliminate runtime delays from compilation tasks, which can have an unpredictable duration at runtime, by deciding the best time to run those tasks. This reduction is useful for large-scale apps that have compilation tasks needing a non-trivial amount of time. You can build strategies that balance your app’s size and performance with the time it takes to compile shaders during development, your app’s runtime, or both.
 
-##### Improve your app’s performance
+### Improve your app’s performance
 
 Metal 4 also introduces other shader compilation features that can improve your app’s performance by helping you only build the pipeline configurations it needs, including:
 
@@ -26,7 +26,7 @@ As you convert more pipelines to Metal 4, you can increasingly leverage *harvest
 - Reduce the time your app spends compiling pipeline states at runtime
 - Create opportunities for broad compatibility and longevity because both Metal 3 and 4 can load binary archives
 
-##### Create a dedicated compiler
+### Create a dedicated compiler
 
 Control of the compilation process with the [`MTL4Compiler`](./mtl4compiler.md) protocol, which provides direct, fine-grained control over shader compilation tasks. With Metal 4, your app can explicitly oversee more aspects of the compilation processes with a dedicated compiler instance, including the ability to:
 
@@ -38,7 +38,7 @@ Control of the compilation process with the [`MTL4Compiler`](./mtl4compiler.md) 
 
 Compilation requests you run on that dispatch queue, such as with `dispatch_sync` or `dispatch_async`, run at the queue’s QoS. If the app runs a compilation directly, without using a dispatch queue, such as on the main thread, the framework runs the compilation on the same QoS as the app’s calling thread.
 
-##### Choose synchronous or asynchronous compilation
+### Choose synchronous or asynchronous compilation
 
 You can compile your shaders synchronous or asynchronously. *Synchronous* calls block the caller’s thread until the compiler finishes, but *asynchronous* calls return immediately and finish running on a background thread or queue.
 
@@ -46,7 +46,7 @@ Smaller projects or early prototypes typically compile their shaders with synchr
 
 Larger projects, such as AAA games and professional graphics tools, typically compile their shaders with asynchronous calls because of their size and sensitivity to runtime performance. This approach avoids introducing long stalls that can impede high-priority tasks on the CPU, such as UI responsiveness, because you can choose a Quality-of-Service (QoS) level. Compiling asynchronously does add additional complexity because your app needs to manage the background work and synchronize it with foreground tasks.
 
-##### Schedule compilation tasks
+### Schedule compilation tasks
 
 The schedule model in Metal 4 divides compilation work into different quality-of-service (QoS) levels, including [`userInteractive`](../Dispatch/dispatchqos/userinteractive.md) and [`background`](../Dispatch/dispatchqos/background.md) (see [`DispatchQoS`](../Dispatch/dispatchqos.md)). You create one or more queues, each with their own QoS level, and then submit each compilation task to a queue with an appropriate QoS for that task.
 
@@ -58,7 +58,7 @@ For example, if an app submits a task on a queue with a high QoS setting, such a
 
 > **Note**:  In Metal 3, you can configure whether compilation tasks apply multithreading by setting the [`shouldMaximizeConcurrentCompilation`](./mtldevice/shouldmaximizeconcurrentcompilation.md) property of an [`MTLDevice`](./mtldevice.md) instance.
 
-##### Save compile time and memory with flexible pipeline state properties
+### Save compile time and memory with flexible pipeline state properties
 
 Staring in Metal 4, you can reduce your app’s shader compilation time by defining and creating a generic, or *unspecialized*, pipeline state one time, such as at launch. After launch, your app can create multiple, task-specific *specialized* pipeline states from the the unspecialized state for each pair of a fragment shader with a vertex or mesh shader. For example, if your app creates multiple pipeline states that are mostly identical except for a few specific configuration details, you can create an unspecialized pipeline with these steps:
 
@@ -74,7 +74,7 @@ When your app needs to create a pipeline state that replaces unspecialized value
 
 Creating specialized pipeline states from unspecialized pipeline ones can improve your app’s runtime performance because it doesn’t need to recompile the common code each time. The technique can also save memory at runtime, especially with shaders that have more code in their main body, because it doesn’t need to recreate common state or recompile the shader’s main body for each pipeline state specialization.
 
-##### Improve GPU runtime performance with color-attachment mapping
+### Improve GPU runtime performance with color-attachment mapping
 
 Metal 4 introduces the ability to modify the way a render pass maps its pipeline’s logical outputs to the specific, physical outputs on the GPU. This flexibility means you can create a render pipeline state that works with various render encoders, even if they each define their outputs differently. Instead of creating a series of nearly identical pipeline states that only differ by their output configurations, you can create a single pipeline state that *inherits* the logical-to-physical output mapping from each encoder you apply it to. This technique:
 

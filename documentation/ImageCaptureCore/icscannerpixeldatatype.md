@@ -19,7 +19,7 @@ enum ICScannerPixelDataType
 enum ICScannerPixelDataType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values correspond to the `ICAP_PIXELTYPE` types as defined in the `TWAIN` Specification.
 

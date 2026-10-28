@@ -24,7 +24,7 @@ class let textDidEndEditingNotification: NSNotification.Name
 extern NSNotificationName const UITextFieldTextDidEndEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The affected text field is stored in the `object` parameter of the notification. The `userInfo` dictionary is not used.
 

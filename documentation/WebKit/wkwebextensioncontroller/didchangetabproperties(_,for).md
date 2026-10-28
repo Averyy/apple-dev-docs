@@ -23,7 +23,7 @@ func didChangeTabProperties(_ properties: WKWebExtension.TabChangedProperties, f
 - (void) didChangeTabProperties:(WKWebExtensionTabChangedProperties) properties forTab:(id<WKWebExtensionTab>) changedTab;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of changes to tab properties, ensuring a unified understanding across extensions.
 

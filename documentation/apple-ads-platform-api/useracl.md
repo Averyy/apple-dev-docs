@@ -15,11 +15,11 @@ An access control entry for a single ad account that specifies the authenticated
 object UserAcl
 ```
 
-#### Discussion
+## Discussion
 
 The `UserAcl` object represents a user’s access control entry for a single ad account. Each record returned by `GET /v1/acls` ([`Get User ACL`](./get-user-acls.md)) corresponds to one ad account the authenticated user can access.
 
-##### Example
+### Example
 
 ```json
 {
@@ -34,7 +34,7 @@ The `UserAcl` object represents a user’s access control entry for a single ad 
 }
 ```
 
-#### Roles Reference
+## Roles Reference
 
 An API Account Manager assigns roles through the Apple Ads UI, and you can’t set or change them via the API. Use the table below as a reference when interpreting the `roles` field returned by `GET /v1/acls` ([`Get User ACL`](./get-user-acls.md)).
 

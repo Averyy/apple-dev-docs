@@ -21,7 +21,7 @@ class PDFAnnotationTextWidget
 @interface PDFAnnotationTextWidget : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 `PDFAnnotationTextWidget` objects support interactive forms in a PDF document. This object is comparable to an editable `NSTextField` in Cocoa or an edit text view in Carbon.
 

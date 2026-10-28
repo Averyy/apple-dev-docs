@@ -19,7 +19,7 @@ class var shared: AAUSBAccessoryManager { get }
 @property (class, strong, readonly) AAUSBAccessoryManager * sharedManager;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t instantiate a `AAUSBAccessoryManager` directly, instead obtain the manager through this class property.
 

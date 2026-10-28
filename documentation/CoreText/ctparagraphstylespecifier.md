@@ -25,7 +25,7 @@ enum CTParagraphStyleSpecifier
 enum CTParagraphStyleSpecifier : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Each specifier has a type and a default value associated with it. The type must always be observed when setting or fetching the value from the `CTParagraphStyle` object. In addition, some specifiers affect the behavior of both the framesetter and the typesetter, and others affect the behavior of only the framesetter, as noted in the constant descriptions.
 

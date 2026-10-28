@@ -21,7 +21,7 @@ Creates a new `ManagedAudioChannelLayout` that can hold up to `maximumDescriptio
 init(maximumDescriptions: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Use `ManagedAudioChannelLayout(tag:)` if no `AudioChannelDescription` are needed.
 

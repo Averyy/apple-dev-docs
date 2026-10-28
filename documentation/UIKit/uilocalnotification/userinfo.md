@@ -24,7 +24,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You may add arbitrary key-value pairs to this dictionary. However, the keys and values must be valid [Property list](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/PropertyList.html#//apple_ref/doc/uid/TP40008195-CH44); if any are not, an exception is raised.
 

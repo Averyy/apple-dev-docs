@@ -19,11 +19,11 @@ func alignmentFeedbackTokenForVerticalMovement(in view: NSView?, previousY: CGFl
 - (id<NSAlignmentFeedbackToken>) alignmentFeedbackTokenForVerticalMovementInView:(NSView *) view previousY:(CGFloat) previousY alignedY:(CGFloat) alignedY defaultY:(CGFloat) defaultY;
 ```
 
-#### Return Value
+## Return Value
 
 If the system determines that the alignment should not occur, a null value is returned. Otherwise, a feedback token of type `NSAlignmentFeedbackToken` is returned.
 
-#### Discussion
+## Discussion
 
 This method requests a feedback token for the alignment of an object requiring vertical movement only.
 

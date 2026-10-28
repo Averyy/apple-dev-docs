@@ -21,7 +21,7 @@ Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
 init(mutating pixelBuffer: CVPixelBuffer, shape: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an `IOSurface` backed `MLShapedArray`, which can reduce the inference latency by avoiding the buffer copy.
 

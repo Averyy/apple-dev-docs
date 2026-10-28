@@ -27,7 +27,7 @@ func dataRecords(ofTypes dataTypes: Set<WKWebExtension.DataType>) async -> [WKWe
 - (void) fetchDataRecordsOfTypes:(NSSet<NSString *> *) dataTypes completionHandler:(void (^)(NSArray<WKWebExtensionDataRecord *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The extension does not need to be loaded to be included in the result.
 

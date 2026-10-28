@@ -22,7 +22,7 @@ var locale: Locale { get set }
 @property (nonatomic, strong, nonnull) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`current`](../../Foundation/nslocale/current.md).
 

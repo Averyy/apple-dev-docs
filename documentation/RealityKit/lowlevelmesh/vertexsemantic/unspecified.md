@@ -20,7 +20,7 @@ The semantic that doesn’t specify the role of the vertex.
 case unspecified
 ```
 
-#### Discussion
+## Discussion
 
 A geometry modifier can’t read this vertex’s attribute, but it can denote attributes for other purposes.
 

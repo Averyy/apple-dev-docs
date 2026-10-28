@@ -19,7 +19,7 @@ init(directory: VZSharedDirectory)
 - (instancetype) initWithDirectory:(VZSharedDirectory *) directory;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to share a directory on the host system with the guest VM.
 

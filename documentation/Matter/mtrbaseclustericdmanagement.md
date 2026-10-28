@@ -25,7 +25,7 @@ class MTRBaseClusterICDManagement
 @interface MTRBaseClusterICDManagement : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Allows servers to ensure that listed clients are notified when a server is available for communication.
 

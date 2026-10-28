@@ -16,7 +16,7 @@ Informs the view that the mouse’s scroll wheel has moved.
 @preconcurrency override dynamic func scrollWheel(with event: NSEvent)
 ```
 
-#### Discussion
+## Discussion
 
 The view handles the event instead of passing it to the next responder. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 

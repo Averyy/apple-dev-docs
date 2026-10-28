@@ -21,7 +21,7 @@ The position of the first element.
 var startIndex: CollectionOfOne<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In a `CollectionOfOne` instance, `startIndex` is always `0`.
 

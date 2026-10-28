@@ -25,7 +25,7 @@ protocol INCarCommandsDomainHandling : INActivateCarSignalIntentHandling, INGetC
 @protocol INCarCommandsDomainHandling <INActivateCarSignalIntentHandling, INSetCarLockStatusIntentHandling, INGetCarLockStatusIntentHandling, INGetCarPowerLevelStatusIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The `INCarCommandsDomainHandling` protocol adopts all of the protocols used to handle car command intents. You can adopt this one protocol instead of adopting the [`INActivateCarSignalIntentHandling`](./inactivatecarsignalintenthandling.md), [`INGetCarPowerLevelStatusIntentHandling`](./ingetcarpowerlevelstatusintenthandling.md), [`INGetCarLockStatusIntentHandling`](./ingetcarlockstatusintenthandling.md), and [`INSetCarLockStatusIntentHandling`](./insetcarlockstatusintenthandling.md) protocols separately.
 

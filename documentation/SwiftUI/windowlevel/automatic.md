@@ -15,7 +15,7 @@ Automatic window level.
 static var automatic: WindowLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI will use applicable level accordingly based on factors like scene type and window style.
 

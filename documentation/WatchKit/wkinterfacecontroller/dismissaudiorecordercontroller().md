@@ -19,7 +19,7 @@ func dismissAudioRecorderController()
 - (void) dismissAudioRecorderController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to interrupt media playback and dismiss a modal media interface controller. When you dismiss the recording interface programmatically, the recording controller passes a value of [`false`](../../Swift/false.md) for the `didSave` parameter of your completion block.
 

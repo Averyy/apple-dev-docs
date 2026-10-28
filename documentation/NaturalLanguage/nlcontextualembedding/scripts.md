@@ -25,7 +25,7 @@ var scripts: [NLScript] { get }
 @property (copy, readonly) NSArray<NSString *> * scripts;
 ```
 
-#### Discussion
+## Discussion
 
 The current scripts that are supported by `NLContextualEmbedding` include:
 

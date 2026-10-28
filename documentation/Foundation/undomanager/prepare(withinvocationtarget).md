@@ -25,7 +25,7 @@ func prepare(withInvocationTarget target: Any) -> Any
 - (id) prepareWithInvocationTarget:(id) target;
 ```
 
-#### Return Value
+## Return Value
 
 A proxy object that forwards messages to the undo manager for recording as undo actions.
 

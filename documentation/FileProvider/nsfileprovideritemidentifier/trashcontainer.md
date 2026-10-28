@@ -23,7 +23,7 @@ static let trashContainer: NSFileProviderItemIdentifier
 extern NSFileProviderItemIdentifier const NSFileProviderTrashContainerItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the user moves an item to the trash, the system sets its [`parentItemIdentifier`](../nsfileprovideritemprotocol/parentitemidentifier.md) to [`trashContainer`](./trashcontainer.md). Your extension must enumerate all trashed items on request.
 

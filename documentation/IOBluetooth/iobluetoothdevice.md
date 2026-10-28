@@ -19,7 +19,7 @@ class IOBluetoothDevice
 @interface IOBluetoothDevice : IOBluetoothObject
 ```
 
-#### Overview
+## Overview
 
 An IOBluetoothDevice object may exist independent of the existence of a baseband connection with the target device. Using this object, a client can request creation and destruction of baseband connections, and request the opening of L2CAP and RFCOMM channels on the remote device. Many of the other APIs in the IOBluetooth framework will return this object, or it’s C counterpart (IOBluetoothDeviceRef).
 

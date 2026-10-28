@@ -19,7 +19,7 @@ class func terminateAutomaticallyTerminableApplications()
 + (void) terminateAutomaticallyTerminableApplications;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended for installer applications and similar applications to ensure that nothing is unexpectedly relying on the files they’re replacing.
 

@@ -19,7 +19,7 @@ func layoutSubtreeIfNeeded()
 - (void) layoutSubtreeIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying a view that uses constraints-based layout the system invokes this method to ensure that the layout of the view and its subviews is up to date. This method updates the layout if needed, first invoking [`updateConstraintsForSubtreeIfNeeded()`](./updateconstraintsforsubtreeifneeded%28%29.md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
 

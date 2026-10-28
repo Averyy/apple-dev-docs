@@ -22,7 +22,7 @@ var locale: Locale? { get set }
 @property (nonatomic, strong, nullable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the current locale as returned by the [`current`](../../Foundation/nslocale/current.md) property of [`NSLocale`](../../Foundation/nslocale.md), or the locale used by the date picker’s calendar. Locales encapsulate information about facets of a language or culture, such as the way dates are formatted.
 

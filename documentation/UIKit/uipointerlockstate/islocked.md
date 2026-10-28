@@ -22,7 +22,7 @@ var isLocked: Bool { get }
 @property (nonatomic, readonly, getter=isLocked) BOOL locked;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the status of the pointer lock for the scene, as determined by the system. A view controller specifies its preferred pointer lock value, but the system may not honor the request.
 

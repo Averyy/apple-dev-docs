@@ -24,7 +24,7 @@ var cullDistance: Double { get }
 @property (nonatomic, readonly) double cullDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(cullDistance:)`](./init%28culldistance%29.md) argument.
 

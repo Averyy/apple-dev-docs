@@ -15,7 +15,7 @@ A window style that creates a 3D volumetric window.
 struct VolumetricWindowStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`volumetric`](./windowstyle/volumetric.md) to construct this style:
 

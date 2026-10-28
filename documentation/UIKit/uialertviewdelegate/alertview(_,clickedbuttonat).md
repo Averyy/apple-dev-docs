@@ -23,7 +23,7 @@ optional func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: I
 - (void) alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger) buttonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver is automatically dismissed after this method is invoked.
 

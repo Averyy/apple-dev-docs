@@ -25,7 +25,7 @@ func CGPointMake(_ x: CGFloat, _ y: CGFloat) -> CGPoint
 static CGPoint CGPointMake(CGFloat x, CGFloat y);
 ```
 
-#### Return Value
+## Return Value
 
 A point.
 

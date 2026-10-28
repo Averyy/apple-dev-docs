@@ -24,7 +24,7 @@ case black
 PKPaymentButtonStyleBlack
 ```
 
-#### Discussion
+## Discussion
 
 Use the black button on white or light backgrounds that provide sufficient contrast. Don’t place this button on dark or saturated color backgrounds. Use the white button instead.
 

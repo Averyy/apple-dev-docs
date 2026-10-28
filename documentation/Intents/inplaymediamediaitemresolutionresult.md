@@ -24,7 +24,7 @@ class INPlayMediaMediaItemResolutionResult
 @interface INPlayMediaMediaItemResolutionResult : INMediaItemResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INPlayMediaMediaItemResolutionResult`](./inplaymediamediaitemresolutionresult.md) object when resolving parameters containing an [`INMediaItemResolutionResult`](./inmediaitemresolutionresult.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

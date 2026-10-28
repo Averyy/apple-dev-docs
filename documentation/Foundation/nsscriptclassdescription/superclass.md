@@ -20,11 +20,11 @@ var superclass: NSScriptClassDescription? { get }
 @property (retain, readonly, nullable) NSScriptClassDescription * superclassDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A class description instance that describes the superclass of the receiver’s class. Returns `nil` if the class has no superclass.
 
-#### Discussion
+## Discussion
 
 The instance of `NSScriptClassDescription` that describes the superclass can be in the same suite as the receiver or in a different suite.
 

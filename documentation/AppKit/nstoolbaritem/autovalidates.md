@@ -22,7 +22,7 @@ var autovalidates: Bool { get set }
 @property BOOL autovalidates;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the toolbar automatically validates the item; otherwise, it doesn’t validate the item automatically. The default value of this property is [`true`](../../Swift/true.md).
 

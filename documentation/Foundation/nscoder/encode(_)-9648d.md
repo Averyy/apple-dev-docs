@@ -25,7 +25,7 @@ func encode(_ object: Any?)
 - (void) encodeObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation simply invokes [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) to encode `object`. Subclasses can override this method to encode a reference to `object` instead of `object` itself. For example, `NSArchiver` detects duplicate objects and encodes a reference to the original object rather than encode the same object twice.
 

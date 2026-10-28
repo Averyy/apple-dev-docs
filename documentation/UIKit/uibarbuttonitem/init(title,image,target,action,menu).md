@@ -20,7 +20,7 @@ Creates a plain-style item using the specified title, image, target, action, and
 @preconcurrency convenience init(title: String?, image: UIImage?, target: AnyObject?, action: Selector?, menu: UIMenu? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

@@ -17,7 +17,7 @@ Parser for Muse Glimmer’s Onyx ATEM tool-call format.
 struct ATEMToolCallParser
 ```
 
-#### Overview
+## Overview
 
 ATEM deliberately is not XML: parameter bodies may contain unescaped, multi-line text. Parse only the protocol’s structural tags and never run a global namespace replacement over the payload—the latter silently mutates legitimate string arguments containing `<atem:`.
 

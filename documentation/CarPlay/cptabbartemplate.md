@@ -22,7 +22,7 @@ class CPTabBarTemplate
 @interface CPTabBarTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 `CPTabBarTemplate` is a container template that displays a collection of other templates, where each template occupies a single tab in the tab bar. At runtime, use [`maximumTabCount`](./cptabbartemplate/maximumtabcount.md) to determine the maximum number of tabs that your tab bar can display.
 

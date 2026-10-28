@@ -22,7 +22,7 @@ class SFSafariViewController
 @interface SFSafariViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 An [`SFSafariViewController`](./sfsafariviewcontroller.md) object presents a self-contained web interface inside your app. Present this view controller to let people view websites from anywhere on the internet without leaving your app. The web interface supports Safari features such as Reader, AutoFill, Fraudulent Website Warning, and content blocking. Interactions with the web interface aren’t visible to your app, and you can’t access AutoFill data, browsing history, or website data. You don’t need to secure data between your app and Safari. To share data between your app and Safari, use [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) instead.
 
@@ -39,7 +39,7 @@ UI features include the following:
 
 When a person peeks and pops a link in [`SFSafariViewController`](./sfsafariviewcontroller.md), the view controller loads and displays the link destination. When a person peeks and pops a link in a [`WKWebView`](../WebKit/wkwebview.md) class, the web view opens the link in Safari by default.
 
-##### Presenting the view controller in your interface
+### Presenting the view controller in your interface
 
 Present a [`SFSafariViewController`](./sfsafariviewcontroller.md) modally using the [`present(_:animated:completion:)`](../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) method and the default presentation style. The view controller animates into position and provides an optimized full-screen experience for web browsing. It also supports intuitive and expected gestures for returning to your app’s content. For example, the view controller’s leading-edge swipe gesture automatically switches between navigating to the previous page in the browsing history and dismissing the view controller.
 
@@ -51,7 +51,7 @@ To create a more lightweight browsing experience, change the presentation style 
 
 When building apps to support multiple platforms, be aware of behavior differences when presenting an [`SFSafariViewController`](./sfsafariviewcontroller.md) from your UI. In Mac apps built with Mac Catalyst, and in compatible iPad and iPhone apps running in visionOS, showing an [`SFSafariViewController`](./sfsafariviewcontroller.md) opens the web content in the default web browser instead. In visionOS, you can use [`SFSafariViewController`](./sfsafariviewcontroller.md) to support context menu previews for links, but don’t use it to open a URL. The view controller displays a preview of the link content but redirects the URL to the default web browser if someone opens it. Instead of showing the view controller in visionOS, modify your experience to open the URL using an `OpenURLAction` in SwiftUI or the [`open(_:options:completionHandler:)`](../UIKit/uiapplication/open%28_,options,completionhandler%29.md) method of [`UIApplication`](../UIKit/uiapplication.md) instead.
 
-##### Measuring ad taps with Private Click Measurement (PCM)
+### Measuring ad taps with Private Click Measurement (PCM)
 
 When you navigate to a webpage in `SFSafariViewController` after a person taps an ad in your app, measure conversions on the website in a privacy-preserving way with Private Click Measurement (PCM).
 

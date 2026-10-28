@@ -15,7 +15,7 @@ The type of notification.
 readonly attribute String notificationType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [`CloudKit.Notification`](../cloudkit.notification.md).
 

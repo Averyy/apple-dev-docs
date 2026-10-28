@@ -19,7 +19,7 @@ The location and distance of an Apple Pencil hovering in the area above the view
 let hoverPose: PencilHoverPose?
 ```
 
-#### Discussion
+## Discussion
 
 If the Apple Pencil was hovering in the area above the view’s bounds when the user double-tapped their Apple Pencil, this property describes its pose relative to that view.
 

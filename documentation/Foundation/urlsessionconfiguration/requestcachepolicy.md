@@ -29,7 +29,7 @@ var requestCachePolicy: NSURLRequest.CachePolicy { get set }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This property determines the request caching policy used by tasks within sessions based on this configuration.
 

@@ -20,11 +20,11 @@ Creates a retargeting configuration for quadrupedal characters using automatic j
 static func automatchQuadruped(_ sourceSkeleton: SkeletonResource, sourceTransform: Transform = .identity, to targetSkeleton: SkeletonResource, targetTransform: Transform = .identity, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configured retargeting instance ready for animation processing.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if configuration creation fails. All errors provide descriptive messages via their `localizedDescription` property. Common failures include:
 >

@@ -25,7 +25,7 @@ class ID
 @interface CKRecordID : NSObject
 ```
 
-#### Overview
+## Overview
 
 A record ID object consists of a name string and a zone ID. The name string is an ASCII string that doesn’t exceed 255 characters in length. When you create a record without specifying a record ID, the ID name string derives from a UUID and is, therefore, unique. When creating your own record ID objects, you can use names that have more meaning to your app or to the user, as long as each name is unique within the specified zone. For example, you might use a document name for the name string.
 
@@ -35,17 +35,17 @@ CloudKit generally creates record IDs when it first saves a new record, but you 
 
 Don’t subclass `CKRecordID`.
 
-##### Interacting with Record IDs
+### Interacting with Record IDs
 
 After you create a `CKRecordID` object, interactions with that object typically involve creating a new record or retrieving an existing record from a database.
 
 You might also use record IDs when you can’t use a [`CKRecord.Reference`](./reference.md) object to refer to a record. References are only valid within a single zone of a database. To refer to objects outside of the current zone or database, save the strings in the record’s `CKRecordID` and [`CKRecordZone.ID`](../ckrecordzone/id.md) objects. When you want to retrieve the record later, use those strings to recreate the record and zone ID objects so that you can fetch the record.
 
-###### Creating Record IDs for New Records
+#### Creating Record IDs for New Records
 
 To assign a custom record ID to a new record, you must create the `CKRecordID` object first. You need to know the intended name and zone information for that record, which might also require creating a [`CKRecordZone.ID`](../ckrecordzone/id.md) object. After creating the record ID object, initialize your new record using its [`init(recordType:recordID:)`](./init%28recordtype,recordid%29.md) method.
 
-###### Using Record IDs to Fetch Records
+#### Using Record IDs to Fetch Records
 
 Use a record ID to fetch the corresponding [`CKRecord`](../ckrecord.md) object from a database quickly. You perform the fetch operation using a [`CKFetchRecordsOperation`](../ckfetchrecordsoperation.md) object or the [`fetch(withRecordID:completionHandler:)`](../ckdatabase/fetch%28withrecordid,completionhandler%29.md) method of the [`CKDatabase`](../ckdatabase.md) class. In both cases, CloudKit returns the record asynchronously using the handler you provide.
 

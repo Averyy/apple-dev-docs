@@ -22,7 +22,7 @@ func dismissPreview(animated: Bool)
 - (void) dismissPreviewAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss the document preview programmatically. The document interaction controller may also dismiss the document preview automatically in response to user actions.
 

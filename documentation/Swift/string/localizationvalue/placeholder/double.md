@@ -21,7 +21,7 @@ The double-precision floating-point type, as used for replacement values with th
 case double
 ```
 
-#### Discussion
+## Discussion
 
 To insert a `double` into a placeholder, use the syntax `\(placeholder: .double)`.
 

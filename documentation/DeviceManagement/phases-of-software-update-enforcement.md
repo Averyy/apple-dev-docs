@@ -5,7 +5,7 @@
 
 Enforcing software updates on Apple devices goes through specific phases.
 
-#### Overview
+## Overview
 
 Enforcing software updates using device management involves five main components:
 
@@ -15,7 +15,7 @@ Enforcing software updates using device management involves five main components
 - The Apple Software Lookup Service
 - The Apple Software Update Catalog
 
-#### Phase 1
+## Phase 1
 
 The device management service regularly monitors the Apple Software Lookup Service for new releases. If it detects one, it uses the `SupportedDevices` key of the catalog and compares it to its list of managed devices to determine which devices the release is applicable to.
 
@@ -23,13 +23,13 @@ The device management service should also subscribe to the `softwareupdate.*` an
 
 ![The device management service regularly monitors the Apple Software Lookup Service for new releases](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement01@2x.png)
 
-#### Phase 2
+## Phase 2
 
 The device management service creates a [`SoftwareUpdateEnforcementSpecific`](./softwareupdateenforcementspecific.md) declaration with the detected version and defines the `TargetLocalDateTime` and, optionally, the `DetailsURL` according to the organizational requirements. The device management service then sends a push notification to the device to start the synchronization of declarations. For more information, see [Integrating declarative management](./integrating-declarative-management.md).
 
 ![The device management service creates the enforcement configuration and syncs it to the device](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement02@2x.png)
 
-#### Phase 3
+## Phase 3
 
 After the declaration becomes active on a device, the operating system reaches out to the Apple Software Update Catalog to retrieve the download URL and begins to download the update if it meets the requirements. The device then presents a notification to the user, and returns the following to the device management service:
 
@@ -42,13 +42,13 @@ After the device successfully downloads the update, it prepares it for installat
 
 ![The device retrieves the download URL and begins the download and preparation of the software update](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement03@2x.png)
 
-#### Phase 4
+## Phase 4
 
 The device enters the notification period. Depending on when the installation is to occur, this notification may display different text and options.
 
 ![The device enters the notification period to regularly inform the user](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement04@2x.png)
 
-#### Phase 5
+## Phase 5
 
 If the user doesn’t install the update before the enforcement deadline, the device begins the installation and sends a [`StatusSoftwareUpdateInstallState`](./statussoftwareupdateinstallstate.md) value of `installing` to the device management service. Before starting the installation, a Mac with Apple silicon contacts the device management service to retrieve the bootstrap token (if one is available).
 
@@ -56,7 +56,7 @@ If the update succeeds, the device restarts. If the update fails, a [`StatusSoft
 
 ![The device enforces installtion of the software update and sends status reports to the device management service](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement05@2x.png)
 
-#### Phase 6
+## Phase 6
 
 The device then sends the following information to the device management service. Depending on the update, some objects may not have return values.
 
@@ -67,7 +67,7 @@ The device then sends the following information to the device management service
 
 ![The device sends updated information to the device management service](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/phases-of-software-update-enforcement06@2x.png)
 
-#### Phase 7
+## Phase 7
 
 The device management service unassigns the declaration from the device and sends a push notification to it to initiate the synchronization. After synchronizing, the device removes the declaration.
 

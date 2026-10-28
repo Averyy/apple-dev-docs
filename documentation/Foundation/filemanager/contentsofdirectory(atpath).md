@@ -25,11 +25,11 @@ func contentsOfDirectory(atPath path: String) throws -> [String]
 - (NSArray<NSString *> *) contentsOfDirectoryAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../nsstring.md) objects, each of which identifies a file, directory, or symbolic link contained in `path`. Returns an empty array if the directory exists but has no contents. In Objective-C, if an error occurs, this method returns `nil` and assigns an appropriate error object to the `error` parameter.
 
-#### Discussion
+## Discussion
 
 This method performs a shallow search of the directory and therefore does not traverse symbolic links or return the contents of any subdirectories. This method also does not return URLs for the current directory (”`.`”), parent directory (”`..`”), or resource forks (files that begin with “`._`”) but it does return other hidden files (files that begin with a period character). If you need to perform a deep enumeration, use the [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md) method instead.
 

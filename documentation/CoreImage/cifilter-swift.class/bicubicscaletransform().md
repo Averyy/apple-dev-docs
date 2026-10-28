@@ -24,11 +24,11 @@ class func bicubicScaleTransform() -> any CIFilter & CIBicubicScaleTransform
 + (CIFilter<CIBicubicScaleTransform> *) bicubicScaleTransformFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the bicubic scale transform filter to an image. The effect produces a high-quality, scaled version of the input image. The parameters of `B` and `C` determine the sharpness and softness of the resampling.
 

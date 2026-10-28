@@ -18,7 +18,7 @@ var FFERR_DEVICERELEASED: Int { get }
 #define FFERR_DEVICERELEASED
 ```
 
-#### Discussion
+## Discussion
 
 The device has been released.
 

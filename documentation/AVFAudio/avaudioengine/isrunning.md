@@ -25,7 +25,7 @@ var isRunning: Bool { get }
 @property (nonatomic, readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the audio engine is in a running state; otherwise, [`false`](../../Swift/false.md).
 

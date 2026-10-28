@@ -12,11 +12,11 @@ virtual bool matchPropertyTable(
  OSDictionary *table );
 ```
 
-#### Return Value
+## Return Value
 
 Returns false if the family considers the matching dictionary does not match in properties it understands, true otherwise.
 
-#### Overview
+## Overview
 
 See IOService for discussion.
 

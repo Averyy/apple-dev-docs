@@ -23,7 +23,7 @@ let kCTFontFeatureTypeSelectorsKey: CFString
 extern CFStringRef const kCTFontFeatureTypeSelectorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the array of font feature selectors as a `CFArrayRef` object. This is an array of selector dictionaries that contain the values for the font feature selector keys listed in this group.
 

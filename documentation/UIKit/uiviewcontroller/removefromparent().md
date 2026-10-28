@@ -27,7 +27,7 @@ func removeFromParent()
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 This method is only intended to be called by an implementation of a custom container view controller. If you override this method, you must call `super` in your implementation.
 

@@ -24,7 +24,7 @@ func VTDecompressionSessionGetTypeID() -> CFTypeID
 extern CFTypeID VTDecompressionSessionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeID` of the decompression session object.
 

@@ -25,11 +25,11 @@ func vImageConverter_CreateWithColorSyncCodeFragment(_ codeFragment: CFTypeRef, 
 vImageConverterRefvImageConverter_CreateWithColorSyncCodeFragment(CFTypeRef codeFragment, const vImage_CGImageFormat *srcFormat, const vImage_CGImageFormat *destFormat, const CGFloat *backgroundColor, vImage_Flags flags, vImage_Error *error);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 This function creates a [`vImageConverter`](./vimageconverter.md) instance to convert between image formats described by [`vImage_CGImageFormat`](./vimage_cgimageformat.md).  The [`vImageConverter`](./vimageconverter.md) is intended to be used and reused with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md) to convert images from one format to another.
 

@@ -5,11 +5,11 @@
 
 Find the protocol version that corresponds with the HLS features your app supports.
 
-#### Overview
+## Overview
 
 The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file. This file, its associated media, and its server must comply with all provisions of the IETF Internet-Draft of [HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) (or earlier specifications) describing the protocol version indicated by the tag value. A Playlist file that doesn’t contain an `EXT-X-VERSION` tag must comply with version 1 of this protocol. Support for M3U8 Playlists was introduced with iOS 3.0, Mac OS X 10.6, and Safari 4.
 
-##### High-level features
+### High-level features
 
 | EXT-X-VERSION | Features and usage notes |
 | --- | --- |
@@ -25,7 +25,7 @@ The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file
 | 11 | `QUERYPARAM` attribute of `EXT-X-DEFINE` |
 | 12 | Attributes starting with ‘`REQ-`’ |
 
-##### Backward compatibility
+### Backward compatibility
 
 > ❗ **Important**: Older clients ignore backward-compatible features and will still play back the content in some form. Specify only the protocol version that’s required for backward compatibility in a given feature. For example, you don’t have to specify protocol version 5 if you’ve just added SUBTITLES.
 
@@ -43,13 +43,13 @@ The following features aren’t backward compatible. Older clients may fail to p
 - You must use at least protocol version 11 if you have `QUERYPARAM` attribute in `EXT-X-DEFINE`.
 - You must use at least protocol version 12 if you have attributes that start with  “`REQ-`”.
 
-##### Specifications
+### Specifications
 
 The following tables list the versions of specifications where specific features are described, along with the corresponding iOS release that supports those features.
 
 > **Note**: Over time, HLS has been described by different documents: draft-pantos-http-live-streaming, which became [RFC 8216](https://datatracker.ietf.org/doc/html/rfc8216), and now [draft-pantos-hls-rfc8216bis](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
 
-##### draft-pantos-http-live-streaming and RFC 8216
+### draft-pantos-http-live-streaming and RFC 8216
 
 | Revision | iOS Version | Notes |
 | --- | --- | --- |
@@ -71,7 +71,7 @@ The following tables list the versions of specifications where specific features
 | 21, 22, 23 | 10.3.1 | Clarified `AUTOSELECT=YES` uniqueness. Added mention of CMAF. |
 | RFC8216 | 10.3.1 | Wording changes and clarifications. |
 
-##### draft-pantos-hls-rfc8216bis
+### draft-pantos-hls-rfc8216bis
 
 | Revision | iOS Version | Notes |
 | --- | --- | --- |

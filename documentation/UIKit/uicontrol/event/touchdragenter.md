@@ -23,7 +23,7 @@ static var touchDragEnter: UIControl.Event { get }
 UIControlEventTouchDragEnter
 ```
 
-#### Discussion
+## Discussion
 
 This event is delivered only if the touch originated inside the control’s bounds, exited the bounds, and then entered the bounds again.
 

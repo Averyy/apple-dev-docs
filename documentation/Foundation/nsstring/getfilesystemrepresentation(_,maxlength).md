@@ -25,11 +25,11 @@ func getFileSystemRepresentation(_ cname: UnsafeMutablePointer<CChar>, maxLength
 - (BOOL) getFileSystemRepresentation:(char *) cname maxLength:(NSUInteger) max;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `buffer` is successfully filled with a file-system representation, otherwise [`false`](../../Swift/false.md) (for example, if `maxLength` would be exceeded or if the receiver can’t be represented in the file system’s encoding).
 
-#### Discussion
+## Discussion
 
 This method operates by replacing the abstract path and extension separator characters (’`/`’ and ‘`.`’ respectively) with their equivalents for the operating system. If the system-specific path or extension separator appears in the abstract representation, the characters it is converted to depend on the system (unless they’re identical to the abstract separators).
 

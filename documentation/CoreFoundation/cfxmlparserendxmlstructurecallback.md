@@ -19,7 +19,7 @@ typealias CFXMLParserEndXMLStructureCallBack = (CFXMLParser?, UnsafeMutableRawPo
 typedef void (*)(struct __CFXMLParser *, void *, void *) CFXMLParserEndXMLStructureCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 As elements are encountered, this callback is called first, then the [`CFXMLParserAddChildCallBack`](./cfxmlparseraddchildcallback.md) callback to add the new structure to its parent, then the [`CFXMLParserAddChildCallBack`](./cfxmlparseraddchildcallback.md) callback (potentially several times) to add the new structure’s children to it, and then finally the [`CFXMLParserEndXMLStructureCallBack`](./cfxmlparserendxmlstructurecallback.md) callback to show that the structure has been fully parsed.This callback is optional.
 

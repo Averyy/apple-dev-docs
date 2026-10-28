@@ -21,7 +21,7 @@ A value for projection tags indicating that display is on a flat rectangular sur
 extern const CMTag kCMTagProjectionTypeRectangular;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_ProjectionType`](./cmtagcategory/kcmtagcategory_projectiontype.md) category. Rectangular projection is equivalent to displaying as a 2D texture in the world.
 

@@ -19,11 +19,11 @@ init?(named name: NSSound.Name)
 + (NSSound *) soundNamed:(NSSoundName) name;
 ```
 
-#### Return Value
+## Return Value
 
 `NSSound` instance initialized with the sound data identified by `soundName`.
 
-#### Discussion
+## Discussion
 
 The returned object can be one of the following:
 

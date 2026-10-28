@@ -22,7 +22,7 @@ nonisolated
 func toolbar(removing defaultItemKind: ToolbarDefaultItemKind?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to remove toolbar items other `View`s add by default. For example, to remove the sidebar toggle toolbar item provided by `NavigationSplitView`:
 

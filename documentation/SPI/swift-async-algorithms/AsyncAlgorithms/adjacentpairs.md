@@ -8,7 +8,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [László Teveli](https://github.com/tevelee)
 
@@ -22,7 +22,7 @@ extension AsyncSequence {
 }
 ```
 
-#### Detailed Design
+## Detailed Design
 
 The `adjacentPairs()` algorithm produces elements of tuple (size of 2), containing a pair of the original `Element` type.
 
@@ -47,13 +47,13 @@ It composes well with the [Dictionary.init(_:uniquingKeysWith:)](https://github.
 Dictionary(uniqueKeysWithValues: url.lines.adjacentPairs())
 ```
 
-#### Alternatives Considered
+## Alternatives Considered
 
 This functionality is often written as a `zip` of a sequence together with itself, dropping its first element (`zip(source, source.dropFirst())`).
 
 It’s such a dominant use-case, the [swift-algorithms](https://github.com/apple/swift-algorithms) package also [introduced](https://github.com/apple/swift-algorithms/pull/119) it to its collection of algorithms.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 The synchronous counterpart in [swift-algorithms](https://github.com/apple/swift-algorithms/blob/main/Guides/AdjacentPairs.md).
 

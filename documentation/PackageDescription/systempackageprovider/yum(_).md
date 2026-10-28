@@ -15,7 +15,7 @@ Creates a system package provider with a list of installable packages for users 
 static func yum(_ packages: [String]) -> SystemPackageProvider
 ```
 
-#### Return Value
+## Return Value
 
 A package provider.
 

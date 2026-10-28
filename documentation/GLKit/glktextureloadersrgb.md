@@ -24,7 +24,7 @@ let GLKTextureLoaderSRGB: String
 extern NSString * const GLKTextureLoaderSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), the image data is treated as linear pixel data. If [`true`](../Swift/true.md), the image data is treated as sRGB pixel data. The default value is [`false`](../Swift/false.md).
 

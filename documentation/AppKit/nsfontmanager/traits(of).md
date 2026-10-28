@@ -19,7 +19,7 @@ func traits(of fontObj: NSFont) -> NSFontTraitMask
 - (NSFontTraitMask) traitsOfFont:(NSFont *) fontObj;
 ```
 
-#### Return Value
+## Return Value
 
 The font traits, returned as a mask created by combining values listed in `Constants` with the C bitwise OR operator.
 

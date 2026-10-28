@@ -26,7 +26,7 @@ var allowsCaptureOfClearKeyVideo: Bool { get set }
 @property (nonatomic) BOOL allowsCaptureOfClearKeyVideo;
 ```
 
-#### Discussion
+## Discussion
 
 When set to YES, and the video being played by AVPlayer is Clear Key encrypted, allows video to be captured in screenshots and screen recordings, and via APIs like AVPlayerItemVideoOutput and ScreenCaptureKit. When NO, Clear Key encrypted video will not be included in such captured video. This property has no effect on content protected by FairPlay Streaming. Default is NO.
 

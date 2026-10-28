@@ -19,7 +19,7 @@ case unspecified
 NSImageDynamicRangeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 The [`imageDynamicRange`](../../nsimageview/imagedynamicrange.md) property can return this type when the system can’t determine the High Dynamic Range (HDR) of the image. Otherwise, the use of this value isn’t encouraged and results in undefined behavior.
 

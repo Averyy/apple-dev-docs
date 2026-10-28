@@ -5,11 +5,11 @@
 
 Describe smart collection filters that group clips and projects that match the criteria.
 
-#### Overview
+## Overview
 
 A `smart-collection` element can have one or more smart collection match elements listed in the table below. Each of the smart collection match elements describes a smart collection filter that gathers items matching the criteria.
 
-##### Smart Collection Match Elements
+### Smart Collection Match Elements
 
 | Element | Description |
 | --- | --- |
@@ -30,7 +30,7 @@ A `smart-collection` element can have one or more smart collection match element
 | `match-timeRange` | Match clips or projects created or imported based on a range of time. |
 | `match-usage` | Match clips based on whether they are used. |
 
-##### Rule Attribute
+### Rule Attribute
 
 Most smart collection match elements have a `rule` attribute to describe the criteria of the filter that the element describes.
 

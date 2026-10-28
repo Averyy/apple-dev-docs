@@ -21,7 +21,7 @@ class MSMessageLiveLayout
 @interface MSMessageLiveLayout : MSMessageLayout
 ```
 
-#### Overview
+## Overview
 
 Use a live layout instance to create custom, interactive messages in the transcript (or input field). An alternative layout is required to represent your message on devices that don’t have your iMessage app installed, or on devices that aren’t running iOS 11 or later. Note: this could be either the receiver’s or the sender’s device; the sender may have a second device that doesn’t have your app installed.
 

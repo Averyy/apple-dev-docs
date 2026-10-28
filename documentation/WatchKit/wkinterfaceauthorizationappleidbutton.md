@@ -19,7 +19,7 @@ class WKInterfaceAuthorizationAppleIDButton
 @interface WKInterfaceAuthorizationAppleIDButton : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Use the authorization button to initiate Sign in with Apple on Apple Watch. You can’t use this button to do anything other than initiating sign-in requests.
 

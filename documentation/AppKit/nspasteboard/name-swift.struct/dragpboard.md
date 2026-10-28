@@ -19,7 +19,7 @@ static let dragPboard: NSPasteboard.Name
 extern NSPasteboardName NSDragPboard;
 ```
 
-#### Discussion
+## Discussion
 
 For additional information on working with the drag pasteboard, see [Drag and Drop](../../drag-and-drop.md).
 

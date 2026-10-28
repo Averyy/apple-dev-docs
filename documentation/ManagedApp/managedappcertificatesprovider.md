@@ -22,7 +22,7 @@ class ManagedAppCertificatesProvider
 
 - [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md)
 
-#### Overview
+## Overview
 
 Create an instance of this class when your app needs to access certificates that the MDM admin provisions for your app from their MDM server.
 

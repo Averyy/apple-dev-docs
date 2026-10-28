@@ -17,11 +17,11 @@ Returns an `NSNib` object initialized to the nib file at the specified URL.
 - (id) initWithContentsOfURL:(NSURL *) nibFileURL;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSNib` object or `nil` if there were errors during initialization or the nib file could not be located.
 
-#### Discussion
+## Discussion
 
 When you instantiate the nib objects later, the `NSNib` object looks for an appropriate bundle from which to search for any additional resources referenced by the nib. Because you do not specify a bundle directory when calling this method, the receiver uses the bundle associated with the class of the nib file’s owner. If the nib file does not have an owner, the receiver uses the application’s main bundle instead.
 

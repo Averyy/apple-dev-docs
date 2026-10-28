@@ -25,7 +25,7 @@ func CFMachPortGetTypeID() -> CFTypeID
 extern CFTypeID CFMachPortGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFMachPort opaque type.
 

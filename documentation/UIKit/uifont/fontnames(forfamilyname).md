@@ -24,11 +24,11 @@ class func fontNames(forFamilyName familyName: String) -> [String]
 + (NSArray<NSString *> *) fontNamesForFamilyName:(NSString *) familyName;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains a font name associated with the specified family.
 
-#### Discussion
+## Discussion
 
 You can pass the returned strings as parameters to the [`init(name:size:)`](./init%28name,size%29.md) method to retrieve an actual font object.
 

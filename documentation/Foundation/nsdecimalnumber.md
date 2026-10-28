@@ -25,7 +25,7 @@ class NSDecimalNumber
 @interface NSDecimalNumber : NSNumber
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`Decimal`](./decimal.md); use [`NSDecimalNumber`](./nsdecimalnumber.md) when you need reference semantics or other Foundation-specific behavior.
 

@@ -18,7 +18,7 @@ An array of the presentment requests that exist in the incoming mobile document 
 var presentmentRequests: [ISO18013MobileDocumentRequest.PresentmentRequest]
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  You must return all presentment requests marked as mandatory in order to complete the mobile document request.
 

@@ -5,7 +5,7 @@
 
 Review playback performance when using the AVPlayerItem APIs in your apps.
 
-#### Overview
+## Overview
 
 You can use the [AVPlayerItem](../AVFoundation/avplayeritem.md) API and others in [AVFoundation](https://developer.apple.com/av-foundation) to manage the playback of [HTTP Live Streaming](https://developer.apple.com/streaming) (HLS) media assets in apps. The data in this report contains aggregate information about playback performance.
 
@@ -13,7 +13,7 @@ You can use the [AVPlayerItem](../AVFoundation/avplayeritem.md) API and others i
 - Data Source: Data in this report only comes from devices that opt in to share data with Apple and developers.
 - Historical Data: One-time snapshots for this report are available beginning in February 2024, if there are events for the report.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

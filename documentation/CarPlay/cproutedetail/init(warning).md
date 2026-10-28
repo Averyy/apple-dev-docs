@@ -21,11 +21,11 @@ convenience init(warning: String)
 + (instancetype) routeDetailWithWarning:(NSString *) warning;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing a route warning
 
-#### Discussion
+## Discussion
 
 Use this method to display important warnings or alerts about conditions along the route. This helps users prepare for challenging or hazardous conditions they may encounter.
 

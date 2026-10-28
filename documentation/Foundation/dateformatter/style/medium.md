@@ -23,7 +23,7 @@ case medium
 NSDateFormatterMediumStyle
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a medium style, typically with abbreviated text, such as “Nov 23, 1937” or “3:30:32 PM”.
 

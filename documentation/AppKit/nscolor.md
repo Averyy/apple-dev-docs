@@ -19,7 +19,7 @@ class NSColor
 @interface NSColor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Many methods in AppKit require you to specify color data using an [`NSColor`](./nscolor.md) object; when drawing you use them to set the current fill and stroke colors. Color objects are immutable and thread-safe. You can create color objects in many ways:
 
@@ -33,7 +33,7 @@ Many methods in AppKit require you to specify color data using an [`NSColor`](./
 
 For user-specified colors, you can also display a color panel and let the user specify the color. For information about color panels, see [`NSColorPanel`](./nscolorpanel.md).
 
-##### Color and color spaces
+### Color and color spaces
 
 A color object is typically represented internally as a Core Graphics color ([`CGColor`](../CoreGraphics/cgcolor.md)) in a Core Graphics color space ([`CGColorSpace`](../CoreGraphics/cgcolorspace.md)). Colors can also be created in extended color spaces:
 

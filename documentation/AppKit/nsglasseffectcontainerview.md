@@ -19,7 +19,7 @@ class NSGlassEffectContainerView
 @interface NSGlassEffectContainerView : NSView
 ```
 
-#### Overview
+## Overview
 
 > 💡 **Tip**: Using a glass effect container view can improve performance by reducing the number of passes required to render similar glass effect views.
 

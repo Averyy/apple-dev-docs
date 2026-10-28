@@ -15,11 +15,11 @@ Sleep with mutex unlock and relock
 int IOLockSleep(IOLock *lock, void *event, UInt32 interType);
 ```
 
-#### Return Value
+## Return Value
 
 The wait-result value indicating how the thread was awakened.
 
-#### Discussion
+## Discussion
 
 Prepare to sleep,unlock the mutex, and re-acquire it on wakeup. Results are undefined if the caller has not locked the mutex. This function may block and so should not be called from interrupt level or while a spin lock is held.
 

@@ -24,7 +24,7 @@ size_t getCapacity(void);
 virtual unsigned int getCapacity(void);
 ```
 
-#### Return Value
+## Return Value
 
 length of preallocated capacity.
 

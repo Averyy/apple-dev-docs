@@ -15,7 +15,7 @@ An interface for defining roles that you assign to the participants of a group a
 protocol SpatialTemplateRole : Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`SpatialTemplateRole`](./spatialtemplaterole.md) interface in a custom `enum` and use it with your custom spatial template. Roles are an optional way for you to assign a purpose to participants with a spatial Persona. For example, a spatial template for a game might define roles for the opposing teams. When a participant joins an activity, assign one of your custom roles to place them in a specific seat of your template. Seats in the template are available only to participants with spatial Personas.
 

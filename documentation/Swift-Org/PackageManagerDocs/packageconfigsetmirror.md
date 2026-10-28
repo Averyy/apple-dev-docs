@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Set a mirror for a dependency.
 
-#### Overview
+## Overview
 
 ```
 package config set-mirror [--package-path=<package-path>]

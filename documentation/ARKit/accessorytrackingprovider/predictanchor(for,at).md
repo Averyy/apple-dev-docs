@@ -15,11 +15,11 @@ Predict an accessory anchor to a target timestamp.
 final func predictAnchor(for anchor: AccessoryAnchor, at timestamp: TimeInterval) -> AccessoryAnchor?
 ```
 
-#### Return Value
+## Return Value
 
 The predicted anchor, or nil if prediction failed.
 
-#### Discussion
+## Discussion
 
 > **Note**: A large time offset from latest anchor timestamp could degrade accuracy. For accuracy sensitive use cases like drawing, use a small offset or `latestAnchors`. Use a prediction timestamp smaller than the latest anchor timestamp for interpolation.
 

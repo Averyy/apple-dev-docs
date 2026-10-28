@@ -19,7 +19,7 @@ func PMPaperGetHeight(_ paper: PMPaper, _ paperHeight: UnsafeMutablePointer<Doub
 OSStatus PMPaperGetHeight(PMPaper paper, double *paperHeight);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

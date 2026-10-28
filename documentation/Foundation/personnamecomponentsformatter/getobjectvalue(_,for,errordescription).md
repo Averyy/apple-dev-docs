@@ -25,7 +25,7 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 - (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if conversion succeeded; otherwise [`false`](../../Swift/false.md).
 

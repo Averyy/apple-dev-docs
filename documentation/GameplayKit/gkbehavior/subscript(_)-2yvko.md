@@ -24,11 +24,11 @@ subscript(goal: GKGoal) -> NSNumber! { get set }
 - (NSNumber *) objectForKeyedSubscript:(GKGoal *) goal;
 ```
 
-#### Return Value
+## Return Value
 
 The weight to be applied to the goal’s influence on an agent’s speed and direction, or `0.0` if the goal is not in the behavior.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`weight(for:)`](./weight%28for%29.md) method, but allows access using subscript syntax.
 

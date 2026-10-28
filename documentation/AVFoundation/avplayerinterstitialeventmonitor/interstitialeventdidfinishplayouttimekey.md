@@ -25,7 +25,7 @@ class let interstitialEventDidFinishPlayoutTimeKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventDidFinishPlayoutTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type CMTime as a NSDictionary.
 

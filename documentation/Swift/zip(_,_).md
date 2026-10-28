@@ -21,11 +21,11 @@ Creates a sequence of pairs built out of two underlying sequences.
 func zip<Sequence1, Sequence2>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> Zip2Sequence<Sequence1, Sequence2> where Sequence1 : Sequence, Sequence2 : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of tuple pairs, where the elements of each pair are corresponding elements of `sequence1` and `sequence2`.
 
-#### Discussion
+## Discussion
 
 In the `Zip2Sequence` instance returned by this function, the elements of the *i*th pair are the *i*th elements of each underlying sequence. The following example uses the `zip(_:_:)` function to iterate over an array of strings and a countable range at the same time:
 

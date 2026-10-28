@@ -24,11 +24,11 @@ func gatherAlongAxis(_ axis: Int, updates updatesTensor: MPSGraphTensor, indices
 - (MPSGraphTensor *) gatherAlongAxis:(NSInteger) axis withUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Gather values from `updatesTensor` along the specified `axis` at indices in `indicesTensor`. The shape of `updatesTensor` and `indicesTensor` must match except at `axis`. The shape of the result tensor is equal to the shape of `indicesTensor`. If an index is out of bounds of the `updatesTensor` along `axis` a 0 is inserted.
 

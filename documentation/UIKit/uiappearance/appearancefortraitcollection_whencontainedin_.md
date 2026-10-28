@@ -17,11 +17,11 @@ Returns the appearance proxy for the object when it’s contained in the hierarc
 + (instancetype) appearanceForTraitCollection:(UITraitCollection *) trait whenContainedIn:(Class<UIAppearanceContainer> *) ContainerClass;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance proxy to use for the object.
 
-#### Discussion
+## Discussion
 
 Set the `ContainerClass` array to an ascending hierarchical list of types where the appearance settings should apply when the caller type is contained within them for the trait collection. For example, if you want a `UINavigationBar` to take on a specific appearance when contained in a `UINavigationController` inside a `UITabBarController`, set `ContainerClass` to `@[[UINavigationController class], [UITabBarController class], nil]`.
 

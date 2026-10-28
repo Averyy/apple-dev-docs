@@ -15,7 +15,7 @@ The content brightness of an immersive space.
 struct ImmersiveContentBrightness
 ```
 
-#### Overview
+## Overview
 
 Use a value of this type as an input to the [`immersiveContentBrightness(_:)`](./scene/immersivecontentbrightness%28_%29.md) scene modifier to indicate the ambient content brightness of an [`ImmersiveSpace`](./immersivespace.md).
 

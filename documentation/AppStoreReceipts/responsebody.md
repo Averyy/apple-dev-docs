@@ -17,7 +17,7 @@ The JSON data that returns in the response from the App Store.
 object responseBody
 ```
 
-#### Discussion
+## Discussion
 
 The [`verifyReceipt`](./verify-receipt.md) endpoint returns this response.
 

@@ -28,7 +28,7 @@ extern NSNotificationName const UIApplicationDidReceiveMemoryWarningNotification
 
 - [Responding to memory warnings](../responding-to-memory-warnings.md)
 
-#### Discussion
+## Discussion
 
 This notification does not contain a `userInfo` dictionary.
 

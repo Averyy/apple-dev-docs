@@ -25,11 +25,11 @@ class var standard: UserDefaults { get }
 @property (class, strong, readonly) NSUserDefaults * standardUserDefaults;
 ```
 
-#### Return Value
+## Return Value
 
 The shared defaults object for the app.
 
-#### Discussion
+## Discussion
 
 Each app maintains a single, shared defaults object for you to use in your code. The first time your app retrieves the value of this property, it creates the shared object and caches the result. Subsequent retrieval attempts return the cached object.
 

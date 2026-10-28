@@ -26,7 +26,7 @@ func GCExtendedGamepadSnapShotDataV100FromNSData(_ snapshotData: UnsafeMutablePo
 BOOL GCExtendedGamepadSnapShotDataV100FromNSData(GCExtendedGamepadSnapShotDataV100 *snapshotData, NSData *data);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the data could be copied, [`false`](../Swift/false.md) if `snapshotData` is `nil`, `data` is `nil`, or if the contents of `data` do not contain a compatible snapshot.
 

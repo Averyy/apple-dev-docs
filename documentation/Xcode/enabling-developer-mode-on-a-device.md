@@ -5,7 +5,7 @@
 
 Grant or deny permission for locally installed apps to run in iOS, iPadOS, watchOS, and visionOS.
 
-#### Overview
+## Overview
 
 Enable Developer Mode on a device to run your app on the device through Xcode. Developer Mode protects people from inadvertently installing potentially harmful software, and reduces attack vectors exposed by developer-only functionality.
 
@@ -17,7 +17,7 @@ After you turn on Developer Mode, Developer settings appear on the device that h
 
 > **Note**: Developer Mode only appears in Settings if you initiate pairing or if you previously paired the device to a Mac. In tvOS, there’s no Developer Mode. Just pair your Apple TV using Device Hub and Developer Settings appear on the device.
 
-##### Turn on Developer Mode in iOS, iPadOS, watchOS, and visionOS
+### Turn on Developer Mode in iOS, iPadOS, watchOS, and visionOS
 
 In the Privacy & Security settings on the device, turn on the Developer Mode switch under Security. An alert appears to warn you that Developer Mode reduces the security of your device. To continue turning on Developer Mode, tap the Restart button in the alert.
 
@@ -25,7 +25,7 @@ After the device restarts, another alert appears confirming that you want to tur
 
 In watchOS, tap Turn On. Tap Trust in the next dialog, if it appears, and enter your device passcode to confirm.
 
-##### Turn off Developer Mode
+### Turn off Developer Mode
 
 To turn off Developer Mode, turn off the Developer Mode switch in Settings > Privacy & Security and restart the device. After you turn off Developer Mode, you can’t run apps from Xcode on the device until you turn on Developer Mode again.
 

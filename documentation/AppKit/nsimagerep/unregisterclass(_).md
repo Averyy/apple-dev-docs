@@ -19,7 +19,7 @@ class func unregisterClass(_ imageRepClass: AnyClass)
 + (void) unregisterImageRepClass:(Class) imageRepClass;
 ```
 
-#### Discussion
+## Discussion
 
 This method posts the [`registryDidChangeNotification`](./registrydidchangenotification.md), along with the receiving object, to the default notification center.
 

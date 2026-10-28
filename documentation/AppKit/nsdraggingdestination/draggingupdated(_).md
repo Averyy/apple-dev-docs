@@ -20,11 +20,11 @@ optional func draggingUpdated(_ sender: any NSDraggingInfo) -> NSDragOperation
 - (NSDragOperation) draggingUpdated:(id<NSDraggingInfo>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 One (and only one) of the dragging operation constants described  in [`NSDragOperation`](../nsdragoperation.md) in the [`NSDraggingInfo`](../nsdragginginfo.md) reference. The default return value (if this method is not implemented by the destination) is the value returned by the previous [`draggingEntered(_:)`](./draggingentered%28_%29.md) message.
 
-#### Discussion
+## Discussion
 
 For this to be invoked, the destination must have registered for the pasteboard data type involved in the drag operation. The messages continue until the image is either released or dragged out of the window or view.
 

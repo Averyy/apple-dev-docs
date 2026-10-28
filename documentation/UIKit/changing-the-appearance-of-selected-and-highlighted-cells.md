@@ -12,13 +12,13 @@ Provide visual feedback to the user about the state of a cell and the transition
 - Mac Catalyst 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 This sample app shows how to change the appearance of collection view cells as they transition between unselected, highlighted, and selected states. As a user taps a cell, the app determines the state of the cell and changes the cell’s appearance to indicate the transition between states.
 
 The collection view in this sample supports single-item selection, which is the default for collection views. You can also configure collection views to support multiple-item selection, or disable selection altogether.
 
-##### Determine the state of a cell
+### Determine the state of a cell
 
 The collection view in this sample determines the state of a cell by detecting the taps inside its bounds. It then sets the [`isSelected`](./uicollectionviewcell/isselected.md) and [`isHighlighted`](./uicollectionviewcell/ishighlighted.md) properties of the corresponding cell to indicate the current state. The collection view provides this behavior because its [`allowsSelection`](./uicollectionview/allowsselection.md) property is set to `true`.
 
@@ -26,7 +26,7 @@ When touching an unselected cell, the initial touch-down event causes the collec
 
 ![A diagram depicting the steps that occur when tapping an unselected cell. The first image shows the user's right index finger touching a dark, shaded rectangle representing a collection view cell on a phone screen. Below the image are current property values of the cell, listed as isHighlighted: true and isSelected: false. The second image depicts the user lifting their finger and moving their hand to the right of the rectangle, now shown shaded in a lighter color, on the phone screen. Below, the listed properties isHighlighted and isSelected are both false. The third image depicts the user's hand in the lifted position above the rectangle on the phone screen, with the collection view presenting the rectangle in a third and different shade. Below, the property isHighlighted is false and isSelected is true.](https://developer.apple.com/tutorials/images/com.apple.uikit/collection-view-selection_2x.png)
 
-##### Change the cell’s visual appearance
+### Change the cell’s visual appearance
 
 The cell’s [`backgroundView`](./uicollectionviewcell/backgroundview.md) property references the view to display as the background of the cell when it loads for the first time and when it isn’t highlighted or selected. When the cell’s state changes to highlighted or selected, the collection view modifies the properties of a cell to indicate the new state. It doesn’t, however, automatically change the visual appearance of the cell. That is, unless you set the cell’s [`selectedBackgroundView`](./uicollectionviewcell/selectedbackgroundview.md) property to a view.
 
@@ -46,7 +46,7 @@ override func awakeFromNib() {
 }
 ```
 
-##### Provide additional visual indication of state changes
+### Provide additional visual indication of state changes
 
 Providing a selected background view in a cell is an easy way to have the collection view change the cell’s appearance based on its state, but you can do more than just changing the background. You can, for example, display a checkmark icon in selected cells or distinguish between highlighted and selected states visually.
 

@@ -25,7 +25,7 @@ init(propertiesOf asset: AVAsset)
 + (AVMutableVideoComposition *) videoCompositionWithPropertiesOfAsset:(AVAsset *) asset;
 ```
 
-#### Discussion
+## Discussion
 
 The returned `AVMutableVideoComposition` has instructions that respect the spatial properties and time ranges of the specified asset’s video tracks.
 

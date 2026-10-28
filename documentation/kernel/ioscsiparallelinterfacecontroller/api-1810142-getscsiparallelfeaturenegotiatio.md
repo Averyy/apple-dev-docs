@@ -12,11 +12,11 @@ UInt64 GetSCSIParallelFeatureNegotiationCount (
  SCSIParallelTaskIdentifierparallelTask);
 ```
 
-#### Return Value
+## Return Value
 
 an unsigned integer up to 64 bits in size.
 
-#### Overview
+## Overview
 
 Query as to the number of SCSI Parallel Features that are requested to either be negotitated or cleared. These are all features that are set to either kSCSIParallelFeature_AttemptNegotiation or kSCSIParallelFeature_ClearNegotiation. If the return value is zero, then all features are set to kSCSIParallelFeature_NoNegotiation and all feature negotiations are to remain as they currently exist.
 

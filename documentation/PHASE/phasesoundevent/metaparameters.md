@@ -24,7 +24,7 @@ var metaParameters: [String : PHASEMetaParameter] { get }
 @property (copy, readonly) NSDictionary<NSString *,PHASEMetaParameter *> * metaParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Each meta parameter contained in this dictionary affects only the sound event instance when you change the parameter’s value at runtime. As a read-only dictionary, the framework sets the contents based on the parameter you pass into a node definition initializer, for example, [`init(switchMetaParameterDefinition:)`](../phaseswitchnodedefinition/init%28switchmetaparameterdefinition%29.md). The dictionary key is the [`identifier`](../phasemetaparameter/identifier.md) of the source [`PHASEMetaParameterDefinition`](../phasemetaparameterdefinition.md).
 

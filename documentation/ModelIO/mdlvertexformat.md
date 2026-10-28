@@ -24,7 +24,7 @@ enum MDLVertexFormat
 enum MDLVertexFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values for vertex formats are constructed such that you can use bit masks to infer useful information about a format:
 

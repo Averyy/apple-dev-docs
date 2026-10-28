@@ -23,7 +23,7 @@ class OSSystemExtensionManager
 
 - [Installing System Extensions and Drivers](./installing-system-extensions-and-drivers.md)
 
-#### Overview
+## Overview
 
 Create an instance of [`OSSystemExtensionRequest`](./ossystemextensionrequest.md) with the class methods on that type, and submit it to the shared instance of the extension manager with [`submitRequest(_:)`](./ossystemextensionmanager/submitrequest%28_%29.md). Set the [`delegate`](./ossystemextensionrequest/delegate.md) on the request to receive the result of the activation or deactivation. The delegate also receives notifications if the user needs to authorize the extension or if a version conflict occurs.
 

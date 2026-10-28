@@ -19,11 +19,11 @@ func AECreateRemoteProcessResolver(_ allocator: CFAllocator!, _ url: CFURL!) -> 
 AERemoteProcessResolverRef AECreateRemoteProcessResolver(CFAllocatorRef allocator, CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 An [`AERemoteProcessResolverRef`](./aeremoteprocessresolverref.md), which must be disposed of with [`AEDisposeRemoteProcessResolver(_:)`](./api-1442572-aedisposeremoteprocessresolver.md). A resolver can only be used one time; once it has obtained a list of remote processes from a server, or gotten an error, it can no longer be scheduled. To retrieve a new list of processes, create a new instance of this object.
 
-#### Discussion
+## Discussion
 
 You supply this function with the URL for a remote host and port; it returns a reference to a resolver object. To obtain a list of remote processes from the resolver, you can query it synchronously with [`AERemoteProcessResolverGetProcesses(_:_:)`](./api-1444456-aeremoteprocessresolvergetproces.md), which blocks until the request completes (either successfully or with an error).
 
@@ -31,7 +31,7 @@ If asynchronous behavior is desired, you can optionally use [`AERemoteProcessRes
 
 A resolver can only be used once; once it has fetched the data or gotten an error it can no longer be scheduled. The data obtained by the resolver is a `CFArrayRef` of `CFDictionaryRef` objects. For information on the format of the returned remote process information, see the description of the function result for the function [`AERemoteProcessResolverGetProcesses(_:_:)`](./api-1444456-aeremoteprocessresolvergetproces.md), and also [Remote Process Dictionary Keys](../applicationservices/apple_event_manager/remote_process_dictionary_keys.md).
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.3.
 

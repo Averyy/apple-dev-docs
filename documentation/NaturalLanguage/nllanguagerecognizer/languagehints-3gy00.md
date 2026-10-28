@@ -21,7 +21,7 @@ A dictionary that maps languages to their probabilities in the language identifi
 @property (nonatomic, copy) NSDictionary<NSString *,NSNumber *> * languageHints;
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary mapping languages to their probabilities and used by [`processString(_:)`](./processstring%28_%29.md).
 

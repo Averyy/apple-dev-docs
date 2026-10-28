@@ -19,7 +19,7 @@ var contentViewController: NSViewController? { get set }
 @property (strong, nullable) NSViewController * contentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property tracks the window’s [`contentView`](../nswindow/contentview.md) property.
 

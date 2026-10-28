@@ -22,7 +22,7 @@ optional func multiDateSelection(_ selection: UICalendarSelectionMultiDate, canD
 - (BOOL) multiDateSelection:(UICalendarSelectionMultiDate *) selection canDeselectDate:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the calendar view can deselect the date you provide.
 

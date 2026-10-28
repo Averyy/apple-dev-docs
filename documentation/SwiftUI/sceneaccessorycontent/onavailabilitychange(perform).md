@@ -17,7 +17,7 @@ nonisolated
 func onAvailabilityChange(perform action: @escaping (Bool) -> Void) -> some SceneAccessoryContent
 ```
 
-#### Discussion
+## Discussion
 
 When the availability of a scene accessory changes, the specified closure will be called.
 

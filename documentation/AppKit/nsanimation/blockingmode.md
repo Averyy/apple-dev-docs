@@ -19,7 +19,7 @@ enum BlockingMode
 enum NSAnimationBlockingMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You specify one of these constants in the [`animationBlockingMode`](./animationblockingmode.md) property.
 

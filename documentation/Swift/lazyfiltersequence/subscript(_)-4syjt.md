@@ -23,7 +23,7 @@ subscript(position: LazyFilterSequence<Base>.Index) -> LazyFilterSequence<Base>.
 
 Available when `Base` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 > **Precondition**: `position` is a valid position in `self` and `position != endIndex`.
 

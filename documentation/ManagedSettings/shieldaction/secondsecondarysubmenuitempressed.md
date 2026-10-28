@@ -17,7 +17,7 @@ An action that occurs when someone selects the second item in the secondary butt
 case secondSecondarySubmenuItemPressed
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this callback on your app’s [`ShieldActionDelegate`](../shieldactiondelegate.md) for the second item in the submenu when your app defines the [`secondaryButtonSubmenuItems`](../../ManagedSettingsUI/shieldconfiguration/secondarybuttonsubmenuitems.md) array with two or more elements.
 

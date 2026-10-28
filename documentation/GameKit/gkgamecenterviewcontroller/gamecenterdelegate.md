@@ -32,7 +32,7 @@ weak var gameCenterDelegate: (any GKGameCenterControllerDelegate)? { get set }
 @property (atomic, weak, nullable) id<GKGameCenterControllerDelegate> gameCenterDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Before presenting the view controller, your game must set a delegate.
 

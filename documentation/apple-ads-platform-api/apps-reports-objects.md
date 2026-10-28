@@ -8,7 +8,7 @@ Request, response, and metadata objects for Apps report endpoints.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Apps reports cover the five `apps` reporting entities: campaigns, ad groups, ads, keywords, and search terms. Each entity has its own endpoint, request and response pair, and metadata schema, but all five share the same row shape and request structure described below.
 
@@ -22,7 +22,7 @@ The five Apps reporting entities each have a dedicated endpoint.
 | Keyword | [`Keywords Report`](./get-app-keyword-reports.md) |
 | Search Term | [`Search Terms Report`](./get-app-search-term-reports.md) |
 
-##### Shared Object Model
+### Shared Object Model
 
 Every Apps report request uses [`AppsReportingRequest`](./appsreportingrequest.md) as its body. Ad group, ad, keyword, and search term report requests must include a `campaignId` filter, while campaign report requests don’t. Brands report requests don’t have this requirement. Each response row follows the same three-part shape:
 

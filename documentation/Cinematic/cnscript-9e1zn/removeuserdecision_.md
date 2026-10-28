@@ -19,11 +19,11 @@ Removes an existing user decision.
 - (BOOL) removeUserDecision:(CNDecision *) decision;
 ```
 
-#### Return Value
+## Return Value
 
 A flag indicating whether the user decisions was removed.
 
-#### Discussion
+## Discussion
 
 You can’t remove decisions that aren’t user decisions.
 

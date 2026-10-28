@@ -23,7 +23,7 @@ var maximumIOUForObjectAbsence: Float { get set }
 @property (nonatomic, readwrite) float maximumIOUForObjectAbsence;
 ```
 
-#### Discussion
+## Discussion
 
 If the prediction IOU with groundTruth is lower than this value, consider this is a confident object absence.
 

@@ -16,7 +16,7 @@ A structure that contains the token to transfer a temporary, provisional home to
 struct ProvisionalHomeConnectionDetails
 ```
 
-#### Overview
+## Overview
 
 Use the `prepare-session` REST endpoint of the home hub to obtain the transfer token that allows you to transfer a provisional home to a person’s home hub. The token encapsulates all connection and authentication information the installation controller needs to complete the check-in handshake and the mTLS credential exchange with the home hub.
 

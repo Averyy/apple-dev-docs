@@ -20,7 +20,7 @@ class func checkAvailability(completionHandler: @escaping (Bool, (any Error)?) -
 + (void) checkAvailabilityWithCompletionHandler:(void (^)(BOOL isAvailable, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This function returns [`false`](../../Swift/false.md) under the following circumstances:
 

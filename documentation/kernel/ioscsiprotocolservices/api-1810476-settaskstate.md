@@ -13,11 +13,11 @@ bool SetTaskState (
  SCSITaskStatenewTaskState );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, otherwise false.
 
-#### Overview
+## Overview
 
 Accessor method to set the SCSITaskState associated with the specified request.
 

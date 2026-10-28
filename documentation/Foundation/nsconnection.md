@@ -18,7 +18,7 @@ An object that manages the communication between objects in different threads or
 @interface NSConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 Connection objects form the backbone of the distributed objects mechanism and normally operate in the background. You use the methods of [`NSConnection`](./nsconnection.md) explicitly when vending an object to other applications, when accessing such a vended object through a proxy, and when altering default communication parameters. At other times, you simply interact with a vended object or its proxy.
 

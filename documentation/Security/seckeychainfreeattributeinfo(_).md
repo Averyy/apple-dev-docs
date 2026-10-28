@@ -21,7 +21,7 @@ func SecKeychainFreeAttributeInfo(_ info: UnsafeMutablePointer<SecKeychainAttrib
 OSStatus SecKeychainFreeAttributeInfo(SecKeychainAttributeInfo *info);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

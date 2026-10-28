@@ -21,7 +21,7 @@ var brightness: CGFloat { get set }
 @property (nonatomic) CGFloat brightness;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only supported on the main screen. The value of this property is a number between `0.0` and `1.0`, inclusive, where `0.0` is the minimum brightness and `1.0` is the maximum brightness.
 

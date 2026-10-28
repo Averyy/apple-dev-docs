@@ -20,11 +20,11 @@ Appends the timed metadata group synchronously if the input is ready for more me
 func appendImmediately(_ timedMetadataGroup: AVTimedMetadataGroup) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the append was successful, false if the input was not ready for more media data.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

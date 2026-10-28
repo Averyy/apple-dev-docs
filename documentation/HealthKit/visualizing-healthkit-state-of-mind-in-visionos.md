@@ -13,11 +13,11 @@ Incorporate HealthKit State of Mind into your app and visualize the data in visi
 - visionOS 2.1+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10083: [Get started with HealthKit in visionOS](https://developer.apple.com/wwdc24/10083) and session 10109: [Explore wellbeing APIs in HealthKit](https://developer.apple.com/wwdc24/10109).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project:
 

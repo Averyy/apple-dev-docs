@@ -20,7 +20,7 @@ Returns a reverb instance that you can set on a reverb component.
 static func preset(_ preset: Reverb.Preset) -> Reverb
 ```
 
-#### Return Value
+## Return Value
 
 Reverb that can be set on a [`ReverbComponent`](../reverbcomponent.md).
 

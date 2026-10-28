@@ -25,7 +25,7 @@ func uppercased(with locale: Locale?) -> String
 - (NSString *) uppercaseStringWithLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An uppercase string using the `locale`.
 

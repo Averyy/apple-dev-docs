@@ -5,7 +5,7 @@
 
 Identify crashes that arise from memory access issues, and investigate the cause of the crash.
 
-#### Overview
+## Overview
 
 A crash due to a memory access issue occurs when an app uses memory in an unexpected way. Memory access problems have numerous causes, such as dereferencing a pointer to an invalid memory address, writing to read-only memory, or jumping to an instruction at an invalid address. These crashes are most often identified by the `EXC_BAD_ACCESS (SIGSEGV)` or `EXC_BAD_ACCESS (SIGBUS)` exceptions in the crash report:
 
@@ -23,7 +23,7 @@ Exception Codes: SEGV_MAPERR at 0x41e0af0c5ab8
 
 Xcode provides several tools that can help identify the source of a memory access issue. Further analysis of each section in the crash report may provide further insight and clues to help you diagnose the problem.
 
-##### Investigate the crash with Xcode
+### Investigate the crash with Xcode
 
 Once you’ve identified that a crash report is for a memory access issue through the exception type, use Xcode to continue your investigation. Xcode contains a suite of debugging tools you can use to identify memory access issues as your app runs. These tools are most effective when your tests execute as many code branches in the app as possible:
 
@@ -39,7 +39,7 @@ Beyond the exception type in the crash report, other sections of the crash repor
 
 For difficult to diagnose memory access crashes, the malloc debugging features, such as Guard Malloc, can help. See [Enabling the Malloc Debugging Features](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/MallocDebug.html#//apple_ref/doc/uid/20001884) for information about these tools. You enable these tools through the Xcode scheme editor, as described by [Run your app with sanitizers, API checks, and memory management diagnostics](https://help.apple.com/xcode/mac/current/#/devcef23c572).
 
-##### Examine the exception subtype to determine why access was invalid
+### Examine the exception subtype to determine why access was invalid
 
 The `Exception Subtype` field in the crash report contains a `kern_return_t` value describing the error and the address of the memory that was incorrectly accessed, such as:
 
@@ -73,7 +73,7 @@ An invalid memory access, where high-order bits are erroneously set, can look li
 
 See [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md) for more information about pointer authentication.
 
-##### Use VM Region Info to locate the memory in your app’s address space
+### Use VM Region Info to locate the memory in your app’s address space
 
 The `VM Region Info` field of the crash report shows the location of the specific memory that your app incorrectly accessed in relation to other sections of the app’s address space. Consider this example:
 
@@ -107,7 +107,7 @@ Because the stack guard region has no permissions, all memory accesses to this r
 
 See [Interpreting vmmap’s Output](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/VMPages.html#//apple_ref/doc/uid/20001985-97652) for more information on the `VM Region Info` field.
 
-##### Check the crashed thread’s backtrace for clues about the source of the memory access issue
+### Check the crashed thread’s backtrace for clues about the source of the memory access issue
 
 Consult the crashed thread’s backtrace for clues on where the memory access issue is occurring. Some types of memory access issues, such as dereferencing a `NULL` pointer, are easy to identify when looking at the backtrace and comparing it to the source code. Other memory access issues are identified by the stack frame at the top of the crashed thread’s backtrace:
 
@@ -116,7 +116,7 @@ Consult the crashed thread’s backtrace for clues on where the memory access is
 
 In other cases, the cause of a memory access issue isn’t present in the backtrace. *Memory corruption* occurs when a memory location is unexpectedly modified. After this modification, another part of your app may crash when it tries to use that memory location. The backtrace shows the code accessing the modified memory, but not the code that unexpectedly modified the memory. The unexpected modification may have occurred a long time before the crash, so the source of the issue isn’t visible in the backtrace. If you have numerous crash reports with signs of a memory access issue, but with different backtraces, you may have a memory corruption issue. The information in [Investigate the crash with Xcode](./investigating-memory-access-crashes.md#Investigate-the-crash-with-Xcode) can help identify the source of the memory corruption.
 
-##### Identify the type of memory access that caused the issue
+### Identify the type of memory access that caused the issue
 
 There are two categories of memory access issues: invalid memory fetches and invalid instruction fetches. An *invalid memory fetch* occurs when code dereferences an invalid pointer. An *invalid instruction fetch* occurs when a function jumps to another function through a bad function pointer, or through a function call to an unexpected object. To determine which type of memory access issue caused a crash, focus on the *program counter*, a register that contains the address of the instruction that caused the memory access exception. On ARM CPU architectures, this is the `pc` register. On the `x86_64` CPU architecture, this is the `rip` register.
 

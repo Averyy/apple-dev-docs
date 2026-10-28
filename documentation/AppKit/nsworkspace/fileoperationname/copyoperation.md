@@ -21,7 +21,7 @@ static let copyOperation: NSWorkspace.FileOperationName
 extern NSWorkspaceFileOperationName NSWorkspaceCopyOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Behaves the same as [`copyItem(at:to:)`](../../../Foundation/filemanager/copyitem%28at,to%29.md).
 

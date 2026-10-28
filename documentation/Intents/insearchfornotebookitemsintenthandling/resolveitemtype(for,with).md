@@ -29,7 +29,7 @@ optional func resolveItemType(for intent: INSearchForNotebookItemsIntent) async 
 - (void) resolveItemTypeForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INNotebookItemTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the type of items to search for. Use this method to verify that you can search for items of the specified type. If you support searching for the items, return a successful resolution with that item type. For types you do not support, you can return a successful resolution with a type that you do support. Alternatively, if you do not want to search an unsupported type, return a not required resolution from this method and use your confirmation method to indicate that a failure occurred.
 

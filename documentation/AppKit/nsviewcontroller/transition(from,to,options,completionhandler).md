@@ -23,7 +23,7 @@ func transition(from fromViewController: NSViewController, to toViewController: 
 - (void) transitionFromViewController:(NSViewController *) fromViewController toViewController:(NSViewController *) toViewController options:(NSViewControllerTransitionOptions) options completionHandler:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to transition between sibling child view controllers owned by a parent view controller (which is the receiver of this method).
 

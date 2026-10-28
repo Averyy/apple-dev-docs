@@ -15,7 +15,7 @@ Posted when a web view changes its typing style.
 static let WebViewDidChangeTypingStyle: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that changed its typing style. This notification does not contain a `userInfo` dictionary.
 

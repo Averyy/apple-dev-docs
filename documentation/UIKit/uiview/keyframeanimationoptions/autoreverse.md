@@ -23,7 +23,7 @@ static var autoreverse: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionAutoreverse
 ```
 
-#### Discussion
+## Discussion
 
 This option must be combined with the [`repeat`](./repeat.md) option.
 

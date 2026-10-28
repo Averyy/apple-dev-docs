@@ -15,11 +15,11 @@ Allocates a converter information structure of type `TECInfo` inthe application 
 OSStatus TECGetInfo(TECInfoHandle *tecInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). This function canreturn memory errors.
 
-#### Discussion
+## Discussion
 
 When you are finished with the handle, your application mustdispose of it using `DisposeHandle`.You must also perform any required preflighting or memory rearrangementbefore calling `TECGetInfo`. 
 

@@ -19,7 +19,7 @@ var motionDirection: TVCaptionButtonViewMotionDirection { get set }
 @property (nonatomic, assign) TVCaptionButtonViewMotionDirection motionDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`TVCaptionButtonViewMotionDirection.horizontal`](../tvcaptionbuttonviewmotiondirection/horizontal.md).
 

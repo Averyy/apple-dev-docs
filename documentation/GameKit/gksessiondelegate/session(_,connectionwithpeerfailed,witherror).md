@@ -24,7 +24,7 @@ optional func session(_ session: GKSession, connectionWithPeerFailed peerID: Str
 - (void) session:(GKSession *) session connectionWithPeerFailed:(NSString *) peerID withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The `error` parameter can be used to inform the user of why the connection failed.
 

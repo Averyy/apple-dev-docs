@@ -23,7 +23,7 @@ var subscriberCellularProvider: CTCarrier? { get }
 @property (retain, readonly, nullable) CTCarrier * subscriberCellularProvider;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CTCarrier`](../ctcarrier.md) object that contains information about the user’s home cellular service provider. The home provider is the provider with whom the user has an account. This information is available immediately after you allocate and initialize the [`CTTelephonyNetworkInfo`](../cttelephonynetworkinfo.md) object.
 

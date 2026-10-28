@@ -22,7 +22,7 @@ static let mediaSubType: AVCaptionSettingsKey
 extern AVCaptionSettingsKey const AVCaptionMediaSubTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key supports numeric and string forms of media subtypes for caption conversions.
 

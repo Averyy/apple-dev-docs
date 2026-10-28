@@ -25,7 +25,7 @@ init(with protocol: Protocol)
 + (NSXPCInterface *) interfaceWithProtocol:(Protocol *) protocol;
 ```
 
-#### Discussion
+## Discussion
 
 Most interfaces do not need any further configuration. Interfaces with collection classes or additional proxy objects should be configured using the other methods in this class.
 

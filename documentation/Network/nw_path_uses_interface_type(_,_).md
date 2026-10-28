@@ -25,7 +25,7 @@ func nw_path_uses_interface_type(_ path: nw_path_t, _ interface_type: nw_interfa
 bool nw_path_uses_interface_type(nw_path_t path, nw_interface_type_t interface_type);
 ```
 
-#### Discussion
+## Discussion
 
 Paths can use interface types by directly routing over an interface, routing through a tunnel that goes over a physical interface, or being eligble to use multiple interfaces directly.
 

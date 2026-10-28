@@ -21,7 +21,7 @@ A base type that represents any scripting language source.
 static var script: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.script`.
 

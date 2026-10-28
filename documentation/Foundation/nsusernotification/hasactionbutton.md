@@ -21,7 +21,7 @@ var hasActionButton: Bool { get set }
 @property BOOL hasActionButton;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`false`](../../Swift/false.md) if the notification has no action button. This is the case for notifications that are purely for information and have no user action. The default value is [`true`](../../Swift/true.md).
 

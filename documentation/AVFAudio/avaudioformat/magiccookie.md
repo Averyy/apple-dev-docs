@@ -25,7 +25,7 @@ var magicCookie: Data? { get set }
 @property (nonatomic, retain, nullable) NSData * magicCookie;
 ```
 
-#### Discussion
+## Discussion
 
 Encoders produce a `magicCookie` object, and some decoders require it to decode properly.
 

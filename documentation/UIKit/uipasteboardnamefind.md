@@ -23,7 +23,7 @@ let UIPasteboardNameFind: String
 extern NSString * const UIPasteboardNameFind;
 ```
 
-#### Discussion
+## Discussion
 
 The Find pasteboard is unavailable starting in iOS 10.
 

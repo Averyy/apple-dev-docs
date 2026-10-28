@@ -12,7 +12,7 @@ virtual SCSIServiceResponse AbortCommand (
  SCSITaskIdentifier request ) __attribute__ ((deprecated));
 ```
 
-#### Overview
+## Overview
 
 Deprecated. Do not use.
 

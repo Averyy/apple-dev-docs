@@ -25,7 +25,7 @@ class func strongObjects() -> NSPointerArray
 + (NSPointerArray *) strongObjectsPointerArray;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array that maintains strong references to its elements.
 

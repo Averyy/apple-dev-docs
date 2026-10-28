@@ -20,7 +20,7 @@ The default animation resource.
 var defaultAnimation: AnimationResource? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The component looks up the resource by key if [`defaultKey`](./defaultkey.md) is non-`nil` and the library contains an animation that the key identifies. Otherwise, the component returns the first entry in the library.
 

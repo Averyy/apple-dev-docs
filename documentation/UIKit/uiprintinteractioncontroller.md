@@ -23,7 +23,7 @@ class UIPrintInteractionController
 @interface UIPrintInteractionController : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`UIPrintInteractionController`](./uiprintinteractioncontroller.md) is the central class for printing in iOS. The shared instance of it represents a print job. A print job includes the content to print and information and options related to its printing, such as output type, job name, paper size, and orientation.
 

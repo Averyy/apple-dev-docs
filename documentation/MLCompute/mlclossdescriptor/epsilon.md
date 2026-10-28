@@ -23,7 +23,7 @@ var epsilon: Float { get }
 @property (nonatomic, readonly) float epsilon;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1e-7`.
 

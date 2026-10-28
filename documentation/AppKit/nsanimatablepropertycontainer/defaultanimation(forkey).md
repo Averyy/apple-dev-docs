@@ -20,11 +20,11 @@ static func defaultAnimation(forKey key: NSAnimatablePropertyKey) -> Any?
 + (id) defaultAnimationForKey:(NSAnimatablePropertyKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The animation to perform. A subclass of [`CAAnimation`](../../QuartzCore/caanimation.md).
 
-#### Discussion
+## Discussion
 
 The [`NSAnimatablePropertyContainer`](../nsanimatablepropertycontainer.md) method consults this class method when its search of the receivers Getting the Animator Proxy dictionary fails to return an animation for `key`.
 

@@ -15,11 +15,11 @@ Gets the current status of the modem from the hardware.
 virtual kern_return_t HwGetModemStatus(bool *cts, bool *dsr, bool *ri, bool *dcd);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method and use it to retrieve the current modem status from your hardware. Set the values of each parameter to an appropriate value based on whether the indicated bit is set.
 

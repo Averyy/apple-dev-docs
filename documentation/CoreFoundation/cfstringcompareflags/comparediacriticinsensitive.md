@@ -25,7 +25,7 @@ static var compareDiacriticInsensitive: CFStringCompareFlags { get }
 kCFCompareDiacriticInsensitive
 ```
 
-#### Discussion
+## Discussion
 
 For example, “ö” (“o-umlaut”) is equivalent to “o”.
 

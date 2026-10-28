@@ -25,11 +25,11 @@ func CFSetCreate(_ allocator: CFAllocator!, _ values: UnsafeMutablePointer<Unsaf
 extern CFSetRefCFSetCreate(CFAllocatorRef allocator, const void **values, CFIndex numValues, const CFSetCallBacks *callBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new immutable set, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 If any value put into the collection is not one understood by one of the callback functions, the behavior when that callback function is used is undefined.
 

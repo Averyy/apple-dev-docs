@@ -15,7 +15,7 @@ The message conteined one or more unknown or malformed parts.
 case invalidMessageParts
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that one or more parts failed to encode.
 

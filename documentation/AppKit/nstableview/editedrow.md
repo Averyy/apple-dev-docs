@@ -19,7 +19,7 @@ var editedRow: Int { get }
 @property (readonly) NSInteger editedRow;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not apply to view-based table views. In a view-based table view, the views are responsible for their own editing behavior. For other tables, the value reflects the index of the row being edited or `–1` when there is no editing session in progress.
 

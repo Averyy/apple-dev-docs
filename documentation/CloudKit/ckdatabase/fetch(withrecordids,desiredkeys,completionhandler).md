@@ -22,7 +22,7 @@ Fetches the specified records and delivers them to a completion handler.
 func fetch(withRecordIDs recordIDs: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]? = nil, completionHandler: @escaping @Sendable (Result<[CKRecord.ID : Result<CKRecord, any Error>], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

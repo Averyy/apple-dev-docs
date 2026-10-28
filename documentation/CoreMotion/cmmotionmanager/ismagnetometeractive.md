@@ -22,7 +22,7 @@ var isMagnetometerActive: Bool { get }
 @property (nonatomic, readonly, getter=isMagnetometerActive) BOOL magnetometerActive;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the [`startMagnetometerUpdates(to:withHandler:)`](./startmagnetometerupdates%28to,withhandler%29.md) or [`startMagnetometerUpdates()`](./startmagnetometerupdates%28%29.md) method has been called since the last time the [`stopMagnetometerUpdates()`](./stopmagnetometerupdates%28%29.md) method was called. (If the start methods hadn’t been called, the app could be getting updates from the magnetometer after calling, for example, [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md), but this property would return [`false`](../../Swift/false.md).)
 

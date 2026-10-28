@@ -26,7 +26,7 @@ static var longForm: AVAudioSession.RouteSharingPolicy { get }
 AVAudioSessionRouteSharingPolicyLongForm
 ```
 
-#### Discussion
+## Discussion
 
 An audio session whose primary use case is as a music or podcast player may use this value to play to the same output as the Music and Podcasts apps. All applications on the system that use this policy have their audio routed to the same location.
 

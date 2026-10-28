@@ -19,7 +19,7 @@ class func setPickerMode(_ mode: NSColorPanel.Mode)
 + (void) setPickerMode:(NSColorPanelMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called at any time, whether or not an application’s `NSColorPanel` has been instantiated.
 

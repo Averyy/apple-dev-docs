@@ -24,7 +24,7 @@ func structType() -> MTLStructType?
 - (MTLStructType *) structType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the struct. If [`dataType`](./datatype.md) indicates that this member is not a struct, this method returns `nil`.
 

@@ -31,7 +31,7 @@ class UNUserNotificationCenter
 - [Asking permission to use notifications](./asking-permission-to-use-notifications.md)
 - [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 
-#### Overview
+## Overview
 
 Use the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) object to manage all notification-related behaviors in your app or app extension. Specifically, use this object to do the following:
 

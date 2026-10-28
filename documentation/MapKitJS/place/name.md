@@ -15,7 +15,7 @@ The name of the place.
 name: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the name for a specific place in Golden Gate Park in San Francisco, California, is `"Lindley Meadow"`.
 

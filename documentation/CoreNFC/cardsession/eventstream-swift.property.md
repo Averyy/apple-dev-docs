@@ -17,7 +17,7 @@ An asynchronous sequence of events from the card session.
 var eventStream: CardSession.EventStream { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the Swift `for-await-in` syntax to receive and process events as the session produces them.
 

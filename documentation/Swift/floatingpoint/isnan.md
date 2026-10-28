@@ -22,7 +22,7 @@ A Boolean value indicating whether the instance is NaN (“not a number”).
 var isNaN: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Because NaN is not equal to any value, including NaN, use this property instead of the equal-to operator (`==`) or not-equal-to operator (`!=`) to test whether a value is or is not NaN. For example:
 

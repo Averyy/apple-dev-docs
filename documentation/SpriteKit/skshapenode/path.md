@@ -29,7 +29,7 @@ var path: CGPath? { get set }
 
 - [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
-#### Discussion
+## Discussion
 
 The path is defined in the node’s coordinate space.
 

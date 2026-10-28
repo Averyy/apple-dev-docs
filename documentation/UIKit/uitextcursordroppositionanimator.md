@@ -22,7 +22,7 @@ class UITextCursorDropPositionAnimator
 @interface UITextCursorDropPositionAnimator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Provides a mechanism for displaying and animating a temporary text cursor to indicate a drop location.
 

@@ -14,7 +14,7 @@ struct sockaddr_ctl {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The controller address structure is used to establish contact between a user client and a kernel controller. The sc_id/sc_unit uniquely identify each controller. sc_id is a unique identifier assigned to the controller. The identifier can be assigned by the system at registration time or be a 32-bit creator code obtained from Apple Computer. sc_unit is a unit number for this sc_id, and is privately used by the kernel controller to identify several instances of the controller.
 

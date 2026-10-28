@@ -9,11 +9,11 @@
 virtual UInt64 getSize() const;
 ```
 
-#### Return Value
+## Return Value
 
 Media size, in bytes.
 
-#### Overview
+## Overview
 
 Ask the media object for its total length in bytes.
 

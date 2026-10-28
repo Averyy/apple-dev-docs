@@ -23,7 +23,7 @@ init(call callUUID: UUID)
 - (instancetype) initWithCallUUID:(NSUUID *) callUUID;
 ```
 
-#### Return Value
+## Return Value
 
 A new action for the specified call UUID.
 

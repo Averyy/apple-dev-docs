@@ -19,7 +19,7 @@ var identity: any NSCopying & NSObjectProtocol { get }
 @property (strong, readonly) id<NSCopying,NSObject> identity;
 ```
 
-#### Discussion
+## Discussion
 
 While touch identities may be re-used, they are unique during the life of the touch, even when multiple devices are present.
 

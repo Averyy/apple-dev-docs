@@ -12,11 +12,11 @@ virtual IOReturn setMaxPacketSize(
  UInt32maxSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnUnsupported. Drivers may override this method and return either kIOReturnSuccess to indicate that the new size was accepted and is in effect, or an error code to indicate failure.
 
-#### Overview
+## Overview
 
 This method call is synchronized by the workloop's gate.
 

@@ -5,7 +5,7 @@
 
 Pause and resume an upload without starting over, even when the connection is interrupted.
 
-#### Overview
+## Overview
 
 Your app or a person using it might need to cancel an in-progress upload and resume it later. By supporting resumable uploads, you save both the user’s time and network bandwidth.
 
@@ -13,7 +13,7 @@ New in iOS 17 and aligned OS versions, [`URLSession`](./urlsession.md) supports 
 
 You can use this technique to manually pause and resume an upload, or even resume an upload that failed due to a temporary loss of connectivity. In both cases, [`URLSession`](./urlsession.md) needs information on how to resume the upload, which is stored in a `resumeData` object.
 
-##### Pause an upload
+### Pause an upload
 
 You can effectively pause a [`URLSessionUploadTask`](./urlsessionuploadtask.md) by calling [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md). This method cancels the task and passes a `resumeData` parameter to its completion handler. If `resumeData` is not `nil`, you can use this token later to resume the upload. The listing below shows how to cancel an upload task and store `resumeData`, if it exists, in a property:
 
@@ -29,7 +29,7 @@ uploadTask.cancel { resumeData in
 
 > ❗ **Important**:  You can’t resume all uploads. The server must support the [latest resumable upload protocol draft](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt) from the HTTP Working Group at the IETF. Also, uploads that use a background configuration handle resumption automatically, so manual resuming is only needed for non-background uploads.
 
-##### Recover a failed upload
+### Recover a failed upload
 
 If there’s only a momentary network interruption, but the server is still reachable, [`URLSession`](./urlsession.md) automatically tries to resume the upload for you. No extra code is needed.
 
@@ -53,7 +53,7 @@ do {
 }
 ```
 
-##### Resume uploading
+### Resume uploading
 
 When it’s appropriate to resume the upload, create a new [`URLSessionUploadTask`](./urlsessionuploadtask.md) by using the [`uploadTask(withResumeData:)`](./urlsession/uploadtask%28withresumedata%29.md) method of [`URLSession`](./urlsession.md), passing in the `resumeData` object you stored earlier. Then, call [`resume()`](./urlsessiontask/resume%28%29.md) on the task to resume the upload:
 

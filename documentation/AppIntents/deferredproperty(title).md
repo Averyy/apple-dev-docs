@@ -18,18 +18,18 @@ A macro that adds an asynchronous app entity property with an asynchronous get a
 ## Declaration
 
 ```swift
-@attached
-(peer, names: prefixed(`$`), prefixed(`_`)) @attached(accessor, names: named(get), named(set)) macro DeferredProperty(title: LocalizedStringResource)
+@attached(peer, names: prefixed(`$`), prefixed(`_`))
+@attached(accessor, names: named(get), named(set)) macro DeferredProperty(title: LocalizedStringResource)
 ```
 
-#### Overview
+## Overview
 
 A deferred property has a few trade-offs:
 
 - The system doesn’t index it when you donate an [`IndexedEntity`](./indexedentity.md) to a Spotlight index.
 - The system doesn’t send it to Shortcuts or Siri automatically; it fetches the value only when needed.
 
-#### Example
+## Example
 
 ```swift
 struct Restaurant: AppEntity {

@@ -20,7 +20,7 @@ Creates and returns a sampler that references an image.
 + (instancetype) samplerWithImage:(CIImage *) im;
 ```
 
-#### Return Value
+## Return Value
 
 A sampler object that references the image specified by the `im` argument.
 

@@ -19,7 +19,7 @@ optional func fallDetectionManagerDidChangeAuthorization(_ fallDetectionManager:
 - (void) fallDetectionManagerDidChangeAuthorization:(CMFallDetectionManager *) fallDetectionManager;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after the fall detection authorization status changes. Check the fall detection manager’s [`authorizationStatus`](../cmfalldetectionmanager/authorizationstatus.md) property to determine the current status.
 

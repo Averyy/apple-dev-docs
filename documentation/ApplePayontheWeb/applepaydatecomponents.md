@@ -21,7 +21,7 @@ dictionary ApplePayDateComponents {
 };
 ```
 
-#### Overview
+## Overview
 
 When specifying a range using date components, provide all elements of the [`ApplePayDateComponents`](./applepaydatecomponents.md) down to the level of granularity that you want to expose. For example, if you specify a range of days, be sure to include values for both [`months`](./applepaydatecomponents/months.md) and [`years`](./applepaydatecomponents/years.md) in addition to [`days`](./applepaydatecomponents/days.md) in the [`ApplePayDateComponents`](./applepaydatecomponents.md).
 

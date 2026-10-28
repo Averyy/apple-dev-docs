@@ -19,7 +19,7 @@ let pose: Pose3D?
 
 - [Adding spatial Persona support to an activity](../../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 You should use this property instead of the `seat/pose` property when you want to position something relative to the participant assigned to this seat, and not the seat itself.
 

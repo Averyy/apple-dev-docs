@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether the value of the first argument is le
 static func <= (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This is the default implementation of the less-than-or-equal-to operator (`<=`) for any type that conforms to `Comparable`.
 

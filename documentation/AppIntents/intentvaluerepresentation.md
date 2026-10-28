@@ -26,11 +26,11 @@ struct IntentValueRepresentation<Item, IntentValue> where Item : Transferable, I
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 - [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
-#### Overview
+## Overview
 
 `IntentValueRepresentation` bridges the gap between your custom `AppEntity` types and system-provided intent values (like `IntentPerson`, `PlaceDescriptor`, and other `_SystemIntentValue` types).
 
-#### Export and Import
+## Export and Import
 
 You can create a representation that supports export only, import only, or both:
 
@@ -60,7 +60,7 @@ ValueRepresentation(
 )
 ```
 
-#### Key Path-Based Export
+## Key Path-Based Export
 
 For entities that directly contain a system intent value property, you can use a simplified key path syntax:
 

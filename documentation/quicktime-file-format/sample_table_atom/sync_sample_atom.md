@@ -6,7 +6,7 @@
 
 An atom that identifies the key frames in the media.
 
-#### Overview
+## Overview
 
 See [`Sync sample atom`](../sync_sample_atom.md).
 

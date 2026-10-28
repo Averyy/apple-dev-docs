@@ -19,7 +19,7 @@ Reduce textures’ file size while preserving its dimensions.
 static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions
 ```
 
-#### Discussion
+## Discussion
 
 The returned option instructs RealityKit to encode textures using smaller file representations. RealityKit selects the best strategy for each texture based on context, which may include lossy image encoding, preserving the original source image, or regenerating mipmaps.
 

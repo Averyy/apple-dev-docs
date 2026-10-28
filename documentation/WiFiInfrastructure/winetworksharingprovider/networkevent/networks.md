@@ -17,7 +17,7 @@ The latest network data, containing a list of all networks shared to the device.
 let networks: [WINetworkSharingProvider.Network]
 ```
 
-#### Discussion
+## Discussion
 
 The list will be filtered to networks matching the provided predicate, with a predicate was provided when getting the `WINetworkSharingProvider/networkListUpdates(matching:)` sequence.
 

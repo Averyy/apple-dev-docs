@@ -23,7 +23,7 @@ var heightTracksTextView: Bool { get set }
 @property (nonatomic) BOOL heightTracksTextView;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the text container adjusts its height when the height of its text view changes. The default value of this property is [`false`](../../Swift/false.md).
 

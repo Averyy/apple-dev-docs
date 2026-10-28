@@ -21,7 +21,7 @@ var accessoryUniqueIdentifiers: [UUID] { get }
 @property (copy, readonly) NSArray<NSUUID *> * accessoryUniqueIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Usually only one accessory is set up at a time, but adding an accessory bridge can result in multiple accessories being set up at once. See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 

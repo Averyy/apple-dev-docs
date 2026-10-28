@@ -17,7 +17,7 @@ The metadata associated with the maximum app rating setting.
 static let maximumRating: BoundedSettingMetadata<Int>
 ```
 
-#### Discussion
+## Discussion
 
 Use `maximumRating` to access the metadata for [`maximumRating`](./maximumrating-swift.property.md). The default value is `1000` and the bounds are `0...2000`.
 

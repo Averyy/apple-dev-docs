@@ -24,7 +24,7 @@ var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest? 
 @property (nonatomic, readonly, nullable) AVAssetResourceLoadingContentInformationRequest * contentInformationRequest;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`AVAssetResourceLoadingContentInformationRequest`](../avassetresourceloadingcontentinformationrequest.md) that you populate with information about the resource. The value of this property is `nil` if no such information is being requested.
 

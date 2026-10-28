@@ -25,11 +25,11 @@ init(response: URLResponse, data: Data)
 - (instancetype) initWithResponse:(NSURLResponse *) response data:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A cached URL response object, containing the response and data.
 
-#### Discussion
+## Discussion
 
 The cache storage policy is set to the default, [`URLCache.StoragePolicy.allowed`](../urlcache/storagepolicy/allowed.md), and the user info dictionary is set to `nil`.
 

@@ -21,7 +21,7 @@ case streaming
 MPMovieSourceTypeStreaming
 ```
 
-#### Discussion
+## Discussion
 
 The movie is a live or on-demand stream.
 

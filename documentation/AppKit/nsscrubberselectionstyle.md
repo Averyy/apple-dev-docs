@@ -20,7 +20,7 @@ class NSScrubberSelectionStyle
 @interface NSScrubberSelectionStyle : NSObject
 ```
 
-#### Overview
+## Overview
 
 Choose a selection style ([`outlineOverlay`](./nsscrubberselectionstyle/outlineoverlay.md) or [`roundedBackground`](./nsscrubberselectionstyle/roundedbackground.md)), or create a custom selection style by subclassing [`NSScrubberSelectionStyle`](./nsscrubberselectionstyle.md) and overriding [`makeSelectionView()`](./nsscrubberselectionstyle/makeselectionview%28%29.md).
 

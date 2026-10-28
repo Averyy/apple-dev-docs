@@ -16,7 +16,7 @@ Translates the given item ID into a human readable name.
 func selectorItemName(fromID ID: UInt32) throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 A String containg the name of the item.
 

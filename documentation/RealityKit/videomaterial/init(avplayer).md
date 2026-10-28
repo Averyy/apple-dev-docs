@@ -21,7 +21,7 @@ Creates a new video material.
 @preconcurrency init(avPlayer: AVPlayer)
 ```
 
-#### Discussion
+## Discussion
 
 To create a video material, first create an [`AVPlayer`](../../AVFoundation/avplayer.md) instance initialized with a URL that points to the movie file you want the video material to play, then pass that to this initializer. The following code demonstrates this process.
 

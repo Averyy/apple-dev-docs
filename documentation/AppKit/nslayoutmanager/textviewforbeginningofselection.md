@@ -19,7 +19,7 @@ unowned(unsafe) var textViewForBeginningOfSelection: NSTextView? { get }
 @property (assign, readonly, nullable) NSTextView * textViewForBeginningOfSelection;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not cause layout if the beginning of the selected range is not yet laid out.
 

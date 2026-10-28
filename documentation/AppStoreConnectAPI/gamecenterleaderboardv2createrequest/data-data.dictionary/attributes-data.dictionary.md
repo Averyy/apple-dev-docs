@@ -15,7 +15,7 @@ The request body you use to create a Game Center leaderboard create request.
 object GameCenterLeaderboardV2CreateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 - activityProperties:
 - defaultFormatter:

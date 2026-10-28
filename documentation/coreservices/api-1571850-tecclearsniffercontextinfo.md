@@ -15,11 +15,11 @@ Resets a sniffer object to its initial settings so youcan reuse it.
 OSStatus TECClearSnifferContextInfo(TECSnifferObjectRef encodingSniffer);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Sniffers maintain state information about the input encodingbuffer and the number of errors and features found for each encoding;this information allows a caller to progressively sniff an inputbuffer in sequential chunks. Before sniffing a buffer that containscompletely new information you must clear any state informationby calling `TECClearSnifferContextInfo`. 
 

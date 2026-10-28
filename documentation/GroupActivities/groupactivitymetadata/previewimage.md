@@ -20,7 +20,7 @@ The image to display for the current activity.
 var previewImage: CGImage?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify an image for the activity. For example, you might display a movie poster for a movie-watching activity. The system scales the image as needed and displays it with the rest of the activity information.
 

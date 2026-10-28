@@ -25,7 +25,7 @@ struct FileOperationKind
 typedef NSString * NSProgressFileOperationKind;
 ```
 
-#### Discussion
+## Discussion
 
 When tracking file operations with the progress [`kind`](./kind.md) set to [`file`](../progresskind/file.md), provide a value for the [`fileOperationKindKey`](../progressuserinfokey/fileoperationkindkey.md) in the user info dictionary.
 

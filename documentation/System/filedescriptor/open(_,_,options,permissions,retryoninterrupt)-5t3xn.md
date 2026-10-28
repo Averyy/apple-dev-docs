@@ -21,11 +21,11 @@ Opens or creates a file for reading or writing.
 static func open(_ path: UnsafePointer<CChar>, _ mode: FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions = FileDescriptor.OpenOptions(), permissions: FilePermissions? = nil, retryOnInterrupt: Bool = true) throws -> FileDescriptor
 ```
 
-#### Return Value
+## Return Value
 
 A file descriptor for the open file
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `open`.
 

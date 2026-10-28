@@ -16,7 +16,7 @@ A version of the device account number suitable for display in your UI.
 DOMString deviceAccountNumberSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically the last four or five digits of the device account number, but the number of digits can vary by issuer.
 

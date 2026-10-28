@@ -17,7 +17,7 @@ Provides a default, blank implementation for when the session updates surfaces a
 func captureSession(_ session: RoomCaptureSession, didUpdate room: CapturedRoom)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didUpdate:)`](./capturesession%28_,didupdate%29.md) .
 

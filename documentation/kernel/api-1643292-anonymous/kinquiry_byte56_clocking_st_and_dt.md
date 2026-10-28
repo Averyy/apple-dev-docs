@@ -13,7 +13,7 @@
 kINQUIRY_Byte56_CLOCKING_ST_AND_DT = 0x0C
 ```
 
-#### Discussion
+## Discussion
 
 Single-transition and double-transition clocking.
 

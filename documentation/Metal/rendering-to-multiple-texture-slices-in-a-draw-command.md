@@ -5,7 +5,7 @@
 
 Select a destination texture slice in your vertex shader.
 
-#### Overview
+## Overview
 
 Using layer selection, you can render to multiple layers (*slices*) of a texture array, cube texture, or 3D texture, choosing a destination slice for each primitive in your vertex shader. A layer is a single 1D, 2D, or 3D block of pixels, specified by a slice and mipmap level in the target texture. Load and store actions apply to every slice of the render pass’s attachments.
 
@@ -15,7 +15,7 @@ Layer selection is useful when you need to render content to multiple related te
 
 For a specific example that demonstrates layer selection, see [Rendering reflections with fewer render passes](./rendering-reflections-with-fewer-render-passes.md).
 
-##### Check whether the device object supports layer selection
+### Check whether the device object supports layer selection
 
 All GPUs in the macOS family support layer selection. Layer selection is available in the Apple GPU family starting with family 5. Test for layer selection using the following code:
 
@@ -38,7 +38,7 @@ func supportsLayerSelection() -> Bool {
 }
 ```
 
-##### Add layer selection to your vertex shader
+### Add layer selection to your vertex shader
 
 To specify which slice to render a primitive into, add a vertex output with the `[[render_target_array_index]]` attribute. Your vertex shader needs to set this value so that Metal knows which slice to render into.
 
@@ -64,7 +64,7 @@ vertex ColorInOut vertexTransform (
 
 Your vertex function needs to return the same index for all vertices that make up any given primitive.
 
-##### Configure the pipeline state object
+### Configure the pipeline state object
 
 Render pipelines that can render to layers need to specify the type of primitive that they can render. This requirement differs from a normal render pipeline, where you can select a different primitive for each draw command.
 
@@ -88,7 +88,7 @@ descriptor.rasterSampleCount = 1
 ...
 ```
 
-##### Configure the render pass
+### Configure the render pass
 
 When you configure the [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md), specify a texture array, cube map texture, or 3D texture as the color attachment. You also need to set the render pass descriptor’s [`renderTargetArrayLength`](./mtlrenderpassdescriptor/rendertargetarraylength.md) property to the maximum number of slices that the shader can choose from. For example, when rendering to a cube map texture, set the length to `6`.
 

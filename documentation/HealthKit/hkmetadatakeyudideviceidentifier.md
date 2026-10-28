@@ -24,7 +24,7 @@ let HKMetadataKeyUDIDeviceIdentifier: String
 extern NSString * const HKMetadataKeyUDIDeviceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The device identifier can be used to reference the GUDID (Globally Unique Device Identification Database).
 

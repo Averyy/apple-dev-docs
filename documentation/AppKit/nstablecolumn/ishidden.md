@@ -19,7 +19,7 @@ var isHidden: Bool { get set }
 @property (getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the table column is hidden. The default value is [`false`](../../Swift/false.md).
 

@@ -19,11 +19,11 @@ object FacebookPost
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `facebook_post` object to include a facebook post in an article by specifying a URL of a publicly available Facebook post.
 
-##### Example
+### Example
 
 ```json
 {

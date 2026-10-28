@@ -21,7 +21,7 @@ The shortest representation of a quarter.
 static var narrow: Date.FormatStyle.Symbol.Quarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the shortest representation of a quarter. For example, `2`.
 

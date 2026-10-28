@@ -25,11 +25,11 @@ func pathContains(_ point: CGPoint, mode: CGPathDrawingMode) -> Bool
 extern bool CGContextPathContainsPoint(CGContextRef c, CGPoint point, CGPathDrawingMode mode);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if `point` is inside the current path of the graphics context; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 A point is contained within the path of a graphics context if the point is inside the painted region when the path is stroked or filled with opaque colors using the specified path drawing mode. A point can be inside a path only if the path is explicitly closed by calling the function [`closePath()`](./closepath%28%29.md) for paths drawn directly to the current context, or [`closeSubpath()`](../cgmutablepath/closesubpath%28%29.md) for paths first created as [`CGPath`](../cgpath.md) objects and then drawn to the current context.
 

@@ -22,7 +22,7 @@ nonisolated
 func splitArrangementLayoutSize(minWidth: CGFloat? = nil, idealWidth: CGFloat? = nil, maxWidth: CGFloat? = nil, minHeight: CGFloat? = nil, idealHeight: CGFloat? = nil, maxHeight: CGFloat? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify the size of a view in a split arrangement, as the following example shows:
 

@@ -30,7 +30,7 @@ func runAction(_ action: SCNAction, forKey key: String?) async
 - (void) runAction:(SCNAction *) action forKey:(NSString *) key completionHandler:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method is identical to [`runAction(_:completionHandler:)`](./runaction%28_,completionhandler%29.md), but the action is stored and identified so that you can retrieve or cancel it later. If an action using the same key is already running, SceneKit removes it before adding the new action.
 

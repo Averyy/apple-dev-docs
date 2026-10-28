@@ -23,7 +23,7 @@ func setStatusBarOrientation(_ interfaceOrientation: UIInterfaceOrientation, ani
 - (void) setStatusBarOrientation:(UIInterfaceOrientation) interfaceOrientation animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method changes the value of the  [`statusBarOrientation`](./statusbarorientation.md) property and rotates the status bar, animating the transition if animated is [`true`](../../Swift/true.md) . If your app has rotatable window content, however, you should not arbitrarily set status-bar orientation using this method. The status-bar orientation set by this method does not change if the device changes orientation.
 

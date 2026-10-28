@@ -21,7 +21,7 @@ let kSecEncryptionMode: CFString
 extern CFStringRef const kSecEncryptionMode;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not supply this key, an appropriate value will be supplied for you. See [Encryption Modes](./transform-attributes.md#Encryption-Modes) for a list of possible values.
 

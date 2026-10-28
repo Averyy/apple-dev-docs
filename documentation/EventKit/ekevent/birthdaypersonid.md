@@ -24,11 +24,11 @@ var birthdayPersonID: Int { get }
 @property (nonatomic, readonly) NSInteger birthdayPersonID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only set if this is a birthday event; otherwise the property is `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 > **Note**:  This property is equivalent to the [`birthdayPersonUniqueID`](./birthdaypersonuniqueid.md) property in macOS.
 

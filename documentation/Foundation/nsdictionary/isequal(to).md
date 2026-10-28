@@ -25,11 +25,11 @@ func isEqual(to otherDictionary: [AnyHashable : Any]) -> Bool
 - (BOOL) isEqualToDictionary:(NSDictionary<id,id> *) otherDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `otherDictionary` are equal to the contents of the receiving dictionary, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two dictionaries have equal contents if they each hold the same number of entries and, for a given key, the corresponding value objects in each dictionary satisfy the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) test.
 

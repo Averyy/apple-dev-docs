@@ -20,7 +20,7 @@ typealias ODMatchType = UInt32
 typedef uint32_t ODMatchType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Match Types](./match-types.md) for recognized match type values.
 

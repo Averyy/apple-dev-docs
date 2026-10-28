@@ -23,7 +23,7 @@ var unknown: Bool { get }
 @property (nonatomic, readonly) BOOL unknown;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) when there is no way to estimate the current type of motion. For example, this property might be [`true`](../../Swift/true.md) if the device was turned on recently and not enough motion data had been gathered to determine the type of motion.
 

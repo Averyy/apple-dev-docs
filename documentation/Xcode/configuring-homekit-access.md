@@ -5,13 +5,13 @@
 
 Discover compatible accessories and communicate with configured accessories and services to perform actions.
 
-#### Overview
+## Overview
 
 Apps that integrate with HomeKit can securely connect to a user’s home automation network and access compatible accessories. After an app connects to an accessory, it can read and update that accessory’s state, for example, by changing the ambient color of a smart light bulb.
 
 To enable your app to control the user’s compatible accessories, you must add the HomeKit capability to your app’s target and include a short description of the app’s functionality in its target’s `Info.plist` file.
 
-##### Add the HomeKit capability to your target
+### Add the HomeKit capability to your target
 
 Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) to add the capability to your app’s target; be sure to select the HomeKit capability from Xcode’s Capabilities library. For watchOS apps with separate WatchKit extensions, you must add the capability to the WatchKit Extension target. The capability isn’t available for macOS.
 
@@ -19,7 +19,7 @@ Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-
 
 After you add the HomeKit capability, Xcode links the `HomeKit` framework to your target and updates its entitlements file to include the [`HomeKit Entitlement`](../BundleResources/entitlements/com.apple.developer.homekit.md). If Xcode automatically manages the signing of your app, it also enables HomeKit for your app’s App ID.
 
-##### Request access to a home automation network
+### Request access to a home automation network
 
 To help protect the security and privacy of the user’s home automation network, your app requires the user’s explicit permission before it can control HomeKit accessories on that network. The system prompts the user for their permission the first time your app uses the HomeKit framework, which is when you initialize [`HMHomeManager`](../HomeKit/hmhomemanager.md).
 
@@ -37,7 +37,7 @@ The App Store requires your app to include a *purpose string*, which accurately 
 
 Remember that the user can revoke their permission at any time in the Settings app, and your app must respond to this accordingly. You can check your app’s current authorization status by accessing the [`authorizationStatus`](../HomeKit/hmhomemanager/authorizationstatus.md) property. HomeKit also returns a [`homeAccessNotAuthorized`](../HomeKit/hmerror/homeaccessnotauthorized.md) error if your app attempts to make an unauthorized call to any of the framework’s APIs.
 
-##### Install the HomeKit accessory simulator
+### Install the HomeKit accessory simulator
 
 Integrating with HomeKit doesn’t require you to have physical access to each of the accessories that your app supports. Instead, you can install the HomeKit Accessory Simulator and simulate each of those accessories. To install the simulator, follow these steps:
 
@@ -51,7 +51,7 @@ Integrating with HomeKit doesn’t require you to have physical access to each o
 
 ![A screenshot of Finder showing the contents of the Hardware folder from the downloaded disk image. The HomeKit Accessory Simulator is in a selected state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/homekit-simulator@2x.png)
 
-Use the simulator to add and remove simulated HomeKit accessories, services, and characteristics, and to simulate networked cameras and video doorbells by leveraging your Mac’s camera. For more information, see the Add Accessories, Services, and Characteristics section of [Testing Your App with the HomeKit Accessory Simulator](../HomeKit/testing_your_app_with_the_homekit_accessory_simulator.md#3087266).
+Use the simulator to add and remove simulated HomeKit accessories, services, and characteristics, and to simulate networked cameras and video doorbells by leveraging your Mac’s camera. For more information, see the Add Accessories, Services, and Characteristics section of [Testing Your App with the HomeKit Accessory Simulator](../HomeKit/testing-your-app-with-the-homekit-accessory-simulator.md#3087266).
 
 ## See Also
 

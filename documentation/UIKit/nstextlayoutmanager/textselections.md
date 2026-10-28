@@ -23,7 +23,7 @@ var textSelections: [NSTextSelection] { get set }
 @property (strong) NSArray<NSTextSelection *> * textSelections;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`NSTextSelection`](../nstextselection.md) represents an insertion point. The selection state that the framework shares among all viewports connected to the text layout manager through text containers.
 

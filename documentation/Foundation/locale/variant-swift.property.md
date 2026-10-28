@@ -21,7 +21,7 @@ An optional variant used by the locale.
 var variant: Locale.Variant? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `va` key of the Unicode BCP 47 extension.
 

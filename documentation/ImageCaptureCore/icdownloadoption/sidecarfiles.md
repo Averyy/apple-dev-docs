@@ -23,7 +23,7 @@ static let sidecarFiles: ICDownloadOption
 extern ICDownloadOption const ICDownloadSidecarFiles;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value as an [`NSNumber`](../../Foundation/nsnumber.md) object.
 

@@ -23,7 +23,7 @@ The three-letter code that represents the country or region associated with the 
 var storefrontCountryCode: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the ISO 3166-1 alpha-3 country code representation.
 

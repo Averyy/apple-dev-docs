@@ -25,7 +25,7 @@ static let stripDiacritics: StringTransform
 extern NSStringTransform const NSStringTransformStripDiacritics;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`kCFStringTransformStripDiacritics`](../../CoreFoundation/kcfstringtransformstripdiacritics.md).
 

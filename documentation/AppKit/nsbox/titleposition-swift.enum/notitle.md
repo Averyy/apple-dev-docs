@@ -17,7 +17,7 @@ case noTitle
 NSNoTitle
 ```
 
-#### Discussion
+## Discussion
 
 The box has no title.
 

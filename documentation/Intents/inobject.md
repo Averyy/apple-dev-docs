@@ -24,7 +24,7 @@ class INObject
 @interface INObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`INObject`](./inobject.md) to create custom parameters and response properties for intent data that doesn’t fit into one of the System Types, such as Boolean, Duration, or Location. Define custom types and associate them with your custom intents and responses in the Intent Definition file.
 

@@ -20,7 +20,7 @@ An object that holds a set of absorption data.
 struct Absorption
 ```
 
-#### Overview
+## Overview
 
 The Sabine absorption coefficient is a value between zero and one that describes the proportion of incident sound energy a surface absorbs.
 

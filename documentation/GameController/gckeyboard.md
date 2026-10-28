@@ -24,7 +24,7 @@ class GCKeyboard
 @interface GCKeyboard : NSObject
 ```
 
-#### Overview
+## Overview
 
 To get the keyboard object and its input values, register for the [`GCKeyboardDidConnect`](../Foundation/nsnotification/name-swift.struct/gckeyboarddidconnect.md) (Swift) or [`GCKeyboardDidConnectNotification`](./gckeyboarddidconnectnotification.md) (Objective-C) notification for when a keyboard connects to the device, or use the [`coalesced`](./gckeyboard/coalesced.md) class property. Then get the input values from the keyboard object’s [`keyboardInput`](./gckeyboard/keyboardinput.md) controller profile.
 

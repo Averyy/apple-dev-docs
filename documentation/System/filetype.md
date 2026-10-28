@@ -22,7 +22,7 @@ A file type matching those contained in a C `mode_t`.
 struct FileType
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Only available on Unix-like platforms.
 

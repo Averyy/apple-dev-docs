@@ -19,7 +19,7 @@
 typedef const AudioServerPlugInHostInterface * AudioServerPlugInHostRef;
 ```
 
-#### Discussion
+## Discussion
 
 A reference to an AudioServerPlugInHostInterface.
 

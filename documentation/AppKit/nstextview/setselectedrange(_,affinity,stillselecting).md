@@ -19,11 +19,11 @@ func setSelectedRange(_ charRange: NSRange, affinity: NSSelectionAffinity, still
 - (void) setSelectedRange:(NSRange) charRange affinity:(NSSelectionAffinity) affinity stillSelecting:(BOOL) stillSelectingFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This method resets the selection granularity to `NSSelectByCharacter`.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.4 and later, if there are multiple selections, this method acts on the first selected subrange.
 

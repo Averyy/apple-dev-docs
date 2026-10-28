@@ -21,7 +21,7 @@ Applies the given closure to a mutable view of the string’s characters.
 mutating func withMutableCharacters<R>(_ body: (inout String) -> R) -> R
 ```
 
-#### Discussion
+## Discussion
 
 Previous versions of Swift provided this view since String itself was not a collection. String is now a collection of characters, so this type is now just an alias for String.
 

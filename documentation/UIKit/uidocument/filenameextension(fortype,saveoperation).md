@@ -22,11 +22,11 @@ func fileNameExtension(forType typeName: String?, saveOperation: UIDocument.Save
 - (NSString *) fileNameExtensionForType:(NSString *) typeName saveOperation:(UIDocumentSaveOperation) saveOperation;
 ```
 
-#### Return Value
+## Return Value
 
 A string to use as the file extension of the document file.
 
-#### Discussion
+## Discussion
 
 The default implementation queries Launch Services to obtain the file extension matching the file (document) type. You can override this method to return a file extension that’s different from the default extension. The default implementation of the [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) method calls this method before it gets the document content and writes the document file to disk.
 

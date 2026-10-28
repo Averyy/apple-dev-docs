@@ -15,7 +15,7 @@ A block the system calls when frame processing is complete.
 typedef void (^)(int, struct __CVBuffer *) VTRAWProcessingOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 On successful processing, will return a CVPixelBuffer conforming to the session’s outputPixelBufferAttributes if any were provided.
 

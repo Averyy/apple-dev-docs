@@ -18,7 +18,7 @@ Updates a vertex buffer in place synchronously on the CPU.
 final func updateVertices<R, E>(at index: Int, _ body: @_lifetime(0: copy 0) (inout MutableRawSpan) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 You pass a closure that receives a mutable span representing the contents of the vertex buffer, which the closure may modify. This span is valid only for the duration of the closure.
 

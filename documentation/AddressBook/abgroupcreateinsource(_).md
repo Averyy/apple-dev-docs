@@ -23,11 +23,11 @@ func ABGroupCreateInSource(_ source: ABRecord!) -> Unmanaged<ABRecord>!
 extern ABRecordRefABGroupCreateInSource(ABRecordRef source);
 ```
 
-#### Return Value
+## Return Value
 
 A new group in the specified source.
 
-#### Discussion
+## Discussion
 
 If `source` is `NULL`, the group is created in the default source.
 

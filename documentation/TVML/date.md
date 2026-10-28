@@ -4,7 +4,7 @@
 
 Displays a date.
 
-#### Overview
+## Overview
 
 The `date` element contains text used to display the associated date. The date string must be in one of the following formats:
 
@@ -18,7 +18,7 @@ Here’s an example that sets the date to January 19, 2031.
 <date format="MMMM dd, yyyy">2031-01-19</date>
 ```
 
-##### Contained In
+### Contained In
 
 - [button](./button.md)
 - [monogram](./monogram.md)

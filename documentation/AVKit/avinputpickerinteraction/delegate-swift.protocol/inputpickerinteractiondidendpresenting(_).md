@@ -21,7 +21,7 @@ optional func inputPickerInteractionDidEndPresenting(_ inputPickerInteraction: A
 - (void) inputPickerInteractionDidEndPresenting:(AVInputPickerInteraction *) inputPickerInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 The `isPresented` property is set to `YES` at this point, indicating that the presentation is complete.
 

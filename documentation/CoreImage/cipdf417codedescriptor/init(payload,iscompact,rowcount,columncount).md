@@ -24,7 +24,7 @@ init?(payload errorCorrectedPayload: Data, isCompact: Bool, rowCount: Int, colum
 - (instancetype) initWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIPDF417CodeDescriptor`](../cipdf417codedescriptor.md) instance or `nil` if the parameters are invalid
 

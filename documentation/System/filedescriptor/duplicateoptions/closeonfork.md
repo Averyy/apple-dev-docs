@@ -21,7 +21,7 @@ Indicates that forking a program closes the file.
 static var closeOnFork: FileDescriptor.DuplicateOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Normally, file descriptors remain open across calls to the `fork(2)` function. If you specify this option, the file descriptor is closed when forking this process into another process.
 

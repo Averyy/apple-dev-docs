@@ -19,7 +19,7 @@ var identifier: UUID { get }
 @property (strong, readonly) NSUUID * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSWritingToolsCoordinator.Context`](../context.md) object initializes the value of this property at creation time. Use this value to identify the context object within your app.
 

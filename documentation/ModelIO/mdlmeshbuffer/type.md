@@ -25,7 +25,7 @@ var type: MDLMeshBufferType { get }
 @property (nonatomic, readonly) MDLMeshBufferType type;
 ```
 
-#### Discussion
+## Discussion
 
 A buffer can contain per-vertex data for one or more vertex attributes of a [`MDLMesh`](../mdlmesh.md) object ([`MDLMeshBufferType.vertex`](../mdlmeshbuffertype/vertex.md)), or index data for a [`MDLSubmesh`](../mdlsubmesh.md) object ([`MDLMeshBufferType.index`](../mdlmeshbuffertype/index.md)).
 

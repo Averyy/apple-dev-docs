@@ -25,7 +25,7 @@ case invalidAudioFormat
 SHErrorCodeInvalidAudioFormat
 ```
 
-#### Discussion
+## Discussion
 
 For the list of the supported audio formats, see [`append(_:at:)`](../../shsignaturegenerator/append%28_,at%29.md).
 

@@ -25,7 +25,7 @@ func getResourceValue(_ value: AutoreleasingUnsafeMutablePointer<AnyObject?>, fo
 - (BOOL) getResourceValue:(id*) value forKey:(NSURLResourceKey) key error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method first checks if the URL object already caches the resource value. If so, it returns the cached resource value to the caller. If not, then this method synchronously obtains the resource value from the backing store, adds the resource value to the URL object’s cache, and returns the resource value to the caller.
 

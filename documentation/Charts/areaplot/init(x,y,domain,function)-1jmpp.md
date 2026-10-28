@@ -24,7 +24,7 @@ init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

@@ -20,7 +20,7 @@ func NSHFSTypeCodeFromFileType(_ fileTypeString: String!) -> OSType
 extern OSType NSHFSTypeCodeFromFileType(NSString *fileTypeString);
 ```
 
-#### Return Value
+## Return Value
 
 The HFS file type code corresponding to `fileTypeString`, or `0` if it cannot be found.
 

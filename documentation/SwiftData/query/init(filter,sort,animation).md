@@ -22,7 +22,7 @@ Create a query with a predicate, and a list of sort descriptors.
 @preconcurrency init(filter: Predicate<Element>? = nil, sort descriptors: [SortDescriptor<Element>] = [], animation: Animation) where Result == [Element]
 ```
 
-#### Discussion
+## Discussion
 
 Use `Query` within a view by wrapping the variable for the query’s result:
 

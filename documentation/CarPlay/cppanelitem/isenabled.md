@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, the item is enabled and supports interactions. Set the value to `false` to disable interactions. The default value of this property is `true`.
 

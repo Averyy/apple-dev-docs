@@ -16,11 +16,11 @@ func finalizeLicenseResponse(licenseResponse: [UInt8], signature: [UInt8]? = nil
 
 - [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
-#### Return Value
+## Return Value
 
 The signed license in a byte array.
 
-#### Discussion
+## Discussion
 
 Encode the return result to `base64` and send it as the `"license"` key in response to an iOS license request.
 

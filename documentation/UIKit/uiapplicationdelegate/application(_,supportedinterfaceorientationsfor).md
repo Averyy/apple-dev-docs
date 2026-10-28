@@ -24,11 +24,11 @@ optional func application(_ application: UIApplication, supportedInterfaceOrient
 - (UIInterfaceOrientationMask) application:(UIApplication *) application supportedInterfaceOrientationsForWindow:(UIWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that indicate the orientations to use for the view controllers.
 
-#### Discussion
+## Discussion
 
 This method returns the total set of interface orientations supported by the app. When determining whether to rotate a particular view controller, the orientations returned by this method are intersected with the orientations supported by the root view controller or topmost presented view controller. The app and view controller must agree before the rotation is allowed.
 

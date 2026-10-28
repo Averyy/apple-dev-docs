@@ -15,7 +15,7 @@
 @property (nonatomic, strong, readonly, nullable) NSNumber * headphoneSafetyAudioLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Reduce Loud Audio
 

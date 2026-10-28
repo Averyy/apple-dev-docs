@@ -25,11 +25,11 @@ init?(contentsOfFile fName: String)
 + (NSCharacterSet *) characterSetWithContentsOfFile:(NSString *) fName;
 ```
 
-#### Return Value
+## Return Value
 
 A character set read from the bitmap representation stored in the file at `path`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t use filenames to check for the uniqueness of the character sets it creates. To prevent duplication of character sets in memory, cache them and make them available through an API that checks whether the requested set has already been loaded.
 

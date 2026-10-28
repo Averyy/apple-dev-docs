@@ -24,7 +24,7 @@ func date(withCalendarFormat format: String?, timeZone aTimeZone: TimeZone?) -> 
 - (NSCalendarDate *) dateWithCalendarFormat:(NSString *) format timeZone:(NSTimeZone *) aTimeZone;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSCalendarDate`](../nscalendardate.md) object bound to `format` and the time zone `aTimeZone`.
 

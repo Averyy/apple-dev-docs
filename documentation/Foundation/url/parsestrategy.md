@@ -21,7 +21,7 @@ A parse strategy for creating URLs from formatted strings.
 struct ParseStrategy
 ```
 
-#### Overview
+## Overview
 
 Create an explicit [`URL.ParseStrategy`](./parsestrategy.md) to parse multiple strings according to the same parse strategy. The following example creates a customized strategy, then applies it to multiple URL candidate strings.
 

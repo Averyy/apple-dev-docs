@@ -13,11 +13,11 @@
 errno_t ifnet_reference(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 May return EINVAL if the interface is not valid.
 
-#### Discussion
+## Discussion
 
 Increment the reference count of the ifnet to assure that it will not go away. The interface must already have at least one reference.
 

@@ -24,7 +24,7 @@ func removeConnections(to nodes: [GKGraphNode], bidirectional: Bool)
 - (void) removeConnectionsToNodes:(NSArray<GKGraphNode *> *) nodes bidirectional:(BOOL) bidirectional;
 ```
 
-#### Discussion
+## Discussion
 
 In GameplayKit, the connections between nodes in a graph are directional. For example, if the [`connectedNodes`](./connectednodes.md) list of Node A contains Node B, then a traveler on the graph can move directly from Node A to Node B. For the reverse to also be true, the [`connectedNodes`](./connectednodes.md) list of Node B must contain Node A. When calling this method to remove a connection from one node to another, use the `bidirectional` parameter to choose whether to automatically remove the reverse connection as well.
 

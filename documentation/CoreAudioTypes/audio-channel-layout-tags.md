@@ -5,7 +5,7 @@
 
 The identifiers that represent audio channel layouts.
 
-#### Overview
+## Overview
 
 Use these values to set the [`mChannelLayoutTag`](./audiochannellayout/mchannellayouttag.md) field of an [`AudioChannelLayout`](./audiochannellayout.md) structure.
 

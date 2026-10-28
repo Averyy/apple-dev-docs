@@ -22,7 +22,7 @@ func end()
 - (void) end;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling the [`end()`](./end%28%29.md) method, be sure to stop the assessment and hide any sensitive information. After calling the method, wait until the session’s delegate receives the [`assessmentSessionDidEnd(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidend%28_%29.md) method before you report the assessment as complete to the user.
 

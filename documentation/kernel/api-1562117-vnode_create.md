@@ -15,11 +15,11 @@ Create and initialize a vnode.
 errno_t vnode_create(uint32_t flavor, uint32_t size, void *data, vnode_t *vpp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, error code otherwise.
 
-#### Discussion
+## Discussion
 
 Returns wth an iocount held on the vnode which must eventually be dropped with vnode_put().
 

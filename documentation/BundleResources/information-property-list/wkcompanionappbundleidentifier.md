@@ -14,7 +14,7 @@ The bundle ID of the watchOS app’s companion iOS app.
 - **Name**: `WKCompanionAppBundleIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Xcode automatically includes this key in the WatchKit app’s information property list when you create a watchOS project from a template. The value should be the same as the iOS app’s [`CFBundleIdentifier`](./cfbundleidentifier.md).
 

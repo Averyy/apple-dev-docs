@@ -20,7 +20,7 @@ Creates a compute pipeline state asynchronously.
 func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamicLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor? = nil, compilerTaskOptions: MTL4CompilerTaskOptions? = nil) async throws -> any MTLComputePipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A compute pipeline state upon success, otherwise this method throws.
 

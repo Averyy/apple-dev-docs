@@ -22,7 +22,7 @@ var floatingPointConversionRoundingMode: MTLFloatingPointConversionRoundingMode 
 @property (nonatomic, readwrite) MTLFloatingPointConversionRoundingMode floatingPointConversionRoundingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the rounding mode for narrowing floating-point conversions. Default is MTLFloatingPointConversionRoundingModeToNearestEven.
 

@@ -25,7 +25,7 @@ var attributeMappings: [NSPropertyMapping]? { get set }
 @property (strong, nullable) NSArray<NSPropertyMapping *> * attributeMappings;
 ```
 
-#### Discussion
+## Discussion
 
 The order of mappings in the array specifies the order in which the mappings will be processed during a migration.
 

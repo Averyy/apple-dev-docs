@@ -24,7 +24,7 @@ func JSObjectGetTypedArrayBytesPtr(_ ctx: JSContextRef!, _ object: JSObjectRef!,
 void *JSObjectGetTypedArrayBytesPtr(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The pointer that this function returns is temporary and may not remain valid across JavaScriptCore API calls.
 

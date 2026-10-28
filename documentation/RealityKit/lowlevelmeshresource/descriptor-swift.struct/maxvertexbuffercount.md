@@ -18,7 +18,7 @@ The maximum number of separate vertex buffers the renderer supports.
 static let maxVertexBufferCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 For optimal performance, most apps use one buffer.
 

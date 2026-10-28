@@ -33,7 +33,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 - [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
 - [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
 
-#### Discussion
+## Discussion
 
 When all the players accept their invitations to a match, GameKit invokes this method in the app instances for all players in the match, including the local player who initiates the match. This method needs to dismiss the view controller and start the game. Use the match object passed to this method to get the players and communicate between them during the game.
 

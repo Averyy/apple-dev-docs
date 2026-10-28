@@ -26,7 +26,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 - (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when working with pull-style buffer sources, such as an [`AVAssetReaderOutput`](../avassetreaderoutput.md). The callback you provide appends media data to the input until its [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) property becomes [`false`](../../Swift/false.md), or when there’s no more media data to process (at which point you may mark the input as finished by calling its [`markAsFinished()`](./markasfinished%28%29.md) method). If you don’t mark the input as finished, after the input processes the media data and becomes ready for more, it invokes the callback again to append more data. The example below shows a typical callback implementation.
 

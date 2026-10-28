@@ -23,7 +23,7 @@ convenience init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, tar
 - (instancetype) initWithBarButtonSystemItem:(UIBarButtonSystemItem) systemItem target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

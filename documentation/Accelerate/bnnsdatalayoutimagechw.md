@@ -25,7 +25,7 @@ var BNNSDataLayoutImageCHW: BNNSDataLayout { get }
 BNNSDataLayoutImageCHW
 ```
 
-#### Discussion
+## Discussion
 
 The value `(x, y, channel)` is at index `x * stride[0] + y * stride[1] + channel * stride[2]`.
 

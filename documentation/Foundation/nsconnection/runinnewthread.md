@@ -16,7 +16,7 @@ Creates and starts a new `NSThread` object and then runs the receiving connectio
 - (void) runInNewThread;
 ```
 
-#### Discussion
+## Discussion
 
 If the newly created thread is the first to be detached from the current thread, this method posts an [`NSWillBecomeMultiThreaded`](../nsnotification/name-swift.struct/nswillbecomemultithreaded.md) with `nil` to the default notification center.
 

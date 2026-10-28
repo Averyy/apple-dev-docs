@@ -25,7 +25,7 @@ var tileHeight: Int { get }
 @property (readonly) NSUInteger tileHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The value comes from the [`tileHeight`](../mtlrenderpassdescriptor/tileheight.md) property of the [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) at the time you create the render command encoder.
 

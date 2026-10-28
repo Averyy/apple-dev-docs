@@ -25,13 +25,13 @@ class INAppendToNoteIntent
 @interface INAppendToNoteIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INAppendToNoteIntent`](./inappendtonoteintent.md) object when the user asks to append content to an existing note. The intent object contains the note to modify and the content to add to the note.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INAppendToNoteIntentHandling`](./inappendtonoteintenthandling.md) protocol. Your handler should confirm the request and create an [`INAppendToNoteIntentResponse`](./inappendtonoteintentresponse.md) object with the updated note.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

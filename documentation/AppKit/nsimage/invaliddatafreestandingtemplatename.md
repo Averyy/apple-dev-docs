@@ -19,7 +19,7 @@ class let invalidDataFreestandingTemplateName: String
 extern NSImageName const NSImageNameInvalidDataFreestandingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Place this icon to the right of any fields containing invalid data. You can use this image to implement a borderless button.
 

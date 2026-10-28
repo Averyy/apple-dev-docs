@@ -25,7 +25,7 @@ func CFFileSecurityCopyOwnerUUID(_ fileSec: CFFileSecurity!, _ ownerUUID: Unsafe
 extern Boolean CFFileSecurityCopyOwnerUUID(CFFileSecurityRef fileSec, CFUUIDRef*ownerUUID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if an owner UUID was successfully copied, or `false` if there is no owner UUID property associated with this `CFFileSecurityRef` object.
 

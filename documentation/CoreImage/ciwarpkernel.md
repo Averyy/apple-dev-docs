@@ -24,7 +24,7 @@ class CIWarpKernel
 @interface CIWarpKernel : CIKernel
 ```
 
-#### Overview
+## Overview
 
 The kernel language routine for a warp kernel has the following characteristics:
 

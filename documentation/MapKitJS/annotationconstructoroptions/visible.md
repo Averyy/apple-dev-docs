@@ -15,7 +15,7 @@ A Boolean value that determines whether the annotation is visible or hidden.
 visible?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

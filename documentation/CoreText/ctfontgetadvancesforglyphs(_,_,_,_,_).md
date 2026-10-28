@@ -25,11 +25,11 @@ func CTFontGetAdvancesForGlyphs(_ font: CTFont, _ orientation: CTFontOrientation
 extern double CTFontGetAdvancesForGlyphs(CTFontRef font, CTFontOrientation orientation, const CGGlyph glyphs[], CGSize advances[], CFIndex count);
 ```
 
-#### Return Value
+## Return Value
 
 The summed glyph advance of an array of glyphs.
 
-#### Discussion
+## Discussion
 
 Individual glyph advances are passed back via the `advances` parameter. These are the ideal metrics for each glyph scaled and transformed in font space.
 

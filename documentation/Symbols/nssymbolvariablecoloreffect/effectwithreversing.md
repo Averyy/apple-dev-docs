@@ -21,7 +21,7 @@ An effect that reverses each time it repeats.
 - (instancetype) effectWithReversing;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the symbol effect options that reverses each time it repeats.
 

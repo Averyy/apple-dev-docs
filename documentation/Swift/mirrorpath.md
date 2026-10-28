@@ -21,7 +21,7 @@ A protocol for legitimate arguments to `Mirror`’s `descendant` method.
 protocol MirrorPath
 ```
 
-#### Overview
+## Overview
 
 Do not declare new conformances to this protocol; they will not work as expected.
 

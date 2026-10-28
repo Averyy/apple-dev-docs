@@ -22,7 +22,7 @@ var requestMethod: SLRequestMethod { get }
 @property (nonatomic, readonly) SLRequestMethod requestMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to look up the method of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](./init%28forservicetype,requestmethod,url,parameters%29-2cnf1.md). Possible values are described in [`SLRequestMethod`](../slrequestmethod.md).
 

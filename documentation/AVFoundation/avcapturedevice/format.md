@@ -28,7 +28,7 @@ class Format
 
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Overview
+## Overview
 
 A format object provides information about a media capture format to use with a capture device, such as video frame rates and zoom factors.
 

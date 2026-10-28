@@ -11,7 +11,7 @@ Gets the size of the data buffer.
 virtual UInt32 getSize() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size of the data buffer managed by this object in bytes.
 

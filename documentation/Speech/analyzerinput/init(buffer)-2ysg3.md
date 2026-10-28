@@ -20,7 +20,7 @@ Creates an audio input object.
 init(buffer: AVAudioPCMBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 This audio buffer is assumed to start immediately after the previous buffer (or at time-code zero if there is no previous buffer).
 

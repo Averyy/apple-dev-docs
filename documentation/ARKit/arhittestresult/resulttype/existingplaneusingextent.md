@@ -22,7 +22,7 @@ static var existingPlaneUsingExtent: ARHitTestResult.ResultType { get }
 ARHitTestResultTypeExistingPlaneUsingExtent
 ```
 
-#### Discussion
+## Discussion
 
 When searching for this result type, ARKit returns a point coplanar with an already detected plane only if that point lies within the area defined by the plane’s [`center`](../../arplaneanchor/center.md) and [`extent`](../../arplaneanchor/extent.md) properties. Those properties (together with the anchor’s [`transform`](../../aranchor/transform.md)) define the smallest rectangular area that includes all regions ARKit estimates to be a part of the plane.
 

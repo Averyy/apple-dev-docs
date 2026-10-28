@@ -24,7 +24,7 @@ var isScrollEnabled: Bool { get set }
 @property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls only user interactions with the map. If you set the value of this property to [`false`](../../Swift/false.md), you may still change the map location programmatically by changing the value in the [`region`](./region.md) property.
 

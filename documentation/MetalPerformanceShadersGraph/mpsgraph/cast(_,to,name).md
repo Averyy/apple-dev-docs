@@ -24,11 +24,11 @@ func cast(_ tensor: MPSGraphTensor, to type: MPSDataType, name: String?) -> MPSG
 - (MPSGraphTensor *) castTensor:(MPSGraphTensor *) tensor toType:(MPSDataType) type name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Returns the input tensor casted to the specied data type.
 

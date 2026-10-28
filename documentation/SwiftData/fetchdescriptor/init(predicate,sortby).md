@@ -22,7 +22,7 @@ Creates a fetch descriptor with the specified predicate that, optionally, arrang
 init(predicate: Predicate<T>? = nil, sortBy: [SortDescriptor<T>] = [])
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched models to be high, use [`fetchLimit`](./fetchlimit.md) and [`fetchOffset`](./fetchoffset.md) to break those results into smaller, more efficient batches.
 

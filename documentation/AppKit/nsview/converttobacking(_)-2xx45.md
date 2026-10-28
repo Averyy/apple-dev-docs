@@ -19,7 +19,7 @@ func convertToBacking(_ point: NSPoint) -> NSPoint
 - (NSPoint) convertPointToBacking:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A point in its pixel aligned backing store coordinate system.
 

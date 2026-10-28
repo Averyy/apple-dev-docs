@@ -19,7 +19,7 @@ func isMember(ofGroup group: CBGroupIdentity) -> Bool
 - (BOOL) isMemberOfGroup:(CBGroupIdentity *) group;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the identity is a member of the group; [`false`](../../Swift/false.md) if it is not.
 

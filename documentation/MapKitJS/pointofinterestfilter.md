@@ -15,7 +15,7 @@ A filter for determining the points of interest to include or exclude on a map o
 class PointOfInterestFilter
 ```
 
-#### Overview
+## Overview
 
 You can apply a point-of-interest filter when you create a map ([`MapConstructorOptions`](./mapconstructoroptions.md)), when you update an existing map ([`Map`](./map.md)), or when you fetch points of interest ([`SearchConstructorOptions`](./searchconstructoroptions.md)).
 

@@ -29,7 +29,7 @@ protocol MLCustomLayer
 
 - [Creating and Integrating a Model with Custom Layers](./creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Overview
+## Overview
 
 You use the [`MLCustomLayer`](./mlcustomlayer.md) protocol to define the behavior of your own neural network layers in Core ML models. You can deploy novel or proprietary models on your own release schedule. Custom layers also provide a mechanism for pre- or post-processing during model evaluation.
 

@@ -13,7 +13,7 @@
 MBUF_CSUM_DID_IP = 0x0100
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the driver/hardware verified the IP checksum in hardware.
 

@@ -19,11 +19,11 @@ func predicate(forRow row: Int) -> NSPredicate?
 - (NSPredicate *) predicateForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The predicate for the row at `row`.
 
-#### Discussion
+## Discussion
 
 You should rarely have a need to call this directly, but you can override this method in a subclass to perform specialized predicate handling for certain criteria or display values.
 

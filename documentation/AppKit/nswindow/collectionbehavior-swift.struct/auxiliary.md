@@ -19,7 +19,7 @@ static var auxiliary: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorAuxiliary
 ```
 
-#### Discussion
+## Discussion
 
 Marking a window collection behavior as auxiliary means it becomes auxiliary for both Stage Manager and full screen display modes. Auxiliary windows prefer being shown alongside primary windows.
 

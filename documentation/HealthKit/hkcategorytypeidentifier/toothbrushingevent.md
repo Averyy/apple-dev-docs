@@ -24,7 +24,7 @@ static let toothbrushingEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierToothbrushingEvent;
 ```
 
-#### Discussion
+## Discussion
 
 These samples have a value of [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md).
 

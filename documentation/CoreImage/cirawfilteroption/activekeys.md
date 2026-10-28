@@ -26,7 +26,7 @@ static let activeKeys: CIRAWFilterOption
 extern CIRAWFilterOption const kCIActiveKeys;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSSet`](../../Foundation/nsset.md) object containing the set of input keys which may be used to affect the output image. (Depending on the input image type and the decoder version, some input keys may be unavailable.) This key is read-only.
 

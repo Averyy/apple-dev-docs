@@ -15,7 +15,7 @@ Sets the current stream format.
 kern_return_t SetCurrentStreamFormat(const IOUserVideoStreamBasicDescription *in_format);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the format send sa notification to the host to update the object state if successful. The object’s work queue synchronizes access to the stream format.
 

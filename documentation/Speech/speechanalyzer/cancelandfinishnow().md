@@ -20,7 +20,7 @@ Finishes analysis immediately.
 final func cancelAndFinishNow() async
 ```
 
-#### Discussion
+## Discussion
 
 This method cancels all pending work and then finishes analysis. It works similarly to calling [`cancelAnalysis(before:)`](./cancelanalysis%28before%29.md) and then [`finish(after:)`](./finish%28after%29.md), but unlike `finish(after:)`, this method is able to finish analysis prior to any input. The post-conditions for this method are identical to `finish(after:)`.
 

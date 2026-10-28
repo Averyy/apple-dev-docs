@@ -25,7 +25,7 @@ class NSCharacterSet
 @interface NSCharacterSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this bridges to a [`CharacterSet`](./characterset.md); use [`NSCharacterSet`](./nscharacterset.md) when you need reference semantics or other Foundation-specific behavior.
 

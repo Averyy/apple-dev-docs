@@ -19,11 +19,11 @@ class func scrollerWidth(for controlSize: NSControl.ControlSize, scrollerStyle: 
 + (CGFloat) scrollerWidthForControlSize:(NSControlSize) controlSize scrollerStyle:(NSScrollerStyle) scrollerStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The width for scrollers of the receiving class for `controlSize` and `scrollerStyle`.
 
-#### Discussion
+## Discussion
 
 You should use this method in preference to [`scrollerWidthForControlSize:`](./scrollerwidthforcontrolsize_.md), which assumes a scroller style of [`NSScroller.Style.legacy`](./style/legacy.md), and [`scrollerWidth`](./scrollerwidth.md) which in addition assumes a control size of [`NSRegularControlSize`](../nsregularcontrolsize.md).
 

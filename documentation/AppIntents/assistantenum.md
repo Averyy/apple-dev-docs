@@ -21,7 +21,7 @@ A value that Apple Intelligence and Siri use to fulfill a person’s request.
 protocol AssistantEnum : AppEnum
 ```
 
-#### Overview
+## Overview
 
 Don’t adopt this protocol directly, instead use the [`AssistantEnum(schema:)`](./assistantenum%28schema%29.md) macro to meet requirements for making your [`AppEnum`](./appenum.md) discoverable by Apple Intelligence and Siri.
 

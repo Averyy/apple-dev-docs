@@ -25,7 +25,7 @@ var integerValue: Int { get }
 @property (readonly) NSInteger integerValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSInteger` value of the string, assuming a decimal representation and skipping whitespace at the beginning of the string. This property is `0` if the string doesn’t begin with a valid decimal text representation of a number.
 

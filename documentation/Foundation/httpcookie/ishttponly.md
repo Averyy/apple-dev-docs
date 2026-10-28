@@ -25,7 +25,7 @@ var isHTTPOnly: Bool { get }
 @property (readonly, getter=isHTTPOnly) BOOL HTTPOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the cookie should only be sent using HTTP headers, [`false`](../../Swift/false.md) otherwise.
 

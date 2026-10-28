@@ -25,7 +25,7 @@ class Bundle
 @interface NSBundle : NSObject
 ```
 
-#### Overview
+## Overview
 
 Apple uses bundles to represent apps, frameworks, plug-ins, and many other specific types of content. Bundles organize their contained resources into well-defined subdirectories, and bundle structures vary depending on the platform and the type of the bundle. By using a bundle object, you can access a bundle’s resources without knowing the structure of the bundle. The bundle object provides a single interface for locating items, taking into account the bundle structure, user preferences, available localizations, and other relevant factors.
 
@@ -41,7 +41,7 @@ Some types of frequently used resources can be located and opened without a bund
 
 > **Note**: Unlike some other Foundation classes with corresponding Core Foundation names (such as [`NSString`](./nsstring.md) and [`CFString`](../CoreFoundation/cfstring.md)), [`Bundle`](./bundle.md) objects cannot be cast to [`CFBundle`](../CoreFoundation/cfbundle.md) references. If you need functionality provided by [`CFBundle`](../CoreFoundation/cfbundle.md), you can still create a [`CFBundle`](../CoreFoundation/cfbundle.md) and use the [`CFBundle`](../CoreFoundation/cfbundle.md) API. See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Finding and Opening a Bundle
+### Finding and Opening a Bundle
 
 Before you can locate a resource, you must first specify which bundle contains it. The [`Bundle`](./bundle.md) class has many constructors, but the one you use most often is [`main`](./bundle/main.md). The main bundle represents the bundle directory that contains the currently executing code. So for an app, the main bundle object gives you access to the resources that shipped with your app.
 
@@ -69,7 +69,7 @@ NSBundle *myBundle = [NSBundle bundleForClass:[MyPrivateClass class]];
 
 In Swift, use the [`bundle()`](./bundle%28%29.md) macro to insert a bundle instance appropriate to the current execution context, whether an app, app extension, framework, or Swift package.
 
-##### Locating Resources in a Bundle
+### Locating Resources in a Bundle
 
 You use [`Bundle`](./bundle.md) objects to obtain the location of specific resources inside the bundle. When looking for resources, you provide the name of the resource and its type at a minimum. For resources in a specific subdirectory, you can also specify that directory. After locating the resource, the bundle routines return a path string or URL that you can use to open the file.
 
@@ -93,7 +93,7 @@ Because global resources take precedence over language-specific resources, you s
 
 When locating resource files, the bundle object automatically considers many standard filename modifiers when determining which file to return. Resources may be tagged for a specific device (`~iphone`, `~ipad`) or for a specific screen resolution (`@2x`, `@3x`). Do not include these modifiers when specifying the name of the resource you want. The bundle object selects the file that is most appropriate for the underlying device. For more information, see [App Icons on iPhone, iPad and Apple Watch](https://developer.apple.com/library/archive/qa/qa1686/_index.html#//apple_ref/doc/uid/DTS40009882).
 
-##### Understanding Bundle Structures
+### Understanding Bundle Structures
 
 Bundle structures vary depending on the target platform and the type of bundle you are building. The [`Bundle`](./bundle.md) class hides this underlying structure in most (but not all) cases. Many of the methods you use to load resources from a bundle automatically locate the appropriate starting directory and look for resources in known places. You can also use the methods and properties of this class to get the location of known bundle directories and to retrieve resources specifically from those directories.
 

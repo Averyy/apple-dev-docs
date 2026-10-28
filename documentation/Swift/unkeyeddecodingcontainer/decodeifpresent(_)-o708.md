@@ -21,11 +21,11 @@ Decodes a value of the given type, if present.
 mutating func decodeIfPresent(_ type: Int128.Type) throws -> Int128?
 ```
 
-#### Return Value
+## Return Value
 
 A decoded value of the requested type, or `nil` if the value is a null value, or if there are no more elements to decode.
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if the container has no elements left to decode, or if the value is null. The difference between these states can be distinguished by checking `isAtEnd`.
 

@@ -24,7 +24,7 @@ class MPSGraphImToColOpDescriptor
 @interface MPSGraphImToColOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 

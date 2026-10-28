@@ -20,7 +20,7 @@ optional func speechSynthesizer(_ sender: NSSpeechSynthesizer, didEncounterSyncM
 - (void) speechSynthesizer:(NSSpeechSynthesizer *) sender didEncounterSyncMessage:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 The synthesizer calls your synchronization delegate method whenever it encounters a synchronization command embedded in a string. You might use the synchronization delegate method to provide a callback not ordinarily provided.
 

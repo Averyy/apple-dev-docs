@@ -15,7 +15,7 @@ Initializes the attachment from a disk image.
 convenience init(diskImage: DiskImage, cachingMode: VZDiskImageCachingMode = .automatic, synchronizationMode: VZDiskImageSynchronizationMode = .full) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer enables the use of [`DiskImage`](../../DiskImageKit/diskimage.md) objects created with the [DiskImageKit](../../DiskImageKit/DiskImageKit.md) framework, including stacked images with cache and overlay layers.
 

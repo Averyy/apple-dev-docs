@@ -20,7 +20,7 @@ init?(_ recognizedPointKey: VNRecognizedPointKey)
 extern ARSkeletonJointNameARSkeletonJointNameForRecognizedPointKey(VNRecognizedPointKey recognizedPointKey);
 ```
 
-#### Discussion
+## Discussion
 
 This function matches human body key points defined by the Vision framework with joint names defined by ARKit. This function may return `nil` if the key point doesn’t map to a joint name. For more information about key points, see [Detecting Human Body Poses in Images](../../../Vision/detecting-human-body-poses-in-images.md).
 

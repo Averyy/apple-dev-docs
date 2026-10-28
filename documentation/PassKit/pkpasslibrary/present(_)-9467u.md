@@ -23,7 +23,7 @@ func present(_ pass: PKSecureElementPass)
 - (void) presentSecureElementPass:(PKSecureElementPass *) pass;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can only present provisioned passes. The library must contain `pass`. Otherwise, calling this method has no effect.
 

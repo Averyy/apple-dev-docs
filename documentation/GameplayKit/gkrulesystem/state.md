@@ -24,7 +24,7 @@ var state: NSMutableDictionary { get }
 @property (nonatomic, retain, readonly) NSMutableDictionary * state;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary is mutable—some rules might alter the system’s state when executed. If you change this dictionary’s contents outside of a rule action, you must reset and reevaluate the system.
 

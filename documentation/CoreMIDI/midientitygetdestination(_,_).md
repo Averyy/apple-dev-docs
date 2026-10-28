@@ -23,7 +23,7 @@ func MIDIEntityGetDestination(_ entity: MIDIEntityRef, _ destIndex0: Int) -> MID
 extern MIDIEndpointRef MIDIEntityGetDestination(MIDIEntityRef entity, ItemCount destIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a destination, or `NULL` if an error occurred.
 

@@ -24,7 +24,7 @@ func mount(options: FSTaskOptions) async throws
 - (void) mountWithOptions:(FSTaskOptions *) options replyHandler:(void (^)(NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls this method as a signal that some process is trying to mount this volume. Your file system receives a call to `activate(options:)` prior to receiving any mount calls.
 

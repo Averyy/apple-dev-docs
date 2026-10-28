@@ -19,11 +19,11 @@ init!(elementValue element: NSObject!)
 - (instancetype) initWithElementValue:(NSObject *) element;
 ```
 
-#### Return Value
+## Return Value
 
 Returns self if successful. Returns nil if there was an error parsing the element value.
 
-#### Discussion
+## Discussion
 
 The value must follow the format listed above and must be an instance of NSData, NSString, NSNumber, NSArray, NSDictionary, IOBluetoothSDPUUID.
 

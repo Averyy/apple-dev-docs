@@ -17,7 +17,7 @@ The drafter’s inner module — mirrors the Python `_DraftInner` so weight keys
 final class Gemma4AssistantDraftInner
 ```
 
-#### Overview
+## Overview
 
 Class is public so it can appear as a property type on [`Gemma4AssistantDraftModel`](./gemma4assistantdraftmodel.md); members are internal because they reference internal-scoped Gemma 4 building blocks (`Gemma4TextDecoderLayer`, `Gemma4RMSNormZeroShift`).
 

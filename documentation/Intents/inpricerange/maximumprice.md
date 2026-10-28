@@ -31,7 +31,7 @@ var maximumPrice: NSDecimalNumber? { get }
 @property (atomic, readonly, nullable) NSDecimalNumber * maximumPrice;
 ```
 
-#### Discussion
+## Discussion
 
 If no maximum price was specified at initialization time, the value in this property is `nil`.
 

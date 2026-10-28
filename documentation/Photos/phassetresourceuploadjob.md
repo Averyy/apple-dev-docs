@@ -22,7 +22,7 @@ class PHAssetResourceUploadJob
 @interface PHAssetResourceUploadJob : PHObject
 ```
 
-#### Overview
+## Overview
 
 Use within an application’s `com.apple.photos.background-upload` extension to request an upload of a [`PHAssetResource`](./phassetresource.md) to a destination [`NSURLRequest`](../Foundation/nsurlrequest.md).
 

@@ -20,7 +20,7 @@ Creates a new memory-backed stage.
 init(displayName: String? = nil, loadingPayloads: USDStage.InitialLoadRule = .all)
 ```
 
-#### Discussion
+## Discussion
 
 This is analogous to creating an anonymous [`USDLayer`](../usdlayer.md).
 

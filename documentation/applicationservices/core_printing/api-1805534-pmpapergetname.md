@@ -14,11 +14,11 @@ OSStatus PMPaperGetName (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 This function does not necessarily return a paper name that’s localized for a given printer. In macOS 10.5 and later, instead of using this function, Apple recommends using the function [`PMPaperCreateLocalizedName`](../api-1460981-pmpapercreatelocalizedname.md).
 

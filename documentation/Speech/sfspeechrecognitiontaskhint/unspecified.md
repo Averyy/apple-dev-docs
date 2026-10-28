@@ -23,7 +23,7 @@ case unspecified
 SFSpeechRecognitionTaskHintUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Use this hint type when the intended use for captured speech does not match the other task types.
 

@@ -25,7 +25,7 @@ class MXDiskWriteExceptionDiagnostic
 @interface MXDiskWriteExceptionDiagnostic : MXDiagnostic
 ```
 
-#### Overview
+## Overview
 
 A disk write exception occurs when the app writes an excessive amount of data to the disk.
 

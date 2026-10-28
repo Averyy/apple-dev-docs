@@ -26,7 +26,7 @@ class UIDocumentBrowserAction
 
 - [Adding custom actions and activities](./adding-custom-actions-and-activities.md)
 
-#### Overview
+## Overview
 
 By default, the system provides a number of standard actions (copy, move, rename, delete, and share). To add custom actions, assign an array of [`UIDocumentBrowserAction`](./uidocumentbrowseraction.md) objects to the browser’s [`customActions`](./uidocumentbrowserviewcontroller/customactions.md) property.
 

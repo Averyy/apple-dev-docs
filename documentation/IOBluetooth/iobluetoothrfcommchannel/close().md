@@ -19,7 +19,7 @@ func close() -> IOReturn
 - (IOReturn) closeChannel;
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 

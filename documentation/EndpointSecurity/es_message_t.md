@@ -20,7 +20,7 @@ struct es_message_t
 typedef struct { ... } es_message_t;
 ```
 
-#### Overview
+## Overview
 
 A message contains an [`event`](./es_message_t/event.md) monitored by Endpoint Security and an [`action`](./es_message_t/action.md) to perform. The [`event`](./es_message_t/event.md) is a union of types specific to each kind of event. For example, a file-renaming event provides the source and destination paths as the union member `rename`. Similarly, a process fork event provides the process identifier of the new child process as the union member `fork`. Inspect the [`event_type`](./es_message_t/event_type.md) to determine which member of the union to access.
 

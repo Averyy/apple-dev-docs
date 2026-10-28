@@ -25,7 +25,7 @@ var currentSampleAudioDependencyInfo: AVSampleCursorAudioDependencyInfo { get }
 @property (nonatomic, readonly) AVSampleCursorAudioDependencyInfo currentSampleAudioDependencyInfo;
 ```
 
-#### Discussion
+## Discussion
 
 To position a sample cursor at the first sample that the audio decoder requires for a full refresh, move it back from the current sample until you find a sample that meets the following criteria:
 

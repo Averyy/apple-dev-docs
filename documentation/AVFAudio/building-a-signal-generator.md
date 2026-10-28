@@ -13,7 +13,7 @@ Generate audio signals using an audio source node and a custom render callback.
 - macOS 14.0+
 - Xcode 16.4+
 
-#### Overview
+## Overview
 
 This sample code project shows you how to use an audio source node and a custom render callback to generate classic waveforms.
 
@@ -25,7 +25,7 @@ A class called `SignalGeneratorKernel`, written in C++ to ensure real-time safet
 
 You can change the waveform, frequency, and amplitude of the signal generator in real time. Because changing the amplitude and frequency of the signal generator can produce audible artifacts, the sample project uses the  included `ParameterRamp` class to ramp these parameters.
 
-#### Synthesize classic waveforms
+## Synthesize classic waveforms
 
 The classic waveforms the signal generator kernel produces are sine, sawtooth down, square, triangle, and white noise. Digital synthesis of classic waveforms that have discontinuities can produce aliasing. This is particularly the case for sawtooth and square waveforms, which have jump discontinuities.
 
@@ -81,7 +81,7 @@ inline float additiveTriangle(float phase, int harmonics) {
 }
 ```
 
-#### Define a custom render callback
+## Define a custom render callback
 
 The `AudioManager` class bridges an instance of `SignalGenerator` to an [AVAudioEngine](./avaudioengine.md). When initialized, `AudioManager` constructs an [AVAudioSourceNode](./avaudiosourcenode.md) object using the `renderCallback` property of the signal generator class. After creating an audio source node, `AudioManager` attaches the node to the [AVAudioEngine](./avaudioengine.md), and connects it to the main mixer node.
 
@@ -97,7 +97,7 @@ init() {
 }
 ```
 
-`SignalGenerator` provides a render block in much the same way an instance of [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides an [internalRenderBlock](../AudioToolbox/auaudiounit/api-1439864-internalrenderblock.md). The basic difference is that `SignalGenerator` provides a render block of type [AVAudioSourceNodeRenderBlock](./avaudiosourcenoderenderblock.md), and [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides a render block of type [AUInternalRenderBlock](../AudioToolbox/auinternalrenderblock.md).
+`SignalGenerator` provides a render block in much the same way an instance of [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides an [internalRenderBlock](../AudioToolbox/auaudiounit/internalrenderblock.md). The basic difference is that `SignalGenerator` provides a render block of type [AVAudioSourceNodeRenderBlock](./avaudiosourcenoderenderblock.md), and [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides a render block of type [AUInternalRenderBlock](../AudioToolbox/auinternalrenderblock.md).
 
 ```obj-c
 @interface SignalGenerator : NSObject
@@ -110,7 +110,7 @@ init() {
 @end
 ```
 
-#### Connect the user interface to the signal generator
+## Connect the user interface to the signal generator
 
 The user interface is a [View](../SwiftUI/view.md) that observes a property of type `AudioManager`. The audio manager class, in turn, implements the [Observable](../Observation/observable.md) protocol, and is responsible for maintaining the state of the user interface.
 

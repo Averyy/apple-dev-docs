@@ -4,7 +4,7 @@
 
 Learn about specific development topics through these in-depth technical articles.
 
-#### Overview
+## Overview
 
 Technotes are focused, timely documents from Apple Developer Technical Support. They explore a wide range of development topics and provide guidance for developers creating apps and accessories for all of Apple’s platforms.
 

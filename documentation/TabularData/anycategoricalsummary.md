@@ -21,7 +21,7 @@ A type-erased categorical summary.
 struct AnyCategoricalSummary
 ```
 
-#### Overview
+## Overview
 
 Categorical summary includes 5 statistics:
 

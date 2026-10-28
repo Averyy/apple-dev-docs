@@ -26,7 +26,7 @@ type SearchDelegate<
     | ((error: Error | null, result: T | null) => void);
 ```
 
-#### Discussion
+## Discussion
 
 You can also pass an object to the [`search()`](./search/search.md) and [`autocomplete()`](./search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
 

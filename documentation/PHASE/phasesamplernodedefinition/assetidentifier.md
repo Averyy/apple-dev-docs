@@ -24,7 +24,7 @@ var assetIdentifier: String { get }
 @property (nonatomic, strong, readonly) NSString * assetIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property refers to the registered identifier of the audio file. See [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md).
 

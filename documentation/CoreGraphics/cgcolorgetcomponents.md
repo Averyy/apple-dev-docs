@@ -21,7 +21,7 @@ Returns the values of the color components (including alpha) associated with a c
 extern const CGFloat *CGColorGetComponents(CGColorRef color);
 ```
 
-#### Return Value
+## Return Value
 
 An array of intensity values for the color components (including alpha) associated with the specified color. The size of the array is one more than the number of components of the color space for the color.
 

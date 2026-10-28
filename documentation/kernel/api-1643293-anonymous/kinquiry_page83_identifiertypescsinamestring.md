@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeSCSINameString = 8
 ```
 
-#### Discussion
+## Discussion
 
 SCSI Name String Identifier Type.
 

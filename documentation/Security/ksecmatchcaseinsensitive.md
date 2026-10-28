@@ -25,7 +25,7 @@ let kSecMatchCaseInsensitive: CFString
 extern CFStringRef const kSecMatchCaseInsensitive;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), or if this attribute is not provided, then case-sensitive string matching is performed.
 

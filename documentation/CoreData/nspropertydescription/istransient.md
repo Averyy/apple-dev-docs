@@ -25,11 +25,11 @@ var isTransient: Bool { get set }
 @property (getter=isTransient) BOOL transient;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is transient, otherwise [`false`](../../Swift/false.md). The transient flag specifies whether or not a property’s value is ignored when an object is saved to a persistent store. Transient properties are not saved to the persistent store, but are still managed for undo, redo, validation, and so on.
 
-##### Special Considerations
+### Special Considerations
 
 Setting this property raises an exception if the receiver’s model has been used by an object graph manager.
 

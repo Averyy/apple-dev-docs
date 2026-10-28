@@ -19,7 +19,7 @@ An array of function identifiers that indicates the features the vehicle support
 var supportedFunctions: [FunctionIdentifier] { get }
 ```
 
-#### Discussion
+## Discussion
 
 When building your app’s UI, use the information in this property to determine what features you can access. The array contains all supported features. To determine if a feature is currently supported, call the [`status(for:)`](./status%28for%29.md) method.
 

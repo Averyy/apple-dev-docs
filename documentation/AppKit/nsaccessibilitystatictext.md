@@ -19,7 +19,7 @@ protocol NSAccessibilityStaticText : NSAccessibilityElementProtocol
 @protocol NSAccessibilityStaticText <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want to represent short pieces of text, such as headers or labels. For longer blocks of text, use the [`NSAccessibilityNavigableStaticText`](./nsaccessibilitynavigablestatictext.md) protocol.
 

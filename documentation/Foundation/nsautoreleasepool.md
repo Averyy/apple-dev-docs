@@ -21,7 +21,7 @@ An object that supports Cocoa’s reference-counted memory management system.
 @interface NSAutoreleasePool : NSObject
 ```
 
-#### Overview
+## Overview
 
 An autorelease pool stores objects that are sent a `release` message when the pool itself is drained.
 
@@ -53,7 +53,7 @@ You create an [`NSAutoreleasePool`](./nsautoreleasepool.md) object with the usua
 
 Each thread (including the main thread) maintains its own stack of [`NSAutoreleasePool`](./nsautoreleasepool.md) objects (see [Threads](./nsautoreleasepool.md#Threads)). As new pools are created, they get added to the top of the stack. When pools are deallocated, they are removed from the stack. Autoreleased objects are placed into the top autorelease pool for the current thread. When a thread terminates, it automatically drains all of the autorelease pools associated with itself.
 
-##### Threads
+### Threads
 
 If you are making Cocoa calls outside of the Application Kit’s main thread—for example if you create a Foundation-only application or if you detach a thread—you need to create your own autorelease pool.
 
@@ -61,7 +61,7 @@ If your application or thread is long-lived and potentially generates a lot of a
 
 > **Note**:  If you are creating secondary threads using the POSIX thread APIs instead of `NSThread` objects, you cannot use Cocoa, including `NSAutoreleasePool`, unless Cocoa is in multithreading mode. Cocoa enters multithreading mode only after detaching its first `NSThread` object. To use Cocoa on secondary POSIX threads, your application must first detach at least one `NSThread` object, which can immediately exit. You can test whether Cocoa is in multithreading mode with the `NSThread` class method [`isMultiThreaded()`](./thread/ismultithreaded%28%29.md).
 
-##### Garbage Collection
+### Garbage Collection
 
 In a garbage-collected environment, there is no need for autorelease pools. You may, however, write a framework that is designed to work in both a garbage-collected and reference-counted environment. In this case, you can use autorelease pools to hint to the collector that collection may be appropriate. In a garbage-collected environment, sending a [`drain`](./nsautoreleasepool/drain.md) message to a pool triggers garbage collection if necessary; `release`, however, is a no-op. In a reference-counted environment, [`drain`](./nsautoreleasepool/drain.md) has the same effect as `release`. Typically, therefore, you should use [`drain`](./nsautoreleasepool/drain.md) instead of `release`.
 

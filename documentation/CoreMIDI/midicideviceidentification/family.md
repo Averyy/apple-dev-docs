@@ -25,7 +25,7 @@ var family: (UInt8, UInt8)
 uint8_t family[2];
 ```
 
-#### Discussion
+## Discussion
 
 This value is 2 bytes long.
 

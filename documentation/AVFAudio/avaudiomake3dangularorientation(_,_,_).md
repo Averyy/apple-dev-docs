@@ -25,7 +25,7 @@ func AVAudioMake3DAngularOrientation(_ yaw: Float, _ pitch: Float, _ roll: Float
 static AVAudio3DAngularOrientation AVAudioMake3DAngularOrientation(float yaw, float pitch, float roll);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudio3DAngularOrientation`](./avaudio3dangularorientation.md) instance.
 

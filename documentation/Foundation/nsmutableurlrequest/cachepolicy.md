@@ -25,7 +25,7 @@ var cachePolicy: NSURLRequest.CachePolicy { get set }
 @property NSURLRequestCachePolicy cachePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored for requests used to construct [`URLSessionUploadTask`](../urlsessionuploadtask.md) and [`URLSessionDownloadTask`](../urlsessiondownloadtask.md) objects, as caching is not supported by the URL Loading System for upload or download requests.
 

@@ -28,7 +28,7 @@ func rematch() async throws -> GKMatch
 - (void) rematchWithCompletionHandler:(void (^)(GKMatch *match, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses automatching to recreate a previous match. If you use this method to create a match, each instance of your game on each device should call this same method.
 

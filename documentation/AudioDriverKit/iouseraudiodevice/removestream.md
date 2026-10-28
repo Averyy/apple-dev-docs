@@ -15,11 +15,11 @@ Removes an audio stream from the device.
 kern_return_t RemoveStream(IOUserAudioStream *in_stream);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If removing the stream succeeds, the stream’s reference count decrements by one.
 

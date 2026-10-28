@@ -22,7 +22,7 @@ optional func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableVi
 - (void) tableViewDidEndMultipleSelectionInteraction:(UITableView *) tableView;
 ```
 
-#### Discussion
+## Discussion
 
 The table view calls this method after the user lifts their finger from the device.
 

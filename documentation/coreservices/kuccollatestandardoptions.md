@@ -14,7 +14,7 @@
 var kUCCollateStandardOptions: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `kUCCollateComposeInsensitiveMask` and `kUCCollateWidthInsensitiveMask` bits are set, then (1) precomposed and decomposed representations of the same text element will be treated as equivalent, and (2) fullwidth and halfwidth compatibility forms will be treated as equivalent to the corresponding non-compatibility characters.
 

@@ -11,7 +11,7 @@ Clear the Screen Time password and the restrictions on a device.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 
-#### Discussion
+## Discussion
 
 In iOS 11 and earlier, this command clears the restrictions password and all restrictions that the password protects.
 
@@ -19,7 +19,7 @@ In iOS 12.2 and later, if Screen Time uses iCloud to share its settings (Share A
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

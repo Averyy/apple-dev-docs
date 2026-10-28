@@ -25,7 +25,7 @@ func cancelAnalysis()
 - (void) cancelAnalysis;
 ```
 
-#### Discussion
+## Discussion
 
 The method executes asynchronously, and when it completes, the analyzer calls the completion handler you provide to the [`analyze(completionHandler:)`](./analyze%28completionhandler%29.md) method.
 

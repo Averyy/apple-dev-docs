@@ -21,7 +21,7 @@ Creates an empty data object.
 + (instancetype) data;
 ```
 
-#### Discussion
+## Discussion
 
 This method is declared primarily for the use of mutable subclasses of [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169).
 

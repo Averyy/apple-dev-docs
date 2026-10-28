@@ -23,7 +23,7 @@ class CFBitVector
 typedef const struct __CFBitVector * CFBitVectorRef;
 ```
 
-#### Overview
+## Overview
 
 CFBitVector and its derived mutable type, [`CFMutableBitVector`](./cfmutablebitvector.md), manage ordered collections of bit values, which are either `0` or `1`. CFBitVector creates static bit vectors and CFMutableBitVector creates dynamic bit vectors.
 

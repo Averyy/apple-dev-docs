@@ -19,7 +19,7 @@ func cancelContentAuthorizationRequest()
 - (void) cancelContentAuthorizationRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method while a content authorization request is pending will cause that request to be cancelled and its completion handler to be invoked with a status of [`AVContentAuthorizationStatus.cancelled`](../avcontentauthorizationstatus/cancelled.md).
 

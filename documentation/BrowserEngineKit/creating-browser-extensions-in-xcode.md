@@ -5,11 +5,11 @@
 
 Configure your Xcode project to support your alternative browser engine.
 
-#### Overview
+## Overview
 
 Deliver your web browser as a browser app and a collection of extensions, described in [Designing your browser architecture](./designing-your-browser-architecture.md). Create a separate target in your Xcode project for each of the three kinds of extension: web content extension, rendering extension, and networking extension.
 
-##### Create your Xcode project
+### Create your Xcode project
 
 Create a new Xcode project for your browser app and extensions:
 
@@ -18,7 +18,7 @@ Create a new Xcode project for your browser app and extensions:
 3. Give your project a name, and click Next.
 4. Choose a location to save your project, and click Create.
 
-##### Create extension targets in Xcode
+### Create extension targets in Xcode
 
 Open your Xcode project, and follow these steps for each of the three extension types:
 
@@ -36,7 +36,7 @@ Open your Xcode project, and follow these steps for each of the three extension 
 - **Networking extension**: `com.apple.web-browser-engine.networking`
 - **Content extension**: `com.apple.web-browser-engine.content`
 
-##### Build for pointer authentication
+### Build for pointer authentication
 
 Browser apps that include alternative browser engines must use the `arm64e` instruction set for all executables, including the extensions, in order to use the system’s pointer-authentication protection on devices that support it. Build your browser app as a universal binary that also supports the `arm64` instruction set to target iPad models that support alternative browser engines and don’t support `arm64e` instructions.
 
@@ -69,7 +69,7 @@ If your Xcode workspace includes Swift Packages as dependencies for your targets
 % plutil -insert iOSPackagesShouldBuildARM64e -bool YES MyWorkspace.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 ```
 
-##### Adopt the correct entitlements
+### Adopt the correct entitlements
 
 To act as a person’s web browser, your app requires the default-browser entitlement (see [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md)), and the [`Web Browser Engine Entitlement`](../BundleResources/entitlements/com.apple.developer.web-browser-engine.host.md) that enables your app to separate core tasks of an alternative browser engine into dedicated extensions.
 
@@ -103,13 +103,13 @@ For more information on adding entitlements to targets in Xcode, see [`Entitleme
 
 > ❗ **Important**:  App Store Connect won’t accept your app if your non-browser app includes any of the entitlements for web browsers and their extensions described in this section, or you use the entitlements on other web browser components or with different values than those listed here. You must use all of the entitlements listed here only for the purposes described, for the relevant components of your browser app.
 
-##### Target devices with required capabilities
+### Target devices with required capabilities
 
 Add the string `web-browser-engine` to the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md) array in your target’s properties, to ensure that people can only download your app on devices that support browser apps with alternative browser engines. If your browser app only supports the `arm64e` instruction set, also add `arm64e` to [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 
 For more information, see [Required Device Capabilities](https://developer.apple.com/support/required-device-capabilities/).
 
-##### Test your web browser
+### Test your web browser
 
 Development of a web browser that uses an alternative browser engine can occur anywhere in the world. Xcode allows running development or Ad-Hoc signed builds of the app on Simulator but device support varies by region:
 

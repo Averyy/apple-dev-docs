@@ -5,7 +5,7 @@
 
 Flags that specify how string comparisons are performed.
 
-#### Overview
+## Overview
 
 These constants are flags intended for use in the comparison-option parameters in comparison functions such as [`CFStringCompare(_:_:_:)`](./cfstringcompare%28_,_,_%29.md). If you want to request multiple options, combine them with a bitwise-OR operation.
 

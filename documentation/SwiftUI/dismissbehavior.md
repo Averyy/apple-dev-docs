@@ -19,7 +19,7 @@ Programmatic window dismissal behaviors.
 struct DismissBehavior
 ```
 
-#### Overview
+## Overview
 
 Use values of this type to control window dismissal during the current transaction.
 

@@ -4,11 +4,11 @@
 
 Places a progress bar on top of another element.
 
-#### Overview
+## Overview
 
 The `progressBar` element creates an empty bar that is overlaid along the bottom of an image. A percentage of the bar is then filled based on the value assigned. This element is commonly used to denote how much of a media item has already been viewed.
 
-##### Contained In
+### Contained In
 
 - [overlay](./overlay.md)
 

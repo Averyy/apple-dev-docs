@@ -15,11 +15,11 @@ The pointer style for resizing a column, or vertical division.
 static func columnResize(directions: HorizontalDirection.Set) -> PointerStyle
 ```
 
-#### Return Value
+## Return Value
 
 A pointer style for resizing a column.
 
-#### Discussion
+## Discussion
 
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

@@ -25,13 +25,13 @@ func scanUpToCharacters(from set: CharacterSet, into result: AutoreleasingUnsafe
 - (BOOL) scanUpToCharactersFromSet:(NSCharacterSet *) set intoString:(NSString **) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver scanned any characters, otherwise [`false`](../../Swift/false.md).
 
 If the only scanned characters are in the [`charactersToBeSkipped`](./characterstobeskipped.md) character set (which is the whitespace and newline character set by default), then returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoke this method with `NULL` as `stringValue` to simply scan up to a given set of characters.
 

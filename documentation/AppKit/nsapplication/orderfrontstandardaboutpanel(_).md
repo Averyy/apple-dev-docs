@@ -19,7 +19,7 @@ func orderFrontStandardAboutPanel(_ sender: Any?)
 - (void) orderFrontStandardAboutPanel:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`orderFrontStandardAboutPanel(options:)`](./orderfrontstandardaboutpanel%28options%29.md) with a `nil` argument. See [`orderFrontStandardAboutPanel(options:)`](./orderfrontstandardaboutpanel%28options%29.md) for a description of what’s displayed.
 

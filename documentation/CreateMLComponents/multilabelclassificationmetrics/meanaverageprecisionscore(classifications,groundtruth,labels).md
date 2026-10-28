@@ -23,11 +23,11 @@ static func meanAveragePrecisionScore(classifications: some Sequence<Classificat
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The mean average precision.
 
-#### Discussion
+## Discussion
 
 An average precision score summarizes the precision-recall curve for a label. The mean average precision is the mean of the average precision scores for all the classification labels.
 

@@ -6,20 +6,24 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.to
 
 # mlx.core.topk
 
-**topk(*a: array*, */*, *k: int*, *axis: None | int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Returns the `k` largest elements from the input along a given axis.
+```python
+topk(a: array, /, k: int, axis: None | int = -1, *, stream: StreamOrDevice = None) → array
+```
+
+Returns the `k` largest elements from the input along a given axis.
+
 The elements will not necessarily be in sorted order.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**k** ([int](https://docs.python.org/3/builtins/functions.html#int)) – `k` top elements to be returned
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None**, **optional*) – Optional axis to select over.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **k** ([int](https://docs.python.org/3/builtins/functions.html#int)) – `k` top elements to be returned
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* *None*, *optional*) – Optional axis to select over.
 If `None`, this selects the top `k` elements over the
 flattened array. If unspecified, it defaults to `-1`.
 
-Returns:
-The top `k` elements from the input.
+**Returns:**
+: The top `k` elements from the input.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

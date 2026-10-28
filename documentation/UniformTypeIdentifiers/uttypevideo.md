@@ -21,7 +21,7 @@ A type that represents video that doesn’t contain audio.
 extern UTType * const UTTypeVideo;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.video`.
 

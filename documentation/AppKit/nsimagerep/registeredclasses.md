@@ -19,7 +19,7 @@ class var registeredClasses: [AnyClass] { get }
 @property (class, copy, readonly) NSArray<Class> * registeredImageRepClasses;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `Class` objects identifying the registered `NSImageRep` subclasses.
 

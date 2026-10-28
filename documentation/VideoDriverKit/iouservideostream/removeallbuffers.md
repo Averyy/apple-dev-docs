@@ -15,11 +15,11 @@ Removes all buffers from the video stream.
 kern_return_t removeAllBuffers();
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if all the buffers were successfully removed.
 
-#### Discussion
+## Discussion
 
 Buffers cannot be removed while the stream is open, as this will change the buffer identifiers of existing buffers.
 

@@ -32,7 +32,7 @@ class SKPaymentTransaction
 - [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md)
 - [Restoring purchased products](./restoring-purchased-products.md)
 
-#### Overview
+## Overview
 
 A payment transaction is created whenever a payment is added to the payment queue. The system delivers transactions to your app when the App Store finishes processing the payment. Completed transactions provide a receipt and transaction identifier that your app can use to save a permanent record of the processed payment.
 

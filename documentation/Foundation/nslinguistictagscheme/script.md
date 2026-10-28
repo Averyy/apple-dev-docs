@@ -27,7 +27,7 @@ static let script: NSLinguisticTagScheme
 extern NSLinguisticTagScheme const NSLinguisticTagSchemeScript;
 ```
 
-#### Discussion
+## Discussion
 
 Each value for this tag scheme is an ISO 15924 script identifier. For example,  the identifier for Latin script is “Latn” and the identifier for Simplified Chinese script is “Hans”. The identifier “Zyyy” is used if a specific script cannot be determined.
 

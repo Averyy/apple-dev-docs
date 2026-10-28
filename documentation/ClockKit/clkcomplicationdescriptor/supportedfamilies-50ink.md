@@ -15,7 +15,7 @@ The families that support this type of complication.
 @property (nonatomic, readonly) NSArray<NSNumber *> * supportedFamilies;
 ```
 
-#### Discussion
+## Discussion
 
 Different descriptors can support different sets of families.
 

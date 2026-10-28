@@ -17,11 +17,11 @@ Executes a throwing operation and transforms file-not-found errors into user-fri
 func handleFileOperation<T>(at url: URL, fileDescription: String = "Configuration file", operation: () throws -> T) throws -> T
 ```
 
-#### Return Value
+## Return Value
 
 The result of the operation.
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `ValidationError` with a user-friendly message if the file is not found, or the original error wrapped in a `ValidationError` for other errors.
 

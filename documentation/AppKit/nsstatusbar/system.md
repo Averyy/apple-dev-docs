@@ -19,11 +19,11 @@ class var system: NSStatusBar { get }
 @property (class, strong, readonly) NSStatusBar * systemStatusBar;
 ```
 
-#### Return Value
+## Return Value
 
 The shared status bar object.
 
-#### Discussion
+## Discussion
 
 The status bar begins at the right side of the menu bar (to the left of Menu Extras and the menu bar clock) and grows to the left as `NSStatusItem` objects are added to it.
 

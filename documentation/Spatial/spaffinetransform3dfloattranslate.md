@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatTranslate(SPAffineTransform3DFloat transform, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s constructed by concatenating an existing affine transform and a translation.
 

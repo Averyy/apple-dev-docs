@@ -22,7 +22,7 @@ optional func assessmentSessionDidUpdate(_ session: AEAssessmentSession)
 - (void) assessmentSessionDidUpdate:(AEAssessmentSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 After you call a session’s [`update(to:)`](../aeassessmentsession/update%28to%29.md) method, the session calls this delegate method to indicate a successful update. If the update fails, the session calls [`assessmentSession(_:failedToUpdateTo:error:)`](./assessmentsession%28_,failedtoupdateto,error%29.md) instead.
 

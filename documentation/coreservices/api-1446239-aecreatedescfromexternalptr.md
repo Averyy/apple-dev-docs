@@ -19,17 +19,17 @@ func AECreateDescFromExternalPtr(_ descriptorType: OSType, _ dataPtr: UnsafeRawP
 OSStatus AECreateDescFromExternalPtr(OSType descriptorType, const void *dataPtr, Size dataLength, AEDisposeExternalUPP disposeCallback, SRefCon disposeRefcon, AEDesc *theDesc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This function is different than [`AECreateDesc(_:_:_:_:)`](./api-1448535-aecreatedesc.md), in that it creates a descriptor that uses the data block provided by the caller “in place,” rather than allocate a block of memory and copy the data to it. This function can provide dramatically improved performance if you’re working with large chunks of data. It attempts to copy the descriptor to the address space of any recipient process using virtual memory APIs, avoiding an actual memory copy. For example, you might want to use this function to pass a large image in an Apple event.
 
 You can use the [`AEGetDescDataRange(_:_:_:_:)`](./api-1446560-aegetdescdatarange.md) function to access a specific section of a large block of data.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

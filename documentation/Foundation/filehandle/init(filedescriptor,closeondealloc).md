@@ -25,11 +25,11 @@ init(fileDescriptor fd: Int32, closeOnDealloc closeopt: Bool)
 - (instancetype) initWithFileDescriptor:(int) fd closeOnDealloc:(BOOL) closeopt;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized file handle object.
 
-#### Discussion
+## Discussion
 
 If `flag` is [`false`](../../Swift/false.md), the file descriptor you pass in to this method isn’t owned by the file handle object. In such a case, you’re responsible for closing the file descriptor at some point after disposing of the file handle object. If you want the file handle object to close the descriptor for you automatically, pass [`true`](../../Swift/true.md) for the `flag` parameter.
 

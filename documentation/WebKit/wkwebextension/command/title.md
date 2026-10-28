@@ -23,7 +23,7 @@ var title: String { get }
 @property (nonatomic, copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This title can be displayed in user interface elements such as keyboard shortcuts lists or menu items to help users understand its purpose.
 

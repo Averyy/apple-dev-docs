@@ -22,7 +22,7 @@ var canBeFulfilledWithAdvisoryKey: Bool { get }
 @property (readonly) BOOL canBeFulfilledWithAdvisoryKey;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to true when: 1. Advisory key loading is enabled on the parent AVContentKeySession 2. The key was previously loaded as an advisory key and cached by FairPlay 3. A subsequent request for the same key is made
 

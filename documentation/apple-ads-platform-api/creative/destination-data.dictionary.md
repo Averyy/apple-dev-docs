@@ -15,7 +15,7 @@ Post-tap destination entity defining where users go after tapping the ad.
 object Creative.Destination
 ```
 
-#### Discussion
+## Discussion
 
 Destination is the post-tap experience for the ad creative. The `destinationType` field is immutable after creation, and the system computes the read-only `url` field from `destinationType` and `parameters`.
 

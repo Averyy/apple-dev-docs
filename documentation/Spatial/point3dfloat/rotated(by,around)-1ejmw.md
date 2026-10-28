@@ -23,11 +23,11 @@ func rotated(by quaternion: simd_quatf, around pivot: Point3DFloat) -> Point3DFl
 static SPPoint3DFloat SPPoint3DFloatRotateByQuaternionAroundPoint(SPPoint3DFloat point, simd_quatf quaternion, SPPoint3DFloat pivot);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s rotated by a quaternion around a specified pivot.
 

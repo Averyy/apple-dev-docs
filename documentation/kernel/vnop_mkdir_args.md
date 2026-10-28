@@ -16,7 +16,7 @@ struct vnop_mkdir_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_RENAME() will only be called with a source and target on the same volume.
 

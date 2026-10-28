@@ -9,7 +9,7 @@
 UInt64 _maxBlockNumber;
 ```
 
-#### Overview
+## Overview
 
 The maximum allowable block number for the media, zero-based.
 

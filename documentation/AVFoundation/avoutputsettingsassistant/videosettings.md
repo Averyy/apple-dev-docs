@@ -24,7 +24,7 @@ var videoSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * videoSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may change as a result of setting a new value for the [`sourceVideoFormat`](./sourcevideoformat.md) property. See [Video settings](../video-settings.md) for the supported keys and values.
 

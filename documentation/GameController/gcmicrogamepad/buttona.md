@@ -24,7 +24,7 @@ var buttonA: GCControllerButtonInput { get }
 @property (nonatomic, strong, readonly) GCControllerButtonInput * buttonA;
 ```
 
-#### Discussion
+## Discussion
 
 This button is digital.
 

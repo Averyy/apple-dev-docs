@@ -23,7 +23,7 @@ protocol NSFileProviderPendingSetEnumerator : NSFileProviderEnumerator
 @protocol NSFileProviderPendingSetEnumerator <NSFileProviderEnumerator>
 ```
 
-#### Overview
+## Overview
 
 Items are pending when they’ve changed but the File Provider extension hasn’t yet synced the changes. Examples include local changes that the extension hasn’t uploaded to its remote storage and items that the extension has marked as changed in the working set but hasn’t yet downloaded. The system calls [`pendingItemsDidChange(completionHandler:)`](./nsfileproviderreplicatedextension/pendingitemsdidchange%28completionhandler%29.md) and posts a [`NSFileProviderPendingSetDidChange`](./nsfileproviderpendingsetdidchange.md) notification whenever the set of pending items changes.
 

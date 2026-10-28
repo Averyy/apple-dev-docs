@@ -25,7 +25,7 @@ var voiceSize: Int64 { get set }
 @property (nonatomic, readwrite) int64_t voiceSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to `0`.
 

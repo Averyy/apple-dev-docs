@@ -11,11 +11,11 @@ Gets the IOCommandGate object created by IONetworkController.
 virtual IOCommandGate * getCommandGate() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOCommandGate object created by IONetworkController.
 
-#### Overview
+## Overview
 
 When IONetworkController is started, an IOCommandGate object is instantiated and attached to the workloop returned by getWorkLoop(). This IOCommandGate object is used internally to synchronize client commands handled through executeCommand(). Subclasses that need an IOCommandGate should try to reuse the object returned by this method, rather than creating a new instance. See IOCommandGate documentation.
 

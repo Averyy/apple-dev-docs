@@ -19,11 +19,11 @@ Indicates the presentation anchor within which the system presents the controlle
 func presentationAnchorForPresentmentController(_ presentmentController: any IdentityDocumentPresentmentControlling) -> IdentityDocumentPresentationAnchor?
 ```
 
-#### Return Value
+## Return Value
 
 The presentation anchor the system uses to present UI.
 
-#### Discussion
+## Discussion
 
 Returning `nil` from this method results in an `IdentityDocumentWebPresentmentError/invalidRequest` error when performing an authorization request.
 

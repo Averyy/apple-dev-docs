@@ -24,7 +24,7 @@ func needsLayout() -> Bool
 - (BOOL) needsLayout;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the layer has been marked as requiring a layout update.
 

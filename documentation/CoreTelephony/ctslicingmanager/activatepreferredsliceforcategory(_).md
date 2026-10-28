@@ -17,7 +17,7 @@ Activates a preferred network slice for new connections.
 final func activatePreferredSliceForCategory(_ appCategory: CTSlicingManager.AppCategory) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before establishing network connections to route your app’s traffic through a specific network slice. After calling this method, new network connections that your app establishes use the specified slice category.
 

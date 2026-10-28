@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The ordered set of the values for the retrieved key. The returned ordered set might not have the same number of members as the receiver.
 
-#### Discussion
+## Discussion
 
 The returned ordered set will not contain any elements corresponding to instances of `valueForKey:` returning `nil`, nor will it contain duplicates.
 

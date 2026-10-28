@@ -19,7 +19,7 @@ Attribute mapping for the communications domain.
 struct Communications
 ```
 
-#### Overview
+## Overview
 
 Each field is an optional array of [`SearchableItemAttribute`](../../searchableitemattribute.md) values to query across. `nil` uses the built-in default mapping. Use [`textContent`](../../searchableitemattribute/textcontent.md) to trigger a full-text keyword search across all indexed content.
 

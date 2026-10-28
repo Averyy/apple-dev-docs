@@ -23,7 +23,7 @@ func MIDIThruConnectionCreate(_ inPersistentOwnerID: CFString?, _ inConnectionPa
 extern OSStatus MIDIThruConnectionCreate(CFStringRef inPersistentOwnerID, CFDataRef inConnectionParams, MIDIThruConnectionRef *outConnection);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

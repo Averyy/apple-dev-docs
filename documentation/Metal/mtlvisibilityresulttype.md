@@ -24,7 +24,7 @@ enum MTLVisibilityResultType
 enum MTLVisibilityResultType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can apply a visibility result action to either kind of render command encoder:
 

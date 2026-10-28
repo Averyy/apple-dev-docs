@@ -19,7 +19,7 @@ protocol FxUndoAPI
 @protocol FxUndoAPI
 ```
 
-#### Overview
+## Overview
 
 Note that not all host apps implement this protocol.
 

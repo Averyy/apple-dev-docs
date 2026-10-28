@@ -16,7 +16,7 @@ Returns the raster sample count to use in drawable’s render context.
 int cp_layer_renderer_configuration_get_drawable_render_context_raster_sample_count(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The raster sample count to use for the drawable’s render context.
 

@@ -23,7 +23,7 @@ init()
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 This initializer will abort if the right could not be created. Callers may assert that a valid right is always returned.
 

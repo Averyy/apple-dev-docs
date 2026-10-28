@@ -20,7 +20,7 @@ init(device: any MTLDevice, matteResolution: ARMatteGenerator.Resolution)
 - (instancetype) initWithDevice:(id<MTLDevice>) device matteResolution:(ARMatteResolution) matteResolution;
 ```
 
-#### Discussion
+## Discussion
 
 To create matte textures in real-time, create this object once and reuse it every frame.
 

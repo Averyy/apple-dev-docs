@@ -23,7 +23,7 @@ init(repeating scalar: Int8)
 
 Available when `Scalar` is `Int8`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

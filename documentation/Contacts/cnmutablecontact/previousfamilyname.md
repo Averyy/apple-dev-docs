@@ -32,7 +32,7 @@ var previousFamilyName: String { get set }
 @property (atomic, copy) NSString * previousFamilyName;
 ```
 
-#### Discussion
+## Discussion
 
 The previous family name is often known as the maiden name of the contact.
 

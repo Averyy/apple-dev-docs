@@ -17,11 +17,11 @@ Queries the delegate to determine if the text should begin editing.
 - (BOOL) textShouldBeginEditing:(NSText *) textObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if editing of the text should begin, otherwise [`false`](../../Swift/false.md). Returns [`true`](../../Swift/true.md) if the delegate does not implement [`control(_:textShouldBeginEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldbeginediting%29.md).
 
-#### Discussion
+## Discussion
 
 See the [`NSText`](../nstext.md) class specification for more information on this text delegate method.
 

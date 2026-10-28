@@ -27,7 +27,7 @@ optional func application(_ application: UIApplication, didReceiveRemoteNotifica
 - (void) application:(UIApplication *) application didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to process incoming remote notifications for your app. Unlike the [`application(_:didReceiveRemoteNotification:)`](./application%28_,didreceiveremotenotification%29.md) method, which is called only when your app is running in the foreground, the system calls this method when your app is running in the foreground or background. In addition, if you enabled the remote notifications background mode, the system launches your app (or wakes it from the suspended state) and puts it in the background state when a remote notification arrives. However, the system does not automatically launch your app if the user has force-quit it. In that situation, the user must relaunch your app or restart the device before the system attempts to launch your app automatically again.
 

@@ -25,7 +25,7 @@ enum CGInterpolationQuality
 enum CGInterpolationQuality : int32_t;
 ```
 
-#### Overview
+## Overview
 
 You use the function [`CGContextSetInterpolationQuality`](./cgcontextsetinterpolationquality.md) to set the interpolation quality in a graphics context.
 

@@ -24,7 +24,7 @@ var isAvailable: Bool { get set }
 @property (getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 When [`isAvailable`](./isavailable.md) is [`true`](../../Swift/true.md), the session is visible to other peers based on its [`sessionMode`](./sessionmode.md) property. When [`isAvailable`](./isavailable.md) is set to [`false`](../../Swift/false.md), it remains connected to peers, but is no longer visible to nonconnected peers. The default is [`false`](../../Swift/false.md).
 

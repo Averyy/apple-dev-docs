@@ -21,7 +21,7 @@ nonisolated
 func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping @Sendable (D) async -> R) -> some WidgetConfiguration where D : Sendable, R : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system will put your app back into a suspended state. In Widget Extensions, this modifier can be used to handle URL Session background tasks with [`urlSession`](../backgroundtask/urlsession.md).
 

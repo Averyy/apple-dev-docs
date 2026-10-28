@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_DVD_19: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_DVD_19
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

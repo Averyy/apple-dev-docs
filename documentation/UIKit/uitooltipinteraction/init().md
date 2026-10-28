@@ -22,7 +22,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A tooltip interaction object.
 

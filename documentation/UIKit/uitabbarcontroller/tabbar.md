@@ -23,7 +23,7 @@ var tabBar: UITabBar { get }
 @property (nonatomic, readonly) UITabBar * tabBar;
 ```
 
-#### Discussion
+## Discussion
 
 You should never attempt to manipulate the [`UITabBar`](../uitabbar.md) object itself stored in this property. If you attempt to do so, the tab bar view throws an exception. To configure the items for your tab bar interface, you should instead assign one or more custom view controllers to the [`viewControllers`](./viewcontrollers.md) property. The tab bar collects the needed tab bar items from the view controllers you specify.
 

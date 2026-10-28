@@ -23,7 +23,7 @@ var attenuationDurationThresholds: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * attenuationDurationThresholds;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 

@@ -23,7 +23,7 @@ var ssidPrefix: String { get }
 @property (readonly) NSString * SSIDPrefix;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only populated for configuration instances initialized with SSID prefix strings. The property is an empty string if the configuration instance has a full [`ssid`](./ssid.md).
 

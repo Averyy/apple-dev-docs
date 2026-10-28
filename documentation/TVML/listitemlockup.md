@@ -4,7 +4,7 @@
 
 Contains a new list item.
 
-#### Overview
+## Overview
 
 The `listItemLockup` subelements are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default.
 
@@ -27,7 +27,7 @@ Elements contained in the same position are arranged from the top of the cell to
 </section>
 ```
 
-##### Subelements of listItemLockup
+### Subelements of listItemLockup
 
 - [decorationImage](./decorationimage.md)
 - [decorationLabel](./decorationlabel.md)
@@ -40,7 +40,7 @@ Elements contained in the same position are arranged from the top of the cell to
 - [subtitle](./subtitle.md)
 - [title](./title.md)
 
-##### Elements that Use listItemLockup
+### Elements that Use listItemLockup
 
 - [section](./section.md)
 

@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrAccessible;
 
 - [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value, one of those found in [Accessibility Values](./item-attribute-keys-and-values.md#Accessibility-Values), indicates when your app needs access to the data in a keychain item. Choose the most restrictive option that meets your app’s needs so that the system can protect that item to the greatest extent possible. For more information, see [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md).
 

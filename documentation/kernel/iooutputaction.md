@@ -13,7 +13,7 @@
 typedef UInt32 (OSObject::*)(mbuf_t, void *) IOOutputAction;
 ```
 
-#### Discussion
+## Discussion
 
 Prototype for an output packet handler that will process all outbound packets sent to the interface from the data link layer. An output handler is registered with the interface by calling registerOutputHandler().
 

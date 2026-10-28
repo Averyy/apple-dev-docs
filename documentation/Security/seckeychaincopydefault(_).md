@@ -21,7 +21,7 @@ func SecKeychainCopyDefault(_ keychain: UnsafeMutablePointer<SecKeychain?>) -> O
 OSStatus SecKeychainCopyDefault(SecKeychainRef*keychain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecNoDefaultKeychain`](./errsecnodefaultkeychain.md) indicates that there is no default keychain.
 

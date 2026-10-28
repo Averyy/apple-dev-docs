@@ -15,7 +15,7 @@ A single step of the route between the requested start and end points.
 class RouteStep
 ```
 
-#### Overview
+## Overview
 
 A [`RouteStep`](./routestep.md) encapsulates information for an individual segment of a route. A [`Route`](./route.md) object’s [`steps`](./route/steps.md) property is an array of [`RouteStep`](./routestep.md) objects. You don’t instantiate [`RouteStep`](./routestep.md) objects directly; MapKit JS returns them as part of the [`DirectionsResponse`](./directionsresponse.md).
 

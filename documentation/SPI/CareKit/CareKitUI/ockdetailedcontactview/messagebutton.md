@@ -18,7 +18,7 @@ A button with a messages image and title label.
 let messageButton: OCKContactButton
 ```
 
-#### Discussion
+## Discussion
 
 Set the `isHidden` property to `false` to hide the button.
 

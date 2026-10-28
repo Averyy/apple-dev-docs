@@ -23,7 +23,7 @@ var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)? { g
 @property (nonatomic, readonly, nullable) id<UIPopoverPresentationControllerSourceItem> presentationSourceItem;
 ```
 
-#### Discussion
+## Discussion
 
 The system populates this property during the execution of the menu element’s action (its handler or selector). For example, for a menu element in a menu that presents from a [`UIButton`](../uibutton.md), the system may populate this property with that button.
 

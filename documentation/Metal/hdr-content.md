@@ -4,7 +4,7 @@
 
 Take advantage of high dynamic range to present more vibrant colors in your apps and games.
 
-#### Overview
+## Overview
 
 High dynamic range (HDR) content has a wider range of brightness levels than standard definition content. Certain displays, which macOS refers to as extended dynamic range (EDR) displays, can physically replicate those extra brightness values on a screen. You can use Metal to detect EDR displays and work with HDR content, such as from a video asset or directly from your app.
 

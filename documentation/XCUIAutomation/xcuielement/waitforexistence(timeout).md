@@ -26,7 +26,7 @@ func waitForExistence(timeout: TimeInterval) -> Bool
 - (BOOL) waitForExistenceWithTimeout:(NSTimeInterval) timeout;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`false`](../../Swift/false.md) if the timeout expires while the element’s [`exists`](./exists.md) property equals [`false`](../../Swift/false.md).
 

@@ -23,7 +23,7 @@ func hover()
 - (void) hover;
 ```
 
-#### Discussion
+## Discussion
 
 If the element exists within a scrollable view but is offscreen, XCTest attempts to scroll the element onscreen before moving the cursor over the element.
 

@@ -20,17 +20,17 @@ func LSCopyDefaultRoleHandlerForContentType(_ inContentType: CFString, _ inRole:
 CFStringRef LSCopyDefaultRoleHandlerForContentType(CFStringRef inContentType, LSRolesMask inRole);
 ```
 
-#### Return Value
+## Return Value
 
 The bundle identifier of the default handler for the specified content type in the specified roles, or `NULL` if no handler is available.
 
-#### Discussion
+## Discussion
 
 This function returns the user’s currently preferred default handler for the specified content type. Say, for example, that [`LSSetDefaultRoleHandlerForContentType(_:_:_:)`](./api-1444955-lssetdefaultrolehandlerforconten.md) has been used to set “com.Apple.TextEdit” for the “public.xml” content type. When a file whose content type is “public.xml” is double-clicked, TextEdit will be launched to open the file. If you call `LSCopyDefaultRoleHandlerForContentType(CFSTR(“public.xml”), kLSRolesAll)`, the string `com.apple.TextEdit` is returned.
 
 The [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md) key in an app’s `Info.plist` can be used to set an app’s content handling capabilities. The `LSItemContentTypes` key is particularly useful because it supports the use of UTIs in document claims.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

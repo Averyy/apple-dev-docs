@@ -16,7 +16,7 @@ get the flags of listener.
 UInt32 (*GetFlags)(IOFireWireLibPHYPacketListenerRef self);
 ```
 
-#### Return Value
+## Return Value
 
 flags No current flags are defined.
 

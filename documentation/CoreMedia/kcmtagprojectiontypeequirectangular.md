@@ -21,7 +21,7 @@ A value for projection tags indicating that display is on a 360 degree equirecta
 extern const CMTag kCMTagProjectionTypeEquirectangular;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_ProjectionType`](./cmtagcategory/kcmtagcategory_projectiontype.md) category. The video frames map onto the interior of a 3D sphere projection.
 

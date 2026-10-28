@@ -15,7 +15,7 @@ A Boolean control where true means that the signal for the element has exceeded 
 ClipLightControl
 ```
 
-#### Discussion
+## Discussion
 
 Once a clip light is turned on, it is to stay on until either the value of the control is set to false or the current IO session stops and a new IO session starts.
 

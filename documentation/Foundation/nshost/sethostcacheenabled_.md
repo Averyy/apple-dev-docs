@@ -17,7 +17,7 @@ Specifies whether the receiver is to cache instances as it creates them to avoid
 + (void) setHostCacheEnabled:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t flush the cache. If you turn caching off and then back on, new requests for hosts use what was in the cache at the time caching was turned off. However, `NSHost` objects created while caching is turned off aren’t entered into the cache.
 

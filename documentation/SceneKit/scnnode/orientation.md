@@ -25,7 +25,7 @@ var orientation: SCNQuaternion { get set }
 @property (nonatomic) SCNQuaternion orientation;
 ```
 
-#### Discussion
+## Discussion
 
 The [`rotation`](./rotation.md), [`eulerAngles`](./eulerangles.md), and [`orientation`](./orientation.md) properties all affect the rotational aspect of the node’s [`transform`](./transform.md) property. Any change to one of these properties is reflected in the others.
 

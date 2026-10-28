@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, dragSourceActionMaskFor point: NSPoin
 - (NSUInteger) webView:(WebView *) webView dragSourceActionMaskForPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A mask indicating which drag-source actions are allowed. (Note that the return value changed from an `unsigned int` to an `NSUInteger` in OS X v10.5.) See [`WebDragSourceAction`](../webdragsourceaction.md) for a list of return values.
 
-#### Discussion
+## Discussion
 
 This method is called after the user has begun a drag from a point in a web view. This method can be invoked multiple times while content is dragged from the sending web view. When the content is dropped, the sender sends [`webView(_:willPerform:from:with:)`](./webview%28_,willperform,from,with%29.md) to the receiver.
 

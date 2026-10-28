@@ -20,7 +20,7 @@ The attachment for the text.
 extern NSAttributedStringKey const NSAttachmentAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSTextAttachment`](./nstextattachment.md) object. The default value of this property is `nil`, indicating no attachment.
 

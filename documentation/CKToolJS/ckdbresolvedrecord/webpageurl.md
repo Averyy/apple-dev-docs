@@ -15,7 +15,7 @@ The fallback URL that you can redirect users to if the operation fails.
 attribute string? webpageUrl;
 ```
 
-#### Discussion
+## Discussion
 
 An operation might fail, if a resolve/accept endpoint doesn’t succeed. If that happens, this value would be the URL that you could redirect users to. You can set the fallback URL using CloudKit Dashboard.
 

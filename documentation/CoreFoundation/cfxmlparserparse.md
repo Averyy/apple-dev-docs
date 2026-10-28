@@ -15,11 +15,11 @@ Begins a parse of the XML data that was associated with the parser when it was c
 extern Boolean CFXMLParserParse(CFXMLParserRef parser);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the parse was successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Upon success, use the [`CFXMLParserGetDocument`](./cfxmlparsergetdocument.md) function to get the product of the parse. Upon failure, use the [`CFXMLParserGetContext`](./cfxmlparsergetcontext.md) or [`CFXMLParserCopyErrorDescription`](./cfxmlparsercopyerrordescription.md) functions to get information about the error. It is an error to call the [`CFXMLParserParse`](./cfxmlparserparse.md) function while a parse is already underway.
 

@@ -25,7 +25,7 @@ func disableUndoRegistration()
 - (void) disableUndoRegistration;
 ```
 
-#### Discussion
+## Discussion
 
 This method disables undos recorded by [`registerUndo(withTarget:selector:object:)`](./registerundo%28withtarget,selector,object%29.md) or invocation-based undo.
 

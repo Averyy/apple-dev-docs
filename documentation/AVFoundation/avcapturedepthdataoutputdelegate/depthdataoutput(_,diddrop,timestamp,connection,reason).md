@@ -22,7 +22,7 @@ optional func depthDataOutput(_ output: AVCaptureDepthDataOutput, didDrop depthD
 - (void) depthDataOutput:(AVCaptureDepthDataOutput *) output didDropDepthData:(AVDepthData *) depthData timestamp:(CMTime) timestamp connection:(AVCaptureConnection *) connection reason:(AVCaptureOutputDataDroppedReason) reason;
 ```
 
-#### Discussion
+## Discussion
 
 The capture output calls this method once for each incident of dropped depth data. The object in the `depthData` parameter is an empty shell, and doesn’t contain a depth data backing pixel buffer.
 

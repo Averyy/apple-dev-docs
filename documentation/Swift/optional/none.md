@@ -21,7 +21,7 @@ The absence of a value.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 In code, the absence of a value is typically written using the `nil` literal rather than the explicit `.none` enumeration case.
 

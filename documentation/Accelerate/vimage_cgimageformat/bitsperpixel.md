@@ -25,7 +25,7 @@ var bitsPerPixel: UInt32
 uint32_t bitsPerPixel;
 ```
 
-#### Discussion
+## Discussion
 
 For ARGB8888, this is 32.
 

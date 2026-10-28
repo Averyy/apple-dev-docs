@@ -15,11 +15,11 @@ Creates a new universal procedure pointer (UPP) to a Unicode-to-textfallback cal
 UnicodeToTextFallbackUPP NewUnicodeToTextFallbackUPP(UnicodeToTextFallbackProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 On return, a UPP tothe Unicode-to-text fallback callback.
 
-#### Discussion
+## Discussion
 
 See the callback [`UnicodeToTextFallbackProcPtr`](./unicodetotextfallbackprocptr.md) formore information.
 

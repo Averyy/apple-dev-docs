@@ -15,7 +15,7 @@ Unlock a spin lock, and restore interrupt state.
 void IOSimpleLockUnlockEnableInterrupt(IOSimpleLock *lock, IOInterruptState state);
 ```
 
-#### Discussion
+## Discussion
 
 Unlock the lock, and restore preemption and interrupts to the state as they were when the lock was taken. Results are undefined if the caller has not locked the lock.
 

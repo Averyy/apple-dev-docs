@@ -23,11 +23,11 @@ func withUnsafeBufferPointer<R>(_ body: (UnsafeBufferPointer<Format.ComponentTyp
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code uses Accelerate’s [vForce](../../vforce-library.md) library to raise each pixel value to the power of `1 / 2.2`:
 

@@ -19,7 +19,7 @@ case extraLarge
 CLKComplicationFamilyExtraLarge
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the extra-large complication.
 

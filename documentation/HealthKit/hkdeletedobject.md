@@ -28,7 +28,7 @@ class HKDeletedObject
 
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 
-#### Overview
+## Overview
 
 Use [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md) queries to generate a list of recently deleted objects. Create a query using the [`init(type:predicate:anchor:limit:resultsHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md)method. When the system calls the result handler, it passes the `deletedObject` parameter an array of [`HKDeletedObject`](./hkdeletedobject.md) instances matching the query.
 

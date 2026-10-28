@@ -24,7 +24,7 @@ class func predicateForContacts(matchingEmailAddress emailAddress: String) -> NS
 + (NSPredicate *) predicateForContactsMatchingEmailAddress:(NSString *) emailAddress;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that you can use to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 

@@ -21,7 +21,7 @@ A human-readable JSON representation.
 case json
 ```
 
-#### Discussion
+## Discussion
 
 The output is pretty-printed with sorted keys, to produce stable output files.
 

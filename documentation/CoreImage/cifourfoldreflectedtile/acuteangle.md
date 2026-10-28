@@ -25,7 +25,7 @@ var acuteAngle: Float { get set }
 @property (nonatomic) float acuteAngle;
 ```
 
-#### Discussion
+## Discussion
 
 Small values create thin diamond tiles, and higher values create fatter reflected tiles.
 

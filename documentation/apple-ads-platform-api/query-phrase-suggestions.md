@@ -9,7 +9,7 @@ Query phrase suggestions using either a discovery or search route based on the q
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Each result is a [`PhraseSuggestion`](./phrasesuggestion.md) object. Sort by `popularity DESC` and use `pagination` to page through results.
 
@@ -17,7 +17,7 @@ Use `SUGGESTION` to discover new candidate phrases for an app or brand. It requi
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -26,13 +26,13 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | `promotedObjectType` | string (enum) | `EQUALS` | Required for the `SUGGESTION` route. `APPSTORE_APP` or `BUSINESS_BRAND`. |
 | `phrase` | string | `IN`, `LIKE` | Required for the `SEARCH` route. `IN` fetches popularity for specific phrases. `LIKE` performs a string match search. |
 
-#### Payload Examples
+## Payload Examples
 
 These examples discover relevant search phrases for an app or brand using the SUGGESTION route, and look up or search specific phrases using the SEARCH route.
 
 **Discover Phrases for an App**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/phrases/query
@@ -64,7 +64,7 @@ POST /v1/suggestions/phrases/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -92,7 +92,7 @@ POST /v1/suggestions/phrases/query
 
 **Discover Phrases for Maps**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/phrases/query
@@ -124,7 +124,7 @@ POST /v1/suggestions/phrases/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -154,7 +154,7 @@ POST /v1/suggestions/phrases/query
 
 This example uses `IN` to fetch popularity for specific known phrases, using the SEARCH route.
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/phrases/query
@@ -180,7 +180,7 @@ POST /v1/suggestions/phrases/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -206,7 +206,7 @@ POST /v1/suggestions/phrases/query
 
 This example uses `LIKE` to perform a partial string match search across all available phrases, rather than looking up specific phrases with `IN`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/phrases/query
@@ -231,7 +231,7 @@ POST /v1/suggestions/phrases/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

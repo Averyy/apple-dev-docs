@@ -20,7 +20,7 @@ Updates the stage to `timeCode` and returns a [`USDPlayer.FrameUpdate`](./frameu
 final func update(timeCode: USDStage.TimeCode) -> sending USDPlayer.FrameUpdate?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if nothing changed.
 

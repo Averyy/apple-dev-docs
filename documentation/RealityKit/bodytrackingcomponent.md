@@ -17,7 +17,7 @@ A component for tracking people in an AR session.
 struct BodyTrackingComponent
 ```
 
-#### Overview
+## Overview
 
 Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [Rigging a Model for Motion Capture](../ARKit/rigging-a-model-for-motion-capture.md).
 

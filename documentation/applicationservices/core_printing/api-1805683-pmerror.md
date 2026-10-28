@@ -13,11 +13,11 @@ Obtains the result code from the last printing function called by your applicati
 OSStatus PMError ();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. The result code `kPMCancel` indicates the user canceled the current print job.
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin`.
 

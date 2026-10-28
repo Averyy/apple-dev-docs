@@ -19,7 +19,7 @@ protocol NSAccessibilityNavigableStaticText : NSAccessibilityStaticText
 @protocol NSAccessibilityNavigableStaticText <NSAccessibilityStaticText>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want to represent larger blocks of text. The protocol allows users to navigate through the text a line at a time or a word at a time using an assistive app. For shorter pieces of text (for example, labels or headers), use the [`NSAccessibilityStaticText`](./nsaccessibilitystatictext.md) protocol instead.
 

@@ -22,7 +22,7 @@ Returns a binding to the resulting value of a given key path.
 @preconcurrency subscript<Subject>(dynamicMember keyPath: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new binding.
 

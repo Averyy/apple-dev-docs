@@ -21,11 +21,11 @@ Provides the relative ordering of two elements.
 func compare(_ lhs: Compared, _ rhs: Compared) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 The relative ordering between the two elements.
 
-#### Discussion
+## Discussion
 
 The method returns flipped comparisons if the sort order is [`SortOrder.reverse`](../sortorder/reverse.md).
 

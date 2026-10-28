@@ -22,7 +22,7 @@ Tells the undo manager to record any changes made to the context’s registered 
 func processPendingChanges()
 ```
 
-#### Discussion
+## Discussion
 
 In AppKit-based applications, the system invokes this method at the end of each event loop. The framework may call it more frequently if it needs to coalesce your changes before continuing. You can also invoke it manually to coalesce any pending changes.
 

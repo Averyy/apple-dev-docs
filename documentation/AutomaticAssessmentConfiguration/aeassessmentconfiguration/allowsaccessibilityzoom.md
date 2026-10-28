@@ -20,7 +20,7 @@ var allowsAccessibilityZoom: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityZoom;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable Zoom in the Settings app (Accessibility > Zoom) to magnify the screen. An assessment session **does not** disable Zoom by default, but you can disable it by setting [`allowsAccessibilityZoom`](./allowsaccessibilityzoom.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 List the available executables from this package.
 
-#### Overview
+## Overview
 
 ```
 package show-executables [--package-path=<package-path>]

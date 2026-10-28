@@ -15,7 +15,7 @@ Initializes an instance of a stereo pan control.
 virtual bool init(IOUserAudioDriver *in_driver, bool in_is_settable, float in_control_value, IOUserAudioObjectPropertyElement in_left_channel, IOUserAudioObjectPropertyElement in_right_channel, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization succeeded; `false` otherwise.
 

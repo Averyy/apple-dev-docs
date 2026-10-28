@@ -22,7 +22,7 @@ The region of the image where the framework performs the request.
 var regionOfInterest: NormalizedRect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system normalizes the rectangle to the dimensions of the processed image. Its origin is the image’s lower-left corner.
 

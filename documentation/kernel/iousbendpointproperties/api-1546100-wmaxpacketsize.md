@@ -15,7 +15,7 @@ The maximum packet size.
 UInt16 wMaxPacketSize;
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of this value depends on whether [`GetPipePropertiesV3`](../../iokit/iousbinterfaceinterface942/api-2977226-getpipepropertiesv3.md) or [`GetEndpointPropertiesV3`](../../iokit/iousbinterfaceinterface942/api-2977212-getendpointpropertiesv3.md) uses it.
 

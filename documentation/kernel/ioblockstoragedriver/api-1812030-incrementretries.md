@@ -10,7 +10,7 @@ virtual void incrementRetries(
  boolisWrite);
 ```
 
-#### Overview
+## Overview
 
 Update the total retry count -- used for statistics.
 

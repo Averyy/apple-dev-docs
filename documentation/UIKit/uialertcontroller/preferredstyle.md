@@ -23,7 +23,7 @@ var preferredStyle: UIAlertController.Style { get }
 @property (nonatomic, readonly) UIAlertControllerStyle preferredStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set to the value you specified in the [`init(title:message:preferredStyle:)`](./init%28title,message,preferredstyle%29.md) method. This value determines how the alert is displayed onscreen.
 

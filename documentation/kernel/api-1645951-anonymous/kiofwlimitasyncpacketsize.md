@@ -13,7 +13,7 @@
 kIOFWLimitAsyncPacketSize = (1 << 3)
 ```
 
-#### Discussion
+## Discussion
 
 Limit async packet size
 

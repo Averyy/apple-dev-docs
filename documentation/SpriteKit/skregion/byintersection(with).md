@@ -25,7 +25,7 @@ func byIntersection(with region: SKRegion) -> Self
 - (instancetype) regionByIntersectionWithRegion:(SKRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region whose contents include all points that are included in both regions.
 

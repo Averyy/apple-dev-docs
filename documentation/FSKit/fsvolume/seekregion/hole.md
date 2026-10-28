@@ -19,7 +19,7 @@ case hole
 FSSeekRegionHole
 ```
 
-#### Discussion
+## Discussion
 
 When there are no more hole regions past the supplied `offset`, the current file size (end-of-file offset) should be returned.
 

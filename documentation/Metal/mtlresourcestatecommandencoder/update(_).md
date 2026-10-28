@@ -32,7 +32,7 @@ optional func update(_ fence: any MTLFence)
 - (void) updateFence:(id<MTLFence>) fence;
 ```
 
-#### Discussion
+## Discussion
 
 Fences maintain order to prevent GPU data hazards as the GPU runs various passes within the same command queue. This encoded command notifies any passes waiting for `fence`.
 

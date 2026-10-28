@@ -14,7 +14,7 @@ struct simd_quath
 typedef struct { ... } simd_quath;
 ```
 
-#### Overview
+## Overview
 
 A half-precision quaternion.
 

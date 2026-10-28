@@ -15,7 +15,7 @@ Constants for the reset timeout values on USB 3.0 devices.
 enum tIOUSB30ResetTimeout : unsigned int;
 ```
 
-#### Discussion
+## Discussion
 
 For information about these constants, see Table 6-21 of the USB 3.0 specification at [http://www.usb.org](http://www.usb.org).
 

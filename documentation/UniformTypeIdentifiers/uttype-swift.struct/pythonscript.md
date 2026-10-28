@@ -21,7 +21,7 @@ A type that represents a Python script.
 static var pythonScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.python-script`.
 

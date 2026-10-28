@@ -21,11 +21,11 @@ Interleaves three 8-bit planar buffers into an 8-bit-per-channel, 4-channel inte
 #define vImageConvert_Planar8ToRGBX8888(_red, _green, _blue, _alpha, _dest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The source and destination buffers need to have the same height and width.
 

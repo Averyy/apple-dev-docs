@@ -20,11 +20,11 @@ typealias DADiskClaimReleaseCallback = (DADisk, UnsafeMutableRawPointer?) -> Unm
 typedef const struct __DADissenter *(*)(struct __DADisk *, void *) DADiskClaimReleaseCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A dissenter reference. Pass NULL to release claim.
 
-#### Discussion
+## Discussion
 
 The caller of this callback receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it with CFRelease().
 

@@ -18,11 +18,11 @@ Synchronously loads a body-tracked entity from a file URL.
 @preconcurrency static func loadBodyTracked(contentsOf url: URL, withName resourceName: String? = nil) throws -> BodyTrackedEntity
 ```
 
-#### Return Value
+## Return Value
 
 The root entity in the loaded file, cast as a [`BodyTrackedEntity`](../bodytrackedentity.md).
 
-#### Discussion
+## Discussion
 
 Loading an [`Entity`](../entity.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](./init%28named,in%29.md) for an example that demonstrates how to safely load content.
 

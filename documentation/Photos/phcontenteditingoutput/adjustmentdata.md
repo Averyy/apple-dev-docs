@@ -24,7 +24,7 @@ var adjustmentData: PHAdjustmentData? { get set }
 @property (strong, readwrite, nullable) PHAdjustmentData * adjustmentData;
 ```
 
-#### Discussion
+## Discussion
 
 You use adjustment data to describe the “recipe” for an edit that later edits can make use of. For example, a photo editing app can use this property to save information about the filters applied to a photo. Later, the same app (or another app that understands its adjustment data format) can load the filter information, change the filter parameters, and reapply the filters to the original photo.
 

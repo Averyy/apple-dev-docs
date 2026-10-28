@@ -15,7 +15,7 @@ Types for HID reports.
 enum HIDReportType
 ```
 
-#### Overview
+## Overview
 
 For more details, see [Human Interface Devices (HID) Specifications and Tools](https://www.usb.org/hid).
 

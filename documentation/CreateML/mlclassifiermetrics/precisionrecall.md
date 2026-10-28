@@ -24,7 +24,7 @@ var precisionRecall: MLDataTable { get }
 
 - [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
-#### Discussion
+## Discussion
 
 Precision and recall are metrics calculated for each class. Together they describe the tradeoff between misapplying a label too liberally and missing examples of that label.
 

@@ -25,7 +25,7 @@ func loadMetadata() throws
 - (BOOL) loadMetadata:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, you must validate that the URL used to create the store is usable (the location exists and if necessary is writable, the schema is compatible, and so on) and return an error if there is an issue.
 

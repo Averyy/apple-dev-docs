@@ -24,7 +24,7 @@ var endProgress: Float { get set }
 @property float endProgress;
 ```
 
-#### Discussion
+## Discussion
 
 The value must be greater than or equal to [`startProgress`](./startprogress.md), and not greater than 1.0.  If `endProgress` is less than [`startProgress`](./startprogress.md) the behavior is undefined. The default value is 1.0.
 

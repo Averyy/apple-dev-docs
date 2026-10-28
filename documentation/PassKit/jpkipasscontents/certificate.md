@@ -16,7 +16,7 @@ The certificate data associated with an identity document.
 struct Certificate<IdentityType> where IdentityType : JPKIPassContents.Identity
 ```
 
-#### Overview
+## Overview
 
 Use this structure to access the underlying certificate data you use to sign the pass.
 

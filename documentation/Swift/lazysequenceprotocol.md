@@ -21,7 +21,7 @@ A sequence on which normally-eager sequence operations are implemented lazily.
 protocol LazySequenceProtocol : Sequence
 ```
 
-#### Overview
+## Overview
 
 Lazy sequences can be used to avoid needless storage allocation and computation, because they use an underlying sequence for storage and compute their elements on demand. For example, `doubled` in this code sample is a sequence containing the values `2`, `4`, and `6`.
 
@@ -33,7 +33,7 @@ Each time an element of the lazy sequence `doubled` is accessed, the closure acc
 
 Sequence operations that take closure arguments, such as `map(_:)` and `filter(_:)`, are normally eager: They use the closure immediately and return a new array. When you use the `lazy` property, you give the standard library explicit permission to store the closure and the sequence in the result, and defer computation until it is needed.
 
-#### Adding New Lazy Operations
+## Adding New Lazy Operations
 
 To add a new lazy sequence operation, extend this protocol with a method that returns a lazy wrapper that itself conforms to `LazySequenceProtocol`.  For example, an eager `scan(_:_:)` method is defined as follows:
 

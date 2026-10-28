@@ -21,7 +21,7 @@ A block buffer that provides read-only access to the a range of bytes.
 struct CMReadOnlyDataBlockBuffer
 ```
 
-#### Overview
+## Overview
 
 Block buffer provides a contiguous range of data offsets (from 0 to [`count`](./cmreadonlydatablockbuffer/count.md)) across a possibly non-contiguous range of bytes. The byte range may contain memory blocks and buffer references. The bytes held by this buffer can not be modified. However, the composition of the byte range can be changed by appending other memory blocks or buffer references.
 

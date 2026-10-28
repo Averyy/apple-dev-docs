@@ -23,7 +23,7 @@ func captureTextFromCamera(_ sender: Any?)
 - (void) captureTextFromCamera:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To receive callbacks from the data scanner, the responder should conform to either the [`UIKeyInput`](../uikeyinput.md) or [`UITextInput`](../uitextinput.md) protocol. If it conforms to [`UIKeyInput`](../uikeyinput.md), the scanner calls the [`insertText:`](../../AppKit/nstextinput/inserttext_.md) protocol method. If it conforms to [`UITextInput`](../uitextinput.md), the scanner calls the [`setMarkedText(_:selectedRange:)`](../uitextinput/setmarkedtext%28_,selectedrange%29.md) and [`unmarkText()`](../uitextinput/unmarktext%28%29.md) protocol methods.
 

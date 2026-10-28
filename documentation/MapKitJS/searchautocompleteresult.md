@@ -15,7 +15,7 @@ The result of an autocomplete query, including display lines and a coordinate.
 class SearchAutocompleteResult
 ```
 
-#### Overview
+## Overview
 
 You can use search and search autocomplete in sequence by passing a [`SearchAutocompleteResult`](./searchautocompleteresult.md) object as the query parameter of a search. For example, you can present the display strings of a collection of search autocomplete results to the user while maintaining a mapping to the original [`SearchAutocompleteResult`](./searchautocompleteresult.md) object. When the user selects a result, make a search request with the corresponding [`SearchAutocompleteResult`](./searchautocompleteresult.md) object to retrieve more information about the place.
 

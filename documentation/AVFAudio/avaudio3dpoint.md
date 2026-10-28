@@ -25,7 +25,7 @@ struct AVAudio3DPoint
 struct AVAudio3DPoint;
 ```
 
-#### Overview
+## Overview
 
 Classes that deal with 3D audio, such as those adopting [`AVAudioMixing`](./avaudiomixing.md) and [`AVAudioEnvironmentNode`](./avaudioenvironmentnode.md), use this structure. The system represents this point in meters.
 

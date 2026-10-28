@@ -25,7 +25,7 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Complex_Float, _ x: DenseVector_Complex
 static void SparseMultiplyAdd(SparseMatrix_Complex_Float A, DenseVector_Complex_Float x, DenseVector_Complex_Float y);
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter `A`: (input) sparse matrix.
 - Parameter `x`: (input) dense vector.

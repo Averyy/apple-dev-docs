@@ -19,7 +19,7 @@ func smartMagnify(with event: NSEvent)
 - (void) smartMagnifyWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The smart zoom gesture is a two-finger double tap on trackpads. In response to this event, you should intelligently magnify the content.
 

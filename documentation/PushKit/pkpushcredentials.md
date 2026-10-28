@@ -28,7 +28,7 @@ class PKPushCredentials
 
 - [Supporting PushKit Notifications in Your App](./supporting-pushkit-notifications-in-your-app.md)
 
-#### Overview
+## Overview
 
 When registering your app’s push types, PushKit creates a `PKPushCredentials` object for each type your app supports and delivers it to your delegate’s [`pushRegistry(_:didUpdate:for:)`](./pkpushregistrydelegate/pushregistry%28_,didupdate,for%29.md) method. Don’t create `PKPushCredentials` objects yourself.
 

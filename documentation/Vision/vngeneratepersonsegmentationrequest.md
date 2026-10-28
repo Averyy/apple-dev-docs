@@ -24,7 +24,7 @@ class VNGeneratePersonSegmentationRequest
 @interface VNGeneratePersonSegmentationRequest : VNStatefulRequest
 ```
 
-#### Overview
+## Overview
 
 Perform this request to detect and generate an image mask for a person in an image. The request returns the resulting image mask in an instance of [`VNPixelBufferObservation`](./vnpixelbufferobservation.md).
 

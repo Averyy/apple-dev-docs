@@ -20,7 +20,7 @@ func es_sync_client(_ client: OpaquePointer, _ block: @escaping () -> Void) -> e
 extern es_return_t es_sync_client(es_client_t *client, void (^block)());
 ```
 
-#### Discussion
+## Discussion
 
 Place a sync marker at the back of the message queue for `client`, run `block` when it reaches the front of the queue.
 

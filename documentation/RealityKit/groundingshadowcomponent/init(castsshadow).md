@@ -20,7 +20,7 @@ Creates a grounding shadow component.
 init(castsShadow: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the component makes an entity receive grounding shadows from other model entities in the scene.
 

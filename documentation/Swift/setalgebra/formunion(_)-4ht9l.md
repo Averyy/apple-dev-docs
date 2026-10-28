@@ -23,7 +23,7 @@ mutating func formUnion(_ other: Self)
 
 Available when `RawValue` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 This method is implemented as a `|` (bitwise OR) operation on the two sets’ raw values.
 

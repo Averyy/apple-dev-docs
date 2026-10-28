@@ -22,7 +22,7 @@ nonisolated
 func presentationPlacement(_ placement: PresentationPlacement) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, a presentation uses [`automatic`](../presentationplacement/automatic.md) placement. Use this modifier to place it on the leading or trailing edge. For example, to maximize the visibility of the primary content behind a presented sheet:
 

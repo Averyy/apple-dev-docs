@@ -21,7 +21,7 @@ A Boolean value that indicates whether the view associated with this environment
 var isPresented: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can read this value like any of the other [`EnvironmentValues`](../environmentvalues.md) by creating a property with the [`Environment`](../environment.md) property wrapper:
 

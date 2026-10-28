@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Coder.Output
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses the encoder’s output type.
 

@@ -21,7 +21,7 @@ A task could not parse a response.
 static var cannotParseResponse: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

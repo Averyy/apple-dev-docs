@@ -24,7 +24,7 @@ var mediaType: PHAssetMediaType { get }
 @property (assign, readonly) PHAssetMediaType mediaType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PHAssetMediaType`](../phassetmediatype.md) for possible values.
 

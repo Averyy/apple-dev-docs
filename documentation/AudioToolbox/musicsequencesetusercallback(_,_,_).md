@@ -24,11 +24,11 @@ func MusicSequenceSetUserCallback(_ inSequence: MusicSequence, _ inCallback: Mus
 extern OSStatus MusicSequenceSetUserCallback(MusicSequence inSequence, MusicSequenceUserCallback inCallback, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The music sequence invokes your callback for each user event added to any music track owned by the sequence. If there is a callback registered, then UserEvents will be chased when MusicPlayerSetTime is called. In that case the inStartSliceBeat and inEndSliceBeat will both be the same value and will be the beat that the player is chasing to.
 

@@ -29,7 +29,7 @@ class func mergeChanges(fromRemoteContextSave changeNotificationData: [AnyHashab
 
 - [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
-#### Discussion
+## Discussion
 
 This method more efficiently merges changes into multiple contexts as well as nested contexts. The dictionary keys should be one or more from an [`NSManagedObjectContextObjectsDidChange`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md):  [`NSInsertedObjectsKey`](../nsinsertedobjectskey.md), [`NSUpdatedObjectsKey`](../nsupdatedobjectskey.md), [`NSDeletedObjectsKey`](../nsdeletedobjectskey.md). The values should be an [`NSArray`](../../Foundation/nsarray.md) of either [`NSManagedObjectID`](../nsmanagedobjectid.md) or [`NSURL`](../../Foundation/nsurl.md) objects conforming to valid results from [`uriRepresentation()`](../nsmanagedobjectid/urirepresentation%28%29.md).
 

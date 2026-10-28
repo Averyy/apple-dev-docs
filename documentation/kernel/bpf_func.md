@@ -13,7 +13,7 @@
 typedef int (*BPF_FUNC)(struct ifnet *, struct mbuf *);
 ```
 
-#### Discussion
+## Discussion
 
 Prototype for the BPF tap handler. This will disappear when the correct DLIL header file is included.
 

@@ -18,7 +18,7 @@ A value that indicates whether Apple Pay Later is available for a transaction.
 ApplePayLaterAvailability applePayLaterAvailability;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to suppress Apple Pay Later for a specific transaction. Only set this property if you have a specific requirement to disable Apple Pay Later.
 

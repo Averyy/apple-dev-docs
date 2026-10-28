@@ -23,7 +23,7 @@ nonisolated
 struct BorderlessButtonMenuStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`borderlessButton`](./menustyle/borderlessbutton.md) to construct this style.
 

@@ -22,7 +22,7 @@ static var scene: SceneRealityCoordinateSpace { get }
 
 Available when `Self` is `SceneRealityCoordinateSpace`.
 
-#### Discussion
+## Discussion
 
 In a visionOS window or volume, or when using the [`virtual`](../realityviewcamera/virtual.md) camera on any other platform, this space represents the center of the scene’s owning [`RealityView`](../realityview.md).
 

@@ -18,7 +18,7 @@ typealias FFCapabilitiesEffectType = UInt32
 typedef UInt32 FFCapabilitiesEffectType;
 ```
 
-#### Discussion
+## Discussion
 
 Types used in the emulatedEffects or supportedEffects members of the FFCAPABILITIES structure. Used to describe whether the particular effect type is supported or emulated by the device.
 

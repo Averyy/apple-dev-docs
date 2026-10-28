@@ -16,7 +16,7 @@ The connection status of the session.
 final var status: FoveatedStreamingSession.Status { get }
 ```
 
-#### Discussion
+## Discussion
 
 Observe this property to monitor the session’s connection status, as well as obtain disconnection reasons. The default value is [`FoveatedStreamingSession.Status.initialized`](./status-swift.enum/initialized.md).
 

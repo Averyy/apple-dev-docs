@@ -29,7 +29,7 @@ func perform(_ block: @escaping @Sendable () -> Void)
 
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 This method encapsulates an autorelease pool and a call to [`processPendingChanges()`](./processpendingchanges%28%29.md).
 

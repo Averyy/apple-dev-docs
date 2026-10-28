@@ -21,7 +21,7 @@ Sets whether VoiceOver should speak the contents of the text view character by c
 func speechSpellsOutCharacters(_ value: Bool = true) -> Text
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want VoiceOver to speak text as individual letters, character by character. This is important for text that is not meant to be spoken together, like:
 

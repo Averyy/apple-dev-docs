@@ -6,7 +6,7 @@
 
 A 32-bit integer indicating the size of the entire structure containing a key definition.
 
-#### Overview
+## Overview
 
 The `key_size` = `sizeof(key_size) + sizeof(key_namespace) + sizeof(key_value)`. Since `key_size` and `key_namespace` are both 32 bit integers, together they have a size of 8 bytes. Hence, the `key_value` structure will be equal to `key_size - 8`.
 

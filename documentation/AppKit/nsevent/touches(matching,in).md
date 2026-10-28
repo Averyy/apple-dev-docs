@@ -19,11 +19,11 @@ func touches(matching phase: NSTouch.Phase, in view: NSView?) -> Set<NSTouch>
 - (NSSet<NSTouch *> *) touchesMatchingPhase:(NSTouchPhase) phase inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A set of applicable [`NSTouch`](../nstouch.md) objects.
 
-#### Discussion
+## Discussion
 
 This method is only valid for gesture events (gesture, magnify, swipe, rotate, etc.).
 

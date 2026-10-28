@@ -23,7 +23,7 @@ let pixelFormatType: OSType
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Discussion
+## Discussion
 
 Compare this value to the `pixelFormatType` of a `CVPixelBuffer`.
 

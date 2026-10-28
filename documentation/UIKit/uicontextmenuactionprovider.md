@@ -23,11 +23,11 @@ typealias UIContextMenuActionProvider = ([UIMenuElement]) -> UIMenu?
 typedef UIMenu *(^)(NSArray<UIMenuElement *> *) UIContextMenuActionProvider;
 ```
 
-#### Return Value
+## Return Value
 
 The menu object containing the actions for the user to select.
 
-#### Discussion
+## Discussion
 
 Use this handler to create [`UIAction`](./uiaction.md) objects representing the actions the user may choose from your menu. To organize groups of actions hierarchically, create a [`UIMenu`](./uimenu.md) object to represent a submenu and add nested actions to it. Finally, build your top-level [`UIMenu`](./uimenu.md) object from the actions and submenus you created, and return that menu object from your handler.
 

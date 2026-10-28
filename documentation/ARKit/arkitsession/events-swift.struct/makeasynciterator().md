@@ -16,7 +16,7 @@ Creates an asynchronous iterator that produces `Event` elements on this asynchro
 func makeAsyncIterator() -> ARKitSession.Events.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 An Iterator for `Events`
 

@@ -24,7 +24,7 @@ struct VTInt32Point
 typedef struct VTInt32Point { ... } VTInt32Point;
 ```
 
-#### Overview
+## Overview
 
 Use this structure to represent a point at an (x, y) location.
 

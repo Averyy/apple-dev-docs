@@ -19,7 +19,7 @@ var usesSingleLineMode: Bool { get set }
 @property BOOL usesSingleLineMode;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), text layout and rendering is restricted to a single line. In addition, the cell ignores the return value from [`wraps`](./wraps.md), interprets [`NSLineBreakMode.byWordWrapping`](../nslinebreakmode/bywordwrapping.md) and [`NSLineBreakMode.byCharWrapping`](../nslinebreakmode/bycharwrapping.md) returned by [`lineBreakMode`](./linebreakmode.md) as [`NSLineBreakMode.byClipping`](../nslinebreakmode/byclipping.md), and configures the field editor to ignore key binding commands that insert paragraph and line separators.
 

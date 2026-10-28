@@ -25,7 +25,7 @@ func setPatternPhase(_ phase: CGSize)
 extern void CGContextSetPatternPhase(CGContextRef c, CGSize phase);
 ```
 
-#### Discussion
+## Discussion
 
 The pattern phase is a translation that Core Graphics applies prior to drawing a pattern in the context. The pattern phase is part of the graphics state of a context, and the default pattern phase is `(0,0)`. Setting the pattern phase has the effect of temporarily changing the pattern matrix of any pattern you draw. For example, setting the context’s pattern phase to `(2,3)` has the effect of moving the start of pattern cell tiling to the point `(2,3)` in default user space.
 

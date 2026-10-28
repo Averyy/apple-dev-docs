@@ -25,11 +25,11 @@ func CGImageMetadataTagCopyQualifiers(_ tag: CGImageMetadataTag) -> CFArray?
 extern CFArrayRefCGImageMetadataTagCopyQualifiers(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CGImageMetadataTag`](./cgimagemetadatatag.md) types that represent the current tag’s qualifiers, or `NULL` if the tag has no qualifiers.
 
-#### Discussion
+## Discussion
 
 XMP allows a metadata tag to contain supplemental tags that act as qualifiers on the content. For example, the `xml:lang` qualifier provides alternate text entries for the current tag. Each qualifier is a [`CGImageMetadataTag`](./cgimagemetadatatag.md) with its own namespace, prefix, name, and value.
 

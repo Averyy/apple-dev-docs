@@ -25,7 +25,7 @@ Logs and serializes a feedback attachment that includes the content you expected
 
 - [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
-#### Return Value
+## Return Value
 
 A `Data` object containing the JSON-encoded feedback attachment that can be submitted to Feedback Assistant.
 

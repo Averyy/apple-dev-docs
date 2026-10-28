@@ -23,7 +23,7 @@ var availableVideoCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableVideoCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value contains an array of video codecs that the output supports. Specify the codec it uses by setting a supported value for the [`AVVideoCodecKey`](../avvideocodeckey.md) entry in its [`videoSettings`](./videosettings.md) dictionary. The first format in the returned list is the most efficient output format.
 

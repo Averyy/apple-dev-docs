@@ -25,11 +25,11 @@ func versionAtCreation() -> UInt32
 - [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 - [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 An integer representation of the version number.
 
-#### Discussion
+## Discussion
 
 Typically, a plug-in’s version increments with each release. The exact semantics are up to the plug-in developer.
 

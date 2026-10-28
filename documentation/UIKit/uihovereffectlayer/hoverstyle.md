@@ -20,7 +20,7 @@ var hoverStyle: UIHoverStyle { get set }
 @property (nonatomic, copy) UIHoverStyle * hoverStyle;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Not all [`UIHoverStyle`](../uihoverstyle.md)s may be supported by [`UIHoverEffectLayer`](../uihovereffectlayer.md). If the provided style is not supported, a fallback style will be selected instead.
 

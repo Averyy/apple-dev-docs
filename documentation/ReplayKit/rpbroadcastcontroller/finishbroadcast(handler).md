@@ -26,7 +26,7 @@ func finishBroadcast(handler: @escaping ((any Error)?) -> Void)
 - (void) finishBroadcastWithHandler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when the user is finished with a broadcast. To temporarily pause a broadcast, use [`pauseBroadcast()`](./pausebroadcast%28%29.md).
 

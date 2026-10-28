@@ -24,11 +24,11 @@ class func blendWithMask() -> any CIFilter & CIBlendWithMask
 + (CIFilter<CIBlendWithMask> *) blendWithMaskFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the blend with mask filter to an image. The effect uses values from the green mask image to interpolate between the input and background images. The mask image consists of shades of green that define the strength of the interpolation from zero (where the mask image is black) to the specified `radius` (where the mask image is green).
 

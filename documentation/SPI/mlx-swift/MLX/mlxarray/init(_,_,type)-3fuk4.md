@@ -17,14 +17,14 @@ Initializer allowing creation of `MLXArray` from a `Data` filled with bytes of `
 convenience init(_ data: Data, _ shape: (some Collection<Int>)? = [Int]?.none, type: (some HasDType).Type)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let data: Data
 let array = MLXArray(data, [2, 3], type: Int32.self)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

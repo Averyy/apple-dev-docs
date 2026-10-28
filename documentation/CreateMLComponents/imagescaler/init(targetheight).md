@@ -20,7 +20,7 @@ Creates an image scaler transformer that preserves the aspect ratio.
 init(targetHeight: Double)
 ```
 
-#### Discussion
+## Discussion
 
 This transformer scales an image to match the `targetHeight` while preserving the aspect ratio.
 

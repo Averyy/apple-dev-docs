@@ -5,7 +5,7 @@
 
 Learn how Apple News Format versions map to iOS, iPadOS, macOS, and visionOS releases.
 
-#### Overview
+## Overview
 
 The following table lists Apple News Format versions and the versions of  iOS, iPadOS, macOS, and visionOS they support.
 

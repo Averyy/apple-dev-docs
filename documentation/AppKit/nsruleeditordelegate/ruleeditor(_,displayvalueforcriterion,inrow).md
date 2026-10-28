@@ -21,15 +21,15 @@ func ruleEditor(_ editor: NSRuleEditor, displayValueForCriterion criterion: Any,
 - (id) ruleEditor:(NSRuleEditor *) editor displayValueForCriterion:(id) criterion inRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The value for `criterion`.
 
-#### Discussion
+## Discussion
 
 The value should be an instance of `NSString`, `NSView`, or `NSMenuItem`. If the value is an `NSView` or `NSMenuItem`, you must ensure it is unique for every invocation of this method; that is, do not return a particular instance of `NSView` or `NSMenuItem` more than once.
 
-##### Special Considerations
+### Special Considerations
 
 The delegate must implement this method.
 

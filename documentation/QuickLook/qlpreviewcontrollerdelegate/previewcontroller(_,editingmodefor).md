@@ -22,11 +22,11 @@ optional func previewController(_ controller: QLPreviewController, editingModeFo
 - (QLPreviewItemEditingMode) previewController:(QLPreviewController *) controller editingModeForPreviewItem:(id<QLPreviewItem>) previewItem;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the previewed content is editable and how Quick Look saves the edits. If you return [`QLPreviewItemEditingMode.updateContents`](../qlpreviewitemeditingmode/updatecontents.md) or [`QLPreviewItemEditingMode.createCopy`](../qlpreviewitemeditingmode/createcopy.md) to allow edits to a preview, make sure to implement the appropriate callbacks.
 
-#### Discussion
+## Discussion
 
 The platform invokes this callback when the preview controller loads its data. The system calls it for each preview item that it passes to the data source of the preview controller.
 

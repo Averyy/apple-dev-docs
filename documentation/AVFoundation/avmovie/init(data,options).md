@@ -24,7 +24,7 @@ init(data: Data, options: [String : Any]? = nil)
 - (instancetype) initWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create movies from movie headers that aren’t stored in files, which can include movies that the pasteboard contains.
 

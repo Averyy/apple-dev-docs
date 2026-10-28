@@ -18,7 +18,7 @@ The session reduced the image size because of memory constraints.
 case automaticDownsampling
 ```
 
-#### Discussion
+## Discussion
 
 If [`PhotogrammetrySession`](../../photogrammetrysession.md) encounters serious resource constraints during the object-creation process, it attempts to reduce memory usage by creating scaled-down copies of the sample images, and publishes this message.
 

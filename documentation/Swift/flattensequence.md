@@ -22,7 +22,7 @@ A sequence consisting of all the elements contained in each segment contained in
 struct FlattenSequence<Base> where Base : Sequence, Base.Element : Sequence
 ```
 
-#### Overview
+## Overview
 
 The elements of this view are a concatenation of the elements of each sequence in the base.
 

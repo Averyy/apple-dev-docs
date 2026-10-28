@@ -17,7 +17,7 @@ An unexpected error happened, try again.
 case unknown(code: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If the error persists, contact support with the provided code.
 

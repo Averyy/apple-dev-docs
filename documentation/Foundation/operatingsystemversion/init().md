@@ -21,7 +21,7 @@ Creates an empty operating system version.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 After initialization, the [`majorVersion`](./majorversion.md), [`minorVersion`](./minorversion.md), and [`patchVersion`](./patchversion.md) are all `0`.
 

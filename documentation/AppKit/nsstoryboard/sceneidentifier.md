@@ -19,7 +19,7 @@ typealias SceneIdentifier = String
 typedef NSString * NSStoryboardSceneIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Set scene identifiers in your storyboard by assigning a value to the Storyboard ID attribute.
 

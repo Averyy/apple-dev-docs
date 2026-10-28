@@ -22,7 +22,7 @@ A sequence of values formed by striding over a closed interval.
 struct StrideThrough<Element> where Element : Strideable
 ```
 
-#### Overview
+## Overview
 
 Use the `stride(from:through:by:)` function to create `StrideThrough` instances.
 

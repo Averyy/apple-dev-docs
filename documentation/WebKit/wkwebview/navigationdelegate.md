@@ -23,7 +23,7 @@ weak var navigationDelegate: (any WKNavigationDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<WKNavigationDelegate> navigationDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a delegate object when you want to manage or restrict navigation in your web content, track the progress of navigation requests, and handle authentication challenges for any new content. The object you specify must conform to the [`WKNavigationDelegate`](../wknavigationdelegate.md) protocol.
 

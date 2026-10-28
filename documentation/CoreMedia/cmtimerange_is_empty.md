@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time range has a duration of ze
 #define CMTIMERANGE_IS_EMPTY(range)
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `range` has a duration of `0`; otherwise, `false`.
 

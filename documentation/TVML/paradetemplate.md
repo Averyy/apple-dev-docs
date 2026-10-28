@@ -4,13 +4,13 @@
 
 Displays a groups of items along one side of a page and scrolling images on the other side.
 
-#### Overview
+## Overview
 
 Use the `paradeTemplate` element to display a list of automatically scrolling, static images on the left that are associated with a selected image category on the right. For example, a user selects Action movies, and the associated images automatically start scrolling. The following figure shows the basic layout for a `paradeTemplate` page. The theme for the parade template defaults to the system preference.
 
 ![Layout diagram showing an image deck area on the left side, and a header area above a section area on the right.](https://developer.apple.com/tutorials/images/com.apple.TVML/paradetemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows main elements of the `paradeTemplate` in TVML format.
 
@@ -38,7 +38,7 @@ The following listing shows main elements of the `paradeTemplate` in TVML format
 </paradeTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[header](./header.md)**: Title information for the list of image categories on the right side of the screen.
 - **[img](./img.md)**: A single image that scrolls across the left side of the screen.
@@ -48,7 +48,7 @@ The following listing shows main elements of the `paradeTemplate` in TVML format
 - **[relatedContent](./relatedcontent.md)**: Element containing the image deck that is associated with a particular item in the list.
 - **[title](./title.md)**: The text used to provide a description for its containing element.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `paradeTemplate` example.
 

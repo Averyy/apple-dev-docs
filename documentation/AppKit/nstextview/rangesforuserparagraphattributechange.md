@@ -19,7 +19,7 @@ var rangesForUserParagraphAttributeChange: [NSValue]? { get }
 @property (copy, readonly, nullable) NSArray<NSValue *> * rangesForUserParagraphAttributeChange;
 ```
 
-#### Discussion
+## Discussion
 
 For rich text these ranges are typically calculated by extending the range of the selection to paragraph boundaries. For plain text the range is the entire contents of the receiver.
 

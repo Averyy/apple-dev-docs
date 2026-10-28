@@ -19,7 +19,7 @@ A value that describes the category of termination that caused a crash.
 struct TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Use `TerminationCategory` to correlate individual crash diagnostics with the aggregate termination counts reported by [`ForegroundTerminationMetric`](../foregroundterminationmetric.md) and [`BackgroundTerminationMetric`](../backgroundterminationmetric.md). Each category corresponds to a specific count property on one or both of those metric types.
 

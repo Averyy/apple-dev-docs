@@ -21,7 +21,7 @@ A type that provides a view into an encoder’s storage and is used to hold the 
 protocol KeyedEncodingContainerProtocol
 ```
 
-#### Overview
+## Overview
 
 Encoders should provide types conforming to `KeyedEncodingContainerProtocol` for their format.
 

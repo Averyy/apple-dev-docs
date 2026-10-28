@@ -22,7 +22,7 @@ var videoBounds: CGRect { get }
 @property (nonatomic, readonly) CGRect videoBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the bounds of the player view controller’s view, and the view controller’s [`videoGravity`](./videogravity.md).
 

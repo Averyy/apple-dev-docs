@@ -25,11 +25,11 @@ class var availableStringEncodings: UnsafePointer<UInt> { get }
 @property (class, readonly) const NSStringEncoding * availableStringEncodings;
 ```
 
-#### Return Value
+## Return Value
 
 A zero-terminated list of the encodings string objects support in the application’s environment.
 
-#### Discussion
+## Discussion
 
 Among the more commonly used encodings are:
 

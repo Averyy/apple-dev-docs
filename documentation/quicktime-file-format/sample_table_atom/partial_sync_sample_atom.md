@@ -6,7 +6,7 @@
 
 An atom that lists the partial sync samples.
 
-#### Overview
+## Overview
 
 See [`Partial sync sample atom`](../partial_sync_sample_atom.md).
 

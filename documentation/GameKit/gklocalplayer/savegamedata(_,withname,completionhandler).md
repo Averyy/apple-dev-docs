@@ -31,7 +31,7 @@ func saveGameData(_ data: Data, withName name: String) async throws -> GKSavedGa
 
 - [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Discussion
+## Discussion
 
 If the `name` parameter is an existing filename, GameKit overwrites the file with the new game data.
 

@@ -23,7 +23,7 @@ var automaticallyRunsDeferredStart: Bool { get set }
 @property (nonatomic) BOOL automaticallyRunsDeferredStart;
 ```
 
-#### Discussion
+## Discussion
 
 Deferred Start is a feature that allows you to control, on a per-output basis, whether output objects start when or after the session is started. The session defers starting an output when its [`isDeferredStartEnabled`](../avcaptureoutput/isdeferredstartenabled.md) property is set to `true`, and starts it after the session is started.
 

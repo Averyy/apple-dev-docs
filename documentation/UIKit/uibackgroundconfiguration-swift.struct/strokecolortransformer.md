@@ -19,7 +19,7 @@ The color transformer for resolving the stroke color.
 var strokeColorTransformer: UIConfigurationColorTransformer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`strokeColor`](./strokecolor.md) without any transformations.
 

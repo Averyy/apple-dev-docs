@@ -23,7 +23,7 @@ func setDeferredStartDelegate(_ deferredStartDelegate: (any AVCaptureSessionDefe
 - (void) setDeferredStartDelegate:(id<AVCaptureSessionDeferredStartDelegate>) deferredStartDelegate deferredStartDelegateCallbackQueue:(dispatch_queue_t) deferredStartDelegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate receives a call to the [`sessionWillRunDeferredStart(_:)`](../avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart%28_%29.md) method when deferred start is about to run. It is non-blocking, so by the time this method is called, the deferred start may already be underway. If you want your app to perform initialization (potentially) concurrently with deferred start (e.g. user-facing camera features that are not needed to display the first preview frame, but are available to the user as soon as possible) it may be done in the delegate’s [`sessionWillRunDeferredStart(_:)`](../avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart%28_%29.md) method. To wait until deferred start is finished to perform some remaining initialization work, use the [`sessionDidRunDeferredStart(_:)`](../avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart%28_%29.md) method instead.
 

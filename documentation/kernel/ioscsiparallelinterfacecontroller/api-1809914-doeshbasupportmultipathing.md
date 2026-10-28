@@ -12,11 +12,11 @@ virtual bool DoesHBASupportMultiPathing (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if requested feature is supported.
 
-#### Overview
+## Overview
 
 Queries the HBA child class to determine if it supports Multi-Pathing.
 

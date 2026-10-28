@@ -24,7 +24,7 @@ enum RenderingMode
 enum UIImageRenderingMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The rendering mode controls how UIKit uses color information to display an image. See [Providing images for different appearances](../providing-images-for-different-appearances.md) for creating tintable images with template mode.
 

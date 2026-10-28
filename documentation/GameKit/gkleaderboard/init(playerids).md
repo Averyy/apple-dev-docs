@@ -26,11 +26,11 @@ init?(playerIDs: [String]?)
 - (instancetype) initWithPlayerIDs:(NSArray<NSString *> *) playerIDs;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized leaderboard request.
 
-#### Discussion
+## Discussion
 
 A leaderboard object that you initialize with this method ignores the [`playerScope`](./playerscope-swift.property.md) and [`range`](./range.md) properties. Instead, it retrieves scores for the specific list of players whose identifiers are in the `playerIDs` parameter.
 

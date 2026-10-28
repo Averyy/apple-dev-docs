@@ -25,7 +25,7 @@ optional var title: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Use this optional property to supply a string that the annotation displays in the callout for the associated annotation view. If you specify a [`detailCalloutAccessoryView`](../mkannotationview/detailcalloutaccessoryview.md) object, setting the title isn’t required.
 

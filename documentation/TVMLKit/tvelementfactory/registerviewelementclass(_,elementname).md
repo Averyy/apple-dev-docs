@@ -25,7 +25,7 @@ class func registerViewElementClass(_ elementClass: AnyClass, elementName: Strin
 
 - [Creating TVML Elements](../creating-tvml-elements.md)
 
-#### Discussion
+## Discussion
 
 The [`TVViewElement`](../tvviewelement.md) class represents a read-only DOM node along with its attributes and aggregated style. This model object is traversed by the interface factory to construct views and view controllers, and to render templates. You must call this method for each element you register.
 

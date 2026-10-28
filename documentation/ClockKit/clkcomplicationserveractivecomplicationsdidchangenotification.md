@@ -15,7 +15,7 @@ Posted when the set of active complications changes.
 extern NSString * const CLKComplicationServerActiveComplicationsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is `nil` and there’s no `userInfo` dictionary.
 

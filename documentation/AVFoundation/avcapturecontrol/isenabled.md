@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Controls support user interaction by default. You can temporarily disable user interaction on a control without removing it from a capture session by setting it’s enabled state to `false`.
 

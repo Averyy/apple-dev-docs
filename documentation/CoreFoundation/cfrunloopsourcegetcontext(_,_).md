@@ -25,7 +25,7 @@ func CFRunLoopSourceGetContext(_ source: CFRunLoopSource!, _ context: UnsafeMuta
 extern void CFRunLoopSourceGetContext(CFRunLoopSourceRef source, CFRunLoopSourceContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 Run loop sources come in two versions with different-sized context structures. `context` must point to the correct version of the structure for `source`. Before calling this function, you need to initialize the `version` member of `context` with the version number (either 0 or 1) of `source`.
 

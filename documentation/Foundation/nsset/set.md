@@ -21,11 +21,11 @@ Creates and returns an empty set.
 + (instancetype) set;
 ```
 
-#### Return Value
+## Return Value
 
 A new empty set.
 
-#### Discussion
+## Discussion
 
 This method is declared primarily for the use of mutable subclasses of `NSSet`.
 

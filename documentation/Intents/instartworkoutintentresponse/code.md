@@ -31,7 +31,7 @@ var code: INStartWorkoutIntentResponseCode { get }
 @property (atomic, readonly) INStartWorkoutIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is set automatically at initialization time and can’t be changed later.
 

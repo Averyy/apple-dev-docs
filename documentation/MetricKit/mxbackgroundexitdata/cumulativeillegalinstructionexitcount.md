@@ -25,7 +25,7 @@ var cumulativeIllegalInstructionExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeIllegalInstructionExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 One way to trigger this exit is by invoking a function with a misconfigured function pointer.
 

@@ -24,11 +24,11 @@ class func success(with resolvedCallRecordType: INCallRecordType) -> Self
 + (instancetype) successWithResolvedCallRecordType:(INCallRecordType) resolvedCallRecordType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordTypeResolutionResult`](../incallrecordtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when you recognize the specified type of call and are able to use it to resolve an intent.
 

@@ -25,7 +25,7 @@ var progress: Progress { get }
 @property (strong, readonly) NSProgress * progress;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`OperationQueue`](../operationqueue.md) doesn’t report progress until [`totalUnitCount`](../progress/totalunitcount.md) is set. When [`totalUnitCount`](../progress/totalunitcount.md) is set, the queue begins reporting progress. Each operation in the queue contributes one unit of completion to the overall progress of the queue for operations that are finished by the end of [`main()`](../operation/main%28%29.md). Operations that override [`start()`](../operation/start%28%29.md) and don’t invoke super don’t contribute to the queue’s progress.
 

@@ -24,7 +24,7 @@ var strideInY: Int { get set }
 @property (nonatomic, readwrite) NSUInteger strideInY;
 ```
 
-#### Discussion
+## Discussion
 
 Source `y`-coordinate, `sy` is computed from destination `y`-coordinate, `dy` as `sy = strideInY*dy`. Default value is 1.
 

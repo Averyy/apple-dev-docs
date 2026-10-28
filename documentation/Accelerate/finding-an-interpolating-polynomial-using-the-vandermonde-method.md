@@ -5,7 +5,7 @@
 
 Use LAPACK to solve a linear system and find an interpolating polynomial to construct new points between a series of known data points.
 
-#### Overview
+## Overview
 
 This article demonstrates how you can generate a continuous curve that passes through a small set of points by computing an *interpolating polynomial*. A polynomial is the sum of a series of terms constructed from variables, coefficients, and exponents (for example, *6x³ + 7x²*, where *6* and *7* and the coefficients, and *x* is the variable); and an interpolating polynomial fills in the gaps between the supplied variables and coefficients.
 
@@ -17,7 +17,7 @@ The image below shows five known points, as white dots, and the values generated
 
 The code in this article determines the polynomial coefficients using a Vandermonde matrix based on the x-components of the known points. The coefficients are the solution to *Ax=b*, where *A* is the Vandermonde matrix and *b* is a vector of the y-components of the known points. You’ll use LAPACK to solve *Ax=b*. LAPACK is an acronym for Linear Algebra Package and is a standard software library for numerical linear algebra.
 
-##### Generate known data
+### Generate known data
 
 Create an array containing five two-element vectors that describe the known data points between which the code interpolates.
 
@@ -35,7 +35,7 @@ let points: [simd_double2] = [
     ]
 ```
 
-##### Create a Vandermonde matrix
+### Create a Vandermonde matrix
 
 Construct a Vandermonde matrix where the rows are defined by the elements in a source vector that are successively raised to each integer power up to the source vector’s element count, minus one. For example, in the case of a five-element source vector, *x*, the Vandermonde matrix is of the form:
 
@@ -66,7 +66,7 @@ let vandermonde: [[Double]] = points.map { point in
 }
 ```
 
-##### Calculate coefficients
+### Calculate coefficients
 
 The coefficients for the polynomial are the solution to *Ax=b*, where *A* is the Vandermonde matrix and *b* is the y-components of the known points. For example, using the matrix created in [Finding an interpolating polynomial using the Vandermonde method](./finding-an-interpolating-polynomial-using-the-vandermonde-method.md), the coefficients are the *x* in the following:
 
@@ -95,7 +95,7 @@ let coefficients: [Double] = {
 
 On return, `coefficients` contains the polynomial coefficients.
 
-##### Use LAPACK to solve a linear system
+### Use LAPACK to solve a linear system
 
 > ❗ **Important**:  This sample uses the LAPACK library under the Accelerate framework that’s in line with LAPACK version 3.9.1. Specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 
@@ -199,7 +199,7 @@ static func dgels(transpose trans: CChar,
 }
 ```
 
-##### Evaluate the polynomial
+### Evaluate the polynomial
 
 The vDSP [`evaluatePolynomial(usingCoefficients:withVariables:)`](./vdsp/evaluatepolynomial%28usingcoefficients,withvariables%29-31vi2.md) function evaluates a polynomial. For example, the following code evaluates a simple polynomial that consists of three variables and three coefficients:
 

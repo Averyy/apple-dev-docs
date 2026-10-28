@@ -15,7 +15,7 @@ A list of alternate Place IDs that identify a feature.
 alternateIds: string[] | null;
 ```
 
-#### Discussion
+## Discussion
 
 These values associate alternate identifiers with a place that changes its identity over time. For information about place identifiers, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 

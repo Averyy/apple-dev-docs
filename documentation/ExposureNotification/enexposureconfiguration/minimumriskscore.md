@@ -23,7 +23,7 @@ var minimumRiskScore: ENRiskScore { get set }
 @property (nonatomic, assign, readwrite) ENRiskScore minimumRiskScore;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

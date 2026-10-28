@@ -19,7 +19,7 @@ var locationDescription: String? { get }
 @property (nonatomic, readonly, nullable) NSString * locationDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns either the description of an [`ICDeviceLocationType`](../icdevicelocationtype.md), or a description obtained from the Bonjour `TXT` record of a network device.
 

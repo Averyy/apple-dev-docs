@@ -21,7 +21,7 @@ A change indicating a switch between two iCloud accounts.
 case switchAccounts(previousUser: CKRecord.ID, currentUser: CKRecord.ID)
 ```
 
-#### Discussion
+## Discussion
 
 You should delete any locally-stored data for the previous account.
 

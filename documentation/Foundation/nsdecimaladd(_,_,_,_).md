@@ -25,7 +25,7 @@ func NSDecimalAdd(_ result: UnsafeMutablePointer<Decimal>, _ leftOperand: Unsafe
 extern NSCalculationError NSDecimalAdd(NSDecimal *result, const NSDecimal *leftOperand, const NSDecimal *rightOperand, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Adds `leftOperand` to `rightOperand` and stores the sum in `result`. [`Decimal`](./decimal.md) instances can represent a number with up to 38 significant digits. If a number is more precise than that, it must be rounded off. `roundingMode` determines how to round it off. There are four possible rounding modes:
 

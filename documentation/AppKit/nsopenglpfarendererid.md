@@ -19,7 +19,7 @@ var NSOpenGLPFARendererID: Int { get }
 NSOpenGLPFARendererID
 ```
 
-#### Discussion
+## Discussion
 
 Value is a nonnegative renderer ID number. OpenGL renderers that match the specified ID are preferred. Constants to select specific renderers are provided in the `CGLRenderers.h` header of the OpenGL framework. Of note is `kCGLRendererGenericID` which selects the Apple software renderer. The other constants select renderers for specific hardware vendors.
 

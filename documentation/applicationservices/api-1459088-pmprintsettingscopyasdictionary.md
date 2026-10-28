@@ -19,11 +19,11 @@ func PMPrintSettingsCopyAsDictionary(_ printSettings: PMPrintSettings, _ setting
 OSStatus PMPrintSettingsCopyAsDictionary(PMPrintSettings printSettings, CFDictionaryRef  _Nullable *settingsDictionary);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Most developers have no need to use this function. However, one way this function might be useful would be to enumerate all the entries in a print settings object for inspection.
 

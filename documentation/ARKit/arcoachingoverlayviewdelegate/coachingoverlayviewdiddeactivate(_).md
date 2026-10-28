@@ -20,7 +20,7 @@ optional func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoaching
 - (void) coachingOverlayViewDidDeactivate:(ARCoachingOverlayView *) coachingOverlayView;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this function to do any custom actions your app requires to begin the AR experience. For example, when coaching is deactivated, your app might restore custom UI.
 

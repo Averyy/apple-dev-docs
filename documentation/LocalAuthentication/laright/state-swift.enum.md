@@ -23,7 +23,7 @@ enum State
 enum LARightState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can use key-value observation and the [Combine](../../Combine/Combine.md) framework to observe the authorization state of an [`LARight`](../laright.md) instance:
 

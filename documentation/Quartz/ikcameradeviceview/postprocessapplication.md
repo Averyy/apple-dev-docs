@@ -19,7 +19,7 @@ var postProcessApplication: URL! { get set }
 @property (retain) NSURL * postProcessApplication;
 ```
 
-#### Discussion
+## Discussion
 
 The post process application is only relevant when the [`transferMode`](./transfermode.md) is set to [`IKCameraDeviceViewTransferMode.fileBased`](../ikcameradeviceviewtransfermode/filebased.md).
 

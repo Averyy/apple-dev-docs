@@ -21,7 +21,7 @@ var timedMetadataSampleBufferFormatDescription: CMFormatDescription { get }
 @property (nonatomic, readonly) CMFormatDescriptionRef timedMetadataSampleBufferFormatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this format description when creating your [`AVAssetWriter`](../avassetwriter.md) track for spatial audio timed metadata.
 

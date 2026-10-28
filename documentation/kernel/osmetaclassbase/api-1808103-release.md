@@ -11,7 +11,7 @@ Abstract declaration of release.
 virtual void release() const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::release.
 

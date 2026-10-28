@@ -24,7 +24,7 @@ var name: String { get set }
 @property (copy, readwrite, nonnull) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to look up a corresponding binary function by name in a [`MTL4Archive`](../mtl4archive.md) instance.
 

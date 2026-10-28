@@ -25,11 +25,11 @@ class func disambiguation(with taskListsToDisambiguate: [INTaskList]) -> Self
 + (instancetype) disambiguationWithTaskListsToDisambiguate:(NSArray<INTaskList *> *) taskListsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskListResolutionResult`](../intasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one task list matches the given information and you cannot pick one definitively. Ask the user to select from among the task lists that you specify.
 

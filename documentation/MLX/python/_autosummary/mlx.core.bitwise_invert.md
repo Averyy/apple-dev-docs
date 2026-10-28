@@ -6,15 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bi
 
 # mlx.core.bitwise_invert
 
-**bitwise_invert(*a: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise bitwise inverse.
+```python
+bitwise_invert(a: scalar | array, stream: StreamOrDevice = None) → array
+```
+
+Element-wise bitwise inverse.
+
 Take the bitwise complement of the input.
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
-Returns:
-The bitwise inverse `~a`.
+**Returns:**
+: The bitwise inverse `~a`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

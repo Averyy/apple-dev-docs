@@ -21,7 +21,7 @@ let kQLPreviewPropertyStringEncodingKey: CFString!
 extern CFStringRef const kQLPreviewPropertyStringEncodingKey;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the string encoding of the preview data as an [`CFStringEncoding`](../CoreFoundation/cfstringencoding.md) if the native type is plain text. You must encapsulate the value in a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

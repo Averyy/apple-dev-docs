@@ -22,7 +22,7 @@ func createResponse(_ result: NEHotspotHelperResult) -> NEHotspotHelperResponse
 - (NEHotspotHelperResponse *) createResponse:(NEHotspotHelperResult) result;
 ```
 
-#### Return Value
+## Return Value
 
 A NEHotspostHelperResponse object.
 

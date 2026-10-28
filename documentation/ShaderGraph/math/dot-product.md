@@ -14,11 +14,11 @@ Outputs the dot product of two vectors.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 (in1.x * in2.x) + (in1.y * in2.y)
 
-#### Parameter Types
+## Parameter Types
 
 **Dot Product (vector2f)**:
 

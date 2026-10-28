@@ -25,7 +25,7 @@ var storageURL: URL? { get }
 @property (readonly, nullable) NSURL * storageURL;
 ```
 
-#### Discussion
+## Discussion
 
 The writable directory stores expired session reports.
 

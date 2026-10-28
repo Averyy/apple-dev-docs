@@ -24,7 +24,7 @@ var isLowLightVideoNoiseReductionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLowLightVideoNoiseReductionSupported) BOOL lowLightVideoNoiseReductionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the connection’s source device’s active format supports low light video noise reduction (see `AVCaptureDeviceFormat/isLowLightVideoNoiseReductionSupported`) and the connection’s output supports the feature. This value reflects the active configuration and can change as the active format, video stabilization mode, auto video frame rate, or maximum video frame rate changes. See [`automaticallyEnablesLowLightVideoNoiseReduction`](./automaticallyenableslowlightvideonoisereduction.md) for a detailed discussion. This property is key-value observable.
 

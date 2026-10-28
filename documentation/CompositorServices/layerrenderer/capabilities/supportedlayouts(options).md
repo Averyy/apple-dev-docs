@@ -16,11 +16,11 @@ Returns an array of texture layouts that the layer supports.
 func supportedLayouts(options: LayerRenderer.Capabilities.SupportedLayoutsOptions) -> [LayerRenderer.Layout]
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported layouts. If the layer doesn’t support any layouts with the specified options, this function returns an empty array.
 
-#### Discussion
+## Discussion
 
 Call this function to determine which texture layouts you can use for your content.
 

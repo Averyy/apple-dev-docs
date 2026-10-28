@@ -20,11 +20,11 @@ var output: Any? { get set }
 @property (nonatomic, strong, nullable) id output;
 ```
 
-#### Return Value
+## Return Value
 
 The receiving action’s output, or `nil` if called before the action is run.
 
-#### Discussion
+## Discussion
 
 `nil` if called before the action is run.
 

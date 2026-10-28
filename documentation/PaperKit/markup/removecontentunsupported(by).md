@@ -20,11 +20,11 @@ Removes all content not supported by the provided feature set.
 mutating func removeContentUnsupported(by featureSet: FeatureSet) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 True if this was successful and the feature set is now supported.
 
-#### Discussion
+## Discussion
 
 If the returned value is `true` then `self.featureSet.isSubset(of: featureSet)` will be `true`.
 

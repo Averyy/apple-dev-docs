@@ -25,7 +25,7 @@ class var filePresenters: [any NSFilePresenter] { get }
 @property (class, copy, readonly) NSArray<id<NSFilePresenter>> * filePresenters;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects that conform to the [`NSFilePresenter`](../nsfilepresenter.md) protocol.
 

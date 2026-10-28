@@ -19,11 +19,11 @@ optional func accessibilityVisibleColumns() -> [Any]?
 - (NSArray *) accessibilityVisibleColumns;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently visible columns.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleColumns`](../nsaccessibility-c.protocol/accessibilityvisiblecolumns.md) property.
 

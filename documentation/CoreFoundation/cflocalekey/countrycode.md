@@ -25,7 +25,7 @@ static let countryCode: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCountryCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString containing an ISO county code, such as “`JP`”.
 

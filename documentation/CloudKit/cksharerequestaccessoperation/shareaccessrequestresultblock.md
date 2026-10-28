@@ -21,7 +21,7 @@ The closure to execute after CloudKit processes each share access request.
 var shareAccessRequestResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this closure to handle the overall success or failure of the operation.
 

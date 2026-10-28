@@ -23,7 +23,7 @@ case centered
 UITabBarItemPositioningCentered
 ```
 
-#### Discussion
+## Discussion
 
 With this option, the tab bar uses the [`itemWidth`](../itemwidth.md) and [`itemSpacing`](../itemspacing.md) properties to set the width of items and the spacing between items, positioning those items in the center of the available space. When the [`UITabBar.ItemPositioning.automatic`](./automatic.md) option is selected, the tab bar uses this behavior in horizontally regular environments.
 

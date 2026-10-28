@@ -25,7 +25,7 @@ var standardizingPath: String { get }
 @property (copy, readonly) NSString * stringByStandardizingPath;
 ```
 
-#### Discussion
+## Discussion
 
 A new string made by performing the following operations:
 

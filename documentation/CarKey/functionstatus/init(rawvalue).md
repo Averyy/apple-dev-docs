@@ -19,7 +19,7 @@ Creates and returns a new function status with the specified value.
 init(rawValue: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new function status type.
 

@@ -20,7 +20,7 @@ Defines the entire row as a destination of a drag and drop operation that handle
 @preconcurrency func dropDestination<T>(for payloadType: T.Type = T.self, action: @escaping ([T]) -> Void) -> some TableRowContent<Self.TableRowValue> where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A row that provides a drop destination for a drag operation of the specified type.
 

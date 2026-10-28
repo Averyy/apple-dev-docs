@@ -21,7 +21,7 @@ nonisolated
 struct PageTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`page`](./tabviewstyle/page.md) or [`page(indexDisplayMode:)`](./tabviewstyle/page%28indexdisplaymode%29.md) to construct this style.
 

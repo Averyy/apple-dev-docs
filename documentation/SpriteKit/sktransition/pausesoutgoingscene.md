@@ -29,7 +29,7 @@ var pausesOutgoingScene: Bool { get set }
 
 - [Configuring Whether Animations Play During the Transition](../configuring-whether-animations-play-during-the-transition.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

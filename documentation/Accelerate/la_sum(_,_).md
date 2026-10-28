@@ -25,7 +25,7 @@ func la_sum(_ obj_left: la_object_t, _ obj_right: la_object_t) -> la_object_t
 extern la_object_tla_sum(la_object_t obj_left, la_object_t obj_right);
 ```
 
-#### Discussion
+## Discussion
 
 Compute the element-wise sum of two vectors or matrices.
 

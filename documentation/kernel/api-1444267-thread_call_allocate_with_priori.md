@@ -15,11 +15,11 @@ Allocate a thread call to execute with a specified priority.
 thread_call_t thread_call_allocate_with_priority(thread_call_func_t func, thread_call_param_t param0, thread_call_priority_t pri);
 ```
 
-#### Return Value
+## Return Value
 
 Thread call which can be passed to thread_call_enter variants.
 
-#### Discussion
+## Discussion
 
 Identical to thread_call_allocate, except that priority is specified by caller.
 

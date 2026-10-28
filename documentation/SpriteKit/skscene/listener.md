@@ -29,7 +29,7 @@ weak var listener: SKNode? { get set }
 
 - [Using Audio Nodes with the Scene’s Listener](../using-audio-nodes-with-the-scene-s-listener.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means that the scene’s origin is used as the listener position for audio effects played by [`SKAudioNode`](../skaudionode.md) objects in the scene. If a non-`nil` value is specified, it must be a node in the scene.
 

@@ -18,7 +18,7 @@ A non-throwing version of [`update(parameters:verify:path:modulePath:)`](./updat
 func update(parameters: ModuleParameters) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This passes `verify: .none`.  Note that there may still be `fatalErrors()` if for example an `MLXArray` is set on a `Module`.
 

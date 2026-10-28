@@ -8,7 +8,7 @@ Read the keyword, phrase, category, and Target CPA suggestions that the suggesti
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Each suggestion endpoint returns its own result object: [`KeywordSuggestion`](./keywordsuggestion.md), [`PhraseSuggestion`](./phrasesuggestion.md), [`CategorySuggestion`](./categorysuggestion.md), or [`TargetCpaSuggestion`](./targetcpasuggestion.md), each inside a matching query response. Suggestion requests reuse the query and filter objects in [Recommendations Query and Filter Objects](./recommendations-query-filter-objects.md).
 

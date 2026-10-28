@@ -12,11 +12,11 @@ virtual bool merge(
  const OSArray *array);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if all objects from `array` are successfully added the receiver (or were already present), `false` otherwise.
 
-#### Overview
+## Overview
 
 This functions adds to the receiving set all objects from `array` that are not already in the receiving set. Objects added to the receiver are retained.
 

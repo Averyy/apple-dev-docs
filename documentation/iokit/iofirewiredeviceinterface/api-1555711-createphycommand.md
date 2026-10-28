@@ -16,7 +16,7 @@ Create a command object for sending a PHY packet
 IOFireWireLibCommandRef (*CreatePHYCommand)(IOFireWireLibDeviceRef self, UInt32 data1, UInt32 data2, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

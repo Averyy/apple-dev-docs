@@ -26,11 +26,11 @@ func CFNetServiceCreate(_ alloc: CFAllocator?, _ domain: CFString, _ serviceType
 extern CFNetServiceRefCFNetServiceCreate(CFAllocatorRef alloc, CFStringRef domain, CFStringRef serviceType, CFStringRef name, SInt32 port);
 ```
 
-#### Return Value
+## Return Value
 
 A new net service object, or `NULL` if the instance could not be created. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 If the service depends on information in DNS TXT records, call `CFNetServiceSetProtocolSpecificInformation`.
 
@@ -42,7 +42,7 @@ To terminate a service that is running in asynchronous mode, call [`CFNetService
 
 To terminate a service that is running in synchronous mode, call [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

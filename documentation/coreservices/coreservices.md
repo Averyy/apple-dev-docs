@@ -14,7 +14,7 @@ Access and manage key operating system services, such as launch and identity ser
 - visionOS 1.0+
 - watchOS 5.0+
 
-#### Overview
+## Overview
 
 This collection of documents provides the API reference for the Core Services framework, which encompasses many fundamental operating system services used by Carbon applications.
 

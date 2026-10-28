@@ -21,7 +21,7 @@ weak var delegate: (any SFSafariViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SFSafariViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a [`SFSafariViewControllerDelegate`](../sfsafariviewcontrollerdelegate.md) object to respond to the Done and Action buttons.
 

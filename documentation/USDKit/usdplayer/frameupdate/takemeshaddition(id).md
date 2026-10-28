@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.MeshData`](../meshdata.md) for the given me
 mutating func takeMeshAddition(id: USDPlayer.MeshID) -> USDPlayer.MeshData?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

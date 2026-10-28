@@ -16,7 +16,7 @@ Returns transactions that match the provided transaction query.
 func transactions(query: TransactionQuery) async throws -> [Transaction]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`Transaction`](../transaction.md) records that match the provided `query`.
 

@@ -13,7 +13,7 @@
 kIOHIDReportTypeOutput
 ```
 
-#### Discussion
+## Discussion
 
 Output report.
 

@@ -23,7 +23,7 @@ init(sessionWithNoConnection session: AVCaptureSession)
 - (instancetype) initWithSessionWithNoConnection:(AVCaptureSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Only use this initializer if you intend to manually connect the layer to a particular [`AVCaptureInput.Port`](../avcaptureinput/port.md) by calling the session’s [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 

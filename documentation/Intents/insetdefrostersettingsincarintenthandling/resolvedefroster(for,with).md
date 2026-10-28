@@ -28,7 +28,7 @@ optional func resolveDefroster(for intent: INSetDefrosterSettingsInCarIntent) as
 - (void) resolveDefrosterForSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *) intent withCompletion:(void (^)(INCarDefrosterResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the which defroster to use. Use the intent object to identify the defroster specified by the user. If the car has more than one climate zone, use the intent’s [`defroster`](../insetdefrostersettingsincarintent/defroster.md) property to identify the correct defroster.
 

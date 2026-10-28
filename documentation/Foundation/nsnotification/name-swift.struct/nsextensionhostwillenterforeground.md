@@ -24,7 +24,7 @@ static let NSExtensionHostWillEnterForeground: NSNotification.Name
 extern NSString * const NSExtensionHostWillEnterForegroundNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Extensions can use this notification to restart tasks that it stopped when they moved to the background. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 

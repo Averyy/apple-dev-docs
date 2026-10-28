@@ -25,7 +25,7 @@ var decimalSeparator: String { get }
 @property (copy, readonly) NSString * decimalSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 Example decimal separators include `"."` and `","`.
 

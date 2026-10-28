@@ -27,7 +27,7 @@ func requestTextRects(for input: String) async -> [UITextSelectionRect]
 - (void) requestTextRectsForString:(NSString *) input withCompletionHandler:(void (^)(NSArray<UITextSelectionRect *> *rects)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes your implementation of this method. The completion handler receives [`UITextSelectionRect`](../../UIKit/uitextselectionrect.md) instances for the substring nearest to the caret that matches the given `input`.
 

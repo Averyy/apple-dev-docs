@@ -18,11 +18,11 @@ The payload that configures Exchange ActiveSync accounts.
 object ExchangeActiveSync
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.eas.account` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.eas.account` as the payload type.
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

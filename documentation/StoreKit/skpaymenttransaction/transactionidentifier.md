@@ -27,7 +27,7 @@ var transactionIdentifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * transactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.purchased`](../skpaymenttransactionstate/purchased.md) or [`SKPaymentTransactionState.restored`](../skpaymenttransactionstate/restored.md). The [`transactionIdentifier`](./transactionidentifier.md) is a string that uniquely identifies an interaction between the user’s device and the App Store, such as a purchase or restore.
 

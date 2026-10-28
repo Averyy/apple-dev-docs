@@ -19,7 +19,7 @@ var visibleInterfaceController: WKInterfaceController? { get }
 @property (nonatomic, readonly, nullable) WKInterfaceController * visibleInterfaceController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine which interface controller is currently displayed by the app. For example, in the extension delegate’s [`handle(_:)`](../wkextensiondelegate/handle%28_%29-92ulv.md)  method for a snapshot request,  use this property to determine the user interface’s current contents, and make any changes before the snapshot is taken.
 

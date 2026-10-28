@@ -21,7 +21,7 @@ An optional shading to fill the image with.
 var shading: GraphicsContext.Shading?
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property defaults to [`foreground`](../shading/foreground.md) for template images, and to `nil` otherwise.
 

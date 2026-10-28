@@ -19,11 +19,11 @@ object BackgroundParallax
 
 - [About Component Behaviors](../AppleNews/about-component-behaviors.md)
 
-#### Discussion
+## Discussion
 
 When you apply the `BackgroundParallax` behavior to a component, the background of the component moves slightly more slowly than a person’s scroll speed, as shown in [this video](https://developer.apple.com/apple-news/videos/background-parallax.mp4).
 
-##### Example
+### Example
 
 ```json
 {

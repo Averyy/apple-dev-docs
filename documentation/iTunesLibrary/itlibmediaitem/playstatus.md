@@ -20,7 +20,7 @@ var playStatus: ITLibMediaItemPlayStatus { get }
 @property (nonatomic, assign, readonly) ITLibMediaItemPlayStatus playStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Represents partially played and unplayed states for videos and podcasts. Other media types always return [`ITLibMediaItemPlayStatus.none`](../itlibmediaitemplaystatus/none.md).
 

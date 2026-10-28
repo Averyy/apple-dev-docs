@@ -21,7 +21,7 @@ var ALAssetsLibraryWriteBusyError: Int { get }
 ALAssetsLibraryWriteBusyError
 ```
 
-#### Discussion
+## Discussion
 
 You should attempt the write again.
 

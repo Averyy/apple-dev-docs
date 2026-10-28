@@ -17,7 +17,7 @@ Save the card information for later.
 case saveCard
 ```
 
-#### Discussion
+## Discussion
 
 If your application saves card data, it’s your responsibility to ensure that the customer is aware of how and why before you read their card.
 

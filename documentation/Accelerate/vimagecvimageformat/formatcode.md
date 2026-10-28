@@ -21,7 +21,7 @@ The four-character code that encodes the pixel format of the Core Video image fo
 var formatCode: UInt32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code prints the format code of a [`kCVPixelFormatType_420YpCbCr8Planar`](../../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md) Core Video image format that equals the expected type:
 

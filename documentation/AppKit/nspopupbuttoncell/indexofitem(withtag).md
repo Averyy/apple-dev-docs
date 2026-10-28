@@ -19,11 +19,11 @@ func indexOfItem(withTag tag: Int) -> Int
 - (NSInteger) indexOfItemWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item or `-1` if no item with the specified tag was found.
 
-#### Discussion
+## Discussion
 
 Tags are values your application assigns to an object to identify it. You can assign tags to menu items using the setTag: method of [`NSMenuItem`](../nsmenuitem.md).
 

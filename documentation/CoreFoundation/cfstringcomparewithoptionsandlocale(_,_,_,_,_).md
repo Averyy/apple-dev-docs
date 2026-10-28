@@ -25,7 +25,7 @@ func CFStringCompareWithOptionsAndLocale(_ theString1: CFString!, _ theString2: 
 extern CFComparisonResult CFStringCompareWithOptionsAndLocale(CFStringRef theString1, CFStringRef theString2, CFRange rangeToCompare, CFStringCompareFlags compareOptions, CFLocaleRef locale);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFComparisonResult`](./cfcomparisonresult.md) value that indicates whether `theString1` is equal to, less than, or greater than `theString2`.
 

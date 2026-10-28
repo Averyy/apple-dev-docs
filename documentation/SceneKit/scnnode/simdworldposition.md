@@ -25,7 +25,7 @@ var simdWorldPosition: simd_float3 { get set }
 @property (nonatomic) simd_float3 simdWorldPosition;
 ```
 
-#### Discussion
+## Discussion
 
 This vector isolates the translational aspect of the node’s [`simdWorldTransform`](./simdworldtransform.md) matrix, which in turn is the conversion of the node’s [`simdTransform`](./simdtransform.md) from local space to the scene’s world coordinate space. That is, it expresses the x, y, and z offsets of the node’s position from that of the scene’s [`rootNode`](../scnscene/rootnode.md), and is equivalent to reading the node’s [`simdPosition`](./simdposition.md) vector and converting it to world space with the [`simdConvertPosition(_:from:)`](./simdconvertposition%28_,from%29.md) or [`simdConvertPosition(_:to:)`](./simdconvertposition%28_,to%29.md) method.
 

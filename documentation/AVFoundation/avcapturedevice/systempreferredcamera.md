@@ -23,7 +23,7 @@ class var systemPreferredCamera: AVCaptureDevice? { get }
 @property (class, readonly, nullable) AVCaptureDevice * systemPreferredCamera;
 ```
 
-#### Discussion
+## Discussion
 
 The system chooses the value of this property. It considers the value of [`userPreferredCamera`](./userpreferredcamera.md), as well as other factors like camera suspension and the appearance of Continuity Cameras that apps should choose automatically. The property may change spontaneously, such as when the preferred camera goes away.
 

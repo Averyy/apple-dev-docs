@@ -13,7 +13,7 @@
 - **Name**: `com.apple.developer.home`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to a Home app extension that uses the Home Extensions framework to provide content for accessories in the Home app. Xcode adds the entitlement when you add a Home Extension target to your project.
 

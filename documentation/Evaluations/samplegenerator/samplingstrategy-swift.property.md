@@ -21,7 +21,7 @@ The strategy for selecting existing samples as examples in the prompt.
 var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the generator shows no examples and doesn’t retry on repetition. When set, the strategy also controls retry behavior when the model repeats itself.
 

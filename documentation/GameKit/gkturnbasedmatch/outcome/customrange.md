@@ -25,7 +25,7 @@ case customRange
 GKTurnBasedMatchOutcomeCustomRange
 ```
 
-#### Discussion
+## Discussion
 
 Use this outcome to represent custom results.
 

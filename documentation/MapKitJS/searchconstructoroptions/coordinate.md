@@ -15,7 +15,7 @@ A map coordinate that provides a hint for the geographic area to search.
 coordinate?: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 This property supplies coordinates as a reference for a search.
 

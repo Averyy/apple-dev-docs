@@ -21,7 +21,7 @@ Extract an attributed string from SwiftUI’s transferable representation in a c
 init(transferable: AttributedTextFormatting.Transferable, in environment: EnvironmentValues) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer with a `AttributedTextFormatting/Transferable` that was imported, e.g. in the `action` closure of the `View/dropDestination(for:action:isTargeted)` modifier.
 

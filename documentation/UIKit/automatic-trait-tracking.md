@@ -5,7 +5,7 @@
 
 Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
 
-#### Overview
+## Overview
 
 Automatic trait tracking is a UIKit feature that eliminates the need to manually register for trait changes when you use traits in a supported method or closure. This feature reduces the amount of code you need to write and maintain, improves performance, and encourages the best practice of using traits within the scope of the supported APIs. For more information, see [Adapting your app when traits change](./adapting-your-app-when-traits-change.md).
 

@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, pasteboardWrite
 - (id<NSPasteboardWriting>) collectionView:(NSCollectionView *) collectionView pasteboardWriterForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The pasteboard writer object to use for managing the item data. Return `nil` to prevent the collection view from dragging the item.
 
-#### Discussion
+## Discussion
 
 You must implement this method or the [`collectionView(_:writeItemsAt:to:)`](./collectionview%28_,writeitemsat,to%29-23ozm.md) method to support drag operations. The collection view calls this method in preference over the [`collectionView(_:writeItemsAt:to:)`](./collectionview%28_,writeitemsat,to%29-23ozm.md) method if both are implemented. If your app supports multi-image drag and drop, you must implement this method.
 

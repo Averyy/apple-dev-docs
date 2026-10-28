@@ -24,7 +24,7 @@ var symptomsStatus: HKElectrocardiogram.SymptomsStatus { get }
 @property (nonatomic, assign, readonly) HKElectrocardiogramSymptomsStatus symptomsStatus;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`HKElectrocardiogram.SymptomsStatus.present`](./symptomsstatus-swift.enum/present.md), you can access the symptoms by querying for the [`HKCategorySample`](../hkcategorysample.md) samples associated with the electrocardiogram sample. Use [`predicateForObjectsAssociated(electrocardiogram:)`](../hkquery/predicateforobjectsassociated%28electrocardiogram%29.md) to create the predicate for the associated symptoms.
 

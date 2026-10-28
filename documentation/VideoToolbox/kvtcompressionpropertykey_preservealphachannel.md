@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString
 extern CFStringRef const kVTCompressionPropertyKey_PreserveAlphaChannel;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to false in cases where you’re not interested in preserving alpha, or if you know the alpha channel to be fully opaque.
 

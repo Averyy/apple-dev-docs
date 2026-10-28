@@ -25,7 +25,7 @@ let kCTFontPriorityAttribute: CFString
 extern CFStringRef const kCTFontPriorityAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an integer represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing one of the values enumerated in [`CTFontPriority`](./ctfontpriority.md). The higher the value, the higher the priority of the font. Only registered fonts have a priority. Unregistered font descriptors return `NULL`.
 

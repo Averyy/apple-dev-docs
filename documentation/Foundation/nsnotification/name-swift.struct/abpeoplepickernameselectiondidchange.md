@@ -15,7 +15,7 @@ Posted when the selection in the name list is changed.
 static let ABPeoplePickerNameSelectionDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

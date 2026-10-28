@@ -21,7 +21,7 @@ nonisolated
 func scrollEdgeEffectHidden(_ hidden: Bool = true, for edges: Edge.Set = .all) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, a scroll view renders an automatic edge effect style. Use this modifier to hide any edge effects for scroll views within this hierarchy.
 

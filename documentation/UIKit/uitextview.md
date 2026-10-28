@@ -36,13 +36,13 @@ class UITextView
 - [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
-#### Overview
+## Overview
 
 A text view displays multiple lines of text and supports editing, custom styles, and rich formatting. Use it when you need to display or edit a body of text, such as the contents of a document.
 
 For rich text, set the [`attributedText`](./uitextview/attributedtext.md) property to provide per-range style information. You can also use [`font`](./uitextview/font.md), [`textColor`](./uitextview/textcolor.md), and [`textAlignment`](./uitextview/textalignment.md) to apply a single style across all text in the view.
 
-##### Manage the keyboard
+### Manage the keyboard
 
 When someone taps in an editable text view, it becomes the first responder and the system displays the keyboard. Because the keyboard can obscure parts of your interface, reposition any views that would otherwise be hidden. Some system views, like table views, scroll the first responder into view automatically. If the first responder is at the bottom of the scrolling region, you may still need to resize or reposition the scroll view to keep it visible.
 
@@ -50,7 +50,7 @@ Your app is responsible for dismissing the keyboard. Dismiss it in response to a
 
 To customize the keyboard, use the properties from the [`UITextInputTraits`](./uitextinputtraits.md) protocol, which text views implement. You can set the keyboard type (ASCII, Numbers, URL, Email, and others) and configure text entry behavior like autocapitalization and autocorrection.
 
-##### Keyboard notifications
+### Keyboard notifications
 
 When the system shows or hides the keyboard, it posts notifications that include the keyboard’s size and position. Register for these notifications to reposition or resize views as needed:
 
@@ -61,7 +61,7 @@ When the system shows or hides the keyboard, it posts notifications that include
 
 For more information about these notifications, see [`UIWindow`](./uiwindow.md).
 
-##### State preservation
+### State preservation
 
 If you assign a value to this view’s [`restorationIdentifier`](./uiview/restorationidentifier.md) property, the view preserves the following information:
 

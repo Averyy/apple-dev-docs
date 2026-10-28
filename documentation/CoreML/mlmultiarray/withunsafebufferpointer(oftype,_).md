@@ -21,7 +21,7 @@ Calls a given closure with a raw pointer to the multiarray’s storage.
 func withUnsafeBufferPointer<S, R>(ofType type: S.Type, _ body: (UnsafeBufferPointer<S>) throws -> R) rethrows -> R where S : MLShapedArrayScalar
 ```
 
-#### Discussion
+## Discussion
 
 The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` values, depending on the multiarray’s data type. It may not store these scalar values contiguously; use [`strides`](./strides.md) to get the buffer layout.
 

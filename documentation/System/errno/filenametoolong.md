@@ -25,7 +25,7 @@ static var fileNameTooLong: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A component of a pathname exceeded 255 (`MAXNAMELEN`) characters, or an entire pathname exceeded 1023 (`MAXPATHLEN-1`) characters.
 

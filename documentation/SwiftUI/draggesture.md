@@ -25,7 +25,7 @@ A dragging motion that invokes an action as the drag-event sequence changes.
 
 - [Composing SwiftUI gestures](./composing-swiftui-gestures.md)
 
-#### Overview
+## Overview
 
 To recognize a drag gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 

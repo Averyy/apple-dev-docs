@@ -25,7 +25,7 @@ func nw_listener_get_port(_ listener: nw_listener_t) -> UInt16
 uint16_t nw_listener_get_port(nw_listener_t listener);
 ```
 
-#### Discussion
+## Discussion
 
 The listener’s port is available once the listener is in the ready state.
 

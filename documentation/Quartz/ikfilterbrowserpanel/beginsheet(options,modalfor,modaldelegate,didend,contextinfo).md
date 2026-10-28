@@ -19,7 +19,7 @@ func beginSheet(options inOptions: [AnyHashable : Any]! = [:], modalFor docWindo
 - (void) beginSheetWithOptions:(NSDictionary *) inOptions modalForWindow:(NSWindow *) docWindow modalDelegate:(id) modalDelegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 When the filter browser session ends, `didEndSelector` is invoked on the modeless delegate, passing `contextInfo` as an argument. The selector `didEndSelector` must have the following signature:
 

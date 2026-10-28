@@ -5,13 +5,13 @@
 
 Submit prompts in the same place you want to make changes to your code.
 
-#### Overview
+## Overview
 
 You can use coding intelligence in the source editor to submit prompts using the coding tools popover. You can also generate fixes for issues that Xcode detects in your code.
 
 Before you begin, set up an agent or chat provider in Intelligence settings. For more information, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
-#### Start conversations in the source editor
+## Start conversations in the source editor
 
 To display the coding tools popover in the source editor, perform one of these actions:
 
@@ -23,7 +23,7 @@ To display the coding tools popover in the source editor, perform one of these a
 
 Enter your prompt in the message text field in the coding tools popover or click one of the buttons, such as Explain, Generate a Preview, or Generate a Playground, depending on the context.
 
-#### Generate playgrounds and previews
+## Generate playgrounds and previews
 
 Playgrounds and previews let you experiment with new code without modifying your app. Use playgrounds to run and display code snippets in the canvas, and use previews to validate UI code across platforms. Xcode generates playground and preview code that may contain sample data to help you understand and visualize the code in the canvas.
 
@@ -41,7 +41,7 @@ Similarly, with an interface file in the source editor, open the coding tools po
 
 For more information, see [Running code snippets using the playground macro](./running-code-snippets-using-the-playground-macro.md) and [Adding previews to your interface files](./adding-previews-to-your-interface-files.md).
 
-#### Generate documentation
+## Generate documentation
 
 Let Xcode draft [Swift-DocC](https://www.swift.org/documentation/docc/)-style documentation comments above a symbol in a source file.
 
@@ -53,7 +53,7 @@ For example, if you select a class, Xcode adds documentation for the class and f
 
 To view your documentation in Xcode’s Developer Documentation window, choose Product > Build Documentation.
 
-#### Fix your code
+## Fix your code
 
 If you choose an agent when starting a conversation, Xcode automatically builds your app after editing your code and attempts to fix issues for you. If you encounter a compilation warning or error while building your app, Xcode can often generate a fix for you too.
 

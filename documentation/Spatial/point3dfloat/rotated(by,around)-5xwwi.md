@@ -23,11 +23,11 @@ func rotated(by rotation: Rotation3DFloat, around pivot: Point3DFloat) -> Point3
 static SPPoint3DFloat SPPoint3DFloatRotateAroundPoint(SPPoint3DFloat point, SPRotation3DFloat rotation, SPPoint3DFloat pivot);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s rotated by a rotation around a specified pivot.
 

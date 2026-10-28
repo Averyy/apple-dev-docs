@@ -25,7 +25,7 @@ var direction: GCPhysicalInputSourceDirection { get }
 @property (readonly) GCPhysicalInputSourceDirection direction;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, the physical input source doesn’t involve directional input.
 

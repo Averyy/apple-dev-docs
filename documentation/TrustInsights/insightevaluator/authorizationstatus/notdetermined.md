@@ -16,7 +16,7 @@ A person hasn’t yet consented to allow this app to request evaluations.
 case notDetermined
 ```
 
-#### Discussion
+## Discussion
 
 Request a person’s authorization by calling [`requestAuthorization(for:)`](../requestauthorization%28for%29.md).
 

@@ -20,7 +20,7 @@ The reason that the export session couldn’t be configured as resumable.
 @property (readonly, nullable) AVAssetExportSessionResumptionFailureReason configurationFailureReason;
 ```
 
-#### Discussion
+## Discussion
 
 This value is valid only when [`resumptionConfigured`](./resumptionconfigured.md) is `false`.
 

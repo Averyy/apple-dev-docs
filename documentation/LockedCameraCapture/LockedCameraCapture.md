@@ -11,7 +11,7 @@ Capture content with your app’s camera experience when the device is locked.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 
-#### Overview
+## Overview
 
 Use the LockedCameraCapture framework to create an extension that allows people to launch your app’s camera experience and capture content quickly when the device is locked. This extension makes your camera experience accessible to people from Control Center, the Lock Screen, or the Action button.
 

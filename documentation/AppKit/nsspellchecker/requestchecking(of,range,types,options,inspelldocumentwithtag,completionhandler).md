@@ -19,7 +19,7 @@ func requestChecking(of stringToCheck: String, range: NSRange, types checkingTyp
 - (NSInteger) requestCheckingOfString:(NSString *) stringToCheck range:(NSRange) range types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options inSpellDocumentWithTag:(NSInteger) tag completionHandler:(void (^)(NSInteger sequenceNumber, NSArray<NSTextCheckingResult *> *results, NSOrthography *orthography, NSInteger wordCount)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is a monotonically increasing sequence number that can be used to keep track of requests in flight.
 

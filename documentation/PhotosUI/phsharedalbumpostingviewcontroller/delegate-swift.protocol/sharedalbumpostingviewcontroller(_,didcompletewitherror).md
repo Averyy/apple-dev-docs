@@ -22,7 +22,7 @@ func sharedAlbumPostingViewController(_ postingViewController: PHSharedAlbumPost
 - (void) sharedAlbumPostingViewController:(PHSharedAlbumPostingViewController *) postingViewController didCompleteWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Called when asset posting has completed.
 

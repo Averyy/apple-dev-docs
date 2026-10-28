@@ -24,7 +24,7 @@ let kCFStreamPropertyAllowExpensiveNetworkAccess: CFString
 extern CFStringRef const kCFStreamPropertyAllowExpensiveNetworkAccess;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) and allows the use of expensive network interfaces. Set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) to disallow the use of expensive network interfaces. For more information about expensive network interfaces, see [`allowsExpensiveNetworkAccess`](../Foundation/urlsessionconfiguration/allowsexpensivenetworkaccess.md).
 

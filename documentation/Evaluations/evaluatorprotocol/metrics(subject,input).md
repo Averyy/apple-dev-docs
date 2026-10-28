@@ -19,11 +19,11 @@ Computes metrics for the given subject, given the input sample.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func metrics(subject: Self.Subject, input: Self.Input) async throws -> [Metric]
+nonisolated(nonsending)
+func metrics(subject: Self.Subject, input: Self.Input) async throws -> [Metric]
 ```
 
-#### Return Value
+## Return Value
 
 An array of metrics this evaluator produces.
 

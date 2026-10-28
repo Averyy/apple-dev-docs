@@ -22,7 +22,7 @@ var constituentDevices: [AVCaptureDevice] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDevice *> * constituentDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an empty array when called on a device whose [`isVirtualDevice`](./isvirtualdevice.md) property is [`false`](../../Swift/false.md).
 

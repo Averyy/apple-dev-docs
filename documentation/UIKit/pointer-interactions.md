@@ -5,7 +5,7 @@
 
 Support pointer interactions in your custom controls and views.
 
-#### Overview
+## Overview
 
 iPadOS 13.4 introduces dynamic pointer effects and behaviors that enhance the experience of using an external input device, like a trackpad or mouse, with iPad. As people use an input device, iPadOS automatically adapts the pointer to the current context, providing rich visual feedback and just the right level of precision needed to enhance productivity and simplify common tasks.
 
@@ -13,7 +13,7 @@ iPadOS 13.4 introduces dynamic pointer effects and behaviors that enhance the ex
 
 For more information, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/inputs/pointing-devices/).
 
-##### Specify custom pointer styles
+### Specify custom pointer styles
 
 To add a custom pointer style effect to a view:
 
@@ -46,7 +46,7 @@ func pointerInteraction(_ interaction: UIPointerInteraction, styleFor region: UI
 }
 ```
 
-##### Add interaction animations
+### Add interaction animations
 
 Including animations can be helpful in pointer interactions, especially when views contain elements that interfere with pointer effects. For example, hiding the separator bars in a [`UISegmentedControl`](./uisegmentedcontrol.md) when the pointer enters the control allows the active segment effect to appear visually uncluttered.
 
@@ -70,7 +70,7 @@ func pointerInteraction(_ interaction: UIPointerInteraction, willExit region: UI
 }
 ```
 
-##### Distinguish pointing device input events
+### Distinguish pointing device input events
 
 If you want to distinguish between pointing device touch events and touch events from other sources, like the user’s fingers or Apple Pencil, you can enable the [`UIApplicationSupportsIndirectInputEvents`](../BundleResources/information-property-list/uiapplicationsupportsindirectinputevents.md) key in the `Info.plist` file. With this key enabled, your app can respond to specific gestures targeted at touches of [`UITouch.TouchType.indirectPointer`](./uitouch/touchtype/indirectpointer.md).
 

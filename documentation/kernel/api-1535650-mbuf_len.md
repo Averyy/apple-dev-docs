@@ -13,11 +13,11 @@
 size_t mbuf_len(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The length.
 
-#### Discussion
+## Discussion
 
 Gets the length of data in this mbuf.
 

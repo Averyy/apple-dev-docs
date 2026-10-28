@@ -15,7 +15,7 @@ This method has been deprecated. Use the NSTypesetter method [`getLineFragmentRe
 - (NSRect) lineFragmentRectForProposedRect:(NSRect) proposedRect remainingRect:(NSRectPointer) remainingRect;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the largest rectangle available for the proposed rectangle `proposedRect`. It also returns a rectangle in `remainingRect` containing any remaining space, such as that left on the other side of a hole or gap in the text container.
 

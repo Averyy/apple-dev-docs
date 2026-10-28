@@ -25,11 +25,11 @@ func MKMetersPerMapPointAtLatitude(_ latitude: CLLocationDegrees) -> CLLocationD
 extern CLLocationDistance MKMetersPerMapPointAtLatitude(CLLocationDegrees latitude);
 ```
 
-#### Return Value
+## Return Value
 
 The distance (in meters) spanned by a single map point.
 
-#### Discussion
+## Discussion
 
 The distance between map points decreases as the latitude approaches the poles. This relationship parallels the relationship between longitudinal coordinates at different latitudes.
 

@@ -13,7 +13,7 @@ bool SetHBAProperty (
  OSObject *value );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if identifier was properly set, otherwise false.
 

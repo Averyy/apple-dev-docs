@@ -20,7 +20,7 @@ optional func browser(_ sender: NSBrowser, createRowsForColumn column: Int, in m
 - (void) browser:(NSBrowser *) sender createRowsForColumn:(NSInteger) column inMatrix:(NSMatrix *) matrix;
 ```
 
-#### Discussion
+## Discussion
 
 Either this method or [`browser(_:numberOfRowsInColumn:)`](./browser%28_,numberofrowsincolumn%29.md) must be implemented, but not both, or an [`NSBrowserIllegalDelegateException`](../nsbrowserillegaldelegateexception.md) will be raised.
 

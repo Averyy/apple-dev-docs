@@ -19,7 +19,7 @@ Text elements that specify the content to include in the image.
 struct ImagePlaygroundConcept
 ```
 
-#### Overview
+## Overview
 
 Use this type to wrap pieces of text describing the image you want to create. You can also specify larger pieces of text that contain important concepts to extract and use to guide the image-creation process.
 

@@ -22,11 +22,11 @@ init(identifiers: [String]?, attribute: INMessageAttribute)
 - (instancetype) initWithIdentifiers:(NSArray<NSString *> *) identifiers attribute:(INMessageAttribute) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of this class yourself. Siri creates instances when the user asks to modify the attributes of one or more messages. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

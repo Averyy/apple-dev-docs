@@ -17,7 +17,7 @@ Quantization bit depth.
 var bits: Int?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` lets MLX use the default for the selected quantization mode.
 

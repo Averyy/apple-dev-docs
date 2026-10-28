@@ -15,11 +15,11 @@ Validate an authorization grant code delivered to your app to obtain tokens, or 
 - [Configuring your webpage for Sign in with Apple](../SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md)
 - [Receiving a User’s Identity Token](../SigninwithApple/receiving-a-users-identity-token.md)
 
-#### Discussion
+## Discussion
 
 The validation server returns a [`TokenResponse`](./tokenresponse.md) object in the response body of a successful validation request. Use this endpoint to either authorize a user by validating the authorization code received by your app, or by validating an existing refresh token to verify a user session or obtain access tokens.
 
-##### Validate the authorization grant code
+### Validate the authorization grant code
 
 When you send an authorization request to the validation server, include the following form data parameters:
 
@@ -57,7 +57,7 @@ After the server validates the authorization code, the endpoint returns the iden
 
 Use the refresh token to verify the user session from the server and obtain access tokens.
 
-##### Validate an existing refresh token
+### Validate an existing refresh token
 
 When performing a validation request, you must include the following form data parameters:
 

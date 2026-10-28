@@ -20,11 +20,11 @@ func vmnet_network_configuration_add_port_forwarding_rule(_ config: vmnet_networ
 vmnet_return_t vmnet_network_configuration_add_port_forwarding_rule(vmnet_network_configuration_ref config, uint8_t protocol, sa_family_t address_family, uint16_t internal_port, uint16_t external_port, const void *internal_address);
 ```
 
-#### Return Value
+## Return Value
 
 `VMNET_SUCCESS` on success, an error otherwise.
 
-#### Discussion
+## Discussion
 
 An app won’t be able to query or remove rules until the it starts the network. To do that, use [`vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:)`](./vmnet_interface_remove_ip_port_forwarding_rule%28_,_,_,_,_%29.md) or [`vmnet_interface_get_ip_port_forwarding_rules(_:_:_:)`](./vmnet_interface_get_ip_port_forwarding_rules%28_,_,_%29.md) APIs, respectively.
 

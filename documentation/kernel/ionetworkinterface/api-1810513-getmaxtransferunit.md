@@ -12,11 +12,11 @@ virtual UInt32 getMaxTransferUnit(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the interface MTU size in bytes.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_mtu` and returns the maximum transfer unit.
 

@@ -21,7 +21,7 @@ A confidence threshold strategy that balances precision and recall equivalently.
 case balancedPrecisionAndRecall
 ```
 
-#### Discussion
+## Discussion
 
 Use this strategy to select a threshold for each label to maximize the f1-score.
 

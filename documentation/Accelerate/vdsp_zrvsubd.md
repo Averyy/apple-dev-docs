@@ -21,7 +21,7 @@ Subtracts a double-precision real vector from a double-precision complex vector.
 extern void vDSP_zrvsubD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function subtracts the first `N` real elements of `B` from corresponding complex elements of `A`, writing the result to `C`:
 

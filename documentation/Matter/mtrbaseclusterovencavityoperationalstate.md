@@ -25,7 +25,7 @@ class MTRBaseClusterOvenCavityOperationalState
 @interface MTRBaseClusterOvenCavityOperationalState : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 This cluster supports remotely monitoring and, where supported, changing the operational state of an Oven.
 

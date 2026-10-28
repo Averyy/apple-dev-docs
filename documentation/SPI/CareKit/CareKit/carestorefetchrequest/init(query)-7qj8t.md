@@ -20,7 +20,7 @@ init(query: OCKTaskQuery)
 
 Available when `Result` is `any OCKAnyTask` and `Query` is `OCKTaskQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

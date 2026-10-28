@@ -19,11 +19,11 @@ func getNumberValue() -> NSNumber!
 - (NSNumber *) getNumberValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSNumber representation of the data element if it is a numeric type.
 
-#### Discussion
+## Discussion
 
 The data types represented by a number are 1 (unsigned int), 2 (signed int) and 5 (boolean) except for 128-bit versions of 1 and 2.
 

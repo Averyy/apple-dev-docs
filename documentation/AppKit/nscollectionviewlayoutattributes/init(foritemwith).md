@@ -19,11 +19,11 @@ convenience init(forItemWith indexPath: IndexPath)
 + (instancetype) layoutAttributesForItemWithIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object containing the initial attributes for the item.
 
-#### Discussion
+## Discussion
 
 Call this method when you need to create a layout attributes object for an item in a collection view. Items are the main type of content presented by a collection view. Items are grouped into sections, although a collection view may have only one section. This method assigns the provided index path to the [`indexPath`](./indexpath.md) property of the returned object.
 

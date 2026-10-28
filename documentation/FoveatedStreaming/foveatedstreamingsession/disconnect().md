@@ -16,7 +16,7 @@ Disconnects from the remote streaming endpoint, ending the streaming session.
 final func disconnect() async
 ```
 
-#### Discussion
+## Discussion
 
 When this function returns, the foveated streaming session’s [`status`](./status-swift.property.md) will equal [`FoveatedStreamingSession.Status.disconnected(_:)`](./status-swift.enum/disconnected%28_%29.md) with the reason [`appInitiatedDisconnect`](./disconnectreason/appinitiateddisconnect.md).
 

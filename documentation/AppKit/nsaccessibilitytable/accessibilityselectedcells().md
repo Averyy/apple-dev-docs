@@ -19,11 +19,11 @@ optional func accessibilitySelectedCells() -> [Any]?
 - (NSArray *) accessibilitySelectedCells;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently selected cells for the table.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilitySelectedCells`](../nsaccessibility-c.protocol/accessibilityselectedcells.md) property. Additionally, your class needs to send a [`selectedCellsChanged`](../nsaccessibility-swift.struct/notification/selectedcellschanged.md) notification whenever the table’s selected cells change.
 

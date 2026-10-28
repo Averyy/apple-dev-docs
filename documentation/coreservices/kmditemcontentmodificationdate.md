@@ -19,7 +19,7 @@ let kMDItemContentModificationDate: CFString!
 const CFStringRef kMDItemContentModificationDate;
 ```
 
-#### Discussion
+## Discussion
 
  This is not necessarily the file modification date.
 

@@ -21,7 +21,7 @@ The shortest representation of a standalone weekday.
 static var narrow: Date.FormatStyle.Symbol.StandaloneWeekday { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the shortest representation of a standalone weekday, like `M` for Monday.
 

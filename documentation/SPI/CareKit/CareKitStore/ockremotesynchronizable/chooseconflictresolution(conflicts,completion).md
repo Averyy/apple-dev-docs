@@ -18,7 +18,7 @@ This method will be called when CareKit detects a conflict between changes made 
 func chooseConflictResolution(conflicts: [OCKEntity], completion: @escaping OCKResultClosure<OCKEntity>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: It is permissible to decide for the user, or to prompt the user to make a selection manually.
 

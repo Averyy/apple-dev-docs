@@ -21,7 +21,7 @@ Marks the end of a time interval in your code using a signpost.
 #define os_signpost_interval_end(log, interval_id, name, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function is equivalent to calling [`os_signpost_emit_with_type`](./os_signpost_emit_with_type.md) with a type of [`OS_SIGNPOST_INTERVAL_END`](./os_signpost_type_t/os_signpost_interval_end.md).
 

@@ -3,7 +3,7 @@
 **Framework**: Metal Performance Shaders  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The Metal Performance Shaders framework has been tuned for excellent performance across a diversity of devices and kernel parameters. The tuning process focuses on minimizing both CPU and GPU latency for back to back calls on the same command buffer. It is possible, however, to inadvertently undo this optimization effort by introducing costly operations into the pipeline around the kernel, leading to disappointing overall results.
 

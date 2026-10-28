@@ -20,7 +20,7 @@ case ratingRestricted
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 For more information, see [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md).
 

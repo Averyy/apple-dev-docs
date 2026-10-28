@@ -22,7 +22,7 @@ var size: CGSize { get }
 @property (nonatomic, readonly) CGSize size;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents the size of the underlying display buffer.
 

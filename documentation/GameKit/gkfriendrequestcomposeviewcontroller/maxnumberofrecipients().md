@@ -25,11 +25,11 @@ class func maxNumberOfRecipients() -> Int
 + (NSUInteger) maxNumberOfRecipients;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of recipients.
 
-#### Discussion
+## Discussion
 
 If you add more recipients than the value returned from this method, GameKit throws an exception.
 

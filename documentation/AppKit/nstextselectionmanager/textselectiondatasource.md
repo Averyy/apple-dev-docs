@@ -19,7 +19,7 @@ weak var textSelectionDataSource: (any NSTextSelectionDataSource)? { get set }
 @property (weak, nullable) id<NSTextSelectionDataSource> textSelectionDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source is typically an `NSTextLayoutManager` or similar text layout object.
 

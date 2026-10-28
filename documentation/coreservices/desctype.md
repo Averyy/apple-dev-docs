@@ -20,7 +20,7 @@ typealias DescType = ResType
 typedef ResType DescType;
 ```
 
-#### Discussion
+## Discussion
 
 A `DescType` data type is a four-character code that stores a value that identifies the data in an [`AEDesc`](./aedesc.md) descriptor, the basic building block for all Apple events.
 

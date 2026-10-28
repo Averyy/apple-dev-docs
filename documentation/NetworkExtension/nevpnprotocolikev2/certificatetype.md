@@ -24,7 +24,7 @@ var certificateType: NEVPNIKEv2CertificateType { get set }
 @property NEVPNIKEv2CertificateType certificateType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NEVPNIKEv2CertificateType.RSA`](../nevpnikev2certificatetype/rsa.md).
 

@@ -16,11 +16,11 @@
 virtual IOReturn getChannelIndex(uint64_t channel_id, int *channel_index);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate IOReturn code
 
-#### Discussion
+## Discussion
 
 Returns the index of a channel from internal data structures
 

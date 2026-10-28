@@ -25,7 +25,7 @@ func prepare()
 - (void) prepare;
 ```
 
-#### Discussion
+## Discussion
 
 This method preallocates many resources the audio engine requires to start. Use it to responsively start audio input or output.
 

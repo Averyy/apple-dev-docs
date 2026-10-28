@@ -18,7 +18,7 @@ CloudKit.RecordsBatchBuilder update(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The object that received this method call.
 

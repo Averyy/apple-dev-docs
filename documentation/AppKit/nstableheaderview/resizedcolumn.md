@@ -19,7 +19,7 @@ var resizedColumn: Int { get }
 @property (readonly) NSInteger resizedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 If the user is resizing a column, this property contains the index of that column; otherwise, it contains `-1`.
 

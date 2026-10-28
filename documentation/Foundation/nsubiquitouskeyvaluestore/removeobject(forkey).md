@@ -25,7 +25,7 @@ func removeObject(forKey aKey: String)
 - (void) removeObjectForKey:(NSString *) aKey;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the specified key and value from the in-memory version of the store’s data. The next time the system synchronizes the data, it removes the key from the on-disk storage and iCloud server. If the key is not in the key-value store, this method does nothing.
 

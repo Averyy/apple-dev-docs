@@ -23,7 +23,7 @@ func unpremultiply(channelOrdering: vImage.ChannelOrdering)
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 This function divides the color values in each pixel `self` by the corresponding alpha value and copies the alpha value to the destination unchanged.
 

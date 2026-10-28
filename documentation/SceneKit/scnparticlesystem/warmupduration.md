@@ -25,7 +25,7 @@ var warmupDuration: CGFloat { get set }
 @property (nonatomic) CGFloat warmupDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0` seconds, specifying that the system begins emitting particles on the first frame SceneKit renders it in. Change this value to “fast forward” the particle system so that it appears to have been running for some amount of time when it is first rendered.
 

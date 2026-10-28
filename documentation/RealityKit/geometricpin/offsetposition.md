@@ -20,7 +20,7 @@ Offset from the pin’s base position.
 var offsetPosition: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If a pin has a generic name, this offset is relative to the pin’s owning entity’s position. If a pin is on a skeletal joint, this offset is relative to the skeletal joint’s current position. By default this offset is the zero position vector.
 

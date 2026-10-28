@@ -13,11 +13,11 @@
 errno_t proto_register_plumber(protocol_family_t proto_fam, ifnet_family_t if_fam, proto_plumb_handler plumb, proto_unplumb_handler unplumb);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero value of the attach failed.
 
-#### Discussion
+## Discussion
 
 Allows the caller to specify the functions called when a protocol is attached to an interface belonging to the specified family and when that protocol is detached.
 

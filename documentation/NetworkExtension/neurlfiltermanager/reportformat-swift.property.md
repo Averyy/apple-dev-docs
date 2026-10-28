@@ -18,11 +18,11 @@ The format the manager uses to send blocked URL reports.
 var reportFormat: NEURLFilterManager.ReportFormat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the values in the [`NEURLFilterManager.ReportFormat`](./reportformat-swift.enum.md) enumeration to specify the format to use. By default, the manager uses the [`NEURLFilterManager.ReportFormat.json`](./reportformat-swift.enum/json.md) format.
 
-##### Handling JSON results
+### Handling JSON results
 
 When you specify the [`NEURLFilterManager.ReportFormat.json`](./reportformat-swift.enum/json.md) format, your endpoint receives data in JSON as a simple array of strings. The structure of this data is like the following:
 
@@ -34,7 +34,7 @@ When you specify the [`NEURLFilterManager.ReportFormat.json`](./reportformat-swi
 ]
 ```
 
-##### Handling Protobuf results
+### Handling Protobuf results
 
 When you specify the [`NEURLFilterManager.ReportFormat.protobuf`](./reportformat-swift.enum/protobuf.md) format, your endpoint receives the Protocol Buffers wire format with manual encoding for a repeated string field. Each URL entry follows this binary structure:
 

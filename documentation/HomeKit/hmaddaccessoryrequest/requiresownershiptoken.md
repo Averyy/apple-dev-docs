@@ -24,7 +24,7 @@ var requiresOwnershipToken: Bool { get }
 @property (nonatomic, assign, readonly) BOOL requiresOwnershipToken;
 ```
 
-#### Discussion
+## Discussion
 
 In practice, this value is always `true`.
 

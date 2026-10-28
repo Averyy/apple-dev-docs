@@ -24,7 +24,7 @@ var kAudioUnitProperty_LastRenderError: AudioUnitPropertyID { get }
 kAudioUnitProperty_LastRenderError
 ```
 
-#### Discussion
+## Discussion
 
 This property is set if a call to the [`AudioUnitRender(_:_:_:_:_:_:)`](./audiounitrender%28_,_,_,_,_,_%29.md) function returns an error. To be notified of errors, register a callback function as a property listener using the [`AudioUnitAddPropertyListener(_:_:_:_:)`](./audiounitaddpropertylistener%28_,_,_,_%29.md) function.
 

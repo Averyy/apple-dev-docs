@@ -20,7 +20,7 @@ The collection of all of the constraint update stage objects of the solver insta
 var constraints: IKComponent.ConstraintCollection
 ```
 
-#### Discussion
+## Discussion
 
 The order matches the order in the rig [`constraints`](../../ikrig/constraints.md).
 

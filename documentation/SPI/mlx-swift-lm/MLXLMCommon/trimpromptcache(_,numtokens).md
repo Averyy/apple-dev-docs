@@ -22,7 +22,7 @@ func trimPromptCache(_ cache: [KVCache], numTokens: Int) -> Int
 
 - [KV Cache Quantization](./kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 This function will trim the cache if possible (in-place) and return the number of tokens that were trimmed.
 

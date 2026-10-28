@@ -26,7 +26,7 @@ class FxImageTile
 - [Optimizing FxPlug plug-ins](../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
 - [Using out-of-process FxPlug plug-ins](../Professional-Video-Applications/using-out-of-process-fxplug-plug-ins.md)
 
-#### Overview
+## Overview
 
 An [`FxTileableEffect`](./fxtileableeffect.md) will receive all images as `FxImageTile` objects. These are passed to effects to describe tiles within the full image that need to be rendered. The image data is contained in the [`ioSurface`](./fximagetile/iosurface.md) property. This property may be nil during calls to the plug-in to gather information rather than rendering.
 

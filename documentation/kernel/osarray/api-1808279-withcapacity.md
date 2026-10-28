@@ -12,11 +12,11 @@ static OSArray * withCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 An empty instance of OSArray with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `capacity` must be nonzero. The new array will grow as needed to accommodate more objects (*unlike*[CFMutableArray](../../CoreFoundation/cfmutablearray.md), for which the initial capacity is a hard limit).
 

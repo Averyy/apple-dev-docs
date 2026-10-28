@@ -24,7 +24,7 @@ static let bodyFatPercentage: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBodyFatPercentage;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use percent units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

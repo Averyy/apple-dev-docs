@@ -23,7 +23,7 @@ case lastBaseline
 UIStackViewAlignmentLastBaseline
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.lastBaseline`](./lastbaseline.md) alignment.
 

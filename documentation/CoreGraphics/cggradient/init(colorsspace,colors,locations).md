@@ -25,7 +25,7 @@ init?(colorsSpace space: CGColorSpace?, colors: CFArray, locations: UnsafePointe
 extern CGGradientRefCGGradientCreateWithColors(CGColorSpaceRef space, CFArrayRef colors, const CGFloat *locations);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGGradient`](../cggradient.md) object.
 

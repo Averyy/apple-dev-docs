@@ -25,7 +25,7 @@ var groupsByEvent: Bool { get set }
 @property BOOL groupsByEvent;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the manager automatically creates undo groups around each pass of the run loop, otherwise [`false`](../../Swift/false.md).
 

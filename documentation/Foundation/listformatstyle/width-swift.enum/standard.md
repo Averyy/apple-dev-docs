@@ -21,7 +21,7 @@ Specifies a standard list style.
 case standard
 ```
 
-#### Discussion
+## Discussion
 
 This width creates a list like `One, Two, and Three` in U.S. English.
 

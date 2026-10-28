@@ -21,7 +21,7 @@ An effect that replaces a symbol by scaling it up, and scaling a different symbo
 var upUp: ReplaceSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The initial symbol scales up as it’s removed, and the new symbol scales up as it’s added.
 

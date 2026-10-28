@@ -22,7 +22,7 @@ class NINearbyObject
 @interface NINearbyObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 A nearby object refers to a peer Apple device or third-party accessory.
 

@@ -20,11 +20,11 @@ nonisolated
 final func exported(as representation: WebPage.ExportedContentConfiguration) async throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The data with the specified representation type.
 
-#### Discussion
+## Discussion
 
 For example, you can export a 100 pt by 100 pt region of a webpage as a PDF, and allow it to have a transparent background:
 

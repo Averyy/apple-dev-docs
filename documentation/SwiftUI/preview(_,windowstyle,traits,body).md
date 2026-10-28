@@ -12,11 +12,11 @@ Creates a preview of a SwiftUI view in a window.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Style>(_ name: String? = nil, windowStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View) where Style : WindowStyle
+@freestanding(declaration)
+macro Preview<Style>(_ name: String? = nil, windowStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View) where Style : WindowStyle
 ```
 
-#### Overview
+## Overview
 
 This preview macro behaves like [`Preview(_:traits:_:body:)`](./preview%28_,traits,_,body%29.md), except that it also enables you to define a scene context for the view. Specifically, it places the view in a window with the specified window style, like the [`volumetric`](./windowstyle/volumetric.md) style:
 

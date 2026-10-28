@@ -25,7 +25,7 @@ func setModels(_ models: [NLModel], forTagScheme tagScheme: NLTagScheme)
 - (void) setModels:(NSArray<NLModel *> *) models forTagScheme:(NLTagScheme) tagScheme;
 ```
 
-#### Discussion
+## Discussion
 
 An array of models is allowed for the case where multiple models need to be used. For example, when models were trained on specific languages.
 

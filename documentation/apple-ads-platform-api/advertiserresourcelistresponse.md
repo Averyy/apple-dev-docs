@@ -15,13 +15,13 @@ Response envelope for advertiser resource list requests.
 object AdvertiserResourceListResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AdvertiserResourceListResponse` object is the response envelope the API returns when you fetch advertiser resources associated with an organization.
 
 Advertiser resources include entities such as content providers and brands. These resources appear in `Delegation` objects and control whether App Store or Apple Maps campaigns are accessible to an ad account.
 
-##### Example
+### Example
 
 ```json
 {

@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 1.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The API now supports provisioning, including managing bundle IDs with the [Bundle IDs](./bundle-ids.md) and [Bundle ID Capabilities](./bundle-id-capabilities.md) resources, managing certificates with the [Certificates](./certificates.md) resource, registering test devices with the [Devices](./devices.md) resource, and managing provisioning profiles with [Profiles](./profiles.md).
 

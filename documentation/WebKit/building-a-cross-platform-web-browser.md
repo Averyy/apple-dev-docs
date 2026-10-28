@@ -14,7 +14,7 @@ Implement a browser on multiple platforms that loads content, manages navigation
 - visionOS 26.4+
 - Xcode 26.4+
 
-#### Overview
+## Overview
 
 This sample project demonstrates how you can create a cross-platform web browser with SwiftUI and WebKit, in iOS 26 and later or macOS 26 and later. The sample displays web content in a [`WebView`](./webview-swift.struct.md), and builds the following features:
 
@@ -29,7 +29,7 @@ The sample demonstrates how using these SwiftUI features to interact with web co
 
 > **Note**: This sample code project is associated with WWDC 2025 session 231: [Meet WebKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2025/231/).
 
-#### Create an observable browser model
+## Create an observable browser model
 
 The sample stores webpage and browser properties in an [`Observable()`](../Observation/observable%28%29.md) class called `BrowserManager`, as shown below, enabling SwiftUI to automatically redraw views when properties change:
 
@@ -76,7 +76,7 @@ init(privateBrowsingEnabled: Bool = false) {
 
 The sample’s `ContentView` creates a `BrowserManager` instance with the [`State`](../SwiftUI/state.md) property wrapper and injects it into the view hierarchy using [`environment(_:)`](../SwiftUI/view/environment%28_%29.md). Subviews retrieve it with `@Environment(BrowserManager.self)`.
 
-#### Load and display web content
+## Load and display web content
 
 The sample uses [`WebPage`](./webpage.md) because it’s an observable type that handles loading and tracks properties like the current URL and title. The sample keeps an instance of [`WebPage`](./webpage.md) called `page` in `BrowserManager`, and specifies that `page` when it declares [`WebView`](./webview-swift.struct.md), the SwiftUI view that renders it. The sample applies modifiers to enable common browser behaviors, as shown here:
 
@@ -104,7 +104,7 @@ WebView(browserManager.page)
 
 In macOS, the sample uses `webViewContextMenu` to provide a secondary-click menu with link-specific options.
 
-#### Handle navigation history
+## Handle navigation history
 
 The `BrowserManager` class exposes navigation history as computed arrays from [`WebPage.BackForwardList`](./webpage/backforwardlist-swift.struct.md), as the following code snippet demonstrates. The toolbar uses these arrays to populate back and forward buttons, where a tap navigates immediately and a long press reveals the full history.
 
@@ -160,7 +160,7 @@ The view observes navigation events through [`navigations`](./webpage/navigation
 
 When `isPresented` is `true`, the view presents an alert with the error’s localized description.
 
-#### Load local HTML files with a custom scheme
+## Load local HTML files with a custom scheme
 
 The sample registers `CustomSchemeHandler` for the `local` URL scheme. `CustomSchemeHandler` intercepts any navigation to a `local://` address and serves it from the app bundle instead of the network. The handler conforms to [`URLSchemeHandler`](./urlschemehandler.md), locates the requested resource in the bundle, and yields the response and data, as follows:.
 
@@ -204,7 +204,7 @@ struct CustomSchemeHandler: URLSchemeHandler {
 }
 ```
 
-#### Display website favicons
+## Display website favicons
 
 The favorite row views that the sample declares in `FavoriteRowView` load each website’s favicon asynchronously using [`LinkMetadata`](../LinkPresentation/linkmetadata.md) from the [Link Presentation](../LinkPresentation/LinkPresentation.md) framework, as shown in the code below. The fetch runs in a [`task(id:name:executorPreference:priority:file:line:_:)`](../SwiftUI/view/task%28id,name,executorpreference,priority,file,line,_%29.md) modifier keyed to the favorite’s URL, so it restarts automatically whenever the URL changes.
 
@@ -230,7 +230,7 @@ private func fetchFavicon(for url: URL) async -> Image? {
 
 While the favicon loads, the row displays a placeholder globe icon.
 
-#### Export and share webpage content
+## Export and share webpage content
 
 The [`WebPage`](./webpage.md) type conforms to [`Transferable`](../CoreTransferable/transferable.md), so it works directly with [`ShareLink`](../SwiftUI/sharelink.md) and the file exporter. The sample places both options in a toolbar menu, like this:
 

@@ -21,7 +21,7 @@ An array of values for additional axes for the data point.
 @property (nonatomic, copy) NSArray<AXDataPointValue *> * additionalValues;
 ```
 
-#### Discussion
+## Discussion
 
 Provide these values in the same order as their corresponding [`AXDataAxisDescriptor`](../axdataaxisdescriptor.md) objects in [`additionalAxes`](../axchartdescriptor/additionalaxes-2adwh.md).
 

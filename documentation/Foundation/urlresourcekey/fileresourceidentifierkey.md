@@ -25,7 +25,7 @@ static let fileResourceIdentifierKey: URLResourceKey
 extern NSURLResourceKey const NSURLFileResourceIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as an `id`. You can use this identifier to determine equality between file system resources with the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method. Two resources are equal if they have the same file-system path or if their paths link to the same inode on the same file system.
 

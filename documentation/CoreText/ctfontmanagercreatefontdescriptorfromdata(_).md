@@ -25,11 +25,11 @@ func CTFontManagerCreateFontDescriptorFromData(_ data: CFData) -> CTFontDescript
 extern CTFontDescriptorRefCTFontManagerCreateFontDescriptorFromData(CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A font descriptor created from the data or `NULL` if it is not a valid font.
 
-#### Discussion
+## Discussion
 
 If the data contains a font collection (TTC or OTC), only the first font in the collection will be returned. Use [`CTFontManagerCreateFontDescriptorsFromData(_:)`](./ctfontmanagercreatefontdescriptorsfromdata%28_%29.md) in that case.
 

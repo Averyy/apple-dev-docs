@@ -20,11 +20,11 @@ var defaultPhotoSettings: AVCapturePhotoSettings { get }
 @property (nonatomic, readonly) AVCapturePhotoSettings * defaultPhotoSettings;
 ```
 
-#### Return Value
+## Return Value
 
 An `AVCapturePhotoSettings` object.
 
-#### Discussion
+## Discussion
 
 Calling this getter will return a new instance that may be mutated to customize settings. Pass that instance to `captureHighResolutionFrameUsingPhotoSettings:completion:` to capture a high resolution frame with custom settings.
 

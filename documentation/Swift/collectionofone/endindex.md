@@ -21,7 +21,7 @@ The “past the end” position—that is, the position one greater than the las
 var endIndex: CollectionOfOne<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In a `CollectionOfOne` instance, `endIndex` is always `1`.
 

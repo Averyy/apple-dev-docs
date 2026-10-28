@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two plane geometries are equal.
 static func == (lhs: PlaneAnchor.Geometry, rhs: PlaneAnchor.Geometry) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two plane geometries are equal; otherwise, `false`.
 

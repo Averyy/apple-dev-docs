@@ -21,11 +21,11 @@ Creates and returns an array containing the objects in the argument list.
 + (instancetype) arrayWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the objects in the argument list.
 
-#### Discussion
+## Discussion
 
 Pass comma-separated list of trailing variadic arguments as additional objects, ending with `nil`.
 

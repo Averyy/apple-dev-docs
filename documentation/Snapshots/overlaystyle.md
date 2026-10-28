@@ -15,7 +15,7 @@ A  JSON object that describes reusable styles for an overlay.
 object OverlayStyle
 ```
 
-#### Discussion
+## Discussion
 
 You pass the `OverlayStyle` object properties from the `overlayStyles` query parameter. You can set the object properties and reuse the styles for multiple objects. Any changes made to an `OverlayStyle` object property automatically changes the styles associated with that object, unless they’re overwritten using the `Overlay` object.
 

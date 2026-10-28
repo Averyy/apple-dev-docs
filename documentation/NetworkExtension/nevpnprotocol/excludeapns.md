@@ -27,7 +27,7 @@ var excludeAPNs: Bool { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the system excludes Apple Push Notification services (APNs) traffic, but only when the [`includeAllNetworks`](./includeallnetworks.md) property is also [`true`](../../Swift/true.md). [`NETransparentProxyManager`](../netransparentproxymanager.md) doesn’t support this property.
 

@@ -21,7 +21,7 @@ Return the `Character` starting at `currentCodeUnitOffset`. After the function r
 mutating func next() -> Character?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if at the end of the `UTF8Span`.
 

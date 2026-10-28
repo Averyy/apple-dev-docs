@@ -21,7 +21,7 @@ Accesses a nested property on a collection element by index.
 subscript(index: Int) -> DynamicPropertyPath { get }
 ```
 
-#### Overview
+## Overview
 
 The code below shows the syntactic sugar and the equivalent, desugared, subscript syntax.
 

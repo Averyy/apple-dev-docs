@@ -25,11 +25,11 @@ typealias CFDictionaryHashCallBack = (UnsafeRawPointer?) -> CFHashCode
 typedef unsigned long (*)(const void *) CFDictionaryHashCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that can be used as a table address in a hash table structure.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFDictionaryCreate(_:_:_:_:_:_:)`](./cfdictionarycreate%28_,_,_,_,_,_%29.md) in a [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) structure.
 

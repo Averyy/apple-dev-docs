@@ -25,11 +25,11 @@ func currentTime() -> CMTime
 - [Scheduling media in plug-ins](../../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Return Value
+## Return Value
 
 The current time, expressed as a rational time.
 
-#### Discussion
+## Discussion
 
 This is useful when a custom parameter view needs to set a parameter value in response to a user event. Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

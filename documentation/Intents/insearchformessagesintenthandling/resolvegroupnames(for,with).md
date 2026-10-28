@@ -33,7 +33,7 @@ optional func resolveGroupNames(for intent: INSearchForMessagesIntent) async -> 
 - (void) resolveGroupNamesForSearchForMessages:(INSearchForMessagesIntent *) intent withCompletion:(void (^)(NSArray<INStringResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -25,15 +25,15 @@ init(persistentStoreCoordinator root: NSPersistentStoreCoordinator?, configurati
 - (instancetype) initWithPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) root configurationName:(NSString *) name URL:(NSURL *) url options:(NSDictionary *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new store object, associated with `coordinator`, that represents a persistent store at url using the options in `options` and—if it is not `nil`—the managed object model configuration `configurationName`.
 
-#### Discussion
+## Discussion
 
 You must ensure that you load metadata during initialization and set it using [`metadata`](./metadata.md).
 
-##### Special Considerations
+### Special Considerations
 
 This is the designated initializer for persistent stores.
 

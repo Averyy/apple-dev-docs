@@ -24,7 +24,7 @@ class WKContentRuleListStore
 @interface WKContentRuleListStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`WKContentRuleListStore`](./wkcontentruleliststore.md) to compile and manage rules for filtering content in a web view. Rule lists act as content blockers inside your app. You use them to prevent the web view from loading specific content, either based on the original location of that content or other criteria you specify. For example, a corporate app might use rules to prevent the web view from loading content that originates from outside the corporate network.
 

@@ -19,7 +19,7 @@ case informational
 NSAlertStyleInformational
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of alert when the alert’s content is less severe than [`NSAlert.Style.warning`](./warning.md).
 

@@ -19,7 +19,7 @@ case unexpectedEOF
 NSImageRepLoadStatusUnexpectedEOF
 ```
 
-#### Discussion
+## Discussion
 
 [`incrementalLoad(from:complete:)`](../incrementalload%28from,complete%29.md) was called with [`true`](../../../Swift/true.md), but not enough data was available for decompression. The image contains the portions of the data that have already been successfully decompressed, if any.
 

@@ -17,7 +17,7 @@ An action that dismisses an immersive space.
 struct DismissImmersiveSpaceAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`dismissImmersiveSpace`](./environmentvalues/dismissimmersivespace.md) environment value to get an instance of this type for a given [`Environment`](./environment.md). Then call the instance to dismiss a space. You call the instance directly because it defines a [`callAsFunction()`](./dismissimmersivespaceaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 

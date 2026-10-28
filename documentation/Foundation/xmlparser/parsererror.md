@@ -25,7 +25,7 @@ var parserError: (any Error)? { get }
 @property (copy, readonly, nullable) NSError * parserError;
 ```
 
-#### Discussion
+## Discussion
 
 You may access this property after a parsing operation abnormally terminates to determine the cause of error.
 

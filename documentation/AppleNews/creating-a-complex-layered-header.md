@@ -5,7 +5,7 @@
 
 Layer a title and heading in front of an image, with their colors optimized for legibility.
 
-#### Overview
+## Overview
 
 In the first advanced tutorial, you created a header with layering and parallax behavior.
 
@@ -13,7 +13,7 @@ In this second article, you’ll add more code to the same article to modify the
 
 **On this page, you’ll learn how to create a more complex layered header.**
 
-##### Move Title and Heading Text into the Header
+### Move Title and Heading Text into the Header
 
 First, you need to layer title and heading information in front of the header’s image fill. You’ll move `heading1`, `divider`, and `title` components from the second section of the article into the `header` component.
 
@@ -29,7 +29,7 @@ Your code should look like the example code [Moving Components: Result](./creati
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the title is layered in front of the header as shown in the previous figure.
 
-###### Moving Components: Result
+#### Moving Components: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -102,7 +102,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Create More Space Above the Intro Component
+### Create More Space Above the Intro Component
 
 When you moved your title in [Move Title and Heading Text into the Header](./creating-a-complex-layered-header.md#Move-Title-and-Heading-Text-into-the-Header), the spacing around your `intro` component changed. You can use an already defined `ComponentLayout` object to create more space above the `intro` component.
 
@@ -112,7 +112,7 @@ Your code should look like the example code [Intro ComponentLayout Object: Resul
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the adjustment to the `intro` component’s position.
 
-###### Intro ComponentLayout Object: Result
+#### Intro ComponentLayout Object: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -149,7 +149,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Anchor the Title to the Bottom of the Header
+### Anchor the Title to the Bottom of the Header
 
 If you anchor multiple child components to the same side of the parent, the children will stack as in the following figure. This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [Use the Dark Background and Light Text](./creating-a-complex-layered-header.md#Use-the-Dark-Background-and-Light-Text).
 
@@ -163,7 +163,7 @@ Your code should look like the example code [Header Contents: Result](./creating
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the article title information is anchored to the bottom of the header.
 
-###### Header Contents: Copy This Code
+#### Header Contents: Copy This Code
 
 ```json
             {
@@ -212,7 +212,7 @@ After you make this change in your code, you can preview your working `article.j
             }
 ```
 
-###### Header Contents: Result
+#### Header Contents: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -295,7 +295,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Dark Background for the Title and Heading
+### Define a Dark Background for the Title and Heading
 
 To add contrast to your title and heading text, you can adjust the text color and the background of the text’s parent container. You’ll set the title container background to a gradient that fades from transparent at the top to black at the bottom.
 
@@ -306,7 +306,7 @@ To add contrast to your title and heading text, you can adjust the text color an
 
 Your code should look like the example code [scrimBackgroundStyle: Result](./creating-a-complex-layered-header.md#scrimBackgroundStyle-Result).
 
-###### scrimBackgroundStyle: Copy This Code
+#### scrimBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -325,7 +325,7 @@ Your code should look like the example code [scrimBackgroundStyle: Result](./cre
     }
 ```
 
-###### scrimBackgroundStyle: Result
+#### scrimBackgroundStyle: Result
 
 ```json
 {
@@ -350,7 +350,7 @@ Your code should look like the example code [scrimBackgroundStyle: Result](./cre
 }
 ```
 
-##### Define a Light Text Style for Heading Text
+### Define a Light Text Style for Heading Text
 
 Before you can lighten the text of the heading, you must define a new `ComponentTextStyle` object.
 
@@ -359,7 +359,7 @@ Before you can lighten the text of the heading, you must define a new `Component
 
 Your code should look like the example code [heading1Light: Result](./creating-a-complex-layered-header.md#heading1Light-Result).
 
-###### heading1Light: Copy This Code
+#### heading1Light: Copy This Code
 
 ```json
 ,
@@ -368,7 +368,7 @@ Your code should look like the example code [heading1Light: Result](./creating-a
     }
 ```
 
-###### heading1Light: Result
+#### heading1Light: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -386,7 +386,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ```
 
-##### Use the Dark Background and Light Text
+### Use the Dark Background and Light Text
 
 Now you can add references to the `scrimBackgroundStyle` and `heading1Light` objects.
 
@@ -395,7 +395,7 @@ Now you can add references to the `scrimBackgroundStyle` and `heading1Light` obj
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the optimized styling of your header.
 
-###### Dark Background and Light Text: Result
+#### Dark Background and Light Text: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -454,11 +454,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Viewing the Finished Article for Advanced Design Tutorial 1](./viewing-the-finished-article-for-advanced-design-tutorial-1.md)
 
-##### Next
+### Next
 
 [Creating a Floating Caption](./creating-a-floating-caption.md)
 

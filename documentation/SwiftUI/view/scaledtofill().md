@@ -22,11 +22,11 @@ nonisolated
 func scaledToFill() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that scales this view to fill its parent, maintaining this view’s aspect ratio.
 
-#### Discussion
+## Discussion
 
 Use `scaledToFill()` to scale this view to fill its parent, while maintaining the view’s aspect ratio as the view scales:
 

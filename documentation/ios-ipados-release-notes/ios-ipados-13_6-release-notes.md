@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.6. The SDK comes bundled with Xcode 11.6. For information on the compatibility requirements for Xcode 11.6, see [Xcode 11.6 Release Notes](../Xcode-Release-Notes/xcode-11_6-release-notes.md).
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - New data types are available in HealthKit to track symptoms including headaches, chills, sore throat, and more. (63148620)
 
-##### Home Screen
+### Home Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Home Screen web apps support `data:` URLs as expected. (62738434)
 

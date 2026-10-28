@@ -24,11 +24,11 @@ func attributedString(from contact: CNContact, defaultAttributes attributes: [An
 - (NSAttributedString *) attributedStringFromContact:(CNContact *) contact defaultAttributes:(NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The formatted contact name as an attributed string.
 
-#### Discussion
+## Discussion
 
 This method behaves similarly to [`string(from:style:)`](./string%28from,style%29.md), except that it returns an attributed string. It includes the attribute key [`CNContactPropertyAttribute`](../cncontactpropertyattribute.md) whose attribute values are contact property keys, such as [`CNContactGivenNameKey`](../cncontactgivennamekey.md). This identifies the name components in the formatted contact name.
 

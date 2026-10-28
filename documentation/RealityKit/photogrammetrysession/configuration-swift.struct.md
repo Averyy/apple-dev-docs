@@ -22,7 +22,7 @@ struct Configuration
 
 - [Creating 3D objects from photographs](../creating-3d-objects-from-photographs.md)
 
-#### Overview
+## Overview
 
 A [`PhotogrammetrySession.Configuration`](./configuration-swift.struct.md) instance may be passed in to any of the [`PhotogrammetrySession`](../photogrammetrysession.md) initializers to override its default values.
 

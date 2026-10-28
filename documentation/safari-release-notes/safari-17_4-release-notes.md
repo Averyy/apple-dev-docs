@@ -5,17 +5,17 @@
 
 Released March 5, 2024 — 17.4  (19618.1.15)
 
-#### Overview
+## Overview
 
 Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, macOS Monterey, and macOS Ventura.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added support for the new CSS `content` alternative text syntax.  (26942023)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed exposing the correct `<summary>` element role.  (13661104)
 - Fixed non-accessible content within iframes with ARIA roles.  (104611075)
@@ -27,26 +27,26 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed: Removed the default ARIA-level heading for a heading role, matching removal from ARIA specifications.  (119059172)
 - Fixed text missing from accessibility labels for many common shadow DOM scenarios.  (120223342)
 
-##### AutoFill
+### AutoFill
 
-###### New Features
+#### New Features
 
 - Added support for Apple Cash virtual card numbers and showing the user their Apple Cash balance when using AutoFill.  (107634154)
 
-##### Browser Changes
+### Browser Changes
 
-###### New Features
+#### New Features
 
 - Added support for webpage translation in `<iframe>` elements.  (99293324)
 - Added support for hiding titles in the Favorites Bar.  (119145918)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed loading a ⌘Click fragment link in a background tab.  (119079650)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `@scope`.  (82359096)
 - Added support for percentages in `letter-spacing` and `word-spacing`.  (114538918)
@@ -57,7 +57,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Added support for `::grammar-error` and `::spelling-error`  (119314048)
 - Added support for `align-content` on table cells.  (119701629)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the default link color contrast for the dark color scheme.  (61149466)
 - Fixed `getComputedStyle()` for invalid pseudo-elements.  (98504661)
@@ -84,20 +84,20 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed `:not(:has(:not(foo)))` getting misclassified as scope breaking.  (120492012)
 - Fixed the name for a `::slotted` pseudo-element in a container query getting resolved against the wrong scope.  (122224135)
 
-###### Deprecations
+#### Deprecations
 
 - Made `-apple-` prefixed pseudo-elements no longer valid.  (120268884)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added support for vertical writing mode support for form controls.  (12072686)
 - Added support for `<hr>` inside `<select>` rendered as a separator on iOS.  (108783915)
 - Added support for the `showPicker()` method for `<input type="date">` on macOS.  (110099910)
 - Added support for `<input type="checkbox" switch>`.  (119378678)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<select>` not refreshing the dropdown after an `<option>` is removed on iPad.  (88292987)
 - Fixed `text-indent` to affect the selected file(s) label for file inputs.  (105223868)
@@ -105,23 +105,23 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed serialization of `autocomplete` with a `webauthn` token.  (116107937)
 - Fixed `<option>` elements outside of an `<optgroup>` getting added to the preceding group.  (117930480)
 
-##### Fullscreen
+### Fullscreen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed viewport units to be correct after entering and exiting fullscreen mode on iOS, iPadOS, and in visionOS.  (120496571)
 
-##### HTML
+### HTML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the `system-ui` font family within `<canvas>`.  (117231545)
 - Fixed `<progress>` to use the page’s preferred rendering update interval.  (118976548)
 - Fixed missing support for the `direction` attribute in the list of attributes whose values are matched case-insensitively with attribute selectors.  (119432066)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for `Promise.withResolvers`.  (116473362)
 - Added `TimeZoneOffset` format support to `Intl.DateTimeFormat`.  (117124296)
@@ -129,7 +129,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Enabled Array group methods.  (118037635)
 - Added support for `ArrayBuffer.prototype.detached`, `ArrayBuffer.prototype.transfer`, and `ArrayBuffer.prototype.transferToFixedLength`.  (118037759)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed stringification algorithm of the Function constructor to match specifications.  (102065151)
 - Fixed block-level function declarations to have correct scope in global code and aligned the detection of hoistable block-level legacy function declarations with the spec.  (113880075)
@@ -138,22 +138,22 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed Temporal options handling to align with the specification.  (118088676)
 - Fixed `Temporal.Now.timeZone()` to be updated to `timeZoneId()`.  (118674314)
 
-##### Loading
+### Loading
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Link-stylesheet elements to not fire load events for non-text/css and non-2XX responses.  (116112223)
 - Fixed link-stylesheet elements to not fire load events for non-2XX responses such as 3XX responses that do not redirect.  (116331826)
 
-##### Lockdown Mode
+### Lockdown Mode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Lockdown Mode disabling on sites with COOP and COEP HTTP headers.  (119503109)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for all of HTML’s character entities in WebVTT.  (51064890)
 - Added support for VP8/VP9 and WebM on iOS and iPadOS.  (64825245)
@@ -162,7 +162,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Added support for the Vorbis audio codec on iOS, iPadOS, and in visionOS.  (116776158)
 - Added prioritizing video sources with power efficient hardware-decoded codecs before software-decoded codecs.  (120679553)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebVTT regions to position according to specifications.  (23091897)
 - Fixed pausing MediaRecorder continuing to call `ondataavailable` at every timeslice event.  (115979604)
@@ -189,9 +189,9 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed Netflix.com content that can become zoomed-in and cropped when in fullscreen mode.  (121822831)
 - Fixed pseudo-element font size calculation to fix subtitle size in fullscreen mode.  (122584350)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrectly oriented Traditional Mongolian script characters.  (93426525)
 - Fixed resizing behavior with `writing-mode: vertical-rl` or `direction: rtl`.  (102620110)
@@ -216,72 +216,72 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed a line break at gaps between two inline elements in a container with `white-space: nowrap`.  (121859917)
 - Fixed cropped first letter for custom fonts that report negative advance width.  (121891210)
 
-###### Deprecations
+#### Deprecations
 
 - Removed `margin-trim` behavior for floats to match specification changes.  (115794102)
 
-##### Safari Extensions
+### Safari Extensions
 
-###### New Features
+#### New Features
 
 - Extensions that haven’t been granted permission to Private Browsing can now open Private Browsing windows.  (105983371)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed sending an error back to the caller if an error occurs for `scripting.executeScript()`.  (107996753)
 - Fixed an issue where scripts may not be removed after calling `scripting.unregisterContentScripts()`.  (113171510)
 
-##### Scrolling
+### Scrolling
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed unusable horizontal scrollbars for right-to-left, `vertical-rl`, or flexbox reverse mode elements.  (104944522)
 - Fixed a `scrollTo()` followed by an animated scroll ending at the wrong scroll position.  (117608836)
 - Fixed wheel overflow behavior with Shadow DOM elements.  (118496293)
 - Fixed keyboard scrolling beyond the page getting stuck at a bad scroll offset.  (120053910)
 
-##### Storage
+### Storage
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed cases where website data is unexpectedly evicted.  (119818267)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for `kernelUnitLengthX` and `kernelUnitLengthY` for SVGFESpecularLightingElement.  (118768259)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed applying `rx` or `ry` exclusively via CSS having no effect.  (113500023)
 - Fixed negative SVGTransform scale values to be correctly stringified.  (118656892)
 - Fixed the layout of an SVG when it is inside an `<iframe>` without affecting the size of the `<iframe>`.  (120178866)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for SVGRenderingIntent.  (102516681)
 
-##### URLs
+### URLs
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed CSS invoked URL parsing to always use UTF-8 as agreed by the W3C CSS WG.  (114889625)
 
-##### Web Animations
+### Web Animations
 
-###### New Features
+#### New Features
 
 - Added support for `transition-behavior: allow-discrete`.  (108703206)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed style invalidation for animations.  (118500247)
 - Fixed a paused animation where `currentTime` is changed to 0 not restarting when unpaused.  (118826588)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added `Element.prototype.setHTMLUnsafe()`, `ShadowRoot.prototype.setHTMLUnsafe()`, and `Document.parseHTMLUnsafe()` methods.  (115345128)
 - Added `scaleNonUniform` in DOMMatrixReadOnly.  (117875678)
@@ -290,7 +290,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Added ShadowRoot `clonable` property.  (119707278)
 - Added support for CustomStateSet in custom elements and `:state()` pseudo-class.  (120072599)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed invalid coordinates on `wheel` and `gesturechange` events inside an iframe.  (105243167)
 - Fixed HTMLAreaElement to align with the HTML Standard.  (110028213)
@@ -315,40 +315,40 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed changing HTMLCanvasElement width or height causing intermediate buffer allocations.  (122309325)
 - Fixed canvas `captureStream` stuttering with WebGL.  (122471664)
 
-##### Web Apps
+### Web Apps
 
-###### New Features
+#### New Features
 
 - Added support for the shortcuts manifest member on macOS. Shortcuts are available in the File menu and the Dock context menu. Users can set up custom keyboard shortcuts for them in System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts.  (106137954)
 - Added support for the categories manifest member on macOS. When creating a Launchpad folder containing web apps, the folder is automatically named accordingly.  (116480550)
 
-##### Web Assembly
+### Web Assembly
 
-###### New Features
+#### New Features
 
 - Enabled extended constant expressions.  (118190467)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for grouping source map load errors.  (109239646)
 - Added support for logging a message to the Console when a page attempts to load a font URL blocked by Lockdown Mode.  (114657783)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Home Screen Web Apps in Simulator to be listed under a “Home Screen Web Apps” section in the device submenu of the Develop menu.  (117742935)
 - Fixed the `tan()` function to not trigger the color picker.  (118724061)
 
-##### WebAuthn
+### WebAuthn
 
-###### New Features
+#### New Features
 
 - Added support for `getClientCapabilities()`.  (119058559)
 
-##### WebGL
+### WebGL
 
-###### New Features
+#### New Features
 
 - Added support for new WebGL extensions:
 
@@ -357,22 +357,22 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
   - `EXT_polygon_offset_clamp`
   - `WEBGL_polygon_mode`  (118110035)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Canvas WebGL context capture to WebCodecsVideoFrame not capturing all frames.  (108459224)
 - Fixed: Improved performance of MSAA rendering, including antialiased default framebuffer and fixed PBO uploads of PVRTC1 textures.  (117461678)
 - Fixed WebGL OffscreenCanvas returning the previously created WebGL1 context when asking for WebGL2.  (119028794)
 - Fixed WebGL to be available in nested workers.  (120279728)
 
-##### WebKit
+### WebKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed HTML content not displaying in a Simulator, affecting projects using the web extension project template.  (121338366)
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed media tracks obtained with `{"width":1920,"height":1080,"frameRate":24}`.  (61747755)
 - Fixed triggering resolution scaling in the case of WebRTC maintain-framerate `degradationPreference`.  (121041723)

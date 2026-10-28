@@ -23,7 +23,7 @@ init(markerAt markerTime: CMTime, duration: CMTime = .invalid)
 
 Available when `Content` is `Never`.
 
-#### Discussion
+## Discussion
 
 Marker-only sample buffers are meant to carry attachments that communicate a state change between sample buffers. To set attachments on the sample buffer please to access the underlying sample buffer instance as follows:
 

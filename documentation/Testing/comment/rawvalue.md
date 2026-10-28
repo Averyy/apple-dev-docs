@@ -23,7 +23,7 @@ The single comment string that this comment contains.
 var rawValue: String
 ```
 
-#### Discussion
+## Discussion
 
 To get the complete set of comments applied to a test, see [`comments`](../test/comments.md).
 

@@ -21,7 +21,7 @@ Creates an empty publisher with the given completion behavior and output and fai
 init(completeImmediately: Bool = true, outputType: Output.Type, failureType: Failure.Type)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to connect the empty publisher to subscribers or other publishers that have specific output and failure types.
 

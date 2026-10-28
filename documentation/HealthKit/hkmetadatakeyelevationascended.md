@@ -24,7 +24,7 @@ let HKMetadataKeyElevationAscended: String
 extern NSString * const HKMetadataKeyElevationAscended;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](./hkquantity.md) object with a length unit.
 

@@ -21,7 +21,7 @@ Search suggestions render automatically based on the surrounding context.
 static var automatic: SearchSuggestionsPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 The behavior varies by platform:
 

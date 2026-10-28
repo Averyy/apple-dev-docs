@@ -21,11 +21,11 @@ Decodes an object for the key, restricted to the specified classes.
 - (id) decodeObjectOfClasses:(NSSet<Class> *) classes forKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object.
 
-#### Discussion
+## Discussion
 
 The class of the object may be any class in the `classes` set, or a subclass of any class in the set. Otherwise, the behavior is the same as [`decodeObjectOfClass:forKey:`](./decodeobjectofclass_forkey_.md).
 

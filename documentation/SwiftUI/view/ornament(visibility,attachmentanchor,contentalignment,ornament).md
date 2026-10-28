@@ -16,7 +16,7 @@ Presents an ornament.
 nonisolated func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ContentBuilder ornament: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to show an ornament at the specified position. The example below displays an ornament below the window:
 

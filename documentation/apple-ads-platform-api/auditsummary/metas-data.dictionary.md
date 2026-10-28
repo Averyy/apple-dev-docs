@@ -15,7 +15,7 @@ An array of per-entity metadata entries, populated when the request includes met
 object AuditSummary.Metas
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in `metas` corresponds to one changed entity within the transaction and entity-type grouping that the parent `AuditSummary` row describes. An entry has the shape:
 

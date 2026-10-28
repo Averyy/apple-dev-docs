@@ -21,7 +21,7 @@ Returns a new rotation from a double-precision quaternion.
 init(_ quaternion: simd_quatd)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

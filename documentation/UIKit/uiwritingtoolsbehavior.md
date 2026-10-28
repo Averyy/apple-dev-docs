@@ -22,7 +22,7 @@ enum UIWritingToolsBehavior
 enum UIWritingToolsBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Writing tools provide proofreading and rewriting support for the content of text views. On devices that support writing tools features, people engage the system UI to choose how to rewrite all or part of the available text. These constants indicate whether people experience writing tools inline with their text, in an overlay panel, or not at all.
 

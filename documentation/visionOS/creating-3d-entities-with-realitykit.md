@@ -10,7 +10,7 @@ Display a horizontal row of three-dimensional shapes in your visionOS app, using
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create and display 3D objects using predefined methods in `MeshResource`, such as [`generateBox(size:cornerRadius:)`](../RealityKit/meshresource/generatebox%28size,cornerradius%29-8em0v.md) for creating a box and [`generateSphere(radius:)`](../RealityKit/meshresource/generatesphere%28radius%29.md) for creating a sphere. Additionally, it shows how to use [`SimpleMaterial`](../RealityKit/simplematerial.md) to apply a white material. By combining the mesh and material, you can create a [`ModelComponent`](../RealityKit/modelcomponent.md) for your visionOS app with RealityKit.
 
@@ -26,7 +26,7 @@ The sample app draws the following entities in its main view:
 
 RealityKit defines the `Box`, `Sphere`, `Cone`, and `Cylinder` types, and the app creates a `roundedBox` type by adding a `cornerRadius` to `Box`.
 
-##### Add 3D shapes to the view
+### Add 3D shapes to the view
 
 The app’s main view renders the entity using `RealityView` and adds the shape using the `addGeometryShapes(to:)` method.
 
@@ -66,7 +66,7 @@ struct ShapesView: View {
 
 The `addGeometryShapes(to:)` method sets an array of 3D entities in a row along the x-axis, including a box, a rounded box, a sphere, a cone, and a cylinder, with an offset of 0.125 between each.
 
-##### Create a primitives 3D view extension
+### Create a primitives 3D view extension
 
 The `ShapesView` extension defines the entity types for the box, sphere, cone, and cylinder with white material by:
 
@@ -159,16 +159,16 @@ extension Primitives3DView {
 }
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Creating 2D shapes with SwiftUI](./creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 - [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 
-###### Related articles
+#### Related articles
 
 - [Understanding the modular architecture of RealityKit](./understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

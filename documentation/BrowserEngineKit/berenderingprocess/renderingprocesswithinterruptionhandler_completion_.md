@@ -17,7 +17,7 @@ Launches a rendering extension process asynchronously.
 + (void) renderingProcessWithInterruptionHandler:(void (^)()) interruptionHandler completion:(void (^)(BERenderingProcess *process, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app can run one instance of each of its rendering extensions. The first time you call this method, the system launches your rendering extension. If you subsequently call this method, or you call [`renderingProcessWithBundleID:interruptionHandler:completion:`](./renderingprocesswithbundleid_interruptionhandler_completion_.md) with `nil` as the bundle identifier, your completion handler gets a reference to the same process.
 

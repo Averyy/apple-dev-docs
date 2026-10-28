@@ -22,7 +22,7 @@ nonisolated
 func mask<C>(@ContentBuilder content: () -> C) -> some ChartContent where C : ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 Parameter content: The content whose alpha will be applied to this item.
 

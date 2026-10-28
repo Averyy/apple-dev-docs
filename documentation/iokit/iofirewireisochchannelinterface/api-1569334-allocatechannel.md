@@ -16,11 +16,11 @@ Prepare all hardware to begin sending or receiving isochronous data.
 IOReturn (*AllocateChannel)(IOFireWireLibIsochChannelRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Calling this function will result in all listener and talker ports on this isochronous channel having their AllocatePort method called.
 

@@ -24,7 +24,7 @@ class let silenceSecondaryAudioHintNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionSilenceSecondaryAudioHintNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Subscribe to this notification to ensure that the system notifies your app when optional secondary audio muting should begin or end. The system sends this notification only to registered listeners who are currently in the foreground and have an active audio session.
 

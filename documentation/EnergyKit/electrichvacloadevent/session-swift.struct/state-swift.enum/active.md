@@ -17,7 +17,7 @@ A state that represents all electricity consumption events with active states.
 case active
 ```
 
-#### Discussion
+## Discussion
 
 The events are relative to the begin state corresponding to the `begin` events session ID.
 

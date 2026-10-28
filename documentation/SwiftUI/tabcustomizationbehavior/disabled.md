@@ -18,7 +18,7 @@ The customization behavior isn’t available.
 static var disabled: TabCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior may not be removed. Use this behavior for the most important items that users need for the app to do common functionality.
 

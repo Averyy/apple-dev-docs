@@ -23,7 +23,7 @@ var flashOn: NSNumber? { get set }
 @property (strong, getter=isFlashOn, nullable) NSNumber * flashOn;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is 1 if the flash is on; otherwise, 0.
 

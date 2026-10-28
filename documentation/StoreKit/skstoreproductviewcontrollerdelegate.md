@@ -22,7 +22,7 @@ protocol SKStoreProductViewControllerDelegate : NSObjectProtocol
 @protocol SKStoreProductViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Typically, this protocol is implemented by the view controller in your application that originally displayed the store screen.
 

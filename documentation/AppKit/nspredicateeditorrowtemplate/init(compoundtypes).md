@@ -19,11 +19,11 @@ init(compoundTypes: [NSNumber])
 - (instancetype) initWithCompoundTypes:(NSArray<NSNumber *> *) compoundTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A row template initialized for displaying compound predicates of the types specified by `compoundTypes`.
 
-#### Discussion
+## Discussion
 
 [`NSPredicateEditor`](../nspredicateeditor.md) contains such a template by default.
 

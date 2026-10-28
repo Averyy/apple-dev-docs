@@ -23,7 +23,7 @@ typealias DrawingActions = (UIGraphicsPDFRendererContext) -> Void
 typedef void (^)(UIGraphicsPDFRendererContext *) UIGraphicsPDFDrawingActions;
 ```
 
-#### Discussion
+## Discussion
 
 `UIGraphicsPDFDrawingActions` defines a block type that takes a [`UIGraphicsPDFRendererContext`](../uigraphicspdfrenderercontext.md) object as an argument and has no return value.
 

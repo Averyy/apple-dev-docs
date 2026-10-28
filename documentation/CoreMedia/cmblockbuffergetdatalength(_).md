@@ -25,11 +25,11 @@ func CMBlockBufferGetDataLength(_ theBuffer: CMBlockBuffer) -> Int
 extern size_t CMBlockBufferGetDataLength(CMBlockBufferRef theBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the total data length available via this `CMBlockBuffer`, or zero if it is empty, `NULL` if invalid.
 
-#### Discussion
+## Discussion
 
 Obtains the total data length reachable via a `CMBlockBuffer`. This total is the sum of the `dataLengths` of the `CMBlockBuffer's` memoryBlocks and buffer references. Note that the `dataLengths` are the portions of those constituents that this `CMBlockBuffer` subscribes to. This `CMBlockBuffer` presents a contiguous range of offsets from zero to its `totalDataLength` as returned by this routine.
 

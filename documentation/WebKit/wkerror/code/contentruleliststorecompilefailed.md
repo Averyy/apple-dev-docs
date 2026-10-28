@@ -23,7 +23,7 @@ case contentRuleListStoreCompileFailed
 WKErrorContentRuleListStoreCompileFailed
 ```
 
-#### Discussion
+## Discussion
 
 Check the [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary of the error object for an explanation of the compilation error that occurred.
 

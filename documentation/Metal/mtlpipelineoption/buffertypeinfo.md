@@ -24,7 +24,7 @@ static var bufferTypeInfo: MTLPipelineOption { get }
 MTLPipelineOptionBufferTypeInfo
 ```
 
-#### Discussion
+## Discussion
 
 This option provides the [`bufferStructType`](../mtlargument/bufferstructtype.md) and [`bufferPointerType`](../mtlargument/bufferpointertype.md) properties for the [`MTLPipelineOption`](../mtlpipelineoption.md) stored in [`argumentInfo`](./argumentinfo.md).
 

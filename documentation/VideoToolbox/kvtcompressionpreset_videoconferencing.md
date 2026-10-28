@@ -22,7 +22,7 @@ let kVTCompressionPreset_VideoConferencing: CFString
 extern CFStringRef const kVTCompressionPreset_VideoConferencing;
 ```
 
-#### Discussion
+## Discussion
 
 A preset to achieve low-latency encoding for real-time communication applications.
 

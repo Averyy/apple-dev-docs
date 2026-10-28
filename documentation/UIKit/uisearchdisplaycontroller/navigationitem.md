@@ -21,7 +21,7 @@ var navigationItem: UINavigationItem? { get }
 @property (nonatomic, readonly, nullable) UINavigationItem * navigationItem;
 ```
 
-#### Discussion
+## Discussion
 
 You can configure the navigation item as described in the [`UINavigationItem`](../uinavigationitem.md), with the exception of configuring the title view.
 

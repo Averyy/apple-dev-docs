@@ -17,7 +17,7 @@ Parameter for convolutions allowing single integers or tuples.
 struct IntOrPair
 ```
 
-#### Overview
+## Overview
 
 For example the numeric parameters here are all [`IntOrPair`](./intorpair.md):
 
@@ -25,7 +25,7 @@ For example the numeric parameters here are all [`IntOrPair`](./intorpair.md):
 conv2d(input, weights, stride: 3, padding: [2, 2], padding: .init((2, 3)))
 ```
 
-##### See Also:
+### See Also:
 
 - [`IntOrArray`](./intorarray.md)
 

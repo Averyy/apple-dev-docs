@@ -24,7 +24,7 @@ static var extendedLimits: MTLAccelerationStructureUsage { get }
 MTLAccelerationStructureUsageExtendedLimits
 ```
 
-#### Discussion
+## Discussion
 
 The acceleration structures you build with this option can affect their performance because they support more data complexity.
 

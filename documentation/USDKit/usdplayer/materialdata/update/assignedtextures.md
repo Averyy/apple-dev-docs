@@ -20,7 +20,7 @@ Updated texture bindings.
 let assignedTextures: [String : USDPlayer.TextureID]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

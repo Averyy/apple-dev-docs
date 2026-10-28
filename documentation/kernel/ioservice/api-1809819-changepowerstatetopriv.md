@@ -12,11 +12,11 @@ IOReturn changePowerStateToPriv(
  unsigned longordinal );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 A driver uses this method to tell its superclass to change the power state of the device. This is the recommended way to change the power state of a device. Three things affect driver power state: changePowerStateTo, `changePowerStateToPriv`, and the desires of the driver's power plane children. Power management puts the device into the maximum state governed by those three entities. Drivers may eliminate the influence of the `changePowerStateTo` method on power state one of two ways. See powerOverrideOnPriv to ignore the method's influence, or call `changePowerStateTo(0)` in the driver's `start` routine to remove the `changePowerStateTo` method's power request.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether use of an app contributes data to SensorK
 
 **Default**: `YES`
 
-#### Discussion
+## Discussion
 
 The default value is `YES`.
 

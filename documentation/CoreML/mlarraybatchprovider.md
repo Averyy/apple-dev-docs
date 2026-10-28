@@ -25,7 +25,7 @@ class MLArrayBatchProvider
 @interface MLArrayBatchProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 This batch provider supports an array of feature providers or a dictionary of arrays of feature values.
 

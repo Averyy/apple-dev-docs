@@ -21,7 +21,7 @@ A reserved unassigned code point or a non-character.
 case unassigned
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Unassigned` (abbreviated `Cn`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

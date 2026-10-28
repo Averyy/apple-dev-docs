@@ -21,7 +21,7 @@ A token you use with the External Purchase custom link API.
 struct Token
 ```
 
-#### Overview
+## Overview
 
 StoreKit returns an external purchase token of this type when you call the [`token(for:)`](./token%28for%29-6pixj.md) function. For more information, see [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md).
 

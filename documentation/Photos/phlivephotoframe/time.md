@@ -25,7 +25,7 @@ var time: CMTime { get }
 @property (readonly) CMTime time;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this value to vary your image processing over time, creating animated effects. For example, the following code sets up an animated filter that fades from sepia tone to original to sepia tone again over the duration of the Live Photo:
 

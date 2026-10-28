@@ -23,7 +23,7 @@ var window: (any WKWebExtensionWindow)? { get }
 @property (nonatomic, strong, readonly, nullable) id<WKWebExtensionWindow> window;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, no window was specified.
 

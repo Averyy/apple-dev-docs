@@ -32,7 +32,7 @@ func addGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer)
 - [Handling swipe gestures](../handling-swipe-gestures.md)
 - [Handling tap gestures](../handling-tap-gestures.md)
 
-#### Discussion
+## Discussion
 
 Attaching a gesture recognizer to a view defines the scope of the represented gesture, causing it to receive touches hit-tested to that view and all of its subviews. The view establishes a strong reference to the gesture recognizer.
 

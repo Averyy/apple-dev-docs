@@ -20,7 +20,7 @@ The `BloomComponent` adds a luminous glow effect around bright objects in the sc
 struct BloomComponent
 ```
 
-#### Overview
+## Overview
 
 Bloom is available on devices with Apple7 GPU family feature support. Note: On visionOS, Bloom only works in an immersive space and will have no effect in a shared space.
 
@@ -44,7 +44,7 @@ bloomOptionsComponent.threshold = 0
 self.root.components.set(bloomOptionsComponent)
 ```
 
-#### Performance and thermal state
+## Performance and thermal state
 
 Bloom is a screen-space effect, so its cost scales with how much of the screen it touches. There are two distinct contributions to keep in mind:
 

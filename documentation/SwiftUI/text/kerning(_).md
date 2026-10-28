@@ -22,11 +22,11 @@ nonisolated
 func kerning(_ kerning: CGFloat) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with the specified amount of kerning.
 
-#### Discussion
+## Discussion
 
 Kerning defines the offset, in points, that a text view should shift characters from the default spacing. Use positive kerning to widen the spacing between characters. Use negative kerning to tighten the spacing between characters.
 

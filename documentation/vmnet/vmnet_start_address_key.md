@@ -20,7 +20,7 @@ let vmnet_start_address_key: UnsafePointer<CChar>
 extern const char * const vmnet_start_address_key;
 ```
 
-#### Discussion
+## Discussion
 
 This address to use as the gateway address. The framework places subsequent address up to and including `vmnet_end_address_key` in the DHCP pool. All other addresses are available for static assignment. The address needs to meet the folloowing requirements:
 

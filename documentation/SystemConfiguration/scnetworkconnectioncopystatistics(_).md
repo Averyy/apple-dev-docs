@@ -19,11 +19,11 @@ func SCNetworkConnectionCopyStatistics(_ connection: SCNetworkConnection) -> CFD
 CFDictionaryRefSCNetworkConnectionCopyStatistics(SCNetworkConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 The statistics dictionary, or `NULL` if an error occurred (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
-#### Discussion
+## Discussion
 
 A statistics dictionary contains specific dictionaries with statistics for each subcomponent of the service. For example, a statistics dictionary for PPP contains the following sub-dictionaries, keys, and values:
 

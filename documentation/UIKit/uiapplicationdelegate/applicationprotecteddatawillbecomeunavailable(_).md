@@ -27,7 +27,7 @@ optional func applicationProtectedDataWillBecomeUnavailable(_ application: UIApp
 
 - [Encrypting Your App’s Files](../encrypting-your-app-s-files.md)
 
-#### Discussion
+## Discussion
 
 On a device that uses content protection, protected files are stored in an encrypted form and made available only at certain times, usually when the device is unlocked. This notification lets your app know that the device is about to be locked and that any protected files it is currently accessing might become unavailable shortly.
 

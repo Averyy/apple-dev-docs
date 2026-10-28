@@ -11,7 +11,7 @@ Called by IOAudioEngine when it has stopped
 virtual void audioEngineStopped();
 ```
 
-#### Overview
+## Overview
 
 This should only be called while on the IOWorkLoop. It is not intended to be called directly. It is called when an IOAudioEngine has stopped to allow the IOAudioDevice to keep track of running audio engines and change the power state from kIOAudioDeviceActive to kIOAudioDeviceIdle when the last audio engine stops. If the state change is done asynchronously, it waits for the state change to complete.
 

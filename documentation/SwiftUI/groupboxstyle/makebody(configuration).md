@@ -21,7 +21,7 @@ Creates a view representing the body of a group box.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method for each instance of [`GroupBox`](../groupbox.md) created within a view hierarchy where this style is the current group box style.
 

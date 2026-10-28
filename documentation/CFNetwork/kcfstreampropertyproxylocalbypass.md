@@ -24,7 +24,7 @@ let kCFStreamPropertyProxyLocalBypass: CFString
 extern CFStringRef const kCFStreamPropertyProxyLocalBypass;
 ```
 
-#### Discussion
+## Discussion
 
 The key’s value is `CFBoolean` object whose value indicates whether local hostnames should be subject to proxy handling.
 

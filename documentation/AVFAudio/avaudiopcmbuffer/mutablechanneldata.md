@@ -21,7 +21,7 @@ Represents mutable channel data.
 enum MutableChannelData
 ```
 
-#### Overview
+## Overview
 
 For **deinterleaved** formats:
 

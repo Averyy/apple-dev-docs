@@ -15,7 +15,7 @@ A unique ID for the device, if there is one.
 var uniqueID: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This ID is software based, and isn’t associated with the device itself. It is typically set to help facilitate driver or client matching.
 

@@ -19,7 +19,7 @@ var contactsDomains: [String] { get set }
 @property (copy) NSArray<NSString *> * contactsDomains;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to per-app VPNs.
 

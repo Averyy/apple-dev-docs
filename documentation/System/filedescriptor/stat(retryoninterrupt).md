@@ -21,7 +21,7 @@ Creates a `Stat` struct for the file referenced by this `FileDescriptor`.
 func stat(retryOnInterrupt: Bool = true) throws(Errno) -> Stat
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `fstat()`.
 

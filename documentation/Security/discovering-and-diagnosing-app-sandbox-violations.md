@@ -5,7 +5,7 @@
 
 Determine when your macOS app behaves incorrectly because of a sandbox violation, and fix sandbox-related issues.
 
-#### Overview
+## Overview
 
 App Sandbox protects documents and system resources from malicious abuse by limiting your macOS app’s access to only capabilities you request in its entitlements file. If your app attempts to use capabilities that you didn’t request, it’ll fail to complete those operations even if you use the APIs correctly.
 
@@ -15,7 +15,7 @@ If you discover that your app’s failure to complete a task is due to a violati
 - Distribute a separate helper tool with your app that uses the additional capability.
 - Remove the code that accesses the additional capability if it’s not necessary for implementing your app’s feature set.
 
-##### Examine error output to identify where your app exceeds its privileges
+### Examine error output to identify where your app exceeds its privileges
 
 If an App Sandbox constraint stops a system library from performing a task, that library may log a message to your app’s standard error stream to report the problem. To examine your app’s output, follow these steps:
 
@@ -33,7 +33,7 @@ Output such as the following indicates that the process encountered an App Sandb
 2022-10-25 14:14:45.542962+0100 SampleApp[12447:550451] [] nw_resolver_can_use_dns_xpc_block_invoke Sandbox does not allow access to com.apple.dnssd.service
 ```
 
-##### Use Console to identify violations
+### Use Console to identify violations
 
 You can use the Console app to discover whether a problem is due to an App Sandbox violation by following these steps:
 
@@ -107,11 +107,11 @@ Thread 0 (id: 551548):
 
 The line in the Console message that starts with “Violation:” describes the app’s behavior that violated its App Sandbox restrictions. Use the backtrace to identify which thread in your app violated the App Sandbox restrictions, and locate the violating code. The backtrace is similar to a crash report, even though the system doesn’t terminate apps that violate App Sandbox restrictions. For more information on interpreting a backtrace, see [Examining the fields in a crash report](../Xcode/examining-the-fields-in-a-crash-report.md).
 
-##### Extend your app’s sandbox to accommodate new features
+### Extend your app’s sandbox to accommodate new features
 
 If you’ve determined that your app needs to perform the task that leads to an App Sandbox violation, add the appropriate capability to the App Sandbox entitlement for your app in the Xcode entitlements editor. To review the available App Sandbox capabilities, see `Entitlements`.
 
-##### Move potentially vulnerable operations to a separate helper tool
+### Move potentially vulnerable operations to a separate helper tool
 
 By separating your app into different components that have access to distinct subsets of the required capabilities, you can balance access to operating system resources with the good practice of protecting people’s devices from malicious attacks. As an example, if your app takes camera images, processes them using unsafe memory operations, and communicates with a network service, create separate components for these three features. Separating the features makes it harder for an attacker who compromises the app through the network to gain access to someone’s camera, or to exploit the potentially unsafe processing code.
 

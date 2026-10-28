@@ -25,7 +25,7 @@ func update(withValues values: [String : Any], version: UInt64)
 - (void) updateWithValues:(NSDictionary<NSString *,id> *) values version:(uint64_t) version;
 ```
 
-#### Discussion
+## Discussion
 
 Update the values and version to reflect new data being saved to or loaded from the external store.  // The values dictionary is in the same format as the initializer
 

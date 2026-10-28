@@ -25,7 +25,7 @@ extern void vDSP_vasbm(const float *__A, vDSP_Stride __IA, const float *__B, vDS
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the subtraction of vectors `C` and `D`, as follows:
 

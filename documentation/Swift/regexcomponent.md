@@ -21,7 +21,7 @@ A type that represents a regular expression.
 protocol RegexComponent<RegexOutput>
 ```
 
-#### Overview
+## Overview
 
 You can use types that conform to `RegexComponent` as parameters to string searching operations and inside `RegexBuilder` closures.
 

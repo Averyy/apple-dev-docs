@@ -13,9 +13,9 @@ Get version detail information about a specific alternative distribution package
 
 - [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

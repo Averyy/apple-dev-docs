@@ -19,7 +19,7 @@ CanvasPattern? createPattern(
 );
 ```
 
-#### Discussion
+## Discussion
 
 When specifying a stroke style or fill style, you can pass in a pattern object instead of a color. Subsequent drawing operations are stroked or filled using the specified image as a pattern. An image object can be obtained by setting a JavaScript variable equal to an HTML `img` element.
 

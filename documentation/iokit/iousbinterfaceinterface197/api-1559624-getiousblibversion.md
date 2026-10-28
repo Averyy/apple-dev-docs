@@ -16,11 +16,11 @@ Returns the version of the IOUSBLib and the version of the IOUSBFamily.
 IOReturn (*GetIOUSBLibVersion)(void *self, NumVersion *ioUSBLibVersion, NumVersion *usbFamilyVersion);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 The interface does not have to be open to use this function.
 

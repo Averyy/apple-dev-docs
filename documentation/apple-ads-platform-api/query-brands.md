@@ -9,7 +9,7 @@ Retrieve a paginated list of brands using filters and sorting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a paginated list of brands accessible to the ad account. An empty request body returns all brands with default pagination.
 
@@ -17,7 +17,7 @@ The brand `id` returned in results corresponds to the `promotedObjectId` used wh
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 See [`QueryRequest`](./queryrequest.md).
 
@@ -36,11 +36,11 @@ See [`QueryRequest`](./queryrequest.md).
 | `sorting` | array | No | Sort order for results (field + ASC/DESC). |
 | `pagination` | object | No | Offset and page size. Defaults apply if omitted. |
 
-#### Payload Examples
+## Payload Examples
 
 **Query Brands**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/business-brands/query
@@ -61,7 +61,7 @@ POST /v1/business-brands/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -88,7 +88,7 @@ POST /v1/business-brands/query
 
 **Filter by Eligibility**:
 
-##### Request
+### Request
 
 Returns only brands you can use in a campaign. Confirm a brand’s eligibility with this filter before creating a Brands campaign, as described in [Ads on Apple Maps Endpoints](./brands-endpoints.md).
 
@@ -106,7 +106,7 @@ POST /v1/business-brands/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

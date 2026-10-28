@@ -21,7 +21,7 @@ The paragraph style of the text.
 static let paragraphStyle: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSParagraphStyle`](../../../AppKit/nsparagraphstyle.md) object. Use this attribute to apply multiple attributes to a range of text. If you do not specify this attribute, the string uses the default paragraph attributes, as returned by the [`default`](../../../AppKit/nsparagraphstyle/default.md) method of [`NSParagraphStyle`](../../../AppKit/nsparagraphstyle.md).
 

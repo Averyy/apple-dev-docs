@@ -15,11 +15,11 @@ virtual IORegistryEntry * childFromPath(
  int *residualLength = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 See IORegistryEntry::fromPath.
 
-#### Overview
+## Overview
 
 This function looks up a entry below the called entry by a relative path. It is just a convenience that calls IORegistryEntry::fromPath with this as the fromEntry parameter.
 

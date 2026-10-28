@@ -19,7 +19,7 @@ var allowsRunningApplicationSubstitution: Bool { get set }
 @property BOOL allowsRunningApplicationSubstitution;
 ```
 
-#### Discussion
+## Discussion
 
 If an instance of an application is already running and is capable of opening the provided URLs, but the running instance is at a different URL, use the running application.
 

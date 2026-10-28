@@ -25,7 +25,7 @@ var realm: String? { get }
 @property (copy, readonly, nullable) NSString * realm;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if no realm has been set. A realm is generally only specified for HTTP and HTTPS authentication.
 

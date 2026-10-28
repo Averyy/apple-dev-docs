@@ -12,7 +12,7 @@ virtual IOReturn stopStream(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully started.
 

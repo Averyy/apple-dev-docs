@@ -19,11 +19,11 @@ optional func contentView() -> NSView?
 - (NSView *) contentView;
 ```
 
-#### Return Value
+## Return Value
 
 The root view of the content view hierarchy.
 
-#### Discussion
+## Discussion
 
 This content view defines the view hierarchy to be dimmed during incremental search, if the `NSTextFinder` instance’s [`incrementalSearchingShouldDimContentView`](../nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`true`](../../Swift/true.md). If this method is not implemented or returns `nil`, then the `NSTextFinder` instance will act as if [`incrementalSearchingShouldDimContentView`](../nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`false`](../../Swift/false.md)
 

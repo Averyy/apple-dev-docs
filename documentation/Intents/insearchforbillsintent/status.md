@@ -33,7 +33,7 @@ var status: INPaymentStatus { get }
 @property (atomic, assign, readonly) INPaymentStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 When performing the search, your results should contain bills whose status matches the value in this property. If the value in this property is [`INPaymentStatus.unknown`](../inpaymentstatus/unknown.md), return all bills regardless of their status.
 

@@ -20,11 +20,11 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels levelRange: Range<Int>, slices sliceRange: Range<Int>) -> (any MTLTexture)?
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object that shares the same storage allocation of the calling texture object.
 
-#### Discussion
+## Discussion
 
 The texture type can be cast between the targets listed in the following table.
 

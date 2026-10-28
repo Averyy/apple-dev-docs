@@ -19,11 +19,11 @@ func characters(byApplyingModifiers modifiers: NSEvent.ModifierFlags) -> String?
 - (NSString *) charactersByApplyingModifiers:(NSEventModifierFlags) modifiers;
 ```
 
-#### Return Value
+## Return Value
 
 The characters that result from the application of the specified modifier keys. If the event contains invalid data, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Call this method to determine what characters occur if you apply the specified modifier keys to this event. This method doesn’t modify the event itself, but returns a translation of the event’s data that replaces the existing modifier keys with the new ones you specify. Cal this method only for an event of type [`NSEvent.EventType.keyUp`](./eventtype/keyup.md) or [`NSEvent.EventType.keyDown`](./eventtype/keydown.md).
 

@@ -19,7 +19,7 @@ init(forIncrementalLoad: ())
 - (instancetype) initForIncrementalLoad;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver returns itself after setting its size and data buffer to zero. You can then call [`incrementalLoad(from:complete:)`](./incrementalload%28from,complete%29.md) to incrementally add image data.
 

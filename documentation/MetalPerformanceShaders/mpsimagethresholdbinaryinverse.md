@@ -24,7 +24,7 @@ class MPSImageThresholdBinaryInverse
 @interface MPSImageThresholdBinaryInverse : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageThresholdBinaryInverse`](./mpsimagethresholdbinaryinverse.md) function converts a single channel image to a binary image. If the input image is not a single channel image, the function first converts the input image into a single channel luminance image using the linear gray color transform, and then it applies the threshold. The following listing shows the threshold binary inverse function.
 

@@ -24,7 +24,7 @@ init(configuration: URLSessionConfiguration, assetDownloadDelegate delegate: (an
 + (AVAssetDownloadURLSession *) sessionWithConfiguration:(NSURLSessionConfiguration *) configuration assetDownloadDelegate:(id<AVAssetDownloadDelegate>) delegate delegateQueue:(NSOperationQueue *) delegateQueue;
 ```
 
-#### Return Value
+## Return Value
 
 A new download session.
 

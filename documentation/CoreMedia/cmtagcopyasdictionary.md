@@ -21,11 +21,11 @@ Copies an existing tag to a new dictionary object.
 extern CFDictionaryRefCMTagCopyAsDictionary(CMTag tag, CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new [`CFDictionary`](../CoreFoundation/cfdictionary.md), or `NULL` if no dictionary could be created.
 
-#### Discussion
+## Discussion
 
 The created dictionary contains values for the keys [`kCMTagCategoryKey`](./kcmtagcategorykey.md), [`kCMTagDataTypeKey`](./kcmtagdatatypekey.md), and [`kCMTagValueKey`](./kcmtagvaluekey.md).
 

@@ -25,7 +25,7 @@ class SCNLookAtConstraint
 @interface SCNLookAtConstraint : SCNConstraint
 ```
 
-#### Overview
+## Overview
 
 For example, you can use a look-at constraint to ensure that a camera or spotlight always follows the movement of a game character. To attach constraints to an [`SCNNode`](./scnnode.md) object, use its [`constraints`](./scnnode/constraints.md) property.
 

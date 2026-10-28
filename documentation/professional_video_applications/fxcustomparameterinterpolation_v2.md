@@ -19,7 +19,7 @@ protocol FxCustomParameterInterpolation_v2
 @protocol FxCustomParameterInterpolation_v2
 ```
 
-#### Overview
+## Overview
 
 An FxPlug 4 or later plug-in that wants to support keyframing custom parameters must conform to the `FxCustomParameterInterpolation_v2` or later protocol. This protocol allows the plug-in to generate interpolated (in-between) values between keyframes.
 

@@ -18,7 +18,7 @@ var FFCAP_ET_CONSTANTFORCE: Int { get }
 FFCAP_ET_CONSTANTFORCE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a constant force effect.
 

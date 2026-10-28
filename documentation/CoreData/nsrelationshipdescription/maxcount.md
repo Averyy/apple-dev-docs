@@ -25,7 +25,7 @@ var maxCount: Int { get set }
 @property NSUInteger maxCount;
 ```
 
-#### Discussion
+## Discussion
 
 If you declare a relationship attribute as optional when defining your entities, the framework only enforces [`minCount`](./mincount.md) and [`maxCount`](./maxcount.md) when that attribute is not `nil`.
 

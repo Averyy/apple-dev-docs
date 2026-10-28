@@ -17,11 +17,11 @@ func hv_vcpu_get_wait_for_interrupt_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutabl
 extern hv_return_t hv_vcpu_get_wait_for_interrupt_time(hv_vcpu_t vcpu, uint64_t *time);
 ```
 
-#### Return Value
+## Return Value
 
 HV_SUCCESS on success, error code otherwise.
 
-#### Discussion
+## Discussion
 
 Returns the cumulative wait time of a vCPU spent at WFI instruction while waiting for interrupts in the units of mach_absolute_time().
 

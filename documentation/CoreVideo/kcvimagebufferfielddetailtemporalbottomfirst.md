@@ -25,7 +25,7 @@ let kCVImageBufferFieldDetailTemporalBottomFirst: CFString
 extern CFStringRef const kCVImageBufferFieldDetailTemporalBottomFirst;
 ```
 
-#### Discussion
+## Discussion
 
 The temporal bottom first detail field value is of type [`CFString`](../CoreFoundation/cfstring.md). The image buffer contains complete fields in alternating order. The bottom, even-numbered, fields contain image data captured at an earlier time than top, odd-numbered, fields.
 

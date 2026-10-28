@@ -25,7 +25,7 @@ func setAllowsFontSmoothing(_ allowsFontSmoothing: Bool)
 extern void CGContextSetAllowsFontSmoothing(CGContextRef c, bool allowsFontSmoothing);
 ```
 
-#### Discussion
+## Discussion
 
 Font are smoothed if they are antialiased when drawn and if font smoothing is both allowed and enabled. For information on how to enable font smoothing, see the [`setShouldSmoothFonts(_:)`](./setshouldsmoothfonts%28_%29.md) function. It is not usually necessary to make changes to both parameters at the same time; either can be used to disable font smoothing.
 

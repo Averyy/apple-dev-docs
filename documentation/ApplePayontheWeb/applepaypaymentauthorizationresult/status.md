@@ -16,7 +16,7 @@ The status code for the authorization result.
 required short status;
 ```
 
-#### Discussion
+## Discussion
 
 For status values, see [Apple Pay Status Codes](../apple-pay-status-codes.md).
 

@@ -25,7 +25,7 @@ struct bnns_graph_argument_t
 typedef struct { ... } bnns_graph_argument_t;
 ```
 
-#### Overview
+## Overview
 
 Exactly one of descriptor or data_ptr should be set based on the configuration specified with `BNNSGraphContextSetArgumentType()`
 

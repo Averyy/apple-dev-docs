@@ -25,11 +25,11 @@ Returns an immutable snapshot of the provider’s current state.
 func snapshot() -> any ConfigSnapshot
 ```
 
-#### Return Value
+## Return Value
 
 An immutable snapshot that represents the current provider state.
 
-#### Discussion
+## Discussion
 
 Snapshots provide consistent access to multiple configuration values by capturing the provider’s state at a specific point in time. This prevents values from changing between reads, which is useful for reading related configuration keys together.
 

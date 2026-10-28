@@ -16,11 +16,11 @@ Obtains a property related to the IOHIDDevice.
 IOReturn (*getProperty)(void *self, CFStringRef key, CFTypeRef *pProperty);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 Property keys are prefixed by kIOHIDDevice and declared in IOHIDKeys.h.
 

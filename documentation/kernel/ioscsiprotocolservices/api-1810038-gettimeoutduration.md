@@ -12,11 +12,11 @@ UInt32 GetTimeoutDuration (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 Timeout duration in milliseconds.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the timeout duration in milliseconds associated with the specified request.
 

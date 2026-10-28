@@ -14,7 +14,7 @@
 kSCSIServiceResponse_LINK_COMMAND_COMPLETE = 3
 ```
 
-#### Discussion
+## Discussion
 
 The linked command completed.
 

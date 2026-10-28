@@ -19,11 +19,11 @@ func SSRandomFloatBetween(_ a: CGFloat, _ b: CGFloat) -> CGFloat
 static CGFloat SSRandomFloatBetween(CGFloat a, CGFloat b);
 ```
 
-#### Return Value
+## Return Value
 
 A random floating-point value between the values `a` and `b`, inclusive.
 
-#### Discussion
+## Discussion
 
 The Screen Saver framework automatically seeds the `random()` C function to generate the number.
 

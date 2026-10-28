@@ -19,7 +19,7 @@ class FSRemoveItemResult
 @interface FSRemoveItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of[`removeItem(_:named:from:context:replyHandler:)`](./fsvolume/handler/removeitem%28_,named,from,context,replyhandler%29.md).
 

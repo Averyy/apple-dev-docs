@@ -25,7 +25,7 @@ var randomSource: GKRandomSource { get set }
 @property (nonatomic, copy) GKRandomSource * randomSource;
 ```
 
-#### Discussion
+## Discussion
 
 Some of the branches in a decision tree may not depend on an external input; instead, when evaluating the tree with the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) method, the tree automatically chooses an answer at random. (In a manually created decision tree, you can create random branches with the [`createBranch(weight:attribute:)`](../gkdecisionnode/createbranch%28weight,attribute%29.md) method.) The tree uses this random source when randomly choosing answers.
 

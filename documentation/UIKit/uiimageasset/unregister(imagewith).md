@@ -23,7 +23,7 @@ func unregister(imageWith traitCollection: UITraitCollection)
 - (void) unregisterImageWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 This method searches for an image whose trait collection matches the one in the `traitCollection` parameter. The traits in both collections must match exactly, and the matching trait collection must be associated with an image that you registered previously.
 

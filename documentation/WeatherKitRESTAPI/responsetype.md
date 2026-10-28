@@ -27,7 +27,7 @@ string ResponseType
 - `allClear`
 - `none`
 
-#### Possible Values
+## Possible Values
 
 - **shelter**: Take shelter in place.
 - **evacuate**: Relocate.

@@ -21,7 +21,7 @@ func floor(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`round(_:decimals:stream:)`](./round%28_,decimals,stream%29.md)

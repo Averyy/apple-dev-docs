@@ -19,7 +19,7 @@ let IKPictureTakerShowAddressBookPictureKey: String
 extern NSString * const IKPictureTakerShowAddressBookPictureKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a Boolean value packages as an  `NSNumber` object. The default value is [`false`](../Swift/false.md). If set to YES, the picture taker automatically adds the address book image for the Me user at the end of the Recent Pictures pop-up menu.
 

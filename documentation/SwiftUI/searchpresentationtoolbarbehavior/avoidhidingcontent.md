@@ -21,7 +21,7 @@ The avoid hiding content behavior.
 static var avoidHidingContent: SearchPresentationToolbarBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this will avoid hiding content in the toolbar as it adapts to a search presentation. This has no effect on other platforms.
 

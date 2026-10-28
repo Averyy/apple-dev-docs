@@ -21,7 +21,7 @@ A new property wrapper for the given key path.
 init(_ keyPath: KeyPath<FocusedValues, Binding<Value>?>)
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property wrapper is updated dynamically as focus changes and different published bindings go in and out of scope.
 

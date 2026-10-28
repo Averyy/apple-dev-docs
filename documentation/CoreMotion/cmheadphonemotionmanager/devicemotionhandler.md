@@ -23,7 +23,7 @@ typealias DeviceMotionHandler = (CMDeviceMotion?, (any Error)?) -> Void
 typedef void (^)(CMDeviceMotion *, NSError *) CMHeadphoneDeviceMotionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `CMDeviceMotionHandler` blocks when there is device-motion data to process. You pass the block into [`startDeviceMotionUpdates(to:withHandler:)`](./startdevicemotionupdates%28to,withhandler%29.md) as the second argument. Blocks of this type return no value, but take two arguments:
 

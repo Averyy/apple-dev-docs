@@ -15,11 +15,11 @@ Returns the object used by the context to track the hierarchy of views with lock
 - (id) focusStack;
 ```
 
-#### Return Value
+## Return Value
 
 The object used by the context to track the hierarchy of views with locked focus.
 
-#### Discussion
+## Discussion
 
 You should never need to get or modify the focus stack information. The use of focus stacks may be deprecated in a future release.
 

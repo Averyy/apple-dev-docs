@@ -18,7 +18,7 @@ A Boolean value that indicates whether the scanner provides help to a person whe
 final let isGuidanceEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The guidance text, such as “Slow Down,” appears over the live video. The default value for this property is `true`.
 

@@ -22,7 +22,7 @@ var configuresApplicationAudioSessionToMixWithOthers: Bool { get set }
 @property (nonatomic) BOOL configuresApplicationAudioSessionToMixWithOthers;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a capture session’s audio session interrupts the audio of other apps. To enable background audio from other apps to continue while capturing video, set this value to [`true`](../../Swift/true.md).
 

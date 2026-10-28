@@ -24,7 +24,7 @@ let GCHapticDurationInfinite: Float
 extern const float GCHapticDurationInfinite;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to create a [`CHHapticEvent`](../CoreHaptics/chhapticevent.md) object with an infinite duration. For example, create an infinite haptic event that you update in a loop to adjust a controller’s motor intensity.
 

@@ -5,7 +5,7 @@
 
 Control your app’s content and how people can interact with it.
 
-#### Overview
+## Overview
 
 RealityKit provides controls that enable interactions specific to each platform and context. For example, you can allow someone to interact with an entity that already has a [`CollisionComponent`](./collisioncomponent.md) by adding the [`InputTargetComponent`](./inputtargetcomponent.md) component. A RealityKit entity can visibly change when someone looks directly at it with a [`HoverEffectComponent`](./hovereffectcomponent.md) component. Additionally, you can manage an entity’s accessibility information with [`AccessibilityComponent`](./accessibilitycomponent.md).
 

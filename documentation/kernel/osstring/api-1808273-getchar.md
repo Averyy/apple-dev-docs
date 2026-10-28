@@ -12,7 +12,7 @@ virtual char getChar(
  unsigned intindex) const;
 ```
 
-#### Return Value
+## Return Value
 
 The character at `index` within the string, or `'\0'` if index is past the end of the string.
 

@@ -18,11 +18,11 @@ Creates the default configuration you use to style a sidebar list header.
 + (instancetype) listSidebarHeaderConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a sidebar list header.
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: Use [`listHeader()`](../uibackgroundconfiguration-swift.struct/listheader%28%29.md) or [`listFooter()`](../uibackgroundconfiguration-swift.struct/listfooter%28%29.md) instead.
 

@@ -5,7 +5,7 @@
 
 The version of Apple Pay available in macOS 12.3 and iOS 15.4.
 
-#### Overview
+## Overview
 
 - Added `dankort` to supported networks. For more information, see [`supportedNetworks`](./applepayrequest/supportednetworks.md).
 

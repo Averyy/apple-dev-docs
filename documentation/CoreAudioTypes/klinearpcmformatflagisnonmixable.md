@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsNonMixable: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsNonMixable
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsNonMixable`](./kaudioformatflagisnonmixable.md).
 

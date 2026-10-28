@@ -16,7 +16,7 @@ nonisolated
 func depthAlignment<Content>(_ alignment: DepthAlignment, @ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use `depthAlignment(_:content:)` to specify a depth guide for aligning subviews of this layout.
 

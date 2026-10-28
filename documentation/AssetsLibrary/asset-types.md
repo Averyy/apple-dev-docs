@@ -5,7 +5,7 @@
 
 Constants that specify the type of an asset.
 
-#### Overview
+## Overview
 
 These constants represent the values you may get back for the [`ALAssetPropertyType`](./alassetpropertytype.md) property.
 

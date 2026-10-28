@@ -24,7 +24,7 @@ var upperBodyOnly: Bool { get set }
 @property (nonatomic) BOOL upperBodyOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of [`true`](../../Swift/true.md) indicates that the request requires detecting a person’s upper body only to find the bound box around it.
 

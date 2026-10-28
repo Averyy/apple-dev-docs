@@ -5,11 +5,11 @@
 
 Work directly with memory-managed Core Foundation types in your Swift code, and manually handle retains as needed.
 
-#### Overview
+## Overview
 
 When you import the Core Foundation framework, its types are imported as Swift classes. Wherever memory management annotations are provided, Swift automatically manages the memory of Core Foundation objects, including Core Foundation objects that you instantiate yourself. In Swift, you can use each pair of toll-free bridged Foundation and Core Foundation types interchangeably. You can also bridge some toll-free bridged Core Foundation types to Swift standard library types if you cast to a bridging Foundation type first. See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Use Memory Managed Objects
+### Use Memory Managed Objects
 
 When Swift imports Core Foundation types, the compiler remaps the names of these types. The compiler removes `Ref` from the end of each type name because all Swift classes are reference types; therefore, the suffix is redundant. The `CFTypeRef` type completely remaps to the `AnyObject` type.
 
@@ -17,7 +17,7 @@ Core Foundation objects returned from annotated APIs are automatically memory-ma
 
 If you return Core Foundation objects from your own C functions and Objective-C methods, you can annotate them with either the `CF_RETURNS_RETAINED` or `CF_RETURNS_NOT_RETAINED` macro to automatically insert memory management calls. You can also use the `CF_IMPLICIT_BRIDGING_ENABLED` and `CF_IMPLICIT_BRIDGING_DISABLED` macros to enclose C function declarations that follow the policy for Core Foundation ownership naming, in order to infer memory management.
 
-##### Convert Unmanaged Objects to Memory-Managed Objects
+### Convert Unmanaged Objects to Memory-Managed Objects
 
 When Swift imports APIs that have not been annotated, the compiler cannot automatically memory-manage the returned Core Foundation objects. Swift wraps these returned Core Foundation objects in an [`Unmanaged`](./unmanaged.md) structure. All indirectly returned Core Foundation objects are unmanaged as well. For example, here’s an unannotated C function:
 

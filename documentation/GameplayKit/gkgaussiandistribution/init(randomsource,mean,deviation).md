@@ -24,11 +24,11 @@ init(randomSource source: any GKRandom, mean: Float, deviation: Float)
 - (instancetype) initWithRandomSource:(id<GKRandom>) source mean:(float) mean deviation:(float) deviation;
 ```
 
-#### Return Value
+## Return Value
 
 A new random distribution.
 
-#### Discussion
+## Discussion
 
 Using this initializer creates a Gaussian distribution whose range is determined by the specified `mean` and `deviation` values. The [`lowestValue`](../gkrandomdistribution/lowestvalue.md) property of the newly created distribution is set to three deviations below the mean (`lowest = mean - 3 * deviation`) and the [`highestValue`](../gkrandomdistribution/highestvalue.md) property is set to three deviations above the mean (`highest = mean + 3 * deviation`).
 

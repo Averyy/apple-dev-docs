@@ -13,7 +13,7 @@
 extern NSString * const AVFragmentedMovieTrackTotalSampleDataLengthDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification name has been deprecated. Use either AVFragmentedMovieTrackTimeRangeDidChangeNotification or AVFragmentedMovieTrackSegmentsDidChangeNotification instead; in either case, you can assume that timing changes to fragmented tracks result in changes to the total length of the sample data used by the track.
 

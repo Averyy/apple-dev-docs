@@ -19,7 +19,7 @@ class func removeSubscriber(_ subscriber: Any)
 + (void) removeSubscriber:(id) subscriber;
 ```
 
-#### Discussion
+## Discussion
 
 If the block for [`addSubscriber(forFileURL:withPublishingHandler:)`](./addsubscriber%28forfileurl,withpublishinghandler%29.md) returns a closure, the system invokes that closure on the main thread when you invoke [`removeSubscriber(_:)`](./removesubscriber%28_%29.md).
 

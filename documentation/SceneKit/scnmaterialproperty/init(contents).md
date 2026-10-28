@@ -25,11 +25,11 @@ convenience init(contents: Any)
 + (instancetype) materialPropertyWithContents:(id) contents;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object.
 
-#### Discussion
+## Discussion
 
 Newly created [`SCNMaterial`](../scnmaterial.md) objects contain [`SCNMaterialProperty`](../scnmaterialproperty.md) instances for all of their visual properties. To change a material’s visual properties, you modify those instances rather than creating new material property objects.
 

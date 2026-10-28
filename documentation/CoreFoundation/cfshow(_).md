@@ -25,13 +25,13 @@ func CFShow(_ obj: CFTypeRef!)
 extern void CFShow(CFTypeRef obj);
 ```
 
-#### Discussion
+## Discussion
 
 The output is printed to the standard I/O standard error (stderr).
 
 This function is useful as a debugging aid for Core Foundation objects. Because these objects are based on opaque types, it is difficult to examine their contents directly. However, the opaque types implement `description` function callbacks that return descriptions of their objects. This function invokes these callbacks.
 
-##### Special Considerations
+### Special Considerations
 
 You can use `CFShow` in one of two general ways. If your debugger supports function calls (such as `gdb` does), call `CFShow` in the debugger:
 

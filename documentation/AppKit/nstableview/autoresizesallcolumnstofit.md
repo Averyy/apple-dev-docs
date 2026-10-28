@@ -17,7 +17,7 @@ Returns a Boolean value that indicates if the table view proportionally resizes 
 - (BOOL) autoresizesAllColumnsToFit;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the table view proportionally resizes all of its columns to fit when its superview’s frame changes, and [`false`](../../Swift/false.md) if it only resizes the last column.
 

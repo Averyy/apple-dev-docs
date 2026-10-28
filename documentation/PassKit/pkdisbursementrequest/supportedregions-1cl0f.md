@@ -18,7 +18,7 @@ An array of regions that describe the locations to support.
 var supportedRegions: [Locale.Region]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you provide this array, the system filters the selectable payment passes to those the payment service providers (PSP) issued in the supported regions. Indicate the supported countries or regions by using [`Locale.Region`](../../Foundation/locale/region-swift.struct.md) structures that represent the [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) country codes to filter.
 

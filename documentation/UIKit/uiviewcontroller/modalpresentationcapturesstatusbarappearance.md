@@ -22,7 +22,7 @@ var modalPresentationCapturesStatusBarAppearance: Bool { get set }
 @property (nonatomic, assign) BOOL modalPresentationCapturesStatusBarAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

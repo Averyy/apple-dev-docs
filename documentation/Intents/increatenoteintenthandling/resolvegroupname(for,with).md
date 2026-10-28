@@ -29,7 +29,7 @@ optional func resolveGroupName(for intent: INCreateNoteIntent) async -> INSpeaka
 - (void) resolveGroupNameForCreateNote:(INCreateNoteIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the intended group for the note. Use the intent object to obtain the group information, if any, specified by the user. Groups are a way for you to organize the notes of your app. For example, the Notes app provides a group for the services, such as iCloud, that manage notes.
 

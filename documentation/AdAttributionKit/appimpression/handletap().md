@@ -21,7 +21,7 @@ func handleTap() async throws
 
 - [Presenting ads in your app](../presenting-ads-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Handle a person tapping your ad content by calling the app impression’s handle tap method.
 

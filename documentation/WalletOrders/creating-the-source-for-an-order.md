@@ -5,7 +5,7 @@
 
 Define an order by creating the directory structure, and adding source files and images.
 
-#### Overview
+## Overview
 
 An order is a self-contained package that represents a purchase a user makes, and the current state of any fulfillments and tracking metadata. The source for your order includes all the information the system needs to show it to the user, such as:
 
@@ -15,13 +15,13 @@ An order is a self-contained package that represents a purchase a user makes, an
 
 Create the source in a directory that you use to create the final distributable order package. For information about building the order package and donating to Wallet, see [Building a distributable order package](./building-a-distributable-order-package.md).
 
-##### Create the directory and add files and images
+### Create the directory and add files and images
 
 Create a directory to hold all the source files. Add the `order.json` file that contains the information and metadata for the order. For more information about the contents of this file, see the top-level [`Order`](./order.md) object.
 
 Create a visually rich order by providing product images of line items and a merchant logo to represent your company or brand. The system displays product images in notifications, including on the Lock Screen, when you publish relevant updates to the order.
 
-##### Add localization
+### Add localization
 
 You can expand your audience by localizing the strings and images of your order for different languages and regions. Add a directory at the top-level source directory of each order for each localization. The name of the directory identifies the language and an optional region.
 
@@ -35,7 +35,7 @@ Localize an image by adding the location-specific image files to each localizati
 
 > **Note**:  Adding an image of the same name to the top-level folder of the order file overrides any localized versions.
 
-##### Localize the strings
+### Localize the strings
 
 The system localizes the strings in your order using a strings file that contains a list of keys and associated localized strings. For more information about fields that are localizable, see the top-level [`Order`](./order.md) object.
 

@@ -20,11 +20,11 @@ optional func customWindowsToExitFullScreen(for window: NSWindow) -> [NSWindow]?
 - (NSArray<NSWindow *> *) customWindowsToExitFullScreenForWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 An array of windows involved in the animation out of full-screen mode for `window`; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This method lets the window delegate customize the animation when the window is about to exit full-screen mode by providing a custom window or windows containing layers or other effects. If an you do not want to perform custom animation, you can omit the implementation of this method, or it can return `nil`.
 

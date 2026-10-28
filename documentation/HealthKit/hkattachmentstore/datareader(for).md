@@ -20,7 +20,7 @@ Returns a data reader for the attachment.
 func dataReader(for attachment: HKAttachment) -> HKAttachmentDataReader
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to access a data reader for the attachment’s contents.
 

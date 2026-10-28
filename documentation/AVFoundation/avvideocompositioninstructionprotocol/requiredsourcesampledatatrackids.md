@@ -24,7 +24,7 @@ optional var requiredSourceSampleDataTrackIDs: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * requiredSourceSampleDataTrackIDs;
 ```
 
-#### Discussion
+## Discussion
 
 An empty array indicates the instruction requires no sample data.
 

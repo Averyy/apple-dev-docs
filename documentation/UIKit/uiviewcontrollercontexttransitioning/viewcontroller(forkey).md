@@ -24,7 +24,7 @@ func viewController(forKey key: UITransitionContextViewControllerKey) -> UIViewC
 - (UIViewController *) viewControllerForKey:(UITransitionContextViewControllerKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller object for the specified key or `nil` if the view controller could not be found.
 

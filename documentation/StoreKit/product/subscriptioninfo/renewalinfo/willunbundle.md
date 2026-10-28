@@ -22,7 +22,7 @@ Whether the subscription will leave the bundle at the next renewal and renew as 
 var willUnbundle: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only for renewals of subscriptions included in a bundle.
 

@@ -25,7 +25,7 @@ var metadata: LPLinkMetadata { get set }
 @property (nonatomic, copy) LPLinkMetadata * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 This can either be generated automatically from a URL by LPMetadataProvider, or manually constructed with the desired data.
 

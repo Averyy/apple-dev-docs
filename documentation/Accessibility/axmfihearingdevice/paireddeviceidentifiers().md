@@ -23,11 +23,11 @@ static func pairedDeviceIdentifiers() -> [UUID]
 extern NSArray<NSUUID *> *AXMFiHearingDevicePairedUUIDs();
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSUUID`](../../Foundation/nsuuid.md) objects that represent the [Core Bluetooth](../../CoreBluetooth/CoreBluetooth.md) UUIDs of the hearing device peripherals.
 
-#### Discussion
+## Discussion
 
 This function returns each [`CBPeripheral`](../../CoreBluetooth/cbperipheral.md) with a manufacturer that matches the manufacturer in your app’s `hearing.aid.app` entitlement. For bimodal hearing devices, specify an array of manufacturers for this entitlement.
 

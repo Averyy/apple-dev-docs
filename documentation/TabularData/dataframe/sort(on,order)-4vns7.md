@@ -21,7 +21,7 @@ Arranges the rows of a data frame according to a column that you select by its n
 mutating func sort(on columnName: String, order: Order = .ascending)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that only works for columns of the following types:
 

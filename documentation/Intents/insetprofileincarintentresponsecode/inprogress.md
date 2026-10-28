@@ -24,7 +24,7 @@ case inProgress
 INSetProfileInCarIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you’re in the process of restoring the user’s settings from the selected profile, but that you’ve not yet received confirmation of the completed restoration.
 

@@ -16,7 +16,7 @@ Exports the given browser data with the given completion handler.
 - (void) exportBrowserData:(BEBrowserData *) browserData completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stream browsing data to the system, as identified by [`dataTypes`](../beexportoptions/datatypes-swift.property.md).
 

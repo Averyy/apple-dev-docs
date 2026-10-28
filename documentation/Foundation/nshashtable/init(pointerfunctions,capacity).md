@@ -25,11 +25,11 @@ init(pointerFunctions functions: NSPointerFunctions, capacity initialCapacity: I
 - (instancetype) initWithPointerFunctions:(NSPointerFunctions *) functions capacity:(NSUInteger) initialCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A hash table initialized with the given functions and capacity.
 
-#### Discussion
+## Discussion
 
 Hash tables allocate additional memory as needed, so `initialCapacity` simply establishes the object’s initial capacity.
 

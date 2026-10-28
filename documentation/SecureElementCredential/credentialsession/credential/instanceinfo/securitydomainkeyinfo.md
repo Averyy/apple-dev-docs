@@ -16,7 +16,7 @@ A data blob which contains the security domain On-Board Generated Key (OBGK).
 let securityDomainKeyInfo: Data
 ```
 
-#### Discussion
+## Discussion
 
 This data has the information required to form a Secure Channel Protocol 3 (SCP03) channel between the user and the security domain.
 

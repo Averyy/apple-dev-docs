@@ -15,11 +15,11 @@ Opens a session to a host device.
 virtual kern_return_t Open(IOService *forClient, IOOptionBits options, uintptr_t arg);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method opens a session to the [`IOUSBHostDevice`](../iousbhostdevice.md), and acquires the service’s workloop lock. Child [`IOUSBHostInterface`](../iousbhostinterface.md) objects may open simultaneous sessions, but only one [`IOUSBHostDevice`](../iousbhostdevice.md) object at a time may open a session to the device.
 

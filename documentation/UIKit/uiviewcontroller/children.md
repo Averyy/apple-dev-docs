@@ -23,7 +23,7 @@ var children: [UIViewController] { get }
 @property (nonatomic, readonly) NSArray<__kindof UIViewController *> * childViewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not include any presented view controllers. This property is only intended to be read by an implementation of a custom container view controller.
 

@@ -32,7 +32,7 @@ static func != (a: MLDataColumn<Element>, b: Element) -> MLDataColumn<Bool>
 static func != (a: MLDataColumn<Element>, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
 ```
 
-#### Return Value
+## Return Value
 
 A new column of Booleans.
 

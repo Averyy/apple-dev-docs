@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.metal.stop_capture
 
-**stop_capture() → [None](https://docs.python.org/3/builtins/constants.html#None)**
-: Stop a Metal capture.
+```python
+stop_capture() → None
+```
+
+Stop a Metal capture.

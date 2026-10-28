@@ -17,7 +17,7 @@ Element-wise greater than with a [`ScalarOrArray`](../scalarorarray.md) (scalar)
 static func .> (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`.>(_:_:)`](./dotop%28_,_%29-fwi1.md)

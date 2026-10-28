@@ -25,7 +25,7 @@ class MTRBaseClusterTimeSynchronization
 @interface MTRBaseClusterTimeSynchronization : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Accurate time is required for a number of reasons, including scheduling, display and validating security materials.
 

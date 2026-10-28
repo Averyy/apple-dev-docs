@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: String
 extern NSString * const NSMetadataUbiquitousItemDownloadingStatusNotDownloaded;
 ```
 
-#### Discussion
+## Discussion
 
 A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](./nsmetadataubiquitousitempercentuploadedkey.md) to indicate that this item has not been downloaded yet.
 

@@ -21,7 +21,7 @@ string UserPhoneNumberType
 - `HOME`
 - `MOBILE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

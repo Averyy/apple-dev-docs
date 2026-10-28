@@ -19,7 +19,7 @@ static let animate: NSBindingName
 extern NSBindingName NSAnimateBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

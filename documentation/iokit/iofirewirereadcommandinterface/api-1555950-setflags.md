@@ -16,7 +16,7 @@ Set flags governing this command's execution.
 void (*SetFlags)(IOFireWireLibCommandRef self, UInt32 inFlags);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

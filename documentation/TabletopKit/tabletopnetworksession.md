@@ -15,7 +15,7 @@ An object that coordinates network-related tasks in multiplayer games.
 class TabletopNetworkSession<Coordinator> where Coordinator : TabletopNetworkSessionCoordinator
 ```
 
-#### Overview
+## Overview
 
 To start a multiplayer game for a local player, use the [`start()`](./tabletopnetworksession/start%28%29.md) method. TabletopKit syncs the current table state between all peers in the session, so update the table state before invoking this method.
 

@@ -19,7 +19,7 @@ var values: Any { get }
 @property (strong, readonly) id values;
 ```
 
-#### Discussion
+## Discussion
 
 If present the value for the property in [`defaults`](./defaults.md) is returned, otherwise a corresponding value in [`initialValues`](./initialvalues.md) is returned.
 

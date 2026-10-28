@@ -21,11 +21,11 @@ Returns the double-precision element-wise addition of two vector-scalar products
 static func add<T, U>(multiplication multiplicationAB: (a: T, b: Double), multiplication multiplicationCD: (c: U, d: Double)) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector `E` in `E = (A * B) + (C * D)`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise vector-scalar products of `A` and `B`, and `C` and `D`, and writes the sum of the products to vector `D`, as follows:
 

@@ -24,7 +24,7 @@ static let hdrGainMapImage: CIImageRepresentationOption
 extern CIImageRepresentationOption const kCIImageRepresentationHDRGainMapImage;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a monochrome [`CIImage`](../ciimage.md) instance.
 

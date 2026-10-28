@@ -21,7 +21,7 @@ class TVContentItem
 @interface TVContentItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The exact details of what a content item is are dependent on your app. For example, a content item might be a piece of media or it might provide access to news or other content available to your app.
 

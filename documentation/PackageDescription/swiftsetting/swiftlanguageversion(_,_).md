@@ -15,7 +15,7 @@ Defines a `-swift-version` to pass  to the corresponding build tool.
 static func swiftLanguageVersion(_ version: SwiftVersion, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 6.0.
 

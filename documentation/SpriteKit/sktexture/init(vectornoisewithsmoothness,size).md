@@ -25,11 +25,11 @@ convenience init(vectorNoiseWithSmoothness smoothness: CGFloat, size: CGSize)
 + (instancetype) textureVectorNoiseWithSmoothness:(CGFloat) smoothness size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise texture.
 
-#### Discussion
+## Discussion
 
 The noise texture is tileable with itself. The RGB values stored in the texture can be used as directional (XYZ) data. The alpha values are also randomized and can be used as magnitude data, if desired.
 

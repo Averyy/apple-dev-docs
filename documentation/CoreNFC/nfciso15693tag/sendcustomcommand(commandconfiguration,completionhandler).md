@@ -20,7 +20,7 @@ func sendCustomCommand(commandConfiguration: NFCISO15693CustomCommandConfigurati
 - (void) sendCustomCommandWithConfiguration:(NFCISO15693CustomCommandConfiguration *) commandConfiguration completionHandler:(void (^)(NSData *customResponseParameters, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Send a manufacturer dependent custom command using command code range from 0xA0 to 0xDF.  Refer to ISO15693-3 specification for details.
 

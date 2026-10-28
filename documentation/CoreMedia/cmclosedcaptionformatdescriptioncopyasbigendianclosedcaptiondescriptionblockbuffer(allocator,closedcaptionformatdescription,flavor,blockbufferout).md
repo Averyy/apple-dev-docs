@@ -25,7 +25,7 @@ func CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBloc
 extern OSStatus CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(CFAllocatorRef allocator, CMClosedCaptionFormatDescriptionRef closedCaptionFormatDescription, CMClosedCaptionDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 

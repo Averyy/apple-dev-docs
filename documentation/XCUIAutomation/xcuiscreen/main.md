@@ -26,7 +26,7 @@ class var main: XCUIScreen { get }
 @property (class, strong, readonly) XCUIScreen * mainScreen;
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, [`main`](./main.md) represents the screen that owns the menu bar. On iOS and tvOS, [`main`](./main.md) represents the primary screen of the device.
 

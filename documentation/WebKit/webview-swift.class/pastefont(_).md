@@ -19,7 +19,7 @@ func pasteFont(_ sender: Any?)
 - (void) pasteFont:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method pastes font information from the font pasteboard onto the selected content or insertion point of a rich text object, or over all text of the receiver.
 

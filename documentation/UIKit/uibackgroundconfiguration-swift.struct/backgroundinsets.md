@@ -19,7 +19,7 @@ The insets (or outsets, if negative) for the background and stroke, relative to 
 var backgroundInsets: NSDirectionalEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the custom view. The default value is [`zero`](../nsdirectionaledgeinsets/zero.md).
 

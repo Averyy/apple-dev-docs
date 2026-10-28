@@ -25,11 +25,11 @@ func compare(_ object1: Any, to object2: Any) -> ComparisonResult
 - (NSComparisonResult) compareObject:(id) object1 toObject:(id) object2;
 ```
 
-#### Return Value
+## Return Value
 
 [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md) if `object1` is less than `object2`, [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if `object1` is greater than `object2`, or [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) if `object1` is equal to `object2`.
 
-#### Discussion
+## Discussion
 
 The ordering is determined by comparing the values specified by [`key`](./key.md) of `object1` and `object2` using the selector specified by [`selector`](./selector.md).
 

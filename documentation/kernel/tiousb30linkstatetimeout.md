@@ -16,7 +16,7 @@ enum tIOUSB30LinkStateTimeout : unsigned int {
 };
 ```
 
-#### Discussion
+## Discussion
 
 For information about these constants, see USB 3.2, 7.5, 7.5.4, 7.5.9, and 7.5.10.
 

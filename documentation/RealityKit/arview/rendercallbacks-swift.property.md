@@ -25,7 +25,7 @@ A container that holds the view’s render callbacks.
 - [Applying core image filters as a postprocess effect](../applying-core-image-filters-as-a-postprocess-effect.md)
 - [Implementing postprocess effects using Metal compute functions](../implementing-postprocess-effects-using-metal-compute-functions.md)
 
-#### Discussion
+## Discussion
 
 Render callbacks are closures RealityKit calls at predefined times. You can use render callbacks to modify the results of RealityKit’s rendering. If you assign a function or closure to any of the contained callback properties, RealityKit calls that function or closure at a predefined time. Setting the `ARView/RenderCallbacks-swift.postProcess` property, for example, causes RealityKit to call the assigned function or closure every frame, after RealityKit renders the scene, but before it displays it.
 

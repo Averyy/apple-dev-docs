@@ -19,7 +19,7 @@ var itemTitles: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * itemTitles;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains the title of an item in the menu. The order of the titles in this array matches the order of the items in the menu. If the menu contains separator items, the array contains an empty string for each separator item.
 

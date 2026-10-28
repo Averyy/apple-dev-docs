@@ -10,13 +10,13 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Learn why unbound generic methods aren’t allowed in Embedded Swift.
 
-#### Background
+## Background
 
 Embedded Swift relies on monomorphization to achieve its properties like not requiring type metadata. Monomorphization is mandatory specialization of all compiled code – all function bodies get their concrete types substituted and all generics are “compiled out”. This is based on passing type information top-down, that is, from callers to callees, and specializing callees based on the concrete type provided by the caller.
 
 This type information passing from the caller is crucial. If it cannot happen for some reason, then monomorphization cannot happen. This is why Embedded Swift imposes restrictions on non-final generic methods on classes.
 
-#### Non-final generic methods on classes (for subclassing-based dispatch)
+## Non-final generic methods on classes (for subclassing-based dispatch)
 
 A non-final generic method on a class where the generic type does not come from the class context itself, is disallowed in Embedded Swift. This is because conservatively, the compiler must assume there could be subclasses with the method overridden. Monomorphization of a function call then cannot know the concrete target type. For example:
 
@@ -76,7 +76,7 @@ let instance: MyClass = ... // could be MyClass, or a subclass
 instance.write(t: 42) // ✅
 ```
 
-#### Non-final generic methods on classes (for existential-based dispatch)
+## Non-final generic methods on classes (for existential-based dispatch)
 
 A similar restriction applies to using class-bound existentials for dispatch method calls. Because at compile-time the target type is not statically known, monomorphization is not possible. For example:
 

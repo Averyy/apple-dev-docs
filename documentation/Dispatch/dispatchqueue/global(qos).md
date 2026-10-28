@@ -21,7 +21,7 @@ Returns the global system queue with the specified quality-of-service class.
 class func global(qos: DispatchQoS.QoSClass = .default) -> DispatchQueue
 ```
 
-#### Discussion
+## Discussion
 
 This method returns a queue suitable for executing tasks with the specified quality-of-service level. Calls to the [`suspend()`](../dispatchobject/suspend%28%29.md), [`resume()`](../dispatchobject/resume%28%29.md), and [`dispatch_set_context`](../dispatch_set_context.md) functions have no effect on the returned queues.
 

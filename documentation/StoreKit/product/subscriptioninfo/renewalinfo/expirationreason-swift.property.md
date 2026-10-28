@@ -25,7 +25,7 @@ let expirationReason: Product.SubscriptionInfo.RenewalInfo.ExpirationReason?
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 This optional value is `nil` if the auto-renewable subscription is active and hasn’t expired.
 

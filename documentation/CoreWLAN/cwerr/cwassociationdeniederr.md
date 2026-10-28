@@ -17,7 +17,7 @@ case cwAssociationDeniedErr
 kCWAssociationDeniedErr
 ```
 
-#### Discussion
+## Discussion
 
 Association was denied for an unspecified reason.
 

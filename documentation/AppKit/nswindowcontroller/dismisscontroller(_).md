@@ -20,7 +20,7 @@ func dismissController(_ sender: Any?)
 - (void) dismissController:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the receiver is not currently presented.
 

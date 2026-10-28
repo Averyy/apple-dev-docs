@@ -27,7 +27,7 @@ optional func setZoomFactor(_ zoomFactor: Double, for context: WKWebExtensionCon
 - (void) setZoomFactor:(double) zoomFactor forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Sets [`pageZoom`](../wkwebview/pagezoom.md) of the tab’s web view if not implemented.
 

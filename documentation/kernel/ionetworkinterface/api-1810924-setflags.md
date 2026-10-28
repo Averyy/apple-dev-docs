@@ -13,11 +13,11 @@ virtual bool setFlags(
  UInt16 clear = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 
-#### Overview
+## Overview
 
 Calls `ifnet_set_flags` if the interface is attached to the network stack, and updates the `kIOInterfaceFlags` property using the provided value. See `bsd/net/if.h` header file for the flag constants.
 

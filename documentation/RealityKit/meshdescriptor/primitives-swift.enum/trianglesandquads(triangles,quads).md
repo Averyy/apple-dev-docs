@@ -20,7 +20,7 @@ Defines separate arrays for triangle and quad indices.
 case trianglesAndQuads(triangles: [UInt32], quads: [UInt32])
 ```
 
-#### Discussion
+## Discussion
 
 The elements of the first array have three vertex indices for each triangle. The elements of the second array have four vertex indices for each quadrilateral.
 

@@ -25,7 +25,7 @@ optional func presentedSubitem(at url: URL, didGain version: NSFileVersion)
 - (void) presentedSubitemAtURL:(NSURL *) url didGainVersion:(NSFileVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to determine how to incorporate data from the new version of the item. This might involve incorporating the version silently or asking the user about how to proceed.
 

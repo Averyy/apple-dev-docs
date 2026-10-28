@@ -5,7 +5,7 @@
 
 Provide suggestions to people searching for content in your app.
 
-#### Overview
+## Overview
 
 You can suggest query text during a search operation by providing a collection of search suggestion views. Because suggestion views are not limited to plain text, you must also provide the search string that each suggestion view represents. You can also provide suggestions for tokens, if your search interface includes them. SwiftUI presents the suggestions in a list below the search field.
 
@@ -18,7 +18,7 @@ For both text and tokens, you manage the list of suggestions, so you have comple
 - Update the list of suggestions in real time based on the current search text.
 - Employ some combination of these and other strategies, possibly changing over time.
 
-##### Suggest search text
+### Suggest search text
 
 Suggest search text by providing a collection of views to the [`searchSuggestions(_:)`](./view/searchsuggestions%28_%29.md) view modifier. This modifier applies to the [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md) modifier that appears before it.
 
@@ -44,7 +44,7 @@ If you omit the search completion modifier for a particular suggestion view, Swi
 
 Certain events or actions, like when someone moves a macOS window, might dismiss the suggestion list.
 
-##### Suggest tokens
+### Suggest tokens
 
 You can also suggest tokens for the search field. In this case, associate a suggestion view with a token using the version of the [`searchCompletion(_:)`](./view/searchcompletion%28_%29.md) modifier that takes tokens as input:
 
@@ -66,7 +66,7 @@ ProductList(departmentId: departmentId, productId: $productId)
 
 You can use any type that conforms to the [`Identifiable`](../Swift/identifiable.md) protocol as a token. For more information about using tokens in the search query, see [Performing a search operation](./performing-a-search-operation.md).
 
-##### Simplify token suggestions
+### Simplify token suggestions
 
 As a convenience when you have a collection of suggestions that exactly matches the list of tokens, you can create a collection of possible tokens to suggest. For example, you can add a published `suggestions` property to your model that contains all the possible tokens:
 
@@ -93,7 +93,7 @@ ProductList(departmentId: departmentId, productId: $productId)
 
 In this version of the searchable modifier, SwiftUI uses one content builder to describe the appearance of the tokens in both the search field and the suggestions container.
 
-##### Update suggestions dynamically
+### Update suggestions dynamically
 
 You can update the suggestions that you provide as conditions change. For example, you can specify an array of `suggestedSearches` that you store in your app’s model:
 

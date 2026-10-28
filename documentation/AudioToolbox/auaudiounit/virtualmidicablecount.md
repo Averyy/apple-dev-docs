@@ -32,7 +32,7 @@ var virtualMIDICableCount: Int { get }
 @property (atomic, readonly) NSInteger virtualMIDICableCount;
 ```
 
-#### Discussion
+## Discussion
 
 A music device or effect can support up to 256 virtual MIDI cables of input.
 

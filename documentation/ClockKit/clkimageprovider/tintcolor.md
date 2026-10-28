@@ -21,7 +21,7 @@ var tintColor: UIColor? { get set }
 @property (nonatomic, retain, nullable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 For multicolor clock faces, the image provider applies the color in this property to the underlying image. For one-piece images, the color is applied directly to the image. For two-piece images, the color is applied only to the background image.
 

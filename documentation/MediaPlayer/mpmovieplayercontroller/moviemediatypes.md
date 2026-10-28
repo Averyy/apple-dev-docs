@@ -23,7 +23,7 @@ var movieMediaTypes: MPMovieMediaTypeMask { get }
 @property (nonatomic, readonly) MPMovieMediaTypeMask movieMediaTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Movies can contain a combination of audio, video, or a combination of the two. The default value of this property is [`MPMovieMediaTypeMaskNone`](../mpmoviemediatypemask/mpmoviemediatypemasknone.md). See the [`MPMovieMediaTypeMask`](../mpmoviemediatypemask.md) enumeration for possible values of this property.
 

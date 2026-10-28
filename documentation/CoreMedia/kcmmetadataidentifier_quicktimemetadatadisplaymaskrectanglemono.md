@@ -23,7 +23,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono: CFString
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono;
 ```
 
-#### Discussion
+## Discussion
 
 ```
     Display mask rectangle for monoscopic video

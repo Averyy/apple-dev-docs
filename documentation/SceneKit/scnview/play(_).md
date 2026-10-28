@@ -26,7 +26,7 @@ func play(_ sender: Any?)
 - (void) play:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the scene is not paused.
 

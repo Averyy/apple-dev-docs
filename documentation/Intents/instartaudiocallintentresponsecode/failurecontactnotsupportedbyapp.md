@@ -25,7 +25,7 @@ case failureContactNotSupportedByApp
 INStartAudioCallIntentResponseCodeFailureContactNotSupportedByApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the sender or recipient cannot take part in an audio call.
 

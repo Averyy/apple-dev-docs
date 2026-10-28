@@ -25,7 +25,7 @@ func CMClockGetAnchorTime(_ clock: CMClock, clockTimeOut: UnsafeMutablePointer<C
 extern OSStatus CMClockGetAnchorTime(CMClockRef clock, CMTime *clockTimeOut, CMTime *referenceClockTimeOut);
 ```
 
-#### Discussion
+## Discussion
 
 To make practical use of this, you may need to know what the clock’s reference clock is.
 

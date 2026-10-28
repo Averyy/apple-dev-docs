@@ -19,7 +19,7 @@ class var defaultMenu: NSMenu? { get }
 @property (class, strong, readonly, nullable) NSMenu * defaultMenu;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns `nil`.
 

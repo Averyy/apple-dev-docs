@@ -23,7 +23,7 @@ let kMIDIPropertyMaxTransmitChannels: CFString
 extern CFStringRef const kMIDIPropertyMaxTransmitChannels;
 ```
 
-#### Discussion
+## Discussion
 
 Common values are 0, 1, and 16.
 

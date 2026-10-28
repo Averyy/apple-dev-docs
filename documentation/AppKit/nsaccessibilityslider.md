@@ -19,7 +19,7 @@ protocol NSAccessibilitySlider : NSAccessibilityElementProtocol
 @protocol NSAccessibilitySlider <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a slider—a control that represents a continuous range of numerical values with a knob that represents the currently selected value—in the accessibility hierarchy.
 

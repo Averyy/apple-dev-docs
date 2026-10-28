@@ -28,7 +28,7 @@ class func requestSiriAuthorization(_ handler: @escaping (INSiriAuthorizationSta
 
 - [Requesting Authorization to Use Siri](../../SiriKit/requesting-authorization-to-use-siri.md)
 
-#### Discussion
+## Discussion
 
 Call this method from your app to request authorization to integrate with Siri services. The first time you make this request, Siri prompts the user to grant or deny permission for your app to integrate with Siri. Subsequent calls to the method do not prompt the user again.
 

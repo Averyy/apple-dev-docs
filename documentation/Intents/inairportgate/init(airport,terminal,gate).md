@@ -24,11 +24,11 @@ init(airport: INAirport, terminal: String?, gate: String?)
 - (instancetype) initWithAirport:(INAirport *) airport terminal:(NSString *) terminal gate:(NSString *) gate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAirportGate`](../inairportgate.md) object or `nil` if one can’t be created.
 
-#### Discussion
+## Discussion
 
 You must create a new [`INAirportGate`](../inairportgate.md) object for both the arrival and departure gates associated with a flight.
 

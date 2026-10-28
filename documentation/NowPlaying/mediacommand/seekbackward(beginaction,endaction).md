@@ -21,7 +21,7 @@ Creates a command that rewinds through the media.
 static func seekBackward(beginAction: @escaping () async throws -> Void, endAction: @escaping () async throws -> Void) -> MediaCommand
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `beginAction` when the user starts rewinding (for example, by pressing and holding a rewind button), and calls `endAction` when the user stops. Use these paired actions to start and stop any rate change or scrubbing behavior.
 

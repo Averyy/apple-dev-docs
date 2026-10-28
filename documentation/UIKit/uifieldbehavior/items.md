@@ -23,7 +23,7 @@ var items: [any UIDynamicItem] { get }
 @property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
 ```
 
-#### Discussion
+## Discussion
 
 When it is enabled, the current field applies its behavior to all of the items in the array.
 

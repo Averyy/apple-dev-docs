@@ -29,11 +29,11 @@ vImage_Error vImageAlphaBlend_ARGB8888(const vImage_Buffer *srcTop, const vImage
 
 - [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md)
 
-#### Return Value
+## Return Value
 
 The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
-#### Discussion
+## Discussion
 
 On return of this function, the value of each pixel in the destination buffer is:
 

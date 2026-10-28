@@ -24,7 +24,7 @@ var width: Int { get set }
 @property (nonatomic, readwrite) NSUInteger width;
 ```
 
-#### Discussion
+## Discussion
 
 The formal width of the image, in pixels. The default value is 1.
 

@@ -21,7 +21,7 @@ A type that’s an alias for the field key structure.
 struct FieldKey
 ```
 
-#### Overview
+## Overview
 
 Apple Archive supports the following predefined keys:
 

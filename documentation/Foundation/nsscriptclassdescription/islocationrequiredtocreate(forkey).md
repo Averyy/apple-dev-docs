@@ -20,11 +20,11 @@ func isLocationRequiredToCreate(forKey toManyRelationshipKey: String) -> Bool
 - (BOOL) isLocationRequiredToCreateForKey:(NSString *) toManyRelationshipKey;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an insertion location must be specified; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A script command object that creates a new object in a to-many relationship needs to know whether an explicitly specified insertion location is required. It can get this information from an instance of `NSScriptClassDescription`. For example, `NSMakeCommand` uses this method to determine whether or not a specific `make` AppleScript command must have an `at` parameter.
 

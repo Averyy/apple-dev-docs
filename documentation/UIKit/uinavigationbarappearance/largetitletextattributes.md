@@ -23,7 +23,7 @@ var largeTitleTextAttributes: [NSAttributedString.Key : Any] { get set }
 @property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * largeTitleTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify font or color attributes for the text, UIKit applies default font and color values. For a list of possible keys, see [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 

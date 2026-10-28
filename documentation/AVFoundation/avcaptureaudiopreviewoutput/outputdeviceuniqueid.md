@@ -19,7 +19,7 @@ var outputDeviceUniqueID: String? { get set }
 @property (nonatomic, copy, nullable) NSString * outputDeviceUniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to the unique identifier of the audio output device, or `nil` to use default system output.
 

@@ -24,11 +24,11 @@ convenience init(componentDescription: AudioComponentDescription) throws
 - (instancetype) initWithComponentDescription:(AudioComponentDescription) componentDescription error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized audio unit, or `nil` if initialization failed.
 
-#### Discussion
+## Discussion
 
 This is the convenience initializer.
 

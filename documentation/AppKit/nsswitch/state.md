@@ -19,7 +19,7 @@ var state: NSControl.StateValue { get set }
 @property NSControlStateValue state;
 ```
 
-#### Discussion
+## Discussion
 
 The values [`off`](../nscontrol/statevalue/off.md) and [`on`](../nscontrol/statevalue/on.md) indicate that the switch is in the off or on position. The switch treats any value other than [`off`](../nscontrol/statevalue/off.md) as on.
 

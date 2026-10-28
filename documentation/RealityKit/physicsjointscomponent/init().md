@@ -20,7 +20,7 @@ Creates a new physics joints component.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The initializer sets the component’s [`joints`](./joints.md) property to an empty set.
 

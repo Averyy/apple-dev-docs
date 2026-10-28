@@ -19,7 +19,7 @@ func dragImageForRows(with dragRows: IndexSet, tableColumns: [NSTableColumn], ev
 - (NSImage *) dragImageForRowsWithIndexes:(NSIndexSet *) dragRows tableColumns:(NSArray<NSTableColumn *> *) tableColumns event:(NSEvent *) dragEvent offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSImage` containing a custom image for the specified rows and columns participating in the drag.
 

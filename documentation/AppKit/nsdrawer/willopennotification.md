@@ -21,7 +21,7 @@ class let willOpenNotification: NSNotification.Name
 extern NSNotificationName NSDrawerWillOpenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSDrawer` object about to open. This notification does not contain a `userInfo` dictionary.
 

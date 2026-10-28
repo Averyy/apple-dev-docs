@@ -15,11 +15,11 @@ Sets the input latency of the clock device.
 kern_return_t SetInputLatency(uint32_t in_latency);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Drivers can change the input latency of the clock device dynamically. If successful, changing the available input latency sends a notification to the host to update the object state.
 

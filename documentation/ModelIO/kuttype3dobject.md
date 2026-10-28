@@ -24,7 +24,7 @@ let kUTType3dObject: String
 extern NSString * const kUTType3dObject;
 ```
 
-#### Discussion
+## Discussion
 
 When importing assets in this file format, Model I/O also implements materials from companion files in `.mtl` format. Paths to MTL files are assumed to be relative to the referencing OBJ file, and paths to textures are assumed to be relative to the referencing MTL file.
 

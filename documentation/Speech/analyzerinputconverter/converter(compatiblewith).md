@@ -20,7 +20,7 @@ Returns an audio input converter compatible with the given modules.
 static func converter(compatibleWith modules: [any SpeechModule]) async throws -> AnalyzerInputConverter
 ```
 
-#### Return Value
+## Return Value
 
 An instance of this class.
 

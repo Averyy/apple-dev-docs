@@ -21,7 +21,7 @@ Initializes an instance with default spacing values.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a spacing preferences instance with default values. Then use [`formUnion(_:edges:)`](./formunion%28_,edges%29.md) to combine preferences from other views with the new instance. You typically do this in a custom layout’s implementation of the [`spacing(subviews:cache:)`](../layout/spacing%28subviews,cache%29.md) method.
 

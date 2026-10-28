@@ -21,7 +21,7 @@ Creates a NIST P-384 elliptic curve public key for use with Diffie-Hellman key e
 init<D>(_ serialization: D, kem: HPKE.KEM) throws where D : ContiguousBytes
 ```
 
-#### Discussion
+## Discussion
 
 - serialization: The serialized bytes of the public key.
 - kem: The Key Encapsulation Mechanism to use with the public key.

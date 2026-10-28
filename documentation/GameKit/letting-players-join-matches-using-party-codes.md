@@ -5,11 +5,11 @@
 
 Add a rule that lets players invite players and join matches using a shared party code.
 
-#### Overview
+## Overview
 
 You can let players start a party or group game with other players who they share a party code with. You provide an interface in your game for creating a party code, and then starting and joining matches using that party code. Then use matchmaking rules to ensure that Game Center only matches players with the same party code.
 
-##### Create a custom party code interface
+### Create a custom party code interface
 
 In your code, implement a party code feature that:
 
@@ -24,7 +24,7 @@ To share the party code, you can use in-game chat or data exchange in an existin
 
 To submit match requests without presenting an interface using automatch, see [Let Game Center match the player with others](./finding-multiple-players-for-a-game.md#Let-Game-Center-match-the-player-with-others).
 
-##### Add a party code matchmaking rule
+### Add a party code matchmaking rule
 
 Then create a compatible rule that finds players who have the same party code.
 
@@ -61,7 +61,7 @@ POST /v1/gameCenterMatchmakingRules
 
 To create a rule set, see [Create rule sets that contain the matchmaking rules](./finding-players-using-matchmaking-rules.md#Create-rule-sets-that-contain-the-matchmaking-rules).
 
-##### Create match requests using party codes
+### Create match requests using party codes
 
 In your code, create a match request that initiates or joins a party by adding a `partyCode` key-value pair to the request’s `GKMatchRequest` [`properties`](./gkmatchrequest/properties.md) dictionary.
 

@@ -26,11 +26,11 @@ func CFReadStreamCreateForHTTPRequest(_ alloc: CFAllocator?, _ request: CFHTTPMe
 extern CFReadStreamRefCFReadStreamCreateForHTTPRequest(CFAllocatorRef alloc, CFHTTPMessageRef request);
 ```
 
-#### Return Value
+## Return Value
 
 A new read stream, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates a read stream and associates it with the specified request. Automatic redirection is disabled by default. After creating the read stream, you can call [`CFReadStreamGetError(_:)`](../CoreFoundation/cfreadstreamgeterror%28_%29.md) at any time to check the status of the stream. You may want to call `CFHTTPReadStreamSetRedirectsAutomatically` to enable automatic redirection, or `CFHTTPReadStreamSetProxy` to set the name and port number for a proxy. To serialize the request and send it, call [`CFReadStreamOpen(_:)`](../CoreFoundation/cfreadstreamopen%28_%29.md).
 

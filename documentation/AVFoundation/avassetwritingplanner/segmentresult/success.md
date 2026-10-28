@@ -20,7 +20,7 @@ Finish the segment successfully without saving state.
 case success
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when the segment completed successfully and you don’t need to save any custom state for resumption.
 

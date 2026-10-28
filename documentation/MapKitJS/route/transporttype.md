@@ -15,7 +15,7 @@ The overall route transport type.
 transportType: TransportType | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the primary transport type used for the route. Individual steps of the route might use different transport types.
 

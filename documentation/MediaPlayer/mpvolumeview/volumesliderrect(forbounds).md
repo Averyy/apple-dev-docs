@@ -23,11 +23,11 @@ func volumeSliderRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) volumeSliderRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the volume slider track. This rectangle corresponds to the entire length of the track between the minimum and maximum value images.
 
-#### Discussion
+## Discussion
 
 The system uses the rectangle to scale the track and thumb images during drawing.
 

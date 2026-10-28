@@ -24,7 +24,7 @@ class var destinationOut: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * destinationOut;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the destination out blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926862@2x.png)
 

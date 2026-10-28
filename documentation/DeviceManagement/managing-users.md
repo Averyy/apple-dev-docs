@@ -5,11 +5,11 @@
 
 Register and manage users for your organization’s managed organizational unit.
 
-#### Overview
+## Overview
 
 Deployment of an organization’s owned assets to user-owned devices requires registering those users for the organizational unit you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
-#### Retrieve users
+## Retrieve users
 
 Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](./get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
 
@@ -72,7 +72,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users?clientU
 
 For pagination response fields and versioned queries using `sinceVersionId`, see [Using paginated endpoints](./using-paginated-endpoints.md).
 
-#### Invite users
+## Invite users
 
 You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed organizational unit.
 
@@ -96,7 +96,7 @@ The code above results in a response like the following:
 }
 ```
 
-#### Interpret user states
+## Interpret user states
 
 A user has an `email` key and either an `idHash` or an `inviteCode` key, depending on the status. A registered user has an `inviteCode` because the system has created the user, but that user doesn’t have an associated Apple Account yet. An associated user has an `idHash` that uniquely identifies the user’s associated Apple Account. A retired user may have an `idHash` if the user had an associated `appleId` previously.
 
@@ -107,7 +107,7 @@ A user has an `email` key and either an `idHash` or an `inviteCode` key, dependi
 | Retired | Indicates that the server has retired the user. |
 | Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple Account with a new user that shares the same `clientUserId`. |
 
-#### Check request size limits
+## Check request size limits
 
 The size limits for a [`ManageUsersRequest`](./manageusersrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](./serviceconfigresponse/limits-data.dictionary.md).
 
@@ -142,7 +142,7 @@ The code above results in a response like the following:
 }
 ```
 
-#### Manage users
+## Manage users
 
 Use [`ManageUsersRequest`](./manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in your deployment.
 
@@ -244,7 +244,7 @@ The code above results in a response like the following:
 
 The [`StatusResponse`](./statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
 
-#### Handle notifications
+## Handle notifications
 
 For device management services that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](./client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [Subscribing to notifications](./subscribing-to-notifications.md).
 

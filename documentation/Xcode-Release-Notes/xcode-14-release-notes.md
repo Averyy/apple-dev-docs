@@ -5,27 +5,27 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, and macOS Monterey 12.3. The Xcode 14 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14 requires a Mac running macOS Monterey 12.5 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 14 enables a single target to support multiple platforms and conditionally include dependencies, code, resources, and build settings for specific platforms. (74664328)
 - Xcode 14 supports development of DriverKit drivers for iPadOS. (81117498)
 - Xcode 14 includes a default template for watchOS apps that combines the WatchKit App and WatchKit App Extension targets into a single Watch App target, simplifying code, asset, and localization management. You can deploy single-target watchOS apps to watchOS 7 and later. (83222217)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When a storyboard is open and watchOS or tvOS content is deleted from Xcode Settings, the storyboard won’t close. (87471381)
 
-###### Known Issues
+#### Known Issues
 
 - If a `Package.swift` file is added to the containing folder while that folder is open in Xcode, the package will not be recognized. (85075018)
 
@@ -46,9 +46,9 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
   **Workaround**: Use Xcode 13.4.1 with iOS 15.7.
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - New C++ projects you create in Xcode use C++20 language dialect by default. (93456065)
 - Several C++20 and C++2b papers have been implemented:
@@ -64,36 +64,36 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
     - P1949R7 - C++ identifier syntax using Unicode Standard Annex 31
     - P2360R0 - Extend `init` statement to allow alias declaration (93898598)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode doesn’t provide semantic highlighting and jump-to-definition support for C++20 concept declarations and the requires clauses in templates. (93046529)
 
-###### Deprecations
+#### Deprecations
 
 - Starting with Xcode 14, bitcode is no longer required for watchOS and tvOS applications, and the App Store no longer accepts bitcode submissions from Xcode 14.
 
   Xcode no longer builds bitcode by default and generates a warning message if a project explicitly enables bitcode: “Building with bitcode is deprecated. Please update your project and/or target settings to disable bitcode.” The capability to build with bitcode will be removed in a future Xcode release. IPAs that contain bitcode will have the bitcode stripped before being submitted to the App Store. Debug symbols can only be downloaded from App Store Connect / TestFlight for existing bitcode submissions and are no longer available for submissions made with Xcode 14. (86118779)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### New Features
+#### New Features
 
 - Simplify an app icon with a single 1024x1024 image that is automatically resized for its target. Choose the Single Size option in the app icon’s Attributes inspector in the asset catalog. You can still override individual sizes with the All Sizes option. (18475136) (FB5503050)
 - You can now paste copied images from the Finder directly into the asset catalog outline. (58980721)
 - You can now double-click an image slot to show the open file panel and choose a replacement asset. (81365822)
 - You can specify the default rendering mode for custom symbols in an Asset Catalog. Set the Render As attribute to automatic, template, multicolor, or hierarchical. The system then uses the default rendering mode for the symbol, unless you explicitly override it. For more information on custom symbols, see [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md). (84513859)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The “All Sizes” mode for app icons has been made more flexible and includes some additional sizes not used before. The “All Sizes” mode doesn’t require that all slots are filled, sizes can be provided only as needed. App icons created with Xcode 13 and earlier can be converted from “All Size (Xcode 13)” mode to either “All Sizes” or “Single Size”. (93682080)
 
-###### Known Issues
+#### Known Issues
 
 - Apps using a single-size app icon can fail App Store validation if the deployment target is older than iOS 12 or watchOS 4. (98471456)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Xcode provides a new assistant editor for build logs that focuses on parallelism to help identify build performance issues. This visualization displays events as a grid of colored blocks where the vertical axis represents level of parallelism and the horizontal axis represents time. (47858322)
 - Xcode 14 can now compile targets in parallel with their Swift target dependencies. (57116972)
@@ -115,18 +115,18 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Xcode now provides `RECOMMENDED_MACOSX_DEPLOYMENT_TARGET`, `RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET`, `RECOMMENDED_TVOS_DEPLOYMENT_TARGET`, `RECOMMENDED_WATCHOS_DEPLOYMENT_TARGET`, and `RECOMMENDED_DRIVERKIT_DEPLOYMENT_TARGET` build settings that indicate the recommended minimum deployment versions for each supported Xcode platform. (90464341)
 - You can now enable sandboxing for shell script build phases using the `ENABLE_USER_SCRIPT_SANDBOXING` build setting. Sandboxing blocks access to files inside the source root of the project as well as the Derived Data directory unless you list those files as inputs or outputs. When enabled, the build fails with a sandbox violation if a script phase attempts to read from or write to an undeclared dependency, preventing incorrect builds. (90506067)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where multiple Xcode projects referencing the same `xcconfig` file (which in turn included another `xcconfig` file) incorrectly computed the same build settings across both projects. (84319288) (FB9707003)
 - Fixed: watchOS device run destinations no longer appear twice in the run destination menu. (85635959)
 - Improved the loading speed of large workspaces that have many targets that share `.xcconfig` files. (85985712)
-- Fixed: When you archive a watchOS app with the [arm64e](../Security/preparing_your_app_to_work_with_pointer_authentication.md) architecture enabled, it fails to build. (93550623)
+- Fixed: When you archive a watchOS app with the [arm64e](../Security/preparing-your-app-to-work-with-pointer-authentication.md) architecture enabled, it fails to build. (93550623)
 
-###### Known Issues
+#### Known Issues
 
 - Crash reports from Mac Catalyst apps aren’t fully symbolicated in the Xcode Organizer. (94820955)
 
-###### Deprecations
+#### Deprecations
 
 - Because bitcode is now deprecated, builds for iOS, tvOS, and watchOS no longer include bitcode by default. (87590506)
 - Added a new build setting, SWIFT_TOOLS_DIR, which replaces SWIFT_EXEC as the recommended mechanism to use a custom swift-frontend executable. SWIFT_TOOLS_DIR should be set to the path of the directory which contains swift-frontend and related tools. Note that because the Swift driver is now integrated in the Xcode build system,  SWIFT_TOOLS_DIR and SWIFT_EXEC cannot be used to specify a custom driver binary unless SWIFT_USE_INTEGRATED_DRIVER is set to NO. (88967344)
@@ -137,9 +137,9 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
   **Workaround**: Use the Build Settings Editor to remove the condition.
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - The memory graph debugger now displays all the incoming and outgoing references in the memory graph. You can adjust the set of visible nodes in the new popover. (69454709)
 - LLDB now shows progress updates in Xcode and the command line for long running operations. (73511008)
@@ -148,36 +148,36 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - It’s now possible to open a `.xcresult` bundle for a launch scheme action. (88932007)
 - Xcode now shows a new launch log in the Report navigator. The log indicates the actions Xcode takes to install, launch, and debug. (90859910)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Improved the performance when debugging Swift programs on iOS devices. Instead of copying the reflecting metadata from the iOS device, Xcode can now read the metadata from disk. (73179144)
 - Xcode now groups log items for the same launch scheme action in the Report navigator. (87216988)
 - Fixed: Stepping into a Swift async function in LLDB finishes the current function instead. (88142757)
 
-###### Known Issues
+#### Known Issues
 
 - Unable to attach a debugger to Lock Screen Widget Extension. (93941779)
 
   **Workaround**: Edit the Extension scheme - under Run action, Arguments tab, set the environment variable ‘_XCWidgetKind’ to be one of your class/struct names implementing the widget.
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - Swift-DocC in Xcode now supports writing and building documentation for Objective-C and C APIs. (58760015)
 - The Swift-DocC documentation websites Xcode 14 produces include a new navigation sidebar for exploring and filtering the documentation. (89031049)
 - The Swift-DocC documentation Xcode 14 produces is now, by default, compatible with most managed hosting services, including GitHub Pages. (91173450)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Swift-DocC incorrectly emits diagnostics about directives not being supported in symbol source documentation when building documentation for Objective-C projects that include Doxygen commands. (90953916)
 - Fixed: Objective-C documentation for multi-language APIs show Swift symbol relationships instead of Objective-C relationships. (91627374)
 - Fixed: Swift-DocC incorrectly emits diagnostics about unresolvable symbol links for documentation inherited from symbols in other modules. (92185538)
 - Fixed: Building documentation for types that conform to the Swift Charts `ChartContent` protocol failed. (93610106)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - Aggregation functions operating on intervals now more accurately calculate their results when a time filter is active, based only on the portion of the overall interval that intersects the current time filter. (32330648)
 - The Detail Filter now allows filters to be applied to a specific column when viewing a List View. These typed filters can be added by using contextual menus on displayed values or by typing in a token and then selecting a token type. (56080914)
@@ -203,7 +203,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - For processes running with `MallocStackLogging` enabled, `heap`, `leaks`, and the Xcode memory debugger display type names for nonobject allocations in the form `malloc in <function name>` where “function name” is the first nonallocation stack frame. This feature helps to better identify the purpose of nonobject memory. (85598783)
 - `heap -addresses=all` now displays the descriptions of CFData objects that contain binary `.plist` files in a more human-readable way. (88466642)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - `heap` , `leaks`, and `stringdups` now include the contents of some types of heap-allocated Swift strings in descriptions about those strings’ allocations. (14902403)
 - The GCD Performance instrument now properly interprets events with codes “7” and “9.” (69721960)
@@ -229,16 +229,16 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Fixed an intermittent Instruments crash when recording traces with the Allocations or Leaks templates. (93916110)
 - Fixed: Creating a Core ML Performance Report may fail after enabling Developer Mode on the device. (93923607)
 
-###### Known Issues
+#### Known Issues
 
 - Symbolication of user code with a `dSYM` may fail for tailspin files imported into Instruments. Symbols for system libraries also aren’t appearing when these files are loaded. (93261223)
 
   **Workaround**: Symbolicate hang logs in Terminal with `spindump -i <UIKit-runloop*.ips>`.
 - Disable the Thread Performance Checker through the Diagnostics tab in the Scheme Editor if your iOS or macOS App uses Fishhook to hook calls to `libSystem` for debugging/tracing purposes. (94724380) (FB10131267)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - `UISplitViewController` now supports sidebars in Mac apps built with Mac Catalyst. To enable sidebars, set the Primary Style in the split view controller’s attributes inspector. (82004740)
 - Interface Builder now supports new center item groups on `UINavigationItem`. (83252931)
@@ -256,7 +256,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Interface Builder now supports authoring `MKLookAroundViewController`. (90994596)
 - Interface Builder now supports authoring `RoomCaptureView`. (91640003)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - `UIBarButtonItemGroup` has been added to the Interface Builder object library. It can be dragged into a `UINavigationItem` to provide Center Items. (19160962)
 - The `UIColorWell` is now available in the object library. When tapped, the control presents a color picker. (67016855)
@@ -267,25 +267,25 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - WatchKit storyboards are deprecated in watchOS 7.0 and later. Please migrate to SwiftUI and the SwiftUI Lifecycle. (94058186)
 - The Interface Builder outline view now saves and restores visibility/width state globally instead of per document. (97084370)
 
-###### Known Issues
+#### Known Issues
 
 - The font size doesn’t change to match the control size for `NSComboButton`. (94610724) (FB10094813)
 
-##### Linking
+### Linking
 
-###### Known Issues
+#### Known Issues
 
 - Swift apps built with Xcode 14 may fail to link against `libswiftFoundation.dylib`. This can cause the app to misbehave when running on operating systems prior to macOS 13 Ventura and iOS 16, including strings not printing correctly and exceptions being thrown for missing methods on Foundation data types. (99457165)
 
   **Workaround**: Explicitly reference a symbol from `libswiftFoundation` in code, for example by adding `_ = JSONDecoder()` in a function.
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - You can now export local Swift packages for localization. Xcode generates a single localizations catalog for all projects and Swift packages contained in a project or workspace. You can also use `xcodebuild -importLocalizations` and `xcodebuild -exportLocalizations` to export or import a Swift package. (56355281)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Localized strings that explicitly specify a `table` parameter that isn’t a string literal are no longer extracted when running `genstrings` or exporting for localization. Previously, `genstrings` defaulted to a table named `Localizable.strings`. (65063595)
 - Fixed an issue where Xcode sometimes didn’t raise an error when exporting a malformed `.strings` file for localization. (85278818)
@@ -295,28 +295,28 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Keys in `.strings` files that exist in a `.stringsdict` with `NSStringDeviceSpecificRuleType` are no longer marked as `translate="no"` in the exported XLIFF, because these also fall back to the `.strings` file value at runtime. (90785024)
 - Fixed an issue where Xcode raised warnings for untranslated units marked as `translate="no"` when importing localizations. (91692843) (FB9982115)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - TextureConverter 2.0 adds support for decompressing textures, advanced texture error metrics, and support for reading and writing KTX2 files.
 
   The new AppleTextureConverter library makes TextureConverter available for integration into third-party engines and tools. (82244472)
 
-###### Known Issues
+#### Known Issues
 
 - Profiling Metal captures containing mesh pipelines is disabled. (93255574)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - TestFlight Screenshot Feedback is now available in the Xcode Organizer. You can now view screenshot and textual feedback for iOS and macOS in Xcode by selecting the “Feedback” item in the reports section of the sidebar. To get started, sign-in with the Apple Developer account associated with your TestFlight app, and open the Organizer by selecting Window > Organizer in the menu bar. In addition to viewing feedback, you can reach out directly to testers, and share feedback with members of your development team. (56519107)
 - TestFlight Screenshot Feedback can now be opened in the Xcode Organizer via the “Open in Xcode 14” button in App Store Connect. (83599827)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Xcode Previews now resume automatically when creating new projects. (50474683)
 - Xcode Previews no longer pauses after editing a file and switching back to a preview and resuming, or when projects modify the source directory during a build. (71593736)
@@ -324,7 +324,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Xcode Previews now uses data from StoreKit Configuration files if one is set in the scheme’s run options. Previews only supports a subset of StoreKit APIs. (82312384)
 - Preview diagnostics are now accessible using Xcode’s Editor > Canvas > Diagnostics menu item. (92620156)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Xcode Previews now correctly displays string literals that contain Swift unicode escape sequences. (32722474)
 - Xcode Previews can now run on physical devices without requiring a containing application, making it easy to preview on-device for frameworks and Swift packages. Xcode automatically prepares a proper signed application for your default signing identity to host the preview. (50206641)
@@ -353,51 +353,51 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Xcode Previews now supports watchOS complications inside of standalone watchOS apps. (95311509)
 - Xcode Previews now works with packages containing resources that aren’t also contained in an app. (96828503)
 
-###### Deprecations
+#### Deprecations
 
 - Support for previewing widgets created for macOS apps and apps built with Mac Catalyst has been removed. (92531529)
 
   **Workaround**: Use the macOS WidgetKit Simulator.
 
-##### Project Navigator
+### Project Navigator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you use the File Inspector to change the type of a file, the file may be reopened in a different editor. (91784648)
 - Fixed: The Issue Navigator doesn’t list issues generated when building Swift code in the emit module phase. (92430695)
 
-###### Known Issues
+#### Known Issues
 
 - Option+Clicking the close button for an unselected editor tab closes all the other tabs (as expected) and also navigates to the clicked tab using optional navigation. This navigation is unintentional. (96958005)
 - Opening result bundles with large build logs can take 30 seconds or more. (97328772)
 - Option+Clicking an editor tab doesn’t perform “optional navigation” as configured in Xcode’s preferences. (97690500)
 
-##### Refactoring
+### Refactoring
 
-###### New Features
+#### New Features
 
 - Added a refactor action to add an explicit `Codable` implementation. (87904700)
 
-###### Known Issues
+#### Known Issues
 
 - Convert to Regex Builder doesn’t correctly handle patterns with Unicode escape sequences. For example a regex literal containing `\u{0}` will be converted to `""` in the result. (95465206) (FB10343998)
 
-##### Server
+### Server
 
-###### Known Issues
+#### Known Issues
 
 - Xcode Server is no longer supported. (73888675)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - Automatic signing is now supported for development-signed DriverKit drivers. Distribution still requires approval from Apple and manual configuration of the additional capabilities on the [Apple Developer website](https://developer.apple.com/account). (81215709)
 - The Game Center entitlement `com.apple.developer.game-center` is now available for apps on iOS, watchOS, and tvOS. If your app makes use of Game Center, it automatically receives this entitlement when you regenerate your provisioning profile.  If you use automatic signing, Xcode automatically generates a new provisioning profile for you. If you use manual signing, you need to [sign into your account](https://developer.apple.com/account) and regenerate your provisioning profile.
 
   If you plan to continue using Game Center in your app, add the `com.apple.developer.game-center` entitlement to your entitlements file in Xcode. If not, remove the capability in Xcode and disable Game Center on your app ID in your [developer account](https://developer.apple.com/account). (90667072)
 
-###### Known Issues
+#### Known Issues
 
 - `xcodebuild -exportArchive` returns a session expired error message if you use authentication keys to upload your app to App Store Connect. (76036452)
 
@@ -406,13 +406,13 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
   **Workaround**: You can disable Xcode’s entitlements filtering logic to work around this, either by running `defaults write com.apple.dt.Xcode DVTEnableMultiPlatformEntitlementFiltering -bool NO` in Terminal or by adding `-DVTEnableMultiPlatformEntitlementFiltering=NO` to your `xcodebuild` command line invocation.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When editing the iCloud, App Groups, Apple Pay, or Wallet capability, Xcode may offer to select a team if you don’t choose a team. Selecting a team causes Xcode to crash. (93914533)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Simulator now supports remote notifications in iOS 16 when running in macOS 13 on Mac computers with Apple silicon or T2 processors. Simulator supports the Apple Push Notification Service Sandbox environment. Your server can send a remote notification to your app running in that simulator by connecting to the APNS Sandbox (api.sandbox.push.apple.com). Each simulator generates registration tokens unique to the combination of that simulator and the Mac hardware it’s running on. See [User Notifications](../UserNotifications/UserNotifications.md) for more information.
 
@@ -424,7 +424,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - `simctl addmedia` has been updated to support many additional image formats (including many popular RAW formats). (87103990) (FB9832655)
 - You can now boot simulator devices using universal runtimes as x86_64 on a Mac with Apple silicon by using the new `--arch` command-line argument to `simctl boot`. (88278366) (FB9860747)
 
-###### Known Issues
+#### Known Issues
 
 - If you manually unmount or detach a simulator runtime disk image (such as by using `diskutil eject` or `umount`), Simulator and Xcode may not be able to determine whether the runtime is installed or not. Attempts to re-download the runtime results in failure with a duplicate runtime error. (89589210)
 
@@ -433,9 +433,9 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
   **Workaround**: Place the simulator runtime disk image somewhere other than `/tmp/` before passing it into `xcrun simctl runtime add`.
 
-##### Siri Intents
+### Siri Intents
 
-###### Known Issues
+#### Known Issues
 
 - Generated Swift code that the Intent definition compiler produces emits a warning when compiled:
 
@@ -445,22 +445,22 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 (91852710)
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Various bugs impacting the accuracy and latency of git file status in the Project and Changes navigators have been resolved. Changes to files in the working copy are accurately reflected in the navigators and the commit sheet without significant delay. Additionally, files that display change bars when presented in an editor receive a modified status as soon as a change is made in memory that would cause it to have a modified status when persisted to disk. (49909533)
 - Xcode now supports generating and using externally-generated ED25519 and ECDSA keys to perform `git` SSH operations. (85009643)
 
-###### Known Issues
+#### Known Issues
 
 - Configuring a new application in Xcode Cloud will fail when a developer team has no existing apps in App Store Connect. (94199091)
 
   **Workaround**: Create the app in App Store Connect first, then onboard the product in Xcode.
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Xcode now pins elements of your code structure to the top of the editor as you scroll through a document. To toggle this behavior, use “Show: Code structure while scrolling” in Xcode’s Text Editing preferences. (10582250)
 - Errors in Swift files now provide fix-its for adding missing imports. (21533417) (FB5562997)
@@ -480,7 +480,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Code completion in Swift now provides snippets for `map`, `filter`, and `contains`, based on variable names. (89717471)
 - Code structure pinned to the top of the editor with Xcode 14’s new “Show: Code structure while scrolling” option now includes additional information for line-wrapped declarations. (93591165)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Code completion at function call sites in Swift now inserts missing arguments. (9293666)
 - A number of performance improvements have been made for viewing and editing large files. The issues most often appeared in autogenerated source files and test files with large numbers of tests, and could be worse when showing the code folding ribbon. (57789416)
@@ -508,19 +508,19 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Fixed an issue that could lead to crashes when jumping to a symbol definition in a GPU trace. (93434935)
 - The syntax coloring of regex literals has been updated to support the latest swift evolution proposal [SE-0354 Regex Literals](https://github.com/apple/swift-evolution/blob/main/proposals/0354-regex-literals.md). In particular it now correctly handles what looked like unclosed literals followed by a comment, literals used in `try` and `await` expressions, and does better disambiguation with prefix operators that contain a `/`. (93673226, 92355356, 94661164) (95146866)
 
-###### Known Issues
+#### Known Issues
 
 - Convert to Regex Builder doesn’t correctly handle patterns using lookahead. For example, `/foo(?=bar)/` should produce `Lookahead("bar")` in the result, but only produces `"bar"`. (97208700)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Xcode now has the ability to sync in-app purchase products from App Store Connect into StoreKit configuration files for faster StoreKit testing in Xcode setup. There’s also an updated transaction manager with filtering and a transaction inspector. (83863948)
-- Fixed an issue where calling the [‘clearTransactions()’](../StoreKitTest/sktestsession/api-3579476-cleartransactions.md) method on [SKTestSession](../StoreKitTest/sktestsession.md) didn’t clear all transactions from the [SKPaymentQueue](../StoreKit/skpaymentqueue.md) when testing apps using the original API for in-app purchase. (86696132) (FB9814502)
+- Fixed an issue where calling the [‘clearTransactions()’](../StoreKitTest/sktestsession/cleartransactions%28%29.md) method on [SKTestSession](../StoreKitTest/sktestsession.md) didn’t clear all transactions from the [SKPaymentQueue](../StoreKit/skpaymentqueue.md) when testing apps using the original API for in-app purchase. (86696132) (FB9814502)
 - Fixed: The transaction manager no longer shows an unfinished warning for transactions that it can’t finish when using StoreKit testing in Xcode. (89419046) (FB9927448)
 
-###### Known Issues
+#### Known Issues
 
 - Using the following StoreKit properties and methods on apps with a minimum deployment target below iOS 16, macOS 13, watchOS 9, and tvOS 16 will cause the app to crash at launch when running on systems earlier than iOS 16, macOS 13, watchOS 9 and tvOS 16:
 
@@ -531,9 +531,9 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
   **Workaround**: For each target using a StoreKit API listed above, navigate to the “Build Phases” tab in the project editor with the target selected and add StoreKit.framework under “Link Binary With Libraries” if it isn’t already present. Set the “Status” column to “Optional.”
 
-##### Swift 5.7
+### Swift 5.7
 
-###### New Features
+#### New Features
 
 - The standard library has a new `Regex<Output>` type.
 
@@ -1009,7 +1009,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
   ([SE-0328](https://github.com/apple/swift-evolution/blob/main/proposals/0328-structural-opaque-result-types.md), 93675646)
 - Various protocols in the standard library now declare primary associated types, for example `Sequence` and `Collection` declare a single primary associated type `Element`. For example, this allows writing down the types `some Collection<Int>` and `any Collection<Int>`. ([SE-0358](https://github.com/apple/swift-evolution/blob/main/proposals/0358-primary-associated-types-in-stdlib.md), 93929895)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Stored properties in Swift can’t have type information that is potentially unavailable at runtime. However, prior to Swift 5.7 the compiler incorrectly accepted `@available` attributes on stored properties when the property had either the `lazy` modifier or an attached property wrapper. This could lead to crashes for apps running on older operating systems. The Swift compiler now consistently rejects `@available` on all stored properties. (82713248) (FB9594187)
 - The async version of the `addTeardownBlock` method in `XCTestCase` is now available. (85453819) (FB9762503)
@@ -1070,7 +1070,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 (93930900)
 
-###### Known Issues
+#### Known Issues
 
 - `#if canImport(AudioVideoBridging)` doesn’t compile on Mac Catalyst. (89289575)
 
@@ -1090,9 +1090,9 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
   var completion: (NSSecureCoding?, Error?) -> Void
   ```
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Modules that collide due to having the same name can now be disambiguated by aliasing. The package manifest introduces a new parameter ‘moduleAliases’; it allows a user to define unique names for the conflicting modules and builds them under the new names without requiring any source code changes.
 
@@ -1117,7 +1117,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Xcode 14’s new XcodeProjectPlugin API extends Swift Package Manager’s PackagePlugin API, and provides a simplified description of the structure of an Xcode project. Plugins using this new API can be used with projects and packages. Plugins using only the PackagePlugin API can only be used with packages. (88196725)
 - Build tool plugins can now use the `XcodeBuildToolPlugin` protocol in the `XcodeProjectPlugin` module to generate sources and resources for Xcode targets.  The Xcode target editor lets a target be configured to use a build tool plugin provided by any of the project’s package dependencies. (92415898)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Long-running Swift Package plugins can’t be cancelled. (75740831)
 - Remote packages are updated during package resolution when using xcodebuild, even if `-onlyUsePackageVersionsFromResolvedFile` is being passed (the default on Xcode Cloud). This resolves an issue where the package resolved file references commits that are newer than existing local working copies. (82163698) (FB9539493)
@@ -1129,7 +1129,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Fixed: In some cases when a package resolution error is resolved, the issue remains showing in the Issue Navigator. (92886176)
 - Fixed an issue where build description creation was slow for builds with very large SwiftPM package dependency graphs. (93041521) (FB10014448)
 
-###### Known Issues
+#### Known Issues
 
 - On rare occasions, Xcode shows a package resolution error when a project that has package dependencies is opened for the first time. (75025949) (FB9028752)
 
@@ -1146,15 +1146,15 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 **Workaround**:  Build the project. Xcode will index the generated source files once they have been generated.
 
-##### Templates
+### Templates
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The Cocoa AppleScript application template has been removed in Xcode 14. (20633478)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - `XCTAssertThrows()` and related macros now provide richer diagnostic information when they catch thrown exceptions other than `NSException` (including C++ exceptions.) (15363879)
 - XCTest includes a new Swift-only expectation type, `XCTKeyPathExpectation`, that you can use instead of `XCTKVOExpectation` for observing changes to Swift keypaths. (38074735) (FB5724526)
@@ -1172,7 +1172,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - XCTest captures a sysdiagnose once testing has finished and an error or failure is encountered. This behavior is controllable from a Test Plan or the `xcodebuild` command line interface. (87787968)
 - There is a new XCTest API `XCUIDevice.current.press(.action)` for the new Apple Watch Action button. (93394912)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - XCTest now generates result bundles when testing fails to begin. (56313666)
 - A duplicate but empty entry for a Swift package target should no longer appear in the code coverage report. Additionally, if a Swift package target is selected for code coverage via the “Some Targets” UI in the scheme or test plan editor, the package target is now included in the generated report. (63983853) (FB7724987)

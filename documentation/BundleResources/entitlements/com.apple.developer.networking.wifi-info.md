@@ -16,7 +16,7 @@ A Boolean value indicating whether your app can access information about the con
 - **Name**: `com.apple.developer.networking.wifi-info` (Access Wi-Fi Information)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](../../SystemConfiguration/cncopycurrentnetworkinfo.md) function to obtain information about the current Wi-Fi network.
 

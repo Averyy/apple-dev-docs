@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, makeFirstResponder responder: NSRespon
 - (void) webView:(WebView *) sender makeFirstResponder:(NSResponder *) responder;
 ```
 
-#### Discussion
+## Discussion
 
 You can ignore this message if `sender` is not yet attached to a window.
 

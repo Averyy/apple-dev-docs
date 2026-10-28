@@ -19,7 +19,7 @@ var rowSizeStyle: NSTableView.RowSizeStyle { get set }
 @property NSTableViewRowSizeStyle rowSizeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The `rowSizeStyle` property is set by the `NSTableView` to its [`effectiveRowSizeStyle`](../nstableview/effectiverowsizestyle.md). The cell view will layout the [`textField`](./textfield.md) and [`imageView`](./imageview.md) based on the `rowSizeStyle`.
 

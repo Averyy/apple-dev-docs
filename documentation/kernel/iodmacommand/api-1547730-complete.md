@@ -15,11 +15,11 @@ Complete processing of DMA mappings after an I/O transfer is finished.
 virtual IOReturn complete(bool invalidateCache, bool synchronize);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnNotReady if not prepared, kIOReturnSuccess otherwise.
 
-#### Discussion
+## Discussion
 
 This method should not be called unless a prepare was previously issued; the prepare() and complete() must occur in pairs, before and after an I/O transfer
 

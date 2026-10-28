@@ -25,11 +25,11 @@ func MKMapPointsPerMeterAtLatitude(_ latitude: CLLocationDegrees) -> Double
 extern double MKMapPointsPerMeterAtLatitude(CLLocationDegrees latitude);
 ```
 
-#### Return Value
+## Return Value
 
 The number of map points that span one meter.
 
-#### Discussion
+## Discussion
 
 The number of map points per meter increases as the latitude approaches the poles.
 

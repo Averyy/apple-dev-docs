@@ -21,7 +21,7 @@ var contents: [Any] { get set }
 @property (copy) NSArray<id> * contents;
 ```
 
-#### Discussion
+## Discussion
 
 The list view controller asks its delegate for a new content view controller for each object in `contents`, and sets the [`representedObject`](../../AppKit/nsviewcontroller/representedobject.md) of the newly created content view controller accordingly. To optimize content resetting, the list view controller may reuse content view controllers for identical objects that already exist in `contents`.
 

@@ -22,7 +22,7 @@ Sets a temporary resource value on the URL object.
 mutating func setTemporaryResourceValue(_ value: any Sendable, forKey key: URLResourceKey)
 ```
 
-#### Discussion
+## Discussion
 
 Temporary resource values are for client use. Temporary resource values exist only in memory and are never written to the resource’s backing store. Once set, a temporary resource value can be copied from the URL object with `func resourceValues(forKeys:)`. The values are stored in the loosely-typed `allValues` dictionary property.
 

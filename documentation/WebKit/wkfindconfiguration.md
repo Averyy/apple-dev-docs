@@ -24,7 +24,7 @@ class WKFindConfiguration
 @interface WKFindConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`WKFindConfiguration`](./wkfindconfiguration.md) object and configure its attributes to specify how to perform searches within the web view’s contents. To initiate a search, call the appropriate method of [`WKWebView`](./wkwebview.md) and pass this object along with the search string.
 

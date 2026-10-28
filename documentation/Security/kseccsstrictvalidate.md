@@ -20,7 +20,7 @@ var kSecCSStrictValidate: UInt32 { get }
 kSecCSStrictValidate
 ```
 
-#### Discussion
+## Discussion
 
 For code in bundle form, perform additional checks to verify that the bundle is not structured in a way that would allow tampering, and reject any resource envelope that introduces weaknesses into the signature.
 

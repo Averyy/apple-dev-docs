@@ -9,7 +9,7 @@ Retrieve target cost-per-acquisition recommendations for campaigns using a Maxim
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Each [`TargetCpaRecommendation`](./targetcparecommendation.md) result includes:
 
@@ -23,7 +23,7 @@ Only campaigns using a Maximize Conversions bid strategy will receive recommenda
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -48,11 +48,11 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | `taps` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap count. |
 | `ttr` | number | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap-through rate. |
 
-#### Payload Examples
+## Payload Examples
 
 This example queries available target CPA recommendations for an app, sorted by creation time. The response includes the recommended CPA alongside historical performance metrics.
 
-##### Request
+### Request
 
 ```http
 POST /v1/recommendations/target-cpas/query
@@ -94,7 +94,7 @@ POST /v1/recommendations/target-cpas/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

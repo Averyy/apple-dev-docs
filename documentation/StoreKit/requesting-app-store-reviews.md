@@ -13,7 +13,7 @@ Implement best practices for prompting users to review your app in the App Store
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Present your users with a request for an App Store review using [`RequestReviewAction`](./requestreviewaction.md) to get feedback on your app. Be aware that the system displays the review prompt to a user a maximum of three times within a 365-day period. You can determine when and where your app displays the prompt to request a review. Consider the best places and conditions in your app to show the request, and when it might be appropriate to delay it. Here are some best practices:
 
@@ -23,7 +23,7 @@ Present your users with a request for an App Store review using [`RequestReviewA
 
 Also, remember that people can disable requests for reviews from *ever* appearing on their device.
 
-##### Present the review request
+### Present the review request
 
 This sample project demonstrates a simulated three-step process. A person taps the Start Process button, and then taps Continue Process twice, after which the app presents a Process Completed scene. The request for review appears from this scene only.
 
@@ -80,7 +80,7 @@ In the following code, the app stores the usage data that delays the review requ
 
 In other apps, there might be more appropriate on-device storage options. For more information about best practices for requesting reviews, see [Ratings and reviews](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews) in Human Interface Guidelines.
 
-##### Manually request a review
+### Manually request a review
 
 To enable a person to initiate a review as a result of an action in the UI, the sample code uses a deep link to the App Store page for the app with the query parameter `action=write-review` appended to the URL:
 

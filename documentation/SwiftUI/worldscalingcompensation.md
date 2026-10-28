@@ -15,7 +15,7 @@ Indicates whether returned metrics will take dynamic scaling into account.
 struct WorldScalingCompensation
 ```
 
-#### Overview
+## Overview
 
 On visionOS, a window scene or a volume scene with the [`defaultWorldScaling(_:)`](./scene/defaultworldscaling%28_%29.md) modifier may scale dynamically when the user repositions it. In those cases, the metrics returned by a [`PhysicalMetric`](./physicalmetric.md) or [`PhysicalMetricsConverter`](./physicalmetricsconverter.md) value may or may not correspond to the units of a `RealityView`.
 

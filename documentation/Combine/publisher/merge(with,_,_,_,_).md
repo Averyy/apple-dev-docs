@@ -21,11 +21,11 @@ Combines elements from this publisher with those from five other publishers, del
 func merge<B, C, D, E, F>(with b: B, _ c: C, _ d: D, _ e: E, _ f: F) -> Publishers.Merge6<Self, B, C, D, E, F> where B : Publisher, C : Publisher, D : Publisher, E : Publisher, F : Publisher, Self.Failure == B.Failure, Self.Output == B.Output, B.Failure == C.Failure, B.Output == C.Output, C.Failure == D.Failure, C.Output == D.Output, D.Failure == E.Failure, D.Output == E.Output, E.Failure == F.Failure, E.Output == F.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits an event when any upstream publisher emits an event.
 
-#### Discussion
+## Discussion
 
 Use [`merge(with:_:_:_:_:_:)`](./merge%28with,_,_,_,_,_%29.md) when you want to receive a new element whenever any of the upstream publishers emits an element. To receive tuples of the most-recent value from all the upstream publishers whenever any of them emit a value, use [`combineLatest(_:_:_:)`](./combinelatest%28_,_,_%29-48buc.md). To combine elements from multiple upstream publishers, use [`zip(_:_:_:)`](./zip%28_,_,_%29-16rcy.md).
 

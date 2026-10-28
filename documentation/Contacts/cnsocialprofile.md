@@ -24,7 +24,7 @@ class CNSocialProfile
 @interface CNSocialProfile : NSObject
 ```
 
-#### Overview
+## Overview
 
 Some social profile services, such as Facebook and Twitter, are predefined in this class. You can also specify your own social profile service with the [`init(urlString:username:userIdentifier:service:)`](./cnsocialprofile/init%28urlstring,username,useridentifier,service%29.md) method.
 

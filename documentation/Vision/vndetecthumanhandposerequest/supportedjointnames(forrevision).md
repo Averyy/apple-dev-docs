@@ -24,7 +24,7 @@ class func supportedJointNames(forRevision revision: Int) throws -> [VNHumanHand
 + (NSArray<NSString *> *) supportedJointNamesForRevision:(NSUInteger) revision error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The array of joint name objects for the specified revision.
 

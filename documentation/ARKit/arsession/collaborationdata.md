@@ -20,7 +20,7 @@ class CollaborationData
 @interface ARCollaborationData : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create a multiuser AR experience, you enable collaboration on a world tracking session. ARKit regularly outputs [`ARSession.CollaborationData`](./collaborationdata.md) that users share with each other, which enables everyone to view the same virtual content from their own perspective. For more information, see [`isCollaborationEnabled`](../arworldtrackingconfiguration/iscollaborationenabled.md).
 

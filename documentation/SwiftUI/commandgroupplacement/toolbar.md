@@ -19,7 +19,7 @@ Placement for commands that manipulate the toolbar.
 static let toolbar: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

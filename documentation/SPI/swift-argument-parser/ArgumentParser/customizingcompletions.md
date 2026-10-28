@@ -10,7 +10,7 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Provide custom shell completions for your command-line tool’s arguments and options.
 
-#### Overview
+## Overview
 
 `ArgumentParser` provides default completions for any types that it can. For example, an `@Option` property that is a `CaseIterable` type will automatically have the correct values as completion suggestions.
 
@@ -69,7 +69,7 @@ struct SwiftRun {
 
 In this example, when a user requests completions for the `--target` option, the completion script runs the `SwiftRun` command-line tool with a special syntax, calling the `listExecutables` function with an array of the arguments given so far.
 
-##### Configuring Completion Candidates per Shell
+### Configuring Completion Candidates per Shell
 
 The shells supported for word completion all have different completion candidate formats, as well as their own different syntaxes and built-in commands.
 

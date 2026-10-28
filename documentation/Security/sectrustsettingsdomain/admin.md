@@ -20,7 +20,7 @@ case admin
 kSecTrustSettingsDomainAdmin
 ```
 
-#### Discussion
+## Discussion
 
 Administrator privileges are required to make changes to this domain.
 

@@ -17,7 +17,7 @@ Represents a single group of data to be plotted. In most cases, CareKit plots ac
 struct OCKDataSeries
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: `OCKGraphView`
 

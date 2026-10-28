@@ -23,7 +23,7 @@ var customTypeName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * customTypeName;
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores the value of this property unless you set the context’s [`type`](./type.md) property to [`CLSContextType.custom`](../clscontexttype/custom.md).
 

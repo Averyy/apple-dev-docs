@@ -9,7 +9,7 @@ Get a list of packages for an organization using Apple Business’s built-in dev
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

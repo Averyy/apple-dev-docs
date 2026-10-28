@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatUnapplyProjectiveTransform(SPPoint3DFloat point, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed point.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s transformed by the inverse of the specified projective transform.
 

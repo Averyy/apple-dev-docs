@@ -26,7 +26,7 @@ unowned(unsafe) var delegate: (any NetServiceDelegate)? { get set }
 @property (assign, nullable) id<NSNetServiceDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NetServiceDelegate`](../netservicedelegate.md) protocol, and is not retained.
 

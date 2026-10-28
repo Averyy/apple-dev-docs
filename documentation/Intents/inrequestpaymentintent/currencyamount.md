@@ -32,7 +32,7 @@ var currencyAmount: INCurrencyAmount? { get }
 @property (atomic, copy, readonly, nullable) INCurrencyAmount * currencyAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to verify that you can handle the transfer successfully. For example, you might verify that the currency amount and that your service allows the current user to make the request.
 

@@ -25,7 +25,7 @@ var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>? { get }
 @property (nonatomic, readonly) int16_t * const* int16ChannelData;
 ```
 
-#### Discussion
+## Discussion
 
 The `int16ChannelData` property returns the buffer’s audio samples if the buffer’s format has 2-byte integer samples, or `nil` if it’s another format. For more information, see [`floatChannelData`](./floatchanneldata.md).
 

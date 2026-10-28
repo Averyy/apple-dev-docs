@@ -24,11 +24,11 @@ func canEnterState(_ stateClass: AnyClass) -> Bool
 - (BOOL) canEnterState:(Class) stateClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a transition is allowed from the current state to a state of the specified class; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You build a state machine by creating a unique [`GKState`](../gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](../gkstate/isvalidnextstate%28_%29.md) method of each state object determines which other states a state machine is allowed to transition into from that state.
 

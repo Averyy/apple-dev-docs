@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, draggingSession session: NSDra
 - (void) tableView:(NSTableView *) tableView draggingSession:(NSDraggingSession *) session endedAtPoint:(NSPoint) screenPoint operation:(NSDragOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method can be used to determine when the dragging source operation ended at a specific location, such as the trash, by checking for an operation of [`delete`](../nsdragoperation/delete.md).
 

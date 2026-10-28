@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatApplyAffineTransform(SPRay3DFloat ray, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed ray.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s transformed by the specified affine transform.
 

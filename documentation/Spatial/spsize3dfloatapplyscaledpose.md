@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatApplyScaledPose(SPSize3DFloat size, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed size.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s transformed by the specified scaled pose.
 

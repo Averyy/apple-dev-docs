@@ -21,11 +21,11 @@ The current age rating code for your app.
 static var ageRatingCode: Int? { get async }
 ```
 
-#### Return Value
+## Return Value
 
 An integer representing the current age rating code, or `nil` if the age rating is unavailable.
 
-#### Discussion
+## Discussion
 
 Use this property to fetch the age rating for your app and compare it with the last known age rating to check if it has changed.
 

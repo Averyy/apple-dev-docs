@@ -21,7 +21,7 @@ The distance at which an object can be clearly seen.
 var visibility: Measurement<UnitLength>
 ```
 
-#### Discussion
+## Discussion
 
 The amount of light and weather conditions like fog, mist, and smog affect visibility.
 

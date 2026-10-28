@@ -25,7 +25,7 @@ let kSecMatchPolicy: CFString
 extern CFStringRef const kSecMatchPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`SecPolicy`](./secpolicy.md).
 

@@ -19,7 +19,7 @@ convenience init(cgImage: CGImage, size: NSSize)
 - (instancetype) initWithCGImage:(CGImageRef) cgImage size:(NSSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t assume anything about the image, other than drawing it is equivalent to drawing the source image.
 

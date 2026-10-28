@@ -21,7 +21,7 @@ enum CPTimeRemainingColor
 enum CPTimeRemainingColor : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The system determines the shade of each color based on the [`tripEstimateStyle`](./cpmaptemplate/tripestimatestyle.md) for the map template.
 

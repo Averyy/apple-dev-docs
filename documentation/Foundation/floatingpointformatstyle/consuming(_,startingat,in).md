@@ -23,11 +23,11 @@ func consuming(_ input: String, startingAt index: String.Index, in bounds: Range
 
 Available when `Value` conforms to `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 The upper bound where the match terminates and a matched instance, or `nil` if there isn’t a match.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Regular expression matching and capture calls it automatically when matching substrings.
 

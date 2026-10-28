@@ -15,7 +15,7 @@ A feature visibility setting that allows you to determine when to display the ma
 showsScale?: FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `mapkit.FeatureVisibility.Hidden`. See [`FeatureVisibility`](../featurevisibility.md) for other values that determine when the map shows the scale. See MapKit’s [`showsScale`](../map/showsscale.md) for more information about how the values determine when to show the scale.
 

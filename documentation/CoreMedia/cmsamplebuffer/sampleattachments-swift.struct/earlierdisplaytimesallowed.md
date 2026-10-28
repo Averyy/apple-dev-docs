@@ -21,7 +21,7 @@ Indicates whether later samples may have earlier display times.
 var earlierDisplayTimesAllowed: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, this information for the sample is unknown.
 

@@ -23,7 +23,7 @@ var navigationType: WKNavigationType { get }
 @property (nonatomic, readonly) WKNavigationType navigationType;
 ```
 
-#### Discussion
+## Discussion
 
 The value is one of the constants of the enumerated type [`WKNavigationType`](../wknavigationtype.md).
 

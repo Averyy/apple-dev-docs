@@ -19,7 +19,7 @@ var listOptions: NSTextList.Options { get }
 @property (readonly) NSTextListOptions listOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The list options mask value of the receiver.
 

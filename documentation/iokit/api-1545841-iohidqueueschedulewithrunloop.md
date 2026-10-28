@@ -16,7 +16,7 @@ Schedules queue with run loop.
 void IOHIDQueueScheduleWithRunLoop(IOHIDQueueRef queue, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally associates queue with client's run loop. Scheduling this queue with the run loop is necessary before making use of any asynchronous APIs.
 

@@ -23,7 +23,7 @@ var scale: Size3DFloat { get }
 static SPSize3DFloat SPAffineTransform3DFloatGetScale(SPAffineTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns an affine transform’s scale.
 

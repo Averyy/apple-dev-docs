@@ -19,7 +19,7 @@ optional func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicke
 - (void) sharingServicePicker:(NSSharingServicePicker *) sharingServicePicker didChooseSharingService:(NSSharingService *) service;
 ```
 
-#### Discussion
+## Discussion
 
 After someone chooses a service, the sharing service picker calls this method to let you know which service they picked. The sharing service receives the item sometime after this method returns.
 

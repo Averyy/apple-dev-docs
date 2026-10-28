@@ -25,11 +25,11 @@ convenience init(forSecondsFromGMT seconds: Int)
 + (instancetype) timeZoneForSecondsFromGMT:(NSInteger) seconds;
 ```
 
-#### Return Value
+## Return Value
 
 A time zone object offset from Greenwich Mean Time by `seconds`.
 
-#### Discussion
+## Discussion
 
 The name of the new time zone is GMT +/– the offset, in hours and minutes. Time zones created with this method never have daylight savings, and the offset is constant no matter the date.
 

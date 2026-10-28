@@ -17,7 +17,7 @@ var roleIdentifier: String { get }
 
 Available when `Self` conforms to `RawRepresentable` and `RawValue` is `String`.
 
-#### Discussion
+## Discussion
 
 Provide unique strings for each distinct role in your custom spatial template.
 

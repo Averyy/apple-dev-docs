@@ -21,7 +21,7 @@ Returns the vector that results from unapplying a projective transform to the ve
 func unapplying(_ transform: ProjectiveTransform3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

@@ -21,7 +21,7 @@ Deletes all CloudKit records in the specified record zone, along with their corr
 - (void) purgeObjectsAndRecordsInZoneWithID:(CKRecordZoneID *) zoneID inPersistentStore:(NSPersistentStore *) persistentStore completion:(void (^)(CKRecordZoneID *purgedZoneID, NSError *purgeError)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `completion` callback returns no value and takes the following parameters:
 

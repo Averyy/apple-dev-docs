@@ -5,11 +5,11 @@
 
 Reduce opportunities for an attacker to target your app through its extensions.
 
-#### Overview
+## Overview
 
 Separating sensitive calculations, such as handling data from untrusted sources, into extensions that the system runs as separate processes from your app reduces the opportunity for attackers to target the sensitive calculation and gain access to other parts of your app or the system. Create Enhanced Security helper extensions on iOS, iPadOS, and macOS to enforce tighter sandbox restrictions, and enable compiler and runtime security protections.
 
-##### Define the extension point in your app
+### Define the extension point in your app
 
 Add the `EX_ENABLE_EXTENSION_POINT_GENERATION` user-defined build setting with the value `YES` to your app target’s build setting. In your app’s source code, create an extension to [`AppExtensionPoint`](../ExtensionFoundation/appextensionpoint.md) that defines your app’s extension point. Give the extension point the [`AppExtensionPoint.Name`](../ExtensionFoundation/appextensionpoint/name.md) of your choosing, and the [`AppExtensionPoint.EnhancedSecurity`](../ExtensionFoundation/appextensionpoint/enhancedsecurity.md) attribute to tell the system to run your extension in the Enhanced Security runtime:
 
@@ -25,7 +25,7 @@ extension AppExtensionPoint {
 }
 ```
 
-##### Create the extension
+### Create the extension
 
 Follow these steps to create the extension:
 
@@ -50,7 +50,7 @@ struct MyAppHelper: ExampleExtension {
 
 Write the code to implement your extension’s behavior. The system runs your extension in a sandbox that restricts access to most system services and frameworks. In particular, your extension can’t present UI. Instead, it must communicate with its host app, and ask the app to present UI and interact with other system services on the extension’s behalf.
 
-##### Discover and launch the extension
+### Discover and launch the extension
 
 In your app, create an [`AppExtensionPoint.Monitor`](../ExtensionFoundation/appextensionpoint/monitor.md) to discover the Enhanced Security extension:
 
@@ -75,7 +75,7 @@ catch let error {
 }
 ```
 
-##### Communicate between the app and the extension
+### Communicate between the app and the extension
 
 Use [`XPCSession`](../XPC/xpcsession.md) to handle communication between your app and its Enhanced Security extension. For more information, see [Creating XPC services](../XPC/creating-xpc-services.md).
 
@@ -155,7 +155,7 @@ fileprivate struct MessageHandler<E: ExampleExtension>: XPCPeerHandler, Sendable
 
 ```
 
-##### Adopt other security hardening features
+### Adopt other security hardening features
 
 Enhanced security extensions use the same compiler and runtime security features as apps that adopt the Enhanced Security capability. For more information, see [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md).
 

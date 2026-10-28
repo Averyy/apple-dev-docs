@@ -20,7 +20,7 @@ The output of a highlight analysis.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 This type describes the highlights and engagement levels the framework finds in a video.
 

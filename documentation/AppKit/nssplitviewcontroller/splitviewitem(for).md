@@ -19,7 +19,7 @@ func splitViewItem(for viewController: NSViewController) -> NSSplitViewItem?
 - (NSSplitViewItem *) splitViewItemForViewController:(NSViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding split view item, or `nil` if `viewController` isn’t a child of the split view controller.
 

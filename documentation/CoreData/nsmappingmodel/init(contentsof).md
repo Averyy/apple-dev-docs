@@ -25,7 +25,7 @@ init?(contentsOf url: URL?)
 - (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A mapping model initialized from `url`.
 

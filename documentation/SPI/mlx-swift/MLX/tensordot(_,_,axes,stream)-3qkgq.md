@@ -17,11 +17,11 @@ Compute tensor dot product.
 func tensordot(_ a: MLXArray, _ b: MLXArray, axes: Int = 2, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Tensor dot product
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`tensordot(_:_:axes:stream:)`](./tensordot%28_,_,axes,stream%29-3qkgq.md)

@@ -25,7 +25,7 @@ convenience init(stream: InputStream)
 - (instancetype) initWithStream:(NSInputStream *) stream;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLParser` object or `nil` if an error occurs.
 

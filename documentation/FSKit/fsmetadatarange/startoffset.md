@@ -19,7 +19,7 @@ var startOffset: off_t { get }
 @property (readonly) off_t startOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Ensure this value is a multiple of the corresponding resource’s [`blockSize`](../fsblockdeviceresource/blocksize.md).
 

@@ -19,7 +19,7 @@ func recalculateKeyViewLoop()
 - (void) recalculateKeyViewLoop;
 ```
 
-#### Discussion
+## Discussion
 
 The key view loop is recalculated the next time someone requests the next or previous key view of the window. The recalculated loop is based on the geometric order of the views in the window.
 

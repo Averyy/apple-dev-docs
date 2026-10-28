@@ -22,11 +22,11 @@ func merging(_ object: ARReferenceObject) throws -> ARReferenceObject
 - (ARReferenceObject *) referenceObjectByMergingObject:(ARReferenceObject *) object error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`ARReferenceObject`](../arreferenceobject.md) that includes the spatial information from both objects. From Swift, this method throws an [`ARError`](../arerror.md) if the two objects cannot be merged. From Objective-C, it returns `nil` and populates the `error` parameter with a description of the failure.
 
-#### Discussion
+## Discussion
 
 The accuracy of 3D object detection depends on similarity of lighting and environmental conditions between when you scan a real object (producing an [`ARReferenceObject`](../arreferenceobject.md)) and when a user of your app attempts to detect that object. If, for example, you scan an object in a bright environment, then a user attempts to detect it in a dark environment, ARKit may fail to recognize that the real object matches the reference object, or may not detect the object quickly.
 

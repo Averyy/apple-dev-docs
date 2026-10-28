@@ -5,7 +5,7 @@
 
 Identify the signs of a Swift runtime error, and address the crashes runtime errors cause.
 
-#### Overview
+## Overview
 
 Swift uses memory safety techniques to catch programming mistakes early. Optionals require you to think about how best to handle a `nil` value. Type safety prevents casting an object to a type that doesn’t match the object’s actual type.
 
@@ -31,7 +31,7 @@ Termination Reason:    Namespace SIGNAL, Code 0x4
 
 > **Note**: The exception type reflects the instructions the CPU was executing when the app crashed. Simulated iOS, iPadOS, watchOS, and tvOS apps run as Intel code on an Intel-based Mac, and macOS apps running under Rosetta translation execute as Intel code even on a Mac with Apple silicon. In both cases, the crash report shows the exception type for Intel processors.
 
-##### Identify the location of the error
+### Identify the location of the error
 
 The crash report shows the thread that encountered the runtime error, with a frame in the backtrace identifying the specific line of code.
 
@@ -50,7 +50,7 @@ In this example, thread 0 encountered the error. Frame 0 of this thread shows th
 0   MyCoolApp                         0x0000000100a71a88 @objc ViewController.viewDidLoad() (in MyCoolApp) (ViewController.swift:18)
 ```
 
-##### Change your code
+### Change your code
 
 Look at the other frames in the backtrace to identify the exact function calls that produced the error, and determine whether you used a force unwrap or a forced downcast. A force unwrap uses the `!` operator. For example:
 

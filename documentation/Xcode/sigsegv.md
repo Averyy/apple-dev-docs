@@ -5,7 +5,7 @@
 
 A memory segmentation fault terminated the process, often because the process tried to access an invalid or out-of-bounds address in memory.
 
-#### Overview
+## Overview
 
 Common problems include accessing an invalid index in an array, dereferencing a pointer to an invalid memory location, or writing to read-only memory.
 

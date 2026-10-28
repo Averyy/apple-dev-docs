@@ -20,7 +20,7 @@ DOMString couponCode;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Set the value to the empty string to indicate that there’s no initial coupon.
 

@@ -19,11 +19,11 @@ optional func attributedString() -> NSAttributedString
 - (NSAttributedString *) attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 The attributed string of the receiver’s text storage.
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. A class adopting the `NSTextInputClient` protocol can implement this interface if it can be done efficiently to enable callers of this interface to access arbitrary portions of the receiver’s content more efficiently.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeIdentifier: String
 extern NSString * const HMCharacteristicTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 In the Input Source Ordering Profile, `HMCharacteristicTypeIdentifier` identifies an instance of the Input Source service. The value for each instance of this service must be unique within the list of input source services linked to a television service. A value of `0` isn’t valid for the instance of this characteristic included in the Input Source service.
 

@@ -23,7 +23,7 @@ var isTracking: Bool { get }
 @property (nonatomic, readonly, getter=isTracking) BOOL tracking;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the user has touched the content view but might not have yet have started dragging it.
 

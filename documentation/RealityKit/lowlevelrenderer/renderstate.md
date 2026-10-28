@@ -18,7 +18,7 @@ The per-frame render state passed to the `render(using:_:)` callback.
 struct RenderState
 ```
 
-#### Overview
+## Overview
 
 `RenderState` is non-copyable and non-escapable; it is only valid for the duration of the `render(using:_:)` callback. Use its methods to encode individual draw calls, or access `encoder` to issue custom Metal commands between draws.
 

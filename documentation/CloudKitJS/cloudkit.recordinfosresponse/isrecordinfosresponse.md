@@ -15,7 +15,7 @@ A Boolean value indicating whether this object is an instance of the [`CloudKit.
 readonly attribute Boolean isRecordInfosResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property is always `true`.
 

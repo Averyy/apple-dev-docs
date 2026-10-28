@@ -24,7 +24,7 @@ typealias AUParameterAddress = UInt64
 typedef uint64_t AUParameterAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Parameter addresses are not necessarily persistent, unless the individual audio unit promises to maintain its addressing scheme. Hosts should bind to parameter key paths instead of parameter addresses.
 

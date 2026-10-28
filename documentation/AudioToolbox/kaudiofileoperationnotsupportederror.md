@@ -24,7 +24,7 @@ var kAudioFileOperationNotSupportedError: OSStatus { get }
 kAudioFileOperationNotSupportedError
 ```
 
-#### Discussion
+## Discussion
 
 For example, setting the [`kAudioFilePropertyAudioDataByteCount`](./kaudiofilepropertyaudiodatabytecount.md) constant to increase the size of the audio data in a file is not a supported operation. Write the data instead.
 

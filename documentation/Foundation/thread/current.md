@@ -25,7 +25,7 @@ class var current: Thread { get }
 @property (class, strong, readonly) NSThread * currentThread;
 ```
 
-#### Return Value
+## Return Value
 
 A thread object representing the current thread of execution.
 

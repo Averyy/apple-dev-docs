@@ -9,7 +9,7 @@ Get a list of device serial numbers assigned to a device management service.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

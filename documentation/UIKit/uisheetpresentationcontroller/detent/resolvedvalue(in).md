@@ -18,11 +18,11 @@ Resolves a detent to its value.
 @preconcurrency func resolvedValue(in context: any UISheetPresentationControllerDetentResolutionContext) -> CGFloat?
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGFloat`](../../../CoreFoundation/cgfloat-swift.struct.md) that represents the value of the detent, or `nil` if the detent is inactive in the provided context.
 
-#### Discussion
+## Discussion
 
 You can use this method to get the values of the system [`medium`](./identifier-swift.struct/medium.md) and [`large`](./identifier-swift.struct/large.md) detents, or the value of a custom detent. Use this method inside [`custom(identifier:resolver:)`](./custom%28identifier,resolver%29.md) to construct a custom detent according to the values of known detents.
 

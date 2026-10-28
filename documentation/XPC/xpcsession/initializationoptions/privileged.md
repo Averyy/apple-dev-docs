@@ -21,7 +21,7 @@ Indicates that the Mach service is in the priviledged Mach bootstrap.
 static let privileged: XPCSession.InitializationOptions
 ```
 
-#### Discussion
+## Discussion
 
 The Mach service typically accomplishes this by placing its `launchd.plist` in the `LaunchDaemons` directory.
 

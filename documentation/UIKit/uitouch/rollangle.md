@@ -22,7 +22,7 @@ var rollAngle: CGFloat { get }
 @property (nonatomic, readonly) CGFloat rollAngle;
 ```
 
-#### Discussion
+## Discussion
 
 For models of Apple Pencil that don’t support barrel-roll angle data, the value of this property is `0`.
 

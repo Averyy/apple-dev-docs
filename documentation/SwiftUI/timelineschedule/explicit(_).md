@@ -22,7 +22,7 @@ A schedule for updating a timeline view at explicit points in time.
 static func explicit<S>(_ dates: S) -> ExplicitTimelineSchedule<S> where Self == ExplicitTimelineSchedule<S>, S : Sequence, S.Element == Date
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a [`TimelineView`](../timelineview.md) with an explicit timeline schedule when you want to schedule view updates at particular points in time:
 

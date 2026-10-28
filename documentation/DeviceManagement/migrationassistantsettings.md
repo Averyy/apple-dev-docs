@@ -15,7 +15,7 @@ The declaration to configure Migration Assistant settings.
 object MigrationAssistantSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.migration-assistant.settings` as the declaration type.
 
@@ -25,7 +25,7 @@ Configure the device to use the `AwaitingConfiguration` state after it enrolls w
 
 The device reports Migration Assistant progress using the [`StatusMigrationAssistantState`](./statusmigrationassistantstate.md) status item, and provides a report when migration completes using the [`StatusMigrationAssistantReport`](./statusmigrationassistantreport.md) status item.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ The device reports Migration Assistant progress using the [`StatusMigrationAssis
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration provides settings for a Mac to Mac migration.
 

@@ -17,7 +17,7 @@ Creates a controller for a given accessory.
 init(for accessory: ASAccessory) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a network-sharing controller for the specified accessory. The accessory needs to be connected and using a secure transport when creating the controller.
 

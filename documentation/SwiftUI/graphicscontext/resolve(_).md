@@ -31,11 +31,11 @@ func resolve(_ shading: GraphicsContext.Shading) -> GraphicsContext.Shading
 func resolve(_ text: Text) -> GraphicsContext.ResolvedText
 ```
 
-#### Return Value
+## Return Value
 
 An image that’s resolved into the current context’s environment, taking into account environment values like the display resolution and current color scheme.
 
-#### Discussion
+## Discussion
 
 You can measure the resolved image by looking at its [`size`](./resolvedimage/size.md) and [`baseline`](./resolvedimage/baseline.md) properties. You can draw the resolved image with the context’s [`draw(_:in:style:)`](./draw%28_,in,style%29-7rvee.md) or [`draw(_:at:anchor:)`](./draw%28_,at,anchor%29-1z5wt.md) method.
 

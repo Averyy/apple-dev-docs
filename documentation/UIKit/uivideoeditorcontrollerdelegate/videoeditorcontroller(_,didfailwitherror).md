@@ -22,7 +22,7 @@ optional func videoEditorController(_ editor: UIVideoEditorController, didFailWi
 - (void) videoEditorController:(UIVideoEditorController *) editor didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Loading a movie into the video editor could fail because of an invalid filesystem path or an invalid media format. Saving could fail because of a lack of disk space or other reasons.
 

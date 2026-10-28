@@ -18,7 +18,7 @@ Returns the name specification to use for the given flag.
 static func name(for value: Self) -> NameSpecification
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation for this method always returns `.long`. Implement this method for your custom `EnumerableFlag` type to provide different name specifications for different cases.
 
@@ -26,7 +26,6 @@ The default implementation for this method always returns `.long`. Implement thi
 
 ### EnumerableFlag Implementations
 - [static func name(for: Self) -> NameSpecification](./name%28for%29-4ofoj.md)
-  Returns the name specification to use for the given flag.
 
 
 ---

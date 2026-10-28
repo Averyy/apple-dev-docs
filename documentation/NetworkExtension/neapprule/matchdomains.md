@@ -23,7 +23,7 @@ var matchDomains: [Any]? { get set }
 @property (copy, nullable) NSArray * matchDomains;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to a nonempty array, then only connections to destinations in the domains specified in the array will use the VPN.
 

@@ -24,7 +24,7 @@ case systemLarge
 - [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 The large system widget can appear on the Home Screen or in the Today View in iOS and iPadOS. In macOS, the large system widget can appear on the desktop or in Notification Center.
 

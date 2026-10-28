@@ -24,7 +24,7 @@ func setAchievementCompleted(_ achievement: GKAchievement)
 - (void) setAchievementCompleted:(GKAchievement *) achievement;
 ```
 
-#### Discussion
+## Discussion
 
 The system reports achievement completion when the activity ends.
 

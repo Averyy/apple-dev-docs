@@ -15,7 +15,7 @@ A class representing a SwiftUI view hosted in an AppKit sheet.
 class HostingSheetRepresentation<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This is created and returned by [`beginSheet(content:completionHandler:)`](./beginsheet%28content,completionhandler%29.md) as a representation of the presented sheet. It can be used to change the root view of the sheet while presented or be used to programamtically dismiss the sheet from an AppKit context using [`endSheet(_:)`](./endsheet%28_%29-6af2u.md).
 

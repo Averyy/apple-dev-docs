@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MoreFramesBeforeStart: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MoreFramesBeforeStart;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if frames compressed in a separate session will be concatenated before the beginning of the current session. The value is `false` if the current session is a stand-alone session, or if this session will encode the first segment of a multi-segment compression. The default value is `false`.
 

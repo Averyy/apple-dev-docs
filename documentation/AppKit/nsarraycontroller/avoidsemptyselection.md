@@ -19,7 +19,7 @@ var avoidsEmptySelection: Bool { get set }
 @property BOOL avoidsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

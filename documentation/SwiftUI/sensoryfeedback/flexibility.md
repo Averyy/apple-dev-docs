@@ -21,7 +21,7 @@ The flexibility to be represented by a type of feedback.
 struct Flexibility
 ```
 
-#### Overview
+## Overview
 
 `Flexibility` values can be passed to `SensoryFeedback.impact(flexibility:intensity:)`.
 

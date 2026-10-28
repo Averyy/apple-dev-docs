@@ -15,7 +15,7 @@ The item in the playlist previous to the currently selected item.
 readonly attribute MediaItem previousMediaItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `null` if there are no items in the playlist previous to the currently playing item.
 

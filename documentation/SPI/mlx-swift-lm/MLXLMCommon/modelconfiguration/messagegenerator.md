@@ -17,7 +17,7 @@ Overrides the [`MessageGenerator`](../messagegenerator.md) the model would other
 var messageGenerator: (any MessageGenerator)?
 ```
 
-#### Discussion
+## Discussion
 
 A model class is shared by every checkpoint of its model type, so a fine-tune that needs a different chat-template shape cannot express that on the model itself without affecting its siblings – e.g. TranslateGemma, which loads through the same `gemma3` text path as plain Gemma 3. Set this on the registry entry (or by the caller) instead. `nil` keeps the model’s own default.
 

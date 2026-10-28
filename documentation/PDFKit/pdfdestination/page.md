@@ -24,7 +24,7 @@ weak var page: PDFPage? { get }
 @property (nonatomic, weak, readonly) PDFPage * page;
 ```
 
-#### Return Value
+## Return Value
 
 The page referred to by the destination.
 

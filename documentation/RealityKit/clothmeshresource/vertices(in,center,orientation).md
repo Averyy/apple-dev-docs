@@ -17,7 +17,7 @@ Returns the indices of the vertices that lie inside the given volume shape.
 final func vertices(in shape: ClothVolumeShape, center: SIMD3<Float> = SIMD3<Float>(repeating: 0), orientation: simd_quatf = simd_quatf(ix: 0, iy: 0, iz: 0, r: 1)) -> [UInt32]
 ```
 
-#### Return Value
+## Return Value
 
 The indices of the vertices that lie inside the shape.
 

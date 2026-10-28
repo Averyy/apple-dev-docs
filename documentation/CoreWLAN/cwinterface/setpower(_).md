@@ -19,7 +19,7 @@ func setPower(_ power: Bool) throws
 - (BOOL) setPower:(BOOL) power error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This operation may require an administrator password.
 

@@ -15,11 +15,11 @@ Parses the given XML data and returns the resulting CFXMLTree object.
 extern CFXMLTreeRefCFXMLTreeCreateFromData(CFAllocatorRef allocator, CFDataRef xmlData, CFURLRef dataSource, CFOptionFlags parseOptions, CFIndex versionOfNodes);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFXMLTree object containing the data from the specified XML document. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function represents the high-level interface to the XML parser. This single function creates a parser for the specified XML data using the specified options. The parser creates and returns a CFXMLTree object that you can examine and modify with the CFTree functions or obtain the node using the [`CFXMLTreeGetNode`](./cfxmltreegetnode.md) function and examine its attributes using CFXMLNode functions.
 

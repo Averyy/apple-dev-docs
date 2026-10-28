@@ -22,7 +22,7 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer draws the marks that you specify in the `content` input. You can provide individual marks, or marks produced by one or more [`ForEach`](../../SwiftUI/foreach.md) constructs, or any combination of these. As a convenience when you have exactly one `ForEach` in your chart’s content, you can use either the [`init(_:content:)`](./init%28_,content%29.md) or [`init(_:id:content:)`](./init%28_,id,content%29.md) initializer instead, either of which wraps the content in an implicit `ForEach`.
 

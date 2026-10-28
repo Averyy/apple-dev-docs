@@ -23,11 +23,11 @@ func CVOpenGLESTextureCacheCreateTextureFromImage(_ allocator: CFAllocator?, _ t
 extern CVReturn CVOpenGLESTextureCacheCreateTextureFromImage(CFAllocatorRef allocator, CVOpenGLESTextureCacheRef textureCache, CVImageBufferRef sourceImage, CFDictionaryRef textureAttributes, GLenum target, GLint internalFormat, GLsizei width, GLsizei height, GLenum format, GLenum type, size_t planeIndex, CVOpenGLESTextureRef*textureOut);
 ```
 
-#### Return Value
+## Return Value
 
 Upon successful creation of the texture, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 
-#### Discussion
+## Discussion
 
 This function either creates a new or returns a cached [`CVOpenGLESTexture`](./cvopenglestexture.md) texture object mapped to the [`CVImageBuffer`](./cvimagebuffer.md) and associated parameters. This operation creates a live binding between the image buffer and the underlying texture object. The EAGLContext associated with the cache may be modified to create, delete, or bind textures. When used as a source texture or `GL_COLOR_ATTACHMENT`, the image buffer must be unlocked before rendering. The source or render buffer texture should not be re-used until the rendering has completed. This can be guaranteed by calling `glFlush()`.
 

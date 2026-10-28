@@ -21,7 +21,7 @@ Appends a quadratic Bézier curve to a mutable graphics path.
 extern void CGPathAddQuadCurveToPoint(CGMutablePathRef path, const CGAffineTransform *m, CGFloat cpx, CGFloat cpy, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Before returning, this function updates the current point to the specified location `(x, y)`.
 

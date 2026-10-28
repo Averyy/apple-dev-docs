@@ -20,11 +20,11 @@ func CGGetDisplaysWithRect(_ rect: CGRect, _ maxDisplays: UInt32, _ displays: Un
 extern CGError CGGetDisplaysWithRect(CGRect rect, uint32_t maxDisplays, CGDirectDisplayID *displays, uint32_t *matchingDisplayCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 If the `dspys` array is `NULL`, this function ignores the `maxDisplays` parameter. If the `maxDisplays` parameter is `0`, this function ignores the `displays` array. In any case, this function fills in the `matchingDisplayCount` pointer with the number of displays that intersect the specified rectangle.
 

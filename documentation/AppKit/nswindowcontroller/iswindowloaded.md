@@ -19,7 +19,7 @@ var isWindowLoaded: Bool { get }
 @property (readonly, getter=isWindowLoaded) BOOL windowLoaded;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the nib file containing the receiver’s window has been loaded, [`false`](../../Swift/false.md) otherwise.
 

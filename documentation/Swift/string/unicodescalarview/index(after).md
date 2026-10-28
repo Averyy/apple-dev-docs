@@ -21,7 +21,7 @@ Returns the next consecutive location after `i`.
 func index(after i: String.UnicodeScalarView.Index) -> String.UnicodeScalarView.Index
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The next location exists.
 

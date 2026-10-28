@@ -19,7 +19,7 @@ case loadingInterrupted
 SFContentBlockerLoadingInterrupted
 ```
 
-#### Discussion
+## Discussion
 
 There was an error loading the content blocker extension.
 

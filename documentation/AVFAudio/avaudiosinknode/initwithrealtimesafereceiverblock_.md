@@ -19,7 +19,7 @@
 - (instancetype) initWithRealtimeSafeReceiverBlock:(AVAudioSinkNodeReceiverBlockRealtimeSafe) block;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to initWithReceiverBlock:, but requires a realtime-safe block and is the preferred initializer.
 

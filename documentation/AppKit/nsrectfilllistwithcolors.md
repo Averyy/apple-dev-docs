@@ -15,7 +15,7 @@ Fills the rectangles in the passed list with the passed list of colors.
 extern void NSRectFillListWithColors(const NSRect *rects, NSColor * const*colors, NSInteger num);
 ```
 
-#### Discussion
+## Discussion
 
 Takes a list of `num` rectangles and a matching list of color objects. The first rectangle is filled with the first color, the second rectangle with the second color, and so on. There must be an equal number of rectangles and color values. The rectangles are composited using the [`NSCompositeCopy`](./nscompositecopy.md) operator and the order in which the rectangles are filled cannot be guaranteed; therefore, overlapping rectangles may not draw as expected. This function alters the current color of the current graphics state, setting it unpredictably to one of the values passed in `colors`.
 

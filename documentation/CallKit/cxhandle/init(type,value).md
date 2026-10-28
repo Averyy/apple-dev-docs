@@ -23,11 +23,11 @@ init(type: CXHandle.HandleType, value: String)
 - (instancetype) initWithType:(CXHandleType) type value:(NSString *) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new handle with the specified type and value.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

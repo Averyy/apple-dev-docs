@@ -23,11 +23,11 @@ optional func indexPathForPreferredFocusedView(in tableView: UITableView) -> Ind
 - (NSIndexPath *) indexPathForPreferredFocusedViewInTableView:(UITableView *) tableView;
 ```
 
-#### Return Value
+## Return Value
 
 An index path for the preferred focus row, or the default preferred focus view.
 
-#### Discussion
+## Discussion
 
 This functionality of this delegate method is equivalent to overriding [`UITableView`](../uitableview.md) class’s [`preferredFocusedView`](../uifocusguide/preferredfocusedview.md) method in the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol. If the [`UITableView`](../uitableview.md) class’s [`remembersLastFocusedIndexPath`](../uitableview/rememberslastfocusedindexpath.md) method is set to [`true`](../../Swift/true.md), this method defines the index path that gets focused when the table view is focused for the first time.
 

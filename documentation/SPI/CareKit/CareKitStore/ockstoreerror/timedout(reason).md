@@ -17,7 +17,7 @@ Occurs when an asynchronous action takes too long.
 case timedOut(reason: String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This is intended for use by remote databases.
 

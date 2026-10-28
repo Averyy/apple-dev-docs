@@ -21,7 +21,7 @@ static var transferRepresentation: some TransferRepresentation { get }
 
 Available when `Self` conforms to `Transferable`.
 
-#### Discussion
+## Discussion
 
 This property contains a default [`GroupActivityTransferRepresentation`](../groupactivitytransferrepresentation.md) for your activity. The system uses this type to offer your activity via SharePlay.
 

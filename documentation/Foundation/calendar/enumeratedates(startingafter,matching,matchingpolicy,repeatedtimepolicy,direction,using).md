@@ -21,7 +21,7 @@ Computes the dates which match (or most closely match) a given set of components
 func enumerateDates(startingAfter start: Date, matching components: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy = .first, direction: Calendar.SearchDirection = .forward, using block: (Date?, Bool, inout Bool) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 There will be at least one intervening date which does not match all the components (or the given date itself must not match) between the given date and any result.
 

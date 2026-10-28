@@ -21,7 +21,7 @@ Creates a tag containing media subtype metadata.
 static func mediaSubType(_ value: CMFormatDescription.MediaSubType) -> CMTypedTag<CMFormatDescription.MediaSubType>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the media subtype metadata represented by `value`.
 

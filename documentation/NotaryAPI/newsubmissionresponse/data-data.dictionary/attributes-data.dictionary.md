@@ -15,7 +15,7 @@ Information that you use to upload your software for notarization.
 object NewSubmissionResponse.Data.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 Use the temporary security credentials in this object, along with the bucket and object, to upload your software to Amazon S3. A good way to do this is with the `boto3` library provided by Amazon, as described in [Submitting software for notarization over the web](../../submitting-software-for-notarization-over-the-web.md). Be sure to use the S3 credentials before they expire, which happens 12 hours after you receive them.
 

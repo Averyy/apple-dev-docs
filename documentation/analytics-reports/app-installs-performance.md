@@ -5,7 +5,7 @@
 
 Analyze details about installation success and failure rates for your apps.
 
-#### Overview
+## Overview
 
 Use this report to help you understand your app’s installation success and failure rates.
 
@@ -20,7 +20,7 @@ Use this report to help you understand your app’s installation success and fai
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Counts | Aggregated count of events | `integer` |
 | Avg Install Duration | Average time in milliseconds taken to install the package | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

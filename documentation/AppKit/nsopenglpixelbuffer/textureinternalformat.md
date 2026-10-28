@@ -15,7 +15,7 @@ The internal format of the OpenGL pixel buffer’s texture.
 @property (readonly) GLenum textureInternalFormat;
 ```
 
-#### Return Value
+## Return Value
 
 The texture format, which can be one of the following values: `GL_RGB`, `GL_RGBA`, or `GL_DEPTH_COMPONENT`.
 

@@ -25,7 +25,7 @@ var predicateFormat: String { get }
 @property (copy, readonly) NSString * predicateFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The return value of this property is not guaranteed to be the same as the string used to create the predicate using [`predicateWithFormat:`](./predicatewithformat_.md) or similar methods.
 

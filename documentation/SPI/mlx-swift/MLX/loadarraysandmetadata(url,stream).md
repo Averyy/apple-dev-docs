@@ -17,7 +17,7 @@ Load dictionary of [`MLXArray`](./mlxarray.md) and metadata `[String:String]` fr
 func loadArraysAndMetadata(url: URL, stream: StreamOrDevice = .cpu) throws -> ([String : MLXArray], [String : String])
 ```
 
-##### See Also
+### See Also
 
 - [`loadArrays(url:stream:)`](./loadarrays%28url,stream%29.md)
 - [`loadArray(url:stream:)`](./loadarray%28url,stream%29.md)

@@ -16,7 +16,7 @@ A type the containing app uses to determine the status of a completed import.
 enum MigrationStatus
 ```
 
-#### Overview
+## Overview
 
 After the first time the app launches, check this type’s static variable [`importStatus`](./migrationstatus/importstatus.md) to determine whether a migration took place and, if so, whether it succeeded. To determine the status, check to see if `importStatus` is non-`nil` and that its value is [`MigrationStatus.success`](./migrationstatus/success.md). After a successful migration, notify the person using the app that migration succeeded, and call the static method [`clearImportStatus()`](./migrationstatus/clearimportstatus%28%29.md).
 

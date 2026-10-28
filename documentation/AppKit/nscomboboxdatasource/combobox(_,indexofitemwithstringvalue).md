@@ -20,11 +20,11 @@ optional func comboBox(_ comboBox: NSComboBox, indexOfItemWithStringValue string
 - (NSUInteger) comboBox:(NSComboBox *) comboBox indexOfItemWithStringValue:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The index for the item that matches the specified string, or `NSNotFound` if no item matches.
 
-#### Discussion
+## Discussion
 
 An `NSComboBox` object uses this method to synchronize the pop-up list’s selected item with the text field’s contents.  If you don’t implement this method the receiver does not synchronize the pop-up list’s selected item with the text field’s contents.
 

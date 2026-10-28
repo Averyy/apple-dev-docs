@@ -19,7 +19,7 @@ func keyEquivalentRect(forBounds cellFrame: NSRect) -> NSRect
 - (NSRect) keyEquivalentRectForBounds:(NSRect) cellFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The returned rectangle is based on `cellFrame` but encompasses only the area to be occupied by the key equivalent.
 

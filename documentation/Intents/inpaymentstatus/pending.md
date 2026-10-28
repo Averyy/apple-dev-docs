@@ -23,7 +23,7 @@ case pending
 INPaymentStatusPending
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant when you have a record of the transaction details but the funds you haven’t transferred the funds yet.
 

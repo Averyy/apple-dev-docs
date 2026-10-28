@@ -19,7 +19,7 @@ var translatesPlayerInterstitialEvents: Bool { get set }
 @property (nonatomic) BOOL translatesPlayerInterstitialEvents;
 ```
 
-#### Discussion
+## Discussion
 
 Enable this property value to support using interstitial events, or set it to [`false`](../../Swift/false.md) to perform your own interstitial management.
 

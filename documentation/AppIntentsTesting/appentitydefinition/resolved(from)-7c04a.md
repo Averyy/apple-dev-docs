@@ -21,11 +21,11 @@ Resolves an entity from a transferable intent value type through the entity type
 func resolved<T>(from value: T) async throws -> AnyAppEntity where T : IntentValueConvertible, T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 The resolved entity.
 
-#### Discussion
+## Discussion
 
 The value is serialized through its `TransferRepresentation` and resolved into the entity type through the same pipeline used at runtime.
 

@@ -21,11 +21,11 @@ Finds the range of the specified data as a subsequence of this data, if it exist
 func range(of dataToFind: Data, options: Data.SearchOptions = [], in range: Range<Data.Index>? = nil) -> Range<Data.Index>?
 ```
 
-#### Return Value
+## Return Value
 
 A `Range` specifying the location of the found data, or nil if a match could not be found.
 
-#### Discussion
+## Discussion
 
 Precondition: `range` must be in the bounds of the Data.
 

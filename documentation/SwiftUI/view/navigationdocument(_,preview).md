@@ -38,7 +38,7 @@ nonisolated
 func navigationDocument<D>(_ document: D, preview: SharePreview<Never, Never>) -> some View where D : Transferable
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, iPadOS, this populates the title menu with a header previewing the document. In macOS, this populates a proxy icon.
 

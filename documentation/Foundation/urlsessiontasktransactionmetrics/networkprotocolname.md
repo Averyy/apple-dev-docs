@@ -25,7 +25,7 @@ var networkProtocolName: String? { get }
 @property (copy, readonly, nullable) NSString * networkProtocolName;
 ```
 
-#### Discussion
+## Discussion
 
 When a proxy is configured and a tunnel connection is established, this attribute returns the value for the tunneled protocol, which is identified by the ALPN Protocol ID Identification Sequence, as per [RFC 7310](https://tools.ietf.org/html/rfc7301). For example:
 

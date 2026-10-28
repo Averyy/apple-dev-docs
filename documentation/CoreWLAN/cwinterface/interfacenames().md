@@ -21,11 +21,11 @@ class func interfaceNames() -> Set<String>?
 + (NSSet<NSString *> *) interfaceNames;
 ```
 
-#### Return Value
+## Return Value
 
 An NSSet object containing NSString objects representing BSD interface names.
 
-#### Discussion
+## Discussion
 
 Returns an NSArray of NSString objects representing the supported WLAN BSD interface names avaliable on the current system (i.e. “en1”, “en2”). If there are no supported interfaces for the current system, then this method will return an empty NSArray object. Returns *nil* in the case of an error.
 

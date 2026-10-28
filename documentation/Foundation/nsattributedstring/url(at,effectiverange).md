@@ -21,7 +21,7 @@ func url(at location: Int, effectiveRange: NSRangePointer) -> URL?
 - (NSURL *) URLAtIndex:(NSUInteger) location effectiveRange:(NSRangePointer) effectiveRange;
 ```
 
-#### Return Value
+## Return Value
 
 The URL found at `location`.
 

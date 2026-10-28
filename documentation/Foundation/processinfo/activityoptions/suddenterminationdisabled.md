@@ -25,7 +25,7 @@ static var suddenTerminationDisabled: ProcessInfo.ActivityOptions { get }
 NSActivitySuddenTerminationDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This is included by [`userInitiatedAllowingIdleSystemSleep`](./userinitiatedallowingidlesystemsleep.md).
 

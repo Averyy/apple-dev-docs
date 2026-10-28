@@ -19,7 +19,7 @@ The pose of this immersive camera.
 var pose: Pose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 The rotation component of the pose decomposes into three axis rotations, applied intrinsically in this order:
 
@@ -29,7 +29,7 @@ The rotation component of the pose decomposes into three axis rotations, applied
 
 This matches Spatial’s `EulerAngleOrder.xyz`, which composes intrinsically as roll, then yaw, then pitch (equivalently, extrinsically as pitch, then yaw, then roll). The composition order matters — the same angle values under a different order produce a different orientation. In particular, this does **not** match `RealityKit.Transform(pitch:yaw:roll:)`, which composes intrinsically as yaw, then pitch, then roll.
 
-##### Stereo fusion constraints
+### Stereo fusion constraints
 
 The rotation component is applied uniformly to both eyes as an image reorientation; it does not remap eye assignment, reproject parallax, or account for the stereo baseline encoded in the source video. For stereo (`stereoCamera`) content, only rotations that keep the stereo baseline horizontal in viewer space produce comfortable fusion:
 

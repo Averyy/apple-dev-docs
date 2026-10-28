@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_RadialAngleLimit: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_RadialAngleLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the outer limit of the calibration validity in degrees of angle eccentric from the optical axis.
 

@@ -41,11 +41,11 @@ init(texture: SKTexture?, color: NSColor, size: CGSize)
 - (instancetype) initWithTexture:(SKTexture *) texture color:(NSColor *) color size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 
-#### Discussion
+## Discussion
 
 To colorize your texture, you also need to set the [`colorBlendFactor`](./colorblendfactor.md) property of the sprite.
 

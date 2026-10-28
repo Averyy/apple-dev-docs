@@ -6,7 +6,7 @@
 
 A component detect atom specifies a QuickTime component, such as a particular video decompressor, required to play the movie.
 
-#### Overview
+## Overview
 
 The component type, subtype, and other required attributes can be specified, as well as a minimum version. Multiple component detect atoms are allowed within a given reference movie descriptor atom. Applications should not attempt to play a movie unless at least the minimum versions of all required components are present.
 

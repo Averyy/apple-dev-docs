@@ -23,7 +23,7 @@ func fractionOfDistanceThroughGlyph(for point: CGPoint, in container: NSTextCont
 - (CGFloat) fractionOfDistanceThroughGlyphForPoint:(CGPoint) point inTextContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 This method is a primitive for [`glyphIndex(for:in:fractionOfDistanceThroughGlyph:)`](./glyphindex%28for,in,fractionofdistancethroughglyph%29.md). You should always call the main method, not the primitives.
 

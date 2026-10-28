@@ -19,7 +19,7 @@ case onOff
 NSButtonTypeOnOff
 ```
 
-#### Discussion
+## Discussion
 
 When the value of [`state`](../state.md) is [`off`](../../nscontrol/statevalue/off.md), the button displays its normal bezel. When [`state`](../state.md) has any other value, the button displays an emphasized variant of its bezel. Buttons of this type never display alternate content.
 

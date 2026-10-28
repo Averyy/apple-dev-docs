@@ -25,7 +25,7 @@ final class RelevantIntentManager
 
 - [Donating your app’s data and actions to the system](./donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Overview
+## Overview
 
 Use the shared `RelevantIntentManager` object to specify the actions your app wants to suggest and their current relevance. Register any relevant app intents at launch time and any time the set of actions changes later. You can register multiple actions at once, and the system uses the relevance factors for each one to determine when to suggest the action. If you don’t have any current actions to suggest, register an empty set to prevent the system from suggesting outdated actions.
 

@@ -23,7 +23,7 @@ let kMIDIPropertyIsBroadcast: CFString
 extern CFStringRef const kMIDIPropertyIsBroadcast;
 ```
 
-#### Discussion
+## Discussion
 
 Only the owning driver may set this property.
 

@@ -19,11 +19,11 @@ func SKIndexGetTermDocumentCount(_ inIndex: SKIndex!, _ inTermID: CFIndex) -> CF
 CFIndex SKIndexGetTermDocumentCount(SKIndexRef inIndex, CFIndex inTermID);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFIndex` object containing the number of documents represented in an index that contain a given term.
 
-#### Discussion
+## Discussion
 
 If you want to know in which documents a term appears across multiple indexes, call this function separately on each index. Before querying each index, get the index-specific term ID using [`SKIndexGetTermIDForTermString(_:_:)`](./api-1448558-skindexgettermidfortermstring.md).
 

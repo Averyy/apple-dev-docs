@@ -21,7 +21,7 @@ A type that describes a widget’s content.
 @preconcurrency protocol WidgetConfiguration
 ```
 
-#### Overview
+## Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

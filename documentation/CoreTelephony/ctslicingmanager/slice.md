@@ -17,7 +17,7 @@ Information about an active network slice.
 struct Slice
 ```
 
-#### Overview
+## Overview
 
 A `Slice` represents an active network slice configuration, including the app category it serves, the traffic class it uses, and the network interface handling the traffic.
 

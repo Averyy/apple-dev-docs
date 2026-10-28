@@ -21,7 +21,7 @@ final func updateStatus(_ status: CustomerEngagement.Status) async throws
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 When there isn’t any form, like a sign-up form being displayed, the screen defaults to [`CustomerEngagement.Status.ready`](../customerengagement/status/ready.md) unless there is a [`CustomerEngagement.ShoppingCart`](../customerengagement/shoppingcart.md). [`CustomerEngagement.Status.ready`](../customerengagement/status/ready.md) resets the default screen from [`CustomerEngagement.ShoppingCart`](../customerengagement/shoppingcart.md).
 

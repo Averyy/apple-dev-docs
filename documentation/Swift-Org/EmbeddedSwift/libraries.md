@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Learn about the library setup and linkage model of Embedded Swift.
 
-#### Overview
+## Overview
 
 Traditional library build and use model of Swift is that library code is compiled into a .swiftmodule, containing the interfaces, and a compiled library with binary code, either a .a static library or a .dylib/.so dynamic library. A client’s build then uses the .swiftmodule at compile-time, and the static/dynamic library at link-time.
 

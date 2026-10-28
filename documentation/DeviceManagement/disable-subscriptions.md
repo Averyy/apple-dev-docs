@@ -6,7 +6,7 @@
 
 Declare that your device management service doesn’t support subscription management.
 
-#### Discussion
+## Discussion
 
 Send a POST request to declare that your device management service doesn’t support subscriptions for the organizational unit that the token represents. Apple School Manager and Apple Business Manager use this declaration to indicate to content managers that the organizational unit doesn’t support subscriptions, rather than leaving its support status unstated.
 
@@ -14,7 +14,7 @@ This request takes no body. The server processes it synchronously and returns th
 
 > ❗ **Important**:  Disabling is a positive declaration that an organizational unit doesn’t support subscriptions. You can also use it to reverse an earlier [`Enable Subscriptions`](./enable-subscriptions.md) request, but only while the organizational unit has no subscriptions. If any subscriptions exist there, the request fails with error `9818` (`Subscriptions exist for the organizational unit, so subscription management can't be disabled.`). For more information, see [Handling error responses](./handling-error-responses.md).
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

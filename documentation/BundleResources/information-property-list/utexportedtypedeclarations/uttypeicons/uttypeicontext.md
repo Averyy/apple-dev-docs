@@ -17,7 +17,7 @@ A short string the system renders at the bottom edge of the document icon.
 - **Name**: `UTTypeIconText` (Text)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is optional.
 

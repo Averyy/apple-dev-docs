@@ -5,7 +5,7 @@
 
 Wrap article body text around an inset photo.
 
-#### Overview
+## Overview
 
 In [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md), you placed a pull quote within the article body.
 
@@ -17,7 +17,7 @@ In [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md), you placed
 
 ![Screenshot of an Apple News article with an inset photo on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624923@2x.png)
 
-##### Define ComponentLayout Objects for an Inset Photo
+### Define ComponentLayout Objects for an Inset Photo
 
 Before you can position the photo inside the article body, you must define some new `ComponentLayout` objects for this example. The `smallImageLayout` object determines that the pull quote container gets laid out in the rightmost three columns of the article text. The other two `ComponentLayout` objects make minor vertical adjustments.
 
@@ -26,7 +26,7 @@ Before you can position the photo inside the article body, you must define some 
 
 Your code should look like the example code [Inset Photo Layout: Result](./creating-an-inset-photo.md#Inset-Photo-Layout-Result).
 
-###### Inset Photo Layout: Copy This Code
+#### Inset Photo Layout: Copy This Code
 
 ```json
 ,
@@ -47,7 +47,7 @@ Your code should look like the example code [Inset Photo Layout: Result](./creat
     }
 ```
 
-###### Inset Photo Layout: Result
+#### Inset Photo Layout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -76,7 +76,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Bottom Border
+### Define a Bottom Border
 
 Before you can add a bottom border to the inset photo, you must define a `ComponentStyle` object that creates a bottom border only.
 
@@ -85,7 +85,7 @@ Before you can add a bottom border to the inset photo, you must define a `Compon
 
 Your code should look like the example code [captionLockupStyle: Result](./creating-an-inset-photo.md#captionLockupStyle-Result).
 
-###### captionLockupStyle: Copy This Code
+#### captionLockupStyle: Copy This Code
 
 ```json
 ,
@@ -103,7 +103,7 @@ Your code should look like the example code [captionLockupStyle: Result](./creat
     }
 ```
 
-###### captionLockupStyle: Result
+#### captionLockupStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -129,7 +129,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use Style and Layout, and Wrap Text Around a Container
+### Use Style and Layout, and Wrap Text Around a Container
 
 In Download the Article Bundle Examples, you downloaded a bundle called `News_Design_Tutorial_Advanced_Article_2` that contains a sidebar image. Now, you’ll move that image into your working folder and create a photo component to display the image.
 
@@ -141,7 +141,7 @@ In Download the Article Bundle Examples, you downloaded a bundle called `News_De
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the inset photo.
 
-###### Container: Copy This Code
+#### Container: Copy This Code
 
 ```json
         {
@@ -170,7 +170,7 @@ After you make these changes in your code, you can preview your working `article
         },
 ```
 
-###### Container: Result
+#### Container: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -221,11 +221,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
 
-##### Next
+### Next
 
 [Adding Color to Text Ranges](./adding-color-to-text-ranges.md)
 

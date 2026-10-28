@@ -25,7 +25,7 @@ var startupTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval startupTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is negative if unknown.
 

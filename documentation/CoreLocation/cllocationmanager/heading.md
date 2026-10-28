@@ -24,7 +24,7 @@ var heading: CLHeading? { get }
 @property (nonatomic, copy, readonly, nullable) CLHeading * heading;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if heading updates have never been initiated.
 

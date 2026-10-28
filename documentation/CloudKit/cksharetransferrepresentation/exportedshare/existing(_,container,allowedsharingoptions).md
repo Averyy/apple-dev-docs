@@ -19,11 +19,11 @@ Allows the user to view or make modifications to the share settings.
 static func existing(_ share: CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard) -> CKShareTransferRepresentation<Item>.ExportedShare
 ```
 
-#### Return Value
+## Return Value
 
 The [`CKShareTransferRepresentation.ExportedShare`](../exportedshare.md) with updated share settings.
 
-#### Discussion
+## Discussion
 
 Use this method when you have a [`CKShare`](../../ckshare.md) that’s already saved to the server.
 

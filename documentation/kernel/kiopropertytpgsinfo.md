@@ -13,7 +13,7 @@
 #define kIOPropertyTPGSInfo
 ```
 
-#### Discussion
+## Discussion
 
 TPGS Info as reported in the INQUIRY data.
 

@@ -22,7 +22,7 @@ class let touchBarSidebarTemplateName: String
 extern NSImageName const NSImageNameTouchBarSidebarTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for sidebar](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793533@2x.png)
 

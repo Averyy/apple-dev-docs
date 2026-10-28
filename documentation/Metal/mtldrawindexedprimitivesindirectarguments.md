@@ -28,7 +28,7 @@ typedef struct { ... } MTLDrawIndexedPrimitivesIndirectArguments;
 
 - [Specifying drawing and dispatch arguments indirectly](./specifying-drawing-and-dispatch-arguments-indirectly.md)
 
-#### Overview
+## Overview
 
 See also the [`drawIndexedPrimitives(type:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:)`](./mtlrendercommandencoder/drawindexedprimitives%28type,indextype,indexbuffer,indexbufferoffset,indirectbuffer,indirectbufferoffset%29.md) method.
 

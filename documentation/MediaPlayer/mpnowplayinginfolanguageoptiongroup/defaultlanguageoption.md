@@ -25,7 +25,7 @@ var defaultLanguageOption: MPNowPlayingInfoLanguageOption? { get }
 @property (nonatomic, readonly, nullable) MPNowPlayingInfoLanguageOption * defaultLanguageOption;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`nil`](../../ObjectiveC/nil-227m0.md) when there’s no default language option.
 

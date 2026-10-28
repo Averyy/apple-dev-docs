@@ -23,7 +23,7 @@ case byTruncatingMiddle
 kCTLineBreakByTruncatingMiddle
 ```
 
-#### Discussion
+## Discussion
 
 Each line is displayed so that the beginning and end fit in the container and the missing text is indicated by an ellipsis glyph in the middle.
 

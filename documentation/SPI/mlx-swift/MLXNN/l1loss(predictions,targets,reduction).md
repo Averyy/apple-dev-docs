@@ -17,11 +17,11 @@ Computes the L1 loss
 func l1Loss(predictions: MLXArray, targets: MLXArray, reduction: LossReduction = .mean) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed L1 loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

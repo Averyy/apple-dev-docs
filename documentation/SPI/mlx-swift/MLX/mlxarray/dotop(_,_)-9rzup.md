@@ -21,7 +21,7 @@ static func .< (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Less than on two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -36,7 +36,7 @@ if (a .< b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`less(_:_:stream:)`](../less%28_,_,stream%29.md)

@@ -23,7 +23,7 @@ func recommendedVideoSettings(forVideoCodecType videoCodecType: AVVideoCodecType
 - (NSDictionary<NSString *,id> *) recommendedVideoSettingsForVideoCodecType:(AVVideoCodecType) videoCodecType assetWriterOutputFileType:(AVFileType) outputFileType outputFileURL:(NSURL *) outputFileURL;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated output settings dictionary suitable for configuring an asset writer input.
 

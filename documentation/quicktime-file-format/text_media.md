@@ -5,7 +5,7 @@
 
 Store text data in QuickTime movies.
 
-#### Overview
+## Overview
 
 Text media is used to store text data in QuickTime movies. It has a media type of `'text'`.
 

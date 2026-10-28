@@ -17,7 +17,7 @@ An instruction to defer a response to the action.
 case `defer`
 ```
 
-#### Discussion
+## Discussion
 
 Use `defer` to delay an immediate response to a shield action; for example, if your extension on a client device sends a remote request to a parent or guardian’s device. When you specify this option, the shield redraws its UI, which gives your extension on the client device an opportunity to reconfigure the shield’s appearance.
 

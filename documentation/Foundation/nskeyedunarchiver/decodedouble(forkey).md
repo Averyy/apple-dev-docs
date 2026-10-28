@@ -25,11 +25,11 @@ func decodeDouble(forKey key: String) -> Double
 - (double) decodeDoubleForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The double-precision floating-point value associated with the key `key`. Returns `0.0` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 If the archived value was encoded as single-precision, the type is coerced.
 

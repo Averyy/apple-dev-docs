@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two reference objects are equal.
 static func == (lhs: ReferenceObject, rhs: ReferenceObject) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two reference objects are equal; otherwise, `false`.
 

@@ -18,7 +18,7 @@ The possible reasons for the framework’s Camera Assistance status.
 typedef NSString * NIAlgorithmConvergenceStatusReason;
 ```
 
-#### Discussion
+## Discussion
 
 The framework provides the app with one or more reasons for the current convergence status. Reasons detail specific user actions the framework believes will get the Camera Assistance feature operational.
 

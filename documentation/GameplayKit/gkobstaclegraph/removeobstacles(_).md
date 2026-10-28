@@ -24,7 +24,7 @@ func removeObstacles(_ obstacles: [GKPolygonObstacle])
 - (void) removeObstacles:(NSArray<GKPolygonObstacle *> *) obstacles;
 ```
 
-#### Discussion
+## Discussion
 
 After removing obstacles, the [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically creates, removes, or rearranges nodes and edges where necessary to describe the navigable area around the complete collection of obstacles.
 

@@ -5,13 +5,13 @@
 
 Customize the way controls display across the system and offer people the ability to configure them.
 
-#### Overview
+## Overview
 
 You can use controls to allow people to enhance Control Center, the Lock Screen, and the Action button with actions from your app. Each system space displays controls differently, adding or removing information where needed: for example, people can resize controls in Control Center. Depending on the size, the title and value text aren’t always visible. Refine controls to display in different system spaces and provide people with the information they need.
 
 Controls perform an action, and can provide configuration options to allow someone to customize what the action does, such as choosing which light to turn on and off. Consider if configuration is a good choice for your control.
 
-##### Customize your control’s name and description
+### Customize your control’s name and description
 
 By default, the name of your app displays as the name for your control when the control appears in the controls gallery, and control toggles display in their inactive state. Customize your control’s name if your app offers multiple controls or to provide more context about what your control does. Customize the name of your control using the [`displayName(_:)`](../SwiftUI/controlwidgetconfiguration/displayname%28_%29.md) modifier. Localize your control’s name, if applicable.
 
@@ -37,7 +37,7 @@ struct TimerToggle: ControlWidget {
 }
 ```
 
-##### Set your control’s tint color
+### Set your control’s tint color
 
 Choose a tint color that matches your app’s brand. Apply the [`tint(_:)`](../SwiftUI/controlwidgettemplate/tint%28_%29.md) modifier to the control’s template to set a custom tint color.
 
@@ -61,7 +61,7 @@ struct GarageDoorOpener: ControlWidget {
 }
 ```
 
-##### Enforce security and privacy for controls
+### Enforce security and privacy for controls
 
 Controls can require a device to be authenticated to allow the control to perform its action or to display its current state and information. Set the `authenticationPolicy` in the control’s app intent to refine what level of authentication is necessary to perform the action.
 
@@ -99,7 +99,7 @@ You may use the `privacySensitive()` modifier on a control’s value or label in
 
 Require authentication if a control performing its action would be problematic if done unintentionally or not by the device owner. Redact information if a control displays personally identifiable or security-related information or state.
 
-##### Refine Action button hint text
+### Refine Action button hint text
 
 The Action button gives quick and easy access to controls and system functionality. Provide hint text to people to help give context to the action the control performs. The text set with the `displayName` modifier on the [`StaticControlConfiguration`](./staticcontrolconfiguration.md) or [`AppIntentControlConfiguration`](./appintentcontrolconfiguration.md) provides text to the system to display a hint. The default hint text is different for buttons, toggles, and buttons that have an [`OpenIntent`](../AppIntents/openintent.md) action to launch an app.
 
@@ -199,13 +199,13 @@ ControlWidgetToggle(...) { isOn in
 
 > **Note**: `controlWidgetActionHint` takes precedence over custom value text `Label` provides.
 
-##### Add Control Center status text
+### Add Control Center status text
 
 Use the [`controlWidgetStatus(_:)`](../SwiftUI/view/controlwidgetstatus%28_%29.md) modifier to display momentary status text in Control Center when a control’s action is performed. Status text conveys additional information about the control’s state or the duration of effectiveness of the state. For example, status text might display the time a car idles before turning off after being remotely started.
 
 Use status text sparingly and only in situations where important information isn’t conveyed by the control.
 
-##### Add configuration to a control
+### Add configuration to a control
 
 Make a control configurable to enable people to use multiple controls and to set them up to perform different actions, such as selecting a productivity timer instead of a reading timer.
 

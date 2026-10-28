@@ -24,7 +24,7 @@ case byTruncatingHead
 NSLineBreakByTruncatingHead
 ```
 
-#### Discussion
+## Discussion
 
 Although this mode works for multiline text, it’s more often used for single line text.
 

@@ -10,7 +10,7 @@ Create and run tests for your Swift packages and Xcode projects.
 - Swift 6.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 ![The Swift logo on a blue gradient background that contains function, number, tag, and checkmark diamond symbols.](https://developer.apple.com/tutorials/images/org.swift.testing/swift-testing-hero@2x.png)
 
@@ -25,7 +25,7 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 - Categorize tests using tags.
 - Associate bugs directly with the tests that verify their fixes or reproduce their problems.
 
-###### Related videos
+#### Related videos
 
 - [Meet Swift Testing](https://developer.apple.com/videos/play/wwdc2024/10179)
 - [Go further with Swift Testing](https://developer.apple.com/videos/play/wwdc2024/10195)

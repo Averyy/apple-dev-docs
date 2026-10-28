@@ -19,7 +19,7 @@ static let rate: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechRateProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../../../Foundation/nsnumber.md) object that specifies the synthesizer’s speaking rate. The range of supported rates is not predefined by the [`NSSpeechSynthesizer`](../../nsspeechsynthesizer.md) class; each speech synthesizer provides its own range of speech rates. Average human speech occurs at a rate of 180 to 220 words per minute.
 

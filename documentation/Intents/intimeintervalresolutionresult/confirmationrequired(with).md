@@ -24,11 +24,11 @@ class func confirmationRequired(with timeIntervalToConfirm: TimeInterval) -> Sel
 + (instancetype) confirmationRequiredWithTimeIntervalToConfirm:(NSTimeInterval) timeIntervalToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTimeIntervalResolutionResult`](../intimeintervalresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

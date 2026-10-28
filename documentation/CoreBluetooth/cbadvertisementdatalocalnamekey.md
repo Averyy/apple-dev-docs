@@ -25,7 +25,7 @@ let CBAdvertisementDataLocalNameKey: String
 extern NSString * const CBAdvertisementDataLocalNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSString`](../Foundation/nsstring.md).
 

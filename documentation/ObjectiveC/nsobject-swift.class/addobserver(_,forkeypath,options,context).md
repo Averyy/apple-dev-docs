@@ -25,7 +25,7 @@ func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKe
 - (void) addObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Neither the object receiving this message, nor `observer`, are retained. An object that calls this method must also eventually call either the [`removeObserver(_:forKeyPath:)`](./removeobserver%28_,forkeypath%29.md) or [`removeObserver(_:forKeyPath:context:)`](./removeobserver%28_,forkeypath,context%29.md) method to unregister the observer when participating in KVO.
 

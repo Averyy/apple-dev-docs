@@ -19,7 +19,7 @@ static func primary(_ identifier: String) -> GroupActivityAssociationKind
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 When in an active SharePlay activity, the system will annotate the primary associated scene scene as “shared” and use it as the common scene to arrange spatial Personas around. This association between the group activity and a scene in your app creates a shared space for spatial Personas to interact in.
 

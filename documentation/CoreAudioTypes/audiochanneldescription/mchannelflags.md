@@ -25,7 +25,7 @@ var mChannelFlags: AudioChannelFlags
 AudioChannelFlags mChannelFlags;
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio Channel Coordinates](../audio-channel-coordinates.md) for possible values.
 

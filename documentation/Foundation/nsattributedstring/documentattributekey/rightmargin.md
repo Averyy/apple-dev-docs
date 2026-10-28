@@ -15,7 +15,7 @@ The right margin of the document.
 static let rightMargin: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float, in points.
 

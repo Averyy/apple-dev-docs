@@ -23,11 +23,11 @@ func drawHierarchy(in rect: CGRect, afterScreenUpdates afterUpdates: Bool) -> Bo
 - (BOOL) drawViewHierarchyInRect:(CGRect) rect afterScreenUpdates:(BOOL) afterUpdates;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the snapshot is complete, or [`false`](../../Swift/false.md) if the snapshot is missing image data for any view in the hierarchy.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to apply a graphical effect, such as a blur, to a view snapshot. This method is not as fast as the [`snapshotView(afterScreenUpdates:)`](./snapshotview%28afterscreenupdates%29.md) method.
 

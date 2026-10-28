@@ -24,7 +24,7 @@ var rAddressMode: MTLSamplerAddressMode { get set }
 @property (nonatomic) MTLSamplerAddressMode rAddressMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLSamplerAddressMode.clampToEdge`](../mtlsampleraddressmode/clamptoedge.md).
 

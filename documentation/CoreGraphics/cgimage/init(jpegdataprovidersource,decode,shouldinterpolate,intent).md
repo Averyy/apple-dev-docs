@@ -25,7 +25,7 @@ init?(jpegDataProviderSource source: CGDataProvider, decode: UnsafePointer<CGFlo
 extern CGImageRefCGImageCreateWithJPEGDataProvider(CGDataProviderRef source, const CGFloat *decode, bool shouldInterpolate, CGColorRenderingIntent intent);
 ```
 
-#### Return Value
+## Return Value
 
 A new CGImage. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 

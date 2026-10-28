@@ -19,7 +19,7 @@ var loadsImagesAutomatically: Bool { get set }
 @property (nonatomic) BOOL loadsImagesAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the web view should allow images to be loaded automatically, otherwise [`false`](../../Swift/false.md).
 

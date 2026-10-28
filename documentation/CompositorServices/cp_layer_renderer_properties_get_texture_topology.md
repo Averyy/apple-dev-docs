@@ -16,11 +16,11 @@ Retrieves the texture topology at the specified index in the layer’s propertie
 cp_texture_topology_tcp_layer_renderer_properties_get_texture_topology(cp_layer_renderer_properties_t layer_properties, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The texture topology at the specified index.
 
-#### Discussion
+## Discussion
 
 Retrieve the topology type and use accessor functions to get details of that topology, including its type and array length. Use that information to allocate the resources you need to manage your Metal data structures.
 

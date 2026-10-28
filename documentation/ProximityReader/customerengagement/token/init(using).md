@@ -17,7 +17,7 @@ Creates a customer engagement token.
 init(using token: PaymentCardReader.Token)
 ```
 
-#### Discussion
+## Discussion
 
 This creates a token using the [`PaymentCardReader.Token`](../../paymentcardreader/token.md) from your payment service provider.
 

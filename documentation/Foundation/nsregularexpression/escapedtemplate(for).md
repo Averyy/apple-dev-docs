@@ -25,11 +25,11 @@ class func escapedTemplate(for string: String) -> String
 + (NSString *) escapedTemplateForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The escaped template string.
 
-#### Discussion
+## Discussion
 
 Returns a string by adding backslash escapes as necessary to the given string, to escape any characters that would otherwise be treated as pattern metacharacters. You typically use this method to match on a particular string within a larger pattern.
 

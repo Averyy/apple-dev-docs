@@ -20,7 +20,7 @@ func addAction(_ action: AMAction)
 - (void) addAction:(AMAction *) action;
 ```
 
-#### Discussion
+## Discussion
 
 The workflow retains the action but does not copy it.
 

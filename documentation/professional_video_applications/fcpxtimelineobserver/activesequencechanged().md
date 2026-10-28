@@ -23,7 +23,7 @@ optional func activeSequenceChanged()
 
 - [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Discussion
+## Discussion
 
 Implement this method in your workflow extension observer object to receive notifications when an active sequence changes in the Final Cut Pro timeline. Inside the implementation, use the [`activeSequence`](../fcpxtimeline/activesequence.md) property to obtain details of the new sequence. Access the container object of the new sequence using the [`container`](../fcpxobject/container.md) property.
 

@@ -25,7 +25,7 @@ var minimumTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval minimumTime;
 ```
 
-#### Discussion
+## Discussion
 
 Timed data is clamped to the minimum and maximum times. If you request transform data for a time sample before the minimum time, Model I/O returns the transform at the minimum time.
 

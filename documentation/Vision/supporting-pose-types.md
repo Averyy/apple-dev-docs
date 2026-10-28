@@ -5,7 +5,7 @@
 
 Types you use when working with pose analysis.
 
-#### Overview
+## Overview
 
 Use these types when working with pose detection results to access joint information and properties.
 

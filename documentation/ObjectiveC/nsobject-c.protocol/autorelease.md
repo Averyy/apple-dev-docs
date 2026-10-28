@@ -21,15 +21,15 @@ Decrements the receiver’s retain count at the end of the current autorelease p
 - (instancetype) autorelease;
 ```
 
-#### Return Value
+## Return Value
 
 `self`.
 
-#### Discussion
+## Discussion
 
 For more information about autorelease pool blocks, see [Advanced Memory Management Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i).
 
-##### Special Considerations
+### Special Considerations
 
 Instead of using manual reference counting, you should adopt ARC—see [Transitioning to ARC Release Notes](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226).
 

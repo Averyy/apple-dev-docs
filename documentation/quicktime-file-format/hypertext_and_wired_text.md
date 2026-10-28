@@ -5,7 +5,7 @@
 
 Store hypertext in a text track sample atom.
 
-#### Overview
+## Overview
 
 Hypertext is used as an action that takes you to a Web URL; like a Web URL, it appears blue and underlined. Hypertext is stored in a text track sample atom stream as type `'htxt'`. The same mechanism is used to store wired actions linked to text strings. A text string can be wired to act as a hypertext link when clicked or to perform any defined QuickTime wired action when clicked. For details on wired actions, see [Wired action grammar](./wired_action_grammar.md).
 

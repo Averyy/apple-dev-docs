@@ -23,7 +23,7 @@ var pageWidth: NSNumber? { get set }
 @property (strong, nullable) NSNumber * pageWidth;
 ```
 
-#### Discussion
+## Discussion
 
 For a PDF document, this property specifies the width of the first page only; other pages in a PDF document may have different widths.
 

@@ -19,11 +19,11 @@ Creates a GPU-managed buffer resource from the given descriptor.
 func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelBufferResource`](../lowlevelbufferresource.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
 

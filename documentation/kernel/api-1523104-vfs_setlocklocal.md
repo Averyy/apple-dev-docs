@@ -15,11 +15,11 @@ Mark a filesystem as using VFS-level advisory locking support.
 void vfs_setlocklocal(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Advisory locking operations will not call down to the filesystem if this flag is set.
 

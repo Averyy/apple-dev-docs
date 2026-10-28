@@ -23,7 +23,7 @@ var NOTIFY_STATUS_INVALID_FILE: Int32 { get }
 #define NOTIFY_STATUS_INVALID_FILE
 ```
 
-#### Discussion
+## Discussion
 
 Status codes returned by the API.
 

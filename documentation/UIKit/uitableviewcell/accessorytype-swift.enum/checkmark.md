@@ -27,7 +27,7 @@ UITableViewCellAccessoryCheckmark
 
 - [Handling row selection in a table view](../../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 Choose this option to display a checkmark image. This type of accessory view doesn’t track touches.
 

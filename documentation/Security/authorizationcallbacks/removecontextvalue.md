@@ -21,7 +21,7 @@ Removes a value collected during authorization.
 int (*)(struct __OpaqueAuthorizationEngine *, const char *) RemoveContextValue;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 

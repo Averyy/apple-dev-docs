@@ -24,7 +24,7 @@ static func makeStream(of elementType: Element.Type = Element.self, throwing fai
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the stream and its continuation. The continuation should be passed to the producer while the stream should be passed to the consumer.
 

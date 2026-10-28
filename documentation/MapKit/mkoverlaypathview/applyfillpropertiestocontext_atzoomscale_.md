@@ -19,7 +19,7 @@ Applies the receiver’s current fill-related drawing properties to the specifie
 - (void) applyFillPropertiesToContext:(CGContextRef) context atZoomScale:(MKZoomScale) zoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for applying all of the drawing properties used when filling a path. This method applies the current fill color to the specified graphics context.
 

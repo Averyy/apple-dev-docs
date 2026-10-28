@@ -24,7 +24,7 @@ func removeRecurrenceRule(_ rule: EKRecurrenceRule)
 - (void) removeRecurrenceRule:(EKRecurrenceRule *) rule;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation only supports a single recurrence rule.
 

@@ -21,7 +21,7 @@ var gaugeColors: [UIColor]? { get }
 @property (nonatomic, readonly, nullable) NSArray<UIColor *> * gaugeColors;
 ```
 
-#### Discussion
+## Discussion
 
 A gauge with more than one color appears as a gradient. The provider specifies the location of the colors using the [`gaugeColorLocations`](./gaugecolorlocations.md) property. The [`gaugeColors`](./gaugecolors.md) and [`gaugeColorLocations`](./gaugecolorlocations.md) properties must have the same number of elements.
 

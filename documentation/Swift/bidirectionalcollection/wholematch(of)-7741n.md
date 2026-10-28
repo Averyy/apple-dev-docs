@@ -23,7 +23,7 @@ func wholeMatch<R>(of regex: R) -> Regex<R.RegexOutput>.Match? where R : RegexCo
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 The match, if one is found. If there is no match, or a transformation in `regex` throws an error, this method returns `nil`.
 

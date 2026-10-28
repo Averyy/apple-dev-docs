@@ -17,7 +17,7 @@ A container for managing LoRA or DoRA adapters and applying them to a language m
 struct LoRAContainer
 ```
 
-#### Overview
+## Overview
 
 This struct conforms to `ModelAdapter` and can dynamically inject, remove, or fuse adapters into a model at runtime.
 

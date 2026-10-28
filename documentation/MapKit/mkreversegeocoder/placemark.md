@@ -19,7 +19,7 @@ The result of the reverse-geocoding operation.
 @property (nonatomic, readonly) MKPlacemark * placemark;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` by default. After a successful reverse-geocoding operation, it is set to the placemark object that was generated.
 

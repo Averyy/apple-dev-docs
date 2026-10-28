@@ -24,11 +24,11 @@ func evaluatePredicate(in system: GKRuleSystem) -> Bool
 - (BOOL) evaluatePredicateWithSystem:(GKRuleSystem *) system;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the rule is satisfied (and its action should be executed); otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A rule system calls this method when evaluating its rules.
 

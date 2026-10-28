@@ -20,11 +20,11 @@ func vmnet_network_copy_serialization(_ network: vmnet_network_ref, _ status: Un
 xpc_object_tvmnet_network_copy_serialization(vmnet_network_ref network, vmnet_return_t *status);
 ```
 
-#### Return Value
+## Return Value
 
 Serialized copy of network in `xpc_object_t`, `NULL` otherwise. Optionally, `status` will contain the error code.
 
-#### Discussion
+## Discussion
 
 Use `vmnet_network_create_with_serialization` to create a new network object from such an XPC object.
 

@@ -21,7 +21,7 @@ Accepts an incoming session request from a client, delegating incoming dictionar
 func accept<Handler>(_ inactiveSessionHandler: (XPCSession) -> Handler) -> XPCListener.IncomingSessionRequest.Decision where Handler : XPCPeerHandler, Handler.Input == XPCDictionary, Handler.Output == XPCDictionary
 ```
 
-#### Return Value
+## Return Value
 
 A decision that indicates whether the listener accepts or rejects the incoming session.
 

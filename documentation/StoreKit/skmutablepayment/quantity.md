@@ -27,7 +27,7 @@ var quantity: Int { get set }
 @property (nonatomic, readwrite) NSInteger quantity;
 ```
 
-#### Discussion
+## Discussion
 
 The quantity property must be greater than `0`.
 

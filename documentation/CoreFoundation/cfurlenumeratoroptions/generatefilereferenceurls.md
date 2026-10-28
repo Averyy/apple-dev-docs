@@ -25,7 +25,7 @@ static var generateFileReferenceURLs: CFURLEnumeratorOptions { get }
 kCFURLEnumeratorGenerateFileReferenceURLs
 ```
 
-#### Discussion
+## Discussion
 
 This option applies only to volume enumerators.
 

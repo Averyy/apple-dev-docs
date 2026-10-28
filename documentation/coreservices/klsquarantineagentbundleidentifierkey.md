@@ -19,7 +19,7 @@ let kLSQuarantineAgentBundleIdentifierKey: CFString
 const CFStringRef kLSQuarantineAgentBundleIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 When setting quarantine properties, the bundle identifier is set automatically to the main bundle identifier of the current process if the key is not present in the caller’s dictionary.
 

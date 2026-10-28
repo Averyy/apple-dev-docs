@@ -5,13 +5,13 @@
 
 Activate system extensions and drivers to make them available to the system, and update or deactivate them as needed.
 
-#### Overview
+## Overview
 
 Instead of installing system extensions using an installer, you ship system extensions inside your app’s bundle and install them from your app. Request activation of any system extensions as early as possible in your app’s launch. Doing so helps the system seamlessly update the extension when updating the app. Depending on your app, you may choose to request activation later. For example, you might delay activation until after the user accepts a license agreement or makes an in-app purchase.
 
 System extensions reside inside your app’s `Contents/Library/SystemExtensions` folder. When the user launches your app, use the SystemExtensions framework to activate your driver and make it available for use. During the activation process, the system checks the validity of your driver—for example, by verifying that it has the proper entitlements to run. The specific checks depend on the type of system extension you activate.
 
-##### Activate a New System Extension
+### Activate a New System Extension
 
 To start the activation process for your system extension, create an activation request by calling the [`activationRequest(forExtensionWithIdentifier:queue:)`](./ossystemextensionrequest/activationrequest%28forextensionwithidentifier,queue%29.md) method of [`OSSystemExtensionRequest`](./ossystemextensionrequest.md). When you submit that request object to the [`OSSystemExtensionManager`](./ossystemextensionmanager.md), the system begins the activation process and reports the results back to the delegate object you specify. The following code shows the activation steps for a DriverKit extension.
 
@@ -40,17 +40,17 @@ If the verification process fails, the system reports the error back to your del
 
 > **Note**:  During development, you can disable some verification checks to simplify testing your system extensions. For more information, see Debugging and Testing System Extensions.
 
-##### Update an Existing System Extension
+### Update an Existing System Extension
 
 To update a driver, increment the driver’s version and activate it using the same process for new system extensions. When the system detects an existing extension with the same identifier, it passes the version information for both extensions to the [`request(_:actionForReplacingExtension:withExtension:)`](./ossystemextensionrequestdelegate/request%28_,actionforreplacingextension,withextension%29.md) method of your request delegate. Use that information to determine whether you want to install the new extension or keep the old one.
 
 For more information about implementing the delegate methods for your request, see [`OSSystemExtensionRequestDelegate`](./ossystemextensionrequestdelegate.md).
 
-##### Uninstall a System Extension
+### Uninstall a System Extension
 
 The system automatically uninstalls any system extensions when the user deletes the corresponding app. You can also uninstall a system extension by creating a deactivation request. Call the [`deactivationRequest(forExtensionWithIdentifier:queue:)`](./ossystemextensionrequest/deactivationrequest%28forextensionwithidentifier,queue%29.md) method of [`OSSystemExtensionRequest`](./ossystemextensionrequest.md) and submit the resulting object to the [`OSSystemExtensionManager`](./ossystemextensionmanager.md).
 
-##### Examine the Installed System Extensions
+### Examine the Installed System Extensions
 
 To see the system extensions installed on your system, run the `systemextensionsctl` command-line tool with the `list` option from Terminal.
 

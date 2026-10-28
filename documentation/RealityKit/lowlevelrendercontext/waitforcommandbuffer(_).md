@@ -19,7 +19,7 @@ Adds a command buffer that the renderer should wait on before using resources fo
 func waitForCommandBuffer(_ commandBuffer: any MTLCommandBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 Instead of passing the same command buffer to every individual `replace(commandBuffer:)` call, you can call this method once and then pass `nil` to each GPU replace call on this context. The renderer waits for this command buffer to complete before using any of those resources for rendering.
 

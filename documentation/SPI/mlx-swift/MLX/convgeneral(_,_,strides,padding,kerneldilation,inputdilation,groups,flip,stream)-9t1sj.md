@@ -17,13 +17,13 @@ General convolution over an input with several channels.
 func convGeneral(_ array: MLXArray, _ weight: MLXArray, strides: IntOrArray = 1, padding: IntOrArray = 0, kernelDilation: IntOrArray = 1, inputDilation: IntOrArray = 1, groups: Int = 1, flip: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only 1d and 2d convolutions are supported at the moment
 
 > **Note**: The default `groups: 1` is currently supported
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`IntOrArray`](./intorarray.md)

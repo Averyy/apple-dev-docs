@@ -16,7 +16,7 @@ This function can be used to create a config directory object and a correspondin
 IOFireWireLibConfigDirectoryRef (*CreateConfigDirectoryWithIOObject)(IOFireWireLibDeviceRef self, io_object_t inObject, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibConfigDirectoryRef. Returns 0 upon failure
 

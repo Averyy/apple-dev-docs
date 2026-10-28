@@ -20,7 +20,7 @@ case actionThirdPartyActionsNotAllowedError
 AMActionThirdPartyActionsNotAllowedError
 ```
 
-#### Discussion
+## Discussion
 
 The user must enable loading of third party actions inside Automator.
 

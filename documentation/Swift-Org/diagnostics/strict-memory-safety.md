@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify the use of language constructs and library APIs that can undermine memory safety, disabled by default.
 
-#### Overview
+## Overview
 
 Strict memory safety can be enabled with the `-strict-memory-safety` compiler flag. Examples of memory-unsafe code in Swift include:
 

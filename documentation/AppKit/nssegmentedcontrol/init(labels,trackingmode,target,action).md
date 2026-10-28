@@ -19,7 +19,7 @@ convenience init(labels: [String], trackingMode: NSSegmentedControl.SwitchTracki
 + (instancetype) segmentedControlWithLabels:(NSArray<NSString *> *) labels trackingMode:(NSSegmentSwitchTracking) trackingMode target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized segmented control.
 

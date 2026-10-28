@@ -24,7 +24,7 @@ let GCProductCategorySiriRemote2ndGen: String
 extern NSString * const GCProductCategorySiriRemote2ndGen;
 ```
 
-#### Discussion
+## Discussion
 
 Remotes in this category feature a touch-enabled clickpad for navigation.
 

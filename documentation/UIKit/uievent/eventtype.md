@@ -23,7 +23,7 @@ enum EventType
 enum UIEventType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can obtain the type of an event from the [`type`](./type.md) property. To further identify the event, you might also need to determine its subtype, which you obtain from the [`subtype`](./subtype.md) property.
 

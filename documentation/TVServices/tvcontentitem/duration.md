@@ -22,7 +22,7 @@ var duration: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * duration;
 ```
 
-#### Discussion
+## Discussion
 
 The duration number is interpreted as a double number of seconds.
 

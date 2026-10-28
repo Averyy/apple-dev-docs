@@ -23,7 +23,7 @@ case confirmation
 SFSpeechRecognitionTaskHintConfirmation
 ```
 
-#### Discussion
+## Discussion
 
 Use this hint type when you are using speech recognition to handle confirmation commands, such as “yes,” “no,” or “maybe.”
 

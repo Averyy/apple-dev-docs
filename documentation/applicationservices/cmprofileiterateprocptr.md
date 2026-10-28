@@ -15,11 +15,11 @@ Defines a pointer to a profile iteration callback function that the ColorSync Ma
 typedef OSErr (*CMProfileIterateProcPtr)(CMProfileIterateData *iterateData, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSErr` value. If `MyCMProfileIterateCallback` returns an error, `CMIterateColorSyncFolder` stops iterating and returns the error value to its caller (presumably your code).
 
-#### Discussion
+## Discussion
 
 When your application needs information about the profiles currently available in the profiles folder, it calls the function  , which, depending on certain conditions, calls your callback routine once for each profile. See the description of `CMIterateColorSyncFolder` for information on when it calls the `MyCMProfileIterateCallback` function.
 

@@ -20,7 +20,7 @@ Adds an individual tutorial page link to a chapter on a table of contents page.
 @TutorialReference(tutorial: TopicReference)
 ```
 
-#### Overview
+## Overview
 
 Use the `TutorialReference` directive in a chapter on a table of contents page to link to a specific tutorial page. Include one `TutorialReference` per chapter. For each, use the `tutorial` parameter to reference the page by name, preceded by the doc: prefix.
 
@@ -42,7 +42,7 @@ Use the `TutorialReference` directive in a chapter on a table of contents page t
 }
 ```
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include tutorial page references:
 

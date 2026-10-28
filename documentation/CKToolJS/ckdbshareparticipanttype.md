@@ -21,7 +21,7 @@ interface CKDBShareParticipantType {
 };
 ```
 
-#### Overview
+## Overview
 
 Possible values are `OWNER`, `ADMINISTRATOR`, `USER`, `PUBLIC_USER`, and `UNKNOWN`.
 

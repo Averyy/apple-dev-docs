@@ -9,7 +9,7 @@ Update the text or territories for your custom end user license agreement.
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to change the license agreement text or associate the agreement with different App Store territories.
 
@@ -17,7 +17,7 @@ In the following example the request contains a blank value for the `agreementTe
 
 If you change the territories relationship, the new territories replace the original territories.
 
-##### Change the Text of a License Agreement
+### Change the Text of a License Agreement
 
 **Request**:
 
@@ -68,7 +68,7 @@ PATCH /v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a
 }
 ```
 
-##### Replace the Territories of a License Agreement with Japan and Canada
+### Replace the Territories of a License Agreement with Japan and Canada
 
 **Request**:
 

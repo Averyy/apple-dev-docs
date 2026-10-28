@@ -20,7 +20,7 @@ Updated vertex buffer data.
 let vertexData: [Data]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

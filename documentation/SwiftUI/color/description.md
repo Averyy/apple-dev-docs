@@ -21,7 +21,7 @@ A textual representation of the color.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get a string that represents the color. The [`print(_:separator:terminator:)`](../../Swift/print%28_,separator,terminator%29.md) function uses this property to get a string representing an instance:
 

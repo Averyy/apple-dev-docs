@@ -23,7 +23,7 @@ var translatesReferenceBoundsIntoBoundary: Bool { get set }
 @property (nonatomic, readwrite) BOOL translatesReferenceBoundsIntoBoundary;
 ```
 
-#### Discussion
+## Discussion
 
 To specify a collision boundary based on the reference system, use the [`setTranslatesReferenceBoundsIntoBoundary(with:)`](./settranslatesreferenceboundsintoboundary%28with%29.md) method.
 

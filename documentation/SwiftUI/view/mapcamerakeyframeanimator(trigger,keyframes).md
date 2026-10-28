@@ -21,7 +21,7 @@ Uses the given keyframes to animate the camera of a `Map` when the given trigger
 @preconcurrency func mapCameraKeyframeAnimator(trigger: some Equatable, @KeyframesBuilder<MapCamera> keyframes: @escaping (MapCamera) -> some Keyframes<MapCamera>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When the trigger value changes, the map calls the `keyframes` closure to generate the keyframes that will animate the camera. The animation will continue for the duration of the keyframes that you specify.
 

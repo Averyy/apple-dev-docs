@@ -19,7 +19,7 @@ var pressureConfiguration: NSPressureConfiguration { get set }
 @property (strong) NSPressureConfiguration * pressureConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value of type [`NSPressureConfiguration`](../nspressureconfiguration.md), which configures the behavior and progression of the Force Touch trackpad when responding to recognized pressure gestures.
 

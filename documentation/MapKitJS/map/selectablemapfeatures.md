@@ -16,7 +16,7 @@ get selectableMapFeatures(): MapFeatureType[];
 set selectableMapFeatures(value: MapFeatureType[]);
 ```
 
-#### Discussion
+## Discussion
 
 This is an array of the selectable map features the map displays from the types available in [`MapFeatureType`](../mapfeaturetype.md).
 

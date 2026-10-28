@@ -12,11 +12,11 @@ virtual UInt32 ReportMaximumTaskCount (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 returns maximum (non-zero) task count.
 
-#### Overview
+## Overview
 
 This method will be called to retrieve the maximum number of outstanding tasks the HBA can process. This number must be greater than zero or the controller driver will fail to match and load.
 

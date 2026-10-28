@@ -23,11 +23,11 @@ convenience init(duration: TimeInterval, controlPoint1 point1: CGPoint, controlP
 - (instancetype) initWithDuration:(NSTimeInterval) duration controlPoint1:(CGPoint) point1 controlPoint2:(CGPoint) point2 animations:(void (^)()) animations;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized animator object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create an animator object using a cubic timing curve whose starting point is (0, 0) and whose end point is (1, 1). The `point1` and `point2` parameters are the control points that define the shape of the resulting Bezier curve. The slope of the curve defines the speed of the animation at different times. Steep slopes cause animations to appear to run faster and shallower slopes cause them to appear to run slower. The following image shows a timing curve where the animations start fast and finish fast but run more slowly through the middle section.
 

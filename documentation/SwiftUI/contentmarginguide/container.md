@@ -21,7 +21,7 @@ The margins of the container the view is in.
 static var container: ContentMarginGuide { get }
 ```
 
-#### Discussion
+## Discussion
 
 These margins are the default spacing to use when laying out content in a view. The value depends on the platform, the size of the container, and the position of the view within it.
 

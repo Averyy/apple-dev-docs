@@ -8,13 +8,13 @@ Query and inspect the business locations associated with your brand for use in A
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 A location represents a physical place of business, such as a retail store, restaurant, or service center. Ads on Apple Maps promote these locations. See [Managing Location Groups](./location-groups-overview.md) for how a location group organizes locations into a targetable set for an ad group.
 
 Locations are read-only from the API perspective. Apple Business, not the Apple Ads Platform API, creates and maintains them. Use the location endpoints to discover locations associated with your brand, verify eligibility, and retrieve location IDs for use in location group construction.
 
-#### Understand Key Concepts
+## Understand Key Concepts
 
 Familiarize yourself with these concepts before you query locations or build location groups:
 
@@ -26,7 +26,7 @@ Familiarize yourself with these concepts before you query locations or build loc
 | **eligibility** | System-managed field that indicates whether ads can promote the location. See [`EligibilityStatus`](./eligibilitystatus.md) for possible values. You can add only `ELIGIBLE` locations to location groups. |
 | **Location group** | A named collection of location IDs. Ad groups reference location groups, not individual locations. See [Managing Location Groups](./location-groups-overview.md). |
 
-#### Follow the Location Workflow
+## Follow the Location Workflow
 
 Use location endpoints to discover and validate locations before building location groups for an Apple Maps campaign:
 
@@ -36,7 +36,7 @@ Use location endpoints to discover and validate locations before building locati
 4. **Retrieve a single location.** Call [`Get a Location`](./get-location-by-id.md) by `id` to confirm address, coordinates, and eligibility before adding the location to a group.
 5. **Build and manage location groups.** Once you’ve verified location IDs, see [Managing Location Groups](./location-groups-overview.md) for the full group creation, targeting, and maintenance workflow.
 
-#### Review Location Fields
+## Review Location Fields
 
 Each location object returned by the API includes these read-only fields:
 

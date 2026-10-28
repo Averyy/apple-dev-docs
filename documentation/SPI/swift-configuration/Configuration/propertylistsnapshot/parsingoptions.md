@@ -24,7 +24,7 @@ Parsing options for property list snapshot creation.
 struct ParsingOptions
 ```
 
-#### Overview
+## Overview
 
 This struct provides configuration options for parsing plist data into configuration snapshots.
 

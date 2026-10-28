@@ -21,11 +21,11 @@ func SMLoginItemSetEnabled(_ identifier: CFString, _ enabled: Bool) -> Bool
 extern Boolean SMLoginItemSetEnabled(CFStringRef identifier, Boolean enabled);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the requested change has taken effect.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To enable or disable `LoginItems` in macOS 13 and later, use the [`register()`](./smappservice/register%28%29.md) and [`unregister()`](./smappservice/unregister%28%29.md) methods instead.
 

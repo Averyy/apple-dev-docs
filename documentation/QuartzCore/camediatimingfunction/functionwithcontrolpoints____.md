@@ -20,11 +20,11 @@ Creates and returns a new instance of `CAMediaTimingFunction` timing function mo
 + (instancetype) functionWithControlPoints:(float) c1x :(float) c1y :(float) c2x :(float) c2y;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `CAMediaTimingFunction` with the timing function specified by the provided control points.
 
-#### Discussion
+## Discussion
 
 The end points of the Bézier curve are automatically set to (0.0,0.0) and (1.0,1.0). The control points defining the Bézier curve are: [(0.0,0.0), (`c1x`,`c1y`), (`c2x`,`c2y`), (1.0,1.0)].
 

@@ -23,7 +23,7 @@ var playbackState: MPMusicPlaybackState { get }
 @property (nonatomic, readonly) MPMusicPlaybackState playbackState;
 ```
 
-#### Discussion
+## Discussion
 
 If you configure a music player as a system music player, the playback state matches the playback state of the built-in Music app. This is true whether the Music app is using the device Music library or a home shared library. Note, however, that when the Music app is using a home shared library, the music player’s [`nowPlayingItem`](./nowplayingitem.md) property is `nil`.
 

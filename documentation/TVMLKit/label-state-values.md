@@ -4,7 +4,7 @@
 
 How text is displayed when an element is in focus.
 
-#### Overview
+## Overview
 
 ```
 NSString *const TVTextHighlightStyleShowOnHighlight;

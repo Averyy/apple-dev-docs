@@ -22,11 +22,11 @@ func backButtonBackgroundVerticalPositionAdjustment(for barMetrics: UIBarMetrics
 - (CGFloat) backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The back button vertical position offset for `barMetrics`.
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

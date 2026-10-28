@@ -25,11 +25,11 @@ init(url URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeI
 - (instancetype) initWithURL:(NSURL *) URL cachePolicy:(NSURLRequestCachePolicy) cachePolicy timeoutInterval:(NSTimeInterval) timeoutInterval;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized URL request.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for `NSURLRequest`.
 

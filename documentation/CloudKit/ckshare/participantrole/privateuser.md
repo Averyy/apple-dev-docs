@@ -25,7 +25,7 @@ case privateUser
 CKShareParticipantRolePrivateUser
 ```
 
-#### Discussion
+## Discussion
 
 A private user of a share can access the share.
 

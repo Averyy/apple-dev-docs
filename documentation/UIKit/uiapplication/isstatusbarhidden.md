@@ -27,11 +27,11 @@ var statusBarHidden: Bool { get set }
 @property (nonatomic, readonly, getter=isStatusBarHidden) BOOL statusBarHidden;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) means the status bar is hidden; [`false`](../../Swift/false.md) means it’s visible.
 
-#### Discussion
+## Discussion
 
 Changing the value of this property changes the visibility of the status bar immediately—that is, without animations.
 

@@ -23,7 +23,7 @@ func updateConstraints()
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 Override this method to optimize changes to your constraints.
 

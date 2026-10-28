@@ -17,7 +17,7 @@ An object that contains all information necessary for the alarm UI.
 struct AlarmAttributes<Metadata> where Metadata : AlarmMetadata
 ```
 
-#### Overview
+## Overview
 
 This struct includes alerting, countdown, and paused states. You define all the alarm information when creating the attributes. When archiving the widget, the widget extension selects which state to display based on the [`AlarmPresentationState`](./alarmpresentationstate.md) provided in the activity content state payload. The following example defines the attributes for the alarm UI.
 

@@ -19,7 +19,7 @@ func path(toColumn column: Int) -> String
 - (NSString *) pathToColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The path of the current selection up to, but not including, the specified column. The components of this path are separated with the string returned by [`pathSeparator`](./pathseparator.md).
 

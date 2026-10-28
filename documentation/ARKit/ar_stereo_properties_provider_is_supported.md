@@ -15,7 +15,7 @@ Determines whether this device supports the stereo properties provider.
 extern bool ar_stereo_properties_provider_is_supported();
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the stereo properties provider is supported on this device, `false` otherwise.
 

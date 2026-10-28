@@ -20,7 +20,7 @@ func NSSizeFromString(_ aString: String) -> NSSize
 extern NSSize NSSizeFromString(NSString *aString);
 ```
 
-#### Discussion
+## Discussion
 
 Scans `aString` for two numbers which are used as the width and height, in that order, to create an `NSSize` struct. If `aString` only contains a single number, it is used as the width. The `aString` argument should be formatted like the output of [`NSStringFromSize(_:)`](./nsstringfromsize%28_%29.md), for example, `@"{10,20}"`. If `aString` does not contain any numbers, this function returns an `NSSize` struct whose width and height are both `0`.
 

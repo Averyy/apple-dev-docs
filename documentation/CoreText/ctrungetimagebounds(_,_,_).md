@@ -25,7 +25,7 @@ func CTRunGetImageBounds(_ run: CTRun, _ context: CGContext?, _ range: CFRange) 
 extern CGRect CTRunGetImageBounds(CTRunRef run, CGContextRef context, CFRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`, `context`, or `range` is invalid, [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 

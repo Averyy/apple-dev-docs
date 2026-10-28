@@ -20,7 +20,7 @@ func setCurrentAppleEventAndReplyEventWithSuspensionID(_ suspensionID: NSAppleEv
 - (void) setCurrentAppleEventAndReplyEventWithSuspensionID:(NSAppleEventManagerSuspensionID) suspensionID;
 ```
 
-#### Discussion
+## Discussion
 
 Redundant invocations of [`setCurrentAppleEventAndReplyEventWithSuspensionID(_:)`](./setcurrentappleeventandreplyeventwithsuspensionid%28_%29.md) are ignored.
 

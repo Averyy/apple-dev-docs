@@ -23,7 +23,7 @@ static let invalid: UIBackgroundTaskIdentifier
 extern const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to initialize variables or to check for errors.
 

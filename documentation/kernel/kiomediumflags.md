@@ -15,7 +15,7 @@ A property of IONetworkMedium objects.
 #define kIOMediumFlags
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediumFlags property is an OSNumber object that describes a set of attributes assigned to the medium.
 

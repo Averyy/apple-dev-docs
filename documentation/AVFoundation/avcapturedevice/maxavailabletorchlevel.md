@@ -23,7 +23,7 @@ class let maxAvailableTorchLevel: Float
 extern const float AVCaptureMaxAvailableTorchLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value to the [`setTorchModeOn(level:)`](./settorchmodeon%28level%29.md) method to set the torch to the maximum level currently available. Under thermal duress, the maximum available torch level may be less than 1.0.
 

@@ -24,7 +24,7 @@ func connect(toPeer peerID: String!, withTimeout timeout: TimeInterval)
 - (void) connectToPeer:(NSString *) peerID withTimeout:(NSTimeInterval) timeout;
 ```
 
-#### Discussion
+## Discussion
 
 When your application is acting as a client, it calls this method to connect to an available peer it discovered. When your application calls this method, a request is transmitted to the remote peer, who chooses whether to accept or reject the connection request.
 

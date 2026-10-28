@@ -30,7 +30,7 @@ Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `O
 @preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
 ```
 
-#### Discussion
+## Discussion
 
 The framework will initialize the provided delegate and manage its lifetime, calling out to it when appropriate after performing its own work.
 

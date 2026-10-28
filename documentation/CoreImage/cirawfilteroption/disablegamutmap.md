@@ -26,7 +26,7 @@ static let disableGamutMap: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputDisableGamutMapKey;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `true` disables gamut mapping.  The default is `false`.
 

@@ -15,7 +15,7 @@ The developer’s client identifier, as provided by WWDR.
 attribute string clientId;
 ```
 
-#### Discussion
+## Discussion
 
 You must obtain a client identifier from WWDR before you can use Sign In with Apple.
 

@@ -24,11 +24,11 @@ final nonisolated(nonsending) func insertOrUpdateAssets(_ assets: [MediaIntellig
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Return Value
+## Return Value
 
 An async sequence of `(assetID, faces)` pairs — one per asset — reporting the faces detected in each image.
 
-#### Discussion
+## Discussion
 
 For each asset, the method detects faces and extracts facial data, then persists the results to the working directory. If an asset with the same identifier already exists, the method replaces its face data.
 

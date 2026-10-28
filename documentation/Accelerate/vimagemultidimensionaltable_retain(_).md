@@ -25,11 +25,11 @@ func vImageMultidimensionalTable_Retain(_ table: vImage_MultidimensionalTable!) 
 vImage_Error vImageMultidimensionalTable_Retain(vImage_MultidimensionalTable table);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function increments the multidimensional table’s reference count.
 

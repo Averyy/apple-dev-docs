@@ -5,7 +5,7 @@
 
 Donate your app’s intents and entities to the system to help it identify trends and predict future behaviors.
 
-#### Overview
+## Overview
 
 When someone performs an action in your app’s interface, create a matching app intent and donate it to the system. Donations help the system analyze a person’s current actions and predict their future actions. For example, if someone asks your app for the weather each morning, the system might proactively suggest the same action each morning. Restrict your donations to direct interactions with your app’s interface, and not to interactions started by Siri or the Shortcuts app.
 

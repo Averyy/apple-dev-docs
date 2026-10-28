@@ -21,7 +21,7 @@ func voice() -> NSSpeechSynthesizer.VoiceName?
 - (NSSpeechSynthesizerVoiceName) voice;
 ```
 
-#### Return Value
+## Return Value
 
 Identifier of the receiver’s current voice.
 

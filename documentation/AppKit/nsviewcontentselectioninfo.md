@@ -21,7 +21,7 @@ protocol NSViewContentSelectionInfo : NSObjectProtocol
 
 - [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
 
-#### Overview
+## Overview
 
 A protocol to request information from NSView subclasses about the selected content in the view.
 

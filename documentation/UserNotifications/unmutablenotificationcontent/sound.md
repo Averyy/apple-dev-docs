@@ -33,7 +33,7 @@ var sound: UNNotificationSound? { get set }
 @property (atomic, copy, readwrite, nullable) UNNotificationSound * sound;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the sound that you want played when the notification arrives. If your app isn’t authorized to play sounds for notifications, the system ignores this property.
 

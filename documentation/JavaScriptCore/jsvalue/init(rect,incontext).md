@@ -20,11 +20,11 @@ Creates a JavaScript representation of the specified rectangle.
 init!(rect: CGRect, inContext context: JSContext!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript object representing the specified rectangle.
 
-#### Discussion
+## Discussion
 
 Converting a rectangle creates a JavaScript object value with fields named `x`, `y`, `width`, and `height`.
 

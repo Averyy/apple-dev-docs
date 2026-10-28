@@ -25,7 +25,7 @@ convenience init?(contentsOf url: URL)
 - (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLParser` object or `nil` if an error occurs.
 

@@ -21,7 +21,7 @@ The data for the user activity wasn’t available.
 NSUserActivityHandoffFailedError
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if the remote device became unavailable.
 

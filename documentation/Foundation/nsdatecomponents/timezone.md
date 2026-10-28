@@ -25,7 +25,7 @@ var timeZone: TimeZone? { get set }
 @property (copy, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 See [Calendars, Date Components, and Calendar Units](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 

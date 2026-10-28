@@ -16,11 +16,11 @@ Cancel command execution
 IOReturn (*Cancel)(IOFireWireLibCommandRef self, IOReturn reason);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

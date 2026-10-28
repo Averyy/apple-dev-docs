@@ -13,11 +13,11 @@
 errno_t ctl_register(struct kern_ctl_reg *userkctl, kern_ctl_ref *kctlref);
 ```
 
-#### Return Value
+## Return Value
 
 0 - Kernel control was registered. EINVAL - The registration structure was not valid. ENOMEM - There was insufficient memory. EEXIST - A controller with that id/unit is already registered.
 
-#### Discussion
+## Discussion
 
 Register a kernel control. This will enable clients to connect to the kernel control using a PF_SYSTEM socket.
 

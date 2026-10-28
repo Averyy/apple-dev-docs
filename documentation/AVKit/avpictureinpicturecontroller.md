@@ -29,7 +29,7 @@ class AVPictureInPictureController
 - [Adopting Picture in Picture in a custom player](./adopting-picture-in-picture-in-a-custom-player.md)
 - [Adopting Picture in Picture for video calls](./adopting-picture-in-picture-for-video-calls.md)
 
-#### Overview
+## Overview
 
 To use Picture in Picture, you need to configure your app to support background audio playback. See [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md) for more details.
 

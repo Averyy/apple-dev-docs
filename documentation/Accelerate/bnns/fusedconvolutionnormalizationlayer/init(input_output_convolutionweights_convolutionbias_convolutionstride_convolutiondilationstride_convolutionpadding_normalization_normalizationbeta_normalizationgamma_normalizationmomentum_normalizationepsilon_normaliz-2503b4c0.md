@@ -43,4 +43,4 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnns/fusedconvolutionnormalizationlayer/init(input:output:convolutionweights:convolutionbias:convolutionstride:convolutiondilationstride:convolutionpadding:normalization:normalizationbeta:normalizationgamma:normalizationmomentum:normalizationepsilon:normalizationactivation:filter-30cwy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnns/fusedconvolutionnormalizationlayer/init%28input:output:convolutionweights:convolutionbias:convolutionstride:convolutiondilationstride:convolutionpadding:normalization:normalizationbeta:normalizationgamma:normalizationmomentum:normalizationepsilon:normalizationactivation:filter-30cwy)*

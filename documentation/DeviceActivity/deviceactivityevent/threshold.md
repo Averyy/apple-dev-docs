@@ -17,7 +17,7 @@ The amount of time to monitor the provided applications, categories, and web dom
 var threshold: DateComponents { get }
 ```
 
-#### Discussion
+## Discussion
 
 Once the activity exceeds the threshold, the system invokes the [`eventDidReachThreshold(_:activity:)`](../deviceactivitymonitor/eventdidreachthreshold%28_,activity%29.md) method of the application extension’s principal class.
 

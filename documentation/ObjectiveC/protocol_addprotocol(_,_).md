@@ -25,7 +25,7 @@ func protocol_addProtocol(_ proto: Protocol, _ addition: Protocol)
 extern void protocol_addProtocol(Protocol *proto, Protocol *addition);
 ```
 
-#### Discussion
+## Discussion
 
 The protocol you want to add to (`proto`) must be under construction—allocated but not yet registered with the Objective-C runtime. The protocol you want to add (`addition`) must be registered already.
 

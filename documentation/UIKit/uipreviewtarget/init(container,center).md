@@ -23,7 +23,7 @@ convenience init(container: UIView, center: CGPoint)
 - (instancetype) initWithContainer:(UIView *) container center:(CGPoint) center;
 ```
 
-#### Return Value
+## Return Value
 
 A new preview target object with the specified container and configuration data.
 

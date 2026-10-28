@@ -15,7 +15,7 @@ The width, in pixels, of the photo component.
 readonly attribute Number photoWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Width of the photo component (as obtained from [`photoSrc`](./photosrc.md) or [`photo`](./photo.md)) in pixels.
 

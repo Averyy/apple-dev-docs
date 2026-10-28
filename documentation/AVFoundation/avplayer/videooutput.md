@@ -26,7 +26,7 @@ var videoOutput: AVPlayerVideoOutput? { get set }
 @property (nonatomic, readwrite, nullable) AVPlayerVideoOutput * videoOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` by default.
 

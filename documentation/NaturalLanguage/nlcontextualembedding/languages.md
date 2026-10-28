@@ -25,7 +25,7 @@ var languages: [NLLanguage] { get }
 @property (copy, readonly) NSArray<NSString *> * languages;
 ```
 
-#### Discussion
+## Discussion
 
 Starting in iOS 17 and macOS 14, the framework supports 27 languages across three models:
 

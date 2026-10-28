@@ -30,7 +30,7 @@ var localizedTermsAndConditionsText: String { get }
 @property (atomic, readonly) NSString * localizedTermsAndConditionsText;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

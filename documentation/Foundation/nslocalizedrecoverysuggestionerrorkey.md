@@ -25,7 +25,7 @@ let NSLocalizedRecoverySuggestionErrorKey: String
 extern NSErrorUserInfoKey const NSLocalizedRecoverySuggestionErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 This string is suitable for displaying as the secondary message in an alert panel.
 

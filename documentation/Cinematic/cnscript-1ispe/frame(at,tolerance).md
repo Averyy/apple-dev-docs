@@ -19,7 +19,7 @@ The closest frame to the given time within the given tolerance.
 final func frame(at time: CMTime, tolerance: CMTime) -> CNScript.Frame?
 ```
 
-#### Return Value
+## Return Value
 
 The closest frame to the time of interest within the given tolerance.
 

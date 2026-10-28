@@ -19,7 +19,7 @@ var includesTextListMarkers: Bool { get set }
 @property BOOL includesTextListMarkers;
 ```
 
-#### Discussion
+## Discussion
 
 Utilizes `NSTextList.includesTextListMarkers` as the default value.
 

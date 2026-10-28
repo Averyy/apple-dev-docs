@@ -29,7 +29,7 @@ var duration: TimeInterval { get set }
 
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Discussion
+## Discussion
 
 This is the expected duration of an action’s animation. The actual time an action takes to complete is modified by the [`speed`](./speed.md) property of the action and the [`speed`](../sknode/speed.md) property of the node on which it executes.
 

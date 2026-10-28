@@ -20,7 +20,7 @@ Writes the layer’s contents to a file at the given URL.
 func export(to url: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the layer cannot be written.
 

@@ -23,11 +23,11 @@ optional func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolb
 - (NSArray<NSString *> *) toolbarSelectableItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of item identifiers, each of which corresponds to an [`NSToolbarItem`](../nstoolbaritem.md) that should display a selection indicator in the specified toolbar.
 
-#### Discussion
+## Discussion
 
 Use this method to return the complete list of toolbar items that support selection. When someone selects one of the returned items, the toolbar automatically displays that item with a visual highlight. The toolbar also places the currently selected item in its [`selectedItemIdentifier`](../nstoolbar/selecteditemidentifier.md) property.
 

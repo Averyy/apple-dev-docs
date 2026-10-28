@@ -22,7 +22,7 @@ func cancelEditing()
 - (void) cancelEditing;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the programmatic equivalent of the user tapping Cancel. The delegate won’t receive the [`eventEditViewController(_:didCompleteWith:)`](../ekeventeditviewdelegate/eventeditviewcontroller%28_,didcompletewith%29.md) message, so you must dismiss the controller after calling this method.
 

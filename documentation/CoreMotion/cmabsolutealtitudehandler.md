@@ -23,7 +23,7 @@ typealias CMAbsoluteAltitudeHandler = (CMAbsoluteAltitudeData?, (any Error)?) ->
 typedef void (^)(CMAbsoluteAltitudeData *, NSError *) CMAbsoluteAltitudeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You pass a block of this type to the altimeter object’s [`startAbsoluteAltitudeUpdates(to:withHandler:)`](./cmaltimeter/startabsolutealtitudeupdates%28to,withhandler%29.md) method when starting the delivery of altitude data.
 

@@ -5,7 +5,7 @@
 
 This function sends a command to the device.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *SendForceFeedbackCommand)(
@@ -13,7 +13,7 @@ HRESULT ( *SendForceFeedbackCommand)(
    FFCommandFlag state );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **state**: Indicates the command being sent. That command can be one of the following:
@@ -42,7 +42,7 @@ HRESULT ( *SendForceFeedbackCommand)(
 
   Indicates that the device’s force-feedback actuators should be disabled. If successful, force-feedback effects are “muted”. Note that time continues to elapse while actuators are off. For example, suppose an effect of five seconds’ duration is started. After one second, actuators are turned off. After two more seconds, actuators are turned back on. The effect should then play for two additional seconds.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

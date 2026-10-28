@@ -20,7 +20,7 @@ Creates a joint limits definition.
 init(weight: Float = 1.0, boneAxis: IKRig.Joint.LimitsDefinition.Axis = .x, minimumAngles: SIMD3<Float> = [-2.0 * .pi, -2.0 * .pi, -2.0 * .pi], maximumAngles: SIMD3<Float> = [2.0 * .pi, 2.0 * .pi, 2.0 * .pi])
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The minimum angles need to be less than the maximum angles.
 

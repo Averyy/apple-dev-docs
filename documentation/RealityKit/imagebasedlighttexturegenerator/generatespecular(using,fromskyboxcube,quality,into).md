@@ -18,7 +18,7 @@ Adds commands for generating an image based light specular texture from a skybox
 func generateSpecular(using commandBuffer: any MTLCommandBuffer, fromSkyboxCube texture: any MTLTexture, quality: TextureSamplingQuality = .low, into destination: any MTLTexture) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If `destination`’s pixel format does not support shader writes on this device, or if a per-mip texture view cannot be created.
 

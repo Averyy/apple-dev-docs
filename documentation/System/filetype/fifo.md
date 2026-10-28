@@ -21,7 +21,7 @@ FIFO (or named pipe)
 static var fifo: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFIFO`.
 

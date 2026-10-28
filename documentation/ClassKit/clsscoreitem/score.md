@@ -23,7 +23,7 @@ var score: Double { get set }
 @property (nonatomic, assign) double score;
 ```
 
-#### Discussion
+## Discussion
 
 Judge the value given against the activity item’s [`maxScore`](./maxscore.md). For example, if a quiz has eight questions, the maximum score might be 8, and the score might be an integer in the range `[0, 8]`.
 

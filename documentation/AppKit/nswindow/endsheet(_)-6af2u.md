@@ -16,7 +16,7 @@ Ends a SwiftUI hosted sheet presentation.
 @preconcurrency func endSheet<V>(_ host: NSWindow.HostingSheetRepresentation<V>) where V : View
 ```
 
-#### Discussion
+## Discussion
 
 If the hosting sheet representation was invalid or no longer presented, no effect happens.
 

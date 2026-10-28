@@ -19,7 +19,7 @@ var alignment: NSTextAlignment { get set }
 @property NSTextAlignment alignment;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be one of the following constants: `NSLeftTextAlignment`, `NSRightTextAlignment`,`NSCenterTextAlignment`, `NSJustifiedTextAlignment`, or `NSNaturalTextAlignment`. The default value is `NSNaturalTextAlignment`. Setting this property while the cell is currently being edited aborts the edits to change the alignment.
 

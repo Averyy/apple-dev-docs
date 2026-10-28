@@ -16,7 +16,7 @@ Determines the best window depth that most closely matches the given properties.
 static func bestDepth(colorSpaceName: NSColorSpaceName, bitsPerSample: Int, bitsPerPixel: Int, isPlanar: Bool) -> (NSWindow.Depth, isExactMatch: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 The window depth that most closely matches the properties this function requests.
 

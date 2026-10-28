@@ -27,7 +27,7 @@ func removeFromSuperview()
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 If the view’s superview is not `nil`, the superview releases the view.
 

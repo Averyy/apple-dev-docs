@@ -19,11 +19,11 @@ func isSessionTargetAMac() -> Bool
 - (BOOL) isSessionTargetAMac;
 ```
 
-#### Return Value
+## Return Value
 
 TRUE only if device service record has Mac entry, FALSE for all else.
 
-#### Discussion
+## Discussion
 
 Tells whether the target device is a Mac by checking its service record.
 

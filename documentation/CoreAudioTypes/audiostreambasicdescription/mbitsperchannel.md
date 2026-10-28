@@ -25,7 +25,7 @@ var mBitsPerChannel: UInt32
 UInt32 mBitsPerChannel;
 ```
 
-#### Discussion
+## Discussion
 
 For example, for linear PCM audio using the [`kAudioFormatFlagsCanonical`](../kaudioformatflagscanonical.md) format flags, calculate the number of bits as follows:
 

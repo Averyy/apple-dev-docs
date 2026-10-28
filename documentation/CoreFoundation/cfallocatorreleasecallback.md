@@ -25,7 +25,7 @@ typealias CFAllocatorReleaseCallBack = (UnsafeRawPointer?) -> Void
 typedef void (*)(const void *) CFAllocatorReleaseCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 A prototype for a function callback that releases the data pointed to by the `info` field. In implementing this function, release (or free) the data you have defined for the allocator context.
 

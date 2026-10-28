@@ -24,7 +24,7 @@ var wantsIncrementalChangeDetails: Bool { get set }
 @property (nonatomic, assign) BOOL wantsIncrementalChangeDetails;
 ```
 
-#### Discussion
+## Discussion
 
 If you have registered a change observer with the shared [`PHPhotoLibrary`](../phphotolibrary.md) object, fetching assets or collections automatically registers your observer to receive information about later changes to the fetch result and about the objects it contains. For a fetch result, change information (a [`PHFetchResultChangeDetails`](../phfetchresultchangedetails.md) object) can include a detailed list of incremental differences from the previous state of the fetch result, such as new photos captured since the original fetch.
 

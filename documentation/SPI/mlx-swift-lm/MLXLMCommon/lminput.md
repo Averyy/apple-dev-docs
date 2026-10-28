@@ -17,7 +17,7 @@ Representation of [`LanguageModel`](./languagemodel.md) input.
 struct LMInput
 ```
 
-#### Overview
+## Overview
 
 This can contain text (tokens), prepared images (`MLXArray`), or other media as needed. [`LMInput`](./lminput.md) is produced by [`UserInputProcessor`](./userinputprocessor.md) in response to [`UserInput`](./userinput.md).
 

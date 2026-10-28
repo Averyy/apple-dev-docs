@@ -22,7 +22,7 @@ weak var delegate: (any NISessionDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<NISessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 An app must set a delegate to receive the peer’s distance and direction information through [`session(_:didUpdate:)`](../nisessiondelegate/session%28_,didupdate%29.md). The [`session(_:didInvalidateWith:)`](../nisessiondelegate/session%28_,didinvalidatewith%29.md) and [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) callbacks notify you when the session invalidated or removed a peer. The system may suspend an interaction session for various reasons (see [`sessionWasSuspended(_:)`](../nisessiondelegate/sessionwassuspended%28_%29.md)), such as when the peer backgrounds the app.
 

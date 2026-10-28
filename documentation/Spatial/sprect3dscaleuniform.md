@@ -21,7 +21,7 @@ Returns a rectangle that results from uniformly scaling with the specified doubl
 static SPRect3D SPRect3DScaleUniform(SPRect3D rect, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from uniformly scaling with the specified double-precision value.
 

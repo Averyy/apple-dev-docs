@@ -11,7 +11,7 @@ Access and change settings with your app while maintaining user privacy and cont
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 
-#### Overview
+## Overview
 
 Managed Settings provides a privacy-preserving way for users to restrict access to certain settings and features on their devices. With the user’s permission, your app can limit media showings, restrict app purchases, lock passcode settings, and configure other device behavior.
 

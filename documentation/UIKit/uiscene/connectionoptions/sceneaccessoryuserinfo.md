@@ -25,7 +25,7 @@ var sceneAccessoryUserInfo: Any? { get }
 
 - [Presenting content on a connected display](../../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 This object can be used to associate data to the scene accessory configuration to be passed to the scene delegate when the scene connects.
 

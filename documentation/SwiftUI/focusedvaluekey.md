@@ -21,7 +21,7 @@ A protocol for identifier types used when publishing and observing focused value
 protocol FocusedValueKey
 ```
 
-#### Overview
+## Overview
 
 Unlike [`EnvironmentKey`](./environmentkey.md), `FocusedValueKey` has no default value requirement, because the default value for a key is always `nil`.
 

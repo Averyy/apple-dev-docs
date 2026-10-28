@@ -25,7 +25,7 @@ protocol AVPlayerItemMetadataOutputPushDelegate : AVPlayerItemOutputPushDelegate
 @protocol AVPlayerItemMetadataOutputPushDelegate <AVPlayerItemOutputPushDelegate>
 ```
 
-#### Overview
+## Overview
 
 This protocol extends the [`AVPlayerItemOutputPushDelegate`](./avplayeritemoutputpushdelegate.md) protocol.
 

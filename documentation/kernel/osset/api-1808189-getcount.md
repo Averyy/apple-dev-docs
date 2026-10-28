@@ -11,7 +11,7 @@ Returns the current number of objects within the set.
 virtual unsigned int getCount() const;
 ```
 
-#### Return Value
+## Return Value
 
 The current number of objects within the set.
 

@@ -19,7 +19,7 @@ var objectValues: [Any] { get }
 @property (copy, readonly) NSArray * objectValues;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 

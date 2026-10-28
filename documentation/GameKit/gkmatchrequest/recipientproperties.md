@@ -31,7 +31,7 @@ var recipientProperties: [GKPlayer : [String : Any]]? { get set }
 - [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
 - [Troubleshooting matchmaking rules using metrics](../troubleshooting-matchmaking-rules-using-metrics.md)
 
-#### Discussion
+## Discussion
 
 Matchmaking rules may use these properties to improve matchmaking results and reduce wait times. You set rules in App Store Connect to find players that best match one or more of the recipient’s properties in a reasonable amount of time by loosening the criteria over time.
 

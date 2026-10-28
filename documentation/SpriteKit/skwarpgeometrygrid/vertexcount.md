@@ -25,7 +25,7 @@ var vertexCount: Int { get }
 @property (nonatomic, readonly) NSInteger vertexCount;
 ```
 
-#### Discussion
+## Discussion
 
 The number of vertices is the same as `(```numberOfColumns`` `+ 1) * (```numberOfRows`` `+ 1)`.
 

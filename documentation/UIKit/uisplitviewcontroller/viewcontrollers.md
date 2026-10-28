@@ -23,7 +23,7 @@ var viewControllers: [UIViewController] { get set }
 @property (nonatomic, copy) NSArray<__kindof UIViewController *> * viewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 When the split view interface is expanded, this property contains two or three view controllers depending on the interface’s [`style`](./style-swift.property.md). The first view controller in the array is the primary view controller. It’s followed by the supplementary (if present) and then the secondary view controller.
 

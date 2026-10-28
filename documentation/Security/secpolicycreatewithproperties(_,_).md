@@ -29,7 +29,7 @@ SecPolicyRefSecPolicyCreateWithProperties(CFTypeRef policyIdentifier, CFDictiona
 
 - [Creating a Trust Object](./creating-a-trust-object.md)
 
-#### Return Value
+## Return Value
 
 A new policy, or `NULL` if the policy could not be created.
 

@@ -19,7 +19,7 @@ func AudioServicesPlaySystemSound(_ systemSoundID: SystemSoundID, spatialExperie
 
 - [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
-#### Discussion
+## Discussion
 
 The system sound has this spatial experience for the duration of its playback and cannot change mid-playback.
 

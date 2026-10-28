@@ -61,7 +61,7 @@ init<R>(_ key: String) where Value == R?, R : RawRepresentable, R.RawValue == In
 init<R>(_ key: String) where Value == R?, R : RawRepresentable, R.RawValue == String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to nil if there is no restored value
 

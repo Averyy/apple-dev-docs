@@ -21,7 +21,7 @@ Calculates the double-precision vector test limit using the specified stride.
 extern void vDSP_vlimD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vlim`](./vdsp_vlim.md), except for the types of vectors `A`, `B`, `C`, and `D`.
 

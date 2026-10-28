@@ -19,7 +19,7 @@ func trackEvents(matching mask: NSEvent.EventTypeMask, timeout: TimeInterval, mo
 - (void) trackEventsMatchingMask:(NSEventMask) mask timeout:(NSTimeInterval) timeout mode:(NSRunLoopMode) mode handler:(void (^)(NSEvent *event, BOOL *stop)) trackingHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in a tracking loop to get pressure events when you add [`pressure`](../nsevent/eventtypemask/pressure.md) to the event mask. This method returns when tracking terminates.
 

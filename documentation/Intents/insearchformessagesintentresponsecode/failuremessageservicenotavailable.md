@@ -23,7 +23,7 @@ case failureMessageServiceNotAvailable
 INSearchForMessagesIntentResponseCodeFailureMessageServiceNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 You might use this code if searches occur on a remote server and the network is unavailable.
 

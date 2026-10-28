@@ -5,7 +5,7 @@
 
 Add hints, spoilers, and solutions to a page to help teach the material.
 
-#### Overview
+## Overview
 
 Learners sometimes become stuck when working through a challenge or learning assessment. Try to anticipate where learners are likely to become stuck when going through your playground book, and provide hints to help them.
 
@@ -13,7 +13,7 @@ Hints are disclosed after the learner taps the Hint button in a page’s live vi
 
 ![A screenshot highlighting the Hint button in the bottom-right corner of a playground page’s live view.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-1@2x.png)
 
-##### Add hints by using a property list
+### Add hints by using a property list
 
 Add hints to your playground page by creating a property list at the following path, alongside the rest of the resources for the page:
 
@@ -21,7 +21,7 @@ Add hints to your playground page by creating a property list at the following p
 
 The root key for the hints property list is named `Hints`, and it must contain an array of dictionaries. Hints are shown in Swift Playgrounds in the same order as they appear in this array.
 
-##### Add keys to the dictionaries
+### Add keys to the dictionaries
 
 Add the following keys in each dictionary in the hints array:
 
@@ -35,7 +35,7 @@ Don’t include both the `Content` and `FileReference` keys in the same dictiona
 
 You can use markup to format hint text. For more information, see [Markup Formatting Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497).
 
-##### Create hints for various contexts
+### Create hints for various contexts
 
 Create hints, spoilers, and solutions to suit the needs of each of your playground pages. The example below shows each of the forms a hint can take.
 

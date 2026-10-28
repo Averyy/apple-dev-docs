@@ -15,7 +15,7 @@ Check if a buffer is marked for write through disk caches.
 int buf_fua(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if buffer is marked for write-through, 0 if not.
 

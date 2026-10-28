@@ -11,11 +11,11 @@ virtual UInt32 getFormatCapacities(
  UInt32capacitiesMaxCount) const;
 ```
 
-#### Return Value
+## Return Value
 
 Actual number of capacity values copied to the buffer, or if no buffer is given, the total number of capacity values available.
 
-#### Overview
+## Overview
 
 Ask the driver to report the feasible formatting capacities for the inserted media (in bytes). This routine fills the caller's buffer, up to the maximum count specified if the real number of capacities would overflow the buffer. The return value indicates the actual number of capacities copied to the buffer.
 

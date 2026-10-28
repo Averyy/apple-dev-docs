@@ -25,7 +25,7 @@ var autoplayLooped: Bool { get set }
 @property (nonatomic, assign) BOOL autoplayLooped;
 ```
 
-#### Discussion
+## Discussion
 
 If the property value is [`true`](../../Swift/true.md), then the audio starts playing as soon as the node is added to the scene, and repeats after it completes. If [`false`](../../Swift/false.md), then the audio node’s content never plays automatically. It must be explicitly scheduled using the scene’s audio engine. The default value is [`true`](../../Swift/true.md).
 

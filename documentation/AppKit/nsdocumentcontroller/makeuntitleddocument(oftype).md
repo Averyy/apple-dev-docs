@@ -19,7 +19,7 @@ func makeUntitledDocument(ofType typeName: String) throws -> NSDocument
 - (NSDocument *) makeUntitledDocumentOfType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The document type is specified by `typeName`. If not successful, the method returns `nil` after setting `outError` to point to an `NSError` object that encapsulates the reason why a new untitled document could not be instantiated. The default implementation of this method calls [`documentClass(forType:)`](./documentclass%28fortype%29.md) to find out the class of document to instantiate, then allocates and initializes a document by sending it [`init(type:)`](../nsdocument/init%28type%29.md).
 

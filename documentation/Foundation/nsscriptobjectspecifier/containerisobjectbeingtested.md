@@ -20,7 +20,7 @@ var containerIsObjectBeingTested: Bool { get set }
 @property BOOL containerIsObjectBeingTested;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s container specifier is `nil` and `flag` is [`true`](../../Swift/true.md), sets the receiver’s container to be an object involved in a filter reference (for example, `whose color is blue`). If the receiver’s container specifier is `nil` and `flag` is [`false`](../../Swift/false.md), sets the receiver’s container to be the top-level object.
 

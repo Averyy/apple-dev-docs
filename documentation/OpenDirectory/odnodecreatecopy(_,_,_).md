@@ -20,11 +20,11 @@ func ODNodeCreateCopy(_ allocator: CFAllocator!, _ node: ODNodeRef!, _ error: Un
 extern ODNodeRefODNodeCreateCopy(CFAllocatorRef allocator, ODNodeRef node, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `inNode`.
 
-#### Discussion
+## Discussion
 
 The copy includes remote credentials used for proxy and node authentication.
 

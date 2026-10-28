@@ -24,7 +24,7 @@ func padTensor(_ tensor: MPSGraphTensor, with paddingMode: MPSGraphPaddingMode, 
 - (MPSGraphTensor *) padTensor:(MPSGraphTensor *) tensor withPaddingMode:(MPSGraphPaddingMode) paddingMode leftPadding:(MPSShape *) leftPadding rightPadding:(MPSShape *) rightPadding constantValue:(double) constantValue name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatIntersection(SPSize3DFloat size, SPSize3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A size structure that is the intersection of the two sizes.
 
-#### Discussion
+## Discussion
 
 Returns the intersection of the two sizes.
 

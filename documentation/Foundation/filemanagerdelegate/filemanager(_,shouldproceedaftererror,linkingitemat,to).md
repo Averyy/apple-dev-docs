@@ -25,11 +25,11 @@ optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError er
 - (BOOL) fileManager:(NSFileManager *) fileManager shouldProceedAfterError:(NSError *) error linkingItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation should proceed or [`false`](../../Swift/false.md) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The file manager calls this method when there is a problem creating a hard link to the item at the specified location. If you return [`true`](../../Swift/true.md), the file manager continues creating any other links associated with the current operation and ignores the error.
 

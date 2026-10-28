@@ -26,7 +26,7 @@ var additionalScopes: String { get set }
 - [Creating an encrypted embedded assertion](../creating-an-encrypted-embedded-assertion.md)
 - [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
-#### Discussion
+## Discussion
 
 The base value is `openid offline_access`. The system appends any additional values. The default additional scope is `urn:apple:platformsso`.
 

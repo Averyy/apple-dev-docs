@@ -17,7 +17,7 @@ Returns the indices that sort the array.
 func argSort(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argSort(_:axis:stream:)`](./argsort%28_,axis,stream%29.md)

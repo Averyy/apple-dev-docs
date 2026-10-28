@@ -25,7 +25,7 @@ var fileHandleForWriting: FileHandle { get }
 @property (retain, readonly) NSFileHandle * fileHandleForWriting;
 ```
 
-#### Discussion
+## Discussion
 
 This object is automatically deallocated when the receiver is deallocated.
 

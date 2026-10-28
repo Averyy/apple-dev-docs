@@ -20,7 +20,7 @@ class SCShareableContent
 @interface SCShareableContent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`displays`](./scshareablecontent/displays.md), [`windows`](./scshareablecontent/windows.md), and [`applications`](./scshareablecontent/applications.md) properties to create a [`SCContentFilter`](./sccontentfilter.md) object that specifies what display content to capture. You apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to only the content matching your filter.
 

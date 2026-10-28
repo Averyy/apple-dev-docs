@@ -16,7 +16,7 @@ Sets the second UV coordinate set for the rendered output mesh.
 void output::setUV2(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the second texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV2 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

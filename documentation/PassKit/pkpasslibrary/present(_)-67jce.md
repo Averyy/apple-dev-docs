@@ -25,7 +25,7 @@ func present(_ pass: PKPaymentPass)
 - (void) presentPaymentPass:(PKPaymentPass *) pass;
 ```
 
-#### Discussion
+## Discussion
 
 You can use [`present(_:)`](./present%28_%29-67jce.md)  to present your payment pass for use in-store.  Your app must have the proper entitlement to see the payment pass that you present. Therefore, this method is mostly relevant to a bank or merchant app that presents its own payment method for use in-store.
 

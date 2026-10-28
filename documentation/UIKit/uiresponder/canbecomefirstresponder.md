@@ -23,11 +23,11 @@ var canBecomeFirstResponder: Bool { get }
 @property (nonatomic, readonly) BOOL canBecomeFirstResponder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the responder can become the first responder; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`false`](../../Swift/false.md) by default. Subclasses must override this method and return [`true`](../../Swift/true.md) to be able to become first responder.
 

@@ -28,11 +28,11 @@ nonisolated func rotation3DEffect(_ angle: Angle, axis: RotationAxis3D, anchor: 
 nonisolated func rotation3DEffect(_ angle: Angle, axis: RotationAxis3D, anchor: UnitPoint3D = .center) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with rotated content.
 
-#### Discussion
+## Discussion
 
 > **Note**: During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achieve more natural animations, consider using [`rotation3DEffect(_:anchor:)`](./rotation3deffect%28_,anchor%29.md)
 

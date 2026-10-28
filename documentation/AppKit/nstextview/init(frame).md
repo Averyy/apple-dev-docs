@@ -19,11 +19,11 @@ init(frame frameRect: NSRect)
 - (instancetype) initWithFrame:(NSRect) frameRect;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text view.
 
-#### Discussion
+## Discussion
 
 This method creates the entire collection of objects associated with a text view—its text container, layout manager, and text storage—and invokes [`init(frame:textContainer:)`](./init%28frame,textcontainer%29.md).
 

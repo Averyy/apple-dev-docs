@@ -16,7 +16,7 @@ convenience init(plistObject object: Any)
 + (instancetype) attachmentWithPlistObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 The content of the attachment is an XML property list representation of the provided object with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) value of `"com.apple.xml-property-list"`.
 

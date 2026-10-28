@@ -15,7 +15,7 @@ Aborts all tasks in a logical unit.
 virtual kern_return_t UserAbortTaskSetRequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t clear previously established conditions, such as `MODE SELECT` parameters, reservations, and autocontingent allegiance (ACA) attributes.
 

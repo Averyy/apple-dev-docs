@@ -10,7 +10,7 @@ virtual IOUSBController *GetBus(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns a pointer to the IOUSBController object for the device
 

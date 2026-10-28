@@ -5,7 +5,7 @@
 
 Atoms that describe and define a track’s media type and sample data.
 
-#### Overview
+## Overview
 
 The media atom contains information that specifies:
 

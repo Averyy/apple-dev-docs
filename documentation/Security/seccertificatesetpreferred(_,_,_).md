@@ -19,7 +19,7 @@ func SecCertificateSetPreferred(_ certificate: SecCertificate?, _ name: CFString
 OSStatus SecCertificateSetPreferred(SecCertificateRef certificate, CFStringRef name, CFArrayRef keyUsage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

@@ -5,7 +5,7 @@
 
 Observe audio session notifications to ensure that your app responds appropriately to route changes.
 
-#### Overview
+## Overview
 
 An important responsibility of [`AVAudioSession`](./avaudiosession.md) is managing audio route changes. A route change occurs when the system adds or removes an audio input or output. Route changes occur for several reasons, including a user plugging in a pair of headphones, connecting a Bluetooth LE headset, or unplugging a USB audio interface. When these changes occur, the audio session reroutes audio signals accordingly and broadcasts a notification containing the details of the change to any registered observers.
 
@@ -13,7 +13,7 @@ An important behavior related to route changes occurs when a user plugs in or re
 
 > **Note**:  [`AVPlayer`](../AVFoundation/avplayer.md) monitors your app’s audio session and responds appropriately to route changes. When users connect headphones, playback continues as expected. When they disconnect their headphones, playback is automatically paused. To observe this player behavior, key-value observe the player’s [`rate`](../AVFoundation/avplayer/rate.md) property so that you can update your user interface as the player pauses playback.
 
-##### Observe route changes
+### Observe route changes
 
 You can directly observe route change notifications posted by the audio session. This might be useful if you want the system to notify you when a user connects headphones so you can present an icon or message in the player interface.
 
@@ -34,7 +34,7 @@ func handleRouteChange(notification: Notification) {
 }
 ```
 
-##### Respond to route changes
+### Respond to route changes
 
 The posted [`Notification`](../Foundation/notification.md) object contains a populated user-information dictionary providing the details of the route change. Determine the reason for this change by retrieving the [`AVAudioSession.RouteChangeReason`](./avaudiosession/routechangereason.md) value from the dictionary. When a user connects a new device, the reason is [`AVAudioSession.RouteChangeReason.newDeviceAvailable`](./avaudiosession/routechangereason/newdeviceavailable.md), and when a user removes a device, the reason is [`AVAudioSession.RouteChangeReason.oldDeviceUnavailable`](./avaudiosession/routechangereason/olddeviceunavailable.md).
 

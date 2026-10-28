@@ -23,7 +23,7 @@ var synchronizationTimeout: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval synchronizationTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the duration, in seconds, that the [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) will attempt to synchronize with a timecode source before timing out if synchronization cannot be achieved. If this threshold is exceeded, the synchronization status updates to reflect a timeout, and your [`timecodeGenerator(_:transitionedTo:for:)`](../avcapturetimecodegeneratordelegate/timecodegenerator%28_,transitionedto,for%29.md) delegate method fires, informing you of the event. The default value is 15 seconds.
 

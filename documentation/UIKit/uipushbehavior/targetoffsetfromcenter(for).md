@@ -23,7 +23,7 @@ func targetOffsetFromCenter(for item: any UIDynamicItem) -> UIOffset
 - (UIOffset) targetOffsetFromCenterForItem:(id<UIDynamicItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The offset, from the center of the dynamic item, at which the push behavior’s force vector is applied. If you haven’t set a target offset, returns the center of the dynamic item.
 

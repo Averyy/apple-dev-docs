@@ -20,7 +20,7 @@ A collection of spatial input events that target a specific view.
 struct SpatialEventCollection
 ```
 
-#### Overview
+## Overview
 
 You receive a structure of this type as an input to the [`onChanged(_:)`](./gesture/onchanged%28_%29.md) or [`onEnded(_:)`](./gesture/onended%28_%29.md) method of a [`SpatialEventGesture`](./spatialeventgesture.md). The structure contains a collection of [`SpatialEventCollection.Event`](./spatialeventcollection/event.md) values that correspond to ongoing input events. You can look up a specific event in the collection by its [`id`](./spatialeventcollection/event/id-swift.property.md) value or iterate over all events in the collection to apply logic depending on the event’s state.
 

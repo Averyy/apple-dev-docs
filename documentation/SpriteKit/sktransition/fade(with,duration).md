@@ -41,7 +41,7 @@ class func fade(with color: NSColor, duration sec: TimeInterval) -> SKTransition
 + (SKTransition *) fadeWithColor:(NSColor *) color duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

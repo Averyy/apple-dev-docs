@@ -25,7 +25,7 @@ func skipCurrentEvent()
 - (void) skipCurrentEvent;
 ```
 
-#### Discussion
+## Discussion
 
 Note that coinciding events will NOT be skipped. This results in AVPlayerInterstitialEventMonitorCurrentEventSkippedNotification being posted. Has no effect while the currentEvent is nil.
 

@@ -19,7 +19,7 @@ var presentationStyle: NSMenu.PresentationStyle { get set }
 @property NSMenuPresentationStyle presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t respected if the menu is the main menu of the app.
 

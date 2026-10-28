@@ -13,7 +13,7 @@
 #define kIOPropertyExternalKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of External for the key kIOPropertyPhysicalInterconnectLocationKey. If the device is connected to an external bus, this key should be set.
 

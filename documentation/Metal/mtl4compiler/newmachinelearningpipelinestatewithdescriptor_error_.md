@@ -20,7 +20,7 @@ Creates a new ML pipeline state with descriptor.
 - (id<MTL4MachineLearningPipelineState>) newMachineLearningPipelineStateWithDescriptor:(MTL4MachineLearningPipelineDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A machine learning pipeline state if operation is successful, otherwise `nil`.
 

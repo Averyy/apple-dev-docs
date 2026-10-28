@@ -19,11 +19,11 @@ func duplicate() throws -> NSDocument
 - (NSDocument *) duplicateAndReturnError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The new document if duplication is successful; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 The new document returned doesn’t yet have a value to return from [`fileURL`](./fileurl.md).
 

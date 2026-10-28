@@ -19,7 +19,7 @@ The unique name for the Spotlight search tool.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 

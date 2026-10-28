@@ -5,7 +5,7 @@
 
 Create reports for external purchase tokens that result in completed transactions, including one-time charges, subscriptions and renewals, and refunds.
 
-#### Overview
+## Overview
 
 If your app uses the [External Purchase](../StoreKit/external-purchase.md) or [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md) APIs to get tokens, you’re required to report all tokens and all applicable transactions.
 
@@ -23,7 +23,7 @@ For each transaction, add one line item to the line items array in your report. 
 - [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md) - for transactions and events that involve subscriptions
 - [`RefundLineItem`](./refundlineitem.md) — for refunds
 
-##### Create line items for one-time charges
+### Create line items for one-time charges
 
 Use a [`OneTimeBuyLineItem`](./onetimebuylineitem.md) object to specify a one-time charge in the `lineItems` array of the [`ExternalPurchaseReport`](./externalpurchasereport.md).
 
@@ -52,7 +52,7 @@ The following example is an external purchase report with a single one-time char
 }
 ```
 
-##### Create line items for subscription events and transactions
+### Create line items for subscription events and transactions
 
 Use a [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md) object to specify a subscription-related transaction or event in the `lineItems` array of the [`ExternalPurchaseReport`](./externalpurchasereport.md). The subscription events to report include subscription starts, renewals, changes to the subscription, and payments. Report subscription events even if they don’t include a payment. For more information, see [`subscriptionEvent`](./subscriptionevent.md).
 
@@ -115,7 +115,7 @@ The following example is an external purchase report for a subscription renewal:
 }
 ```
 
-##### Create line items for refunds
+### Create line items for refunds
 
 Use a [`RefundLineItem`](./refundlineitem.md) object to specify a refund transaction in the `lineItems` array of the [`ExternalPurchaseReport`](./externalpurchasereport.md). Refunds include a `referenceLineItemId` that contains the `lineItemId` of a previously submitted transaction, to which the refund applies.
 

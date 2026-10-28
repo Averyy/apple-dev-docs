@@ -15,11 +15,11 @@ Destroys the specified target.
 virtual kern_return_t UserDestroyTargetForID(SCSITargetIdentifier targetID);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of target removal. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension calls this method to remove the target with the specified `targetID`.
 

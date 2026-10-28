@@ -21,7 +21,7 @@ nonisolated
 static func == (lhs: ShapeResource, rhs: ShapeResource) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two shapes are equal.
 

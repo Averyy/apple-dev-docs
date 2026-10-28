@@ -23,7 +23,7 @@ case responsive
 UIPrintRenderingQualityResponsive
 ```
 
-#### Discussion
+## Discussion
 
 Use this option if you determine that rendering at the best quality using [`UIPrintRenderingQuality.best`](./best.md) reduces the responsiveness of the user interface.
 

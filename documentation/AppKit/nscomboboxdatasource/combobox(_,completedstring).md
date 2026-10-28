@@ -20,11 +20,11 @@ optional func comboBox(_ comboBox: NSComboBox, completedString string: String) -
 - (NSString *) comboBox:(NSComboBox *) comboBox completedString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The first complete string from the items in the combo box’s pop-up list that starts with the string in `uncompletedString`.
 
-#### Discussion
+## Discussion
 
 An `NSComboBox` object uses this method to perform incremental—or “smart”—searches when the user types into the text field.  As the user types in the text field, the receiver uses this method to search for items from the pop-up list that start with what the user has typed. The receiver adds the new text to the end of the field and selects the new text, so when the user types another character, it replaces the new text.
 

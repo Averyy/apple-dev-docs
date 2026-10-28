@@ -25,7 +25,7 @@ func method_getReturnType(_ m: Method, _ dst: UnsafeMutablePointer<CChar>, _ dst
 extern void method_getReturnType(Method m, char *dst, size_t dst_len);
 ```
 
-#### Discussion
+## Discussion
 
 The method’s return type string is copied to `dst`. `dst` is filled as if `strncpy(dst, parameter_type, dst_len)` were called.
 

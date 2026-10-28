@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, viewForHeaderInSection section
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Return Value
+## Return Value
 
 A [`UILabel`](../uilabel.md), [`UIImageView`](../uiimageview.md), or custom view to display at the top of the specified section.
 
-#### Discussion
+## Discussion
 
 If you implement this method but don’t implement [`tableView(_:heightForHeaderInSection:)`](./tableview%28_,heightforheaderinsection%29.md), the table view calculates the height automatically, or uses the value of [`sectionHeaderHeight`](../uitableview/sectionheaderheight.md) if set.
 

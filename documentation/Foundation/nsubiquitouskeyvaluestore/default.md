@@ -25,7 +25,7 @@ class var `default`: NSUbiquitousKeyValueStore { get }
 @property (class, strong, readonly) NSUbiquitousKeyValueStore * defaultStore;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to access the shared iCloud key-value store tied to your app and the current person. You must use this object to get and set stored values.
 

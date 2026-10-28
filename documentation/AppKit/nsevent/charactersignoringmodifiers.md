@@ -19,7 +19,7 @@ var charactersIgnoringModifiers: String? { get }
 @property (copy, readonly, nullable) NSString * charactersIgnoringModifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if accessed on a non-key event.
 

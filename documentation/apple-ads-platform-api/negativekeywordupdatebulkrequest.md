@@ -15,11 +15,11 @@ A bulk request to update multiple negative keywords.
 object NegativeKeywordUpdateBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordUpdateBulkRequest` object allows updating multiple negative keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

@@ -17,7 +17,7 @@ case none
 NSTableViewSelectionHighlightStyleNone
 ```
 
-#### Discussion
+## Discussion
 
 Displays no highlight style at all.
 

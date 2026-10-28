@@ -23,7 +23,7 @@ struct ENActivityFlags
 enum ENActivityFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This symbol is available in iOS 12.5, and in iOS 13.6 and later.
 

@@ -25,7 +25,7 @@ func CFRunLoopAddObserver(_ rl: CFRunLoop!, _ observer: CFRunLoopObserver!, _ mo
 extern void CFRunLoopAddObserver(CFRunLoopRef rl, CFRunLoopObserverRef observer, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 A run loop observer can be registered in only one run loop at a time, although it can be added to multiple run loop modes within that run loop.
 

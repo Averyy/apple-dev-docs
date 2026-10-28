@@ -21,11 +21,11 @@ nonisolated
 func scrollDismissesKeyboard(_ mode: ScrollDismissesKeyboardMode) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified keyboard dismissal mode.
 
-#### Discussion
+## Discussion
 
 You use this modifier to customize how scrollable content interacts with the software keyboard. For example, you can specify a value of [`immediately`](../scrolldismisseskeyboardmode/immediately.md) to indicate that you would like scrollable content to immediately dismiss the keyboard if present when a scroll drag gesture begins.
 

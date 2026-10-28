@@ -20,7 +20,7 @@ func awakeFromBundle()
 - (void) awakeFromBundle;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends this message to the action object when all objects in its bundle have been unarchived. Use this method to perform setup tasks such as adding the action object as an observer of notifications, dynamically establishing bindings, and dynamically setting targets and actions.
 

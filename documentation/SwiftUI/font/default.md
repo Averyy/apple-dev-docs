@@ -21,7 +21,7 @@ The effective SwiftUI font used in any given environment.
 static var `default`: Font { get }
 ```
 
-#### Discussion
+## Discussion
 
 The font specified by environment, preferring first any developer specified font, via [`font`](../environmentvalues/font.md), then any framework specified font, and finally the default SwiftUI font.
 

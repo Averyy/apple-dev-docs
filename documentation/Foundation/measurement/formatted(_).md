@@ -23,11 +23,11 @@ func formatted<S>(_ style: S) -> S.FormatOutput where S : FormatStyle, S.FormatI
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the provided style.
 
-#### Discussion
+## Discussion
 
 Use the [`formatted(_:)`](./formatted%28_%29.md) method to create a string representation of a measurement using a custom measurement format style. You can specify the width of the unit name, the numeric formatting of the value, and the intended usage type of the measurement. You can use the [`Measurement.FormatStyle`](./formatstyle.md) static factory method `measurement(width:usage:numberFormat:)` to create a custom format style as a parameter to the method, such as in the following example:
 

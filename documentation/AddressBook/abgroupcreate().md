@@ -40,7 +40,7 @@ extern ABRecordRefABGroupCreate();
 extern ABGroupRefABGroupCreate();
 ```
 
-#### Return Value
+## Return Value
 
 A newly created ABGroupobject. You are responsible for releasing this object.
 

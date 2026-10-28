@@ -27,7 +27,7 @@ struct NavigationSplitView<Sidebar, Content, Detail> where Sidebar : View, Conte
 - [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
 - [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
 
-#### Overview
+## Overview
 
 You create a navigation split view with two or three columns, and typically use it as the root view in a [`Scene`](./scene.md). People choose one or more items in a leading column to display details about those items in subsequent columns.
 
@@ -78,7 +78,7 @@ You can also embed a [`NavigationStack`](./navigationstack.md) in a column. Tapp
 
 On watchOS and tvOS, and with narrow sizes like on iPhone or on iPad in Slide Over, the navigation split view collapses all of its columns into a stack, and shows the last column that displays useful information. For example, the three-column example above shows the list of departments to start, the employees in the department after someone selects a department, and the employee details when someone selects an employee. For rows in a list that have [`NavigationLink`](./navigationlink.md) instances, the list draws disclosure chevrons while in the collapsed state.
 
-##### Control column visibility
+### Control column visibility
 
 You can programmatically control the visibility of navigation split view columns by creating a [`State`](./state.md) value of type [`NavigationSplitViewVisibility`](./navigationsplitviewvisibility.md). Then pass a [`Binding`](./binding.md) to that state to the appropriate initializer — such as [`init(columnVisibility:sidebar:detail:)`](./navigationsplitview/init%28columnvisibility,sidebar,detail%29.md) for two columns, or the [`init(columnVisibility:sidebar:content:detail:)`](./navigationsplitview/init%28columnvisibility,sidebar,content,detail%29.md) for three columns.
 
@@ -102,7 +102,7 @@ var body: some View {
 
 The split view ignores the visibility control when it collapses its columns into a stack.
 
-##### Collapsed split views
+### Collapsed split views
 
 At narrow size classes, such as on iPhone or Apple Watch, a navigation split view collapses into a single stack. Typically SwiftUI automatically chooses the view to show on top of this single stack, based on the content of the split view’s columns.
 
@@ -123,7 +123,7 @@ var body: some View {
 }
 ```
 
-##### Customize a split view
+### Customize a split view
 
 To specify a preferred column width in a navigation split view, use the [`navigationSplitViewColumnWidth(_:)`](./view/navigationsplitviewcolumnwidth%28_%29.md) modifier. To set minimum, maximum, and ideal sizes for a column, use [`navigationSplitViewColumnWidth(min:ideal:max:)`](./view/navigationsplitviewcolumnwidth%28min,ideal,max%29.md). You can specify a different modifier in each column. The navigation split view does its best to accommodate the preferences that you specify, but might make adjustments based on other constraints.
 

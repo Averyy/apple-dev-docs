@@ -21,7 +21,7 @@ Initializes and runs the widget bundle.
 @preconcurrency static func main()
 ```
 
-#### Overview
+## Overview
 
 Because you precede your [`WidgetBundle`](../widgetbundle.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget bundle’s `main()` method to launch the widget bundle. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 

@@ -23,7 +23,7 @@ optional func cameraDevice(_ camera: ICCameraDevice, didCompleteDeleteFilesWithE
 - (void) cameraDevice:(ICCameraDevice *) camera didCompleteDeleteFilesWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Initiate a delete operation using [`requestDeleteFiles(_:)`](../iccameradevice/requestdeletefiles%28_%29.md).
 

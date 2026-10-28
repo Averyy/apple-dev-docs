@@ -19,7 +19,7 @@ var hasDestructiveAction: Bool { get set }
 @property BOOL hasDestructiveAction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of `hasDestructiveAction` is `false`. Setting this to `true` allows the system to guard a destructive-action button against accidental presses, and can give the button a special appearance in certain contexts to caution against unintentional use.
 

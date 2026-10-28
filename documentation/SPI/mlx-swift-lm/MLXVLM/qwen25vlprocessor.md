@@ -17,7 +17,7 @@ Qwen2.5VL VLM `UserInputProcessor`.
 struct Qwen25VLProcessor
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with [`Qwen25VL`](./qwen25vl.md) and is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

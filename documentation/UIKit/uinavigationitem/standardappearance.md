@@ -24,7 +24,7 @@ var standardAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * standardAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When the navigation bar displays the current navigation item, the appearance settings in this property override the settings provided by the [`standardAppearance`](../uinavigationbar/standardappearance.md) property of [`UINavigationBar`](../uinavigationbar.md).
 

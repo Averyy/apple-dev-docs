@@ -22,7 +22,7 @@ init(attributedSelectedText selectedText: NSAttributedString?, contextBefore: NS
 - (instancetype) initWithAttributedSelectedText:(NSAttributedString *) selectedText contextBefore:(NSAttributedString *) contextBefore contextAfter:(NSAttributedString *) contextAfter markedText:(NSAttributedString *) markedText selectedRangeInMarkedText:(NSRange) selectedRangeInMarkedText;
 ```
 
-#### Discussion
+## Discussion
 
 The `attributedSelectedText`, `contextBefore`, and `contextAfter` parameters represent the same ranges as their counterparts in [`init(selectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](./init%28selectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext%29.md), and carry the same requirements, with the addition of text formatting and style attributes.
 

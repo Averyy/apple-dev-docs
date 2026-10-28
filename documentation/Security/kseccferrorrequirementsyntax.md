@@ -20,7 +20,7 @@ let kSecCFErrorRequirementSyntax: CFString
 extern CFStringRef const kSecCFErrorRequirementSyntax;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when a call to the [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](./secrequirementcreatewithstringanderrors%28_,_,_,_%29.md) function results in a compilation error during the processing of the code requirement string.
 

@@ -5,7 +5,7 @@
 
 Find any available GPU, submit work to it with command buffers, suspend work, and coordinate between multiple GPUs.
 
-#### Overview
+## Overview
 
 You can use any available GPU’s [`MTLDevice`](./mtldevice.md) instance in addition to the default instance that [`MTLCreateSystemDefaultDevice()`](./mtlcreatesystemdefaultdevice%28%29.md) returns. For each device instance, get its [`MTLCommandQueue`](./mtlcommandqueue.md) instance, and create one or more [`MTLCommandBuffer`](./mtlcommandbuffer.md) instances to send work to the GPU.
 

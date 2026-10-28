@@ -26,7 +26,7 @@ func setRate(_ rate: Float, time itemTime: CMTime, atHostTime hostClockTime: CMT
 - (void) setRate:(float) rate time:(CMTime) itemTime atHostTime:(CMTime) hostClockTime;
 ```
 
-#### Discussion
+## Discussion
 
 This method adjusts the current item’s timebase so that the time in `itemTime` is in sync with the time in `hostClockTime`. Thus, if `hostClockTime` specifies a time in the past, the item’s timebase is adjusted to make it appear as if the item has been running at the specified rate since `itemTime`. And if `hostClockTime` specifies a time in the future, playback is adjusted backward (if possible) so that the value in `itemTime` occurs at the precise moment the host’s clock reaches the value in `hostClockTime`. If there is no content to play before the time specified by `itemTime`, playback holds until the two times come into sync.
 

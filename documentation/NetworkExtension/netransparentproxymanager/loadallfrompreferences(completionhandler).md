@@ -23,7 +23,7 @@ class func loadAllFromPreferences() async throws -> [NETransparentProxyManager]
 + (void) loadAllFromPreferencesWithCompletionHandler:(void (^)(NSArray<NETransparentProxyManager *> *managers, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method asychronously reads all previously-saved transparent proxy configurations associated with the calling app.
 

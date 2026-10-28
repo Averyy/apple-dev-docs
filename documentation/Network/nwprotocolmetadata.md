@@ -21,7 +21,7 @@ The abstract superclass for specifying metadata about a network protocol.
 class NWProtocolMetadata
 ```
 
-#### Overview
+## Overview
 
 You can use metadata when sending and receiving messages, as well as when inspecting connection properties.
 

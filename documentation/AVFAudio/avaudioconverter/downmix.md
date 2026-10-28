@@ -25,7 +25,7 @@ var downmix: Bool { get set }
 @property (nonatomic) BOOL downmix;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to `false`, indicating that the framework remaps the channels. When `true`, and channel remapping is necessary, the framework mixes the channels.
 

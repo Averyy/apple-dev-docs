@@ -22,7 +22,7 @@ var maximumFramesPerSecond: Int { get }
 @property (readonly) NSInteger maximumFramesPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the value of this property can be up to `120` for devices with ProMotion displays.
 

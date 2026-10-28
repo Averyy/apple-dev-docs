@@ -20,7 +20,7 @@ class ITLibPlaylist
 @interface ITLibPlaylist : ITLibMediaEntity
 ```
 
-#### Overview
+## Overview
 
 A *playlist* is a collection of media items (tracks). The user creates and organizes playlists manually, or iTunes automatically generates them. Playlists are media entities. Each contains a unique identifier and a set of properties. Playlists can form a hierarchical structure. In those cases, the [`parentID`](./itlibplaylist/parentid.md) property of [`ITLibPlaylist`](./itlibplaylist.md) returns the persistent ID of the parent playlist.
 

@@ -24,7 +24,7 @@ case highQualityFormat
 PHImageRequestOptionsDeliveryModeHighQualityFormat
 ```
 
-#### Discussion
+## Discussion
 
 If the [`isSynchronous`](../phimagerequestoptions/issynchronous.md) property is `true` or if using the [`requestImageDataForAsset:options:resultHandler:`](../phimagemanager/requestimagedataforasset_options_resulthandler_.md) method, this behavior is the default and only option (that is, specifying other delivery mode options has no effect).
 

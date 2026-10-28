@@ -25,7 +25,7 @@ var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^recordWithIDWasDeletedBlock)(CKRecordID *recordID);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

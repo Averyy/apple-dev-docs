@@ -28,7 +28,7 @@ func queryQueueActivity(_ queueName: String) async throws -> Int
 - (void) queryQueueActivity:(NSString *) queueName withCompletionHandler:(void (^)(NSInteger activity, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To specify a queue name when requesting a match, set the `GKMatchRequest` [`queueName`](../gkmatchrequest/queuename.md) property. For more information, see [Matchmaking rules](../matchmaking-rules.md).
 

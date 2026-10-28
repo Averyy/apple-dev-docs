@@ -20,7 +20,7 @@ A property that contains the workout zones, ordered from lowest to highest thres
 let zones: [HKWorkoutZone]
 ```
 
-#### Discussion
+## Discussion
 
 Each zone in this array represents a contiguous range within the configuration.
 

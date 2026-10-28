@@ -19,11 +19,11 @@ func InvokeAECoercePtrUPP(_ typeCode: DescType, _ dataPtr: UnsafeRawPointer!, _ 
 OSErr InvokeAECoercePtrUPP(DescType typeCode, const void *dataPtr, Size dataSize, DescType toType, SRefCon handlerRefcon, AEDesc *result, AECoercePtrUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`AECoercePtrProcPtr`](./aecoerceptrprocptr.md) callback function. 
 

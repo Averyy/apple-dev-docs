@@ -22,11 +22,11 @@ Returns the value with greater magnitude.
 static func maximumMagnitude(_ x: Self, _ y: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 Whichever of `x` or `y` has greater magnitude, or whichever is a number if the other is NaN.
 
-#### Discussion
+## Discussion
 
 This method returns the value with greater magnitude of the two given values, preserving order and eliminating NaN when possible. For two values `x` and `y`, the result of `maximumMagnitude(x, y)` is `x` if `x.magnitude > y.magnitude`, `y` if `x.magnitude <= y.magnitude`, or whichever of `x` or `y` is a number if the other is a quiet NaN. If both `x` and `y` are NaN, or either `x` or `y` is a signaling NaN, the result is NaN.
 

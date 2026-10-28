@@ -25,7 +25,7 @@ static var `private`: OSLogPrivacy { get }
 
 - [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 When it redacts a value, the system displays a generic string in place of the value. If you want to correlate log messages that contain the same value, use the [`private(mask:)`](./private%28mask%29.md) function to create a structure with the [`OSLogPrivacy.Mask.hash`](./mask/hash.md) mask.
 

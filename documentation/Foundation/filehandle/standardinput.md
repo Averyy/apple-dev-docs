@@ -25,11 +25,11 @@ class var standardInput: FileHandle { get }
 @property (class, strong, readonly) NSFileHandle * fileHandleWithStandardInput;
 ```
 
-#### Return Value
+## Return Value
 
 The shared file handle associated with the standard input file.
 
-#### Discussion
+## Discussion
 
 Conventionally this is a terminal device on which the user enters a stream of data. There’s one standard input file handle per process; it’s a shared instance.
 

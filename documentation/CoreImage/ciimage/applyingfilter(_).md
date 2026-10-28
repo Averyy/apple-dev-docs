@@ -24,7 +24,7 @@ func applyingFilter(_ filterName: String) -> CIImage
 - (CIImage *) imageByApplyingFilter:(NSString *) filterName;
 ```
 
-#### Discussion
+## Discussion
 
 A convenience method for applying a single filter to the method receiver and returning the output image.  Identical to [`applyingFilter(_:parameters:)`](./applyingfilter%28_,parameters%29.md) with default parameters.
 

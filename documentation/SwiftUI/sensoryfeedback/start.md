@@ -21,7 +21,7 @@ Indicates that an activity started.
 static let start: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Use this haptic when starting a timer or any other activity that can be explicitly started and stopped.
 

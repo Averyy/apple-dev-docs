@@ -20,7 +20,7 @@ The complete scene path to this prim, relative to its stage.
 var primPath: USDLayer.Path { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to [`path`](./path.md).
 

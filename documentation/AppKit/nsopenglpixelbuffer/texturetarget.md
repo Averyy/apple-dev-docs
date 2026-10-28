@@ -15,7 +15,7 @@ The texture target of the OpenGL pixel buffer.
 @property (readonly) GLenum textureTarget;
 ```
 
-#### Return Value
+## Return Value
 
 The texture target, which can be one of the following values: `GL_TEXTURE_2D`, `GL_TEXTURE_CUBE_MAP`, or `GL_TEXTURE_RECTANGLE_EXT`.
 

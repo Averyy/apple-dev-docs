@@ -15,11 +15,11 @@ Deletes targeting keywords from ad groups.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 To delete ad group keywords, include the associated `campaignId` and `adgroupId` in the URI. This is a soft deletion.
 
-##### Payload example: Delete targeting keywords
+### Payload example: Delete targeting keywords
 
 **Request**:
 

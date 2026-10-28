@@ -23,11 +23,11 @@ init(style: UITableView.Style)
 - (instancetype) initWithStyle:(UITableViewStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UITableViewController`](../uitableviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 If you use the standard `init` method to initialize a [`UITableViewController`](../uitableviewcontroller.md) object, a table view in the plain style is created.
 

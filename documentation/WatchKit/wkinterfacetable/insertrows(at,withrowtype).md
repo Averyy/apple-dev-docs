@@ -19,7 +19,7 @@ func insertRows(at rows: IndexSet, withRowType rowType: String)
 - (void) insertRowsAtIndexes:(NSIndexSet *) rows withRowType:(NSString *) rowType;
 ```
 
-#### Discussion
+## Discussion
 
 This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](../../Foundation/nsmutablearray/insert%28_,at%29-73pln.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md).
 

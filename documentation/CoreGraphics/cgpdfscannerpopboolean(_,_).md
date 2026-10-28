@@ -25,7 +25,7 @@ func CGPDFScannerPopBoolean(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePo
 extern bool CGPDFScannerPopBoolean(CGPDFScannerRef scanner, CGPDFBoolean *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the boolean object is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

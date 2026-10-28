@@ -22,7 +22,7 @@ A matrix to use in an RGBA color transformation.
 struct ColorMatrix
 ```
 
-#### Overview
+## Overview
 
 The matrix has five columns, each with a red, green, blue, and alpha component. You can use the matrix for tasks like creating a color transformation [`GraphicsContext.Filter`](./graphicscontext/filter.md) for a [`GraphicsContext`](./graphicscontext.md) using the [`colorMatrix(_:)`](./graphicscontext/filter/colormatrix%28_%29.md) method.
 

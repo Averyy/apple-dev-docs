@@ -17,7 +17,7 @@ Returns the tag as an ISO 7816 tag object.
 - (id<NFCISO7816Tag>) asNFCISO7816Tag;
 ```
 
-#### Return Value
+## Return Value
 
 The tag object, if it conforms to the [`NFCISO7816Tag`](../nfciso7816tag.md) protocol; otherwise, returns `nil`.
 

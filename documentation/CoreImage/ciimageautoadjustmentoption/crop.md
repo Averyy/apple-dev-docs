@@ -24,7 +24,7 @@ static let crop: CIImageAutoAdjustmentOption
 extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustCrop;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a `CFBoolean` value. If `true`, the returned filters include an operation that crops the image around the features specified with the [`features`](./features.md) option (or any features detected in the image, if that option is not present). Supply `false` to indicate not to return a crop filter. If you don’t specify this option, Core Image assumes its value is `false`.
 

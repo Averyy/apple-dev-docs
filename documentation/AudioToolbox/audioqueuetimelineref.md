@@ -24,7 +24,7 @@ typealias AudioQueueTimelineRef = OpaquePointer
 typedef struct OpaqueAudioQueueTimeline * AudioQueueTimelineRef;
 ```
 
-#### Discussion
+## Discussion
 
 You can use a timeline object to observe time discontinuities in the audio hardware device associated with an audio queue. A discontinuity is, for example, a period of silence when sound was expected. Causes of discontinuities include changes in device state or data processing overloads. See Technical Q&A 1467, [CoreAudio Overload Warnings](https://developer.apple.com/library/archive/qa/qa1467/_index.html#//apple_ref/doc/uid/DTS10003908). You query a timeline object by passing it as a parameter to the [`AudioQueueGetCurrentTime(_:_:_:_:)`](./audioqueuegetcurrenttime%28_,_,_,_%29.md) function.
 

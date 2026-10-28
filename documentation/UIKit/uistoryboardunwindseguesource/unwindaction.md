@@ -23,7 +23,7 @@ var unwindAction: Selector { get }
 @property (readonly) SEL unwindAction;
 ```
 
-#### Discussion
+## Discussion
 
 Each unwind segue has an associated action method. The view controller that’s the destination of the unwind segue must implement this action method.
 

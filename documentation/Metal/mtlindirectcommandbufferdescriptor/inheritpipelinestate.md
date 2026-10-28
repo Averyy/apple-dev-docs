@@ -24,7 +24,7 @@ var inheritPipelineState: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritPipelineState;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If the value is [`false`](../../Swift/false.md), set the pipeline state object when you encode the commands into the indirect command buffer. The commands ignore any pipeline state object set on the parent encoder.
 

@@ -25,7 +25,7 @@ func xpc_endpoint_create(_ connection: xpc_connection_t) -> xpc_endpoint_t
 extern xpc_endpoint_txpc_endpoint_create(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 A new endpoint object.
 

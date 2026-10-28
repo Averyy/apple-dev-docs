@@ -20,7 +20,7 @@ Tells the delegate that a validated drop moved inside the modified view.
 @preconcurrency func dropUpdated(info: DropInfo) -> DropProposal?
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return a drop proposal containing the operation the delegate intends to perform at the drop [`location`](../dropinfo/location.md). The default implementation of this method returns `nil`, which tells the drop to use the last valid returned value or else [`DropOperation.copy`](../dropoperation/copy.md).
 

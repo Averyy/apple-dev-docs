@@ -21,7 +21,7 @@ func allowsEmptySelection() -> Bool
 - (BOOL) allowsEmptySelection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an empty selection is allowed [`false`](../../Swift/false.md) otherwise.
 

@@ -24,7 +24,7 @@ class AVMIDISysexEvent
 @interface AVMIDISysexEvent : AVMusicEvent
 ```
 
-#### Overview
+## Overview
 
 You can’t modify the size and contents of this event once you create it.
 

@@ -21,11 +21,11 @@ Destroys an authorization mechanism.
 int (*)(void *) MechanismDestroy;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Return [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) if the function completes successfully and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error) if any error occurs.
 
-#### Discussion
+## Discussion
 
 When the authorization engine calls your [`MechanismDestroy`](./mechanismdestroy.md) function, you must release all resources owned by your mechanism and do any other cleanup necessary (such as deleting temporary files).
 

@@ -26,11 +26,11 @@ func CFHostGetReachability(_ theHost: CFHost, _ hasBeenResolved: UnsafeMutablePo
 extern CFDataRefCFHostGetReachability(CFHostRef theHost, Boolean *hasBeenResolved);
 ```
 
-#### Return Value
+## Return Value
 
 A CFData object that wraps the reachability flags (`SCNetworkConnectionFlags`) defined in `SystemConfiguration/SCNetwork.h`, or `NULL` if reachability information was not available.
 
-#### Discussion
+## Discussion
 
 This function gets reachability information in a thread-safe way, but the resulting data is not thread-safe. The data is returned as a “get” as opposed to a copy, so the data is not safe if the CFHost is altered from another thread.
 

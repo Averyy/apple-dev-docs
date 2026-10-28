@@ -24,7 +24,7 @@ let HKMetadataKeyAppleDeviceCalibrated: String
 extern NSString * const HKMetadataKeyAppleDeviceCalibrated;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a Boolean value. If it’s [`true`](../Swift/true.md), the system has enough high-quality data to make an accurate estimate. If it’s [`false`](../Swift/false.md), the system provides an estimate based on data that may be less accurate.
 

@@ -15,7 +15,7 @@ An array that contains the in-app purchase receipt fields for all in-app purchas
 object responseBody.Receipt.In_app
 ```
 
-#### Discussion
+## Discussion
 
 The `in_app` array is not in chronological order. When parsing the array, iterate over all items to ensure all items are fulfilled. For example, you cannot assume that the last item in the array is the most recent.
 

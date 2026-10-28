@@ -24,7 +24,7 @@ var providerConfiguration: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * providerConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 All of the keys and values in this dictionary must conform to the [`NSSecureCoding`](../../Foundation/nssecurecoding.md) and [`NSCopying`](../../Foundation/nscopying.md) protocols.
 

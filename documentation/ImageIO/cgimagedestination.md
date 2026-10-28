@@ -25,7 +25,7 @@ class CGImageDestination
 typedef struct CGImageDestination * CGImageDestinationRef;
 ```
 
-#### Overview
+## Overview
 
 A [`CGImageDestination`](./cgimagedestination.md) object provides an abstract interface for saving image data. Use an image destination to represent a single image, or multiple images packaged together. For example, you might create an image that also contains a thumbnail. You can also use the image destination to add metadata to your images.
 

@@ -15,7 +15,7 @@ The request body you use to create a Game Center leaderboard localization v2.
 object GameCenterLeaderboardLocalizationV2CreateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

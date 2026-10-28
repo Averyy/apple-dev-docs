@@ -21,7 +21,7 @@ The automatic customization behavior.
 static var automatic: TabCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior can be added, removed, or reordered.
 

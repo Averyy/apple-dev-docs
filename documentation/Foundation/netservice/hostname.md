@@ -26,7 +26,7 @@ var hostName: String? { get }
 @property (copy, readonly, nullable) NSString * hostName;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` until the service has been resolved (when `addresses` is non-`nil`).
 

@@ -24,7 +24,7 @@ var isStreamingContent: Bool { get set }
 @property (nonatomic, assign, getter=isStreamingContent) BOOL streamingContent;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated content item is identified as being streamable.
 

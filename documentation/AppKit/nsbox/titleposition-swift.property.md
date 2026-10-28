@@ -19,7 +19,7 @@ var titlePosition: NSBox.TitlePosition { get set }
 @property NSTitlePosition titlePosition;
 ```
 
-#### Discussion
+## Discussion
 
 A constant representing the position of the receiver’s title. See [`NSBox.TitlePosition`](./titleposition-swift.enum.md) for a list of these constants. If the new title position changes the size of the box’s border area, the content view is resized to absorb the difference, and the box is marked as needing redisplay.
 

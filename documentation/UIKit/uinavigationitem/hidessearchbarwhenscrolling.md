@@ -22,7 +22,7 @@ var hidesSearchBarWhenScrolling: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesSearchBarWhenScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the search bar is visible only when the scroll position equals the top of your content view. When the user scrolls down, the search bar collapses into the navigation bar. Scrolling back to the top reveals the search bar again. When the value of this property is [`false`](../../Swift/false.md), the search bar remains regardless of the current scroll position.
 

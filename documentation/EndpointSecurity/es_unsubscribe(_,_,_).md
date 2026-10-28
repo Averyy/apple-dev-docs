@@ -19,11 +19,11 @@ func es_unsubscribe(_ client: OpaquePointer, _ events: UnsafePointer<es_event_ty
 extern es_return_t es_unsubscribe(es_client_t *client, const es_event_type_t *events, uint32_t event_count);
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating if the unsubscribe succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that the caller couldn’t reach the Endpoint Security subsystem or that the request was invalid.
 
-#### Discussion
+## Discussion
 
 After making this call successfully, Endpoint Security continues to deliver messages for any previously-subscribed events that aren’t specifically unsubscribed from. Use this function to selectively unsubscribe from some events, while remaining subscribed to others. To unsubscribe from all events, use [`es_unsubscribe_all(_:)`](./es_unsubscribe_all%28_%29.md).
 

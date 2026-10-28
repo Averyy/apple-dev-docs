@@ -19,7 +19,7 @@ The types of interactions that a person actively performs.
 final var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is always a concrete type that’s never set to [`automatic`](./interactiontypes/automatic.md).
 

@@ -24,7 +24,7 @@ let CIDetectorAspectRatio: String
 extern NSString * const CIDetectorAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object whose value is a positive floating-point number. Use this option with the [`CIDetectorTypeRectangle`](./cidetectortyperectangle.md) detector type to fine-tune the accuracy of the detector. For example, to more accurately find a business card (3.5 x 2 inches) in an image, specify an aspect ratio of `1.75` (3.5 / 2).
 

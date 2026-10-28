@@ -5,11 +5,11 @@
 
 Use Swift concurrency to manage one-shot and long-running queries.
 
-#### Overview
+## Overview
 
 HealthKit provides a Swift-only API for querying the HealthKit store using Swift concurrency. This API uses two protocols. Descriptors that adopt the [`HKAsyncQuery`](./hkasyncquery.md) perform one-shot queries that return all matching results currently in the HealthKit store. Descriptors that adopt the [`HKAsyncSequenceQuery`](./hkasyncsequencequery.md) perform long-running queries that continue to monitor the store and return updates as changes occur.
 
-##### Building a Query Descriptor
+### Building a Query Descriptor
 
 For all queries, start by constructing the type and predicates that describe the desired data. The following code creates a type for workout samples, and a predicate that matches samples that started within the last week.
 
@@ -42,7 +42,7 @@ HKAnchoredObjectQueryDescriptor(
 
 You can now use this descriptor to run your query.
 
-##### Running a One-Shot Query
+### Running a One-Shot Query
 
 Descriptors that adopt the [`HKAsyncQuery`](./hkasyncquery.md) protocol can perform one-shot queries. Call the descriptor’s [`result(for:)`](./hkasyncquery/result%28for%29.md) method to start the query. The query then gathers a snapshot of all the matching data currently in the HealthKit store.
 
@@ -62,7 +62,7 @@ let deletedSamples = results.deletedObjects
 myAnchor = results.newAnchor
 ```
 
-##### Running and Stopping Long-Running Queries
+### Running and Stopping Long-Running Queries
 
 Descriptors that adopt the [`HKAsyncSequenceQuery`](./hkasyncsequencequery.md) protocol can create long-running queries that monitor the HealthKit store and return periodic updates. Here, the [`results(for:)`](./hkasyncsequencequery/results%28for%29.md) method returns an instance that adopts the [`AsyncSequence`](../Swift/asyncsequence.md) protocol. Note that the call to [`results(for:)`](./hkasyncsequencequery/results%28for%29.md) is synchronous, but accessing data from the sequence is asynchronous.
 
@@ -96,7 +96,7 @@ func stopUpdates() {
 }
 ```
 
-##### Choosing the Correct Query Type
+### Choosing the Correct Query Type
 
 To see the list of descriptors for one-shot queries, see the Conforming Types section of the [`HKAsyncQuery`](./hkasyncquery.md) protocol. For the list of long-running descriptors, see [`HKAsyncSequenceQuery`](./hkasyncsequencequery.md).
 

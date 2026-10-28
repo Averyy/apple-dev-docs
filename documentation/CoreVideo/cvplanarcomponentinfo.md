@@ -25,7 +25,7 @@ struct CVPlanarComponentInfo
 struct CVPlanarComponentInfo;
 ```
 
-#### Overview
+## Overview
 
 Depending on how they were created, planar pixel buffers may or may not have this descriptor at their base address. For this reason, you should use [`CVPixelBufferGetBaseAddressOfPlane(_:_:)`](./cvpixelbuffergetbaseaddressofplane%28_,_%29.md) and [`CVPixelBufferGetBytesPerRowOfPlane(_:_:)`](./cvpixelbuffergetbytesperrowofplane%28_,_%29.md) to get information about a planar pixel buffer.
 

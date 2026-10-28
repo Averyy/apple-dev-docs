@@ -22,11 +22,11 @@ Returns a new set with the elements of both this and the given set.
 func union(_ other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new set with the unique elements of this set and `other`.
 
-#### Discussion
+## Discussion
 
 In the following example, the `attendeesAndVisitors` set is made up of the elements of the `attendees` and `visitors` sets:
 

@@ -25,11 +25,11 @@ func destinationInstances(forEntityMappingName mappingName: String, sourceInstan
 - (NSArray<__kindof NSManagedObject *> *) destinationInstancesForEntityMappingNamed:(NSString *) mappingName sourceInstances:(NSArray<__kindof NSManagedObject *> *) sourceInstances;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the managed object instances created in the destination store for the entity mapping named `mappingName` for `sourceInstances`. If `sourceInstances` is `nil`, all of the destination instances created by the specified property mapping are returned.
 
-#### Discussion
+## Discussion
 
 This method throws an `NSInvalidArgumentException` exception if `mappingName` is not a valid mapping name.
 

@@ -16,7 +16,7 @@ The options for which aspects of the window will be managed by this controllerâ€
 @preconcurrency var sceneBridgingOptions: NSHostingSceneBridgingOptions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 `NSHostingController` will populate certain aspects of its associated window, depending on which options are specified.
 

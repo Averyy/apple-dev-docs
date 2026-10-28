@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_TypesForExtension: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_TypesForExtension
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to a `CFStringRef` containing a filename extension.
 

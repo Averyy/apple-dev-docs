@@ -25,7 +25,7 @@ static let ubiquitousItemDownloadingStatusKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemDownloadingStatusKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value indicates whether a local copy exists and whether that copy is the most current version of the item. See [`URLUbiquitousItemDownloadingStatus`](../urlubiquitousitemdownloadingstatus.md) for values for this key.
 

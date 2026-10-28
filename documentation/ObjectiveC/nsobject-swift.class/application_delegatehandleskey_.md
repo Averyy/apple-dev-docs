@@ -17,11 +17,11 @@ Sent by Cocoa’s built-in scripting support during execution of `get` or `set` 
 - (BOOL) application:(NSApplication *) sender delegateHandlesKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if your delegate handles the key or [`NO`](../no.md) if it does not.
 
-#### Discussion
+## Discussion
 
 The method should return [`YES`](../yes.md) if the delegate for the app `sender` handles the key specified by `key`, which means it can get or set the scriptable property or element that corresponds to that key. The app implements methods for each of the keys that it handles, where the method name matches the key.
 

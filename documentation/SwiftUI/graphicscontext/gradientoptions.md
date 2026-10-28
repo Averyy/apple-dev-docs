@@ -22,7 +22,7 @@ Options that affect the rendering of color gradients.
 struct GradientOptions
 ```
 
-#### Overview
+## Overview
 
 Use these options to affect how SwiftUI manages a gradient that you create for a [`GraphicsContext.Shading`](./shading.md) instance for use in a [`GraphicsContext`](../graphicscontext.md).
 

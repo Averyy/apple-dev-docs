@@ -25,7 +25,7 @@ func start() throws
 - (BOOL) startAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`prepare()`](./prepare%28%29.md) method if you don’t call it after invoking [`stop()`](./stop%28%29.md). It then starts the audio hardware through the [`AVAudioInputNode`](../avaudioinputnode.md) and [`AVAudioOutputNode`](../avaudiooutputnode.md) instances in the audio engine. This method throws an error when:
 

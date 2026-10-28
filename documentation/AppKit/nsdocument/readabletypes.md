@@ -19,7 +19,7 @@ class var readableTypes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * readableTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects representing the readable document types.
 

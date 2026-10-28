@@ -15,7 +15,7 @@ The state of mind reflection as logged in the Health app.
 var state: HKStateOfMind
 ```
 
-#### Discussion
+## Discussion
 
 This includes mood or emotion information, and its valence value shows the positive or negative magnitude as well as domains and labels.
 

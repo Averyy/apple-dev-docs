@@ -24,7 +24,7 @@ weak var preferredFocusedView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * preferredFocusedView;
 ```
 
-#### Discussion
+## Discussion
 
 If the guide is focused, it indirects the focus to this view. This view, or at least one view along its [`preferredFocusedView`](./preferredfocusedview.md) chain, must be focusable in order for the guide to be focusable. Otherwise, it’s effectively disabled.
 

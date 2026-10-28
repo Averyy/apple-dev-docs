@@ -24,11 +24,11 @@ func contains(_ anObject: ObjectType) -> Bool
 - (BOOL) containsObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anObject` is present in the fetch result, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This method determines whether `anObject` is present in the fetch result by sending an `==` message to each of the fetch result’s objects (and passing `anObject` as the parameter to each `==` message).
 

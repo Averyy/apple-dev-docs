@@ -21,7 +21,7 @@ Retrieves a video sample along with auxiliary information for display at the spe
 func sample(forHostTime hostTime: CMTime) -> AVPlayerVideoOutput.Sample?
 ```
 
-#### Return Value
+## Return Value
 
 A sample containing the frame, presentation timestamp, and active configuration for the specified host time, or nil if no sample was available for that host time.
 

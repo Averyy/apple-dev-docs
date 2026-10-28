@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorCall: String
 extern NSString * const IOBluetoothHandsFreeIndicatorCall;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the call indicator are:
 

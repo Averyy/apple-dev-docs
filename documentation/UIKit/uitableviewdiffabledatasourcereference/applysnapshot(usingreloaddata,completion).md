@@ -23,7 +23,7 @@ func applySnapshot(usingReloadData snapshot: NSDiffableDataSourceSnapshotReferen
 - (void) applySnapshotUsingReloadData:(NSDiffableDataSourceSnapshot<id,id> *) snapshot completion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The system interrupts any ongoing item animations and immediately reloads the table view’s content.
 

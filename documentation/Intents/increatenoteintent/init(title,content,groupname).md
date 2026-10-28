@@ -25,11 +25,11 @@ init(title: INSpeakableString?, content: INNoteContent?, groupName: INSpeakableS
 - (instancetype) initWithTitle:(INSpeakableString *) title content:(INNoteContent *) content groupName:(INSpeakableString *) groupName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user asks to create a note. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

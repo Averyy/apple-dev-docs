@@ -5,7 +5,7 @@
 
 Set up your server for secure communications with Apple Pay.
 
-#### Overview
+## Overview
 
 These are the requirements for incorporating Apple Pay on your website:
 
@@ -22,7 +22,7 @@ These are the requirements for incorporating Apple Pay on your website:
 | 0xC0,0x2C | ECDHE-ECDSA-AES256-GCM-SHA384 |
 | 0xC0,0x30 | ECDHE-RSA-AES256-GCM-SHA384 |
 
-##### Allow Apple Pay IP Addresses
+### Allow Apple Pay IP Addresses
 
 To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in Listing 1, below.
 
@@ -74,7 +74,7 @@ This name resolves to the IP addresses / CIDR block below:
 
 For more information about merchant validation, see [Providing Merchant Validation](./providing-merchant-validation.md).
 
-##### Allow Apple IP Addresses for Domain Verification
+### Allow Apple IP Addresses for Domain Verification
 
 Apple uses the following IP addresses when you register or verify your merchant domain. If you protect your domain from public access and you wish to complete domain verification, you need to allow the following IP address ranges.
 

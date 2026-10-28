@@ -19,7 +19,7 @@ func setTransportControlsPlaybackMode(_ mode: AVCaptureDevice.TransportControlsP
 - (void) setTransportControlsPlaybackMode:(AVCaptureDeviceTransportControlsPlaybackMode) mode speed:(AVCaptureDeviceTransportControlsSpeed) speed;
 ```
 
-#### Discussion
+## Discussion
 
 Before changing the value of this property, you must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) to acquire exclusive access to the device’s configuration properties. Otherwise, calling this method raises an exception. When you’re finished configuring the device, call [`unlockForConfiguration()`](./unlockforconfiguration%28%29.md) to release the lock and allow other devices to configure the settings.
 

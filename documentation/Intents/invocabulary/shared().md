@@ -24,11 +24,11 @@ class func shared() -> Self
 + (instancetype) sharedVocabulary;
 ```
 
-#### Return Value
+## Return Value
 
 The shared vocabulary object.
 
-#### Discussion
+## Discussion
 
 Always use this method to retrieve the vocabulary object for your iOS app.
 

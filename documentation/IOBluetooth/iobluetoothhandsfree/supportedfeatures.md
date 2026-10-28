@@ -19,7 +19,7 @@ var supportedFeatures: UInt32 { get set }
 @property (assign) uint32_t supportedFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the supported features bitmap. The values are described in “IOBluetoothHandsFreeDeviceFeatures and IOBluetoothHandsFreeAudioGatewayFeatures.”
 

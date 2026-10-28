@@ -23,11 +23,11 @@ optional func indexPathForPreferredFocusedView(in collectionView: UICollectionVi
 - (NSIndexPath *) indexPathForPreferredFocusedViewInCollectionView:(UICollectionView *) collectionView;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the preferred cell. The index path you specify must correspond to a valid cell in the collection view.
 
-#### Discussion
+## Discussion
 
 When focus is about to change to a collection view, the collection view must pick which of its subviews should receive that focus. If the collection view’s [`remembersLastFocusedIndexPath`](../uitableview/rememberslastfocusedindexpath.md) property is set to [`true`](../../Swift/true.md), the collection view returns the index path of the cell that was last focused. If the [`remembersLastFocusedIndexPath`](../uitableview/rememberslastfocusedindexpath.md) property is [`false`](../../Swift/false.md), or if there is no saved index path because no cell was previously focused, the collection view calls this method so that you can specify which cell should receive focus. If you do not implement this method, the collection view returns an appropriate cell.
 

@@ -32,7 +32,7 @@ var maximumFramesToRender: AUAudioFrameCount { get set }
 @property (atomic) AUAudioFrameCount maximumFramesToRender;
 ```
 
-#### Discussion
+## Discussion
 
 This must be set by the host before render resources are allocated. It cannot be changed while render resources are allocated.
 

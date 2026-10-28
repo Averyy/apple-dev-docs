@@ -21,7 +21,7 @@ The visibility of the tab identified by its customization identifier.
 subscript(sidebarVisibility id: String) -> Visibility { get set }
 ```
 
-#### Overview
+## Overview
 
 Visibility can be set imperatively by subscripting with the tab’s id:
 

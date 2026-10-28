@@ -19,7 +19,7 @@ func CMAudioDeviceClockSetAudioDeviceUID(_ clock: CMClock, deviceUID: CFString?)
 extern OSStatus CMAudioDeviceClockSetAudioDeviceUID(CMClockRef clock, CFStringRef deviceUID);
 ```
 
-#### Discussion
+## Discussion
 
 Pass `NULL` for `deviceUID` to make the clock track the default device.
 

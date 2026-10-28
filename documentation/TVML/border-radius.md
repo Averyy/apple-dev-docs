@@ -5,7 +5,7 @@
 
 Changes the shape of an element’s corner.
 
-#### Overview
+## Overview
 
 Use the `border-radius` style to apply rounded corners to elements. Here’s an example that changes the border radius of an `img` element.
 
@@ -16,7 +16,7 @@ Use the `border-radius` style to apply rounded corners to elements. Here’s an 
 </lockup>
 ```
 
-##### Values for border-radius
+### Values for border-radius
 
 - **4-tuple**: An image whose corners are cropped to the specified radius.
 - **`circle`**: An image that is cropped to fit inside of a circle.
@@ -31,7 +31,7 @@ There are four ways to designate the border-radius style as a 4-tuple:
 - `border-radius: X1 X2`—Where X1 is applied to the top-left and bottom-right corners, and X2 is applied to the top-right and bottom-left corners.
 - `border-radius: X1`—Where X1 is applied to each corner.
 
-##### Elements that Use border-radius
+### Elements that Use border-radius
 
 - [card](./card.md)
 - [heroImg](./heroimg.md)

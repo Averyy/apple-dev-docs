@@ -14,7 +14,7 @@
 kMPTaskPropagate = 0
 ```
 
-#### Discussion
+## Discussion
 
 The exception is propagated.
 

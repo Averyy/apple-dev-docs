@@ -32,7 +32,7 @@ func replace(region: MTLRegion, mipmapLevel level: Int, withBytes pixelBytes: Un
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 - [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md)
 
-#### Discussion
+## Discussion
 
 This method runs on the CPU and immediately copies the pixel data into the texture. It doesn’t synchronize against any GPU memory operations to the texture. Ensure all operations that write or render to the texture complete before reading the texture’s contents using one of the following methods:
 

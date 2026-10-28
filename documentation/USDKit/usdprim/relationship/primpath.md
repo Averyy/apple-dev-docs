@@ -20,7 +20,7 @@ The complete path to the nearest prim that contains this relationship.
 var primPath: USDLayer.Path { get }
 ```
 
-#### Discussion
+## Discussion
 
 `primPath` is the [`path`](../path.md) of this relationship’s [`prim`](./prim.md).
 

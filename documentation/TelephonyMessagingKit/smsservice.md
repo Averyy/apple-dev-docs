@@ -19,7 +19,7 @@ final class SMSService
 
 - [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
-#### Overview
+## Overview
 
 Use the [`TelephonyMessagingSession`](./telephonymessagingsession.md) property [`smsService`](./telephonymessagingsession/smsservice.md) to get an instance of this class. You can then monitor the [`incomingMessageNotifications`](./smsservice/incomingmessagenotifications.md) asynchronous sequence to receive notifications of incoming messages, and the [`sendMessage(_:)`](./smsservice/sendmessage%28_%29.md) method to send outgoing messages.
 

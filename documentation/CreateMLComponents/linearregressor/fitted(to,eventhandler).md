@@ -21,7 +21,7 @@ Fits a linear regressor model to a sequence of examples.
 func fitted<Input>(to input: Input, eventHandler: EventHandler? = nil) async throws -> LinearRegressorModel<Scalar> where Input : Sequence, Input.Element == AnnotatedFeature<MLShapedArray<Scalar>, Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted linear regressor model.
 

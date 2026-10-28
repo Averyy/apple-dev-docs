@@ -24,7 +24,7 @@ var hasAttendees: Bool { get }
 @property (nonatomic, readonly) BOOL hasAttendees;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar item has attendees; otherwise it does not.
 

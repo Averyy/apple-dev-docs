@@ -18,11 +18,11 @@ Adds a button for contacting the accessory’s manufacturer.
 func contactAccessoryManufacturerLink() -> HomeAccessoryHelpGuide
 ```
 
-#### Return Value
+## Return Value
 
 A help guide that displays the contact button.
 
-#### Discussion
+## Discussion
 
 The button appears at the bottom of the guide when contact options are available.
 

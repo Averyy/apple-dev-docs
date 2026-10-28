@@ -27,7 +27,7 @@ convenience init(keyPath: String, object: Any, expectedValue: Any?)
 - (instancetype) initWithKeyPath:(NSString *) keyPath object:(id) object expectedValue:(id) expectedValue;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](../../Foundation/nskeyvalueobservingoptions.md):
 

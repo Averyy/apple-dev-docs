@@ -19,7 +19,7 @@ optional func applicationWillResignActive()
 - (void) applicationWillResignActive;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method after your app launches and before it exits. Use this method to pause any active tasks. For example, you could use it to stop any active timers. An app in the inactive state should do minimal work while it waits to transition to the active or not running state.
 

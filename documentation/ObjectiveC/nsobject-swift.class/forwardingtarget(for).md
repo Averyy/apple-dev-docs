@@ -25,11 +25,11 @@ func forwardingTarget(for aSelector: Selector!) -> Any?
 - (id) forwardingTargetForSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 The object to which unrecognized messages should first be directed.
 
-#### Discussion
+## Discussion
 
 If an object implements (or inherits) this method, and returns a non-`nil` (and non-`self`) result, that returned object is used as the new receiver object and the message dispatch resumes to that new object. (Obviously if you return `self` from this method, the code would just fall into an infinite loop.)
 

@@ -21,7 +21,7 @@ An effect that makes the symbol scale up as it appears.
 + (instancetype) appearUpEffect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the appear effect options that makes the symbol scale up as it appears.
 

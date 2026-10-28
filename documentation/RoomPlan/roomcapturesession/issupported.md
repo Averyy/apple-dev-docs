@@ -17,7 +17,7 @@ A Boolean value that indicates whether the user’s device supports the framewor
 static var isSupported: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Before attempting to begin a session, ensure the user’s device supports room scanning. This property is `true` if the device contains a LiDAR Scanner; otherwise, `false`.
 

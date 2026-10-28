@@ -19,11 +19,11 @@ init(url: URL) throws
 - (instancetype) initWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of an `NSUserScriptTask` subclass or `nil` if the file does not appear to match any of the known types.
 
-#### Discussion
+## Discussion
 
 The returned object will be of one of the specific sub-classes ([`NSUserUnixTask`](../nsuserunixtask.md), [`NSUserAppleScriptTask`](../nsuserapplescripttask.md), and [`NSUserAutomatorTask`](../nsuserautomatortask.md)), or `nil` if the file does not appear to match any of the known types.
 

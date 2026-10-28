@@ -24,7 +24,7 @@ Decode the specific error type that the distributed invocation target has record
 mutating func decodeErrorType() throws -> (any Any.Type)?
 ```
 
-#### Discussion
+## Discussion
 
 If the target known to not be throwing, or no error type was recorded, the method should return `nil`.
 

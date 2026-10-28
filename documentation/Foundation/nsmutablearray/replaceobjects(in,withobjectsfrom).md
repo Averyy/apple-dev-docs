@@ -25,7 +25,7 @@ func replaceObjects(in range: NSRange, withObjectsFrom otherArray: [Any])
 - (void) replaceObjectsInRange:(NSRange) range withObjectsFromArray:(NSArray<id> *) otherArray;
 ```
 
-#### Discussion
+## Discussion
 
 If `otherArray` has fewer objects than are specified by `aRange`, the extra objects in the receiving array are removed. If `otherArray` has more objects than are specified by `aRange`, the extra objects from `otherArray` are inserted into the receiving array.
 

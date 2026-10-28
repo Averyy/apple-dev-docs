@@ -17,7 +17,7 @@ Enum wrapping `Cmlx.mlx_array_dtype`.
 enum DType
 ```
 
-#### Overview
+## Overview
 
 This is typically not used directly, rather it is inferred from parameters that are [`HasDType`](./hasdtype.md), for example:
 
@@ -33,7 +33,7 @@ Some methods take a `dtype` directly for cases where it may not be possible to u
 let bf = MLXArray(10.5, dtype: .bfloat16)
 ```
 
-##### See Also
+### See Also
 
 - [`HasDType`](./hasdtype.md)
 - [`asType(_:stream:)`](./mlxarray/astype%28_,stream%29-6d44y.md)

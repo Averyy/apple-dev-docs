@@ -21,7 +21,7 @@ Checks if a tag collection has no elements.
 extern Boolean CMTagCollectionIsEmpty(CMTagCollectionRef tagCollection);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the collection is empty.
 

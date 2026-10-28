@@ -18,7 +18,7 @@ Allocates an OSData object with a copy of bytes from a subset of another OSData.
 static OSDataPtr withData(const OSData *inData, size_t start, size_t numBytes);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSData with reference count 1 to be released by the caller.
 

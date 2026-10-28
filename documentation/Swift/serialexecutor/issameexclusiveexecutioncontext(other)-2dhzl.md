@@ -21,11 +21,11 @@ If this executor has complex equality semantics, and the runtime needs to compar
 func isSameExclusiveExecutionContext(other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if `self` and the `other` executor actually are mutually exclusive and it is safe–from a concurrency perspective–to execute code assuming one on the other.
 
-#### Discussion
+## Discussion
 
 This method must be implemented with great care, as wrongly returning `true` would allow / code from a different execution context (e.g. thread) to execute code which was intended to be isolated by another actor.
 

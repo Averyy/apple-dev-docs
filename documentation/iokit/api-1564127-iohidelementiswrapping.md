@@ -16,11 +16,11 @@ Returns the wrap property for the element.
 Boolean IOHIDElementIsWrapping(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if wrapping or FALSE if non-wrapping.
 
-#### Discussion
+## Discussion
 
 Wrap indicates whether the data "rolls over" when reaching either the extreme high or low value.
 

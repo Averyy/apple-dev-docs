@@ -20,7 +20,7 @@ enum SCCaptureResolutionType
 enum SCCaptureResolutionType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Higher-resolution values produce better and more accurate-looking content to the source, at the expense of bandwidth.
 

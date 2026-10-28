@@ -23,7 +23,7 @@ Returns an external purchase token of the specified type.
 static func token(for tokenType: String) async throws -> ExternalPurchaseCustomLink.Token?
 ```
 
-#### Discussion
+## Discussion
 
 If `isEligible` is `false`, this method will always fail.
 

@@ -13,7 +13,7 @@
 MBUF_TC_VI = 2
 ```
 
-#### Discussion
+## Discussion
 
 Interactive video, constant bit rate, low latency.
 

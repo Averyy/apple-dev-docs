@@ -21,7 +21,7 @@ func updateTitleVariants(_ newTitleVariants: [String], subtitleVariants newSubti
 - (void) updateTitleVariants:(NSArray<NSString *> *) newTitleVariants subtitleVariants:(NSArray<NSString *> *) newSubtitleVariants avatarImage:(UIImage *) avatarImage alertImage:(UIImage *) alertImage actions:(NSArray<CPAlertAction *> *) actions duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 Updating an alert that has already been dismissed has no effect.
 

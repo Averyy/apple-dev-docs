@@ -24,7 +24,7 @@ func JSValueMakeNumber(_ ctx: JSContextRef!, _ number: Double) -> JSValueRef!
 JSValueRefJSValueMakeNumber(JSContextRef ctx, double number);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) of the number type that represents the value of `number`.
 

@@ -22,7 +22,7 @@ var alertMessage: String { get set }
 @property (nonatomic, copy) NSString * alertMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Before you call [`begin()`](./begin%28%29.md), use this property to supply a string that provides more context about how your app uses NFC reader mode. For example, you might tell users “Hold your iPhone near the item to learn more about it.” When tag scanning begins, your text is displayed to users in an alert. Note that the [`alertMessage`](./alertmessage.md) string is different from the purpose string you supply for the [NFCReaderUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW74) key in your `Info.plist` file.
 

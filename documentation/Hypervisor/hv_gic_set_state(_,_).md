@@ -19,11 +19,11 @@ func hv_gic_set_state(_ gic_state_data: UnsafeRawPointer, _ gic_state_size: Int)
 extern hv_return_t hv_gic_set_state(const void *gic_state_data, size_t gic_state_size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 Use this method to restore the state of a GIC. You can only restore a GIC’s state after creating a GIC device and vCPUs and before the vCPUs are running. Restore the rest of the virtual machine including GIC CPU registers with values that are compatible with the [`hv_gic_state_t`](./hv_gic_state_t.md).
 

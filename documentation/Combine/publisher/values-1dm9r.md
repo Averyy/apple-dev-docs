@@ -23,7 +23,7 @@ var values: AsyncPublisher<Self> { get }
 
 Available when `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 This property provides an [`AsyncPublisher`](../asyncpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](../asyncpublisher.md) conforms to [`AsyncSequence`](../../Swift/asyncsequence.md), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber.
 

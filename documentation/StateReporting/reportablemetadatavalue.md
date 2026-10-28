@@ -21,7 +21,7 @@ A value in a reportable-metadata dictionary.
 enum ReportableMetadataValue
 ```
 
-#### Overview
+## Overview
 
 Strings, numbers, and dates all initialize directly. The [`ReportableMetadata()`](./reportablemetadata%28%29.md) macro constructs these automatically when you annotate your metadata type.
 

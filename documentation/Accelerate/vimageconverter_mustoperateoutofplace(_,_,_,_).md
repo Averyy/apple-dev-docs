@@ -25,11 +25,11 @@ func vImageConverter_MustOperateOutOfPlace(_ converter: vImageConverter, _ srcs:
 vImage_Error vImageConverter_MustOperateOutOfPlace(vImageConverterRef const converter, const vImage_Buffer *srcs, const vImage_Buffer *dests, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md) if the conversion will work in place, [`kvImageOutOfPlaceOperationRequired`](./kvimageoutofplaceoperationrequired.md) if the conversion requires out of place operation; otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 Some conversions work if the source and destination image buffer scanlines start at the same address. Others don’t; for those cases, you need to allocate additional storage to hold the destination buffer.
 

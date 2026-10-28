@@ -16,7 +16,7 @@ Sets the scale of pixels per line in a scrolling event source.
 extern void CGEventSourceSetPixelsPerLine(CGEventSourceRef source, double pixelsPerLine);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the scale of pixels per line in the specified event source. For example, if you pass the value 12.0 in the `pixelsPerLine` parameter, the scale of pixels per line in the event source would be changed to 12.0. Every scrolling event can be interpreted to be scrolling by pixel or by line. By default, the scale is about ten pixels per line. You can retrieve the scale with the function `CGEventSourceGetPixelsPerLine`.
 

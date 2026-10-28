@@ -25,7 +25,7 @@ init(color: UIColor = .black, texture: MaterialParameters.Texture? = nil)
 init(color: NSColor = .black, texture: MaterialParameters.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object from a color, an image texture, or from both. The `color` property defaults to black, which results in no light emissions. With custom materials, `color` and `texture` are available as inputs in your surface shader, but your surface shader must call `params.surface().set_emissive_color()`, otherwise RealityKit renders no light emission.
 

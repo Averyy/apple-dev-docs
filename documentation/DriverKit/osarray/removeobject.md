@@ -18,7 +18,7 @@ Removes a current member of the array.
 void removeObject(uint32_t index);
 ```
 
-#### Discussion
+## Discussion
 
 Removes a current member of the array, shifting down all following members. The removed object is released.
 

@@ -24,11 +24,11 @@ func withTintColor(_ color: UIColor) -> UIImage
 - (UIImage *) imageWithTintColor:(UIColor *) color;
 ```
 
-#### Return Value
+## Return Value
 
 A new version of the image that incorporates the specified tint color.
 
-#### Discussion
+## Discussion
 
 For bitmap images, this method draws the background tint color followed by the image contents using the [`CGBlendMode.destinationIn`](../../CoreGraphics/cgblendmode/destinationin.md) mode. For symbol images, this method returns an image that always uses the specified tint color.
 

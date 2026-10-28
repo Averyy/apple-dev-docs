@@ -22,7 +22,7 @@ init(location: CLLocation, name: String, vendorIdentifier: String, restaurantIde
 - (instancetype) initWithLocation:(CLLocation *) location name:(NSString *) name vendorIdentifier:(NSString *) vendorIdentifier restaurantIdentifier:(NSString *) restaurantIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized restaurant object or `nil` if the object could not be created.
 

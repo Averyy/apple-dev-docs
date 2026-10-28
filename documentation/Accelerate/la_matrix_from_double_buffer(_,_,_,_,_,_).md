@@ -25,11 +25,11 @@ func la_matrix_from_double_buffer(_ buffer: UnsafePointer<Double>, _ matrix_rows
 extern la_object_tla_matrix_from_double_buffer(const double *buffer, la_count_t matrix_rows, la_count_t matrix_cols, la_count_t matrix_row_stride, la_hint_t matrix_hint, la_attribute_t attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new la_object_t object representing the matrix.
 
-#### Discussion
+## Discussion
 
 Create a matrix using data from a buffer of doubles.  Ownership of the buffer remains in control of the caller.
 

@@ -22,7 +22,7 @@ typealias CompletionWithItemsHandler = (UIActivity.ActivityType?, Bool, [Any]?, 
 typedef void (^)(NSString *, _Bool, NSArray *, NSError *) UIActivityViewControllerCompletionWithItemsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Upon the completion of an activity, or the dismissal of the activity view controller, the view controller’s completion block is executed. You can use this block to execute any final code related to the service. The parameters of this block are as follows:
 

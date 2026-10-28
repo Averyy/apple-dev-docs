@@ -15,7 +15,7 @@ Returns the number of network packets that the pool is capable of storing.
 virtual kern_return_t GetPacketCount(uint32_t *count);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

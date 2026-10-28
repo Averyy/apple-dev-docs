@@ -25,7 +25,7 @@ var callStackSymbols: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * callStackSymbols;
 ```
 
-#### Discussion
+## Discussion
 
 An array of strings describing the call stack backtrace at the moment the exception was first raised. The format of each string is determined by the `backtrace_symbols()` API
 

@@ -21,11 +21,11 @@ optional func outlineView(_ outlineView: NSOutlineView, writeItems items: [Any],
 - (BOOL) outlineView:(NSOutlineView *) outlineView writeItems:(NSArray *) items toPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drag operation is allowed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoked by `outlineView` after it has been determined that a drag should begin, but before the drag has been started.
 

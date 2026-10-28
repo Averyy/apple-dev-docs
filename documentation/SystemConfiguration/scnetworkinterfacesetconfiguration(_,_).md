@@ -19,7 +19,7 @@ func SCNetworkInterfaceSetConfiguration(_ interface: SCNetworkInterface, _ confi
 Boolean SCNetworkInterfaceSetConfiguration(SCNetworkInterfaceRef interface, CFDictionaryRef config);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

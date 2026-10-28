@@ -17,7 +17,7 @@ Implements a simple lookup table that maps each input integer to a high-dimensio
 class Embedding
 ```
 
-#### Overview
+## Overview
 
 Typically used to embed discrete tokens for processing by neural networks.
 

@@ -10,7 +10,7 @@ Select the optimal LAPACK routine to solve a system of linear equations.
 - macOS 13.3+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 The Accelerate framework provides the LAPACK library for numerical linear algebra. A basic technique of linear algebra is to solve systems of simultaneous equations. For example, the following shows three equations that contain the unknowns *x*, *y*, and *z*:
 
@@ -32,7 +32,7 @@ LAPACK includes routines for solving systems of linear equations as *Ax = b*. Th
 
 Run the sample code app to see the results of each routine solve different example systems.
 
-##### Determine the properties of the coefficient matrix
+### Determine the properties of the coefficient matrix
 
 LAPACK provides different solving routines depending on the properties of the coefficient matrix, *A*:
 
@@ -51,7 +51,7 @@ LAPACK provides different solving routines depending on the properties of the co
 
 If the coefficient matrix is *sparse*, that is, most of the entries in the coefficient matrix are zero, Accelerate provides the [Sparse Solvers](./sparse-solvers-library.md) library to help solve such systems.
 
-##### Select LAPACK variants for data types
+### Select LAPACK variants for data types
 
 The LAPACK routines in this sample code project are all for real, single-precision matrices. All of the routines are available in single- and double-precision for real and complex values. The first character of a routine name defines the type of data the routine works on. For example:
 
@@ -64,7 +64,7 @@ For complex matrices, the LAPACK routine variant for real symmetric matrices req
 
 The routines in this sample code project are suitable for solving full rank systems, that is, they have a unique and exact solution.
 
-##### Define values in column-major layout
+### Define values in column-major layout
 
 The LAPACK routines in this article require the matrix data in column-major layout, which means specifying all the terms in the first column, then all of the terms in the second column, the third column, and so on. For example, if there are two columns with three row values each, the routine specifies the three row values for column one, then the three row values for column two, as the following example illustrates:
 
@@ -79,7 +79,7 @@ The routines return the result as column-major, for example, an array that conta
 
 ![Matrix that consists of three rows and two columns of numbers. The first column has the values 10, 20, and 30. The second column has the values 100, 200, and 300.](https://developer.apple.com/tutorials/images/com.apple.accelerate/x-matrix_2x.png)
 
-##### Select the solving routine for the coefficient matrix type
+### Select the solving routine for the coefficient matrix type
 
 This sample code project provides Swift wrapper functions to each single-precision LAPACK solving routine. Select the routine that most closely matches the coefficient matrix for the highest performance. The following shows the Swift wrapper functions and the underlying LAPACK routines to solve systems with different coefficient matrices:
 
@@ -132,7 +132,7 @@ This sample code project provides Swift wrapper functions to each single-precisi
       - Swift wrapper function: `leastSquares_nonsquare()`
       - Underlying LAPACK routines: `sposv_()` and `ssysv_()`
 
-##### Solve for a nonsquare matrix using QR factorization
+### Solve for a nonsquare matrix using QR factorization
 
 A system of linear equations with a nonsquare coefficient matrix is either:
 
@@ -192,7 +192,7 @@ if let x = x {
 }
 ```
 
-##### Solve for a nonsquare matrix using Cholesky factorization
+### Solve for a nonsquare matrix using Cholesky factorization
 
 Where speed is more important than numerical accuracy, the sample code project provides an alternative to `sgels_(_:_:_:_:_:_:_:_:_:_:_:)`. The `leastSquares_nonsquare(a:dimension:b:)` function exploits the fact that the *x* in *AᵀAx = Aᵀb* equals the *x* in *Ax = b*. This technique creates the square coefficient matrix *AᵀA* and solves with either `symmetric_positiveDefinite_general(a:dimension:b:rightHandSideCount:)` or `symmetric_indefinite_general(a:dimension:b:rightHandSideCount:)`.
 
@@ -227,7 +227,7 @@ if let x = x {
 }
 ```
 
-##### Solve for a rank-deficient matrix
+### Solve for a rank-deficient matrix
 
 Systems with a symmetric matrix that’s not full rank, *rank-deficient matrices*, don’t have a single unique solution. For example, the following two multiplications contain different *x* matrices, but yield the same result in *b*:
 

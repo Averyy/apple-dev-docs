@@ -25,11 +25,11 @@ convenience init(objects: UnsafePointer<AnyObject>, count cnt: Int)
 + (instancetype) arrayWithObjects:(ObjectType const[]) objects count:(NSUInteger) cnt;
 ```
 
-#### Return Value
+## Return Value
 
 A new array including the first `count` objects from `objects`.
 
-#### Discussion
+## Discussion
 
 Elements are added to the new array in the same order they appear in `objects`, up to but not including index `count`. For example:
 

@@ -25,7 +25,7 @@ var defaultMediaDataStorage: AVMediaDataStorage? { get set }
 @property (nonatomic, copy, nullable) AVMediaDataStorage * defaultMediaDataStorage;
 ```
 
-#### Discussion
+## Discussion
 
 This value specifies a location to write sample data that you add to a movie, for any track for whose [`mediaDataStorage`](../avmutablemovietrack/mediadatastorage.md) property is `nil`.
 

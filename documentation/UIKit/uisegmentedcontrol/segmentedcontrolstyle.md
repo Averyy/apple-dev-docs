@@ -19,7 +19,7 @@ The style of the segmented control.
 @property (nonatomic) UISegmentedControlStyle segmentedControlStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default style is [`UISegmentedControlStylePlain`](../uisegmentedcontrolstyle/uisegmentedcontrolstyleplain.md). See [`UISegmentedControlStyle`](../uisegmentedcontrolstyle.md) for descriptions of valid constants.
 

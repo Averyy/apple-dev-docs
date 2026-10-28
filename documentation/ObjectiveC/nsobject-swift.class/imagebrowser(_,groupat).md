@@ -19,11 +19,11 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, groupAt index: Int) -> [AnyHa
 - (NSDictionary *) imageBrowser:(IKImageBrowserView *) aBrowser groupAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that defines the group. The keys in this dictionary can be any of the following constants: [`IKImageBrowserGroupStyleKey`](../../Quartz/ikimagebrowsergroupstylekey.md), [`IKImageBrowserGroupBackgroundColorKey`](../../Quartz/ikimagebrowsergroupbackgroundcolorkey.md), [`IKImageBrowserGroupTitleKey`](../../Quartz/ikimagebrowsergrouptitlekey.md), and [`IKImageBrowserGroupRangeKey`](../../Quartz/ikimagebrowsergrouprangekey.md). For more information on these constants, see [`IKImageBrowserView`](../../Quartz/ikimagebrowserview.md).
 
-#### Discussion
+## Discussion
 
 This method is optional.
 

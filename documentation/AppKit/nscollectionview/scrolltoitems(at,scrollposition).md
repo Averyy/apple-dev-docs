@@ -19,7 +19,7 @@ func scrollToItems(at indexPaths: Set<IndexPath>, scrollPosition: NSCollectionVi
 - (void) scrollToItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths scrollPosition:(NSCollectionViewScrollPosition) scrollPosition;
 ```
 
-#### Discussion
+## Discussion
 
 To animate the scrolling operation, call this method on the collection view’s [`animator()`](../nsanimatablepropertycontainer/animator%28%29.md) proxy object instead.
 

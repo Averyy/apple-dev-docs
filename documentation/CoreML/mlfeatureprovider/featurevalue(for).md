@@ -26,7 +26,7 @@ func featureValue(for featureName: String) -> MLFeatureValue?
 - (MLFeatureValue *) featureValueForName:(NSString *) featureName;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the feature, or nil if no value exists for that name.
 

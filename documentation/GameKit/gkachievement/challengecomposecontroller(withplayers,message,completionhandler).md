@@ -33,11 +33,11 @@ func challengeComposeController(withPlayers playerIDs: [String]?, message: Strin
 - (NSViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A `UIViewController` view that contains the player identifiers and the challenge message.
 
-#### Discussion
+## Discussion
 
 When this method is called, it creates a new background task to handle the request. The method then returns control to your game. Later, when the task is complete, Game Kit calls your completion handler. The completion handler is always called on the main thread.
 

@@ -21,11 +21,11 @@ An animation that starts slowly and then increases speed towards the end of the 
 static var easeIn: Animation { get }
 ```
 
-#### Return Value
+## Return Value
 
 An ease-in animation with the default duration.
 
-#### Discussion
+## Discussion
 
 An easing animation provides motion with a natural feel by varying the acceleration and deceleration of the animation, which matches how things tend to move in reality. With an ease in animation, the motion starts slowly and increases its speed towards the end.
 

@@ -23,11 +23,11 @@ convenience init(identifier: String, content: String?, dateSent: Date?, sender: 
 - (instancetype) initWithIdentifier:(NSString *) identifier content:(NSString *) content dateSent:(NSDate *) dateSent sender:(INPerson *) sender recipients:(NSArray<INPerson *> *) recipients;
 ```
 
-#### Return Value
+## Return Value
 
 A message that SiriKit configures with the specified parameters, or `nil` if there was a problem creating the message.
 
-#### Discussion
+## Discussion
 
 For each participant in the message (sender and recipients), create an instance of [`INPerson`](../inperson.md) using one of the initializers that require an `isMe` parameter. Use [`true`](../../Swift/true.md) for the participant that represents the user of the current device; for all other participants, use [`false`](../../Swift/false.md). When creating each of those objects, provide enough information for you to later identify that same person.
 

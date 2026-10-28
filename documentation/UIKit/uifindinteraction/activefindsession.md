@@ -22,7 +22,7 @@ var activeFindSession: UIFindSession? { get }
 @property (nonatomic, readonly, nullable) UIFindSession * activeFindSession;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the session object managing the details of the search. When no seach is active, [`isFindNavigatorVisible`](./isfindnavigatorvisible.md) is `false`, this returns `nil`.
 

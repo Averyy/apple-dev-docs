@@ -23,7 +23,7 @@ var kDNSServiceFlagsIndeterminate: UInt32 { get }
 kDNSServiceFlagsIndeterminate
 ```
 
-#### Discussion
+## Discussion
 
 There is no valid trust anchor that can be used to determine whether a response is secure or not.
 

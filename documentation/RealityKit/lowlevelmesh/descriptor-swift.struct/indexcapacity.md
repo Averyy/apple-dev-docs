@@ -20,7 +20,7 @@ The number of indices to allocate space for.
 var indexCapacity: Int
 ```
 
-#### Discussion
+## Discussion
 
 You can specify ranges of indices to display dynamically with [`parts`](../parts.md).
 

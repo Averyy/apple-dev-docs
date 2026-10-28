@@ -21,7 +21,7 @@ The specific language associated with a term of address.
 var language: Locale.Language? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is only set for terms of address created through the [`localized(language:pronouns:)`](./localized%28language,pronouns%29.md) function. This property is `nil` otherwise.
 

@@ -17,7 +17,7 @@ The system blocks adult content.
 case auto(Set<WebDomain> = [], except: Set<WebDomain> = [])
 ```
 
-#### Discussion
+## Discussion
 
 The system also blocks websites you provide in `domains`. The system allows websites you provide in `except`, overriding the adult content filter and `domains` set. Your app can block up to 50 web domains and specify up to 50 web domains exceptions at once.
 

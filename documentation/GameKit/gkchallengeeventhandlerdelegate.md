@@ -25,7 +25,7 @@ protocol GKChallengeEventHandlerDelegate : NSObjectProtocol
 @protocol GKChallengeEventHandlerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 By default, GameKit briefly displays a banner over your game when any of the following events occur:
 

@@ -23,7 +23,7 @@ func touches(for view: UIView) -> Set<UITouch>?
 - (NSSet<UITouch *> *) touchesForView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`UITouch`](../uitouch.md) objects representing the touches that belong to the specified view.
 

@@ -26,7 +26,7 @@ var minimumNumberOfTouches: Int { get set }
 
 - [Handling pan gestures](../handling-pan-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_Reverse: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_Reverse;
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is not present, the sample buffer should be played forwards as usual.        Reversal occurs after trimming and speed multipliers.
 

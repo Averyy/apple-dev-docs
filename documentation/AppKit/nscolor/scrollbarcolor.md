@@ -21,7 +21,7 @@ class var scrollBarColor: NSColor { get }
 @property (class, strong, readonly) NSColor * scrollBarColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for scroll bars. For more information, see [`NSColor`](../nscolor.md).
 

@@ -17,7 +17,7 @@ Informs the `NSWorkspace` object that the defaults database has changed.
 - (void) noteUserDefaultsChanged;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSWorkspace` object then reads all the defaults it is interested in and reconfigures itself appropriately. For example, this method is used by the Preferences app to notify the Finder whether the user prefers to see hidden files. Currently has no effect.
 

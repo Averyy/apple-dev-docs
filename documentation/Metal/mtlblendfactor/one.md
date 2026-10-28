@@ -24,7 +24,7 @@ case one
 MTLBlendFactorOne
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = 1`
 

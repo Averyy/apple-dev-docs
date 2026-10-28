@@ -15,7 +15,7 @@ The error message describing the request failure.
 message: ConfigurationErrorStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`ConfigurationErrorStatus`](../configurationerrorstatus.md) string that indicates why the request failed.
 

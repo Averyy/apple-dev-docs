@@ -19,7 +19,7 @@ func moveItem(at indexPath: IndexPath, to newIndexPath: IndexPath)
 - (void) moveItemAtIndexPath:(NSIndexPath *) indexPath toIndexPath:(NSIndexPath *) newIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 After rearranging items in your data source object, use this method to synchronize those changes with the collection view. Calling this method lets the collection view know that it must update its internal data structures and possibly update its visual appearance. You can move the item to a different section or to a new location in the same section. The collection view updates the layout as needed to account for the move, animating cells into position in response.
 

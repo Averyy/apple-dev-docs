@@ -5,7 +5,7 @@
 
 Add text-recognition features to your app using the Vision framework.
 
-#### Overview
+## Overview
 
 One of Vision’s many powerful features is its ability to detect and recognize multilanguage text in images. You can use this functionality in your own apps to handle both real-time and offline use cases. In all cases, all of Vision’s processing happens on the user’s device to enhance performance and user privacy.
 
@@ -25,7 +25,7 @@ Using either path, you may optionally apply a language-correction phase based on
 
 > **Note**:  Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [Detecting Objects in Still Images](./detecting-objects-in-still-images.md).
 
-##### Perform a Text-Recognition Request
+### Perform a Text-Recognition Request
 
 Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](./vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](../CoreGraphics/cgimage.md).
 
@@ -49,7 +49,7 @@ do {
 
 > **Note**:  [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md) uses the accurate path by default. To select the fast path, set the request’s [`recognitionLevel`](./vnrecognizetextrequest/recognitionlevel.md) property to [`VNRequestTextRecognitionLevel.fast`](./vnrequesttextrecognitionlevel/fast.md).
 
-##### Process the Results
+### Process the Results
 
 After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](./vnrequest/results.md), which it returns as an array of [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) objects. Each observation provides the recognized text string, along with a confidence score that indicates the confidence in the accuracy of the recognition.
 
@@ -93,7 +93,7 @@ let boundingRects: [CGRect] = observations.compactMap { observation in
 
 The resulting bounding box differs depending on the path you choose. The fast path calculates the recognized text’s bounding rectangle based on its individual characters. The accurate path tokenizes on whitespace, which means when working with Chinese text, the resulting bounding boxes will likely contain lines or line fragments instead of complete text.
 
-##### Optimize Language Settings
+### Optimize Language Settings
 
 Your choice of fast or accurate path, along with your use of a particular API revision, determines the language support the text-recognition algorithms provide. To determine which languages a particular path and revision support, call the request’s [`supportedRecognitionLanguages(for:revision:)`](./vnrecognizetextrequest/supportedrecognitionlanguages%28for,revision%29.md) class method.
 

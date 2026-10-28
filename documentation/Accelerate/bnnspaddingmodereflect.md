@@ -25,7 +25,7 @@ var BNNSPaddingModeReflect: BNNSPaddingMode { get }
 BNNSPaddingModeReflect
 ```
 
-#### Discussion
+## Discussion
 
 For example, given the following padding size and input:
 

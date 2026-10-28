@@ -15,7 +15,7 @@ Gets information about onscreen windows.
 extern void NSWindowList(NSInteger size, NSInteger list[]);
 ```
 
-#### Discussion
+## Discussion
 
 Provides an ordered list of all onscreen windows. It fills `list` with up to `size` window numbers; the order of windows in the array is the same as their order in the window server’s screen list (their front-to-back order on the screen). Use the count obtained by [`NSCountWindows`](./nscountwindows.md) to specify the size of the array for this function.
 

@@ -17,7 +17,7 @@ String maxTVShowRatingForCountry(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A string representing the maximum allowed rating for a television show in the specified country or region; for example, PG-13.
 

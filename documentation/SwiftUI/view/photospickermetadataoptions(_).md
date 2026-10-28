@@ -20,7 +20,7 @@ nonisolated
 func photosPickerMetadataOptions(_ metadataOptions: PHPickerMetadataOptions) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Photos picker with specified metadata options.
 

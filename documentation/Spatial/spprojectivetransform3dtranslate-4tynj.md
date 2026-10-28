@@ -21,7 +21,7 @@ Returns a transform with an origin that’s offset by the specified size.
 static SPProjectiveTransform3D SPProjectiveTransform3DTranslate(SPProjectiveTransform3D transform, SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 The transform with an origin that’s offset by the specified size.
 

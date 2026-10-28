@@ -24,7 +24,7 @@ func removePass(_ pass: PKPass)
 - (void) removePass:(PKPass *) pass;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if your app doesn’t have the appropriate entitlement.
 

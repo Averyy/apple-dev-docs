@@ -20,7 +20,7 @@ object SubscriptionCreateRequest
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
 - [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
 
-##### Example: subscription with a single item
+### Example: subscription with a single item
 
 ```json
 {
@@ -48,7 +48,7 @@ object SubscriptionCreateRequest
 }
 ```
 
-##### Example: subscription with multiple items and an offer
+### Example: subscription with multiple items and an offer
 
 ```json
 {

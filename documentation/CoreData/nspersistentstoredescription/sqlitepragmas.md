@@ -25,7 +25,7 @@ var sqlitePragmas: [String : NSObject] { get }
 @property (nonatomic, copy, readonly) NSDictionary<NSString *,NSObject *> * sqlitePragmas;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains all of the pragmas set on the associated persistent store. This property is only relevant when the [`type`](./type.md) is set to [`NSSQLiteStoreType`](../nssqlitestoretype.md).
 

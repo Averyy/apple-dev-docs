@@ -12,11 +12,11 @@ IOWorkLoop * GetWorkLoop (
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to IOWorkLoop.
 
-#### Overview
+## Overview
 
 Accessor method to get the IOWorkLoop associated with this HBA.
 

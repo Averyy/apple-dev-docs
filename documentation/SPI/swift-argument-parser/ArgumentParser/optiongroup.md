@@ -22,7 +22,7 @@ struct OptionGroup<Value> where Value : ParsableArguments
 
 - [Defining Commands and Subcommands](./commandsandsubcommands.md)
 
-#### Overview
+## Overview
 
 Use an option group to include a group of options, flags, or arguments declared in a parsable type.
 

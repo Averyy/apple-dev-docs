@@ -23,7 +23,7 @@ case remoteControlNextTrack
 UIEventSubtypeRemoteControlNextTrack
 ```
 
-#### Discussion
+## Discussion
 
 This is a subtype of the [`UIEvent.EventType.remoteControl`](../eventtype/remotecontrol.md) general event type.
 

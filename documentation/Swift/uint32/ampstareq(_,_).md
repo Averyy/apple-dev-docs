@@ -21,7 +21,7 @@ Multiplies two values and stores the result in the left-hand-side variable, wrap
 static func &*= (lhs: inout Self, rhs: Self)
 ```
 
-#### Discussion
+## Discussion
 
 The masking multiplication assignment operator (`&*=`) silently wraps any overflow that occurs during the operation. In the following example, the product of `10` and `50` is greater than the maximum representable `Int8` value, so the result is the partial value after discarding the overflowing bits.
 

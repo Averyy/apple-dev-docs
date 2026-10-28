@@ -24,7 +24,7 @@ class INSpeedResolutionResult
 @interface INSpeedResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INSpeedResolutionResult`](./inspeedresolutionresult.md) object is what you return when resolving speed related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

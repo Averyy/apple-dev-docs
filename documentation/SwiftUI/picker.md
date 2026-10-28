@@ -29,7 +29,7 @@ struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 - [Scoping a search operation](./scoping-a-search-operation.md)
 
-#### Overview
+## Overview
 
 You create a picker by providing a selection binding, a label, and the content for the picker to display. Set the `selection` parameter to a bound property that provides the value to display as the current selection. Set the label to a view that visually describes the purpose of selecting content in the picker, and then provide the content for the picker to display.
 
@@ -75,7 +75,7 @@ List {
 }
 ```
 
-##### Iterating over a picker’s options
+### Iterating over a picker’s options
 
 To provide selection values for the `Picker` without explicitly listing each option, you can create the picker with a [`ForEach`](./foreach.md):
 
@@ -135,7 +135,7 @@ When the user selects chocolate, the picker sets `suggestedTopping` to the value
 
 Another example of when the views in a picker’s [`ForEach`](./foreach.md) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [`Identifiable`](../Swift/identifiable.md) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
 
-##### Styling pickers
+### Styling pickers
 
 You can customize the appearance and interaction of pickers using styles that conform to the [`PickerStyle`](./pickerstyle.md) protocol, like [`segmented`](./pickerstyle/segmented.md) or [`menu`](./pickerstyle/menu.md). To set a specific style for all picker instances within a view, use the [`pickerStyle(_:)`](./view/pickerstyle%28_%29.md) modifier. The following example applies the [`segmented`](./pickerstyle/segmented.md) style to two pickers that independently select a flavor and a topping:
 

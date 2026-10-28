@@ -19,11 +19,11 @@ func GetVoiceDescription(_ voice: UnsafePointer<VoiceSpec>?, _ info: UnsafeMutab
 OSErr GetVoiceDescription(const VoiceSpec *voice, VoiceDescription *info, long infoLength);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `GetVoiceDescription` functionfills out the voice description structure pointed to by the `info` parameterwith the correct information for the voice specified by the `voice` parameter. Itfills in the `length` fieldof the voice description structure with the number of bytes actuallycopied. This value will always be less than or equal to the valuethat your application passes in `infoLength` beforecalling `GetVoiceDescription`.This scheme allows applications targeted for the current versionof the Speech Synthesis Manager to work on future versions thatmight have longer voice description structures; it also allows youto write code for future versions of the Speech Synthesis Managerthat will also run on computers that support only the current version.
 

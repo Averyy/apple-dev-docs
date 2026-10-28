@@ -23,11 +23,11 @@ class func fixedAttachment(with item1: any UIDynamicItem, attachedTo item2: any 
 + (instancetype) fixedAttachmentWithItem:(id<UIDynamicItem>) item1 attachedToItem:(id<UIDynamicItem>) item2 attachmentAnchor:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new attachment object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod connecting each item to the specified anchor point. The position of the items relative to each other does not change. Forces acting on the items move them together as if they were a single unit.
 

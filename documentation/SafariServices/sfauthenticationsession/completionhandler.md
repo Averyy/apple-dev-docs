@@ -21,7 +21,7 @@ typealias CompletionHandler = (URL?, (any Error)?) -> Void
 typedef void (^)(NSURL *, NSError *) SFAuthenticationCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The custom callback URL should only be a custom URL scheme, and not a standard scheme (e.g. http or https). The session looks at the scheme registered first and routes to the app asking to start a session before potentially routing the scheme to another app.
 

@@ -21,11 +21,11 @@ Updates the buffer’s initialized memory with the given elements.
 func update<S>(from source: S) -> (unwritten: S.Iterator, index: UnsafeMutableBufferPointer<Element>.Index) where Element == S.Element, S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 An iterator to any elements of `source` that didn’t fit in the buffer, and the index one past the last updated element in the buffer.
 
-#### Discussion
+## Discussion
 
 The buffer’s memory must be initialized or its `Element` type must be a trivial type.
 

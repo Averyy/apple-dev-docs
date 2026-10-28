@@ -22,7 +22,7 @@ class let invalidInterfaceOrientationException: NSExceptionName
 extern NSExceptionName const UIApplicationInvalidInterfaceOrientationException;
 ```
 
-#### Discussion
+## Discussion
 
 This exception is thrown if a view controller or the app returns `0` instead of a valid set of supported interface orientation values. It is also thrown if the orientation returned by a view controller’s [`preferredInterfaceOrientationForPresentation`](../uiviewcontroller/preferredinterfaceorientationforpresentation.md) method does not match one of the view controller’s supported orientations.
 

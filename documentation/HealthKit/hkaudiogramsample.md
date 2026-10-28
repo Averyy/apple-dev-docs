@@ -24,7 +24,7 @@ class HKAudiogramSample
 @interface HKAudiogramSample : HKSample
 ```
 
-#### Overview
+## Overview
 
 This sample stores the results from a hearing test. The sample stores the audiogram data as an array of sensitivity points.
 

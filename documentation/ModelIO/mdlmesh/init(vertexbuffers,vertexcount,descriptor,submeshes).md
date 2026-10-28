@@ -24,11 +24,11 @@ init(vertexBuffers: [any MDLMeshBuffer], vertexCount: Int, descriptor: MDLVertex
 - (instancetype) initWithVertexBuffers:(NSArray<id<MDLMeshBuffer>> *) vertexBuffers vertexCount:(NSUInteger) vertexCount descriptor:(MDLVertexDescriptor *) descriptor submeshes:(NSArray<MDLSubmesh *> *) submeshes;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a mesh from vertex data that describes separate vertex attributes in separate arrays with matching indices (a structure of arrays).
 

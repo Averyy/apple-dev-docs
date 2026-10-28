@@ -24,7 +24,7 @@ var leftShoulder: GCControllerButtonInput { get }
 @property (nonatomic, readonly) GCControllerButtonInput * leftShoulder;
 ```
 
-#### Discussion
+## Discussion
 
 The shoulder buttons in the extended gamepad profile are analog buttons.
 

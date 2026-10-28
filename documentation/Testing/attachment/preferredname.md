@@ -16,7 +16,7 @@ A filename to use when saving this attachment.
 var preferredName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is used as a hint to the testing library. The testing library may substitute a different filename as needed. If the value of this property has not been explicitly set, the testing library will attempt to generate its own value.
 

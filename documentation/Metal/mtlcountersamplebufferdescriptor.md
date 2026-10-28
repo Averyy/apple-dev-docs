@@ -28,7 +28,7 @@ class MTLCounterSampleBufferDescriptor
 
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
-#### Overview
+## Overview
 
 To create a new counter sample buffer, create and configure an [`MTLCounterSampleBufferDescriptor`](./mtlcountersamplebufferdescriptor.md) instance, and then call an [`MTLDevice`](./mtldevice.md) instance’s [`makeCounterSampleBuffer(descriptor:)`](./mtldevice/makecountersamplebuffer%28descriptor%29.md) method. See [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md).
 

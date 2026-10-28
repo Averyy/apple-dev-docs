@@ -19,7 +19,7 @@ The region of the view or control where the pointer must hover to trigger the ap
 @preconcurrency var sourceRect: CGRect? { get }
 ```
 
-#### Discussion
+## Discussion
 
 To set [`sourceRect`](../uiviewcontrollerpreviewing/sourcerect.md), create a tooltip configuration object using the [`init(toolTip:in:)`](./init%28tooltip,in%29.md) method.
 

@@ -13,7 +13,7 @@
 kINQUIRY_ANSI_VERSION_SCSI_SPC_2_Compliant = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 SPC-2 conformance claimed by the device server.
 

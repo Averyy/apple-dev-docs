@@ -19,7 +19,7 @@ var characters: String? { get }
 @property (copy, readonly, nullable) NSString * characters;
 ```
 
-#### Discussion
+## Discussion
 
 These characters are derived from a keyboard mapping that associates various key combinations with Unicode characters. This property is only valid for key-up and key-down events. It raises an `NSInternalInconsistencyException` if accessed on any other kind of event object.
 

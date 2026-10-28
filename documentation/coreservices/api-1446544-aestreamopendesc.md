@@ -19,11 +19,11 @@ func AEStreamOpenDesc(_ ref: AEStreamRef!, _ newType: DescType) -> OSStatus
 OSStatus AEStreamOpenDesc(AEStreamRef ref, DescType newType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this routine to mark the beginning of a descriptor definition in an `AEDesc`. After calling this routine, you should call [`AEStreamWriteData(_:_:_:)`](./api-1442610-aestreamwritedata.md) one or more times to write the descriptor data to the stream. When you are done writing data, you must call [`AEStreamCloseDesc(_:)`](./api-1449272-aestreamclosedesc.md) to complete the descriptor definition.
 

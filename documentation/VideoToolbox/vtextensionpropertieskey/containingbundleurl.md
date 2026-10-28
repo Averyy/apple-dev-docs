@@ -19,7 +19,7 @@ static let containingBundleURL: VTExtensionPropertiesKey
 extern VTExtensionPropertiesKey const kVTExtensionProperties_ContainingBundleURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFURLRef` value with the URL of the extension host application.
 

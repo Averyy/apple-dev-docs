@@ -20,7 +20,7 @@ case minX
 NSRectEdgeMinX
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`CGRectEdge.minXEdge`](../../CoreFoundation/cgrectedge/minxedge.md).
 

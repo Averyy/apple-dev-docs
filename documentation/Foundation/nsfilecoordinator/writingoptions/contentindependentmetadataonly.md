@@ -25,7 +25,7 @@ static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions { ge
 NSFileCoordinatorWritingContentIndependentMetadataOnly
 ```
 
-#### Discussion
+## Discussion
 
 Any changes written to the item’s contents during this coordinated write may not be preserved or may fail. Changing metadata that is related to the item’s content is also not supported, and those changes may not be preserved. For example, changing the value of [`tagNamesKey`](../../urlresourcekey/tagnameskey.md) is supported, but changing the value of [`contentModificationDateKey`](../../urlresourcekey/contentmodificationdatekey.md) is not.
 

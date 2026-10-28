@@ -4,11 +4,11 @@
 
 Specify how color values are stored.
 
-#### Overview
+## Overview
 
 The ColorSync bitmap data type [`CMBitmap`](../cmbitmap.md) includes a field that identifies the color space in which the color values of the bitmap image are expressed. This enumeration defines the types of packing for a color space’s storage format. The enumeration also defines an alpha channel that can be added as a component of a color value to define the degree of opacity or transparency of a color. These constants are combined with the constants described in [Abstract Color Space Constants](./api-1560701-abstract_color_space_constants.md) to create values that identify a bitmap’s color space. Your application does not specify color packing constants directly, but rather uses the combined constants, which are described in [`CMBitmapColorSpace`](../cmbitmapcolorspace.md).
 
-##### Version-Notes
+### Version-Notes
 
 The constants `cm48_16ColorPacking` and `cm64_16ColorPacking` were added in ColorSync version 2.5.
 

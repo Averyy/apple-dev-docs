@@ -5,13 +5,13 @@
 
 Create a media player inside your app to play audio from the user’s media library.
 
-#### Overview
+## Overview
 
 There are many reasons you might want to let users play music from their music library inside your app. For example, you might want them to listen to their own music while playing a particular level in your game. Add a built-in music player to quickly play audio tracks from the user’s music library while your app is running.
 
 > **Note**:  To follow these steps, you must have a provisioned iOS device. Simulator has no access to a device’s music library.
 
-##### Specify a usage description string
+### Specify a usage description string
 
 To give the user control over their personal data, apps must obtain permission to access the person’s music library. The first time your app tries to access someone’s media library, the system displays an alert that prompts them to grant or deny access to their music. The alert message includes your app’s usage-description string, which is a text description of how you plan to use the music.
 
@@ -21,7 +21,7 @@ To specify the usage-description string for your app, add the [`NSAppleMusicUsag
 
 Users can deny access to their media library, so design your app to run even without that access. If your app requires music, devise a backup plan that doesn’t involve asking the person to reconsider their decision. For example, include some default music in your app’s bundle.
 
-##### Configure the media player contents
+### Configure the media player contents
 
 To play the user’s music, your app needs an [`MPMusicPlayerController`](./mpmusicplayercontroller.md) object. The Media Player framework defines several player controllers, each of which serves a different purpose. To manage a queue of songs that’s specific to your app, create an application queue player, and fill it with one or more songs.
 
@@ -36,7 +36,7 @@ musicPlayer.setQueue(with: .songs())
 
 If you don’t want all the items in a collection, filter the list by adding one or more predicates to your [`MPMediaQuery`](./mpmediaquery.md). For example, you might specify a predicate to match only songs with a specific word in the title. For more information about configuring media queries, see [`MPMediaQuery`](./mpmediaquery.md).
 
-##### Play and pause the music
+### Play and pause the music
 
 After you add one or more songs to your music player, begin playback by calling the [`play()`](./mpmediaplayback/play%28%29.md) method. Media players adopt the [`MPMediaPlayback`](./mpmediaplayback.md) protocol and support all of the normal methods to play, pause, and stop playback. You can also use the methods of that protocol to change the playback speed and seek within a media item.
 

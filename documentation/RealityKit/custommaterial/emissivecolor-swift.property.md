@@ -19,7 +19,7 @@ The color of light this material emits.
 var emissiveColor: CustomMaterial.EmissiveColor { get set }
 ```
 
-#### Discussion
+## Discussion
 
 With physically based rendering (PBR), you can give entities in RealityKit the appearance of emitting light. Use this property to simulate real-world objects that glow, such as objects with LEDs or computer screens. To enable light emission from a material, set [`emissiveIntensity`](../physicallybasedmaterial/emissiveintensity.md) to a value greater than zero, then specify a color (other than black) using this property. You can specify a single emissive color for the entire material, or use a UV-mapped image texture to use different colors for different parts of the entity.
 

@@ -26,7 +26,7 @@ var contentVersion: String { get }
 @property (nonatomic, readonly) NSString * contentVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The version string must be formatted as a series of integers separated by periods.
 

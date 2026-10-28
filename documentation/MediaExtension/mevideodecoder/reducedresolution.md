@@ -19,7 +19,7 @@ optional var reducedResolution: CGSize { get set }
 @property (readwrite) CGSize reducedResolution;
 ```
 
-#### Discussion
+## Discussion
 
 This optional property conveys a request for reduced resolution for decoding. Decoders that only support a fixed set of resolutions should pick the smallest resolution greater than or equal to the requested width and height. If the output [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) is not in a format where reduced resolution decoding is supported, this setting should be disregarded. This property is set on the extension when a Video Toolbox client sets the [`kVTDecompressionPropertyKey_ReducedResolutionDecode`](../../VideoToolbox/kvtdecompressionpropertykey_reducedresolutiondecode.md) property on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

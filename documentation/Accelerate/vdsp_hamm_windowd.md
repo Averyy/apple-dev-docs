@@ -21,7 +21,7 @@ Creates a double-precision Hamming window.
 extern void vDSP_hamm_windowD(double *__C, vDSP_Length __N, int __Flag);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_hamm_window`](./vdsp_hamm_window.md) and [`vDSP_hamm_windowD`](./vdsp_hamm_windowd.md) functions create a Hamming window vector using the following operation:
 

@@ -28,7 +28,7 @@ optional func resolveAffinityType(for intent: INUpdateMediaAffinityIntent) async
 - (void) resolveAffinityTypeForUpdateMediaAffinity:(INUpdateMediaAffinityIntent *) intent withCompletion:(void (^)(INMediaAffinityTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the affinity type to which the media item is updated. Always strive toward a successful resolution to the specific media items, but feel free to ask for confirmation of the selected media items if there’s some uncertainty about the media items chosen.
 

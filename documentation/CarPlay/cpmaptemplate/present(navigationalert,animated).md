@@ -21,7 +21,7 @@ func present(navigationAlert: CPNavigationAlert, animated: Bool)
 - (void) presentNavigationAlert:(CPNavigationAlert *) navigationAlert animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect when the map template is already displaying a navigation alert. Dismiss the current alert before presenting a new one.
 

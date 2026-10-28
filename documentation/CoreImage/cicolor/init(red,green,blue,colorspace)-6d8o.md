@@ -23,11 +23,11 @@ convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGCol
 - (instancetype) initWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 This will return null if the `CGColorSpace` is not `kCGColorSpaceModelRGB`. The RGB values can be outside the `0...1` range if the `CGColorSpace` is unclamped.
 

@@ -15,7 +15,7 @@ Rounds the value to an integral value using the specified rounding rule.
 mutating func round(_ rule: FloatingPointRoundingRule)
 ```
 
-#### Discussion
+## Discussion
 
 The following example rounds a value using four different rounding rules:
 

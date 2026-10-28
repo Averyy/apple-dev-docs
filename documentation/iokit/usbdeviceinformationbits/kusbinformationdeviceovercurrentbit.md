@@ -14,7 +14,7 @@
 kUSBInformationDeviceOvercurrentBit = 7
 ```
 
-#### Discussion
+## Discussion
 
 The USB device generated an overcurrent
 

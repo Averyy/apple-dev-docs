@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as true or false.
 case truth
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as either `true` or `false`. The formatter converts all positive and negative nonzero values to `true`, and only zero to `false`. The following example applies the `truth` formatter to the 32-bit integer value `0`:
 

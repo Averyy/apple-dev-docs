@@ -20,11 +20,11 @@ Creates a download object for the asset pack that you schedule using a download 
 - (BADownload *) downloadForContentRequest:(BAContentRequest) contentRequest;
 ```
 
-#### Return Value
+## Return Value
 
 A download object.
 
-#### Discussion
+## Discussion
 
 > **Remark**: Use this method in your downloader extension; use [`download`](./download.md) instead in your main app.
 

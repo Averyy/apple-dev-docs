@@ -19,11 +19,11 @@ func layoutAttributesForDropTarget(at pointInCollectionView: NSPoint) -> NSColle
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForDropTargetAtPoint:(NSPoint) pointInCollectionView;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object that identifies the element in which the drop would occur.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method tests the specified point to see if it lands inside an item, supplementary view, or decoration view of the collection view. If it does, the method returns the layout attributes for that element.
 

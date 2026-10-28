@@ -8,7 +8,7 @@ An atom that describes the type of a node and its location.
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 The node location atom is the only child atom defined for the node ID atom. Its atom type is `kQTVRNodeLocationAtomType` (`'nloc'`). A node location atom describes the type of a node and its location.
 

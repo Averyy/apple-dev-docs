@@ -21,7 +21,7 @@ struct CPContentStyle
 enum CPContentStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The vehicle selects the content style according to the ambient light level. Your navigation app can use this value to determine the most appropriate style of map content to draw in its base view. The content style is independent of the user interface style, which controls light and dark mode.
 

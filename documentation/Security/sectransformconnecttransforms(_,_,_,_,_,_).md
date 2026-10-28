@@ -21,11 +21,11 @@ func SecTransformConnectTransforms(_ sourceTransformRef: SecTransform, _ sourceA
 extern SecGroupTransformRefSecTransformConnectTransforms(SecTransformRef sourceTransformRef, CFStringRef sourceAttributeName, SecTransformRef destinationTransformRef, CFStringRef destinationAttributeName, SecGroupTransformRef group, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SecGroupTransform`](./secgrouptransform.md) object that you can use for chaining calls to [`SecTransformConnectTransforms(_:_:_:_:_:_:)`](./sectransformconnecttransforms%28_,_,_,_,_,_%29.md).
 
-#### Discussion
+## Discussion
 
 This function places transforms into a group by attaching the value of an attribute of one transform to the attribute of another transform. Typically the attribute supplying the data is the kSecTransformAttrOutput attribute but that is not a requirement. It can be used to set an attribute like Salt with the output attribute of a random number transform. This function returns an error and the named attribute will not be changed if [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md) had previously been called on the transform.
 

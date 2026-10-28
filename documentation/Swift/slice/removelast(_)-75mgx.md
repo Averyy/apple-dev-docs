@@ -23,7 +23,7 @@ mutating func removeLast(_ k: Int)
 
 Available when `Self` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 Attempting to remove more elements than exist in the collection triggers a runtime error.
 

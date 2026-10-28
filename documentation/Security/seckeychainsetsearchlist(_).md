@@ -21,11 +21,11 @@ func SecKeychainSetSearchList(_ searchList: CFArray) -> OSStatus
 OSStatus SecKeychainSetSearchList(CFArrayRef searchList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The default keychain search list is used by several functions; see for example [`SecKeychainSearchCreateFromAttributes`](./seckeychainsearchcreatefromattributes.md), [`SecKeychainFindInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./seckeychainfindinternetpassword%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md), or [`SecKeychainFindGenericPassword(_:_:_:_:_:_:_:_:)`](./seckeychainfindgenericpassword%28_,_,_,_,_,_,_,_%29.md). To obtain the current default keychain search list, use the [`SecKeychainCopySearchList(_:)`](./seckeychaincopysearchlist%28_%29.md) function.
 

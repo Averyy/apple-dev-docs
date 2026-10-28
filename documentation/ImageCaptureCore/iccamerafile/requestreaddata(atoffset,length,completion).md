@@ -27,7 +27,7 @@ func requestReadData(atOffset offset: off_t, length: off_t) async throws -> Data
 - (void) requestReadDataAtOffset:(off_t) offset length:(off_t) length completion:(void (^)(NSData *, NSError *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The completion block executes on an any available queue; often this is not the main queue.
 

@@ -25,7 +25,7 @@ func dealloc()
 - (void) dealloc;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves as described in the `NSObject` class specification under the [`dealloc`](../../ObjectiveC/nsobject-swift.class/dealloc.md) instance method.
 

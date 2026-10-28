@@ -25,11 +25,11 @@ string RegulationResponse.ResponseValue
 - `FALSE`: A generic negative response.
 - `NOT_ANSWERED`: No response has been provided yet.
 
-#### Discussion
+## Discussion
 
 Which values apply depends on the paired `regulationType`: Sapin Law questions expect `AGENT`/`NOT_AGENT` or `FRENCH_BUSINESS`/`NOT_FRENCH_BUSINESS`, while other regulation types may use the generic `TRUE`/`FALSE`.
 
-##### Example
+### Example
 
 ```json
 {

@@ -21,7 +21,7 @@ The set of strings that stores acceptable spellings for empty values.
 var nilEncodings: Set<String>
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `["", "#N/A", "#N/A N/A", "#NA", "N/A", "NA", "NULL", "n/a", "null"]`.
 

@@ -29,11 +29,11 @@ vImage_Error vImagePremultiplyData_ARGB8888(const vImage_Buffer *src, const vIma
 
 - [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function multiplies color channels by the alpha channel using the following code:
 

@@ -25,11 +25,11 @@ func contains(_ str: String) -> Bool
 - (BOOL) containsString:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains `str`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling [`range(of:options:)`](./range%28of,options%29.md) with no options.
 

@@ -6,7 +6,7 @@
 
 Upload your app previews, including video files, to App Store Connect by using the asset upload APIs.
 
-#### Overview
+## Overview
 
 > **Note**:  The app preview and app preview set resources this sample uses are deprecated. Manage app preview media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 
@@ -16,7 +16,7 @@ The sample’s script first generates an authentication token, so it can call th
 
 For more information about the process of uploading assets, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This project requires Python 3, which is pre-installed on macOS 10.15. It uses Python’s `pipenv` dependency management system, which you need to install. Follow these steps to install `pipenv` and the required Python modules:
 
@@ -41,7 +41,7 @@ This project requires Python 3, which is pre-installed on macOS 10.15. It uses P
 
    If you’ve installed your own version of Python, the `pipenv` path may be different.
 
-##### Add the API Key to the Script and Prepare the Upload
+### Add the API Key to the Script and Prepare the Upload
 
 Prepare to run the script by following these steps:
 
@@ -49,7 +49,7 @@ Prepare to run the script by following these steps:
 2. Make sure the video file you’d like to upload is available on your local machine. For more information about app previews, including technical specifications, see [Show More with App Previews](https://developer.apple.com/app-store/app-previews/).
 3. Your app must be in App Store Connect with a version in the “Prepare for Submission” state. To upload the app preview, you’ll need the `bundle id`, `platform`, `version number`, and `locale` of this app.
 
-##### Provide Command-Line Parameters to Run the Script
+### Provide Command-Line Parameters to Run the Script
 
 On the command line, run this command, replacing the parameters with actual values:
 
@@ -72,7 +72,7 @@ The following example replaces `{bundle id}` with `com.mycompany.MyApp`; `{platf
 ~/Library/Python/3.7/bin/pipenv run python3 upload-preview.py com.mycompany.MyApp IOS 1.0 en-US IPHONE_65 ../my-video.mp4
 ```
 
-##### Generate an Authentication Token
+### Generate an Authentication Token
 
 First, the script creates a JSON Web Token (JWT) that it uses to authenticate each App Store Connect API request. The JWT includes an expiration timestamp, along with an Issuer ID, Key ID, and the `appstoreconnect-v1` audience. The token is signed using the ES256 algorithm and the private key.
 
@@ -94,7 +94,7 @@ def create_token():
     return token_data.decode('UTF-8')
 ```
 
-##### Find or Create the App Preview Set
+### Find or Create the App Preview Set
 
 The App Store Connect API requires the addition of an app preview to an *app preview set*. Create one app preview set for each preview type and each locale. Each set includes up to three previews. For example, a set might have a 6.5 inch iPhone in the US English locale, and another in the Mexican Spanish locale.
 
@@ -180,7 +180,7 @@ preview_set_response = make_http_request(
 )
 ```
 
-##### Reserve an App Preview
+### Reserve an App Preview
 
 Once the sample project finds or creates the app preview set, it reserves a new app preview associated with the app preview set ID. The reservation tells App Store Connect the name and size of the file the script intends to upload.
 
@@ -212,7 +212,7 @@ reserve_preview_response = make_http_request(
 )
 ```
 
-##### Upload the Binary Data
+### Upload the Binary Data
 
 In response to the reservation request, App Store Connect responds with a set of upload operations. Use the upload operations to upload a file, potentially in multiple parts. The sample uses the `offset` and `length` in the upload operation to extract a portion of the source file.
 
@@ -233,7 +233,7 @@ make_http_request(
 )
 ```
 
-##### Commit the App Preview
+### Commit the App Preview
 
 Once all the parts of the file are uploaded, the sample code then demonstrates how to commit the app preview by marking it uploaded and providing an MD5 checksum of the original source file.
 
@@ -258,7 +258,7 @@ make_http_request(
 )
 ```
 
-##### Verify the App Preview
+### Verify the App Preview
 
 App Store Connect processes the asset asynchronously. Check the upload’s status in App Store Connect or by re-requesting the `/v1/appPreview/{id}` and examining the response.
 

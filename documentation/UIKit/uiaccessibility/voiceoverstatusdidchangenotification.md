@@ -24,7 +24,7 @@ static let voiceOverStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityVoiceOverStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this notification to customize your app’s UI for VoiceOver users. For example, if you display a UI element that briefly overlays other parts of your UI, you can make the display persistent for VoiceOver users, but allow it to not appear for users who aren’t using VoiceOver. You can also use the [`isVoiceOverRunning`](./isvoiceoverrunning.md) function to determine whether VoiceOver is currently running.
 

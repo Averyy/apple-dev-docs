@@ -23,7 +23,7 @@ init(mapItem: MKMapItem?)
 - (instancetype) initWithMapItem:(MKMapItem *) mapItem;
 ```
 
-#### Discussion
+## Discussion
 
 Displays an inline map with the place data.
 

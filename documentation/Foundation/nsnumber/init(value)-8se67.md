@@ -25,7 +25,7 @@ init(value: UInt8)
 - (NSNumber *) initWithUnsignedChar:(unsigned char) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as an `unsigned char`.
 

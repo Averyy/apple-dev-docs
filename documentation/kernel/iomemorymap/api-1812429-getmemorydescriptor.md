@@ -11,11 +11,11 @@ Accessor to the IOMemoryDescriptor the mapping was created from.
 virtual IOMemoryDescriptor * getMemoryDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 An IOMemoryDescriptor reference, which is valid while the IOMemoryMap object is retained. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method returns the IOMemoryDescriptor the mapping was created from.
 

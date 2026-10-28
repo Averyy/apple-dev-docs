@@ -22,7 +22,7 @@ struct BETextReplacementOptions
 enum BETextReplacementOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`BETextInput`](./betextinput.md) protocol’s [`replaceText(_:withText:options:completionHandler:)`](./betextinput/replacetext%28_,withtext,options,completionhandler%29.md) method takes in instance of this structure as an argument.
 

@@ -25,7 +25,7 @@ typealias CFOptionFlags = UInt
 typedef unsigned long CFOptionFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The flag bits are specific to particular opaque types and functions in Core Foundation.
 

@@ -25,7 +25,7 @@ let CBCentralManagerRestoredStatePeripheralsKey: String
 extern NSString * const CBCentralManagerRestoredStatePeripheralsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSArray`](../Foundation/nsarray.md) of [`CBPeripheral`](./cbperipheral.md) objects. The array contains all of the peripherals connected to the central manager (or had a pending connection) at the time the system stopped the app.
 

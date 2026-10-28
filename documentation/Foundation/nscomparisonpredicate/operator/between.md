@@ -25,7 +25,7 @@ case between
 NSBetweenPredicateOperatorType
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../../Swift/true.md) if `[lhs between rhs]`; the right hand side must be an array in which the first element sets the lower bound and the second element the upper, inclusive. Comparison is performed using `compare(_:)` or the class-appropriate equivalent.
 

@@ -24,7 +24,7 @@ var count: Int { get set }
 @property (nonatomic) NSUInteger count;
 ```
 
-#### Discussion
+## Discussion
 
 Each entry represents one item in the heap. The size of the individual entries depends on the heap type.
 

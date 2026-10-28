@@ -23,11 +23,11 @@ convenience init(duration: TimeInterval, curve: UIView.AnimationCurve, animation
 - (instancetype) initWithDuration:(NSTimeInterval) duration curve:(UIViewAnimationCurve) curve animations:(void (^)()) animations;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized animator object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create an animator object that uses the existing UIKit timing curves to control the animation behavior. Standard UIKit timing curves include [`UIView.AnimationCurve.linear`](../uiview/animationcurve/linear.md) and [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md) among others.
 

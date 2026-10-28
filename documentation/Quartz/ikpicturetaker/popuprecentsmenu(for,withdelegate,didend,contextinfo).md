@@ -19,7 +19,7 @@ func popUpRecentsMenu(for aView: NSView!, withDelegate delegate: Any!, didEnd di
 - (void) popUpRecentsMenuForView:(NSView *) aView withDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `didEndSelector` method should have the following signature:
 

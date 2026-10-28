@@ -23,7 +23,7 @@ Returns a new fully connected layer parameters structure from the specified para
 init(i_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor, activation: BNNSActivation)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input data type and the weights data type must be equal and be `float`, `float16`, `int8`, or `int16` for the forward pass. The output data type must be `float` for the forward pass. All three arrays must be `float` for the backward pass.
 

@@ -15,7 +15,7 @@ Calculates the absolute value of each element in the supplied single-precision v
 void vDSP_vabs(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function performs the following operation to write the absolute values of the input elements to the corresponding output elements:
 

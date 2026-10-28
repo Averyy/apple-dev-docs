@@ -21,7 +21,7 @@ Creates a new string containing the characters in the given sequence.
 init<S>(_ other: S) where S : LosslessStringConvertible, S : Sequence, S.Element == Character
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create a new string from the result of one or more collection operations on a string’s characters. For example:
 

@@ -15,7 +15,7 @@ An event notifying the listener that the player changed a media item.
 attribute  mediaItemDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute contains the reason that the media item changed. Valid values are: `errorDidOccur`, `fastForwardedToEndOfMediaItem`, `manuallyChanged`, `newPlaylist`, `playerInvalidated`, and `playedToEndOfMediaItem`. The listener is passed an event object with the following attributes:
 

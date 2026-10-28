@@ -23,7 +23,7 @@ var kDNSServiceErr_DoubleNAT: Int { get }
 kDNSServiceErr_DoubleNAT
 ```
 
-#### Discussion
+## Discussion
 
 More than one NAT gateway between source and destionation.
 

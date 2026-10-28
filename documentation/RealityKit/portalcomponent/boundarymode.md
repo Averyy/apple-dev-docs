@@ -20,7 +20,7 @@ A combination of clipping and crossing behaviors to apply to a portal boundary.
 enum BoundaryMode
 ```
 
-#### Overview
+## Overview
 
 Pass this value to the factory entry points to configure [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) together.
 

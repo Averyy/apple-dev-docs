@@ -15,11 +15,11 @@ Get the offset into a UPL at which this buffer begins.
 uint32_t buf_uploffset(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Buffer's uploffset--does not check whether that value makes sense for this buffer.
 
-#### Discussion
+## Discussion
 
 This function should only be called on iobufs, i.e. buffers allocated with buf_alloc().
 

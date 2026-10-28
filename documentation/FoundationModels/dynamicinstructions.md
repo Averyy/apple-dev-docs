@@ -25,7 +25,7 @@ protocol DynamicInstructions
 - [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
 
-#### Overview
+## Overview
 
 Dynamic instructions provide a declarative approach to assembling instructions and tools that a [`LanguageModelSession`](./languagemodelsession.md) uses. The framework evaluates them before every request to the model, so the body can contain conditional logic that’s based on current app state.
 

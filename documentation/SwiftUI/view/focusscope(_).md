@@ -18,11 +18,11 @@ nonisolated
 func focusScope(_ namespace: Namespace.ID) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets the namespace of descendants for default focus.
 
-#### Discussion
+## Discussion
 
 The returned view gets associated with the provided namespace. Pass this namespace to [`prefersDefaultFocus(_:in:)`](./prefersdefaultfocus%28_,in%29.md) and the [`resetFocus`](../environmentvalues/resetfocus.md) function.
 

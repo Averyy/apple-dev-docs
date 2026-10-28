@@ -19,7 +19,7 @@ func ABSearchElementMatchesRecord(_ searchElement: ABSearchElementRef!, _ record
 extern bool ABSearchElementMatchesRecord(ABSearchElementRef searchElement, ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` ifthe `record` parameter satisfies theconditions in the `searchElement`, `false` otherwise.
 

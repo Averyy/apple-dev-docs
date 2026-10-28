@@ -15,7 +15,7 @@ The context for playing a media queue.
 object UserActivity
 ```
 
-#### Discussion
+## Discussion
 
 Create a `UserActivity` and provide it in your response to a [`Process a Play Media Intent`](./playmedia-1g2o9.md). When the client receives your response, it includes this activity in its request to [`Get a Media Queue`](./playmedia-1onzj.md) to define the queue it’s requesting.
 

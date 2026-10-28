@@ -25,7 +25,7 @@ func sync(execute block: () -> Void)
 extern void dispatch_sync(dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits a block to the specified dispatch queue for synchronous execution. Unlike [`dispatch_async`](../dispatch_async.md), this function does not return until the block has finished. Calling this function and targeting the current queue results in deadlock.
 

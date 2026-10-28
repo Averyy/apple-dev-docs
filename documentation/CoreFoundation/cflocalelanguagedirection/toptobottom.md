@@ -23,7 +23,7 @@ case topToBottom
 kCFLocaleLanguageDirectionTopToBottom
 ```
 
-#### Discussion
+## Discussion
 
 The language direction is from top to bottom.
 

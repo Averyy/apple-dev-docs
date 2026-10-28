@@ -21,7 +21,7 @@ An object that represents a perspective warp transformation.
 struct ImageHomographicAlignmentObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`TrackHomographicImageRegistrationRequest`](./trackhomographicimageregistrationrequest.md), informing the [`warpTransform`](./imagehomographicalignmentobservation/warptransform.md) performed to align the input images.
 

@@ -25,11 +25,11 @@ func inverse() -> Self
 - (instancetype) inverseDifference;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the receiver with all removals changed to insertions (and vice versa).
 
-#### Discussion
+## Discussion
 
 Applying a difference to an ordered collection and then applying the inverse difference results in the original ordered collection:
 

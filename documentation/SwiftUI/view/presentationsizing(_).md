@@ -22,7 +22,7 @@ nonisolated
 func presentationSizing(_ sizing: some PresentationSizing) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to apply a [`PresentationSizing`](../presentationsizing.md) to a presentation like [`sheet(isPresented:onDismiss:content:)`](./sheet%28ispresented,ondismiss,content%29.md). The `sizing` parameter defines the size proposed to the content, and the presentation adopts the returned size. The default value is `automatic`.
 

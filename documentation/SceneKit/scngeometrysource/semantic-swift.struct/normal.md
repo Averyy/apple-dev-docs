@@ -25,7 +25,7 @@ static let normal: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticNormal;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing the surface normal vector at each vertex in the geometry. SceneKit uses this information to compute lighting effects on the surface.
 

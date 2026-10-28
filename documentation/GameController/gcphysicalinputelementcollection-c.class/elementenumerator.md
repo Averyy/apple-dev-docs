@@ -20,7 +20,7 @@ Returns an enumerator to iterate the elements in the collection.
 - (NSEnumerator<id<GCPhysicalInputElement>> *) elementEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator for the collection.
 

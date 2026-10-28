@@ -23,7 +23,7 @@ func fill(_ rect: CGRect)
 - (void) fillRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this method, select the fill color with the [`setFill()`](../uicolor/setfill%28%29.md) method on an instance of [`UIColor`](../uicolor.md).
 

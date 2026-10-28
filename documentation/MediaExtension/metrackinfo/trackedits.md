@@ -15,7 +15,7 @@ An array of edit segments for the given track.
 @property (nonatomic, copy, nullable) NSArray<NSValue *> * trackEdits;
 ```
 
-#### Discussion
+## Discussion
 
 Each value in the array contains a [`CMTimeMapping`](../../CoreMedia/cmtimemapping.md) object that describes the track edit. The [`target`](../../CoreMedia/cmtimemapping/target.md) time ranges for successive edits need to partition the time range from `0` to the track’s duration. In other words, for the first edit at index `0`, the [`start`](../../CoreMedia/cmtimerange/start.md) needs to be [`zero`](../../CoreMedia/cmtime/zero.md), and for each additional edit (index > 0), the [`start`](../../CoreMedia/cmtimerange/start.md) needs to match the value returned from [`CMTimeRangeGetEnd(_:)`](../../CoreMedia/cmtimerangegetend%28_%29.md) for the edit.
 

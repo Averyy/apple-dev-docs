@@ -13,7 +13,7 @@
 #define kIODVDMediaTypePlusRW
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for DVD "Plus" ReWritable (DVD+RW) media.
 

@@ -19,11 +19,11 @@ func boundingRect(forGlyphRange glyphRange: NSRange, in container: NSTextContain
 - (NSRect) boundingRectForGlyphRange:(NSRange) glyphRange inTextContainer:(NSTextContainer *) container;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle enclosing the given range of glyphs.
 
-#### Discussion
+## Discussion
 
 This method returns a single bounding rectangle (in container coordinates) enclosing all glyphs and other marks drawn in the given text container for the given glyph range, including glyphs that draw outside their line fragment rectangles and text attributes such as underlining.
 

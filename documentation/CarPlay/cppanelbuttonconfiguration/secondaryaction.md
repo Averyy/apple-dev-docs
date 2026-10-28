@@ -22,7 +22,7 @@ var secondaryAction: CPTextButton? { get }
 @property (nonatomic, copy, readonly, nullable) CPTextButton * secondaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this button at initialization time and use this property to retrieve it later.
 

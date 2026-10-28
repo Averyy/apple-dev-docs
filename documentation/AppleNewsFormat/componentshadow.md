@@ -15,11 +15,11 @@ The object for creating a component shadow.
 object ComponentShadow
 ```
 
-#### Discussion
+## Discussion
 
 Use a `ComponentShadow` object to define a shadow that you can apply to components as part of [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

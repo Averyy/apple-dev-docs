@@ -5,7 +5,7 @@
 
 Register a transaction queue observer to get and handle transaction updates from the App Store.
 
-#### Overview
+## Overview
 
 Implementing an Apple In-App Purchase flow consists of three stages. In the first stage, your app retrieves product information. Then your app requests payment when the user selects a product in your app’s store. Finally, your app delivers the product.
 
@@ -13,7 +13,7 @@ The App Store calls the transaction queue observer after it processes the paymen
 
 ![A flowchart depicting the three stages of the Apple In-App Purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The third stage, delivering products, is highlighted.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3314631@2x.png)
 
-##### Monitor transactions in the queue
+### Monitor transactions in the queue
 
 The transaction queue plays a central role in letting your app communicate with the App Store through the StoreKit framework. You add work to the queue that the App Store needs to act on, such as a payment request for processing. When the transaction’s state changes, such as when a payment request succeeds, StoreKit calls the app’s transaction queue observer. You decide which class acts as the observer. In very small apps, you might handle all the StoreKit logic in the app delegate, including observing the transaction queue. In most apps, however, you create a separate class that handles this observer logic, along with the rest of your app’s store logic. The observer needs to conform to the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol.
 
@@ -109,7 +109,7 @@ func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SK
 }
 ```
 
-##### Update the app’s UI to reflect transaction changes
+### Update the app’s UI to reflect transaction changes
 
 To keep your user interface up to date while waiting, the transaction queue observer can implement optional methods from the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol as follows:
 

@@ -26,11 +26,11 @@ func class_setSuperclass(_ cls: AnyClass, _ newSuper: AnyClass) -> AnyClass
 extern Classclass_setSuperclass(Class cls, Class newSuper);
 ```
 
-#### Return Value
+## Return Value
 
 The old superclass for `cls`.
 
-#### Discussion
+## Discussion
 
 You should not use this function.
 

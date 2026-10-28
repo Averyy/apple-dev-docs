@@ -29,7 +29,7 @@ func copy(from sourceBuffer: any MTLBuffer, sourceOffset: Int, sourceBytesPerRow
 
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
-#### Discussion
+## Discussion
 
 This method is the equivalent of passing an empty [`OptionSet`](../../Swift/optionset.md) to the `options` parameter of [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:options:)`](./copy%28from,sourceoffset,sourcebytesperrow,sourcebytesperimage,sourcesize,to,destinationslice,destinationlevel,destinationorigin,options%29.md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](../mtlblitoption/mtlblitoptionnone.md).
 

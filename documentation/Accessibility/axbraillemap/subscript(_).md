@@ -21,7 +21,7 @@ Accesses the height of an individual pin on the braille display.
 subscript(point: CGPoint) -> Float { get set }
 ```
 
-#### Overview
+## Overview
 
 Use this subscript to set or get the height of an individual pin. This subscript provides the same capabilities as using [`setHeight(_:at:)`](./setheight%28_,at%29.md) and [`height(at:)`](./height%28at%29.md).
 

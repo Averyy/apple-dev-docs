@@ -25,7 +25,7 @@ var preferredTransform: CGAffineTransform { get }
 @property (nonatomic, readonly) CGAffineTransform preferredTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The system retrieves the transform from the [`AVAssetTrack`](../../avassettrack.md) that provides the media data. If the source track doesn’t specify a transform, the value of this property is [`CGAffineTransformIdentity`](../../../CoreGraphics/cgaffinetransformidentity.md).
 

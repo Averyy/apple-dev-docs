@@ -15,7 +15,7 @@ The current timestamp, as a floating-point number of seconds from the beginning 
 readonly attribute Number renderedTime;
 ```
 
-#### Discussion
+## Discussion
 
 If [`currentTime`](./currenttime.md) is set to a value for which the required video frames are not yet available, `renderedTime` remains at its current value until the video frames are acquired. At that point, the Player is re-rendered, and `renderedTime` is updated to once again reflect [`currentTime`](./currenttime.md).
 

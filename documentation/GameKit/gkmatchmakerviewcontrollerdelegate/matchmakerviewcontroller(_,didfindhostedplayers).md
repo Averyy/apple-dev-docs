@@ -28,7 +28,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 When all the players accept their invitations to a match, GameKit invokes this method in the app instances for all players in the game, including the local player who initiates the invitations. This method needs to dismiss the view controller and start the game. Your game needs to connect the players to your own server and then use that server to relay messages between the players.
 

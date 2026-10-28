@@ -5,7 +5,7 @@
 
 Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 
-#### Overview
+## Overview
 
 In shared and mixed immersive spaces on visionOS, people can snap and lock app content directly to their physical environment. This persistence allows apps to remain in place even when the person leaves and returns, or restarts their device. You can use this capability to create deeply integrated spatial experiences that people will naturally return to.
 
@@ -21,7 +21,7 @@ Locking and persisting content in visionOS makes the user experience more natura
 
 > **Note**: Watch the WWDC25 session [Set the scene with SwiftUI in visionOS](https://developer.apple.com/videos/play/wwdc2025/290/) for more information on system behavior and API usage.
 
-#### Handle scene restoration
+## Handle scene restoration
 
 Scene restoration is an important part of a seamless experience on visionOS. People expect content to persist where they’ve placed it, and they expect to be able to pick up where they left off. To ensure the system correctly restores windows and maintains a person’s desired layout, you’ll need to handle your app’s scene restoration.
 
@@ -48,7 +48,7 @@ Window("Onboarding", id: "onboarding") {
 .restorationBehavior(.disabled)
 ```
 
-#### Customize window launch behavior
+## Customize window launch behavior
 
 It’s important to launch only essential windows to prevent redundancy and confusion. You can use `.defaultLaunchBehavior` to fine-tune which windows appear when a person relaunches your app. By default, your app presents the first window declared in your `Scene` matching the “Preferred Default Scene Session Role” key in your `Info.plist`.
 
@@ -103,7 +103,7 @@ var body: some Scene {
 }
 ```
 
-#### Present content dynamically using surface snapping
+## Present content dynamically using surface snapping
 
 You can use a scene’s physical placement to show content dynamically in an immersive app. Knowing where a person has placed content in their physical space allows you to integrate your app more deeply with their real world and make your app more contextually relevant.
 

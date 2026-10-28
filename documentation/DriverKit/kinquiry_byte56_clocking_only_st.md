@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_CLOCKING_ONLY_ST
 ```
 
-#### Discussion
+## Discussion
 
 Single-transition clocking only.
 

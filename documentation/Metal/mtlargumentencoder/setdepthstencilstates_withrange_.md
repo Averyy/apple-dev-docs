@@ -18,7 +18,7 @@
 - (void) setDepthStencilStates:(id<MTLDepthStencilState> const[]) depthStencilStates withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Sets an array of depth stencil states at a given buffer index range
 

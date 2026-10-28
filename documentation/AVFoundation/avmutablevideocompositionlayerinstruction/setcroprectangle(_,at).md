@@ -24,7 +24,7 @@ func setCropRectangle(_ cropRectangle: CGRect, at time: CMTime)
 - (void) setCropRectangle:(CGRect) cropRectangle atTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 The origin of the crop rectangle is the top-left corner of the buffer clean aperture rectangle. The crop rectangle is defined in square pixel space, that is, without taking the pixel aspect ratio into account. Crop rectangles extending outside of the clean aperture, are cropped to the clean aperture.
 

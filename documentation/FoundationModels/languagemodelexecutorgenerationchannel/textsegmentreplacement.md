@@ -20,7 +20,7 @@ A replacement for a streaming entry’s current text segment.
 struct TextSegmentReplacement
 ```
 
-#### Overview
+## Overview
 
 The `tokenCount` is the producer’s count of tokens carried by `content` and is used by safety or usage accounting to credit the replacement against.
 

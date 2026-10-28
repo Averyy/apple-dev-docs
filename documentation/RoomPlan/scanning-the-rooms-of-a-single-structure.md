@@ -5,7 +5,7 @@
 
 Create an AR experience that enables people to scan a building that contains multiple rooms.
 
-#### Overview
+## Overview
 
 RoomPlan can combine the data from multiple scan sessions to create a single captured result that includes multiple rooms. Having a single structure object ([`CapturedStructure`](./capturedstructure.md)) lets you create a USDZ file and inspect for particular shapes, dimensions, or items that RoomPlan observes in the structure. Scanned structures support rooms with varying floor heights and rooms that reside on different floors in the building.
 
@@ -19,7 +19,7 @@ Each time your app calls `stop(pauseARSession:)`, the system invokes your app’
 
 A person indicates they’re done scanning all the rooms by interacting with an interface your app provides, such as by tapping the Finish Structure button in the toolbar. With the finalized room array, use the framework to merge the rooms into a single structure. Instantiate a ([`StructureBuilder`](./structurebuilder.md)) instance and pass the array to the [`capturedStructure(from:)`](./structurebuilder/capturedstructure%28from%29.md) method, which outputs a `CapturedStructure` object.
 
-#### Create a room-capture session and begin a scan
+## Create a room-capture session and begin a scan
 
 To capture a structure that contains multiple rooms, scan each room one by one. Start by creating a single `RoomCaptureSession` instance for the first room:
 
@@ -40,13 +40,13 @@ Begin the room-capture session by running it with a configuration:
 myCaptureSession.run(configuration: captureSessionConfig)
 ```
 
-#### Guide a person by displaying instructional text
+## Guide a person by displaying instructional text
 
 As a person holds the device, the framework models the room by analyzing data from the device’s camera and LiDAR Scanner. To enable the device to acquire sufficient data to model the whole room, your app guides a person on how to move and where to point the device.
 
 The framework-provided view automatically presents text instructions that guide a person through the process. If your app renders its own graphical interface, display your own text according to the instructions that [`RoomCaptureSessionDelegate`](./roomcapturesessiondelegate.md) provides in its [`captureSession(_:didProvide:)`](./roomcapturesessiondelegate/capturesession%28_,didprovide%29-5hvhl.md) method. The [`RoomCaptureSession.Instruction`](./roomcapturesession/instruction.md) object that the system passes in assists you with crafting the right information to display to someone.
 
-#### Finalize a room scan and keep the AR session running
+## Finalize a room scan and keep the AR session running
 
 After a person completes scanning the room, stop the room-capture session. To keep subsequent rooms compatible for merging, make the AR session continue running by calling `stop(pauseARSession:)` with an argument of `false`.
 
@@ -86,7 +86,7 @@ An `ARSession` is *continuous* when a person completes all scans without interru
 
 If the person sends the app to the background or the AR session experiences tracking problems while a person moves room to room, your app needs to *relocalize* the AR session before continuing to scan. Relocalizing instructs ARKit to restore a common coordinate space by inspecting a world-map ([`ARWorldMap`](../ARKit/arworldmap.md)) object that you provide.
 
-#### Relocalize an AR session after an interruption
+## Relocalize an AR session after an interruption
 
 When a person sends the app to the background or restarts the app before finishing the structure, or if ARKit encounters a tracking error, your app has to restart the AR session. By default, new or restarted AR sessions define a coordinate space that’s incompatible with prior runs because the world origin and orientation are different. To scan more rooms that are compatible with prior scans, you need to restore a common coordinate space by using *relocalization*.
 
@@ -124,7 +124,7 @@ With the relocalized `ARSession` object, you can resume scanning the rest of the
 var roomCaptureSession = RoomCaptureSession(arSession:relocalizedARSession)
 ```
 
-#### Merge the rooms to create the structure
+## Merge the rooms to create the structure
 
 After you collect all of the captured rooms in an array, hand it off to the [`capturedStructure(from:)`](./structurebuilder/capturedstructure%28from%29.md) method of [`StructureBuilder`](./structurebuilder.md) to create the [`CapturedStructure`](./capturedstructure.md) instance, as the following code demonstrates:
 

@@ -15,7 +15,7 @@ Event source for interrupt delivery to work-loop based drivers.
 class IOInterruptEventSource : IOEventSource
 ```
 
-#### Overview
+## Overview
 
 The IOInterruptEventSource is a generic object that delivers calls interrupt routines in it's client in a guaranteed single-threaded manner. IOInterruptEventSource is part of the IOKit $link IOWorkLoop infrastructure where the semantic that one and only one action method is executing within a work-loops event chain.
 

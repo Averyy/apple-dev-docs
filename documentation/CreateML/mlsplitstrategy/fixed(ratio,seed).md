@@ -20,7 +20,7 @@ Create ML uses a portion of your training dataset to create a validation dataset
 case fixed(ratio: Double, seed: Int?)
 ```
 
-#### Discussion
+## Discussion
 
 The ratio is a value in the range `[0.0, 1.0]` that determines how much of the training data to use for validation. The seed value can be used to get consistent results across invocations. If seed is nil the split will be randomized on every invocation.
 

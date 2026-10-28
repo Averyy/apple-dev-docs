@@ -18,7 +18,7 @@ A metric that measures optimized time to first draw durations for app launches.
 struct OptimizedTimeToFirstDrawMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.optimizedTimeToFirstDraw(_:)`](./metricresult/optimizedtimetofirstdraw%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

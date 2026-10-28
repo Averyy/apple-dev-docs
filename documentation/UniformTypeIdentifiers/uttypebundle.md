@@ -21,7 +21,7 @@ A base type that represents a directory that conforms to one of the bundle layou
 extern UTType * const UTTypeBundle;
 ```
 
-#### Discussion
+## Discussion
 
 Bundles differ from packages in that a bundle has an internal file hierarchy that [`CFBundle`](../CoreFoundation/cfbundle.md) can read, while packages display to the user as if they were regular files. A single file system object can be both a package and a bundle.
 

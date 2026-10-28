@@ -24,7 +24,7 @@ static let discrete: CAAnimationCalculationMode
 extern CAAnimationCalculationMode const kCAAnimationDiscrete;
 ```
 
-#### Discussion
+## Discussion
 
 Keyframe animations based on discrete calculation interpolation require one less element in the [`values`](../cakeyframeanimation/values.md) array than the [`keyTimes`](../cakeyframeanimation/keytimes.md) array. Each `value / keyTime` pair represents the value from the specified time until the next keyframe.
 

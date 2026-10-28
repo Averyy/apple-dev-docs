@@ -24,7 +24,7 @@ static let appleWalkingSteadiness: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleWalkingSteadiness;
 ```
 
-#### Discussion
+## Discussion
 
 Samples that match the Walking Steadiness identifier use percentage units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). For example, the following code creates a percentage unit.
 

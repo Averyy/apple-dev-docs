@@ -32,7 +32,7 @@ var climateZone: INCarSeat { get }
 @property (atomic, assign, readonly) INCarSeat climateZone;
 ```
 
-#### Discussion
+## Discussion
 
 If your climate control system supports different settings for different parts of the car, use this property to determine which zone’s settings you need to adjust. If your vehicle supports only one climate control zone, you can ignore the value in this property.
 

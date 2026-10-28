@@ -23,7 +23,7 @@ func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, sta
 - (void) restoreDocumentWindowWithIdentifier:(NSUserInterfaceItemIdentifier) identifier state:(NSCoder *) state completionHandler:(void (^)(NSWindow *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the default `NSDocumentController` implementation of [`restoreWindow(withIdentifier:state:completionHandler:)`](../nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md).
 

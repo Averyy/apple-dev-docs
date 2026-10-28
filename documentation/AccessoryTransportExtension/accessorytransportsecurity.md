@@ -20,13 +20,13 @@ protocol AccessoryTransportSecurity : AppExtension
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-security` to manage the key exchange process that establishes encrypted communication with your accessory. The extension runs in a separate process for security isolation and communicates with the system through the extension’s configuration object ([`AccessoryTransportSecurityConfiguration`](./accessorytransportsecurityconfiguration.md)).
 
 > ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](../BundleResources/entitlements/com.apple.developer.accessory-transport-security.md) entitlement to use this protocol.
 
-#### Add the necessary target configuration
+## Add the necessary target configuration
 
 In your extension’s target properties, specify the extension point identifier:
 
@@ -42,7 +42,7 @@ In your extension’s target properties, specify the extension point identifier:
 </plist>
 ```
 
-#### Implement the extension point
+## Implement the extension point
 
 In your extension’s Swift code, implement the protocol and provide an event handler that responds to key exchange messages:
 
@@ -81,7 +81,7 @@ class SecurityEventHandler: AccessorySecuritySession.EventHandler {
 }
 ```
 
-#### Initiate key exchange
+## Initiate key exchange
 
 Your accessory initiates the key exchange by generating a public-private key pair and sending the public key to the system. Choose [`SecurityMessage.CipherSuite.xWing`](./securitymessage/ciphersuite-swift.enum/xwing.md) for post-quantum security or [`SecurityMessage.CipherSuite.p256`](./securitymessage/ciphersuite-swift.enum/p256.md) as a fallback:
 

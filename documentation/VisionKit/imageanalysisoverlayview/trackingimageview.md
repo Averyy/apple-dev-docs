@@ -20,7 +20,7 @@ weak final var trackingImageView: NSImageView? { get set }
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 Optionally, set this property to the image view that contains the image, and the overlay view automatically calculates the [`contentsRect`](./contentsrect.md) property value based on the image view properties.
 

@@ -32,15 +32,15 @@ typedef void (*)(void *, struct OpaqueAudioComponentInstance *, unsigned int, un
 typedef void (*)(void *, struct ComponentInstanceRecord *, unsigned int, unsigned int, unsigned int) AudioUnitPropertyListenerProc;
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAudioUnitPropertyListenerProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 You register your `AudioUnitPropertyListenerProc` callback function using the [`AudioUnitAddPropertyListener(_:_:_:_:)`](./audiounitaddpropertylistener%28_,_,_,_%29.md) function.
 

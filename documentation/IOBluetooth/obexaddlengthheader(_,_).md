@@ -19,11 +19,11 @@ func OBEXAddLengthHeader(_ length: UInt32, _ dictRef: CFMutableDictionary!) -> O
 OBEXError OBEXAddLengthHeader(uint32_t length, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Length header - OBEX Spec, 2.2.4: 4 byte unsigned integer
 

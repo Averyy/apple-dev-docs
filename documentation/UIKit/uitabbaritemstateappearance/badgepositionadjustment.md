@@ -23,7 +23,7 @@ var badgePositionAdjustment: UIOffset { get set }
 @property (nonatomic, assign, readwrite) UIOffset badgePositionAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the distance, in points, by which to offset the badge from its default position over its item. Positive values move the title down and to the right. Negative values move the title up and to the left.
 

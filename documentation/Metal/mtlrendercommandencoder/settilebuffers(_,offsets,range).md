@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the tile shader argument table
 func setTileBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the buffer at each index is `nil`.
 

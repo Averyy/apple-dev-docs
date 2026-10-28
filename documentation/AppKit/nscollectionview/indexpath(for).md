@@ -19,7 +19,7 @@ func indexPath(for item: NSCollectionViewItem) -> IndexPath?
 - (NSIndexPath *) indexPathForItem:(NSCollectionViewItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s index path or `nil` if the item is not in the collection view.
 

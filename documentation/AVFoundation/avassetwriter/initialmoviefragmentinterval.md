@@ -24,7 +24,7 @@ var initialMovieFragmentInterval: CMTime { get set }
 @property (nonatomic) CMTime initialMovieFragmentInterval;
 ```
 
-#### Discussion
+## Discussion
 
 When using fragment writing, you can set this property value to indicate the interval at which to write the initial fragment.
 

@@ -25,11 +25,11 @@ func redoMenuTitle(forUndoActionName actionName: String) -> String
 - (NSString *) redoMenuTitleForUndoActionName:(NSString *) actionName;
 ```
 
-#### Return Value
+## Return Value
 
 The localized title of the redo menu item.
 
-#### Discussion
+## Discussion
 
 Override this method if you want to customize the localization behavior. This method is invoked by [`redoMenuItemTitle`](./redomenuitemtitle.md).
 

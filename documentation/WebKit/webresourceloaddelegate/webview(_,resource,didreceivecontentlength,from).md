@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didReceiveC
 - (void) webView:(WebView *) sender resource:(id) identifier didReceiveContentLength:(NSInteger) length fromDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates might implement this method to update the load status of an individual resource.
 

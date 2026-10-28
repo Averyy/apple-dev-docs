@@ -20,7 +20,7 @@ class BEBrowserData
 @interface BEBrowserData : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class describes the source of browsing data that transfers between browsers. It identifies the browser that data originates from by providing its bundle ID and localized display name.
 

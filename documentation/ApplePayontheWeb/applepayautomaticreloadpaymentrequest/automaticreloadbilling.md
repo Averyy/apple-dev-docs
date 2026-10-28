@@ -16,7 +16,7 @@ A line item that contains the reload amount and balance threshold for the automa
 required ApplePayLineItem automaticReloadBilling;
 ```
 
-#### Discussion
+## Discussion
 
 This line item describes an automatic reload payment.
 

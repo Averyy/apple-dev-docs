@@ -25,11 +25,11 @@ func vImageCVImageFormat_SetChromaSiting(_ format: vImageCVImageFormat, _ siting
 vImage_Error vImageCVImageFormat_SetChromaSiting(vImageCVImageFormatRef format, CFStringRef siting);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 4:2:0 and 4:2:0 YpCbCr image formats that have subsampled chrominance require the position of the chrominance samples relative to the luminance samples.
 

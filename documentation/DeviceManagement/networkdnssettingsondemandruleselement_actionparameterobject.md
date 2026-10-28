@@ -19,7 +19,7 @@ A dictionary that provides per-connection rules.
 object NetworkDNSSettingsOnDemandRulesElement_ActionParameterObject
 ```
 
-#### Discussion
+## Discussion
 
 The keys allowed in each dictionary are described below. Note: This array is only for dictionaries in which `EvaluateConnection` is the `Action` value.
 

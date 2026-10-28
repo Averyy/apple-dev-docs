@@ -23,7 +23,7 @@ final var value: Output { get async }
 
 Available when `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 This property subscribes to the `Future` and delivers the value asynchronously when the `Future` publishes it. Use this property when you want to use the `async`-`await` syntax with a `Future`.
 

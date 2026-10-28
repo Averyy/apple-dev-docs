@@ -21,7 +21,7 @@ Creates a temporal transformer from a transformer.
 init(_ transformer: Base)
 ```
 
-#### Discussion
+## Discussion
 
 The resulting transformer applies the underlying transformer to each element in the input sequence.
 

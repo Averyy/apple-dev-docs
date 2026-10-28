@@ -4,7 +4,7 @@
 
 Displays an image used to rate a product.
 
-#### Overview
+## Overview
 
 The `ratingBadge` element contains a link to an image that is to be displayed. This element is commonly used to display a small image inside of a `reviewCard` element. Here’s an example of a review with a fresh rating from Rotten Tomatoes.
 
@@ -17,7 +17,7 @@ The `ratingBadge` element contains a link to an image that is to be displayed. T
 </reviewCard>
 ```
 
-##### Contained In
+### Contained In
 
 - [organizer](./organizer.md)
 - [ratingCard](./ratingcard.md)

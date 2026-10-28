@@ -17,7 +17,7 @@ Returns the slider’s title.
 - (NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The title. The default title is the empty string (`@""`).
 

@@ -21,7 +21,7 @@ A Boolean that you set to enable or disable the entity and its descendants.
 @preconcurrency var isEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `true` to enable the entity. Unless an ancestor is disabled, the entity and all of its enabled descendants, up to the first that’s disabled, report [`isEnabledInHierarchy`](./isenabledinhierarchy.md) of `true`. If an ancestor is disabled, they all report `false`. The state of [`isActive`](./isactive.md) for enabled entities is `true` if they are anchored, or `false` otherwise.
 

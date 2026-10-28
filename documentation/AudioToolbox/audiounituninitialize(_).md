@@ -28,11 +28,11 @@ extern OSStatus AudioUnitUninitialize(AudioUnit inUnit);
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Before you change an initialize audio unit’s processing characteristics, such as its input or output audio data format or its sample rate, you must first uninitialize it. Calling this function deallocates the audio unit’s resources.
 

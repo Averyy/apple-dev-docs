@@ -21,7 +21,7 @@ The position of the first Unicode scalar value if the string is nonempty.
 var startIndex: String.UnicodeScalarView.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the string is empty, `startIndex` is equal to `endIndex`.
 

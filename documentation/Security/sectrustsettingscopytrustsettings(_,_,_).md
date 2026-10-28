@@ -20,11 +20,11 @@ func SecTrustSettingsCopyTrustSettings(_ certRef: SecCertificate, _ domain: SecT
 OSStatus SecTrustSettingsCopyTrustSettings(SecCertificateRef certRef, SecTrustSettingsDomain domain, CFArrayRef*trustSettings);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecItemNotFound`](./errsecitemnotfound.md) if no trust settings exist for the specified certificate and domain.
 
-#### Discussion
+## Discussion
 
 The system expresses each certificate’s trust settings as a [`CFArray`](../CoreFoundation/cfarray.md) that includes any number (including zero) of dictionaries of type [`CFDictionary`](../CoreFoundation/cfdictionary.md), each of which describes one set of usage constraints. Each usage-constraints dictionary may contain any of the following key-value pairs:
 
@@ -52,7 +52,7 @@ The `trustSettings` parameter can return a valid but empty [`CFArray`](../CoreFo
 
 > **Note**:  The trust settings result value [`SecTrustSettingsResult.trustRoot`](./sectrustsettingsresult/trustroot.md) can only apply to root (self-signed) certificates. It’s an error to apply it to non-root certificates, including implicitly by using an empty trust settings array. Instead, use [`SecTrustSettingsResult.trustAsRoot`](./sectrustsettingsresult/trustasroot.md).
 
-##### Special considerations
+### Special considerations
 
 The system authenticates the person before making changes to per-user trust settings. On macOS 11 and later, the system authenticates the person as an administrator before making changes to system-wide trust settings. Therefore, you can only modify trust settings when running in a GUI environment; for example, a launch daemon can’t modify the settings.
 

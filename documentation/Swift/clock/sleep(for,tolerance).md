@@ -21,7 +21,7 @@ Suspends for the given duration.
 func sleep(for duration: Self.Instant.Duration, tolerance: Self.Instant.Duration? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer to use the `sleep(until:tolerance:)` method on `Clock` if you have access to an absolute instant.
 

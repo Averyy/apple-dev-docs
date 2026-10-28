@@ -16,11 +16,11 @@ Sets the event callout to be called when the queue transitions to non-empty.
 IOReturn (*setEventCallout)(void *self, IOHIDCallbackFunction callback, void *callbackTarget, void *callbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 In order for this to work correctly, you must call createAsyncPort and createAsyncEventSource.
 

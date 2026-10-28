@@ -5,7 +5,7 @@
 
 Manage the settings that make your app available for pre-order.
 
-#### Overview
+## Overview
 
 Use `appPreOrders` to offer your app as a pre-order before it’s initial release on the App Store. Customers can see your product page and order your app before it’s released for download. Once your app is released, customers are notified and your app is automatically download to their devices.
 

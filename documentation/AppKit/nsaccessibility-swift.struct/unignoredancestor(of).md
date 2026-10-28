@@ -19,7 +19,7 @@ static func unignoredAncestor(of element: Any) -> Any?
 extern idNSAccessibilityUnignoredAncestor(id element);
 ```
 
-#### Discussion
+## Discussion
 
 Tests whether `element` is an ignored object, returning either `element`, if it is not ignored, or the first unignored ancestor of `element`.
 

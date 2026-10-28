@@ -19,7 +19,7 @@ var allowsExpansionToolTips: Bool { get set }
 @property BOOL allowsExpansionToolTips;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the expansion tool tip will expand; [`false`](../../Swift/false.md) means the tool tip won’t expand. The default value is [`false`](../../Swift/false.md).
 

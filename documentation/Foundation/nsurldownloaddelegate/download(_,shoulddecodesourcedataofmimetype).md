@@ -19,11 +19,11 @@ optional func download(_ download: NSURLDownload, shouldDecodeSourceDataOfMIMETy
 - (BOOL) download:(NSURLDownload *) download shouldDecodeSourceDataOfMIMEType:(NSString *) encodingType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to decode the file, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The delegate may receive this message more than once if the file has been encoded multiple times. This method is not called if the downloaded file is not encoded.
 

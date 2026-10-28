@@ -14,7 +14,7 @@ A Boolean value that indicates whether other development teams may distribute a 
 - **Name**: `com.apple.developer.system-extension.redistributable`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to a system extension that you create and sign using your development team credentials, but which other development teams distribute in their apps. This extension allows a distributing app to have a different team ID than the one associated with the system extension. If this entitlement isn’t present, the team ID of the app and system extension must match.
 

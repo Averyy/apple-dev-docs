@@ -25,7 +25,7 @@ var medicationConceptIdentifier: HKHealthConceptIdentifier { get }
 @property (nonatomic, copy, readonly) HKHealthConceptIdentifier * medicationConceptIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this identifier to link the dose event back to its [`HKMedicationConcept`](../hkmedicationconcept.md) object.
 

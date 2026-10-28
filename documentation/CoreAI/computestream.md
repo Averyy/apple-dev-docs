@@ -19,7 +19,7 @@ A stream of work to be run asynchronously.
 final class ComputeStream
 ```
 
-#### Overview
+## Overview
 
 A compute stream is what is provided to [`encode(inputs:states:outputViews:to:)`](./inferencefunction/encode%28inputs,states,outputviews,to%29.md) to encode the work onto the stream. Multiple inferences encoded to the same stream are serialized as needed based on the the values read/written.
 

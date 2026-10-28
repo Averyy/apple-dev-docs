@@ -19,11 +19,11 @@ Returns the map point that corresponds to the specified point in the overlay vie
 - (MKMapPoint) mapPointForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The point on the two-dimensional map projection corresponding to the specified point.
 
-#### Discussion
+## Discussion
 
 Because the bounds and frame rectangles of an overlay view do not change after the view has been created, you may call this method from multiple threads simultaneously. Therefore, you may call this method safely from your view’s [`drawMapRect:zoomScale:inContext:`](./drawmaprect_zoomscale_incontext_.md) method.
 

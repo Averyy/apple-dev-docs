@@ -19,7 +19,7 @@ var visibleRect: NSRect { get }
 @property (readonly) NSRect visibleRect;
 ```
 
-#### Discussion
+## Discussion
 
 Visibility, as reflected by this property, doesn’t account for whether other view or window objects overlap the current view or whether the current view is installed in a window at all. This value of this property is `NSZeroRect` if the current view is effectively hidden.
 

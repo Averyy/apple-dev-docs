@@ -15,7 +15,7 @@ Gets a Boolean value indicating if the device is hidden.
 bool GetIsHidden();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value. The default value is false when the device is created.
 

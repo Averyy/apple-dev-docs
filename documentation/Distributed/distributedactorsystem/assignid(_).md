@@ -22,7 +22,7 @@ Assign an [`ActorID`](./actorid.md) for the passed actor type.
 func assignID<Act>(_ actorType: Act.Type) -> Self.ActorID where Act : DistributedActor, Self.ActorID == Act.ID
 ```
 
-#### Discussion
+## Discussion
 
 This function is invoked by a distributed actor during its initialization, and the returned address value is stored along with it for the time of its lifetime.
 

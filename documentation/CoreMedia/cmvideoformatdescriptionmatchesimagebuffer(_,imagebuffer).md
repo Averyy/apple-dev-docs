@@ -25,11 +25,11 @@ func CMVideoFormatDescriptionMatchesImageBuffer(_ desc: CMVideoFormatDescription
 extern Boolean CMVideoFormatDescriptionMatchesImageBuffer(CMVideoFormatDescriptionRef desc, CVImageBufferRef imageBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the format description matches the image buffer.
 
-#### Discussion
+## Discussion
 
 This function uses the keys returned by `CMVideoFormatDescriptionGetExtensionKeysCommonWithImageBuffers` to compare the extensions of the given format description to the attachments of the given image buffer (if an attachment is absent in either it must be absent in both). It also checks `kCMFormatDescriptionExtension_BytesPerRow` against `CVPixelBufferGetBytesPerRow`, if applicable.
 

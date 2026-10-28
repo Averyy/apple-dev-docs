@@ -21,7 +21,7 @@ The shared disabled log.
 #define OS_LOG_DISABLED
 ```
 
-#### Discussion
+## Discussion
 
 Passing this constant to an `os_log` function, such as `os_log`, `os_log_info`, `os_log_debug`, `os_log_error`, or `os_log_fault`, prevents the system from logging a message.
 

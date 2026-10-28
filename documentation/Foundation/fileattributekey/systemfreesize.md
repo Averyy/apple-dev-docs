@@ -25,7 +25,7 @@ static let systemFreeSize: FileAttributeKey
 extern NSFileAttributeKey const NSFileSystemFreeSize;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object that specifies the amount of free space on the file system in bytes. The value is determined by `statfs()`.
 

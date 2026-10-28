@@ -22,11 +22,11 @@ The default value to return when property is not set to a specific value.
 static var defaultValue: Self.Value { get }
 ```
 
-#### Return Value
+## Return Value
 
 The default value for this property type.
 
-#### Discussion
+## Discussion
 
 This value is used when a progress manager doesn’t have an explicit value set for this property type.
 

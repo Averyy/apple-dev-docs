@@ -15,11 +15,11 @@ CMError NCMBeginMatching (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `NCMBeginMatching` function sets up a QuickDraw-specific matching session, telling the ColorSync Manager to match all colors drawn to the current graphics device using the specified source and destination profiles. 
 
@@ -37,7 +37,7 @@ This function causes matching for the specified devices rather than for the curr
 
 The `NCMBeginMatching` function uses QuickDraw and performs color matching in a manner acceptable to most applications. However, if your application needs a finer level of control over color matching, it can use the general purpose functions described in “Matching Colors Using General Purpose Functions”. 
 
-##### Version-Notes
+### Version-Notes
 
 The parameter descriptions for `src` and `dst` describe changes in how this function is used starting with ColorSync version 2.5.
 

@@ -15,7 +15,7 @@ Creates a padding object and initializes its values with the provided object lit
 constructor(paddings: PaddingData);
 ```
 
-#### Discussion
+## Discussion
 
 Use an object literal instance with the keys defined in [`PaddingData`](../paddingdata.md).
 

@@ -21,7 +21,7 @@ Weight of the L1 regularization term.
 var l1Penalty: Double
 ```
 
-#### Discussion
+## Discussion
 
 Like the l2 penalty, the higher the l1 penalty, the more the estimated coefficients shrink toward 0. The l1 penalty, however, completely zeros out sufficiently small coefficients, automatically indicating features that are not useful for the model. The default weight of 0 prevents any features from being discarded.
 

@@ -19,11 +19,11 @@ func sendAction() -> Bool
 - (BOOL) sendAction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an action was successfully sent to a target. If the selected cell is disabled, this method does nothing and returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the cell has an action but no target, its action is sent to the target of the receiver. If the cell doesn’t have an action, or if there is no selected cell, the receiver sends its own action to its target.
 

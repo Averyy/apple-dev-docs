@@ -21,7 +21,7 @@ class WKAudioFilePlayer
 @interface WKAudioFilePlayer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a player object to start and stop playback and to control the rate of playback. (The [`WKAudioFileQueuePlayer`](./wkaudiofilequeueplayer.md) subclass extends the basic behavior to support playback of more than one item.)
 

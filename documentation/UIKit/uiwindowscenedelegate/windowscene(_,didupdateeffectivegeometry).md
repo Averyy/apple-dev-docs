@@ -23,7 +23,7 @@ optional func windowScene(_ windowScene: UIWindowScene, didUpdateEffectiveGeomet
 - (void) windowScene:(UIWindowScene *) windowScene didUpdateEffectiveGeometry:(UIWindowSceneGeometry *) previousEffectiveGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 Always called when a `UIWindowScene` moves between screens.
 

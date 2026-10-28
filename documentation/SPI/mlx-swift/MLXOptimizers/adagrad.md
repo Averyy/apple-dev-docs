@@ -17,13 +17,13 @@ The Adagrad optimizer [1].
 class AdaGrad
 ```
 
-#### Overview
+## Overview
 
 Our Adagrad implementation follows the original paper. In detail,
 
 [1]: Duchi, J., Hazan, E. and Singer, Y., 2011. Adaptive subgradient methods for online learning and stochastic optimization. JMLR 2011.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

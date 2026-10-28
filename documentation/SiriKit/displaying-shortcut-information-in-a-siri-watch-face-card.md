@@ -8,7 +8,7 @@ Display and customize watch-specific shortcut information with a default card te
 **Availability**:
 - watchOS 5.0+ - Deprecated in 11.0
 
-#### Overview
+## Overview
 
 The Siri watch face displays a relevant shortcut in a card that can provide the following information:
 
@@ -17,7 +17,7 @@ The Siri watch face displays a relevant shortcut in a card that can provide the 
 
 > ❗ **Important**: The Siri Watch Face is available in watchOS 11 and earlier. To make content available in the Smart Stack on Apple Watch using widgets, refer to [WidgetKit](../WidgetKit/WidgetKit.md), [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md), and [App Intents](../AppIntents/AppIntents.md). For more information about migrating your SiriKit code to App Intents, refer to [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/migrating-from-sirikit-intents-to-app-intents.md) and [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md).
 
-##### Display Intent-Based Shortcuts
+### Display Intent-Based Shortcuts
 
 When your app uses an [`INIntent`](../Intents/inintent.md) object to create the shortcut, the system retrieves the intent’s title and subtitle from the intent settings defined in the intent definition file. To include an image, call [`setImage:forParameterNamed:`](../Intents/inintent/setimage_forparameternamed_.md) on the intent and pass in an [`INImage`](../Intents/inimage.md).
 
@@ -27,7 +27,7 @@ The listing below sets the image for a order soup intent in the Soup Chef sample
 orderSoupIntent.setImage(INImage(named: menuItem.iconImageName), forParameterNamed: \OrderSoupIntent.soup)
 ```
 
-##### Display User Activity-Based Shortcuts
+### Display User Activity-Based Shortcuts
 
 When your app uses an [`NSUserActivity`](../Foundation/nsuseractivity.md) object to create the shortcut, the system retrieves the title from the title property of the user activity. To specify a subtitle, create an [`CSSearchableItemAttributeSet`](../CoreSpotlight/cssearchableitemattributeset.md) with the content type of `kUTTypeItem`, and set the [`contentDescription`](../CoreSpotlight/cssearchableitemattributeset/contentdescription.md) property. To include an image, set the [`thumbnailData`](../CoreSpotlight/cssearchableitemattributeset/thumbnaildata.md) on the attribute set.
 
@@ -47,7 +47,7 @@ attributes.thumbnailData =  imageLiteral(resourceName: "custom-image").pngData()
 userActivity.contentAttributeSet = attributes
 ```
 
-##### Use Card Templates
+### Use Card Templates
 
 If you want to show a UI specific to the watch—for example, to display a shortcut’s title that is shorter than the one Siri displays on the user’s iPhone or iPad—provide the relevant shortcut a default card template by setting the [`watchTemplate`](../Intents/inrelevantshortcut/watchtemplate.md) property. The template allows your app to customize the [`title`](../Intents/indefaultcardtemplate/title.md), [`subtitle`](../Intents/indefaultcardtemplate/subtitle.md), and [`image`](../Intents/indefaultcardtemplate/image.md). (You cannot change or remove the app icon and name shown in the card.)
 

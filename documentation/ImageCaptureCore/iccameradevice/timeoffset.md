@@ -23,7 +23,7 @@ var timeOffset: TimeInterval { get }
 @property (readonly) NSTimeInterval timeOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is positive if the camera’s clock is ahead of the computer’s clock. Ignore this property if the camera’s [`capabilities`](../icdevice/capabilities.md) do not include [`cameraDeviceCanSyncClock`](../icdevicecapability/cameradevicecansyncclock.md).
 

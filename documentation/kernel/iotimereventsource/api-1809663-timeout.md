@@ -12,7 +12,7 @@ static void timeout(
  void *self);
 ```
 
-#### Overview
+## Overview
 
 timeout will normally not be called nor overridden by a subclass. If the event source is enabled then close the work-loop's gate and call the action routine.
 

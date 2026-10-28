@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn how the generator supports recursive types.
 
-#### Overview
+## Overview
 
 In some applications, the most expressive way to represent arbitrarily nested data is using a type that holds another value of itself, either directly, or through another type. We refer to such types as *recursive types*.
 
@@ -18,7 +18,7 @@ By default, structs and enums do not support recursion in Swift, so the generato
 
 This article discusses the details of what boxing is, and how the generator chooses the types to box.
 
-##### Examples of recursive types
+### Examples of recursive types
 
 One example of a recursive type would be a file system item, representing a tree. The `FileItem` node contains more `FileItem` nodes in an array.
 
@@ -52,13 +52,13 @@ Person:
     - name
 ```
 
-##### Recursive types in Swift
+### Recursive types in Swift
 
 In Swift, the generator emits structs or enums for JSON schemas that support recursion (enums for `oneOf`, structs for `object`, `allOf`, and `anyOf`). Both structs and enums require that their size is known at compile time, however for arbitrarily nested values, such as a file system hierarchy, it cannot be known at compile time how deep the nesting goes. If such types were generated naively, they would not compile.
 
 To allow recursion, a *reference* Swift type must be involved in the reference cycle (as opposed to only *value* types). We call this technique of using a reference type for storage inside a value type “boxing” and it allows for the outer type to keep its original API, including value semantics, but at the same time be used as a recursive type.
 
-##### Boxing different Swift types
+### Boxing different Swift types
 
 - Enums can be boxed by adding the `indirect` keyword to the declaration, for example by changing:
 
@@ -120,7 +120,7 @@ The details of the copy-on-write wrapper can be found in the runtime library, wh
 - Arrays and dictionaries are reference types under the hood (but retain value semantics) and can already be considered boxed. For that reason, the first example that showed a `FileItem` type actually would compile successfully, because the `contents` array is already boxed. That means the `FileItem` type itself does not require boxing.
 - Pure reference schemas can contribute to reference cycles, but cannot be boxed, because they are represented as a `typealias` in Swift. For that reason, the algorithm never chooses a `$ref` type for boxing, and instead boxes the next eligible type in the cycle.
 
-##### Computing which types need boxing
+### Computing which types need boxing
 
 Since a boxed type requires an internal reference type, and can be less performant than a non-recursive value type, the generator implements an algorithm that *minimizes* the number of boxed types required to make all the reference cycles still build successfully.
 

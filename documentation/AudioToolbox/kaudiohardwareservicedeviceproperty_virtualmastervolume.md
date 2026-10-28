@@ -15,7 +15,7 @@ A `Float32` value that represents the value of the volume control.
 kAudioHardwareServiceDeviceProperty_VirtualMasterVolume
 ```
 
-#### Discussion
+## Discussion
 
 The range for this property’s value is `0.0` (silence) through `1.0` (full level). The effect of this property depends on the hardware device associated with the HAL audio object. If the device has a primary volume control, this property controls it. If the device has individual channel volume controls, this property applies to those identified by the device’s preferred multichannel layout, or the preferred stereo pair if the device is stereo only. This control maintains relative balance between the channels it affects.
 

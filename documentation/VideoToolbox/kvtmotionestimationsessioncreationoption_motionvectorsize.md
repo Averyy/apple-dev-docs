@@ -24,7 +24,7 @@ let kVTMotionEstimationSessionCreationOption_MotionVectorSize: CFString!
 extern CFStringRef const kVTMotionEstimationSessionCreationOption_MotionVectorSize;
 ```
 
-#### Discussion
+## Discussion
 
 [`VTMotionEstimationSessionCreate`](./vtmotionestimationsessioncreate.md) takes a dictionary of creation options, `motionVectorProcessorSelectionOptions`. You can supply [`kVTMotionEstimationSessionCreationOption_MotionVectorSize`](./kvtmotionestimationsessioncreationoption_motionvectorsize.md) with `CFNumber` to override the default search block size. Supported motion vector size is 4 or 16, meaning 4x4 or 16x16 respectively. 16x16 is the default if you don’t provide this key.
 

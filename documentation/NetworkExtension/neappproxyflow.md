@@ -27,7 +27,7 @@ class NEAppProxyFlow
 
 - [Handling Flow Copying](./handling-flow-copying.md)
 
-#### Overview
+## Overview
 
 App Proxy Providers receive network connections to be proxied in the form of `NEAppProxyFlow` objects, which are passed to the App Proxy Provider via the [`handleNewFlow(_:)`](./neappproxyprovider/handlenewflow%28_%29.md) method.
 

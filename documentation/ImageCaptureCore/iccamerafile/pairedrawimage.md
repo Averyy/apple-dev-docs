@@ -23,7 +23,7 @@ var pairedRawImage: ICCameraFile? { get }
 @property (nonatomic, readonly, nullable) ICCameraFile * pairedRawImage;
 ```
 
-#### Discussion
+## Discussion
 
 This value contains a single-item subset of the [`sidecarFiles`](./sidecarfiles.md) array.
 

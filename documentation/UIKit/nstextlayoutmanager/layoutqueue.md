@@ -23,7 +23,7 @@ var layoutQueue: OperationQueue? { get set }
 @property (strong, nullable) NSOperationQueue * layoutQueue;
 ```
 
-#### Discussion
+## Discussion
 
 If non-`nil`, it performs layout in the specified queue until `estimatedUsageBounds` becomes `false`.
 

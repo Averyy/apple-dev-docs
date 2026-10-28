@@ -16,11 +16,11 @@ Returns the current random seed, without incrementing it.
 uint random::seed()
 ```
 
-#### Return Value
+## Return Value
 
 The current random seed as a 32-bit unsigned integer.
 
-#### Discussion
+## Discussion
 
 This function retrieves the current state of the random number generator’s seed without modifying it, allowing you to inspect or save the seed value for later use.
 

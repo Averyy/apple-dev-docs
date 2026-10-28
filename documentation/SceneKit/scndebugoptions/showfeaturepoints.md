@@ -21,7 +21,7 @@ Display a point cloud showing intermediate results of the scene analysis that AR
 static let showFeaturePoints: SCNDebugOptions
 ```
 
-#### Discussion
+## Discussion
 
 This option is available only when running a [`ARWorldTrackingConfiguration`](../../ARKit/arworldtrackingconfiguration.md) session.
 

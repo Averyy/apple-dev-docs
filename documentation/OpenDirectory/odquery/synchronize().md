@@ -20,7 +20,7 @@ func synchronize()
 - (void) synchronize;
 ```
 
-#### Discussion
+## Discussion
 
 If the query was originally scheduled in a run loop with [`schedule(in:forMode:)`](./schedule%28in,formode%29.md), the delegate is called with `inResults` set to `nil`, `[inError code]` set to `kODErrorQuerySynchronize`, and `[inError domain]` set to `kODErrorDomainFramework`.
 

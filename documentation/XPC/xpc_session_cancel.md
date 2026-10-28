@@ -21,7 +21,7 @@ Cancels a session, discarding any unsent messages.
 extern void xpc_session_cancel(xpc_session_t session);
 ```
 
-#### Discussion
+## Discussion
 
 When you cancel a session, it discards any unsent messages and invalidates its connection. If there are messages awaiting replies, the session calls the reply handlers with an appropriate [`xpc_rich_error_t`](./xpc_rich_error_t.md).
 

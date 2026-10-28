@@ -25,7 +25,7 @@ protocol Subject<Output, Failure> : AnyObject, Publisher
 
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 A subject is a publisher that you can use to ”inject” values into a stream, by calling its [`send(_:)`](./subject/send%28_%29.md) method. This can be useful for adapting existing imperative code to the Combine model.
 

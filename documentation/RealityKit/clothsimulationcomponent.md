@@ -17,7 +17,7 @@ A component that marks an entity as the simulation root of a localized cloth sim
 struct ClothSimulationComponent
 ```
 
-#### Overview
+## Overview
 
 Each entity in a scene belongs to at most one cloth simulation, which is the ancestor closest in the entity hierarchy with a [`ClothSimulationComponent`](./clothsimulationcomponent.md). Separate simulations do not interact with each other, which can improve power and performance. As an example, if you want two cloth simulations, then you can set up your entity hierarchy as follows.
 

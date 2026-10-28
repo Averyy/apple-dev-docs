@@ -15,7 +15,7 @@ Get driver-specific data from a buffer.
 void * buf_drvdata(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Opaque driver data.
 

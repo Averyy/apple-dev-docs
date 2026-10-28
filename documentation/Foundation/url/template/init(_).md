@@ -21,7 +21,7 @@ Creates a new template from its text form.
 init?(_ template: String)
 ```
 
-#### Discussion
+## Discussion
 
 The template string needs to be a valid RFC 6570 template.
 

@@ -32,7 +32,7 @@ var identifier: String? { get }
 - [Generating a signature for promotional offers](../generating-a-signature-for-promotional-offers.md)
 - [Implementing promotional offers in your app](../implementing-promotional-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 You set up offers and their identifiers in App Store Connect.
 

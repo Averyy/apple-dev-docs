@@ -15,11 +15,11 @@ Finds the next interface descriptor in a configuration descriptor.
 const IOUSBInterfaceDescriptor *IOUSBGetNextInterfaceDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 An interface description pointer, or `NULL` if no matching descriptor is found.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextDescriptorWithType` to fetch the next interface descriptor.
 

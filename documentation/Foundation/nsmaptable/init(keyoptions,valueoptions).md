@@ -25,7 +25,7 @@ init(keyOptions: NSPointerFunctions.Options = [], valueOptions: NSPointerFunctio
 + (NSMapTable<id,id> *) mapTableWithKeyOptions:(NSPointerFunctionsOptions) keyOptions valueOptions:(NSPointerFunctionsOptions) valueOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A new map table, initialized with the given options.
 

@@ -14,7 +14,7 @@
 kOpaqueCoherenceID = 10
 ```
 
-#### Discussion
+## Discussion
 
 A coherence group.
 

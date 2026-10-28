@@ -15,7 +15,7 @@ Left eye polygon boundary points defining the preset field of view.
 var leftPolygonPoints: [simd_float4] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each point represents a vertex of the polygon boundary, ordered to form a continuous polygon. Points are expressed in the anchor’s coordinate frame.
 

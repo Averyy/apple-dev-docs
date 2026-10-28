@@ -24,7 +24,7 @@ class Command
 @interface WKWebExtensionCommand : NSObject
 ```
 
-#### Overview
+## Overview
 
 Provides access to command properties such as a unique identifier, a descriptive title, and shortcut keys. Commands can be used by a web extension to perform specific actions within a web extension context, such toggling features, or interacting with web content. These commands enhance the functionality of the extension by allowing users to invoke actions quickly.
 

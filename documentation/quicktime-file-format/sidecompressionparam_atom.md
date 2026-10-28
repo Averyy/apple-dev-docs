@@ -10,7 +10,7 @@ An atom that stores data specific to a given audio decompressor.
 
 - [Sound sample data](./sound_sample_data.md)
 
-#### Overview
+## Overview
 
 The `siDecompressionParam` atom provides the ability to store data specific to a given audio decompressor in the `SoundDescription` record. As example, some audio decompression algorithms, such as Microsoft’s ADPCM, require a set of out-of-band values to configure the decompressor. These are stored in an atom of this type.
 

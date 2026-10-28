@@ -25,7 +25,7 @@ typealias CFSetApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?) -
 typedef void (*)(const void *, void *) CFSetApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to the [`CFSetApplyFunction(_:_:_:)`](./cfsetapplyfunction%28_,_,_%29.md) function which iterates over the values in a set and applies the behavior defined in the applier function to each value in a set.
 

@@ -22,7 +22,7 @@ class AVRoutingPlaybackArbiter
 @interface AVRoutingPlaybackArbiter : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object manages instances of [`AVRoutingPlaybackParticipant`](./avroutingplaybackparticipant.md) for arbitration of media playback routing priorities and preferences on restricted playback interfaces. The playback routing arbiter is responsible for collecting and applying preferences, such as priorities in non-mixable audio routes and external playback states where the number of allowed players is limited.
 

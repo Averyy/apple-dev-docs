@@ -24,7 +24,7 @@ func end(proposingNewTime time: CMTime)
 - (void) endProposingNewTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 If this is the last suspension, the coordinator proposes a new time to the group without changing the group’s playback rate. If it isn’t, the coordinator only proposes the new time after all other suspensions end.
 

@@ -5,11 +5,11 @@
 
 Ensure you and other team members can sign your organization’s code and installer packages in Xcode.
 
-#### Overview
+## Overview
 
 Signing your app assures people that the app comes from your organization. For many common workflows, Xcode automatically manages certificates and code signing identities. If you need to manage code signing identities yourself — for example, to integrate with an external build system — use Xcode Settings to create code signing identities and distribution signing identities, share them with other team members, and keep your local identities synchronized with your developer account. For creating, managing, and revoking certificates in your developer account, see [Developer Account Help](https://developer.apple.com/help/account/).
 
-#### Create a new code signing identity
+## Create a new code signing identity
 
 If you need to generate a code signing identity for a particular purpose — for example to integrate with an external build system — use Xcode to create it by doing the following:
 
@@ -24,7 +24,7 @@ If you need to generate a code signing identity for a particular purpose — for
 
 ![A screenshot of the certificate management panel in Xcode.](https://developer.apple.com/tutorials/images/com.apple.Xcode/certificate-management@2x.png)
 
-#### Export your signing identity to share with a team member
+## Export your signing identity to share with a team member
 
 Export an identity when another member of your team needs to use the identity and cannot generate one in Xcode. For example, if your team manually manages signing identities, export a distribution signing identity to share with the team member who distributes your team’s apps. Xcode automatically creates and shares cloud-managed certificates among your team, so you don’t need to manually export cloud-managed certificates. For more information about cloud-managed certificates, see [Cloud-managed certificates](https://developer.apple.com/help/account/create-certificates/cloud-managed-certificates).
 
@@ -45,7 +45,7 @@ To export a signing identity as a password-protected PKCS#12 file:
 9. Enter a file name, and a password to protect the identity’s private key.
 10. Click Save.
 
-#### Recover a missing private key from another team member
+## Recover a missing private key from another team member
 
 If you have a certificate but not the corresponding private key, you can’t use that certificate for code signing or generating other digital signatures. You must have the complete digital identity to sign code and other digital objects.
 
@@ -58,7 +58,7 @@ After your team member sends you the exported code signing identity, import it i
 
 Keychain Access imports the code signing identity into your login keychain.
 
-#### Delete a revoked certificate
+## Delete a revoked certificate
 
 Control-click the certificate that you want to delete in the certificates management panel, and choose “Delete Certificate”. Xcode prompts you for confirmation, and removes the certificate and corresponding private key from your keychain.
 

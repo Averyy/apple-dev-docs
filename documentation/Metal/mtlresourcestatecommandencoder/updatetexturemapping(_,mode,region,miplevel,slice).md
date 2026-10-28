@@ -32,7 +32,7 @@ optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTex
 - (void) updateTextureMapping:(id<MTLTexture>) texture mode:(const MTLSparseTextureMappingMode) mode region:(const MTLRegion) region mipLevel:(const NSUInteger) mipLevel slice:(const NSUInteger) slice;
 ```
 
-#### Discussion
+## Discussion
 
 When the GPU executes the command that updates the texture’s memory mapping, the GPU gets details about the region from the `region` parameter.
 

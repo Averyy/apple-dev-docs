@@ -21,7 +21,7 @@ Calculates the root mean square of a double-precision vector.
 extern void vDSP_rmsqvD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the root mean square of the first `N` elements of the input vector and writes the result to the output scalar parameter, `C`.
 

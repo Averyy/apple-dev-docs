@@ -19,11 +19,11 @@ Draws the string in the current graphics context using the specified bounding re
 - (CGSize) drawInRect:(CGRect) rect withFont:(UIFont *) font lineBreakMode:(NSLineBreakMode) lineBreakMode;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the rendered string. The returned values may be rounded up to the nearest whole number.
 
-#### Discussion
+## Discussion
 
 This method draws as much of the string as possible using the given font, line break mode, and size constraints. The text is drawn using the [`UITextAlignmentLeft`](../../UIKit/uitextalignment/uitextalignmentleft.md) alignment.
 

@@ -15,7 +15,7 @@ The frequency at which object detection runs, in Hz.
 var detectionRate: Float
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps this value to between `0` and `30` Hz.
 

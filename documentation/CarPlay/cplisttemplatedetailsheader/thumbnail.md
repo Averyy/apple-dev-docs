@@ -21,7 +21,7 @@ var thumbnail: CPThumbnailImage { get set }
 @property (nonatomic, strong) CPThumbnailImage * thumbnail;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the primary visual content of the header. The thumbnail may include image overlays, playback progress indicators, or sports overlays depending on the content type.
 

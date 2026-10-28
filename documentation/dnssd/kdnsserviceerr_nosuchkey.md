@@ -23,7 +23,7 @@ var kDNSServiceErr_NoSuchKey: Int { get }
 kDNSServiceErr_NoSuchKey
 ```
 
-#### Discussion
+## Discussion
 
 The key does not exist in the TXT record.
 

@@ -17,7 +17,7 @@ An error that indicates the merchant must be signed into an Apple Account on the
 case accountLinkingRequiresiCloudSignIn
 ```
 
-#### Discussion
+## Discussion
 
 To accept the Terms and Conditions on device, the merchant must be signed into an Apple Account on the device. Your app should provide guidance.
 

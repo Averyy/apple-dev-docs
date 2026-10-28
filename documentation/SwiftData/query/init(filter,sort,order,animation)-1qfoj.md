@@ -22,7 +22,7 @@ Creates a query with a predicate, a key path to a property for sorting, and the 
 @preconcurrency init<Value>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value?>, order: SortOrder = .forward, animation: Animation) where Result == [Element], Value : Comparable
 ```
 
-#### Discussion
+## Discussion
 
 Use `Query` within a view by wrapping the variable for the query’s result:
 

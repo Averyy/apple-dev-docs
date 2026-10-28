@@ -32,7 +32,7 @@ var accountNickname: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * accountNickname;
 ```
 
-#### Discussion
+## Discussion
 
 When the user provides a nickname, look for an account whose name contains all or part of the specified string. Match the string against the user-visible nickname shown by your app.
 

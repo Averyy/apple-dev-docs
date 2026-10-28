@@ -19,7 +19,7 @@ Hides the object selection reticle when the session is in `.ready` state if set 
 
 Available when `Overlay` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 It can also be passed a value if there is a state variable controlling it:
 

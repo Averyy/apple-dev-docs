@@ -21,7 +21,7 @@ The shortest unit width.
 static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This width may condense the spacing between the value and the unit; for example, `37.20Cal` or `37,2L`.
 

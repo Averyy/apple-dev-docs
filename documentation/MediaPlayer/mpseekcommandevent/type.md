@@ -25,7 +25,7 @@ var type: MPSeekCommandEventType { get }
 @property (nonatomic, readonly) MPSeekCommandEventType type;
 ```
 
-#### Discussion
+## Discussion
 
 The `type` property declares if a seek command is beginning or ending.
 

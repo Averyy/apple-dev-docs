@@ -18,7 +18,7 @@ typedef struct AliasRecord {
 } AliasRecord;
 ```
 
-#### Overview
+## Overview
 
 The Alias Manager uses alias records to store information that allows it to locate an object in the file system. 
 

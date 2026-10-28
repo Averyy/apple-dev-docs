@@ -25,7 +25,7 @@ func expressionValue(with object: Any?, context: NSMutableDictionary?) -> Any?
 - (id) expressionValueWithObject:(id) object context:(NSMutableDictionary *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The evaluated object.
 

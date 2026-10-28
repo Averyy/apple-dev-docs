@@ -21,7 +21,7 @@ Creates a relationship with the given name on this prim, or returns the existing
 func makeRelationship(named name: USDToken, custom: Bool = true) -> USDPrim.Relationship
 ```
 
-#### Return Value
+## Return Value
 
 The relationship with the given name.
 

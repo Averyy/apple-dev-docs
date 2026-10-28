@@ -23,7 +23,7 @@ var sectionIndexTitles: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * sectionIndexTitles;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the localized list of section-index titles sorted according to the specified ordering (for example, A through Z in US English). In its implementation of [`sectionIndexTitles(for:)`](../uitableviewdatasource/sectionindextitles%28for%29.md), the data source can call this method on the indexed-collation object and pass back the result.
 

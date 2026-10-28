@@ -16,7 +16,7 @@ convenience init(callStackAddresses: [NSNumber], location: XCTSourceCodeLocation
 - (instancetype) initWithCallStackAddresses:(NSArray<NSNumber *> *) callStackAddresses location:(XCTSourceCodeLocation *) location;
 ```
 
-#### Discussion
+## Discussion
 
 The call stack addresses could be from `NSThread.callStackReturnAddresses`, `NSException.callStackReturnAddresses`, or another source.
 

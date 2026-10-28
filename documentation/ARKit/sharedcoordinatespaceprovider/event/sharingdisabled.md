@@ -13,7 +13,7 @@
 case sharingDisabled
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Sharing has been disabled on this provider. No data will be vended and the user is not allowed to push data to the provider either.
 

@@ -19,11 +19,11 @@ func es_mute_path(_ client: OpaquePointer, _ path: UnsafePointer<CChar>, _ type:
 extern es_return_t es_mute_path(es_client_t *client, const char *path, es_mute_path_type_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the mute request succeeded or failed with an error.
 
-#### Discussion
+## Discussion
 
 To mute a subset of events from a path, use [`es_mute_path_events(_:_:_:_:_:)`](./es_mute_path_events%28_,_,_,_,_%29.md).
 

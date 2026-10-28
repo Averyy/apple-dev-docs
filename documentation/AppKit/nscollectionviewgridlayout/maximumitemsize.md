@@ -19,7 +19,7 @@ var maximumItemSize: NSSize { get set }
 @property NSSize maximumItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the maximum size of items displayed in the grid. The default value of this property is (`0.0`, `0.0`), which imposes no maximum size for items.
 

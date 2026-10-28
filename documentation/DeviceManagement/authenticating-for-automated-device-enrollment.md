@@ -4,11 +4,11 @@
 
 Communicate securely with the web service using a server token.
 
-#### Overview
+## Overview
 
 Automated Device Enrollment uses a server token to allow a device management service to securely communicate with the program’s service.
 
-#### Get an Automated Device Enrollment server token
+## Get an Automated Device Enrollment server token
 
 To get a server token, the user must complete the following steps. You can help by automating some of the steps.
 
@@ -22,14 +22,14 @@ To get a server token, the user must complete the following steps. You can help 
 
 The token consists of these 4 items: the consumer key, the consumer secret, the access token, and the access secret. See [Examining server tokens](./examining-server-tokens.md) for more details.
 
-#### Deploy the server token
+## Deploy the server token
 
 The server tokens can be deployed automatically or manually.
 
 - **Automatically**: The device management service must automatically decrypt this file when it’s uploaded, using the private key for the Automated Device Enrollment web services.
 - **Manually**: Use the private key and an S/MIME encryption utility to manually decrypt the encrypted token file before it’s uploaded to the device management service. You then use the plain-text token file for authentication with the Automated Device Enrollment services.
 
-#### Use the OAuth credentials
+## Use the OAuth credentials
 
 Each service request to the enrollment service must include an `X-ADM-Auth-Session` header. If the request doesn’t have a valid `X-ADM-Auth-Session` header, or the auth token has expired, the server returns an `HTTP 401 Unauthorized` error. A new `X-ADM-Auth-Session` can be requested by using the `https://mdmenrollment.apple.com/session` endpoint. This endpoint supports the OAuth 1.0a protocol for accessing protected resources.
 

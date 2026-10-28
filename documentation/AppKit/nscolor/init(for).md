@@ -21,7 +21,7 @@ init(for controlTint: NSControlTint)
 + (NSColor *) colorForControlTint:(NSControlTint) controlTint;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColor` object.
 

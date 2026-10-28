@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatMakeWithPackedVector(simd_packed_float4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation structure.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial rotation structure from a packed simd vector.
 

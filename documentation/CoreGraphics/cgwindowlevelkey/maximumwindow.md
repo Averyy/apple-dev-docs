@@ -18,7 +18,7 @@ case maximumWindow
 kCGMaximumWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The highest allowed window level.
 

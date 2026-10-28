@@ -19,9 +19,9 @@ The status item that reports whether the device is eligible to run a non-interac
 object StatusEnhancedLoggingNonInteractiveEligibility
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusEnhancedLoggingNonInteractiveEligibility
 | Allowed in system scope | iOS, Shared iPad, tvOS |
 | Allowed in user scope | macOS |
 
-##### Status item example
+### Status item example
 
 ```json
 {

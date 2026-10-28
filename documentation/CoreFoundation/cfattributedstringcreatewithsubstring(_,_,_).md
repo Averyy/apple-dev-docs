@@ -25,7 +25,7 @@ func CFAttributedStringCreateWithSubstring(_ alloc: CFAllocator!, _ aStr: CFAttr
 extern CFAttributedStringRefCFAttributedStringCreateWithSubstring(CFAllocatorRef alloc, CFAttributedStringRef aStr, CFRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A new attributed string whose string and attributes are copied from the specified range of the supplied attributed string. Returns `NULL` if there was a problem copying the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -24,7 +24,7 @@ class UIKeyCommand
 @interface UIKeyCommand : UICommand
 ```
 
-#### Overview
+## Overview
 
 Hardware keyboards allow a user to hold down the Control, Option, Command, or other modifier key and press another key in combination to initiate commands such as Cut, Copy, or Paste. You can use instances of this class to define custom command sequences that your app recognizes and then provide an appropriate response.
 

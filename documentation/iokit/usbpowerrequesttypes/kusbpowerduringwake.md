@@ -14,7 +14,7 @@
 kUSBPowerDuringWake = 1
 ```
 
-#### Discussion
+## Discussion
 
 The power is to be used while the system is awake (i.e not sleeping)
 

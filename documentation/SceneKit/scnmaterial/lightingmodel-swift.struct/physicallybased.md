@@ -25,7 +25,7 @@ static let physicallyBased: SCNMaterial.LightingModel
 extern SCNLightingModel const SCNLightingModelPhysicallyBased;
 ```
 
-#### Discussion
+## Discussion
 
 Physically-based shading incorporates a refined model of the interactions between real-world lights and materials. Using modern GPU hardware and algorithms, this model can produce more realistic results than the loose abstractions of traditional shading, while also offering a set of material properties that is easier for artists to work with. Especially when combined with environmental lighting (see the [`SCNScene`](../../scnscene.md) [`lightingEnvironment`](../../scnscene/lightingenvironment.md) property) and high dynamic range cameras (see the [`SCNCamera`](../../scncamera.md) [`wantsHDR`](../../scncamera/wantshdr.md) property), physically-based shading can produce realistic results similar to those seen in recent animated feature films.
 

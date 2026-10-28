@@ -33,7 +33,7 @@ var confidence: Float { get }
 @property (atomic, assign, readonly) float confidence;
 ```
 
-#### Discussion
+## Discussion
 
 The value ranges from 0.0 to 1.0, where 1.0 indicates the highest level of confidence.
 

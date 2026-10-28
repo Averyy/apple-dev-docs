@@ -23,7 +23,7 @@ var indentsAccessories: Bool { get set }
 @property (nonatomic) BOOL indentsAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`false`](../../Swift/false.md), the cell indents the content view only.
 

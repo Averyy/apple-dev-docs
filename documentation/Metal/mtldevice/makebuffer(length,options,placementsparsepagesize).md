@@ -25,11 +25,11 @@ func makeBuffer(length: Int, options: MTLResourceOptions = [], placementSparsePa
 - (id<MTLBuffer>) newBufferWithLength:(NSUInteger) length options:(MTLResourceOptions) options placementSparsePageSize:(MTLSparsePageSize) placementSparsePageSize;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTLBuffer`](../mtlbuffer.md) instance, or `nil` if the function failed.
 
-#### Discussion
+## Discussion
 
 This method creates a new placement sparse [`MTLBuffer`](../mtlbuffer.md) of a specific length. You assign memory to placement sparse buffers using a [`MTLHeap`](../mtlheap.md) of type [`MTLHeapType.placement`](../mtlheaptype/placement.md).
 

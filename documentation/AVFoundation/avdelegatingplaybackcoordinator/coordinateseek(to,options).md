@@ -24,7 +24,7 @@ func coordinateSeek(to time: CMTime, options: AVDelegatingPlaybackCoordinatorSee
 - (void) coordinateSeekToTime:(CMTime) time options:(AVDelegatingPlaybackCoordinatorSeekOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 To end a suspension and also affect the group timing, see [`end(proposingNewTime:)`](../avcoordinatedplaybacksuspension/end%28proposingnewtime%29.md).
 

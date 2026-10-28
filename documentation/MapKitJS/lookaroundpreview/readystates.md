@@ -15,7 +15,7 @@ A static property that allows you to access to access the look around ready stat
 static ReadyStates: typeof LookAroundReadyState;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to access the [`LookAroundReadyState`](../lookaroundreadystate.md) enumeration with `mapkit.LookAroundPreview.ReadyStates`.
 

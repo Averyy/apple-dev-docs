@@ -27,7 +27,7 @@ var candidate_gate: BNNSLSTMGateDescriptor
 BNNSLSTMGateDescriptor candidate_gate;
 ```
 
-#### Discussion
+## Discussion
 
 Use C style multidimensional array notation to order the memory pointers as `[ ``/Accelerate/BNNSLayerParametersLSTM/num_layers`` ][num_directions][ ``/Accelerate/BNNSLayerParametersLSTM/hidden_size`` ][ ``/Accelerate/BNNSLayerParametersLSTM/input_size`` / ``/Accelerate/BNNSLayerParametersLSTM/hidden_size`` ]`.
 

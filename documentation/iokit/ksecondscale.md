@@ -17,7 +17,7 @@
 var kSecondScale: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for second based times.
 

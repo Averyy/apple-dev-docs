@@ -21,11 +21,11 @@ Returns the range of x position for the given data value, or `nil` if the x scal
 func positionRange<P>(forX value: P) -> ClosedRange<CGFloat>? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The position range corresponding to the data value.
 
-#### Discussion
+## Discussion
 
 For a continuous data value, the returned range is a single point. For a categorical data value, the returned range is the range of positions that correspond to the given category.
 

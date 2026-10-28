@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 18.2 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 18.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [Xcode 16.2 Release Notes](../Xcode-Release-Notes/xcode-16_2-release-notes.md).
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Compiling in the Swift 6 language mode might cause an `@Entry` error due to “static property `defaultValue` is not concurrency-safe because non-‘Sendable’ type”.  (133885814)
 - Fixed: Views won’t accept dropped directories if [UTType.directory](../UniformTypeIdentifiers/uttype-swift.struct/directory.md) or [UTType.fileURL](../UniformTypeIdentifiers/uttype-swift.struct/fileurl.md) are not in the list of accepted content types for drop.  (138158126)

@@ -24,7 +24,7 @@ func depthBlurEffectFilter(for image: CIImage, disparityImage: CIImage, portrait
 - (CIFilter *) depthBlurEffectFilterForImage:(CIImage *) image disparityImage:(CIImage *) disparityImage portraitEffectsMatte:(CIImage *) portraitEffectsMatte orientation:(CGImagePropertyOrientation) orientation options:(NSDictionary *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver context is used to render the image in order to get the facial landmarks used to create the effect. The auxiliary images used to create the filter can be obtained from a JPEG or HEIC file containing embedded portrait effects matte data.
 

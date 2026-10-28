@@ -25,7 +25,7 @@ class INStartPhotoPlaybackIntentResponse
 @interface INStartPhotoPlaybackIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INStartPhotoPlaybackIntentResponse`](./instartphotoplaybackintentresponse.md) object to specify the status of searching the user’s photos and the readiness of your app to begin playing those photos in a slideshow. After performing a search using the criteria specified in the [`INStartPhotoPlaybackIntent`](./instartphotoplaybackintent.md) object, create an instance of this class with the results. Siri communicates the status from your response to the user at appropriate times.
 

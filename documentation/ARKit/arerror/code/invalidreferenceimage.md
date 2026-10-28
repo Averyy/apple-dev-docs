@@ -20,7 +20,7 @@ case invalidReferenceImage
 ARErrorCodeInvalidReferenceImage
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you supply a reference image to the configuration’s [`detectionImages`](../../arworldtrackingconfiguration/detectionimages.md) but ARKit determined it’s unusable. This can happen when the image data doesn’t contain enough features to identify a unique picture, for example, it’s all white.
 

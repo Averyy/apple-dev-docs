@@ -5,7 +5,7 @@
 
 Use specially formatted URLs to link to content within your app.
 
-#### Overview
+## Overview
 
 Custom URL schemes provide a way to reference resources inside your app. Users tapping a custom URL in an email, for example, launch your app in a specified context. Other apps can also trigger your app to launch with specific context data; for example, a photo library app might display a specified image.
 
@@ -40,7 +40,7 @@ UIApplication.shared.open(url!) { (result) in
 }
 ```
 
-##### Register your URL scheme
+### Register your URL scheme
 
 URL scheme registration specifies which URLs to redirect to your app. Register your scheme in Xcode from the Info tab of your project settings. Update the URL Types section to declare all of the URL schemes your app supports, as shown in the following illustration.
 
@@ -56,7 +56,7 @@ The identifier you supply with your scheme distinguishes your app from others th
 
 Some URL schemes are reserved for system use. The system directs well-known types of URLs to the corresponding system apps, and well-known `http–`based URLs to specific apps such as Maps, YouTube, and Music. For information about the schemes supported by Apple, see [Apple URL Scheme Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
-##### Handle incoming URLs
+### Handle incoming URLs
 
 When another app opens a URL containing your custom scheme, the system launches your app, if necessary, and brings it to the foreground. The system delivers the URL to your app by calling your app delegate’s [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md) method. Add code to the method to parse the contents of the URL and take appropriate actions. To ensure the URL is parsed correctly, use [`NSURLComponents`](../Foundation/nsurlcomponents.md) APIs to extract the components. Obtain additional information about the URL, such as which app opened it, from the system-provided options dictionary.
 

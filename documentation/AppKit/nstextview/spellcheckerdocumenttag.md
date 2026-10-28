@@ -19,7 +19,7 @@ var spellCheckerDocumentTag: Int { get }
 @property (readonly) NSInteger spellCheckerDocumentTag;
 ```
 
-#### Discussion
+## Discussion
 
 The document tag is obtained by sending a [`uniqueSpellDocumentTag()`](../nsspellchecker/uniquespelldocumenttag%28%29.md) message to the spell server the first time this method is invoked for a particular group of text views. See the [`NSSpellChecker`](../nsspellchecker.md)and [`NSSpellServer`](../../Foundation/nsspellserver.md)class specifications for more information on how this tag is used.
 

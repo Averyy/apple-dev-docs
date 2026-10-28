@@ -24,7 +24,7 @@ func completeIO(for file: FSItem, offset: off_t, length: Int, status: any Error,
 - (void) completeIOForFile:(FSItem *) file offset:(off_t) offset length:(size_t) length status:(NSError *) status flags:(FSCompleteIOFlags) flags operationID:(FSOperationID) operationID replyHandler:(void (^)(FSCompleteIOResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method by updating a file’s metadata, such as its size and modification time.
 

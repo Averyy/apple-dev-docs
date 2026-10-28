@@ -25,7 +25,7 @@ var blendMode: SCNBlendMode { get set }
 @property (nonatomic) SCNBlendMode blendMode;
 ```
 
-#### Discussion
+## Discussion
 
 With the default blend mode of [`SCNBlendMode.alpha`](../scnblendmode/alpha.md), materials blend according to their alpha (opacity) values—a pixel rendered with a higher alpha value appears more opaque than one with a lower alpha value. Change this property to create special effects. For example, the [`SCNBlendMode.add`](../scnblendmode/add.md) mode can make objects appear to glow.
 

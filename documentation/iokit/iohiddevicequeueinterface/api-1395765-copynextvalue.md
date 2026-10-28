@@ -16,11 +16,11 @@ Dequeues a retained copy of an element value from the head of an IOHIDDeviceQueu
 IOReturn (*copyNextValue)(void *self, IOHIDValueRef *pValue, uint32_t timeout, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnUnderrun if data is unavailble, or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Because the value is a retained copy, it is up to the caller to release the value using CFRelease. Use with setValueCallback to avoid polling the queue for data.
 

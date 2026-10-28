@@ -23,11 +23,11 @@ func volumeThumbImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) volumeThumbImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The thumb image associated with the specified state, or [`nil`](../../ObjectiveC/nil-227m0.md) if an appropriate image could not be retrieved. This method might return [`nil`](../../ObjectiveC/nil-227m0.md) if you specify multiple control states in the state parameter.
 
-#### Discussion
+## Discussion
 
 For a description of slider and thumb images, see [Customizing the volume slider’s appearance](../mpvolumeview.md#Customizing-the-volume-sliders-appearance).
 

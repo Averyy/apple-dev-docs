@@ -24,11 +24,11 @@ func objectForKeyedSubscript(_ key: Any!) -> JSValue!
 - (JSValue *) objectForKeyedSubscript:(id) key;
 ```
 
-#### Return Value
+## Return Value
 
 The JavaScript property named by `key`, or `nil` if no such field or function exists.
 
-#### Discussion
+## Discussion
 
 This method first constructs a [`JSValue`](../jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to look up the name of a property in the context’s global object.
 

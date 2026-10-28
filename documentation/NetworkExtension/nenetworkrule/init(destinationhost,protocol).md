@@ -19,7 +19,7 @@ init(destinationHost hostEndpoint: NWHostEndpoint, protocol: NENetworkRule.Proto
 - (instancetype) initWithDestinationHost:(NWHostEndpoint *) hostEndpoint protocol:(NENetworkRuleProtocol) protocol;
 ```
 
-#### Discussion
+## Discussion
 
 If the port string of `destinationHost` is `0` or is the empty string, then the rule matches traffic on any port destined for the given hostname or domain.
 
@@ -27,7 +27,7 @@ If the hostname string of `destinationHost` consists of a single label, then the
 
 If the hostname string of `destinationHost` consists of two or more labels, then the rule matches traffic destined to hosts within the domain specified by the hostname string.
 
-##### Examples
+### Examples
 
 The following example makes a rule that matches all TCP and UDP traffic to a host named `com` in Swift.
 

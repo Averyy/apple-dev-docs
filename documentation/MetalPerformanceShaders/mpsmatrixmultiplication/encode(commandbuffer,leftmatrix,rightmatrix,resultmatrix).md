@@ -24,7 +24,7 @@ func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMat
 - (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer leftMatrix:(MPSMatrix *) leftMatrix rightMatrix:(MPSMatrix *) rightMatrix resultMatrix:(MPSMatrix *) resultMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 The following constraints apply to the sizes of the matrices depending on the transposition operations and the sizes requested at initialization time, as well as the origins at the time this method is called:
 

@@ -14,11 +14,11 @@ Outputs a 1 or a 0 depending on whether the input is greater than or less than t
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 0 if X < Edge, otherwise it returns 1.0
 
-#### Parameter Types
+## Parameter Types
 
 **Step (float)**:
 
@@ -130,12 +130,12 @@ Outputs a 1 or a 0 depending on whether the input is greater than or less than t
 | --- | --- |
 | `Out` | Vector2h |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value.
 - **`Edge`**: The deciding value to which to compare the input.
 
-#### Discussion
+## Discussion
 
 The Step node takes the `In` value and compares it to the `Edge` parameter. If the value is less than `Edge`, the node returns `0`. Otherwise, it returns `1`.
 

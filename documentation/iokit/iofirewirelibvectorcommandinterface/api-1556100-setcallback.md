@@ -16,7 +16,7 @@ Set the callback routine for this command.
 void (*SetCallback)(IOFireWireLibVectorCommandRef self, IOFireWireLibCommandCallback inCallback);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

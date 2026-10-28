@@ -21,7 +21,7 @@ class CLKComplicationTemplateCircularSmallSimpleText
 @interface CLKComplicationTemplateCircularSmallSimpleText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the circularSmall family.
 

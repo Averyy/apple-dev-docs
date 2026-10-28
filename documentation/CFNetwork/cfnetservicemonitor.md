@@ -24,7 +24,7 @@ class CFNetServiceMonitor
 typedef struct __CFNetServiceMonitor * CFNetServiceMonitorRef;
 ```
 
-#### Discussion
+## Discussion
 
 Service monitor references are used to monitor record changes on a CFNetServiceRef.
 

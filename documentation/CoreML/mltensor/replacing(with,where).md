@@ -27,11 +27,11 @@ func replacing(with replacement: MLTensor, where mask: MLTensor) -> MLTensor
 func replacing(with replacement: some MLTensorScalar, where mask: MLTensor) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A new tensor of the same shape and type as `self`.
 
-#### Discussion
+## Discussion
 
 For example:
 

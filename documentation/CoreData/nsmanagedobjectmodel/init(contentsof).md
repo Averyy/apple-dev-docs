@@ -25,7 +25,7 @@ convenience init?(contentsOf url: URL)
 - (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A managed object model initialized using the file at `url`.
 

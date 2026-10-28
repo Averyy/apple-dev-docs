@@ -21,7 +21,7 @@ case ended
 AVCaptureEventPhaseEnded
 ```
 
-#### Discussion
+## Discussion
 
 This phase corresponds to a user pressing up on a hardware button.
 

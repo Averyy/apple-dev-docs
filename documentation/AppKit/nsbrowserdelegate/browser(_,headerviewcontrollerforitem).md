@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, headerViewControllerForItem item: An
 - (NSViewController *) browser:(NSBrowser *) browser headerViewControllerForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller that provides a header view, or `nil` to omit the header view.
 
-#### Discussion
+## Discussion
 
 The returned controller’s represented object will be set to the column item. This method is called only if the delegate implements the item data source methods.
 

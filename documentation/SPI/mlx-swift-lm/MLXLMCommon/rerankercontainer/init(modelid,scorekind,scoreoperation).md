@@ -17,7 +17,7 @@ Create a type-erased reranker around a scoring operation.
 init(modelID: String, scoreKind: RerankScoreKind, scoreOperation: @escaping ScoreOperation)
 ```
 
-#### Discussion
+## Discussion
 
 The operation must return one finite score per document in original input order.
 

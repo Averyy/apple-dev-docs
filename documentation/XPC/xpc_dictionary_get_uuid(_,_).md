@@ -25,7 +25,7 @@ func xpc_dictionary_get_uuid(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>)
 extern const uint8_t *xpc_dictionary_get_uuid(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `uuid_t` value for the specified key. NULL is the value at the specified index is not a UUID value. The returned pointer may be safely passed to the `uuid(3)` APIs.
 

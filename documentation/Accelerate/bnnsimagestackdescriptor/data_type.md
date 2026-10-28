@@ -25,7 +25,7 @@ var data_type: BNNSDataType
 BNNSDataType data_type;
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

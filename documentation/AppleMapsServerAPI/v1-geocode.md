@@ -9,9 +9,9 @@ Returns the latitude and longitude of the address you specify.
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

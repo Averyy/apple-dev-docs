@@ -25,7 +25,7 @@ let kCTFontVariationAxisIdentifierKey: CFString
 extern CFStringRef const kCTFontVariationAxisIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the variation axis identifier value as a reference to a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

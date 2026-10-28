@@ -15,7 +15,7 @@ The style of playback that determines the nature of an animation.
 attribute LivePhotosKit.PlaybackStyleLiteral playbackStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property can take one of two values:
 

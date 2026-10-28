@@ -19,11 +19,11 @@ func createFolder(_ inDirName: String!) -> OBEXError
 - (OBEXError) createFolder:(NSString *) inDirName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesCreateFolderComplete delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘mkdir dirName’.
 

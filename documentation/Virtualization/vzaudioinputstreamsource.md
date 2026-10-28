@@ -19,7 +19,7 @@ class VZAudioInputStreamSource
 @interface VZAudioInputStreamSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 An audio input stream source defines how th guest produces audio input data on the host system.
 

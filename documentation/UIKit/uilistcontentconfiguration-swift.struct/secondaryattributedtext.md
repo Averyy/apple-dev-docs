@@ -19,7 +19,7 @@ An attributed variant of the secondary text.
 var secondaryAttributedText: NSAttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value supersedes the [`secondaryText`](../uilistcontentconfiguration-c.class/secondarytext.md) property.
 

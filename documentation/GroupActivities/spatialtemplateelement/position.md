@@ -16,7 +16,7 @@ The location of the element in the shared coordinate space.
 var position: SpatialTemplateElementPosition { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a position structure that represents the distances from the origin along the x- and y-axes.
 

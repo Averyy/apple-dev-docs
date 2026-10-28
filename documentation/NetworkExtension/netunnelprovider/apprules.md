@@ -23,7 +23,7 @@ var appRules: [NEAppRule]? { get }
 @property (readonly, nullable) NSArray<NEAppRule *> * appRules;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only non-`nil` if the current configuration is a Per-App VPN configuration.
 

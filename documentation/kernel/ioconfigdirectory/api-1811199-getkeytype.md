@@ -11,11 +11,11 @@ virtual IOReturn getKeyType(
  IOConfigKeyType &type);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the key exists in the dictionary
 
-#### Overview
+## Overview
 
 Gets the data type for the specified key
 

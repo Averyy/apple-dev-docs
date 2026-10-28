@@ -25,7 +25,7 @@ let kCMMetadataKeySpace_iTunes: CFString
 extern CFStringRef const kCMMetadataKeySpace_iTunes;
 ```
 
-#### Discussion
+## Discussion
 
 This keyspace defines its key values to be expressed as `OSType`s (a.k.a. `FourCharCode`s). As such, keys must be four bytes in length.
 

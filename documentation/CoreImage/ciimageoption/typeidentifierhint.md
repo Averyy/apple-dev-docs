@@ -24,7 +24,7 @@ static let typeIdentifierHint: CIImageOption
 extern CIImageOption const kCIImageTypeIdentifierHint;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key should be an `NSString` containing a hint. It is most commonly needed for some RAW file formats which can also be
 interpreted as TIFF files.

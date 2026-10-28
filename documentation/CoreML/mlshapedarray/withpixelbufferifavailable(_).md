@@ -21,11 +21,11 @@ Reads the underlying pixel buffer.
 func withPixelBufferIfAvailable<R>(_ body: (CVPixelBuffer) throws -> R) rethrows -> R?
 ```
 
-#### Return Value
+## Return Value
 
 The value returned from body, unless the shaped array doesn’t use a pixel buffer backing, in which case the method ignores body and returns nil.
 
-#### Discussion
+## Discussion
 
 Use this method to read the contents of the underlying pixel buffer. The pixel buffer is read only. Do not write to it.
 

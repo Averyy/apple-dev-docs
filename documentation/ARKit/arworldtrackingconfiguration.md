@@ -24,7 +24,7 @@ class ARWorldTrackingConfiguration
 
 - [Choosing Which Camera Feed to Augment](./choosing-which-camera-feed-to-augment.md)
 
-#### Overview
+## Overview
 
 The [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) class tracks the device’s movement with six degrees of freedom (6DOF): the three rotation axes (roll, pitch, and yaw), and three translation axes (movement in x, y, and z).
 

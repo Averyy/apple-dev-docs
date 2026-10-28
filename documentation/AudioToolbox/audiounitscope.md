@@ -24,7 +24,7 @@ typealias AudioUnitScope = UInt32
 typedef UInt32 AudioUnitScope;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit scope is a discrete, nonnestable programmatic context for an audio unit. The scopes for audio units are described in the Audio Unit Scopes enumeration.
 

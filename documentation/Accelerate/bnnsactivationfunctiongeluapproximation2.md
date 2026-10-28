@@ -25,7 +25,7 @@ var BNNSActivationFunctionGELUApproximation2: BNNSActivationFunction { get }
 BNNSActivationFunctionGELUApproximation2
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

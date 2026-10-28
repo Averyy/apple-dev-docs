@@ -24,7 +24,7 @@ func clearSelection()
 - (void) clearSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The view redraws as necessary but does not scroll. This call is equivalent to calling `[PDFView setCurrentSelection:NULL].`
 

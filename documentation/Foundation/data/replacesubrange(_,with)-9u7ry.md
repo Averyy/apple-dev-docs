@@ -21,7 +21,7 @@ Replaces a region of bytes in the data with new bytes from a collection.
 @abi(func repalceSubrangeFast(_ subrange: Range<Data.Index>, with newElements: some Collection<UInt8>)) mutating func replaceSubrange(_ subrange: Range<Data.Index>, with newElements: some Collection<UInt8>)
 ```
 
-#### Discussion
+## Discussion
 
 This will resize the data if required, to fit the entire contents of `newElements`.
 

@@ -24,7 +24,7 @@ var value: Any { get }
 @property (nonatomic, strong, readonly) id value;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value using a subclass initializer. For example, see [`init(value:)`](../phasestringmetaparameterdefinition/init%28value%29.md).
 

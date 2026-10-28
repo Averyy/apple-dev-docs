@@ -23,7 +23,7 @@ static let downloadsDirectoryURL: ICDownloadOption
 extern ICDownloadOption const ICDownloadsDirectoryURL;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the directory as an [`NSURL`](../../Foundation/nsurl.md) object.
 

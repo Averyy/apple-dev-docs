@@ -25,7 +25,7 @@ func xpc_dictionary_get_double(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar
 extern double xpc_dictionary_get_double(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `double` value for the specified key. NAN if the value for the specified key is not a floating point value or if there is no value for the specified key.
 

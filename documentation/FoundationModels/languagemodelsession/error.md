@@ -20,7 +20,7 @@ A failure caused by incorrect use of a language model session.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 > **Note**: If your app deploys to iOS 26, macOS 26, or visionOS 26, where this error is unavailable, use an availability check and fall back to [`LanguageModelSession.GenerationError`](./generationerror.md):
 >

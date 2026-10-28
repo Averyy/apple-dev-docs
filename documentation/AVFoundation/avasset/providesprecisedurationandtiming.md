@@ -17,7 +17,7 @@ A Boolean value that indicates whether the asset provides precise duration and t
 
 > **Deprecated**: Load the value of  [`providesPreciseDurationAndTiming`](../avpartialasyncproperty/providesprecisedurationandtiming.md)  asynchronously instead. This property value is [`true`](../../Swift/true.md) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](../../Swift/false.md).
 >
-> #### Discussion
+> ## Discussion
 
 ## Declaration
 

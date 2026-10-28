@@ -19,11 +19,11 @@ Presents a sheet to read a loyalty card for Value Added Services (VAS), and retu
 func readVAS(_ request: VASRequest, eventHandler: ((PaymentCardReaderSession.Event) -> Void)? = nil) async throws -> VASReadResult
 ```
 
-#### Return Value
+## Return Value
 
 A [`VASReadResult`](../vasreadresult.md) if the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method to read the data from a loyalty card. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs.
 

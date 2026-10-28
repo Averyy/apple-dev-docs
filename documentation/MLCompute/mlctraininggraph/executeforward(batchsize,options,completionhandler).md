@@ -23,7 +23,7 @@ func executeForward(batchSize: Int, options: MLCExecutionOptions = [], completio
 - (BOOL) executeForwardWithBatchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 

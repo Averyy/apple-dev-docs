@@ -20,11 +20,11 @@ Creates an object whose resolution involves the successful matching of the speci
 + (instancetype) successWithResolvedValue:(NSInteger) resolvedValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INEnumResolutionResult`](../inenumresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

@@ -26,7 +26,7 @@ var userIdentityDiscoveredBlock: ((CKUserIdentity) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^userIdentityDiscoveredBlock)(CKUserIdentity *identity);
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameter:
 

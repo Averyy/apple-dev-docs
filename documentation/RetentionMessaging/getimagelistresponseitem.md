@@ -19,7 +19,7 @@ object GetImageListResponseItem
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Image List`](./get-image-list.md) endpoint returns an array of these values in its response.
 

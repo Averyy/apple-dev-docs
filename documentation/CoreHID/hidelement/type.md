@@ -15,7 +15,7 @@ The type of this element.
 var type: HIDReportType
 ```
 
-#### Discussion
+## Discussion
 
 The type of an element is determined by the report that contains it.
 

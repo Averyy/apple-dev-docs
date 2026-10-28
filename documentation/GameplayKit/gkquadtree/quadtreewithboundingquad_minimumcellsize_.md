@@ -20,11 +20,11 @@ Creates a quadtree with the specified dimensions.
 + (instancetype) quadtreeWithBoundingQuad:(GKQuad) quad minimumCellSize:(float) minCellSize;
 ```
 
-#### Return Value
+## Return Value
 
 A new quadtree object.
 
-#### Discussion
+## Discussion
 
 The `minCellSize` parameter controls the memory usage and performance of the tree. A lower value causes the tree to make more spatial divisions when adding elements; a higher value causes the tree to create fewer such divisions, but store more elements in each node. Which direction leads to better performance depends on the number and spatial arrangement of the elements you add to the tree—for best results, profile with different values to find one best suited to your app or game.
 

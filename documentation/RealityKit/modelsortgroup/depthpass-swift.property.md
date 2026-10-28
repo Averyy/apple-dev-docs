@@ -20,7 +20,7 @@ A depth pass that controls when the renderer draws the depth of model entities i
 var depthPass: ModelSortGroup.DepthPass? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can tell the renderer to draw the depth and color together by setting the value to `nil`.
 

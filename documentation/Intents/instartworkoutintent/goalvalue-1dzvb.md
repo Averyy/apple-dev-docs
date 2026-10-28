@@ -27,7 +27,7 @@ The numerical goal of the workout.
 @property (atomic, copy, readonly, nullable) NSNumber * goalValue;
 ```
 
-#### Discussion
+## Discussion
 
 If the user specified a goal, this property contains the numerical value of that goal. You get the units associated with this goal from the [`workoutGoalUnitType`](./workoutgoalunittype.md) property.
 

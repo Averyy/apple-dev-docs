@@ -15,7 +15,7 @@ The getter to use to access the place selection accessory class.
 get PlaceSelectionAccessory(): typeof PlaceSelectionAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

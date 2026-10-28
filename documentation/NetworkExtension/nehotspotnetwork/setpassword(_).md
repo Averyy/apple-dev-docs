@@ -22,7 +22,7 @@ func setPassword(_ password: String)
 - (void) setPassword:(NSString *) password;
 ```
 
-#### Discussion
+## Discussion
 
 The Hotspot Helper may set a password for a protected network. The password string must adhere to IEEE 802.11 guidelines appropriate for the particular security scheme.
 

@@ -21,11 +21,11 @@ func SecKeychainItemCopyAttributesAndData(_ itemRef: SecKeychainItem, _ info: Un
 OSStatus SecKeychainItemCopyAttributesAndData(SecKeychainItemRef itemRef, SecKeychainAttributeInfo *info, SecItemClass *itemClass, SecKeychainAttributeList **attrList, UInt32 *length, void **outData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function returns the data and attributes of a specific keychain item.
 

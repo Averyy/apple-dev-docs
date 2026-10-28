@@ -26,7 +26,7 @@ var appTransactionID: String { get }
 
 - [Generating JWS to sign App Store requests](../generating-jws-to-sign-app-store-requests.md)
 
-#### Discussion
+## Discussion
 
 The App Store generates a single, globally unique `appTransactionID` for each Apple Account that downloads your app and for each family group member for apps that support Family Sharing.
 

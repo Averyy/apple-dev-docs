@@ -25,7 +25,7 @@ var javaScriptEnabled: Bool { get set }
 @property (nonatomic) BOOL javaScriptEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). Setting this property to [`false`](../../Swift/false.md) disables JavaScripts that are loaded or executed by the webpage. This setting does not affect user scripts. See [`WKUserContentController`](../wkusercontentcontroller.md).
 

@@ -21,7 +21,7 @@ Sets streaming advancement amount for cases with dynamically shaped inputs.
 var streamingAdvanceCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For models compiled with the `BNNSOption` attribute `StateMode=Streaming` enabled, where `slice_update` operations use an update parameter of dynamic shape, BNNS can’t unambigiously determine the streaming advancement size. In this case, call this function before calling [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](../../bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) to set the advancement size for each frame.
 

@@ -25,11 +25,11 @@ func nextTriggerDate() -> Date?
 - (NSDate *) nextTriggerDate;
 ```
 
-#### Return Value
+## Return Value
 
 The next trigger date.
 
-#### Discussion
+## Discussion
 
 Use this property to find out when a notification associated with this trigger will next be delivered.
 

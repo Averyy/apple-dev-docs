@@ -19,7 +19,7 @@ A Boolean value that indicates whether the user originated their account on the 
 var isFromCurrentDevice: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Accounts that you fetch using [`VSUserAccountManager`](../vsuseraccountmanager.md) may be from other devices signed into the same iCloud account.
 

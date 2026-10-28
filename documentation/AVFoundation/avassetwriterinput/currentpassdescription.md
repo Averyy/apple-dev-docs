@@ -24,7 +24,7 @@ var currentPassDescription: AVAssetWriterInputPassDescription? { get }
 @property (readonly, nullable) AVAssetWriterInputPassDescription * currentPassDescription;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, call the asset writer input’s [`markAsFinished()`](./markasfinished%28%29.md) method because there are no more requests to fulfill.
 

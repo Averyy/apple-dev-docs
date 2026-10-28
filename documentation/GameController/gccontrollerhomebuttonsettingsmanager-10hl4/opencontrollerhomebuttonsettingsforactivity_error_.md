@@ -19,7 +19,7 @@ Opens the Settings app to the screen in game controller settings where the user 
 - (BOOL) openControllerHomeButtonSettingsForActivity:(GCControllerHomeButtonSettingsCustomizationActivity) activity error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the Settings app was opened, NO if it could not be opened and \p error contains additional information.  This function returns immediately after attempting to open the Settings app.
 

@@ -21,7 +21,7 @@ Returns a new affine transform from a double-precision 4 x 4 matrix truncated to
 init(truncating matrix: simd_double4x4)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

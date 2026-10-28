@@ -15,7 +15,7 @@ A regressor that estimates the target as a linear function of the features.
 case linear(MLLinearRegressor)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLRegressor`](../mlregressor.md) using one of its enumeration cases. Use the regressor’s initializer instead.
 

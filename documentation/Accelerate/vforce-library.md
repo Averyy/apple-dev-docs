@@ -5,7 +5,7 @@
 
 Perform transcendental and trigonometric functions on vectors of any length.
 
-#### Overview
+## Overview
 
 The vForce library provides a range of trigonometric and transcendental functions that work over large collections of single- and double-precision values. The collections can be of any length, and vForce supplies vectorized functions for the current architecture.
 
@@ -20,7 +20,7 @@ All of the vForce library functions follow a common format:
 
 > **Note**:  Unless otherwise mentioned, vForce functions work in-place. That is, the input may exactly equal the output.
 
-##### Using vForce
+### Using vForce
 
 The vForce library provides a high-performance alternative to `for` loops and `map(_:)` when applying operations on arrays of floating-point values.
 

@@ -24,7 +24,7 @@ func canAddFelicaPass() -> Bool
 - (BOOL) canAddFelicaPass;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method returns [`false`](../../Swift/false.md).
 

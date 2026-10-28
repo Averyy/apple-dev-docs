@@ -20,7 +20,7 @@ Returns a new path with the named child prim appended.
 func appending(child name: USDToken) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path identifying the child prim.
 

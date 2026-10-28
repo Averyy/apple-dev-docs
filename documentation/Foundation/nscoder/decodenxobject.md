@@ -17,7 +17,7 @@ Decodes an object previously written with [`encodeNXObject:`](./encodenxobject_.
 - (id) decodeNXObject;
 ```
 
-#### Discussion
+## Discussion
 
 No sharing is done across separate [`decodeNXObject`](./decodenxobject.md) invocations. Callers must have implemented an [`init(coder:)`](../nscoding/init%28coder%29.md), which parallels the `read:` methods, on all of their classes that may be touched by this operation.
 

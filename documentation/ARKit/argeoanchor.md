@@ -20,7 +20,7 @@ class ARGeoAnchor
 @interface ARGeoAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 A *geographic anchor* (also known as *location anchor*) identifies a specific area in the world that the app can refer to in an AR experience. As a user moves around the scene, the session updates a location anchor’s [`transform`](./aranchor/transform.md) based on the anchor’s [`coordinate`](./argeoanchor/coordinate.md) and the device’s compass heading.
 
@@ -30,11 +30,11 @@ ARKit sets the anchor’s vertical position to the altitude you pass in to [`ini
 
 > ❗ **Important**:  Location anchors are available only in geotracking sessions, and geotracking is available in specific areas; for more information, see [`ARGeoTrackingConfiguration`](./argeotrackingconfiguration.md).
 
-##### Communicate Data Usage
+### Communicate Data Usage
 
 Location anchors consume data from Apple Maps called *localization imagery* (for more information, see [`ARGeoTrackingConfiguration`](./argeotrackingconfiguration.md)). As the user moves, the framework downloads localization imagery to refine the user’s precise geographic position. The amount of data the session requires depends on the user’s movement and distance they travel. To make the user aware of potential fees, you can notify the user of their data usage.
 
-##### Manage Location Anchor Availability
+### Manage Location Anchor Availability
 
 When an app creates a location anchor, it’s invisible to the user until the framework *populates* the anchor in the scene. When an anchor populates successfully, the session passes the anchor into the delegate’s [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md) callback.
 

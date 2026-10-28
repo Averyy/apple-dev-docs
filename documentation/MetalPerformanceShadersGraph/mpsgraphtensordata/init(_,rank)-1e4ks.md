@@ -24,11 +24,11 @@ init(_ vector: MPSVector, rank: Int)
 - (instancetype) initWithMPSVector:(MPSVector *) vector rank:(NSUInteger) rank;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData, or nil if allocation failure.
 
-#### Discussion
+## Discussion
 
 The device of the MPSVector will be used to get the MPSDevice for this MPSGraphTensorData.
 

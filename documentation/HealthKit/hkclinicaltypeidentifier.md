@@ -29,7 +29,7 @@ typedef NSString * HKClinicalTypeIdentifier;
 - [Accessing Health Records](./accessing-health-records.md)
 - [Authorizing access to health data](./authorizing-access-to-health-data.md)
 
-#### Overview
+## Overview
 
 Clinical record samples are read-only, so you can’t request authorization to share clinical record types. You can’t create or save new [`HKClinicalRecord`](./hkclinicalrecord.md) objects.
 

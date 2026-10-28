@@ -21,7 +21,7 @@ static var reengagementOpenURLParameter: String { get }
 
 - [Receiving ad attributions and postbacks](../receiving-ad-attributions-and-postbacks.md)
 
-#### Discussion
+## Discussion
 
 When your advertised app receives a universal link, determine whether it came from an AdAttributionKit reengagement by checking the query parameters for a key containing this string, as the example below shows:
 

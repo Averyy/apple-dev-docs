@@ -22,7 +22,7 @@ static let builtInUltraWideCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInUltraWideCamera;
 ```
 
-#### Discussion
+## Discussion
 
 You can only discover this device type using an [`AVCaptureDevice.DiscoverySession`](../discoverysession.md).
 

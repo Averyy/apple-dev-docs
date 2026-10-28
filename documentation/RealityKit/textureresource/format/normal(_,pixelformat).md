@@ -20,7 +20,7 @@ Indicates that a texture is a normal map.
 static func normal(_ encoding: TextureResource.Format.NormalEncoding, pixelFormat: MTLPixelFormat) -> TextureResource.Format
 ```
 
-#### Discussion
+## Discussion
 
 The created texture uses the [`TextureResource.Semantic.normal`](../semantic-swift.enum/normal.md) semantic.
 

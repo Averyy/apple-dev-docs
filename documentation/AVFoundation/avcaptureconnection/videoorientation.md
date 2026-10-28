@@ -28,7 +28,7 @@ var videoOrientation: AVCaptureVideoOrientation { get set }
 
 - [Setting up a capture session](../setting-up-a-capture-session.md)
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection.
 

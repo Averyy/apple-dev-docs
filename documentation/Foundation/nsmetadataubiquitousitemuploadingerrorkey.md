@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemUploadingErrorKey: String
 extern NSString * const NSMetadataUbiquitousItemUploadingErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSError`](./nserror.md) object that describes the problem that occurred when uploading the item to iCloud failed.
 

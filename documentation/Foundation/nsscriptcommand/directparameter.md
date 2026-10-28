@@ -20,7 +20,7 @@ var directParameter: Any? { get set }
 @property (retain, nullable) id directParameter;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t normally override this method.
 

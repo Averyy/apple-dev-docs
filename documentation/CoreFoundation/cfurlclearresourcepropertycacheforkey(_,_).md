@@ -25,7 +25,7 @@ func CFURLClearResourcePropertyCacheForKey(_ url: CFURL!, _ key: CFString!)
 extern void CFURLClearResourcePropertyCacheForKey(CFURLRef url, CFStringRef key);
 ```
 
-#### Discussion
+## Discussion
 
 Removing a cached resource value may remove other cached resource values because some resource values are cached as a set of values, and because some resource values depend on other resource values. (Temporary resource values have no dependencies.)
 

@@ -5,13 +5,13 @@
 
 Find, add, and remove apps installed for testing on simulated and physical devices.
 
-#### Overview
+## Overview
 
 Use the Apps inspector in Device Hub to view, install, and remove apps on both simulated and physical devices. During development, Xcode installs your app on devices for you (see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md)), and you remove it using Device Hub. Later, when you’re ready to distribute your app for testing (see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md)), you can use Device Hub independently of Xcode to add and remove apps on multiple test devices.
 
 ![A screenshot of Device Hub with a simulator selected in the sidebar on the left, an iPhone simulator running in the canvas in the middle, and the Apps inspector showing an installed app selected on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/device-hub-apps-inspector@2x.png)
 
-#### View apps on devices
+## View apps on devices
 
 To find all apps on a device:
 
@@ -21,7 +21,7 @@ To find all apps on a device:
 
 Then use the controls at the bottom of the table to quickly find an app. Enter a search string in the Filter text field, then choose an option, such as Developer, from the pop-up menu to the right.
 
-#### Install apps on devices
+## Install apps on devices
 
 To install iOS, iPadOS, tvOS, visionOS, or watchOS apps on a device without using Xcode:
 
@@ -32,7 +32,7 @@ Alternatively, use [Apple Configurator](https://apps.apple.com/app/id1037126344)
 
 To install a macOS app, drag the app bundle (with an `.app` extension) to the `/Applications` folder or another folder of your choice on your Mac.
 
-#### Remove apps from devices
+## Remove apps from devices
 
 To remove iOS, iPadOS, tvOS, visionOS, or watchOS apps from a device:
 

@@ -20,11 +20,11 @@ var msgid: UInt32 { get set }
 @property uint32_t msgid;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the receiver.
 
-#### Discussion
+## Discussion
 
 Cooperating applications can use this to define different types of messages, such as connection requests, RPCs, errors, and so on.
 

@@ -19,11 +19,11 @@ func PMPrintSettingsToOptions(_ settings: PMPrintSettings, _ options: UnsafeMuta
 OSStatus PMPrintSettingsToOptions(PMPrintSettings settings, char * _Nullable *options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function creates a CUPS options string that captures the data in the specified print settings object. In macOS 10.5 and later, Apple recommends that you use the [`PMPrintSettingsToOptionsWithPrinterAndPageFormat(_:_:_:_:)`](./api-1459435-pmprintsettingstooptionswithprin.md) function instead.
 

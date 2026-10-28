@@ -24,7 +24,7 @@ let AVVideoCleanApertureWidthKey: String
 extern NSString * const AVVideoCleanApertureWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`.
 

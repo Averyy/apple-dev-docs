@@ -23,7 +23,7 @@ enum CalloutStyle
 enum MKMapItemDetailSelectionAccessoryCalloutStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 In Swift, use [`MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle.full`](./calloutstyle/full.md) for map views on iPadOS and macOS. Use a sheet presentation to display full detail place information on iOS.
 

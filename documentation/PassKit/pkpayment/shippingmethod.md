@@ -24,7 +24,7 @@ var shippingMethod: PKShippingMethod? { get }
 @property (nonatomic, strong, readonly, nullable) PKShippingMethod * shippingMethod;
 ```
 
-#### Discussion
+## Discussion
 
 A value is set for this property only if the corresponding payment request specified available shipping methods in the [`shippingMethods`](../pkpaymentrequest/shippingmethods.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object. Otherwise, the value is `nil.`
 

@@ -5,13 +5,13 @@
 
 Build content blocking with declarative net request into your Safari web extension.
 
-#### Overview
+## Overview
 
 Add declarative content blocking that works in Safari, Mac web apps, and other browsers to your Safari web extension. This approach blocks content quickly and ensures privacy for users, because the web extension doesn’t need access to the entire web request to make blocking decisions.
 
 Safari web extensions implement declarative content blocking with the Declarative Net Request API common to web extensions on other browsers.
 
-##### Request permission to block content
+### Request permission to block content
 
 To use the Declarative Net Request API in your Safari web extension, first request permission. In your Xcode project, add the declarative net request permission to the permissions list in your `manifest.js` file.
 
@@ -28,7 +28,7 @@ To use the Declarative Net Request API in your Safari web extension, first reque
 
 For more information about permissions, see [Managing Safari web extension permissions](./managing-safari-web-extension-permissions.md).
 
-##### Add rulesets to your extension and manifest
+### Add rulesets to your extension and manifest
 
 You specify rules for content blocking in rulesets, which are files with `json` describing the content blocking rules. Add references to ruleset files that you create in your `manifest.js` file to tell Safari to use them. For example:
 
@@ -72,7 +72,7 @@ Review Safari’s support for specifying rules:
 - **`RuleCondition`**: Safari supports `domainType`, `excludedResourceTypes`, `isUrlFilterCaseSensitive`, `regexFilter`, and `resourceTypes.`
 - **Rule APIs**: Safari supports `getEnabledRulesets()`, `isRegexSupported(),` `updateEnabledRulesets()`, `MAX_NUMBER_OF_STATIC_RULESETS`, `updateDynamicRules()`, `getDynamicRules()`, `updateSessionRules()`, `getSessionRules()`, and `getMatchedRules()`. Safari supports `setExtensionActionOptions()` in Safari 16.4 or later.
 
-##### Adjust rules dynamically for the extension or session
+### Adjust rules dynamically for the extension or session
 
 After a user installs and uses your extension, adjust content blocking using dynamic rules. Add, change, or remove rules that persist between browser sessions using `updateDynamicRules`. Add, change, or remove rules that apply only to the current session using `updateSessionRules`.
 

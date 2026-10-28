@@ -19,7 +19,7 @@ var phase: NSEvent.Phase { get }
 @property (readonly) NSEventPhase phase;
 ```
 
-#### Discussion
+## Discussion
 
 A gesture phase corresponds to a fluid gesture event. As a gesture event occurs, its phase begins with [`began`](./phase-swift.struct/began.md) and ends with either [`ended`](./phase-swift.struct/ended.md) or [`cancelled`](./phase-swift.struct/cancelled.md). All the gesture events are sent to the view under the cursor when the [`began`](./phase-swift.struct/began.md) occurred.
 

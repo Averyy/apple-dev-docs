@@ -22,7 +22,7 @@ func textureName() -> GLuint
 - (GLuint) textureName;
 ```
 
-#### Return Value
+## Return Value
 
 The texture name.
 

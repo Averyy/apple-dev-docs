@@ -19,11 +19,11 @@ convenience init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backi
 - (instancetype) initWithContentRect:(NSRect) contentRect styleMask:(NSWindowStyleMask) style backing:(NSBackingStoreType) backingStoreType defer:(BOOL) flag screen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized window.
 
-#### Discussion
+## Discussion
 
 The primary screen is the one that contains the current key window or, if there is no key window, the one that contains the main menu. If there’s neither a key window nor a main menu (if there’s no active application), the primary screen is the one where the origin of the screen coordinate system is located.
 

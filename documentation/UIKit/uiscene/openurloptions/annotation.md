@@ -23,7 +23,7 @@ var annotation: Any? { get }
 @property (nonatomic, readonly, nullable) id annotation;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the data that the originating app placed in the [`annotation`](../../uidocumentinteractioncontroller/annotation.md) property of its [`UIDocumentInteractionController`](../../uidocumentinteractioncontroller.md). The root object is always an [`NSDictionary`](../../../Foundation/nsdictionary.md) object. The contents of that dictionary may be any other property list types, including [`NSDictionary`](../../../Foundation/nsdictionary.md), [`NSArray`](../../../Foundation/nsarray.md), [`NSData`](../../../Foundation/nsdata.md), [`NSString`](../../../Foundation/nsstring.md), [`NSNumber`](../../../Foundation/nsnumber.md), or [`NSDate`](../../../Foundation/nsdate.md) objects.
 

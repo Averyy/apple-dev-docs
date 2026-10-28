@@ -20,7 +20,7 @@ A Boolean value that detects hands of the body in the results, if they’re visi
 var detectsHands: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true,` and requires [`DetectHumanBodyPoseRequest.Revision.revision2`](./revision-swift.enum/revision2.md).
 

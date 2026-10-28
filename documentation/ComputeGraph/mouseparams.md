@@ -25,7 +25,7 @@ struct MouseParams
 struct MouseParams;
 ```
 
-#### Overview
+## Overview
 
 This structure captures both the position and direction of a mouse cursor projected into 3D coordinates, commonly used for ray casting or spatial interactions.
 

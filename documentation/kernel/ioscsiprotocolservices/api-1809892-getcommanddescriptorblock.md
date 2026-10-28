@@ -13,11 +13,11 @@ bool GetCommandDescriptorBlock (
  SCSICommandDescriptorBlock *cdbData );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, otherwise false.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the Command Descriptor Block associated with the specified request.
 

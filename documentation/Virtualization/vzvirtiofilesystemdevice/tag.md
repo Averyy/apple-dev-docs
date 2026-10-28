@@ -19,7 +19,7 @@ var tag: String { get }
 @property (copy, readonly) NSString * tag;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents the `tag` as a label in the guest VM that identifies this device that’s available for mounting.
 

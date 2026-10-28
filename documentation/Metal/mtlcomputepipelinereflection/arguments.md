@@ -24,7 +24,7 @@ var arguments: [MTLArgument] { get }
 @property (readonly) NSArray<MTLArgument *> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 Each element in the array is an [`MTLArgument`](../mtlargument.md) instance that describes one of the function’s arguments. The elements in the array are in the same order that the arguments appear in the function declaration.
 

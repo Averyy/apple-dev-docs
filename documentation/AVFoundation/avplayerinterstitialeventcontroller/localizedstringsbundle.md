@@ -26,7 +26,7 @@ var localizedStringsBundle: Bundle? { get set }
 @property (copy, nullable) NSBundle * localizedStringsBundle;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the property is nil, any UI elements triggered by the AVPlayerInterstitialEventController, such as the skip button, may contain a generic label based on the implementation of the UI that’s in use. To ensure the best available user experience in various playback configurations, including external playback, set a value for this property that provides localized translations of skip control labels.
 

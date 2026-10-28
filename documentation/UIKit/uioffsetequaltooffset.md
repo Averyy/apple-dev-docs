@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two offsets are equal.
 static BOOL UIOffsetEqualToOffset(UIOffset offset1, UIOffset offset2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `offset1` and `offset2` are equal, otherwise [`false`](../Swift/false.md).
 

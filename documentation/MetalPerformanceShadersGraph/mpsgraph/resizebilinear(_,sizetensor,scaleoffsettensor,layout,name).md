@@ -24,7 +24,7 @@ func resizeBilinear(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTen
 - (MPSGraphTensor *) resizeBilinearWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

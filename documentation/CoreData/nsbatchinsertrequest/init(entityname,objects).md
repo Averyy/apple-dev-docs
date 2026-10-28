@@ -25,7 +25,7 @@ init(entityName: String, objects dictionaries: [[String : Any]])
 - (instancetype) initWithEntityName:(NSString *) entityName objects:(NSArray<NSDictionary<NSString *,id> *> *) dictionaries;
 ```
 
-#### Return Value
+## Return Value
 
 A batch-insertion request.
 

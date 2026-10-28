@@ -21,7 +21,7 @@ Creates a locale-aware string representation from a duration value.
 func format(_ duration: Duration) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the duration.
 

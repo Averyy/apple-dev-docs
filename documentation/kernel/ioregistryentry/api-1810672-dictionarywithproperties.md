@@ -12,11 +12,11 @@ virtual OSDictionary * dictionaryWithProperties(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 The created dictionary, or zero on a resource value. It should be released by the caller.
 
-#### Overview
+## Overview
 
 This method will copy a registry entry's property table, using the OSDictionary::withDictionary semantics. This method is synchronized with other IORegistryEntry accesses to the property table. Since OSDictionary will only copy property values by reference, synchronization is not guaranteed to any collection values.
 

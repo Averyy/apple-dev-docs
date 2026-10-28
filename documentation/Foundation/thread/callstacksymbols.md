@@ -25,11 +25,11 @@ class var callStackSymbols: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * callStackSymbols;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the call stack symbols. Each element is an `NSString` object with a value in a format determined by the `backtrace_symbols()` function. For more information, see backtrace_symbols(3) macOS Developer Tools Manual Page.
 
-#### Discussion
+## Discussion
 
 The return value describes the call stack backtrace of the current thread at the moment this method was called.
 

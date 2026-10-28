@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
 - (void) tableView:(UITableView *) tableView commitEditingStyle:(UITableViewCellEditingStyle) editingStyle forRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 When users tap the insertion (green plus) control or Delete button associated with a [`UITableViewCell`](../uitableviewcell.md) object in the table view, the table view sends this message to the data source, asking it to commit the change. (If the user taps the deletion (red minus) control, the table view then displays the Delete button to get confirmation.) The data source commits the insertion or deletion by invoking the `UITableView` methods [`insertRows(at:with:)`](../uitableview/insertrows%28at,with%29.md) or [`deleteRows(at:with:)`](../uitableview/deleterows%28at,with%29.md), as appropriate.
 

@@ -25,7 +25,7 @@ case type3
 kCGFontPostScriptFormatType3
 ```
 
-#### Description
+## Description
 
 This is documented in *PostScript Language Reference, 3rd edition*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

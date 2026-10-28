@@ -25,11 +25,11 @@ convenience init?(abbreviation: String)
 + (instancetype) timeZoneWithAbbreviation:(NSString *) abbreviation;
 ```
 
-#### Return Value
+## Return Value
 
 The time zone object identified by `abbreviation` determined by resolving the abbreviation to a name using the abbreviation dictionary and then returning the time zone for that name. Returns `nil` if there is no match for `abbreviation`.
 
-#### Discussion
+## Discussion
 
 In general, you are discouraged from using abbreviations except for unique instances such as “GMT”. Time Zone abbreviations are not standardized and so a given abbreviation may have multiple meanings—for example, “EST” refers to Eastern Time in both the United States and Australia
 

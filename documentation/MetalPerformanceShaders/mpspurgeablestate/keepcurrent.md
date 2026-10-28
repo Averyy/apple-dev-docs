@@ -24,7 +24,7 @@ case keepCurrent
 MPSPurgeableStateKeepCurrent
 ```
 
-#### Discussion
+## Discussion
 
 Using this option keeps the current state unchanged. It is equivalent to [`MTLPurgeableState.keepCurrent`](../../Metal/mtlpurgeablestate/keepcurrent.md).
 

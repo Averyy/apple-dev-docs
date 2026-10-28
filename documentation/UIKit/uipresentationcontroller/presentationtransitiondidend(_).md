@@ -23,7 +23,7 @@ func presentationTransitionDidEnd(_ completed: Bool)
 - (void) presentationTransitionDidEnd:(BOOL) completed;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override this method and use it to perform any required cleanup. For example, if the completed parameter is [`false`](../../Swift/false.md), you would use this method to remove your presentation’s custom views from the view hierarchy.
 

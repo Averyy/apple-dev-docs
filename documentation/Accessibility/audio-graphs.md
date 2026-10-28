@@ -5,7 +5,7 @@
 
 Define an accessible representation of your chart for VoiceOver to generate an audio graph.
 
-#### Overview
+## Overview
 
 Charts and graphs help users quickly identify important features and trends in data. Use the audio graphs API to provide all the information that VoiceOver needs to construct an audible representation of the data in your charts and graphs, making the data accessible to people who are blind or have low vision.
 

@@ -21,11 +21,11 @@ Returns hourly weather statistics for the requested location, for each hour from
 final func hourlyStatistics<each T>(for location: CLLocation, startHour: Int, endHour: Int, including dataSets: repeat HourlyWeatherStatisticsQuery<each T>) async throws -> (repeat HourlyWeatherStatistics<each T>) where repeat each T : Decodable, repeat each T : Encodable, repeat each T : Equatable, repeat each T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested hourly weather statistics.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

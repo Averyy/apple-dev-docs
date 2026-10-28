@@ -22,11 +22,11 @@ optional func pageViewController(_ pageViewController: UIPageViewController, spi
 - (UIPageViewControllerSpineLocation) pageViewController:(UIPageViewController *) pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 The spine location.
 
-#### Discussion
+## Discussion
 
 Use this method to change the spine location when the device orientation changes, as well as setting new view controllers and changing the double-sided state.
 

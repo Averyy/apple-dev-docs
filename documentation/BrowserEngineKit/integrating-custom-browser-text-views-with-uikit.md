@@ -5,13 +5,13 @@
 
 Process keyboard interactions asynchronously in your iOS browser app’s text view.
 
-#### Overview
+## Overview
 
 iOS apps that draw custom text views adopt the [`UITextInput`](../UIKit/uitextinput.md) protocol to inform the text input system about changes in state related to text input and selection.
 
 In browser apps, the text input system might need information that your app prepares by communicating with an extension asynchronously, or information that the app prepares by executing Javascript from a web site. In these situations, your text view additionally adopts the [`BETextInput`](./betextinput.md) protocol. The text input system uses this protocol to make asynchronous requests for information about the text in your view, and to supply information about gestures that support text interactions, including selecting text and modifying the selection.
 
-##### Create your custom text view
+### Create your custom text view
 
 `BETextInput` isn’t a complete replacement for `UITextInput`, so a custom view that participates in the text system needs to conform to both protocols.
 
@@ -25,7 +25,7 @@ Implement the required [`UITextInput`](../UIKit/uitextinput.md) methods in your 
 
 Your custom view’s [`textInputView`](./betextinput/textinputview.md) is the view that the system uses for all coordinate transforms when handling text-input gestures. When you create the text input view, add a [`BETextInteraction`](./betextinteraction.md) to the view’s interactions. The system uses the `BETextInteraction` to track the state of text-input gestures.
 
-##### Accept a delegate object
+### Accept a delegate object
 
 Create a property [`asyncInputDelegate`](./betextinput/asyncinputdelegate.md) of type [`BETextInputDelegate`](./betextinputdelegate.md) on your view. The system provides delegates when it needs notifications for text input changes; you don’t conform to [`BETextInputDelegate`](./betextinputdelegate.md) in your code or implement its methods.
 
@@ -35,11 +35,11 @@ public class MyTextView: UIView, BETextInput, UITextInput {
 }
 ```
 
-##### Report whether the text view performs actions
+### Report whether the text view performs actions
 
 Implement [`canPerformAction(_:withSender:)`](./betextinput/canperformaction%28_,withsender%29.md) in your view, returning `true` when your view can perform the action and `false` otherwise. If you return `false`, the system doesn’t call the action method even if your class implements it (so [`responds(to:)`](../ObjectiveC/nsobjectprotocol/responds%28to%29.md) with the action method’s selector returns `true`). Return `false` when your view is in a state where it doesn’t handle the action.
 
-##### Accept text input
+### Accept text input
 
 The system tells your text view which writing direction the person is using to input text with [`setBaseWritingDirection(_:for:)`](./betextinput/setbasewritingdirection%28_,for%29.md).
 
@@ -57,13 +57,13 @@ If you don’t handle the key event and return `false` from the completion handl
 
 Additionally, implement [`shiftKeyStateChanged(fromState:toState:)`](./betextinput/shiftkeystatechanged%28fromstate,tostate%29.md) to discover when someone presses and releases the shift key and when someone engages and disengages the caps lock.
 
-##### Report text content and layout
+### Report text content and layout
 
 Tell the text system what text is in a given range in your text view with [`text(in:)`](./betextinput/text%28in%29.md).
 
 In your implementation of [`offset(from:to:)`](./betextinput/offset%28from,to%29.md), report the difference between two text positions, counting the number of insertion points (locations that the text caret can adopt) between the text positions. A negative value means that the first position is after the second position; zero means they are the same position; and a positive value means that the first position is before the second position.
 
-##### Select text and respond to selection changes
+### Select text and respond to selection changes
 
 When the system detects that someone is starting a gesture in your text view, it sends your text view [`textInteractionGesture(_:shouldBeginAt:)`](./betextinput/textinteractiongesture%28_,shouldbeginat%29.md), passing the type of gesture it detects and the location of the gesture in your view’s coordinate system.
 
@@ -87,7 +87,7 @@ Implement [`updateSelection(extent:boundary:completionHandler:)`](./betextinput/
 
 > **Note**:  Your text view also needs to support marked text. *Marked text* is very similar to selected text, and represents a range of text proposed for insertion that someone hasn’t yet confirmed they want. Use distinct display styles for marked and selected text.
 
-##### Edit text and support autocorrect
+### Edit text and support autocorrect
 
 The text system calls [`delete(in:to:)`](./betextinput/delete%28in,to%29.md) when someone deletes text using the backspace or delete keys. The direction indicates whether to delete text ahead of or behind the insertion point.
 
@@ -97,11 +97,11 @@ When the text system requires extra context around the current selection to make
 
 Additionally, implement [`insert(_:)`](./betextinput/insert%28_%29-5iryn.md) to accept suggested text from the text system as a [`BETextSuggestion`](./betextsuggestion.md), for example, when someone uses AutoFill to complete the value for a text field.
 
-##### Scroll the text view automatically
+### Scroll the text view automatically
 
 Some text interactions — including placing the text cursor in a view and updating the selection range — require a text view to scroll automatically so the person can see the text with which they’re interacting. When the text system needs to automatically scroll your text view, it sends [`autoscroll(to:)`](./betextinput/autoscroll%28to%29.md), with a point in the coordinate space of your text view’s [`textInputView`](./betextinput/textinputview.md) that needs to become visible. When the person completes the interaction, the text system sends [`cancelAutoscroll()`](./betextinput/cancelautoscroll%28%29.md).
 
-##### Provide text alternatives
+### Provide text alternatives
 
 When someone uses Apple Pencil to enter handwritten text into a text view, text alternatives provide alternate interpretations of the person’s input that the person can choose to replace the transcribed text. To support text alternatives in your browser text view, implement these methods:
 
@@ -110,7 +110,7 @@ When someone uses Apple Pencil to enter handwritten text into a text view, text 
 - **[`removeTextAlternatives()`](./betextinput/removetextalternatives%28%29.md)**: Remove the text alternatives for the currently selected text.
 - **[`alternativesForSelectedText()`](./betextinput/alternativesforselectedtext%28%29.md)**: Supply the available text alternatives.
 
-##### Respond to someone dismissing the keyboard
+### Respond to someone dismissing the keyboard
 
 On iPad, a person can dismiss the on-screen keyboard from a control on the keyboard UI, which ends the current text-editing session. Implement [`keyboardWillDismiss()`](./betextinput/keyboardwilldismiss%28%29.md) to react to the person dismissing the keyboard while your text view is active. If the browser view that hosts your text control needs to retain first-responder status after someone dismisses the keyboard, for example, to provide keyboard-driven scrolling, or it needs to execute Javascript when someone finishes editing text, use this method to remove keyboard focus from the text control without resigning first-responder status.
 

@@ -15,11 +15,11 @@ virtual IOReturn createUserClient(
  IOAudioControlUserClient **newUserClient);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This function is called by newUserClient() to create a new IOAudioControlUserClient instance. This function may be overridden by subclasses that need to add functionality to the IOAudioControlUserClient. In that case, they must subclass IOAudioControlUserClient and return a new, initialized instance of that subclass. A derived class that requires overriding of createUserClient should override the version with the properties parameter for Intel targets, and without the properties parameter for PPC targets. The #if __i386__ directive can be used to select between the two behaviors.
 

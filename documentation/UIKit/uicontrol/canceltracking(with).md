@@ -23,7 +23,7 @@ func cancelTracking(with event: UIEvent?)
 - (void) cancelTrackingWithEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The control calls this method when a control-related touch event is canceled. The default implementation cancels any ongoing tracking and updates the control’s state information. Subclasses can override this method and use it to perform any actions relevant to the cancellation of the touch sequence. You should also use it to perform any cleanup associated with tracking the event.
 

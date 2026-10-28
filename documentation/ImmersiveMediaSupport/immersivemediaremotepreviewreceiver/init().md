@@ -16,7 +16,7 @@ Creates a preview receiver object.
 init() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails during initialization.
 

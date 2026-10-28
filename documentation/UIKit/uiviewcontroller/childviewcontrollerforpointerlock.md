@@ -22,7 +22,7 @@ var childViewControllerForPointerLock: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForPointerLock;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`setNeedsUpdateOfPrefersPointerLocked()`](./setneedsupdateofpreferspointerlocked%28%29.md) if the child view controller that the system needs to query for the pointer lock preference changes.
 

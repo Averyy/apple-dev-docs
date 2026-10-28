@@ -24,7 +24,7 @@ case notInteracted
 HKMedicationDoseEventLogStatusNotInteracted
 ```
 
-#### Discussion
+## Discussion
 
 The system generates this to represent an untouched reminder slot.
 

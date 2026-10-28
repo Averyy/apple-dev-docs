@@ -25,11 +25,11 @@ init(decimal dcm: Decimal)
 - (instancetype) initWithDecimal:(NSDecimal) dcm;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDecimalNumber` object initialized to represent `dcm`.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `NSDecimalNumber`.
 

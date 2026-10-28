@@ -16,7 +16,7 @@ Returns a fixed number that represents the scaled version of the element’s log
 virtual IOFixed getScaledFixedValue(IOHIDValueScaleType type);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a scaled, IOFixed representation of the element value.
 

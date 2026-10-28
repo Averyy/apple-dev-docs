@@ -19,7 +19,7 @@ var accessoryControllers: [NSViewController] { get }
 @property (copy, readonly) NSArray<__kindof NSViewController *> * accessoryControllers;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSViewController` instances representing the accessory view controllers belonging to the receiver.
 

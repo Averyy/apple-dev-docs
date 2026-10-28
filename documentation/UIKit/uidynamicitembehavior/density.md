@@ -23,7 +23,7 @@ var density: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat density;
 ```
 
-#### Discussion
+## Discussion
 
 A dynamic item’s relative density, along with its size, determines its effective mass when it participates in UIKit Dynamics behaviors—including friction, collisions, pushes, and so on. For example, say you have two dynamic items with the same density but different sizes: item one is `100 x 100` points and item two is `100 x 200` points. In this example, item two has twice the effective mass of item one. In an elastic collision, these items exhibit a natural conservation of momentum according to their relative masses.
 

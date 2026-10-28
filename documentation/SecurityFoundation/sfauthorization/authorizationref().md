@@ -19,11 +19,11 @@ func authorizationRef() -> AuthorizationRef!
 - (AuthorizationRef) authorizationRef;
 ```
 
-#### Return value
+## Return value
 
 The authorization reference.
 
-#### Discussion
+## Discussion
 
 You can use the authorization reference in calls to Authorization Services functions.
 

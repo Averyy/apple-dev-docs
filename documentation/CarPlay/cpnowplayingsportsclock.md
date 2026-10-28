@@ -22,7 +22,7 @@ class CPNowPlayingSportsClock
 @interface CPNowPlayingSportsClock : NSObject
 ```
 
-#### Overview
+## Overview
 
 Or, a representation of the amount of time remaining in the event, or a section of the event (period/quarter/etc.) for events where the clock counts DOWN.
 

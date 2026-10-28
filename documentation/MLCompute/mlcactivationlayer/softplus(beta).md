@@ -23,11 +23,11 @@ class func softPlus(beta: Float) -> Self
 + (instancetype) softPlusLayerWithBeta:(float) beta;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`softPlus(beta:)`](./softplus%28beta%29.md) factory type method creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.softPlus`](../mlcactivationtype/softplus.md), `a = 1.0 / beta`, and `b = beta`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

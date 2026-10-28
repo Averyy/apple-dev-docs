@@ -21,7 +21,7 @@ case cancel
 CPAlertActionStyleCancel
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when providing a cancel action on the alert.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents a number.
 var isNumber: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following characters all represent numbers:
 

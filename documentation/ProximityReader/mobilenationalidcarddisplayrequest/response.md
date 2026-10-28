@@ -17,7 +17,7 @@ A type that contains the response information from a successful mobile national 
 struct Response
 ```
 
-#### Overview
+## Overview
 
 Use this object to check the validation outcome of the display request.
 

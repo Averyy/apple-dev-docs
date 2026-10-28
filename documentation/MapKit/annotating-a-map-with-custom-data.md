@@ -12,11 +12,11 @@ Annotate a map with location-specific data using default and customized annotati
 - Mac Catalyst 18.0+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its [`MKAnnotationView`](./mkannotationview.md). In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using [`MKAnnotation`](./mkannotation.md) and [`MKAnnotationView`](./mkannotationview.md).
 
-##### Provide an Annotation
+### Provide an Annotation
 
 Annotations offer a way to highlight specific coordinates on a map and provide additional information. You can use annotations to call out addresses, points of interest, and particular destinations.
 
@@ -99,7 +99,7 @@ private func setupSanFranciscoAnnotationView(for annotation: SanFranciscoAnnotat
 }
 ```
 
-##### Create Callouts
+### Create Callouts
 
 A callout is a standard or custom view that can appear with an annotation view. A standard callout displays the annotation’s title, and it can display additional content such as a subtitle, images, and a control.
 

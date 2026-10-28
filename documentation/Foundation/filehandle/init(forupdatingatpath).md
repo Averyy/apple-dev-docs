@@ -25,11 +25,11 @@ convenience init?(forUpdatingAtPath path: String)
 + (instancetype) fileHandleForUpdatingAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `path`.
 
-#### Discussion
+## Discussion
 
 The file pointer is set to the beginning of the file. The returned object responds to both   `read...` messages and [`write(_:)`](./write%28_%29.md).
 

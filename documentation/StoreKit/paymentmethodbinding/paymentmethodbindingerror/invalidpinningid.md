@@ -18,7 +18,7 @@ The in-app binding identifier is invalid or expired.
 case invalidPinningID
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the identifier, see [`id`](../id.md).
 

@@ -21,7 +21,7 @@ var searchBarPlacementAllowsExternalIntegration: Bool { get set }
 @property (nonatomic) BOOL searchBarPlacementAllowsExternalIntegration;
 ```
 
-#### Overview
+## Overview
 
 Set this value to indicate whether an object at a higher scope may take the search bar and integrate it somewhere other than the navigation bar (or toolbar) directly associated with this navigation item. [`UISplitViewController`](../uisplitviewcontroller.md) uses this to allow Mac-like placement of the search bar on iPad. Defaults to [`false`](../../Swift/false.md).
 

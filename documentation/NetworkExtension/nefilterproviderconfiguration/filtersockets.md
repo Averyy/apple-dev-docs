@@ -23,7 +23,7 @@ var filterSockets: Bool { get set }
 @property BOOL filterSockets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

@@ -15,10 +15,10 @@ The completion candidates are the strings in the array returned by the given clo
 
 ```swift
 @preconcurrency
-static func custom(_ completion: @escaping @Sendable ([String], Int, String) -> [String]) -> CompletionKind
+static func custom(_ completion: @Sendable @escaping ([String], Int, String) -> [String]) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 Completion candidates are interpreted by the requesting shell as literals. They must be neither escaped nor quoted; Swift Argument Parser escapes or quotes them as necessary for the requesting shell.
 
@@ -32,7 +32,7 @@ The second argument (an `Int`) is the 0-based index of the word for which comple
 
 The third argument (a `String`) is the prefix of the word for which completions are being requested that precedes the cursor.
 
-##### bash
+### bash
 
 In bash 3-, a process substitution (`<(…)`) in the command line prevents Swift custom completion functions from being called.
 
@@ -40,7 +40,7 @@ In bash 4+, a process substitution (`<(…)`) is split into multiple elements in
 
 In bash, if the cursor is between the backslash and the single quote for the last escaped single quote in a word, all subsequent pipes or other commands are included in the words passed to Swift. This oddity might occur only when additional constraints are met. This or similar oddities might occur in other circumstances.
 
-##### fish
+### fish
 
 In fish 3-, due to a bug, the argument array includes the fish words only through the word being completed. This is fixed in fish 4+.
 
@@ -50,7 +50,7 @@ In fish 3-, due to limitations, words are passed to Swift unquoted. For example,
 
 In fish 3-, the cursor index is provided based on the verbatim word, not based on the unquoted word, so it can be inconsistent with the unquoted word that is supplied to Swift. This problem does not exist in fish 4+.
 
-##### zsh
+### zsh
 
 In zsh, redirects (both their symbol and source/target) are omitted.
 

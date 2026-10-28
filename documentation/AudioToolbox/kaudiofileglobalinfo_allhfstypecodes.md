@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_AllHFSTypeCodes: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_AllHFSTypeCodes
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property’s value, you must set the `inSpecifier` parameter to `NULL`.
 

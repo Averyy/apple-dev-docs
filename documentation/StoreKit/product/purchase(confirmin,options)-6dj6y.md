@@ -20,11 +20,11 @@ Initiates a purchase for the product with the App Store and displays the confirm
 func purchase(confirmIn scene: some UIScene, options: Set<Product.PurchaseOption> = []) async throws -> Product.PurchaseResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the purchase, [`Product.PurchaseResult`](./purchaseresult.md).
 
-#### Discussion
+## Discussion
 
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Before using [`purchase(confirmIn:options:)`](./purchase%28confirmin,options%29-6dj6y.md), consider the following APIs and choose the one that best suits your app’s implementation:
 

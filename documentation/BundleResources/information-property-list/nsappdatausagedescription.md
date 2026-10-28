@@ -14,7 +14,7 @@ A message that tells people why the app needs to access files in other apps’ s
 - **Name**: `NSAppDataUsageDescription` (Privacy - Other Application Data Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 When your app tries to open a file that’s in another app’s sandbox container, the system requests permission from the person using the app and presents this message. If your app doesn’t have a value for the `NSAppDataUsageDescription` key in its information property list, the system presents a default message.
 

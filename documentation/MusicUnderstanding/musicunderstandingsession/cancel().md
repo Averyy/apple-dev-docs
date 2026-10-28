@@ -21,7 +21,7 @@ Cancels any ongoing analysis.
 func cancel() async
 ```
 
-#### Discussion
+## Discussion
 
 After you cancel a session, it can’t be re-used.
 

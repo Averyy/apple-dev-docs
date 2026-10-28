@@ -21,7 +21,7 @@ Creates, synchronously executes, and releases a dispatch block from the specifie
 extern void dispatch_block_perform(dispatch_block_flags_t flags, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to the following code:
 

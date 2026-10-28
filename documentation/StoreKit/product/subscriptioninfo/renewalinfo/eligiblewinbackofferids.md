@@ -25,7 +25,7 @@ let eligibleWinBackOfferIDs: [String]
 
 - [Merchandising win-back offers in your app](../../../merchandising-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this list to select an eligible win-back offer for a customer. The array contains strings that represent offer identifiers for win-back offers. You provide the offer identifier in App Store Connect when you configure a win-back offer.
 

@@ -19,7 +19,7 @@ struct GroupActivityAssociationKind
 
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
-#### Overview
+## Overview
 
 Use values of this type in conjunction with the `SwiftUI/View/groupActivityAssociation(_:)` view modifier or [`GroupActivityAssociationInteraction`](./groupactivityassociationinteraction.md) UI interaction to set the scene associated with the current SharePlay activity.
 

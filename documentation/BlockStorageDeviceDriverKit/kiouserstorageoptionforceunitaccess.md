@@ -15,7 +15,7 @@ An option to use Force Unit Access (FUA).
 #define kIOUserStorageOptionForceUnitAccess
 ```
 
-#### Discussion
+## Discussion
 
 This option tells the storage stack to force a request to access the media.
 

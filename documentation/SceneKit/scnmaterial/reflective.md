@@ -25,7 +25,7 @@ var reflective: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * reflective;
 ```
 
-#### Discussion
+## Discussion
 
 You can simulate a mirrored or chromed finish on a surface by causing it to reflect its environment. SceneKit does not render real-time reflections of the objects in a scene, but it can use an *environment map* texture to simulate reflection of a static or animated image. When rendering each pixel on the surface, SceneKit traces the light from that point to a pixel in the environment map as if the surface was reflecting that image.
 

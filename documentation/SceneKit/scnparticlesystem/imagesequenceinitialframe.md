@@ -25,9 +25,9 @@ var imageSequenceInitialFrame: CGFloat { get set }
 @property (nonatomic) CGFloat imageSequenceInitialFrame;
 ```
 
-#### Discussion
+## Discussion
 
-To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./api-1524153-particleimage.md#1965925). The total number of frames in an image sequence is the product of multiplying the [`imageSequenceRowCount`](./imagesequencerowcount.md) and [`imageSequenceColumnCount`](./imagesequencecolumncount.md) properties. Frames are numbered starting at zero, indicating the top left image in the grid.
+To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./particleimage.md#1965925). The total number of frames in an image sequence is the product of multiplying the [`imageSequenceRowCount`](./imagesequencerowcount.md) and [`imageSequenceColumnCount`](./imagesequencecolumncount.md) properties. Frames are numbered starting at zero, indicating the top left image in the grid.
 
 When you use image sequences for particles, SceneKit interpolates between frames of animation, so a fractional value specifies a partial fade between two animation frames.
 

@@ -25,7 +25,7 @@ class PTPushResult
 
 - [Creating a Push to Talk app](./creating-a-push-to-talk-app.md)
 
-#### Overview
+## Overview
 
 When an app receives an Apple Push Notification service payload, return a [`PTPushResult`](./ptpushresult.md) object as part of the delegate method. Use [`activeRemoteParticipant(_:)`](./ptpushresult/activeremoteparticipant%28_%29.md) to show the latest participant information in the system user interface. Create a push result with [`leaveChannel`](./ptpushresult/leavechannel.md) to remove a user from the channel.
 

@@ -17,7 +17,7 @@ An optional description of the current transaction meant to provide more context
 var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescription?
 ```
 
-#### Discussion
+## Discussion
 
 This attribute is only displayed when the [`PaymentCardTransactionRequest.TransactionType`](./transactiontype.md) is compatible with the [`PaymentCardTransactionRequest.TransactionAmountDescription`](./transactionamountdescription.md) use case.
 

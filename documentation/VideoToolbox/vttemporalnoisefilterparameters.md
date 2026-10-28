@@ -22,7 +22,7 @@ class VTTemporalNoiseFilterParameters
 @interface VTTemporalNoiseFilterParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object is intended for sending input parameters into the `processWithParameters` method of the `VTFrameProcessor` class. Temporal noise-filter processor utilizes past and future reference frames, provided in presentation time order, to reduce noise from the source frame. The `previousFrameCount` and `nextFrameCount` properties in [`VTTemporalNoiseFilterConfiguration`](./vttemporalnoisefilterconfiguration.md) represent the maximum number of past and future reference frames that the processor can use to achieve optimum noise reduction quality. The number of reference frames provided shall depend on their availability, but at a minimum, you must provide one reference frame, either past or future. The parameter `destinationFrame` stores the output frame that the processor returns to the caller upon the successful completion of the `processWithParameters` operation.
 

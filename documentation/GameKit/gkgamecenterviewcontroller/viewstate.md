@@ -34,7 +34,7 @@ var viewState: GKGameCenterViewControllerState { get set }
 @property (atomic, assign) GKGameCenterViewControllerState viewState;
 ```
 
-#### Discussion
+## Discussion
 
 See [`GKGameCenterViewControllerState`](../gkgamecenterviewcontrollerstate.md) for possible values. When you first present the Game Center view controller, the content displayed by the view controller is determined by this property. If the player navigates to different content, the view state is automatically updated. For example, to preserve the player’s selections, you can read the [`viewState`](./viewstate.md) property after the screen is dismissed, and set that value the next time you initialize the view controller.
 

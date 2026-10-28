@@ -19,7 +19,7 @@ Called when the user dismisses the UI element that is showing devices.
 func stopDeviceDiscovery()
 ```
 
-#### Discussion
+## Discussion
 
 Stop any active network discovery operations started in [`startDeviceDiscovery()`](./startdevicediscovery%28%29.md).
 

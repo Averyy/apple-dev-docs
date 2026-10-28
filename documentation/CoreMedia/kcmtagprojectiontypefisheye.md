@@ -21,7 +21,7 @@ Video content displays as a fisheye projection.
 extern const CMTag kCMTagProjectionTypeFisheye;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_ProjectionType`](./cmtagcategory/kcmtagcategory_projectiontype.md) category.
 

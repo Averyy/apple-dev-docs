@@ -17,7 +17,7 @@ A component that simulates an entity as a deformable cloth body, when part of a 
 struct ClothBodyComponent
 ```
 
-#### Overview
+## Overview
 
 A cloth body belongs to the simulation root defined by its closest ancestor entity with a [`ClothSimulationComponent`](./clothsimulationcomponent.md), if any.
 

@@ -13,7 +13,7 @@ Initiate and handle VoIP and cellular conversations, coordinate them with other 
 - visionOS 1.1+
 - watchOS 10.4+
 
-#### Overview
+## Overview
 
 LiveCommunicationKit allows you to offer VoIP conversation functionalities in your app, and to integrate your communication services with other communication apps in the system. With LiveCommunicationKit, your app can:
 
@@ -22,7 +22,7 @@ LiveCommunicationKit allows you to offer VoIP conversation functionalities in yo
 
 Using LiveCommunicationKit in your app allows people to configure their device to use your app as the default dialer or calling app.
 
-##### Manage user privacy
+### Manage user privacy
 
 With a person’s permission, an installed health research app that uses [SensorKit](../SensorKit/SensorKit.md) entitlements may collect Speech Metrics data while your LiveCommunicationKit app is in use. To prevent this, set the [`SRResearchDataGeneration`](../BundleResources/information-property-list/srresearchdatageneration.md) information property list key to `NO`.
 

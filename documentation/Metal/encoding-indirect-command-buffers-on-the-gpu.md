@@ -13,7 +13,7 @@ Maximize CPU to GPU parallelization by generating render commands on the GPU.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to use *indirect command buffers* (ICB) to issue rendering instructions from the GPU. When you have a rendering algorithm that runs in a compute kernel, use ICBs to generate draw calls based on your algorithm’s results. The sample app uses a compute kernel to remove invisible objects submitted for rendering, and generates draw commands only for the objects currently visible in the scene.
 
@@ -27,7 +27,7 @@ The sample code project, [Encoding Indirect Command Buffers on the CPU](./encodi
 
 The techniques shown by this sample include issuing draw calls from the GPU, and the process of executing a select set of draws.
 
-##### Getting started
+### Getting started
 
 This project contains targets for macOS and iOS. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
@@ -37,7 +37,7 @@ The sample calls an [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md) 
 - MTLFeatureSet_iOS_GPUFamily4_v2
 - MTLFeatureSet_macOS_GPUFamily2_v1
 
-##### Define the data read by the ICB
+### Define the data read by the ICB
 
 In an ideal scenario, you store each mesh in its own buffer. However, on iOS, kernels running on the GPU can only access a limited number of data buffers per execution. To reduce the number of buffers needed during the ICBs execution, you pack all meshes into a single buffer at varying offsets. Then, use another buffer to store the offset and size of each mesh. The process to do this follows.
 
@@ -107,7 +107,7 @@ for(int objectIdx = 0; objectIdx < AAPLNumObjects; objectIdx++)
 }
 ```
 
-##### Update the data read by the ICB dynamically
+### Update the data read by the ICB dynamically
 
 By culling non-visible vertices from the data fed to the rendering pipeline, you save significant rendering time and effort. To do that, use the same compute kernel that encodes the ICB’s commands to continually update the ICB’s data buffers:
 
@@ -166,7 +166,7 @@ cullMeshesAndEncodeCommands(uint                         objectIndex   [[ thread
 
 The parallel nature of the GPU partitions the compute task for you, resulting in multiple offscreen meshes getting culled concurrently.
 
-##### Pass an ICB to a compute kernel using an argument buffer
+### Pass an ICB to a compute kernel using an argument buffer
 
 To get an ICB on the GPU and make it accessible to a compute kernel, you pass it through an argument buffer, as follows:
 
@@ -208,7 +208,7 @@ Because you pass the ICB through an argument buffer, standard argument buffer ru
 [computeEncoder useResource:_indirectCommandBuffer usage:MTLResourceUsageWrite];
 ```
 
-##### Encode and optimize ICB commands
+### Encode and optimize ICB commands
 
 Reset the ICB’s commands to their initial before beginning encoding:
 
@@ -235,7 +235,7 @@ This sample optimizes ICB commands because redundant state results from the kern
 
 > **Note**: If you optimize an indirect command buffer, you won’t be able to call `executeCommandsInBuffer:withRange:` with a range that starts in the optimized region. Instead, specify a range staring at the beginning and finishing within or at the end of the optimized region.
 
-##### Execute the ICB
+### Execute the ICB
 
 Draw the onscreen meshes by calling `executeCommandsInBuffer` on your render command encoder:
 

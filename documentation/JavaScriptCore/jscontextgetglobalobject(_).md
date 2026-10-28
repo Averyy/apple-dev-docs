@@ -24,7 +24,7 @@ func JSContextGetGlobalObject(_ ctx: JSContextRef!) -> JSObjectRef!
 JSObjectRefJSContextGetGlobalObject(JSContextRef ctx);
 ```
 
-#### Return Value
+## Return Value
 
 The global object of `ctx`.
 

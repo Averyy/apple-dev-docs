@@ -29,7 +29,7 @@ func continuationStreams() async throws -> (InputStream, OutputStream)
 - (void) getContinuationStreamsWithCompletionHandler:(void (^)(NSInputStream *inputStream, NSOutputStream *outputStream, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When an app is launched for a continuation event, it can request streams back to the originating app. Streams can be successfully retrieved only from the [`NSUserActivity`](../nsuseractivity.md) object in the [`NSApplication`](../../AppKit/nsapplication.md) or [`UIApplication`](../../UIKit/uiapplication.md) delegate that is called for a continuation event. The streams are provided by the completion handler in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
 

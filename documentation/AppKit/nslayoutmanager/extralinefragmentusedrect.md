@@ -19,7 +19,7 @@ var extraLineFragmentUsedRect: NSRect { get }
 @property (readonly) NSRect extraLineFragmentUsedRect;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle is defined in the coordinate system of its `NSTextContainer`. `NSZeroRect` if there is no extra line fragment rectangle.
 

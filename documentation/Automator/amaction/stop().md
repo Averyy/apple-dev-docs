@@ -20,7 +20,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 The output acquired by the action during execution of the current workflow is still accessible to Automator.
 

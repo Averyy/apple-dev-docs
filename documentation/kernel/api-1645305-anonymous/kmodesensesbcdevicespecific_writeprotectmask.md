@@ -13,7 +13,7 @@
 kModeSenseSBCDeviceSpecific_WriteProtectMask = (1 << kModeSenseSBCDeviceSpecific_WriteProtectBit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to test for kModeSenseSBCDeviceSpecific_WriteProtectBit.
 

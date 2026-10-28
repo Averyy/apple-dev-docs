@@ -24,11 +24,11 @@ func compare(_ destination: PDFDestination) -> ComparisonResult
 - (NSComparisonResult) compare:(PDFDestination *) destination;
 ```
 
-#### Return Value
+## Return Value
 
 A comparison result, indicating the position of the passed-in destination relative to the current position.
 
-#### Discussion
+## Discussion
 
 If `destination` is between the receiver’s position and the end of the document, `compare` returns `NSOrderedAscending`; if it is between the receiver’s position and the beginning of the document, `compare` returns `NSOrderedDescending`. Otherwise, if `destination` matches the receiver’s position, `compare` returns `NSOrderedSame`.
 

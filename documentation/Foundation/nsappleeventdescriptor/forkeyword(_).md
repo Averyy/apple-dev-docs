@@ -20,7 +20,7 @@ func forKeyword(_ keyword: AEKeyword) -> NSAppleEventDescriptor?
 - (NSAppleEventDescriptor *) descriptorForKeyword:(AEKeyword) keyword;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor for the specified keyword, or `nil` if an error occurs.
 

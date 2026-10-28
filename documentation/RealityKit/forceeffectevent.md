@@ -20,7 +20,7 @@ A struct that defines the arguments to the custom force effect update closure.
 struct ForceEffectEvent<ForceEffectType> where ForceEffectType : ForceEffectProtocol
 ```
 
-#### Overview
+## Overview
 
 If you register your custom force effect using a closure, you can access the force effect’s property and [`ForceEffectParameters`](./forceeffectparameters.md) from this struct.
 

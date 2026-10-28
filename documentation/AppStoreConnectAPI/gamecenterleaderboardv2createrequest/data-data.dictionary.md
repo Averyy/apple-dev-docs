@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard create request reso
 object GameCenterLeaderboardV2CreateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - relationships:

@@ -24,7 +24,7 @@ protocol UIAppearanceContainer : NSObjectProtocol
 @protocol UIAppearanceContainer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To participate in the appearance proxy API, tag appearance property accessor methods in your header with [`UI_APPEARANCE_SELECTOR`](./ui_appearance_selector.md).
 

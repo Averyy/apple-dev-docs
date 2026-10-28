@@ -16,7 +16,7 @@ Creates the current queue.
 IOReturn (*create)(void *self, uint32_t flags, uint32_t depth);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

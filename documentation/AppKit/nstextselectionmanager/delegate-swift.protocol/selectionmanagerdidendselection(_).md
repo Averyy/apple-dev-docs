@@ -19,7 +19,7 @@ optional func selectionManagerDidEndSelection(_ selectionManager: NSTextSelectio
 - (void) selectionManagerDidEndSelection:(NSTextSelectionManager *) selectionManager;
 ```
 
-#### Discussion
+## Discussion
 
 The selection manager calls this method after finishing processing a selection gesture, such as when the user releases the mouse button.
 

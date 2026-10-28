@@ -20,7 +20,7 @@ A Boolean value indicating whether to enable automatic mode for the climate cont
 final var enableAutoMode: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modified a different climate control setting.
 

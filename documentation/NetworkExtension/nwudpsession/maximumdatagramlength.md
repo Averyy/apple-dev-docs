@@ -26,7 +26,7 @@ var maximumDatagramLength: Int { get }
 @property (nonatomic, readonly) NSUInteger maximumDatagramLength;
 ```
 
-#### Discussion
+## Discussion
 
 If a datagram is written with a longer length than `maximumDatagramLength`, the datagram may be fragmented or encounter an error. Note that this value is not guaranteed to be the maximum datagram length for end-to-end communication across the network. Use Key-Value Observing to watch this property.
 

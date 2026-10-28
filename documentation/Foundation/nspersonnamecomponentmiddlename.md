@@ -23,7 +23,7 @@ let NSPersonNameComponentMiddleName: String
 extern NSString * const NSPersonNameComponentMiddleName;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a middle name component.
 

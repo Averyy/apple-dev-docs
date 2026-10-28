@@ -19,11 +19,11 @@ init?(persistentReference data: Data)
 + (CBIdentity *) identityWithPersistentReference:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 The identity object matching the persistent data object, or `nil` if the identity is not found.
 
-#### Discussion
+## Discussion
 
 A persistent reference is an opaque data object suitable for persistent storage.
 

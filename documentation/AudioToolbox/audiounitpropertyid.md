@@ -24,7 +24,7 @@ typealias AudioUnitPropertyID = UInt32
 typedef UInt32 AudioUnitPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit property is a key-value pair for a configuration setting, such as audio data stream format. The properties for Apple-supplied audio units are described in `Audio Unit Properties`.
 

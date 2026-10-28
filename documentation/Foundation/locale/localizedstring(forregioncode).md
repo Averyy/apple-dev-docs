@@ -21,7 +21,7 @@ Returns a localized string for a specified region code.
 func localizedString(forRegionCode regionCode: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"fr"` is `"France"`.
 

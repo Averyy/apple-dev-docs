@@ -23,7 +23,7 @@ func gss_acquire_cred_with_password(_ minor_status: UnsafeMutablePointer<OM_uint
 OM_uint32 gss_acquire_cred_with_password(OM_uint32 *minor_status, gss_name_t const desired_name, gss_buffer_t const password, OM_uint32 time_req, gss_OID_set const desired_mechs, gss_cred_usage_t cred_usage, gss_cred_id_t*output_cred_handle, gss_OID_set*actual_mechs, OM_uint32 *time_rec);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

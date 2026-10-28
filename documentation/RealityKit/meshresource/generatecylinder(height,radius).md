@@ -21,7 +21,7 @@ Creates a new cylinder mesh with the specified dimensions.
 @preconcurrency static func generateCylinder(height: Float, radius: Float) -> MeshResource
 ```
 
-#### Discussion
+## Discussion
 
 The cylinder is centered at the local origin with its axis aligned along the y-axis.
 

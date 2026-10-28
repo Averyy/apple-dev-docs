@@ -24,11 +24,11 @@ func shouldArchiveValue(forKey key: String) -> Bool
 - (BOOL) shouldArchiveValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified property should be archived, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Called by the object’s implementation of `encodeWithCoder:`. The object must implement keyed archiving.
 

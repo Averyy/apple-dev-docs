@@ -25,7 +25,7 @@ func CGPDFScannerRetain(_ scanner: CGPDFScannerRef) -> CGPDFScannerRef
 extern CGPDFScannerRefCGPDFScannerRetain(CGPDFScannerRef scanner);
 ```
 
-#### Return Value
+## Return Value
 
 The same scanner object passed to the function in the `scanner` parameter.
 

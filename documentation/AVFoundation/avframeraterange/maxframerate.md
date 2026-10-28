@@ -24,7 +24,7 @@ var maxFrameRate: Float64 { get }
 @property (readonly) Float64 maxFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The frame is given in frames per second.
 

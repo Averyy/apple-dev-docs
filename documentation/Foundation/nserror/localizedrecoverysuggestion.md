@@ -25,7 +25,7 @@ var localizedRecoverySuggestion: String? { get }
 @property (copy, readonly, nullable) NSString * localizedRecoverySuggestion;
 ```
 
-#### Discussion
+## Discussion
 
 The object in the user info dictionary for the key [`NSLocalizedRecoverySuggestionErrorKey`](../nslocalizedrecoverysuggestionerrorkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoverySuggestionErrorKey`](../nslocalizedrecoverysuggestionerrorkey.md), this property is `nil`.
 

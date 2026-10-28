@@ -24,11 +24,11 @@ nonisolated
 func previewDevice(_ value: PreviewDevice?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A preview that uses the given device.
 
-#### Discussion
+## Discussion
 
 By default, Xcode automatically chooses a preview device based on your currently selected run destination. If you want to choose a device that doesn’t change based on Xcode settings, provide a [`PreviewDevice`](../previewdevice.md) instance that you initialize with the name or model of a specific device:
 

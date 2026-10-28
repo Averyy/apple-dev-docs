@@ -21,7 +21,7 @@ An option to invert the shape or layer alpha as the clip mask.
 static var inverse: GraphicsContext.ClipOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you use this option, SwiftUI uses `1 - alpha` instead of `alpha` for the given clip shape.
 

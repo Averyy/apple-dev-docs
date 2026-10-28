@@ -25,7 +25,7 @@ case justified
 kCTTextAlignmentJustified
 ```
 
-#### Discussion
+## Discussion
 
 The last line in a paragraph is naturally aligned.
 

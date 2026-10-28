@@ -25,11 +25,11 @@ init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
 - (instancetype) initWithLatitude:(CLLocationDegrees) latitude longitude:(CLLocationDegrees) longitude;
 ```
 
-#### Return Value
+## Return Value
 
 A location object initialized with the specified geographical coordinate.
 
-#### Discussion
+## Discussion
 
 Use this method to create location objects that are not necessarily based on the user’s current location. Typically, you acquire location objects from your [`CLLocationManager`](../cllocationmanager.md) object, which returns the user’s actual location. However, you might use this method when you want to represent any location on a map. For example, you might create an object to represent the user’s intended destination.
 

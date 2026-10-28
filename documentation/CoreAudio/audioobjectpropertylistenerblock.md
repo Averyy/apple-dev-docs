@@ -18,7 +18,7 @@ typealias AudioObjectPropertyListenerBlock = (UInt32, UnsafePointer<AudioObjectP
 typedef void (^)(unsigned int, const struct AudioObjectPropertyAddress *) AudioObjectPropertyListenerBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Clients register an AudioObjectPropertyListenerBlock with an AudioObject in order to receive notifications when the properties of the object change.
 

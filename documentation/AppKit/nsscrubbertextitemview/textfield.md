@@ -19,7 +19,7 @@ var textField: NSTextField { get }
 @property (strong, readonly) NSTextField * textField;
 ```
 
-#### Discussion
+## Discussion
 
 Access and configure the underlying text field used to display the text in the [`title`](./title.md) property.
 

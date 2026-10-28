@@ -22,11 +22,11 @@ func trackRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) trackRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the track. This rectangle corresponds to the entire length of the track between the minimum and maximum value images.
 
-#### Discussion
+## Discussion
 
 You do not call this method directly. Instead, you override it when you want to customize the track rectangle, returning a different rectangle. The returned rectangle is used to scale the track and thumb images during drawing.
 

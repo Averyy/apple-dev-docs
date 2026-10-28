@@ -21,7 +21,7 @@ case signatureVerificationFailed
 SKAdTestErrorCodeSignatureVerificationFailed
 ```
 
-#### Discussion
+## Discussion
 
 The ad impression signature isn’t valid. Check the following:
 

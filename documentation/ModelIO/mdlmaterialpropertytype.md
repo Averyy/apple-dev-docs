@@ -24,7 +24,7 @@ enum MDLMaterialPropertyType
 enum MDLMaterialPropertyType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Reading a material property’s value using an accessor for a type other than that corresponding to the [`type`](./mdlmaterialproperty/type.md) property produces undefined results.
 

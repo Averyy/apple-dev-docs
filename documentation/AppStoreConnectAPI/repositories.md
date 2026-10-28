@@ -5,7 +5,7 @@
 
 Read detailed information for each repository Xcode Cloud can access, including Git references and pull requests.
 
-#### Overview
+## Overview
 
 The `scmRepositories` resource represents Git repositories Xcode Cloud can access. Use it to retrieve all repositories for a source code management provider you connected to Xcode Cloud and read:
 

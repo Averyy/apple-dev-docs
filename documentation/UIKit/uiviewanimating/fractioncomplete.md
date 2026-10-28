@@ -24,7 +24,7 @@ var fractionComplete: CGFloat { get set }
 @property (nonatomic) CGFloat fractionComplete;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `0.0` at the beginning of the animation and `1.0` at the end of the animation. Intermediate values represent progress in the execution of the animation. For example, the value `0.5` indicates that the animation is exactly half way complete.
 

@@ -20,7 +20,7 @@ A 3D coordinate space that exists within a RealityKit hierarchy.
 protocol RealityCoordinateSpace
 ```
 
-#### Overview
+## Overview
 
 Any `RealityCoordinateSpaceConverting` can convert spatial data between a [SwiftUI](../SwiftUI/SwiftUI.md) `CoordinateSpace` and a `RealityCoordinateSpace`.
 

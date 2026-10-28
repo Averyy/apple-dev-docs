@@ -20,7 +20,7 @@ class AEAssessmentBinaryExecutable
 @interface AEAssessmentBinaryExecutable : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this for a participant that has no bundle identifier and so cannot be expressed as an [`AEAssessmentApplication`](./aeassessmentapplication.md). It feeds only the app-launch allowlist under [`allowsOnlyParticipantsToRun`](./aeassessmentconfiguration/allowsonlyparticipantstorun.md) and, when its configuration permits, network access; UI policies do not apply.
 

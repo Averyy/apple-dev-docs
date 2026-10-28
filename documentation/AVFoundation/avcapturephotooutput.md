@@ -34,7 +34,7 @@ class AVCapturePhotoOutput
 - [Requesting authorization to capture and save media](./requesting-authorization-to-capture-and-save-media.md)
 - [Saving captured photos](./saving-captured-photos.md)
 
-#### Overview
+## Overview
 
 [`AVCapturePhotoOutput`](./avcapturephotooutput.md) provides an interface for capture workflows related to still photography. In addition to basic capture of still images, a photo output supports RAW-format capture, bracketed capture of multiple images, Live Photos, and wide-gamut color. You can output captured photos in a variety of formats and codecs, including RAW format DNG files, HEVC format HEIF files, and JPEG files.
 

@@ -28,7 +28,7 @@ class MKZoomControl
 @interface MKZoomControl : NSView
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to incorporate a standard, fixed-size zoom control into your own view hierarchy. A zoom control enables the user to change the zoom level of its associated map view.
 

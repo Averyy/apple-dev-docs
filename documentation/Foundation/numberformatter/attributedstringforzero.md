@@ -20,11 +20,11 @@ var attributedStringForZero: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedStringForZero;
 ```
 
-#### Discussion
+## Discussion
 
 By default zero values are displayed according to the format specified for positive values; for more discussion of this subject see [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
 
-##### Special Considerations
+### Special Considerations
 
 This method is for use with formatters using `NSNumberFormatterBehavior10_0` behavior.
 

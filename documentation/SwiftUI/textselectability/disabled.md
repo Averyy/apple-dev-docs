@@ -22,7 +22,7 @@ static var disabled: DisabledTextSelectability { get }
 
 Available when `Self` is `DisabledTextSelectability`.
 
-#### Discussion
+## Discussion
 
 Use this property to disable text selection of views that you don’t want people to select and copy, even if contained within an overall context that allows text selection.
 

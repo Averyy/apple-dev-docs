@@ -12,7 +12,7 @@ Take advantage of the true native resolution of a Mac display when running your 
 - Mac Catalyst 15.5+
 - Xcode 13.4+
 
-#### Overview
+## Overview
 
 Some iPad apps, such as games, require a full-screen experience. These apps don’t participate in iPad multitasking, and they don’t support resizable windows when run on a Mac. To ensure these behaviors, the apps include the [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) key with a value of `true` in their `Info.plist` file.
 
@@ -22,7 +22,7 @@ An iPad app that supports iPad multitasking, on the other hand, provides resizab
 
 This sample shows how to configure an iPad app that requires full-screen mode on iPad to take advantage of the native resolution of the Mac display for a pixel-perfect, edge-to-edge, full-screen experience.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample app:
 
@@ -37,7 +37,7 @@ When you launch the sample app, it displays two grids across the screen. The fir
 
 The sample app can also show other visual elements, such as a border around the safe area insets. To change the display options, click anywhere within the app.
 
-##### Support the native resolution of a Mac display
+### Support the native resolution of a Mac display
 
 An app that requires full screen on iPad — that is, an app that includes the [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) key with a value of `true` in its `Info.plist` file — doesn’t take advantage of the entire display when run on a Mac in full-screen mode. The system determines the full-screen size of the app based on compatible iPad device sizes and displays the app using the aspect ratio of the chosen size. When the aspect ratio doesn’t match the aspect ratio of the Mac display, space appears on either side of the app’s content.
 
@@ -65,7 +65,7 @@ Setting the key to `true` also avoids content scaling in the app’s window (whe
 
 > ❗ **Important**: For more information about the responsibilities of an iPad app that supports arbitrary screen sizes and resolutions when running on Mac, see the [`UISupportsTrueScreenSizeOnMac`](../BundleResources/information-property-list/uisupportstruescreensizeonmac.md) documentation.
 
-##### Launch in full-screen mode by default
+### Launch in full-screen mode by default
 
 Many apps that require full-screen mode when running on iPad look equally as good on Mac when appearing in a window. For these apps, setting [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) to `true` provides a full-screen-only experience when the app runs in iPadOS and lets the app appear in a window by default when launched in macOS.
 

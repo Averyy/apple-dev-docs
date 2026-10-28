@@ -16,7 +16,7 @@ The time the transaction took place, if available.
 let transactionDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 This may be different from the time the transaction posted to the account.
 

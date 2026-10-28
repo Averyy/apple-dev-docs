@@ -5,7 +5,7 @@
 
 This function returns the device effect’s status.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *GetEffectStatus)(
@@ -14,7 +14,7 @@ HRESULT ( *GetEffectStatus)(
    FFEffectStatusFlag *pStatusCode );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **downloadID**: Indicates the effect to be queried.
@@ -28,7 +28,7 @@ HRESULT ( *GetEffectStatus)(
 
   The effect is not playing.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK.
 

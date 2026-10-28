@@ -25,7 +25,7 @@ let CBPeripheralManagerRestoredStateAdvertisementDataKey: String
 extern NSString * const CBPeripheralManagerRestoredStateAdvertisementDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSDictionary`](../Foundation/nsdictionary.md) that contains the data advertised by the peripheral manager at the time the system quit the app.
 

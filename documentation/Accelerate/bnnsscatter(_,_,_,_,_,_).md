@@ -27,7 +27,7 @@ func BNNSScatter(_ axis: Int, _ op: BNNSReduceFunction, _ input: UnsafePointer<B
 int BNNSScatter(size_t axis, BNNSReduceFunction op, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *indices, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) to scatter elements — that you specify by index — into an output tensor. The operation can set the scattered values or add them to the existing values in the output tensor.
 

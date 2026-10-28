@@ -25,7 +25,7 @@ var gain: Float { get set }
 @property (nonatomic) float gain;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0 dB`. The valid range of values is `-96 dB` through `24 dB`.
 

@@ -25,7 +25,7 @@ var interiorPolygons: [MKPolygon]? { get }
 @property (atomic, readonly, nullable) NSArray<MKPolygon *> * interiorPolygons;
 ```
 
-#### Discussion
+## Discussion
 
 When the screen renders a polygon, the renderer masks the area that any interior polygons occupy so they aren’t part of the polygon.
 

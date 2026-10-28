@@ -23,7 +23,7 @@ var contentTypeTree: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * contentTypeTree;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`contentTypeTree`](./contenttypetree.md) for an item whose [`contentType`](./contenttype.md) is `public.m3u-playlist` should include `public.m3u-playlist` and `public.playlist`.
 

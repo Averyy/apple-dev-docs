@@ -25,7 +25,7 @@ class func playableMediaSelectionOptions(from mediaSelectionOptions: [AVMediaSel
 + (NSArray<AVMediaSelectionOption *> *) playableMediaSelectionOptionsFromArray:(NSArray<AVMediaSelectionOption *> *) mediaSelectionOptions;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the media selection options from `array` that are playable.
 

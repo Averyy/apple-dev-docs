@@ -21,7 +21,7 @@ let NSUserActivityTypeLockedCameraCapture: String
 extern NSString * const NSUserActivityTypeLockedCameraCapture;
 ```
 
-#### Discussion
+## Discussion
 
 Use this `NSUserActivityType` with [`openApplication(for:)`](./lockedcameracapturesession/openapplication%28for%29.md) to check if someone is launching your app from a locked camera capture extension.
 

@@ -29,7 +29,7 @@ class NSManagedObjectID
 
 - [Using Core Data in the background](./using-core-data-in-the-background.md)
 
-#### Overview
+## Overview
 
 This identifier forms the basis for uniquing in the Core Data Framework. A managed object ID uniquely identifies the same managed object both between managed object contexts in a single application, and in multiple applications (as in distributed systems). Identifiers contain the information needed to exactly describe an object in a persistent store (like the primary key in the database), although the detailed information is not exposed. The framework completely encapsulates the “external” information and presents a clean object oriented interface.
 

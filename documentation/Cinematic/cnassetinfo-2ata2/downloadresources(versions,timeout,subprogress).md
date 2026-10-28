@@ -18,7 +18,7 @@ Downloads the resources required to render cinematic effects on assets Resources
 static func downloadResources(versions: Set<CNCinematicResourceVersion> = [], timeout: TimeInterval = defaultResourceDownloadTimeout, subprogress: consuming Subprogress? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation: this method responds to Swift Task cancellation. If the calling task is cancelled, the download stops; any partially downloaded resources are discarded.
 

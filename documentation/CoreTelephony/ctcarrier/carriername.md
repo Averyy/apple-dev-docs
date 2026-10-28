@@ -23,7 +23,7 @@ var carrierName: String? { get }
 @property (nonatomic, retain, readonly, nullable) NSString * carrierName;
 ```
 
-#### Discussion
+## Discussion
 
 The carrier provides this string, formatting it for presentation to the user. The value does not change if the user is roaming; it always represents the provider with which the user has an account.
 

@@ -28,7 +28,7 @@ var duration: TimeInterval { get }
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Discussion
+## Discussion
 
 A workout’s duration can be specified in one of three ways. The [`init(activityType:start:end:)`](./init%28activitytype,start,end%29.md) method uses the time interval between the provided start and end dates. The [`init(activityType:start:end:duration:totalEnergyBurned:totalDistance:metadata:)`](./init%28activitytype,start,end,duration,totalenergyburned,totaldistance,metadata%29.md) method sets the duration to the provided value. And the [`init(activityType:start:end:workoutEvents:totalEnergyBurned:totalDistance:metadata:)`](./init%28activitytype,start,end,workoutevents,totalenergyburned,totaldistance,metadata%29.md) method calculates the total active duration based on the start and end dates and the workout events.
 

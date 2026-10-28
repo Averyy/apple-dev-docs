@@ -21,11 +21,11 @@ func SecKeychainAddGenericPassword(_ keychain: SecKeychain?, _ serviceNameLength
 OSStatus SecKeychainAddGenericPassword(SecKeychainRef keychain, UInt32 serviceNameLength, const char *serviceName, UInt32 accountNameLength, const char *accountName, UInt32 passwordLength, const void *passwordData, SecKeychainItemRef*itemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecNoDefaultKeychain`](./errsecnodefaultkeychain.md) indicates that no default keychain could be found. The result code [`errSecDuplicateItem`](./errsecduplicateitem.md) indicates that you tried to add a password that already exists in the keychain. The result code [`errSecDataTooLarge`](./errsecdatatoolarge.md) indicates that you tried to add more data than is allowed for a structure of this type.
 
-#### Discussion
+## Discussion
 
 This function adds a new generic password to the specified keychain. Required parameters to identify the password are `serviceName` and `accountName`, which are application-defined strings. This function optionally returns a reference to the newly added item.
 

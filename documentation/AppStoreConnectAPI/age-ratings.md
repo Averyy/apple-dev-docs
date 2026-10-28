@@ -5,7 +5,7 @@
 
 Read and update age ratings and declarations for your app.
 
-#### Overview
+## Overview
 
 `ageRatingDeclarations` handles your answers to the app-characteristic questions that affect your app’s age rating. This resource enables you to answer the questions and update your answers. You must fill out this information before submitting your app for review.
 

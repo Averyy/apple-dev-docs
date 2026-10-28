@@ -23,11 +23,11 @@ func encoded<Encoder>(using encoder: Encoder) throws -> Column<Encoder.Output> w
 
 Available when `WrappedElement` conforms to `Encodable`.
 
-#### Return Value
+## Return Value
 
 A new column of encoded values.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnEncodingError` when the encoder fails to encode an element.
 

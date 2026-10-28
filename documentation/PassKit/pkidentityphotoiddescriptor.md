@@ -26,7 +26,7 @@ class PKIdentityPhotoIDDescriptor
 
 - [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
 
-##### Discussion
+### Discussion
 
 Use this class to help create a digital ID in Wallet, which is an Apple issued ID credential based on government-issued ICAO compliant passport. This ID is available to use in person, within apps, and on the web.
 

@@ -22,7 +22,7 @@ func item<T>(_ type: T.Type) -> T where T : HasDType
 - [Converting From Python](../converting-python.md)
 - [Lazy Evaluation](../lazy-evaluation.md)
 
-#### Discussion
+## Discussion
 
 It is a contract violation to call this on an array with more than one element. If the `type` does not match the `dtype` this will convert the type first.
 

@@ -16,7 +16,7 @@ nonisolated
 func dialogSeverity(_ severity: DialogSeverity) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 The following example configures an alert for erasing some number of items. Since this operation is destructive and non-recoverable, a `.critical` severity is used.
 

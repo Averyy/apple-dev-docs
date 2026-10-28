@@ -19,7 +19,7 @@ var sourceFrame: NSRect { get }
 @property (readonly) NSRect sourceFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the rectangle, in screen coordinates, that encloses the item. This rectangle includes areas that might be clipped and not currently visible onscreen.
 

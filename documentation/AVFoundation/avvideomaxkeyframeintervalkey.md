@@ -24,7 +24,7 @@ let AVVideoMaxKeyFrameIntervalKey: String
 extern NSString * const AVVideoMaxKeyFrameIntervalKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`. A value of `1` signifies keyframes only.
 

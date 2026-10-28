@@ -19,7 +19,7 @@ var rightExpressions: [NSExpression]? { get }
 @property (copy, readonly, nullable) NSArray<NSExpression *> * rightExpressions;
 ```
 
-#### Return Value
+## Return Value
 
 The right hand expressions for the receiver
 

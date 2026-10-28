@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Runs nonisolated async functions on the caller’s actor by default.
 
-#### Overview
+## Overview
 
 Prior to this feature, nonisolated async functions *never* run on an actor’s executor and instead switch to global generic executor. The motivation was to prevent unnecessary serialization and contention for the actor by switching off of the actor to run the nonisolated async function, but this does  have a number of unfortunate consequences:
 
@@ -59,7 +59,7 @@ struct S: Sendable {
 }
 ```
 
-#### Migration
+## Migration
 
 ```sh
 -enable-upcoming-feature NonisolatedNonsendingByDefault:migrate

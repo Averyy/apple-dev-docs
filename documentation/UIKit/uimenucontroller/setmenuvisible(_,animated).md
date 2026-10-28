@@ -23,7 +23,7 @@ func setMenuVisible(_ menuVisible: Bool, animated: Bool)
 - (void) setMenuVisible:(BOOL) menuVisible animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Before showing the menu, be sure to position it relative to the selection. See [`setTargetRect(_:in:)`](./settargetrect%28_,in%29.md) for details. If you do not set the target rect before displaying the menu, it appears at screen coordinates (0.0, 0.0).
 

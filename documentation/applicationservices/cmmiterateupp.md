@@ -15,7 +15,7 @@ Defines a universal procedure pointer to a CMM iteration callback.
 typedef CMMIterateProcPtr CMMIterateUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`CMMIterateProcPtr`](./cmmiterateprocptr.md) callback function.
 

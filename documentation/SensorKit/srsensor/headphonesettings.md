@@ -19,7 +19,7 @@ static let headphoneSettings: SRSensor
 extern SRSensor const SRSensorHeadphoneSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Sensor stream for headphone settings
 

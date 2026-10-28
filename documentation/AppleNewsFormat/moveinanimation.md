@@ -19,13 +19,13 @@ object MoveInAnimation
 
 - [About Component Animations](../AppleNews/about-component-animations.md)
 
-#### Discussion
+## Discussion
 
 With this animation type the component moves into view from the left or right side of the screen. Initially, the component is out of view as shown in [this video](https://developer.apple.com/apple-news/videos/move-in.mp4).
 
 You can configure a preferred starting position, but the position is not guaranteed. For example, if another component is blocking the preferred position, the `MoveInAnimation` attempts to start from the opposite side. If both sides are covered by other components, Apple News doesn’t apply the `MoveInAnimation`.
 
-##### Example
+### Example
 
 ```json
 {

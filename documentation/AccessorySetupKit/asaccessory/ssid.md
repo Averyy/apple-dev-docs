@@ -24,7 +24,7 @@ var ssid: String? { get }
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 Use this identifier to establish a connection to the accessory.
 

@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>) where X : Plottable, Y : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a range area chart with vertical intervals. For example you can create a region that encompasses all the temperatures over the course of a day, across a number of days:
 

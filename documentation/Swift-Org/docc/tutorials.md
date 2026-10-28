@@ -26,7 +26,7 @@ Displays a table of contents page for readers to navigate the pages of an intera
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 The `Tutorials` directive defines the structure of the table of contents page readers navigate to access individual tutorial pages.
 
@@ -53,7 +53,7 @@ Use a text editor to add a tutorial table of contents file to your documentation
 
 Use the `name` parameter to specify the name of your overall tutorial. This appears throughout the tutorial and in the tutorial’s URL when published on the web. Next, use the [`Intro`](./intro.md) directive to introduce the reader to your tutorial through engaging text and imagery. Then, use [`Chapter`](./chapter.md) directives to reference the step-by-step pages. Chapters can also include images.
 
-##### Group Related Chapters
+### Group Related Chapters
 
 Use the [`Volume`](./volume.md) directive to group related chapters together if you need another level of organization. Volumes can also include images.
 
@@ -94,7 +94,7 @@ Use the [`Volume`](./volume.md) directive to group related chapters together if 
 }
 ```
 
-##### Offer Resources for Continued Learning
+### Offer Resources for Continued Learning
 
 If your tutorial has related resources, use the [`Resources`](./resources.md) directive to share them.
 
@@ -138,7 +138,7 @@ If your tutorial has related resources, use the [`Resources`](./resources.md) di
 
 To walk through the creation of a simple tutorial project from start to finish, see [Building an Interactive Tutorial](./building-an-interactive-tutorial.md).
 
-##### Contained Elements
+### Contained Elements
 
 A table of contents page can contain the following items:
 

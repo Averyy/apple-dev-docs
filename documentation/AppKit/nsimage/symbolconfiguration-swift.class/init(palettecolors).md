@@ -19,11 +19,11 @@ convenience init(paletteColors: [NSColor])
 + (instancetype) configurationWithPaletteColors:(NSArray<NSColor *> *) paletteColors;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object that prefers its palette variant.
 
-#### Discussion
+## Discussion
 
 The system applies the colors sequentially per layer — the first color for the first layer, and the second color for the second layer. This is independent of the hierarchy level of the layer.
 

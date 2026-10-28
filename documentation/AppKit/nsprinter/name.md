@@ -19,7 +19,7 @@ var name: String { get }
 @property (copy, readonly) NSString * name;
 ```
 
-#### Return Value
+## Return Value
 
 The printer name.
 

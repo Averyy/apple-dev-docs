@@ -17,7 +17,7 @@ Configuration for speculative decoding in a `ChatSession`.
 struct SpeculativeDecodingConfig
 ```
 
-#### Overview
+## Overview
 
 Speculative decoding uses a small draft model to propose candidate tokens that the main model then verifies in a single forward pass, providing a speedup with no quality degradation when both models fit comfortably in memory.
 

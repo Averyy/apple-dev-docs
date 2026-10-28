@@ -20,7 +20,7 @@ A Boolean value that indicates the pass issuer disabled a stored-value pass.
 @property (nonatomic, assign, readonly, getter=isBlocked) BOOL blocked;
 ```
 
-#### Discussion
+## Discussion
 
 The pass issuer is responsible for blocking a stored-value pass according to their policy. The service provider can’t process transactions for a blocked pass.
 

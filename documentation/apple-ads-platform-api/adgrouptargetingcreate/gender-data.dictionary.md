@@ -15,7 +15,7 @@ Gender targeting for the audience.
 object AdGroupTargetingCreate.Gender
 ```
 
-#### Discussion
+## Discussion
 
 Used with App Store campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

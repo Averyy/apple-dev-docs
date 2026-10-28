@@ -21,7 +21,7 @@ A type that represents a volume mount point.
 extern UTType * const UTTypeMountPoint;
 ```
 
-#### Discussion
+## Discussion
 
 A mount point that resolves to the root directory of a volume.
 

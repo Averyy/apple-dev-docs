@@ -20,7 +20,7 @@ func performCardEmulationTransactionWithCurrentCredential(options: CardEmulation
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 Calling this method requires that the credential’s state is `wired`. If successful, the state transitions to [`CredentialSession.State.cardEmulation(credential:)`](../credentialsession/state-swift.enum/cardemulation%28credential%29.md). If an error occurs, the state is unchanged, unless the error is [`CredentialSession.ErrorCode.resourceUnavailable`](../credentialsession/errorcode/resourceunavailable.md), which transitions the state back to [`CredentialSession.State.management`](../credentialsession/state-swift.enum/management.md).
 

@@ -19,7 +19,7 @@ A code-signing entitlement that enables an app to detect nudity in images and vi
 
 - `analysis`
 
-#### Discussion
+## Discussion
 
 The [Sensitive Content Analysis](../../SensitiveContentAnalysis/SensitiveContentAnalysis.md) framework fails to return positive results for apps that lack this entitlement in its code signature.
 

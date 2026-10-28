@@ -22,7 +22,7 @@ var frames: [SIMD3<Float>] { get set }
 
 Available when `Value` is `SIMD3<Float>`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of [simd](../../Accelerate/simd-library.md) floating-point triplets.
 

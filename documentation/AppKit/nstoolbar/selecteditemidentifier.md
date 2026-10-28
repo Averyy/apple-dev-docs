@@ -22,7 +22,7 @@ var selectedItemIdentifier: NSToolbarItem.Identifier? { get set }
 @property (copy, nullable) NSToolbarItemIdentifier selectedItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the toolbar doesn’t have a selected item.
 

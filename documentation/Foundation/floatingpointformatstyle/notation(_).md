@@ -21,11 +21,11 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified notation.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that uses scientific notation style. It then applies each style to an array of floating-point values.
 

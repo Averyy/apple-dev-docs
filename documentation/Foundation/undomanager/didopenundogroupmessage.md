@@ -21,7 +21,7 @@ A message that an undo manager sends after opening an undo group.
 struct DidOpenUndoGroupMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`beginUndoGrouping()`](./beginundogrouping%28%29.md). Because this is a “did”-style message, the undo manager sends the message after it opens the undo group.
 

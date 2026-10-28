@@ -14,6 +14,7 @@ The behavior or functionality of this command.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -25,7 +26,7 @@ The behavior or functionality of this command.
 mutating func run() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method in your `ParsableCommand`-conforming type with the functionality that this command represents.
 

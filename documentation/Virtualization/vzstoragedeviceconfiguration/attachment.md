@@ -19,7 +19,7 @@ var attachment: VZStorageDeviceAttachment { get }
 @property (strong, readonly) VZStorageDeviceAttachment * attachment;
 ```
 
-#### Discussion
+## Discussion
 
 The attachment object defines which local resource on the host computer appears as a disk in the virtual machine.
 

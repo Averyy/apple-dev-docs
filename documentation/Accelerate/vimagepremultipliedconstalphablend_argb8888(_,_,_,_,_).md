@@ -29,11 +29,11 @@ vImage_Error vImagePremultipliedConstAlphaBlend_ARGB8888(const vImage_Buffer *sr
 
 - [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 On return of this function, the value of each pixel in the destination buffer is:
 

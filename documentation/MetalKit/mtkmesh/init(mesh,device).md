@@ -24,11 +24,11 @@ init(mesh: MDLMesh, device: any MTLDevice) throws
 - (instancetype) initWithMesh:(MDLMesh *) mesh device:(id<MTLDevice>) device error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new MetalKit mesh object, or `nil` if an error occured.
 
-#### Discussion
+## Discussion
 
 This initializer does *not* initialize any children meshes of the Model I/O mesh.
 

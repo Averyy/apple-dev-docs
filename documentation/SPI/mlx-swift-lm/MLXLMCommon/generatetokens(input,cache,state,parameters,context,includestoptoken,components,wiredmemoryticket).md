@@ -17,11 +17,11 @@ Generates raw token IDs asynchronously using the provided language model input, 
 func generateTokens(input: LMInput, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, context: ModelContext, includeStopToken: Bool = false, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil) throws -> AsyncStream<TokenGeneration>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits `TokenGeneration` values.
 
-#### Discussion
+## Discussion
 
 This is similar to `generate(input:cache:state:parameters:context:)`, but yields raw token IDs instead of decoded text/tool calls. This is useful for downstream parsers that need access to token IDs directly.
 

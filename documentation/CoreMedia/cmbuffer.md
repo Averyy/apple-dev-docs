@@ -25,7 +25,7 @@ typealias CMBuffer = CFTypeRef
 typedef CFTypeRef CMBufferRef;
 ```
 
-#### Discussion
+## Discussion
 
 A `CMBuffer` can be an instance of any Core Foundation type, as long as a `getDuration` callback can be provided. Commonly used types are `CMSampleBuffer` and `CVPixelBuffer`.
 

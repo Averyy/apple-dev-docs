@@ -24,11 +24,11 @@ class func keystoneCorrectionHorizontal() -> any CIFilter & CIKeystoneCorrection
 + (CIFilter<CIKeystoneCorrectionHorizontal> *) keystoneCorrectionHorizontalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the keystone correction horizontal filter to an image. The effect applies a set of horizontal guides and simulated focal length to adjust the shape of the input image. This effect is commonly used when cropping an image to correct distortion. In the figure below, both vertical and horizontal adjustments are made, resulting in a trapezoid-shaped image.
 

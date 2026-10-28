@@ -16,7 +16,7 @@ nonisolated
 init(from catalog: Entity.ConfigurationCatalog, configurations: [String : String]? = nil) where Content == ResolvedModel3D
 ```
 
-#### Discussion
+## Discussion
 
 Until the model loads, `Model3D` displays a default placeholder. When the load operation completes successfully, `Model3D` updates the view to show the loaded model. If the operation fails, `Model3D` continues to display the placeholder. The following example loads and displays a model from an example server:
 

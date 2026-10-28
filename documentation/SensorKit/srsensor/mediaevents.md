@@ -21,7 +21,7 @@ static let mediaEvents: SRSensor
 extern SRSensor const SRSensorMediaEvents;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRMediaEvent`](../srmediaevent.md).
 

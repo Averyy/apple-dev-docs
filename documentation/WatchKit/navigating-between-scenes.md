@@ -5,7 +5,7 @@
 
 Help users navigate between interface controllers.
 
-#### Overview
+## Overview
 
 WatchKit supports three styles for navigating between scenes in watchOS.
 
@@ -23,7 +23,7 @@ WatchKit also supports several standard interfaces for gathering input or displa
 
 The standard interfaces have built-in buttons so users can dismiss them at any time. Many of the interfaces also have a dismiss method that you can use to close the interface programmatically. While an interface is active, your app doesn’t have direct control over the interactions with that interface. Use actions or a completion handler for tasks related to the interface itself.
 
-##### Implement Page Navigation
+### Implement Page Navigation
 
 To set up page navigation, connect two or more interface controllers in your storyboard with next-page segues.
 
@@ -47,7 +47,7 @@ You can also change the set of pages to display. Call your interface controller�
 
 As the user navigates from page to page, watchOS activates and deactivates the interface controllers. Use the controllers’ [`willActivate()`](./wkinterfacecontroller/willactivate%28%29.md), [`didAppear()`](./wkinterfacecontroller/didappear%28%29.md), [`willDisappear()`](./wkinterfacecontroller/willdisappear%28%29.md), and [`didDeactivate()`](../SecurityInterface/sfauthorizationpluginview/diddeactivate%28%29.md) methods to track these transitions.
 
-##### Implement Push Navigation
+### Implement Push Navigation
 
 When using push navigation, you can define the push segues either in the storyboard, or programmatically in code. To add a push segue to the storyboard, Control-drag from a button, group, or table row to the desired control in the new interface controller.
 
@@ -77,7 +77,7 @@ A pushed interface controller displays a back button in the upper-left corner of
 
 Tables support item pagination. When enabled, users can easily scroll through a series of detail views. The user selects an item from the table, and the app displays a detailed view for that item. The user can scroll up and down to navigate between an item’s siblings. For more information, see [Support Item Pagination](./wkinterfacetable.md#Support-Item-Pagination) in the [`WKInterfaceTable`](./wkinterfacetable.md) Class Reference.
 
-##### Present Modal Interfaces
+### Present Modal Interfaces
 
 A modal interface temporarily interrupts the current navigation flow to prompt the user or display additional information. You can present a modal interface from any interface controller, regardless of the primary navigation style used by your app. To display an interface controller modally, do one of the following:
 

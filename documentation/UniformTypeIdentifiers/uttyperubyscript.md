@@ -21,7 +21,7 @@ A type that represents a Ruby script.
 extern UTType * const UTTypeRubyScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.ruby-script`.
 

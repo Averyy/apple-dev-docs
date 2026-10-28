@@ -21,7 +21,7 @@ init!(openGLContext context: NSOpenGLContext!, pixelFormat format: NSOpenGLPixel
 - (id) initWithOpenGLContext:(NSOpenGLContext *) context pixelFormat:(NSOpenGLPixelFormat *) format file:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `QCRenderer` object or `nil` if initialization is not successful.
 

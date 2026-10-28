@@ -17,7 +17,7 @@ Convert a floating-point array to E4M3 FP8 bytes.
 func toFP8(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [`fromFP8(_:dtype:stream:)`](./fromfp8%28_,dtype,stream%29.md)
 - [Conversion](./conversion.md)

@@ -25,7 +25,7 @@ let MPMediaItemPropertyBookmarkTime: String
 extern NSString * const MPMediaItemPropertyBookmarkTime;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object representing a duration in seconds as an [`TimeInterval`](../Foundation/timeinterval.md).
 

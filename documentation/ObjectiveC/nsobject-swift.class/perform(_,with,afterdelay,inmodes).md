@@ -25,13 +25,13 @@ func perform(_ aSelector: Selector, with anArgument: Any?, afterDelay delay: Tim
 - (void) performSelector:(SEL) aSelector withObject:(id) anArgument afterDelay:(NSTimeInterval) delay inModes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets up a timer to perform the `aSelector` message on the current thread’s run loop. The timer is configured to run in the modes specified by the `modes` parameter. When the timer fires, the thread attempts to dequeue the message from the run loop and perform the selector. It succeeds if the run loop is running and in one of the specified modes; otherwise, the timer waits until the run loop is in one of those modes.
 
 If you want the message to be dequeued when the run loop is in a mode other than the default mode, use the [`perform(_:with:afterDelay:inModes:)`](./perform%28_,with,afterdelay,inmodes%29.md) method instead. If you are not sure whether the current thread is the main thread, you can use the [`performSelector(onMainThread:with:waitUntilDone:)`](./performselector%28onmainthread,with,waituntildone%29.md) or [`performSelector(onMainThread:with:waitUntilDone:modes:)`](./performselector%28onmainthread,with,waituntildone,modes%29.md) method to guarantee that your selector executes on the main thread. To cancel a queued message, use the [`cancelPreviousPerformRequests(withTarget:)`](./cancelpreviousperformrequests%28withtarget%29.md) or [`cancelPreviousPerformRequests(withTarget:selector:object:)`](./cancelpreviousperformrequests%28withtarget,selector,object%29.md) method.
 
-##### Special Considerations
+### Special Considerations
 
 This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](../../Dispatch/dispatch_after.md) and related methods to get the behavior you want.
 

@@ -19,11 +19,11 @@ func SCDynamicStoreCopyConsoleUser(_ store: SCDynamicStore?, _ uid: UnsafeMutabl
 CFStringRefSCDynamicStoreCopyConsoleUser(SCDynamicStoreRef store, uid_t *uid, gid_t *gid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the name, user ID, and group ID of the user currently logged into the system, or `NULL` if no user is logged in or if an error occurred. You must release the returned values.
 
-#### Discussion
+## Discussion
 
 Note that this function only provides information about the primary console. It does not provide any details about console sessions that have fast user switched out or about other consoles.
 

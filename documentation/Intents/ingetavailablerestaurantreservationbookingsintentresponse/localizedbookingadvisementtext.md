@@ -30,7 +30,7 @@ var localizedBookingAdvisementText: String? { get set }
 @property (atomic, copy, nullable) NSString * localizedBookingAdvisementText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to convey restaurant policies, parking instructions, or special information related to the reservation. The system displays this information to the user along with the reservation options. The default value of this property is `nil`.
 

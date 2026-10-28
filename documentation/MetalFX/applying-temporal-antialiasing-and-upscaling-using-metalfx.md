@@ -13,11 +13,11 @@ Reduce render workloads while increasing image detail with MetalFX.
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10103: Boost performance with MetalFX upscaling](https://developer.apple.com/wwdc22/10103/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project requires the following:
 

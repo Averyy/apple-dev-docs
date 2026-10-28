@@ -20,7 +20,7 @@ Returns this path made absolute, anchored at the given path.
 func absolute(at anchor: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 An absolute version of this path.
 

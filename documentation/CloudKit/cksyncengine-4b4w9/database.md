@@ -21,7 +21,7 @@ The associated database.
 @property (strong, readonly) CKDatabase * database;
 ```
 
-#### Discussion
+## Discussion
 
 Multiple sync engines can run in the same process, each targeting a different database. For example, you may use one sync engine for a person’s private database and another for their shared database.
 

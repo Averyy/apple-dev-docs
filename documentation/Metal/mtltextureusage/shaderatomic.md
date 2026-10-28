@@ -24,7 +24,7 @@ static var shaderAtomic: MTLTextureUsage { get }
 MTLTextureUsageShaderAtomic
 ```
 
-#### Discussion
+## Discussion
 
 Shaders can run atomic memory operations on textures with specific element type and pixel format combinations:
 

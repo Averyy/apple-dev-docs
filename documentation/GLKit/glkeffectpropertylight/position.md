@@ -24,7 +24,7 @@ var position: GLKVector4 { get set }
 @property (nonatomic, assign) GLKVector4 position;
 ```
 
-#### Discussion
+## Discussion
 
 If the `w` component of the position is `0.0`, the light is calculated using the directional light formula. The `x`, `y`, and `z` components of the vector specify the direction the light shines. The light is assumed to be infinitely far away; attenuation and spotlight properties are ignored.
 

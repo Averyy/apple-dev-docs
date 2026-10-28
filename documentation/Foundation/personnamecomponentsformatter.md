@@ -25,7 +25,7 @@ class PersonNameComponentsFormatter
 @interface NSPersonNameComponentsFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 Each locale has its own set of rules and conventions for how personal names are structured and represented. These rules vary widely across different locales in a several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting. About the only thing that *is* consistent across all locales is that personal names are significant and meaningful. For this reason, names deserve careful and respectful treatment—perhaps more than any other kind of information your app interacts with.
 
@@ -49,7 +49,7 @@ These considerations extend to the availability of certain formatter styles as w
 
 > 💡 **Tip**:  In Swift, you can use [`PersonNameComponents.FormatStyle`](./personnamecomponents/formatstyle.md) rather than [`PersonNameComponentsFormatter`](./personnamecomponentsformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
-##### Styles
+### Styles
 
 `NSPersonNameComponentsFormatter` can be configured to format names in the following styles:
 
@@ -70,7 +70,7 @@ These considerations extend to the availability of certain formatter styles as w
 | Spanish ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
 | Thai ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
 
-###### Default
+#### Default
 
 The Default, or Medium, style presents names in a way that is suitable for most contexts. It uses the given and family names, as well as a nickname, if provided and enabled by the user in System Preferences.
 
@@ -86,7 +86,7 @@ The Default, or Medium, style presents names in a way that is suitable for most 
 | Spanish (es-ES) | José Ramiro Martín González de Rivera |
 | Thai (th-TH) | สมชาย รัตนเรืองรอง บวรทิพย์ |
 
-###### Short
+#### Short
 
 The Short style offers an alternative display method for names whose default representation may exceed a certain length constraint. It is only available if the user has enabled “Short Names” in System Preferences, and only for names with a script that supports Short style. Otherwise, a formatter configured to display with Short style is displayed with Medium style instead.
 
@@ -113,7 +113,7 @@ Short style is not available for names in CJK script and is restricted to Given 
 
 > ❗ **Important**:  `NSPersonNameComponentsFormatter` does not currently account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
 
-###### Long
+#### Long
 
 The Long style provides the most explicit representation of names. It uses all available name components, with the exception of nickname.
 
@@ -129,7 +129,7 @@ The Long style provides the most explicit representation of names. It uses all a
 | Spanish (es-ES) | Dr. José Ramiro Martín González de Rivera júnior, PhD |
 | Thai (th-TH) | ฯพณฯ สมชาย ปีเตอร์ รัตนเรืองรอง บวรทิพย์ |
 
-###### Abbreviated
+#### Abbreviated
 
 The Abbreviated style offers the most compact representation of names, similar to a monogram.
 

@@ -15,7 +15,7 @@ The user-selected preferred content viewing mode.
 var desiredViewingMode: ImagePresentationComponent.ViewingMode
 ```
 
-#### Discussion
+## Discussion
 
 The `viewingMode` property will update to this value if it is valid for this component’s content, otherwise a suitable fallback will be used.
 

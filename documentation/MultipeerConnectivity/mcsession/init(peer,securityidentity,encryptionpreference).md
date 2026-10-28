@@ -26,11 +26,11 @@ init(peer myPeerID: MCPeerID, securityIdentity identity: [Any]?, encryptionPrefe
 - (instancetype) initWithPeer:(MCPeerID *) myPeerID securityIdentity:(NSArray *) identity encryptionPreference:(MCEncryptionPreference) encryptionPreference;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized session object, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 All combinations of authentication (supplying an `identity` value or not) and `encryptionPreference` are legal. Using both authentication to establish a peer’s identity and encryption to secure the channel provides the most security, while using neither provides none, but the right combination depends upon the needs of your application. For example, one app might use authentication with unencrypted data if the source of the data must be established, but the data is not sensitive. Another app might use an unauthenticated but encrypted link to avoid eavesdropping among known peers.
 

@@ -16,7 +16,7 @@ A structure that describes the parameters to use for a transaction query.
 struct TransactionQuery
 ```
 
-#### Overview
+## Overview
 
 Use a `TransactionQuery` to find and filter transactions in a person’s accounts.
 

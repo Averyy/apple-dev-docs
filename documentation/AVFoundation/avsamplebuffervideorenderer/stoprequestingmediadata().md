@@ -26,7 +26,7 @@ func stopRequestingMediaData()
 - (void) stopRequestingMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called from outside the block or from within the block.
 

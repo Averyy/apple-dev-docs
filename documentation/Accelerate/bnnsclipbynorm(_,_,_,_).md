@@ -27,7 +27,7 @@ func BNNSClipByNorm(_ dest: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ src: 
 int BNNSClipByNorm(BNNSNDArrayDescriptor *dest, const BNNSNDArrayDescriptor *src, float max_norm, uint32_t axis_flags);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an input tensor to a maximum Euclidean norm. The Euclidean norm is the square root of the sum of squares of the two tensors.
 

@@ -15,11 +15,11 @@ The object for defining conditional properties for a text component, and when th
 object ConditionalText
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalText` object to define an array of conditional text properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalText` overrides the value of the same property if you define it in the parent `Text` component. See [`Text`](./text.md).
 
-##### Example
+### Example
 
 ```json
 {

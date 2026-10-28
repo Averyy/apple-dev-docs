@@ -23,7 +23,7 @@ class UIPress
 @interface UIPress : NSObject
 ```
 
-#### Overview
+## Overview
 
 The press specifically encapsulates the pressing of some physically actuated button. All of the press types represent actual physical buttons on one of a variety of remotes. You access [`UIPress`](./uipress.md) objects through [`UIEvent`](./uievent.md) objects passed into responder objects for event handling. The [`gestureRecognizers`](./uipress/gesturerecognizers.md) property returns the gesture recognizers — instances of a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md) — that are currently handling the given button press.
 

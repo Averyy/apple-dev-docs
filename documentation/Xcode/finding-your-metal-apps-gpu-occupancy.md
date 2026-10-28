@@ -5,7 +5,7 @@
 
 Understand the GPU usage for executing shaders by using occupancy.
 
-#### Overview
+## Overview
 
 A GPU has a maximum number of threads that it can execute at the same time. *Occupancy* is a measurement of how much of this capacity the GPU is using. GPUs create new threads when they have commands with more threads to dispatch and enough internal resources. It’s generally better to have higher occupancy when the app is making efficient use of the GPU.
 
@@ -17,7 +17,7 @@ The sum of these percentages is the total percentage of the GPU’s capacity in 
 
 You can get shader occupancy counters in Instruments and in the Metal debugger’s Performance timeline. For more information, see [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md) and [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md).
 
-##### Determine whether your app has low GPU occupancy
+### Determine whether your app has low GPU occupancy
 
 Your app may have low occupancy when the overall occupancy measurements aren’t approaching 100%. Each shader has a maximum theoretical occupancy, depending on the amount of internal resources it consumes on the device. You can get this information for each shader in the Performance timeline.
 
@@ -31,7 +31,7 @@ When overall occupancy is low, it likely means one of the following is true:
 
 For more information on the Performance timeline, see [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md).
 
-##### Determine the impact on your app
+### Determine the impact on your app
 
 If you’re seeing overall low occupancy, your next step is to determine whether it’s negatively impacting your app. If an examination of the limiter counters also shows low values, the GPU is executing very little work.
 

@@ -25,7 +25,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike calling [`stop()`](./stop%28%29.md), pausing playback doesn’t deallocate hardware resources. It leaves the audio ready to resume playback from where it stops.
 

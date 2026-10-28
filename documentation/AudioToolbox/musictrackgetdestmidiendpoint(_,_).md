@@ -24,7 +24,7 @@ func MusicTrackGetDestMIDIEndpoint(_ inTrack: MusicTrack, _ outEndpoint: UnsafeM
 extern OSStatus MusicTrackGetDestMIDIEndpoint(MusicTrack inTrack, MIDIEndpointRef *outEndpoint);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the music track’s event target is an audio unit node, returns `kAudioToolboxErr_IllegalTrackDestination`.
 

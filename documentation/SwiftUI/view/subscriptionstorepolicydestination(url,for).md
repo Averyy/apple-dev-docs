@@ -21,7 +21,7 @@ nonisolated
 func subscriptionStorePolicyDestination(url: URL, for button: SubscriptionStorePolicyKind) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can also set a view as the destination using [`subscriptionStorePolicyDestination(for:destination:)`](./subscriptionstorepolicydestination%28for,destination%29.md). If you do not set a destination, or pass `nil` for `url`, the system will use the automatic behavior. Check the documentation for the value you provide for `button` to understand the automatic behavior.
 

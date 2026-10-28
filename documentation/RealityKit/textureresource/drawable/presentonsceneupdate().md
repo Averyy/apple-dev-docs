@@ -21,7 +21,7 @@ Presents the updated texture to the renderer atomically with the current scene u
 func presentOnSceneUpdate()
 ```
 
-#### Discussion
+## Discussion
 
 Needs to be called after all commands in the command buffer have been executed (e.g. after `MTLCommandBuffer.waitUntilCompleted()`). When you call this method, the drawable will make the new texture content available to the renderer at the same time as all other entity component changes made during the same scene update.
 

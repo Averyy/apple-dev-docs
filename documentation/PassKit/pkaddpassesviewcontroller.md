@@ -22,7 +22,7 @@ class PKAddPassesViewController
 @interface PKAddPassesViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 To add multiple passes without presenting this view controller multiple times, use the [`addPasses(_:withCompletionHandler:)`](./pkpasslibrary/addpasses%28_,withcompletionhandler%29.md) method of [`PKPassLibrary`](./pkpasslibrary.md).
 

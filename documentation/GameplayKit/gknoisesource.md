@@ -24,7 +24,7 @@ class GKNoiseSource
 @interface GKNoiseSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each noise source class generalizes a specific noise generation algorithm that produces a distinct general style of noise. For example, the [`GKPerlinNoiseSource`](./gkperlinnoisesource.md) class generates fractal coherent noise similar to clouds, terrain, and other natural phenomena, and the [`GKCylindersNoiseSource`](./gkcylindersnoisesource.md) class generates a field of concentric cylinders useful for creating wood-grain textures.
 

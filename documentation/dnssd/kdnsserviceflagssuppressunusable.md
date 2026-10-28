@@ -23,7 +23,7 @@ var kDNSServiceFlagsSuppressUnusable: UInt32 { get }
 kDNSServiceFlagsSuppressUnusable
 ```
 
-#### Discussion
+## Discussion
 
 This flag is meaningful only in DNSServiceQueryRecord which suppresses unusable queries on the wire. If “hostname” is a wide-area unicast DNS hostname (i.e. not a “.local.” name) but this host has no routable IPv6 address, then the call will not try to look up IPv6 addresses for “hostname”, since any addresses it found would be unlikely to be of any use anyway. Similarly, if this host has no routable IPv4 address, the call will not try to look up IPv4 addresses for “hostname”.
 

@@ -19,7 +19,7 @@ This environment variable is for SwiftUI clients of the ASCredentialDataManager 
 var credentialDataManager: CredentialDataManager { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 struct CredentialDataManagerExample: View {

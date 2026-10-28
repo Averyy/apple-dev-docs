@@ -23,7 +23,7 @@ class func supportsDisbursements() -> Bool
 + (BOOL) supportsDisbursements;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this device can process disbursement requests, `false` otherwise.
 

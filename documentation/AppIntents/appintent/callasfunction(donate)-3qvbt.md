@@ -21,11 +21,11 @@ Runs the intent’s action after resolving any parameters, returns the resulting
 func callAsFunction(donate donateOnCompletion: Bool = true) async throws -> Self.PerformResult.Value where Self.PerformResult : ReturnsValue
 ```
 
-#### Return Value
+## Return Value
 
 The value the action returns, if any.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to perform the current app intent’s action. For example, you might call this method if you use your app intent types to implement your app’s underlying features. This method resolves the parameters of the intent, calls its [`perform()`](./perform%28%29.md) method, and returns the resulting value.
 

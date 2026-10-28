@@ -22,7 +22,7 @@ nonisolated
 init(data: [Value], desiredCount: Int? = nil, minimumStride: Value = 0) where Value : BinaryInteger
 ```
 
-#### Return Value
+## Return Value
 
 The inferred bins.
 

@@ -19,7 +19,7 @@ static var watch: SecAccessControlCreateFlags { get }
 kSecAccessControlWatch
 ```
 
-#### Discussion
+## Discussion
 
 The system attempts to locate a nearby, paired Apple Watch running watchOS 6 or later.
 

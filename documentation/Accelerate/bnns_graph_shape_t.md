@@ -25,7 +25,7 @@ struct bnns_graph_shape_t
 typedef struct { ... } bnns_graph_shape_t;
 ```
 
-#### Overview
+## Overview
 
 Use a [`bnns_graph_shape_t`](./bnns_graph_shape_t.md) structure to pass the rank and dimensions of tensors to the [`BNNSGraphContextSetDynamicShapes(_:_:_:_:)`](./bnnsgraphcontextsetdynamicshapes%28_,_,_,_%29.md) function.
 

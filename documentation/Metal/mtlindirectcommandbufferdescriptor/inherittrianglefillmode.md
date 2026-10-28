@@ -24,7 +24,7 @@ var inheritTriangleFillMode: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritTriangleFillMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

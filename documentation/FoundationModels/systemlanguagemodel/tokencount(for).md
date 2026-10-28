@@ -16,37 +16,37 @@ Returns the token count for the specified instructions.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func tokenCount(for instructions: Instructions) async throws -> Int
+nonisolated(nonsending)
+final func tokenCount(for instructions: Instructions) async throws -> Int
 ```
 
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) final func tokenCount(for prompt: some PromptRepresentable) async throws -> Int
+nonisolated(nonsending)
+final func tokenCount(for prompt: some PromptRepresentable) async throws -> Int
 ```
 
 ```swift
-nonisolated
-(nonsending) final func tokenCount(for schema: GenerationSchema) async throws -> Int
+nonisolated(nonsending)
+final func tokenCount(for schema: GenerationSchema) async throws -> Int
 ```
 
 ```swift
-nonisolated
-(nonsending) final func tokenCount(for tools: [any Tool]) async throws -> Int
+nonisolated(nonsending)
+final func tokenCount(for tools: [any Tool]) async throws -> Int
 ```
 
 ```swift
-nonisolated
-(nonsending) final func tokenCount(for transcriptEntries: some Collection<Transcript.Entry>) async throws -> Int
+nonisolated(nonsending)
+final func tokenCount(for transcriptEntries: some Collection<Transcript.Entry>) async throws -> Int
 ```
 
 ## Mentions
 
 - [Managing the context window](../managing-the-context-window.md)
 
-#### Return Value
+## Return Value
 
 The token count for the instructions.
 

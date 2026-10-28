@@ -25,7 +25,7 @@ var endDate: Date? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 The `endDate` defines the ending date on the timeline when the associated metadata is valid.
 

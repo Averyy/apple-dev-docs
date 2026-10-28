@@ -19,11 +19,11 @@ func matchesSearch(_ searchArray: [Any]!) -> Bool
 - (BOOL) matchesSearchArray:(NSArray *) searchArray;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `TRUE` if any of the UUID arrays match.
 
-#### Discussion
+## Discussion
 
 The given array should contain [`NSArray`](../../Foundation/nsarray.md) objects. Each sub-[`NSArray`](../../Foundation/nsarray.md) should contain [`IOBluetoothSDPUUID`](../iobluetoothsdpuuid.md) objects. In turn, each sub-NSArray gets passed to -matchesUUIDArray: If any of those returns `TRUE`, then the search stops and `TRUE` is returned. Essentially the primary NSArray contains the OR operations and each sub-array contains the AND operations.
 

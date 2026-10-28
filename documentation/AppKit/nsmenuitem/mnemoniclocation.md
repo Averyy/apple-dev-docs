@@ -17,7 +17,7 @@ Returns the position of the underlined character in the menu item title used as 
 - (NSUInteger) mnemonicLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The position is the zero-based index of that character in the title string. If the receiver has no mnemonic character, returns `NSNotFound`.
 

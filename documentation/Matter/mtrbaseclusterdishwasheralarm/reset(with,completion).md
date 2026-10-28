@@ -29,7 +29,7 @@ func reset(with params: MTRDishwasherAlarmClusterResetParams) async throws
 - (void) resetWithParams:(MTRDishwasherAlarmClusterResetParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command resets active and latched alarms (if possible).
 

@@ -20,11 +20,11 @@ func AudioObjectSetPropertyData(_ inObjectID: AudioObjectID, _ inAddress: Unsafe
 extern OSStatus AudioObjectSetPropertyData(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 inDataSize, const void *inData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells an AudioObject to change the value of the given property using the provided data.
 

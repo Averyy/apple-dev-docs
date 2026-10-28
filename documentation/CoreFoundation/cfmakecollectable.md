@@ -21,15 +21,15 @@ Makes a newly-allocated Core Foundation object eligible for garbage collection.
 extern CFTypeRefCFMakeCollectable(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 `cf`.
 
-#### Discussion
+## Discussion
 
 For more details, see Garbage Collection Programming Guide.
 
-##### Special Considerations
+### Special Considerations
 
 If `cf` is `NULL`, this will cause a runtime error and your application will crash.
 

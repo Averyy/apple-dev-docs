@@ -15,13 +15,13 @@ Campaign metadata for Apple Maps report rows.
 object BrandsReportingCampaign
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsReportingCampaign` object is the campaign metadata embedded in `brands` campaign report rows. It captures the campaign’s full configuration at report time: identity, budget (`dailyBudget`), bid strategy, billing event, and the `BrandsTargetingProjection` snapshot of active supply placement and location targeting.
 
 The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaigns. The system populates the `brands` dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) based on the `groupBy` dimensions in the report request.
 
-##### Example
+### Example
 
 ```json
 {

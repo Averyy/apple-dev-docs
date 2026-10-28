@@ -12,7 +12,7 @@ Share and manage web-usage data, and observe changes made by a parent or guardia
 - Mac Catalyst 14.0+
 - macOS 11.0+
 
-#### Overview
+## Overview
 
 The Screen Time framework gives you the tools you need to help parents and guardians supervise their children’s web usage. Use this framework to:
 

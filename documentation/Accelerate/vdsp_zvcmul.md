@@ -21,7 +21,7 @@ Multiplies a single-precision complex vector by the conjugate of another single-
 extern void vDSP_zvcmul(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` complex conjugates of `A` by the corresponding complex elements of `B`, writing the result to `C`:
 

@@ -21,7 +21,7 @@ A behavior that determines when a tab bar minimizes.
 struct TabBarMinimizeBehavior
 ```
 
-#### Overview
+## Overview
 
 A minimized tab bar becomes smaller so that the content behind it has more room. Pass a value of this type to the [`tabBarMinimizeBehavior(_:)`](./view/tabbarminimizebehavior%28_%29.md) modifier to specify the behavior.
 

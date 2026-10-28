@@ -23,7 +23,7 @@ var magneticField: CMMagneticField { get }
 @property (nonatomic, readonly) CMMagneticField magneticField;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the total magnetic field observed by the device which is equal to the Earth’s geomagnetic field plus bias introduced from the device itself and its surroundings.
 

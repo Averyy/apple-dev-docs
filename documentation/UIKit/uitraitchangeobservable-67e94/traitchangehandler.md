@@ -19,7 +19,7 @@ A closure the system executes when observed traits change.
 typealias TraitChangeHandler<TraitEnvironment> = (TraitEnvironment, UITraitCollection) -> Void where TraitEnvironment : UITraitEnvironment
 ```
 
-#### Discussion
+## Discussion
 
 Use [`registerForTraitChanges(_:handler:)`](./registerfortraitchanges%28_,handler%29.md) to register a list of traits to observe and a handler to execute.
 

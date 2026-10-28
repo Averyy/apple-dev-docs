@@ -22,7 +22,7 @@ var showsSecondaryOnlyButton: Bool { get set }
 @property (nonatomic) BOOL showsSecondaryOnlyButton;
 ```
 
-#### Discussion
+## Discussion
 
 This value only takes effect when the split view controller’s [`style`](./style-swift.property.md) property is [`UISplitViewController.Style.tripleColumn`](./style-swift.enum/triplecolumn.md).
 

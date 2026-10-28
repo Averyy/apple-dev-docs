@@ -21,15 +21,15 @@ func QLPreviewRequestCopyOptions(_ preview: QLPreviewRequest!) -> Unmanaged<CFDi
 extern CFDictionaryRefQLPreviewRequestCopyOptions(QLPreviewRequestRef preview);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the properties specified for the preview request. See `Preview Properties` for supported options. You should explicitly release this object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 The client sets options in the preview request to give hints to the generator. For macOS 10.5, no options are supported.
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

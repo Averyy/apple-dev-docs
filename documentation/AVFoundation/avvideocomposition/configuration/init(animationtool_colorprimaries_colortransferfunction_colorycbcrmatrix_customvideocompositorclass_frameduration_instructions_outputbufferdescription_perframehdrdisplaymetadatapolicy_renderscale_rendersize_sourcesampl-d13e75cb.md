@@ -27,4 +27,4 @@ init(animationTool: AVVideoCompositionCoreAnimationTool? = nil, colorPrimaries: 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetr-2lwnx)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init%28animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetr-2lwnx)*

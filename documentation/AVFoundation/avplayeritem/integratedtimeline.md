@@ -26,7 +26,7 @@ var integratedTimeline: AVPlayerItemIntegratedTimeline { get }
 @property (readonly) AVPlayerItemIntegratedTimeline * integratedTimeline;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` for player items in an interstitial player.
 

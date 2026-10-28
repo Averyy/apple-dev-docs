@@ -21,7 +21,7 @@ The default attributes to apply to plain files.
 static let defaultAttributes: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 For plain text documents; [`NSDictionary`](../../nsdictionary.md) containing attributes to be applied to plain files. The previous string constant was `@"DefaultAttributes"`.
 

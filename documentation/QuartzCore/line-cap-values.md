@@ -5,7 +5,7 @@
 
 These constants specify the shape of endpoints for an open path when stroked.
 
-#### Overview
+## Overview
 
 Used by [`lineCap`](./cashapelayer/linecap.md). The following figure shows the appearance of the available line cap styles.
 

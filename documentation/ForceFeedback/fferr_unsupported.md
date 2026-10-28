@@ -18,7 +18,7 @@ var FFERR_UNSUPPORTED: HRESULT { get }
 #define FFERR_UNSUPPORTED
 ```
 
-#### Discussion
+## Discussion
 
 The function called is not supported at this time
 

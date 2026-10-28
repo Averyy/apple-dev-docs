@@ -15,13 +15,13 @@ The payload that configures media management.
 object MediaManagementAllowedMedia
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.systemuiserver` as the payload type.
 
 This payload is deprecated as of macOS 11.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

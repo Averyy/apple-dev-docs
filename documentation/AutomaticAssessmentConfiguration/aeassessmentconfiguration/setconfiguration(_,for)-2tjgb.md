@@ -22,7 +22,7 @@ func setConfiguration(_ configuration: AEAssessmentParticipantConfiguration, for
 - (void) setConfiguration:(AEAssessmentParticipantConfiguration *) configuration forApplication:(AEAssessmentApplication *) application;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make an app besides your own available during an assessment. Create a representation of the app that you want to allow as an [`AEAssessmentApplication`](../aeassessmentapplication.md) instance, and the configuration for that app using an [`AEAssessmentParticipantConfiguration`](../aeassessmentparticipantconfiguration.md) instance:
 

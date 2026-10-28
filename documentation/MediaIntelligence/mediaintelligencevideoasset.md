@@ -24,7 +24,7 @@ struct MediaIntelligenceVideoAsset
 
 - [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
 
-#### Overview
+## Overview
 
 Create an instance of this type to identify a video for [`VideoAnalyzer`](./videoanalyzer.md) to process. Each asset has a unique identifier you assign, and a [`MediaIntelligenceVideoAsset.Kind`](./mediaintelligencevideoasset/kind-swift.enum.md) value that describes how the framework accesses the video data.
 

@@ -15,13 +15,13 @@ Returns a setup structure that contains precalculated data for single-precision 
 FFTSetup vDSP_create_fftsetup(vDSP_Length __Log2n, FFTRadix __Radix);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`FFTSetup`](./fftsetup.md) structure for use with FFT functions. Returns `0` on error.
 
-#### Discussion
+## Discussion
 
-Use this function to create a weights array of complex exponential values that the vDSP FFT functions use for forward transforms. Precalculating these values during, for example, your app’s initialization, boosts FFT performance. You can use the same setup structure to perform transforms on vectors that contain up to `2`Log2n elements.
+Use this function to create a weights array of complex exponential values that the vDSP FFT functions use for forward transforms. Precalculating these values during, for example, your app’s initialization, boosts FFT performance. You can use the same setup structure to perform transforms on vectors that contain up to `2`<sup>Log2n</sup> elements.
 
 For 2D transforms, specify `Log2n` as the greater of the number of rows and the number of columns.
 

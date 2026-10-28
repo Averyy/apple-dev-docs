@@ -21,7 +21,7 @@ The automatic role.
 static var automatic: ToolbarRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, tvOS, and watchOS this resolves to the [`navigationStack`](./navigationstack.md) role. In macOS, this resolves to the [`editor`](./editor.md) role.
 

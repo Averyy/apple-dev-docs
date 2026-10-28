@@ -20,11 +20,11 @@ func ODRecordRemoveValue(_ record: ODRecordRef!, _ attribute: String!, _ value: 
 extern bool ODRecordRemoveValue(ODRecordRef record, ODAttributeType attribute, CFTypeRef value, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `inValue` is successfully removed from `inAttribute`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If `inValue` does not exist, `true` is returned and no error is set.
 

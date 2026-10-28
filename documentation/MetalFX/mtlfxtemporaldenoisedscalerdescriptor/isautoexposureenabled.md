@@ -23,7 +23,7 @@ var isAutoExposureEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isAutoExposureEnabled) BOOL autoExposureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to create a scaler that automatically calculates the exposure level for each image it scales.
 

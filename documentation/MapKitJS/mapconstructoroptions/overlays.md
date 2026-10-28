@@ -15,7 +15,7 @@ An array that contains all of the map’s overlays.
 overlays?: Overlay[];
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `[]` (empty array).
 

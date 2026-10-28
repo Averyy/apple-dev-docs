@@ -25,11 +25,11 @@ class func preferredLocalizations(from localizationsArray: [String]) -> [String]
 + (NSArray<NSString *> *) preferredLocalizationsFromArray:(NSArray<NSString *> *) localizationsArray;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the preferred localizations. These strings are ordered in the array according to the user’s language preferences and are taken from the strings in the `localizationsArray` parameter.
 
-#### Discussion
+## Discussion
 
 This method does not return all localizations in preference order but only those from which `NSBundle` would get localized content, typically either a single non-region-specific localization or a region-specific localization followed by a corresponding non-region-specific localization as a fallback.
 

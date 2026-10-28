@@ -19,7 +19,7 @@ var leadingAccessoryView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * leadingAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to integrate a custom view at the leading edge of your tab bar interface. Use this view to display a custom logo or give access to custom accessories in your app.
 

@@ -14,11 +14,11 @@ CMError CWConcatColorWorld (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CWConcatColorWorld` function sets up a session for color processing that includes a set of profiles. The array of profiles is in processing order—source through destination. Your application passes the function a pointer to a data structure of type `CMConcatProfileSet` to identify the profile array. 
 
@@ -39,7 +39,7 @@ A after executing the `CWConcatColorWorld` function, you should call the functio
 
 Instead of passing in an array of profiles, you can specify a device link profile. For information on how to create a device link profile, see the `CWNewLinkProfile` function, which is described next. 
 
-##### Version-Notes
+### Version-Notes
 
 The parameter description for `profileSet` includes changes in how this function is used starting with ColorSync version 2.5.
 

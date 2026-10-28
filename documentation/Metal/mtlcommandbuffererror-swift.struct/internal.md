@@ -20,7 +20,7 @@ An error code that indicates the Metal framework has an internal problem.
 static var `internal`: MTLCommandBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The local description contains the underlying error code. You can report the scenario that generated this error code with [Feedback Assistant](https://feedbackassistant.apple.com).
 

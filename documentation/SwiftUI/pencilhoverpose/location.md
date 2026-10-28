@@ -19,7 +19,7 @@ The location of an Apple Pencil hovering in the area above the view’s bounds, 
 let location: CGPoint
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`anchor`](./anchor.md) property if you require a normalized anchor point for use with a presentation modifier instead.
 

@@ -23,7 +23,7 @@ case configurationStale
 NEFilterManagerErrorConfigurationStale
 ```
 
-#### Discussion
+## Discussion
 
 This error also occurs if the app tries to save the filter configuration before loading it from the Network Extension preferences the first time after the app launches.
 

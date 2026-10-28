@@ -22,7 +22,7 @@ func widgetSearch(_ controller: NCWidgetSearchViewController, searchForTerm sear
 - (void) widgetSearch:(NCWidgetSearchViewController *) controller searchForTerm:(NSString *) searchTerm maxResults:(NSUInteger) max;
 ```
 
-#### Discussion
+## Discussion
 
 The search view controller calls this method as soon as a user begins to type. If there is a maximum number of results the search view controller can display, it specifies this number in `max`. The delegate can use `max` to decide how many search results to return.
 

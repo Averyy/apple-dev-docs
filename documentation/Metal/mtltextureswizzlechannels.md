@@ -24,7 +24,7 @@ struct MTLTextureSwizzleChannels
 typedef struct { ... } MTLTextureSwizzleChannels;
 ```
 
-#### Overview
+## Overview
 
 Use this structure to specify a custom swizzle pattern when creating a new texture or texture view.
 

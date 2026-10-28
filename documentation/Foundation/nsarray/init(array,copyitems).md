@@ -25,11 +25,11 @@ convenience init(array: [Any], copyItems flag: Bool)
 - (instancetype) initWithArray:(NSArray<id> *) array copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized to contain the objects—or if `flag` is [`true`](../../Swift/true.md), copies of the objects—in `array`. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 After an immutable array has been initialized in this way, it cannot be modified.
 

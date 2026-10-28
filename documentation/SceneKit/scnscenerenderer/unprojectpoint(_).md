@@ -26,11 +26,11 @@ func unprojectPoint(_ point: SCNVector3) -> SCNVector3
 - (SCNVector3) unprojectPoint:(SCNVector3) point;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding point in the world coordinate system of the renderer’s scene.
 
-#### Discussion
+## Discussion
 
 The z-coordinate of the `point` parameter describes the depth at which to unproject the point relative to the near and far clipping planes of the renderer’s viewing frustum (defined by its [`pointOfView`](./pointofview.md) node). Unprojecting a point whose z-coordinate is `0.0` returns a point on the near clipping plane; unprojecting a point whose z-coordinate is `1.0` returns a point on the far clipping plane.
 

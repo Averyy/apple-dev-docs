@@ -25,11 +25,11 @@ func containsTraits(in trait: UITraitCollection?) -> Bool
 - (BOOL) containsTraitsInCollection:(UITraitCollection *) trait;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns [`true`](../../Swift/true.md) if the receiver contains all of the trait values in the trait collection passed in the `trait` parameter, and returns [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method to compare two standalone trait collections, or to compare the iOS interface environment’s trait collection to a standalone trait collection.
 

@@ -27,7 +27,7 @@ optional func peripheralDidUpdateRSSI(_ peripheral: CBPeripheral, error: (any Er
 - (void) peripheralDidUpdateRSSI:(CBPeripheral *) peripheral error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`readRSSI()`](../cbperipheral/readrssi%28%29.md) method, while the peripheral is connected to the central manager. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

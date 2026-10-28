@@ -25,7 +25,7 @@ var sampleCount: Int { get }
 @property (readonly) NSUInteger sampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 If [`textureType`](./texturetype.md) is not [`MTLTextureType.type2DMultisample`](../mtltexturetype/type2dmultisample.md), this value is `1`.
 

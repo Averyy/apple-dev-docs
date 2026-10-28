@@ -24,7 +24,7 @@ init?(startPoint: simd_double2, segments: [PHASEEnvelopeSegment])
 - (instancetype) initWithStartPoint:(simd_double2) startPoint segments:(NSArray<PHASEEnvelopeSegment *> *) segments;
 ```
 
-#### Discussion
+## Discussion
 
 For an empty `segments` argument, the resulting envelope contains one segment where the end point matches the start point. If the `segments` argument contains more than one segment, the resulting [`segments`](./segments.md) array sorts in ascending order on the *x* value.
 

@@ -15,7 +15,7 @@ The response body for endpoints that modify a Game Center player in an app’s G
 object GameCenterDetailPlayerResponse
 ```
 
-#### Overview
+## Overview
 
 The [`Modify a Game Center Detail Player`](./patch-v1-gamecenterdetailplayers-_id_.md) endpoint returns this response.
 

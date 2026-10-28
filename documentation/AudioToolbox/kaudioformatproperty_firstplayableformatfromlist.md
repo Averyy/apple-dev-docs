@@ -24,7 +24,7 @@ var kAudioFormatProperty_FirstPlayableFormatFromList: AudioFormatPropertyID { ge
 kAudioFormatProperty_FirstPlayableFormatFromList
 ```
 
-#### Discussion
+## Discussion
 
 The index of the first [`AudioFormatListItem`](../CoreAudioTypes/audioformatlistitem.md) structure that represents an audio format that is playable on the system. To use this property, pass in, to the [`AudioFormatGetProperty(_:_:_:_:_:)`](./audioformatgetproperty%28_,_,_,_,_%29.md) function, the list of [`AudioFormatListItem`](../CoreAudioTypes/audioformatlistitem.md) structures that you obtain using the [`kAudioFormatProperty_OutputFormatList`](./kaudioformatproperty_outputformatlist.md) property.
 

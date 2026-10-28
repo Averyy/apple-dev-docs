@@ -20,7 +20,7 @@ A mode that displays the entity’s calculated transparency as its surface color
 case finalAlpha
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `finalAlpha` to an entity to tell RealityKit to draw that entity’s alpha value as its surface color. RealityKit draws the alpha value as a grayscale value from black (`0.0`) to white (`1.0`), meaning the more transparent a part of the entity is, the darker RealityKit draws it.
 

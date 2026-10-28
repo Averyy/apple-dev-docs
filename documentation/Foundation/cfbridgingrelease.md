@@ -21,7 +21,7 @@ Moves a non-Objective-C pointer to Objective-C and also transfers ownership to A
 static idCFBridgingRelease(CFTypeRef X);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to cast a Core Foundation-style object as an Objective-C object and transfer ownership of the object to ARC such that you don’t have to release the object, as illustrated in this example:
 

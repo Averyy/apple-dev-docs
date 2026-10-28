@@ -5,7 +5,7 @@
 
 Make it easy for people to start activities from your app’s UI, from the system share sheet, or using AirPlay over AirDrop.
 
-#### Overview
+## Overview
 
 After defining one or more SharePlay activities for your app, make them easy for people to discover in your UI. Include buttons, menu items, and other elements to start activities, present activities in system interfaces like the share sheet, and update your activities to take advantage of other system behaviors.
 
@@ -13,7 +13,7 @@ Starting an activity requires an active FaceTime call or Messages conversation. 
 
 For design guidance for adding SharePlay support to your app’s UI, see [Human Interface Guidelines > SharePlay](https://developer.apple.com/design/human-interface-guidelines/shareplay).
 
-#### Add a SharePlay button to your UI
+## Add a SharePlay button to your UI
 
 The most direct way to start activities is to provide controls in your UI. Because you control the placement of buttons and other controls in your UI, you can put them where people are most likely to find them. Provide a label or additional context to let someone know that your UI element starts an activity. For example, update your button’s label to include the `shareplay` symbol from the SF Symbols library.
 
@@ -53,7 +53,7 @@ struct BoardGameApp: App {
 }
 ```
 
-#### Share activities in SwiftUI using a share link
+## Share activities in SwiftUI using a share link
 
 To surface SharePlay activities using the system share sheet in SwiftUI, configure a [`ShareLink`](../SwiftUI/sharelink.md) view with items that have an associated activity. A [`ShareLink`](../SwiftUI/sharelink.md) view adds a standard share button to your UI, and you can customize the appearance of that button using the [`buttonStyle(_:)`](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) modifier. Tapping or clicking the button displays the system share sheet for the provided items. A person can then use the sheet to copy the items to the pasteboard or send them to a different process.
 
@@ -75,7 +75,7 @@ let game = BoardGame.chess
 ShareLink(item: game, preview: SharePreview("Play Together"))
 ```
 
-#### Add activities to the system share sheet in AppKit or UIKit
+## Add activities to the system share sheet in AppKit or UIKit
 
 When displaying a share sheet using AppKit or UIKit, specify any SharePlay activities using [`NSItemProvider`](../Foundation/nsitemprovider.md) objects. When you configure the AppKit or UIKit share sheets, you specify one or more [`NSItemProvider`](../Foundation/nsitemprovider.md) objects with the data you want to share. If you have an activity you want to share for that item, create an instance of the appropriate [`GroupActivity`](./groupactivity.md) type and pass it to the item provider’s [`registerGroupActivity(_:)`](../Foundation/nsitemprovider/registergroupactivity%28_%29.md) method. When an item provider has a registered activity, the share sheet displays a SharePlay button to start the associated activity.
 
@@ -97,7 +97,7 @@ present(shareSheet, animated: true)
 
 In AppKit, display the share sheet using an [`NSSharingServicePicker`](../AppKit/nssharingservicepicker.md) object. When creating the picker object, specify your [`NSItemProvider`](../Foundation/nsitemprovider.md) objects as the items you want to share.
 
-#### Share activities using SharePlay over AirDrop
+## Share activities using SharePlay over AirDrop
 
 SharePlay over AirDrop lets one person initiate an activity on their iPhone and share that activity with people in close proximity. The initiator opens an app on their iPhone and navigates to a page with the activity they want to start. When their iPhone comes in close proximity to other people’s iPhone devices, the initiator’s phone prompts them to start the activity. After they start the activity, the system prompts the other people to join and creates a Messages conversation for the group. Anyone in the group can then invite others to join the conversation and activity, including people who aren’t nearby.
 
@@ -105,7 +105,7 @@ In a SwiftUI app, the system enables SharePlay over AirDrop when the UI contains
 
 To support SharePlay over AirDrop in a UIKit app, assign activities to objects in the responder chain of your app’s UI. Typically, you add activities to your app’s view controllers, but you can add activities to any responder. When devices are nearby, the system searches the responder chain for a responder that contains an activity in its [`activityItemsConfiguration`](../UIKit/uiactivityitemsconfigurationproviding/activityitemsconfiguration.md) property. If an activity is available, the system displays UI to start that activity on the initiator’s device. The [`activityItemsConfiguration`](../UIKit/uiactivityitemsconfigurationproviding/activityitemsconfiguration.md) property stores one or more [`NSItemProvider`](../Foundation/nsitemprovider.md) objects, which you configure with activities by calling the [`registerGroupActivity(_:)`](../Foundation/nsitemprovider/registergroupactivity%28_%29.md) method.
 
-#### Display activities in the Share menu in visionOS
+## Display activities in the Share menu in visionOS
 
 In a visionOS app, the system displays a Share Window menu in the window bar to indicate when sharing is active. The system populates this control with activities the current scene supports. Immersive spaces don’t have a system UI by default to start an activity. You can add a window to your immersive space or create custom UI to start an activity. For an example, see [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md).
 

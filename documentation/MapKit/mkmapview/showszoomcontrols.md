@@ -20,7 +20,7 @@ var showsZoomControls: Bool { get set }
 @property (nonatomic) BOOL showsZoomControls;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, use this property to show or hide the controls that let users change the zoom level of the map.
 

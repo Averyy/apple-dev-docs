@@ -23,7 +23,7 @@ var minSimulatedAperture: Float { get }
 @property (nonatomic, readonly) float minSimulatedAperture;
 ```
 
-#### Discussion
+## Discussion
 
 On devices that do not support changing the simulated aperture value, this returns a value of `0`.
 

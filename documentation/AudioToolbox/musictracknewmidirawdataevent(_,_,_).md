@@ -24,7 +24,7 @@ func MusicTrackNewMIDIRawDataEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTi
 extern OSStatus MusicTrackNewMIDIRawDataEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const MIDIRawData *inRawData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

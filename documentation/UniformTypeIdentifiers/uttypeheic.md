@@ -21,7 +21,7 @@ A type that represents High Efficiency Image Coding images.
 extern UTType * const UTTypeHEIC;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.heic`.
 

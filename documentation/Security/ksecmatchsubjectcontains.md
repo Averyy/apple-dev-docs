@@ -25,7 +25,7 @@ let kSecMatchSubjectContains: CFString
 extern CFStringRef const kSecMatchSubjectContains;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md). If provided, returned certificates or identities are limited to those whose subject contains this string.
 

@@ -21,7 +21,7 @@ A collection of the geometric spacing preferences of a view.
 struct ViewSpacing
 ```
 
-#### Overview
+## Overview
 
 This type represents how much space a view prefers to have between it and the next view in a layout. The type stores independent values for each of the top, bottom, leading, and trailing edges, and can also record different values for different kinds of adjacent views. For example, it might contain one value for the spacing to the next text view along the top and bottom edges, other values for the spacing to text views on other edges, and yet other values for other kinds of views. Spacing preferences can also vary by platform.
 

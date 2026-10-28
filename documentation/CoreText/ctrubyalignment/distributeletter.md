@@ -25,7 +25,7 @@ case distributeLetter
 kCTRubyAlignmentDistributeLetter
 ```
 
-#### Discussion
+## Discussion
 
 If the width of the ruby text is less than the width of the base text, Core Text evenly distributes the ruby text over the width of the base text. The first character of the ruby text aligns with the first character of the base text, and the last character of the ruby text aligns with the last character of the base text.
 

@@ -19,7 +19,7 @@ var displayName: String! { get set }
 @property (copy, null_resettable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 If the document has been saved, the display name is the last component of the directory location of the saved file (for example, “`MyDocument`” if the path is “`/tmp/MyDocument.rtf`”). If the document is new, `NSDocument` makes the display name “Untitled n,” where n is a number in a sequence of new and unsaved documents. The displayable name also takes into account whether the document’s filename extension should be hidden. Subclasses of `NSWindowController` can override [`windowTitle(forDocumentDisplayName:)`](../nswindowcontroller/windowtitle%28fordocumentdisplayname%29.md) to modify the display name as it appears in window titles.
 

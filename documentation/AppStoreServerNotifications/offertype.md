@@ -26,7 +26,7 @@ int32 offerType
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 All offer types, except offer type `1`, have an [`offerIdentifier`](./offeridentifier.md).
 

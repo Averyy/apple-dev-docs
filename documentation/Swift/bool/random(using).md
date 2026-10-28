@@ -21,11 +21,11 @@ Returns a random Boolean value, using the given generator as a source for random
 static func random<T>(using generator: inout T) -> Bool where T : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 Either `true` or `false`, randomly chosen with equal probability.
 
-#### Discussion
+## Discussion
 
 This method returns `true` and `false` with equal probability. Use this method to generate a random Boolean value when you are using a custom random number generator.
 

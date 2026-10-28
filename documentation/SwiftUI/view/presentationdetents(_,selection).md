@@ -22,7 +22,7 @@ nonisolated
 func presentationDetents(_ detents: Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, sheets support the [`large`](../presentationdetent/large.md) detent.
 

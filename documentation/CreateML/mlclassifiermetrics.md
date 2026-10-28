@@ -26,7 +26,7 @@ struct MLClassifierMetrics
 - [Creating an Image Classifier Model](./creating-an-image-classifier-model.md)
 - [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 Use [`MLClassifierMetrics`](./mlclassifiermetrics.md) to evaluate your model’s ability to distinguish between different categories when it’s classifying data.
 

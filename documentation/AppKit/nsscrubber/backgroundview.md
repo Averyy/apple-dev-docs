@@ -19,7 +19,7 @@ var backgroundView: NSView? { get set }
 @property (strong, nullable) NSView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 The scrubber manages the layout of the background view to match the size of the content area. If this property is non-`nil`, the value of the [`backgroundColor`](../nspathcontrol/backgroundcolor.md) property is ignored.
 

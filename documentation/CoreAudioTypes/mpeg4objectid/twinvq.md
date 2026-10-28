@@ -25,7 +25,7 @@ case twinVQ
 kMPEG4Object_TwinVQ
 ```
 
-#### Discussion
+## Discussion
 
 This audio codec optimizes audio coding at ultra-low bit rates of around 8 kbit/s.
 

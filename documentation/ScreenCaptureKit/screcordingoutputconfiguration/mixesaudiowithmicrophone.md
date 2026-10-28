@@ -22,7 +22,7 @@ var mixesAudioWithMicrophone: Bool { get set }
 @property (nonatomic, assign) BOOL mixesAudioWithMicrophone;
 ```
 
-#### Discussion
+## Discussion
 
 If the stream being recorded captures both system audio and microphone audio, setting mixesAudioWithMicrophone to NO will keep two audio tracks for each audio stream in the recording output. Default value is YES, which will mix system and microphone audio, result one audio track in recording output.
 

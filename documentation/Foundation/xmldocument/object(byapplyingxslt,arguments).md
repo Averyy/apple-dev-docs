@@ -20,11 +20,11 @@ func object(byApplyingXSLT xslt: Data, arguments: [String : String]?) throws -> 
 - (id) objectByApplyingXSLT:(NSData *) xslt arguments:(NSDictionary<NSString *,NSString *> *) arguments error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Depending on intended output, the method returns an `NSXMLDocument` object *or* an [`NSData`](../nsdata.md) data containing transformed XML or HTML markup. If the message is supposed to create plain text or RTF, then an `NSData` object is returned, otherwise an XML document object. The method returns  `nil` if XSLT processing did not succeed.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

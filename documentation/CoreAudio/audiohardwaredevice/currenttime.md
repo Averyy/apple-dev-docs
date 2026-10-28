@@ -16,7 +16,7 @@ An AudioTimeStamp containing the current time from the device.
 var currentTime: AudioTimeStamp { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Note that the device has to be running.
 

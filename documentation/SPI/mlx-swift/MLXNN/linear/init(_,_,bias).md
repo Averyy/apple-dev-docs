@@ -17,7 +17,7 @@ Applies an affine transformation to the input.
 init(_ inputDimensions: Int, _ outputDimensions: Int, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Please see discussion in [`Module`](../module.md).
 

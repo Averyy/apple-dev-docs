@@ -20,7 +20,7 @@ Notifies the delegate object that the vehicle sent passthrough data for you to h
 func remoteControlSession(_ session: CarKeyRemoteControlSession, didReceivePassthroughData: Data, fromVehicle vehicleID: String)
 ```
 
-#### Discussion
+## Discussion
 
 If the vehicle sends data, the system delivers it to your app using this method. You are responsible for the data your vehicles produce, and for decoding that data in your implementation of this method. The session doesn’t save or modify the data in any way.
 

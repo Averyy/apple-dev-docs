@@ -26,7 +26,7 @@ UIWritingToolsCoordinatorStateInactive
 
 - [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Discussion
+## Discussion
 
 The coordinator starts in the `inactive` state, and transitions immediately to the [`UIWritingToolsCoordinator.State.noninteractive`](./noninteractive.md) or [`UIWritingToolsCoordinator.State.interactiveResting`](./interactiveresting.md) state when someone chooses an option from the Writing Tools UI. The coordinator returns to the `inactive` state when the person accepts the changes or dismisses the Writing Tools UI.
 

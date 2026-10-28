@@ -13,7 +13,7 @@
 #define kIOCDMediaTypeR
 ```
 
-#### Discussion
+## Discussion
 
 The kIOCDMediaTypeKey constant for CD Recordable (CD-R) media.
 

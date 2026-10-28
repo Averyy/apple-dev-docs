@@ -16,7 +16,7 @@ A type that defines the content of an immersive space displaying a foveated stre
 @preconcurrency struct FoveatedStreamingSpaceContent
 ```
 
-#### Overview
+## Overview
 
 Don’t use `FoveatedStreamingSpaceContent` directly. The Foveated Streaming framework uses it when you call [`init(foveatedStreaming:content:)`](../SwiftUI/immersivespace/init%28foveatedstreaming,content%29.md) to display spatial content from a foveated streaming session alongside [RealityKit](../RealityKit/RealityKit.md) content:
 

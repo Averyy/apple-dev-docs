@@ -21,11 +21,11 @@ Returns an index that is the specified distance from the given index, unless tha
 func index(_ i: Self.Index, offsetBy distance: Int, limitedBy limit: Self.Index) -> Self.Index?
 ```
 
-#### Return Value
+## Return Value
 
 An index offset by `distance` from the index `i`, unless that index would be beyond `limit` in the direction of movement. In that case, the method returns `nil`.
 
-#### Discussion
+## Discussion
 
 The following example obtains an index advanced four positions from a string’s starting index and then prints the character at that position. The operation doesn’t require going beyond the limiting `s.endIndex` value, so it succeeds.
 

@@ -24,7 +24,7 @@ func removeAnnotations(_ annotations: [any MKAnnotation])
 - (void) removeAnnotations:(NSArray<id<MKAnnotation>> *) annotations;
 ```
 
-#### Discussion
+## Discussion
 
 If any annotation object in the array has an associated annotation view, and if that view has a reuse identifier, this method removes the annotation view and queues it internally for later reuse. You can retrieve queued annotation views (and associate them with new annotations) using the [`dequeueReusableAnnotationView(withIdentifier:)`](./dequeuereusableannotationview%28withidentifier%29.md) method.
 

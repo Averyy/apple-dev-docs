@@ -24,7 +24,7 @@ case equalPowerCrossfade
 kAudioUnitParameterUnit_EqualPowerCrossfade
 ```
 
-#### Discussion
+## Discussion
 
 Recommended range is from 0 through 100, representing a crossfade mix of two sources according to `sqrt (x)` and `sqrt (1.0 - x)`.
 

@@ -20,7 +20,7 @@ var center: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 center;
 ```
 
-#### Discussion
+## Discussion
 
 When ARKit first detects a plane, the resulting [`ARPlaneAnchor`](../arplaneanchor.md) object has a [`center`](./center.md) value of `(0,0,0)`, indicating that the translation portion of the anchor’s [`transform`](../aranchor/transform.md) value locates the plane’s center point.
 

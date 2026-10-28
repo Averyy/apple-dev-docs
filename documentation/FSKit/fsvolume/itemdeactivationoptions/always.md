@@ -19,7 +19,7 @@ static var always: FSVolume.ItemDeactivationOptions { get }
 FSItemDeactivationAlways
 ```
 
-#### Discussion
+## Discussion
 
 Use this option if the file system needs `deactivateItem` calls in circumstances beyond those covered by [`forRemovedItems`](./forremoveditems.md) and [`forPreallocatedItems`](./forpreallocateditems.md).
 

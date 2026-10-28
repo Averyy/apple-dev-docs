@@ -5,7 +5,7 @@
 
 This function escapes to the driver. This method is called in response to an application invoking the FFEffectEscape or FFDeviceEscape methods.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *Escape)(
@@ -14,13 +14,13 @@ HRESULT ( *Escape)(
    FFEFFESCAPE *pEscape );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **downloadID**: Specifies the effect at which the command is directed, or zero if the command is directed at the device itself and not any particular effect.
 - **pEscape**: Pointer to a FFEFFESCAPE structure that describes the command to be sent. On success, the cbOutBuffer member contains the number of output buffer bytes actually used.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

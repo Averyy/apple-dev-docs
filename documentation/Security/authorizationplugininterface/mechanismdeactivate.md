@@ -21,11 +21,11 @@ Deactivates an authorization mechanism.
 int (*)(void *) MechanismDeactivate;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Return [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) if the function completes successfully and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error) if any error occurs.
 
-#### Discussion
+## Discussion
 
 The authorization engine calls the [`MechanismDeactivate`](./mechanismdeactivate.md) function of each active mechanism when you call the [`RequestInterrupt`](../authorizationcallbacks/requestinterrupt.md) function. To deactivate your mechanism, you must stop any processing that is currently underway; for example, you should terminate any threads or UI processes that you initiated.
 

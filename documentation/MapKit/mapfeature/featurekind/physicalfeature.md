@@ -21,7 +21,7 @@ A physical map feature.
 static var physicalFeature: MapFeature.FeatureKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 A physical feature on Earth, such as a mountain range, river, or ocean basin.
 

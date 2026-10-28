@@ -19,11 +19,11 @@ func row(forDisplayValue displayValue: Any) -> Int
 - (NSInteger) rowForDisplayValue:(id) displayValue;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the row containing `displayValue`, or `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 This method searches each row via pointer equality for the given display value, which may be present as an alternative in a popup menu for that row.
 

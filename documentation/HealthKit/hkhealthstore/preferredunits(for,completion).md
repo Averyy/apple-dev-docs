@@ -28,7 +28,7 @@ func preferredUnits(for quantityTypes: Set<HKQuantityType>) async throws -> [HKQ
 - (void) preferredUnitsForQuantityTypes:(NSSet<HKQuantityType *> *) quantityTypes completion:(void (^)(NSDictionary<HKQuantityType *,HKUnit *> *preferredUnits, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method runs asynchronously. As soon as it finishes looking up the preferred units, it calls the completion block on an anonymous background queue.
 

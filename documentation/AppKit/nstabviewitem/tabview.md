@@ -19,7 +19,7 @@ var tabView: NSTabView? { get }
 @property (readonly, nullable) NSTabView * tabView;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this is the tab view itself, not the view displayed when a user clicks the tab.
 

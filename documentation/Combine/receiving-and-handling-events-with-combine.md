@@ -5,13 +5,13 @@
 
 Customize and receive events from asynchronous sources.
 
-#### Overview
+## Overview
 
 The Combine framework provides a declarative approach for how your app processes events. Rather than potentially implementing multiple delegate callbacks or completion handler closures, you can create a single processing chain for a given event source. Each part of the chain is a Combine operator that performs a distinct action on the elements received from the previous step.
 
 Consider an app that needs to filter a table or collection view based on the contents of a text field. In AppKit, each keystroke in the text field produces a [`Notification`](../Foundation/notification.md) that you can subscribe to with Combine. After receiving the notification, you can use operators to change the content and timing of event delivery, and use the final result to update your app’s user interface.
 
-##### Connect a Publisher to a Subscriber
+### Connect a Publisher to a Subscriber
 
 To receive the text field’s notifications with Combine, access the default instance of [`NotificationCenter`](../Foundation/notificationcenter.md) and call its [`publisher(for:object:)`](../Foundation/notificationcenter/publisher%28for,object%29.md) method. This call takes the notification name and source object that you want notifications from, and returns a publisher that produces notification elements.
 
@@ -38,7 +38,7 @@ let sub = NotificationCenter.default
 
 Both the `sink(receiveCompletion:receiveValue:)` and [`assign(to:on:)`](./publisher/assign%28to,on%29.md) subscribers request an unlimited number of elements from their publishers. To control the rate at which you receive elements, create your own subscriber by implementing the [`Subscriber`](./subscriber.md) protocol.
 
-##### Change the Output Type with Operators
+### Change the Output Type with Operators
 
 The sink subscriber in the previous section performs all its work in the `receiveValue` closure. This could be burdensome if it needs to perform a lot of custom work with received elements or maintain state between invocations. The advantage of Combine comes from combining operators to customize event delivery.
 
@@ -63,7 +63,7 @@ let sub = NotificationCenter.default
     .assign(to: \MyViewModel.filterString, on: myViewModel)
 ```
 
-##### Customize Publishers with Operators
+### Customize Publishers with Operators
 
 You can extend the [`Publisher`](./publisher.md) instance with an operator that performs actions that you’d otherwise need to code manually. Here are three ways you could use operators to improve this event-processing chain:
 
@@ -83,7 +83,7 @@ let sub = NotificationCenter.default
     .assign(to:\MyViewModel.filterString, on: myViewModel)
 ```
 
-##### Cancel Publishing when Desired
+### Cancel Publishing when Desired
 
 A publisher continues to emit elements until it completes normally or fails. If you no longer want to subscribe to the publisher, you can cancel the subscription. The subscriber types created by `sink(receiveCompletion:receiveValue:)` and [`assign(to:on:)`](./publisher/assign%28to,on%29.md) both implement the [`Cancellable`](./cancellable.md) protocol, which provides a [`cancel()`](./cancellable/cancel%28%29.md) method:
 

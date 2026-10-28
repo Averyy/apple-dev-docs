@@ -23,11 +23,11 @@ static func encodeAtomicRepresentation(_ value: consuming Wrapped?) -> Optional<
 
 Available when `Wrapped` conforms to `AtomicOptionalRepresentable`.
 
-#### Return Value
+## Return Value
 
 The newly encoded `AtomicRepresentation` storage.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicRepresentation`.
 

@@ -15,7 +15,7 @@ A Boolean value that determines whether the map shows a callout.
 calloutEnabled?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

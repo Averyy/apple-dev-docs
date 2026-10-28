@@ -21,7 +21,7 @@ On which days of the year the event may occur.
 var daysOfTheYear: [Int]
 ```
 
-#### Discussion
+## Discussion
 
 - 1 signifies the first day of the year.
 - Negative values point to a day counted backwards from the last day of the year This field is unused when `frequency` is any of `.daily`, `.weekly`, or `.monthly`.

@@ -17,7 +17,7 @@ Tells the delegate that a peripheral has a firmware update available.
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, firmwareUpdateInstructionsFor peripheral: CBPeripheral) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A localized string that contains firmware update instructions.
 

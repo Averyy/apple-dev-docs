@@ -21,7 +21,7 @@ Displays a legend with distance information for the associated map.
 @preconcurrency struct MapScaleView
 ```
 
-#### Overview
+## Overview
 
 You can use this with [`Map`](./map.md) as a standalone view, for example:
 

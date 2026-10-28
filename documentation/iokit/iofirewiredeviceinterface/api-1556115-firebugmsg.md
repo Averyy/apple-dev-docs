@@ -14,7 +14,7 @@
 IOReturn (*FireBugMsg)(IOFireWireLibDeviceRef self, const char *msg);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

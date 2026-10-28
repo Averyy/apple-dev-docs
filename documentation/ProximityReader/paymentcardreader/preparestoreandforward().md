@@ -17,11 +17,11 @@ Configures the pipeline for reading payment or loyalty cards in Store and Forwar
 func prepareStoreAndForward() async throws -> StoreAndForwardPaymentCardReaderSession
 ```
 
-#### Return Value
+## Return Value
 
 [`StoreAndForwardPaymentCardReaderSession`](../storeandforwardpaymentcardreadersession.md) when successful.
 
-#### Discussion
+## Discussion
 
 Call this function to configure Tap to Pay on iPhone on someone’s device. This method verifies that the device is able to read contactless cards and is properly configured to process reads in Store and Forward mode.
 

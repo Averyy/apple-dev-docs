@@ -9,11 +9,11 @@ Get details for a specific instance of an analytics report.
 **Availability**:
 - App Store Connect API 3.4+
 
-#### Discussion
+## Discussion
 
 > **Note**:  If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

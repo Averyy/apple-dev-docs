@@ -26,7 +26,7 @@ static let enableChromaticNoiseTracking: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputEnableChromaticNoiseTrackingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value must be an [`NSNumber`](../../Foundation/nsnumber.md) object that specifies a `BOOL` value (`true` or `false`). The default is `true`. This option has no effect if the image used for initialization is not RAW.
 

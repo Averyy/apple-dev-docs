@@ -5,7 +5,7 @@
 
 Learn about the data that postbacks may contain in each conversion window.
 
-#### Overview
+## Overview
 
 SKAdNetwork supports three conversion windows that may result in up to three postbacks for a winning ad attribution. The conversion window begins when the user first launches the app. The first conversion window spans days 0 to 2; the second window spans days 3 to 7; and the third window spans days 8 to 35. Apps can update conversion values during all three time-windows.
 
@@ -20,7 +20,7 @@ You may receive a single postback in the following cases:
 - Nonwinning ad attributions receive only the first postback.
 - For ads signed using SKAdNetwork 3 or earlier, you receive only one winning postback.
 
-##### Lock conversion values to receive postbacks sooner
+### Lock conversion values to receive postbacks sooner
 
 By default, the system waits until the end of a conversion window to get the final conversion value. Apps can continue to update the conversion value until the end of the conversion window. When the conversion window ends, the system prepares the postback and sends it after a random delay, as the following diagram shows:
 
@@ -41,7 +41,7 @@ After receiving a locked conversion value, the system immediately prepares the p
 
 As a result, both version 3 and 4 have a total delay of 24–48 hours to receive the first postback after the app finalizes the conversion value.
 
-##### Receive the highest level of data that ensures crowd anonymity
+### Receive the highest level of data that ensures crowd anonymity
 
 To maintain users’ privacy and ensure crowd anonymity, the device may limit the data that SKAdNetwork sends in postbacks. Apple determines a postback data tier that it assigns to each app download. The following diagram depicts the relationship between the tiers and relative crowd sizes. It’s for illustrative purposes only.
 
@@ -59,7 +59,7 @@ The postback data tier affects the following fields in the postback, which may b
 
 The remaining postback data fields aren’t dependent on the postback date tier and appear in all postbacks, based on the SKAdNetwork version of the postback.``
 
-##### Receive the first postback
+### Receive the first postback
 
 The first conversion window ends two days after the user first launches the app. The system prepares the postback after the conversion window ends, unless you use a lock. If you use a lock, the system prepares the first postback when the app calls [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md) with the lock in an enabled state. The system then sends the postback after a random 24–48-hour delay.
 
@@ -84,7 +84,7 @@ For ads in Tier 1, the first postback contains:
 
 For ads in Tier 0, the first postback contains the `source-identifier`, the hierarchical source identifier, with two digits.
 
-##### Receive the second and third postbacks
+### Receive the second and third postbacks
 
 The second conversion window ends seven days after the user first launches the app, and the third conversion window ends after 35 days. The system prepares the second and third postbacks after their conversion windows end, and sends them after a random 24–144-hour delay.
 

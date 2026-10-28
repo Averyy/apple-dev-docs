@@ -25,7 +25,7 @@ func applyForce(_ direction: SCNVector3, at position: SCNVector3, asImpulse impu
 - (void) applyForce:(SCNVector3) direction atPosition:(SCNVector3) position impulse:(BOOL) impulse;
 ```
 
-#### Discussion
+## Discussion
 
 Applying a force or impulse to a body at a position other than its center of mass may impart both linear and angular acceleration, depending on how the body is situated in the physics world and the other forces acting upon it.
 

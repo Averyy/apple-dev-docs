@@ -23,7 +23,7 @@ class UILargeContentViewerInteraction
 @interface UILargeContentViewerInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t use the large content viewer as a replacement for proper Dynamic Type support. For example, Dynamic Type allows items in a list to grow or shrink vertically to accommodate the user’s preferred font size. Rely on the large content viewer only in situations where items must remain small due to unavoidable design constraints. For example, buttons in a tab bar remain small to leave more room for the main app content.
 

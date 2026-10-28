@@ -25,7 +25,7 @@ var reverbBlend: Float { get set }
 @property (nonatomic) float reverbBlend;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the default reverb blend for when a source begins playing. To vary the reverb blend during playback through an [`SCNAudioPlayer`](../scnaudioplayer.md) object, use the player’s [`audioNode`](../scnaudioplayer/audionode.md) property to access real-time audio controls.
 

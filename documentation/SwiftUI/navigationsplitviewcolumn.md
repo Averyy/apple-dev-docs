@@ -21,7 +21,7 @@ A view that represents a column in a navigation split view.
 struct NavigationSplitViewColumn
 ```
 
-#### Overview
+## Overview
 
 A [`NavigationSplitView`](./navigationsplitview.md) collapses into a single stack in some contexts, like on iPhone or Apple Watch. Use this type with the `preferredCompactColumn` parameter to control which column of the navigation split view appears on top of the collapsed stack.
 

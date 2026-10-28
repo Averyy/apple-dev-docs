@@ -19,7 +19,7 @@ var relatedFileNamesInSameDirectory: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * relatedFileNamesInSameDirectory;
 ```
 
-#### Discussion
+## Discussion
 
 The array of related files within the [`MEByteSource`](../mebytesource.md)’s parent directory that are accessible to the [`MEByteSource`](../mebytesource.md). Only the relative file names are returned, not the paths. Only files with file extensions listed in the [`kMEFormatReaderFileNameExtensionArrayKey`](../kmeformatreaderfilenameextensionarraykey.md) array in the format reader property list will be returned. If no related files are available, returns an empty array.
 

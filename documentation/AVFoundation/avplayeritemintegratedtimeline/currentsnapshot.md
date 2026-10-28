@@ -25,7 +25,7 @@ var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot { get }
 @property (readonly) AVPlayerItemIntegratedTimelineSnapshot * currentSnapshot;
 ```
 
-#### Discussion
+## Discussion
 
 A timeline snapshot provides a read-only view of the details of the timeline. Because a snapshot provides a fixed view of the timeline at the time of the request, its state doesn’t update as playback continues.
 

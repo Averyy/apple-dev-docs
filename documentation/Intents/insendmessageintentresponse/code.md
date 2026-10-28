@@ -32,7 +32,7 @@ var code: INSendMessageIntentResponseCode { get }
 @property (atomic, readonly) INSendMessageIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is set at initialization and can’t be changed later.
 

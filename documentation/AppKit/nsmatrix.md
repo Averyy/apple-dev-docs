@@ -19,7 +19,7 @@ class NSMatrix
 @interface NSMatrix : NSControl
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Use of NSMatrix is discouraged in apps that run in macOS 10.8 and later. If you need to create a radio button group in an app that runs in macOS 10.8 and later, create instances of [NSButton](https://developer.apple.com/library/archive/technotes/tn2219/_index.html#//apple_ref/doc/uid/DTS10004624-CH1-SUBSECTION12) that each specify a button type of `NSRadioButton` and specify the same action and the same superview for each button in the group.
 

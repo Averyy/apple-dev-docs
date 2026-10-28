@@ -25,11 +25,11 @@ func stretchableImage(withLeftCapWidth leftCapWidth: Int, topCapHeight: Int) -> 
 - (UIImage *) stretchableImageWithLeftCapWidth:(NSInteger) leftCapWidth topCapHeight:(NSInteger) topCapHeight;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object with the specified cap values.
 
-#### Discussion
+## Discussion
 
 During scaling or resizing of the image, areas covered by a cap are not scaled or resized. Instead, the 1-pixel wide area not covered by the cap in each direction is what is scaled or resized. This technique is often used to create variable-width buttons, which retain the same rounded corners but whose center region grows or shrinks as needed.
 

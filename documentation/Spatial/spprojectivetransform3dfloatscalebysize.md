@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatScaleBySize(SPProjectiveTransform3DFloat transform, SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s constructed by concatenating an existing projective transform and a scale specified by a @p Size3DFloat structure.
 

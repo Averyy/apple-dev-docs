@@ -25,11 +25,11 @@ func outputConnectionPoints(for node: AVAudioNode, outputBus bus: AVAudioNodeBus
 - (NSArray<AVAudioConnectionPoint *> *) outputConnectionPointsForNode:(AVAudioNode *) node outputBus:(AVAudioNodeBus) bus;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AVAudioConnectionPoint` objects with connection information on the node’s output bus.
 
-#### Discussion
+## Discussion
 
 Connections are always one-to-one or one-to-many. This method returns an empty array if there are no connections on the node’s specified output bus.
 

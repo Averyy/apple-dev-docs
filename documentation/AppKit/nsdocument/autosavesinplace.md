@@ -20,11 +20,11 @@ class var autosavesInPlace: Bool { get }
 @property (class, readonly) BOOL autosavesInPlace;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver supports autosaving in place; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). You can override it and return [`true`](../../Swift/true.md) to declare that your subclass of `NSDocument` can do autosaving in place. You should not invoke this method to find out whether autosaving in place is actually being done at any particular moment. You should instead use the [`NSDocument.SaveOperationType`](./saveoperationtype.md) parameter that the system passes to your overrides of save and write methods.
 

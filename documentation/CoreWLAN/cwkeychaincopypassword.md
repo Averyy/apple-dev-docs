@@ -15,11 +15,11 @@ Finds and returns the keychain password stored for the corresponding network wit
 OSStatus CWKeychainCopyPassword(CFDataRef ssidData, CFStringRef*password);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 
-#### Discussion
+## Discussion
 
 This method searches the default keychain. If there is no matching keychain entry for the specified SSID, this method will return *NO*.
 

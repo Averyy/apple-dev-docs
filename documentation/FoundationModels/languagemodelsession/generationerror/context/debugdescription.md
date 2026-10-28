@@ -19,7 +19,7 @@ A debug description to help developers diagnose issues during development.
 let debugDescription: String
 ```
 
-#### Discussion
+## Discussion
 
 This string is not localized and is not appropriate for display to end users.
 

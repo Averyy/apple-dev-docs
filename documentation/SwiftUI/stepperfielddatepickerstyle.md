@@ -16,7 +16,7 @@ nonisolated
 struct StepperFieldDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`stepperField`](./datepickerstyle/stepperfield.md) to construct this style.
 

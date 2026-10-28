@@ -25,7 +25,7 @@ protocol SNResult : NSObjectProtocol
 @protocol SNResult <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t create types that adopt `SNResult`. Only Sound Analysis framework types adopt the protocol.
 

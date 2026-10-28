@@ -19,7 +19,7 @@ let kVTCompressionPropertyKey_RecommendedParallelizationLimit: CFString
 extern CFStringRef const kVTCompressionPropertyKey_RecommendedParallelizationLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Configuring a compression session for parallel encoding requires the use of the [`kVTCompressionPropertyKey_MoreFramesBeforeStart`](./kvtcompressionpropertykey_moreframesbeforestart.md), [`kVTCompressionPropertyKey_MoreFramesAfterEnd`](./kvtcompressionpropertykey_moreframesafterend.md), and [`kVTCompressionPropertyKey_SourceFrameCount`](./kvtcompressionpropertykey_sourceframecount.md) properties.
 

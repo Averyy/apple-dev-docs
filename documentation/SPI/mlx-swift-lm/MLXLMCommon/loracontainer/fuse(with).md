@@ -17,7 +17,7 @@ Permanently fuses the adapter weights into the model’s base layers.
 func fuse(with model: LanguageModel) throws
 ```
 
-#### Discussion
+## Discussion
 
 After fusion, adapter weights become part of the model’s original parameters, and adapter layers are no longer needed.
 

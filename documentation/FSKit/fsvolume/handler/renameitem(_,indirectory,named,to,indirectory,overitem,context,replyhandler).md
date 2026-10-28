@@ -24,7 +24,7 @@ func renameItem(_ item: FSItem, inDirectory sourceDirectory: FSItem, named sourc
 - (void) renameItem:(FSItem *) item inDirectory:(FSItem *) sourceDirectory named:(FSFileName *) sourceName toNewName:(FSFileName *) destinationName inDirectory:(FSItem *) destinationDirectory overItem:(FSItem *) overItem context:(FSContext *) context replyHandler:(void (^)(FSRenameItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This method only implements plain `rename(2)` semantics. FSKit fails `renamex_np(2)` calls that pass flags, such as `RENAME_SWAP` or `RENAME_EXCL`, with `ENOTSUP` without calling this method.
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app handles Siri requests.
 - **Name**: `com.apple.developer.siri` (Siri)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 The App Store requires the presence of this entitlement for iOS or watchOS apps containing Intents app extensions that handle any Siri requests other than shortcut requests. To add the entitlement to your app, enable the Siri capability in Xcode.
 

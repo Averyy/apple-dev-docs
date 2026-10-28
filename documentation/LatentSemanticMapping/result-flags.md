@@ -5,7 +5,7 @@
 
 Options for creating a result.
 
-#### Overview
+## Overview
 
 Specify these options for [`LSMResultCreate(_:_:_:_:_:)`](./lsmresultcreate%28_,_,_,_,_%29.md).
 

@@ -12,7 +12,7 @@ virtual void setDeviceShortName(
  const char *shortName);
 ```
 
-#### Overview
+## Overview
 
 The short name is a shorter representation of the device name. It may be used by applications when the device name is too long. It should be set by the time initHardware() completes. The string should be localized by the driver.
 

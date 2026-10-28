@@ -21,7 +21,7 @@ Returns the result of adding an integer to a demand.
 static func + (lhs: Subscribers.Demand, rhs: Int) -> Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 When adding any value to `.unlimited`, the result is `.unlimited`.
 

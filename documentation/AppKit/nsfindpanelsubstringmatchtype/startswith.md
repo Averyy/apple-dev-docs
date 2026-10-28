@@ -17,7 +17,7 @@ case startsWith
 NSFindPanelSubstringMatchTypeStartsWith
 ```
 
-#### Discussion
+## Discussion
 
 Finds a word starting with the search string.
 

@@ -23,11 +23,11 @@ func distinct() -> DiscontiguousColumnSlice<WrappedElement>
 
 Available when `WrappedElement` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A discontiguous column slice.
 
-#### Discussion
+## Discussion
 
 The method only adds the first of multiple elements with the same value — the element with the smallest index — to the slice.
 

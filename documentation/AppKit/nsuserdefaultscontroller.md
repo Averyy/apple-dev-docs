@@ -19,7 +19,7 @@ class NSUserDefaultsController
 @interface NSUserDefaultsController : NSController
 ```
 
-#### Overview
+## Overview
 
 [`NSUserDefaultsController`](./nsuserdefaultscontroller.md) is a Cocoa bindings–compatible controller class. Properties of the shared instance of this class can be bound to user interface elements to access and modify values stored in [`UserDefaults`](../Foundation/userdefaults.md).
 

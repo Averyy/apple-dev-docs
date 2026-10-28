@@ -16,7 +16,7 @@ Establishes a notification session for communication with the system.
 func didActivate(for session: NotificationsForwarding.Session)
 ```
 
-#### Discussion
+## Discussion
 
 Store the session reference to use across multiple notification life cycle events for sending messages to your accessory and communicating responses back to the system.
 

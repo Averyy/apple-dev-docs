@@ -25,13 +25,13 @@ class UnitInformationStorage
 @interface NSUnitInformationStorage : NSDimension
 ```
 
-#### Overview
+## Overview
 
 Use instances of [`UnitInformationStorage`](./unitinformationstorage.md) to represent quantities of information using the [`NSMeasurement`](./nsmeasurement.md) class. The base unit of measure for information is the bit, with a nibble representing four bits and a byte representing eight bits.
 
 Larger units of information expand on bits and bytes by orders of magnitude in both decimal and binary forms.
 
-##### Information Transfer
+### Information Transfer
 
 Units of bits commonly represent the amount of transferred information.
 
@@ -46,7 +46,7 @@ Units of bits commonly represent the amount of transferred information.
 | [`zettabits`](./unitinformationstorage/zettabits.md) | `1000e7` | [`zebibits`](./unitinformationstorage/zebibits.md) | `1024e7` |
 | [`yottabits`](./unitinformationstorage/yottabits.md) | `1000e8` | [`yobibits`](./unitinformationstorage/yobibits.md) | `1024e8` |
 
-##### Information Storage
+### Information Storage
 
 Units of bytes commonly represent the amount of stored information.
 

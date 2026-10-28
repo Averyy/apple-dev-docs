@@ -18,7 +18,7 @@ An error code that indicates the extension’s parent app isn’t in a valid loc
 static var unsupportedParentBundleLocation: OSSystemExtensionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The expected location of a driver extension is in the `Contents/Library/SystemExtensions` directory of a macOS app. The app itself must be in one of the system’s `Applications` directories.
 

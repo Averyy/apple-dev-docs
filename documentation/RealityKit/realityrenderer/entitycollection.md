@@ -21,7 +21,7 @@ A collection of entities in a [`RealityRenderer`](../realityrenderer.md).
 struct EntityCollection
 ```
 
-#### Overview
+## Overview
 
 This collection is used by [`entities`](./entities.md).
 

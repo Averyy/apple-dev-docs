@@ -23,7 +23,7 @@ func stopSpotlightIndexing()
 - (void) stopSpotlightIndexing;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method, the delegate no longer posts notifications about index changes.
 

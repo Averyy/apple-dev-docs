@@ -23,7 +23,7 @@ nonisolated
 var unownedExecutor: UnownedSerialExecutor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property must always evaluate to the same executor for a given actor instance, and holding on to the actor must keep the executor alive.
 

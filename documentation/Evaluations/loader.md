@@ -21,7 +21,7 @@ A protocol for types that supply a dataset for evaluation.
 protocol Loader<Sample> : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use one of the built-in concrete types such as [`ArrayLoader`](./arrayloader.md), [`JSONLoader`](./jsonloader.md), or [`StreamLoader`](./streamloader.md), or implement this protocol directly for custom data sources.
 

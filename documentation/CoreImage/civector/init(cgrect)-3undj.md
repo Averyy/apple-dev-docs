@@ -22,11 +22,11 @@ convenience init(cgRect r: CGRect)
 + (instancetype) vectorWithCGRect:(CGRect) r;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object of length 4.
 
-#### Discussion
+## Discussion
 
 The `CGRect` structure’s `x`, `y`, `height` and `width` values are stored in the vector’s four values.
 

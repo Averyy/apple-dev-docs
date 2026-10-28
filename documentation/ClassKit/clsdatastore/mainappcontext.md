@@ -23,7 +23,7 @@ var mainAppContext: CLSContext { get }
 @property (nonatomic, strong, readonly) CLSContext * mainAppContext;
 ```
 
-#### Discussion
+## Discussion
 
 Every app has exactly one top-level context that acts as the root node in a hierarchy of contexts that you define. Its identifier is the app’s bundle identifier. You can neither create nor destroy this context.
 

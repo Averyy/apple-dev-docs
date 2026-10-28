@@ -21,11 +21,11 @@ Resolves a transient entity from a transferable intent value type through the en
 func resolved<T>(from value: T) async throws -> AnyTransientAppEntity where T : IntentValueConvertible, T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 The resolved transient entity.
 
-#### Discussion
+## Discussion
 
 The value is serialized through its `TransferRepresentation` and resolved into the transient entity type through the same pipeline used at runtime.
 

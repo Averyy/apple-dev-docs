@@ -15,7 +15,7 @@ The identifier for the audio data destination control class.
 DataDestinationControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies where the element’s data goes to.
 

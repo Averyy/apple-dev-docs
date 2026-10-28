@@ -23,7 +23,7 @@ let kMIDIPropertyModel: CFString
 extern CFStringRef const kMIDIPropertyModel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in the following scenarios:
 

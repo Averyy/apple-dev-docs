@@ -21,7 +21,7 @@ Asynchronously replaces the texture with a Core Graphics image.
 @preconcurrency func replace(using cgImage: CGImage, options: TextureResource.CreateOptions) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this method for updates at frame-rate frequency. For frequent texture changes, see [`replace(withDrawables:)`](./replace%28withdrawables%29.md). To ensure consistent usage of this texture resource, pass the same semantic in `options` that you use to create the resource.
 

@@ -5,7 +5,7 @@
 
 A string specifying the relationship between the choice’s packages (specified by the packages property) and the same packages (based on the package identifier) installed on the host.
 
-#### Overview
+## Overview
 
 The possible values of this property are:
 

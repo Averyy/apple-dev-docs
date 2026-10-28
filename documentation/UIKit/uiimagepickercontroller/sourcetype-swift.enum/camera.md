@@ -21,7 +21,7 @@ case camera
 UIImagePickerControllerSourceTypeCamera
 ```
 
-#### Discussion
+## Discussion
 
 Indicate the specific camera you want (front or rear, as available) by using the [`cameraDevice`](../cameradevice-swift.property.md) property.
 

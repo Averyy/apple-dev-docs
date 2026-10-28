@@ -25,7 +25,7 @@ enum CGLineCap
 enum CGLineCap : int32_t;
 ```
 
-#### Overview
+## Overview
 
 A line cap specifies the method used by [`strokePath()`](./cgcontext/strokepath%28%29.md) to draw the endpoint of the line. To change the line cap style in a graphics context, you use the function [`setLineCap(_:)`](./cgcontext/setlinecap%28_%29.md).
 

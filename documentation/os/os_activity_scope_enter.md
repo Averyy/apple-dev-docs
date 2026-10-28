@@ -25,7 +25,7 @@ extern void os_activity_scope_enter(os_activity_t activity, os_activity_scope_st
 
 - [Collecting Log Messages in Activities](./collecting-log-messages-in-activities.md)
 
-#### Discussion
+## Discussion
 
 Allocate the struct on the stack in the function you used to call this function and call [`os_activity_scope_leave`](./os_activity_scope_leave.md) before leaving the scope that contains that struct.
 

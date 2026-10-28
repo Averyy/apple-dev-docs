@@ -25,7 +25,7 @@ let kCTFontFormatAttribute: CFString
 extern CFStringRef const kCTFontFormatAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an integer represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing one of the constants in [`CTFontFormat`](./ctfontformat.md).
 

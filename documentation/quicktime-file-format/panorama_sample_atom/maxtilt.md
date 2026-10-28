@@ -6,7 +6,7 @@
 
 The maximum tilt angle, in degrees.
 
-#### Overview
+## Overview
 
 For a high-resolution panorama, a typical value for this field is `+42.5`.
 

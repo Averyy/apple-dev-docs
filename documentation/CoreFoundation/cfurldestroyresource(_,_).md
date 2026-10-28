@@ -26,11 +26,11 @@ func CFURLDestroyResource(_ url: CFURL!, _ errorCode: UnsafeMutablePointer<Int32
 extern Boolean CFURLDestroyResource(CFURLRef url, SInt32 *errorCode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 If `url` uses an http scheme, an http `DELETE` request is sent to the resource. If `url` uses a file scheme, then:
 

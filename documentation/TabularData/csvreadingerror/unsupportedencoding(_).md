@@ -21,7 +21,7 @@ An error that indicates the CSV reader doesn’t support an encoding.
 case unsupportedEncoding(String)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value contains a description of the error.
 

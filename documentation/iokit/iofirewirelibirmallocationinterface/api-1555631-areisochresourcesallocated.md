@@ -16,7 +16,7 @@ Poll to see if IRM resources are still allocated
 Boolean (*areIsochResourcesAllocated)(IOFireWireLibIRMAllocationRef self, UInt8 *pAllocatedIsochChannel, UInt32 *pAllocatedBandwidthUnits);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if currently allocated, false otherwise
 

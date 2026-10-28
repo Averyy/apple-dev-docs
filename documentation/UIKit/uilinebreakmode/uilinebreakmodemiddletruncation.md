@@ -19,7 +19,7 @@ Truncate text (as necessary) from the middle of the line.
 UILineBreakModeMiddleTruncation
 ```
 
-#### Discussion
+## Discussion
 
 For multiple lines of text, text truncates only at the midpoint of the line.
 

@@ -23,7 +23,7 @@ func requestGeometryUpdate(_ geometryPreferences: UIWindowScene.GeometryPreferen
 - (void) requestGeometryUpdateWithPreferences:(UIWindowSceneGeometryPreferences *) geometryPreferences errorHandler:(void (^)(NSError *error)) errorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to explicitly request geometry changes to the window scene. The following code shows an example of requesting the window scene to rotate to a landscape orientation in iOS.
 

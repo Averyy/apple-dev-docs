@@ -23,7 +23,7 @@ func updateValue(_ value: CGFloat, forAnimatedKey key: String)
 - (void) updateValue:(CGFloat) value forAnimatedKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to store a floating-point value with a specific key that you define for your transition layout object. The name of the key should be one that has meaning to your layout object. For example, if you track the position of the user’s finger over time, you might define the keys “PositionX” and “PositionY” to track those changes. Each time you update the value of a key, the layout object records the change along with a timestamp value. When the layout is finalized or canceled, those values can then be used to determine the speed with which to perform the remaining animations.
 

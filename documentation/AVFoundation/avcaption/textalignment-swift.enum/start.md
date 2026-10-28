@@ -22,7 +22,7 @@ case start
 AVCaptionTextAlignmentStart
 ```
 
-#### Discussion
+## Discussion
 
 This text alignment means that, for example, text aligns left in left-to-right writing mode, and right in right-to-left writing mode.
 

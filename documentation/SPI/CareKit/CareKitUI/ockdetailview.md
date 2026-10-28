@@ -18,7 +18,7 @@ A scrollable view with an image header and text content.
 class OCKDetailView
 ```
 
-#### Overview
+## Overview
 
 Use `contentStackView` to insert custom views.
 

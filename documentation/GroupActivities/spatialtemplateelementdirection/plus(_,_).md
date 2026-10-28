@@ -15,7 +15,7 @@ Adds the y-axis rotations for the specified values together and returns a new st
 static func + (lhs: SpatialTemplateElementDirection, rhs: Angle2D) -> SpatialTemplateElementDirection
 ```
 
-#### Return Value
+## Return Value
 
 A new direction type that combines the rotations from `lhs` and `rhs`.
 

@@ -21,11 +21,11 @@ func QLPreviewRequestCopyURL(_ preview: QLPreviewRequest!) -> Unmanaged<CFURL>!
 extern CFURLRefQLPreviewRequestCopyURL(QLPreviewRequestRef preview);
 ```
 
-#### Return Value
+## Return Value
 
 The URL identifying the file for which the preview is requested.
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 

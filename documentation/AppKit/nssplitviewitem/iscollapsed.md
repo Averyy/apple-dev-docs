@@ -19,7 +19,7 @@ var isCollapsed: Bool { get set }
 @property (getter=isCollapsed) BOOL collapsed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

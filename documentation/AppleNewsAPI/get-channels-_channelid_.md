@@ -14,13 +14,13 @@ Get details about your channel, including the name, corresponding website, and d
 - [Making an HTTP Request to the Apple News API](../AppleNews/making-an-http-request-to-the-apple-news-api.md)
 - [Signing the HTTP Request](../AppleNews/signing-the-http-request.md)
 
-#### Discussion
+## Discussion
 
 Use the Read Channel Information endpoint to retrieve information about the channel, list of custom fonts used in the channel ([`Channel`](./channel.md)), and link to the channel’s default section ([`ChannelLinks`](./channellinks.md)). See [Making an HTTP Request to the Apple News API](../AppleNews/making-an-http-request-to-the-apple-news-api.md) and [Signing the HTTP Request](../AppleNews/signing-the-http-request.md) in [Apple News API Tutorial](../AppleNews/apple-news-api-tutorial.md).
 
 You create a channel in News Publisher, not the Apple News API. See [Add or share a channel](https://support.apple.com/guide/news-publisher/apd1c0277d3e) in News Publisher User Guide.
 
-##### Example
+### Example
 
 **Request**:
 

@@ -27,7 +27,7 @@ case voip
 NSURLNetworkServiceTypeVoIP
 ```
 
-#### Discussion
+## Discussion
 
 With the VoIP service type, the kernel continues to listen for incoming traffic while your app is in the background, then wakes up your app whenever new data arrives. Set this *only* for connections that are communicate with a VoIP service.
 

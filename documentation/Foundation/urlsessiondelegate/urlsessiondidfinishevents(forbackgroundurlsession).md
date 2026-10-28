@@ -29,7 +29,7 @@ optional func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSess
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 In iOS, when a background transfer completes or requires credentials, if your app is no longer running, your app is automatically relaunched in the background, and the app’s `UIApplicationDelegate` is sent an [`application(_:handleEventsForBackgroundURLSession:completionHandler:)`](../../UIKit/uiapplicationdelegate/application%28_,handleeventsforbackgroundurlsession,completionhandler%29.md) message. This call contains the identifier of the session that caused your app to be launched. You should then store that completion handler before creating a background configuration object with the same identifier, and creating a session with that configuration. The newly created session is automatically reassociated with ongoing background activity.
 

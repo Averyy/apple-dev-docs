@@ -19,7 +19,7 @@ let XPC_ACTIVITY_ALLOW_BATTERY: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_ALLOW_BATTERY;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false` for maintenance priority activity and `true` for utility priority activity.
 

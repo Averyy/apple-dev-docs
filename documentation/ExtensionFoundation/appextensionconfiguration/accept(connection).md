@@ -27,11 +27,11 @@ func accept(connection: NSXPCConnection) -> Bool
 
 - [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
-#### Return Value
+## Return Value
 
 `true` if you accept the connection to the host app, or `false` if you don’t.
 
-#### Discussion
+## Discussion
 
 Implement this method in your custom type and use it to establish communication between your app extension and the host app that made the request. To accept a connection request, set the connection’s [`exportedObject`](../../Foundation/nsxpcconnection/exportedobject.md) property to an object in your app extension that implements a protocol or type from the host’s SDK. Similarly, put the type information in the [`exportedInterface`](../../Foundation/nsxpcconnection/exportedinterface.md) property. You can also retrieve other relevant properties of the connection object, such as the remote connection details, and use them to set up your app extension. When you’re ready to start communicating with the host, call the connection’s [`resume()`](../../Foundation/nsxpcconnection/resume%28%29.md) method and then return `true` from this method.
 

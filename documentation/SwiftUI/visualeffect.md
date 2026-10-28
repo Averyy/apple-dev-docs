@@ -21,7 +21,7 @@ Visual Effects change the visual appearance of a view without changing its ances
 protocol VisualEffect : Sendable, Animatable
 ```
 
-#### Overview
+## Overview
 
 Because effects do not impact layout, they are safe to use in situations where layout modification is not allowed. For example, effects may be applied as a function of position, accessed through a geometry proxy:
 

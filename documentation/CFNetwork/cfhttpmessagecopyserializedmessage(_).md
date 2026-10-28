@@ -24,11 +24,11 @@ func CFHTTPMessageCopySerializedMessage(_ message: CFHTTPMessage) -> Unmanaged<C
 extern CFDataRefCFHTTPMessageCopySerializedMessage(CFHTTPMessageRef message);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFData` object containing the serialized message, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function returns a copy of a `CFHTTPMessage` object in serialized format that is ready for transmission.
 

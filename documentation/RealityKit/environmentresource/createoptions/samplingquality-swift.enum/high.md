@@ -15,7 +15,7 @@ Computes the environment textures with high sampling rates, reducing texture noi
 case high
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only available in macOS.
 

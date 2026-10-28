@@ -20,7 +20,7 @@ A mode that displays the surface tangent vectors as a color.
 case tangent
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `tangent` to an entity to tell RealityKit to draw that entity’s calculated tangent vectors as its surface color. A tangent vector is an imaginary line that touches, but doesn’t intersect with the surface of the object at a specific point. RealityKit draws a tangent vector by using its `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the color.
 

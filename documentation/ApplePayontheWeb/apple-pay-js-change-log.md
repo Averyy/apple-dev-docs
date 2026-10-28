@@ -5,11 +5,11 @@
 
 Learn about new features and updates in the Apple Pay JS SDK.
 
-#### Overview
+## Overview
 
 With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on your website. Use this changelog to learn about feature updates, deprecations, and removals. You can learn more about Apple Pay JS version numbers and how to automatically link the latest available version in [Loading the latest version of the Apple Pay JS SDK](./loading-the-latest-version-of-apple-pay-js.md).
 
-#### 1.3.8
+## 1.3.8
 
 **Fixed**
 
@@ -33,7 +33,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-u/9mOkmShCO0v+dqCAZFhiutJuORfzvuyM5i+676iy7mLSWS6rlllHrIt15f/mqH`
 
-#### 1.3.7
+## 1.3.7
 
 **Fixed**
 
@@ -58,7 +58,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-m79g5rSF+8ObiCeY5RGEXjDpxURj/6A4rz0xXbEY/UEzLITgAWZ0+x3gcYjVEuVe`
 
-#### 1.3.6
+## 1.3.6
 
 **Fixed**
 
@@ -81,7 +81,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-7KJIkGT+8p0K2rhsEQcz7zZ+nYUFUbN573ZKSgwp9YKN7uUC+h5TAhEIdOAZgo6R`
 
-#### 1.3.5
+## 1.3.5
 
 **Fixed**
 
@@ -103,7 +103,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-PXB7Px9JgKaXn/a7SomvCNcHbTae7QLO5r9Icn2tfMy2SRslUQUeNZGUIYgKCRux`
 
-#### 1.3.4
+## 1.3.4
 
 **Fixed**
 
@@ -125,7 +125,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-EkOwSYjCfsPDaNshCOrDCVP+66slBQUaEZtukKqIp2ew8lWUsPaKO/JJGxGays+y`
 
-#### 1.3.3
+## 1.3.3
 
 **Fixed**
 
@@ -148,7 +148,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-SmrWHrJWbmqUdhs1oyfLOcLtZZZAd9vm5D0NUvBlI4OhI2BjxZyxtcSfujdb885p`
 
-#### 1.3.2
+## 1.3.2
 
 **Fixed**
 
@@ -171,7 +171,7 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
   - `sha384-DZRWMZLyVXr+7shJfal8pIG2v4KisLoSWFjZQMUv0+GWaCwoa82qeHsWrbBIUDP`
 
-#### 1.3.1
+## 1.3.1
 
 **Fixed**
 

@@ -31,11 +31,11 @@ final class ReloadingFileProvider<Snapshot> where Snapshot : FileConfigSnapshot
 - [Implementing a custom provider](./implementing-a-provider.md)
 - [Troubleshooting and access reporting](./troubleshooting.md)
 
-#### Overview
+## Overview
 
 `ReloadingFileProvider` is a generic file-based configuration provider that monitors a configuration file for changes and automatically reloads the data when the file is modified. This provider works with different file formats by using different snapshot types that conform to [`FileConfigSnapshot`](./fileconfigsnapshot.md).
 
-#### Usage
+## Usage
 
 Create a reloading provider by specifying the snapshot type and file path:
 
@@ -52,7 +52,7 @@ let yamlProvider = try await ReloadingFileProvider<YAMLSnapshot>(
 )
 ```
 
-#### Service integration
+## Service integration
 
 This provider implements the `Service` protocol and must be run within a `ServiceGroup` to enable automatic reloading:
 
@@ -66,7 +66,7 @@ The provider monitors the file by polling at the specified interval (default: 15
 
 On platforms with Unix signals, a running provider also checks the file whenever the process receives `SIGHUP`, so you don’t have to wait for the next poll. Either way, the file is only reloaded if its modification timestamp or resolved path changed.
 
-#### Configuration from a reader
+## Configuration from a reader
 
 You can also initialize the provider using a configuration reader:
 
@@ -77,7 +77,7 @@ let provider = try await ReloadingFileProvider<JSONSnapshot>(config: envConfig)
 
 This expects configuration keys that specify the file path and optionally other format-specific values. For a full list of configuration keys, see [`init(snapshotType:parsingOptions:config:logger:metrics:)`](./reloadingfileprovider/init%28snapshottype,parsingoptions,config,logger,metrics%29.md).
 
-#### File monitoring
+## File monitoring
 
 The provider detects changes by monitoring both file timestamps and symlink target changes. When it detects a change, it reloads the file and notifies all active watchers of the updated configuration values.
 

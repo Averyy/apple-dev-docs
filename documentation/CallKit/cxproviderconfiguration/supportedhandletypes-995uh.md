@@ -20,7 +20,7 @@ The supported handle types.
 @property (nonatomic, copy) NSSet<NSNumber *> * supportedHandleTypes;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`CXHandle.HandleType`](../cxhandle/handletype.md).
 

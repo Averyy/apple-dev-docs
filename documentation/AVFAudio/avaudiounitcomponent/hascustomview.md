@@ -19,7 +19,7 @@ var hasCustomView: Bool { get }
 @property (nonatomic, readonly) BOOL hasCustomView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the component has a custom view; otherwise, [`false`](../../Swift/false.md).
 

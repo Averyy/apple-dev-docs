@@ -24,7 +24,7 @@ var primitiveDataElementSize: Int { get set }
 @property (nonatomic) NSUInteger primitiveDataElementSize;
 ```
 
-#### Discussion
+## Discussion
 
 This size needs to be at most [`primitiveDataStride`](./primitivedatastride.md) in size and a multiple of 4 bytes.
 

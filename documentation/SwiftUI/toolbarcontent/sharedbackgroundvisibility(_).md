@@ -19,7 +19,7 @@ nonisolated
 func sharedBackgroundVisibility(_ visibility: Visibility) -> some ToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 This modifier adjusts the visibility of that effect. Hiding the effect will cause the item to be placed in its own grouping.
 

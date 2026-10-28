@@ -24,7 +24,7 @@ let HKMetadataKeyAudioExposureLevel: String
 extern NSString * const HKMetadataKeyAudioExposureLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key on audio exposure events. It takes an [`HKQuantity`](./hkquantity.md) containing the audio level measured in [`decibelAWeightedSoundPressureLevel()`](./hkunit/decibelaweightedsoundpressurelevel%28%29.md) units.
 

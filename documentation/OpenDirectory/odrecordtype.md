@@ -20,7 +20,7 @@ typealias ODRecordType = NSString
 typedef NSString * ODRecordType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Record Types](./record-types.md) for recognized record type values.
 

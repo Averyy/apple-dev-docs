@@ -20,7 +20,7 @@ class MapFeatureAnnotation extends PlaceAnnotation
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 MapKit JS creates a `MapFeatureAnnotation` when you set [`selectableMapFeatures`](./map/selectablemapfeatures.md), and when a person taps a map feature. The instance is available from the [`selectedAnnotation`](./map/selectedannotation.md) property when a person selects a map feature and MapKit JS passes it to the [`annotationForMapFeature`](./map/annotationformapfeature.md) delegate method.
 

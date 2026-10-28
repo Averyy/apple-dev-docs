@@ -24,7 +24,7 @@ var preferredSystemGestureState: GCControllerElement.SystemGestureState { get se
 @property (nonatomic, readwrite) GCSystemGestureState preferredSystemGestureState;
 ```
 
-#### Discussion
+## Discussion
 
 In rare situations, you may use this property to disable system gestures. However, the system isn’t guaranteed to respect this property. The default value for this property is [`GCControllerElement.SystemGestureState.enabled`](./systemgesturestate/enabled.md).
 

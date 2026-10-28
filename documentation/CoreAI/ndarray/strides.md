@@ -19,7 +19,7 @@ The distance, in elements, between consecutive values along each dimension.
 var strides: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The strides array has the same number of elements as [`shape`](./shape.md), where `strides[i]` describes the distance between consecutive elements in the `i`th dimension.
 

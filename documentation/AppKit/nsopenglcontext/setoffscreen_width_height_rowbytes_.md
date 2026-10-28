@@ -17,7 +17,7 @@ Instructs the OpenGL context to render into an offscreen buffer with the specifi
 - (void) setOffScreen:(void *) baseaddr width:(GLsizei) width height:(GLsizei) height rowbytes:(GLint) rowbytes;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s viewport is set to the full size of the offscreen area. Call the [`clearDrawable()`](./cleardrawable%28%29.md) method to exit offscreen mode.
 

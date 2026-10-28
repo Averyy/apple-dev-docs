@@ -23,11 +23,11 @@ class var availableLanguages: [String] { get }
 @property (class, nonatomic, readonly) NSArray<NSString *> * availableLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings representing ISO 639-1 language codes or combined ISO 639-1 language codes and ISO 3166-1 regional codes (for example, `en_US`).
 
-#### Discussion
+## Discussion
 
 The languages represented by the strings in the returned array are in user-preference order.
 

@@ -16,11 +16,11 @@ Set the channel force stop handler.
 IOFireWireIsochChannelForceStopHandler (*SetChannelForceStopHandler)(IOFireWireLibIsochChannelRef self, IOFireWireIsochChannelForceStopHandler stopProc);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previously set handler or NULL is no handler was set.
 
-#### Discussion
+## Discussion
 
 The specified callback is called when the channel is stopped and cannot be restarted automatically.
 

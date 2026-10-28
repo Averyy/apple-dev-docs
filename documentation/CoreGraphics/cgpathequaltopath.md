@@ -21,7 +21,7 @@ Indicates whether two graphics paths are equivalent.
 extern bool CGPathEqualToPath(CGPathRef path1, CGPathRef path2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether or not the two specified paths contain the same sequence of path elements. If the paths are not the same, returns [`false`](../Swift/false.md).
 

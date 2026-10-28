@@ -17,7 +17,7 @@ The schedule’s next interval or the current interval if one is ongoing.
 var nextInterval: DateInterval? { get }
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if `intervalStart` and `intervalEnd` don’t match any future dates. The start and end dates indicate the earliest point when the [`intervalDidStart(for:)`](../deviceactivitymonitor/intervaldidstart%28for%29.md) and [`intervalDidEnd(for:)`](../deviceactivitymonitor/intervaldidend%28for%29.md) methods of your app extension’s principal class invokes. The system actually invokes these methods when someone uses the device during the interval. The system additionally calls [`intervalDidEnd(for:)`](../deviceactivitymonitor/intervaldidend%28for%29.md) when you stop monitoring an activity with an ongoing interval. The system doesn’t call these methods unless the device is used during the interval.
 

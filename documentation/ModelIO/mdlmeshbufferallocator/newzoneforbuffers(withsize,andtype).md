@@ -25,11 +25,11 @@ func newZoneForBuffers(withSize sizes: [NSNumber], andType types: [NSNumber]) ->
 - (id<MDLMeshBufferZone>) newZoneForBuffersWithSize:(NSArray<NSNumber *> *) sizes andType:(NSArray<NSNumber *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory zone.
 
-#### Discussion
+## Discussion
 
 Objects implementing the [`MDLMeshBufferZone`](../mdlmeshbufferzone.md) protocol describe a logical pool of memory for allocation of related buffers. The actual class of buffer zone objects vended by an allocator may be private.
 

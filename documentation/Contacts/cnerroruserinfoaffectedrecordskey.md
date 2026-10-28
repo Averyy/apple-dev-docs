@@ -24,7 +24,7 @@ let CNErrorUserInfoAffectedRecordsKey: String
 extern NSString * const CNErrorUserInfoAffectedRecordsKey;
 ```
 
-#### Discussion
+## Discussion
 
 An array of one or more [`CNContact`](./cncontact.md), [`CNGroup`](./cngroup.md), or [`CNContainer`](./cncontainer.md) objects for which the error code applies.
 

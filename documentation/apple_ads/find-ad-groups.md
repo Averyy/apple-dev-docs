@@ -15,11 +15,11 @@ Fetches ad groups within a campaign.
 
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find ad groups within campaigns using the associated `campaignId` in the resource path. Use  a [`Selector`](./selector.md) [`Condition`](./condition.md) to narrow results. If you don’t specify selector conditions, all ad groups in campaigns return. See the [`AdGroup`](./adgroup.md) object for field descriptions and selector condition operators.
 
-##### Payload example: Find ad groups
+### Payload example: Find ad groups
 
 **Request**:
 

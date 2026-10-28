@@ -16,7 +16,7 @@ Creates a command pool object and returns an interface to it. The command pool c
 IOFireWireLibDCLCommandPoolRef (*CreateDCLCommandPool)(IOFireWireLibDeviceRef self, IOByteCount size, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibDCLCommandPoolRef. Returns 0 upon failure
 

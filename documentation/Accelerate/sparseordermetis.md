@@ -25,7 +25,7 @@ var SparseOrderMetis: SparseOrder_t { get }
 SparseOrderMetis
 ```
 
-#### Discussion
+## Discussion
 
 There’s a large overhead cost if you use this for QR-based factorization due to explicit formation of *AᵀA*.
 

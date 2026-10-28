@@ -15,11 +15,11 @@ Removes a task exception.
 OSStatus MPDisposeTaskException(MPTaskID task, OptionBits action);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the specified action is invalid or unsupported, or if the specified task is not suspended, this function returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 This function removes the task exception and allows the task to resume operation. If desired, you can enable single-stepping or branch-stepping, or propagate the exception instead.  
 

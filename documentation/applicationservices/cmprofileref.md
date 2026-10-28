@@ -15,7 +15,7 @@ Defines a reference to an opaque data type that specifies profile information.
 typedef struct OpaqueCMProfileRef *CMProfileRef;
 ```
 
-#### Discussion
+## Discussion
 
 A profile reference is the means by which your application gains access to a profile. Several ColorSync Manager functions return a profile reference to your application. Your application then passes it as a parameter on subsequent calls to other ColorSync Manager functions that use profiles.
 

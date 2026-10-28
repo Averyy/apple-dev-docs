@@ -22,7 +22,7 @@ var message: MSMessage? { get set }
 @property (nonatomic, copy, nullable) MSMessage * message;
 ```
 
-#### Discussion
+## Discussion
 
 If your app has an iMessage app extension, you can display your iMessage app within the message compose view, just as you would in the Messages app. To display your iMessage app, create and assign an [`MSMessage`](../../Messages/msmessage.md) object to this property.
 

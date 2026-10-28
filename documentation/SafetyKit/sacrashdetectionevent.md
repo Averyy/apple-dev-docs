@@ -23,7 +23,7 @@ class SACrashDetectionEvent
 @interface SACrashDetectionEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a vehicular crash occurs, SafetyKit calls your delegate’s [`crashDetectionManager(_:didDetect:)`](./sacrashdetectiondelegate/crashdetectionmanager%28_,diddetect%29.md) method with an [`SACrashDetectionEvent`](./sacrashdetectionevent.md) object. Inspect this object to determine information about the crash, including the date and time, location, and if the system attempted to contact emergency services.
 

@@ -22,7 +22,7 @@ class IOService;
 
 - [Creating a Driver Using the DriverKit SDK](./creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Overview
+## Overview
 
 An [`IOService`](./ioservice.md) object is the base class the system uses to represent all devices and device-related interfaces. When the user plugs in a device, the system creates one or more service objects to manage interactions with that device. One service object represents the device itself, and additional service objects represent the interfaces or communication protocols that the device supports. For example, the driver for a USB camera that supports multiple video and audio protocols might define different service objects for each protocol.
 
@@ -37,7 +37,7 @@ In most cases, you subclass a child of [`IOService`](./ioservice.md) such as [`I
 
 For additional information about how to implement services for a particular type of device, see the service subclasses in [HIDDriverKit](../HIDDriverKit/HIDDriverKit.md), [USBDriverKit](../USBDriverKit/USBDriverKit.md), [NetworkingDriverKit](../NetworkingDriverKit/NetworkingDriverKit.md), [SerialDriverKit](../SerialDriverKit/SerialDriverKit.md), and [USBSerialDriverKit](../USBSerialDriverKit/USBSerialDriverKit.md).
 
-##### Adding Member Variables to Your Custom Subclass
+### Adding Member Variables to Your Custom Subclass
 
 Don’t declare custom member variables directly in your [`IOService`](./ioservice.md) subclass. Instead, DriverKit requires you to define all variables in a separate structure. During initialization, allocate a block of memory for that structure and assign that block to the system-provided `ivars` variable of your service class. The following code example shows you how to define the structure and allocate it in the [`init`](./ioservice/init.md) method of your service class.
 

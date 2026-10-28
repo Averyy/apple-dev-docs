@@ -22,7 +22,7 @@ var contentInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets contentInsets;
 ```
 
-#### Discussion
+## Discussion
 
 This property adjusts the margins for content printed by the formatter. The printing rectangle defines the area the printer is capable of printing in; each inset is an inward distance, in points, from a side of the printing area. The top inset is used only on the first page that the formatter draws. The bottom inset is not used. You can use the [`init(top:left:bottom:right:)`](../uiedgeinsets/init%28top,left,bottom,right%29-1s1t9.md) macro to create a [`UIEdgeInsets`](../uiedgeinsets.md) structure.
 

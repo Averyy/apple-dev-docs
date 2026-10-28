@@ -20,7 +20,7 @@ var detectionImages: Set<ARReferenceImage>! { get set }
 @property (nonatomic, copy, null_resettable) NSSet<ARReferenceImage *> * detectionImages;
 ```
 
-#### Discussion
+## Discussion
 
 Add members to this set for each image that ARKit searches for in the user’s environment. When ARKit *detects* a matching image, the framework creates an [`ARImageAnchor`](../arimageanchor.md) object and adds it to the session.
 
@@ -28,7 +28,7 @@ To define the reference images that this property contains, create an asset cata
 
 If you set a nonzero value for [`maximumNumberOfTrackedImages`](../arworldtrackingconfiguration/maximumnumberoftrackedimages.md), ARKit enables image *tracking*, which continuously updates the transform for up to four of the reference image anchors as the session progresses. For an example, see [Tracking and altering images](../tracking-and-altering-images.md).
 
-##### Limit Reference Images for Performance
+### Limit Reference Images for Performance
 
 Image detection accuracy and performance may decline as the number of images in this set increases. For best results, limit your detection image count to no more than around 100.
 

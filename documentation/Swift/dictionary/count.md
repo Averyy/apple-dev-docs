@@ -23,7 +23,7 @@ var count: Int { get }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

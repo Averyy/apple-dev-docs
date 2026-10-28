@@ -20,7 +20,7 @@ The menu indicator visibility to apply to controls within a view.
 var menuIndicatorVisibility: Visibility { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: On tvOS, the standard button styles do not include a menu indicator, so this modifier will have no effect when using a built-in button style. You can implement an indicator in your own [`ButtonStyle`](../buttonstyle.md) implementation by checking the value of this environment value.
 

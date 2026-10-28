@@ -15,11 +15,11 @@ Queries for hand anchors at the provided target timestamp.
 final func handAnchors(at timestamp: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains optional left and right anchors for the given time. Anchors are `nil` when the provider isn’t running.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function isn’t safe to call on multiple threads at the same time. You need to provide your own synchronization.
 

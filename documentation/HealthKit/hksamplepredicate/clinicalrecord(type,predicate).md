@@ -19,7 +19,7 @@ Returns a sample predicate that matches clinical record samples.
 static func clinicalRecord(type clinicalType: HKClinicalType, predicate: NSPredicate? = nil) -> HKSamplePredicate<HKClinicalRecord>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKClinicalRecord`](../hkclinicalrecord.md) objects.
 

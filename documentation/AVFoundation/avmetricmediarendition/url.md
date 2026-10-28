@@ -23,7 +23,7 @@ var url: URL? { get }
 @property (readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Provides URL corresponding to the rendition’s HLS playlist. If not available, value is nil.
 

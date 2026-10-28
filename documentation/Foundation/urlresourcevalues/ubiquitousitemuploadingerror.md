@@ -21,7 +21,7 @@ The error when uploading the item to iCloud fails.
 var ubiquitousItemUploadingError: NSError? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For error values, see the `NSUbiquitousFile` section in FoundationErrors.h.
 

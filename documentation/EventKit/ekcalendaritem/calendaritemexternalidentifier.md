@@ -24,7 +24,7 @@ var calendarItemExternalIdentifier: String! { get }
 @property (nonatomic, readonly, null_unspecified) NSString * calendarItemExternalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier allows you to access the same event or reminder across multiple devices.
 

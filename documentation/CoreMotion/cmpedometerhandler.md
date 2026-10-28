@@ -23,7 +23,7 @@ typealias CMPedometerHandler = (CMPedometerData?, (any Error)?) -> Void
 typedef void (^)(CMPedometerData *, NSError *) CMPedometerHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You provide a block of this type when requesting data from the `CMPedometer` object. When the data becomes available, the pedometer object delivers that data to your block for processing. If there was an error retrieving the data, the pedometer object provides an error object instead.
 

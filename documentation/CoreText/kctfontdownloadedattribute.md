@@ -25,7 +25,7 @@ let kCTFontDownloadedAttribute: CFString
 extern CFStringRef const kCTFontDownloadedAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md).  If it is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), corresponding Font Asset has been downloaded.
 

@@ -23,7 +23,7 @@ case keyboardLANG3
 UIKeyboardHIDUsageKeyboardLANG3
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIKeyboardHIDUsage.keyboardLANG3`](./keyboardlang3.md) key is the Katakana key on Japanese language keyboards.
 

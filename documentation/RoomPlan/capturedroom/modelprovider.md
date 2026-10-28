@@ -17,7 +17,7 @@ A structure that assigns detailed 3D models to captured objects for an export.
 struct ModelProvider
 ```
 
-#### Overview
+## Overview
 
 This structure provides a way for your app to assign detailed shape to specific areas within a captured room.
 

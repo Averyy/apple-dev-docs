@@ -22,7 +22,7 @@ The orientation of an image.
 enum Orientation
 ```
 
-#### Overview
+## Overview
 
 Many image formats such as JPEG include orientation metadata in the image data. In other cases, you can specify image orientation in code. Properly specifying orientation is often important both for displaying the image and for certain kinds of image processing.
 

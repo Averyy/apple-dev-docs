@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 The command queue can submit work only to the GPU the [`MTLDevice`](../mtldevice.md) instance represents.
 

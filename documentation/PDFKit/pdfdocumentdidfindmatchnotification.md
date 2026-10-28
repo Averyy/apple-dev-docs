@@ -20,7 +20,7 @@ A notification that a string match is found in a document.
 extern NSNotificationName const PDFDocumentDidFindMatchNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself. To determine the string selection found, use the `@”PDFDocumentFoundSelection”` key to obtain userinfo of type `PDFSelection *`
 

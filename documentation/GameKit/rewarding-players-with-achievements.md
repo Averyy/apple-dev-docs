@@ -5,7 +5,7 @@
 
 Use achievements to motivate players and engage them more in your game.
 
-#### Overview
+## Overview
 
 An *achievement* is a collectible item that a player receives as a reward for successfully reaching a particular goal in your game. Achievements provide players an additional way of engaging with your game, tracking gameplay progress, and sharing that progress with friends. You define the achievements available to players in your game, and Game Center saves the progress players make toward earning them. Players can view your game achievements and track their progress in the dashboard.
 
@@ -15,7 +15,7 @@ Your game can have a maximum of 100 achievements, 100 points per achievement, an
 
 For design guidance, see [Human Interface Guidelines > Technologies > Game Center > Achievements](https://developer.apple.com/design/human-interface-guidelines/game-center#Achievements).
 
-#### Configure and test achievements
+## Configure and test achievements
 
 Configure achievements in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md).
 
@@ -33,7 +33,7 @@ Use the Game Progress Manager to test achievements on your local device before y
 
 For more information about the achievement properties you can configure, see [Achievement properties](https://developer.apple.com/help/app-store-connect/reference/achievements).
 
-#### Get the object that represents the achievement
+## Get the object that represents the achievement
 
 To start or continue reporting progress toward an achievement, you need a [`GKAchievement`](./gkachievement.md) object that represents the achievement.
 
@@ -55,7 +55,7 @@ if achievement == nil {
 
 If the achievement isn’t in the array, your game hasn’t reported any progress toward this achievement for this player yet, and the dashboard shows it in the locked state. You must create a new [`GKAchievement`](./gkachievement.md) object using the identifier from App Store Connect. For the local player, use the [`init(identifier:)`](./gkachievement/init%28identifier%29.md) method to create the [`GKAchievement`](./gkachievement.md) object. For another player, when ending a turn-based match, use the [`init(identifier:player:)`](./gkachievement/init%28identifier,player%29.md) method.
 
-#### Report the player’s progress
+## Report the player’s progress
 
 Initially, the percentage complete is `0` and the dashboard shows the achievement in the locked state. As the player progresses toward earning an achievement, you report the percentage the player completes for the achievement to Game Center.
 
@@ -85,7 +85,7 @@ If the player completes all achievements in your game or if you want to clear al
 
 If you prefer to report progress through your own server, see [Game Center player achievements](../AppStoreConnectAPI/game-center-player-achievements.md).
 
-#### Show achievements to players
+## Show achievements to players
 
 Players can view their achievements in the dashboard, which provides a familiar and consistent experience for users. You can add the access point to your game so players can open the dashboard and navigate to their achievements. The access point displays achievements in the highlights, and on the dashboard when the player opens it. You can also display the dashboard in the state that shows the achievements so players can drill down and navigate to their other Game Center data.
 

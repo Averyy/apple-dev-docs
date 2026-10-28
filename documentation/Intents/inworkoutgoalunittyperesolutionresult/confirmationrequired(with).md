@@ -23,11 +23,11 @@ class func confirmationRequired(with workoutGoalUnitTypeToConfirm: INWorkoutGoal
 + (instancetype) confirmationRequiredWithWorkoutGoalUnitTypeToConfirm:(INWorkoutGoalUnitType) workoutGoalUnitTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INWorkoutGoalUnitTypeResolutionResult`](../inworkoutgoalunittyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a similar workout goal and want the user to confirm the change before proceeding.
 

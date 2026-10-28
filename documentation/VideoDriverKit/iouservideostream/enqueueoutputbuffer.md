@@ -13,7 +13,7 @@
 kern_return_t enqueueOutputBuffer(IOUserVideoBuffer *buffer, uint32_t dataOffset, uint32_t dataLength, uint32_t controlOffset, uint32_t controlLength);
 ```
 
-#### Discussion
+## Discussion
 
 A convenience method for enqueueing a buffer.
 

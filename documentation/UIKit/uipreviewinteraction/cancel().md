@@ -22,7 +22,7 @@ func cancel()
 - (void) cancelInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 When a preview interaction is in progress, use this method to cancel it, preventing any further callbacks to the delegate methods.
 

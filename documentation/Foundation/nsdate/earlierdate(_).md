@@ -25,7 +25,7 @@ func earlierDate(_ anotherDate: Date) -> Date
 - (NSDate *) earlierDate:(NSDate *) anotherDate;
 ```
 
-#### Return Value
+## Return Value
 
 The earlier of the receiver and `anotherDate`, determined using [`timeIntervalSince(_:)`](./timeintervalsince%28_%29.md). If the receiver and `anotherDate` represent the same date, returns the receiver.
 

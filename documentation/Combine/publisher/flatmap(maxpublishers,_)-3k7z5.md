@@ -25,11 +25,11 @@ func flatMap<T, P>(maxPublishers: Subscribers.Demand = .unlimited, _ transform: 
 
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Return Value
+## Return Value
 
 A publisher that transforms elements from an upstream  publisher into a publisher of that element’s type.
 
-#### Discussion
+## Discussion
 
 Combine‘s `flatMap(maxPublishers:_:)` operator performs a similar function to the [`flatMap(_:)`](../../Swift/sequence/flatmap%28_%29-jo2y.md) operator in the Swift standard library, but turns the elements from one kind of publisher into a new publisher that is sent to subscribers. Use `flatMap(maxPublishers:_:)` when you want to create a new series of events for downstream subscribers based on the received value. The closure creates the new [`Publisher`](../publisher.md) based on the received value. The new [`Publisher`](../publisher.md) can emit more than one event, and successful completion of the new [`Publisher`](../publisher.md) does not complete the overall stream. Failure of the new [`Publisher`](../publisher.md) causes the overall stream to fail.
 

@@ -23,7 +23,7 @@ func prepare(forError error: any Error)
 - (void) prepareForError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 While your file provider is enumerating its content, the system calls this method whenever your file provider returns an [`NSFileProviderErrorDomain`](../../FileProvider/nsfileprovidererrordomain.md) error with a [`NSFileProviderError.Code.notAuthenticated`](../../FileProvider/nsfileprovidererror/code/notauthenticated.md) code. Use this method to present an interface to authenticate the user.
 

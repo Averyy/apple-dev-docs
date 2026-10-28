@@ -5,7 +5,7 @@
 
 The keys you include in your global vocabulary file to describe app-specific terms.
 
-#### Overview
+## Overview
 
 The `ParameterVocabularies` key contains the custom terminology that is global to all users of your app. This key contains an array of dictionaries, each of which defines a set of terms and the intent properties to which those terms apply. The keys for the dictionary are as follows:
 

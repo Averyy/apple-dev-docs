@@ -25,7 +25,7 @@ var damping: CGFloat { get set }
 @property (nonatomic) CGFloat damping;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. Increasing the value increases the energy loss with each oscillation: there will be fewer and smaller oscillations and time taken for the spring to settle will decrease.
 

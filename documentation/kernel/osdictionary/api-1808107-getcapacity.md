@@ -11,11 +11,11 @@ Returns the number of objects the dictionary can store without reallocating.
 virtual unsigned int getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 The number objects the dictionary can store without reallocating.
 
-#### Overview
+## Overview
 
 OSDictionary objects grow when full to accommodate additional key/object pairs. See getCapacityIncrement and ensureCapacity.
 

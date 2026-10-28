@@ -25,7 +25,7 @@ var valueLists: [String : [NSMetadataQueryAttributeValueTuple]] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSArray<NSMetadataQueryAttributeValueTuple *> *> * valueLists;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a dictionary of `NSMetadataQueryAttributeValueTuple` objects.
 

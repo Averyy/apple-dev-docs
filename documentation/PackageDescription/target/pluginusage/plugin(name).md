@@ -15,7 +15,7 @@ Specifies use of a plugin target in the same package.
 static func plugin(name: String) -> Target.PluginUsage
 ```
 
-#### Return Value
+## Return Value
 
 A `PluginUsage` instance.
 

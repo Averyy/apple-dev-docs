@@ -24,11 +24,11 @@ class func motionBlur() -> any CIFilter & CIMotionBlur
 + (CIFilter<CIMotionBlur> *) motionBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the motion blur filter to an image. The filter uses the angle of a single row of pixels to determine the direction of the motion effect.
 

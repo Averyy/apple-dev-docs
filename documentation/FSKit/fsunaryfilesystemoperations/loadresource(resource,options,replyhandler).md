@@ -24,7 +24,7 @@ func loadResource(resource: FSResource, options: FSTaskOptions) async throws -> 
 - (void) loadResource:(FSResource *) resource options:(FSTaskOptions *) options replyHandler:(void (^)(FSVolume *volume, NSError *err)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method by inspecting the provided resource and verifying it uses a supported format. If the resource does use a supported format, create a subclass of `FSVolume`, clear the container error state, and invoke the `reply` callback, passing your volume as a parameter. If loading can’t proceed, invoke `reply` and send an appropriate error as the second parameter.
 

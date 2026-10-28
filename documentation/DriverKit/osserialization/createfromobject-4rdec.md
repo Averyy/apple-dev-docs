@@ -16,11 +16,11 @@
 static OSSerializationPtr createFromObject(OSObjectPtr const object, OSSerializationPortCopyOutHandler copyOutHandler);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSSerialization with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSSerialization object with the serialized data of an object.
 

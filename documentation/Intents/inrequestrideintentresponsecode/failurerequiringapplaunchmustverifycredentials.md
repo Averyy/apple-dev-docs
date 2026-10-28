@@ -23,7 +23,7 @@ case failureRequiringAppLaunchMustVerifyCredentials
 INRequestRideIntentResponseCodeFailureRequiringAppLaunchMustVerifyCredentials
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you require authentication to book rides and the user is not currently authenticated. Do not use this response code for general errors or to force the user to launch your app.
 

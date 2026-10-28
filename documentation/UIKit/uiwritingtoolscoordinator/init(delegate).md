@@ -22,7 +22,7 @@ init(delegate: (any UIWritingToolsCoordinator.Delegate)?)
 - (instancetype) initWithDelegate:(id<UIWritingToolsCoordinatorDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Create the coordinator object during your view’s initialization, and assign the object to your view. Use the [`addInteraction(_:)`](../uiview/addinteraction%28_%29.md) method to add the object to your view.
 

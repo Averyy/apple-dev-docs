@@ -24,11 +24,11 @@ func MusicTrackCopyInsert(_ inSourceTrack: MusicTrack, _ inSourceStartTime: Musi
 extern OSStatus MusicTrackCopyInsert(MusicTrack inSourceTrack, MusicTimeStamp inSourceStartTime, MusicTimeStamp inSourceEndTime, MusicTrack inDestTrack, MusicTimeStamp inDestInsertTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The events in the destination music track, starting at the insertion point, are pushed later in time (that is, away from the start of the track) to make room for the inserted events.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the CarPlay app provides turn-by-turn dir
 - **Name**: `com.apple.developer.carplay-maps` (CarPlay Navigation App)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Apple requires apps with this entitlement to provide turn-by-turn route guidance.
 

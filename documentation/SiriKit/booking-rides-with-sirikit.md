@@ -12,7 +12,7 @@ Add Intents extensions to your app to handle requests to book rides using Siri a
 - Mac Catalyst 13.0+
 - Xcode 17.0+
 
-#### Overview
+## Overview
 
 The app in this sample project demonstrates how to use app extensions to give users the ability to book rides through Siri and Maps. App extensions implement the necessary intent-handling protocols for the ride-booking domain.
 
@@ -20,7 +20,7 @@ For information about the general process of adding an Intents extension to your
 
 The `GetRideStatusHandler` class, which conforms to the [`INGetRideStatusIntentHandling`](../Intents/ingetridestatusintenthandling.md) protocol, contains comments to help you implement the ridesharing domain for your server. It does not include implementation, but has hints about where to perform certain implementation tasks.
 
-##### Test the Sample Code Project
+### Test the Sample Code Project
 
 You can run this sample app in the iOS simulator without special setup. However, a few steps are required to test the app’s functionalities.
 
@@ -34,7 +34,7 @@ To test the app for booking a ride with Maps, open the Maps app, enter a destina
 
 Make sure your simulator location is set to “Apple” for the sample to function correctly. Ride booking will only be functional if the pickup and drop-off locations are within the geographic area specified in `CoverageArea.geojson`.
 
-##### Handle Ride Booking with Siri
+### Handle Ride Booking with Siri
 
 To enable Siri to recognize and respond to ride-booking requests, you must implement classes that conform to the [`INRequestRideIntentHandling`](../Intents/inrequestrideintenthandling.md) protocol. Within the protocol, different methods are responsible for different components of the ride-booking process.
 
@@ -123,7 +123,7 @@ func handle(intent: INRequestRideIntent, completion: @escaping (INRequestRideInt
 }
 ```
 
-##### Show a List of Ride Options in Maps
+### Show a List of Ride Options in Maps
 
 By conforming to the [`INListRideOptionsIntentHandling`](../Intents/inlistrideoptionsintenthandling.md) protocol, you can display different ride options inside the Maps app under the Ride tab. For the Maps context, you don’t need to implement resolve methods. At minimum, you only need to implement the handle method to tell the context what ride options are available, and how to handle ride selection.
 
@@ -162,7 +162,7 @@ func handle(intent: INListRideOptionsIntent, completion: @escaping (INListRideOp
 
 To ensure that the ride options show up in Maps, add the [`INGetRideStatusIntent`](../Intents/ingetridestatusintent.md), [`INListRideOptionsIntent`](../Intents/inlistrideoptionsintent.md), and [`INRequestRideIntent`](../Intents/inrequestrideintent.md) keys to your extension’s `Info.plist` file under IntentsSupported.
 
-##### Customize the Ride Request UI in Siri
+### Customize the Ride Request UI in Siri
 
 You can create a custom UI for Siri or Maps to display when a user requests a ride.
 

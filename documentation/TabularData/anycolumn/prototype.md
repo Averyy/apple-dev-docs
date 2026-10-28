@@ -21,7 +21,7 @@ A prototype that creates type-erased columns with the same underlying type as th
 var prototype: any AnyColumnPrototype { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use a type-erased column prototype to create new columns of the same type as the slice’s parent column without explicitly knowing what type it is, by calling the `prototype` property’s [`makeColumn(capacity:)`](../anycolumnprototype/makecolumn%28capacity%29.md) method.
 

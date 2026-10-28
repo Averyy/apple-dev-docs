@@ -34,7 +34,7 @@ Services provided by an app that require it to run in the background.
 - `screen-capture`
 - `voip`
 
-#### Discussion
+## Discussion
 
 To add this key to your Information Property List, enable the Background Modes capability in Xcode. For information on configuring background execution modes and the platforms that support them, see [Configuring background execution modes](../../Xcode/configuring-background-execution-modes.md).
 

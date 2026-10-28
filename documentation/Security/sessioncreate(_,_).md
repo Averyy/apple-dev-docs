@@ -20,11 +20,11 @@ func SessionCreate(_ flags: SessionCreationFlags, _ attributes: SessionAttribute
 OSStatus SessionCreate(SessionCreationFlags flags, SessionAttributeBits attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sessions API Result Codes](./sessions-api-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Upon completion, the new session contains the calling process (and none other). You can’t create a session for someone else, and can’t avoid being placed into the new session. This is (currently) the only call that changes a process’s session membership.
 

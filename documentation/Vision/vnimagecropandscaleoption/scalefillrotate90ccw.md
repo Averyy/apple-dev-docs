@@ -16,7 +16,7 @@ case scaleFillRotate90CCW
 VNImageCropAndScaleOptionScaleFillRotate90CCW
 ```
 
-#### Discussion
+## Discussion
 
 This option optimizes portrait images to fill into landscape buffers for algorithms that are rotation agnostic.
 

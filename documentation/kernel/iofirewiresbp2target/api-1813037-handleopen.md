@@ -14,11 +14,11 @@ virtual bool handleOpen(
  void *arg );
 ```
 
-#### Return Value
+## Return Value
 
 Return true if the open was successful, false otherwise.
 
-#### Overview
+## Overview
 
 See IOService for discussion.
 

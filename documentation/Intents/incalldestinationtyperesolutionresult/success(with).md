@@ -24,11 +24,11 @@ class func success(with resolvedCallDestinationType: INCallDestinationType) -> S
 + (instancetype) successWithResolvedCallDestinationType:(INCallDestinationType) resolvedCallDestinationType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallDestinationTypeResolutionResult`](../incalldestinationtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when you recognize the specified type of call destination and are able to use it to resolve an intent.
 

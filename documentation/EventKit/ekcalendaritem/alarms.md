@@ -28,7 +28,7 @@ var alarms: [EKAlarm]? { get set }
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the calendar item has no alarms.
 

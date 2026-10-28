@@ -23,7 +23,7 @@ func invalidateItems(at indexPaths: [IndexPath])
 - (void) invalidateItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to identify the specific cells of your layout that require updates. The cells you specify are added to the array in the [`invalidatedItemIndexPaths`](./invalidateditemindexpaths.md) property.
 

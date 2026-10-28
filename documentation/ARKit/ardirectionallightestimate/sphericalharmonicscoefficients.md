@@ -20,7 +20,7 @@ var sphericalHarmonicsCoefficients: Data { get }
 @property (nonatomic, copy, readonly) NSData * sphericalHarmonicsCoefficients;
 ```
 
-#### Discussion
+## Discussion
 
 Spherical harmonics provide a compact mathematical model for the global lighting environment around a point in space, describing the distribution and colors of multiple directional light sources. When used in a renderer that supports environment-based lighting, spherical harmonics provide much less high-frequency detail than a cube map texture, but make much more efficient use of GPU resources.
 

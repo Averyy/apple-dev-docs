@@ -25,7 +25,7 @@ var speechString: String { get }
 @property (nonatomic, readonly) NSString * speechString;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change an utterance’s text after initializaiton. If you want the speech synthesizer to speak different text, create a new utterance.
 

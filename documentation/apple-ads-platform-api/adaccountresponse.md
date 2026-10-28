@@ -15,11 +15,11 @@ The response envelope ad account operations return.
 object AdAccountResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AdAccountResponse` object wraps the result of create, read, and update operations on a single `AdAccount`. On success, the response populates `result` with the full `AdAccount` object and leaves `error` null. On failure, `error` describes the problem and `result` is null.
 
-##### Example
+### Example
 
 ```json
 {

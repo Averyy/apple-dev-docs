@@ -18,7 +18,7 @@ Sets the area in the video frame in which the dock accessory tracks a subject.
 final func setRegionOfInterest(_ region: CGRect) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The region of interest is an limited area within the video frame that DockKit tracks a subject in. The default value is `(0,0,1,1)`, which indicates that the whole frame is of interest.
 

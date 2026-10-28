@@ -24,7 +24,7 @@ var dpad: GCControllerDirectionPad { get }
 @property (nonatomic, strong, readonly) GCControllerDirectionPad * dpad;
 ```
 
-#### Discussion
+## Discussion
 
 The directional pad in the micro gamepad profile reports analog directional information.
 

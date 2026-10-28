@@ -23,11 +23,11 @@ init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrie
 - (instancetype) initWithTransitionStyle:(UIPageViewControllerTransitionStyle) style navigationOrientation:(UIPageViewControllerNavigationOrientation) navigationOrientation options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized page view controller.
 
-#### Discussion
+## Discussion
 
 After initialization, use the [`setViewControllers(_:direction:animated:completion:)`](./setviewcontrollers%28_,direction,animated,completion%29.md) method to set the initial view controllers.
 

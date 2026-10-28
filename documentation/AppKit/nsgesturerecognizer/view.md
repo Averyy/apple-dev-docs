@@ -19,7 +19,7 @@ var view: NSView? { get }
 @property (readonly, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 To attach a gesture recognizer to a view, call the [`addGestureRecognizer(_:)`](../nsview/addgesturerecognizer%28_%29.md) method of the view. If the gesture recognizer is not attached to a view, the value in this property is `nil`.
 

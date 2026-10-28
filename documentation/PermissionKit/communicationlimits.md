@@ -23,7 +23,7 @@ final class CommunicationLimits
 
 - [Creating a communication experience](./creating-a-communication-experience.md)
 
-#### Overview
+## Overview
 
 Obtain an `AsyncSequence` to handle communication permission responses after launching your app.
 

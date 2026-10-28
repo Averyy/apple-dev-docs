@@ -15,11 +15,11 @@ Tells the system what types of networking media your driver supports.
 virtual kern_return_t ReportAvailableMediaTypes(const IOUserNetworkMediaType *mediaTypes, uint32_t count);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Apple recommends that you include [`kIOUserNetworkMediaEthernetAuto`](../kiousernetworkmediaethernetauto.md) as one of the media types you support. That media type lets the system configure the networking stack automatically on your behalf, based on the other media types you specify.
 

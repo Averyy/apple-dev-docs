@@ -24,7 +24,7 @@ class func dotProduct(of v1: VNVector, vector v2: VNVector) -> Double
 + (double) dotProductOfVector:(VNVector *) v1 vector:(VNVector *) v2;
 ```
 
-#### Return Value
+## Return Value
 
 The dot product value.
 

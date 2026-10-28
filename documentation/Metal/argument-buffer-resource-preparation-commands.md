@@ -5,7 +5,7 @@
 
 Load individual resources and multiple resources within a heap into GPU memory so that they’re available to shaders through argument buffers.
 
-#### Overview
+## Overview
 
 These methods encode commands that load resources into GPU memory, making them accessible to your shaders through argument buffers. To load an individual resource, call the [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method, or another resource-based method. Alternatively, you can load all the resources within a heap by calling the [`useHeap(_:stages:)`](./mtlrendercommandencoder/useheap%28_,stages%29.md) method or another heap-based method.
 

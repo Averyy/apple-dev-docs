@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 After canceling a request, you can call the [`calculate(completionHandler:)`](./calculate%28completionhandler%29.md) method again (if you want) to restart the request process.
 

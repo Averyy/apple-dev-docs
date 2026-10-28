@@ -19,7 +19,7 @@ Returns the text color at the index position.
 func textColor(at index: String.Index) -> (CGColor?, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the text color and range to which it applies.
 

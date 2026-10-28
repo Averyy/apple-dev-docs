@@ -18,7 +18,7 @@ Ends an active Live Activity.
 func end(using contentState: Activity<Attributes>.ContentState? = nil, dismissalPolicy: ActivityUIDismissalPolicy = .default) async
 ```
 
-#### Discussion
+## Discussion
 
 End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [Background Tasks](../../BackgroundTasks/BackgroundTasks.md).
 

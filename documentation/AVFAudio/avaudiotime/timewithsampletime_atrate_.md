@@ -21,7 +21,7 @@ Creates an audio time object with the specified sample time and sample rate.
 + (instancetype) timeWithSampleTime:(AVAudioFramePosition) sampleTime atRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

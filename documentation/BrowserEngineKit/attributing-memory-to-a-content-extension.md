@@ -5,13 +5,13 @@
 
 Adhere to operating-system limits on GPU memory use.
 
-#### Overview
+## Overview
 
 A web browser’s GPU extension is limited to a small total memory allocation. To allocate large amounts of memory in a GPU extension on behalf of a content extension, attribute the memory to that content extension.
 
 The GPU and the content extension both need specific memory transfer entitlements to participate in memory attribution. In the content extension, you create a token that identifies the extension to the kernel. Pass the token to the GPU using your interprocess communication (IPC) channel. Then, in the GPU extension, use the token to assign ownership of the memory region to the content process.
 
-#### Use the correct entitlements
+## Use the correct entitlements
 
 To participate in memory attribution, your content extension needs both the web-browser content extension entitlement `com.apple.developer.web-browser-engine.webcontent` and the `com.apple.developer.memory.transfer_accept` entitlement.
 
@@ -21,7 +21,7 @@ Set the value for each of these entitlements to a string that matches the bundle
 
 For more information about the entitlements web browser extensions use, see [Designing your browser architecture](./designing-your-browser-architecture.md).
 
-#### Create a task identity token
+## Create a task identity token
 
 Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [XPC](../XPC/XPC.md). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
 
@@ -39,7 +39,7 @@ if (result == KERN_SUCCESS) {
 }
 ```
 
-#### Attribute memory to the content extension
+## Attribute memory to the content extension
 
 Receive the task identity token in the GPU extension and use it to attribute memory to the content extension.
 
@@ -70,7 +70,7 @@ if (result != KERN_SUCCESS) {
 }
 ```
 
-#### Free the memory when the content extension finishes
+## Free the memory when the content extension finishes
 
 When the content extension exits, whether normally or due to an error, free the memory that’s attributed to it in your GPU extension.
 

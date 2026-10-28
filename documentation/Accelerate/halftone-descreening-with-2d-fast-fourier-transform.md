@@ -10,7 +10,7 @@ Reduce or remove periodic artifacts from images.
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 Accelerate’s vDSP module provides functions to perform 2D fast Fourier transforms (FFTs) on matrices of data, such as images. You can exploit the amplitude peaks in the frequency domain of periodic patterns, such as halftone screens, to reduce or remove such artifacts from images. The example below shows an image with halftone artifacts (left) and the same image with the halftone artifacts reduced (right):
 
@@ -22,7 +22,7 @@ The sample app reduces halftone artifacts from a source image by first performin
 
 The descreening operation zeroes frequency-domain values in the source image that correspond to the bright peaks in the halftone sample’s frequency-domain values.
 
-##### Convert the image data to a split-complex vector
+### Convert the image data to a split-complex vector
 
 The vImage [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) function converts the source Core Graphics image to an array of single-precision values. The sample app creates its own backing storage, `pixelsStorage`, rather than using [`vImageBuffer_Init(_:_:_:_:_:)`](./vimagebuffer_init%28_,_,_,_,_%29.md) to ensure that the vImage buffer doesn’t contain any additional padding bytes.
 
@@ -57,7 +57,7 @@ pixelsStorage.withMemoryRebound(to: DSPComplex.self) {
 }
 ```
 
-##### Create the FFT setup object
+### Create the FFT setup object
 
 The sample app creates an FFT setup object that contains all the information required to perform the forward and inverse 2D FFT operations. Creating this setup object can be expensive, so the sample only performs this initialization once.
 
@@ -69,7 +69,7 @@ static let fftSetUp = vDSP.FFT2D(width: imageWidth,
                                  ofType: DSPSplitComplex.self)!
 ```
 
-##### Prepare arrays for transformed image data
+### Prepare arrays for transformed image data
 
 Rather than allocating and deallocating memory with each call to the descreening code, the sample app declares several `SplitComplex` structures and an array that the descreening operation uses.
 
@@ -85,7 +85,7 @@ var halftoneSampleAmplitudes = [Float](repeating: 0,
                                        count: HalftoneDescreener.complexValuesCount)
 ```
 
-##### Perform forward 2D FFTs on the image data
+### Perform forward 2D FFTs on the image data
 
 The [`transform(input:output:direction:)`](./vdsp/fft/transform%28input,output,direction%29.md) function performs a forward 2D FFT on the image data, and creates the frequency-domain representation of the image.
 
@@ -104,7 +104,7 @@ vDSP.squareMagnitudes(halftoneFrequencyDomainPixels.dspSplitComplex,
                       result: &halftoneSampleAmplitudes)
 ```
 
-##### Zero the peaks in the halftone sample magnitude
+### Zero the peaks in the halftone sample magnitude
 
 The sample app reduces the halftone screen artifacts by manipulating the magnitude of the frequency-domain data for the halftone sample.
 
@@ -127,7 +127,7 @@ vDSP.clip(halftoneSampleAmplitudes,
           result: &halftoneSampleAmplitudes)
 ```
 
-##### Descreen the source image
+### Descreen the source image
 
 The app multiplies the frequency-domain data of the source image by the values in `halftoneSampleAmplitude`, thus removing or reducing the halftone screen.
 
@@ -137,7 +137,7 @@ vDSP.multiply(imageFrequencyDomainPixels.dspSplitComplex,
               result: &imageFrequencyDomainPixels.dspSplitComplex)
 ```
 
-##### Perform an inverse 2D FFT on the frequency domain data
+### Perform an inverse 2D FFT on the frequency domain data
 
 The [`transform(input:output:direction:)`](./vdsp/fft/transform%28input,output,direction%29.md) function performs an inverse FFT on the frequency-domain image data to generate the descreened spatial-domain image.
 
@@ -147,7 +147,7 @@ fftSetUp.transform(input: imageFrequencyDomainPixels.dspSplitComplex,
                    direction: .inverse)
 ```
 
-##### Generate an image from the split-complex vector
+### Generate an image from the split-complex vector
 
 Finally, the app creates a displayable image from the spatial-domain representation of the treated source image.
 

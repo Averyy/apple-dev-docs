@@ -19,7 +19,7 @@ A document that supports both reading and writing.
 protocol Document : ReadableDocument, WritableDocument
 ```
 
-#### Overview
+## Overview
 
 `Document` is a convenience protocol that combines [`ReadableDocument`](./readabledocument.md) and [`WritableDocument`](./writabledocument.md). Conform to it when your document can both open and save files:
 

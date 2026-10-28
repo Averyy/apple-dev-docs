@@ -22,7 +22,7 @@ nonisolated
 func scrollTargetLayout(isEnabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier works together with the [`ViewAlignedScrollTargetBehavior`](../viewalignedscrolltargetbehavior.md) to ensure that scroll views align to view based content.
 

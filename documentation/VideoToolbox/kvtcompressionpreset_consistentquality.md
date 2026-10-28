@@ -22,7 +22,7 @@ let kVTCompressionPreset_ConsistentQuality: CFString
 extern CFStringRef const kVTCompressionPreset_ConsistentQuality;
 ```
 
-#### Discussion
+## Discussion
 
 A preset to achieve consistent quality encoding across frames.
 

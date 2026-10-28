@@ -25,7 +25,7 @@ func CFArrayAppendArray(_ theArray: CFMutableArray!, _ otherArray: CFArray!, _ o
 extern void CFArrayAppendArray(CFMutableArrayRef theArray, CFArrayRef otherArray, CFRange otherRange);
 ```
 
-#### Discussion
+## Discussion
 
 The new values are retained by `theArray` using the retain callback provided when `theArray` was created. If the values are not of the type expected by the retain callback, the behavior is undefined. The values are assigned to the indices one larger than the previous largest index in `theArray`, and beyond, and the count of `theArray` is increased by `otherRange.length`. The values are assigned new indices in `theArray` from smallest to largest index in the order in which they appear in `otherArray`.
 

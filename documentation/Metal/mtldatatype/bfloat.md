@@ -24,7 +24,7 @@ case bfloat
 MTLDataTypeBFloat
 ```
 
-#### Discussion
+## Discussion
 
 The 16-bit value stores one sign bit, eight exponent bits, and seven mantissa bits.
 

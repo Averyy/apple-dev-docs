@@ -24,7 +24,7 @@ convenience init(kernelWidth: Int, kernelHeight: Int, inputFeatureChannels: Int,
 + (instancetype) cnnConvolutionDescriptorWithKernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight inputFeatureChannels:(NSUInteger) inputFeatureChannels outputFeatureChannels:(NSUInteger) outputFeatureChannels neuronFilter:(const MPSCNNNeuron *) neuronFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNConvolution`](../mpscnnconvolution.md) object or `nil`, if failure.
 

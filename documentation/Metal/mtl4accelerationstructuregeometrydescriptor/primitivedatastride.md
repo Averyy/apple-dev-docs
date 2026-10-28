@@ -24,7 +24,7 @@ var primitiveDataStride: Int { get set }
 @property (nonatomic) NSUInteger primitiveDataStride;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the stride is at least [`primitiveDataElementSize`](./primitivedataelementsize.md) in size and a multiple of 4 bytes.
 

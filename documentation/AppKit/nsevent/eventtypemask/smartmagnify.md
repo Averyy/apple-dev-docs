@@ -19,7 +19,7 @@ static var smartMagnify: NSEvent.EventTypeMask { get }
 NSEventMaskSmartMagnify
 ```
 
-#### Discussion
+## Discussion
 
 In response to this event, magnify the content appropriately for your app. For example, you might zoom in on a specific paragraph or image.
 

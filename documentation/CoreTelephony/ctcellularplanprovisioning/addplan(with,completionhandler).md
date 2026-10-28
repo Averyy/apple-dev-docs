@@ -25,11 +25,11 @@ func addPlan(with request: CTCellularPlanProvisioningRequest) async -> CTCellula
 - (void) addPlanWith:(CTCellularPlanProvisioningRequest *) request completionHandler:(void (^)(CTCellularPlanProvisioningAddPlanResult result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Once your app calls this method, an iOS wizard guides the user through the process of installing and configuration an eSIM.
 
-##### Installing an eSIM in the Background
+### Installing an eSIM in the Background
 
 The user may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](../../UIKit/uiapplication/beginbackgroundtask%28expirationhandler%29.md) to perform the eSIM installation as a background task.
 

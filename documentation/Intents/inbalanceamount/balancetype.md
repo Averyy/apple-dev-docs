@@ -31,7 +31,7 @@ var balanceType: INBalanceType { get }
 @property (atomic, assign, readonly) INBalanceType balanceType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine how to interpret the value in the [`amount`](./amount.md) property.
 

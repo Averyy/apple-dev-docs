@@ -21,7 +21,7 @@ A type that supplies a custom description for playground logging.
 protocol CustomPlaygroundDisplayConvertible
 ```
 
-#### Overview
+## Overview
 
 Playground logging can generate, at a minimum, a structured description of any type. If you want to provide a custom description of your type to be logged in place of the default description, conform to the `CustomPlaygroundDisplayConvertible` protocol.
 
@@ -44,7 +44,7 @@ Playground logging generates a richer, more specialized description of core type
 
 Playground logging may also be able to support specialized descriptions of other types.
 
-#### Conforming to the CustomPlaygroundDisplayConvertible Protocol
+## Conforming to the CustomPlaygroundDisplayConvertible Protocol
 
 To add `CustomPlaygroundDisplayConvertible` conformance to your custom type, implement the `playgroundDescription` property. If your implementation returns an instance of one of the types above, that type’s specialized description is used. If you return any other type, a structured description is generated.
 

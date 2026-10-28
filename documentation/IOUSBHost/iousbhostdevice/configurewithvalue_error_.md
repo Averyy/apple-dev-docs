@@ -16,7 +16,7 @@ Selects a new configuration for the device and registers the interfaces for matc
 - (BOOL) configureWithValue:(NSUInteger) value error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 

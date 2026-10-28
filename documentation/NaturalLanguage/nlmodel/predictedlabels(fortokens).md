@@ -25,7 +25,7 @@ func predictedLabels(forTokens tokens: [String]) -> [String]
 - (NSArray<NSString *> *) predictedLabelsForTokens:(NSArray<NSString *> *) tokens;
 ```
 
-#### Return Value
+## Return Value
 
 The model’s predicted labels for each of the input strings.
 

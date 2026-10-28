@@ -19,11 +19,11 @@ init(ovalIn rect: NSRect)
 + (NSBezierPath *) bezierPathWithOvalInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSBezierPath` new path object with the oval path.
 
-#### Discussion
+## Discussion
 
 If the `aRect` parameter specifies a square, the inscribed path is a circle. The path is constructed by starting in the lower-right quadrant of the rectangle and adding arc segments counterclockwise to complete the oval.
 

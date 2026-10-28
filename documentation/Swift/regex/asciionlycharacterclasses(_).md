@@ -21,7 +21,7 @@ Returns a regular expression that matches only ASCII characters when matching ch
 func asciiOnlyCharacterClasses(_ useASCII: Bool = true) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 

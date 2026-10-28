@@ -19,7 +19,7 @@ var tag: Int { get set }
 @property NSInteger tag;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is selected, the value in this property is `0`.
 

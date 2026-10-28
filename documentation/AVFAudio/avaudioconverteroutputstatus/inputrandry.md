@@ -25,7 +25,7 @@ case inputRanDry
 AVAudioConverterOutputStatus_InputRanDry
 ```
 
-#### Discussion
+## Discussion
 
 The output buffer contains as much data as the framework can convert.
 

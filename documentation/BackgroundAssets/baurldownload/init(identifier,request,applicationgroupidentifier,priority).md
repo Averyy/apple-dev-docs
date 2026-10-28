@@ -22,7 +22,7 @@ convenience init(identifier: String, request: URLRequest, applicationGroupIdenti
 - (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request applicationGroupIdentifier:(NSString *) applicationGroupIdentifier priority:(BADownloaderPriority) priority;
 ```
 
-#### Discussion
+## Discussion
 
 The system requires that all URL requests use Hypertext Transfer Protocol Secure (HTTPS).
 

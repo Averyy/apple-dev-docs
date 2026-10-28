@@ -19,11 +19,11 @@ init(imageContent: Data)
 - (instancetype) initWithImageContent:(NSData *) imageContent;
 ```
 
-#### Return Value
+## Return Value
 
 A new adaptive image glyph with the identifier and details from the image data.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an adaptive image glyph from data you previously saved.
 

@@ -25,7 +25,7 @@ init(dataRepresentation data: Data, relativeTo baseURL: URL?)
 - (instancetype) initWithDataRepresentation:(NSData *) data relativeToURL:(NSURL *) baseURL;
 ```
 
-#### Discussion
+## Discussion
 
 If the data representation is not a legal URL string as ASCII bytes, the URL object may not behave as expected.
 

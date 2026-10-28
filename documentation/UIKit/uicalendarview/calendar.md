@@ -22,7 +22,7 @@ var calendar: Calendar { get set }
 @property (nonatomic, copy, nonnull) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`current`](../../Foundation/nscalendar/current.md), which is the user’s current calendar set in Settings.
 

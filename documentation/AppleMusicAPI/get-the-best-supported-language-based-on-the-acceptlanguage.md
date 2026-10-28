@@ -9,9 +9,9 @@ Fetch the best supported language for a storefront from a list.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

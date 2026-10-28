@@ -23,7 +23,7 @@ case ordered
 PHPickerConfigurationSelectionOrdered
 ```
 
-#### Discussion
+## Discussion
 
 This option notifies the app of photo selections when a person taps the Add button.
 

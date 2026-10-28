@@ -19,7 +19,7 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized `NSSound` instance.
 

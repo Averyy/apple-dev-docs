@@ -19,7 +19,7 @@ var animationCurve: NSAnimation.Curve { get set }
 @property NSAnimationCurve animationCurve;
 ```
 
-#### Discussion
+## Discussion
 
 The animation curve describes the relative frame rate over the course of the animation; predefined curves are linear, ease in (slow down near end), ease out (slowly speed up at start), and ease in-ease out (S-curve). Changing the value of this property changes the timing of an in-progress animation. The value of this property is ignored if the delegate implements the [`animation(_:valueForProgress:)`](../nsanimationdelegate/animation%28_,valueforprogress%29.md) method.
 

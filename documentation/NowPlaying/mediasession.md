@@ -26,7 +26,7 @@ class MediaSession<Representable> where Representable : MediaSessionRepresentabl
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use a session to represent media playback happening on the current device. The session automatically observes your [`MediaSessionRepresentable`](./mediasessionrepresentable.md) model and syncs changes to the system’s Now Playing interface.
 

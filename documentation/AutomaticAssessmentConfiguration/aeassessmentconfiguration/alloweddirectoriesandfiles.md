@@ -20,7 +20,7 @@ var allowedDirectoriesAndFiles: Set<URL>? { get set }
 @property (nonatomic, copy, nullable) NSSet<NSURL *> * allowedDirectoriesAndFiles;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`, which leaves Finder unrestricted. Setting a non-`nil` set hides everything except the given locations; pass an empty set to hide all of them.
 

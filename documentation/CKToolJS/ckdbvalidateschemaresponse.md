@@ -18,7 +18,7 @@ dictionary CKDBValidateSchemaResponse {
 };
 ```
 
-#### Overview
+## Overview
 
 Contains the status of validation and an error message if the schema is not valid.
 

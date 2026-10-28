@@ -20,11 +20,11 @@ func SecStaticCodeCreateWithPathAndAttributes(_ path: CFURL, _ flags: SecCSFlags
 OSStatus SecStaticCodeCreateWithPathAndAttributes(CFURLRef path, SecCSFlags flags, CFDictionaryRef attributes, SecStaticCodeRef*staticCode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A static code object is not inherently linked to running code in the system.
 

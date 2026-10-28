@@ -23,7 +23,7 @@ var contentOffsetAdjustment: CGPoint { get set }
 @property (nonatomic) CGPoint contentOffsetAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to update the content offset of the collection view. The default value of this property is [`CGPointZero`](../../CoreGraphics/cgpointzero.md). Changing the value causes the collection view to add the specified x and y values to its [`contentOffset`](../uiscrollview/contentoffset.md) property. Thus, positive values increase the content offset and negative values decrease it.
 

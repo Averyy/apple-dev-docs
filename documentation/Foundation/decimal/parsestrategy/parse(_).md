@@ -23,11 +23,11 @@ func parse(_ value: String) throws -> Format.FormatInput
 
 Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` is `Decimal`.
 
-#### Return Value
+## Return Value
 
 The parsed integer value.
 
-#### Discussion
+## Discussion
 
 Use this method to repeatedly parse decimal strings with the same [`Decimal.ParseStrategy`](../parsestrategy.md). To parse a single decimal string, use the initializers inherited from [`Decimal`](../../decimal.md) that take a [`String`](../../../Swift/string.md) and a [`Decimal.FormatStyle`](../formatstyle.md) as parameters.
 

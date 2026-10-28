@@ -24,7 +24,7 @@ func JSObjectGetArrayBufferByteLength(_ ctx: JSContextRef!, _ object: JSObjectRe
 size_t JSObjectGetArrayBufferByteLength(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes in the data object.
 

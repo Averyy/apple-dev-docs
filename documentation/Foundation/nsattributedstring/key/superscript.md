@@ -15,7 +15,7 @@ The superscript of the text.
 static let superscript: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing an integer. The default value is `0`.
 

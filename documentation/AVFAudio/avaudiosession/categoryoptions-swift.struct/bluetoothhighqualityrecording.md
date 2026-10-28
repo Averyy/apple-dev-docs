@@ -21,7 +21,7 @@ static var bluetoothHighQualityRecording: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionBluetoothHighQualityRecording
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this option enables full-bandwidth audio when the Bluetooth route supports it, such as on certain AirPods models. You can combine it with the [`allowBluetoothHFP`](./allowbluetoothhfp.md) option, which the audio session uses as a fallback when the audio route doesn’t support the feature. You can request high-quality recording only when using the [`default`](../mode-swift.struct/default.md) audio session mode.
 

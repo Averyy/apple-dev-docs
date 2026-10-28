@@ -11,11 +11,11 @@ Fetches a specific campaign by campaign identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to return data for a specific campaign. You can also use a partial fetch as necessary. For more information, see the Use a Partial Fetch section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Get a campaign
+### Payload example: Get a campaign
 
 **Request**:
 

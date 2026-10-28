@@ -23,7 +23,7 @@ var presentationStyle: UIModalPresentationStyle { get }
 @property (nonatomic, readonly) UIModalPresentationStyle presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to the presentation style of the presented view controller. The presentation controller uses this style to determine the initial appearance of the presented content.
 

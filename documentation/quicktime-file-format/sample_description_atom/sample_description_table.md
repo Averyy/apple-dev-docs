@@ -6,7 +6,7 @@
 
 An array of sample descriptions.
 
-#### Overview
+## Overview
 
 While the exact format of the sample description varies by media type, the first four fields of every sample description are the same.
 

@@ -19,7 +19,7 @@ var pullsDown: Bool { get set }
 @property BOOL pullsDown;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the button displays a pull-down menu; otherwise, it displays a pop-up menu. This property does not affect the contents of the menu; it affects only the style of the menu.
 

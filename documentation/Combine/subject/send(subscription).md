@@ -22,7 +22,7 @@ Sends a subscription to the subscriber.
 func send(subscription: any Subscription)
 ```
 
-#### Discussion
+## Discussion
 
 This call provides the [`Subject`](../subject.md) an opportunity to establish demand for any new upstream subscriptions.
 

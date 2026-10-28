@@ -19,11 +19,11 @@ func SKDocumentGetTypeID() -> CFTypeID
 CFTypeID SKDocumentGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFTypeID`](../CoreFoundation/cftypeid.md) object containing the type identifier for the document URL object (of type [`SKDocument`](./skdocument.md)).
 
-#### Discussion
+## Discussion
 
 Search Kit represents document URL objects with the [`SKDocument`](./skdocument.md) opaque type. If your code needs to determine whether a particular data type is a document URL object, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

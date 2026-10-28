@@ -14,7 +14,7 @@ Samples data from three images and projects each along its respective coordinate
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Triplanar Projection (float)**:
 
@@ -112,7 +112,7 @@ Samples data from three images and projects each along its respective coordinate
 | --- | --- |
 | `Out` | Vector4f |
 
-#### Parameter description
+## Parameter description
 
 - **`File X`**: The image file to project from the positive X direction toward the origin.
 - **`File Y`**: The image file to project from the positive Y direction toward the origin.
@@ -122,7 +122,7 @@ Samples data from three images and projects each along its respective coordinate
 - **`Normal`**: The 3D normal vector the node uses for blending; the default is the current object-space surface normal.
 - **`Filter Type`**: The type of texture filtering the node uses; the default is `linear`.
 
-#### Discussion
+## Discussion
 
 Use the `Triplanar Projection` node to blend three different images together based on the vector normal of each point on the object. Areas of the object that are parallel with a coordinate axis cause the node to fully show the respective image. Areas of the object between the coordinate axis cause the node to render a mix of the images based on how close the normal is to each of the axis. The closer the normal is to the normal of a coordinate axis the strong the respective image is in the blend. Below is an example of a simple node graph that uses the `Triplanar Projection` node to blend the same grass image in the X and Y directions, and a tile texture in the Z direction:
 

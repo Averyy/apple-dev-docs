@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Octagonal: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Octagonal
 ```
 
-#### Discussion
+## Discussion
 
 An octagonal recording uses a 45° loudspeaker separation layout. Your channels must be laid out in the following order:
 

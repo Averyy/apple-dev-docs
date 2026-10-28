@@ -25,7 +25,7 @@ let MPMediaItemPropertyPlayCount: String
 extern NSString * const MPMediaItemPropertyPlayCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents a [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type.
 

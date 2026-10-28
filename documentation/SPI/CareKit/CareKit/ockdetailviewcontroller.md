@@ -18,7 +18,7 @@ A view controller that displays a detailed description of a care task.
 class OCKDetailViewController
 ```
 
-#### Overview
+## Overview
 
 The detail view’s content stack view can be populated with arbitrary content.
 

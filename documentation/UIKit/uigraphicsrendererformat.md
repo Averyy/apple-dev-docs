@@ -23,7 +23,7 @@ class UIGraphicsRendererFormat
 @interface UIGraphicsRendererFormat : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIGraphicsRendererFormat`](./uigraphicsrendererformat.md) object, or one of its subclasses ([`UIGraphicsImageRendererFormat`](./uigraphicsimagerendererformat.md) and [`UIGraphicsPDFRendererFormat`](./uigraphicspdfrendererformat.md)), and use it to construct a graphics renderer by providing the format object as a parameter in a [`UIGraphicsRenderer`](./uigraphicsrenderer.md) subclass intializer.
 

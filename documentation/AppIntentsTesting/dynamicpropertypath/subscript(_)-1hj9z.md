@@ -21,7 +21,7 @@ Accesses a collection element by index, without casting.
 subscript(index: Int) -> (any IntentValueExpressing)? { get throws }
 ```
 
-#### Overview
+## Overview
 
 The code below shows the syntactic sugar and the equivalent, desugared, subscript syntax.
 

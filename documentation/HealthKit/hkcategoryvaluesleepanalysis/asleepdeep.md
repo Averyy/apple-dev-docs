@@ -24,7 +24,7 @@ case asleepDeep
 HKCategoryValueSleepAnalysisAsleepDeep
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to stage N3 of the American Academy of Sleep Medicine’s scoring model.
 

@@ -5,11 +5,11 @@
 
 Use a web authentication session to authenticate a user in your app.
 
-#### Overview
+## Overview
 
 Some websites provide, as a service, a secure mechanism for authenticating users. When the user navigates to the site’s authentication URL, the site presents the user with a form to collect credentials. After validating the credentials, the site redirects the user’s browser, typically using a custom scheme, to a URL that indicates the outcome of the authentication attempt.
 
-##### Create a Web Authentication Session
+### Create a Web Authentication Session
 
 You can make use of a web authentication service in your app by initializing an [`ASWebAuthenticationSession`](./aswebauthenticationsession.md) instance with a URL that points to the authentication webpage. The page can be one that you maintain, or one operated by a third party. During initialization, indicate the callback scheme that the page uses to return the authentication outcome:
 
@@ -29,7 +29,7 @@ Use the initializer’s trailing closure to tell the session how to handle the c
 
 In macOS, or if you have a deployment target of iOS 13 or later, the session keeps a strong reference to itself until the authentication process completes to prevent the system from deallocating the closure. For earlier iOS deployment targets, your app needs to keep a strong reference to the session until authentication completes.
 
-##### Provide a Presentation Context
+### Provide a Presentation Context
 
 Your app indicates the window that should act as a presentation anchor for the session by adopting the [`ASWebAuthenticationPresentationContextProviding`](./aswebauthenticationpresentationcontextproviding.md) protocol. From the [`presentationAnchor(for:)`](./aswebauthenticationpresentationcontextproviding/presentationanchor%28for%29.md) method, which is the protocol’s one required method, return the window that should act as the anchor:
 
@@ -47,7 +47,7 @@ After creating the session, set an appropriate context provider instance as the 
 session.presentationContextProvider = viewController
 ```
 
-##### Optionally Request Ephemeral Browsing
+### Optionally Request Ephemeral Browsing
 
 You can configure the session to request ephemeral browsing by setting the session’s [`prefersEphemeralWebBrowserSession`](./aswebauthenticationsession/prefersephemeralwebbrowsersession.md) property to `true`:
 
@@ -61,7 +61,7 @@ Safari always respects the request. In macOS, the user can choose a different de
 
 > **Note**:  When not using an ephemeral session, all cookies except session cookies are available to the browser.
 
-##### Start the Authentication Flow
+### Start the Authentication Flow
 
 After configuring the session, call its [`start()`](./aswebauthenticationsession/start%28%29.md) method:
 
@@ -79,7 +79,7 @@ session.cancel()
 
 When you cancel, the session automatically dismisses the corresponding browser view.
 
-##### Handle the Callback
+### Handle the Callback
 
 After the user authenticates, the authentication provider redirects the browser to a URL that uses the callback scheme. The browser detects the redirect, dismisses itself, and passes the complete URL to your app by calling the closure you specified during initialization.
 

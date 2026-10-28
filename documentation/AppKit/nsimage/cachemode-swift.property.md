@@ -19,7 +19,7 @@ var cacheMode: NSImage.CacheMode { get set }
 @property NSImageCacheMode cacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 The caching mode determines when the image representations use offscreen caches. Offscreen caches speed up rendering time but do so by using extra memory. In the default caching mode (`NSImageCacheDefault`), each image representation chooses the caching technique that produces the fastest drawing times. For example, in the default mode, the `NSPDFImageRep` and `NSEPSImageRep` classes use the `NSImageCacheAlways` mode but the `NSBitmapImageRep` class uses the `NSImageCacheBySize` mode.  For a list of possible values, see [`NSImage.CacheMode`](./cachemode-swift.enum.md). This value is set to `NSImageCacheDefault` by default.
 

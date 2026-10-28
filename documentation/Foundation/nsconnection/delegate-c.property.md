@@ -16,7 +16,7 @@ The receiver’s delegate.
 @property (assign, nullable) id<NSConnectionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A connection’s delegate can process incoming messages itself instead of letting `NSConnection` object handle them. The delegate can also authenticate messages and accept, deny, or modify new connections.
 

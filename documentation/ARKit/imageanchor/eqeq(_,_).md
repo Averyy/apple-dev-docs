@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two image anchors are equal.
 static func == (lhs: ImageAnchor, rhs: ImageAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two image anchors are equal; otherwise, `false`.
 

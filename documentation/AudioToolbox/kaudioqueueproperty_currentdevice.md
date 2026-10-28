@@ -24,7 +24,7 @@ var kAudioQueueProperty_CurrentDevice: AudioQueuePropertyID { get }
 kAudioQueueProperty_CurrentDevice
 ```
 
-#### Discussion
+## Discussion
 
 Value is a read-write [`CFString`](../CoreFoundation/cfstring.md) object representing the unique identifier (UID) of the audio hardware device associated with an audio queue.
 

@@ -23,7 +23,7 @@ func transform<U>(real: U, imaginary: U) -> (real: [Double], imaginary: [Double]
 
 Available when `T` is `Double`.
 
-#### Return Value
+## Return Value
 
 A tuple of two arrays that represents the real and imaginary parts of the output.
 

@@ -11,7 +11,7 @@ Primary implementation of the release mechanism.
 virtual void release() const;
 ```
 
-#### Overview
+## Overview
 
 See OSObject.h for more information. When retainCount == when then call free().
 

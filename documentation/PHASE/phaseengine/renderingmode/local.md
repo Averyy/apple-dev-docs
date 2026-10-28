@@ -19,7 +19,7 @@ case local
 PHASERenderingModeLocal
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the engine is connected to an audio device and renders audio in real-time in the application process. The engine receives all of its inputs, for example, acoustic configuration, from the client. Updating an engine that has a `local` configuration executes any pending API commands locally.
 

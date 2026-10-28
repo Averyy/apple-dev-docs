@@ -23,7 +23,7 @@ typealias VTDecompressionOutputMultiImageCallback = (UnsafeMutableRawPointer?, U
 typedef void (*)(void *, void *, int, enum VTDecodeInfoFlags, struct OpaqueCMTaggedBufferGroup *, CMTime, CMTime) VTDecompressionOutputMultiImageCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t guarantee that it calls this function in display order.
 

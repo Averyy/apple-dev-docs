@@ -19,7 +19,7 @@ object InvalidLifetimeDollarsRefundedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For valid `lifetimeDollarsRefunded` values in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`lifetimeDollarsRefunded`](./lifetimedollarsrefunded.md).
 

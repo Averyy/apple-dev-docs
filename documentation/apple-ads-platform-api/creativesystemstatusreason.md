@@ -32,7 +32,7 @@ string CreativeSystemStatusReason
 - `PAUSED_BY_USER`: The ad creative was paused by the advertiser.
 - `DELETED_BY_USER`: The ad creative was deleted.
 
-#### Discussion
+## Discussion
 
 One or more `CreativeSystemStatusReason` values appear in the `systemStatusReasons` array on a [`Creative`](./creative.md) when `systemStatus` is `INVALID` or `PENDING`. These codes are read-only and system-applied. Use them to diagnose why an ad creative cannot serve and determine the appropriate corrective action.
 

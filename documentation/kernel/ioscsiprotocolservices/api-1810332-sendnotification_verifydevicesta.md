@@ -12,7 +12,7 @@ void SendNotification_VerifyDeviceState (
  void );
 ```
 
-#### Overview
+## Overview
 
 Method called by subclasses when a device state needs to be re-verified due to some bus condition which may have changed the device state.
 

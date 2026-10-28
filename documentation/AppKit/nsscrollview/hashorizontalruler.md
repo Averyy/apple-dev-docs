@@ -19,7 +19,7 @@ var hasHorizontalRuler: Bool { get set }
 @property BOOL hasHorizontalRuler;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this method is [`true`](../../Swift/true.md), the scroll view allocates a horizontal ruler the first time it’s needed.
 

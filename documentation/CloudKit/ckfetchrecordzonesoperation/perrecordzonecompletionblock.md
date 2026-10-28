@@ -21,7 +21,7 @@ The closure to execute as the operation fetches individual record zones.
 @property (nonatomic, copy, nullable) void (^)(CKRecordZoneID *, CKRecordZone *, NSError *) perRecordZoneCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

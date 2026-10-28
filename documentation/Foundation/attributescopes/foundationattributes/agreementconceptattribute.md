@@ -22,11 +22,11 @@ An attribute that represents grammatical agreement for objects that aren’t par
 enum AgreementConceptAttribute
 ```
 
-#### Overview
+## Overview
 
 Use this formatting attribute for cases where you need to inflect text based on a term of address or phrase that’s not part of the inflected text.
 
-##### Agree with a term of address
+### Agree with a term of address
 
 In languages that rely on gender, the words and phrases in a sentence need to grammatically agree. For example, suppose you need to translate the following sentence into Spanish: *Anne is busy.*
 
@@ -67,7 +67,7 @@ let result = AttributedString(localized: resource, options: options)
 // result == "Anne está ocupada."
 ```
 
-##### Agree with a localized phrase
+### Agree with a localized phrase
 
 Using a localized phrase for grammatical agreement is the same as using a term of address except you inflect on an [`InflectionConcept.localizedPhrase(_:)`](../../inflectionconcept/localizedphrase%28_%29.md) instead of a term of address.
 

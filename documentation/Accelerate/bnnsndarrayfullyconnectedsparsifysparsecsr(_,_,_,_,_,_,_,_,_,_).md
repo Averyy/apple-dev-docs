@@ -27,7 +27,7 @@ func BNNSNDArrayFullyConnectedSparsifySparseCSR(_ in_dense_shape: UnsafePointer<
 int BNNSNDArrayFullyConnectedSparsifySparseCSR(const BNNSNDArrayDescriptor *in_dense_shape, const BNNSNDArrayDescriptor *in_column_indices, const BNNSNDArrayDescriptor *in_row_starts, const BNNSNDArrayDescriptor *in_values, BNNSNDArrayDescriptor *out, const BNNSSparsityParameters *sparse_params, const size_t batch_size, void *workspace, const size_t workspace_size, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 The growing energy and performance costs of deep learning are driving its design towards more efficient models to minimize memory footprint and computational overhead. Sparsity is a widely used approach to deliver a significant reduction in model size, and to corresponding gains in computational, storage, and energy efficiency, without significant loss of accuracy.
 

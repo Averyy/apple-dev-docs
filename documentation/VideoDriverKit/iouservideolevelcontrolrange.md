@@ -15,7 +15,7 @@ A control that supports a range of floating-point values.
 struct IOUserVideoLevelControlRange;
 ```
 
-#### Overview
+## Overview
 
 `m_min` is the minimum float value for the level control range. `m_max` is the maximum float value for the level control range.
 

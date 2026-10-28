@@ -25,7 +25,7 @@ typealias vDSP_DFT_Interleaved_SetupD = OpaquePointer
 typedef struct vDSP_DFT_Interleaved_SetupStructD * vDSP_DFT_Interleaved_SetupD;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`vDSP_DFT_Interleaved_CreateSetupD(_:_:_:_:)`](./vdsp_dft_interleaved_createsetupd%28_,_,_,_%29.md) function to initialize and allocate a new setup object. Call [`vDSP_DFT_Interleaved_DestroySetupD(_:)`](./vdsp_dft_interleaved_destroysetupd%28_%29.md) to free the resources associated with a setup object.
 

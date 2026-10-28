@@ -19,7 +19,7 @@ var leftMargin: CGFloat { get set }
 @property CGFloat leftMargin;
 ```
 
-#### Discussion
+## Discussion
 
 This value is measured in points in the user coordinate space.
 

@@ -20,7 +20,7 @@ Retrieves an event using its unique identifier.
 subscript(index: SpatialEventCollection.Event.ID) -> SpatialEventCollection.Event? { get }
 ```
 
-#### Overview
+## Overview
 
 Returns `nil` if the `Event` no longer exists in the collection.
 

@@ -25,7 +25,7 @@ class func windowsLocaleCode(fromLocaleIdentifier localeIdentifier: String) -> U
 + (uint32_t) windowsLocaleCodeFromLocaleIdentifier:(NSString *) localeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The Windows locale code.
 

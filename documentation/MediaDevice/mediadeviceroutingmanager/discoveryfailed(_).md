@@ -22,7 +22,7 @@ final func discoveryFailed(_ error: MediaDeviceError)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when discovery is prevented in an unexpected way. Do not call this function when devices are simply not discovered.
 

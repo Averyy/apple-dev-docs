@@ -21,7 +21,7 @@ func loadComposition(fromFile path: String!) -> Bool
 - (BOOL) loadCompositionFromFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, returns [`false`](../../Swift/false.md); any composition that’s already loaded in the view remains loaded.
 

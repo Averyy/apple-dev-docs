@@ -26,7 +26,7 @@ optional func locationManager(_ manager: CLLocationManager, didEnterRegion regio
 
 - [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
-#### Discussion
+## Discussion
 
 Because regions are a shared application resource, every active location manager object delivers this message to its associated delegate. It doesn’t matter which location manager actually registered the specified region. If multiple location managers share a delegate object, that delegate receives the message multiple times.
 

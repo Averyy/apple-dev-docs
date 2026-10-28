@@ -21,7 +21,7 @@ var distanceRemainingToDisplay: Measurement<UnitLength> { get }
 @property (nonatomic, copy, readonly) NSMeasurement<NSUnitLength *> * distanceRemainingToDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, falls back to `distanceRemaining`.
 

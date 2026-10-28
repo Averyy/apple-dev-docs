@@ -19,11 +19,11 @@ func present(_ viewController: any NSViewController & GKViewController) -> Bool
 - (BOOL) presentViewController:(NSViewController<GKViewController> *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the dashboard is presented. [`false`](../../Swift/false.md) if an error occurs.
 
-#### Discussion
+## Discussion
 
 The dashboard covers the window until the player dismisses it.
 

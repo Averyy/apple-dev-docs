@@ -25,7 +25,7 @@ protocol SCNBoundingVolume : NSObjectProtocol
 @protocol SCNBoundingVolume <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol defines features adopted by both the [`SCNNode`](./scnnode.md) and [`SCNGeometry`](./scngeometry.md) classes.
 
@@ -35,7 +35,7 @@ By default, Scene Kit automatically determines the minimal bounding volumes for 
 
 Scene Kit uses the bounding volume of an object when determining how to render a scene. For example, an [`SCNCamera`](./scncamera.md) object uses the bounding boxes of visible elements in a scene to determine the its depth limits. You can override a bounding volume to change this behavior. For example, if a building model has a long, narrow antenna, the default bounding box includes that feature, so the default camera view for that model will be off-center with respect to the building itself. If you set a new bounding box that includes only the main part of the building, the default camera view will center on the building and ignore the antenna.
 
-##### Getting and Setting Bounding Volumes
+### Getting and Setting Bounding Volumes
 
 Read the [`boundingBox`](./scnboundingvolume/boundingbox.md) or [`boundingSphere`](./scnboundingvolume/boundingsphere.md) property, [`getBoundingBoxMin:max:`](./scnboundingvolume/getboundingboxmin_max_.md) or [`getBoundingSphereCenter:radius:`](./scnboundingvolume/getboundingspherecenter_radius_.md) methods in Objective-C, to retrieve information about an object’s bounding box or sphere. To override the automatically determined bounding volume of an object, set a new value for the [`boundingBox`](./scnboundingvolume/boundingbox.md) property, the [`setBoundingBoxMin:max:`](./scnboundingvolume/setboundingboxmin_max_.md) method in Objective-C.
 

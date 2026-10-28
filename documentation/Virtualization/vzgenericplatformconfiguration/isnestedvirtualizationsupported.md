@@ -19,7 +19,7 @@ class var isNestedVirtualizationSupported: Bool { get }
 @property (class, readonly, getter=isNestedVirtualizationSupported) BOOL nestedVirtualizationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Nested virtualization is available for Mac with the M3 chip, and later.
 

@@ -5,7 +5,7 @@
 
 Keys that contain information about a playlist.
 
-#### Overview
+## Overview
 
 Use these keys with the [`canFilter(byProperty:)`](./mpmediaentity/canfilter%28byproperty%29.md) and [`value(forProperty:)`](./mpmediaentity/value%28forproperty%29.md) methods to obtain information about a playlist. You can use properties described as “filterable” to build media property predicates (see [`MPMediaPropertyPredicate`](./mpmediapropertypredicate.md)).
 

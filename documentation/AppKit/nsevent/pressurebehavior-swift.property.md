@@ -19,7 +19,7 @@ var pressureBehavior: NSEvent.PressureBehavior { get }
 @property (readonly) NSPressureBehavior pressureBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 This property describes the behavior and progression of an event of type [`NSEvent.EventType.pressure`](./eventtype/pressure.md). The value of this property indicates how the pressure event behaves, including actuations, pressure-level reporting, and stage transitions.
 

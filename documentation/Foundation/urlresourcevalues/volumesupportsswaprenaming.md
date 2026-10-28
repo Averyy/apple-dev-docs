@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume supports swapping source and t
 var volumeSupportsSwapRenaming: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the volume supports the `RENAME_SWAP` option of the `renamex_np(2)` system call.
 

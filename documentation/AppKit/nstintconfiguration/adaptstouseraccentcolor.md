@@ -19,7 +19,7 @@ var adaptsToUserAccentColor: Bool { get }
 @property (readonly) BOOL adaptsToUserAccentColor;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `YES`, the tint configuration alters it effect based on the user’s preferred accent color. Otherwise, the tint configuration produces a constant effect regardless of the accent color preference.
 

@@ -10,13 +10,13 @@ Create an entity that tracks and follows head movement in an immersive scene.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample uses world-tracking data from [ARKit](../ARKit/ARKit.md) in visionOS to create and display a 3D entity that dynamically moves in front of a person’s view. As the following video shows, the floating sphere’s position updates based on the person’s head movement, to ensure the object stays visible and smoothly follows their view:
 
 [Video: A video of a visionOS app in Simulator, displaying a translucent window and a cyan sphere that moves to stay in view as the person moves their head.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-head-tracking-2-main-view.mp4)
 
-##### Extend the floats to enable calculations
+### Extend the floats to enable calculations
 
 The sample adds functionality to existing class types by extending `SIMD3<Float>`, `SIMD4<Float>`, and `simd_float4x4`:
 
@@ -120,7 +120,7 @@ extension Float4x4 {
 }
 ```
 
-##### Update the entities over time
+### Update the entities over time
 
 The sample sets up a custom system and component to handle updates in real time:
 
@@ -163,7 +163,7 @@ struct ClosureSystem: System {
 }
 ```
 
-##### Implement head tracking
+### Implement head tracking
 
 visionOS supports [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md) from ARKit to get live data about a device’s position. World tracking requires an [`ARKitSession`](../ARKit/arkitsession.md) and a device that supports world tracking. The sample uses the `HeadPositionTracker` to initialize the ARKit session and the [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md):
 
@@ -214,7 +214,7 @@ func originFromDeviceTransform() -> simd_float4x4? {
 }
 ```
 
-##### Display the sphere that follows the view
+### Display the sphere that follows the view
 
 Device tracking is accessible within immersive spaces. The sample creates a custom view that uses a reality view to place a 3D sphere in front of the device’s forward direction at a set distance.
 

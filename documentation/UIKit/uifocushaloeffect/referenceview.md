@@ -22,7 +22,7 @@ weak var referenceView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * referenceView;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property, the halo effect appears above this view. If you also set [`containerView`](./containerview.md), this reference view must be a descendant of the container view. The system ensures that the halo effect is in the container but visually above the reference view.
 

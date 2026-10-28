@@ -28,7 +28,7 @@ class UINavigationBar
 
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
-#### Overview
+## Overview
 
 The primary components of a `UINavigationBar` are its title, subtitle, and leading and trailing items. Use `UINavigationBar` with [`UINavigationController`](./uinavigationcontroller.md) whenever possible. The navigation controller creates, displays, and manages its associated navigation bar, and uses attributes of the view controllers in its navigation stack to control the content displayed in the navigation bar. You create a navigation bar directly only when you use a standalone navigation bar, and you handle its events with a [`UINavigationBarDelegate`](./uinavigationbardelegate.md) object.
 
@@ -54,7 +54,7 @@ To add a navigation bar to your interface without using a navigation controller:
 
 > ❗ **Important**: When you use `UINavigationBar` without a navigation controller, the system doesn’t adapt your controls for the vertical axis.
 
-#### Use a navigation bar with a navigation controller
+## Use a navigation bar with a navigation controller
 
 If you use a navigation controller to manage the navigation between view controllers, the navigation controller creates a navigation bar automatically and pushes and pops navigation items when appropriate.
 
@@ -64,7 +64,7 @@ To access the navigation bar associated with a navigation controller, use the [`
 
 For more information about navigation controllers, see [`UINavigationController`](./uinavigationcontroller.md).
 
-#### Add content to a standalone navigation bar
+## Add content to a standalone navigation bar
 
 Most apps use a navigation bar as part of a navigation controller. If you want the navigation bar user interface but need your own approach to content navigation, consider a standalone navigation bar.
 
@@ -80,7 +80,7 @@ If you’re using a navigation bar as a standalone object, assign a custom deleg
 
 For more information about creating navigation items, see [`UINavigationItem`](./uinavigationitem.md). To implement a delegate object, see [`UINavigationBarDelegate`](./uinavigationbardelegate.md).
 
-#### Customize the appearance of a navigation bar
+## Customize the appearance of a navigation bar
 
 Navigation bars are transparent and feature bar button items constructed with Liquid Glass. Don’t add a background or apply a tint color to the navigation bar, as that may interfere with the Liquid Glass presentation.
 
@@ -100,7 +100,7 @@ Use the [`setTitleVerticalPositionAdjustment(_:for:)`](./uinavigationbar/settitl
 
 For details on appearance customization, see [Customize the appearance of a navigation bar](./uinavigationbar.md#Customize-the-appearance-of-a-navigation-bar).
 
-#### Customize a navigation bar with Interface Builder
+## Customize a navigation bar with Interface Builder
 
 The following table lists the Interface Builder attributes that affect the appearance of the navigation bar’s title.
 
@@ -110,13 +110,13 @@ The following table lists the Interface Builder attributes that affect the appea
 | [`foregroundColor`](../Foundation/nsattributedstring/key/foregroundcolor.md) | Title Color | The font color to use. |
 | [`shadow`](../Foundation/nsattributedstring/key/shadow.md) | Title Shadow | The shadow object defining, offset, color, and radius to use. |
 
-#### Localize a navigation bar
+## Localize a navigation bar
 
 To localize navigation bars, specify a localized string for each of the displayed string properties of the navigation item model objects.
 
 For more information about localizing your interface, see [Localization](../Xcode/localization.md).
 
-#### Make a navigation bar accessible
+## Make a navigation bar accessible
 
 Navigation bars are accessible by default. The default accessibility trait for a navigation bar is User Interaction Enabled.
 
@@ -124,7 +124,7 @@ With VoiceOver enabled on an iOS device, when someone focuses on the back button
 
 For information on how to make your interface accessible, see [Accessibility for UIKit](./accessibility-for-uikit.md).
 
-#### Build your app with Mac Catalyst
+## Build your app with Mac Catalyst
 
 When you build your app with Mac Catalyst and it runs with the [Mac idiom](./uiuserinterfaceidiom/mac.md), the system can display a navigation bar’s content in an [`NSToolbar`](../AppKit/nstoolbar.md) instead of displaying the navigation bar directly. This is the default behavior when [`preferredBehavioralStyle`](./uinavigationbar/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](./uibehavioralstyle/automatic.md). Setting [`preferredBehavioralStyle`](./uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.mac`](./uibehavioralstyle/mac.md) doesn’t change this behavior on the Mac idiom, and the system ignores this setting when your app runs with the [iPad idiom](./uiuserinterfaceidiom/pad.md). To opt out of this behavior, set [`preferredBehavioralStyle`](./uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](./uibehavioralstyle/pad.md).
 

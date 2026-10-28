@@ -25,7 +25,7 @@ class let extendedSRGB: CFString
 extern CFStringRef const kCGColorSpaceExtendedSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`sRGB`](./srgb.md), but you can encode component values below `0.0` and above `1.0`. Negative values are encoded as the signed reflection of the original encoding function, as shown in the formula below:
 

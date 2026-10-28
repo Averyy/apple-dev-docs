@@ -15,7 +15,7 @@ Get the address at which a buffer's data is stored; for iobufs, this must be set
 uintptr_t buf_dataptr(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Data pointer; NULL if unset.
 

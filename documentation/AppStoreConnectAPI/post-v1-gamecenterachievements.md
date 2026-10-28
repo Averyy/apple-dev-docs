@@ -11,9 +11,9 @@ Add an achievement to a Game Center detail.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create a Game Center Achievement`](./post-v2-gamecenterachievements.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -21,11 +21,11 @@ init?(format: NSOpenGLPixelFormat, share: NSOpenGLContext?)
 - (instancetype) initWithFormat:(NSOpenGLPixelFormat *) format shareContext:(NSOpenGLContext *) share;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSOpenGLContext` object initialized with the specified parameters, or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 If the parameters contain invalid information, this method returns `nil`. This may happen if one of the following situations occurs:
 

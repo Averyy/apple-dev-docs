@@ -23,7 +23,7 @@ var gateActivations: [MLCActivationDescriptor] { get }
 @property (nonatomic, copy, readonly) NSArray<MLCActivationDescriptor *> * gateActivations;
 ```
 
-#### Discussion
+## Discussion
 
 The default gate activations are sigmoid, sigmoid, tanh, sigmoid.
 

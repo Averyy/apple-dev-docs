@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, acceptDrop drag
 - (BOOL) collectionView:(NSCollectionView *) collectionView acceptDrop:(id<NSDraggingInfo>) draggingInfo index:(NSInteger) index dropOperation:(NSCollectionViewDropOperation) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drop operation should be accepted, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is called when the mouse is released over a collection view that previously decided to allow a drop via the [`collectionView(_:validateDrop:proposedIndex:dropOperation:)`](./collectionview%28_,validatedrop,proposedindex,dropoperation%29.md) method. At this time, the delegate should incorporate the data from the dragging pasteboard and update the collection view’s contents.
 

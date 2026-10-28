@@ -17,7 +17,7 @@ A C++ type that represents a set of values, which might be repeating.
 protocol CxxSet<Element> : ExpressibleByArrayLiteral
 ```
 
-#### Overview
+## Overview
 
 C++ standard library types such as `std::set`, `std::unordered_set` and `std::multiset` conform to this protocol.
 

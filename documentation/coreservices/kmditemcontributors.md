@@ -19,7 +19,7 @@ let kMDItemContributors: CFString!
 const CFStringRef kMDItemContributors;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of a contributor include a person, an organization or a service.
 

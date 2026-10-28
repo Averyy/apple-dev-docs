@@ -25,7 +25,7 @@ func insert(_ objects: [Any], at indexes: IndexSet)
 - (void) insertObjects:(NSArray<id> *) objects atIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 Each object in objects is inserted into the receiving mutable ordered set in turn at the corresponding location specified in indexes after earlier insertions have been made.
 

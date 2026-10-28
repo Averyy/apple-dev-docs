@@ -19,7 +19,7 @@ func resumeFlow(_ flow: NEFilterFlow, with verdict: NEFilterVerdict)
 - (void) resumeFlow:(NEFilterFlow *) flow withVerdict:(NEFilterVerdict *) verdict;
 ```
 
-#### Discussion
+## Discussion
 
 The provider calls this method to resume a flow that the provider previously paused by returning a pause verdict.
 

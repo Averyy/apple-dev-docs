@@ -25,7 +25,7 @@ func CFRunLoopSourceInvalidate(_ source: CFRunLoopSource!)
 extern void CFRunLoopSourceInvalidate(CFRunLoopSourceRef source);
 ```
 
-#### Discussion
+## Discussion
 
 Once invalidated, `source` will never fire and call its perform callback function again. This function automatically removes `source` from all the run loop modes in which it was registered. If `source` is a version 0 source, this function calls its `cancel` callback function as it is removed from each run loop mode. The memory for `source` is not deallocated unless the run loop held the only reference to `source`.
 

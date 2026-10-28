@@ -5,7 +5,7 @@
 
 Block GPU stages in subsequent passes from running until stages in a pass, and earlier passes, finish.
 
-#### Overview
+## Overview
 
 Producer queue barriers are coarse synchronization primitives that resolve access conflicts between commands in different passes that you submit to the same command queue, including passes from other command buffers. Producer barriers are convenient for synchronizing passes that modify common resources that multiple, subsequent passes in the same queue load later on.
 
@@ -23,7 +23,7 @@ For more information about resource access conflicts and GPU stages, see [Resour
 
 Start by identifying which memory operations from subsequent passes in the same queue introduce a conflict and resolve them with an intraqueue barrier in the producing pass.
 
-##### Identify access conflicts with subsequent passes
+### Identify access conflicts with subsequent passes
 
 The following code example encodes three compute passes. The first pass runs a single copy command:
 
@@ -220,7 +220,7 @@ Without synchronization, the GPU can run all three passes and their stages in pa
 
 ![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer D.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-passes-with-producer-barriers-2@2x.png)
 
-##### Resolve access conflicts with a producer barrier
+### Resolve access conflicts with a producer barrier
 
 To resolve access conflicts between passes from the same command queue, use a producer barrier by calling the encoder’s [`barrier(afterStages:beforeQueueStages:visibilityOptions:)`](./mtl4commandencoder/barrier%28afterstages,beforequeuestages,visibilityoptions%29.md) method.
 

@@ -19,7 +19,7 @@ func invalidateLayout()
 - (void) invalidateLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you make changes that require updating all of the current layout information. This method marks the layout as invalid and returns right away, so you can call this method multiple times from the same block of code without triggering multiple layout updates. During the next update cycle, the collection view requests new layout information and updates its contents accordingly.
 

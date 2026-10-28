@@ -12,7 +12,7 @@ Choose and implement the appropriate Calendar access level in your app.
 - Mac Catalyst 16.4+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Prior to iOS 17, your app needs to include the [`NSCalendarsUsageDescription`](../BundleResources/information-property-list/nscalendarsusagedescription.md) key in its `Info.plist` and request authorization from the user before it can access the user’s calendar data. `NSCalendarsUsageDescription` indicates how your app intends to use calendar data. If the user approves the request, the app gets full access to all events on all the user’s calendars, including the ones the app didn’t create. If the user denies the request, the app gets no access to the user’s data.
 
@@ -22,7 +22,7 @@ This sample consists of three targets that illustrate how to implement Calendar 
 
 > **Note**: This sample code project is associated with WWDC23 session [10052: Discover Calendar and EventKit](https://developer.apple.com/wwdc23/10052/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -31,7 +31,7 @@ Before you run the sample code project in Xcode:
 - For the three targets, choose your team from the Team menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile.
 - Select the target you wish to build, then build and run it in the Simulator, in Mac Catalyst, or on a device.
 
-##### Save events without prompting the user for access
+### Save events without prompting the user for access
 
 In iOS 17, your app can add events to Calendar without prompting the user for access using [`EKEventEditViewController`](../EventKitUI/ekeventeditviewcontroller.md). If the purpose of your app is to create, configure, and present calendar events in an editor UI, consider saving events to Calendar without prompting the user for authorization in your app following these steps:
 
@@ -73,7 +73,7 @@ func eventEditViewController(_ controller: EKEventEditViewController, didComplet
 
 Because the calendar edits happen out of process, inspecting the properties of the dismissed `controller`, such as [`event`](../EventKitUI/ekeventeditviewcontroller/event.md), to determine what the user added to Calendar doesn’t return any useful information. The app isn’t aware of the changes, which naturally means it can’t see them.
 
-##### Request write-only access
+### Request write-only access
 
 In iOS 17, an app with write-only access can create and save events to Calendar, display events using [`EKEventEditViewController`](../EventKitUI/ekeventeditviewcontroller.md), and allow the user to select another calendar using [`EKCalendarChooser`](../EventKitUI/ekcalendarchooser.md). If your app needs to write data directly, consider implementing write-only access in your app following these steps:
 
@@ -140,7 +140,7 @@ return UINavigationController(rootViewController: calendarChooser)
 
 If the user chooses a calendar from the view controller, `RepeatingLessons` adds recurring events to that calendar. If the user doesn’t make any selection, the app saves the events to the user’s default calendar.
 
-##### Request full access
+### Request full access
 
 In iOS 17, an app with full access can create, edit, save, delete, and fetch all events on all the user’s calendars. Additionally, the app can display events using [`EKEventViewController`](../EventKitUI/ekeventviewcontroller.md) and allow the user to select another calendar using [`EKCalendarChooser`](../EventKitUI/ekcalendarchooser.md). Implement full access if your app needs to read and write data to Calendar. If your app only needs to write data directly to Calendar, implement write-only access instead. If your app only uses EventKit APIs to create and set up events, consider saving events to Calendar without prompting the user for authorization.
 
@@ -208,7 +208,7 @@ When you assign `true` to `commit` to immediately save or remove the event in yo
 eventStore.reset()
 ```
 
-##### Run apps on operating system earlier than iOS 17
+### Run apps on operating system earlier than iOS 17
 
 If you build your app with Xcode 15, link it against the iOS 17 SDK, and need to run it on systems earlier than iOS 17:
 

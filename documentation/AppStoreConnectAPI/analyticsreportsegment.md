@@ -15,7 +15,7 @@ A downloadable segment within an analytics report instance, containing a portion
 object AnalyticsReportSegment
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about the response that includes this analytics report segment object, see [`AnalyticsReportSegmentResponse`](./analyticsreportsegmentresponse.md).
 

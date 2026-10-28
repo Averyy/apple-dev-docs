@@ -15,15 +15,15 @@ Creates and returns a text provider built from the specified format string.
 + (CLKTextProvider *) textProviderWithFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider object built from the specified arguments.
 
-#### Discussion
+## Discussion
 
 Use this method to create a text provider comprising text and the content of other objects, including other text providers.
 
-##### Set Up Multicolor Text
+### Set Up Multicolor Text
 
 The graphic complications support multicolor text in some text fields. To create multicolor text, build a composite text provider using two or more text providers with different tint colors.
 

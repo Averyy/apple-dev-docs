@@ -20,7 +20,7 @@ init(audioSession: AVAudioSession)
 - (instancetype) initWithAudioSession:(AVAudioSession *) audioSession;
 ```
 
-#### Discussion
+## Discussion
 
 [`BEAudioSession`](../beaudiosession-6b7ig.md) wraps the specified [AVFoundation](../../AVFoundation/AVFoundation.md) audio session.
 

@@ -21,7 +21,7 @@ struct AuthorizationMethod
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Overview
+## Overview
 
 Use the provided factory methods to create an authorization method appropriate for your device’s pairing requirements.
 

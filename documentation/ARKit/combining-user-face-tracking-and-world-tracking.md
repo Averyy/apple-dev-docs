@@ -11,7 +11,7 @@ Track the user’s face in an app that displays an AR experience with the rear c
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 When tracking users’ faces in a world-tracking session, ARKit incorporates information from both the front and rear camera feeds in the AR experience. In addition to tracking the physical environment using the rear camera, ARKit uses the front camera to deliver an anchor that provides the position and expression of the user’s face.
 
@@ -19,7 +19,7 @@ To demonstrate applying the user’s face while world-tracking, this sample app 
 
 ![Screenshot of three virtual objects placed in the physical environment, each reflecting a different expression that mimic the user’s expression at the time of placing the object.](https://developer.apple.com/tutorials/images/com.apple.arkit/world-and-face-screenshot.jpg)
 
-#### Configure and start the session
+## Configure and start the session
 
 This app tracks the user’s face in a world-tracking session on iOS 13 and iPad OS 13 or later, on devices with a front TrueDepth camera that return `true` to [`supportsUserFaceTracking`](./arworldtrackingconfiguration/supportsuserfacetracking.md). To prevent the app from running an unsupported configuration, check whether the iOS device supports simultaneous world and user face-tracking.
 
@@ -47,7 +47,7 @@ override func viewWillAppear(_ animated: Bool) {
 }
 ```
 
-#### Preview virtual content in the physical environment
+## Preview virtual content in the physical environment
 
 The app checks whether a robot head preview exists and creates one if not. ARKit calls the implementation of [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) every frame, which makes it a good location for a periodic check.
 
@@ -59,7 +59,7 @@ func session(_ session: ARSession, didUpdate frame: ARFrame) {
     //...
 ```
 
-#### Detect changes in the user’s expression
+## Detect changes in the user’s expression
 
 ARKit provides the app with an updated anchor when the user changes their expression, position, or orientation with respect to the world. If there’s an active robot head preview, the app applies these changes to the head.
 
@@ -69,7 +69,7 @@ func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
 }
 ```
 
-#### Inspect expression information
+## Inspect expression information
 
 In the robot head’s `update(with faceAnchor:)` function, the app reads the user’s current expression by interpreting the anchor’s *blend shapes*.
 
@@ -90,7 +90,7 @@ guard let eyeBlinkLeft = blendShapes[.eyeBlinkLeft] as? Float,
     else { return }
 ```
 
-#### React to the user’s expression
+## React to the user’s expression
 
 Blend shape values can apply in unique ways depending on an app’s requirements. The sample app uses blend shapes to make the robot head appear to mimic the user’s expression, such as applying the brow and lip values to offset the robot’s brow and lip positions.
 
@@ -109,7 +109,7 @@ eyeLeftEntity.scale.z = 1 - eyeBlinkLeft
 eyeRightEntity.scale.z = 1 - eyeBlinkRight
 ```
 
-#### Position the robot head
+## Position the robot head
 
 In addition to capturing the user’s expression using the front camera, ARKit records the position of the user’s face with respect to the world. By design, the user’s face anchor is always located behind the rear camera. To serve the goal of mimicking the user with the robot head, the sample app applies the face anchor’s position to make the robot head always visible. First, it sets the robot head’s initial position equal to that of the camera.
 
@@ -130,7 +130,7 @@ let faceTransformFromCamera = simd_mul(simd_inverse(cameraTransform), faceAnchor
 self.position.z = -faceTransformFromCamera.columns.3.z
 ```
 
-#### Orient the robot head
+## Orient the robot head
 
 The sample app also uses the anchor’s orientation to direct the front of the robot’s head continually toward the camera. It starts by accessing the anchor’s orientation.
 
@@ -150,7 +150,7 @@ To effect the change, the app applies the updated Euler angles to the robot head
 self.orientation = mirroredRotation.rotation
 ```
 
-#### Capture the expression by placing the head
+## Capture the expression by placing the head
 
 To demonstrate the variety of expressions tracked during the session, the sample app places the robot head in the physical environment when the user taps the screen. When the app initially previews the expressions, it positions the robot head at a fixed offset from the camera. When the user taps the screen, the app reanchors the robot head by updating its position to its current world location.
 

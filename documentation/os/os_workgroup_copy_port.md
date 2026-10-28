@@ -15,11 +15,11 @@ Returns the Mach port associated with the workgroup.
 extern int os_workgroup_copy_port(os_workgroup_t wg, mach_port_t *mach_port_out);
 ```
 
-#### Return Value
+## Return Value
 
 A value of `0` on success, or a nonzero error code if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function returns the send right for the workgroup’s Mach port in the kernel. Pass this port to other processes and use it to construct a reference to the same workgroup in those processes, which lets those processes coordinate their threads with the threads of the workgroup in the `wg` parameter.
 

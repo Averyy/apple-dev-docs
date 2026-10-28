@@ -19,7 +19,7 @@ The user can’t edit the view content.
 case inactive
 ```
 
-#### Discussion
+## Discussion
 
 The [`isEditing`](./isediting.md) property is `false` in this state.
 

@@ -20,7 +20,7 @@ var mainWindowFrame: CGRect { get set }
 @property CGRect mainWindowFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../../../CoreFoundation/cgrect/zero.md), which tells the system to use the previously set frame. The system uses global screen coordinates to display the frame. When Desk View launches from a native macOS app, the window origin is bottom-left. When it launches from a [Mac Catalyst](../../../UIKit/mac-catalyst.md) app, the window origin is top-left.
 

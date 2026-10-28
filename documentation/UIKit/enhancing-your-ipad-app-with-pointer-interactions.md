@@ -12,11 +12,11 @@ Provide a great user experience with pointing devices, by incorporating pointer 
 - Mac Catalyst 14.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10093: Build for the iPadOS Pointer](https://developer.apple.com/wwdc20/10093/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample in Xcode, you need an iPad with iPadOS 14.0 or later and a trackpad or mouse connected, or set the simulator to any model of iPad.
 

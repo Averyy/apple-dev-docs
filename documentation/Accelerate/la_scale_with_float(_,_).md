@@ -25,7 +25,7 @@ func la_scale_with_float(_ matrix: la_object_t, _ scalar: Float) -> la_object_t
 extern la_object_tla_scale_with_float(la_object_t matrix, float scalar);
 ```
 
-#### Discussion
+## Discussion
 
 Multiply a matrix or vector by a scalar given by a float.
 

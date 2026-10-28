@@ -19,7 +19,7 @@ init(exclusivity: FlagExclusivity = .exclusive, help: ArgumentHelp? = nil)
 
 Available when `Value` conforms to `EnumerableFlag`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to customize the name and number of states further than using a `Bool`. To use, define an `EnumerableFlag` enumeration with a case for each state, and use that as the type for your flag. In this case, the user can specify either `--use-production-server` or `--use-development-server` to set the flag’s value.
 

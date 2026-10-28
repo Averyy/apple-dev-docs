@@ -19,7 +19,7 @@ static let animationDelay: NSBindingName
 extern NSBindingName NSAnimationDelayBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

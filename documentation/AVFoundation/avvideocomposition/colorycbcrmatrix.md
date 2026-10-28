@@ -24,7 +24,7 @@ var colorYCbCrMatrix: String? { get }
 @property (nonatomic, readonly, nullable) NSString * colorYCbCrMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When the value of this property is `nil`, the source’s matrix is propagated and used. Valid values are those suitable for [`AVVideoYCbCrMatrixKey`](../avvideoycbcrmatrixkey.md).
 

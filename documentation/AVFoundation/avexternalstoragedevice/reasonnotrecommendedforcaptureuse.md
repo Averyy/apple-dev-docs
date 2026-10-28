@@ -21,7 +21,7 @@ struct ReasonNotRecommendedForCaptureUse
 typedef NSString * AVExternalStorageDeviceReasonNotRecommendedForCaptureUse;
 ```
 
-#### Overview
+## Overview
 
 Constants indicating the reasons external storage device is not recommended for capturing high data rate videos based on https://support.apple.com/en-us/109041.
 

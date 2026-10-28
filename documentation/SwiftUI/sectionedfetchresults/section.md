@@ -22,7 +22,7 @@ A collection of fetched results that share a specified identifier.
 @preconcurrency struct Section
 ```
 
-#### Overview
+## Overview
 
 Examine a `Section` instance to find the entities that satisfy a [`SectionedFetchRequest`](../sectionedfetchrequest.md) predicate, and that have a particular property with the value stored in the section’s [`id`](./section/id.md) parameter. You specify which property by setting the fetch request’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](../sectionedfetchresults.md) instance’s [`sectionIdentifier`](./sectionidentifier.md) property.
 

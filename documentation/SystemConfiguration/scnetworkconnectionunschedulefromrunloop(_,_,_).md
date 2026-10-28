@@ -19,7 +19,7 @@ func SCNetworkConnectionUnscheduleFromRunLoop(_ connection: SCNetworkConnection,
 Boolean SCNetworkConnectionUnscheduleFromRunLoop(SCNetworkConnectionRef connection, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the connection is unscheduled successfully; `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 

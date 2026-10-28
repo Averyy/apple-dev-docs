@@ -21,7 +21,7 @@ Creates a `Stat` struct from an `UnsafePointer<CChar>` path.
 init(_ path: UnsafePointer<CChar>, followTargetSymlink: Bool = true, retryOnInterrupt: Bool = true) throws(Errno)
 ```
 
-#### Discussion
+## Discussion
 
 `followTargetSymlink` determines the behavior if `path` ends with a symbolic link. By default, `followTargetSymlink` is `true` and this initializer behaves like `stat()`. If `followTargetSymlink` is set to `false`, this initializer behaves like `lstat()` and returns information about the symlink itself.
 

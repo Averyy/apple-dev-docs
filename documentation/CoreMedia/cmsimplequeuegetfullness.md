@@ -21,11 +21,11 @@ A convenience macro that returns a queue’s fullness as a percentage of its cap
 #define CMSimpleQueueGetFullness(queue)
 ```
 
-#### Return Value
+## Return Value
 
 - Returns `0.0` if the queue is empty.
 
-#### Overview
+## Overview
 
 - Returns `0.5` if the queue is half full.
 - Returns `1.0` if the queue is full.

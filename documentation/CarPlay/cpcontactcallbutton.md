@@ -21,7 +21,7 @@ class CPContactCallButton
 @interface CPContactCallButton : CPButton
 ```
 
-#### Overview
+## Overview
 
 Use this button to call the template’s contact.
 

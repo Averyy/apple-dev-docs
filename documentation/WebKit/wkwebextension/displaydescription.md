@@ -23,7 +23,7 @@ var displayDescription: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * displayDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no description specified.
 

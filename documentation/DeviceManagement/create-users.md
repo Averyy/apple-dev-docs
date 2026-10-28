@@ -9,9 +9,9 @@ Create users to assign apps, books, and subscriptions to.
 **Availability**:
 - VPP License Management 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

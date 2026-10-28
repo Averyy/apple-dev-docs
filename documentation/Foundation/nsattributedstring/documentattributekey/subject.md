@@ -15,7 +15,7 @@ The subject of the document.
 static let subject: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing subject of document.
 

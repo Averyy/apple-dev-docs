@@ -19,7 +19,7 @@ var mode: IKDeviceBrowserViewDisplayMode { get set }
 @property IKDeviceBrowserViewDisplayMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 The supported display modes are defined in [`IKDeviceBrowserViewDisplayMode`](../ikdevicebrowserviewdisplaymode.md)
 

@@ -19,7 +19,7 @@ class func strokeLine(from point1: NSPoint, to point2: NSPoint)
 + (void) strokeLineFromPoint:(NSPoint) point1 toPoint:(NSPoint) point2;
 ```
 
-#### Discussion
+## Discussion
 
 This method strokes the specified path immediately.
 

@@ -20,11 +20,11 @@ func IOUSBGetNextCapabilityDescriptor(_ bosDescriptor: UnsafePointer<IOUSBBOSDes
 const IOUSBDeviceCapabilityDescriptorHeader *IOUSBGetNextCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor, const IOUSBDeviceCapabilityDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A device capability descriptor pointer, or `nil` if no descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method advances the current descriptor by its length, and validates that the new descriptor fits within the bounds of `bosDescriptor`. Use `nil` for `currentDescriptor` to return the first descriptor after the BOS descriptor.
 

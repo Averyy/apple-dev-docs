@@ -15,7 +15,7 @@ Returns a closed range that contains both of its bounds.
 static func ... (minimum: Self, maximum: Self) -> ClosedRange<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Use the closed range operator (`...`) to create a closed range of any type that conforms to the `Comparable` protocol. This example creates a `ClosedRange<Character>` from “a” up to, and including, “z”.
 

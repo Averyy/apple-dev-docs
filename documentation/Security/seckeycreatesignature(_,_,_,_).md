@@ -29,11 +29,11 @@ CFDataRefSecKeyCreateSignature(SecKeyRef key, SecKeyAlgorithm algorithm, CFDataR
 
 - [Signing and Verifying](./signing-and-verifying.md)
 
-#### Return Value
+## Return Value
 
 The digital signature or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the data’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 You later evaluate the combined data and signature with the corresponding public key and a call to the [`SecKeyVerifySignature(_:_:_:_:_:)`](./seckeyverifysignature%28_,_,_,_,_%29.md) function.
 

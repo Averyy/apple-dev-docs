@@ -19,7 +19,7 @@ var isResting: Bool { get }
 @property (readonly, getter=isResting) BOOL resting;
 ```
 
-#### Discussion
+## Discussion
 
 Resting touches occur when a user simply rests their thumb on the trackpad device.
 

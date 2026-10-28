@@ -21,11 +21,11 @@ func items(for pickerToolbarItem: NSSharingServicePickerToolbarItem) -> [Any]
 - (NSArray *) itemsForSharingServicePickerToolbarItem:(NSSharingServicePickerToolbarItem *) pickerToolbarItem;
 ```
 
-#### Return Value
+## Return Value
 
 An array of items to share using the share sheet.
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, return the items in the current window that you want to share. Return the content that is focal to your window or is currently selected. For example, you might share the current photo someone is viewing. For a document window, you might share the document itself.
 

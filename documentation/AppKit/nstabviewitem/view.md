@@ -19,7 +19,7 @@ var view: NSView? { get set }
 @property (strong, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 This is the view displayed when a user clicks the tab. When you set a new view, the old view is released.
 

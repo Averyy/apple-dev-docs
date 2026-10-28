@@ -23,7 +23,7 @@ var isSignalCompensationDelaySupported: Bool { get }
 @property (nonatomic, readonly, getter=isSignalCompensationDelaySupported) BOOL signalCompensationDelaySupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the [`signalCompensationDelay`](./signalcompensationdelay.md) can be adjusted.
 

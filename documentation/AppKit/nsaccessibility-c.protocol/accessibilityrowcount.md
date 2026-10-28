@@ -15,7 +15,7 @@ The number of rows in the accessibility element’s grid.
 @property NSInteger accessibilityRowCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for elements that present a grid of child elements.
 

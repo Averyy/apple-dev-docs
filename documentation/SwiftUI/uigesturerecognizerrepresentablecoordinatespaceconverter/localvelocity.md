@@ -18,7 +18,7 @@ The represented gesture recognizer’s current velocity in the coordinate space 
 var localVelocity: CGPoint? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the gesture recognizer does not implement a `velocityInView:` method, returns nil.
 

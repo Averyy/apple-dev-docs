@@ -16,7 +16,7 @@ Returns a new property state with a value and attributes.
 + (instancetype) propertyStateWithValue:(ObjectType) value attributes:(CMIOExtensionPropertyAttributes<id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A new property state.
 

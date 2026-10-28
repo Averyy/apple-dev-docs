@@ -21,7 +21,7 @@ The contrast between the app’s foreground and background colors.
 enum ColorSchemeContrast
 ```
 
-#### Overview
+## Overview
 
 You receive a contrast value when you read the [`colorSchemeContrast`](./environmentvalues/colorschemecontrast.md) environment value. The value tells you if a standard or increased contrast currently applies to the view. SwiftUI updates the value whenever the contrast changes, and redraws views that depend on the value. For example, the following [`Text`](./text.md) view automatically updates when the user enables increased contrast:
 

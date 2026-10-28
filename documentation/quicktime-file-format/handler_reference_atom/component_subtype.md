@@ -6,7 +6,7 @@
 
 A four-character code that identifies the type of the media handler or data handler.
 
-#### Overview
+## Overview
 
 For media handlers, this field defines the type of data — for example, `'vide'` for video data, `'soun'` for sound data or `‘subt’` for subtitles. See [Media data atom types](../media_data_atom_types.md) for information about defined media data types.
 

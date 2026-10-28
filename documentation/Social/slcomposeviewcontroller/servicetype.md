@@ -21,7 +21,7 @@ var serviceType: String! { get }
 @property (nonatomic, readonly) NSString * serviceType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set when you initialize a social compose view controller in [`init(forServiceType:)`](./init%28forservicetype%29.md). Each social view controller you present is connected to only one social service at a time. Use this property to check which service your social view controller has specified. For a list of possible values, see Service Type Constants.
 

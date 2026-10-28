@@ -19,7 +19,7 @@ The action that the user prefers to perform when squeezing their Apple Pencil, a
 var preferredPencilSqueezeAction: PencilPreferredAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can read this value by creating a property with the [`Environment`](../environment.md) property wrapper and using it inside the action closure of the [`onPencilSqueeze(perform:)`](../view/onpencilsqueeze%28perform%29.md) view modifier as an indication of what to do when the user squeezes their Apple Pencil:
 

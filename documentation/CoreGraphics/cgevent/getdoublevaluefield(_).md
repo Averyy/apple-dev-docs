@@ -20,11 +20,11 @@ func getDoubleValueField(_ field: CGEventField) -> Double
 extern double CGEventGetDoubleValueField(CGEventRef event, CGEventField field);
 ```
 
-#### Return Value
+## Return Value
 
 A floating point representation of the current value of the specified field.
 
-#### Discussion
+## Discussion
 
 In cases where the field value is represented within the event by a fixed point number or an integer, the result is scaled to the appropriate range as part of creating the floating point representation.
 

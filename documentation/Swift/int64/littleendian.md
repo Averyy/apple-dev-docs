@@ -21,7 +21,7 @@ The little-endian representation of this integer.
 var littleEndian: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, the byte order of this value is reversed from the typical byte order of this integer type. On a little-endian platform, for any integer `x`, `x == x.littleEndian`.
 

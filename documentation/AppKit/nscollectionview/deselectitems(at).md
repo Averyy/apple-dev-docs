@@ -19,7 +19,7 @@ func deselectItems(at indexPaths: Set<IndexPath>)
 - (void) deselectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to reduce the current selection. If you want to animate the deselection of the new items, call this method on the collection view’s [`animator()`](../nsanimatablepropertycontainer/animator%28%29.md) proxy object instead. This method does not call any methods of the delegate object when making the selection.
 

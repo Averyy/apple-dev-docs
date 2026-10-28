@@ -23,13 +23,13 @@ func IODataQueueSetNotificationPort(_ dataQueue: UnsafeMutablePointer<IODataQueu
 IOReturn IODataQueueSetNotificationPort(IODataQueueMemory *dataQueue, mach_port_t notifyPort);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. Returns kIOReturnBadArgument if either dataQueue is 0 (NULL).
 
-#### Discussion
+## Discussion
 
-This message is sent when data is added to an empty queue. It is to notify another user process that new data has become available. **Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior. **
+This message is sent when data is added to an empty queue. It is to notify another user process that new data has become available. **Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior.** 
 
 ## Parameters
 

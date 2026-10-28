@@ -27,7 +27,7 @@ var priceLocale: Locale { get }
 @property (nonatomic, readonly) NSLocale * priceLocale;
 ```
 
-#### Discussion
+## Discussion
 
 Use the locale to format the [`price`](./price.md).
 

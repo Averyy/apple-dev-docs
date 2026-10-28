@@ -23,7 +23,7 @@ An activation function that provides a fast evaluation of the Gaussian error lin
 case geluApproximation2(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

@@ -19,7 +19,7 @@ weak var textAttachment: NSTextAttachment? { get }
 @property (weak, readonly) NSTextAttachment * textAttachment;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the value of this property at initialization time using the [`init(textAttachment:parentView:textLayoutManager:location:)`](./init%28textattachment,parentview,textlayoutmanager,location%29.md) initializer.
 

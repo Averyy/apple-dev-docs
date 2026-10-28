@@ -19,7 +19,7 @@ var isVertical: Bool { get }
 @property (readonly, getter=isVertical) BOOL vertical;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the status bar has a vertical orientation. The status bar returned by the [`system`](./system.md) method is horizontal and has the value [`false`](../../Swift/false.md) for this property.
 

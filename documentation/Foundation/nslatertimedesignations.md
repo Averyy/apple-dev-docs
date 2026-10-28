@@ -17,7 +17,7 @@ Key for an array of strings that denote a time in the future.
 extern NSString * const NSLaterTimeDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 Strings in this array are adjectives that modify a value from `NSYearMonthWeekDesignations`.
 

@@ -21,11 +21,11 @@ func supportsCellularPlan() -> Bool
 - (BOOL) supportsCellularPlan;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if all requirements are met; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) when all of the following conditions are met:
 

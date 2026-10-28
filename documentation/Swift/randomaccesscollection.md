@@ -21,11 +21,11 @@ A collection that supports efficient random-access index traversal.
 protocol RandomAccessCollection<Element> : BidirectionalCollection where Self.Indices : RandomAccessCollection, Self.SubSequence : RandomAccessCollection
 ```
 
-#### Overview
+## Overview
 
 Random-access collections can move indices any distance and measure the distance between indices in O(1) time. Therefore, the fundamental difference between random-access and bidirectional collections is that operations that depend on index movement or distance measurement offer significantly improved efficiency. For example, a random-access collection’s `count` property is calculated in O(1) instead of requiring iteration of an entire collection.
 
-### Conforming to the RandomAccessCollection Protocol
+## Conforming to the RandomAccessCollection Protocol
 
 The `RandomAccessCollection` protocol adds further constraints on the associated `Indices` and `SubSequence` types, but otherwise imposes no additional requirements over the `BidirectionalCollection` protocol. However, in order to meet the complexity guarantees of a random-access collection, either the index for your custom type must conform to the `Strideable` protocol or you must implement the `index(_:offsetBy:)` and `distance(from:to:)` methods with O(1) efficiency.
 

@@ -16,11 +16,11 @@ Get the status pointer for a NuDCL.
 UInt32 *(*GetDCLStatusPtr)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 status pointer.
 
-#### Discussion
+## Discussion
 
 Applies: Any NuDCLRef.
 

@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A set.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer of `NSMutableSet`.
 

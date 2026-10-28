@@ -23,7 +23,7 @@ class UICollectionViewDropPlaceholder
 @interface UICollectionViewDropPlaceholder : UICollectionViewPlaceholder
 ```
 
-#### Overview
+## Overview
 
 When you want to insert a placeholder cell into your collection view, create a `UICollectionViewDropPlaceholder` object and pass it to the [`drop(_:to:)`](./uicollectionviewdropcoordinator/drop%28_,to%29-l5tg.md) method of your [`UICollectionViewDropCoordinator`](./uicollectionviewdropcoordinator.md). You use a placeholder cell to display a temporary interface while you load the cell’s contents asynchronously. For example, your placeholder cell might display a progress indicator or a message that the cell content isn’t yet available. The placeholder object contains the reuse identifier of the temporary cell you want to display in your collection view. It can also include a custom preview to use during the drop.
 

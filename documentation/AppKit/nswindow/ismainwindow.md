@@ -19,7 +19,7 @@ var isMainWindow: Bool { get }
 @property (readonly, getter=isMainWindow) BOOL mainWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is the main window for the application; otherwise, [`false`](../../Swift/false.md).
 

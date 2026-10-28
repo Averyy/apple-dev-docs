@@ -24,7 +24,7 @@ func CATransform3DIsIdentity(_ t: CATransform3D) -> Bool
 extern bool CATransform3DIsIdentity(CATransform3D t);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `t` is the identity transform, otherwise [`false`](../Swift/false.md).
 

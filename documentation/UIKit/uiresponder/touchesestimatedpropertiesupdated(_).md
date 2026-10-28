@@ -23,7 +23,7 @@ func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>)
 - (void) touchesEstimatedPropertiesUpdated:(NSSet<UITouch *> *) touches;
 ```
 
-#### Discussion
+## Discussion
 
 When UIKit is unable to report actual values for a touch, it delivers estimates for the values and sets the appropriate bits in the [`estimatedProperties`](../uitouch/estimatedproperties.md) and [`estimatedPropertiesExpectingUpdates`](../uitouch/estimatedpropertiesexpectingupdates.md) properties of the [`UITouch`](../uitouch.md) object. When updates are received for items in the [`estimatedPropertiesExpectingUpdates`](../uitouch/estimatedpropertiesexpectingupdates.md) property, UIKit calls this method to deliver those updates. UIKit also calls this method if one or more updates are no longer expected. You use this method to update your app’s internal data structures with the new values provided by UIKit.
 

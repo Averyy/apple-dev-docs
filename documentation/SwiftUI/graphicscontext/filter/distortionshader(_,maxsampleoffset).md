@@ -20,11 +20,11 @@ Returns a filter that applies `shader` as a geometric distortion effect on the l
 static func distortionShader(_ shader: Shader, maxSampleOffset: CGSize) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A new filter that applies the shader as a distortion effect.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a distortion effect it must have a function signature matching:
 

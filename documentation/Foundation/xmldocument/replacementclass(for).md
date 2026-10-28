@@ -20,11 +20,11 @@ class func replacementClass(for cls: AnyClass) -> AnyClass
 + (Class) replacementClassForClass:(Class) cls;
 ```
 
-#### Return Value
+## Return Value
 
 The substituted class.
 
-#### Discussion
+## Discussion
 
 For example, if you have a custom subclass of [`XMLElement`](../xmlelement.md) that you want to be used in place of `NSXMLElement`, you would make the following override:
 

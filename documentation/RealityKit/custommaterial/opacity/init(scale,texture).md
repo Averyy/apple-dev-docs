@@ -19,7 +19,7 @@ Creates an object that defines the opacity of an entity using a single value, a 
 init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Both `scale` and `texture` are available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
 

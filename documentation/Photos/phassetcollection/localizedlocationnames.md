@@ -24,7 +24,7 @@ var localizedLocationNames: [String] { get }
 @property (nonatomic, strong, readonly) NSArray<NSString *> * localizedLocationNames;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to asset collections whose type is [`PHAssetCollectionType.moment`](../phassetcollectiontype/moment.md). The Photos app automatically creates moments to group assets by time and location. A moment might group assets captured in multiple locations, so this array can contain multiple names. For other asset collection types, this property’s value is `nil`.
 

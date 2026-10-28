@@ -22,7 +22,7 @@ protocol PKIssuerProvisioningExtensionAuthorizationProviding : NSObjectProtocol
 @protocol PKIssuerProvisioningExtensionAuthorizationProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The principal class of your app’s authorization user interface extension target must conform to the `PKIssuerProvisioningExtensionAuthorizationProviding` protocol.
 

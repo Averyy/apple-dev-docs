@@ -25,7 +25,7 @@ func object(at indexPath: IndexPath) -> ResultType
 - (ResultType) objectAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The object at a given index path in the fetch results.
 

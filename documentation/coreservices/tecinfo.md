@@ -18,7 +18,7 @@ typedef struct TECInfo {
 } TECInfo;
 ```
 
-#### Overview
+## Overview
 
 The converter information structure is used by the function [`TECGetInfo`](./api-1400430-tecgetinfo.md) to hold returned information about the Unicode Converter, the Text Encoding Converter, and Basic Text Types.  
 

@@ -12,7 +12,7 @@ void setParentCurrentPowerFlags (
  IOPMPowerFlags );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent when the object is created and called by the child when it discovers that the parent state is changing.
 

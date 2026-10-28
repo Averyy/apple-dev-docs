@@ -15,7 +15,7 @@ Applies the affine transform to the specified size.
 func transform(_ size: NSSize) -> NSSize
 ```
 
-#### Return Value
+## Return Value
 
 A size that represents dimensions in a transformed coordinate space.
 

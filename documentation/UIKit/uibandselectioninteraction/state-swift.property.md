@@ -22,7 +22,7 @@ var state: UIBandSelectionInteraction.State { get }
 @property (nonatomic, readonly) UIBandSelectionInteractionState state;
 ```
 
-#### Discussion
+## Discussion
 
 Use the current state to determine what actions to take in your handler. For example, when an interaction object is in the selecting state, you might highlight items in your view that are inside the current selection rectangle.
 

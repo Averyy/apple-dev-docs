@@ -19,7 +19,7 @@ Merge another object of this type into this object.
 mutating func merge(_ other: Self) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if the merge caused a mutation.
 

@@ -19,7 +19,7 @@ protocol FxAnalysisAPI_v2 : FxAnalysisAPI
 @protocol FxAnalysisAPI_v2 <FxAnalysisAPI>
 ```
 
-#### Overview
+## Overview
 
 Host applications implement this protocol to provide frame analysis information to plug-ins that support the FxAnalyzer protocol.
 

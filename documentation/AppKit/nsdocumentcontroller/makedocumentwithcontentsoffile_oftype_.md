@@ -17,7 +17,7 @@ Creates and returns a document object of a given document type from the contents
 - (id) makeDocumentWithContentsOfFile:(NSString *) fileName ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Creates and returns an `NSDocument` object for document type `docType` from the contents of the file `fileName`, which must be a fully qualified path. The returned object is not retained. Returns `nil` if the `NSDocument` subclass for `docType` couldn’t be determined or if the object couldn’t be created. This method calls the `NSDocument` method [`initWithContentsOfFile:ofType:`](../nsdocument/initwithcontentsoffile_oftype_.md) and is called by [`openDocumentWithContentsOfFile:display:`](./opendocumentwithcontentsoffile_display_.md).
 

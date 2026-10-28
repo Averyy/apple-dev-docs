@@ -19,7 +19,7 @@ final var isConfiguredForCarrierMessaging: Bool { get }
 
 - [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 This value is `true` if the app is configured for carrier messaging operations; `false` if not, or if the system can’t determine the app’s status.
 

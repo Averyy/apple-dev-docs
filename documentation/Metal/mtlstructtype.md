@@ -24,7 +24,7 @@ class MTLStructType
 @interface MTLStructType : MTLType
 ```
 
-#### Overview
+## Overview
 
 [`MTLStructType`](./mtlstructtype.md) is part of the reflection API that allows Metal framework code to query details of a struct that is passed as an argument of a Metal shading language function. Don’t create [`MTLStructType`](./mtlstructtype.md) instances directly; instead query the [`bufferStructType`](./mtlargument/bufferstructtype.md) property of an [`MTLArgument`](./mtlargument.md) instance, or call the [`structType()`](./mtlstructmember/structtype%28%29.md) method for an [`MTLStructMember`](./mtlstructmember.md) instance. To examine the details of the struct, you can recursively drill down the [`members`](./mtlstructtype/members.md) property of the [`MTLStructType`](./mtlstructtype.md) instance, which contains details about struct members, each of which is represented by an [`MTLStructMember`](./mtlstructmember.md) instance.
 

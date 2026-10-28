@@ -17,7 +17,7 @@ Flatten an array.
 func flatten(_ a: MLXArray, startAxis: Int, endAxis: Int = -1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The axes flattened will be between `start_axis` and `end_axis`, inclusive. Negative axes are supported. After converting negative axis to positive, axes outside the valid range will be clamped to a valid value, `start_axis` to `0` and `end_axis` to `ndim - 1`.
 

@@ -21,7 +21,7 @@ A type that represents the style to use when formatting the units of relative da
 struct UnitsStyle
 ```
 
-#### Overview
+## Overview
 
 Cases include [`wide`](./unitsstyle-swift.struct/wide.md), [`narrow`](./unitsstyle-swift.struct/narrow.md), [`abbreviated`](./unitsstyle-swift.struct/abbreviated.md) and [`spellOut`](./unitsstyle-swift.struct/spellout.md).
 

@@ -19,7 +19,7 @@ class let didChangeSelectionNotification: NSNotification.Name
 extern NSNotificationName NSTextViewDidChangeSelectionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 `NSTextView` posts this notification whenever [`setSelectedRange(_:affinity:stillSelecting:)`](./setselectedrange%28_,affinity,stillselecting%29.md) is invoked, either directly or through the many methods ([`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md), [`selectAll(_:)`](../nstext/selectall%28_%29.md), and so on) that invoke it indirectly. When the user is selecting text, this notification is posted only once, at the end of the selection operation. The text view’s delegate receives a [`textViewDidChangeSelection(_:)`](../nstextviewdelegate/textviewdidchangeselection%28_%29.md) message when this notification is posted.
 

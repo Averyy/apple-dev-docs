@@ -25,11 +25,11 @@ func CTFontDescriptorCopyAttribute(_ descriptor: CTFontDescriptor, _ attribute: 
 extern CFTypeRefCTFontDescriptorCopyAttribute(CTFontDescriptorRef descriptor, CFStringRef attribute);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to an arbitrary attribute, or `NULL` if the requested attribute is not present.
 
-#### Discussion
+## Discussion
 
 Refer to Accessing Font Attributes for documentation explaining how each attribute is packaged as a CFType object.
 

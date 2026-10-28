@@ -21,11 +21,11 @@ Gets the customer’s most recent transaction for an Apple In-App Purchase.
 static func latest(for productID: String) async -> VerificationResult<Transaction>?
 ```
 
-#### Return Value
+## Return Value
 
 A [`VerificationResult`](../verificationresult.md) with a single [`Transaction`](../transaction.md), or `nil` if the customer hasn’t purchased the product.
 
-#### Discussion
+## Discussion
 
 Call this method for any type of Apple In-App Purchase. The following code example illustrates requesting the most recent transaction to determine whether the customer purchased the product indicated by the string `productIdentifier`:
 

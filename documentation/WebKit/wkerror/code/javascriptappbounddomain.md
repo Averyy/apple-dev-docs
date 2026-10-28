@@ -23,7 +23,7 @@ case javaScriptAppBoundDomain
 WKErrorJavaScriptAppBoundDomain
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a script targets a frame that is not in an app-bound domain.
 

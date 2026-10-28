@@ -12,11 +12,11 @@ virtual bool FilterInterruptRequest (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 True if the hardware interrupt line should be disabled, otherwise false.
 
-#### Overview
+## Overview
 
 Filter method called at primary interrupt time. This should only be overridden by the child class in order to determine if an interrupt occurred for this controller instance. Since all work occurs at primary interrupt time, this routine should be quick and efficient and defer as much processing as possible to the HandleInterruptRequest() method.
 

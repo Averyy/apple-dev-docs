@@ -23,7 +23,7 @@ class func preferredFontDescriptor(withTextStyle style: UIFont.TextStyle, compat
 + (UIFontDescriptor *) preferredFontDescriptorWithTextStyle:(UIFontTextStyle) style compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

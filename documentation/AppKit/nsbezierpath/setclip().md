@@ -19,7 +19,7 @@ func setClip()
 - (void) setClip;
 ```
 
-#### Discussion
+## Discussion
 
 You should avoid using this method as a way of adjusting the clipping path, as it may expand the clipping path beyond the bounds set by the enclosing view. If you do use this method, be sure to save the graphics state prior to modifying the clipping path and restore the graphics state when you are done.
 

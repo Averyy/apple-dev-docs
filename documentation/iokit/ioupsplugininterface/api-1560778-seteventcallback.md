@@ -16,11 +16,11 @@ Set the callback that should be called to handle an event from the UPS.
 IOReturn (*setEventCallback)(void *thisPointer, IOUPSEventCallbackFunction callback, void *callbackTarget, void *callbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 The proivided callback method should be called whenever there is a change of state in the UPS. This should be used in conjunction with createAsyncEventSource.
 

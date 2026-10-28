@@ -25,7 +25,7 @@ init?(length: Int)
 - (instancetype) initWithLength:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSMutableData` object containing `length` zeroed bytes. The returned object has the same memory alignment guarantees as `malloc(_:)`.
 

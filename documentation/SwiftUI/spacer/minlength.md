@@ -21,7 +21,7 @@ The minimum length this spacer can be shrunk to, along the axis or axes of expan
 var minLength: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the system default spacing between views is used.
 

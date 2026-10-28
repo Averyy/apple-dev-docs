@@ -22,7 +22,7 @@ class iOS
 @interface UIWindowSceneGeometryPreferencesIOS : UIWindowSceneGeometryPreferences
 ```
 
-#### Overview
+## Overview
 
 Use this class to express iOS-specific geometry preferences when you call [`requestGeometryUpdate(_:errorHandler:)`](../requestgeometryupdate%28_,errorhandler%29.md).
 

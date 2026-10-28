@@ -21,15 +21,15 @@ func LSFindApplicationForInfo(_ inCreator: OSType, _ inBundleID: CFString!, _ in
 OSStatus LSFindApplicationForInfo(OSType inCreator, CFStringRef inBundleID, CFStringRef inName, FSRef *outAppRef, CFURLRef *outAppURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359). If no suitable application is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
-#### Discussion
+## Discussion
 
 You can request any combination of one, two, or all three of the characteristics specified by the `inCreator`, `inBundleID`, and `inName` parameters; at least one of these characteristics must be supplied. If more than one application is found matching the specified characteristics, Launch Services chooses one in the same manner as when locating the preferred application for opening an item.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

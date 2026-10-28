@@ -21,11 +21,11 @@ func SecEncodeTransformCreate(_ encodeType: CFTypeRef, _ error: UnsafeMutablePoi
 SecTransformRefSecEncodeTransformCreate(CFTypeRef encodeType, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 This function creates a transform which computes an encode.
 

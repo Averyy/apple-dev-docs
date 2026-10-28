@@ -24,7 +24,7 @@ let CNPostalAddressLocalizedPropertyNameAttribute: String
 extern NSString * const CNPostalAddressLocalizedPropertyNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 This constant is a key in the attributed string whose value is a localized version of the CNPostalAddress property key. This label takes a string value.
 

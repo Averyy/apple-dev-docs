@@ -27,7 +27,7 @@ optional func resolveAttributes(for intent: INSearchForMessagesIntent) async -> 
 - (void) resolveAttributesForSearchForMessages:(INSearchForMessagesIntent *) intent withCompletion:(void (^)(INMessageAttributeOptionsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves any attributes associated with the messages. Use this method to validate whether your app can search using the specified attributes.
 

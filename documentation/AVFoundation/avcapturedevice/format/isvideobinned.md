@@ -22,7 +22,7 @@ var isVideoBinned: Bool { get }
 @property (nonatomic, readonly, getter=isVideoBinned) BOOL videoBinned;
 ```
 
-#### Discussion
+## Discussion
 
 Binning is a pixel-combining process which can result in greater low light sensitivity at the cost of reduced resolution.
 

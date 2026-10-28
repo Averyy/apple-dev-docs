@@ -5,7 +5,7 @@
 
 Investigate your app’s workload, dependencies, performance, and memory impact using the Metal debugger.
 
-#### Overview
+## Overview
 
 The Metal debugger provides useful tools for analyzing many aspects of how your app uses the GPU.
 
@@ -15,7 +15,7 @@ To the left of the Summary viewer is the Debug navigator, which enables quick ac
 
 ![A screenshot of the Metal debugger showing the Debug navigator and the Summary viewer. The Debug navigator includes top-level gauges, the Outline popup menu, the GPU trace outline, and a filter bar.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-debug-navigator-summary-page@2x.png)
 
-##### View statistics for your Metal workload
+### View statistics for your Metal workload
 
 The Metal debugger automatically calculates several statistics and displays them on the right side of the Summary viewer.
 
@@ -35,7 +35,7 @@ The Memory section includes a brief overview of GPU memory for various resource 
 
 ![A screenshot of the Summary viewer highlighting the Memory section.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sp-memory@2x.png)
 
-##### Browse API calls
+### Browse API calls
 
 By default, the Metal debugger shows an outline of captured Metal commands — grouped by command buffers, passes, and debug groups — in the Debug navigator. In addition, for render passes, the outline includes a list of render attachment thumbnail images.
 
@@ -45,7 +45,7 @@ It’s common for a render pass to issue a massive number of draw commands. You 
 
 ![A screenshot of the Debug navigator showing the popover that appears when the pointer hovers over any command in the outline.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-debug-navigator-skim@2x.png)
 
-##### Browse pipeline states
+### Browse pipeline states
 
 Instead of viewing the hierarchy of Metal commands, you can begin exploring your captured Metal workload from pipeline states. Click the Outline popup menu and select Group by Pipeline State.
 
@@ -55,7 +55,7 @@ The Metal debugger shows a list of pipeline states. Expanding a pipeline state a
 
 With profiling data, the Debug navigator displays the percentage of samples from the shaders of each pipeline state when running the workload with overlap. In a shader-bound workload, this sorted list of pipeline states is helpful in identifying the most expensive pipeline state.
 
-##### Improve your Metal workload with Insights
+### Improve your Metal workload with Insights
 
 The Metal debugger automatically generates a number of recommendations, called Insights, and includes them at the bottom of the Summary viewer to help you improve your Metal workload. The Insights information includes the following categories:
 
@@ -73,7 +73,7 @@ Click the Insights button next to the command in the Debug navigator to see in-d
 
 ![A screenshot of the Insights popover with detailed information and recommendations for a command in the Debug navigator.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-debug-navigator-insights-popover@2x.png)
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Use the filter bar at the bottom of the Debug navigator to adjust filtering criteria. You can type filter terms into the filter bar’s text field, and the outline in the Debug navigator shows only rows with labels that match those filter terms.
 

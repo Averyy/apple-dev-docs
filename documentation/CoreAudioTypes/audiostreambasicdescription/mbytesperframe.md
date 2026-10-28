@@ -25,7 +25,7 @@ var mBytesPerFrame: UInt32
 UInt32 mBytesPerFrame;
 ```
 
-#### Discussion
+## Discussion
 
 For an audio buffer containing *interleaved* data for *n* channels, with each sample of type `AudioSampleType`, calculate the value for this field as follows:
 

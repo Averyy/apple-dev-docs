@@ -22,7 +22,7 @@ var icons: [UIImage] { get }
 @property (nonatomic, readonly) NSArray<UIImage *> * icons;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`UIImage`](../uiimage.md) objects containing the available icons for the given file. The images in the array are sorted from smallest to largest, with the smallest image located at index 0. The returned array always contains at least one image.
 

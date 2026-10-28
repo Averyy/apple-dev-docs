@@ -20,7 +20,7 @@ var ES_CLEAR_CACHE_RESULT_ERR_THROTTLE: es_clear_cache_result_t { get }
 ES_CLEAR_CACHE_RESULT_ERR_THROTTLE
 ```
 
-#### Discussion
+## Discussion
 
 If you receive this response, slow down the rate at which you make calls to [`es_clear_cache(_:)`](./es_clear_cache%28_%29.md).
 

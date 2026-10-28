@@ -16,11 +16,11 @@ Returns a local proxy for a given object and connection, creating the proxy if n
 + (id) proxyWithLocal:(id) target connection:(NSConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 A local proxy for `target` and `connection`, creating it if necessary.
 
-#### Discussion
+## Discussion
 
 Other applications connect to the proxy using the `NSConnection` [`connectionWithRegisteredName:host:`](../nsconnection/connectionwithregisteredname_host_.md) class method.
 

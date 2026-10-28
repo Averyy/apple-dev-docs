@@ -23,11 +23,11 @@ func IOKitWaitQuiet(_ mainPort: mach_port_t, _ waitTime: UnsafeMutablePointer<ma
 kern_return_t IOKitWaitQuiet(mach_port_t mainPort, mach_timespec_t *waitTime);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an error code if mach synchronization primitives fail, [`kIOReturnTimeout`](./kioreturntimeout.md), or [`kIOReturnSuccess`](./kioreturnsuccess.md).
 
-#### Discussion
+## Discussion
 
 Blocks the caller until all IOServices are non busy, see [`IOKitGetBusyState(_:_:)`](./api-1514460-iokitgetbusystate.md).
 

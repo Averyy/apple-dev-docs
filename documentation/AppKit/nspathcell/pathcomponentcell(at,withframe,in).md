@@ -19,7 +19,7 @@ func pathComponentCell(at point: NSPoint, withFrame frame: NSRect, in view: NSVi
 - (NSPathComponentCell *) pathComponentCellAtPoint:(NSPoint) point withFrame:(NSRect) frame inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The component cell within which the given point is located, or `nil` if no cell exists at that location.
 

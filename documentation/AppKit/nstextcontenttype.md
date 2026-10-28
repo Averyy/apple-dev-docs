@@ -19,7 +19,7 @@ struct NSTextContentType
 typedef NSString * NSTextContentType;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants with the [`contentType`](./nstextcontent/contenttype.md) property.
 

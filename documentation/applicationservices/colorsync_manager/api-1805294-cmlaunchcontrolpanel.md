@@ -13,11 +13,11 @@ CMError CMLaunchControlPanel (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 When your application calls the function `CMLaunchControlPanel`, any changes made by the user will not be available (through calls such as `CMGetDefaultProfileBySpace`) until the user closes the ColorSync preferences pane. There is currently no ColorSync function that determines if the ColorSync preferences pane has been closed, but you can use the Process Manager API for this purpose. 
 

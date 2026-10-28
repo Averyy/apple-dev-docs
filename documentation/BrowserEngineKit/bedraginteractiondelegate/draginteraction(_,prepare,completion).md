@@ -20,7 +20,7 @@ optional func dragInteraction(_ dragInteraction: BEDragInteraction, prepare sess
 - (void) dragInteraction:(BEDragInteraction *) dragInteraction prepareDragSession:(id<UIDragSession>) session completion:(BOOL (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call the completion handler when your app finishes preparing for the drag session. Call the handler as soon as possible to maintain a responsive interaction experience.
 

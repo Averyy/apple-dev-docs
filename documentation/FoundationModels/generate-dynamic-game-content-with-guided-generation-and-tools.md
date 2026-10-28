@@ -13,7 +13,7 @@ Make gameplay more lively with AI generated dialog and encounters personalized t
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates the Foundation Models framework and its ability to generate dynamic content for a game. Instead of using the same dialog script for customer encounters, the app dynamically generates dialog so that each time a player talks to a character, they can have a different conversation.
 
@@ -23,7 +23,7 @@ The game combines several framework capabilities — like guided generation and 
 
 > **Note**: This sample code project is associated with WWDC25 sessions 301: [Deep Dive into the Foundation Models Framework](https://developer.apple.com/wwdc25/301/).
 
-#### Generate character dialog
+## Generate character dialog
 
 The sample app generates dialog for characters by using `Character` to describe the character, like the barista:
 
@@ -81,7 +81,7 @@ if textIsOK(dialog) {
 
 If the output dialog fails the blocked phrases check, the model may break character or discuss something that’s outside of the game world. To keep the dialog immersive, set `nextUtterance` to the character’s fixed error response and reset the session.
 
-#### Generate random encounters
+## Generate random encounters
 
 The `EncounterEngine` creates unique customer encounters using the [`Generable`](./generable.md) protocol to generate structured content. Each encounter produces an NPC with a name, coffee order, and visual description.
 
@@ -124,7 +124,7 @@ let npc = try await session.respond(
 
 Each generated NPC includes a `GenerableImage` that creates a visual representation of the character by using [Image Playground](../ImagePlayground/ImagePlayground.md). The image generation avoids human-like appearances, focusing instead on fantastical creatures, animals, and objects that fit the dream realm aesthetic. The `GenerableImage` class shows how to use [`GenerationSchema`](./generationschema.md) to describe the properties and guides of the object. This allows for creating dynamic schemas when all of the details of the generable type isn’t known until runtime.
 
-#### Use a language model to judge in-game creations
+## Use a language model to judge in-game creations
 
 The game uses the on-device model to evaluate player performance through the `judgeDrink(drink:)` method in the encounter engine. When the player creates a coffee drink for a customer, the model assumes the customer’s persona and provides feedback on whether the drink matches their original order.
 
@@ -153,7 +153,7 @@ return try await session.respond(to: prompt).content
 
 The model then compares the player’s creation against the customer’s original order, providing contextual feedback that’s authentic to the character’s personality. This creates a dynamic evaluation system where the same drink might receive different reactions from different customers based on their unique preferences and personas.
 
-#### Use tools to personalize game content
+## Use tools to personalize game content
 
 For customers that the sample generates, provide the dialog engine with custom tools, like `CalendarTool` to create more personalized interactions. This allows characters to reference the player’s on-device information, making conversations feel more natural and connected to the player’s actual life.
 

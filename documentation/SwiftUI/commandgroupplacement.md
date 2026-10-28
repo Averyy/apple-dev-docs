@@ -19,7 +19,7 @@ The standard locations that you can place new command groups relative to.
 struct CommandGroupPlacement
 ```
 
-#### Overview
+## Overview
 
 The names of these placements aren’t visible in the user interface, but the discussion for each placement lists the items that it includes.
 

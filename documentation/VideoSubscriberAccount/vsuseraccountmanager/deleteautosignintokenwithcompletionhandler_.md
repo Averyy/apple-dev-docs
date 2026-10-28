@@ -19,7 +19,7 @@ Deletes the value of the current Automatic Sign-In token.
 - (void) deleteAutoSignInTokenWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the contents of [`value`](./autosignintoken-swift.struct/value.md) to `nil` for the current [`autoSignInToken`](./autosignintoken-swift.property.md).
 

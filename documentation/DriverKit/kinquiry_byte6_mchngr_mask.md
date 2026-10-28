@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_MCHNGR_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the MCHNGR bit.
 

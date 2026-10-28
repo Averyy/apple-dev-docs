@@ -15,7 +15,7 @@ Possible values for the Journaling Suggestions notifications setting.
 enum NotificationSchedule
 ```
 
-#### Overview
+## Overview
 
 When [`notificationSchedule`](./notificationschedule-swift.property.md) is [`JournalingSuggestionsConfiguration.NotificationSchedule.smart`](./notificationschedule-swift.enum/smart.md), the system personalizes the schedule according to the person’s unique routines. The value is [`JournalingSuggestionsConfiguration.NotificationSchedule.custom`](./notificationschedule-swift.enum/custom.md) if the person chooses a specific schedule in Settings.
 

@@ -24,7 +24,7 @@ static let sustained: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDSustained;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is an event parameter. It determines whether or not the haptic continues playing at full strength after attack has finished, and before decay begins.
 

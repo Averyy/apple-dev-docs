@@ -5,7 +5,7 @@
 
 Use queries to request sample data from HealthKit.
 
-#### Overview
+## Overview
 
 There are three main ways to access data from the HealthKit Store:
 
@@ -13,7 +13,7 @@ There are three main ways to access data from the HealthKit Store:
 - **Queries.** Queries return the current snapshot of the requested data from the HealthKit store.
 - **Long-running queries.** These queries continue to run in the background and update your app whenever the system detects changes to the HealthKit store.
 
-##### Queries
+### Queries
 
 Queries return the current snapshot of the data in the HealthKit store. All queries run on an anonymous background queue. When the query is complete, it executes the results handler on the background queue. HealthKit provides different types of queries, each designed to return different types of data from the HealthKit store.
 
@@ -26,7 +26,7 @@ Queries return the current snapshot of the data in the HealthKit store. All quer
 - **Activity summary query.** Use this query to search for activity summary information for the user. Each activity summary object contains a summary of the user’s activity for a given day. You can query for either a single day or a range of days. For more information, see [`HKActivitySummaryQueryDescriptor`](./hkactivitysummaryquerydescriptor.md).
 - **Document query.** Use this query to search for health documents. For more information, see [`HKDocumentQuery`](./hkdocumentquery.md).
 
-##### Long-running queries
+### Long-running queries
 
 Long-running queries continue to run an anonymous background queue, and update your app whenever the system detects changes to the HealthKit store. In addition, observer queries can register for background delivery. This lets HealthKit wake your app in the background whenever an update occurs.
 

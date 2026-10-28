@@ -16,7 +16,7 @@
 kSENSE_FILEMARK_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the SENSE_KEY field for the FILEMARK bit.
 

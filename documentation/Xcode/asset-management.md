@@ -4,7 +4,7 @@
 
 Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
 
-#### Overview
+## Overview
 
 Apps rely on many types of assets to create a rich, dynamic, and visually engaging user experience. Xcode provides tools and settings to help you add, organize, and optimize the different asset types your app uses.
 

@@ -5,7 +5,7 @@
 
 Make your email app’s actions available to Apple Intelligence and Siri by adopting schemas for common email actions.
 
-#### Overview
+## Overview
 
 The `.mail` domain defines app schemas that provide a structured representation for common email actions and content. Apply schemas in the `.mail` domain to make your app’s email functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across email apps. For example, a person can compose an email on different apps that support the [`createDraft`](./appschema/mailintent/createdraft.md) schema with the same phrases.
 
@@ -30,7 +30,7 @@ The following table maps example phrases that apply to each schema:
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md).
 
-#### Mail domain use-case groups
+## Mail domain use-case groups
 
 A *use-case group* is a set of related schemas that share a single purpose. Xcode reports a build warning for each missing schema in a group your app partially supports.
 

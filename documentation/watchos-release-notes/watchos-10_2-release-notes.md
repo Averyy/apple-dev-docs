@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 10.2. The SDK comes bundled with Xcode 15.1. For information on the compatibility requirements for Xcode 15.1, see [Xcode 15.1 Release Notes](../Xcode-Release-Notes/xcode-15_1-release-notes.md).
 
-##### AirDrop
+### AirDrop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sending an AirDrop or using NameDrop to an 17.0 or 17.1 device might fail sporadically.  (117925962)
 
-##### Apple Music
+### Apple Music
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Favorite Songs playlist might take a while to appear on some iOS/iPadOS, watchOS, and tvOS devices.  (117219873)
 
-##### iMessage Contact Key Verification
+### iMessage Contact Key Verification
 
-###### New Features
+#### New Features
 
 - With iMessage Contact Key Verification, users can choose to further verify that they are messaging only with the people they intend. iMessage Contact Key Verification uses Key Transparency to enable automatic verification that the iMessage key distribution service returns device keys that have been logged to a verifiable and auditable map. When a user enables the feature, they will be notified about any validation errors directly in the Messages conversation transcript and Apple ID Settings.
 
@@ -31,36 +31,36 @@ The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch de
 
   All devices signed into your iCloud account must be on the minimum supported version of iOS 17.2 Beta, macOS 14.2 Beta, or watchOS 10.2 Beta. If you wish to keep using other devices on older versions of the OS, you will need to sign out of iMessage on these devices in order to enable contact key verification.  (111356044)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users might see that they’re are not eligible to enable Contact Key Verification on some of their upgraded devices.  (117044482)
 
-###### Known Issues
+#### Known Issues
 
 - The Learn More links do not link to Knowledge Base articles during Beta.  (101563811)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New pricing properties `price`, `currency`, and `currencyCode` are now available on [Transaction](../StoreKit/transaction.md). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The StoreKit 2 Transaction properties `price`, `currency`, and `Offer.paymentMode` now have Optional types.  (116592563)
 - Fixed: The StoreKit 2 Transaction properties `price`, `currency`, and `Offer.paymentMode` now have Optional types.  (116809380)
 - Fixed an issue causing the refund request “Done” button to not dismiss the sheet when using StoreKit Testing in Xcode.  (117482750)
 - Fixed an issue where StoreKit 2 `deviceVerification` was incorrect, which caused transaction verification to fail.  (117689523) (FB13315344)
 
-##### Swift Charts
+### Swift Charts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a scrollable chart did not respect the initial non-zero binding value passed to `chartScrollPosition`.  (114889276)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Use `_logChanges()` to log causes of SwiftUI view updates.
 
@@ -83,7 +83,7 @@ The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch de
 
   Calls to `_logChanges()` log at the info level to the “com.apple.SwiftUI” subsystem with the category “Changed Body Properties”.  (113352555)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolved an issue with programmatically present an alert or sheet simultaneously with dismissing another sheet. The new alert or sheet would not show. Now it will.
 

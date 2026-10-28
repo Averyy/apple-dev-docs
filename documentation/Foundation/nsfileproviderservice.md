@@ -23,7 +23,7 @@ class NSFileProviderService
 @interface NSFileProviderService : NSObject
 ```
 
-#### Overview
+## Overview
 
 To communicate, both your app and the File Provider extension must implement their part of the service:
 
@@ -32,7 +32,7 @@ To communicate, both your app and the File Provider extension must implement the
 
 The app and File Provider extension communicate using an XPC service. This service performs actions only on items managed by the File Provider extension. For more information, see [Creating XPC Services](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6).
 
-##### Defining the Service’s Protocol
+### Defining the Service’s Protocol
 
 Services let you define custom actions that are not provided by Apple’s APIs. Both the app and the File Provider extension must agree upon the service’s name and protocol.  Communicate the name and protocol through an outside source (for example, posting a header file that defines both the name and protocol, or publishing a library that includes them both).
 

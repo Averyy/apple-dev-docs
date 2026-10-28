@@ -19,7 +19,7 @@ Compares network compatibility tokens between the local device and another devic
 final func compatibilityWith(_ otherToken: NetworkCompatibilityToken) -> NetworkCompatibilityToken.Compatibility
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`NetworkCompatibilityToken.Compatibility.compatible`](./compatibility/compatible.md) if the local client and the remote client represented by `otherToken` can be synced. Any other result indicates that the two devices are incompatible and you shouldn’t proceed with the connection.
 

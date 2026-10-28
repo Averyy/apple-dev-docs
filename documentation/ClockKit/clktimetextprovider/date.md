@@ -21,7 +21,7 @@ var date: Date { get set }
 @property (nonatomic, retain) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 You can make changes to this property until you hand off the timeline entry containing it to ClockKit. The value of this property must not be `nil`.
 

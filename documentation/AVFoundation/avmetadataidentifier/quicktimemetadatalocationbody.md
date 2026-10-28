@@ -25,7 +25,7 @@ static let quickTimeMetadataLocationBody: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataLocationBody;
 ```
 
-#### Discussion
+## Discussion
 
 The system assumes `‘earth’` if this value isn’t present.
 

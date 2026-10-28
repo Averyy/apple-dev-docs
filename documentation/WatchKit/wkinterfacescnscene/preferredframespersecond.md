@@ -19,7 +19,7 @@ var preferredFramesPerSecond: Int { get set }
 @property (nonatomic) NSInteger preferredFramesPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit chooses an actual frame rate that is as close as possible to your preferred frame rate based on the capabilities of the hardware and the systems other requirements. Choose a frame rate that your app can consistently maintain. The default value is 60 frames per second.
 

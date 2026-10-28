@@ -24,7 +24,7 @@ var data: Data { get }
 @property (atomic, strong, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 The data is divided into separate elements. Determine the type of element using [`elementType`](./elementtype.md), and the number of elements using [`elementCount`](./elementcount.md).
 

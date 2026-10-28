@@ -21,11 +21,11 @@ Returns a sequence, up to the specified maximum length, containing the initial e
 func prefix(_ maxLength: Int) -> PrefixSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence starting at the beginning of this sequence with at most `maxLength` elements.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the number of elements in the sequence, the result contains all the elements in the sequence.
 

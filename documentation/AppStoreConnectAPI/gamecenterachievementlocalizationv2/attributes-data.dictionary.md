@@ -15,7 +15,7 @@ Attributes that describe a Game Center achievement localization v2 resource.
 object GameCenterAchievementLocalizationV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - afterEarnedDescription:
 - beforeEarnedDescription:

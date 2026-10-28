@@ -15,7 +15,7 @@ A URL that locates the file’s data.
 var url: URL { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Use this URL to retrieve the file’s data and include its contents in your transmission to the accessory.
 

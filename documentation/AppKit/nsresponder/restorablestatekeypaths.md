@@ -19,11 +19,11 @@ class var restorableStateKeyPaths: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * restorableStateKeyPaths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains a key path to one of the responder’s attributes.
 
-#### Discussion
+## Discussion
 
 You can use this method instead of, or in addition to, the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) and [`restoreState(with:)`](./restorestate%28with%29.md) methods to save and restore the state of your responder. The key paths you return must refer to attributes that are key-value coding and key-value observing compliant. To learn more about these mechanisms, see [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i) and [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

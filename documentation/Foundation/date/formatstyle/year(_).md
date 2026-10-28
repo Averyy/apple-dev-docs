@@ -21,11 +21,11 @@ Modifies the date format style to use the specified year format style.
 func year(_ format: Date.FormatStyle.Symbol.Year = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified year format style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Year`](./symbol/year.md) include [`twoDigits`](./symbol/year/twodigits.md), [`padded(_:)`](./symbol/year/padded%28_%29.md), [`relatedGregorian(minimumLength:)`](./symbol/year/relatedgregorian%28minimumlength%29.md), and [`extended(minimumLength:)`](./symbol/year/extended%28minimumlength%29.md).
 

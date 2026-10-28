@@ -25,11 +25,11 @@ class var uppercaseLetters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * uppercaseLetterCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the uppercase letter characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all characters used as uppercase letters in alphabets that make case distinctions.
 

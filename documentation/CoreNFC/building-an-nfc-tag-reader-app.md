@@ -12,13 +12,13 @@ Read NFC tags with NDEF messages in your app.
 - Mac Catalyst 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 This sample code project shows how to use Core NFC in an app to read Near Field Communication (NFC) tags of types 1 through 5 that contains NFC Data Exchange Format (NDEF) data. To use this sample, download the project and build it using Xcode. Run the sample app on your iPhone. Tap the Scan button to start scanning for tags, then hold the phone near an NFC tag.
 
 To read a tag, the sample app creates an NFC NDEF reader session and provides a delegate. The running reader session polls for NFC tags and calls the delegate when it finds tags that contain NDEF messages, passing the messages to the delegate. The delegate then stores the messages so the user can view them later.
 
-##### Configure the App to Detect NFC Tags
+### Configure the App to Detect NFC Tags
 
 Begin building your tag reader by configuring your app to detect NFC tags. Turn on Near Field Communication Tag Reading under the Capabilities tab for the project’s target (see [Add a capability to a target](https://help.apple.com/xcode/mac/current/#/dev88ff319e7)). This step:
 
@@ -27,7 +27,7 @@ Begin building your tag reader by configuring your app to detect NFC tags. Turn 
 
 Next, add the [`NFCReaderUsageDescription`](../BundleResources/information-property-list/nfcreaderusagedescription.md) key as a string item to the `Info.plist` file. For the value, enter a string that describes the reason the app needs access to the device’s NFC reader. If the app attempts to read a tag without providing this key and string, the app exits.
 
-##### Start a Reader Session
+### Start a Reader Session
 
 Create an [`NFCNDEFReaderSession`](./nfcndefreadersession.md) object by calling the [`init(delegate:queue:invalidateAfterFirstRead:)`](./nfcndefreadersession/init%28delegate,queue,invalidateafterfirstread%29.md) initializer method and passing in:
 
@@ -58,7 +58,7 @@ The sample app starts a reader session when the user taps the Scan button. The a
 }
 ```
 
-##### Adopt the Reader Session Delegate Protocol
+### Adopt the Reader Session Delegate Protocol
 
 The reader session requires a delegate object that conforms to the [`NFCNDEFReaderSessionDelegate`](./nfcndefreadersessiondelegate.md) protocol. Adopting this protocol allows the delegate to receive notifications from the reader session when it:
 
@@ -69,7 +69,7 @@ The reader session requires a delegate object that conforms to the [`NFCNDEFRead
 class MessagesTableViewController: UITableViewController, NFCNDEFReaderSessionDelegate {
 ```
 
-##### Read an NDEF Message
+### Read an NDEF Message
 
 Each time the reader session retrieves a new NDEF message, the session sends the message to the delegate by calling the [`readerSession(_:didDetectNDEFs:)`](./nfcndefreadersessiondelegate/readersession%28_,diddetectndefs%29.md) method. This is the app’s opportunity to do something useful with the data. For instance, the sample app stores the message so the user can view it later.
 
@@ -83,7 +83,7 @@ func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NF
 }
 ```
 
-##### Handle an Invalid Reader Session
+### Handle an Invalid Reader Session
 
 When a reader session ends, it calls the delegate method [`readerSession(_:didInvalidateWithError:)`](./nfcndefreadersessiondelegate/readersession%28_,didinvalidatewitherror%29.md) and passes in an error object that gives the reason for ending the session. Possible reasons include:
 
@@ -120,7 +120,7 @@ func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error
 }
 ```
 
-##### Write an NDEF Message
+### Write an NDEF Message
 
 To write to a tag, the sample app starts a new reader session. This session must be active to write an NDEF message to the tag, so this time, `invalidateAfterFirstRead` is set to `false`, preventing the session from becoming invalid after reading the tag.
 
@@ -189,7 +189,7 @@ func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [NFCNDEFTag]
 }
 ```
 
-##### Support Background Tag Reading
+### Support Background Tag Reading
 
 To learn how to set up your app to process tags that iOS reads in the background, see [Adding Support for Background Tag Reading](./adding-support-for-background-tag-reading.md).
 

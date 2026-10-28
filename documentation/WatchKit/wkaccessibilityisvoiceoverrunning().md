@@ -19,11 +19,11 @@ func WKAccessibilityIsVoiceOverRunning() -> Bool
 extern BOOL WKAccessibilityIsVoiceOverRunning();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if VoiceOver is currently running or [`false`](../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 You can use this function to customize your application’s UI specifically for VoiceOver users. For example, you might want UI elements that usually disappear quickly to persist onscreen for VoiceOver users. Note that you can also listen for the [`WKAccessibilityVoiceOverStatusChanged`](./wkaccessibilityvoiceoverstatuschanged.md) notification to find out when VoiceOver starts and stops.
 

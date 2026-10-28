@@ -35,7 +35,7 @@ class GKMatchRequest
 - [Finding players with similar skill levels](./finding-players-with-similar-skill-levels.md)
 - [Troubleshooting matchmaking rules using metrics](./troubleshooting-matchmaking-rules-using-metrics.md)
 
-#### Overview
+## Overview
 
 To request a match, set the properties of the match request, such as the number of players, the invitation message, and whether to use automatch to fill the player slots. You’re required to set the minimum and maximum number of players allowed in the match. Then, pass the match request to the appropriate class, depending on the type of game and whether you implement your own user interface.
 
@@ -43,7 +43,7 @@ To use the matchmaking user interface that GameKit provides, pass the match requ
 
 If you implement your own interface for finding players, pass the match request to the [`GKMatchmaker`](./gkmatchmaker.md) class for real-time games, or the [`GKTurnBasedMatch`](./gkturnbasedmatch.md) class for turn-based games. If the player selects the other players to invite in your interface, set the [`recipients`](./gkmatchrequest/recipients.md), the [`inviteMessage`](./gkmatchrequest/invitemessage.md), and the [`recipientResponseHandler`](./gkmatchrequest/recipientresponsehandler.md) properties before creating the match.
 
-##### Matchmaking using rules
+### Matchmaking using rules
 
 You can refine the match results and reduce player wait times by configuring matchmaking before you present an interface. You can either find players using matchmaking rules you set up on the server, or find players from a subset of players you specify in the game.
 

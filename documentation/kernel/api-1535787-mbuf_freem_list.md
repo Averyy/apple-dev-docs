@@ -13,11 +13,11 @@
 int mbuf_freem_list(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The number of mbufs freed.
 
-#### Discussion
+## Discussion
 
 Frees linked list of mbuf chains. Walks through mnextpackt and does the equivalent of mbuf_freem to each.
 

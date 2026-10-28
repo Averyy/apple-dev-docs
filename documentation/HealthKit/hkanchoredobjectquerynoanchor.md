@@ -24,7 +24,7 @@ var HKAnchoredObjectQueryNoAnchor: Int32 { get }
 #define HKAnchoredObjectQueryNoAnchor
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only use this constant to support iOS 8 (using the deprecated [`init(type:predicate:anchor:limit:completionHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,completionhandler%29.md) method). In iOS 9 and later, use [`init(type:predicate:anchor:limit:resultsHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md) and pass `nil` instead.
 

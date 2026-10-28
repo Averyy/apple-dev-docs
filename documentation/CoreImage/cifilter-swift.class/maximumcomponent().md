@@ -24,11 +24,11 @@ class func maximumComponent() -> any CIFilter & CIMaximumComponent
 + (CIFilter<CIMaximumComponent> *) maximumComponentFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the maximum component filter to an image. The effect applies a preconfigured set of effects that result in the input image becoming grayscale using the maximum RGB color components.
 

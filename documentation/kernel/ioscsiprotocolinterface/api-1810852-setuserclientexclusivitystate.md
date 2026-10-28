@@ -13,11 +13,11 @@ virtual IOReturn SetUserClientExclusivityState (
  boolstate );
 ```
 
-#### Return Value
+## Return Value
 
 A valid IOReturn code indicating success or the type of failure.
 
-#### Overview
+## Overview
 
 The SetUserClientExclusivityState() method is called by the SCSITaskUserClient to set the exclusive access mode.
 

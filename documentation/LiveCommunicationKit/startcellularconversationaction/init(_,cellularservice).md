@@ -17,7 +17,7 @@ Creates an action that initiates a cellular network conversation.
 init(_ handle: Handle, cellularService: CellularService? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t provide an cellular service, the system chooses a service for the conversation or fails the action.
 

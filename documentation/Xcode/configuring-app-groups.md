@@ -5,7 +5,7 @@
 
 Enable communication and data sharing between multiple installed apps created by the same developer.
 
-#### Overview
+## Overview
 
 An *app group* allows multiple apps developed by the same team to access one or more shared containers. It also enables additional interprocess communication (IPC) between those apps using Mach IPC, POSIX semaphores and shared memory, among other IPC mechanisms. In macOS, app groups can facilitate communication between sandboxed apps, and between sandboxed and nonsandboxed apps. Apps can belong to one or more app groups. You can also use an app group to share data between an app extension or App Clip and its host app.
 
@@ -13,7 +13,7 @@ Before creating an app group, follow the steps in [Add a capability](./adding-ca
 
 ![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from App Groups to Custom Network Protocol, and the App Groups capability is in a selected state. The text on the information pane explains that App Groups allow access to group containers that are shared among multiple related apps, and allow certain additional interprocess communication between the apps.](https://developer.apple.com/tutorials/images/com.apple.Xcode/app-groups@2x.png)
 
-##### Create app groups
+### Create app groups
 
 After adding the app groups capability to your app, Xcode retrieves any existing groups from your developer account and displays them in the capability’s section. Use the Refresh button below the app groups list to re-fetch your account’s groups at any time. Each developer account can register a maximum of 1,000 app groups.
 
@@ -35,7 +35,7 @@ Xcode automatically selects the new app group in the App Groups list; this selec
 
 > **Note**:  You can also create macOS app groups using the naming convention `<Developer team ID>.<group name>`. By using this naming scheme, macOS checks that the code signature of processes that try to access the app group container contains the same `Developer-Team-ID` as app group container ID.
 
-##### Access an app group’s shared container
+### Access an app group’s shared container
 
 When your app becomes a member of an app group, there are a number of APIs you can use to read and write data to that group’s shared container, such as:
 

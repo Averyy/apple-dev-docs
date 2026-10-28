@@ -23,7 +23,7 @@ class INRequestPaymentCurrencyAmountResolutionResult
 @interface INRequestPaymentCurrencyAmountResolutionResult : INCurrencyAmountResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INRequestPaymentCurrencyAmountResolutionResult`](./inrequestpaymentcurrencyamountresolutionresult.md) object is what you return when resolving parameters containing an [`INCurrencyAmount`](./incurrencyamount.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

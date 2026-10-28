@@ -24,7 +24,7 @@ case screen
 SCStreamOutputTypeScreen
 ```
 
-#### Discussion
+## Discussion
 
 This output represents a sample buffer that wraps a [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) backed by an [`IOSurface`](../../IOSurface/iosurface-page.md).
 

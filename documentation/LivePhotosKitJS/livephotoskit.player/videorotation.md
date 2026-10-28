@@ -15,7 +15,7 @@ The angle that the video is displayed.
 attribute Number videoRotation;
 ```
 
-#### Discussion
+## Discussion
 
 This property takes on a value of: 0, 90, 180, or 270, and is automatically determined as part of the video loading process.
 

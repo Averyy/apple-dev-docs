@@ -15,11 +15,11 @@ A target CPA recommendation for a campaign using a Maximize Conversions bid stra
 object TargetCpaRecommendation
 ```
 
-#### Discussion
+## Discussion
 
 For campaigns using a Maximize Conversions bid strategy, `TargetCpaRecommendation` provides a system-calculated `recommendedTargetCPA` derived from historical performance. To evaluate the suggested adjustment, compare `recommendedTargetCPA` against `averageCPA`. Once actioned, the system creates a `TargetCpaRecommendationHistory` record.
 
-##### Example
+### Example
 
 ```json
 {

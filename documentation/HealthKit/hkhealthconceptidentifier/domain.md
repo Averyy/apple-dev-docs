@@ -24,7 +24,7 @@ var domain: HKHealthConceptDomain { get }
 @property (nonatomic, copy, readonly) HKHealthConceptDomain domain;
 ```
 
-#### Discussion
+## Discussion
 
 This value identifies the group of concepts the identifier comes from. For example, if the identifier represents a medication, the category will be the medication domain.
 

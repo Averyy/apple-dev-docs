@@ -23,11 +23,11 @@ func attributeSet(for object: NSManagedObject) -> CSSearchableItemAttributeSet?
 - (CSSearchableItemAttributeSet *) attributeSetForObject:(NSManagedObject *) object;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`CSSearchableItemAttributeSet`](../../CoreSpotlight/cssearchableitemattributeset.md) that provides the searchable item’s attributes.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If you enable [`isIndexedBySpotlight`](../nspropertydescription/isindexedbyspotlight.md) on a property description that describes a relationship, override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
 

@@ -19,7 +19,7 @@ class func `default`() -> Self!
 + (instancetype) defaultController;
 ```
 
-#### Return Value
+## Return Value
 
 A (autoreleased) pointer to the created IOBluetoothHostController object.
 

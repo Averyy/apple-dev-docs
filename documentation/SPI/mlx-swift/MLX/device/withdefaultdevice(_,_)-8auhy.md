@@ -17,7 +17,7 @@ Use a device scoped to a Task.
 static func withDefaultDevice<R>(_ device: Device, _ body: () throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 This can be used to set the default device to e.g. the CPU:
 

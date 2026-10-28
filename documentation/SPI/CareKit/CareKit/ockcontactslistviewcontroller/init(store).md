@@ -20,7 +20,7 @@ convenience init(store: OCKAnyStoreProtocol)
 
 Available when `ContactViewSynchronizer` is `OCKSimpleContactViewSynchronizer`.
 
-#### Discussion
+## Discussion
 
 Displays simple contact views by default.
 

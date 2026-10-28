@@ -25,7 +25,7 @@ static var fetchChanges: CKRecordZone.Capabilities { get }
 CKRecordZoneCapabilityFetchChanges
 ```
 
-#### Discussion
+## Discussion
 
 This capability makes the creation of offline caches more efficient. Instead of fetching the entire record every time, use [`CKFetchRecordZoneChangesOperation`](../../ckfetchrecordzonechangesoperation.md) to fetch only the changed values, and use the data it returns to update your cache. This minimizes the amount of data you receive from the server.
 

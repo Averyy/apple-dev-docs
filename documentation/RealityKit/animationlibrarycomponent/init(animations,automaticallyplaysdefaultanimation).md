@@ -20,7 +20,7 @@ Creates an animation library from a dictionary that associates an animation’s 
 init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)
 ```
 
-#### Example
+## Example
 
 ```swift
 var library = AnimationLibraryComponent(

@@ -23,7 +23,7 @@ func addBoundary(withIdentifier identifier: any NSCopying, from p1: CGPoint, to 
 - (void) addBoundaryWithIdentifier:(id<NSCopying>) identifier fromPoint:(CGPoint) p1 toPoint:(CGPoint) p2;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method based on the [`addBoundary(withIdentifier:for:)`](./addboundary%28withidentifier,for%29.md) method. The coordinate system and origin point for the `p1` and `p2` parameters depend on how you’ve initialized the dynamic animator (that you’re adding the behavior to). See the overview in [`UIDynamicAnimator`](../uidynamicanimator.md) for more information.
 

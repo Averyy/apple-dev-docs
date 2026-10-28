@@ -24,7 +24,7 @@ func JSValueMakeFromJSONString(_ ctx: JSContextRef!, _ string: JSStringRef!) -> 
 JSValueRefJSValueMakeFromJSONString(JSContextRef ctx, JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) that contains the parsed value, or `NULL` if the input is invalid.
 

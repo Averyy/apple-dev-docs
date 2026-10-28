@@ -25,11 +25,11 @@ func CFArrayBSearchValues(_ theArray: CFArray!, _ range: CFRange, _ value: Unsaf
 extern CFIndex CFArrayBSearchValues(CFArrayRef theArray, CFRange range, const void *value, CFComparatorFunction comparator, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The return value is one of the following:
 
-#### Discussion
+## Discussion
 
 - The index of a value that matched, if the target value matches one or more in the range.
 - Greater than or equal to the end point of the range, if the value is greater than all the values in the range.

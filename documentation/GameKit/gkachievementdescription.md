@@ -25,7 +25,7 @@ class GKAchievementDescription
 @interface GKAchievementDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 To present an achievement to the player in your interface, you can download the localized text and artwork for the achievements that you enter in App Store Connect. To get the localized text, use the [`loadAchievementDescriptions(completionHandler:)`](./gkachievementdescription/loadachievementdescriptions%28completionhandler%29.md) class method. GameKit passes an array of [`GKAchievementDescription`](./gkachievementdescription.md) objects to the completion handler that contains the text. To get the artwork for an achievement, use the [`loadImage(completionHandler:)`](./gkachievementdescription/loadimage%28completionhandler%29.md) method.
 

@@ -14,11 +14,11 @@ A texture with RealityKit properties and a explicit level of detail.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Explicit level of detail
 
-#### Parameter Types
+## Parameter Types
 
 **Image 2D LOD (vector4f)**:
 
@@ -92,7 +92,7 @@ Explicit level of detail
 | --- | --- |
 | `Out` | Color3 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`U Wrap Mode`**: The way the node handles *U* values outside of the range of `0-1`. The default value is `clamp_to_edge`.
@@ -109,7 +109,7 @@ Explicit level of detail
 - **`Lod`**: The specific LOD level that the node will sample from.
 - **`Offset`**: The integer values added to the texture coordinates before looking up each pixel. The value must be within the range `-8-7`. The default value is `0`.
 
-#### Discussion
+## Discussion
 
 The Image 2D LOD node produces a texture using the contents of the image file specified in the `File` parameter. It has a multitude of parameters that affect the properties of the rendered textures.
 

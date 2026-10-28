@@ -24,7 +24,7 @@ subscript(bufferIndex: Int) -> MTLPipelineBufferDescriptor! { get set }
 - (MTLPipelineBufferDescriptor *) objectAtIndexedSubscript:(NSUInteger) bufferIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor for the buffer bound at this index.
 

@@ -24,7 +24,7 @@ init<C, L>(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 A toolbar item group provided a label wraps its content within a [`ControlGroup`](../controlgroup.md) which allows the content to collapse down into a menu that presents its content based on available space.
 

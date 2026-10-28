@@ -2,7 +2,7 @@
 
 **Framework**: QuickTime File Format
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR media and should not be used for new development.
 

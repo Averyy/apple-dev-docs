@@ -34,7 +34,7 @@ var transactionAmount: INPaymentAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INPaymentAmount * transactionAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the precise amount to transfer between the user’s accounts. During confirmation or at other appropriate times, Siri may display this value to the user.
 

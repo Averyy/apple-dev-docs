@@ -15,7 +15,7 @@ Set redundancy flags on a buffer. @discussion: buffer_redundancy_flags |= flags
 void buf_set_redundancy_flags(buf_t bp, uint32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

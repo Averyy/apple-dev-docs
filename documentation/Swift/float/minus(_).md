@@ -21,7 +21,7 @@ Calculates the additive inverse of a value.
 static func - (x: Float) -> Float
 ```
 
-#### Discussion
+## Discussion
 
 The unary minus operator (prefix `-`) calculates the negation of its operand. The result is always exact.
 

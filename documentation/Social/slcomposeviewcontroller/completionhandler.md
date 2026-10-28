@@ -21,7 +21,7 @@ var completionHandler: SLComposeViewControllerCompletionHandler! { get set }
 @property (nonatomic, copy) SLComposeViewControllerCompletionHandler completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The handler has a single parameter that indicates whether the user finished or cancelled composing the post. This block is not guaranteed to be called on any particular thread. Do not dismiss the [`SLComposeViewController`](../slcomposeviewcontroller.md) in your completion handler—the system will do so automatically.
 

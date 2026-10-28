@@ -17,7 +17,7 @@ Generates embeddings for the given inputs.
 func callAsFunction(_ inputs: MLXArray, positionIds: MLXArray?, tokenTypeIds: MLXArray?, attentionMask: MLXArray?) -> EmbeddingModelOutput
 ```
 
-#### Return Value
+## Return Value
 
 An `EmbeddingModelOutput` containing the full hidden states and the pooled sentence embedding.
 

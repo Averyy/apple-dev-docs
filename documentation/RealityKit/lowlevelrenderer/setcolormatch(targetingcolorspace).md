@@ -18,7 +18,7 @@ Updates the color match by computing a gamut conversion matrix from the renderer
 final func setColorMatch(targetingColorSpace targetColorSpace: CGColorSpace) throws(LowLevelRendererError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRendererError`](../lowlevelrenderererror.md) if the target color space is not a supported linear gamut.
 

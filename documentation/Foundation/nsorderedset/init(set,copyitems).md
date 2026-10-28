@@ -25,7 +25,7 @@ convenience init(set: Set<AnyHashable>, copyItems flag: Bool)
 - (instancetype) initWithSet:(NSSet<id> *) set copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing the objects in the set.
 

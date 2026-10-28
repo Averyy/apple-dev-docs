@@ -17,11 +17,11 @@ Returns an array of pasteboard types that can be loaded as text.
 + (NSArray *) textUnfilteredPasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, pasteboard types supported by text classes.
 
-#### Discussion
+## Discussion
 
 This list consists of all pasteboard types supported by text classes, but does not include those that can be converted to supported pasteboard types through a user-installed filter service.
 

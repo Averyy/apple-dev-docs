@@ -19,11 +19,11 @@ object ConditionalTextStyle
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalTextStyle` object to define an array of conditional text style properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalTextStyle` overrides the value of the same property if defined in the parent `TextStyle` object. See [`TextStyle`](./textstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

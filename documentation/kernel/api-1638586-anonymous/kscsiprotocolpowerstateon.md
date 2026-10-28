@@ -13,7 +13,7 @@
 kSCSIProtocolPowerStateOn = 1
 ```
 
-#### Discussion
+## Discussion
 
 On power state.
 

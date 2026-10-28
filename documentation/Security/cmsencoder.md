@@ -20,7 +20,7 @@ class CMSEncoder
 typedef struct _CMSEncoder * CMSEncoderRef;
 ```
 
-#### Overview
+## Overview
 
 This is object is compatible with Core Foundation and uses standard Core Foundation semantics. Dispose of it with the [`CFRelease`](../CoreFoundation/cfrelease.md) function.
 

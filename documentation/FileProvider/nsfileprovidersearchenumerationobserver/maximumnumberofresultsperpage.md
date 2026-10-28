@@ -20,7 +20,7 @@ var maximumNumberOfResultsPerPage: Int { get }
 @property (nonatomic, readonly) NSInteger maximumNumberOfResultsPerPage;
 ```
 
-#### Discussion
+## Discussion
 
 If the extension returns more than this number of results in a single page enumeration, the system will crash the extension process.
 

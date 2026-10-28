@@ -16,7 +16,7 @@ nonisolated
 func defaultWorldScaling(_ scaling: WorldScalingBehavior) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 By default, regular windows increase their physical size as they move further away, ensuring they remain at the same angular size. This preserves legibility and ease of use for text and controls. Volumes render with a fixed physical size, because they are most commonly used for 3D content which is meant to behave with greater physical accuracy.
 

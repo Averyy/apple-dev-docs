@@ -25,7 +25,7 @@ case stereoPassThrough
 AVAudio3DMixingRenderingAlgorithmStereoPassThrough
 ```
 
-#### Discussion
+## Discussion
 
 This takes mono and stereo input and passes it to channels 1 and 2 without localization. If the input and output `AudioChannelLayout` differ, mixing happens according to the [`kAudioFormatProperty_MatrixMixMap`](../../AudioToolbox/kaudioformatproperty_matrixmixmap.md) property of the layouts.
 

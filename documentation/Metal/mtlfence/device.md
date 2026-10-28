@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly, nonnull) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 Only the device that created the fence can use it.
 

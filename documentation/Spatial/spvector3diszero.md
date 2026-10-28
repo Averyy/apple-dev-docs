@@ -19,11 +19,11 @@
 static bool SPVector3DIsZero(SPVector3D vector);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the vector is zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the vector is zero.
 

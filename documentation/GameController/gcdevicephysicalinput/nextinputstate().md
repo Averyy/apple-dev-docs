@@ -29,11 +29,11 @@ func nextInputState() -> (any GCDevicePhysicalInputState & GCDevicePhysicalInput
 
 - [Handling input events](../handling-input-events.md)
 
-#### Return Value
+## Return Value
 
 The next input state in the queue or `nil` if the queue is empty.
 
-#### Discussion
+## Discussion
 
 This method removes the next input state from the queue.
 

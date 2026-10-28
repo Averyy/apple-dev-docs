@@ -20,7 +20,7 @@ func ODRecordGetTypeID() -> CFTypeID
 extern CFTypeID ODRecordGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID for a record.
 

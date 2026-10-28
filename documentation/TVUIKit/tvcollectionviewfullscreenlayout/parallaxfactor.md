@@ -19,7 +19,7 @@ var parallaxFactor: CGFloat { get set }
 @property (nonatomic, assign) CGFloat parallaxFactor;
 ```
 
-#### Discussion
+## Discussion
 
 A large `parallaxFactor` value causes the background to move more slowly compared to the foreground. A small value makes the foreground and background move at a similar pace. The parallax effect becomes more apparent as the value of `parallaxFactor` increases.
 

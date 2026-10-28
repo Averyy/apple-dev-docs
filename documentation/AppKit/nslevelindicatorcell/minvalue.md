@@ -19,7 +19,7 @@ var minValue: Double { get set }
 @property double minValue;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.0`.
 

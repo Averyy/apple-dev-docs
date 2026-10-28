@@ -19,7 +19,7 @@ A value describing the field, if any.
 var label: String?
 ```
 
-#### Discussion
+## Discussion
 
 This value may be user-defined.
 

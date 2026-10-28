@@ -25,7 +25,7 @@ func NSCreateMapTable(_ keyCallBacks: NSMapTableKeyCallBacks, _ valueCallBacks: 
 extern NSMapTable *NSCreateMapTable(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity);
 ```
 
-#### Discussion
+## Discussion
 
 Creates and returns a pointer to an `NSMapTable` structure in the default zone; the table’s size is dependent on (but generally not equal to) `capacity`. If `capacity` is 0, a small map table is created. The [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md) arguments are structures that are very similar to the callback structure used by [`NSCreateHashTable(_:_:)`](./nscreatehashtable%28_,_%29.md)—they have the same defaults as documented for that function.
 

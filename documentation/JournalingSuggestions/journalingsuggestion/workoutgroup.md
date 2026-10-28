@@ -15,7 +15,7 @@ A suggestion that contains multiple workouts that a person chooses in the picker
 struct WorkoutGroup
 ```
 
-#### Overview
+## Overview
 
 The system provides an instance of this structure to your app when a person chooses multiple workout suggestions in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md).
 

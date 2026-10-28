@@ -19,7 +19,7 @@ A method the system calls when a crash report is ready to be processed.
 func processCrashReport(process: CrashedProcess)
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method by inspecting the [`CrashedProcess`](../crashedprocess.md) object to prepare a crash report. You can then persist this report or send it back to your own server.
 

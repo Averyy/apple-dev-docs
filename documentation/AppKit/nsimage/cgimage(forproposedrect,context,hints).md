@@ -19,11 +19,11 @@ func cgImage(forProposedRect proposedDestRect: UnsafeMutablePointer<NSRect>?, co
 - (CGImageRef) CGImageForProposedRect:(NSRect *) proposedDestRect context:(NSGraphicsContext *) referenceContext hints:(NSDictionary<NSString *,id> *) hints;
 ```
 
-#### Return Value
+## Return Value
 
 A `CGImageRef`. This may be an existing `CGImage` if one is available. If not, a new `CGImage` is created.
 
-#### Discussion
+## Discussion
 
 An `NSImage` is potentially resolution independent, and may have representations that allow it to draw well in many contexts.  A `CGImage` is more like a single pixel-based representation.   This method produces a snapshot of how the `NSImage` would draw if it was asked to draw in the proposed rectangle in the graphics context.
 

@@ -25,7 +25,7 @@ func index(of object: Any) -> Int
 - (NSUInteger) indexOfObject:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 The index whose corresponding ordered set value is equal to `object`. If none of the objects in the ordered set  is equal to `object`, returns `NSNotFound`.
 

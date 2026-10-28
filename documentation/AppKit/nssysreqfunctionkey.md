@@ -19,7 +19,7 @@ var NSSysReqFunctionKey: Int { get }
 NSSysReqFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

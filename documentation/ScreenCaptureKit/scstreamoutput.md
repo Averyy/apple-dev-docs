@@ -24,7 +24,7 @@ protocol SCStreamOutput : NSObjectProtocol
 @protocol SCStreamOutput <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`SCStreamOutput`](./scstreamoutput.md) protocol provides a way to retrieve output from an [`SCStream`](./scstream.md).
 

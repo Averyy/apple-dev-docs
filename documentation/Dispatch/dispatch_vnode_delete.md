@@ -23,7 +23,7 @@ var DISPATCH_VNODE_DELETE: Int32 { get }
 #define DISPATCH_VNODE_DELETE
 ```
 
-#### Discussion
+## Discussion
 
 The file-system object was deleted from the namespace.
 

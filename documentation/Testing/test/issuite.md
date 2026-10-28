@@ -23,7 +23,7 @@ Whether or not this instance is a test suite containing other tests.
 var isSuite: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Instances of [`Test`](../test.md) attached to types rather than functions are test suites. They do not contain any test logic of their own, but they may have traits added to them that also apply to their subtests.
 

@@ -27,7 +27,7 @@ class func requestAuthorization(sensors: Set<SRSensor>) async throws
 + (void) requestAuthorizationForSensors:(NSSet<NSString *> *) sensors completion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function for sensors in which [`authorizationStatus`](./authorizationstatus.md) is [`SRAuthorizationStatus.notDetermined`](../srauthorizationstatus/notdetermined.md) to display a prompt that requests user authorization. When the prompt dismisses, the framework calls the `completion` closure. Your delegate needs to wait for a call to [`sensorReader(_:didChange:)`](../srsensorreaderdelegate/sensorreader%28_,didchange%29.md) to determine whether the user approves sensor access.
 

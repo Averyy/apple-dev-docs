@@ -18,7 +18,7 @@ The declared output ports of this graph.
 final var outputs: [ShaderGraph.NodeDefinition.Output] { get }
 ```
 
-#### Discussion
+## Discussion
 
 These ports are exposed as inputs on the [`results`](./results.md) node, and define what values the graph produces for the renderer.
 

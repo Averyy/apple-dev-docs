@@ -19,7 +19,7 @@ A Boolean value that determines whether the full text displays when the pointer 
 @property (nonatomic) BOOL showsExpansionTextWhenTruncated;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

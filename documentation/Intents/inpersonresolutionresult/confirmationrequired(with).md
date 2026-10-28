@@ -24,11 +24,11 @@ class func confirmationRequired(with personToConfirm: INPerson?) -> Self
 + (instancetype) confirmationRequiredWithPersonToConfirm:(INPerson *) personToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPersonResolutionResult`](../inpersonresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified person but you want the user to confirm that value.
 

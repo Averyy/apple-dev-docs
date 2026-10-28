@@ -19,7 +19,7 @@ init!(uuid32: BluetoothSDPUUID32)
 - (instancetype) initWithUUID32:(BluetoothSDPUUID32) uuid32;
 ```
 
-#### Return Value
+## Return Value
 
 Returns self.
 

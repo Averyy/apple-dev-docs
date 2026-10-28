@@ -22,7 +22,7 @@ var inputOrientation: AVAudioSession.StereoOrientation { get }
 @property (readonly) AVAudioStereoOrientation inputOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re recording video, set the input orientation to match the video orientation. If you’re recording audio only, set the input orientation to match the user interface orientation. In either case, don’t modify the input orientation during recording.
 

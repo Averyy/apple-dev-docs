@@ -24,7 +24,7 @@ var dataType: MTLTensorDataType { get set }
 @property (nonatomic, readwrite) MTLTensorDataType dataType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`MTLTensorDataType.metalFloat8ue8m0`](../mtltensordatatype/metalfloat8ue8m0.md).
 

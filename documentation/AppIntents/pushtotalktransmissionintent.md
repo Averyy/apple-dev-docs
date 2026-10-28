@@ -17,7 +17,7 @@ An intent that begins or ends an audio transmission with the Push to Talk framew
 protocol PushToTalkTransmissionIntent : SystemIntent
 ```
 
-#### Overview
+## Overview
 
 Create an app intent that confirms to this protocol to manually start or end an audio transmission that uses the Push to Talk framework. For additional information about transmitting audio with the Push to Talk framework, see [Push to Talk](../PushToTalk/PushToTalk.md).
 

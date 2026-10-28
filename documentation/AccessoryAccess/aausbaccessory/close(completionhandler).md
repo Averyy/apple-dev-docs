@@ -23,7 +23,7 @@ func close() async throws
 - (void) closeWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Closing an accessory by calling the `destroy()` method on an [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md) is a blocking operation. Such an operation causes a deadlock, if you call it from a completion handler.
 

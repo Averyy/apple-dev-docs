@@ -15,11 +15,11 @@ Write a buffer's data to backing store.
 errno_t buf_bwrite(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success; errors from buf_biowait().
 
-#### Discussion
+## Discussion
 
 Once the data in a buffer has been modified, buf_bwrite() starts sending it to disk by calling VNOP_STRATEGY. Unless B_ASYNC has been set on the buffer (by buf_setflags() or otherwise), data will have been written to disk when buf_bwrite() returns. See Bach (p 56).
 

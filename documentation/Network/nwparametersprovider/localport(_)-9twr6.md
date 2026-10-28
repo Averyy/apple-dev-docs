@@ -21,7 +21,7 @@ Specify a specific port to use as the local endpoint, letting the system select 
 func localPort(_ port: NWEndpoint.Port) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 For connections, this will be used to initiate traffic; for listeners, this will be used for receiving incoming connections.
 

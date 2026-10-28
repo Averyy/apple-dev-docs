@@ -12,11 +12,11 @@ virtual IOReturn setCommandBlock(
  IOMemoryDescriptor *memory );
 ```
 
-#### Return Value
+## Return Value
 
 Returns KIOReturnSuccess if the command block was updated successfully.
 
-#### Overview
+## Overview
 
 Copys the data provided in the buffer to the command block portion of the ORB.
 

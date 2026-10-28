@@ -24,7 +24,7 @@ var float4Value: vector_float4 { get set }
 @property (nonatomic, assign) vector_float4 float4Value;
 ```
 
-#### Discussion
+## Discussion
 
 A 4-component vector can also be used to store RGBA color values. In this case, color components should be interpreted using the Rec. 709 color space standard.
 

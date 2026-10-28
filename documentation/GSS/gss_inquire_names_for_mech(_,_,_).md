@@ -23,7 +23,7 @@ func gss_inquire_names_for_mech(_ minor_status: UnsafeMutablePointer<OM_uint32>,
 OM_uint32 gss_inquire_names_for_mech(OM_uint32 *minor_status, gss_const_OID mechanism, gss_OID_set*name_types);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

@@ -22,7 +22,7 @@ Creates the plottable value for the underlying type, if any, that corresponds to
 init?(primitivePlottable: Self.PrimitivePlottable)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer fails if there is no corresponding plottable value.
 

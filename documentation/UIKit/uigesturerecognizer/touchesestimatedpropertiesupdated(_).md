@@ -23,7 +23,7 @@ func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>)
 - (void) touchesEstimatedPropertiesUpdated:(NSSet<UITouch *> *) touches;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses may override it and use it to process updates to touches.
 

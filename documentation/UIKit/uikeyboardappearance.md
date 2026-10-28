@@ -23,7 +23,7 @@ enum UIKeyboardAppearance
 enum UIKeyboardAppearance : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`keyboardAppearance`](./uitextinputtraits/keyboardappearance.md) property.
 

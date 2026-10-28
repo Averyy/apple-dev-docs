@@ -15,11 +15,11 @@ Synchronously writes data from from a buffer to the resource and executes a bloc
 func write(from buffer: UnsafeRawBufferPointer, startingAt offset: off_t, length: Int) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of bytes written.
 
-#### Discussion
+## Discussion
 
 This method is a synchronous version of [`writeFrom:startingAt:length:completionHandler:`](./writefrom_startingat_length_completionhandler_.md).
 

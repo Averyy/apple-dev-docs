@@ -21,7 +21,7 @@ A rule that considers a region to be interior to a path if the winding number fo
 case winding
 ```
 
-#### Discussion
+## Discussion
 
 This rule plots a ray from any region to be evaluated toward the bounds of the drawing, then counts the closed path elements that the ray crosses: +1 for counterclockwise paths, -1 for clockwise. The rule defines interior regions as those where the sum of crossings is nonzero, and exterior regions as those where the sum of crossings is zero.
 

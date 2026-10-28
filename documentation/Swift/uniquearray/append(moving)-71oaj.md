@@ -21,7 +21,7 @@ Moves the elements of a buffer to the end of this array, leaving the buffer unin
 mutating func append(moving items: UnsafeMutableBufferPointer<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold all items in the buffer, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 

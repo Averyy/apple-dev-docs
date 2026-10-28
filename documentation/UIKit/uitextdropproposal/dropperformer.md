@@ -22,7 +22,7 @@ var dropPerformer: UITextDropProposal.Performer { get set }
 @property (nonatomic) UITextDropPerformer dropPerformer;
 ```
 
-#### Discussion
+## Discussion
 
 The performer provides a preview for the drop activity, loads the data from the item providers, and inserts the data into the text view. It can be the [`UITextDropProposal.Performer.view`](./performer/view.md) performer (default) or the [`UITextDropProposal.Performer.delegate`](./performer/delegate.md) performer.
 

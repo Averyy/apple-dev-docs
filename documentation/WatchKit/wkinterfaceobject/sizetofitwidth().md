@@ -19,7 +19,7 @@ func sizeToFitWidth()
 - (void) sizeToFitWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent of using the Size to Fit Content option in Interface Builder. It sizes the object so that its width matches the width of its content. For example, calling this method on a label sets the width of the label to the width of its text. The width of an object never exceeds the width of its container.
 

@@ -27,7 +27,7 @@ var rssi: NSNumber? { get }
 @property (retain, readonly, nullable) NSNumber * RSSI;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a number, in decibels, that indicates the RSSI of the peripheral while connected to the central manager. You can use a connected peripheral’s RSSI property to determine the peripheral’s proximity. The default value of this property is `nil`; the first successful call to [`readRSSI()`](./readrssi%28%29.md) sets its value.
 

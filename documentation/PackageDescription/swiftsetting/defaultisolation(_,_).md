@@ -15,7 +15,7 @@ Set the default isolation to the given global actor type.
 static func defaultIsolation(_ isolation: MainActor.Type?, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 6.2.
 

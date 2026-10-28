@@ -19,7 +19,7 @@ var kFxLightType_Spot: Int { get }
 kFxLightType_Spot
 ```
 
-#### Discussion
+## Discussion
 
 This type of light is directly analogous to a spot light in real life.
 

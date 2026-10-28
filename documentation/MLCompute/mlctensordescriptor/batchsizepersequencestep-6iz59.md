@@ -21,7 +21,7 @@ The batch size for each sequence.
 var batchSizePerSequenceStep: [Int]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework only populates this value when [`sequenceLengths`](./sequencelengths-3ntsa.md) is valid. The length of this array is equal to the maximum sequence length in `sequenceLengths`; that is, `sequenceLengths[0]` when [`sortedSequences`](./sortedsequences.md) is `true`.
 

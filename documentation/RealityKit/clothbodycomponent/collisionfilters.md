@@ -17,7 +17,7 @@ Defines the collision groups that each particle belongs to, and the mask used to
 var collisionFilters: PerClothVertexData<ClothCollisionFilter> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the collision groups are set to `.defaultBodies`, and the mask is set to `.all`.
 

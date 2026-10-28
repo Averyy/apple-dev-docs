@@ -21,7 +21,7 @@ A sequentially consistent load performs an acquiring load and also guarantees th
 static var sequentiallyConsistent: AtomicLoadOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_seq_cst` in C++.
 

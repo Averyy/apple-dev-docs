@@ -23,7 +23,7 @@ Returns a new dropout layer.
 convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, rate: Float, seed: UInt32, control: UInt8, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
 

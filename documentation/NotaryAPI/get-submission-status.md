@@ -13,13 +13,13 @@ Fetch the status of a software notarization submission.
 
 - [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch the status of a submission request. Form the URL for the call using the identifier that you receive in the `id` field of the response to the [`Submit Software`](./submit-software.md) endpoint. If you lose the identifier, you can get a list of the most recent 100 submissions by calling the [`Get Previous Submissions`](./get-previous-submissions.md) endpoint.
 
 Along with the status of the request, the response indicates the date that you initiated the request and the software name that you provided at that time.
 
-##### Example
+### Example
 
 **Request**:
 

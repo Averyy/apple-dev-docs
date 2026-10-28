@@ -14,7 +14,7 @@ Raises the incoming value to an exponent.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Power (float)**:
 

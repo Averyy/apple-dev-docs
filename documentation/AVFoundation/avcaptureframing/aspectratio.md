@@ -21,7 +21,7 @@ var aspectRatio: AVCaptureDevice.AspectRatio { get }
 @property (atomic, readonly) AVCaptureAspectRatio aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 One of the enumerated aspect ratios  suitable for use with the [`AVCaptureDevice`](../avcapturedevice.md) dynamic aspect ratio APIs.
 

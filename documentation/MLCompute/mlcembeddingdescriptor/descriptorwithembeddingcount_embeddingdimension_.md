@@ -19,7 +19,7 @@ Creates an embedding descriptor with the size of the dictionary and dimension of
 + (instancetype) descriptorWithEmbeddingCount:(NSNumber *) embeddingCount embeddingDimension:(NSNumber *) embeddingDimension;
 ```
 
-#### Return Value
+## Return Value
 
 An embedding descriptor.
 

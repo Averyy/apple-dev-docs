@@ -19,7 +19,7 @@ var selectedRow: Int { get }
 @property (readonly) NSInteger selectedRow;
 ```
 
-#### Discussion
+## Discussion
 
 When multiple rows are selected, this property contains only the index of the last one in the selection. If no row is selected, the value of this property is `-1`.
 

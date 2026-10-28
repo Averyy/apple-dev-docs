@@ -23,7 +23,7 @@ var usesNesterovMomentum: Bool { get }
 @property (nonatomic, readonly) BOOL usesNesterovMomentum;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

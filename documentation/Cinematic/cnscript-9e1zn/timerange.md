@@ -19,7 +19,7 @@ The time range of the Cinematic asset.
 @property (readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 All frames, decisions, and detections are within this time range.
 

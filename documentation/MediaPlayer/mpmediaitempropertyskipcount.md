@@ -25,7 +25,7 @@ let MPMediaItemPropertySkipCount: String
 extern NSString * const MPMediaItemPropertySkipCount;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object representing an [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type.
 

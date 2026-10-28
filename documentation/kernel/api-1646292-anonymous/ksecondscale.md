@@ -13,7 +13,7 @@
 kSecondScale = 1000 * 1000 * 1000
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for second based times.
 

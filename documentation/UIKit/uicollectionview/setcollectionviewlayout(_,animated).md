@@ -23,7 +23,7 @@ func setCollectionViewLayout(_ layout: UICollectionViewLayout, animated: Bool)
 - (void) setCollectionViewLayout:(UICollectionViewLayout *) layout animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 This method makes the layout change without further interaction from the user. If you choose to animate the layout change, the animation timing and parameters are controlled by the collection view.
 

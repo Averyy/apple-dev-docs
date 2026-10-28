@@ -23,7 +23,7 @@ nonisolated
 func gesture(_ representable: some UIGestureRecognizerRepresentable) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with an [`NSGestureRecognizerRepresentable`](../nsgesturerecognizerrepresentable.md) attached.
 

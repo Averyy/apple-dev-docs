@@ -28,11 +28,11 @@ func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier, version req
 
 - [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
-#### Return Value
+## Return Value
 
 An item that tracks your extension’s progress. The system automatically calls [`cancel()`](../../Foundation/progress/cancel%28%29.md)  on the progress object when an error occurs, or when the system or user cancels the download.
 
-#### Discussion
+## Discussion
 
 The system initially learns about available items through enumerations; however, the enumeration only provides the item’s metadata. When the user accesses the item, the system needs to download the full contents from your remote store. After you call the completion handler, the system takes complete control over the local copy.
 

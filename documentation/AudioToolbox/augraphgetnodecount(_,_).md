@@ -26,7 +26,7 @@ func AUGraphGetNodeCount(_ inGraph: AUGraph, _ outNumberOfNodes: UnsafeMutablePo
 extern OSStatus AUGraphGetNodeCount(AUGraph inGraph, UInt32 *outNumberOfNodes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

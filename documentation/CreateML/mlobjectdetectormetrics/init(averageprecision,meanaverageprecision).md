@@ -15,7 +15,7 @@ Creates metrics for an object detector given an average precision and a mean ave
 init(averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double]), meanAveragePrecision: (variedIoU: Double, IoU50: Double))
 ```
 
-#### Discussion
+## Discussion
 
 You do not use this initializer. Create ML uses this initializer to generate metrics for you when train an object detector or when you use an evaluation method.
 

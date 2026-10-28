@@ -15,7 +15,7 @@ A point that’s centered vertically and in the depth dimension on the leading f
 static let leading: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 

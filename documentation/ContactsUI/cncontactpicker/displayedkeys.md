@@ -19,7 +19,7 @@ var displayedKeys: [String] { get set }
 @property (copy) NSArray<NSString *> * displayedKeys;
 ```
 
-#### Discussion
+## Discussion
 
 If no keys are provided, the picker selects contacts instead of values. For a list of possible keys, see [Contact Keys](../../Contacts/contact-keys.md).
 

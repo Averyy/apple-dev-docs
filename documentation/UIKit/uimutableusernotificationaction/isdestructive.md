@@ -23,7 +23,7 @@ var isDestructive: Bool { get set }
 @property (nonatomic, assign, getter=isDestructive) BOOL destructive;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to signal to the user whether the action causes destructive behavior to the user’s data or the app. When the value of this property is [`true`](../../Swift/true.md), the system displays the corresponding button differently to indicate that the action is destructive.
 

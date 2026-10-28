@@ -19,7 +19,7 @@ func getRectsExposedDuringLiveResize(_ exposedRects: UnsafeMutablePointer<NSRect
 - (void) getRectsExposedDuringLiveResize:(NSRect[4]) exposedRects count:(NSInteger *) count;
 ```
 
-#### Discussion
+## Discussion
 
 If your view does not support content preservation during live resizing, the entire area of your view is returned in the `exposedRects` parameter. To support content preservation, override the [`preservesContentDuringLiveResize`](./preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](../../Swift/true.md).
 

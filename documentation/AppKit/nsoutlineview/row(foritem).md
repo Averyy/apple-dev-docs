@@ -19,7 +19,7 @@ func row(forItem item: Any?) -> Int
 - (NSInteger) rowForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The row associated with `item`, or `–1` if `item` is `nil` or cannot be found.
 

@@ -13,11 +13,11 @@ Implement a forward plus renderer using the latest features on Apple GPUs.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [601: Modern Rendering with Metal](https://developer.apple.com/videos/play/wwdc19/601/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the app:
 

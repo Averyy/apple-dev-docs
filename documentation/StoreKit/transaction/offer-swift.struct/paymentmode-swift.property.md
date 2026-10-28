@@ -21,7 +21,7 @@ The payment mode for a subscription offer on an auto-renewable subscription that
 let paymentMode: Transaction.Offer.PaymentMode?
 ```
 
-#### Discussion
+## Discussion
 
 You set up subscription offers and determine the payment mode when you configure subscriptions in App Store Connect. For more information about the Free Trial ([`freeTrial`](./paymentmode-swift.struct/freetrial.md)), Pay As You Go ([`payAsYouGo`](./paymentmode-swift.struct/payasyougo.md)), and Pay Up Front ([`payUpFront`](./paymentmode-swift.struct/payupfront.md)) payment modes, see [Pricing and availability](https://developer.apple.com/help/app-store-connect/reference/pricing-and-availability).
 

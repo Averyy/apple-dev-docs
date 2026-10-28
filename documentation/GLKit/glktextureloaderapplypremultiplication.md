@@ -24,7 +24,7 @@ let GLKTextureLoaderApplyPremultiplication: String
 extern NSString * const GLKTextureLoaderApplyPremultiplication;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), the data is loaded into the sharegroup without being modified. If [`true`](../Swift/true.md), the red, green and blue components of each pixel are multiplied by the alpha value. If the key is not specified, the default value is [`false`](../Swift/false.md). Never specify [`true`](../Swift/true.md) for a texture that is in a compressed format.
 

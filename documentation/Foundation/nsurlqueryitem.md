@@ -25,7 +25,7 @@ class NSURLQueryItem
 @interface NSURLQueryItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`URLQueryItem`](./urlqueryitem.md); use [`NSURLQueryItem`](./nsurlqueryitem.md) when you need reference semantics or other Foundation-specific behavior.
 

@@ -4,7 +4,7 @@
 
 A file format used to store a QuickTime VR movie on disk.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

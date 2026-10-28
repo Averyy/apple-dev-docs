@@ -21,7 +21,7 @@ Indexed result items from an intent value query.
 struct DynamicPropertyPathCollection
 ```
 
-#### Overview
+## Overview
 
 Access query results by index and navigate their properties using dynamic member lookup:
 

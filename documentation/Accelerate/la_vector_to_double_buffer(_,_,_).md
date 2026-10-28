@@ -25,11 +25,11 @@ func la_vector_to_double_buffer(_ buffer: UnsafeMutablePointer<Double>, _ buffer
 extern la_status_t la_vector_to_double_buffer(double *buffer, la_index_t buffer_stride, la_object_t vector);
 ```
 
-#### Return Value
+## Return Value
 
 If vector is a valid vector object, its status is returned.  Otherwise the return value is LA_INVALID_PARAMETER_ERROR.
 
-#### Discussion
+## Discussion
 
 Stores the elements of a vector to a buffer.
 

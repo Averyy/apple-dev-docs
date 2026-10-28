@@ -17,7 +17,7 @@ Registers Qwen3.5-family multimodal MTP drafter model types.
 enum Qwen35VLMMTPRegistration
 ```
 
-#### Overview
+## Overview
 
 These creators live in the target-specific `visionLanguage` registry so a standalone MTP config with an empty `vision_config` still selects the M-RoPE-aware drafter deterministically.
 

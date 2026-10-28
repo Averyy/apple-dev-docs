@@ -22,11 +22,11 @@ optional func viewController(for interaction: UILargeContentViewerInteraction) -
 - (UIViewController *) viewControllerForLargeContentViewerInteraction:(UILargeContentViewerInteraction *) interaction;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller that the system uses to present the large content viewer in.
 
-#### Discussion
+## Discussion
 
 By default, UIKit uses a view controller that contains the view you added the interaction to. If this default choice doesn’t work for your app, implement this method to specify a different view controller.
 

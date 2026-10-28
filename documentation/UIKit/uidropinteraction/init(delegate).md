@@ -22,7 +22,7 @@ init(delegate: any UIDropInteractionDelegate)
 - (instancetype) initWithDelegate:(id<UIDropInteractionDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 A drop interaction that has a delegate.
 

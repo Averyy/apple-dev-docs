@@ -24,7 +24,7 @@ class let willDeactivateNotification: NSNotification.Name
 extern NSNotificationName const UISceneWillDeactivateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit posts this notification for temporary interruptions, such as when displaying system alerts. It also posts this notification before transitioning your app to the background state. UIKit places the scene object in the [`object`](../../Foundation/nsnotification/object.md) property of the notification.
 

@@ -12,7 +12,7 @@ Provide access to on-device and cloud files by adding a document browser to your
 - Mac Catalyst 13.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 The Document Browser sample code uses a [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) as the app’s root view controller. The browser defines the structure of the app, and the app displays the browser view when it launches. A person can then use the browser to:
 
@@ -24,7 +24,7 @@ When someone opens a file, the app transitions to an editor view. There, the per
 
 This sample code project demonstrates all the required steps to set up the document browser, to work with the person’s files, and to enable system animations. The following sections describe these steps in more detail.
 
-##### Setting up the document browser
+### Setting up the document browser
 
 The Document Browser app performs the following setup and configuration steps:
 
@@ -47,7 +47,7 @@ allowsPickingMultipleItems = false
 
 For more information on configuring a document browser, see [Customizing the document browser](./customizing-the-browser.md).
 
-##### Creating new documents
+### Creating new documents
 
 When the user creates a new document, the system calls the document browser delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method.
 
@@ -94,7 +94,7 @@ func documentBrowser(_ controller: UIDocumentBrowserViewController,
 
 In this method, the app creates, saves, and then closes a new text document. If successful, the app passes the URL to the method’s import handler, requesting that the system move the document to its final location. Otherwise, it passes `nil` to the import handler, canceling document creation.
 
-##### Opening and importing documents.
+### Opening and importing documents.
 
 People can open documents in multiple ways. The sample code handles the following situations:
 
@@ -106,7 +106,7 @@ In the first two cases, the app calls the custom `presentDocuments(at:)` method.
 
 The `presentDocuments(at:)` method instantiates a `TextDocumentViewController`, sets up the document’s animation, opens the document, and then presents the view controller by calling the browser’s [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) method.
 
-##### Enabling animations
+### Enabling animations
 
 The document browser provides two built-in animations: one for loading a file, another for transitioning to and from the document view.
 

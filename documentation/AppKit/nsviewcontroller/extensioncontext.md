@@ -19,7 +19,7 @@ var extensionContext: NSExtensionContext? { get }
 @property (retain, readonly, nullable) NSExtensionContext * extensionContext;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller is *not* part of an app extension, the value of this property is `nil`.
 

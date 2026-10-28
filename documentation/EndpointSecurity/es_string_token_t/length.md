@@ -20,7 +20,7 @@ var length: Int
 size_t length;
 ```
 
-#### Discussion
+## Discussion
 
 This value doesn’t include the null terminator.
 

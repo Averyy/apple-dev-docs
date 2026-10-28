@@ -22,7 +22,7 @@ nonisolated
 init(url: URL?, scale: CGFloat = 1, transaction: Transaction = Transaction(), @ContentBuilder content: @escaping (AsyncImagePhase) -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 If you set the asynchronous image’s URL to `nil`, or after you set the URL to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](../asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](../asyncimagephase/failure%28_%29.md) or [`AsyncImagePhase.success(_:)`](../asyncimagephase/success%28_%29.md). In the first case, the phase’s [`error`](../asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](../asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 

@@ -29,11 +29,11 @@ importGeoJSON(
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 If the data argument is a GeoJSON object instead of a URL and you don’t provide a `callback` function, [`importGeoJSON()`](./importgeojson.md) returns an [`ItemCollection`](../itemcollection.md). If the data import fails, this method returns an error.
 
-#### Discussion
+## Discussion
 
 > **Note**:  You must load the `geojson` library first before accessing the method, otherwise, the method throws an `Error`.
 

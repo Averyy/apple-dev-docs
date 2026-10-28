@@ -23,7 +23,7 @@ var isTorchAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isTorchAvailable) BOOL torchAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The torch may become unavailable if, for example, the device overheats and needs to cool off.
 

@@ -24,11 +24,11 @@ func AudioFileWritePackets(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ inN
 extern OSStatus AudioFileWritePackets(AudioFileID inAudioFile, Boolean inUseCache, UInt32 inNumBytes, const AudioStreamPacketDescription *inPacketDescriptions, SInt64 inStartingPacket, UInt32 *ioNumPackets, const void *inBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 For all uncompressed formats, this function equates packets with frames.
 

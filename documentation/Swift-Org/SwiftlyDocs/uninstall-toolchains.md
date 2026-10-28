@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Remove unneeded Swift toolchains.
 
-#### Overview
+## Overview
 
 After installing several toolchains the list of the available toolchains may become unwieldy, and each toolchain can occupy substantial storage space. This guide covers how to uninstall no longer needed toolchains that were installed with swiftly.
 

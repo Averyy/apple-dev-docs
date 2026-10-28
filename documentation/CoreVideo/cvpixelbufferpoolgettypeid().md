@@ -25,7 +25,7 @@ func CVPixelBufferPoolGetTypeID() -> CFTypeID
 extern CFTypeID CVPixelBufferPoolGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for this pixel buffer.
 

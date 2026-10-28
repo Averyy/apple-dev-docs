@@ -22,7 +22,7 @@ class func canSendSubject() -> Bool
 + (BOOL) canSendSubject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device can include subject lines in messages, or [`false`](../../Swift/false.md) otherwise.
 

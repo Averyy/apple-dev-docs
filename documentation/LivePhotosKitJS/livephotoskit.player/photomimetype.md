@@ -15,7 +15,7 @@ The MIME type of a photo asset.
 attribute String photoMimeType;
 ```
 
-#### Discussion
+## Discussion
 
 The `MIME` type is either as detected from a network request for the asset (if the `MIME` type was provided as a URL on [`photoSrc`](./photosrc.md)) or as provided by the developer prior to assigning a prepared `ArrayBuffer` to [`photoSrc`](./photosrc.md).
 

@@ -24,7 +24,7 @@ var visiblePath: UIBezierPath? { get set }
 @property (nonatomic, copy, nullable) UIBezierPath * visiblePath;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the path information in the coordinate space of the view being animated.
 

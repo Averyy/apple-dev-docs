@@ -24,7 +24,7 @@ func unmount() async
 - (void) unmountWithReplyHandler:(void (^)()) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Clear and flush all cached state in your implementation of this method.
 

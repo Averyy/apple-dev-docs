@@ -21,11 +21,11 @@ Returns a new path equivalent to the results of drawing the path with a solid st
 func copy(strokingWithWidth lineWidth: CGFloat, lineCap: CGLineCap, lineJoin: CGLineJoin, miterLimit: CGFloat, transform: CGAffineTransform = .identity) -> CGPath
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The new path is created so that filling the new path draws the same pixels as stroking the original path with the specified line style.
 

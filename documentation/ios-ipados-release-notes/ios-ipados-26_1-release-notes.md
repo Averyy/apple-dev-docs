@@ -5,105 +5,105 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [Xcode 26.1 Release Notes](../Xcode-Release-Notes/xcode-26_1-release-notes.md).
 
-##### AirDrop
+### AirDrop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The AirDrop icon in the iOS share sheet has some visual defects at the corners.  (158979986)
 
-##### Background Assets
+### Background Assets
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `AssetPackManager.url(for:)` unexpectedly throws an error when looking up the URL for a locally available asset file.  (157959878) (FB19512759)
 
-##### Game Controller
+### Game Controller
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The time returned by `GCPressedStateInput.lastPressedStateTimestamp` is not in the correct time domain.  (159124910)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - HealthKit authorization UI now displays a single Blood Pressure switch to control changes to Systolic and Diastolic Blood Pressure type authorizations. The API is unchanged and apps should request for both types in code.  (153579893)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `HKCorrelation` objects of type `.bloodPressure` fail to save with `errorInvalidArgument` HKError code if they don’t have exactly one systolic and one diastolic blood pressure quantity sample its set of objects.  (151889745)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Processor Trace Instrument doesn’t allow for recording on iPhone 17 family of devices.  (161440613)
 
-##### Keyboard
+### Keyboard
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You are unable to select diacritical marks and character variants with keyboard. The base character is inserted instead of the intended variant.  (159398021)
 
-##### Lock Screen
+### Lock Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices might sleep unexpectedly while using certain apps on the Lock Screen (Calculator, Timer, Notes).  (162150524)
 
-##### NearbyInteraction
+### NearbyInteraction
 
-###### New Features
+#### New Features
 
 - `NINearbyAccessoryConfiguration` now supports additional UWB parameters such as hopping mode.  (157879907)
 
-###### Known Issues
+#### Known Issues
 
 - Running an `NISession` with an `NIDLTDOAConfiguration` results in an error.  (151352056)
 
-##### Siri
+### Siri
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Questions related to News in Portuguese might fall back to Web search or ChatGPT.  (153935878)
 
-###### Known Issues
+#### Known Issues
 
 - Siri Voice preview might default to legacy pt-BR voices, rather than new pt-PT options.  (155929981)
 
   **Workaround:** Select Voice 2 as your new Siri voice. Ask Siri a question, and you will hear the new pt-PT offering.
 - The initial pt-PT Siri Voices have pronunciation and word stress issues. Your feedback is appreciated.  (160205691)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - `@Animatable` macro is now available starting with iOS 13, macOS 10.15, tvOS 13, and watchOS 6.  (158895616)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Buttons that do not specify an explicit label display text instead of a symbol in toolbars.  (157671221)
 - Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases.
 
   You must recompile your app against the 26.1 SDK to receive this fix.  (158236264) (FB19613386)
 
-###### Known Issues
+#### Known Issues
 
 - On iOS and iPadOS, `@FocusState` doesn’t work in `safeAreaBar`.  (158720838)
 
-##### UIKit
+### UIKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - UIDocument was incorrectly annotated to be main actor only. This has been corrected. As a result you might see new warnings or errors show up in your Swift code using UIDocument.  (149990945)
 
-##### WebKit
+### WebKit
 
-###### Known Issues
+#### Known Issues
 
 - WebKit outputs a crash stacktrace to `stderr` when `decidePolicyFor navigationAction` returns `.cancel`.  (156957269)
 

@@ -23,7 +23,7 @@ func transform<U>(real: U, imaginary: U) -> (real: [Float], imaginary: [Float]) 
 
 Available when `T` is `Float`.
 
-#### Return Value
+## Return Value
 
 A tuple of two arrays that represents the real and imaginary parts of the output.
 

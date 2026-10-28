@@ -24,7 +24,7 @@ var pauseSnapsToMediaTimeOfOriginator: Bool { get set }
 @property (nonatomic, assign) BOOL pauseSnapsToMediaTimeOfOriginator;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), all participants seek to the originator’s stop time after they pause. Use this setting if it counteracts network delays that result from communicating the originator’s pause state to the other participants.
 

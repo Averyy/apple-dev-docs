@@ -22,7 +22,7 @@ case sequential
 VTFrameRateConversionParametersSubmissionModeSequential
 ```
 
-#### Discussion
+## Discussion
 
 This submission mode will yield a better performance.
 

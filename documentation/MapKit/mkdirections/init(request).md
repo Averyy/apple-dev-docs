@@ -25,11 +25,11 @@ init(request: MKDirections.Request)
 - (instancetype) initWithRequest:(MKDirectionsRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized directions object.
 
-#### Discussion
+## Discussion
 
 After initializing your directions object, you must call the [`calculate(completionHandler:)`](./calculate%28completionhandler%29.md) or [`calculateETA(completionHandler:)`](./calculateeta%28completionhandler%29.md) method to perform the request.
 

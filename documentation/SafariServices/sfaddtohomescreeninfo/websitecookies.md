@@ -19,7 +19,7 @@ var websiteCookies: [HTTPCookie] { get set }
 @property (nonatomic, copy) NSArray<NSHTTPCookie *> * websiteCookies;
 ```
 
-#### Discussion
+## Discussion
 
 An optional item for providing the website’s cookies. These will be copied to the Home Screen web app’s data store. This will only be used if the manifest is non-nil and a Home Screen web app is created, not a Home Screen Bookmark.
 

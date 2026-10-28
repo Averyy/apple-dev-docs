@@ -25,7 +25,7 @@ var remainder: MKMapRect { get }
 extern MKMapRect MKMapRectRemainder(MKMapRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 For a rectangle that lies on the 180th meridian, this function isolates the portion that lies outside the boundary, wraps it to the opposite side of the map, and returns that rectangle.
 

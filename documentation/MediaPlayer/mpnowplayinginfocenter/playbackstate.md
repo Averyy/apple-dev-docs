@@ -25,7 +25,7 @@ var playbackState: MPNowPlayingPlaybackState { get set }
 @property (nonatomic) MPNowPlayingPlaybackState playbackState;
 ```
 
-#### Discussion
+## Discussion
 
 This property only applies to macOS. You must set this property every time the app begins or halts playback, otherwise remote control functionality may not work as expected.
 

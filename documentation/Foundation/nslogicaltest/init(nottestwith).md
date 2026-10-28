@@ -20,7 +20,7 @@ init(notTestWith subTest: NSScriptWhoseTest)
 - (instancetype) initNotTestWithTest:(NSScriptWhoseTest *) subTest;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSLogicalTest` object initialized to perform a `NOT` operation on `subTest`.
 

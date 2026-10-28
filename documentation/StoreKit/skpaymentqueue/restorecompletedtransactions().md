@@ -34,7 +34,7 @@ func restoreCompletedTransactions()
 - [Testing Apple In-App Purchases in Xcode](../testing-in-app-purchases-in-xcode.md)
 - [Validating receipts with the App Store](../validating-receipts-with-the-app-store.md)
 
-#### Discussion
+## Discussion
 
 Use this method to restore finished transactions—that is, transactions for which you have already called [`finishTransaction(_:)`](./finishtransaction%28_%29.md). You call this method in one of the following situations:
 

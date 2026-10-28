@@ -34,7 +34,7 @@ var fromAccount: INPaymentAccount? { get }
 @property (atomic, copy, readonly, nullable) INPaymentAccount * fromAccount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine which account is the source of funds for the payment.
 

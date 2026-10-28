@@ -10,13 +10,13 @@ Substitute a person’s hands with custom models in a fully immersive space.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Hand tracking enables your app to observe an Apple Vision Pro wearer’s hand positions and joint rotations in real-time within an immersive space. This sample code project demonstrates how to replace the wearer’s hands with animated glove models in a fully immersive space.
 
 [Video: A video of a visionOS app displaying two white gloves with colorful accents that open and close to track the wearer’s hand movements in a fully immersive space.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/animating-hand-models.mov)
 
-#### Create the glove models
+## Create the glove models
 
 The glove models in this sample code project match the hand skeleton structure in [ARKit](../ARKit/ARKit.md). Each glove’s origin is positioned at the base of the wrist just like the ARKit hand skeleton’s origin. Each glove has 27 joints, matching both the number and order of the ARKit hand skeleton. These joints form a kinematic chain where each joint’s position and rotation is relative to the preceding joint, extending from wrist to fingertips. For example, the wrist connects to the thumb base, which connects to the first thumb joint, and so on.
 
@@ -26,7 +26,7 @@ The gloves use a natural, relaxed hand pose as the rest pose. The fingers point 
 
 For more information on ARKit in visionOS, including hands-tracking, see [Meet ARKit for spatial computing](https://developer.apple.com/videos/play/wwdc2023/10082).
 
-#### Hide the wearer’s hands
+## Hide the wearer’s hands
 
 By default, the system displays the wearer’s hands in an immersive space. The sample hides the wearer’s hands using [`upperLimbVisibility(_:)`](../SwiftUI/scene/upperlimbvisibility%28_%29.md).
 
@@ -40,11 +40,11 @@ ImmersiveSpace(id: appModel.immersiveSpaceID) {
 .upperLimbVisibility(.hidden)
 ```
 
-#### Add usage descriptions for ARKit data access
+## Add usage descriptions for ARKit data access
 
 To help protect people’s privacy, visionOS limits app access to hands-tracking data and other sensors in Apple Vision Pro. Add the Hands Tracking capability to your app’s target and provide a usage description that explains how your app uses the data those sensors provide. People see that description when your app prompts for access to hands-tracking data. For more information on app capabilities, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Add the glove models and start hand tracking
+## Add the glove models and start hand tracking
 
 The `ImmersiveView` loads the glove models, adds them to the RealityKit scene, and starts hand tracking.
 
@@ -92,7 +92,7 @@ private func startHandTracking() async {
 }
 ```
 
-#### Animate the glove models
+## Animate the glove models
 
 ARKit delivers a stream of [`HandAnchor`](../ARKit/handanchor.md) instances, each containing skeletal tracking data for one of the wearer’s hands. The `updateGlovesFromHandAnchors` method hides the glove when ARKit is unable to track the hand. Each hand anchor includes [`originFromAnchorTransform`](../ARKit/handanchor/originfromanchortransform.md), a transform with an origin at the base of the wrist. Because the glove model’s origin is also at the wrist, `updateGlovesFromHandAnchors` sets the glove’s transform to match this transform, positioning the glove correctly in space.
 

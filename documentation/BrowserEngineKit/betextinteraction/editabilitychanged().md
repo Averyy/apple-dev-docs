@@ -22,7 +22,7 @@ func editabilityChanged()
 - (void) editabilityChanged;
 ```
 
-#### Discussion
+## Discussion
 
 In response, the system refreshes the text interaction gestures, depending on the value of `isEditable`
 

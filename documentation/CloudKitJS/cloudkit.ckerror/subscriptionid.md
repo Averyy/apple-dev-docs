@@ -15,7 +15,7 @@ A string that is a unique identifier for the subscription where the error occurr
 readonly attribute String subscriptionID;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is `Undefined` if the error is unrelated to a subscription operation.
 

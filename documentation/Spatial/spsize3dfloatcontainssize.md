@@ -19,11 +19,11 @@
 static bool SPSize3DFloatContainsSize(SPSize3DFloat size, SPSize3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the first size contains the second size.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the first size contains the second size.
 

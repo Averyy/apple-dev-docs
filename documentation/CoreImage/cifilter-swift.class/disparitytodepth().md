@@ -24,11 +24,11 @@ class func disparityToDepth() -> any CIFilter & CIDisparityToDepth
 + (CIFilter<CIDisparityToDepth> *) disparityToDepthFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 The method generates the disparity-to-depth filter. The filter converts a depth data image to disparity data. You can combine with other filters to create more sophisticated images.
 

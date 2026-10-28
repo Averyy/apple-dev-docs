@@ -23,7 +23,7 @@ func addAnimations(_ animation: @escaping () -> Void)
 - (void) addAnimations:(void (^)()) animation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new animation blocks to the animator. The animations in the new block run alongside any previously configured animations. Blocks added while the animator’s state is [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) are executed over the time specified by the [`duration`](./duration.md) property. Blocks added while the animator’s state is [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md) are executed over the remaining portion of the total run time. For example, if the duration is `2.0` and you add an animation block to a running animator whose [`fractionComplete`](../uiviewanimating/fractioncomplete.md) property is `0.5`, the animations run for `1.0` second. Any blocks you add while the animator is running begin executing immediately.
 

@@ -25,7 +25,7 @@ var referenceURL: URL? { get }
 @property (readonly, nullable) NSURL * referenceURL;
 ```
 
-#### Discussion
+## Discussion
 
 A reference URL is a human-readable document that describes a type. Most types don’t specify reference URLs.
 

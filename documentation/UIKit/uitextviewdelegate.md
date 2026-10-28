@@ -24,7 +24,7 @@ protocol UITextViewDelegate : UIScrollViewDelegate
 @protocol UITextViewDelegate <NSObject, UIScrollViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 All of the methods in this protocol are optional. You can use them in situations where you might want to adjust the text a user is editing (such as in the case of a spell-checker program) or to modify the intended insertion point.
 

@@ -20,7 +20,7 @@ Creates a collection with the provided constraints.
 init(_ elements: [IKRig.ConstraintsCollection.Element])
 ```
 
-#### Discussion
+## Discussion
 
 - Param elements: The array of constraints in the new collection.
 

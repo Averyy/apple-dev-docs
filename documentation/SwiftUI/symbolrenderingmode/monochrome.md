@@ -21,7 +21,7 @@ A mode that renders symbols as a single layer filled with the foreground style.
 static let monochrome: SymbolRenderingMode
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can render a filled exclamation mark triangle in purple:
 

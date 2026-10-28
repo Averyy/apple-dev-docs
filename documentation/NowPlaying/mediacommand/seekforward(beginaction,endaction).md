@@ -21,7 +21,7 @@ Creates a command that fast-forwards through the media.
 static func seekForward(beginAction: @escaping () async throws -> Void, endAction: @escaping () async throws -> Void) -> MediaCommand
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `beginAction` when the user starts fast-forwarding (for example, by pressing and holding a fast-forward button), and calls `endAction` when the user stops. Use these paired actions to start and stop any rate change or scrubbing behavior.
 

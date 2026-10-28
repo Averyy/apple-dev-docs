@@ -2,7 +2,7 @@
 
 **Framework**: System Configuration
 
-#### Overview
+## Overview
 
 This document describes keys and values used to access elements in the System Configuration persistent store.
 

@@ -25,7 +25,7 @@ struct Identifier
 typedef NSString * NSCalendarIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use these identifiers to specify the kind of calendar. The Gregorian calendar is the calendar typically used in Europe, the Western Hemisphere, and elsewhere.
 

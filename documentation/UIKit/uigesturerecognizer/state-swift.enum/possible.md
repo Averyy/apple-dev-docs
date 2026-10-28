@@ -28,7 +28,7 @@ UIGestureRecognizerStatePossible
 - [About the Gesture Recognizer State Machine](../../about-the-gesture-recognizer-state-machine.md)
 - [Implementing a discrete gesture recognizer](../../implementing-a-discrete-gesture-recognizer.md)
 
-#### Discussion
+## Discussion
 
 This is the default state.
 

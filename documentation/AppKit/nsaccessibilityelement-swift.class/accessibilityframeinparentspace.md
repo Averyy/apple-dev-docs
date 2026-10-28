@@ -15,7 +15,7 @@ The accessibility element’s frame in its parent’s coordinate system.
 @property NSRect accessibilityFrameInParentSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property ensures that the accessibility client receives the correct frame (in screen coordinates) as the element’s parent moves.
 

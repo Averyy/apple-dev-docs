@@ -21,7 +21,7 @@ let kQLPreviewPropertyWidthKey: CFString!
 extern CFStringRef const kQLPreviewPropertyWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this property is a hint; Quick Look might set the width automatically for some types of previews. You mus encapsulate the value in a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

@@ -24,7 +24,7 @@ var anisotropyAngle: PhysicallyBasedMaterial.AnisotropyAngle { get set }
 
 - [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Discussion
+## Discussion
 
 This property controls the scattering angle for anisotropic objects. If [`anisotropyLevel`](./anisotropylevel-swift.property.md) is `0.0`, this property has no effect. This property takes a value between `0.0 `and `1.0` or a UV-mapped grayscale image specifying angles for different parts of the entity.` A` value of black (`0.0)` means a rotation of 0° and a value of white (`1.0)` indicates a rotation of 360°. To determine the [`anisotropyAngle`](./anisotropyangle-swift.property.md) value from an angle, divide the desired angle in degrees by `360.0` or the desired angle in radians by pi times 2.
 

@@ -19,11 +19,11 @@ func temporaryAttributes(atCharacterIndex charIndex: Int, effectiveRange effecti
 - (NSDictionary<NSString *,id> *) temporaryAttributesAtCharacterIndex:(NSUInteger) charIndex effectiveRange:(NSRangePointer) effectiveCharRange;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of temporary attributes for the character range specified in `effectiveCharRange` at character index `charIndex`.
 
-#### Discussion
+## Discussion
 
 Temporary attributes are used only for onscreen drawing and are not persistent in any way. `NSTextView` uses them to color misspelled words when continuous spell checking is enabled. Currently the only temporary attributes recognized are those that do not affect layout (colors, underlines, and so on).
 

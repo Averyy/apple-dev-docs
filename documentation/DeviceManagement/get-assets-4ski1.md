@@ -16,9 +16,9 @@ Get the set of assets that your organization manages.
 - [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 - [Managing assets](./managing-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

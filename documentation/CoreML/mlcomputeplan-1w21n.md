@@ -21,7 +21,7 @@ A class representing the compute plan of a model.
 class MLComputePlan
 ```
 
-#### Overview
+## Overview
 
 The application can use the compute plan to estimate the necessary cost and resources of the model before running the predictions.
 

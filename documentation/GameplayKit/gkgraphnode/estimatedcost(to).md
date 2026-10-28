@@ -24,11 +24,11 @@ func estimatedCost(to node: GKGraphNode) -> Float
 - (float) estimatedCostToNode:(GKGraphNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 An underestimate of the travel cost to the specified node; higher values indicate higher cost.
 
-#### Discussion
+## Discussion
 
 The [`GKGraph`](../gkgraph.md) class uses this method in pathfinding between nodes—the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method finds the lowest-cost path between a specified pair of nodes. (See the [`cost(to:)`](./cost%28to%29.md) method for further discussion.) The pathfinding algorithm involves successive approximation using a heuristic in order to avoid processing too many nodes. The [`estimatedCost(to:)`](./estimatedcost%28to%29.md) method provides that heuristic—a quickly computed estimated cost of travel helps the algorithm choose which nodes to process in order to compute the real cost of travel.
 

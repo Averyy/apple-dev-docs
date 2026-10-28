@@ -23,7 +23,7 @@ static var currentLocaleDidChange: NotificationCenter.BaseMessageIdentifier<Loca
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Locale.CurrentLocaleDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Locale.CurrentLocaleDidChangeMessage`](../../locale/currentlocaledidchangemessage.md).
 

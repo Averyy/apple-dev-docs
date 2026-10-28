@@ -27,7 +27,7 @@ func CFAbsoluteTimeGetDayOfWeek(_ at: CFAbsoluteTime, _ tz: CFTimeZone!) -> Int3
 extern SInt32 CFAbsoluteTimeGetDayOfWeek(CFAbsoluteTime at, CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 An integer (`1-7`) representing the day of the week specified by `at`. Per ISO-8601, Monday is represented by `1`, Tuesday by `2`, and so on.
 

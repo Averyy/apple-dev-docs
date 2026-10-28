@@ -15,7 +15,7 @@ The identifier for the audio clock source control class.
 ClockSourceControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies where the object’s timing info comes from.
 

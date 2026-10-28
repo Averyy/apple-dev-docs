@@ -29,7 +29,7 @@ var userInfo: [AnyHashable : Any]? { get }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if there is no user info dictionary.
 

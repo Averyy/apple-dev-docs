@@ -19,7 +19,7 @@ Creates a new context object.
 init(_ device: any MTLDevice, _ commandBuffer: any MTLCommandBuffer, _ sourceColorTexture: any MTLTexture, _ sourceDepthTexture: any MTLTexture, _ targetColorTexture: any MTLTexture, _ projection: float4x4, _ time: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new postprocess context object. RealityKit creates context objects and passes them to the postprocess render callback. Your code won’t usually need to create context objects directly.
 

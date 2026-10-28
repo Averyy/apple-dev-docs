@@ -15,7 +15,7 @@ Create a permission to modify files in the package’s directory.
 case writeToPackageDirectory(reason: String)
 ```
 
-#### Discussion
+## Discussion
 
 The command plug-in requires permission to modify the files under the package directory. The `reason` string is shown to the user at the time of request for approval, explaining why the plug-in requests access.
 

@@ -17,7 +17,7 @@ var bundleVersion: String { get }
 @property (copy, readonly) NSString * bundleVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The bundle version of the extension (CFBundleVersion)
 

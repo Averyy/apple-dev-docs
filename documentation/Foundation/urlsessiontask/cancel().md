@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, marking the task as being canceled. Once a task is marked as being canceled, [`urlSession(_:task:didCompleteWithError:)`](../urlsessiontaskdelegate/urlsession%28_,task,didcompletewitherror%29.md) will be sent to the task delegate, passing an error in the domain [`NSURLErrorDomain`](../nsurlerrordomain.md) with the code [`NSURLErrorCancelled`](../nsurlerrorcancelled-swift.var.md). A task may, under some circumstances, send messages to its delegate before the cancelation is acknowledged.
 

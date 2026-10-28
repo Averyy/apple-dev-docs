@@ -15,11 +15,11 @@ Retrieves the CSSM result code from the most recent trust evaluation for a trust
 OSStatus SecTrustGetCssmResultCode(SecTrustRef trust, OSStatus *resultCode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecTrustNotAvailable`](./errsectrustnotavailable.md) if the [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) function has not been called for the specified trust.
 
-#### Discussion
+## Discussion
 
 Whereas the [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) function returns one of the Security Framework result codes (see [Certificate, Key, and Trust Services](./certificate-key-and-trust-services.md)), the `SecTrustGetCssmResultCode` function returns the CSSM result code as enumerated in `Security.framework/cssmerr.h`. Call this function to get a more specific reason for a failure than provided by `SecTrustEvaluate`. Other functions that might be of interest are the [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) function, which returns detailed results for each certificate in the certificate chain, and the [`SecTrustGetCssmResult`](./sectrustgetcssmresult.md) function, which returns the results in a format that can be passed directly to CSSM functions.
 

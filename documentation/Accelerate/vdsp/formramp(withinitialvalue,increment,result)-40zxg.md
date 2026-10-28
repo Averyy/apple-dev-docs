@@ -21,7 +21,7 @@ Populates a single-precision vector with monotonically incrementing or decrement
 static func formRamp<V>(withInitialValue initialValue: Float, increment: Float, result: inout V) where V : AccelerateMutableBuffer, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

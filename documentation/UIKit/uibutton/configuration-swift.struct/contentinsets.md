@@ -19,7 +19,7 @@ The distance from the button’s content area to its bounds.
 var contentInsets: NSDirectionalEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A button has a default inset based on its styling. This property is an additional inset applied after that default inset.
 

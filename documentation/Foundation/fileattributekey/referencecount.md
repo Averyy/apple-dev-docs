@@ -25,7 +25,7 @@ static let referenceCount: FileAttributeKey
 extern NSFileAttributeKey const NSFileReferenceCount;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing an `unsigned long`.
 

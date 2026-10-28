@@ -24,11 +24,11 @@ func statistics() -> [HKStatistics]
 - (NSArray<HKStatistics *> *) statistics;
 ```
 
-#### Return Value
+## Return Value
 
 An array of statistics objects. The statistics objects are sorted in chronological order.
 
-#### Discussion
+## Discussion
 
 The resulting array contains a statistics object for each time interval that has at least one sample that matches the query. The statistics objects are returned in chronological order, but they are not necessarily contiguous. This method ignores time intervals that do not have any samples. As a result, there may be arbitrarily large gaps in time between adjacent statistics objects in the array.
 

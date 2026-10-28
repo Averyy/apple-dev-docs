@@ -24,7 +24,7 @@ struct MTL4PipelineDataSetSerializerConfiguration
 enum MTL4PipelineDataSetSerializerConfiguration : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these options to enable different functionality in instances of [`MTL4PipelineDataSetSerializer`](./mtl4pipelinedatasetserializer.md).
 

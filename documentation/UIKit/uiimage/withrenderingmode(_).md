@@ -24,7 +24,7 @@ func withRenderingMode(_ renderingMode: UIImage.RenderingMode) -> UIImage
 - (UIImage *) imageWithRenderingMode:(UIImageRenderingMode) renderingMode;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object with the specified rendering mode.
 

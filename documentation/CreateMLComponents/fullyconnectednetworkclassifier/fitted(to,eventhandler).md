@@ -21,11 +21,11 @@ Fits a fully connected network classifier model to a sequence of examples.
 func fitted<Input>(to input: Input, eventHandler: EventHandler? = nil) async throws -> FullyConnectedNetworkClassifierModel<Scalar, Label> where Input : Sequence, Input.Element == AnnotatedFeature<MLShapedArray<Scalar>, Label>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted fully connected network classifier model.
 
-#### Discussion
+## Discussion
 
 The training process partitions the input into random batches according to the batch size configuration parameter. Training stops when the maximum number of iterations is reached.
 

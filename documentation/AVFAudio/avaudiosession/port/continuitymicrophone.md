@@ -24,7 +24,7 @@ static let continuityMicrophone: AVAudioSession.Port
 extern AVAudioSessionPort const AVAudioSessionPortContinuityMicrophone;
 ```
 
-#### Discussion
+## Discussion
 
 A Continuity Microphone is an iOS device that a user trusts to use for audio input on Apple TV.
 

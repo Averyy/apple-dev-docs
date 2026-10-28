@@ -21,7 +21,7 @@ var imageTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * imageTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The title is drawn using white text on the bottom-left corner of the image or media file. This property defaults to `nil`.
 

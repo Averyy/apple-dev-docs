@@ -24,7 +24,7 @@ func setVocabularyStrings(_ vocabulary: NSOrderedSet, of type: INVocabularyStrin
 - (void) setVocabularyStrings:(NSOrderedSet<NSString *> *) vocabulary ofType:(INVocabularyStringType) type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register user-specific vocabulary terms of the specified type. You may register different sets of strings for each of the supported types, but you may register only one group of strings for each type. Calling this method again for a given type replaces the previously registered strings already assigned to that type.
 

@@ -21,7 +21,7 @@ The default elevation style, that renders a flat, 2D map.
 static var automatic: MapStyle.Elevation { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default elevation style appropriate for a specific
 

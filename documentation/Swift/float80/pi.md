@@ -15,7 +15,7 @@ The mathematical constant pi (π), approximately equal to 3.14159.
 static var pi: Float80 { get }
 ```
 
-#### Discussion
+## Discussion
 
 When measuring an angle in radians, π is equivalent to a half-turn.
 

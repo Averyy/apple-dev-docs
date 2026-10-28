@@ -25,11 +25,11 @@ func longCharacterIsMember(_ theLongChar: UTF32Char) -> Bool
 - (BOOL) longCharacterIsMember:(UTF32Char) theLongChar;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `theLongChar` is in the receiver, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method supports the specification of 32-bit characters.
 

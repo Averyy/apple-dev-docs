@@ -9,13 +9,13 @@ Add localized version-level information for a new locale.
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to add localized version information for a new locale. Be sure to use [`Create an app info localization`](./post-v1-appinfolocalizations.md) to add the same locale to the version as well.
 
 > ❗ **Important**:  If the App Store version and the app info don’t have the same set of localizations, you will receive an erorr when you submit the version to the App Store.
 
-##### Add Localized App Store Version Information in US English
+### Add Localized App Store Version Information in US English
 
 **Request**:
 

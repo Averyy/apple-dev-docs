@@ -23,7 +23,7 @@ var NOTIFY_STATUS_NOT_AUTHORIZED: Int32 { get }
 #define NOTIFY_STATUS_NOT_AUTHORIZED
 ```
 
-#### Discussion
+## Discussion
 
 Status codes returned by the API.
 

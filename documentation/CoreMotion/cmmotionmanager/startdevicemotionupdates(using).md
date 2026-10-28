@@ -23,7 +23,7 @@ func startDeviceMotionUpdates(using referenceFrame: CMAttitudeReferenceFrame)
 - (void) startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame) referenceFrame;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the latest device-motion data through the [`deviceMotion`](./devicemotion.md) property. You must call [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) when you no longer want your app to process device-motion updates.
 

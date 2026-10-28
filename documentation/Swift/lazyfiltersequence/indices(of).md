@@ -23,11 +23,11 @@ func indices(of element: Self.Element) -> RangeSet<Self.Index>
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A set of the indices of the elements that are equal to `element`.
 
-#### Discussion
+## Discussion
 
 For example, you can use this method to find all the places that a particular letter occurs in a string.
 

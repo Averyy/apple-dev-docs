@@ -25,7 +25,7 @@ var jwsRepresentation: Data { get }
 @property (copy, readonly) NSData * JWSRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a JSON Web Signature (JWS) Compact Serialization of the card. The data is cryptographically signed by the issuer, and compressed.
 

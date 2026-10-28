@@ -21,7 +21,7 @@ A type that represents an MPEG-4 audio layer file.
 static var mpeg4Audio: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-4-audio`.
 

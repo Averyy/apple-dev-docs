@@ -23,7 +23,7 @@ case lastBaseline
 NSLayoutAttributeLastBaseline
 ```
 
-#### Discussion
+## Discussion
 
 For objects with more than one line of text, this is the baseline for the bottommost line of text.
 

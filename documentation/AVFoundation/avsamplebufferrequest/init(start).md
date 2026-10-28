@@ -25,7 +25,7 @@ init(start startCursor: AVSampleCursor)
 - (instancetype) initWithStartCursor:(AVSampleCursor *) startCursor;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `AVSampleBufferRequest` instance.
 

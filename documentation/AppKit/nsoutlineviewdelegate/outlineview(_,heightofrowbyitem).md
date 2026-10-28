@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, heightOfRowByItem item: 
 - (CGFloat) outlineView:(NSOutlineView *) outlineView heightOfRowByItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the row.
 
-#### Discussion
+## Discussion
 
 Values returned by this method should not include intercell spacing and must be greater than `0`.
 

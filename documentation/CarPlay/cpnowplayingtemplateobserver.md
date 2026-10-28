@@ -21,7 +21,7 @@ protocol CPNowPlayingTemplateObserver : NSObjectProtocol
 @protocol CPNowPlayingTemplateObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use a Now Playing template observer to respond when the user interacts with the Album-Artist and Up Next buttons. The protocol defines methods that CarPlay calls when a user taps these buttons. Use your implementation to provide the appropriate behavior when these events occur. For example, when the user taps the Album-Artist button, you can present a new template that displays the content of the current album, playlist, or podcast.
 

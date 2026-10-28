@@ -19,7 +19,7 @@ A default implementation that provides the interaction’s view.
 func contentView(for interaction: ImageAnalysisInteraction) -> UIView?
 ```
 
-#### Return Value
+## Return Value
 
 The interaction’s view.
 

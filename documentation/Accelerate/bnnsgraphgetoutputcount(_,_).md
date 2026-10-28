@@ -25,7 +25,7 @@ func BNNSGraphGetOutputCount(_ graph: bnns_graph_t, _ function: UnsafePointer<CC
 size_t BNNSGraphGetOutputCount(bnns_graph_t graph, const char *function);
 ```
 
-#### Return Value
+## Return Value
 
 The number of ouput arguments, or `SIZE_T_MAX` if the query fails.
 

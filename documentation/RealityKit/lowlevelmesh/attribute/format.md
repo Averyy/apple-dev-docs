@@ -20,7 +20,7 @@ The format of the vertex attribute.
 var format: MTLVertexFormat
 ```
 
-#### Discussion
+## Discussion
 
 When reading from a geometry modifier or surface shader, the value converts to its runtime representation using Metal’s standard rules.
 

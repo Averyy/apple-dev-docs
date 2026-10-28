@@ -22,7 +22,7 @@ var trailingNavigationBarButtons: [CPBarButton] { get set }
 @property (nonatomic, strong) NSArray<CPBarButton *> * trailingNavigationBarButtons;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation bar displays up to two buttons in the trailing space. When including more than two buttons in the array, the system displays only the first two buttons.
 

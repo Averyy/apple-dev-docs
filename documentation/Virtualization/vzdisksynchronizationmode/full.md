@@ -19,7 +19,7 @@ case full
 VZDiskSynchronizationModeFull
 ```
 
-#### Discussion
+## Discussion
 
 Using this mode, `flush` and `barrier` commands from the guest result in the system sending their counterpart synchronization commands to the underlying disk implementation.
 

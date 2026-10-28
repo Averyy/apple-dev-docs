@@ -17,11 +17,11 @@ Computes the mean squared error loss.
 func mseLoss(predictions: MLXArray, targets: MLXArray, reduction: LossReduction = .mean) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed mean squared error loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

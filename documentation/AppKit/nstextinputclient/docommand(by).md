@@ -20,7 +20,7 @@ func doCommand(by selector: Selector)
 - (void) doCommandBySelector:(SEL) selector;
 ```
 
-#### Discussion
+## Discussion
 
 If `selector` cannot be invoked, then `doCommandBySelector:` should not pass this message up the responder chain. `NSResponder` also implements this method, and it does forward uninvokable commands up the responder chain, but a text view should not. A text view implementing the `NSTextInputClient` protocol inherits from `NSView`, which inherits from `NSResponder`, so your implementation of this method will override the one in `NSResponder`. It should not call `super`.
 

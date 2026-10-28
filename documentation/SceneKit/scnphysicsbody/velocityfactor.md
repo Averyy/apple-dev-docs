@@ -25,7 +25,7 @@ var velocityFactor: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 velocityFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to constrain or restrict the effect of physics simulation on the node containing the physics body. For example, you can force a body to move in only two dimensions by setting its velocity factor to `{1.0, 1.0, 0.0}`.
 

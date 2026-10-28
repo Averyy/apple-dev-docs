@@ -25,7 +25,7 @@ var inputStateQueueDepth: Int { get set }
 @property (atomic, readwrite) NSInteger inputStateQueueDepth;
 ```
 
-#### Discussion
+## Discussion
 
 When the queue reaches this limit, Game Controller starts removing the oldest input states from the queue. The default value for this property is `1` which indicates no buffering.
 

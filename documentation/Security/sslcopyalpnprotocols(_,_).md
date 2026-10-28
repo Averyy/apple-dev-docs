@@ -24,11 +24,11 @@ func SSLCopyALPNProtocols(_ context: SSLContext, _ protocols: UnsafeMutablePoint
 OSStatus SSLCopyALPNProtocols(SSLContextRef context, CFArrayRef*protocols);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You must set the `protocols` parameter to `NULL` on input, or the operation fails. If the function has data to provide, it allocates memory for an array and returns it using `protocols`. Otherwise, `protocols` remains `NULL` on output.
 

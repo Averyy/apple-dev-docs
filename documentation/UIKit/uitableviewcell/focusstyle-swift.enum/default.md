@@ -23,7 +23,7 @@ case `default`
 UITableViewCellFocusStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This focus style is the default.
 

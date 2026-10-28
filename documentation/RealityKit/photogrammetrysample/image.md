@@ -18,7 +18,7 @@ The image data for this sample.
 let image: CVPixelBuffer
 ```
 
-#### Discussion
+## Discussion
 
 Provide image data in the [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) or [`kCVPixelFormatType_32ARGB`](../../CoreVideo/kcvpixelformattype_32argb.md) pixel formats.
 

@@ -19,11 +19,11 @@ func tabViewItem(at point: NSPoint) -> NSTabViewItem?
 - (NSTabViewItem *) tabViewItemAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The tab view item under the hit point, or `nil` if no tab view item is under that location.
 
-#### Discussion
+## Discussion
 
 You can use this method to find a tab view item based on a user’s mouse click.
 

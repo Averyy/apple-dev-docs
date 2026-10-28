@@ -25,7 +25,7 @@ func NSSwapShort(_ inv: UInt16) -> UInt16
 static unsigned short NSSwapShort(unsigned short inv);
 ```
 
-#### Discussion
+## Discussion
 
 Swaps the low-order and high-order bytes of `inv` and returns the resulting value.
 

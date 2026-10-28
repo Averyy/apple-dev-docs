@@ -16,7 +16,7 @@ An error indicating the requested data does not exist.
 case missingData
 ```
 
-#### Discussion
+## Discussion
 
 If fetching cached data returns this error, fetching live data may resolve the issue.
 

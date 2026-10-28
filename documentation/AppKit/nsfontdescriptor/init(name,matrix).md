@@ -19,7 +19,7 @@ init(name fontName: String, matrix: AffineTransform)
 + (NSFontDescriptor *) fontDescriptorWithName:(NSString *) fontName matrix:(NSAffineTransform *) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

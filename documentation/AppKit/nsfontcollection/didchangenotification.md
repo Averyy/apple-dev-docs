@@ -19,7 +19,7 @@ class let didChangeNotification: NSNotification.Name
 extern NSNotificationName const NSFontCollectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the font collection that was affected. The notification’s `userInfo` dictionary contains information about the the collection change containing the keys defined in [`NSFontCollection.UserInfoKey`](./userinfokey.md) and the corresponding values.
 

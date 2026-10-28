@@ -24,7 +24,7 @@ class func cupImperial() -> Self
 + (instancetype) cupImperialUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring volume in imperial cups.
 

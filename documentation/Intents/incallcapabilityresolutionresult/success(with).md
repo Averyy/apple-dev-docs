@@ -24,11 +24,11 @@ class func success(with resolvedCallCapability: INCallCapability) -> Self
 + (instancetype) successWithResolvedCallCapability:(INCallCapability) resolvedCallCapability;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallCapabilityResolutionResult`](../incallcapabilityresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when you recognize the specified type of call capability and are able to use it to resolve an intent.
 

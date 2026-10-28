@@ -23,7 +23,7 @@ typealias LayoutInteractiveTransitionCompletion = (Bool, Bool) -> Void
 typedef void (^)(_Bool, _Bool) UICollectionViewLayoutInteractiveTransitionCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 This completion block takes the following parameters:
 

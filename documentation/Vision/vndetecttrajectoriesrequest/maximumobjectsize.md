@@ -30,7 +30,7 @@ var maximumObjectSize: Float { get set }
 
 - [Identifying Trajectories in Video](../identifying-trajectories-in-video.md)
 
-#### Discussion
+## Discussion
 
 Set the maximum size to filter out unwanted trajectories from larger objects moving through the scene. The default value is 1.0, which means to apply no filtering.
 

@@ -23,7 +23,7 @@ static let indicatesNonRectilinearProjection: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicIndicatesNonRectilinearProjection;
 ```
 
-#### Discussion
+## Discussion
 
 This media characteristic is currently synthesized if the CMVideoFormatDescription specifies a non-rectilinear projection. To determine which kind of projection is indicated, look for the format description extension with key kCMFormatDescriptionExtension_ProjectionKind. The value of this characteristic is @“public.indicates-non-rectilinear-projection”. Note for content authors: the presence of this characteristic is strictly inferred from the format description of the associated track.
 

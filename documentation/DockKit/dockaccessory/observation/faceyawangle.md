@@ -18,7 +18,7 @@ The angle of the face in radians.
 let faceYawAngle: Measurement<UnitAngle>?
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` indicates the face of the subject in the frame is looking directly at the camera. A negative value indicates the subject’s face is oriented to the left, while positive value indicates the face is oriented to the right.
 

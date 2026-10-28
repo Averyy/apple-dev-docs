@@ -24,7 +24,7 @@ static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailur
 extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonTemporaryDirectoryDoesNotExist;
 ```
 
-#### Discussion
+## Discussion
 
 Create the temporary files directory and call [`configureForResumableExportWithCompletionHandler:`](../configureforresumableexportwithcompletionhandler_.md) again.
 

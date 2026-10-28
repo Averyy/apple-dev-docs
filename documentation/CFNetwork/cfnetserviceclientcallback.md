@@ -24,11 +24,11 @@ typealias CFNetServiceClientCallBack = (CFNetService, UnsafeMutablePointer<CFStr
 typedef void (*)(struct __CFNetService *, CFStreamError *, void *) CFNetServiceClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback `MyNetServiceClientCallBack`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 Your callback function will be called when there are results of resolving a CFNetService to report or when there are registration errors to report. In the case of resolution, if the service has more than one IP address, your callback will be called once for each address.
 

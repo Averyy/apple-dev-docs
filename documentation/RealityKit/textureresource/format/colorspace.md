@@ -20,7 +20,7 @@ A profile that specifies the interpretation of pixel values as a color.
 enum ColorSpace
 ```
 
-#### Overview
+## Overview
 
 This color space specifies the color primaries, and the pixel format specifies the white point transfer function.
 

@@ -20,7 +20,7 @@ struct es_proc_check_type_t
 typedef enum { ... } es_proc_check_type_t;
 ```
 
-#### Overview
+## Overview
 
 This value provides detail, in coordination with [`flavor`](./es_event_proc_check_t/flavor.md) from [`es_event_proc_check_t`](./es_event_proc_check_t.md), to identify the functions and the type of data returned from checks called in `libproc.h`.
 

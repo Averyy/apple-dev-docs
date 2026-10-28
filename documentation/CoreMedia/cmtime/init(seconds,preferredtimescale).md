@@ -21,7 +21,7 @@ Creates a time that represents number of seconds in a preferred timescale.
 init(seconds: Double, preferredTimescale: CMTimeScale)
 ```
 
-#### Discussion
+## Discussion
 
 Specify a positive preferred timescale value, or the resulting time is [`invalid`](./invalid.md).
 

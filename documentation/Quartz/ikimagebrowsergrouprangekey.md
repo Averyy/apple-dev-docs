@@ -19,7 +19,7 @@ let IKImageBrowserGroupRangeKey: String
 extern NSString * const IKImageBrowserGroupRangeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSValue`](../Foundation/nsvalue.md) object. This is required if the view uses grouping
 

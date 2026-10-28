@@ -19,11 +19,11 @@ The declaration to configure accessibility settings.
 object AccessibilitySettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.accessibility.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.accessibility.settings` as the declaration type
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration prevents the use of Live Recognition.
 

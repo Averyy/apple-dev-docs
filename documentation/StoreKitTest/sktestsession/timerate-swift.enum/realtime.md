@@ -25,7 +25,7 @@ case realTime
 SKTestTimeRateRealTime
 ```
 
-#### Discussion
+## Discussion
 
 With this time rate, subscriptions in the testing environment renew in real time. For example, a weekly subscription renews in one week.
 

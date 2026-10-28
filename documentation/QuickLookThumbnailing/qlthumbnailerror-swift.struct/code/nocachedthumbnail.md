@@ -23,7 +23,7 @@ case noCachedThumbnail
 QLThumbnailErrorNoCachedThumbnail
 ```
 
-#### Discussion
+## Discussion
 
 In response to a request for a low-quality thumbnail, QuickLookThumbnailing searched for a previously created thumbnail to achieve a lower latency but didn’t find one.
 

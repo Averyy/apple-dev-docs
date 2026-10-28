@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, shouldTypeSelectFor event: NSE
 - (BOOL) tableView:(NSTableView *) tableView shouldTypeSelectForEvent:(NSEvent *) event withCurrentSearchString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow type select for event, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Typically, this is called from the [`NSTableView`](../nstableview.md) `keyDown:` implementation and the event will be a key event.
 

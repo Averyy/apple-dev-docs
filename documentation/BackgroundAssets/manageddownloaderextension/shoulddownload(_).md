@@ -25,11 +25,11 @@ func shouldDownload(_ assetPack: AssetPack) -> Bool
 
 - [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 Whether the asset pack should be downloaded.
 
-#### Discussion
+## Discussion
 
 By default, the system automatically downloads all applicable asset packs with either “essential” or “prefetch” download policies for the current installation event type. You can optionally implement this method to filter out unwanted asset packs at runtime.
 

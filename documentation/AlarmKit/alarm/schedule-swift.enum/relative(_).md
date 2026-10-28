@@ -17,7 +17,7 @@ An alarm that can repeat and fire at a time relative to the device’s current t
 case relative(Alarm.Schedule.Relative)
 ```
 
-#### Discussion
+## Discussion
 
 You can use `relative` for events which need to take into account the current time zone. For example, a wake up alarm.
 

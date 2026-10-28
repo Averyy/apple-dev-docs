@@ -24,7 +24,7 @@ func resizeNearest(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTens
 - (MPSGraphTensor *) resizeNearestWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

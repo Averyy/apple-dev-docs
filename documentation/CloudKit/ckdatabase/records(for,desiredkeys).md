@@ -21,11 +21,11 @@ Fetches the specified records and returns them to an awaiting caller.
 func records(for ids: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]? = nil) async throws -> [CKRecord.ID : Result<CKRecord, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the fetched records. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
 
-#### Discussion
+## Discussion
 
 If you’re fetching records of different types, make sure that `desiredKeys` is the union of all the fields you require across each distinct record type.
 

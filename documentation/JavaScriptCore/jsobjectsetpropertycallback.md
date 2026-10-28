@@ -24,11 +24,11 @@ typealias JSObjectSetPropertyCallback = (JSContextRef?, JSObjectRef?, JSStringRe
 typedef _Bool (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSString *, const struct OpaqueJSValue *, const struct OpaqueJSValue **) JSObjectSetPropertyCallback;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if setting the property succeeds; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you name your function `SetProperty`, you declare it like this:
 

@@ -13,7 +13,7 @@
 OSErr GetComponentPublicResourceList(OSType resourceType, SInt16 resourceID, SInt32 flags, ComponentDescription *cd, GetMissingComponentResourceUPP missingProc, void *refCon, void *atomContainerPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

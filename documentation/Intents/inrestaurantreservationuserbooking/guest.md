@@ -31,7 +31,7 @@ var guest: INRestaurantGuest { get set }
 @property (atomic, copy) INRestaurantGuest * guest;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the guest is the same person who made the reservation. However, If your app lets users edit the name on a reservation, the guest may be different.
 

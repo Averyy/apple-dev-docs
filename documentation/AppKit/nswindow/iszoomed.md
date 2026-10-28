@@ -19,7 +19,7 @@ var isZoomed: Bool { get }
 @property (readonly, getter=isZoomed) BOOL zoomed;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is in a zoomed state; otherwise, [`false`](../../Swift/false.md).
 

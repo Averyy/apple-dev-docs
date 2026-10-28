@@ -24,7 +24,7 @@ init(text: Binding<String>, prompt: Text? = nil, axis: Axis, @ContentBuilder lab
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Specify a preferred axis in which the text field should scroll its content when it does not fit in the available space. Depending on the style of the field, this axis may not be respected.
 

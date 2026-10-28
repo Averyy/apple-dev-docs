@@ -25,7 +25,7 @@ func CFURLGetTypeID() -> CFTypeID
 extern CFTypeID CFURLGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `CFURL` opaque type.
 

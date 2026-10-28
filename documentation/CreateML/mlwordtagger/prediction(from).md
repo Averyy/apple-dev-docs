@@ -21,7 +21,7 @@ func prediction(from text: String) throws -> [String]
 func prediction(from tokens: [MLWordTagger.Token]) throws -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of tags for the tokens in the string.
 

@@ -19,7 +19,7 @@ class let didUnmountNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceDidUnmountNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification posts even if a volume becomes forcibly and immediately unavailable, such as when simply unplugging a drive.
 

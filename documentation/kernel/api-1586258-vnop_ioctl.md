@@ -15,11 +15,11 @@ Call down to a filesystem or device driver to execute various control operations
 errno_t VNOP_IOCTL(vnode_t vp, u_long command, caddr_t data, int fflag, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or a filesystem-specific error.
 
-#### Discussion
+## Discussion
 
 Ioctl controls are typically associated with devices, but they can in fact be passed down for any file; they are used to implement any of a wide range of controls and information requests. fcntl() calls VNOP_IOCTL for several commands, and will attempt a VNOP_IOCTL if it is passed an unknown command, though no copyin or copyout of arguments can occur in this case--the "arg" must be an integer value. Filesystems can define their own fcntls using this mechanism. How ioctl commands are structured is slightly complicated; see the manual page for ioctl(2).
 

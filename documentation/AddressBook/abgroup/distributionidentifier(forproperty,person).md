@@ -19,11 +19,11 @@ func distributionIdentifier(forProperty property: String!, person: ABPerson!) ->
 - (NSString *) distributionIdentifierForProperty:(NSString *) property person:(ABPerson *) person;
 ```
 
-#### Return Value
+## Return Value
 
 The distribution identifier for the given property and person.
 
-#### Discussion
+## Discussion
 
 If a distribution identifier is not set, this method returns the multivalue’s primary identifier. If either the `property` or the `person` argument is `nil`, this method returns `nil`. This method also returns `nil` if `property` is not a multivalue list property, or if `person` is not a member of the group.
 

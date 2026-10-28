@@ -20,11 +20,11 @@ func CGDisplayIsAsleep(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsAsleep(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If [`true`](../Swift/true.md), the specified display is in sleep mode; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A display is sleeping when its framebuffer and the attached monitor are in reduced power mode. A sleeping display is still considered to be a part of global display (desktop) space, but it is not drawable.
 

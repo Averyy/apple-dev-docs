@@ -17,7 +17,7 @@ The white noise variance estimate in the background noise signal.
 @property (nonatomic, strong, readonly, nullable) NSNumber * backgroundNoiseOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the white noise variance estimate per Hz in the [`backgroundNoise`](./backgroundnoise.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
 

@@ -26,7 +26,7 @@ var isAppleProRAWSupported: Bool { get }
 
 - [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

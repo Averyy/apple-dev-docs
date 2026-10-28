@@ -23,7 +23,7 @@ var metadata: [AnyHashable : Any]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

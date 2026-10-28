@@ -25,7 +25,7 @@ func clear(_ rect: CGRect)
 extern void CGContextClearRect(CGContextRef c, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 If the provided context is a window or bitmap context, Core Graphics clears the rectangle. For other context types, Core Graphics fills the rectangle in a device-dependent manner. However, you should not use this function in contexts other than window or bitmap contexts.
 

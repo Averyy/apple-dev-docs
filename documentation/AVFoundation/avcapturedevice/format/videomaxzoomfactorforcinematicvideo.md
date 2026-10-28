@@ -23,7 +23,7 @@ var videoMaxZoomFactorForCinematicVideo: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoMaxZoomFactorForCinematicVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Devices support a limited zoom range when Cinematic Video capture is active. If this device format does not support Cinematic Video capture, this property returns `1.0`.
 

@@ -25,7 +25,7 @@ static let newKey: NSKeyValueChangeKey
 extern NSKeyValueChangeKey const NSKeyValueChangeNewKey;
 ```
 
-#### Discussion
+## Discussion
 
 For [`NSKeyValueChange.insertion`](../nskeyvaluechange/insertion.md) or [`NSKeyValueChange.replacement`](../nskeyvaluechange/replacement.md), if [`new`](../nskeyvalueobservingoptions/new.md) was specified when the observer was registered, the value for this key is an `NSArray` instance that contains the objects that have been inserted or replaced other objects, respectively.
 

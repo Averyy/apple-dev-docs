@@ -21,7 +21,7 @@ Creates an EnvironmentResource a skybox, specular and diffuse texture resources.
 convenience init(skybox skyboxTexture: TextureResource?, specular specularTexture: TextureResource, diffuse diffuseTexture: TextureResource) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `SkyboxGenerator` and `ImageBasedLightTextureGenerator` can generate required textures into a `LowLevelTexture`, itself wrapped as a `TextureResource`.
 

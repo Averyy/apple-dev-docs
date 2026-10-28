@@ -24,7 +24,7 @@ class var shouldMonitorBackgroundEvents: Bool { get set }
 @property (class, nonatomic, readwrite) BOOL shouldMonitorBackgroundEvents;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), and the app isn’t in the foreground, the framework doesn’t forward any input from the game controller until the app becomes the frontmost.
 

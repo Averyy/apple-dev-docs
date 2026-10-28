@@ -25,7 +25,7 @@ var triangle: SparseTriangle_t { get set }
 SparseTriangle_t triangle;
 ```
 
-#### Discussion
+## Discussion
 
 If [`kind`](./kind.md) is [`SparseOrdinary`](../sparseordinary.md), this operation ignores this propoerty. Otherwise, it indicates which triangle ([`SparseUpperTriangle`](../sparseuppertriangle.md) or [`SparseLowerTriangle`](../sparselowertriangle.md)) represents the matrix.
 

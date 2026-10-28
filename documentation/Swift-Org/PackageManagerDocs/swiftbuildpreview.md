@@ -13,7 +13,7 @@ Understand, use, and preview the next-generation build system for Package Manage
 **Availability**:
 - Swift 6.3+
 
-#### Overview
+## Overview
 
 Swift Package Manager is previewing a new build system [Swift Build](https://github.com/swiftlang/swift-build) as a replacement for the current native build system. This document outlines the current state of the preview, key differences, and known issues.
 
@@ -21,7 +21,7 @@ We encourage you to [try](./swiftbuildpreview.md#How-to-use-the-Swift-Build-buil
 
 For more information about the migration to Swift Build, see [this forum post](https://forums.swift.org/t/evolving-swiftpm-builds-with-swift-build/77596).
 
-#### Migration plan
+## Migration plan
 
 The Swift Build integration follows these phases:
 
@@ -30,7 +30,7 @@ The Swift Build integration follows these phases:
 3. **Default Migration** - Transition to Swift Build as default
 4. **Legacy Build System Deprecation** - Phase out `native` and `xcode` build systems
 
-#### How to use the Swift Build build system
+## How to use the Swift Build build system
 
 To participate in the preview, run your Swift Package Manager commands with the `--build-system swiftbuild` flag:
 
@@ -40,49 +40,49 @@ swift test --build-system swiftbuild
 swift run --build-system swiftbuild
 ```
 
-#### Key improvements and differences
+## Key improvements and differences
 
 - **`--static-swift-stdlib`**: Stricter validation (errors instead of silently ignoring)
 
   - The native build system silently ignored this option on some platforms; Swift Build now produces an error.
   - The Swift Build build system will generate an error on Windows until static libraries are supported. See [Upcoming changes to Windows Swift SDKs](https://forums.swift.org/t/upcoming-changes-to-windows-swift-sdks/81313).
 
-##### Detailed differences
+### Detailed differences
 
-###### Resource support parity with xcodebuild
+#### Resource support parity with xcodebuild
 
 - When targeting Apple platforms using `--build-system swiftbuild`, SwiftPM now consistently applies the same set of resource rules as xcodebuild when a package contains resource types like asset catalogs, storyboards, Metal sources, etc.
 
-###### Swift Driver integration
+#### Swift Driver integration
 
 - The `--use-integrated-swift-driver` command-line option is considered deprecated. `--build-system swiftbuild` always uses the library-based Swift driver.
 - On supported platforms, `--build-system swiftbuild` will make use of explicitly-built Clang and Swift modules.
 
-###### Enhanced diagnostics
+#### Enhanced diagnostics
 
 - Logging and diagnostic differences between native and Swift Build build systems
 
-###### Other
+#### Other
 
 - When targeting Apple platforms, `--build-system swiftbuild` supports building universal binaries. Example invocation: `swift build --build-system swiftbuild --arch arm64 --arch x86_64`
 - The Swift Build build system outputs build artifacts to a different location.  Use the `swift build --show-bin-path <other build arguments>` to determine the build output location.
 
-#### Known issues
+## Known issues
 
-##### Windows platform
+### Windows platform
 
 - Swift Build does not support CodeView debug information format.
 
   - **Tracking**: [swiftlang/swift-package-manager#9302](https://github.com/swiftlang/swift-package-manager/issues/9302)
   - **Impact**: Limited debugging capabilities on Windows.
 
-##### Linux platform
+### Linux platform
 
 - Coverage reporting issues on some Linux platforms
 
   - **Tracking**: [swiftlang/swift-package-manager#9600](https://github.com/swiftlang/swift-package-manager/issues/9600)
 
-##### Feature gaps
+### Feature gaps
 
 - The `swift run --repl` command may fail to import some modules.
 
@@ -117,7 +117,7 @@ swift run --build-system swiftbuild
 
   - **Tracking**: [swiftlang/swift-package-manager#9184](https://github.com/swiftlang/swift-package-manager/issues/9184)
 
-#### Reporting issues
+## Reporting issues
 
 Please follow these steps when reporting issues:
 

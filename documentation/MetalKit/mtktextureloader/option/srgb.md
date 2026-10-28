@@ -24,7 +24,7 @@ static let SRGB: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a boolean value.
 

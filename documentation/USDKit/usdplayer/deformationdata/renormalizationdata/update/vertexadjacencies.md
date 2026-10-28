@@ -20,7 +20,7 @@ Changed vertex adjacency data.
 let vertexAdjacencies: [UInt32]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

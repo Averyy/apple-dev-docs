@@ -17,7 +17,7 @@ Initializes the object with values that uniquely identify an order within an ord
 init(orderTypeIdentifier: String, orderIdentifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 In combination with the order type identifier, these two properties uniquely identify an order in [`FinanceStore`](../financestore.md).
 

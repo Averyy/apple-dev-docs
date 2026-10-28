@@ -25,11 +25,11 @@ convenience init(object anObject: Any)
 + (instancetype) arrayWithObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the single element `anObject`.
 
-#### Discussion
+## Discussion
 
 Alternatively, you can use array literal syntax in Objective-C or Swift to create an array containing a given object:
 

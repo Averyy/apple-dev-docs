@@ -21,7 +21,7 @@ Unsafely create an OutputSpan over partly-initialized memory.
 init(buffer: UnsafeMutableBufferPointer<Element>, initializedCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The memory in `buffer` must remain valid throughout the lifetime of the newly-created `OutputSpan`. Its prefix must contain `initializedCount` initialized instances, followed by uninitialized memory. The default value of `initializedCount` is 0, representing the common case of a completely uninitialized `buffer`.
 

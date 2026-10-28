@@ -15,11 +15,11 @@ Allocates a buffer for use during I/O operations.
 virtual kern_return_t CreateIOBuffer(IOOptionBits options, uint64_t capacity, IOBufferMemoryDescriptor **buffer);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method allocates an [`IOBufferMemoryDescriptor`](../../DriverKit/iobuffermemorydescriptor.md) optimized for use by the underlying controller hardware. A buffer allocated by this method isn’t bounced to perform DMA operations.
 

@@ -25,11 +25,11 @@ func pictureInPictureControllerTimeRangeForPlayback(_ pictureInPictureController
 - (CMTimeRange) pictureInPictureControllerTimeRangeForPlayback:(AVPictureInPictureController *) pictureInPictureController;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CMTimeRange`](../../CoreMedia/cmtimerange.md) value that defines the content’s time range.
 
-#### Discussion
+## Discussion
 
 Use the following guidelines when specifying a time range value:
 

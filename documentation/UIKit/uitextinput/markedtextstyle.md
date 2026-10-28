@@ -24,7 +24,7 @@ var markedTextStyle: [NSAttributedString.Key : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * markedTextStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Marked text requires a unique visual treatment when displayed to users. See [Style dictionary keys](../style-dictionary-keys.md) for descriptions of the valid keys and values for this dictionary.
 

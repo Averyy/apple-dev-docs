@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the string ends with the specified su
 func hasSuffix<Suffix>(_ suffix: Suffix) -> Bool where Suffix : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string ends with `suffix`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The comparison is both case sensitive and Unicode safe. The case-sensitive comparison will only match strings whose corresponding characters have the same case.
 

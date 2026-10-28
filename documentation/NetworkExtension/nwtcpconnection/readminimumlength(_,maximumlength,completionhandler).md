@@ -26,7 +26,7 @@ func readMinimumLength(_ minimum: Int, maximumLength maximum: Int, completionHan
 - (void) readMinimumLength:(NSUInteger) minimum maximumLength:(NSUInteger) maximum completionHandler:(void (^)(NSData *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler will be invoked when:
 

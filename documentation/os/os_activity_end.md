@@ -23,7 +23,7 @@ Ends the specified activity on the current thread.
 extern void os_activity_end(os_activity_t activity);
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function signifies only that the originator has received control back from the activity.  Work related to the activity may still be in flight at the time this function is called.
 

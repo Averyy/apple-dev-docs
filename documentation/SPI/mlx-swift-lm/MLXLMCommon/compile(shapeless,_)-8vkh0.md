@@ -17,7 +17,7 @@ Compiles a function that reads nothing but its arguments.
 func compile(shapeless: Bool = false, _ body: @escaping @Sendable ([MLXArray]) -> [MLXArray]) -> @Sendable ([MLXArray]) -> [MLXArray]
 ```
 
-#### Discussion
+## Discussion
 
 Shadows MLX’s `compile` with a `@Sendable` body, which cannot capture an `MLXArray` or a `Module`. Use [`CompiledTrace`](./compiledtrace.md) for a body that has to read module weights.
 

@@ -19,7 +19,7 @@ var detachesHiddenViews: Bool { get set }
 @property BOOL detachesHiddenViews;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), setting the [`isHidden`](../nsview/ishidden.md) property of a view to [`true`](../../Swift/true.md) causes the stack view to remove hidden views from its view hierarchy and put them in the [`detachedViews`](./detachedviews.md) property. Changing the view’s [`isHidden`](../nsview/ishidden.md) property to [`false`](../../Swift/false.md) causes the stack view to add the view back to the view hierarchy. When the value of this property is [`false`](../../Swift/false.md), views remain in the view hierarchy, even when they are hidden. The default value of this property is [`true`](../../Swift/true.md).
 

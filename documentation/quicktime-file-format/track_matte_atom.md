@@ -6,7 +6,7 @@
 
 An atom you use to visually blend the track’s image when it is displayed.
 
-#### Overview
+## Overview
 
 Track matte atoms are used to visually blend the track’s image when it is displayed.
 

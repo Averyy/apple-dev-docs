@@ -20,7 +20,7 @@ struct es_tcc_identity_type_t
 typedef enum { ... } es_tcc_identity_type_t;
 ```
 
-#### Overview
+## Overview
 
 Represent the identity type of an application which has access to a TCC service.
 

@@ -21,11 +21,11 @@ Terminates publishing if the upstream publisher exceeds the specified time inter
 func timeout<S>(_ interval: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions? = nil, customError: (() -> Self.Failure)? = nil) -> Publishers.Timeout<Self, S> where S : Scheduler
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that terminates if the specified interval elapses with no events received from the upstream publisher.
 
-#### Discussion
+## Discussion
 
 Use [`timeout(_:scheduler:options:customError:)`](./timeout%28_,scheduler,options,customerror%29.md) to terminate a publisher if an element isn’t delivered within a timeout interval you specify.
 

@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app can open the external link accoun
 static var canOpen: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Check this property before showing any user-interface controls that enable people to open the external link account.
 

@@ -25,7 +25,7 @@ let kCVPixelBufferCGBitmapContextCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferCGBitmapContextCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md).
 

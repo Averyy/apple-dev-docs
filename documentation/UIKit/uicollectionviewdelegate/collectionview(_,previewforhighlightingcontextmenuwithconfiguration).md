@@ -24,7 +24,7 @@ optional func collectionView(_ collectionView: UICollectionView, previewForHighl
 - (UITargetedPreview *) collectionView:(UICollectionView *) collectionView previewForHighlightingContextMenuWithConfiguration:(UIContextMenuConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted preview object describing the highlight preview.
 

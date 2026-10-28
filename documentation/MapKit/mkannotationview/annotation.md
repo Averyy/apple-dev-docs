@@ -24,7 +24,7 @@ var annotation: (any MKAnnotation)? { get set }
 @property (nonatomic, strong, nullable) id<MKAnnotation> annotation;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t change the value of this property directly. This property contains a non-`nil` value only while the annotation view is visible on the map. If the map view queues this annotation view and is waiting to reuse it, the value is `nil`.
 

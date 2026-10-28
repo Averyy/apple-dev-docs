@@ -19,7 +19,7 @@ func update(with event: NSEvent)
 - (void) updateWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs the feedback filter about a new event to be filtered, which matches an event type returned by the [`inputEventMask`](./inputeventmask.md) method. Call the `updateWithEvent:` method instead of [`update(withPanRecognizer:)`](./update%28withpanrecognizer%29.md) if you are using a tracking loop controller for event tracking.
 

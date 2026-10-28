@@ -20,7 +20,7 @@ convenience init(eventClass: AEEventClass, eventID: AEEventID, targetDescriptor:
 - (instancetype) initWithEventClass:(AEEventClass) eventClass eventID:(AEEventID) eventID targetDescriptor:(NSAppleEventDescriptor *) targetDescriptor returnID:(AEReturnID) returnID transactionID:(AETransactionID) transactionID;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized Apple event (an instance of `NSAppleEventDescriptor`), or `nil` if an error occurs.
 

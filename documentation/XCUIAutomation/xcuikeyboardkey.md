@@ -26,7 +26,7 @@ struct XCUIKeyboardKey
 typedef NSString * XCUIKeyboardKey;
 ```
 
-#### Discussion
+## Discussion
 
 These constants represent the set of modifier, navigation, function, and other keys on most keyboards.
 

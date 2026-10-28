@@ -24,7 +24,7 @@ var error: (any Error)? { get }
 @property (readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` unless the looper’s [`status`](./status-swift.property.md) changes to [`AVPlayerLooper.Status.failed`](./status-swift.enum/failed.md). If this occurs, this property value contains an error object that provides the details of the error that prevented looping.
 

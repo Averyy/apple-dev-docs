@@ -15,7 +15,7 @@ Indicates whether two accessories are equal.
 extern bool ar_accessory_is_equal_to_accessory(ar_accessory_t accessory, ar_accessory_t other_accessory);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the accessories are equal, otherwise `false`.
 

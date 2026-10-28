@@ -16,7 +16,7 @@ CFDictionary key for arbitrary vendor data.
 #define kIOPSVendorDataKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources are not required to publish this key.
 - For power source creators: Providing this key is OPTIONAL.

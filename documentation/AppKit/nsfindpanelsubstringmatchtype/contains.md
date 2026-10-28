@@ -17,7 +17,7 @@ case contains
 NSFindPanelSubstringMatchTypeContains
 ```
 
-#### Discussion
+## Discussion
 
 Finds a word containing the search string.
 

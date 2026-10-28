@@ -4,7 +4,7 @@
 
 Generate notifications and push them to user devices.
 
-#### Overview
+## Overview
 
 Use remote notifications (also known as *push notifications*) to push small amounts of data to devices that use your app, even when your app isn’t running. Apps use notifications to provide important information to users. For example, a messaging service sends remote notifications when new messages arrive.
 
@@ -23,7 +23,7 @@ You’re responsible for setting up a provider server (or servers) and for confi
 
 > 💡 **Tip**:  If you’re setting up a provider server to send push notifications to users in Safari and other browsers, see [Sending web push notifications in web apps and browsers](./sending-web-push-notifications-in-web-apps-and-browsers.md).
 
-##### Build custom infrastructure for notifications
+### Build custom infrastructure for notifications
 
 Setting up a remote notification server consists of a few key tasks. How you implement these tasks depends on your infrastructure. Use the technologies that are appropriate for your company:
 
@@ -33,7 +33,7 @@ Setting up a remote notification server consists of a few key tasks. How you imp
 - Write code to generate POST requests that contain your payloads, and send those requests over your HTTP/2 connection. See [Sending notification requests to APNs](./sending-notification-requests-to-apns.md).
 - Regenerate your token periodically for token-based authentication. See [Establishing a token-based connection to APNs](./establishing-a-token-based-connection-to-apns.md).
 
-##### Establish a trusted connection to APNs
+### Establish a trusted connection to APNs
 
 Communication between your provider server and APNs must take place over a secure connection. Creating a secure connection requires installing the [AAA Certificate Services root certificate](https://comodoca.my.salesforce.com/sfc/dist/version/download/?oid=00D1N000002Ljih&ids=0683l00000G9fLm&d=%2Fa%2F3l000000VbG0%2Fh70Hv.GWfGuD79pR_if0MtGjJFcUj.NRZS_RLqEyC_4&asPdf=false) and [SHA-2 Root : USERTrust RSA Certification Authority certificate](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO) on each of your provider servers.
 
@@ -46,7 +46,7 @@ To send notifications, your provider server must establish either token-based or
 - To set up token-based trust with APNs, see [Establishing a token-based connection to APNs](./establishing-a-token-based-connection-to-apns.md).
 - To set up certificate-based trust with APNs, see [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 
-##### Understand what APNs provides
+### Understand what APNs provides
 
 APNs makes every effort to deliver your notifications, and to deliver them with the best user experience:
 

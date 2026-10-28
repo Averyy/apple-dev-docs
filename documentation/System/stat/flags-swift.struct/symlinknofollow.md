@@ -21,7 +21,7 @@ If the path ends with a symbolic link, return information about the link itself.
 static var symlinkNoFollow: Stat.Flags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `AT_SYMLINK_NOFOLLOW`.
 

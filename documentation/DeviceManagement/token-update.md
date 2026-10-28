@@ -15,7 +15,7 @@ Updates the token for a device on the server.
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 The device sends an initial `TokenUpdate` message to the server when it installs the MDM payload. The server needs to send push messages to the device only after receiving the first `TokenUpdate` message. If the device reports that it is `AwaitingConfiguration`, the MDM server needs to send a [`Device Configured`](./device-configured-command.md) MDM command before the device allows the user to proceed in Setup Assistant. This gives the MDM server the opportunity to perform some setup using MDM commands.
 
@@ -29,7 +29,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 
 > **Note**:  The topic string for the MDM check-in protocol needs to start with `com.apple.mgmt.\*` where `\*` is a unique suffix.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

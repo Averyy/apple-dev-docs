@@ -26,7 +26,7 @@ var isHittable: Bool { get }
 @property (readonly, getter=isHittable) BOOL hittable;
 ```
 
-#### Discussion
+## Discussion
 
 [`isHittable`](./ishittable.md) returns [`true`](../../Swift/true.md) if the element exists and can be clicked, tapped, or pressed at its current location. It returns [`false`](../../Swift/false.md) if the element doesn’t exist, is offscreen, or is covered by another element.
 

@@ -16,11 +16,11 @@ Used to obtain the capabilities of the UPS device.
 IOReturn (*getCapabilities)(void *thisPointer, CFSetRef *capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Keys are defined in IOPSKeys.h and begin with kIOPS. This is not an allocation method. Thus the caller does not release the CFSet that is returned.
 

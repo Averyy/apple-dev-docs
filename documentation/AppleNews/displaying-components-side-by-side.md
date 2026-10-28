@@ -5,7 +5,7 @@
 
 Configure a side-by-side, horizontal arrangement of components for your article.
 
-#### Overview
+## Overview
 
 In Apple News Format, you can display child components of [`Container`](../AppleNewsFormat/container.md), [`Chapter`](../AppleNewsFormat/chapter.md), [`Section`](../AppleNewsFormat/section.md), and [`Aside`](../AppleNewsFormat/aside.md), side by side and horizontally by using the `contentDisplay` type [`HorizontalStackDisplay`](../AppleNewsFormat/horizontalstackdisplay.md). The child components are sized to match the `minimumWidth` and `maximumWidth` values defined in the [`ComponentLayout`](../AppleNewsFormat/componentlayout.md) object of these components. To redistribute the empty space inside a horizontal stack collection, use the [`FlexibleSpacer`](../AppleNewsFormat/flexiblespacer.md) object. This object provides flexible space between components in a container only when its `contentDisplay` value is set to `horizontal_stack`.
 

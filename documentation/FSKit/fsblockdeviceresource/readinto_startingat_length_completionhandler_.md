@@ -15,7 +15,7 @@ Reads data from the resource into a buffer and executes a block afterwards.
 - (void) readInto:(void *) buffer startingAt:(off_t) offset length:(size_t) length completionHandler:(void (^)(size_t actuallyRead, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For the read to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 

@@ -26,7 +26,7 @@ static let colorNoiseReductionAmount: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputColorNoiseReductionAmountKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`NSNumber`](../../Foundation/nsnumber.md) object containing a value between `0.0` and `1.0`.
 

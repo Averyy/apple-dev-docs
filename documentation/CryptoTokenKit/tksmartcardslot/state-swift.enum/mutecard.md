@@ -23,7 +23,7 @@ case muteCard
 TKSmartCardSlotStateMuteCard
 ```
 
-#### Discussion
+## Discussion
 
 A Smart Card is inserted, but is mute, or does not provide responses to commands.
 

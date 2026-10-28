@@ -19,7 +19,7 @@ var wantsUpdateLayer: Bool { get }
 @property (readonly) BOOL wantsUpdateLayer;
 ```
 
-#### Discussion
+## Discussion
 
 A view can update its contents using one of two techniques. It can draw those contents using its [`draw(_:)`](./draw%28_%29.md) method or it can modify its underlying layer object directly. During the view update cycle, each dirty view calls this method on itself to determine which technique to use. The default implementation of this method returns [`false`](../../Swift/false.md), which causes the view to use its [`draw(_:)`](./draw%28_%29.md) method.
 

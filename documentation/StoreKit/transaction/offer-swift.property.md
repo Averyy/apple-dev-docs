@@ -26,7 +26,7 @@ let offer: Transaction.Offer?
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the transaction doesn’t include an offer.
 

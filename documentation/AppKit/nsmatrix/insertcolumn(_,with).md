@@ -19,7 +19,7 @@ func insertColumn(_ column: Int, with newCells: [NSCell]?)
 - (void) insertColumn:(NSInteger) column withCells:(NSArray<NSCell *> *) newCells;
 ```
 
-#### Discussion
+## Discussion
 
 If `column` is greater than the number of columns in the receiver, enough columns are created to expand the receiver to be `column` columns wide. `newCells` should either be empty or contain a sufficient number of cells to fill each new column. If `newCells` is `nil` or an array with no elements, the call is equivalent to calling [`insertColumn(_:)`](./insertcolumn%28_%29.md). Extra cells are ignored, unless the matrix is empty. In that case, a matrix is created with one column and enough rows for all the elements of `newCells`.
 

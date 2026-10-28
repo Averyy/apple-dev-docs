@@ -20,7 +20,7 @@ Sets the weight for the behavior specified by subscript syntax.
 - (void) setObject:(NSNumber *) weight forKeyedSubscript:(GKBehavior *) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`setWeight(_:for:)`](./setweight%28_,for%29.md) method, but allows access using subscript syntax. Like that method, setting a weight by subscript adds the specified individual behavior to the composite behavior if the behavior is not already present.
 

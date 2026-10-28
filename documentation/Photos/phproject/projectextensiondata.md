@@ -19,7 +19,7 @@ var projectExtensionData: Data { get }
 @property (nonatomic, readonly) NSData * projectExtensionData;
 ```
 
-#### Discussion
+## Discussion
 
 The total size of stored data is limited to 5 MB; attempting to store more data will result in an error. Don’t include rasterized images that can be locally cached. Limit stored data to compressed project-specific data.
 

@@ -5,7 +5,7 @@
 
 Equip the system so that Siri can work with your app by adding specific schemas from relevant domains.
 
-#### Overview
+## Overview
 
 A big part of people’s personal context is the apps they use every day. To help Apple Intelligence work with your app, the system needs to understand what your app can do and what content it manages. A *schema* is a special app intent, entity, or enumeration that the framework defines for a specific purpose.
 
@@ -21,7 +21,7 @@ When you build and run your app with schemas in place, a person can take action 
 
 See [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md) for more information about the fundamentals of app intents, entities, and enumerations.
 
-#### Choose one or more domains for your app
+## Choose one or more domains for your app
 
 Look through the available domains in [App schema domains](./app-schema-domains.md) and identify which categories match your app’s functionality. Each domain page lists its schemas and example phrases that show how people invoke them through Siri.
 
@@ -41,7 +41,7 @@ The following domains include one or more use-case groups of schemas:
 
 > **Note**: Xcode reports a build warning for each missing schema in a use-case group that your app partially supports.
 
-#### Support a schema by creating a new type
+## Support a schema by creating a new type
 
 To generate a starting implementation for a schema, type the domain name followed by an underscore in Xcode. Then select the schema from the suggestions list. For example, to get the framework’s code snippet for the [`openAsset`](./appschema/photosintent/openasset.md), which is an intent schema in the photos domain, type: “photos_” and select: `photos_openAsset`. An intent schema represents a specific action that your app can do, in this case opening or presenting a photo.
 
@@ -145,7 +145,7 @@ enum PhotoAssetType: String, Sendable {
 }
 ```
 
-#### Add schema conformance to an existing type
+## Add schema conformance to an existing type
 
 If your app already has a type that matches a schema’s purpose, add the appropriate framework macro on the line above the existing type’s declaration:
 
@@ -157,7 +157,7 @@ The macro generates protocol conformance and validates that your type satisfies 
 
 > 💡 **Tip**: Increase the number of ways people can interact with your app through Apple Intelligence by adopting optional schemas that fit the app’s capabilities.
 
-#### Migrate existing intents to schemas
+## Migrate existing intents to schemas
 
 If your app exposes intents through the Shortcuts app, some of those intents may overlap with available schemas. When the existing intent’s properties already satisfy the schema’s requirements, add the macro directly. For example, if your app has an `OpenPhotoIntent` with a `target` property typed to a photo entity, that’s exactly what `.photos.openAsset` requires. Adding `@AppIntent(schema: .photos.openAsset)` above the declaration is the only change you need to make.
 
@@ -182,7 +182,7 @@ struct CreateAssetsIntent: AppIntent {
 
 When you set an intent’s `isAssistantOnly` property to `true`, it effectively hides the intent from the Shortcuts app. This avoids presenting both intents as a duplicate pair. During this period, the old intent continues to serve existing shortcuts, and the new intent handles requests people make through Siri. To complete the transition, remove `isAssistantOnly` so the new intent appears in Shortcuts, then retire the old intent. For more information about giving people time to update their shortcuts, see [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md).
 
-#### Help the system discover your content
+## Help the system discover your content
 
 Schemas define your app’s capabilities and content at build time, but the system needs to find specific instances at runtime when someone makes a request.
 

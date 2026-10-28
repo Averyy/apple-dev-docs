@@ -17,13 +17,13 @@ The Muon (MomentUm Orthogonalized by Newton-schulz) optimizer.
 class Muon
 ```
 
-#### Overview
+## Overview
 
 Follows the original implementation: [Muon: An optimizer for hidden layers in neural networks](https://kellerjordan.github.io/posts/muon/).
 
 > **Note**: Muon may be sub-optimal for the embedding layer, the final fully connected layer, or any 0D/1D parameters; optimize those with a different method (e.g. [`AdamW`](./adamw.md)). For parameters with more than 2 dimensions (e.g. 4D convolution filters) the trailing dimensions are flattened.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

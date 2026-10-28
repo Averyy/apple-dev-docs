@@ -22,7 +22,7 @@ A gesture that consists of two gestures where only one of them can succeed.
 nonisolated struct ExclusiveGesture<First, Second> where First : Gesture, Second : Gesture
 ```
 
-#### Overview
+## Overview
 
 The `ExclusiveGesture` gives precedence to its first gesture.
 

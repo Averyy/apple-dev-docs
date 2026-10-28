@@ -20,7 +20,7 @@ The framework didn’t locate a named resource.
 static var resourceNotAvailable: CHHapticError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you specify an invalid audio file path.
 

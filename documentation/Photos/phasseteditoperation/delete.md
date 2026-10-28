@@ -24,7 +24,7 @@ case delete
 PHAssetEditOperationDelete
 ```
 
-#### Discussion
+## Discussion
 
 To delete one or more assets, create a change request with the [`deleteAssets(_:)`](../phassetchangerequest/deleteassets%28_%29.md) method inside a [`PHPhotoLibrary`](../phphotolibrary.md) change block.
 

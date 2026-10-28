@@ -21,7 +21,7 @@ The maximum number of retry attempts to perform.
 let retries: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, this publisher attempts to reconnect with the upstream publisher an unlimited number of times.
 

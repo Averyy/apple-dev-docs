@@ -18,7 +18,7 @@ An identifier for selecting the main message that the subscription offer sheet p
 var messageIdentifier: MusicSubscriptionOffer.MessageIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`join`](../messageidentifier/join.md).
 

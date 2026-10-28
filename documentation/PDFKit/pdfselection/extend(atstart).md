@@ -24,7 +24,7 @@ func extend(atStart precede: Int)
 - (void) extendSelectionAtStart:(NSInteger) precede;
 ```
 
-#### Discussion
+## Discussion
 
 The selection may be extended by any amount, up to and including the beginning of the document.
 

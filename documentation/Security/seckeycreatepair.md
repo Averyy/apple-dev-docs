@@ -15,11 +15,11 @@ Creates an asymmetric key pair and stores it in a keychain.
 OSStatus SecKeyCreatePair(SecKeychainRef keychainRef, CSSM_ALGORITHMS algorithm, uint32 keySizeInBits, CSSM_CC_HANDLE contextHandle, CSSM_KEYUSE publicKeyUsage, uint32 publicKeyAttr, CSSM_KEYUSE privateKeyUsage, uint32 privateKeyAttr, SecAccessRef initialAccess, SecKeyRef*publicKey, SecKeyRef*privateKey);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function uses default values for any attributes required by specific key-generation algorithms. Algorithms supported by the AppleCSP module are listed in [Apple Cryptographic Service Provider Functional Specification](https://developer.apple.com/library/archive/documentation/Security/Reference/SecAppleCryptoSpec/Apple_Cryptographic_Service_Provider_Functional_Specification.pdf). For details about algorithms and default values for key-generation parameters, download the CDSA security framework from Apple’s Open Source website at [https://opensource.apple.com/](https://opensource.apple.com/) and read the file `Supported_CSP_Algorithms.doc` in the Documentation folder.
 

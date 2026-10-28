@@ -19,7 +19,7 @@ static let colorSpaceName: NSDeviceDescriptionKey
 extern NSDeviceDescriptionKey NSDeviceColorSpaceName;
 ```
 
-#### Discussion
+## Discussion
 
 See Color Space Names in [Constants](../constants.md) for a list of possible values.
 

@@ -23,7 +23,7 @@ init(preferredContentSizeCategory: UIContentSizeCategory)
 + (UITraitCollection *) traitCollectionWithPreferredContentSizeCategory:(UIContentSizeCategory) preferredContentSizeCategory;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the content size category trait.
 

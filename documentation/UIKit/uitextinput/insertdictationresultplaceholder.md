@@ -23,11 +23,11 @@ optional var insertDictationResultPlaceholder: Any { get }
 @property (nonatomic, readonly) id insertDictationResultPlaceholder;
 ```
 
-#### Return Value
+## Return Value
 
 A placeholder object to use to identify the dictation results. This value must not be `nil`.
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional but can be done when you want to provide a specific rectangle for the placeholder animation while the dictation results are being processed. The object you return from this method is passed to the [`frame(forDictationResultPlaceholder:)`](./frame%28fordictationresultplaceholder%29.md) method later. The actual contents of the object are not accessed by UIKit but you can use the object to store whatever information you need to identify the location for the animation.
 

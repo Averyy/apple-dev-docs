@@ -24,11 +24,11 @@ class func triangleKaleidoscope() -> any CIFilter & CITriangleKaleidoscope
 + (CIFilter<CITriangleKaleidoscope> *) triangleKaleidoscopeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the triangle kaleidoscope filter to an image. The effect produces a complex tiled pattern from a triangular area input image.
 

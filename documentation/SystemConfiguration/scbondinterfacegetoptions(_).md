@@ -19,7 +19,7 @@ func SCBondInterfaceGetOptions(_ bond: SCBondInterface) -> CFDictionary?
 CFDictionaryRefSCBondInterfaceGetOptions(SCBondInterfaceRef bond);
 ```
 
-#### Return Value
+## Return Value
 
 The configuration settings associated with the Ethernet bond interface, or `NULL` if no changes to the default configuration have been saved.
 

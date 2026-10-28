@@ -22,7 +22,7 @@ var toolTip: String? { get set }
 @property (nonatomic, copy, nullable) NSString * toolTip;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the text that should appear in the tooltip. If you want your app to determine the tooltip text at a later time — for instance, to determine the text based on the current state of your app — set the [`delegate`](../uitooltipinteraction/delegate.md) property of [`toolTipInteraction`](./tooltipinteraction.md) after setting [`toolTip`](./tooltip.md) with the default text. For example, the following code listing sets the tooltip’s default text and delegate for a shopping cart button:
 

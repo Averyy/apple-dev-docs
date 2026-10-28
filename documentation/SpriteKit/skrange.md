@@ -25,7 +25,7 @@ class SKRange
 @interface SKRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 You typically use a [`SKRange`](./skrange.md) to clamp a value so that it is within the specified range.
 

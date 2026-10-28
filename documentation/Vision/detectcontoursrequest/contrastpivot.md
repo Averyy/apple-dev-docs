@@ -21,7 +21,7 @@ The pixel value to use as a pivot for the contrast.
 var contrastPivot: Float?
 ```
 
-#### Discussion
+## Discussion
 
 Numeric values range from `0.0` to `1.0`. You can also specify `nil` to have the framework automatically detect the value according to image intensity.
 

@@ -23,7 +23,7 @@ class func isRangingAvailable() -> Bool
 + (BOOL) isRangingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports ranging or [`false`](../../Swift/false.md) if it does not.
 

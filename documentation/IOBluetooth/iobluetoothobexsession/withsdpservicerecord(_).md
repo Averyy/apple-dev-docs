@@ -19,11 +19,11 @@ class func withSDPServiceRecord(_ inSDPServiceRecord: IOBluetoothSDPServiceRecor
 + (instancetype) withSDPServiceRecord:(IOBluetoothSDPServiceRecord *) inSDPServiceRecord;
 ```
 
-#### Return Value
+## Return Value
 
 An OBEX session representing the device/rfcomm channel found in the service record. nil if we failed.
 
-#### Discussion
+## Discussion
 
 Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.
 

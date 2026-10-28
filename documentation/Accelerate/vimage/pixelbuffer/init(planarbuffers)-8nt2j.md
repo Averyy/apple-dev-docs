@@ -23,7 +23,7 @@ init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 This function treats floating point pixels represented by the range `0 ... 1` as the [`UInt8`](../../../kernel/uint8.md) range `0 ... 255`.
 

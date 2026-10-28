@@ -5,7 +5,7 @@
 
 Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 
-#### Overview
+## Overview
 
 The `profiles` resource represents the provisioning profiles that allow you to install apps on your iOS devices or Mac. You can create and delete provisioning profiles, and download them to sign your code.
 

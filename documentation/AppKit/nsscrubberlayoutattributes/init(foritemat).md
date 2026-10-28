@@ -19,7 +19,7 @@ convenience init(forItemAt index: Int)
 + (instancetype) layoutAttributesForItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object configured for the specified index.
 

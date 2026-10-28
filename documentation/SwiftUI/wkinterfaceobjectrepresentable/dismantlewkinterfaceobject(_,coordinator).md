@@ -17,7 +17,7 @@ Cleans up the presented WatchKit interface object (and its coordinator) in antic
 @preconcurrency static func dismantleWKInterfaceObject(_ wkInterfaceObject: Self.WKInterfaceObjectType, coordinator: Self.Coordinator)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform additional clean-up work related to your custom interface object. For example, you might use this method to remove observers or update other parts of your SwiftUI interface.
 

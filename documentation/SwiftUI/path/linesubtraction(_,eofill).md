@@ -21,11 +21,11 @@ Returns a new path with a line from this path that does not overlap the filled r
 func lineSubtraction(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The line of the resulting path is the line of this path that does not overlap the filled region of `other`.
 

@@ -22,7 +22,7 @@ enum MPMediaGrouping
 enum MPMediaGrouping : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The following code snippet shows how to apply a grouping key:
 

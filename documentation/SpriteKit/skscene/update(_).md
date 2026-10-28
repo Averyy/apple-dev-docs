@@ -30,7 +30,7 @@ func update(_ currentTime: TimeInterval)
 - [Getting Started with Actions](../getting-started-with-actions.md)
 - [Responding to Frame-Cycle Events](../responding-to-frame-cycle-events.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. This is the first method called when animating the scene, before any actions are evaluated and before any physics are simulated.
 

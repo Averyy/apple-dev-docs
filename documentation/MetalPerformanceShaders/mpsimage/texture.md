@@ -24,7 +24,7 @@ var texture: any MTLTexture { get }
 @property (nonatomic, readonly, nonnull) id<MTLTexture> texture;
 ```
 
-#### Discussion
+## Discussion
 
 This is a 2D texture if `numberOfImages=1` and `featureChannels<=4`. It is a 2D texture array otherwise.
 

@@ -21,7 +21,7 @@ Adds a filter that applies to subsequent drawing operations.
 mutating func addFilter(_ filter: GraphicsContext.Filter, options: GraphicsContext.FilterOptions = FilterOptions())
 ```
 
-#### Discussion
+## Discussion
 
 To draw with filtering, SwiftUI:
 

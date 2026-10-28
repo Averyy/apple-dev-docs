@@ -15,7 +15,7 @@ A function the system calls when processing parameters change.
 typedef void (^)(const struct __CFArray *) VTRAWProcessingParameterChangeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this callback when available parameters or parameter values change without an explicit call to [`VTRAWProcessingSessionSetProcessingParameters`](./vtrawprocessingsessionsetprocessingparameters.md). This is intended to allow the client to update any UI driven by these parameters.
 

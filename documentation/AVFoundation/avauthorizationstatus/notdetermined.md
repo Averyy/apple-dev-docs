@@ -28,7 +28,7 @@ AVAuthorizationStatusNotDetermined
 
 - [Requesting authorization to capture and save media](../requesting-authorization-to-capture-and-save-media.md)
 
-#### Discussion
+## Discussion
 
 This is the default status prior to user to granting or denying recording priviledge to the app. Call [`requestAccess(for:completionHandler:)`](../avcapturedevice/requestaccess%28for,completionhandler%29.md) to prompt the user for permission.
 

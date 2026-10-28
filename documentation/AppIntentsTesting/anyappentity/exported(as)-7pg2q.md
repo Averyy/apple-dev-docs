@@ -21,11 +21,11 @@ Exports this entity as a transferable intent value type.
 func exported<T>(as type: T.Type) async throws -> T where T : IntentValueConvertible, T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the requested type.
 
-#### Discussion
+## Discussion
 
 Use this for types that conform to both `Transferable` and `IntentValueConvertible`, such as `IntentPerson`. The entity must declare a `ValueRepresentation` for the requested type.
 

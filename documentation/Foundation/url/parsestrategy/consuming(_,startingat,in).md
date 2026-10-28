@@ -21,11 +21,11 @@ Process the input string within the specified bounds, beginning at the given ind
 func consuming(_ input: String, startingAt index: String.Index, in bounds: Range<String.Index>) throws -> (upperBound: String.Index, output: URL)?
 ```
 
-#### Return Value
+## Return Value
 
 The upper bound where the match terminates and a matched instance, or `nil` if there isn’t a match.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Regular expression matching and capture calls it automatically when matching substrings.
 

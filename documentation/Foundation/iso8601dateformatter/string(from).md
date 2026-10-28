@@ -25,7 +25,7 @@ func string(from date: Date) -> String
 - (NSString *) stringFromDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string representing the date.
 

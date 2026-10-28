@@ -21,13 +21,13 @@ A repeatable user-defined action.
 typealias Event = Tips.Event
 ```
 
-#### Overview
+## Overview
 
 Use an event when you want to track an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](../tips/event/donate%28%29.md) to donate to the event when the action occurs, increasing the event count by one.
 
 > **Note**: In order to remain performant, by default events only query their most recent 1000 donations.
 
-##### Creating an event with no associated donation value
+### Creating an event with no associated donation value
 
 The example below creates a `landmarksAppDidOpen` event with no associated donation value and donates it anytime `ContentView` appears:
 
@@ -57,7 +57,7 @@ struct LandmarkFeatureTip: Tip {
 }
 ```
 
-##### Creating an event with an associated donation value
+### Creating an event with an associated donation value
 
 The example below creates a `didViewLandmarkDetail` event with an associated donation value and donates it anytime the `LandmarkDetail` appears:
 
@@ -96,7 +96,7 @@ struct LandmarkDetailTip: Tip {
 }
 ```
 
-##### Filtering an event’s donations
+### Filtering an event’s donations
 
 TipKit provides methods on `Sequence` for filtering an event’s donations within rule predicates.
 

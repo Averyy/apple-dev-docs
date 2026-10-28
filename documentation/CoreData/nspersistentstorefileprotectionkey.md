@@ -24,7 +24,7 @@ let NSPersistentStoreFileProtectionKey: String
 extern NSString * const NSPersistentStoreFileProtectionKey;
 ```
 
-#### Discussion
+## Discussion
 
 Backward compatibility may preclude some features. The acceptable values are those defined for the [`protectionKey`](../Foundation/fileattributekey/protectionkey.md). The default value is [`completeUntilFirstUserAuthentication`](../Foundation/fileprotectiontype/completeuntilfirstuserauthentication.md) for all applications built on or after iOS v5.0. The default value for all older applications is [`none`](../Foundation/fileprotectiontype/none.md).
 

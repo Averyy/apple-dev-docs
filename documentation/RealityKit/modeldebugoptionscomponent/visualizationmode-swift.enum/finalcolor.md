@@ -20,7 +20,7 @@ A mode that displays the entity’s calculated color, ignoring transparency.
 case finalColor
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `finalColor` to an entity to tell RealityKit to draw that entity’s calculated surface color with no transparency. This option causes RealityKit to render the object as if it were fully opaque. For entities that don’t use transparency, this option has no affect.
 

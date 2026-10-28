@@ -20,7 +20,7 @@ Detailed information about an item involved in a queue change.
 struct Item
 ```
 
-#### Overview
+## Overview
 
 Before you notify a participant about a queue-related change, create an item that contains the name of the song or container that changed. Use this item to configure a [`GroupSessionEvent.Action.QueueChange`](../queuechange.md) structure with additional details about the change.
 

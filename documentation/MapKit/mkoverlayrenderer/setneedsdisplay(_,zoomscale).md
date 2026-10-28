@@ -24,7 +24,7 @@ func setNeedsDisplay(_ mapRect: MKMapRect, zoomScale: MKZoomScale)
 - (void) setNeedsDisplayInMapRect:(MKMapRect) mapRect zoomScale:(MKZoomScale) zoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 Marking a rectangle as invalid causes that portion of the overlay to be redrawn during the next update cycle. This method invalidates the overlay only at the specified zoom scale.
 

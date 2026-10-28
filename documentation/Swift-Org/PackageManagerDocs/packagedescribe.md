@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Describe the current package.
 
-#### Overview
+## Overview
 
 ```
 package describe [--package-path=<package-path>]

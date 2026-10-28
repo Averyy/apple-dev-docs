@@ -25,7 +25,7 @@ var isForFoodEnergyUse: Bool { get set }
 @property (getter=isForFoodEnergyUse) BOOL forFoodEnergyUse;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the energy is used to measure food energy; otherwise, [`false`](../../Swift/false.md). If set to [`true`](../../Swift/true.md), [`EnergyFormatter.Unit.kilocalorie`](./unit/kilocalorie.md) may be represented using “C” instead of “kcal”. By default, this property returns [`false`](../../Swift/false.md).
 

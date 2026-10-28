@@ -24,7 +24,7 @@ var kAudioUnitProperty_TailTime: AudioUnitPropertyID { get }
 kAudioUnitProperty_TailTime
 ```
 
-#### Discussion
+## Discussion
 
 Indicates a time estimate, in seconds, between the last valid input being received by an audio unit and the audio unit’s output becoming silent. For example, a reverb unit’s tail time estimates the “decay” time. The tail time value is usually a conservative estimate that you can depend on.
 

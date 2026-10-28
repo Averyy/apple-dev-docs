@@ -25,7 +25,7 @@ func SparseGetTranspose(_ Subfactor: SparseOpaqueSubfactor_Float) -> SparseOpaqu
 static SparseOpaqueSubfactor_Float SparseGetTranspose(SparseOpaqueSubfactor_Float Subfactor);
 ```
 
-#### Return Value
+## Return Value
 
 An object equivalent to the transpose of the one you provide. Because this is a reference-counted subfactor, the system must free it through a call to [`SparseCleanup(_:)`](./sparsecleanup%28_%29-1mrmc.md) when it no longer needs it.
 

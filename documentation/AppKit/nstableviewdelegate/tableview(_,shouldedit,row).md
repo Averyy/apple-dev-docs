@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTabl
 - (BOOL) tableView:(NSTableView *) tableView shouldEditTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow editing the cell, [`false`](../../Swift/false.md) to deny editing.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow editing of specific cells.
 

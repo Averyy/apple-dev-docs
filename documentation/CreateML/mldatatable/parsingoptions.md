@@ -20,7 +20,7 @@ The options for parsing a comma-separated values (CSV) file into a data table fo
 struct ParsingOptions
 ```
 
-#### Overview
+## Overview
 
 Use `ParsingOptions` only when importing a CSV file with [`init(contentsOf:options:)`](./init%28contentsof,options%29.md), especially if your CSV file has special formatting or your data table only needs to import specific rows or columns.
 

@@ -20,11 +20,11 @@ Declare a test parameterized over two zipped collections of values.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Test<C1, C2>(_ displayName: String? = nil, _ traits: any TestTrait..., arguments zippedCollections: Zip2Sequence<C1, C2>) where C1 : Collection, C1 : Sendable, C2 : Collection, C2 : Sendable, C1.Element : Sendable, C2.Element : Sendable
+@attached(peer)
+macro Test<C1, C2>(_ displayName: String? = nil, _ traits: any TestTrait..., arguments zippedCollections: Zip2Sequence<C1, C2>) where C1 : Collection, C1 : Sendable, C2 : Collection, C2 : Sendable, C1.Element : Sendable, C2.Element : Sendable
 ```
 
-#### Overview
+## Overview
 
 You can prefix the expression you pass to `zippedCollections` with `try` or `await`. The testing library evaluates the expression lazily only if it determines that the associated test will run. During testing, the testing library calls the associated test function once for each element in `zippedCollections`.
 

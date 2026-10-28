@@ -26,7 +26,7 @@ var sessionMode: GKSessionMode { get }
 @property (readonly) GKSessionMode sessionMode;
 ```
 
-#### Discussion
+## Discussion
 
 The session mode changes the behavior of the session when [`isAvailable`](./isavailable.md) is set to [`true`](../../Swift/true.md).
 

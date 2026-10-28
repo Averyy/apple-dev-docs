@@ -25,11 +25,11 @@ init(asset: AVAsset, applyingCIFiltersWithHandler applier: @escaping @Sendable (
 + (AVMutableVideoComposition *) videoCompositionWithAsset:(AVAsset *) asset applyingCIFiltersWithHandler:(void (^)(AVAsynchronousCIImageFilteringRequest *request)) applier;
 ```
 
-#### Return Value
+## Return Value
 
 A new video composition object.
 
-#### Discussion
+## Discussion
 
 To process video frames using Core Image filters—whether for display or export—create a composition with this method. AVFoundation calls your applier block once for each frame to be displayed (or processed for export) from the asset’s first enabled video track. In that block, you access the video frame and return a filtered result using the provided [`AVAsynchronousCIImageFilteringRequest`](../avasynchronousciimagefilteringrequest.md) object. Use that object’s [`sourceImage`](../avasynchronousciimagefilteringrequest/sourceimage.md) property to get the video frame in the form of a CIImage object you can apply filters to. Pass the result of your filters to the `request` object’s [`finish(with:context:)`](../avasynchronousciimagefilteringrequest/finish%28with,context%29.md) method. (If your filter rendering fails, call the `request` object’s [`finish(with:)`](../avasynchronousciimagefilteringrequest/finish%28with%29.md) method if you cannot apply filters.)
 

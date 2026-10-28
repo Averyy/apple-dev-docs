@@ -24,7 +24,7 @@ var settlingDuration: CFTimeInterval { get }
 @property (readonly) CFTimeInterval settlingDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The duration is evaluated for the current animation parameters and may not the same as the [`duration`](../camediatiming/duration.md).
 

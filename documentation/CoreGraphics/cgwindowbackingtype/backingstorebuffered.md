@@ -18,7 +18,7 @@ case backingStoreBuffered
 kCGBackingStoreBuffered
 ```
 
-#### Discussion
+## Discussion
 
 The window draws into a display buffer and then flushes that buffer to the screen.
 

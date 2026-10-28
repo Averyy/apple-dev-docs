@@ -19,7 +19,7 @@ Sets the completion handler that the system calls when the user selects a device
 
 - [Connecting a tvOS app to other devices over the local network](../connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
 
-#### Discussion
+## Discussion
 
 The system calls this block after the user selects a device from the endpoint picker view. If the user cancels the view, the picker silently closes.
 

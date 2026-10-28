@@ -20,11 +20,11 @@ func SecTaskCopyValueForEntitlement(_ task: SecTask, _ entitlement: CFString, _ 
 CFTypeRefSecTaskCopyValueForEntitlement(SecTaskRef task, CFStringRef entitlement, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the specified entitlement for the process or `NULL` if the entitlement value could not be retrieved. The type of the returned value depends on the entitlement specified. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 An empty return value may indicate an error, or it may indicate that the entitlement is simply not present.  In the latter case, no error is returned.
 

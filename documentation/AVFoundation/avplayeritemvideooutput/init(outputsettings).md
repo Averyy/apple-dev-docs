@@ -24,7 +24,7 @@ init(outputSettings: [String : any Sendable]?)
 - (instancetype) initWithOutputSettings:(NSDictionary<NSString *,id> *) outputSettings;
 ```
 
-#### Discussion
+## Discussion
 
 For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/CVPixelBuffer.h>`. In addition to the keys in `CVPixelBuffer.h`, uncompressed video settings dictionaries may also provide a value for [`AVVideoAllowWideColorKey`](../avvideoallowwidecolorkey.md).
 

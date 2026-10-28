@@ -24,7 +24,7 @@ Sets a callback to invoke when the channel terminated.
 func setOnTerminationCallback(_ callback: (@Sendable () -> Void)?)
 ```
 
-#### Discussion
+## Discussion
 
 This is called after the last element has been consumed by the channel. If the channel has already terminated this callback is called immediately.
 

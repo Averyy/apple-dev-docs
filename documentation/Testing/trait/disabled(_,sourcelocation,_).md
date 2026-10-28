@@ -25,7 +25,7 @@ static func disabled(_ comment: Comment? = nil, sourceLocation: SourceLocation =
 
 Available when `Self` is `ConditionTrait`.
 
-#### Return Value
+## Return Value
 
 An instance of [`ConditionTrait`](../conditiontrait.md) that evaluates the specified closure.
 

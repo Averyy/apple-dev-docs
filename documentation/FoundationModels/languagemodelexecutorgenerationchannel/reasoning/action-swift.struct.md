@@ -20,7 +20,7 @@ An operation that can be performed on a reasoning entry.
 struct Action
 ```
 
-#### Overview
+## Overview
 
 `Action` is an enum-like struct; construct one with a leading-dot factory such as [`appendText(_:segmentID:tokenCount:)`](./action-swift.struct/appendtext%28_,segmentid,tokencount%29.md).
 

@@ -15,7 +15,7 @@ Determine if the filesystem to which a vnode belongs is marked as ready to inter
 int vnode_vfs64bitready(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if filesystem is marked ready for 64-bit interactions; 0 otherwise.
 

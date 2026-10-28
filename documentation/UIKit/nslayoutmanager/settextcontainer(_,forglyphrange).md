@@ -23,7 +23,7 @@ func setTextContainer(_ container: NSTextContainer, forGlyphRange glyphRange: NS
 - (void) setTextContainer:(NSTextContainer *) container forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 The layout within the container is specified with the [`setLineFragmentRect(_:forGlyphRange:usedRect:)`](./setlinefragmentrect%28_,forglyphrange,usedrect%29.md) and [`setLocation(_:forStartOfGlyphRange:)`](./setlocation%28_,forstartofglyphrange%29.md) methods.
 

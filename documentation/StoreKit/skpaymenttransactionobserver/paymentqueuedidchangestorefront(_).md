@@ -27,7 +27,7 @@ optional func paymentQueueDidChangeStorefront(_ queue: SKPaymentQueue)
 - (void) paymentQueueDidChangeStorefront:(SKPaymentQueue *) queue;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SKStorefront`](../skstorefront.md) for more information.
 

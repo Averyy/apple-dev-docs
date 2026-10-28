@@ -21,7 +21,7 @@ Animated artwork for the media item with video and preview support.
 struct AnimatedArtwork
 ```
 
-#### Overview
+## Overview
 
 The following example shows how to attach animated artwork to a content value:
 

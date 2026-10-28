@@ -19,7 +19,7 @@ func performMiniaturize(_ sender: Any?)
 - (void) performMiniaturize:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the window doesn’t have a minimize button or can’t be minimized for some reason, the system emits the alert sound.
 

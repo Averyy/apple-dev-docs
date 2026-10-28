@@ -16,7 +16,7 @@ Sets matching criteria for input values received via IOHIDManagerRegisterInputVa
 void IOHIDManagerSetInputValueMatching(IOHIDManagerRef manager, CFDictionaryRef matching);
 ```
 
-#### Discussion
+## Discussion
 
 Matching keys are prefixed by kIOHIDElement and declared in <IOKit/hid/IOHIDKeys.h>. Passing a NULL dictionary will result in all devices being enumerated. Any subsequent calls will cause the hid manager to release previously matched input elements and restart the matching process using the revised criteria. If interested in multiple, specific device elements, please defer to using IOHIDManagerSetInputValueMatchingMultiple.
 

@@ -24,7 +24,7 @@ static let sleepChanges: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSleepChanges;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValuePresence`](../hkcategoryvaluepresence.md) enumeration.
 

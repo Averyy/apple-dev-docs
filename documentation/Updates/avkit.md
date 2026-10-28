@@ -5,13 +5,13 @@
 
 Learn about important changes to AVKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [AVKit](../AVKit/AVKit.md).
 
-#### September 2026
+## September 2026
 
-##### Camera facing direction
+### Camera facing direction
 
 - Determine the direction a capture device faces in relation to a view, and get updated each time that direction changes, using [`AVCaptureDeviceDirectionCoordinator`](../AVKit/avcapturedevicedirectioncoordinator.md).
 - Create a coordinator with [`init(view:deviceTypes:changeHandler:)`](../AVKit/avcapturedevicedirectioncoordinator/init%28view,devicetypes,changehandler%29.md), specifying the view and the device types to monitor. Read [`deviceDirections`](../AVKit/avcapturedevicedirectioncoordinator/devicedirections.md) for the current state, or supply a change handler to learn about later changes.

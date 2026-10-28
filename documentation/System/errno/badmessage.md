@@ -25,7 +25,7 @@ static var badMessage: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The message to be received is inappropriate for the attempted operation.
 

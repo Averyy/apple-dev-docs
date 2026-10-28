@@ -14,7 +14,7 @@ A Boolean that indicates whether the app supports ephemeral browsing when conduc
 - **Name**: `EphemeralBrowserSessionIsSupported` (Ephemeral Browser Session Is Supported)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `YES` to indicate that your browser app, when handling authentication requests, offers ephemeral browsing.
 

@@ -40,7 +40,7 @@ extern bool ABGroupAddMember(ABRecordRef group, ABRecordRef person, CFErrorRef*e
 extern bool ABGroupAddMember(ABGroupRef group, ABPersonRef personToAdd);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessful, false otherwise. For example, if `person` isalready in `group`, this function doesnothing but returns `false`.
 

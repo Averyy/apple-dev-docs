@@ -19,7 +19,7 @@ func state() -> Int
 - (NSInteger) state;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOnState` if the control is on; `NSOffState` otherwise.
 

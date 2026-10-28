@@ -21,7 +21,7 @@ Creates an attributed string by looking up a localized string from the app’s b
 init(localized key: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions = [], table: String? = nil, bundle: Bundle? = nil, locale: Locale? = nil, comment: StaticString? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer instead of [`init(localized:options:table:bundle:locale:comment:)`](./init%28localized,options,table,bundle,locale,comment%29-8dlnl.md) if you prefer to use a symbolic string key, rather than use the development language’s string as the key.
 

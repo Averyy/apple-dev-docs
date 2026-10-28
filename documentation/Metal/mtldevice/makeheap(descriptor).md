@@ -25,11 +25,11 @@ func makeHeap(descriptor: MTLHeapDescriptor) -> (any MTLHeap)?
 - (id<MTLHeap>) newHeapWithDescriptor:(MTLHeapDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLHeap`](../mtlheap.md) instance if the method completed successfully; otherwise nil.
 
-#### Discussion
+## Discussion
 
 For more information about using heaps, see [Memory heaps](../memory-heaps.md).
 

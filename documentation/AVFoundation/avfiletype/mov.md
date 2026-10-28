@@ -25,7 +25,7 @@ static let mov: AVFileType
 extern AVFileType const AVFileTypeQuickTimeMovie;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.apple.quicktime-movie`. Files of this type have a `.mov` or `.qt` extension.
 

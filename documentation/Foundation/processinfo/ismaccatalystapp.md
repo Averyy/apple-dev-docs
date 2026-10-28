@@ -25,7 +25,7 @@ var isMacCatalystApp: Bool { get }
 @property (readonly, getter=isMacCatalystApp) BOOL macCatalystApp;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the process is:
 

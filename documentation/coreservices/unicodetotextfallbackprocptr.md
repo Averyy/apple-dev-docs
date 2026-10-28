@@ -16,11 +16,11 @@ Defines a pointer to a function that convertsa Unicode text element for which th
 typedef OSStatus (*UnicodeToTextFallbackProcPtr)(UniChar *iSrcUniStr, ByteCount iSrcUniStrLen, ByteCount *oSrcConvLen, TextPtr oDestStr, ByteCount iDestStrLen, ByteCount *oDestConvLen, LogicalAddress iInfoPtr, ConstUnicodeMappingPtr iUnicodeMappingPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). Your handler should return `noErr` ifit can handle the fallback, or `kTECUnmappableElementErr` ifit cannot. It can return other errors for exceptional conditions,such as when the output buffer is too small. If your handler returns `kTECUnmappableElementErr`,then `oSrcConvLen` and `oDestConvLen` areignored because either the default handler will be called or thedefault fallback sequence will be used.
 
-#### Discussion
+## Discussion
 
 The Unicode Converter calls your fallback handler when itcannot convert a text string using the mapping table specified bythe Unicode converter object passed to either `ConvertFromUnicodeToText` or `ConvertFromUnicodeToPString`.The control flags you set for the `controlFlags` parameterof the function [`SetFallbackUnicodeToText`](./api-1433614-setfallbackunicodetotext.md) orthe [`SetFallbackUnicodeToTextRun`](./api-1433644-setfallbackunicodetotextrun.md) stipulatewhich fallback handler the Unicode Converter should call and whichone to try first if both can be used. 
 

@@ -17,11 +17,11 @@ Shift the zero-frequency component to the center of the spectrum.
 static func fftshift(_ array: MLXArray, axes: [Int]? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The shifted array
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](../mlxfft.md)
 

@@ -30,7 +30,7 @@ func canRequestDocument(_ descriptor: any PKIdentityDocumentDescriptor) async ->
 
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
-#### Discussion
+## Discussion
 
 This method checks whether you have the correct entitlements and if the device has an ID in the Wallet app.
 

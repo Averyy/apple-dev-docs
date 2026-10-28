@@ -15,7 +15,7 @@ A rectangular geographic region that centers around a latitude and longitude coo
 constructor(center?: CoordinateData, span?: CoordinateSpanData);
 ```
 
-#### Discussion
+## Discussion
 
 Create a coordinate region by passing a center coordinate and span to the constructor.
 

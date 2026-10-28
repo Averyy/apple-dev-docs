@@ -22,7 +22,7 @@ The visibility of a UI element, chosen automatically based on the platform, curr
 enum Visibility
 ```
 
-#### Overview
+## Overview
 
 For example, the preferred visibility of list row separators can be configured using the [`listRowSeparator(_:edges:)`](./view/listrowseparator%28_,edges%29.md).
 

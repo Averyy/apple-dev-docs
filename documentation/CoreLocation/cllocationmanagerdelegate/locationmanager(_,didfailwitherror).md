@@ -25,7 +25,7 @@ optional func locationManager(_ manager: CLLocationManager, didFailWithError err
 - (void) locationManager:(CLLocationManager *) manager didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, Core Location throws an exception when attempting to use location services.
 

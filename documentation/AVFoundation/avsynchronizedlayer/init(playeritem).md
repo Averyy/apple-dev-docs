@@ -24,7 +24,7 @@ init(playerItem: AVPlayerItem)
 + (AVSynchronizedLayer *) synchronizedLayerWithPlayerItem:(AVPlayerItem *) playerItem;
 ```
 
-#### Return Value
+## Return Value
 
 A new synchronized layer with timing synchronized with `playerItem`.
 

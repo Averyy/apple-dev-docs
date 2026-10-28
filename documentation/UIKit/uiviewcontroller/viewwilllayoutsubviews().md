@@ -28,7 +28,7 @@ func viewWillLayoutSubviews()
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 - [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
-#### Discussion
+## Discussion
 
 When a view’s bounds change, the view adjusts the position of its subviews. Your view controller can override this method to make changes before the view lays out its subviews. The default implementation of this method does nothing.
 

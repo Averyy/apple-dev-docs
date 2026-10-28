@@ -25,11 +25,11 @@ subscript(key: Any) -> Any? { get }
 - (id) objectForKeyedSubscript:(id) key;
 ```
 
-#### Return Value
+## Return Value
 
 An object containing the value of the shader symbol.
 
-#### Discussion
+## Discussion
 
 This method returns an object appropriate to the type of the shader symbol being set. For example, retrieving the value of a `float` uniform variable returns an [`NSNumber`](../../Foundation/nsnumber.md) object, and retrieving the value of a GLSL `vec3` uniform variable or Metal `float3` variable returns an [`NSValue`](../../Foundation/nsvalue.md) object containing an [`SCNVector3`](../scnvector3.md) structure.
 

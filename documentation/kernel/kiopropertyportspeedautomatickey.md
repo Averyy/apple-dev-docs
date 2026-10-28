@@ -14,7 +14,7 @@
 #define kIOPropertyPortSpeedAutomaticKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Automatic for the key kIOPropertyPortSpeedKey. If the speed of the port is automatically adjusted by the host/device and a definitive speed is not known, this key should be used.
 

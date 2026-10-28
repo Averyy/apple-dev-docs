@@ -19,11 +19,11 @@ func makeDocument(withContentsOf url: URL, ofType typeName: String) throws -> NS
 - (NSDocument *) makeDocumentWithContentsOfURL:(NSURL *) url ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created [`NSDocument`](../nsdocument.md) object, or `nil` if the document could not be created.
 
-#### Discussion
+## Discussion
 
 The URL is specified by `absoluteURL` and the document type by `typeName`. If not successful, the method returns `nil` after setting `outError` to point to an NSError that encapsulates the reason why the document could not be instantiated. The default implementation of this method calls [`documentClass(forType:)`](./documentclass%28fortype%29.md) to find out the class of document to instantiate, allocates a document object, and initializes it by sending it an [`init(contentsOf:ofType:)`](../nsdocument/init%28contentsof,oftype%29.md) message.
 

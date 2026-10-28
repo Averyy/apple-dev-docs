@@ -25,7 +25,7 @@ case failureBillNotFound
 INSearchForBillsIntentResponseCodeFailureBillNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the search yielded no results.
 

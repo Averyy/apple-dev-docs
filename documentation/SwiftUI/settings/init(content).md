@@ -16,7 +16,7 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Use `Settings(content:)` to add a preferences scene when you declare your app using the [`App`](../app.md) protocol.
 

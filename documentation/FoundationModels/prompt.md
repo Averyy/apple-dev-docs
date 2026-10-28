@@ -25,7 +25,7 @@ struct Prompt
 - [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
 - [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
 
-#### Overview
+## Overview
 
 Prompts can contain content written by you, an outside source, or input directly from people using your app. You can initialize a `Prompt` from a string literal:
 

@@ -5,7 +5,7 @@
 
 Send data to another media handler instead of presenting media directly.
 
-#### Overview
+## Overview
 
 QuickTime 2.1 added additional functionality for media handlers. By way of modifier tracks, a media handler can send its data to another media handler rather than presenting its media directly. See [Modifier tracks](./modifier_tracks.md) for a complete discussion of this feature.
 

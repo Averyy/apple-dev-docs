@@ -19,11 +19,11 @@ func withAlphaComponent(_ alpha: CGFloat) -> NSColor
 - (NSColor *) colorWithAlphaComponent:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSColor` object. If the receiver’s color space doesn’t include an alpha component, the receiver is returned.
 
-#### Discussion
+## Discussion
 
 A subclass with explicit opacity components should override this method to return a color with the specified alpha.
 

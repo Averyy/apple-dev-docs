@@ -24,7 +24,7 @@ init?(identifier: String?, forPlayer playerID: String)
 - (instancetype) initWithIdentifier:(NSString *) identifier forPlayer:(NSString *) playerID;
 ```
 
-#### Discussion
+## Discussion
 
 Your game initializes a new achievement object for a specific player only when it has not previously reported progress for that achievement. Use this method to submit a participant’s achievement when ending a turn-based match.
 

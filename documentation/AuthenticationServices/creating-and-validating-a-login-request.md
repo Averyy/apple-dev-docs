@@ -5,7 +5,7 @@
 
 Create a signed JOSE login request.
 
-#### Overview
+## Overview
 
 Your login configuration instructs Platform SSO how to create and validate a login request based on the authentication method. This article provides a description of the parameters that the system uses to create and send a login request, followed by code snippet examples of login requests for each authentication method.
 
@@ -13,7 +13,7 @@ The login request is a JSON Object Signing and Encryption object (JOSE) that’s
 
 For more information, see [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md).
 
-##### Create the login request
+### Create the login request
 
 The following table specifies the header parameters that the system uses to create a login request:
 
@@ -75,7 +75,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version=1.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogI...A063Eg
 ```
 
-##### Validate the login request
+### Validate the login request
 
 The identity provider (IdP) needs to validate the login request by performing several checks to verify that the:
 
@@ -98,7 +98,7 @@ If the `grant_type` is `urn:ietf:params:oauth:grant-type:jwt-bearer,` the IdP ne
 - `audience` is the IdP.
 - `nonce` matches the login request, if included.
 
-##### Create a login request with a password
+### Create a login request with a password
 
 The following code provides an example of a login request with a password:
 
@@ -139,7 +139,7 @@ The following code provides an example of a login request with a password:
 }.[Signature]
 ```
 
-##### Create a login request with an encrypted password
+### Create a login request with an encrypted password
 
 The following code provides an example of a login request with an encrypted password:
 
@@ -180,7 +180,7 @@ The following code provides an example of a login request with an encrypted pass
 }.[Signature]
 ```
 
-##### Create a login request with a secure enclave key
+### Create a login request with a secure enclave key
 
 The following code provides an example of a login request with a secure enclave key:
 
@@ -221,7 +221,7 @@ The following code provides an example of a login request with a secure enclave 
 }.[Signature]
 ```
 
-##### Create a login request with a SmartCard
+### Create a login request with a SmartCard
 
 The following code provides an example of a login request with a SmartCard:
 

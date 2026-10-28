@@ -27,7 +27,7 @@ class NEDNSProxyProvider
 
 - [Handling Flow Copying](./handling-flow-copying.md)
 
-#### Overview
+## Overview
 
 A DNS proxy allows your app to intercept all DNS traffic generated on a device. You can use this capability to provide services like DNS traffic encryption, typically by redirecting DNS traffic to your own server. You usually do this in the context of managed devices, such as those owned by a school or an enterprise.
 

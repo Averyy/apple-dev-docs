@@ -28,13 +28,13 @@ class INSearchForMediaIntent
 
 - [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Overview
+## Overview
 
 The system creates an [`INSearchForMediaIntent`](./insearchformediaintent.md) object when the user asks Siri to search for a media item, or searches for a musician or band in Spotlight.
 
 To handle this intent, provide a handler that conforms to the [`INSearchForMediaIntentHandling`](./insearchformediaintenthandling.md) protocol. Your handler should confirm the request and create an [`INSearchForMediaIntentResponse`](./insearchformediaintentresponse.md) object with the media to search for.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

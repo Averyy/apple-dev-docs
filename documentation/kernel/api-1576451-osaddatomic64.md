@@ -15,7 +15,7 @@
 SInt64 OSAddAtomic64(SInt64 theAmount, volatile SInt64 *address);
 ```
 
-#### Discussion
+## Discussion
 
 See OSAddAtomic.
 

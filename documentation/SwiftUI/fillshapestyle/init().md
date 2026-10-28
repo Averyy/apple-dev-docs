@@ -22,7 +22,7 @@ An overlay fill style for filling shapes.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This shape style is appropriate for items situated on top of an existing background color. It incorporates transparency to allow the background color to show through.
 

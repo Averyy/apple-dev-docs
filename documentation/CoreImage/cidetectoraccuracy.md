@@ -24,7 +24,7 @@ let CIDetectorAccuracy: String
 extern NSString * const CIDetectorAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with the key should be one of the values found in [Detector Accuracy Options](./detector-accuracy-options.md).
 

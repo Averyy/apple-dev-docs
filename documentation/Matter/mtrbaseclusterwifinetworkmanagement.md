@@ -25,7 +25,7 @@ class MTRBaseClusterWiFiNetworkManagement
 @interface MTRBaseClusterWiFiNetworkManagement : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Functionality to retrieve operational information about a managed Wi-Fi network.
 

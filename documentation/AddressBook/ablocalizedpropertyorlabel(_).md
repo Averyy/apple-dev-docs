@@ -19,7 +19,7 @@ func ABLocalizedPropertyOrLabel(_ propertyOrLabel: String!) -> String!
 NSString *ABLocalizedPropertyOrLabel(NSString *propertyOrLabel);
 ```
 
-#### Discussion
+## Discussion
 
 The `propertyOrLabel` argument is the property, label, or key you wish to localize. Returns `propertyOrLabel` if a localized string can not be found
 

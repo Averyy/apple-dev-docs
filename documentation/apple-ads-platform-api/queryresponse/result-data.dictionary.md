@@ -15,7 +15,7 @@ The untyped placeholder item shape for the base `QueryResponse` envelope’s `re
 object QueryResponse.Result
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryResponse` object is a generic envelope meant to be extended, so its `result` array has no properties defined here. Concrete query responses, such as `CampaignQueryResponse` or `KeywordQueryResponse`, declare their own `result` array typed to the resource they return. No endpoint returns this untyped shape directly.
 

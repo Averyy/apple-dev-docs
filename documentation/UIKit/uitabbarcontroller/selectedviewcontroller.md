@@ -23,7 +23,7 @@ unowned(unsafe) var selectedViewController: UIViewController? { get set }
 @property (nonatomic, assign, nullable) UIViewController * selectedViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This view controller is the one whose custom view is currently displayed by the tab bar interface. The specified view controller must be in the [`viewControllers`](./viewcontrollers.md) array. Assigning a new view controller to this property changes the currently displayed view and also selects an appropriate tab in the tab bar. Changing the view controller also updates the [`selectedIndex`](./selectedindex.md) property accordingly. The default value of this property is `nil`.
 

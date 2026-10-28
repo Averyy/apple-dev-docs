@@ -16,7 +16,7 @@ Returns an array of formats that the layer supports for its color textures
 func supportedColorFormats(options: LayerRenderer.Capabilities.SupportedColorFormatsOptions) -> [MTLPixelFormat]
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to determine which pixel arrangements and characteristics the layer supports for its color textures.
 

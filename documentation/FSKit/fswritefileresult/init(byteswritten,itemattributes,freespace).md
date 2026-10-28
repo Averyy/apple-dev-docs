@@ -19,7 +19,7 @@ init?(bytesWritten actuallyWritten: Int, itemAttributes attributes: FSItem.Attri
 - (instancetype) initWithBytesWritten:(size_t) actuallyWritten itemAttributes:(FSItemAttributes *) attributes freeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

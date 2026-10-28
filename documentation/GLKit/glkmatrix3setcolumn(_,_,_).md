@@ -22,7 +22,7 @@ func GLKMatrix3SetColumn(_ matrix: GLKMatrix3, _ column: Int32, _ vector: GLKVec
 static GLKMatrix3 GLKMatrix3SetColumn(GLKMatrix3 matrix, int column, GLKVector3 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

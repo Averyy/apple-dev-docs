@@ -23,7 +23,7 @@ func starts(with regex: some RegexComponent) -> Bool
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 `true` if the initial elements of the sequence matches the beginning of `regex`; otherwise, `false`.
 

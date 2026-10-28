@@ -19,7 +19,7 @@ func clearStart()
 - (void) clearStartAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 The linkage to the other animation is made with [`start(when:reachesProgress:)`](./start%28when,reachesprogress%29.md).
 

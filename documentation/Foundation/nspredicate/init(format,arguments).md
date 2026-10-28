@@ -25,11 +25,11 @@ init(format predicateFormat: String, arguments argList: CVaListPointer)
 + (NSPredicate *) predicateWithFormat:(NSString *) predicateFormat arguments:(va_list) argList;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate by substituting the values in `argList` into `predicateFormat` and parsing the result.
 
-#### Discussion
+## Discussion
 
 For details of the format of the format string and of limitations on variable substitution, see [Predicate Format String Syntax](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pSyntax.html#//apple_ref/doc/uid/TP40001795).
 

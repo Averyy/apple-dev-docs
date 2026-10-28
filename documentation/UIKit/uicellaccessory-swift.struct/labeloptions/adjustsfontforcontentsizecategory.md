@@ -19,7 +19,7 @@ A Boolean value that determines whether the label automatically adjusts its font
 var adjustsFontForContentSizeCategory: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../../Swift/true.md).
 

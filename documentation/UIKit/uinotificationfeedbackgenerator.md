@@ -22,7 +22,7 @@ class UINotificationFeedbackGenerator
 @interface UINotificationFeedbackGenerator : UIFeedbackGenerator
 ```
 
-#### Overview
+## Overview
 
 Use notification feedback to communicate that a task or action succeeded, failed, or produced a warning of some kind.
 

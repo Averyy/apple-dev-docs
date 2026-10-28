@@ -19,7 +19,7 @@ static let findPboard: NSPasteboard.Name
 extern NSPasteboardName NSFindPboard;
 ```
 
-#### Discussion
+## Discussion
 
 This information permits users to enter a search string into the find panel, then switch to another application to conduct another search.
 

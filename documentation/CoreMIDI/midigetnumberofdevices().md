@@ -23,7 +23,7 @@ func MIDIGetNumberOfDevices() -> Int
 extern ItemCount MIDIGetNumberOfDevices();
 ```
 
-#### Return Value
+## Return Value
 
 The number of devices in the system, or 0 if an error occurred.
 

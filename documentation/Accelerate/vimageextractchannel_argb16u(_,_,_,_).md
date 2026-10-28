@@ -25,11 +25,11 @@ func vImageExtractChannel_ARGB16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: U
 vImage_Error vImageExtractChannel_ARGB16U(const vImage_Buffer *src, const vImage_Buffer *dest, long channelIndex, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code extracts channel `1` from the source buffer and writes the result to the destination buffer:
 

@@ -25,7 +25,7 @@ static var sphericalCoordinates: AudioChannelFlags { get }
 kAudioChannelFlags_SphericalCoordinates
 ```
 
-#### Discussion
+## Discussion
 
 This flag is mutually exclusive with [`rectangularCoordinates`](./rectangularcoordinates.md).
 

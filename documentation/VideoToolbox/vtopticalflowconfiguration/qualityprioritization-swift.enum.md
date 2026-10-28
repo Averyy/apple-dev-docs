@@ -22,7 +22,7 @@ enum QualityPrioritization
 enum VTOpticalFlowConfigurationQualityPrioritization : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 See VEFrameRateConversionConfigurationQualityPrioritization for more info.
 

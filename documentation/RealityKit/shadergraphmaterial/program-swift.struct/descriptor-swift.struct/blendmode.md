@@ -20,7 +20,7 @@ How materials using this program blend with content behind them.
 var blendMode: MaterialParameterTypes.BlendMode?
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the material renders opaque.
 

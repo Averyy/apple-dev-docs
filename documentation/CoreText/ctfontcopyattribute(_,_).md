@@ -25,11 +25,11 @@ func CTFontCopyAttribute(_ font: CTFont, _ attribute: CFString) -> CFTypeRef?
 extern CFTypeRefCTFontCopyAttribute(CTFontRef font, CFStringRef attribute);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to an arbitrary attribute or `NULL` if the requested attribute is not present.
 
-#### Discussion
+## Discussion
 
 Refer to the attribute definitions documentation for information as to how each attribute is packaged as a `CFType`.
 

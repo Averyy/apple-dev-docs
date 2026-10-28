@@ -20,7 +20,7 @@ class AMWorkflowController
 @interface AMWorkflowController : NSController
 ```
 
-#### Overview
+## Overview
 
 A controller can run and stop a workflow and obtain information about its state. The controller’s delegate ([`AMWorkflowControllerDelegate`](./amworkflowcontrollerdelegate.md)) receives messages as the workflow is executed and its actions are run.
 

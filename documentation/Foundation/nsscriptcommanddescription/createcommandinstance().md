@@ -20,7 +20,7 @@ func createCommandInstance() -> NSScriptCommand
 - (NSScriptCommand *) createCommandInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The command object, instantiated from [`NSScriptCommand`](../nsscriptcommand.md) or a subclass.
 

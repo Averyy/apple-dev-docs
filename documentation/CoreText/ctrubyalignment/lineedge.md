@@ -25,7 +25,7 @@ case lineEdge
 kCTRubyAlignmentLineEdge
 ```
 
-#### Discussion
+## Discussion
 
 If the ruby text is adjacent to a line edge, Core Text aligns the end of the ruby text adjacent to the line edge to that line edge. This only applies if the width of the ruby text is greater than the width of the base text; otherwise, the alignment is [`CTRubyAlignment.auto`](./auto.md).
 

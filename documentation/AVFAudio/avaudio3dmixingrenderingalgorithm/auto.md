@@ -24,7 +24,7 @@ case auto
 AVAudio3DMixingRenderingAlgorithmAuto
 ```
 
-#### Discussion
+## Discussion
 
 This selects the highest-quality rendering algorithm available for the current playback hardware.
 

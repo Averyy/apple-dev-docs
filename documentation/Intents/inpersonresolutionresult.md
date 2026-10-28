@@ -28,7 +28,7 @@ class INPersonResolutionResult
 
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 An [`INPersonResolutionResult`](./inpersonresolutionresult.md) object is what you return when resolving parameters containing an [`INPerson`](./inperson.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

@@ -25,7 +25,7 @@ var url: URL? { get set }
 @property (strong, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 To alter the location of a store, send the persistent store coordinator a [`setURL(_:for:)`](../nspersistentstorecoordinator/seturl%28_,for%29.md) message.
 

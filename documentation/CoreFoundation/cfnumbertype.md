@@ -25,7 +25,7 @@ enum CFNumberType
 enum CFNumberType : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 The type specified in the call to [`CFNumberCreate(_:_:_:)`](./cfnumbercreate%28_,_,_%29.md) is not necessarily preserved when creating a new CFNumber object. A CFNumber object uses whatever internal storage type the creation function deems appropriate. Use the [`CFNumberGetType(_:)`](./cfnumbergettype%28_%29.md) function to find out what type the CFNumber object used to store your value.
 

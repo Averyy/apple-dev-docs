@@ -21,7 +21,7 @@ class let currentControlTintDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSControlTintDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is `NSApp`. This notification does not contain a `userInfo` dictionary.
 

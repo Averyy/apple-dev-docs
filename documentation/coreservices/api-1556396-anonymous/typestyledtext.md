@@ -14,7 +14,7 @@
 typeStyledText = 'STXT'
 ```
 
-#### Discussion
+## Discussion
 
 Text that includes style information.
 

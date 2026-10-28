@@ -18,7 +18,7 @@ var FFERR_INTERNAL: Int { get }
 #define FFERR_INTERNAL
 ```
 
-#### Discussion
+## Discussion
 
 The IOForceFededbackLib driver has detected an internal fault. Often this occurs because of an unexpected internal code path.
 

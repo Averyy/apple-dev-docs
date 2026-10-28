@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, shouldSelectCandidateAt index: In
 - (BOOL) textView:(NSTextView *) textView shouldSelectCandidateAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the framework selects the text.
 

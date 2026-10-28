@@ -14,9 +14,9 @@ List the video assets in an app’s asset library.
 - [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
 - [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

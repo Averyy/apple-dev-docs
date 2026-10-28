@@ -21,7 +21,7 @@ A base type that represents image data.
 extern UTType * const UTTypeImage;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.image`.
 

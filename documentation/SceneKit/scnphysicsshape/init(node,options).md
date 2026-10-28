@@ -25,11 +25,11 @@ convenience init(node: SCNNode, options: [SCNPhysicsShape.Option : Any]? = nil)
 + (instancetype) shapeWithNode:(SCNNode *) node options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics shape object.
 
-#### Discussion
+## Discussion
 
 To use the newly created physics shape, create a physics body with the the [`init(type:shape:)`](../scnphysicsbody/init%28type,shape%29.md) method, or assign the shape to the [`physicsShape`](../scnphysicsbody/physicsshape.md) property of an existing body.
 

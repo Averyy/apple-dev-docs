@@ -23,7 +23,7 @@ protocol UIToolbarDelegate : UIBarPositioningDelegate
 @protocol UIToolbarDelegate <UIBarPositioningDelegate>
 ```
 
-#### Overview
+## Overview
 
 This protocol declares no methods of its own, but conforms to the [`UIBarPositioningDelegate`](./uibarpositioningdelegate.md) protocol to support the positioning of a toolbar when it’s moved to a window.
 

@@ -21,7 +21,7 @@ Creates a regular expression that matches the given string exactly, as though ev
 init(verbatim verbatimString: String)
 ```
 
-#### Discussion
+## Discussion
 
 This example creates a regular expression that matches the string `"(adj)"`, including the parentheses. Although parentheses are regular expression metacharacters, they do not need escaping in the string passed as `verbatimString`.
 

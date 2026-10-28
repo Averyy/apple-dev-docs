@@ -21,7 +21,7 @@ A style displaying a date as relative to now.
 static let relative: Text.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(event.startDate, style: .relative)

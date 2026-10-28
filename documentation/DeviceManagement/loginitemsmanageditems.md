@@ -15,11 +15,11 @@ The payload that configures a device’s login items.
 object LoginItemsManagedItems
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.loginitems.managed` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.loginitems.managed` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

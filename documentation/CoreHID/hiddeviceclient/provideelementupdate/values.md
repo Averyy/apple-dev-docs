@@ -15,7 +15,7 @@ The values used to update the elements.
 var values: [HIDElement.Value]
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`HIDElement.Value`](../../hidelement/value.md).
 

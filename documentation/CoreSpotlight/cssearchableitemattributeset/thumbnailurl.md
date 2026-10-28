@@ -23,7 +23,7 @@ var thumbnailURL: URL? { get set }
 @property (strong, nullable) NSURL * thumbnailURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional. Note that the URL needs to point to a local file; it is not a web URL.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Update package dependencies.
 
-#### Overview
+## Overview
 
 ```
 package update [--package-path=<package-path>]

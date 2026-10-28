@@ -25,11 +25,11 @@ func tensorSizeAndAlign(descriptor: MTLTensorDescriptor) -> MTLSizeAndAlign
 - (MTLSizeAndAlign) tensorSizeAndAlignWithDescriptor:(MTLTensorDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 The size and alignment required to hold the data plane of a tensor you create with `descriptor` in a buffer.
 
-#### Discussion
+## Discussion
 
 This method requires that `descriptor` does not configure any auxiliary planes.
 

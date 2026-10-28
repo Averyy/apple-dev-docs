@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_StorageArrayControllerSCC2Device = 0x0C
 ```
 
-#### Discussion
+## Discussion
 
 SCC2 Device.
 

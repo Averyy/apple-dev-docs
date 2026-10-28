@@ -14,7 +14,7 @@ A key to match PCI devices by class code register.
 - **Name**: `IOPCIClassMatch`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This value of this key matches the class code register (`0x08`). The default mask for this register is `0xffffff00`.
 

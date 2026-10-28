@@ -24,11 +24,11 @@ class func rippleTransition() -> any CIFilter & CIRippleTransition
 + (CIFilter<CIRippleTransition> *) rippleTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the ripple transition filter to an image. The effect transitions from one image to another by creating a circular wave that expands from the center point, revealing the target image through the wave effect.
 

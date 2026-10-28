@@ -19,7 +19,7 @@ init?(docFormat data: Data, documentAttributes dict: AutoreleasingUnsafeMutableP
 - (instancetype) initWithDocFormat:(NSData *) data documentAttributes:(NSDictionary<NSString *,id> **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized attributed string object, or `nil` if the method can’t decode the data.
 

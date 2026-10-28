@@ -19,7 +19,7 @@ var transportControlsSupported: Bool { get }
 @property (nonatomic, readonly) BOOL transportControlsSupported;
 ```
 
-#### Discussion
+## Discussion
 
 For devices with transport controls, such as AVC tape-based camcorders or pro capture devices with RS422 deck control, the value of this property is [`true`](../../Swift/true.md). If transport controls aren’t supported, none of the associated transport control methods and properties are available to the device.
 

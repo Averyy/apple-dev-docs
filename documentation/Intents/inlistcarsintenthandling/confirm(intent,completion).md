@@ -27,7 +27,7 @@ optional func confirm(intent: INListCarsIntent) async -> INListCarsIntentRespons
 - (void) confirmListCars:(INListCarsIntent *) intent completion:(void (^)(INListCarsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to confirm that you can provide a list of the user’s electric vehicles.
 

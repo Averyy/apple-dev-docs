@@ -25,7 +25,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method undoes the resource allocation the system performs in [`prepareToPlay()`](./preparetoplay%28%29.md) or [`play()`](./play%28%29.md). It doesn’t reset the player’s [`currentTime`](./currenttime.md) value to `0`, so playback resumes from where it stops.
 

@@ -5,7 +5,7 @@
 
 Perform asymmetric and symmetric encryption and decryption using cryptographic keys.
 
-#### Overview
+## Overview
 
 Cryptography enables secure data exchange through an untrusted channel. One important component of this activity is encryption. A transmitter encodes data on one side of a link, rendering it gibberish to anyone without the key to decode it. The data then passes through the channel—exposed to the world, but meaningless to all but the intended receiver. That receiver, the only holder of the decryption key, reverses the encryption process to reveal the original message.
 
@@ -14,7 +14,7 @@ As with cryptographic keys, there are two main types of encryption:
 - **Asymmetric.** Asymmetric encryption doesn’t require a shared secret. On the other hand, it’s computationally expensive and works only on small, discrete blocks of data. Therefore, it’s most suitable for small transfers when sender and receiver have no established relationship.
 - **Symmetric.** Symmetric encryption is good for bulk data transfer because it’s computationally efficient and operates on streams of data. But it works only when the transmitter and the receiver share a secret key. So you typically rely on some other technique, such as asymmetric encryption or the Diffie-Hellman key exchange, to share a key and establish a session.
 
-##### Use Asymmetric Encryption
+### Use Asymmetric Encryption
 
 To perform asymmetric encryption, a transmitter encrypts its data with a public key. Only the holder of the matching private key can then decrypt the obscured message. You begin by obtaining a public key that corresponds to your intended recipient’s private key. Depending on the situation, you might read it from your keychain or from a certificate, or you might use one of the other methods described in [Getting an Existing Key](./getting-an-existing-key.md). However you obtain the key, the kind of encryption you can perform depends on the key itself.
 
@@ -174,7 +174,7 @@ if (canDecrypt) {
 
 As before, you handle a failure and the corresponding error object, if applicable. If the call succeeds, the `clearText` object exactly matches the `plainText` object from the transmitter.
 
-##### Use Symmetric Encryption
+### Use Symmetric Encryption
 
 When the sender and receiver share a single, secret key, they can perform symmetric encryption, in which the same key both encrypts and decrypts the message. Even though the operations in this case are computationally efficient, initially sharing the key poses its own challenge. For that reason, you’ll usually want to use another method, such as asymmetric encryption, to exchange a symmetric key at the time you begin communicating.
 

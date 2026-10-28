@@ -21,7 +21,7 @@ The product value if the task was successful.
 var product: Product? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this as a convenience to access the product value in code that doesn’t depend on the reason the product can’t be accessed. The value is `nil` while the product is loading, or if the product can’t be accessed for any reason.
 

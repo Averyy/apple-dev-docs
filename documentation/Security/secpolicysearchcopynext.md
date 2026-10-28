@@ -15,7 +15,7 @@ Retrieves a policy object for the next policy matching specified search criteria
 OSStatus SecPolicySearchCopyNext(SecPolicySearchRef searchRef, SecPolicyRef*policyRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). When there are no more policies that match the parameters specified to [`SecPolicySearchCreate`](./secpolicysearchcreate.md), [`errSecPolicyNotFound`](./errsecpolicynotfound.md) is returned.
 

@@ -19,7 +19,7 @@ func insertItem(withTitle string: String, action selector: Selector?, keyEquival
 - (NSMenuItem *) insertItemWithTitle:(NSString *) string action:(SEL) selector keyEquivalent:(NSString *) charCode atIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The new menu item (an object conforming to the NSMenuItem protocol) or `nil` if the item could not be created
 

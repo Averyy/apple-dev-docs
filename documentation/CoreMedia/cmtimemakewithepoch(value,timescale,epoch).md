@@ -25,7 +25,7 @@ func CMTimeMakeWithEpoch(value: Int64, timescale: Int32, epoch: Int64) -> CMTime
 extern CMTime CMTimeMakeWithEpoch(int64_t value, int32_t timescale, int64_t epoch);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure.
 

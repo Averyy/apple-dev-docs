@@ -5,7 +5,7 @@
 
 Describe the properties that compose an entity.
 
-#### Overview
+## Overview
 
 After you create an entity as described in [Configuring Entities](./configuring-entities.md), you can add attributes to that entity.
 
@@ -13,7 +13,7 @@ An attribute describes a property of an entity. At minimum, you need to specify 
 
 For some attribute types, you can also choose whether to use a scalar type to represent the attribute in generated classes, as well as configure the attribute to have a default value, or to apply data validation rules.
 
-##### Add Attributes
+### Add Attributes
 
 Add an attribute as indicated in the screenshot and the steps that follow:
 
@@ -25,7 +25,7 @@ Add an attribute as indicated in the screenshot and the steps that follow:
 
 ![A screenshot showing the available data types for an attribute.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3839159@2x.png)
 
-##### Configure Attributes
+### Configure Attributes
 
 Use the data model inspector (choose View > Inspectors > Show Data Model Inspector) to configure attributes.
 

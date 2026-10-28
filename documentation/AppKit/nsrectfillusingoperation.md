@@ -15,7 +15,7 @@ Fills a rectangle using the current fill color and the specified compositing ope
 extern void NSRectFillUsingOperation(NSRect rect, NSCompositingOperation op);
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`NSCompositingOperation`](./nscompositingoperation.md).
 

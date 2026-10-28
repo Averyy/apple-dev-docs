@@ -13,7 +13,7 @@ Add custom audio-effect processing to apps like Logic Pro X and GarageBand by cr
 - macOS 14.0+
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 This sample app shows you how to create a custom audio effect plug-in using the latest Audio Unit standard (AUv3). The AUv3 standard builds on the [App Extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG) model, which means you deliver your plug-in as an extension that’s contained in an app distributed through the App Store or your own store.
 
@@ -25,7 +25,7 @@ The project has targets for both iOS and macOS. Each platform’s main app targe
 
 > **Note**: See [Incorporating Audio Effects and Instruments](../AudioToolbox/incorporating-audio-effects-and-instruments.md) for details on how you can use this Audio Unit extension in a host app.
 
-##### Create a custom audio effect plug-In
+### Create a custom audio effect plug-In
 
 The extension itself contains two primary pieces: an Audio Unit proper and a factory object that creates it.
 
@@ -44,7 +44,7 @@ extension AUv3FilterDemoViewController: AUAudioUnitFactory {
 
 > ❗ **Important**: To ensure glitch-free performance, your plug-in’s audio processing must occur in a real-time safe context. Don’t allocate memory, perform file I/O, take locks, or interact with the Swift or Objective-C runtimes when rendering audio.
 
-##### Add custom parameters to your Audio Unit
+### Add custom parameters to your Audio Unit
 
 In most Audio Units, you’ll provide one or more parameters to configure the audio processing. Your Audio Unit arranges its parameters into a tree structure, provided by an instance of [`AUParameterTree`](../AudioToolbox/auparametertree.md). This object represents the root node of the plug-in’s tree of parameters and parameter groupings.
 
@@ -134,7 +134,7 @@ parameterTree.implementorStringFromValueCallback = { param, value in
 }
 ```
 
-##### Connect the parameters to your user interface
+### Connect the parameters to your user interface
 
 The sample app’s iOS and macOS targets each provide a platform-specific user interface. You use a shared view controller called `AUv3FilterDemoViewController` to coordinate the communication between the user interface and the Audio Unit. Connect your user interface to the Audio Unit’s parameters in the `connectViewToAU()` method.
 
@@ -183,7 +183,7 @@ private func connectViewToAU() {
 
 As shown above, in the `connectViewToAU()` method, you find the Audio Unit’s parameter tree and retrieve its cutoff and resonance parameters. You also add an observer closure to update the user interface as the plug-in’s parameter values change.
 
-##### Add factory presets
+### Add factory presets
 
 Most audio plug-ins provide a collection of preset values known as *factory presets*. A factory preset is a preconfigured arrangement of the plug-in’s parameter values that provide a useful starting point for further customization. A host app presents these presets in its user interface so the user can select them.
 
@@ -205,7 +205,7 @@ private let factoryPresetValues:[(cutoff: AUValue, resonance: AUValue)] = [
 ]
 ```
 
-##### Support user presets
+### Support user presets
 
 Factory presets provide a useful starting point for further user customization, but users also want the ability to save their changes and create their own custom presets. `AUAudioUnit` provides built-in support for user presets. To enable this support in your Audio Unit, override the [`supportsUserPresets`](../AudioToolbox/auaudiounit/supportsuserpresets.md) property to return `true`.
 
@@ -218,7 +218,7 @@ public override var supportsUserPresets: Bool {
 
 Opting in to support for user presets automatically enables your Audio Unit to load, save, and delete user presets. The default implementation of the [`userPresets`](../AudioToolbox/auaudiounit/userpresets.md), [`saveUserPreset(_:)`](../AudioToolbox/auaudiounit/saveuserpreset%28_%29.md), and [`deleteUserPreset(_:)`](../AudioToolbox/auaudiounit/deleteuserpreset%28_%29.md) API reads from and writes to an internal store, but you’re free to override this property and methods if you want to directly manage the persistence behavior. For example, you can override the default behavior to persist user presets to an iCloud container or some other remote location.
 
-##### Select factory and user presets
+### Select factory and user presets
 
 A host app selects a factory or user preset by setting the plug-in’s `currentPreset` property. You override this property and take the appropriate action depending on the preset type selected. If the user selected a factory preset (a preset `number` greater than `0`), look up its associated values and set the parameter values accordingly. If the user selected a user preset (a preset `number` less than `0`), restore the preset’s parameter state by calling the [`presetState(for:)`](../AudioToolbox/auaudiounit/presetstate%28for%29.md) method and setting the returned data as the [`fullStateForDocument`](../AudioToolbox/auaudiounit/fullstatefordocument.md) property.
 
@@ -256,7 +256,7 @@ public override var currentPreset: AUAudioUnitPreset? {
 }
 ```
 
-##### Package your plug-In to run in-Process
+### Package your plug-In to run in-Process
 
 Like all App Extensions, AUv3 plug-ins run *out-of-process* by default, which means the extension runs in a separate process from the host app, and all communication between the two occurs over interprocess communication (IPC). This model provides increased security and stability for the host app. For example, if an AUv3 plug-in crashes, the host app won’t crash. However, the IPC communication adds a small amount of overhead to each render cycle, which may be unacceptable depending on the needs of a given application. In macOS only, you can package your plug-in to run *in-process*, which eliminates the IPC communication as your Audio Unit runs as part of the host’s process.
 

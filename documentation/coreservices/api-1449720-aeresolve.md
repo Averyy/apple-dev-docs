@@ -19,11 +19,11 @@ func AEResolve(_ objectSpecifier: UnsafePointer<AEDesc>!, _ callbackFlags: Int16
 OSErr AEResolve(const AEDesc *objectSpecifier, short callbackFlags, AEDesc *theToken);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). The `AEResolve` function returns any result code returned by one of your application’s object accessor functions or object callback functions. For example, an object accessor function can return `errAENoSuchObject` (–1728) when it can’t find an Apple event object, or it can return more specific result codes. If any object accessor function or object callback function returns a result code other than `noErr` or `errAEEventNotHandled`, `AEResolve` immediately disposes of any existing tokens and returns. The result code it returns in this case is the result code returned by the object accessor function or the object callback function.
 
-#### Discussion
+## Discussion
 
 If an Apple event parameter consists of an object specifier, your handler for the event typically calls the `AEResolve` function to begin the process of resolving the object specifier.
 

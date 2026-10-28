@@ -20,7 +20,7 @@ Returns the multiply-add result for corresponding elements in three vectors.
 func fma(_ x: simd_double4, _ y: simd_double4, _ z: simd_double4) -> simd_double4
 ```
 
-#### Return Value
+## Return Value
 
 The result of `x*y + z`.
 

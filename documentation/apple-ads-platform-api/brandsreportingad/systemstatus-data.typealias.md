@@ -20,11 +20,11 @@ string BrandsReportingAd.SystemStatus
 - `RUNNING`: The ad is active and eligible to serve.
 - `NOT_RUNNING`: The system has identified a condition preventing the ad from delivering.
 
-#### Discussion
+## Discussion
 
 This reflects delivery conditions evaluated at the moment the report was generated, which may differ from the ad’s current live status.
 
-##### Example
+### Example
 
 ```json
 {

@@ -25,7 +25,7 @@ var isOutputObscuredDueToInsufficientExternalProtection: Bool { get }
 @property (readonly) BOOL outputObscuredDueToInsufficientExternalProtection;
 ```
 
-#### Discussion
+## Discussion
 
 Items that incorporate copy protection or other forms of security might have their visual content obscured by the player object if the current device configuration does not meet the requirements for protecting the item. This property reports whether the player is currently obscuring the item. If the current item does not require external protection or if the device configuration sufficiently protects the item, the value of this property is set to [`false`](../../Swift/false.md).
 

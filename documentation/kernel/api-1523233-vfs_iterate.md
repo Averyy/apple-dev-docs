@@ -15,7 +15,7 @@ Iterate over all mountpoints with a callback. Used, for example, by sync().
 int vfs_iterate(int flags, int (*callout)(struct mount *, void *), void *arg);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 

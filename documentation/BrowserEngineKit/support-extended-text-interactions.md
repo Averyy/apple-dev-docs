@@ -5,7 +5,7 @@
 
 Share content, add replacement shortcuts, and perform other rich actions in browser text views.
 
-#### Overview
+## Overview
 
 When your browser’s text view conforms to the [`BETextInput`](./betextinput.md) protocol, it automatically also conforms to [`BEResponderEditActions`](./berespondereditactions.md). This protocol adds a collection of optional action methods your text view can implement to support extended text interactions.
 

@@ -25,7 +25,7 @@ func setCharacterSpacing(_ spacing: CGFloat)
 extern void CGContextSetCharacterSpacing(CGContextRef c, CGFloat spacing);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics adds the additional space to the advance between the origin of one character and the origin of the next character. For information about the text coordinate system, see [`CGContextSetTextMatrix`](../cgcontextsettextmatrix.md).
 

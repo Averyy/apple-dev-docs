@@ -21,7 +21,7 @@ var startButtonTitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * startButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When the title is `nil`, the button displays a system-provided title.
 

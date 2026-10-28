@@ -24,7 +24,7 @@ func page(at index: Int) -> PDFPage?
 - (PDFPage *) pageAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Indexes are zero based. This method raises an exception if `index` is out of bounds.
 

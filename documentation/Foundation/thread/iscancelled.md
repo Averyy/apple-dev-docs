@@ -25,7 +25,7 @@ var isCancelled: Bool { get }
 @property (readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has been cancelled, otherwise [`false`](../../Swift/false.md).
 

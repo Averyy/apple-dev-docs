@@ -5,13 +5,13 @@
 
 Learn about responses from Apple Media Feed API to your Apple Music Feed requests.
 
-#### Overview
+## Overview
 
 Learn how Apple Media Feed API responds to requests for Apple Music Feed data and how to interpret responses.
 
 Apple Media Feed API has two kinds of responses: resource collections and errors.
 
-#### Understand a response
+## Understand a response
 
 Resource collection responses contain a `data` array and a `resources` object.
 
@@ -30,7 +30,7 @@ Default responses for common requests include the following:
 | The request isn’t supported as specified. | `400 (Bad Request)` | The `errors` array contains an error object for any identified problem. |
 | The request encounters errors on the server. | Any status code in the 500 range | The `errors` array contains error objects for the errors for any identified problems. |
 
-For more information, see [Error object](../AppleMusicAPI/error.md) and [HTTP status codes](../AppleMusicAPI/common_objects/http_status_codes.md).
+For more information, see [Error object](../AppleMusicAPI/error.md) and [HTTP status codes](../AppleMusicAPI/http-status-codes.md).
 
 ## See Also
 

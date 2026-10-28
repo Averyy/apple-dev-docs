@@ -17,7 +17,7 @@ A collection of unauthenticated information the system receives from a device be
 struct PairingInfo
 ```
 
-#### Overview
+## Overview
 
 For privacy reasons, these values are only sent during initial pairing over Wi-Fi Aware, with a:
 

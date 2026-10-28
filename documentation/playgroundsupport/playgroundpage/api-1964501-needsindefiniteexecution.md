@@ -25,7 +25,7 @@ final var needsIndefiniteExecution: Bool { get set }
 var needsIndefiniteExecution: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, all top-level code is executed, and then execution is terminated. When working with asynchronous code, enable indefinite execution to allow execution to continue after the end of the playground’s top-level code is reached. This, in turn, gives threads and callbacks time to execute.
 

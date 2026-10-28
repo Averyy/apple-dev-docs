@@ -5,11 +5,11 @@
 
 Tell Siri about shortcuts to actions that the user performed in your app.
 
-#### Overview
+## Overview
 
 Siri can predict shortcuts to actions that a user may want to perform using your app, and suggest those shortcuts to the user in places such as Spotlight search and the Lock Screen. Siri learns about the shortcuts available for your app through donations that your app makes to Siri. Users can also use donated shortcuts to add personalized voice phrases to Siri. To learn more about adding phrases to Siri, see [Shortcut-Related UI](./shortcut-related-ui.md).
 
-##### Donate Shortcuts at the Right Time
+### Donate Shortcuts at the Right Time
 
 Donate a shortcut each time the user performs the action in your app. Make one, and only one, donation per action at the time the user performs the action. If the user performs the same action again, make another donation. For example, if the user can order soup from a restaurant using your app, donate a shortcut for the *order soup* action after the user places their order. If the user places another order, then make another *order soup* donation.
 
@@ -22,7 +22,7 @@ Your app can make donations using one of the following objects:
 
 > ❗ **Important**:  In iOS 17 and later, the Journal app encourages people to reflect and write about their day-to-day experiences. If your app donates activities or interactions to SiriKit, the subject matter of the interaction may appear as a suggestion in the Journal app, or other apps that utilize the [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) framework.
 
-##### Donate a User Activity
+### Donate a User Activity
 
 [`NSUserActivity`](../Foundation/nsuseractivity.md) provides a lightweight approach for making a donation that also integrates with other Apple features such as Handoff and Spotlight search.
 
@@ -34,7 +34,7 @@ Next, call the [`becomeCurrent()`](../Foundation/nsuseractivity/becomecurrent%28
 
 To handle the action at a later time, implement the [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) method in your app delegate.
 
-##### Donate an Interaction
+### Donate an Interaction
 
 You can also make a donation using an [`INInteraction`](../Intents/ininteraction.md) object. For this type of donation, you provide the interaction with an intent that represents the action (or task) that the user wants to accomplish using your app. This type of donation has an advantage over ones made with a user activity in that Siri can deconstruct the donation into its intent parameters allowing for more intelligent predictions.
 

@@ -19,7 +19,7 @@ var additionalSafeAreaInsets: NSEdgeInsets { get set }
 @property NSEdgeInsets additionalSafeAreaInsets;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the safe area insets of your view by the specified amount. The safe area defines the portion of your view’s visible area that is guaranteed to be unobscured by the bars or other ancestor-provided views.
 

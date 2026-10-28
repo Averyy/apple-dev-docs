@@ -25,7 +25,7 @@ enum SCNPhysicsFieldScope
 enum SCNPhysicsFieldScope : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You define a region of space for a field using the position of the node containing the field and the field’s [`halfExtent`](./scnphysicsfield/halfextent.md) and [`usesEllipsoidalExtent`](./scnphysicsfield/usesellipsoidalextent.md) properties. Then, you use the [`scope`](./scnphysicsfield/scope.md) property to choose whether the field’s area of effect is the interior of this region or whether it is the entirety of scene space excluding this region.
 

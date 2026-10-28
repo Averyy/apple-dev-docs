@@ -21,7 +21,7 @@ Return `true` if the selection is an insertion point.
 var isInsertion: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An insertion point effectively represents a range that contains no characters, indicating a location in the string. This location refers to the point in the text where new characters will be inserted. In other words, it represents cases when the start and end index are equal.
 

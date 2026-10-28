@@ -12,7 +12,7 @@ Asserts that two expressions don’t have the same value within a specified accu
 #define XCTAssertNotEqualWithAccuracy(expression1, expression2, accuracy, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Generates a failure when the difference between `expression1` and `expression2` is less than or equal to `accuracy`.
 

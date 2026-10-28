@@ -19,7 +19,7 @@ var operators: [NSNumber]? { get }
 @property (copy, readonly, nullable) NSArray<NSNumber *> * operators;
 ```
 
-#### Return Value
+## Return Value
 
 The array of [`NSNumber`](../../Foundation/nsnumber.md) objects specifying the comparison predicate operators. See [`NSComparisonPredicate.Operator`](../../Foundation/nscomparisonpredicate/operator.md) for possible values.
 

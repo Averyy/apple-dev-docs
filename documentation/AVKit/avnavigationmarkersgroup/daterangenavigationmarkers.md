@@ -19,7 +19,7 @@ var dateRangeNavigationMarkers: [AVDateRangeMetadataGroup]? { get }
 @property (nonatomic, readonly, nullable) NSArray<AVDateRangeMetadataGroup *> * dateRangeNavigationMarkers;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the array of [`AVDateRangeMetadataGroup`](../../AVFoundation/avdaterangemetadatagroup.md) objects managed by this group. This value may be `nil`.
 

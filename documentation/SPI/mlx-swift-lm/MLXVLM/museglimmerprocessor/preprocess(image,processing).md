@@ -17,7 +17,7 @@ Resizes, normalizes and patchifies one image.
 func preprocess(image: CIImage, processing: UserInput.Processing?) throws -> (MLXArray, THW)
 ```
 
-#### Discussion
+## Discussion
 
 The patch layout is `(temporal, channels, patchH, patchW)` inside each token and the tokens themselves are in plain raster order — both differ from `QwenVL.patchify`, and both matter because the vision tower does its own 2×2 merge grouping downstream.
 

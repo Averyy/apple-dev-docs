@@ -22,7 +22,7 @@ func GLKVector2AllGreaterThanOrEqualToScalar(_ vector: GLKVector2, _ value: Floa
 static bool GLKVector2AllGreaterThanOrEqualToScalar(GLKVector2 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that states whether the vector components are all greater than or equal to the scalar value.
 

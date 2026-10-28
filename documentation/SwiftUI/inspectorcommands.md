@@ -20,7 +20,7 @@ nonisolated
 struct InspectorCommands
 ```
 
-#### Overview
+## Overview
 
 `InspectorCommands` include a command for toggling the presented state of the inspector with a keyboard shortcut of Control-Command-I.
 

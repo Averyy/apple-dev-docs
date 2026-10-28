@@ -24,7 +24,7 @@ case precise
 MTL4TimestampGranularityPrecise
 ```
 
-#### Discussion
+## Discussion
 
 Using this granularity may incur in a performance penalty, for example, it may cause splitting of command encoders.
 

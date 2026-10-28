@@ -17,11 +17,11 @@ Finds documents similar to given example documents.
 SKSearchResultsRef SKSearchResultsCreateWithDocuments(SKSearchGroupRef inSearchGroup, CFArrayRef inExampleDocuments, CFIndex inMaxFoundDocuments, void *inContext, SKSearchResultsFilterCallBack inFilterCallBack);
 ```
 
-#### Return Value
+## Return Value
 
 A search results object containing a list of document URL objects (SKDocumentRefs) representing documents similar to the example documents.
 
-#### Discussion
+## Discussion
 
 This function searches the on-disk indexes in a search group for document URL objects (SKDocumentRefs) representing documents similar to those provided as examples. Build the search group in three steps:
 

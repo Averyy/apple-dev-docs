@@ -5,7 +5,7 @@
 
 Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
 
-#### Overview
+## Overview
 
 When building an app for the Mac, you can embed a command-line tool in the app to act as a helper tool. Instances where this may be helpful include, for example:
 
@@ -16,7 +16,7 @@ Embedding a command-line tool in a sandbox app does present some unique challeng
 
 > **Note**: These steps assume that you’re building an app for the App Store because that’s the most common destination for sandboxed apps. However, the same basic process works for apps distributed independently using Developer ID signing; you just need to choose a different distribution path in the Xcode organizer.
 
-##### Create the app project
+### Create the app project
 
 To get started, create a new project from the macOS > App template. Name it `AppWithTool`, resulting in a bundle ID like `com.example.apple-samplecode.AppWithTool`.
 
@@ -32,7 +32,7 @@ Choose Product > Archive, which builds the app into an Xcode archive and reveals
 
 In the organizer, delete the new archive, just to reset to the original state.
 
-##### Create the helper tool target
+### Create the helper tool target
 
 With the app target in the project building correctly, it’s time to create a helper tool target so you can embed its product into the app. To start, create a new target from the macOS > Command Line Tool template. Name this `ToolX`, where the *X* stands for *built with Xcode*.
 
@@ -58,7 +58,7 @@ Select the ToolX scheme and chose Product > Build, just to make sure that the to
 
 Now switch back to the app (`AppWithTool`) scheme.
 
-##### Embed the helper tool
+### Embed the helper tool
 
 In the Build Phases tab of the app target editor, add the ToolX target to the Dependencies build phase. This ensures that Xcode builds the tool target before building the app target.
 
@@ -68,7 +68,7 @@ Add the `ToolX` executable to that build phase, making sure Code Sign On Copy is
 
 For more information about build phases, see [What are build phases?](https://help.apple.com/xcode/mac/11.4/index.html#/dev50bab713d)
 
-##### Build and validate
+### Build and validate
 
 With the project set up, it’s time to test that everything builds correctly. To start, choose Product > Archive, which builds the tool target and then the app target, embedding the result of the former within the latter.
 
@@ -133,11 +133,11 @@ Check the following:
 
 > ❗ **Important**: Adding other entitlements to the tool can cause problems. If the tool immediately crashes with a code signing error when your app runs the tool, check that the tool is signed with just these two entitlements: `com.apple.security.app-sandbox` and `com.apple.security.inherit`.
 
-##### Embed an externally built tool
+### Embed an externally built tool
 
 With the app and Xcode-built helper tool working correctly, it’s time to repeat the process for a tool built using an external build system. The following example creates an example helper tool from the command line and then embeds the tool in the AppWithTool app. In a real project, you’d use the command-line tool’s external build system (for example, `make`) to build the tool that you want to embed.
 
-##### Build the tool
+### Build the tool
 
 Create a new directory and change into it:
 
@@ -209,7 +209,7 @@ Add the `ToolC` executable to your Xcode project. When you do this:
 
 In the Build Phases tab of the app target editor, add `ToolC` to the Embed Helper Tools build phase, making sure that Code Sign On Copy is checked.
 
-##### Build and validate again
+### Build and validate again
 
 To validate your work, follow the process described in [Build and Validate](./embedding-a-helper-tool-in-a-sandboxed-app.md#Build-and-validate), substituting `ToolC` for `ToolX` everywhere.
 

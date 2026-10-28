@@ -31,7 +31,7 @@ protocol MTLHeap : MTLAllocation
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 - [Reducing the memory footprint of Metal apps](./reducing-the-memory-footprint-of-metal-apps.md)
 
-#### Overview
+## Overview
 
 Don’t implement this protocol yourself; instead, to create a heap, configure an [`MTLHeapDescriptor`](./mtlheapdescriptor.md) instance and call the [`makeHeap(descriptor:)`](./mtldevice/makeheap%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 

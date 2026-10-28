@@ -15,7 +15,7 @@ A class that represents a Unified Extensible Firmware Interface (UEFI) signature
 @interface VZEFISignatureSHA256Hash : VZEFISignature
 ```
 
-#### Overview
+## Overview
 
 This class represents a signature entry containing a SHA-256 hash value. The forbidden signature database (dbx) uses hash-based signatures to block specific UEFI binaries that OS vendors have revoked or found to be vulnerable.
 

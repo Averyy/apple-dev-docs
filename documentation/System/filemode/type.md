@@ -21,7 +21,7 @@ The file’s type, from the mode’s file-type bits.
 var type: FileType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property will mask the `newValue` with the file-type bit mask `S_IFMT`.
 

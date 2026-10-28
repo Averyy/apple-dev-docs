@@ -23,7 +23,7 @@ let kABPersonAlternateBirthdayIsLeapMonthKey: CFString!
 extern CFStringRef const kABPersonAlternateBirthdayIsLeapMonthKey;
 ```
 
-#### Discussion
+## Discussion
 
 Used to represent a boolean—whose value is `true` if the birthday occurred during a leap month, `false` otherwise. Corresponds to [`isLeapMonth`](../Foundation/nsdatecomponents/isleapmonth.md).
 

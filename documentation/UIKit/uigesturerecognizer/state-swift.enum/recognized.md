@@ -28,7 +28,7 @@ UIGestureRecognizerStateRecognized
 - [Implementing a Continuous Gesture Recognizer](../../implementing-a-continuous-gesture-recognizer.md)
 - [Implementing a discrete gesture recognizer](../../implementing-a-discrete-gesture-recognizer.md)
 
-#### Discussion
+## Discussion
 
 The gesture recognizer sends its action message (or messages) at the next cycle of the run loop and resets its state to [`UIGestureRecognizer.State.possible`](./possible.md).
 

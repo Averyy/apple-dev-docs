@@ -16,7 +16,7 @@ Schedule a C-style function for asynchrous execution on the current queue.
 void DispatchAsync_f(void *context, IODispatchFunction function);
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules the function for execution on the queue and returns immediately, without waiting for execution of the function to begin. The system retains the queue until the function completes.
 

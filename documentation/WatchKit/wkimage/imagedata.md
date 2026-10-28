@@ -19,7 +19,7 @@ var imageData: Data? { get }
 @property (readonly, nullable) NSData * imageData;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is set using the [`init(imageData:)`](./init%28imagedata%29.md) method. For image objects created using other methods, this property is `nil`.
 

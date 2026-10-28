@@ -17,11 +17,11 @@ A Boolean value that indicates whether the framework supports postbacks on a per
 static var isSupported: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the current device supports postbacks; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Check this value to ensure the current device supports postbacks before calling methods on a `Postback`.
 

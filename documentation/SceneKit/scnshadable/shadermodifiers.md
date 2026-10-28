@@ -25,7 +25,7 @@ optional var shaderModifiers: [SCNShaderModifierEntryPoint : String]? { get set 
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,NSString *> * shaderModifiers;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary’s keys must be from the set of constants described in `Shader Modifier Entry Point Keys`. Each key represents a possible entry point in SceneKit’s shader programs, whose corresponding value is an [`NSString`](../../Foundation/nsstring.md) object containing a shader source code snippet to be included in the shader program at that entry point.
 

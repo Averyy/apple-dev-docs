@@ -17,7 +17,7 @@ Errors that can occur during captured room-data processing.
 enum BuildError
 ```
 
-#### Overview
+## Overview
 
 The room builder ([`RoomBuilder`](../roombuilder.md)) function [`capturedRoom(from:)`](./capturedroom%28from%29.md) can throw an error of this type.
 

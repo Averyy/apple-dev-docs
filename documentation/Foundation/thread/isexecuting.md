@@ -25,7 +25,7 @@ var isExecuting: Bool { get }
 @property (readonly, getter=isExecuting) BOOL executing;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is executing, otherwise [`false`](../../Swift/false.md).
 

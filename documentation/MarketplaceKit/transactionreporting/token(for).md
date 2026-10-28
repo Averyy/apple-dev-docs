@@ -20,11 +20,11 @@ static func token(for tokenType: TransactionReporting.TokenType) async throws ->
 
 - [Reporting transactions for the Core Technology Commission](../reporting-transactions-for-core-technology-commission.md)
 
-#### Return Value
+## Return Value
 
 JSON data in a Base64URL-encoded string.
 
-#### Discussion
+## Discussion
 
 When you pass a token type, this method returns a token.
 

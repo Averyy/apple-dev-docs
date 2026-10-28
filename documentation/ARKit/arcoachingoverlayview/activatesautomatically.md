@@ -20,7 +20,7 @@ var activatesAutomatically: Bool { get set }
 @property (nonatomic, assign) BOOL activatesAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If enabled, the coaching overlay sets [`isActive`](./isactive.md) automatically, depending on whether it needs user intervention to meet the current [`goal`](./goal-swift.property.md). The coaching overlay activates when the session is initializing or when tracking conditions have degraded past a certain threshold.
 

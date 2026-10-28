@@ -25,7 +25,7 @@ var inputBias: CGFloat { get set }
 @property (nonatomic) CGFloat inputBias;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property and the [`inputScale`](./inputscale.md) property to pre-process input values to the controller’s animation. For example, if you use the [`SCNParticleInputMode.overDistance`](../scnparticleinputmode/overdistance.md) option to animate a particle’s opacity as a function of its distance from a specified point, a bias specifies the minimum distance at which the animation’s [`fromValue`](../../QuartzCore/cabasicanimation/fromvalue.md) property or first keyframe value takes effect.
 

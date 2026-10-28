@@ -24,7 +24,7 @@ func applyingGainMap(_ gainmap: CIImage, headroom: Float) -> CIImage
 - (CIImage *) imageByApplyingGainMap:(CIImage *) gainmap headroom:(float) headroom;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance or the received image.
 

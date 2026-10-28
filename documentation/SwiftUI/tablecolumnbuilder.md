@@ -20,7 +20,7 @@ A result builder that creates table column content from closures.
 struct TableColumnBuilder<RowValue, Sort> where RowValue : Identifiable, Sort : SortComparator
 ```
 
-#### Overview
+## Overview
 
 The `buildBlock` methods in this type create [`TableColumnContent`](./tablecolumncontent.md) instances based on the number and types of sources provided as parameters.
 

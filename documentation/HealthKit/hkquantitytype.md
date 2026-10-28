@@ -28,7 +28,7 @@ class HKQuantityType
 
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
-#### Overview
+## Overview
 
 The [`HKQuantityType`](./hkquantitytype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create a quantity type instance, use the object type’s [`quantityType(forIdentifier:)`](./hkobjecttype/quantitytype%28foridentifier%29.md) convenience method.
 

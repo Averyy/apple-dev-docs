@@ -19,11 +19,11 @@ func replaceLabel(at index: Int, withLabel label: String!) -> Bool
 - (BOOL) replaceLabelAtIndex:(NSUInteger) index withLabel:(NSString *) label;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the label is `nil` or if the index is out of bounds, this method raises an exception.
 

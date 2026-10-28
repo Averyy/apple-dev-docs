@@ -22,7 +22,7 @@ class var isSupported: Bool { get }
 @property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 This class method returns `false` for unsupported hardware.
 

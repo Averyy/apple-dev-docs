@@ -25,11 +25,11 @@ init?(nickname: INSpeakableString, number: String?, organizationName: INSpeakabl
 - (instancetype) initWithNickname:(INSpeakableString *) nickname number:(NSString *) number organizationName:(INSpeakableString *) organizationName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized payee object.
 
-#### Discussion
+## Discussion
 
 When creating an [`INBillPayee`](../inbillpayee.md) object, specify the information that you need to identify a payee in your app.
 

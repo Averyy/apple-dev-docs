@@ -9,7 +9,7 @@ Soft-delete an ad group by its unique identifier, along with all ads and keyword
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint deletes an ad group by its ID, using a soft delete: the system marks it `deleted: true` and preserves the record. By default, `POST /adgroups/query` results exclude it unless you filter with `deleted EQUALS true`.
 
@@ -24,11 +24,11 @@ Deleting an ad group has the following effects:
 | Excluded from query results by default | `POST /adgroups/query` results exclude deleted ad groups unless you filter with `deleted EQUALS true`. |
 | Parent campaign deletion also deletes ad groups | Deleting a campaign cascades to all of its ad groups and their nested resources. |
 
-#### Payload Examples
+## Payload Examples
 
 **Delete Ad Group**:
 
-##### Request
+### Request
 
 Deletes an ad group by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
@@ -36,7 +36,7 @@ Deletes an ad group by its unique identifier. A successful delete returns HTTP 2
 DELETE /v1/adgroups/555666777
 ```
 
-##### Response
+### Response
 
 ```json
 {}
@@ -44,7 +44,7 @@ DELETE /v1/adgroups/555666777
 
 **Verify Deletion**:
 
-##### Request
+### Request
 
 Query with `deleted EQUALS true` to confirm the ad group shows as deleted.
 
@@ -67,7 +67,7 @@ POST /v1/adgroups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

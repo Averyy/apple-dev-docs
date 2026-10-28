@@ -20,11 +20,11 @@ class NSCell
 @interface NSCell : NSObject
 ```
 
-#### Overview
+## Overview
 
 Cells are used by most of the [`NSControl`](./nscontrol.md) classes to implement their internal workings.
 
-##### Designated Initializers
+### Designated Initializers
 
 When subclassing `NSCell` you must implement all of the designated initializers. Those methods include [`init()`](./nscell/init%28%29.md), [`init(coder:)`](./nscell/init%28coder%29.md), [`init(textCell:)`](./nscell/init%28textcell%29.md), and [`init(imageCell:)`](./nscell/init%28imagecell%29.md).
 

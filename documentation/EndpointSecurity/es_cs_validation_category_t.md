@@ -20,7 +20,7 @@ struct es_cs_validation_category_t
 typedef enum { ... } es_cs_validation_category_t;
 ```
 
-#### Overview
+## Overview
 
 Indicates the code signature validation policy that was applied to a binary
 

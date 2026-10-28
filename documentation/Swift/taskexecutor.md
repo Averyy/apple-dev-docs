@@ -21,7 +21,7 @@ An executor that may be used as preferred executor by a task.
 protocol TaskExecutor : Executor
 ```
 
-##### Impact of setting a task executor preference
+### Impact of setting a task executor preference
 
 By default, without setting a task executor preference, nonisolated asynchronous functions, as well as methods declared on default actors – that is actors which do not require a specific executor – execute on Swift’s default global concurrent executor. This is an executor shared by the entire runtime to execute any work which does not have strict executor requirements.
 

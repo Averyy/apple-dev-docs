@@ -21,7 +21,7 @@ The model context from which models are fetched.
 final let modelContext: ModelContext
 ```
 
-#### Discussion
+## Discussion
 
 This context is set at initialization and determines the data store and change-tracking scope for the observer.
 

@@ -24,7 +24,7 @@ var bounds: CGRect { get }
 @property (assign, readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle is in the coordinate system of the image.
 

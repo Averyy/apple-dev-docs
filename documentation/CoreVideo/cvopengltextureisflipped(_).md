@@ -21,11 +21,11 @@ func CVOpenGLTextureIsFlipped(_ image: CVOpenGLTexture) -> Bool
 extern Boolean CVOpenGLTextureIsFlipped(CVOpenGLTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if (0,0) in the texture is in the upper-left corner, and `false` if (0,0) is in the lower-left corner.
 
-#### Discussion
+## Discussion
 
 Quartz assumes a lower-left origin.
 

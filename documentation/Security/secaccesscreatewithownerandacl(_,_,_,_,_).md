@@ -21,11 +21,11 @@ func SecAccessCreateWithOwnerAndACL(_ userId: uid_t, _ groupId: gid_t, _ ownerTy
 SecAccessRefSecAccessCreateWithOwnerAndACL(uid_t userId, gid_t groupId, SecAccessOwnerType ownerType, CFArrayRef acls, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The new access instance. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release it when you are finished using it.
 
-#### Discussion
+## Discussion
 
 Use this method to create a customized access instance from [`SecACL`](./secacl.md) instances that you’ve created with the [`SecACLCreateWithSimpleContents(_:_:_:_:_:)`](./secaclcreatewithsimplecontents%28_,_,_,_,_%29.md) method. If you want a default access instance, use the [`SecAccessCreate(_:_:_:)`](./secaccesscreate%28_,_,_%29.md) method instead.
 

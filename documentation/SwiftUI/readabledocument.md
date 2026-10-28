@@ -19,7 +19,7 @@ A document type that supports reading from file.
 protocol ReadableDocument : AnyObject
 ```
 
-#### Overview
+## Overview
 
 Conform to `ReadableDocument` to build a read-only document viewer, or combine with [`WritableDocument`](./writabledocument.md) (via the [`Document`](./document.md) protocol) for full read-write support.
 

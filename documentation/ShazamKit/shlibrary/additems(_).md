@@ -21,7 +21,7 @@ Adds an array of media items to the user’s Shazam library.
 final func addItems(_ items: [SHMediaItem]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The library only accepts media items with a [`shazamID`](../shmediaitem/shazamid.md). The `shazamID` must be a numeric only string.
 

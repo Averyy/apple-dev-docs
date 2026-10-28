@@ -24,7 +24,7 @@ let NSUserActivityTypeLiveActivity: String
 extern NSString * const NSUserActivityTypeLiveActivity;
 ```
 
-#### Discussion
+## Discussion
 
 In many cases, you use  [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) to allow users to tap a Live Activity and open a screen in the app with functionality that best fits the Live Activity. If you don’t use the `widgetURL(_:)` modifier to provide a URL, the system launches your app and passes `NSUserActivityTypeLiveActivity` as the [`activityType`](../Foundation/nsuseractivity/activitytype.md) of [`NSUserActivity`](../Foundation/nsuseractivity.md) upon launch. Check for this value on launch to open a screen in your app that fits the context of the active Live Activity.
 

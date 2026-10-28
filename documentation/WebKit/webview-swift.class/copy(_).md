@@ -19,7 +19,7 @@ func copy(_ sender: Any?)
 - (void) copy:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method copies the selected content onto the general pasteboard, in as many formats as the receiver supports. For example, a plain text object uses `NSStringPboardType` for plain text, and a rich text object also uses `NSRTFPboardType`.
 

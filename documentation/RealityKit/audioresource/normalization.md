@@ -20,7 +20,7 @@ Normalization adjusts the level of an audio file or buffer to be at a defined ta
 struct Normalization
 ```
 
-#### Overview
+## Overview
 
 Audio files produced in a production environment where dynamics are already being processed may not need normalization.
 

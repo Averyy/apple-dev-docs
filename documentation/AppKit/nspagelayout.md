@@ -20,7 +20,7 @@ class NSPageLayout
 @interface NSPageLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 A page layout panel is typically displayed in response to the user selecting the Page Setup menu item. You obtain an instance with the [`pageLayout`](./nspagelayout/pagelayout.md) class method. The pane can then be run as a sheet using [`beginSheet(with:modalFor:delegate:didEnd:contextInfo:)`](./nspagelayout/beginsheet%28with,modalfor,delegate,didend,contextinfo%29.md) or modally using [`runModal()`](./nspagelayout/runmodal%28%29.md) or [`runModal(with:)`](./nspagelayout/runmodal%28with%29.md).
 

@@ -29,7 +29,7 @@ func accountStatus() async throws -> CKAccountStatus
 - (void) accountStatusWithCompletionHandler:(void (^)(CKAccountStatus accountStatus, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure has no return value and takes the following parameters:
 

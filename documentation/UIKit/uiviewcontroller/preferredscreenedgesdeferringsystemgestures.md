@@ -22,7 +22,7 @@ var preferredScreenEdgesDeferringSystemGestures: UIRectEdge { get }
 @property (nonatomic, readonly) UIRectEdge preferredScreenEdgesDeferringSystemGestures;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the screen-edge gestures defined by the system take precedence over any gesture recognizers that you define. The system uses its gestures to implement system-level behaviors, such as to display Control Center.
 

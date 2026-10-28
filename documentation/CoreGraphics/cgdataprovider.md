@@ -25,7 +25,7 @@ class CGDataProvider
 typedef struct CGDataProvider * CGDataProviderRef;
 ```
 
-#### Overview
+## Overview
 
 Data provider objects abstract the data-access task and eliminate the need for applications to manage data through a raw memory buffer.
 

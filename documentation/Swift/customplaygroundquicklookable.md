@@ -21,7 +21,7 @@ A type that explicitly supplies its own playground Quick Look.
 typealias CustomPlaygroundQuickLookable = _CustomPlaygroundQuickLookable
 ```
 
-#### Discussion
+## Discussion
 
 The `CustomPlaygroundQuickLookable` protocol is deprecated, and will be removed from the standard library in a future Swift release. To customize the logging of your type in a playground, conform to the `CustomPlaygroundDisplayConvertible` protocol.
 

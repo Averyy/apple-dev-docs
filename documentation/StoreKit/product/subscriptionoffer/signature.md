@@ -23,7 +23,7 @@ A cryptographic signature for a promotional offer.
 struct Signature
 ```
 
-#### Overview
+## Overview
 
 For information about promotional offers, see [Implementing promotional offers in your app](../../implementing-promotional-offers-in-your-app.md).
 

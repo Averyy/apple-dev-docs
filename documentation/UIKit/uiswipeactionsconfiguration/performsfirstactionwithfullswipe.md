@@ -22,7 +22,7 @@ var performsFirstActionWithFullSwipe: Bool { get set }
 @property (nonatomic) BOOL performsFirstActionWithFullSwipe;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), a full swipe in the row performs the first action listed in the [`actions`](./actions.md) property. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -17,7 +17,7 @@ Create an attention mask matching mlx-lm’s create_attention_mask helper.
 func makeAttentionMask(n: Int, cache: KVCache?, windowSize: Int? = nil, returnArray: Bool = false) -> MLXFast.ScaledDotProductAttentionMaskMode
 ```
 
-#### Discussion
+## Discussion
 
 This returns `.causal` when a symbolic mask is sufficient, avoiding materializing a full mask array.
 

@@ -24,7 +24,7 @@ var stride: Int { get set }
 @property (nonatomic, readwrite) NSUInteger stride;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a vertex buffer contains interleaved data for two attributes, the stride is typically the sum of data sizes for those two attributes.
 

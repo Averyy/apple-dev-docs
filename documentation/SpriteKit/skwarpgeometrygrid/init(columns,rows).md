@@ -29,11 +29,11 @@ convenience init(columns cols: Int, rows: Int)
 
 - [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
-#### Return Value
+## Return Value
 
 A new warp geometry grid object.
 
-#### Discussion
+## Discussion
 
 Creating a warp geometry grid without explicit source and destination positions automatically generates the required position arrays. For example, a 2 column by 2 row grid would create two arrays containing nine positions each, beginning at `[0,0]` - for the bottom left position - and ending at `[1,1]` - for the top left position.
 

@@ -25,11 +25,11 @@ func element(at elementIndex: Int) -> SCNGeometryElement
 - (SCNGeometryElement *) geometryElementAtIndex:(NSInteger) elementIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A geometry element.
 
-#### Discussion
+## Discussion
 
 Each [`SCNGeometryElement`](../scngeometryelement.md) object describes how vertices from the geometry’s sources are combined into polygons to create the geometry’s shape. Visible geometries contain at least one element.
 

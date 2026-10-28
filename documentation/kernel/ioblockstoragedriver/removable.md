@@ -9,7 +9,7 @@
 bool _removable;
 ```
 
-#### Overview
+## Overview
 
 True if the media is removable; False if it is fixed (not removable).
 
