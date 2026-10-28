@@ -21,7 +21,7 @@ The request’s sort descriptors, accessed as reference types.
 var nsSortDescriptors: [NSSortDescriptor]
 ```
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances. If you want to use [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances, set [`sortDescriptors`](./sortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../configuration.md).
 

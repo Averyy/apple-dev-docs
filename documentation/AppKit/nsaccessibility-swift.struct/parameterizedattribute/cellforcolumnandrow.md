@@ -21,7 +21,7 @@ static let cellForColumnAndRow: NSAccessibility.ParameterizedAttribute
 extern NSAccessibilityParameterizedAttributeName const NSAccessibilityCellForColumnAndRowParameterizedAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The parameter is an `NSArray` that contains two `NSNumber` objects: the first number specifies the column index and the second number specifies the row index. This attribute is required for cell-based tables.
 

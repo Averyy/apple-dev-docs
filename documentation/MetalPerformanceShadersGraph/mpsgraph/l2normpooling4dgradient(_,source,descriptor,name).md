@@ -24,7 +24,7 @@ func L2NormPooling4DGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor,
 - (MPSGraphTensor *) L2NormPooling4DGradientWithGradientTensor:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

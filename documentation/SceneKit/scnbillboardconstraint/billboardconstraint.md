@@ -21,11 +21,11 @@ Creates a new billboard constraint.
 + (instancetype) billboardConstraint;
 ```
 
-#### Return Value
+## Return Value
 
 A new billboard constraint object.
 
-#### Discussion
+## Discussion
 
 A newly created constraint uses the [`all`](../scnbillboardaxis/all.md) type, so nodes affected by the constraint never rotate with respect to the scene’s point of view. Change the [`freeAxes`](./freeaxes.md) property to partially constrain a node’s orientation.
 

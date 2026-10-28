@@ -15,7 +15,7 @@ Compares the sizes of two maps and indicates whether they’re of equal value.
 equals(anotherSize: MapSize): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the `width` and `height` values of a map size exactly match the corresponding values of `anotherSize`. Returns `false` if the values aren’t an exact match.
 

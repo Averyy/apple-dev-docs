@@ -25,11 +25,11 @@ class func success(with resolvedDateSearchType: INDateSearchType) -> Self
 + (instancetype) successWithResolvedDateSearchType:(INDateSearchType) resolvedDateSearchType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateSearchTypeResolutionResult`](../indatesearchtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to search for notes based on the specified date type.
 

@@ -19,11 +19,11 @@ func bestMatch(from appearances: [NSAppearance.Name]) -> NSAppearance.Name?
 - (NSAppearanceName) bestMatchFromAppearancesWithNames:(NSArray<NSString *> *) appearances;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the appearance that most closely matches the current appearance object.
 
-#### Discussion
+## Discussion
 
 You can use this method in situations where your app doesn’t fully support the current appearance, but supports a different appearance object that has similar qualities. This method returns the name from the `appearances` array that comes closest to matching the current appearance object’s attributes.
 

@@ -23,7 +23,7 @@ var animationSpeed: CGFloat { get set }
 @property (nonatomic, assign) CGFloat animationSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 For noise and turbulence fields, this property contains the speed at which to animate the field. For all other fields, the value of this property is always `0.0`.
 

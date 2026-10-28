@@ -15,7 +15,7 @@ Initializes an instance of an audio control.
 virtual bool init(IOUserAudioDriver *in_driver, bool in_is_settable, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization succeeded; `false` otherwise.
 

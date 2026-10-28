@@ -24,11 +24,11 @@ func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool
 - (BOOL) canDrawMapRect:(MKMapRect) mapRect zoomScale:(MKZoomScale) zoomScale;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this overlay renderer is ready to draw its contents on the map or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Overlay renderers can override this method in situations where they may depend on the availability of other information to draw their contents. For example, a renderer showing traffic information might want to delay drawing until it has all of the traffic data it needs. In such a case, it can return [`false`](../../Swift/false.md) from this method to indicate that it’s not ready. An overlay renderer might also return [`false`](../../Swift/false.md) if it doesn’t draw content in the specified rectangle.
 

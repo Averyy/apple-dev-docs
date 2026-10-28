@@ -4,7 +4,7 @@
 
 Use universal links to link directly to content within your app and share data securely.
 
-#### Overview
+## Overview
 
 You can connect to content deep inside your app with universal links. Users open your app in a specified context, allowing them to accomplish their goals efficiently.
 
@@ -12,7 +12,7 @@ When users tap or click a universal link, the system redirects the link directly
 
 When someone installs your app, the system checks a file stored on your web server to verify that your website allows your app to open URLs on its behalf. Only you can store this file on your server, securing the association of your website and your app.
 
-##### Support universal links
+### Support universal links
 
 Take the following steps to support universal links:
 
@@ -30,7 +30,7 @@ With universal links, users open your app when they click links to your website 
 
 When a user browses your website in Safari and taps a universal link in the same domain, the system opens that link in Safari, respecting the user’s most likely intent to continue within the browser. If the user taps a universal link in a different domain, the system opens the link in your app.
 
-##### Communicate with other apps
+### Communicate with other apps
 
 Apps can communicate through universal links. Supporting universal links allows other apps to send small amounts of data directly to your app without using a third-party server. 
 

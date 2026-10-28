@@ -20,11 +20,11 @@ convenience init(attribute attr: CAConstraintAttribute, relativeTo srcId: String
 + (instancetype) constraintWithAttribute:(CAConstraintAttribute) attr relativeTo:(NSString *) srcId attribute:(CAConstraintAttribute) srcAttr offset:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 A new `CAConstraint` object with the specified parameters. The scale of the constraint is set to 1.0.
 
-#### Discussion
+## Discussion
 
 The value for the constraint is calculated as (`srcAttr` + `offset`).
 

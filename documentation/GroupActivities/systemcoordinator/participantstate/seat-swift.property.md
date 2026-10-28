@@ -15,7 +15,7 @@ The seat assigned to this participant.
 let seat: SystemCoordinator.ParticipantState.Seat?
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, either the participant is non-spatial or there is no seat available for the participant.
 

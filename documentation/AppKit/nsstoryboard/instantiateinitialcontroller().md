@@ -19,11 +19,11 @@ func instantiateInitialController() -> Any?
 - (id) instantiateInitialController;
 ```
 
-#### Return Value
+## Return Value
 
 The initial view controller or window controller for the storyboard.
 
-#### Discussion
+## Discussion
 
 Every storyboard has an initial view controller or window controller that represents its starting point. For the main storyboard, this is usually the first controller presented to the user at launch time. Designate the initial view controller in Interface Builder when configuring the storyboard file.
 

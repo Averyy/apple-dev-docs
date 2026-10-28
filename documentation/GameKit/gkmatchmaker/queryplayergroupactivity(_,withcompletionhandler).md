@@ -28,7 +28,7 @@ func queryPlayerGroupActivity(_ playerGroup: Int) async throws -> Int
 - (void) queryPlayerGroupActivity:(NSUInteger) playerGroup withCompletionHandler:(void (^)(NSInteger activity, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update your interface. For example, show players the relative activity in each player group. If one group is less active than others, you might display a warning so players are aware that finding a match in that group may take longer.
 

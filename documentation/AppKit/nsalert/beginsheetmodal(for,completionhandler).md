@@ -23,7 +23,7 @@ func beginSheetModal(for sheetWindow: NSWindow) async -> NSApplication.ModalResp
 - (void) beginSheetModalForWindow:(NSWindow *) sheetWindow completionHandler:(void (^)(NSModalResponse returnCode)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the `NSWindow` sheet methods to display the alert (for more information, see Managing Sheets). If the alert has an alert style of [`NSCriticalAlertStyle`](../nscriticalalertstyle.md), it is presented as a critical sheet, which means that it can display on top of other sheets that might already be attached to the window. Otherwise, it is presented—or queued for presentation—as a standard sheet.
 

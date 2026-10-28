@@ -24,7 +24,7 @@ var serverName: String? { get set }
 @property (copy, nullable) NSString * serverName;
 ```
 
-#### Discussion
+## Discussion
 
 The server will be accessed over TCP port 853, as defined in [RFC 7858](https://tools.ietf.org/html/rfc7858). The server name is used for TLS validation.
 

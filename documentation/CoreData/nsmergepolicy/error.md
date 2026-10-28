@@ -25,7 +25,7 @@ class var error: NSMergePolicy { get }
 @property (class, strong, readonly) NSMergePolicy * errorMergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 If a save fails because of conflicting objects, you can find the IDs of those objects in error’s `userInfo` dictionary. Use the [`NSInsertedObjectsKey`](../nsinsertedobjectskey.md) and [`NSUpdatedObjectsKey`](../nsupdatedobjectskey.md) keys to extract the object IDs.
 

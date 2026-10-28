@@ -23,7 +23,7 @@ func gss_display_status(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ statu
 OM_uint32 gss_display_status(OM_uint32 *minor_status, OM_uint32 status_value, int status_type, gss_OID const mech_type, OM_uint32 *message_content, gss_buffer_t status_string);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

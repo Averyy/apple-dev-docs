@@ -17,7 +17,7 @@ A list of X.509 authority key identifiers that correspond to the document signer
 var supportedIssuerKeyIdentifiers: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 An issuer key identifier is an authority key identifier from the document signer certificate chain.
 

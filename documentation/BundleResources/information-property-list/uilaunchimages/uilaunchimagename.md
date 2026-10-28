@@ -16,7 +16,7 @@ A string containing the name of the image file.
 - **Name**: `UILaunchImageName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The image file must reside at the top level of the app bundle. The name you specify for this key should not include a filename extension, nor should it include modifiers such as `@2x`, `-568h`, `~iphone`, or `~ipad`.
 

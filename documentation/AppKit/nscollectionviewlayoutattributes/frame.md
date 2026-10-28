@@ -19,7 +19,7 @@ var frame: NSRect { get set }
 @property NSRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rectangle is measured in points and specified in the collection view’s coordinate system. Setting the value of this property also updates the value in the [`size`](./size.md) property.
 

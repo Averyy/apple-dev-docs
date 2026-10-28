@@ -22,11 +22,11 @@ static Promise <PaymentCredentialStatusResponse> applePayCapabilities(
 
 - [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
-#### Return Value
+## Return Value
 
 Returns the [`PaymentCredentialStatus`](../paymentcredentialstatus.md) object.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method applies to Apple Pay JS API version `1.latest`.
 

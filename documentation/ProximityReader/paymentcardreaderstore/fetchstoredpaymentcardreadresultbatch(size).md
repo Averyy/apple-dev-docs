@@ -17,11 +17,11 @@ Returns a batch of reads the framework previously stored, in chronological order
 func fetchStoredPaymentCardReadResultBatch(size: Int = 0) async throws -> StoreAndForwardBatch
 ```
 
-#### Return Value
+## Return Value
 
 [`StoreAndForwardBatch`](../storeandforwardbatch.md) when successful.
 
-#### Discussion
+## Discussion
 
 There is only one active batch per application at a given time and to fetch a new batch the caller needs to reset or resolve the current batch.
 

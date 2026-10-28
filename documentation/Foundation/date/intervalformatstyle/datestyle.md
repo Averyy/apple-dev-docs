@@ -21,7 +21,7 @@ The type that defines date interval styles that vary in length or in their inclu
 typealias DateStyle = Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 The exact format depends on the locale. Possible values of date interval style include: [`omitted`](../formatstyle/datestyle/omitted.md), [`numeric`](../formatstyle/datestyle/numeric.md), [`abbreviated`](../formatstyle/datestyle/abbreviated.md), [`long`](../formatstyle/datestyle/long.md), and [`complete`](../formatstyle/datestyle/complete.md).
 

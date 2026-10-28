@@ -15,7 +15,7 @@ A Boolean value that indicates whether to create a short GUID for sharing this r
 attribute boolean? createShortGuid;
 ```
 
-#### Discussion
+## Discussion
 
 A short GUID is a global unique identifier for this record used for sharing.
 

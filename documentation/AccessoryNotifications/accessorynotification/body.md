@@ -15,7 +15,7 @@ A string that contains the notification’s main content.
 let body: NSAttributedString?
 ```
 
-#### Discussion
+## Discussion
 
 This property can embed genmoji ([NSAdaptiveImageGlyph](../../UIKit/nsadaptiveimageglyph.md)).
 

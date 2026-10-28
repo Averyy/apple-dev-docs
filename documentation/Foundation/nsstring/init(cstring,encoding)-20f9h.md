@@ -25,7 +25,7 @@ convenience init?(cString nullTerminatedCString: UnsafePointer<CChar>, encoding:
 - (instancetype) initWithCString:(const char *) nullTerminatedCString encoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 An @c NSString object initialized using the characters from @c nullTerminatedCString. The returned object may be different from the original receiver.
 

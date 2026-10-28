@@ -23,11 +23,11 @@ init(presentedViewController: UIViewController, presenting presentingViewControl
 - (instancetype) initWithPresentedViewController:(UIViewController *) presentedViewController presentingViewController:(UIViewController *) presentingViewController;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized presentation controller object or `nil` if the presentation controller could not be initialized.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the presentation controller. You must call it from any custom initialization methods you define for your presentation controller subclasses.
 

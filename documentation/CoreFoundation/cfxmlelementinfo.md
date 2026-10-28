@@ -19,7 +19,7 @@ struct CFXMLElementInfo
 typedef struct { ... } CFXMLElementInfo;
 ```
 
-#### Overview
+## Overview
 
 A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters an element containing attributes. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain the pointer.
 

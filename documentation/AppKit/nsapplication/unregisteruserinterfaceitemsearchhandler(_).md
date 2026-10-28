@@ -19,7 +19,7 @@ func unregisterUserInterfaceItemSearchHandler(_ handler: any NSUserInterfaceItem
 - (void) unregisterUserInterfaceItemSearchHandler:(id<NSUserInterfaceItemSearching>) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If you unregister the same instance more than once the subsequent invocations are ignored. Unregistering an instance that was never registered is ignored.
 

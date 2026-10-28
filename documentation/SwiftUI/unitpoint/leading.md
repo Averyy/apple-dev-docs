@@ -21,7 +21,7 @@ A point that’s centered vertically on the leading edge of a view.
 static let leading: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`leading`](../alignment/leading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 
