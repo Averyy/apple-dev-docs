@@ -20,6 +20,10 @@ optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, should
 - (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldAttemptToRecognizeWithEvent:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 [`true`](../../Swift/true.md) to allow the gesture recognizer to begin recognizing gestures for the specified event, or [`false`](../../Swift/false.md) to prevent it from recognizing gestures for the specified event. If you do not implement this method, the default return value is [`true`](../../Swift/true.md).

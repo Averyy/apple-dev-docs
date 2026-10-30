@@ -27,7 +27,7 @@ You can access the horizontal scroller using this property even if the scroll vi
 
 ## See Also
 
-### Managing Scrollers
+### Managing scrollers
 - [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)
   A Boolean that indicates whether the scroll view has a horizontal scroller.
 - [var verticalScroller: NSScroller?](./verticalscroller.md)

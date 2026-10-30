@@ -37,7 +37,7 @@ In iOS 17, your app can add events to Calendar without prompting the user for ac
 
 - Build your app with Xcode 15 and link against the iOS 17 SDK.
 - If your app includes [`NSCalendarsUsageDescription`](../BundleResources/information-property-list/nscalendarsusagedescription.md), remove this key.
-- If your app requests permission using [requestAccess(to:completion:)](./ekeventstore/requestaccess.md) or `requestAccess(to:)`, remove these instance methods from your source code.
+- If your app requests permission using requestAccess(to:completion:) or `requestAccess(to:)`, remove these instance methods from your source code.
 
 The `DropInLessons` app writes data to Calendar without performing any other operations on the user’s events. Because its workflow doesn’t interact with the user’s calendar data, the app isn’t required to include any calendar usage strings or prompt the user for access. [`EKEventStore`](./ekeventstore.md) allows apps to request permission from the user, and read and write data to Calendar. `DropInLessons` creates an instance of the event store, `store`.
 
@@ -150,7 +150,7 @@ To implement full access in your app, follow these steps:
 - Add the `NSCalendarsFullAccessUsageDescription` key to the `Info.plist` file of the target building your app.
 - To request full access to events, use `requestFullAccessToEvents(completion:)` or `requestFullAccessToEvents()`.
 
-Upon its first launch, the `MonthlyEvents` app registers for [EKEventStoreChanged](../Foundation/nsnotification/name/ekeventstorechanged.md) notifications to listen for any changes to the event store.
+Upon its first launch, the `MonthlyEvents` app registers for EKEventStoreChanged notifications to listen for any changes to the event store.
 
 ```swift
 let center = NotificationCenter.default
@@ -214,7 +214,7 @@ If you build your app with Xcode 15, link it against the iOS 17 SDK, and need to
 
 - Add [`NSCalendarsUsageDescription`](../BundleResources/information-property-list/nscalendarsusagedescription.md) to the `Info.plist` file of the target building your app. If your app that’s linked on iOS 10 through iOS 16 doesn’t include `NSCalendarsUsageDescription`, your app crashes.
 - To request access to events, use [`requestAccess(to:completion:)`](./ekeventstore/requestaccess%28to,completion%29.md) or `requestAccess(to: .event)`.
-- To determine whether your app is authorized to access the user’s calendar data, confirm that [authorizationStatus(for:)](./ekeventstore/authorizationstatus.md) is set to [`.authorized`](./ekauthorizationstatus.md).
+- To determine whether your app is authorized to access the user’s calendar data, confirm that authorizationStatus(for:) is set to [`.authorized`](./ekauthorizationstatus.md).
 
 > **Note**: The new request methods are unavailable on systems earlier than iOS 17, which may cause your app to crash when running on these versions. Check that these methods are available in the iOS version that you wish to run your app on before calling them in your app. See [Declaration Attributes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language) for details.
 

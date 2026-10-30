@@ -7,7 +7,7 @@
 Attributes that describe a device management service resource.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

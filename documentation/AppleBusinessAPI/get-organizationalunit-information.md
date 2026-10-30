@@ -7,7 +7,7 @@
 Get information about a specific organizational unit in an organization.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ### Example
 
@@ -84,8 +84,6 @@ curl "https://api-business.apple.com/v1/organizationalUnits/{id}" \
 ### Organizational Units
 - [Get Organizational Units](./get-organizational-units.md)
   Get a list of organizational units in an organization.
-- [Get User IDs for an Organizational Unit](./get-all-user-ids-for-an-organizationalunit.md)
-  Get a list of user IDs for an organizational unit in an organization.
 
 
 ---

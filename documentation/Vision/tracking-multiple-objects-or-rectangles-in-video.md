@@ -85,7 +85,7 @@ By iterating through each selected object or rectangle, creating a tracking requ
 
 ### Interpret Tracking Results
 
-Access tracking results through the request’s `results` property or its completion handler.  A single tracking request represents a single tracked object in a one-to-one relationship.  If a tracking request succeeds, its [results](./vnrequest/api-2867238-results.md) property contains [`VNDetectedObjectObservation`](./vndetectedobjectobservation.md) objects describing the tracked object’s new location in the frame.
+Access tracking results through the request’s `results` property or its completion handler.  A single tracking request represents a single tracked object in a one-to-one relationship.  If a tracking request succeeds, its results property contains [`VNDetectedObjectObservation`](./vndetectedobjectobservation.md) objects describing the tracked object’s new location in the frame.
 
 ```swift
 guard let results = processedRequest.results else {

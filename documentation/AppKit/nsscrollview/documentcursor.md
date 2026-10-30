@@ -24,7 +24,7 @@ var documentCursor: NSCursor? { get set }
 ### Related Documentation
 - [var documentCursor: NSCursor?](../nsclipview/documentcursor.md)
   The cursor object used when the pointer lies over the view.
-### Managing Graphics Attributes
+### Managing graphics attributes
 - [var backgroundColor: NSColor](./backgroundcolor.md)
   The color of the content view’s background.
 - [var drawsBackground: Bool](./drawsbackground.md)

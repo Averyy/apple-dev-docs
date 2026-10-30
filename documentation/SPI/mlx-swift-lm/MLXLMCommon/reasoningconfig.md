@@ -24,10 +24,12 @@ Rides on [`ModelConfiguration`](./modelconfiguration.md) (and therefore [`Resolv
 ## Topics
 
 ### Initializers
-- [init(startDelimiter: String, endDelimiter: String, promptStrategy: ReasoningPromptStrategy, isSpecialToken: Bool, implicitEndDelimiters: [String], budgetTransition: ReasoningBudgetTransition?)](./reasoningconfig/init%28startdelimiter,enddelimiter,promptstrategy,isspecialtoken,implicitenddelimiters,budgettransition%29.md)
+- [init(startDelimiter: String, endDelimiter: String, promptStrategy: ReasoningPromptStrategy, isSpecialToken: Bool, implicitEndDelimiters: [String], budgetTransition: ReasoningBudgetTransition?, channel: ReasoningChannel?)](./reasoningconfig/init%28startdelimiter,enddelimiter,promptstrategy,isspecialtoken,implicitenddelimiters,budgettransition,channel%29.md)
 ### Instance Properties
 - [var budgetTransition: ReasoningBudgetTransition?](./reasoningconfig/budgettransition.md)
   How this model safely transitions to its answer when a reasoning budget is exhausted, or `nil` when hard budget enforcement is unsupported.
+- [var channel: ReasoningChannel?](./reasoningconfig/channel.md)
+  When non-nil, [`startDelimiter`](./reasoningconfig/startdelimiter.md) opens a *labeled channel* rather than a reasoning span directly: a role label follows it and decides whether the span is reasoning or the answer. `nil` (the default) is the plain delimiter-pair protocol, e.g. `<think>` … `</think>`.
 - [var endDelimiter: String](./reasoningconfig/enddelimiter.md)
   The marker that closes a reasoning span (e.g. `</think>`).
 - [var implicitEndDelimiters: [String]](./reasoningconfig/implicitenddelimiters.md)
@@ -41,6 +43,8 @@ Rides on [`ModelConfiguration`](./modelconfiguration.md) (and therefore [`Resolv
 ### Type Properties
 - [static let alwaysOnThinking: ReasoningConfig](./reasoningconfig/alwaysonthinking.md)
   Always-on `<think>`/`</think>` with no prompt-level off switch (DeepSeek-R1 and its distills). The protocol does not claim a known-safe hard-budget transition; applications may opt into one explicitly after validating it for their exact model and tokenizer.
+- [static let gemma4: ReasoningConfig](./reasoningconfig/gemma4.md)
+  Gemma 4’s protocol: labeled channels (see [`gemma4`](./reasoningchannel/gemma4.md)), toggled via `enable_thinking`, whose template default is thinking off.
 - [static let thinkTagsWithEnableThinking: ReasoningConfig](./reasoningconfig/thinktagswithenablethinking.md)
   Generic `<think>`/`</think>` protocol toggled by the `enable_thinking` chat-template flag (default on).
 ### Default Implementations

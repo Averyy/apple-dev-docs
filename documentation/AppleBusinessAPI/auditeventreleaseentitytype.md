@@ -7,7 +7,7 @@
 Strings that represent the type of entity that conducted the release operation.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

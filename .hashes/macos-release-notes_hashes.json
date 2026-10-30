@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15-release-notes.md",
-      "hash": "b7025261b1db9e2c8a79f2b613c150526f21e9a26fb44d6e2126229d058826b9"
+      "hash": "f19f2451fc44759b72caf635386b8e7be6126d9595909f1171e202a575060962"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15_1-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.md",
@@ -454,7 +454,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15-release-notes.md",
-      "hash": "b7025261b1db9e2c8a79f2b613c150526f21e9a26fb44d6e2126229d058826b9"
+      "hash": "f19f2451fc44759b72caf635386b8e7be6126d9595909f1171e202a575060962"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.md",
@@ -506,12 +506,16 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/macos-release-notes/iWork.com",
-      "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_3-release-notes.json": [
+        "https://developer.apple.com/documentation/macos-release-notes/iWork.com"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14-release-notes.json": [
+        "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
+      ]
     },
     "total_pages": 126
   }

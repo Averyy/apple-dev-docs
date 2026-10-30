@@ -19,6 +19,10 @@ class NSBrowser
 @interface NSBrowser : NSControl
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 A browser displays information using a set of columns, which are indexed from left to right. Each successive column displays the next level down in the data hierarchy. This class uses the [`NSBrowserCell`](./nsbrowsercell.md) class to implement its user interface.

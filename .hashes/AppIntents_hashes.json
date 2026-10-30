@@ -4342,7 +4342,7 @@
     },
     "https://developer.apple.com/documentation/appintents/directing-app-intents-to-your-apps-scenes": {
       "file_path": "documentation/AppIntents/directing-app-intents-to-your-apps-scenes.md",
-      "hash": "56f0732b982204d2e50b55f1907f3cf45fd1f3f65238064a5e4694817d698008"
+      "hash": "d22867fa864aa411953a0bcca9972b5acb242ff098d30fa378d92abc6bf6b8aa"
     },
     "https://developer.apple.com/documentation/appintents/displaying-static-and-interactive-snippets": {
       "file_path": "documentation/AppIntents/displaying-static-and-interactive-snippets.md",
@@ -16822,7 +16822,7 @@
     },
     "https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri": {
       "file_path": "documentation/AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md",
-      "hash": "8fd2214e35de0afdf8d8da3f35ba99931892ea07e5f1a4e0b55d3006fc94336f"
+      "hash": "586ee28ce18474e99fab02dc6b856da39a52e2c37b2be4e485f49adc02ba9883"
     },
     "https://developer.apple.com/documentation/appintents/pushtotalktransmissionintent": {
       "file_path": "documentation/AppIntents/pushtotalktransmissionintent.md",
@@ -22170,7 +22170,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/directing-app-intents-to-your-apps-scenes.json": {
       "file_path": "documentation/AppIntents/directing-app-intents-to-your-apps-scenes.md",
-      "hash": "56f0732b982204d2e50b55f1907f3cf45fd1f3f65238064a5e4694817d698008"
+      "hash": "d22867fa864aa411953a0bcca9972b5acb242ff098d30fa378d92abc6bf6b8aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/displaying-static-and-interactive-snippets.json": {
       "file_path": "documentation/AppIntents/displaying-static-and-interactive-snippets.md",
@@ -34650,7 +34650,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri.json": {
       "file_path": "documentation/AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md",
-      "hash": "8fd2214e35de0afdf8d8da3f35ba99931892ea07e5f1a4e0b55d3006fc94336f"
+      "hash": "586ee28ce18474e99fab02dc6b856da39a52e2c37b2be4e485f49adc02ba9883"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/pushtotalktransmissionintent.json": {
       "file_path": "documentation/AppIntents/pushtotalktransmissionintent.md",

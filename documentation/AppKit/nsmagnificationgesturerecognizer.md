@@ -19,6 +19,11 @@ class NSMagnificationGestureRecognizer
 @interface NSMagnificationGestureRecognizer : NSGestureRecognizer
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 This object tracks pinch gestures on a track pad or other input device and stores the resulting magnification value for you to use in your code.
@@ -48,7 +53,7 @@ This gesture recognizer automatically sets the value of the [`delaysMagnificatio
 
 ## See Also
 
-### Standard Gestures
+### Standard gestures
 - [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
 - [class NSPressGestureRecognizer](./nspressgesturerecognizer.md)

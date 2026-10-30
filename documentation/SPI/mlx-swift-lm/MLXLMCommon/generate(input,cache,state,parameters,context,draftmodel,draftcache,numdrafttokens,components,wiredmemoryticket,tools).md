@@ -45,6 +45,8 @@ for await generation in stream {
     switch generation {
     case .chunk(let text):
         print("Generated text: \(text)")
+    case .reasoning(let text):
+        print("Thinking: \(text)")
     case .info(let info):
         print("Finished: \(info.tokensPerSecond) tokens/s.")
     case .toolCall(let call):

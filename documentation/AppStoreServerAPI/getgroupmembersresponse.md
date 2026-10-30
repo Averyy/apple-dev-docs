@@ -23,7 +23,7 @@ object GetGroupMembersResponse
 
 This response contains information that you request by calling the [`Get Group Members`](./get-group-members.md) endpoint.
 
-If [`hasMore`](./getgroupmembersresponse/hasmore.md) is `true`, call [`Get Group Members`](./get-group-members.md) again with the [`paginationToken`](./getgroupmembersresponse/paginationtoken.md) from this response to get the next set of members.
+If `hasMore` is `true`, call [`Get Group Members`](./get-group-members.md) again with the `paginationToken` from this response to get the next set of members.
 
 ## Topics
 

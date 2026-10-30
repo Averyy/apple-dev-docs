@@ -7,7 +7,7 @@
 Automate device management activities and view device information in Apple School Manager.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Overview
 

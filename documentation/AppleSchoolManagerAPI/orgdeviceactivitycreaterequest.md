@@ -7,7 +7,7 @@
 The request body you use to update the device management service for a device.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

@@ -7,7 +7,7 @@
 Attributes for an organization device’s AppleCare coverage resource.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

@@ -37,6 +37,8 @@ In response to this request, the user may choose to transfer sharing to the new 
 ### Managing Window Sharing
 - [var hasActiveWindowSharingSession: Bool](./hasactivewindowsharingsession.md)
   Indicates whether the receiver is the subject of an active SharePlay sharing session.
+- [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](./requestsharingofwindow%28_,completionhandler%29.md)
+- [func requestSharingOfWindow(usingPreview: NSImage, title: String, completionHandler: ((any Error)?) -> Void)](./requestsharingofwindow%28usingpreview,title,completionhandler%29.md)
 
 
 ---

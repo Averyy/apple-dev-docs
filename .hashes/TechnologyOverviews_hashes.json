@@ -134,7 +134,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/interface-fundamentals": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
     },
     "https://developer.apple.com/documentation/technologyoverviews/liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",
@@ -150,7 +150,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/preparing-your-app-for-iphone-duo": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "2da25364c293d2fd2bcb451d46a83b8040242faf32099dd8514a6adfbdf2affe"
+      "hash": "5615c5fb4b1cac95e3b0d0d93700645c9afc16e315f185acd25591267d9ec8a4"
     },
     "https://developer.apple.com/documentation/technologyoverviews/shared-data": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",
@@ -326,7 +326,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/preparing-your-app-for-iphone-duo.json": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "2da25364c293d2fd2bcb451d46a83b8040242faf32099dd8514a6adfbdf2affe"
+      "hash": "5615c5fb4b1cac95e3b0d0d93700645c9afc16e315f185acd25591267d9ec8a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/shared-data.json": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",
@@ -386,12 +386,16 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/technologyoverviews/documentation/Speech",
-      "https://developer.apple.com/documentation/technologyoverviews/documentation/security/notarizing-macos-software-before-distribution"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/built-in-intelligence.json": [
+        "https://developer.apple.com/documentation/technologyoverviews/documentation/Speech"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/distribution.json": [
+        "https://developer.apple.com/documentation/technologyoverviews/documentation/security/notarizing-macos-software-before-distribution"
+      ]
     },
     "total_pages": 96
   }

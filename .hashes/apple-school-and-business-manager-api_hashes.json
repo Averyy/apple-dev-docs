@@ -6,7 +6,7 @@
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog": {
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
-      "hash": "8cbea83ee09ab180192c41e5834796765a337b8783141656b12c334ce9bde315"
+      "hash": "8b4467636679a47d2f25e216a6d0dfdc00cb97fde2a7761f92fd4399730e117d"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api": {
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
@@ -18,7 +18,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": {
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
-      "hash": "8cbea83ee09ab180192c41e5834796765a337b8783141656b12c334ce9bde315"
+      "hash": "8b4467636679a47d2f25e216a6d0dfdc00cb97fde2a7761f92fd4399730e117d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.json": {
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
@@ -30,12 +30,14 @@
       "applebusinessapi": {},
       "appleschoolmanagerapi": {}
     },
-    "gone_links": [
-      "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
-      "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": [
+        "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
+        "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
+      ]
     },
     "total_pages": 6
   }

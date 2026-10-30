@@ -18,7 +18,7 @@ struct Gemma3TextConfiguration
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](./gemma3textconfiguration/init%28from%29.md)
+- [init(from: Decoder) throws](./gemma3textconfiguration/init%28from%29.md)
 ### Instance Properties
 - [var attentionHeads: Int](./gemma3textconfiguration/attentionheads.md)
 - [let finalLogitSoftcapping: Float?](./gemma3textconfiguration/finallogitsoftcapping.md)

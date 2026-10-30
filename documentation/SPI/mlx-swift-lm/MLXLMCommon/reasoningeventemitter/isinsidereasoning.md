@@ -21,6 +21,8 @@ var isInsideReasoning: Bool { get }
 
 The generation loop reads this to attribute generated tokens to the reasoning token count (one `.token` = one token), since the emitter itself only sees decoded text, not token IDs.
 
+Reading a channel’s label counts as inside: the channel is open, and the handful of label tokens are metadata that no answer will ever contain.
+
 
 ---
 

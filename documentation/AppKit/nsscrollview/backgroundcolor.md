@@ -29,7 +29,7 @@ This color is used to paint areas inside the content view that aren’t covered 
 ### Related Documentation
 - [var backgroundColor: NSColor](../nsclipview/backgroundcolor.md)
   The color of the clip view’s background.
-### Managing Graphics Attributes
+### Managing graphics attributes
 - [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean that indicates whether the scroll view draws its background.
 - [var borderType: NSBorderType](./bordertype.md)

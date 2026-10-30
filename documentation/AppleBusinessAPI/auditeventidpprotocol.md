@@ -7,7 +7,7 @@
 Strings that represent the federation protocol used by an identity provider.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

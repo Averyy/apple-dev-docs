@@ -134,7 +134,7 @@ Keyboard players appreciate using keyboard bindings to speed up their interactio
 #### Videos
 - [Make your game great with touch](https://developer.apple.com/videos/play/wwdc2026/358) - Dive deeper into the techniques you can use to create compelling touch experiences for your games. We’ll share expert insights from indie to AAA game development, explore best practices for intuitive touch controls, and show you how to take advantage of Apple technologies like Touch Controller framework and Metal for great performance.
 - [Design advanced games for Apple platforms](https://developer.apple.com/videos/play/wwdc2024/10085) - Learn how to adapt your high-end game so it feels at home on Mac, iPad, and iPhone. We’ll go over how to make your game look stunning on different displays, tailor your input and controls to be intuitive on each device, and take advantage of Apple technologies that deliver great player experiences.
-- [Explore game input in visionOS](https://developer.apple.com/videos/play/wwdc2024/10094) - Discover how to design and implement great input for your game in visionOS. Learn how system gestures let you provide frictionless ways for players to interact with your games. And explore best practices for supporting custom gestures and game controllers.
+- [Explore game input in visionOS](https://developer.apple.com/videos/play/wwdc2024/10094) - Discover how to design and implement great input for your game in visionOS. Learn how system gestures let you provide frictionless ways for players to interact with your games. And explore best practices for supporting custom gestures and game controllers.\n
 
 ## Change log
 | Date | Changes |

@@ -19,11 +19,17 @@ func touchesBegan(with event: NSEvent)
 - (void) touchesBeganWithEvent:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Discussion
 
 The system sends the event to the view under the touch in the key window. To get the set of touches that began for this view (or descendants of this view) call [`touches(matching:in:)`](../nsevent/touches%28matching,in%29.md) on `event` and pass [`began`](../nstouch/phase-swift.struct/began.md) for the phase send.
 
 This isn’t always the point of contact with the touch device. A touch that transitions from resting to active may be part of a [`touchesBegan(with:)`](./touchesbegan%28with%29.md) set.
+
+> ❗ **Important**: AppKit calls this method for indirect touches, such as those from a trackpad (and only if the view explicitly requests them). It doesn’t call this method for direct touches on a Sidecar-connected display or a Mac with a touch display. To handle touch input consistently across input types, use a [`NSGestureRecognizer`](../nsgesturerecognizer.md) instead of overriding this method. For more information, see [Handling AppKit gestures](../handling-appkit-gestures.md).
 
 ## Parameters
 

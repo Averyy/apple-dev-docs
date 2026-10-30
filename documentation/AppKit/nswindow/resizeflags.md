@@ -38,6 +38,7 @@ You can use this property to constrain the direction or amount of resizing. Beca
   Modifies and returns a frame rectangle so that its top edge lies on a specific screen.
 - [func cascadeTopLeft(from: NSPoint) -> NSPoint](./cascadetopleft%28from%29.md)
   Positions the window’s top-left to a given point.
+- [var cascadingReferenceFrame: NSRect](./cascadingreferenceframe.md)
 - [func setFrame(NSRect, display: Bool)](./setframe%28_,display%29.md)
   Sets the origin and size of the window’s frame rectangle according to a given frame rectangle, thereby setting its position and size onscreen.
 - [func setFrame(NSRect, display: Bool, animate: Bool)](./setframe%28_,display,animate%29.md)
@@ -56,8 +57,6 @@ You can use this property to constrain the direction or amount of resizing. Beca
   This action method simulates the user clicking the zoom box by momentarily highlighting the button and then zooming the window.
 - [func zoom(Any?)](./zoom%28_%29.md)
   Toggles the size and location of the window between its standard state (which the application provides as the best size to display the window’s data) and its user state (a new size and location the user may have set by moving or resizing the window).
-- [var resizeIncrements: NSSize](./resizeincrements.md)
-  The window’s resizing increments.
 
 
 ---

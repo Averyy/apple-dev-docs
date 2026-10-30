@@ -20,7 +20,7 @@ Call this endpoint to enumerate the customers that belong to a group. Get the `g
 
 The response, [`GetGroupMembersResponse`](./getgroupmembersresponse.md), contains a [`GroupMemberEntry`](./groupmemberentry.md) for each member. Each entry identifies the member by their [`appTransactionId`](./apptransactionid.md).
 
-Each response returns at most the number of members you request in the `limit` query parameter. If the [`hasMore`](./hasmore.md) field in the response is `true`, more members are available: call the endpoint again with the [`paginationToken`](./get-group-members/paginationtoken.md) from the previous response to get the next set.
+Each response returns at most the number of members you request in the `limit` query parameter. If the [`hasMore`](./hasmore.md) field in the response is `true`, more members are available: call the endpoint again with the `paginationToken` from the previous response to get the next set.
 
 The following request gets the first 50 members of a group:
 
@@ -32,7 +32,7 @@ Group membership is separate from any transaction information. To unlock content
 
 ### Test in the sandbox environment
 
-In the sandbox environment, this endpoint returns a placeholder response when you send the placeholder [`groupId`](./get-group-members/groupid.md) of `900000000000000000` that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns:
+In the sandbox environment, this endpoint returns a placeholder response when you send the placeholder `groupId` of `900000000000000000` that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns:
 
 ```json
 {

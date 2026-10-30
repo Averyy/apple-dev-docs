@@ -2026,13 +2026,15 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/apple_ads/creates-a-campaign",
-      "https://developer.apple.com/documentation/apple_ads/gets-reports-on-search-terms-within-a-campaign.-the-information-per-campaign-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter",
-      "https://developer.apple.com/documentation/apple_ads/gets-reports-on-targeting-searchterm-within-a-adgroup.-the-information-per-adgroup-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/apple_ads/apple-search-ads-campaign-management-api-5.json": [
+        "https://developer.apple.com/documentation/apple_ads/creates-a-campaign",
+        "https://developer.apple.com/documentation/apple_ads/gets-reports-on-search-terms-within-a-campaign.-the-information-per-campaign-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter",
+        "https://developer.apple.com/documentation/apple_ads/gets-reports-on-targeting-searchterm-within-a-adgroup.-the-information-per-adgroup-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter"
+      ]
     },
     "total_pages": 506
   }

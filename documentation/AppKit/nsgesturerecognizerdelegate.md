@@ -49,7 +49,7 @@ Use the methods in this protocol to establish dynamic dependencies between gestu
 
 ## See Also
 
-### Custom Gestures
+### Custom gestures
 - [class NSGestureRecognizer](./nsgesturerecognizer.md)
   An object that monitors events and calls its action method when a predefined sequence of events occur.
 

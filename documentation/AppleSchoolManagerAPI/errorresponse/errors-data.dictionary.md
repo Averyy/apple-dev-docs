@@ -7,7 +7,7 @@
 The details about an error that returns when an API request isn’t successful.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

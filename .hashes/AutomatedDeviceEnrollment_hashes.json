@@ -2,11 +2,11 @@
   "hashes": {
     "https://developer.apple.com/documentation/AutomatedDeviceEnrollment": {
       "file_path": "documentation/AutomatedDeviceEnrollment/AutomatedDeviceEnrollment.md",
-      "hash": "8b55b07d288466f8df795245ea6731a4b50b93b8431f65c1c56aa1987f4ebf19"
+      "hash": "2c17cd1a7363209a7397f686f14d42b4199a723569d6337ff6e769c616742e13"
     },
     "https://developer.apple.com/tutorials/data/documentation/AutomatedDeviceEnrollment.json": {
       "file_path": "documentation/AutomatedDeviceEnrollment/AutomatedDeviceEnrollment.md",
-      "hash": "8b55b07d288466f8df795245ea6731a4b50b93b8431f65c1c56aa1987f4ebf19"
+      "hash": "2c17cd1a7363209a7397f686f14d42b4199a723569d6337ff6e769c616742e13"
     }
   },
   "metadata": {

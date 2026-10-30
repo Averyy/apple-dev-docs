@@ -41,7 +41,7 @@ The [`verifyReceipt`](./verify-receipt.md) endpoint returns this response.
 - `latest_receipt_info` ([responseBody.Latest_receipt_info]) *(deprecated)*: An array that contains all in-app purchase transactions. This excludes transactions for consumable products that your app marks as finished.
 - `pending_renewal_info` ([responseBody.Pending_renewal_info]) *(deprecated)*: In the JSON file, an array where each element contains the pending renewal information for each auto-renewable subscription the `product_id` identifies. This only returns for app receipts that contain auto-renewable subscriptions.
 - `receipt` (responseBody.Receipt) *(deprecated)*: A JSON representation of the receipt that you send for verification.
-- `status` (status) *(deprecated)*: Either `0` if the receipt is valid, or a status code if there’s an error. The status code reflects the status of the app receipt as a whole. See [`status`](./responsebody/status.md) for possible status codes and descriptions.
+- `status` (status) *(deprecated)*: Either `0` if the receipt is valid, or a status code if there’s an error. The status code reflects the status of the app receipt as a whole. See `status` for possible status codes and descriptions.
 
 ## See Also
 

@@ -19,6 +19,10 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Discussion
 
 The object in this property must implement the method specified by the [`action`](./action.md) property.

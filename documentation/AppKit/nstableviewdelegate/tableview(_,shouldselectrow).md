@@ -20,6 +20,10 @@ optional func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> B
 - (BOOL) tableView:(NSTableView *) tableView shouldSelectRow:(NSInteger) row;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 [`true`](../../Swift/true.md) to permit selection of the row, [`false`](../../Swift/false.md) to deny selection.

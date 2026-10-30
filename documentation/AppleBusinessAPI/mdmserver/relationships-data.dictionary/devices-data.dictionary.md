@@ -7,7 +7,7 @@
 The data and links that describe the relationship between the resources.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

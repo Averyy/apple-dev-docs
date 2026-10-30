@@ -33,6 +33,22 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
 
 > ❗ **Important**:  Use the Background Assets framework only to download additional assets for your app; don’t use it for any other purposes. For example, don’t collect or transmit data to identify a user or device or to perform advertising or advertising measurement.
 
+### Migrate from On-Demand Resources
+
+If your app uses the deprecated [On-Demand Resources](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html#//apple_ref/doc/uid/TP40015083-CH2-SW1) system, you can migrate to Background Assets. Background Assets offers several advantages over On-Demand Resources:
+
+- Background Assets allows you to update assets without having to submit a new app build.
+- You can host your assets on your own servers or use Apple-hosted assets.
+- Managed Background Assets automatically manages asset downloads, updates, compression, and more.
+
+To migrate an app that uses On-Demand Resources to Background Assets, do the following:
+
+- In Xcode, set the “Enable On-Demand Resources” build setting to “No” at the project level and in any target where you overrode the project-level setting.
+- Remove any On-Demand Resources tags you added in your Xcode project.
+- Update your code to remove any mention of [`NSBundleResourceRequest`](../Foundation/nsbundleresourcerequest.md).
+
+Then adopt the Background Assets framework to replace your uses of On-Demand Resources.
+
 ## Topics
 
 ### Essentials

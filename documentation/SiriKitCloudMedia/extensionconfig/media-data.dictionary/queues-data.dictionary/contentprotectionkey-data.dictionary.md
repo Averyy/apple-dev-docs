@@ -27,7 +27,7 @@ object ExtensionConfig.Media.Queues.ContentProtectionKey
 
 - `cks` (ExtensionConfig.Media.Queues.ContentProtectionKey.Cks) *(required)*: The configuration details of your service’s content protection system.
 - `hdr` (ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr): The headers to include with requests to this endpoint.
-- `url` (string) *(required)*: The relative path for the client to access the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](./contentprotectionkey-data.dictionarykey.md).
+- `url` (string) *(required)*: The relative path for the client to access the `contentProtectionKey` endpoint. For more information, see `contentProtectionKey`.
 
   **Default**: `/queues/contentProtectionKey`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 

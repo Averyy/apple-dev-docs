@@ -25,7 +25,7 @@ See [`NSBorderType`](../nsbordertype.md) for a list of possible values.
 
 ## See Also
 
-### Managing Graphics Attributes
+### Managing graphics attributes
 - [var backgroundColor: NSColor](./backgroundcolor.md)
   The color of the content view’s background.
 - [var drawsBackground: Bool](./drawsbackground.md)

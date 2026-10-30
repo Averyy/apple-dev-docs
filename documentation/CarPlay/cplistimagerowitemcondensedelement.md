@@ -50,6 +50,8 @@ class CPListImageRowItemCondensedElement
 - [Equatable](../Swift/equatable.md)
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

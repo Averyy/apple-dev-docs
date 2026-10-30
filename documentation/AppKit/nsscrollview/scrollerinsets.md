@@ -21,7 +21,7 @@ var scrollerInsets: NSEdgeInsets { get set }
 
 ## See Also
 
-### Managing Insets
+### Managing insets
 - [var automaticallyAdjustsContentInsets: Bool](./automaticallyadjustscontentinsets.md)
   A Boolean that indicates whether the scroll view automatically adjusts its content insets.
 - [var contentInsets: NSEdgeInsets](./contentinsets.md)

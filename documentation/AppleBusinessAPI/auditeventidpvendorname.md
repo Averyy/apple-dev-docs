@@ -7,7 +7,7 @@
 Strings that represent the identity provider vendor.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

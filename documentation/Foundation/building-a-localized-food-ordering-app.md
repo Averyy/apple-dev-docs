@@ -47,7 +47,7 @@ func localizedPrice(_ size: FoodSize) -> String {
 
 As with the list of ingredients earlier, the [formatted(_:)](../Swift/binaryinteger/formatted%28_%29-73k3e.md) method applies directly to the type it formats. In this case, the formatted type is a [Decimal](./decimal.md); this type conforms to Swift’s [BinaryInteger](../Swift/binaryinteger.md), which defines the `formatted(_:)` method. A [FormatStyle](./formatstyle.md) parameter indicates that the formatting should format the price as a currency, using U.S. dollars.
 
-For more sophisticated formatting needs, some format styles support chaining modifier methods to customize a default style. The Caffé app includes a companion app for Apple Watch that shows the next date when the user is eligible to receive a free coffee. The [Date](./date.md) presented in this view customizes the default [dateTime](./date/formatstyle/api-3798884-datetime.md) format style to show only the weekday, hour, and minute:
+For more sophisticated formatting needs, some format styles support chaining modifier methods to customize a default style. The Caffé app includes a companion app for Apple Watch that shows the next date when the user is eligible to receive a free coffee. The [Date](./date.md) presented in this view customizes the default dateTime format style to show only the weekday, hour, and minute:
 
 ```swift
 var str = date.formatted(.dateTime

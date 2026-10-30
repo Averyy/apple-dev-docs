@@ -19,6 +19,10 @@ func location(in view: NSView?) -> NSPoint
 - (NSPoint) locationInView:(NSView *) view;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 The point at which the gesture occurred. The returned point is in the coordinate system of the specified view, or in the coordinate system of the window if you specified `nil` for the view parameter.

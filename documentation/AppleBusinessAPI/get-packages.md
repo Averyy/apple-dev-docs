@@ -7,7 +7,7 @@
 Get a list of packages for an organization using Apple Business’s built-in device management.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ### Example
 

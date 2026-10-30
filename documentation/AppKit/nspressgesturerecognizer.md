@@ -19,6 +19,11 @@ class NSPressGestureRecognizer
 @interface NSPressGestureRecognizer : NSGestureRecognizer
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 Use a press gesture recognizer to configure which button the user must hold and the length of time they must hold it. You can also specify how far the mouse can move for a valid gesture.
@@ -54,7 +59,7 @@ Upon creation, the gesture recognizer recognizes press gestures involving only t
 
 ## See Also
 
-### Standard Gestures
+### Standard gestures
 - [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
 - [class NSPanGestureRecognizer](./nspangesturerecognizer.md)

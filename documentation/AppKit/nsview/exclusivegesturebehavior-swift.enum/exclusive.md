@@ -19,6 +19,10 @@ case exclusive
 NSViewExclusiveGestureBehaviorExclusive
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../../handling-appkit-gestures.md)
+
 ## See Also
 
 ### Getting exclusivity values

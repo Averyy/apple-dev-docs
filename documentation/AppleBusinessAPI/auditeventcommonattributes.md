@@ -7,7 +7,7 @@
 The common attributes for all audit events.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

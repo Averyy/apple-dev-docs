@@ -24,7 +24,7 @@ var documentView: NSView? { get set }
 ### Related Documentation
 - [var documentView: NSView?](../nsclipview/documentview.md)
   The clip view’s document view.
-### Managing the Views
+### Managing the views
 - [var contentView: NSClipView](./contentview.md)
   The scroll view’s content view, the view that clips the document view.
 - [func addFloatingSubview(NSView, for: NSEvent.GestureAxis)](./addfloatingsubview%28_,for%29.md)

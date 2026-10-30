@@ -21,6 +21,7 @@ func menu(for event: NSEvent) -> NSMenu?
 
 ## Mentions
 
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
 ## Discussion

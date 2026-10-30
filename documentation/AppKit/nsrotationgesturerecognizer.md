@@ -19,6 +19,11 @@ class NSRotationGestureRecognizer
 @interface NSRotationGestureRecognizer : NSGestureRecognizer
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 This rotation gesture implies that the underlying view should rotate in a matching direction. The gesture is recognized when the trackpad touches end.
@@ -50,7 +55,7 @@ Upon creation, the gesture recognizer sets the value of the [`delaysRotationEven
 
 ## See Also
 
-### Standard Gestures
+### Standard gestures
 - [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
 - [class NSPressGestureRecognizer](./nspressgesturerecognizer.md)

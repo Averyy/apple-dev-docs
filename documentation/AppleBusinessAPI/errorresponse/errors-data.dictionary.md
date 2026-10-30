@@ -7,7 +7,7 @@
 The details about an error that returns when an API request isn’t successful.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

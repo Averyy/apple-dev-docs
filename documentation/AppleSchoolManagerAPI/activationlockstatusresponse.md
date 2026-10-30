@@ -7,7 +7,7 @@
 A response that contains the Activation Lock status of an organization device.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

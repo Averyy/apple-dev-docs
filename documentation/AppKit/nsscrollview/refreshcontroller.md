@@ -23,6 +23,18 @@ var refreshController: NSRefreshController? { get set }
 
 Setting this property adds the refresh controller to the scroll view, enabling pull-to-refresh functionality. Set to nil to remove it.
 
+## See Also
+
+### Configuring touch scrolling
+- [var isTouchScrollingEnabled: Bool](./istouchscrollingenabled.md)
+  Enable touch scrolling
+- [var minimumNumberOfTouchesForScrolling: Int](./minimumnumberoftouchesforscrolling.md)
+  The minimum number of touches needed for scrolling
+- [var maximumNumberOfTouchesForScrolling: Int](./maximumnumberoftouchesforscrolling.md)
+  The maximum number of touches needed for scrolling
+- [var scrollGestureForRelationships: NSGestureRecognizer](./scrollgestureforrelationships.md)
+  A gesture recognizer for setting up failure or exclusion relationships against scrolling gestures
+
 
 ---
 

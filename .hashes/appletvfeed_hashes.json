@@ -618,11 +618,25 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/rating-data.dictionary.json": [
+        "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/rating-data.dictionary.json": [
+        "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/rating-data.dictionary.json": [
+        "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/rating-data.dictionary.json": [
+        "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/rating-data.dictionary.json": [
+        "https://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id"
+      ]
     },
     "total_pages": 154
   }

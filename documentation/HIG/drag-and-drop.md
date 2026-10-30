@@ -22,9 +22,9 @@ Depending on various factors, the drag and drop action might *move* the selected
 People use different interactions to perform drag and drop depending on platform. For example:
 
 - In visionOS, people pinch and hold a virtual object while dragging it to a new location in any direction, including along the z-axis.
-- iOS and iPadOS support drag and drop through gestures on the touchscreen, interactions with a pointing device, and through full keyboard-access mode.
+- iOS and iPadOS support drag and drop through gestures on the touchscreen, interactions with a pointing device, and through Full Keyboard Access.
 - Universal Control lets people drag content between their Mac and iPad.
-- On a Mac, people can interact with a pointing device, use full keyboard access mode, or use VoiceOver to perform drag and drop.
+- On a Mac, people can use a pointing device, use Full Keyboard Access or VoiceOver, or interact directly with a touch display to perform drag and drop.
 
 ## Best practices
 **As much as possible, support drag and drop throughout your app.** Most people are familiar with drag and drop and they often try it everywhere. When you use system-provided components — such as text fields and text views — you get built-in support for drag and drop.

@@ -7,7 +7,7 @@
 A response that contains a single organization device activity resource.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

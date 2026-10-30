@@ -38,7 +38,7 @@ For an existing scroll view, you can simply use the [`contentSize`](./contentsiz
 
 ## See Also
 
-### Calculating Layout
+### Calculating layout
 - [class func frameSize(forContentSize: NSSize, horizontalScrollerClass: AnyClass?, verticalScrollerClass: AnyClass?, borderType: NSBorderType, controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> NSSize](./framesize%28forcontentsize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle%29.md)
   Returns the frame size of a scroll view that contains a content view with the specified size.
 - [+ frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:](./framesizeforcontentsize_hashorizontalscroller_hasverticalscroller_bordertype_.md)

@@ -19,6 +19,10 @@ class var modifierFlags: NSEvent.ModifierFlags { get }
 @property (class, readonly) NSEventModifierFlags modifierFlags;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 A mask of the current modifiers using the values in `Modifier Flags`.

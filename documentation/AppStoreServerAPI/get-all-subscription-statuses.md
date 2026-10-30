@@ -18,7 +18,7 @@ Get the statuses for all of a customer’s auto-renewable subscriptions in your 
 
 This API returns the status for all of the customer’s subscriptions, organized by their subscription group identifier.
 
-Specify multiple values for the `status` query parameter to get a response that contains subscriptions with statuses that match any of the values. For example, the following request returns subscriptions that are active ([`status`](./get-all-subscription-statuses/status.md) value of `1`) and subscriptions that are in the Billing Grace Period ([`status`](./get-all-subscription-statuses/status.md) value of `4`):
+Specify multiple values for the `status` query parameter to get a response that contains subscriptions with statuses that match any of the values. For example, the following request returns subscriptions that are active (`status` value of `1`) and subscriptions that are in the Billing Grace Period (`status` value of `4`):
 
 ```javascript
 GET https://api.storekit.apple.com/inApps/v1/subscriptions/{anyTransactionId}?status=1&status=4
@@ -36,7 +36,7 @@ GET https://api.storekit.apple.com/inApps/v1/subscriptions/{anyTransactionId}?st
 
 ### Query Parameters
 
-- `status` ([status]): An optional filter that indicates the [`status`](./get-all-subscription-statuses/status.md) of subscriptions to include in the response. Your query may specify more than one `status` query parameter.
+- `status` ([status]): An optional filter that indicates the `status` of subscriptions to include in the response. Your query may specify more than one `status` query parameter.
 
 ## Responses
 

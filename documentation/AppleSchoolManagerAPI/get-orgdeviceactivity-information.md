@@ -7,7 +7,7 @@
 Get information for an organization device activity that a device management action, such as assigning or unassigning, creates.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Overview
 

@@ -29,7 +29,7 @@ Setting an scroll view’s scroller style sets the style of both the horizontal 
 
 ## See Also
 
-### Scroller Style
+### Scroller style
 - [var scrollerKnobStyle: NSScroller.KnobStyle](./scrollerknobstyle.md)
   The knob style of scroll views that use the overlay scroller style.
 

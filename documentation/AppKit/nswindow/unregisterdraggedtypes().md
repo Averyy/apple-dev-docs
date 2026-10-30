@@ -22,6 +22,7 @@ func unregisterDraggedTypes()
 ## See Also
 
 ### Dragging Items
+- [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./begindraggingsession%28items,event,source%29.md)
 - [func registerForDraggedTypes([NSPasteboard.PasteboardType])](./registerfordraggedtypes%28_%29.md)
   Registers a set of pasteboard types that the window accepts as the destination of an image-dragging session.
 

@@ -19,6 +19,10 @@ class NSTouch
 @interface NSTouch : NSObject
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 A touch event is not persistent throughout the touch. A touch creates new instances as it progresses. Use the identity property to follow a specific touch across its lifetime.

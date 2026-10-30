@@ -7,7 +7,7 @@
 Strings that represent AppleCare coverage payment types.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

@@ -51116,6 +51116,10 @@
       "file_path": "documentation/iokit/kusbhostconnectortype/kusbtypeminiabconnector.md",
       "hash": "66706f1e461958035b234c5d574827a38bc21791c02b7a592d9e6553a6cb43fa"
     },
+    "https://developer.apple.com/documentation/iokit/kusbhostportpropertystatus": {
+      "file_path": "documentation/iokit/kusbhostportpropertystatus.md",
+      "hash": "711b654a9f63f8c12c96ca431436639624dc724b307291a86dd47ad3568b00a3"
+    },
     "https://developer.apple.com/documentation/iokit/kusbhubdontallowlowpower": {
       "file_path": "documentation/iokit/kusbhubdontallowlowpower.md",
       "hash": "36626618b931b843214aeb9d9900cb2d3e66b48bec56ef79cd8b22ca18cc3035"
@@ -108584,6 +108588,10 @@
       "file_path": "documentation/iokit/kusbhostconnectortype/kusbtypeminiabconnector.md",
       "hash": "66706f1e461958035b234c5d574827a38bc21791c02b7a592d9e6553a6cb43fa"
     },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/kusbhostportpropertystatus.json": {
+      "file_path": "documentation/iokit/kusbhostportpropertystatus.md",
+      "hash": "711b654a9f63f8c12c96ca431436639624dc724b307291a86dd47ad3568b00a3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iokit/kusbhubdontallowlowpower.json": {
       "file_path": "documentation/iokit/kusbhubdontallowlowpower.md",
       "hash": "36626618b931b843214aeb9d9900cb2d3e66b48bec56ef79cd8b22ca18cc3035"
@@ -114951,6 +114959,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 28734
+    "total_pages": 28736
   }
 }

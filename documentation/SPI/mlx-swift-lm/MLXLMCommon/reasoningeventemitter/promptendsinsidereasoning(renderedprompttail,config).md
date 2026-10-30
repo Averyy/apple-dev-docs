@@ -21,7 +21,9 @@ static func promptEndsInsideReasoning(renderedPromptTail tail: String, config: R
 
 The headline families (Qwen3 with thinking enabled, DeepSeek-R1) prefill the opening delimiter into the assistant generation prompt, so the model’s first generated token is already reasoning content and it never emits an opening `<think>` — only the closing `</think>`. An emitter started `Outside` would misroute the entire thought block to `.response` and leak a bare `</think>`.
 
-The check must NOT be a naive `hasSuffix(startDelimiter)`: templates routinely append a trailing newline (`<think>\n`) after the prefill, so a strict suffix test returns false and silently misroutes 100% of reasoning. Instead: trim trailing whitespace, then test whether the last start delimiter is not followed by a matching end delimiter.
+The check must NOT be a naive `hasSuffix(startDelimiter)`: templates routinely append a trailing newline (`<think>\n`) after the prefill, so a strict suffix test returns false and silently misroutes 100% of reasoning. Instead: trim trailing whitespace, then require the prompt to end with the start delimiter, or for a labeled channel, with the start delimiter and a label.
+
+A start delimiter followed by any other text came from earlier content, such as a user message or a tool result. A typed `<think>` tokenizes to the template’s own id, so only its position tells the two apart.
 
 
 ---

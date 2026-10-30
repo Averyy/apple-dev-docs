@@ -29,9 +29,11 @@ See [`NSScrollView.Elasticity`](./elasticity.md) for possible values.
 
 ## See Also
 
-### Specifying the Scroll View Elasticity
+### Specifying the scroll view elasticity
 - [var verticalScrollElasticity: NSScrollView.Elasticity](./verticalscrollelasticity.md)
   The scroll view’s vertical scrolling elasticity mode.
+- [NSScrollView.Elasticity](./elasticity.md)
+  These constants determine the elasticity behavior for an axis of the scrollview.
 
 
 ---

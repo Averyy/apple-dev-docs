@@ -49,6 +49,7 @@ Typically, the system invokes the [`zoom(_:)`](./zoom%28_%29.md) method after a 
   Modifies and returns a frame rectangle so that its top edge lies on a specific screen.
 - [func cascadeTopLeft(from: NSPoint) -> NSPoint](./cascadetopleft%28from%29.md)
   Positions the window’s top-left to a given point.
+- [var cascadingReferenceFrame: NSRect](./cascadingreferenceframe.md)
 - [func setFrame(NSRect, display: Bool)](./setframe%28_,display%29.md)
   Sets the origin and size of the window’s frame rectangle according to a given frame rectangle, thereby setting its position and size onscreen.
 - [func setFrame(NSRect, display: Bool, animate: Bool)](./setframe%28_,display,animate%29.md)
@@ -67,8 +68,6 @@ Typically, the system invokes the [`zoom(_:)`](./zoom%28_%29.md) method after a 
   This action method simulates the user clicking the zoom box by momentarily highlighting the button and then zooming the window.
 - [var resizeFlags: NSEvent.ModifierFlags](./resizeflags.md)
   The flags field of the event record for the mouse-down event that initiated the resizing session.
-- [var resizeIncrements: NSSize](./resizeincrements.md)
-  The window’s resizing increments.
 
 
 ---

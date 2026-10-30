@@ -5,7 +5,7 @@
 **Role**: Web Service Endpoint
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Endpoint
 

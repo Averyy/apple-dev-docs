@@ -19,7 +19,7 @@ init?(coder: NSCoder)
 
 ## See Also
 
-### Initializers
+### Creating a scroll view
 - [init(frame: NSRect)](./init%28frame%29.md)
 
 

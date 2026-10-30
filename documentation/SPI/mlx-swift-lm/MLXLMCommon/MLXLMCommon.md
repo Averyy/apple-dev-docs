@@ -240,7 +240,7 @@ Common language model code.
 - [struct DeepSeekR1ConventionsResolver](./deepseekr1conventionsresolver.md)
   Recognizes DeepSeek-R1 and its distills by repo id.
 - [struct DefaultMessageGenerator](./defaultmessagegenerator.md)
-  Default implementation of [`MessageGenerator`](./messagegenerator.md) that produces `role` and `content`, plus `name`, `tool_call_id`, and `tool_calls` when present.
+  Default implementation of [`MessageGenerator`](./messagegenerator.md) that produces `role` and `content`, plus `name`, `tool_call_id`, `tool_calls`, and `reasoning_content` when present.
 - [struct DeferredTokenLogProbabilities](./deferredtokenlogprobabilities.md)
   Log probabilities for one generated token that are still on the GPU.
 - [struct EmbeddingGemma2Configuration](./embeddinggemma2configuration.md)
@@ -349,6 +349,8 @@ Common language model code.
   Emits raw token IDs and completion information as [`TokenGeneration`](./tokengeneration.md) events.
 - [struct ReasoningBudgetTransition](./reasoningbudgettransition.md)
   A model-protocol transition used when a reasoning budget is exhausted.
+- [struct ReasoningChannel](./reasoningchannel.md)
+  The labeled-channel shape of a reasoning protocol: the start delimiter opens a *channel* whose role is named by a short label that follows it, and one shared end delimiter closes every channel whatever its role.
 - [struct ReasoningConfig](./reasoningconfig.md)
   Describes a model’s reasoning (chain-of-thought) protocol: the delimiters that bracket its thinking in the decoded generation stream, and how thinking is toggled at prompt time.
 - [struct ReasoningEventEmitter](./reasoningeventemitter.md)
@@ -467,14 +469,6 @@ Common language model code.
   Check if model’s cache can be trimmed.
 - [func canTrimPromptCache([KVCache], numTokens: Int) -> Bool](./cantrimpromptcache%28_,numtokens%29.md)
   Whether every layer retains enough history to rewind exactly by `numTokens`.
-- [func compile(shapeless: Bool, @Sendable (MLXArray, MLXArray) -> MLXArray) -> @Sendable (MLXArray, MLXArray) -> MLXArray](./compile%28shapeless,_%29-2k0s9.md)
-  Overload of [`compile(shapeless:_:)`](./compile%28shapeless,_%29-8vkh0.md) for two inputs and one output.
-- [func compile(shapeless: Bool, @Sendable (MLXArray) -> MLXArray) -> @Sendable (MLXArray) -> MLXArray](./compile%28shapeless,_%29-4y77i.md)
-  Overload of [`compile(shapeless:_:)`](./compile%28shapeless,_%29-8vkh0.md) for one input and one output.
-- [func compile(shapeless: Bool, @Sendable (MLXArray, MLXArray, MLXArray) -> MLXArray) -> @Sendable (MLXArray, MLXArray, MLXArray) -> MLXArray](./compile%28shapeless,_%29-7y0gn.md)
-  Overload of [`compile(shapeless:_:)`](./compile%28shapeless,_%29-8vkh0.md) for three inputs and one output.
-- [func compile(shapeless: Bool, @Sendable ([MLXArray]) -> [MLXArray]) -> @Sendable ([MLXArray]) -> [MLXArray]](./compile%28shapeless,_%29-8vkh0.md)
-  Compiles a function that reads nothing but its arguments.
 - [func convert(modelDirectory: URL, tokenizerDirectory: URL?, model: BaseLanguageModel, to: URL, bits: Int?, groupSize: Int?, mode: QuantizationMode, perLayerQuantization: BaseConfiguration.PerLayerQuantization?) throws -> ModelConversionResult](./convert%28modeldirectory,tokenizerdirectory,model,to,bits,groupsize,mode,perlayerquantization%29.md)
   Quantize and save an already-instantiated model from a compatible safetensors directory.
 - [func convert(modelDirectory: URL, tokenizerDirectory: URL?, model: BaseLanguageModel, to: URL, options: ModelConversionOptions, progressHandler: @Sendable (ModelConversionProgress) -> Void, perLayerQuantization: BaseConfiguration.PerLayerQuantization?) throws -> ModelConversionResult](./convert%28modeldirectory,tokenizerdirectory,model,to,options,progresshandler,perlayerquantization%29.md)
@@ -511,7 +505,7 @@ Common language model code.
   Given prompt tokens generate text using the given model and parameters.
 - [func generateLoopTask<Handler>(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming any TokenIteratorProtocol, wiredMemoryTicket: WiredMemoryTicket?, includeStopToken: Bool, handler: consuming Handler) -> (AsyncStream<Handler.Output>, Task<Void, Never>)](./generatelooptask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,includestoptoken,handler%29.md)
   Runs a token iterator with a custom output handler.
-- [func generateTask<TOKEN>(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming TOKEN, wiredMemoryTicket: WiredMemoryTicket?, tools: [[String : any Sendable]]?, toolCallPolicy: ToolCallPolicy) -> (AsyncStream<Generation>, Task<Void, Never>)](./generatetask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,tools,toolcallpolicy%29.md)
+- [func generateTask<TOKEN>(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming TOKEN, wiredMemoryTicket: WiredMemoryTicket?, tools: [[String : any Sendable]]?, toolCallPolicy: ToolCallPolicy, reasoningPrimedInside: Bool) -> (AsyncStream<Generation>, Task<Void, Never>)](./generatetask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,tools,toolcallpolicy,reasoningprimedinside%29.md)
   Low-level token generation returning an `AsyncStream<Generation>` and a `Task`.
 - [func generateTokenTask(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming TokenIterator, includeStopToken: Bool, wiredMemoryTicket: WiredMemoryTicket?) -> (AsyncStream<TokenGeneration>, Task<Void, Never>)](./generatetokentask%28prompttokencount,modelconfiguration,tokenizer,iterator,includestoptoken,wiredmemoryticket%29.md)
   Low-level raw token generation using a `TokenIterator`, returning an `AsyncStream<TokenGeneration>` and a `Task`.

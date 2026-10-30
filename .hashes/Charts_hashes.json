@@ -1374,7 +1374,7 @@
     },
     "https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts": {
       "file_path": "documentation/Charts/creating-a-chart-using-swift-charts.md",
-      "hash": "f86de4eee1094eae59e75f7322fb2443f2f12e4e678c6579a86a73e5be9dd075"
+      "hash": "4902d16d9d0f9456c245a7b8035eb57d3a1a3650458520ae42e8f90e02916f9e"
     },
     "https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts": {
       "file_path": "documentation/Charts/creating-a-data-visualization-dashboard-with-swift-charts.md",
@@ -1382,7 +1382,7 @@
     },
     "https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts": {
       "file_path": "documentation/Charts/customizing-axes-in-swift-charts.md",
-      "hash": "1d837fdf413ca38a77094158e29a92f6a997bdac2df51977567b550512ab9c9b"
+      "hash": "20e7498a2fbc7776e74bc58403800a207a1b7111d88ac291da18470042d54931"
     },
     "https://developer.apple.com/documentation/charts/datebins": {
       "file_path": "documentation/Charts/datebins.md",
@@ -3758,7 +3758,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/creating-a-chart-using-swift-charts.json": {
       "file_path": "documentation/Charts/creating-a-chart-using-swift-charts.md",
-      "hash": "f86de4eee1094eae59e75f7322fb2443f2f12e4e678c6579a86a73e5be9dd075"
+      "hash": "4902d16d9d0f9456c245a7b8035eb57d3a1a3650458520ae42e8f90e02916f9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts.json": {
       "file_path": "documentation/Charts/creating-a-data-visualization-dashboard-with-swift-charts.md",
@@ -3766,7 +3766,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/customizing-axes-in-swift-charts.json": {
       "file_path": "documentation/Charts/customizing-axes-in-swift-charts.md",
-      "hash": "1d837fdf413ca38a77094158e29a92f6a997bdac2df51977567b550512ab9c9b"
+      "hash": "20e7498a2fbc7776e74bc58403800a207a1b7111d88ac291da18470042d54931"
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/datebins.json": {
       "file_path": "documentation/Charts/datebins.md",

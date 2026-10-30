@@ -7,7 +7,7 @@
 Strings that represent the operational status of a device management service.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

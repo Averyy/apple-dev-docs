@@ -426,7 +426,7 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/receiving-journaling-suggestions-from-system-notifications": {
       "file_path": "documentation/JournalingSuggestions/receiving-journaling-suggestions-from-system-notifications.md",
-      "hash": "e352364f6af557c0b48fc12c8a482e4dbd445d13a4c10d8ad24bd9a41a889193"
+      "hash": "3962ee4a23e68142c101506915ffa0068ecacab81c242a2417c26f56bbe3fcee"
     },
     "https://developer.apple.com/tutorials/data/documentation/JournalingSuggestions.json": {
       "file_path": "documentation/JournalingSuggestions/JournalingSuggestions.md",
@@ -854,7 +854,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/receiving-journaling-suggestions-from-system-notifications.json": {
       "file_path": "documentation/JournalingSuggestions/receiving-journaling-suggestions-from-system-notifications.md",
-      "hash": "e352364f6af557c0b48fc12c8a482e4dbd445d13a4c10d8ad24bd9a41a889193"
+      "hash": "3962ee4a23e68142c101506915ffa0068ecacab81c242a2417c26f56bbe3fcee"
     }
   },
   "metadata": {

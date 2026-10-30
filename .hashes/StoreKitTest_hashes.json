@@ -2010,11 +2010,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/storekittest/skadnetwork_linkid"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.json": [
+        "https://developer.apple.com/documentation/storekittest/skadnetwork_linkid"
+      ]
     },
     "total_pages": 502
   }

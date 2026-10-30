@@ -25,7 +25,7 @@ When the value of this property is [`true`](../../Swift/true.md), the scroll vie
 
 ## See Also
 
-### Managing Rulers
+### Managing rulers
 - [class var rulerViewClass: AnyClass!](./rulerviewclass.md)
   Returns the default class to be used for ruler objects in NSScrollViews.
 - [var hasHorizontalRuler: Bool](./hashorizontalruler.md)

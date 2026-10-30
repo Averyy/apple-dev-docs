@@ -37,7 +37,7 @@ Organize your app’s data and preferences, and share that data on the pasteboar
 - [protocol NSPasteboardTypeOwner](./nspasteboardtypeowner.md)
   An object that serves as a data provider for data types that use lazy data fulfillment from a pasteboard request.
 ### File Promises
-- [Supporting Drag and Drop Through File Promises](./supporting-drag-and-drop-through-file-promises.md)
+- [Supporting drag and drop through file promises](./supporting-drag-and-drop-through-file-promises.md)
   Receive and provide file promises to support dragged app files and pasteboard operations.
 - [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.

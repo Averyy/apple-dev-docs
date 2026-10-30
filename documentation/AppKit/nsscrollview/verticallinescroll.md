@@ -25,7 +25,7 @@ The value of this property is the amount by which the scroll view scrolls itself
 
 ## See Also
 
-### Setting Scrolling Behavior
+### Setting scrolling behavior
 - [var lineScroll: CGFloat](./linescroll.md)
   The scroll view’s line by line scroll amount.
 - [var horizontalLineScroll: CGFloat](./horizontallinescroll.md)

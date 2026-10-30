@@ -594,11 +594,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://docs.swift.org/latest/documentation/diagnostics/exclusivity-violation.md"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://docs.swift.org/latest/data/documentation/diagnostics/actor-isolated-mutating-async.json": [
+        "https://docs.swift.org/latest/documentation/diagnostics/exclusivity-violation.md"
+      ]
     },
     "total_pages": 148
   }

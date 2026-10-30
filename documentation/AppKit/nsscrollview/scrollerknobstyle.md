@@ -27,7 +27,7 @@ Applicable only to scroll views that use overlay scrollers.
 
 ## See Also
 
-### Scroller Style
+### Scroller style
 - [var scrollerStyle: NSScroller.Style](./scrollerstyle.md)
   The scroller style used by the scroll view.
 

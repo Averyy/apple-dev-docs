@@ -6,15 +6,15 @@
     },
     "https://developer.apple.com/documentation/applepencil/handling-double-taps-from-apple-pencil": {
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md",
-      "hash": "2b4b1f8f38fadaf3d8fa5156312d7979cca5ccd7c95e0e7d13b65fbbc6fcd473"
+      "hash": "c7b4deed733ee8b25480516a39ae3c9a797d3f8fdb64262378370d72a57849ca"
     },
     "https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil": {
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md",
-      "hash": "030b35e093d65b800ea7737ba9776ee39bf90912bec07e11811980f50c13e46b"
+      "hash": "00af290cd957f940bfd4818601f235cf4addb3fdacc94607d740a07ed3e5cfa9"
     },
     "https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app": {
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md",
-      "hash": "7c966c2dc57b1317a382e19e67123e64c2a4e8d75f4737f5b7f86f01a5286d4f"
+      "hash": "0cc2b11f0f9fc6afee481f000a248ca0273c908ff5144be4253640b246dcfcbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/ApplePencil.json": {
       "file_path": "documentation/ApplePencil/ApplePencil.md",
@@ -22,15 +22,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-double-taps-from-apple-pencil.json": {
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md",
-      "hash": "2b4b1f8f38fadaf3d8fa5156312d7979cca5ccd7c95e0e7d13b65fbbc6fcd473"
+      "hash": "c7b4deed733ee8b25480516a39ae3c9a797d3f8fdb64262378370d72a57849ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-squeezes-from-apple-pencil.json": {
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md",
-      "hash": "030b35e093d65b800ea7737ba9776ee39bf90912bec07e11811980f50c13e46b"
+      "hash": "00af290cd957f940bfd4818601f235cf4addb3fdacc94607d740a07ed3e5cfa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/playing-haptic-feedback-in-your-app.json": {
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md",
-      "hash": "7c966c2dc57b1317a382e19e67123e64c2a4e8d75f4737f5b7f86f01a5286d4f"
+      "hash": "0cc2b11f0f9fc6afee481f000a248ca0273c908ff5144be4253640b246dcfcbd"
     }
   },
   "metadata": {

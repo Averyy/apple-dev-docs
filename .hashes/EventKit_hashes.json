@@ -3402,13 +3402,15 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus",
-      "https://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess",
-      "https://developer.apple.com/documentation/foundation/nsnotification/name/ekeventstorechanged"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui.json": [
+        "https://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus",
+        "https://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess",
+        "https://developer.apple.com/documentation/foundation/nsnotification/name/ekeventstorechanged"
+      ]
     },
     "total_pages": 850
   }

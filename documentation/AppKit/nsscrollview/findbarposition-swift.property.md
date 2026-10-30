@@ -23,6 +23,12 @@ var findBarPosition: NSScrollView.FindBarPosition { get set }
 
 See [`NSScrollView.FindBarPosition`](./findbarposition-swift.enum.md) for possible values.
 
+## See Also
+
+### Find bar positioning
+- [NSScrollView.FindBarPosition](./findbarposition-swift.enum.md)
+  These constants define the position of the find bar in relation to the scroll view.
+
 
 ---
 

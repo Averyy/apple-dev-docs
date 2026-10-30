@@ -12,6 +12,7 @@ framework: "mlx-swift-lm/MLXVLM"
 
 ### Instance Properties
 - [var reasoningConfig: ReasoningConfig?](./reasoningconfig.md)
+  Gemma 4 brackets its thinking in labeled channels rather than a delimiter pair (see `ReasoningConfig.gemma4`).
 - [var toolCallFormat: ToolCallFormat?](./toolcallformat.md)
 
 

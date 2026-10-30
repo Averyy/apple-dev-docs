@@ -873,6 +873,11 @@
     "render": {
       "version": 4
     },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/uploadmessagerequestbody.json": [
+        "https://developer.apple.com/documentation/retentionmessaging/uploadmessagerequestbody/headerposition"
+      ]
+    },
     "total_pages": 217
   }
 }

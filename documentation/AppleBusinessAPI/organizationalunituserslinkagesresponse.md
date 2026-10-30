@@ -7,7 +7,7 @@
 A response that contains a list of user IDs for an organizational unit.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

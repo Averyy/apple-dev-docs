@@ -19,6 +19,10 @@ class NSTrackingArea
 @interface NSTrackingArea : NSObject
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 When creating a tracking-area object, you specify a rectangle (in the view’s coordinate system), an owning object, and one or more options, along with (optionally) a dictionary of data. After it’s created, you add the tracking-area object to a view using the [`addTrackingArea(_:)`](./nsview/addtrackingarea%28_%29.md) method. Depending on the options specified, the owner of the tracking area receives [`mouseEntered(with:)`](./nsresponder/mouseentered%28with%29.md), [`mouseExited(with:)`](./nsresponder/mouseexited%28with%29.md), [`mouseMoved(with:)`](./nsresponder/mousemoved%28with%29.md), and [`cursorUpdate(with:)`](./nsresponder/cursorupdate%28with%29.md) messages when the mouse cursor enters, moves within, and leaves the tracking area. Currently the tracking area is restricted to rectangles.

@@ -9,9 +9,15 @@ Handle events related to mouse, keyboard, and trackpad input.
 
 The [`NSResponder`](./nsresponder.md) class defines the responder chain, an ordered list of objects that respond to user events. When the user clicks the mouse button, taps on the trackpad, or presses a key, an event is generated and passed up the responder chain in search of an object that can respond to it. Any object that handles events must inherit from the [`NSResponder`](./nsresponder.md) class. The core AppKit classes, [`NSApplication`](./nsapplication.md), [`NSWindow`](./nswindow.md), and [`NSView`](./nsview.md), inherit from [`NSResponder`](./nsresponder.md).
 
-An [`NSApplication`](./nsapplication.md) object maintains a list of [`NSWindow`](./nswindow.md) objects—one for each window belonging to the app—and each [`NSWindow`](./nswindow.md) object maintains a hierarchy of [`NSView`](./nsview.md) objects. This view hierarchy is used for both drawing the user interface and for handling events.
+Before a click enters the chain, the system determines where to start: it *hit-tests* your view hierarchy to find the innermost view underneath the mouse pointer, and that view gets the first chance to respond.
+
+The responder chain receives touch events only from indirect touches on a trackpad, if a view asks for them. It doesn’t receive touch events from direct touches on a Mac with a touch display.
+
+An [`NSApplication`](./nsapplication.md) object maintains a list of [`NSWindow`](./nswindow.md) objects — one for each window belonging to the app — and each [`NSWindow`](./nswindow.md) object maintains a hierarchy of [`NSView`](./nsview.md) objects. Your app uses this view hierarchy both to draw the user interface and to handle events.
 
 An [`NSWindow`](./nswindow.md) object handles window-level events and distributes other events to its views. An [`NSWindow`](./nswindow.md) object also has a delegate allowing you to customize its behavior.
+
+To respond to mouse and touch input consistently across input types, see [Handling AppKit gestures](./handling-appkit-gestures.md).
 
 ## Topics
 

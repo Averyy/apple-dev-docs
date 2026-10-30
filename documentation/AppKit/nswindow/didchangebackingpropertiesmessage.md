@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+A message that reports that the window object’s backing properties changed.
+
 **Availability**:
 - macOS 27.0+
 
@@ -13,20 +15,61 @@
 struct DidChangeBackingPropertiesMessage
 ```
 
+## Discussion
+
+Use this message to observe the [`didChangeBackingPropertiesNotification`](./didchangebackingpropertiesnotification.md) notification using Swift concurrency.
+
 ## Topics
 
-### Initializers
+### Creating a message
 - [init(window: NSWindow, oldScaleFactor: CGFloat?, oldColorSpace: NSColorSpace?)](./didchangebackingpropertiesmessage/init%28window,oldscalefactor,oldcolorspace%29.md)
-### Instance Properties
-- [var oldColorSpace: NSColorSpace?](./didchangebackingpropertiesmessage/oldcolorspace.md)
-- [var oldScaleFactor: CGFloat?](./didchangebackingpropertiesmessage/oldscalefactor.md)
+### Getting the message’s values
 - [var window: NSWindow](./didchangebackingpropertiesmessage/window.md)
+- [var oldScaleFactor: CGFloat?](./didchangebackingpropertiesmessage/oldscalefactor.md)
+- [var oldColorSpace: NSColorSpace?](./didchangebackingpropertiesmessage/oldcolorspace.md)
 
 ## Relationships
 
 ### Conforms To
 - [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Related Documentation
+- [class let didChangeBackingPropertiesNotification: NSNotification.Name](./didchangebackingpropertiesnotification.md)
+  A notification that the window object backing properties changed.
+### Notifications
+- [class let didBecomeKeyNotification: NSNotification.Name](./didbecomekeynotification.md)
+  A notification that the window object became the key window.
+- [NSWindow.DidBecomeKeyMessage](./didbecomekeymessage.md)
+  A message that reports that the window object became the key window.
+- [class let didBecomeMainNotification: NSNotification.Name](./didbecomemainnotification.md)
+  A notification that the window object became the main window.
+- [NSWindow.DidBecomeMainMessage](./didbecomemainmessage.md)
+  A message that reports that the window object became the main window.
+- [class let didChangeScreenNotification: NSNotification.Name](./didchangescreennotification.md)
+  A notification that a portion of the window object’s frame moved onto or off of a screen.
+- [NSWindow.DidChangeScreenMessage](./didchangescreenmessage.md)
+  A message that reports that a portion of the window object’s frame moved onto or off of a screen.
+- [class let didChangeScreenProfileNotification: NSNotification.Name](./didchangescreenprofilenotification.md)
+  A notification that the screen containing the window changed.
+- [NSWindow.DidChangeScreenProfileMessage](./didchangescreenprofilemessage.md)
+  A message that reports that the screen containing the window changed.
+- [class let didDeminiaturizeNotification: NSNotification.Name](./diddeminiaturizenotification.md)
+  A notification that the window is no longer minimized.
+- [NSWindow.DidDeminiaturizeMessage](./diddeminiaturizemessage.md)
+  A message that reports that the window is no longer minimized.
+- [class let didEndSheetNotification: NSNotification.Name](./didendsheetnotification.md)
+  A notification that the window object closed an attached sheet.
+- [NSWindow.DidEndSheetMessage](./didendsheetmessage.md)
+  A message that reports that the window object closed an attached sheet.
+- [class let didEndLiveResizeNotification: NSNotification.Name](./didendliveresizenotification.md)
+  A notification that the user resized the window object.
+- [NSWindow.DidEndLiveResizeMessage](./didendliveresizemessage.md)
+  A message that reports that a person resized the window object.
+- [class let didExposeNotification: NSNotification.Name](./didexposenotification.md)
+  A notification that a window exposed a portion of its nonretained content.
 
 
 ---

@@ -58,7 +58,7 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvcardview": {
       "file_path": "documentation/TVUIKit/tvcardview.md",
-      "hash": "ef6df60353fcea6eaa257e66729637d0fbcf81689d4d82ee2137b150add803ac"
+      "hash": "3071ffa8c0aed791da4545330622e686d2b03ee4181c51a62afeb2c4c25034a7"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcardview/cardbackgroundcolor": {
       "file_path": "documentation/TVUIKit/tvcardview/cardbackgroundcolor.md",
@@ -226,7 +226,7 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvlockupview": {
       "file_path": "documentation/TVUIKit/tvlockupview.md",
-      "hash": "5500848ed93c9bddb5c2c96fd94794a438c69e099d897a4a94f6bc79515379ed"
+      "hash": "c2eec1852365cb7cde866ce1529dcf213f6ba8a8ec9ac70e19a42482f924a9a0"
     },
     "https://developer.apple.com/documentation/tvuikit/tvlockupview/contentsize": {
       "file_path": "documentation/TVUIKit/tvlockupview/contentsize.md",
@@ -610,7 +610,7 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramcontentview": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview.md",
-      "hash": "c8da55ef0ba547e50e065ac07d63fd1f2facfac6181243a201b6ad145fd87c02"
+      "hash": "86cd053c9d7e4961c6d2563efe2e31143af48a4d7157fe4bdb7b17a69f60f620"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramcontentview/configuration": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/configuration.md",
@@ -730,7 +730,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview.json": {
       "file_path": "documentation/TVUIKit/tvcardview.md",
-      "hash": "ef6df60353fcea6eaa257e66729637d0fbcf81689d4d82ee2137b150add803ac"
+      "hash": "3071ffa8c0aed791da4545330622e686d2b03ee4181c51a62afeb2c4c25034a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview/cardbackgroundcolor.json": {
       "file_path": "documentation/TVUIKit/tvcardview/cardbackgroundcolor.md",
@@ -898,7 +898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview.json": {
       "file_path": "documentation/TVUIKit/tvlockupview.md",
-      "hash": "5500848ed93c9bddb5c2c96fd94794a438c69e099d897a4a94f6bc79515379ed"
+      "hash": "c2eec1852365cb7cde866ce1529dcf213f6ba8a8ec9ac70e19a42482f924a9a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/contentsize.json": {
       "file_path": "documentation/TVUIKit/tvlockupview/contentsize.md",
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview.json": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview.md",
-      "hash": "c8da55ef0ba547e50e065ac07d63fd1f2facfac6181243a201b6ad145fd87c02"
+      "hash": "86cd053c9d7e4961c6d2563efe2e31143af48a4d7157fe4bdb7b17a69f60f620"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview/configuration.json": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/configuration.md",

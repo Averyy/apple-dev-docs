@@ -30,7 +30,7 @@ This method scales the content view such that the passed in point (in content vi
 
 ## See Also
 
-### Zooming the Scroll View
+### Zooming the scroll view
 - [var allowsMagnification: Bool](./allowsmagnification.md)
   Allows the user to magnify the scroll view.
 - [var magnification: CGFloat](./magnification.md)

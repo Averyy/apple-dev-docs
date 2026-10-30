@@ -30,7 +30,7 @@ Don’t include an `image` or `bulletPoints` when you upload the text for the fo
 - A promotional-offer retention message
 - A switch-plan retention message
 
-All default retention messages require body text and header text, and may optionally include an image and bullet points. To place header text above an image, include an image, and set the value of [`headerPosition`](./uploadmessagerequestbody/headerposition.md) to `ABOVE_IMAGE`. Otherwise, the header text appears above the message body, which is below the image.
+All default retention messages require body text and header text, and may optionally include an image and bullet points. To place header text above an image, include an image, and set the value of `headerPosition` to `ABOVE_IMAGE`. Otherwise, the header text appears above the message body, which is below the image.
 
 ## Properties
 

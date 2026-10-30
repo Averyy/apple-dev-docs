@@ -19,6 +19,10 @@ protocol NSOutlineViewDataSource : NSObjectProtocol
 @protocol NSOutlineViewDataSource <NSObject>
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 [`NSOutlineView`](./nsoutlineview.md) objects support a data source delegate in addition to the regular delegate object.

@@ -24,7 +24,7 @@ object responseBodyV1
 
 ## Discussion
 
-Use the information in the response body to react quickly to changes in your users’ subscription states. The fields available in a notification sent to your server depend on the [`notification_type`](./responsebodyv1/notification_type.md), which indicates the event that triggered the notification.
+Use the information in the response body to react quickly to changes in your users’ subscription states. The fields available in a notification sent to your server depend on the `notification_type`, which indicates the event that triggered the notification.
 
 ## Topics
 
@@ -49,7 +49,7 @@ Use the information in the response body to react quickly to changes in your use
 
   **Allowed Values**: `Sandbox`, `PROD`
 - `expiration_intent` (integer) *(deprecated)*: The reason a subscription expired. This field is only present for an expired auto-renewable subscription. See [`expiration_intent`](../AppStoreReceipts/expiration_intent.md) for more information.
-- `notification_type` (notification_type) *(deprecated)*: The subscription event that triggered the notification. See [`notification_type`](./responsebodyv1/notification_type.md) for the complete list of version 1 notification types.
+- `notification_type` (notification_type) *(deprecated)*: The subscription event that triggered the notification. See `notification_type` for the complete list of version 1 notification types.
 - `original_transaction_id` (long) *(deprecated)*: The original transaction identifier for which App Store Server Notifications sends the notification.
 - `password` (string) *(deprecated)*: The same value as the shared secret you submit in the `password` field of the App Store Receipt [`requestBody`](../AppStoreReceipts/requestbody.md) when validating receipts.
 - `unified_receipt` (unified_receipt) *(deprecated)*: An object that contains information about the most recent in-app purchase transactions for the app.

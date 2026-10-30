@@ -7,7 +7,7 @@
 Additional metadata for an organization device activity, used by device management service migration activity types.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

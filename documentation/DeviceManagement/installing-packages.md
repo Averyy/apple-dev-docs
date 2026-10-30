@@ -80,7 +80,7 @@ $ sudo pkgbuild --component <APP> --install-location /Applications --sign <CERT>
 
 Set the `<APP>` argument to the path of the app to install, and the `<CERT>` argument to the signing certificate identifier. Set the install location to `/Applications` because the device only manages apps in that location.
 
-In addition to the `.pkg` file, create a [`ManifestURL`](./package/manifesturl.md) document that the device management service uses to install the package, as the following example shows:
+In addition to the `.pkg` file, create a `ManifestURL` document that the device management service uses to install the package, as the following example shows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,7 +118,7 @@ In addition to the `.pkg` file, create a [`ManifestURL`](./package/manifesturl.m
 </plist>
 ```
 
-The [`ManifestURL`](./package/manifesturl.md) needs to adhere to the following requirements:
+The `ManifestURL` needs to adhere to the following requirements:
 
 - Set the `items/assets/kind` key to `software-package`.
 - Set the `items/assets/url` key to the URL the device uses to download the package file.

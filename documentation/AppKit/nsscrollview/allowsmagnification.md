@@ -25,7 +25,7 @@ This property does not prevent the developer from manually adjusting the magnifi
 
 ## See Also
 
-### Zooming the Scroll View
+### Zooming the scroll view
 - [var magnification: CGFloat](./magnification.md)
   The amount by which the content is currently scaled.
 - [func magnify(toFit: NSRect)](./magnify%28tofit%29.md)

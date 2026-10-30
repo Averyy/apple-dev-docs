@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/BackgroundAssets": {
       "file_path": "documentation/BackgroundAssets/BackgroundAssets.md",
-      "hash": "c44d6da9e0571a3ce33f4def909c7394cb3395dd9f3608e4ab123877a60bab7a"
+      "hash": "455618dea01945297a2758b44d1c5ba0dad675b326071418aa9431d98901c485"
     },
     "https://developer.apple.com/documentation/backgroundassets/assetpack": {
       "file_path": "documentation/BackgroundAssets/assetpack.md",
@@ -1014,7 +1014,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/BackgroundAssets.json": {
       "file_path": "documentation/BackgroundAssets/BackgroundAssets.md",
-      "hash": "c44d6da9e0571a3ce33f4def909c7394cb3395dd9f3608e4ab123877a60bab7a"
+      "hash": "455618dea01945297a2758b44d1c5ba0dad675b326071418aa9431d98901c485"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack.json": {
       "file_path": "documentation/BackgroundAssets/assetpack.md",

@@ -13514,11 +13514,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/scenekit/scngeometry/1523472-materials"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometry/materials.json": [
+        "https://developer.apple.com/documentation/scenekit/scngeometry/1523472-materials"
+      ]
     },
     "total_pages": 3378
   }

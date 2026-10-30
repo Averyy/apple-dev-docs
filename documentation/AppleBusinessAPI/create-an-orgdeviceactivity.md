@@ -7,7 +7,7 @@
 Assign or unassign devices to a device management service, manage a device management service migration for devices, or release devices from an organization.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ### Example: Assign or Unassign Devices to a Device Management Service
 

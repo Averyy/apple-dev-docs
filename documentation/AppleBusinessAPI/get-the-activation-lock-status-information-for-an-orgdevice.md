@@ -7,7 +7,7 @@
 Get the Activation Lock status of an organization device.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Overview
 

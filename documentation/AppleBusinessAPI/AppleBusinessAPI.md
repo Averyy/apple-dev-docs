@@ -7,7 +7,7 @@
 Automate device management activities, view device information, and manage users and user groups in Apple Business.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Overview
 
@@ -67,8 +67,6 @@ Automate device management activities, view device information, and manage users
   Get a list of organizational units in an organization.
 - [Get Organizational Unit Information](./get-organizationalunit-information.md)
   Get information about a specific organizational unit in an organization.
-- [Get User IDs for an Organizational Unit](./get-all-user-ids-for-an-organizationalunit.md)
-  Get a list of user IDs for an organizational unit in an organization.
 ### Apps and Packages
 - [Get Apps](./get-apps.md)
   Get a list of apps for an organization using the built-in device management in Apple Business.
@@ -331,6 +329,7 @@ Automate device management activities, view device information, and manage users
 - [type MdmMigrationStatus](./mdmmigrationstatus.md)
   Strings that represent the state of a device’s device management service migration.
 ### Endpoints
+- [Get All User IDs for an Organizational Unit](./get-all-user-ids-for-an-organizational-unit.md)
 - [Get the Activation Lock Status for a Device](./get-the-activation-lock-status-information-for-an-orgdevice.md)
   Get the Activation Lock status of an organization device.
 ### Dictionaries

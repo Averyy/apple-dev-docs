@@ -7,7 +7,7 @@
 The data structure that represents an AppleCare coverage resource that belongs to an organization device.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

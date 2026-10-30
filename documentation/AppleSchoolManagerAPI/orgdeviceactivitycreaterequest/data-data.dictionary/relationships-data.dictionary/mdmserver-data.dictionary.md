@@ -7,7 +7,7 @@
 The data that describe the relationship between the resources.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

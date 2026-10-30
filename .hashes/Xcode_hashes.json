@@ -2970,13 +2970,19 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/foundation/nsbundle",
-      "https://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui",
-      "https://developer.apple.com/documentation/xcode/Print-pipeline-UIDs"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/xcode/build-settings-reference.json": [
+        "https://developer.apple.com/documentation/foundation/nsbundle"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/xcode/configuring-your-xcode-cloud-workflow-s-actions.json": [
+        "https://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/xcode/validating-your-apps-metal-shader-usage.json": [
+        "https://developer.apple.com/documentation/xcode/Print-pipeline-UIDs"
+      ]
     },
     "total_pages": 742
   }

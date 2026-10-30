@@ -44,8 +44,6 @@ When you want to invalidate your flow layout object, call the [`invalidationCont
 - [Equatable](../Swift/equatable.md)
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

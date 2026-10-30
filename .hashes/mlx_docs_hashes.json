@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-28T06:19:40.977490",
+    "last_updated": "2026-10-30T08:12:32.769329",
     "total_files": 855,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -854,7 +854,7 @@
     "github:apple/container:docs/logs.md": "cb4635da823fc632b7145257f59790d12be60de28d613a2e03f44e2a4ba6a240",
     "github:apple/container:docs/multiplatform-images.md": "012cb608c580f1f17ee5ca175e988ccfb2e3d8c3d0c894526e11b00dd3c7f9f3",
     "github:apple/container:docs/networking.md": "db1ec204709cd8300feccbe94296eeed4c92ed69ae4e42c53a68682a3740607b",
-    "github:apple/container:docs/resource-usage.md": "30d08c2a174cff8e00471fc4862872b76e4a0e951b5d1131c9e6c2c2068b899b",
+    "github:apple/container:docs/resource-usage.md": "89772df74691918b96905f48bdf26719a9ce956970df25eef025634261d37c2c",
     "github:apple/container:docs/runtime-configuration.md": "8e8254751d6572f079df24671bb905f0c71da7a003ee30ccaf71777dd83305a8",
     "github:apple/container:docs/shell-completions.md": "1eb54cde79cbe3830b67abfb49a96481429fbc6fc310845b8d1736dc1705ef72",
     "github:apple/container:docs/technical-overview.md": "64c59aef1c21aa22d4ba8ac70ab87f58edc4b124bf52fd72e5d01f5f8c04cb8c",

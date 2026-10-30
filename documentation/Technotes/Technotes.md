@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3216: Supporting touch input for games on macOS](./tn3216-supporting-touch-input-for-games-on-macos.md)
+  Let players interact with your game through touch on a Mac with a touch display or a Sidecar-connected iPad.
 - [TN3215: Reading man pages](./tn3215-reading-man-pages.md)
   Use the Terminal app to read the documentation for command-line tools and low-level APIs.
 - [TN3192: Migrating your app from the deprecated UIRequiresFullScreen key](./tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)

@@ -9,7 +9,7 @@ framework: "mlx-swift-lm/MLXVLM"
 **Kind**: property  
 **Role**: Instance Property
 
-Inherited from `ChatConventionsProviding.reasoningConfig`.
+Gemma 4 brackets its thinking in labeled channels rather than a delimiter pair (see `ReasoningConfig.gemma4`).
 
 ## Declaration
 

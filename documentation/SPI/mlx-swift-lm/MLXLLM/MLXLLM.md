@@ -225,6 +225,8 @@ More advanced APIs are available for those that need them, see [Using a Model](.
 - [struct MixtralConfiguration](./mixtralconfiguration.md)
 - [struct NanbeigeConfiguration](./nanbeigeconfiguration.md)
 - [struct NanoChatConfiguration](./nanochatconfiguration.md)
+- [struct NemotronHBlockConfig](./nemotronhblockconfig.md)
+  Per-layer overrides from `block_configs` (Nemotron 3.5 `nemotron_h_puzzle` models).
 - [struct NemotronHConfiguration](./nemotronhconfiguration.md)
 - [struct NemotronLabsDiffusionConfiguration](./nemotronlabsdiffusionconfiguration.md)
 - [struct Olmo2Configuration](./olmo2configuration.md)

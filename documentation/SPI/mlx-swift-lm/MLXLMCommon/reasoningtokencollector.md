@@ -21,7 +21,9 @@ struct ReasoningTokenCollector
 
 This is the pure, model-free core of think-then-call **Phase 1**: it owns a [`StreamingDetokenizer`](./streamingdetokenizer.md) and an emitter, so the device-side caller only supplies token IDs (from `generateTokens`) and forwards the returned segments to its channel. Token IDs are carried verbatim — no decode→re-encode round-trip — so the accumulated span prefills the constrained Phase 2 exactly.
 
-**Why a separate type.** The emitter is intentionally text-only (it never sees token IDs). Phase 1 additionally needs to (a) retain the raw IDs for the hand-off and (b) know when to stop generating. Keeping that here — rather than inline in the executor — makes the logic host-testable with no model, and lets the unconstrained reasoning path adopt it later to share one loop.
+**Why a separate type.** The emitter routes text and never sees token IDs. Phase 1 additionally needs to (a) retain the raw IDs for the hand-off and (b) know when to stop generating. Keeping that here — rather than inline in the executor — makes the logic host-testable with no model. The unconstrained reasoning path uses it too.
+
+When both framing delimiters are single tokens, they and any single-token implicit end delimiter are matched by id and reported to the emitter as boundaries, so the same characters spelled out as text are content.
 
 ## Topics
 

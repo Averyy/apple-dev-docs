@@ -7,7 +7,7 @@
 Self-links to requested resources.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

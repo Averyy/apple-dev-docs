@@ -7,7 +7,7 @@
 The attributes for a subscription deleted audit event.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

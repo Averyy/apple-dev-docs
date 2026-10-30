@@ -7,7 +7,7 @@
 Attributes that describe a device management service resource.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

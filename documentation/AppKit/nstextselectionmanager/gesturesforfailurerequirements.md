@@ -19,6 +19,10 @@ var gesturesForFailureRequirements: [NSGestureRecognizer] { get }
 @property (readonly) NSArray<NSGestureRecognizer *> * gesturesForFailureRequirements;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 Other gesture recognizers in the view hierarchy can declare dependencies on these gestures using `requireGestureRecognizerToFail:` to ensure proper gesture recognition precedence.

@@ -23,7 +23,7 @@ object ExtensionConfig.Media.Queues.UpdateActivity
 
 ## Properties
 
-- `url` (string): The relative path for the client to access [`updateActivity`](./updateactivity-data.dictionarykey.md).
+- `url` (string): The relative path for the client to access `updateActivity`.
 
   **Default**: `/queues/updateActivity`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 - `hdr` (ExtensionConfig.Media.Queues.UpdateActivity.Hdr): Headers to include with requests to this endpoint.

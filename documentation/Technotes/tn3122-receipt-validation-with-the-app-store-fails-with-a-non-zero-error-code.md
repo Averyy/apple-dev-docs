@@ -31,7 +31,7 @@ On your server, create and format an object as JSON. This JSON object is a dicti
 }
 ```
 
-For receipts that contain auto-renewable subscriptions, optionally add `exclude-old-transactions` to the JSON object. The [latest_receipt_info](../AppStoreReceipts/responsebody/latest_receipt_info.md) key contains the most recent entry for any subscriptions when `exclude-old-transactions` is set to `true` and all renewal entries, otherwise.
+For receipts that contain auto-renewable subscriptions, optionally add `exclude-old-transactions` to the JSON object. The latest_receipt_info key contains the most recent entry for any subscriptions when `exclude-old-transactions` is set to `true` and all renewal entries, otherwise.
 
 ```json
 {
@@ -59,7 +59,7 @@ Use the production URL to verify receipts when your app is live in the App Store
 https://buy.itunes.apple.com/verifyReceipt
 ```
 
-First, verify your receipt with the production URL. If you receive a `21007` status code, as outlined in [verifyReceipt](../AppStoreReceipts/verifyreceipt.md), verify with the sandbox URL instead.
+First, verify your receipt with the production URL. If you receive a `21007` status code, as outlined in verifyReceipt, verify with the sandbox URL instead.
 
 > **Note**: TestFlight uses the sandbox environment for in-app purchases. See [Testing at All Stages of Development with Xcode and Sandbox](../StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md) for details.
 

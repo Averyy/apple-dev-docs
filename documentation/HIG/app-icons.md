@@ -9,7 +9,7 @@ framework: HIG
 
 **Platforms:** ios, ipados, macos, tvos, visionos, watchos
 
-> **Updated 2026-06-08:** Refined guidance for Liquid Glass.
+> **Updated 2026-10-28:** Added guidance for app icon format options.
 
 A unique, memorable icon expresses your app’s or game’s purpose and personality and helps people recognize it at a glance.
 
@@ -20,7 +20,7 @@ Your app icon is a crucial aspect of your app’s or game’s branding and user 
 ![An image that shows three variations of the Photos app's app icon as it appears on different platforms. The first variation is a rounded rectangle shape, and represents the iOS, iPadOS, and macOS icons. The second variation is an elongated, rounded rectangular shape, and represents the tvOS icon. The third variation is a circular shape, and represents the visionOS and watchOS icons. All variations have the same overall design over different background shapes.](https://developer.apple.com/tutorials/images/com.apple.HIG/app-icons-platform-appearance-overview@2x.png)
 
 ## Layer design
-Although you can provide a flattened image for your icon, layers give you the most control over how your icon design is represented. A layered app icon comes together to produce a sense of depth and vitality. On each platform, the system applies visual effects that respond to the environment and people’s interactions.
+Although you can provide a nonlayered image for your icon (see [Icon formats](app-icons.md#Icon-formats)), layers give you the most control over how your icon design is represented. A layered app icon comes together to produce a sense of depth and vitality. On each platform, the system applies visual effects that respond to the environment and people’s interactions.
 
 iOS, iPadOS, macOS, and watchOS app icons include a background layer and one or more foreground layers that coalesce to create dimensionality. These icons take on Liquid Glass attributes like specular highlights, refraction, and translucency. These effects automatically adapt with the size of your icon, apply consistently across platforms, and can appear differently between system versions.
 
@@ -45,6 +45,13 @@ For tvOS and visionOS app icons, you add your icon layers directly to an image s
 **Design a background that both stands out and emphasizes foreground content.** If you choose a gradient for your background layer, ensure that it responds well to system lighting effects. Icon Composer supports solid colors and gradients for background layers, making it unnecessary to import custom background images in most cases. If you do import a background layer, make sure it’s full-bleed and opaque.
 
 **Prefer vector graphics when bringing layers into Icon Composer.** Unlike raster images, vector graphics (such as SVG or PDF) scale gracefully and appear crisp at any size. Outline artwork and convert text to outline in your design. For mesh gradients and raster artwork, prefer PNG format because it’s a lossless image format.
+
+## Icon formats
+In iOS, iPadOS, macOS, and watchOS, you can provide icons in one of two formats: nonlayered bitmap images (such as PNG) or layered Icon Composer files. The Icon Composer format lets you control how Liquid Glass applies to individual elements of your icon, and how color applies across appearance variants.
+
+**Provide your icon in the Icon Composer format for more flexibility and control.** If you provide a bitmap image instead, the system attempts to segment your icon, isolating the foreground elements from the background to create an icon with two layers. These two layers help make your icon compatible with dark and tinted appearance variants, ensuring the use of a consistent background.
+
+When the system segments your icon, it applies Liquid Glass effects to foreground layers that feature large, simple shapes. It doesn’t automatically apply Liquid Glass effects to smaller, more complex elements in an icon like text and thin lines. To control precisely which elements receive Liquid Glass properties, supply your icon as a layered Icon Composer file.
 
 ## Icon shape
 An app icon’s shape varies based on a platform’s visual language. In iOS, iPadOS, and macOS, icons are square, and the system applies masking to produce rounded corners that precisely match the curvature of other rounded interface elements throughout the system and the bezel of the physical device itself. In tvOS, icons are rectangular, also with concentric edges. In visionOS and watchOS, icons are square and the system applies circular masking.
@@ -82,7 +89,7 @@ The Home app icon
 
 ![An X in a circle to indicate incorrect usage.](https://developer.apple.com/tutorials/images/com.apple.HIG/crossout@2x.png)
 
-![An illustration of two circles centered above a grid. One circle encloses the other. The inner circle has a solid fill. The outer circle is larger than the inner circle, has no outline, and has a semi-transparent fill that allows the background grid to show through. Together, the two circles give the impression that the inner circle is resting upon the outer circle.](https://developer.apple.com/tutorials/images/com.apple.HIG/app-icons-element-filled-shape@2x.png)
+![An illustration of two circles centered above a grid. One circle encloses the other. The inner circle has a lighter solid fill. The outer circle is larger than the inner circle, has no outline, and has a darker solid fill. Together, the two circles give the impression that the inner circle is resting upon the outer circle.](https://developer.apple.com/tutorials/images/com.apple.HIG/app-icons-element-filled-shape@2x.png)
 
 ![A checkmark in a circle to indicate correct usage.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
 
@@ -169,6 +176,7 @@ App icons support the following color spaces:
 ## Change log
 | Date | Changes |
 | --- | --- |
+| October 28, 2026 | Added guidance for app icon format options. |
 | June 8, 2026 | Refined guidance for Liquid Glass. |
 | June 9, 2025 | Updated guidance to reflect layered icons, consistency across platforms, and best practices for Liquid Glass. |
 | June 10, 2024 | Added guidance for creating dark and tinted app icon variants for iOS and iPadOS. |

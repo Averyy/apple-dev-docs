@@ -19,6 +19,10 @@ protocol NSBrowserDelegate : NSObjectProtocol
 @protocol NSBrowserDelegate <NSObject>
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Topics
 
 ### Getting Browser Information

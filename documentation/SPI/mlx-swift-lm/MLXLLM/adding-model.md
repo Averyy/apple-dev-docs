@@ -15,7 +15,7 @@ If the model follows the typical LLM pattern you can add a new model in a few st
 - `config.json`, `tokenizer.json`, and `tokenizer_config.json`
 - `*.safetensors`
 
-You can follow the pattern of the models in the [Models](./models.md) directory and create a `.swift` file for your new model:
+You can follow the pattern of the models in the Models directory and create a `.swift` file for your new model:
 
 ## Create a Configuration
 
@@ -67,7 +67,7 @@ public class YourModel: Module, LLMModel, KVCacheDimensionProvider, LoRAModel {
 
 ## Register the Model
 
-In [LLMModelFactory.swift](./llmmodelfactory.swift.md) register the model type itself (this is independent of the model id):
+In LLMModelFactory.swift register the model type itself (this is independent of the model id):
 
 ```swift
 public class ModelTypeRegistry: @unchecked Sendable {

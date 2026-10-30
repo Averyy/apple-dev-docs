@@ -19,6 +19,11 @@ class NSControl
 @interface NSControl : NSView
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 The [`NSControl`](./nscontrol.md) class is abstract and must be subclassed to be used. Although you can subclass it yourself, more often you use one of the subclasses already defined by AppKit. A control draws content on the screen, automatically handles user interactions with that content, and calls the action method of its target object for any significant user interactions.
@@ -210,8 +215,6 @@ When the mouse button is pressed while the cursor is within the bounds of the re
 - [NSTouchBarProvider](./nstouchbarprovider.md)
 - [NSUserActivityRestoring](./nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

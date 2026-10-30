@@ -7,7 +7,7 @@
 Strings that represent a product family that can be assigned as a default to a device management service.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

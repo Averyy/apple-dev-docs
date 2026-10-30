@@ -21,6 +21,8 @@ func mouseDown(with event: NSEvent)
 
 ## Mentions
 
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
 - [Supporting Continuity Camera in Your Mac App](../supporting-continuity-camera-in-your-mac-app.md)
 
 ## Discussion

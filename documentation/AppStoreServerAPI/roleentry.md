@@ -23,7 +23,7 @@ object RoleEntry
 
 Each [`GroupEntry`](./groupentry.md) contains an array of `RoleEntry` values. The array contains one role entry for each of your products for which the group provides the customer access.
 
-Read the [`role`](./roleentry/role.md) for the [`productId`](./roleentry/productid.md) you’re evaluating. A customer can hold the `ADMIN` role for one product and the `NONE` role for another within the same group.
+Read the `role` for the `productId` you’re evaluating. A customer can hold the `ADMIN` role for one product and the `NONE` role for another within the same group.
 
 ## Properties
 

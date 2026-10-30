@@ -17,7 +17,7 @@ object ExtensionConfig.Media.Queues.ContentPlaybackFailure
 
 ## Properties
 
-- `url` (string) *(required)*: The relative path for the client to access the `contentPlaybackFailure` endpoint. For more information, see [`contentPlaybackFailure`](./contentplaybackfailure-data.dictionarykey.md).
+- `url` (string) *(required)*: The relative path for the client to access the `contentPlaybackFailure` endpoint. For more information, see `contentPlaybackFailure`.
 
   **Default**: `/queues/contentPlaybackFailure`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 

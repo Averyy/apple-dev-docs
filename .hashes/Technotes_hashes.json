@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Technotes": {
       "file_path": "documentation/Technotes/Technotes.md",
-      "hash": "53f44a5e265ac569c3e0fba38479b1df0e10c0934a139f0988c720c5b9f6b4c1"
+      "hash": "1b3e74544c3d3455a4f592aa9a674bc0f3bfde563594ae90be21e4e969eccc54"
     },
     "https://developer.apple.com/documentation/technotes/tn3102-http3-in-your-app": {
       "file_path": "documentation/Technotes/tn3102-http3-in-your-app.md",
@@ -332,9 +332,13 @@
       "file_path": "documentation/Technotes/tn3215-reading-man-pages.md",
       "hash": "2cc9d60876b071bfc1bbf0b05fa39aea0400ca4b4bb581f9b59db38b730b2d1c"
     },
+    "https://developer.apple.com/documentation/technotes/tn3216-supporting-touch-input-for-games-on-macos": {
+      "file_path": "documentation/Technotes/tn3216-supporting-touch-input-for-games-on-macos.md",
+      "hash": "e5c75b41e013461f708e6c8bfe2c16b5e014762ae8100267a19be8a64af03ec0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/Technotes.json": {
       "file_path": "documentation/Technotes/Technotes.md",
-      "hash": "53f44a5e265ac569c3e0fba38479b1df0e10c0934a139f0988c720c5b9f6b4c1"
+      "hash": "1b3e74544c3d3455a4f592aa9a674bc0f3bfde563594ae90be21e4e969eccc54"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3102-http3-in-your-app.json": {
       "file_path": "documentation/Technotes/tn3102-http3-in-your-app.md",
@@ -663,19 +667,32 @@
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3215-reading-man-pages.json": {
       "file_path": "documentation/Technotes/tn3215-reading-man-pages.md",
       "hash": "2cc9d60876b071bfc1bbf0b05fa39aea0400ca4b4bb581f9b59db38b730b2d1c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technotes/tn3216-supporting-touch-input-for-games-on-macos.json": {
+      "file_path": "documentation/Technotes/tn3216-supporting-touch-input-for-games-on-macos.md",
+      "hash": "e5c75b41e013461f708e6c8bfe2c16b5e014762ae8100267a19be8a64af03ec0"
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info",
-      "https://developer.apple.com/documentation/appstorereceipts/validating_receipts_with_the_app_store",
-      "https://developer.apple.com/documentation/appstorereceipts/verifyreceipt",
-      "https://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr",
-      "https://developer.apple.com/documentation/xcode/running-your-app-in-the-simulator-or-on-a-device"
-    ],
     "render": {
       "version": 4
     },
-    "total_pages": 166
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/technotes/tn3109-resolving-common-archiving-issues.json": [
+        "https://developer.apple.com/documentation/xcode/running-your-app-in-the-simulator-or-on-a-device"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info",
+        "https://developer.apple.com/documentation/appstorereceipts/verifyreceipt"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/technotes/tn3138-handling-app-store-receipt-signing-certificate-changes.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/validating_receipts_with_the_app_store",
+        "https://developer.apple.com/documentation/appstorereceipts/verifyreceipt"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/technotes/tn3149-fetching-change-history-events.json": [
+        "https://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr"
+      ]
+    },
+    "total_pages": 168
   }
 }

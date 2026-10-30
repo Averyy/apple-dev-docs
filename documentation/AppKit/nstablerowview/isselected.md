@@ -19,6 +19,10 @@ var isSelected: Bool { get set }
 @property (getter=isSelected) BOOL selected;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 [`true`](../../Swift/true.md) if selected, otherwise [`false`](../../Swift/false.md).

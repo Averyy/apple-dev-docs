@@ -13,7 +13,7 @@ When you choose Product > Archive, Xcode creates an archive of your app that wil
 
 You can choose Product > Archive in Xcode after meeting these requirements:
 
-- You’ve selected a real device or build-only device as the run destination in the scheme building your app. Apps built with simulator SDKs can’t be archived nor submitted to the App Store; see [Running Your App in the Simulator or on a Device](../Xcode/running-your-app-in-the-simulator-or-on-a-device.md).
+- You’ve selected a real device or build-only device as the run destination in the scheme building your app. Apps built with simulator SDKs can’t be archived nor submitted to the App Store; see Running Your App in the Simulator or on a Device.
 - You’ve enabled the archive action for the scheme building your app. ![Select archive in the scheme editor.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3109-archive_selected@2x.png)
 
 ## Xcode successfully archived my app, but the archive doesn’t appear in the Archives organizer

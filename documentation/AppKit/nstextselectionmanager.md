@@ -20,9 +20,19 @@ class NSTextSelectionManager
 @interface NSTextSelectionManager : NSObject
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
-[`NSTextSelectionManager`](./nstextselectionmanager.md) provides a centralized way to manage text selection interactions using a set of gesture recognizers. For keyboard-based selection, integrate [`NSTextSelectionNavigation`](./nstextselectionnavigation.md) with your view. The selection manager works with a delegate to update and respond to selection changes, and with a data source to query the text layout system.
+`NSTextSelectionManager` provides a centralized way to manage text selection interactions using a set of gesture recognizers. For keyboard-based selection, integrate [`NSTextSelectionNavigation`](./nstextselectionnavigation.md) with your view. The selection manager works with a delegate to update and respond to selection changes, and with a data source to query the text layout system.
+
+### Gesture recognizer priority
+
+Attach an `NSTextSelectionManager` to a view that isn’t [`NSTextView`](./nstextview.md) or [`NSTextField`](./nstextfield.md) by setting the manager’s `view` property, and set its [`textSelectionDataSource`](./nstextselectionmanager/textselectiondatasource.md) property to your text layout object — typically an `NSTextLayoutManager`. Together, these give your custom view classic macOS text-selection behavior: bidirectional selection, drag-and-drop of text, and toggling.
+
+`NSTextSelectionManager` builds on gesture recognizers. If you attach your own gesture recognizers to the same view, use [`gesturesForFailureRequirements`](./nstextselectionmanager/gesturesforfailurerequirements.md) to make your gesture recognizers wait for the selection manager’s gestures to fail before recognizing — so the selection manager gets first chance at the touch or click, instead of your gesture recognizers competing with it. For more information, see [Prioritize gesture recognizers](./handling-appkit-gestures.md#Prioritize-gesture-recognizers).
 
 ## Topics
 

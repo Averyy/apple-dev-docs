@@ -27,7 +27,7 @@ Note that a scroll view can have two different line scroll amounts: [`verticalLi
 
 ## See Also
 
-### Setting Scrolling Behavior
+### Setting scrolling behavior
 - [var horizontalLineScroll: CGFloat](./horizontallinescroll.md)
   The scroll view’s horizontal line by line scroll amount.
 - [var verticalLineScroll: CGFloat](./verticallinescroll.md)

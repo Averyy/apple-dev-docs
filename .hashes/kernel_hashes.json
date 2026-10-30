@@ -12220,6 +12220,10 @@
       "file_path": "documentation/kernel/api-1640322-anonymous/kiopcidevicepowerstatecount.md",
       "hash": "a5fc4009550fb3308611bb9fa1d28b469bc320f227416c27e7cc1a74bcd5808d"
     },
+    "https://developer.apple.com/documentation/kernel/1640325-interrupt_types": {
+      "file_path": "documentation/kernel/api-1640325-interrupt_types.md",
+      "hash": "d39824e9b716406e37675e86824457b7128ac21d381b23b9c28067352b4d2e6e"
+    },
     "https://developer.apple.com/documentation/kernel/1640328-anonymous": {
       "file_path": "documentation/kernel/api-1640328-anonymous.md",
       "hash": "c373722c16db7ad823cf55a1b6c2476a12c03657a2b195c77961dcdc545a4f6b"
@@ -50715,6 +50719,38 @@
     "https://developer.apple.com/documentation/kernel/attribute_set_t/1555291-volattr": {
       "file_path": "documentation/kernel/attribute_set_t/api-1555291-volattr.md",
       "hash": "1241140ce968a0a40741a59bdb06ce19c073d82d91cfb5fe3a117b215487aefb"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist": {
+      "file_path": "documentation/kernel/attrlist.md",
+      "hash": "a44e6cb8ebcc911e398ca4ec1bac42b9edfd4f9d52d37685f1d2d7ad01fef647"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555218-dirattr": {
+      "file_path": "documentation/kernel/attrlist/api-1555218-dirattr.md",
+      "hash": "1f35f3d5a46483205e0f988181c653e697193c32e93be542868f4ff3fbbf9a55"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555256-forkattr": {
+      "file_path": "documentation/kernel/attrlist/api-1555256-forkattr.md",
+      "hash": "a3a7dbdc37aa99707f09b78236dcd2d3ad225dcc01d87a46e6e77b07471ea4cb"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555266-reserved": {
+      "file_path": "documentation/kernel/attrlist/api-1555266-reserved.md",
+      "hash": "7773841df5bb73e138dead9a8f96e87f1f9302ee1d694fea4855c6d338a09cd3"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555275-fileattr": {
+      "file_path": "documentation/kernel/attrlist/api-1555275-fileattr.md",
+      "hash": "c324929a3f9f225cbafb51ee6561a7e04efaf09ded9da6f9d6d0ceec70d3bc93"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555332-volattr": {
+      "file_path": "documentation/kernel/attrlist/api-1555332-volattr.md",
+      "hash": "8018e1b57d250f420b3cf1df15c8208c508f2a572e05a26fd9f1330f0e879a90"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555342-commonattr": {
+      "file_path": "documentation/kernel/attrlist/api-1555342-commonattr.md",
+      "hash": "48ed6707e529754ae9a4346674a0d1037329260b41f9b7ff517910674524c934"
+    },
+    "https://developer.apple.com/documentation/kernel/attrlist/1555361-bitmapcount": {
+      "file_path": "documentation/kernel/attrlist/api-1555361-bitmapcount.md",
+      "hash": "211778fd9dde01ff6310299b18755bc2f96f8fdbca8736fde178ba09986d6ec9"
     },
     "https://developer.apple.com/documentation/kernel/attrreference_t": {
       "file_path": "documentation/kernel/attrreference_t.md",
@@ -172072,6 +172108,10 @@
       "file_path": "documentation/kernel/api-1640322-anonymous/kiopcidevicepowerstatecount.md",
       "hash": "a5fc4009550fb3308611bb9fa1d28b469bc320f227416c27e7cc1a74bcd5808d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/1640325-interrupt_types.json": {
+      "file_path": "documentation/kernel/api-1640325-interrupt_types.md",
+      "hash": "d39824e9b716406e37675e86824457b7128ac21d381b23b9c28067352b4d2e6e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/1640328-anonymous.json": {
       "file_path": "documentation/kernel/api-1640328-anonymous.md",
       "hash": "c373722c16db7ad823cf55a1b6c2476a12c03657a2b195c77961dcdc545a4f6b"
@@ -210567,6 +210607,38 @@
     "https://developer.apple.com/tutorials/data/documentation/kernel/attribute_set_t/1555291-volattr.json": {
       "file_path": "documentation/kernel/attribute_set_t/api-1555291-volattr.md",
       "hash": "1241140ce968a0a40741a59bdb06ce19c073d82d91cfb5fe3a117b215487aefb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist.json": {
+      "file_path": "documentation/kernel/attrlist.md",
+      "hash": "a44e6cb8ebcc911e398ca4ec1bac42b9edfd4f9d52d37685f1d2d7ad01fef647"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555218-dirattr.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555218-dirattr.md",
+      "hash": "1f35f3d5a46483205e0f988181c653e697193c32e93be542868f4ff3fbbf9a55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555256-forkattr.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555256-forkattr.md",
+      "hash": "a3a7dbdc37aa99707f09b78236dcd2d3ad225dcc01d87a46e6e77b07471ea4cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555266-reserved.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555266-reserved.md",
+      "hash": "7773841df5bb73e138dead9a8f96e87f1f9302ee1d694fea4855c6d338a09cd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555275-fileattr.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555275-fileattr.md",
+      "hash": "c324929a3f9f225cbafb51ee6561a7e04efaf09ded9da6f9d6d0ceec70d3bc93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555332-volattr.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555332-volattr.md",
+      "hash": "8018e1b57d250f420b3cf1df15c8208c508f2a572e05a26fd9f1330f0e879a90"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555342-commonattr.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555342-commonattr.md",
+      "hash": "48ed6707e529754ae9a4346674a0d1037329260b41f9b7ff517910674524c934"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/attrlist/1555361-bitmapcount.json": {
+      "file_path": "documentation/kernel/attrlist/api-1555361-bitmapcount.md",
+      "hash": "211778fd9dde01ff6310299b18755bc2f96f8fdbca8736fde178ba09986d6ec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/attrreference_t.json": {
       "file_path": "documentation/kernel/attrreference_t.md",
@@ -321074,6 +321146,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 79926
+    "total_pages": 79944
   }
 }

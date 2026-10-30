@@ -7,7 +7,7 @@
 The response containing a list of audit events.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

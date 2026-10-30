@@ -19,6 +19,10 @@ func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer,
 - (NSDraggingSession *) beginDraggingSessionWithItems:(NSArray<NSDraggingItem *> *) items gesture:(NSGestureRecognizer *) gesture source:(id<NSDraggingSource>) source;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 The dragging session for the drag, or `nil` if the method can’t start the session.

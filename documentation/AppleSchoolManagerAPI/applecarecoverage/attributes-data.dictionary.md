@@ -7,7 +7,7 @@
 Attributes for an organization device’s AppleCare coverage resource.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

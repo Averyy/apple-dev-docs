@@ -19,6 +19,10 @@ class var defaultMenu: NSMenu? { get }
 @property (class, strong, readonly, nullable) NSMenu * defaultMenu;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 The default implementation returns `nil`.

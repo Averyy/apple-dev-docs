@@ -14,7 +14,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/background-execution": {
       "file_path": "documentation/WatchKit/background-execution.md",
-      "hash": "b636bdf4edf65354c25e24859272cd782adf0555061c32b4e063ccc891139baf"
+      "hash": "c821229e09e30850bd7d163aa2c972c7fe64d271a3da7b136056fa718274c704"
     },
     "https://developer.apple.com/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard": {
       "file_path": "documentation/WatchKit/building-watchos-app-interfaces-using-the-storyboard.md",
@@ -34,11 +34,11 @@
     },
     "https://developer.apple.com/documentation/watchkit/handling-common-state-transitions": {
       "file_path": "documentation/WatchKit/handling-common-state-transitions.md",
-      "hash": "c521c433038a1d2bd20b490803f5e3eaf803c4e2ab40eda2b62742aa2b837e96"
+      "hash": "8539c4ea6165367d924cfcd7eb46e4fdff0542519e1b2162c17d366210d157c3"
     },
     "https://developer.apple.com/documentation/watchkit/handling-user-activity": {
       "file_path": "documentation/WatchKit/handling-user-activity.md",
-      "hash": "3ba447ce3e5032e4d025cdb4a4e4c65f96c481dac1d9315820a684a5f6e26d21"
+      "hash": "a0e09c49b3d81a610366134a7d7689977472dbbd1fb03da61a6760c8fc94f1b2"
     },
     "https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh": {
       "file_path": "documentation/WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh.md",
@@ -86,7 +86,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/using-background-tasks": {
       "file_path": "documentation/WatchKit/using-background-tasks.md",
-      "hash": "f2750cd287e656e030695aae2043a2ea7d8c216002d899654583d3a9ec7316b3"
+      "hash": "bda3687bf697ffa1d211fd7e18e1ea42764ce862591eadf84bab786aeb67413f"
     },
     "https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions": {
       "file_path": "documentation/WatchKit/using-extended-runtime-sessions.md",
@@ -270,15 +270,15 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/didbecomeactivenotification": {
       "file_path": "documentation/WatchKit/wkapplication/didbecomeactivenotification.md",
-      "hash": "c03fc84480cc1cb8857f27dd5618a8a6f1792eacbda34e22f4bfe23e06f86b38"
+      "hash": "be67bb96dedb463e8aad87944124ee01b983707f44186726cbae08d2565b4206"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/didenterbackgroundnotification": {
       "file_path": "documentation/WatchKit/wkapplication/didenterbackgroundnotification.md",
-      "hash": "7feb4c0087d751bd191bec06bf4106637e9596ce238777e145b2e1c5b8e0714b"
+      "hash": "77b9e3fd6c58460b0d0edaeec164b0f2bbacd52893b272b52327afbf6e607931"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/didfinishlaunchingnotification": {
       "file_path": "documentation/WatchKit/wkapplication/didfinishlaunchingnotification.md",
-      "hash": "abf2e849c4b70061aa37493d8a5fa86a41deba1b0c0fd26c0fc930438c653410"
+      "hash": "835f444cef9f933821587caf29ddd1cf64c04bbd8e449f17cc3170e2e2f80e51"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/globaltintcolor": {
       "file_path": "documentation/WatchKit/wkapplication/globaltintcolor.md",
@@ -334,11 +334,11 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/willenterforegroundnotification": {
       "file_path": "documentation/WatchKit/wkapplication/willenterforegroundnotification.md",
-      "hash": "69f74b793664a4df7f75174baa610605a3d7b1ceb4af78d1416648f329ade0e9"
+      "hash": "b3a2a9db7e50097a5201add361273b62b94687a6ccc6c161ea6848b32acd0b2b"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplication/willresignactivenotification": {
       "file_path": "documentation/WatchKit/wkapplication/willresignactivenotification.md",
-      "hash": "86ac24a6281a33886974f00895469931b744c8301fe1909ca60c2ba04be5e320"
+      "hash": "6a396becc1d06ac9eb5101d38d74f16d37599cb7def1d0160e64a3b743622660"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate.md",
@@ -346,23 +346,23 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidbecomeactive().md",
-      "hash": "ab5c0d04faac378bc2bc3196cdf25bffbf9cd447a149c5232103707d7b2443b9"
+      "hash": "e6d1e348d8f5f8d8be0b801a9be6abbc04e0733629801e27e7853ef8b533fa42"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidenterbackground().md",
-      "hash": "60373923b70285e4a46813d4690e4fc41593610d45a0832672e99ecab2123247"
+      "hash": "eca73785b24ec6b5a87112208730aef864acf3ac4e7d641a669c47f4b5cb499b"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidfinishlaunching().md",
-      "hash": "307e9e433633f4b2d1c426e88a1fbd8ee7fc2772c4b75c5e9d0bce680dfae38d"
+      "hash": "59f766d9e4a80cd5550a3f7a980bbbacbad95fa5c584919077a61cee8e78ef70"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationwillenterforeground().md",
-      "hash": "44a1725e48a6a46aec3bcf3206df7c63a165fe7fd7bfe918b7544b6a96d731e6"
+      "hash": "a0493b3d0e6a5719f6677725172c2de6248ded282a9140cc8c62a2357af8097a"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationwillresignactive().md",
-      "hash": "7ea8016e06c8613fbd7bcdda227c34b2eb2fbef4eb6a8f4b102027b6b43463cd"
+      "hash": "e49e20e73eec1271281fd4190bb1e1432be4e85b9dc633ddcf81eed53072cbda"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/deviceorientationdidchange().md",
@@ -410,7 +410,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handleuseractivity(_:)": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/handleuseractivity(_).md",
-      "hash": "117d8e625964e9e4c58fd526060416b0c24329955b5dd27f29bdd6b85535002c"
+      "hash": "f4bc716c7e65740fe5fbc846ab48aff81f4a51775c35b7e4280c98a4af88eeac"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/main().md",
@@ -426,7 +426,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkapplicationrefreshbackgroundtask.md",
-      "hash": "20978c17762d4488ee066afc61cddd398337bdb4f50a10792778a846bb878472"
+      "hash": "e50586a93a912f29d229a501aeb213482b74702e89cf28887f60221849568f9b"
     },
     "https://developer.apple.com/documentation/watchkit/wkapplicationstate": {
       "file_path": "documentation/WatchKit/wkapplicationstate.md",
@@ -694,7 +694,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkbluetoothalertrefreshbackgroundtask.md",
-      "hash": "8ff3a8bb89767c1d1b0b690b63e6d327e9837b408ab66d1cf3b774709895ddd6"
+      "hash": "f8c445c8887c3d832c26318023e471246b5dc8d8beb4f3cd1a155ffdb0067f48"
     },
     "https://developer.apple.com/documentation/watchkit/wkcrowndelegate": {
       "file_path": "documentation/WatchKit/wkcrowndelegate.md",
@@ -926,15 +926,15 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationdidbecomeactivenotification": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidbecomeactivenotification.md",
-      "hash": "35c2a87f25a681bb15c69dd14286496654f6721db41caa6ccdca3693fa07d667"
+      "hash": "6e6bc2eec21e03749dd2dca871dc01a2a87ffb8ec48d0f94c468e8cd37ec3947"
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationdidenterbackgroundnotification": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidenterbackgroundnotification.md",
-      "hash": "049759beeb5a296c9911a7f98431b966e053dafc6495f2f1f08202df3f17de84"
+      "hash": "21f4f6ae6c15598dea19591421f968301505554fe9287267ce355c7771051e9b"
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationdidfinishlaunchingnotification": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidfinishlaunchingnotification.md",
-      "hash": "d24b38739eee330644b2e1781d8acf049b362b4d2ae91d67ccd2603f3c73c55c"
+      "hash": "add86983c7a7c5a42f28435a6a61d392236b4831ff3a73b9e9fbe2497edf4485"
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationstate": {
       "file_path": "documentation/WatchKit/wkextension/applicationstate.md",
@@ -942,11 +942,11 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationwillenterforegroundnotification": {
       "file_path": "documentation/WatchKit/wkextension/applicationwillenterforegroundnotification.md",
-      "hash": "13ae769eea7565f382aaa023e92ae6e2511c127fa0535481f7e2f2afa218e6a1"
+      "hash": "0750a01b11a1e9e2b667a6ebc64743404951c7c2b211c116d5bd9c65be48071e"
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/applicationwillresignactivenotification": {
       "file_path": "documentation/WatchKit/wkextension/applicationwillresignactivenotification.md",
-      "hash": "0c4f292e818b5c828e511994f721b1f08581edfdd05ebe21007dbd9b60f26f23"
+      "hash": "0cfb31485cc636d3b9c25eb4fd7369cf700b377badfd55d3240705fc288f248a"
     },
     "https://developer.apple.com/documentation/watchkit/wkextension/delegate": {
       "file_path": "documentation/WatchKit/wkextension/delegate.md",
@@ -1018,23 +1018,23 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidbecomeactive().md",
-      "hash": "26a504f15ef02fcc6a526d09c020800f1e94141ed9ed3b79fcf0584ee34ef3f7"
+      "hash": "767f2a90e67d9faa076462dbaeb9992e5ec47615eadfa9ab649bf2e5e831f095"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidenterbackground().md",
-      "hash": "b7383a3f6ca94597987e83ad12f9aae976878adcafd85a8541739b60aa86bf3d"
+      "hash": "1f501cbe38c8d78a001f25b0b93166096cf21c4959f4dab9d8e664b6402f3df6"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidfinishlaunching().md",
-      "hash": "6606f8c45ef0165ebef67bef3f76e2321575c233037cf71d7227dd4a902c2b0b"
+      "hash": "3860a7d993f629d2d2692dedcb8a8843b21d82bed0c15b5305e962b1ef01ac71"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillenterforeground()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationwillenterforeground().md",
-      "hash": "6525963399aa0a0df522745d52cef21edf4b40d9a8e4881e23d25257332d7985"
+      "hash": "10d2b0957fe0451052898b991650a5be031a4d3d863300fe4e9903d73815ff4b"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillresignactive()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationwillresignactive().md",
-      "hash": "d87f02e8d70a55c3ab118cf6e09afdf65205f936ec3e7c992221d47d89d7eb24"
+      "hash": "7b1f85730601e0471dae4ff58bd994b469653d66b506bb8088270d917dd7b660"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/deviceorientationdidchange()": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/deviceorientationdidchange().md",
@@ -1106,7 +1106,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:)": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/handleuseractivity(_).md",
-      "hash": "23911d72cd8232c64bf10ee04a42cfcdfe4baaf70f2347d066ab923210a70fee"
+      "hash": "f05c3ba23b77c32a6b1967ca3d6d460c7655421f99149c8fe9ff4f1972756ab8"
     },
     "https://developer.apple.com/documentation/watchkit/wkextensiondelegate/userdidacceptcloudkitshare(with:)": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/userdidacceptcloudkitshare(with).md",
@@ -1286,7 +1286,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkintentdidrunrefreshbackgroundtask.md",
-      "hash": "7a6d515ea96a5fd225e3431afc19d5609e24ebc8d78f3376eac94bf22054568c"
+      "hash": "55540696ac34fce11bab02cc5b99e5989cdf51ae231b83aaa1f390360faec0be"
     },
     "https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring": {
       "file_path": "documentation/WatchKit/wkinterfaceactivityring.md",
@@ -2602,7 +2602,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkrefreshbackgroundtask.md",
-      "hash": "e7d7d7382b5fa22cb80290f7ba4acde470354c8c2a8556f5954f214c39958915"
+      "hash": "01443b9c697ae275b7b74075518141df5351b88d4dc40f7163708609bf0f072c"
     },
     "https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/expirationhandler": {
       "file_path": "documentation/WatchKit/wkrefreshbackgroundtask/expirationhandler.md",
@@ -2622,7 +2622,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkrelevantshortcutrefreshbackgroundtask.md",
-      "hash": "0436bdcf2a8b9993a8253ef3b3cf87528887620f7feec2d99d0eef31c17e09d6"
+      "hash": "46eb4ebf6e256a96784b0d21f16adec4f0dee5bd3467853986f01702abf68df9"
     },
     "https://developer.apple.com/documentation/watchkit/wksnapshotreason": {
       "file_path": "documentation/WatchKit/wksnapshotreason.md",
@@ -2654,7 +2654,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wksnapshotrefreshbackgroundtask.md",
-      "hash": "18301a1790b435497ae5a7f617a276158ac225c133e7d697642a61f045e72e84"
+      "hash": "8f7b2746f19bac2672f368fd3db20c40b4d8028c61dfe303a15fc9faa2823792"
     },
     "https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask/reasonforsnapshot": {
       "file_path": "documentation/WatchKit/wksnapshotrefreshbackgroundtask/reasonforsnapshot.md",
@@ -2846,7 +2846,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkurlsessionrefreshbackgroundtask.md",
-      "hash": "581c98c9c0a2fb8f52900c587f2377ca5621ba6d59fd6bc5d76516ae2f94192e"
+      "hash": "a3e91a330b0cd33c746a4c188da5fa8970d6075a6a4ba881676003c11c7d024c"
     },
     "https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask/sessionidentifier": {
       "file_path": "documentation/WatchKit/wkurlsessionrefreshbackgroundtask/sessionidentifier.md",
@@ -2926,7 +2926,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask": {
       "file_path": "documentation/WatchKit/wkwatchconnectivityrefreshbackgroundtask.md",
-      "hash": "25f0eba68af7c0f6b68a23a840a68a9fefbba8a11232c8d96408a3e250a164cc"
+      "hash": "b195ff8f39fedbd436f203cb1c652ac587b6da338e9ae66e1399a69640be2528"
     },
     "https://developer.apple.com/documentation/watchkit/wkwaterresistancerating": {
       "file_path": "documentation/WatchKit/wkwaterresistancerating.md",
@@ -2966,7 +2966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/background-execution.json": {
       "file_path": "documentation/WatchKit/background-execution.md",
-      "hash": "b636bdf4edf65354c25e24859272cd782adf0555061c32b4e063ccc891139baf"
+      "hash": "c821229e09e30850bd7d163aa2c972c7fe64d271a3da7b136056fa718274c704"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard.json": {
       "file_path": "documentation/WatchKit/building-watchos-app-interfaces-using-the-storyboard.md",
@@ -2986,11 +2986,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/handling-common-state-transitions.json": {
       "file_path": "documentation/WatchKit/handling-common-state-transitions.md",
-      "hash": "c521c433038a1d2bd20b490803f5e3eaf803c4e2ab40eda2b62742aa2b837e96"
+      "hash": "8539c4ea6165367d924cfcd7eb46e4fdff0542519e1b2162c17d366210d157c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/handling-user-activity.json": {
       "file_path": "documentation/WatchKit/handling-user-activity.md",
-      "hash": "3ba447ce3e5032e4d025cdb4a4e4c65f96c481dac1d9315820a684a5f6e26d21"
+      "hash": "a0e09c49b3d81a610366134a7d7689977472dbbd1fb03da61a6760c8fc94f1b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh.json": {
       "file_path": "documentation/WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh.md",
@@ -3038,7 +3038,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/using-background-tasks.json": {
       "file_path": "documentation/WatchKit/using-background-tasks.md",
-      "hash": "f2750cd287e656e030695aae2043a2ea7d8c216002d899654583d3a9ec7316b3"
+      "hash": "bda3687bf697ffa1d211fd7e18e1ea42764ce862591eadf84bab786aeb67413f"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/using-extended-runtime-sessions.json": {
       "file_path": "documentation/WatchKit/using-extended-runtime-sessions.md",
@@ -3222,15 +3222,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/didbecomeactivenotification.json": {
       "file_path": "documentation/WatchKit/wkapplication/didbecomeactivenotification.md",
-      "hash": "c03fc84480cc1cb8857f27dd5618a8a6f1792eacbda34e22f4bfe23e06f86b38"
+      "hash": "be67bb96dedb463e8aad87944124ee01b983707f44186726cbae08d2565b4206"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/didenterbackgroundnotification.json": {
       "file_path": "documentation/WatchKit/wkapplication/didenterbackgroundnotification.md",
-      "hash": "7feb4c0087d751bd191bec06bf4106637e9596ce238777e145b2e1c5b8e0714b"
+      "hash": "77b9e3fd6c58460b0d0edaeec164b0f2bbacd52893b272b52327afbf6e607931"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/didfinishlaunchingnotification.json": {
       "file_path": "documentation/WatchKit/wkapplication/didfinishlaunchingnotification.md",
-      "hash": "abf2e849c4b70061aa37493d8a5fa86a41deba1b0c0fd26c0fc930438c653410"
+      "hash": "835f444cef9f933821587caf29ddd1cf64c04bbd8e449f17cc3170e2e2f80e51"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/globaltintcolor.json": {
       "file_path": "documentation/WatchKit/wkapplication/globaltintcolor.md",
@@ -3286,11 +3286,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/willenterforegroundnotification.json": {
       "file_path": "documentation/WatchKit/wkapplication/willenterforegroundnotification.md",
-      "hash": "69f74b793664a4df7f75174baa610605a3d7b1ceb4af78d1416648f329ade0e9"
+      "hash": "b3a2a9db7e50097a5201add361273b62b94687a6ccc6c161ea6848b32acd0b2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication/willresignactivenotification.json": {
       "file_path": "documentation/WatchKit/wkapplication/willresignactivenotification.md",
-      "hash": "86ac24a6281a33886974f00895469931b744c8301fe1909ca60c2ba04be5e320"
+      "hash": "6a396becc1d06ac9eb5101d38d74f16d37599cb7def1d0160e64a3b743622660"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate.json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate.md",
@@ -3298,23 +3298,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidbecomeactive().md",
-      "hash": "ab5c0d04faac378bc2bc3196cdf25bffbf9cd447a149c5232103707d7b2443b9"
+      "hash": "e6d1e348d8f5f8d8be0b801a9be6abbc04e0733629801e27e7853ef8b533fa42"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidenterbackground().md",
-      "hash": "60373923b70285e4a46813d4690e4fc41593610d45a0832672e99ecab2123247"
+      "hash": "eca73785b24ec6b5a87112208730aef864acf3ac4e7d641a669c47f4b5cb499b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationdidfinishlaunching().md",
-      "hash": "307e9e433633f4b2d1c426e88a1fbd8ee7fc2772c4b75c5e9d0bce680dfae38d"
+      "hash": "59f766d9e4a80cd5550a3f7a980bbbacbad95fa5c584919077a61cee8e78ef70"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationwillenterforeground().md",
-      "hash": "44a1725e48a6a46aec3bcf3206df7c63a165fe7fd7bfe918b7544b6a96d731e6"
+      "hash": "a0493b3d0e6a5719f6677725172c2de6248ded282a9140cc8c62a2357af8097a"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/applicationwillresignactive().md",
-      "hash": "7ea8016e06c8613fbd7bcdda227c34b2eb2fbef4eb6a8f4b102027b6b43463cd"
+      "hash": "e49e20e73eec1271281fd4190bb1e1432be4e85b9dc633ddcf81eed53072cbda"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/deviceorientationdidchange().md",
@@ -3362,7 +3362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/handleuseractivity(_:).json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/handleuseractivity(_).md",
-      "hash": "117d8e625964e9e4c58fd526060416b0c24329955b5dd27f29bdd6b85535002c"
+      "hash": "f4bc716c7e65740fe5fbc846ab48aff81f4a51775c35b7e4280c98a4af88eeac"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationdelegate/main().json": {
       "file_path": "documentation/WatchKit/wkapplicationdelegate/main().md",
@@ -3378,7 +3378,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkapplicationrefreshbackgroundtask.md",
-      "hash": "20978c17762d4488ee066afc61cddd398337bdb4f50a10792778a846bb878472"
+      "hash": "e50586a93a912f29d229a501aeb213482b74702e89cf28887f60221849568f9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplicationstate.json": {
       "file_path": "documentation/WatchKit/wkapplicationstate.md",
@@ -3646,7 +3646,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkbluetoothalertrefreshbackgroundtask.md",
-      "hash": "8ff3a8bb89767c1d1b0b690b63e6d327e9837b408ab66d1cf3b774709895ddd6"
+      "hash": "f8c445c8887c3d832c26318023e471246b5dc8d8beb4f3cd1a155ffdb0067f48"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkcrowndelegate.json": {
       "file_path": "documentation/WatchKit/wkcrowndelegate.md",
@@ -3878,15 +3878,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationdidbecomeactivenotification.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidbecomeactivenotification.md",
-      "hash": "35c2a87f25a681bb15c69dd14286496654f6721db41caa6ccdca3693fa07d667"
+      "hash": "6e6bc2eec21e03749dd2dca871dc01a2a87ffb8ec48d0f94c468e8cd37ec3947"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationdidenterbackgroundnotification.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidenterbackgroundnotification.md",
-      "hash": "049759beeb5a296c9911a7f98431b966e053dafc6495f2f1f08202df3f17de84"
+      "hash": "21f4f6ae6c15598dea19591421f968301505554fe9287267ce355c7771051e9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationdidfinishlaunchingnotification.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationdidfinishlaunchingnotification.md",
-      "hash": "d24b38739eee330644b2e1781d8acf049b362b4d2ae91d67ccd2603f3c73c55c"
+      "hash": "add86983c7a7c5a42f28435a6a61d392236b4831ff3a73b9e9fbe2497edf4485"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationstate.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationstate.md",
@@ -3894,11 +3894,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationwillenterforegroundnotification.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationwillenterforegroundnotification.md",
-      "hash": "13ae769eea7565f382aaa023e92ae6e2511c127fa0535481f7e2f2afa218e6a1"
+      "hash": "0750a01b11a1e9e2b667a6ebc64743404951c7c2b211c116d5bd9c65be48071e"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/applicationwillresignactivenotification.json": {
       "file_path": "documentation/WatchKit/wkextension/applicationwillresignactivenotification.md",
-      "hash": "0c4f292e818b5c828e511994f721b1f08581edfdd05ebe21007dbd9b60f26f23"
+      "hash": "0cfb31485cc636d3b9c25eb4fd7369cf700b377badfd55d3240705fc288f248a"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextension/delegate.json": {
       "file_path": "documentation/WatchKit/wkextension/delegate.md",
@@ -3970,23 +3970,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidbecomeactive().md",
-      "hash": "26a504f15ef02fcc6a526d09c020800f1e94141ed9ed3b79fcf0584ee34ef3f7"
+      "hash": "767f2a90e67d9faa076462dbaeb9992e5ec47615eadfa9ab649bf2e5e831f095"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidenterbackground().md",
-      "hash": "b7383a3f6ca94597987e83ad12f9aae976878adcafd85a8541739b60aa86bf3d"
+      "hash": "1f501cbe38c8d78a001f25b0b93166096cf21c4959f4dab9d8e664b6402f3df6"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationdidfinishlaunching().md",
-      "hash": "6606f8c45ef0165ebef67bef3f76e2321575c233037cf71d7227dd4a902c2b0b"
+      "hash": "3860a7d993f629d2d2692dedcb8a8843b21d82bed0c15b5305e962b1ef01ac71"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/applicationwillenterforeground().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationwillenterforeground().md",
-      "hash": "6525963399aa0a0df522745d52cef21edf4b40d9a8e4881e23d25257332d7985"
+      "hash": "10d2b0957fe0451052898b991650a5be031a4d3d863300fe4e9903d73815ff4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/applicationwillresignactive().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/applicationwillresignactive().md",
-      "hash": "d87f02e8d70a55c3ab118cf6e09afdf65205f936ec3e7c992221d47d89d7eb24"
+      "hash": "7b1f85730601e0471dae4ff58bd994b469653d66b506bb8088270d917dd7b660"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/deviceorientationdidchange().json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/deviceorientationdidchange().md",
@@ -4058,7 +4058,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:).json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/handleuseractivity(_).md",
-      "hash": "23911d72cd8232c64bf10ee04a42cfcdfe4baaf70f2347d066ab923210a70fee"
+      "hash": "f05c3ba23b77c32a6b1967ca3d6d460c7655421f99149c8fe9ff4f1972756ab8"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextensiondelegate/userdidacceptcloudkitshare(with:).json": {
       "file_path": "documentation/WatchKit/wkextensiondelegate/userdidacceptcloudkitshare(with).md",
@@ -4238,7 +4238,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkintentdidrunrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkintentdidrunrefreshbackgroundtask.md",
-      "hash": "7a6d515ea96a5fd225e3431afc19d5609e24ebc8d78f3376eac94bf22054568c"
+      "hash": "55540696ac34fce11bab02cc5b99e5989cdf51ae231b83aaa1f390360faec0be"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkinterfaceactivityring.json": {
       "file_path": "documentation/WatchKit/wkinterfaceactivityring.md",
@@ -5554,7 +5554,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkrefreshbackgroundtask.md",
-      "hash": "e7d7d7382b5fa22cb80290f7ba4acde470354c8c2a8556f5954f214c39958915"
+      "hash": "01443b9c697ae275b7b74075518141df5351b88d4dc40f7163708609bf0f072c"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkrefreshbackgroundtask/expirationhandler.json": {
       "file_path": "documentation/WatchKit/wkrefreshbackgroundtask/expirationhandler.md",
@@ -5574,7 +5574,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkrelevantshortcutrefreshbackgroundtask.md",
-      "hash": "0436bdcf2a8b9993a8253ef3b3cf87528887620f7feec2d99d0eef31c17e09d6"
+      "hash": "46eb4ebf6e256a96784b0d21f16adec4f0dee5bd3467853986f01702abf68df9"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wksnapshotreason.json": {
       "file_path": "documentation/WatchKit/wksnapshotreason.md",
@@ -5606,7 +5606,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wksnapshotrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wksnapshotrefreshbackgroundtask.md",
-      "hash": "18301a1790b435497ae5a7f617a276158ac225c133e7d697642a61f045e72e84"
+      "hash": "8f7b2746f19bac2672f368fd3db20c40b4d8028c61dfe303a15fc9faa2823792"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wksnapshotrefreshbackgroundtask/reasonforsnapshot.json": {
       "file_path": "documentation/WatchKit/wksnapshotrefreshbackgroundtask/reasonforsnapshot.md",
@@ -5798,7 +5798,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkurlsessionrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkurlsessionrefreshbackgroundtask.md",
-      "hash": "581c98c9c0a2fb8f52900c587f2377ca5621ba6d59fd6bc5d76516ae2f94192e"
+      "hash": "a3e91a330b0cd33c746a4c188da5fa8970d6075a6a4ba881676003c11c7d024c"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkurlsessionrefreshbackgroundtask/sessionidentifier.json": {
       "file_path": "documentation/WatchKit/wkurlsessionrefreshbackgroundtask/sessionidentifier.md",
@@ -5878,7 +5878,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask.json": {
       "file_path": "documentation/WatchKit/wkwatchconnectivityrefreshbackgroundtask.md",
-      "hash": "25f0eba68af7c0f6b68a23a840a68a9fefbba8a11232c8d96408a3e250a164cc"
+      "hash": "b195ff8f39fedbd436f203cb1c652ac587b6da338e9ae66e1399a69640be2528"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkwaterresistancerating.json": {
       "file_path": "documentation/WatchKit/wkwaterresistancerating.md",

@@ -7,7 +7,7 @@
 Attributes for an organization device’s Activation Lock status.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

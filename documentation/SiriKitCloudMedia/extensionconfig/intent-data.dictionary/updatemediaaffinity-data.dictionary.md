@@ -21,7 +21,7 @@ To specify that your service only implements the required methods, provide an em
 
 ## Properties
 
-- `opt` ([string]): Optional intent-handling steps that [`updateMediaAffinity`](./updatemediaaffinity-data.dictionarykey.md) supports.
+- `opt` ([string]): Optional intent-handling steps that `updateMediaAffinity` supports.
 
   **Allowed Values**: `resolveAffinityType`
 

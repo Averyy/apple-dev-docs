@@ -43,9 +43,11 @@ enum NSScrollElasticity : NSInteger;
 
 ## See Also
 
-### Constants
-- [NSScrollView.FindBarPosition](./findbarposition-swift.enum.md)
-  These constants define the position of the find bar in relation to the scroll view.
+### Specifying the scroll view elasticity
+- [var horizontalScrollElasticity: NSScrollView.Elasticity](./horizontalscrollelasticity.md)
+  The scroll view’s horizontal scrolling elasticity mode.
+- [var verticalScrollElasticity: NSScrollView.Elasticity](./verticalscrollelasticity.md)
+  The scroll view’s vertical scrolling elasticity mode.
 
 
 ---

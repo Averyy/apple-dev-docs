@@ -2,571 +2,571 @@
   "hashes": {
     "https://developer.apple.com/documentation/appleschoolmanagerapi": {
       "file_path": "documentation/AppleSchoolManagerAPI/AppleSchoolManagerAPI.md",
-      "hash": "cc7dcd3dd7c17fb137c067ff65c4f4ecc20005a2ab3fc39b0a0a11ebb84666c8"
+      "hash": "2f178fb6ed19a310a78d5a23c71a142222ba04835ba77b523cf5df824e116da8"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/activationlockstatus": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatus.md",
-      "hash": "184ec3217cdc400f193cf17d640c8a57b0d2cc198262a5765c703da92d0dc002"
+      "hash": "109c5bb4848195bc93689b49bb24ca291dad57ca6e9ed8fb0d177d5fd3f1c3f3"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/activationlockstatus/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatus/attributes-data.dictionary.md",
-      "hash": "f6caa3071936b5f6ddd13db23f1999d6385a3e7a00d32d6cc44815b02f421e70"
+      "hash": "3a3ccab53fd89ea92275f2a93e3e9ba3a7b169f733401b8c96664a4168f7a8e4"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/activationlockstatusresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatusresponse.md",
-      "hash": "4b946a65bd86bba37a561aebd5ca87a473de4dd1809506cebbd5f3c1a65c7b53"
+      "hash": "d60348e634107b2214a01b0b2688f3c0fd9734be0171b1b28192d9b49ef6a08c"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/activationlocktype": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlocktype.md",
-      "hash": "2692c4f7ebee987046b18c6c4a9b05b698f2cdc29849b86ed3ccb13d12e1fd00"
+      "hash": "6783b1cd7850077bf94a59e183a9b9c8365622adaefc49c329effd973696c7af"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/activitytypemetadata": {
       "file_path": "documentation/AppleSchoolManagerAPI/activitytypemetadata.md",
-      "hash": "68bb8ee5c572435bb86108fc8c95ca45d1988fb0519ba7083e1043cfb161b257"
+      "hash": "89e4ca1845406accfa06f046b079010dc20512c9f3a76ebfa21e2c21fe948fb2"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/applecarecoverage": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverage.md",
-      "hash": "b0405fcadb523a7e883baec003ca7bdec46f1b4bf23b02e484de4ea9b70494e1"
+      "hash": "264d3e96c24d8e10d38692bc588da4b1df7b484f22c25ba0b70ea9731e8a34fa"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/applecarecoverage/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverage/attributes-data.dictionary.md",
-      "hash": "8c29cd1f2a91bcab3ef4d50765d4d6158e09492cc537e51ed02d47bf7cfbfefe"
+      "hash": "881d6c6e28459ef4788b9c8168fd4a6d49b36d6e8fd1c083f35474918d098c92"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/applecarecoveragepaymenttype": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoveragepaymenttype.md",
-      "hash": "aba1782a500cc6ab35ec463d03f94c0eb397fa16db2f72a4823fcb8bd4583370"
+      "hash": "fb76111ed71cee84378397c836886df766b88bd774f3d0acf365cfeacb020da2"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/applecarecoverageresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverageresponse.md",
-      "hash": "223eb557ce2c849c199e51525d4363e3a4db34c1a89685b8166fe22aadef6b8b"
+      "hash": "4a1a3f8f2a083e3ec9cad9547b101fbcba4472c09bee38d7afab6994e78d3e2b"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/applecarecoveragestatus": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoveragestatus.md",
-      "hash": "bcc61b9d9ebff2ec6f193e3e2bd144f9b03dd34034dad5f4ba522c5873442a8d"
+      "hash": "f4dd8374658a79d01b0ef8fd567da04ed26cffe6fc948e0a444f7b7c5f44a05c"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/create-an-orgdeviceactivity": {
       "file_path": "documentation/AppleSchoolManagerAPI/create-an-orgdeviceactivity.md",
-      "hash": "d987d816960ceee363813686689d55eadc7b6e7d4d4ee421149967887350ed2b"
+      "hash": "a6f94ed23bb973a975c6da3e9e359ea6edd19854e6a272982898ef9e6a08d2db"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/documentlinks": {
       "file_path": "documentation/AppleSchoolManagerAPI/documentlinks.md",
-      "hash": "b645857018da1e2598b57ef6e4ec0c2b3e5f6ce6ff3d21deadb426808a47fc91"
+      "hash": "d8a3f7bfaae1ed502883d085cc8592baeae5e1af1fb8647f20733efbf8d06a77"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorlinks": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks.md",
-      "hash": "ae47bfdaa6164566bd2b968865ffb3eb5a42f6328d2deb38e20c78373a88dac0"
+      "hash": "75649446e80c9ce327df35642ef22c4673e5f7d8d2ca297c514e7c10a9e0965a"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorlinks/associated-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks/associated-data.dictionary.md",
-      "hash": "1eaf272f6100ed85b7d865f512a1be0665be4f45a059b3f18be80694c2ad5d9c"
+      "hash": "80cf51ba9401e531eeb1629101ccf8b76569eb12beed728f942ccc55b1598c09"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorlinks/associated-data.dictionary/meta-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks/associated-data.dictionary/meta-data.dictionary.md",
-      "hash": "17409b63073493f56e91ad5e86499bc5cea6a9802b49ff2cbbaf679520d76366"
+      "hash": "887dff0a1d17af054934b59ce1ccf948a833e5ff43d52d2cbd3bedc76e9c1e50"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse.md",
-      "hash": "5dbd648b93d3c6ec35fa74fe507634f5a447c7003119adb787f71dab7b8dd9c2"
+      "hash": "af2c3d6662212de03822ba51605ad8cd38ece3559b3c558130084afbff87fd73"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary.md",
-      "hash": "60f8e77c4a6be3af4330e0219032c573c7f00fbaf007b3fba6e66accfc57f6da"
+      "hash": "a775220e4b77c610749b2b505b79948517491e24bc94e1e0e29702ded45f337e"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary/meta-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary/meta-data.dictionary.md",
-      "hash": "e72846dc690dff817ded188feaf0daef6a052a24d7a4bf6c15399088a0a5be68"
+      "hash": "ba92bdce23ccdcc11ea729cceb9149ff6d2671348eb062b5924d6d43885e6225"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.md",
-      "hash": "8e768502f9c87ca24e549a1ea14060dba6663936aed1324b8fa4417f32242935"
+      "hash": "5657f57d07dbebc2d3ed107ba2c12feb4eceb2b255c51bb349b62098b5df2a3d"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-applecare-coverage-for-an-orgdevice": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-all-applecare-coverage-for-an-orgdevice.md",
-      "hash": "efc9ac32e62659d2b51d326660508b475621299b721136cd670d7ed8801660d2"
+      "hash": "abc877f0ac2eeca824a02406e2e0b54263aab73bfd559c54416a847b5b56e5af"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-device-ids-for-a-device-management-service": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-all-device-ids-for-a-device-management-service.md",
-      "hash": "344e44b858b87dff7291b1d86a85c3d2049d43ad2a01960dd238d7417fed1160"
+      "hash": "9816460c9337bb69dd7ceefd7b07170ad946c70d237e5727474153ceaa96db7d"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-device-management-services": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-device-management-services.md",
-      "hash": "71bcd9844775b4ad0c4c84848575e0414749ce9ef7dff20b4e9831e910807d20"
+      "hash": "626fffc308b375c63eff3c0821887b7508272f9fb79b2ffa6234fae4e83d5039"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-mdmserver-information": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-mdmserver-information.md",
-      "hash": "3b593965c14ca6da969c41551dfc602f94b5bb23578bcc9d1a89c4d3764df422"
+      "hash": "00bec2a684606b5dbc65771e9647ee38ad9a3abe2a1a65f84e4418d887c42472"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-org-devices": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-org-devices.md",
-      "hash": "54ca0cad93be8cf661b9620517c1d3447f3d783951d873d2241045bb1076cd77"
+      "hash": "227a14f3b6fb4ec79081175f2f4766a5d5d2e3fd240313a805d2d895e381d4df"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-orgdevice-information": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdevice-information.md",
-      "hash": "2137287c1ff172f93bb30f3a2d7e3a58a37eef952865fb402b2e2a75419ca374"
+      "hash": "67d92260d5e3f39855748600f4d5ad339d7a88dd7b1ae314b5fb78884dea71e3"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-orgdeviceactivity-information": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdeviceactivity-information.md",
-      "hash": "09da0e2dbfd37c3fe3c8c0ada7345ad3a4d285982ed484830f73d825b05396ea"
+      "hash": "764966b6c0c57d858eccefd895d0bd0647658c50f7c0e3e61be03af78bcfe1c7"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-the-activation-lock-status-information-for-an-orgdevice": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-activation-lock-status-information-for-an-orgdevice.md",
-      "hash": "f7fd5ba0d1b207c55377baca5fed7dc7755762f92f7738c999bf0478a0fb8a6f"
+      "hash": "eff73bf39a06398dc6e0568d87d8937a2e781c1fc49dbcc6f773e476d9533338"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-the-assigned-device-management-service-id-for-an-orgdevice": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-assigned-device-management-service-id-for-an-orgdevice.md",
-      "hash": "6076d3acd1a69532c733ecbefc3eadda99c6584e9b7587b4399d694fd0838846"
+      "hash": "256c9f90aa475d71604f2c9311b2888cbe5beb8f185b98d00ad327bf4597c841"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-the-assigned-device-management-service-information-for-an-orgdevice": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-assigned-device-management-service-information-for-an-orgdevice.md",
-      "hash": "b6b8d83b8924d86091432db13aa049f581c08ce10bf054caefb8020673254883"
+      "hash": "df6ff4f1a47620d1e70038134b4f2880c93111ae929ff3ce2e66842ae4f40c9f"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/jsonpointer": {
       "file_path": "documentation/AppleSchoolManagerAPI/jsonpointer.md",
-      "hash": "361cb394b12c54626fbc43e2a0a38c7dbb5990b50edc6fabd8a7090e993f9a5c"
+      "hash": "d5b43ca228d9ea93537509c72807a5e165d89b056fc6da39ce8af6bad203cd33"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmmigrationstatus": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmmigrationstatus.md",
-      "hash": "3258611722a4f23d661ebc8bb1374f3842ec4a982ae6ed0a97b1a85cc7b5dcda"
+      "hash": "99ebedbc6f4c55cda293bc0726e0602b24952184cced3e4c270f7981feb58ea7"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserver": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver.md",
-      "hash": "c28b1bb4607fa912a252b96c446069401a22ff5b88420be0fe5a2e4e34da53bc"
+      "hash": "7e9b353380c955bef7c241e0f85084d208934ab0e5f635aaf626d2773a0d6c5c"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserver/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/attributes-data.dictionary.md",
-      "hash": "da9151a24f15c6c18dd5a9257b36ef8b8887da1769ad6b95c60fd75af39cbbee"
+      "hash": "9aad3397d24fab2a330fd4b753505f31914e7f004cd518483006e7155c9f6bb8"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary.md",
-      "hash": "7f4a30cdb23d93f2e908f5c2966d713ae394ffeed0b5fa572b501c617b484449"
+      "hash": "b96f62f7fd04fdd682fb0327a992cec6e2e23ef70c8b4caf0733b8bdc934c900"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary/devices-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary/devices-data.dictionary.md",
-      "hash": "84c0d920247213bf02f3218a0adf842fde9e68a85ea2fa7160a6f3afbb816bcb"
+      "hash": "bdb5cd403b5881d66eb7bcdcbd737b3a142b3efd0e77e160610e17d1f377f752"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
-      "hash": "98df83703440a09f6912f49286f84bf6ab95d5327a693b7862f8f2bf9d7fe236"
+      "hash": "57a53c3a20ba393a540b4489db6d9fa3c8b44cd9dba3ddbc08ed591c2fbf25b2"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserverdeviceslinkagesresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverdeviceslinkagesresponse.md",
-      "hash": "297d543ee95a6eddaf8fb7b5625f311dc9a57a37a7c5ffecac0861f30960ff84"
+      "hash": "92e397823e6eb9615b0d0a106fd783c5ef3f6aa92f08061f13036f3b913d65f3"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserverdeviceslinkagesresponse/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverdeviceslinkagesresponse/data-data.dictionary.md",
-      "hash": "9791eaf952b5333fe1a5187f825b5fc9117e5d9a6126a0ff8a47de5789b1a733"
+      "hash": "9006b658e736b0b3d41dea947f9680a8f0b994f1c85c168ce7476f7840341188"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserverproductfamily": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverproductfamily.md",
-      "hash": "42d29d62ab8daaffede077270c010be580f3235401088d3163370b64ae1db59a"
+      "hash": "d24bc0fbcf451596a2247ff9cfce90bcb71ed674fba136b2ccb1f179938c37b4"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserverresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverresponse.md",
-      "hash": "4ebb3634574e783ee0fc969afe507b68858868d165666ee9e85c14644ffa5773"
+      "hash": "e7a36fdb2c73f3a55ed529803e58ed2a3e292b6cebbffa7ecc7007d6ea528299"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserversresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserversresponse.md",
-      "hash": "a71ac801484b88babb41a76b8fd330d164c3087f848d84f8e22910866d7520d1"
+      "hash": "91bb3cc673547cea44922bbc7ff6027754f7e8fd7863c644f543393ac42cc635"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/mdmserverstatus": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverstatus.md",
-      "hash": "fc28fd8d3234c348abd107951e972ac86cba4fe05e7df3d1312fe41cd80f6b35"
+      "hash": "badbaed5e2ebbbdd2e9aa4fd888f30db7bbba02eda333807be127e43770c0be9"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice.md",
-      "hash": "57fe843cc7850bd49deee331343dc01f1c263909ffb070cc823c1bfcf3094bbd"
+      "hash": "034885ac7009aa52230f6f826a0387dd24f3948e801cf68735afe09d7c07a861"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md",
-      "hash": "1d6bcc25e36010f4b751c2f3419cf17055788c5382c301e84433b18e0e495410"
+      "hash": "d61d96829359bfbd865cf193f666cf71b266bda2407a4fa74a98257d1e49ec78"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary.md",
-      "hash": "43a942368792253f272f042a849744b77669f3bae780d2cac4486875668cdc03"
+      "hash": "e26ff8023e158f9447463c8d5d2f8bc0ea9253eeed8a8ac4937293c25d535a59"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/activationlockstatus-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/activationlockstatus-data.dictionary.md",
-      "hash": "d0b7cce19b4596e2d62981c5f021eae631a299989bae7eff241a536475b53fac"
+      "hash": "d7b6ace76bb5bcb82ca4c00cb651d0489e29b3acb04672850b8974e431acb4ee"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/applecarecoverage-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/applecarecoverage-data.dictionary.md",
-      "hash": "945b55707b18cf3598f32de7df549e29beb178512299fbb3e14c33dad725dcba"
+      "hash": "6314fd5256b4168414403c08d42999e6f718fd0485e5d096ef41fec25ace930d"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/assignedserver-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/assignedserver-data.dictionary.md",
-      "hash": "b3a900484b8797de54421627597bf95e9245a28985f2dc46fe1b6de20b50fdf0"
+      "hash": "8c393fb15dcf45058b6a3a357996bd0d105e0e318d90cc8c7b3042155e7c8670"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivity": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivity.md",
-      "hash": "33000b560d572bf5fc2060ef2c301f17c65957818c846e15a609a6d075715e65"
+      "hash": "0166692c53c33aa0d749933f53194263b176c297b4d48a7995cccc94f25bfbdc"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivity/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivity/attributes-data.dictionary.md",
-      "hash": "3665d4301c7dd2b317f65b673e246a13ef3be089921afec9b9aa6bacd492c639"
+      "hash": "da63a30eb08650893c0c268f3a3dd7bac1fec80bc16a51f056a2977831f3785b"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest.md",
-      "hash": "bfd1664c1ba2f998c0ccbfb8941831bc862d40f9d8500bd8c5ded7329922d92c"
+      "hash": "48e097056cfbc0ebd8452521f7b4a372624e54280ac51291a3e28455db4d2eff"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary.md",
-      "hash": "7f30080b9f0f62c5e5cffa3e464690e30dad8b1d504757d46cd319054998392a"
+      "hash": "7b433313c26f02f04507f297725972e8e87033fcf5373227e79adc7ca314c7fc"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/attributes-data.dictionary.md",
-      "hash": "f9be4749fcc1ae079880955e62b29f1798d8c384d2fa674dc2608491418b9922"
+      "hash": "21d9258fe472843430168b0815e2af30a1d9bf6daf1f06deeaea1d3404330b34"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary.md",
-      "hash": "5c5170a467a918419b476920a700b36ff0d98442972497e65ddb375a8cf67cbf"
+      "hash": "50cb168dcc9eaf1638a09c5f9a58d7b9e2f71174fa0f8e16079a393d09045653"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md",
-      "hash": "ac43af9cbd521b986f9ce5c8365c8d646fcd63a36a717d1d3d2130aba38b1cbb"
+      "hash": "3aecf35d838324f481f5ad21d58386537e02adc0dfff2ff1a90d3a6272cb0c74"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
-      "hash": "ecfc9ee8c8296cf674bc6dbc0d4df0033c73f3577be8d3c9049780067487f7ca"
+      "hash": "f6e5912405aca6d03babc199aa04f64c8805a00b959d5236027585d36a34dac8"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary.md",
-      "hash": "2a2d370e8cf0070de556ab977b5019ed4f17c66e40fcd828c538cb604b4a59d2"
+      "hash": "23e949ee289314f1df8142ab640ad538b542c71564b4489dd6e0e3617e89c77b"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary/data-data.dictionary.md",
-      "hash": "2118af3aa0b227d00c256fd5e21b3e598056883d37208190ceb90dd54d2dcf9d"
+      "hash": "5d33de1ec45413489b870bfd2f419f7de6630a6baec2c305a7280915725b3ab1"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivityresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivityresponse.md",
-      "hash": "a37183fca397f77bbe201d47661521b2025954a003de028552e4478438f828b6"
+      "hash": "cfe1dbfee0c44e1b3c40e22be4d7af4e9cf0156ce061f620fad35eba941bbc35"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceactivitytype": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitytype.md",
-      "hash": "4df43dbd545507add81416c9c26c67ea07b65a29273ba3f58e6a43428fb97870"
+      "hash": "303b4521b4beb946ec1d757a9e5aa0fa86197edfcdcdbab37c1c11b573ffa979"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceassignedserverlinkageresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceassignedserverlinkageresponse.md",
-      "hash": "b1f1d2adbb434b81c18b2616dba278dad19e5253c1677da35d19728fcce82523"
+      "hash": "079a2d6ffdab9883be6aff1d163e5d5338ef7d868ffd5398b17625ce3e6a4d25"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceassignedserverlinkageresponse/data-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceassignedserverlinkageresponse/data-data.dictionary.md",
-      "hash": "6150d19b047d3a8287f32e649b8e185c46b522ba5f43a83b161370175c82f145"
+      "hash": "dd653f26aee6a8d71b9fb82aa38d896ac836dc0bc43af4c706a8f2c93fbfc7f1"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdeviceresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceresponse.md",
-      "hash": "51c626550f634b1e53850b8967001942bc402b72e8816934c23905066f6cf157"
+      "hash": "7118c6e8a49b5118fcf196adc0a891a739c17c88091b0c66ce0bd2a5643e582f"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/orgdevicesresponse": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevicesresponse.md",
-      "hash": "a4f9bfeb4fbbc732124418d968987bbac5771ca504305a3d7d08236fdfb2e5c6"
+      "hash": "5a2c62c75d870045397f7b24bbed7c24a16e92eece1cab24f2a3707019900a54"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/pageddocumentlinks": {
       "file_path": "documentation/AppleSchoolManagerAPI/pageddocumentlinks.md",
-      "hash": "61a519da9e111a447c0c03f984b0b0c3e7194c34723bead748159967d3da687c"
+      "hash": "320e8c8ec13ca84e6fd7ab5c7a0f917a53e650efe477c06b6113fb959dcde26f"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/paginginformation": {
       "file_path": "documentation/AppleSchoolManagerAPI/paginginformation.md",
-      "hash": "6224686feaa57a3d8630355a3cdf0103e392f7c2d0660e9a01aca053c3e4edea"
+      "hash": "e0725e4809daa73c2ba56ffd6ca049c6fe1460fab7cd2cd09496c667bc435fa4"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/paginginformation/paging-data.dictionary": {
       "file_path": "documentation/AppleSchoolManagerAPI/paginginformation/paging-data.dictionary.md",
-      "hash": "60651a194c28d37bcf06103c70d5592a41c9a5affd94f1fb7a5a8a9ff5f79b16"
+      "hash": "457e21f1a1fa55f2016a809c8af6994795c49271cf4b5185052f24d025afd53a"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/parameter": {
       "file_path": "documentation/AppleSchoolManagerAPI/parameter.md",
-      "hash": "ad3a6e7cbe89b60dbc3fee625d82ce4e7ee9daf661231b4bc1d21ae78a9e1cd4"
+      "hash": "9ef71310c615f859c22b34c5343da907314967301678e4cc6f75913eebacf046"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/relationshiplinks": {
       "file_path": "documentation/AppleSchoolManagerAPI/relationshiplinks.md",
-      "hash": "1b43dedee7b44bb7bd6829580f6414f0be5da50e574fa33ee47e8628bc50ba02"
+      "hash": "eb721bd53625028dd5c229f5e8ea927fbe3b24fc88f7c7d8c41f7f2bcc2eb4b0"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/resourcelinks": {
       "file_path": "documentation/AppleSchoolManagerAPI/resourcelinks.md",
-      "hash": "35fc9f3f2239052228bcc1238402f4bd4634be0292aa336e4e0ce4d6231c142d"
+      "hash": "971179c5d83f79af06a41310fc874e72478e061d1b8b6c68869b4c010e04e58e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/AppleSchoolManagerAPI.md",
-      "hash": "cc7dcd3dd7c17fb137c067ff65c4f4ecc20005a2ab3fc39b0a0a11ebb84666c8"
+      "hash": "2f178fb6ed19a310a78d5a23c71a142222ba04835ba77b523cf5df824e116da8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/activationlockstatus.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatus.md",
-      "hash": "184ec3217cdc400f193cf17d640c8a57b0d2cc198262a5765c703da92d0dc002"
+      "hash": "109c5bb4848195bc93689b49bb24ca291dad57ca6e9ed8fb0d177d5fd3f1c3f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/activationlockstatus/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatus/attributes-data.dictionary.md",
-      "hash": "f6caa3071936b5f6ddd13db23f1999d6385a3e7a00d32d6cc44815b02f421e70"
+      "hash": "3a3ccab53fd89ea92275f2a93e3e9ba3a7b169f733401b8c96664a4168f7a8e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/activationlockstatusresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlockstatusresponse.md",
-      "hash": "4b946a65bd86bba37a561aebd5ca87a473de4dd1809506cebbd5f3c1a65c7b53"
+      "hash": "d60348e634107b2214a01b0b2688f3c0fd9734be0171b1b28192d9b49ef6a08c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/activationlocktype.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/activationlocktype.md",
-      "hash": "2692c4f7ebee987046b18c6c4a9b05b698f2cdc29849b86ed3ccb13d12e1fd00"
+      "hash": "6783b1cd7850077bf94a59e183a9b9c8365622adaefc49c329effd973696c7af"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/activitytypemetadata.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/activitytypemetadata.md",
-      "hash": "68bb8ee5c572435bb86108fc8c95ca45d1988fb0519ba7083e1043cfb161b257"
+      "hash": "89e4ca1845406accfa06f046b079010dc20512c9f3a76ebfa21e2c21fe948fb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/applecarecoverage.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverage.md",
-      "hash": "b0405fcadb523a7e883baec003ca7bdec46f1b4bf23b02e484de4ea9b70494e1"
+      "hash": "264d3e96c24d8e10d38692bc588da4b1df7b484f22c25ba0b70ea9731e8a34fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/applecarecoverage/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverage/attributes-data.dictionary.md",
-      "hash": "8c29cd1f2a91bcab3ef4d50765d4d6158e09492cc537e51ed02d47bf7cfbfefe"
+      "hash": "881d6c6e28459ef4788b9c8168fd4a6d49b36d6e8fd1c083f35474918d098c92"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/applecarecoveragepaymenttype.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoveragepaymenttype.md",
-      "hash": "aba1782a500cc6ab35ec463d03f94c0eb397fa16db2f72a4823fcb8bd4583370"
+      "hash": "fb76111ed71cee84378397c836886df766b88bd774f3d0acf365cfeacb020da2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/applecarecoverageresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoverageresponse.md",
-      "hash": "223eb557ce2c849c199e51525d4363e3a4db34c1a89685b8166fe22aadef6b8b"
+      "hash": "4a1a3f8f2a083e3ec9cad9547b101fbcba4472c09bee38d7afab6994e78d3e2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/applecarecoveragestatus.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/applecarecoveragestatus.md",
-      "hash": "bcc61b9d9ebff2ec6f193e3e2bd144f9b03dd34034dad5f4ba522c5873442a8d"
+      "hash": "f4dd8374658a79d01b0ef8fd567da04ed26cffe6fc948e0a444f7b7c5f44a05c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/create-an-orgdeviceactivity.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/create-an-orgdeviceactivity.md",
-      "hash": "d987d816960ceee363813686689d55eadc7b6e7d4d4ee421149967887350ed2b"
+      "hash": "a6f94ed23bb973a975c6da3e9e359ea6edd19854e6a272982898ef9e6a08d2db"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/documentlinks.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/documentlinks.md",
-      "hash": "b645857018da1e2598b57ef6e4ec0c2b3e5f6ce6ff3d21deadb426808a47fc91"
+      "hash": "d8a3f7bfaae1ed502883d085cc8592baeae5e1af1fb8647f20733efbf8d06a77"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorlinks.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks.md",
-      "hash": "ae47bfdaa6164566bd2b968865ffb3eb5a42f6328d2deb38e20c78373a88dac0"
+      "hash": "75649446e80c9ce327df35642ef22c4673e5f7d8d2ca297c514e7c10a9e0965a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorlinks/associated-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks/associated-data.dictionary.md",
-      "hash": "1eaf272f6100ed85b7d865f512a1be0665be4f45a059b3f18be80694c2ad5d9c"
+      "hash": "80cf51ba9401e531eeb1629101ccf8b76569eb12beed728f942ccc55b1598c09"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorlinks/associated-data.dictionary/meta-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorlinks/associated-data.dictionary/meta-data.dictionary.md",
-      "hash": "17409b63073493f56e91ad5e86499bc5cea6a9802b49ff2cbbaf679520d76366"
+      "hash": "887dff0a1d17af054934b59ce1ccf948a833e5ff43d52d2cbd3bedc76e9c1e50"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse.md",
-      "hash": "5dbd648b93d3c6ec35fa74fe507634f5a447c7003119adb787f71dab7b8dd9c2"
+      "hash": "af2c3d6662212de03822ba51605ad8cd38ece3559b3c558130084afbff87fd73"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary.md",
-      "hash": "60f8e77c4a6be3af4330e0219032c573c7f00fbaf007b3fba6e66accfc57f6da"
+      "hash": "a775220e4b77c610749b2b505b79948517491e24bc94e1e0e29702ded45f337e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary/meta-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary/meta-data.dictionary.md",
-      "hash": "e72846dc690dff817ded188feaf0daef6a052a24d7a4bf6c15399088a0a5be68"
+      "hash": "ba92bdce23ccdcc11ea729cceb9149ff6d2671348eb062b5924d6d43885e6225"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.md",
-      "hash": "8e768502f9c87ca24e549a1ea14060dba6663936aed1324b8fa4417f32242935"
+      "hash": "5657f57d07dbebc2d3ed107ba2c12feb4eceb2b255c51bb349b62098b5df2a3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-all-applecare-coverage-for-an-orgdevice.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-all-applecare-coverage-for-an-orgdevice.md",
-      "hash": "efc9ac32e62659d2b51d326660508b475621299b721136cd670d7ed8801660d2"
+      "hash": "abc877f0ac2eeca824a02406e2e0b54263aab73bfd559c54416a847b5b56e5af"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-all-device-ids-for-a-device-management-service.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-all-device-ids-for-a-device-management-service.md",
-      "hash": "344e44b858b87dff7291b1d86a85c3d2049d43ad2a01960dd238d7417fed1160"
+      "hash": "9816460c9337bb69dd7ceefd7b07170ad946c70d237e5727474153ceaa96db7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-device-management-services.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-device-management-services.md",
-      "hash": "71bcd9844775b4ad0c4c84848575e0414749ce9ef7dff20b4e9831e910807d20"
+      "hash": "626fffc308b375c63eff3c0821887b7508272f9fb79b2ffa6234fae4e83d5039"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-mdmserver-information.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-mdmserver-information.md",
-      "hash": "3b593965c14ca6da969c41551dfc602f94b5bb23578bcc9d1a89c4d3764df422"
+      "hash": "00bec2a684606b5dbc65771e9647ee38ad9a3abe2a1a65f84e4418d887c42472"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-org-devices.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-org-devices.md",
-      "hash": "54ca0cad93be8cf661b9620517c1d3447f3d783951d873d2241045bb1076cd77"
+      "hash": "227a14f3b6fb4ec79081175f2f4766a5d5d2e3fd240313a805d2d895e381d4df"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-orgdevice-information.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdevice-information.md",
-      "hash": "2137287c1ff172f93bb30f3a2d7e3a58a37eef952865fb402b2e2a75419ca374"
+      "hash": "67d92260d5e3f39855748600f4d5ad339d7a88dd7b1ae314b5fb78884dea71e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-orgdeviceactivity-information.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdeviceactivity-information.md",
-      "hash": "09da0e2dbfd37c3fe3c8c0ada7345ad3a4d285982ed484830f73d825b05396ea"
+      "hash": "764966b6c0c57d858eccefd895d0bd0647658c50f7c0e3e61be03af78bcfe1c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-the-activation-lock-status-information-for-an-orgdevice.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-activation-lock-status-information-for-an-orgdevice.md",
-      "hash": "f7fd5ba0d1b207c55377baca5fed7dc7755762f92f7738c999bf0478a0fb8a6f"
+      "hash": "eff73bf39a06398dc6e0568d87d8937a2e781c1fc49dbcc6f773e476d9533338"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-the-assigned-device-management-service-id-for-an-orgdevice.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-assigned-device-management-service-id-for-an-orgdevice.md",
-      "hash": "6076d3acd1a69532c733ecbefc3eadda99c6584e9b7587b4399d694fd0838846"
+      "hash": "256c9f90aa475d71604f2c9311b2888cbe5beb8f185b98d00ad327bf4597c841"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-the-assigned-device-management-service-information-for-an-orgdevice.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-the-assigned-device-management-service-information-for-an-orgdevice.md",
-      "hash": "b6b8d83b8924d86091432db13aa049f581c08ce10bf054caefb8020673254883"
+      "hash": "df6ff4f1a47620d1e70038134b4f2880c93111ae929ff3ce2e66842ae4f40c9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/jsonpointer.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/jsonpointer.md",
-      "hash": "361cb394b12c54626fbc43e2a0a38c7dbb5990b50edc6fabd8a7090e993f9a5c"
+      "hash": "d5b43ca228d9ea93537509c72807a5e165d89b056fc6da39ce8af6bad203cd33"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmmigrationstatus.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmmigrationstatus.md",
-      "hash": "3258611722a4f23d661ebc8bb1374f3842ec4a982ae6ed0a97b1a85cc7b5dcda"
+      "hash": "99ebedbc6f4c55cda293bc0726e0602b24952184cced3e4c270f7981feb58ea7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserver.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver.md",
-      "hash": "c28b1bb4607fa912a252b96c446069401a22ff5b88420be0fe5a2e4e34da53bc"
+      "hash": "7e9b353380c955bef7c241e0f85084d208934ab0e5f635aaf626d2773a0d6c5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserver/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/attributes-data.dictionary.md",
-      "hash": "da9151a24f15c6c18dd5a9257b36ef8b8887da1769ad6b95c60fd75af39cbbee"
+      "hash": "9aad3397d24fab2a330fd4b753505f31914e7f004cd518483006e7155c9f6bb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary.md",
-      "hash": "7f4a30cdb23d93f2e908f5c2966d713ae394ffeed0b5fa572b501c617b484449"
+      "hash": "b96f62f7fd04fdd682fb0327a992cec6e2e23ef70c8b4caf0733b8bdc934c900"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary/devices-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary/devices-data.dictionary.md",
-      "hash": "84c0d920247213bf02f3218a0adf842fde9e68a85ea2fa7160a6f3afbb816bcb"
+      "hash": "bdb5cd403b5881d66eb7bcdcbd737b3a142b3efd0e77e160610e17d1f377f752"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserver/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserver/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
-      "hash": "98df83703440a09f6912f49286f84bf6ab95d5327a693b7862f8f2bf9d7fe236"
+      "hash": "57a53c3a20ba393a540b4489db6d9fa3c8b44cd9dba3ddbc08ed591c2fbf25b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserverdeviceslinkagesresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverdeviceslinkagesresponse.md",
-      "hash": "297d543ee95a6eddaf8fb7b5625f311dc9a57a37a7c5ffecac0861f30960ff84"
+      "hash": "92e397823e6eb9615b0d0a106fd783c5ef3f6aa92f08061f13036f3b913d65f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserverdeviceslinkagesresponse/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverdeviceslinkagesresponse/data-data.dictionary.md",
-      "hash": "9791eaf952b5333fe1a5187f825b5fc9117e5d9a6126a0ff8a47de5789b1a733"
+      "hash": "9006b658e736b0b3d41dea947f9680a8f0b994f1c85c168ce7476f7840341188"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserverproductfamily.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverproductfamily.md",
-      "hash": "42d29d62ab8daaffede077270c010be580f3235401088d3163370b64ae1db59a"
+      "hash": "d24bc0fbcf451596a2247ff9cfce90bcb71ed674fba136b2ccb1f179938c37b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserverresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverresponse.md",
-      "hash": "4ebb3634574e783ee0fc969afe507b68858868d165666ee9e85c14644ffa5773"
+      "hash": "e7a36fdb2c73f3a55ed529803e58ed2a3e292b6cebbffa7ecc7007d6ea528299"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserversresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserversresponse.md",
-      "hash": "a71ac801484b88babb41a76b8fd330d164c3087f848d84f8e22910866d7520d1"
+      "hash": "91bb3cc673547cea44922bbc7ff6027754f7e8fd7863c644f543393ac42cc635"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/mdmserverstatus.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/mdmserverstatus.md",
-      "hash": "fc28fd8d3234c348abd107951e972ac86cba4fe05e7df3d1312fe41cd80f6b35"
+      "hash": "badbaed5e2ebbbdd2e9aa4fd888f30db7bbba02eda333807be127e43770c0be9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice.md",
-      "hash": "57fe843cc7850bd49deee331343dc01f1c263909ffb070cc823c1bfcf3094bbd"
+      "hash": "034885ac7009aa52230f6f826a0387dd24f3948e801cf68735afe09d7c07a861"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md",
-      "hash": "1d6bcc25e36010f4b751c2f3419cf17055788c5382c301e84433b18e0e495410"
+      "hash": "d61d96829359bfbd865cf193f666cf71b266bda2407a4fa74a98257d1e49ec78"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary.md",
-      "hash": "43a942368792253f272f042a849744b77669f3bae780d2cac4486875668cdc03"
+      "hash": "e26ff8023e158f9447463c8d5d2f8bc0ea9253eeed8a8ac4937293c25d535a59"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/activationlockstatus-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/activationlockstatus-data.dictionary.md",
-      "hash": "d0b7cce19b4596e2d62981c5f021eae631a299989bae7eff241a536475b53fac"
+      "hash": "d7b6ace76bb5bcb82ca4c00cb651d0489e29b3acb04672850b8974e431acb4ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/applecarecoverage-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/applecarecoverage-data.dictionary.md",
-      "hash": "945b55707b18cf3598f32de7df549e29beb178512299fbb3e14c33dad725dcba"
+      "hash": "6314fd5256b4168414403c08d42999e6f718fd0485e5d096ef41fec25ace930d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevice/relationships-data.dictionary/assignedserver-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevice/relationships-data.dictionary/assignedserver-data.dictionary.md",
-      "hash": "b3a900484b8797de54421627597bf95e9245a28985f2dc46fe1b6de20b50fdf0"
+      "hash": "8c393fb15dcf45058b6a3a357996bd0d105e0e318d90cc8c7b3042155e7c8670"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivity.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivity.md",
-      "hash": "33000b560d572bf5fc2060ef2c301f17c65957818c846e15a609a6d075715e65"
+      "hash": "0166692c53c33aa0d749933f53194263b176c297b4d48a7995cccc94f25bfbdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivity/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivity/attributes-data.dictionary.md",
-      "hash": "3665d4301c7dd2b317f65b673e246a13ef3be089921afec9b9aa6bacd492c639"
+      "hash": "da63a30eb08650893c0c268f3a3dd7bac1fec80bc16a51f056a2977831f3785b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest.md",
-      "hash": "bfd1664c1ba2f998c0ccbfb8941831bc862d40f9d8500bd8c5ded7329922d92c"
+      "hash": "48e097056cfbc0ebd8452521f7b4a372624e54280ac51291a3e28455db4d2eff"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary.md",
-      "hash": "7f30080b9f0f62c5e5cffa3e464690e30dad8b1d504757d46cd319054998392a"
+      "hash": "7b433313c26f02f04507f297725972e8e87033fcf5373227e79adc7ca314c7fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/attributes-data.dictionary.md",
-      "hash": "f9be4749fcc1ae079880955e62b29f1798d8c384d2fa674dc2608491418b9922"
+      "hash": "21d9258fe472843430168b0815e2af30a1d9bf6daf1f06deeaea1d3404330b34"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary.md",
-      "hash": "5c5170a467a918419b476920a700b36ff0d98442972497e65ddb375a8cf67cbf"
+      "hash": "50cb168dcc9eaf1638a09c5f9a58d7b9e2f71174fa0f8e16079a393d09045653"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md",
-      "hash": "ac43af9cbd521b986f9ce5c8365c8d646fcd63a36a717d1d3d2130aba38b1cbb"
+      "hash": "3aecf35d838324f481f5ad21d58386537e02adc0dfff2ff1a90d3a6272cb0c74"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
-      "hash": "ecfc9ee8c8296cf674bc6dbc0d4df0033c73f3577be8d3c9049780067487f7ca"
+      "hash": "f6e5912405aca6d03babc199aa04f64c8805a00b959d5236027585d36a34dac8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary.md",
-      "hash": "2a2d370e8cf0070de556ab977b5019ed4f17c66e40fcd828c538cb604b4a59d2"
+      "hash": "23e949ee289314f1df8142ab640ad538b542c71564b4489dd6e0e3617e89c77b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary/mdmserver-data.dictionary/data-data.dictionary.md",
-      "hash": "2118af3aa0b227d00c256fd5e21b3e598056883d37208190ceb90dd54d2dcf9d"
+      "hash": "5d33de1ec45413489b870bfd2f419f7de6630a6baec2c305a7280915725b3ab1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivityresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivityresponse.md",
-      "hash": "a37183fca397f77bbe201d47661521b2025954a003de028552e4478438f828b6"
+      "hash": "cfe1dbfee0c44e1b3c40e22be4d7af4e9cf0156ce061f620fad35eba941bbc35"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceactivitytype.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceactivitytype.md",
-      "hash": "4df43dbd545507add81416c9c26c67ea07b65a29273ba3f58e6a43428fb97870"
+      "hash": "303b4521b4beb946ec1d757a9e5aa0fa86197edfcdcdbab37c1c11b573ffa979"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceassignedserverlinkageresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceassignedserverlinkageresponse.md",
-      "hash": "b1f1d2adbb434b81c18b2616dba278dad19e5253c1677da35d19728fcce82523"
+      "hash": "079a2d6ffdab9883be6aff1d163e5d5338ef7d868ffd5398b17625ce3e6a4d25"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceassignedserverlinkageresponse/data-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceassignedserverlinkageresponse/data-data.dictionary.md",
-      "hash": "6150d19b047d3a8287f32e649b8e185c46b522ba5f43a83b161370175c82f145"
+      "hash": "dd653f26aee6a8d71b9fb82aa38d896ac836dc0bc43af4c706a8f2c93fbfc7f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdeviceresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdeviceresponse.md",
-      "hash": "51c626550f634b1e53850b8967001942bc402b72e8816934c23905066f6cf157"
+      "hash": "7118c6e8a49b5118fcf196adc0a891a739c17c88091b0c66ce0bd2a5643e582f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/orgdevicesresponse.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/orgdevicesresponse.md",
-      "hash": "a4f9bfeb4fbbc732124418d968987bbac5771ca504305a3d7d08236fdfb2e5c6"
+      "hash": "5a2c62c75d870045397f7b24bbed7c24a16e92eece1cab24f2a3707019900a54"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/pageddocumentlinks.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/pageddocumentlinks.md",
-      "hash": "61a519da9e111a447c0c03f984b0b0c3e7194c34723bead748159967d3da687c"
+      "hash": "320e8c8ec13ca84e6fd7ab5c7a0f917a53e650efe477c06b6113fb959dcde26f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/paginginformation.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/paginginformation.md",
-      "hash": "6224686feaa57a3d8630355a3cdf0103e392f7c2d0660e9a01aca053c3e4edea"
+      "hash": "e0725e4809daa73c2ba56ffd6ca049c6fe1460fab7cd2cd09496c667bc435fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/paginginformation/paging-data.dictionary.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/paginginformation/paging-data.dictionary.md",
-      "hash": "60651a194c28d37bcf06103c70d5592a41c9a5affd94f1fb7a5a8a9ff5f79b16"
+      "hash": "457e21f1a1fa55f2016a809c8af6994795c49271cf4b5185052f24d025afd53a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/parameter.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/parameter.md",
-      "hash": "ad3a6e7cbe89b60dbc3fee625d82ce4e7ee9daf661231b4bc1d21ae78a9e1cd4"
+      "hash": "9ef71310c615f859c22b34c5343da907314967301678e4cc6f75913eebacf046"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/relationshiplinks.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/relationshiplinks.md",
-      "hash": "1b43dedee7b44bb7bd6829580f6414f0be5da50e574fa33ee47e8628bc50ba02"
+      "hash": "eb721bd53625028dd5c229f5e8ea927fbe3b24fc88f7c7d8c41f7f2bcc2eb4b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/resourcelinks.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/resourcelinks.md",
-      "hash": "35fc9f3f2239052228bcc1238402f4bd4634be0292aa336e4e0ce4d6231c142d"
+      "hash": "971179c5d83f79af06a41310fc874e72478e061d1b8b6c68869b4c010e04e58e"
     }
   },
   "metadata": {

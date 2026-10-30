@@ -23,7 +23,7 @@ object RefundHistoryResponse
 
 The [`Get Refund History`](./get-refund-history.md) endpoint returns this response.
 
-This response returns a maximum of 20 refunded transactions. If your customer has more than 20 refunded transactions, the `hasMore` value is `true`. Each response includes a [`revision`](./refundhistoryresponse/revision.md) token. Call [`Get Refund History`](./get-refund-history.md) again with the [`revision`](./refundhistoryresponse/revision.md) token in the query to receive the next set of transactions. When the App Store has no more transactions to send, the `hasMore` value is `false`.
+This response returns a maximum of 20 refunded transactions. If your customer has more than 20 refunded transactions, the `hasMore` value is `true`. Each response includes a `revision` token. Call [`Get Refund History`](./get-refund-history.md) again with the `revision` token in the query to receive the next set of transactions. When the App Store has no more transactions to send, the `hasMore` value is `false`.
 
 Consider storing the `revision` token from the last page of results with other customer account information. Use it at a later date when you call [`Get Refund History`](./get-refund-history.md) to request any new refunded transactions since the last time you called the endpoint for the customer. By using the stored `revision` token, you can avoid fetching transactions you’ve already received.
 

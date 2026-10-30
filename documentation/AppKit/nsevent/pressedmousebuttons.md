@@ -19,6 +19,10 @@ class var pressedMouseButtons: Int { get }
 @property (class, readonly) NSUInteger pressedMouseButtons;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 The indices of the currently depressed mouse buttons.

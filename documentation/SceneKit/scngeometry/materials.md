@@ -29,7 +29,7 @@ var materials: [SCNMaterial] { get set }
 
 Materials provide the information SceneKit uses to add color, lighting, texture, and special effects when rendering a geometry. Each [`SCNMaterial`](../scnmaterial.md) object can be shared between several geometries.
 
-If a geometry contains multiple elements (see [`elementCount`](./elementcount.md)), you can associate a separate material with each geometry element. For example, the teapot in [Figure 1](./api-1523472-materials.md#1965912) has four elements, each with a different material.
+If a geometry contains multiple elements (see [`elementCount`](./elementcount.md)), you can associate a separate material with each geometry element. For example, the teapot in Figure 1 has four elements, each with a different material.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965912@2x.png)
 

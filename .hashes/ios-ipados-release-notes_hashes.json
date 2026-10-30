@@ -514,11 +514,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17-release-notes.json": [
+        "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
+      ]
     },
     "total_pages": 128
   }

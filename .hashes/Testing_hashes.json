@@ -1730,11 +1730,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/xctest/xctestexpectation/2806572-expectedfulfillmentcount"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/testing/migratingfromxctest.json": [
+        "https://developer.apple.com/documentation/xctest/xctestexpectation/2806572-expectedfulfillmentcount"
+      ]
     },
     "total_pages": 432
   }

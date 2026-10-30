@@ -27,6 +27,8 @@ AppKit also works with [SwiftUI](../SwiftUI/SwiftUI.md), so you can implement pa
 ### Essentials
 - [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+  Replace mouse-event overrides and tracking loops with gesture recognizers to support both existing mouse behavior and touch input on a Mac with a touch display.
 - [AppKit updates](../Updates/appkit.md)
   Learn about important changes to AppKit.
 - [Protecting the User’s Privacy](../UIKit/protecting-the-user-s-privacy.md)

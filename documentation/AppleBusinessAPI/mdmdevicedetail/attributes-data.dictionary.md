@@ -7,7 +7,7 @@
 The attributes for a device management service enrolled device detail resource.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

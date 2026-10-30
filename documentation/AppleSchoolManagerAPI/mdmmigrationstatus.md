@@ -7,7 +7,7 @@
 Strings that represent the state of a device’s device management service migration.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

@@ -1634,11 +1634,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/advancedcommerceapi/com.apple.documentation/documentation/advancedcommerceapi"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/handling-subscription-price-changes.json": [
+        "https://developer.apple.com/documentation/advancedcommerceapi/com.apple.documentation/documentation/advancedcommerceapi"
+      ]
     },
     "total_pages": 408
   }

@@ -23,7 +23,7 @@ extern NSPasteboardType NSFilesPromisePboardType;
 
 In macOS 10.6 and later, use `(NSString *)kPasteboardTypeFileURLPromise` instead.
 
-For more information, see [Supporting Drag and Drop Through File Promises](../../supporting-drag-and-drop-through-file-promises.md).
+For more information, see [Supporting drag and drop through file promises](../../supporting-drag-and-drop-through-file-promises.md).
 
 ## See Also
 

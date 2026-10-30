@@ -25,7 +25,7 @@ An `AsyncStream` that emits `Generation` values, including generated text chunks
 
 This function initializes a `TokenIterator` with the given input, model, and generation parameters, and then streams the token generation process via an `AsyncStream`. The resulting stream yields instances of the `Generation` enum, which can represent text chunks, tool calls, or summary completion information.
 
-> ❗ **Important**: If the stream is terminated early (e.g. break from the loop) computation will continue using the model, parameters, KVCache, etc. for some time (typically a few ms).  This is typically OK for one-shot calls, but for “chat session” type calls consider using [`generateTask(promptTokenCount:modelConfiguration:tokenizer:iterator:wiredMemoryTicket:tools:toolCallPolicy:)`](./generatetask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,tools,toolcallpolicy%29.md) so that the end of the generation task can be observed.
+> ❗ **Important**: If the stream is terminated early (e.g. break from the loop) computation will continue using the model, parameters, KVCache, etc. for some time (typically a few ms).  This is typically OK for one-shot calls, but for “chat session” type calls consider using [`generateTask(promptTokenCount:modelConfiguration:tokenizer:iterator:wiredMemoryTicket:tools:toolCallPolicy:reasoningPrimedInside:)`](./generatetask%28prompttokencount,modelconfiguration,tokenizer,iterator,wiredmemoryticket,tools,toolcallpolicy,reasoningprimedinside%29.md) so that the end of the generation task can be observed.
 
 > **Throws**: An error if the `TokenIterator` initialization fails due to invalid input or model configuration.
 
@@ -47,6 +47,8 @@ for await generation in stream {
     switch generation {
     case .chunk(let text):
         print("Generated text: \(text)")
+    case .reasoning(let text):
+        print("Thinking: \(text)")
     case .info(let info):
         print("Finished: \(info.tokensPerSecond) tokens/s.")
     case .toolCall(let call):

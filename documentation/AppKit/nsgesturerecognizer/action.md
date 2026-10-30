@@ -19,6 +19,10 @@ var action: Selector? { get set }
 @property (nullable) SEL action;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Discussion
 
 You specify this method when initializing your gesture recognizer but can also change the method later. The gesture recognizer executes your action method during specific states of the gesture recognition process. Use your action method to perform any app-specific tasks. For example, you might use that method to animate changes onscreen while the gesture is in progress.

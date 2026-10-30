@@ -7,7 +7,7 @@
 Attributes with values that you’re changing as part of the create request.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

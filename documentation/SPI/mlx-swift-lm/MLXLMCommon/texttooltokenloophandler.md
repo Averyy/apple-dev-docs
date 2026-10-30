@@ -24,7 +24,7 @@ struct TextToolTokenLoopHandler
 ## Topics
 
 ### Initializers
-- [init(tokenizer: Tokenizer, stopStrings: Set<String>, format: ToolCallFormat, tools: [[String : any Sendable]]?, toolCallPolicy: ToolCallPolicy)](./texttooltokenloophandler/init%28tokenizer,stopstrings,format,tools,toolcallpolicy%29.md)
+- [init(tokenizer: Tokenizer, stopStrings: Set<String>, format: ToolCallFormat, tools: [[String : any Sendable]]?, toolCallPolicy: ToolCallPolicy, reasoning: (config: ReasoningConfig, primedInside: Bool)?)](./texttooltokenloophandler/init%28tokenizer,stopstrings,format,tools,toolcallpolicy,reasoning%29.md)
 ### Instance Properties
 - [var additionalStopTokenIDs: Set<Int>](./texttooltokenloophandler/additionalstoptokenids.md)
 - [var receivesStopTokens: Bool](./texttooltokenloophandler/receivesstoptokens.md)

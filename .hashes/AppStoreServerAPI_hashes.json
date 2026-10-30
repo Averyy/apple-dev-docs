@@ -2294,8 +2294,55 @@
       "version": 4
     },
     "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest/consumptionpercentage",
+        "https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest/deliverystatus",
+        "https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest/refundpreference"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-all-subscription-statuses.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/get-all-subscription-statuses/status"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-group-members.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/get-group-members/groupid",
+        "https://developer.apple.com/documentation/appstoreserverapi/get-group-members/paginationtoken"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-notification-history.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/get-notification-history/paginationtoken"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-refund-history.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/get-refund-history/revision"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-test-notification-status.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/get-test-notification-status/testnotificationtoken"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/getgroupmembersresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/getgroupmembersresponse/hasmore",
+        "https://developer.apple.com/documentation/appstoreserverapi/getgroupmembersresponse/paginationtoken"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/groupentry.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/groupentry/grouptype",
+        "https://developer.apple.com/documentation/appstoreserverapi/roleentry/productid",
+        "https://developer.apple.com/documentation/appstoreserverapi/roleentry/role"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/historyresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/historyresponse/hasmore",
+        "https://developer.apple.com/documentation/appstoreserverapi/historyresponse/revision"
+      ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/lasttransactionsitem.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/notificationhistoryresponse/hasmore"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundhistoryresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/refundhistoryresponse/revision"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/roleentry.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/roleentry/productid",
+        "https://developer.apple.com/documentation/appstoreserverapi/roleentry/role"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendtestnotificationresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/sendtestnotificationresponse/testnotificationtoken"
       ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifieritem.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier"

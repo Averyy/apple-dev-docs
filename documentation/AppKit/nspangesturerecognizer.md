@@ -19,6 +19,11 @@ class NSPanGestureRecognizer
 @interface NSPanGestureRecognizer : NSGestureRecognizer
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 The gesture is recognized when the user clicks all of specified buttons, drags the mouse, and releases one or more of the buttons. Use the pan gesture recognizer object to retrieve the distance traveled during the pan and the location of the mouse as it pans.
@@ -64,7 +69,7 @@ In this gesture recognizer, the [`location(in:)`](./nsgesturerecognizer/location
 
 ## See Also
 
-### Standard Gestures
+### Standard gestures
 - [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
 - [class NSPressGestureRecognizer](./nspressgesturerecognizer.md)

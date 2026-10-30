@@ -7,7 +7,7 @@
 A response that contains a single organization device activity resource.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

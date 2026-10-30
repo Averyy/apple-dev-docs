@@ -19,6 +19,10 @@ func rightMouseDown(with event: NSEvent)
 - (void) rightMouseDown:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 The default implementation simply passes this message to the next responder.

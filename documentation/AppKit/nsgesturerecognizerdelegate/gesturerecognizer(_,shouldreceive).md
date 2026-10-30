@@ -20,6 +20,10 @@ optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, should
 - (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldReceiveTouch:(NSTouch *) touch;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 
 ---
 

@@ -19,6 +19,10 @@ static var primaryActionTriggered: NSControl.Events { get }
 NSControlEventPrimaryActionTriggered
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../../adopting-gesture-recognizers-in-your-app.md)
+
 ## See Also
 
 ### Semantic events

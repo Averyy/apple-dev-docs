@@ -19,6 +19,10 @@ class NSOutlineView
 @interface NSOutlineView : NSTableView
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 Like a table view, an outline view does not store its own data, instead it retrieves data values as needed from a data source to which it has a weak reference (see [Delegates and Data Sources](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/DelegatesandDataSources/DelegatesandDataSources.html#//apple_ref/doc/uid/TP40010810-CH11)). See [`NSOutlineViewDataSource`](./nsoutlineviewdatasource.md), which declares the methods that an `NSOutlineView` object uses to access the contents of its data source object.

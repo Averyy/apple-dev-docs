@@ -20,6 +20,8 @@ class Qwen35Model
 ### Initializers
 - [init(Qwen35Configuration)](./qwen35model/init%28_%29.md)
 ### Instance Properties
+- [var configuration: Qwen35TextConfiguration](./qwen35model/configuration.md)
+  The text backbone’s geometry.
 - [let kvHeads: [Int]](./qwen35model/kvheads.md)
 - [let vocabularySize: Int](./qwen35model/vocabularysize.md)
 ### Instance Methods

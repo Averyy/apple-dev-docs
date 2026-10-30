@@ -25,7 +25,7 @@ Setting the value of this property to an `NSClipView` that has a document view a
 
 ## See Also
 
-### Managing the Views
+### Managing the views
 - [var documentView: NSView?](./documentview.md)
   The view the scroll view scrolls within its content view.
 - [func addFloatingSubview(NSView, for: NSEvent.GestureAxis)](./addfloatingsubview%28_,for%29.md)

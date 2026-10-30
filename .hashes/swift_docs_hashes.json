@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-28T06:15:03.893497",
+    "last_updated": "2026-10-30T08:08:07.953906",
     "total_files": 45,
     "source": "scrape_swift_docs.py",
     "render": {
@@ -38,7 +38,7 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "2d22b9226e06e87bba85ab77dd8325c947ac343edc991424eb81d399ac7fbff5",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TypeCasting.md": "2271c6b1584720d2d44161201c8bee190ba7224b709d3059e50fb00c4a312e55",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/AboutTheLanguageReference.md": "a8f697ca399b79642cb724de1512fe439ff3878054515abe36e5f77a8d0f7a8c",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "44a8053d2c7bf51018b9d0658c19cc2bd6830d3398623f405af1533182373cca",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "26e17cbf0d0feb1dba26161bbaab245a796c8c455cdccd5c8ffc51af17797dcc",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Declarations.md": "f70bba7c13d968d0dcb372f51f3bd55518e4d40efc917248ec98c17d37821fb7",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Expressions.md": "a3b9d8cdda97582544293e0551d8eb97d2ed3731016b570d8d82062c2ddedf44",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/GenericParametersAndArguments.md": "bd8bdf972a825fecf1c6180c94ae108a7ffe66c8d16c925faacc94733181f636",

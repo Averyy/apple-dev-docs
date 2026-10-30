@@ -30,7 +30,7 @@ The horizontal and vertical scroll bars are hidden independently of each other. 
 ### Related Documentation
 - [var scrollerStyle: NSScroller.Style](./scrollerstyle.md)
   The scroller style used by the scroll view.
-### Managing Scrollers
+### Managing scrollers
 - [var horizontalScroller: NSScroller?](./horizontalscroller.md)
   The scroll view’s horizontal scroller.
 - [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)

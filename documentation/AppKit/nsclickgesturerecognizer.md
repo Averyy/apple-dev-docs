@@ -19,6 +19,11 @@ class NSClickGestureRecognizer
 @interface NSClickGestureRecognizer : NSGestureRecognizer
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 When configuring this gesture recognizer, you can specify which mouse buttons must be clicked and how many clicks must occur before the action method is called. The user must click the specified mouse button the required number of times without dragging the mouse for the gesture to be recognized.
@@ -52,7 +57,7 @@ The gesture recognizer automatically sets the values of the [`delaysPrimaryMouse
 
 ## See Also
 
-### Standard Gestures
+### Standard gestures
 - [class NSPressGestureRecognizer](./nspressgesturerecognizer.md)
   A discrete gesture recognizer that tracks whether the user holds down a mouse button for a minimum amount of time before releasing it.
 - [class NSPanGestureRecognizer](./nspangesturerecognizer.md)

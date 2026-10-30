@@ -7,7 +7,7 @@
 The request body you use to update the device management service for a device.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

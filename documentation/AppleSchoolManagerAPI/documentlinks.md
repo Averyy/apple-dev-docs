@@ -7,7 +7,7 @@
 Self-links to documents that can contain information for one or more resources.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

@@ -32,6 +32,15 @@ The error will be non-nil if the request does not result in a window being share
 - `window`: The window to share
 - `completionHandler`: A completion block that is called after the request finishes.
 
+## See Also
+
+### Managing Window Sharing
+- [func transferWindowSharing(to: NSWindow, completionHandler: ((any Error)?) -> Void)](./transferwindowsharing%28to,completionhandler%29.md)
+  Attempts to move window sharing (within a SharePlay session) from this window to another window.
+- [var hasActiveWindowSharingSession: Bool](./hasactivewindowsharingsession.md)
+  Indicates whether the receiver is the subject of an active SharePlay sharing session.
+- [func requestSharingOfWindow(usingPreview: NSImage, title: String, completionHandler: ((any Error)?) -> Void)](./requestsharingofwindow%28usingpreview,title,completionhandler%29.md)
+
 
 ---
 

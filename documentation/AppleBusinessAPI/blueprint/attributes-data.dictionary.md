@@ -7,7 +7,7 @@
 Attributes that describe a Blueprint resource.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

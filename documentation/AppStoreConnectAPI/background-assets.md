@@ -14,7 +14,7 @@ Use the Background Assets API to manage content that Apple hosts, so people can 
 - One active beta version and one App Store version per asset pack
 - Updates to content without creating a new app version
 
-To learn more about integrating Apple-hosted background assets into your app, see [Downloading asset packs hosted by Apple](../BackgroundAssets/downloading-asset-packs-hosted-by-apple.md) and to learn more about validating the behavior of your background assets, see [Testing your asset packs locally](../BackgroundAssets/testing-asset-packs-locally.md).
+To learn more about integrating Apple-hosted background assets into your app, see Downloading asset packs hosted by Apple and to learn more about validating the behavior of your background assets, see [Testing your asset packs locally](../BackgroundAssets/testing-asset-packs-locally.md).
 
 To manage Apple-hosted background assets, be sure you have one of the following user roles:
 

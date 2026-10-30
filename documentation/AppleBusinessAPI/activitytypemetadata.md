@@ -7,7 +7,7 @@
 Additional metadata for an organization device activity, used by device management service migration activity types.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

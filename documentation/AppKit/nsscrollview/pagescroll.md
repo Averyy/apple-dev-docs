@@ -29,7 +29,7 @@ Note that a scroll view can have two different page scroll amounts: [`verticalPa
 
 ## See Also
 
-### Setting Scrolling Behavior
+### Setting scrolling behavior
 - [var lineScroll: CGFloat](./linescroll.md)
   The scroll view’s line by line scroll amount.
 - [var horizontalLineScroll: CGFloat](./horizontallinescroll.md)

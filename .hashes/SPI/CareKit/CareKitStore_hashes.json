@@ -12490,11 +12490,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitstore/ockstore/1"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://swiftpackageindex.com/carekit-apple/CareKit/main/data/documentation/carekitstore/ockstore/init(name:securityapplicationgroupidentifier:type:remote:).json": [
+        "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitstore/ockstore/1"
+      ]
     },
     "total_pages": 3122
   }

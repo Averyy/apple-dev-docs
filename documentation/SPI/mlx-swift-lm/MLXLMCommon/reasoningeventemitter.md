@@ -23,7 +23,9 @@ A value-type streaming scanner: feed it each decoded chunk via [`process(_:)`](.
 
 **Primed state.** The headline reasoning families (Qwen3 with thinking enabled, DeepSeek-R1) prefill the *opening* delimiter into the rendered prompt, so the model’s first generated token is already reasoning content and it never emits an opening `<think>` in the stream — only the closing `</think>`. Construct with `primedInside: true` for those, seeded by inspecting the rendered prompt tail.
 
-**State model.** Conceptually `Outside → Inside → Closed`, but represented compactly as `inside: Bool` plus `pendingPrefix` (the diagram’s `PendingStart`/`PendingEnd` are “pendingPrefix is non-empty”; `Closed` is “not inside, having produced reasoning”). When not inside, the scanner watches for the start delimiter; when inside, the end delimiter. A start delimiter always (re)opens a reasoning span — so multiple blocks each route, and the cost is a documented limitation: a literal `<think>` appearing in answer text is misrouted (the deferred token-ID detection is the real fix).
+**State model.** `Outside -> Inside -> Outside`, plus a `Label` step for the labeled-channel protocol (see [`ReasoningChannel`](./reasoningchannel.md)) where the role label following the start delimiter decides which way the span routes. When outside, the scanner watches for the start delimiter; when inside, the end delimiter and any [`implicitEndDelimiters`](./reasoningconfig/implicitenddelimiters.md), earliest match winning. A canonical end delimiter is framing and is consumed, while an implicit one is answer/tool content and stays in the stream to be re-scanned outside. `pendingPrefix` holds text that may be a delimiter split across a chunk boundary. For a delimiter pair, a start delimiter always (re)opens a reasoning span, so multiple blocks each route. For a labeled channel, a start delimiter inside an open channel also ends it, since channels do not nest.
+
+**Delimiters as tokens.** Scanning text misroutes a delimiter the model only spells out in its answer. The generation loop avoids that when both delimiters are single tokens: it reports them by id through `process(boundary:)`, and their text is then ordinary content. An implicit end delimiter that is a single token is reported the same way. Callers that feed text alone keep the text scan.
 
 ## Topics
 
@@ -31,7 +33,7 @@ A value-type streaming scanner: feed it each decoded chunk via [`process(_:)`](.
 - [init(config: ReasoningConfig, primedInside: Bool)](./reasoningeventemitter/init%28config,primedinside%29.md)
 ### Instance Properties
 - [var hasClosedReasoning: Bool](./reasoningeventemitter/hasclosedreasoning.md)
-  True once a canonical or implicit end boundary has been observed, i.e. a reasoning span has closed at least once. Unlike [`isInsideReasoning`](./reasoningeventemitter/isinsidereasoning.md), this latches — so a caller (e.g. a think-then-call token collector) can detect a close even when an empty `<think></think>` resolves within a single [`process(_:)`](./reasoningeventemitter/process%28_%29.md) call, where sampling [`isInsideReasoning`](./reasoningeventemitter/isinsidereasoning.md) afterward reads `false` both before and after and the transient open is invisible.
+  True once a canonical or implicit end boundary has closed a *reasoning* span. Unlike [`isInsideReasoning`](./reasoningeventemitter/isinsidereasoning.md), this latches - so a caller (e.g. a think-then-call token collector) can detect a close even when an empty `<think></think>` resolves within a single [`process(_:)`](./reasoningeventemitter/process%28_%29.md) call, where sampling [`isInsideReasoning`](./reasoningeventemitter/isinsidereasoning.md) afterward reads `false` both before and after and the transient open is invisible.
 - [var isInsideReasoning: Bool](./reasoningeventemitter/isinsidereasoning.md)
   Whether the scanner is currently inside a reasoning span.
 ### Instance Methods
@@ -40,6 +42,8 @@ A value-type streaming scanner: feed it each decoded chunk via [`process(_:)`](.
 - [func process(String) -> [Segment]](./reasoningeventemitter/process%28_%29.md)
   Ingests one decoded chunk and returns the segments it resolves to.
 ### Type Methods
+- [static func promptEndsInsideReasoning(promptTokens: [Int], config: ReasoningConfig, tokenizer: any Tokenizer) -> Bool](./reasoningeventemitter/promptendsinsidereasoning%28prompttokens,config,tokenizer%29.md)
+  Whether a rendered prompt, given as its token ids, ends inside an open reasoning block.
 - [static func promptEndsInsideReasoning(renderedPromptTail: String, config: ReasoningConfig) -> Bool](./reasoningeventemitter/promptendsinsidereasoning%28renderedprompttail,config%29.md)
   Whether a rendered prompt ends *inside* an open reasoning block — used to seed `primedInside`.
 ### Enumerations

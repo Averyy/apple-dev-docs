@@ -25,6 +25,8 @@ The system sends the event to the view under the touch in the key window. To get
 
 This isn’t always the point of removal with the touch device. A touch that transitions from active to resting may be part of an [`touchesEnded(with:)`](./touchesended%28with%29.md) set.
 
+> ❗ **Important**: AppKit calls this method for indirect touches, such as those from a trackpad (and only if the view explicitly requests them). It doesn’t call this method for direct touches on a Sidecar-connected display or a Mac with a touch display. To handle touch input consistently across input types, use a [`NSGestureRecognizer`](../nsgesturerecognizer.md) instead of overriding this method. For more information, see [Handling AppKit gestures](../handling-appkit-gestures.md).
+
 ## Parameters
 
 - `event`: An event object representing the ending of a touch event.

@@ -7,7 +7,7 @@
 Attributes that describe an organization device resource.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

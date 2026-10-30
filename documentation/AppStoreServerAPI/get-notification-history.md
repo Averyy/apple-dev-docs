@@ -20,7 +20,7 @@ Call this endpoint to get a paginated list of the version 2 [App Store Server No
 
 You can further limit the request by specifying a `notificationType` or `notificationSubtype` in the [`NotificationHistoryRequest`](./notificationhistoryrequest.md) object. Alternatively, to get the notification history for a single user, provide a `transactionId`. The response, [`NotificationHistoryResponse`](./notificationhistoryresponse.md), contains the full contents of the original notifications.
 
-Each time you call this endpoint, it returns a maximum of 20 notification history records. If the [`hasMore`](./hasmore.md) field in the [`NotificationHistoryResponse`](./notificationhistoryresponse.md) is `true`, use the [`paginationToken`](./get-notification-history/paginationtoken.md) from the response in your subsequent request to get the next set of records. Use the same [`NotificationHistoryRequest`](./notificationhistoryrequest.md) body on subsequent requests.
+Each time you call this endpoint, it returns a maximum of 20 notification history records. If the [`hasMore`](./hasmore.md) field in the [`NotificationHistoryResponse`](./notificationhistoryresponse.md) is `true`, use the `paginationToken` from the response in your subsequent request to get the next set of records. Use the same [`NotificationHistoryRequest`](./notificationhistoryrequest.md) body on subsequent requests.
 
 This endpoint is available in the production and sandbox environments. For more information about configuring App Store Server Notifications, see [Enabling App Store Server Notifications](../AppStoreServerNotifications/enabling-app-store-server-notifications.md) and [Enter a URL for App Store server notifications](https://help.apple.com/app-store-connect/#/dev0067a330b).
 

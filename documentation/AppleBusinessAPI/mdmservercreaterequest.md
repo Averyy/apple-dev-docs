@@ -7,7 +7,7 @@
 A request to create a new device management service.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

@@ -213,6 +213,7 @@ The [`NSAttributedString`](./nsattributedstring.md) class and its Core Foundatio
   Migrate your code away from using these symbols.
 ### Initializers
 - [init?(coder: NSCoder)](./nsattributedstring/init%28coder%29.md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nsattributedstring/init%28pasteboardpropertylist,oftype%29.md)
 
 ## Relationships
 

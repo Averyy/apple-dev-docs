@@ -14,7 +14,7 @@ Inherited from `Decodable.init(from:)`.
 ## Declaration
 
 ```swift
-init(from decoder: any Decoder) throws
+init(from decoder: Decoder) throws
 ```
 
 

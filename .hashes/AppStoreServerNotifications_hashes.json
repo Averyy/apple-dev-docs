@@ -1089,6 +1089,17 @@
     "render": {
       "version": 4
     },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransactiondecodedpayload.json": [
+        "https://developer.apple.com/documentation/appstoreservernotifications/jwstransactiondecodedpayload/price"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv1.json": [
+        "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv1/notification_type"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload.json": [
+        "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv2decodedpayload/notificationtype"
+      ]
+    },
     "total_pages": 271
   }
 }

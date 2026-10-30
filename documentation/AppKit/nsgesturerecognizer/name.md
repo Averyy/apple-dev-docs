@@ -21,6 +21,7 @@ var name: String? { get set }
 
 ### Getting additional recognizer information
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](./allowedtouchtypes.md)
+  The touch types that this gesture recognizer accepts.
 - [var isCancellableByScrollGesture: Bool](./iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 - [var modifierFlags: NSEvent.ModifierFlags](./modifierflags.md)

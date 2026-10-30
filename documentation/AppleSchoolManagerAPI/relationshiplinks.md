@@ -7,7 +7,7 @@
 Links related to the response document, including self-links.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

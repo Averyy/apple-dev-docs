@@ -414,7 +414,7 @@ The `previous` parameter contains the last successfully written snapshot. For si
 
 > ❗ **Important**: The [`snapshot(contentType:)`](./writabledocument/snapshot%28contenttype%29.md) method runs on the main thread. Keep it as lightweight as possible, and perform serialization in [`DocumentWriter`](./documentwriter.md) because writing runs in the background. The snapshot captures *what* to save; the writer handles *how*.
 
-The same approach works with any framework that reads and writes files via URLs, including AVFoundation’s [AVAssetExportSession](../AVFoundation/avassetexportsession.md), PDFKit’s [PDFDocument(url:)](../PDFKit/pdfdocument/init%28url%29.md), or any C library that accepts file paths.
+The same approach works with any framework that reads and writes files via URLs, including AVFoundation’s [AVAssetExportSession](../AVFoundation/avassetexportsession.md), PDFKit’s PDFDocument(url:), or any C library that accepts file paths.
 
 ## Export documents
 

@@ -25,7 +25,7 @@ This value must be greater than or equal to the minimum magnification. The defau
 
 ## See Also
 
-### Zooming the Scroll View
+### Zooming the scroll view
 - [var allowsMagnification: Bool](./allowsmagnification.md)
   Allows the user to magnify the scroll view.
 - [var magnification: CGFloat](./magnification.md)

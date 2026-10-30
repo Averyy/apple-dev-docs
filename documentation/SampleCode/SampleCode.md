@@ -254,7 +254,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Provide continuity for people using your app by preserving current activities on macOS.
 - [Supporting Collection View Drag and Drop Through File Promises](../AppKit/supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [Supporting Drag and Drop Through File Promises](../AppKit/supporting-drag-and-drop-through-file-promises.md)
+- [Supporting drag and drop through file promises](../AppKit/supporting-drag-and-drop-through-file-promises.md)
   Receive and provide file promises to support dragged app files and pasteboard operations.
 - [Supporting Table View Drag and Drop Through File Promises](../AppKit/supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.

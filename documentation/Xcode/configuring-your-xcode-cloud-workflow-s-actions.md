@@ -60,7 +60,7 @@ To configure a workflow’s build action to a workflow:
 3. Choose a platform and a scheme; for example, choose macOS and your macOS app’s corresponding scheme to build your Mac app.
 4. Choose whether you want to build the app for any device or any simulator destinations. For a Mac app, choose between building macOS and Mac Catalyst destinations.
 
-The following screenshot shows an Xcode Cloud workflow for the [Fruta app](../SwiftUI/fruta_building_a_feature-rich_app_with_swiftui.md). It includes two build actions: one action builds the iOS app, and the other action builds the macOS app:
+The following screenshot shows an Xcode Cloud workflow for the Fruta app. It includes two build actions: one action builds the iOS app, and the other action builds the macOS app:
 
 ![A screenshot that shows a workflow in Xcode with two build actions: one build action for the macOS app and one build action for the iOS app.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-3@2x.png)
 
@@ -84,7 +84,7 @@ To add a test action to a workflow:
 5. Choose Use Scheme Settings if you want the test action to use the selected scheme’s configuration. Alternatively, choose a test plan if you use them. For more information on test plans, see [Testing in Xcode](https://developer.apple.com/videos/play/wwdc2019/413/) and [Get your test results faster](https://developer.apple.com/videos/play/wwdc2020/10221/).
 6. Add at least one destination by clicking the Add button. Available destinations depend on the workflow’s environment setting. A higher number of destinations increases the time it takes Xcode Cloud to complete a build.
 
-The following screenshot shows an Xcode Cloud workflow for the [Fruta app](../SwiftUI/fruta_building_a_feature-rich_app_with_swiftui.md). It includes two test actions: one action tests the iOS app, and the other action tests the macOS app.
+The following screenshot shows an Xcode Cloud workflow for the Fruta app. It includes two test actions: one action tests the iOS app, and the other action tests the macOS app.
 
 ![A screenshot that shows a workflow in Xcode with two test actions: a test action for the iOS app and another test action for the macOS app.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-4@2x.png)
 

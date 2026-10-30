@@ -7,7 +7,7 @@
 Get information about a specific user in an organization.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ### Example
 

@@ -7,7 +7,7 @@
 An object that contains the JSON pointer that indicates the location of the error.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

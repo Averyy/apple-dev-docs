@@ -20,6 +20,10 @@ optional func collectionView(_ collectionView: NSCollectionView, shouldSelectIte
 - (NSSet<NSIndexPath *> *) collectionView:(NSCollectionView *) collectionView shouldSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items that you want to be selected. If you do not want any items selected, return an empty set.

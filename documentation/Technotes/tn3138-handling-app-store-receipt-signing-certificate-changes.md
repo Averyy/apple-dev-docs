@@ -35,9 +35,9 @@ Apps that are affected by Apple’s certificate update to SHA-256 include those 
 The certificate update does not affect any of the following transaction or receipt validation methods:
 
 - Validating app and in-app purchase transactions using [AppTransaction](../StoreKit/apptransaction.md) and [Transaction](../StoreKit/transaction.md).
-- Server-to-server receipt verification using the [verifyReceipt](../AppStoreReceipts/verifyreceipt.md) endpoint. For more information, see [Validating receipts with the App Store](../AppStoreReceipts/validating_receipts_with_the_app_store.md).
+- Server-to-server receipt verification using the verifyReceipt endpoint. For more information, see Validating receipts with the App Store.
 
-> **Note**: The [`verifyReceipt`](../AppStoreReceipts/verifyreceipt.md) endpoint is deprecated. To validate receipts on your server, follow the steps in [Validating receipts on the device](../AppStoreReceipts/validating-receipts-on-the-device.md) on your server.
+> **Note**: The `verifyReceipt` endpoint is deprecated. To validate receipts on your server, follow the steps in [Validating receipts on the device](../AppStoreReceipts/validating-receipts-on-the-device.md) on your server.
 
 ## Update your app to support SHA-256 certificates
 

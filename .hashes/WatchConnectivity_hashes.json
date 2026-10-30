@@ -842,11 +842,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/watchconnectivity/Shared/Logger.swift"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/transferring-data-with-watch-connectivity.json": [
+        "https://developer.apple.com/documentation/watchconnectivity/Shared/Logger.swift"
+      ]
     },
     "total_pages": 210
   }

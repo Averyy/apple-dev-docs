@@ -7,7 +7,7 @@
 Assign or unassign devices to a device management service, or manage a device management service for devices.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ### Example: Assign or Unassign Devices to a Device Management Service
 

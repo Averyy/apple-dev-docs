@@ -19,6 +19,11 @@ func touchesBegan(with event: NSEvent)
 - (void) touchesBeganWithEvent:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## See Also
 
 ### Handling touch and mouse events

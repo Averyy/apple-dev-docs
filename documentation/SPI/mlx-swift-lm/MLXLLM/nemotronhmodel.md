@@ -22,6 +22,7 @@ class NemotronHModel
 ### Instance Properties
 - [var castPredicate: ((String) -> Bool)?](./nemotronhmodel/castpredicate.md)
   Predicate for casting: some parameters should stay in float32
+- [var excludedCheckpointNamespaces: [String]](./nemotronhmodel/excludedcheckpointnamespaces.md)
 - [let kvHeads: [Int]](./nemotronhmodel/kvheads.md)
 - [var loraLayers: [Module]](./nemotronhmodel/loralayers.md)
 - [let vocabularySize: Int](./nemotronhmodel/vocabularysize.md)

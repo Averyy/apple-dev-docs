@@ -42,7 +42,7 @@ For an existing scroll view, you can simply use the `frame` method and extract i
 - [Scroll View Programming Guide for Mac](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NSScrollViewGuide/Articles/Introduction.html#//apple_ref/doc/uid/TP40003221)
 - [+ scrollerWidth](../nsscroller/scrollerwidth.md)
   Returns the width for scrollers of the receiving class, assuming a control size [`NSRegularControlSize`](../nsregularcontrolsize.md), and a scroller style of [`NSScrollerStyleLegacy`](../nsscroller/style/legacy.md).
-### Calculating Layout
+### Calculating layout
 - [class func contentSize(forFrameSize: NSSize, horizontalScrollerClass: AnyClass?, verticalScrollerClass: AnyClass?, borderType: NSBorderType, controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> NSSize](./contentsize%28forframesize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle%29.md)
   Returns the content size calculated from the frame size and the specified specifications.
 - [+ frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:](./framesizeforcontentsize_hashorizontalscroller_hasverticalscroller_bordertype_.md)

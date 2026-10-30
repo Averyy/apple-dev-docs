@@ -902,7 +902,7 @@ If a client makes a request to publish a package release to a server that finish
 
 The following [OpenAPI (v3) specification](https://swagger.io/specification/) is non-normative, and is provided for the convenience of developers interested in building their own package registry.
 
-See [registry.openapi.yaml](./registry.openapi.yaml.md).
+See registry.openapi.yaml.
 
 ### Appendix B - Package Release Metadata JSON Schema
 

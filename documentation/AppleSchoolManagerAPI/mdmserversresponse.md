@@ -7,7 +7,7 @@
 A response that contains a list of device management service resources.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

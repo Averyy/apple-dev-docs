@@ -19,6 +19,10 @@ class NSTableView
 @interface NSTableView : NSControl
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 Table views are displayed in scroll views. Beginning with macOS v10.7, you can use [`NSView`](./nsview.md) objects (most commonly customized [`NSTableCellView`](./nstablecellview.md) objects) instead of cells for specifying rows and columns. You can still use [`NSCell`](./nscell.md) objects for each row and column item if you prefer.

@@ -17,7 +17,7 @@ object TvEpisode.Rating
 
 ## Overview
 
-You can download a full list of rating systems and their ratings codes from the UMC Catalog Data Interface Specification at [Content Advisories and Ratings](../../AppleMusicAPI/get_a_catalog_resource_by_id.md).
+You can download a full list of rating systems and their ratings codes from the UMC Catalog Data Interface Specification at Content Advisories and Ratings.
 
 ## Properties
 

@@ -86,7 +86,7 @@ Packages let you read and write incrementally; instead of loading or saving the 
 
 Both [`DocumentReader`](./documentreader.md) and [`DocumentWriter`](./documentwriter.md) receive a [Subprogress](../Foundation/subprogress.md) parameter via their `read` and `write` methods, respectively. Report progress through the parameter so SwiftUI can display the appropriate UI during long operations.
 
-Create a [ProgressReporter](../Foundation/progressreporter.md) from the [`Subprogress`](../Foundation/subprogress.md) by specifying a total unit count. Then call [complete(count:)](../Foundation/progressreporter/complete%28count%29.md) as the work finishes, like this:
+Create a [ProgressReporter](../Foundation/progressreporter.md) from the [`Subprogress`](../Foundation/subprogress.md) by specifying a total unit count. Then call complete(count:) as the work finishes, like this:
 
 ```swift
 @concurrent 
@@ -142,7 +142,7 @@ func write(
 }
 ```
 
-If you use [FileHandle](../Foundation/filehandle.md) or [OutputStream](../Foundation/outputstream.md) to write files in chunks — for example, a large media file — report progress after each chunk rather than only once at the end. Each call to [`complete(count:)`](../Foundation/progressreporter/complete%28count%29.md) moves the progress bar forward, so spread the calls throughout the write.
+If you use [FileHandle](../Foundation/filehandle.md) or [OutputStream](../Foundation/outputstream.md) to write files in chunks — for example, a large media file — report progress after each chunk rather than only once at the end. Each call to `complete(count:)` moves the progress bar forward, so spread the calls throughout the write.
 
 The example below writes a large media file to disk in chunks. Set the total unit count to the file size in bytes, and call the reporter after each chunk so the progress bar updates smoothly.
 
@@ -182,7 +182,7 @@ func write(
 }
 ```
 
-The chunk size adapts to the file size, so large files don’t generate unnecessary system overhead. If you stream to an [`OutputStream`](../Foundation/outputstream.md) instead, the same pattern applies: Open the stream, write chunks of the computed size, call [`complete(count:)`](../Foundation/progressreporter/complete%28count%29.md) with the bytes written, and call `ProgresManager.complete(count:)` when finished.
+The chunk size adapts to the file size, so large files don’t generate unnecessary system overhead. If you stream to an [`OutputStream`](../Foundation/outputstream.md) instead, the same pattern applies: Open the stream, write chunks of the computed size, call `complete(count:)` with the bytes written, and call `ProgresManager.complete(count:)` when finished.
 
 > **Note**: Even when you report progress, SwiftUI decides whether to show a progress view.
 

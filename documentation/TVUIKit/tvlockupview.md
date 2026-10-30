@@ -65,6 +65,8 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](../UIKit/uiappearance.md)

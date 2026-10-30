@@ -20,14 +20,11 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
 ## Topics
 
 ### SwiftUI presentation
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/view/imageplaygroundsheet%28ispresented,concept,sourceimage,oncompletion,oncancellation%29.md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View\n](../SwiftUI/view/imageplaygroundsheet%28ispresented,concept,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using the specified string and optional starting image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimage,oncompletion,oncancellation%29.md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View\n](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an optional starting image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimageurl,oncompletion,oncancellation%29.md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View\n](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimageurl,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an image URL.
 ### UIKit and AppKit presentation
 - [class ImagePlaygroundViewController](./imageplaygroundviewcontroller.md)

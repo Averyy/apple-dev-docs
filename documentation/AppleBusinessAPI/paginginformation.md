@@ -7,7 +7,7 @@
 Paging information for data responses.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

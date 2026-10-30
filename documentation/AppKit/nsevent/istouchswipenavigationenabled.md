@@ -17,6 +17,10 @@ class var isTouchSwipeNavigationEnabled: Bool { get }
 @property (class, readonly, getter=isTouchSwipeNavigationEnabled) BOOL touchSwipeNavigationEnabled;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 
 ---
 

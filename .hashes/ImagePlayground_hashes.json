@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/ImagePlayground": {
       "file_path": "documentation/ImagePlayground/ImagePlayground.md",
-      "hash": "92eab2173bcf2eefd472a7f85db94cefb6260e14002cfc9a9448b725166e2784"
+      "hash": "1cecf8ee773bde1eac65ea419b9c592adc7f3786a6031695689432ac677a5d77"
     },
     "https://developer.apple.com/documentation/imageplayground/imagecreator": {
       "file_path": "documentation/ImagePlayground/imagecreator.md",
@@ -98,7 +98,7 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions": {
       "file_path": "documentation/ImagePlayground/imageplaygroundoptions.md",
-      "hash": "6f19ae0f657f3e6c01102617344f994134df507b5fbec53c5a1b9ffc34d32189"
+      "hash": "29dc56ed97f4e460232826b0974697c90963cd7dc46af0b62a684e693407dd76"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum": {
       "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.enum.md",
@@ -314,7 +314,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ImagePlayground.json": {
       "file_path": "documentation/ImagePlayground/ImagePlayground.md",
-      "hash": "92eab2173bcf2eefd472a7f85db94cefb6260e14002cfc9a9448b725166e2784"
+      "hash": "1cecf8ee773bde1eac65ea419b9c592adc7f3786a6031695689432ac677a5d77"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imagecreator.json": {
       "file_path": "documentation/ImagePlayground/imagecreator.md",
@@ -410,7 +410,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions.json": {
       "file_path": "documentation/ImagePlayground/imageplaygroundoptions.md",
-      "hash": "6f19ae0f657f3e6c01102617344f994134df507b5fbec53c5a1b9ffc34d32189"
+      "hash": "29dc56ed97f4e460232826b0974697c90963cd7dc46af0b62a684e693407dd76"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum.json": {
       "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.enum.md",

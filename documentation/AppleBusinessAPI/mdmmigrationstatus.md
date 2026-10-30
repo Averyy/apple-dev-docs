@@ -7,7 +7,7 @@
 Strings that represent the state of a device’s device management service migration.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

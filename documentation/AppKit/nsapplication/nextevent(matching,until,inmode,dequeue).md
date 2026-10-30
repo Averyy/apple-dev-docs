@@ -19,6 +19,11 @@ func nextEvent(matching mask: NSEvent.EventTypeMask, until expiration: Date?, in
 - (NSEvent *) nextEventMatchingMask:(NSEventMask) mask untilDate:(NSDate *) expiration inMode:(NSRunLoopMode) mode dequeue:(BOOL) deqFlag;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Return Value
 
 The event object whose type matches one of the event types specified by the `mask` parameter.

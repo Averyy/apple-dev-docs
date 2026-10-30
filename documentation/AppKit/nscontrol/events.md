@@ -19,6 +19,10 @@ struct Events
 enum NSControlEvents : NSUInteger;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 You set up a control to send an action message to a target object by associating both target and action with one or more control events. To do this, call [`addTarget(_:action:for:)`](./addtarget%28_,action,for%29.md) on the control for each target-action pair you want to specify.

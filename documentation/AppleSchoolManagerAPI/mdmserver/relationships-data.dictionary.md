@@ -7,7 +7,7 @@
 The relationships you include in the request, and those that you can operate on.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

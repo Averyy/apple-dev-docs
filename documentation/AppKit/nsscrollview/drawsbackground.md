@@ -32,7 +32,7 @@ If the scroll view encloses an `NSClipView`, setting this property to [`false`](
   A Boolean value that indicates if the clip view draws its background color.
 - [var copiesOnScroll: Bool](../nsclipview/copiesonscroll.md)
   A Boolean value that indicates if the clip view copies rendered images while scrolling.
-### Managing Graphics Attributes
+### Managing graphics attributes
 - [var backgroundColor: NSColor](./backgroundcolor.md)
   The color of the content view’s background.
 - [var borderType: NSBorderType](./bordertype.md)

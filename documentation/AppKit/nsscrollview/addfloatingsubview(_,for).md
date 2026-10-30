@@ -34,7 +34,7 @@ Floating subviews of the document view do not scroll like the rest of the docume
 
 ## See Also
 
-### Managing the Views
+### Managing the views
 - [var contentView: NSClipView](./contentview.md)
   The scroll view’s content view, the view that clips the document view.
 - [var documentView: NSView?](./documentview.md)

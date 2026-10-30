@@ -25,7 +25,7 @@ When the value of this property is [`true`](../../Swift/true.md), the scroll vie
 
 ## See Also
 
-### Setting Scrolling Behavior
+### Setting scrolling behavior
 - [var lineScroll: CGFloat](./linescroll.md)
   The scroll view’s line by line scroll amount.
 - [var horizontalLineScroll: CGFloat](./horizontallinescroll.md)

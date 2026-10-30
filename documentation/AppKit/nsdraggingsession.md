@@ -23,6 +23,10 @@ class NSDraggingSession
 
 You start a new dragging session by calling [`beginDraggingSession(with:event:source:)`](./nsview/begindraggingsession%28with,event,source%29.md) or [`beginDraggingSession(items:gesture:source:)`](./nsview/begindraggingsession%28items,gesture,source%29.md) on an `NSView`. The method immediately returns, and the actual drag begins at the next turn of the run loop.
 
+### Dragging sessions from gesture recognizers
+
+[`NSDraggingSession`](./nsdraggingsession.md) provides APIs for better interoperation with gesture recognizers. Use [`beginDraggingSession(items:gesture:source:)`](./nsview/begindraggingsession%28items,gesture,source%29.md) to start a drag from a gesture recognizer. This replaces the tracking-loop-based [`beginDraggingSession(with:event:source:)`](./nsview/begindraggingsession%28with,event,source%29.md). AppKit cancels the initiating gesture recognizer during the drag, but the timing differs by input type: for a mouse-based gesture, cancellation happens at the end of the operation; for a touch-based gesture, it happens at the very start.
+
 ## Topics
 
 ### Dragging Pasteboard

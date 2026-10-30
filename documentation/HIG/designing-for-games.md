@@ -68,7 +68,7 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 | --- | --- | --- |
 | iOS | Touch | Game controller |
 | iPadOS | Touch | Game controller, keyboard, mouse, trackpad, Apple Pencil |
-| macOS | Keyboard, mouse, trackpad | Game controller |
+| macOS | Keyboard, mouse, trackpad | Game controller, touch |
 | tvOS | Remote | Game controller, keyboard, mouse, trackpad |
 | visionOS | Touch | Game controller, keyboard, mouse, trackpad, spatial game controller |
 | watchOS | Touch | – |

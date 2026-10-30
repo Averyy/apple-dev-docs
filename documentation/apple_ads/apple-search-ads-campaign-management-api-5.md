@@ -67,11 +67,11 @@ Released in May, 2024.
 
 - View-through reporting metrics provide details on Apple Search Ads campaign performance. Installs, new downloads, and redownloads are available as a standalone total, tap-through, and view-through. All reports reflect the new metrics. See [SpendRow](./spendrow.md) and [ExtendedSpendRow](./extendedspendrow.md).
 - Get Keyword-Level Reports and Get Keyword-Level within Ad Group Reports reflect a new suggestedBidAmount field, replacing deprecated `bidMin` and `bidMax` fields. See [KeywordBidRecommendation](./keywordbidrecommendation.md).
-- Get [Search Term-Level Reports](./gets-reports-on-search-terms-within-a-campaign.-the-information-per-campaign-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter.md) and [Get Search Term-Level within Ad Group Reports](./gets-reports-on-targeting-searchterm-within-a-adgroup.-the-information-per-adgroup-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter.md) require the timezone to be ORTZ.
+- Get Search Term-Level Reports and Get Search Term-Level within Ad Group Reports require the timezone to be ORTZ.
 
 Other new features include:
 
-- Prior to API 5, new campaigns required a `dailyBudgetAmount` or a `budgetAmount`, or both. A `dailyBudgetAmount` is now a required field for all new campaigns. See [Create a campaign](./creates-a-campaign.md).
+- Prior to API 5, new campaigns required a `dailyBudgetAmount` or a `budgetAmount`, or both. A `dailyBudgetAmount` is now a required field for all new campaigns. See Create a campaign.
 - Multiple default languages are supported for [countries or regions](./countryorregion.md).
 
 Deprecations:

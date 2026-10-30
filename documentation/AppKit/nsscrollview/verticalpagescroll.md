@@ -27,7 +27,7 @@ This amount expresses the context that remains when the receiver scrolls by one 
 
 ## See Also
 
-### Setting Scrolling Behavior
+### Setting scrolling behavior
 - [var lineScroll: CGFloat](./linescroll.md)
   The scroll view’s line by line scroll amount.
 - [var horizontalLineScroll: CGFloat](./horizontallinescroll.md)

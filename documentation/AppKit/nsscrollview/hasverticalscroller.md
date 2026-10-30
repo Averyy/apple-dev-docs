@@ -25,7 +25,7 @@ When the value of this property is [`true`](../../Swift/true.md), the scroll vie
 
 ## See Also
 
-### Managing Scrollers
+### Managing scrollers
 - [var horizontalScroller: NSScroller?](./horizontalscroller.md)
   The scroll view’s horizontal scroller.
 - [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)

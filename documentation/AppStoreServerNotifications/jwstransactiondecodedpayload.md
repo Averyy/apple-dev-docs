@@ -48,7 +48,7 @@ object JWSTransactionDecodedPayload
 - `originalPurchaseDate` (originalPurchaseDate): The UNIX time, in milliseconds, that represents the purchase date of the original transaction identifier.
 - `originalTransactionId` (originalTransactionId): The transaction identifier of the original purchase.
 - `previousOriginalTransactionId` (previousOriginalTransactionId): The subscription’s original transaction identifier, before you migrated the subscription.
-- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](./jwstransactiondecodedpayload/price.md). The `currency` parameter indicates the currency of this price.
+- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see `price`. The `currency` parameter indicates the currency of this price.
 - `productId` (productId): The product identifier of the in-app purchase.
 - `purchaseDate` (purchaseDate): The UNIX time, in milliseconds, that the App Store charged the user’s account for a purchase, restored product, subscription, or subscription renewal after a lapse.
 - `quantity` (quantity): The number of products or seats the customer purchased.

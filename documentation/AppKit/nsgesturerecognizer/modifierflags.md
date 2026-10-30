@@ -27,6 +27,7 @@ Use this property from an action method or delegate callback to determine which 
 
 ### Getting additional recognizer information
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](./allowedtouchtypes.md)
+  The touch types that this gesture recognizer accepts.
 - [var isCancellableByScrollGesture: Bool](./iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 - [var name: String?](./name.md)

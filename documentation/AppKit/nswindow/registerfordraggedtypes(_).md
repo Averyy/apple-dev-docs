@@ -30,6 +30,7 @@ Registering an `NSWindow` object for dragged types automatically makes it a cand
 ## See Also
 
 ### Dragging Items
+- [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./begindraggingsession%28items,event,source%29.md)
 - [func unregisterDraggedTypes()](./unregisterdraggedtypes%28%29.md)
   Unregisters the window as a possible destination for dragging operations.
 

@@ -7,7 +7,7 @@
 The data structure that represents the event data for a device removed from organization audit event.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

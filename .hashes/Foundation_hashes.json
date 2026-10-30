@@ -6532,10 +6532,6 @@
       "file_path": "documentation/Foundation/data/init().md",
       "hash": "f668f1da6da40db0c9a20da0884399a6fd4b9a01e0a6bc0dd3887d0a4c9208c5"
     },
-    "https://developer.apple.com/documentation/foundation/data/init(_:)": {
-      "file_path": "documentation/Foundation/data/init(_).md",
-      "hash": ""
-    },
     "https://developer.apple.com/documentation/foundation/data/init(_:)-2r3sw": {
       "file_path": "documentation/Foundation/data/init(_)-2r3sw.md",
       "hash": "061ce72253f19529b7369d535bd2938f9d14765ecb1249e2dd487c3919c3e0c2"
@@ -6783,10 +6779,6 @@
     "https://developer.apple.com/documentation/foundation/date": {
       "file_path": "documentation/Foundation/date.md",
       "hash": "e4cdc5fb4345d33f4524f387502438f77cc312387b2474ee85576d3d106c0bde"
-    },
-    "https://developer.apple.com/documentation/foundation/date/!=(_:_:)": {
-      "file_path": "documentation/Foundation/date/noteq(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/documentation/foundation/date/+(_:_:)": {
       "file_path": "documentation/Foundation/date/plus(_,_).md",
@@ -18154,7 +18146,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didbecomekey-3qijm": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomekey-3qijm.md",
-      "hash": "3d3407697ddcf51620d9f0dbb4c0152c1074144118fe7d7ebbf9fd71935453c7"
+      "hash": "b8da12b1e3e005a153578e33cda670de744aab5bed9ba0dae1f8c3e951f20a96"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didbecomekey-6kgub": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomekey-6kgub.md",
@@ -18162,7 +18154,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didbecomemain": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomemain.md",
-      "hash": "8c829d5ec78d89af4c549bbc83b64faa164a2cdc357330e92be824a37c68b7e0"
+      "hash": "c07e16561442579a7e676bb11fa97867b3b7d9c30bcf129cd6fac41f4807be99"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didbecomevisible": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomevisible.md",
@@ -18234,7 +18226,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangebackingproperties": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangebackingproperties.md",
-      "hash": "1dfa896eb21b87792250a7374c5cd6ac394898899c3ac0b348d0ca238da5ef3a"
+      "hash": "1dadc8f3d6a7bb4fffdb9f40a1daa693371b7dcecd8534fb7cb31a6e088282b2"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangefilelabels": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangefilelabels.md",
@@ -18246,7 +18238,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangeocclusionstate-5853a": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeocclusionstate-5853a.md",
-      "hash": "370d837c66690643df91800bb46b52f3d2497ac93fc56c589cc299217e96d61e"
+      "hash": "84de7fb3bc26f602a40879c18d19e52f7b883470ce2fa64ddbe1b9812fb0dee0"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangeocclusionstate-99vn6": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeocclusionstate-99vn6.md",
@@ -18254,7 +18246,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangescreen": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreen.md",
-      "hash": "1c75a5a97533c3965be1c67935435302b67814f755cb2617256e3dd7a92ac75b"
+      "hash": "918e7d197ed3198d95781407294918b37ea66e6579a90c58bee41c7cb3f9acab"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangescreenparameters": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreenparameters.md",
@@ -18262,7 +18254,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangescreenprofile": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreenprofile.md",
-      "hash": "d900cae6da69ec123901d872aeca77abf947f0aceaaf0fc8d7421dd714d779ae"
+      "hash": "ce72bd271760952516a61cb25c8a417b2b1371edb6db0f3395778e3919ce4b6d"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didchangeselection": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeselection.md",
@@ -18310,7 +18302,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/diddeminiaturize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/diddeminiaturize.md",
-      "hash": "cb495866533ee7b09cb4c95272c95dad3d7c5cafebdc407f9b4973fd689c2f07"
+      "hash": "67ff432f15ac2c1f69091a07eb3aeb76f55b0dcc7442047f2c367799a7127c3d"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/diddisconnect-127wj": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/diddisconnect-127wj.md",
@@ -18346,7 +18338,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didendliveresize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendliveresize.md",
-      "hash": "6d769fb4b48c14521d0dc11840c0d9aff3962c96c661f8dc339b81e215f2bcf0"
+      "hash": "e590271923dcc3de9a3fbeefb945cf5663b72d7ea97c21f13682dae02c46fea8"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didendlivescroll": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendlivescroll.md",
@@ -18354,7 +18346,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didendsheet": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendsheet.md",
-      "hash": "3ca8f666b9b575dbaf2bf3387727c49645c85aa5ddc8eac6db1f48c16df52574"
+      "hash": "51b2c0ee9a1549ac866ef1a0a2c7e348c3e0791ff40a5ff888e047dfa54e6446"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didendtracking": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendtracking.md",
@@ -18374,23 +18366,23 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didenterfullscreen": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didenterfullscreen.md",
-      "hash": "35d7c17df247f112f1d1891e7dd72f3d7ceeb79ce3bf7b225c9cc41430354779"
+      "hash": "3945b4821b0e2a8025b06675ea0de90e5cb5b122339818ee48ee0da2ff06bb8e"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didenterversionbrowser": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didenterversionbrowser.md",
-      "hash": "fd985f981ed25172bfe03f823bfe982f4c8c202132409b437e251164de2f611c"
+      "hash": "3c910938ef655eb91fb33fd506ed1abde00cf49ed47de4af78444acb8956e9d8"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didexitfullscreen": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexitfullscreen.md",
-      "hash": "7f6e3004f2ec4325c31b8e7b1b7040fc42123b0b874d6cce595b0e8cca4bad19"
+      "hash": "817dca98391d52cbe0551acf110ebae97809dc587ec18b57dc264ba69bbfe1c5"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didexitversionbrowser": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexitversionbrowser.md",
-      "hash": "038db1fa1aac58ad816c2c31e823d7952dfaae3f3b1c7a59ee7acfdf0ce02dc0"
+      "hash": "6a62176a10bef04be485aadd7d64fdc31cbffc68070725de0fb6e35c6fa441e0"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didexpose": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexpose.md",
-      "hash": "dd47a50370062714156ef07a2db5567bbc5cc8d284aea9852b784351c33c1291"
+      "hash": "ea5a645e52274fa00ad8e92a8cb497d7c2e2d9f683d82bfc0bcaeb21f04ea9f5"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didfinishgathering": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didfinishgathering.md",
@@ -18434,7 +18426,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didminiaturize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didminiaturize.md",
-      "hash": "a8e31634e3657da49d40af62188f99edfe1637d7a3b260fc89e06a54adc786df"
+      "hash": "003338078a3fed85be7d069c450b31cc41963dfa8278d3acc19eaa754efad4f4"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didmountvolume": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmountvolume.md",
@@ -18442,7 +18434,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didmove": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmove.md",
-      "hash": "262df3be7703ba6e4be08504f465531f705c7536f949e3fd60a86a6582fd9a4a"
+      "hash": "f0be2c3466b7b315a626ad1d0d3ca68119dd95be9fc838e829d3221b3d68b069"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didmovetowritablelocation": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmovetowritablelocation.md",
@@ -18482,15 +18474,15 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didresignkey-2dgp0": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresignkey-2dgp0.md",
-      "hash": "c3561dff03e061db7856e8fcdc45b0983f5403f17c42dbb986a0acc550826d22"
+      "hash": "65311e0b7fa015ff2f63af57547146b2cfa293a6b082af9bfdab28a9835e0c09"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didresignmain": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresignmain.md",
-      "hash": "95a2cb7b53bf613b1d41c3576667632498285224ad0f20d1ccb864b58f387320"
+      "hash": "ff2b45561c8035d231495065a32641f0d77fd4b2cef613fc2c3ff93e67d27d79"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didresize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresize.md",
-      "hash": "bf8269b82df864b1fc558d13d8631614f774fe77b53b0fe62817760b2ba21be8"
+      "hash": "58baa6bbf52fc52d9af55a1ef99c3800e7c9828efb06fbe83df5c90aea1e211e"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didresizesubviews": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresizesubviews.md",
@@ -18558,7 +18550,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didupdate-vu3m": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didupdate-vu3m.md",
-      "hash": "4defe671a3556896cce0690065691b4635b6b55637876f15b281e3e8e1cc5887"
+      "hash": "f90218250644cf9365ca8efe341cf3e8a15243047a0a12dec536c19eced3dbc3"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/didupdatewindows": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didupdatewindows.md",
@@ -18950,7 +18942,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willbeginsheet": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willbeginsheet.md",
-      "hash": "4ada79ccd00691a60fe324441594a8f5263306b799e297d0a7783dde8af03c84"
+      "hash": "07a757533a5392f159b66405b240d71a70699ed025334c64189166a0aebf9164"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willchangenotifyingtextview": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willchangenotifyingtextview.md",
@@ -18962,7 +18954,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willclose-4565q": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willclose-4565q.md",
-      "hash": "987d78e580db8220e70311d1bc7513420f23a0f46f283c1de1e260a5847896d7"
+      "hash": "794cddaeec467d13399e7860ffbae8736ad90c95ccd6ec6518c0f6f43667c151"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willcloseundogroup": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willcloseundogroup.md",
@@ -18994,19 +18986,19 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willenterfullscreen": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willenterfullscreen.md",
-      "hash": "31d3aa3127d5de29dcc76cd60d9fb37759f7d4fdd63352c16bc22b5ad1ae172f"
+      "hash": "8d2ceb53628c4aa2b5afa7254cbaf9dd64c0b87a81fcd2c71b8977f9ac7f7760"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willenterversionbrowser": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willenterversionbrowser.md",
-      "hash": "a54caf0607e8d6e8d8463eb65b8a8b6bb25ed4007355c7be86e7c1be39bd2049"
+      "hash": "1cbfd6d3f1cc04337b0d65242f0bdbd7afb4bafbbc1f7d8b2838590b792345e8"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willexitfullscreen": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willexitfullscreen.md",
-      "hash": "e45363e20750d7cde53db67bd347dbc8ab92c38fe8811dafb4ae9ceb8ec031c5"
+      "hash": "e4b2118b2525b05e28ec9d565999aabf74a47a3488cce5203eccaa18b8198a03"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willexitversionbrowser": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willexitversionbrowser.md",
-      "hash": "f1e53fbcf0b133c9ee7aa24725b3395ff5266ce0ed37029deab15cbf84f12dce"
+      "hash": "a7c774e7124b2e5af00a4492b3a306220977471848631dbb87a9ee423f7f7cd8"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willfinishlaunching": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willfinishlaunching.md",
@@ -19022,11 +19014,11 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willminiaturize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willminiaturize.md",
-      "hash": "59541646b4f868efa2acf67131505467361f1708724ae13087131e07cb4e96ff"
+      "hash": "7ec50dfd6bf55cc4ff043b8bb1cfd7691d1feb1fcd702953be6fc1463cc21283"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willmove": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willmove.md",
-      "hash": "22bdafdbf4f9977c2a7cde4f793e66af134c541c2f878ffafe0d756c05faa114"
+      "hash": "fab07f35d919a0a6e6f46991cf0cf9bdc90073977b2ed990cebb4fe37d6009cc"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willpopup-4czk2": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willpopup-4czk2.md",
@@ -19082,7 +19074,7 @@
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willstartliveresize": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willstartliveresize.md",
-      "hash": "26dd6de0d6aa33a3d05d835d30a23b54e82701dc51d390dd175caefdaa8ed170"
+      "hash": "e13051ab7cd2c2851e093525e974972ba1513f2cf3314285d7d23affab5936e7"
     },
     "https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/willstartlivescroll": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willstartlivescroll.md",
@@ -20706,7 +20698,7 @@
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring": {
       "file_path": "documentation/Foundation/nsattributedstring.md",
-      "hash": "422b428744a2db8f4c07b8487259119fc245483f3ae7508da9174e9af0e63837"
+      "hash": "82ffa7f7c351b4766df4c3b1be2eaecad6c42c65ecc43e93049e585543ef5035"
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring/attribute(_:at:effectiverange:)": {
       "file_path": "documentation/Foundation/nsattributedstring/attribute(_,at,effectiverange).md",
@@ -21167,6 +21159,10 @@
     "https://developer.apple.com/documentation/foundation/nsattributedstring/init(markdown:options:baseurl:)-m9n": {
       "file_path": "documentation/Foundation/nsattributedstring/init(markdown,options,baseurl)-m9n.md",
       "hash": "045f4d6d21d5307781a55d05da462e7187d191abcaa8b3484999b36920aca2a9"
+    },
+    "https://developer.apple.com/documentation/foundation/nsattributedstring/init(pasteboardpropertylist:oftype:)": {
+      "file_path": "documentation/Foundation/nsattributedstring/init(pasteboardpropertylist,oftype).md",
+      "hash": "e7d8167cb5549d09b617894a37e005e1bd4c3b640400c7b9afa36ce7f9d5ff6a"
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring/init(path:documentattributes:)": {
       "file_path": "documentation/Foundation/nsattributedstring/init(path,documentattributes).md",
@@ -40198,7 +40194,7 @@
     },
     "https://developer.apple.com/documentation/foundation/nsurl": {
       "file_path": "documentation/Foundation/nsurl.md",
-      "hash": "fd48f379b799dc28bbbb79f9f1ebd71e368331e4328fe99ad1c1ed79d27eca0b"
+      "hash": "03c5540dfc3493e960f93d809e109f77adecc828e20d3eeea7c11218a2bdef22"
     },
     "https://developer.apple.com/documentation/foundation/nsurl-isequal": {
       "file_path": "documentation/Foundation/nsurl-isequal.md",
@@ -40463,10 +40459,6 @@
     "https://developer.apple.com/documentation/foundation/nsurl/init(frompasteboard:)": {
       "file_path": "documentation/Foundation/nsurl/init(frompasteboard).md",
       "hash": "fc2a52552a31a0172b303adc7e330c99a1a1b89f4746ae58584ad184c92a10d0"
-    },
-    "https://developer.apple.com/documentation/foundation/nsurl/init(pasteboardpropertylist:oftype:)": {
-      "file_path": "documentation/Foundation/nsurl/init(pasteboardpropertylist,oftype).md",
-      "hash": "33ccfc11c250983bae521530afcaea8cddf656f530303f7102b0739ed90a8588"
     },
     "https://developer.apple.com/documentation/foundation/nsurl/init(resolvingaliasfileat:options:)": {
       "file_path": "documentation/Foundation/nsurl/init(resolvingaliasfileat,options).md",
@@ -63028,10 +63020,6 @@
       "file_path": "documentation/Foundation/data/init(_)-53ewf.md",
       "hash": "7176c1937a44aa00f83aba2509b07077397ec556041b6354995727a81a42c5d4"
     },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/data/init(_:).json": {
-      "file_path": "documentation/Foundation/data/init(_).md",
-      "hash": ""
-    },
     "https://developer.apple.com/tutorials/data/documentation/foundation/data/init(base64encoded:options:)-1g88z.json": {
       "file_path": "documentation/Foundation/data/init(base64encoded,options)-1g88z.md",
       "hash": "62058f680eb3c52c4bd7386f1b75bd361e2267b6de03b9629e2cc7157be4d4d9"
@@ -63271,10 +63259,6 @@
     "https://developer.apple.com/tutorials/data/documentation/foundation/date.json": {
       "file_path": "documentation/Foundation/date.md",
       "hash": "e4cdc5fb4345d33f4524f387502438f77cc312387b2474ee85576d3d106c0bde"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/!=(_:_:).json": {
-      "file_path": "documentation/Foundation/date/noteq(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/date/+(_:_:).json": {
       "file_path": "documentation/Foundation/date/plus(_,_).md",
@@ -74646,7 +74630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didbecomekey-3qijm.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomekey-3qijm.md",
-      "hash": "3d3407697ddcf51620d9f0dbb4c0152c1074144118fe7d7ebbf9fd71935453c7"
+      "hash": "b8da12b1e3e005a153578e33cda670de744aab5bed9ba0dae1f8c3e951f20a96"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didbecomekey-6kgub.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomekey-6kgub.md",
@@ -74654,7 +74638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didbecomemain.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomemain.md",
-      "hash": "8c829d5ec78d89af4c549bbc83b64faa164a2cdc357330e92be824a37c68b7e0"
+      "hash": "c07e16561442579a7e676bb11fa97867b3b7d9c30bcf129cd6fac41f4807be99"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didbecomevisible.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didbecomevisible.md",
@@ -74726,7 +74710,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangebackingproperties.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangebackingproperties.md",
-      "hash": "1dfa896eb21b87792250a7374c5cd6ac394898899c3ac0b348d0ca238da5ef3a"
+      "hash": "1dadc8f3d6a7bb4fffdb9f40a1daa693371b7dcecd8534fb7cb31a6e088282b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangefilelabels.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangefilelabels.md",
@@ -74738,7 +74722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangeocclusionstate-5853a.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeocclusionstate-5853a.md",
-      "hash": "370d837c66690643df91800bb46b52f3d2497ac93fc56c589cc299217e96d61e"
+      "hash": "84de7fb3bc26f602a40879c18d19e52f7b883470ce2fa64ddbe1b9812fb0dee0"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangeocclusionstate-99vn6.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeocclusionstate-99vn6.md",
@@ -74746,7 +74730,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangescreen.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreen.md",
-      "hash": "1c75a5a97533c3965be1c67935435302b67814f755cb2617256e3dd7a92ac75b"
+      "hash": "918e7d197ed3198d95781407294918b37ea66e6579a90c58bee41c7cb3f9acab"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangescreenparameters.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreenparameters.md",
@@ -74754,7 +74738,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangescreenprofile.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangescreenprofile.md",
-      "hash": "d900cae6da69ec123901d872aeca77abf947f0aceaaf0fc8d7421dd714d779ae"
+      "hash": "ce72bd271760952516a61cb25c8a417b2b1371edb6db0f3395778e3919ce4b6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didchangeselection.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didchangeselection.md",
@@ -74802,7 +74786,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/diddeminiaturize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/diddeminiaturize.md",
-      "hash": "cb495866533ee7b09cb4c95272c95dad3d7c5cafebdc407f9b4973fd689c2f07"
+      "hash": "67ff432f15ac2c1f69091a07eb3aeb76f55b0dcc7442047f2c367799a7127c3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/diddisconnect-127wj.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/diddisconnect-127wj.md",
@@ -74838,7 +74822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didendliveresize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendliveresize.md",
-      "hash": "6d769fb4b48c14521d0dc11840c0d9aff3962c96c661f8dc339b81e215f2bcf0"
+      "hash": "e590271923dcc3de9a3fbeefb945cf5663b72d7ea97c21f13682dae02c46fea8"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didendlivescroll.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendlivescroll.md",
@@ -74846,7 +74830,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didendsheet.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendsheet.md",
-      "hash": "3ca8f666b9b575dbaf2bf3387727c49645c85aa5ddc8eac6db1f48c16df52574"
+      "hash": "51b2c0ee9a1549ac866ef1a0a2c7e348c3e0791ff40a5ff888e047dfa54e6446"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didendtracking.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didendtracking.md",
@@ -74866,23 +74850,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didenterfullscreen.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didenterfullscreen.md",
-      "hash": "35d7c17df247f112f1d1891e7dd72f3d7ceeb79ce3bf7b225c9cc41430354779"
+      "hash": "3945b4821b0e2a8025b06675ea0de90e5cb5b122339818ee48ee0da2ff06bb8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didenterversionbrowser.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didenterversionbrowser.md",
-      "hash": "fd985f981ed25172bfe03f823bfe982f4c8c202132409b437e251164de2f611c"
+      "hash": "3c910938ef655eb91fb33fd506ed1abde00cf49ed47de4af78444acb8956e9d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didexitfullscreen.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexitfullscreen.md",
-      "hash": "7f6e3004f2ec4325c31b8e7b1b7040fc42123b0b874d6cce595b0e8cca4bad19"
+      "hash": "817dca98391d52cbe0551acf110ebae97809dc587ec18b57dc264ba69bbfe1c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didexitversionbrowser.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexitversionbrowser.md",
-      "hash": "038db1fa1aac58ad816c2c31e823d7952dfaae3f3b1c7a59ee7acfdf0ce02dc0"
+      "hash": "6a62176a10bef04be485aadd7d64fdc31cbffc68070725de0fb6e35c6fa441e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didexpose.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didexpose.md",
-      "hash": "dd47a50370062714156ef07a2db5567bbc5cc8d284aea9852b784351c33c1291"
+      "hash": "ea5a645e52274fa00ad8e92a8cb497d7c2e2d9f683d82bfc0bcaeb21f04ea9f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didfinishgathering.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didfinishgathering.md",
@@ -74926,7 +74910,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didminiaturize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didminiaturize.md",
-      "hash": "a8e31634e3657da49d40af62188f99edfe1637d7a3b260fc89e06a54adc786df"
+      "hash": "003338078a3fed85be7d069c450b31cc41963dfa8278d3acc19eaa754efad4f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didmountvolume.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmountvolume.md",
@@ -74934,7 +74918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didmove.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmove.md",
-      "hash": "262df3be7703ba6e4be08504f465531f705c7536f949e3fd60a86a6582fd9a4a"
+      "hash": "f0be2c3466b7b315a626ad1d0d3ca68119dd95be9fc838e829d3221b3d68b069"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didmovetowritablelocation.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didmovetowritablelocation.md",
@@ -74974,15 +74958,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didresignkey-2dgp0.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresignkey-2dgp0.md",
-      "hash": "c3561dff03e061db7856e8fcdc45b0983f5403f17c42dbb986a0acc550826d22"
+      "hash": "65311e0b7fa015ff2f63af57547146b2cfa293a6b082af9bfdab28a9835e0c09"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didresignmain.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresignmain.md",
-      "hash": "95a2cb7b53bf613b1d41c3576667632498285224ad0f20d1ccb864b58f387320"
+      "hash": "ff2b45561c8035d231495065a32641f0d77fd4b2cef613fc2c3ff93e67d27d79"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didresize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresize.md",
-      "hash": "bf8269b82df864b1fc558d13d8631614f774fe77b53b0fe62817760b2ba21be8"
+      "hash": "58baa6bbf52fc52d9af55a1ef99c3800e7c9828efb06fbe83df5c90aea1e211e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didresizesubviews.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didresizesubviews.md",
@@ -75050,7 +75034,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didupdate-vu3m.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didupdate-vu3m.md",
-      "hash": "4defe671a3556896cce0690065691b4635b6b55637876f15b281e3e8e1cc5887"
+      "hash": "f90218250644cf9365ca8efe341cf3e8a15243047a0a12dec536c19eced3dbc3"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/didupdatewindows.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/didupdatewindows.md",
@@ -75442,7 +75426,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willbeginsheet.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willbeginsheet.md",
-      "hash": "4ada79ccd00691a60fe324441594a8f5263306b799e297d0a7783dde8af03c84"
+      "hash": "07a757533a5392f159b66405b240d71a70699ed025334c64189166a0aebf9164"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willchangenotifyingtextview.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willchangenotifyingtextview.md",
@@ -75454,7 +75438,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willclose-4565q.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willclose-4565q.md",
-      "hash": "987d78e580db8220e70311d1bc7513420f23a0f46f283c1de1e260a5847896d7"
+      "hash": "794cddaeec467d13399e7860ffbae8736ad90c95ccd6ec6518c0f6f43667c151"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willcloseundogroup.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willcloseundogroup.md",
@@ -75486,19 +75470,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willenterfullscreen.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willenterfullscreen.md",
-      "hash": "31d3aa3127d5de29dcc76cd60d9fb37759f7d4fdd63352c16bc22b5ad1ae172f"
+      "hash": "8d2ceb53628c4aa2b5afa7254cbaf9dd64c0b87a81fcd2c71b8977f9ac7f7760"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willenterversionbrowser.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willenterversionbrowser.md",
-      "hash": "a54caf0607e8d6e8d8463eb65b8a8b6bb25ed4007355c7be86e7c1be39bd2049"
+      "hash": "1cbfd6d3f1cc04337b0d65242f0bdbd7afb4bafbbc1f7d8b2838590b792345e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willexitfullscreen.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willexitfullscreen.md",
-      "hash": "e45363e20750d7cde53db67bd347dbc8ab92c38fe8811dafb4ae9ceb8ec031c5"
+      "hash": "e4b2118b2525b05e28ec9d565999aabf74a47a3488cce5203eccaa18b8198a03"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willexitversionbrowser.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willexitversionbrowser.md",
-      "hash": "f1e53fbcf0b133c9ee7aa24725b3395ff5266ce0ed37029deab15cbf84f12dce"
+      "hash": "a7c774e7124b2e5af00a4492b3a306220977471848631dbb87a9ee423f7f7cd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willfinishlaunching.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willfinishlaunching.md",
@@ -75514,11 +75498,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willminiaturize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willminiaturize.md",
-      "hash": "59541646b4f868efa2acf67131505467361f1708724ae13087131e07cb4e96ff"
+      "hash": "7ec50dfd6bf55cc4ff043b8bb1cfd7691d1feb1fcd702953be6fc1463cc21283"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willmove.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willmove.md",
-      "hash": "22bdafdbf4f9977c2a7cde4f793e66af134c541c2f878ffafe0d756c05faa114"
+      "hash": "fab07f35d919a0a6e6f46991cf0cf9bdc90073977b2ed990cebb4fe37d6009cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willpopup-4czk2.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willpopup-4czk2.md",
@@ -75574,7 +75558,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willstartliveresize.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willstartliveresize.md",
-      "hash": "26dd6de0d6aa33a3d05d835d30a23b54e82701dc51d390dd175caefdaa8ed170"
+      "hash": "e13051ab7cd2c2851e093525e974972ba1513f2cf3314285d7d23affab5936e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/notificationcenter/messageidentifier/willstartlivescroll.json": {
       "file_path": "documentation/Foundation/notificationcenter/messageidentifier/willstartlivescroll.md",
@@ -77198,7 +77182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring.json": {
       "file_path": "documentation/Foundation/nsattributedstring.md",
-      "hash": "422b428744a2db8f4c07b8487259119fc245483f3ae7508da9174e9af0e63837"
+      "hash": "82ffa7f7c351b4766df4c3b1be2eaecad6c42c65ecc43e93049e585543ef5035"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/attribute(_:at:effectiverange:).json": {
       "file_path": "documentation/Foundation/nsattributedstring/attribute(_,at,effectiverange).md",
@@ -77659,6 +77643,10 @@
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(markdown:options:baseurl:)-m9n.json": {
       "file_path": "documentation/Foundation/nsattributedstring/init(markdown,options,baseurl)-m9n.md",
       "hash": "045f4d6d21d5307781a55d05da462e7187d191abcaa8b3484999b36920aca2a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(pasteboardpropertylist:oftype:).json": {
+      "file_path": "documentation/Foundation/nsattributedstring/init(pasteboardpropertylist,oftype).md",
+      "hash": "e7d8167cb5549d09b617894a37e005e1bd4c3b640400c7b9afa36ce7f9d5ff6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(path:documentattributes:).json": {
       "file_path": "documentation/Foundation/nsattributedstring/init(path,documentattributes).md",
@@ -96698,7 +96686,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl.json": {
       "file_path": "documentation/Foundation/nsurl.md",
-      "hash": "fd48f379b799dc28bbbb79f9f1ebd71e368331e4328fe99ad1c1ed79d27eca0b"
+      "hash": "03c5540dfc3493e960f93d809e109f77adecc828e20d3eeea7c11218a2bdef22"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/absolutestring.json": {
       "file_path": "documentation/Foundation/nsurl/absolutestring.md",
@@ -96955,10 +96943,6 @@
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(frompasteboard:).json": {
       "file_path": "documentation/Foundation/nsurl/init(frompasteboard).md",
       "hash": "fc2a52552a31a0172b303adc7e330c99a1a1b89f4746ae58584ad184c92a10d0"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(pasteboardpropertylist:oftype:).json": {
-      "file_path": "documentation/Foundation/nsurl/init(pasteboardpropertylist,oftype).md",
-      "hash": "33ccfc11c250983bae521530afcaea8cddf656f530303f7102b0739ed90a8588"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(resolvingaliasfileat:options:).json": {
       "file_path": "documentation/Foundation/nsurl/init(resolvingaliasfileat,options).md",
@@ -112982,12 +112966,14 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/foundation/date/formatstyle/3798884-datetime"
-    ],
     "render": {
       "version": 4
     },
-    "total_pages": 28245
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/foundation/building-a-localized-food-ordering-app.json": [
+        "https://developer.apple.com/documentation/foundation/date/formatstyle/3798884-datetime"
+      ]
+    },
+    "total_pages": 28241
   }
 }

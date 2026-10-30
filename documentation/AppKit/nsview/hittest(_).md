@@ -19,6 +19,10 @@ func hitTest(_ point: NSPoint) -> NSView?
 - (NSView *) hitTest:(NSPoint) point;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Return Value
 
 A view object that is the farthest descendent of `aPoint`.

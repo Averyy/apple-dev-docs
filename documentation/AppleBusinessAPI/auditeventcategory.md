@@ -7,7 +7,7 @@
 Strings that represent audit event categories.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 
@@ -22,6 +22,7 @@ string AuditEventCategory
 - `DEVICE_INVENTORY`
 - `PURCHASING`
 - `DEVICE_MANAGEMENT`
+- `ACCESS_MANAGEMENT`
 
 ## Discussion
 

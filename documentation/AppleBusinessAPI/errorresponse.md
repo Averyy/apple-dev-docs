@@ -7,7 +7,7 @@
 The error details that an API returns in the response body whenever the API request isn’t successful.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

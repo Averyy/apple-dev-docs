@@ -23,7 +23,7 @@ object GroupEntry
 
 The [`Get Customer Groups`](./get-customer-groups.md) endpoint returns a `GroupEntry` for each group a customer belongs to.
 
-A customer’s role can differ per product, so `roles` is an array of [`RoleEntry`](./roleentry.md) values rather than a single role. Read the [`role`](./roleentry/role.md) for the [`productId`](./roleentry/productid.md) you’re evaluating rather than assuming a single role applies across your products.
+A customer’s role can differ per product, so `roles` is an array of [`RoleEntry`](./roleentry.md) values rather than a single role. Read the `role` for the `productId` you’re evaluating rather than assuming a single role applies across your products.
 
 ## Topics
 
@@ -35,7 +35,7 @@ A customer’s role can differ per product, so `roles` is an array of [`RoleEntr
 
 - `groupId` (groupId): The identifier of the group.
 - `groupType` (groupType): The type of the group.
-- `roles` ([RoleEntry]): An optional array of the customer’s roles in this group, one for each of your products that the group provides access to. This array is present for a group with a [`groupType`](./groupentry/grouptype.md) of `ORGANIZATION`, and absent for a group with a `groupType` of `CONSUMER`.
+- `roles` ([RoleEntry]): An optional array of the customer’s roles in this group, one for each of your products that the group provides access to. This array is present for a group with a `groupType` of `ORGANIZATION`, and absent for a group with a `groupType` of `CONSUMER`.
 
 ## See Also
 

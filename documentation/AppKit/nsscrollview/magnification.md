@@ -25,7 +25,7 @@ To animate the magnification, use the object’s animator. The default value is 
 
 ## See Also
 
-### Zooming the Scroll View
+### Zooming the scroll view
 - [var allowsMagnification: Bool](./allowsmagnification.md)
   Allows the user to magnify the scroll view.
 - [func magnify(toFit: NSRect)](./magnify%28tofit%29.md)

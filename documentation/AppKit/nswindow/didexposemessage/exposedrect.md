@@ -13,6 +13,11 @@
 var exposedRect: NSRect
 ```
 
+## See Also
+
+### Getting the message’s values
+- [var window: NSWindow](./window.md)
+
 
 ---
 

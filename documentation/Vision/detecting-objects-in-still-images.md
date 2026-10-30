@@ -79,11 +79,11 @@ DispatchQueue.global(qos: .userInitiated).async {
 
 ### Interpret Detection Results
 
-The method [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its [results](./vnrequest/api-2867238-results.md) property contains observation or tracking data, such as a detected object’s location and bounding box.
+The method [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its results property contains observation or tracking data, such as a detected object’s location and bounding box.
 
 You can access results in two ways:
 
-- Check the [`results`](./vnrequest/api-2867238-results.md) property after calling [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md).
+- Check the `results` property after calling [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md).
 - In the [VNImageBasedRequest](./vnimagebasedrequest.md) object’s completion handler, use the callback’s observation parameter to retrieve detection information.  The callback results may contain multiple observations, so loop through the observations array to process each one.
 
 For example, the sample uses facial observations and their landmarks’ bounding boxes to locate the features and draw a rectangle around them.

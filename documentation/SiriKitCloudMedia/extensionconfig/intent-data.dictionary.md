@@ -33,7 +33,7 @@ object ExtensionConfig.Intent
 - `hdr` (ExtensionConfig.Intent.Hdr): Headers to include with requests to intent endpoints.
 - `addMedia` (ExtensionConfig.Intent.AddMedia): Details specific to [`Process an Add Media Intent`](../addmedia.md).
 - `playMedia` (ExtensionConfig.Intent.PlayMedia) *(required)*: Details specific to [`Process a Play Media Intent`](../playmedia-1g2o9.md).
-- `updateMediaAffinity` (ExtensionConfig.Intent.UpdateMediaAffinity): Details specific to [`updateMediaAffinity`](./intent-data.dictionary/updatemediaaffinity-data.dictionarykey.md).
+- `updateMediaAffinity` (ExtensionConfig.Intent.UpdateMediaAffinity): Details specific to `updateMediaAffinity`.
 
 ## See Also
 

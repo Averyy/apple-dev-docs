@@ -9,7 +9,7 @@ framework: "mlx-swift-lm/MLXLLM"
 **Kind**: property  
 **Role**: Instance Property
 
-Inherited from `ChatConventionsProviding.reasoningConfig`.
+Nemotron 3 and 3.5 templates open `<think>` in the generation prompt unless `enable_thinking` is false. Their tokenizers don’t mark `<think>` as special.
 
 ## Declaration
 

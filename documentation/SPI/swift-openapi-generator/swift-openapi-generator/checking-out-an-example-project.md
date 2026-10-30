@@ -78,7 +78,7 @@ If you can’t even use the command plugin, for example because your package is 
 
 ### Talks
 
-- [FOSDEM 2025: Streaming ChatGPT Proxy with Swift OpenAPI](./streaming-chatgpt-proxy.md) - A tailored API server, backed by ChatGPT, and client CLI, with end-to-end streaming.
+- FOSDEM 2025: Streaming ChatGPT Proxy with Swift OpenAPI - A tailored API server, backed by ChatGPT, and client CLI, with end-to-end streaming.
 
 ## See Also
 

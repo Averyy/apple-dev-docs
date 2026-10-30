@@ -7,7 +7,7 @@
 The data structure that represents device management services in organizations.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

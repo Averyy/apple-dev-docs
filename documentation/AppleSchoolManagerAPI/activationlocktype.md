@@ -7,7 +7,7 @@
 Strings that represent the type of Activation Lock on a device.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

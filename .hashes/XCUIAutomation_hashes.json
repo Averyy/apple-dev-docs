@@ -1922,7 +1922,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremote/button": {
       "file_path": "documentation/XCUIAutomation/xcuiremote/button.md",
-      "hash": "aed56539bceaef09869bd6e238d6f8bb97bcba6a23b5349b8bf7f5111739f864"
+      "hash": "f5dc5b3e3e8ed4407f5e24cd259f57499fbf17ff77ee333a71427435ce451864"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremote/press(_:)": {
       "file_path": "documentation/XCUIAutomation/xcuiremote/press(_).md",
@@ -4070,7 +4070,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremote/button.json": {
       "file_path": "documentation/XCUIAutomation/xcuiremote/button.md",
-      "hash": "aed56539bceaef09869bd6e238d6f8bb97bcba6a23b5349b8bf7f5111739f864"
+      "hash": "f5dc5b3e3e8ed4407f5e24cd259f57499fbf17ff77ee333a71427435ce451864"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremote/press(_:).json": {
       "file_path": "documentation/XCUIAutomation/xcuiremote/press(_).md",

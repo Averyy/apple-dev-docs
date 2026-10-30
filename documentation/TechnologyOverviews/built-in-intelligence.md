@@ -26,7 +26,7 @@ To detect and prevent people from viewing unwanted image content in your app, [p
 
 ## Recognize speech and audio content
 
-Speech recognition transforms spoken words into text to help you with things like dictating notes in a note-taking app, or using voice commands to control a smart thermostat. [Convert human speech](../Speech/bringing-advanced-speech-to-text-capabilities-to-your-app.md) into text with very little code, and entirely on device using the [Speech](./documentation/speech.md) framework. Use this framework with audio from prerecorded files or from a live source like a microphone. [Analyze](../Speech/speechanalyzer.md) the speech you capture to predict the text that matches the audio.
+Speech recognition transforms spoken words into text to help you with things like dictating notes in a note-taking app, or using voice commands to control a smart thermostat. [Convert human speech](../Speech/bringing-advanced-speech-to-text-capabilities-to-your-app.md) into text with very little code, and entirely on device using the Speech framework. Use this framework with audio from prerecorded files or from a live source like a microphone. [Analyze](../Speech/speechanalyzer.md) the speech you capture to predict the text that matches the audio.
 
 Apps that work with songs or other types of audio can perform acoustic matching using the [ShazamKit](../ShazamKit/ShazamKit.md) framework. Acoustic matching helps you identify audio from pieces you capture from the person’s environment. The framework matches your audio against Shazam’s vast music catalog or a custom catalog of your own prerecorded reference audio.
 

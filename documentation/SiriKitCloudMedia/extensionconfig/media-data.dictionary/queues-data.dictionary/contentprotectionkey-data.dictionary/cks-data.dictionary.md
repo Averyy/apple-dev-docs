@@ -17,7 +17,7 @@ object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks
 
 ## Properties
 
-- `certUrl` (string): The URL of the certicate the client must use to sign requests to the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](../contentprotectionkey-data.dictionarykey.md).
+- `certUrl` (string): The URL of the certicate the client must use to sign requests to the `contentProtectionKey` endpoint. For more information, see `contentProtectionKey`.
 
   **Maximum Length**: `4000`
 - `keySystem` (ContentProtectionKeySystem) *(required)*: The content’s encryption type. The only supported value is `ContentKeySystemFairPlayStreaming`.

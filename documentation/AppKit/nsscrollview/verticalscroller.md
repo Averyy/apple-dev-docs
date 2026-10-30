@@ -27,7 +27,7 @@ You can access the vertical scroller using this property even if the scroll view
 
 ## See Also
 
-### Managing Scrollers
+### Managing scrollers
 - [var horizontalScroller: NSScroller?](./horizontalscroller.md)
   The scroll view’s horizontal scroller.
 - [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)

@@ -2556,6 +2556,10 @@
       "file_path": "documentation/CoreData/nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md",
       "hash": "fc866fe7ae5962d12c141960d10c66fbf8c4c73e256586099451e893b5cd9bf5"
     },
+    "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextdidmergechangesobjectidsnotification": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidmergechangesobjectidsnotification.md",
+      "hash": "fd13071d517f69d9db937a150214d1490f9066871261c661332c300a750bb9d8"
+    },
     "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextdidsavenotification": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsavenotification.md",
       "hash": "1eac0578d64d48edbd7ea42b178dc91c81705f3d563fb0e027f6890c7285c1f9"
@@ -2575,6 +2579,10 @@
     "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextquerygenerationkey.md",
       "hash": "b238ba094d70bcaed5d41a04ff13f8afff273673a994c0cc345e6fbfb0dd3706"
+    },
+    "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextwillsavenotification": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextwillsavenotification.md",
+      "hash": "72f9f652c760d94ec485c0d5d5c49b4046780e6687a2194946905e8e985df7da"
     },
     "https://developer.apple.com/documentation/coredata/nsmanagedobjectexternalrelationshiperror": {
       "file_path": "documentation/CoreData/nsmanagedobjectexternalrelationshiperror.md",
@@ -7244,6 +7252,10 @@
       "file_path": "documentation/CoreData/nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md",
       "hash": "fc866fe7ae5962d12c141960d10c66fbf8c4c73e256586099451e893b5cd9bf5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidmergechangesobjectidsnotification.json": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidmergechangesobjectidsnotification.md",
+      "hash": "fd13071d517f69d9db937a150214d1490f9066871261c661332c300a750bb9d8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidsavenotification.json": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsavenotification.md",
       "hash": "1eac0578d64d48edbd7ea42b178dc91c81705f3d563fb0e027f6890c7285c1f9"
@@ -7263,6 +7275,10 @@
     "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextquerygenerationkey.json": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextquerygenerationkey.md",
       "hash": "b238ba094d70bcaed5d41a04ff13f8afff273673a994c0cc345e6fbfb0dd3706"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextwillsavenotification.json": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextwillsavenotification.md",
+      "hash": "72f9f652c760d94ec485c0d5d5c49b4046780e6687a2194946905e8e985df7da"
     },
     "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectexternalrelationshiperror.json": {
       "file_path": "documentation/CoreData/nsmanagedobjectexternalrelationshiperror.md",
@@ -9408,6 +9424,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 2344
+    "total_pages": 2348
   }
 }

@@ -25506,11 +25506,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/metalperformanceshaders/media-2903539"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpscnnneuronelu.json": [
+        "https://developer.apple.com/documentation/metalperformanceshaders/media-2903539"
+      ]
     },
     "total_pages": 6376
   }

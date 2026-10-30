@@ -11,7 +11,7 @@ With very little programming on your part, custom-view objects can be dragged an
 
 > **Note**:  To learn how to adopt drag and drop in your iOS app, see [Drag and drop](../UIKit/drag-and-drop.md).
 
-To learn how to use drag and drop for an image view, see [Supporting Drag and Drop Through File Promises](./supporting-drag-and-drop-through-file-promises.md). To use drag and drop in a table view, see [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md). For an example of drag and drop in a collection view, see [Supporting Collection View Drag and Drop Through File Promises](./supporting-collection-view-drag-and-drop-through-file-promises.md), and for an outline view: [Navigating Hierarchical Data Using Outline and Split Views](./navigating-hierarchical-data-using-outline-and-split-views.md).
+To learn how to use drag and drop for an image view, see [Supporting drag and drop through file promises](./supporting-drag-and-drop-through-file-promises.md). To use drag and drop in a table view, see [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md). For an example of drag and drop in a collection view, see [Supporting Collection View Drag and Drop Through File Promises](./supporting-collection-view-drag-and-drop-through-file-promises.md), and for an outline view: [Navigating Hierarchical Data Using Outline and Split Views](./navigating-hierarchical-data-using-outline-and-split-views.md).
 
 ## Topics
 

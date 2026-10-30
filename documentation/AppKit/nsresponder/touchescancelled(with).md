@@ -23,6 +23,8 @@ func touchesCancelled(with event: NSEvent)
 
 The event will be sent to the view under the touch in the key window.
 
+> ❗ **Important**: AppKit calls this method for indirect touches, such as those from a trackpad (and only if the view explicitly requests them). It doesn’t call this method for direct touches on a Sidecar-connected display or a Mac with a touch display. To handle touch input consistently across input types, use a [`NSGestureRecognizer`](../nsgesturerecognizer.md) instead of overriding this method. For more information, see [Handling AppKit gestures](../handling-appkit-gestures.md).
+
 ## Parameters
 
 - `event`: An event object representing the cancellation of a touch event.

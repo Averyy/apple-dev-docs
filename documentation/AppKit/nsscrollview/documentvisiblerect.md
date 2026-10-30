@@ -26,7 +26,7 @@ var documentVisibleRect: NSRect { get }
   The exposed rectangle of the clip view’s document view, in the document view’s own coordinate system.
 - [var visibleRect: NSRect](../nsview/visiblerect.md)
   The portion of the view that isn’t clipped by its superviews.
-### Determining Component Sizes
+### Determining component sizes
 - [var contentSize: NSSize](./contentsize.md)
   The size of the scroll view’s content view.
 

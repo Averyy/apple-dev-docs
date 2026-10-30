@@ -50962,11 +50962,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/backgroundassets/downloading-asset-packs-hosted-by-apple"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/background-assets.json": [
+        "https://developer.apple.com/documentation/backgroundassets/downloading-asset-packs-hosted-by-apple"
+      ]
     },
     "total_pages": 12740
   }

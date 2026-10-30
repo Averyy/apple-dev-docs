@@ -7,7 +7,7 @@
 Strings that represent the type of entity that was affected by an action.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 
@@ -26,6 +26,9 @@ string AuditEventSubjectType
 - `SUBSCRIPTION`
 - `DOMAIN`
 - `API_USER`
+- `ROLE`
+- `IDP`
+- `INVITATION`
 
 ## Discussion
 

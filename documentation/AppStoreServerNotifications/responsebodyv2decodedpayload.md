@@ -76,7 +76,7 @@ The payload can contain only one of the following four fields:
 - `externalPurchaseToken` (externalPurchaseToken): This field appears when the `notificationType` is `EXTERNAL_PURCHASE_TOKEN`.
 
   The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
-- `appData` (appData): The object that contains the app metadata and signed app transaction information. This field appears when the [`notificationType`](./responsebodyv2decodedpayload/notificationtype.md) is `RESCIND_CONSENT`.
+- `appData` (appData): The object that contains the app metadata and signed app transaction information. This field appears when the `notificationType` is `RESCIND_CONSENT`.
 
   The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
 - `version` (version): The App Store Server Notification version number, `"2.0"`.

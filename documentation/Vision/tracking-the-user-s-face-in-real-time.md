@@ -35,7 +35,7 @@ Most of this code is boilerplate setup that enables you to handle video input pr
 
 ### Parse Face Detection Results
 
-You can provide a completion handler for a Vision request handler to execute when it finishes. The completion handler indicates whether the request succeeded or resulted in an error. If the request succeeded, its [results](./vnrequest/api-2867238-results.md) property contains data specific to the type of request that you can use to identify the object’s location and bounding box.
+You can provide a completion handler for a Vision request handler to execute when it finishes. The completion handler indicates whether the request succeeded or resulted in an error. If the request succeeded, its results property contains data specific to the type of request that you can use to identify the object’s location and bounding box.
 
 For face rectangle requests, the [VNFaceObservation](./vnfaceobservation.md) provided via callback includes a bounding box for each detected face. The sample uses this bounding box to draw paths around each of the detected face landmarks on top of the preview image.
 

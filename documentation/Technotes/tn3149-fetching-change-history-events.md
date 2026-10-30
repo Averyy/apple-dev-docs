@@ -115,7 +115,7 @@ fetchRequest.excludedTransactionAuthors = @[@"com.mycompany.myappname"];
 
 ## Execute the change history fetch request
 
-Call [enumeratorForChangeHistoryFetchRequest:error:](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) on an instance of [CNContactStore](../Contacts/cncontactstore.md) to execute the change history fetch request. Pass the created [`CNChangeHistoryFetchRequest`](../Contacts/cnchangehistoryfetchrequest.md) object and a [NSError](../Foundation/nserror.md) object to the call.
+Call enumeratorForChangeHistoryFetchRequest:error: on an instance of [CNContactStore](../Contacts/cncontactstore.md) to execute the change history fetch request. Pass the created [`CNChangeHistoryFetchRequest`](../Contacts/cnchangehistoryfetchrequest.md) object and a [NSError](../Foundation/nserror.md) object to the call.
 
 ```objc
 NSError *error = nil;
@@ -123,7 +123,7 @@ NSError *error = nil;
 CNFetchResult<NSEnumerator<CNChangeHistoryEvent *> *> *fetchResult = [self.store enumeratorForChangeHistoryFetchRequest:fetchRequest error:&error];
 ```
 
-If the fetch request succeeds, [`enumeratorForChangeHistoryFetchRequest:error:`](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) returns a [CNFetchResult](../Contacts/cnfetchresult.md) object. Process the change history events returned in the [value](../Contacts/cnfetchresult/value.md) property of [`CNFetchResult`](../Contacts/cnfetchresult.md). If the fetch request fails, [`enumeratorForChangeHistoryFetchRequest:error:`](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) returns `nil`.
+If the fetch request succeeds, `enumeratorForChangeHistoryFetchRequest:error:` returns a [CNFetchResult](../Contacts/cnfetchresult.md) object. Process the change history events returned in the [value](../Contacts/cnfetchresult/value.md) property of [`CNFetchResult`](../Contacts/cnfetchresult.md). If the fetch request fails, `enumeratorForChangeHistoryFetchRequest:error:` returns `nil`.
 
 ## Process a change history event
 

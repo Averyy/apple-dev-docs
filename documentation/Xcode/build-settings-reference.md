@@ -1080,7 +1080,7 @@ Space-separated list of preprocessor macros of the form `foo` or `foo=bar`. Thes
 
 Enabling this setting creates a section called `__info_plist` in the `__TEXT` segment of the product’s linked binary containing the processed `Info.plist` file for the target.
 
-You can read the processed `Info.plist` file from the linked binary at runtime using the [CFBundle](../CoreFoundation/cfbundle.md) and [NSBundle](../Foundation/nsbundle.md) (Objective-C) or [Bundle](../Foundation/nsbundle.md) (Swift) APIs. To print the processed `Info.plist` file, use the `plutil(1)` command-line utility.
+You can read the processed `Info.plist` file from the linked binary at runtime using the [CFBundle](../CoreFoundation/cfbundle.md) and NSBundle (Objective-C) or Bundle (Swift) APIs. To print the processed `Info.plist` file, use the `plutil(1)` command-line utility.
 
 This setting only applies to command-line tool targets.
 

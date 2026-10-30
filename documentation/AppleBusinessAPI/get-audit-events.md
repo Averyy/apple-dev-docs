@@ -7,7 +7,7 @@
 Get a list of audit events in an organization that satisfies the query criteria.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ### Example
 

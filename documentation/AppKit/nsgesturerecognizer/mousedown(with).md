@@ -19,6 +19,11 @@ func mouseDown(with event: NSEvent)
 - (void) mouseDown:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## Discussion
 
 The default implementation of this method does nothing. Use this method to start tracking the gesture in whatever way is appropriate.

@@ -818,11 +818,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://docs.swift.org/latest/documentation/packagemanagerdocs/registry.openapi.yaml"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/registryserverspecification.json": [
+        "https://docs.swift.org/latest/documentation/packagemanagerdocs/registry.openapi.yaml"
+      ]
     },
     "total_pages": 204
   }

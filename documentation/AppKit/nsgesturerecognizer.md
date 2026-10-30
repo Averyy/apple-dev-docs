@@ -20,6 +20,11 @@ class NSGestureRecognizer
 @interface NSGestureRecognizer : NSObject
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](./handling-appkit-gestures.md)
+
 ## Overview
 
 A gesture recognizer might recognize a single click, a click and drag, or a sequence of events that imply rotation. You do not create instances of this class directly. This class is an abstract base class that defines the common behavior for all gesture recognizers. When using a gesture recognizer in your app, create an instance of one of the concrete subclasses.
@@ -183,6 +188,7 @@ For more information about using the delegate to control the behavior of your ge
 - [init?(coder: NSCoder)](./nsgesturerecognizer/init%28coder%29.md)
 ### Getting additional recognizer information
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](./nsgesturerecognizer/allowedtouchtypes.md)
+  The touch types that this gesture recognizer accepts.
 - [var isCancellableByScrollGesture: Bool](./nsgesturerecognizer/iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 - [var modifierFlags: NSEvent.ModifierFlags](./nsgesturerecognizer/modifierflags.md)
@@ -221,7 +227,7 @@ For more information about using the delegate to control the behavior of your ge
 
 ## See Also
 
-### Custom Gestures
+### Custom gestures
 - [protocol NSGestureRecognizerDelegate](./nsgesturerecognizerdelegate.md)
   A set of methods for fine-tuning a gesture recognizer’s behavior.
 

@@ -7,7 +7,7 @@
 A response that contains a list of Blueprint resources.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

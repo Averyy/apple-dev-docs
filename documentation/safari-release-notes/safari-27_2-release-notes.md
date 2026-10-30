@@ -1,13 +1,13 @@
-# Safari 27.2 Beta Release Notes
+# Safari 27.2 Release Notes
 
 **Framework**: Safari Release Notes  
 **Role**: Article
 
-Released October 13, 2026 — 27.2 beta (20625.2.8)
+Released October 26, 2026 — 27.2 (20625.2.8)
 
 ## Overview
 
-Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2 beta, macOS 27.2 beta, macOS 26, and macOS Sequoia.
+Safari 27.2 is available for iOS 27.2, iPadOS 27.2, visionOS 27.2, macOS 27.2, macOS 26, and macOS Sequoia.
 
 ### Accessibility
 
@@ -111,6 +111,8 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 ## See Also
 
 ### Version 27
+- [Safari 27.1 Release Notes](./safari-27_1-release-notes.md)
+  Released October 23, 2026 — 27.1 (20625.1.29)
 - [Safari 27 Release Notes](./safari-27-release-notes.md)
   Released September 14, 2026 — 27.0 (20625.1.29)
 

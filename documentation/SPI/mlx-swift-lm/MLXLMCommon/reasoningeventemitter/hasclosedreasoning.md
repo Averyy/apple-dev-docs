@@ -9,7 +9,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 **Kind**: property  
 **Role**: Instance Property
 
-True once a canonical or implicit end boundary has been observed, i.e. a reasoning span has closed at least once. Unlike [`isInsideReasoning`](./isinsidereasoning.md), this latches — so a caller (e.g. a think-then-call token collector) can detect a close even when an empty `<think></think>` resolves within a single [`process(_:)`](./process%28_%29.md) call, where sampling [`isInsideReasoning`](./isinsidereasoning.md) afterward reads `false` both before and after and the transient open is invisible.
+True once a canonical or implicit end boundary has closed a *reasoning* span. Unlike [`isInsideReasoning`](./isinsidereasoning.md), this latches - so a caller (e.g. a think-then-call token collector) can detect a close even when an empty `<think></think>` resolves within a single [`process(_:)`](./process%28_%29.md) call, where sampling [`isInsideReasoning`](./isinsidereasoning.md) afterward reads `false` both before and after and the transient open is invisible.
 
 ## Declaration
 

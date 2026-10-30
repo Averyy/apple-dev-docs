@@ -135,10 +135,16 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
   A Boolean value that indicates whether the window has ever run as a modal sheet.
 - [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./nswindow/beginsheet%28_,completionhandler%29.md)
   Starts a document-modal session and presents—or queues for presentation—a sheet.
+- [func beginSheet<V>(content: () -> V, completionHandler: (() -> Void)?) -> NSWindow.HostingSheetRepresentation<V>](./nswindow/beginsheet%28content,completionhandler%29.md)
+  Presents a SwiftUI view as a sheet on the receiving NSWindow.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./nswindow/begincriticalsheet%28_,completionhandler%29.md)
   Starts a document-modal session and presents the specified critical sheet.
 - [func endSheet(NSWindow)](./nswindow/endsheet%28_%29-4dmmq.md)
   Ends a document-modal session and dismisses the specified sheet.
+- [func endSheet<V>(NSWindow.HostingSheetRepresentation<V>)](./nswindow/endsheet%28_%29-6af2u.md)
+  Ends a SwiftUI hosted sheet presentation.
+- [NSWindow.HostingSheetRepresentation](./nswindow/hostingsheetrepresentation.md)
+  A class representing a SwiftUI view hosted in an AppKit sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](./nswindow/endsheet%28_,returncode%29.md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](./nswindow/sheetparent.md)
@@ -156,6 +162,7 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
   Modifies and returns a frame rectangle so that its top edge lies on a specific screen.
 - [func cascadeTopLeft(from: NSPoint) -> NSPoint](./nswindow/cascadetopleft%28from%29.md)
   Positions the window’s top-left to a given point.
+- [var cascadingReferenceFrame: NSRect](./nswindow/cascadingreferenceframe.md)
 - [func setFrame(NSRect, display: Bool)](./nswindow/setframe%28_,display%29.md)
   Sets the origin and size of the window’s frame rectangle according to a given frame rectangle, thereby setting its position and size onscreen.
 - [func setFrame(NSRect, display: Bool, animate: Bool)](./nswindow/setframe%28_,display,animate%29.md)
@@ -412,6 +419,8 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
   Attempts to move window sharing (within a SharePlay session) from this window to another window.
 - [var hasActiveWindowSharingSession: Bool](./nswindow/hasactivewindowsharingsession.md)
   Indicates whether the receiver is the subject of an active SharePlay sharing session.
+- [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](./nswindow/requestsharingofwindow%28_,completionhandler%29.md)
+- [func requestSharingOfWindow(usingPreview: NSImage, title: String, completionHandler: ((any Error)?) -> Void)](./nswindow/requestsharingofwindow%28usingpreview,title,completionhandler%29.md)
 ### Handling Mouse Events
 - [var acceptsMouseMovedEvents: Bool](./nswindow/acceptsmousemovedevents.md)
   A Boolean value that indicates whether the window accepts mouse-moved events.
@@ -452,6 +461,7 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
 - [func update()](./nswindow/update%28%29.md)
   Updates the window.
 ### Dragging Items
+- [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./nswindow/begindraggingsession%28items,event,source%29.md)
 - [func registerForDraggedTypes([NSPasteboard.PasteboardType])](./nswindow/registerfordraggedtypes%28_%29.md)
   Registers a set of pasteboard types that the window accepts as the destination of an image-dragging session.
 - [func unregisterDraggedTypes()](./nswindow/unregisterdraggedtypes%28%29.md)
@@ -639,108 +649,123 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
 ### Notifications
 - [class let didBecomeKeyNotification: NSNotification.Name](./nswindow/didbecomekeynotification.md)
   A notification that the window object became the key window.
+- [NSWindow.DidBecomeKeyMessage](./nswindow/didbecomekeymessage.md)
+  A message that reports that the window object became the key window.
 - [class let didBecomeMainNotification: NSNotification.Name](./nswindow/didbecomemainnotification.md)
   A notification that the window object became the main window.
+- [NSWindow.DidBecomeMainMessage](./nswindow/didbecomemainmessage.md)
+  A message that reports that the window object became the main window.
 - [class let didChangeScreenNotification: NSNotification.Name](./nswindow/didchangescreennotification.md)
   A notification that a portion of the window object’s frame moved onto or off of a screen.
+- [NSWindow.DidChangeScreenMessage](./nswindow/didchangescreenmessage.md)
+  A message that reports that a portion of the window object’s frame moved onto or off of a screen.
 - [class let didChangeScreenProfileNotification: NSNotification.Name](./nswindow/didchangescreenprofilenotification.md)
   A notification that the screen containing the window changed.
+- [NSWindow.DidChangeScreenProfileMessage](./nswindow/didchangescreenprofilemessage.md)
+  A message that reports that the screen containing the window changed.
 - [class let didDeminiaturizeNotification: NSNotification.Name](./nswindow/diddeminiaturizenotification.md)
   A notification that the window is no longer minimized.
+- [NSWindow.DidDeminiaturizeMessage](./nswindow/diddeminiaturizemessage.md)
+  A message that reports that the window is no longer minimized.
 - [class let didEndSheetNotification: NSNotification.Name](./nswindow/didendsheetnotification.md)
   A notification that the window object closed an attached sheet.
+- [NSWindow.DidEndSheetMessage](./nswindow/didendsheetmessage.md)
+  A message that reports that the window object closed an attached sheet.
 - [class let didEndLiveResizeNotification: NSNotification.Name](./nswindow/didendliveresizenotification.md)
   A notification that the user resized the window object.
+- [NSWindow.DidEndLiveResizeMessage](./nswindow/didendliveresizemessage.md)
+  A message that reports that a person resized the window object.
 - [class let didExposeNotification: NSNotification.Name](./nswindow/didexposenotification.md)
   A notification that a window exposed a portion of its nonretained content.
+- [NSWindow.DidExposeMessage](./nswindow/didexposemessage.md)
+  A message that reports that a window exposed a portion of its nonretained content.
 - [class let didMiniaturizeNotification: NSNotification.Name](./nswindow/didminiaturizenotification.md)
   A notification that the window object minimized.
+- [NSWindow.DidMiniaturizeMessage](./nswindow/didminiaturizemessage.md)
+  A message that reports that the window object minimized.
 - [class let didMoveNotification: NSNotification.Name](./nswindow/didmovenotification.md)
   A notification that the window object moved.
+- [NSWindow.DidMoveMessage](./nswindow/didmovemessage.md)
+  A message that reports that the window object moved.
 - [class let didResignKeyNotification: NSNotification.Name](./nswindow/didresignkeynotification.md)
   A notification that the window object resigned its status as key window.
+- [NSWindow.DidResignKeyMessage](./nswindow/didresignkeymessage.md)
+  A message that reports that the window object resigned its status as key window.
 - [class let didResignMainNotification: NSNotification.Name](./nswindow/didresignmainnotification.md)
   A notification that the window object resigned its status as main window.
+- [NSWindow.DidResignMainMessage](./nswindow/didresignmainmessage.md)
+  A message that reports that the window object resigned its status as main window.
 - [class let didResizeNotification: NSNotification.Name](./nswindow/didresizenotification.md)
   A notification that the window object size changed.
+- [NSWindow.DidResizeMessage](./nswindow/didresizemessage.md)
+  A message that reports that the window object’s size changed.
 - [class let didUpdateNotification: NSNotification.Name](./nswindow/didupdatenotification.md)
   A notification that the window object received an update message.
+- [NSWindow.DidUpdateMessage](./nswindow/didupdatemessage.md)
+  A message that reports that the window object received an update message.
 - [class let willBeginSheetNotification: NSNotification.Name](./nswindow/willbeginsheetnotification.md)
   A notification that the window object is about to open a sheet.
+- [NSWindow.WillBeginSheetMessage](./nswindow/willbeginsheetmessage.md)
+  A message that reports that the window object is about to open a sheet.
 - [class let willCloseNotification: NSNotification.Name](./nswindow/willclosenotification.md)
   A notification that the window object is about to close.
+- [NSWindow.WillCloseMessage](./nswindow/willclosemessage.md)
+  A message that reports that the window object is about to close.
 - [class let willMiniaturizeNotification: NSNotification.Name](./nswindow/willminiaturizenotification.md)
   A notification that the window object is about to minimize.
+- [NSWindow.WillMiniaturizeMessage](./nswindow/willminiaturizemessage.md)
+  A message that reports that the window object is about to minimize.
 - [class let willMoveNotification: NSNotification.Name](./nswindow/willmovenotification.md)
   A notification that the window object is about to move.
+- [NSWindow.WillMoveMessage](./nswindow/willmovemessage.md)
+  A message that reports that the window object is about to move.
 - [class let willStartLiveResizeNotification: NSNotification.Name](./nswindow/willstartliveresizenotification.md)
   A notification that the user is about to resize the window.
+- [NSWindow.WillStartLiveResizeMessage](./nswindow/willstartliveresizemessage.md)
+  A message that reports that a person is about to resize the window.
 - [class let willEnterFullScreenNotification: NSNotification.Name](./nswindow/willenterfullscreennotification.md)
   A notification that the window will enter full-screen mode.
+- [NSWindow.WillEnterFullScreenMessage](./nswindow/willenterfullscreenmessage.md)
+  A message that reports that the window is about to enter full-screen mode.
 - [class let didEnterFullScreenNotification: NSNotification.Name](./nswindow/didenterfullscreennotification.md)
   A notification that the window entered full-screen mode.
+- [NSWindow.DidEnterFullScreenMessage](./nswindow/didenterfullscreenmessage.md)
+  A message that reports that the window entered full-screen mode.
 - [class let willExitFullScreenNotification: NSNotification.Name](./nswindow/willexitfullscreennotification.md)
   A notification that the window object will exit full-screen mode.
+- [NSWindow.WillExitFullScreenMessage](./nswindow/willexitfullscreenmessage.md)
+  A message that reports that the window object is about to exit full-screen mode.
 - [class let didExitFullScreenNotification: NSNotification.Name](./nswindow/didexitfullscreennotification.md)
   A notification that the window object exited full-screen mode.
+- [NSWindow.DidExitFullScreenMessage](./nswindow/didexitfullscreenmessage.md)
+  A message that reports that the window object exited full-screen mode.
 - [class let willEnterVersionBrowserNotification: NSNotification.Name](./nswindow/willenterversionbrowsernotification.md)
   A notification that the window object will enter version browser mode.
+- [NSWindow.WillEnterVersionBrowserMessage](./nswindow/willenterversionbrowsermessage.md)
+  A message that reports that the window object is about to enter version browser mode.
 - [class let didEnterVersionBrowserNotification: NSNotification.Name](./nswindow/didenterversionbrowsernotification.md)
   A notification that the window object entered version browser mode.
+- [NSWindow.DidEnterVersionBrowserMessage](./nswindow/didenterversionbrowsermessage.md)
+  A message that reports that the window object entered version browser mode.
 - [class let willExitVersionBrowserNotification: NSNotification.Name](./nswindow/willexitversionbrowsernotification.md)
   A notification that the window object will exit version browser mode.
+- [NSWindow.WillExitVersionBrowserMessage](./nswindow/willexitversionbrowsermessage.md)
+  A message that reports that the window object is about to exit version browser mode.
 - [class let didExitVersionBrowserNotification: NSNotification.Name](./nswindow/didexitversionbrowsernotification.md)
   A notification that the window object exited version browser mode.
+- [NSWindow.DidExitVersionBrowserMessage](./nswindow/didexitversionbrowsermessage.md)
+  A message that reports that the window object exited version browser mode.
 - [class let didChangeBackingPropertiesNotification: NSNotification.Name](./nswindow/didchangebackingpropertiesnotification.md)
   A notification that the window object backing properties changed.
+- [NSWindow.DidChangeBackingPropertiesMessage](./nswindow/didchangebackingpropertiesmessage.md)
+  A message that reports that the window object’s backing properties changed.
 - [class let didChangeOcclusionStateNotification: NSNotification.Name](./nswindow/didchangeocclusionstatenotification.md)
   A notification that the window object’s occlusion state changed.
+- [NSWindow.DidChangeOcclusionStateMessage](./nswindow/didchangeocclusionstatemessage.md)
+  A message that reports that the window object’s occlusion state changed.
 ### Deprecated
 - [Deprecated symbols](./nswindow-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
-### Classes
-- [NSWindow.HostingSheetRepresentation](./nswindow/hostingsheetrepresentation.md)
-  A class representing a SwiftUI view hosted in an AppKit sheet.
-### Structures
-- [NSWindow.DidBecomeKeyMessage](./nswindow/didbecomekeymessage.md)
-- [NSWindow.DidBecomeMainMessage](./nswindow/didbecomemainmessage.md)
-- [NSWindow.DidChangeBackingPropertiesMessage](./nswindow/didchangebackingpropertiesmessage.md)
-- [NSWindow.DidChangeOcclusionStateMessage](./nswindow/didchangeocclusionstatemessage.md)
-- [NSWindow.DidChangeScreenMessage](./nswindow/didchangescreenmessage.md)
-- [NSWindow.DidChangeScreenProfileMessage](./nswindow/didchangescreenprofilemessage.md)
-- [NSWindow.DidDeminiaturizeMessage](./nswindow/diddeminiaturizemessage.md)
-- [NSWindow.DidEndLiveResizeMessage](./nswindow/didendliveresizemessage.md)
-- [NSWindow.DidEndSheetMessage](./nswindow/didendsheetmessage.md)
-- [NSWindow.DidEnterFullScreenMessage](./nswindow/didenterfullscreenmessage.md)
-- [NSWindow.DidEnterVersionBrowserMessage](./nswindow/didenterversionbrowsermessage.md)
-- [NSWindow.DidExitFullScreenMessage](./nswindow/didexitfullscreenmessage.md)
-- [NSWindow.DidExitVersionBrowserMessage](./nswindow/didexitversionbrowsermessage.md)
-- [NSWindow.DidExposeMessage](./nswindow/didexposemessage.md)
-- [NSWindow.DidMiniaturizeMessage](./nswindow/didminiaturizemessage.md)
-- [NSWindow.DidMoveMessage](./nswindow/didmovemessage.md)
-- [NSWindow.DidResignKeyMessage](./nswindow/didresignkeymessage.md)
-- [NSWindow.DidResignMainMessage](./nswindow/didresignmainmessage.md)
-- [NSWindow.DidResizeMessage](./nswindow/didresizemessage.md)
-- [NSWindow.DidUpdateMessage](./nswindow/didupdatemessage.md)
-- [NSWindow.WillBeginSheetMessage](./nswindow/willbeginsheetmessage.md)
-- [NSWindow.WillCloseMessage](./nswindow/willclosemessage.md)
-- [NSWindow.WillEnterFullScreenMessage](./nswindow/willenterfullscreenmessage.md)
-- [NSWindow.WillEnterVersionBrowserMessage](./nswindow/willenterversionbrowsermessage.md)
-- [NSWindow.WillExitFullScreenMessage](./nswindow/willexitfullscreenmessage.md)
-- [NSWindow.WillExitVersionBrowserMessage](./nswindow/willexitversionbrowsermessage.md)
-- [NSWindow.WillMiniaturizeMessage](./nswindow/willminiaturizemessage.md)
-- [NSWindow.WillMoveMessage](./nswindow/willmovemessage.md)
-- [NSWindow.WillStartLiveResizeMessage](./nswindow/willstartliveresizemessage.md)
-### Instance Properties
-- [var cascadingReferenceFrame: NSRect](./nswindow/cascadingreferenceframe.md)
-### Instance Methods
-- [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./nswindow/begindraggingsession%28items,event,source%29.md)
-- [func beginSheet<V>(content: () -> V, completionHandler: (() -> Void)?) -> NSWindow.HostingSheetRepresentation<V>](./nswindow/beginsheet%28content,completionhandler%29.md)
-  Presents a SwiftUI view as a sheet on the receiving NSWindow.
-- [func endSheet<V>(NSWindow.HostingSheetRepresentation<V>)](./nswindow/endsheet%28_%29-6af2u.md)
-  Ends a SwiftUI hosted sheet presentation.
-- [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](./nswindow/requestsharingofwindow%28_,completionhandler%29.md)
-- [func requestSharingOfWindow(usingPreview: NSImage, title: String, completionHandler: ((any Error)?) -> Void)](./nswindow/requestsharingofwindow%28usingpreview,title,completionhandler%29.md)
 
 ## Relationships
 

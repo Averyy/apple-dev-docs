@@ -13,6 +13,12 @@
 var window: NSWindow
 ```
 
+## See Also
+
+### Getting the message’s values
+- [var oldScaleFactor: CGFloat?](./oldscalefactor.md)
+- [var oldColorSpace: NSColorSpace?](./oldcolorspace.md)
+
 
 ---
 

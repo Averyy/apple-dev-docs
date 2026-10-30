@@ -21,7 +21,7 @@ var contentSize: NSSize { get }
 
 ## See Also
 
-### Determining Component Sizes
+### Determining component sizes
 - [var documentVisibleRect: NSRect](./documentvisiblerect.md)
   The portion of the document view, in its own coordinate system, visible through the scroll view’s content view.
 ### Related Documentation

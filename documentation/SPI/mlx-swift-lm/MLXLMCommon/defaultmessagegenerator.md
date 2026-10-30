@@ -9,7 +9,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 **Kind**: struct  
 **Role**: Structure
 
-Default implementation of [`MessageGenerator`](./messagegenerator.md) that produces `role` and `content`, plus `name`, `tool_call_id`, and `tool_calls` when present.
+Default implementation of [`MessageGenerator`](./messagegenerator.md) that produces `role` and `content`, plus `name`, `tool_call_id`, `tool_calls`, and `reasoning_content` when present.
 
 ## Declaration
 

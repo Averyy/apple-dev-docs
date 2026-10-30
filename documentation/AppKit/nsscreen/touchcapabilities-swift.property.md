@@ -17,6 +17,10 @@ var touchCapabilities: NSScreen.TouchCapabilities { get }
 @property (readonly) NSScreenTouchCapabilities touchCapabilities;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 
 ---
 

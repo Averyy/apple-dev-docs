@@ -19,6 +19,10 @@ var isCancellableByScrollGesture: Bool { get set }
 @property (getter=isCancellableByScrollGesture) BOOL cancellableByScrollGesture;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 Defaults to `false`.
@@ -27,6 +31,7 @@ Defaults to `false`.
 
 ### Getting additional recognizer information
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](./allowedtouchtypes.md)
+  The touch types that this gesture recognizer accepts.
 - [var modifierFlags: NSEvent.ModifierFlags](./modifierflags.md)
   The keyboard modifier flags in effect while the receiver last processed an event.
 - [var name: String?](./name.md)

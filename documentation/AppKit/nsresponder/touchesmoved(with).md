@@ -23,6 +23,8 @@ func touchesMoved(with event: NSEvent)
 
 The system sends the to the view under the touch in the key window. To get the set of touches that moved for this view (or descendants of this view) call [`touches(matching:in:)`](../nsevent/touches%28matching,in%29.md) on `event` and pass [`moved`](../nstouch/phase-swift.struct/moved.md) for the phase.
 
+> ❗ **Important**: AppKit calls this method for indirect touches, such as those from a trackpad (and only if the view explicitly requests them). It doesn’t call this method for direct touches on a Sidecar-connected display or a Mac with a touch display. To handle touch input consistently across input types, use a [`NSGestureRecognizer`](../nsgesturerecognizer.md) instead of overriding this method. For more information, see [Handling AppKit gestures](../handling-appkit-gestures.md).
+
 ## Parameters
 
 - `event`: An event object representing a touch movement.

@@ -7,7 +7,7 @@
 Create a new device management service in an organization.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Overview
 

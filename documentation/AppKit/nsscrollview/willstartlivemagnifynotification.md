@@ -30,14 +30,19 @@ To observe this notification using Swift concurrency, use [`NSScrollView.WillSta
 ## See Also
 
 ### Notifications
+- [NSScrollView.WillStartLiveMagnifyMessage](./willstartlivemagnifymessage.md)
 - [class let didEndLiveMagnifyNotification: NSNotification.Name](./didendlivemagnifynotification.md)
   Posted at the end of a magnify gesture.
+- [NSScrollView.DidEndLiveMagnifyMessage](./didendlivemagnifymessage.md)
 - [class let willStartLiveScrollNotification: NSNotification.Name](./willstartlivescrollnotification.md)
   Posted on the main thread at the beginning of user-initiated live scroll tracking (gesture scroll or scroller tracking, for example, thumb dragging).
+- [NSScrollView.WillStartLiveScrollMessage](./willstartlivescrollmessage.md)
 - [class let didLiveScrollNotification: NSNotification.Name](./didlivescrollnotification.md)
   Posted on the main thread after changing the clipview bounds origin due to a user-initiated event.
+- [NSScrollView.DidLiveScrollMessage](./didlivescrollmessage.md)
 - [class let didEndLiveScrollNotification: NSNotification.Name](./didendlivescrollnotification.md)
   Posted on the main thread at the end of live scroll tracking.
+- [NSScrollView.DidEndLiveScrollMessage](./didendlivescrollmessage.md)
 
 
 ---

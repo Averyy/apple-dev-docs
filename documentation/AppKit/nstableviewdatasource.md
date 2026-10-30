@@ -19,6 +19,10 @@ protocol NSTableViewDataSource : NSObjectProtocol
 @protocol NSTableViewDataSource <NSObject>
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](./adopting-gesture-recognizers-in-your-app.md)
+
 ## Overview
 
 Some of the methods in this protocol, such as [`tableView(_:objectValueFor:row:)`](./nstableviewdatasource/tableview%28_,objectvaluefor,row%29.md) and [`numberOfRows(in:)`](./nstableviewdatasource/numberofrows%28in%29.md) along with other methods that return data, are called frequently, so they must be efficient.

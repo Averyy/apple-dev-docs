@@ -17,6 +17,11 @@ func mouseCancelled(with event: NSEvent)
 - (void) mouseCancelled:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## See Also
 
 ### Handling touch and mouse events

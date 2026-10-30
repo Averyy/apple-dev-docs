@@ -19,6 +19,11 @@ func reset()
 - (void) reset;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 AppKit calls this method after the gesture recognizer state has been set to any of the terminal states: [`NSGestureRecognizer.State.ended`](./state-swift.enum/ended.md), [`NSGestureRecognizer.State.cancelled`](./state-swift.enum/cancelled.md), [`NSGestureRecognizer.State.failed`](./state-swift.enum/failed.md), or [`recognized`](./state-swift.enum/recognized.md). Subclasses should override this method and use it to reset any internal state of the gesture recognizer in preparation for a new recognition attempt. After this method is called, the gesture recognizer receives no further updates for events that began but have not yet ended.

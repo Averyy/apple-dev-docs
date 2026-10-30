@@ -7,7 +7,7 @@
 Paging information for data responses.
 
 **Availability**:
-- Apple School Manager API 1.7+
+- Apple School Manager API 1.8+
 
 ## Declaration
 

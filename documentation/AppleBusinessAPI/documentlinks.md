@@ -7,7 +7,7 @@
 Self-links to documents that can contain information for one or more resources.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

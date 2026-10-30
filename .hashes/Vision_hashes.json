@@ -15290,11 +15290,19 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/vision/vnrequest/2867238-results"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/vision/detecting-objects-in-still-images.json": [
+        "https://developer.apple.com/documentation/vision/vnrequest/2867238-results"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/vision/tracking-multiple-objects-or-rectangles-in-video.json": [
+        "https://developer.apple.com/documentation/vision/vnrequest/2867238-results"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/vision/tracking-the-user-s-face-in-real-time.json": [
+        "https://developer.apple.com/documentation/vision/vnrequest/2867238-results"
+      ]
     },
     "total_pages": 3822
   }

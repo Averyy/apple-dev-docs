@@ -9,6 +9,17 @@ Learn about new features and updates in the Apple School Manager and Apple Busin
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
+### 2.7 (Apple Business) - 2026/10/29
+
+### 1.8 (Apple School Manager) - 2026/10/29
+
+New features for the Apple School Manager and Apple Business APIs
+
+Added support for filtering devices by serial number, order number, product family, purchase source type, assignment status, date added to the organization, and order date:
+
+- [Apple School Manager: Get Organization Devices.](../AppleSchoolManagerAPI/get-org-devices.md)
+- [Apple Business: Get Organization Devices.](../AppleBusinessAPI/get-org-devices.md)
+
 ### 2.6 (Apple Business) - 2026/9/24
 
 New features for the Apple Business APIs
@@ -140,7 +151,7 @@ Added detailed device information for devices enrolled in the built-in device ma
 
 Changes
 
-- Updated Python script example to use PwJWT in the article [Implementing OAuth for the Apple School and Business Manager API](./implementing-oauth-for-the-apple-school-and-business-manager-api.md)
+- Updated Python script example to use PwJWT in the article Implementing OAuth for the Apple School and Business Manager API
 - Updated MAC address types in Apple School Manager [OrgDevice.Attributes](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md).
 - Updated MAC address types in Apple Business [OrgDevice.Attributes](https://developer.apple.com/documentation/applebusinessmanagerapi/orgdevice/attributes-data.dictionary).
 
@@ -155,7 +166,7 @@ New features
 
 New features
 
-- Added AppleCare content to the [Apple School Manager API](../AppleSchoolManagerAPI/get-all-apple-care-coverage-for-an-orgdevice.md)
+- Added AppleCare content to the Apple School Manager API
 - Added AppleCare content to the [Apple Business API](https://developer.apple.com/documentation/applebusinessmanagerapi/get-all-apple-care-coverage-for-an-orgdevice)
 
 ### 1.2 (Apple School Manager and Apple Business) - 2025/07/16
@@ -169,7 +180,7 @@ New features
 
 Changes
 
-- Updated content in the article [Implementing OAuth for the Apple School and Business Manager API](./implementing-oauth-for-the-apple-school-and-business-manager-api.md)
+- Updated content in the article Implementing OAuth for the Apple School and Business Manager API
 
 
 ---

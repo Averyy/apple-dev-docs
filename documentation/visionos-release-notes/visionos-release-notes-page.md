@@ -396,7 +396,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 #### New Features
 
-- The [productViewIconBorder()](../StoreKit/automaticproductplaceholdericon/api-4278999-producticonborder.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md) to add a standard border around the icon.  (106649532)
+- The productViewIconBorder() view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md) to add a standard border around the icon.  (106649532)
 - You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](../StoreKit/productview.md), [`StoreView`](../StoreKit/storeview.md) and [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) instances. Use the [buttonStyle(_:)](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) view modifier to choose any standard button style, or a custom button style.  (107713282)
 - The following StoreKit types are renamed:
 

@@ -23,6 +23,7 @@ struct NemotronHConfiguration
   Memberwise initializer for testing
 ### Instance Properties
 - [var attentionBias: Bool](./nemotronhconfiguration/attentionbias.md)
+- [var blockConfigs: [NemotronHBlockConfig]?](./nemotronhconfiguration/blockconfigs.md)
 - [var convKernel: Int](./nemotronhconfiguration/convkernel.md)
 - [var headDim: Int?](./nemotronhconfiguration/headdim.md)
 - [var hiddenSize: Int](./nemotronhconfiguration/hiddensize.md)
@@ -35,6 +36,7 @@ struct NemotronHConfiguration
 - [var mlpBias: Bool](./nemotronhconfiguration/mlpbias.md)
 - [var modelType: String](./nemotronhconfiguration/modeltype.md)
 - [var moeIntermediateSize: Int](./nemotronhconfiguration/moeintermediatesize.md)
+- [var moeLatentSize: Int?](./nemotronhconfiguration/moelatentsize.md)
 - [var moeSharedExpertIntermediateSize: Int](./nemotronhconfiguration/moesharedexpertintermediatesize.md)
 - [var nGroup: Int](./nemotronhconfiguration/ngroup.md)
 - [var nGroups: Int](./nemotronhconfiguration/ngroups.md)
@@ -55,6 +57,9 @@ struct NemotronHConfiguration
 - [var useBias: Bool](./nemotronhconfiguration/usebias.md)
 - [var useConvBias: Bool](./nemotronhconfiguration/useconvbias.md)
 - [var vocabSize: Int](./nemotronhconfiguration/vocabsize.md)
+### Instance Methods
+- [func layerConfiguration(Int) -> NemotronHConfiguration](./nemotronhconfiguration/layerconfiguration%28_%29.md)
+  The configuration for layer `index`, with any `block_configs` overrides applied.
 ### Default Implementations
 - [Encodable Implementations](./nemotronhconfiguration/encodable-implementations.md)
 

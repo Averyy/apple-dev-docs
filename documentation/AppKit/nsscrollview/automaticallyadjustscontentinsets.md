@@ -27,7 +27,7 @@ The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-### Managing Insets
+### Managing insets
 - [var contentInsets: NSEdgeInsets](./contentinsets.md)
   The distance that the scroll view’s subviews are inset from the enclosing scroll view during tiling.
 - [var scrollerInsets: NSEdgeInsets](./scrollerinsets.md)

@@ -7,7 +7,7 @@
 Strings that represent the type of Activation Lock on a device.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

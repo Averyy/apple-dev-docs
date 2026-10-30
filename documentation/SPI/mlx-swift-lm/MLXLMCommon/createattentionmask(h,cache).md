@@ -19,6 +19,8 @@ func createAttentionMask(h: MLXArray, cache: [KVCache]?) -> MLXArray?
 
 ## Discussion
 
+The mask is sized by the cache, so it spans the keys the cache still presents: an evicting cache drops rows the absolute offset would include.
+
 See also `MultiHeadAttention.createAdditiveCausalMask(_:dtype:)` – same idea but doesn’t honor the cache offset.
 
 

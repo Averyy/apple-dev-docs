@@ -25,7 +25,7 @@ This class is normally NSRulerView.
 
 ## See Also
 
-### Managing Rulers
+### Managing rulers
 - [var hasHorizontalRuler: Bool](./hashorizontalruler.md)
   A Boolean that indicates whether the scroll view keeps a horizontal ruler object.
 - [var horizontalRulerView: NSRulerView?](./horizontalrulerview.md)

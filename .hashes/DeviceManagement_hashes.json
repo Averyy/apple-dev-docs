@@ -11369,6 +11369,11 @@
     "render": {
       "version": 4
     },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/devicemanagement/installing-packages.json": [
+        "https://developer.apple.com/documentation/devicemanagement/package/manifesturl"
+      ]
+    },
     "total_pages": 2841
   }
 }

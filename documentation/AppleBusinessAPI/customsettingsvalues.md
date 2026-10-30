@@ -7,7 +7,7 @@
 The custom settings payload for a Configuration of type `CUSTOM_SETTING`.
 
 **Availability**:
-- Apple Business API 2.6+
+- Apple Business API 2.7+
 
 ## Declaration
 

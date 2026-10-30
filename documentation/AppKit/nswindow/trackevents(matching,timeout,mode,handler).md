@@ -19,6 +19,10 @@ func trackEvents(matching mask: NSEvent.EventTypeMask, timeout: TimeInterval, mo
 - (void) trackEventsMatchingMask:(NSEventMask) mask timeout:(NSTimeInterval) timeout mode:(NSRunLoopMode) mode handler:(void (^)(NSEvent *event, BOOL *stop)) trackingHandler;
 ```
 
+## Mentions
+
+- [Adopting gesture recognizers in your app](../adopting-gesture-recognizers-in-your-app.md)
+
 ## Discussion
 
 You can use this method in a tracking loop to get pressure events when you add [`pressure`](../nsevent/eventtypemask/pressure.md) to the event mask. This method returns when tracking terminates.

@@ -54,7 +54,7 @@ AEAssessmentParticipantConfiguration *noNetworkConfig = [[AEAssessmentParticipan
 noNetworkConfig.allowsNetworkAccess = false;
 ```
 
-The sample then configures an app with one of the previously created `AEAssessmentParticipantConfiguration` instances, as appropriate, by calling an [AEAssessmentConfiguration](./aeassessmentconfiguration.md) instance’s [setConfiguration(_:for:)](./aeassessmentconfiguration/setconfiguration%28_,for%29.md) method.
+The sample then configures an app with one of the previously created `AEAssessmentParticipantConfiguration` instances, as appropriate, by calling an [AEAssessmentConfiguration](./aeassessmentconfiguration.md) instance’s setConfiguration(_:for:) method.
 
 ```objective-c
 AEAssessmentApplication *calculator = [[AEAssessmentApplication alloc] initWithBundleIdentifier:calculatorBundleID];

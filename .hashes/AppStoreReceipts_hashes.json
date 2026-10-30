@@ -253,6 +253,28 @@
     "render": {
       "version": 4
     },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/status"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/latest_receipt_info-data.dictionary.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info-data.dictionary/is_in_intro_offer_period"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/auto_renew_status",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/is_in_billing_retry_period",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/offer_code_ref_name"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary.json": [
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/cancellation_date_ms",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/expires_date_ms",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/is_in_intro_offer_period",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/is_trial_period",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/original_transaction_id",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/promotional_offer_id",
+        "https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/transaction_id"
+      ]
+    },
     "total_pages": 62
   }
 }

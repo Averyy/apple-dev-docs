@@ -19,6 +19,10 @@ func touchesEnded(with event: NSEvent)
 - (void) touchesEndedWithEvent:(NSEvent *) event;
 ```
 
+## Mentions
+
+- [Handling AppKit gestures](../handling-appkit-gestures.md)
+
 ## See Also
 
 ### Handling touch and mouse events

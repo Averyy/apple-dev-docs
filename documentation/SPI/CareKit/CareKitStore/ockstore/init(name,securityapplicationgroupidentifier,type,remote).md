@@ -20,7 +20,7 @@ init(name: String, securityApplicationGroupIdentifier: String? = nil, type: OCKC
 ## Parameters
 
 - `name`: A unique name for the store. It will be used for the filename if stored on disk.
-- `securityApplicationGroupIdentifier`: App group identifier for a sandboxed app that shares files with other apps from the same developer. See [Adding an App To an App Group](./api-1.md).
+- `securityApplicationGroupIdentifier`: App group identifier for a sandboxed app that shares files with other apps from the same developer. See Adding an App To an App Group.
 - `type`: The type of store to be used. `.onDisk` is used by default.
 - `remote`: A store synchronization endpoint.
 

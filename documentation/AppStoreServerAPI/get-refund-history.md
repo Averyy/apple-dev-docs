@@ -16,7 +16,7 @@ Get a paginated list of all of a customer’s refunded in-app purchases for your
 
 ## Discussion
 
-Call this endpoint to get the customer’s complete refund history for your app by providing the transaction identifier ([`transactionId`](./transactionid.md)) for any of the customer’s in-app purchases. Each response ([`RefundHistoryResponse`](./refundhistoryresponse.md)) contains a maximum of 20 refunded transactions. If the [`hasMore`](./hasmore.md) property in the response is `true`, call the endpoint again using the [`revision`](./get-refund-history/revision.md) token from the response to get the next set of refunded transactions.
+Call this endpoint to get the customer’s complete refund history for your app by providing the transaction identifier ([`transactionId`](./transactionid.md)) for any of the customer’s in-app purchases. Each response ([`RefundHistoryResponse`](./refundhistoryresponse.md)) contains a maximum of 20 refunded transactions. If the [`hasMore`](./hasmore.md) property in the response is `true`, call the endpoint again using the `revision` token from the response to get the next set of refunded transactions.
 
 The response only includes App Store-approved refunds for any product type: consumable, non-consumable, auto-renewable subscriptions, and non-renewing subscriptions. For more information about product types, see [In-app purchase](https://developer.apple.com/in-app-purchase/).
 
@@ -32,7 +32,7 @@ To get a customer’s full refund history for your app, start by calling the end
 GET https://api.storekit.apple.com/inApps/v2/refund/lookup/{anyTransactionId}
 ```
 
-For subsequent requests, include the [`revision`](./get-refund-history/revision.md) token from the previous [`RefundHistoryResponse`](./refundhistoryresponse.md).
+For subsequent requests, include the `revision` token from the previous [`RefundHistoryResponse`](./refundhistoryresponse.md).
 
 ```javascript
 GET https://api.storekit.apple.com/inApps/v2/refund/lookup/{anyTransactionId}?revision={revision}

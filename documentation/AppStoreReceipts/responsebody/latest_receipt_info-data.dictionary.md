@@ -28,7 +28,7 @@ object responseBody.Latest_receipt_info
 - `expires_date_ms` (expires_date_ms) *(deprecated)*: The time an auto-renewable subscription expires or when it will renew, in UNIX epoch time format, in milliseconds. Use this time format for processing dates.
 - `expires_date_pst` (string) *(deprecated)*: The time an auto-renewable subscription expires or when it will renew, in Pacific Standard Time.
 - `in_app_ownership_type` (in_app_ownership_type) *(deprecated)*: A value that indicates whether the user is the purchaser of the product or is a family member with access to the product through Family Sharing.
-- `is_in_intro_offer_period` (string) *(deprecated)*: An indicator of whether an auto-renewable subscription is in the introductory price period. See [`is_in_intro_offer_period`](./latest_receipt_info-data.dictionary/is_in_intro_offer_period.md) for more information.
+- `is_in_intro_offer_period` (string) *(deprecated)*: An indicator of whether an auto-renewable subscription is in the introductory price period. See `is_in_intro_offer_period` for more information.
 
   **Allowed Values**: `true`, `false`
 - `is_trial_period` (is_trial_period) *(deprecated)*: An indicator of whether an auto-renewable subscription is in the free trial period.
