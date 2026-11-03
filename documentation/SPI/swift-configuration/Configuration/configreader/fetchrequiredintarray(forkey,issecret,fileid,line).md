@@ -50,7 +50,7 @@ let apiKey = try await config.fetchRequiredIntArray(forKey: ["api", "key"], isSe
 ### Asynchronously fetching required lists of integer values
 - [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-6a1e3.md)
   Asynchronously fetches a required array of config values for the given config key, converting from integers.
-- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-599c5.md)
+- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-g0pq.md)
   Asynchronously fetches a required array of config values for the given config key, converting from integers.
 
 

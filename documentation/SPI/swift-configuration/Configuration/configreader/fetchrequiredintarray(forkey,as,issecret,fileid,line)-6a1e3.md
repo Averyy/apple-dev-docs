@@ -51,7 +51,7 @@ let requiredVersions = try await config.fetchRequiredIntArray(forKey: ["api", "v
 ### Asynchronously fetching required lists of integer values
 - [func fetchRequiredIntArray(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) async throws -> [Int]](./fetchrequiredintarray%28forkey,issecret,fileid,line%29.md)
   Asynchronously fetches a required config value for the given config key, throwing an error if it’s missing.
-- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-599c5.md)
+- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-g0pq.md)
   Asynchronously fetches a required array of config values for the given config key, converting from integers.
 
 

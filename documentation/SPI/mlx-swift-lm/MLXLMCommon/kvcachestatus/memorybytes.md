@@ -17,6 +17,10 @@ Bytes allocated across all layers.
 var memoryBytes: Int { get }
 ```
 
+## Mentions
+
+- [Wired Memory and Weight Reservations](../wired-memory.md)
+
 
 ---
 

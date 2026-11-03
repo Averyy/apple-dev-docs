@@ -50,7 +50,7 @@ let apiKey = try config.requiredInt(forKey: ["api", "key"], isSecret: true)
 ### Synchronously reading required integer values
 - [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-3dzjk.md)
   Synchronously gets a required config value for the given config key, converting from an integer.
-- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-2xiji.md)
+- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-5wzeh.md)
   Synchronously gets a required config value for the given config key, converting from an integer.
 
 

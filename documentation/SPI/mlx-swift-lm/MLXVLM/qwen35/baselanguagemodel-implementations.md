@@ -12,6 +12,8 @@ framework: "mlx-swift-lm/MLXVLM"
 
 ### Instance Properties
 - [var excludedCheckpointNamespaces: [String]](./excludedcheckpointnamespaces.md)
+### Instance Methods
+- [func memory() throws -> ModelMemory](./memory%28%29.md)
 
 
 ---

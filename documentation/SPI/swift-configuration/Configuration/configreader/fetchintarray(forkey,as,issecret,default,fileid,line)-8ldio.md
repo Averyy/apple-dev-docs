@@ -56,9 +56,9 @@ let apiVersions = try await config.fetchIntArray(forKey: ["api", "versions"], as
   Asynchronously fetches a config value for the given config key, with a default fallback.
 - [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./fetchintarray%28forkey,as,issecret,fileid,line%29-16vlr.md)
   Asynchronously fetches an array of config values for the given config key, converting from integers.
-- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./fetchintarray%28forkey,as,issecret,fileid,line%29-6rhh4.md)
+- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./fetchintarray%28forkey,as,issecret,fileid,line%29-30vq2.md)
   Asynchronously fetches an array of config values for the given config key, converting from integers.
-- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) async throws -> [Value]](./fetchintarray%28forkey,as,issecret,default,fileid,line%29-79l2m.md)
+- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) async throws -> [Value]](./fetchintarray%28forkey,as,issecret,default,fileid,line%29-8kebn.md)
   Asynchronously fetches an array of config values for the given config key with default fallback, converting from integers.
 
 

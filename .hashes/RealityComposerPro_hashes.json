@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/RealityComposerPro": {
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md",
-      "hash": "59dd1b194c47887161d88bf10881ed73bfc57500b73440fdc0f1e247527fc9ef"
+      "hash": "3a07e5abe29d247826c399d3dd3c935f9983806999d851ca8bb05f7aba3aa8ee"
     },
     "https://developer.apple.com/documentation/realitycomposerpro/applying-materials-to-an-asset": {
       "file_path": "documentation/RealityComposerPro/applying-materials-to-an-asset.md",
@@ -80,9 +80,13 @@
       "file_path": "documentation/RealityComposerPro/optimizing-audio-playback.md",
       "hash": "0931251e83be2dd634a1070d33b17270fcbb85536e00350dea8d7743644e959c"
     },
-    "https://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes": {
-      "file_path": "documentation/RealityComposerPro/reality-composer-pro-release-notes.md",
-      "hash": "d5961b5c8dc84acd8c5ebc9b6ce4ef5ed643bb1cb90ae063fa6d5c4a1068558e"
+    "https://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-3-1-release-notes": {
+      "file_path": "documentation/RealityComposerPro/reality-composer-pro-3-1-release-notes.md",
+      "hash": "9ad9702bf89f1b0a96fbcfe75fcebea1d14e2192babfcea3796262db4a16f20e"
+    },
+    "https://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-3-release-notes": {
+      "file_path": "documentation/RealityComposerPro/reality-composer-pro-3-release-notes.md",
+      "hash": "5e1dc85c8dc9cabb7451f2c8bf6305e7e73405274c903a00d20d15e36624d020"
     },
     "https://developer.apple.com/documentation/realitycomposerpro/realitycomposerpro-essentials-addingentitiestoscene": {
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-addingentitiestoscene.md",
@@ -134,7 +138,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/RealityComposerPro.json": {
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md",
-      "hash": "59dd1b194c47887161d88bf10881ed73bfc57500b73440fdc0f1e247527fc9ef"
+      "hash": "3a07e5abe29d247826c399d3dd3c935f9983806999d851ca8bb05f7aba3aa8ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/applying-materials-to-an-asset.json": {
       "file_path": "documentation/RealityComposerPro/applying-materials-to-an-asset.md",
@@ -212,9 +216,13 @@
       "file_path": "documentation/RealityComposerPro/optimizing-audio-playback.md",
       "hash": "0931251e83be2dd634a1070d33b17270fcbb85536e00350dea8d7743644e959c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-release-notes.json": {
-      "file_path": "documentation/RealityComposerPro/reality-composer-pro-release-notes.md",
-      "hash": "d5961b5c8dc84acd8c5ebc9b6ce4ef5ed643bb1cb90ae063fa6d5c4a1068558e"
+    "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-3-1-release-notes.json": {
+      "file_path": "documentation/RealityComposerPro/reality-composer-pro-3-1-release-notes.md",
+      "hash": "9ad9702bf89f1b0a96fbcfe75fcebea1d14e2192babfcea3796262db4a16f20e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-3-release-notes.json": {
+      "file_path": "documentation/RealityComposerPro/reality-composer-pro-3-release-notes.md",
+      "hash": "5e1dc85c8dc9cabb7451f2c8bf6305e7e73405274c903a00d20d15e36624d020"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-addingentitiestoscene.json": {
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-addingentitiestoscene.md",
@@ -269,6 +277,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 66
+    "total_pages": 68
   }
 }

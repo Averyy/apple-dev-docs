@@ -192,6 +192,8 @@ Common language model code.
   Optional metadata a model wants written into converted safetensors.
 - [protocol ModelFactoryTrampoline](./modelfactorytrampoline.md)
   Protocol for types that can provide ModelFactory instances.
+- [protocol ModelMemoryReporting](./modelmemoryreporting.md)
+  A type that owns a loaded model and can measure its tensor buffers.
 - [protocol PreparedInputSplitting](./preparedinputsplitting.md)
   A model that can split its own prepared input at a token boundary, keeping only the media whose placeholders fall in the suffix.
 - [protocol QuantizedKVCacheProtocol](./quantizedkvcacheprotocol.md)
@@ -328,6 +330,8 @@ Common language model code.
   Quantization settings for one conversion pass or layer.
 - [struct ModelConversionResult](./modelconversionresult.md)
   Result returned after converting and saving a model.
+- [struct ModelMemory](./modelmemory.md)
+  The memory held by a model’s tensors, measured from their MLX buffers.
 - [struct NaiveStreamingDetokenizer](./naivestreamingdetokenizer.md)
 - [struct NoSystemMessageGenerator](./nosystemmessagegenerator.md)
   Implementation of [`MessageGenerator`](./messagegenerator.md) that produces a `role` and `content` but omits `system` roles.

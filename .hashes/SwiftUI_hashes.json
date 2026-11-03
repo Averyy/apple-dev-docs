@@ -7974,7 +7974,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/widgetcontentmargins": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetcontentmargins.md",
-      "hash": "cdf238bd14839c3fbe07f181d8763d56decdbaca9bc1ecddc67d183cc412d9a4"
+      "hash": "32f3d695359fdd67abec0feb162a83c9fa77e30a8c96d3dd4580fd1b17a74fa4"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/widgetfamily": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetfamily.md",
@@ -30722,7 +30722,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform:)": {
       "file_path": "documentation/SwiftUI/view/onappintentexecution(_,perform).md",
-      "hash": "d3e2c1bde8fb6fba67a2c9c563d653d8a29b80cdaf89c4fa7de5af81a97f6016"
+      "hash": "c653671d532cd02315e430837de92cf3ac30f055b9db66e11273ecd289285661"
     },
     "https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform:)": {
       "file_path": "documentation/SwiftUI/view/onapplepaycouponcodechange(perform).md",
@@ -32570,11 +32570,11 @@
     },
     "https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)": {
       "file_path": "documentation/SwiftUI/view/translationtask(source,target,action).md",
-      "hash": "6b2c4eb2dbcf4b594a7d751f66125479e911f143b20ee615a0c9e8ed27b788d0"
+      "hash": "d546289bd0901d1ff7ae139604633b1053d220378d6feb722ecf3c55c15c13b0"
     },
     "https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:preferredstrategy:action:)": {
       "file_path": "documentation/SwiftUI/view/translationtask(source,target,preferredstrategy,action).md",
-      "hash": "ec92589ba49a448a51024c1e27cfbead89147f89379f327a95cb5090dbb7a518"
+      "hash": "38a5164958b853cbf8874a676445f2cf8a583e9ea8aacfb8867d35a0db70e7db"
     },
     "https://developer.apple.com/documentation/swiftui/view/truncationmode(_:)": {
       "file_path": "documentation/SwiftUI/view/truncationmode(_).md",
@@ -42190,7 +42190,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/widgetcontentmargins.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetcontentmargins.md",
-      "hash": "cdf238bd14839c3fbe07f181d8763d56decdbaca9bc1ecddc67d183cc412d9a4"
+      "hash": "32f3d695359fdd67abec0feb162a83c9fa77e30a8c96d3dd4580fd1b17a74fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/widgetfamily.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetfamily.md",
@@ -64942,7 +64942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/onappintentexecution(_:perform:).json": {
       "file_path": "documentation/SwiftUI/view/onappintentexecution(_,perform).md",
-      "hash": "d3e2c1bde8fb6fba67a2c9c563d653d8a29b80cdaf89c4fa7de5af81a97f6016"
+      "hash": "c653671d532cd02315e430837de92cf3ac30f055b9db66e11273ecd289285661"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/onapplepaycouponcodechange(perform:).json": {
       "file_path": "documentation/SwiftUI/view/onapplepaycouponcodechange(perform).md",
@@ -66790,11 +66790,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/translationtask(source:target:action:).json": {
       "file_path": "documentation/SwiftUI/view/translationtask(source,target,action).md",
-      "hash": "6b2c4eb2dbcf4b594a7d751f66125479e911f143b20ee615a0c9e8ed27b788d0"
+      "hash": "d546289bd0901d1ff7ae139604633b1053d220378d6feb722ecf3c55c15c13b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/translationtask(source:target:preferredstrategy:action:).json": {
       "file_path": "documentation/SwiftUI/view/translationtask(source,target,preferredstrategy,action).md",
-      "hash": "ec92589ba49a448a51024c1e27cfbead89147f89379f327a95cb5090dbb7a518"
+      "hash": "38a5164958b853cbf8874a676445f2cf8a583e9ea8aacfb8867d35a0db70e7db"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/truncationmode(_:).json": {
       "file_path": "documentation/SwiftUI/view/truncationmode(_).md",

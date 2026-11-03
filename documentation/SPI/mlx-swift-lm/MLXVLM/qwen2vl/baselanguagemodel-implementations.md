@@ -13,6 +13,7 @@ framework: "mlx-swift-lm/MLXVLM"
 ### Instance Properties
 - [var excludedCheckpointNamespaces: [String]](./excludedcheckpointnamespaces.md)
 ### Instance Methods
+- [func memory() throws -> ModelMemory](./memory%28%29.md)
 - [func prepareCheckpoint(ModelCheckpoint) throws -> ModelCheckpoint](./preparecheckpoint%28_%29.md)
 - [func sanitize(weights: [String : MLXArray], metadata: [String : String]) throws -> [String : MLXArray]](./sanitize%28weights,metadata%29.md)
 

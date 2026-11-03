@@ -490,11 +490,11 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "8cd2fe78aa7137f7479b444aeb1c2de1af8222af099f955e293de3f92f4c3116"
+      "hash": "a677282e52f4b04179631d9d42c2f98d4c5011c9534892427e6fe5f3f22bf709"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
-      "hash": "1e48e6b0246de3a017cb735618db6e7edb3d7b7e6d40e01868ce040a620edcdd"
+      "hash": "54b54cac8fc2f137e296a805b99d0deb49f77162478b130e2f89513e8bd3f26a"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/containerapplaunchreasonkey": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchreasonkey.md",
@@ -510,7 +510,7 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/returntocall(requestid:)": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/returntocall(requestid).md",
-      "hash": "27209f7014150ee341385f4c9e71e7f1a5e2062736a641f4f6b6561543df2ef6"
+      "hash": "a352987b3c24f141ee59c008723bf68e4f647a38c0b9fd3fd4a9b07bc0572639"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",
@@ -1230,11 +1230,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "8cd2fe78aa7137f7479b444aeb1c2de1af8222af099f955e293de3f92f4c3116"
+      "hash": "a677282e52f4b04179631d9d42c2f98d4c5011c9534892427e6fe5f3f22bf709"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
-      "hash": "1e48e6b0246de3a017cb735618db6e7edb3d7b7e6d40e01868ce040a620edcdd"
+      "hash": "54b54cac8fc2f137e296a805b99d0deb49f77162478b130e2f89513e8bd3f26a"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/containerapplaunchreasonkey.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchreasonkey.md",
@@ -1250,7 +1250,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/returntocall(requestid:).json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/returntocall(requestid).md",
-      "hash": "27209f7014150ee341385f4c9e71e7f1a5e2062736a641f4f6b6561543df2ef6"
+      "hash": "a352987b3c24f141ee59c008723bf68e4f647a38c0b9fd3fd4a9b07bc0572639"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",

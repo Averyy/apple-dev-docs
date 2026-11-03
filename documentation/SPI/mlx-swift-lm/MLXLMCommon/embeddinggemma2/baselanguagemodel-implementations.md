@@ -11,6 +11,8 @@ framework: "mlx-swift-lm/MLXLMCommon"
 ## Topics
 
 ### Instance Methods
+- [func memory() throws -> ModelMemory](./memory%28%29.md)
+  Measure the buffers held by the model and its loaded on-demand components.
 - [func sanitize(weights: [String : MLXArray], metadata: [String : String]) throws -> [String : MLXArray]](./sanitize%28weights,metadata%29.md)
 
 

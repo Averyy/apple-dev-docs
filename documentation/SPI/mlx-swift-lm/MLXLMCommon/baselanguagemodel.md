@@ -23,6 +23,8 @@ protocol BaseLanguageModel : Module
 - [var excludedCheckpointNamespaces: [String]](./baselanguagemodel/excludedcheckpointnamespaces.md)
   Serialized namespaces whose tensors this model never loads, such as the target model in a checkpoint that a drafter shares with it. The loader does not read them.
 ### Instance Methods
+- [func memory() throws -> ModelMemory](./baselanguagemodel/memory%28%29.md)
+  Measure the buffers held by the model and its loaded on-demand components.
 - [func prepareCheckpoint(ModelCheckpoint) throws -> ModelCheckpoint](./baselanguagemodel/preparecheckpoint%28_%29.md)
   Normalize tensor names, values, and layer settings before loading the checkpoint. The default implementation calls [`sanitize(weights:metadata:)`](./baselanguagemodel/sanitize%28weights,metadata%29.md).
 - [func sanitize(weights: [String : MLXArray]) throws -> [String : MLXArray]](./baselanguagemodel/sanitize%28weights%29.md)

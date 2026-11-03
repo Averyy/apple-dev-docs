@@ -71,11 +71,11 @@ framework: "swift-configuration/Configuration"
   Synchronously gets a config value for the given config key.
 - [func int(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt) -> Int](./configreader/int%28forkey,issecret,default,fileid,line%29.md)
   Synchronously gets a config value for the given config key, with a default fallback.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configreader/int%28forkey,as,issecret,fileid,line%29-6ng32.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configreader/int%28forkey,as,issecret,fileid,line%29-1wdqj.md)
   Synchronously gets a config value for the given config key, converting from an integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configreader/int%28forkey,as,issecret,fileid,line%29-11fn2.md)
   Synchronously gets a config value for the given config key, converting from an integer.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configreader/int%28forkey,as,issecret,default,fileid,line%29-4zrhi.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configreader/int%28forkey,as,issecret,default,fileid,line%29-3dkr0.md)
   Synchronously gets a config value for the given config key with default fallback, converting from an integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configreader/int%28forkey,as,issecret,default,fileid,line%29-4ie6l.md)
   Synchronously gets a config value for the given config key with default fallback, converting from an integer.
@@ -84,7 +84,7 @@ framework: "swift-configuration/Configuration"
   Synchronously gets a required config value for the given config key, throwing an error if it’s missing.
 - [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configreader/requiredint%28forkey,as,issecret,fileid,line%29-3dzjk.md)
   Synchronously gets a required config value for the given config key, converting from an integer.
-- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configreader/requiredint%28forkey,as,issecret,fileid,line%29-2xiji.md)
+- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configreader/requiredint%28forkey,as,issecret,fileid,line%29-5wzeh.md)
   Synchronously gets a required config value for the given config key, converting from an integer.
 ### Synchronously reading lists of integer values
 - [func intArray(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) -> [Int]?](./configreader/intarray%28forkey,issecret,fileid,line%29.md)
@@ -93,16 +93,16 @@ framework: "swift-configuration/Configuration"
   Synchronously gets a config value for the given config key, with a default fallback.
 - [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configreader/intarray%28forkey,as,issecret,fileid,line%29-3goaq.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configreader/intarray%28forkey,as,issecret,fileid,line%29-9sp0s.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configreader/intarray%28forkey,as,issecret,fileid,line%29-4kl2i.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
 - [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configreader/intarray%28forkey,as,issecret,default,fileid,line%29-9ini5.md)
   Synchronously gets an array of config values for the given config key with default fallback, converting from integers.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configreader/intarray%28forkey,as,issecret,default,fileid,line%29-1so32.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configreader/intarray%28forkey,as,issecret,default,fileid,line%29-5fqwa.md)
   Synchronously gets an array of config values for the given config key with default fallback, converting from integers.
 ### Synchronously reading required lists of integer values
 - [func requiredIntArray(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) throws -> [Int]](./configreader/requiredintarray%28forkey,issecret,fileid,line%29.md)
   Synchronously gets a required config value for the given config key, throwing an error if it’s missing.
-- [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configreader/requiredintarray%28forkey,as,issecret,fileid,line%29-cyh0.md)
+- [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configreader/requiredintarray%28forkey,as,issecret,fileid,line%29-6njn0.md)
   Synchronously gets a required array of config values for the given config key, converting from integers.
 - [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configreader/requiredintarray%28forkey,as,issecret,fileid,line%29-1car4.md)
   Synchronously gets a required array of config values for the given config key, converting from integers.

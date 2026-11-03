@@ -66,6 +66,7 @@ let result = await modelContainer.perform { context in
   Encode a string to token IDs.
 - [func generate(input: sending consuming LMInput, parameters: GenerateParameters, wiredMemoryTicket: WiredMemoryTicket?, tools: [[String : any Sendable]]?) async throws -> AsyncStream<Generation>](./modelcontainer/generate%28input,parameters,wiredmemoryticket,tools%29.md)
   Generate tokens from prepared input, returning an AsyncStream.
+- [func memory() async throws -> ModelMemory](./modelcontainer/memory%28%29.md)
 - [func perform<R>(@Sendable (ModelContext) async throws -> sending R) async rethrows -> sending R](./modelcontainer/perform%28_%29-629d0.md)
   Perform an action on the [`ModelContext`](./modelcontext.md). Callers *must* eval any `MLXArray` before returning as `MLXArray` is not `Sendable`.
 - [func perform<R>(@Sendable (any LanguageModel, Tokenizer) throws -> sending R) async rethrows -> sending R](./modelcontainer/perform%28_%29-8ri5.md)
@@ -84,6 +85,7 @@ let result = await modelContainer.perform { context in
 ## Relationships
 
 ### Conforms To
+- [ModelMemoryReporting](./modelmemoryreporting.md)
 - Swift.Sendable
 - Swift.SendableMetatype
 

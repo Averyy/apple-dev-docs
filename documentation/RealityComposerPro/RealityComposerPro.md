@@ -122,7 +122,9 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 - [Optimizing audio playback in Reality Composer Pro](./optimizing-audio-playback.md)
   Balance audio quality against CPU, memory, and power cost when configuring playback.
 ### Release notes
-- [Reality Composer Pro Release Notes](./reality-composer-pro-release-notes.md)
+- [Reality Composer Pro 3.1 Release Notes](./reality-composer-pro-3-1-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.1.
+- [Reality Composer Pro 3 Release Notes](./reality-composer-pro-3-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

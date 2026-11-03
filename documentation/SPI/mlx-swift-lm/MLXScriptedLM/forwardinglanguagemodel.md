@@ -61,6 +61,7 @@ Optional capabilities that the library detects with `as?`:
 - [func update(parameters: ModuleParameters, verify: VerifyUpdate, path: [String], modulePath: [String]) throws -> Self](./forwardinglanguagemodel/update%28parameters,verify,path,modulepath%29.md)
 - [func updateModule(key: String, Any) throws](./forwardinglanguagemodel/updatemodule%28key,_%29.md)
 ### Default Implementations
+- [BaseLanguageModel Implementations](./forwardinglanguagemodel/baselanguagemodel-implementations.md)
 - [LanguageModel Implementations](./forwardinglanguagemodel/languagemodel-implementations.md)
 - [LoRAModel Implementations](./forwardinglanguagemodel/loramodel-implementations.md)
 

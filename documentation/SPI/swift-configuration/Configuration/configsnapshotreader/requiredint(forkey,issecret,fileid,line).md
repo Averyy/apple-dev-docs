@@ -50,7 +50,7 @@ let apiKey = try snapshot.requiredString(forKey: ["api", "key"], isSecret: true)
 ### Synchronously reading required integer values
 - [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-4jh1t.md)
   Synchronously gets a required config value for the given config key, converting from integer.
-- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-x6dx.md)
+- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-790fb.md)
   Synchronously gets a required config value for the given config key, converting from integer.
 
 

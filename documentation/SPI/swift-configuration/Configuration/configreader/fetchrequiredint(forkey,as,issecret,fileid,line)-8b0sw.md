@@ -51,7 +51,7 @@ let apiVersion = try await config.fetchRequiredInt(forKey: ["api", "version"], a
 ### Asynchronously fetching required integer values
 - [func fetchRequiredInt(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) async throws -> Int](./fetchrequiredint%28forkey,issecret,fileid,line%29.md)
   Asynchronously fetches a required config value for the given config key, throwing an error if it’s missing.
-- [func fetchRequiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value](./fetchrequiredint%28forkey,as,issecret,fileid,line%29-12gf.md)
+- [func fetchRequiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value](./fetchrequiredint%28forkey,as,issecret,fileid,line%29-7yhhj.md)
   Asynchronously fetches a required config value for the given config key, converting from an integer.
 
 

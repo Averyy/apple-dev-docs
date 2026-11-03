@@ -51,13 +51,13 @@ let maxRetries = try await config.fetchInt(forKey: ["network", "maxRetries"], de
 ### Asynchronously fetching integer values
 - [func fetchInt(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) async throws -> Int?](./fetchint%28forkey,issecret,fileid,line%29.md)
   Asynchronously fetches a config value for the given config key.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-107qe.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-lscg.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
 - [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-6tdet.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
 - [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./fetchint%28forkey,as,issecret,default,fileid,line%29-3161u.md)
   Asynchronously fetches a config value for the given config key with default fallback, converting from an integer.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./fetchint%28forkey,as,issecret,default,fileid,line%29-41vzw.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./fetchint%28forkey,as,issecret,default,fileid,line%29-98cxe.md)
   Asynchronously fetches a config value for the given config key with default fallback, converting from an integer.
 
 

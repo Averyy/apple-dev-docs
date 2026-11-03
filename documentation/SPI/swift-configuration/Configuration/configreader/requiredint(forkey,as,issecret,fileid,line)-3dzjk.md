@@ -51,7 +51,7 @@ let apiVersion = try config.requiredInt(forKey: ["api", "version"], as: APIVersi
 ### Synchronously reading required integer values
 - [func requiredInt(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) throws -> Int](./requiredint%28forkey,issecret,fileid,line%29.md)
   Synchronously gets a required config value for the given config key, throwing an error if it’s missing.
-- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-2xiji.md)
+- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./requiredint%28forkey,as,issecret,fileid,line%29-5wzeh.md)
   Synchronously gets a required config value for the given config key, converting from an integer.
 
 

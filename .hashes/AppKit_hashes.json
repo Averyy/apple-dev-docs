@@ -12086,7 +12086,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
+      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",
@@ -14686,7 +14686,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nscontrol": {
       "file_path": "documentation/AppKit/nscontrol.md",
-      "hash": "1fc55e01bd2f5e39915d4e1d68cbc185d9f14ea57485fa467f0b0a9ceb5874fb"
+      "hash": "6165b3374df1614a63d58326c3d64754a5f4a42258f8771057cc84151af30774"
     },
     "https://developer.apple.com/documentation/appkit/nscontrol-deprecated-symbols": {
       "file_path": "documentation/AppKit/nscontrol-deprecated-symbols.md",
@@ -48334,7 +48334,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nstrackingseparatortoolbaritem": {
       "file_path": "documentation/AppKit/nstrackingseparatortoolbaritem.md",
-      "hash": "f2c28204a9370b35cd29ecd3d3b31a7b5be3f826aed73c27229f3ac5b73f344b"
+      "hash": "4c777c2a82e28f899f18091f25cb3b47aca994df625afd5e31a1591e35f95719"
     },
     "https://developer.apple.com/documentation/appkit/nstrackingseparatortoolbaritem/dividerindex": {
       "file_path": "documentation/AppKit/nstrackingseparatortoolbaritem/dividerindex.md",
@@ -49266,7 +49266,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsview": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/documentation/appkit/nsview-appearance": {
       "file_path": "documentation/AppKit/nsview-appearance.md",
@@ -67914,7 +67914,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
+      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",
@@ -70518,7 +70518,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscontrol.json": {
       "file_path": "documentation/AppKit/nscontrol.md",
-      "hash": "1fc55e01bd2f5e39915d4e1d68cbc185d9f14ea57485fa467f0b0a9ceb5874fb"
+      "hash": "6165b3374df1614a63d58326c3d64754a5f4a42258f8771057cc84151af30774"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscontrol/abortediting().json": {
       "file_path": "documentation/AppKit/nscontrol/abortediting().md",
@@ -104162,7 +104162,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstrackingseparatortoolbaritem.json": {
       "file_path": "documentation/AppKit/nstrackingseparatortoolbaritem.md",
-      "hash": "f2c28204a9370b35cd29ecd3d3b31a7b5be3f826aed73c27229f3ac5b73f344b"
+      "hash": "4c777c2a82e28f899f18091f25cb3b47aca994df625afd5e31a1591e35f95719"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstrackingseparatortoolbaritem/dividerindex.json": {
       "file_path": "documentation/AppKit/nstrackingseparatortoolbaritem/dividerindex.md",
@@ -105110,7 +105110,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview.json": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview/acceptsfirstmouse(for:).json": {
       "file_path": "documentation/AppKit/nsview/acceptsfirstmouse(for).md",

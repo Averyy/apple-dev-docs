@@ -34,6 +34,8 @@ Conform your custom types to this protocol to enable automatic conversion when u
 
 > 💡 **Tip**: If your type is a string-based enum, you don’t need to explicitly conform it to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md), as the same conversions work for types that conform to `RawRepresentable` with a `String` raw value automatically.
 
+If a type conforms to both [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) and `RawRepresentable` with a `String` raw value, reader methods convert it using [`init(configString:)`](./expressiblebyconfigstring/init%28configstring%29.md) and `description` instead of its raw value.
+
 ## Custom types
 
 For other custom types, conform to the protocol [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) by providing a failable initializer and the `description` property:

@@ -53,6 +53,7 @@ let resultEmbeddings = await modelContainer.perform { context in
 - [var tokenizerDirectory: URL](./embeddermodelcontainer/tokenizerdirectory.md)
   The resolved local tokenizer directory for the loaded container.
 ### Instance Methods
+- [func memory() async throws -> ModelMemory](./embeddermodelcontainer/memory%28%29.md)
 - [func perform<R>(@Sendable (EmbeddingModel, Tokenizer, Pooling) async throws -> sending R) async rethrows -> sending R](./embeddermodelcontainer/perform%28_%29-37clz.md)
 - [func perform<R>(@Sendable (EmbedderModelContext) async throws -> sending R) async rethrows -> sending R](./embeddermodelcontainer/perform%28_%29-52sj4.md)
   Perform an action on the [`EmbedderModelContext`](./embeddermodelcontext.md). Callers *must* eval any `MLXArray` before returning as `MLXArray` is not `Sendable`.
@@ -64,6 +65,7 @@ let resultEmbeddings = await modelContainer.perform { context in
 ## Relationships
 
 ### Conforms To
+- MLXLMCommon.ModelMemoryReporting
 - Swift.Sendable
 - Swift.SendableMetatype
 

@@ -71,18 +71,18 @@ framework: "swift-configuration/Configuration"
   Asynchronously fetches a config value for the given config key.
 - [func fetchInt(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt) async throws -> Int](./configreader/fetchint%28forkey,issecret,default,fileid,line%29.md)
   Asynchronously fetches a config value for the given config key, with a default fallback.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./configreader/fetchint%28forkey,as,issecret,fileid,line%29-107qe.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./configreader/fetchint%28forkey,as,issecret,fileid,line%29-lscg.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
 - [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./configreader/fetchint%28forkey,as,issecret,fileid,line%29-6tdet.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
 - [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./configreader/fetchint%28forkey,as,issecret,default,fileid,line%29-3161u.md)
   Asynchronously fetches a config value for the given config key with default fallback, converting from an integer.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./configreader/fetchint%28forkey,as,issecret,default,fileid,line%29-41vzw.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./configreader/fetchint%28forkey,as,issecret,default,fileid,line%29-98cxe.md)
   Asynchronously fetches a config value for the given config key with default fallback, converting from an integer.
 ### Asynchronously fetching required integer values
 - [func fetchRequiredInt(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) async throws -> Int](./configreader/fetchrequiredint%28forkey,issecret,fileid,line%29.md)
   Asynchronously fetches a required config value for the given config key, throwing an error if it’s missing.
-- [func fetchRequiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value](./configreader/fetchrequiredint%28forkey,as,issecret,fileid,line%29-12gf.md)
+- [func fetchRequiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value](./configreader/fetchrequiredint%28forkey,as,issecret,fileid,line%29-7yhhj.md)
   Asynchronously fetches a required config value for the given config key, converting from an integer.
 - [func fetchRequiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value](./configreader/fetchrequiredint%28forkey,as,issecret,fileid,line%29-8b0sw.md)
   Asynchronously fetches a required config value for the given config key, converting from an integer.
@@ -93,9 +93,9 @@ framework: "swift-configuration/Configuration"
   Asynchronously fetches a config value for the given config key, with a default fallback.
 - [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./configreader/fetchintarray%28forkey,as,issecret,fileid,line%29-16vlr.md)
   Asynchronously fetches an array of config values for the given config key, converting from integers.
-- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./configreader/fetchintarray%28forkey,as,issecret,fileid,line%29-6rhh4.md)
+- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]?](./configreader/fetchintarray%28forkey,as,issecret,fileid,line%29-30vq2.md)
   Asynchronously fetches an array of config values for the given config key, converting from integers.
-- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchintarray%28forkey,as,issecret,default,fileid,line%29-79l2m.md)
+- [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchintarray%28forkey,as,issecret,default,fileid,line%29-8kebn.md)
   Asynchronously fetches an array of config values for the given config key with default fallback, converting from integers.
 - [func fetchIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchintarray%28forkey,as,issecret,default,fileid,line%29-8ldio.md)
   Asynchronously fetches an array of config values for the given config key with default fallback, converting from integers.
@@ -104,7 +104,7 @@ framework: "swift-configuration/Configuration"
   Asynchronously fetches a required config value for the given config key, throwing an error if it’s missing.
 - [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-6a1e3.md)
   Asynchronously fetches a required array of config values for the given config key, converting from integers.
-- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-599c5.md)
+- [func fetchRequiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> [Value]](./configreader/fetchrequiredintarray%28forkey,as,issecret,fileid,line%29-g0pq.md)
   Asynchronously fetches a required array of config values for the given config key, converting from integers.
 ### Asynchronously fetching double values
 - [func fetchDouble(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) async throws -> Double?](./configreader/fetchdouble%28forkey,issecret,fileid,line%29.md)

@@ -54,7 +54,7 @@
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
+      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-13_1-release-notes.md",
@@ -190,7 +190,7 @@
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-big-sur-11_3-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-big-sur-11_3-release-notes.md",
-      "hash": "ed23f75f8962337896237cb52836d417529e180f950e1e7f43f225fbc8fa8115"
+      "hash": "2d1840c2476d0f5a2149c892f75c2c76f6140e15276daad2baa3a947a787a5c9"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-big-sur-11_4-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-big-sur-11_4-release-notes.md",
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15-release-notes.md",
-      "hash": "f19f2451fc44759b72caf635386b8e7be6126d9595909f1171e202a575060962"
+      "hash": "de6c3795349c83767b7c588407a7bc82d206e0b24cf08d172c52e6c747b09685"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15_1-release-notes": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.md",
@@ -306,7 +306,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
+      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_1-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-13_1-release-notes.md",
@@ -442,7 +442,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_3-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-big-sur-11_3-release-notes.md",
-      "hash": "ed23f75f8962337896237cb52836d417529e180f950e1e7f43f225fbc8fa8115"
+      "hash": "2d1840c2476d0f5a2149c892f75c2c76f6140e15276daad2baa3a947a787a5c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_4-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-big-sur-11_4-release-notes.md",
@@ -454,7 +454,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15-release-notes.md",
-      "hash": "f19f2451fc44759b72caf635386b8e7be6126d9595909f1171e202a575060962"
+      "hash": "de6c3795349c83767b7c588407a7bc82d206e0b24cf08d172c52e6c747b09685"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.json": {
       "file_path": "documentation/macos-release-notes/macos-catalina-10_15_1-release-notes.md",

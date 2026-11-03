@@ -150,7 +150,7 @@
     },
     "https://developer.apple.com/documentation/widgetkit/adding-refinements-and-configuration-to-controls": {
       "file_path": "documentation/WidgetKit/adding-refinements-and-configuration-to-controls.md",
-      "hash": "7f72eae49529d0862cf1ee5aadbb501206bb484998b1b694ba9fbbcbd47e18a4"
+      "hash": "ec82db3ba429c41261ff1ef9617fbc650651082b062d6e05c250a53e4e8d5dd8"
     },
     "https://developer.apple.com/documentation/widgetkit/adding-standby-and-carplay-support-to-your-widget": {
       "file_path": "documentation/WidgetKit/adding-standby-and-carplay-support-to-your-widget.md",
@@ -638,7 +638,7 @@
     },
     "https://developer.apple.com/documentation/widgetkit/levelofdetail": {
       "file_path": "documentation/WidgetKit/levelofdetail.md",
-      "hash": "d78c3b988397bd51da3d5e25e127986758627be7b3f491382d8d9f3364c10e1d"
+      "hash": "d83459c6d57b417ec64cae38c9579aa2c58c4e25148198789f3fa4896f908d36"
     },
     "https://developer.apple.com/documentation/widgetkit/levelofdetail/default": {
       "file_path": "documentation/WidgetKit/levelofdetail/default.md",
@@ -1002,7 +1002,7 @@
     },
     "https://developer.apple.com/documentation/widgetkit/updating-your-widgets-for-visionos": {
       "file_path": "documentation/WidgetKit/updating-your-widgets-for-visionos.md",
-      "hash": "e5649f7edf57202967613eda84ab8a71ceeba25726d67825ca0ff6b70768f557"
+      "hash": "ab774055603e389d8aeca04836004edd0dd8d3fbb8ce2500229068de3d15c17b"
     },
     "https://developer.apple.com/documentation/widgetkit/wgwidgetuserinfokeyactivityid": {
       "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyactivityid.md",
@@ -1194,7 +1194,7 @@
     },
     "https://developer.apple.com/documentation/widgetkit/widgetmountingstyle": {
       "file_path": "documentation/WidgetKit/widgetmountingstyle.md",
-      "hash": "9fd0d030351d45b05880b43de79d728cb06e4c6fd9cc8cbfecd175076b401aee"
+      "hash": "5de47f89a350b71b57fd5353b72366aa2da23c4318b2c2c75b2bb9e7763942a6"
     },
     "https://developer.apple.com/documentation/widgetkit/widgetmountingstyle/elevated": {
       "file_path": "documentation/WidgetKit/widgetmountingstyle/elevated.md",
@@ -1302,11 +1302,11 @@
     },
     "https://developer.apple.com/documentation/widgetkit/widgets-and-complications-collection": {
       "file_path": "documentation/WidgetKit/widgets-and-complications-collection.md",
-      "hash": "0157ad8e14e49b41cdb794a6a47ffb36127cee6c481de8047700adf2c76ef50c"
+      "hash": "ac90bd20509291e3f05499b080fb8dafbcec761c14f90d84f74d09226d5c62cb"
     },
     "https://developer.apple.com/documentation/widgetkit/widgettexture": {
       "file_path": "documentation/WidgetKit/widgettexture.md",
-      "hash": "c78870944b56413c0b9ea2ccc9471cddf6feff7c46f1c9e95e3765e870850c8e"
+      "hash": "7f5575be4b10749deb13a839ef551ef61eb35b60a21c15a83c70a4ca0881d91c"
     },
     "https://developer.apple.com/documentation/widgetkit/widgettexture/glass": {
       "file_path": "documentation/WidgetKit/widgettexture/glass.md",
@@ -1466,7 +1466,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/adding-refinements-and-configuration-to-controls.json": {
       "file_path": "documentation/WidgetKit/adding-refinements-and-configuration-to-controls.md",
-      "hash": "7f72eae49529d0862cf1ee5aadbb501206bb484998b1b694ba9fbbcbd47e18a4"
+      "hash": "ec82db3ba429c41261ff1ef9617fbc650651082b062d6e05c250a53e4e8d5dd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/adding-standby-and-carplay-support-to-your-widget.json": {
       "file_path": "documentation/WidgetKit/adding-standby-and-carplay-support-to-your-widget.md",
@@ -1954,7 +1954,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/levelofdetail.json": {
       "file_path": "documentation/WidgetKit/levelofdetail.md",
-      "hash": "d78c3b988397bd51da3d5e25e127986758627be7b3f491382d8d9f3364c10e1d"
+      "hash": "d83459c6d57b417ec64cae38c9579aa2c58c4e25148198789f3fa4896f908d36"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/levelofdetail/default.json": {
       "file_path": "documentation/WidgetKit/levelofdetail/default.md",
@@ -2318,7 +2318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/updating-your-widgets-for-visionos.json": {
       "file_path": "documentation/WidgetKit/updating-your-widgets-for-visionos.md",
-      "hash": "e5649f7edf57202967613eda84ab8a71ceeba25726d67825ca0ff6b70768f557"
+      "hash": "ab774055603e389d8aeca04836004edd0dd8d3fbb8ce2500229068de3d15c17b"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/wgwidgetuserinfokeyactivityid.json": {
       "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyactivityid.md",
@@ -2510,7 +2510,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widgetmountingstyle.json": {
       "file_path": "documentation/WidgetKit/widgetmountingstyle.md",
-      "hash": "9fd0d030351d45b05880b43de79d728cb06e4c6fd9cc8cbfecd175076b401aee"
+      "hash": "5de47f89a350b71b57fd5353b72366aa2da23c4318b2c2c75b2bb9e7763942a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widgetmountingstyle/elevated.json": {
       "file_path": "documentation/WidgetKit/widgetmountingstyle/elevated.md",
@@ -2618,11 +2618,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widgets-and-complications-collection.json": {
       "file_path": "documentation/WidgetKit/widgets-and-complications-collection.md",
-      "hash": "0157ad8e14e49b41cdb794a6a47ffb36127cee6c481de8047700adf2c76ef50c"
+      "hash": "ac90bd20509291e3f05499b080fb8dafbcec761c14f90d84f74d09226d5c62cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widgettexture.json": {
       "file_path": "documentation/WidgetKit/widgettexture.md",
-      "hash": "c78870944b56413c0b9ea2ccc9471cddf6feff7c46f1c9e95e3765e870850c8e"
+      "hash": "7f5575be4b10749deb13a839ef551ef61eb35b60a21c15a83c70a4ca0881d91c"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widgettexture/glass.json": {
       "file_path": "documentation/WidgetKit/widgettexture/glass.md",

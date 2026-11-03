@@ -42,8 +42,7 @@ The system can update the levelOfDetail value based on user proximity or other s
 ### visionOS widgets
 - [Updating your widgets for visionOS](./updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
-- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration\n](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](./widgettexture.md)
   Values that define the texture of the widget’s coating layer.

@@ -56,7 +56,7 @@ try await config.watchRequiredIntArray(forKey: ["api", "versions"], as: APIVersi
 ### Watching required lists of integer values
 - [func watchRequiredIntArray<Return>(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<[Int], any Error>) async throws -> Return) async throws -> Return](./watchrequiredintarray%28forkey,issecret,fileid,line,updateshandler%29.md)
   Watches for updates to a required config value for the given config key.
-- [func watchRequiredIntArray<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<[Value], any Error>) async throws -> Return) async throws -> Return](./watchrequiredintarray%28forkey,as,issecret,fileid,line,updateshandler%29-6r3y7.md)
+- [func watchRequiredIntArray<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<[Value], any Error>) async throws -> Return) async throws -> Return](./watchrequiredintarray%28forkey,as,issecret,fileid,line,updateshandler%29-2xrsn.md)
   Watches for updates to a required array of config values for the given config key, converting from integers.
 
 

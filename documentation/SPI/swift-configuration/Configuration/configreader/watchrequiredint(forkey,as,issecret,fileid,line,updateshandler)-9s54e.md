@@ -56,7 +56,7 @@ try await config.watchRequiredInt(forKey: ["api", "version"], as: APIVersion.sel
 ### Watching required integer values
 - [func watchRequiredInt<Return>(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Int, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,issecret,fileid,line,updateshandler%29.md)
   Watches for updates to a required config value for the given config key.
-- [func watchRequiredInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,as,issecret,fileid,line,updateshandler%29-8ydgp.md)
+- [func watchRequiredInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,as,issecret,fileid,line,updateshandler%29-31x08.md)
   Watches for updates to a required config value for the given config key, converting from an integer.
 
 

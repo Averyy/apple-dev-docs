@@ -38,6 +38,7 @@ final class Qwen35MTPDraftModel
 - [func sanitize(weights: [String : MLXArray]) throws -> [String : MLXArray]](./qwen35mtpdraftmodel/sanitize%28weights%29.md)
 - [func sanitize(weights: [String : MLXArray], metadata: [String : String]) throws -> [String : MLXArray]](./qwen35mtpdraftmodel/sanitize%28weights,metadata%29.md)
 ### Default Implementations
+- [BaseLanguageModel Implementations](./qwen35mtpdraftmodel/baselanguagemodel-implementations.md)
 - [ModelConversionMetadataProvider Implementations](./qwen35mtpdraftmodel/modelconversionmetadataprovider-implementations.md)
 
 ## Relationships

@@ -30,6 +30,9 @@
       "applebusinessapi": {},
       "appleschoolmanagerapi": {}
     },
+    "gone_links": [
+      "https://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit"
+    ],
     "render": {
       "version": 4
     },

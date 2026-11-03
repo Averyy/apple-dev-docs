@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-30T08:12:32.769329",
+    "last_updated": "2026-11-03T08:01:55.228991",
     "total_files": 855,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -848,13 +848,13 @@
     "github:apple/container:docs/command-reference.md": "d0d7b458bc2422357bbb5ff1a9974ac90580c52473278de4b4493a807d07afc9",
     "github:apple/container:docs/container-inspection.md": "a9daf9a3f12f4e8070228cfb0e6400f4609f7aac2f0474c69ce058b993c3ff4c",
     "github:apple/container:docs/container-machine.md": "038e35a1d343284cbfe8d4171511c0c5ecede892cb0e375364015681b9194653",
-    "github:apple/container:docs/container-system-config.md": "8e9ccb13b153329af1a9f0feeb53d454a6b5feb4c40ce7ab31cb73db06ee2702",
+    "github:apple/container:docs/container-system-config.md": "ea86adcf868c8aa634e9f6946e4843db8ac1b7ae5d1fbc80baf8ff4ea3b94ca4",
     "github:apple/container:docs/host-integration.md": "816a68673732dd2f2445e786c0336ed66bb3486247a128762449356d96856bad",
     "github:apple/container:docs/how-to.md": "954f79a390bd40f3e7bf37502199eb400dded833bd7fab78014c26d04f94f302",
     "github:apple/container:docs/logs.md": "cb4635da823fc632b7145257f59790d12be60de28d613a2e03f44e2a4ba6a240",
     "github:apple/container:docs/multiplatform-images.md": "012cb608c580f1f17ee5ca175e988ccfb2e3d8c3d0c894526e11b00dd3c7f9f3",
-    "github:apple/container:docs/networking.md": "db1ec204709cd8300feccbe94296eeed4c92ed69ae4e42c53a68682a3740607b",
-    "github:apple/container:docs/resource-usage.md": "89772df74691918b96905f48bdf26719a9ce956970df25eef025634261d37c2c",
+    "github:apple/container:docs/networking.md": "ee1cc2b44fcb298f25b6322906a1bac709149dfd45f8bb41e851b5832993208d",
+    "github:apple/container:docs/resource-usage.md": "60220d4d1d7a7bec44f3c9884c8b066875dbb8bc1f5eea83ee81aea2caa51e7b",
     "github:apple/container:docs/runtime-configuration.md": "8e8254751d6572f079df24671bb905f0c71da7a003ee30ccaf71777dd83305a8",
     "github:apple/container:docs/shell-completions.md": "1eb54cde79cbe3830b67abfb49a96481429fbc6fc310845b8d1736dc1705ef72",
     "github:apple/container:docs/technical-overview.md": "64c59aef1c21aa22d4ba8ac70ab87f58edc4b124bf52fd72e5d01f5f8c04cb8c",

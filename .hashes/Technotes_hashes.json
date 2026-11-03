@@ -286,7 +286,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key": {
       "file_path": "documentation/Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md",
-      "hash": "651d244ed2b0697ada8e043cea1374786e3410a5c7d622048d2fc7b85419aae3"
+      "hash": "772036db09c1c40d4afc0dc0048c3fd7b93ffd802e63a40158edeaa43c690c60"
     },
     "https://developer.apple.com/documentation/technotes/tn3193-managing-the-on-device-foundation-model-s-context-window": {
       "file_path": "documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.md",
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.json": {
       "file_path": "documentation/Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md",
-      "hash": "651d244ed2b0697ada8e043cea1374786e3410a5c7d622048d2fc7b85419aae3"
+      "hash": "772036db09c1c40d4afc0dc0048c3fd7b93ffd802e63a40158edeaa43c690c60"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.json": {
       "file_path": "documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.md",

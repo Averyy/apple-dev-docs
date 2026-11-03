@@ -85,16 +85,19 @@ let httpTimeout = snapshotReader.int(
 
 ### Automatic type conversion
 
-String configuration values can be automatically converted to other types using the `as:` parameter. This works with:
+The library can automatically convert string or integer configuration values to other types using the `as:` parameter. This works with:
 
-- String-backed enum types, as they conform to `RawRepresentable<String>`.
-- Types that you explicitly conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md).
+- String-backed enums and enums backed by a `BinaryInteger`, through `RawRepresentable`. Integer raw values must be representable as an `Int`, because providers return integer values as `Int`.
+- Types that you explicitly conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) or [`ExpressibleByConfigInt`](./expressiblebyconfigint.md). These conformances take precedence over a `RawRepresentable` conformance on the same type.
 - Built-in types that already conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md):
 
   - `SystemPackage.FilePath` - Converts from file paths.
   - `Foundation.URL` - Converts from URL strings.
   - `Foundation.UUID` - Converts from UUID strings.
   - `Foundation.Date` - Converts from ISO8601 date strings.
+- Built-in types that already conform to [`ExpressibleByConfigInt`](./expressiblebyconfigint.md):
+
+  - `Swift.Duration` - Converts from an integer value to a duration measured in seconds.
 
 ```swift
 // Built-in type conversion
@@ -209,11 +212,11 @@ When reading from a snapshot, access events are reported to the access reporter 
   Synchronously gets a config value for the given config key.
 - [func int(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt) -> Int](./configsnapshotreader/int%28forkey,issecret,default,fileid,line%29.md)
   Synchronously gets a config value for the given config key, with a default fallback.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configsnapshotreader/int%28forkey,as,issecret,fileid,line%29-3edsa.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configsnapshotreader/int%28forkey,as,issecret,fileid,line%29-1yzf8.md)
   Synchronously gets a config value for the given config key, converting from integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./configsnapshotreader/int%28forkey,as,issecret,fileid,line%29-1l91m.md)
   Synchronously gets a config value for the given config key, converting from integer.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configsnapshotreader/int%28forkey,as,issecret,default,fileid,line%29-8oo8c.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configsnapshotreader/int%28forkey,as,issecret,default,fileid,line%29-70oev.md)
   Synchronously gets a config value for the given config key with default fallback, converting from integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./configsnapshotreader/int%28forkey,as,issecret,default,fileid,line%29-3a0gv.md)
   Synchronously gets a config value for the given config key with default fallback, converting from integer.
@@ -222,18 +225,18 @@ When reading from a snapshot, access events are reported to the access reporter 
   Synchronously gets a required config value for the given config key, throwing an error if it’s missing.
 - [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configsnapshotreader/requiredint%28forkey,as,issecret,fileid,line%29-4jh1t.md)
   Synchronously gets a required config value for the given config key, converting from integer.
-- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configsnapshotreader/requiredint%28forkey,as,issecret,fileid,line%29-x6dx.md)
+- [func requiredInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> Value](./configsnapshotreader/requiredint%28forkey,as,issecret,fileid,line%29-790fb.md)
   Synchronously gets a required config value for the given config key, converting from integer.
 ### Synchronously reading lists of integer values
 - [func intArray(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) -> [Int]?](./configsnapshotreader/intarray%28forkey,issecret,fileid,line%29.md)
   Synchronously gets a config value for the given config key.
 - [func intArray(forKey: ConfigKey, isSecret: Bool, default: [Int], fileID: String, line: UInt) -> [Int]](./configsnapshotreader/intarray%28forkey,issecret,default,fileid,line%29.md)
   Synchronously gets a config value for the given config key, with a default fallback.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configsnapshotreader/intarray%28forkey,as,issecret,fileid,line%29-5dw7j.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configsnapshotreader/intarray%28forkey,as,issecret,fileid,line%29-4dcfr.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
 - [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./configsnapshotreader/intarray%28forkey,as,issecret,fileid,line%29-8nwxy.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configsnapshotreader/intarray%28forkey,as,issecret,default,fileid,line%29-85dpy.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configsnapshotreader/intarray%28forkey,as,issecret,default,fileid,line%29-2w429.md)
   Synchronously gets an array of config values for the given config key with default fallback, converting from integers.
 - [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./configsnapshotreader/intarray%28forkey,as,issecret,default,fileid,line%29-4u516.md)
   Synchronously gets an array of config values for the given config key with default fallback, converting from integers.
@@ -242,7 +245,7 @@ When reading from a snapshot, access events are reported to the access reporter 
   Synchronously gets a required config value for the given config key, throwing an error if it’s missing.
 - [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configsnapshotreader/requiredintarray%28forkey,as,issecret,fileid,line%29-82bhm.md)
   Synchronously gets a required array of config values for the given config key, converting from integers.
-- [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configsnapshotreader/requiredintarray%28forkey,as,issecret,fileid,line%29-1c4qk.md)
+- [func requiredIntArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) throws -> [Value]](./configsnapshotreader/requiredintarray%28forkey,as,issecret,fileid,line%29-7tns9.md)
   Synchronously gets a required array of config values for the given config key, converting from integers.
 ### Synchronously reading double values
 - [func double(forKey: ConfigKey, isSecret: Bool, fileID: String, line: UInt) -> Double?](./configsnapshotreader/double%28forkey,issecret,fileid,line%29.md)

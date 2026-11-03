@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "fe9e9c90e50c1b7021424af11c3ebab3ac8f2ae4c43a6de0e3efb46ae0cde752"
     },
     "https://developer.apple.com/documentation/technologyoverviews/ai-machine-learning": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -134,7 +134,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/interface-fundamentals": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
+      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
     },
     "https://developer.apple.com/documentation/technologyoverviews/liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "fe9e9c90e50c1b7021424af11c3ebab3ac8f2ae4c43a6de0e3efb46ae0cde752"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/ai-machine-learning.json": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -326,7 +326,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
+      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",

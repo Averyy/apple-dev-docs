@@ -54,11 +54,11 @@ let apiVersion = try await config.fetchInt(forKey: ["api", "version"], as: APIVe
   Asynchronously fetches a config value for the given config key.
 - [func fetchInt(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt) async throws -> Int](./fetchint%28forkey,issecret,default,fileid,line%29.md)
   Asynchronously fetches a config value for the given config key, with a default fallback.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-107qe.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-lscg.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
 - [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) async throws -> Value?](./fetchint%28forkey,as,issecret,fileid,line%29-6tdet.md)
   Asynchronously fetches a config value for the given config key, converting from an integer.
-- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./fetchint%28forkey,as,issecret,default,fileid,line%29-41vzw.md)
+- [func fetchInt<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) async throws -> Value](./fetchint%28forkey,as,issecret,default,fileid,line%29-98cxe.md)
   Asynchronously fetches a config value for the given config key with default fallback, converting from an integer.
 
 

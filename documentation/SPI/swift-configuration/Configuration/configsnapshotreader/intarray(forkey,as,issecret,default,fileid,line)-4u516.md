@@ -52,11 +52,11 @@ let apiVersions = snapshot.intArray(forKey: ["api", "versions"], as: APIVersion.
   Synchronously gets a config value for the given config key.
 - [func intArray(forKey: ConfigKey, isSecret: Bool, default: [Int], fileID: String, line: UInt) -> [Int]](./intarray%28forkey,issecret,default,fileid,line%29.md)
   Synchronously gets a config value for the given config key, with a default fallback.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./intarray%28forkey,as,issecret,fileid,line%29-5dw7j.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./intarray%28forkey,as,issecret,fileid,line%29-4dcfr.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
 - [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> [Value]?](./intarray%28forkey,as,issecret,fileid,line%29-8nwxy.md)
   Synchronously gets an array of config values for the given config key, converting from integers.
-- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./intarray%28forkey,as,issecret,default,fileid,line%29-85dpy.md)
+- [func intArray<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: [Value], fileID: String, line: UInt) -> [Value]](./intarray%28forkey,as,issecret,default,fileid,line%29-2w429.md)
   Synchronously gets an array of config values for the given config key with default fallback, converting from integers.
 
 

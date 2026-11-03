@@ -55,7 +55,7 @@ try await config.watchRequiredInt(forKey: ["server", "port"]) { updates in
 ### Watching required integer values
 - [func watchRequiredInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,as,issecret,fileid,line,updateshandler%29-9s54e.md)
   Watches for updates to a required config value for the given config key, converting from an integer.
-- [func watchRequiredInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,as,issecret,fileid,line,updateshandler%29-8ydgp.md)
+- [func watchRequiredInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, any Error>) async throws -> Return) async throws -> Return](./watchrequiredint%28forkey,as,issecret,fileid,line,updateshandler%29-31x08.md)
   Watches for updates to a required config value for the given config key, converting from an integer.
 
 

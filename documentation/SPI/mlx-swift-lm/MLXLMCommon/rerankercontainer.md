@@ -20,7 +20,7 @@ final class RerankerContainer
 ## Topics
 
 ### Initializers
-- [init(modelID: String, scoreKind: RerankScoreKind, scoreOperation: ScoreOperation)](./rerankercontainer/init%28modelid,scorekind,scoreoperation%29.md)
+- [init(modelID: String, scoreKind: RerankScoreKind, memoryReporter: (any ModelMemoryReporting)?, scoreOperation: ScoreOperation)](./rerankercontainer/init%28modelid,scorekind,memoryreporter,scoreoperation%29.md)
   Create a type-erased reranker around a scoring operation.
 ### Instance Properties
 - [let modelID: String](./rerankercontainer/modelid.md)
@@ -28,6 +28,8 @@ final class RerankerContainer
 - [let scoreKind: RerankScoreKind](./rerankercontainer/scorekind.md)
   Semantic meaning and numeric range of returned scores.
 ### Instance Methods
+- [func memory() async throws -> ModelMemory?](./rerankercontainer/memory%28%29.md)
+  Measure model tensor buffers, or `nil` if no memory reporter was provided.
 - [func scores(query: String, documents: [String], instruction: String?, options: RerankExecutionOptions) async throws -> RerankResponse](./rerankercontainer/scores%28query,documents,instruction,options%29.md)
   Score documents while preserving their original order.
 ### Type Aliases

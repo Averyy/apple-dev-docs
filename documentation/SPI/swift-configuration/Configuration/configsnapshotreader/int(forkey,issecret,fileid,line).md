@@ -48,11 +48,11 @@ let port = snapshot.int(forKey: ["server", "port"])
 ### Synchronously reading integer values
 - [func int(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt) -> Int](./int%28forkey,issecret,default,fileid,line%29.md)
   Synchronously gets a config value for the given config key, with a default fallback.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./int%28forkey,as,issecret,fileid,line%29-3edsa.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./int%28forkey,as,issecret,fileid,line%29-1yzf8.md)
   Synchronously gets a config value for the given config key, converting from integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt) -> Value?](./int%28forkey,as,issecret,fileid,line%29-1l91m.md)
   Synchronously gets a config value for the given config key, converting from integer.
-- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./int%28forkey,as,issecret,default,fileid,line%29-8oo8c.md)
+- [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./int%28forkey,as,issecret,default,fileid,line%29-70oev.md)
   Synchronously gets a config value for the given config key with default fallback, converting from integer.
 - [func int<Value>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt) -> Value](./int%28forkey,as,issecret,default,fileid,line%29-3a0gv.md)
   Synchronously gets a config value for the given config key with default fallback, converting from integer.

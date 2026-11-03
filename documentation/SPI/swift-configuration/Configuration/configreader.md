@@ -111,10 +111,10 @@ Providers can use this context to return specialized values or fall back to gene
 
 ### Automatic type conversion
 
-The library can automatically convert string or int configuration values to other types using the `as:` parameter. This works with:
+The library can automatically convert string or integer configuration values to other types using the `as:` parameter. This works with:
 
-- String or Int backed enum types, as they conform to `RawRepresentable<String>` or `RawRepresentable<Int>`.
-- Types that you explicitly conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) or [`ExpressibleByConfigInt`](./expressiblebyconfigint.md).
+- String-backed enums and enums backed by a `BinaryInteger`, through `RawRepresentable`. Integer raw values must be representable as an `Int`, because providers return integer values as `Int`.
+- Types that you explicitly conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) or [`ExpressibleByConfigInt`](./expressiblebyconfigint.md). These conformances take precedence over a `RawRepresentable` conformance on the same type.
 - Built-in types that already conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md):
 
   - `SystemPackage.FilePath` - Converts from file paths.
@@ -122,7 +122,8 @@ The library can automatically convert string or int configuration values to othe
   - `Foundation.UUID` - Converts from UUID strings.
   - `Foundation.Date` - Converts from ISO8601 date strings.
 - Built-in types that already conform to [`ExpressibleByConfigInt`](./expressiblebyconfigint.md):
-- `Swift.Duration` - Converts from an integer value to a Duration measured in seconds.
+
+  - `Swift.Duration` - Converts from an integer value to a duration measured in seconds.
 
 ```swift
 // Built-in type conversion

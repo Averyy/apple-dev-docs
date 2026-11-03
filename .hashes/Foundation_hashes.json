@@ -20698,7 +20698,7 @@
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring": {
       "file_path": "documentation/Foundation/nsattributedstring.md",
-      "hash": "82ffa7f7c351b4766df4c3b1be2eaecad6c42c65ecc43e93049e585543ef5035"
+      "hash": "422b428744a2db8f4c07b8487259119fc245483f3ae7508da9174e9af0e63837"
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring/attribute(_:at:effectiverange:)": {
       "file_path": "documentation/Foundation/nsattributedstring/attribute(_,at,effectiverange).md",
@@ -21159,10 +21159,6 @@
     "https://developer.apple.com/documentation/foundation/nsattributedstring/init(markdown:options:baseurl:)-m9n": {
       "file_path": "documentation/Foundation/nsattributedstring/init(markdown,options,baseurl)-m9n.md",
       "hash": "045f4d6d21d5307781a55d05da462e7187d191abcaa8b3484999b36920aca2a9"
-    },
-    "https://developer.apple.com/documentation/foundation/nsattributedstring/init(pasteboardpropertylist:oftype:)": {
-      "file_path": "documentation/Foundation/nsattributedstring/init(pasteboardpropertylist,oftype).md",
-      "hash": "e7d8167cb5549d09b617894a37e005e1bd4c3b640400c7b9afa36ce7f9d5ff6a"
     },
     "https://developer.apple.com/documentation/foundation/nsattributedstring/init(path:documentattributes:)": {
       "file_path": "documentation/Foundation/nsattributedstring/init(path,documentattributes).md",
@@ -40194,7 +40190,7 @@
     },
     "https://developer.apple.com/documentation/foundation/nsurl": {
       "file_path": "documentation/Foundation/nsurl.md",
-      "hash": "03c5540dfc3493e960f93d809e109f77adecc828e20d3eeea7c11218a2bdef22"
+      "hash": "fd48f379b799dc28bbbb79f9f1ebd71e368331e4328fe99ad1c1ed79d27eca0b"
     },
     "https://developer.apple.com/documentation/foundation/nsurl-isequal": {
       "file_path": "documentation/Foundation/nsurl-isequal.md",
@@ -40459,6 +40455,10 @@
     "https://developer.apple.com/documentation/foundation/nsurl/init(frompasteboard:)": {
       "file_path": "documentation/Foundation/nsurl/init(frompasteboard).md",
       "hash": "fc2a52552a31a0172b303adc7e330c99a1a1b89f4746ae58584ad184c92a10d0"
+    },
+    "https://developer.apple.com/documentation/foundation/nsurl/init(pasteboardpropertylist:oftype:)": {
+      "file_path": "documentation/Foundation/nsurl/init(pasteboardpropertylist,oftype).md",
+      "hash": "33ccfc11c250983bae521530afcaea8cddf656f530303f7102b0739ed90a8588"
     },
     "https://developer.apple.com/documentation/foundation/nsurl/init(resolvingaliasfileat:options:)": {
       "file_path": "documentation/Foundation/nsurl/init(resolvingaliasfileat,options).md",
@@ -77182,7 +77182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring.json": {
       "file_path": "documentation/Foundation/nsattributedstring.md",
-      "hash": "82ffa7f7c351b4766df4c3b1be2eaecad6c42c65ecc43e93049e585543ef5035"
+      "hash": "422b428744a2db8f4c07b8487259119fc245483f3ae7508da9174e9af0e63837"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/attribute(_:at:effectiverange:).json": {
       "file_path": "documentation/Foundation/nsattributedstring/attribute(_,at,effectiverange).md",
@@ -77643,10 +77643,6 @@
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(markdown:options:baseurl:)-m9n.json": {
       "file_path": "documentation/Foundation/nsattributedstring/init(markdown,options,baseurl)-m9n.md",
       "hash": "045f4d6d21d5307781a55d05da462e7187d191abcaa8b3484999b36920aca2a9"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(pasteboardpropertylist:oftype:).json": {
-      "file_path": "documentation/Foundation/nsattributedstring/init(pasteboardpropertylist,oftype).md",
-      "hash": "e7d8167cb5549d09b617894a37e005e1bd4c3b640400c7b9afa36ce7f9d5ff6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsattributedstring/init(path:documentattributes:).json": {
       "file_path": "documentation/Foundation/nsattributedstring/init(path,documentattributes).md",
@@ -96686,7 +96682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl.json": {
       "file_path": "documentation/Foundation/nsurl.md",
-      "hash": "03c5540dfc3493e960f93d809e109f77adecc828e20d3eeea7c11218a2bdef22"
+      "hash": "fd48f379b799dc28bbbb79f9f1ebd71e368331e4328fe99ad1c1ed79d27eca0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/absolutestring.json": {
       "file_path": "documentation/Foundation/nsurl/absolutestring.md",
@@ -96943,6 +96939,10 @@
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(frompasteboard:).json": {
       "file_path": "documentation/Foundation/nsurl/init(frompasteboard).md",
       "hash": "fc2a52552a31a0172b303adc7e330c99a1a1b89f4746ae58584ad184c92a10d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(pasteboardpropertylist:oftype:).json": {
+      "file_path": "documentation/Foundation/nsurl/init(pasteboardpropertylist,oftype).md",
+      "hash": "33ccfc11c250983bae521530afcaea8cddf656f530303f7102b0739ed90a8588"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsurl/init(resolvingaliasfileat:options:).json": {
       "file_path": "documentation/Foundation/nsurl/init(resolvingaliasfileat,options).md",

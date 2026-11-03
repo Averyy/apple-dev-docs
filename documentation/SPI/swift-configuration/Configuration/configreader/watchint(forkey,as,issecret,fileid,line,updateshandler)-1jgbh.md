@@ -62,11 +62,11 @@ try await config.watchInt(forKey: ["api", "version"], as: APIVersion.self) { upd
   Watches for updates to a config value for the given config key.
 - [func watchInt<Return>(forKey: ConfigKey, isSecret: Bool, default: Int, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Int, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,issecret,default,fileid,line,updateshandler%29.md)
   Watches for updates to a config value for the given config key with default fallback.
-- [func watchInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value?, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,as,issecret,fileid,line,updateshandler%29-8ybja.md)
+- [func watchInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value?, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,as,issecret,fileid,line,updateshandler%29-651uz.md)
   Watches for updates to a config value for the given config key, converting from an integer.
 - [func watchInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,as,issecret,default,fileid,line,updateshandler%29-933s1.md)
   Watches for updates to a config value for the given config key with default fallback, converting from an integer.
-- [func watchInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,as,issecret,default,fileid,line,updateshandler%29-4fnhy.md)
+- [func watchInt<Value, Return>(forKey: ConfigKey, as: Value.Type, isSecret: Bool, default: Value, fileID: String, line: UInt, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value, Never>) async throws -> Return) async throws -> Return](./watchint%28forkey,as,issecret,default,fileid,line,updateshandler%29-8xzas.md)
   Watches for updates to a config value for the given config key with default fallback, converting from an integer.
 
 

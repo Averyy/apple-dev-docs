@@ -8562,7 +8562,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webview-swift.struct": {
       "file_path": "documentation/WebKit/webview-swift.struct.md",
-      "hash": "61409a141130148bf8ba9dc8dda1eaffde06a0bf90b8b994f1c1a231e668a675"
+      "hash": "0f4343c465a976f0fe3db9868864cba076a5980dcba636e97277e343099f8d13"
     },
     "https://developer.apple.com/documentation/webkit/webview-swift.struct/activatedelementinfo": {
       "file_path": "documentation/WebKit/webview-swift.struct/activatedelementinfo.md",
@@ -21310,7 +21310,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webview-swift.struct.json": {
       "file_path": "documentation/WebKit/webview-swift.struct.md",
-      "hash": "61409a141130148bf8ba9dc8dda1eaffde06a0bf90b8b994f1c1a231e668a675"
+      "hash": "0f4343c465a976f0fe3db9868864cba076a5980dcba636e97277e343099f8d13"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webview-swift.struct/activatedelementinfo.json": {
       "file_path": "documentation/WebKit/webview-swift.struct/activatedelementinfo.md",
