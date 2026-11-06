@@ -58,6 +58,9 @@ let expected = result.detailed[evaluation.expectedColumn]
   Returns the first aggregate value matching the given operation, or `-1` if not found.
 - [EvaluationResult.DataFrameKind](./evaluationresult/dataframekind.md)
   The kind of DataFrame to convert for JSON serialization.
+### Checking for failures
+- [let errors: EvaluationRunErrors](./evaluationresult/errors.md)
+  A summary of the failures encountered during the run.
 ### Inspecting timing
 - [let startTime: Date](./evaluationresult/starttime.md)
   The time when the evaluation run started.
@@ -81,9 +84,6 @@ let expected = result.detailed[evaluation.expectedColumn]
   Loads an array of evaluation results from a JSONL file on disk.
 - [init(jsonData: Data) throws](./evaluationresult/init%28jsondata%29.md)
   Creates an evaluation result by parsing JSON data.
-### Instance Properties
-- [let errors: EvaluationRunErrors](./evaluationresult/errors.md)
-  A summary of the failures encountered during the run.
 
 ## Relationships
 
@@ -94,6 +94,8 @@ let expected = result.detailed[evaluation.expectedColumn]
 ## See Also
 
 ### Results
+- [struct EvaluationRunErrors](./evaluationrunerrors.md)
+  A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](./resultcolumn.md)
   A typed descriptor for a column in an evaluation result DataFrame.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)

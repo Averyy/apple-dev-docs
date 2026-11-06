@@ -7,7 +7,7 @@
 The full-screen scroll view to synchronize with a scrolling tab bar.
 
 **Availability**:
-- tvOS 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`setContentScrollView(_:for:)`](./setcontentscrollview%28_,for%29.md) instead.
 

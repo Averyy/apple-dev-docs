@@ -7,13 +7,13 @@
 Specifies the visibility of a bar managed by SwiftUI.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
-- iPadOS 16.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
-- Mac Catalyst 16.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
-- macOS 13.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
-- tvOS 16.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
+- iOS 16.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
+- iPadOS 16.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
+- Mac Catalyst 16.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
+- macOS 13.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
+- tvOS 16.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
 - visionOS 1.0+
-- watchOS 9.0+ - Deprecated in 27.2 (renamed: toolbarVisibility(_:for:))
+- watchOS 9.0+ - Deprecated in 27.3 (renamed: toolbarVisibility(_:for:))
 
 ## Declaration
 

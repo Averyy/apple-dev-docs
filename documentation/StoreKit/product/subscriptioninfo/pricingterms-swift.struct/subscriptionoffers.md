@@ -25,12 +25,8 @@ let subscriptionOffers: [Product.SubscriptionOffer]
 
 ## See Also
 
-### Instance Properties - generated
-- [let billingDisplayPrice: String](./billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
-- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
-- [let billingPrice: Decimal](./billingprice.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
+### Getting offers
+- [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](./subscript%28offers%29.md)
 
 
 ---

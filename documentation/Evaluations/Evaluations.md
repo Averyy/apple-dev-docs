@@ -48,6 +48,8 @@ The framework evaluates your intelligence-powered features against the metrics y
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Evaluating multimodal prompts](./evaluating-multimodal-prompts.md)
+  Measure how well an on-device model classifies food photos, using a multimodal prompt and a streamed image dataset.
 - [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 - [protocol Evaluation](./evaluation.md)
@@ -75,6 +77,8 @@ The framework evaluates your intelligence-powered features against the metrics y
 ### Results
 - [struct EvaluationResult](./evaluationresult.md)
   The results of running a model evaluation.
+- [struct EvaluationRunErrors](./evaluationrunerrors.md)
+  A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](./resultcolumn.md)
   A typed descriptor for a column in an evaluation result DataFrame.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
@@ -108,9 +112,6 @@ The framework evaluates your intelligence-powered features against the metrics y
   A test trait that runs an evaluation and records the result as attachments.
 - [struct EvaluationContext](./evaluationcontext.md)
   A context that provides the evaluation result within a test scope.
-### Structures
-- [struct EvaluationRunErrors](./evaluationrunerrors.md)
-  A summary of the failures encountered during an evaluation run.
 
 
 ---

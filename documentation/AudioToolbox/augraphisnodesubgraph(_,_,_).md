@@ -7,7 +7,7 @@
 Determines whether a node object represent an audio processing graph or an audio unit.
 
 **Availability**:
-- macOS 10.2+ - Deprecated in 27.2
+- macOS 10.2+ - Deprecated in 27.3
 
 > **Deprecated**: no longer supported
 

@@ -7,7 +7,7 @@
 Returns the current system cursor.
 
 **Availability**:
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 10.6+ - Deprecated in 27.0
 
 > **Deprecated**: No longer recommended. Use ScreenCaptureKit to capture the screen. Use the `showsCursor` property on `SCStreamConfiguration` to control whether or not to include the cursor in the capture. Or, use `NSCursor.currentCursor` if needing to just get the current cursor for this application.

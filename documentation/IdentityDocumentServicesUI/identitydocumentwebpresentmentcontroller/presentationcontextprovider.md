@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A delegate that provides a display context in which the system can present an authorization interface to the user.
+A delegate that provides a display context where the system can present an authorization interface to the user.
 
 **Availability**:
 - iOS 26.0+

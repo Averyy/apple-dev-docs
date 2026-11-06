@@ -21,11 +21,11 @@ string header
 
 ## Discussion
 
-Provide the `header` as a UTF-8-encoded string. The maximum string length is `66`.
+Provide the `header` as a UTF-8-encoded string with a maximum length of 66 characters.
 
-The header text appears above the [`body`](./body.md) text in a [`message`](./message.md), or above the image.
+The header text appears above the [`body`](./body.md) text in a [`message`](./message.md). If the message includes an image, the header text appears below the image by default, or above it when you set [`headerPosition`](./headerposition.md) to `ABOVE_IMAGE`.
 
-Body text appears below an optional image.
+> **Note**: Use only allowed Unicode characters in the header text. If it contains a disallowed character, [`Upload Message`](./upload-message.md) returns a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
 
 ## See Also
 
@@ -35,7 +35,7 @@ Body text appears below an optional image.
 - [type messageState](./messagestate.md)
   The approval state of the message.
 - [type body](./body.md)
-  The body text you provide for a message.
+  The main text you provide for a retention message.
 - [object BulletPoint](./bulletpoint.md)
   The text and its bullet-point image to include in a retention message’s bulleted list.
 - [type bulletPointText](./bulletpointtext.md)

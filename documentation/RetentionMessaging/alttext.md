@@ -21,7 +21,9 @@ string altText
 
 ## Discussion
 
-Provide the `altText` as a UTF-8-encoded string. The maximum string length for `altText` is `150`.
+Provide the `altText` as a UTF-8-encoded string with a maximum length of 150 characters.
+
+> **Note**: Use only allowed Unicode characters in the string. If it contains a disallowed character, [`Upload Message`](./upload-message.md) returns a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
 
 ## See Also
 

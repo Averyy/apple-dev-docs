@@ -7,11 +7,11 @@
 A histogram of the different amounts of time associated with prewarmed app launches.
 
 **Availability**:
-- iOS 15.2+ - Deprecated in 27.2
-- iPadOS 15.2+ - Deprecated in 27.2
+- iOS 15.2+ - Deprecated in 27.3
+- iPadOS 15.2+ - Deprecated in 27.3
 - Mac Catalyst 15.2+ - Deprecated in 27.0
-- macOS 12.2+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 12.2+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`OptimizedTimeToFirstDrawMetric`](../optimizedtimetofirstdrawmetric.md) instead.
 

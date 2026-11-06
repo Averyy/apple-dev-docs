@@ -23,7 +23,7 @@ For messages from the system containing sensitive data, this data is encrypted a
 
 ### Accessing message content
 - [let sessionID: UUID](./sessionid.md)
-  A unique identifier for the message’s capability session.
+  A unique identifier for the feature to which the message belongs.
 
 
 ---

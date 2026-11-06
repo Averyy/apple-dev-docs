@@ -99,6 +99,8 @@ func testPressingActionButton() throws {
 - [init()](./xcuidevice/init%28%29.md)
   Creates an instance that represents the current device.
 ### Instance Properties
+- [var hinge: XCUIHinge?](./xcuidevice/hinge.md)
+  The device’s hinge, if it has one.
 - [var voiceOverService: XCUIVoiceOverService](./xcuidevice/voiceoverservice.md)
   Provides access to VoiceOver for UI testing.
 

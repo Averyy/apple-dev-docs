@@ -7,11 +7,11 @@
 Returns an array of the daily metrics reports generated since the last allocation of the shared manager instance.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 12.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`metricReports`](../metricmanager/metricreports.md) instead.
 

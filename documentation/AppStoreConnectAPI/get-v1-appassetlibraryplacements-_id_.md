@@ -82,7 +82,7 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/2e000005-e036
 
 - `fields[appAssetLibraryPlacements]` ([string]): Additional fields to include for each app asset library placement resource returned by the response.
 
-  **Allowed Values**: `mediaType`, `placementType`, `placementGroup`, `createdDate`, `lastModifiedDate`, `state`, `stateDetails`, `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`
+  **Allowed Values**: `mediaType`, `placementType`, `placementGroup`, `createdDate`, `lastModifiedDate`, `state`, `stateDetails`, `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`, `retentionMessageVersion`
 - `fields[appAssetLibraryImages]` ([string]): Additional fields to include for each app asset library image resource returned by the response.
 
   **Allowed Values**: `category`, `createdDate`, `lastModifiedDate`, `fileName`, `fileSize`, `imageAsset`, `referenceName`, `specId`, `state`, `stateDetails`, `uploadOperations`, `placements`
@@ -103,7 +103,8 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/2e000005-e036
   **Allowed Values**: `locale`, `appStoreVersionExperimentTreatment`, `appScreenshotSets`, `appPreviewSets`, `placements`
 - `include` ([string]): The relationship data to include in the response.
 
-  **Allowed Values**: `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`
+  **Allowed Values**: `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`, `retentionMessageVersion`
+- `fields[retentionMessageVersions]` ([string]): **Allowed Values**: `state`, `retentionMessage`, `localizations`, `placement`
 
 ## Responses
 

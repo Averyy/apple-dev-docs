@@ -32,6 +32,7 @@ nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresent
 - [func appStoreOverlay(isPresented: Binding<Bool>, configuration: () -> SKOverlay.Configuration) -> some View](./appstoreoverlay%28ispresented,configuration%29.md)
   Presents a StoreKit overlay when a given condition is true.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](./managesubscriptionssheet%28ispresented%29.md)
+  Presents the App Store sheet for managing subscriptions.
 - [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](./offercoderedemption%28options,ispresented,oncompletion%29.md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func musicPicker(isPresented:title:selection:)](./musicpicker%28ispresented,title,selection%29.md)
@@ -43,6 +44,7 @@ nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresent
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View](./inapppurchaseoptions%28_%29.md)
   Add a function to call before initiating a purchase from StoreKit view within this view, providing a set of options for the purchase.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>, subscriptionGroupID: String) -> some View](./managesubscriptionssheet%28ispresented,subscriptiongroupid%29.md)
+  Presents the App Store sheet for managing subscriptions for a subscription group.
 - [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View](./oninapppurchasecompletion%28perform%29.md)
   Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 - [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View](./oninapppurchasestart%28perform%29.md)

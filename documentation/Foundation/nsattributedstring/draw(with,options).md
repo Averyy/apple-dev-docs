@@ -7,7 +7,7 @@
 Draws the attributed string with the specified options within the specified rectangle in the current graphics context.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`draw(with:options:context:)`](./draw%28with,options,context%29.md) instead.
 

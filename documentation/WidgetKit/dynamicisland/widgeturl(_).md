@@ -9,6 +9,8 @@ Sets the URL that opens the corresponding app of a Live Activity when a user tap
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

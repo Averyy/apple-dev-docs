@@ -11,6 +11,7 @@ The type that represents a position of an entry in a transcript.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 

@@ -7,7 +7,7 @@
 Returns a new template that has a gauge with leading and trailing text and an image.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

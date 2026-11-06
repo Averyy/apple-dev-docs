@@ -11,6 +11,7 @@ The maximum context size in tokens that the model supports.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.3+ (Beta)
 - visionOS 26.0+
 
 ## Declaration
@@ -22,6 +23,7 @@ final var contextSize: Int { get }
 
 ## Mentions
 
+- [Detecting available Apple Foundation Models](../detecting-available-apple-foundation-models.md)
 - [Managing the context window](../managing-the-context-window.md)
 
 ## Return Value

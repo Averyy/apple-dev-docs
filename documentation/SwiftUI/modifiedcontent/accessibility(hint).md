@@ -7,13 +7,13 @@
 Communicates to the user what happens after performing the view’s action.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityHint(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityHint(_:))
 
 > **Deprecated**: Use [`accessibilityHint(_:)`](./accessibilityhint%28_%29-cuvd.md) instead.
 

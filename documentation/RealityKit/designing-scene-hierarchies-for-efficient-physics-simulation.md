@@ -64,7 +64,7 @@ model.applyLinearImpulse(impulseStrength * impulseDirection, relativeTo: arView.
 
 ### Avoid extreme differences in size and mass
 
-RealityKit’s physics simulations work best if the size and mass ratios don’t exceed one order of magnitude.
+Physics simulations in RealityKit work best if the size and mass ratios don’t exceed one order of magnitude.
 
 - The largest object in your scene should be no more than 10 times the size of the smallest object.
 - The heaviest object in your scene should be no more than 10 times the mass of your lightest object.

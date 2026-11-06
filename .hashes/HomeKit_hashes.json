@@ -62,7 +62,7 @@
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory": {
       "file_path": "documentation/HomeKit/hmaccessory.md",
-      "hash": "ee76229d26eb84a99265dd8cbabbaaa6aaa5ae66f0f88fabbfc0dbb07864b17d"
+      "hash": "26314867b39dd1c53bff626e366a6a7a2cdc04954fbba3b9ec2caa03c2daf00a"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/bridgedaccessories": {
       "file_path": "documentation/HomeKit/hmaccessory/bridgedaccessories.md",
@@ -134,51 +134,51 @@
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature.md",
-      "hash": "4071cf4110c43c01e436b58ca81006c59a1c61c20d3b4650cd60316c53807d86"
+      "hash": "ff680aa78f7b5d3d54dfb2980132108df9e46f8f7e4843d41b2647a08275f7b2"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/id": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/id.md",
-      "hash": "188fc50fb61b6cf15f4c66fa3fc94b9aac1ff9fe46f81ec260958bdf9dd6e118"
+      "hash": "e7bc046f068c9d93469fd97f26d26217c7a1d8d7a0fce6f142a205dd132d8567"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/init(name:id:kind:)": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/init(name,id,kind).md",
-      "hash": "1fcd431a5347b6d08eecbfaccb71b46c707fc83505b1c5dd77dd129e2122ee54"
+      "hash": "9b92d2c7e3ba31c490639ae0b6c737bb7c2a7f4700e2e0873a5720fbb16d6011"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum.md",
-      "hash": "08d91380685c6eb0338293eefd09306e3949aca9eb504638efc56fe4474b37a0"
+      "hash": "e865ad051d726f96d6df4ae7ed5a6f0e8551dddc576e785f50653de8122e2533"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/helpguide": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/helpguide.md",
-      "hash": "8a7f551042cc82f8d9821b569bf422d13d4467f3d1a733fe51df62a2e2023d81"
+      "hash": "c29beb33e35ada3e3f1254d2b816c43825b5f13114661763732c3955c92fc681"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/interactivesetting": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/interactivesetting.md",
-      "hash": "5bd212210cd1711fcca53d0f430b8043b046e0f51e081237cfdb8556fa2466f3"
+      "hash": "4fb5899a89aecf526808be532decc8e8caaf67a57ee402084b0208464c364af0"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/primitivesetting": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/primitivesetting.md",
-      "hash": "eb735ccd0806cf05dc46eb94bff14063c527d48fd5f8e1b0e5b9ec24951f4b8c"
+      "hash": "b330c82fdcf65db1ec9f71f62ba8cd36afe3dd5efa2fbb4c32c75fb0ff221666"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/productmanual": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/productmanual.md",
-      "hash": "067b9c9073c319ec253c5749721e99242eb4a3fb24cb55854ddf185ac3ae5118"
+      "hash": "b9d3ad971e8f90c78244a2f85bda2816e6e87aead256dd524775287c6b9aa1b4"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/troubleshooting": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/troubleshooting.md",
-      "hash": "9b71c7d173beea9d07c4d584ca50659d6c564444a1d8c583e61fde68f4b76d4d"
+      "hash": "a32024e24ccb7f5a2c642058fa7f562f8c7f2657b152f8a87113a14e67038921"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.property": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.property.md",
-      "hash": "79eb189ada6d4fd4c1b06fe2afa3a53c4826e3a5d3186f43f0d7e83c77095288"
+      "hash": "a66ae4b372b33f5e162885eb5255e5ff7855d57a29e05ec49399c010c24e611e"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeature/name": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/name.md",
-      "hash": "0b35c4fde1cfd20404ec4e0a160051f82f5bf158825e2789b87baf24405d9ad8"
+      "hash": "eac71f34ba48e03856caa464763b2e211f86fea5b7cdb2d1d0a19de797253f10"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/manufacturerfeatures": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeatures.md",
-      "hash": "c07cae5048296f7c4c53f5209f83deb42c44f7ba2c54bc8ea6fa8e8e4648cf1e"
+      "hash": "1c1d84772ea93451cebe4a28d93a04f0a0de0abd9ea72033c8dbccdb655e6f08"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/matternodeid-5zfqo": {
       "file_path": "documentation/HomeKit/hmaccessory/matternodeid-5zfqo.md",
@@ -210,7 +210,7 @@
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/showmanufacturerextension(for:featureid:)": {
       "file_path": "documentation/HomeKit/hmaccessory/showmanufacturerextension(for,featureid).md",
-      "hash": "da70417fbee3c38c4bd9f27a666819db290b7e8e061d72449ff75e9feea2b14f"
+      "hash": "482391709e0c5b19b78c09d465abdf69c63ac887a3ac9be5efc2d015da81ea5d"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/supportsidentify": {
       "file_path": "documentation/HomeKit/hmaccessory/supportsidentify.md",
@@ -4210,11 +4210,11 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhome/isprovisionalhome": {
       "file_path": "documentation/HomeKit/hmhome/isprovisionalhome.md",
-      "hash": "0ce0be8d7e1e68c85f2a152de438c453b6b710594d1ce089c552b95acb1c4d0f"
+      "hash": "83be0e59cba3525b0298c18d6d5118693aa200ca04488010f6d8245a3f41792a"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/isprovisionalhome(forpairingidentifier:)": {
       "file_path": "documentation/HomeKit/hmhome/isprovisionalhome(forpairingidentifier).md",
-      "hash": "2eda723501ebec9cc5bcdac611709fff28caf7eb1d4e523de33dd92583e270e5"
+      "hash": "6ac566f72a7a1318181a89949d076bb7206c875ad4617a60884f757a4592aad5"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/manageusers(completionhandler:)": {
       "file_path": "documentation/HomeKit/hmhome/manageusers(completionhandler).md",
@@ -4238,103 +4238,103 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhomeconnectiondetails": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails.md",
-      "hash": "90030c8233a8efd23b014c51620bfdce1ed13737c81dd2106f936996f9c41ad0"
+      "hash": "522628b3039dc8e8e4a0414114fb3f3b5dd3bc523475cb806cc9da64a37ae0ce"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhomeconnectiondetails/init(transfertoken:)": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails/init(transfertoken).md",
-      "hash": "309e271a342c99add149373161604c96a050ae3134ac411ce2a1ee9c267b2176"
+      "hash": "7c5f8ee0b514608efb73f2898ec3b5538129e7a7697855a1dc3c4f9b51a1da31"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhomeconnectiondetails/transfertoken": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails/transfertoken.md",
-      "hash": "feb51692fe22341209c7661fa09d3700be676b47a65717d76b77c35915e6567a"
+      "hash": "d604a988831feed8ee7a7fcb784d4cade041bb5599226808af77974c6432a330"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransfererror": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror.md",
-      "hash": "fda5dd0bbc724e673a54665ef99c6a686daf61e7490f6a32c85c0493ddaaead7"
+      "hash": "c0dae52c172e099cd9c8d5ac571fdfa908c4c5958ffc31fb0dfdbf048efd9531"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransfererror/authenticationfailed": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/authenticationfailed.md",
-      "hash": "a513bab1e5d29b57404da886b0302344e23462af79c73047ae24eed39bc3b077"
+      "hash": "4db63854076fee6e0e25fc082c8c97472b613b3065687e0d86611916d65501f9"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransfererror/connectionfailed": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/connectionfailed.md",
-      "hash": "feeace8328262f3d8d09e5fa74abe2beca518a76f0e14de8f5c40396b7228fc0"
+      "hash": "ef1a77d43f2def67a61d987cc8727857215884ebccdee6c8e8c8eb2a86b17bc2"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransfererror/servererror": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/servererror.md",
-      "hash": "7b4cc97d4fe20da2ba30daa514537ebaedb759501d1fb536039e4fceeddaf1e4"
+      "hash": "8a43438fecce1e96fe3cd7dc69507dad2ada7e5872e8ce8c4f3f5a57f79ca49c"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransfererror/targethomerejected": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/targethomerejected.md",
-      "hash": "eccc7347b5d2f90bbbc762e75b04e0e9204c339fa007bfd2034c1355ea6e6e54"
+      "hash": "4cad6b78721d60e6f249b4654dc881f01cc76c1057e884741b9cf11590e2e283"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult.md",
-      "hash": "1f5ace508c5165e54cafb66fede4a1ecc2d58b7ab1391c955d5ce4a079f2db5d"
+      "hash": "c99e4096aa0ac708c4a8745ad6c3ae9ccc400a6371b79b722fd85b580cac4c89"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessories": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessories.md",
-      "hash": "0209bc45edac560a80a8d109b7cca50d447088721cd8863a53def50ec3f702bf"
+      "hash": "9d2235d789e1be843e07ff12d619c2c94db405c1da4ea6c7960f7e9d1fa35340"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory.md",
-      "hash": "485fe15b459550c614957fe195caf96a5ef977517873ed29b674a221e66e5aa4"
+      "hash": "9f23c052ea8333ea23c148d9e3ad159791339cdbb7c1386c77fc15f18c33a15d"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/init(uuid:name:reason:localizedfailuredescription:)": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/init(uuid,name,reason,localizedfailuredescription).md",
-      "hash": "7b4c2703882287fbffe51de8bc954b2f71e46e2fc893f14ead2d7b5ff67939e9"
+      "hash": "a36e6afa540f493840366d30b3570878c6d115f4f6fe06b1b4f1aee67e2baf45"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/localizedfailuredescription": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/localizedfailuredescription.md",
-      "hash": "c1c2051cf4c93762438f6471ac224d6063adfa17029a3e26de337c62b97786ad"
+      "hash": "7dd387be33817f420ea488dbac99cf9960a145b31ab08b66038443419494c570"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/name": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/name.md",
-      "hash": "bda90f45fcf15585e188baa8279430c26d338d7469e7b01307dec7859d08b74a"
+      "hash": "49d81df8419d4d8785dce39b4490154eeabdf96d4c0b535440ee6facf47b16bb"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum.md",
-      "hash": "42c95bfbf14c5c29bf6ecdb5db26b09803731bec3f356d7eab1675258545cda5"
+      "hash": "953702f11716ee314d1cc0a41dc672b037be99f9438e014a28d944fc10df59f0"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unknown": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unknown.md",
-      "hash": "87c9516e0e661c184a3a1f8258f453cbafe44f641031448714a042a8b43cc246"
+      "hash": "4b571a0d51cc47e8afdcb64efa451b1f6c651d6a46455d0419ee093090f99436"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unsupportedaccessorytype": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unsupportedaccessorytype.md",
-      "hash": "2c377a28c45c4879bb7b53e3ddd084638c3f5fe238dee892283724729a03690f"
+      "hash": "7924bb07493290eac2a2453cb6ca44df5111845b13a2a612e890ca4ff9c6b834"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.property": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.property.md",
-      "hash": "74f67556ef2a7ebd93abfc912b9ca99d7971d59f199fa37ba9acefd1e274dfc8"
+      "hash": "ff6013635d5f9e18b15002274465b913f1bd3f1716f9f3e1c86f58b2cfdfeca0"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/uuid": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/uuid.md",
-      "hash": "2d05cc32651c513b5958c0e1a45809417959b9e5be673785877638627a4d0fc5"
+      "hash": "af17470dc83bd93b5a1c6c9af564d963a6d5cc6583a015b35e17c295ae6e87f0"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/init(transferredaccessories:failedaccessories:)": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/init(transferredaccessories,failedaccessories).md",
-      "hash": "1dc378e41017b0c82e5d9878dcd886dc0f65e3e01dd12d8b8a7cf0e233f33232"
+      "hash": "3bf57ac60243ffb2589b67bb5ca875a2b671ac18561be26642dc37c37ac63411"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessories": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessories.md",
-      "hash": "b63819e5acb1c30a0b5f4aca518c1d468f88f6bd75478ad7b29776e89e2d3ba0"
+      "hash": "6f0b906e5a7678f2ff8156ee2d84e5c98890cce771c4e576738bdec5aeace6a5"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory.md",
-      "hash": "dbe2bd05dbb8ee9011bbd7c35a5e8f4fdf4c8fc3332adc421bd8163c2b4983db"
+      "hash": "1f3416c452470b3410b66b1e1b0a9867c914f54efbb0c14ecf93159b3a690c57"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/init(uuid:name:)": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/init(uuid,name).md",
-      "hash": "0bd57e07ace997e56fac1394af7004d2f0041b8487720e5eeb1ee5e5b9673907"
+      "hash": "e71e9eba2f0c186fdf5fefcfc4e9b6c52ffa40426cf3d7b136095604793f0083"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/name": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/name.md",
-      "hash": "e7559a8e0621391e95569ae0800b3792bda10395ebdabe7766eed8c686e2165b"
+      "hash": "2b6414766e3f29302b162611ab7267c7ada8c0d8f357a4710976ba0cfd7c53f4"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/uuid": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/uuid.md",
-      "hash": "a788494082ae012cd628f101b55abbbef10a8b280c4d2736fe718c54c9c88873"
+      "hash": "183b90e342e10d6ea323a773734b48e10a5c445d90a895136c0a66882b35acd8"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/removeaccessory(_:completionhandler:)": {
       "file_path": "documentation/HomeKit/hmhome/removeaccessory(_,completionhandler).md",
@@ -4386,7 +4386,7 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhome/transferprovisionalhome(connectiondetails:targethomeuniqueidentifier:)": {
       "file_path": "documentation/HomeKit/hmhome/transferprovisionalhome(connectiondetails,targethomeuniqueidentifier).md",
-      "hash": "593d323ab7617390a9ccee34d2006e6775c0875538ed232451eaf52d20ebab31"
+      "hash": "001adeb937683b5139122d4fd5eaf7e825bb6da94bcec7618f2ed225575848ff"
     },
     "https://developer.apple.com/documentation/homekit/hmhome/triggers": {
       "file_path": "documentation/HomeKit/hmhome/triggers.md",
@@ -4582,7 +4582,7 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/addprovisionalhome(named:configuration:)": {
       "file_path": "documentation/HomeKit/hmhomemanager/addprovisionalhome(named,configuration).md",
-      "hash": "ffecf7514a2da455bc51d70721e4ae588d9f82d1706b28368ed30ab7064f72bb"
+      "hash": "30869055f984d5f0ffcb40580b1b6c59bd920570875fd9352fbb9e7c699a2882"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/authorizationstatus": {
       "file_path": "documentation/HomeKit/hmhomemanager/authorizationstatus.md",
@@ -4606,19 +4606,19 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/pairingidentity": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity.md",
-      "hash": "e757cfda0490a19b706a7ffce1e773df9b66b7ff1bd308ecd96156cd74500d14"
+      "hash": "3743b1b23c93f98eea04b726bbc70bb1a7ae33683e9249b72a2ea99624674e98"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/pairingidentity/init(pairingidentifier:publickey:)": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/init(pairingidentifier,publickey).md",
-      "hash": "5a964e0ffb59ed85c80132c5878ec79e5be0d59712eb83cf37a2a3c01de36ec3"
+      "hash": "5cb8f5cfe5d4a2e8186c04c0fa1a60f0a7a54f290e3ff8ebd8de3ad83a2393d6"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/pairingidentity/pairingidentifier": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/pairingidentifier.md",
-      "hash": "7053dfb255854e99e0508dc639b451df0d535eec54c37327f3d36db0cf262c7a"
+      "hash": "c475fc425a184924f9c524b9a05063accdfa35327cdd621fef8d835fda83a8a5"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/pairingidentity/publickey": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/publickey.md",
-      "hash": "f7464e571450ba1a4d93456777a1a2df3a67fad83c7154c4c4ee994a3262e010"
+      "hash": "2f85597c0bfc8c3a411db0558d001312aa7024684fa674c4e568b6872371b0b0"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/primaryhome": {
       "file_path": "documentation/HomeKit/hmhomemanager/primaryhome.md",
@@ -4626,27 +4626,27 @@
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration.md",
-      "hash": "ddd2618da68059f15e2a6367b525348fa83bfd283fe224e77081bb48e60f8ff1"
+      "hash": "0a60e99b19c9d37fa6796879c3ab78a796c460ae8dc70e52f6d65201997b62e3"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration/dictionaryrepresentation": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/dictionaryrepresentation.md",
-      "hash": "853fcdfcd843810a2c1f8077a042a282574cb4fa0710a3ba54255240d305dbe1"
+      "hash": "ad62107cbe9beeafb6c6d164b40f1c5bd70fc8613bb1f93f487ca23fe3c79eac"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration/hubpairingidentity": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/hubpairingidentity.md",
-      "hash": "8efdd73e34306ebb47e2c7a666c003ff91a7089c275b12fedac7a5c8a26fabad"
+      "hash": "0a686723cbd137cf743d7d87e16ebc32af780f423862c9152370fabbb21499f7"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration/init(dictionaryrepresentation:)": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/init(dictionaryrepresentation).md",
-      "hash": "b49dc109967607db078f8d9fcbd8ecfe2a59e8458140ca4f1de029cff76cf1a6"
+      "hash": "a23ca6d4674c34a69ea4ce18cea2a91e9c845a1e133410003e48433a7e5cedf2"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration/init(threadnetworkidentifier:hubpairingidentity:)": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/init(threadnetworkidentifier,hubpairingidentity).md",
-      "hash": "3f9c1488d1a5bcdf575358fa84590720c98e250e7b382470c213fee209268cdb"
+      "hash": "cee36aef6b79e56446ebd0422c81d9dfa69b99d2eb8a73cf765c095319ce67ce"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/provisionalconfiguration/threadnetworkidentifier": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/threadnetworkidentifier.md",
-      "hash": "bf1e435b0abdc291969223014c8f8597736470576a6fda05f3df77f4db174aeb"
+      "hash": "dcf0fb2f50a2bd1c5c3d4859f5ac9e7ef307892080c9b7b2c5f6cfef29a0443c"
     },
     "https://developer.apple.com/documentation/homekit/hmhomemanager/removehome(_:completionhandler:)": {
       "file_path": "documentation/HomeKit/hmhomemanager/removehome(_,completionhandler).md",
@@ -5478,7 +5478,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory.json": {
       "file_path": "documentation/HomeKit/hmaccessory.md",
-      "hash": "ee76229d26eb84a99265dd8cbabbaaa6aaa5ae66f0f88fabbfc0dbb07864b17d"
+      "hash": "26314867b39dd1c53bff626e366a6a7a2cdc04954fbba3b9ec2caa03c2daf00a"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/bridgedaccessories.json": {
       "file_path": "documentation/HomeKit/hmaccessory/bridgedaccessories.md",
@@ -5550,51 +5550,51 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature.md",
-      "hash": "4071cf4110c43c01e436b58ca81006c59a1c61c20d3b4650cd60316c53807d86"
+      "hash": "ff680aa78f7b5d3d54dfb2980132108df9e46f8f7e4843d41b2647a08275f7b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/id.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/id.md",
-      "hash": "188fc50fb61b6cf15f4c66fa3fc94b9aac1ff9fe46f81ec260958bdf9dd6e118"
+      "hash": "e7bc046f068c9d93469fd97f26d26217c7a1d8d7a0fce6f142a205dd132d8567"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/init(name:id:kind:).json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/init(name,id,kind).md",
-      "hash": "1fcd431a5347b6d08eecbfaccb71b46c707fc83505b1c5dd77dd129e2122ee54"
+      "hash": "9b92d2c7e3ba31c490639ae0b6c737bb7c2a7f4700e2e0873a5720fbb16d6011"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum.md",
-      "hash": "08d91380685c6eb0338293eefd09306e3949aca9eb504638efc56fe4474b37a0"
+      "hash": "e865ad051d726f96d6df4ae7ed5a6f0e8551dddc576e785f50653de8122e2533"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/helpguide.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/helpguide.md",
-      "hash": "8a7f551042cc82f8d9821b569bf422d13d4467f3d1a733fe51df62a2e2023d81"
+      "hash": "c29beb33e35ada3e3f1254d2b816c43825b5f13114661763732c3955c92fc681"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/interactivesetting.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/interactivesetting.md",
-      "hash": "5bd212210cd1711fcca53d0f430b8043b046e0f51e081237cfdb8556fa2466f3"
+      "hash": "4fb5899a89aecf526808be532decc8e8caaf67a57ee402084b0208464c364af0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/primitivesetting.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/primitivesetting.md",
-      "hash": "eb735ccd0806cf05dc46eb94bff14063c527d48fd5f8e1b0e5b9ec24951f4b8c"
+      "hash": "b330c82fdcf65db1ec9f71f62ba8cd36afe3dd5efa2fbb4c32c75fb0ff221666"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/productmanual.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/productmanual.md",
-      "hash": "067b9c9073c319ec253c5749721e99242eb4a3fb24cb55854ddf185ac3ae5118"
+      "hash": "b9d3ad971e8f90c78244a2f85bda2816e6e87aead256dd524775287c6b9aa1b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.enum/troubleshooting.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.enum/troubleshooting.md",
-      "hash": "9b71c7d173beea9d07c4d584ca50659d6c564444a1d8c583e61fde68f4b76d4d"
+      "hash": "a32024e24ccb7f5a2c642058fa7f562f8c7f2657b152f8a87113a14e67038921"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/kind-swift.property.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/kind-swift.property.md",
-      "hash": "79eb189ada6d4fd4c1b06fe2afa3a53c4826e3a5d3186f43f0d7e83c77095288"
+      "hash": "a66ae4b372b33f5e162885eb5255e5ff7855d57a29e05ec49399c010c24e611e"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeature/name.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeature/name.md",
-      "hash": "0b35c4fde1cfd20404ec4e0a160051f82f5bf158825e2789b87baf24405d9ad8"
+      "hash": "eac71f34ba48e03856caa464763b2e211f86fea5b7cdb2d1d0a19de797253f10"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/manufacturerfeatures.json": {
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeatures.md",
-      "hash": "c07cae5048296f7c4c53f5209f83deb42c44f7ba2c54bc8ea6fa8e8e4648cf1e"
+      "hash": "1c1d84772ea93451cebe4a28d93a04f0a0de0abd9ea72033c8dbccdb655e6f08"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/matternodeid-5zfqo.json": {
       "file_path": "documentation/HomeKit/hmaccessory/matternodeid-5zfqo.md",
@@ -5626,7 +5626,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/showmanufacturerextension(for:featureid:).json": {
       "file_path": "documentation/HomeKit/hmaccessory/showmanufacturerextension(for,featureid).md",
-      "hash": "da70417fbee3c38c4bd9f27a666819db290b7e8e061d72449ff75e9feea2b14f"
+      "hash": "482391709e0c5b19b78c09d465abdf69c63ac887a3ac9be5efc2d015da81ea5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/supportsidentify.json": {
       "file_path": "documentation/HomeKit/hmaccessory/supportsidentify.md",
@@ -9626,11 +9626,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/isprovisionalhome(forpairingidentifier:).json": {
       "file_path": "documentation/HomeKit/hmhome/isprovisionalhome(forpairingidentifier).md",
-      "hash": "2eda723501ebec9cc5bcdac611709fff28caf7eb1d4e523de33dd92583e270e5"
+      "hash": "6ac566f72a7a1318181a89949d076bb7206c875ad4617a60884f757a4592aad5"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/isprovisionalhome.json": {
       "file_path": "documentation/HomeKit/hmhome/isprovisionalhome.md",
-      "hash": "0ce0be8d7e1e68c85f2a152de438c453b6b710594d1ce089c552b95acb1c4d0f"
+      "hash": "83be0e59cba3525b0298c18d6d5118693aa200ca04488010f6d8245a3f41792a"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/manageusers(completionhandler:).json": {
       "file_path": "documentation/HomeKit/hmhome/manageusers(completionhandler).md",
@@ -9654,103 +9654,103 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhomeconnectiondetails.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails.md",
-      "hash": "90030c8233a8efd23b014c51620bfdce1ed13737c81dd2106f936996f9c41ad0"
+      "hash": "522628b3039dc8e8e4a0414114fb3f3b5dd3bc523475cb806cc9da64a37ae0ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhomeconnectiondetails/init(transfertoken:).json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails/init(transfertoken).md",
-      "hash": "309e271a342c99add149373161604c96a050ae3134ac411ce2a1ee9c267b2176"
+      "hash": "7c5f8ee0b514608efb73f2898ec3b5538129e7a7697855a1dc3c4f9b51a1da31"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhomeconnectiondetails/transfertoken.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhomeconnectiondetails/transfertoken.md",
-      "hash": "feb51692fe22341209c7661fa09d3700be676b47a65717d76b77c35915e6567a"
+      "hash": "d604a988831feed8ee7a7fcb784d4cade041bb5599226808af77974c6432a330"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransfererror.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror.md",
-      "hash": "fda5dd0bbc724e673a54665ef99c6a686daf61e7490f6a32c85c0493ddaaead7"
+      "hash": "c0dae52c172e099cd9c8d5ac571fdfa908c4c5958ffc31fb0dfdbf048efd9531"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransfererror/authenticationfailed.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/authenticationfailed.md",
-      "hash": "a513bab1e5d29b57404da886b0302344e23462af79c73047ae24eed39bc3b077"
+      "hash": "4db63854076fee6e0e25fc082c8c97472b613b3065687e0d86611916d65501f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransfererror/connectionfailed.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/connectionfailed.md",
-      "hash": "feeace8328262f3d8d09e5fa74abe2beca518a76f0e14de8f5c40396b7228fc0"
+      "hash": "ef1a77d43f2def67a61d987cc8727857215884ebccdee6c8e8c8eb2a86b17bc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransfererror/servererror.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/servererror.md",
-      "hash": "7b4cc97d4fe20da2ba30daa514537ebaedb759501d1fb536039e4fceeddaf1e4"
+      "hash": "8a43438fecce1e96fe3cd7dc69507dad2ada7e5872e8ce8c4f3f5a57f79ca49c"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransfererror/targethomerejected.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransfererror/targethomerejected.md",
-      "hash": "eccc7347b5d2f90bbbc762e75b04e0e9204c339fa007bfd2034c1355ea6e6e54"
+      "hash": "4cad6b78721d60e6f249b4654dc881f01cc76c1057e884741b9cf11590e2e283"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult.md",
-      "hash": "1f5ace508c5165e54cafb66fede4a1ecc2d58b7ab1391c955d5ce4a079f2db5d"
+      "hash": "c99e4096aa0ac708c4a8745ad6c3ae9ccc400a6371b79b722fd85b580cac4c89"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessories.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessories.md",
-      "hash": "0209bc45edac560a80a8d109b7cca50d447088721cd8863a53def50ec3f702bf"
+      "hash": "9d2235d789e1be843e07ff12d619c2c94db405c1da4ea6c7960f7e9d1fa35340"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory.md",
-      "hash": "485fe15b459550c614957fe195caf96a5ef977517873ed29b674a221e66e5aa4"
+      "hash": "9f23c052ea8333ea23c148d9e3ad159791339cdbb7c1386c77fc15f18c33a15d"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/init(uuid:name:reason:localizedfailuredescription:).json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/init(uuid,name,reason,localizedfailuredescription).md",
-      "hash": "7b4c2703882287fbffe51de8bc954b2f71e46e2fc893f14ead2d7b5ff67939e9"
+      "hash": "a36e6afa540f493840366d30b3570878c6d115f4f6fe06b1b4f1aee67e2baf45"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/localizedfailuredescription.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/localizedfailuredescription.md",
-      "hash": "c1c2051cf4c93762438f6471ac224d6063adfa17029a3e26de337c62b97786ad"
+      "hash": "7dd387be33817f420ea488dbac99cf9960a145b31ab08b66038443419494c570"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/name.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/name.md",
-      "hash": "bda90f45fcf15585e188baa8279430c26d338d7469e7b01307dec7859d08b74a"
+      "hash": "49d81df8419d4d8785dce39b4490154eeabdf96d4c0b535440ee6facf47b16bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum.md",
-      "hash": "42c95bfbf14c5c29bf6ecdb5db26b09803731bec3f356d7eab1675258545cda5"
+      "hash": "953702f11716ee314d1cc0a41dc672b037be99f9438e014a28d944fc10df59f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unknown.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unknown.md",
-      "hash": "87c9516e0e661c184a3a1f8258f453cbafe44f641031448714a042a8b43cc246"
+      "hash": "4b571a0d51cc47e8afdcb64efa451b1f6c651d6a46455d0419ee093090f99436"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unsupportedaccessorytype.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unsupportedaccessorytype.md",
-      "hash": "2c377a28c45c4879bb7b53e3ddd084638c3f5fe238dee892283724729a03690f"
+      "hash": "7924bb07493290eac2a2453cb6ca44df5111845b13a2a612e890ca4ff9c6b834"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.property.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/reason-swift.property.md",
-      "hash": "74f67556ef2a7ebd93abfc912b9ca99d7971d59f199fa37ba9acefd1e274dfc8"
+      "hash": "ff6013635d5f9e18b15002274465b913f1bd3f1716f9f3e1c86f58b2cfdfeca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/failedaccessory/uuid.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/failedaccessory/uuid.md",
-      "hash": "2d05cc32651c513b5958c0e1a45809417959b9e5be673785877638627a4d0fc5"
+      "hash": "af17470dc83bd93b5a1c6c9af564d963a6d5cc6583a015b35e17c295ae6e87f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/init(transferredaccessories:failedaccessories:).json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/init(transferredaccessories,failedaccessories).md",
-      "hash": "1dc378e41017b0c82e5d9878dcd886dc0f65e3e01dd12d8b8a7cf0e233f33232"
+      "hash": "3bf57ac60243ffb2589b67bb5ca875a2b671ac18561be26642dc37c37ac63411"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessories.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessories.md",
-      "hash": "b63819e5acb1c30a0b5f4aca518c1d468f88f6bd75478ad7b29776e89e2d3ba0"
+      "hash": "6f0b906e5a7678f2ff8156ee2d84e5c98890cce771c4e576738bdec5aeace6a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory.md",
-      "hash": "dbe2bd05dbb8ee9011bbd7c35a5e8f4fdf4c8fc3332adc421bd8163c2b4983db"
+      "hash": "1f3416c452470b3410b66b1e1b0a9867c914f54efbb0c14ecf93159b3a690c57"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/init(uuid:name:).json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/init(uuid,name).md",
-      "hash": "0bd57e07ace997e56fac1394af7004d2f0041b8487720e5eeb1ee5e5b9673907"
+      "hash": "e71e9eba2f0c186fdf5fefcfc4e9b6c52ffa40426cf3d7b136095604793f0083"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/name.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/name.md",
-      "hash": "e7559a8e0621391e95569ae0800b3792bda10395ebdabe7766eed8c686e2165b"
+      "hash": "2b6414766e3f29302b162611ab7267c7ada8c0d8f357a4710976ba0cfd7c53f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/provisionalhometransferresult/transferredaccessory/uuid.json": {
       "file_path": "documentation/HomeKit/hmhome/provisionalhometransferresult/transferredaccessory/uuid.md",
-      "hash": "a788494082ae012cd628f101b55abbbef10a8b280c4d2736fe718c54c9c88873"
+      "hash": "183b90e342e10d6ea323a773734b48e10a5c445d90a895136c0a66882b35acd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/removeaccessory(_:completionhandler:).json": {
       "file_path": "documentation/HomeKit/hmhome/removeaccessory(_,completionhandler).md",
@@ -9802,7 +9802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/transferprovisionalhome(connectiondetails:targethomeuniqueidentifier:).json": {
       "file_path": "documentation/HomeKit/hmhome/transferprovisionalhome(connectiondetails,targethomeuniqueidentifier).md",
-      "hash": "593d323ab7617390a9ccee34d2006e6775c0875538ed232451eaf52d20ebab31"
+      "hash": "001adeb937683b5139122d4fd5eaf7e825bb6da94bcec7618f2ed225575848ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhome/triggers.json": {
       "file_path": "documentation/HomeKit/hmhome/triggers.md",
@@ -9998,7 +9998,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/addprovisionalhome(named:configuration:).json": {
       "file_path": "documentation/HomeKit/hmhomemanager/addprovisionalhome(named,configuration).md",
-      "hash": "ffecf7514a2da455bc51d70721e4ae588d9f82d1706b28368ed30ab7064f72bb"
+      "hash": "30869055f984d5f0ffcb40580b1b6c59bd920570875fd9352fbb9e7c699a2882"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/authorizationstatus.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/authorizationstatus.md",
@@ -10022,19 +10022,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/pairingidentity.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity.md",
-      "hash": "e757cfda0490a19b706a7ffce1e773df9b66b7ff1bd308ecd96156cd74500d14"
+      "hash": "3743b1b23c93f98eea04b726bbc70bb1a7ae33683e9249b72a2ea99624674e98"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/pairingidentity/init(pairingidentifier:publickey:).json": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/init(pairingidentifier,publickey).md",
-      "hash": "5a964e0ffb59ed85c80132c5878ec79e5be0d59712eb83cf37a2a3c01de36ec3"
+      "hash": "5cb8f5cfe5d4a2e8186c04c0fa1a60f0a7a54f290e3ff8ebd8de3ad83a2393d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/pairingidentity/pairingidentifier.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/pairingidentifier.md",
-      "hash": "7053dfb255854e99e0508dc639b451df0d535eec54c37327f3d36db0cf262c7a"
+      "hash": "c475fc425a184924f9c524b9a05063accdfa35327cdd621fef8d835fda83a8a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/pairingidentity/publickey.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/pairingidentity/publickey.md",
-      "hash": "f7464e571450ba1a4d93456777a1a2df3a67fad83c7154c4c4ee994a3262e010"
+      "hash": "2f85597c0bfc8c3a411db0558d001312aa7024684fa674c4e568b6872371b0b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/primaryhome.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/primaryhome.md",
@@ -10042,27 +10042,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration.md",
-      "hash": "ddd2618da68059f15e2a6367b525348fa83bfd283fe224e77081bb48e60f8ff1"
+      "hash": "0a60e99b19c9d37fa6796879c3ab78a796c460ae8dc70e52f6d65201997b62e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration/dictionaryrepresentation.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/dictionaryrepresentation.md",
-      "hash": "853fcdfcd843810a2c1f8077a042a282574cb4fa0710a3ba54255240d305dbe1"
+      "hash": "ad62107cbe9beeafb6c6d164b40f1c5bd70fc8613bb1f93f487ca23fe3c79eac"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration/hubpairingidentity.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/hubpairingidentity.md",
-      "hash": "8efdd73e34306ebb47e2c7a666c003ff91a7089c275b12fedac7a5c8a26fabad"
+      "hash": "0a686723cbd137cf743d7d87e16ebc32af780f423862c9152370fabbb21499f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration/init(dictionaryrepresentation:).json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/init(dictionaryrepresentation).md",
-      "hash": "b49dc109967607db078f8d9fcbd8ecfe2a59e8458140ca4f1de029cff76cf1a6"
+      "hash": "a23ca6d4674c34a69ea4ce18cea2a91e9c845a1e133410003e48433a7e5cedf2"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration/init(threadnetworkidentifier:hubpairingidentity:).json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/init(threadnetworkidentifier,hubpairingidentity).md",
-      "hash": "3f9c1488d1a5bcdf575358fa84590720c98e250e7b382470c213fee209268cdb"
+      "hash": "cee36aef6b79e56446ebd0422c81d9dfa69b99d2eb8a73cf765c095319ce67ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/provisionalconfiguration/threadnetworkidentifier.json": {
       "file_path": "documentation/HomeKit/hmhomemanager/provisionalconfiguration/threadnetworkidentifier.md",
-      "hash": "bf1e435b0abdc291969223014c8f8597736470576a6fda05f3df77f4db174aeb"
+      "hash": "dcf0fb2f50a2bd1c5c3d4859f5ac9e7ef307892080c9b7b2c5f6cfef29a0443c"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmhomemanager/removehome(_:completionhandler:).json": {
       "file_path": "documentation/HomeKit/hmhomemanager/removehome(_,completionhandler).md",

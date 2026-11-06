@@ -49,6 +49,16 @@ struct SubscriptionInfo
   The duration of time between subscription renewals.
 - [Product.SubscriptionPeriod](./subscriptionperiod.md)
   Values that represent the duration of time between subscription renewals.
+### Getting pricing terms
+- [let pricingTerms: [Product.SubscriptionInfo.PricingTerms]](./subscriptioninfo/pricingterms-swift.property.md)
+  The pricing terms available for the subscription, including its billing plan types and pricing models.
+- [Product.SubscriptionInfo.PricingTerms](./subscriptioninfo/pricingterms-swift.struct.md)
+  The billing plan type, pricing model, and offers for one way of paying for an auto-renewable subscription.
+- [Product.SubscriptionInfo.BillingPlanType](./subscriptioninfo/billingplantype.md)
+- [Product.SubscriptionInfo.BillingInfo](./subscriptioninfo/billinginfo.md)
+  The price charged at each billing event, and the period between renewals.
+- [Product.SubscriptionInfo.BillingPeriod](./subscriptioninfo/billingperiod.md)
+- [Product.SubscriptionInfo.CommitmentInfo](./subscriptioninfo/commitmentinfo.md)
 ### Getting introductory offer details
 - [var isEligibleForIntroOffer: Bool](./subscriptioninfo/iseligibleforintrooffer.md)
   A Boolean value that indicates whether the customer is eligible for an introductory offer.
@@ -69,18 +79,19 @@ struct SubscriptionInfo
   The renewal information for an auto-renewable subscription.
 - [Product.SubscriptionInfo.RenewalState](./subscriptioninfo/renewalstate.md)
   The renewal states of auto-renewable subscriptions.
+### Checking data sharing consent eligibility
+- [var multiSeatDataSharingConsentEligibility: Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md)
+  A value that indicates whether you can request consent to share group information for this subscription’s subscription group.
+- [static func multiSeatDataSharingConsentEligibility(subscriptionGroupID: String) async throws -> Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility%28subscriptiongroupid%29.md)
+  Gets a value that indicates whether you can request consent to share group information for a subscription group.
+- [Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum.md)
+  Values that indicate whether you can request consent to share group information for a subscription group.
 ### Structures
-- [Product.SubscriptionInfo.BillingPlanType](./subscriptioninfo/billingplantype.md)
 - [Product.SubscriptionInfo.BundledSubscription](./subscriptioninfo/bundledsubscription.md)
   Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
-- [Product.SubscriptionInfo.CommitmentInfo](./subscriptioninfo/commitmentinfo.md)
-- [Product.SubscriptionInfo.PricingTerms](./subscriptioninfo/pricingterms-swift.struct.md)
 ### Instance Properties
 - [let bundledSubscriptions: [Product.SubscriptionInfo.BundledSubscription]](./subscriptioninfo/bundledsubscriptions.md)
   Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
-- [let pricingTerms: [Product.SubscriptionInfo.PricingTerms]](./subscriptioninfo/pricingterms-swift.property.md)
-### Type Aliases
-- [Product.SubscriptionInfo.BillingPeriod](./subscriptioninfo/billingperiod.md)
 
 ## Relationships
 

@@ -392,6 +392,8 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
   This action method dispatches mouse and keyboard events the global application object sends to the window.
 - [func tryToPerform(Selector, with: Any?) -> Bool](./nswindow/trytoperform%28_,with%29.md)
   Dispatches action messages with a given argument.
+- [var disablesDirectTouchSystemGestures: Bool](./nswindow/disablesdirecttouchsystemgestures.md)
+  Disables direct-touch system gestures when this window is visible.
 ### Managing Responders
 - [var initialFirstResponder: NSView?](./nswindow/initialfirstresponder.md)
   The view that’s made first responder (also called the key view) the first time the window is placed onscreen.

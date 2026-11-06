@@ -9,6 +9,8 @@ Ends an active Live Activity.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

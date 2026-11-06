@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Type Method
 
-Returns the cursor for resizing a column (vertical divider) in the specified direction.
+Returns the cursor for resizing a column (vertical divider) in the specified directions.
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -16,9 +16,23 @@ Returns the cursor for resizing a column (vertical divider) in the specified dir
 class func columnResize(directions: NSHorizontalDirection.Set) -> NSCursor
 ```
 
+## Return Value
+
+The column-resize cursor for the specified directions.
+
+## Discussion
+
+The cursor shows the directions in which the column can resize. The following table shows the cursor for each set of directions:
+
+| Directions | Cursor |
+| --- | --- |
+| `.left` | ![column-resize cursor, left](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-left@2x.png) |
+| `.right` | ![column-resize cursor, right](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-right@2x.png) |
+| `.all` | ![column-resize cursor, left and right](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-left-right@2x.png) |
+
 ## Parameters
 
-- `directions`: The directions in which a column can be resized. This must not be empty.
+- `directions`: The direction in which a column can resize.
 
 ## See Also
 

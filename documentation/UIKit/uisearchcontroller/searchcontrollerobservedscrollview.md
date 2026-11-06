@@ -7,7 +7,7 @@
 The view with which the controller coordinates scrolling animations.
 
 **Availability**:
-- tvOS 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`setContentScrollView(_:for:)`](../uiviewcontroller/setcontentscrollview%28_,for%29.md) on the [`searchResultsController`](./searchresultscontroller.md) instead.
 

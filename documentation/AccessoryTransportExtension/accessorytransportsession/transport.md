@@ -12,7 +12,7 @@ A transport method that the session uses to communicate with the accessory.
 ## Declaration
 
 ```swift
-var transport: AccessoryTransport?
+var transport: AccessoryTransport? { get set }
 ```
 
 ## Mentions

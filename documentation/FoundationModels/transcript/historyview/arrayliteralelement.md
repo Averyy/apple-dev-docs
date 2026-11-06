@@ -11,6 +11,7 @@ The type of entry an array literal contains when it creates a history view.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 

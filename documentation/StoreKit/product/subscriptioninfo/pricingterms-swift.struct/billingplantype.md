@@ -23,15 +23,6 @@ let billingPlanType: Product.SubscriptionInfo.BillingPlanType
 
 - [Supporting monthly subscriptions with a 12-month commitment](../../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
-## See Also
-
-### Instance Properties - generated
-- [let billingDisplayPrice: String](./billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
-- [let billingPrice: Decimal](./billingprice.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
-- [let subscriptionOffers: [Product.SubscriptionOffer]](./subscriptionoffers.md)
-
 
 ---
 

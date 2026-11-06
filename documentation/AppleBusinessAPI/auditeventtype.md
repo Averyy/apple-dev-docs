@@ -7,7 +7,7 @@
 Strings that represent audit event types.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -50,6 +50,9 @@ string AuditEventType
 - `API_ACCOUNT_KEY_GENERATED`
 - `API_ACCOUNT_ROLE_LOCATION_CHANGED`
 - `API_ACCOUNT_NAME_CHANGED`
+- `WEBHOOK_CREATED`
+- `WEBHOOK_UPDATED`
+- `WEBHOOK_DELETED`
 - `ROLE_CREATED`
 - `ROLE_UPDATED`
 - `TERMS_ACCEPTED`
@@ -122,6 +125,9 @@ string AuditEventType
   - IDP_ACCOUNT_SYNC_DISABLED: Identity provider account sync disabled.
   - APPLE_SERVICES_SETTINGS_UPDATED: Apple services settings updated.
   - ACCOUNT_PASSWORD_CHANGED: Account password changed.
+  - WEBHOOK_CREATED: Webhook created.
+  - WEBHOOK_UPDATED: Webhook updated.
+  - WEBHOOK_DELETED: Webhook deleted.
 
 
 ---

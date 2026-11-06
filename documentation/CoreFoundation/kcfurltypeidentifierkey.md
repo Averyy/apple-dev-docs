@@ -7,13 +7,13 @@
 Key for the resource’s uniform type identifier (UTI), returned as a `CFString` object.
 
 **Availability**:
-- iOS 4.0+ - Deprecated in 27.2
-- iPadOS 4.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.6+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 4.0+ - Deprecated in 27.3
+- iPadOS 4.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.6+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use NSURLContentTypeKey instead
 

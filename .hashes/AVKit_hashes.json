@@ -46,51 +46,51 @@
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor.md",
-      "hash": "823f35846768b16988c15e9fd5c0eb1a9547f0c36cfb25f2cd932e1aa7e036e2"
+      "hash": "539fb8645e6a665f3b35758b44ea81308c433a6e6c7488a9e513d990a4ffb71b"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor/devicetype": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/devicetype.md",
-      "hash": "4179709767d2016301a2965091474f463880e777684801df3b6629ac0beaad4d"
+      "hash": "bdd3efb2b885ca536c8e3cc6e2e0a833b5d115970375ac3c04d171a0a9f1a458"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor/localizedname": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/localizedname.md",
-      "hash": "ba3667ac63c2cdd50cb1676c55f404b2661074d6d89e3c27569048a5ff0c22d9"
+      "hash": "46dc153780ebf2220d95b81ff573d733948f126b28b4733f345dfdeef9627ed5"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor/mediatypes": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/mediatypes.md",
-      "hash": "1ae6805c469d062e39a95f1f4cde24c7e68a64988ee9a0f7cfed556ad8cfc8c1"
+      "hash": "ddc595c3fd4b1a32386c47dd2325f33320ae73b7967bdae71416b5d8922b3489"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor/position": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/position.md",
-      "hash": "f0c19a6be5faaeabf993b2bf3ce68e6781b702b499ccef33b5b7e9b241c9016d"
+      "hash": "fd3d769661dd824f6a628f346f2332c8787165063d5a563571409d4599187d0c"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor/uniqueid": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/uniqueid.md",
-      "hash": "5e04250b0c9152a2e611c79dbeff7ad6190659352ac315d186ed692c0ab5f770"
+      "hash": "b24cdeecd29f7796b1f0a96b0809b46af0f76f287bcc90829f76ae6dc348e57f"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectioncoordinator": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator.md",
-      "hash": "bb7c84d0e05beeea5a97c7f548c32388fda15d7652acac9c9f40f08721fb8af4"
+      "hash": "80da9bd63babc75471a786baff1ae99c6f47ea2e17c8b08dd853d78db33aa690"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectioncoordinator/devicedirections": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator/devicedirections.md",
-      "hash": "8e921e1c565686e38205ac76a5e437cfc95c949502a19203fff4f74052be10d2"
+      "hash": "0e027877bfe17f2980d34b90af14dafca36c8a48b2950a21816db796552e85de"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectioncoordinator/init(view:devicetypes:changehandler:)": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator/init(view,devicetypes,changehandler).md",
-      "hash": "17ccf8db0e22560b002d7d29b9718629f60313feac7bec44dc1f27664597dc37"
+      "hash": "ad5c2105e21144b3cf70f8030e82766c2d36ac13ec89fb675dc79484507ae168"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectionmap": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap.md",
-      "hash": "570e8885e8ac81685197c8614a4fc30b3d1641e4b9810888a78e3474ff4dca1e"
+      "hash": "cec63a70bc5aed75b2f26994e632974906ea54943d791fab03c638b77409b4cd"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectionmap/backwardfacingdevicedescriptors": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap/backwardfacingdevicedescriptors.md",
-      "hash": "9c4d460e0229c512e1c372bc6af8079c6b63d95a57876821f859843f060e7b41"
+      "hash": "3b2a0f14e7185adaa624c88ac1eae87c735175a74c1c4646ebbdd105922f4f09"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedirectionmap/forwardfacingdevicedescriptors": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap/forwardfacingdevicedescriptors.md",
-      "hash": "938faf84df646ded6732e5c4cfde94e6547e0660249f54ed9ab5979e30411b58"
+      "hash": "71481a5b64fda5cf198ebfdd4479b1120705144c229803e18c074c2db0d6ad6b"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureevent": {
       "file_path": "documentation/AVKit/avcaptureevent.md",
@@ -182,7 +182,7 @@
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview": {
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
+      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview/controlsstyle": {
       "file_path": "documentation/AVKit/avcaptureview/controlsstyle.md",
@@ -2870,51 +2870,51 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor.md",
-      "hash": "823f35846768b16988c15e9fd5c0eb1a9547f0c36cfb25f2cd932e1aa7e036e2"
+      "hash": "539fb8645e6a665f3b35758b44ea81308c433a6e6c7488a9e513d990a4ffb71b"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor/devicetype.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/devicetype.md",
-      "hash": "4179709767d2016301a2965091474f463880e777684801df3b6629ac0beaad4d"
+      "hash": "bdd3efb2b885ca536c8e3cc6e2e0a833b5d115970375ac3c04d171a0a9f1a458"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor/localizedname.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/localizedname.md",
-      "hash": "ba3667ac63c2cdd50cb1676c55f404b2661074d6d89e3c27569048a5ff0c22d9"
+      "hash": "46dc153780ebf2220d95b81ff573d733948f126b28b4733f345dfdeef9627ed5"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor/mediatypes.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/mediatypes.md",
-      "hash": "1ae6805c469d062e39a95f1f4cde24c7e68a64988ee9a0f7cfed556ad8cfc8c1"
+      "hash": "ddc595c3fd4b1a32386c47dd2325f33320ae73b7967bdae71416b5d8922b3489"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor/position.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/position.md",
-      "hash": "f0c19a6be5faaeabf993b2bf3ce68e6781b702b499ccef33b5b7e9b241c9016d"
+      "hash": "fd3d769661dd824f6a628f346f2332c8787165063d5a563571409d4599187d0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor/uniqueid.json": {
       "file_path": "documentation/AVKit/avcapturedevicedescriptor/uniqueid.md",
-      "hash": "5e04250b0c9152a2e611c79dbeff7ad6190659352ac315d186ed692c0ab5f770"
+      "hash": "b24cdeecd29f7796b1f0a96b0809b46af0f76f287bcc90829f76ae6dc348e57f"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectioncoordinator.json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator.md",
-      "hash": "bb7c84d0e05beeea5a97c7f548c32388fda15d7652acac9c9f40f08721fb8af4"
+      "hash": "80da9bd63babc75471a786baff1ae99c6f47ea2e17c8b08dd853d78db33aa690"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectioncoordinator/devicedirections.json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator/devicedirections.md",
-      "hash": "8e921e1c565686e38205ac76a5e437cfc95c949502a19203fff4f74052be10d2"
+      "hash": "0e027877bfe17f2980d34b90af14dafca36c8a48b2950a21816db796552e85de"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectioncoordinator/init(view:devicetypes:changehandler:).json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectioncoordinator/init(view,devicetypes,changehandler).md",
-      "hash": "17ccf8db0e22560b002d7d29b9718629f60313feac7bec44dc1f27664597dc37"
+      "hash": "ad5c2105e21144b3cf70f8030e82766c2d36ac13ec89fb675dc79484507ae168"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectionmap.json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap.md",
-      "hash": "570e8885e8ac81685197c8614a4fc30b3d1641e4b9810888a78e3474ff4dca1e"
+      "hash": "cec63a70bc5aed75b2f26994e632974906ea54943d791fab03c638b77409b4cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectionmap/backwardfacingdevicedescriptors.json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap/backwardfacingdevicedescriptors.md",
-      "hash": "9c4d460e0229c512e1c372bc6af8079c6b63d95a57876821f859843f060e7b41"
+      "hash": "3b2a0f14e7185adaa624c88ac1eae87c735175a74c1c4646ebbdd105922f4f09"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedirectionmap/forwardfacingdevicedescriptors.json": {
       "file_path": "documentation/AVKit/avcapturedevicedirectionmap/forwardfacingdevicedescriptors.md",
-      "hash": "938faf84df646ded6732e5c4cfde94e6547e0660249f54ed9ab5979e30411b58"
+      "hash": "71481a5b64fda5cf198ebfdd4479b1120705144c229803e18c074c2db0d6ad6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureevent.json": {
       "file_path": "documentation/AVKit/avcaptureevent.md",
@@ -3006,7 +3006,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview.json": {
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
+      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview/controlsstyle.json": {
       "file_path": "documentation/AVKit/avcaptureview/controlsstyle.md",

@@ -490,7 +490,7 @@
     },
     "https://developer.apple.com/documentation/networkextension/neapppushprovider/start(completionhandler:)": {
       "file_path": "documentation/NetworkExtension/neapppushprovider/start(completionhandler).md",
-      "hash": "e166247172a0ccb513fd15e69823c3548da981accdc753ee203e950ba2ed71b6"
+      "hash": "aa5efa1d9156ae39d04aa92bd80156c2685492e52071cfbfc30812b475e9fea1"
     },
     "https://developer.apple.com/documentation/networkextension/neapppushprovider/stop(with:completionhandler:)": {
       "file_path": "documentation/NetworkExtension/neapppushprovider/stop(with,completionhandler).md",
@@ -3562,11 +3562,11 @@
     },
     "https://developer.apple.com/documentation/networkextension/neurlfiltermanager/pirprivacypassissuerurl": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/pirprivacypassissuerurl.md",
-      "hash": "2e0c4c4e4a6e1334584c6dd77b002fbac9ca0b28b8c2e6bd40ccf85298a3cc20"
+      "hash": "46f4a55f2e51b58a7a5dcf438398119db66c842af1f65395c2f24f3ee5b446f8"
     },
     "https://developer.apple.com/documentation/networkextension/neurlfiltermanager/pirserverurl": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/pirserverurl.md",
-      "hash": "1b64c9b48310e3f6be78b115a11ca8ec077de43dd8f7e1a0dbba52d6bdf64087"
+      "hash": "c68820edd23943e51645041264a580392942c7e579bad81c46cbf5d553bcd9a4"
     },
     "https://developer.apple.com/documentation/networkextension/neurlfiltermanager/prefilterfetchinterval": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/prefilterfetchinterval.md",
@@ -5310,7 +5310,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neapppushprovider/start(completionhandler:).json": {
       "file_path": "documentation/NetworkExtension/neapppushprovider/start(completionhandler).md",
-      "hash": "e166247172a0ccb513fd15e69823c3548da981accdc753ee203e950ba2ed71b6"
+      "hash": "aa5efa1d9156ae39d04aa92bd80156c2685492e52071cfbfc30812b475e9fea1"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neapppushprovider/stop(with:completionhandler:).json": {
       "file_path": "documentation/NetworkExtension/neapppushprovider/stop(with,completionhandler).md",
@@ -8382,11 +8382,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfiltermanager/pirprivacypassissuerurl.json": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/pirprivacypassissuerurl.md",
-      "hash": "2e0c4c4e4a6e1334584c6dd77b002fbac9ca0b28b8c2e6bd40ccf85298a3cc20"
+      "hash": "46f4a55f2e51b58a7a5dcf438398119db66c842af1f65395c2f24f3ee5b446f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfiltermanager/pirserverurl.json": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/pirserverurl.md",
-      "hash": "1b64c9b48310e3f6be78b115a11ca8ec077de43dd8f7e1a0dbba52d6bdf64087"
+      "hash": "c68820edd23943e51645041264a580392942c7e579bad81c46cbf5d553bcd9a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfiltermanager/prefilterfetchinterval.json": {
       "file_path": "documentation/NetworkExtension/neurlfiltermanager/prefilterfetchinterval.md",

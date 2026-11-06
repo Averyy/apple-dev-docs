@@ -13,6 +13,10 @@ Record spatial features of real-world objects, then use the results to find thos
 
 ## Overview
 
+> ❗ **Important**: This sample is deprecated. To track a real-world object in your iOS app, see [Using a reference object with ARKit in iOS](../visionOS/using-a-reference-object-with-arkit-in-ios.md). To learn how to train models that recognize and track real-world objects, see [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md).
+
+## Overview
+
 One way to build compelling AR experiences is to recognize features of the user’s environment and use them to trigger the appearance of virtual content. For example, a museum app might add interactive 3D visualizations when the user points their device at a displayed sculpture or artifact.
 
 In iOS 12, you can create such AR experiences by enabling *object detection* in ARKit: Your app provides *reference objects*, which encode three-dimensional spatial features of known real-world objects, and ARKit tells your app when and where it detects the corresponding real-world objects during an AR session.
@@ -165,10 +169,6 @@ After you obtain an [`ARReferenceObject`](./arreferenceobject.md), you can eithe
 ### Physical Objects
 - [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [class ARObjectAnchor](./arobjectanchor.md)
-  An anchor for a real-world 3D object that ARKit detects in the physical environment.
-- [class ARReferenceObject](./arreferenceobject.md)
-  The description of a 3D object that you want ARKit to detect in the physical environment.
 
 
 ---

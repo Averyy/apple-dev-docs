@@ -112,6 +112,9 @@ struct MyEvaluation: Evaluation {
   A value that describes a failure to produce a subject for a sample.
 - [enum EvaluationResultsError](./evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
+### Type Methods
+- [static func computeSiriMetrics(into: inout MetricsAggregator)](./evaluation/computesirimetrics%28into%29.md)
+  The report’s summary cards: one per question, grouped into sections, each the share of scenarios where it held.
 
 ## Relationships
 
@@ -128,6 +131,8 @@ struct MyEvaluation: Evaluation {
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Evaluating multimodal prompts](./evaluating-multimodal-prompts.md)
+  Measure how well an on-device model classifies food photos, using a multimodal prompt and a streamed image dataset.
 - [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 

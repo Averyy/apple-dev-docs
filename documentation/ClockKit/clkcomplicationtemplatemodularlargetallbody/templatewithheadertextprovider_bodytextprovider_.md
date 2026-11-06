@@ -7,7 +7,7 @@
 Returns a template that has a header and a row of tall body text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

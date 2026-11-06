@@ -7,11 +7,11 @@ Enable intelligence tools that you want to use in Xcode.
 
 ## Overview
 
-To use coding intelligence in Xcode, go to the Intelligence settings and turn on the agent and chat products that you want to use. Choose Xcode > Settings and select Intelligence in the sidebar. Where available, you can turn on Claude or ChatGPT in Xcode. You can also use coding tools from other providers.
+To use coding intelligence in Xcode, go to the Intelligence settings and turn on the agents that you want to use. Choose Xcode > Settings and select Intelligence in the sidebar or click “Get Started with Agents” in the coding assistant sidebar. You can also use agents and tools from other providers that don’t appear under Agents.
 
-![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents, Model Context Protocol, and Chat setting sections.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
+![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents and Model Context Protocol setting sections.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
 
-After you enable an agent or chat provider in the Intelligence settings, you can enter prompts in the coding assistant. When you enter prompts, the agent or model that you set up in the Intelligence settings may access your project files and other information when processing your requests. For more information about sharing your project files with agents and models, click “About Intelligence in Xcode & Privacy…” in the Intelligence settings.
+After you enable an agent in the Intelligence settings, you can enter prompts in the coding assistant. When you enter prompts, the agent that you set up in the Intelligence settings may access your project files and other information when processing your requests. For more information about sharing your project files with agents, click “About Intelligence in Xcode & Privacy…” under Coding Intelligence in the Intelligence settings.
 
 Help agents reach your goals faster with additional guidance and tools that you and Xcode provide. You control which commands, tools, and skills agents use to perform tasks on your behalf. For more information, see [Extending and customizing agents](./extending-and-customizing-agents.md).
 
@@ -24,20 +24,20 @@ When you choose an agent in the coding assistant, it automatically has access to
 1. In Intelligence settings, click Get next to the agent you want to enable under Agents.
 2. In the dialog that appears, click Install.
 
+After you download and install agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md).
+
 If you have an account, sign in:
 
 1. In the agent settings, click the More button (…) in the Account row.
 2. In the next sheets, and in the browser window if one appears, follow the instructions to sign in and enter your credentials.
 
-![A screenshot of the Claude Agent settings showing the Model and Account rows.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-claude-agent@2x.png)
+![A screenshot of the Claude Agent settings showing the more button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-claude-agent@2x.png)
 
-For more information about an agent, click the privacy policy and terms of use links that appear at the bottom of the agent settings.
+For more information about an agent, click the privacy policy and terms of use links that appear under Account.
 
 To enable an agent that doesn’t appear in Intelligence settings and supports the Agent Client Protocol (ACP), click Add an Agent under Agents, enter information in the next sheet, and click Add.
 
 ![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-add-agent@2x.png)
-
-After you download agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md).
 
 ## Enable ChatGPT in Xcode
 
@@ -48,15 +48,14 @@ To use ChatGPT in Xcode (with or without an account):
 
 To sign in to a free ChatGPT account, or a paid account with higher limits:
 
-1. In ChatGPT in Xcode settings, toggle ChatGPT in Xcode on.
-2. In the ChatGPT row, click Sign In, and in the next dialog, click Sign In again.
-3. In the browser window that appears, follow the instructions to enter your credentials.
+1. In ChatGPT in Xcode settings, click Sign In in the ChatGPT row, and in the next dialog, click Sign In again.
+2. In the browser window that appears, follow the instructions to enter your credentials.
 
-To upgrade your free ChatGPT account to a paid account, click Upgrade to ChatGPT Plus at the bottom of the ChatGPT in Xcode settings.
+To upgrade your free ChatGPT account to a paid account, click “Upgrade to ChatGPT Plus” at the bottom of the ChatGPT in Xcode settings.
 
 For some models, you can choose the level of reasoning that the model uses while producing a response. In the transcript pane of the conversation with the model, select the level of reasoning in the Reasoning pop-up menu that appears at the bottom of the message text field.
 
-For more information about OpenAI products, click “OpenAI Terms of Use…” at the bottom of the ChatGPT in Xcode settings.
+For more information about OpenAI products, click “OpenAI Terms of Use…” under ChatGPT.
 
 To turn off ChatGPT in Xcode, toggle ChatGPT in Xcode off in the ChatGPT in Xcode settings.
 
@@ -74,6 +73,8 @@ For more information about Anthropic products, click “Anthropic Terms of Use�
 
 To use another chat provider, click the Add a Chat Provider button under Chat. To add a provider that’s hosted on the internet, select Internet Hosted, enter the URL and other details, and click Add in the dialog that appears. To add a provider that’s hosted locally on your Mac, select Locally Hosted and enter a port and optional description instead.
 
+![A screenshot of the Add a Model Provider dialog with the Internet Hosted option selected, and the URL, other controls, and Add button below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-add-provider@2x.png)
+
 If you add another provider, it needs to support the Chat Completions API. In addition, Xcode expects the provider to support these endpoints that list models and perform completions:
 
 - `{Model provider URL}/v1/models`
@@ -87,7 +88,7 @@ To turn off the coding assistant for managed devices, set the `CodingAssistantAl
 
 ### Essentials
 - [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md)
-  Start conversations with an agent or model in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
+  Start conversations with an agent in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
 - [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md)
   Submit prompts in the same place you want to make changes to your code.
 

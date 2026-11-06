@@ -970,7 +970,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/configuring-platform-single-sign-on": {
       "file_path": "documentation/DeviceManagement/configuring-platform-single-sign-on.md",
-      "hash": "6489e1f94a1f5ac36e729d2493d699db2aa5cfb1cc17e2a31eb2a83d7c5c7e17"
+      "hash": "45859853f867f03fc9c7fea29ac9e8c9444fffff1be82e9a39a716e11949bf06"
     },
     "https://developer.apple.com/documentation/devicemanagement/content-caching-information-command": {
       "file_path": "documentation/DeviceManagement/content-caching-information-command.md",
@@ -1702,11 +1702,11 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/eventresponse": {
       "file_path": "documentation/DeviceManagement/eventresponse.md",
-      "hash": "6be304838a086772f664a610cf9ed587a326410f45c59ac6984c01fceaf141a2"
+      "hash": "e1181ab07514429c0e873991c0a2a778d9c92f0808660bc7e9df559902de9202"
     },
     "https://developer.apple.com/documentation/devicemanagement/events-status": {
       "file_path": "documentation/DeviceManagement/events-status.md",
-      "hash": "7abcf3208eda2699df784b0a4e84a5c768327317d25a718a3af1039134971d5a"
+      "hash": "753a8bb84cac4419b10a31b7106e9a4f2ec9c11d3ce6513e278e62b172761e75"
     },
     "https://developer.apple.com/documentation/devicemanagement/examining-server-tokens": {
       "file_path": "documentation/DeviceManagement/examining-server-tokens.md",
@@ -1962,7 +1962,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/get-assets-4ski1": {
       "file_path": "documentation/DeviceManagement/get-assets-4ski1.md",
-      "hash": "3b2b999f7777336863520473c365a1adba328cb0dd7701b00e7396f681ff903a"
+      "hash": "0e21e31fddd7f327923133b5c1732b22bbcec72cbde85579d812623e52f3ddc6"
     },
     "https://developer.apple.com/documentation/devicemanagement/get-assignments-158kc": {
       "file_path": "documentation/DeviceManagement/get-assignments-158kc.md",
@@ -3978,7 +3978,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/revoke-assets": {
       "file_path": "documentation/DeviceManagement/revoke-assets.md",
-      "hash": "74a78c5bbd61e0da99ece8f03ec31234a973b2f6c41b9efd1e6da2320ea873ca"
+      "hash": "33a93fb3ddd8eaa46d37e8461a1776d17bb16ca135535ade46afb4ca7e7d4966"
     },
     "https://developer.apple.com/documentation/devicemanagement/revokeassetsrequest": {
       "file_path": "documentation/DeviceManagement/revokeassetsrequest.md",
@@ -4946,7 +4946,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/statusresponse": {
       "file_path": "documentation/DeviceManagement/statusresponse.md",
-      "hash": "fa0eaee5a86e7dd79820724fc1b1116f8fc5fff3e2a3c17843423eb0f6e47a70"
+      "hash": "704ed6394aed25fa229ea387133e336916932b957a7762478c19f8bbb26023c7"
     },
     "https://developer.apple.com/documentation/devicemanagement/statusscreensharingconnectiongroupunresolvedconnections": {
       "file_path": "documentation/DeviceManagement/statusscreensharingconnectiongroupunresolvedconnections.md",
@@ -5094,7 +5094,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/subscribing-to-notifications": {
       "file_path": "documentation/DeviceManagement/subscribing-to-notifications.md",
-      "hash": "ee0438b236017551a5fa003037ad2ce6fbb7eea0c88da427ec274edea854fa73"
+      "hash": "b45016d59685a97d4065cb1559d2c19d5d4849a1bb7608e81850bf1679c9d936"
     },
     "https://developer.apple.com/documentation/devicemanagement/subscriptioncounts": {
       "file_path": "documentation/DeviceManagement/subscriptioncounts.md",
@@ -5274,7 +5274,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/unlimitedresponseasset": {
       "file_path": "documentation/DeviceManagement/unlimitedresponseasset.md",
-      "hash": "f7b89bfdb5a5414d0b1cc3f46913a7e4dd1336f27a50e459b70f40745eb12d0f"
+      "hash": "4fb58b35468587f5650723337f6410276a700240c7f7505acce04016eb9a2dd8"
     },
     "https://developer.apple.com/documentation/devicemanagement/unlock-user-account-command": {
       "file_path": "documentation/DeviceManagement/unlock-user-account-command.md",
@@ -6650,7 +6650,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/configuring-platform-single-sign-on.json": {
       "file_path": "documentation/DeviceManagement/configuring-platform-single-sign-on.md",
-      "hash": "6489e1f94a1f5ac36e729d2493d699db2aa5cfb1cc17e2a31eb2a83d7c5c7e17"
+      "hash": "45859853f867f03fc9c7fea29ac9e8c9444fffff1be82e9a39a716e11949bf06"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/content-caching-information-command.json": {
       "file_path": "documentation/DeviceManagement/content-caching-information-command.md",
@@ -7382,11 +7382,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/eventresponse.json": {
       "file_path": "documentation/DeviceManagement/eventresponse.md",
-      "hash": "6be304838a086772f664a610cf9ed587a326410f45c59ac6984c01fceaf141a2"
+      "hash": "e1181ab07514429c0e873991c0a2a778d9c92f0808660bc7e9df559902de9202"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/events-status.json": {
       "file_path": "documentation/DeviceManagement/events-status.md",
-      "hash": "7abcf3208eda2699df784b0a4e84a5c768327317d25a718a3af1039134971d5a"
+      "hash": "753a8bb84cac4419b10a31b7106e9a4f2ec9c11d3ce6513e278e62b172761e75"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/examining-server-tokens.json": {
       "file_path": "documentation/DeviceManagement/examining-server-tokens.md",
@@ -7642,7 +7642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/get-assets-4ski1.json": {
       "file_path": "documentation/DeviceManagement/get-assets-4ski1.md",
-      "hash": "3b2b999f7777336863520473c365a1adba328cb0dd7701b00e7396f681ff903a"
+      "hash": "0e21e31fddd7f327923133b5c1732b22bbcec72cbde85579d812623e52f3ddc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/get-assignments-158kc.json": {
       "file_path": "documentation/DeviceManagement/get-assignments-158kc.md",
@@ -9662,7 +9662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/revoke-assets.json": {
       "file_path": "documentation/DeviceManagement/revoke-assets.md",
-      "hash": "74a78c5bbd61e0da99ece8f03ec31234a973b2f6c41b9efd1e6da2320ea873ca"
+      "hash": "33a93fb3ddd8eaa46d37e8461a1776d17bb16ca135535ade46afb4ca7e7d4966"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/revokeassetsrequest.json": {
       "file_path": "documentation/DeviceManagement/revokeassetsrequest.md",
@@ -10630,7 +10630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/statusresponse.json": {
       "file_path": "documentation/DeviceManagement/statusresponse.md",
-      "hash": "fa0eaee5a86e7dd79820724fc1b1116f8fc5fff3e2a3c17843423eb0f6e47a70"
+      "hash": "704ed6394aed25fa229ea387133e336916932b957a7762478c19f8bbb26023c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/statusscreensharingconnectiongroupunresolvedconnections.json": {
       "file_path": "documentation/DeviceManagement/statusscreensharingconnectiongroupunresolvedconnections.md",
@@ -10778,7 +10778,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/subscribing-to-notifications.json": {
       "file_path": "documentation/DeviceManagement/subscribing-to-notifications.md",
-      "hash": "ee0438b236017551a5fa003037ad2ce6fbb7eea0c88da427ec274edea854fa73"
+      "hash": "b45016d59685a97d4065cb1559d2c19d5d4849a1bb7608e81850bf1679c9d936"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/subscriptioncounts.json": {
       "file_path": "documentation/DeviceManagement/subscriptioncounts.md",
@@ -10958,7 +10958,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/unlimitedresponseasset.json": {
       "file_path": "documentation/DeviceManagement/unlimitedresponseasset.md",
-      "hash": "f7b89bfdb5a5414d0b1cc3f46913a7e4dd1336f27a50e459b70f40745eb12d0f"
+      "hash": "4fb58b35468587f5650723337f6410276a700240c7f7505acce04016eb9a2dd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/unlock-user-account-command.json": {
       "file_path": "documentation/DeviceManagement/unlock-user-account-command.md",

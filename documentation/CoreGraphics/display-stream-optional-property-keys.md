@@ -1,6 +1,7 @@
 # Display Stream Optional Property Keys
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: Article
 
 These keys are used to populate the `properties` dictionary used when creating a new display stream.
 
@@ -35,8 +36,8 @@ These keys are used to populate the `properties` dictionary used when creating a
   Use these constants to determine which rectangles your app is interested in.
 - [enum CGDisplayStreamFrameStatus](./cgdisplaystreamframestatus.md)
   Describes a frame update event.
-- [Display Stream YCbCr to RGB conversion Matrix Options](./display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
-  These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
+- [Display stream YCbCr to RGB conversion matrix options](./display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
+  Matrix coefficient options for converting a display stream with YCbCr components to a display stream with RGB components.
 
 
 ---

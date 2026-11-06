@@ -7,9 +7,9 @@
 A type that describes the bounds of a range setting.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 

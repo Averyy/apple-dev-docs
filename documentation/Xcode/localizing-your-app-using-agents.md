@@ -9,7 +9,7 @@ Use agentic coding tools to translate the strings in your app into multiple lang
 
 Agents simplify the localization of your app by performing tasks for you, such as adding languages, updating string catalogs, translating strings, and even adding language-specific plural variants when needed. Xcode gives the right context and language-specific style guidance to agents so they make the best translations for your app.
 
-Before you begin, enable an agent in Intelligence settings and choose that agent in the coding assistant. For more information, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
+Before you begin, enable one or more agents in Intelligence settings and choose one in the coding assistant. For more information, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
 ## Add languages and translations
 
@@ -32,15 +32,15 @@ You can watch the progress of translations in the transcript and see files that 
 
 ![A screenshot that shows the conversation sidebar, a localization transcript in the middle, and changes to a string catalog in the artifacts pane on the right. The transcript shows the “Translate my app into Italian” prompt in progress with one translation batch in progress and two translation batches complete. The artifacts pane shows the Localizable string catalog translated into Italian.](https://developer.apple.com/tutorials/images/com.apple.Xcode/localizing-using-agents-in-progress@2x.png)
 
-After the agent completes the translations, Xcode shows a summary of the changes in the transcript. The summary of changes includes the details of the added or changed files in the artifacts area. You can move the files that Xcode creates to other locations in your project.
+After the agent completes the translations, Xcode shows a summary of the changes in the transcript. The summary of changes includes the details of the added or changed files in the artifacts pane. You can move the files that Xcode creates to other locations in your project.
 
-To differentiate agentic translations from those that you provide, Xcode sets the state of translations to Machine Translated in the string catalog editor. If you export your localizations to XML Localization Interchange File Format (XLIFF), Xcode sets the `state-qualifier` property to `leveraged-mt` as well.
+To differentiate agentic translations from those that you provide, Xcode sets the state of translations to `machine_translated` in the string catalog file. If you export your localizations to XML Localization Interchange File Format (XLIFF), Xcode also sets the `state-qualifier` property to `leveraged-mt`.
 
 ## Use localizable APIs
 
 If Xcode omits some user-facing strings when updating string catalogs, make sure you’re using localizable APIs in your code.
 
-If your app uses [SwiftUI](../SwiftUI/SwiftUI.md), the views that the framework provides treat user-facing strings as localizable, so Xcode automatically finds them. However, other Swift code that creates human-readable strings, must explicitly use the [`init(localized:)`](../Swift/string/init%28localized%29.md) initializer to be localizable.
+If your app uses [SwiftUI](../SwiftUI/SwiftUI.md), the views that the framework provides treat user-facing strings as localizable, so Xcode automatically finds them. However, other Swift code that creates human-readable strings must explicitly use the [`init(localized:)`](../Swift/string/init%28localized%29.md) initializer to be localizable.
 
 ```swift
 String(localized: "Hello, world!")

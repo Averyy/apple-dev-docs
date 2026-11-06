@@ -22,9 +22,11 @@ Xcode alerts you when the external agent connects to Xcode and when it’s activ
 In Intelligence settings, allow external agents to connect with Xcode using its MCP server:
 
 1. Choose Xcode > Settings and select Intelligence in the sidebar.
-2. Under Model Context Protocol, turn on “Allow external agents to use Xcode tools.”
+2. Under Model Context Protocol, choose either Always or “While Xcode is Open” from the “Allow External Agents to Use Xcode Tools” pop-up menu.
 
-![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
+![A screenshot of the Intelligence settings showing the “Allow External Agents to Use Xcode Tools” setting under Model Context Protocol.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
+
+To turn off this feature, choose Never from the “Allow External Agents to Use Xcode Tools” pop-up menu.
 
 ### Configure external agents to use the MCP server
 

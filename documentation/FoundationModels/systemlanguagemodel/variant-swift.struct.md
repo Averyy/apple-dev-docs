@@ -11,6 +11,7 @@ The variant of an on-device model.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.3+ (Beta)
 - visionOS 27.0+
 
 ## Declaration
@@ -18,6 +19,10 @@ The variant of an on-device model.
 ```swift
 struct Variant
 ```
+
+## Mentions
+
+- [Detecting available Apple Foundation Models](../detecting-available-apple-foundation-models.md)
 
 ## Topics
 

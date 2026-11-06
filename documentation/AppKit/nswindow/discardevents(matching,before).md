@@ -39,6 +39,8 @@ func discardEvents(matching mask: NSEvent.EventTypeMask, before lastEvent: NSEve
   This action method dispatches mouse and keyboard events the global application object sends to the window.
 - [func tryToPerform(Selector, with: Any?) -> Bool](./trytoperform%28_,with%29.md)
   Dispatches action messages with a given argument.
+- [var disablesDirectTouchSystemGestures: Bool](./disablesdirecttouchsystemgestures.md)
+  Disables direct-touch system gestures when this window is visible.
 
 
 ---

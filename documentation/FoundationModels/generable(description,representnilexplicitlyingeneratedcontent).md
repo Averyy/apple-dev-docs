@@ -9,6 +9,7 @@
 - iPadOS 26.4+
 - Mac Catalyst 26.4+
 - macOS 26.4+
+- tvOS 27.0+
 - visionOS 26.4+
 - watchOS 27.0+
 

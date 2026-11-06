@@ -23,6 +23,10 @@ init(fontAttributes attributes: [NSFontDescriptor.AttributeName : Any]? = nil)
 
 The new font descriptor.
 
+## Discussion
+
+> ❗ **Important**: `NSFontDescriptor` doesn’t support subclassing. When you call this method on an instance of a subclass, it returns an `NSFontDescriptor` object rather than an instance of the subclass. To add behavior or data to a font descriptor, store an `NSFontDescriptor` in a property of your own type, or use the `NSFontDescriptor` instance methods that return a modified copy, such as [`addingAttributes(_:)`](./addingattributes%28_%29.md) or [`withSymbolicTraits(_:)`](./withsymbolictraits%28_%29.md).
+
 ## Parameters
 
 - `attributes`: The attributes for the new font descriptor. If `nil`, the font descriptor’s attribute dictionary will be empty.

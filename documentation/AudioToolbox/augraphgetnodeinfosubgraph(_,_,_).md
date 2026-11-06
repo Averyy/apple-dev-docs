@@ -7,7 +7,7 @@
 Gets the audio processing subgraph object represented by a node.
 
 **Availability**:
-- macOS 10.2+ - Deprecated in 27.2
+- macOS 10.2+ - Deprecated in 27.3
 
 > **Deprecated**: no longer supported
 

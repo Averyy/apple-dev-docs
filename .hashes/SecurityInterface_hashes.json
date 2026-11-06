@@ -234,7 +234,7 @@
     },
     "https://developer.apple.com/documentation/securityinterface/sfcertificatepanel": {
       "file_path": "documentation/SecurityInterface/sfcertificatepanel.md",
-      "hash": "4a9d07ffd09bd9919b9d15661019617c1199f8aafb8cf811621548113105e43f"
+      "hash": "c9ef7dd87f7b2ecf0c7aa61e48b67a690453e4178c33d82bc4c48598cbb24ed2"
     },
     "https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/beginsheet(for:modaldelegate:didend:contextinfo:certificates:showgroup:)": {
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/beginsheet(for,modaldelegate,didend,contextinfo,certificates,showgroup).md",
@@ -770,7 +770,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel.json": {
       "file_path": "documentation/SecurityInterface/sfcertificatepanel.md",
-      "hash": "4a9d07ffd09bd9919b9d15661019617c1199f8aafb8cf811621548113105e43f"
+      "hash": "c9ef7dd87f7b2ecf0c7aa61e48b67a690453e4178c33d82bc4c48598cbb24ed2"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/beginsheet(for:modaldelegate:didend:contextinfo:certificates:showgroup:).json": {
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/beginsheet(for,modaldelegate,didend,contextinfo,certificates,showgroup).md",

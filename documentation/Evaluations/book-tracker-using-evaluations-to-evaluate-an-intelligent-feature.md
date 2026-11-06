@@ -518,6 +518,8 @@ Both of Book Tracker’s intelligent features now have a measurable quality chec
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Designing effective evaluations](./designing-effective-evaluations.md)
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
+- [Evaluating multimodal prompts](./evaluating-multimodal-prompts.md)
+  Measure how well an on-device model classifies food photos, using a multimodal prompt and a streamed image dataset.
 - [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 - [protocol Evaluation](./evaluation.md)

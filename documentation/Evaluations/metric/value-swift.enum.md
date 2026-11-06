@@ -51,6 +51,10 @@ enum Value
   The numeric value of this metric.
 - [let rationale: String?](./rationale.md)
   An optional rationale describing the result.
+- [let metricDescription: String?](./metricdescription.md)
+  An optional description of the associated metric.
+- [var description: String](./description.md)
+  A human-readable string representation of the metric, including its name, value, and optional rationale.
 
 
 ---

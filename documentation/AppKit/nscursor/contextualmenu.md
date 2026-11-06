@@ -26,6 +26,12 @@ class var contextualMenu: NSCursor { get }
 
 The contextual menu cursor
 
+## Discussion
+
+The following image shows the contextual menu cursor:
+
+![contextual menu cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-contextual-menu@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

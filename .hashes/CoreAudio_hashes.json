@@ -3646,7 +3646,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationhighquality": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationhighquality.md",
-      "hash": "632c162e7bce9b6be64ebc092d0f4f8b66a0d8819b954a68f844060024be0cd7"
+      "hash": "69ea5b2d16896c450188319114e2347cc8c0b89afbb02d69603fecc870e6797c"
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationkey": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationkey.md",
@@ -3654,19 +3654,19 @@
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationlowquality": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationlowquality.md",
-      "hash": "3af261b90ff10e47d8cbbe857a6d6baa0f00e0791c850c5d662b5579bea17b11"
+      "hash": "be849e85b6487cb9427fee0f5efe70a73c94bce70c89c43be4b156da1affdd15"
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationmaxquality": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationmaxquality.md",
-      "hash": "a7880816daacabc6f611a29c3289fee005072a0c249eeb880271a6a89532b5ff"
+      "hash": "65e167c63628c4bae0df5ee641cf3d46ad39ec4a18f1f05d1450118fa8e99dd8"
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationmediumquality": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationmediumquality.md",
-      "hash": "552cbff72ec99dbe0c75af26160fe0e35ea1388ce0dd1d1e92886c5568d161d7"
+      "hash": "d542277dec037a0c79af8762cfbd4d8642cc39786f4a34412223212ac8b3e2a9"
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationminquality": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationminquality.md",
-      "hash": "1795546bb25680e233876b11a50eeab5db4cdf0dfe4a37f7797b6991552f1b59"
+      "hash": "5bda96a7b55baf568c12ad56edfae678a94534ea3eb8cc1c98cac486340b5034"
     },
     "https://developer.apple.com/documentation/coreaudio/kaudiosubdevicedriftcompensationqualitykey": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationqualitykey.md",
@@ -7554,7 +7554,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationhighquality.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationhighquality.md",
-      "hash": "632c162e7bce9b6be64ebc092d0f4f8b66a0d8819b954a68f844060024be0cd7"
+      "hash": "69ea5b2d16896c450188319114e2347cc8c0b89afbb02d69603fecc870e6797c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationkey.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationkey.md",
@@ -7562,19 +7562,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationlowquality.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationlowquality.md",
-      "hash": "3af261b90ff10e47d8cbbe857a6d6baa0f00e0791c850c5d662b5579bea17b11"
+      "hash": "be849e85b6487cb9427fee0f5efe70a73c94bce70c89c43be4b156da1affdd15"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationmaxquality.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationmaxquality.md",
-      "hash": "a7880816daacabc6f611a29c3289fee005072a0c249eeb880271a6a89532b5ff"
+      "hash": "65e167c63628c4bae0df5ee641cf3d46ad39ec4a18f1f05d1450118fa8e99dd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationmediumquality.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationmediumquality.md",
-      "hash": "552cbff72ec99dbe0c75af26160fe0e35ea1388ce0dd1d1e92886c5568d161d7"
+      "hash": "d542277dec037a0c79af8762cfbd4d8642cc39786f4a34412223212ac8b3e2a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationminquality.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationminquality.md",
-      "hash": "1795546bb25680e233876b11a50eeab5db4cdf0dfe4a37f7797b6991552f1b59"
+      "hash": "5bda96a7b55baf568c12ad56edfae678a94534ea3eb8cc1c98cac486340b5034"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/kaudiosubdevicedriftcompensationqualitykey.json": {
       "file_path": "documentation/CoreAudio/kaudiosubdevicedriftcompensationqualitykey.md",

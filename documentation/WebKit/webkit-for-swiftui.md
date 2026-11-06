@@ -69,11 +69,11 @@ Connect [`WebView`](./webview-swift.struct.md) to a [`WebPage`](./webpage.md) to
   The kind of sensor permission a web resource may request to access.
 ### Immersive environments
 - [WebPage.ImmersiveEnvironment](./webpage/immersiveenvironment.md)
-  An object representing a website-provided immersive environment that is ready for presentation.
+  An object that represents a website-provided immersive environment ready for presentation.
 - [struct WebViewImmersiveEnvironmentView](./webviewimmersiveenvironmentview.md)
   A SwiftUI view that renders a specific website-provided immersive environment.
 - [var allowsImmersiveEnvironments: Bool](./webpage/configuration/allowsimmersiveenvironments.md)
-  Indicates whether website immersive environments are allowed.
+  A Boolean value that indicates whether website immersive environments are allowed.
 
 ## See Also
 

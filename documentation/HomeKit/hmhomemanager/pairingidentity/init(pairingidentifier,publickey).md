@@ -7,8 +7,10 @@
 Creates identity information that an installation service uses to set up a provisional home.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

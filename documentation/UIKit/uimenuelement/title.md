@@ -28,8 +28,14 @@ var title: String { get }
 ### Getting the element attributes
 - [var subtitle: String?](./subtitle.md)
   The subtitle to display alongside the menu element’s title.
+- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](./highlightstateupdatehandler.md)
+  A closure the system calls when the element’s highlight state changes in a menu.
 - [var image: UIImage?](./image.md)
   The image to display alongside the menu element’s title.
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
+- [UIMenuElement.ImageVisibility](./imagevisibility.md)
+  Visibility options for a menu element’s image.
 
 
 ---

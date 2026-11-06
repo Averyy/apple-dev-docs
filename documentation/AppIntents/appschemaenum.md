@@ -48,6 +48,8 @@ protocol AppSchemaEnum : AppSchema.Kind
   The collection of enum schemas in the reader domain.
 - [static var reminders: some AppSchema.RemindersEnum](./appschemaenum/reminders.md)
   The collection of enum schemas in the reminders domain.
+- [static var video: some AppSchema.VideoEnum](./appschemaenum/video.md)
+  The collection of enum schemas in the video domain.
 - [static var whiteboard: some AppSchema.WhiteboardEnum](./appschemaenum/whiteboard.md)
   The collection of enum schemas in the whiteboard domain.
 

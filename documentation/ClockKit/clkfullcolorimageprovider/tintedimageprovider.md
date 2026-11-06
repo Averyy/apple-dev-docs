@@ -7,7 +7,7 @@
 An image provider that produces alternative images for tinted graphic complications.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 ## Declaration
 

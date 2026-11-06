@@ -7,13 +7,13 @@
 A Boolean value that determines whether the view hierarchy has auto-correction enabled.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- macOS 10.15+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
-- watchOS 8.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled)
+- iOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- macOS 10.15+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
+- watchOS 8.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled)
 
 ## Declaration
 
@@ -36,6 +36,8 @@ When the value is `nil`, SwiftUI uses the system default. The default value is `
   The active appearance expected of controls in a window.
 - [var presentationMode: Binding<PresentationMode>](./presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
+- [struct PresentationMode](../presentationmode.md)
+  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](./sizecategory.md)
   The size of content.
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](./imageplaygroundpersonalizationpolicy.md)

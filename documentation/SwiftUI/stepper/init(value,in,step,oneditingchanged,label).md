@@ -7,12 +7,12 @@
 Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
-- watchOS 9.0+ - Deprecated in 27.2 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
+- watchOS 9.0+ - Deprecated in 27.3 (renamed: Stepper(value:in:step:label:onEditingChanged:))
 
 > **Deprecated**: Use [`init(value:in:step:label:onEditingChanged:)`](./init%28value,in,step,label,oneditingchanged%29.md) instead.
 

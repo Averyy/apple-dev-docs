@@ -85,6 +85,9 @@ object App.Relationships
 - [object App.Relationships.SubscriptionGroups](./relationships-data.dictionary/subscriptiongroups-data.dictionary.md)
 - [object App.Relationships.Webhooks](./relationships-data.dictionary/webhooks-data.dictionary.md)
   The link object for the app’s webhooks relationship.
+### Dictionaries
+- [object App.Relationships.RetentionMessages](./relationships-data.dictionary/retentionmessages-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 
 ## Properties
 
@@ -133,6 +136,7 @@ object App.Relationships
 - `perfPowerMetrics` (App.Relationships.PerfPowerMetrics): The data and links that describe the relationship between the Apps and the Power and Performance Metrics resources.
 - `searchKeywords` (App.Relationships.SearchKeywords): The data and links that describe the relationship between the Apps and the Search Keywords resources.
 - `webhooks` (App.Relationships.Webhooks): The data and links that describe the relationship between the Apps and the Webhooks resources.
+- `retentionMessages` (App.Relationships.RetentionMessages)
 
 ## See Also
 

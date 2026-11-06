@@ -7,7 +7,7 @@
 Presents a new reference type document window.
 
 **Availability**:
-- macOS 13.0+ - Deprecated in 27.2
+- macOS 13.0+ - Deprecated in 27.3
 
 > **Deprecated**: Conform your document type to Document protocol instead.
 

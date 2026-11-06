@@ -449,6 +449,7 @@
 - [init?(propertyListPlist: CFPropertyList)](./cgcolorspace/init%28propertylistplist%29.md)
   Creates a color space from a property list.
 - [init?(scrollWheelEvent2Source: CGEventSource?, units: CGScrollEventUnit, wheelCount: UInt32, wheel1: Int32, wheel2: Int32, wheel3: Int32)](./cgevent/init%28scrollwheelevent2source,units,wheelcount,wheel1,wheel2,wheel3%29.md)
+- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./cgcolorconversioninfo/init%28src,srcheadroom,dst,dstheadroom,tonemapping,options,_%29.md)
 - [func isHDR() -> Bool](./cgcolorspace/ishdr%28%29.md)
 - [var name: UnsafePointer<CChar>](./cgpdftagtype/name.md)
 - [var outline: CFDictionary?](./cgpdfdocument/outline.md)

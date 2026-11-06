@@ -16,6 +16,7 @@ Macros that UIKit defines.
 - [IBSegueAction](./ibsegueaction.md)
 - [NSLAYOUTANCHOR_EXTERN](./nslayoutanchor_extern.md)
 - [NSLAYOUTCONSTRAINT_EXTERN](./nslayoutconstraint_extern.md)
+- [UIFOCUS_SUPPORTS_UIKIT](./uifocus_supports_uikit.md)
 - [UIKIT_AVAILABLE_IOS_ONLY](./uikit_available_ios_only.md)
 - [UIKIT_AVAILABLE_IOS_TVOS](./uikit_available_ios_tvos.md)
 - [UIKIT_AVAILABLE_IOS_WATCHOS_TVOS](./uikit_available_ios_watchos_tvos.md)

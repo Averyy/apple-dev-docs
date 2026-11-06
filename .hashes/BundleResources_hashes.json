@@ -118,7 +118,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements": {
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "49ace88ea5e7eff3d0d69c3aa1154f71a56ad7d92fe64e735fa08131128e4c3d"
+      "hash": "e70839e8fbbd2fd6b35d0e31b683fc08ec69b688f4d256aabde90e21e74d1597"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment": {
       "file_path": "documentation/BundleResources/entitlements/aps-environment.md",
@@ -138,7 +138,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.accessory-data-provider.md",
-      "hash": "c16ce1e6d4eec733f143ac6c5767606715f8915584f163ab51ff753c8cd8fba9"
+      "hash": "be4ca5259d1f6a7982306bef182c6323ae9a36d732b269b6294dee8a3a37e502"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-setup-discovery-extension": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.accessory-setup-discovery-extension.md",
@@ -246,7 +246,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carplay-audio": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-audio.md",
-      "hash": "bc6f61483f3608bed55778e6d13082de928993741cf208de0045f95216b75dc1"
+      "hash": "c779f9852d8f25455955f6b542af279d37191ba1425705488ee30968138128cb"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carplay-charging": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-charging.md",
@@ -286,7 +286,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carplay-video": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-video.md",
-      "hash": "fff48257fa92d0cee07b14069678c5775a49908ea5dbd799bcb2e74cc0e383b1"
+      "hash": "9b142c04c446bc13ea4b4f8ea92bd9950ae8a15aa1d50a2d1560dd9f8d22d63d"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carplay-voice-based-conversation": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-voice-based-conversation.md",
@@ -594,7 +594,11 @@
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.md",
-      "hash": "bf710e14b0ab6ecfd830666c555e63b8113fe0a3b86c4ce1d1ca5c720e89b669"
+      "hash": "a0b440a5807199bd8372177db6501f3aa72517dfacafcbbee95538a0acc43b9f"
+    },
+    "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.verifiable-credential-types": {
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.identity-document-services.document-provider.verifiable-credential-types.md",
+      "hash": "46ea9357f746acc67aae0a988ae17aab0f69962a655aba189942cae5a578902e"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.in-app-identity-presentment": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.in-app-identity-presentment.md",
@@ -2878,7 +2882,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivities": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportsliveactivities.md",
-      "hash": "c3f8ddefce68b9a4929ec8a64532e4cea0a4b4d2b971c24cf9660368446bc986"
+      "hash": "ebc423afb7005618d983be98533a4b5d96d87ddb385a566150cc8f3e861d3bcd"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md",
@@ -3834,7 +3838,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements.json": {
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "49ace88ea5e7eff3d0d69c3aa1154f71a56ad7d92fe64e735fa08131128e4c3d"
+      "hash": "e70839e8fbbd2fd6b35d0e31b683fc08ec69b688f4d256aabde90e21e74d1597"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/aps-environment.json": {
       "file_path": "documentation/BundleResources/entitlements/aps-environment.md",
@@ -3854,7 +3858,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.accessory-data-provider.md",
-      "hash": "c16ce1e6d4eec733f143ac6c5767606715f8915584f163ab51ff753c8cd8fba9"
+      "hash": "be4ca5259d1f6a7982306bef182c6323ae9a36d732b269b6294dee8a3a37e502"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.accessory-setup-discovery-extension.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.accessory-setup-discovery-extension.md",
@@ -3962,7 +3966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.carplay-audio.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-audio.md",
-      "hash": "bc6f61483f3608bed55778e6d13082de928993741cf208de0045f95216b75dc1"
+      "hash": "c779f9852d8f25455955f6b542af279d37191ba1425705488ee30968138128cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.carplay-charging.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-charging.md",
@@ -4002,7 +4006,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.carplay-video.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-video.md",
-      "hash": "fff48257fa92d0cee07b14069678c5775a49908ea5dbd799bcb2e74cc0e383b1"
+      "hash": "9b142c04c446bc13ea4b4f8ea92bd9950ae8a15aa1d50a2d1560dd9f8d22d63d"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.carplay-voice-based-conversation.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.carplay-voice-based-conversation.md",
@@ -4310,7 +4314,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.md",
-      "hash": "bf710e14b0ab6ecfd830666c555e63b8113fe0a3b86c4ce1d1ca5c720e89b669"
+      "hash": "a0b440a5807199bd8372177db6501f3aa72517dfacafcbbee95538a0acc43b9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.verifiable-credential-types.json": {
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.identity-document-services.document-provider.verifiable-credential-types.md",
+      "hash": "46ea9357f746acc67aae0a988ae17aab0f69962a655aba189942cae5a578902e"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.in-app-identity-presentment.json": {
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.in-app-identity-presentment.md",
@@ -6594,7 +6602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nssupportsliveactivities.json": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportsliveactivities.md",
-      "hash": "c3f8ddefce68b9a4929ec8a64532e4cea0a4b4d2b971c24cf9660368446bc986"
+      "hash": "ebc423afb7005618d983be98533a4b5d96d87ddb385a566150cc8f3e861d3bcd"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates.json": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md",
@@ -7437,6 +7445,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1858
+    "total_pages": 1860
   }
 }

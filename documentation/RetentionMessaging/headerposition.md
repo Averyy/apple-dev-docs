@@ -36,7 +36,7 @@ The `headerPosition` defaults to `ABOVE_BODY`. Include it in your request if you
 - [type messageState](./messagestate.md)
   The approval state of the message.
 - [type body](./body.md)
-  The body text you provide for a message.
+  The main text you provide for a retention message.
 - [object BulletPoint](./bulletpoint.md)
   The text and its bullet-point image to include in a retention message’s bulleted list.
 - [type bulletPointText](./bulletpointtext.md)

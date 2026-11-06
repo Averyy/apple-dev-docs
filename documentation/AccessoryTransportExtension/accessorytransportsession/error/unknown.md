@@ -21,7 +21,9 @@ case unknown
 - [AccessoryTransportSession.Error.invalidated](./invalidated.md)
   An error that indicates the session is invalidated.
 - [AccessoryTransportSession.Error.unsupported](./unsupported.md)
-  An error that indicates the framework doesn’t support an client-provided value or operation.
+  An error that indicates a client-provided value or operation isn’t supported.
+- [AccessoryTransportSession.Error.unavailable](./unavailable.md)
+  An error that indicates the feature isn’t available on the device.
 
 
 ---

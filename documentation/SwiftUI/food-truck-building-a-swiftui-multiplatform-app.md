@@ -2,16 +2,16 @@
 
 **Framework**: SwiftUI  
 **Role**: Sample Code  
-**Download**: [FoodTruckBuildingASwiftUIMultiplatformApp.zip](https://docs-assets.developer.apple.com/published/dd9087d16d30/FoodTruckBuildingASwiftUIMultiplatformApp.zip)
+**Download**: [FoodTruckBuildingASwiftUIMultiplatformApp.zip](https://docs-assets.developer.apple.com/published/1796469ec876/FoodTruckBuildingASwiftUIMultiplatformApp.zip)
 
 Create a single codebase and app target for Mac, iPad, and iPhone.
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
-- Xcode 14.3+
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- Xcode 27.0+
 
 ## Overview
 

@@ -9,6 +9,8 @@ The app has already started the maximum number of concurrent Live Activities.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

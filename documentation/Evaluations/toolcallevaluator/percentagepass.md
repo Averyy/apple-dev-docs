@@ -21,6 +21,12 @@ The metric for the partial score result.
 let percentagePass: Metric
 ```
 
+## See Also
+
+### Inspecting the metrics
+- [let allPass: Metric](./allpass.md)
+  The metric for the strict pass or fail result.
+
 
 ---
 

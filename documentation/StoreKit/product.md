@@ -25,6 +25,7 @@ struct Product
 
 - [Supporting monthly subscriptions with a 12-month commitment](./supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 - [Supporting Family Sharing in your app](./supporting-family-sharing-in-your-app.md)
+- [Supporting multiseat purchases in your app](./supporting-multiseat-purchases-in-your-app.md)
 - [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
 
 ## Overview
@@ -96,6 +97,8 @@ For information about configuring Apple In-App Purchases in App Store Connect, s
   Information about a subscription offer that you configure in App Store Connect.
 - [Product.SubscriptionInfo.Status](./product/subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
+- [let supportsMultiSeatPurchase: Bool](./product/supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 ### Getting product identifiers and type
 - [let id: String](./product/id.md)
   The unique product identifier.

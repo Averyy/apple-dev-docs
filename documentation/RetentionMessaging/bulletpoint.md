@@ -27,7 +27,9 @@ Use `BulletPoint` items when you set up a text-based message that contains bulle
 - The alternative text that describes the bullet point image.
 - The text of the individual bullet point.
 
-Provide an array of `BulletPoint` objects in the [`UploadMessageRequestBody`](./uploadmessagerequestbody.md)  when you call [`Upload Message`](./upload-message.md).
+Provide an array of `BulletPoint` objects in the [`UploadMessageRequestBody`](./uploadmessagerequestbody.md) when you call [`Upload Message`](./upload-message.md).
+
+> **Note**: All message text must be a UTF-8-encoded string that contains only allowed Unicode characters. If a text field contains a disallowed character, [`Upload Message`](./upload-message.md) returns a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
 
 ## Properties
 
@@ -47,7 +49,7 @@ Provide an array of `BulletPoint` objects in the [`UploadMessageRequestBody`](./
 - [type messageState](./messagestate.md)
   The approval state of the message.
 - [type body](./body.md)
-  The body text you provide for a message.
+  The main text you provide for a retention message.
 - [type bulletPointText](./bulletpointtext.md)
   The text you provide for an individual bullet-list item.
 - [type header](./header.md)

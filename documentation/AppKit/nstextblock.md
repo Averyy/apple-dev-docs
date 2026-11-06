@@ -62,6 +62,7 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 ### Working with color
 - [var backgroundColor: NSColor?](./nstextblock/backgroundcolor.md)
   The background color of the text block.
+- [func borderColor(for: CGRectEdge) -> NSColor?](./nstextblock/bordercolor%28for%29-5m8cr.md)
 - [func setBorderColor(NSColor?)](./nstextblock/setbordercolor%28_%29.md)
   Sets the color of all borders of the text block.
 - [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./nstextblock/setbordercolor%28_,rectedge%29.md)
@@ -81,9 +82,9 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 - [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](./nstextblock/widthvaluetype%28for,edge%29.md)
   Returns the value type of an edge of a specified layer of the text block.
 - [func borderColor(for: NSRectEdge) -> NSColor?](./nstextblock/bordercolor%28for%29-273pl.md)
+  Returns the border color of the specified text block edge.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](./nstextblock/setbordercolor%28_,for%29.md)
   Sets the border color of the specified edge of the text block.
-- [func borderColor(for: CGRectEdge) -> NSColor?](./nstextblock/bordercolor%28for%29-5m8cr.md)
 
 ## Relationships
 

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Security": {
       "file_path": "documentation/Security/Security.md",
-      "hash": "1f251c46b2d469bb2c2c7384629ddbbca1ecac591bb41578053b5bc3bf25a6ae"
+      "hash": "c55f4f5cbd61a5eb552f217838235d54a8e774add591b5e1d916de41f153ca40"
     },
     "https://developer.apple.com/documentation/security/1434707-anonymous": {
       "file_path": "documentation/Security/api-1434707-anonymous.md",
@@ -21316,6 +21316,10 @@
       "file_path": "documentation/Security/ksecpolicyapplepkinitserver.md",
       "hash": "a25c1f7e654aa7a18535f8917874a74bb514aacfe04a0b9534fbb2dfa40fe3ce"
     },
+    "https://developer.apple.com/documentation/security/ksecpolicyappleqwactlsbinding": {
+      "file_path": "documentation/Security/ksecpolicyappleqwactlsbinding.md",
+      "hash": "c5a7267d138d50b65a59d8149440be88b6e95b3570ffc2d6ccb5ae944b2a2dc4"
+    },
     "https://developer.apple.com/documentation/security/ksecpolicyapplerevocation": {
       "file_path": "documentation/Security/ksecpolicyapplerevocation.md",
       "hash": "7fd6547542e22f9c6c8ea6f6fa5cbddb3527c31bded56864d1dd9c7a222e886c"
@@ -21475,6 +21479,10 @@
     "https://developer.apple.com/documentation/security/ksecpublickeyhashitemattr": {
       "file_path": "documentation/Security/ksecpublickeyhashitemattr.md",
       "hash": "dadcb3ad331dc76422b8ca094cb1f4d4bd7fc1e946ae36e56e74a91951284a3c"
+    },
+    "https://developer.apple.com/documentation/security/ksecqwactlsbindingerrordomain": {
+      "file_path": "documentation/Security/ksecqwactlsbindingerrordomain.md",
+      "hash": "93e40196c4036cc2790e35bf5fa13d9ce60a290de1663fdd7ec331dd738a5c67"
     },
     "https://developer.apple.com/documentation/security/ksecrandomdefault": {
       "file_path": "documentation/Security/ksecrandomdefault.md",
@@ -26612,6 +26620,10 @@
       "file_path": "documentation/Security/secpolicycreatebasicx509().md",
       "hash": "55ef73e534742f92d532899aaf2ce9278f85c766049812e2d6c15212cd6e7c7b"
     },
+    "https://developer.apple.com/documentation/security/secpolicycreateqwactlsbinding(_:)": {
+      "file_path": "documentation/Security/secpolicycreateqwactlsbinding(_).md",
+      "hash": "66feea191f27e16e5c3bc1e4e53c386cbcfac14567d82a4df6fffe5e7654e389"
+    },
     "https://developer.apple.com/documentation/security/secpolicycreaterevocation(_:)": {
       "file_path": "documentation/Security/secpolicycreaterevocation(_).md",
       "hash": "af7e67f7c96b9f931c7938fbcecb41e868e2a8df58263606bb5aa570bba5a620"
@@ -26843,6 +26855,42 @@
     "https://developer.apple.com/documentation/security/secpublickeyhash": {
       "file_path": "documentation/Security/secpublickeyhash.md",
       "hash": "62aeae8773a526240014574f31a5155aace9352c35db9e36a3a7b337bf92b131"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror": {
+      "file_path": "documentation/Security/secqwactlsbindingerror.md",
+      "hash": "4e6af735d46f5102abae524095c66f8d01aeda2bac74c3283ceda7f243548f11"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/certificate": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/certificate.md",
+      "hash": "5cb72415144c81125bb2cbc1ad7475fd83eafb91e295bfee75bbb2c2ce5144bb"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/expired": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/expired.md",
+      "hash": "db4732a1e21357050015a3f92d715cc724b6afe75b48df85982d17734d9be72a"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/init(rawvalue:)": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/init(rawvalue).md",
+      "hash": "3d95f51e8b51f03056e0978253e701bda08cd2dd96a8c2f0d786b385e522d808"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/malformed": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/malformed.md",
+      "hash": "a1b319995e53d607e04d38d86dbf0e442fdafc17e9b47fe7627d62ddfc8d2635"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/notbound": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/notbound.md",
+      "hash": "ea7158e685eff9849c422afdf1b237c966b9c747c048dd470e7c80cd970b12df"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/profile": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/profile.md",
+      "hash": "0d584d7ae8250d8701be2ed4b0964afa2c968b77f30fb03f68b3b57e80bb3a3f"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/signature": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/signature.md",
+      "hash": "bef0fa9ff9786401a949537b7bbb6f9bf7446aeb2edb502b4ff98f19322b79a8"
+    },
+    "https://developer.apple.com/documentation/security/secqwactlsbindingerror/unavailable": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/unavailable.md",
+      "hash": "7feb782a553e619e05c1a90dec2bcab5c3fa077333c32b0f48375154572bf0c8"
     },
     "https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:)": {
       "file_path": "documentation/Security/secrandomcopybytes(_,_,_).md",
@@ -27195,6 +27243,10 @@
     "https://developer.apple.com/documentation/security/sectrustcopyresult(_:)": {
       "file_path": "documentation/Security/sectrustcopyresult(_).md",
       "hash": "ea128a55dfca00457ecc815bba2399b3fe7b5e6abf19b298792d63ea5a360a44"
+    },
+    "https://developer.apple.com/documentation/security/sectrustcreateandverifyqwactlsbinding(_:_:_:)": {
+      "file_path": "documentation/Security/sectrustcreateandverifyqwactlsbinding(_,_,_).md",
+      "hash": "efe7dc6b0e9ac7dbf23c66e0e3d2b8eccd568836ca2bc43d2a67523dde0962ca"
     },
     "https://developer.apple.com/documentation/security/sectrustcreatewithcertificates(_:_:_:)": {
       "file_path": "documentation/Security/sectrustcreatewithcertificates(_,_,_).md",
@@ -29262,7 +29314,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Security.json": {
       "file_path": "documentation/Security/Security.md",
-      "hash": "1f251c46b2d469bb2c2c7384629ddbbca1ecac591bb41578053b5bc3bf25a6ae"
+      "hash": "c55f4f5cbd61a5eb552f217838235d54a8e774add591b5e1d916de41f153ca40"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/1434707-anonymous.json": {
       "file_path": "documentation/Security/api-1434707-anonymous.md",
@@ -50576,6 +50628,10 @@
       "file_path": "documentation/Security/ksecpolicyapplepkinitserver.md",
       "hash": "a25c1f7e654aa7a18535f8917874a74bb514aacfe04a0b9534fbb2dfa40fe3ce"
     },
+    "https://developer.apple.com/tutorials/data/documentation/security/ksecpolicyappleqwactlsbinding.json": {
+      "file_path": "documentation/Security/ksecpolicyappleqwactlsbinding.md",
+      "hash": "c5a7267d138d50b65a59d8149440be88b6e95b3570ffc2d6ccb5ae944b2a2dc4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/security/ksecpolicyapplerevocation.json": {
       "file_path": "documentation/Security/ksecpolicyapplerevocation.md",
       "hash": "7fd6547542e22f9c6c8ea6f6fa5cbddb3527c31bded56864d1dd9c7a222e886c"
@@ -50735,6 +50791,10 @@
     "https://developer.apple.com/tutorials/data/documentation/security/ksecpublickeyhashitemattr.json": {
       "file_path": "documentation/Security/ksecpublickeyhashitemattr.md",
       "hash": "dadcb3ad331dc76422b8ca094cb1f4d4bd7fc1e946ae36e56e74a91951284a3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/ksecqwactlsbindingerrordomain.json": {
+      "file_path": "documentation/Security/ksecqwactlsbindingerrordomain.md",
+      "hash": "93e40196c4036cc2790e35bf5fa13d9ce60a290de1663fdd7ec331dd738a5c67"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/ksecrandomdefault.json": {
       "file_path": "documentation/Security/ksecrandomdefault.md",
@@ -55872,6 +55932,10 @@
       "file_path": "documentation/Security/secpolicycreatebasicx509().md",
       "hash": "55ef73e534742f92d532899aaf2ce9278f85c766049812e2d6c15212cd6e7c7b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/security/secpolicycreateqwactlsbinding(_:).json": {
+      "file_path": "documentation/Security/secpolicycreateqwactlsbinding(_).md",
+      "hash": "66feea191f27e16e5c3bc1e4e53c386cbcfac14567d82a4df6fffe5e7654e389"
+    },
     "https://developer.apple.com/tutorials/data/documentation/security/secpolicycreaterevocation(_:).json": {
       "file_path": "documentation/Security/secpolicycreaterevocation(_).md",
       "hash": "af7e67f7c96b9f931c7938fbcecb41e868e2a8df58263606bb5aa570bba5a620"
@@ -56103,6 +56167,42 @@
     "https://developer.apple.com/tutorials/data/documentation/security/secpublickeyhash.json": {
       "file_path": "documentation/Security/secpublickeyhash.md",
       "hash": "62aeae8773a526240014574f31a5155aace9352c35db9e36a3a7b337bf92b131"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror.md",
+      "hash": "4e6af735d46f5102abae524095c66f8d01aeda2bac74c3283ceda7f243548f11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/certificate.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/certificate.md",
+      "hash": "5cb72415144c81125bb2cbc1ad7475fd83eafb91e295bfee75bbb2c2ce5144bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/expired.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/expired.md",
+      "hash": "db4732a1e21357050015a3f92d715cc724b6afe75b48df85982d17734d9be72a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/init(rawvalue:).json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/init(rawvalue).md",
+      "hash": "3d95f51e8b51f03056e0978253e701bda08cd2dd96a8c2f0d786b385e522d808"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/malformed.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/malformed.md",
+      "hash": "a1b319995e53d607e04d38d86dbf0e442fdafc17e9b47fe7627d62ddfc8d2635"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/notbound.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/notbound.md",
+      "hash": "ea7158e685eff9849c422afdf1b237c966b9c747c048dd470e7c80cd970b12df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/profile.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/profile.md",
+      "hash": "0d584d7ae8250d8701be2ed4b0964afa2c968b77f30fb03f68b3b57e80bb3a3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/signature.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/signature.md",
+      "hash": "bef0fa9ff9786401a949537b7bbb6f9bf7446aeb2edb502b4ff98f19322b79a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/secqwactlsbindingerror/unavailable.json": {
+      "file_path": "documentation/Security/secqwactlsbindingerror/unavailable.md",
+      "hash": "7feb782a553e619e05c1a90dec2bcab5c3fa077333c32b0f48375154572bf0c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/secrandomcopybytes(_:_:_:).json": {
       "file_path": "documentation/Security/secrandomcopybytes(_,_,_).md",
@@ -56455,6 +56555,10 @@
     "https://developer.apple.com/tutorials/data/documentation/security/sectrustcopyresult(_:).json": {
       "file_path": "documentation/Security/sectrustcopyresult(_).md",
       "hash": "ea128a55dfca00457ecc815bba2399b3fe7b5e6abf19b298792d63ea5a360a44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/security/sectrustcreateandverifyqwactlsbinding(_:_:_:).json": {
+      "file_path": "documentation/Security/sectrustcreateandverifyqwactlsbinding(_,_,_).md",
+      "hash": "efe7dc6b0e9ac7dbf23c66e0e3d2b8eccd568836ca2bc43d2a67523dde0962ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/sectrustcreatewithcertificates(_:_:_:).json": {
       "file_path": "documentation/Security/sectrustcreatewithcertificates(_,_,_).md",
@@ -58525,6 +58629,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 14630
+    "total_pages": 14656
   }
 }

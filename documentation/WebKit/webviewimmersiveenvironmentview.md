@@ -18,7 +18,7 @@ struct WebViewImmersiveEnvironmentView
 
 ## Overview
 
-Place this view in your app’s Immersive Space hierarchy. Initialize it with the `WebPage.ImmersiveEnvironment` received from the presentation callback to render that specific environment.
+Place this view in your app’s Immersive Space hierarchy. Initialize it with the [`WebPage.ImmersiveEnvironment`](./webpage/immersiveenvironment.md) that the presentation callback provides to render that specific environment.
 
 ## Topics
 
@@ -26,7 +26,7 @@ Place this view in your app’s Immersive Space hierarchy. Initialize it with th
 - [init(WebPage.ImmersiveEnvironment)](./webviewimmersiveenvironmentview/init%28_%29-1ydxs.md)
   Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](./webpage/immersiveenvironment.md).
 - [init(WKImmersiveEnvironment)](./webviewimmersiveenvironmentview/init%28_%29-2y2u7.md)
-  Creates an immersive environment view from a `WKImmersiveEnvironment`.
+  Creates an immersive environment view from a [`WKImmersiveEnvironment`](./wkimmersiveenvironment.md).
 
 ## Relationships
 
@@ -39,9 +39,9 @@ Place this view in your app’s Immersive Space hierarchy. Initialize it with th
 
 ### Immersive environments
 - [WebPage.ImmersiveEnvironment](./webpage/immersiveenvironment.md)
-  An object representing a website-provided immersive environment that is ready for presentation.
+  An object that represents a website-provided immersive environment ready for presentation.
 - [var allowsImmersiveEnvironments: Bool](./webpage/configuration/allowsimmersiveenvironments.md)
-  Indicates whether website immersive environments are allowed.
+  A Boolean value that indicates whether website immersive environments are allowed.
 
 
 ---

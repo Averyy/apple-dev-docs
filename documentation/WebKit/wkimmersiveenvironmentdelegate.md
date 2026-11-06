@@ -20,9 +20,9 @@ protocol WKImmersiveEnvironmentDelegate : NSObjectProtocol
 
 ## Overview
 
-A protocol for managing immersive environment presentation in a web view.
+A protocol that manages the authorization, presentation, and dismissal of immersive environments in a web view.
 
-Implement the methods of this protocol to control authorization, presentation, and dismissal of immersive environments requested by websites.
+Assign an object that adopts this protocol to the `immersiveEnvironmentDelegate` property of a `WKWebView`.
 
 ## Topics
 

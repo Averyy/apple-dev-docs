@@ -27,6 +27,8 @@ ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure or if milliseconds exce
 
 This allows clients to configure lower per-event-type deadlines so that operations don’t block for too long if the client fails to respond. The kernel will automatically unblock operations based on the client’s deadline miss mode when the deadline expires.
 
+> **Note**: An out-of-range event type in the array fails the whole call, and no event’s deadline is changed.
+
 > **Note**: If a deadline minimum has been set (see es_set_deadline_min_milliseconds) and the new maximum would be lower than the current minimum, the minimum is adjusted down to match.
 
 ## Parameters
@@ -34,6 +36,7 @@ This allows clients to configure lower per-event-type deadlines so that operatio
 - `client`: The client to configure
 - `events`: Array of event types to configure deadlines for
 - `event_count`: Number of events in the events array
+- `milliseconds`: The maximum deadline in milliseconds
 
 
 ---

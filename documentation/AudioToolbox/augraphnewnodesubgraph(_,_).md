@@ -7,7 +7,7 @@
 Creates a node object to represent a subgraph.
 
 **Availability**:
-- macOS 10.2+ - Deprecated in 27.2
+- macOS 10.2+ - Deprecated in 27.3
 
 > **Deprecated**: no longer supported
 

@@ -11,6 +11,7 @@ A tool that a model can call to gather information at runtime or perform side ef
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -83,6 +84,9 @@ Prompting the model with tools contributes to the available context window size.
   A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
 - [typealias SessionProperty](./tool/sessionproperty.md)
   A property wrapper that provides access to a session property from within a tool.
+### Type Aliases
+- [typealias SessionBinding](./tool/sessionbinding.md)
+- [typealias SessionState](./tool/sessionstate.md)
 
 ## Relationships
 

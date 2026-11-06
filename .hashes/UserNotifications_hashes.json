@@ -26,7 +26,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification": {
       "file_path": "documentation/UserNotifications/generating-a-remote-notification.md",
-      "hash": "5575fc5435f207e5204c0ebd667563bfb2025c048753649270556ddd45e81894"
+      "hash": "d41ba36c610ccae1f0d1a3125f3bacaef6a2f914a586358c9ecb95158411cad2"
     },
     "https://developer.apple.com/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates": {
       "file_path": "documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates.md",
@@ -1174,7 +1174,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/generating-a-remote-notification.json": {
       "file_path": "documentation/UserNotifications/generating-a-remote-notification.md",
-      "hash": "5575fc5435f207e5204c0ebd667563bfb2025c048753649270556ddd45e81894"
+      "hash": "d41ba36c610ccae1f0d1a3125f3bacaef6a2f914a586358c9ecb95158411cad2"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates.json": {
       "file_path": "documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates.md",

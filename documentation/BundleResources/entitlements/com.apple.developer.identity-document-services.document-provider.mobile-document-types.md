@@ -27,6 +27,12 @@ An array of strings that represent the types of mobile documents (mdoc) that an 
 
 Use this entitlement to define the types of mobile documents that the app provides.
 
+## See Also
+
+### IdentityDocumentServices
+- [Digital Credentials API - Verifiable Credential Provider](./com.apple.developer.identity-document-services.document-provider.verifiable-credential-types.md)
+  An array of strings that represent the types of verifiable credentials that an identity document provider app can provide during an online web presentment.
+
 
 ---
 

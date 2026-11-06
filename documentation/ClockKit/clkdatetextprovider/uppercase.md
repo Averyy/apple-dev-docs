@@ -7,7 +7,7 @@
 A Boolean value that determines whether the date string displays in uppercase.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

@@ -90,7 +90,7 @@ To control the lighting of your scene, provide an image-based lighting (IBL) tex
 }
 ```
 
-When using IBL in your scene, add an `ImageBasedLightReceiverComponent` to any entity in the scene using PBR materials, such as [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), [`SimpleMaterial`](./simplematerial.md), or materials created in Reality Composer’s Shader Graph of type `Physically Based`, or of type `Custom` that uses a `MaterialXPreviewSurface` shader node. If you don’t provide an IBL texture when using PBR materials, those materials render using RealityKit’s default IBL texture when in immersive mode.
+When using IBL in your scene, add an `ImageBasedLightReceiverComponent` to any entity in the scene using PBR materials, such as [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), [`SimpleMaterial`](./simplematerial.md), or materials created in Reality Composer’s Shader Graph of type `Physically Based`, or of type `Custom` that uses a `MaterialXPreviewSurface` shader node. If you don’t provide an IBL texture when using PBR materials, those materials render using the default IBL texture in RealityKit when in immersive mode.
 
 ## Instrument your environment
 

@@ -275,7 +275,7 @@ public struct PrintLogHandler: LogHandler {
         base: Logger.Metadata,
         provider: Logger.MetadataProvider?,
         explicit: Logger.Metadata?
-    ) -> Logger.Metadata? {
+    ) -> Logger.Metadata {
         var metadata = base
 
         let provided = provider?.get() ?? [:]

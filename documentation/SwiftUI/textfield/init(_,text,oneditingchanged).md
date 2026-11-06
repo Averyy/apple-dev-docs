@@ -7,13 +7,13 @@
 Creates a text field with a text label generated from a localized title string.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
-- Mac Catalyst 13.0+ - Deprecated in 27.2
-- macOS 10.15+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 6.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
+- Mac Catalyst 13.0+ - Deprecated in 27.3
+- macOS 10.15+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Renamed TextField.init(_:text:onEditingChanged:). Use View.onSubmit(of:_:) for functionality previously provided by the onCommit parameter. Use FocusState<T> and View.focused(_:equals:) for functionality previously provided by the onEditingChanged parameter.
 

@@ -9,6 +9,22 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+### 1.24 - 2026/11/04
+
+**New features**
+
+- Added the value `5` to [`offerType`](./offertype.md) to indicate a retention offer.
+
+### 1.23 - 2026/11/03
+
+**New features**
+
+- Added the [`Get Seat Info`](./get-seat-info.md), [`Claim Seat`](./claim-seat.md), [`Unclaim Seat`](./unclaim-seat.md), and [`Associate Seat`](./associate-seat.md) endpoints, and the [`GetSeatInfoResponse`](./getseatinforesponse.md), [`ClaimSeatRequest`](./claimseatrequest.md), [`ClaimSeatResponse`](./claimseatresponse.md), and [`AssociateSeatRequest`](./associateseatrequest.md) data types, to support Group Purchases subscriptions with developer-hosted invitations. These endpoints are only available in the sandbox environment.
+- Added the [`seatClaimId`](./seatclaimid.md), [`totalSeatCount`](./totalseatcount.md), and [`availableSeatCount`](./availableseatcount.md) fields.
+- Added the `multiSeatInfo` and [`additionalTransactionReason`](./additionaltransactionreason.md) fields to the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md), and the `multiSeatInfo` and [`renewalQuantity`](./renewalquantity.md) fields to the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md), to describe the seats in a multiseat purchase.
+- Added the [`TransactionMultiSeatInfo`](./transactionmultiseatinfo.md), [`RenewalMultiSeatInfo`](./renewalmultiseatinfo.md), and [`MultiSeatPriceTier`](./multiseatpricetier.md) data types, and the [`invitationManagement`](./invitationmanagement.md), [`tierPrice`](./tierprice.md), [`tierQuantity`](./tierquantity.md), and [`revokedSeatQuantity`](./revokedseatquantity.md) fields.
+- Added the [`BundleTransactionIdNotSupportedError`](./bundletransactionidnotsupportederror.md), [`NoAvailableSeatsError`](./noavailableseatserror.md), [`TransactionNotDevManagedGroupError`](./transactionnotdevmanagedgrouperror.md), [`AppTransactionIdNotFoundError`](./apptransactionidnotfounderror.md), [`SeatClaimIdNotFoundError`](./seatclaimidnotfounderror.md), and [`SubscriptionNotActiveError`](./subscriptionnotactiveerror.md) error codes.
+
 ### Server update — 2026/10/23
 
 The [`Get Customer Groups`](./get-customer-groups.md) and [`Get Group Members`](./get-group-members.md) endpoints are now available in the production environment for groups with a [`groupType`](./grouptype.md) of `ORGANIZATION`.

@@ -21,12 +21,24 @@ Creates a multi-metric pairwise comparison evaluator.
 static func pairwise(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete, evaluationTarget: (@Sendable (Input.ExpectedValue) -> String)? = nil) -> ModelJudgeEvaluator<Input>
 ```
 
+## Discussion
+
+```swift
+let evaluator = ModelJudgeEvaluator<ModelSample<String>>.pairwise(
+    judge: SystemLanguageModel.default,
+    dimensions: [
+        ScoreDimension("Quality", scale: .passFail(passDescription: "Good", failDescription: "Poor")),
+        ScoreDimension("Relevance", scale: .passFail(passDescription: "Relevant", failDescription: "Not relevant"))
+    ]
+)
+```
+
 ## Parameters
 
 - `judge`: The language model to use as judge.
 - `dimensions`: The dimensions to score for the comparison.
-- `scoringMode`: A value that indicates whether scores are discrete (default) or allow any floating-point value.
-- `evaluationTarget`: An optional closure that converts the value to a string. Both responses use this target.
+- `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.
+- `evaluationTarget`: Optional closure to convert the value to a string. Used for both responses.
 
 ## See Also
 

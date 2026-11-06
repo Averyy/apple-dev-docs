@@ -334,7 +334,7 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller": {
       "file_path": "documentation/Messages/msmessagesappviewcontroller.md",
-      "hash": "a1cb1ddd0f15bfdb43c63d13a219ab9b9c4c4012f861f647346c7f2dbfa0767d"
+      "hash": "2a3748a04cece745e87f85b0ef693495db0e0db103751f80f8b52be4aaa1fd88"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/activeconversation": {
       "file_path": "documentation/Messages/msmessagesappviewcontroller/activeconversation.md",
@@ -514,7 +514,7 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller.md",
-      "hash": "4bd0922fc6638df2697802bc139d556b822e43b012270f4526a61623a962989e"
+      "hash": "1c3515138d2ba9699b04700eb87e25738898179a74b7d3e14f3dd69730561e16"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:)": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",
@@ -950,7 +950,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller.json": {
       "file_path": "documentation/Messages/msmessagesappviewcontroller.md",
-      "hash": "a1cb1ddd0f15bfdb43c63d13a219ab9b9c4c4012f861f647346c7f2dbfa0767d"
+      "hash": "2a3748a04cece745e87f85b0ef693495db0e0db103751f80f8b52be4aaa1fd88"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/activeconversation.json": {
       "file_path": "documentation/Messages/msmessagesappviewcontroller/activeconversation.md",
@@ -1130,7 +1130,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller.json": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller.md",
-      "hash": "4bd0922fc6638df2697802bc139d556b822e43b012270f4526a61623a962989e"
+      "hash": "1c3515138d2ba9699b04700eb87e25738898179a74b7d3e14f3dd69730561e16"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:).json": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",

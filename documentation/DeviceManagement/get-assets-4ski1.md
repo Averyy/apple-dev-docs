@@ -15,6 +15,7 @@ Get the set of assets that your organization manages.
 - [Getting started with the management API](./getting-started-with-the-management-api.md)
 - [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 - [Managing assets](./managing-assets.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
 
 ## Discussion
 
@@ -134,7 +135,7 @@ Get the set of assets that your organization manages.
 - `maxAssignedCount` (int32): The filter for the maximum inclusive assets assigned count.
 - `minAssignedCount` (int32): The filter for the minimum inclusive assets assigned count.
 - `adamId` (string): The filter for the asset product unique identifier.
-- `unlimited` (boolean)
+- `unlimited` (boolean): The filter for assets with unlimited licenses. When `true`, the server returns the matching assets in the `unlimitedAssets` array of the response. When `false`, the server returns only assets that don’t have unlimited licenses. When omitted, the server returns all assets.
 
 ## Responses
 

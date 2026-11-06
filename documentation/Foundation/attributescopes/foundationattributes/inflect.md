@@ -18,7 +18,7 @@ A scope for accessing an inflection rule attribute.
 ## Declaration
 
 ```swift
-let inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute
+var inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute { get }
 ```
 
 ## See Also
@@ -26,23 +26,23 @@ let inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute
 ### Using automatic grammar agreement attributes
 - [AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./inflectionruleattribute.md)
   A type for using an inflection rule as an attribute.
-- [let agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./agreementargument.md)
+- [var agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./agreementargument.md)
   A scope for accessing an agreement argument attribute.
 - [AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./agreementargumentattribute.md)
   An attribute that represents grammatical agreement with an argument in a localized string.
-- [let agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./agreementconcept.md)
+- [var agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./agreementconcept.md)
   A scope for accessing an agreement concept attribute.
 - [AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./agreementconceptattribute.md)
   An attribute that represents grammatical agreement for objects that aren’t part of the inflected text.
-- [let morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](./morphology.md)
+- [var morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](./morphology.md)
   A scope for accessing a morphology attribute.
 - [AttributeScopes.FoundationAttributes.MorphologyAttribute](./morphologyattribute.md)
   A type for using a morphology as an attribute.
-- [let referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./referentconcept.md)
+- [var referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./referentconcept.md)
   A scope for accessing a referent concept attribute.
 - [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./referentconceptattribute.md)
   An attribute that specifies a grammatical agreement concept for substituting pronouns in localized text.
-- [let inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./inflectionalternative.md)
+- [var inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./inflectionalternative.md)
   A scope for accessing an inflection alternative attribute.
 - [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./inflectionalternativeattribute.md)
   An attribute that provides an alternative inflection phrase when the system can’t achieve grammatical agreement.

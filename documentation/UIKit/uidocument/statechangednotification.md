@@ -27,6 +27,16 @@ extern NSNotificationName const UIDocumentStateChangedNotification;
 
 When handling this notification, check the value of the [`documentState`](./documentstate.md) property to see what the new state is, and then proceed accordingly. There’s no `userInfo` dictionary.
 
+## See Also
+
+### Notifications
+- [UIDocument.StateChangedMessage](./statechangedmessage.md)
+- [class let didMoveToWritableLocationNotification: NSNotification.Name](./didmovetowritablelocationnotification.md)
+  A notification that the document posts when copying the file from a readonly location in order to write changes. This notification will be posted on the file presenter queue.
+- [UIDocument.DidMoveToWritableLocationMessage](./didmovetowritablelocationmessage.md)
+- [class let didMoveToWritableLocationOldURLKey: String](./didmovetowritablelocationoldurlkey.md)
+  The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` dictionary that contains the previous readonly file URL.
+
 
 ---
 

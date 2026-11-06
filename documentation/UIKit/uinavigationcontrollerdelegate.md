@@ -7,11 +7,11 @@
 The interface for an object that serves as a navigation controller’s delegate.
 
 **Availability**:
-- iOS
-- iPadOS
-- Mac Catalyst
-- tvOS
-- visionOS
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
 
 ## Declaration
 

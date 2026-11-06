@@ -9,9 +9,9 @@ Ask the delegate if text in a specified range should be replaced with given text
 **Availability**:
 - iOS 3.0+ - Deprecated in 27.0
 - iPadOS 3.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 ## Declaration
 

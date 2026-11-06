@@ -7,13 +7,13 @@ Learn how to handle events that propagate through your app.
 
 ## Overview
 
-Apps receive and handle events using *responder objects*. A responder object is any instance of the [`UIResponder`](./uiresponder.md) class, and common subclasses include [`UIView`](./uiview.md), [`UIViewController`](./uiviewcontroller.md), and [`UIApplication`](./uiapplication.md). Responders receive the raw event data and must either handle the event or forward it to another responder object. When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the *first responder*.
+Apps receive and handle events using *responder objects*. A responder object is any instance of the [`UIResponder`](./uiresponder.md) class, and common subclasses include [`UIView`](./uiview.md), [`UIViewController`](./uiviewcontroller.md), [`UIScene`](./uiscene.md), and [`UIApplication`](./uiapplication.md). Responders receive the raw event data and must either handle the event or forward it to another responder object. When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the *first responder*.
 
 Unhandled events are passed from responder to responder in the active *responder chain*, which is the dynamic configuration of your app’s responder objects. The following image shows the responders in an app whose interface contains a label, a text field, a button, and two background views. The diagram also shows how events move from one responder to the next, following the responder chain.
 
-![A flow diagram: On the left, a sample app contains a label (UILabel), a text field for the user to input text (UITextField), and a button (UIButton) to press after entering text in the field. On the right, the flow diagram shows how, after the user pressed the button, the event moves through the responder chain — from UIView, to UIViewController, to UIWindow, UIApplication, and finally to UIApplicationDelegate.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3004381@2x.png)
+![A flow diagram: On the left, a sample app contains a label (UILabel), a text field for the user to input text (UITextField), and a button (UIButton) to press after entering text in the field. On the right, the flow diagram shows how, after the user pressed the button, the event moves through the responder chain — from UIView, to UIViewController, to UIWindow, to UIWindowScene, to UIApplication, and finally to UIApplicationDelegate.](https://developer.apple.com/tutorials/images/com.apple.uikit/using-responders-and-the-responder-chain-to-handle-events@2x.png)
 
-If the text field doesn’t handle an event, UIKit sends the event to the text field’s parent [`UIView`](./uiview.md) object, followed by the root view of the window. From the root view, the responder chain diverts to the owning view controller before directing the event to the window. If the window can’t handle the event, UIKit delivers the event to the [`UIApplication`](./uiapplication.md) object, and possibly to the app delegate if that object is an instance of [`UIResponder`](./uiresponder.md) and not already part of the responder chain.
+If the text field doesn’t handle an event, UIKit sends the event to the text field’s parent [`UIView`](./uiview.md) object, followed by the root view of the window. From the root view, the responder chain diverts to the owning view controller before directing the event to the window. If the window can’t handle the event, UIKit delivers the event to the window’s [`UIWindowScene`](./uiwindowscene.md) object, and then to the [`UIApplication`](./uiapplication.md) object, and possibly to the app delegate if that object is an instance of [`UIResponder`](./uiresponder.md) and not already part of the responder chain.
 
 ### Determine an event’s first responder
 
@@ -49,9 +49,11 @@ Many UIKit classes already override this property and return specific objects, i
 
 - [`UIView`](./uiview.md) objects. If the view is the root view of a view controller, the next responder is the view controller; otherwise, the next responder is the view’s superview.
 - [`UIViewController`](./uiviewcontroller.md) objects.
-- If the view controller’s view is the root view of a window, the next responder is the window object.
-- If the view controller was presented by another view controller, the next responder is the presenting view controller.
-- [`UIWindow`](./uiwindow.md) objects. The window’s next responder is the [`UIApplication`](./uiapplication.md) object.
+
+  - If the view controller’s view is the root view of a window, the next responder is the window object.
+  - If another view controller presented this view controller, the next responder is the presenting view controller.
+- [`UIWindow`](./uiwindow.md) objects. The window’s next responder is its [`UIWindowScene`](./uiwindowscene.md) object.
+- [`UIWindowScene`](./uiwindowscene.md) objects. The window scene’s next responder is the [`UIApplication`](./uiapplication.md) object.
 - [`UIApplication`](./uiapplication.md) object. The next responder is the app delegate, but only if the app delegate is an instance of [`UIResponder`](./uiresponder.md) and isn’t a view, view controller, or the app object itself.
 
 ## See Also

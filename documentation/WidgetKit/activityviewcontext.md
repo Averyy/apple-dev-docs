@@ -9,6 +9,8 @@ A structure that describes the view context for creating the views of a Live Act
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

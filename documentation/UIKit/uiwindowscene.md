@@ -26,6 +26,7 @@ class UIWindowScene
 
 ## Mentions
 
+- [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md)
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)

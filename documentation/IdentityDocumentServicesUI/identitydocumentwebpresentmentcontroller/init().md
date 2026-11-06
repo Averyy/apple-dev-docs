@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a web presentment controller.
+Initializes a web presentment controller.
 
 **Availability**:
 - iOS 26.0+

@@ -71,6 +71,15 @@ When defining the delegate, choose an object from your app that has access to yo
   Informs the coordinator that a change occurred to the view or its text that requires a layout update.
 - [UIWritingToolsCoordinator.TextUpdateReason](./uiwritingtoolscoordinator/textupdatereason.md)
   Constants that specify the reason you updated your view’s content outside of the Writing Tools workflow.
+### Managing grammar animations
+- [func startTextAnimation(UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](./uiwritingtoolscoordinator/starttextanimation%28_,for,in,writingdirection%29.md)
+  Used to support the presentation of grammar issues in text. When an issue is first identified and indicated, call this to have it animated.
+- [func showGrammarPresentation(for: NSRange, in: UIWritingToolsCoordinator.Context) -> Bool](./uiwritingtoolscoordinator/showgrammarpresentation%28for,in%29.md)
+  Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
+- [func cancelTextAnimations(identifiers: [UUID])](./uiwritingtoolscoordinator/canceltextanimations%28identifiers%29.md)
+  Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
+- [UIWritingToolsCoordinator.TextDecoration](./uiwritingtoolscoordinator/textdecoration.md)
+  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](./uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 ### Managing the current state
 - [func stopWritingTools()](./uiwritingtoolscoordinator/stopwritingtools%28%29.md)
   Stops the current Writing Tools operation and dismisses the system UI.
@@ -88,16 +97,6 @@ When defining the delegate, choose an object from your app that has access to yo
 ### Working with markers
 - [var includesTextListMarkers: Bool](./uiwritingtoolscoordinator/includestextlistmarkers.md)
   A Boolean value that indicates whether Writing Tools includes text list markers in the text list paragraph content.
-### Instance Methods
-- [func cancelTextAnimations(identifiers: [UUID])](./uiwritingtoolscoordinator/canceltextanimations%28identifiers%29.md)
-  Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
-- [func showGrammarPresentation(for: NSRange, in: UIWritingToolsCoordinator.Context) -> Bool](./uiwritingtoolscoordinator/showgrammarpresentation%28for,in%29.md)
-  Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
-- [func startTextAnimation(UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](./uiwritingtoolscoordinator/starttextanimation%28_,for,in,writingdirection%29.md)
-  Used to support the presentation of grammar issues in text. When an issue is first identified and indicated, call this to have it animated.
-### Enumerations
-- [UIWritingToolsCoordinator.TextDecoration](./uiwritingtoolscoordinator/textdecoration.md)
-  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](./uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 
 ## Relationships
 

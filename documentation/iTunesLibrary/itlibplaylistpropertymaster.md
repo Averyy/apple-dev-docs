@@ -8,7 +8,7 @@ A Boolean value that indicates whether the playlist represents the entire iTunes
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.6+ - Deprecated in 27.2 (renamed: ITLibPlaylistPropertyPrimary)
+- macOS 10.6+ - Deprecated in 27.3 (renamed: ITLibPlaylistPropertyPrimary)
 
 > **Deprecated**: Use [`ITLibPlaylistPropertyPrimary`](./itlibplaylistpropertyprimary.md) instead.
 

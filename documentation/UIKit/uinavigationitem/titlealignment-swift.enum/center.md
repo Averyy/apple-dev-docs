@@ -27,6 +27,14 @@ UINavigationItemTitleAlignmentCenter
 
 Unlike Automatic, this never falls back to leading alignment: a title that cannot be centered shifts toward the leading edge to clear the trailing bar content, and truncates only once it can shift no further.
 
+## See Also
+
+### Getting title alignment options
+- [UINavigationItem.TitleAlignment.automatic](./automatic.md)
+  The system determines the alignment.
+- [UINavigationItem.TitleAlignment.leading](./leading.md)
+  The title is leading-aligned.
+
 
 ---
 

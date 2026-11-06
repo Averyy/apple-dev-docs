@@ -35,6 +35,8 @@ struct Refund
   The date the refund was granted.
 - [let reason: Transaction.AdvancedCommerceInfo.Refund.Reason](./refund/reason-swift.property.md)
   The reason for the refund.
+- [let revokedSeatQuantity: Int?](./refund/revokedseatquantity.md)
+  The number of seats that this refund revoked.
 - [let type: Transaction.AdvancedCommerceInfo.Refund.RefundType](./refund/type.md)
   The type of the refund.
 
@@ -53,6 +55,8 @@ struct Refund
   The developer-defined product that was purchased.
 - [Transaction.AdvancedCommerceInfo.Offer](./offer.md)
   Information about the offer that was redeemed as part of the purchase.
+- [Transaction.AdvancedCommerceInfo.SeatPriceTier](./seatpricetier.md)
+  A per-seat price and the number of seats it covers, as your Advanced Commerce API request defines them.
 
 
 ---

@@ -841,7 +841,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Animating entity rotation with a system](../RealityKit/animated-rotation-with-a-system.md)
   Rotate an entity around an axis using a Component and a System.
 - [Bringing your SceneKit projects to RealityKit](../RealityKit/bringing-your-scenekit-projects-to-realitykit.md)
-  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+  Adapt a platformer game for the powerful ECS and modularity of RealityKit.
 - [Building an immersive experience with RealityKit](../RealityKit/building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.
 - [Building an object reconstruction app](../RealityKit/building-an-object-reconstruction-app.md)
@@ -857,7 +857,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Creating a game with scene understanding](../RealityKit/creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 - [Creating an App for Face-Painting in AR](../RealityKit/creating-an-app-for-face-painting-in-ar.md)
-  Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
+  Combine face detection in RealityKit with PencilKit to implement virtual face-painting.
 - [Creating a photogrammetry command-line app](../RealityKit/creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
 - [Creating a Spaceship game](../RealityKit/creating-a-spaceship-game.md)

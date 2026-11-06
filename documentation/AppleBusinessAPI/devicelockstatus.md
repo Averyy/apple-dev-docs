@@ -7,7 +7,7 @@
 Strings that represent device lock statuses.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

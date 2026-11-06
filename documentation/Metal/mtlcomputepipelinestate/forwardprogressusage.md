@@ -5,6 +5,8 @@
 **Role**: Instance Property  
 **Required**: Yes
 
+A forward progress strategy the framework applies to the pipeline.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -22,6 +24,10 @@ var forwardProgressUsage: MTLForwardProgressUsage { get }
 ```objc
 @property (readonly) MTLForwardProgressUsage forwardProgressUsage;
 ```
+
+## Discussion
+
+When you create the pipeline with a [`forwardProgressUsage`](../mtlcomputepipelinedescriptor/forwardprogressusage.md) value of [`MTLForwardProgressUsage.automatic`](../mtlforwardprogressusage/automatic.md), this property reflects the usage mode the framework selects. Otherwise, the property reflects the descriptor’s value at the time you create the pipeline.
 
 
 ---

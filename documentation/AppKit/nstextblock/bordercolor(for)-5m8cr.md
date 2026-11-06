@@ -19,16 +19,12 @@ func borderColor(for rectEdge: CGRectEdge) -> NSColor?
 
 ## See Also
 
-### Deprecated
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](./setwidth%28_,type,for,edge%29.md)
-  Sets the width of a specified edge of a specified layer of the text block.
-- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](./width%28for,edge%29.md)
-  Returns the width of an edge of a specified layer of the text block.
-- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,edge%29.md)
-  Returns the value type of an edge of a specified layer of the text block.
-- [func borderColor(for: NSRectEdge) -> NSColor?](./bordercolor%28for%29-273pl.md)
-- [func setBorderColor(NSColor?, for: NSRectEdge)](./setbordercolor%28_,for%29.md)
-  Sets the border color of the specified edge of the text block.
+### Working with color
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
+  The background color of the text block.
+- [func setBorderColor(NSColor?)](./setbordercolor%28_%29.md)
+  Sets the color of all borders of the text block.
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
 
 
 ---

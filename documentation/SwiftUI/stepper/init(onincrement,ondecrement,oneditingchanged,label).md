@@ -7,12 +7,12 @@
 Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
-- watchOS 9.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- watchOS 9.0+ - Deprecated in 27.3 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
 
 > **Deprecated**: Use [`init(label:onIncrement:onDecrement:onEditingChanged:)`](./init%28label,onincrement,ondecrement,oneditingchanged%29.md) instead.
 

@@ -7,8 +7,8 @@
 The list of manufacturer-declared extension features available for this accessory.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 
@@ -18,9 +18,17 @@ var manufacturerFeatures: [HMAccessory.ManufacturerFeature] { get async throws }
 
 ## Discussion
 
-Discovery is performed by homed, which enumerates installed manufacturer extensions and (when none is installed) falls back to ProductKit-provided branding content. The getter is `async` because that discovery happens across an XPC boundary; awaiting it gives callers a fully resolved list rather than a stale snapshot.
+If the accessory has no installed manufacturer extension and no fallback content, this property’s value is an empty array.
 
-Returns an empty array (not an error) when the accessory has no installed manufacturer extension and no fallback content. Throws when the accessory is not yet associated with a home, or when the underlying message dispatch fails.
+Trying to access this property when the accessory is not yet associated with a home throws an error.
+
+## See Also
+
+### Accessing manufacturer feature extensions
+- [func showManufacturerExtension(for: HMAccessory.ManufacturerFeature.Kind, featureID: String?) async throws](./showmanufacturerextension%28for,featureid%29.md)
+  Presents the user interface for a manufacturer feature.
+- [HMAccessory.ManufacturerFeature](./manufacturerfeature.md)
+  A manufacturer-declared extension feature for an accessory.
 
 
 ---

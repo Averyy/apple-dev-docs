@@ -56,6 +56,18 @@ ZStack {
 - `edges`: The edges to inset, any edges not in this set are unchanged, even when `guide` provides a value for them.
 - `alignment`: The alignment of the view within the inset bounds. Most alignment values have no apparent effect when the view fills the size it was proposed.
 
+## See Also
+
+### Setting margins
+- [func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View](./contentmargins%28_,for%29.md)
+  Configures the content margin for a provided placement.
+- [func contentMargins(_:_:for:)](./contentmargins%28_,_,for%29.md)
+  Configures the content margin for a provided placement.
+- [struct ContentMarginPlacement](../contentmarginplacement.md)
+  The placement of margins.
+- [struct ContentMarginGuide](../contentmarginguide.md)
+  A guide for resolving the content margins for a view.
+
 
 ---
 

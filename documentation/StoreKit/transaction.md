@@ -157,7 +157,6 @@ All Apple In-App Purchases that customers make are equally available to your app
   The string representation of the offer period applied to the subscription offer for this transaction.
 ### Structures
 - [Transaction.CommitmentInfo](./transaction/commitmentinfo-swift.struct.md)
-- [Transaction.RevocationType](./transaction/revocationtype-swift.struct.md)
 ### Instance Properties
 - [let billingPlanType: SubscriptionInfo.BillingPlanType?](./transaction/billingplantype.md)
 - [var bundleOriginalTransactionID: String?](./transaction/bundleoriginaltransactionid.md)
@@ -171,8 +170,6 @@ All Apple In-App Purchases that customers make are equally available to your app
   The original transaction ID of the subscription this one replaced when a customer switched between a standalone auto-renewable subscription and a subscription bundle (in either direction).
 - [var revocationPercentage: Decimal?](./transaction/revocationpercentage.md)
   The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
-- [let revocationType: Transaction.RevocationType?](./transaction/revocationtype-swift.property.md)
-  The type of refund or revocation that applies to the transaction.
 - [var revocationTypeStringRepresentation: String?](./transaction/revocationtypestringrepresentation.md)
   The string representation of the [`revocationType`](./transaction/revocationtype-swift.property.md), or `nil` if the transaction was not revoked.
 

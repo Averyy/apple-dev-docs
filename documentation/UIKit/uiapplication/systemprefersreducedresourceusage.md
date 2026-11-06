@@ -39,6 +39,12 @@ Avoid performing or scheduling expensive work in response to changes in this pro
 
 To respond to changes in views, read the `UITraitCollection/systemPrefersReducedResourceUsage` trait. From other contexts, observe [`systemPrefersReducedResourceUsageDidChangeNotification`](./systemprefersreducedresourceusagedidchangenotification.md) and re-read this property.
 
+## See Also
+
+### Handle reduced resource usage preference
+- [class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification.Name](./systemprefersreducedresourceusagedidchangenotification.md)
+  A notification that posts when [`systemPrefersReducedResourceUsage`](./systemprefersreducedresourceusage.md) changes.
+
 
 ---
 

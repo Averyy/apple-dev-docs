@@ -1418,7 +1418,7 @@
     },
     "https://developer.apple.com/documentation/speech/speechmoduleresult/resultsfinalizationtime": {
       "file_path": "documentation/Speech/speechmoduleresult/resultsfinalizationtime.md",
-      "hash": "2758e3c4dad0b6e3021f5d45bca1d68d5e1949ae6f0dce1bb36f0d582f88dc71"
+      "hash": "e3767d4673c6ebdf39fdfbaff81820cf2e315350b2b9d7ff31d1c6e9dee3bf2d"
     },
     "https://developer.apple.com/documentation/speech/speechtranscriber": {
       "file_path": "documentation/Speech/speechtranscriber.md",
@@ -2966,7 +2966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/speech/speechmoduleresult/resultsfinalizationtime.json": {
       "file_path": "documentation/Speech/speechmoduleresult/resultsfinalizationtime.md",
-      "hash": "2758e3c4dad0b6e3021f5d45bca1d68d5e1949ae6f0dce1bb36f0d582f88dc71"
+      "hash": "e3767d4673c6ebdf39fdfbaff81820cf2e315350b2b9d7ff31d1c6e9dee3bf2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/speech/speechtranscriber.json": {
       "file_path": "documentation/Speech/speechtranscriber.md",

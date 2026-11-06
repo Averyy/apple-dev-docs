@@ -35,7 +35,7 @@ If you don’t call the completion handler, the system assumes successful delive
 
 ### Handling data events
 - [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](./dataeventhandler%28event%29.md)
-  Handles events that address incoming data destined for the accessory.
+  Handles events that address incoming data sent to the accessory.
 
 
 ---

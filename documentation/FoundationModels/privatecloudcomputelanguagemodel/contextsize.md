@@ -21,6 +21,10 @@ nonisolated(nonsending)
 final var contextSize: Int { get async throws }
 ```
 
+## Mentions
+
+- [Detecting available Apple Foundation Models](../detecting-available-apple-foundation-models.md)
+
 ## Discussion
 
 The context size represents the total number of tokens that can be used in a single session, including both input prompts and generated responses.

@@ -7,13 +7,13 @@
 Deprecated name for [`mappedIfSafe`](./mappedifsafe.md).
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.mappedIfSafe)
 
 ## Declaration
 

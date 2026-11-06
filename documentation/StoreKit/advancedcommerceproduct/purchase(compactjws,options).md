@@ -38,6 +38,8 @@ The result of the purchase.
 - [func purchase(compactJWS: String, confirmIn: UIViewController, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./purchase%28compactjws,confirmin,options%29-54lkw.md)
   Processes a purchase for the product.
 - [AdvancedCommerceProduct.PurchaseResult](./purchaseresult.md)
+- [let supportsMultiSeatPurchase: Bool](./supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 
 
 ---

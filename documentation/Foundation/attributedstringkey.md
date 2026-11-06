@@ -132,6 +132,7 @@ After you extend [`AttributeScope`](./attributescope.md) like this, extend [`Att
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute](./attributescopes/foundationattributes/numberformatattributes/numberpartattribute.md)
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute](./attributescopes/foundationattributes/numberformatattributes/symbolattribute.md)
 - [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](./attributescopes/foundationattributes/personnamecomponentattribute.md)
+- [AttributeScopes.FoundationAttributes.PossessorMorphologyAttribute](./attributescopes/foundationattributes/possessormorphologyattribute.md)
 - [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./attributescopes/foundationattributes/presentationintentattribute.md)
 - [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./attributescopes/foundationattributes/referentconceptattribute.md)
 - [AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](./attributescopes/foundationattributes/replacementindexattribute.md)

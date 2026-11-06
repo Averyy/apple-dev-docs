@@ -4,6 +4,8 @@
 **Kind**: method  
 **Role**: Instance Method
 
+Handles events that address incoming data sent to the accessory.
+
 **Availability**:
 - iOS 26.4+
 
@@ -12,6 +14,14 @@
 ```swift
 func dataEventHandler(event: AccessoryTransportSession.DataEvent)
 ```
+
+## Discussion
+
+Implement this method to relay data to your accessory over Bluetooth or another transport mechanism.
+
+## Parameters
+
+- `event`: A data event that contains either plaintext or encrypted data.
 
 
 ---

@@ -7,7 +7,7 @@
 A request to create a new Configuration.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

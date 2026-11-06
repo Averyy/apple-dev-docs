@@ -7,7 +7,7 @@
 Links related to the response document, including self-links.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

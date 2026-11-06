@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a single-metric evaluator with a custom judge prompt.
+Creates a single-metric evaluator with a custom model prompt.
 
 **Availability**:
 - iOS 27.0+
@@ -21,13 +21,27 @@ Creates a single-metric evaluator with a custom judge prompt.
 init(_ name: String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode = .discrete, prompt: ModelJudgePrompt<Input>)
 ```
 
+## Discussion
+
+```swift
+let prompt = ModelJudgePrompt<ModelSample<String>>(
+    instructions: "Score the relevance of the response."
+)
+let evaluator = ModelJudgeEvaluator<ModelSample<String>>(
+    "Relevance",
+    scale: .passFail(passDescription: "Relevant", failDescription: "Not relevant"),
+    judge: SystemLanguageModel.default,
+    prompt: prompt
+)
+```
+
 ## Parameters
 
-- `name`: The metric name that corresponds to the DataFrame column.
+- `name`: The metric name, used as the DataFrame column name.
 - `scale`: The scoring scale for this metric.
 - `judge`: The language model to use as judge.
-- `scoringMode`: A value that indicates whether scores are discrete (default) or allow any floating-point value.
-- `prompt`: Configuration for the judge prompt, including instructions, response presentation, and reference.
+- `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.
+- `prompt`: Configuration for the model prompt, including instructions, response presentation, and reference.
 
 ## See Also
 

@@ -54,6 +54,19 @@ enum AVAudioContentSource : NSInteger;
 ### Using placeholder values
 - [AVAudioContentSource.reserved](./avaudiocontentsource/reserved.md)
 - [AVAudioContentSource.unspecified](./avaudiocontentsource/unspecified.md)
+### Enumeration Cases
+- [AVAudioContentSource.alarm_Spatial](./avaudiocontentsource/alarm_spatial.md)
+- [AVAudioContentSource.alarm_Traditional](./avaudiocontentsource/alarm_traditional.md)
+- [AVAudioContentSource.feedbackSound_Spatial](./avaudiocontentsource/feedbacksound_spatial.md)
+- [AVAudioContentSource.feedbackSound_Traditional](./avaudiocontentsource/feedbacksound_traditional.md)
+- [AVAudioContentSource.otherSystemSound_Spatial](./avaudiocontentsource/othersystemsound_spatial.md)
+- [AVAudioContentSource.otherSystemSound_Traditional](./avaudiocontentsource/othersystemsound_traditional.md)
+- [AVAudioContentSource.podcast_Audiobook_Spatial](./avaudiocontentsource/podcast_audiobook_spatial.md)
+- [AVAudioContentSource.podcast_Audiobook_Traditional](./avaudiocontentsource/podcast_audiobook_traditional.md)
+- [AVAudioContentSource.ringtone_Spatial](./avaudiocontentsource/ringtone_spatial.md)
+- [AVAudioContentSource.ringtone_Traditional](./avaudiocontentsource/ringtone_traditional.md)
+- [AVAudioContentSource.spokenResponse_Spatial](./avaudiocontentsource/spokenresponse_spatial.md)
+- [AVAudioContentSource.spokenResponse_Traditional](./avaudiocontentsource/spokenresponse_traditional.md)
 
 ## Relationships
 

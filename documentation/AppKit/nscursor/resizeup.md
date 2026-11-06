@@ -7,7 +7,7 @@
 Returns the resize-up system cursor.
 
 **Availability**:
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 10.0+ - Deprecated in 27.0
 
 > **Deprecated**: Use either `+[NSCursor rowResizeCursorInDirections:]` or `+[NSCursor frameResizeCursorFromPosition:inDirections:]` instead, depending on whether a divider is being re-positioned or a rectangular frame is being resized.

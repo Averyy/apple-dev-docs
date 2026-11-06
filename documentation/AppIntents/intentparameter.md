@@ -469,6 +469,8 @@ When you implement an [`AppIntent`](./appintent.md) type, declare its parameters
 - [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28description,requestvaluedialog,inputconnectionbehavior%29-420y8.md)
 - [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28description,requestvaluedialog,inputconnectionbehavior%29-9sr60.md)
   Creates an app intent parameter.
+- [convenience init<Entity>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28description,requestvaluedialog,inputconnectionbehavior%29-la9e.md)
+  Creates an app intent parameter for an entity collection search criteria.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./intentparameter/init%28description,requestvaluedialog,inputconnectionbehavior,optionsprovider%29-14xjm.md)
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./intentparameter/init%28description,requestvaluedialog,inputconnectionbehavior,optionsprovider%29-18ve1.md)
@@ -726,6 +728,8 @@ When you implement an [`AppIntent`](./appintent.md) type, declare its parameters
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28title,description,requestvaluedialog,inputconnectionbehavior%29-51hn9.md)
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28title,description,requestvaluedialog,inputconnectionbehavior%29-68x0y.md)
   Creates an app intent parameter.
+- [convenience init<Entity>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28title,description,requestvaluedialog,inputconnectionbehavior%29-7c329.md)
+  Creates an app intent parameter for an entity collection search criteria.
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./intentparameter/init%28title,description,requestvaluedialog,inputconnectionbehavior,optionsprovider%29-882y4.md)
   Creates an app intent parameter with a list of selectable options.
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./intentparameter/init%28title,description,requestvaluedialog,inputconnectionbehavior,optionsprovider%29-8likq.md)

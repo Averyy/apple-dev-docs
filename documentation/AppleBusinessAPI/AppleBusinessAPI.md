@@ -7,7 +7,7 @@
 Automate device management activities, view device information, and manage users and user groups in Apple Business.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Overview
 
@@ -134,6 +134,25 @@ Automate device management activities, view device information, and manage users
   Update an existing custom Configuration in an organization.
 - [Delete a Configuration](./delete-a-configuration.md)
   Delete a Configuration from an organization.
+### Webhooks
+- [Understanding webhook events](../apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.md)
+  Learn how to authenticate and process webhook notifications from Apple Business and the data each event contains.
+- [Get Webhooks](./get-webhooks.md)
+  Get a list of webhooks in an organization.
+- [Get Webhook Information](./get-webhook-information.md)
+  Get information about a specific webhook in an organization.
+- [Create a Webhook](./create-a-webhook.md)
+  Create a new webhook in an organization.
+- [Update a Webhook](./update-a-webhook.md)
+  Update an existing webhook in an organization.
+- [Delete a Webhook](./delete-a-webhook.md)
+  Delete a webhook from an organization.
+- [Get All Deliveries for a Webhook](./get-all-deliveries-for-a-webhook.md)
+  Get a list of deliveries for a webhook.
+- [Create a WebhookDelivery](./create-a-webhookdelivery.md)
+  Create a new webhook delivery based on an existing delivery.
+- [Create a WebhookPing](./create-a-webhookping.md)
+  Send a ping event to a webhook to test that it receives notifications.
 ### Audit Events
 - [Get Audit Events](./get-audit-events.md)
   Get a list of audit events in an organization that satisfies the query criteria.
@@ -260,6 +279,32 @@ Automate device management activities, view device information, and manage users
 - [object ConfigurationCustomSetting](./configurationcustomsetting.md)
 - [object CustomSettingsValues](./customsettingsvalues.md)
   The custom settings payload for a Configuration of type `CUSTOM_SETTING`.
+- [object Webhook](./webhook.md)
+  The data structure that represents a webhook resource.
+- [object WebhookResponse](./webhookresponse.md)
+  A response that contains information about a webhook resource.
+- [object WebhooksResponse](./webhooksresponse.md)
+  A response that contains a list of webhook resources.
+- [object WebhookCreateRequest](./webhookcreaterequest.md)
+  A request to create a new webhook.
+- [object WebhookUpdateRequest](./webhookupdaterequest.md)
+  A request to update an existing webhook.
+- [object WebhookDelivery](./webhookdelivery.md)
+  The data structure that represents a webhook delivery resource.
+- [object WebhookDeliveryResponse](./webhookdeliveryresponse.md)
+  A response that contains information about a webhook delivery resource.
+- [object WebhookDeliveriesResponse](./webhookdeliveriesresponse.md)
+  A response that contains a list of webhook delivery resources.
+- [object WebhookDeliveryCreateRequest](./webhookdeliverycreaterequest.md)
+  A request to create a new webhook delivery.
+- [object WebhookEvent](./webhookevent.md)
+  The data structure that represents a webhook event resource.
+- [object WebhookPing](./webhookping.md)
+  The data structure that represents a webhook ping resource.
+- [object WebhookPingResponse](./webhookpingresponse.md)
+  A response that contains information about a webhook ping resource.
+- [object WebhookPingCreateRequest](./webhookpingcreaterequest.md)
+  A request to create a new webhook ping.
 - [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
 - [object PagingInformation](./paginginformation.md)
@@ -300,6 +345,8 @@ Automate device management activities, view device information, and manage users
   The type of Configuration profile.
 - [type ConfigurationPlatform](./configurationplatform.md)
   The platform that a Configuration targets.
+- [type WebhookEventType](./webhookeventtype.md)
+  Strings that represent the types of events a webhook can subscribe to.
 - [type ActivationLockType](./activationlocktype.md)
   Strings that represent the type of Activation Lock on a device.
 - [type AuditEventActorType](./auditeventactortype.md)
@@ -543,6 +590,18 @@ Automate device management activities, view device information, and manage users
   The data structure that represents the event data for a terms accepted audit event.
 - [object AuditEventTermsAcceptedAttributes](./auditeventtermsacceptedattributes.md)
   The attributes for a terms accepted audit event.
+- [object AuditEventWebhookCreated](./auditeventwebhookcreated.md)
+  The data structure that represents the event data for a webhook created audit event.
+- [object AuditEventWebhookCreatedAttributes](./auditeventwebhookcreatedattributes.md)
+  The attributes for a webhook created audit event.
+- [object AuditEventWebhookDeleted](./auditeventwebhookdeleted.md)
+  The data structure that represents the event data for a webhook deleted audit event.
+- [object AuditEventWebhookDeletedAttributes](./auditeventwebhookdeletedattributes.md)
+  The attributes for a webhook deleted audit event.
+- [object AuditEventWebhookUpdated](./auditeventwebhookupdated.md)
+  The data structure that represents the event data for a webhook updated audit event.
+- [object AuditEventWebhookUpdatedAttributes](./auditeventwebhookupdatedattributes.md)
+  The attributes for a webhook updated audit event.
 - [object MdmServerCreateRequest](./mdmservercreaterequest.md)
   A request to create a new device management service.
 - [object MdmServerUpdateRequest](./mdmserverupdaterequest.md)

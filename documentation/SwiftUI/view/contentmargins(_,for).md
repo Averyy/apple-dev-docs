@@ -64,6 +64,10 @@ When applying multiple contentMargins modifiers, modifiers with the same placeme
   Configures the content margin for a provided placement.
 - [struct ContentMarginPlacement](../contentmarginplacement.md)
   The placement of margins.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./contentmargins%28for,edges,alignment%29.md)
+  Insets the content of this view by a content margin guide.
+- [struct ContentMarginGuide](../contentmarginguide.md)
+  A guide for resolving the content margins for a view.
 
 
 ---

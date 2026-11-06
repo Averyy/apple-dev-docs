@@ -11,6 +11,7 @@ Produces a generated content type as a response to a prompt and schema.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -34,7 +35,7 @@ nonisolated(nonsending) final func respond(to prompt: Prompt, schema: Generation
 
 ## Discussion
 
-Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
+Consider using the default value of `true` for [`includeSchemaInPrompt`](../contextoptions/includeschemainprompt.md). The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 
 ## Parameters
 

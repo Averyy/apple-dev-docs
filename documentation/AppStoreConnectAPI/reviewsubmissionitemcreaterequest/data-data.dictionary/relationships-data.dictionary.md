@@ -34,6 +34,8 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](./relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](./relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion](./relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.RetentionMessageVersion](./relationships-data.dictionary/retentionmessageversion-data.dictionary.md)
+  The relationships to other resources that you can set with this request.
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion](./relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion](./relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
@@ -56,6 +58,7 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - `gameCenterChallengeVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion)
 - `gameCenterLeaderboardSetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion)
 - `gameCenterLeaderboardVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion)
+- `retentionMessageVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.RetentionMessageVersion)
 
 
 ---

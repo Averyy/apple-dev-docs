@@ -22,6 +22,10 @@ A type that specifies the appearance and interaction of controls in the subscrip
 @preconcurrency protocol SubscriptionStoreControlStyle
 ```
 
+## Mentions
+
+- [Supporting multiseat purchases in your app](./supporting-multiseat-purchases-in-your-app.md)
+
 ## Overview
 
 Use the [`subscriptionStoreControlStyle(_:)`](../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) view modifier to configure the subscription store control style for a view hierarchy.

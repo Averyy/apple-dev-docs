@@ -7,13 +7,13 @@
 32-bit, big endian format.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Big)
 
 ## Declaration
 

@@ -30,10 +30,13 @@ class MTL4ComputePipelineDescriptor
 - [var computeFunctionDescriptor: MTL4FunctionDescriptor?](./mtl4computepipelinedescriptor/computefunctiondescriptor.md)
   A descriptor representing the compute pipeline’s function.
 - [var contentionRelief: MTLContentionRelief](./mtl4computepipelinedescriptor/contentionrelief.md)
+  A contention relief strategy the compiler applies to the pipeline.
 - [var forwardProgressUsage: MTLForwardProgressUsage](./mtl4computepipelinedescriptor/forwardprogressusage.md)
+  A scheduling strategy for code that blocks across SIMD groups.
 - [var maxTotalThreadsPerThreadgroup: Int](./mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
   The maximum total number of threads that Metal can execute in a single threadgroup for the compute function.
 - [var optimizeForPersistentKernel: Bool](./mtl4computepipelinedescriptor/optimizeforpersistentkernel.md)
+  A Boolean value that indicates whether Metal tunes the pipeline for persistent threads.
 - [var requiredThreadsPerThreadgroup: MTLSize](./mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
   The required number of threads per threadgroup for compute dispatches.
 - [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](./mtl4computepipelinedescriptor/staticlinkingdescriptor.md)

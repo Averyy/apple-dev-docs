@@ -5,6 +5,8 @@
 **Role**: Associated Type  
 **Required**: Yes
 
+The type of the entities to delete.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

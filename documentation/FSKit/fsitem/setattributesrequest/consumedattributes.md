@@ -21,6 +21,8 @@ var consumedAttributes: FSItem.Attribute { get set }
 
 ## Discussion
 
+> ❗ **Important**: Set this to an empty set if your file system used none of the requested attributes. Leaving the property untouched causes FSKit to assume every requested attribute was used.
+
 This property is a bit field in Objective-C and an [`OptionSet`](../../../Swift/optionset.md) in Swift.
 
 ## See Also

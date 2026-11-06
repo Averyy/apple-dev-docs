@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Corresponds to the request format defined in ISO 18013-7.
+A case that corresponds to the request format defined in ISO 18013-7.
 
 **Availability**:
 - iOS 26.0+

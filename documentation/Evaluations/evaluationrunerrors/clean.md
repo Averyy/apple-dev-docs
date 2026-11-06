@@ -21,6 +21,12 @@ Used as the default when loading a file that carries no `runErrors`.
 static let clean: EvaluationRunErrors
 ```
 
+## See Also
+
+### Checking for failures
+- [var hasFailures: Bool](./hasfailures.md)
+  Whether this represents any failure worth persisting.
+
 
 ---
 

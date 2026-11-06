@@ -9,11 +9,21 @@ A Boolean value that indicates whether the Live Activity appears in a full-scree
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst*
+
 ```swift
-@backDeployed(before: iOS 17.0)
+@backDeployed(before: iOS 18.0)
+var isActivityFullscreen: Bool { get }
+```
+
+*Mac Catalyst, macOS*
+
+```swift
 var isActivityFullscreen: Bool { get }
 ```
 

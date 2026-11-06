@@ -46,6 +46,8 @@ To create an [`HKCharacteristicType`](./hkcharacteristictype.md) instance, pass 
 ### Initializers
 - [init(rawValue: String)](./hkcharacteristictypeidentifier/init%28rawvalue%29.md)
   Returns a newly initialized characteristic type identifier using the provided string.
+### Type Properties
+- [static let referenceSex: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/referencesex.md)
 
 ## Relationships
 

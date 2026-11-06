@@ -7,9 +7,9 @@
 A setting that offers a choice among several options.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -43,6 +43,9 @@ Define the options with a type that adopts [`HomeAccessoryEnumSettingConstant`](
   The selected options, for a setting that supports multiple selection.
 - [var projectedValue: HomeAccessoryEnumSetting<Value>](./homeaccessoryenumsetting/projectedvalue.md)
   The setting itself, which you access with a dollar sign prefix.
+### Instance Properties
+- [let id: String](./homeaccessoryenumsetting/id.md)
+  A unique identifier for the setting.
 
 ## Relationships
 

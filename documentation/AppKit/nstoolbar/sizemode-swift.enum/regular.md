@@ -7,7 +7,7 @@
 The toolbar uses regular-sized controls and 32 by 32 pixel icons.
 
 **Availability**:
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 10.0+ - Deprecated in 27.0
 
 > **Deprecated**: NSToolbarSizeMode is no longer recommended and will be ignored in the future

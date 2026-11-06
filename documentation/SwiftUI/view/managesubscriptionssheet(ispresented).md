@@ -4,10 +4,13 @@
 **Kind**: method  
 **Role**: Instance Method
 
+Presents the App Store sheet for managing subscriptions.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- macOS 27.3+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -16,6 +19,16 @@
 nonisolated
 func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View
 ```
+
+## Discussion
+
+Use this modifier to display the manage subscriptions sheet within your app. The sheet is the App Store sheet that customers use to view and manage their subscriptions, including multi-seat subscriptions.
+
+To display the sheet using UIKit or AppKit, see `AppStore/showManageSubscriptions(in:)` or `AppStore/showManageSubscriptions(from:)`.
+
+## Parameters
+
+- `isPresented`: A binding to a Boolean value that determines whether the system displays the sheet. You set the Boolean value to `true` to cause the system to display the sheet. The system sets it to `false` when the customer dismisses the sheet or the sheet fails to present.
 
 ## See Also
 
@@ -35,6 +48,7 @@ func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View](./inapppurchaseoptions%28_%29.md)
   Add a function to call before initiating a purchase from StoreKit view within this view, providing a set of options for the purchase.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>, subscriptionGroupID: String) -> some View](./managesubscriptionssheet%28ispresented,subscriptiongroupid%29.md)
+  Presents the App Store sheet for managing subscriptions for a subscription group.
 - [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View](./oninapppurchasecompletion%28perform%29.md)
   Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 - [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View](./oninapppurchasestart%28perform%29.md)

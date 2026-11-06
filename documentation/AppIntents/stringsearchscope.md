@@ -65,6 +65,10 @@ When the search criteria is [`StringSearchCriteria`](./stringsearchcriteria.md),
   An app intent that displays a set of search results in the app’s interface.
 - [struct StringSearchCriteria](./stringsearchcriteria.md)
   A type that tells your app to match its items against a provided string.
+- [struct EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
+  Search request criteria that uses an entity collection to specify the items to retrieve.
+- [protocol SearchCriteria](./searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 
 
 ---

@@ -7,13 +7,13 @@
 Adds the given traits to the view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityAddTraits(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityAddTraits(_:))
 
 > **Deprecated**: Use [`accessibilityAddTraits(_:)`](./accessibilityaddtraits%28_%29.md) instead.
 

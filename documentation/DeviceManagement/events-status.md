@@ -11,10 +11,10 @@ Retrieve the status of an asynchronous event.
 
 ## Mentions
 
+- [Subscribing to notifications](./subscribing-to-notifications.md)
 - [Handling error responses](./handling-error-responses.md)
 - [Managing assets](./managing-assets.md)
 - [Managing users](./managing-users.md)
-- [Subscribing to notifications](./subscribing-to-notifications.md)
 
 ## Discussion
 

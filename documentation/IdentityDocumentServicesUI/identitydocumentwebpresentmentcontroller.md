@@ -23,12 +23,12 @@ final class IdentityDocumentWebPresentmentController
 
 ### Initializers
 - [init()](./identitydocumentwebpresentmentcontroller/init%28%29.md)
-  Initialize a web presentment controller.
+  Initializes a web presentment controller.
 ### Instance Properties
 - [var delegate: (any IdentityDocumentWebPresentmentControllerDelegate)?](./identitydocumentwebpresentmentcontroller/delegate.md)
   A delegate that provides information for the controller to perform a web presentment.
 - [var presentationContextProvider: (any IdentityDocumentPresentmentControllerPresentationContextProviding)?](./identitydocumentwebpresentmentcontroller/presentationcontextprovider.md)
-  A delegate that provides a display context in which the system can present an authorization interface to the user.
+  A delegate that provides a display context where the system can present an authorization interface to the user.
 ### Instance Methods
 - [func performRequests([any IdentityDocumentWebPresentmentRequest], origin: URL) async throws -> any IdentityDocumentWebPresentmentResponse](./identitydocumentwebpresentmentcontroller/performrequests%28_,origin%29.md)
   Performs an identity document request.

@@ -48,7 +48,7 @@ You use the this scope’s attributes when creating an attributed string from a 
 ## See Also
 
 ### Using string localization attributes
-- [let localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./localizedstringargumentattributes-swift.property.md)
+- [var localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./localizedstringargumentattributes-swift.property.md)
   A property for accessing a localized string argument attribute.
 
 

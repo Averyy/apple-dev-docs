@@ -24,6 +24,10 @@ case unspecialized
 MTLBlendOperationUnspecialized
 ```
 
+## Discussion
+
+Until you specialize this value in the pipeline state, it behaves as `MTLBlendOperationAdd`.
+
 
 ---
 

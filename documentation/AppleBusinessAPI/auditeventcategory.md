@@ -7,7 +7,7 @@
 Strings that represent audit event categories.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -23,6 +23,7 @@ string AuditEventCategory
 - `PURCHASING`
 - `DEVICE_MANAGEMENT`
 - `ACCESS_MANAGEMENT`
+- `WEBHOOK_ACTIVITY`
 
 ## Discussion
 
@@ -34,6 +35,7 @@ string AuditEventCategory
   - PURCHASING: Purchase-related events.
   - DEVICE_MANAGEMENT: Device management configuration events.
   - ACCESS_MANAGEMENT: Access and role management events.
+  - WEBHOOK_ACTIVITY: Webhook management events.
 
 
 ---

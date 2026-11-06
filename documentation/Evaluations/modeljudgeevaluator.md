@@ -38,12 +38,12 @@ struct ModelJudgeEvaluator<Input> where Input : ModelSampleProtocol
 - [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode)](./modeljudgeevaluator/init%28_,scale,judge,scoringmode%29.md)
   Creates a single-metric evaluator with default prompt configuration.
 - [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./modeljudgeevaluator/init%28_,scale,judge,scoringmode,prompt%29.md)
-  Creates a single-metric evaluator with a custom judge prompt.
+  Creates a single-metric evaluator with a custom model prompt.
 ### Creating a multi-dimension evaluator
 - [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode)](./modeljudgeevaluator/init%28judge,dimensions,scoringmode%29.md)
   Creates a multi-metric evaluator with default prompt configuration.
 - [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./modeljudgeevaluator/init%28judge,dimensions,scoringmode,prompt%29.md)
-  Creates a multi-metric evaluator with a custom judge prompt.
+  Creates a multi-metric evaluator with a custom model prompt.
 ### Creating a pairwise evaluator
 - [static func pairwise(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](./modeljudgeevaluator/pairwise%28_,scale,judge,scoringmode,evaluationtarget%29.md)
   Creates a pairwise comparison evaluator that compares the model’s response against the sample’s expected value.

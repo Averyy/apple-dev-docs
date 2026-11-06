@@ -41,8 +41,8 @@ let result = metric.passing(rationale: "Exact match")
 ## Topics
 
 ### Creating a metric
-- [init(String)](./metric/init%28_%29.md)
-  Creates a metric with just a name.
+- [init(String, description: String?)](./metric/init%28_,description%29.md)
+  Creates a metric with a name and an optional description.
 ### Producing results
 - [func passing(rationale: String?) -> Metric](./metric/passing%28rationale%29.md)
   Returns a metric with a passing result.
@@ -52,6 +52,21 @@ let result = metric.passing(rationale: "Exact match")
   Returns a metric with a numeric result.
 - [func ignore(rationale: String?) -> Metric](./metric/ignore%28rationale%29.md)
   Returns a metric with an ignored result, excluded from aggregation.
+### Using built-in metrics
+- [static let toolsAllPass: Metric](./metric/toolsallpass.md)
+  A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
+- [static let toolsPercentagePass: Metric](./metric/toolspercentagepass.md)
+  A convenience metric for the partial score result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
+- [static let intentsPass: Metric](./metric/intentspass.md)
+  The name [`intentsAllPass`](./metric/intentsallpass.md) shipped with.
+- [static let foundEntitiesPass: Metric](./metric/foundentitiespass.md)
+  The name [`foundEntitiesAllPass`](./metric/foundentitiesallpass.md) shipped with.
+- [static let onScreenEntitiesPass: Metric](./metric/onscreenentitiespass.md)
+  The name [`onScreenEntitiesAllPass`](./metric/onscreenentitiesallpass.md) shipped with.
+- [static let siriResponsePass: Metric](./metric/siriresponsepass.md)
+  The name [`siriResponseAllPass`](./metric/siriresponseallpass.md) shipped with.
+- [static let skillsLoadedPass: Metric](./metric/skillsloadedpass.md)
+  The name [`skillsLoadedAllPass`](./metric/skillsloadedallpass.md) shipped with.
 ### Inspecting a result
 - [let name: String](./metric/name.md)
   The name of the metric, used as the DataFrame column name.
@@ -61,13 +76,31 @@ let result = metric.passing(rationale: "Exact match")
   The numeric value of this metric.
 - [let rationale: String?](./metric/rationale.md)
   An optional rationale describing the result.
+- [let metricDescription: String?](./metric/metricdescription.md)
+  An optional description of the associated metric.
 - [Metric.Value](./metric/value-swift.enum.md)
   A metric result value.
+- [var description: String](./metric/description.md)
+  A human-readable string representation of the metric, including its name, value, and optional rationale.
 ### Type Properties
-- [static let toolsAllPass: Metric](./metric/toolsallpass.md)
-  A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
-- [static let toolsPercentagePass: Metric](./metric/toolspercentagepass.md)
-  A convenience metric for the partial score result of a [`ToolCallEvaluator`](./toolcallevaluator.md).
+- [static let foundEntitiesAllPass: Metric](./metric/foundentitiesallpass.md)
+  A metric that passes when every finds expectation in the scenario holds.
+- [static let foundEntitiesPercentagePass: Metric](./metric/foundentitiespercentagepass.md)
+  The fraction of finds expectations that held, for one scenario.
+- [static let intentsAllPass: Metric](./metric/intentsallpass.md)
+  A metric that passes when every intent expectation in the scenario holds.
+- [static let intentsPercentagePass: Metric](./metric/intentspercentagepass.md)
+  The fraction of intent expectations that held, for one scenario.
+- [static let onScreenEntitiesAllPass: Metric](./metric/onscreenentitiesallpass.md)
+  A metric that passes when every onscreen expectation in the scenario holds.
+- [static let onScreenEntitiesPercentagePass: Metric](./metric/onscreenentitiespercentagepass.md)
+  The fraction of onscreen expectations that held, for one scenario.
+- [static let siriResponseAllPass: Metric](./metric/siriresponseallpass.md)
+  A metric that passes when every Siri response check in the scenario holds.
+- [static let siriResponsePercentagePass: Metric](./metric/siriresponsepercentagepass.md)
+  The fraction of reply checks that held, for one scenario.
+- [static let skillsLoadedAllPass: Metric](./metric/skillsloadedallpass.md)
+  A metric that passes when Siri loaded every required skill.
 ### Default Implementations
 - [CustomStringConvertible Implementations](./metric/customstringconvertible-implementations.md)
 

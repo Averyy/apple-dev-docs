@@ -130,6 +130,14 @@ The system presents an `SWCollaborationView` that displays participants and shar
 - [UITraitEnvironment](../UIKit/uitraitenvironment.md)
 - [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
+## See Also
+
+### Collaboration views
+- [class SWCollaborationBarButtonItem](./swcollaborationbarbuttonitem.md)
+  A bar button item that presents collaboration content and options.
+- [class SWCollaborationToolbarItem](./swcollaborationtoolbaritem.md)
+  A toolbar button that presents collaboration content and options.
+
 
 ---
 

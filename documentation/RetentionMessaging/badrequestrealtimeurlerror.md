@@ -31,6 +31,8 @@ object BadRequestRealtimeUrlError
   An error that indicates the text for a bullet point is too long.
 - [object BadRequestImageSizeError](./badrequestimagesizeerror.md)
   An error that indicates the image size provided is invalid.
+- [object BadRequestInvalidTextFieldError](./badrequestinvalidtextfielderror.md)
+  An error that indicates a text field in the request is invalid.
 - [object BadRequestTooManyBulletPointsError](./badrequesttoomanybulletpointserror.md)
   An error that indicates there are too many bullet points.
 - [object BadRequestTransactionIdError](./badrequesttransactioniderror.md)

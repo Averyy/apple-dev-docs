@@ -7,7 +7,7 @@
 Strings that represent the type of entity that was affected by an action.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -29,6 +29,7 @@ string AuditEventSubjectType
 - `ROLE`
 - `IDP`
 - `INVITATION`
+- `WEBHOOK`
 
 ## Discussion
 
@@ -46,6 +47,7 @@ string AuditEventSubjectType
   - ROLE: Role entity.
   - IDP: Identity provider entity.
   - INVITATION: Invitation entity.
+  - WEBHOOK: Webhook entity.
 
 
 ---

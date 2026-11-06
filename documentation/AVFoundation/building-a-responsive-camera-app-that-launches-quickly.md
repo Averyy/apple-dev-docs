@@ -2,7 +2,7 @@
 
 **Framework**: AVFoundation  
 **Role**: Sample Code  
-**Download**: [AVCamBuildingACameraApp.zip](https://docs-assets.developer.apple.com/published/ec1163138428/AVCamBuildingACameraApp.zip)
+**Download**: [AVCamBuildingACameraApp.zip](https://docs-assets.developer.apple.com/published/cd906d1738b2/AVCamBuildingACameraApp.zip)
 
 Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
 

@@ -71,7 +71,7 @@ Supports a rank between `0` and [`MTL_TENSOR_MAX_RANK`](./mtl_tensor_max_rank.md
 - [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](./mtltensorbinding.md)
-  An object that represents a tensor bound to a graphics or compute function or a machine learning function.
+  A description of a tensor that a shader function or a machine learning pipeline uses.
 - [struct MTLTensorError](./mtltensorerror-swift.struct.md)
 - [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.

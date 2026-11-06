@@ -7,7 +7,7 @@
 The attributes for a configuration settings created audit event.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

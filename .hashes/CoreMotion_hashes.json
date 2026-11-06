@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmbodyidentifiable": {
       "file_path": "documentation/CoreMotion/cmbodyidentifiable.md",
-      "hash": "e73341c0a17b8eb70c509444f871ec55850e4ab3e4f41055244333fa85b02292"
+      "hash": "47f930a12dfa001ace75007c2f5d69ed2dcfc6f5a791f3383efb445867c3917b"
     },
     "https://developer.apple.com/documentation/coremotion/cmcalibratedmagneticfield": {
       "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield.md",
@@ -2042,7 +2042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbodyidentifiable.json": {
       "file_path": "documentation/CoreMotion/cmbodyidentifiable.md",
-      "hash": "e73341c0a17b8eb70c509444f871ec55850e4ab3e4f41055244333fa85b02292"
+      "hash": "47f930a12dfa001ace75007c2f5d69ed2dcfc6f5a791f3383efb445867c3917b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmcalibratedmagneticfield.json": {
       "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield.md",

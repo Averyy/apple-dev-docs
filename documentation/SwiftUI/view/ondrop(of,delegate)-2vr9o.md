@@ -7,11 +7,11 @@
 Defines the destination for a drag and drop operation with the same size and position as this view, with behavior controlled by the given delegate.
 
 **Availability**:
-- iOS 13.4+ - Deprecated in 27.2
-- iPadOS 13.4+ - Deprecated in 27.2
-- Mac Catalyst 13.4+ - Deprecated in 27.2
-- macOS 10.15+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 13.4+ - Deprecated in 27.3
+- iPadOS 13.4+ - Deprecated in 27.3
+- Mac Catalyst 13.4+ - Deprecated in 27.3
+- macOS 10.15+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`onDrop(of:delegate:)`](./ondrop%28of,delegate%29-6lin8.md) instead.
 

@@ -50,9 +50,7 @@ Create accessory messages in your app’s [`AccessoryDataProvider`](./accessoryd
 
 ## See Also
 
-### Data and sessions
-- [protocol AccessoryFeature](./accessoryfeature.md)
-  A protocol that defines a capability for an accessory data provider extension.
+### Transport messaging and security
 - [class AccessorySecuritySession](./accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
 - [struct TransportMessage](./transportmessage.md)

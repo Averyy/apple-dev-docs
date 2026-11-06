@@ -38,6 +38,14 @@ The `scope` parameter tells you what content Writing Tools expects you to provid
 
 Pass the context objects you create to the provided completion handler before your method returns. Writing Tools waits for you to call the completion handler before proceeding with the operation.
 
+### Subclassing a system text view
+
+`NSTextView` implements this method for you. If you subclass it, call the superclass implementation and pass along the context objects it provides. You don’t create those objects, so you can’t choose their text directly — the superclass builds each one from your text storage.
+
+> ❗ **Important**: Don’t replace the context objects the superclass provides with your own. Each [`NSWritingToolsCoordinator.Context`](../context.md) object has a unique identifier, and the superclass keeps referring to the object it created — including when it reports typing and undo to the coordinator during the session. Substituting a different object leaves the two out of sync: those reports are silently discarded, Writing Tools continues from a stale idea of your text, and the results it applies when the session ends can replace or delete text beyond the range you intended.
+
+Because the superclass builds each context object from your text storage, attributes already on your storage are carried into the context. Use that to describe structure your text storage doesn’t otherwise express: add `NSPresentationIntentAttributeName` and `NSInlinePresentationIntentAttributeName` to your storage, and include `NSWritingToolsResultPresentationIntent` in your view’s `allowedWritingToolsResultOptions`.
+
 ## Parameters
 
 - `writingToolsCoordinator`: The coordinator object requesting information from your custom view.

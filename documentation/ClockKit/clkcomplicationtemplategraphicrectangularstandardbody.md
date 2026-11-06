@@ -7,7 +7,7 @@
 A template for displaying a large rectangle containing text.
 
 **Availability**:
-- watchOS 5.0+ - Deprecated in 27.2
+- watchOS 5.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 

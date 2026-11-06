@@ -27,7 +27,7 @@ You can make widgets, Live Activities, and other experiences interactive by addi
 - [protocol LiveActivityIntent](./liveactivityintent.md)
   An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
 - [ActivityKit](../ActivityKit/ActivityKit.md)
-  Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
+  Share live updates from your app as Live Activities that appear in the Dynamic Island and other highly visible locations.
 ### Widgets
 - [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.

@@ -81,6 +81,8 @@ With a person’s permission, an installed health research app that uses [Sensor
   The protocol you extend to provide live assistance services.
 - [enum LiveAssistance](./liveassistance.md)
   A namespace to collect APIs for use by container apps that provide live assistance services.
+- [Live assistance captioning](./liveassistancecaptioning.md)
+  Use a WebSocket API to perform real-time captioning in a FaceTime call.
 
 
 ---

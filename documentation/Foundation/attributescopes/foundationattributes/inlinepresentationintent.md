@@ -18,7 +18,7 @@ A property for accessing an inline presentation intent attribute.
 ## Declaration
 
 ```swift
-let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute
+var inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute { get }
 ```
 
 ## See Also
@@ -28,7 +28,7 @@ let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresent
   A type for using an inline presentation intent as an attribute.
 - [struct InlinePresentationIntent](../../inlinepresentationintent.md)
   A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
-- [let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintent.md)
+- [var presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintent.md)
   A property for accessing a presentation intent attribute.
 - [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintentattribute.md)
   A type for using a presentation intent as an attribute.

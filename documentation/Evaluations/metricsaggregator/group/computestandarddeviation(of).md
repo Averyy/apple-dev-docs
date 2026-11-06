@@ -25,6 +25,12 @@ mutating func computeStandardDeviation(of metric: Metric)
 
 - `metric`: The metric to aggregate.
 
+## See Also
+
+### Computing variability
+- [func computeVariance(of: Metric)](./computevariance%28of%29.md)
+  Computes the variance of a metric and adds it to the group.
+
 
 ---
 

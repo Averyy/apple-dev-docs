@@ -7,9 +7,9 @@
 A type that represents content that your extension provides to the Home app.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -38,7 +38,6 @@ Don’t add new conforming types.  Use the types from this framework, such as [`
   Help content about a specific topic for an accessory.
 - [struct HomeAccessoryTroubleshooting](./homeaccessorytroubleshooting.md)
   Content that helps people resolve problems with an accessory.
-- [class GuideStepHostViewController](./guidestephostviewcontroller.md)
 
 
 ---

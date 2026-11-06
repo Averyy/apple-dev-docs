@@ -2474,7 +2474,7 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapcamera/altitude": {
       "file_path": "documentation/MapKit/mkmapcamera/altitude.md",
-      "hash": "d2c95fd73fd2bd95962ad410da13c1fc022116ef1e3269337421fa27fd4b1a01"
+      "hash": "f9a42ddb298a9543a6693ac3da188e0175dd5fb24cbb0d20117f8f7d238d8149"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapcamera/camera": {
       "file_path": "documentation/MapKit/mkmapcamera/camera.md",
@@ -3070,11 +3070,11 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/maptype": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/maptype.md",
-      "hash": "474fe09e5d7384353eddb1e66104bb6d557636cb105ed61ca6b860cd78b48322"
+      "hash": "e97d93767dfd69d94b5f4c0f518f8c52dba3f5be13e8dbec8eb8bd16494a4647"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/pointofinterestfilter": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/pointofinterestfilter.md",
-      "hash": "089239b69452870cffd16624146d335b921a557d4e0af5c2277670a4612b35c9"
+      "hash": "a0436e7e8ecc24216bc4596fcd829cb47df282c465f352a05d2ccd8e1267df64"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/preferredconfiguration": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/preferredconfiguration.md",
@@ -3086,11 +3086,11 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/scale": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/scale.md",
-      "hash": "6ec82dc1df0d10c80513f60fb0c19225deeef30dae2f68c790c036c32c45769e"
+      "hash": "346f666d282814403271abebb0e857263874105dc2061b797dc013f13efc5934"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/showsbuildings": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/showsbuildings.md",
-      "hash": "754ba68a5a65768240e1bc0d3bf6f82d115940d3ebbe41af28256853f3a9fcf6"
+      "hash": "60b8e4ccadd5478cb02239b8690bbd6c7896daa6279f4da945a9ae40abb0aa12"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapsnapshotter/options/showspointsofinterest": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/showspointsofinterest.md",
@@ -3358,7 +3358,7 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/maptype": {
       "file_path": "documentation/MapKit/mkmapview/maptype.md",
-      "hash": "415b2f23b2b7a5851aaa6c8a9747e542eed9b0c423a9b264a3f125a68d8aca7a"
+      "hash": "2bba87693484be05e5ad5f6dc45d173a8fe9d8957fff7466eddc576903d78c12"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/overlays": {
       "file_path": "documentation/MapKit/mkmapview/overlays.md",
@@ -3374,7 +3374,7 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/pointofinterestfilter": {
       "file_path": "documentation/MapKit/mkmapview/pointofinterestfilter.md",
-      "hash": "262831cf73153fc14e61a28d7968114495e3eb4f80561fbcc4534deb6d299e1e"
+      "hash": "cbe57a4279ae12ca05cd85046c74bd412047c21e3da37e3fe18b036a5ad19bb6"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/preferredconfiguration": {
       "file_path": "documentation/MapKit/mkmapview/preferredconfiguration.md",
@@ -3462,7 +3462,7 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/showsbuildings": {
       "file_path": "documentation/MapKit/mkmapview/showsbuildings.md",
-      "hash": "bebc292a5b8829cacc36b90b4c993eb62603807ca251f3b1d4ecdf7b2a48b26b"
+      "hash": "567c96a335af427e3035e0d61d0eda19f16001b5eda443f26cde5e24709b34f9"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/showscompass": {
       "file_path": "documentation/MapKit/mkmapview/showscompass.md",
@@ -3482,7 +3482,7 @@
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/showstraffic": {
       "file_path": "documentation/MapKit/mkmapview/showstraffic.md",
-      "hash": "3681cec88578aee30ede329144d5f4dae8646f168c4a02f20dd8505f3313db4a"
+      "hash": "ba2d80c778aa00092dce9aa6400256174e5d660f13f90a1b5fdbab0b1f3ec2e6"
     },
     "https://developer.apple.com/documentation/mapkit/mkmapview/showsuserlocation": {
       "file_path": "documentation/MapKit/mkmapview/showsuserlocation.md",
@@ -7654,7 +7654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapcamera/altitude.json": {
       "file_path": "documentation/MapKit/mkmapcamera/altitude.md",
-      "hash": "d2c95fd73fd2bd95962ad410da13c1fc022116ef1e3269337421fa27fd4b1a01"
+      "hash": "f9a42ddb298a9543a6693ac3da188e0175dd5fb24cbb0d20117f8f7d238d8149"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapcamera/camera.json": {
       "file_path": "documentation/MapKit/mkmapcamera/camera.md",
@@ -8250,11 +8250,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/maptype.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/maptype.md",
-      "hash": "474fe09e5d7384353eddb1e66104bb6d557636cb105ed61ca6b860cd78b48322"
+      "hash": "e97d93767dfd69d94b5f4c0f518f8c52dba3f5be13e8dbec8eb8bd16494a4647"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/pointofinterestfilter.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/pointofinterestfilter.md",
-      "hash": "089239b69452870cffd16624146d335b921a557d4e0af5c2277670a4612b35c9"
+      "hash": "a0436e7e8ecc24216bc4596fcd829cb47df282c465f352a05d2ccd8e1267df64"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/preferredconfiguration.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/preferredconfiguration.md",
@@ -8266,11 +8266,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/scale.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/scale.md",
-      "hash": "6ec82dc1df0d10c80513f60fb0c19225deeef30dae2f68c790c036c32c45769e"
+      "hash": "346f666d282814403271abebb0e857263874105dc2061b797dc013f13efc5934"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/showsbuildings.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/showsbuildings.md",
-      "hash": "754ba68a5a65768240e1bc0d3bf6f82d115940d3ebbe41af28256853f3a9fcf6"
+      "hash": "60b8e4ccadd5478cb02239b8690bbd6c7896daa6279f4da945a9ae40abb0aa12"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapsnapshotter/options/showspointsofinterest.json": {
       "file_path": "documentation/MapKit/mkmapsnapshotter/options/showspointsofinterest.md",
@@ -8538,7 +8538,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/maptype.json": {
       "file_path": "documentation/MapKit/mkmapview/maptype.md",
-      "hash": "415b2f23b2b7a5851aaa6c8a9747e542eed9b0c423a9b264a3f125a68d8aca7a"
+      "hash": "2bba87693484be05e5ad5f6dc45d173a8fe9d8957fff7466eddc576903d78c12"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/overlays(in:).json": {
       "file_path": "documentation/MapKit/mkmapview/overlays(in).md",
@@ -8554,7 +8554,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/pointofinterestfilter.json": {
       "file_path": "documentation/MapKit/mkmapview/pointofinterestfilter.md",
-      "hash": "262831cf73153fc14e61a28d7968114495e3eb4f80561fbcc4534deb6d299e1e"
+      "hash": "cbe57a4279ae12ca05cd85046c74bd412047c21e3da37e3fe18b036a5ad19bb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/preferredconfiguration.json": {
       "file_path": "documentation/MapKit/mkmapview/preferredconfiguration.md",
@@ -8642,7 +8642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/showsbuildings.json": {
       "file_path": "documentation/MapKit/mkmapview/showsbuildings.md",
-      "hash": "bebc292a5b8829cacc36b90b4c993eb62603807ca251f3b1d4ecdf7b2a48b26b"
+      "hash": "567c96a335af427e3035e0d61d0eda19f16001b5eda443f26cde5e24709b34f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/showscompass.json": {
       "file_path": "documentation/MapKit/mkmapview/showscompass.md",
@@ -8662,7 +8662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/showstraffic.json": {
       "file_path": "documentation/MapKit/mkmapview/showstraffic.md",
-      "hash": "3681cec88578aee30ede329144d5f4dae8646f168c4a02f20dd8505f3313db4a"
+      "hash": "ba2d80c778aa00092dce9aa6400256174e5d660f13f90a1b5fdbab0b1f3ec2e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mkmapview/showsuserlocation.json": {
       "file_path": "documentation/MapKit/mkmapview/showsuserlocation.md",

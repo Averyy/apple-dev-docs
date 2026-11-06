@@ -119,7 +119,7 @@ The preview frame is the still image that represents the video before playback. 
 }
 ```
 
-Pick a time code that falls inside the video’s duration. App Store Connect then generates the frame asynchronously. Read `previewFrameImage` on the video to check progress; it carries a nested `state` of `PROCESSING`, `COMPLETE`, or `FAILED`, plus `errors` and `warnings` arrays, and an `image` with the same `templateUrl`, `width`, and `height` shape an image asset uses.
+Pick a timecode that falls inside the video’s duration. App Store Connect then generates the frame asynchronously. Read `previewFrameImage` on the video to check progress; it carries a nested `state` of `PROCESSING`, `COMPLETE`, or `FAILED`, plus `errors` and `warnings` arrays, and an `image` with the same `templateUrl`, `width`, and `height` shape an image asset uses.
 
 The preview frame belongs to the video, not to any one placement. Changing it changes what every placement of that video displays.
 
@@ -151,7 +151,7 @@ After your video reaches `PREPARE_FOR_SUBMISSION`, place it on a surface. For mo
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
   Create placements that position library assets on App Store surfaces, then set their display order within a localization.
 - [Discovering asset specifications](./discovering-asset-specifications.md)
-  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
+  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload assets.
 - [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
   Move your screenshots, app previews, and in-app event media from the deprecated set-based resources to the asset library.
 

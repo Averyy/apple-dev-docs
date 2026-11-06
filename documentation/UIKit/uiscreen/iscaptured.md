@@ -9,8 +9,8 @@ A Boolean value that indicates whether the system is actively cloning the screen
 **Availability**:
 - iOS 11.0+ - Deprecated in 27.0
 - iPadOS 11.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS 11.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS 11.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`sceneCaptureState`](../uitraitcollection/scenecapturestate.md) instead.
 

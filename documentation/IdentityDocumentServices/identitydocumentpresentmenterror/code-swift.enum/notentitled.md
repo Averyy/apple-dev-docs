@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-An error that indicates the caller is not entitled.
+An error that indicates the caller isn’t entitled.
 
 **Availability**:
 - iOS 26.0+

@@ -40,7 +40,7 @@ For more information, see [Extending the renewal date for auto-renewable subscri
 - [type productId](../AppStoreServerNotifications/productid.md)
   The product identifier of the In-App Purchase.
 - [type requestIdentifier](./requestidentifier.md)
-  A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+  A string that contains a unique identifier you provide to track a request, such as a subscription-renewal-date extension or a seat claim.
 - [type storefrontCountryCode](./storefrontcountrycode.md)
   The three-letter code that represents the country or region associated with the App Store storefront.
 - [type storefrontCountryCodes](./storefrontcountrycodes.md)

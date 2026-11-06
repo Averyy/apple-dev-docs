@@ -9,11 +9,6 @@ The data structure that represents an app store connect api resource.
 **Availability**:
 - App Store Connect API 1.0+
 
-## Mentions
-
-- [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
-- [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
-
 ## Overview
 
 Automate the tasks you perform on the Apple Developer website and in App Store Connect.

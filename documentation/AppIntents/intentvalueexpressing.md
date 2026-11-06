@@ -42,6 +42,7 @@ This protocol forms the foundation of the lazy evaluation mechanism in the inten
 - [IntentValueConvertible](./intentvalueconvertible.md)
 - [IntentValueConvertibleWrapper](./intentvalueconvertiblewrapper.md)
 ### Conforming Types
+- [EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
 - [IntentCurrencyAmount](./intentcurrencyamount.md)
 - [IntentFile](./intentfile.md)
 - [IntentPaymentMethod](./intentpaymentmethod.md)

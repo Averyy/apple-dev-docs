@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/DriverKit": {
       "file_path": "documentation/DriverKit/DriverKit.md",
-      "hash": "7e939518ef3639f22384648c94c8c8d7471f9e94d8152f71be82fa18f5cf59fd"
+      "hash": "314651bd5da7c5ef2ab16aec492d0260ced97c865bfdadd7129f9631a4fb92c0"
     },
     "https://developer.apple.com/documentation/driverkit/3180989-array_indices": {
       "file_path": "documentation/DriverKit/api-3180989-array_indices.md",
@@ -4299,6 +4299,10 @@
     "https://developer.apple.com/documentation/driverkit/kiopropertysha3512key": {
       "file_path": "documentation/DriverKit/kiopropertysha3512key.md",
       "hash": "173a1b13e5d60ca4f4e70c38adc71883d812f007ba0c3e42825014f0118ac35d"
+    },
+    "https://developer.apple.com/documentation/driverkit/kiopropertysoftwareiokey": {
+      "file_path": "documentation/DriverKit/kiopropertysoftwareiokey.md",
+      "hash": "0c51aeac29f0d8ecca68e3b2fe7b3a6e9e7d36974ba4601ff47a95929dc87230"
     },
     "https://developer.apple.com/documentation/driverkit/kiopropertysupportedbdfeatureskey": {
       "file_path": "documentation/DriverKit/kiopropertysupportedbdfeatureskey.md",
@@ -11850,7 +11854,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/DriverKit.json": {
       "file_path": "documentation/DriverKit/DriverKit.md",
-      "hash": "7e939518ef3639f22384648c94c8c8d7471f9e94d8152f71be82fa18f5cf59fd"
+      "hash": "314651bd5da7c5ef2ab16aec492d0260ced97c865bfdadd7129f9631a4fb92c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/driverkit/3180989-array_indices.json": {
       "file_path": "documentation/DriverKit/api-3180989-array_indices.md",
@@ -16147,6 +16151,10 @@
     "https://developer.apple.com/tutorials/data/documentation/driverkit/kiopropertysha3512key.json": {
       "file_path": "documentation/DriverKit/kiopropertysha3512key.md",
       "hash": "173a1b13e5d60ca4f4e70c38adc71883d812f007ba0c3e42825014f0118ac35d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/driverkit/kiopropertysoftwareiokey.json": {
+      "file_path": "documentation/DriverKit/kiopropertysoftwareiokey.md",
+      "hash": "0c51aeac29f0d8ecca68e3b2fe7b3a6e9e7d36974ba4601ff47a95929dc87230"
     },
     "https://developer.apple.com/tutorials/data/documentation/driverkit/kiopropertysupportedbdfeatureskey.json": {
       "file_path": "documentation/DriverKit/kiopropertysupportedbdfeatureskey.md",
@@ -23705,6 +23713,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 5924
+    "total_pages": 5926
   }
 }

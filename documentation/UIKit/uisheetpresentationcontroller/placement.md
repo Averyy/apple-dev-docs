@@ -40,6 +40,13 @@ enum UISheetPresentationControllerPlacement : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Customizing position and placement
+- [var sourceView: UIView?](./sourceview.md)
+  The view that the sheet centers itself over.
+- [var preferredPlacement: UISheetPresentationController.Placement](./preferredplacement.md)
+
 
 ---
 

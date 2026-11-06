@@ -41,6 +41,8 @@ Container corner inset sizes may not be uniform. For example, on iPadOS and macO
   The concentric corner radii for this view’s bounds relative to the container shape.
 - [func concentricCornerRadii(in: CGRect) -> RectangleCornerRadii?](./concentriccornerradii%28in%29.md)
   Returns the concentric corner radii for the specified frame relative to the container shape.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set) -> EdgeInsets](./contentmargins%28for,edges%29.md)
+  The insets of a content margin guide for the given edges.
 - [var size: CGSize](./size.md)
   The size of the container view.
 - [var safeAreaInsets: EdgeInsets](./safeareainsets.md)

@@ -20,7 +20,8 @@ init(documentRequestSets: [ISO18013MobileDocumentRequest.DocumentRequestSet], is
 
 ## Parameters
 
-- `documentRequestSets`: Whether this presentment request must be satisfied in order to complete the `ISO18013MobileDocumentRequest`.
+- `documentRequestSets`: An array of the document request sets that can be used to satisfy the presentment request.
+- `isMandatory`: A Boolean value that represents whether the presentment request must be satisfied in order to complete the `ISO18013MobileDocumentRequest`.
 
 
 ---

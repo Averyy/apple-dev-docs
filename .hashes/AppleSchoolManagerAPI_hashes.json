@@ -98,11 +98,11 @@
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-org-devices": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-org-devices.md",
-      "hash": "227a14f3b6fb4ec79081175f2f4766a5d5d2e3fd240313a805d2d895e381d4df"
+      "hash": "246271b00b92b076bbbecb76aa7b4fc1d67c45b8ba75bff0eb6f770a1b7e509e"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-orgdevice-information": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdevice-information.md",
-      "hash": "67d92260d5e3f39855748600f4d5ad339d7a88dd7b1ae314b5fb78884dea71e3"
+      "hash": "4edde61b87b4a00b059812d94e690c98aa8d14889482db4a3d1bc4a1450e3f99"
     },
     "https://developer.apple.com/documentation/appleschoolmanagerapi/get-orgdeviceactivity-information": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdeviceactivity-information.md",
@@ -382,11 +382,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-org-devices.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-org-devices.md",
-      "hash": "227a14f3b6fb4ec79081175f2f4766a5d5d2e3fd240313a805d2d895e381d4df"
+      "hash": "246271b00b92b076bbbecb76aa7b4fc1d67c45b8ba75bff0eb6f770a1b7e509e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-orgdevice-information.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdevice-information.md",
-      "hash": "67d92260d5e3f39855748600f4d5ad339d7a88dd7b1ae314b5fb78884dea71e3"
+      "hash": "4edde61b87b4a00b059812d94e690c98aa8d14889482db4a3d1bc4a1450e3f99"
     },
     "https://developer.apple.com/tutorials/data/documentation/appleschoolmanagerapi/get-orgdeviceactivity-information.json": {
       "file_path": "documentation/AppleSchoolManagerAPI/get-orgdeviceactivity-information.md",

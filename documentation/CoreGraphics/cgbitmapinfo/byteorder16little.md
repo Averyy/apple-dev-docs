@@ -7,13 +7,13 @@
 16-bit, little endian format.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Little)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Little)
 
 ## Declaration
 

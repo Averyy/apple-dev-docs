@@ -7,7 +7,7 @@
 Creates a bordered button style with a tint color.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`tint(_:)`](../view/tint%28_%29-93mfq.md) instead.
 

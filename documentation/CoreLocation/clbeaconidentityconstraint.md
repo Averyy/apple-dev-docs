@@ -7,10 +7,10 @@
 Identity characteristics that can match one or more beacons.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`CLBeaconIdentityCondition`](./clbeaconidentitycondition.md) instead.
 

@@ -11,6 +11,22 @@ App Store Server Notifications has two versions of notifications. Version 1 noti
 
 To set up your server to receive notifications, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
+### November 4, 2026
+
+**New features**
+
+- Added the value `5` to [`offerType`](./offertype.md) to indicate a retention offer.
+
+### November 3, 2026
+
+**New features**
+
+- Added the `UNCLAIM_SEATS` value to [`notificationType`](./notificationtype.md), and the [`unclaimInfo`](./unclaiminfo.md) field to [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md), with the [`unclaimSeatIds`](./unclaimseatids.md) field, to support Group Purchases subscriptions with developer-hosted invitations.
+- Added the `INCREASE_QUANTITY` and `DECREASE_QUANTITY` values to [`subtype`](./subtype.md) for the `DID_CHANGE_RENEWAL_PREF` notification type, and the `SEATS` value for the `REFUND` notification type, to report changes to the number of seats in a multiseat purchase.
+- Added the `multiSeatInfo` and [`additionalTransactionReason`](./additionaltransactionreason.md) fields to the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md), and the `multiSeatInfo` and [`renewalQuantity`](./renewalquantity.md) fields to the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md), to describe the seats in a multiseat purchase.
+- Added the [`TransactionMultiSeatInfo`](./transactionmultiseatinfo.md), [`RenewalMultiSeatInfo`](./renewalmultiseatinfo.md), and [`MultiSeatPriceTier`](./multiseatpricetier.md) data types, and the [`invitationManagement`](./invitationmanagement.md), [`tierPrice`](./tierprice.md), [`tierQuantity`](./tierquantity.md), and [`revokedSeatQuantity`](./revokedseatquantity.md) fields.
+- The App Store also sends a `REVOKE` notification when a customer loses access to a subscription that they have through a group.
+
 ### October 23, 2026
 
 **New features**

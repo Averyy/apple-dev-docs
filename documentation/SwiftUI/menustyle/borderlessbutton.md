@@ -7,12 +7,12 @@
 A menu style that displays a borderless button that toggles the display of the menu’s contents when pressed.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
-- tvOS 17.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
+- tvOS 17.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`menuStyle(_:)`](../view/menustyle%28_%29.md) with [`button`](./button.md) and [`buttonStyle(_:)`](../view/buttonstyle%28_%29-66fbx.md) with [`borderless`](../primitivebuttonstyle/borderless.md).
 

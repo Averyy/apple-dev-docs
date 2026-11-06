@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/CoreMedia": {
       "file_path": "documentation/CoreMedia/CoreMedia.md",
-      "hash": "89122100eb6cc212b1d34432033db3a8e7be689d00a876637ca5dcf56abf3252"
+      "hash": "a2442f37ed82a389a121b541884c16489753da9a8204070940d99ae0497f752e"
     },
     "https://developer.apple.com/documentation/coremedia/audio-codec-types": {
       "file_path": "documentation/CoreMedia/audio-codec-types.md",
@@ -9120,6 +9120,10 @@
       "file_path": "documentation/CoreMedia/kcmsampleattachmentkey_postdecodeprocessingmetadata.md",
       "hash": "1e9b6d3d15588803f903049695335cb45ceace818bed30ecfa8a8429bd5b87f4"
     },
+    "https://developer.apple.com/documentation/coremedia/kcmsampleattachmentkey_smpte_st_2094_50data": {
+      "file_path": "documentation/CoreMedia/kcmsampleattachmentkey_smpte_st_2094_50data.md",
+      "hash": "8aa217b9cf04a5ee65ec07d051d8ec072bf79e0198e071c598b53b6790265862"
+    },
     "https://developer.apple.com/documentation/coremedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix": {
       "file_path": "documentation/CoreMedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix.md",
       "hash": "dc9c5151919af2617af583ea14240a07b4123abfaa1ba05d15b6d305d5fb1a7f"
@@ -10246,7 +10250,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreMedia.json": {
       "file_path": "documentation/CoreMedia/CoreMedia.md",
-      "hash": "89122100eb6cc212b1d34432033db3a8e7be689d00a876637ca5dcf56abf3252"
+      "hash": "a2442f37ed82a389a121b541884c16489753da9a8204070940d99ae0497f752e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremedia/audio-codec-types.json": {
       "file_path": "documentation/CoreMedia/audio-codec-types.md",
@@ -19364,6 +19368,10 @@
       "file_path": "documentation/CoreMedia/kcmsampleattachmentkey_postdecodeprocessingmetadata.md",
       "hash": "1e9b6d3d15588803f903049695335cb45ceace818bed30ecfa8a8429bd5b87f4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coremedia/kcmsampleattachmentkey_smpte_st_2094_50data.json": {
+      "file_path": "documentation/CoreMedia/kcmsampleattachmentkey_smpte_st_2094_50data.md",
+      "hash": "8aa217b9cf04a5ee65ec07d051d8ec072bf79e0198e071c598b53b6790265862"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coremedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix.json": {
       "file_path": "documentation/CoreMedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix.md",
       "hash": "dc9c5151919af2617af583ea14240a07b4123abfaa1ba05d15b6d305d5fb1a7f"
@@ -20493,6 +20501,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 5122
+    "total_pages": 5124
   }
 }

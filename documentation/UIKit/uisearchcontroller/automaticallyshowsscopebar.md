@@ -9,9 +9,9 @@ A Boolean indicating whether the search controller manages the visibility of the
 **Availability**:
 - iOS 13.0+ - Deprecated in 27.0
 - iPadOS 13.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - tvOS 13.0+
-- visionOS 1.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: In iOS, use [`scopeBarActivation`](./scopebaractivation-swift.property.md) instead.
 

@@ -7,7 +7,9 @@
 Gets the data buffer associated with a particular I/O request.
 
 **Availability**:
-- DriverKit
+- DriverKit - Deprecated in 27.3
+
+> **Deprecated**: Use [`UserCopyDataBuffer`](./usercopydatabuffer.md) instead. That method has the same functionality as this one, but its name correctly describes the memory ownership.
 
 ## Declaration
 
@@ -23,13 +25,19 @@ A value that indicates the result of getting the buffer. [`kIOReturnSuccess`](..
 
 Your dext class can call this method inside [`UserProcessParallelTask`](./userprocessparalleltask.md) to get the data buffer associated with the I/O request identified by `controllerTaskID`. Calling this method can have a significant impact on performance, so call it only if you require access to the data buffer. The caller needs to prepare new DMA mappings for this buffer and can no longer use the mappings in [`fBufferIOVMAddr`](../scsiuserparalleltask/fbufferiovmaddr.md).
 
-The framework releases the buffer when the caller invokes the parallel task completion callback. Don’t retain this buffer after invoking the task completion callback.
+> ❗ **Important**: Contrary to this method’s name, ownership of `buffer` transfers to the caller. Release the buffer when you’re done with it, before you invoke the parallel task completion callback. Failing to release the buffer causes a memory leak.
 
 ## Parameters
 
 - `targetID`: The identifier of the target to check.
 - `controllerTaskID`: A task identifiers that uniquely identifies this I/O. This should be the same as [`fControllerTaskIdentifier`](../scsiuserparalleltask/fcontrollertaskidentifier.md) in the [`SCSIUserParallelTask`](../scsiuserparalleltask.md) structure.
 - `buffer`: On return, the retrieved [`IOBufferMemoryDescriptor`](../../DriverKit/iobuffermemorydescriptor.md).
+
+## See Also
+
+### Accessing data buffers
+- [UserCopyDataBuffer](./usercopydatabuffer.md)
+  Gets the data buffer associated with a particular I/O request.
 
 
 ---

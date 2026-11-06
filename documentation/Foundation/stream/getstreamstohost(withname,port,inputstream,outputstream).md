@@ -7,12 +7,12 @@
 Creates and returns by reference an `NSInputStream` object and `NSOutputStream` object for a socket connection with a given host on a given port.
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.10+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.10+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use nw_connection_t in Network framework instead
 

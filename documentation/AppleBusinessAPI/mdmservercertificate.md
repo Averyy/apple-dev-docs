@@ -7,7 +7,7 @@
 The X.509 certificate to associate with a device management service.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

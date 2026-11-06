@@ -64,6 +64,8 @@ Some methods in [`THClient`](./thclient.md) use the *team ID*, a string that you
   Triggers Credential Share mode on a nearby eligible Apple Border Router (tvOS(27.0)).
 - [func retrieveActiveCredentialsForNearbyNetworks(completion: (Set<THCredentials>?, (any Error)?) -> Void)](./thclient/retrieveactivecredentialsfornearbynetworks%28completion%29.md)
   Requests all active Thread credentials with active border routers around from the framework.
+- [func retrieveNearbyNetworkCredentials(completion: (Set<THNearbyNetworkCredentials>?, (any Error)?) -> Void)](./thclient/retrievenearbynetworkcredentials%28completion%29.md)
+  Retrieves credentials for the active Thread networks nearby.
 
 ## Relationships
 

@@ -140,8 +140,10 @@ Many high-level Apple frameworks leverage the performance of Metal, including [R
 - [let MTLDeviceErrorDomain: String](./mtldeviceerrordomain.md)
 ### Enumerations
 - [enum MTLContentionRelief](./mtlcontentionrelief.md)
+  Options that control whether the compiler inserts contention relief.
 - [enum MTLFloatingPointConversionRoundingMode](./mtlfloatingpointconversionroundingmode.md)
 - [enum MTLForwardProgressUsage](./mtlforwardprogressusage.md)
+  Options for how a pipeline depends on blocking synchronization across SIMD groups.
 - [enum MTLTensorPlaneType](./mtltensorplanetype.md)
   The possible tensor plane types.
 - [MTLDeviceError](./mtldeviceerror-swift.struct/code.md)

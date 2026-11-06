@@ -70,7 +70,7 @@ curl "https://api-school.apple.com/v1/orgDevices" \
             "123456789012347"
           ],
           "eid": "89049037640158663184237812557346",
-          "purchaseSourceUid": "-2085650007946880",
+          "purchaseSourceId": "-2085650007946880",
           "purchaseSourceType": "APPLE"
         },
         "relationships": {
@@ -148,7 +148,7 @@ curl "https://api-school.apple.com/v1/orgDevices?filter[status]=UNASSIGNED&filte
             "123456789012347"
           ],
           "eid": "89049037640158663184237812557346",
-          "purchaseSourceUid": "-2085650007946880",
+          "purchaseSourceId": "-2085650007946880",
           "purchaseSourceType": "APPLE"
         },
         "relationships": {

@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Specific error codes for identity document web presentment errors.
+Error codes for identity document web presentment errors.
 
 **Availability**:
 - iOS 26.0+
@@ -22,16 +22,16 @@ enum Code
 
 ### Operators
 - [static func ~= (IdentityDocumentPresentmentError.Code, any Error) -> Bool](./code-swift.enum/tildeeq%28_,_%29.md)
-  Pattern matching operator for matching error codes directly. This enables traditional switch/case pattern matching on error codes.
+  A pattern-matching operator for matching error codes directly. This operator enables traditional switch/case pattern matching on error codes.
 ### Enumeration Cases
 - [IdentityDocumentPresentmentError.Code.cancelled](./code-swift.enum/cancelled.md)
-  An error that indicates that the current request has been cancelled.
+  An error that indicates that the current request was canceled.
 - [IdentityDocumentPresentmentError.Code.invalidRequest](./code-swift.enum/invalidrequest.md)
-  An error that is thrown when an invalid request is provided.
+  An error that indicates an invalid request.
 - [IdentityDocumentPresentmentError.Code.notEntitled](./code-swift.enum/notentitled.md)
-  An error that indicates the caller is not entitled.
+  An error that indicates the caller isn’t entitled.
 - [IdentityDocumentPresentmentError.Code.requestInProgress](./code-swift.enum/requestinprogress.md)
-  An error that indicates that there is currently a request in progress.
+  An error that indicates a request is in progress.
 - [IdentityDocumentPresentmentError.Code.unknown](./code-swift.enum/unknown.md)
   An error that indicates that the framework encountered an unknown problem.
 
@@ -45,6 +45,20 @@ enum Code
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Matching error codes
+- [static let cancelled: IdentityDocumentPresentmentError.Code](./cancelled.md)
+  An error that indicates the current request was canceled.
+- [static let invalidRequest: IdentityDocumentPresentmentError.Code](./invalidrequest.md)
+  An error thrown when a request is invalid.
+- [static let notEntitled: IdentityDocumentPresentmentError.Code](./notentitled.md)
+  An error that indicates the caller is not entitled.
+- [static let requestInProgress: IdentityDocumentPresentmentError.Code](./requestinprogress.md)
+  An error that indicates a request in progress.
+- [static let unknown: IdentityDocumentPresentmentError.Code](./unknown.md)
+  An error that indicates the framework encountered an unknown problem.
 
 
 ---

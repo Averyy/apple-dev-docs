@@ -1,9 +1,13 @@
-# Display Stream YCbCr to RGB conversion Matrix Options
+# Display stream YCbCr to RGB conversion matrix options
 
 **Framework**: Core Graphics  
 **Role**: API Collection
 
-These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
+Matrix coefficient options for converting a display stream with YCbCr components to a display stream with RGB components.
+
+## Overview
+
+The coefficient options apply to the [`colorMatrix`](../ScreenCaptureKit/scstreamconfiguration/colormatrix.md) property of the [`SCStreamConfiguration`](../ScreenCaptureKit/scstreamconfiguration.md) class in the [ScreenCaptureKit](../ScreenCaptureKit/ScreenCaptureKit.md) framework.
 
 ## Topics
 

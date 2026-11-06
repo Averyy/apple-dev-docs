@@ -9,9 +9,9 @@ Asks the delegate for the menu to display in the text field, based on the text r
 **Availability**:
 - iOS 16.0+ - Deprecated in 27.0
 - iPadOS 16.0+ - Deprecated in 27.0
-- Mac Catalyst 16.0+ - Deprecated in 27.2
-- tvOS 16.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.3
+- tvOS 16.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 ## Declaration
 

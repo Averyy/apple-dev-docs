@@ -118,7 +118,8 @@ struct TotalCaffeineView: View {
 ## See Also
 
 ### visionOS widgets
-- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration\n](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
+](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](./widgettexture.md)
   Values that define the texture of the widget’s coating layer.

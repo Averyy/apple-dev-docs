@@ -42,6 +42,7 @@ To make a custom type usable in AppIntents, conform it to this protocol by imple
 ### Inherited By
 - [IntentValueConvertibleWrapper](./intentvalueconvertiblewrapper.md)
 ### Conforming Types
+- [EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
 - [IntentCurrencyAmount](./intentcurrencyamount.md)
 - [IntentFile](./intentfile.md)
 - [IntentPaymentMethod](./intentpaymentmethod.md)

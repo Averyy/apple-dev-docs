@@ -11,6 +11,7 @@ Creates a prompt.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -22,7 +23,7 @@ init(id: String = UUID().uuidString, metadata: [String : any ConvertibleToGenera
 
 ## Parameters
 
-- `id`: A [`Generable`](../../generable.md) type to use as the response format.
+- `id`: A unique identifier for the prompt.
 - `metadata`: Metadata provided as part of this prompt.
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.

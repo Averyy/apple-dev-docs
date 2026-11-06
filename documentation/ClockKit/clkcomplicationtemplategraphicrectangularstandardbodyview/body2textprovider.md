@@ -7,7 +7,7 @@
 The text provider for the second row of body text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

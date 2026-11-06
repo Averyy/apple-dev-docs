@@ -7,10 +7,10 @@
 Creates a document group that is able to view reference file documents.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
 - visionOS 1.0+
 
 > **Deprecated**: Create a DocumentGroup with an object conforming to Document protocol instead.

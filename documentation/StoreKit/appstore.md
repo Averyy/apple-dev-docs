@@ -47,6 +47,28 @@ Use these static functions and variables to perform tasks like showing the manag
   Presents the App Store sheet for managing subscriptions.
 - [static func showManageSubscriptions(in: UIWindowScene, subscriptionGroupID: String) async throws](./appstore/showmanagesubscriptions%28in,subscriptiongroupid%29.md)
   Presents the App Store sheet for managing subscriptions for a subscription group.
+- [static func showManageSubscriptions(from: NSWindow) async throws](./appstore/showmanagesubscriptions%28from%29.md)
+  Presents the App Store sheet for managing subscriptions.
+- [static func showManageSubscriptions(from: NSWindow, subscriptionGroupID: String) async throws](./appstore/showmanagesubscriptions%28from,subscriptiongroupid%29.md)
+  Presents the App Store sheet for managing subscriptions for a subscription group.
+### Inviting people to a group
+- [static func presentMultiSeatInvitationSheet(from: UIViewController, subscriptionGroupID: String) async throws](./appstore/presentmultiseatinvitationsheet%28from,subscriptiongroupid%29-5cmtd.md)
+  Presents the invitation sheet that the group purchaser uses to invite people to join a multiseat subscription.
+- [static func presentMultiSeatInvitationSheet(from: NSWindow, subscriptionGroupID: String) async throws](./appstore/presentmultiseatinvitationsheet%28from,subscriptiongroupid%29-ni0z.md)
+  Presents the invitation sheet that the group purchaser uses to invite people to join a multiseat subscription.
+- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](../SwiftUI/view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+  Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
+### Requesting data sharing consent
+- [static func presentMultiSeatDataSharingConsentSheet(from: UIViewController, subscriptionGroupID: String) async throws](./appstore/presentmultiseatdatasharingconsentsheet%28from,subscriptiongroupid%29-9gr5s.md)
+  Presents the sheet in which the group purchaser decides whether to share group information with you.
+- [static func presentMultiSeatDataSharingConsentSheet(from: NSWindow, subscriptionGroupID: String) async throws](./appstore/presentmultiseatdatasharingconsentsheet%28from,subscriptiongroupid%29-3j1t4.md)
+  Presents the sheet in which the group purchaser decides whether to share group information with you.
+- [var multiSeatDataSharingConsentEligibility: Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md)
+  A value that indicates whether you can request consent to share group information for this subscription’s subscription group.
+- [func multiSeatDataSharingConsentSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](../SwiftUI/view/multiseatdatasharingconsentsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+  Presents the data sharing consent sheet, where a subscriber decides whether to share account-level data with you.
 ### Requesting reviews
 - [struct RequestReviewAction](./requestreviewaction.md)
   An instance that tells StoreKit to request an App Store rating or review, if appropriate.

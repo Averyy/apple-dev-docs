@@ -27,7 +27,7 @@ Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 - `identifier`: The identifier of the property
 - `title`: A word or short phrase summarizing this property.
-- `getSetter`: The getter reference for the property
+- `getSetter`: The key path for the property’s getter and setter
 
 
 ---

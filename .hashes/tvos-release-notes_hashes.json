@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/tvos-release-notes": {
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md",
-      "hash": "aedf551d613acc912a7ad7e034fd1f58b9af99bf6b07e99a85c252a72e0dd00b"
+      "hash": "1f3099536490fb293cb9bb7a1d6e89d87495de4e79fa2200b76b44b10f1ecd6d"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/apple-tv-software-7_3-release-notes": {
       "file_path": "documentation/tvos-release-notes/apple-tv-software-7_3-release-notes.md",
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-15_4-release-notes": {
       "file_path": "documentation/tvos-release-notes/tvos-15_4-release-notes.md",
-      "hash": "cc8ddf0667c029902ce6128cc1d8c751e1d89c9c8acb6da94161fc04dd6661d7"
+      "hash": "02c04de9ad0ef48bf872e362e73e2cc77446530247aa6298e3c36d282d54941a"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-15_5-release-notes": {
       "file_path": "documentation/tvos-release-notes/tvos-15_5-release-notes.md",
@@ -230,15 +230,19 @@
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-27-release-notes": {
       "file_path": "documentation/tvos-release-notes/tvos-27-release-notes.md",
-      "hash": "b4edf4841aefd50d87ed6c11c54d5bb73a516783a7bb068cbb21d4d4a0cc9d86"
+      "hash": "bffb447491ffceadbd640a9dc6e8bd4936136024865bf4f3ecaff03742be342d"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-27_2-release-notes": {
       "file_path": "documentation/tvos-release-notes/tvos-27_2-release-notes.md",
-      "hash": "04b3dfbdac67a4ec2b0dab0dd0cbb3495359838f2e46a7836e7c308f289c3dac"
+      "hash": "a49722edecd986bf4fe444384672003e0629f7f065db09d5f0aa51b19e682c04"
+    },
+    "https://developer.apple.com/documentation/tvos-release-notes/tvos-27_3-release-notes": {
+      "file_path": "documentation/tvos-release-notes/tvos-27_3-release-notes.md",
+      "hash": "49671427b2da4fe151aee53e39fc191ecea3c68cd19a978dea2cf31ef2446c0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md",
-      "hash": "aedf551d613acc912a7ad7e034fd1f58b9af99bf6b07e99a85c252a72e0dd00b"
+      "hash": "1f3099536490fb293cb9bb7a1d6e89d87495de4e79fa2200b76b44b10f1ecd6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/apple-tv-software-7_3-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/apple-tv-software-7_3-release-notes.md",
@@ -338,7 +342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_4-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/tvos-15_4-release-notes.md",
-      "hash": "cc8ddf0667c029902ce6128cc1d8c751e1d89c9c8acb6da94161fc04dd6661d7"
+      "hash": "02c04de9ad0ef48bf872e362e73e2cc77446530247aa6298e3c36d282d54941a"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_5-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/tvos-15_5-release-notes.md",
@@ -466,17 +470,21 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/tvos-27-release-notes.md",
-      "hash": "b4edf4841aefd50d87ed6c11c54d5bb73a516783a7bb068cbb21d4d4a0cc9d86"
+      "hash": "bffb447491ffceadbd640a9dc6e8bd4936136024865bf4f3ecaff03742be342d"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27_2-release-notes.json": {
       "file_path": "documentation/tvos-release-notes/tvos-27_2-release-notes.md",
-      "hash": "04b3dfbdac67a4ec2b0dab0dd0cbb3495359838f2e46a7836e7c308f289c3dac"
+      "hash": "a49722edecd986bf4fe444384672003e0629f7f065db09d5f0aa51b19e682c04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27_3-release-notes.json": {
+      "file_path": "documentation/tvos-release-notes/tvos-27_3-release-notes.md",
+      "hash": "49671427b2da4fe151aee53e39fc191ecea3c68cd19a978dea2cf31ef2446c0d"
     }
   },
   "metadata": {
     "render": {
       "version": 4
     },
-    "total_pages": 118
+    "total_pages": 120
   }
 }

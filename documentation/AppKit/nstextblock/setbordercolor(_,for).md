@@ -41,7 +41,7 @@ This setting has no visible effect unless the border width is larger than the de
 - [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,edge%29.md)
   Returns the value type of an edge of a specified layer of the text block.
 - [func borderColor(for: NSRectEdge) -> NSColor?](./bordercolor%28for%29-273pl.md)
-- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
+  Returns the border color of the specified text block edge.
 
 
 ---

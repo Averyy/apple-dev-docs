@@ -27,6 +27,14 @@ UINavigationItemTitleAlignmentAutomatic
 
 Typically, the title is centered, but the system may choose to leading align the title based on the context the title is rendered in. When read from `UITraitCollection.navigationTitleAlignment`, this means the system has not resolved an alignment for the title.
 
+## See Also
+
+### Getting title alignment options
+- [UINavigationItem.TitleAlignment.center](./center.md)
+  The title is center-aligned.
+- [UINavigationItem.TitleAlignment.leading](./leading.md)
+  The title is leading-aligned.
+
 
 ---
 

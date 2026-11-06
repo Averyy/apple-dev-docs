@@ -35,6 +35,7 @@ A [`CGColorConversionInfo`](./cgcolorconversioninfo.md) object specifies a conve
 - [init?(src: CGColorSpace, dst: CGColorSpace)](./cgcolorconversioninfo/init%28src,dst%29.md)
   Creates a conversion between two specified color spaces.
 - [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](./cgcolorconversioninfo/init%28optionssrc,dst,options%29.md)
+- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./cgcolorconversioninfo/init%28src,srcheadroom,dst,dstheadroom,tonemapping,options,_%29.md)
 - [enum CGColorConversionInfoTransformType](./cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 - [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
@@ -44,8 +45,6 @@ A [`CGColorConversionInfo`](./cgcolorconversioninfo.md) object specifies a conve
   Returns the Core Foundation type identifier for a color conversion info data type.
 ### Instance Methods
 - [func convert(width: Int, height: Int, to: UnsafeMutableRawPointer, format: CGColorBufferFormat, from: UnsafeRawPointer, format: CGColorBufferFormat, options: CFDictionary?) -> Bool](./cgcolorconversioninfo/convert%28width,height,to,format,from,format,options%29.md)
-### Initializers
-- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./cgcolorconversioninfo/init%28src,srcheadroom,dst,dstheadroom,tonemapping,options,_%29.md)
 ### Color Conversion Options
 - [kCGColorConversionBlackPointCompensation](./cgcolor/conversionblackpointcompensation.md)
   An option for whether to apply black point compensation when converting between color profiles.

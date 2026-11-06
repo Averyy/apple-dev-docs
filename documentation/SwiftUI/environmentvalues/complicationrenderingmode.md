@@ -7,7 +7,7 @@
 The complication rendering mode for the current environment.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
@@ -28,6 +28,8 @@ var complicationRenderingMode: ComplicationRenderingMode { get }
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
 - [var presentationMode: Binding<PresentationMode>](./presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
+- [struct PresentationMode](../presentationmode.md)
+  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](./sizecategory.md)
   The size of content.
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](./imageplaygroundpersonalizationpolicy.md)

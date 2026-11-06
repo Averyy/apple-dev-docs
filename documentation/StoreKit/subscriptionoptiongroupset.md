@@ -45,6 +45,10 @@ A set of groups of subscription options that include optional views for labels a
 - [struct SubscriptionOptionGroup](./subscriptionoptiongroup.md)
   A group of subscription options that includes optional views for labels and marketing content.
 - [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [struct SubscriptionPricingModelGroupSet](./subscriptionpricingmodelgroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common pricing model.
+- [struct SubscriptionBillingPlanTypeGroupSet](./subscriptionbillingplantypegroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common billing plan type.
 - [struct SubscriptionOptionSection](./subscriptionoptionsection.md)
 - [protocol StoreContent](./storecontent.md)
   A type that represents the content of a store.

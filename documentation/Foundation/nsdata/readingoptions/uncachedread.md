@@ -7,13 +7,13 @@
 Deprecated name for [`uncached`](./uncached.md).
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.uncached)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.uncached)
 
 ## Declaration
 

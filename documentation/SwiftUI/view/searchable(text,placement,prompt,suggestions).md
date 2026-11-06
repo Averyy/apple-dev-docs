@@ -7,13 +7,13 @@
 Marks this view as searchable, which configures the display of a search field.
 
 **Availability**:
-- iOS 15.0+ - Deprecated in 27.2
-- iPadOS 15.0+ - Deprecated in 27.2
-- Mac Catalyst 15.0+ - Deprecated in 27.2
-- macOS 12.0+ - Deprecated in 27.2
-- tvOS 15.0+ - Deprecated in 27.2
+- iOS 15.0+ - Deprecated in 27.3
+- iPadOS 15.0+ - Deprecated in 27.3
+- Mac Catalyst 15.0+ - Deprecated in 27.3
+- macOS 12.0+ - Deprecated in 27.3
+- tvOS 15.0+ - Deprecated in 27.3
 - visionOS 1.0+
-- watchOS 8.0+ - Deprecated in 27.2
+- watchOS 8.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the searchable modifier with the searchSuggestions modifier
 

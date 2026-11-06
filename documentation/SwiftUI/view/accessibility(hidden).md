@@ -7,13 +7,13 @@
 Specifies whether to hide this view from system accessibility features.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityHidden(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityHidden(_:))
 
 > **Deprecated**: Use [`accessibilityHidden(_:)`](./accessibilityhidden%28_%29.md) instead.
 

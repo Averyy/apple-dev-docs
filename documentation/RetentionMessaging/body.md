@@ -4,7 +4,7 @@
 **Kind**: typealias  
 **Role**: Type
 
-The body text you provide for a message.
+The main text you provide for a retention message.
 
 **Availability**:
 - Retention Messaging API 1.0+
@@ -21,7 +21,9 @@ string body
 
 ## Discussion
 
-Provide the `body` as a UTF-8-encoded string. The maximum string length is `144`.
+Provide the `body` as a UTF-8-encoded string with a maximum length of 144 characters.
+
+> **Note**: Use only allowed Unicode characters in the string. If it contains a disallowed character, [`Upload Message`](./upload-message.md) returns a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
 
 The `body` text appears, along with the [`header`](./header.md) text, in a [`message`](./message.md).
 

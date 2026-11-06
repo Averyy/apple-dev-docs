@@ -169,6 +169,7 @@ In macOS, use the [System Extensions](../SystemExtensions/SystemExtensions.md) f
 - [kIOPropertySHA3256Key](./kiopropertysha3256key.md)
 - [kIOPropertySHA3384Key](./kiopropertysha3384key.md)
 - [kIOPropertySHA3512Key](./kiopropertysha3512key.md)
+- [kIOPropertySoftwareIOKey](./kiopropertysoftwareiokey.md)
 - [kIOUserPlatformFunctionHandlerGet](./kiouserplatformfunctionhandlerget.md)
 - [kIOUserResourcesSetPropertyKey](./kiouserresourcessetpropertykey.md)
 - [kIOUserServrMaxExitReasonLength](./kiouserservrmaxexitreasonlength.md)

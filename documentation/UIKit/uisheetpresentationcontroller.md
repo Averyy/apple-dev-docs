@@ -82,19 +82,17 @@ Sheet presentation controllers specify a sheet’s size based on a *detent*, a h
   The corner radius that the sheet attempts to present with.
 - [UISheetPresentationControllerAutomaticDimension](./uisheetpresentationcontrollerautomaticdimension.md)
   The default value to apply to a dimension.
-### Customizing the position
+### Customizing position and placement
 - [var sourceView: UIView?](./uisheetpresentationcontroller/sourceview.md)
   The view that the sheet centers itself over.
+- [var preferredPlacement: UISheetPresentationController.Placement](./uisheetpresentationcontroller/preferredplacement.md)
+- [UISheetPresentationController.Placement](./uisheetpresentationcontroller/placement.md)
 ### Working with custom detents
 - [func invalidateDetents()](./uisheetpresentationcontroller/invalidatedetents%28%29.md)
   Notifies the sheet to re-evaluate its detent value in the next layout pass.
 ### Animating changes to the sheet
 - [func animateChanges(() -> Void)](./uisheetpresentationcontroller/animatechanges%28_%29.md)
   Animates the UI changes to the sheet’s properties.
-### Instance Properties
-- [var preferredPlacement: UISheetPresentationController.Placement](./uisheetpresentationcontroller/preferredplacement.md)
-### Enumerations
-- [UISheetPresentationController.Placement](./uisheetpresentationcontroller/placement.md)
 
 ## Relationships
 

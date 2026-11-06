@@ -7,13 +7,13 @@
 Creates an instance which binds over an arbitrary type, `T`.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
-- Mac Catalyst 13.0+ - Deprecated in 27.2
-- macOS 10.15+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 6.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
+- Mac Catalyst 13.0+ - Deprecated in 27.3
+- macOS 10.15+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(_:value:formatter:prompt:)`](./init%28_,value,formatter,prompt%29-8kpfa.md) instead. Add the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) view modifier for the `onCommit` behavior. Use [`FocusState`](../focusstate.md) and [`focused(_:equals:)`](../view/focused%28_,equals%29.md) for the `onEditingChanged` behavior.
 

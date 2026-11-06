@@ -7,10 +7,10 @@
 Sets the attributes of the receiver based on the key-value pairs specified in the passed-in dictionary.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2
-- iPadOS 2.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.0+ - Deprecated in 27.2
+- iOS 2.0+ - Deprecated in 27.3
+- iPadOS 2.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: This method is deprecated because it does not function properly. Instead use [`setAttributesWith(_:)`](./setattributeswith%28_%29.md).
 

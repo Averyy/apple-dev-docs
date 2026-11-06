@@ -10,7 +10,7 @@ Initializes and returns a newly created navigation controller that uses your cus
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

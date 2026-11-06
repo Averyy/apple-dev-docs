@@ -7,7 +7,7 @@
 A response that contains a list of Configuration resource linkages for a Blueprint.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

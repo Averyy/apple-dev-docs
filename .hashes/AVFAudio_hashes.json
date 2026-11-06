@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/AVFAudio": {
       "file_path": "documentation/AVFAudio/AVFAudio.md",
-      "hash": "2828228306ba5b528f25252616882322d975813f491f8df949a0cc0c4c9afc41"
+      "hash": "c7506eba95a2cf730de1298682e96b3502746eb23c0f621e04d991439628cd99"
     },
     "https://developer.apple.com/documentation/avfaudio/adding-synthesized-speech-to-calls": {
       "file_path": "documentation/AVFAudio/adding-synthesized-speech-to-calls.md",
@@ -434,7 +434,7 @@
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer.md",
-      "hash": "a72a393fc3cb86af0cc43825f8682a317ce3e2f6ec03c6470eac71cb1dcbcd1c"
+      "hash": "fa5bb29e22f1641edf8980948eef802a83a9b64ee24c494ab2deec6542265133"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/bytecapacity": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/bytecapacity.md",
@@ -448,6 +448,18 @@
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/data.md",
       "hash": "2b18ac1c77e41f50dad4608eab1fa2a76a67b3d722888456e34b0c3116dfbefc"
     },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/dataspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/dataspan.md",
+      "hash": "69086cc457d1b66e1873b1d175c59d748037313273830e3280b57e14779954cf"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/init(copying:)-65xzn": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(copying)-65xzn.md",
+      "hash": "5a314b8117415ac05faa71093b4416497d8fe9054f226d97eee796b2b686e7bf"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/init(copying:)-6ztfu": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(copying)-6ztfu.md",
+      "hash": "9a45c42f7e81263e5f19ae339700a583e0362003104fc2393fbca27dbc63848c"
+    },
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/init(format:packetcapacity:)": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(format,packetcapacity).md",
       "hash": "f3f2804fab9b2c74dc9d099ecb9bf851d26140500effe8c1acb7e1ee5433433d"
@@ -459,6 +471,18 @@
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/maximumpacketsize": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/maximumpacketsize.md",
       "hash": "a31c9a0fcf7d7a87aa0a2c7da30b0d41ccc5e1ea26372a40059577260428aea9"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/mutabledataspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutabledataspan.md",
+      "hash": "820a83a4af127aecedd4a2823f5398fc8f2fe5905d68d017eab79f36f70f7ab8"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/mutablepacketdependencyspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutablepacketdependencyspan.md",
+      "hash": "08079cc866f6baecdcdea1d4cb3eb4c4c8b83e6e8b750d44cc292429863a0054"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/mutablepacketdescriptionsspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutablepacketdescriptionsspan.md",
+      "hash": "715643a43f353532ba32da9ccc536421625c387a14225aae5671b43b28b073dc"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/packetcapacity": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetcapacity.md",
@@ -476,9 +500,17 @@
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdependencies-5oae6.md",
       "hash": "d8f00df2e5e71d148d237ea29051814026ee1095ffaeecf4dd0b5997be0a88b3"
     },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/packetdependencyspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdependencyspan.md",
+      "hash": "775880bdc7a9b6334fbdcd477754e483ff008a50ecc69e68d6605b004d911599"
+    },
     "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/packetdescriptions": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdescriptions.md",
       "hash": "8839da5c2a86b3dcd26b3895298f950fa14cc045433860bbcb98014284dd227d"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/packetdescriptionsspan": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdescriptionsspan.md",
+      "hash": "b50764a208efbb4895eb616560be87124bff297adf3bdecaaaea61a957ec50a9"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudioconnectionpoint": {
       "file_path": "documentation/AVFAudio/avaudioconnectionpoint.md",
@@ -498,7 +530,15 @@
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource.md",
-      "hash": "644759a0c86e87be6c3a6a8c6380f28adc73c09099d8b89fb3abf821cdea5daa"
+      "hash": "81065d93a79edf35e97470987b3855698fe2d96088cde10972231adf0965762a"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/alarm_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/alarm_spatial.md",
+      "hash": "ff97186982032b94f552385c97ad57d355016e803aee725086c1db0fe312cf05"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/alarm_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/alarm_traditional.md",
+      "hash": "a48d658b2297f7b357b8e8d7d857cdafdf6f4a59b490e07a619c3f778c59b836"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/appleav_spatial_live": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/appleav_spatial_live.md",
@@ -568,6 +608,14 @@
       "file_path": "documentation/AVFAudio/avaudiocontentsource/capture_traditional.md",
       "hash": "d586bc51a4a04cdd9308e86eb122693eaa92b229a9c73fb077d888199d204e15"
     },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/feedbacksound_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/feedbacksound_spatial.md",
+      "hash": "8185275b6af058e3ad383a6f28d0027aa08e455e494617ffa324fd93e2f322d9"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/feedbacksound_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/feedbacksound_traditional.md",
+      "hash": "c69ec1b964ca8ab5487ace7a6a62e7ace8a179f0f85f4fc9eceb5c3e84ffd30d"
+    },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/init(rawvalue:)": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/init(rawvalue).md",
       "hash": "364b413319d02b83155a3bcc982202b1c6646182e1d0fbffe0cdd9c7dfd77c53"
@@ -580,13 +628,45 @@
       "file_path": "documentation/AVFAudio/avaudiocontentsource/music_traditional.md",
       "hash": "c4e31afed3a459c5e8efaf1606b4d4b94cc22d8afb78f2bbbf75a2f3a17da2ec"
     },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/othersystemsound_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/othersystemsound_spatial.md",
+      "hash": "71800e269e3be9d00a319ef00204ffb5d81542c32d24d420c08e485dfea515a5"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/othersystemsound_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/othersystemsound_traditional.md",
+      "hash": "c46baa8248330c45d9d680feafaf8537315b5092837c21dc80bba4af6f71e24b"
+    },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/passthrough": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/passthrough.md",
       "hash": "ae4084e144e7e9d7a62715cfd34ce4ec06e504d1eb8cbb4f5dcb88fbb78f6574"
     },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/podcast_audiobook_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/podcast_audiobook_spatial.md",
+      "hash": "d7bee8de2813febc37052eced4bdf01a36c8946fe897d6c5819173927e56981b"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/podcast_audiobook_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/podcast_audiobook_traditional.md",
+      "hash": "7ea787631268fe321f1da9ccf04f804b4e117d9f8a8c47999e3583b4f0f7a8c3"
+    },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/reserved": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/reserved.md",
       "hash": "cc59786d7f34cfbc9a6887bab5763dc7b1c6aafe449128a557bd981e9b22ed04"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/ringtone_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/ringtone_spatial.md",
+      "hash": "ce3395fd98c7f6e391a7bd194a529fd6ec84de2646c36d3fcdea944b8115c841"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/ringtone_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/ringtone_traditional.md",
+      "hash": "8fdefdb321c3a9130a8697a37aa8a315261a9d22a623a7a1cd48213f902fe426"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/spokenresponse_spatial": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/spokenresponse_spatial.md",
+      "hash": "93a0f47094cb7276b969345b8a0c6bf16ea1c00d0521f9d1daf62f42c2f2eba0"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/spokenresponse_traditional": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/spokenresponse_traditional.md",
+      "hash": "d4b17a01836423a0b7372bab445214366e12f7cebc41f49eaaaf56bc7f511ffe"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudiocontentsource/unspecified": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/unspecified.md",
@@ -5604,6 +5684,62 @@
       "file_path": "documentation/AVFAudio/avparameterevent/value.md",
       "hash": "5b9ff74d285a484f6515a49e8d48d9cdf5d544e409344100913c21ad8142b190"
     },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer.md",
+      "hash": "04c1e7ec2aa3d3dd20cbefef74a33d3951ac43c23a1dbde17df5b5abea3892af"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/bytecapacity": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/bytecapacity.md",
+      "hash": "6e98dc26ca1a8fe843d1250762ea92873d248cd066e1f09e658dabd4e31b137a"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/bytelength": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/bytelength.md",
+      "hash": "eb776d1055cab8740228aa3b998cdfaeb3413aa415bc89e9ee2ee788cc4a19df"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/data": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/data.md",
+      "hash": "96d473fc0938d83f2bb6550e827dca9a9ff2bf72390d721cafebbc8767141906"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/format": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/format.md",
+      "hash": "e33d010e80096c30925dedf58fcb68db077069c3c3aafb23e6c94a0cad900ee3"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(copying:)": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(copying).md",
+      "hash": "549fe275a2381dc562437a09d8414bbeef809cd3ce495ebe6e0daf114b8261f0"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(format:packetcapacity:initializingwith:)": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(format,packetcapacity,initializingwith).md",
+      "hash": "98d54a4ac35cc2f051ca34a40b826049cff7c5578fbf44c53d42e2fd6917babb"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(format:packetcapacity:maximumpacketsize:initializingwith:)": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(format,packetcapacity,maximumpacketsize,initializingwith).md",
+      "hash": "38e7edf024e5297f27fd6e378119f54de41736b9cef6781fee762fcc77a6b5d8"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(unsaferetaining:)": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(unsaferetaining).md",
+      "hash": "379b34c21e1f9e2d96b43af1a3844ab5fed9116a092bbfe8e706f8e92d0c4109"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/maximumpacketsize": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/maximumpacketsize.md",
+      "hash": "40bc3edf39eac49ac2ac633c0a07cdefbd97cffc80dd5422ad33b9a5eb77899f"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetcapacity": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetcapacity.md",
+      "hash": "ebde5378d833fd32ed73585dd714dee0fa545e910026c126343570039ccaa51c"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetcount": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetcount.md",
+      "hash": "83d7e0f40a02375186a4e3048f6379398d367f49247f13f2262457bbff48b60e"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetdependencies": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetdependencies.md",
+      "hash": "7a1649f87cbf95204095a38b7ddb9aa22728519db654448de609a9e01c9a6aec"
+    },
+    "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetdescriptions": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetdescriptions.md",
+      "hash": "187afb6de829d5d2952df1e4620a92327c5e2d1a5fbe1051a4d29576ee178c5f"
+    },
     "https://developer.apple.com/documentation/avfaudio/avreadonlyaudiopcmbuffer": {
       "file_path": "documentation/AVFAudio/avreadonlyaudiopcmbuffer.md",
       "hash": "78726501a4952e420e4ca393f5254a49be57798b82dc146a621ea009a36cfc2d"
@@ -6302,7 +6438,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/AVFAudio.json": {
       "file_path": "documentation/AVFAudio/AVFAudio.md",
-      "hash": "2828228306ba5b528f25252616882322d975813f491f8df949a0cc0c4c9afc41"
+      "hash": "c7506eba95a2cf730de1298682e96b3502746eb23c0f621e04d991439628cd99"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/adding-synthesized-speech-to-calls.json": {
       "file_path": "documentation/AVFAudio/adding-synthesized-speech-to-calls.md",
@@ -6734,7 +6870,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer.json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer.md",
-      "hash": "a72a393fc3cb86af0cc43825f8682a317ce3e2f6ec03c6470eac71cb1dcbcd1c"
+      "hash": "fa5bb29e22f1641edf8980948eef802a83a9b64ee24c494ab2deec6542265133"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/bytecapacity.json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/bytecapacity.md",
@@ -6748,6 +6884,18 @@
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/data.md",
       "hash": "2b18ac1c77e41f50dad4608eab1fa2a76a67b3d722888456e34b0c3116dfbefc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/dataspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/dataspan.md",
+      "hash": "69086cc457d1b66e1873b1d175c59d748037313273830e3280b57e14779954cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/init(copying:)-65xzn.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(copying)-65xzn.md",
+      "hash": "5a314b8117415ac05faa71093b4416497d8fe9054f226d97eee796b2b686e7bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/init(copying:)-6ztfu.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(copying)-6ztfu.md",
+      "hash": "9a45c42f7e81263e5f19ae339700a583e0362003104fc2393fbca27dbc63848c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/init(format:packetcapacity:).json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/init(format,packetcapacity).md",
       "hash": "f3f2804fab9b2c74dc9d099ecb9bf851d26140500effe8c1acb7e1ee5433433d"
@@ -6759,6 +6907,18 @@
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/maximumpacketsize.json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/maximumpacketsize.md",
       "hash": "a31c9a0fcf7d7a87aa0a2c7da30b0d41ccc5e1ea26372a40059577260428aea9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/mutabledataspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutabledataspan.md",
+      "hash": "820a83a4af127aecedd4a2823f5398fc8f2fe5905d68d017eab79f36f70f7ab8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/mutablepacketdependencyspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutablepacketdependencyspan.md",
+      "hash": "08079cc866f6baecdcdea1d4cb3eb4c4c8b83e6e8b750d44cc292429863a0054"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/mutablepacketdescriptionsspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/mutablepacketdescriptionsspan.md",
+      "hash": "715643a43f353532ba32da9ccc536421625c387a14225aae5671b43b28b073dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/packetcapacity.json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetcapacity.md",
@@ -6776,9 +6936,17 @@
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdependencies-5oae6.md",
       "hash": "d8f00df2e5e71d148d237ea29051814026ee1095ffaeecf4dd0b5997be0a88b3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/packetdependencyspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdependencyspan.md",
+      "hash": "775880bdc7a9b6334fbdcd477754e483ff008a50ecc69e68d6605b004d911599"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/packetdescriptions.json": {
       "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdescriptions.md",
       "hash": "8839da5c2a86b3dcd26b3895298f950fa14cc045433860bbcb98014284dd227d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocompressedbuffer/packetdescriptionsspan.json": {
+      "file_path": "documentation/AVFAudio/avaudiocompressedbuffer/packetdescriptionsspan.md",
+      "hash": "b50764a208efbb4895eb616560be87124bff297adf3bdecaaaea61a957ec50a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudioconnectionpoint.json": {
       "file_path": "documentation/AVFAudio/avaudioconnectionpoint.md",
@@ -6798,7 +6966,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource.json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource.md",
-      "hash": "644759a0c86e87be6c3a6a8c6380f28adc73c09099d8b89fb3abf821cdea5daa"
+      "hash": "81065d93a79edf35e97470987b3855698fe2d96088cde10972231adf0965762a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/alarm_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/alarm_spatial.md",
+      "hash": "ff97186982032b94f552385c97ad57d355016e803aee725086c1db0fe312cf05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/alarm_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/alarm_traditional.md",
+      "hash": "a48d658b2297f7b357b8e8d7d857cdafdf6f4a59b490e07a619c3f778c59b836"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/appleav_spatial_live.json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/appleav_spatial_live.md",
@@ -6868,6 +7044,14 @@
       "file_path": "documentation/AVFAudio/avaudiocontentsource/capture_traditional.md",
       "hash": "d586bc51a4a04cdd9308e86eb122693eaa92b229a9c73fb077d888199d204e15"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/feedbacksound_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/feedbacksound_spatial.md",
+      "hash": "8185275b6af058e3ad383a6f28d0027aa08e455e494617ffa324fd93e2f322d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/feedbacksound_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/feedbacksound_traditional.md",
+      "hash": "c69ec1b964ca8ab5487ace7a6a62e7ace8a179f0f85f4fc9eceb5c3e84ffd30d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/init(rawvalue:).json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/init(rawvalue).md",
       "hash": "364b413319d02b83155a3bcc982202b1c6646182e1d0fbffe0cdd9c7dfd77c53"
@@ -6880,13 +7064,45 @@
       "file_path": "documentation/AVFAudio/avaudiocontentsource/music_traditional.md",
       "hash": "c4e31afed3a459c5e8efaf1606b4d4b94cc22d8afb78f2bbbf75a2f3a17da2ec"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/othersystemsound_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/othersystemsound_spatial.md",
+      "hash": "71800e269e3be9d00a319ef00204ffb5d81542c32d24d420c08e485dfea515a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/othersystemsound_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/othersystemsound_traditional.md",
+      "hash": "c46baa8248330c45d9d680feafaf8537315b5092837c21dc80bba4af6f71e24b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/passthrough.json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/passthrough.md",
       "hash": "ae4084e144e7e9d7a62715cfd34ce4ec06e504d1eb8cbb4f5dcb88fbb78f6574"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/podcast_audiobook_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/podcast_audiobook_spatial.md",
+      "hash": "d7bee8de2813febc37052eced4bdf01a36c8946fe897d6c5819173927e56981b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/podcast_audiobook_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/podcast_audiobook_traditional.md",
+      "hash": "7ea787631268fe321f1da9ccf04f804b4e117d9f8a8c47999e3583b4f0f7a8c3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/reserved.json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/reserved.md",
       "hash": "cc59786d7f34cfbc9a6887bab5763dc7b1c6aafe449128a557bd981e9b22ed04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/ringtone_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/ringtone_spatial.md",
+      "hash": "ce3395fd98c7f6e391a7bd194a529fd6ec84de2646c36d3fcdea944b8115c841"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/ringtone_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/ringtone_traditional.md",
+      "hash": "8fdefdb321c3a9130a8697a37aa8a315261a9d22a623a7a1cd48213f902fe426"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/spokenresponse_spatial.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/spokenresponse_spatial.md",
+      "hash": "93a0f47094cb7276b969345b8a0c6bf16ea1c00d0521f9d1daf62f42c2f2eba0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/spokenresponse_traditional.json": {
+      "file_path": "documentation/AVFAudio/avaudiocontentsource/spokenresponse_traditional.md",
+      "hash": "d4b17a01836423a0b7372bab445214366e12f7cebc41f49eaaaf56bc7f511ffe"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudiocontentsource/unspecified.json": {
       "file_path": "documentation/AVFAudio/avaudiocontentsource/unspecified.md",
@@ -11908,6 +12124,62 @@
       "file_path": "documentation/AVFAudio/avparameterevent/value.md",
       "hash": "5b9ff74d285a484f6515a49e8d48d9cdf5d544e409344100913c21ad8142b190"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer.md",
+      "hash": "04c1e7ec2aa3d3dd20cbefef74a33d3951ac43c23a1dbde17df5b5abea3892af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/bytecapacity.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/bytecapacity.md",
+      "hash": "6e98dc26ca1a8fe843d1250762ea92873d248cd066e1f09e658dabd4e31b137a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/bytelength.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/bytelength.md",
+      "hash": "eb776d1055cab8740228aa3b998cdfaeb3413aa415bc89e9ee2ee788cc4a19df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/data.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/data.md",
+      "hash": "96d473fc0938d83f2bb6550e827dca9a9ff2bf72390d721cafebbc8767141906"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/format.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/format.md",
+      "hash": "e33d010e80096c30925dedf58fcb68db077069c3c3aafb23e6c94a0cad900ee3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(copying:).json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(copying).md",
+      "hash": "549fe275a2381dc562437a09d8414bbeef809cd3ce495ebe6e0daf114b8261f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(format:packetcapacity:initializingwith:).json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(format,packetcapacity,initializingwith).md",
+      "hash": "98d54a4ac35cc2f051ca34a40b826049cff7c5578fbf44c53d42e2fd6917babb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(format:packetcapacity:maximumpacketsize:initializingwith:).json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(format,packetcapacity,maximumpacketsize,initializingwith).md",
+      "hash": "38e7edf024e5297f27fd6e378119f54de41736b9cef6781fee762fcc77a6b5d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/init(unsaferetaining:).json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/init(unsaferetaining).md",
+      "hash": "379b34c21e1f9e2d96b43af1a3844ab5fed9116a092bbfe8e706f8e92d0c4109"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/maximumpacketsize.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/maximumpacketsize.md",
+      "hash": "40bc3edf39eac49ac2ac633c0a07cdefbd97cffc80dd5422ad33b9a5eb77899f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetcapacity.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetcapacity.md",
+      "hash": "ebde5378d833fd32ed73585dd714dee0fa545e910026c126343570039ccaa51c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetcount.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetcount.md",
+      "hash": "83d7e0f40a02375186a4e3048f6379398d367f49247f13f2262457bbff48b60e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetdependencies.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetdependencies.md",
+      "hash": "7a1649f87cbf95204095a38b7ddb9aa22728519db654448de609a9e01c9a6aec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiocompressedbuffer/packetdescriptions.json": {
+      "file_path": "documentation/AVFAudio/avreadonlyaudiocompressedbuffer/packetdescriptions.md",
+      "hash": "187afb6de829d5d2952df1e4620a92327c5e2d1a5fbe1051a4d29576ee178c5f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avreadonlyaudiopcmbuffer.json": {
       "file_path": "documentation/AVFAudio/avreadonlyaudiopcmbuffer.md",
       "hash": "78726501a4952e420e4ca393f5254a49be57798b82dc146a621ea009a36cfc2d"
@@ -12609,6 +12881,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 3151
+    "total_pages": 3219
   }
 }

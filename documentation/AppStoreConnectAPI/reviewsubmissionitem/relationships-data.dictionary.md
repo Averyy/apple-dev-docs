@@ -38,6 +38,8 @@ object ReviewSubmissionItem.Relationships
 - [object ReviewSubmissionItem.Relationships.AppAssetLibraryImage](./relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.AppAssetLibraryVideo](./relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion](./relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.RetentionMessageVersion](./relationships-data.dictionary/retentionmessageversion-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object ReviewSubmissionItem.Relationships.SubscriptionGroupVersion](./relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.SubscriptionVersion](./relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
@@ -57,6 +59,7 @@ object ReviewSubmissionItem.Relationships
 - `appAssetLibraryImage` (ReviewSubmissionItem.Relationships.AppAssetLibraryImage): The data and links that describe the relationship between the Review Submission Items and the App Asset Library Images resources.
 - `appAssetLibraryVideo` (ReviewSubmissionItem.Relationships.AppAssetLibraryVideo): The data and links that describe the relationship between the Review Submission Items and the App Asset Library Videos resources.
 - `inAppPurchaseVersion` (ReviewSubmissionItem.Relationships.InAppPurchaseVersion)
+- `retentionMessageVersion` (ReviewSubmissionItem.Relationships.RetentionMessageVersion)
 - `subscriptionGroupVersion` (ReviewSubmissionItem.Relationships.SubscriptionGroupVersion)
 - `subscriptionVersion` (ReviewSubmissionItem.Relationships.SubscriptionVersion)
 

@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-An error that is thrown when an invalid request is provided.
+An error that indicates an invalid request.
 
 **Availability**:
 - iOS 26.0+

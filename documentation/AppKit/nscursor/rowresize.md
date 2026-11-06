@@ -22,6 +22,16 @@ class var rowResize: NSCursor { get }
 @property (class, strong, readonly) NSCursor * rowResizeCursor;
 ```
 
+## Return Value
+
+The row-resize cursor.
+
+## Discussion
+
+The following image shows the row-resize cursor:
+
+![row-resize cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-up-down@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

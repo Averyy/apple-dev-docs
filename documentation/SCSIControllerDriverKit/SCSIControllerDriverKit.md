@@ -61,6 +61,8 @@ The following example shows a minimal entry for the `IOKitPersonalities` key in 
 ### Entitlements
 - [com.apple.developer.driverkit](../BundleResources/entitlements/com.apple.developer.driverkit.md)
   A Boolean value that indicates whether your extension has permission to run as a user-space driver.
+- [com.apple.developer.driverkit.transport.pci](../BundleResources/entitlements/com.apple.developer.driverkit.transport.pci.md)
+  An array of PCI device descriptors that your custom driver supports.
 - [com.apple.developer.driverkit.family.scsicontroller](../BundleResources/entitlements/com.apple.developer.driverkit.family.scsicontroller.md)
   A Boolean value that indicates whether to match the driver against devices with SCSI controllers.
 ### Samples

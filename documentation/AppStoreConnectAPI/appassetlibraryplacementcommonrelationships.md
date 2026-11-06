@@ -26,6 +26,8 @@ object AppAssetLibraryPlacementCommonRelationships
   The custom product page localization on which the app asset library placement appears.
 - [object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization](./appassetlibraryplacementcommonrelationships/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
   The App Store version experiment treatment localization on which the app asset library placement appears.
+### Dictionaries
+- [object AppAssetLibraryPlacementCommonRelationships.RetentionMessageVersion](./appassetlibraryplacementcommonrelationships/retentionmessageversion-data.dictionary.md)
 
 ## Properties
 
@@ -33,6 +35,7 @@ object AppAssetLibraryPlacementCommonRelationships
 - `appStoreVersionLocalization` (AppAssetLibraryPlacementCommonRelationships.AppStoreVersionLocalization): The App Store version localization where the placement positions the asset.
 - `appCustomProductPageLocalization` (AppAssetLibraryPlacementCommonRelationships.AppCustomProductPageLocalization): The custom product page localization where the placement positions the asset.
 - `appStoreVersionExperimentTreatmentLocalization` (AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization): The product page optimization treatment localization where the placement positions the asset.
+- `retentionMessageVersion` (AppAssetLibraryPlacementCommonRelationships.RetentionMessageVersion)
 
 ## Relationships
 

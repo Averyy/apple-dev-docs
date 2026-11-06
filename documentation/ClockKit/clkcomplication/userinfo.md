@@ -7,7 +7,7 @@
 A dictionary of additional data associated with the complication.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

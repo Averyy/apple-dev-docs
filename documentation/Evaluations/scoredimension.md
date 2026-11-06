@@ -60,6 +60,8 @@ let _ = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
 - [init(String, description: String?, scale: ScoringScale)](./scoredimension/init%28_,description,scale%29.md)
   Creates a scoring dimension.
 ### Inspecting a dimension
+- [let name: String](./scoredimension/name.md)
+  The name of the dimension, used as the DataFrame column name.
 - [var metric: Metric](./scoredimension/metric.md)
   A metric identifier that uses this dimension’s name.
 - [let scale: ScoringScale](./scoredimension/scale.md)
@@ -71,9 +73,6 @@ let _ = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
   A scoring scale that defines the set of options a judge can assign.
 - [protocol ScoreLevel](./scorelevel.md)
   A type that defines individual levels within a scoring scale.
-### Instance Properties
-- [let name: String](./scoredimension/name.md)
-  The name of the dimension, used as the DataFrame column name.
 
 ## Relationships
 

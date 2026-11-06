@@ -5,7 +5,7 @@
 **Role**: Instance Method  
 **Required**: Yes
 
-Handles events that address incoming data destined for the accessory.
+Handles events that address incoming data sent to the accessory.
 
 **Availability**:
 - iOS 26.4+ - Deprecated in 26.5 (renamed: messageReceived(_:completion:))
@@ -28,6 +28,7 @@ Implement this method to relay data to your accessory over Bluetooth or another 
 
 ### AccessoryTransportSession.EventHandler Implementations
 - [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](./dataeventhandler%28event%29-7c5yr.md)
+  Handles events that address incoming data sent to the accessory.
 
 ## See Also
 

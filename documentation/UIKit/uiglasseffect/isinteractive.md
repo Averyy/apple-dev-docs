@@ -22,6 +22,12 @@ var isInteractive: Bool { get set }
 @property (nonatomic, getter=isInteractive) BOOL interactive;
 ```
 
+## See Also
+
+### Configuring a glass effect
+- [var tintColor: UIColor?](./tintcolor.md)
+  A tint color applied to the glass.
+
 
 ---
 

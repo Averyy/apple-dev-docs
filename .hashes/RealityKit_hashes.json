@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/RealityKit": {
       "file_path": "documentation/RealityKit/RealityKit.md",
-      "hash": "d147b65a597d3c8efe43de395ad95915060ae5895033b7dd294923ea2009f68c"
+      "hash": "3c5ea9eb704767da1b5c8d2e7c4a62a9b972697e758d46958168a43f8fa76654"
     },
     "https://developer.apple.com/documentation/realitykit/!(_:)": {
       "file_path": "documentation/RealityKit/not(_).md",
@@ -1954,7 +1954,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/applying-realistic-material-and-lighting-effects-to-entities": {
       "file_path": "documentation/RealityKit/applying-realistic-material-and-lighting-effects-to-entities.md",
-      "hash": "d84906303f800de46cb934b1381c4fe993e834917a4532d5cde46354de28f82c"
+      "hash": "8e5a48d521f4ec0d4f812dc0fe0462f0dc6b362726f58e2de2e2f1704a740e36"
     },
     "https://developer.apple.com/documentation/realitykit/arkitanchorcomponent": {
       "file_path": "documentation/RealityKit/arkitanchorcomponent.md",
@@ -4190,11 +4190,11 @@
     },
     "https://developer.apple.com/documentation/realitykit/bodytrackedentity": {
       "file_path": "documentation/RealityKit/bodytrackedentity.md",
-      "hash": "d7b2210fe1d856d924de36af58b8a25eeb34b4f22e759d3fdfd5c31a4a1c7d9f"
+      "hash": "f85ca0272cf397787ea9ee2820063c89b5c732e9585c2825b6eced09e3d72bc7"
     },
     "https://developer.apple.com/documentation/realitykit/bodytrackingcomponent": {
       "file_path": "documentation/RealityKit/bodytrackingcomponent.md",
-      "hash": "d7fbee1bb4ce70efb2c111a9858e0804ea1cf7ddd9e8eab7f877420eb58c69a8"
+      "hash": "588ffb79654c8280d5c776c0d405a55279ea51fe4cd79e9e8e713502bed47ed9"
     },
     "https://developer.apple.com/documentation/realitykit/bodytrackingcomponent/init()": {
       "file_path": "documentation/RealityKit/bodytrackingcomponent/init().md",
@@ -4382,7 +4382,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/bringing-your-scenekit-projects-to-realitykit": {
       "file_path": "documentation/RealityKit/bringing-your-scenekit-projects-to-realitykit.md",
-      "hash": "9aec2d1345029939d5078a1dfd92a6f947beb6916c5457980b460693519e2b59"
+      "hash": "da074d4108a0b06aae7e341f31683478cea76947ea153fdc39193ee166b7a12e"
     },
     "https://developer.apple.com/documentation/realitykit/building-an-immersive-experience-with-realitykit": {
       "file_path": "documentation/RealityKit/building-an-immersive-experience-with-realitykit.md",
@@ -4438,7 +4438,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/capturing-photographs-for-realitykit-object-capture": {
       "file_path": "documentation/RealityKit/capturing-photographs-for-realitykit-object-capture.md",
-      "hash": "be848d73ab5df5fcfcfb3b817db5cefbbe7c5e677c825bb0c828b81d0eae29f6"
+      "hash": "9e0ad2121cfb6e9acf9ebc364417e6f53e0f128bef8b224bb26eeb4935189133"
     },
     "https://developer.apple.com/documentation/realitykit/channelaudiocomponent": {
       "file_path": "documentation/RealityKit/channelaudiocomponent.md",
@@ -6254,7 +6254,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/construct-an-immersive-environment-for-visionos": {
       "file_path": "documentation/RealityKit/construct-an-immersive-environment-for-visionos.md",
-      "hash": "3697486d21cf4d29d98658431377529b4c8f67462f37889cf9fd18d8085aa8e5"
+      "hash": "0e432d6a82e4c3109109548aab80e83c28e046d2db9d8db78d2c419d8c369b35"
     },
     "https://developer.apple.com/documentation/realitykit/contact": {
       "file_path": "documentation/RealityKit/contact.md",
@@ -6286,7 +6286,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/creating-3d-objects-from-photographs": {
       "file_path": "documentation/RealityKit/creating-3d-objects-from-photographs.md",
-      "hash": "18c1e6f61e9e50cc586d924a2c6ac4a427c6cff804eaa00b71fe8fd5f5789f4f"
+      "hash": "7ebe55c2b66d8d70c2e23d0a1ffc5bbbf324789082fdea286c0448d9f9eb1e08"
     },
     "https://developer.apple.com/documentation/realitykit/creating-a-dynamic-height-map-with-low-level-texture": {
       "file_path": "documentation/RealityKit/creating-a-dynamic-height-map-with-low-level-texture.md",
@@ -6306,7 +6306,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/creating-a-spaceship-game": {
       "file_path": "documentation/RealityKit/creating-a-spaceship-game.md",
-      "hash": "3e45004e1548ef4099867b94bbbf4eb9ac0269a81d2eb29678b1fb49dc501c4e"
+      "hash": "7988af93164574eaf1c0213601326079ff52d69e2fbebecc4ea985bbb73c5072"
     },
     "https://developer.apple.com/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit": {
       "file_path": "documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit.md",
@@ -6314,7 +6314,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/creating-an-app-for-face-painting-in-ar": {
       "file_path": "documentation/RealityKit/creating-an-app-for-face-painting-in-ar.md",
-      "hash": "4119745f6572ef1758570cd1ffa16be4cd15ffa47aeee16c880a3d2830a7745b"
+      "hash": "7d2f9e89d2c877eb9e676c5a14dd843e441a18586a5ce64744bc3084a4fb03d7"
     },
     "https://developer.apple.com/documentation/realitykit/creating_a_game_with_scene_understanding": {
       "file_path": "documentation/RealityKit/creating_a_game_with_scene_understanding.md",
@@ -6906,7 +6906,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/designing-scene-hierarchies-for-efficient-physics-simulation": {
       "file_path": "documentation/RealityKit/designing-scene-hierarchies-for-efficient-physics-simulation.md",
-      "hash": "74dcbd85bd23590ae7eef578d7e7f54adcb66fa6e46a8c0261ee458696cba6b8"
+      "hash": "74ba8cb38495f96c586abc090d2224d32b1d609aa4bf625bc9d123179a25b000"
     },
     "https://developer.apple.com/documentation/realitykit/diffuselightprobegroupcomponent": {
       "file_path": "documentation/RealityKit/diffuselightprobegroupcomponent.md",
@@ -7682,7 +7682,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/entity/init(from:named:)": {
       "file_path": "documentation/RealityKit/entity/init(from,named).md",
-      "hash": "1c7941f5a1b1a2b0f8bd26b0146c413720ee4f20d08f6241eba01f0ee1fe1dcf"
+      "hash": "65b92ca9102b1945be3625267d96f96354e262f805351a3fae63c6caceba3e34"
     },
     "https://developer.apple.com/documentation/realitykit/entity/init(from:named:contenttype:)": {
       "file_path": "documentation/RealityKit/entity/init(from,named,contenttype).md",
@@ -8418,19 +8418,19 @@
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/init(equirectangular:withname:)": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname).md",
-      "hash": "66c8f415a34c508724849e27c73e29dcccb4edae5ab8a3c09c647249c051303f"
+      "hash": "0d98e67e2483de0147432835ca758dfdeec6ac71343c822403127782346443cd"
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/init(equirectangular:withname:)-8ctgr": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname)-8ctgr.md",
-      "hash": "15164411e61291b8e1060b71d159b51ad8ef9e75ed7742b871ad3723df196c2b"
+      "hash": "38b2026bb736f40d2eb4eb8e369fb91fa30bf96c9a0cfb120851e475071bb494"
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/init(equirectangular:withname:)-8o2v7": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname)-8o2v7.md",
-      "hash": "27b0845aabafe663d210b8d090d45900d2d1352c7198db6e772544b2cdeb48ed"
+      "hash": "c871f18e2c8aec88b1db32f8124126582500698024666ec6b3312024c516b2a0"
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/init(named:in:)": {
       "file_path": "documentation/RealityKit/environmentresource/init(named,in).md",
-      "hash": "1af6059657e6ae23b833e53ca82cd1b5bcd32eb2ce70ee0540892a15b1d7f9f2"
+      "hash": "df4aa3aeb170d64a9281e2f9ce96f0d114a23fb0e4f0ee13121856f0472a7d0e"
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/init(named:in:skyboxmode:)": {
       "file_path": "documentation/RealityKit/environmentresource/init(named,in,skyboxmode).md",
@@ -8442,7 +8442,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/load(named:in:)": {
       "file_path": "documentation/RealityKit/environmentresource/load(named,in).md",
-      "hash": "e12bf32844a4ae76e7c9291f2eeb904712a9e9a345fce8b8d7c196ea8079917f"
+      "hash": "2757f8fad2a7c9bbe6cee243a606351acb45007104d62be106c3a582b3f2d3a9"
     },
     "https://developer.apple.com/documentation/realitykit/environmentresource/loadasync(named:in:)": {
       "file_path": "documentation/RealityKit/environmentresource/loadasync(named,in).md",
@@ -9050,7 +9050,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/game-development-sample-code": {
       "file_path": "documentation/RealityKit/game-development-sample-code.md",
-      "hash": "d0c71dc9297d821d21125babee9158506835c25697aab2c42d3a7f91b3e4951b"
+      "hash": "8ac4a9b04fa25cd0f6bf9d60db905364320fcacfb1e794df23afc177f81c6eeb"
     },
     "https://developer.apple.com/documentation/realitykit/gaussian-splat-rendering-guidelines": {
       "file_path": "documentation/RealityKit/gaussian-splat-rendering-guidelines.md",
@@ -9418,7 +9418,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/hasbodytracking": {
       "file_path": "documentation/RealityKit/hasbodytracking.md",
-      "hash": "7b5685f20360941a1323abf1d3496a2591f156c5b39769766c43ef66cfe3f85e"
+      "hash": "a69f3e2736ad30b5b6926f0b4f4479dc624fc3321e6516f1b856cb4b50eed0d8"
     },
     "https://developer.apple.com/documentation/realitykit/hasbodytracking/bodytracking": {
       "file_path": "documentation/RealityKit/hasbodytracking/bodytracking.md",
@@ -10634,7 +10634,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/implementing-systems-for-entities-in-a-scene": {
       "file_path": "documentation/RealityKit/implementing-systems-for-entities-in-a-scene.md",
-      "hash": "397b4a8e4e452d95613a1cbe40e9f03ead5c83796803a7745f46dcf2656ab949"
+      "hash": "2b9415f25e21bd9787072909bfc3cad731fd7ccb6e856226343db2465c857c65"
     },
     "https://developer.apple.com/documentation/realitykit/implementing_special_rendering_effects_with_realitykit_postprocessing": {
       "file_path": "documentation/RealityKit/implementing_special_rendering_effects_with_realitykit_postprocessing.md",
@@ -16190,7 +16190,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/modifying-realitykit-rendering-using-custom-materials": {
       "file_path": "documentation/RealityKit/modifying-realitykit-rendering-using-custom-materials.md",
-      "hash": "47273006e7f3f03e6b379583b074b81093e5d3df8a8a12d38be8cba366c5e643"
+      "hash": "2e3ee95f76e4ab4d16cdf1bf0f7adc8e6f1d3f76066f0fb91745596579cb901b"
     },
     "https://developer.apple.com/documentation/realitykit/multipeerconnectivityservice": {
       "file_path": "documentation/RealityKit/multipeerconnectivityservice.md",
@@ -17850,7 +17850,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/passing-metal-command-objects-around-your-application": {
       "file_path": "documentation/RealityKit/passing-metal-command-objects-around-your-application.md",
-      "hash": "cc7118eee9fee81817c702cfe7e69b7d4b2caae85e63bc11fc2c711e6982ca81"
+      "hash": "f8994c2646c63497d29918ff56710df7de06734f9b3f4926e09d5ad7e4d58370"
     },
     "https://developer.apple.com/documentation/realitykit/passing-structured-data-to-a-metal-compute-function": {
       "file_path": "documentation/RealityKit/passing-structured-data-to-a-metal-compute-function.md",
@@ -21046,7 +21046,7 @@
     },
     "https://developer.apple.com/documentation/realitykit/rendering-a-windowed-game-in-stereo": {
       "file_path": "documentation/RealityKit/rendering-a-windowed-game-in-stereo.md",
-      "hash": "4d8d7635f6c6d572047e8f075db8a2e4e8cbb53eeeb316139e39815478bf9ea3"
+      "hash": "b94e2e491358b8ff9a109f28490294ed22bb1a4a6797c149d826d3ba665a73cc"
     },
     "https://developer.apple.com/documentation/realitykit/rendering-high-fidelity-characters": {
       "file_path": "documentation/RealityKit/rendering-high-fidelity-characters.md",
@@ -21494,11 +21494,11 @@
     },
     "https://developer.apple.com/documentation/realitykit/scene-content-anchors": {
       "file_path": "documentation/RealityKit/scene-content-anchors.md",
-      "hash": "53e34775e7f72603c3f76d6515a3c79fefa68b279679cca709f1acf98e099a3c"
+      "hash": "c0461d05dccf513d7b3bfb4c78269cb539f5a49a18d0030aa1722116d640d19a"
     },
     "https://developer.apple.com/documentation/realitykit/scene-content-audio": {
       "file_path": "documentation/RealityKit/scene-content-audio.md",
-      "hash": "a5628345d2dd4571ce63564bb8dfa3993a225d6181b2f394e7cc1726a7b614ff"
+      "hash": "1b67947b61b7cc11a27d9d2ab5527291ba042309284f9adb0ed9107946fedc16"
     },
     "https://developer.apple.com/documentation/realitykit/scene-content-content-synchronization": {
       "file_path": "documentation/RealityKit/scene-content-content-synchronization.md",
@@ -25238,7 +25238,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/RealityKit.json": {
       "file_path": "documentation/RealityKit/RealityKit.md",
-      "hash": "d147b65a597d3c8efe43de395ad95915060ae5895033b7dd294923ea2009f68c"
+      "hash": "3c5ea9eb704767da1b5c8d2e7c4a62a9b972697e758d46958168a43f8fa76654"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/!(_:).json": {
       "file_path": "documentation/RealityKit/not(_).md",
@@ -27190,7 +27190,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/applying-realistic-material-and-lighting-effects-to-entities.json": {
       "file_path": "documentation/RealityKit/applying-realistic-material-and-lighting-effects-to-entities.md",
-      "hash": "d84906303f800de46cb934b1381c4fe993e834917a4532d5cde46354de28f82c"
+      "hash": "8e5a48d521f4ec0d4f812dc0fe0462f0dc6b362726f58e2de2e2f1704a740e36"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/arkitanchorcomponent.json": {
       "file_path": "documentation/RealityKit/arkitanchorcomponent.md",
@@ -29426,11 +29426,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/bodytrackedentity.json": {
       "file_path": "documentation/RealityKit/bodytrackedentity.md",
-      "hash": "d7b2210fe1d856d924de36af58b8a25eeb34b4f22e759d3fdfd5c31a4a1c7d9f"
+      "hash": "f85ca0272cf397787ea9ee2820063c89b5c732e9585c2825b6eced09e3d72bc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/bodytrackingcomponent.json": {
       "file_path": "documentation/RealityKit/bodytrackingcomponent.md",
-      "hash": "d7fbee1bb4ce70efb2c111a9858e0804ea1cf7ddd9e8eab7f877420eb58c69a8"
+      "hash": "588ffb79654c8280d5c776c0d405a55279ea51fe4cd79e9e8e713502bed47ed9"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/bodytrackingcomponent/init().json": {
       "file_path": "documentation/RealityKit/bodytrackingcomponent/init().md",
@@ -29618,7 +29618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/bringing-your-scenekit-projects-to-realitykit.json": {
       "file_path": "documentation/RealityKit/bringing-your-scenekit-projects-to-realitykit.md",
-      "hash": "9aec2d1345029939d5078a1dfd92a6f947beb6916c5457980b460693519e2b59"
+      "hash": "da074d4108a0b06aae7e341f31683478cea76947ea153fdc39193ee166b7a12e"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/building-an-immersive-experience-with-realitykit.json": {
       "file_path": "documentation/RealityKit/building-an-immersive-experience-with-realitykit.md",
@@ -29674,7 +29674,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/capturing-photographs-for-realitykit-object-capture.json": {
       "file_path": "documentation/RealityKit/capturing-photographs-for-realitykit-object-capture.md",
-      "hash": "be848d73ab5df5fcfcfb3b817db5cefbbe7c5e677c825bb0c828b81d0eae29f6"
+      "hash": "9e0ad2121cfb6e9acf9ebc364417e6f53e0f128bef8b224bb26eeb4935189133"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/channelaudiocomponent.json": {
       "file_path": "documentation/RealityKit/channelaudiocomponent.md",
@@ -31490,7 +31490,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/construct-an-immersive-environment-for-visionos.json": {
       "file_path": "documentation/RealityKit/construct-an-immersive-environment-for-visionos.md",
-      "hash": "3697486d21cf4d29d98658431377529b4c8f67462f37889cf9fd18d8085aa8e5"
+      "hash": "0e432d6a82e4c3109109548aab80e83c28e046d2db9d8db78d2c419d8c369b35"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/contact.json": {
       "file_path": "documentation/RealityKit/contact.md",
@@ -31522,7 +31522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating-3d-objects-from-photographs.json": {
       "file_path": "documentation/RealityKit/creating-3d-objects-from-photographs.md",
-      "hash": "18c1e6f61e9e50cc586d924a2c6ac4a427c6cff804eaa00b71fe8fd5f5789f4f"
+      "hash": "7ebe55c2b66d8d70c2e23d0a1ffc5bbbf324789082fdea286c0448d9f9eb1e08"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating-a-dynamic-height-map-with-low-level-texture.json": {
       "file_path": "documentation/RealityKit/creating-a-dynamic-height-map-with-low-level-texture.md",
@@ -31542,7 +31542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating-a-spaceship-game.json": {
       "file_path": "documentation/RealityKit/creating-a-spaceship-game.md",
-      "hash": "3e45004e1548ef4099867b94bbbf4eb9ac0269a81d2eb29678b1fb49dc501c4e"
+      "hash": "7988af93164574eaf1c0213601326079ff52d69e2fbebecc4ea985bbb73c5072"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit.json": {
       "file_path": "documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit.md",
@@ -31550,7 +31550,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating-an-app-for-face-painting-in-ar.json": {
       "file_path": "documentation/RealityKit/creating-an-app-for-face-painting-in-ar.md",
-      "hash": "4119745f6572ef1758570cd1ffa16be4cd15ffa47aeee16c880a3d2830a7745b"
+      "hash": "7d2f9e89d2c877eb9e676c5a14dd843e441a18586a5ce64744bc3084a4fb03d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating_a_game_with_scene_understanding.json": {
       "file_path": "documentation/RealityKit/creating_a_game_with_scene_understanding.md",
@@ -32142,7 +32142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/designing-scene-hierarchies-for-efficient-physics-simulation.json": {
       "file_path": "documentation/RealityKit/designing-scene-hierarchies-for-efficient-physics-simulation.md",
-      "hash": "74dcbd85bd23590ae7eef578d7e7f54adcb66fa6e46a8c0261ee458696cba6b8"
+      "hash": "74ba8cb38495f96c586abc090d2224d32b1d609aa4bf625bc9d123179a25b000"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/diffuselightprobegroupcomponent.json": {
       "file_path": "documentation/RealityKit/diffuselightprobegroupcomponent.md",
@@ -32918,7 +32918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entity/init(from:named:).json": {
       "file_path": "documentation/RealityKit/entity/init(from,named).md",
-      "hash": "1c7941f5a1b1a2b0f8bd26b0146c413720ee4f20d08f6241eba01f0ee1fe1dcf"
+      "hash": "65b92ca9102b1945be3625267d96f96354e262f805351a3fae63c6caceba3e34"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entity/init(from:named:contenttype:).json": {
       "file_path": "documentation/RealityKit/entity/init(from,named,contenttype).md",
@@ -33654,19 +33654,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/init(equirectangular:withname:)-8ctgr.json": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname)-8ctgr.md",
-      "hash": "15164411e61291b8e1060b71d159b51ad8ef9e75ed7742b871ad3723df196c2b"
+      "hash": "38b2026bb736f40d2eb4eb8e369fb91fa30bf96c9a0cfb120851e475071bb494"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/init(equirectangular:withname:)-8o2v7.json": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname)-8o2v7.md",
-      "hash": "27b0845aabafe663d210b8d090d45900d2d1352c7198db6e772544b2cdeb48ed"
+      "hash": "c871f18e2c8aec88b1db32f8124126582500698024666ec6b3312024c516b2a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/init(equirectangular:withname:).json": {
       "file_path": "documentation/RealityKit/environmentresource/init(equirectangular,withname).md",
-      "hash": "66c8f415a34c508724849e27c73e29dcccb4edae5ab8a3c09c647249c051303f"
+      "hash": "0d98e67e2483de0147432835ca758dfdeec6ac71343c822403127782346443cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/init(named:in:).json": {
       "file_path": "documentation/RealityKit/environmentresource/init(named,in).md",
-      "hash": "1af6059657e6ae23b833e53ca82cd1b5bcd32eb2ce70ee0540892a15b1d7f9f2"
+      "hash": "df4aa3aeb170d64a9281e2f9ce96f0d114a23fb0e4f0ee13121856f0472a7d0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/init(named:in:skyboxmode:).json": {
       "file_path": "documentation/RealityKit/environmentresource/init(named,in,skyboxmode).md",
@@ -33678,7 +33678,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/load(named:in:).json": {
       "file_path": "documentation/RealityKit/environmentresource/load(named,in).md",
-      "hash": "e12bf32844a4ae76e7c9291f2eeb904712a9e9a345fce8b8d7c196ea8079917f"
+      "hash": "2757f8fad2a7c9bbe6cee243a606351acb45007104d62be106c3a582b3f2d3a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/environmentresource/loadasync(named:in:).json": {
       "file_path": "documentation/RealityKit/environmentresource/loadasync(named,in).md",
@@ -34286,7 +34286,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/game-development-sample-code.json": {
       "file_path": "documentation/RealityKit/game-development-sample-code.md",
-      "hash": "d0c71dc9297d821d21125babee9158506835c25697aab2c42d3a7f91b3e4951b"
+      "hash": "8ac4a9b04fa25cd0f6bf9d60db905364320fcacfb1e794df23afc177f81c6eeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/gaussian-splat-rendering-guidelines.json": {
       "file_path": "documentation/RealityKit/gaussian-splat-rendering-guidelines.md",
@@ -34654,7 +34654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/hasbodytracking.json": {
       "file_path": "documentation/RealityKit/hasbodytracking.md",
-      "hash": "7b5685f20360941a1323abf1d3496a2591f156c5b39769766c43ef66cfe3f85e"
+      "hash": "a69f3e2736ad30b5b6926f0b4f4479dc624fc3321e6516f1b856cb4b50eed0d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/hasbodytracking/bodytracking.json": {
       "file_path": "documentation/RealityKit/hasbodytracking/bodytracking.md",
@@ -35874,7 +35874,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/implementing-systems-for-entities-in-a-scene.json": {
       "file_path": "documentation/RealityKit/implementing-systems-for-entities-in-a-scene.md",
-      "hash": "397b4a8e4e452d95613a1cbe40e9f03ead5c83796803a7745f46dcf2656ab949"
+      "hash": "2b9415f25e21bd9787072909bfc3cad731fd7ccb6e856226343db2465c857c65"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/implementing_special_rendering_effects_with_realitykit_postprocessing.json": {
       "file_path": "documentation/RealityKit/implementing_special_rendering_effects_with_realitykit_postprocessing.md",
@@ -41446,7 +41446,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/modifying-realitykit-rendering-using-custom-materials.json": {
       "file_path": "documentation/RealityKit/modifying-realitykit-rendering-using-custom-materials.md",
-      "hash": "47273006e7f3f03e6b379583b074b81093e5d3df8a8a12d38be8cba366c5e643"
+      "hash": "2e3ee95f76e4ab4d16cdf1bf0f7adc8e6f1d3f76066f0fb91745596579cb901b"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/multipeerconnectivityservice.json": {
       "file_path": "documentation/RealityKit/multipeerconnectivityservice.md",
@@ -43106,7 +43106,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/passing-metal-command-objects-around-your-application.json": {
       "file_path": "documentation/RealityKit/passing-metal-command-objects-around-your-application.md",
-      "hash": "cc7118eee9fee81817c702cfe7e69b7d4b2caae85e63bc11fc2c711e6982ca81"
+      "hash": "f8994c2646c63497d29918ff56710df7de06734f9b3f4926e09d5ad7e4d58370"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/passing-structured-data-to-a-metal-compute-function.json": {
       "file_path": "documentation/RealityKit/passing-structured-data-to-a-metal-compute-function.md",
@@ -46302,7 +46302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/rendering-a-windowed-game-in-stereo.json": {
       "file_path": "documentation/RealityKit/rendering-a-windowed-game-in-stereo.md",
-      "hash": "4d8d7635f6c6d572047e8f075db8a2e4e8cbb53eeeb316139e39815478bf9ea3"
+      "hash": "b94e2e491358b8ff9a109f28490294ed22bb1a4a6797c149d826d3ba665a73cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/rendering-high-fidelity-characters.json": {
       "file_path": "documentation/RealityKit/rendering-high-fidelity-characters.md",
@@ -46746,11 +46746,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/scene-content-anchors.json": {
       "file_path": "documentation/RealityKit/scene-content-anchors.md",
-      "hash": "53e34775e7f72603c3f76d6515a3c79fefa68b279679cca709f1acf98e099a3c"
+      "hash": "c0461d05dccf513d7b3bfb4c78269cb539f5a49a18d0030aa1722116d640d19a"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/scene-content-audio.json": {
       "file_path": "documentation/RealityKit/scene-content-audio.md",
-      "hash": "a5628345d2dd4571ce63564bb8dfa3993a225d6181b2f394e7cc1726a7b614ff"
+      "hash": "1b67947b61b7cc11a27d9d2ab5527291ba042309284f9adb0ed9107946fedc16"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/scene-content-content-synchronization.json": {
       "file_path": "documentation/RealityKit/scene-content-content-synchronization.md",

@@ -36,12 +36,6 @@ When ARKit detects a reference object, the [`transform`](../aranchor/transform.m
 
 - `transform`: A transform matrix in the local coordinate space of the reference object.
 
-## See Also
-
-### Creating Derivative Reference Objects
-- [func merging(ARReferenceObject) throws -> ARReferenceObject](./merging%28_%29.md)
-  Returns a new reference object that combines spatial information from both this reference object and another.
-
 
 ---
 

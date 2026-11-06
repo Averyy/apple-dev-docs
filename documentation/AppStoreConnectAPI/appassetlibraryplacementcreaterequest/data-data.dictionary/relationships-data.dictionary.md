@@ -30,6 +30,8 @@ object AppAssetLibraryPlacementCreateRequest.Data.Relationships
   The custom product page localization to associate with the new app asset library placement.
 - [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](./relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
   The App Store version experiment treatment localization to associate with the new app asset library placement.
+### Dictionaries
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.RetentionMessageVersion](./relationships-data.dictionary/retentionmessageversion-data.dictionary.md)
 
 ## Properties
 
@@ -39,6 +41,7 @@ object AppAssetLibraryPlacementCreateRequest.Data.Relationships
 - `appStoreVersionLocalization` (AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionLocalization): The App Store version localization where the placement positions the asset.
 - `appCustomProductPageLocalization` (AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppCustomProductPageLocalization): The custom product page localization where the placement positions the asset.
 - `appStoreVersionExperimentTreatmentLocalization` (AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization): The product page optimization treatment localization where the placement positions the asset.
+- `retentionMessageVersion` (AppAssetLibraryPlacementCreateRequest.Data.Relationships.RetentionMessageVersion)
 
 ## See Also
 

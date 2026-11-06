@@ -11,6 +11,7 @@ The model must call one or multiple tools.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -26,7 +27,7 @@ static let required: GenerationOptions.ToolCallingMode
 
 ## Discussion
 
-Please note that [`LanguageModelSession`](../../languagemodelsession.md) will loop until a `Tool` throws an error or this value is changed dynamically via `LanguageModelSession.Manifest`.
+[`LanguageModelSession`](../../languagemodelsession.md) keeps calling tools until a tool throws an error from its [`call(arguments:)`](../../tool/call%28arguments%29.md) method or you change the mode dynamically using a [`LanguageModelSession.DynamicProfile`](../../languagemodelsession/dynamicprofile.md).
 
 ## See Also
 

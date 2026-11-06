@@ -7,7 +7,7 @@
 Creates a localizable simple text provider using strings file keys for both the regular text and the shorter fallback text.
 
 **Availability**:
-- watchOS 3.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.3
 
 ## Declaration
 

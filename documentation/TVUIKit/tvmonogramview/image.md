@@ -7,7 +7,7 @@
 The custom image for the monogram.
 
 **Availability**:
-- tvOS 12.0+ - Deprecated in 27.2 (renamed: __TVMonogramContentConfiguration)
+- tvOS 12.0+ - Deprecated in 27.3 (renamed: __TVMonogramContentConfiguration)
 
 ## Declaration
 

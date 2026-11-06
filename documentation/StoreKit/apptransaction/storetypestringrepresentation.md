@@ -24,6 +24,12 @@ The string representation of the store where the original purchase of the app wa
 var storeTypeStringRepresentation: String { get }
 ```
 
+## See Also
+
+### Deprecated
+- [var originalPlatformStringRepresentation: String](./originalplatformstringrepresentation.md)
+  The string representation of the platform on which the customer originally purchased the app.
+
 
 ---
 

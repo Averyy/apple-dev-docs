@@ -62,7 +62,7 @@ Specifications behave the same way. You no longer decide which specification a f
 
 ## Understand asset library deduplication
 
-The asset library makes manual deduplication unnecessary: upload each file once, then create a placement per surface. You no longer need to hash each file, remember which localizations already have it, and can skip redundant uploads.
+The asset library makes manual deduplication unnecessary: upload each file once, then create a placement per surface. You no longer need to hash each file or remember which localizations already have it, and you can skip redundant uploads.
 
 The practical consequence of the new approach is that your local bookkeeping changes shape. Instead of tracking “which screenshot record belongs to which set,” track “which library asset backs which placements.” Query it directly rather than storing it: `GET /v1/appAssetLibraryImages/{id}/placements` ([`List related placements`](./get-v1-appassetlibraryimages-_id_-placements.md)) returns every placement that uses an asset.
 
@@ -99,7 +99,7 @@ You can only create placements while the parent surface is editable, so migrate 
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
   Create placements that position library assets on App Store surfaces, then set their display order within a localization.
 - [Discovering asset specifications](./discovering-asset-specifications.md)
-  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
+  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload assets.
 
 
 ---

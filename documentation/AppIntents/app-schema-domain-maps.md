@@ -26,7 +26,7 @@ For more information about making your app’s actions available to Apple Intell
 
 ## Map navigation use-case group
 
-A *use-case group* is a set of related schemas that share a single purpose. The [`startNavigation`](./appschema/mapsintent/startnavigation.md) schema and an [`IntentValueQuery`](./intentvaluequery.md) that imports [`place`](./appschema/mapsentity/place.md) values form a use-case group for navigation. Xcode reports a build warning if your app supports one without the other.
+A *use-case group* is a set of related schemas that share a single purpose. The use-case group for navigation comprises the [`startNavigation`](./appschema/mapsintent/startnavigation.md) schema and an [`IntentValueQuery`](./intentvaluequery.md). Your app’s implementation of the query finds [`place`](./appschema/mapsentity/place.md) values for navigation. Xcode reports a build warning if your app supports one without the other.
 
 > ❗ **Important**: To integrate your app with Apple Intelligence and bring it to Siri AI, adopt both parts of the navigation use-case group.
 
@@ -105,6 +105,8 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
 - [System and in-app search](./app-schema-domain-system-and-in-app-search.md)
   Make your app’s actions available to Apple Intelligence and Siri by adopting schemas for in-app search and content access.
+- [Video](./app-schema-domain-video.md)
+  Make your video app’s actions available to Apple Intelligence and Siri by adopting schemas for common video playback and watchlist actions.
 
 
 ---

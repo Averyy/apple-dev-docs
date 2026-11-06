@@ -23,6 +23,12 @@ var tintColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * tintColor;
 ```
 
+## See Also
+
+### Configuring a glass effect
+- [var isInteractive: Bool](./isinteractive.md)
+  Enables interactive behavior for the glass effect.
+
 
 ---
 

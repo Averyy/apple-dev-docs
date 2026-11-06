@@ -32,12 +32,6 @@ To use the object for detection in a world-tracking AR session, add it to the [`
 
 - `url`: The local file URL containing the reference object to load.
 
-## See Also
-
-### Loading Reference Objects
-- [class func referenceObjects(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceObject>?](./referenceobjects%28ingroupnamed,bundle%29.md)
-  Loads all reference objects in the specified AR Resource Group in your Xcode project’s asset catalog.
-
 
 ---
 

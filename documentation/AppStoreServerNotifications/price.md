@@ -29,6 +29,8 @@ The [`price`](./price.md) value reflects all of the following:
 - The discount from an offer in the [`offerIdentifier`](./offeridentifier.md) field, if the transaction includes an offer.
 - The [`quantity`](./quantity.md) of a consumable In-App Purchase. The price value shows the total amount of the transaction for the quantity the customer purchased.
 
+For a subscription that a customer buys as a multiseat purchase, the `price` value is the average price per seat. To work with the price of each seat, use the price tiers in the transaction’s [`TransactionMultiSeatInfo`](./transactionmultiseatinfo.md) instead.
+
 The following table shows some examples of the [`price`](../AppStoreServerAPI/price.md) and [`currency`](../AppStoreServerAPI/currency.md) parameters based on sample prices you might configure in App Store Connect:
 
 | Configured price in App Store Connect | `price` parameter | `currency` parameter |

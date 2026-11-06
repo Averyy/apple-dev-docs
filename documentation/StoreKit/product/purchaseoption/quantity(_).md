@@ -27,7 +27,7 @@ An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purc
 
 ## Discussion
 
-The quantity applies to consumable Apple In-App Purchases and non-renewing subscriptions.
+The quantity applies to consumable Apple In-App Purchases and non-renewing subscriptions. To buy a multiseat subscription, use [`seats(_:)`](./seats%28_%29.md) instead.
 
 ## Parameters
 

@@ -46,7 +46,7 @@ protocol DeprecatedAppIntent : AppIntent
 - [protocol SetValueIntent](./setvalueintent.md)
   An intent that contains a value which can be set.
 - [protocol DeleteIntent](./deleteintent.md)
-  Delete the associated entity(s).
+  An app intent that deletes one or more entities.
 
 
 ---

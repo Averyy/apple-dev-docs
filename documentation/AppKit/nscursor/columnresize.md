@@ -22,6 +22,16 @@ class var columnResize: NSCursor { get }
 @property (class, strong, readonly) NSCursor * columnResizeCursor;
 ```
 
+## Return Value
+
+The column-resize cursor.
+
+## Discussion
+
+The following image shows the column-resize cursor:
+
+![column-resize cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-left-right@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

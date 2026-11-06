@@ -27,9 +27,11 @@ ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure, if client is not a des
 
 This allows descendants clients to configure a deadline floor so that deadlines are never shorter than the specified value. Descendants clients can already kill or suspend their child processes directly, furthermore no system daemons are the children of ES clients, so strict deadline enforcement is unnecessary.
 
+> **Note**: An out-of-range event type in the array, or a bootstrap auth event, fails the whole call, and no event’s minimum is changed.
+
 > **Note**: The default minimum deadline is 0 (no floor).
 
-> **Note**: The minimum is not capped by the system default. Setting a minimum above the system default is permitted and will effectively extend deadlines beyond the system default.
+> **Note**: The minimum is not capped by the system default. Setting a minimum above the system default is permitted and will effectively extend deadlines beyond the system default. A minimum within 10 seconds of UINT32_MAX milliseconds is refused.
 
 > **Note**: If the new minimum would exceed the current maximum for any of the specified events, the maximum is adjusted up to match.
 

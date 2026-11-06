@@ -28,6 +28,8 @@ This value represents the renewal price of the auto-renewable subscription, in u
 
 If the next billing period includes an offer specified by the [`offer`](./offer.md) property, the renewal price value reflects the discount.
 
+For a multiseat subscription, the value is the average price per seat at the next renewal. To get the amount of the renewal, use the price tiers in [`multiSeatInfo`](./multiseatinfo-swift.property.md).
+
 > ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
 ## See Also

@@ -41,6 +41,8 @@ Verify the change in the subscription status using either of these two methods:
   Verify that your app handles a subscription lapse properly using the accelerated time rates within the sandbox environment.
 - [Testing resubscribing from the subscriptions page](./testing-resubscribing-from-the-subscriptions-page.md)
   Verify that your app can reactivate an expired subscription by receiving a transaction callback or inspecting an updated receipt.
+- [Testing multiseat subscriptions](./testing-multiseat-subscriptions.md)
+  Test group purchases, invitations, seat changes, refunds, and purchases from organizations in the sandbox environment before you release your app.
 
 
 ---

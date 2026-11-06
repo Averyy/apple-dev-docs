@@ -7,7 +7,7 @@
 Adds an action to perform in response to the system’s Paste command with items that you validate.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`onPasteCommand(of:validator:perform:)`](./onpastecommand%28of,validator,perform%29-4r73j.md) instead.
 

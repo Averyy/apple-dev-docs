@@ -7,7 +7,7 @@
 A button that displays a menu containing a list of choices when pressed.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`Menu`](./menu.md) instead.
 

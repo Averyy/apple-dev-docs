@@ -32,6 +32,8 @@ let sku: String
   The offer applied to the purchase of this item, if any.
 - [let price: Decimal](./price.md)
   The price of the item.
+- [let seatPriceTiers: [Transaction.AdvancedCommerceInfo.SeatPriceTier]](./seatpricetiers.md)
+  The per-seat price tiers for the item’s seats.
 
 
 ---

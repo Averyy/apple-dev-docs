@@ -26,6 +26,12 @@ class var pointingHand: NSCursor { get }
 
 The pointing-hand cursor. The tip of the pointing finger is the hot spot.
 
+## Discussion
+
+The following image shows the pointing-hand cursor:
+
+![pointing-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-pointing-hand@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

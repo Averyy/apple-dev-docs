@@ -7,9 +7,9 @@
 A read-only setting that displays a label and a value.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -37,6 +37,9 @@ People can view the value but can’t change it. The Home app displays the value
   The setting’s value.
 - [var projectedValue: HomeAccessoryInformationSetting](./homeaccessoryinformationsetting/projectedvalue.md)
   The setting itself, which you access with a dollar sign prefix.
+### Instance Properties
+- [let id: String](./homeaccessoryinformationsetting/id.md)
+  A unique identifier for the setting.
 
 ## Relationships
 

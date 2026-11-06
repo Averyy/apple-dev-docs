@@ -22,9 +22,15 @@ class var zoomIn: NSCursor { get }
 @property (class, strong, readonly) NSCursor * zoomInCursor;
 ```
 
+## Return Value
+
+The zoom-in cursor. This cursor indicates zooming in on (magnifying) a canvas or object.
+
 ## Discussion
 
-> **Note**: This cursor is used to indicate zooming in on (magnifying) a canvas or object.
+The following image shows the zoom-in cursor:
+
+![zoom-in cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-zoom-in@2x.png)
 
 ## See Also
 

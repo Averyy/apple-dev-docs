@@ -27,7 +27,9 @@ The framework provides concrete types for this protocol.
 ### Inherits From
 - [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 ### Conforming Types
+- [ISO18013MobileDocumentRawRequestScene](./iso18013mobiledocumentrawrequestscene.md)
 - [ISO18013MobileDocumentRequestScene](./iso18013mobiledocumentrequestscene.md)
+- [OpenID4VPRawRequestScene](./openid4vprawrequestscene.md)
 
 ## See Also
 

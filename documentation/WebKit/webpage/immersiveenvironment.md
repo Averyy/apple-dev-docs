@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-An object representing a website-provided immersive environment that is ready for presentation.
+An object that represents a website-provided immersive environment ready for presentation.
 
 **Availability**:
 - visionOS 27.0+
@@ -20,7 +20,7 @@ struct ImmersiveEnvironment
 
 ### Instance Properties
 - [var sourceFrame: WebPage.FrameInfo](./immersiveenvironment/sourceframe.md)
-  The frame information of the website that provided this immersive environment.
+  The frame information of the website that provides this immersive environment.
 
 ## Relationships
 
@@ -34,7 +34,7 @@ struct ImmersiveEnvironment
 - [struct WebViewImmersiveEnvironmentView](../webviewimmersiveenvironmentview.md)
   A SwiftUI view that renders a specific website-provided immersive environment.
 - [var allowsImmersiveEnvironments: Bool](./configuration/allowsimmersiveenvironments.md)
-  Indicates whether website immersive environments are allowed.
+  A Boolean value that indicates whether website immersive environments are allowed.
 
 
 ---

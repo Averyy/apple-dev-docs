@@ -7,11 +7,11 @@
 Distributes incoming MIDI from a source to the client input ports which are connected to that source.
 
 **Availability**:
-- iOS 4.2+ - Deprecated in 27.2 (renamed: MIDIReceivedEventList(_:_:))
-- iPadOS 4.2+ - Deprecated in 27.2 (renamed: MIDIReceivedEventList(_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDIReceivedEventList(_:_:))
-- macOS 10.0+ - Deprecated in 27.2 (renamed: MIDIReceivedEventList(_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDIReceivedEventList(_:_:))
+- iOS 4.2+ - Deprecated in 27.3 (renamed: MIDIReceivedEventList(_:_:))
+- iPadOS 4.2+ - Deprecated in 27.3 (renamed: MIDIReceivedEventList(_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDIReceivedEventList(_:_:))
+- macOS 10.0+ - Deprecated in 27.3 (renamed: MIDIReceivedEventList(_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDIReceivedEventList(_:_:))
 
 > **Deprecated**: Use [`MIDIReceivedEventList(_:_:)`](./midireceivedeventlist%28_,_%29.md) instead.
 

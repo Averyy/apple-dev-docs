@@ -7,9 +7,9 @@
 The text that the Home app displays for a setting or an option.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -27,6 +27,8 @@ struct HomeAccessorySettingLabel
   The primary text.
 - [let detailedLabel: LocalizedStringResource?](./homeaccessorysettinglabel/detailedlabel.md)
   Optional text that describes the setting in more detail.
+### Default Implementations
+- [ExpressibleByStringLiteral Implementations](./homeaccessorysettinglabel/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

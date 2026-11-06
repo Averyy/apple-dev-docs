@@ -89,11 +89,15 @@ For design guidance, see [Toolbars](https://developer.apple.com/design/human-int
   A type which defines how spacers should size themselves.
 - [func toolbarBackground(_:for:)](./view/toolbarbackground%28_,for%29.md)
   Specifies the preferred shape style of the background of a bar managed by SwiftUI.
-### Configuring the toolbar title display mode
+### Configuring the toolbar title display
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./view/toolbartitledisplaymode%28_%29.md)
   Configures the toolbar title display mode for this view.
 - [struct ToolbarTitleDisplayMode](./toolbartitledisplaymode.md)
   A type that defines the behavior of title of a toolbar.
+- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](./view/toolbartitlealignment%28_%29.md)
+  Sets the preferred alignment of the navigation bar’s title.
+- [struct ToolbarTitleAlignment](./toolbartitlealignment.md)
+  A preferred alignment for a navigation bar’s title.
 ### Setting the toolbar title menu
 - [func toolbarTitleMenu<C>(content: () -> C) -> some View](./view/toolbartitlemenu%28content%29.md)
   Configure the title menu of a toolbar.

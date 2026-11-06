@@ -7,10 +7,10 @@
 Indicates that the framework has started the provider, and provides a completion handler for subclasses to signal their readiness.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 ## Declaration
 

@@ -9,6 +9,8 @@ A Boolean value that indicates whether the Live Activity update synchronization 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

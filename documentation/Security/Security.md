@@ -126,20 +126,28 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [let kSecPolicyAppleEAPServer: CFString](./ksecpolicyappleeapserver.md)
 - [let kSecPolicyAppleIPSecClient: CFString](./ksecpolicyappleipsecclient.md)
 - [let kSecPolicyAppleIPSecServer: CFString](./ksecpolicyappleipsecserver.md)
+- [let kSecPolicyAppleQWACTLSBinding: CFString](./ksecpolicyappleqwactlsbinding.md)
 - [let kSecPolicyAppleSSLClient: CFString](./ksecpolicyapplesslclient.md)
 - [let kSecPolicyAppleSSLServer: CFString](./ksecpolicyapplesslserver.md)
+- [let kSecQWACTLSBindingErrorDomain: CFString](./ksecqwactlsbindingerrordomain.md)
 - [let kSecTrustQCStatements: CFString](./ksectrustqcstatements.md)
 - [let kSecTrustQWACValidation: CFString](./ksectrustqwacvalidation.md)
 - [CSSMOID_HYBRID_COMPOSITE_MLDSA87_RSA3072_WithSHA512](./cssmoid_hybrid_composite_mldsa87_rsa3072_withsha512.md)
 - [CSSMOID_HYBRID_COMPOSITE_MLDSA87_RSA3072_WithSHA512_draft_13](./cssmoid_hybrid_composite_mldsa87_rsa3072_withsha512_draft_13.md)
 ### Functions
 - [func SecIdentityCreate(CFAllocator?, SecCertificate, SecKey) -> SecIdentity?](./secidentitycreate%28_,_,_%29.md)
+- [func SecPolicyCreateQWACTLSBinding(CFString) -> SecPolicy?](./secpolicycreateqwactlsbinding%28_%29.md)
+- [func SecTrustCreateAndVerifyQWACTLSBinding(CFData, SecTrust, UnsafeMutablePointer<CFError?>?) -> SecTrust?](./sectrustcreateandverifyqwactlsbinding%28_,_,_%29.md)
 - [func sec_protocol_metadata_copy_negotiated_protocol(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](./sec_protocol_metadata_copy_negotiated_protocol%28_%29.md)
 - [func sec_protocol_metadata_copy_server_name(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](./sec_protocol_metadata_copy_server_name%28_%29.md)
 ### Type Aliases
 - [typealias CE_DataType](./ce_datatype-swift.typealias.md)
 - [typealias CE_ExtendedKeyUsage](./ce_extendedkeyusage-swift.typealias.md)
 - [typealias CE_GeneralNameType](./ce_generalnametype-swift.typealias.md)
+### Enumerations
+- [enum SecQWACTLSBindingError](./secqwactlsbindingerror.md)
+- [CE_DataType](./ce_datatype-c.enum.md)
+- [CE_GeneralNameType](./ce_generalnametype-c.enum.md)
 ### Structures
 - [CE_ExtendedKeyUsage](./ce_extendedkeyusage-c.struct.md)
 ### Macros
@@ -157,9 +165,6 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [errSecureDownloadInvalidTicket](./errsecuredownloadinvalidticket.md)
 - [kAuthorizationCallbacksVersion](./kauthorizationcallbacksversion.md)
 - [kAuthorizationPluginInterfaceVersion](./kauthorizationplugininterfaceversion.md)
-### Enumerations
-- [CE_DataType](./ce_datatype-c.enum.md)
-- [CE_GeneralNameType](./ce_generalnametype-c.enum.md)
 
 
 ---

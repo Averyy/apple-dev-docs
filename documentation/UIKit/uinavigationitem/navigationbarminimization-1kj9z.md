@@ -18,6 +18,11 @@
 @preconcurrency var navigationBarMinimization: UIBarMinimization { get set }
 ```
 
+## See Also
+
+### Configuring minimization behavior
+- [struct UIBarMinimization](../uibarminimization-swift.struct.md)
+
 
 ---
 

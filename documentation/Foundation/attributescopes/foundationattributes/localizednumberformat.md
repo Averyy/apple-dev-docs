@@ -16,7 +16,7 @@
 ## Declaration
 
 ```swift
-let localizedNumberFormat: AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute
+var localizedNumberFormat: AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute { get }
 ```
 
 

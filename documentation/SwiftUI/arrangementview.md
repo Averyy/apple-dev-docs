@@ -34,7 +34,15 @@ When iPhone Duo is fully open or closed, people interact with the flat display l
 - You want to automatically adjust how much space two views take when someone folds the display.
 - You want to layer one view over another view on a flat display, and place the views next to each other when the device is folded. This arrangement works well when there’s a clear foreground and background relationship between your views, such as a view for video playback and a view with playback controls.
 
-Arrangement views offer two distinct styles: split and overlay. You specify the split arrangement view style to indicate that the views lay out next to each other, either horizontally or vertically. You specify the overlay style to indicate that the views layer over each other on a flat display and next to each other on a folded display.
+Arrangement views offer two distinct styles: overlay and split. You specify the overlay style to indicate that the views layer over each other on a flat display and next to each other on a folded display. You specify the split arrangement view style to indicate that the views lay out next to each other, either horizontally or vertically.
+
+**Overlay**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, centered along the bottom edge.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-1@2x.png)
+
+**Split**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the left half of the display, and the secondary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-2@2x.png)
 
 For more information on designing your app to use an arrangement view, see [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
 
@@ -43,8 +51,24 @@ For more information on designing your app to use an arrangement view, see [Desi
 An overlay arrangement view places a primary view and a secondary view in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
 - In a stacked overlay arrangement, the arrangement view places the primary view above the secondary view in the z-axis.
-- When someone holds a folded iPhone Duo in landscape orientation, the arrangement view places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement view places the secondary view in the top position and the primary view in the bottom position.
+- When someone holds a folded iPhone Duo in landscape orientation, the arrangement view places the secondary view in the leading position and the primary view in the trailing position.
+
+**Portrait open**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, floating near the center.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-3@2x.png)
+
+**Portrait folded**:
+
+![A folded iPhone Duo in portrait orientation showing an arrangement view. The secondary view fills the top half of the display, and the primary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-4@2x.png)
+
+**Landscape open**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, centered along the bottom edge.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-1@2x.png)
+
+**Landscape folded**:
+
+![A folded iPhone Duo in landscape orientation showing an arrangement view. The secondary view fills the left half of the display, and the primary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-5@2x.png)
 
 Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`overlay`](./arrangementviewstyle/overlay.md), as the following example shows:
 
@@ -63,9 +87,21 @@ For more information on configuring layout for a folded iPhone Duo in an overlay
 
 Unlike an overlay arrangement, which typically layers its two views and only separates them when the device folds, a split arrangement view always keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
-- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
 - In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
+- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
 - When someone is holding a closed iPhone Duo in landscape orientation, the split arrangement only shows the primary view.
+
+**Portrait**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. The primary view fills the top half of the display, and the secondary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-6@2x.png)
+
+**Landscape open or folded**:
+
+![A folded iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the left half of the display, and the secondary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-7@2x.png)
+
+**Landscape closed**:
+
+![A closed iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the entire visible display.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-8@2x.png)
 
 Create a split arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`split`](./arrangementviewstyle/split.md), as the following example shows:
 

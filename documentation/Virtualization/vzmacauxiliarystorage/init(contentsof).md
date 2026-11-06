@@ -5,7 +5,7 @@
 **Role**: Initializer
 
 **Availability**:
-- macOS 12.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
 
 ## Declaration
 

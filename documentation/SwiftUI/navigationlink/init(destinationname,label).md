@@ -7,7 +7,7 @@
 Creates a navigation link that presents a view from a WatchKit storyboard.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(destination:label:)`](./init%28destination,label%29-27n7s.md) instead.
 

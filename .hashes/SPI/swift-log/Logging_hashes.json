@@ -2,1731 +2,1779 @@
   "hashes": {
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging.json": {
       "file_path": "documentation/SPI/swift-log/Logging/Logging.md",
-      "hash": "a6be28e27ee4321988eafd9e90ee0bf507d89af4bde55d27a45498ec24ce34b8"
+      "hash": "1b54cd7211e856e177e7c10974020184e96832394995049de206b321bf7b08b4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/001-choosingloglevels.json": {
       "file_path": "documentation/SPI/swift-log/Logging/api-001-choosingloglevels.md",
-      "hash": "aaea1afae075026ae40c7f77241894c8f0b63e91dccd8842403582e7cd26c793"
+      "hash": "12bab95505800f3937e8d78c69b1577f73443064801cc86ef5f1cf597a16c807"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/002-structuredlogging.json": {
       "file_path": "documentation/SPI/swift-log/Logging/api-002-structuredlogging.md",
-      "hash": "eba4dc7484bf6bc08689ae3bde90bc9684b69118714fa5bd97b844340bf401c5"
+      "hash": "bc8ff81009b18d4f7c025451326cfd9008b40535c5ac7aa98d86832579cb1ace"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/003-acceptingloggers.json": {
       "file_path": "documentation/SPI/swift-log/Logging/api-003-acceptingloggers.md",
-      "hash": "0445b08b5804b453d45cfdb4fa3a5e1673ce83c39a8e0d223b9f7c734e1e6627"
+      "hash": "b3da08858d4bbdcfb5a03162ba8fe180a91dce8883c3ec7a7cba766577937971"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/004-testinglogging.json": {
       "file_path": "documentation/SPI/swift-log/Logging/api-004-testinglogging.md",
-      "hash": "d8f2dca97af5870c2f54f0f069b70694df71300d6cd837dff3c68a0266e30627"
+      "hash": "c2cec8559057cc524c9f572bcc591c0afcb1a8d034328a57d9b1070049fbe8c2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/disableloglevelsduringcompilation.json": {
       "file_path": "documentation/SPI/swift-log/Logging/disableloglevelsduringcompilation.md",
-      "hash": "7fd2069f8f7f1503ed30f5b9120ee030b266230797506859b45308b019da9650"
+      "hash": "ac0321eea91613c143d2529f55c257ca25753284ab2ab66c7b3feb3932c1af68"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/implementingaloghandler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/implementingaloghandler.md",
-      "hash": "e099bc6b69fd7a688bfdbeee2e2205ed922d9908b41d5b8bc6ff4e13e4d3fc3d"
+      "hash": "ccf2c519756e441e08b3b64f1f4a58e84cbaf292ef7669b9a98e40aeb81d4276"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent.md",
-      "hash": "e663bc8e3ffdc552b6748fa8256daf25e65c28e05e7551e9f3971c726add7ed0"
+      "hash": "3eaf1ede2bbcf6bf8d35e36155f746dc5b9d1c3f2e275a8dc98f44f7d277e3c7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/error.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/error.md",
-      "hash": "68ad2ee99f564b68a0f37951d7a1075b16faae50cb97f8d7ed6a1088f4387af1"
+      "hash": "35fb479985ae166dd4c06847eb629aaa3ac3cc963c875d518b35d0247fe678f5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/file.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/file.md",
-      "hash": "b4eca396f636b74f27ea8a17718f8d50cc0245cf03a90dac576c5063860837e8"
+      "hash": "6f81fc3641da82129eef405442db43cbc3894c4092a9bfc9ba4145cc9f8b9e26"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/function.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/function.md",
-      "hash": "6c81b5c77edee45e7ba9201ba606afff9815285007cf1caa64254dc8997a70cd"
+      "hash": "61d7c98523ec47fd53bc5796ba2b9c050cad1b4ac7fa201f886b92a542bc57be"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/init(level:message:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/init(level,message,error,metadata,source,file,function,line).md",
-      "hash": "7fa525cc11a27419046a9a0ab9f5e3df2c2add54b1e4925567163fd4837f888c"
+      "hash": "a8d21817f82ac45dbd3039511c61934dfa16746cf797016d9014c760013bc5c8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/init(level:message:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/init(level,message,metadata,source,file,function,line).md",
-      "hash": "eeb545a41ff5adb4178db068f12e7914e9ff6c82cd30ccbb525ca5a9fd51ba92"
+      "hash": "c189d4407961487e121a9a1409f8d0244d93775df069f93c8d622a5d15979762"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/level.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/level.md",
-      "hash": "4b8fc116ea164fb9c12093359e64c663b7b6e08c71f0fb8fc389531b57794206"
+      "hash": "eef930aacaa13841e6782f7dec36621efbf6ebeb45dc7840affe28d6a269d42c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/line.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/line.md",
-      "hash": "ed6ea03d3a7304713979a8c6c0a8f15924837de79bba1069f1ad48075b1f2529"
+      "hash": "a91ce8b6e8b36095ca121480bf7dd7939b2238568419f4f0382ca993f4b42747"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/message.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/message.md",
-      "hash": "167be07b212d272e0a27343ffa671ac1089547ca37310b0ab15c4923e5b2a3e8"
+      "hash": "6783d1cd319e2e93fe016c461df6191cd68b8e9951dfe0b222694c441bbcca99"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/metadata.md",
-      "hash": "66c457e41a36bdb9db22d3175c768c597fadee10a3aa43cfc3ac8fd16c30a92d"
+      "hash": "337b577a395ebb2559fe149066588dbba7a50493d1868b6c11a42b72bf7f5e43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logevent/source.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/source.md",
-      "hash": "a70fa3ade025781abffc274f1cc7c2652577935d865aa058889a8fc663b85a4b"
+      "hash": "6c47f59cf9d443d5258782578e31a0b794a273c66cba1c11b3df96a6e2000707"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger.md",
-      "hash": "23f0c24ed544947f4ee953c42eb7330c3290ec7df15d4e5b38185845df1f2e7e"
+      "hash": "51cf0f1d10086613efa4129880673673957ac9a62232c48f371b83283552fb0c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/critical(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,error,metadata,source,file,function,line).md",
-      "hash": "6e0decd14cc070f474300455358a05a386dad10d455c1d3e3d1f3cf6cf5b2b02"
+      "hash": "504803a348d5fa6daec37fc3808de866a5cdeb6ffd4a31ae39b4a98a44704ede"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/critical(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,metadata,file,function,line).md",
-      "hash": "4676199f14d011f6a254bc6b3dd80e0d68cd3c850ce8fe71fa0e8b132ac83726"
+      "hash": "347c3c4199b2eb1502f38a805b670fb8b472228c242e1c3f271fea305e5ad644"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/critical(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,metadata,source,file,function,line).md",
-      "hash": "dc5a1c8b0b55c0c38a9c6f1e6803f063762ef2737e349fd093662e0b0c0acca5"
+      "hash": "d5d2cb508cb21e213b9ef85632960b73f58316abb561951cc018e1925952cc52"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/current.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/current.md",
-      "hash": "84eb9f6d5beade191961edcd58dd1b9b0985f0b08f9aa34bb903e6b94febf084"
+      "hash": "f854055563d4fa5c0a432ffcbc57ca1386e7363d15beffe5cec17eb1ff1bd6b6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/debug(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,error,metadata,source,file,function,line).md",
-      "hash": "5a5583d70330f3c5843beaf42f9491592a9972f8a0517a3caf0522f8c17f4fe9"
+      "hash": "064214afa90473659e3de5624f4ef6aa1183ad3e258eafea53f64b9e8e818bd6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/debug(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,metadata,file,function,line).md",
-      "hash": "030b8b34fd26b9360e1a6167bd36659df61a6a0fb9220c067adac09dbd8f5438"
+      "hash": "4b68318c0014faae9b0e230dc7c475fba518d2b20048d9ae228ab58d213455d2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/debug(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,metadata,source,file,function,line).md",
-      "hash": "715d7e567ead0f046d0d5e4a740b51ddebeed0858054c038d0806e084f2233a5"
+      "hash": "47f56c64de408333f90c508e45d2a3c206a83a0472639581314713abc5d5b15d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/error(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,error,metadata,source,file,function,line).md",
-      "hash": "f040f905eb0638921325ac0ff8f903a4fda4bd95ebd2f032bdf5425f1c3e174a"
+      "hash": "a3573273d4419bff18d0788149a3f0cc5384a1dcdf7ae33ff73973f3ce270102"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/error(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,metadata,file,function,line).md",
-      "hash": "54eceea3cebd372e36414991aba854063591c4583ba740167ca0eb84c637e29b"
+      "hash": "73c590a454d4591cdc8049c0f8bd538d4046354f12bfc693842e0d056d73cad0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/error(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,metadata,source,file,function,line).md",
-      "hash": "f17640bcafe841045ad848998c792d6e2a35d285490006e14e571da9224a717c"
+      "hash": "58c85df5cea5e9c05985f33be4188a9bd3b45882817023081704cc311a7ec31b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/handler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/handler.md",
-      "hash": "326c5521e41cc67679a93b1df4112d0cae1d0450de89b2dc4b6203cec46e2a14"
+      "hash": "770c1f9d1b6f85ae5d81b6ba93cf886fdd9fb6c15e9edbe7fef0f2455cca0757"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/info(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,error,metadata,source,file,function,line).md",
-      "hash": "1c77ff52f33a4c987aaf057bbbbfb5d56433d8a029d69a21888aa74607aa566a"
+      "hash": "af406a442be6d699092368e42be87fd5850f955d99ce99b97ea9e16fb86cf15b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/info(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,metadata,file,function,line).md",
-      "hash": "18a63812dbb2212662cab36fdfe791bca3d0df665346d49b62e4e6af93ae65fc"
+      "hash": "b8d609b993469584410b2b2460b64ccb1ee2bc86a081de436c1dbf4bdc6ef677"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/info(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,metadata,source,file,function,line).md",
-      "hash": "afe040b344a38c4ca441c916f1bd949287fabe892dfc8bd9487cbdb25cc2d610"
+      "hash": "52d92173039536dc617758d2e739111aeda29db0e9624dedce92363bfec68d91"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/init(label:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label).md",
-      "hash": "b1e1c2918934b91d5eb80f02ffcb432fac0b03e149205177c5228b7871dd2ba6"
+      "hash": "2814909703c17360ea72bd3d0b5afbde6e7669c580becc8eb3f1a3903bf4bfe8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/init(label:factory:)-6iktu.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,factory)-6iktu.md",
-      "hash": "155eaca80eb8d5ef0e6d38529c46cd90b85219e56db75cd28f665ff18735ad30"
+      "hash": "950520b5ecf738d595fd62757b85a5d0c06e33710d5ca8eea5d1f0b56432d8d7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/init(label:factory:)-9uiy2.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,factory)-9uiy2.md",
-      "hash": "8af980d913cdaa606079765f4e76322bea04a1450b79405dacbc8295eb3ff812"
+      "hash": "29b53a88f11482d71decc739d87c74765fdce825e12caea0bf602767fa5fce20"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/init(label:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,metadataprovider).md",
-      "hash": "e0bc54b1e8e7c968115e70c648d092cda6aa9cb530c20e181ed8a610b4d563c6"
+      "hash": "1bea837260a25f3065820745afd41376bd19f31575ed74f34592401615a1f9ce"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/label.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/label.md",
-      "hash": "e952ba528b961549a884c5469220c234fab51bc96af03ab4acd63d1ec4d08239"
+      "hash": "2c98cc600a2a126d17a2e4a104e8e16ac693bc3ecdae018a500a1336830945fa"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level.md",
-      "hash": "f04d9287b241670f066a7050f8711a7b20257e0a2226742450bc7fc12c608939"
+      "hash": "f0ab1d72b4cfab3b14423ae0bcf626ef600566dfb4b4fd69a423bfd6b956b16d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/noteq(_,_).md",
-      "hash": "9a9c62884a0667bdb9ae2fa131fbabcd6f5854ecfc726d35e7b005d30e3b9b1e"
+      "hash": "8e5eff85e2ae5e71fe776ad4f9c79a29ed1076f14a7ebc183728976c2a2e4c90"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/'...(_:)-181cj.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_)-181cj.md",
-      "hash": "d77f0583eb0d768bb8bfe7d0721fb19e17df853d8a6fb3a27ee234353cba2ee9"
+      "hash": "68721581aa5b691702c4f028b165a585281cf946c580496da642144846024e5f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/'...(_:)-9337t.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_)-9337t.md",
-      "hash": "23a174e51dec77422c81da911a195ff674d59fdc17ea7a6edc1928c3efff143f"
+      "hash": "19ad1287b097301af36af23dc637e9432c2a18ee079080e8256e94d30ea013ed"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/'...(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_,_).md",
-      "hash": "14ad7ae4324a7503d05335e11a6c91b50b80284f2fb921208d56cf7c28f93e60"
+      "hash": "a500f6f3a2e9571dbd7553e3e753ada88c3d5159fe4cf9f3870e0946f6ad3388"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/'.._(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotop(_).md",
-      "hash": "f09b428db656a431648ec45e8bb952ee5713376fd4742fcc35cd845a6eea00b3"
+      "hash": "434a98071f6eb886b245c9e82540347f8a58c1c9d2db4361b0c4e1adf78e05c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/'.._(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotop(_,_).md",
-      "hash": "fd8942f44f76cc6e55f90e414aa416566e74a9df7b3d45797ced09fac75a9cd3"
+      "hash": "b2c5164e43a1436dca456d25562e5ecabd3a62701e3f316d4fc7ab27d4a13473"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/_(_:_:)-1ebiv.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/op(_,_)-1ebiv.md",
-      "hash": "13f016acd8c56f5b708767c1256c4acd414dad170693d53fb6543c2aa00561f2"
+      "hash": "17c4529dcab79fcde614418f9962101a72ca84bc73335aa358938bc6d2378fe5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/_(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/op(_,_).md",
-      "hash": "25c7e82a2b1f0ca016cd029987fead09c3d86a78925edf7e66704d87ccbe7c59"
+      "hash": "534e48caf2927bf76006231636997c71298f5c612368b04de94fbc06e1b41fdd"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/_=(_:_:)-5l40d.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/opeq(_,_)-5l40d.md",
-      "hash": "3aac1ede2b51281799f18eda72e5b62bb01d1a083ebc10406f8f9f2072ea98dc"
+      "hash": "bc9b3750a1f32d7d8a2869749fc58bd0faed0b963009d83c5b2b5ebb7d1bed7a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/_=(_:_:)-678b7.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/opeq(_,_)-678b7.md",
-      "hash": "19e461e59886015e2cfc6d334e28b87f86cd615ba67d3f7c8617318beb9d643f"
+      "hash": "13dfebd50afd2a9f22dbc4b3522e77ac014c9cc8d81071e908b14470c1359be1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/comparable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/comparable-implementations.md",
-      "hash": "0c218c97057916dbfb75ee9918da255d02cb3df1c35a18965955c214d1f2fa1d"
+      "hash": "f27afdfc1c76691e3b9860a6def210cbb4fa3f8f7d9c2e0aa06bbb5f6fc847c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/critical.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/critical.md",
-      "hash": "d9e49fe3786802625fa762d105452e94e11265d85c54ac09f94337952be321c5"
+      "hash": "251a5b9e548267c4b355a3a72078941f7eaa829d6484b965cfb2d9a3ce51fc93"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/customstringconvertible-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/customstringconvertible-implementations.md",
-      "hash": "3a8a103133dff5002fe429defc9db701dee280a3436b9ffaf7166929ee6c5d60"
+      "hash": "d7fe69486a3c67a70aa87a54d01e3f286e4f6088534e14160f5362de74d3a837"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/debug.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/debug.md",
-      "hash": "d0ca07ab65ef8ba7dc2c93443236b332907a8fa8155df9a9d8f4ec07541eacf5"
+      "hash": "1b8d6c57ab84f216906756ac951964b812bce9adcd0bdf7279cef4fb0b86466f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/description.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/description.md",
-      "hash": "4c53f134722fba093a88cee470cca195700d960ffd3d77fe85d4bffa060669fa"
+      "hash": "83b91b6fe38d2288b7ecccd135bb73821fb816b8e17ef7e0ea4cdea0904fc393"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/encode(to:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/encode(to).md",
-      "hash": "3666401e9aea5d2b20f1feb111093793dd53c0f59337f7d614ac7de530619227"
+      "hash": "bb7510e944c877d94e32fbbd93a3061a0fffddab4d6d388c9d3f3975e90697ec"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/equatable-implementations.md",
-      "hash": "4d330861ca00a2da114043415cd6fd67cac52792f452c7b6601ee3504bdec046"
+      "hash": "71891fa961e06a7e6047cbaa943bddabe760da6845ec7831479f02238e28e1e0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/error.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/error.md",
-      "hash": "658d1552fcfd19745866d070b6e42c29db1b880a2de2c01e16705ecfc51b41fb"
+      "hash": "80a148f90dce58dd4c28d41784b9615a6fa27705c3378e03e1c51093c9f2e070"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/hash(into:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/hash(into).md",
-      "hash": "22eee596f321706fd3e7899a0d24e6559a7ae8ec1ca1f6376f8809e975dd6dbb"
+      "hash": "f560139d4685e74dc81e56d412c5a9499393352100bed031691f2524c6e53dd0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/hashvalue.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/hashvalue.md",
-      "hash": "723f5d17ed2c8ae2cd699754f4a62050e60a3ca27b6fc58a83685934f28ab922"
+      "hash": "3d866ec2a9700f500802a358722f0d61a2d6bcc42a851327a2e734dd83da6202"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/info.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/info.md",
-      "hash": "0f39e74ac8fa51cb719f6aed506294cd69763033622c39dc9698ecdc9fd34e62"
+      "hash": "3266c8f88f654b8e2dcb6604bebc02417121788a273488c11dc08e9674b36d30"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/init(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(_).md",
-      "hash": "efd74c9d794b3986b902ad3c02865b09e64244b62c8623c97f2f2145524e0b9a"
+      "hash": "e41816904888f4a04432382bcedd369854a2772e826a371118b5e8ff51fbb168"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/init(from:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(from).md",
-      "hash": "f09ce6a4671acbfcba5549ad3b6037de864e3cc4bac2639a3bc9b8b64b9a8fdd"
+      "hash": "ed1d8da6926cbdf4c0b3462bd4950db0d6dbaf5e9fda67f380ee0da94041f706"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/init(rawvalue:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(rawvalue).md",
-      "hash": "0e26e6dd5f79094f8fb48e749ec4fa23c9c0208d30925df032ddb7e23fa34dad"
+      "hash": "20f9a021cc59fd2111bd0d2f803d0c869b8583f2dd589695cb2568ce52a1ab60"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/losslessstringconvertible-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/losslessstringconvertible-implementations.md",
-      "hash": "3b4df14f99e03e65ccb0d3f8abe5160bad300bfff2bcea8ec1b1687abf2cd105"
+      "hash": "296b1d2d7e2f47add22ee326d7b4c5059e53871a51b48f98390ffc1cb5cd7242"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/notice.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/notice.md",
-      "hash": "ac279f5ba436de665c4a48e1bcf9fc9b544da34e52dd0e16a2e5ebd309d2176b"
+      "hash": "00d2ef914bf4367ae955aad34f7cbeb79e174928fee4b3fa017b616d330afbbe"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/rawrepresentable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/rawrepresentable-implementations.md",
-      "hash": "d9de3cd87151ccb871ac86c3119d6442cfa1aeb687e91351050ca8bcdaaa09d0"
+      "hash": "bfc8150d5f85d67887a3fd59f34134eacd066721e82ccf79d83ce353453f32e8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/trace.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/trace.md",
-      "hash": "8b975c01e80bbaa5362d5d4fed470adcca9c6f419be01ed1706316143414b5ce"
+      "hash": "e1ef5b7d6904b793df49df740c97acbb1d3177c606cc8b4738f29563479871f7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/level/warning.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/warning.md",
-      "hash": "5a7640d9a609c2a296d0f9d5e174df70041071a3aa9a2c3bd73418c8d514a514"
+      "hash": "d6684f53425fec8075c97a5fdef619f7cf68f926cb57bc51f1f6a0823a8b3443"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/log(level:_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,error,metadata,source,file,function,line).md",
-      "hash": "55d3dd61aaf5d59f587e19447bd28a1a4c29f09d92c68bfc67214d1adb68b2b8"
+      "hash": "652d03954cc234d5393895fefb52eb9f9e6aa4cefbadc01dcc79cd4b6f3ee97c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/log(level:_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,metadata,file,function,line).md",
-      "hash": "3f9c220f5911e6b34cf6ab9ab050e971cbe9604ab65060614be6df85c06d641c"
+      "hash": "b0a8645a7d97b070a94ab53a1c42dd65ecd1af15cf5c873814152c36bab019c4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/log(level:_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,metadata,source,file,function,line).md",
-      "hash": "a556333353b1119b65ca52e5a8490d12d31c5c74daef4478a513a71fffdb6ae4"
+      "hash": "32960679a39dccd4b7b80049eb364041b994156aca26a633fb7973670a34f25c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/loglevel.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/loglevel.md",
-      "hash": "7bba3112f4979dd355035871fa98ff445287ad5ac5a039f2f23ceda57c6c0d27"
+      "hash": "3678bf9bdcd5eff76986029b27c646bbbc9ef66acfe5b8b204870d07c202404e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message.md",
-      "hash": "1aa20c7d44dd6a93497e8df0af905b1d2da8f05aeaedfcbfbacdd707da01428c"
+      "hash": "8a02fe337a01cde249d4a274d604a2461d18b99a8f8c6a63515bcc930fe85997"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/noteq(_,_).md",
-      "hash": "f68b0be78a79326c6eecd150b9150620fa519fcdaf7ac17fa0a60e0fee1084b6"
+      "hash": "188cea87e518e277037a938696b10e70187b441a688fd68c3ac0c8c1bcbfc080"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/description.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/description.md",
-      "hash": "fb344fa529c11ca958c0249982fafa8133be4412654b3d1cb906ed5809365e4c"
+      "hash": "b194390f86fa5795b1adaeef7a8f0b3a8b9d6d6d79051242cefedad19a9e2421"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/equatable-implementations.md",
-      "hash": "7e785c3eec11fe3314b3ca183954f252ff67551e76c5b4a2f48b1d7899ae2bc2"
+      "hash": "4cde653c69b8506b777f4053330d3710ac3a028e19bb8d480b92ad11adecc72a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/expressiblebyextendedgraphemeclusterliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebyextendedgraphemeclusterliteral-implementations.md",
-      "hash": "cc11f8d4f6958962e5d61a90ca8dae0260e0e4e762c4f55b61e058e729607dd4"
+      "hash": "6ffb36ede076e4c4eb9a013fa2d004d6d4a5248b356f356d2eaeec5807552487"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/expressiblebystringinterpolation-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebystringinterpolation-implementations.md",
-      "hash": "f97355b6486f488323b6fe7fab96ade1ef3ba95142c05589af590dff488fea8d"
+      "hash": "8a8bd08ec3f6d95089bceed41e6b652c4fab8f561e33aec73009ebe204ed09cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/expressiblebystringliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebystringliteral-implementations.md",
-      "hash": "6ca14c67f4a4daeb76b48c935f6165fae1807e82b5dcf44e195a65f1962b1ef8"
+      "hash": "74aa60d46f2d6f5c00a6428f29d5ffc5ec98920046a48c886cd415bb0f0938ee"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/init(extendedgraphemeclusterliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(extendedgraphemeclusterliteral).md",
-      "hash": "76a92bd9e42ce1ad8fe3d4c28fa493d08a0257dfd13f1e39b402ca966ccf6cdd"
+      "hash": "aaf64b7497fbb3da50ecb45f3a73c9ca16e831fcebfcc578df73a715b75571ef"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/init(stringinterpolation:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(stringinterpolation).md",
-      "hash": "465f61dae012f6aa1116ac7d8319a7b13e56f3d29e5d4b94f1fdf324429df6d9"
+      "hash": "8dda879c04c8de0917aed1860efa4a22d0d0a3aae1f739d74209007b9701d3ea"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/init(stringliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(stringliteral).md",
-      "hash": "8faa83e280fcbfd10623e168a783834a379f7bac95798028f2c299f3beb79040"
+      "hash": "2e35ec7f697a1bb7b489ea65df601eebb556e5b44029f2b8ad952a48e84e0166"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/init(unicodescalarliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(unicodescalarliteral).md",
-      "hash": "f281b246720cbe01b0855185600d5c3a4cf2fd6e7b3e8c3095a8df8c6630ad91"
+      "hash": "81c8896e4d844eba7dbad9f6567703b2b2e32ac3136910d8fd06eb7938bd6cf8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/message/stringliteraltype.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/stringliteraltype.md",
-      "hash": "ba3640e20493d91eae319ca3eb8371d9f19f555ddb675e98a80751f1d38f45b0"
+      "hash": "8bf38cc2a24682e807537f0de4c2a347fcce9459877efc3120398e4bf078d980"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadata.md",
-      "hash": "fc6c9804d499a58b529893066717a5193a175c2101f82ce547e3da74cf187855"
+      "hash": "a098b16e3dca911ed5ccc7cf7e9b732a69a85741313e3d488b09ab49ce322d78"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadataprovider-swift.property.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.property.md",
-      "hash": "f3e7b923b99f004c7ed9e5cf95a320755184e9372c950d81ba603533515b9d18"
+      "hash": "320625c251b6327fead872344ca6ed1023f5f3c35cb4e60eab80435fb650f129"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadataprovider-swift.struct.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct.md",
-      "hash": "6966cfcbeb1d6e464d8c79504899c8c52efe7223c9e37e0a41d1861cfafc3899"
+      "hash": "42d240c3b96f0ac7314f16554ffc1190bd07e14661090cef9383f444ccd1e665"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadataprovider-swift.struct/get().json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/get().md",
-      "hash": "60cdf228aaafe469c0ff206eaf951a7bf6e79e77fcc526953641bb252a5c39ac"
+      "hash": "9a40c09398ca06c04ff3e9ec9d117761a410f9412d4812c353089fe2d5f2d9c4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadataprovider-swift.struct/init(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/init(_).md",
-      "hash": "33740e0681918163fb45591cdba9ea2940af7a474d6ebace6f8f27b657557bb4"
+      "hash": "bfd497840ce9f048049540b824f2aecee4d5a7e015a361a873ec7b522db92c2e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadataprovider-swift.struct/multiplex(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/multiplex(_).md",
-      "hash": "cd29ec2fd886d16fce6bed1a5c2817441440923bb076be2acabd5df19348eebe"
+      "hash": "588d87ffade5be691bb9db7852b4a17e4e3829f111450fa0e762721b18b859b0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue.md",
-      "hash": "2189bf12c5d12c390fd85b675b98a4972bf00fc7f26e770d58f8a7db7a3d461d"
+      "hash": "a1924d6dda9149581cc54f303b644a36508dd761e6c6055cbc6f653cc0eb4891"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/noteq(_,_).md",
-      "hash": "c2a1dcda65c54ac4155dbbda3183d6d3f97773edd75da016b09fe040aab910c5"
+      "hash": "12dba5d1463a4b4f099c4965ceef2f5e19575f0c3ef6374c83666afb22fa625c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/==(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/eqeq(_,_).md",
-      "hash": "a2ed2b1fc2686d3fc803a0eb9b66de46b341a05aa17603787b8223c6364c9f2f"
+      "hash": "62db95e833eedff789272e544cca53cf030354ab2f19067279b72ea5c91278c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/array(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/array(_).md",
-      "hash": "ac2397b92b57470864a267c5c1d3cc3705f346092c22c6158f946d714561447d"
+      "hash": "34d4156e5f9bf9cbf0b415b6f34340adc913b10fd00492b7c9e1adf23914b3c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/arrayliteralelement.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/arrayliteralelement.md",
-      "hash": "6cc860bd799a1e89710ff373b40a423448632f4324b7b4726fba5418ec9f7715"
+      "hash": "4783668064045bb8348088963f55afad673f178c98ae114b1556cb136358588c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/attributed(_:attributes:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/attributed(_,attributes).md",
-      "hash": "e855998814c078c1925cea104249cac8ac5c0ac1dc26f10f7567d5c34dd3c1b2"
+      "hash": "1df0fb2215b2e17f71ed7fb10ce4cb9a219431b8ccf95e469013c00771064d1a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/attributes.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/attributes.md",
-      "hash": "8ee9d2bbf3ab75a1ded66d03dd243d0cfcf69eec8ccc5fa63aeb2e4a4887896c"
+      "hash": "a73600601b6758fe79add3b541fed0ef4a1d57c4aa636782919c39852a5f5bf1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/customstringconvertible-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/customstringconvertible-implementations.md",
-      "hash": "faabb23db3d97854acda02d02017d286b9e199b1b17f06e2b7bc057fabf22d83"
+      "hash": "087f7caf0f5ea9872a606b73dd1f41a592adfd0141d1bda2ea64cd2f4cd259bb"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/description.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/description.md",
-      "hash": "8d87044fdb28b81623ae73ddc17caee24d83c645b971c9c7e1c660a3711eb77f"
+      "hash": "35c34ef86ecb7e0b9947b0c6c382d7080ca6583f47afb88fdddf2016518ff222"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/dictionary(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/dictionary(_).md",
-      "hash": "8440ebad073254811a2e37c5b782f81f8546cdc03fe43b32e357e13d2fa2d902"
+      "hash": "64c49600724de2e7ae9c3dbc520736bc253771ba0cec102a46b5c990f8e6643e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/equatable-implementations.md",
-      "hash": "729eb8c258a77fdf66d61e63045147a4536c139f39c1d4eca34041d3e20a6111"
+      "hash": "0d9faaf077e0a6261e7b1575d5f175142d7da8632dcae431086c042ed690d662"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/expressiblebyarrayliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebyarrayliteral-implementations.md",
-      "hash": "4ecf2a411a69ed7c2296272e3aeddbcc2eec31ad928ec0fa2f15d0c2c81f17f8"
+      "hash": "7b311eb8543c3fe671148b453392e4ce550d143eb711de5922992b22f1439f74"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/expressiblebydictionaryliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebydictionaryliteral-implementations.md",
-      "hash": "117a8e243b1b8e1578247e4139a5c335d3e0d0d3b5980f4f35762dba550d8f88"
+      "hash": "48f0f8064d4c29c4fd6aa16244a264440da778495caddf78d0352cc08c8bb671"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/expressiblebyextendedgraphemeclusterliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebyextendedgraphemeclusterliteral-implementations.md",
-      "hash": "8e334763c0d7de79cf697e0896966f48e569dca1022884b83726484a818ec02b"
+      "hash": "62c58fffebb992496ef8e59cfa53a35a9c3f134dcedf0018123a4fb58ee42895"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/expressiblebystringinterpolation-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebystringinterpolation-implementations.md",
-      "hash": "5cd1a1de3abdc1bfe85402930190bec98c973ff5541d9bd07491757b8c47dd4e"
+      "hash": "766bf3144c372e2a8d36caa54032b11705ca08f9a2ff5e21e0f6d8015337890e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/expressiblebystringliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebystringliteral-implementations.md",
-      "hash": "aecc9209bad9b61af6284e403fd3150e052608727f2569aacb58df365a64ef65"
+      "hash": "290b1eb655ffcc76cf635fe932e34c2eb90bde998755fc2177a584a2460d2936"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(arrayliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(arrayliteral).md",
-      "hash": "5e09e93bc6f6f38a8bfe262df8a15044db37159668ab72970db405d7d765cdd2"
+      "hash": "82de161e9cd067da2c4b46bd7deb792229a2e452c82189fc9664477024996775"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(dictionaryliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(dictionaryliteral).md",
-      "hash": "31ceb9d7c3110333f52e819e4f90ae4e6c3760b7bf95963db05031a01a5a1cdd"
+      "hash": "51560e4fee9b1a95b93423e47616b83a443a011d6784cdbe97efec929e9de95c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(extendedgraphemeclusterliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(extendedgraphemeclusterliteral).md",
-      "hash": "f0b6e85b5824fc8541e6cf25992eb7b14de17c5c1ba6b73fc59822bb58851251"
+      "hash": "f22845c609c3bfb7168487b320d1bf0ea30112e4d860b1b322699f583765edc5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(stringinterpolation:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(stringinterpolation).md",
-      "hash": "93564f69e1f54a3f4ff11cfa535e10fd806d0fbbf63950e359b4c2e1ef525778"
+      "hash": "20e0802990257dd1002bc7e9f5c025eedd0c85dc43aa2bb113d6c4a6a5b0bd83"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(stringliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(stringliteral).md",
-      "hash": "0896087eb11d16915c4d798e4eb776fcc867544bb363abee5c6501930adeaca2"
+      "hash": "ab749a31720c9c64d6430b2b4b5d0c3042a829fe145e7d3e81cc223a1f1c7696"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/init(unicodescalarliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(unicodescalarliteral).md",
-      "hash": "20a8ee6a6cf93158d5b48121757ad46976644fa79b1c3c8b2212fabc56e14dd9"
+      "hash": "a89993d94cf8d869f0618ab36aee0be425b0538151886adac608a3409897ef6a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/key.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/key.md",
-      "hash": "70046aae21fc8ca49dbdd28262855299a093d1ca82e4920b5fa1eac2e217ef97"
+      "hash": "6abea6bf4951f818af0f3699959a87982cbe00d4247cd4903c017d8ba742b6af"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/string(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/string(_).md",
-      "hash": "0d625d3f2613900f74a72575fb20ef057da9b2fa6e829a2bd40cc046d0588a00"
+      "hash": "30dc82eac2f72cee8c2a4ef9719ff237d8bd452a0b104833ebeaa0c8314a16df"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringconvertible(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringconvertible(_).md",
-      "hash": "9dac04e4334e44e7d94ed6ffac0e04c7657d57179e4f8a1f640363843d80b50d"
+      "hash": "b8e40fe359e23a5f4b37ab6f3a46ad27ddefb63eb719b8449cb28cfd756f8011"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation.md",
-      "hash": "b2ce2b3f4e0f4363d17ac0eae4618a1a544e07f5fadd222a2229226bc77d259f"
+      "hash": "ffef763c6ab258a007d6b520f91fa770f466c971aee54504ed15ff82d405733a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-121kb.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-121kb.md",
-      "hash": "58eed55f0986bb515ac50619c43b73bdfcaad2025a5e6a39a51d4f6137060a5c"
+      "hash": "901f65fc996cd33fd8e02dceea3f719afc2d791a046d865cf3b6933a5d3d2e43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-1ch5o.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-1ch5o.md",
-      "hash": "795db98686fff6023c0bba452c0b5bb241c2e3ebe46a269529b4c9db7721fb9e"
+      "hash": "e8b736c45451856dc2c7a2878108297981ca2e826f2302cbbe108202f614abfe"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-716sw.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-716sw.md",
-      "hash": "fc80e6fa828d776cb647b1756b11c33bae6501fc32fff45e4771d1558949bb4e"
+      "hash": "fca4ffe60793cea645677d47c8f258227c4445de98209cd2bbfb37ebc934a563"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-91mei.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-91mei.md",
-      "hash": "889fb52beaa55e6718df84f561f60027004f63f56671d5ea95a8110558aab1a5"
+      "hash": "68fd4d2480709ce9e6f35c6ed7fefe2883f0695692fa495ce653805977ef1b57"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-1wm76.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-1wm76.md",
-      "hash": "46f8f8eb53302452cc93c80ddd76c99b4ff48d57ff486e234b004c08c0339c67"
+      "hash": "156bc4a2b918ace54f95f9065b545f2fec033cdadcc92cd52586309acb7800e9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-1zg00.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-1zg00.md",
-      "hash": "cf3815e6185559870a02a033b4ff64fadfe32bfddb94b0d1b9f5f5ed938eef8c"
+      "hash": "5d195aa2468d762d9ea485f2eac1eee3a26a7569cbae82f28ab5de8475389f37"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-2hhi9.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-2hhi9.md",
-      "hash": "ff1240d6cf261433df455d0057a74d17e0084304f10325c65094d20166f4b0b2"
+      "hash": "96dff34e4c60345d4e0d68381dad8436fa62e594c90af60109a3d42beced4716"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-3fdba.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-3fdba.md",
-      "hash": "cc5a913d8cf0f2fd8ee5ddb0e56163b8c8611769689fbc446155c7949f08006b"
+      "hash": "c37ff24ea1bb716cd83f236b2e715c4c6fd0f7b2e0f6370ac8ba331ab03d3420"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-3tfxd.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-3tfxd.md",
-      "hash": "7643b9265cbcf21a2ce45d43b7c1e4d5121458a857f06995e22ffecd1b990abd"
+      "hash": "231a68fdbac03ebe8bba8caee1e961c1ef95068fb4e975e5b0e11821243fa501"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-4khcn.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-4khcn.md",
-      "hash": "18bd907412ec79a0b589c19b16f243c25ad86f4ec9a7421f20ab871c5e18c82f"
+      "hash": "e2efea7879f191373f9dd6a584125769123d8a32b88fbf5d323230f682cdb47d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-5jp83.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-5jp83.md",
-      "hash": "cff33ee9b03e7194e241c946b728a2c061d5916bd0064fa028ac31445ae604e1"
+      "hash": "b3cf37566f78f38ad13e2a0f7833ab16e31ba62aa2a03b1a79d7cac3a4eecd54"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-7wlaj.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-7wlaj.md",
-      "hash": "574d3c2fe47c14a32f0e0b5d86e0cd8a698080f86dabdae72ca3ac3e5040db7a"
+      "hash": "8f8ec0682ec4fd3fe37d7a354b6afa61b4583871f263a9f65357b961bc0747c1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-1nl4c.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-1nl4c.md",
-      "hash": "04e5cb5472c4e2c7cbff168a1e7dd6e2362a70a1af76c6460ff2ae54c16d80ae"
+      "hash": "9b4cb929200ed2da1a86b3cd85b21e9399051654aaaf957451b47d8a3f67ca84"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-30zu4.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-30zu4.md",
-      "hash": "3f558c666daaad04e696674a9c947befbc40d0653551a79384032e8e9524ce98"
+      "hash": "d1acd55616a5ea2287fc4415bc07a1769c1c15d8fd572435b9d6045202da4905"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-9mvck.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-9mvck.md",
-      "hash": "524005384f5e3ac371eafc421b1dd13d3517d599de8e66a422623d38c49fef78"
+      "hash": "9bc86d81cac10782214691fa34cb6e6dfe1b0d0168fb23c30597176f2dfab40b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-9zech.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-9zech.md",
-      "hash": "358532a1c6d942567ffbcfe429e99c8f99a633b5bdbf32cf045bc1cfa2489363"
+      "hash": "b4cf1780e8af67fb5e4fdeac459b33681ea1d9c0b2a58e9458467ca9a0441877"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/appendliteral(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendliteral(_).md",
-      "hash": "fdeab5b56269e211ef27fa549c3d0644ffc47f524f9db857724f39d0e06c5a8e"
+      "hash": "b3a60ba10a169c671eb755a14e7fa8e98efa74d3036b1cf4c017bb4d69439b5d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringinterpolation/init(literalcapacity:interpolationcount:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/init(literalcapacity,interpolationcount).md",
-      "hash": "9b55c4601518861867b10a502fb41c8c24975f054733a2cfbd5f799995fdf26d"
+      "hash": "17820237d4d2c15b4f3042c1abd0b53cc9dd5d465b7a4b086930b8e5a6c6e283"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/stringliteraltype.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringliteraltype.md",
-      "hash": "0f439e0ffc483dd6535a6e8243a57f00b1fa596c51991f0142e5e57f121ace5b"
+      "hash": "6607608d46bcbb58cd702de94046ef2d19201b00ef2c7ca70556eb8a876f6a6d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalue/value.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/value.md",
-      "hash": "b698b93d703b2ab8f9e50ef1cf9e3a834e3a1609fbaf451d301eb755d0bf657b"
+      "hash": "4434680baa664f4b0055a3102c93d389d875850e13134fdec7b3d71b2d3fedb7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes.md",
-      "hash": "aed8e334bf13ef695c52374939bd726c3084da4451563888121668c5322420d2"
+      "hash": "6ca2f22692ff82c15539c991abc5f1ccc78fdc2962d532450c97509858ed212b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/noteq(_,_).md",
-      "hash": "e8d3cb472bd60f75e39a2964c6634dccfbf6abfcc687877fd88ba907713b71b6"
+      "hash": "e980f805c0ff0cb2e5761293bffc0985d6f40aa5c40e67fe794cecaecda6b89d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/==(_:_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/eqeq(_,_).md",
-      "hash": "32c7c9320e68151a78cd0bafe3a79bf29a5ee68dcfbc04ad636875432ea9c656"
+      "hash": "f5b99b780983f34ad065441827c82061c33728f71fcaf69dc60f1c5af8da1caf"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/attribute.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/attribute.md",
-      "hash": "433582595efd455e96c0ab41c02051741e2b4476555c96f2a00d3a63096a33ba"
+      "hash": "4b4fe27f7ec31e5cdc0ca57ce0de9455a7ac4693a85b1870d9c2241398de199e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/equatable-implementations.md",
-      "hash": "9c06acc5d5db4a4bafe8b225a4f52ac38b6251837e768c17d9b97c5c164bfc2b"
+      "hash": "25cc8b0b2b5198f79be0b10096bbaceb58a03cf6bd5809e80dcdb83381eee903"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/expressiblebyarrayliteral-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/expressiblebyarrayliteral-implementations.md",
-      "hash": "0635ff149ae982d1eeafe6e02f7c4128c41678d82552940d0dde776ce5adff54"
+      "hash": "9d3a5fdd8979605e87d9fc3bc75ba15005df61235ed0db5c298e921ea6076d8d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/init().json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/init().md",
-      "hash": "4050113a6337fb094032951bf890e80a1cd59c0f2d549cbb077326a6ade21b84"
+      "hash": "79e16ec0657a51cc8b33e971f5ac0205b2e9a4c79cd5bad2c7116db71a93af3e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/init(arrayliteral:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/init(arrayliteral).md",
-      "hash": "9f147d341722036000bf4f27a99366d57fdde07163e648c2b8c41f190e78a77d"
+      "hash": "db6e56c58e235fb7e570e4b106759b512457ec70e88ce8e3fa38047ec31d2cab"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/metadatavalueattributes/subscript(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/subscript(_).md",
-      "hash": "c062edee4c16ce2cf4ce6fc84154a358a92f9451f1039c88e5f0e5a3b6a65618"
+      "hash": "ebbd47eea8a1766ead9a8364d3a073a1b898b78aae517083068214b5ea738498"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/notice(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,error,metadata,source,file,function,line).md",
-      "hash": "2fa706ac2d22e83b7dc860e8b81a7dc90a4d4c7c1037ffd46f8ecebe5d383f29"
+      "hash": "4ba26e089e58a401b7ed94698ce9b6f3e848dbc9326c9a5ea772f9c0bf40425e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/notice(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,metadata,file,function,line).md",
-      "hash": "5ae5d79a1d9116d60beecf384c99dde06ebd7e4a5993cceadec6c01b3f0410b1"
+      "hash": "630d56439aa06e5752f25053d591e1cde9d69c2141a70d4b7f620fcd028aa8ee"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/notice(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,metadata,source,file,function,line).md",
-      "hash": "dea0df01a41e293b44248bd947ec8d9d95a24d37c73281970ce4bdafb14d356b"
+      "hash": "6dc1c965fc2e2237878b66cb15d3abcbc5f00f3207fea8498dbbc068a3caee7e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/subscript(metadatakey:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/subscript(metadatakey).md",
-      "hash": "d3b69a66a64b58eb6e24abe7c170951d7c1d9b698249eceb03a152f8bd9c8693"
+      "hash": "dd8e0f83e9c890f10dd13975db67d5a74780e502fc5be0b10accf042ce0e212a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/trace(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,error,metadata,source,file,function,line).md",
-      "hash": "ef27ec18e8ccd15e4669f36b877b079b0ccb9d8ca910fdaaf48db1b117499c57"
+      "hash": "c294dddcf5435d338044f6a573afaecfd58d61482208be431570521db0a2d6cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/trace(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,metadata,file,function,line).md",
-      "hash": "e0843c49b8359dd2ac3082683101c2898cb9bea286a2ef02dff7921b20f1c7bc"
+      "hash": "2dfbeb0a401f3bf0cf8b5c3efa26d8fe241672ea2e4f4e44541c07da72a30e82"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/trace(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,metadata,source,file,function,line).md",
-      "hash": "ba2f7bb2dc61506ff1997486475f902432ed76feeec989db176989a4ee5f6b36"
+      "hash": "fcce93941b3d55ed755265a5b7a2a4bc0ba8442a0497b3b1ad3197d53464e229"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/warning(_:error:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,error,metadata,source,file,function,line).md",
-      "hash": "cd072ed60f87d6b9527a524f5d2f0ed913bf253cbd62bf305a4c988f7d42e899"
+      "hash": "727f77d0cd8457689839bc41ed0508309c37a1423dfb2f3d016d6b775921b9f3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/warning(_:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,metadata,file,function,line).md",
-      "hash": "f41a7e4498f335179540980039c5a7883cc78c17b9a707a361a147059dfff6ac"
+      "hash": "33f348efb3963276290d2870be7c21bcc77cc7b3a03b8029c1b5b047320c867b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/logger/warning(_:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,metadata,source,file,function,line).md",
-      "hash": "b6b1acb4bd88038393a8ca5bea18b47f6964e8af28f9ddc6c7e60fec97d3df2f"
+      "hash": "887acc04ecaa3d7ce2a6d3e9782493bd7693cf779aebbf4d055f54dfb747ab58"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loggingbestpractices.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingbestpractices.md",
-      "hash": "ff74d4481c1cbbf40fe6b334c5007ac8f1ddfe4098cbaf85c1d445de11a93b8b"
+      "hash": "05ada09351076107061baa244e58bf81b6d010cc8ee16dcb816007ab87d76db1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loggingsystem.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem.md",
-      "hash": "ba1c7f032535b8a235bc2bba6af392b13e996256a1908a9739f3f2bc216827d8"
+      "hash": "0d05cc8f72ea948347764ed716accbfe60fccca0796bf5140b3dc118b106515d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loggingsystem/bootstrap(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/bootstrap(_).md",
-      "hash": "0174891b4d521295d42da6af883ec9c5d69ae0ebc8eb2230187f8d2a35e75659"
+      "hash": "e40856ede1e458ba31f93d6d86d75a47be6ebff8d0342b3c45beacde6cb881ce"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loggingsystem/bootstrap(_:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/bootstrap(_,metadataprovider).md",
-      "hash": "ad27372f8e32f4651588984f426b2110e3b13f6ddfccb30fab273a9a86edd3b9"
+      "hash": "aa5448d2a6cbfc6d8991ba61bd3a1864b73b6acb6f4deea4f92bf21692a5038e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loggingsystem/metadataprovider.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/metadataprovider.md",
-      "hash": "8256f1cb3f4376f45031804280f7e75f39f07781d4f930cc985b5a8785284c37"
+      "hash": "a9f97db9a33549d996d5a849fc3ccef4e69db1c8d683fb62478ccf2276bbaeaa"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler.md",
-      "hash": "ae87ab6af2f03dd1ac71a853ae66e3662aa3bcc23fd9df37ba3f252f8d155de9"
+      "hash": "1bb708165ec0199db7c898f3ae56fd39cb762f293d7f826cb0cf0cd4a9a23ca8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(event:)-17f2r.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(event)-17f2r.md",
-      "hash": "b6805f84851a99ffd17a10878cc9727232ba7a5682ae04dc74d30506c1f01d28"
+      "hash": "e8cc0f774d7965bd053618b4e9d19b9a2c55a92d84168978bdaa218537935eca"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(event:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(event).md",
-      "hash": "0242aa24a074dc302a48d0a5a32de65299537feba9307eeec2fcc4b6a27e082e"
+      "hash": "24d24fbb9cadae4ece6b7f920f9d13a8dedbdbf5c8a863b0dd7b578c6a474d21"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(level:message:metadata:file:function:line:)-1xdau.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,file,function,line)-1xdau.md",
-      "hash": "de1c3e3958b4276a93d22c9a16c22c5aaa7f98c782a49e13a3d888efd5de6ff0"
+      "hash": "a52efb11085294180817ec3796d6aec2312f0968ef8d532627a71a1d71563a7d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(level:message:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "e779cebceed7be228840faa6733fa4becda8e9bcf64e28752cd4a98448c23961"
+      "hash": "7a7e062e9fd0fe754a04369713c11e14d880c315c4b4cb392c8d8aae3a3a4985"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(level:message:metadata:source:file:function:line:)-69pez.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,source,file,function,line)-69pez.md",
-      "hash": "0ac372077971ad68538795572c83b084ad9ed4d1fd14c41880dbf067a31cbe07"
+      "hash": "1e435bad4431514667bfc421791aa2f87f005fab47e0b5dd97ee3d972a5c8e05"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/log(level:message:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "9d59d5faa01bbbf673ad0b876f1bf68fc95c61fc94b3d8a08944a6a129ce14b7"
+      "hash": "5bd62618c51238085357f8b1f6a0e5ee88735a3d2371e6048ef0a9a94907ed29"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/loglevel.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/loglevel.md",
-      "hash": "17bc0c25e77b56cf3984a13dc2561ce612a2df4e0f729781423e453d41f76a50"
+      "hash": "d8d55ec561c7fcffc89d3008f25b9d986e635777fc1b8516be49e8061270c383"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadata.md",
-      "hash": "e36d8b969452af64b1f0ce39969d497e2c52163943f333bc895931551818cc27"
+      "hash": "667d58d23d984bb308735062b30978df7dcdd168df12a03d9d3ae4b00d7cb644"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/metadataprovider-7hq13.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadataprovider-7hq13.md",
-      "hash": "d4ab3a54abce7979e478d25c4e6a6e52391401f6d0713e9190a88fdb227cc995"
+      "hash": "0912760fd6a453a604b50eade9f575c900f76c8c290da7b92e3c7a89ec386ef5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/metadataprovider.json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadataprovider.md",
-      "hash": "71d1ca4fa70d6099733fa6eba90db084d3cf8cadb5592874727791f472d92939"
+      "hash": "394341f7a77c166097529525ff91ab3f472204a607f60402ed0f9ee1fe1fbaa3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/loghandler/subscript(metadatakey:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/subscript(metadatakey).md",
-      "hash": "54edbe70cd1fb84f6e3b051445b02685976f01423ba7cd681c07c35f5939ed08"
+      "hash": "9a9879e4a2e31e05086e57158452f760d27f407355ba9d4ff3007cf4ee1aa02d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler.md",
-      "hash": "27e35a9c44663037095054033afcf25aab6dc25a49c602e271d282d7b80be905"
+      "hash": "206f03a505aa7f459776095bdec7c46e6a13514e126eb086ce16653ebd429e92"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/init(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/init(_).md",
-      "hash": "4832593ea2dd2a56bca0c30a2938f9bcbbc74280b6d7552cace0c28f1d96a8df"
+      "hash": "03a7e76a71b55824cf9b6a215ed48f39c3de1dafd8d325aff04f18a62ffeeeb5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/init(_:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/init(_,metadataprovider).md",
-      "hash": "a73bc716eafd03b26aea3bc61ad3c286d779e8f7d285773c6a4521e0dc787eb4"
+      "hash": "4bbc527abbd19964ca3f15023c8b6826256c288eec5f369bb5d4621e875c07d2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/log(event:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(event).md",
-      "hash": "c6540c5de20f32bf6fbc24dad01dbac116e3f36436c1ab322a93e61cb58b17c0"
+      "hash": "e20ab0ac095db2dd8374421520d9fff77ffb4668ddd0b47f830b6ddee0c84621"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/log(level:message:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "7fa666d6f583cbd1538f46c5d1d8918a17404765799e65fcd58430cfeff2f41d"
+      "hash": "6d1fddcc531c115114af578f5574ffa0a00770fcdee228621617e7af4220a90f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/log(level:message:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "99b123d4d9880e9df3eaecca99bf445f500812042bb154dec65b4bdc041da06f"
+      "hash": "7c4e6e858e4fccd7b095592b6dc7f2d0dec6d6ba80956521315724ce308a0e25"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/loghandler-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/loghandler-implementations.md",
-      "hash": "3870cab49aed681513e801eaf4e0f232c7cdd6c2eb58e0a33ae00f239ed1773e"
+      "hash": "ca12f82dd2e65408e575ca18be15298beba4f3df16357f4b16c86153a7f29a43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/loglevel.json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/loglevel.md",
-      "hash": "c8ceff81a9ba4231b9139f6984c9975fc356d931cccb80c9e7b0d314405f0743"
+      "hash": "f5b87fa274ad261e3854da82e8c7689d0b08c5048e0ee8274327489c408308a8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/metadata.md",
-      "hash": "8e2a68ec7b7e3d25d50694bbab9f5f7071b04d320ca3badba2f3915688407ab0"
+      "hash": "3aaacb64160437540310b834fc719efd61da7cd39d0b98cada57d90a34f5bf2e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/metadataprovider.json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/metadataprovider.md",
-      "hash": "aff1634d1842dd523f625a788ad9bf134b4b037a6d29e9d2f078a71b2fe8b0e5"
+      "hash": "45089a61609915e4f65d9044e559f4a7ac4595ae396108f06fb2cafc09a9df9c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/multiplexloghandler/subscript(metadatakey:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/subscript(metadatakey).md",
-      "hash": "80aae5ff3eeadcca102d6304b83bab3e22a6982d9df34da81f7b7c7f66345400"
+      "hash": "a19498ef5d0f731f502489dbb5ae17ee56cdd8cfcbbedd8230514fab8ecdb2cb"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler.md",
-      "hash": "f5c2a80fb501b113ef67008b9eddfde9adfe53bd0a86dbae4c6779b549446417"
+      "hash": "c56638ee28fd5ea37164eac63b546fa6128d4a390ee540104f8a369942ab4efd"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/init(label:stream:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/init(label,stream).md",
-      "hash": "4b25e6a47e389e3a3c059992d59b2a89e26cca1bcfcccff643234b34b7d2d759"
+      "hash": "534f87990c6261d01a17bd57a9b420002833d666703550803d8e7a09e80fd7de"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/init(label:stream:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/init(label,stream,metadataprovider).md",
-      "hash": "79bbe04b67a77a5e156c867c0c41221a93e77c4dfaf1b1dd554f1acb1c965abe"
+      "hash": "84a08f14691b94d5133105caf3a36c2749ea8f13d2ec11aac46de73e75d688c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/log(event:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(event).md",
-      "hash": "8c540fe13b53e6fa62f375d65a3780ed7e5be4c4dbc2caeb4efdca09fa63b8f6"
+      "hash": "a8d7e7d82a729016c8c2e8ee64570692ff5e459e44b3e8a1419409c367381623"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/log(level:message:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "0e9930e7b34ad830792f925d50f6fe11c26d84fa3297e64c9e313ae7a2fed05e"
+      "hash": "59b556b19ebd4a6423de720792cca4ce18f25a2f25014b00b9cc28f72f4b5638"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/log(level:message:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "aef23f72bd2cbf1c9bb255b3ac335801dab39e49d12482cb0fd327575c08ea4d"
+      "hash": "e5e69130e7a1dba7ae13fc4562ad3c014256481bd09b7e82caf3e3ac29b42d98"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/loghandler-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/loghandler-implementations.md",
-      "hash": "130301c20db384cb35d5217f52318053137563ff6bde3fd79633e3f6e41e9f5f"
+      "hash": "aa0da11827058828b8b0aa63f29492f3d5482fd371ba4829bb9a01cbe8f05d7b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/loglevel.json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/loglevel.md",
-      "hash": "eb0cb6bb152f9fe9caf3c16af6984d599c4bcf672a363cea26476b8696df1f24"
+      "hash": "83bc7c4cb6c4361da1443d7aac7fc63ff7d948951f13ed05dd875cd72dafc3b3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/metadata.md",
-      "hash": "7ce0503e17e48e4c6eb3b56c07424aec7546b61b6a0f4694d6c09bdac2a1cd39"
+      "hash": "33b22224deb959688f87cbc6d3e9568bf5d69d94e472ed1677577a15036332b0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/metadataprovider.json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/metadataprovider.md",
-      "hash": "ab54201510d39eefd27140cd3cebf10f9f4f86fcf1a276525fb8ee1f300a5bba"
+      "hash": "3618f2cc8c872c6de1b927ab4760816f5add0ec36f021fc64f4721959c3f39cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/standarderror(label:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standarderror(label).md",
-      "hash": "9ea3762e72ae50df5c5a73733b13daf1ae90e878a60559dce4601df79603e118"
+      "hash": "75993027058a8d74f9b76df0b1b91b3f3ab510c6c3f73edcf5b3e6a7ca6d1063"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/standarderror(label:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standarderror(label,metadataprovider).md",
-      "hash": "622f7f622e479754e46d289a0f46916acd32265ded795ac5823e915b248c31d5"
+      "hash": "142aff8e264462ae20fa844ca8db9d6cac1208b19be7d46882c7a5d9debab8a1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/standardoutput(label:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standardoutput(label).md",
-      "hash": "a2bb4203d05194d263734787ceb028f51f8f0994b901cf5d4236c5bc9ea0e5bc"
+      "hash": "a32b247c68f39445eb1ee27dbdaa3028d391ebbc033f71a76e20170fe3c81a5f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/standardoutput(label:metadataprovider:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standardoutput(label,metadataprovider).md",
-      "hash": "c2a8434a96cc6bc4e7e1ef756a0214d3cc2af03c4bb9820fe04d03ef03ba0bf4"
+      "hash": "84634ee979b2d1df9e73b9f3317e9beb1d960b9b761866517abe05151d3dc399"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/subscript(metadatakey:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/subscript(metadatakey).md",
-      "hash": "36d2f17e4ad71c8219a8dbf380d4522577b0f7465690cc1a1f0620f1df715787"
+      "hash": "a24b8d5abe039df8c77191f0dd567072c4cec26437f9fd1507ae702e0362a62c"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.enum.json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum.md",
+      "hash": "49336affa31702fc06ea38c1c60e88dfc171e60b9cfc0f5e826caad2dcda216f"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.enum/!=(_:_:).json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/noteq(_,_).md",
+      "hash": "b6234436bd935b1f5745598ab7d6d88314885fab9493012a336c256c605089c2"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.enum/equatable-implementations.json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/equatable-implementations.md",
+      "hash": "2ad4762c3b1ada65810a1eb1141d1e4407d87f5858b283dbeb66c0bf3979e037"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.enum/milliseconds.json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/milliseconds.md",
+      "hash": "128c01513a4004eabdf9e79037259f6b363caeb0fd04f58162ccbd4afbb611ac"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.enum/seconds.json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/seconds.md",
+      "hash": "da7ca671d8b6830a218274d1e61963403e6cff76fbe34fce7e5aade8e24cdecb"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/streamloghandler/timestampprecision-swift.property.json": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.property.md",
+      "hash": "4f5290b4d70c03299f641d791ae940ab0c8ad0fc8bf52613b315e2ce67dba006"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler.json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler.md",
-      "hash": "ce7da43524da7d9cec37ed2f5a9dde57b10505bacda36397d862153d4b6a8c5a"
+      "hash": "8295f2b61ea9cb7d871cbb7b79430c984667445b3edf73509bcb57d732aef351"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/init().json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/init().md",
-      "hash": "5f8c77f4342ef822a1273fded9bc2956839e4addbd4c2f3951594338fb5fa0e5"
+      "hash": "32d8c96b6835b1633be98d2e3091404e4e8c8b0382d35c231a5f3e250157f9c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/init(_:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/init(_).md",
-      "hash": "c10967c2de8489d04a724a1bafe53eb06ddc71ba9321beb4ec5368082cda84e7"
+      "hash": "b5de2edf63bc9d2cb03027524ee22b73bd3385c363c61a1d4c0bebf2148bc988"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/log(event:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(event).md",
-      "hash": "bec0bb4d45ce68c5e4fb4cf5756d7088e37fe6867d97ca50362dc0c729c208d0"
+      "hash": "010f4b8b155ccc96b94f03d36efe3e92a78db0a4c55fe6f738b96dc9784b145c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/log(level:message:metadata:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "a6406e32642a9b5d1757e6edde785e67d6df7d3873809d54f20c2e8f130686aa"
+      "hash": "435cbcb35d6a82ed5928998a2b656a89fb4b16a76a94d49ac365345b771153a3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/log(level:message:metadata:source:file:function:line:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "2df14b567663f4a9aa3529581b177c9568d20f85b7aff804b801a158db87b0f9"
+      "hash": "933547dcc1143d1d207f3ca546ba945dfe872aceb886e88d46ddd2d1e48bf9d0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/loghandler-implementations.json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/loghandler-implementations.md",
-      "hash": "2d37d1e5476c1f54917dca2c6bcd96a428008ccd798ffced6d31d490497e780b"
+      "hash": "3ccb3cfff1a2725682954e86ac2f4191e25c3e557509bd0cd36d868cd61c083b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/loglevel.json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/loglevel.md",
-      "hash": "d4580141c23c200462a3130e3a360c33e722143976c25129a5e49c73ee100f56"
+      "hash": "212f1f11a334d73b157a81e7cc93035fd77c66570bc0f2a8911598d305c1fb76"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/metadata.json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/metadata.md",
-      "hash": "e1c520a77a1884d156f370ddd0847da7984c6d6d3b086d3cc7d971f0839a25f0"
+      "hash": "8ed24398a0404f69f6f823dcd87c6fb30c313221fec32caeae735dd5931b3f79"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/metadataprovider.json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/metadataprovider.md",
-      "hash": "2cd98a1d8fa8bc4dfe9b3e3aac566f1e504bdced73490bcea368a26c10891e46"
+      "hash": "f30638a26dc20fe8339f1f60a0d7340eb68ad4790b020d294269a1da85b3b251"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/swiftlognooploghandler/subscript(metadatakey:).json": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/subscript(metadatakey).md",
-      "hash": "724cc24a1e4a752260c3d312335b28ca904cfe41c4f05d798d1c511a8b40d760"
+      "hash": "f71ea9ff39ca97979261c14195bce9fb0afe1c122b95e978c02317c24b47f932"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/understandingloggers.json": {
       "file_path": "documentation/SPI/swift-log/Logging/understandingloggers.md",
-      "hash": "1f96fcc46c70a89c9ea356d84e73c3b50c7f973709e1eb0db83f0edf762a2cc4"
+      "hash": "e879fa833287ff2f046c9ecf1a33db302f3664b8b2e143f4c5704646eb130b0c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(_:_:)-3dt06.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(_,_)-3dt06.md",
-      "hash": "be85a202af6ca6e9686b866951244fff80d826e9513029eeddbf1f88c74fa3ec"
+      "hash": "7c17da0401d5d1ebe6e989702607adeef52732936117f0758c8ffadba89aa7ec"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(_:_:)-70nli.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(_,_)-70nli.md",
-      "hash": "80c3fc130105a6dfe0884a2558ed445e1732aa7357ea868c2f591b57c9911164"
+      "hash": "e13843b57c92818f839d63568380f2d82721f9b12ea5f929c448e361cd61b7d0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(loglevel:handler:metadata:_:)-2pd9p.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(loglevel,handler,metadata,_)-2pd9p.md",
-      "hash": "6bcfd13735d066beca7de6ca1e585d6ea844b4a1345e56aa5e32c8ca2d9a710b"
+      "hash": "cb172403d6ef8ad5c2e852942b3008aa5135bb868e856c687c61078917daea44"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(loglevel:handler:metadata:_:)-5nmw6.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(loglevel,handler,metadata,_)-5nmw6.md",
-      "hash": "e12ce2559b89d6cf48e0815cfda21b131b113a633a2407b71038235537929709"
+      "hash": "f17b79f5740a5e65f5f07ccfff5a172bb61a6c7b8c1a08291af27fbddc88f34f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(mergingmetadata:_:)-2c7dy.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(mergingmetadata,_)-2c7dy.md",
-      "hash": "29f7f5611cdb45b7458e46ff12c66355c33103fe7414a0ae5517637294888089"
+      "hash": "1617add936daad320a2ac89cac796eaf18a96a0f99f1431b1fff03aab5c7f337"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/data/documentation/logging/withlogger(mergingmetadata:_:)-3eduo.json": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(mergingmetadata,_)-3eduo.md",
-      "hash": "0c65a89e7ba51c455dc1df4531282148e43fd62b69b14ab2927aa1bb5fc56255"
+      "hash": "60c8cda8e471b40e08872b3e15f78a23273e1410117c550e91e2095b405e80c2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging": {
       "file_path": "documentation/SPI/swift-log/Logging/Logging.md",
-      "hash": "a6be28e27ee4321988eafd9e90ee0bf507d89af4bde55d27a45498ec24ce34b8"
+      "hash": "1b54cd7211e856e177e7c10974020184e96832394995049de206b321bf7b08b4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/001-choosingloglevels": {
       "file_path": "documentation/SPI/swift-log/Logging/api-001-choosingloglevels.md",
-      "hash": "aaea1afae075026ae40c7f77241894c8f0b63e91dccd8842403582e7cd26c793"
+      "hash": "12bab95505800f3937e8d78c69b1577f73443064801cc86ef5f1cf597a16c807"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/002-structuredlogging": {
       "file_path": "documentation/SPI/swift-log/Logging/api-002-structuredlogging.md",
-      "hash": "eba4dc7484bf6bc08689ae3bde90bc9684b69118714fa5bd97b844340bf401c5"
+      "hash": "bc8ff81009b18d4f7c025451326cfd9008b40535c5ac7aa98d86832579cb1ace"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/003-acceptingloggers": {
       "file_path": "documentation/SPI/swift-log/Logging/api-003-acceptingloggers.md",
-      "hash": "0445b08b5804b453d45cfdb4fa3a5e1673ce83c39a8e0d223b9f7c734e1e6627"
+      "hash": "b3da08858d4bbdcfb5a03162ba8fe180a91dce8883c3ec7a7cba766577937971"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/004-testinglogging": {
       "file_path": "documentation/SPI/swift-log/Logging/api-004-testinglogging.md",
-      "hash": "d8f2dca97af5870c2f54f0f069b70694df71300d6cd837dff3c68a0266e30627"
+      "hash": "c2cec8559057cc524c9f572bcc591c0afcb1a8d034328a57d9b1070049fbe8c2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/disableloglevelsduringcompilation": {
       "file_path": "documentation/SPI/swift-log/Logging/disableloglevelsduringcompilation.md",
-      "hash": "7fd2069f8f7f1503ed30f5b9120ee030b266230797506859b45308b019da9650"
+      "hash": "ac0321eea91613c143d2529f55c257ca25753284ab2ab66c7b3feb3932c1af68"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/implementingaloghandler": {
       "file_path": "documentation/SPI/swift-log/Logging/implementingaloghandler.md",
-      "hash": "e099bc6b69fd7a688bfdbeee2e2205ed922d9908b41d5b8bc6ff4e13e4d3fc3d"
+      "hash": "ccf2c519756e441e08b3b64f1f4a58e84cbaf292ef7669b9a98e40aeb81d4276"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent.md",
-      "hash": "e663bc8e3ffdc552b6748fa8256daf25e65c28e05e7551e9f3971c726add7ed0"
+      "hash": "3eaf1ede2bbcf6bf8d35e36155f746dc5b9d1c3f2e275a8dc98f44f7d277e3c7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/error": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/error.md",
-      "hash": "68ad2ee99f564b68a0f37951d7a1075b16faae50cb97f8d7ed6a1088f4387af1"
+      "hash": "35fb479985ae166dd4c06847eb629aaa3ac3cc963c875d518b35d0247fe678f5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/file": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/file.md",
-      "hash": "b4eca396f636b74f27ea8a17718f8d50cc0245cf03a90dac576c5063860837e8"
+      "hash": "6f81fc3641da82129eef405442db43cbc3894c4092a9bfc9ba4145cc9f8b9e26"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/function": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/function.md",
-      "hash": "6c81b5c77edee45e7ba9201ba606afff9815285007cf1caa64254dc8997a70cd"
+      "hash": "61d7c98523ec47fd53bc5796ba2b9c050cad1b4ac7fa201f886b92a542bc57be"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/init(level:message:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/init(level,message,error,metadata,source,file,function,line).md",
-      "hash": "7fa525cc11a27419046a9a0ab9f5e3df2c2add54b1e4925567163fd4837f888c"
+      "hash": "a8d21817f82ac45dbd3039511c61934dfa16746cf797016d9014c760013bc5c8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/init(level:message:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/init(level,message,metadata,source,file,function,line).md",
-      "hash": "eeb545a41ff5adb4178db068f12e7914e9ff6c82cd30ccbb525ca5a9fd51ba92"
+      "hash": "c189d4407961487e121a9a1409f8d0244d93775df069f93c8d622a5d15979762"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/level": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/level.md",
-      "hash": "4b8fc116ea164fb9c12093359e64c663b7b6e08c71f0fb8fc389531b57794206"
+      "hash": "eef930aacaa13841e6782f7dec36621efbf6ebeb45dc7840affe28d6a269d42c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/line": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/line.md",
-      "hash": "ed6ea03d3a7304713979a8c6c0a8f15924837de79bba1069f1ad48075b1f2529"
+      "hash": "a91ce8b6e8b36095ca121480bf7dd7939b2238568419f4f0382ca993f4b42747"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/message": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/message.md",
-      "hash": "167be07b212d272e0a27343ffa671ac1089547ca37310b0ab15c4923e5b2a3e8"
+      "hash": "6783d1cd319e2e93fe016c461df6191cd68b8e9951dfe0b222694c441bbcca99"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/metadata.md",
-      "hash": "66c457e41a36bdb9db22d3175c768c597fadee10a3aa43cfc3ac8fd16c30a92d"
+      "hash": "337b577a395ebb2559fe149066588dbba7a50493d1868b6c11a42b72bf7f5e43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logevent/source": {
       "file_path": "documentation/SPI/swift-log/Logging/logevent/source.md",
-      "hash": "a70fa3ade025781abffc274f1cc7c2652577935d865aa058889a8fc663b85a4b"
+      "hash": "6c47f59cf9d443d5258782578e31a0b794a273c66cba1c11b3df96a6e2000707"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger": {
       "file_path": "documentation/SPI/swift-log/Logging/logger.md",
-      "hash": "23f0c24ed544947f4ee953c42eb7330c3290ec7df15d4e5b38185845df1f2e7e"
+      "hash": "51cf0f1d10086613efa4129880673673957ac9a62232c48f371b83283552fb0c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/critical(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,error,metadata,source,file,function,line).md",
-      "hash": "6e0decd14cc070f474300455358a05a386dad10d455c1d3e3d1f3cf6cf5b2b02"
+      "hash": "504803a348d5fa6daec37fc3808de866a5cdeb6ffd4a31ae39b4a98a44704ede"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/critical(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,metadata,file,function,line).md",
-      "hash": "4676199f14d011f6a254bc6b3dd80e0d68cd3c850ce8fe71fa0e8b132ac83726"
+      "hash": "347c3c4199b2eb1502f38a805b670fb8b472228c242e1c3f271fea305e5ad644"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/critical(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/critical(_,metadata,source,file,function,line).md",
-      "hash": "dc5a1c8b0b55c0c38a9c6f1e6803f063762ef2737e349fd093662e0b0c0acca5"
+      "hash": "d5d2cb508cb21e213b9ef85632960b73f58316abb561951cc018e1925952cc52"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/current": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/current.md",
-      "hash": "84eb9f6d5beade191961edcd58dd1b9b0985f0b08f9aa34bb903e6b94febf084"
+      "hash": "f854055563d4fa5c0a432ffcbc57ca1386e7363d15beffe5cec17eb1ff1bd6b6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/debug(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,error,metadata,source,file,function,line).md",
-      "hash": "5a5583d70330f3c5843beaf42f9491592a9972f8a0517a3caf0522f8c17f4fe9"
+      "hash": "064214afa90473659e3de5624f4ef6aa1183ad3e258eafea53f64b9e8e818bd6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/debug(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,metadata,file,function,line).md",
-      "hash": "030b8b34fd26b9360e1a6167bd36659df61a6a0fb9220c067adac09dbd8f5438"
+      "hash": "4b68318c0014faae9b0e230dc7c475fba518d2b20048d9ae228ab58d213455d2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/debug(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/debug(_,metadata,source,file,function,line).md",
-      "hash": "715d7e567ead0f046d0d5e4a740b51ddebeed0858054c038d0806e084f2233a5"
+      "hash": "47f56c64de408333f90c508e45d2a3c206a83a0472639581314713abc5d5b15d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/error(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,error,metadata,source,file,function,line).md",
-      "hash": "f040f905eb0638921325ac0ff8f903a4fda4bd95ebd2f032bdf5425f1c3e174a"
+      "hash": "a3573273d4419bff18d0788149a3f0cc5384a1dcdf7ae33ff73973f3ce270102"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/error(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,metadata,file,function,line).md",
-      "hash": "54eceea3cebd372e36414991aba854063591c4583ba740167ca0eb84c637e29b"
+      "hash": "73c590a454d4591cdc8049c0f8bd538d4046354f12bfc693842e0d056d73cad0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/error(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/error(_,metadata,source,file,function,line).md",
-      "hash": "f17640bcafe841045ad848998c792d6e2a35d285490006e14e571da9224a717c"
+      "hash": "58c85df5cea5e9c05985f33be4188a9bd3b45882817023081704cc311a7ec31b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/handler": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/handler.md",
-      "hash": "326c5521e41cc67679a93b1df4112d0cae1d0450de89b2dc4b6203cec46e2a14"
+      "hash": "770c1f9d1b6f85ae5d81b6ba93cf886fdd9fb6c15e9edbe7fef0f2455cca0757"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/info(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,error,metadata,source,file,function,line).md",
-      "hash": "1c77ff52f33a4c987aaf057bbbbfb5d56433d8a029d69a21888aa74607aa566a"
+      "hash": "af406a442be6d699092368e42be87fd5850f955d99ce99b97ea9e16fb86cf15b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/info(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,metadata,file,function,line).md",
-      "hash": "18a63812dbb2212662cab36fdfe791bca3d0df665346d49b62e4e6af93ae65fc"
+      "hash": "b8d609b993469584410b2b2460b64ccb1ee2bc86a081de436c1dbf4bdc6ef677"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/info(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/info(_,metadata,source,file,function,line).md",
-      "hash": "afe040b344a38c4ca441c916f1bd949287fabe892dfc8bd9487cbdb25cc2d610"
+      "hash": "52d92173039536dc617758d2e739111aeda29db0e9624dedce92363bfec68d91"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/init(label:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label).md",
-      "hash": "b1e1c2918934b91d5eb80f02ffcb432fac0b03e149205177c5228b7871dd2ba6"
+      "hash": "2814909703c17360ea72bd3d0b5afbde6e7669c580becc8eb3f1a3903bf4bfe8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/init(label:factory:)-6iktu": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,factory)-6iktu.md",
-      "hash": "155eaca80eb8d5ef0e6d38529c46cd90b85219e56db75cd28f665ff18735ad30"
+      "hash": "950520b5ecf738d595fd62757b85a5d0c06e33710d5ca8eea5d1f0b56432d8d7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/init(label:factory:)-9uiy2": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,factory)-9uiy2.md",
-      "hash": "8af980d913cdaa606079765f4e76322bea04a1450b79405dacbc8295eb3ff812"
+      "hash": "29b53a88f11482d71decc739d87c74765fdce825e12caea0bf602767fa5fce20"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/init(label:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/init(label,metadataprovider).md",
-      "hash": "e0bc54b1e8e7c968115e70c648d092cda6aa9cb530c20e181ed8a610b4d563c6"
+      "hash": "1bea837260a25f3065820745afd41376bd19f31575ed74f34592401615a1f9ce"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/label": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/label.md",
-      "hash": "e952ba528b961549a884c5469220c234fab51bc96af03ab4acd63d1ec4d08239"
+      "hash": "2c98cc600a2a126d17a2e4a104e8e16ac693bc3ecdae018a500a1336830945fa"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level.md",
-      "hash": "f04d9287b241670f066a7050f8711a7b20257e0a2226742450bc7fc12c608939"
+      "hash": "f0ab1d72b4cfab3b14423ae0bcf626ef600566dfb4b4fd69a423bfd6b956b16d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/noteq(_,_).md",
-      "hash": "9a9c62884a0667bdb9ae2fa131fbabcd6f5854ecfc726d35e7b005d30e3b9b1e"
+      "hash": "8e5eff85e2ae5e71fe776ad4f9c79a29ed1076f14a7ebc183728976c2a2e4c90"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/'...(_:)-181cj": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_)-181cj.md",
-      "hash": "d77f0583eb0d768bb8bfe7d0721fb19e17df853d8a6fb3a27ee234353cba2ee9"
+      "hash": "68721581aa5b691702c4f028b165a585281cf946c580496da642144846024e5f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/'...(_:)-9337t": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_)-9337t.md",
-      "hash": "23a174e51dec77422c81da911a195ff674d59fdc17ea7a6edc1928c3efff143f"
+      "hash": "19ad1287b097301af36af23dc637e9432c2a18ee079080e8256e94d30ea013ed"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/'...(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotdot(_,_).md",
-      "hash": "14ad7ae4324a7503d05335e11a6c91b50b80284f2fb921208d56cf7c28f93e60"
+      "hash": "a500f6f3a2e9571dbd7553e3e753ada88c3d5159fe4cf9f3870e0946f6ad3388"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/'.._(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotop(_).md",
-      "hash": "f09b428db656a431648ec45e8bb952ee5713376fd4742fcc35cd845a6eea00b3"
+      "hash": "434a98071f6eb886b245c9e82540347f8a58c1c9d2db4361b0c4e1adf78e05c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/'.._(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/dotdotop(_,_).md",
-      "hash": "fd8942f44f76cc6e55f90e414aa416566e74a9df7b3d45797ced09fac75a9cd3"
+      "hash": "b2c5164e43a1436dca456d25562e5ecabd3a62701e3f316d4fc7ab27d4a13473"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/_(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/op(_,_).md",
-      "hash": "25c7e82a2b1f0ca016cd029987fead09c3d86a78925edf7e66704d87ccbe7c59"
+      "hash": "534e48caf2927bf76006231636997c71298f5c612368b04de94fbc06e1b41fdd"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/_(_:_:)-1ebiv": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/op(_,_)-1ebiv.md",
-      "hash": "13f016acd8c56f5b708767c1256c4acd414dad170693d53fb6543c2aa00561f2"
+      "hash": "17c4529dcab79fcde614418f9962101a72ca84bc73335aa358938bc6d2378fe5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/_=(_:_:)-5l40d": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/opeq(_,_)-5l40d.md",
-      "hash": "3aac1ede2b51281799f18eda72e5b62bb01d1a083ebc10406f8f9f2072ea98dc"
+      "hash": "bc9b3750a1f32d7d8a2869749fc58bd0faed0b963009d83c5b2b5ebb7d1bed7a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/_=(_:_:)-678b7": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/opeq(_,_)-678b7.md",
-      "hash": "19e461e59886015e2cfc6d334e28b87f86cd615ba67d3f7c8617318beb9d643f"
+      "hash": "13dfebd50afd2a9f22dbc4b3522e77ac014c9cc8d81071e908b14470c1359be1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/comparable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/comparable-implementations.md",
-      "hash": "0c218c97057916dbfb75ee9918da255d02cb3df1c35a18965955c214d1f2fa1d"
+      "hash": "f27afdfc1c76691e3b9860a6def210cbb4fa3f8f7d9c2e0aa06bbb5f6fc847c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/critical": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/critical.md",
-      "hash": "d9e49fe3786802625fa762d105452e94e11265d85c54ac09f94337952be321c5"
+      "hash": "251a5b9e548267c4b355a3a72078941f7eaa829d6484b965cfb2d9a3ce51fc93"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/customstringconvertible-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/customstringconvertible-implementations.md",
-      "hash": "3a8a103133dff5002fe429defc9db701dee280a3436b9ffaf7166929ee6c5d60"
+      "hash": "d7fe69486a3c67a70aa87a54d01e3f286e4f6088534e14160f5362de74d3a837"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/debug": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/debug.md",
-      "hash": "d0ca07ab65ef8ba7dc2c93443236b332907a8fa8155df9a9d8f4ec07541eacf5"
+      "hash": "1b8d6c57ab84f216906756ac951964b812bce9adcd0bdf7279cef4fb0b86466f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/description": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/description.md",
-      "hash": "4c53f134722fba093a88cee470cca195700d960ffd3d77fe85d4bffa060669fa"
+      "hash": "83b91b6fe38d2288b7ecccd135bb73821fb816b8e17ef7e0ea4cdea0904fc393"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/encode(to:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/encode(to).md",
-      "hash": "3666401e9aea5d2b20f1feb111093793dd53c0f59337f7d614ac7de530619227"
+      "hash": "bb7510e944c877d94e32fbbd93a3061a0fffddab4d6d388c9d3f3975e90697ec"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/equatable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/equatable-implementations.md",
-      "hash": "4d330861ca00a2da114043415cd6fd67cac52792f452c7b6601ee3504bdec046"
+      "hash": "71891fa961e06a7e6047cbaa943bddabe760da6845ec7831479f02238e28e1e0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/error": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/error.md",
-      "hash": "658d1552fcfd19745866d070b6e42c29db1b880a2de2c01e16705ecfc51b41fb"
+      "hash": "80a148f90dce58dd4c28d41784b9615a6fa27705c3378e03e1c51093c9f2e070"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/hash(into:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/hash(into).md",
-      "hash": "22eee596f321706fd3e7899a0d24e6559a7ae8ec1ca1f6376f8809e975dd6dbb"
+      "hash": "f560139d4685e74dc81e56d412c5a9499393352100bed031691f2524c6e53dd0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/hashvalue": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/hashvalue.md",
-      "hash": "723f5d17ed2c8ae2cd699754f4a62050e60a3ca27b6fc58a83685934f28ab922"
+      "hash": "3d866ec2a9700f500802a358722f0d61a2d6bcc42a851327a2e734dd83da6202"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/info": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/info.md",
-      "hash": "0f39e74ac8fa51cb719f6aed506294cd69763033622c39dc9698ecdc9fd34e62"
+      "hash": "3266c8f88f654b8e2dcb6604bebc02417121788a273488c11dc08e9674b36d30"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/init(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(_).md",
-      "hash": "efd74c9d794b3986b902ad3c02865b09e64244b62c8623c97f2f2145524e0b9a"
+      "hash": "e41816904888f4a04432382bcedd369854a2772e826a371118b5e8ff51fbb168"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/init(from:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(from).md",
-      "hash": "f09ce6a4671acbfcba5549ad3b6037de864e3cc4bac2639a3bc9b8b64b9a8fdd"
+      "hash": "ed1d8da6926cbdf4c0b3462bd4950db0d6dbaf5e9fda67f380ee0da94041f706"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/init(rawvalue:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/init(rawvalue).md",
-      "hash": "0e26e6dd5f79094f8fb48e749ec4fa23c9c0208d30925df032ddb7e23fa34dad"
+      "hash": "20f9a021cc59fd2111bd0d2f803d0c869b8583f2dd589695cb2568ce52a1ab60"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/losslessstringconvertible-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/losslessstringconvertible-implementations.md",
-      "hash": "3b4df14f99e03e65ccb0d3f8abe5160bad300bfff2bcea8ec1b1687abf2cd105"
+      "hash": "296b1d2d7e2f47add22ee326d7b4c5059e53871a51b48f98390ffc1cb5cd7242"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/notice": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/notice.md",
-      "hash": "ac279f5ba436de665c4a48e1bcf9fc9b544da34e52dd0e16a2e5ebd309d2176b"
+      "hash": "00d2ef914bf4367ae955aad34f7cbeb79e174928fee4b3fa017b616d330afbbe"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/rawrepresentable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/rawrepresentable-implementations.md",
-      "hash": "d9de3cd87151ccb871ac86c3119d6442cfa1aeb687e91351050ca8bcdaaa09d0"
+      "hash": "bfc8150d5f85d67887a3fd59f34134eacd066721e82ccf79d83ce353453f32e8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/trace": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/trace.md",
-      "hash": "8b975c01e80bbaa5362d5d4fed470adcca9c6f419be01ed1706316143414b5ce"
+      "hash": "e1ef5b7d6904b793df49df740c97acbb1d3177c606cc8b4738f29563479871f7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/level/warning": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/level/warning.md",
-      "hash": "5a7640d9a609c2a296d0f9d5e174df70041071a3aa9a2c3bd73418c8d514a514"
+      "hash": "d6684f53425fec8075c97a5fdef619f7cf68f926cb57bc51f1f6a0823a8b3443"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/log(level:_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,error,metadata,source,file,function,line).md",
-      "hash": "55d3dd61aaf5d59f587e19447bd28a1a4c29f09d92c68bfc67214d1adb68b2b8"
+      "hash": "652d03954cc234d5393895fefb52eb9f9e6aa4cefbadc01dcc79cd4b6f3ee97c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/log(level:_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,metadata,file,function,line).md",
-      "hash": "3f9c220f5911e6b34cf6ab9ab050e971cbe9604ab65060614be6df85c06d641c"
+      "hash": "b0a8645a7d97b070a94ab53a1c42dd65ecd1af15cf5c873814152c36bab019c4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/log(level:_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/log(level,_,metadata,source,file,function,line).md",
-      "hash": "a556333353b1119b65ca52e5a8490d12d31c5c74daef4478a513a71fffdb6ae4"
+      "hash": "32960679a39dccd4b7b80049eb364041b994156aca26a633fb7973670a34f25c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/loglevel": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/loglevel.md",
-      "hash": "7bba3112f4979dd355035871fa98ff445287ad5ac5a039f2f23ceda57c6c0d27"
+      "hash": "3678bf9bdcd5eff76986029b27c646bbbc9ef66acfe5b8b204870d07c202404e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message.md",
-      "hash": "1aa20c7d44dd6a93497e8df0af905b1d2da8f05aeaedfcbfbacdd707da01428c"
+      "hash": "8a02fe337a01cde249d4a274d604a2461d18b99a8f8c6a63515bcc930fe85997"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/noteq(_,_).md",
-      "hash": "f68b0be78a79326c6eecd150b9150620fa519fcdaf7ac17fa0a60e0fee1084b6"
+      "hash": "188cea87e518e277037a938696b10e70187b441a688fd68c3ac0c8c1bcbfc080"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/description": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/description.md",
-      "hash": "fb344fa529c11ca958c0249982fafa8133be4412654b3d1cb906ed5809365e4c"
+      "hash": "b194390f86fa5795b1adaeef7a8f0b3a8b9d6d6d79051242cefedad19a9e2421"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/equatable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/equatable-implementations.md",
-      "hash": "7e785c3eec11fe3314b3ca183954f252ff67551e76c5b4a2f48b1d7899ae2bc2"
+      "hash": "4cde653c69b8506b777f4053330d3710ac3a028e19bb8d480b92ad11adecc72a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/expressiblebyextendedgraphemeclusterliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebyextendedgraphemeclusterliteral-implementations.md",
-      "hash": "cc11f8d4f6958962e5d61a90ca8dae0260e0e4e762c4f55b61e058e729607dd4"
+      "hash": "6ffb36ede076e4c4eb9a013fa2d004d6d4a5248b356f356d2eaeec5807552487"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/expressiblebystringinterpolation-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebystringinterpolation-implementations.md",
-      "hash": "f97355b6486f488323b6fe7fab96ade1ef3ba95142c05589af590dff488fea8d"
+      "hash": "8a8bd08ec3f6d95089bceed41e6b652c4fab8f561e33aec73009ebe204ed09cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/expressiblebystringliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/expressiblebystringliteral-implementations.md",
-      "hash": "6ca14c67f4a4daeb76b48c935f6165fae1807e82b5dcf44e195a65f1962b1ef8"
+      "hash": "74aa60d46f2d6f5c00a6428f29d5ffc5ec98920046a48c886cd415bb0f0938ee"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/init(extendedgraphemeclusterliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(extendedgraphemeclusterliteral).md",
-      "hash": "76a92bd9e42ce1ad8fe3d4c28fa493d08a0257dfd13f1e39b402ca966ccf6cdd"
+      "hash": "aaf64b7497fbb3da50ecb45f3a73c9ca16e831fcebfcc578df73a715b75571ef"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/init(stringinterpolation:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(stringinterpolation).md",
-      "hash": "465f61dae012f6aa1116ac7d8319a7b13e56f3d29e5d4b94f1fdf324429df6d9"
+      "hash": "8dda879c04c8de0917aed1860efa4a22d0d0a3aae1f739d74209007b9701d3ea"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/init(stringliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(stringliteral).md",
-      "hash": "8faa83e280fcbfd10623e168a783834a379f7bac95798028f2c299f3beb79040"
+      "hash": "2e35ec7f697a1bb7b489ea65df601eebb556e5b44029f2b8ad952a48e84e0166"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/init(unicodescalarliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/init(unicodescalarliteral).md",
-      "hash": "f281b246720cbe01b0855185600d5c3a4cf2fd6e7b3e8c3095a8df8c6630ad91"
+      "hash": "81c8896e4d844eba7dbad9f6567703b2b2e32ac3136910d8fd06eb7938bd6cf8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/message/stringliteraltype": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/message/stringliteraltype.md",
-      "hash": "ba3640e20493d91eae319ca3eb8371d9f19f555ddb675e98a80751f1d38f45b0"
+      "hash": "8bf38cc2a24682e807537f0de4c2a347fcce9459877efc3120398e4bf078d980"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadata.md",
-      "hash": "fc6c9804d499a58b529893066717a5193a175c2101f82ce547e3da74cf187855"
+      "hash": "a098b16e3dca911ed5ccc7cf7e9b732a69a85741313e3d488b09ab49ce322d78"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadataprovider-swift.property": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.property.md",
-      "hash": "f3e7b923b99f004c7ed9e5cf95a320755184e9372c950d81ba603533515b9d18"
+      "hash": "320625c251b6327fead872344ca6ed1023f5f3c35cb4e60eab80435fb650f129"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadataprovider-swift.struct": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct.md",
-      "hash": "6966cfcbeb1d6e464d8c79504899c8c52efe7223c9e37e0a41d1861cfafc3899"
+      "hash": "42d240c3b96f0ac7314f16554ffc1190bd07e14661090cef9383f444ccd1e665"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadataprovider-swift.struct/get()": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/get().md",
-      "hash": "60cdf228aaafe469c0ff206eaf951a7bf6e79e77fcc526953641bb252a5c39ac"
+      "hash": "9a40c09398ca06c04ff3e9ec9d117761a410f9412d4812c353089fe2d5f2d9c4"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadataprovider-swift.struct/init(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/init(_).md",
-      "hash": "33740e0681918163fb45591cdba9ea2940af7a474d6ebace6f8f27b657557bb4"
+      "hash": "bfd497840ce9f048049540b824f2aecee4d5a7e015a361a873ec7b522db92c2e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadataprovider-swift.struct/multiplex(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadataprovider-swift.struct/multiplex(_).md",
-      "hash": "cd29ec2fd886d16fce6bed1a5c2817441440923bb076be2acabd5df19348eebe"
+      "hash": "588d87ffade5be691bb9db7852b4a17e4e3829f111450fa0e762721b18b859b0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue.md",
-      "hash": "2189bf12c5d12c390fd85b675b98a4972bf00fc7f26e770d58f8a7db7a3d461d"
+      "hash": "a1924d6dda9149581cc54f303b644a36508dd761e6c6055cbc6f653cc0eb4891"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/noteq(_,_).md",
-      "hash": "c2a1dcda65c54ac4155dbbda3183d6d3f97773edd75da016b09fe040aab910c5"
+      "hash": "12dba5d1463a4b4f099c4965ceef2f5e19575f0c3ef6374c83666afb22fa625c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/==(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/eqeq(_,_).md",
-      "hash": "a2ed2b1fc2686d3fc803a0eb9b66de46b341a05aa17603787b8223c6364c9f2f"
+      "hash": "62db95e833eedff789272e544cca53cf030354ab2f19067279b72ea5c91278c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/array(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/array(_).md",
-      "hash": "ac2397b92b57470864a267c5c1d3cc3705f346092c22c6158f946d714561447d"
+      "hash": "34d4156e5f9bf9cbf0b415b6f34340adc913b10fd00492b7c9e1adf23914b3c6"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/arrayliteralelement": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/arrayliteralelement.md",
-      "hash": "6cc860bd799a1e89710ff373b40a423448632f4324b7b4726fba5418ec9f7715"
+      "hash": "4783668064045bb8348088963f55afad673f178c98ae114b1556cb136358588c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/attributed(_:attributes:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/attributed(_,attributes).md",
-      "hash": "e855998814c078c1925cea104249cac8ac5c0ac1dc26f10f7567d5c34dd3c1b2"
+      "hash": "1df0fb2215b2e17f71ed7fb10ce4cb9a219431b8ccf95e469013c00771064d1a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/attributes": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/attributes.md",
-      "hash": "8ee9d2bbf3ab75a1ded66d03dd243d0cfcf69eec8ccc5fa63aeb2e4a4887896c"
+      "hash": "a73600601b6758fe79add3b541fed0ef4a1d57c4aa636782919c39852a5f5bf1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/customstringconvertible-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/customstringconvertible-implementations.md",
-      "hash": "faabb23db3d97854acda02d02017d286b9e199b1b17f06e2b7bc057fabf22d83"
+      "hash": "087f7caf0f5ea9872a606b73dd1f41a592adfd0141d1bda2ea64cd2f4cd259bb"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/description": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/description.md",
-      "hash": "8d87044fdb28b81623ae73ddc17caee24d83c645b971c9c7e1c660a3711eb77f"
+      "hash": "35c34ef86ecb7e0b9947b0c6c382d7080ca6583f47afb88fdddf2016518ff222"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/dictionary(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/dictionary(_).md",
-      "hash": "8440ebad073254811a2e37c5b782f81f8546cdc03fe43b32e357e13d2fa2d902"
+      "hash": "64c49600724de2e7ae9c3dbc520736bc253771ba0cec102a46b5c990f8e6643e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/equatable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/equatable-implementations.md",
-      "hash": "729eb8c258a77fdf66d61e63045147a4536c139f39c1d4eca34041d3e20a6111"
+      "hash": "0d9faaf077e0a6261e7b1575d5f175142d7da8632dcae431086c042ed690d662"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/expressiblebyarrayliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebyarrayliteral-implementations.md",
-      "hash": "4ecf2a411a69ed7c2296272e3aeddbcc2eec31ad928ec0fa2f15d0c2c81f17f8"
+      "hash": "7b311eb8543c3fe671148b453392e4ce550d143eb711de5922992b22f1439f74"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/expressiblebydictionaryliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebydictionaryliteral-implementations.md",
-      "hash": "117a8e243b1b8e1578247e4139a5c335d3e0d0d3b5980f4f35762dba550d8f88"
+      "hash": "48f0f8064d4c29c4fd6aa16244a264440da778495caddf78d0352cc08c8bb671"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/expressiblebyextendedgraphemeclusterliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebyextendedgraphemeclusterliteral-implementations.md",
-      "hash": "8e334763c0d7de79cf697e0896966f48e569dca1022884b83726484a818ec02b"
+      "hash": "62c58fffebb992496ef8e59cfa53a35a9c3f134dcedf0018123a4fb58ee42895"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/expressiblebystringinterpolation-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebystringinterpolation-implementations.md",
-      "hash": "5cd1a1de3abdc1bfe85402930190bec98c973ff5541d9bd07491757b8c47dd4e"
+      "hash": "766bf3144c372e2a8d36caa54032b11705ca08f9a2ff5e21e0f6d8015337890e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/expressiblebystringliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/expressiblebystringliteral-implementations.md",
-      "hash": "aecc9209bad9b61af6284e403fd3150e052608727f2569aacb58df365a64ef65"
+      "hash": "290b1eb655ffcc76cf635fe932e34c2eb90bde998755fc2177a584a2460d2936"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(arrayliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(arrayliteral).md",
-      "hash": "5e09e93bc6f6f38a8bfe262df8a15044db37159668ab72970db405d7d765cdd2"
+      "hash": "82de161e9cd067da2c4b46bd7deb792229a2e452c82189fc9664477024996775"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(dictionaryliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(dictionaryliteral).md",
-      "hash": "31ceb9d7c3110333f52e819e4f90ae4e6c3760b7bf95963db05031a01a5a1cdd"
+      "hash": "51560e4fee9b1a95b93423e47616b83a443a011d6784cdbe97efec929e9de95c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(extendedgraphemeclusterliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(extendedgraphemeclusterliteral).md",
-      "hash": "f0b6e85b5824fc8541e6cf25992eb7b14de17c5c1ba6b73fc59822bb58851251"
+      "hash": "f22845c609c3bfb7168487b320d1bf0ea30112e4d860b1b322699f583765edc5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(stringinterpolation:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(stringinterpolation).md",
-      "hash": "93564f69e1f54a3f4ff11cfa535e10fd806d0fbbf63950e359b4c2e1ef525778"
+      "hash": "20e0802990257dd1002bc7e9f5c025eedd0c85dc43aa2bb113d6c4a6a5b0bd83"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(stringliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(stringliteral).md",
-      "hash": "0896087eb11d16915c4d798e4eb776fcc867544bb363abee5c6501930adeaca2"
+      "hash": "ab749a31720c9c64d6430b2b4b5d0c3042a829fe145e7d3e81cc223a1f1c7696"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/init(unicodescalarliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/init(unicodescalarliteral).md",
-      "hash": "20a8ee6a6cf93158d5b48121757ad46976644fa79b1c3c8b2212fabc56e14dd9"
+      "hash": "a89993d94cf8d869f0618ab36aee0be425b0538151886adac608a3409897ef6a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/key": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/key.md",
-      "hash": "70046aae21fc8ca49dbdd28262855299a093d1ca82e4920b5fa1eac2e217ef97"
+      "hash": "6abea6bf4951f818af0f3699959a87982cbe00d4247cd4903c017d8ba742b6af"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/string(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/string(_).md",
-      "hash": "0d625d3f2613900f74a72575fb20ef057da9b2fa6e829a2bd40cc046d0588a00"
+      "hash": "30dc82eac2f72cee8c2a4ef9719ff237d8bd452a0b104833ebeaa0c8314a16df"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringconvertible(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringconvertible(_).md",
-      "hash": "9dac04e4334e44e7d94ed6ffac0e04c7657d57179e4f8a1f640363843d80b50d"
+      "hash": "b8e40fe359e23a5f4b37ab6f3a46ad27ddefb63eb719b8449cb28cfd756f8011"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation.md",
-      "hash": "b2ce2b3f4e0f4363d17ac0eae4618a1a544e07f5fadd222a2229226bc77d259f"
+      "hash": "ffef763c6ab258a007d6b520f91fa770f466c971aee54504ed15ff82d405733a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-121kb": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-121kb.md",
-      "hash": "58eed55f0986bb515ac50619c43b73bdfcaad2025a5e6a39a51d4f6137060a5c"
+      "hash": "901f65fc996cd33fd8e02dceea3f719afc2d791a046d865cf3b6933a5d3d2e43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-1ch5o": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-1ch5o.md",
-      "hash": "795db98686fff6023c0bba452c0b5bb241c2e3ebe46a269529b4c9db7721fb9e"
+      "hash": "e8b736c45451856dc2c7a2878108297981ca2e826f2302cbbe108202f614abfe"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-716sw": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-716sw.md",
-      "hash": "fc80e6fa828d776cb647b1756b11c33bae6501fc32fff45e4771d1558949bb4e"
+      "hash": "fca4ffe60793cea645677d47c8f258227c4445de98209cd2bbfb37ebc934a563"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:)-91mei": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_)-91mei.md",
-      "hash": "889fb52beaa55e6718df84f561f60027004f63f56671d5ea95a8110558aab1a5"
+      "hash": "68fd4d2480709ce9e6f35c6ed7fefe2883f0695692fa495ce653805977ef1b57"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-1wm76": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-1wm76.md",
-      "hash": "46f8f8eb53302452cc93c80ddd76c99b4ff48d57ff486e234b004c08c0339c67"
+      "hash": "156bc4a2b918ace54f95f9065b545f2fec033cdadcc92cd52586309acb7800e9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-1zg00": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-1zg00.md",
-      "hash": "cf3815e6185559870a02a033b4ff64fadfe32bfddb94b0d1b9f5f5ed938eef8c"
+      "hash": "5d195aa2468d762d9ea485f2eac1eee3a26a7569cbae82f28ab5de8475389f37"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-2hhi9": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-2hhi9.md",
-      "hash": "ff1240d6cf261433df455d0057a74d17e0084304f10325c65094d20166f4b0b2"
+      "hash": "96dff34e4c60345d4e0d68381dad8436fa62e594c90af60109a3d42beced4716"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-3fdba": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-3fdba.md",
-      "hash": "cc5a913d8cf0f2fd8ee5ddb0e56163b8c8611769689fbc446155c7949f08006b"
+      "hash": "c37ff24ea1bb716cd83f236b2e715c4c6fd0f7b2e0f6370ac8ba331ab03d3420"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-3tfxd": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-3tfxd.md",
-      "hash": "7643b9265cbcf21a2ce45d43b7c1e4d5121458a857f06995e22ffecd1b990abd"
+      "hash": "231a68fdbac03ebe8bba8caee1e961c1ef95068fb4e975e5b0e11821243fa501"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-4khcn": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-4khcn.md",
-      "hash": "18bd907412ec79a0b589c19b16f243c25ad86f4ec9a7421f20ab871c5e18c82f"
+      "hash": "e2efea7879f191373f9dd6a584125769123d8a32b88fbf5d323230f682cdb47d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-5jp83": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-5jp83.md",
-      "hash": "cff33ee9b03e7194e241c946b728a2c061d5916bd0064fa028ac31445ae604e1"
+      "hash": "b3cf37566f78f38ad13e2a0f7833ab16e31ba62aa2a03b1a79d7cac3a4eecd54"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:attributes:)-7wlaj": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,attributes)-7wlaj.md",
-      "hash": "574d3c2fe47c14a32f0e0b5d86e0cd8a698080f86dabdae72ca3ac3e5040db7a"
+      "hash": "8f8ec0682ec4fd3fe37d7a354b6afa61b4583871f263a9f65357b961bc0747c1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-1nl4c": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-1nl4c.md",
-      "hash": "04e5cb5472c4e2c7cbff168a1e7dd6e2362a70a1af76c6460ff2ae54c16d80ae"
+      "hash": "9b4cb929200ed2da1a86b3cd85b21e9399051654aaaf957451b47d8a3f67ca84"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-30zu4": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-30zu4.md",
-      "hash": "3f558c666daaad04e696674a9c947befbc40d0653551a79384032e8e9524ce98"
+      "hash": "d1acd55616a5ea2287fc4415bc07a1769c1c15d8fd572435b9d6045202da4905"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-9mvck": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-9mvck.md",
-      "hash": "524005384f5e3ac371eafc421b1dd13d3517d599de8e66a422623d38c49fef78"
+      "hash": "9bc86d81cac10782214691fa34cb6e6dfe1b0d0168fb23c30597176f2dfab40b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_:default:)-9zech": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendinterpolation(_,default)-9zech.md",
-      "hash": "358532a1c6d942567ffbcfe429e99c8f99a633b5bdbf32cf045bc1cfa2489363"
+      "hash": "b4cf1780e8af67fb5e4fdeac459b33681ea1d9c0b2a58e9458467ca9a0441877"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/appendliteral(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/appendliteral(_).md",
-      "hash": "fdeab5b56269e211ef27fa549c3d0644ffc47f524f9db857724f39d0e06c5a8e"
+      "hash": "b3a60ba10a169c671eb755a14e7fa8e98efa74d3036b1cf4c017bb4d69439b5d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringinterpolation/init(literalcapacity:interpolationcount:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringinterpolation/init(literalcapacity,interpolationcount).md",
-      "hash": "9b55c4601518861867b10a502fb41c8c24975f054733a2cfbd5f799995fdf26d"
+      "hash": "17820237d4d2c15b4f3042c1abd0b53cc9dd5d465b7a4b086930b8e5a6c6e283"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/stringliteraltype": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/stringliteraltype.md",
-      "hash": "0f439e0ffc483dd6535a6e8243a57f00b1fa596c51991f0142e5e57f121ace5b"
+      "hash": "6607608d46bcbb58cd702de94046ef2d19201b00ef2c7ca70556eb8a876f6a6d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalue/value": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalue/value.md",
-      "hash": "b698b93d703b2ab8f9e50ef1cf9e3a834e3a1609fbaf451d301eb755d0bf657b"
+      "hash": "4434680baa664f4b0055a3102c93d389d875850e13134fdec7b3d71b2d3fedb7"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes.md",
-      "hash": "aed8e334bf13ef695c52374939bd726c3084da4451563888121668c5322420d2"
+      "hash": "6ca2f22692ff82c15539c991abc5f1ccc78fdc2962d532450c97509858ed212b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/noteq(_,_).md",
-      "hash": "e8d3cb472bd60f75e39a2964c6634dccfbf6abfcc687877fd88ba907713b71b6"
+      "hash": "e980f805c0ff0cb2e5761293bffc0985d6f40aa5c40e67fe794cecaecda6b89d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/==(_:_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/eqeq(_,_).md",
-      "hash": "32c7c9320e68151a78cd0bafe3a79bf29a5ee68dcfbc04ad636875432ea9c656"
+      "hash": "f5b99b780983f34ad065441827c82061c33728f71fcaf69dc60f1c5af8da1caf"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/attribute": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/attribute.md",
-      "hash": "433582595efd455e96c0ab41c02051741e2b4476555c96f2a00d3a63096a33ba"
+      "hash": "4b4fe27f7ec31e5cdc0ca57ce0de9455a7ac4693a85b1870d9c2241398de199e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/equatable-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/equatable-implementations.md",
-      "hash": "9c06acc5d5db4a4bafe8b225a4f52ac38b6251837e768c17d9b97c5c164bfc2b"
+      "hash": "25cc8b0b2b5198f79be0b10096bbaceb58a03cf6bd5809e80dcdb83381eee903"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/expressiblebyarrayliteral-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/expressiblebyarrayliteral-implementations.md",
-      "hash": "0635ff149ae982d1eeafe6e02f7c4128c41678d82552940d0dde776ce5adff54"
+      "hash": "9d3a5fdd8979605e87d9fc3bc75ba15005df61235ed0db5c298e921ea6076d8d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/init()": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/init().md",
-      "hash": "4050113a6337fb094032951bf890e80a1cd59c0f2d549cbb077326a6ade21b84"
+      "hash": "79e16ec0657a51cc8b33e971f5ac0205b2e9a4c79cd5bad2c7116db71a93af3e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/init(arrayliteral:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/init(arrayliteral).md",
-      "hash": "9f147d341722036000bf4f27a99366d57fdde07163e648c2b8c41f190e78a77d"
+      "hash": "db6e56c58e235fb7e570e4b106759b512457ec70e88ce8e3fa38047ec31d2cab"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/metadatavalueattributes/subscript(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/metadatavalueattributes/subscript(_).md",
-      "hash": "c062edee4c16ce2cf4ce6fc84154a358a92f9451f1039c88e5f0e5a3b6a65618"
+      "hash": "ebbd47eea8a1766ead9a8364d3a073a1b898b78aae517083068214b5ea738498"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/notice(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,error,metadata,source,file,function,line).md",
-      "hash": "2fa706ac2d22e83b7dc860e8b81a7dc90a4d4c7c1037ffd46f8ecebe5d383f29"
+      "hash": "4ba26e089e58a401b7ed94698ce9b6f3e848dbc9326c9a5ea772f9c0bf40425e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/notice(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,metadata,file,function,line).md",
-      "hash": "5ae5d79a1d9116d60beecf384c99dde06ebd7e4a5993cceadec6c01b3f0410b1"
+      "hash": "630d56439aa06e5752f25053d591e1cde9d69c2141a70d4b7f620fcd028aa8ee"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/notice(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/notice(_,metadata,source,file,function,line).md",
-      "hash": "dea0df01a41e293b44248bd947ec8d9d95a24d37c73281970ce4bdafb14d356b"
+      "hash": "6dc1c965fc2e2237878b66cb15d3abcbc5f00f3207fea8498dbbc068a3caee7e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/subscript(metadatakey:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/subscript(metadatakey).md",
-      "hash": "d3b69a66a64b58eb6e24abe7c170951d7c1d9b698249eceb03a152f8bd9c8693"
+      "hash": "dd8e0f83e9c890f10dd13975db67d5a74780e502fc5be0b10accf042ce0e212a"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/trace(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,error,metadata,source,file,function,line).md",
-      "hash": "ef27ec18e8ccd15e4669f36b877b079b0ccb9d8ca910fdaaf48db1b117499c57"
+      "hash": "c294dddcf5435d338044f6a573afaecfd58d61482208be431570521db0a2d6cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/trace(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,metadata,file,function,line).md",
-      "hash": "e0843c49b8359dd2ac3082683101c2898cb9bea286a2ef02dff7921b20f1c7bc"
+      "hash": "2dfbeb0a401f3bf0cf8b5c3efa26d8fe241672ea2e4f4e44541c07da72a30e82"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/trace(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/trace(_,metadata,source,file,function,line).md",
-      "hash": "ba2f7bb2dc61506ff1997486475f902432ed76feeec989db176989a4ee5f6b36"
+      "hash": "fcce93941b3d55ed755265a5b7a2a4bc0ba8442a0497b3b1ad3197d53464e229"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/warning(_:error:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,error,metadata,source,file,function,line).md",
-      "hash": "cd072ed60f87d6b9527a524f5d2f0ed913bf253cbd62bf305a4c988f7d42e899"
+      "hash": "727f77d0cd8457689839bc41ed0508309c37a1423dfb2f3d016d6b775921b9f3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/warning(_:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,metadata,file,function,line).md",
-      "hash": "f41a7e4498f335179540980039c5a7883cc78c17b9a707a361a147059dfff6ac"
+      "hash": "33f348efb3963276290d2870be7c21bcc77cc7b3a03b8029c1b5b047320c867b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/logger/warning(_:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/logger/warning(_,metadata,source,file,function,line).md",
-      "hash": "b6b1acb4bd88038393a8ca5bea18b47f6964e8af28f9ddc6c7e60fec97d3df2f"
+      "hash": "887acc04ecaa3d7ce2a6d3e9782493bd7693cf779aebbf4d055f54dfb747ab58"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loggingbestpractices": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingbestpractices.md",
-      "hash": "ff74d4481c1cbbf40fe6b334c5007ac8f1ddfe4098cbaf85c1d445de11a93b8b"
+      "hash": "05ada09351076107061baa244e58bf81b6d010cc8ee16dcb816007ab87d76db1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loggingsystem": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem.md",
-      "hash": "ba1c7f032535b8a235bc2bba6af392b13e996256a1908a9739f3f2bc216827d8"
+      "hash": "0d05cc8f72ea948347764ed716accbfe60fccca0796bf5140b3dc118b106515d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loggingsystem/bootstrap(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/bootstrap(_).md",
-      "hash": "0174891b4d521295d42da6af883ec9c5d69ae0ebc8eb2230187f8d2a35e75659"
+      "hash": "e40856ede1e458ba31f93d6d86d75a47be6ebff8d0342b3c45beacde6cb881ce"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loggingsystem/bootstrap(_:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/bootstrap(_,metadataprovider).md",
-      "hash": "ad27372f8e32f4651588984f426b2110e3b13f6ddfccb30fab273a9a86edd3b9"
+      "hash": "aa5448d2a6cbfc6d8991ba61bd3a1864b73b6acb6f4deea4f92bf21692a5038e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loggingsystem/metadataprovider": {
       "file_path": "documentation/SPI/swift-log/Logging/loggingsystem/metadataprovider.md",
-      "hash": "8256f1cb3f4376f45031804280f7e75f39f07781d4f930cc985b5a8785284c37"
+      "hash": "a9f97db9a33549d996d5a849fc3ccef4e69db1c8d683fb62478ccf2276bbaeaa"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler.md",
-      "hash": "ae87ab6af2f03dd1ac71a853ae66e3662aa3bcc23fd9df37ba3f252f8d155de9"
+      "hash": "1bb708165ec0199db7c898f3ae56fd39cb762f293d7f826cb0cf0cd4a9a23ca8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(event:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(event).md",
-      "hash": "0242aa24a074dc302a48d0a5a32de65299537feba9307eeec2fcc4b6a27e082e"
+      "hash": "24d24fbb9cadae4ece6b7f920f9d13a8dedbdbf5c8a863b0dd7b578c6a474d21"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(event:)-17f2r": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(event)-17f2r.md",
-      "hash": "b6805f84851a99ffd17a10878cc9727232ba7a5682ae04dc74d30506c1f01d28"
+      "hash": "e8cc0f774d7965bd053618b4e9d19b9a2c55a92d84168978bdaa218537935eca"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(level:message:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "e779cebceed7be228840faa6733fa4becda8e9bcf64e28752cd4a98448c23961"
+      "hash": "7a7e062e9fd0fe754a04369713c11e14d880c315c4b4cb392c8d8aae3a3a4985"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(level:message:metadata:file:function:line:)-1xdau": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,file,function,line)-1xdau.md",
-      "hash": "de1c3e3958b4276a93d22c9a16c22c5aaa7f98c782a49e13a3d888efd5de6ff0"
+      "hash": "a52efb11085294180817ec3796d6aec2312f0968ef8d532627a71a1d71563a7d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(level:message:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "9d59d5faa01bbbf673ad0b876f1bf68fc95c61fc94b3d8a08944a6a129ce14b7"
+      "hash": "5bd62618c51238085357f8b1f6a0e5ee88735a3d2371e6048ef0a9a94907ed29"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/log(level:message:metadata:source:file:function:line:)-69pez": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/log(level,message,metadata,source,file,function,line)-69pez.md",
-      "hash": "0ac372077971ad68538795572c83b084ad9ed4d1fd14c41880dbf067a31cbe07"
+      "hash": "1e435bad4431514667bfc421791aa2f87f005fab47e0b5dd97ee3d972a5c8e05"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/loglevel": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/loglevel.md",
-      "hash": "17bc0c25e77b56cf3984a13dc2561ce612a2df4e0f729781423e453d41f76a50"
+      "hash": "d8d55ec561c7fcffc89d3008f25b9d986e635777fc1b8516be49e8061270c383"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadata.md",
-      "hash": "e36d8b969452af64b1f0ce39969d497e2c52163943f333bc895931551818cc27"
+      "hash": "667d58d23d984bb308735062b30978df7dcdd168df12a03d9d3ae4b00d7cb644"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/metadataprovider": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadataprovider.md",
-      "hash": "71d1ca4fa70d6099733fa6eba90db084d3cf8cadb5592874727791f472d92939"
+      "hash": "394341f7a77c166097529525ff91ab3f472204a607f60402ed0f9ee1fe1fbaa3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/metadataprovider-7hq13": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/metadataprovider-7hq13.md",
-      "hash": "d4ab3a54abce7979e478d25c4e6a6e52391401f6d0713e9190a88fdb227cc995"
+      "hash": "0912760fd6a453a604b50eade9f575c900f76c8c290da7b92e3c7a89ec386ef5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/loghandler/subscript(metadatakey:)": {
       "file_path": "documentation/SPI/swift-log/Logging/loghandler/subscript(metadatakey).md",
-      "hash": "54edbe70cd1fb84f6e3b051445b02685976f01423ba7cd681c07c35f5939ed08"
+      "hash": "9a9879e4a2e31e05086e57158452f760d27f407355ba9d4ff3007cf4ee1aa02d"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler.md",
-      "hash": "27e35a9c44663037095054033afcf25aab6dc25a49c602e271d282d7b80be905"
+      "hash": "206f03a505aa7f459776095bdec7c46e6a13514e126eb086ce16653ebd429e92"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/init(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/init(_).md",
-      "hash": "4832593ea2dd2a56bca0c30a2938f9bcbbc74280b6d7552cace0c28f1d96a8df"
+      "hash": "03a7e76a71b55824cf9b6a215ed48f39c3de1dafd8d325aff04f18a62ffeeeb5"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/init(_:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/init(_,metadataprovider).md",
-      "hash": "a73bc716eafd03b26aea3bc61ad3c286d779e8f7d285773c6a4521e0dc787eb4"
+      "hash": "4bbc527abbd19964ca3f15023c8b6826256c288eec5f369bb5d4621e875c07d2"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/log(event:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(event).md",
-      "hash": "c6540c5de20f32bf6fbc24dad01dbac116e3f36436c1ab322a93e61cb58b17c0"
+      "hash": "e20ab0ac095db2dd8374421520d9fff77ffb4668ddd0b47f830b6ddee0c84621"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/log(level:message:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "7fa666d6f583cbd1538f46c5d1d8918a17404765799e65fcd58430cfeff2f41d"
+      "hash": "6d1fddcc531c115114af578f5574ffa0a00770fcdee228621617e7af4220a90f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/log(level:message:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "99b123d4d9880e9df3eaecca99bf445f500812042bb154dec65b4bdc041da06f"
+      "hash": "7c4e6e858e4fccd7b095592b6dc7f2d0dec6d6ba80956521315724ce308a0e25"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/loghandler-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/loghandler-implementations.md",
-      "hash": "3870cab49aed681513e801eaf4e0f232c7cdd6c2eb58e0a33ae00f239ed1773e"
+      "hash": "ca12f82dd2e65408e575ca18be15298beba4f3df16357f4b16c86153a7f29a43"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/loglevel": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/loglevel.md",
-      "hash": "c8ceff81a9ba4231b9139f6984c9975fc356d931cccb80c9e7b0d314405f0743"
+      "hash": "f5b87fa274ad261e3854da82e8c7689d0b08c5048e0ee8274327489c408308a8"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/metadata.md",
-      "hash": "8e2a68ec7b7e3d25d50694bbab9f5f7071b04d320ca3badba2f3915688407ab0"
+      "hash": "3aaacb64160437540310b834fc719efd61da7cd39d0b98cada57d90a34f5bf2e"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/metadataprovider": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/metadataprovider.md",
-      "hash": "aff1634d1842dd523f625a788ad9bf134b4b037a6d29e9d2f078a71b2fe8b0e5"
+      "hash": "45089a61609915e4f65d9044e559f4a7ac4595ae396108f06fb2cafc09a9df9c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/multiplexloghandler/subscript(metadatakey:)": {
       "file_path": "documentation/SPI/swift-log/Logging/multiplexloghandler/subscript(metadatakey).md",
-      "hash": "80aae5ff3eeadcca102d6304b83bab3e22a6982d9df34da81f7b7c7f66345400"
+      "hash": "a19498ef5d0f731f502489dbb5ae17ee56cdd8cfcbbedd8230514fab8ecdb2cb"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler.md",
-      "hash": "f5c2a80fb501b113ef67008b9eddfde9adfe53bd0a86dbae4c6779b549446417"
+      "hash": "c56638ee28fd5ea37164eac63b546fa6128d4a390ee540104f8a369942ab4efd"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/init(label:stream:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/init(label,stream).md",
-      "hash": "4b25e6a47e389e3a3c059992d59b2a89e26cca1bcfcccff643234b34b7d2d759"
+      "hash": "534f87990c6261d01a17bd57a9b420002833d666703550803d8e7a09e80fd7de"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/init(label:stream:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/init(label,stream,metadataprovider).md",
-      "hash": "79bbe04b67a77a5e156c867c0c41221a93e77c4dfaf1b1dd554f1acb1c965abe"
+      "hash": "84a08f14691b94d5133105caf3a36c2749ea8f13d2ec11aac46de73e75d688c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/log(event:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(event).md",
-      "hash": "8c540fe13b53e6fa62f375d65a3780ed7e5be4c4dbc2caeb4efdca09fa63b8f6"
+      "hash": "a8d7e7d82a729016c8c2e8ee64570692ff5e459e44b3e8a1419409c367381623"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/log(level:message:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "0e9930e7b34ad830792f925d50f6fe11c26d84fa3297e64c9e313ae7a2fed05e"
+      "hash": "59b556b19ebd4a6423de720792cca4ce18f25a2f25014b00b9cc28f72f4b5638"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/log(level:message:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "aef23f72bd2cbf1c9bb255b3ac335801dab39e49d12482cb0fd327575c08ea4d"
+      "hash": "e5e69130e7a1dba7ae13fc4562ad3c014256481bd09b7e82caf3e3ac29b42d98"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/loghandler-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/loghandler-implementations.md",
-      "hash": "130301c20db384cb35d5217f52318053137563ff6bde3fd79633e3f6e41e9f5f"
+      "hash": "aa0da11827058828b8b0aa63f29492f3d5482fd371ba4829bb9a01cbe8f05d7b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/loglevel": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/loglevel.md",
-      "hash": "eb0cb6bb152f9fe9caf3c16af6984d599c4bcf672a363cea26476b8696df1f24"
+      "hash": "83bc7c4cb6c4361da1443d7aac7fc63ff7d948951f13ed05dd875cd72dafc3b3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/metadata.md",
-      "hash": "7ce0503e17e48e4c6eb3b56c07424aec7546b61b6a0f4694d6c09bdac2a1cd39"
+      "hash": "33b22224deb959688f87cbc6d3e9568bf5d69d94e472ed1677577a15036332b0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/metadataprovider": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/metadataprovider.md",
-      "hash": "ab54201510d39eefd27140cd3cebf10f9f4f86fcf1a276525fb8ee1f300a5bba"
+      "hash": "3618f2cc8c872c6de1b927ab4760816f5add0ec36f021fc64f4721959c3f39cc"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/standarderror(label:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standarderror(label).md",
-      "hash": "9ea3762e72ae50df5c5a73733b13daf1ae90e878a60559dce4601df79603e118"
+      "hash": "75993027058a8d74f9b76df0b1b91b3f3ab510c6c3f73edcf5b3e6a7ca6d1063"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/standarderror(label:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standarderror(label,metadataprovider).md",
-      "hash": "622f7f622e479754e46d289a0f46916acd32265ded795ac5823e915b248c31d5"
+      "hash": "142aff8e264462ae20fa844ca8db9d6cac1208b19be7d46882c7a5d9debab8a1"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/standardoutput(label:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standardoutput(label).md",
-      "hash": "a2bb4203d05194d263734787ceb028f51f8f0994b901cf5d4236c5bc9ea0e5bc"
+      "hash": "a32b247c68f39445eb1ee27dbdaa3028d391ebbc033f71a76e20170fe3c81a5f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/standardoutput(label:metadataprovider:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/standardoutput(label,metadataprovider).md",
-      "hash": "c2a8434a96cc6bc4e7e1ef756a0214d3cc2af03c4bb9820fe04d03ef03ba0bf4"
+      "hash": "84634ee979b2d1df9e73b9f3317e9beb1d960b9b761866517abe05151d3dc399"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/subscript(metadatakey:)": {
       "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/subscript(metadatakey).md",
-      "hash": "36d2f17e4ad71c8219a8dbf380d4522577b0f7465690cc1a1f0620f1df715787"
+      "hash": "a24b8d5abe039df8c77191f0dd567072c4cec26437f9fd1507ae702e0362a62c"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.enum": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum.md",
+      "hash": "49336affa31702fc06ea38c1c60e88dfc171e60b9cfc0f5e826caad2dcda216f"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.enum/!=(_:_:)": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/noteq(_,_).md",
+      "hash": "b6234436bd935b1f5745598ab7d6d88314885fab9493012a336c256c605089c2"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.enum/equatable-implementations": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/equatable-implementations.md",
+      "hash": "2ad4762c3b1ada65810a1eb1141d1e4407d87f5858b283dbeb66c0bf3979e037"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.enum/milliseconds": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/milliseconds.md",
+      "hash": "128c01513a4004eabdf9e79037259f6b363caeb0fd04f58162ccbd4afbb611ac"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.enum/seconds": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.enum/seconds.md",
+      "hash": "da7ca671d8b6830a218274d1e61963403e6cff76fbe34fce7e5aade8e24cdecb"
+    },
+    "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/streamloghandler/timestampprecision-swift.property": {
+      "file_path": "documentation/SPI/swift-log/Logging/streamloghandler/timestampprecision-swift.property.md",
+      "hash": "4f5290b4d70c03299f641d791ae940ab0c8ad0fc8bf52613b315e2ce67dba006"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler.md",
-      "hash": "ce7da43524da7d9cec37ed2f5a9dde57b10505bacda36397d862153d4b6a8c5a"
+      "hash": "8295f2b61ea9cb7d871cbb7b79430c984667445b3edf73509bcb57d732aef351"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/init()": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/init().md",
-      "hash": "5f8c77f4342ef822a1273fded9bc2956839e4addbd4c2f3951594338fb5fa0e5"
+      "hash": "32d8c96b6835b1633be98d2e3091404e4e8c8b0382d35c231a5f3e250157f9c9"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/init(_:)": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/init(_).md",
-      "hash": "c10967c2de8489d04a724a1bafe53eb06ddc71ba9321beb4ec5368082cda84e7"
+      "hash": "b5de2edf63bc9d2cb03027524ee22b73bd3385c363c61a1d4c0bebf2148bc988"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/log(event:)": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(event).md",
-      "hash": "bec0bb4d45ce68c5e4fb4cf5756d7088e37fe6867d97ca50362dc0c729c208d0"
+      "hash": "010f4b8b155ccc96b94f03d36efe3e92a78db0a4c55fe6f738b96dc9784b145c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/log(level:message:metadata:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(level,message,metadata,file,function,line).md",
-      "hash": "a6406e32642a9b5d1757e6edde785e67d6df7d3873809d54f20c2e8f130686aa"
+      "hash": "435cbcb35d6a82ed5928998a2b656a89fb4b16a76a94d49ac365345b771153a3"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/log(level:message:metadata:source:file:function:line:)": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/log(level,message,metadata,source,file,function,line).md",
-      "hash": "2df14b567663f4a9aa3529581b177c9568d20f85b7aff804b801a158db87b0f9"
+      "hash": "933547dcc1143d1d207f3ca546ba945dfe872aceb886e88d46ddd2d1e48bf9d0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/loghandler-implementations": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/loghandler-implementations.md",
-      "hash": "2d37d1e5476c1f54917dca2c6bcd96a428008ccd798ffced6d31d490497e780b"
+      "hash": "3ccb3cfff1a2725682954e86ac2f4191e25c3e557509bd0cd36d868cd61c083b"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/loglevel": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/loglevel.md",
-      "hash": "d4580141c23c200462a3130e3a360c33e722143976c25129a5e49c73ee100f56"
+      "hash": "212f1f11a334d73b157a81e7cc93035fd77c66570bc0f2a8911598d305c1fb76"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/metadata": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/metadata.md",
-      "hash": "e1c520a77a1884d156f370ddd0847da7984c6d6d3b086d3cc7d971f0839a25f0"
+      "hash": "8ed24398a0404f69f6f823dcd87c6fb30c313221fec32caeae735dd5931b3f79"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/metadataprovider": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/metadataprovider.md",
-      "hash": "2cd98a1d8fa8bc4dfe9b3e3aac566f1e504bdced73490bcea368a26c10891e46"
+      "hash": "f30638a26dc20fe8339f1f60a0d7340eb68ad4790b020d294269a1da85b3b251"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/swiftlognooploghandler/subscript(metadatakey:)": {
       "file_path": "documentation/SPI/swift-log/Logging/swiftlognooploghandler/subscript(metadatakey).md",
-      "hash": "724cc24a1e4a752260c3d312335b28ca904cfe41c4f05d798d1c511a8b40d760"
+      "hash": "f71ea9ff39ca97979261c14195bce9fb0afe1c122b95e978c02317c24b47f932"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/understandingloggers": {
       "file_path": "documentation/SPI/swift-log/Logging/understandingloggers.md",
-      "hash": "1f96fcc46c70a89c9ea356d84e73c3b50c7f973709e1eb0db83f0edf762a2cc4"
+      "hash": "e879fa833287ff2f046c9ecf1a33db302f3664b8b2e143f4c5704646eb130b0c"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(_:_:)-3dt06": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(_,_)-3dt06.md",
-      "hash": "be85a202af6ca6e9686b866951244fff80d826e9513029eeddbf1f88c74fa3ec"
+      "hash": "7c17da0401d5d1ebe6e989702607adeef52732936117f0758c8ffadba89aa7ec"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(_:_:)-70nli": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(_,_)-70nli.md",
-      "hash": "80c3fc130105a6dfe0884a2558ed445e1732aa7357ea868c2f591b57c9911164"
+      "hash": "e13843b57c92818f839d63568380f2d82721f9b12ea5f929c448e361cd61b7d0"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(loglevel:handler:metadata:_:)-2pd9p": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(loglevel,handler,metadata,_)-2pd9p.md",
-      "hash": "6bcfd13735d066beca7de6ca1e585d6ea844b4a1345e56aa5e32c8ca2d9a710b"
+      "hash": "cb172403d6ef8ad5c2e852942b3008aa5135bb868e856c687c61078917daea44"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(loglevel:handler:metadata:_:)-5nmw6": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(loglevel,handler,metadata,_)-5nmw6.md",
-      "hash": "e12ce2559b89d6cf48e0815cfda21b131b113a633a2407b71038235537929709"
+      "hash": "f17b79f5740a5e65f5f07ccfff5a172bb61a6c7b8c1a08291af27fbddc88f34f"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(mergingmetadata:_:)-2c7dy": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(mergingmetadata,_)-2c7dy.md",
-      "hash": "29f7f5611cdb45b7458e46ff12c66355c33103fe7414a0ae5517637294888089"
+      "hash": "1617add936daad320a2ac89cac796eaf18a96a0f99f1431b1fff03aab5c7f337"
     },
     "https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/withlogger(mergingmetadata:_:)-3eduo": {
       "file_path": "documentation/SPI/swift-log/Logging/withlogger(mergingmetadata,_)-3eduo.md",
-      "hash": "0c65a89e7ba51c455dc1df4531282148e43fd62b69b14ab2927aa1bb5fc56255"
+      "hash": "60c8cda8e471b40e08872b3e15f78a23273e1410117c550e91e2095b405e80c2"
     }
   },
   "metadata": {
@@ -1742,6 +1790,6 @@
       ],
       "version": 4
     },
-    "total_pages": 432
+    "total_pages": 444
   }
 }

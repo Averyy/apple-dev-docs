@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Updates": {
       "file_path": "documentation/Updates/Updates.md",
-      "hash": "02b157ddbbfed0a0ee29f1db581f241d8e3f13b1319cf7f643f72c03045fde3f"
+      "hash": "deb25d144535566a592bb6e8a787c166877a3d0d08740dcd8e5b841a1806df73"
     },
     "https://developer.apple.com/documentation/updates/accelerate": {
       "file_path": "documentation/Updates/accelerate.md",
@@ -14,7 +14,7 @@
     },
     "https://developer.apple.com/documentation/updates/activitykit": {
       "file_path": "documentation/Updates/activitykit.md",
-      "hash": "a33be030b86f7170c5bab2e872a366fcecb2f8445e03c51b45f44e58bfc2e672"
+      "hash": "bdde45c5801e15b77168c882fddb0a34f19ad00545b26e6428f1f51698c0bb43"
     },
     "https://developer.apple.com/documentation/updates/adattributionkit": {
       "file_path": "documentation/Updates/adattributionkit.md",
@@ -274,7 +274,7 @@
     },
     "https://developer.apple.com/documentation/updates/swiftui": {
       "file_path": "documentation/Updates/swiftui.md",
-      "hash": "d1d3d210360765607eb8af3f214d30202e94363fd1bb831e81977dbeb66d073b"
+      "hash": "e66a05078a90613b51fa4051bbe1bf18799d18d32f3759ef1b667c0c00818e36"
     },
     "https://developer.apple.com/documentation/updates/symbols": {
       "file_path": "documentation/Updates/symbols.md",
@@ -338,7 +338,7 @@
     },
     "https://developer.apple.com/documentation/updates/wwdc2023": {
       "file_path": "documentation/Updates/wwdc2023.md",
-      "hash": "9cb03ac1aa2ae7195608b4a5051bf6b1fa046875ed0f13315ea33ecdbca10a62"
+      "hash": "82e6228027322c94afb1c4bf9f36ef33ac2cad97de211364a4c3357f57396d3c"
     },
     "https://developer.apple.com/documentation/updates/wwdc2024": {
       "file_path": "documentation/Updates/wwdc2024.md",
@@ -346,11 +346,11 @@
     },
     "https://developer.apple.com/documentation/updates/wwdc2025": {
       "file_path": "documentation/Updates/wwdc2025.md",
-      "hash": "c2814a24c002cddf3bda8768373167bd2fae2a05003aeb0369fbe397d12d55ae"
+      "hash": "828b41a1fb2ed85c2857b66167934c4b79f9020eecffa54c09245ec8f3b96e59"
     },
     "https://developer.apple.com/documentation/updates/xcode": {
       "file_path": "documentation/Updates/xcode.md",
-      "hash": "93aad777cdbdd9831b7c59b57bb50b83b97c58982d1ce506271e897b43302026"
+      "hash": "60eea0e212f60953300672ace081096551fff3c3c2da388849ee66fa96c294a2"
     },
     "https://developer.apple.com/documentation/updates/xcuiautomation": {
       "file_path": "documentation/Updates/xcuiautomation.md",
@@ -362,7 +362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Updates.json": {
       "file_path": "documentation/Updates/Updates.md",
-      "hash": "02b157ddbbfed0a0ee29f1db581f241d8e3f13b1319cf7f643f72c03045fde3f"
+      "hash": "deb25d144535566a592bb6e8a787c166877a3d0d08740dcd8e5b841a1806df73"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/accelerate.json": {
       "file_path": "documentation/Updates/accelerate.md",
@@ -374,7 +374,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/activitykit.json": {
       "file_path": "documentation/Updates/activitykit.md",
-      "hash": "a33be030b86f7170c5bab2e872a366fcecb2f8445e03c51b45f44e58bfc2e672"
+      "hash": "bdde45c5801e15b77168c882fddb0a34f19ad00545b26e6428f1f51698c0bb43"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/adattributionkit.json": {
       "file_path": "documentation/Updates/adattributionkit.md",
@@ -634,7 +634,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/swiftui.json": {
       "file_path": "documentation/Updates/swiftui.md",
-      "hash": "d1d3d210360765607eb8af3f214d30202e94363fd1bb831e81977dbeb66d073b"
+      "hash": "e66a05078a90613b51fa4051bbe1bf18799d18d32f3759ef1b667c0c00818e36"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/symbols.json": {
       "file_path": "documentation/Updates/symbols.md",
@@ -698,7 +698,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2023.json": {
       "file_path": "documentation/Updates/wwdc2023.md",
-      "hash": "9cb03ac1aa2ae7195608b4a5051bf6b1fa046875ed0f13315ea33ecdbca10a62"
+      "hash": "82e6228027322c94afb1c4bf9f36ef33ac2cad97de211364a4c3357f57396d3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2024.json": {
       "file_path": "documentation/Updates/wwdc2024.md",
@@ -706,11 +706,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2025.json": {
       "file_path": "documentation/Updates/wwdc2025.md",
-      "hash": "c2814a24c002cddf3bda8768373167bd2fae2a05003aeb0369fbe397d12d55ae"
+      "hash": "828b41a1fb2ed85c2857b66167934c4b79f9020eecffa54c09245ec8f3b96e59"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/xcode.json": {
       "file_path": "documentation/Updates/xcode.md",
-      "hash": "93aad777cdbdd9831b7c59b57bb50b83b97c58982d1ce506271e897b43302026"
+      "hash": "60eea0e212f60953300672ace081096551fff3c3c2da388849ee66fa96c294a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/xcuiautomation.json": {
       "file_path": "documentation/Updates/xcuiautomation.md",

@@ -7,11 +7,11 @@
 Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)`](./fileexporter%28ispresented,document,contenttype,defaultfilename,oncompletion,oncancellation%29.md) instead.
 

@@ -61,7 +61,7 @@ updateLink.addAction(to: .afterUpdateScheduled) { link, info in
 }
 ```
 
-> ❗ **Important**:  Only use [`UIUpdateLink`](./uiupdatelink.md) from the main thread.
+> ❗ **Important**:  Only use [`UIUpdateLink`](./uiupdatelink.md) from the main thread. It isn’t available in Mac Catalyst.
 
 ## Topics
 

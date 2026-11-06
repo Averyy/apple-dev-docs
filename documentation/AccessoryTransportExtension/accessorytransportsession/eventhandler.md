@@ -23,7 +23,7 @@ Implement this protocol to respond to data events and session invalidation in yo
 
 ### Handling data events
 - [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](./eventhandler/dataeventhandler%28event%29.md)
-  Handles events that address incoming data destined for the accessory.
+  Handles events that address incoming data sent to the accessory.
 - [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](./eventhandler/messagereceived%28_,completion%29.md)
   Handles incoming messages for transmission to the accessory.
 ### Handling the session life cycle

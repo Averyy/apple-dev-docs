@@ -5070,15 +5070,15 @@
     },
     "https://developer.apple.com/documentation/corefoundation/cfstreamcreatepairwithpeersocketsignature(_:_:_:_:)": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithpeersocketsignature(_,_,_,_).md",
-      "hash": "a872290e612e574939ff0d5227c8b999138ef4544c36b1177f65d3e20d319cd6"
+      "hash": "ed8f47181b53b7cd1c916bd05500c68a65ddb88e2667d1cf39d2f62bea9bad67"
     },
     "https://developer.apple.com/documentation/corefoundation/cfstreamcreatepairwithsocket(_:_:_:_:)": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithsocket(_,_,_,_).md",
-      "hash": "00c94c0e8ff698627aa89d26708b24d09f5a6169570dbf31c2979b0ca7e84ce1"
+      "hash": "0c8f70cdca24566e6e9d9b650138887c93c9cc9ed08f0572fc486188f1826a3b"
     },
     "https://developer.apple.com/documentation/corefoundation/cfstreamcreatepairwithsockettohost(_:_:_:_:_:)": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithsockettohost(_,_,_,_,_).md",
-      "hash": "594fcedc3b753da05bb08073947ea1f4004c4ae97eca5fb567205c10796d308e"
+      "hash": "e54553bf714ef2c5fb61736eb69a5d29c9c9681893bccd5b29e913ac1625a6af"
     },
     "https://developer.apple.com/documentation/corefoundation/cfstreamerror": {
       "file_path": "documentation/CoreFoundation/cfstreamerror.md",
@@ -10258,7 +10258,7 @@
     },
     "https://developer.apple.com/documentation/corefoundation/kcfurltypeidentifierkey": {
       "file_path": "documentation/CoreFoundation/kcfurltypeidentifierkey.md",
-      "hash": "e44ca1916261af2a144f4f7aefab598c41f5ffd329092fbfff4810be1bd8b7a4"
+      "hash": "989b733842ef109bfba8b3c1b46cb8c46b8e8cd220c32c7d5dd8bbd3575ebce1"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfurlubiquitousitemdownloadingerrorkey": {
       "file_path": "documentation/CoreFoundation/kcfurlubiquitousitemdownloadingerrorkey.md",
@@ -15874,15 +15874,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreamcreatepairwithpeersocketsignature(_:_:_:_:).json": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithpeersocketsignature(_,_,_,_).md",
-      "hash": "a872290e612e574939ff0d5227c8b999138ef4544c36b1177f65d3e20d319cd6"
+      "hash": "ed8f47181b53b7cd1c916bd05500c68a65ddb88e2667d1cf39d2f62bea9bad67"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreamcreatepairwithsocket(_:_:_:_:).json": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithsocket(_,_,_,_).md",
-      "hash": "00c94c0e8ff698627aa89d26708b24d09f5a6169570dbf31c2979b0ca7e84ce1"
+      "hash": "0c8f70cdca24566e6e9d9b650138887c93c9cc9ed08f0572fc486188f1826a3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreamcreatepairwithsockettohost(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreFoundation/cfstreamcreatepairwithsockettohost(_,_,_,_,_).md",
-      "hash": "594fcedc3b753da05bb08073947ea1f4004c4ae97eca5fb567205c10796d308e"
+      "hash": "e54553bf714ef2c5fb61736eb69a5d29c9c9681893bccd5b29e913ac1625a6af"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreamerror.json": {
       "file_path": "documentation/CoreFoundation/cfstreamerror.md",
@@ -21062,7 +21062,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfurltypeidentifierkey.json": {
       "file_path": "documentation/CoreFoundation/kcfurltypeidentifierkey.md",
-      "hash": "e44ca1916261af2a144f4f7aefab598c41f5ffd329092fbfff4810be1bd8b7a4"
+      "hash": "989b733842ef109bfba8b3c1b46cb8c46b8e8cd220c32c7d5dd8bbd3575ebce1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfurlubiquitousitemdownloadingerrorkey.json": {
       "file_path": "documentation/CoreFoundation/kcfurlubiquitousitemdownloadingerrorkey.md",

@@ -7,13 +7,13 @@
 A Core Graphics representation of the color, if available.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- iPadOS 14.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- Mac Catalyst 14.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- macOS 11.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- tvOS 14.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: resolve(in:))
-- watchOS 7.0+ - Deprecated in 27.2 (renamed: resolve(in:))
+- iOS 14.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- iPadOS 14.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- Mac Catalyst 14.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- macOS 11.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- tvOS 14.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: resolve(in:))
+- watchOS 7.0+ - Deprecated in 27.3 (renamed: resolve(in:))
 
 ## Declaration
 

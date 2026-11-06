@@ -100,10 +100,12 @@ Use these modifiers to manage supplemental views that present context-specific c
   Sets the restoration behavior for the specified bars during minimization.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [func toolbarTitleMenu<C>(content: () -> C) -> some View](./view/toolbartitlemenu%28content%29.md)
-  Configure the title menu of a toolbar.
+- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](./view/toolbartitlealignment%28_%29.md)
+  Sets the preferred alignment of the navigation bar’s title.
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./view/toolbartitledisplaymode%28_%29.md)
   Configures the toolbar title display mode for this view.
+- [func toolbarTitleMenu<C>(content: () -> C) -> some View](./view/toolbartitlemenu%28content%29.md)
+  Configure the title menu of a toolbar.
 - [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](./view/toolbarverticalbehavior%28_%29.md)
   Sets the behavior for the vertical bar.
 - [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](./view/toolbarverticalcompressionbehavior%28_%29.md)

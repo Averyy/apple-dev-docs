@@ -7,11 +7,11 @@
 The process ID (PID) of the process.
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 27.2
-- iPadOS 17.0+ - Deprecated in 27.2
+- iOS 17.0+ - Deprecated in 27.3
+- iPadOS 17.0+ - Deprecated in 27.3
 - Mac Catalyst 17.0+ - Deprecated in 27.0
-- macOS 14.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 14.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`DiagnosticReport.Environment`](../diagnosticreport/environment-swift.struct.md) instead.
 

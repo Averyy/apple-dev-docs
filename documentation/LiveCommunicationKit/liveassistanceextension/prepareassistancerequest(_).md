@@ -21,6 +21,10 @@ Prepares to handle a fresh assistance request, in response to a call from the fr
 func prepareAssistanceRequest(_ request: LiveAssistanceRequest) async throws -> LiveAssistanceRequest.Response
 ```
 
+## Mentions
+
+- [Providing captioning for a FaceTime call](../providing-captioning-for-a-facetime-call.md)
+
 ## Discussion
 
 Implement this method by performing any necessarily setup and eligibility checks. When finished, do one of the following:

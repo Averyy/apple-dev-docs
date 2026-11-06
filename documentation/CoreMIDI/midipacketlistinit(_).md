@@ -7,11 +7,11 @@
 Prepares a MIDIPacketList to be built up dynamically.
 
 **Availability**:
-- iOS 4.2+ - Deprecated in 27.2 (renamed: MIDIEventListInit(_:_:))
-- iPadOS 4.2+ - Deprecated in 27.2 (renamed: MIDIEventListInit(_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDIEventListInit(_:_:))
-- macOS 10.0+ - Deprecated in 27.2 (renamed: MIDIEventListInit(_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDIEventListInit(_:_:))
+- iOS 4.2+ - Deprecated in 27.3 (renamed: MIDIEventListInit(_:_:))
+- iPadOS 4.2+ - Deprecated in 27.3 (renamed: MIDIEventListInit(_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDIEventListInit(_:_:))
+- macOS 10.0+ - Deprecated in 27.3 (renamed: MIDIEventListInit(_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDIEventListInit(_:_:))
 
 > **Deprecated**: Use [`MIDIEventListInit(_:_:)`](./midieventlistinit%28_,_%29.md) instead.
 

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/NearbyInteraction": {
       "file_path": "documentation/NearbyInteraction/NearbyInteraction.md",
-      "hash": "a8090c115ffac6047328c28918c0df02a0e44a2da5d6ea6dcb2f87ab5412664b"
+      "hash": "d12f564134f78dd6ed21262e8384f2645c3fca8b99434fdb1a7093769102d44d"
     },
     "https://developer.apple.com/documentation/nearbyinteraction/algorithm-convergence-status": {
       "file_path": "documentation/NearbyInteraction/algorithm-convergence-status.md",
@@ -710,7 +710,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/NearbyInteraction.json": {
       "file_path": "documentation/NearbyInteraction/NearbyInteraction.md",
-      "hash": "a8090c115ffac6047328c28918c0df02a0e44a2da5d6ea6dcb2f87ab5412664b"
+      "hash": "d12f564134f78dd6ed21262e8384f2645c3fca8b99434fdb1a7093769102d44d"
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/algorithm-convergence-status.json": {
       "file_path": "documentation/NearbyInteraction/algorithm-convergence-status.md",

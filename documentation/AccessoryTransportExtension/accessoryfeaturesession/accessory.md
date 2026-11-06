@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-The accessory associated with this feature session.
+A reference to the accessory to which the session communicates.
 
 **Availability**:
 - iOS 27.0+
@@ -20,7 +20,13 @@ var accessory: ASAccessory { get }
 
 ### AccessoryFeatureSession Implementations
 - [var accessory: ASAccessory](./accessory-33dc1.md)
-  The accessory associated with this feature session.
+  A reference to the accessory to which the session communicates.
+
+## See Also
+
+### Accessing the session
+- [var sessionID: UUID](./sessionid.md)
+  A unique identifier for a feature on the paired accessory.
 
 
 ---

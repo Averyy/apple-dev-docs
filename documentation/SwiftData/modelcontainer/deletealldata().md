@@ -7,13 +7,13 @@
 Removes all persisted model data from the app’s persistent storage.
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 27.2 (renamed: erase)
-- iPadOS 17.0+ - Deprecated in 27.2 (renamed: erase)
-- Mac Catalyst 17.0+ - Deprecated in 27.2 (renamed: erase)
-- macOS 14.0+ - Deprecated in 27.2 (renamed: erase)
-- tvOS 17.0+ - Deprecated in 27.2 (renamed: erase)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: erase)
-- watchOS 10.0+ - Deprecated in 27.2 (renamed: erase)
+- iOS 17.0+ - Deprecated in 27.3 (renamed: erase)
+- iPadOS 17.0+ - Deprecated in 27.3 (renamed: erase)
+- Mac Catalyst 17.0+ - Deprecated in 27.3 (renamed: erase)
+- macOS 14.0+ - Deprecated in 27.3 (renamed: erase)
+- tvOS 17.0+ - Deprecated in 27.3 (renamed: erase)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: erase)
+- watchOS 10.0+ - Deprecated in 27.3 (renamed: erase)
 - Swift 5.9+
 
 > **Deprecated**: deleteAllData has been replaced by `erase`. Use `erase` to completely remove all of the data from a store.

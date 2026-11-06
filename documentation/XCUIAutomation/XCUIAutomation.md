@@ -60,6 +60,8 @@ UI testing lets you verify that when you change parts of your app’s data model
 - [var XCUI_UI_TESTING_AVAILABLE: Int32](./xcui_ui_testing_available.md)
   Indicates whether the current environment supports UI testing.
 ### Classes
+- [class XCUIHinge](./xcuihinge.md)
+  A reference to the hinge on iPhone Duo.
 - [class XCUIVoiceOverService](./xcuivoiceoverservice.md)
 - [XCUIVoiceOverOutput](./xcuivoiceoverservice/output.md)
 ### Variables

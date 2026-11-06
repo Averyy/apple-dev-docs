@@ -39,6 +39,15 @@ enum NSWritingToolsCoordinatorTextDecoration : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Managing grammar animations
+- [func startTextAnimation(NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](./starttextanimation%28_,for,in,writingdirection%29.md)
+- [func showGrammarPresentation(for: NSRange, in: NSWritingToolsCoordinator.Context) -> Bool](./showgrammarpresentation%28for,in%29.md)
+  Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
+- [func cancelTextAnimations(identifiers: [UUID])](./canceltextanimations%28identifiers%29.md)
+  Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
+
 
 ---
 

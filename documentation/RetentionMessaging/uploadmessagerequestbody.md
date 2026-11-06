@@ -4,7 +4,7 @@
 **Kind**: dictionary  
 **Role**: Object
 
-The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
+The request body for uploading a retention message, which includes the message text and an optional image reference and bullet points.
 
 **Availability**:
 - Retention Messaging API 1.0+
@@ -30,7 +30,9 @@ Don’t include an `image` or `bulletPoints` when you upload the text for the fo
 - A promotional-offer retention message
 - A switch-plan retention message
 
-All default retention messages require body text and header text, and may optionally include an image and bullet points. To place header text above an image, include an image, and set the value of `headerPosition` to `ABOVE_IMAGE`. Otherwise, the header text appears above the message body, which is below the image.
+All default retention messages require body text and header text, and may optionally include an image and bullet points. To place header text above an image, include an image, and set the value of [`headerPosition`](./headerposition.md) to `ABOVE_IMAGE`. Otherwise, the header text appears above the message body, which is below the image.
+
+> **Note**: All message text must be a UTF-8-encoded string that contains only allowed Unicode characters. If a text field contains a disallowed character, [`Upload Message`](./upload-message.md) returns a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
 
 ## Properties
 

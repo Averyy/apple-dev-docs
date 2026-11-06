@@ -7,13 +7,13 @@
 The position of the file pointer within the file represented by the file handle.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2
-- iPadOS 2.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.0+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 2.0+ - Deprecated in 27.3
+- iPadOS 2.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.0+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: To handle errors when getting the file pointer’s position, use [`offset()`](./offset%28%29.md) in Swift and [`getOffset:error:`](../nsfilehandle/getoffset_error_.md) in Objective-C.
 

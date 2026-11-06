@@ -9,6 +9,8 @@ The main text that appears on the alert for a Live Activity update on Apple Watc
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+Disables contention relief.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

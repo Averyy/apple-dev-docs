@@ -45,11 +45,20 @@ The properties of a transaction, including identifiers, purchase and revocation 
 - [let isUpgraded: Bool](./transaction/isupgraded.md)
   A Boolean that indicates whether the user upgraded to another subscription.
 - [let ownershipType: Transaction.OwnershipType](./transaction/ownershiptype-swift.property.md)
-  A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
+  A value that indicates whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [Transaction.OwnershipType](./transaction/ownershiptype-swift.struct.md)
-  The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
+  Values that indicate whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [let purchasedQuantity: Int](./transaction/purchasedquantity.md)
-  The number of consumable products purchased.
+  The number of purchased seats or consumable products.
+### Getting multiseat information
+- [let multiSeatInfo: Transaction.MultiSeatInfo?](./transaction/multiseatinfo-swift.property.md)
+  The seat information for a multiseat subscription transaction.
+- [Transaction.MultiSeatInfo](./transaction/multiseatinfo-swift.struct.md)
+  The invitation model, price tiers, and revoked seats of a multiseat subscription transaction.
+- [let additionalTransactionReason: Transaction.AdditionalTransactionReason?](./transaction/additionaltransactionreason-swift.property.md)
+  The reason that more than one transaction represents the subscription period.
+- [Transaction.AdditionalTransactionReason](./transaction/additionaltransactionreason-swift.struct.md)
+  Reasons that more than one transaction represents a single subscription period.
 ### Getting subscription status
 - [var subscriptionStatus: Product.SubscriptionInfo.Status?](./transaction/subscriptionstatus.md)
   An array that contains status information for a subscription group, including renewal and transaction information.
@@ -65,11 +74,15 @@ The properties of a transaction, including identifiers, purchase and revocation 
   Discounts or promotions that apply to a transaction.
 ### Getting revocation status
 - [let revocationDate: Date?](./transaction/revocationdate.md)
-  The date that the App Store refunded the transaction or revoked it from Family Sharing.
+  The date that the App Store refunded or revoked the transaction.
 - [let revocationReason: Transaction.RevocationReason?](./transaction/revocationreason-swift.property.md)
-  The reason that the App Store refunded the transaction or revoked it from Family Sharing.
+  The reason that the App Store refunded or revoked the transaction.
 - [Transaction.RevocationReason](./transaction/revocationreason-swift.struct.md)
-  Reasons that describe why the App Store may refund a transaction or revoke it from Family Sharing.
+  Reasons that describe why the App Store may refund or revoke a transaction.
+- [let revocationType: Transaction.RevocationType?](./transaction/revocationtype-swift.property.md)
+  The type of refund or revocation that applies to the transaction.
+- [Transaction.RevocationType](./transaction/revocationtype-swift.struct.md)
+  The types of refunds and revocations that apply to transactions.
 ### Correlating transactions with accounts
 - [let appAccountToken: UUID?](./transaction/appaccounttoken.md)
   A UUID that associates the transaction with a user on your own service.

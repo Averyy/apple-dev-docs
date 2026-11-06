@@ -7,7 +7,7 @@
 Creates a new template that has an open circular gauge, a small image at the bottom, and a small amount of text in the center.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

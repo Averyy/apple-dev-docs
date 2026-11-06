@@ -67,6 +67,7 @@ You provide a text drawing mode constant to the function [`setTextDrawingMode(_:
 - [var textMatrix: CGAffineTransform](./cgcontext/textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](./cgcontext/textposition.md)
+  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](./cgcontext/selectfont%28name,size,textencoding%29.md)
   Sets the font and font size in a graphics context.
 - [func setCharacterSpacing(CGFloat)](./cgcontext/setcharacterspacing%28_%29.md)

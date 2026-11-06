@@ -38,14 +38,20 @@ The system uses this protocol to define the search criteria it supports. Use onl
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
+- [EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
 - [StringSearchCriteria](./stringsearchcriteria.md)
 
 ## See Also
 
-### Providing the search criteria
-- [var criteria: Self.Criteria](./showinappsearchresultsintent/criteria-swift.property.md)
-  The information to use when performing the search.
-- [associatedtype Criteria : SearchCriteria](./showinappsearchresultsintent/criteria-swift.associatedtype.md)
+### Search
+- [protocol ShowInAppSearchResultsIntent](./showinappsearchresultsintent.md)
+  An app intent that displays a set of search results in the app’s interface.
+- [struct StringSearchCriteria](./stringsearchcriteria.md)
+  A type that tells your app to match its items against a provided string.
+- [enum StringSearchScope](./stringsearchscope.md)
+  Constants that describe the types of content your app includes in search results when the search criteria is a string.
+- [struct EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
+  Search request criteria that uses an entity collection to specify the items to retrieve.
 
 
 ---

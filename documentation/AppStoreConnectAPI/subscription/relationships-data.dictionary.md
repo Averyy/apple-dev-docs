@@ -28,6 +28,12 @@ object Subscription.Relationships
 - [object Subscription.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
 - [object Subscription.Relationships.PromotedPurchase](./relationships-data.dictionary/promotedpurchase-data.dictionary.md)
 - [object Subscription.Relationships.PromotionalOffers](./relationships-data.dictionary/promotionaloffers-data.dictionary.md)
+- [object Subscription.Relationships.RetentionMessage](./relationships-data.dictionary/retentionmessage-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object Subscription.Relationships.RetentionMessageOffers](./relationships-data.dictionary/retentionmessageoffers-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object Subscription.Relationships.RetentionOffers](./relationships-data.dictionary/retentionoffers-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object Subscription.Relationships.SubscriptionAvailability](./relationships-data.dictionary/subscriptionavailability-data.dictionary.md)
 - [object Subscription.Relationships.SubscriptionLocalizations](./relationships-data.dictionary/subscriptionlocalizations-data.dictionary.md)
 - [object Subscription.Relationships.Versions](./relationships-data.dictionary/versions-data.dictionary.md)
@@ -49,6 +55,9 @@ object Subscription.Relationships
 - `images` (Subscription.Relationships.Images)
 - `planAvailabilities` (Subscription.Relationships.PlanAvailabilities)
 - `versions` (Subscription.Relationships.Versions)
+- `retentionMessage` (Subscription.Relationships.RetentionMessage)
+- `retentionMessageOffers` (Subscription.Relationships.RetentionMessageOffers)
+- `retentionOffers` (Subscription.Relationships.RetentionOffers)
 
 ## See Also
 

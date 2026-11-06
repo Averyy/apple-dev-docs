@@ -7,7 +7,7 @@
 Creates a Paste button that accepts specific types of data from the pasteboard, performing a custom validation of the data before sending it to your app.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use the [`init(supportedContentTypes:validator:payloadAction:)`](./init%28supportedcontenttypes,validator,payloadaction%29.md) initializer instead.
 

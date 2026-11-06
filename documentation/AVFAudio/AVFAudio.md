@@ -73,6 +73,9 @@ Play, record, and process audio; configure your app’s system audio behavior.
   Configure voices to speak strings of text.
 ### Preprocessor macros
 - [Macros](./macros.md)
+### Structures
+- [struct AVReadOnlyAudioCompressedBuffer](./avreadonlyaudiocompressedbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access to compressed audio data.
 
 
 ---

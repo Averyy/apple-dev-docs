@@ -54,6 +54,9 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](./uinavigationitem/largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
+- [var titleAlignment: UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.property.md)
+  The preferred alignment of the navigation bar’s title.
+- [UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.enum.md)
 - [attributedTitle](./uinavigationitem/attributedtitle-9l8p2.md)
   An attributed string that is rendered as the title in the navigation bar.
 ### Configuring the subtitle
@@ -123,6 +126,13 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   When the tab bar and navigation/toolbar items are both rendered together in the vertical bar, this property controls which items compress first.
 - [enum UIVerticalBarCompressionBehavior](./uiverticalbarcompressionbehavior.md)
   How bars compress when different types of bars are hosted together and space is constrained.
+### Configuring minimization behavior
+- [var navigationBarMinimization: UIBarMinimization](./uinavigationitem/navigationbarminimization-1kj9z.md)
+- [struct UIBarMinimization](./uibarminimization-swift.struct.md)
+- [navigationBarMinimization](./uinavigationitem/navigationbarminimization-15u99.md)
+  The minimization configuration for the navigation bar.
+- [UIBarMinimization](./uibarminimization-c.class.md)
+  A configuration that controls how a navigation bar minimizes in response to scrolling.
 ### Getting and setting properties
 - [var prompt: String?](./uinavigationitem/prompt.md)
   A single line of text that displays at the top of the navigation bar.
@@ -178,14 +188,6 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   The delegate for renaming the navigation item.
 - [UINavigationItemRenameDelegate](./uinavigationitemrenamedelegate-96g5t.md)
   Methods an object implements to rename a navigation item.
-### Instance Properties
-- [var navigationBarMinimization: UIBarMinimization](./uinavigationitem/navigationbarminimization-1kj9z.md)
-- [var titleAlignment: UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.property.md)
-  The preferred alignment of the navigation bar’s title.
-- [navigationBarMinimization](./uinavigationitem/navigationbarminimization-15u99.md)
-  The minimization configuration for the navigation bar.
-### Enumerations
-- [UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.enum.md)
 
 ## Relationships
 

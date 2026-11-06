@@ -7,13 +7,13 @@
 Creates a section with a header and the provided section content.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Section(content:header:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
 
 > **Deprecated**: Use `init(content:header:)-29e2l` instead.
 

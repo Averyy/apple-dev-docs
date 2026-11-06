@@ -38,6 +38,10 @@ case missingOfferParameters
   The offer signature isn’t valid.
 - [Product.PurchaseError.invalidQuantity](./invalidquantity.md)
   The quantity to purchase is invalid.
+- [Product.PurchaseError.multiSeatPurchaseDisabled](./multiseatpurchasedisabled.md)
+  The product doesn’t support multiseat purchases.
+- [Product.PurchaseError.seatReductionNotAllowed](./seatreductionnotallowed.md)
+  The purchase would reduce the number of seats in a multiseat subscription.
 
 
 ---

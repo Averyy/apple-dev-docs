@@ -7,7 +7,7 @@
 Creates a color from an AppKit color.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(nsColor:)`](./init%28nscolor%29.md) instead.
 

@@ -100,6 +100,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 ### Default Implementations
 - [Decodable Implementations](./partialrangefrom/decodable-implementations.md)
 - [Encodable Implementations](./partialrangefrom/encodable-implementations.md)
+- [HomeAccessoryRangeSettingDescriptor Implementations](./partialrangefrom/homeaccessoryrangesettingdescriptor-implementations.md)
 - [RangeExpression Implementations](./partialrangefrom/rangeexpression-implementations.md)
 - [Sequence Implementations](./partialrangefrom/sequence-implementations.md)
 

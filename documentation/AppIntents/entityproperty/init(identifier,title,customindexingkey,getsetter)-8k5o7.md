@@ -26,7 +26,7 @@ Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable
 - `identifier`: The identifier of the property
 - `title`: A word or short phrase summarizing this property.
 - `customIndexingKey`: A custom Spotlight attribute set key for this property.
-- `getSetter`: The getter reference for the property
+- `getSetter`: The key path for the property’s getter and setter
 
 
 ---

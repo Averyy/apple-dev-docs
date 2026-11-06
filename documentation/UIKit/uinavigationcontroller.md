@@ -10,7 +10,7 @@ A container view controller that defines a stack-based scheme for navigating hie
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -196,6 +196,9 @@ For more information about how state preservation and restoration work, see [Pre
   Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
 - [var preferredTransition: UIViewController.Transition?](./uiviewcontroller/preferredtransition.md)
   An object that defines the transition animation when switching to the view controller.
+### Instance Properties
+- [var barContainerBehavior: UIBarContainerBehavior](./uinavigationcontroller/barcontainerbehavior.md)
+  Whether this navigation controller acts as a bar container, reading the bar content of its child view controller and rendering that content in the navigation controller’s own bar.
 
 ## Relationships
 

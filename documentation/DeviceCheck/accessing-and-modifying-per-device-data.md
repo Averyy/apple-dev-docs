@@ -7,7 +7,7 @@ Use a token from your app to query and modify two per-device binary digits store
 
 ## Overview
 
-After you use the [`DCDevice`](./dcdevice.md) class to generate an ephemeral token that identifies a device, your server uses HTTP `POST` commands to send requests to the query and update endpoints. The HTTP header field in each request must contain the authentication key you receive from Apple in a JSON web token (JWT). To create this token, you can use the same steps you use to create a provider authentication token for Apple Push Notification service (APNs); for details, see [Communicate with APNs using authentication tokens](https://help.apple.com/developer-account/#/deva05921840).
+After you use the [`DCDevice`](./dcdevice.md) class to generate an ephemeral token that identifies a device, your server uses HTTP `POST` commands to send requests to the query and update endpoints. The HTTP header field in each request must contain the authentication key you receive from Apple in a JSON web token (JWT). To create this token, you can use the same steps you use to create a provider authentication token for Apple Push Notification service (APNs); for details, see [Communicate with APNs using authentication tokens](https://developer.apple.com/help/account/capabilities/communicate-with-apns-using-authentication-tokens).
 
 ### Create the payload for a query request
 

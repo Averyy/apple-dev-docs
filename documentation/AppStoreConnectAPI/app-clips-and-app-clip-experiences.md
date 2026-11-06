@@ -16,7 +16,7 @@ If you’re new to creating an App Clip, see [App Clips](../AppClip/AppClip.md) 
 
 ### Review App Store Connect API Usage
 
-To read App Clip information and manage App Clip experiences with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md) and learn how to create API keys, generate JWTs, identify rate limits, and more.
+If you’re new to the App Store Connect API, start with [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md), [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), and [Identifying Rate Limits](./identifying-rate-limits.md).
 
 To read App Clip information and manage App Clip experiences, be sure you have one of the following user roles:
 

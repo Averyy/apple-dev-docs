@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
+Values that indicate whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 
 **Availability**:
 - iOS 15.0+
@@ -28,12 +28,11 @@ struct OwnershipType
   The transaction belongs to a family member who benefits from the service.
 - [static let purchased: Transaction.OwnershipType](./ownershiptype-swift.struct/purchased.md)
   The transaction belongs to the purchaser.
+- [static var assigned: Transaction.OwnershipType](./ownershiptype-swift.struct/assigned.md)
+  The transaction belongs to a customer who has access through an organization or group.
 ### Getting a localized description
 - [var localizedDescription: String](./ownershiptype-swift.struct/localizeddescription.md)
   The localized text that describes the ownership type.
-### Type Properties
-- [static var assigned: Transaction.OwnershipType](./ownershiptype-swift.struct/assigned.md)
-  The user has access to this transaction through an organization.
 
 ## Relationships
 
@@ -50,9 +49,9 @@ struct OwnershipType
 - [let isUpgraded: Bool](./isupgraded.md)
   A Boolean that indicates whether the user upgraded to another subscription.
 - [let ownershipType: Transaction.OwnershipType](./ownershiptype-swift.property.md)
-  A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
+  A value that indicates whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [let purchasedQuantity: Int](./purchasedquantity.md)
-  The number of consumable products purchased.
+  The number of purchased seats or consumable products.
 
 
 ---

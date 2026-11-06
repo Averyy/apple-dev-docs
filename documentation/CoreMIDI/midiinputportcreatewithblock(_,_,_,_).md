@@ -7,11 +7,11 @@
 Creates an input port through which the client may receive incoming MIDI messages from any MIDI source.
 
 **Availability**:
-- iOS 9.0+ - Deprecated in 27.2 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
-- iPadOS 9.0+ - Deprecated in 27.2 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
-- macOS 10.11+ - Deprecated in 27.2 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
+- iOS 9.0+ - Deprecated in 27.3 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
+- iPadOS 9.0+ - Deprecated in 27.3 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
+- macOS 10.11+ - Deprecated in 27.3 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDIInputPortCreateWithProtocol(_:_:_:_:_:))
 
 > **Deprecated**: Use [`MIDIInputPortCreateWithProtocol(_:_:_:_:_:)`](./midiinputportcreatewithprotocol%28_,_,_,_,_%29.md) intead.
 

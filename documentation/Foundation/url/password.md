@@ -7,13 +7,13 @@
 The password component of the URL if the URL conforms to RFC 3986; otherwise, nil.
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 8.0+ - Deprecated in 27.2
-- macOS 10.10+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 8.0+ - Deprecated in 27.3
+- macOS 10.10+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use password(percentEncoded:) instead
 

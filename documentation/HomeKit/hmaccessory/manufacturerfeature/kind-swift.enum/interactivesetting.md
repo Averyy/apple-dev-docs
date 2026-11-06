@@ -4,15 +4,21 @@
 **Kind**: case  
 **Role**: Case
 
+A setting with UI defined by the manufacturer.
+
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 
 ```swift
 case interactiveSetting
 ```
+
+## Discussion
+
+An interactive setting is an instance of [`HomeAccessoryConfiguration`](../../../../homeextensions/homeaccessoryconfiguration.md).
 
 
 ---

@@ -44,7 +44,7 @@ On supported platforms, a non-discretionary download displays a Live Activity on
 
 When your app has multiple active downloads, the system aggregates them into a single Live Activity that shows combined progress. For a single active download, the activity title displays the asset title.
 
-If any downloads in the group fail, the Live Activity transitions to a failure state after all downloads finish. A person can also cancel all active and queued downloads for your app directly from the Live Activity, which causes the tasks to fail with an error in the [`NSCocoaErrorDomain`](../Foundation/nscocoaerrordomain.md) domain with code https://developer.apple.com/documentation/foundation/nsusercancellederror.
+If any downloads in the group fail, the Live Activity transitions to a failure state after all downloads finish. A person can also cancel all active and queued downloads for your app directly from the Live Activity, which causes the tasks to fail with an error in the [`NSCocoaErrorDomain`](../Foundation/nscocoaerrordomain.md) domain with code [`NSUserCancelledError`](../Foundation/nsusercancellederror-c.enum.case.md).
 
 The Live Activity doesn’t reflect download tasks until you resume them. If you resume a task while your app runs in the background, the system might demote it to discretionary. The system queues downloads in the order you resume them.
 

@@ -7,13 +7,13 @@
 Decodes a single value, whose Objective-C type is given by `valueType`.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2
-- iPadOS 2.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.0+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 2.0+ - Deprecated in 27.3
+- iPadOS 2.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.0+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`decodeValue(ofObjCType:at:size:)`](./decodevalue%28ofobjctype,at,size%29.md) instead.
 

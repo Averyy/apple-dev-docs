@@ -7,7 +7,7 @@
 The active appearance expected of controls in a window.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use `EnvironmentValues.appearsActive` instead.
 

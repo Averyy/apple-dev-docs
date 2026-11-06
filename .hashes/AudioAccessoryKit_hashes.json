@@ -154,7 +154,7 @@
     },
     "https://developer.apple.com/documentation/audioaccessorykit/audioaccessoryheadtracking": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking.md",
-      "hash": "20e94fd0531ffca28def7138835ce200007380170e9593e8bef62c51d4c76045"
+      "hash": "8878fdb0a4412f811ccc486a54f60c9518a4e30c407bd71f39edba84f791db97"
     },
     "https://developer.apple.com/documentation/audioaccessorykit/audioaccessoryheadtracking/handler": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/handler.md",
@@ -182,7 +182,7 @@
     },
     "https://developer.apple.com/documentation/audioaccessorykit/audioaccessoryheadtracking/session": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/session.md",
-      "hash": "00477483abdd40c64df6ae04d4905f175a169188017b3edc6b90cf0452de2eb3"
+      "hash": "d0206428b2920a29974345ab0c63df851bec4f5447b5146a7573129c93d07ee5"
     },
     "https://developer.apple.com/documentation/audioaccessorykit/audioaccessoryheadtracking/session/isheadtrackingactive": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/session/isheadtrackingactive.md",
@@ -354,7 +354,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/audioaccessoryheadtracking.json": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking.md",
-      "hash": "20e94fd0531ffca28def7138835ce200007380170e9593e8bef62c51d4c76045"
+      "hash": "8878fdb0a4412f811ccc486a54f60c9518a4e30c407bd71f39edba84f791db97"
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/audioaccessoryheadtracking/handler.json": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/handler.md",
@@ -382,7 +382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/audioaccessoryheadtracking/session.json": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/session.md",
-      "hash": "00477483abdd40c64df6ae04d4905f175a169188017b3edc6b90cf0452de2eb3"
+      "hash": "d0206428b2920a29974345ab0c63df851bec4f5447b5146a7573129c93d07ee5"
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/audioaccessoryheadtracking/session/isheadtrackingactive.json": {
       "file_path": "documentation/AudioAccessoryKit/audioaccessoryheadtracking/session/isheadtrackingactive.md",

@@ -123,6 +123,12 @@ struct AppSchema
   Identifies intent schemas in the spreadsheet domain.
 - [AppSchema.SystemIntent](./appschema/systemintent.md)
   Identifies intent schemas in the system domain.
+- [AppSchema.VideoEntity](./appschema/videoentity.md)
+  Identifies entity schemas in the video domain.
+- [AppSchema.VideoEnum](./appschema/videoenum.md)
+  Identifies enum schemas in the video domain.
+- [AppSchema.VideoIntent](./appschema/videointent.md)
+  Identifies intent schemas in the video domain.
 - [AppSchema.VisualIntelligenceIntent](./appschema/visualintelligenceintent.md)
   Identifies intent schemas in the visual intelligence domain.
 - [AppSchema.WhiteboardEntity](./appschema/whiteboardentity.md)

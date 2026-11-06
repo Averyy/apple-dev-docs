@@ -9,6 +9,10 @@ Revoke assets from client user IDs and serial numbers.
 **Availability**:
 - VPP License Management 2.0+
 
+## Mentions
+
+- [Subscribing to notifications](./subscribing-to-notifications.md)
+
 ## Discussion
 
 ### Example Request and Response

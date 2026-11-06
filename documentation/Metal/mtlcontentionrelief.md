@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+Options that control whether the compiler inserts contention relief.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -26,7 +28,9 @@ enum MTLContentionRelief : NSInteger;
 
 ### Enumeration Cases
 - [MTLContentionRelief.automatic](./mtlcontentionrelief/automatic.md)
+  Adds contention relief when the kernel lacks other forms.
 - [MTLContentionRelief.none](./mtlcontentionrelief/none.md)
+  Disables contention relief.
 ### Initializers
 - [init?(rawValue: Int)](./mtlcontentionrelief/init%28rawvalue%29.md)
 

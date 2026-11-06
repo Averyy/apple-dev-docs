@@ -29,6 +29,8 @@ object BadRequestAppTransactionIdForUnsupportedEndpointError
   An error that indicates the text for a bullet point is too long.
 - [object BadRequestImageSizeError](./badrequestimagesizeerror.md)
   An error that indicates the image size provided is invalid.
+- [object BadRequestInvalidTextFieldError](./badrequestinvalidtextfielderror.md)
+  An error that indicates a text field in the request is invalid.
 - [object BadRequestRealtimeUrlError](./badrequestrealtimeurlerror.md)
   An error that indicates the URL is invalid.
 - [object BadRequestTooManyBulletPointsError](./badrequesttoomanybulletpointserror.md)

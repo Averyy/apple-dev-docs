@@ -18,7 +18,7 @@ A property for accessing a localized string argument attribute.
 ## Declaration
 
 ```swift
-let localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes
+var localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes { get }
 ```
 
 ## See Also

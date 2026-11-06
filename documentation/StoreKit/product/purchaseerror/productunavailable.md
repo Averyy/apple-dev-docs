@@ -38,6 +38,10 @@ case productUnavailable
   The quantity to purchase is invalid.
 - [Product.PurchaseError.missingOfferParameters](./missingofferparameters.md)
   The offer parameters are missing.
+- [Product.PurchaseError.multiSeatPurchaseDisabled](./multiseatpurchasedisabled.md)
+  The product doesn’t support multiseat purchases.
+- [Product.PurchaseError.seatReductionNotAllowed](./seatreductionnotallowed.md)
+  The purchase would reduce the number of seats in a multiseat subscription.
 
 
 ---

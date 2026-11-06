@@ -27,12 +27,6 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, should
 
 When `hyphenating` is `false`, [`NSTextLayoutManager`](../nstextlayoutmanager.md) tries to find the next line break opportunity before location. When `hyphenating` is `true`, it is an auto-hyphenation point.
 
-The method the framework calls to determine the soft line break point.
-
-## Discussion
-
-When `hyphenating` is `false`, `NSTextLayoutManager` tries to find the next line break opportunity before location. When hyphenating is `true`, it’s an auto-hyphenation point.
-
 ## Parameters
 
 - `textLayoutManager`: The text layout manager sending the message.

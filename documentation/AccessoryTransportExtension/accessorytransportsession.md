@@ -38,6 +38,9 @@ The [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) prot
 ### Sending data
 - [func sendMessageToDataProvider(TransportMessage) throws(AccessoryTransportSession.Error)](./accessorytransportsession/sendmessagetodataprovider%28_%29.md)
   Sends a message to the data provider extension.
+### Creating feature sessions
+- [func makeFeatureSession<H>(() -> H) throws(AccessoryTransportSession.Error) -> H.Session](./accessorytransportsession/makefeaturesession%28_%29.md)
+  Creates a feature session for the provided handler.
 ### Handling errors
 - [AccessoryTransportSession.Error](./accessorytransportsession/error.md)
   Errors that can occur with an accessory transport session.

@@ -46,6 +46,9 @@ Integrate hardware sensing features to produce augmented reality apps and games.
   An object that specifies the position and orientation of an item in the physical environment.
 - [ARKit in iOS](./arkit-in-ios.md)
   Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game.
+### Variables
+- [ARReferenceObjectArchiveExtension](./arreferenceobject/archiveextension.md)
+  The standard filename extension for exported [`ARReferenceObject`](./arreferenceobject.md) instances.
 
 
 ---

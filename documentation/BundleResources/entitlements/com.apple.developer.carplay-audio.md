@@ -17,7 +17,9 @@ A Boolean value that indicates whether the CarPlay app plays audio.
 
 ## Discussion
 
-You can include this entitlement and the [CarPlay Video App](./com.apple.developer.carplay-video.md) entitlement in the same app.
+This entitlement permits the app to play audio-only content or video content with an audio component. Apps with this entitlement can also run on HomeView.
+
+> **Note**: In iOS 26.3 and later, you can’t combine this entitlement with other CarPlay entitlements.
 
 ## See Also
 

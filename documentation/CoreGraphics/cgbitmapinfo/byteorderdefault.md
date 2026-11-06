@@ -7,13 +7,13 @@
 The default byte order.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.orderDefault)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.orderDefault)
 
 ## Declaration
 

@@ -7,12 +7,12 @@
 Cases that indicate payment pass activation states.
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 3.0+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 3.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`PKSecureElementPass.PassActivationState`](./pksecureelementpass/passactivationstate-swift.enum.md) instead.
 

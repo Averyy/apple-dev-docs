@@ -9,9 +9,9 @@ Asks the system to activate an existing scene, or create a new scene and associa
 **Availability**:
 - iOS 13.0+ - Deprecated in 27.0
 - iPadOS 13.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`activateSceneSession(for:errorHandler:)`](./activatescenesession%28for,errorhandler%29.md) (Swift) or [`activateSceneSessionForRequest:errorHandler:`](./activatescenesessionforrequest_errorhandler_.md) (Objective-C) instead.
 

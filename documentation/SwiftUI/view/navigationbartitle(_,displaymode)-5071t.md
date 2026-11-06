@@ -7,10 +7,10 @@
 Sets the title and display mode in the navigation bar for this view.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`navigationTitle(_:)`](./navigationtitle%28_%29-avgj.md) with [`navigationBarTitleDisplayMode(_:)`](./navigationbartitledisplaymode%28_%29.md).
 

@@ -45,6 +45,8 @@ Use the [`SubscriptionStoreControlStyleConfiguration.PickerOption`](../pickeropt
 - [var subscription: Product](./subscription.md)
   The auto-renewable subscription that the picker option represents.
 - [var activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
+- [var preferredPricingTerms: SubscriptionInfo.PricingTerms?](./preferredpricingterms.md)
+  The preferred pricing terms for this subscription option.
 - [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./icon.md)
   The subscription option’s icon.
 - [var id: Product.ID](./id.md)

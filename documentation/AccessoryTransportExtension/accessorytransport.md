@@ -39,9 +39,7 @@ The system selects the best available transport for each message by following th
 
 ## See Also
 
-### Data and sessions
-- [protocol AccessoryFeature](./accessoryfeature.md)
-  A protocol that defines a capability for an accessory data provider extension.
+### Transport messaging and security
 - [struct AccessoryMessage](./accessorymessage.md)
   A structure that represents a message to send to an accessory.
 - [class AccessorySecuritySession](./accessorysecuritysession.md)

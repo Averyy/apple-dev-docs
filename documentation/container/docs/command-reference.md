@@ -1642,7 +1642,7 @@ Creates and starts a local Kubernetes cluster and optional worker nodes. Pulls t
 **Usage**
 
 ```bash
-container cluster create [--name <name>] [--node-image <image>] [--cni <path>] [--workers <n>] [--rm] [<resource options>] [--debug]
+container cluster create [--name <name>] [--node-image <image>] [--cni <path>] [--workers <n>] [--shared-image-store] [--rm] [<resource options>] [--debug]
 ```
 
 **Options**
@@ -1651,6 +1651,7 @@ container cluster create [--name <name>] [--node-image <image>] [--cni <path>] [
 *   `--node-image <image>`: Node image reference (default: `docker.io/kindest/node:v1.35.5`)
 *   `--cni <path>`: Optional path to a CNI manifest to apply, or `NONE` (case-insensitive) to skip installing a CNI. If not provided, the bundled kindnet CNI is used. With `NONE`, the command returns without waiting for nodes to become `Ready`, since that requires a CNI; apply your own afterward with `kubectl apply`.
 *   `--workers <n>`: Number of worker nodes to create (default: `0`, meaning the control-plane node also acts as a worker)
+*   `--shared-image-store`: Let nodes pull images from the local image store (default: off). See [Container cluster](cluster.md).
 *   `--rm`: Remove the cluster container after it stops
 
 **Resource Options**
@@ -1686,6 +1687,9 @@ container cluster create --cni NONE
 
 # create a cluster with a control plane and 3 worker nodes
 container cluster create --name my-cluster --workers 3
+
+# create a cluster whose nodes can pull images from the local image store
+container cluster create --shared-image-store
 ```
 
 ### `container cluster delete (rm)`
@@ -1715,58 +1719,31 @@ container cluster rm --name my-cluster
 
 ### `container cluster list (ls)`
 
-Lists all Kubernetes clusters with their status and node image.
+Lists Kubernetes clusters created with this version of the plugin. By default the output has one row per cluster with its name, status, node count, and Kubernetes version. Use `--nodes` to show one row per node instead. Use `-q` to print only cluster names (node names with `--nodes`).
+
+With `--format json` (or `yaml`/`toml`), each cluster is reported with an `id`, its `configuration` (the settings it was created with), and its `status`. The `status` has a `state` (`running`, `degraded` or `stopped`, derived from the state of its node containers) and `nodes` (per-node state).
+
+Clusters created by earlier versions have no stored configuration and do not appear. Cluster records are kept by the `container-core-clusters` helper service, so the container system must be running (`container system start`).
 
 **Usage**
 
 ```bash
-container cluster list [--debug]
+container cluster list [--nodes] [--format json|table|yaml|toml] [-q] [--debug]
 ```
-
-**Examples**
-
-```bash
-container cluster list
-container cluster ls
-```
-
-### `container cluster load-image`
-
-Exports an image from the local `container` image store and imports it into every node's containerd (in the `k8s.io` namespace) so that Kubernetes can schedule pods that reference it on any node.
-
-**Usage**
-
-```bash
-container cluster load-image [--name <name>] [--platform <platform>] [--node <node> ...] <image> [--debug]
-```
-
-**Arguments**
-
-*   `<image>`: Image reference to load (e.g. `my-app:latest`)
 
 **Options**
 
-*   `--name <name>`: Cluster name (default: `cluster-dev`)
-*   `--platform <platform>`: Platform of the image variant to load from a multi-arch image (format: os/arch[/variant], default: `linux/<host-arch>`). Use this when the local store contains a multi-arch manifest list and you want to select a specific variant.
-*   `--node <node>`: Load into specific nodes instead of every node in the cluster. Repeat to target multiple nodes.
+*   `--nodes`: Show one row per node instead of one row per cluster.
+*   `--format <format>`: Format of the output (`json`, `table`, `yaml`, `toml`; default `table`).
+*   `-q, --quiet`: Only output the cluster name (the node name with `--nodes`).
 
 **Examples**
 
 ```bash
-# load an image into every node of the default cluster
-container cluster load-image my-app:latest
-
-# load an image into every node of a named cluster
-container cluster load-image --name my-cluster my-app:latest
-
-# load the amd64 variant of a multi-arch image
-container cluster load-image --platform linux/amd64 my-app:latest
-
-# load an image into a single worker node only
-container cluster load-image --node cluster-dev-worker-1 my-app:latest
-
-# load an image into specific worker nodes only
-container cluster load-image --node cluster-dev-worker-1 --node cluster-dev-worker-2 my-app:latest
+container cluster ls
+container cluster ls --nodes
+container cluster ls --format json
+container cluster ls -q
 ```
 
 ### `container cluster write-config`

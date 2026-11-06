@@ -5,11 +5,11 @@
 **Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_OcclusionAttenuationInDecibels)
 
 ## Declaration
 

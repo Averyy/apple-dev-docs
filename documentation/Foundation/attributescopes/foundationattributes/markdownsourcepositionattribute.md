@@ -46,7 +46,7 @@ enum MarkdownSourcePositionAttribute
 ## See Also
 
 ### Using Markdown source position attributes
-- [let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./markdownsourceposition.md)
+- [var markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./markdownsourceposition.md)
   A property for accessing a Markdown source position attribute.
 
 

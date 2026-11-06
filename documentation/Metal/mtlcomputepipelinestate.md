@@ -73,6 +73,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](./mtldevice.md) m
   Creates a new intersection function table.
 ### Instance Properties
 - [var forwardProgressUsage: MTLForwardProgressUsage](./mtlcomputepipelinestate/forwardprogressusage.md)
+  A forward progress strategy the framework applies to the pipeline.
 - [var reflection: MTLComputePipelineReflection?](./mtlcomputepipelinestate/reflection.md)
   The compute pipeline’s reflection information, if available.
 - [var requiredThreadsPerThreadgroup: MTLSize](./mtlcomputepipelinestate/requiredthreadsperthreadgroup.md)
@@ -84,6 +85,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](./mtldevice.md) m
 - [func makeComputePipelineState(additionalBinaryFunctions: [any MTL4BinaryFunction]) throws -> any MTLComputePipelineState](./mtlcomputepipelinestate/makecomputepipelinestate%28additionalbinaryfunctions%29.md)
   Allocates a new compute pipeline state by adding binary functions to this pipeline state.
 - [func recommendedPersistentThreadgroupsPerGrid(forThreadsPerThreadgroup: MTLSize) -> Int](./mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid%28forthreadsperthreadgroup%29.md)
+  Returns the number of threadgroups per grid that achieves the best throughput for a threads-per-threadgroup size.
 
 ## Relationships
 

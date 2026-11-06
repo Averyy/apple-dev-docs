@@ -11,7 +11,7 @@ The App Store Connect API lets you create and configure auto-renewable subscript
 
 ### Review App Store Connect API usage
 
-To manage auto-renewable subscriptions with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md) and learn how to create API keys, generate JWTs, identify rate limits, and more.
+If you’re new to the App Store Connect API, start with [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md), [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), and [Identifying Rate Limits](./identifying-rate-limits.md).
 
 To create and manage auto-renewable subscriptions, be sure you have one of the following user roles:
 

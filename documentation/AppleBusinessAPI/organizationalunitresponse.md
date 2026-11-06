@@ -7,7 +7,7 @@
 A response that contains a single organizational unit resource.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

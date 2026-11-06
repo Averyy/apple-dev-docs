@@ -5,11 +5,11 @@
 **Role**: Initializer
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2 (renamed: GroupBox(content:label:))
-- iPadOS 14.0+ - Deprecated in 27.2 (renamed: GroupBox(content:label:))
-- Mac Catalyst 14.0+ - Deprecated in 27.2 (renamed: GroupBox(content:label:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: GroupBox(content:label:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: GroupBox(content:label:))
+- iOS 14.0+ - Deprecated in 27.3 (renamed: GroupBox(content:label:))
+- iPadOS 14.0+ - Deprecated in 27.3 (renamed: GroupBox(content:label:))
+- Mac Catalyst 14.0+ - Deprecated in 27.3 (renamed: GroupBox(content:label:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: GroupBox(content:label:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: GroupBox(content:label:))
 
 ## Declaration
 

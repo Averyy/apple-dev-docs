@@ -4,7 +4,7 @@
 **Role**: Sample Code  
 **Download**: [CreatingAnAppForFacePaintingInAR.zip](https://docs-assets.developer.apple.com/published/b64a2a8bdc5a/CreatingAnAppForFacePaintingInAR.zip)
 
-Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
+Combine face detection in RealityKit with PencilKit to implement virtual face-painting.
 
 **Availability**:
 - iOS 15.0+

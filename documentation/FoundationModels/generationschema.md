@@ -11,6 +11,7 @@ A type that describes the properties of an object and any guides on their values
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 

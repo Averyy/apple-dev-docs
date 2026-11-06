@@ -7,13 +7,13 @@
 Reads the available data synchronously up to the end of file or maximum number of bytes.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2
-- iPadOS 2.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.0+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 2.0+ - Deprecated in 27.3
+- iPadOS 2.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.0+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: To handle errors when reading data from the file handle, use [`readToEnd()`](./readtoend%28%29.md) in Swift and [`readDataToEndOfFileAndReturnError:`](../nsfilehandle/readdatatoendoffileandreturnerror_.md) in Objective-C.
 

@@ -7,7 +7,7 @@
 The attributes for an external account associated audit event.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

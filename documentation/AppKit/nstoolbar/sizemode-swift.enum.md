@@ -7,7 +7,7 @@
 Constants that specify toolbar display modes.
 
 **Availability**:
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 10.0+ - Deprecated in 27.0
 
 > **Deprecated**: The toolbar no longer uses this type.

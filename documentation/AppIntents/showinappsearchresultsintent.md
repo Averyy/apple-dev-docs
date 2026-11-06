@@ -85,6 +85,10 @@ This app intent needs to run from your app, and not from your app extension. If 
   A type that tells your app to match its items against a provided string.
 - [enum StringSearchScope](./stringsearchscope.md)
   Constants that describe the types of content your app includes in search results when the search criteria is a string.
+- [struct EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
+  Search request criteria that uses an entity collection to specify the items to retrieve.
+- [protocol SearchCriteria](./searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 
 
 ---

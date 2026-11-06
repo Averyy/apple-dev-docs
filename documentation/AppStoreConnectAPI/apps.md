@@ -144,6 +144,11 @@ To learn more about managing your apps, see [Add a new app](https://developer.ap
   Get a list of subscription groups for a specific app.
 - [Get the subscription grace period ID for an app](./get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
 - [List subscription group IDs for an app](./get-v1-apps-_id_-relationships-subscriptiongroups.md)
+### Getting retention messages
+- [List retention messages for an app](./get-v1-apps-_id_-retentionmessages.md)
+  Get a list of retention messages for a specific app.
+- [List retention message IDs for an app](./get-v1-apps-_id_-relationships-retentionmessages.md)
+  Get a list of retention message IDs for a specific app.
 ### Getting In-App Purchase information
 - [List all In-App Purchases for an app](./get-v1-apps-_id_-inapppurchasesv2.md)
   Get a list of the In-App Purchases for a specific app.

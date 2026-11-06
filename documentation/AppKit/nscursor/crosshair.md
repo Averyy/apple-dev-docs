@@ -26,6 +26,12 @@ class var crosshair: NSCursor { get }
 
 The cross-hair cursor. This cursor is used for situations when precise location is required (where the lines cross is the hot spot).
 
+## Discussion
+
+The following image shows the cross-hair cursor:
+
+![cross-hair cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-crosshair@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

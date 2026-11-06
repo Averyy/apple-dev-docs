@@ -32,6 +32,8 @@ var size: CGSize { get }
   Returns the concentric corner radii for the specified frame relative to the container shape.
 - [var containerCornerInsets: RectangleCornerInsets](./containercornerinsets.md)
   Returns the corner insets of the container view. Use this value to adjust the geometry of a view based on the overlapping corner insets of the container view. Corner insets may include pieces of system UI as well as the corner radii for windows and presentations.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set) -> EdgeInsets](./contentmargins%28for,edges%29.md)
+  The insets of a content margin guide for the given edges.
 - [var safeAreaInsets: EdgeInsets](./safeareainsets.md)
   The safe area inset of the container view.
 - [subscript<T>(Anchor<T>) -> T](./subscript%28_%29.md)

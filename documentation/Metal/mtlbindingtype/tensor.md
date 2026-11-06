@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A binding point for a tensor.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

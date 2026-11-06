@@ -55,6 +55,32 @@ The [App Intents](../AppIntents/AppIntents.md) framework allows you to integrate
   Indexed result items from an intent value query.
 - [struct IntentValuePropertiesCallable](./intentvaluepropertiescallable.md)
   A callable wrapper that creates app intent instances from keyword arguments.
+### Protocols
+- [protocol AppEntityExpectationProviding](./appentityexpectationproviding.md)
+  A value expectation that checks an app entity’s type and, optionally, its identifier or property values.
+- [protocol AppIntentExpectationProviding](./appintentexpectationproviding.md)
+  A type that describes the app intent you expect, including its type and, optionally, its parameter values and result.
+- [protocol IntentValueExpectation](./intentvalueexpectation.md)
+  A type that describes the value you expect for an intent parameter, an app entity property, or an intent result.
+- [protocol ResolvableAppEntityExpectation](./resolvableappentityexpectation.md)
+  An entity expectation that checks an app entity as the caller passed it, before any query runs.
+- [protocol ResolvableIntentValueExpectation](./resolvableintentvalueexpectation.md)
+  A value expectation that checks a value as the caller passed it, before any query runs.
+### Structures
+- [struct AppEntityExpectation](./appentityexpectation.md)
+  An expectation that checks an app entity’s type, its property values, and, optionally, its instance identifier.
+- [struct AppEntityIdentifierExpectation](./appentityidentifierexpectation.md)
+  An expectation that checks whether an app entity is a specific instance by comparing its type and identifier.
+- [struct AppIntentExpectation](./appintentexpectation.md)
+  An expectation that checks an app intent’s parameters and, optionally, the result the intent returns.
+- [struct IntentValueExpectationCallable](./intentvalueexpectationcallable.md)
+  A value that you call with labeled value expectations to create an expectation on the corresponding parameters or properties.
+- [struct PredicateExpectation](./predicateexpectation.md)
+  A value expectation that checks a value of any convertible type against a predicate.
+- [struct PrimitiveExpectation](./primitiveexpectation.md)
+  A value expectation that checks whether a value is present or whether its string content matches.
+- [struct SkillDefinition](./skilldefinition.md)
+  A definition that identifies one of an app’s skills by the app’s bundle identifier and the skill’s name.
 
 
 ---

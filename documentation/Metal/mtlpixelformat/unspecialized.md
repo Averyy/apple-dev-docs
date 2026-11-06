@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+Defers assigning the pixel format.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -28,9 +30,7 @@ MTLPixelFormatUnspecialized
 
 ## Discussion
 
-A pixel format where the red and green channels are subsampled horizontally.  Two pixels are stored in 32 bits, with shared red and blue values, and unique green values.
-
-This format is equivalent to UYVY, 2vuy, or GL_RGB_422_APPLE/GL_UNSIGNED_SHORT_8_8_APPLE. The component order, from lowest addressed byte to highest, is Cb, Y0, Cr, Y1.  There is no implicit colorspace conversion from YUV to RGB, the shader will receive (Cr, Y, Cb, 1).  422 textures must have a width that is a multiple of 2, and can only be used for 2D non-mipmap textures.  When sampling, ClampToEdge is the only usable wrap mode.
+Assign this format to a color attachment’s `pixelFormat` in a render pipeline descriptor to build a pipeline state that leaves the attachment’s format unresolved. To finalize the format, pass a descriptor that assigns a concrete format to [`newRenderPipelineStateBySpecializationWithDescriptor:pipeline:error:`](../mtl4compiler/newrenderpipelinestatebyspecializationwithdescriptor_pipeline_error_.md), which returns a specialized pipeline state.
 
 
 ---

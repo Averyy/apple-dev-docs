@@ -7,11 +7,11 @@
 The diagnostic reports since the last initialization of the shared manager instance.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
 - Mac Catalyst 14.0+ - Deprecated in 27.0
-- macOS 12.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`diagnosticReports`](../metricmanager/diagnosticreports.md) instead.
 

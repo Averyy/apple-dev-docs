@@ -60,6 +60,11 @@ Metadata is merged in the following order:
   Get or set the entire metadata storage as a dictionary.
 - [var metadataProvider: Logger.MetadataProvider?](./streamloghandler/metadataprovider.md)
   The metadata provider.
+### Configuring the timestamp
+- [var timestampPrecision: TimestampPrecision](./streamloghandler/timestampprecision-swift.property.md)
+  The precision of the timestamp written at the start of each log line.
+- [StreamLogHandler.TimestampPrecision](./streamloghandler/timestampprecision-swift.enum.md)
+  The precision of the timestamp that a [`StreamLogHandler`](./streamloghandler.md) writes at the start of each log line.
 ### Default Implementations
 - [LogHandler Implementations](./streamloghandler/loghandler-implementations.md)
 

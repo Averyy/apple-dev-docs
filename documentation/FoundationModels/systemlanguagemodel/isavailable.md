@@ -11,6 +11,7 @@ A Boolean value that indicates whether the system is entirely ready.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.3+ (Beta)
 - visionOS 26.0+
 
 ## Declaration

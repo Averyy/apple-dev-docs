@@ -33,6 +33,8 @@ aggregator.computeMean(of: relevance.metric)
 ## See Also
 
 ### Inspecting a dimension
+- [let name: String](./name.md)
+  The name of the dimension, used as the DataFrame column name.
 - [let scale: ScoringScale](./scale.md)
   The scoring scale for this dimension.
 - [let description: String?](./description.md)

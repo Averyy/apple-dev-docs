@@ -7,7 +7,7 @@
 A text field style with a system-defined square border.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use BorderedTextField instead. As of macOS 26, text fields no longer have a rectangular border.
 

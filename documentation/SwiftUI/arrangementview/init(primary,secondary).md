@@ -22,6 +22,21 @@ nonisolated
 init(@ContentBuilder primary: () -> Primary, @ContentBuilder secondary: () -> Secondary)
 ```
 
+## Discussion
+
+Use this initializer to create an arrangement view that lays out two pieces of content. The arrangement view adapts the layout of the primary and secondary views based on the context, including size class and hardware features.
+
+By default, the arrangement view uses an automatic style, which resolves to a split arrangement. Use the [`arrangementViewStyle(_:)`](../view/arrangementviewstyle%28_%29.md) modifier to specify how the views are arranged:
+
+```swift
+ArrangementView {
+    PhotosView()
+} secondary: {
+    PhotosDetailPanelView()
+}
+.arrangementViewStyle(.split)
+```
+
 ## Parameters
 
 - `primary`: The view to display as the primary content in the arrangement.

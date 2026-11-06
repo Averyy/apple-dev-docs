@@ -31,7 +31,7 @@ The number of days is a number from 1 to 90.
 - [type extendReasonCode](./extendreasoncode.md)
   The code that represents the reason for the subscription-renewal-date extension.
 - [type requestIdentifier](./requestidentifier.md)
-  A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+  A string that contains a unique identifier you provide to track a request, such as a subscription-renewal-date extension or a seat claim.
 
 
 ---

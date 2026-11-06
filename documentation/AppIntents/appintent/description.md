@@ -25,6 +25,7 @@ static var description: IntentDescription? { get }
 ## Mentions
 
 - [Creating your first app intent](../creating-your-first-app-intent.md)
+- [Bringing custom actions and content to Siri](../bringing-custom-actions-and-content-to-siri.md)
 
 ## Discussion
 

@@ -149,6 +149,8 @@ The hypothetical driver in this example still needs to acknowledge the power sta
 - [UserCallMediaParametersHaveChanged](./iouserscsiparallelinterfacecontroller/usercallmediaparametershavechanged.md)
   Indicates to the system that the media parameters changed.
 ### Accessing data buffers
+- [UserCopyDataBuffer](./iouserscsiparallelinterfacecontroller/usercopydatabuffer.md)
+  Gets the data buffer associated with a particular I/O request.
 - [UserGetDataBuffer](./iouserscsiparallelinterfacecontroller/usergetdatabuffer.md)
   Gets the data buffer associated with a particular I/O request.
 

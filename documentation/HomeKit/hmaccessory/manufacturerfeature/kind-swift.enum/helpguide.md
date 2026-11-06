@@ -4,9 +4,11 @@
 **Kind**: case  
 **Role**: Case
 
+A guide that provides help and general information about an accessory.
+
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 

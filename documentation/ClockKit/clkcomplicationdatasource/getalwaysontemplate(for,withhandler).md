@@ -7,7 +7,7 @@
 Returns the template to use during Always On.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) to create complications. For more information, see Migrating to WidgetKit.
 

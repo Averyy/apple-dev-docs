@@ -36,9 +36,9 @@ The value type of the `edge` of `layer`. This determines how the value for this 
 - [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](./width%28for,edge%29.md)
   Returns the width of an edge of a specified layer of the text block.
 - [func borderColor(for: NSRectEdge) -> NSColor?](./bordercolor%28for%29-273pl.md)
+  Returns the border color of the specified text block edge.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](./setbordercolor%28_,for%29.md)
   Sets the border color of the specified edge of the text block.
-- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 
 
 ---

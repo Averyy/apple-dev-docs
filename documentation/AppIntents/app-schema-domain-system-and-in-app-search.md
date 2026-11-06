@@ -53,6 +53,8 @@ For more information about making your app’s actions available to Apple Intell
   Make your photo and video app’s actions available to Apple Intelligence and Siri by adopting schemas for common photo and video actions.
 - [Reminders](./app-schema-domain-reminders.md)
   Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
+- [Video](./app-schema-domain-video.md)
+  Make your video app’s actions available to Apple Intelligence and Siri by adopting schemas for common video playback and watchlist actions.
 
 
 ---

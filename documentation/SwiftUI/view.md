@@ -101,18 +101,28 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [Deprecated modifiers](./view-deprecated.md)
   Review unsupported modifiers and their replacements.
 ### Instance Methods
-- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./view/contentmargins%28for,edges,alignment%29.md)
-  Insets the content of this view by a content margin guide.
 - [func deviceMotionAnchor(manager: CMMotionManager, isEnabled: Bool) -> some View](./view/devicemotionanchor%28manager,isenabled%29.md)
   Specifies this view as the reference body for the motion manager’s device-motion calculations.
+- [func directTouchSystemGesturesDisabled(Bool) -> some View](./view/directtouchsystemgesturesdisabled%28_%29.md)
+  Disables direct-touch system gestures.
+- [func draggable<Item>(@autoclosure () -> Item, containerNamespace: Namespace.ID) -> some View](./view/draggable%28_,containernamespace%29.md)
+  Activates this view as the source of a drag and drop operation, preserving the identifier of the dragged item.
+- [func draggable<Item, Preview>(@autoclosure () -> Item, containerNamespace: Namespace.ID, preview: () -> Preview) -> some View](./view/draggable%28_,containernamespace,preview%29.md)
+  Activates this view as the source of a drag and drop operation with a custom preview, preserving the identifier of the dragged item.
 - [func homeEmbeddedNavigationDestination<D, Content>(for: D.Type, destination: (D) -> Content) -> some View](./view/homeembeddednavigationdestination%28for,destination%29.md)
-  Drop-in replacement for `.navigationDestination(for:)` for hosted extension content. Pair with `context.navigator.push(_:title:)` or `NavigationLink(value:)`.
+  Defines the view to display when your extension pushes a value of the given type.
 - [func locationHeadingAnchor(manager: CLLocationManager, isEnabled: Bool) -> some View](./view/locationheadinganchor%28manager,isenabled%29.md)
   Specifies this view as the reference body for the location manager’s heading calculations.
+- [func multiSeatDataSharingConsentSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatdatasharingconsentsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+  Presents the data sharing consent sheet, where a subscriber decides whether to share account-level data with you.
+- [func multiSeatInvitationBehavior(MultiSeatInvitationBehavior) -> some View](./view/multiseatinvitationbehavior%28_%29.md)
+  Sets the behavior of the Apple-owned invitation sheet that appears after a customer purchases a multi-seat subscription from a StoreKit view.
+- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+  Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
 - [func nearbyInteractionOriginAnchor(session: NISession, isEnabled: Bool) -> some View](./view/nearbyinteractionoriginanchor%28session,isenabled%29.md)
   Specifies this view as the reference body for the nearby interaction session’s angle calculations.
-- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](./view/toolbartitlealignment%28_%29.md)
-  Sets the preferred alignment of the navigation bar’s title.
+- [func toolbarContainerBehavior(ToolbarContainerBehavior) -> some View](./view/toolbarcontainerbehavior%28_%29.md)
+  Whether the container this modifier is applied to acts as a toolbar container, reading the toolbar content of its child views and placing that content into its own bar.
 
 ## Relationships
 

@@ -7,13 +7,13 @@
 32-bit, host endian format.
 
 **Availability**:
-- iOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- iPadOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- Mac Catalyst - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- macOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- visionOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
-- watchOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Host)
+- iOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- iPadOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- Mac Catalyst - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- macOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- visionOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
+- watchOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Host)
 
 ## Declaration
 

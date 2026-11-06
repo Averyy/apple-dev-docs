@@ -7,7 +7,7 @@
 Sets the style for menu buttons within this view.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`menuStyle(_:)`](./menustyle%28_%29.md) instead.
 

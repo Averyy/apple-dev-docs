@@ -18,7 +18,7 @@ object SubscriptionResponse
 ## Properties
 
 - `data` (Subscription) *(required)*
-- `included` ([*]): **Allowed Types**: `PromotedPurchase`, `SubscriptionAppStoreReviewScreenshot`, `SubscriptionAvailability`, `SubscriptionGroup`, `SubscriptionImage`, `SubscriptionIntroductoryOffer`, `SubscriptionLocalization`, `SubscriptionOfferCode`, `SubscriptionPlanAvailability`, `SubscriptionPrice`, `SubscriptionPromotionalOffer`, `SubscriptionVersion`, `WinBackOffer`
+- `included` ([*]): **Allowed Types**: `PromotedPurchase`, `RetentionMessage`, `RetentionOffer`, `SubscriptionAppStoreReviewScreenshot`, `SubscriptionAvailability`, `SubscriptionGroup`, `SubscriptionImage`, `SubscriptionIntroductoryOffer`, `SubscriptionLocalization`, `SubscriptionOfferCode`, `SubscriptionPlanAvailability`, `SubscriptionPrice`, `SubscriptionPromotionalOffer`, `SubscriptionVersion`, `WinBackOffer`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also

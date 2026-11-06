@@ -42,6 +42,8 @@ For more information about [Advanced Commerce API](../AdvancedCommerceAPI/Advanc
 - [func purchase(compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchase%28compactjws,options%29.md)
   Processes a purchase for the product.
 - [AdvancedCommerceProduct.PurchaseResult](./advancedcommerceproduct/purchaseresult.md)
+- [let supportsMultiSeatPurchase: Bool](./advancedcommerceproduct/supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 ### Getting transactions and entitlements
 - [var allTransactions: Transaction.Transactions](./advancedcommerceproduct/alltransactions.md)
   All transactions associated with the generic product ID.

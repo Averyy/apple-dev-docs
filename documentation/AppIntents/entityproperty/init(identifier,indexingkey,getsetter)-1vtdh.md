@@ -25,7 +25,7 @@ Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable
 
 - `identifier`: The identifier of the property
 - `indexingKey`: A Spotlight attribute set key mapping for this property.
-- `getSetter`: The getter reference for the property
+- `getSetter`: The key path for the property’s getter and setter
 
 
 ---

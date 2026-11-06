@@ -107,6 +107,13 @@ Accessories provide one or more services, represented by instances of [`HMServic
   The manufacturer of the accessory.
 - [var model: String?](./hmaccessory/model.md)
   The model name of the accessory.
+### Accessing manufacturer feature extensions
+- [var manufacturerFeatures: [HMAccessory.ManufacturerFeature]](./hmaccessory/manufacturerfeatures.md)
+  The list of manufacturer-declared extension features available for this accessory.
+- [func showManufacturerExtension(for: HMAccessory.ManufacturerFeature.Kind, featureID: String?) async throws](./hmaccessory/showmanufacturerextension%28for,featureid%29.md)
+  Presents the user interface for a manufacturer feature.
+- [HMAccessory.ManufacturerFeature](./hmaccessory/manufacturerfeature.md)
+  A manufacturer-declared extension feature for an accessory.
 ### Browsing for accessories
 - [class HMAccessoryBrowser](./hmaccessorybrowser.md)
   A network browser you can use to discover new accessories in a home.
@@ -116,18 +123,10 @@ Accessories provide one or more services, represented by instances of [`HMServic
 - [var hapInstanceID: UInt64?](./hmaccessory/hapinstanceid-3cusx.md)
 - [var home: HMHome?](./hmaccessory/home.md)
 - [var isVendorAccessory: Bool](./hmaccessory/isvendoraccessory.md)
-- [var manufacturerFeatures: [HMAccessory.ManufacturerFeature]](./hmaccessory/manufacturerfeatures.md)
-  The list of manufacturer-declared extension features available for this accessory.
 - [matterNodeID](./hmaccessory/matternodeid-5zfqo.md)
 - [HAPInstanceID](./hmaccessory/hapinstanceid-667fy.md)
-### Structures
-- [HMAccessory.ManufacturerFeature](./hmaccessory/manufacturerfeature.md)
-  A manufacturer-declared extension feature available for an accessory.
 ### Initializers
 - [init()](./hmaccessory/init%28%29.md)
-### Instance Methods
-- [func showManufacturerExtension(for: HMAccessory.ManufacturerFeature.Kind, featureID: String?) async throws](./hmaccessory/showmanufacturerextension%28for,featureid%29.md)
-  Presents the system-rendered UI for one manufacturer feature.
 
 ## Relationships
 

@@ -70,6 +70,8 @@ Use the notification type along with the transaction and subscription renewal in
   The payload data for a subscription-renewal-date extension notification.
 - [object appData](./appdata.md)
   The object that contains the app metadata and signed app transaction information.
+- [object unclaimInfo](./unclaiminfo.md)
+  The payload data that identifies the seat claims the App Store unclaimed in a group subscription that uses developer-hosted invitations.
 
 
 ---

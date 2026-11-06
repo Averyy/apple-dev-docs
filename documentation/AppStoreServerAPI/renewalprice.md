@@ -25,6 +25,8 @@ This value represents the renewal price, in milliunits of the [`currency`](./cur
 
 If the next billing period includes an offer specified by the [`offerIdentifier`](../AppStoreServerNotifications/offeridentifier.md), the [`renewalPrice`](./renewalprice.md) value reflects the discount.
 
+For a subscription that a customer buys as a multiseat purchase, the `renewalPrice` value is the average price per seat. To work with the price of each seat at the next renewal, use the price tiers in the renewal information’s [`RenewalMultiSeatInfo`](./renewalmultiseatinfo.md) instead.
+
 > ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
 To determine the storefront, use the [`storefront`](./storefront.md) value in the transaction. Don’t use the [`currency`](./currency.md) value to infer the storefront.

@@ -7,9 +7,9 @@
 The context in which the Home app launches your extension, including the selected home and accessory.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -45,6 +45,9 @@ You access the context from the environment with `@Environment(\.homeContext)`. 
 ### Debugging
 - [var description: String](./homecontext/description.md)
   A textual description of the context, for debugging.
+### Operators
+- [static func == (HomeContext, HomeContext) -> Bool](./homecontext/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two contexts are equal.
 
 ## Relationships
 

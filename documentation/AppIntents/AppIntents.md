@@ -28,11 +28,11 @@ With App Intents, you express your app’s actions and data in a structured way 
 - The Shortcuts app helps people configure workflows that include your app’s actions.
 - People can configure Apple Pencil or the Action button on iPhone to perform your app’s actions when pressed.
 - [Widgets](../WidgetKit/WidgetKit.md), [controls](../WidgetKit/controls-collection.md), and [Live Activities](../ActivityKit/ActivityKit.md) can use your app’s actions to perform relevant tasks.
-- You can define custom Focus modes, and respond to Focus changes.
+- You can define custom Focus modes and respond to Focus changes.
 
 Use this framework to declare the actions your app performs as one or more *app intents*. You can also create *app entities* and *app enums* to make your app’s key data types available to the system. For example, a music app might define entities for the songs and albums it manages, and define an app intent to play them. During compilation, the compiler generates information that Apple Intelligence, Siri, and other system features need to discover and use your intents, entities, and app enum types.
 
-For design guidance on how to implement features that involve [Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets), [Controls](https://developer.apple.com/design/human-interface-guidelines/controls), [App Shortcuts](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts), [Siri](https://developer.apple.com/design/human-interface-guidelines/siri), or the [Action button](https://developer.apple.com/design/human-interface-guidelines/action-button), see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines).
+For design guidance, see Human Interface Guidelines > [Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets), > [Controls](https://developer.apple.com/design/human-interface-guidelines/controls), > [App Shortcuts](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts), > [Siri](https://developer.apple.com/design/human-interface-guidelines/siri), or > [Action button](https://developer.apple.com/design/human-interface-guidelines/action-button).
 
 ## Topics
 
@@ -59,6 +59,9 @@ For design guidance on how to implement features that involve [Widgets](https://
   Display app intents and app entities visually using snippets, and associate intents and entities with your app’s scenes and views.
 - [Donations and discovery](./donations-and-discovery.md)
   Donate your app’s intents and entities to the system to help it identify trends and predict future behaviors.
+### Siri AI Developer Preview
+- [Siri AI Developer Preview](./siri-ai-developer-preview.md)
+  Bring custom actions and content to Siri AI.
 ### Feature integration
 - [Adopting App Intents to support system experiences](./adopting-app-intents-to-support-system-experiences.md)
   Create app intents and entities so people can use your app’s content and actions across system experiences.
@@ -91,9 +94,6 @@ For design guidance on how to implement features that involve [Widgets](https://
 ### Deprecated
 - [Deprecated symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Structures
-- [struct EmptySnippetIntent](./emptysnippetintent.md)
-  A snippet intent that renders an empty view.
 
 
 ---

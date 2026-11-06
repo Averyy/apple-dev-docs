@@ -99,6 +99,10 @@ To get started with a basic layout, see [Layout fundamentals](./layout-fundament
   Configures the content margin for a provided placement.
 - [struct ContentMarginPlacement](./contentmarginplacement.md)
   The placement of margins.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./view/contentmargins%28for,edges,alignment%29.md)
+  Insets the content of this view by a content margin guide.
+- [struct ContentMarginGuide](./contentmarginguide.md)
+  A guide for resolving the content margins for a view.
 ### Staying in the safe areas
 - [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](./view/ignoressafearea%28_,edges%29.md)
   Expands the safe area of a view.

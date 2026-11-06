@@ -228,6 +228,11 @@ Intercepting events is only rarely required and you should avoid it if possible.
   A dictionary key, with a value that’s a date when a result is next available.
 - [UIApplicationCategoryDefaultStatusLastProvidedDateErrorKey](./uiapplicationcategorydefaultstatuslastprovideddateerrorkey.md)
   A dictionary key, with a value that’s the date your app last received a successful result.
+### Handle reduced resource usage preference
+- [var systemPrefersReducedResourceUsage: Bool](./uiapplication/systemprefersreducedresourceusage.md)
+  A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
+- [class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification.Name](./uiapplication/systemprefersreducedresourceusagedidchangenotification.md)
+  A notification that posts when [`systemPrefersReducedResourceUsage`](./uiapplication/systemprefersreducedresourceusage.md) changes.
 ### Deprecated
 - [Deprecated symbols](./uiapplication-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
@@ -245,12 +250,6 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [UIApplication.WillEnterForegroundMessage](./uiapplication/willenterforegroundmessage.md)
 - [UIApplication.WillResignActiveMessage](./uiapplication/willresignactivemessage.md)
 - [UIApplication.WillTerminateMessage](./uiapplication/willterminatemessage.md)
-### Instance Properties
-- [var systemPrefersReducedResourceUsage: Bool](./uiapplication/systemprefersreducedresourceusage.md)
-  A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
-### Type Properties
-- [class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification.Name](./uiapplication/systemprefersreducedresourceusagedidchangenotification.md)
-  A notification that posts when [`systemPrefersReducedResourceUsage`](./uiapplication/systemprefersreducedresourceusage.md) changes.
 
 ## Relationships
 

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Metal": {
       "file_path": "documentation/Metal/Metal.md",
-      "hash": "a7c0b73b12b823a0636d9f29a2597bbfd1f1fc4d918ca4e1771b7e83726eba8f"
+      "hash": "7964ef8b1663c32ffba4ed320a7f09fa6380585a55375886e01f23e0c90197eb"
     },
     "https://developer.apple.com/documentation/metal/about-synchronization-events": {
       "file_path": "documentation/Metal/about-synchronization-events.md",
@@ -1030,11 +1030,11 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/barrier(afterqueuestages:beforestages:visibilityoptions:)": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrier(afterqueuestages,beforestages,visibilityoptions).md",
-      "hash": "d61ec03866e647a340a3855cf3fe7c914a4abc7b2f4fa2978b1fbe98d5f3c7c2"
+      "hash": "f8e5a288489a123b24a9af4ab3d9f8e090565e467319299ef8f1585783e56103"
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/barrier(afterstages:beforequeuestages:visibilityoptions:)": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrier(afterstages,beforequeuestages,visibilityoptions).md",
-      "hash": "078d540a802247c5d400acb0c9796339781e5adb03a5fc401f505e8bb5ca5594"
+      "hash": "962824563524fbffa8626f99464f15b635767f38033af9fc6e4c7afefe6f2771"
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/barrierafterencoderstages:beforeencoderstages:visibilityoptions:": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterencoderstages_beforeencoderstages_visibilityoptions_.md",
@@ -1042,11 +1042,11 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/barrierafterqueuestages:beforestages:visibilityoptions:": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterqueuestages_beforestages_visibilityoptions_.md",
-      "hash": "c21dfd54c3932050d6de11f71d89b6c1a6c9477b10ba560089b8bedf49b8afc6"
+      "hash": "ea330ec2a6b5639a74dfb9c50ad437ad9e6f4c7449471ad899bf60f10b3d608c"
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/barrierafterstages:beforequeuestages:visibilityoptions:": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterstages_beforequeuestages_visibilityoptions_.md",
-      "hash": "10305b7524b6f47ea5208b0ee3560aa9e297c9f04f0c9f0f4f28dbc2c0674311"
+      "hash": "fb4306be8dec71fc6b823c3429208b04a04c60624839e9ed08591f71908d9819"
     },
     "https://developer.apple.com/documentation/metal/mtl4commandencoder/commandbuffer": {
       "file_path": "documentation/Metal/mtl4commandencoder/commandbuffer.md",
@@ -1682,7 +1682,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor.md",
-      "hash": "75c5ee06f6aa421390ea191b8e398a482fe06f0d4a3751805b89b08c9d78dd5f"
+      "hash": "4fa6f4aceb6ea447db6b5cb8a8f3e407502b525d44779197bc8b0799b9fab2e1"
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/computefunctiondescriptor": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/computefunctiondescriptor.md",
@@ -1690,11 +1690,11 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/contentionrelief": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/contentionrelief.md",
-      "hash": "0e60953d6d0d679c870ab5a07e19021a1a3e981ce3780af31dcc6710527fb2ca"
+      "hash": "61f5a5068d284f8f58d005088f7e5e726eb3b46e495217bc7b00fc140bff71b1"
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/forwardprogressusage": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/forwardprogressusage.md",
-      "hash": "6fc17550ceeb50fcf566eb83473cf03ed0699d6eed41c0b33d084d18ef0f8891"
+      "hash": "c251162a8a8c39abd2cd685865d04ca1d31e055020627c03a9aba848c47ab468"
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md",
@@ -1702,7 +1702,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/optimizeforpersistentkernel": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/optimizeforpersistentkernel.md",
-      "hash": "dc0a23c9222108ec71cdd27ecff8bef3d7f4e301cb1b308d38e72aef98c1897d"
+      "hash": "fa8eb641ca8ea9ac5927181debe04f060a1248e63e8976031a9a864805a06885"
     },
     "https://developer.apple.com/documentation/metal/mtl4computepipelinedescriptor/requiredthreadsperthreadgroup": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md",
@@ -2302,19 +2302,19 @@
     },
     "https://developer.apple.com/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:)": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength).md",
-      "hash": "b63c7c65bb42f8b96e552a77248df7c871aa11eebb6179b93ec0df3a5df4622f"
+      "hash": "f2bb8ea402b2fd3c8241fd780abcfd55f813b80c0720d60d9c5fa515261a8815"
     },
     "https://developer.apple.com/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:)": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength,instancecount).md",
-      "hash": "a749bbb0b2424e5ebbed7a866e3d558e8dd4b57233f375c124e2e8f4b89f8eb7"
+      "hash": "69bc005555f1598ab94356aa628727d8f9a7fff76d8448f57e4e881b25672421"
     },
     "https://developer.apple.com/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:basevertex:baseinstance:)": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength,instancecount,basevertex,baseinstance).md",
-      "hash": "4a1bec362239fb310de19cee8b7d63e252be63739d1ebc2c67d91f0d40c2c8b0"
+      "hash": "47b747d666213e941099e999308a94252fe3ace56e6ea04fe3659c4d975a9eca"
     },
     "https://developer.apple.com/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indextype:indexbuffer:indexbufferlength:indirectbuffer:)": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indextype,indexbuffer,indexbufferlength,indirectbuffer).md",
-      "hash": "142cc02bdd6088bd1edcc79f10138886d6e37c1eff076b0a745abea31c9d182c"
+      "hash": "f7f4efcadb3334aecc79c14ff285e1008e144d0f30974e5da04f38516b54ffdb"
     },
     "https://developer.apple.com/documentation/metal/mtl4rendercommandencoder/drawmeshthreadgroups(indirectbuffer:threadsperobjectthreadgroup:threadspermeshthreadgroup:)": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawmeshthreadgroups(indirectbuffer,threadsperobjectthreadgroup,threadspermeshthreadgroup).md",
@@ -2998,7 +2998,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtl_tensor_max_rank": {
       "file_path": "documentation/Metal/mtl_tensor_max_rank.md",
-      "hash": "0445527b76b96952b2d2340df183b5f79759df318031d727d06f0a525c643d37"
+      "hash": "976d0958ca8006f34af0b252fbc9d89a73332a084102fbaa474628c3239e6168"
     },
     "https://developer.apple.com/documentation/metal/mtlaccelerationstructure": {
       "file_path": "documentation/Metal/mtlaccelerationstructure.md",
@@ -4534,7 +4534,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlbinding": {
       "file_path": "documentation/Metal/mtlbinding.md",
-      "hash": "806f15190b82b7611291f172b69014a8edc517dc40ad2e2476a55bcfe797b2d0"
+      "hash": "6f92cc26457b74b98b07f9d69f4ac137a1f6b113972ef7c02b1c17293d7bf709"
     },
     "https://developer.apple.com/documentation/metal/mtlbinding/access": {
       "file_path": "documentation/Metal/mtlbinding/access.md",
@@ -4594,7 +4594,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlbindingtype": {
       "file_path": "documentation/Metal/mtlbindingtype.md",
-      "hash": "9bd8ad79b5e3b97d089c866c6ae1f82733b36ec846292bd0ce0f100512c03db3"
+      "hash": "23dd28b32524856330085ad6cf1f2ab6b196183026a3ca7606ea976d1e541a51"
     },
     "https://developer.apple.com/documentation/metal/mtlbindingtype/buffer": {
       "file_path": "documentation/Metal/mtlbindingtype/buffer.md",
@@ -4634,7 +4634,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlbindingtype/tensor": {
       "file_path": "documentation/Metal/mtlbindingtype/tensor.md",
-      "hash": "659da6bf35a03c189ce150689b88e51af176c3ac9994c409ebc6d3669f389ee2"
+      "hash": "02d51d6a81cc1883605bea316e7126c59b156259a7b1c6285d320d19729b20ee"
     },
     "https://developer.apple.com/documentation/metal/mtlbindingtype/texture": {
       "file_path": "documentation/Metal/mtlbindingtype/texture.md",
@@ -4766,7 +4766,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlblendoperation/unspecialized": {
       "file_path": "documentation/Metal/mtlblendoperation/unspecialized.md",
-      "hash": "befec2fca78a66f1d306327ff18125f185585ce3b3348ddfb55750c5e8ef2ff5"
+      "hash": "ee4b6b78fe80293595cb32f7c127675eb7981fce4d831f502e31ae9c29983a2b"
     },
     "https://developer.apple.com/documentation/metal/mtlblitcommandencoder": {
       "file_path": "documentation/Metal/mtlblitcommandencoder.md",
@@ -5690,7 +5690,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcommandencoder/barrier(afterqueuestages:beforestages:)": {
       "file_path": "documentation/Metal/mtlcommandencoder/barrier(afterqueuestages,beforestages).md",
-      "hash": "775816564db126b0c884930420b55fb609a0129224f3bdad3669c591f372cbd5"
+      "hash": "b706118401cbe8291fb2c648718af16bb8b039cac171d6caa0c45c5c4b564649"
     },
     "https://developer.apple.com/documentation/metal/mtlcommandencoder/device": {
       "file_path": "documentation/Metal/mtlcommandencoder/device.md",
@@ -6314,7 +6314,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor.md",
-      "hash": "e92b1c3e55f49e725e891311b3c2adefb4831f75b10e8e7c30814d20dc4fa9ad"
+      "hash": "59654117c230a464a41ca79a1747e956169e3a641a78c8496345f05f1d88ccbc"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/binaryarchives": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/binaryarchives.md",
@@ -6330,11 +6330,11 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/contentionrelief": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/contentionrelief.md",
-      "hash": "72313ba07b00d349f1d1b8153c3d567ba6fe189474979f9479aad65809c573f7"
+      "hash": "a678ea8324209e307bed990875a2ac5838b35bbb050c76daa4c751ee3d6cc9c0"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/forwardprogressusage": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/forwardprogressusage.md",
-      "hash": "d421e2d520fcc693466f0feb2d004241cae2aafdb6828d05030a0bacc403eea1"
+      "hash": "41efcb0200ee408e7dc120fab2fc1c3580afda81ab6935c2debb213e7f96b219"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/insertlibraries": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/insertlibraries.md",
@@ -6358,7 +6358,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/optimizeforpersistentkernel": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/optimizeforpersistentkernel.md",
-      "hash": "4fdd35dc5783c22a1b2acde1d0045491730c257a01ae12fc1c54d208b4de03ff"
+      "hash": "80911313b8d1370a80894b73fe82952cea01b65e72312793f921c2ccf47dfbc8"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinedescriptor/preloadedlibraries": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/preloadedlibraries.md",
@@ -6406,7 +6406,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate.md",
-      "hash": "c30e1dfd9ce366326859a5fc692be70ddb620526e6fd24103506ca27137cc4a3"
+      "hash": "26af4ee10697171c82096dbdca1e9ce2613d9d667b587965a9ffaccf2bc1b042"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate/device": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/device.md",
@@ -6414,7 +6414,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate/forwardprogressusage": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/forwardprogressusage.md",
-      "hash": "45a006f974859806221bb081be4f23ed6147efaea8df4cfe024b9fc583d2c6e5"
+      "hash": "05a488e0511d466377b69438d2ae284f451d12240431105f08486433c5d3f4ec"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate/functionhandle(function:)-7d523": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/functionhandle(function)-7d523.md",
@@ -6462,7 +6462,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid(forthreadsperthreadgroup:)": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid(forthreadsperthreadgroup).md",
-      "hash": "8ba7ce2c9f804642915f4c5080d1644bd9a7442fa304eb3e3fd24f0c7535f4b0"
+      "hash": "ff3efda3434cf9c528e1fc1bc170bb7144938b11e4465021387f457589c5146f"
     },
     "https://developer.apple.com/documentation/metal/mtlcomputepipelinestate/reflection": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/reflection.md",
@@ -6490,19 +6490,19 @@
     },
     "https://developer.apple.com/documentation/metal/mtlcontentionrelief": {
       "file_path": "documentation/Metal/mtlcontentionrelief.md",
-      "hash": "11bc1d28d6f8655e145cf56cfa9b2b0676d796d29270f7aac7fa5b76f5d78ed5"
+      "hash": "790fb8e359ab52c6db1fa4794c82ec6c35c9cfc5c5d36b3a1eb1a0ee53cf3113"
     },
     "https://developer.apple.com/documentation/metal/mtlcontentionrelief/automatic": {
       "file_path": "documentation/Metal/mtlcontentionrelief/automatic.md",
-      "hash": "fc783b9f2b8356bbf6aa2ced71682f4208b679043fc866b1e143519e9cc9e56e"
+      "hash": "c76325672e50ed91cf3317cfadc2a02e7ac8e54909a92a912c25dfbc171a02bd"
     },
     "https://developer.apple.com/documentation/metal/mtlcontentionrelief/init(rawvalue:)": {
       "file_path": "documentation/Metal/mtlcontentionrelief/init(rawvalue).md",
-      "hash": "6037facf8d5cffabb8a33cba0080a2e611a20bfdac31646e8c416ec21b9552c1"
+      "hash": "dfc672b3ac6225fd044a58cb91827114f6e83a017f04492661f64bd0a99b6b5b"
     },
     "https://developer.apple.com/documentation/metal/mtlcontentionrelief/none": {
       "file_path": "documentation/Metal/mtlcontentionrelief/none.md",
-      "hash": "f4a302d6d5ff39e4dec33e12f19ce428b9ce8efbef223eca4f5fc75b498f27f3"
+      "hash": "3a03c8c2ac5bc7425910ed2f3f0d370dd6d4d4a2383101c6f74ae29c137279e9"
     },
     "https://developer.apple.com/documentation/metal/mtlcoordinate2d": {
       "file_path": "documentation/Metal/mtlcoordinate2d.md",
@@ -8430,23 +8430,23 @@
     },
     "https://developer.apple.com/documentation/metal/mtlforwardprogressusage": {
       "file_path": "documentation/Metal/mtlforwardprogressusage.md",
-      "hash": "fbdf76f9a131a32eaaf4ef995b2f5752da6573ac680dcfb5d0bfe1903d7e2c8e"
+      "hash": "be0f8a79bf8d6c464018b2f7cfa1e3f26949b192724e8f181597e7c84927a073"
     },
     "https://developer.apple.com/documentation/metal/mtlforwardprogressusage/automatic": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/automatic.md",
-      "hash": "b18886e03575b420043266268dc6c3d5136c70ee5d68f75b4e29556c5751a7cd"
+      "hash": "a379f8cebbea51cdcb6dfef9bc1312168c74ca8b66caadc1f752eb980c2f2cf1"
     },
     "https://developer.apple.com/documentation/metal/mtlforwardprogressusage/init(rawvalue:)": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/init(rawvalue).md",
-      "hash": "9459a93ab52208385f181c653a4a63d59c0e9757f995688b082c2fad8c3a61b3"
+      "hash": "6b4e7493338b991a1626eecac94106b3f1af2b9579347195f72308e847b8885f"
     },
     "https://developer.apple.com/documentation/metal/mtlforwardprogressusage/simdgroupparallel": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/simdgroupparallel.md",
-      "hash": "46fe953c54682e8be74ee5d22c045c5be6a9d356c88e00f5168b5ed15bd6c3a1"
+      "hash": "5b4e4ee7783a5bd74674c67ce40624a0711dc76cdb9423338a4d4198c6f827db"
     },
     "https://developer.apple.com/documentation/metal/mtlforwardprogressusage/weak": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/weak.md",
-      "hash": "eca1d7a424e132263c586fd39fbeac70e608c674f710f7787a47d7624a473ccd"
+      "hash": "e6d16fa60a888afe9a498f7522f2da28b5dcffce3d6a7c1eee206d2e0fa68d36"
     },
     "https://developer.apple.com/documentation/metal/mtlfunction": {
       "file_path": "documentation/Metal/mtlfunction.md",
@@ -11026,7 +11026,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlpixelformat": {
       "file_path": "documentation/Metal/mtlpixelformat.md",
-      "hash": "8301f6f88a85ccda5fa7471bdd30fddb3415d73eab7b690adaab45caabf0a707"
+      "hash": "ba907575d60fab88dfff8cbcb7c2da9b711a1d68ed17986e4d4ac9de49cd4746"
     },
     "https://developer.apple.com/documentation/metal/mtlpixelformat/a1bgr5unorm": {
       "file_path": "documentation/Metal/mtlpixelformat/a1bgr5unorm.md",
@@ -11630,7 +11630,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtlpixelformat/unspecialized": {
       "file_path": "documentation/Metal/mtlpixelformat/unspecialized.md",
-      "hash": "2d496cbe3c0be2a83b4dfdffee06719129a4c0e547d253f489c6d9998ea7b894"
+      "hash": "3083ee1e814c36d134a780c46e2a946bd2c1cdee3e56759eed89c87e03f37339"
     },
     "https://developer.apple.com/documentation/metal/mtlpixelformat/x24_stencil8": {
       "file_path": "documentation/Metal/mtlpixelformat/x24_stencil8.md",
@@ -14486,7 +14486,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensor": {
       "file_path": "documentation/Metal/mtltensor.md",
-      "hash": "235dbf15b1636f08cb506cbe4f3168e57a8996b93cb26021c4a29d8d924e2d22"
+      "hash": "c3519cb1fb14dd4fbf222a507e4f91ac2af8b77e343c6313ab3e694e6bf93ad5"
     },
     "https://developer.apple.com/documentation/metal/mtltensor/auxiliaryplanes": {
       "file_path": "documentation/Metal/mtltensor/auxiliaryplanes.md",
@@ -14606,23 +14606,23 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensorbinding": {
       "file_path": "documentation/Metal/mtltensorbinding.md",
-      "hash": "a4d00c539d7aa5030abfbd8024711781e02c69c4acec517774e7cbd8d316cd80"
+      "hash": "13bf79e7c103f2d80c1f67f0782c052589b261c5badf33c36be99d10a122ea8b"
     },
     "https://developer.apple.com/documentation/metal/mtltensorbinding/auxiliaryplanes": {
       "file_path": "documentation/Metal/mtltensorbinding/auxiliaryplanes.md",
-      "hash": "400c91a4ee7f0c280611dcc79288107b289a99caeb5aca653da3bc3fa7188e24"
+      "hash": "054a1297818a7a84a8be2bf11f53c4fa9decbfe9ba05d45a5069b6a2ae2bad79"
     },
     "https://developer.apple.com/documentation/metal/mtltensorbinding/dimensions": {
       "file_path": "documentation/Metal/mtltensorbinding/dimensions.md",
-      "hash": "03815238d6edeb32fc452bceb6c85b6506fd84a581412194ff71998e67e55e1e"
+      "hash": "749d13808aae334b7432a37929347b604f8adc94eb0557be0e9434eed2729f27"
     },
     "https://developer.apple.com/documentation/metal/mtltensorbinding/indextype": {
       "file_path": "documentation/Metal/mtltensorbinding/indextype.md",
-      "hash": "ebe7341e47b208124c442dc42c13f8dfc5a3086b8eb72da86b81f74c4398a036"
+      "hash": "e652cf3abb0808e8cbd878d34803c69cb97058e521f9cef1f0b22bf1b2ea62b3"
     },
     "https://developer.apple.com/documentation/metal/mtltensorbinding/tensordatatype": {
       "file_path": "documentation/Metal/mtltensorbinding/tensordatatype.md",
-      "hash": "ac6d78c4d3faae480cc9b7afb37bdbfb0f45bce878ab075e20727f10c771b91f"
+      "hash": "6e3d8584da3ccd230d9c3dd46bbc3dea86beb9b9f687b2faea02cce64b8f3100"
     },
     "https://developer.apple.com/documentation/metal/mtltensorbufferattachments": {
       "file_path": "documentation/Metal/mtltensorbufferattachments.md",
@@ -14646,7 +14646,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensordatatype": {
       "file_path": "documentation/Metal/mtltensordatatype.md",
-      "hash": "32d66776c2f58c4d69c0be7afbfa6574bb381d3e81ff5904b0a4965050b5f274"
+      "hash": "9317d1d0eb600b4cb52922a1fbf3a9b1084c48dca008b8b04709fc40bfd51fa6"
     },
     "https://developer.apple.com/documentation/metal/mtltensordatatype/bfloat16": {
       "file_path": "documentation/Metal/mtltensordatatype/bfloat16.md",
@@ -14726,7 +14726,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensordescriptor": {
       "file_path": "documentation/Metal/mtltensordescriptor.md",
-      "hash": "16aa0628a24cfa8f8f2ed963d431f01e4f7e908a76c9cdb58d250542f1b958e8"
+      "hash": "bba5eafd186bed3ce41525bd69e0869c38ec8101c243b03b24db86bc3df389b6"
     },
     "https://developer.apple.com/documentation/metal/mtltensordescriptor/auxiliaryplanes": {
       "file_path": "documentation/Metal/mtltensordescriptor/auxiliaryplanes.md",
@@ -14766,7 +14766,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensordomain": {
       "file_path": "documentation/Metal/mtltensordomain.md",
-      "hash": "351095291ce6e1497ee672784286566fe6b2fd31987a1ff24e0d732df29e999a"
+      "hash": "19767f3c66cc0fc0e61c6ef4cff0bf1dd3e20b6ecea8b45e03908708cb9aa954"
     },
     "https://developer.apple.com/documentation/metal/mtltensorerror-swift.struct": {
       "file_path": "documentation/Metal/mtltensorerror-swift.struct.md",
@@ -14810,7 +14810,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensorextents": {
       "file_path": "documentation/Metal/mtltensorextents.md",
-      "hash": "7efbd446fa30dd87a520f31c16ed70f9ca9fb3feb0b94908ab7d8fa3f78c819e"
+      "hash": "84534006720f4e33485e754544dbbee3f195df9aca1899169e40c423fe4be393"
     },
     "https://developer.apple.com/documentation/metal/mtltensorextents/extentatdimensionindex:": {
       "file_path": "documentation/Metal/mtltensorextents/extentatdimensionindex_.md",
@@ -14850,7 +14850,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensorreferencetype": {
       "file_path": "documentation/Metal/mtltensorreferencetype.md",
-      "hash": "7e036e0340b83e3216fba9163dc21de417708ba1c130e7000fa281a4789830e6"
+      "hash": "45a454531cb72ef2364a3773dde3f0ad5eabaff3221010a9d9b01c55e96e656b"
     },
     "https://developer.apple.com/documentation/metal/mtltensorreferencetype/access": {
       "file_path": "documentation/Metal/mtltensorreferencetype/access.md",
@@ -14874,7 +14874,7 @@
     },
     "https://developer.apple.com/documentation/metal/mtltensorusage": {
       "file_path": "documentation/Metal/mtltensorusage.md",
-      "hash": "7ad28968eed8a61f9b9af9c94f0b84b22796402472eb2e1781bfc81076580721"
+      "hash": "b262a875b4af85a2c7d8bdd9fa7e746404efa4c32ea165998a78218ef3b4a127"
     },
     "https://developer.apple.com/documentation/metal/mtltensorusage/compute": {
       "file_path": "documentation/Metal/mtltensorusage/compute.md",
@@ -16310,7 +16310,7 @@
     },
     "https://developer.apple.com/documentation/metal/resource-fundamentals": {
       "file_path": "documentation/Metal/resource-fundamentals.md",
-      "hash": "62485cdefa7cf3f570c21f4e27b703135203cc78bddad1805816187b6609f2b3"
+      "hash": "603153075b8ba5c06aeae2afdcaae72f1a97139eee8d1040bc860dd368ea54d5"
     },
     "https://developer.apple.com/documentation/metal/resource-loading": {
       "file_path": "documentation/Metal/resource-loading.md",
@@ -16478,7 +16478,7 @@
     },
     "https://developer.apple.com/documentation/metal/using-the-metal-4-compilation-api": {
       "file_path": "documentation/Metal/using-the-metal-4-compilation-api.md",
-      "hash": "453a2ebf036f5ef29fae78fe56f39225fb4426f177cba88ad27e3ea742c74bae"
+      "hash": "6902a877026214046add27bc988e5a7508aac21ae229ffe4651980270b34466e"
     },
     "https://developer.apple.com/documentation/metal/vertex-shader-resource-preparation-commands": {
       "file_path": "documentation/Metal/vertex-shader-resource-preparation-commands.md",
@@ -16494,7 +16494,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Metal.json": {
       "file_path": "documentation/Metal/Metal.md",
-      "hash": "a7c0b73b12b823a0636d9f29a2597bbfd1f1fc4d918ca4e1771b7e83726eba8f"
+      "hash": "7964ef8b1663c32ffba4ed320a7f09fa6380585a55375886e01f23e0c90197eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/about-synchronization-events.json": {
       "file_path": "documentation/Metal/about-synchronization-events.md",
@@ -17522,11 +17522,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/barrier(afterqueuestages:beforestages:visibilityoptions:).json": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrier(afterqueuestages,beforestages,visibilityoptions).md",
-      "hash": "d61ec03866e647a340a3855cf3fe7c914a4abc7b2f4fa2978b1fbe98d5f3c7c2"
+      "hash": "f8e5a288489a123b24a9af4ab3d9f8e090565e467319299ef8f1585783e56103"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/barrier(afterstages:beforequeuestages:visibilityoptions:).json": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrier(afterstages,beforequeuestages,visibilityoptions).md",
-      "hash": "078d540a802247c5d400acb0c9796339781e5adb03a5fc401f505e8bb5ca5594"
+      "hash": "962824563524fbffa8626f99464f15b635767f38033af9fc6e4c7afefe6f2771"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/barrierafterencoderstages:beforeencoderstages:visibilityoptions:.json": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterencoderstages_beforeencoderstages_visibilityoptions_.md",
@@ -17534,11 +17534,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/barrierafterqueuestages:beforestages:visibilityoptions:.json": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterqueuestages_beforestages_visibilityoptions_.md",
-      "hash": "c21dfd54c3932050d6de11f71d89b6c1a6c9477b10ba560089b8bedf49b8afc6"
+      "hash": "ea330ec2a6b5639a74dfb9c50ad437ad9e6f4c7449471ad899bf60f10b3d608c"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/barrierafterstages:beforequeuestages:visibilityoptions:.json": {
       "file_path": "documentation/Metal/mtl4commandencoder/barrierafterstages_beforequeuestages_visibilityoptions_.md",
-      "hash": "10305b7524b6f47ea5208b0ee3560aa9e297c9f04f0c9f0f4f28dbc2c0674311"
+      "hash": "fb4306be8dec71fc6b823c3429208b04a04c60624839e9ed08591f71908d9819"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4commandencoder/commandbuffer.json": {
       "file_path": "documentation/Metal/mtl4commandencoder/commandbuffer.md",
@@ -18174,7 +18174,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor.md",
-      "hash": "75c5ee06f6aa421390ea191b8e398a482fe06f0d4a3751805b89b08c9d78dd5f"
+      "hash": "4fa6f4aceb6ea447db6b5cb8a8f3e407502b525d44779197bc8b0799b9fab2e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/computefunctiondescriptor.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/computefunctiondescriptor.md",
@@ -18182,11 +18182,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/contentionrelief.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/contentionrelief.md",
-      "hash": "0e60953d6d0d679c870ab5a07e19021a1a3e981ce3780af31dcc6710527fb2ca"
+      "hash": "61f5a5068d284f8f58d005088f7e5e726eb3b46e495217bc7b00fc140bff71b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/forwardprogressusage.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/forwardprogressusage.md",
-      "hash": "6fc17550ceeb50fcf566eb83473cf03ed0699d6eed41c0b33d084d18ef0f8891"
+      "hash": "c251162a8a8c39abd2cd685865d04ca1d31e055020627c03a9aba848c47ab468"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md",
@@ -18194,7 +18194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/optimizeforpersistentkernel.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/optimizeforpersistentkernel.md",
-      "hash": "dc0a23c9222108ec71cdd27ecff8bef3d7f4e301cb1b308d38e72aef98c1897d"
+      "hash": "fa8eb641ca8ea9ac5927181debe04f060a1248e63e8976031a9a864805a06885"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.json": {
       "file_path": "documentation/Metal/mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md",
@@ -18794,19 +18794,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:).json": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength).md",
-      "hash": "b63c7c65bb42f8b96e552a77248df7c871aa11eebb6179b93ec0df3a5df4622f"
+      "hash": "f2bb8ea402b2fd3c8241fd780abcfd55f813b80c0720d60d9c5fa515261a8815"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:).json": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength,instancecount).md",
-      "hash": "a749bbb0b2424e5ebbed7a866e3d558e8dd4b57233f375c124e2e8f4b89f8eb7"
+      "hash": "69bc005555f1598ab94356aa628727d8f9a7fff76d8448f57e4e881b25672421"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:basevertex:baseinstance:).json": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indexcount,indextype,indexbuffer,indexbufferlength,instancecount,basevertex,baseinstance).md",
-      "hash": "4a1bec362239fb310de19cee8b7d63e252be63739d1ebc2c67d91f0d40c2c8b0"
+      "hash": "47b747d666213e941099e999308a94252fe3ace56e6ea04fe3659c4d975a9eca"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indextype:indexbuffer:indexbufferlength:indirectbuffer:).json": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawindexedprimitives(primitivetype,indextype,indexbuffer,indexbufferlength,indirectbuffer).md",
-      "hash": "142cc02bdd6088bd1edcc79f10138886d6e37c1eff076b0a745abea31c9d182c"
+      "hash": "f7f4efcadb3334aecc79c14ff285e1008e144d0f30974e5da04f38516b54ffdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4rendercommandencoder/drawmeshthreadgroups(indirectbuffer:threadsperobjectthreadgroup:threadspermeshthreadgroup:).json": {
       "file_path": "documentation/Metal/mtl4rendercommandencoder/drawmeshthreadgroups(indirectbuffer,threadsperobjectthreadgroup,threadspermeshthreadgroup).md",
@@ -19490,7 +19490,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl_tensor_max_rank.json": {
       "file_path": "documentation/Metal/mtl_tensor_max_rank.md",
-      "hash": "0445527b76b96952b2d2340df183b5f79759df318031d727d06f0a525c643d37"
+      "hash": "976d0958ca8006f34af0b252fbc9d89a73332a084102fbaa474628c3239e6168"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlaccelerationstructure.json": {
       "file_path": "documentation/Metal/mtlaccelerationstructure.md",
@@ -21026,7 +21026,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbinding.json": {
       "file_path": "documentation/Metal/mtlbinding.md",
-      "hash": "806f15190b82b7611291f172b69014a8edc517dc40ad2e2476a55bcfe797b2d0"
+      "hash": "6f92cc26457b74b98b07f9d69f4ac137a1f6b113972ef7c02b1c17293d7bf709"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbinding/access.json": {
       "file_path": "documentation/Metal/mtlbinding/access.md",
@@ -21086,7 +21086,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbindingtype.json": {
       "file_path": "documentation/Metal/mtlbindingtype.md",
-      "hash": "9bd8ad79b5e3b97d089c866c6ae1f82733b36ec846292bd0ce0f100512c03db3"
+      "hash": "23dd28b32524856330085ad6cf1f2ab6b196183026a3ca7606ea976d1e541a51"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbindingtype/buffer.json": {
       "file_path": "documentation/Metal/mtlbindingtype/buffer.md",
@@ -21126,7 +21126,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbindingtype/tensor.json": {
       "file_path": "documentation/Metal/mtlbindingtype/tensor.md",
-      "hash": "659da6bf35a03c189ce150689b88e51af176c3ac9994c409ebc6d3669f389ee2"
+      "hash": "02d51d6a81cc1883605bea316e7126c59b156259a7b1c6285d320d19729b20ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbindingtype/texture.json": {
       "file_path": "documentation/Metal/mtlbindingtype/texture.md",
@@ -21258,7 +21258,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlblendoperation/unspecialized.json": {
       "file_path": "documentation/Metal/mtlblendoperation/unspecialized.md",
-      "hash": "befec2fca78a66f1d306327ff18125f185585ce3b3348ddfb55750c5e8ef2ff5"
+      "hash": "ee4b6b78fe80293595cb32f7c127675eb7981fce4d831f502e31ae9c29983a2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlblitcommandencoder.json": {
       "file_path": "documentation/Metal/mtlblitcommandencoder.md",
@@ -22182,7 +22182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcommandencoder/barrier(afterqueuestages:beforestages:).json": {
       "file_path": "documentation/Metal/mtlcommandencoder/barrier(afterqueuestages,beforestages).md",
-      "hash": "775816564db126b0c884930420b55fb609a0129224f3bdad3669c591f372cbd5"
+      "hash": "b706118401cbe8291fb2c648718af16bb8b039cac171d6caa0c45c5c4b564649"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcommandencoder/device.json": {
       "file_path": "documentation/Metal/mtlcommandencoder/device.md",
@@ -22806,7 +22806,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor.md",
-      "hash": "e92b1c3e55f49e725e891311b3c2adefb4831f75b10e8e7c30814d20dc4fa9ad"
+      "hash": "59654117c230a464a41ca79a1747e956169e3a641a78c8496345f05f1d88ccbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/binaryarchives.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/binaryarchives.md",
@@ -22822,11 +22822,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/contentionrelief.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/contentionrelief.md",
-      "hash": "72313ba07b00d349f1d1b8153c3d567ba6fe189474979f9479aad65809c573f7"
+      "hash": "a678ea8324209e307bed990875a2ac5838b35bbb050c76daa4c751ee3d6cc9c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/forwardprogressusage.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/forwardprogressusage.md",
-      "hash": "d421e2d520fcc693466f0feb2d004241cae2aafdb6828d05030a0bacc403eea1"
+      "hash": "41efcb0200ee408e7dc120fab2fc1c3580afda81ab6935c2debb213e7f96b219"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/insertlibraries.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/insertlibraries.md",
@@ -22850,7 +22850,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/optimizeforpersistentkernel.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/optimizeforpersistentkernel.md",
-      "hash": "4fdd35dc5783c22a1b2acde1d0045491730c257a01ae12fc1c54d208b4de03ff"
+      "hash": "80911313b8d1370a80894b73fe82952cea01b65e72312793f921c2ccf47dfbc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinedescriptor/preloadedlibraries.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinedescriptor/preloadedlibraries.md",
@@ -22898,7 +22898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate.md",
-      "hash": "c30e1dfd9ce366326859a5fc692be70ddb620526e6fd24103506ca27137cc4a3"
+      "hash": "26af4ee10697171c82096dbdca1e9ce2613d9d667b587965a9ffaccf2bc1b042"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate/device.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/device.md",
@@ -22906,7 +22906,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate/forwardprogressusage.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/forwardprogressusage.md",
-      "hash": "45a006f974859806221bb081be4f23ed6147efaea8df4cfe024b9fc583d2c6e5"
+      "hash": "05a488e0511d466377b69438d2ae284f451d12240431105f08486433c5d3f4ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate/functionhandle(function:)-7d523.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/functionhandle(function)-7d523.md",
@@ -22954,7 +22954,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid(forthreadsperthreadgroup:).json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid(forthreadsperthreadgroup).md",
-      "hash": "8ba7ce2c9f804642915f4c5080d1644bd9a7442fa304eb3e3fd24f0c7535f4b0"
+      "hash": "ff3efda3434cf9c528e1fc1bc170bb7144938b11e4465021387f457589c5146f"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcomputepipelinestate/reflection.json": {
       "file_path": "documentation/Metal/mtlcomputepipelinestate/reflection.md",
@@ -22982,19 +22982,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcontentionrelief.json": {
       "file_path": "documentation/Metal/mtlcontentionrelief.md",
-      "hash": "11bc1d28d6f8655e145cf56cfa9b2b0676d796d29270f7aac7fa5b76f5d78ed5"
+      "hash": "790fb8e359ab52c6db1fa4794c82ec6c35c9cfc5c5d36b3a1eb1a0ee53cf3113"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcontentionrelief/automatic.json": {
       "file_path": "documentation/Metal/mtlcontentionrelief/automatic.md",
-      "hash": "fc783b9f2b8356bbf6aa2ced71682f4208b679043fc866b1e143519e9cc9e56e"
+      "hash": "c76325672e50ed91cf3317cfadc2a02e7ac8e54909a92a912c25dfbc171a02bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcontentionrelief/init(rawvalue:).json": {
       "file_path": "documentation/Metal/mtlcontentionrelief/init(rawvalue).md",
-      "hash": "6037facf8d5cffabb8a33cba0080a2e611a20bfdac31646e8c416ec21b9552c1"
+      "hash": "dfc672b3ac6225fd044a58cb91827114f6e83a017f04492661f64bd0a99b6b5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcontentionrelief/none.json": {
       "file_path": "documentation/Metal/mtlcontentionrelief/none.md",
-      "hash": "f4a302d6d5ff39e4dec33e12f19ce428b9ce8efbef223eca4f5fc75b498f27f3"
+      "hash": "3a03c8c2ac5bc7425910ed2f3f0d370dd6d4d4a2383101c6f74ae29c137279e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcoordinate2d.json": {
       "file_path": "documentation/Metal/mtlcoordinate2d.md",
@@ -24922,23 +24922,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlforwardprogressusage.json": {
       "file_path": "documentation/Metal/mtlforwardprogressusage.md",
-      "hash": "fbdf76f9a131a32eaaf4ef995b2f5752da6573ac680dcfb5d0bfe1903d7e2c8e"
+      "hash": "be0f8a79bf8d6c464018b2f7cfa1e3f26949b192724e8f181597e7c84927a073"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlforwardprogressusage/automatic.json": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/automatic.md",
-      "hash": "b18886e03575b420043266268dc6c3d5136c70ee5d68f75b4e29556c5751a7cd"
+      "hash": "a379f8cebbea51cdcb6dfef9bc1312168c74ca8b66caadc1f752eb980c2f2cf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlforwardprogressusage/init(rawvalue:).json": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/init(rawvalue).md",
-      "hash": "9459a93ab52208385f181c653a4a63d59c0e9757f995688b082c2fad8c3a61b3"
+      "hash": "6b4e7493338b991a1626eecac94106b3f1af2b9579347195f72308e847b8885f"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlforwardprogressusage/simdgroupparallel.json": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/simdgroupparallel.md",
-      "hash": "46fe953c54682e8be74ee5d22c045c5be6a9d356c88e00f5168b5ed15bd6c3a1"
+      "hash": "5b4e4ee7783a5bd74674c67ce40624a0711dc76cdb9423338a4d4198c6f827db"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlforwardprogressusage/weak.json": {
       "file_path": "documentation/Metal/mtlforwardprogressusage/weak.md",
-      "hash": "eca1d7a424e132263c586fd39fbeac70e608c674f710f7787a47d7624a473ccd"
+      "hash": "e6d16fa60a888afe9a498f7522f2da28b5dcffce3d6a7c1eee206d2e0fa68d36"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlfunction.json": {
       "file_path": "documentation/Metal/mtlfunction.md",
@@ -27518,7 +27518,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlpixelformat.json": {
       "file_path": "documentation/Metal/mtlpixelformat.md",
-      "hash": "8301f6f88a85ccda5fa7471bdd30fddb3415d73eab7b690adaab45caabf0a707"
+      "hash": "ba907575d60fab88dfff8cbcb7c2da9b711a1d68ed17986e4d4ac9de49cd4746"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlpixelformat/a1bgr5unorm.json": {
       "file_path": "documentation/Metal/mtlpixelformat/a1bgr5unorm.md",
@@ -28122,7 +28122,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlpixelformat/unspecialized.json": {
       "file_path": "documentation/Metal/mtlpixelformat/unspecialized.md",
-      "hash": "2d496cbe3c0be2a83b4dfdffee06719129a4c0e547d253f489c6d9998ea7b894"
+      "hash": "3083ee1e814c36d134a780c46e2a946bd2c1cdee3e56759eed89c87e03f37339"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlpixelformat/x24_stencil8.json": {
       "file_path": "documentation/Metal/mtlpixelformat/x24_stencil8.md",
@@ -30978,7 +30978,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensor.json": {
       "file_path": "documentation/Metal/mtltensor.md",
-      "hash": "235dbf15b1636f08cb506cbe4f3168e57a8996b93cb26021c4a29d8d924e2d22"
+      "hash": "c3519cb1fb14dd4fbf222a507e4f91ac2af8b77e343c6313ab3e694e6bf93ad5"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensor/auxiliaryplanes.json": {
       "file_path": "documentation/Metal/mtltensor/auxiliaryplanes.md",
@@ -31098,23 +31098,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbinding.json": {
       "file_path": "documentation/Metal/mtltensorbinding.md",
-      "hash": "a4d00c539d7aa5030abfbd8024711781e02c69c4acec517774e7cbd8d316cd80"
+      "hash": "13bf79e7c103f2d80c1f67f0782c052589b261c5badf33c36be99d10a122ea8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbinding/auxiliaryplanes.json": {
       "file_path": "documentation/Metal/mtltensorbinding/auxiliaryplanes.md",
-      "hash": "400c91a4ee7f0c280611dcc79288107b289a99caeb5aca653da3bc3fa7188e24"
+      "hash": "054a1297818a7a84a8be2bf11f53c4fa9decbfe9ba05d45a5069b6a2ae2bad79"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbinding/dimensions.json": {
       "file_path": "documentation/Metal/mtltensorbinding/dimensions.md",
-      "hash": "03815238d6edeb32fc452bceb6c85b6506fd84a581412194ff71998e67e55e1e"
+      "hash": "749d13808aae334b7432a37929347b604f8adc94eb0557be0e9434eed2729f27"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbinding/indextype.json": {
       "file_path": "documentation/Metal/mtltensorbinding/indextype.md",
-      "hash": "ebe7341e47b208124c442dc42c13f8dfc5a3086b8eb72da86b81f74c4398a036"
+      "hash": "e652cf3abb0808e8cbd878d34803c69cb97058e521f9cef1f0b22bf1b2ea62b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbinding/tensordatatype.json": {
       "file_path": "documentation/Metal/mtltensorbinding/tensordatatype.md",
-      "hash": "ac6d78c4d3faae480cc9b7afb37bdbfb0f45bce878ab075e20727f10c771b91f"
+      "hash": "6e3d8584da3ccd230d9c3dd46bbc3dea86beb9b9f687b2faea02cce64b8f3100"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorbufferattachments.json": {
       "file_path": "documentation/Metal/mtltensorbufferattachments.md",
@@ -31138,7 +31138,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensordatatype.json": {
       "file_path": "documentation/Metal/mtltensordatatype.md",
-      "hash": "32d66776c2f58c4d69c0be7afbfa6574bb381d3e81ff5904b0a4965050b5f274"
+      "hash": "9317d1d0eb600b4cb52922a1fbf3a9b1084c48dca008b8b04709fc40bfd51fa6"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensordatatype/bfloat16.json": {
       "file_path": "documentation/Metal/mtltensordatatype/bfloat16.md",
@@ -31218,7 +31218,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensordescriptor.json": {
       "file_path": "documentation/Metal/mtltensordescriptor.md",
-      "hash": "16aa0628a24cfa8f8f2ed963d431f01e4f7e908a76c9cdb58d250542f1b958e8"
+      "hash": "bba5eafd186bed3ce41525bd69e0869c38ec8101c243b03b24db86bc3df389b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensordescriptor/auxiliaryplanes.json": {
       "file_path": "documentation/Metal/mtltensordescriptor/auxiliaryplanes.md",
@@ -31258,7 +31258,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensordomain.json": {
       "file_path": "documentation/Metal/mtltensordomain.md",
-      "hash": "351095291ce6e1497ee672784286566fe6b2fd31987a1ff24e0d732df29e999a"
+      "hash": "19767f3c66cc0fc0e61c6ef4cff0bf1dd3e20b6ecea8b45e03908708cb9aa954"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorerror-swift.struct.json": {
       "file_path": "documentation/Metal/mtltensorerror-swift.struct.md",
@@ -31302,7 +31302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorextents.json": {
       "file_path": "documentation/Metal/mtltensorextents.md",
-      "hash": "7efbd446fa30dd87a520f31c16ed70f9ca9fb3feb0b94908ab7d8fa3f78c819e"
+      "hash": "84534006720f4e33485e754544dbbee3f195df9aca1899169e40c423fe4be393"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorextents/extentatdimensionindex:.json": {
       "file_path": "documentation/Metal/mtltensorextents/extentatdimensionindex_.md",
@@ -31342,7 +31342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorreferencetype.json": {
       "file_path": "documentation/Metal/mtltensorreferencetype.md",
-      "hash": "7e036e0340b83e3216fba9163dc21de417708ba1c130e7000fa281a4789830e6"
+      "hash": "45a454531cb72ef2364a3773dde3f0ad5eabaff3221010a9d9b01c55e96e656b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorreferencetype/access.json": {
       "file_path": "documentation/Metal/mtltensorreferencetype/access.md",
@@ -31366,7 +31366,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorusage.json": {
       "file_path": "documentation/Metal/mtltensorusage.md",
-      "hash": "7ad28968eed8a61f9b9af9c94f0b84b22796402472eb2e1781bfc81076580721"
+      "hash": "b262a875b4af85a2c7d8bdd9fa7e746404efa4c32ea165998a78218ef3b4a127"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtltensorusage/compute.json": {
       "file_path": "documentation/Metal/mtltensorusage/compute.md",
@@ -32802,7 +32802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/resource-fundamentals.json": {
       "file_path": "documentation/Metal/resource-fundamentals.md",
-      "hash": "62485cdefa7cf3f570c21f4e27b703135203cc78bddad1805816187b6609f2b3"
+      "hash": "603153075b8ba5c06aeae2afdcaae72f1a97139eee8d1040bc860dd368ea54d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/resource-loading.json": {
       "file_path": "documentation/Metal/resource-loading.md",
@@ -32970,7 +32970,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/using-the-metal-4-compilation-api.json": {
       "file_path": "documentation/Metal/using-the-metal-4-compilation-api.md",
-      "hash": "453a2ebf036f5ef29fae78fe56f39225fb4426f177cba88ad27e3ea742c74bae"
+      "hash": "6902a877026214046add27bc988e5a7508aac21ae229ffe4651980270b34466e"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/vertex-shader-resource-preparation-commands.json": {
       "file_path": "documentation/Metal/vertex-shader-resource-preparation-commands.md",

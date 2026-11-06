@@ -9,8 +9,8 @@ The bar button item on which to anchor the popover.
 **Availability**:
 - iOS 8.0+ - Deprecated in 27.0
 - iPadOS 8.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the [`sourceItem`](./sourceitem.md) property to anchor the popover to a [`UIBarButtonItem`](../uibarbuttonitem.md) instead.
 

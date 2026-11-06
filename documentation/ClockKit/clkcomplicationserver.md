@@ -7,7 +7,7 @@
 An object that manages the active complications for an app.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 

@@ -1234,7 +1234,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate.md",
-      "hash": "4ec669a8a29f91dd25d40fd00111fd1b15f169260eb1021f19bd08436fff239d"
+      "hash": "547c658d8ac11860c391d013df6f6f32d43c8d62434e589fe954c00020cb783a"
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate/disabledprofiles": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/disabledprofiles.md",
@@ -1246,7 +1246,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate/init(channel:enabledprofiles:disabledprofiles:)": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(channel,enabledprofiles,disabledprofiles).md",
-      "hash": "7d6a57e813ba97558d8bfbd73a4cf97ab50ac85ad25a8d42442e6b36313da97f"
+      "hash": "b5a00bb8a17eea1f06409cc9404f1f16876c4184f8e9c7bda65033c99c438161"
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate/init(coder:)": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(coder).md",
@@ -1254,7 +1254,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate/init(enabledprofiles:disabledprofiles:)": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(enabledprofiles,disabledprofiles).md",
-      "hash": "40d9428c5f5f9af1162c12a9296914b17b7bd83a4090a91e19ebf2c170f5c70d"
+      "hash": "cbbeb7a6bbde30273bc709dc20f7c64f0a58011fe0fdb9c24b399417543950dd"
     },
     "https://developer.apple.com/documentation/coremidi/midiciprofilestate/midichannel": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/midichannel.md",
@@ -1582,11 +1582,11 @@
     },
     "https://developer.apple.com/documentation/coremidi/mididestinationcreate(_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/mididestinationcreate(_,_,_,_,_).md",
-      "hash": "f0915e2909cf687e230ee47ae682d2d2d51e434ace06b4bee4f8349a58313701"
+      "hash": "1f9a12899579d0f941a751e4a9c37b75d4f63eb7a9fea8ef452a21c12eec059a"
     },
     "https://developer.apple.com/documentation/coremidi/mididestinationcreatewithblock(_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/mididestinationcreatewithblock(_,_,_,_).md",
-      "hash": "3844340b7a1a3e0d1cfd8fa2c3751b248543a555bb687b707fb6f823f1fb1171"
+      "hash": "42891f86c00d77d8ea0cc4c0e50b6aefb96015846b1a6ffdc6ecb8489b8c9db0"
     },
     "https://developer.apple.com/documentation/coremidi/mididestinationcreatewithprotocol(_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/mididestinationcreatewithprotocol(_,_,_,_,_).md",
@@ -1594,7 +1594,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midideviceaddentity(_:_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midideviceaddentity(_,_,_,_,_,_).md",
-      "hash": "2bd7af9bf3290a4cf1538bc5e1653198b2271893f2ee75f79c431b1d9876a785"
+      "hash": "cee0e154fe7263ba7c8c42fc161fe539a99b1da7a776ccb7a561697f64a17b8c"
     },
     "https://developer.apple.com/documentation/coremidi/mididevicecreate(_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/mididevicecreate(_,_,_,_,_).md",
@@ -1994,11 +1994,11 @@
     },
     "https://developer.apple.com/documentation/coremidi/midiinputportcreate(_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midiinputportcreate(_,_,_,_,_).md",
-      "hash": "434b0076a80c53e3dc003dbfff7a260c95d4c546076a3607406265817f72f12f"
+      "hash": "59d3b8e9a6ac6743ed71ca067e9aa90feb9041e2a77e64f478ce2505b7f33414"
     },
     "https://developer.apple.com/documentation/coremidi/midiinputportcreatewithblock(_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midiinputportcreatewithblock(_,_,_,_).md",
-      "hash": "f5b0b81b589aa0651873d3be73803cd9021cda7310a0427f38e1e09d38aa2561"
+      "hash": "2f33f3508a301e4d81b5073996063ebfe67d10cfd5592a7d0f92aca014ed90a0"
     },
     "https://developer.apple.com/documentation/coremidi/midiinputportcreatewithprotocol(_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midiinputportcreatewithprotocol(_,_,_,_,_).md",
@@ -2726,11 +2726,11 @@
     },
     "https://developer.apple.com/documentation/coremidi/midipacketlistadd(_:_:_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midipacketlistadd(_,_,_,_,_,_).md",
-      "hash": "846d5489bf181edd34643ca2b94e8048e9e7b0354a67b8b6611b7ac49721126a"
+      "hash": "ee7ffd1a617943dc1aa0f020c1d0b23d5d85eb09ca037ca5e990f59fc0837e28"
     },
     "https://developer.apple.com/documentation/coremidi/midipacketlistinit(_:)": {
       "file_path": "documentation/CoreMIDI/midipacketlistinit(_).md",
-      "hash": "926fd3ab417cf7495047d2536e76aea2ede8b7a07efc6cdbde8fb58bb004fbae"
+      "hash": "1a7a76c388f46e9c2276508697d22552bafbdccc2e1c99dc7b5da82715ea80d1"
     },
     "https://developer.apple.com/documentation/coremidi/midipacketnext(_:)": {
       "file_path": "documentation/CoreMIDI/midipacketnext(_).md",
@@ -2798,11 +2798,11 @@
     },
     "https://developer.apple.com/documentation/coremidi/midireadblock": {
       "file_path": "documentation/CoreMIDI/midireadblock.md",
-      "hash": "77a9dddec92c8b55e1dc1404bed72f359c7db7551cde8fdfee177ebb2e64b20a"
+      "hash": "d4c3e0e708e83a9a5c55e821e65f72e0d5379a69b5c77024daefef79df60a6c3"
     },
     "https://developer.apple.com/documentation/coremidi/midireadproc": {
       "file_path": "documentation/CoreMIDI/midireadproc.md",
-      "hash": "d03c0bd2218e91795d86de7464cfb7ead136f16999679cda6e62ddcda122730d"
+      "hash": "32e874de443af7b25d5928d2c4aaffce6fd9e4a148ee24fda4b960ef24f37d5b"
     },
     "https://developer.apple.com/documentation/coremidi/midireceiveblock": {
       "file_path": "documentation/CoreMIDI/midireceiveblock.md",
@@ -2810,7 +2810,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midireceived(_:_:)": {
       "file_path": "documentation/CoreMIDI/midireceived(_,_).md",
-      "hash": "fb66f514547f4fa16a885f5172f92f70abc488b6c1eb34ed5bb47c5638fd3b50"
+      "hash": "8a7b8487845fbec6c930f882f3f6bc2e09d29100161417dec629bedb70a6ec24"
     },
     "https://developer.apple.com/documentation/coremidi/midireceivedeventlist(_:_:)": {
       "file_path": "documentation/CoreMIDI/midireceivedeventlist(_,_).md",
@@ -2822,7 +2822,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midisend(_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midisend(_,_,_).md",
-      "hash": "fe100b2b6802bf84e21b8ef83d7b275de1002d3445eaeb4dd477ee204d268062"
+      "hash": "c099307811722763577cae87747de407a826f9ec29ebe2ea083e19e997713678"
     },
     "https://developer.apple.com/documentation/coremidi/midisendeventlist(_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midisendeventlist(_,_,_).md",
@@ -2890,7 +2890,7 @@
     },
     "https://developer.apple.com/documentation/coremidi/midisourcecreate(_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midisourcecreate(_,_,_).md",
-      "hash": "bba72b52f9ff443da03bda28add510ac12842df1ed75e1bef57fc35d0c0ff3a1"
+      "hash": "5cf16c9517daa4659c9a5319c1f3c891a7162be37a90b78b93063407c93655ec"
     },
     "https://developer.apple.com/documentation/coremidi/midisourcecreatewithprotocol(_:_:_:_:)": {
       "file_path": "documentation/CoreMIDI/midisourcecreatewithprotocol(_,_,_,_).md",
@@ -5606,7 +5606,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate.json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate.md",
-      "hash": "4ec669a8a29f91dd25d40fd00111fd1b15f169260eb1021f19bd08436fff239d"
+      "hash": "547c658d8ac11860c391d013df6f6f32d43c8d62434e589fe954c00020cb783a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate/disabledprofiles.json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/disabledprofiles.md",
@@ -5618,7 +5618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate/init(channel:enabledprofiles:disabledprofiles:).json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(channel,enabledprofiles,disabledprofiles).md",
-      "hash": "7d6a57e813ba97558d8bfbd73a4cf97ab50ac85ad25a8d42442e6b36313da97f"
+      "hash": "b5a00bb8a17eea1f06409cc9404f1f16876c4184f8e9c7bda65033c99c438161"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate/init(coder:).json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(coder).md",
@@ -5626,7 +5626,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate/init(enabledprofiles:disabledprofiles:).json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/init(enabledprofiles,disabledprofiles).md",
-      "hash": "40d9428c5f5f9af1162c12a9296914b17b7bd83a4090a91e19ebf2c170f5c70d"
+      "hash": "cbbeb7a6bbde30273bc709dc20f7c64f0a58011fe0fdb9c24b399417543950dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiciprofilestate/midichannel.json": {
       "file_path": "documentation/CoreMIDI/midiciprofilestate/midichannel.md",
@@ -5954,11 +5954,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/mididestinationcreate(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/mididestinationcreate(_,_,_,_,_).md",
-      "hash": "f0915e2909cf687e230ee47ae682d2d2d51e434ace06b4bee4f8349a58313701"
+      "hash": "1f9a12899579d0f941a751e4a9c37b75d4f63eb7a9fea8ef452a21c12eec059a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/mididestinationcreatewithblock(_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/mididestinationcreatewithblock(_,_,_,_).md",
-      "hash": "3844340b7a1a3e0d1cfd8fa2c3751b248543a555bb687b707fb6f823f1fb1171"
+      "hash": "42891f86c00d77d8ea0cc4c0e50b6aefb96015846b1a6ffdc6ecb8489b8c9db0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/mididestinationcreatewithprotocol(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/mididestinationcreatewithprotocol(_,_,_,_,_).md",
@@ -5966,7 +5966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midideviceaddentity(_:_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midideviceaddentity(_,_,_,_,_,_).md",
-      "hash": "2bd7af9bf3290a4cf1538bc5e1653198b2271893f2ee75f79c431b1d9876a785"
+      "hash": "cee0e154fe7263ba7c8c42fc161fe539a99b1da7a776ccb7a561697f64a17b8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/mididevicecreate(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/mididevicecreate(_,_,_,_,_).md",
@@ -6366,11 +6366,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiinputportcreate(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midiinputportcreate(_,_,_,_,_).md",
-      "hash": "434b0076a80c53e3dc003dbfff7a260c95d4c546076a3607406265817f72f12f"
+      "hash": "59d3b8e9a6ac6743ed71ca067e9aa90feb9041e2a77e64f478ce2505b7f33414"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiinputportcreatewithblock(_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midiinputportcreatewithblock(_,_,_,_).md",
-      "hash": "f5b0b81b589aa0651873d3be73803cd9021cda7310a0427f38e1e09d38aa2561"
+      "hash": "2f33f3508a301e4d81b5073996063ebfe67d10cfd5592a7d0f92aca014ed90a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midiinputportcreatewithprotocol(_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midiinputportcreatewithprotocol(_,_,_,_,_).md",
@@ -7098,11 +7098,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midipacketlistadd(_:_:_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midipacketlistadd(_,_,_,_,_,_).md",
-      "hash": "846d5489bf181edd34643ca2b94e8048e9e7b0354a67b8b6611b7ac49721126a"
+      "hash": "ee7ffd1a617943dc1aa0f020c1d0b23d5d85eb09ca037ca5e990f59fc0837e28"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midipacketlistinit(_:).json": {
       "file_path": "documentation/CoreMIDI/midipacketlistinit(_).md",
-      "hash": "926fd3ab417cf7495047d2536e76aea2ede8b7a07efc6cdbde8fb58bb004fbae"
+      "hash": "1a7a76c388f46e9c2276508697d22552bafbdccc2e1c99dc7b5da82715ea80d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midipacketnext(_:).json": {
       "file_path": "documentation/CoreMIDI/midipacketnext(_).md",
@@ -7170,11 +7170,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midireadblock.json": {
       "file_path": "documentation/CoreMIDI/midireadblock.md",
-      "hash": "77a9dddec92c8b55e1dc1404bed72f359c7db7551cde8fdfee177ebb2e64b20a"
+      "hash": "d4c3e0e708e83a9a5c55e821e65f72e0d5379a69b5c77024daefef79df60a6c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midireadproc.json": {
       "file_path": "documentation/CoreMIDI/midireadproc.md",
-      "hash": "d03c0bd2218e91795d86de7464cfb7ead136f16999679cda6e62ddcda122730d"
+      "hash": "32e874de443af7b25d5928d2c4aaffce6fd9e4a148ee24fda4b960ef24f37d5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midireceiveblock.json": {
       "file_path": "documentation/CoreMIDI/midireceiveblock.md",
@@ -7182,7 +7182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midireceived(_:_:).json": {
       "file_path": "documentation/CoreMIDI/midireceived(_,_).md",
-      "hash": "fb66f514547f4fa16a885f5172f92f70abc488b6c1eb34ed5bb47c5638fd3b50"
+      "hash": "8a7b8487845fbec6c930f882f3f6bc2e09d29100161417dec629bedb70a6ec24"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midireceivedeventlist(_:_:).json": {
       "file_path": "documentation/CoreMIDI/midireceivedeventlist(_,_).md",
@@ -7194,7 +7194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midisend(_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midisend(_,_,_).md",
-      "hash": "fe100b2b6802bf84e21b8ef83d7b275de1002d3445eaeb4dd477ee204d268062"
+      "hash": "c099307811722763577cae87747de407a826f9ec29ebe2ea083e19e997713678"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midisendeventlist(_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midisendeventlist(_,_,_).md",
@@ -7262,7 +7262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midisourcecreate(_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midisourcecreate(_,_,_).md",
-      "hash": "bba72b52f9ff443da03bda28add510ac12842df1ed75e1bef57fc35d0c0ff3a1"
+      "hash": "5cf16c9517daa4659c9a5319c1f3c891a7162be37a90b78b93063407c93655ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midisourcecreatewithprotocol(_:_:_:_:).json": {
       "file_path": "documentation/CoreMIDI/midisourcecreatewithprotocol(_,_,_,_).md",

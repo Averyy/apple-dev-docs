@@ -506,6 +506,14 @@ For more information about how the system determines which view controllers to p
 ### Deprecated
 - [Deprecated symbols](./uiviewcontroller-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Instance Properties
+- [var childForDirectTouchSystemGesturesDisabled: UIViewController?](./uiviewcontroller/childfordirecttouchsystemgesturesdisabled.md)
+  A child view controller to query for the preference to disable direct-touch system gestures.
+- [var prefersDirectTouchSystemGesturesDisabled: Bool](./uiviewcontroller/prefersdirecttouchsystemgesturesdisabled.md)
+  Indicates that the view controller prefers to disable direct-touch system gestures that land on its scene.
+### Instance Methods
+- [func setNeedsUpdateOfDirectTouchSystemGesturesDisabled()](./uiviewcontroller/setneedsupdateofdirecttouchsystemgesturesdisabled%28%29.md)
+  Indicates that the view controller has changed its preference to disable direct-touch system gestures, or that the child view controller for the preference has changed.
 
 ## Relationships
 

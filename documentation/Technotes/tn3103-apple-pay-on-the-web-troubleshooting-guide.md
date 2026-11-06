@@ -3,106 +3,130 @@
 **Framework**: Technotes  
 **Role**: Technote
 
-Troubleshooting guide for implementing Apple Pay on the Web.
+Diagnose and resolve common configuration, domain verification, merchant validation, and payment token decryption issues when implementing Apple Pay on the Web.
 
 ## Overview
 
-This document is intended to be used as a general guide to debugging common issues with Apple Pay on the Web. Note that this document does not cover third-party tooling or integrations. If you are experiencing issues with third-party code, libraries, or server side configurations, you will need to talk to these vendors directly. This document assumes that you are building Apple Pay on the Web from your own website and then integrating with a third-party Payment Service Provider.
+Implementing Apple Pay on the Web involves coordinating client-side JavaScript, your backend application server, and Apple Pay servers to authenticate transactions and decrypt payment tokens securely. Because this flow spans multiple systems, misconfigurations in certificates, domains, or network security frequently disrupt checkout.
+
+This technote guides you through troubleshooting each stage of an Apple Pay on the Web implementation. It covers:
+
+- Registering merchant identifiers and configuring merchant assets
+- Verifying your merchant domain and resolving common verification failures
+- Constructing client-side payment requests with [Apple Pay JS](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api)
+- Completing server-to-server merchant validation and diagnosing validation errors
+- Decrypting the payment token with your payment processing identity
+
+> **Note**: This document focuses on direct integrations where your website connects to Apple Pay servers and passes payment tokens to a payment service provider (PSP). It does not cover third-party client libraries, software development kits (SDKs), or turnkey hosted checkouts. If you use a third-party checkout integration, contact your vendor directly for support.
+
+For troubleshooting specific stages of the payment flow outside merchant identity and domain setup, consult these companion technotes:
+
+- [TN3173: Troubleshooting issues with your Apple Pay merchant identifier configuration](./tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration.md)
+- [TN3174: Diagnosing issues with the Apple Pay payment sheet on your website](./tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.md)
+- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](./tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
+- [TN3176: Troubleshooting Apple Pay payment processing issues](./tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
+- [TN3206: Updating Apple Pay certificates](./tn3206-updating-apple-pay-certificates.md)
 
 ## Creating merchant assets
 
-Your Developer Account registers a Merchant by creating a new Merchant Identifier (Merchant ID) in Certificates, Identifiers & Profiles. A Merchant ID is the unique identifier for your Merchant Domain, Merchant Identity Certificate, Payment Processing Certificate, and Merchant Assets. A Merchant ID will be in reverse-DNS format: `merchant.com.testbed.applepay`.
+To register your business as a merchant, create a Merchant Identifier (Merchant ID) in your Apple Developer account under Certificates, Identifiers & Profiles. A Merchant ID is the unique identifier that binds your merchant domain, Merchant Identity Certificate, Payment Processing Certificate, and transaction assets. A Merchant ID uses reverse-DNS format, such as `merchant.com.testbed.applepay`.
 
-> **Note**: If you are working with a Payment Service Provider who can give you access to Apple Pay without an Apple Developer Account, the process outlined below will be different and you should contact the the Payment Service Provider for additional help on configuring your Merchant Assets.
+> **Note**: If your PSP manages Apple Pay access on your behalf without requiring an individual Apple Developer account, your setup workflow differs. Contact your PSP for instructions on configuring your merchant assets.
 
-After you have created your Merchant Identifier you will need to create a Payment Processing Certificate using a 256-bit ECC key pair. However, if you are using a third-party Payment Service Provider, they may provide this certificate for you. If so, skip to Step 2 below.
+After creating your Merchant ID, create a Payment Processing Certificate using a 256-bit elliptic curve cryptography (ECC) key pair. If your PSP provides this certificate or creates the certificate signing request (CSR) for you, proceed to Step 2 below.
 
 ### Create a payment processing identity
 
-1. On your Mac, launch Keychain Access to create a [certificate signing request](https://help.apple.com/developer-account/#/devbfa00fef7?sub=devf31990e3f) (CSR).
-2. Upload this CSR to the Merchant Configuration page to generate a Payment Processing Certificate.
-3. Create a Payment Processing Identity (p12 / key and cert) by downloading the generated Payment Processing Certificate and installing it into the Keychain on the same Mac used to create the initial CSR.  If you created the CSR outside of a Mac then the key and certificate will need to be stored on the device the CSR was created. **Important**: Do not lose this Payment Processing Identity, because it will be used by your Payment Processor.
+1. In Keychain Access on your Mac, create a [certificate signing request](https://developer.apple.com/help/account/certificates/create-a-certificate-signing-request) (CSR) using a 256-bit ECC key pair.
+2. In Certificates, Identifiers & Profiles, select your Merchant ID, navigate to Payment Processing Certificate, and upload your CSR to generate the certificate.
+3. Download the generated certificate and double-click it to install it into Keychain Access on the Mac where you created the initial CSR. Installing the certificate alongside the matching private key creates your Payment Processing Identity (a PKCS #12 file, or `.p12`). If you created the CSR outside macOS, store the certificate and private key together on that same system.
 
-> **Note**: The process described here details a situation where you, as the Developer, are setting up the Merchant Assets. It could also be the case that your Payment Service Provider creates the CSR and gives it to you, the Merchant, to upload to the Merchant ID Configuration page to generate a Payment Certificate. The benefit of this workflow is you would not need to export your Payment Processing Identity from your Keychain to provide it to the Payment Processor, they would already have the required private key from the CSR that they had previously generated.
+> ❗ **Important**: Store your payment processing private key securely and back it up. Your payment processor must have access to this identity to decrypt incoming payment tokens.
+
+Alternatively, your PSP may generate the CSR on their servers and provide the CSR file for you to upload in Certificates, Identifiers & Profiles. In this workflow, your PSP already retains the private key, so you do not need to export the private key from your Mac.
 
 ### Create a merchant identity certificate
 
-In the Merchant ID Configuration page under your Merchant Identifier, you will need to create a [Merchant Identity Certificate](https://help.apple.com/developer-account/#/dev1731126fb) in the same place you created the Payment Processing Certificate.
+In Certificates, Identifiers & Profiles, navigate to your Merchant ID to create a [Merchant Identity Certificate](https://developer.apple.com/help/account/capabilities/configure-apple-pay-on-the-web#create-a-merchant-identity-certificate). This certificate authenticates your server when requesting a payment session from Apple Pay servers.
 
-1. On your Mac, launch Keychain Access to create a [certificate signing request](https://help.apple.com/developer-account/#/devbfa00fef7?sub=devf31990e3f) (CSR) with an RSA 2048-bit RSA key pair.
-2. Upload this CSR to the Merchant Configuration page to generate a Merchant Identity Certificate.
-3. Create a Merchant Identity (p12 / key and cert) by downloading the generated Payment Merchant Certificate and installing it into the Keychain on the same Mac used to create the initial CSR. If you created the CSR outside of a Mac then the key and certificate will need to be stored on the device the CSR was created.
+1. In Keychain Access on your Mac, create a [certificate signing request](https://developer.apple.com/help/account/certificates/create-a-certificate-signing-request) using a 2048-bit RSA key pair.
+2. Upload the CSR to the Merchant ID configuration page to generate your Merchant Identity Certificate.
+3. Download the generated certificate and install it into Keychain Access on the Mac where you created the CSR to create your Merchant Identity (`.p12`). If you generated the CSR outside macOS, store the certificate and private key on that host.
 
-> **Note**: A CSR does not have to be created in the Keychain of a macOS computer. A CSR can technically be created from an external source such as a server, another workstation, or from your Payment Service Provider, with a tool like OpenSSL.
-
-The important thing to remember is that when a CSR is created, so is a private key. After uploading the CSR to the Apple Developer Portal and receiving a certificate, you will need to store the certificate and the private key in a secure location so that a PKCS#12 (or p12) can be created from both the private key and certificate. The Keychain on macOS does this for you and so you do not have to worry about it, but if using an external tool, you will need to do this by hand. The creation of a p12 from a private key and certificate is what makes up a digital identity, and this is what is used to authenticate your team as a Merchant to the Apple Pay servers. For example, the creation of a Merchant Identity in the form of a p12, or a stacked PEM, contains your private key and Merchant Certificate. These assets that are tied to your Merchant account are then used to perform client authentication when requesting a payment session from the Apple Pay servers.
-
-It is important that the digital identity in this context be correctly formatted and stored in a secure location if created outside of macOS. If you do end up creating this identity outside macOS, you will be responsible for converting certificate and private key into a format that can be used for Merchant Authentication.
-The Payment Processing Identity will be used to decrypt your payment tokens by your Payment Processor.
+You can also generate a CSR and private key on Linux or server environments using OpenSSL. Creating a CSR always produces a corresponding private key. Store both the certificate and its private key securely so you can export a PKCS #12 (`.p12`) archive or stacked PEM (`.pem`) file containing both items. Your server-side application presents this digital identity during Transport Layer Security (TLS) client authentication when contacting Apple Pay validation endpoints. To learn more about creating Merchant ID Certificates, see [Identity certificates](./tn3206-updating-apple-pay-certificates.md#Identity-certificates).
 
 ### Registering a merchant domain
 
-You will need to add a Merchant domain to your Merchant Identifier so that your domain can process payments. You will need to register each domain that you plan to process payments from. For example, if you plan to process payments on `example.com` and `test.example.com` you will need to register and verify each domain. Note, if you plan to process payments for `example.com`, and you will actually be using `www.example.com`, make sure to include the fully qualified domain name (FQDN) in the registration process.
-An FQDN in this context would be `www.example.com`.
+Register each web domain that will initiate Apple Pay transactions under your Merchant ID. For example, if you process payments on both `example.com` and `test.example.com`, register and verify each domain individually.
+
+Always register the fully qualified domain name (FQDN). If your customers access your storefront at `www.example.com`, register `www.example.com` in addition to or instead of the apex domain `example.com`.
 
 ## Domain verification
 
-Once your domain is configured in the Merchant ID Configuration page for `example.com`, you will be asked to verify your domain with a `apple-developer-merchantid-domain-association.txt` file. On your server, download the file and place it in the `.well-known` location:
+After adding a domain in Certificates, Identifiers & Profiles, Apple prompts you to verify ownership using a domain association file named `apple-developer-merchantid-domain-association.txt`.
+
+Download the file and host it at the standard `.well-known` path on your server:
 
 ```text
 https://example.com/.well-known/apple-developer-merchantid-domain-association.txt
 ```
 
-This file above will need to be placed at the root level of your server.
+Serve this file over HTTPS from the root of the registered domain.
 
-> ❗ **Important**: The domain verification file expires after **7 days**, so if you are not able to verify your domain after 7 days you will need to regenerate this file and replace it on your server.
+> ❗ **Important**: The domain association file expires 7 days after generation. If you do not complete verification within 7 days, generate and host a new file before attempting verification again.
 
-To perform domain verification, click the Verify button in the Merchant ID Configuration page to verify the domain. If all goes well, your domain should be verified and show up as “Verified” in the Merchant ID Configuration page. If you experience issues, please read further to resolve common reasons domain verification fails.
+In Certificates, Identifiers & Profiles, click Verify next to the registered domain. Once Apple verifies the file, the domain status changes to Verified. If verification fails, inspect the common network and TLS failure points described below.
 
 ## Common reasons domain verification fails
 
-Domain verification can fail for many reasons.  Here are a few of the most common reasons:
+Domain verification issues typically stem from TLS misconfigurations, firewall restrictions, or intermediary proxies.
 
 ### TLS handshake cannot be established
 
-There are many reasons why a TLS handshake can fail during the domain verification process. For example, your server may be misconfigured in the following ways:
+Apple’s domain verification client establishes a strict TLS connection to your server to retrieve the association file. A handshake failure occurs if your server exhibits any of the following issues:
 
-- The server does not support TLS 1.2 or above
-- The server does not support one of the specified cipher suites for Apple Pay
-- The server is using an invalid TLS certificate
+- The server does not support TLS 1.2 or later.
+- The server does not negotiate an Apple Pay-supported cipher suite.
+- The server presents an untrusted, expired, or malformed TLS certificate.
 
-#### Supporting TLS 1.2 or above
+#### Supporting TLS 1.2 or later
 
-Servers supporting Apple Pay on the Web need to being using TLS 1.2 or above. Servers also need to be accessible by the domain verification client and not be sitting behind a proxy.
+Servers hosting the domain association file must support TLS 1.2 or later. The server must be publicly reachable over the internet and must not terminate client connections at an unauthenticated forward proxy.
 
 #### Validating usage of a TLS cipher suite
 
-Servers negotiating TLS connections for Apple Pay on the Web need to use one of the supported cipher suites described in [Setting up your Server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server). To debug which cipher suites is being negotiated between Apple’s domain verification client and your server, take a packet trace and take a look at the the cipher suites being offered by Apple’s domain verification client in the `Client Hello` packet. If all goes well, you will be able to see one of the supported cipher suites being selected by your server in the `Server Hello` packet being sent back to the client. If there is an issue in the cipher suite negotiation then there will typically be a failure after the `Client Hello` packet.
+Your web server must negotiate one of the supported cipher suites specified in [Setting up your server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
 
-#### Validating TLS 1.2 certificates
+To diagnose cipher suite negotiation issues, capture a packet trace of the verification request. Inspect the `Client Hello` packet sent by Apple’s verification client to view offered cipher suites, and verify that your server responds in the `Server Hello` packet with a supported cipher suite. If your server rejects all offered suites, the TLS handshake terminates immediately after the `Client Hello`.
 
-Make sure that you are using a valid TLS certificate. For example, make sure that this certificate is setup with a proper chain of trust and also adheres to [Apple’s Certificate Transparency policy](https://support.apple.com/en-us/HT205280) for Safari. You can double check this with a packet trace. Make sure the leaf certificate being used on your domain follows a correct chain of trust through the intermediate certificates to the root certificate.
+#### Validating TLS certificates
+
+Verify that your web server presents a valid leaf certificate issued by a trusted public certificate authority (CA), along with the necessary intermediate certificates to complete the chain of trust to a trusted root CA. The certificate must also comply with [Apple’s Certificate Transparency policy](https://support.apple.com/en-us/103214).
 
 ### The Apple Developer Portal cannot reach your server
 
-One common problem is that the domain verification request seems to error out, but there is no apparent reason why this is happening. To debug this, try reviewing your server’s access logs, or try setting your server application logs to be as verbose as possible. Next, make sure that the domain verification request is reaching your server. If the request is not reaching the server then you know there is an issue with Apple’s domain verification client reaching your server. If the request is reaching your server, and it is not a TLS issue, then your server side logs should provide more insight here on where the issue is taking place.
+If the developer portal reports a verification failure without specific TLS error details, examine your web server’s access and error logs:
+
+1. Confirm whether the incoming verification request reaches your server. If the request does not appear in your access logs, network routing or firewall rules are blocking Apple’s verification client.
+2. If the request reaches your server, check the returned HTTP status code. The file must return an HTTP `200 OK` response with the unmodified file contents. Redirects (such as HTTP `301` or `302`) and authentication challenges (HTTP `401` or `403`) cause verification to fail.
 
 ### Your domain sits behind a proxy or in a private network
 
-One common issue is that a domain sits behind a network proxy or a load balancer that is not correctly routing traffic. In the case of the proxy, this is problematic because Apple’s domain verification client is trying to validate your domain verification file, but also read client specific information about your TLS certificate. When this request flows through a proxy it will pickup incorrect information about your domain’s certificate because of the proxy.
-The proxy will need to be removed.
+Ensure your verification endpoint is directly reachable and properly routed:
 
-Domain verification issues for a server sitting behind a load balancer are not common but can happen when the load balancer is routing traffic incorrectly. If you think this is the case for network, double check the routing algorithm on your load balancer to ensure that traffic always makes it to your server.
-
-Lastly, if you domain sits inside of a private network and needs to be verified, make sure that Apple’s domain verification client IP addresses are allowed in your network’s firewall. See more on these [IP Ranges here](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server#3179116).
+- **Proxies:** Avoid placing your verification endpoint behind TLS-terminating proxies or deep-packet-inspection firewalls. Apple’s verification client examines your server’s leaf TLS certificate directly; an intermediate proxy presents its own certificate, which causes verification to fail.
+- **Load balancers:** If your server sits behind a load balancer, confirm that its health checks and routing rules forward requests for `/.well-known/apple-developer-merchantid-domain-association.txt` to active backend nodes capable of serving the file.
+- **Firewalls and private networks:** If your server restricts incoming traffic by IP address, allowlist Apple’s domain verification IP address ranges. See the official IP ranges listed in [Setting up your server](../ApplePayontheWeb/setting-up-your-server.md#Allow-Apple-IP-Addresses-for-Domain-Verification).
 
 ## Building your client application
 
-Building the client application is done with either [ApplePay JS](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api) or the [Payment Request API](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api). This document will use examples from ApplePay JS. There are many paths you can take here, but as a prerequisite, you need to first make sure that the browser supports Apple Pay. For more details on this see [Checking for Apple Pay Availability](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/checking_for_apple_pay_availability).
+Build client-side checkout flows using either [Apple Pay JS](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api) or the [Payment Request API](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api). This guide illustrates workflows using Apple Pay JS.
 
-After your application has verified that the browser supports Apple Pay, then it is time to build out the payment workflow. For a complete step by step example of how this is done, see the [Apple Pay on the Web Interactive Demo](https://applepaydemo.apple.com). This demo includes sample code that outlines each step in the payment workflow, and can come in handy when determining how to build your application.
+Before displaying an Apple Pay button or requesting a transaction, confirm that the client browser and hardware support Apple Pay. For implementation details, see [Checking for Apple Pay availability](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/checking_for_apple_pay_availability). For a runnable end-to-step demonstration, see the [Apple Pay on the Web Interactive Demo](https://applepaydemo.apple.com).
 
-When building out your payment workflow you should consider how you will build out your payment request. For example, in the [payment request](https://applepaydemo.apple.com/#createAPayment) below, only the required information needed to completion the shopping cart transaction is added, and this is the recommendation.
+### Creating a payment request
+
+When constructing an `ApplePayPaymentRequest`, provide only the parameters required for your transaction:
 
 ```json
 {
@@ -115,7 +139,7 @@ When building out your payment workflow you should consider how you will build o
         "visa",
         "masterCard",
         "amex",
-       "discover"
+        "discover"
     ],
     "total": {
         "label": "Demo (Card is not charged)",
@@ -125,7 +149,7 @@ When building out your payment workflow you should consider how you will build o
 }
 ```
 
-For example, if you are charging one flat fee for shipping, or are not charging for shipping at all, then the following payment request would be sufficient. However, if you need to calculate transaction totals based on location or address then you have two options. The first is to gather this shipping information as part of your payment workflow before the payment request is created. That way you have this information up front before the payment workflow. The second option is to pass in information for `requiredShippingContactFields` into your payment request:
+If you calculate shipping costs dynamically based on the customer’s address, specify `requiredShippingContactFields` in your payment request:
 
 ```json
 "requiredShippingContactFields": [
@@ -136,10 +160,10 @@ For example, if you are charging one flat fee for shipping, or are not charging 
 ]
 ```
 
-Using the `requiredShippingContactFields` field tells the Apple Pay SDK that you would like to receive redacted shipping and contact information to calculate shipping and further fees on the transaction. These fields will show up in the `onshippingcontactselected` with just enough information to calculate shipping fees.
+When the user selects or changes their shipping address, Apple Pay triggers the `onshippingcontactselected` delegate callback with redacted address information sufficient to calculate taxes and shipping methods:
 
 ```javascript
-onshippingcontactselected:
+// Sample redacted contact information received in onshippingcontactselected
 {
     "administrativeArea": "CA",
     "country": "United States",
@@ -147,87 +171,116 @@ onshippingcontactselected:
     "locality": "San Francisco",
     "postalCode": "94114"
 }
-// Note that you need to pass in a populated object here to `completeShippingContactSelection`
+
+// Return updated line items and total to complete contact selection
 session.onshippingcontactselected = event => {
-     // You will receive redacted shipping and contact info here.
-     const update = {};
-     // Construct update object to pass in below, do now pass in blank object.
-    // For example, `required ApplePayLineItem newTotal` is required in this case.
+    const update = {
+        newTotal: {
+            label: "Demo Store",
+            type: "final",
+            amount: "2.49"
+        },
+        newLineItems: [
+            {
+                label: "Subtotal",
+                amount: "1.99"
+            },
+            {
+                label: "Standard Shipping",
+                amount: "0.50"
+            }
+        ]
+    };
+    // Pass the populated update object to complete contact selection; do not pass an empty object
     session.completeShippingContactSelection(update);
 };
 ```
 
-After the transaction is authorized you will receive the complete shipping information.
+After the user authorizes the payment with Face ID, Touch ID, or their passcode, the session returns the unredacted shipping and contact details.
 
 ## Merchant validation
 
-After the payment request is created your application will need to go through the [Merchant Validation process](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation) to authenticate itself as a valid Merchant to process a transaction. Upon successful authentication, your server will receive a payment session to submit with your payment request to the Apple Pay SDK. This process is where most Apple Pay on the Web issues take place because there are a lot of moving parts. Here is an overview of that process as well as suggestions on how to resolve common errors in this workflow:
+Before presenting the payment sheet to authorize a charge, your application must complete [merchant validation](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation) to verify that your website is authorized to process transactions under your Merchant ID. Upon successful validation, Apple’s servers return an opaque payment session object that your client passes to the `ApplePaySession`.
 
-1. Call your server with the URL that your client side application received in [validationURL](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayvalidatemerchantevent/1778026-validationurl). In this step your JavaScript client application will send an HTTPS request to your server side application passing it the validationURL.
-2. Your server side application will receive the HTTPS request from step one, and use the validationURL to create a POST request to obtain a payment session from the server to Apple’s servers. This is where your application uses the Merchant Identity Certificate to identify itself as a valid Merchant to the Apple Pay Servers. **DO NOT** make this request from your client side JavaScript application as it will expose your private key. Make sure this request utilizes the correct format of your p12/PEM to perform client authentication with the Apple Pay servers. If you receive a TLS or SSL failure while making this request then examine the format of the p12/PEM in this payment session request.
-3. Once the Apple Pay server has a payment session it should respond to your server with this session and your client application should pass the session into `completeMerchantValidation(paymentSession);`.
+Merchant validation follows three sequential steps:
 
-Step two above is where a lot of issues take place. To validate that your server side APIs are not causing an issue, you can test a payment session request using CURL. Assuming that your Merchant Identity Certificate is in your Keychain, export that as a p12 and extract the certificate/key in PEM format.
+1. **Client receives validation URL:** When the payment sheet initializes, `ApplePaySession` invokes its `onvalidatemerchant` callback, supplying an Apple-hosted `validationURL`. Your client-side JavaScript sends this URL to your backend server in an HTTPS request.
+2. **Server requests payment session:** Your backend server sends an HTTP POST request to the provided `validationURL`, presenting your Merchant Identity Certificate (`.p12` or `.pem`) to perform mutual TLS (mTLS) client authentication. Validate the hostname against Apple’s allowed domains specified in [Setting up your server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
+3. **Client completes validation:** Apple’s server validates your certificate and returns an encrypted merchant session payload. Your backend forwards this response to your client application, which passes it to `session.completeMerchantValidation(paymentSession)`.
 
-```
-$ openssl pkcs12 -in Certificates.p12 -out apple-pay-cert.pem -nodes -clcerts
+> ❗ **Important**: Never send the merchant validation request directly from client-side JavaScript. Contacting the validation endpoint requires your Merchant Identity private key; initiating this request from a browser exposes your private key.
 
-```
+### Testing merchant validation with curl
 
-Then use the CURL command to request a payment session by going around your server.
-If this works, then you know you have a server side API issue.
+To verify that your Merchant Identity Certificate and network routing are functioning independently of your backend application code, test the payment session request directly using `curl`.
 
-```
-$ curl -gv --data '{"merchantIdentifier":"merchant.com.testbed.applepay", "initiativeContext":"example.com", "initiative":"web", "displayName":"Apple Pay Testbed"}' --cert /path/to/pem/apple-pay-cert.pem https://apple-pay-gateway.apple.com/paymentservices/paymentSession
-```
+Export your Merchant Identity Certificate and private key from Keychain Access as a `.p12` file, and convert it to a decrypted PEM file:
 
-```json
-{
-    "merchantIdentifier":"merchant.com.testbed.applepay",
-    "initiativeContext":"example.com",
-    "initiative":"web",
-    "displayName":"Apple Pay Testbed"
-}
+```zsh
+openssl pkcs12 -in Certificates.p12 -out apple-pay-cert.pem -nodes -clcerts
 ```
 
-A successful response here will contain a valid JSON payload with a valid payment session tied to your Merchant ID.
+Execute a POST request to the validation endpoint with your client certificate:
+
+```zsh
+curl -gv \
+  --cert /path/to/pem/apple-pay-cert.pem \
+  --data '{
+    "merchantIdentifier": "merchant.com.testbed.applepay",
+    "initiativeContext": "example.com",
+    "initiative": "web",
+    "displayName": "Apple Pay Testbed"
+  }' \
+  https://apple-pay-gateway.apple.com/paymentservices/paymentSession
+```
+
+Use the production gateway host (`apple-pay-gateway.apple.com`) for live merchant accounts. To test in the sandbox environment, send the request to the sandbox gateway host (`apple-pay-gateway.sandbox.apple.com`). Use sandbox hosts only for development and sandbox testing; never use them in production. For regional endpoints, including gateway hosts in China, see [Setting up your server](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
+
+A successful validation returns an HTTP `200 OK` response containing a JSON merchant session object.
 
 ### Payment services exception
 
-If you send a request to the Apple Pay servers to get a Payment Session, and come back with a 400 server response error, the first thing you will want to do is check that your request was formatted correctly. A 400 server response means “Bad Request.” If the request looks fine, then you will want to double check the Merchant ID and the Merchant Identity Certificate that are used on the request. Consider this error:
+If the Apple Pay server returns an HTTP `400 Bad Request` with a `Payment Services Exception`, the Merchant ID in the request body does not match the merchant identity bound to your client certificate:
 
 ```json
 {
-"statusMessage": "Payment Services Exception merchantId=bdb3ed0005c72b1e8c2a536bb65a0ec22de030578c08b45dde6cdc13cd925f03 unauthorized to process transactions on behalf of merchantId=12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce reason=\"12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce never authorized mass enablement transactions to occur via bdb3ed0005c72b1e8c2a536bb65a0ec22de030578c08b45dde6cdc13cd925f03\"",
-"statusCode": "400"
+  "statusMessage": "Payment Services Exception merchantId=bdb3ed0005c72b1e8c2a536bb65a0ec22de030578c08b45dde6cdc13cd925f03 unauthorized to process transactions on behalf of merchantId=12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce reason=\"12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce never authorized mass enablement transactions to occur via bdb3ed0005c72b1e8c2a536bb65a0ec22de030578c08b45dde6cdc13cd925f03\"",
+  "statusCode": "400"
 }
 ```
 
-Now, this looks hard to read, but to debug this you need to check the `merchantId=` value against a `sha256` hash of the Merchant ID to see if they match. Looking at the hash of my Merchant ID for `merchant.com.testbed.applepay`:
+The error message contains the SHA-256 hashes of two Merchant IDs:
 
-```
+1. The first hash (`bdb3ed00...`) corresponds to the Merchant ID associated with the Merchant Identity Certificate used for TLS client authentication.
+2. The second hash (`12953b72...`) corresponds to the string passed in the `merchantIdentifier` field of your JSON request payload.
+
+To identify which Merchant ID generated a hash, compute the SHA-256 digest of your Merchant ID string in Terminal:
+
+```zsh
 echo -n "merchant.com.testbed.applepay" | shasum -a 256
-12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce 
+# 12953b72a8db15cf4a079b49a87ddd5eed1b0ba2eb249c7907265a7b04cff6ce
 ```
 
-It looks like something went wrong with the Merchant ID that was used in this request. In this case go back and check the Merchant ID used in the payment session request.
+If the two hashes differ, the client certificate you installed belongs to a different Merchant ID than the one specified in your JSON payload. Re-export the certificate created under the correct Merchant ID, or update the `merchantIdentifier` field in your payload to match.
 
 ### completeMerchantValidation fails
 
-If you pass a valid payment session into `completeMerchantValidation` and receive an error, there are a few things you can try:
+If passing the payment session into `completeMerchantValidation(_:)` fails on the client, investigate these potential causes:
 
-1. Isolate the issue to a device that is being used for Sandbox testing. For example, make sure you only have a Sandbox test user signed into a device and that you are using the device only for a Sandbox test account. Do not mix production and Sandbox cards and accounts. [Create a Sandbox Tester Account](https://developer.apple.com/apple-pay/sandbox-testing/).
-2. Make sure the test device is properly authenticating the transaction with Face ID, Touch ID, or watchOS confirmation.
-3. If you continue to have trouble, and can reproduce this issue on macOS, try logging the events from `passd` when the issue is reproduced on macOS with Safari. For example, on macOS, open two terminal windows and run each of these commands in separate Terminal windows:
+1. **Sandbox and production environment mismatch:** Do not mix sandbox and production configurations. If you request a payment session from the sandbox gateway, test on a device signed into an active [Apple Pay Sandbox Tester Account](https://developer.apple.com/apple-pay/sandbox-testing/) with sandbox test cards.
+2. **Domain mismatch in initiativeContext:** The `initiativeContext` value in your payment session request must exactly match the FQDN of the website hosting the checkout page. For example, if testing on `www.example.com`, do not pass `staging.example.com` or `example.com`.
+3. **Invalid merchant session signature:** A merchant session contains a cryptographic signature generated by Apple Pay servers. If your Merchant Identity Certificate is expired, revoked, or untrusted, the client rejects the session.
+4. **Biometric or device authorization:** Ensure the test device supports Apple Pay and can authenticate using Face ID, Touch ID, or Optic ID.
 
+To inspect detailed merchant session validation errors on macOS Safari, stream log messages from `passd` and PassKit in Terminal:
+
+```zsh
+log stream --level debug --predicate 'process == "passd" || subsystem == "com.apple.passkit"'
 ```
-$ log stream --level debug --predicate 'process == "passd"'
-$ log stream --level debug --predicate 'subsystem == "com.apple.passkit”'
-```
 
-Then reproduce your issue in Safari on macOS. Typically you will see logs that end up like this from these daemons:
+Reproduce the validation failure in Safari. If the merchant session is invalid, the log output indicates the specific failure:
 
-```
+```log
 com.apple.PassKit.PaymentAuthorizationUIExtension: (PassKitCore) [com.apple.passkit:Payment] 
 Evaluating merchant session using PROD trust policy.
 
@@ -235,26 +288,27 @@ com.apple.PassKit.PaymentAuthorizationUIExtension: (PassKitCore) [com.apple.pass
 Application failed to provide a valid merchant session. We can't proceed to authorize the transaction.
 ```
 
-There are a few different reasons these errors can happen:
-
-- A request for a payment session contains a domain other than what is being tested on. For example, testing on `www.example.com` and the request a payment session request is being sent for `staging.example.com`.
-- A Merchant Session is considered to have a bad signature because of issues with a Merchant Identity Certificate or Merchant Domain.
-- You have not [authorized your payment](https://support.apple.com/guide/safari/pay-with-apple-pay-ibrw8e207504/mac) with watchOS, macOS, or iOS.
-
 ## Decrypting the payment token
 
-Once you have completed the payment workflow you will need to pass the payment token to your Payment Processor. This is where your Payment Processing Identity comes into play. Your Payment Processor will need your Payment Processing Identity to decrypt the payment token that was encrypted with the public key of your Payment Processing Certificate.
+After the user authorizes the transaction, `ApplePaySession` returns an `ApplePayPayment` object containing the encrypted `ApplePayPaymentToken`. Send this token payload to your payment processor for decryption and settlement.
 
-If you attempt to decrypt a payment token and receive something other than a parseable JSON output then the most common reason for this issue is that you have a key mis-match. For example, a payment token is trying to be decrypted with a private key that does not match the public key that the token was encrypted with. When the payment token is encrypted, it is encrypted with Payment Processing Certificate’s public key. This public key should be embedded in the private key as well. If you are able to extract the public key from the private key and compare a sha256 hash of each key, they should match. If the public key hashes do not match then the Payment Processor has the wrong private key. To extract the public key from the private key you should be able to use a tool like OpenSSL to do so.
+Your payment processor uses your Payment Processing Identity (the private key corresponding to the public key in your Payment Processing Certificate) to decrypt the payment token.
 
-For a complete overview of how to decrypt the Apple Pay Payment token and how the payment token is structured, please see the [Payment Token Format documentation here](https://developer.apple.com/library/archive/documentation/PassKit/Reference/PaymentTokenJSON/PaymentTokenJSON.html).
+If token decryption fails or produces unparsable data rather than JSON, verify that your processor holds the correct private key:
+
+- When Apple Pay encrypts the payment token, it uses the public key from the active Payment Processing Certificate associated with your Merchant ID.
+- The private key used for decryption must match that public key. If you recently renewed or regenerated your Payment Processing Certificate, confirm that your payment processor updated their system with the new private key.
+- To verify key consistency, extract the public key from the private key file and compute its SHA-256 hash. Compare this hash against the public key extracted from your Payment Processing Certificate. If the hashes differ, the private key does not match the certificate.
+
+For detailed token schema definitions and cryptographic specifications, see [Payment Token Format Reference](https://developer.apple.com/library/archive/documentation/PassKit/Reference/PaymentTokenJSON/PaymentTokenJSON.html). To learn more about Payment Processing Certificates, see doc://tn3206-updating-apple-pay-certificates#Payment-processing-certificates.
 
 ## Revision History
 
+- **2026-11-03** Added sandbox gateway hosts and made editorial changes.
 - **2022-05-24** Made minor editorial changes.
 - **2022-03-29** Made minor editorial changes.
 - **2022-02-08** Republished as TN3103.
-- **2021-09-13** First published as “Apply Pay on the Web Debugging Guide” on the Apple Developer Forums.
+- **2021-09-13** First published as “Apple Pay on the Web Debugging Guide” on the Apple Developer Forums.
 
 
 ---

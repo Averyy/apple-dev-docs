@@ -27,8 +27,6 @@ A dictionary of rendering attributes for the link, or `nil` to use defaults.
 
 Just as other rendering attributes, specifying [`NSNull`](../../Foundation/nsnull.md) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
 
-The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
-
 ## Parameters
 
 - `textLayoutManager`: The text layout manager sending the message.

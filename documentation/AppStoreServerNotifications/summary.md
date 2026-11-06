@@ -63,6 +63,8 @@ The `summary` object appears in the [`responseBodyV2DecodedPayload`](./responseb
   The payload data that contains app metadata and the signed renewal and transaction information.
 - [object appData](./appdata.md)
   The object that contains the app metadata and signed app transaction information.
+- [object unclaimInfo](./unclaiminfo.md)
+  The payload data that identifies the seat claims the App Store unclaimed in a group subscription that uses developer-hosted invitations.
 
 
 ---

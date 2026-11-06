@@ -7,12 +7,12 @@
 Sets the title in the navigation bar for this view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: navigationTitle(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: navigationTitle(_:))
 
 > **Deprecated**: Use [`navigationTitle(_:)`](./navigationtitle%28_%29-5di1u.md) instead.
 

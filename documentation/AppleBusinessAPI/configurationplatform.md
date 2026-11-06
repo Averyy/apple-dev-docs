@@ -7,7 +7,7 @@
 The platform that a Configuration targets.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -52,6 +52,8 @@ string ConfigurationPlatform
   The status of a Blueprint.
 - [type ConfigurationType](./configurationtype.md)
   The type of Configuration profile.
+- [type WebhookEventType](./webhookeventtype.md)
+  Strings that represent the types of events a webhook can subscribe to.
 
 
 ---

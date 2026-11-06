@@ -7,12 +7,12 @@
 Requests all active Thread credentials with active border routers around from the framework.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.0+ - Deprecated in 27.3
+- iPadOS 27.0+ - Deprecated in 27.3
+- Mac Catalyst 27.0+ - Deprecated in 27.3
 - macOS 13.0+
-- visionOS 27.0+
-- watchOS 27.0+
+- visionOS 27.0+ - Deprecated in 27.3
+- watchOS 27.0+ - Deprecated in 27.3
 
 ## Declaration
 
@@ -41,6 +41,8 @@ When calling this method, you will receive credentials for active border routers
 > ```
 >
 > For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
+
+> ❗ **Important**: Deprecated in iOS 27.3. Use [`retrieveNearbyNetworkCredentials(completion:)`](./retrievenearbynetworkcredentials%28completion%29.md) instead, which also returns a new data type, where credentials from preferred networks can be differentiated from the rest.
 
 ## Parameters
 

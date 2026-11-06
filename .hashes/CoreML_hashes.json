@@ -782,7 +782,7 @@
     },
     "https://developer.apple.com/documentation/coreml/mlmodel/compilemodel(at:)-6442s": {
       "file_path": "documentation/CoreML/mlmodel/compilemodel(at)-6442s.md",
-      "hash": "deddc280e81b494b1843e19c266a902b19b166451649439685f116e0a6a7d8bc"
+      "hash": "f6ab492b8b8e34df2d57ad201f12ca2dcf0babdac4848f8e3e907b4d83a47773"
     },
     "https://developer.apple.com/documentation/coreml/mlmodel/compilemodel(at:completionhandler:)": {
       "file_path": "documentation/CoreML/mlmodel/compilemodel(at,completionhandler).md",
@@ -1534,7 +1534,7 @@
     },
     "https://developer.apple.com/documentation/coreml/mlmultiarray/datapointer": {
       "file_path": "documentation/CoreML/mlmultiarray/datapointer.md",
-      "hash": "5c88451002081a3701414d5fcda6db2635209f97b4bb9843cb3177d46684f9ba"
+      "hash": "3cf894ad54538f3510fb118bafdfe2b13c095cb42c53bfe2de768fa91d91d9e9"
     },
     "https://developer.apple.com/documentation/coreml/mlmultiarray/datatype": {
       "file_path": "documentation/CoreML/mlmultiarray/datatype.md",
@@ -4242,7 +4242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/compilemodel(at:)-6442s.json": {
       "file_path": "documentation/CoreML/mlmodel/compilemodel(at)-6442s.md",
-      "hash": "deddc280e81b494b1843e19c266a902b19b166451649439685f116e0a6a7d8bc"
+      "hash": "f6ab492b8b8e34df2d57ad201f12ca2dcf0babdac4848f8e3e907b4d83a47773"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/compilemodel(at:).json": {
       "file_path": "documentation/CoreML/mlmodel/compilemodel(at).md",
@@ -4998,7 +4998,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/datapointer.json": {
       "file_path": "documentation/CoreML/mlmultiarray/datapointer.md",
-      "hash": "5c88451002081a3701414d5fcda6db2635209f97b4bb9843cb3177d46684f9ba"
+      "hash": "3cf894ad54538f3510fb118bafdfe2b13c095cb42c53bfe2de768fa91d91d9e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/datatype.json": {
       "file_path": "documentation/CoreML/mlmultiarray/datatype.md",

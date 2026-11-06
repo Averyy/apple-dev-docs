@@ -94,6 +94,9 @@ The Foundation framework provides a base layer of functionality for apps and fra
 ### Structures
 - [struct Subprogress](./subprogress.md)
   Subprogress is used to establish parent-child relationship between two instances of `ProgressManager`.
+### Variables
+- [NSPossessorMorphologyAttributeName](./nsattributedstring/key/possessormorphology.md)
+  An attribute key whose value specifies the grammatical possessor’s morphology
 ### Macros
 - [NS_SWIFT_MAIN_ACTOR](./ns_swift_main_actor.md)
 - [NS_SWIFT_SUPPRESS_SENDABLE](./ns_swift_suppress_sendable.md)

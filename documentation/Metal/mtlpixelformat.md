@@ -365,6 +365,7 @@ See Table 7.7 in the [Metal Shading Language Specification](https://developer.ap
 - [MTLPixelFormat.rgb8Unorm](./mtlpixelformat/rgb8unorm.md)
   An ordinary format with three components of 8-bit normalized, unsigned integer values in RGB order.
 - [MTLPixelFormat.unspecialized](./mtlpixelformat/unspecialized.md)
+  Defers assigning the pixel format.
 ### Initializers
 - [init?(rawValue: UInt)](./mtlpixelformat/init%28rawvalue%29.md)
 

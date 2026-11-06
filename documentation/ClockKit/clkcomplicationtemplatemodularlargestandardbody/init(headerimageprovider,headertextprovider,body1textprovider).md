@@ -7,7 +7,7 @@
 Creates a new template that has a header row with an image and text, and a row of body text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

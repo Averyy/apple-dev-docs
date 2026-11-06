@@ -2810,19 +2810,19 @@
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/init(cvpixelbuffer:properties:options:)-69695": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(cvpixelbuffer,properties,options)-69695.md",
-      "hash": "4caa1fd7106bede26f0269056a8b51bd1abfa6ee2bd46b749f83f3bbfe7c42ac"
+      "hash": "b0994e7b7aa3beb4ba09c599e54f2d531e7d0b2be85231bd5080d6f76c739b5e"
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(cvpixelbuffer,properties,options)-7qpsv.md",
-      "hash": "7e9a263b9320e1eb93b13223c98c558c013b5d75958d1ead8ed1b5c69d95875a"
+      "hash": "580a9d792b37bd4031d590c2ea6beae2120f618fce7222d6183e5865a09f7ff4"
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/init(imagedata:options:)": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(imagedata,options).md",
-      "hash": "3ea1bfd531ecdacb925e9194269aa05c556cc2c110f70c3fbb70de1d72afc819"
+      "hash": "806b66aeb62114a84e6f437baec4d3f833fa053e3c4bdf9720753cbf6888db92"
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/init(imageurl:options:)": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(imageurl,options).md",
-      "hash": "8aab1d8b0367c85e0bdefe9f6c058dcfc494e964ef41b534b1a75693f4d4d81e"
+      "hash": "f47e4042c28eeb9e0885dca8f390a8a7017b99709ba55408b5a7d610ef15b202"
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/init(name:)": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(name).md",
@@ -3282,7 +3282,7 @@
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/supportedrawcameramodels()": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/supportedrawcameramodels().md",
-      "hash": "d59a234440a7890155b30d9ee283ba418d3eea73be20a10ecf24904e67829290"
+      "hash": "4d89f0074fb1ff033e0e07d559d47b487ca955e9d3daa3ca8a15937f14e68a2a"
     },
     "https://developer.apple.com/documentation/coreimage/cifilter-swift.class/swipetransition()": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/swipetransition().md",
@@ -6406,135 +6406,135 @@
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption": {
       "file_path": "documentation/CoreImage/cirawfilteroption.md",
-      "hash": "85f6b7638fabdc7643355e5d116215a24c16d8f647c01ac4b1992ba5bb14bb87"
+      "hash": "5d832ecc13f7ee8b7a1d48bee3be29e839ebf741d7353147b4c8c4b556254049"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/activekeys": {
       "file_path": "documentation/CoreImage/cirawfilteroption/activekeys.md",
-      "hash": "514d94d92f03104faa8ea44ddd605a94a7c0d2d4cad94ef15cb4b8d630140b98"
+      "hash": "9517ffdd4353b45fe6c00d7eb39fb8b1b5c744c1b4a9b104fe5707e32dce5854"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/allowdraftmode": {
       "file_path": "documentation/CoreImage/cirawfilteroption/allowdraftmode.md",
-      "hash": "fe85fb39ed0eb507adc2b61126ef8c06d9475b480ed8454ca3defb6dc2c40876"
+      "hash": "485d3dfa2a1d0126ec1ba10ec365f27939c23d06525cfde5a7365a64c41b856c"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/baselineexposure": {
       "file_path": "documentation/CoreImage/cirawfilteroption/baselineexposure.md",
-      "hash": "959cc2766d46c2012133cd0c6efb6e5a69b5aa81cc87acea0f795a02b4c1fe38"
+      "hash": "bec18f8ccb7458372243a13b3279e72bcade0c099976bdd45315f983581da5cf"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/boostamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/boostamount.md",
-      "hash": "4bd3c66890f9edffbca49f784dcaa6e53cf9153029875496b5bbe852a5c586d5"
+      "hash": "0a909434f7a977e6b28bdee077310b7ae2669143322d5f864395abcb037e7cff"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/boostshadowamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/boostshadowamount.md",
-      "hash": "edaafa2aa78a027dc861a0ee6b2781f11e759100c5569e0713a7058dfabbdb71"
+      "hash": "d31c36b0dbffe2147fac31e70777010ab7af56ad09817e283e9c2dc815480997"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/ciinputenableedrmodekey": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ciinputenableedrmodekey.md",
-      "hash": "77906cfe56a59ba3ccbb0c9ddae27863d10417e6c7afdaa79aca272772df9488"
+      "hash": "1fc921e1002af428271e487894ee1d8539af7460f33a341b690d1b42d498af4b"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/ciinputlocaltonemapamountkey": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ciinputlocaltonemapamountkey.md",
-      "hash": "faa5de45099e78cd1b016908f4b1576d01aacc7f179fd59a73d121da83ea6310"
+      "hash": "db9868050541b4c008806eb1fc98e4405a28afce0db520ab2f566698a61846b2"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/colornoisereductionamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/colornoisereductionamount.md",
-      "hash": "e39a93eec87ec188def04846546ad2433195dcb6e5208afa25b4eda61de6f94a"
+      "hash": "95c903686b200e7ba90ab8fe5cd1ed12000977e356afa924c93ae6fe9a354f13"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/decoderversion": {
       "file_path": "documentation/CoreImage/cirawfilteroption/decoderversion.md",
-      "hash": "413bc95a93ce4f22b57e63399e83e07d40d206561142df8bea082e75db68e11a"
+      "hash": "0c969c4827f6233226ec973094bd6ab7590ee03c61540c4adfae962c9333979a"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/disablegamutmap": {
       "file_path": "documentation/CoreImage/cirawfilteroption/disablegamutmap.md",
-      "hash": "d82eb9601794b46a35324eb6681bd58f32aa81a4e4c0bcf849d7f95166dae5f2"
+      "hash": "accbe0bf6f98100760320d2ae0ccacbaa88a2bd9a3921b9f8dc8da954f18a03e"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/enablechromaticnoisetracking": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablechromaticnoisetracking.md",
-      "hash": "5f2e2785f2a35ea8a5498974e39d84d2dbdb937ce0df5d44277fc464f996aca3"
+      "hash": "1af336e6c02f50f3bc5b2ec087cc43f76cb4e7d696c426a9453cbe34b3f60dfd"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/enablesharpening": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablesharpening.md",
-      "hash": "0bffedc039b9d6569b8ea20a0a0b741d738aa428d9fad1da48b357c82eb92fa0"
+      "hash": "16c387495755d03e65a5f6652f3fb61782592f8ffc985d83cee2b1e78844ee6f"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/enablevendorlenscorrection": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablevendorlenscorrection.md",
-      "hash": "cbc3230ea544988f740d390f180582d56bca54281d02d3a44298f40a2694d46c"
+      "hash": "b9abf95681c378003a17fc190b1665601bed0e2be817a792ae0661e6cb4a3802"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/ignoreimageorientation": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ignoreimageorientation.md",
-      "hash": "33a4f6dc239121526373fb3d83f7d7b231ff26cc137723f66a525af97e7c6f9e"
+      "hash": "6b8425754bdad1957feee5e88adcc695f8e4ae3d7945cb3a9fea4bb5efa3c616"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/imageorientation": {
       "file_path": "documentation/CoreImage/cirawfilteroption/imageorientation.md",
-      "hash": "1e5c387d2f23396305d1a2f516e4bf7e991b57289414c22c5da4a34c7a553586"
+      "hash": "72867012c7e22d35483ec262c7cba14252b9861d3d144ba143698f72c3769d64"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/init(rawvalue:)": {
       "file_path": "documentation/CoreImage/cirawfilteroption/init(rawvalue).md",
-      "hash": "da724bae77aa60f986ff6241693d732bae38276a7813993bb895224c3f84a7d1"
+      "hash": "bf1347f141da5a92a3f6a2bdfde77aebed09b0051a4c3e0c7a677ca10803dcf3"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/linearspacefilter": {
       "file_path": "documentation/CoreImage/cirawfilteroption/linearspacefilter.md",
-      "hash": "a0465833bdd9c9121ca2269f044e2c14e6fc773ca62c3cd83be2c63d5a8cc704"
+      "hash": "9123354601fd498b484df27b44e68374b48564f8f32480bd77d7ed42705b6a12"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/luminancenoisereductionamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/luminancenoisereductionamount.md",
-      "hash": "2f8fb07fe31a5a6d5c78204915488dc232f7ba35cadcae2c30737be5722476bb"
+      "hash": "6db0ffc4665703cca094e953f6fe10053d659b450cc40863ec4b0ac1ab8e7791"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/moireamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/moireamount.md",
-      "hash": "5a22dc0fc8ed17cb84aa9944fbc9e8cfe3caf6ddf47fb312bba9a4388dcbbcc3"
+      "hash": "d877990477ba5101f09dce898f1d861365efa112d250658e1571565673eec7bc"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/neutralchromaticityx": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutralchromaticityx.md",
-      "hash": "467e74d65e9e4378aae9ae0340fef35b127a4a2b119a0128fe93363c66e52e22"
+      "hash": "aababd5218d1c1d1c78bffb75a2a519376150cf91010c30033fef8c6f56e6b4e"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/neutralchromaticityy": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutralchromaticityy.md",
-      "hash": "8b79a5200244e24415ee7801a5060fbc100a36deec2c09c8f9d049a676e7b4b0"
+      "hash": "e07fa9056503a3c08b35a71a19d960f2a90f5c3afd6cbd740dc18d6d6e3bb685"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/neutrallocation": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutrallocation.md",
-      "hash": "779b5c6c1718d77889f749c7d75e09256d6824c225d9e8e73ac75f1479dfd032"
+      "hash": "2e5f8fc3c62df9933e2f5dcfcd304ca1d375813a55411a28faa4966a661589bb"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/neutraltemperature": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutraltemperature.md",
-      "hash": "efe104f612acc6ab768b0fb5e238b84e6b7c5d9def1a623ad87c81f65af3cfe3"
+      "hash": "a5f45123125d2a8cad36fc375d49b0bc82ff5b30bb2fe77b8aecbc75efa9fc96"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/neutraltint": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutraltint.md",
-      "hash": "f1a095d343057b2ac282c6ebc77ee594425559191b6bbde4f470daa17831afa8"
+      "hash": "35767651786b5f170087892726ef93e7b6e11270d775a79cad8dc67f6b02bbc2"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/noisereductionamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductionamount.md",
-      "hash": "fc7734a0c0268ba3d271bb3bcb2a8112cfacc238d2d624c438448c59da38ba23"
+      "hash": "e02424a5647d0fcee8364b059bd467651c63590284ac527b72e8bc2ad7c4d780"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/noisereductioncontrastamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductioncontrastamount.md",
-      "hash": "43d4744a1c8318526d90aa40e1386d77160d8cd3b71ed187ce3b7754bcaf0a3b"
+      "hash": "572ddff7131c9213f4a6a2fa585813a976937a09dca73ffd6df66971c9e46824"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/noisereductiondetailamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductiondetailamount.md",
-      "hash": "ab5c8d8ec39f371ee81936ae54688d26ec6527f5e4db33009f901dd30e37df38"
+      "hash": "1d78a7aed9ed338b24fe5d119e649617891a49876dfc4e3f7cefb64b64d349dd"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/noisereductionsharpnessamount": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductionsharpnessamount.md",
-      "hash": "de194e486f09088c7a1675750660d659339617ee303b36bcf761f0aaeaf93b2d"
+      "hash": "b47197516c06ead1582ed86a2d9fd798e98600ef593e5b9d27856f0fa7683157"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/outputnativesize": {
       "file_path": "documentation/CoreImage/cirawfilteroption/outputnativesize.md",
-      "hash": "25449aa0afe34afbe52766c599c04c5b90b6557802d6745f53904f8e5f9e4569"
+      "hash": "b5c84c10a4abe9947a171f7ea7c9f47e96509507f95ad123006a09200dd2ecc9"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/propertieskey": {
       "file_path": "documentation/CoreImage/cirawfilteroption/propertieskey.md",
-      "hash": "3e23c1a41f3e8ea3ef7083e21fcc3b43936b33fdfebcc971c468205fdabfa548"
+      "hash": "2d9b68aeed2a24aa1828075df56f34d812874f9cd6575d39883e0fd08e144d1b"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/scalefactor": {
       "file_path": "documentation/CoreImage/cirawfilteroption/scalefactor.md",
-      "hash": "370e70f838e28382d1c7dfe3c0570a9772d8765fec16cefeb28f257c27cb9dca"
+      "hash": "7c2ec78b3dc578c6719e21a04e4912a39d5065d72ea2f6068907294d26c937b3"
     },
     "https://developer.apple.com/documentation/coreimage/cirawfilteroption/supporteddecoderversions": {
       "file_path": "documentation/CoreImage/cirawfilteroption/supporteddecoderversions.md",
-      "hash": "7eab5b0d41a8d0b6837391443808f2ddc40b79c264bb3429cf95d3958b1da137"
+      "hash": "e55562592ac66a798b18e5dbfb5f4fffc947cc779cd341e3120adf931aeb4c12"
     },
     "https://developer.apple.com/documentation/coreimage/cirectanglefeature": {
       "file_path": "documentation/CoreImage/cirectanglefeature.md",
@@ -11270,19 +11270,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/init(cvpixelbuffer:properties:options:)-69695.json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(cvpixelbuffer,properties,options)-69695.md",
-      "hash": "4caa1fd7106bede26f0269056a8b51bd1abfa6ee2bd46b749f83f3bbfe7c42ac"
+      "hash": "b0994e7b7aa3beb4ba09c599e54f2d531e7d0b2be85231bd5080d6f76c739b5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv.json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(cvpixelbuffer,properties,options)-7qpsv.md",
-      "hash": "7e9a263b9320e1eb93b13223c98c558c013b5d75958d1ead8ed1b5c69d95875a"
+      "hash": "580a9d792b37bd4031d590c2ea6beae2120f618fce7222d6183e5865a09f7ff4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/init(imagedata:options:).json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(imagedata,options).md",
-      "hash": "3ea1bfd531ecdacb925e9194269aa05c556cc2c110f70c3fbb70de1d72afc819"
+      "hash": "806b66aeb62114a84e6f437baec4d3f833fa053e3c4bdf9720753cbf6888db92"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/init(imageurl:options:).json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(imageurl,options).md",
-      "hash": "8aab1d8b0367c85e0bdefe9f6c058dcfc494e964ef41b534b1a75693f4d4d81e"
+      "hash": "f47e4042c28eeb9e0885dca8f390a8a7017b99709ba55408b5a7d610ef15b202"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/init(name:).json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/init(name).md",
@@ -11742,7 +11742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/supportedrawcameramodels().json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/supportedrawcameramodels().md",
-      "hash": "d59a234440a7890155b30d9ee283ba418d3eea73be20a10ecf24904e67829290"
+      "hash": "4d89f0074fb1ff033e0e07d559d47b487ca955e9d3daa3ca8a15937f14e68a2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cifilter-swift.class/swipetransition().json": {
       "file_path": "documentation/CoreImage/cifilter-swift.class/swipetransition().md",
@@ -14866,135 +14866,135 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption.md",
-      "hash": "85f6b7638fabdc7643355e5d116215a24c16d8f647c01ac4b1992ba5bb14bb87"
+      "hash": "5d832ecc13f7ee8b7a1d48bee3be29e839ebf741d7353147b4c8c4b556254049"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/activekeys.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/activekeys.md",
-      "hash": "514d94d92f03104faa8ea44ddd605a94a7c0d2d4cad94ef15cb4b8d630140b98"
+      "hash": "9517ffdd4353b45fe6c00d7eb39fb8b1b5c744c1b4a9b104fe5707e32dce5854"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/allowdraftmode.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/allowdraftmode.md",
-      "hash": "fe85fb39ed0eb507adc2b61126ef8c06d9475b480ed8454ca3defb6dc2c40876"
+      "hash": "485d3dfa2a1d0126ec1ba10ec365f27939c23d06525cfde5a7365a64c41b856c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/baselineexposure.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/baselineexposure.md",
-      "hash": "959cc2766d46c2012133cd0c6efb6e5a69b5aa81cc87acea0f795a02b4c1fe38"
+      "hash": "bec18f8ccb7458372243a13b3279e72bcade0c099976bdd45315f983581da5cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/boostamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/boostamount.md",
-      "hash": "4bd3c66890f9edffbca49f784dcaa6e53cf9153029875496b5bbe852a5c586d5"
+      "hash": "0a909434f7a977e6b28bdee077310b7ae2669143322d5f864395abcb037e7cff"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/boostshadowamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/boostshadowamount.md",
-      "hash": "edaafa2aa78a027dc861a0ee6b2781f11e759100c5569e0713a7058dfabbdb71"
+      "hash": "d31c36b0dbffe2147fac31e70777010ab7af56ad09817e283e9c2dc815480997"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/ciinputenableedrmodekey.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ciinputenableedrmodekey.md",
-      "hash": "77906cfe56a59ba3ccbb0c9ddae27863d10417e6c7afdaa79aca272772df9488"
+      "hash": "1fc921e1002af428271e487894ee1d8539af7460f33a341b690d1b42d498af4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/ciinputlocaltonemapamountkey.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ciinputlocaltonemapamountkey.md",
-      "hash": "faa5de45099e78cd1b016908f4b1576d01aacc7f179fd59a73d121da83ea6310"
+      "hash": "db9868050541b4c008806eb1fc98e4405a28afce0db520ab2f566698a61846b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/colornoisereductionamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/colornoisereductionamount.md",
-      "hash": "e39a93eec87ec188def04846546ad2433195dcb6e5208afa25b4eda61de6f94a"
+      "hash": "95c903686b200e7ba90ab8fe5cd1ed12000977e356afa924c93ae6fe9a354f13"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/decoderversion.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/decoderversion.md",
-      "hash": "413bc95a93ce4f22b57e63399e83e07d40d206561142df8bea082e75db68e11a"
+      "hash": "0c969c4827f6233226ec973094bd6ab7590ee03c61540c4adfae962c9333979a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/disablegamutmap.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/disablegamutmap.md",
-      "hash": "d82eb9601794b46a35324eb6681bd58f32aa81a4e4c0bcf849d7f95166dae5f2"
+      "hash": "accbe0bf6f98100760320d2ae0ccacbaa88a2bd9a3921b9f8dc8da954f18a03e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/enablechromaticnoisetracking.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablechromaticnoisetracking.md",
-      "hash": "5f2e2785f2a35ea8a5498974e39d84d2dbdb937ce0df5d44277fc464f996aca3"
+      "hash": "1af336e6c02f50f3bc5b2ec087cc43f76cb4e7d696c426a9453cbe34b3f60dfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/enablesharpening.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablesharpening.md",
-      "hash": "0bffedc039b9d6569b8ea20a0a0b741d738aa428d9fad1da48b357c82eb92fa0"
+      "hash": "16c387495755d03e65a5f6652f3fb61782592f8ffc985d83cee2b1e78844ee6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/enablevendorlenscorrection.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/enablevendorlenscorrection.md",
-      "hash": "cbc3230ea544988f740d390f180582d56bca54281d02d3a44298f40a2694d46c"
+      "hash": "b9abf95681c378003a17fc190b1665601bed0e2be817a792ae0661e6cb4a3802"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/ignoreimageorientation.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/ignoreimageorientation.md",
-      "hash": "33a4f6dc239121526373fb3d83f7d7b231ff26cc137723f66a525af97e7c6f9e"
+      "hash": "6b8425754bdad1957feee5e88adcc695f8e4ae3d7945cb3a9fea4bb5efa3c616"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/imageorientation.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/imageorientation.md",
-      "hash": "1e5c387d2f23396305d1a2f516e4bf7e991b57289414c22c5da4a34c7a553586"
+      "hash": "72867012c7e22d35483ec262c7cba14252b9861d3d144ba143698f72c3769d64"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/init(rawvalue:).json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/init(rawvalue).md",
-      "hash": "da724bae77aa60f986ff6241693d732bae38276a7813993bb895224c3f84a7d1"
+      "hash": "bf1347f141da5a92a3f6a2bdfde77aebed09b0051a4c3e0c7a677ca10803dcf3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/linearspacefilter.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/linearspacefilter.md",
-      "hash": "a0465833bdd9c9121ca2269f044e2c14e6fc773ca62c3cd83be2c63d5a8cc704"
+      "hash": "9123354601fd498b484df27b44e68374b48564f8f32480bd77d7ed42705b6a12"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/luminancenoisereductionamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/luminancenoisereductionamount.md",
-      "hash": "2f8fb07fe31a5a6d5c78204915488dc232f7ba35cadcae2c30737be5722476bb"
+      "hash": "6db0ffc4665703cca094e953f6fe10053d659b450cc40863ec4b0ac1ab8e7791"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/moireamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/moireamount.md",
-      "hash": "5a22dc0fc8ed17cb84aa9944fbc9e8cfe3caf6ddf47fb312bba9a4388dcbbcc3"
+      "hash": "d877990477ba5101f09dce898f1d861365efa112d250658e1571565673eec7bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/neutralchromaticityx.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutralchromaticityx.md",
-      "hash": "467e74d65e9e4378aae9ae0340fef35b127a4a2b119a0128fe93363c66e52e22"
+      "hash": "aababd5218d1c1d1c78bffb75a2a519376150cf91010c30033fef8c6f56e6b4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/neutralchromaticityy.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutralchromaticityy.md",
-      "hash": "8b79a5200244e24415ee7801a5060fbc100a36deec2c09c8f9d049a676e7b4b0"
+      "hash": "e07fa9056503a3c08b35a71a19d960f2a90f5c3afd6cbd740dc18d6d6e3bb685"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/neutrallocation.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutrallocation.md",
-      "hash": "779b5c6c1718d77889f749c7d75e09256d6824c225d9e8e73ac75f1479dfd032"
+      "hash": "2e5f8fc3c62df9933e2f5dcfcd304ca1d375813a55411a28faa4966a661589bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/neutraltemperature.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutraltemperature.md",
-      "hash": "efe104f612acc6ab768b0fb5e238b84e6b7c5d9def1a623ad87c81f65af3cfe3"
+      "hash": "a5f45123125d2a8cad36fc375d49b0bc82ff5b30bb2fe77b8aecbc75efa9fc96"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/neutraltint.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/neutraltint.md",
-      "hash": "f1a095d343057b2ac282c6ebc77ee594425559191b6bbde4f470daa17831afa8"
+      "hash": "35767651786b5f170087892726ef93e7b6e11270d775a79cad8dc67f6b02bbc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/noisereductionamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductionamount.md",
-      "hash": "fc7734a0c0268ba3d271bb3bcb2a8112cfacc238d2d624c438448c59da38ba23"
+      "hash": "e02424a5647d0fcee8364b059bd467651c63590284ac527b72e8bc2ad7c4d780"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/noisereductioncontrastamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductioncontrastamount.md",
-      "hash": "43d4744a1c8318526d90aa40e1386d77160d8cd3b71ed187ce3b7754bcaf0a3b"
+      "hash": "572ddff7131c9213f4a6a2fa585813a976937a09dca73ffd6df66971c9e46824"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/noisereductiondetailamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductiondetailamount.md",
-      "hash": "ab5c8d8ec39f371ee81936ae54688d26ec6527f5e4db33009f901dd30e37df38"
+      "hash": "1d78a7aed9ed338b24fe5d119e649617891a49876dfc4e3f7cefb64b64d349dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/noisereductionsharpnessamount.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/noisereductionsharpnessamount.md",
-      "hash": "de194e486f09088c7a1675750660d659339617ee303b36bcf761f0aaeaf93b2d"
+      "hash": "b47197516c06ead1582ed86a2d9fd798e98600ef593e5b9d27856f0fa7683157"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/outputnativesize.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/outputnativesize.md",
-      "hash": "25449aa0afe34afbe52766c599c04c5b90b6557802d6745f53904f8e5f9e4569"
+      "hash": "b5c84c10a4abe9947a171f7ea7c9f47e96509507f95ad123006a09200dd2ecc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/propertieskey.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/propertieskey.md",
-      "hash": "3e23c1a41f3e8ea3ef7083e21fcc3b43936b33fdfebcc971c468205fdabfa548"
+      "hash": "2d9b68aeed2a24aa1828075df56f34d812874f9cd6575d39883e0fd08e144d1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/scalefactor.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/scalefactor.md",
-      "hash": "370e70f838e28382d1c7dfe3c0570a9772d8765fec16cefeb28f257c27cb9dca"
+      "hash": "7c2ec78b3dc578c6719e21a04e4912a39d5065d72ea2f6068907294d26c937b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirawfilteroption/supporteddecoderversions.json": {
       "file_path": "documentation/CoreImage/cirawfilteroption/supporteddecoderversions.md",
-      "hash": "7eab5b0d41a8d0b6837391443808f2ddc40b79c264bb3429cf95d3958b1da137"
+      "hash": "e55562592ac66a798b18e5dbfb5f4fffc947cc779cd341e3120adf931aeb4c12"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreimage/cirectanglefeature.json": {
       "file_path": "documentation/CoreImage/cirectanglefeature.md",

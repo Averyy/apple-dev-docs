@@ -7,7 +7,7 @@
 Returns a template that has a gauge and an outer text element.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

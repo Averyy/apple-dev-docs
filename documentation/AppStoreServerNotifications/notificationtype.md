@@ -22,6 +22,8 @@ string notificationType
 
   If the `subtype` is empty, the customer changed their renewal preference back to the current subscription, effectively canceling a downgrade.
 
+  For a subscription that a customer buys as a multiseat purchase, the `subtype` can also indicate a change to the number of seats. If the `subtype` is `INCREASE_QUANTITY`, the group purchaser added seats, which takes effect immediately. If the `subtype` is `DECREASE_QUANTITY`, the group purchaser reduced the number of seats, or undid all or part of an earlier reduction. The change takes effect at the next renewal date. For the number of seats that renew, see [`renewalQuantity`](./renewalquantity.md).
+
   For more information on subscription levels, see [Ranking subscriptions within the group](https://developer.apple.com/app-store/subscriptions/#ranking).
 - `DID_CHANGE_RENEWAL_STATUS`: A notification type that, along with its [`subtype`](./subtype.md), indicates that the customer made a change to the subscription renewal status. If the `subtype` is `AUTO_RENEW_ENABLED`, the customer reenabled subscription auto-renewal. If the `subtype` is `AUTO_RENEW_DISABLED`, the customer turned off subscription auto-renewal, or the App Store turned off subscription auto-renewal after the customer requested a refund.
 - `DID_FAIL_TO_RENEW`: A notification type that, along with its [`subtype`](./subtype.md), indicates that the subscription failed to renew due to a billing issue. The subscription enters the billing retry period. If the `subtype` is `GRACE_PERIOD`, continue to provide service through the grace period. If the `subtype` is empty, the subscription isn’t in a grace period and you can stop providing the subscription service.
@@ -57,6 +59,10 @@ string notificationType
 
   The [`revocationDate`](./revocationdate.md) contains the timestamp of the refunded transaction. The [`originalTransactionId`](./originaltransactionid.md) and [`productId`](./productid.md) identify the original transaction and product. The [`revocationReason`](./revocationreason.md) contains the reason.
 
+  If the `subtype` is `SEATS`, the App Store refunded some of the seats of a subscription that a customer buys as a multiseat purchase. The transaction remains valid for its remaining seats, and it contains a `revocationDate` only if every seat in the transaction is revoked. For the number of revoked seats, see [`revokedSeatQuantity`](./revokedseatquantity.md). If the refunded seats belong to more than one transaction in the period, for example after the group purchaser added seats, you receive a notification for each transaction.
+
+  A seat-based refund removes unoccupied seats first. If it refunds more seats than are unoccupied, it then removes the most recently assigned members. For a subscription with developer-hosted invitations, the App Store sends an `UNCLAIM_SEATS` notification that identifies the seats it unclaims; revoke access for the customers in those seats. For a subscription with Apple-hosted invitations, the App Store revokes the transaction of each member it removes and sends a `REVOKE` notification for it. The member’s transaction has a [`revocationType`](./revocationtype.md) of `ASSIGNMENT_REVOKE`.
+
   To request a list of all refunded transactions for a customer, see [`Get Refund History`](../AppStoreServerAPI/get-refund-history.md) in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md).
 - `REFUND_DECLINED`: A notification type that indicates the App Store declined a refund request.
 - `REFUND_REVERSED`: A notification type that indicates the App Store reversed a previously granted refund due to a dispute that the customer raised. If your app revoked content or services as a result of the related refund, it needs to reinstate them.
@@ -67,11 +73,14 @@ string notificationType
 
   If the subtype is `SUMMARY`, the App Store completed extending the renewal date for all eligible subscribers. See the [`summary`](./summary.md) in the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) for details. If the subtype is `FAILURE`, the renewal date extension didn’t succeed for a specific subscription. See the data in the responseBodyV2DecodedPayload for details.
 - `RESCIND_CONSENT`: A notification type that indicates the parent or guardian has withdrawn consent for a child’s app usage.
-- `REVOKE`: A notification type that indicates that an In-App Purchase the customer was entitled to through Family Sharing, or through an organization that assigned it to them, is no longer available. The App Store sends this notification when a purchaser disables Family Sharing for their purchase, the purchaser (or family member) leaves the family group, or the purchaser receives a refund. Your app also receives a `paymentQueue(_:didRevokeEntitlementsForProductIdentifiers:)` call. Family Sharing applies to non-consumable In-App Purchases and auto-renewable subscriptions. For more information about Family Sharing, see Supporting Family Sharing in your app. The App Store also sends this notification when an organization removes a subscription that it assigned to a customer. In this case, the [`revocationType`](./revocationtype.md) in the transaction is `ASSIGNMENT_REVOKE`.
-- `SUBSCRIBED`: A notification type that, along with its subtype, indicates that the customer subscribed to an auto-renewable subscription.  If the subtype is `RESUBSCRIBE`, the customer resubscribed or received access through Family Sharing to the same subscription or to another subscription within the same subscription group. If the subtype is `INITIAL_BUY`, the customer either purchased or received access through Family Sharing to the subscription for the first time. To determine whether the customer redeemed an offer, check the [`offerType`](./offertype.md) in the decoded payload, [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md).
+- `REVOKE`: A notification type that indicates that an In-App Purchase the customer was entitled to through Family Sharing, or through an organization or group, is no longer available. The App Store sends this notification when a purchaser disables Family Sharing for their purchase, the purchaser (or family member) leaves the family group, or the purchaser receives a refund. Your app also receives a `paymentQueue(_:didRevokeEntitlementsForProductIdentifiers:)` call. Family Sharing applies to non-consumable In-App Purchases and auto-renewable subscriptions. For more information about Family Sharing, see Supporting Family Sharing in your app. The App Store also sends this notification when a customer loses access to a subscription through an organization or group, because they left the group, the purchaser removed them, or a refund removed their seat. In this case, the [`revocationType`](./revocationtype.md) in the transaction is `ASSIGNMENT_REVOKE`.
+- `SUBSCRIBED`: A notification type that, along with its subtype, indicates that the customer subscribed to an auto-renewable subscription.  If the subtype is `RESUBSCRIBE`, the customer resubscribed, or received access to the same subscription or to another subscription within the same subscription group through Family Sharing, an organization, or a group. If the subtype is `INITIAL_BUY`, the customer purchased or received access to the subscription for the first time through Family Sharing, an organization, or a group. To determine whether the customer redeemed an offer, check the [`offerType`](./offertype.md) in the decoded payload, [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md).
 
   For notifications about other product type purchases, see the `ONE_TIME_CHARGE` notification type.
 - `TEST`: A notification type that the App Store server sends when you request it by calling the [`Request a Test Notification`](../AppStoreServerAPI/request-a-test-notification.md) endpoint. Call that endpoint to test whether your server is receiving notifications. You receive this notification only at your request. For troubleshooting information, see the [`Get Test Notification Status`](../AppStoreServerAPI/get-test-notification-status.md) endpoint.
+- `UNCLAIM_SEATS`: A notification type that indicates the App Store unclaimed one or more seats of a group subscription that uses developer-hosted invitations, where the [`invitationManagement`](./invitationmanagement.md) value is `DEVELOPER`. The App Store unclaims a seat when a member removes themselves from the group, or when a refund removes claimed seats. The notification includes the [`unclaimInfo`](./unclaiminfo.md) object, which identifies the subscription and the seats.
+
+  Revoke access for the customers you assigned to the seats in the `unclaimSeatIds` array. The App Store no longer counts those seats as claimed.
 
 ## Mentions
 
@@ -80,7 +89,7 @@ string notificationType
 
 ## Discussion
 
-The `notificationType appears` in the notification payload, [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). It describes the event that leads to the notification. Some notifications also have a [`subtype`](./subtype.md) that further describes the event. See the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) for more information about the notification in the [`data`](./data.md), [`summary`](./summary.md), or [`externalPurchaseToken`](./externalpurchasetoken.md) object.
+The `notificationType` appears in the notification payload, [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). It describes the event that leads to the notification. Some notifications also have a [`subtype`](./subtype.md) that further describes the event. See the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) for more information about the notification in the [`data`](./data.md), [`summary`](./summary.md), [`externalPurchaseToken`](./externalpurchasetoken.md), or [`unclaimInfo`](./unclaiminfo.md) object.
 
 ### Handle use cases for In-App Purchase life-cycle events
 
@@ -112,6 +121,17 @@ Customers changing their subscription options, including upgrading, downgrading,
 | Customer cancels the subscription from the App Store Subscriptions settings page. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_DISABLED` |
 | Customer subscribes again after canceling a subscription, which reenables auto-renew. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_ENABLED` |
 | The system turned off auto-renew because the customer initiated a refund through your app using the refund request API. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_DISABLED` |
+
+Group purchasers changing the number of seats in a subscription that they buy as a multiseat purchase, the App Store refunding seats, and the App Store unclaiming seats, result in the following notifications:
+
+| Event | Notification type | Notification subtype |
+| --- | --- | --- |
+| The group purchaser adds seats to the subscription. | `DID_CHANGE_RENEWAL_PREF` | `INCREASE_QUANTITY` |
+| The group purchaser reduces the number of seats that renew at the next renewal date, or undoes all or part of an earlier reduction. | `DID_CHANGE_RENEWAL_PREF` | `DECREASE_QUANTITY` |
+| Apple refunds some of the seats of the subscription. | `REFUND` | `SEATS` |
+| Apple unclaims seats of a group subscription that uses developer-hosted invitations. | `UNCLAIM_SEATS` |  |
+| A member gets access to a group subscription. | `SUBSCRIBED` | `INITIAL_BUY` or `RESUBSCRIBE` |
+| A member loses access to a group subscription. | `REVOKE` |  |
 
 Customers redeeming offers, such as promotional offers, win-back offers, or offer codes result in the following notifications:
 
@@ -151,6 +171,7 @@ Customers requesting refunds or canceling Family Sharing result in the following
 | Event | Notification type | Notification subtype |
 | --- | --- | --- |
 | Apple refunds the transaction for a consumable or non-consumable In-App Purchase, a non-renewing subscription, or an auto-renewable subscription. | `REFUND` |  |
+| Apple refunds some of the seats of a subscription that a customer buys as a multiseat purchase. | `REFUND` | `SEATS` |
 | Apple reverses a previously granted refund due to a dispute that the customer raised. | `REFUND_REVERSED` |  |
 | Apple declines a refund that the customer initiated in the app, using the request refund API. | `REFUND_DECLINED` |  |
 | Apple requests consumption information for a refund request that a customer initiates. | `CONSUMPTION_REQUEST` |  |

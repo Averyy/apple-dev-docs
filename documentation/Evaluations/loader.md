@@ -56,6 +56,10 @@ var dataset: any Loader<ModelSample<String>> {
 
 ## Topics
 
+### Loading samples
+- [associatedtype Sample : SampleProtocol](./loader/sample.md)
+- [var stream: any AsyncSequence<Self.Sample, any Error>](./loader/stream.md)
+  The async sequence for iteration during an evaluation run.
 ### Loaders
 - [struct ArrayLoader](./arrayloader.md)
   A loader backed by an in-memory array.
@@ -63,11 +67,6 @@ var dataset: any Loader<ModelSample<String>> {
   A loader backed by a JSON or JSONL file.
 - [struct StreamLoader](./streamloader.md)
   A loader backed by a custom async sequence.
-### Associated Types
-- [associatedtype Sample : SampleProtocol](./loader/sample.md)
-### Instance Properties
-- [var stream: any AsyncSequence<Self.Sample, any Error>](./loader/stream.md)
-  The async sequence for iteration during an evaluation run.
 
 ## Relationships
 

@@ -11,6 +11,7 @@ An object that represents a session that interacts with a language model.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -176,6 +177,11 @@ Use Instruments to analyze token consumption while your app is running and to lo
   An error that occurs while a language model is calling a tool.
 - [LanguageModelSession.GenerationError](./languagemodelsession/generationerror.md)
   An error that may occur while generating a response.
+### Structures
+- [LanguageModelSession.SessionBinding](./languagemodelsession/sessionbinding.md)
+  A property wrapper type that provides a binding to session state from a parent scope.
+- [LanguageModelSession.SessionState](./languagemodelsession/sessionstate.md)
+  A property wrapper type that stores session state.
 
 ## Relationships
 

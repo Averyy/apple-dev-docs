@@ -7,12 +7,12 @@
 A key for the neutral position. Use this key to set the location in geometric coordinates of the unrotated output image that should be used as neutral. You cannot query this value; it is undefined for reading. The associated value is a two-element [`CIVector`](../civector.md) object that specifies the location (`x`, `y`).
 
 **Availability**:
-- iOS 10.0+ - Deprecated in 27.2
-- iPadOS 10.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.5+ - Deprecated in 27.2
-- tvOS 10.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 10.0+ - Deprecated in 27.3
+- iPadOS 10.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.5+ - Deprecated in 27.3
+- tvOS 10.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use new CIRAWFilter class instead.
 

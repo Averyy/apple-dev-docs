@@ -36,6 +36,7 @@ struct Enum
 - [AppSchema.PhotosEnum](./photosenum.md)
 - [AppSchema.ReaderEnum](./readerenum.md)
 - [AppSchema.RemindersEnum](./remindersenum.md)
+- [AppSchema.VideoEnum](./videoenum.md)
 - [AppSchema.WhiteboardEnum](./whiteboardenum.md)
 - [AppSchemaEnum](../appschemaenum.md)
 - [Copyable](../../Swift/copyable.md)

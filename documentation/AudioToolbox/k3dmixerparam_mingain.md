@@ -5,11 +5,11 @@
 **Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_MinGainInDecibels)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_MinGainInDecibels)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_MinGainInDecibels)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_MinGainInDecibels)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_MinGainInDecibels)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_MinGainInDecibels)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_MinGainInDecibels)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_MinGainInDecibels)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_MinGainInDecibels)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_MinGainInDecibels)
 
 ## Declaration
 

@@ -43,6 +43,7 @@ struct Intent
 - [AppSchema.RemindersIntent](./remindersintent.md)
 - [AppSchema.SpreadsheetIntent](./spreadsheetintent.md)
 - [AppSchema.SystemIntent](./systemintent.md)
+- [AppSchema.VideoIntent](./videointent.md)
 - [AppSchema.VisualIntelligenceIntent](./visualintelligenceintent.md)
 - [AppSchema.WhiteboardIntent](./whiteboardintent.md)
 - [AppSchema.WordProcessorIntent](./wordprocessorintent.md)

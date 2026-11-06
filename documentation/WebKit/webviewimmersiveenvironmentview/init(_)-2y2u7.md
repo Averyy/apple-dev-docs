@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates an immersive environment view from a `WKImmersiveEnvironment`.
+Creates an immersive environment view from a [`WKImmersiveEnvironment`](../wkimmersiveenvironment.md).
 
 **Availability**:
 - visionOS 27.0+

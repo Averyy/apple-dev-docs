@@ -23,6 +23,8 @@ Provides access to session state, endpoint information, focus region data, and h
 ## Topics
 
 ### Instance Properties
+- [var configuration: [String : FoveatedStreamingSession.ConfigurationValue]](./foveatedstreamingprovidercontext/configuration.md)
+  The connection parameters the host app supplied, keyed by name.
 - [let endpoint: FoveatedStreamingProviderEndpoint](./foveatedstreamingprovidercontext/endpoint.md)
   The endpoint for which a connection is being requested (local IP or remote URL).
 - [var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4](./foveatedstreamingprovidercontext/immersivespacefromremotespacetransform.md)

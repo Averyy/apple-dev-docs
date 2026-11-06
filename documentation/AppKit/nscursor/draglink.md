@@ -26,6 +26,12 @@ class var dragLink: NSCursor { get }
 
 The drag link cursor.
 
+## Discussion
+
+The following image shows the drag link cursor:
+
+![drag link cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-drag-link@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

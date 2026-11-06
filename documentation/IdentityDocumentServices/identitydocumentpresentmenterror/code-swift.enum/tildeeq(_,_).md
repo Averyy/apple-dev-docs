@@ -4,7 +4,7 @@
 **Kind**: op  
 **Role**: Operator
 
-Pattern matching operator for matching error codes directly. This enables traditional switch/case pattern matching on error codes.
+A pattern-matching operator for matching error codes directly. This operator enables traditional switch/case pattern matching on error codes.
 
 **Availability**:
 - iOS 26.0+

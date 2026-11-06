@@ -7,7 +7,7 @@
 Launches the task represented by the receiver.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`run()`](./run%28%29.md) instead.
 

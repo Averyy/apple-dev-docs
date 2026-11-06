@@ -4,14 +4,18 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The price charged at each billing event, in local currency.
+
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
-- macOS 26.4+
-- tvOS 26.4+
-- visionOS 26.4+
-- watchOS 26.4+
+- iOS 26.4+ - Deprecated in 27.3
+- iPadOS 26.4+ - Deprecated in 27.3
+- Mac Catalyst 26.4+ - Deprecated in 27.3
+- macOS 26.4+ - Deprecated in 27.3
+- tvOS 26.4+ - Deprecated in 27.3
+- visionOS 26.4+ - Deprecated in 27.3
+- watchOS 26.4+ - Deprecated in 27.3
+
+> **Deprecated**: Use [`pricingModel`](./pricingmodel-swift.property.md) instead.
 
 ## Declaration
 
@@ -21,12 +25,13 @@ let billingPrice: Decimal
 
 ## See Also
 
-### Instance Properties - generated
+### Deprecated
 - [let billingDisplayPrice: String](./billingdisplayprice.md)
+  A localized string representation of the price charged at each billing event.
 - [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
-- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
+  The period between renewals.
 - [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
-- [let subscriptionOffers: [Product.SubscriptionOffer]](./subscriptionoffers.md)
+  The commitment the customer agrees to when they subscribe to the product.
 
 
 ---

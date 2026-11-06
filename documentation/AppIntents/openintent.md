@@ -64,7 +64,7 @@ For information about how to update your app’s interface in response to this a
 - [protocol SetValueIntent](./setvalueintent.md)
   An intent that contains a value which can be set.
 - [protocol DeleteIntent](./deleteintent.md)
-  Delete the associated entity(s).
+  An app intent that deletes one or more entities.
 - [protocol DeprecatedAppIntent](./deprecatedappintent.md)
   An app intent that marks an action as deprecated and informs people which action to use instead.
 

@@ -34,9 +34,9 @@ func setWidth(_ val: CGFloat, type: NSTextBlock.ValueType, for layer: NSTextBloc
 - [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,edge%29.md)
   Returns the value type of an edge of a specified layer of the text block.
 - [func borderColor(for: NSRectEdge) -> NSColor?](./bordercolor%28for%29-273pl.md)
+  Returns the border color of the specified text block edge.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](./setbordercolor%28_,for%29.md)
   Sets the border color of the specified edge of the text block.
-- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 
 
 ---

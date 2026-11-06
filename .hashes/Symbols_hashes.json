@@ -354,19 +354,19 @@
     },
     "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.method": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.method.md",
-      "hash": "56da9ccdd2cae6a6dd649411310c545051ec4a9301ecf37a1a1a154858a9371a"
+      "hash": "0a905db0400e96a9514ce70e11530273ef0bbba0b2d215339e16b82d334c9a2c"
     },
     "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.type.method": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.type.method.md",
-      "hash": "a82e602800c0e64f84ede4290e11c98323280d2cfed831cd6de6b425452bc328"
+      "hash": "257aff6fa821be43d86c4cb51f54a026815cfaf3dce7d90e1502461c3543f4b3"
     },
     "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.method": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.method.md",
-      "hash": "c95d0e308ee788a7e11af157635f00c1d6a82a33d18e2d5a124453b4d95554da"
+      "hash": "f5f9186464b40388ef945edb11da5085b14ac50781533aac262f81393afc5092"
     },
     "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.type.method": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.md",
-      "hash": "f656c3df39bd2695f9ee5b2e202aa73406717b637dd41412322114860d873734"
+      "hash": "47a459de3c0e201c292d46f811f441bff480f9767b5452936471e661814bf787"
     },
     "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.method": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.method.md",
@@ -782,7 +782,7 @@
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-314sv": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-314sv.md",
-      "hash": "f439b0f4b60c5648293342fd5eb8ae094410acceb61a771a74e889ef89b50a80"
+      "hash": "8765b9d74b3ddb7611e984726bb6bb12be901478a056cf86d710bd7646c88518"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-316cr": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-316cr.md",
@@ -790,7 +790,7 @@
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-33816": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-33816.md",
-      "hash": "e0c27965fbaba9270e88efc20694f6ce6d35216e5f928ebfe4cb6dc610f31cf5"
+      "hash": "7206d425e8403d6c7890f54bfca986d5d67d1172678b93c42083cdc504f608e3"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-3klm2": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-3klm2.md",
@@ -814,11 +814,11 @@
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeating-swift.property": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.property.md",
-      "hash": "35cfed6c533e7c294f2120aeada0cc237493b3a69a7e676182903ba4302924b3"
+      "hash": "b54f5a2768eaec84e47f40b2e3b9a051c4c756911f4f5c96d71af25abe601d78"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeating-swift.type.property": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.type.property.md",
-      "hash": "6a8302287ffd69c43d47b4aa489e2ffb54631f82b2b273f2a1927b22f3497656"
+      "hash": "36207fcf8138981e0811d2dc0dae878167e13f0c2f62833e05b0c994e6ab49ef"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/speed(_:)-swift.method": {
       "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.method.md",
@@ -1274,19 +1274,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.method.json": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.method.md",
-      "hash": "56da9ccdd2cae6a6dd649411310c545051ec4a9301ecf37a1a1a154858a9371a"
+      "hash": "0a905db0400e96a9514ce70e11530273ef0bbba0b2d215339e16b82d334c9a2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.type.method.json": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.type.method.md",
-      "hash": "a82e602800c0e64f84ede4290e11c98323280d2cfed831cd6de6b425452bc328"
+      "hash": "257aff6fa821be43d86c4cb51f54a026815cfaf3dce7d90e1502461c3543f4b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.method.json": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.method.md",
-      "hash": "c95d0e308ee788a7e11af157635f00c1d6a82a33d18e2d5a124453b4d95554da"
+      "hash": "f5f9186464b40388ef945edb11da5085b14ac50781533aac262f81393afc5092"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.json": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.md",
-      "hash": "f656c3df39bd2695f9ee5b2e202aa73406717b637dd41412322114860d873734"
+      "hash": "47a459de3c0e201c292d46f811f441bff480f9767b5452936471e661814bf787"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.method.json": {
       "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.method.md",
@@ -1702,7 +1702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-314sv.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-314sv.md",
-      "hash": "f439b0f4b60c5648293342fd5eb8ae094410acceb61a771a74e889ef89b50a80"
+      "hash": "8765b9d74b3ddb7611e984726bb6bb12be901478a056cf86d710bd7646c88518"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-316cr.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-316cr.md",
@@ -1710,7 +1710,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-33816.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-33816.md",
-      "hash": "e0c27965fbaba9270e88efc20694f6ce6d35216e5f928ebfe4cb6dc610f31cf5"
+      "hash": "7206d425e8403d6c7890f54bfca986d5d67d1172678b93c42083cdc504f608e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-3klm2.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-3klm2.md",
@@ -1734,11 +1734,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.property.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.property.md",
-      "hash": "35cfed6c533e7c294f2120aeada0cc237493b3a69a7e676182903ba4302924b3"
+      "hash": "b54f5a2768eaec84e47f40b2e3b9a051c4c756911f4f5c96d71af25abe601d78"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.type.property.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.type.property.md",
-      "hash": "6a8302287ffd69c43d47b4aa489e2ffb54631f82b2b273f2a1927b22f3497656"
+      "hash": "36207fcf8138981e0811d2dc0dae878167e13f0c2f62833e05b0c994e6ab49ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/speed(_:)-swift.method.json": {
       "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.method.md",

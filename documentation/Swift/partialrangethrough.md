@@ -55,6 +55,7 @@ print(numbers[...3])
 ### Default Implementations
 - [Decodable Implementations](./partialrangethrough/decodable-implementations.md)
 - [Encodable Implementations](./partialrangethrough/encodable-implementations.md)
+- [HomeAccessoryRangeSettingDescriptor Implementations](./partialrangethrough/homeaccessoryrangesettingdescriptor-implementations.md)
 - [RangeExpression Implementations](./partialrangethrough/rangeexpression-implementations.md)
 
 ## Relationships

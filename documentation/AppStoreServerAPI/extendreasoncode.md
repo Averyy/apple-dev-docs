@@ -32,7 +32,7 @@ For more information about requesting subscription-renewal-date extensions, see 
 - [type extendByDays](./extendbydays.md)
   The number of days to extend the subscription renewal date.
 - [type requestIdentifier](./requestidentifier.md)
-  A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+  A string that contains a unique identifier you provide to track a request, such as a subscription-renewal-date extension or a seat claim.
 
 
 ---

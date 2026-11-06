@@ -23,6 +23,7 @@ var backgroundColor: NSColor? { get set }
 ## See Also
 
 ### Working with color
+- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 - [func setBorderColor(NSColor?)](./setbordercolor%28_%29.md)
   Sets the color of all borders of the text block.
 - [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)

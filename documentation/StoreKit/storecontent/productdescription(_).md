@@ -27,6 +27,8 @@
 - [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some StoreContent](./subscriptionstorebuttonlabel%28_%29.md)
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some StoreContent](./storebutton%28_,for%29.md)
 - [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some StoreContent](./subscriptionstorecontrolstyle%28_,placement%29.md)
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some StoreContent](./preferredsubscriptionpricingterms%28_%29.md)
+  Sets the pricing terms that the store uses to merchandise the subscription options within this store content.
 
 
 ---

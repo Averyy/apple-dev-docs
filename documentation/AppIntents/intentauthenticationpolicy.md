@@ -21,6 +21,10 @@ The authentication policies you can apply to an app intent when it runs.
 enum IntentAuthenticationPolicy
 ```
 
+## Mentions
+
+- [Bringing custom actions and content to Siri](./bringing-custom-actions-and-content-to-siri.md)
+
 ## Topics
 
 ### Authentication policies

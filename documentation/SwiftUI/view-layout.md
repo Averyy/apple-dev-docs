@@ -101,6 +101,8 @@ To get started arranging views, see [Layout fundamentals](./layout-fundamentals.
   Configures the content margin for a provided placement.
 - [func contentMargins(_:_:for:)](./view/contentmargins%28_,_,for%29.md)
   Configures the content margin for a provided placement.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./view/contentmargins%28for,edges,alignment%29.md)
+  Insets the content of this view by a content margin guide.
 ### Arrangement views
 - [func arrangementViewStyle(some ArrangementViewStyle) -> some View](./view/arrangementviewstyle%28_%29.md)
   Sets the style for arrangement views within this view.

@@ -7,7 +7,7 @@
 A style that implements the carousel interaction and appearance.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2 (renamed: VerticalTabViewStyle)
+- watchOS 7.0+ - Deprecated in 27.3 (renamed: VerticalTabViewStyle)
 
 > **Deprecated**: Use [`VerticalPageTabViewStyle`](./verticalpagetabviewstyle.md) instead.
 

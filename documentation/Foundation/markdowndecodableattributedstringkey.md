@@ -63,6 +63,7 @@ To define your own attributes for use with Markdown syntax, make sure your attri
 - [AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute](./attributescopes/foundationattributes/languageidentifierattribute.md)
 - [AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](./attributescopes/foundationattributes/localizednumberformatattribute.md)
 - [AttributeScopes.FoundationAttributes.MorphologyAttribute](./attributescopes/foundationattributes/morphologyattribute.md)
+- [AttributeScopes.FoundationAttributes.PossessorMorphologyAttribute](./attributescopes/foundationattributes/possessormorphologyattribute.md)
 - [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./attributescopes/foundationattributes/referentconceptattribute.md)
 
 

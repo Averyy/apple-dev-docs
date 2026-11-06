@@ -7,10 +7,10 @@
 The start call was made too late.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
 - Mac Catalyst 16.0+ - Deprecated in 27.0
-- visionOS 1.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`MetricManager.LaunchTaskError.Reason.pastDeadline`](../metricmanager/launchtaskerror/reason-swift.enum/pastdeadline.md) instead.
 

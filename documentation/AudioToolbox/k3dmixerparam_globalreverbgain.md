@@ -5,11 +5,11 @@
 **Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_GlobalReverbGainInDecibels)
 
 ## Declaration
 

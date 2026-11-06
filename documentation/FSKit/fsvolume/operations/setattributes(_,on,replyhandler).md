@@ -34,7 +34,7 @@ If a request sets the file size below the current end-of-file, truncate the file
 
 Ignore attempts to set the size of directories or symbolic links; don’t produce an error.
 
-If the caller attempts to set an attribute not supported by the on-disk file system format, don’t produce an error. The upper layers of the framework will detect this situation.
+If the caller requests an attribute your file system can’t store, skip it rather than producing an error, and leave it out of [`consumedAttributes`](../../fsitem/setattributesrequest/consumedattributes.md). The system uses [`consumedAttributes`](../../fsitem/setattributesrequest/consumedattributes.md) to determine what the caller observes, and the effect varies by operation.
 
 ## Parameters
 

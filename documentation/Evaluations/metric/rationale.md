@@ -30,8 +30,12 @@ let rationale: String?
   The result value of this metric.
 - [var doubleValue: Double?](./doublevalue.md)
   The numeric value of this metric.
+- [let metricDescription: String?](./metricdescription.md)
+  An optional description of the associated metric.
 - [Metric.Value](./value-swift.enum.md)
   A metric result value.
+- [var description: String](./description.md)
+  A human-readable string representation of the metric, including its name, value, and optional rationale.
 
 
 ---

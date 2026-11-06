@@ -24,6 +24,8 @@ Manage the code and resources you use to build apps, libraries, and other softwa
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [Embedding a command-line tool in a sandboxed app](./embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
+- [Managing Xcode projects using command-line tools](./managing-xcode-projects-using-the-command-line.md)
+  Edit build settings, targets, build phases, groups, and Swift package dependencies.
 ### Customization
 - [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md)
   Add more simulated devices, optional features, and support for additional platforms.

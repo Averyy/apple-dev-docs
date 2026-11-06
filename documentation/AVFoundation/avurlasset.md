@@ -102,6 +102,9 @@ let asset = AVURLAsset(url: url, options: options)
 ### Initializers
 - [init(URL: URL, options: [String : Any]?)](./avurlasset/init%28url,options%29-1t08s.md)
 - [convenience init(URL: URL, options: [String : Any]?)](./avurlasset/init%28url,options%29-4zhx7.md)
+### Type Methods
+- [class func setUpConnection(for: URL, options: [String : Any]?, completionHandler: (((any Error)?) -> Void)?)](./avurlasset/setupconnection%28for,options,completionhandler%29.md)
+  Prewarms a network connection to the specified host without creating an asset.
 
 ## Relationships
 

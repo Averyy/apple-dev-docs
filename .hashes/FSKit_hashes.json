@@ -1010,7 +1010,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsitem/setattributesrequest/consumedattributes": {
       "file_path": "documentation/FSKit/fsitem/setattributesrequest/consumedattributes.md",
-      "hash": "782a8a720467a935c66f8f9274c65455d8691cc86f3422d2c6f3eb893656bb85"
+      "hash": "d6a2e67f6c0f724563be7006a57357778651f51b7c8489da1381eb40f49692b1"
     },
     "https://developer.apple.com/documentation/fskit/fsitem/setattributesrequest/wasattributeconsumed(_:)": {
       "file_path": "documentation/FSKit/fsitem/setattributesrequest/wasattributeconsumed(_).md",
@@ -1758,7 +1758,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/setattributes(_:on:context:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/handler/setattributes(_,on,context,replyhandler).md",
-      "hash": "2a53c5a49fbd31852fb58b363618fc5cdd168bbb1a9e08f773373f46432614ec"
+      "hash": "5bf35de0ab3bf7a46dd1c022d1ce1d76b1b63b1e61ff2a06683a18402913b637"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/supportedvolumecapabilities": {
       "file_path": "documentation/FSKit/fsvolume/handler/supportedvolumecapabilities.md",
@@ -2018,7 +2018,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/operations/setattributes(_:on:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/operations/setattributes(_,on,replyhandler).md",
-      "hash": "2101f04ed99dec0195d45782379028bef8bdcc7f5a2a0d0372bf29ac6ce4879f"
+      "hash": "89579b3bcc368cb638314a05819b7422c5c41cd39cf373a1ede43af4cd6459f4"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/pathconfoperations": {
       "file_path": "documentation/FSKit/fsvolume/pathconfoperations.md",
@@ -3418,7 +3418,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsitem/setattributesrequest/consumedattributes.json": {
       "file_path": "documentation/FSKit/fsitem/setattributesrequest/consumedattributes.md",
-      "hash": "782a8a720467a935c66f8f9274c65455d8691cc86f3422d2c6f3eb893656bb85"
+      "hash": "d6a2e67f6c0f724563be7006a57357778651f51b7c8489da1381eb40f49692b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsitem/setattributesrequest/wasattributeconsumed(_:).json": {
       "file_path": "documentation/FSKit/fsitem/setattributesrequest/wasattributeconsumed(_).md",
@@ -4166,7 +4166,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/setattributes(_:on:context:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/handler/setattributes(_,on,context,replyhandler).md",
-      "hash": "2a53c5a49fbd31852fb58b363618fc5cdd168bbb1a9e08f773373f46432614ec"
+      "hash": "5bf35de0ab3bf7a46dd1c022d1ce1d76b1b63b1e61ff2a06683a18402913b637"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/supportedvolumecapabilities.json": {
       "file_path": "documentation/FSKit/fsvolume/handler/supportedvolumecapabilities.md",
@@ -4426,7 +4426,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/operations/setattributes(_:on:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/operations/setattributes(_,on,replyhandler).md",
-      "hash": "2101f04ed99dec0195d45782379028bef8bdcc7f5a2a0d0372bf29ac6ce4879f"
+      "hash": "89579b3bcc368cb638314a05819b7422c5c41cd39cf373a1ede43af4cd6459f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/pathconfoperations.json": {
       "file_path": "documentation/FSKit/fsvolume/pathconfoperations.md",

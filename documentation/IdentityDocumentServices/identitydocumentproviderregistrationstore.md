@@ -61,6 +61,8 @@ The system uses the information you register with this store to appropriately su
   A protocol that defines an identity document registration.
 - [struct MobileDocumentRegistration](./mobiledocumentregistration.md)
   A type you use to register mobile documents.
+- [struct VerifiableCredentialRegistration](./verifiablecredentialregistration.md)
+  A type used for registering SD-JWT verifiable credentials.
 
 
 ---

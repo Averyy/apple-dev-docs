@@ -7,12 +7,12 @@
 Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
-- Mac Catalyst 16.0+ - Deprecated in 27.2
-- macOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 9.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
+- Mac Catalyst 16.0+ - Deprecated in 27.3
+- macOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 9.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`onTapGesture(count:coordinateSpace:perform:)`](./ontapgesture%28count,coordinatespace,perform%29-21n4i.md) instead.
 

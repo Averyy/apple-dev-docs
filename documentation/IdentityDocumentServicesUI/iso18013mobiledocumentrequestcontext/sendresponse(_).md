@@ -21,6 +21,12 @@ func sendResponse(_ responseHandler: @escaping @Sendable (IdentityDocumentWebPre
 
 - `responseHandler`: A handler you use to build the response. This handler provides the raw web presentment request, and returns the ISO 18013 mobile document response.
 
+## See Also
+
+### Responding to the request
+- [func cancel()](./cancel%28%29.md)
+  Cancels the current request from the relying party.
+
 
 ---
 

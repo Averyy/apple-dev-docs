@@ -7,7 +7,7 @@
 Get a list of devices in an organization that enroll using Automated Device Enrollment.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ### Filter devices
 
@@ -70,7 +70,7 @@ curl "https://api-business.apple.com/v1/orgDevices" \
             "12345678901237"
           ],
           "eid": "89049037640158663184237812557346",
-          "purchaseSourceUid": "-2085650007946880",
+          "purchaseSourceId": "-2085650007946880",
           "purchaseSourceType": "APPLE"
         },
         "relationships": {
@@ -148,7 +148,7 @@ curl "https://api-business.apple.com/v1/orgDevices?filter[status]=UNASSIGNED&fil
             "12345678901237"
           ],
           "eid": "89049037640158663184237812557346",
-          "purchaseSourceUid": "-2085650007946880",
+          "purchaseSourceId": "-2085650007946880",
           "purchaseSourceType": "APPLE"
         },
         "relationships": {

@@ -52,13 +52,22 @@ let intent = orderIntent.makeIntent(
   The intent’s identifier.
 - [let bundleIdentifier: String](./appintentdefinition/bundleidentifier.md)
   The bundle identifier of the app that includes this intent.
+### Instance Properties
+- [var expect: IntentValueExpectationCallable<any ResolvableIntentValueExpectation, AppIntentExpectation>](./appintentdefinition/expect.md)
+  A callable that creates an intent expectation from value expectations for the intent’s parameters.
+### Instance Methods
+- [func result(any IntentValueExpectation) -> AppIntentExpectation](./appintentdefinition/result%28_%29.md)
+  Creates an intent expectation that checks the result the intent returns, but none of its parameters.
 
 ## Relationships
 
 ### Conforms To
+- [AppIntentExpectationProviding](./appintentexpectationproviding.md)
+- [Copyable](../Swift/copyable.md)
 - [Decodable](../Swift/decodable.md)
 - [Encodable](../Swift/encodable.md)
 - [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 

@@ -26,6 +26,12 @@ class var dragCopy: NSCursor { get }
 
 The drag copy cursor.
 
+## Discussion
+
+The following image shows the drag copy cursor:
+
+![drag copy cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-drag-copy@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

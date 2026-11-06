@@ -7,9 +7,9 @@
 A type that reads and writes an accessory’s settings.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -80,7 +80,6 @@ When implementing a provider, do the following:
 ### Displaying accessory configuration
 - [protocol HomeAccessorySettingsContainer](./homeaccessorysettingscontainer.md)
   A snapshot of an accessory’s settings and their current values.
-- [struct AnyHomeAccessorySettingsContainer](./anyhomeaccessorysettingscontainer.md)
 - [protocol HomeAccessorySettingsContext](./homeaccessorysettingscontext.md)
   A type that holds the resources that your settings provider needs to communicate with an accessory.
 - [struct HomeAccessorySettings](./homeaccessorysettings.md)

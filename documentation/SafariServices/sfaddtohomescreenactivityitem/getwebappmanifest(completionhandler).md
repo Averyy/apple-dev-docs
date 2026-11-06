@@ -7,10 +7,10 @@
 Provides the web app’s manifest to the system, if the bookmark represents a web app.
 
 **Availability**:
-- iOS 17.5+ - Deprecated in 27.2
-- iPadOS 17.5+ - Deprecated in 27.2
-- Mac Catalyst 17.5+ - Deprecated in 27.2
-- visionOS 1.2+ - Deprecated in 27.2
+- iOS 17.5+ - Deprecated in 27.3
+- iPadOS 17.5+ - Deprecated in 27.3
+- Mac Catalyst 17.5+ - Deprecated in 27.3
+- visionOS 1.2+ - Deprecated in 27.3
 
 > **Deprecated**: Create a SFAddToHomeScreenInfo instead
 

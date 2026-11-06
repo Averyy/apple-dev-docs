@@ -56,7 +56,7 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   A type that contains the unavailable capabilities of the current spatial tracking session.
 ### Body and face tracking
 - [Creating an App for Face-Painting in AR](./creating-an-app-for-face-painting-in-ar.md)
-  Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
+  Combine face detection in RealityKit with PencilKit to implement virtual face-painting.
 - [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
 - [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)

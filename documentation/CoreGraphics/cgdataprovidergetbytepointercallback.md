@@ -33,11 +33,11 @@ A generic pointer to your provider data. By suppling this pointer, you are givin
 
 When Core Graphics needs direct access to your provider data, this function is called.
 
-For information on how to associate your function with a direct-access data provider, see `CGDataProviderCreateDirectAccess` and `CGDataProviderDirectAccessCallbacks`.
+For information on how to associate your function with a direct-access data provider, see [`init(directInfo:size:callbacks:)`](./cgdataprovider/init%28directinfo,size,callbacks%29.md) and [`CGDataProviderDirectCallbacks`](./cgdataproviderdirectcallbacks.md).
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to `CGDataProviderCreateDirectAccess`.
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(directInfo:size:callbacks:)`](./cgdataprovider/init%28directinfo,size,callbacks%29.md).
 
 ## See Also
 

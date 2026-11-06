@@ -7,10 +7,10 @@
 The source associated with the button that created this document.
 
 **Availability**:
-- iOS 27.0+ - Deprecated in 27.2
-- iPadOS 27.0+ - Deprecated in 27.2
-- Mac Catalyst 27.0+ - Deprecated in 27.2
-- visionOS 27.0+ - Deprecated in 27.2
+- iOS 27.0+ - Deprecated in 27.3
+- iPadOS 27.0+ - Deprecated in 27.3
+- Mac Catalyst 27.0+ - Deprecated in 27.3
+- visionOS 27.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the Document protocol and URLDocumentConfiguration.
 

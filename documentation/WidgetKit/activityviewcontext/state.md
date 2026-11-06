@@ -9,6 +9,8 @@ The dynamic content of a Live Activity at the time of its creation.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

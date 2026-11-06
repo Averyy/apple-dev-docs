@@ -9,6 +9,8 @@ The Live Activity is scheduled to start at a specified date but hasn’t started
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

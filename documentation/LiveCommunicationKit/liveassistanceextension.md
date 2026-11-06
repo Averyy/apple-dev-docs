@@ -20,6 +20,10 @@ The protocol you extend to provide live assistance services.
 protocol LiveAssistanceExtension : AppExtension
 ```
 
+## Mentions
+
+- [Providing captioning for a FaceTime call](./providing-captioning-for-a-facetime-call.md)
+
 ## Overview
 
 To provide interpreter, captioning, or other services that work with FaceTime calls, create a container app that uses the [`LiveAssistance`](./liveassistance.md) APIs, as well as an app extension that conforms to this protocol.
@@ -56,6 +60,8 @@ If the extension process crashes mid-invocation, the request fails immediately. 
 ### Conversation assistance
 - [enum LiveAssistance](./liveassistance.md)
   A namespace to collect APIs for use by container apps that provide live assistance services.
+- [Live assistance captioning](./liveassistancecaptioning.md)
+  Use a WebSocket API to perform real-time captioning in a FaceTime call.
 
 
 ---

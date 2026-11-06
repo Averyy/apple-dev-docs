@@ -30,6 +30,8 @@ var inputColumn: ResultColumn<Self.Sample> { get }
 ### Results
 - [struct EvaluationResult](../evaluationresult.md)
   The results of running a model evaluation.
+- [struct EvaluationRunErrors](../evaluationrunerrors.md)
+  A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](../resultcolumn.md)
   A typed descriptor for a column in an evaluation result DataFrame.
 - [var responseColumn: ResultColumn<Self.Subject>](./responsecolumn.md)

@@ -510,7 +510,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/scheduling-an-alarm-with-alarmkit": {
       "file_path": "documentation/AlarmKit/scheduling-an-alarm-with-alarmkit.md",
-      "hash": "091901bd3289d0f9c0988c919a920241a902a8ba6171e6ee6f59cbe13c402bde"
+      "hash": "0ade547119083a835f5796e5f6537b21183a3fc866ac2914ae16257d4124bbe8"
     },
     "https://developer.apple.com/tutorials/data/documentation/AlarmKit.json": {
       "file_path": "documentation/AlarmKit/AlarmKit.md",
@@ -1022,7 +1022,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/scheduling-an-alarm-with-alarmkit.json": {
       "file_path": "documentation/AlarmKit/scheduling-an-alarm-with-alarmkit.md",
-      "hash": "091901bd3289d0f9c0988c919a920241a902a8ba6171e6ee6f59cbe13c402bde"
+      "hash": "0ade547119083a835f5796e5f6537b21183a3fc866ac2914ae16257d4124bbe8"
     }
   },
   "metadata": {

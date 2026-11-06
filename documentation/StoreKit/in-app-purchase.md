@@ -67,6 +67,13 @@ To support a store in your app, implement the following functionality:
   Information about an auto-renewable subscription.
 - [typealias SubscriptionStatus](./subscriptionstatus.md)
   Represents the renewal status information for an auto-renewable subscription.
+### Multiseat subscriptions
+- [Supporting multiseat purchases in your app](./supporting-multiseat-purchases-in-your-app.md)
+  Configure, merchandise, and sell subscriptions that people buy for a group or that organizations buy in volume, and grant access to every seat.
+- [Hosting group invitations in your app](./hosting-group-invitations-in-your-app.md)
+  Run your own invitation flow for group subscriptions, and keep the App Store informed of which seats your members hold.
+- [Managing the life cycle of multiseat subscriptions](./managing-the-life-cycle-of-multiseat-subscriptions.md)
+  Handle added and removed seats, member changes, plan changes, cancellations, billing issues, refunds, and price changes for multiseat subscriptions.
 ### Purchase requests and results
 - [struct PurchaseAction](./purchaseaction.md)
   An action that starts an Apple In-App Purchase.

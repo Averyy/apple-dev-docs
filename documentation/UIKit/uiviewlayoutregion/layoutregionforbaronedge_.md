@@ -9,6 +9,9 @@ Returns a bar layout region on a given edge using the default system bar extent.
 **Availability**:
 - iOS 27.2+
 - iPadOS 27.2+
+- Mac Catalyst 27.2+
+- tvOS 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

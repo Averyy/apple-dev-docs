@@ -44,6 +44,8 @@ let coffee: AnyAppEntity = try result.value.as(CoffeeEntity)
   Casts a property to the provided type.
 - [func `as`<IntentType>(IntentType) throws -> IntentType.Instance](./dynamicpropertypath/as%28_%29-6n9rh.md)
   Casts the value to the given type.
+- [func get<T>(as: T.Type) async throws -> T](./dynamicpropertypath/get%28as%29.md)
+  Resolves the value at this path, fetching it from the app if any hop along the way is deferred.
 ### Subscripts
 - [subscript(Int) -> (any IntentValueExpressing)?](./dynamicpropertypath/subscript%28_%29-1hj9z.md)
   Accesses a collection element by index, without casting.

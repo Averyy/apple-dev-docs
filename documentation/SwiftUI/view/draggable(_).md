@@ -4,16 +4,23 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Activates this view as the source of a drag and drop operation.
+Activates this view as the source of a drag and drop operation, preserving the identifier of the dragged item.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- visionOS 1.0+
+- iOS 27.3+ (Beta)
+- iPadOS 27.3+ (Beta)
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
+- visionOS 27.3+ (Beta)
 
 ## Declaration
+
+```swift
+nonisolated
+func draggable<Item>(_ item: @autoclosure @escaping () -> Item) -> some View where Item : Transferable, Item : Identifiable, Item.ID : Sendable
+```
+
+**Other overloads**:
 
 ```swift
 nonisolated
@@ -32,19 +39,24 @@ A view that activates this view as the source of a drag and drop operation, begi
 
 Applying the `draggable(_:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of this view is generated and used as the preview image.
 
-To customize the default preview, apply a [`contentShape(_:_:eoFill:)`](./contentshape%28_,_,eofill%29.md) with a [`dragPreview`](../contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
+Because the item conforms to `Identifiable`, SwiftUI stores its identifier in the drag session. Drop destinations in the same app read it through [`draggedItemIDs(for:)`](../dropsession/localsession-swift.struct/draggeditemids%28for%29.md), and an enclosing [`dragContainer(for:in:_:)`](./dragcontainer%28for,in,_%29.md) uses it to identify this item.
 
-> ❗ **Important**: Don’t perform work on the main actor while exporting the item. Doing so isn’t supported and might cause a hang. Make sure `T`‘s exporting closure doesn’t dispatch to the main actor.
+```swift
+ForEach(books) { book in
+    BookRow(book)
+        .draggable(book)
+}
+```
 
 ## Parameters
 
-- `payload`: A closure that returns a single instance or a value conforming to [`Transferable`](../../CoreTransferable/transferable.md) that represents the draggable data from this view.
+- `item`: The item to drag.
 
 ## See Also
 
 ### Moving transferable items
-- [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](./draggable%28_,preview%29.md)
-  Activates this view as the source of a drag and drop operation.
+- [func draggable(_:preview:)](./draggable%28_,preview%29.md)
+  Activates this view as the source of a drag and drop operation with a custom preview, preserving the identifier of the dragged item.
 - [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,containernamespace,_%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
 - [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,id,containernamespace,_%29.md)

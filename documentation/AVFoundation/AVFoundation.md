@@ -92,6 +92,10 @@ AVFoundation combines several major technology areas that together encompass a w
 - [AVCaptureDeviceTypeBuiltInOuterUltraWideCamera](./avcapturedevice/devicetype-swift.struct/builtinouterultrawidecamera.md)
 - [AVMediaCharacteristicSignLanguageInterpretationForAccessibility](./avmediacharacteristic/signlanguageinterpretationforaccessibility.md)
   A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
+- [AVMetadataIdentifierISOUserDataAudioStreamLoudness](./avmetadataidentifier/isouserdataaudiostreamloudness.md)
+- [AVMetadataIdentifierISOUserDataContentTypeForLoudnessControl](./avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol.md)
+- [AVMetadataIdentifierQuickTimeUserDataAudioStreamLoudness](./avmetadataidentifier/quicktimeuserdataaudiostreamloudness.md)
+- [AVMetadataIdentifierQuickTimeUserDataContentTypeForLoudnessControl](./avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol.md)
 - [AVMetadataObjectTypeCinematicVideoMetadata](./avmetadataobject/objecttype/cinematicvideometadata.md)
   A constant that identifies Cinematic video metadata for post-capture Cinematic video editing.
 - [AVMetadataObjectTypeFocusTrackedObject](./avmetadataobject/objecttype/focustrackedobject.md)

@@ -7,11 +7,11 @@
 The number of bars of connectivity to the cellular network.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.15+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`SignalBars`](../signalbars.md) instead.
 

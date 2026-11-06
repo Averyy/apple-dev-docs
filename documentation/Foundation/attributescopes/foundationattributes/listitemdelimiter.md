@@ -16,7 +16,7 @@
 ## Declaration
 
 ```swift
-let listItemDelimiter: AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute
+var listItemDelimiter: AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute { get }
 ```
 
 

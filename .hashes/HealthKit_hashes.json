@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/HealthKit": {
       "file_path": "documentation/HealthKit/HealthKit.md",
-      "hash": "63c2c0b688d3dde4bbc969eb33b072607cdbcb322459582e598a765a21d1f785"
+      "hash": "072143f24e69c6dfb331b5cd50204346c8837341525c7110a81169821ff269a1"
     },
     "https://developer.apple.com/documentation/healthkit/about-the-healthkit-framework": {
       "file_path": "documentation/HealthKit/about-the-healthkit-framework.md",
@@ -194,7 +194,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkactivitysummary/appleexercisetimegoal": {
       "file_path": "documentation/HealthKit/hkactivitysummary/appleexercisetimegoal.md",
-      "hash": "79606a5dfc2df01a69e53eef8cd783d3df811f0a58e4aec50d11a2803fc8f5d1"
+      "hash": "d997f4e7fd4b4f0276d8dbd14571b7e89e9bb49f5782970a0cebc9e28c9ef794"
     },
     "https://developer.apple.com/documentation/healthkit/hkactivitysummary/applemovetime": {
       "file_path": "documentation/HealthKit/hkactivitysummary/applemovetime.md",
@@ -210,7 +210,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkactivitysummary/applestandhoursgoal": {
       "file_path": "documentation/HealthKit/hkactivitysummary/applestandhoursgoal.md",
-      "hash": "70bb48ebe6d017836244236b5868e1cdf7bac0ec193c38a275b127a85faeb744"
+      "hash": "7ad5fecf47aba8e683fd6955e3910baf278d1dc27eb6aa6de46215c153a7aa2e"
     },
     "https://developer.apple.com/documentation/healthkit/hkactivitysummary/datecomponents(for:)": {
       "file_path": "documentation/HealthKit/hkactivitysummary/datecomponents(for).md",
@@ -1758,7 +1758,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier.md",
-      "hash": "10b1af97de48ee3f0ca1c70b1188eb7507736d849420b60e16485d997a2cec5c"
+      "hash": "6a9dffe7209b494612164345a1d22c963bc2508e33e45d206c5d4d41aaee082e"
     },
     "https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier/activitymovemode": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/activitymovemode.md",
@@ -1783,6 +1783,10 @@
     "https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier/init(rawvalue:)": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/init(rawvalue).md",
       "hash": "6c2bb15989cca06745cc2f7810a2045e28575bb4f52590e544df94ef1a8e5de1"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier/referencesex": {
+      "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/referencesex.md",
+      "hash": "766332959314b0956c9b748c0f1960676c010cf55f0ced6768bd358954e20688"
     },
     "https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier/wheelchairuse": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/wheelchairuse.md",
@@ -2494,7 +2498,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkerror/code/noerror": {
       "file_path": "documentation/HealthKit/hkerror/code/noerror.md",
-      "hash": "618ecc89175af44fa953208191881c664993238e772ebc0cb3ef41badfe7391c"
+      "hash": "4d04202c15803e59a40c5d2691bbf5648f04593070df1b33b9f180864a7df999"
     },
     "https://developer.apple.com/documentation/healthkit/hkerror/code/unknownerror": {
       "file_path": "documentation/HealthKit/hkerror/code/unknownerror.md",
@@ -2566,7 +2570,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkerror/noerror": {
       "file_path": "documentation/HealthKit/hkerror/noerror.md",
-      "hash": "c7581ad0e1aff1682eb26ce1b6f381f09cb7b65bdd5792d4c2de617a20e97c9a"
+      "hash": "dce17230fb72dcff1c72e220b25e9acf4395885e989b15a79eb7beb2d70f9ef8"
     },
     "https://developer.apple.com/documentation/healthkit/hkerror/unknownerror": {
       "file_path": "documentation/HealthKit/hkerror/unknownerror.md",
@@ -2574,7 +2578,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkerrorcode/hknoerror": {
       "file_path": "documentation/HealthKit/hkerrorcode/hknoerror.md",
-      "hash": "16b32a790ac8e9419d22d8111fd1804a83e0df029bdac1730bbc6b710cafe3bd"
+      "hash": "ff7c71a5432f1a45fa3c3adfcfe7f98cba1d51d91fa470a632f2c9777d4c585d"
     },
     "https://developer.apple.com/documentation/healthkit/hkerrordomain": {
       "file_path": "documentation/HealthKit/hkerrordomain.md",
@@ -2918,7 +2922,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore": {
       "file_path": "documentation/HealthKit/hkhealthstore.md",
-      "hash": "ecc466a1c52e2439ac9b80844e04b9f8806facad8a3473218e9037754f237bcb"
+      "hash": "fb8d533db5798c0c1d76097df904a293b4565fa918280b27097707d3b0d94d67"
     },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/activitymovemode()": {
       "file_path": "documentation/HealthKit/hkhealthstore/activitymovemode().md",
@@ -2996,6 +3000,10 @@
       "file_path": "documentation/HealthKit/hkhealthstore/getearliestauthorizedsampledate(for,completion).md",
       "hash": "e6a0b6133f035d3a16e386600266c5f01c78790369a6117a9c5ae766d6d48e3a"
     },
+    "https://developer.apple.com/documentation/healthkit/hkhealthstore/getreferencesex:error:": {
+      "file_path": "documentation/HealthKit/hkhealthstore/getreferencesex_error_.md",
+      "hash": "0e9dfd652016dbe3326dea3e2fd421696f2cd8d14108e398b5f8f98b88839bd0"
+    },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:)": {
       "file_path": "documentation/HealthKit/hkhealthstore/getrequeststatusforauthorization(toshare,read,completion).md",
       "hash": "a06becfc0718e0b06df26bfbb085b3c503463dccea3851b5b9158e2eab7c5782"
@@ -3031,6 +3039,10 @@
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/recoveractiveworkoutsession(completion:)": {
       "file_path": "documentation/HealthKit/hkhealthstore/recoveractiveworkoutsession(completion).md",
       "hash": "78ede00e235b0df30efdf6386cb9360f22e9af78d92943d50395587453794284"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkhealthstore/referencesex": {
+      "file_path": "documentation/HealthKit/hkhealthstore/referencesex.md",
+      "hash": "255a57a76ac547238974dbc6553dc2abbbf5cf3a1603cecaf3946b1a97d30261"
     },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/relateworkouteffortsample(_:with:activity:completion:)": {
       "file_path": "documentation/HealthKit/hkhealthstore/relateworkouteffortsample(_,with,activity,completion).md",
@@ -3214,7 +3226,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkheartraterecoverytesttype/steptest": {
       "file_path": "documentation/HealthKit/hkheartraterecoverytesttype/steptest.md",
-      "hash": "8932df980f924440820f3e85dcd6814f863fdd05df3b7a1c9f8009ae55af2975"
+      "hash": "f2e58194be8db82dd70cc7c499cf752c4311a7d2af9d96b2f5fa8801e10b32d9"
     },
     "https://developer.apple.com/documentation/healthkit/hkheartratesensorlocation": {
       "file_path": "documentation/HealthKit/hkheartratesensorlocation.md",
@@ -3994,23 +4006,23 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/categorytype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/categorytype(foridentifier).md",
-      "hash": "cd14a66579f86865f9d33da3c36507a2f43f964778479343b5ec8ecd829a7901"
+      "hash": "07432647a0f0ec675fad2ab6d1d62e549f93083f589878c70a62a00b1d96107f"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/characteristictype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/characteristictype(foridentifier).md",
-      "hash": "3ec1c46b0402939a45e88111448ba0fbbc73dad2a5384416868f6cc4ac50fd47"
+      "hash": "5c62ed4cc449ab80afff4db7ac1384b0802819060cb967db8dfb1fa28c09f5b1"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/clinicaltype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/clinicaltype(foridentifier).md",
-      "hash": "dc9e4a5b8bec2056410e67d28a5bc9fe66746cc42d91076f31090ffbf65fd989"
+      "hash": "d945b48bd35e962921afa32c9f61c2c95cd2702796eed927424881f4f3f5df40"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/correlationtype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/correlationtype(foridentifier).md",
-      "hash": "8902f8eb7f38d50eb34cc61c734b9c58c41e7da98ab804e2d1380a8e73c6f15b"
+      "hash": "98f5beed182d49e2f23614efe52433b1d6af99e3570aeb701451f01a74f73232"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/documenttype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/documenttype(foridentifier).md",
-      "hash": "087365ae3ecfc1be25d3b7e1ef5dc324cf8fab38a4a8d91bc325b44d73478e83"
+      "hash": "8cf0b60dfac4ca062e03b4049da9f94d8ccb12aa5699bb134645ba60c437cb1d"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/electrocardiogramtype()": {
       "file_path": "documentation/HealthKit/hkobjecttype/electrocardiogramtype().md",
@@ -4030,7 +4042,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:)": {
       "file_path": "documentation/HealthKit/hkobjecttype/quantitytype(foridentifier).md",
-      "hash": "c27258838563e0b8f5b9ea495dd62a7763b66d0d67156699b0e88727dc7855d1"
+      "hash": "0d827b7dadd51bee18cc654e913bc505d46bb7868815dbc1734145906631b412"
     },
     "https://developer.apple.com/documentation/healthkit/hkobjecttype/requiresperobjectauthorization()": {
       "file_path": "documentation/HealthKit/hkobjecttype/requiresperobjectauthorization().md",
@@ -4374,7 +4386,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkpredicatekeypathworkouttotaldistance": {
       "file_path": "documentation/HealthKit/hkpredicatekeypathworkouttotaldistance.md",
-      "hash": "d4bf1aa42fb53ef18fcce23653f2c31104f760918659991ba1c39c6c7cce3e28"
+      "hash": "1f12e8aeefba578d36b55dcb42875f8e6fa3d89be6039d538a318978eb00b4f7"
     },
     "https://developer.apple.com/documentation/healthkit/hkpredicatekeypathworkouttotalenergyburned": {
       "file_path": "documentation/HealthKit/hkpredicatekeypathworkouttotalenergyburned.md",
@@ -4654,7 +4666,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier.md",
-      "hash": "5fb61e26745557367ba7b25a4920e9ed74fe9ed211dab56b194c95b030eea7ed"
+      "hash": "15ab3aed88a0187e9240b0509353f4ebf6b1076cdc6e9427f4e78db5f12ee5f7"
     },
     "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/activeenergyburned": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/activeenergyburned.md",
@@ -4992,6 +5004,10 @@
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/height.md",
       "hash": "1a6329117ac31fa104c64466ef77ce18891fbe8fd0764642605d354ec0dcb7f1"
     },
+    "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/hipcircumference": {
+      "file_path": "documentation/HealthKit/hkquantitytypeidentifier/hipcircumference.md",
+      "hash": "7bbe6dd7e8bcf762eb3ffc52cd8d9e751a95b51ad5ecfff5ef4b7df73a7b1972"
+    },
     "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/inhalerusage": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/inhalerusage.md",
       "hash": "eebcdb87e78ea243301c4bc89387176d830ad42831ec02892fb7204e43120a6d"
@@ -5166,7 +5182,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkquery/predicateforcategorysamples(with:value:)": {
       "file_path": "documentation/HealthKit/hkquery/predicateforcategorysamples(with,value).md",
-      "hash": "a239b3bde88c8f388412ec45cb390de3824afc150ef54363c1dafc3f2960dfde"
+      "hash": "f16a7a83ee5bedf2a0c194a5667aff4c0af5240a1b96f65fe04cca04c862a315"
     },
     "https://developer.apple.com/documentation/healthkit/hkquery/predicateforcategorysamplesequaltovalues:": {
       "file_path": "documentation/HealthKit/hkquery/predicateforcategorysamplesequaltovalues_.md",
@@ -5366,7 +5382,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkquery/predicateforworkouts(with:totaldistance:)": {
       "file_path": "documentation/HealthKit/hkquery/predicateforworkouts(with,totaldistance).md",
-      "hash": "629b3ce51e9f94d7021a8e260728d00eec807e48e38a4f35199a2d00bcc3f7e7"
+      "hash": "883168530c3e5cd1f57b815f5580a47d8383261c9979e9d0c9e5e67a7bebcc58"
     },
     "https://developer.apple.com/documentation/healthkit/hkquery/predicateforworkouts(with:totalenergyburned:)": {
       "file_path": "documentation/HealthKit/hkquery/predicateforworkouts(with,totalenergyburned).md",
@@ -5435,6 +5451,26 @@
     "https://developer.apple.com/documentation/healthkit/hkqueryoptions/strictstartdate": {
       "file_path": "documentation/HealthKit/hkqueryoptions/strictstartdate.md",
       "hash": "f85c40790df147bf8e7035af37fa1744f2adb6aaafde1486249b094eefd3bf4b"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkreferencesex": {
+      "file_path": "documentation/HealthKit/hkreferencesex.md",
+      "hash": "97d0dbde2d228a9a39b27dd97a63a228532478f13466fa9e45c2b34a665b4a0c"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkreferencesex/female": {
+      "file_path": "documentation/HealthKit/hkreferencesex/female.md",
+      "hash": "5bd60b9e9a696bb329942729edcfbf88f65ae167c10a1cade40d5d7a8e80e4e2"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkreferencesex/init(rawvalue:)": {
+      "file_path": "documentation/HealthKit/hkreferencesex/init(rawvalue).md",
+      "hash": "18a8e19e898237d2160a0e58b730c1bac535b9510fbc1d2dfb9d1ad441d97dfa"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkreferencesex/male": {
+      "file_path": "documentation/HealthKit/hkreferencesex/male.md",
+      "hash": "60861a5f9a7d49e12a844ed5cfb15b0880a0980985fa785cb1afa9e711c7bfa9"
+    },
+    "https://developer.apple.com/documentation/healthkit/hkreferencesex/notset": {
+      "file_path": "documentation/HealthKit/hkreferencesex/notset.md",
+      "hash": "9c16905ccfca5ce88bf581da0e2b3fa4ee5ae82bdf5ce85374e93093306f51a9"
     },
     "https://developer.apple.com/documentation/healthkit/hksample": {
       "file_path": "documentation/HealthKit/hksample.md",
@@ -7366,7 +7402,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkworkout/totaldistance": {
       "file_path": "documentation/HealthKit/hkworkout/totaldistance.md",
-      "hash": "611c4ff5e0651f70e42270ec8cfed0da10af1d1c2427ac649045e4050c5acb18"
+      "hash": "4745f6beef2533e2c348a0af4aa2cd35375743144ec48cb553d627458f4cf375"
     },
     "https://developer.apple.com/documentation/healthkit/hkworkout/totalenergyburned": {
       "file_path": "documentation/HealthKit/hkworkout/totalenergyburned.md",
@@ -8602,7 +8638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/HealthKit.json": {
       "file_path": "documentation/HealthKit/HealthKit.md",
-      "hash": "63c2c0b688d3dde4bbc969eb33b072607cdbcb322459582e598a765a21d1f785"
+      "hash": "072143f24e69c6dfb331b5cd50204346c8837341525c7110a81169821ff269a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/about-the-healthkit-framework.json": {
       "file_path": "documentation/HealthKit/about-the-healthkit-framework.md",
@@ -8794,7 +8830,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkactivitysummary/appleexercisetimegoal.json": {
       "file_path": "documentation/HealthKit/hkactivitysummary/appleexercisetimegoal.md",
-      "hash": "79606a5dfc2df01a69e53eef8cd783d3df811f0a58e4aec50d11a2803fc8f5d1"
+      "hash": "d997f4e7fd4b4f0276d8dbd14571b7e89e9bb49f5782970a0cebc9e28c9ef794"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkactivitysummary/applemovetime.json": {
       "file_path": "documentation/HealthKit/hkactivitysummary/applemovetime.md",
@@ -8810,7 +8846,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkactivitysummary/applestandhoursgoal.json": {
       "file_path": "documentation/HealthKit/hkactivitysummary/applestandhoursgoal.md",
-      "hash": "70bb48ebe6d017836244236b5868e1cdf7bac0ec193c38a275b127a85faeb744"
+      "hash": "7ad5fecf47aba8e683fd6955e3910baf278d1dc27eb6aa6de46215c153a7aa2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkactivitysummary/datecomponents(for:).json": {
       "file_path": "documentation/HealthKit/hkactivitysummary/datecomponents(for).md",
@@ -10358,7 +10394,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkcharacteristictypeidentifier.json": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier.md",
-      "hash": "10b1af97de48ee3f0ca1c70b1188eb7507736d849420b60e16485d997a2cec5c"
+      "hash": "6a9dffe7209b494612164345a1d22c963bc2508e33e45d206c5d4d41aaee082e"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkcharacteristictypeidentifier/activitymovemode.json": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/activitymovemode.md",
@@ -10383,6 +10419,10 @@
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkcharacteristictypeidentifier/init(rawvalue:).json": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/init(rawvalue).md",
       "hash": "6c2bb15989cca06745cc2f7810a2045e28575bb4f52590e544df94ef1a8e5de1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkcharacteristictypeidentifier/referencesex.json": {
+      "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/referencesex.md",
+      "hash": "766332959314b0956c9b748c0f1960676c010cf55f0ced6768bd358954e20688"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkcharacteristictypeidentifier/wheelchairuse.json": {
       "file_path": "documentation/HealthKit/hkcharacteristictypeidentifier/wheelchairuse.md",
@@ -11094,7 +11134,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerror/code/noerror.json": {
       "file_path": "documentation/HealthKit/hkerror/code/noerror.md",
-      "hash": "618ecc89175af44fa953208191881c664993238e772ebc0cb3ef41badfe7391c"
+      "hash": "4d04202c15803e59a40c5d2691bbf5648f04593070df1b33b9f180864a7df999"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerror/code/unknownerror.json": {
       "file_path": "documentation/HealthKit/hkerror/code/unknownerror.md",
@@ -11166,7 +11206,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerror/noerror.json": {
       "file_path": "documentation/HealthKit/hkerror/noerror.md",
-      "hash": "c7581ad0e1aff1682eb26ce1b6f381f09cb7b65bdd5792d4c2de617a20e97c9a"
+      "hash": "dce17230fb72dcff1c72e220b25e9acf4395885e989b15a79eb7beb2d70f9ef8"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerror/unknownerror.json": {
       "file_path": "documentation/HealthKit/hkerror/unknownerror.md",
@@ -11174,7 +11214,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerrorcode/hknoerror.json": {
       "file_path": "documentation/HealthKit/hkerrorcode/hknoerror.md",
-      "hash": "16b32a790ac8e9419d22d8111fd1804a83e0df029bdac1730bbc6b710cafe3bd"
+      "hash": "ff7c71a5432f1a45fa3c3adfcfe7f98cba1d51d91fa470a632f2c9777d4c585d"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerrordomain.json": {
       "file_path": "documentation/HealthKit/hkerrordomain.md",
@@ -11518,7 +11558,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore.json": {
       "file_path": "documentation/HealthKit/hkhealthstore.md",
-      "hash": "ecc466a1c52e2439ac9b80844e04b9f8806facad8a3473218e9037754f237bcb"
+      "hash": "fb8d533db5798c0c1d76097df904a293b4565fa918280b27097707d3b0d94d67"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/activitymovemode().json": {
       "file_path": "documentation/HealthKit/hkhealthstore/activitymovemode().md",
@@ -11596,6 +11636,10 @@
       "file_path": "documentation/HealthKit/hkhealthstore/getearliestauthorizedsampledate(for,completion).md",
       "hash": "e6a0b6133f035d3a16e386600266c5f01c78790369a6117a9c5ae766d6d48e3a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getreferencesex:error:.json": {
+      "file_path": "documentation/HealthKit/hkhealthstore/getreferencesex_error_.md",
+      "hash": "0e9dfd652016dbe3326dea3e2fd421696f2cd8d14108e398b5f8f98b88839bd0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:).json": {
       "file_path": "documentation/HealthKit/hkhealthstore/getrequeststatusforauthorization(toshare,read,completion).md",
       "hash": "a06becfc0718e0b06df26bfbb085b3c503463dccea3851b5b9158e2eab7c5782"
@@ -11631,6 +11675,10 @@
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/recoveractiveworkoutsession(completion:).json": {
       "file_path": "documentation/HealthKit/hkhealthstore/recoveractiveworkoutsession(completion).md",
       "hash": "78ede00e235b0df30efdf6386cb9360f22e9af78d92943d50395587453794284"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/referencesex.json": {
+      "file_path": "documentation/HealthKit/hkhealthstore/referencesex.md",
+      "hash": "255a57a76ac547238974dbc6553dc2abbbf5cf3a1603cecaf3946b1a97d30261"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/relateworkouteffortsample(_:with:activity:completion:).json": {
       "file_path": "documentation/HealthKit/hkhealthstore/relateworkouteffortsample(_,with,activity,completion).md",
@@ -11814,7 +11862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkheartraterecoverytesttype/steptest.json": {
       "file_path": "documentation/HealthKit/hkheartraterecoverytesttype/steptest.md",
-      "hash": "8932df980f924440820f3e85dcd6814f863fdd05df3b7a1c9f8009ae55af2975"
+      "hash": "f2e58194be8db82dd70cc7c499cf752c4311a7d2af9d96b2f5fa8801e10b32d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkheartratesensorlocation.json": {
       "file_path": "documentation/HealthKit/hkheartratesensorlocation.md",
@@ -12594,23 +12642,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/categorytype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/categorytype(foridentifier).md",
-      "hash": "cd14a66579f86865f9d33da3c36507a2f43f964778479343b5ec8ecd829a7901"
+      "hash": "07432647a0f0ec675fad2ab6d1d62e549f93083f589878c70a62a00b1d96107f"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/characteristictype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/characteristictype(foridentifier).md",
-      "hash": "3ec1c46b0402939a45e88111448ba0fbbc73dad2a5384416868f6cc4ac50fd47"
+      "hash": "5c62ed4cc449ab80afff4db7ac1384b0802819060cb967db8dfb1fa28c09f5b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/clinicaltype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/clinicaltype(foridentifier).md",
-      "hash": "dc9e4a5b8bec2056410e67d28a5bc9fe66746cc42d91076f31090ffbf65fd989"
+      "hash": "d945b48bd35e962921afa32c9f61c2c95cd2702796eed927424881f4f3f5df40"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/correlationtype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/correlationtype(foridentifier).md",
-      "hash": "8902f8eb7f38d50eb34cc61c734b9c58c41e7da98ab804e2d1380a8e73c6f15b"
+      "hash": "98f5beed182d49e2f23614efe52433b1d6af99e3570aeb701451f01a74f73232"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/documenttype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/documenttype(foridentifier).md",
-      "hash": "087365ae3ecfc1be25d3b7e1ef5dc324cf8fab38a4a8d91bc325b44d73478e83"
+      "hash": "8cf0b60dfac4ca062e03b4049da9f94d8ccb12aa5699bb134645ba60c437cb1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/electrocardiogramtype().json": {
       "file_path": "documentation/HealthKit/hkobjecttype/electrocardiogramtype().md",
@@ -12630,7 +12678,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:).json": {
       "file_path": "documentation/HealthKit/hkobjecttype/quantitytype(foridentifier).md",
-      "hash": "c27258838563e0b8f5b9ea495dd62a7763b66d0d67156699b0e88727dc7855d1"
+      "hash": "0d827b7dadd51bee18cc654e913bc505d46bb7868815dbc1734145906631b412"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkobjecttype/requiresperobjectauthorization().json": {
       "file_path": "documentation/HealthKit/hkobjecttype/requiresperobjectauthorization().md",
@@ -12974,7 +13022,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkpredicatekeypathworkouttotaldistance.json": {
       "file_path": "documentation/HealthKit/hkpredicatekeypathworkouttotaldistance.md",
-      "hash": "d4bf1aa42fb53ef18fcce23653f2c31104f760918659991ba1c39c6c7cce3e28"
+      "hash": "1f12e8aeefba578d36b55dcb42875f8e6fa3d89be6039d538a318978eb00b4f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkpredicatekeypathworkouttotalenergyburned.json": {
       "file_path": "documentation/HealthKit/hkpredicatekeypathworkouttotalenergyburned.md",
@@ -13254,7 +13302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier.md",
-      "hash": "5fb61e26745557367ba7b25a4920e9ed74fe9ed211dab56b194c95b030eea7ed"
+      "hash": "15ab3aed88a0187e9240b0509353f4ebf6b1076cdc6e9427f4e78db5f12ee5f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier/activeenergyburned.json": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/activeenergyburned.md",
@@ -13592,6 +13640,10 @@
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/height.md",
       "hash": "1a6329117ac31fa104c64466ef77ce18891fbe8fd0764642605d354ec0dcb7f1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier/hipcircumference.json": {
+      "file_path": "documentation/HealthKit/hkquantitytypeidentifier/hipcircumference.md",
+      "hash": "7bbe6dd7e8bcf762eb3ffc52cd8d9e751a95b51ad5ecfff5ef4b7df73a7b1972"
+    },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier/inhalerusage.json": {
       "file_path": "documentation/HealthKit/hkquantitytypeidentifier/inhalerusage.md",
       "hash": "eebcdb87e78ea243301c4bc89387176d830ad42831ec02892fb7204e43120a6d"
@@ -13766,7 +13818,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquery/predicateforcategorysamples(with:value:).json": {
       "file_path": "documentation/HealthKit/hkquery/predicateforcategorysamples(with,value).md",
-      "hash": "a239b3bde88c8f388412ec45cb390de3824afc150ef54363c1dafc3f2960dfde"
+      "hash": "f16a7a83ee5bedf2a0c194a5667aff4c0af5240a1b96f65fe04cca04c862a315"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquery/predicateforcategorysamplesequaltovalues:.json": {
       "file_path": "documentation/HealthKit/hkquery/predicateforcategorysamplesequaltovalues_.md",
@@ -13966,7 +14018,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquery/predicateforworkouts(with:totaldistance:).json": {
       "file_path": "documentation/HealthKit/hkquery/predicateforworkouts(with,totaldistance).md",
-      "hash": "629b3ce51e9f94d7021a8e260728d00eec807e48e38a4f35199a2d00bcc3f7e7"
+      "hash": "883168530c3e5cd1f57b815f5580a47d8383261c9979e9d0c9e5e67a7bebcc58"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkquery/predicateforworkouts(with:totalenergyburned:).json": {
       "file_path": "documentation/HealthKit/hkquery/predicateforworkouts(with,totalenergyburned).md",
@@ -14035,6 +14087,26 @@
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkqueryoptions/strictstartdate.json": {
       "file_path": "documentation/HealthKit/hkqueryoptions/strictstartdate.md",
       "hash": "f85c40790df147bf8e7035af37fa1744f2adb6aaafde1486249b094eefd3bf4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkreferencesex.json": {
+      "file_path": "documentation/HealthKit/hkreferencesex.md",
+      "hash": "97d0dbde2d228a9a39b27dd97a63a228532478f13466fa9e45c2b34a665b4a0c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkreferencesex/female.json": {
+      "file_path": "documentation/HealthKit/hkreferencesex/female.md",
+      "hash": "5bd60b9e9a696bb329942729edcfbf88f65ae167c10a1cade40d5d7a8e80e4e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkreferencesex/init(rawvalue:).json": {
+      "file_path": "documentation/HealthKit/hkreferencesex/init(rawvalue).md",
+      "hash": "18a8e19e898237d2160a0e58b730c1bac535b9510fbc1d2dfb9d1ad441d97dfa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkreferencesex/male.json": {
+      "file_path": "documentation/HealthKit/hkreferencesex/male.md",
+      "hash": "60861a5f9a7d49e12a844ed5cfb15b0880a0980985fa785cb1afa9e711c7bfa9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/healthkit/hkreferencesex/notset.json": {
+      "file_path": "documentation/HealthKit/hkreferencesex/notset.md",
+      "hash": "9c16905ccfca5ce88bf581da0e2b3fa4ee5ae82bdf5ce85374e93093306f51a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hksample.json": {
       "file_path": "documentation/HealthKit/hksample.md",
@@ -15966,7 +16038,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkworkout/totaldistance.json": {
       "file_path": "documentation/HealthKit/hkworkout/totaldistance.md",
-      "hash": "611c4ff5e0651f70e42270ec8cfed0da10af1d1c2427ac649045e4050c5acb18"
+      "hash": "4745f6beef2533e2c348a0af4aa2cd35375743144ec48cb553d627458f4cf375"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkworkout/totalenergyburned.json": {
       "file_path": "documentation/HealthKit/hkworkout/totalenergyburned.md",
@@ -17208,6 +17280,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 4300
+    "total_pages": 4318
   }
 }

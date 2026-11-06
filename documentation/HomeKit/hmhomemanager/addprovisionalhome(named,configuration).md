@@ -7,8 +7,10 @@
 Adds a temporary provisional home while someone performs HomeKit installation services for a client.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

@@ -216,7 +216,10 @@ Use [`WebPage`](./webpage.md) to programmatically navigate to various types of r
 - [WebPage.FormInfo](./webpage/forminfo.md)
   A type that contains information about a form submission from a webpage.
 - [WebPage.ImmersiveEnvironment](./webpage/immersiveenvironment.md)
-  An object representing a website-provided immersive environment that is ready for presentation.
+  An object that represents a website-provided immersive environment ready for presentation.
+### Instance Properties
+- [var qualifiedServerTrust: SecTrust?](./webpage/qualifiedservertrust.md)
+  The trust management object for the 2-QWAC of the currently committed navigation.
 
 ## Relationships
 

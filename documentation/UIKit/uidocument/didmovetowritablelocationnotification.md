@@ -23,6 +23,16 @@ class let didMoveToWritableLocationNotification: NSNotification.Name
 extern NSNotificationName const UIDocumentDidMoveToWritableLocationNotification;
 ```
 
+## See Also
+
+### Notifications
+- [class let stateChangedNotification: NSNotification.Name](./statechangednotification.md)
+  A notification the document object posts when there’s a change in the state of the document.
+- [UIDocument.StateChangedMessage](./statechangedmessage.md)
+- [UIDocument.DidMoveToWritableLocationMessage](./didmovetowritablelocationmessage.md)
+- [class let didMoveToWritableLocationOldURLKey: String](./didmovetowritablelocationoldurlkey.md)
+  The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` dictionary that contains the previous readonly file URL.
+
 
 ---
 

@@ -7,12 +7,12 @@
 Presents an action sheet using the given item as a data source for the sheet’s content.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
-- Mac Catalyst 13.0+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 6.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
+- Mac Catalyst 13.0+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)`](./confirmationdialog%28_,ispresented,titlevisibility,presenting,actions,message%29-8y541.md) instead.
 

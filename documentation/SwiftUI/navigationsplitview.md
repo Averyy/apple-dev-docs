@@ -108,7 +108,7 @@ At narrow size classes, such as on iPhone or Apple Watch, a navigation split vie
 
 For custom navigation experiences, you can provide more information to help SwiftUI choose the right column. Create a `State` value of type [`NavigationSplitViewColumn`](./navigationsplitviewcolumn.md). Then pass a `Binding` to that state to the appropriate initializer, such as [`init(preferredCompactColumn:sidebar:detail:)`](./navigationsplitview/init%28preferredcompactcolumn,sidebar,detail%29.md) or [`init(preferredCompactColumn:sidebar:content:detail:)`](./navigationsplitview/init%28preferredcompactcolumn,sidebar,content,detail%29.md).
 
-The following code shows the blue detail view when run on iPhone. When the person using the app taps the back button, they’ll see the yellow view. The value of `preferredPreferredCompactColumn` will change from `.detail` to `.sidebar`:
+The following code shows the blue detail view when run on iPhone. When the person using the app taps the back button, they’ll see the yellow view. The value of `preferredCompactColumn` will change from `.detail` to `.sidebar`:
 
 ```swift
 @State private var preferredColumn =

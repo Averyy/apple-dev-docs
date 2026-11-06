@@ -27,7 +27,7 @@ Use this object with the [`Extend a Subscription Renewal Date`](./extend-a-subsc
 - [type extendReasonCode](./extendreasoncode.md)
   The code that represents the reason for the subscription-renewal-date extension.
 - [type requestIdentifier](./requestidentifier.md)
-  A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+  A string that contains a unique identifier you provide to track a request, such as a subscription-renewal-date extension or a seat claim.
 
 ## Properties
 

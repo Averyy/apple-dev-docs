@@ -7,13 +7,13 @@
 Creates a picker that displays a custom label.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Picker(selection:content:label:))
 
 > **Deprecated**: Use [`init(selection:content:label:)`](./init%28selection,content,label%29.md) instead.
 

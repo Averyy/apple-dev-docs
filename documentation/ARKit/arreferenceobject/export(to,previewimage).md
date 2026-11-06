@@ -33,12 +33,6 @@ After exporting a reference object from your object-scanning app to a file, you 
 
   ARKit ignores preview images when loading reference objects. Instead, this image helps make reference object files visually identifiable in external tools like Xcode, Finder, and Quick Look.
 
-## See Also
-
-### Saving Recorded Objects
-- [class let archiveExtension: String](./archiveextension.md)
-  The standard filename extension for exported [`ARReferenceObject`](../arreferenceobject.md) instances.
-
 
 ---
 

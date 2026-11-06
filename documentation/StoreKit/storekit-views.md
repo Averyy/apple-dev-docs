@@ -86,6 +86,10 @@ For more information on configuring your Apple In-App Purchase metadata, see [Ma
 - [struct SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
   A set of groups of subscription options that include optional views for labels and marketing content.
 - [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [struct SubscriptionPricingModelGroupSet](./subscriptionpricingmodelgroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common pricing model.
+- [struct SubscriptionBillingPlanTypeGroupSet](./subscriptionbillingplantypegroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common billing plan type.
 - [struct SubscriptionOptionSection](./subscriptionoptionsection.md)
 - [protocol StoreContent](./storecontent.md)
   A type that represents the content of a store.
@@ -151,6 +155,22 @@ For more information on configuring your Apple In-App Purchase metadata, see [Ma
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
 ](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
+### Choosing pricing terms
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some View
+](../SwiftUI/view/preferredsubscriptionpricingterms%28_%29.md)
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some StoreContent](./storecontent/preferredsubscriptionpricingterms%28_%29.md)
+  Sets the pricing terms that the store uses to merchandise the subscription options within this store content.
+### Inviting people to a group
+- [Supporting multiseat purchases in your app](./supporting-multiseat-purchases-in-your-app.md)
+  Configure, merchandise, and sell subscriptions that people buy for a group or that organizations buy in volume, and grant access to every seat.
+- [func multiSeatInvitationBehavior(MultiSeatInvitationBehavior) -> some View
+](../SwiftUI/view/multiseatinvitationbehavior%28_%29.md)
+  Sets the behavior of the Apple-owned invitation sheet that appears after a customer purchases a multi-seat subscription from a StoreKit view.
+- [struct MultiSeatInvitationBehavior](./multiseatinvitationbehavior.md)
+  The behavior of the invitation sheet that the system presents after a customer buys a multiseat subscription in a StoreKit view.
+- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](../SwiftUI/view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+  Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
 ### Configuring purchase options and product descriptions
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
 ](../SwiftUI/view/inapppurchaseoptions%28_%29.md)

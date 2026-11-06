@@ -7,7 +7,7 @@
 The attributes for a domain added audit event.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

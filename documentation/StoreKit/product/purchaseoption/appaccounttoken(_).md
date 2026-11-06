@@ -21,6 +21,10 @@ Sets a UUID to associate the purchase with an account in your system.
 static func appAccountToken(_ token: UUID) -> Product.PurchaseOption
 ```
 
+## Mentions
+
+- [Supporting multiseat purchases in your app](../../supporting-multiseat-purchases-in-your-app.md)
+
 ## Return Value
 
 An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).

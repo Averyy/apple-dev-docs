@@ -607,6 +607,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 ### Conforms To
 - [AccelerateBuffer](../Accelerate/acceleratebuffer.md)
 - [AccelerateMutableBuffer](../Accelerate/acceleratemutablebuffer.md)
+- [AppEntityCollectionValue](../AppIntents/appentitycollectionvalue.md)
 - [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 - [Attachable](../Testing/attachable.md)
 - [BNNSGraph.Builder.OperationParameter](../Accelerate/bnnsgraph/builder/operationparameter.md)

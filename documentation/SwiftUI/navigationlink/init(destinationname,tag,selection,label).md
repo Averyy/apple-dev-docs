@@ -7,7 +7,7 @@
 Creates a navigation link that presents a view from a WatchKit storyboard when a bound selection variable matches a value you provide.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(value:label:)`](./init%28value,label%29-3qb8y.md) inside a [`List`](../list.md) within a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md). For more information, see [Migrating to new navigation types](../migrating-to-new-navigation-types.md).
 

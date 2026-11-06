@@ -11,9 +11,9 @@ You can give agents more guidance and expertise so that they work productively, 
 
 ## Control access to external commands and tools
 
-If you want finer control over agents using commands and tools while performing tasks, you can grant or deny access in Intelligence settings.
+If you want finer control over agents using commands and tools while performing tasks, you can grant or deny access in Intelligence settings. First, enable one or more agents you want to use by clicking Get next to the agents under Agents.
 
-To manage these permissions, click the Permissions row under Agents in Xcode. Any commands or tools that you previously granted access to in the coding assistant appear here.
+To manage agent permissions, click the Permissions row under Agents in Xcode that appears in Intelligence settings. Any commands or tools that you previously granted access to in the coding assistant appear here.
 
 To give access to a command-line tool that you run in Terminal, click the Add button (+) under Allowed Commands. In the text field that appears, enter the command and press Return. To remove a command-line tool, select it and click the Remove button (-) under Allowed Commands.
 

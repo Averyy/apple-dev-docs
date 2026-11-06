@@ -7,7 +7,7 @@
 Past data support. Use this option when it makes sense to provide past data for your complication.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

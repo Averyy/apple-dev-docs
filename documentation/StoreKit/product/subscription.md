@@ -38,6 +38,8 @@ For more information about subscriptions, see [Auto-renewable Subscriptions](htt
   Information about a subscription offer that you configure in App Store Connect.
 - [Product.SubscriptionInfo.Status](./subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
+- [let supportsMultiSeatPurchase: Bool](./supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 
 
 ---

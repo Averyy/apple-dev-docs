@@ -243,7 +243,7 @@ Placements go through App Review as part of their parent surface: the App Store 
 - [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
   Reserve, upload, and commit a video to your app’s asset library, set its preview frame, then update, archive, or delete it.
 - [Discovering asset specifications](./discovering-asset-specifications.md)
-  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
+  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload assets.
 - [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
   Move your screenshots, app previews, and in-app event media from the deprecated set-based resources to the asset library.
 

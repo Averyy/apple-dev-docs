@@ -29,6 +29,7 @@ Use these options with the [`setItems(_:options:)`](./setitems%28_,options%29.md
 ## Topics
 
 ### Constants
+- [static let concealed: UIPasteboard.OptionsKey](./optionskey/concealed.md)
 - [static let expirationDate: UIPasteboard.OptionsKey](./optionskey/expirationdate.md)
   The time and date that you want the system to remove the pasteboard items from the pasteboard.
 - [static let localOnly: UIPasteboard.OptionsKey](./optionskey/localonly.md)

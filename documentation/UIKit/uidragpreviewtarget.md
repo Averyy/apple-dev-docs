@@ -35,8 +35,6 @@ class UIDragPreviewTarget
 - [Hashable](../Swift/hashable.md)
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

@@ -33,6 +33,8 @@ To pair physical devices that you connect to your Mac with a cable, enter this c
 % devicectl manage pair
 ```
 
+This command also pairs Apple TV and Apple Vision Pro devices wirelessly.
+
 To use Device Hub to pair physical devices with your Mac, either wirelessly or with a cable, see [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md).
 
 Whether you use the command line or Device Hub to pair physical devices, unlock the device before entering `devicectl` commands.

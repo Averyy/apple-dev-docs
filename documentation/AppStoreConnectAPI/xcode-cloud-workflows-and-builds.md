@@ -20,7 +20,7 @@ To automate Xcode Cloud usage and integrate it with custom back-end systems, use
 
 Taking advantage of the App Store Connect API, you can combine functionality offered by the Xcode Cloud resources and other App Store Connect resources — for example, TestFlight resources — to create powerful custom tools.
 
-If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md).
+If you’re new to the App Store Connect API, start with [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md), [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), and [Identifying Rate Limits](./identifying-rate-limits.md).
 
 ### Read Xcode Cloud Data
 

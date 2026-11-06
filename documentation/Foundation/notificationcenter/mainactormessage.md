@@ -63,39 +63,6 @@ The notification center ties observation the lifetime of the returned [`Notifica
 NotificationCenter.default.removeObserver(observerToken)
 ```
 
-### Notification Interoperability
-
-`MainActorMessage` includes optional interoperability with [`Notification`](../notification.md), enabling posters and observers of both types to pass information.
-
-It does this by offering a [`makeMessage(_:)`](./mainactormessage/makemessage%28_%29.md) method that collects values from a [`Notification`](../notification.md)‘s [`userInfo`](../notification/userinfo.md) and populates properties on a new message. In the other direction, a [`makeNotification(_:)`](./mainactormessage/makenotification%28_%29.md) method collects the message’s defined properties and loads them into a new notification’s [`userInfo`](../notification/userinfo.md) dictionary.
-
-For example, if there exists a [`Notification`](../notification.md) posted on `MainActor` identified by the [`Notification.Name`](../notification/name-swift.typealias.md) `"eventDidFinish"` with a [`userInfo`](../notification/userinfo.md) dictionary containing the key `"duration"` as an [`NSNumber`](../nsnumber.md), an app could post and observe the notification with the following [`NotificationCenter.MainActorMessage`](./mainactormessage.md):
-
-```swift
-struct EventDidFinish: NotificationCenter.MainActorMessage {
-    typealias Subject = Event
-    static var name: Notification.Name { Notification.Name("eventDidFinish") }
-
-    var duration: Int
-
-    static func makeNotification(_ message: Self) -> Notification {
-        return Notification(name: Self.name, userInfo: ["duration": NSNumber(message.duration)])
-    }
-
-    static func makeMessage(_ notification: Notification) -> Self? {
-        guard let userInfo = notification.userInfo,
-              let duration = userInfo["duration"] as? Int
-        else {
-            return nil
-        }
-
-        return Self(duration: duration)
-    }
-}
-```
-
-With this definition, an observer for this `MainActorMessage` type receives information even if the poster used the [`Notification`](../notification.md) equivalent, and vice versa.
-
 ## Topics
 
 ### Declaring the message name and subject

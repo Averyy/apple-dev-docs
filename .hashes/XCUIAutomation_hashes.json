@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/XCUIAutomation": {
       "file_path": "documentation/XCUIAutomation/XCUIAutomation.md",
-      "hash": "b249b1ba3a8c47696017108762ae82cbae292b53e3117124e06af86eac025725"
+      "hash": "1fd12fde73e26946f5d1363d833fd64d5411f908a5d0be23702235e0532412b9"
     },
     "https://developer.apple.com/documentation/xcuiautomation/recording-ui-automation-for-testing": {
       "file_path": "documentation/XCUIAutomation/recording-ui-automation-for-testing.md",
@@ -318,7 +318,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice": {
       "file_path": "documentation/XCUIAutomation/xcuidevice.md",
-      "hash": "f4561f26604a2caf80a26e62b4b9b99d618ada2f709b6ef7bb896debc62a05ad"
+      "hash": "a8921950355c4d4274f79e1bac0365d31eef245949a1ef3ec9a7581805741cef"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.enum": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum.md",
@@ -375,6 +375,10 @@
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/hashardwarebutton(_:)": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton(_).md",
       "hash": "f4203f948f18b99c0645de5e082439aff6c12158c67b9498dd89e48b26f7d029"
+    },
+    "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/hinge": {
+      "file_path": "documentation/XCUIAutomation/xcuidevice/hinge.md",
+      "hash": "4c8beb45bb8aadcf087964250260fcd6e0f07f4aa2a6a52ae808413011ba14ce"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/init()": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/init().md",
@@ -1588,6 +1592,14 @@
       "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/slow.md",
       "hash": "17b1d675a350dcfc780393892552728772b3f3f6a454f29b62637bd347f31193"
     },
+    "https://developer.apple.com/documentation/xcuiautomation/xcuihinge": {
+      "file_path": "documentation/XCUIAutomation/xcuihinge.md",
+      "hash": "49dd7e9a10056509e5ab695bddf83d07d10f29ca6714cdd83781548a6ac90250"
+    },
+    "https://developer.apple.com/documentation/xcuiautomation/xcuihinge/angle": {
+      "file_path": "documentation/XCUIAutomation/xcuihinge/angle.md",
+      "hash": "b3af923b2cc9287121e1109b4c9e9f15da1140c45c95f43a8512a7f4aa52cb82"
+    },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiidentifierclosewindow": {
       "file_path": "documentation/XCUIAutomation/xcuiidentifierclosewindow.md",
       "hash": "682c4e3dcd65b7f713e76e6dac7a624f68957451658674f777312f172b1d1628"
@@ -2150,7 +2162,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/XCUIAutomation.json": {
       "file_path": "documentation/XCUIAutomation/XCUIAutomation.md",
-      "hash": "b249b1ba3a8c47696017108762ae82cbae292b53e3117124e06af86eac025725"
+      "hash": "1fd12fde73e26946f5d1363d833fd64d5411f908a5d0be23702235e0532412b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/recording-ui-automation-for-testing.json": {
       "file_path": "documentation/XCUIAutomation/recording-ui-automation-for-testing.md",
@@ -2466,7 +2478,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice.json": {
       "file_path": "documentation/XCUIAutomation/xcuidevice.md",
-      "hash": "f4561f26604a2caf80a26e62b4b9b99d618ada2f709b6ef7bb896debc62a05ad"
+      "hash": "a8921950355c4d4274f79e1bac0365d31eef245949a1ef3ec9a7581805741cef"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.enum.json": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum.md",
@@ -2523,6 +2535,10 @@
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/hashardwarebutton(_:).json": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton(_).md",
       "hash": "f4203f948f18b99c0645de5e082439aff6c12158c67b9498dd89e48b26f7d029"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/hinge.json": {
+      "file_path": "documentation/XCUIAutomation/xcuidevice/hinge.md",
+      "hash": "4c8beb45bb8aadcf087964250260fcd6e0f07f4aa2a6a52ae808413011ba14ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/init().json": {
       "file_path": "documentation/XCUIAutomation/xcuidevice/init().md",
@@ -3736,6 +3752,14 @@
       "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/slow.md",
       "hash": "17b1d675a350dcfc780393892552728772b3f3f6a454f29b62637bd347f31193"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuihinge.json": {
+      "file_path": "documentation/XCUIAutomation/xcuihinge.md",
+      "hash": "49dd7e9a10056509e5ab695bddf83d07d10f29ca6714cdd83781548a6ac90250"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuihinge/angle.json": {
+      "file_path": "documentation/XCUIAutomation/xcuihinge/angle.md",
+      "hash": "b3af923b2cc9287121e1109b4c9e9f15da1140c45c95f43a8512a7f4aa52cb82"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiidentifierclosewindow.json": {
       "file_path": "documentation/XCUIAutomation/xcuiidentifierclosewindow.md",
       "hash": "682c4e3dcd65b7f713e76e6dac7a624f68957451658674f777312f172b1d1628"
@@ -4301,6 +4325,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1074
+    "total_pages": 1080
   }
 }

@@ -36,6 +36,7 @@ enum NSGrammaticalCase : NSInteger;
 - [NSGrammaticalCase.genitive](./nsgrammaticalcase/genitive.md)
 - [NSGrammaticalCase.illative](./nsgrammaticalcase/illative.md)
 - [NSGrammaticalCase.inessive](./nsgrammaticalcase/inessive.md)
+- [NSGrammaticalCase.instrumental](./nsgrammaticalcase/instrumental.md)
 - [NSGrammaticalCase.locative](./nsgrammaticalcase/locative.md)
 - [NSGrammaticalCase.nominative](./nsgrammaticalcase/nominative.md)
 - [NSGrammaticalCase.notSet](./nsgrammaticalcase/notset.md)

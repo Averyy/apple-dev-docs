@@ -11,7 +11,7 @@ Update a specific auto-renewable subscription.
 
 ## Mentions
 
-- [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
 
 ## Discussion
 

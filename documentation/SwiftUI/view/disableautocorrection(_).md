@@ -7,13 +7,13 @@
 Sets whether to disable autocorrection for this view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
-- watchOS 8.0+ - Deprecated in 27.2 (renamed: autocorrectionDisabled(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
+- watchOS 8.0+ - Deprecated in 27.3 (renamed: autocorrectionDisabled(_:))
 
 > **Deprecated**: Use [`autocorrectionDisabled(_:)`](./autocorrectiondisabled%28_%29.md) instead.
 

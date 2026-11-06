@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The session identifier for this capability session.
+A unique identifier for a feature on the paired accessory.
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +14,10 @@ The session identifier for this capability session.
 ```swift
 var sessionID: UUID { get }
 ```
+
+## Discussion
+
+This value matches the [`sessionID`](../transportmessage/sessionid.md) of the messages that your transport extension receives for the feature. The system uses it for cryptographic operations and persists the value until the accessory unpairs.
 
 
 ---

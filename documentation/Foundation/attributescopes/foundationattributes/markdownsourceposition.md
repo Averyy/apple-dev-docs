@@ -18,7 +18,7 @@ A property for accessing a Markdown source position attribute.
 ## Declaration
 
 ```swift
-let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute
+var markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute { get }
 ```
 
 ## Discussion

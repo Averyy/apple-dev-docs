@@ -96,6 +96,7 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 - [let kVTCompressionPropertyKey_ConstantQualityFactor: CFString](./kvtcompressionpropertykey_constantqualityfactor.md)
 - [let kVTCompressionPropertyKey_LogTransferFunction: CFString](./kvtcompressionpropertykey_logtransferfunction.md)
   Indicates that the transfer function or gamma of the content is a log format and identifies the specific log curve. Log curve identifiers include `kCVImageBufferLogTransferFunction_AppleLog` (“com.apple.rec2020.apple-log”) and `kCVImageBufferLogTransferFunction_AppleLog2` (“com.apple.apple-wide-gamut.apple-log”). When the LogTransferFunction is specified for a VTCompressionSession, if source image buffers do not have exactly that LogTransferFunction, encoding will fail.
+- [let kVTDecompressionPropertyKey_EnableStrictBitstreamValidation: CFString](./kvtdecompressionpropertykey_enablestrictbitstreamvalidation.md)
 - [var kVTLogTransferFunctionMismatchErr: OSStatus](./kvtlogtransferfunctionmismatcherr.md)
 - [let kVTProjectionKind_AppleImmersiveVideo: CFString](./kvtprojectionkind_appleimmersivevideo.md)
 

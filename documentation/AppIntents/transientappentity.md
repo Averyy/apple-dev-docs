@@ -21,6 +21,10 @@ A type that represents a transient model object which exposes its interface to A
 protocol TransientAppEntity : AppEntity
 ```
 
+## Mentions
+
+- [Bringing custom actions and content to Siri](./bringing-custom-actions-and-content-to-siri.md)
+
 ## Topics
 
 ### Initializers
@@ -40,6 +44,8 @@ protocol TransientAppEntity : AppEntity
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](./typedisplayrepresentable.md)
+### Inherited By
+- [GenerableEntity](./generableentity.md)
 
 ## See Also
 

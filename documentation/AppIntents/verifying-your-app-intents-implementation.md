@@ -79,6 +79,8 @@ For more information about making entities discoverable and integrating your app
 
 People can invoke actions using natural language with Apple Intelligence and Siri if you adopt app schemas for your intents, entities, and enums or provide App Shortcuts. To verify the integration with Apple Intelligence and Siri end-to-end, use Siri to test your app intents with phrases people actually say.
 
+> **Note**: Starting with the [Siri AI Developer Preview](./siri-ai-developer-preview.md), create evaluations using the [Siri Evaluations](../sirievaluations/sirievaluations.md) framework to verify your app’s integration with Apple Intelligence and Siri AI end-to-end.
+
 To use realistic phrases in your testing:
 
 - Vary the wording and include filler words. Apple Intelligence typically maps these variations to the appropriate intent and resolves parameters to the correct entities.

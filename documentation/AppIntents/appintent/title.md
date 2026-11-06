@@ -26,6 +26,7 @@ static var title: LocalizedStringResource { get }
 
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 - [Creating your first app intent](../creating-your-first-app-intent.md)
+- [Bringing custom actions and content to Siri](../bringing-custom-actions-and-content-to-siri.md)
 
 ## Discussion
 

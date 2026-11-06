@@ -59,6 +59,8 @@ A Thread network defines parameters that all connected devices use. [`THCredenti
 
 ### Inherits From
 - [NSObject](../ObjectiveC/nsobject-swift.class.md)
+### Inherited By
+- [THNearbyNetworkCredentials](./thnearbynetworkcredentials.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)

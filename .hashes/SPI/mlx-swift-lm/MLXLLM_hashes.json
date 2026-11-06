@@ -22154,12 +22154,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/LLMModelFactory.swift",
-      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/Models"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxllm/adding-model.json": [
+        "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/LLMModelFactory.swift"
+      ]
     },
     "total_pages": 5538
   }

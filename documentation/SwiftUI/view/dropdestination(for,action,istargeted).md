@@ -7,10 +7,10 @@
 Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
-- Mac Catalyst 16.0+ - Deprecated in 27.2
-- macOS 13.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
+- Mac Catalyst 16.0+ - Deprecated in 27.3
+- macOS 13.0+ - Deprecated in 27.3
 - visionOS 1.0+
 
 > **Deprecated**: Use [`dropDestination(for:isEnabled:action:)`](./dropdestination%28for,isenabled,action%29.md) with an `action` that takes a [`DropSession`](../dropsession.md) instead.

@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Type Property
 
+A value that indicates the App Store.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -18,6 +20,14 @@
 ```swift
 static let consumer: AppTransaction.StoreType
 ```
+
+## See Also
+
+### Getting store types
+- [static let enterprise: AppTransaction.StoreType](./enterprise.md)
+  A value that indicates Apple Business.
+- [static let education: AppTransaction.StoreType](./education.md)
+  A value that indicates Apple School Manager.
 
 
 ---

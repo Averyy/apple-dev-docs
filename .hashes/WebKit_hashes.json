@@ -6598,7 +6598,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webkit-for-swiftui": {
       "file_path": "documentation/WebKit/webkit-for-swiftui.md",
-      "hash": "a18cff2de8f346233b9b80ba62008406683272c8004cc9e6a938bd8356755047"
+      "hash": "59c1e59ec8ec40fec3f036bd750d723a69876edd8fa85490a2b3c0fb07330472"
     },
     "https://developer.apple.com/documentation/webkit/webkit-macros": {
       "file_path": "documentation/WebKit/webkit-macros.md",
@@ -6850,7 +6850,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webpage": {
       "file_path": "documentation/WebKit/webpage.md",
-      "hash": "2cc5aaed58557ea9a558c16eff11c21f3b067261bd312cccec89c2622b9f9169"
+      "hash": "a3e3c4aa6a84beb0a0c6de2956f5f6fb658edfb6bd40d9077534157a4ccb4d9a"
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.property": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.property.md",
@@ -6858,19 +6858,19 @@
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.struct": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct.md",
-      "hash": "f0bf5954ade0e60222a2e584352074cc06c7c22a2d25468517975d39615358b5"
+      "hash": "69f101c2914bdabaa4e7d087152cf0004009ab9ec77a50aebbdd8ebbf2b85a77"
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.struct/backlist": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/backlist.md",
-      "hash": "f058902818cadea3f520461cbd1444510234840e9b685408bc08379020cfb82d"
+      "hash": "ccbb22be8e93d65b6fa19c6f010603df668dbf04cda9a4e8557fc78c42f7acee"
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.struct/currentitem": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/currentitem.md",
-      "hash": "a4a30cf2c50c1ebf4bd91eef99829c79897ee10b3241951164af758d21262dfd"
+      "hash": "9af102e74e3f9c5e937c817ac2267b1e081c59e1c0a62b2cf6465564d2eaa328"
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.struct/forwardlist": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/forwardlist.md",
-      "hash": "8d3d35f53732008b94280ec2431de01013b4c8e060f4ade652850a10a9f090eb"
+      "hash": "73b1884b0c3561949f837a03067de224ef8b89d6da28b6b8915345e4ef6f7074"
     },
     "https://developer.apple.com/documentation/webkit/webpage/backforwardlist-swift.struct/item": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/item.md",
@@ -6914,7 +6914,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webpage/configuration": {
       "file_path": "documentation/WebKit/webpage/configuration.md",
-      "hash": "8464795217929aa19be1f4402fdc6366737e76a92284c97edf50e7e8d087d976"
+      "hash": "48c04e594abcdf1752b16a90dff0d9920c07706799052b6e1769f6e5e556ca10"
     },
     "https://developer.apple.com/documentation/webkit/webpage/configuration/allowsairplayformediaplayback": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsairplayformediaplayback.md",
@@ -6922,7 +6922,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webpage/configuration/allowsimmersiveenvironments": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsimmersiveenvironments.md",
-      "hash": "134bfebdc0d63643dc1356401d050e96ce5970369e03049b5189475319e5d3b8"
+      "hash": "b2dc335444b64edaea54562ddb23284406d3212888b12cdc9cb6269d17bf3f0c"
     },
     "https://developer.apple.com/documentation/webkit/webpage/configuration/allowsinlinepredictions": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsinlinepredictions.md",
@@ -7218,11 +7218,11 @@
     },
     "https://developer.apple.com/documentation/webkit/webpage/immersiveenvironment": {
       "file_path": "documentation/WebKit/webpage/immersiveenvironment.md",
-      "hash": "2d81f119bd6c8df921d4251c60b13a3535e83be626997ef874919289a6d79a59"
+      "hash": "9122c985083fca01942c90e530de7fc827c80ee3cf9a8c02ba5d973b718f2ff4"
     },
     "https://developer.apple.com/documentation/webkit/webpage/immersiveenvironment/sourceframe": {
       "file_path": "documentation/WebKit/webpage/immersiveenvironment/sourceframe.md",
-      "hash": "a4008a14960aa10a1523268557c6e645953a23fb7f625e04d26489ff8dcd7f04"
+      "hash": "8d0d60ddd02576efc17ff55af5aa12efc9e242c3f7154a2e5b9f62c538a21698"
     },
     "https://developer.apple.com/documentation/webkit/webpage/init(configuration:)": {
       "file_path": "documentation/WebKit/webpage/init(configuration).md",
@@ -7551,6 +7551,10 @@
     "https://developer.apple.com/documentation/webkit/webpage/pauseallmediaplayback()": {
       "file_path": "documentation/WebKit/webpage/pauseallmediaplayback().md",
       "hash": "da311ca37f81c67d432940f6949adba28b3e137cabe5d69579b293f45d1afade"
+    },
+    "https://developer.apple.com/documentation/webkit/webpage/qualifiedservertrust": {
+      "file_path": "documentation/WebKit/webpage/qualifiedservertrust.md",
+      "hash": "73c87b1e2a84fd14de34dc0ee9820a394f572bd36cdd636311001c085df3f335"
     },
     "https://developer.apple.com/documentation/webkit/webpage/reload(fromorigin:)": {
       "file_path": "documentation/WebKit/webpage/reload(fromorigin).md",
@@ -8562,7 +8566,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webview-swift.struct": {
       "file_path": "documentation/WebKit/webview-swift.struct.md",
-      "hash": "0f4343c465a976f0fe3db9868864cba076a5980dcba636e97277e343099f8d13"
+      "hash": "61409a141130148bf8ba9dc8dda1eaffde06a0bf90b8b994f1c1a231e668a675"
     },
     "https://developer.apple.com/documentation/webkit/webview-swift.struct/activatedelementinfo": {
       "file_path": "documentation/WebKit/webview-swift.struct/activatedelementinfo.md",
@@ -8666,15 +8670,15 @@
     },
     "https://developer.apple.com/documentation/webkit/webviewimmersiveenvironmentview": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview.md",
-      "hash": "15cd9ea10f09ee5070dac4e86b0944d05e16f35e370a71e727a020becabc10e7"
+      "hash": "2b840415c3cc36fef380a12f64c10277ddc5463c65f415fecc38829afbd4461e"
     },
     "https://developer.apple.com/documentation/webkit/webviewimmersiveenvironmentview/init(_:)-1ydxs": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview/init(_)-1ydxs.md",
-      "hash": "4c709af0bb3ca587b15332ce0f54e36b7a6d04f04dd7f1e0f0f8feb9e7d84443"
+      "hash": "448a8656c113ea7eda752fec4b73b969f887418c736691c6d169c483538d2fa9"
     },
     "https://developer.apple.com/documentation/webkit/webviewimmersiveenvironmentview/init(_:)-2y2u7": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview/init(_)-2y2u7.md",
-      "hash": "73e80fa6bc986f4abda2d1a4b41afe6814cecfaf3b3815aa3b52b264ee42ce61"
+      "hash": "15c445fc98f3f85ae214f3985cd94126a1bb45bece6e7bdcb8387922fab36089"
     },
     "https://developer.apple.com/documentation/webkit/webviewinsertaction": {
       "file_path": "documentation/WebKit/webviewinsertaction.md",
@@ -9370,27 +9374,27 @@
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironment": {
       "file_path": "documentation/WebKit/wkimmersiveenvironment.md",
-      "hash": "0f941c1971bd85f39e8449c30c033f522120b28050a4fb676e9259ae8f48e14e"
+      "hash": "ca5a271695c21020c0489676e021f58f23765c0c266cd7ac9bc89f58b69f6b62"
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironment/sourceframe": {
       "file_path": "documentation/WebKit/wkimmersiveenvironment/sourceframe.md",
-      "hash": "cbc33373922d6482aab844e828daa091dd29bc76393b66589df9daba569b9e40"
+      "hash": "27bc5baa3be9fa6cb7abd3b959365999b5c4d70d417c0fc03a7f56f32bc6faef"
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironmentdelegate": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate.md",
-      "hash": "56b08b5f407dab7c35e98058cb001e66cfe83264f43018fd081dbc531a4d96da"
+      "hash": "5a89fc5bab40295f900b2afe6b3b42c7ec175a97e92d1e01b488448ac31530e5"
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:dismiss:completionhandler:)": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,dismiss,completionhandler).md",
-      "hash": "bb0f2b9c1f303558cc794145f94b095f71e8c9bd625dd71c8b024eba933299a0"
+      "hash": "1855848433d43bf84f93db277deb2121a9ad219565480703d63125acf05d190e"
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:present:completionhandler:)": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,present,completionhandler).md",
-      "hash": "c7aa58aef6203f222b77edd659d0ace9b84b3d6ce3dd7e995e9924e4c8f99197"
+      "hash": "8148175e705aaeee76025f21edd05f7ecd3bde3fe56cc2162a8d11db2be3e436"
     },
     "https://developer.apple.com/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:shouldallowimmersiveenvironmentfromframe:completionhandler:)": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,shouldallowimmersiveenvironmentfromframe,completionhandler).md",
-      "hash": "ab8bcd9d1e3b60b80633d6dade96366c79a1d6a0a62f692c2d1e4516014b16e5"
+      "hash": "ba7775e604cb7ae408b0d26e78f8cac9455fc3275bc88b89a633eb7271198cf7"
     },
     "https://developer.apple.com/documentation/webkit/wkjshandle": {
       "file_path": "documentation/WebKit/wkjshandle.md",
@@ -12162,7 +12166,7 @@
     },
     "https://developer.apple.com/documentation/webkit/wkwebview": {
       "file_path": "documentation/WebKit/wkwebview.md",
-      "hash": "fb0157f6fa0e72dbc412f32a1bf9124208faac9cb8530d0623028ed30d854821"
+      "hash": "b6bb3c73aa6e2c25bec4aea8bccf80d2f77cd9c91813ff1b6c8c7efc5f979ee6"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview-deprecated-symbols": {
       "file_path": "documentation/WebKit/wkwebview-deprecated-symbols.md",
@@ -12463,6 +12467,10 @@
     "https://developer.apple.com/documentation/webkit/wkwebview/printoperation(with:)": {
       "file_path": "documentation/WebKit/wkwebview/printoperation(with).md",
       "hash": "f7749c88fc32dd0d35262321b75a1d571beb36c31e6609bb05901a8a0992c8f8"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/qualifiedservertrust": {
+      "file_path": "documentation/WebKit/wkwebview/qualifiedservertrust.md",
+      "hash": "2a88d9a19f046433957ea2742cc911bdfa8d024588ef49a8dcca573f3608b34f"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/refreshcontroller": {
       "file_path": "documentation/WebKit/wkwebview/refreshcontroller.md",
@@ -19346,7 +19354,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webkit-for-swiftui.json": {
       "file_path": "documentation/WebKit/webkit-for-swiftui.md",
-      "hash": "a18cff2de8f346233b9b80ba62008406683272c8004cc9e6a938bd8356755047"
+      "hash": "59c1e59ec8ec40fec3f036bd750d723a69876edd8fa85490a2b3c0fb07330472"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webkit-macros.json": {
       "file_path": "documentation/WebKit/webkit-macros.md",
@@ -19598,7 +19606,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage.json": {
       "file_path": "documentation/WebKit/webpage.md",
-      "hash": "2cc5aaed58557ea9a558c16eff11c21f3b067261bd312cccec89c2622b9f9169"
+      "hash": "a3e3c4aa6a84beb0a0c6de2956f5f6fb658edfb6bd40d9077534157a4ccb4d9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.property.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.property.md",
@@ -19606,19 +19614,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.struct.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct.md",
-      "hash": "f0bf5954ade0e60222a2e584352074cc06c7c22a2d25468517975d39615358b5"
+      "hash": "69f101c2914bdabaa4e7d087152cf0004009ab9ec77a50aebbdd8ebbf2b85a77"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.struct/backlist.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/backlist.md",
-      "hash": "f058902818cadea3f520461cbd1444510234840e9b685408bc08379020cfb82d"
+      "hash": "ccbb22be8e93d65b6fa19c6f010603df668dbf04cda9a4e8557fc78c42f7acee"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.struct/currentitem.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/currentitem.md",
-      "hash": "a4a30cf2c50c1ebf4bd91eef99829c79897ee10b3241951164af758d21262dfd"
+      "hash": "9af102e74e3f9c5e937c817ac2267b1e081c59e1c0a62b2cf6465564d2eaa328"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.struct/forwardlist.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/forwardlist.md",
-      "hash": "8d3d35f53732008b94280ec2431de01013b4c8e060f4ade652850a10a9f090eb"
+      "hash": "73b1884b0c3561949f837a03067de224ef8b89d6da28b6b8915345e4ef6f7074"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/backforwardlist-swift.struct/item.json": {
       "file_path": "documentation/WebKit/webpage/backforwardlist-swift.struct/item.md",
@@ -19662,7 +19670,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/configuration.json": {
       "file_path": "documentation/WebKit/webpage/configuration.md",
-      "hash": "8464795217929aa19be1f4402fdc6366737e76a92284c97edf50e7e8d087d976"
+      "hash": "48c04e594abcdf1752b16a90dff0d9920c07706799052b6e1769f6e5e556ca10"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/configuration/allowsairplayformediaplayback.json": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsairplayformediaplayback.md",
@@ -19670,7 +19678,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/configuration/allowsimmersiveenvironments.json": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsimmersiveenvironments.md",
-      "hash": "134bfebdc0d63643dc1356401d050e96ce5970369e03049b5189475319e5d3b8"
+      "hash": "b2dc335444b64edaea54562ddb23284406d3212888b12cdc9cb6269d17bf3f0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/configuration/allowsinlinepredictions.json": {
       "file_path": "documentation/WebKit/webpage/configuration/allowsinlinepredictions.md",
@@ -19966,11 +19974,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/immersiveenvironment.json": {
       "file_path": "documentation/WebKit/webpage/immersiveenvironment.md",
-      "hash": "2d81f119bd6c8df921d4251c60b13a3535e83be626997ef874919289a6d79a59"
+      "hash": "9122c985083fca01942c90e530de7fc827c80ee3cf9a8c02ba5d973b718f2ff4"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/immersiveenvironment/sourceframe.json": {
       "file_path": "documentation/WebKit/webpage/immersiveenvironment/sourceframe.md",
-      "hash": "a4008a14960aa10a1523268557c6e645953a23fb7f625e04d26489ff8dcd7f04"
+      "hash": "8d0d60ddd02576efc17ff55af5aa12efc9e242c3f7154a2e5b9f62c538a21698"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/init(configuration:).json": {
       "file_path": "documentation/WebKit/webpage/init(configuration).md",
@@ -20299,6 +20307,10 @@
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/pauseallmediaplayback().json": {
       "file_path": "documentation/WebKit/webpage/pauseallmediaplayback().md",
       "hash": "da311ca37f81c67d432940f6949adba28b3e137cabe5d69579b293f45d1afade"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/qualifiedservertrust.json": {
+      "file_path": "documentation/WebKit/webpage/qualifiedservertrust.md",
+      "hash": "73c87b1e2a84fd14de34dc0ee9820a394f572bd36cdd636311001c085df3f335"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/reload(fromorigin:).json": {
       "file_path": "documentation/WebKit/webpage/reload(fromorigin).md",
@@ -21310,7 +21322,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webview-swift.struct.json": {
       "file_path": "documentation/WebKit/webview-swift.struct.md",
-      "hash": "0f4343c465a976f0fe3db9868864cba076a5980dcba636e97277e343099f8d13"
+      "hash": "61409a141130148bf8ba9dc8dda1eaffde06a0bf90b8b994f1c1a231e668a675"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webview-swift.struct/activatedelementinfo.json": {
       "file_path": "documentation/WebKit/webview-swift.struct/activatedelementinfo.md",
@@ -21414,15 +21426,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webviewimmersiveenvironmentview.json": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview.md",
-      "hash": "15cd9ea10f09ee5070dac4e86b0944d05e16f35e370a71e727a020becabc10e7"
+      "hash": "2b840415c3cc36fef380a12f64c10277ddc5463c65f415fecc38829afbd4461e"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webviewimmersiveenvironmentview/init(_:)-1ydxs.json": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview/init(_)-1ydxs.md",
-      "hash": "4c709af0bb3ca587b15332ce0f54e36b7a6d04f04dd7f1e0f0f8feb9e7d84443"
+      "hash": "448a8656c113ea7eda752fec4b73b969f887418c736691c6d169c483538d2fa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webviewimmersiveenvironmentview/init(_:)-2y2u7.json": {
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview/init(_)-2y2u7.md",
-      "hash": "73e80fa6bc986f4abda2d1a4b41afe6814cecfaf3b3815aa3b52b264ee42ce61"
+      "hash": "15c445fc98f3f85ae214f3985cd94126a1bb45bece6e7bdcb8387922fab36089"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webviewinsertaction.json": {
       "file_path": "documentation/WebKit/webviewinsertaction.md",
@@ -22122,27 +22134,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironment.json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironment.md",
-      "hash": "0f941c1971bd85f39e8449c30c033f522120b28050a4fb676e9259ae8f48e14e"
+      "hash": "ca5a271695c21020c0489676e021f58f23765c0c266cd7ac9bc89f58b69f6b62"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironment/sourceframe.json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironment/sourceframe.md",
-      "hash": "cbc33373922d6482aab844e828daa091dd29bc76393b66589df9daba569b9e40"
+      "hash": "27bc5baa3be9fa6cb7abd3b959365999b5c4d70d417c0fc03a7f56f32bc6faef"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironmentdelegate.json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate.md",
-      "hash": "56b08b5f407dab7c35e98058cb001e66cfe83264f43018fd081dbc531a4d96da"
+      "hash": "5a89fc5bab40295f900b2afe6b3b42c7ec175a97e92d1e01b488448ac31530e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:dismiss:completionhandler:).json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,dismiss,completionhandler).md",
-      "hash": "bb0f2b9c1f303558cc794145f94b095f71e8c9bd625dd71c8b024eba933299a0"
+      "hash": "1855848433d43bf84f93db277deb2121a9ad219565480703d63125acf05d190e"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:present:completionhandler:).json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,present,completionhandler).md",
-      "hash": "c7aa58aef6203f222b77edd659d0ace9b84b3d6ce3dd7e995e9924e4c8f99197"
+      "hash": "8148175e705aaeee76025f21edd05f7ecd3bde3fe56cc2162a8d11db2be3e436"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkimmersiveenvironmentdelegate/webview(_:shouldallowimmersiveenvironmentfromframe:completionhandler:).json": {
       "file_path": "documentation/WebKit/wkimmersiveenvironmentdelegate/webview(_,shouldallowimmersiveenvironmentfromframe,completionhandler).md",
-      "hash": "ab8bcd9d1e3b60b80633d6dade96366c79a1d6a0a62f692c2d1e4516014b16e5"
+      "hash": "ba7775e604cb7ae408b0d26e78f8cac9455fc3275bc88b89a633eb7271198cf7"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkjshandle.json": {
       "file_path": "documentation/WebKit/wkjshandle.md",
@@ -24918,7 +24930,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview.json": {
       "file_path": "documentation/WebKit/wkwebview.md",
-      "hash": "fb0157f6fa0e72dbc412f32a1bf9124208faac9cb8530d0623028ed30d854821"
+      "hash": "b6bb3c73aa6e2c25bec4aea8bccf80d2f77cd9c91813ff1b6c8c7efc5f979ee6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/allowsbackforwardnavigationgestures.json": {
       "file_path": "documentation/WebKit/wkwebview/allowsbackforwardnavigationgestures.md",
@@ -25224,6 +25236,10 @@
       "file_path": "documentation/WebKit/wkwebview/printoperation(with).md",
       "hash": "f7749c88fc32dd0d35262321b75a1d571beb36c31e6609bb05901a8a0992c8f8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/qualifiedservertrust.json": {
+      "file_path": "documentation/WebKit/wkwebview/qualifiedservertrust.md",
+      "hash": "2a88d9a19f046433957ea2742cc911bdfa8d024588ef49a8dcca573f3608b34f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/refreshcontroller.json": {
       "file_path": "documentation/WebKit/wkwebview/refreshcontroller.md",
       "hash": "cd98294ae92437eb9c4e30729757a4bc5d08684e36ccfffd05e733af92d91666"
@@ -25513,6 +25529,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 6377
+    "total_pages": 6381
   }
 }

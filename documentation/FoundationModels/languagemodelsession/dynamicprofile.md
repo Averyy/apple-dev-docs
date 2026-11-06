@@ -11,6 +11,7 @@ A dynamic profile that contains one or more profiles.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -111,6 +112,12 @@ Profile {
 ### Handling the error policy
 - [func transcriptErrorHandlingPolicy(TranscriptErrorHandlingPolicy?) -> some LanguageModelSession.DynamicProfile](./dynamicprofile/transcripterrorhandlingpolicy%28_%29.md)
   Sets the policy for managing the transcript when errors occur.
+### Instance Methods
+- [func onDataEntry(perform:)](./dynamicprofile/ondataentry%28perform%29.md)
+  Runs an action whenever this dynamic profile produces a data entry.
+### Type Aliases
+- [LanguageModelSession.DynamicProfile.SessionBinding](./dynamicprofile/sessionbinding.md)
+- [LanguageModelSession.DynamicProfile.SessionState](./dynamicprofile/sessionstate.md)
 
 ## Relationships
 

@@ -2,16 +2,16 @@
 
 **Framework**: SwiftUI  
 **Role**: Sample Code  
-**Download**: [LandmarksBuildingAnAppWithLiquidGlass.zip](https://docs-assets.developer.apple.com/published/a88428e6793e/LandmarksBuildingAnAppWithLiquidGlass.zip)
+**Download**: [LandmarksBuildingAnAppWithLiquidGlass.zip](https://docs-assets.developer.apple.com/published/7cb327e44540/LandmarksBuildingAnAppWithLiquidGlass.zip)
 
 Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- Xcode 26.0+
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- Xcode 27.0+
 
 ## Overview
 

@@ -7,10 +7,10 @@
 Retrieves the state of a region asynchronously.
 
 **Availability**:
-- iOS 5.0+ - Deprecated in 27.2
-- iPadOS 5.0+ - Deprecated in 27.2
+- iOS 5.0+ - Deprecated in 27.3
+- iPadOS 5.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.8+ - Deprecated in 27.2
+- macOS 10.8+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`CLMonitor`](../clmonitor-2r51v.md) to track and query the state for monitored constraints.
 

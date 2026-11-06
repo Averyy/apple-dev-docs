@@ -40,6 +40,12 @@ enum UIGlassEffectStyle : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Creating a glass effect
+- [init(style: UIGlassEffect.Style)](./init%28style%29.md)
+  Creates a glass effect with the specified style.
+
 
 ---
 

@@ -35,7 +35,7 @@ To run this sample app, you need one of the following:
 
 ### Sample code links
 - [Bringing your SceneKit projects to RealityKit](./bringing-your-scenekit-projects-to-realitykit.md)
-  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+  Adapt a platformer game for the powerful ECS and modularity of RealityKit.
 - [BOT-anist](../visionOS/bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Rendering a windowed game in stereo](./rendering-a-windowed-game-in-stereo.md)

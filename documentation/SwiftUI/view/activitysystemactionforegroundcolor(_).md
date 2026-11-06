@@ -9,6 +9,8 @@ The text color for the auxiliary action button that the system shows next to a L
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

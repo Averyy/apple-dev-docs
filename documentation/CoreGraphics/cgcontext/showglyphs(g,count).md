@@ -46,6 +46,7 @@ This function displays an array of glyphs at the current text position, a point 
 - [var textMatrix: CGAffineTransform](./textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](./textposition.md)
+  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](./selectfont%28name,size,textencoding%29.md)
   Sets the font and font size in a graphics context.
 - [func setCharacterSpacing(CGFloat)](./setcharacterspacing%28_%29.md)

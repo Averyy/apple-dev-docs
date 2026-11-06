@@ -17,7 +17,7 @@ The array of items that precede the current item.
 
 ```swift
 @MainActor
-var backList: [WebPage.BackForwardList.Item] { get }
+let backList: [WebPage.BackForwardList.Item]
 ```
 
 ## Discussion

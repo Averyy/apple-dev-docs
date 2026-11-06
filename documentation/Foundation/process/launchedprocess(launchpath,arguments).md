@@ -7,7 +7,7 @@
 Creates and launches a task with a specified executable and arguments.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`run(_:arguments:terminationHandler:)`](./run%28_,arguments,terminationhandler%29.md) instead.
 

@@ -7,12 +7,12 @@
 Creates a color from a UIKit color.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
-- Mac Catalyst 13.0+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 6.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
+- Mac Catalyst 13.0+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(uiColor:)`](./init%28uicolor%29.md) instead.
 

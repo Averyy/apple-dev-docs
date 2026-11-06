@@ -4,15 +4,21 @@
 **Kind**: case  
 **Role**: Case
 
+A setting with UI that the system defines.
+
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 
 ```swift
 case primitiveSetting
 ```
+
+## Discussion
+
+A primitive setting is an type that conforms to [`HomeAccessorySetting`](../../../../homeextensions/homeaccessorysetting.md).
 
 
 ---

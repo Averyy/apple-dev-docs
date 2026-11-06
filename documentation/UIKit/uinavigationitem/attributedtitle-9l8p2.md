@@ -40,6 +40,9 @@ If [`titleView`](./titleview.md) is non-`nil`, the system ignores this property.
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
+- [var titleAlignment: UINavigationItem.TitleAlignment](./titlealignment-swift.property.md)
+  The preferred alignment of the navigation bar’s title.
+- [UINavigationItem.TitleAlignment](./titlealignment-swift.enum.md)
 
 
 ---

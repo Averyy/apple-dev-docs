@@ -11,6 +11,7 @@ Creates a prompt.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -22,7 +23,7 @@ init(id: String = UUID().uuidString, segments: [Transcript.Segment], options: Ge
 
 ## Parameters
 
-- `id`: A [`Generable`](../../generable.md) type to use as the response format.
+- `id`: A unique identifier for the prompt.
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 - `responseFormat`: A response format that describes the output structure.

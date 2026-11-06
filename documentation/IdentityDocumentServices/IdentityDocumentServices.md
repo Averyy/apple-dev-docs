@@ -37,6 +37,8 @@ This framework also enables web browsers to implement the presentment flow for t
   A protocol that defines an identity document registration.
 - [struct MobileDocumentRegistration](./mobiledocumentregistration.md)
   A type you use to register mobile documents.
+- [struct VerifiableCredentialRegistration](./verifiablecredentialregistration.md)
+  A type used for registering SD-JWT verifiable credentials.
 ### Implementing the web presentment flow into your browser
 - [struct IdentityDocumentWebPresentmentRawRequestValidator](./identitydocumentwebpresentmentrawrequestvalidator.md)
   A type that contains functions for validating the incoming web presentment raw request.
@@ -50,9 +52,18 @@ This framework also enables web browsers to implement the presentment flow for t
   A type representing the document response from a web presentment request.
 - [struct IdentityDocumentWebPresentmentRawRequest](./identitydocumentwebpresentmentrawrequest.md)
   A struct that defines the type that represents a raw web presentment request.
-### Structures
+### Requesting credentials with OpenID4VP
+- [struct OpenID4VPRequest](./openid4vprequest.md)
+  A type that represents an incoming OpenID for Verifiable Presentations request.
+- [struct OpenID4VPResponse](./openid4vpresponse.md)
+  A response to an OpenID4VP request.
+- [enum OpenID4VPExchangeProtocolIdentifier](./openid4vpexchangeprotocolidentifier.md)
+  A value that identifies which OpenID4VP exchange protocol a request or response uses.
+- [struct DigitalCredentialsQuery](./digitalcredentialsquery.md)
+  A request that describes the credentials and claims a relying party wants from a person’s digital ID.
+### Errors
 - [struct IdentityDocumentPresentmentError](./identitydocumentpresentmenterror.md)
-  An error type that is thrown from the identity document web presentment controller.
+  An error type the identity document web presentment controller throws.
 
 
 ---

@@ -24,6 +24,7 @@ let appAccountToken: UUID?
 ## Mentions
 
 - [Generating a signature for promotional offers](../generating-a-signature-for-promotional-offers.md)
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
 
 ## Discussion
 

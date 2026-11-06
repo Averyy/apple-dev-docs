@@ -9,6 +9,8 @@ A Boolean value that describes whether the Live Activity is out of date.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

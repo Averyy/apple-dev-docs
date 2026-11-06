@@ -22,6 +22,10 @@ The price of the Apple In-App Purchase that the system records in the transactio
 var price: Decimal? { get }
 ```
 
+## Mentions
+
+- [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
+
 ## Discussion
 
 This value represents the price of the Apple In-App Purchase, in units of the [`currency`](./currency.md), that the system records in the transaction. The [`price`](./price.md) value reflects all of the following:
@@ -29,6 +33,8 @@ This value represents the price of the Apple In-App Purchase, in units of the [`
 - The price you configured in App Store Connect, which the system records on the purchase date ([`purchaseDate`](./purchasedate.md)).
 - The discount from a subscription offer in the [`offer`](./offer-swift.property.md) property, if the transaction includes an offer.
 - The [`purchasedQuantity`](./purchasedquantity.md) of a consumable Apple In-App Purchase. The price value shows the total amount of the transaction for the quantity that the customer purchased.
+
+For a multiseat subscription, the value is the average price per seat, not the total. To get the amount the transaction charged for its seats, use the price tiers in [`multiSeatInfo`](./multiseatinfo-swift.property.md).
 
 > ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 

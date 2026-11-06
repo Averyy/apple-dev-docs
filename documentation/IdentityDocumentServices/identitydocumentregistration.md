@@ -34,6 +34,7 @@ Each kind of document format needs its own concrete type that conforms to this p
 - [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
 - [MobileDocumentRegistration](./mobiledocumentregistration.md)
+- [VerifiableCredentialRegistration](./verifiablecredentialregistration.md)
 
 ## See Also
 
@@ -42,6 +43,8 @@ Each kind of document format needs its own concrete type that conforms to this p
   A store that notifies the system which documents an app has available for presentment.
 - [struct MobileDocumentRegistration](./mobiledocumentregistration.md)
   A type you use to register mobile documents.
+- [struct VerifiableCredentialRegistration](./verifiablecredentialregistration.md)
+  A type used for registering SD-JWT verifiable credentials.
 
 
 ---

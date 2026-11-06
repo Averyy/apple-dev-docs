@@ -27,6 +27,8 @@ There are several ways to create a new [`NSFontDescriptor`](./nsfontdescriptor.m
 
 All attributes in the attributes dictionary are optional.
 
+`NSFontDescriptor` doesn’t support subclassing. To extend it, store a font descriptor in a property of your own type.
+
 ## Topics
 
 ### Creating a Font Descriptor

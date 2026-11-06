@@ -7,13 +7,13 @@
 Specifies the point where activations occur in the view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityActivationPoint(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityActivationPoint(_:))
 
 > **Deprecated**: Use [`accessibilityActivationPoint(_:)`](./accessibilityactivationpoint%28_%29-10po1.md) instead.
 

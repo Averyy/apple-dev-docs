@@ -26,7 +26,7 @@ init(seedBox: NormalizedRect, _ revision: GenerateIterativeSegmentationRequest.R
 
 ## Discussion
 
-No result will be produced if the box is outside the `regionOfInterest`. By default, the `regionOfInterest` is the whole image.
+No result will be produced if the box is outside the [`regionOfInterest`](../imageprocessingrequest/regionofinterest.md). By default, the `regionOfInterest` is the whole image.
 
 ## See Also
 

@@ -7,13 +7,13 @@
 Removes the given traits from this view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityRemoveTraits(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityRemoveTraits(_:))
 
 > **Deprecated**: Use [`accessibilityRemoveTraits(_:)`](./accessibilityremovetraits%28_%29.md) instead.
 

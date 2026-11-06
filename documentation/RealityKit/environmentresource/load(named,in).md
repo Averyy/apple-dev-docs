@@ -7,12 +7,12 @@
 Synchronously loads an environment resource from a bundle.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
 - Mac Catalyst 13.0+
-- macOS 10.15+ - Deprecated in 27.2
-- tvOS 26.0+ - Deprecated in 27.2
-- visionOS - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
+- tvOS 26.0+ - Deprecated in 27.3
+- visionOS - Deprecated in 27.3
 
 > **Deprecated**: Use `init(named:in:skyboxMode:)` instead. Will be deprecated to support skybox-free EnvironmentResource.
 

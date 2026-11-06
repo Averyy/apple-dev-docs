@@ -27,7 +27,11 @@ Then, approach WidgetKit adoption iteratively. For example, start with a nonconf
 
 Widgets come in different sizes, from circular accessory widgets on the Lock Screen and complications on Apple Watch to extra-large widgets on Apple Vision Pro. You can choose the sizes and complications you want to support, but consider supporting as many sizes and complications as possible.
 
-Live Activities are available on iPhone and iPad and appear on the Lock Screen and in the Dynamic Island on supported devices. Additionally, Live Activities appear on a paired Mac or Apple Watch, and in CarPlay. When you add support for Live Activities, you need to create minimal, compact, and extended presentations that make sure your Live Activities appear correctly for each platform.
+Live Activities are available on iPhone and iPad and appear on the Lock Screen and in the Dynamic Island on supported devices. Additionally, Live Activities appear on a paired Apple Watch and in CarPlay.
+
+On Mac, Live Activities appear in the menu bar, or at the top edge of the display on a Mac with a Dynamic Island. A Mac mirrors Live Activities from a nearby iPhone. In macOS 27.3 and later, you can also create Live Activities for your Mac app. If your iOS app already supports Live Activities, your universal app displays them on Mac with no code changes. If your app is macOS only, you can use ActivityKit to create Live Activities.
+
+When you add support for Live Activities, you need to create minimal, compact, and extended presentations that make sure your Live Activities appear correctly for each platform.
 
 In iOS, iPadOS, and macOS, your app can offer controls people place in Control Center. On Mac, people can also place controls on the menu bar as menu bar items. On Apple Watch, controls from your watchOS app or a paired iPhone appear in Control Center and the Smart Stack, and people can place them on the Action button of Apple Watch Ultra.
 
@@ -44,7 +48,7 @@ This table shows the functionality available for each platform:
 | Corner accessory widgets | No | No | Watch complications | No | No |
 | Rectangular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | Yes |
 | Inline accessory widgets | Lock Screen | Lock Screen | Watch complications | No | No |
-| Live Activities | Yes | Yes | From a paired iPhone | From a paired iPhone | No |
+| Live Activities | Yes | Yes | From a paired iPhone | Mirrored from an iPhone, or created by Mac apps | No |
 | Controls | Yes | Yes | Yes | Yes | No |
 
 ### Leverage additional frameworks

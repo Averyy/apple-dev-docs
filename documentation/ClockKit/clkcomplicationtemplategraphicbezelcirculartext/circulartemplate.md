@@ -7,7 +7,7 @@
 The circular template to display.
 
 **Availability**:
-- watchOS 5.0+ - Deprecated in 27.2
+- watchOS 5.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) to create complications. For more information, see Migrating to WidgetKit.
 

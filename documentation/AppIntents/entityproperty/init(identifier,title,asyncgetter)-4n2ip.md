@@ -27,7 +27,7 @@ Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable
 
 - `identifier`: The identifier of the property
 - `title`: A word or short phrase summarizing this property.
-- `asyncGetter`: The getter reference for the property
+- `asyncGetter`: The async getter for the property
 
 
 ---

@@ -33,6 +33,20 @@ Use this handler to update your app’s UI in response to the user’s attention
 
 > **Note**: In visionOS, the system doesn’t call this handler for gaze-based highlight.
 
+## See Also
+
+### Getting the element attributes
+- [var title: String](./title.md)
+  The title of the menu element.
+- [var subtitle: String?](./subtitle.md)
+  The subtitle to display alongside the menu element’s title.
+- [var image: UIImage?](./image.md)
+  The image to display alongside the menu element’s title.
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
+- [UIMenuElement.ImageVisibility](./imagevisibility.md)
+  Visibility options for a menu element’s image.
+
 
 ---
 

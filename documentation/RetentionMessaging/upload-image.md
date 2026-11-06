@@ -11,8 +11,8 @@ Uploads an image to use for retention messaging.
 
 ## Mentions
 
-- [Identifying rate limits](./identifying-rate-limits.md)
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
 ## Discussion
@@ -28,13 +28,21 @@ You can upload image files that meet the following requirements:
 
 The maximum number of images you can configure for each app is 2000. The endpoint returns a `MaximumNumberOfImagesReachedError` response if an attempt to upload an image exceeds this limit. Call [`Delete Image`](./delete-image.md) to delete images.
 
-Use full-size images for a message, or the smaller bullet point-size images to use as bullet points.
+Use full-size or universal asset images for a message, or the smaller bullet point-size images to use as bullet points.
 
 ### Upload full-size images
 
 A full-size image is up to 3840 × 2160 pixels, where the width must be 3840 pixels, and the height can be between 160 to 2160 pixels.
 
 You can add alternative text for images when you call [`Upload Message`](./upload-message.md) and associate an image with a message using [`UploadMessageImage`](./uploadmessageimage.md).
+
+### Upload universal asset images
+
+Universal asset images are 5244 x 2950 pixels.
+
+Similar to full-size images, you can add alternative text for universal asset images when you call [`Upload Message`](./upload-message.md) and associate an image with a message using [`UploadMessageImage`](./uploadmessageimage.md).
+
+> **Note**: This endpoint doesn’t share universal asset images with your Asset Library in App Store Connect.
 
 ### Upload images for bullet points
 

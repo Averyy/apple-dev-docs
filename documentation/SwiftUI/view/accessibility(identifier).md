@@ -7,13 +7,13 @@
 Uses the specified string to identify the view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityIdentifier(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityIdentifier(_:))
 
 > **Deprecated**: Use [`accessibilityIdentifier(_:)`](./accessibilityidentifier%28_%29.md) instead.
 

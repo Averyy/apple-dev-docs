@@ -25,6 +25,9 @@ var appTransactionID: String { get }
 ## Mentions
 
 - [Generating JWS to sign App Store requests](../generating-jws-to-sign-app-store-requests.md)
+- [Hosting group invitations in your app](../hosting-group-invitations-in-your-app.md)
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
+- [Testing multiseat subscriptions](../testing-multiseat-subscriptions.md)
 
 ## Discussion
 

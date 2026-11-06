@@ -30,6 +30,22 @@ An overlay arrangement view places a primary view and a secondary view in a stac
 - When someone holds a folded iPhone Duo in landscape orientation, the arrangement view places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement view places the secondary view in the top position and the primary view in the bottom position.
 
+**Portrait open**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, floating near the center.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-3@2x.png)
+
+**Portrait folded**:
+
+![A folded iPhone Duo in portrait orientation showing an arrangement view. The secondary view fills the top half of the display, and the primary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-4@2x.png)
+
+**Landscape open**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, centered along the bottom edge.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-1@2x.png)
+
+**Landscape folded**:
+
+![A folded iPhone Duo in landscape orientation showing an arrangement view. The secondary view fills the left half of the display, and the primary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-5@2x.png)
+
 Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`overlay`](./arrangementviewstyle/overlay.md), as the following example shows:
 
 ```swift

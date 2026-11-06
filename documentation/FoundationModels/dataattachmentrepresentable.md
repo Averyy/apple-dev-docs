@@ -11,6 +11,7 @@ A type that you use as the content of a data attachment.
 - iPadOS 27.2+
 - Mac Catalyst 27.2+
 - macOS 27.2+
+- tvOS 27.2+
 - visionOS 27.2+
 - watchOS 27.2+
 
@@ -22,7 +23,7 @@ protocol DataAttachmentRepresentable : Sendable
 
 ## Overview
 
-Conform to this protocol to describe how a value serializes into — and deserializes back from — a [`Transcript.DataAttachment`](./transcript/dataattachment.md). The serialized form is a portable `Data` blob identified by a content type identifier, which is what gets persisted when a [`Transcript`](./transcript.md) is encoded, so a transcript remains readable even in environments where the declaring package isn’t installed.
+Conform to this protocol to describe how a value serializes into — and deserializes back from — a [`Transcript.DataAttachment`](./transcript/dataattachment.md). The serialized form is a portable [`Data`](../Foundation/data.md) blob identified by a content type identifier, which is what gets persisted when a [`Transcript`](./transcript.md) is encoded, so a transcript remains readable even in environments where the declaring package isn’t installed.
 
 A [`LanguageModel`](./languagemodel.md) advertises which content types it accepts through [`supportsDataAttachmentType(_:)`](./languagemodel/supportsdataattachmenttype%28_%29.md); the framework validates each data attachment’s [`contentType`](./transcript/dataattachment/contenttype.md) against that predicate before dispatching to the executor.
 

@@ -7,7 +7,7 @@
 A template for displaying an image and text in the clock face’s corner.
 
 **Availability**:
-- watchOS 5.0+ - Deprecated in 27.2
+- watchOS 5.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 

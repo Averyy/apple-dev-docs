@@ -92,11 +92,11 @@ Because [`backForwardList`](./backforwardlist-swift.property.md) is an observabl
 - [WebPage.BackForwardList.Item](./backforwardlist-swift.struct/item.md)
   A representation of a resource that a webpage previously visited.
 ### Instance Properties
-- [var backList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/backlist.md)
+- [let backList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/backlist.md)
   The array of items that precede the current item.
-- [var currentItem: WebPage.BackForwardList.Item?](./backforwardlist-swift.struct/currentitem.md)
+- [let currentItem: WebPage.BackForwardList.Item?](./backforwardlist-swift.struct/currentitem.md)
   The current item.
-- [var forwardList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/forwardlist.md)
+- [let forwardList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/forwardlist.md)
   The array of items that follow the current item.
 ### Subscripts
 - [subscript(Int) -> WebPage.BackForwardList.Item?](./backforwardlist-swift.struct/subscript%28_%29.md)

@@ -35,12 +35,6 @@ To use the objects for detection in a world-tracking AR session, provide this se
 - `name`: The name of an AR Resource Group from your Xcode project’s main asset catalog.
 - `bundle`: The bundle from which to load asset catalog resources, or `nil` to use your app’s main bundle.
 
-## See Also
-
-### Loading Reference Objects
-- [init(archiveURL: URL) throws](./init%28archiveurl%29.md)
-  Loads a reference object from the specified file URL.
-
 
 ---
 

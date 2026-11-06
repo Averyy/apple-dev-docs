@@ -18,7 +18,8 @@ string imageSize
 ## Possible Values
 
 - `FULL_SIZE`: 3840 pixels in width, and from 160 to 2160 pixels in height, inclusive.
-- `BULLET_POINT`: 1024 by 1024 pixels, to use for bullet points only.
+- `UNIVERSAL_ASSET`: 5244 x 2950 pixels.
+- `BULLET_POINT`: 1024 x 1024 pixels, to use for bullet points only.
 
 ## Mentions
 
@@ -30,7 +31,7 @@ string imageSize
 
 ## Discussion
 
-Specify the `FULL_SIZE` image size when you upload an image to appear above the message body.
+Specify the `FULL_SIZE` or `UNIVERSAL_ASSET` image size when you upload an image to appear above the message body.
 
 Specify the `BULLET_POINT` size when you upload an image to use as a bullet point icon.
 

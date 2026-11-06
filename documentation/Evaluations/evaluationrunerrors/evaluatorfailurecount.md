@@ -25,6 +25,14 @@ var evaluatorFailureCount: Int
 
 A single row can contribute more than one when multiple evaluators fail on the same sample.
 
+## See Also
+
+### Counting failures
+- [var inferenceFailureCount: Int](./inferencefailurecount.md)
+  The number of samples whose subject failed to be produced.
+- [var failingEvaluatorTypes: Set<String>](./failingevaluatortypes.md)
+  The set of evaluator type names that threw at least once.
+
 
 ---
 

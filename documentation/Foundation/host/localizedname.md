@@ -7,7 +7,7 @@
 Returns the name used as by default when publishing `NSNetServices`.
 
 **Availability**:
-- macOS 10.6+ - Deprecated in 27.2
+- macOS 10.6+ - Deprecated in 27.3
 
 ## Declaration
 

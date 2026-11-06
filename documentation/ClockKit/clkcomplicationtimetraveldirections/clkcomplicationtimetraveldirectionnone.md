@@ -7,7 +7,7 @@
 No past or future data support. Use this option when it doesn’t make sense to provide future or past data for your complication.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 ## Declaration
 

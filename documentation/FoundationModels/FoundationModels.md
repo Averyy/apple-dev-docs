@@ -59,6 +59,13 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
   Enhance the experience in your app by prompting an on-device large language model.
 - [Adding intelligent app features with generative models](./adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
+### Apple Foundation Models
+- [Detecting available Apple Foundation Models](./detecting-available-apple-foundation-models.md)
+  Discover which Apple Foundation Models your app can use across devices and platforms.
+- [class SystemLanguageModel](./systemlanguagemodel.md)
+  An on-device Apple Foundation Model capable of text generation tasks.
+- [class PrivateCloudComputeLanguageModel](./privatecloudcomputelanguagemodel.md)
+  A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
 ### Sessions and prompts
 - [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
@@ -181,6 +188,12 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
   A type that you use as the content of a data attachment.
 - [protocol DataEntryRepresentable](./dataentryrepresentable.md)
   A type that a model can produce and represent as a top-level transcript entry.
+### Structures
+- [struct DynamicInstructionsGroup](./dynamicinstructionsgroup.md)
+  A dynamic instructions type that groups its content so a single modifier can apply to the whole group.
+### Macros
+- [macro Guide(key: String, description: String?)](./guide%28key,description%29.md)
+- [macro Guide(key:description:_:)](./guide%28key,description,_%29.md)
 
 
 ---

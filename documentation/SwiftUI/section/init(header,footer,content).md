@@ -7,13 +7,13 @@
 Creates a section with a header, footer, and the provided section content.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Section(content:header:footer:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Section(content:header:footer:))
 
 > **Deprecated**: Use [`init(content:header:footer:)`](./init%28content,header,footer%29.md) instead.
 

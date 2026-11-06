@@ -414,7 +414,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekerror": {
       "file_path": "documentation/EventKit/ekerror.md",
-      "hash": "fdfa716774d4d2eb2564548a89e2588d9a7943c420eb4ebfe2ee8d329508fa0f"
+      "hash": "1900522c5c85c99af451ac372d0e46f691ce749e4b19c09e83cb6bcc3ab8338f"
     },
     "https://developer.apple.com/documentation/eventkit/ekerror/alarmgreaterthanrecurrence": {
       "file_path": "documentation/EventKit/ekerror/alarmgreaterthanrecurrence.md",
@@ -618,7 +618,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekerror/errordomain": {
       "file_path": "documentation/EventKit/ekerror/errordomain.md",
-      "hash": "3b6af9ab45b3dac309db0841ef6daaba1b92f86472450f56344b0bdbb356001d"
+      "hash": "cad0101a9b1fc81587a863df9e28cae57f523d56698953328c249b76ab291d1b"
     },
     "https://developer.apple.com/documentation/eventkit/ekerror/eventnotmutable": {
       "file_path": "documentation/EventKit/ekerror/eventnotmutable.md",
@@ -2114,7 +2114,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror.json": {
       "file_path": "documentation/EventKit/ekerror.md",
-      "hash": "fdfa716774d4d2eb2564548a89e2588d9a7943c420eb4ebfe2ee8d329508fa0f"
+      "hash": "1900522c5c85c99af451ac372d0e46f691ce749e4b19c09e83cb6bcc3ab8338f"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror/alarmgreaterthanrecurrence.json": {
       "file_path": "documentation/EventKit/ekerror/alarmgreaterthanrecurrence.md",
@@ -2318,7 +2318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror/errordomain.json": {
       "file_path": "documentation/EventKit/ekerror/errordomain.md",
-      "hash": "3b6af9ab45b3dac309db0841ef6daaba1b92f86472450f56344b0bdbb356001d"
+      "hash": "cad0101a9b1fc81587a863df9e28cae57f523d56698953328c249b76ab291d1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror/eventnotmutable.json": {
       "file_path": "documentation/EventKit/ekerror/eventnotmutable.md",

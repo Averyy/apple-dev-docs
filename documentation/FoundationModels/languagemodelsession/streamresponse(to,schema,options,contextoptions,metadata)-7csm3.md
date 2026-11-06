@@ -11,6 +11,7 @@ Produces a response stream to a prompt and schema.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -32,7 +33,7 @@ A response stream that produces [`GeneratedContent`](../generatedcontent.md) con
 
 ## Discussion
 
-Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
+Consider using the default value of `true` for [`includeSchemaInPrompt`](../contextoptions/includeschemainprompt.md). The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 
 > ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 

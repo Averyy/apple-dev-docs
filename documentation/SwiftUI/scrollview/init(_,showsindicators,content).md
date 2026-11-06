@@ -7,13 +7,13 @@
 Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
-- Mac Catalyst 13.0+ - Deprecated in 27.2
-- macOS 10.15+ - Deprecated in 27.2
-- tvOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
+- Mac Catalyst 13.0+ - Deprecated in 27.3
+- macOS 10.15+ - Deprecated in 27.3
+- tvOS 13.0+ - Deprecated in 27.3
 - visionOS 1.0+
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the ScrollView(_:content:) initializer and the scrollIndicators(:_) modifier
 

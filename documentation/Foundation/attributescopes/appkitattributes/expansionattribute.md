@@ -5,7 +5,7 @@
 **Role**: Enumeration
 
 **Availability**:
-- macOS 12.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
 
 > **Deprecated**: This attribute is not supported with TextKit 2
 

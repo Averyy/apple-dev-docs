@@ -74,6 +74,8 @@ Use the [`value`](./subscriptionperiod/value.md) and the [`unit`](./subscription
   Information about a subscription offer that you configure in App Store Connect.
 - [Product.SubscriptionInfo.Status](./subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
+- [let supportsMultiSeatPurchase: Bool](./supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 
 
 ---

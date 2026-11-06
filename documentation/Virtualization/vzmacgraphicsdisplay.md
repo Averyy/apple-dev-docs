@@ -24,6 +24,8 @@ class VZMacGraphicsDisplay
 ### Getting the display’s pixel density
 - [var pixelsPerInch: Int](./vzmacgraphicsdisplay/pixelsperinch.md)
   Returns the pixel density of the display in pixels per inch.
+### Instance Properties
+- [var isHDREnabled: Bool](./vzmacgraphicsdisplay/ishdrenabled.md)
 
 ## Relationships
 

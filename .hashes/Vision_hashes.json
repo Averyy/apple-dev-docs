@@ -1738,11 +1738,11 @@
     },
     "https://developer.apple.com/documentation/vision/generateiterativesegmentationrequest/init(seedbox:_:)": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedbox,_).md",
-      "hash": "f054772237f270469b6a3d94b65115bb6e56f6f822fef06a7e929f4c5686586b"
+      "hash": "73797d78a67e3299e53669b55fe3ac7d44201b1902456fb9e476782b5b3d26eb"
     },
     "https://developer.apple.com/documentation/vision/generateiterativesegmentationrequest/init(seedpoint:_:)": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedpoint,_).md",
-      "hash": "15c0cfdb8aadd448d2c39b5610eda2a1b68af408c9adf0bd791a1b092f4a1e71"
+      "hash": "cb8b9febb5ddcf9ceb4ed721221dd22f503e6d77582453137d2320df59312ff0"
     },
     "https://developer.apple.com/documentation/vision/generateiterativesegmentationrequest/init(seedscribblebuffer:_:)": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedscribblebuffer,_).md",
@@ -9382,11 +9382,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/generateiterativesegmentationrequest/init(seedbox:_:).json": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedbox,_).md",
-      "hash": "f054772237f270469b6a3d94b65115bb6e56f6f822fef06a7e929f4c5686586b"
+      "hash": "73797d78a67e3299e53669b55fe3ac7d44201b1902456fb9e476782b5b3d26eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/generateiterativesegmentationrequest/init(seedpoint:_:).json": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedpoint,_).md",
-      "hash": "15c0cfdb8aadd448d2c39b5610eda2a1b68af408c9adf0bd791a1b092f4a1e71"
+      "hash": "cb8b9febb5ddcf9ceb4ed721221dd22f503e6d77582453137d2320df59312ff0"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/generateiterativesegmentationrequest/init(seedscribblebuffer:_:).json": {
       "file_path": "documentation/Vision/generateiterativesegmentationrequest/init(seedscribblebuffer,_).md",

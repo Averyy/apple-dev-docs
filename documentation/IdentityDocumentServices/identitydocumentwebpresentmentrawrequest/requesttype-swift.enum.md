@@ -22,13 +22,13 @@ enum RequestType
 
 ### Enumeration Cases
 - [IdentityDocumentWebPresentmentRawRequest.RequestType.iso18013MobileDocument](./requesttype-swift.enum/iso18013mobiledocument.md)
-  Corresponds to the request format defined in ISO 18013-7.
+  A case that corresponds to the request format defined in ISO 18013-7.
+- [IdentityDocumentWebPresentmentRawRequest.RequestType.openID4VP(_:)](./requesttype-swift.enum/openid4vp%28_%29.md)
+  Corresponds to a request format defined in OpenID for Verifiable Presentations, carrying the exchange protocol the request arrived as.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../../Swift/equatable.md)
-- [Hashable](../../Swift/hashable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 

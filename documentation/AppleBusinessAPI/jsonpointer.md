@@ -7,7 +7,7 @@
 An object that contains the JSON pointer that indicates the location of the error.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

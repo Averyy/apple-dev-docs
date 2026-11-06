@@ -60,6 +60,11 @@ struct AppTransaction
   The platform on which the customer originally purchased the app.
 - [AppStore.Platform](./appstore/platform.md)
   Values that represent Apple platforms.
+### Getting the store
+- [let storeType: AppTransaction.StoreType](./apptransaction/storetype-swift.property.md)
+  The store where the original purchase of the app took place.
+- [AppTransaction.StoreType](./apptransaction/storetype-swift.struct.md)
+  Values that identify the store where the original purchase of an app took place.
 ### Getting purchase dates
 - [let originalPurchaseDate: Date](./apptransaction/originalpurchasedate.md)
   The date the customer originally purchased the app from the App Store.
@@ -81,16 +86,13 @@ struct AppTransaction
 ### Deprecated
 - [var originalPlatformStringRepresentation: String](./apptransaction/originalplatformstringrepresentation.md)
   The string representation of the platform on which the customer originally purchased the app.
+- [var storeTypeStringRepresentation: String](./apptransaction/storetypestringrepresentation.md)
+  The string representation of the store where the original purchase of the app was made.
 ### Structures
 - [AppTransaction.AppTransactions](./apptransaction/apptransactions.md)
-- [AppTransaction.StoreType](./apptransaction/storetype-swift.struct.md)
 ### Instance Properties
 - [var revocationDate: Date?](./apptransaction/revocationdate.md)
   The revocation date of the app purchase.
-- [let storeType: AppTransaction.StoreType](./apptransaction/storetype-swift.property.md)
-  The store where the original purchase of the app was made.
-- [var storeTypeStringRepresentation: String](./apptransaction/storetypestringrepresentation.md)
-  The string representation of the store where the original purchase of the app was made.
 ### Type Properties
 - [static var all: AppTransaction.AppTransactions](./apptransaction/all.md)
   Returns all the `AppTransaction`s for this version of the app.

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Type Method
 
-Returns the cursor for resizing a row (horizontal divider) in the specified direction.
+Returns the cursor for resizing a row (horizontal divider) in the specified directions.
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -16,9 +16,23 @@ Returns the cursor for resizing a row (horizontal divider) in the specified dire
 class func rowResize(directions: NSVerticalDirection.Set) -> NSCursor
 ```
 
+## Return Value
+
+The row-resize cursor for the specified directions.
+
+## Discussion
+
+The cursor shows the directions in which the row can resize. The following table shows the cursor for each set of directions:
+
+| Directions | Cursor |
+| --- | --- |
+| `.up` | ![row-resize cursor, up](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-up@2x.png) |
+| `.down` | ![row-resize cursor, down](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-down@2x.png) |
+| `.all` | ![row-resize cursor, up and down](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-up-down@2x.png) |
+
 ## Parameters
 
-- `directions`: The directions in which a row can be resized. This must not be empty.
+- `directions`: The direction in which a row can resize. This must not be empty.
 
 ## See Also
 

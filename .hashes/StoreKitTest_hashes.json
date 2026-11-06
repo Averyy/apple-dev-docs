@@ -766,7 +766,7 @@
     },
     "https://developer.apple.com/documentation/storekittest/sktestsession/refundtransaction(identifier:)": {
       "file_path": "documentation/StoreKitTest/sktestsession/refundtransaction(identifier).md",
-      "hash": "4bf48803a7f92a0424f6756e6a4a09862c782985d6a0e2d5bf33c7837826e789"
+      "hash": "1cefae18da249bc1945614d2b35b3b782f58df2b95c5a0239101fec629d40aaa"
     },
     "https://developer.apple.com/documentation/storekittest/sktestsession/requestpriceincreaseconsentfortransaction(identifier:)": {
       "file_path": "documentation/StoreKitTest/sktestsession/requestpriceincreaseconsentfortransaction(identifier).md",
@@ -890,7 +890,7 @@
     },
     "https://developer.apple.com/documentation/storekittest/sktesttransaction/canceldate": {
       "file_path": "documentation/StoreKitTest/sktesttransaction/canceldate.md",
-      "hash": "99b2726a66874af522491288962d1c58236893dfbec83d1d12e964c271bae2f7"
+      "hash": "1d6da79c5bffe6f712a2c31f911172f5c00039a400719df6e3f91fdc20bfd403"
     },
     "https://developer.apple.com/documentation/storekittest/sktesttransaction/expirationdate": {
       "file_path": "documentation/StoreKitTest/sktesttransaction/expirationdate.md",
@@ -1770,7 +1770,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekittest/sktestsession/refundtransaction(identifier:).json": {
       "file_path": "documentation/StoreKitTest/sktestsession/refundtransaction(identifier).md",
-      "hash": "4bf48803a7f92a0424f6756e6a4a09862c782985d6a0e2d5bf33c7837826e789"
+      "hash": "1cefae18da249bc1945614d2b35b3b782f58df2b95c5a0239101fec629d40aaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekittest/sktestsession/requestpriceincreaseconsentfortransaction(identifier:).json": {
       "file_path": "documentation/StoreKitTest/sktestsession/requestpriceincreaseconsentfortransaction(identifier).md",
@@ -1894,7 +1894,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekittest/sktesttransaction/canceldate.json": {
       "file_path": "documentation/StoreKitTest/sktesttransaction/canceldate.md",
-      "hash": "99b2726a66874af522491288962d1c58236893dfbec83d1d12e964c271bae2f7"
+      "hash": "1d6da79c5bffe6f712a2c31f911172f5c00039a400719df6e3f91fdc20bfd403"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekittest/sktesttransaction/expirationdate.json": {
       "file_path": "documentation/StoreKitTest/sktesttransaction/expirationdate.md",

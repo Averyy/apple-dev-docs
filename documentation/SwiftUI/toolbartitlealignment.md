@@ -37,7 +37,7 @@ To read the alignment the system actually used, see [`toolbarTitleAlignment`](./
 
 ## Topics
 
-### Type Properties
+### Getting title alignment options
 - [static let automatic: ToolbarTitleAlignment](./toolbartitlealignment/automatic.md)
   The system determines the alignment.
 - [static let center: ToolbarTitleAlignment](./toolbartitlealignment/center.md)
@@ -52,6 +52,16 @@ To read the alignment the system actually used, see [`toolbarTitleAlignment`](./
 - [Hashable](../Swift/hashable.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Configuring the toolbar title display
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./view/toolbartitledisplaymode%28_%29.md)
+  Configures the toolbar title display mode for this view.
+- [struct ToolbarTitleDisplayMode](./toolbartitledisplaymode.md)
+  A type that defines the behavior of title of a toolbar.
+- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](./view/toolbartitlealignment%28_%29.md)
+  Sets the preferred alignment of the navigation bar’s title.
 
 
 ---

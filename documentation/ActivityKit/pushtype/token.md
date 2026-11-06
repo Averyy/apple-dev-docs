@@ -9,6 +9,8 @@ A constant you use to configure a Live Activity that updates its dynamic content
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

@@ -7,7 +7,7 @@
 The names used to create a monogram image.
 
 **Availability**:
-- tvOS 12.0+ - Deprecated in 27.2 (renamed: __TVMonogramContentConfiguration)
+- tvOS 12.0+ - Deprecated in 27.3 (renamed: __TVMonogramContentConfiguration)
 
 ## Declaration
 

@@ -29,11 +29,11 @@ typedef void (*)(void *, const void *) CGDataProviderReleaseBytePointerCallback;
 
 When Core Graphics no longer needs direct access to your provider data, your function is called. You may safely modify, move, or release your provider data at this time.
 
-For information on how to associate your function with a direct-access data provider, see `CGDataProviderCreateDirectAccess` and `CGDataProviderDirectAccessCallbacks`.
+For information on how to associate your function with a direct-access data provider, see [`init(directInfo:size:callbacks:)`](./cgdataprovider/init%28directinfo,size,callbacks%29.md) and [`CGDataProviderDirectCallbacks`](./cgdataproviderdirectcallbacks.md).
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions.  This is the same pointer you supplied to `CGDataProviderCreateDirectAccess`.
+- `info`: A generic pointer to private data shared among your callback functions.  This is the same pointer you supplied to [`init(directInfo:size:callbacks:)`](./cgdataprovider/init%28directinfo,size,callbacks%29.md).
 - `pointer`: A pointer to your provider data. This is the same pointer you returned in [`CGDataProviderGetBytePointerCallback`](./cgdataprovidergetbytepointercallback.md).
 
 ## See Also

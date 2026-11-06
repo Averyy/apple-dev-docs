@@ -17,7 +17,7 @@ The current item.
 
 ```swift
 @MainActor
-var currentItem: WebPage.BackForwardList.Item? { get }
+let currentItem: WebPage.BackForwardList.Item?
 ```
 
 ## Discussion

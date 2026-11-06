@@ -7,8 +7,10 @@
 A structure that contains the token to transfer a temporary, provisional home to a person’s home hub.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+The billing plan type, pricing model, and offers for one way of paying for an auto-renewable subscription.
+
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
@@ -19,17 +21,37 @@
 struct PricingTerms
 ```
 
+## Overview
+
+A subscription can have more than one set of pricing terms. For example, a yearly subscription can bill up front or monthly, and a subscription that supports multiseat purchases has seat-based pricing terms. Get a subscription’s pricing terms from [`pricingTerms`](./pricingterms-swift.property.md).
+
+To display the price, read [`pricingModel`](./pricingterms-swift.struct/pricingmodel-swift.property.md), which is either a single price or seat-based pricing with one or more price tiers.
+
 ## Topics
 
-### Instance Properties - generated
-- [let billingDisplayPrice: String](./pricingterms-swift.struct/billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./pricingterms-swift.struct/billingperiod.md)
+### Getting the billing plan type
 - [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./pricingterms-swift.struct/billingplantype.md)
-- [let billingPrice: Decimal](./pricingterms-swift.struct/billingprice.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./pricingterms-swift.struct/commitmentinfo.md)
+### Getting the pricing model
+- [let pricingModel: Product.SubscriptionInfo.PricingTerms.PricingModel](./pricingterms-swift.struct/pricingmodel-swift.property.md)
+  The pricing model of these pricing terms, which is either a single price or seat-based pricing.
+- [Product.SubscriptionInfo.PricingTerms.PricingModel](./pricingterms-swift.struct/pricingmodel-swift.enum.md)
+  The pricing models of an auto-renewable subscription, with the pricing details for each model.
+- [Product.SubscriptionInfo.PricingTerms.SinglePrice](./pricingterms-swift.struct/singleprice.md)
+  The price and commitment details of a subscription that has a single price.
+- [Product.SubscriptionInfo.PricingTerms.SeatBasedPricing](./pricingterms-swift.struct/seatbasedpricing.md)
+  The per-seat price tiers of a multiseat subscription.
+### Getting offers
 - [let subscriptionOffers: [Product.SubscriptionOffer]](./pricingterms-swift.struct/subscriptionoffers.md)
-### Subscripts - generated
 - [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](./pricingterms-swift.struct/subscript%28offers%29.md)
+### Deprecated
+- [let billingPrice: Decimal](./pricingterms-swift.struct/billingprice.md)
+  The price charged at each billing event, in local currency.
+- [let billingDisplayPrice: String](./pricingterms-swift.struct/billingdisplayprice.md)
+  A localized string representation of the price charged at each billing event.
+- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./pricingterms-swift.struct/billingperiod.md)
+  The period between renewals.
+- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./pricingterms-swift.struct/commitmentinfo.md)
+  The commitment the customer agrees to when they subscribe to the product.
 
 ## Relationships
 
@@ -38,6 +60,17 @@ struct PricingTerms
 - [Hashable](../../../Swift/hashable.md)
 - [Sendable](../../../Swift/sendable.md)
 - [SendableMetatype](../../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Getting pricing terms
+- [let pricingTerms: [Product.SubscriptionInfo.PricingTerms]](./pricingterms-swift.property.md)
+  The pricing terms available for the subscription, including its billing plan types and pricing models.
+- [Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
+- [Product.SubscriptionInfo.BillingInfo](./billinginfo.md)
+  The price charged at each billing event, and the period between renewals.
+- [Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
+- [Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
 
 
 ---

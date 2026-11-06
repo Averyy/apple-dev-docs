@@ -75,7 +75,12 @@ let entity = landmarkEntity.makeReference(
   The entity type’s unique identifier.
 - [let bundleIdentifier: String](./appentitydefinition/bundleidentifier.md)
   The bundle identifier of the app that includes the app entity.
+### Instance Properties
+- [var expect: IntentValueExpectationCallable<any IntentValueExpectation, AppEntityExpectation>](./appentitydefinition/expect.md)
+  A callable that creates an entity expectation from value expectations for the entity’s properties.
 ### Instance Methods
+- [func expectIdentifier(String) -> AppEntityIdentifierExpectation](./appentitydefinition/expectidentifier%28_%29.md)
+  Creates an expectation that an app entity is the instance with the specified identifier.
 - [func resolved(from: IntentFile) async throws -> AnyAppEntity](./appentitydefinition/resolved%28from%29-2fld0.md)
   Resolves an entity from an exported intent file through the entity type’s transferable conformance.
 - [func resolved<T>(from: T) async throws -> AnyAppEntity](./appentitydefinition/resolved%28from%29-4yp5n.md)
@@ -88,12 +93,16 @@ let entity = landmarkEntity.makeReference(
 ## Relationships
 
 ### Conforms To
+- [AppEntityExpectationProviding](./appentityexpectationproviding.md)
 - [AppIntentTypeDefinition](./appintenttypedefinition.md)
 - [Copyable](../Swift/copyable.md)
 - [Decodable](../Swift/decodable.md)
 - [Encodable](../Swift/encodable.md)
 - [Equatable](../Swift/equatable.md)
 - [Escapable](../Swift/escapable.md)
+- [IntentValueExpectation](./intentvalueexpectation.md)
+- [ResolvableAppEntityExpectation](./resolvableappentityexpectation.md)
+- [ResolvableIntentValueExpectation](./resolvableintentvalueexpectation.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 

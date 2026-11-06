@@ -25,6 +25,14 @@ Use this property alongside [`minimizationBehavior`](./minimizationbehavior.md) 
 
 The default value is `UIBarMinimizationRestorationBehaviorAutomatic`.
 
+## See Also
+
+### Configuring bar minimization
+- [minimizationBehavior](./minimizationbehavior.md)
+  The minimization behavior.
+- [safeAreaAdjustment](./safeareaadjustment.md)
+  The safe area adjustment during minimization.
+
 
 ---
 

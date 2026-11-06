@@ -24,6 +24,12 @@
 ### Conforms To
 - [UINSIntegerTraitDefinition](./uinsintegertraitdefinition.md)
 
+## See Also
+
+### System traits
+- [UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-c.class.md)
+  A trait that reports the alignment the navigation bar resolved for its title.
+
 
 ---
 

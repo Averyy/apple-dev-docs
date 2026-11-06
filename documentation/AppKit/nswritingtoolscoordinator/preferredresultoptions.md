@@ -36,6 +36,7 @@ Writing Tools can create plain text or rich text, and it can format text using l
   The actual level of Writing Tools support the system provides for your view.
 - [var resultOptions: NSWritingToolsResultOptions](./resultoptions.md)
   The type of content the system generates for your custom text view.
+- [var includesTextListMarkers: Bool](./includestextlistmarkers.md)
 
 
 ---

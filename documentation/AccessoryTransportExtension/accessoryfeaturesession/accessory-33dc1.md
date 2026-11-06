@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The accessory associated with this feature session.
+A reference to the accessory to which the session communicates.
 
 **Availability**:
 - iOS 27.0+

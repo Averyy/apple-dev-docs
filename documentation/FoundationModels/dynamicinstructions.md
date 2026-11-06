@@ -11,6 +11,7 @@ A type that represents dynamic instructions.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -73,6 +74,15 @@ struct PresentationInstructions: DynamicInstructions {
   A dynamic instructions type that’s type-erased.
 - [struct TupleDynamicInstructions](./tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
+### Instance Methods
+- [func onActivate(perform: sending () async -> Void) -> some DynamicInstructions](./dynamicinstructions/onactivate%28perform%29.md)
+  Runs an action when these dynamic instructions become active.
+- [func onDeactivate(perform: sending () async -> Void) -> some DynamicInstructions](./dynamicinstructions/ondeactivate%28perform%29.md)
+  Runs an action when these dynamic instructions become inactive.
+### Type Aliases
+- [DynamicInstructions.Group](./dynamicinstructions/group.md)
+- [DynamicInstructions.SessionBinding](./dynamicinstructions/sessionbinding.md)
+- [DynamicInstructions.SessionState](./dynamicinstructions/sessionstate.md)
 
 ## Relationships
 
@@ -80,6 +90,7 @@ struct PresentationInstructions: DynamicInstructions {
 - [AnyDynamicInstructions](./anydynamicinstructions.md)
 - [ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
 - [DynamicInstructionsForEach](./dynamicinstructionsforeach.md)
+- [DynamicInstructionsGroup](./dynamicinstructionsgroup.md)
 - [EmptyDynamicInstructions](./emptydynamicinstructions.md)
 - [Instructions](./instructions.md)
 - [TupleDynamicInstructions](./tupledynamicinstructions.md)

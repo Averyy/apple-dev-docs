@@ -86,7 +86,14 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
 - [HealthKit Functions](./healthkit-functions.md)
 - [Macros](./healthkit-macros.md)
 - [HealthKit Variables](./healthkit-variables.md)
+### Enumerations
+- [enum HKReferenceSex](./hkreferencesex.md)
+- [HKMedicationDoseEventLogStatus](./hkmedicationdoseevent/logstatus-swift.enum.md)
+  The statuses the system assigns to a logged medication dose event.
+- [HKMedicationDoseEventScheduleType](./hkmedicationdoseevent/scheduletype-swift.enum.md)
+  The kind of schedule the system associates with a logged medication dose event.
 ### Variables
+- [HKCharacteristicTypeIdentifierReferenceSex](./hkcharacteristictypeidentifier/referencesex.md)
 - [HKHealthConceptDomainMedication](./hkhealthconceptdomain/medication.md)
   The domain that represents medication concepts.
 - [HKMedicationGeneralFormCapsule](./hkmedicationgeneralform/capsule.md)
@@ -126,11 +133,7 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
 - [HKMedicationGeneralFormUnknown](./hkmedicationgeneralform/unknown.md)
   The system doesn’t know the general form of the medication.
 - [HKQuantityTypeIdentifierHeartRateVariabilityRMSSD](./hkquantitytypeidentifier/heartratevariabilityrmssd.md)
-### Enumerations
-- [HKMedicationDoseEventLogStatus](./hkmedicationdoseevent/logstatus-swift.enum.md)
-  The statuses the system assigns to a logged medication dose event.
-- [HKMedicationDoseEventScheduleType](./hkmedicationdoseevent/scheduletype-swift.enum.md)
-  The kind of schedule the system associates with a logged medication dose event.
+- [HKQuantityTypeIdentifierHipCircumference](./hkquantitytypeidentifier/hipcircumference.md)
 
 
 ---

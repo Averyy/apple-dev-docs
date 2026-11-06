@@ -63,7 +63,7 @@ For [`metallic`](./physicallybasedmaterial/metallic-swift.property.md) and [`rou
 
 *Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores vectors by storing its `X`, `Y`, and `Z` value as the `R`, `G`, and `B` components of the corresponding pixel in a UV-mapped image. RealityKit uses those normals to do lighting calculations, which results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model.
 
-RealityKit’s `PhysicallyBasedMaterial` supports normal maps using the [`normal`](./physicallybasedmaterial/normal-swift.property.md) property.
+`PhysicallyBasedMaterial` in RealityKit supports normal maps using the [`normal`](./physicallybasedmaterial/normal-swift.property.md) property.
 
 > **Note**: RealityKit uses *tangent space normal maps,* which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
 

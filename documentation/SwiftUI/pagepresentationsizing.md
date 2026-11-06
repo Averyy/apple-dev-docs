@@ -23,7 +23,7 @@ struct PagePresentationSizing
 
 ## Overview
 
-On iOS, `.page` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see `PresentationSizing.fitted` or implement your own custom [`PresentationSizing`](./presentationsizing.md).
+On iOS, `.page` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see [`fitted`](./presentationsizing/fitted.md) or implement your own custom [`PresentationSizing`](./presentationsizing.md).
 
 > **See Also**: [`page`](./presentationsizing/page.md)
 
@@ -42,7 +42,7 @@ On iOS, `.page` sizing enforces a platform-defined floor for the vertical and ho
 - [struct FittedPresentationSizing](./fittedpresentationsizing.md)
   The size of the presentation is dictated by the ideal size of the content.
 - [struct FormPresentationSizing](./formpresentationsizing.md)
-  The size is appropriate for forms and slightly less wide than`.page`
+  The size is appropriate for forms and slightly less wide than a page.
 
 
 ---

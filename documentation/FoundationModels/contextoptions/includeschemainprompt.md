@@ -11,6 +11,7 @@ A Boolean value that indicates whether to inject the schema into the prompt to b
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 

@@ -918,7 +918,7 @@
     },
     "https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset/init(itemcontenttype:)": {
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/init(itemcontenttype).md",
-      "hash": "679501efa7d255112ea3243705e86b8f08747af1e58d547c8e69a316caf62fea"
+      "hash": "20aaef50a412e7474ff9a14746742596c9bd2aaf4d2293394b93e876edfd1787"
     },
     "https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset/instantmessageaddresses": {
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/instantmessageaddresses.md",
@@ -4174,7 +4174,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchableitemattributeset/init(itemcontenttype:).json": {
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/init(itemcontenttype).md",
-      "hash": "679501efa7d255112ea3243705e86b8f08747af1e58d547c8e69a316caf62fea"
+      "hash": "20aaef50a412e7474ff9a14746742596c9bd2aaf4d2293394b93e876edfd1787"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchableitemattributeset/instantmessageaddresses.json": {
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/instantmessageaddresses.md",

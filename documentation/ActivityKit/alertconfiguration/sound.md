@@ -9,6 +9,8 @@ The sound the system plays when the Live Activity alert appears on a person’s 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

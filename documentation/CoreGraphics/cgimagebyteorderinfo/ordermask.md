@@ -5,13 +5,13 @@
 **Role**: Case
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- tvOS - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- tvOS - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__byteOrderInfoMask)
 
 ## Declaration
 

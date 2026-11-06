@@ -30,6 +30,8 @@ struct AdvancedCommerceInfo
   Information about the offer that was redeemed as part of the purchase.
 - [Transaction.AdvancedCommerceInfo.Refund](./advancedcommerceinfo-swift.struct/refund.md)
   Information about refunds that were issued as part of this transaction.
+- [Transaction.AdvancedCommerceInfo.SeatPriceTier](./advancedcommerceinfo-swift.struct/seatpricetier.md)
+  A per-seat price and the number of seats it covers, as your Advanced Commerce API request defines them.
 - [Transaction.AdvancedCommerceInfo.Partner](./advancedcommerceinfo-swift.struct/partner.md)
 ### Instance Properties
 - [let description: String?](./advancedcommerceinfo-swift.struct/description.md)

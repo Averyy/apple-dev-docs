@@ -7,7 +7,11 @@
 Get information about a device in an organization.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
+
+## Mentions
+
+- [Understanding webhook events](../apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.md)
 
 ### Example
 
@@ -46,7 +50,7 @@ curl "https://api-business.apple.com/v1/orgDevices/{id}" \
             "123456789012347"
           ],
           "eid": "89049037640158663184237812557346",
-          "purchaseSourceUid": "-2085650007946880",
+          "purchaseSourceId": "-2085650007946880",
           "purchaseSourceType": "APPLE"
         },
         "relationships": {

@@ -24,7 +24,7 @@ RealityKit provides high-performance 3D simulation and rendering capabilities yo
 
 ![A screenshot that shows a virtual warehouse environment set up as a theater. A movie showing on a big floating screen features a wheeled robot rolling through an outdoor environment.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/realityKit-hero-image.png)
 
-Use RealityKit’s rich functionality to create compelling augmented reality (AR) experiences:
+Use the rich functionality of RealityKit to create compelling augmented reality (AR) experiences:
 
 - Create and import full RealityKit scenes with models, animations, and Spatial Audio by using Reality Composer Pro for visionOS.
 - Build or modify scenes at runtime by adding 3D models, shape primitives, and sounds from code.

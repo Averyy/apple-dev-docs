@@ -19,7 +19,7 @@ The app intents you create conform to the [`AppIntent`](./appintent.md) protocol
 - [protocol SetValueIntent](./setvalueintent.md)
   An intent that contains a value which can be set.
 - [protocol DeleteIntent](./deleteintent.md)
-  Delete the associated entity(s).
+  An app intent that deletes one or more entities.
 - [protocol DeprecatedAppIntent](./deprecatedappintent.md)
   An app intent that marks an action as deprecated and informs people which action to use instead.
 ### Search
@@ -29,6 +29,10 @@ The app intents you create conform to the [`AppIntent`](./appintent.md) protocol
   A type that tells your app to match its items against a provided string.
 - [enum StringSearchScope](./stringsearchscope.md)
   Constants that describe the types of content your app includes in search results when the search criteria is a string.
+- [struct EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
+  Search request criteria that uses an entity collection to specify the items to retrieve.
+- [protocol SearchCriteria](./searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 ### Universal link navigation
 - [protocol URLRepresentableIntent](./urlrepresentableintent.md)
   An interface you add to an app intent type so the system can handle it like a universal link.

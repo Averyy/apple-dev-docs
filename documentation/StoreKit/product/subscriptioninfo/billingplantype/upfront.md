@@ -22,6 +22,7 @@ static let upFront: Product.SubscriptionInfo.BillingPlanType
 ## Mentions
 
 - [Supporting monthly subscriptions with a 12-month commitment](../../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting multiseat purchases in your app](../../../supporting-multiseat-purchases-in-your-app.md)
 
 ## See Also
 

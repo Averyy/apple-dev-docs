@@ -81,10 +81,10 @@ When a drag operation begins, a rendering of this view is generated and used as 
 ## See Also
 
 ### Moving transferable items
-- [func draggable<T>(@autoclosure () -> T) -> some View](./draggable%28_%29.md)
-  Activates this view as the source of a drag and drop operation.
-- [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](./draggable%28_,preview%29.md)
-  Activates this view as the source of a drag and drop operation.
+- [func draggable(_:)](./draggable%28_%29.md)
+  Activates this view as the source of a drag and drop operation, preserving the identifier of the dragged item.
+- [func draggable(_:preview:)](./draggable%28_,preview%29.md)
+  Activates this view as the source of a drag and drop operation with a custom preview, preserving the identifier of the dragged item.
 - [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,id,containernamespace,_%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
 - [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](./draggable%28_,id,item,containernamespace%29.md)

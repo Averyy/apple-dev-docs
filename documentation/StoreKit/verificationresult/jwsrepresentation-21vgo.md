@@ -25,6 +25,7 @@ Available when `SignedType` is `Transaction`.
 
 ## Mentions
 
+- [Hosting group invitations in your app](../hosting-group-invitations-in-your-app.md)
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 

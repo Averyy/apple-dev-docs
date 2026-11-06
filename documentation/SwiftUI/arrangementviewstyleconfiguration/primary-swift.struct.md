@@ -18,15 +18,13 @@ A type-erased view of the primary content of an arrangement view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Primary
+nonisolated
+struct Primary
 ```
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../../Swift/sendable.md)
-- [SendableMetatype](../../Swift/sendablemetatype.md)
 - [View](../view.md)
 
 ## See Also

@@ -21,11 +21,15 @@ func item(at index: Int) -> NSMenuItem?
 
 ## Return Value
 
-The menu item, or `nil` if no item exists at the specified index.
+The menu item at `index`.
+
+## Discussion
+
+This method throws an exception if you pass a negative `index`, including `-1`, or an `index` beyond the last item. Methods like [`indexOfItem(withTarget:andAction:)`](./indexofitem%28withtarget,andaction%29.md) return `-1` when no item matches, so check the index before you call this method.
 
 ## Parameters
 
-- `index`: The index of the item you want.
+- `index`: The index of the item you want. Pass the index of an existing menu item.
 
 ## See Also
 

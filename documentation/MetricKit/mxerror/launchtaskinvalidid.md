@@ -7,10 +7,10 @@
 The task ID is a `null` value or exceeds the maximum 128 character length.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
 - Mac Catalyst 16.0+ - Deprecated in 27.0
-- visionOS 1.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`MetricManager.LaunchTaskError.Reason.invalidID`](../metricmanager/launchtaskerror/reason-swift.enum/invalidid.md) instead.
 

@@ -36,12 +36,6 @@ To make a reference object that is more robust in a wide variety of detection co
 
 - `object`: The other reference object with which to combine this reference object.
 
-## See Also
-
-### Creating Derivative Reference Objects
-- [func applyingTransform(simd_float4x4) -> ARReferenceObject](./applyingtransform%28_%29.md)
-  Returns a new reference object created by applying the specified transform to this reference object’s geometric data.
-
 
 ---
 

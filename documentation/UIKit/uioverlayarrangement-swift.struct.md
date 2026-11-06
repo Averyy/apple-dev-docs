@@ -24,8 +24,24 @@ struct UIOverlayArrangement
 An overlay arrangement view controller places a primary view controller and a secondary view controller in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
 - In a stacked overlay arrangement, the arrangement places the primary view above the secondary view in the z-axis.
-- When someone holds a folded iPhone Duo in landscape orientation, the arrangement places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement places the secondary view in the top position and the primary view in the bottom position.
+- When someone holds a folded iPhone Duo in landscape orientation, the arrangement places the secondary view in the leading position and the primary view in the trailing position.
+
+**Portrait open**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. A secondary view fills the display, and a smaller  primary view overlaps it, floating near the center.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-3@2x.png)
+
+**Portrait folded**:
+
+![A folded iPhone Duo in portrait orientation showing an arrangement view. The secondary view fills the top half of the display, and the primary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-4@2x.png)
+
+**Landscape open**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. A secondary view fills the display, and a smaller primary view overlaps it, centered along the bottom edge.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-1@2x.png)
+
+**Landscape folded**:
+
+![A folded iPhone Duo in landscape orientation showing an arrangement view. The secondary view fills the left half of the display, and the primary view, fills the right half.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-5@2x.png)
 
 Create an overlay arrangement view controller by specifying a primary and secondary view controller, and call the [`updateArrangement(_:animated:)`](./uiarrangementviewcontroller/updatearrangement%28_,animated%29.md) method with [`overlay`](./uiarrangementviewcontroller/arrangement/overlay.md):
 

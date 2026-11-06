@@ -7,7 +7,7 @@
 Returns a new complication descriptor with an associated user activity.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

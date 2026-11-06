@@ -7,12 +7,12 @@
 Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
-- Mac Catalyst 16.0+ - Deprecated in 27.2
-- macOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 9.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
+- Mac Catalyst 16.0+ - Deprecated in 27.3
+- macOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 9.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(count:coordinateSpace:)`](./init%28count,coordinatespace%29-75s7q.md) instead.
 

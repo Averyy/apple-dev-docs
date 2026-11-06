@@ -7,11 +7,11 @@
 The minimum delta required before the gesture succeeds.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: RotateGesture)
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: RotateGesture)
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: RotateGesture)
-- macOS 10.15+ - Deprecated in 27.2 (renamed: RotateGesture)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: RotateGesture)
+- iOS 13.0+ - Deprecated in 27.3 (renamed: RotateGesture)
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: RotateGesture)
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: RotateGesture)
+- macOS 10.15+ - Deprecated in 27.3 (renamed: RotateGesture)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: RotateGesture)
 
 > **Deprecated**: Use [`RotateGesture`](../rotategesture.md) instead.
 

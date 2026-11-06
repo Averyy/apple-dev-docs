@@ -27,6 +27,7 @@ class UIScene
 ## Mentions
 
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md)
 
 ## Overview
 

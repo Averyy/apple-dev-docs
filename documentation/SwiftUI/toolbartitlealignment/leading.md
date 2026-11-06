@@ -21,6 +21,14 @@ The title is leading-aligned.
 static let leading: ToolbarTitleAlignment
 ```
 
+## See Also
+
+### Getting title alignment options
+- [static let automatic: ToolbarTitleAlignment](./automatic.md)
+  The system determines the alignment.
+- [static let center: ToolbarTitleAlignment](./center.md)
+  The title is center-aligned.
+
 
 ---
 

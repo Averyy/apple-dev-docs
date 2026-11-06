@@ -130,6 +130,8 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 ## See Also
 
 ### Xcode 27
+- [Xcode 27.3 Beta Release Notes](./xcode-27_3-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27.1 Release Notes](./xcode-27_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27 Release Notes](./xcode-27-release-notes.md)

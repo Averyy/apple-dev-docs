@@ -4,16 +4,23 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Activates this view as the source of a drag and drop operation.
+Activates this view as the source of a drag and drop operation with a custom preview, preserving the identifier of the dragged item.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- visionOS 1.0+
+- iOS 27.3+ (Beta)
+- iPadOS 27.3+ (Beta)
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
+- visionOS 27.3+ (Beta)
 
 ## Declaration
+
+```swift
+nonisolated
+func draggable<Item, Preview>(_ item: @autoclosure @escaping () -> Item, @ContentBuilder preview: () -> Preview) -> some View where Item : Transferable, Item : Identifiable, Preview : View, Item.ID : Sendable
+```
+
+**Other overloads**:
 
 ```swift
 nonisolated
@@ -30,33 +37,27 @@ A view that activates this view as the source of a drag and drop operation, begi
 
 ## Discussion
 
-Applying the `draggable(_:preview:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of `preview` is generated and used as the preview image.
+This modifier behaves like [`draggable(_:)`](./draggable%28_%29.md), except that a rendering of `preview` is used as the preview image instead of a rendering of this view. The preview is centered over the source view.
 
 ```swift
-var title: String
-var body: some View {
-Color.pink
-    .frame(width: 400, height: 400)
-    .draggable(title) {
-         Text("Drop me")
-     }
+ForEach(books) { book in
+    BookRow(book)
+        .draggable(book) {
+            BookCover(book)
+        }
 }
 ```
 
-To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](./contentshape%28_,_,eofill%29.md) with a [`dragPreview`](../contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
-
-> ❗ **Important**: Don’t perform work on the main actor while exporting the item. Doing so isn’t supported and might cause a hang. Make sure `T`‘s exporting closure doesn’t dispatch to the main actor.
-
 ## Parameters
 
-- `payload`: A closure that returns a single class instance or a value conforming to `Transferable` that represents the draggable data from this view.
-- `preview`: A [`View`](../view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
+- `item`: The item to drag.
+- `preview`: A view to use as the source for the dragging preview, after the drag operation begins.
 
 ## See Also
 
 ### Moving transferable items
-- [func draggable<T>(@autoclosure () -> T) -> some View](./draggable%28_%29.md)
-  Activates this view as the source of a drag and drop operation.
+- [func draggable(_:)](./draggable%28_%29.md)
+  Activates this view as the source of a drag and drop operation, preserving the identifier of the dragged item.
 - [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,containernamespace,_%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
 - [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,id,containernamespace,_%29.md)

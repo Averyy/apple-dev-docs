@@ -29,6 +29,8 @@ object BadRequestImageSizeError
   An error that indicates the endpoint doesn’t support app transaction identifiers instead of transaction identifiers.
 - [object BadRequestBulletPointTextTooLongError](./badrequestbulletpointtexttoolongerror.md)
   An error that indicates the text for a bullet point is too long.
+- [object BadRequestInvalidTextFieldError](./badrequestinvalidtextfielderror.md)
+  An error that indicates a text field in the request is invalid.
 - [object BadRequestRealtimeUrlError](./badrequestrealtimeurlerror.md)
   An error that indicates the URL is invalid.
 - [object BadRequestTooManyBulletPointsError](./badrequesttoomanybulletpointserror.md)

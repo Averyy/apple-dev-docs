@@ -7,7 +7,7 @@
 Returns an array containing all possible values of the complication family enumeration.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

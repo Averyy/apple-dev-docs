@@ -11,6 +11,7 @@ A unique identifier that is stable for the duration of a response, but not acros
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -43,17 +44,19 @@ struct PeopleView: View {
         // to be both present and stable.
         List {
             ForEach(people) { person in
-                Text("Name: \(person.name)")
+                Text("Name: \(person.name ?? "")")
             }
         }
         .task {
             do {
-                for try! await people in stream.streamResponse(
+                let stream = session.streamResponse(
                     to: "Who were the first 3 presidents of the US?",
                     generating: [Person].self
-                ) {
+                )
+                for try await snapshot in stream {
                     withAnimation {
-                        self.people = people
+                        self.people = snapshot.content
+                    }
                 }
             } catch {
                 // Handle the thrown error.

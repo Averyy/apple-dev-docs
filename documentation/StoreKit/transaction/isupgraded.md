@@ -23,6 +23,7 @@ let isUpgraded: Bool
 
 ## Mentions
 
+- [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Discussion
@@ -33,11 +34,11 @@ If [`isUpgraded`](./isupgraded.md) is `true`, the user has upgraded the subscrip
 
 ### Getting purchase details
 - [let ownershipType: Transaction.OwnershipType](./ownershiptype-swift.property.md)
-  A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
+  A value that indicates whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [Transaction.OwnershipType](./ownershiptype-swift.struct.md)
-  The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
+  Values that indicate whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [let purchasedQuantity: Int](./purchasedquantity.md)
-  The number of consumable products purchased.
+  The number of purchased seats or consumable products.
 
 
 ---

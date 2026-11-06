@@ -7,7 +7,7 @@
 Creates and returns a text provider with both long and short versions of the text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

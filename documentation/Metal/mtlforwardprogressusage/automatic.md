@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+Instructs the Metal compiler to decide which forward progress mode to apply to the pipeline by analyzing its program.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,6 +23,10 @@ case automatic
 ```c
 MTLForwardProgressUsageAutomatic
 ```
+
+## Discussion
+
+The implementation uses a conservative detection scheme. Select a specific setting if the default detection is insufficient.
 
 
 ---

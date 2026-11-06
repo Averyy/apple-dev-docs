@@ -21,6 +21,7 @@ int32 offerType
 - `2`: A promotional offer.
 - `3`: An offer with an offer code.
 - `4`: A win-back offer.
+- `5`: A retention offer.
 
 ## Mentions
 

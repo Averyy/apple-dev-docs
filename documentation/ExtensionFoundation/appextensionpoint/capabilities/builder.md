@@ -24,6 +24,8 @@ struct Builder
 
 ### Type Methods
 - [static func buildBlock<each T>(repeat each T) -> AppExtensionPoint.Capabilities](./builder/buildblock%28_%29.md)
+- [static func buildLimitedAvailability(AppExtensionPoint.Capabilities) -> AppExtensionPoint.Capabilities](./builder/buildlimitedavailability%28_%29.md)
+- [static func buildOptional(AppExtensionPoint.Capabilities?) -> some AppExtensionPoint.Capability](./builder/buildoptional%28_%29.md)
 
 
 ---

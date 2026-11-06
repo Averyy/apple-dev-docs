@@ -21,8 +21,13 @@ static func showManageSubscriptions(in scene: UIWindowScene, subscriptionGroupID
 
 ## Mentions
 
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
 - [Choosing a StoreKit API for Apple In-App Purchases](../choosing-a-storekit-api-for-in-app-purchases.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+
+## Discussion
+
+The sheet includes multiseat subscriptions in the subscription group. In macOS 27.3 and later, AppKit apps use [`showManageSubscriptions(from:subscriptionGroupID:)`](./showmanagesubscriptions%28from,subscriptiongroupid%29.md).
 
 ## Parameters
 
@@ -34,6 +39,10 @@ static func showManageSubscriptions(in scene: UIWindowScene, subscriptionGroupID
 ### Managing subscriptions
 - [static func showManageSubscriptions(in: UIWindowScene) async throws](./showmanagesubscriptions%28in%29.md)
   Presents the App Store sheet for managing subscriptions.
+- [static func showManageSubscriptions(from: NSWindow) async throws](./showmanagesubscriptions%28from%29.md)
+  Presents the App Store sheet for managing subscriptions.
+- [static func showManageSubscriptions(from: NSWindow, subscriptionGroupID: String) async throws](./showmanagesubscriptions%28from,subscriptiongroupid%29.md)
+  Presents the App Store sheet for managing subscriptions for a subscription group.
 
 
 ---

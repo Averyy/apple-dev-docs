@@ -41,12 +41,12 @@ let loader: ArrayLoader = [
 
 ## Topics
 
-### Initializers
-- [init(arrayLiteral: Sample...)](./arrayloader/init%28arrayliteral%29.md)
-  Creates a loader from an array literal of samples.
+### Creating a loader
 - [init(samples: [Sample])](./arrayloader/init%28samples%29.md)
   Creates a loader backed by the given array of samples.
-### Instance Properties
+- [init(arrayLiteral: Sample...)](./arrayloader/init%28arrayliteral%29.md)
+  Creates a loader from an array literal of samples.
+### Streaming samples
 - [var stream: any AsyncSequence<Sample, any Error>](./arrayloader/stream.md)
   The async sequence that yields each sample in the array during an evaluation run.
 

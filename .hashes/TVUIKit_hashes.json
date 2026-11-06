@@ -630,23 +630,23 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview": {
       "file_path": "documentation/TVUIKit/tvmonogramview.md",
-      "hash": "e044152f24121b446cddf4d02159318098cdc91ffcfbd7aefcd9773e22884a05"
+      "hash": "9e1d070c90f47cc383908386978ca4276f58852ec0e2830046fd0c40c29c9f6c"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview/image": {
       "file_path": "documentation/TVUIKit/tvmonogramview/image.md",
-      "hash": "920621fb0c9d8b8bd36bcdab8fe5a204ca9d01f3a1a794a9f451c8f6d86ff355"
+      "hash": "dc1d315d94675f0913a9de151c3e1d22a20dd22dcfa94a88c09ca46665e79db0"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview/personnamecomponents": {
       "file_path": "documentation/TVUIKit/tvmonogramview/personnamecomponents.md",
-      "hash": "bf9097171c05775c24213fd0254908a6ac733cc9e5c46c1865a92332e881d15a"
+      "hash": "bcd7485bfcb6b13e404bfcda5fbc6a3765d040ecfd8a1018dd3eec96f1b91d30"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview/subtitle": {
       "file_path": "documentation/TVUIKit/tvmonogramview/subtitle.md",
-      "hash": "1ae2621d61540f7f4281ea371b182393a619e5d340554a790e74310d65f2209e"
+      "hash": "38d5ac5fbf001f9acd38496db3d7e7051f13464e02487edb738718a01ae4ec8d"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview/title": {
       "file_path": "documentation/TVUIKit/tvmonogramview/title.md",
-      "hash": "c715121dfc320340a9a742677e262df2e4e898e56cabdc7e147184e53c6fcd67"
+      "hash": "f2208460d0c273b9f612bc74b3f1325badf050fdb319472991ca3af736c9a6b6"
     },
     "https://developer.apple.com/documentation/tvuikit/tvposterview": {
       "file_path": "documentation/TVUIKit/tvposterview.md",
@@ -1302,23 +1302,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview.json": {
       "file_path": "documentation/TVUIKit/tvmonogramview.md",
-      "hash": "e044152f24121b446cddf4d02159318098cdc91ffcfbd7aefcd9773e22884a05"
+      "hash": "9e1d070c90f47cc383908386978ca4276f58852ec0e2830046fd0c40c29c9f6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/image.json": {
       "file_path": "documentation/TVUIKit/tvmonogramview/image.md",
-      "hash": "920621fb0c9d8b8bd36bcdab8fe5a204ca9d01f3a1a794a9f451c8f6d86ff355"
+      "hash": "dc1d315d94675f0913a9de151c3e1d22a20dd22dcfa94a88c09ca46665e79db0"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/personnamecomponents.json": {
       "file_path": "documentation/TVUIKit/tvmonogramview/personnamecomponents.md",
-      "hash": "bf9097171c05775c24213fd0254908a6ac733cc9e5c46c1865a92332e881d15a"
+      "hash": "bcd7485bfcb6b13e404bfcda5fbc6a3765d040ecfd8a1018dd3eec96f1b91d30"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/subtitle.json": {
       "file_path": "documentation/TVUIKit/tvmonogramview/subtitle.md",
-      "hash": "1ae2621d61540f7f4281ea371b182393a619e5d340554a790e74310d65f2209e"
+      "hash": "38d5ac5fbf001f9acd38496db3d7e7051f13464e02487edb738718a01ae4ec8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/title.json": {
       "file_path": "documentation/TVUIKit/tvmonogramview/title.md",
-      "hash": "c715121dfc320340a9a742677e262df2e4e898e56cabdc7e147184e53c6fcd67"
+      "hash": "f2208460d0c273b9f612bc74b3f1325badf050fdb319472991ca3af736c9a6b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview.json": {
       "file_path": "documentation/TVUIKit/tvposterview.md",

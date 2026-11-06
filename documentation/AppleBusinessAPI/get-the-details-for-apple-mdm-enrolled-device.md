@@ -7,7 +7,7 @@
 Get detailed information about a device enrolled in Apple Device Management service.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Topics
 

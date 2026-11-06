@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-An error that indicates that there is currently a request in progress.
+An error that indicates a request is in progress.
 
 **Availability**:
 - iOS 26.0+

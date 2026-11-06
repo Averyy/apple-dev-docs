@@ -19,6 +19,7 @@ object EventResponse
 
 - [Managing assets](./managing-assets.md)
 - [Managing users](./managing-users.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
 
 ## Topics
 

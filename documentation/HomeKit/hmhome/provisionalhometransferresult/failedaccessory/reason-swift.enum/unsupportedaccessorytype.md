@@ -7,8 +7,10 @@
 A kind of accessory for which the home hub doesn’t support transfer.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

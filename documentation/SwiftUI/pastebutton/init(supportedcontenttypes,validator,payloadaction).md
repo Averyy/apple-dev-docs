@@ -7,7 +7,7 @@
 Creates a Paste button that accepts specific types of data from the pasteboard, performing a custom validation of the data before sending it to your app.
 
 **Availability**:
-- macOS 11.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(payloadType:onPaste:)`](./init%28payloadtype,onpaste%29.md) instead.
 

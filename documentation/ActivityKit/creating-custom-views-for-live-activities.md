@@ -16,11 +16,13 @@ The different presentations are key to creating layouts for your Live Activities
 - In StandBy, the system expands the Lock Screen presentation to fill the whole screen.
 - On Apple Watch, Live Activities automatically appear in the Smart Stack and as alerts using the compact presentation.
 - In CarPlay, Live Activities automatically appear on the Home Screen using the compact presentation.
+- On some devices that support the Dynamic Island, Live Activities appear with reduced width.
 
 To offer a great experience in StandBy, on Apple Watch, and in CarPlay, provide flexible custom views to keep people informed about the state of a Live Activity and offer interactivity:
 
 - To tell the system that you provide a custom layout on Apple Watch and in CarPlay, pass [`ActivityFamily.small`](../WidgetKit/activityfamily/small.md)  to the [`supplementalActivityFamilies(_:)`](../SwiftUI/widgetconfiguration/supplementalactivityfamilies%28_%29.md)  view modifier.
 - To tell the system that your Live Activity adapts its layout on the Lock Screen of iPhone and iPad, for example in StandBy, pass [`ActivityFamily.medium`](../WidgetKit/activityfamily/medium.md) to the `supplementalActivityFamilies(_:)`  view modifier.
+- To check for a presentation in limited width, use the [`isDynamicIslandLimitedInWidth`](../SwiftUI/environmentvalues/isdynamicislandlimitedinwidth.md) environment value.
 
 The following example shows how an app might configure a Live Activity that provides different view layouts for small and medium activity families:
 
@@ -73,13 +75,13 @@ struct CustomSupplementalActivityView: View {
 }
 ```
 
-> **Note**: Live Activities automatically appear in the Menu bar of a paired Mac, offering interactivity and allowing people to launch your app with iPhone Mirroring. Live Activities that appear in the Menu bar use unchanged compact, minimal, and expanded presentations.
+> **Note**: Live Activities that start on iPhone or iPad automatically appear in the Menu bar of a paired Mac, offering interactivity and allowing people to launch your app with iPhone Mirroring. Live Activities that appear in the Menu bar use unchanged compact, minimal, and expanded presentations.
 
 For more information about reusing custom views across widgets and Live Activities, refer to [Creating views for widgets, Live Activities, and watch complications](../WidgetKit/creating-views-for-widgets-live-activities-and-watch-complications.md).
 
 ### Set custom content margins
 
-Limiting the content you display is key to offering glanceable, easy-to-read Live Activities. Aim to use the system’s default content margins for your Live Activities and only show content that’s relevant to the person viewing it. However, you may want to change the system’s default content margin to display more content or provide a custom user interface that matches your app. To set custom content margins, use [`contentMargins(_:_:for:)`](../WidgetKit/dynamicisland/contentmargins%28_,_,for%29.md).  The following example results in a margin of eight points for the trailing edge of an expanded Live Activity.
+Limiting the content you display is key to offering glanceable, easy-to-read Live Activities. Aim to use the system’s default content margins for your Live Activities and only show content that’s relevant to the person viewing it. However, you may want to change the system’s default content margin to display more content or provide a custom user interface that matches your app. To set custom content margins, use [`contentMargins(_:_:for:)`](../WidgetKit/dynamicisland/contentmargins%28_,_,for%29.md). The following example results in a margin of eight points for the trailing edge of an expanded Live Activity.
 
 ```swift
 struct AdventureActivityConfiguration: Widget {

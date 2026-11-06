@@ -23,6 +23,8 @@ var activeOffer: Product.SubscriptionOffer? { get }
 ### Getting properties of the subscription picker option
 - [var subscription: Product](./subscription.md)
   The auto-renewable subscription that the picker option represents.
+- [var preferredPricingTerms: SubscriptionInfo.PricingTerms?](./preferredpricingterms.md)
+  The preferred pricing terms for this subscription option.
 - [let isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the picker option is in a selected state.
 - [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./icon.md)

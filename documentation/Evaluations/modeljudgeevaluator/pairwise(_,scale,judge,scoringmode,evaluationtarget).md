@@ -27,15 +27,23 @@ static func pairwise(_ name: String, scale: ScoringScale, judge: any LanguageMod
 
 ## Discussion
 
-The judge sees the model’s output under “Response” and the expected value from `input.expected` under “Baseline Response” in the Context section.
+The model judge sees the model’s output under “Response” and the expected value from `input.expected` under “Baseline Response” in the Context section.
+
+```swift
+let evaluator = ModelJudgeEvaluator<ModelSample<String>>.pairwise(
+    "Similarity",
+    scale: .passFail(passDescription: "Similar", failDescription: "Dissimilar"),
+    judge: SystemLanguageModel.default
+)
+```
 
 ## Parameters
 
-- `name`: The metric name that corresponds to the DataFrame column.
+- `name`: The metric name, used as the DataFrame column name.
 - `scale`: Scoring scale for the comparison.
 - `judge`: The language model to use as judge.
-- `scoringMode`: A value that indicates whether scores are discrete (default) or allow any floating-point value.
-- `evaluationTarget`: An optional closure that converts the value to a string. Both responses use this target.
+- `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.
+- `evaluationTarget`: Optional closure to convert the value to a string. Used for both responses.
 
 ## See Also
 

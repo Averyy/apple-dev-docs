@@ -86,8 +86,11 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
   The binary archives that contain any precompiled shader functions to link.
 ### Instance Properties
 - [var contentionRelief: MTLContentionRelief](./mtlcomputepipelinedescriptor/contentionrelief.md)
+  A contention relief strategy the compiler applies to the pipeline.
 - [var forwardProgressUsage: MTLForwardProgressUsage](./mtlcomputepipelinedescriptor/forwardprogressusage.md)
+  A scheduling strategy for code that blocks across SIMD groups.
 - [var optimizeForPersistentKernel: Bool](./mtlcomputepipelinedescriptor/optimizeforpersistentkernel.md)
+  A Boolean value that indicates whether Metal tunes the pipeline for persistent threads.
 - [var requiredThreadsPerThreadgroup: MTLSize](./mtlcomputepipelinedescriptor/requiredthreadsperthreadgroup.md)
 
 ## Relationships

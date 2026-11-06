@@ -77,6 +77,7 @@ Endpoint Security provides clients the current state of the CS flags in the [`co
   The audit token of the parent process.
 ### Instance Properties
 - [var cdhash_full: es_token_t](./es_process_t/cdhash_full.md)
+- [var coalition: UnsafeMutablePointer<es_coalition_info_t>?](./es_process_t/coalition.md)
 - [var cs_validation_category: es_cs_validation_category_t](./es_process_t/cs_validation_category.md)
   es_cs_validation_category
 - [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_process_t/reserved-1o3sp.md)

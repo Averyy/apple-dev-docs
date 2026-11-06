@@ -3346,7 +3346,35 @@
     },
     "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager.md",
-      "hash": "830520479e3189e01b3832d572d9a23c53fdfc8d2b9046af44ede94fd8bae150"
+      "hash": "8dc1e46338ffb84eda1663d8479ea9041f9402752c7e355b644f82b4ac0b0f39"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup.md",
+      "hash": "32f62ac24a9afda561b9d5beef0259a1df48487bb16a11b9ff654c6f7c2a17a2"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum.md",
+      "hash": "ad6ad1c26f02e37b53beb6c71df98c31d2929b1251fc35719031044a968c64eb"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum/email(_:)": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum/email(_).md",
+      "hash": "30cbdc804232180572b96b17b443523d5f254a3999f26248061be6a43470b4fb"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.property": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.property.md",
+      "hash": "cd027e7ccab4e9ca45acb44f375c4bc89e57e7f9e0972e8861cd741649e7aa60"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/init(contactmethod:user:serviceidentifier:)": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/init(contactmethod,user,serviceidentifier).md",
+      "hash": "84982f27c331dd348625245ce129c2de60fb681d6dab35ecdc2c01b8afe7a880"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/serviceidentifier": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/serviceidentifier.md",
+      "hash": "17e83d0fc2bd6e270715c07f65a7e206c2b39d1ba2791c8a77f8f51752b75987"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/user": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/user.md",
+      "hash": "6550021495df23299d5207bcbe82f3acd7aa0feb277b13f7b8e3630dab54c506"
     },
     "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/consumeonetimecode(_:)": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/consumeonetimecode(_).md",
@@ -3363,6 +3391,26 @@
     "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/onetimecodes(preferredduration:anchor:)-tyrg": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/onetimecodes(preferredduration,anchor)-tyrg.md",
       "hash": "54f8870d4596e6ef82bbdb919ab81334f312687cd203850574070210855d0dc2"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/presentaccountstosetup(_:reason:anchor:)-7e3ja": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/presentaccountstosetup(_,reason,anchor)-7e3ja.md",
+      "hash": "ace8e11c73a3e23e9f77d0791e7b4ef93d17c1e2e9528f37e62cd10fd1d891f2"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/presentaccountstosetup(_:reason:anchor:)-8utoh": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/presentaccountstosetup(_,reason,anchor)-8utoh.md",
+      "hash": "8f6ee2389544bd32f06216dd1101b4991562301cebfde7b3b8b9b377b4cee80f"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason.md",
+      "hash": "5f4af49b8f794ee43defaa1a3936c9df5b61d5ba33a4f7e7b4a63aa55c6da7c1"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason/passwordchange": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason/passwordchange.md",
+      "hash": "746cf18ddebdd83608e50026701ab05c4afcc07e6b4178d362e4bc42f2790a9c"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason/signin": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason/signin.md",
+      "hash": "845903bc5b16c79d3552613ad01d4101255b46a91543cde9a9a4564a3ec486dc"
     },
     "https://developer.apple.com/documentation/authenticationservices/asdeliveredverificationcodesmanager/verificationerror": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/verificationerror.md",
@@ -5378,11 +5426,11 @@
     },
     "https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7evyf": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/init(url,callbackurlscheme,completionhandler)-7evyf.md",
-      "hash": "b3a3deae9844753c2b222ded81cae1eff0e9fe1de2aeb1f52baa4d6cb5a35980"
+      "hash": "cab9add48758e0d616ee905f8f0d200bc991004452d4a55776f7e12f224506cb"
     },
     "https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7fpox": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/init(url,callbackurlscheme,completionhandler)-7fpox.md",
-      "hash": "3dfc8f018e5fc29a68aee08f2744e1b3ab3eef4c64d498fd7cc459cae748b90f"
+      "hash": "9782a97a79adbe47b2c33ef393ae9a069d4945df2aaeecdf531b98c038f8e8b2"
     },
     "https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession/prefersephemeralwebbrowsersession": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/prefersephemeralwebbrowsersession.md",
@@ -5638,7 +5686,11 @@
     },
     "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager.md",
-      "hash": "e049b6a385f31518bfc918af288a5f597037ef969edfbbbf22e5fcee952c345c"
+      "hash": "efba09949bc0a10db40e8e7cbf623499536e2fc37a5d3ee9d6213ec67dc43573"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/accountrecordforsetup": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/accountrecordforsetup.md",
+      "hash": "61ff1b99c04d6004f5c143c023478603deb64fab6b84c1af6443410cdef74e43"
     },
     "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/consumeonetimecode(_:)": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/consumeonetimecode(_).md",
@@ -5647,6 +5699,14 @@
     "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/onetimecodes(preferredduration:)": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/onetimecodes(preferredduration).md",
       "hash": "eec1712c044e6e8aabfabdbc7231b250fe4ef0d8685e1fccb2468eae32428673"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/presentaccountstosetup(_:reason:)": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/presentaccountstosetup(_,reason).md",
+      "hash": "536ad396ab88a2d8ed4c3403c959d761c952afa5d10443e5b0e439043091f2e6"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/setupreason": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/setupreason.md",
+      "hash": "d1713ba30a9ef2a7571b621bbdd9220c04adff17c7fb713d75b78bb00674f040"
     },
     "https://developer.apple.com/documentation/authenticationservices/deliveredverificationcodesmanager/verificationerror": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/verificationerror.md",
@@ -5702,7 +5762,7 @@
     },
     "https://developer.apple.com/documentation/authenticationservices/platform-single-sign-on-sso": {
       "file_path": "documentation/AuthenticationServices/platform-single-sign-on-sso.md",
-      "hash": "e603b0a67bae1c013aa8b5f40f2d81b29eb97bb9b1005a763ee1d57b8cf22694"
+      "hash": "f48813b1d77b4f466dfb9aacc149d540f729eb9401d5ebb122989c3ea18b4514"
     },
     "https://developer.apple.com/documentation/authenticationservices/processing-the-json-web-encryption-jwe-login-response": {
       "file_path": "documentation/AuthenticationServices/processing-the-json-web-encryption-jwe-login-response.md",
@@ -5802,7 +5862,7 @@
     },
     "https://developer.apple.com/documentation/authenticationservices/webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:)": {
       "file_path": "documentation/AuthenticationServices/webauthenticationsession/authenticate(using,callbackurlscheme,preferredbrowsersession).md",
-      "hash": "2672cd69347508b76703223fa14bf8ac58c39c76c19e8df637d569585122d961"
+      "hash": "94068a80c1749c7bfffa76a167c6ac796507808e70981f39137382ddf5490dd7"
     },
     "https://developer.apple.com/documentation/authenticationservices/webauthenticationsession/browsersession": {
       "file_path": "documentation/AuthenticationServices/webauthenticationsession/browsersession.md",
@@ -9162,7 +9222,35 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager.json": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager.md",
-      "hash": "830520479e3189e01b3832d572d9a23c53fdfc8d2b9046af44ede94fd8bae150"
+      "hash": "8dc1e46338ffb84eda1663d8479ea9041f9402752c7e355b644f82b4ac0b0f39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup.md",
+      "hash": "32f62ac24a9afda561b9d5beef0259a1df48487bb16a11b9ff654c6f7c2a17a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum.md",
+      "hash": "ad6ad1c26f02e37b53beb6c71df98c31d2929b1251fc35719031044a968c64eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum/email(_:).json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.enum/email(_).md",
+      "hash": "30cbdc804232180572b96b17b443523d5f254a3999f26248061be6a43470b4fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.property.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/contactmethod-swift.property.md",
+      "hash": "cd027e7ccab4e9ca45acb44f375c4bc89e57e7f9e0972e8861cd741649e7aa60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/init(contactmethod:user:serviceidentifier:).json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/init(contactmethod,user,serviceidentifier).md",
+      "hash": "84982f27c331dd348625245ce129c2de60fb681d6dab35ecdc2c01b8afe7a880"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/serviceidentifier.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/serviceidentifier.md",
+      "hash": "17e83d0fc2bd6e270715c07f65a7e206c2b39d1ba2791c8a77f8f51752b75987"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/accountrecordforsetup/user.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/accountrecordforsetup/user.md",
+      "hash": "6550021495df23299d5207bcbe82f3acd7aa0feb277b13f7b8e3630dab54c506"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/consumeonetimecode(_:).json": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/consumeonetimecode(_).md",
@@ -9179,6 +9267,26 @@
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/onetimecodes(preferredduration:anchor:)-tyrg.json": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/onetimecodes(preferredduration,anchor)-tyrg.md",
       "hash": "54f8870d4596e6ef82bbdb919ab81334f312687cd203850574070210855d0dc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/presentaccountstosetup(_:reason:anchor:)-7e3ja.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/presentaccountstosetup(_,reason,anchor)-7e3ja.md",
+      "hash": "ace8e11c73a3e23e9f77d0791e7b4ef93d17c1e2e9528f37e62cd10fd1d891f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/presentaccountstosetup(_:reason:anchor:)-8utoh.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/presentaccountstosetup(_,reason,anchor)-8utoh.md",
+      "hash": "8f6ee2389544bd32f06216dd1101b4991562301cebfde7b3b8b9b377b4cee80f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason.md",
+      "hash": "5f4af49b8f794ee43defaa1a3936c9df5b61d5ba33a4f7e7b4a63aa55c6da7c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason/passwordchange.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason/passwordchange.md",
+      "hash": "746cf18ddebdd83608e50026701ab05c4afcc07e6b4178d362e4bc42f2790a9c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/setupreason/signin.json": {
+      "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/setupreason/signin.md",
+      "hash": "845903bc5b16c79d3552613ad01d4101255b46a91543cde9a9a4564a3ec486dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asdeliveredverificationcodesmanager/verificationerror.json": {
       "file_path": "documentation/AuthenticationServices/asdeliveredverificationcodesmanager/verificationerror.md",
@@ -11194,11 +11302,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7evyf.json": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/init(url,callbackurlscheme,completionhandler)-7evyf.md",
-      "hash": "b3a3deae9844753c2b222ded81cae1eff0e9fe1de2aeb1f52baa4d6cb5a35980"
+      "hash": "cab9add48758e0d616ee905f8f0d200bc991004452d4a55776f7e12f224506cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7fpox.json": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/init(url,callbackurlscheme,completionhandler)-7fpox.md",
-      "hash": "3dfc8f018e5fc29a68aee08f2744e1b3ab3eef4c64d498fd7cc459cae748b90f"
+      "hash": "9782a97a79adbe47b2c33ef393ae9a069d4945df2aaeecdf531b98c038f8e8b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aswebauthenticationsession/prefersephemeralwebbrowsersession.json": {
       "file_path": "documentation/AuthenticationServices/aswebauthenticationsession/prefersephemeralwebbrowsersession.md",
@@ -11454,7 +11562,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager.json": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager.md",
-      "hash": "e049b6a385f31518bfc918af288a5f597037ef969edfbbbf22e5fcee952c345c"
+      "hash": "efba09949bc0a10db40e8e7cbf623499536e2fc37a5d3ee9d6213ec67dc43573"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/accountrecordforsetup.json": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/accountrecordforsetup.md",
+      "hash": "61ff1b99c04d6004f5c143c023478603deb64fab6b84c1af6443410cdef74e43"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/consumeonetimecode(_:).json": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/consumeonetimecode(_).md",
@@ -11463,6 +11575,14 @@
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/onetimecodes(preferredduration:).json": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/onetimecodes(preferredduration).md",
       "hash": "eec1712c044e6e8aabfabdbc7231b250fe4ef0d8685e1fccb2468eae32428673"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/presentaccountstosetup(_:reason:).json": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/presentaccountstosetup(_,reason).md",
+      "hash": "536ad396ab88a2d8ed4c3403c959d761c952afa5d10443e5b0e439043091f2e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/setupreason.json": {
+      "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/setupreason.md",
+      "hash": "d1713ba30a9ef2a7571b621bbdd9220c04adff17c7fb713d75b78bb00674f040"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/deliveredverificationcodesmanager/verificationerror.json": {
       "file_path": "documentation/AuthenticationServices/deliveredverificationcodesmanager/verificationerror.md",
@@ -11518,7 +11638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/platform-single-sign-on-sso.json": {
       "file_path": "documentation/AuthenticationServices/platform-single-sign-on-sso.md",
-      "hash": "e603b0a67bae1c013aa8b5f40f2d81b29eb97bb9b1005a763ee1d57b8cf22694"
+      "hash": "f48813b1d77b4f466dfb9aacc149d540f729eb9401d5ebb122989c3ea18b4514"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/processing-the-json-web-encryption-jwe-login-response.json": {
       "file_path": "documentation/AuthenticationServices/processing-the-json-web-encryption-jwe-login-response.md",
@@ -11618,7 +11738,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).json": {
       "file_path": "documentation/AuthenticationServices/webauthenticationsession/authenticate(using,callbackurlscheme,preferredbrowsersession).md",
-      "hash": "2672cd69347508b76703223fa14bf8ac58c39c76c19e8df637d569585122d961"
+      "hash": "94068a80c1749c7bfffa76a167c6ac796507808e70981f39137382ddf5490dd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/webauthenticationsession/browsersession.json": {
       "file_path": "documentation/AuthenticationServices/webauthenticationsession/browsersession.md",
@@ -11637,6 +11757,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 2908
+    "total_pages": 2938
   }
 }

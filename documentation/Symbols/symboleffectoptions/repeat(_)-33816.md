@@ -7,13 +7,13 @@
 A default set of effect options with a preferred repeat count.
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- iPadOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- Mac Catalyst 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- macOS 14.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- tvOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
-- watchOS 10.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- iOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- iPadOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- Mac Catalyst 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- macOS 14.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- tvOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- watchOS 10.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
 
 ## Declaration
 

@@ -7,9 +7,9 @@
 Display styles for a range setting’s slider.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -24,6 +24,9 @@ enum SliderStyle
   A slider that moves continuously across its range.
 - [HomeAccessoryRangeSetting.SliderStyle.stepped](./sliderstyle/stepped.md)
   A slider that moves in discrete steps and displays tick marks.
+### Instance Properties
+- [var description: String](./sliderstyle/description.md)
+  A textual representation of the style.
 
 ## Relationships
 

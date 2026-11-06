@@ -11,6 +11,7 @@ Produces a response stream to a prompt.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -26,7 +27,7 @@ final func streamResponse<Content>(generating type: Content.Type = Content.self,
 
 ## Return Value
 
-A response stream that produces [`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
+A response stream that produces an instance of the `Generable` type.
 
 ## Discussion
 

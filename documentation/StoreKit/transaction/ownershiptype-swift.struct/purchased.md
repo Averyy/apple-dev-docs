@@ -21,11 +21,18 @@ The transaction belongs to the purchaser.
 static let purchased: Transaction.OwnershipType
 ```
 
+## Mentions
+
+- [Supporting multiseat purchases in your app](../../supporting-multiseat-purchases-in-your-app.md)
+- [Testing multiseat subscriptions](../../testing-multiseat-subscriptions.md)
+
 ## See Also
 
 ### Getting ownership types
 - [static let familyShared: Transaction.OwnershipType](./familyshared.md)
   The transaction belongs to a family member who benefits from the service.
+- [static var assigned: Transaction.OwnershipType](./assigned.md)
+  The transaction belongs to a customer who has access through an organization or group.
 
 
 ---

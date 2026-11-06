@@ -7,7 +7,7 @@
 The end date that the text provider uses when calculating a fixed, relative date.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

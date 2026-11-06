@@ -41,6 +41,7 @@ This parameter is not part of the graphics state.
 - [var textMatrix: CGAffineTransform](./textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](./textposition.md)
+  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](./selectfont%28name,size,textencoding%29.md)
   Sets the font and font size in a graphics context.
 - [func setCharacterSpacing(CGFloat)](./setcharacterspacing%28_%29.md)

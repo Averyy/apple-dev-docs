@@ -7,12 +7,12 @@
 Adds an action to perform when this view recognizes a long press gesture.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:))
 
 > **Deprecated**: Use [`onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)`](./onlongpressgesture%28minimumduration,maximumdistance,perform,onpressingchanged%29.md) instead.
 

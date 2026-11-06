@@ -7,11 +7,11 @@
 Sends MIDI to a destination.
 
 **Availability**:
-- iOS 4.2+ - Deprecated in 27.2 (renamed: MIDISendEventList(_:_:_:))
-- iPadOS 4.2+ - Deprecated in 27.2 (renamed: MIDISendEventList(_:_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDISendEventList(_:_:_:))
-- macOS 10.0+ - Deprecated in 27.2 (renamed: MIDISendEventList(_:_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDISendEventList(_:_:_:))
+- iOS 4.2+ - Deprecated in 27.3 (renamed: MIDISendEventList(_:_:_:))
+- iPadOS 4.2+ - Deprecated in 27.3 (renamed: MIDISendEventList(_:_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDISendEventList(_:_:_:))
+- macOS 10.0+ - Deprecated in 27.3 (renamed: MIDISendEventList(_:_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDISendEventList(_:_:_:))
 
 > **Deprecated**: Use [`MIDISendEventList(_:_:_:)`](./midisendeventlist%28_,_,_%29.md) instead.
 

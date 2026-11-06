@@ -7,11 +7,11 @@
 Creates and opens new documents.
 
 **Availability**:
-- iOS 18.0+ - Deprecated in 27.2
-- iPadOS 18.0+ - Deprecated in 27.2
-- Mac Catalyst 18.0+ - Deprecated in 27.2
-- macOS 15.0+ - Deprecated in 27.2
-- visionOS 2.0+ - Deprecated in 27.2
+- iOS 18.0+ - Deprecated in 27.3
+- iPadOS 18.0+ - Deprecated in 27.3
+- Mac Catalyst 18.0+ - Deprecated in 27.3
+- macOS 15.0+ - Deprecated in 27.3
+- visionOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Conform your document type to ReadableDocument instead.
 

@@ -289,6 +289,8 @@ In this comparison the on-device default has the higher accuracy, although a dif
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Evaluating multimodal prompts](./evaluating-multimodal-prompts.md)
+  Measure how well an on-device model classifies food photos, using a multimodal prompt and a streamed image dataset.
 - [protocol Evaluation](./evaluation.md)
   A type that defines an evaluation.
 

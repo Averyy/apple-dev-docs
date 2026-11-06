@@ -42,6 +42,25 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [List Win-Back Offers](./get-v1-subscriptions-_id_-winbackoffers.md)
   The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
 - [List win-back offer IDs for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+### Getting retention messages and offers
+- [Read the retention message for a subscription](./get-v1-subscriptions-_id_-retentionmessage.md)
+  Get the retention message for a specific auto-renewable subscription.
+- [Read the retention message ID for a subscription](./get-v1-subscriptions-_id_-relationships-retentionmessage.md)
+  Get the retention message ID for a specific auto-renewable subscription.
+- [Replace the retention message for a subscription](./patch-v1-subscriptions-_id_-relationships-retentionmessage.md)
+  Assign a retention message to a specific auto-renewable subscription.
+- [List retention offers for a subscription](./get-v1-subscriptions-_id_-retentionoffers.md)
+  Get a list of all retention offers for a specific auto-renewable subscription.
+- [List retention offer IDs for a subscription](./get-v1-subscriptions-_id_-relationships-retentionoffers.md)
+  Get a list of retention offer IDs for a specific auto-renewable subscription.
+- [List retention message offers for a subscription](./get-v1-subscriptions-_id_-retentionmessageoffers.md)
+  Get a list of the retention offers that appear with the retention message for a specific auto-renewable subscription.
+- [List retention message offer IDs for a subscription](./get-v1-subscriptions-_id_-relationships-retentionmessageoffers.md)
+  Get a list of the offer IDs that appear with the retention message for a specific auto-renewable subscription.
+- [Add retention message offers to a subscription](./post-v1-subscriptions-_id_-relationships-retentionmessageoffers.md)
+  Add retention offers to the retention message for a specific auto-renewable subscription.
+- [Remove retention message offers from a subscription](./delete-v1-subscriptions-_id_-relationships-retentionmessageoffers.md)
+  Remove retention offers from the retention message for a specific auto-renewable subscription.
 ### Getting the promoted purchase
 - [Read promoted purchase information for a subscription](./get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.
@@ -114,6 +133,16 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionLocalization](./subscriptionlocalization.md)
   The localized display name and description for an auto-renewable subscription shown to customers on the App Store.
 - [object SubscriptionWinBackOffersLinkagesResponse](./subscriptionwinbackofferslinkagesresponse.md)
+- [object SubscriptionRetentionMessageLinkageRequest](./subscriptionretentionmessagelinkagerequest.md)
+  The request body you use to assign a retention message to an auto-renewable subscription.
+- [object SubscriptionRetentionMessageLinkageResponse](./subscriptionretentionmessagelinkageresponse.md)
+  A response containing the resource identifier of the retention message for a subscription.
+- [object SubscriptionRetentionOffersLinkagesResponse](./subscriptionretentionofferslinkagesresponse.md)
+  A response containing the resource identifiers of all retention offers for a subscription.
+- [object SubscriptionRetentionMessageOffersLinkagesRequest](./subscriptionretentionmessageofferslinkagesrequest.md)
+  The request body you use to add or remove retention offers from a subscription’s retention message.
+- [object SubscriptionRetentionMessageOffersLinkagesResponse](./subscriptionretentionmessageofferslinkagesresponse.md)
+  A response containing the resource identifiers of retention offers that appear with a subscription’s retention message.
 - [object SubscriptionAppStoreReviewScreenshotLinkageResponse](./subscriptionappstorereviewscreenshotlinkageresponse.md)
 - [object SubscriptionPricePointEqualizationsLinkagesResponse](./subscriptionpricepointequalizationslinkagesresponse.md)
 - [object SubscriptionPricePointsLinkagesResponse](./subscriptionpricepointslinkagesresponse.md)
@@ -134,7 +163,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](./querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
-- [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
   Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](./subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.

@@ -7,13 +7,13 @@
 Adds a label to the view that describes its contents.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityLabel(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityLabel(_:))
 
 > **Deprecated**: Use [`accessibilityLabel(_:)`](./accessibilitylabel%28_%29-13e9w.md) instead.
 

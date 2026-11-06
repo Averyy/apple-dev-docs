@@ -7,12 +7,12 @@
 Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
-- Mac Catalyst 16.0+ - Deprecated in 27.2
-- macOS 13.0+ - Deprecated in 27.2
-- tvOS 16.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
+- Mac Catalyst 16.0+ - Deprecated in 27.3
+- macOS 13.0+ - Deprecated in 27.3
+- tvOS 16.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`onContinuousHover(coordinateSpace:perform:)`](./oncontinuoushover%28coordinatespace,perform%29-4ehfq.md) instead.
 

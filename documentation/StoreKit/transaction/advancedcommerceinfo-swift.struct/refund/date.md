@@ -28,6 +28,8 @@ let date: Date
   The amount of the refund.
 - [let reason: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.property.md)
   The reason for the refund.
+- [let revokedSeatQuantity: Int?](./revokedseatquantity.md)
+  The number of seats that this refund revoked.
 - [let type: Transaction.AdvancedCommerceInfo.Refund.RefundType](./type.md)
   The type of the refund.
 

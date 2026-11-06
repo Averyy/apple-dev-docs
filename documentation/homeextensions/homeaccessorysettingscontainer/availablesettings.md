@@ -8,9 +8,9 @@
 The settings to display, in order.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -23,6 +23,7 @@ var availableSettings: [any HomeAccessorySetting] { get }
 
 ### HomeAccessorySettingsContainer Implementations
 - [var availableSettings: [any HomeAccessorySetting]](./availablesettings-2rw8h.md)
+  The settings to display, in order.
 
 
 ---

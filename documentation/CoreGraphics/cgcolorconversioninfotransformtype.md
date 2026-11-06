@@ -53,6 +53,7 @@ enum CGColorConversionInfoTransformType : uint32_t;
 - [init?(src: CGColorSpace, dst: CGColorSpace)](./cgcolorconversioninfo/init%28src,dst%29.md)
   Creates a conversion between two specified color spaces.
 - [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](./cgcolorconversioninfo/init%28optionssrc,dst,options%29.md)
+- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./cgcolorconversioninfo/init%28src,srcheadroom,dst,dstheadroom,tonemapping,options,_%29.md)
 - [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
   Creates a conversion between an arbitrary number of specified color spaces.
 

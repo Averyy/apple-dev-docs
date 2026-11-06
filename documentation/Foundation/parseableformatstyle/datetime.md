@@ -25,7 +25,7 @@ Available when `Self` is `Date.FormatStyle`.
 
 ## Discussion
 
-Use this type property when the call point allows the use of [`Date.FormatStyle`](../date/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../date/formatted%28_%29.md) method of [`Date`](../date.md).
+Use this type property when the call point allows the use of [`Date.FormatStyle`](../date/formatstyle.md). You typically do this when calling the `Date.formatted(_:)` method of [`Date`](../date.md).
 
 Customize the date format style using modifier syntax to apply specific date and time formats. For example:
 

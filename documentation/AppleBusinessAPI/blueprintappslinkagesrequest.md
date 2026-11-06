@@ -7,7 +7,7 @@
 A request to get a list of app resource linkages for a Blueprint.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

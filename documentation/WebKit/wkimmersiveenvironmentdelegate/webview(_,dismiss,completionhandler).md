@@ -30,7 +30,7 @@ Asks the delegate to dismiss an immersive environment.
 
 - `webView`: The web view requesting dismissal.
 - `environment`: The immersive environment to dismiss.
-- `completionHandler`: The completion handler you must invoke once the dismissal transition has completed.
+- `completionHandler`: The completion handler to invoke after the dismissal transition completes.
 
 
 ---

@@ -54,7 +54,7 @@ The [`NSURLRequest`](../Foundation/nsurlrequest.md) and [`NSMutableURLRequest`](
 
 ### Attribute WebKit loads
 
-A [WebKit](../WebKit/WebKit.md) network access that you initiate with a URL request using the https://developer.apple.com/documentation/webkit/wkwebview/load(_:) method honors the attribution parameter that you set on the [`URLRequest`](../Foundation/urlrequest.md) instance, just like the previous section describes for a [`URLSession`](../Foundation/urlsession.md) access. If you want to set an attribution when you use WebKit to load an HTML string, data, or a file URL, use one of the corresponding load methods that takes a request. For example, you can load an HTML string with attribution using the [`loadSimulatedRequest(_:responseHTML:)`](../WebKit/wkwebview/loadsimulatedrequest%28_,responsehtml%29.md) method, relying on the `request` defined in the previous section:
+A [WebKit](../WebKit/WebKit.md) network access that you initiate with a URL request using the [`load(_:)`](../WebKit/wkwebview/load%28_%29-5siv6.md) method honors the attribution parameter that you set on the [`URLRequest`](../Foundation/urlrequest.md) instance, just like the previous section describes for a [`URLSession`](../Foundation/urlsession.md) access. If you want to set an attribution when you use WebKit to load an HTML string, data, or a file URL, use one of the corresponding load methods that takes a request. For example, you can load an HTML string with attribution using the [`loadSimulatedRequest(_:responseHTML:)`](../WebKit/wkwebview/loadsimulatedrequest%28_,responsehtml%29.md) method, relying on the `request` defined in the previous section:
 
 ```swift
 import WebKit

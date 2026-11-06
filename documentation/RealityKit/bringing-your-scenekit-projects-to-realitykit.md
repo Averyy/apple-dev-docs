@@ -4,7 +4,7 @@
 **Role**: Sample Code  
 **Download**: [BringingYourSceneKitProjectsToRealityKit.zip](https://docs-assets.developer.apple.com/published/ef18a310f8dc/BringingYourSceneKitProjectsToRealityKit.zip)
 
-Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+Adapt a platformer game for the powerful ECS and modularity of RealityKit.
 
 **Availability**:
 - iOS 26.0+
@@ -46,7 +46,7 @@ For any project with a long-term vision, or for those looking to harness the lat
 
 ## Design modular Swift packages
 
-The core architectural strength of RealityKit comes from its modular design, which you can leverage through Swift packages. Each package encapsulates specific functionality, making the codebase more maintainable, testable, and reusable. This approach aligns perfectly with RealityKit’s ECS architecture:
+The core architectural strength of RealityKit comes from its modular design, which you can leverage through Swift packages. Each package encapsulates specific functionality, making the codebase more maintainable, testable, and reusable. This approach aligns perfectly with the RealityKit ECS architecture:
 
 - **Entities** are lightweight containers.
 - **Components** hold pure data, defining properties or state.

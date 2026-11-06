@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Indicates whether website immersive environments are allowed.
+A Boolean value that indicates whether website immersive environments are allowed.
 
 **Availability**:
 - visionOS 27.0+
@@ -26,7 +26,7 @@ The default value is `false`.
 
 ### Immersive environments
 - [WebPage.ImmersiveEnvironment](../immersiveenvironment.md)
-  An object representing a website-provided immersive environment that is ready for presentation.
+  An object that represents a website-provided immersive environment ready for presentation.
 - [struct WebViewImmersiveEnvironmentView](../../webviewimmersiveenvironmentview.md)
   A SwiftUI view that renders a specific website-provided immersive environment.
 

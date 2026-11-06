@@ -30,12 +30,6 @@ Adopt this protocol or use a conforming system type to associate motion sensor u
 
 In [UIKit](../UIKit/UIKit.md), [`UIView`](../UIKit/uiview.md) conforms to this protocol. Passing a view to [`deviceMotionBody`](./cmmotionmanager/devicemotionbody.md) lets your app receive motion data that aligns with your user interface during orientation changes, when running in Stage Manager or Split View on iPad or iPhone Duo.
 
-## Topics
-
-### Motion configuration
-- [var deviceMotionBody: (any CMBodyIdentifiable)?](./cmmotionmanager/devicemotionbody.md)
-  A physical body or view that defines the coordinate system for device-motion data.
-
 ## Relationships
 
 ### Inherits From

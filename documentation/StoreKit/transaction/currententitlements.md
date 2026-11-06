@@ -29,6 +29,8 @@ static var currentEntitlements: Transaction.Transactions { get }
 - [Getting started with Apple In-App Purchase using StoreKit views](../getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Supporting business model changes by using the app transaction](../supporting-business-model-changes-by-using-the-app-transaction.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
+- [Testing multiseat subscriptions](../testing-multiseat-subscriptions.md)
 
 ## Discussion
 

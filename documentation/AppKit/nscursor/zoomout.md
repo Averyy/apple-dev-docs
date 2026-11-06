@@ -22,9 +22,15 @@ class var zoomOut: NSCursor { get }
 @property (class, strong, readonly) NSCursor * zoomOutCursor;
 ```
 
+## Return Value
+
+The zoom-out cursor. This cursor indicates zooming out of a canvas or object.
+
 ## Discussion
 
-> **Note**: This cursor is used to indicate zooming out of a canvas or object.
+The following image shows the zoom-out cursor:
+
+![zoom-out cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-zoom-out@2x.png)
 
 ## See Also
 

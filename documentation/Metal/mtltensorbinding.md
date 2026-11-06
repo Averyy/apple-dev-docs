@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-An object that represents a tensor bound to a graphics or compute function or a machine learning function.
+A description of a tensor that a shader function or a machine learning pipeline uses.
 
 **Availability**:
 - iOS 26.0+
@@ -23,6 +23,10 @@ protocol MTLTensorBinding : MTLBinding
 ```objc
 @protocol MTLTensorBinding <MTLBinding>
 ```
+
+## Overview
+
+Metal returns an object of this type when the [`type`](./mtlbinding/type.md) property is [`MTLBindingType.tensor`](./mtlbindingtype/tensor.md).
 
 ## Topics
 

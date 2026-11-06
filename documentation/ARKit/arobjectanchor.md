@@ -22,18 +22,19 @@ class ARObjectAnchor
 
 ## Overview
 
-When you run a world-tracking AR session and specify [`ARReferenceObject`](./arreferenceobject.md) objects for the session configuration’s [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) property, ARKit searches for those objects in the real-world environment. When the session recognizes an object, it automatically adds to its list of anchors an [`ARObjectAnchor`](./arobjectanchor.md) for each detected object.
+When you run a world-tracking AR session and specify [`ARReferenceObject`](./arreferenceobject.md) objects for the session configuration’s [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) or [`trackingObjects`](./arworldtrackingconfiguration/trackingobjects.md) property, ARKit searches for those objects in the real-world environment. When the session recognizes an object, it automatically adds to its list of anchors an [`ARObjectAnchor`](./arobjectanchor.md) for each match.
 
-To place virtual 3D content that matches the position or size of the detected object, use the anchor’s inherited [`transform`](./aranchor/transform.md) property together with the [`center`](./arreferenceobject/center.md) and [`extent`](./arreferenceobject/extent.md) of the anchor’s [`referenceObject`](./arobjectanchor/referenceobject.md).
+For objects loaded from a `.referenceobject` file, use [`isTracked`](./artrackable/istracked.md) to determine whether ARKit is currently tracking the object. ARKit keeps the anchor in the session even when tracking is temporarily lost, so check [`isTracked`](./artrackable/istracked.md) before relying on the anchor’s transform. For objects loaded from the older `.arobject` format, [`isTracked`](./artrackable/istracked.md) always returns `true` and doesn’t reflect tracking state.
+
+To place virtual 3D content that matches the position or size of the detected object, use the anchor’s inherited [`transform`](./aranchor/transform.md) property together with the [`center`](./arreferenceobject/center.md) and [`extent`](./arreferenceobject/extent.md) of the anchor’s [`referenceObject`](./arobjectanchor/referenceobject.md). Starting in iOS 27, you can also render the trained model directly: if the reference object’s [`usdzFile`](./arreferenceobject/usdzfile.md) URL is non-nil, load that USDZ file and overlay it on the real object.
 
 ## Topics
 
-### Identifying Detected Objects
-- [var referenceObject: ARReferenceObject](./arobjectanchor/referenceobject.md)
-  The detected object referenced by the object anchor.
 ### Instance Properties
 - [var isTracked: Bool](./arobjectanchor/istracked.md)
   A Boolean value indicating whether the anchor is currently being tracked.
+- [var referenceObject: ARReferenceObject](./arobjectanchor/referenceobject.md)
+  The detected object referenced by the object anchor.
 
 ## Relationships
 
@@ -56,13 +57,11 @@ To place virtual 3D content that matches the position or size of the detected ob
 
 ## See Also
 
-### Physical Objects
-- [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md)
-  Estimate the shape of the physical environment using a polygonal mesh.
-- [Scanning and Detecting 3D Objects](./scanning-and-detecting-3d-objects.md)
-  Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
+### Object Tracking
+- [Using a reference object with ARKit in iOS](../visionOS/using-a-reference-object-with-arkit-in-ios.md)
+  Track a real-world object in your iOS app by using a reference-object file.
 - [class ARReferenceObject](./arreferenceobject.md)
-  The description of a 3D object that you want ARKit to detect in the physical environment.
+  A 3D object that ARKit can detect or track in the scene.
 
 
 ---

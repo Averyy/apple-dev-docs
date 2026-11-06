@@ -76,6 +76,13 @@ struct RenewalInfo
   The renewal price of the auto-renewable subscription that renews at the next billing period.
 - [var currency: Locale.Currency?](./renewalinfo/currency.md)
   The currency of the subscription’s renewal price.
+### Getting multiseat renewal information
+- [let renewalQuantity: Int?](./renewalinfo/renewalquantity.md)
+  The number of seats in a multiseat subscription at its next renewal.
+- [let multiSeatInfo: Product.SubscriptionInfo.RenewalInfo.MultiSeatInfo?](./renewalinfo/multiseatinfo-swift.property.md)
+  The seat information for the next renewal of a multiseat subscription.
+- [Product.SubscriptionInfo.RenewalInfo.MultiSeatInfo](./renewalinfo/multiseatinfo-swift.struct.md)
+  The price tiers of a multiseat subscription at its next renewal.
 ### Getting billing status
 - [let isInBillingRetry: Bool](./renewalinfo/isinbillingretry.md)
   A Boolean value that indicates whether an auto-renewable subscription is in the billing retry period.

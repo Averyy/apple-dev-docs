@@ -25,6 +25,14 @@ When the navigation bar minimizes, an integrated top tab bar will also minimize.
 
 The default value is `UIBarMinimizationBehaviorAutomatic`.
 
+## See Also
+
+### Configuring bar minimization
+- [restorationBehavior](./restorationbehavior.md)
+  The restoration behavior.
+- [safeAreaAdjustment](./safeareaadjustment.md)
+  The safe area adjustment during minimization.
+
 
 ---
 

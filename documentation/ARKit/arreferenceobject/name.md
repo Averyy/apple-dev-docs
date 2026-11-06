@@ -26,17 +26,6 @@ For a reference object loaded from an Xcode asset catalog, this property is the 
 
 > **Note**:  This string is not localized text intended for user display. However, in debugging you can use this property to indicate which reference object was detected.
 
-## See Also
-
-### Examining a Reference Object
-- [var resourceGroupName: String?](./resourcegroupname.md)
-- [var center: simd_float3](./center.md)
-  The center point of the reference object’s space-mapping data.
-- [var extent: simd_float3](./extent.md)
-  The size of the reference object’s space-mapping data.
-- [var scale: simd_float3](./scale.md)
-  A scale factor for the local coordinate space the reference object defines.
-
 
 ---
 

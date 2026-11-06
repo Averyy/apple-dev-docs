@@ -67,7 +67,7 @@ public class YourModel: Module, LLMModel, KVCacheDimensionProvider, LoRAModel {
 
 ## Register the Model
 
-In [LLMModelFactory.swift](./llmmodelfactory.swift.md) register the model type itself (this is independent of the model id):
+In LLMModelFactory.swift register the model type itself (this is independent of the model id):
 
 ```swift
 public class ModelTypeRegistry: @unchecked Sendable {

@@ -7,7 +7,7 @@
 Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 ## Declaration
 

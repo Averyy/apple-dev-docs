@@ -7,7 +7,7 @@
 A Boolean value indicating which line should be drawn with a highlight.
 
 **Availability**:
-- watchOS 3.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

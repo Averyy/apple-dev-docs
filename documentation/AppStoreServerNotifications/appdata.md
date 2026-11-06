@@ -43,6 +43,8 @@ The `appData` object is part of the [`responseBodyV2DecodedPayload`](./responseb
   The payload data for a subscription-renewal-date extension notification.
 - [object data](./data.md)
   The payload data that contains app metadata and the signed renewal and transaction information.
+- [object unclaimInfo](./unclaiminfo.md)
+  The payload data that identifies the seat claims the App Store unclaimed in a group subscription that uses developer-hosted invitations.
 
 
 ---

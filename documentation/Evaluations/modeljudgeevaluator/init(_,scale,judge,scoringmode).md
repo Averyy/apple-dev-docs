@@ -40,7 +40,7 @@ init(_ name: String, scale: ScoringScale, judge: any LanguageModel, scoringMode:
 
 ### Creating a single-dimension evaluator
 - [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./init%28_,scale,judge,scoringmode,prompt%29.md)
-  Creates a single-metric evaluator with a custom judge prompt.
+  Creates a single-metric evaluator with a custom model prompt.
 
 
 ---

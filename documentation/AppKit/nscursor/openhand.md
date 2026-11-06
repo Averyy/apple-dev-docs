@@ -26,6 +26,12 @@ class var openHand: NSCursor { get }
 
 The open-hand cursor.
 
+## Discussion
+
+The following image shows the open-hand cursor:
+
+![open-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-open-hand@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

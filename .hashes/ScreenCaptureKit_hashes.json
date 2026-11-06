@@ -846,7 +846,7 @@
     },
     "https://developer.apple.com/documentation/screencapturekit/scstreamconfiguration/colormatrix": {
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colormatrix.md",
-      "hash": "69b0b600d84cce5121be72f032e9dc88be8870101b88c5bf0cde9f614b501ae5"
+      "hash": "ccddeb2fce32b9ff28065521392ed1b265d664a7d56b461d456ad8f85465d31e"
     },
     "https://developer.apple.com/documentation/screencapturekit/scstreamconfiguration/colorspacename": {
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colorspacename.md",
@@ -2194,7 +2194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/colormatrix.json": {
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colormatrix.md",
-      "hash": "69b0b600d84cce5121be72f032e9dc88be8870101b88c5bf0cde9f614b501ae5"
+      "hash": "ccddeb2fce32b9ff28065521392ed1b265d664a7d56b461d456ad8f85465d31e"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/colorspacename.json": {
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colorspacename.md",

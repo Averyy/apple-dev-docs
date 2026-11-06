@@ -27,7 +27,6 @@ protocol MusicPropertyContainer
 - [func with([PartialMusicAsyncProperty<Self>]) async throws -> Self](./musicpropertycontainer/with%28_%29.md)
   Loads a new instance of the music item that includes the specified properties.
 - [func with([PartialMusicAsyncProperty<Self>], preferredSource: MusicPropertySource) async throws -> Self](./musicpropertycontainer/with%28_,preferredsource%29-8ec7p.md)
-  Loads a new instance of the music item that includes the specified properties.
 - [func with(PartialMusicAsyncProperty<Self>..., preferredSource: MusicPropertySource) async throws -> Self](./musicpropertycontainer/with%28_,preferredsource%29-9wqhc.md)
   Loads a new instance of the music item that includes the specified properties.
 

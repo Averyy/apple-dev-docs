@@ -17,6 +17,9 @@ You can use command-line tools to perform some actions in Terminal without runni
   Select the version of Xcode you want to use for command-line tools, in either Xcode settings or Terminal.
 - [Xcode command-line tool reference](./xcode-command-line-tool-reference.md)
   Use command-line tools that require you to install Xcode and set the app as the active developer directory.
+### Project configuration
+- [Managing Xcode projects using command-line tools](./managing-xcode-projects-using-the-command-line.md)
+  Edit build settings, targets, build phases, groups, and Swift package dependencies.
 ### Debugging
 - [Locating a missing debug symbol file](./locating-a-missing-debug-symbol-file.md)
   Find the debug symbol file (`.dSYM`) required to decode the hexadecimal address from a crash report.

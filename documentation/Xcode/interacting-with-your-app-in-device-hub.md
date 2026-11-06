@@ -17,6 +17,8 @@ Device Hub surrounds the screen content with a bezel that resembles the target d
 
 To interact with a simulated Apple Vision Pro device in Device Hub, see [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md). To take screenshots and record videos, see [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md).
 
+> 💡 **Tip**: To test touch features in your macOS app, test your app on a MacBook Pro with PROLED XDR Display, or connect an iPad to your Mac and test your app using Sidecar. For more information on Sidecar, see [Use an iPad as a second display for a Mac](https://support.apple.com/en-us/102597).
+
 ## Interact with your iOS or iPadOS app in the canvas
 
 Use your Mac’s pointer, trackpad or Magic Mouse, keyboard, menu items, and buttons to make gestures on a simulated iOS or iPadOS device.
@@ -37,11 +39,11 @@ Activate device buttons by clicking on parts of the device bezel:
 
 | Button | To simulate |
 | --- | --- |
-| Click the Home button | Click the Home button below the device bezel or choose Controls > Home. |
-| Click the Sleep/Wake button | Click the Sleep/Wake button on the device bezel or choose Controls > Lock. |
-| Click or hold Volume Up | Click or hold the Volume Up button on the device bezel or choose Device > Sound > Increase Volume. |
-| Click or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
-| Click the Action button | Click the Action button on the device bezel. |
+| Press the Home button | Click the Home button below the device bezel or choose Controls > Home. |
+| Press the Sleep/Wake button | Click the Sleep/Wake button on the device bezel or choose Controls > Lock. |
+| Press or hold Volume Up | Click or hold the Volume Up button on the device bezel or choose Device > Sound > Increase Volume. |
+| Press or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
+| Press the Action button | Click the Action button on the device bezel. |
 
 ## Interact with your iOS app on an iPhone Duo simulator
 
@@ -72,8 +74,8 @@ Activate device buttons using menu items or by clicking on parts of the device b
 | --- | --- |
 | Push in the Digital Crown | Click the Digital Crown on the device bezel. |
 | Rotate the Digital Crown clockwise or counterclockwise | Place the pointer over the Digital Crown on the device bezel and scroll using a mouse wheel or trackpad. If the bezel is hidden, move the pointer over the simulator window, then scroll using a mouse wheel or trackpad. |
-| Click the Side button | Click the Side button on the device bezel. |
-| Click the Action button | Click the Action button on the device bezel or choose Controls > Action Button. |
+| Press the Side button | Click the Side button on the device bezel. |
+| Press the Action button | Click the Action button on the device bezel or choose Controls > Action Button. |
 
 ## Interact with your tvOS app in the canvas
 

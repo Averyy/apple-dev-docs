@@ -21,12 +21,19 @@ object SubscriptionUpdateRequest.Data.Relationships
 - [object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers](./relationships-data.dictionary/introductoryoffers-data.dictionary.md)
 - [object SubscriptionUpdateRequest.Data.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
 - [object SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers](./relationships-data.dictionary/promotionaloffers-data.dictionary.md)
+### Dictionaries
+- [object SubscriptionUpdateRequest.Data.Relationships.RetentionMessage](./relationships-data.dictionary/retentionmessage-data.dictionary.md)
+  The relationships to other resources that you can set with this request.
+- [object SubscriptionUpdateRequest.Data.Relationships.RetentionMessageOffers](./relationships-data.dictionary/retentionmessageoffers-data.dictionary.md)
+  The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `introductoryOffers` (SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers)
 - `prices` (SubscriptionUpdateRequest.Data.Relationships.Prices)
 - `promotionalOffers` (SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers)
+- `retentionMessage` (SubscriptionUpdateRequest.Data.Relationships.RetentionMessage)
+- `retentionMessageOffers` (SubscriptionUpdateRequest.Data.Relationships.RetentionMessageOffers)
 
 ## See Also
 

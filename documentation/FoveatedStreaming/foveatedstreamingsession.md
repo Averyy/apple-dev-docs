@@ -80,8 +80,12 @@ struct FoveatedStreamingApp: App {
 ### Instance Methods
 - [func connect(endpoint: FoveatedStreamingSession.Endpoint) async throws](./foveatedstreamingsession/connect%28endpoint%29.md)
   Establishes a streaming connection at the provided endpoint.
+- [func connect(endpoint: FoveatedStreamingSession.Endpoint, configuration: [String : FoveatedStreamingSession.ConfigurationValue]) async throws](./foveatedstreamingsession/connect%28endpoint,configuration%29.md)
+  Establishes a streaming connection at the provided endpoint, passing connection parameters to the system-default streaming provider.
 - [func connect(endpoint: FoveatedStreamingSession.Endpoint, streamingProvider: FoveatedStreamingSession.StreamingProvider) async throws](./foveatedstreamingsession/connect%28endpoint,streamingprovider%29.md)
   Establishes a streaming connection at the provided endpoint using the specified streaming provider.
+- [func connect(endpoint: FoveatedStreamingSession.Endpoint, streamingProvider: FoveatedStreamingSession.StreamingProvider, configuration: [String : FoveatedStreamingSession.ConfigurationValue]) async throws](./foveatedstreamingsession/connect%28endpoint,streamingprovider,configuration%29.md)
+  Establishes a streaming connection at the provided endpoint, passing connection parameters to the specified streaming provider.
 - [func disconnect() async](./foveatedstreamingsession/disconnect%28%29.md)
   Disconnects from the remote streaming endpoint, ending the streaming session.
 - [func messageChannel(for: FoveatedStreamingSession.MessageChannel.ID) -> FoveatedStreamingSession.MessageChannel?](./foveatedstreamingsession/messagechannel%28for%29.md)
@@ -100,6 +104,8 @@ struct FoveatedStreamingApp: App {
 ### Enumerations
 - [FoveatedStreamingSession.AuthorizationStatus](./foveatedstreamingsession/authorizationstatus.md)
   The authorization status of an [`FoveatedStreamingSession.InputCapability`](./foveatedstreamingsession/inputcapability.md).
+- [FoveatedStreamingSession.ConfigurationValue](./foveatedstreamingsession/configurationvalue.md)
+  A value in the configuration passed to a streaming provider.
 - [FoveatedStreamingSession.InputCapability](./foveatedstreamingsession/inputcapability.md)
   An input source that a streaming session can request to send.
 - [FoveatedStreamingSession.Status](./foveatedstreamingsession/status-swift.enum.md)

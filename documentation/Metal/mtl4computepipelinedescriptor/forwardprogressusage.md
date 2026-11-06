@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+A scheduling strategy for code that blocks across SIMD groups.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,6 +23,12 @@ var forwardProgressUsage: MTLForwardProgressUsage { get set }
 ```objc
 @property (nonatomic, readwrite) MTLForwardProgressUsage forwardProgressUsage;
 ```
+
+## Discussion
+
+Metal resolves scheduling automatically when either this value is [`MTLForwardProgressUsage.automatic`](../mtlforwardprogressusage/automatic.md) or the kernel’s `[[forward_progress_usage]]` attribute is `automatic`. When both are explicit, this property takes priority.
+
+The default value is [`MTLForwardProgressUsage.automatic`](../mtlforwardprogressusage/automatic.md).
 
 
 ---

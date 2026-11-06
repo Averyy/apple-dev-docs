@@ -38,6 +38,7 @@ extern void CGContextSelectFont(CGContextRef c, const char *name, CGFloat size, 
 - [var textMatrix: CGAffineTransform](./textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](./textposition.md)
+  Returns the location at which text is drawn.
 - [func setCharacterSpacing(CGFloat)](./setcharacterspacing%28_%29.md)
   Sets the current character spacing.
 - [func setFont(CGFont)](./setfont%28_%29.md)

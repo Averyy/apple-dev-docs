@@ -25,7 +25,7 @@ var width: CGFloat { get set }
 
 ## Discussion
 
-If this property value is positive, the width of the combined image and title are fixed. If the value is `0.0` or negative, the item sets the width of the combined image and title to fit. This property is ignored if the style uses radio mode. The default value is `0.0`.
+Use this property to set the width of a fixed space item. If the value is positive, the item uses that width. The default value is `0.0`.
 
 ## See Also
 

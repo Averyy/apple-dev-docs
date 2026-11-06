@@ -23,9 +23,21 @@ An arrangement that places the primary and secondary views side by side along on
 
 A split arrangement view keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
-- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
 - In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
+- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
 - When someone is holding a closed iPhone Duo in a horizontal orientation, the split arrangement only shows the primary view.
+
+**Portrait**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. The primary view fills the top half of the display, and the secondary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-6@2x.png)
+
+**Landscape open or folded**:
+
+![A fully open iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the left half of the display, and the secondary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-7@2x.png)
+
+**Landscape closed**:
+
+![A closed iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the entire visible display.](https://developer.apple.com/tutorials/images/com.apple.uikit/ArrangementView-8@2x.png)
 
 Create a split arrangement by specifying a primary and secondary view controller, and call the [`updateArrangement:`](./uiarrangementviewcontroller/updatearrangement_.md) method with [`splitArrangement`](./uisplitarrangement-c.class/splitarrangement.md):
 

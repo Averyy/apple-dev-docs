@@ -7,7 +7,7 @@ Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out
 
 ## Overview
 
-iOS Apps on Mac runs your unmodified iPhone and iPad apps on Apple silicon with no porting process. Your apps use the same frameworks and infrastructure that Mac Catalyst apps use to run, but without the need to recompile for the Mac platform.
+iOS apps on Mac runs your unmodified iPhone and iPad apps on Apple silicon with no porting process. Your apps use the same frameworks and infrastructure that Mac Catalyst apps use to run, but without the need to recompile for the Mac platform.
 
 ![An illustration of an app running on an iPad and a Mac with Apple silicon.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/running-your-ios-apps-on-macos-1@2x.png)
 
@@ -84,8 +84,9 @@ Use [TestFlight](https://testflight.apple.com) to distribute your app to your te
 
 After you sign the updated developer agreement, the App Store automatically makes compatible iOS apps available to users of a Mac with Apple silicon. However, if you’re planning to ship a macOS version of your app, or if your app doesn’t make sense for a Mac, you can change your app’s availability in App Store Connect.
 
-1. Open the [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md) page in App Store Connect.
-2. Disable the “Make this app available on Mac” option.
+1. In [App Store Connect](https://appstoreconnect.apple.com), go to Apps and select your app.
+2. In the sidebar, select Pricing and Availability.
+3. Disable the “Make this app available on Mac” option.
 
 After you remove your app’s availability for Mac, the Mac App Store stops offering your app for sale. Users who previously downloaded the app for Mac can still use it, but can’t download it again.
 

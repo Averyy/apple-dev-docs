@@ -13,6 +13,7 @@ Uploads a message to use for retention messaging.
 
 - [Setting up retention messages](./setting-up-retention-messages.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
 ## Discussion
 
@@ -29,7 +30,7 @@ You define a message by providing the following strings and objects in the [`Upl
 
 To change the position of the header text in a retention message, use [`headerPosition`](./headerposition.md) to indicate whether to place the header above the message body or above the image.
 
-Each string needs to be a UTF-8-encoded value with a maximum length as indicated below:
+Each string needs to be a UTF-8-encoded value with a maximum character length as indicated below:
 
 | Field | Maximum length | Related error code |
 | --- | --- | --- |
@@ -38,7 +39,9 @@ Each string needs to be a UTF-8-encoded value with a maximum length as indicated
 | [`altText`](./alttext.md) | 150 | [`AltTextTooLongError`](./alttexttoolongerror.md) |
 | [`bulletPointText`](./bulletpointtext.md) | 66 | [`BadRequestBulletPointTextTooLongError`](./badrequestbulletpointtexttoolongerror.md) |
 
-The maximum number of messages you can configure for each app is 2000. For example, you may choose to upload a message for a product identifier for each locale your app supports. The endpoint returns a `MaximumNumberOfMessagesReachedError` response if you exceed the maximum limit. Call [`Delete Message`](./delete-message.md) to delete messages.
+> **Note**: Use only allowed Unicode characters in each text field. If a text field contains a disallowed character, the request fails with a [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md).
+
+The maximum number of messages you can configure for each app is 2000. For example, you can upload a message for a product identifier for each locale your app supports. The endpoint returns a [`MaximumNumberOfMessagesReachedError`](./maximumnumberofmessagesreachederror.md) response if you exceed the maximum limit. Call [`Delete Message`](./delete-message.md) to delete messages.
 
 > 💡 **Tip**: Keep a record of the message and image contents on your system.
 
@@ -46,7 +49,7 @@ This endpoint isn’t idempotent. If you have a previously configured message wi
 
 ### Determine whether a message is ready to display
 
-Immediately after you upload an message, its [`messageState`](./messagestate.md) is `PENDING`. Apple checks the message, and sets the message state to `APPROVED` to indicate the system can display it in retention messaging. Call the [`Get Message List`](./get-message-list.md) endpoint to check the current state of all messages. If a message includes an image, call [`Get Image List`](./get-image-list.md) to check the current state of the image separately. Both the message and its image, if any, need to be in an `APPROVED` state before the system can display a message.
+Immediately after you upload a message, its [`messageState`](./messagestate.md) is `PENDING`. After App Review approves the message, the state updates to `APPROVED` to indicate the system can display it in retention messaging. Call the [`Get Message List`](./get-message-list.md) endpoint to check the current state of all messages. If a message includes an image, call [`Get Image List`](./get-image-list.md) to check the current state of the image separately. Both the message and its image, if any, need to be in the `APPROVED` state before the system can display a message.
 
 In the sandbox testing environment, the system automatically sets message and image states to `APPROVED`.
 
@@ -65,12 +68,12 @@ In the sandbox testing environment, the system automatically sets message and im
 **Content-Type**: `application/json`  
 **Type**: `UploadMessageRequestBody`
 
-The message text to upload.
+The [`UploadMessageRequestBody`](./uploadmessagerequestbody.md) that contains the message text, and an optional image and bullet points, to upload.
 
 ## Responses
 
 - `200` OK: Request succeeded.
-- `400` Bad Request (`(BodyTooLongError | HeaderTooLongError | AltTextTooLongError | BadRequestImageSizeError | BadRequestTooManyBulletPointsError | BadRequestBulletPointTextTooLongError | BadRequestAboveImageRequiresAnImageError)`, `application/json`): The request is invalid and unacceptable.
+- `400` Bad Request (`(BodyTooLongError | HeaderTooLongError | AltTextTooLongError | BadRequestImageSizeError | BadRequestTooManyBulletPointsError | BadRequestBulletPointTextTooLongError | BadRequestAboveImageRequiresAnImageError | BadRequestInvalidTextFieldError)`, `application/json`): The request is invalid and unacceptable.
 - `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md).
 - `403` Forbidden (`MaximumNumberOfMessagesReachedError`, `application/json`): The request is forbidden because the system reached the maximum number of uploaded messages.
 - `409` Conflict (`MessageAlreadyExistsError`, `application/json`): The message identifier already exists.
@@ -85,7 +88,7 @@ The message text to upload.
 - [Get Message List](./get-message-list.md)
   Gets the message identifier and state of all uploaded messages.
 - [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
+  The request body for uploading a retention message, which includes the message text and an optional image reference and bullet points.
 - [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
 - [object GetMessageListResponse](./getmessagelistresponse.md)

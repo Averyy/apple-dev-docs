@@ -7,13 +7,13 @@
 16-bit, host endian format.
 
 **Availability**:
-- iOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- iPadOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- Mac Catalyst - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- macOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- visionOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
-- watchOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Host)
+- iOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- iPadOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- Mac Catalyst - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- macOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- visionOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
+- watchOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Host)
 
 ## Declaration
 

@@ -22,7 +22,7 @@ object SubscriptionUpdateRequest.Data.Attributes
 - `reviewNote` (string)
 - `subscriptionPeriod` (string): **Allowed Values**: `ONE_WEEK`, `ONE_MONTH`, `TWO_MONTHS`, `THREE_MONTHS`, `SIX_MONTHS`, `ONE_YEAR`
 - `groupLevel` (integer)
-- `marketSettings` ([string]): The markets in which the subscription is available for multi-seat purchase.
+- `marketSettings` ([string]): The markets in which the subscription is available for multiseat purchase.
 
   **Allowed Values**: `APPLE_SCHOOL`, `APP_STORE`, `APPLE_BUSINESS`
 - `multiSeatStatus` (string): The status that indicates whether the subscription supports multiple seats for organizations. Turning on Family Sharing for the subscription automatically sets this value to DISABLED.

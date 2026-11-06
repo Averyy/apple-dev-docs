@@ -11,6 +11,7 @@ Enforces that the number of elements in the array falls within a closed range.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 

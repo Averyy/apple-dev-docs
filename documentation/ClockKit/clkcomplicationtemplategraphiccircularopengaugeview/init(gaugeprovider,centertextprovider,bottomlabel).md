@@ -7,7 +7,7 @@
 Creates a new template that has an open circular gauge, a small amount of text in the center, and a small SwiftUI view at the bottom.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

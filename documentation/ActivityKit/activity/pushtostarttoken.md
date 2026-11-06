@@ -9,6 +9,8 @@ The token you use to start a Live Activity with an ActivityKit push notification
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

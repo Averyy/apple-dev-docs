@@ -105,6 +105,9 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 ### Type Aliases
 - [AppEntity.ValueRepresentation](./appentity/valuerepresentation.md)
   A type alias for `IntentValueRepresentation`, providing a convenient way to define transfer representations that convert between app entities and system intent values.
+### Type Properties
+- [static var authenticationPolicy: IntentAuthenticationPolicy](./appentity/authenticationpolicy.md)
+  The authentication policy to enforce when the system accesses this entity.
 ### Default Implementations
 - [Identifiable Implementations](./appentity/identifiable-implementations.md)
 
@@ -124,8 +127,10 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [AssistantEntity](./assistantentity.md)
 - [AssistantSchemaEntity](./assistantschemaentity.md)
 - [FileEntity](./fileentity.md)
+- [GenerableEntity](./generableentity.md)
 - [IndexedEntity](./indexedentity.md)
 - [OwnershipProvidingEntity](./ownershipprovidingentity.md)
+- [SnippetRepresentableEntity](./snippetrepresentableentity.md)
 - [SyncableEntity](./syncableentity.md)
 - [TransientAppEntity](./transientappentity.md)
 - [URLRepresentableEntity](./urlrepresentableentity.md)

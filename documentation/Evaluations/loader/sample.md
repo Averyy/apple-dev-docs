@@ -20,6 +20,12 @@
 associatedtype Sample : SampleProtocol
 ```
 
+## See Also
+
+### Loading samples
+- [var stream: any AsyncSequence<Self.Sample, any Error>](./stream.md)
+  The async sequence for iteration during an evaluation run.
+
 
 ---
 

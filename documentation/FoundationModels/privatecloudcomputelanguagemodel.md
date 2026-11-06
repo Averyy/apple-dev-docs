@@ -22,6 +22,7 @@ final class PrivateCloudComputeLanguageModel
 
 ## Mentions
 
+- [Detecting available Apple Foundation Models](./detecting-available-apple-foundation-models.md)
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
 
@@ -82,11 +83,11 @@ Before using the model, verify its availability. Model availability depends on w
 
 ## See Also
 
-### Private Cloud Compute
-- [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
-  Access a larger context window and stronger reasoning by routing session requests through Private Cloud Compute.
-- [com.apple.developer.private-cloud-compute](../BundleResources/entitlements/com.apple.developer.private-cloud-compute.md)
-  A Boolean value that indicates whether the app can use Private Cloud Compute.
+### Apple Foundation Models
+- [Detecting available Apple Foundation Models](./detecting-available-apple-foundation-models.md)
+  Discover which Apple Foundation Models your app can use across devices and platforms.
+- [class SystemLanguageModel](./systemlanguagemodel.md)
+  An on-device Apple Foundation Model capable of text generation tasks.
 
 
 ---

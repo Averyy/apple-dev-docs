@@ -7,9 +7,9 @@
 A setting that offers a binary choice, such as on or off.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -39,6 +39,9 @@ The Home app displays this setting as a toggle.
   The setting’s current value, or its default value if it has none.
 - [var projectedValue: HomeAccessoryToggleSetting](./homeaccessorytogglesetting/projectedvalue.md)
   The setting itself, which you access with a dollar sign prefix.
+### Instance Properties
+- [let id: String](./homeaccessorytogglesetting/id.md)
+  A unique identifier for the setting.
 
 ## Relationships
 

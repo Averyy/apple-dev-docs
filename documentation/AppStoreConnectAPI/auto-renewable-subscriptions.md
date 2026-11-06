@@ -28,7 +28,7 @@ Create and manage auto-renewable subscriptions, including managing subscription 
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](./querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
-- [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
   Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](./subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
@@ -57,6 +57,15 @@ Create and manage auto-renewable subscriptions, including managing subscription 
   Create, modify, and delete introductory offers for auto-renewable subscriptions.
 - [Subscription Promotional Offers](./subscription-promotional-offers.md)
   Create, modify, and delete promotional offers for auto-renewable subscriptions.
+### Managing retention messaging
+- [Retention messages](./retention-messages.md)
+  Create and manage the messages people see when they start to cancel an auto-renewable subscription.
+- [Retention message versions](./retention-message-versions.md)
+  Create versions of a retention message’s content and track their progress through App Review.
+- [Retention message localizations](./retention-message-localizations.md)
+  Create and manage the localized header and body text of a retention message version.
+- [Retention offers](./retention-offers.md)
+  Create and manage the discounted offers you present to people who start to cancel an auto-renewable subscription.
 ### Submitting Subscriptions and Groups for App Review
 - [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md)
   Attach localizations and screenshots to a subscription version, then submit subscriptions and subscription groups for App Review.

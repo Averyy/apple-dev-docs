@@ -119,9 +119,9 @@ func startLiveActivityWithChannel(hero: EmojiRanger) throws {
 }
 ```
 
-### Start new Live Activities with ActivityKit push notifications
+### Start Live Activities with ActivityKit push notifications
 
-You can start new Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
+You can start Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
 
 To start Live Activities from ActivityKit push notifications, configure your app to support push notifications. Then obtain the token for starting a Live Activity:
 
@@ -382,7 +382,7 @@ The following example payload provides a relevance score of `100` to make sure t
 
 ### Starting a Live Activity
 - [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
-  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+  Display up-to-date data and offer quick interactions in highly visible places like the Dynamic Island, the menu bar, a paired Apple Watch, or in CarPlay.
 - [class Activity](./activity.md)
   The object you use to start, update, and end a Live Activity.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)

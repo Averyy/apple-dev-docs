@@ -226,6 +226,8 @@ To validate your work, follow the process described in [Build and Validate](./em
   Bring your iPad app to macOS with Mac Catalyst.
 - [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
+- [Managing Xcode projects using command-line tools](./managing-xcode-projects-using-the-command-line.md)
+  Edit build settings, targets, build phases, groups, and Swift package dependencies.
 
 
 ---

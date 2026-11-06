@@ -7,7 +7,7 @@
 Creates a menu button with the specified label and content.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`Menu`](../menu.md) instead.
 

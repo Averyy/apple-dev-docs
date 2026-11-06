@@ -1,4 +1,4 @@
-# Configuring multi-seat subscriptions for organizations
+# Configuring multiseat subscriptions for organizations
 
 **Framework**: App Store Connect API  
 **Role**: Article
@@ -7,9 +7,9 @@ Control whether organizations can purchase an auto-renewable subscription for mu
 
 ## Overview
 
-Organizations can buy your auto-renewable subscriptions in quantities greater than one through Apple Business Manager (Enterprise) and Apple School Manager (Education). To learn more, see [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md). Use the `multiSeatStatus` and `marketSettings` attributes on the subscriptions resource to control whether a subscription supports these multi-seat purchases and which markets offer it. Both attributes apply only to auto-renewable subscriptions; updating them on any other in-app purchase type returns an error.
+Organizations can buy your auto-renewable subscriptions in quantities greater than one through Apple Business Manager (Enterprise) and Apple School Manager (Education). To learn more, see [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md). Use the `multiSeatStatus` and `marketSettings` attributes on the subscriptions resource to control whether a subscription supports these multiseat purchases and which markets offer it. Both attributes apply only to auto-renewable subscriptions; updating them on any other in-app purchase type returns an error.
 
-Before you configure multi-seat settings, create an auto-renewable subscription as described in [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md). To update these attributes, be sure you have one of the following user roles:
+Before you configure multiseat settings, create an auto-renewable subscription as described in [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md). To update these attributes, be sure you have one of the following user roles:
 
 - `ACCOUNT_HOLDER`
 - `ADMIN`
@@ -17,11 +17,11 @@ Before you configure multi-seat settings, create an auto-renewable subscription 
 
 API keys with the `MARKETING` role have read-only access to both attributes.
 
-### Turn multi-seat purchasing on or off
+### Turn multiseat purchasing on or off
 
 Every auto-renewable subscription defaults to `multiSeatStatus` of `ENABLED`, so you only need to set this attribute when you want to change a subscription’s current state. To update it, use [`Modify an auto-renewable subscription`](./patch-v1-subscriptions-_id_.md) with a payload that sets the `multiSeatStatus`.
 
-Here’s an example payload that turns multi-seat purchasing on for a subscription:
+Here’s an example payload that turns multiseat purchasing on for a subscription:
 
 ```other
 {
@@ -40,15 +40,15 @@ The `multiSeatStatus` attribute accepts the following values:
 | Value | Description |
 | --- | --- |
 | `ENABLED` | An organization can purchase the subscription in quantities greater than one. This is the default for every auto-renewable subscription. |
-| `DISABLED` | Restricts the subscription to single-seat (quantity of one) purchases. New multi-seat purchases stop, and Apple Business Manager and Apple School Manager no longer offer the SKU. Existing multi-seat subscribers keep renewing at their current seat count but can’t add seats. |
+| `DISABLED` | Restricts the subscription to single-seat (quantity of one) purchases. New multiseat purchases stop, and Apple Business Manager and Apple School Manager no longer offer the SKU. Existing multiseat subscribers keep renewing at their current seat count but can’t add seats. |
 
-> **Note**:  Turning on Family Sharing for a subscription automatically sets `multiSeatStatus` to `DISABLED`. If you turn multi-seat purchasing back on for a family-shareable subscription, Family Sharing only applies when the a single seat is purchased.
+> **Note**:  Turning on Family Sharing for a subscription automatically sets `multiSeatStatus` to `DISABLED`. If you turn multiseat purchasing back on for a family-shareable subscription, Family Sharing only applies when the a single seat is purchased.
 
-### Choose which markets offer multi-seat purchases
+### Choose which markets offer multiseat purchases
 
-After you turn on multi-seat purchasing, use the `marketSettings` attribute to choose which markets support multi-seat purchases of the subscription. Update it with the same `PATCH /v1/subscriptions/{id}` ([`Modify an auto-renewable subscription`](./patch-v1-subscriptions-_id_.md)) endpoint, providing an array of markets.
+After you turn on multiseat purchasing, use the `marketSettings` attribute to choose which markets support multiseat purchases of the subscription. Update it with the same `PATCH /v1/subscriptions/{id}` ([`Modify an auto-renewable subscription`](./patch-v1-subscriptions-_id_.md)) endpoint, providing an array of markets.
 
-Here’s an example payload that makes a subscription available for multi-seat purchase on the App Store and through Apple Business Manager, but not Apple School Manager:
+Here’s an example payload that makes a subscription available for multiseat purchase on the App Store and through Apple Business Manager, but not Apple School Manager:
 
 ```other
 {
@@ -69,11 +69,11 @@ Here’s an example payload that makes a subscription available for multi-seat p
 
 | Value | Description |
 | --- | --- |
-| `APP_STORE` | The subscription is available for multi-seat purchase directly on the App Store. |
+| `APP_STORE` | The subscription is available for multiseat purchase directly on the App Store. |
 | `APPLE_BUSINESS` | The subscription is available for purchase in quantity through Apple Business Manager, for enterprise organizations. |
 | `APPLE_SCHOOL` | The subscription is available for purchase in quantity through Apple School Manager, for education institutions. |
 
-> ❗ **Important**:  `marketSettings` only has an effect while `multiSeatStatus` is `ENABLED`. If `multiSeatStatus` is `DISABLED`, the subscription isn’t available for multi-seat purchase in any market, regardless of which values you set in `marketSettings`.
+> ❗ **Important**:  `marketSettings` only has an effect while `multiSeatStatus` is `ENABLED`. If `multiSeatStatus` is `DISABLED`, the subscription isn’t available for multiseat purchase in any market, regardless of which values you set in `marketSettings`.
 
 ### Verify your configuration
 

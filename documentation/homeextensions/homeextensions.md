@@ -32,7 +32,6 @@ To use this framework, add a new target in Xcode by selecting File > New > Targe
   A type that reads and writes an accessory’s settings.
 - [protocol HomeAccessorySettingsContainer](./homeaccessorysettingscontainer.md)
   A snapshot of an accessory’s settings and their current values.
-- [struct AnyHomeAccessorySettingsContainer](./anyhomeaccessorysettingscontainer.md)
 - [protocol HomeAccessorySettingsContext](./homeaccessorysettingscontext.md)
   A type that holds the resources that your settings provider needs to communicate with an accessory.
 - [struct HomeAccessorySettings](./homeaccessorysettings.md)
@@ -67,7 +66,6 @@ To use this framework, add a new target in Xcode by selecting File > New > Targe
   Help content about a specific topic for an accessory.
 - [struct HomeAccessoryTroubleshooting](./homeaccessorytroubleshooting.md)
   Content that helps people resolve problems with an accessory.
-- [class GuideStepHostViewController](./guidestephostviewcontroller.md)
 
 
 ---

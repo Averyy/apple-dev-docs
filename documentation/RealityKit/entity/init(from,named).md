@@ -7,12 +7,12 @@
 Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 
 **Availability**:
-- iOS 26.0+ - Deprecated in 27.2
-- iPadOS 26.0+ - Deprecated in 27.2
+- iOS 26.0+ - Deprecated in 27.3
+- iPadOS 26.0+ - Deprecated in 27.3
 - Mac Catalyst 26.0+ - Deprecated in 27.0
-- macOS 26.0+ - Deprecated in 27.2
-- tvOS 26.0+ - Deprecated in 27.2
-- visionOS 26.0+ - Deprecated in 27.2
+- macOS 26.0+ - Deprecated in 27.3
+- tvOS 26.0+ - Deprecated in 27.3
+- visionOS 26.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use init(from:contentType:) instead. Specify the content type explicitly using a UTType for more reliable format handling.
 

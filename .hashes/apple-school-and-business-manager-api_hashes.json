@@ -6,11 +6,15 @@
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog": {
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
-      "hash": "8b4467636679a47d2f25e216a6d0dfdc00cb97fde2a7761f92fd4399730e117d"
+      "hash": "c53501d61bd962d6478e4b8df6d081d5eb10caa53c6dedd34166fb7873baab2f"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api": {
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
       "hash": "991600612eba89f1128a72d7837ae6929a418c7b4bd2c606dd80e27e91462660"
+    },
+    "https://developer.apple.com/documentation/apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events": {
+      "file_path": "documentation/apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.md",
+      "hash": "c0c7e66b64b64157832a9e9e0ae60a30d902d1d2446a6584db4ab63cb0915913"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api.json": {
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-and-business-manager-api.md",
@@ -18,11 +22,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": {
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
-      "hash": "8b4467636679a47d2f25e216a6d0dfdc00cb97fde2a7761f92fd4399730e117d"
+      "hash": "c53501d61bd962d6478e4b8df6d081d5eb10caa53c6dedd34166fb7873baab2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.json": {
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
       "hash": "991600612eba89f1128a72d7837ae6929a418c7b4bd2c606dd80e27e91462660"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.json": {
+      "file_path": "documentation/apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.md",
+      "hash": "c0c7e66b64b64157832a9e9e0ae60a30d902d1d2446a6584db4ab63cb0915913"
     }
   },
   "metadata": {
@@ -31,17 +39,18 @@
       "appleschoolmanagerapi": {}
     },
     "gone_links": [
-      "https://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit"
+      "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
+      "https://developer.apple.com/documentation/applebusinessapi/understanding-apple-business-api-webhook-events",
+      "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
     ],
     "render": {
       "version": 4
     },
     "text_links": {
       "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": [
-        "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
-        "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
+        "https://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit"
       ]
     },
-    "total_pages": 6
+    "total_pages": 8
   }
 }

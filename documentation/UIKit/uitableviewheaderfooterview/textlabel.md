@@ -9,9 +9,9 @@ A primary text label for the view.
 **Availability**:
 - iOS 6.0+ - Deprecated in 27.0
 - iPadOS 6.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use a content configuration to manage the view’s text instead. Use [`defaultContentConfiguration()`](./defaultcontentconfiguration%28%29.md) to get a default list content configuration, set your primary text to the [`text`](../uilistcontentconfiguration-swift.struct/text.md) property of the configuration, and apply the configuration by setting it to the [`contentConfiguration`](./contentconfiguration-6b4eg.md) property of the view.
 

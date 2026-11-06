@@ -10,6 +10,8 @@ The kind of camera, such as a wide-angle or telephoto camera.
 - iOS 27.1+
 - iPadOS 27.1+
 - Mac Catalyst 27.1+
+- tvOS 27.3+ (Beta)
+- visionOS 27.3+ (Beta)
 
 ## Declaration
 

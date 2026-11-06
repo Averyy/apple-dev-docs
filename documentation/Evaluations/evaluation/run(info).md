@@ -30,6 +30,8 @@ An [`EvaluationResult`](../evaluationresult.md) that contains the summary statis
 
 This method executes the evaluation by iterating through your dataset, producing subjects, applying evaluators, and producing summary statistics. The evaluation logs and skips inference errors rather than halting the run.
 
+A `PhasedEvaluation` runs its `evaluatorPhases` in order per sample, passing earlier phases’ metrics to later `PhaseAwareEvaluator`s; a plain evaluation runs as one phase.
+
 The resulting [`EvaluationResult`](../evaluationresult.md) contains typed data in its DataFrames:
 
 - The Input column contains the full `Sample` from the dataset.

@@ -40,6 +40,12 @@ let evaluator = ToolCallEvaluator<ModelSample<String>>(
 - `percentagePass`: The metric for the partial score result.
 - `argumentMatchModel`: The language model to use for semantic matching.
 
+## See Also
+
+### Creating an evaluator
+- [init(allPass: Metric, percentagePass: Metric)](./init%28allpass,percentagepass%29.md)
+  Creates a new tool-call expectations evaluator.
+
 
 ---
 

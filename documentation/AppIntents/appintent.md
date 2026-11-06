@@ -194,6 +194,7 @@ For additional app intent protocols you can adopt in your app, see [App intent t
 - [StartWorkoutIntent](./startworkoutintent.md)
 - [SystemIntent](./systemintent.md)
 - [TargetContentProvidingIntent](./targetcontentprovidingintent.md)
+- [ToolIntent](./toolintent.md)
 - [UISceneAppIntent](./uisceneappintent.md)
 - [URLRepresentableIntent](./urlrepresentableintent.md)
 - [UndoableIntent](./undoableintent.md)

@@ -30,6 +30,11 @@ struct Action
   A type for the action.
 - [AccessoryNotification.Action.ActionType](./action/actiontype.md)
   The types of actions available for a notification.
+### Initializers
+- [init(identifier: String, title: String?, type: AccessoryNotification.Action.ActionType, isDestructive: Bool)](./action/init%28identifier,title,type,isdestructive%29.md)
+### Instance Properties
+- [var isDestructive: Bool](./action/isdestructive.md)
+  Whether this action performs a destructive task.
 
 ## Relationships
 

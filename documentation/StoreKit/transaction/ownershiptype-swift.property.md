@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
+A value that indicates whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 
 **Availability**:
 - iOS 15.0+
@@ -21,15 +21,19 @@ A value that indicates whether the transaction was purchased by the user, or is 
 let ownershipType: Transaction.OwnershipType
 ```
 
+## Mentions
+
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
+
 ## See Also
 
 ### Getting purchase details
 - [let isUpgraded: Bool](./isupgraded.md)
   A Boolean that indicates whether the user upgraded to another subscription.
 - [Transaction.OwnershipType](./ownershiptype-swift.struct.md)
-  The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
+  Values that indicate whether the customer purchased the product or has access to it through Family Sharing, an organization, or a group.
 - [let purchasedQuantity: Int](./purchasedquantity.md)
-  The number of consumable products purchased.
+  The number of purchased seats or consumable products.
 
 
 ---

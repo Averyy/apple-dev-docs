@@ -7,7 +7,7 @@
 Sets the color that the system applies to the row background when this view is placed in a list.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: listItemTint(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: listItemTint(_:))
 
 > **Deprecated**: Use [`listItemTint(_:)`](./listitemtint%28_%29-5ehdr.md) instead.
 

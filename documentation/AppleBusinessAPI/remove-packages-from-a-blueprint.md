@@ -7,7 +7,7 @@
 Remove packages from a Blueprint.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ### Example
 

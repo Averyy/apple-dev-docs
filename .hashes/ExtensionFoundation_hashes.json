@@ -170,11 +170,19 @@
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder.md",
-      "hash": "d93c65745f14dc3f7c15df64e3317c9abe1e3366ce95898f50d86203d12c92fc"
+      "hash": "18a2e8bd04bf722893aa83966715a1feca8617a6cff991670365a531baa61300"
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildblock(_:)": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildblock(_).md",
       "hash": "014464fb052ed0de0f5c7e72b5e08e5fda409a4f0aaf4b415d59ff63015583ef"
+    },
+    "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_:)": {
+      "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_).md",
+      "hash": "faa6bf4977ddc5115cfc430c54d1d6cb31d449fb0b865db49f00622a9306143a"
+    },
+    "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildoptional(_:)": {
+      "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildoptional(_).md",
+      "hash": "4a293c0f3f0149c485c37deee324183e8562462d2db3569bcd029c32e87eb8f0"
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/init(_:)": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/init(_).md",
@@ -558,11 +566,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder.json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder.md",
-      "hash": "d93c65745f14dc3f7c15df64e3317c9abe1e3366ce95898f50d86203d12c92fc"
+      "hash": "18a2e8bd04bf722893aa83966715a1feca8617a6cff991670365a531baa61300"
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildblock(_:).json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildblock(_).md",
       "hash": "014464fb052ed0de0f5c7e72b5e08e5fda409a4f0aaf4b415d59ff63015583ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_:).json": {
+      "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_).md",
+      "hash": "faa6bf4977ddc5115cfc430c54d1d6cb31d449fb0b865db49f00622a9306143a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildoptional(_:).json": {
+      "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildoptional(_).md",
+      "hash": "4a293c0f3f0149c485c37deee324183e8562462d2db3569bcd029c32e87eb8f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/init(_:).json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/init(_).md",
@@ -781,6 +797,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 194
+    "total_pages": 198
   }
 }

@@ -25,16 +25,15 @@ class UIGlassEffect
 
 ## Topics
 
-### Initializers
+### Creating a glass effect
 - [init(style: UIGlassEffect.Style)](./uiglasseffect/init%28style%29.md)
   Creates a glass effect with the specified style.
-### Instance Properties
+- [UIGlassEffect.Style](./uiglasseffect/style.md)
+### Configuring a glass effect
 - [var isInteractive: Bool](./uiglasseffect/isinteractive.md)
   Enables interactive behavior for the glass effect.
 - [var tintColor: UIColor?](./uiglasseffect/tintcolor.md)
   A tint color applied to the glass.
-### Enumerations
-- [UIGlassEffect.Style](./uiglasseffect/style.md)
 
 ## Relationships
 

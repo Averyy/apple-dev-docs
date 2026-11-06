@@ -7,12 +7,12 @@
 Activates a payment pass using the provided activation code.
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 10.12+
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`activate(_:activationData:completion:)`](./activate%28_,activationdata,completion%29.md) instead.
 

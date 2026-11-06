@@ -5,13 +5,13 @@
 **Role**: Case
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- iPadOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- macOS 10.14+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- tvOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
-- watchOS 5.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- iOS 12.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- iPadOS 12.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- macOS 10.14+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- tvOS 12.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- watchOS 5.0+ - Deprecated in 27.3 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
 
 ## Declaration
 

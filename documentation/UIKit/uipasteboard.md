@@ -238,6 +238,9 @@ A typical app that implements copy, paste, and duplicate operations also manages
 ### Structures
 - [UIPasteboard.ChangedMessage](./uipasteboard/changedmessage.md)
 - [UIPasteboard.RemovedMessage](./uipasteboard/removedmessage.md)
+### Instance Methods
+- [func setItemProviders([NSItemProvider], localOnly: Bool, expirationDate: Date?, concealed: Bool)](./uipasteboard/setitemproviders%28_,localonly,expirationdate,concealed%29.md)
+- [func setObjects([any NSItemProviderWriting], localOnly: Bool, expirationDate: Date?, concealed: Bool)](./uipasteboard/setobjects%28_,localonly,expirationdate,concealed%29.md)
 
 ## Relationships
 

@@ -47,6 +47,8 @@ The window tries to perform the method `action` using its inherited `NSResponder
   Forwards the message to the global application object.
 - [func sendEvent(NSEvent)](./sendevent%28_%29.md)
   This action method dispatches mouse and keyboard events the global application object sends to the window.
+- [var disablesDirectTouchSystemGestures: Bool](./disablesdirecttouchsystemgestures.md)
+  Disables direct-touch system gestures when this window is visible.
 
 
 ---

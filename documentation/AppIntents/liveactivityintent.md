@@ -41,7 +41,7 @@ To gain permission for starting Live Activities, conform to this protocol. In ge
 - [Live Activities](../WidgetKit/liveactivities-collection.md)
   Let people track updates from your app with Live Activities.
 - [ActivityKit](../ActivityKit/ActivityKit.md)
-  Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
+  Share live updates from your app as Live Activities that appear in the Dynamic Island and other highly visible locations.
 
 
 ---

@@ -7,13 +7,13 @@
 Sets alternate input labels with which users identify a view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityInputLabels(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityInputLabels(_:))
 
 > **Deprecated**: Use [`accessibilityInputLabels(_:)`](./accessibilityinputlabels%28_%29-9q3yf.md) instead.
 

@@ -29,8 +29,11 @@ static var updates: Transaction.Transactions { get }
 - [Testing win-back offers in the sandbox environment](../testing-win-back-offers-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](../testing-purchases-made-outside-your-app.md)
 - [Getting started with Apple In-App Purchase using StoreKit views](../getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
 - [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting multiseat purchases in your app](../supporting-multiseat-purchases-in-your-app.md)
+- [Testing multiseat subscriptions](../testing-multiseat-subscriptions.md)
 
 ## Discussion
 

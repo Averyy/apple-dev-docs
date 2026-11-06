@@ -25,7 +25,8 @@ A result builder that combines one or more `IdentityDocumentRequestScene`s into 
   A result builder that combines one or more identity document request scene`s into a single scene.
 - [static func buildBlock(some IdentityDocumentRequestScene, some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildblock%28_,_%29.md)
   A result builder that combines one or more identity document request scene`s into a single scene.
-- [static func buildLimitedAvailability(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildlimitedavailability%28_%29.md)
+- [static func buildLimitedAvailability(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildlimitedavailability%28_%29-47wy.md)
+- [static func buildLimitedAvailability(any IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildlimitedavailability%28_%29-4lw5o.md)
 - [static func buildOptional((some IdentityDocumentRequestScene)?) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildoptional%28_%29.md)
 
 ## Relationships

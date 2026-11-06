@@ -33,7 +33,7 @@ This type uses the ISO 3166-1 Alpha-3 country code representation.
 - [type productId](../AppStoreServerNotifications/productid.md)
   The product identifier of the In-App Purchase.
 - [type requestIdentifier](./requestidentifier.md)
-  A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+  A string that contains a unique identifier you provide to track a request, such as a subscription-renewal-date extension or a seat claim.
 - [type storefrontCountryCodes](./storefrontcountrycodes.md)
   A list of storefront country codes you provide to limit the storefronts for a subscription-renewal-date extension.
 

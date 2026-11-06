@@ -7,10 +7,10 @@
 A Boolean value that indicates whether Core Location sends beacon notifications when the device’s display is on.
 
 **Availability**:
-- iOS 7.0+ - Deprecated in 27.2
-- iPadOS 7.0+ - Deprecated in 27.2
+- iOS 7.0+ - Deprecated in 27.3
+- iPadOS 7.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 ## Declaration
 

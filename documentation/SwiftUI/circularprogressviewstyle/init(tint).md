@@ -7,13 +7,13 @@
 Creates a circular progress view style with a tint color.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
-- tvOS 14.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 7.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
+- tvOS 14.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the [`tint(_:)`](../view/tint%28_%29-93mfq.md) view modifier instead.
 

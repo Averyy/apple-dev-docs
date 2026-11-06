@@ -25,6 +25,14 @@ Currently, only the navigation bar supports customizing the safe area adjustment
 
 The default value is `UIBarMinimizationSafeAreaAdjustmentAutomatic`.
 
+## See Also
+
+### Configuring bar minimization
+- [minimizationBehavior](./minimizationbehavior.md)
+  The minimization behavior.
+- [restorationBehavior](./restorationbehavior.md)
+  The restoration behavior.
+
 
 ---
 

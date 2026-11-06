@@ -32,7 +32,7 @@ func onLongTouchGesture(minimumDuration: Double = 0.5, perform action: @escaping
 - [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./onlongpressgesture%28minimumduration,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
 - [struct LongPressGesture](../longpressgesture.md)
-  A gesture that succeeds when the user performs a long press.
+  A gesture that succeeds when a person performs a long press that elapses a minimum duration.
 
 
 ---

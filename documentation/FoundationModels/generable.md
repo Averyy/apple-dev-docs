@@ -11,6 +11,7 @@ A type that the model uses when responding to prompts.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -53,7 +54,7 @@ For every [`Generable`](./generable.md) type in a request, the framework convert
 - Reduce the complexity of your [`Generable`](./generable.md) type by evaluating whether properties are necessary to complete the task.
 - Give your properties short and clear names.
 - Use [`Guide(description:)`](./guide%28description%29.md) on properties only when it improves response quality.
-- Add a [`Guide(description:_:)`](./guide%28description,_%29.md) with [`maximumCount(_:)`](./generationguide/maximumcount%28_%29.md) to reduce token usage.
+- Add a [`Guide(description:_:)`](./guide%28description,_%29-7yim5.md) with [`maximumCount(_:)`](./generationguide/maximumcount%28_%29.md) to reduce token usage.
 
 If the [`Generable`](./generable.md) type includes properties with clear names the model may have all it needs to generate your type, eliminating the need of [`Guide(description:)`](./guide%28description%29.md). For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 

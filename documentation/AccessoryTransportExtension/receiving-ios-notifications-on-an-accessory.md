@@ -15,7 +15,7 @@ Implement three extensions using the [Accessory Notifications](../AccessoryNotif
 - **[`AccessoryTransportSecurity`](./accessorytransportsecurity.md)**: Manages cryptographic key exchange with your accessory.
 - **[`AccessoryTransportAppExtension`](./accessorytransportappextension.md)**: Relays encrypted data to your accessory over Bluetooth.
 
-The system coordinates these extensions, encrypting notification data before transmission so that only your accessory can decrypt it.
+The system coordinates these extensions, encrypting notification data before transmission so that only your accessory can decrypt it. Notification forwarding demonstrates the framework’s *feature* pattern. For more information about features, see [Accessory features](./accessory-features.md).
 
 Your accessory receives the notification data and decrypts it using [HPKE (RFC9180)](https://datatracker.ietf.org/doc/rfc9180/) before parsing the notification details. Extract the notification properties such as title, subtitle, body, and any rich content you include in the transmission.
 
@@ -41,7 +41,7 @@ The system prompts the person for permission to forward notifications and allows
 
 ## Create an extension to receive notifications
 
-To receive notification content, create an [`AccessoryDataProvider`](./accessorydataprovider.md) extension in your accessory’s companion app by adding a new target to your Xcode project with the app extension type. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-data-provider` and declare a capability for `AccessoryNotifications.NotificationsForwarding`:
+To receive notification content, create an [`AccessoryDataProvider`](./accessorydataprovider.md) extension in your accessory’s companion app by adding a new target to your Xcode project with the app extension type. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-data-provider` and declare the notification forwarding feature by adding `AccessoryNotifications.NotificationsForwarding` to the `EXCapabilities` key:
 
 ```xml
 <plist>
@@ -389,11 +389,11 @@ let recipient = try HPKE.Recipient(
 )
 ```
 
-Derive a notification forwarding-specific secret by appending the direction and feature ID to the protocol information. The feature ID is the session ID of the transport message that you receive from [`messageReceived(_:completion:)`](./accessorytransportsession/eventhandler/messagereceived%28_,completion%29.md).
+Derive a notification forwarding-specific secret by appending the direction and the transport message’s session ID to the protocol information.
 
 ```swift
-let featureID = // The transport message's session ID.   
-let context = Data("\(protocolInfo)-HostToAccessory-\(featureID)".utf8)
+let sessionID = // The transport message's session ID.   
+let context = Data("\(protocolInfo)-HostToAccessory-\(sessionID)".utf8)
 let secret = try recipient.exportSecret(context: context, outputByteCount: 32)
 ```
 
@@ -476,11 +476,13 @@ func removeAllNotifications() {
 
 ## See Also
 
-### Notification forwarding
+### Notification and Live Activity forwarding
+- [Receiving Live Activity updates and alerts on an accessory](../AccessoryLiveActivities/receiving-live-activities-on-an-accessory.md)
+  Enable your accessory to receive forwarded Live Activities by updating your data provider extension.
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
   Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
 - [protocol AccessoryDataProvider](./accessorydataprovider.md)
-  A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
+  A protocol for an extension that provides your accessory’s data for one or more of the framework’s features.
 - [protocol AccessoryDataProviderConfiguration](./accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](./accessorytransportsecurity.md)
@@ -489,6 +491,8 @@ func removeAllNotifications() {
   A protocol that configures and manages communication between your security extension and the system.
 - [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
+- [Accessory Live Activities](../AccessoryLiveActivities/AccessoryLiveActivities.md)
+  Forward Live Activity alerts from iPhone to an accessory you develop.
 
 
 ---

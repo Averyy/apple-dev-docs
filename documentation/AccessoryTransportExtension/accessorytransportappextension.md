@@ -18,11 +18,12 @@ protocol AccessoryTransportAppExtension : AppExtension
 ## Mentions
 
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
+- [Sending data to an accessory in the background](./sending-data-to-an-accessory-in-the-background.md)
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 ## Overview
 
-Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-extension` to relay data to your accessory. The extension supports sharing Wi-Fi networks and forwarding iOS system notifications.
+Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-extension` to relay data to your accessory. The extension supports sharing Wi-Fi networks, forwarding iOS system notifications, and opening feature sessions for background work.
 
 > ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-extension`](../BundleResources/entitlements/com.apple.developer.accessory-transport-extension.md) entitlement to use this protocol.
 

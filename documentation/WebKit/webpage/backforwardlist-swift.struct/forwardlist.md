@@ -17,7 +17,7 @@ The array of items that follow the current item.
 
 ```swift
 @MainActor
-var forwardList: [WebPage.BackForwardList.Item] { get }
+let forwardList: [WebPage.BackForwardList.Item]
 ```
 
 ## Discussion

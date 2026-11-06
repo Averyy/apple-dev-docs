@@ -34,6 +34,8 @@ For more information about Family Sharing, see [Turn on Family Sharing for Apple
 ### Getting ownership types
 - [static let purchased: Transaction.OwnershipType](./purchased.md)
   The transaction belongs to the purchaser.
+- [static var assigned: Transaction.OwnershipType](./assigned.md)
+  The transaction belongs to a customer who has access through an organization or group.
 
 
 ---

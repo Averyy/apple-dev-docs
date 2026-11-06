@@ -44,6 +44,10 @@ The [`purchase(options:)`](./purchase%28options%29.md) function may throw a purc
   The quantity to purchase is invalid.
 - [Product.PurchaseError.missingOfferParameters](./purchaseerror/missingofferparameters.md)
   The offer parameters are missing.
+- [Product.PurchaseError.multiSeatPurchaseDisabled](./purchaseerror/multiseatpurchasedisabled.md)
+  The product doesn’t support multiseat purchases.
+- [Product.PurchaseError.seatReductionNotAllowed](./purchaseerror/seatreductionnotallowed.md)
+  The purchase would reduce the number of seats in a multiseat subscription.
 ### Enumeration Cases
 - [Product.PurchaseError.paymentMethodBindingConfigurationRequired](./purchaseerror/paymentmethodbindingconfigurationrequired.md)
   The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](../paymentmethodbinding.md) to prompt the customer and bind the payment method.

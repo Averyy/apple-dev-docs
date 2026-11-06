@@ -7,12 +7,12 @@
 Returns the shared clinical type for the provided identifier.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 27.2
-- iPadOS 12.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- iOS 12.0+ - Deprecated in 27.3
+- iPadOS 12.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 5.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 5.0+ - Deprecated in 27.3
 
 ## Declaration
 

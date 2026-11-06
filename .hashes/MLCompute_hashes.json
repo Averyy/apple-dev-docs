@@ -2502,31 +2502,31 @@
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer.md",
-      "hash": "2fc9223dec7d26608c272c4d024aad9eaff39b1d69446546ef9b61bc0049fcc6"
+      "hash": "f9da05410ebf70c8f022d0eda9741a7eb29c78d900600551f6d40aaf3a2fcaf2"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/alpha": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/alpha.md",
-      "hash": "25496319149aee6d7540ef86432e98a6a46fda10f9b8779af2bf3f92c8ff7fe0"
+      "hash": "f61c376c2d389246505978f086b48e2a5923f8b431e339aca0340b623230ba5c"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/epsilon": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/epsilon.md",
-      "hash": "a5148d30d10cf6d96c49d763e0f32f13a19087b30877016bd46a95dba795653d"
+      "hash": "8fc3ece10bc3492066e1057b5262039f83f26b936bb777e18bb123ab50166fd7"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/init(descriptor:)": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/init(descriptor).md",
-      "hash": "7875c3b7251c98f9f877b7f1cfd1d123c3123b38db51268d69dfcef331147ca7"
+      "hash": "49e5baa3cef8eb6c443f4c9070c1cfad363ca64db550cf9da1a6e8b886f4249c"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/init(descriptor:momentumscale:alpha:epsilon:iscentered:)": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/init(descriptor,momentumscale,alpha,epsilon,iscentered).md",
-      "hash": "399552511bf646e8b424cd39750ae852415b1930859711ddc1fb3a2ef57f6b71"
+      "hash": "0b057ac456622892eb2c7893dd256ffc7812d7ea2c791bd35bed0999a863c9c8"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/iscentered": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/iscentered.md",
-      "hash": "d5e6e6a0173b216877203ecca35098353f8fdf8da2f92fe42199516ed370deff"
+      "hash": "a13695db2f109209e077266df4602be61a305885a295914812206aa7cbe86918"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrmspropoptimizer/momentumscale": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/momentumscale.md",
-      "hash": "0750183d128d2327cf5fe1528a681d171ffbfcd174f92ccaf4d5e9c8cc2d34d1"
+      "hash": "3e1076b6d618aab6c42785007c6afd7b4f6359cd59d5020aa56c38b724f02378"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcsamplemode": {
       "file_path": "documentation/MLCompute/mlcsamplemode.md",
@@ -5770,31 +5770,31 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer.json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer.md",
-      "hash": "2fc9223dec7d26608c272c4d024aad9eaff39b1d69446546ef9b61bc0049fcc6"
+      "hash": "f9da05410ebf70c8f022d0eda9741a7eb29c78d900600551f6d40aaf3a2fcaf2"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/alpha.json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/alpha.md",
-      "hash": "25496319149aee6d7540ef86432e98a6a46fda10f9b8779af2bf3f92c8ff7fe0"
+      "hash": "f61c376c2d389246505978f086b48e2a5923f8b431e339aca0340b623230ba5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/epsilon.json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/epsilon.md",
-      "hash": "a5148d30d10cf6d96c49d763e0f32f13a19087b30877016bd46a95dba795653d"
+      "hash": "8fc3ece10bc3492066e1057b5262039f83f26b936bb777e18bb123ab50166fd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/init(descriptor:).json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/init(descriptor).md",
-      "hash": "7875c3b7251c98f9f877b7f1cfd1d123c3123b38db51268d69dfcef331147ca7"
+      "hash": "49e5baa3cef8eb6c443f4c9070c1cfad363ca64db550cf9da1a6e8b886f4249c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/init(descriptor:momentumscale:alpha:epsilon:iscentered:).json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/init(descriptor,momentumscale,alpha,epsilon,iscentered).md",
-      "hash": "399552511bf646e8b424cd39750ae852415b1930859711ddc1fb3a2ef57f6b71"
+      "hash": "0b057ac456622892eb2c7893dd256ffc7812d7ea2c791bd35bed0999a863c9c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/iscentered.json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/iscentered.md",
-      "hash": "d5e6e6a0173b216877203ecca35098353f8fdf8da2f92fe42199516ed370deff"
+      "hash": "a13695db2f109209e077266df4602be61a305885a295914812206aa7cbe86918"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrmspropoptimizer/momentumscale.json": {
       "file_path": "documentation/MLCompute/mlcrmspropoptimizer/momentumscale.md",
-      "hash": "0750183d128d2327cf5fe1528a681d171ffbfcd174f92ccaf4d5e9c8cc2d34d1"
+      "hash": "3e1076b6d618aab6c42785007c6afd7b4f6359cd59d5020aa56c38b724f02378"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsamplemode.json": {
       "file_path": "documentation/MLCompute/mlcsamplemode.md",

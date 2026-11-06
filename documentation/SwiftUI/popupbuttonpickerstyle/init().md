@@ -7,7 +7,7 @@
 Creates a pop-up button picker style.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`MenuPickerStyle`](../menupickerstyle.md) instead.
 

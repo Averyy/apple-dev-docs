@@ -17,7 +17,7 @@ The areas of the main window:
 
 - The *toolbar* — for building and running your app, viewing the progress of tasks, and configuring the main window — appears at the top of the window.
 - The *editor area* — for viewing and editing the contents of your project, including code, user interface files, property lists, project settings, and more — appears in the middle of the window.
-- The *navigator area* — for viewing the parts of your project, including files, symbols, breakpoints, and build information — appears on the right of the editor area.
+- The *navigator area* — for viewing the parts of your project, including files, symbols, breakpoints, and build information — appears on the left of the editor area.
 - The *debug area* — for controlling the app runtime during debugging, and for displaying variables, register, and status information — appears below an editor pane.
 - The *inspector area* — for viewing and editing information about the project, or about the selected object in the navigator or editor area — appears on the right of the editor area.
 

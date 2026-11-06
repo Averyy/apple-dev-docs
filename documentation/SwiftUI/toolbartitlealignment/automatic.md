@@ -27,6 +27,14 @@ The system chooses an alignment based on the context the title is rendered in.
 
 When read from [`toolbarTitleAlignment`](../environmentvalues/toolbartitlealignment.md), this means the system has not resolved an alignment for the title.
 
+## See Also
+
+### Getting title alignment options
+- [static let center: ToolbarTitleAlignment](./center.md)
+  The title is center-aligned.
+- [static let leading: ToolbarTitleAlignment](./leading.md)
+  The title is leading-aligned.
+
 
 ---
 

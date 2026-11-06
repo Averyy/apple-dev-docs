@@ -7,7 +7,7 @@
 A representation of an individual host on the network.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use Network framework instead, see deprecation notice in <Foundation/NSHost.h>
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Indicates whether this key request was initiated for an advisory key.
+A Boolean value that indicates whether a cached advisory key can fulfill the key request.
 
 **Availability**:
 - iOS 27.0+
@@ -24,11 +24,13 @@ var canBeFulfilledWithAdvisoryKey: Bool { get }
 
 ## Discussion
 
-This property is set to true when: 1. Advisory key loading is enabled on the parent AVContentKeySession 2. The key was previously loaded as an advisory key and cached by FairPlay 3. A subsequent request for the same key is made
+The value of this property is `true` when all of the following conditions are met:
 
-When `canBeFulfilledWithAdvisoryKey` is true and `makeStreamingContentKeyRequestData` returns nil for the key request data, this indicates FairPlay has already cached the key. No request to the key server for a key response is necessary, and the application should simply return from the completion handler.
+- The AVContentKeySession `supportsAdvisoryKeys` property is `true`.
+- FairPlay previously loaded and cached the key as an advisory key.
+- The app makes a subsequent request for the same key.
 
-This property should be checked in the completion handler of `makeStreamingContentKeyRequestData(forApp:contentIdentifier:options:completionHandler:)` whenever the key request data is nil to distinguish advisory keys from actual errors.
+Check this property in the completion handler of `makeOptionalStreamingContentKeyRequestDataForApp` when the key request data is `nil`. A value of `true` means FairPlay already has the key cached, and no further action is necessary. A value of `false` means the request failed, so inspect the error.
 
 
 ---

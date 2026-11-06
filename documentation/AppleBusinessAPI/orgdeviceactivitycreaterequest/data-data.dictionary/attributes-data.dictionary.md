@@ -7,7 +7,7 @@
 Attributes with values that you’re changing as part of the create request.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

@@ -117,6 +117,8 @@ The Mail domain has three use-case groups: composing, forwarding, and replying. 
   Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
 - [System and in-app search](./app-schema-domain-system-and-in-app-search.md)
   Make your app’s actions available to Apple Intelligence and Siri by adopting schemas for in-app search and content access.
+- [Video](./app-schema-domain-video.md)
+  Make your video app’s actions available to Apple Intelligence and Siri by adopting schemas for common video playback and watchlist actions.
 
 
 ---

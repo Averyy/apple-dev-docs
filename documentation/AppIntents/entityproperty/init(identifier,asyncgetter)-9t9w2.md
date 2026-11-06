@@ -26,7 +26,7 @@ Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable
 ## Parameters
 
 - `identifier`: The identifier of the property
-- `asyncGetter`: The getter reference for the property
+- `asyncGetter`: The async getter for the property
 
 
 ---

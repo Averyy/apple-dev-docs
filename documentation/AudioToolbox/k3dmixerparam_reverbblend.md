@@ -5,11 +5,11 @@
 **Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_DryWetReverbBlend)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_DryWetReverbBlend)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_DryWetReverbBlend)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_DryWetReverbBlend)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: k3DMixerParam_DryWetReverbBlend)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_DryWetReverbBlend)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_DryWetReverbBlend)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_DryWetReverbBlend)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_DryWetReverbBlend)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: k3DMixerParam_DryWetReverbBlend)
 
 ## Declaration
 

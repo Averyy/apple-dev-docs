@@ -29,6 +29,7 @@ Specify the date and time as an [`NSDate`](../../../Foundation/nsdate.md) value.
 ## See Also
 
 ### Constants
+- [static let concealed: UIPasteboard.OptionsKey](./concealed.md)
 - [static let localOnly: UIPasteboard.OptionsKey](./localonly.md)
   A Boolean value that specifies that the pasteboard items should not be available to other devices through the Handoff feature.
 

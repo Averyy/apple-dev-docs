@@ -7,10 +7,10 @@
 A URL that contains the domain name of Privacy Pass issuer.
 
 **Availability**:
-- iOS 26.0+ - Deprecated in 27.2
-- iPadOS 26.0+ - Deprecated in 27.2
-- Mac Catalyst 26.0+ - Deprecated in 27.2
-- macOS 26.0+ - Deprecated in 27.2
+- iOS 26.0+ - Deprecated in 27.3
+- iPadOS 26.0+ - Deprecated in 27.3
+- Mac Catalyst 26.0+ - Deprecated in 27.3
+- macOS 26.0+ - Deprecated in 27.3
 
 > **Deprecated**: Set the PIR privacy pass-issuer URL in your information property list in the `NSPIRConfiguration` dictionary.
 

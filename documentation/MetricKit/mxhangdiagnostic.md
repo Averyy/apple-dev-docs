@@ -7,11 +7,11 @@
 An object representing a diagnostic report for an app that is too busy to handle user input responsively.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
 - Mac Catalyst 14.0+ - Deprecated in 27.0
-- macOS 12.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`HangDiagnostic`](./hangdiagnostic.md) instead.
 

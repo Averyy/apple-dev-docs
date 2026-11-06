@@ -56,6 +56,8 @@ When you build your app, these macros expand and map the type to the schema you 
   Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
 - [System and in-app search](./app-schema-domain-system-and-in-app-search.md)
   Make your app’s actions available to Apple Intelligence and Siri by adopting schemas for in-app search and content access.
+- [Video](./app-schema-domain-video.md)
+  Make your video app’s actions available to Apple Intelligence and Siri by adopting schemas for common video playback and watchlist actions.
 ### Single-purpose domains
 - [Assistant](./app-schema-domain-assistant.md)
   Enable people in Japan to launch your voice-based conversational app from the side button of iPhone.

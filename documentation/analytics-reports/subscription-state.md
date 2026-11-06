@@ -42,6 +42,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Vanity Code | Vanity code associated with the subscription offer. | `string` | ✔ | ✔ |
 | Offer Pricing | The pricing mechanism associated with the offer redeemed by the user. | `string` | ✔ | ✔ |
 | Offer Duration | The duration of the subscription offer. | `string` | ✔ | ✔ |
+| Auto-Renew Status | The renewal status of the user’s auto-renewable subscription, indicating whether the subscription is set to renew at the end of the current period. This field is applicable to active and billing-issue subscription states, and is blank for churned subscriptions. | `string` | ✔ | ✔ |
 | Family Sharing | Indicates whether users are sharing the subscription with their iCloud family. | `string` | ✔ | ✔ |
 | Cancellation Reason | The reason why the subscription was canceled. | `string` | ✔ | ✔ |
 | App Download Source Type | The name of the source type that led to the app being downloaded. | `string` | ✔ | ✔ |
@@ -72,6 +73,8 @@ The Analytics Reports framework delivers new portions of report content as insta
 | State Metric Grouping | Paid plans | The number of active full price, preserved price, and contingent price subscriptions. |
 | State Metric Grouping | Billing issue | The number of subscriptions that failed to renew due to a billing issue, and Apple is attempting to recover them. |
 | State Metric Grouping | Churned | The number of subscriptions that churned or became inactive within the last 2 years. |
+| Auto-Renew Status | Auto-renew on | The subscription renews at the end of the current subscription period. |
+| Auto-Renew Status | Auto-renew off | The user has turned off automatic renewal, and the subscription won’t renew at the end of the current subscription period. |
 | Family Sharing | Individual | The user is not sharing the subscription with their family. |
 | Family Sharing | Shared with family | The user is sharing their subscription with their family. |
 | Cancel Reason | Billing issue | The subscriber could not be billed, and the subscription was automatically canceled after the 60-day billing retry period. |

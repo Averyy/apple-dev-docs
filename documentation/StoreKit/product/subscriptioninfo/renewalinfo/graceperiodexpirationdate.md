@@ -23,6 +23,7 @@ let gracePeriodExpirationDate: Date?
 
 ## Mentions
 
+- [Managing the life cycle of multiseat subscriptions](../../../managing-the-life-cycle-of-multiseat-subscriptions.md)
 - [Testing failing subscription renewals and Apple In-App Purchases](../../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 ## Discussion

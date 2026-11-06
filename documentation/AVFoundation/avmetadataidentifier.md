@@ -628,6 +628,11 @@ typedef NSString * AVMetadataIdentifier;
   Creates a metadata identifier.
 - [init(rawValue: String)](./avmetadataidentifier/init%28rawvalue%29.md)
   Creates a metadata identifier with the specified raw value.
+### Type Properties
+- [static let isoUserDataAudioStreamLoudness: AVMetadataIdentifier](./avmetadataidentifier/isouserdataaudiostreamloudness.md)
+- [static let isoUserDataContentTypeForLoudnessControl: AVMetadataIdentifier](./avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol.md)
+- [static let quickTimeUserDataAudioStreamLoudness: AVMetadataIdentifier](./avmetadataidentifier/quicktimeuserdataaudiostreamloudness.md)
+- [static let quickTimeUserDataContentTypeForLoudnessControl: AVMetadataIdentifier](./avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol.md)
 
 ## Relationships
 

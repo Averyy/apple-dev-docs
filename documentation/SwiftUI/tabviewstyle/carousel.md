@@ -7,7 +7,7 @@
 A style that implements the carousel interaction and appearance.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`verticalPage`](./verticalpage.md) or [`verticalPage(transitionStyle:)`](./verticalpage%28transitionstyle%29.md) instead.
 

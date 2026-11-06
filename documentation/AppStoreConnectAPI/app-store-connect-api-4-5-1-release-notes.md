@@ -11,9 +11,9 @@ App Store Connect API version 4.5.1 provides resources that enable you to automa
 
 ## Added
 
-- Manage your app’s marketing and product media from one place with the App Asset Library. Upload an image once with [`Create an app asset library image`](./post-v1-appassetlibraryimages.md) or a video with [`Create an app asset library video`](./post-v1-appassetlibraryvideos.md), read an app’s library with [`Read related asset library`](./get-v1-apps-_id_-assetlibrary.md), and list its assets through [`List related images`](./get-v1-appassetlibraries-_id_-images.md) and [`List related videos`](./get-v1-appassetlibraries-_id_-videos.md). For more information, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
-- Reuse library assets across App Store surfaces. Use [`Create an app asset library placement`](./post-v1-appassetlibraryplacements.md) to place an image or video on an App Store version localization, custom product page localization, in-app event localization, or App Store version experiment treatment localization, and [`Create an app asset library placement ordering request`](./post-v1-appassetlibraryplacementorderingrequests.md) to set the order in which placements appear. Read the placements for a localization through [`List related placements`](./get-v1-appstoreversionlocalizations-_id_-placements.md), [`List related placements`](./get-v1-appcustomproductpagelocalizations-_id_-placements.md), [`List related placements`](./get-v1-appeventlocalizations-_id_-placements.md), and [`List related placements`](./get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-placements.md).
-- Discover valid asset specifications instead of hard-coding them. Use [`List app asset library ref data`](./get-v1-appassetlibraryrefdata.md) to read the supported placement types, dimensions, and limits for the library.
+- Manage your app’s marketing and product media from one place with the App Asset Library. Upload an image with [`Create an app asset library image`](./post-v1-appassetlibraryimages.md) or a video with [`Create an app asset library video`](./post-v1-appassetlibraryvideos.md). Read an app’s asset library with [`Read related asset library`](./get-v1-apps-_id_-assetlibrary.md), and list its assets through [`List related images`](./get-v1-appassetlibraries-_id_-images.md) and [`List related videos`](./get-v1-appassetlibraries-_id_-videos.md). For more information, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
+- Reuse library assets across localizations. Use [`Create an app asset library placement`](./post-v1-appassetlibraryplacements.md) to place an image or video on an App Store version localization, custom product page localization, in-app event localization, or App Store version experiment treatment localization, and [`Create an app asset library placement ordering request`](./post-v1-appassetlibraryplacementorderingrequests.md) to set the order in which placements appear. Read the placements for a localization through [`List related placements`](./get-v1-appstoreversionlocalizations-_id_-placements.md), [`List related placements`](./get-v1-appcustomproductpagelocalizations-_id_-placements.md), [`List related placements`](./get-v1-appeventlocalizations-_id_-placements.md), and [`List related placements`](./get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-placements.md).
+- Discover valid asset specifications. Use [`List app asset library ref data`](./get-v1-appassetlibraryrefdata.md) to read the supported placement types, dimensions, and limits for the library.
 - Target iPhone Duo screenshots and app previews with the new `IPHONE_DUO` display class in [`AppAssetLibraryDisplayClass`](./appassetlibrarydisplayclass.md). Use [`List app asset library ref data`](./get-v1-appassetlibraryrefdata.md) to read its placement groups and screen dimensions.
 
 ## Deprecated
@@ -25,6 +25,8 @@ App Store Connect API version 4.5.1 provides resources that enable you to automa
 ## See Also
 
 ### Versions
+- [App Store Connect API 4.6 release notes](./app-store-connect-api-4-6-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
@@ -52,8 +54,6 @@ App Store Connect API version 4.5.1 provides resources that enable you to automa
 - [App Store Connect API 3.4 release notes](./app-store-connect-api-3-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.2 release notes](./app-store-connect-api-3-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

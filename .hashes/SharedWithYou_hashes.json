@@ -14,7 +14,7 @@
     },
     "https://developer.apple.com/documentation/sharedwithyou/collaboration-views": {
       "file_path": "documentation/SharedWithYou/collaboration-views.md",
-      "hash": "f308dbb64d5634e5ea37d4db6bcff5d8b69908f16960ea1a51d6735dd6f15f18"
+      "hash": "1a0a986622976f7ec6cc15c6bbfadb6b6cbd6244792b48c28c19b901476e82d3"
     },
     "https://developer.apple.com/documentation/sharedwithyou/macros": {
       "file_path": "documentation/SharedWithYou/macros.md",
@@ -132,6 +132,46 @@
       "file_path": "documentation/SharedWithYou/swattributionview/supplementalmenu.md",
       "hash": "bb0b4bec9e08878e667843da8b1c045b55e57b5e1991404eb55c378f0844a7e5"
     },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem.md",
+      "hash": "6f44fa192804273380243734f6637a15cc3598008c8e146cc814c377af086693"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/activeparticipantcount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/activeparticipantcount.md",
+      "hash": "4b8320bba42a3e08f78f0c38744916d01ac2a6b0c760ff27aee8f906e72c3744"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/cloudsharingcontrollerdelegate": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/cloudsharingcontrollerdelegate.md",
+      "hash": "b5f917382900252ff6f3529c5599c92765722e2b4b17c683cb94111b6344e076"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/detailviewlistcontent": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/detailviewlistcontent.md",
+      "hash": "a51226dc340aa47880dee1bbd8bec0d1a1d331fa57b21cbd671ead8267795207"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/dismisspopover(animated:completion:)": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/dismisspopover(animated,completion).md",
+      "hash": "ab1092e8bcd4a7442c1f47abc4014a6562a271d755cf13b51095fa4152fc46a5"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/init(itemprovider:)": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/init(itemprovider).md",
+      "hash": "686fd2fae3b74e3747f03f1b931e1f4d850155ad09271634c9a7c1a9583a5cfb"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/managebuttontitle": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/managebuttontitle.md",
+      "hash": "ad1f15119533553a92270fa3ec06c8beea2b2388654048a0208ec6505c8c5e98"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/pendingaccessrequestscount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/pendingaccessrequestscount.md",
+      "hash": "ff4c69c61373cae3ae5a7e606fd7d9be9e074a656818bd1a3143934411d16c37"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/showmanagebutton": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/showmanagebutton.md",
+      "hash": "5f4f930d0ee64ebb825b34ee37896f2e8ee0ef7fd3584c37f6d14e325070104d"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationbarbuttonitem/showsparticipantcount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/showsparticipantcount.md",
+      "hash": "8974c471b6fd312de1d8e6cb2897b9a0e05e7eac84683b7b66c2f38eac964bd5"
+    },
     "https://developer.apple.com/documentation/sharedwithyou/swcollaborationhighlight": {
       "file_path": "documentation/SharedWithYou/swcollaborationhighlight.md",
       "hash": "877848c5112bec8dcc384b0b67d5dad2424e14f380daf5e9066ee7b4d650ffb1"
@@ -156,9 +196,45 @@
       "file_path": "documentation/SharedWithYou/swcollaborationmetadatatypeidentifier.md",
       "hash": "7ef3a14b449065b86458a31a07264b494c3736f5926953d2a7d9ccf2f81e3e48"
     },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem.md",
+      "hash": "156af557f17bde5f54fef204bde3a19c6152987183933fbac7ef26de654489dd"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/activeparticipantcount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/activeparticipantcount.md",
+      "hash": "27407910466afb3036378c0de1b199a5e918befdd3992f51a6664204e2b3c632"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/detailviewlistcontent": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/detailviewlistcontent.md",
+      "hash": "6dc92ff1dd95867c7aa88a78888b0d9375b2f23d3517c41634333338ca86b5ec"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/dismisspopover(animated:completion:)": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/dismisspopover(animated,completion).md",
+      "hash": "c4395986296037b55adc03834f599b4c5c4e29d40f48f343806b276426b492ac"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/init(itemprovider:)": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/init(itemprovider).md",
+      "hash": "3260ad41cccce0034c62a9c7e8d7345a959a7c9a75a9f49ad26afd230c45d758"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/managebuttontitle": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/managebuttontitle.md",
+      "hash": "86cd778a1d510851dd61ffdf50250c41275146379f780f8825bb76f1ae7cd6a2"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/pendingaccessrequestscount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/pendingaccessrequestscount.md",
+      "hash": "aa514bde23fef844fe96fe1175874d6ba23b5292af3a307bb594002183fc53ad"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/showmanagebutton": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/showmanagebutton.md",
+      "hash": "fac813b5e2f6a8915f10cd81e0e1499c082cb7f543bcbf20a5d4a31f300ce2c3"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swcollaborationtoolbaritem/showsparticipantcount": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/showsparticipantcount.md",
+      "hash": "d5d0c24574477e9359b0d272a508b23984581d6cf50131dcc07f2ee6235a47fa"
+    },
     "https://developer.apple.com/documentation/sharedwithyou/swcollaborationview": {
       "file_path": "documentation/SharedWithYou/swcollaborationview.md",
-      "hash": "f77990d85c33bb8c377c184bb306617003e6a69d4878d00664479729db3101bd"
+      "hash": "1f9bec62885dfb69533ca5159b2c4209abe4108bb1b85e81d14a745af5a761d7"
     },
     "https://developer.apple.com/documentation/sharedwithyou/swcollaborationview/activeparticipantcount": {
       "file_path": "documentation/SharedWithYou/swcollaborationview/activeparticipantcount.md",
@@ -526,7 +602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/collaboration-views.json": {
       "file_path": "documentation/SharedWithYou/collaboration-views.md",
-      "hash": "f308dbb64d5634e5ea37d4db6bcff5d8b69908f16960ea1a51d6735dd6f15f18"
+      "hash": "1a0a986622976f7ec6cc15c6bbfadb6b6cbd6244792b48c28c19b901476e82d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/macros.json": {
       "file_path": "documentation/SharedWithYou/macros.md",
@@ -644,6 +720,46 @@
       "file_path": "documentation/SharedWithYou/swattributionview/supplementalmenu.md",
       "hash": "bb0b4bec9e08878e667843da8b1c045b55e57b5e1991404eb55c378f0844a7e5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem.md",
+      "hash": "6f44fa192804273380243734f6637a15cc3598008c8e146cc814c377af086693"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/activeparticipantcount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/activeparticipantcount.md",
+      "hash": "4b8320bba42a3e08f78f0c38744916d01ac2a6b0c760ff27aee8f906e72c3744"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/cloudsharingcontrollerdelegate.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/cloudsharingcontrollerdelegate.md",
+      "hash": "b5f917382900252ff6f3529c5599c92765722e2b4b17c683cb94111b6344e076"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/detailviewlistcontent.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/detailviewlistcontent.md",
+      "hash": "a51226dc340aa47880dee1bbd8bec0d1a1d331fa57b21cbd671ead8267795207"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/dismisspopover(animated:completion:).json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/dismisspopover(animated,completion).md",
+      "hash": "ab1092e8bcd4a7442c1f47abc4014a6562a271d755cf13b51095fa4152fc46a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/init(itemprovider:).json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/init(itemprovider).md",
+      "hash": "686fd2fae3b74e3747f03f1b931e1f4d850155ad09271634c9a7c1a9583a5cfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/managebuttontitle.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/managebuttontitle.md",
+      "hash": "ad1f15119533553a92270fa3ec06c8beea2b2388654048a0208ec6505c8c5e98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/pendingaccessrequestscount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/pendingaccessrequestscount.md",
+      "hash": "ff4c69c61373cae3ae5a7e606fd7d9be9e074a656818bd1a3143934411d16c37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/showmanagebutton.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/showmanagebutton.md",
+      "hash": "5f4f930d0ee64ebb825b34ee37896f2e8ee0ef7fd3584c37f6d14e325070104d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationbarbuttonitem/showsparticipantcount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationbarbuttonitem/showsparticipantcount.md",
+      "hash": "8974c471b6fd312de1d8e6cb2897b9a0e05e7eac84683b7b66c2f38eac964bd5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationhighlight.json": {
       "file_path": "documentation/SharedWithYou/swcollaborationhighlight.md",
       "hash": "877848c5112bec8dcc384b0b67d5dad2424e14f380daf5e9066ee7b4d650ffb1"
@@ -668,9 +784,45 @@
       "file_path": "documentation/SharedWithYou/swcollaborationmetadatatypeidentifier.md",
       "hash": "7ef3a14b449065b86458a31a07264b494c3736f5926953d2a7d9ccf2f81e3e48"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem.md",
+      "hash": "156af557f17bde5f54fef204bde3a19c6152987183933fbac7ef26de654489dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/activeparticipantcount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/activeparticipantcount.md",
+      "hash": "27407910466afb3036378c0de1b199a5e918befdd3992f51a6664204e2b3c632"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/detailviewlistcontent.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/detailviewlistcontent.md",
+      "hash": "6dc92ff1dd95867c7aa88a78888b0d9375b2f23d3517c41634333338ca86b5ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/dismisspopover(animated:completion:).json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/dismisspopover(animated,completion).md",
+      "hash": "c4395986296037b55adc03834f599b4c5c4e29d40f48f343806b276426b492ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/init(itemprovider:).json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/init(itemprovider).md",
+      "hash": "3260ad41cccce0034c62a9c7e8d7345a959a7c9a75a9f49ad26afd230c45d758"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/managebuttontitle.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/managebuttontitle.md",
+      "hash": "86cd778a1d510851dd61ffdf50250c41275146379f780f8825bb76f1ae7cd6a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/pendingaccessrequestscount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/pendingaccessrequestscount.md",
+      "hash": "aa514bde23fef844fe96fe1175874d6ba23b5292af3a307bb594002183fc53ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/showmanagebutton.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/showmanagebutton.md",
+      "hash": "fac813b5e2f6a8915f10cd81e0e1499c082cb7f543bcbf20a5d4a31f300ce2c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationtoolbaritem/showsparticipantcount.json": {
+      "file_path": "documentation/SharedWithYou/swcollaborationtoolbaritem/showsparticipantcount.md",
+      "hash": "d5d0c24574477e9359b0d272a508b23984581d6cf50131dcc07f2ee6235a47fa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationview.json": {
       "file_path": "documentation/SharedWithYou/swcollaborationview.md",
-      "hash": "f77990d85c33bb8c377c184bb306617003e6a69d4878d00664479729db3101bd"
+      "hash": "1f9bec62885dfb69533ca5159b2c4209abe4108bb1b85e81d14a745af5a761d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swcollaborationview/activeparticipantcount.json": {
       "file_path": "documentation/SharedWithYou/swcollaborationview/activeparticipantcount.md",
@@ -1032,6 +1184,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 256
+    "total_pages": 294
   }
 }

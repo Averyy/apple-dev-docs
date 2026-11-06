@@ -42,6 +42,8 @@ Never invoke this method directly. A right mouse-down event in a window of an in
   Forwards the message to the global application object.
 - [func tryToPerform(Selector, with: Any?) -> Bool](./trytoperform%28_,with%29.md)
   Dispatches action messages with a given argument.
+- [var disablesDirectTouchSystemGestures: Bool](./disablesdirecttouchsystemgestures.md)
+  Disables direct-touch system gestures when this window is visible.
 
 
 ---

@@ -18,6 +18,12 @@ A debug description that provides additional context about the current error.
 let debugDescription: String
 ```
 
+## See Also
+
+### Inspecting an error
+- [let code: IdentityDocumentPresentmentError.Code](./code-swift.property.md)
+  The code of the current error.
+
 
 ---
 

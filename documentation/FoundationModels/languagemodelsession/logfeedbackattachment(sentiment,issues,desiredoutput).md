@@ -11,6 +11,7 @@ Logs and serializes a feedback attachment that can be submitted to Apple.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -70,13 +71,13 @@ If your `desiredOutput` is a [`Generable`](../generable.md) type, turning that i
 
 ```swift
 let customType = MyCustomType(...) // A generable type.
-let structure = Transcript.StructuredSegment(schemaName: String(describing: Foo.self), content: customType.generatedContent)
+let structure = Transcript.StructuredSegment(schemaName: String(describing: MyCustomType.self), content: customType.generatedContent)
 let segment = Transcript.Segment.structure(structure)
 let response = Transcript.Response(segments: [segment])
 let entry = Transcript.Entry.response(response)
 ```
 
-Finally, if you’d like to submit the feedback to Apple, write your feedback to a `.json` file and include the file as an attachment to [Feedback Assistant](https://feedbackassistant.apple.com). You can include one or many feedback attachment in the same file:
+Finally, if you’d like to submit the feedback to Apple, write your feedback to a `.json` file and include the file as an attachment to [Feedback Assistant](https://feedbackassistant.apple.com). You can include one or many feedback attachments in the same file:
 
 ```swift
 let allFeedback = feedbackData + feedbackData2 + feedbackData3

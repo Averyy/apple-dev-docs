@@ -32,6 +32,7 @@ The system chooses this value based on the device capabilities, and takes the va
   The type of content you allow Writing Tools to generate for your custom text view.
 - [var resultOptions: NSWritingToolsResultOptions](./resultoptions.md)
   The type of content the system generates for your custom text view.
+- [var includesTextListMarkers: Bool](./includestextlistmarkers.md)
 
 
 ---

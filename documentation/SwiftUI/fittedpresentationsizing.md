@@ -40,7 +40,7 @@ The presentation is sized by proposing `nil` in the horizontal and vertical dime
 - [struct AutomaticPresentationSizing](./automaticpresentationsizing.md)
   The default presentation sizing, appropriate for the platform.
 - [struct FormPresentationSizing](./formpresentationsizing.md)
-  The size is appropriate for forms and slightly less wide than`.page`
+  The size is appropriate for forms and slightly less wide than a page.
 - [struct PagePresentationSizing](./pagepresentationsizing.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 

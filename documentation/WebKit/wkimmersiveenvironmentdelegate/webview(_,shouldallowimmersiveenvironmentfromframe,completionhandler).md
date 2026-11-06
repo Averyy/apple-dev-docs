@@ -30,7 +30,7 @@ Asks the delegate whether to allow an immersive environment from the specified f
 
 - `webView`: The web view that received the immersive environment request.
 - `frame`: The frame information from the website requesting the immersive environment.
-- `completionHandler`: The completion handler you must invoke with the request’s answer. `YES` to allow the environment presentation, or `NO` to deny it.
+- `completionHandler`: The completion handler to invoke with the result of the authorization request. Pass `YES` to allow the environment presentation, or `NO` to deny it.
 
 
 ---

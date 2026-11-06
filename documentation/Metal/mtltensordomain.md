@@ -38,7 +38,7 @@ extern NSErrorDomain const MTLTensorDomain;
 - [struct MTLTensorUsage](./mtltensorusage.md)
   The contexts in which you can use a tensor.
 - [protocol MTLTensorBinding](./mtltensorbinding.md)
-  An object that represents a tensor bound to a graphics or compute function or a machine learning function.
+  A description of a tensor that a shader function or a machine learning pipeline uses.
 - [struct MTLTensorError](./mtltensorerror-swift.struct.md)
 - [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.

@@ -11,7 +11,7 @@ Get information about a specific auto-renewable subscription.
 
 ## Mentions
 
-- [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
 
 ## Endpoint
 
@@ -30,8 +30,8 @@ Get information about a specific auto-renewable subscription.
 - `fields[subscriptionLocalizations]` ([string]): **Allowed Values**: `name`, `locale`, `description`, `state`, `subscription`
 - `fields[subscriptionOfferCodes]` ([string]): **Allowed Values**: `name`, `customerEligibilities`, `offerEligibility`, `duration`, `offerMode`, `numberOfPeriods`, `totalNumberOfCodes`, `productionCodeCount`, `sandboxCodeCount`, `active`, `autoRenewEnabled`, `targetSubscriptionPlanType`, `subscription`, `oneTimeUseCodes`, `customCodes`, `prices`
 - `fields[subscriptionPrices]` ([string]): **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`
-- `fields[subscriptions]` ([string]): **Allowed Values**: `name`, `productId`, `familySharable`, `state`, `subscriptionPeriod`, `reviewNote`, `groupLevel`, `multiSeatStatus`, `marketSettings`, `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `pricePoints`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`
-- `include` ([string]): **Allowed Values**: `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`
+- `fields[subscriptions]` ([string]): **Allowed Values**: `name`, `productId`, `familySharable`, `state`, `subscriptionPeriod`, `reviewNote`, `groupLevel`, `multiSeatStatus`, `marketSettings`, `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `pricePoints`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`, `retentionOffers`, `retentionMessage`, `retentionMessageOffers`
+- `include` ([string]): **Allowed Values**: `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`, `retentionOffers`, `retentionMessage`, `retentionMessageOffers`
 - `limit[introductoryOffers]` (integer): **Maximum**: `50`
 - `limit[offerCodes]` (integer): **Maximum**: `50`
 - `limit[prices]` (integer): **Maximum**: `50`
@@ -40,6 +40,8 @@ Get information about a specific auto-renewable subscription.
 - `fields[subscriptionAppStoreReviewScreenshots]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `sourceFileChecksum`, `imageAsset`, `assetToken`, `assetType`, `uploadOperations`, `assetDeliveryState`, `subscription`
 - `limit[promotionalOffers]` (integer): **Maximum**: `50`
 - `fields[subscriptionAvailabilities]` ([string]) *(deprecated)*: **Allowed Values**: `availableInNewTerritories`, `availableTerritories`
+- `fields[retentionMessages]` ([string]): **Allowed Values**: `referenceName`, `versions`, `subscriptions`
+- `fields[retentionOffers]` ([string]): **Allowed Values**: `referenceName`, `offerId`, `duration`, `offerMode`, `periodCount`, `customerEligibilityPaidSubscriptionDurationInMonths`, `customerEligibilityWaitBetweenOffersInMonths`, `targetSubscriptionPlanType`, `subscription`, `prices`
 - `fields[subscriptionGroups]` ([string]): **Allowed Values**: `referenceName`, `subscriptions`, `subscriptionGroupLocalizations`, `versions`
 - `fields[subscriptionImages]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `sourceFileChecksum`, `assetToken`, `imageAsset`, `uploadOperations`, `state`, `subscription`
 - `fields[subscriptionPlanAvailabilities]` ([string]): **Allowed Values**: `availableInNewTerritories`, `planType`, `availableTerritories`
@@ -47,6 +49,8 @@ Get information about a specific auto-renewable subscription.
 - `fields[winBackOffers]` ([string]): **Allowed Values**: `referenceName`, `offerId`, `duration`, `offerMode`, `periodCount`, `customerEligibilityPaidSubscriptionDurationInMonths`, `customerEligibilityTimeSinceLastSubscribedInMonths`, `customerEligibilityWaitBetweenOffersInMonths`, `startDate`, `endDate`, `priority`, `promotionIntent`, `targetSubscriptionPlanType`, `prices`
 - `limit[images]` (integer): **Maximum**: `50`
 - `limit[planAvailabilities]` (integer): **Maximum**: `50`
+- `limit[retentionMessageOffers]` (integer): **Maximum**: `50`
+- `limit[retentionOffers]` (integer): **Maximum**: `50`
 - `limit[versions]` (integer): **Maximum**: `50`
 - `limit[winBackOffers]` (integer): **Maximum**: `50`
 

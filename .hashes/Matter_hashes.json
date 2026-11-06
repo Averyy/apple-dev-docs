@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Matter": {
       "file_path": "documentation/Matter/Matter.md",
-      "hash": "dae965c543c06781f49455e2d711684f9c05a1251a525b9282c91f88a9aae267"
+      "hash": "18cd477fa015077928a2aeeaa868f3afaf7083e634e7ccbcea5f0536bfac2f9a"
     },
     "https://developer.apple.com/documentation/matter/accessory-commissioning": {
       "file_path": "documentation/Matter/accessory-commissioning.md",
@@ -1439,6 +1439,10 @@
     "https://developer.apple.com/documentation/matter/mtrairqualityfeature/verypoor": {
       "file_path": "documentation/Matter/mtrairqualityfeature/verypoor.md",
       "hash": "7b421afc00541c3beff65cebc2157b7c90c028556d700477fcf584acf16e8030"
+    },
+    "https://developer.apple.com/documentation/matter/mtrappleaccessoryerrorsappleaccessorypersistenterrorcodedeadboltjammed": {
+      "file_path": "documentation/Matter/mtrappleaccessoryerrorsappleaccessorypersistenterrorcodedeadboltjammed.md",
+      "hash": "ad234eed0a6ed028d45bfd22b9441fd49d039550afb6d931261f10a027b90485"
     },
     "https://developer.apple.com/documentation/matter/mtrapplicationbasicapplicationstatus": {
       "file_path": "documentation/Matter/mtrapplicationbasicapplicationstatus.md",
@@ -73044,6 +73048,30 @@
       "file_path": "documentation/Matter/mtrdevicecontrollerregistrationdeviceinternalstatekey.md",
       "hash": "a5a4d027d793c44b73046c4cfe62b95b7f7b0f39d39636cbe1aa96b90c745534"
     },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpathattributeidkey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathattributeidkey.md",
+      "hash": "44df86331e60b27069b832575979eebe159b2c1a541589a71cd794aca0b07f8d"
+    },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpathclusteridkey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathclusteridkey.md",
+      "hash": "7c1d631c9b2c381698ac9832aa0b1b6a32a152bd6e18ab818fe7690622ec3de8"
+    },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpathendpointidkey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathendpointidkey.md",
+      "hash": "26384e1094d69bbabd8b89080c6a88e717941ca1fbd104deb7752aaf0bb1bdaf"
+    },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpatheventidkey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpatheventidkey.md",
+      "hash": "efd219456d2d502cdbd37f1363b02cda8fe6d1ce73c35c0ba079946d07fa0181"
+    },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpathsforattributeskey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathsforattributeskey.md",
+      "hash": "dabf391c57c30bc441a2312958a6c771bb4a71e10f910daee9f6d7603869fe0f"
+    },
+    "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationinterestedpathsforeventskey": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathsforeventskey.md",
+      "hash": "6d1e4448d9111c585848a344ba90ac19f3a738726da47abb29eb6e630b4a5f7f"
+    },
     "https://developer.apple.com/documentation/matter/mtrdevicecontrollerregistrationnodeidkey": {
       "file_path": "documentation/Matter/mtrdevicecontrollerregistrationnodeidkey.md",
       "hash": "a88a181a32426a6c9d9ced662edf308b9a6647bb2e629bce33ec544f35777509"
@@ -97522,7 +97550,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Matter.json": {
       "file_path": "documentation/Matter/Matter.md",
-      "hash": "dae965c543c06781f49455e2d711684f9c05a1251a525b9282c91f88a9aae267"
+      "hash": "18cd477fa015077928a2aeeaa868f3afaf7083e634e7ccbcea5f0536bfac2f9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/accessory-commissioning.json": {
       "file_path": "documentation/Matter/accessory-commissioning.md",
@@ -98959,6 +98987,10 @@
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrairqualityfeature/verypoor.json": {
       "file_path": "documentation/Matter/mtrairqualityfeature/verypoor.md",
       "hash": "7b421afc00541c3beff65cebc2157b7c90c028556d700477fcf584acf16e8030"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrappleaccessoryerrorsappleaccessorypersistenterrorcodedeadboltjammed.json": {
+      "file_path": "documentation/Matter/mtrappleaccessoryerrorsappleaccessorypersistenterrorcodedeadboltjammed.md",
+      "hash": "ad234eed0a6ed028d45bfd22b9441fd49d039550afb6d931261f10a027b90485"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrapplicationbasicapplicationstatus.json": {
       "file_path": "documentation/Matter/mtrapplicationbasicapplicationstatus.md",
@@ -170564,6 +170596,30 @@
       "file_path": "documentation/Matter/mtrdevicecontrollerregistrationdeviceinternalstatekey.md",
       "hash": "a5a4d027d793c44b73046c4cfe62b95b7f7b0f39d39636cbe1aa96b90c745534"
     },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpathattributeidkey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathattributeidkey.md",
+      "hash": "44df86331e60b27069b832575979eebe159b2c1a541589a71cd794aca0b07f8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpathclusteridkey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathclusteridkey.md",
+      "hash": "7c1d631c9b2c381698ac9832aa0b1b6a32a152bd6e18ab818fe7690622ec3de8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpathendpointidkey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathendpointidkey.md",
+      "hash": "26384e1094d69bbabd8b89080c6a88e717941ca1fbd104deb7752aaf0bb1bdaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpatheventidkey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpatheventidkey.md",
+      "hash": "efd219456d2d502cdbd37f1363b02cda8fe6d1ce73c35c0ba079946d07fa0181"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpathsforattributeskey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathsforattributeskey.md",
+      "hash": "dabf391c57c30bc441a2312958a6c771bb4a71e10f910daee9f6d7603869fe0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationinterestedpathsforeventskey.json": {
+      "file_path": "documentation/Matter/mtrdevicecontrollerregistrationinterestedpathsforeventskey.md",
+      "hash": "6d1e4448d9111c585848a344ba90ac19f3a738726da47abb29eb6e630b4a5f7f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicecontrollerregistrationnodeidkey.json": {
       "file_path": "documentation/Matter/mtrdevicecontrollerregistrationnodeidkey.md",
       "hash": "a88a181a32426a6c9d9ced662edf308b9a6647bb2e629bce33ec544f35777509"
@@ -195045,6 +195101,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 48760
+    "total_pages": 48774
   }
 }

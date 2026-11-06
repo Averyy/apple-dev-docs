@@ -7,11 +7,11 @@
 Creates a virtual destination in a client.
 
 **Availability**:
-- iOS 4.2+ - Deprecated in 27.2 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
-- iPadOS 4.2+ - Deprecated in 27.2 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
-- macOS 10.0+ - Deprecated in 27.2 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
+- iOS 4.2+ - Deprecated in 27.3 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
+- iPadOS 4.2+ - Deprecated in 27.3 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
+- macOS 10.0+ - Deprecated in 27.3 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDIDestinationCreateWithProtocol(_:_:_:_:_:))
 
 > **Deprecated**: Use [`MIDIDestinationCreateWithProtocol(_:_:_:_:_:)`](./mididestinationcreatewithprotocol%28_,_,_,_,_%29.md) instead.
 

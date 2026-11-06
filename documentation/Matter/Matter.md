@@ -399,6 +399,13 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [let MTRDeviceControllerRegistrationControllerIsRunningKey: String](./mtrdevicecontrollerregistrationcontrollerisrunningkey.md)
 - [let MTRDeviceControllerRegistrationControllerNodeIDKey: String](./mtrdevicecontrollerregistrationcontrollernodeidkey.md)
 - [let MTRDeviceControllerRegistrationDeviceInternalStateKey: String](./mtrdevicecontrollerregistrationdeviceinternalstatekey.md)
+- [let MTRDeviceControllerRegistrationInterestedPathAttributeIDKey: String](./mtrdevicecontrollerregistrationinterestedpathattributeidkey.md)
+- [let MTRDeviceControllerRegistrationInterestedPathClusterIDKey: String](./mtrdevicecontrollerregistrationinterestedpathclusteridkey.md)
+- [let MTRDeviceControllerRegistrationInterestedPathEndpointIDKey: String](./mtrdevicecontrollerregistrationinterestedpathendpointidkey.md)
+- [let MTRDeviceControllerRegistrationInterestedPathEventIDKey: String](./mtrdevicecontrollerregistrationinterestedpatheventidkey.md)
+- [let MTRDeviceControllerRegistrationInterestedPathsForAttributesKey: String](./mtrdevicecontrollerregistrationinterestedpathsforattributeskey.md)
+  A node entry carries the union of its delegates’ interested paths, sorted, under MTRDeviceControllerRegistrationInterestedPathsForAttributesKey and MTRDeviceControllerRegistrationInterestedPathsForEventsKey. The attribute paths include those of pending attribute-value waiters, so a node with only waiters is listed too. A missing key means every path. Each element is an NSNumber endpoint ID, or a dictionary of NSNumbers holding MTRDeviceControllerRegistrationInterestedPathEndpointIDKey and MTRDeviceControllerRegistrationInterestedPathClusterIDKey, plus MTRDeviceControllerRegistrationInterestedPathAttributeIDKey for an attribute path or MTRDeviceControllerRegistrationInterestedPathEventIDKey for an event path.
+- [let MTRDeviceControllerRegistrationInterestedPathsForEventsKey: String](./mtrdevicecontrollerregistrationinterestedpathsforeventskey.md)
 - [let MTRDeviceControllerRegistrationNodeIDKey: String](./mtrdevicecontrollerregistrationnodeidkey.md)
 - [let MTRDeviceControllerRegistrationNodeIDsKey: String](./mtrdevicecontrollerregistrationnodeidskey.md)
 - [let MTRUnpoweredInitialPhase: String](./mtrunpoweredinitialphase.md)
@@ -469,6 +476,7 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [enum MTRWaterHeaterManagementBoostState](./mtrwaterheatermanagementbooststate.md)
 - [enum MTRWaterHeaterModeModeTag](./mtrwaterheatermodemodetag.md)
 ### Macros
+- [MTRAppleAccessoryErrorsAppleAccessoryPersistentErrorCodeDeadboltJammed](./mtrappleaccessoryerrorsappleaccessorypersistenterrorcodedeadboltjammed.md)
 - [MTRMaxErrorCode](./mtrmaxerrorcode.md)
 - [MTR_AVAILABLE](./mtr_available.md)
 - [MTR_DEPRECATED](./mtr_deprecated.md)

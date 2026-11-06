@@ -21,6 +21,14 @@ The set of evaluator type names that threw at least once.
 var failingEvaluatorTypes: Set<String>
 ```
 
+## See Also
+
+### Counting failures
+- [var inferenceFailureCount: Int](./inferencefailurecount.md)
+  The number of samples whose subject failed to be produced.
+- [var evaluatorFailureCount: Int](./evaluatorfailurecount.md)
+  The total number of evaluator invocations that threw.
+
 
 ---
 

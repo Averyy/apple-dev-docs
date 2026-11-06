@@ -22,6 +22,11 @@ The async sequence for iteration during an evaluation run.
 var stream: any AsyncSequence<Self.Sample, any Error> { get }
 ```
 
+## See Also
+
+### Loading samples
+- [associatedtype Sample : SampleProtocol](./sample.md)
+
 
 ---
 

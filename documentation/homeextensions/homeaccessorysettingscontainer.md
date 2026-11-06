@@ -7,9 +7,9 @@
 A snapshot of an accessory’s settings and their current values.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -45,17 +45,11 @@ Store identifiers as static constants so your provider can reuse them. Your prov
 - [var availableSettings: [any HomeAccessorySetting]](./homeaccessorysettingscontainer/availablesettings.md)
   The settings to display, in order.
 
-## Relationships
-
-### Conforming Types
-- [AnyHomeAccessorySettingsContainer](./anyhomeaccessorysettingscontainer.md)
-
 ## See Also
 
 ### Displaying accessory configuration
 - [protocol HomeAccessorySettingsProvider](./homeaccessorysettingsprovider.md)
   A type that reads and writes an accessory’s settings.
-- [struct AnyHomeAccessorySettingsContainer](./anyhomeaccessorysettingscontainer.md)
 - [protocol HomeAccessorySettingsContext](./homeaccessorysettingscontext.md)
   A type that holds the resources that your settings provider needs to communicate with an accessory.
 - [struct HomeAccessorySettings](./homeaccessorysettings.md)

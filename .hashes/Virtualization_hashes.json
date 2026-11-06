@@ -1262,11 +1262,11 @@
     },
     "https://developer.apple.com/documentation/virtualization/vzmacauxiliarystorage/init(contentsof:)": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(contentsof).md",
-      "hash": "1b06a15a75219e1895ea558dd839b44ecc08adf8c3ef81cba1c66954a8dbcd4a"
+      "hash": "95d7335b5d93db8966d3e943d741f5d15a5231bed7420a00f7a3f679efc6dd31"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacauxiliarystorage/init(contentsofurl:)": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(contentsofurl).md",
-      "hash": "edb999c39433f4be7682c2b5f035331e06ccec27299dba681b3fdec72e5b49df"
+      "hash": "3354ed2cfba0d4277baf3f7aa66cece2f40109b407277d4134822a92c71d39c9"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:)": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(creatingstorageat,hardwaremodel,options).md",
@@ -1322,7 +1322,11 @@
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplay": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplay.md",
-      "hash": "8c8845ffca77e652ecc7d043dd5545bcfce6d6c409f336911188267e7e4e19ac"
+      "hash": "8b7bf9ebbe7d00e2bd7c435129f06540543226e9ab760859040f00a6c678470d"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplay/ishdrenabled": {
+      "file_path": "documentation/Virtualization/vzmacgraphicsdisplay/ishdrenabled.md",
+      "hash": "a2a90d87bbe2dab761cfa88de128c3711306ff4a7d3cbaa714ca848027362f0c"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplay/pixelsperinch": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplay/pixelsperinch.md",
@@ -1330,11 +1334,15 @@
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration.md",
-      "hash": "c04215f2cca243550fbed80f99b68a0f1852b14dced959da1bff3300ef766a46"
+      "hash": "1ddae7794b7b45e42a5e1e6cb932ab688305bcf2c766b693edf5e642f2ce8338"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration/enablehdr": {
+      "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/enablehdr.md",
+      "hash": "e5cc5e368a302f5ff9480ade554f6914c620691ec176861b6768ea761fed7a96"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration/heightinpixels": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/heightinpixels.md",
-      "hash": "1f5cc85a18ea94eb8f1d5f90abb1140da692579192e2d63609b1baec3f4f82b4"
+      "hash": "5bfdfa74117b1956c631c53d64002bd7764a29b9a5cb87146e915901fd520c0b"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration/init(for:sizeinpoints:)": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/init(for,sizeinpoints).md",
@@ -1350,11 +1358,11 @@
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration/pixelsperinch": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/pixelsperinch.md",
-      "hash": "89ecaf1c3a6275f0313cf1e1a8695c6b5d9a0df73362e56013f144a1b389106f"
+      "hash": "876c8ac66c73f4d136b3319030a6a01399c8ffb1138888661a965e407e33bf6e"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacgraphicsdisplayconfiguration/widthinpixels": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/widthinpixels.md",
-      "hash": "c648c952d092d49779088a882bddcc8fc4237bad699bbe85a63322da240d7272"
+      "hash": "4dae92821e13afd6286e9e7d3b019a84f91668bab9af79baadeccae319a140c7"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacguestprovisioningoptions": {
       "file_path": "documentation/Virtualization/vzmacguestprovisioningoptions.md",
@@ -3958,11 +3966,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacauxiliarystorage/init(contentsof:).json": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(contentsof).md",
-      "hash": "1b06a15a75219e1895ea558dd839b44ecc08adf8c3ef81cba1c66954a8dbcd4a"
+      "hash": "95d7335b5d93db8966d3e943d741f5d15a5231bed7420a00f7a3f679efc6dd31"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacauxiliarystorage/init(contentsofurl:).json": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(contentsofurl).md",
-      "hash": "edb999c39433f4be7682c2b5f035331e06ccec27299dba681b3fdec72e5b49df"
+      "hash": "3354ed2cfba0d4277baf3f7aa66cece2f40109b407277d4134822a92c71d39c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).json": {
       "file_path": "documentation/Virtualization/vzmacauxiliarystorage/init(creatingstorageat,hardwaremodel,options).md",
@@ -4018,7 +4026,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplay.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplay.md",
-      "hash": "8c8845ffca77e652ecc7d043dd5545bcfce6d6c409f336911188267e7e4e19ac"
+      "hash": "8b7bf9ebbe7d00e2bd7c435129f06540543226e9ab760859040f00a6c678470d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplay/ishdrenabled.json": {
+      "file_path": "documentation/Virtualization/vzmacgraphicsdisplay/ishdrenabled.md",
+      "hash": "a2a90d87bbe2dab761cfa88de128c3711306ff4a7d3cbaa714ca848027362f0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplay/pixelsperinch.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplay/pixelsperinch.md",
@@ -4026,11 +4038,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration.md",
-      "hash": "c04215f2cca243550fbed80f99b68a0f1852b14dced959da1bff3300ef766a46"
+      "hash": "1ddae7794b7b45e42a5e1e6cb932ab688305bcf2c766b693edf5e642f2ce8338"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration/enablehdr.json": {
+      "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/enablehdr.md",
+      "hash": "e5cc5e368a302f5ff9480ade554f6914c620691ec176861b6768ea761fed7a96"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration/heightinpixels.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/heightinpixels.md",
-      "hash": "1f5cc85a18ea94eb8f1d5f90abb1140da692579192e2d63609b1baec3f4f82b4"
+      "hash": "5bfdfa74117b1956c631c53d64002bd7764a29b9a5cb87146e915901fd520c0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration/init(for:sizeinpoints:).json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/init(for,sizeinpoints).md",
@@ -4046,11 +4062,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration/pixelsperinch.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/pixelsperinch.md",
-      "hash": "89ecaf1c3a6275f0313cf1e1a8695c6b5d9a0df73362e56013f144a1b389106f"
+      "hash": "876c8ac66c73f4d136b3319030a6a01399c8ffb1138888661a965e407e33bf6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacgraphicsdisplayconfiguration/widthinpixels.json": {
       "file_path": "documentation/Virtualization/vzmacgraphicsdisplayconfiguration/widthinpixels.md",
-      "hash": "c648c952d092d49779088a882bddcc8fc4237bad699bbe85a63322da240d7272"
+      "hash": "4dae92821e13afd6286e9e7d3b019a84f91668bab9af79baadeccae319a140c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacguestprovisioningoptions.json": {
       "file_path": "documentation/Virtualization/vzmacguestprovisioningoptions.md",
@@ -5397,6 +5413,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1348
+    "total_pages": 1352
   }
 }

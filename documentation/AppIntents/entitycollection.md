@@ -95,6 +95,7 @@ When you need more than just entity identifiers, you can call [`resolvedEntities
 ## Relationships
 
 ### Conforms To
+- [AppEntityCollectionValue](./appentitycollectionvalue.md)
 - [Collection](../Swift/collection.md)
 - [Copyable](../Swift/copyable.md)
 - [Equatable](../Swift/equatable.md)
@@ -103,6 +104,12 @@ When you need more than just entity identifiers, you can call [`resolvedEntities
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Entity collections
+- [protocol AppEntityCollectionValue](./appentitycollectionvalue.md)
+  An intent value that holds multiple app entities of the same type.
 
 
 ---

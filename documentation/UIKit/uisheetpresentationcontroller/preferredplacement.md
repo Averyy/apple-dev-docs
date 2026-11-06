@@ -20,6 +20,13 @@ var preferredPlacement: UISheetPresentationController.Placement { get set }
 @property (nonatomic) UISheetPresentationControllerPlacement preferredPlacement;
 ```
 
+## See Also
+
+### Customizing position and placement
+- [var sourceView: UIView?](./sourceview.md)
+  The view that the sheet centers itself over.
+- [UISheetPresentationController.Placement](./placement.md)
+
 
 ---
 

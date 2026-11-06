@@ -2,7 +2,27 @@
   "hashes": {
     "https://developer.apple.com/documentation/LiveCommunicationKit": {
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md",
-      "hash": "7b9f918326247a92ae0e872758b288e4ef1de7fb44a65812d474905e9c5fb20f"
+      "hash": "129e2a90ac7b82ab98b4bd8146316e34897d3b05639550a968a670c1c6e78fbc"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/captioning-caption-message": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-caption-message.md",
+      "hash": "d6b042dbb5a1c6c1a31f9a71e9676659709cb18a586745012b02a1dd38c86b99"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/captioning-error-message": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-error-message.md",
+      "hash": "038a29bff27922402fda95077415bc2d6cfdc3c15d9b6160b1a9c5ca9f07491d"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/captioning-receive-sequence-message": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-receive-sequence-message.md",
+      "hash": "244f52569c43749a803e1f51c7a5151b17368d4c4fc12ffe44e0bfe38d945637"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/captioning-send-sequence-message": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-send-sequence-message.md",
+      "hash": "d39ae392ed6a29dd93e0bfa3ab74b17465b4f2fccfd053f2e65fa761dae92b8a"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/captioning-success-message": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-success-message.md",
+      "hash": "574c6016492f2ee7b293363d5218db9851172734420634a51b6feac7c1fdd30c"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/cellularservice": {
       "file_path": "documentation/LiveCommunicationKit/cellularservice.md",
@@ -490,11 +510,11 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "a677282e52f4b04179631d9d42c2f98d4c5011c9534892427e6fe5f3f22bf709"
+      "hash": "131631ee3fe8e30c1b18e1aa3876a1433f3c686e845f0df41e55604125ec1d2f"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
-      "hash": "54b54cac8fc2f137e296a805b99d0deb49f77162478b130e2f89513e8bd3f26a"
+      "hash": "1e48e6b0246de3a017cb735618db6e7edb3d7b7e6d40e01868ce040a620edcdd"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/containerapplaunchreasonkey": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchreasonkey.md",
@@ -510,15 +530,19 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/returntocall(requestid:)": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/returntocall(requestid).md",
-      "hash": "a352987b3c24f141ee59c008723bf68e4f647a38c0b9fd3fd4a9b07bc0572639"
+      "hash": "27209f7014150ee341385f4c9e71e7f1a5e2062736a641f4f6b6561543df2ef6"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/liveassistancecaptioning": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancecaptioning.md",
+      "hash": "f84fb0e37c14b632c7780ca3dc6bbddac4741521b861405a17f95e0f180e5de5"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",
-      "hash": "c47cb2182e30ee2b8d76ae6c0d10480affdfa6d6142db1341587f14d63bdaa33"
+      "hash": "33f95384b3d973b40b5e5d06de1717e8125009a8df70fb327fc15f125fdb0cf2"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension/prepareassistancerequest(_:)": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/prepareassistancerequest(_).md",
-      "hash": "de09af340365ed55969f1b3a0c7ca163efe13aa7355d1c296cea80afe4c5c395"
+      "hash": "34051714b6402d25658af1c8325d51a134072e384fae551e60ef9be701fe7ea6"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension/resumerequest(_:)": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/resumerequest(_).md",
@@ -648,6 +672,10 @@
       "file_path": "documentation/LiveCommunicationKit/preparing-your-app-to-be-the-default-dialer-app.md",
       "hash": "89bde27e988797702cbab4cf6745263a82e44c2747ef15e1c6f4fdb5bd4b4edb"
     },
+    "https://developer.apple.com/documentation/livecommunicationkit/providing-captioning-for-a-facetime-call": {
+      "file_path": "documentation/LiveCommunicationKit/providing-captioning-for-a-facetime-call.md",
+      "hash": "371f2a0f13492aba0616c86ee5b65be9ca95a342f74159e974086fa5f683e495"
+    },
     "https://developer.apple.com/documentation/livecommunicationkit/settranslatingaction": {
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction.md",
       "hash": "22c682a816ae45f7e16d1b97af674c89b252cf5de8bb66605b4fb28e611bcce1"
@@ -742,7 +770,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/LiveCommunicationKit.json": {
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md",
-      "hash": "7b9f918326247a92ae0e872758b288e4ef1de7fb44a65812d474905e9c5fb20f"
+      "hash": "129e2a90ac7b82ab98b4bd8146316e34897d3b05639550a968a670c1c6e78fbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-caption-message.json": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-caption-message.md",
+      "hash": "d6b042dbb5a1c6c1a31f9a71e9676659709cb18a586745012b02a1dd38c86b99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-error-message.json": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-error-message.md",
+      "hash": "038a29bff27922402fda95077415bc2d6cfdc3c15d9b6160b1a9c5ca9f07491d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-receive-sequence-message.json": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-receive-sequence-message.md",
+      "hash": "244f52569c43749a803e1f51c7a5151b17368d4c4fc12ffe44e0bfe38d945637"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-send-sequence-message.json": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-send-sequence-message.md",
+      "hash": "d39ae392ed6a29dd93e0bfa3ab74b17465b4f2fccfd053f2e65fa761dae92b8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-success-message.json": {
+      "file_path": "documentation/LiveCommunicationKit/captioning-success-message.md",
+      "hash": "574c6016492f2ee7b293363d5218db9851172734420634a51b6feac7c1fdd30c"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/cellularservice.json": {
       "file_path": "documentation/LiveCommunicationKit/cellularservice.md",
@@ -1230,11 +1278,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "a677282e52f4b04179631d9d42c2f98d4c5011c9534892427e6fe5f3f22bf709"
+      "hash": "131631ee3fe8e30c1b18e1aa3876a1433f3c686e845f0df41e55604125ec1d2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
-      "hash": "54b54cac8fc2f137e296a805b99d0deb49f77162478b130e2f89513e8bd3f26a"
+      "hash": "1e48e6b0246de3a017cb735618db6e7edb3d7b7e6d40e01868ce040a620edcdd"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/containerapplaunchreasonkey.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchreasonkey.md",
@@ -1250,15 +1298,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/returntocall(requestid:).json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/returntocall(requestid).md",
-      "hash": "a352987b3c24f141ee59c008723bf68e4f647a38c0b9fd3fd4a9b07bc0572639"
+      "hash": "27209f7014150ee341385f4c9e71e7f1a5e2062736a641f4f6b6561543df2ef6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancecaptioning.json": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancecaptioning.md",
+      "hash": "f84fb0e37c14b632c7780ca3dc6bbddac4741521b861405a17f95e0f180e5de5"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",
-      "hash": "c47cb2182e30ee2b8d76ae6c0d10480affdfa6d6142db1341587f14d63bdaa33"
+      "hash": "33f95384b3d973b40b5e5d06de1717e8125009a8df70fb327fc15f125fdb0cf2"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension/prepareassistancerequest(_:).json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/prepareassistancerequest(_).md",
-      "hash": "de09af340365ed55969f1b3a0c7ca163efe13aa7355d1c296cea80afe4c5c395"
+      "hash": "34051714b6402d25658af1c8325d51a134072e384fae551e60ef9be701fe7ea6"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension/resumerequest(_:).json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/resumerequest(_).md",
@@ -1388,6 +1440,10 @@
       "file_path": "documentation/LiveCommunicationKit/preparing-your-app-to-be-the-default-dialer-app.md",
       "hash": "89bde27e988797702cbab4cf6745263a82e44c2747ef15e1c6f4fdb5bd4b4edb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/providing-captioning-for-a-facetime-call.json": {
+      "file_path": "documentation/LiveCommunicationKit/providing-captioning-for-a-facetime-call.md",
+      "hash": "371f2a0f13492aba0616c86ee5b65be9ca95a342f74159e974086fa5f683e495"
+    },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction.json": {
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction.md",
       "hash": "22c682a816ae45f7e16d1b97af674c89b252cf5de8bb66605b4fb28e611bcce1"
@@ -1485,6 +1541,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 370
+    "total_pages": 384
   }
 }

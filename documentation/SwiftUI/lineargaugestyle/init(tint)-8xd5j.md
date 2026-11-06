@@ -7,7 +7,7 @@
 Creates a linear gauge style with a tint gradient.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the [`tint(_:)`](../view/tint%28_%29-93mfq.md) view modifier instead.
 

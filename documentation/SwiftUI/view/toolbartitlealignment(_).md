@@ -34,6 +34,16 @@ NavigationStack {
 
 - `alignment`: The preferred navigation title alignment.
 
+## See Also
+
+### Configuring the toolbar title display
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./toolbartitledisplaymode%28_%29.md)
+  Configures the toolbar title display mode for this view.
+- [struct ToolbarTitleDisplayMode](../toolbartitledisplaymode.md)
+  A type that defines the behavior of title of a toolbar.
+- [struct ToolbarTitleAlignment](../toolbartitlealignment.md)
+  A preferred alignment for a navigation bar’s title.
+
 
 ---
 

@@ -3,21 +3,21 @@
 **Framework**: ActivityKit  
 **Role**: Article
 
-Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+Display up-to-date data and offer quick interactions in highly visible places like the Dynamic Island, the menu bar, a paired Apple Watch, or in CarPlay.
 
 ## Overview
 
-Live Activities display your app’s current data on the Lock Screen, in the Dynamic Island, in CarPlay, and on a paired Mac or Apple Watch, giving people access to information at a glance and allowing them to perform quick actions that are related to the displayed information.
+Live Activities display your app’s current data in the Dynamic Island, CarPlay, the menu bar, on a paired Apple Watch, or in other prominent locations. They give people access to information at a glance and allow them to perform quick actions that are related to the displayed information.
 
 To offer Live Activities, add code to your existing widget extension or create a new widget extension if your app doesn’t already include one. Live Activities use [WidgetKit](../WidgetKit/WidgetKit.md) functionality and [SwiftUI](../SwiftUI/SwiftUI.md) for their user interface. ActivityKit handles the life cycle of each Live Activity: You use its API to request, schedule, update, and end a Live Activity and to receive ActivityKit push notifications.
 
 For design guidance, refer to [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities).
 
-## Review Live Activity presentations on iPhone and iPad
+## Review Live Activity presentations
 
-Live Activities come in different presentations that appear in various highly visible places. To add support for Live Activities to your iOS or iPadOS app, you must support all presentations. The system automatically chooses the best presentation for each location across a person’s devices.
+Live Activities come in different presentations that appear in highly visible places. To add support for Live Activities to your app, you must support all presentations. The system automatically chooses the best presentation for each location across a person’s devices.
 
-The Lock Screen presentation appears on the Lock Screen of iPhone and iPad. On an unlocked device that doesn’t support the Dynamic Island, the Lock Screen presentation appears as a banner for Live Activity updates that include an alert configuration. For example, if your app’s Live Activity receives an update with an alert configuration for a person who uses Mail on a device that doesn’t support the Dynamic Island, the system displays the Lock Screen presentation as a banner at the top of the screen so the person notices the update.
+The Lock Screen presentation appears on the Lock Screen of iPhone and iPad, iPhone in StandBy, as a banner on devices that don’t support the Dynamic Island, and more. For example, if a Live Activity receives an update with an alert configuration while a person uses the Mail app on a device that doesn’t support the Dynamic Island, the system displays the Lock Screen presentation as a banner so the person notices the update.
 
 ![Two screenshots of an iPhone that doesn’t support the Dynamic Island and shows a Live Activity for a delivery app. They show the Live Activity on the Lock Screen and the same presentation on the Home Screen as a banner.](https://developer.apple.com/tutorials/images/com.apple.activitykit/live-activity-notch@2x.png)
 
@@ -25,7 +25,7 @@ Devices that support the Dynamic Island display Live Activities in the Dynamic I
 
 ![An illustration of the Dynamic Island with a Live Activity that appears in the compact leading and trailing presentations.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-compact@2x.png)
 
-When Live Activities from several apps are active, the number of visible Live Activities depends on the device. For example, iPhone 18 Pro displays two simultaneous Live Activities in the Dynamic Island that use the compact leading and trailing presentations with reduced width. On other devices, both activities appear in the minimal presentation. One active Live Activity appears attached to the Dynamic Island, and the activity from another app appears detached from it.
+When Live Activities from several apps are active, the number of visible Live Activities depends on the device. For example, iPhone 18 Pro displays two simultaneous Live Activities in the Dynamic Island. Each visible activity uses the compact leading and trailing presentations with reduced width. On other devices, both activities appear in the minimal presentation. One active Live Activity appears attached to the Dynamic Island, and the activity from another app appears detached from it.
 
 ![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-minimal@2x.png)
 
@@ -33,7 +33,9 @@ People tap a compact or minimal Live Activity in the Dynamic Island to open its 
 
 ![An illustration of the Dynamic Island with a Live Activity that appears in the expanded presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-expanded@2x.png)
 
-The minimal presentation also appears at the top of the iPhone Lock Screen in StandBy. In StandBy, tapping the Live Activity expands it to fill the whole display using the Lock Screen presentation. Additionally, Live Activities people start on iPhone may appear on paired devices. For more information on making sure your Live Activities look great on paired devices, refer to [Creating custom views for Live Activities](./creating-custom-views-for-live-activities.md).
+The minimal presentation also appears at the top of the iPhone Lock Screen in StandBy. In StandBy, tapping the Live Activity expands it to fill the whole display using the Lock Screen presentation.
+
+Live Activities that people start on iPhone may appear on paired devices. For more information on making sure your Live Activities look great on paired devices, refer to [Creating custom views for Live Activities](./creating-custom-views-for-live-activities.md).
 
 ## Plan for Live Activity duration and asset constraints
 
@@ -122,7 +124,7 @@ struct AdventureActivityConfiguration: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: AdventureAttributes.self) { context in
             // Create the presentation that appears on the Lock Screen and as a
-            // banner on the Home Screen of devices that don't support the
+            // banner on devices that don't support the
             // Dynamic Island.
             AdventureLiveActivityView(
                 hero: context.attributes.hero,
@@ -153,7 +155,7 @@ Live Activities appear in the Dynamic Island of devices that support it. When yo
 
 ![An illustration that shows compact leading and trailing presentations for a Live Activity of a food delivery app. ](https://developer.apple.com/tutorials/images/com.apple.activitykit/compact-view@2x.png)
 
-When several Live Activities are active, the system chooses how to present them. The number of visible Live Activities depends on the device, and the system renders each one to best fit — attached to or detached from the Dynamic Island, and in the compact presentation, the compact presentation with reduced width, or the minimal presentation. The following example shows two Live Activities from separate apps in the minimal presentation:
+When several Live Activities are active, the system chooses how to present them. The number of visible Live Activities depends on the device, and the system renders each one to best fit available space — for example; attached to or detached from the Dynamic Island in the compact presentation, in the minimal presentation, or minimal and compact presentations with reduced width. The following example shows two Live Activities from separate apps in the minimal presentation:
 
 ![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/minimal-view@2x.png)
 
@@ -167,7 +169,7 @@ struct AdventureActivityConfiguration: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: AdventureAttributes.self) { context in
             // Create the presentation that appears on the Lock Screen and as a
-            // banner on the Home Screen of devices that don't support the
+            // banner on devices that don't support the
             // Dynamic Island.
             // ...
         } dynamicIsland: { context in
@@ -321,14 +323,14 @@ Designing with accessibility in mind is a foundational principle when creating a
 
 ## Make sure Live Activities are available
 
-Live Activities are available on iPhone and iPad. If your app is available on additional platforms and offers a widget extension, make sure Live Activities are available at runtime. Additionally, people can choose to deactivate Live Activities for an app in the Settings app.
+Live Activities are available on iPhone, iPad, and the Mac. If your app is available on additional platforms and offers a widget extension, make sure Live Activities are available at runtime. Additionally, people can choose to deactivate Live Activities for an app in the Settings app.
 
 To determine whether Live Activities are available and whether a person authorized your app to use them:
 
 - Use [`areActivitiesEnabled`](./activityauthorizationinfo/areactivitiesenabled.md) to synchronously determine whether to show a user interface in your app for starting a Live Activity.
 - Receive asynchronous user authorization updates by observing any user authorization changes with the [`activityEnablementUpdates`](./activityauthorizationinfo/activityenablementupdates-swift.property.md) stream and respond to them accordingly.
 
-> **Note**: An app can start or schedule several Live Activities, and a device can run Live Activities from several apps — the exact number may depend on a variety of factors. Scheduled Live Activities count towards the limit of simultanious activities. In addition to making sure Live Activities are available, always handle any errors gracefully when starting, updating, or ending a Live Activity. For example, starting a Live Activity may fail because a person’s device may have reached its limit of active and scheduled Live Activities.
+> **Note**: An app can start or schedule several Live Activities, and a device can run Live Activities from several apps — the exact number may depend on a variety of factors. Scheduled Live Activities count towards the limit of simultaneous activities. In addition to making sure Live Activities are available, always handle any errors gracefully when starting, updating, or ending a Live Activity. For example, starting a Live Activity may fail because a person’s device may have reached its limit of active and scheduled Live Activities.
 
 ## Configure the Live Activity
 
@@ -372,10 +374,10 @@ if ActivityAuthorizationInfo().areActivitiesEnabled {
         self.setup(withActivity: activity)
     } catch {
         errorMessage = """
-				    Couldn't start activity
-				    ------------------------
-				    \(String(describing: error))
-				    """
+                Couldn't start activity
+                ------------------------
+                \(String(describing: error))
+                """
         
         self.errorMessage = errorMessage
     }
@@ -404,7 +406,7 @@ To learn more about using ActivityKit push notifications, refer to [Starting and
 
 When you start a Live Activity from your app, update the data that appears in the Live Activity using the [`update(_:)`](./activity/update%28_%29.md) function of the [`Activity`](./activity.md) object you received when you started the Live Activity. To retrieve your app’s active Live Activities, use [`activities`](./activity/activities.md).
 
-For important updates, use the [`update(_:alertConfiguration:)`](./activity/update%28_,alertconfiguration%29.md) function to display an alert on iPhone, iPad, and a paired Apple Watch that tells a person about new Live Activity content. For example, the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app updates its Live Activity using an alert configuration to tell people that the hero has been knocked down:
+For important updates, use the [`update(_:alertConfiguration:)`](./activity/update%28_,alertconfiguration%29.md) function to display an alert that tells a person about new Live Activity content. For example, the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app updates its Live Activity using an alert configuration to tell people that the hero has been knocked down:
 
 ```swift
 guard let activity = currentActivity else {
@@ -445,7 +447,7 @@ await activity.update(
 
 > **Note**: The updated data can’t exceed 4 KB.
 
-On Apple Watch, the system uses the `title` and `body` attributes for the alert. On iPhone and iPad, the system doesn’t show a regular alert but instead shows the expanded Live Activity in the Dynamic Island or the Lock Screen presentation as a banner on devices without the Dynamic Island.
+On Apple Watch, the system uses the `title` and `body` attributes for the alert. On other devices that support Live Activities, the system doesn’t show a regular alert but instead shows the expanded Live Activity in the Dynamic Island or the Lock Screen presentation as a banner on devices without the Dynamic Island.
 
 ## Animate content updates
 

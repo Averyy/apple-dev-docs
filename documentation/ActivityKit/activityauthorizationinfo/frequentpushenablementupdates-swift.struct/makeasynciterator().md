@@ -9,6 +9,8 @@ Creates the asynchronous iterator that produces results from this asynchronous s
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

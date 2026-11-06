@@ -59,6 +59,10 @@ Use this type in app intents that match your app’s content against a string-ba
   An app intent that displays a set of search results in the app’s interface.
 - [enum StringSearchScope](./stringsearchscope.md)
   Constants that describe the types of content your app includes in search results when the search criteria is a string.
+- [struct EntityCollectionSearchCriteria](./entitycollectionsearchcriteria.md)
+  Search request criteria that uses an entity collection to specify the items to retrieve.
+- [protocol SearchCriteria](./searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 
 
 ---

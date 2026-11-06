@@ -7,7 +7,7 @@
 The active appearance expected of controls in a window.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use `EnvironmentValues.appearsActive` instead.
 
@@ -39,6 +39,8 @@ Starting with macOS 15.0, the value of this environment property is strictly map
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
 - [var presentationMode: Binding<PresentationMode>](./presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
+- [struct PresentationMode](../presentationmode.md)
+  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](./sizecategory.md)
   The size of content.
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](./imageplaygroundpersonalizationpolicy.md)

@@ -195,8 +195,6 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](./nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

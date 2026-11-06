@@ -14,6 +14,7 @@ Create a new review submission item.
 - [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
 - [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
+- [Setting up retention messaging for auto-renewable subscriptions](./setting-up-retention-messaging.md)
 - [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
 ## Endpoint

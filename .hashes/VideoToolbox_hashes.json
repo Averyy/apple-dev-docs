@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/VideoToolbox": {
       "file_path": "documentation/VideoToolbox/VideoToolbox.md",
-      "hash": "964cd606ec9c8ed82a5614ceb3c842b73e3ca55a00067eac2b304f90c830b484"
+      "hash": "8e7a03893725f6e77960410962bbb31b55fa98363df1adf6a360f6d2018fa840"
     },
     "https://developer.apple.com/documentation/videotoolbox/1441330-frame-delay": {
       "file_path": "documentation/VideoToolbox/api-1441330-frame-delay.md",
@@ -599,6 +599,10 @@
     "https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_deinterlacemode": {
       "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_deinterlacemode.md",
       "hash": "3e2eeaa2375d90b6498acc996f4ccce865293665031a6e7104dce53d4034da1c"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_enablestrictbitstreamvalidation": {
+      "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_enablestrictbitstreamvalidation.md",
+      "hash": "9ec0b0985a7cfb369257552ba1199deb0ef5b9e82900f4c2f9e5219b12d94dcc"
     },
     "https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_fieldmode": {
       "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_fieldmode.md",
@@ -3686,7 +3690,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/VideoToolbox.json": {
       "file_path": "documentation/VideoToolbox/VideoToolbox.md",
-      "hash": "964cd606ec9c8ed82a5614ceb3c842b73e3ca55a00067eac2b304f90c830b484"
+      "hash": "8e7a03893725f6e77960410962bbb31b55fa98363df1adf6a360f6d2018fa840"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/1441330-frame-delay.json": {
       "file_path": "documentation/VideoToolbox/api-1441330-frame-delay.md",
@@ -4283,6 +4287,10 @@
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtdecompressionpropertykey_deinterlacemode.json": {
       "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_deinterlacemode.md",
       "hash": "3e2eeaa2375d90b6498acc996f4ccce865293665031a6e7104dce53d4034da1c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtdecompressionpropertykey_enablestrictbitstreamvalidation.json": {
+      "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_enablestrictbitstreamvalidation.md",
+      "hash": "9ec0b0985a7cfb369257552ba1199deb0ef5b9e82900f4c2f9e5219b12d94dcc"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtdecompressionpropertykey_fieldmode.json": {
       "file_path": "documentation/VideoToolbox/kvtdecompressionpropertykey_fieldmode.md",
@@ -7373,6 +7381,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1842
+    "total_pages": 1844
   }
 }

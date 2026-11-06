@@ -29,7 +29,7 @@ The system sorts the impressions based on the following criteria:
 
 ## Bridge conversions between SKAdNetwork and AdAttributionKit
 
-When an app calls the update conversion values APIs in SKAdNetwork, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md), SKAdNetwork bridges the conversion values between the two frameworks by mirroring the call into AdAttributionNetwork by calling
+When an app calls the update conversion values APIs in SKAdNetwork, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md), SKAdNetwork bridges the conversion values between the two frameworks by mirroring the call into AdAttributionKit by calling
 [`updateConversionValue(_:lockPostback:)`](./postback/updateconversionvalue%28_,lockpostback%29.md).
 
 ## See Also

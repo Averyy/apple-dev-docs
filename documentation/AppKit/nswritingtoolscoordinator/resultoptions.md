@@ -32,6 +32,7 @@ This property contains the set of options that Writing Tools outputs for your vi
   The actual level of Writing Tools support the system provides for your view.
 - [var preferredResultOptions: NSWritingToolsResultOptions](./preferredresultoptions.md)
   The type of content you allow Writing Tools to generate for your custom text view.
+- [var includesTextListMarkers: Bool](./includestextlistmarkers.md)
 
 
 ---

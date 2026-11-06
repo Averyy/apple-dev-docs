@@ -25,14 +25,18 @@ object JWSTransactionDecodedPayload
 
 ## Properties
 
+- `additionalTransactionReason` (additionalTransactionReason): The reason that more than one transaction represents the subscription period. This field is present only when the group purchaser of a multiseat purchase added seats during the period.
 - `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `bundleId` (bundleId): The bundle identifier of the app.
+- `billingPlanType` (billingPlanType): The billing plan of the subscription purchase, either billed up front or billed monthly with a 12-month commitment.
 - `currency` (currency): The three-letter ISO 4217 currency code associated with the `price` parameter. This value is present only if `price` is present.
+- `commitmentInfo` (TransactionCommitmentInfo): Information about the commitment, such as the current billing period and when the commitment expires, for a monthly subscription with a 12-month commitment.
 - `environment` (environment): The server environment, either sandbox or production.
 - `expiresDate` (expiresDate): The UNIX time, in milliseconds, that the subscription expires or renews.
-- `inAppOwnershipType` (inAppOwnershipType): A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing, an organization, or a group.
+- `inAppOwnershipType` (inAppOwnershipType): A string that describes whether the transaction was purchased by the customer, was assigned to them by an organization or group, or is available to them through Family Sharing.
 - `isUpgraded` (isUpgraded): A Boolean value that indicates whether the customer upgraded to another subscription.
+- `multiSeatInfo` (TransactionMultiSeatInfo): Information about the seats in the transaction, for a subscription that a customer buys as a multiseat purchase.
 - `offerDiscountType` (offerDiscountType): The payment mode you configure for the offer.
 - `offerIdentifier` (offerIdentifier): The identifier that contains the offer code or the promotional offer identifier.
 - `offerPeriod` (offerPeriod): The duration of the offer applied to the transaction.
@@ -59,8 +63,6 @@ object JWSTransactionDecodedPayload
 - `type` (type): The type of the in-app purchase.
 - `webOrderLineItemId` (webOrderLineItemId): The unique identifier of subscription purchase events across devices, including subscription renewals.
 - `advancedCommerceInfo` (advancedCommerceTransactionInfo): Transaction information that is present only for Advanced Commerce SKUs.
-- `billingPlanType` (billingPlanType)
-- `commitmentInfo` (TransactionCommitmentInfo)
 
 ## See Also
 

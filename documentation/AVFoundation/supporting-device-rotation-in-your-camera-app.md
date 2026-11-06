@@ -2,7 +2,7 @@
 
 **Framework**: AVFoundation  
 **Role**: Sample Code  
-**Download**: [AVCamBuildingACameraApp.zip](https://docs-assets.developer.apple.com/published/b1de664bee51/AVCamBuildingACameraApp.zip)
+**Download**: [AVCamBuildingACameraApp.zip](https://docs-assets.developer.apple.com/published/cd906d1738b2/AVCamBuildingACameraApp.zip)
 
 Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 
@@ -65,30 +65,26 @@ nonisolated struct DefaultPreviewSource: PreviewSource {
 
     @MainActor func connect(to target: PreviewTarget) {
         target.setSession(session)
-
-        // Provide the layer to the rotation observer, and again when the layer
-        // joins a window, because it has no position in a hierarchy until then.
-        target.previewLayerDidMoveToWindow = { previewLayer in
-            rotationObserver.setPreviewLayer(previewLayer)
-        }
+        // Provide the layer to the rotation observer, which starts observing it.
         rotationObserver.setPreviewLayer(target.previewLayer)
     }
 }
 ```
 
-The observer receives the layer twice because a coordinator measures the layer’s position in a view hierarchy. The `CameraPreview` structure conforms to [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) and builds its view before the system installs it. At connection time the layer has no position to measure. The nested `PreviewView` class reports the layer again after it joins a window:
+The connection waits until the layer is in a window, because a coordinator measures the layer’s position in a view hierarchy. The `CameraPreview` structure conforms to [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) and builds its view before the system installs it, so the layer has no position to measure at that point. The `VideoView` class, whose backing layer is the preview layer, calls `connect(to:)` after it joins a window:
 
 ```swift
-class PreviewView: UIView, PreviewTarget {
+class VideoView: UIView, PreviewTarget {
 
-    var previewLayerDidMoveToWindow: (@MainActor (AVCaptureVideoPreviewLayer) -> Void)?
+    // The source that connects this view's preview layer to the capture session.
+    private let source: PreviewSource
 
     override func didMoveToWindow() {
         super.didMoveToWindow()
-        // A coordinator measures the layer's position in a view hierarchy,
-        // which the layer only has after it joins a window.
+        // Connect after the layer joins a window, because a rotation
+        // coordinator measures the layer's position in a view hierarchy.
         guard window != nil else { return }
-        previewLayerDidMoveToWindow?(previewLayer)
+        source.connect(to: self)
     }
 }
 ```
@@ -174,8 +170,7 @@ nonisolated private let continuation: AsyncStream<CGFloat>.Continuation
 nonisolated init() {
     // Retain only the most recent angle.
     let (captureAngles, continuation) = AsyncStream<CGFloat>.makeStream(
-        bufferingPolicy: .bufferingNewest(1)
-    )
+        bufferingPolicy: .bufferingNewest(1))
     self.captureAngles = captureAngles
     self.continuation = continuation
 }
@@ -235,7 +230,7 @@ The sequence stays open for as long as the observer lives, and capturing `self` 
 Each of the app’s output services applies the angle to its own output’s video connection:
 
 ```swift
-extension OutputService {
+nonisolated extension OutputService {
     func setVideoRotationAngle(_ angle: CGFloat) {
         // Set the rotation angle on the output object's video connection.
         output.connection(with: .video)?.videoRotationAngle = angle

@@ -9,7 +9,7 @@ Creates a feedback generator.
 **Availability**:
 - iOS 10.0+ - Deprecated in 27.0
 - iPadOS 10.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(view:)`](./init%28view%29.md) instead.
 

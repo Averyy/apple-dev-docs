@@ -25,6 +25,18 @@ mutating func computeMinimum(of metric: Metric)
 
 - `metric`: The metric to aggregate.
 
+## See Also
+
+### Computing standard aggregations
+- [func computeMean(of: Metric)](./computemean%28of%29.md)
+  Computes the mean of a metric and adds it to the group.
+- [func computeMedian(of: Metric)](./computemedian%28of%29.md)
+  Computes the median of a metric and adds it to the group.
+- [func computeMode(of: Metric)](./computemode%28of%29.md)
+  Computes the mode of a metric and adds it to the group.
+- [func computeMaximum(of: Metric)](./computemaximum%28of%29.md)
+  Computes the maximum value of a metric and adds it to the group.
+
 
 ---
 

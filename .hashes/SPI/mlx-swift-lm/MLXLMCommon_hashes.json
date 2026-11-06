@@ -22278,11 +22278,16 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/MLXHuggingFace"
-    ],
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxlmcommon/developing.json": [
+        "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/MLXHuggingFace"
+      ],
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxlmcommon/using.json": [
+        "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/MLXHuggingFace"
+      ]
     },
     "total_pages": 5569
   }

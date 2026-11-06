@@ -29,6 +29,7 @@ The value is expressed as an [`NSNumber`](../../../Foundation/nsnumber.md) type.
 ## See Also
 
 ### Constants
+- [static let concealed: UIPasteboard.OptionsKey](./concealed.md)
 - [static let expirationDate: UIPasteboard.OptionsKey](./expirationdate.md)
   The time and date that you want the system to remove the pasteboard items from the pasteboard.
 

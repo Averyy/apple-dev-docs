@@ -2,7 +2,7 @@
 
 **Framework**: SwiftUI  
 **Role**: Sample Code  
-**Download**: [WishlistPlanningTravelInASwiftUIApp.zip](https://docs-assets.developer.apple.com/published/1a5604d20e5e/WishlistPlanningTravelInASwiftUIApp.zip)
+**Download**: [WishlistPlanningTravelInASwiftUIApp.zip](https://docs-assets.developer.apple.com/published/45d5a475fa81/WishlistPlanningTravelInASwiftUIApp.zip)
 
 Build a travel planning app that organizes trips into collections and tracks activity completion.
 

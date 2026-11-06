@@ -43,10 +43,13 @@ You can start using a message and image when its [`messageState`](./messagestate
 
 Call [`Configure Default Message`](./configure-default-message.md) to set up default messages. Only text-based messages, with or without images, can be default messages. You can configure a default message for every auto-renewable subscription in every locale for your app.
 
+If there’s no default message for the customer’s exact locale, the system uses the next most relevant default message you’ve configured for the product.
+
 The system uses a default message in the following cases:
 
-- If you configure only default messages
-- If the App Store server fails to receive a response from your `Get Retention Message` endpoint for any reason
+- You don’t implement the `Get Retention Message` endpoint
+- The App Store server fails to receive a response from your `Get Retention Message` endpoint for any reason
+- You haven’t configured a retention message in App Store Connect for the subscription
 
 ### Optionally, prepare to respond in real time
 

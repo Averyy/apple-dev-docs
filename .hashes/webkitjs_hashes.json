@@ -14068,6 +14068,10 @@
       "file_path": "documentation/webkitjs/svgtextcontentelement.md",
       "hash": "e8b9d978c81aee426e458a7eb41edad1e6bbb1d3c52451e63e1a27881c2f35a4"
     },
+    "https://developer.apple.com/documentation/webkitjs/svgtextcontentelement/1628900-selectsubstring": {
+      "file_path": "documentation/webkitjs/svgtextcontentelement/api-1628900-selectsubstring.md",
+      "hash": "9206cf4b95263f1719e25bc3661e57fcacd6c94548775293a600f5c048318f02"
+    },
     "https://developer.apple.com/documentation/webkitjs/svgtextcontentelement/1628974-getextentofchar": {
       "file_path": "documentation/webkitjs/svgtextcontentelement/api-1628974-getextentofchar.md",
       "hash": "1bfb26d3c472dcd65a4a61672443766445e08f3168eeea06597851f98e0f30eb"
@@ -34581,8 +34585,8 @@
       "hash": "e8b9d978c81aee426e458a7eb41edad1e6bbb1d3c52451e63e1a27881c2f35a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkitjs/svgtextcontentelement/1628900-selectsubstring.json": {
-      "error": "HTTP 403",
-      "status": "error"
+      "file_path": "documentation/webkitjs/svgtextcontentelement/api-1628900-selectsubstring.md",
+      "hash": "9206cf4b95263f1719e25bc3661e57fcacd6c94548775293a600f5c048318f02"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkitjs/svgtextcontentelement/1628974-getextentofchar.json": {
       "file_path": "documentation/webkitjs/svgtextcontentelement/api-1628974-getextentofchar.md",
@@ -45596,6 +45600,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 10257
+    "total_pages": 10258
   }
 }

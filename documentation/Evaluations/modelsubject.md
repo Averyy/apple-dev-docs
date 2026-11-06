@@ -37,7 +37,7 @@ let subject = ModelSubject(value: "Paris, France")
 
 ### Creating a subject
 - [init(value: Value, transcript: StructuredTranscript?)](./modelsubject/init%28value,transcript%29.md)
-  Creates a model subject with a value and optional transcript.
+  Creates a model subject with a value and an optional transcript.
 ### Accessing the content
 - [var value: Value](./modelsubject/value.md)
   The typed value the model produces.

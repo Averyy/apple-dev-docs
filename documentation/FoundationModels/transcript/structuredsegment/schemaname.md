@@ -11,6 +11,7 @@ A name that can be used to understand which type the content represents.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -23,7 +24,7 @@ A name that can be used to understand which type the content represents.
 var schemaName: String { get set }
 ```
 
-*watchOS*
+*tvOS, watchOS*
 
 ```swift
 var schemaName: String

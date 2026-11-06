@@ -44,6 +44,8 @@ let column = myEvaluation.inputColumn
 ### Results
 - [struct EvaluationResult](./evaluationresult.md)
   The results of running a model evaluation.
+- [struct EvaluationRunErrors](./evaluationrunerrors.md)
+  A summary of the failures encountered during an evaluation run.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
   A typed column descriptor for the input samples in the detailed DataFrame.
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)

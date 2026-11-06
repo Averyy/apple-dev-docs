@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The frame information of the website that provided this immersive environment.
+The frame information of the website that provides this immersive environment.
 
 **Availability**:
 - visionOS 27.0+

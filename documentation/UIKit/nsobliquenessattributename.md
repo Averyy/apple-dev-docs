@@ -9,10 +9,10 @@ The obliqueness of the text.
 **Availability**:
 - iOS 7.0+ - Deprecated in 27.0
 - iPadOS 7.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
 - visionOS 1.0+ - Deprecated in 1.0
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 ## Declaration
 

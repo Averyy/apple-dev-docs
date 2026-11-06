@@ -26,6 +26,8 @@ var pixelsPerInch: Int { get set }
   The height of the display, in pixels.
 - [var widthInPixels: Int](./widthinpixels.md)
   The width of the display, in pixels.
+- [var enableHDR: Bool](./enablehdr.md)
+  A Boolean value that indicates whether the framework enables high dynamic range (HDR) support for the display.
 
 
 ---

@@ -45,6 +45,20 @@ enum UIMenuElementImageVisibility : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Getting the element attributes
+- [var title: String](./title.md)
+  The title of the menu element.
+- [var subtitle: String?](./subtitle.md)
+  The subtitle to display alongside the menu element’s title.
+- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](./highlightstateupdatehandler.md)
+  A closure the system calls when the element’s highlight state changes in a menu.
+- [var image: UIImage?](./image.md)
+  The image to display alongside the menu element’s title.
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
+
 
 ---
 

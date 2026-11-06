@@ -32,6 +32,11 @@ Use the trait to align content within the size your view already reported, not t
 ### Conforms To
 - [UINSIntegerTraitDefinition](./uinsintegertraitdefinition.md)
 
+## See Also
+
+### System traits
+- [UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-c.class.md)
+
 
 ---
 

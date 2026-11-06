@@ -222,7 +222,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is now available.
 
-  For more information on the Reality Composer Pro macOS app, see [Reality Composer Pro Release Notes](../RealityComposerPro/reality-composer-pro-release-notes.md). (179045352)
+  For more information on the Reality Composer Pro macOS app, see [Reality Composer Pro Release Notes](../RealityComposerPro/reality-composer-pro-3-release-notes.md). (179045352)
 
 ### RealityKit
 
@@ -572,6 +572,8 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 ## See Also
 
 ### visionOS 27
+- [visionOS 27.3 Beta Release Notes](./visionos-27_3-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [visionOS 27.2 Release Notes](./visionos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 

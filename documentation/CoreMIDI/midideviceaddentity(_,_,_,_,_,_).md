@@ -7,11 +7,11 @@
 Specifies one of the entities that make up a device.
 
 **Availability**:
-- iOS 4.2+ - Deprecated in 27.2 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
-- iPadOS 4.2+ - Deprecated in 27.2 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
-- macOS 10.0+ - Deprecated in 27.2 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
+- iOS 4.2+ - Deprecated in 27.3 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
+- iPadOS 4.2+ - Deprecated in 27.3 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
+- macOS 10.0+ - Deprecated in 27.3 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MIDIDeviceNewEntity(_:_:_:_:_:_:_:))
 
 ## Declaration
 

@@ -7,7 +7,7 @@
 The list style that describes the behavior and appearance of an inset list with optional alternating row backgrounds.
 
 **Availability**:
-- macOS 12.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use the [`inset`](./inset.md) style and add the [`alternatingRowBackgrounds(_:)`](../view/alternatingrowbackgrounds%28_%29.md) view modifier instead.
 

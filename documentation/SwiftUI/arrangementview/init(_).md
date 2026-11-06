@@ -24,6 +24,24 @@ init(_ configuration: ArrangementViewStyleConfiguration)
 
 Available when `Primary` is `ArrangementViewStyleConfiguration.Primary` and `Secondary` is `ArrangementViewStyleConfiguration.Secondary`.
 
+## Discussion
+
+Use this initializer to implement a custom [`ArrangementViewStyle`](../arrangementviewstyle.md) that composes another arrangement view. Your style can apply its customizations, such as appearance or layout adjustments, while deferring the arrangement of primary and secondary content to the arrangement view:
+
+```swift
+struct CustomArrangementViewStyle: ArrangementViewStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        ArrangementView(configuration)
+            .font(.callout)
+            .tint(customTint)
+    }
+}
+```
+
+## Parameters
+
+- `configuration`: The style configuration to use.
+
 ## See Also
 
 ### Creating an arrangement view

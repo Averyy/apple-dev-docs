@@ -7,11 +7,11 @@
 Creates a magnification gesture with a given minimum delta for the gesture to start.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
-- macOS 10.15+ - Deprecated in 27.2 (renamed: MagnifyGesture)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+- iOS 13.0+ - Deprecated in 27.3 (renamed: MagnifyGesture)
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: MagnifyGesture)
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: MagnifyGesture)
+- macOS 10.15+ - Deprecated in 27.3 (renamed: MagnifyGesture)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: MagnifyGesture)
 
 > **Deprecated**: Use [`MagnifyGesture`](../magnifygesture.md) instead.
 

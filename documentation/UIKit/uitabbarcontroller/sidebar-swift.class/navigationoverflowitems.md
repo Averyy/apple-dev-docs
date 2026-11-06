@@ -22,6 +22,22 @@ var navigationOverflowItems: UIDeferredMenuElement? { get set }
 @property (nonatomic, strong, nullable) UIDeferredMenuElement * navigationOverflowItems;
 ```
 
+## See Also
+
+### Managing customization
+- [var isAvailable: Bool](./isavailable.md)
+  Indicates when the tab sidebar is available to be displayed in the current context. When available, the sidebar is either visible, or can become visible depending on `isHidden`. Use this property to gate behaviors or UI that is dependent on the availability of the sidebar (like child tabs, or landing pages for groups).
+- [var isHidden: Bool](./ishidden.md)
+  Determines if the sidebar is currently hidden.
+- [var preferredLayout: UITabBarController.Sidebar.Layout](./preferredlayout.md)
+  The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
+- [UITabBarController.Sidebar.Layout](./layout.md)
+- [var preferredPlacement: UITabBarController.Sidebar.Placement](./preferredplacement.md)
+  The preferred placement for the tab bar controller when the sidebar and tab bar are mutually exclusive, and only one placement can be displayed.
+- [UITabBarController.Sidebar.Placement](./placement.md)
+- [func reconfigureItem(for: UITab)](./reconfigureitem%28for%29.md)
+  Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
+
 
 ---
 

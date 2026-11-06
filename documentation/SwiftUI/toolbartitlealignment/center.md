@@ -25,6 +25,14 @@ static let center: ToolbarTitleAlignment
 
 Unlike [`automatic`](./automatic.md), this never falls back to the default alignment.
 
+## See Also
+
+### Getting title alignment options
+- [static let automatic: ToolbarTitleAlignment](./automatic.md)
+  The system determines the alignment.
+- [static let leading: ToolbarTitleAlignment](./leading.md)
+  The title is leading-aligned.
+
 
 ---
 

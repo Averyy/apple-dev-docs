@@ -28,6 +28,12 @@ The default value is `nil`, which means the system centers edge-attached sheets 
 
 To customize the sheet’s position, set a view within the view hierarchy of the presenting view controller as the [`sourceView`](./sourceview.md) of the sheet. The sheet attempts to visually center itself over this view. The system only positions the sheet within system-defined margins.
 
+## See Also
+
+### Customizing position and placement
+- [var preferredPlacement: UISheetPresentationController.Placement](./preferredplacement.md)
+- [UISheetPresentationController.Placement](./placement.md)
+
 
 ---
 

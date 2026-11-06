@@ -30,6 +30,10 @@ The operation not allowed cursor.
 
 This cursor indicates that the operation that is being attempted, perhaps dragging to an item that can’t accept the drag type, is being denied.
 
+The following image shows the operation not allowed cursor:
+
+![operation not allowed cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-operation-not-allowed@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

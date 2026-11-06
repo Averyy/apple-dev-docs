@@ -26,6 +26,12 @@ class var iBeamCursorForVerticalLayout: NSCursor { get }
 
 The vertical layout text cursor. This cursor is used when editing vertical layout text.
 
+## Discussion
+
+The following image shows the I-beam cursor for vertical layout:
+
+![I-beam cursor for vertical layout](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-vertical-i-beam@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

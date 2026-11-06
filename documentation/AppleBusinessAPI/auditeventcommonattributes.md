@@ -7,7 +7,7 @@
 The common attributes for all audit events.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -83,6 +83,9 @@ object AuditEventCommonAttributes
 - [AuditEventSubscriptionDeletedAttributes](./auditeventsubscriptiondeletedattributes.md)
 - [AuditEventSubscriptionUpdatedAttributes](./auditeventsubscriptionupdatedattributes.md)
 - [AuditEventTermsAcceptedAttributes](./auditeventtermsacceptedattributes.md)
+- [AuditEventWebhookCreatedAttributes](./auditeventwebhookcreatedattributes.md)
+- [AuditEventWebhookDeletedAttributes](./auditeventwebhookdeletedattributes.md)
+- [AuditEventWebhookUpdatedAttributes](./auditeventwebhookupdatedattributes.md)
 
 
 ---

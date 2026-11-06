@@ -21,7 +21,9 @@ enum Error
 - [AccessoryTransportSession.Error.invalidated](./error/invalidated.md)
   An error that indicates the session is invalidated.
 - [AccessoryTransportSession.Error.unsupported](./error/unsupported.md)
-  An error that indicates the framework doesn’t support an client-provided value or operation.
+  An error that indicates a client-provided value or operation isn’t supported.
+- [AccessoryTransportSession.Error.unavailable](./error/unavailable.md)
+  An error that indicates the feature isn’t available on the device.
 - [AccessoryTransportSession.Error.unknown](./error/unknown.md)
   An error that indicates a failure with an unknown cause.
 ### Describing an error

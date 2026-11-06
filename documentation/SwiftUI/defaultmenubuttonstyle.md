@@ -7,7 +7,7 @@
 The default menu button style.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`DefaultMenuStyle`](./defaultmenustyle.md) instead.
 

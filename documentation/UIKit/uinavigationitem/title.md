@@ -55,6 +55,9 @@ When present, `title` and `subtitle` take precedence over the window scene’s [
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
+- [var titleAlignment: UINavigationItem.TitleAlignment](./titlealignment-swift.property.md)
+  The preferred alignment of the navigation bar’s title.
+- [UINavigationItem.TitleAlignment](./titlealignment-swift.enum.md)
 - [attributedTitle](./attributedtitle-9l8p2.md)
   An attributed string that is rendered as the title in the navigation bar.
 

@@ -25,6 +25,12 @@ var hasFailures: Bool { get }
 
 A clean run is all-zero, produced inference, and referenced no missing metrics. Used to decide whether to write the error summary when serializing — a clean run omits it entirely.
 
+## See Also
+
+### Checking for failures
+- [static let clean: EvaluationRunErrors](./clean.md)
+  Used as the default when loading a file that carries no `runErrors`.
+
 
 ---
 

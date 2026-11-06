@@ -7,7 +7,7 @@
 Sets the current directory for the receiver.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`currentDirectoryURL`](./currentdirectoryurl.md) instead.
 

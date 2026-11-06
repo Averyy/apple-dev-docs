@@ -40,6 +40,7 @@ struct Entity
 - [AppSchema.ReaderEntity](./readerentity.md)
 - [AppSchema.RemindersEntity](./remindersentity.md)
 - [AppSchema.SpreadsheetEntity](./spreadsheetentity.md)
+- [AppSchema.VideoEntity](./videoentity.md)
 - [AppSchema.WhiteboardEntity](./whiteboardentity.md)
 - [AppSchema.WordProcessorEntity](./wordprocessorentity.md)
 - [AppSchemaEntity](../appschemaentity.md)

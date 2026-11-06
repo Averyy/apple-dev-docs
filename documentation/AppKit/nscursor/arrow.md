@@ -26,6 +26,12 @@ class var arrow: NSCursor { get }
 
 The default cursor, a slanted arrow with its hot spot at the tip. The arrow cursor is the one you’re used to seeing over buttons, scrollers, and many other objects in the window system.
 
+## Discussion
+
+The following image shows the arrow cursor:
+
+![arrow cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-arrow@2x.png)
+
 ## See Also
 
 ### Related Documentation

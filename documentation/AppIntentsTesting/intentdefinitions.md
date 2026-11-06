@@ -75,6 +75,9 @@ let enumCase = definitions.enums["CoffeeSizeEnum"]
 ### Supporting types
 - [IntentDefinitions.DefinitionCollection](./intentdefinitions/definitioncollection.md)
   A collection of a specific type of definition.
+### Instance Properties
+- [var skills: IntentDefinitions.DefinitionCollection<SkillDefinition>](./intentdefinitions/skills.md)
+  The definitions of the app’s skills, keyed by skill name.
 
 ## Relationships
 

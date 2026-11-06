@@ -9,6 +9,8 @@ Asynchronously advances to the next element and returns it, or ends the sequence
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

@@ -40,17 +40,17 @@ let evaluator = ToolCallEvaluator<ModelSample<String>>(
 
 ## Topics
 
-### Initializers
+### Creating an evaluator
 - [init(allPass: Metric, percentagePass: Metric)](./toolcallevaluator/init%28allpass,percentagepass%29.md)
   Creates a new tool-call expectations evaluator.
 - [init(allPass: Metric, percentagePass: Metric, argumentMatchModel: any LanguageModel)](./toolcallevaluator/init%28allpass,percentagepass,argumentmatchmodel%29.md)
   Creates a new tool-call expectations evaluator with a custom language model for semantic matching of natural language argument matchers.
-### Instance Properties
+### Inspecting the metrics
 - [let allPass: Metric](./toolcallevaluator/allpass.md)
   The metric for the strict pass or fail result.
 - [let percentagePass: Metric](./toolcallevaluator/percentagepass.md)
   The metric for the partial score result.
-### Instance Methods
+### Producing metrics
 - [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](./toolcallevaluator/metrics%28subject,input%29.md)
   Evaluates tool-call expectations against the actual transcript and returns scored metrics.
 

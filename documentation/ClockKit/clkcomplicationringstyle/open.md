@@ -7,7 +7,7 @@
 A ring in which the values increase clockwise, starting in the lower-left corner, leaving an opening at the bottom of the circle.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

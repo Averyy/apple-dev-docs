@@ -45,6 +45,8 @@ Use [Device Management](../DeviceManagement/DeviceManagement.md) to securely con
 
 For more information, see [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md).
 
+Using device management, you can also integrate Platform SSO with Automated Device Enrollment. For more information, see [Enrollment with Platform Single Sign-on](../DeviceManagement/enrolling-with-platform-single-sign-on.md).
+
 ## Topics
 
 ### Essentials
@@ -71,6 +73,8 @@ For more information, see [Configuring Platform Single Sign-on](../DeviceManagem
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
 - [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md)
   Provide a seamless login and authentication experience when integrating with your identity provider.
+- [Enrollment with Platform Single Sign-on](../DeviceManagement/enrolling-with-platform-single-sign-on.md)
+  Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
 ### Authentication
 - [Authentication process](./authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.

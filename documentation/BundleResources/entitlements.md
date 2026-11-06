@@ -255,6 +255,8 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### IdentityDocumentServices
 - [Digital Credentials API - Mobile Document Provider](./entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.md)
   An array of strings that represent the types of mobile documents (mdoc) that an identity document provider app can provide during an online web presentment.
+- [Digital Credentials API - Verifiable Credential Provider](./entitlements/com.apple.developer.identity-document-services.document-provider.verifiable-credential-types.md)
+  An array of strings that represent the types of verifiable credentials that an identity document provider app can provide during an online web presentment.
 ### Journaling Suggestions
 - [com.apple.developer.journal.allow](./entitlements/com.apple.developer.journal.allow.md)
   An entitlement that enables an app to present the journaling suggestions picker.

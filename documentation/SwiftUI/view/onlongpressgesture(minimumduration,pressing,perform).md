@@ -7,7 +7,7 @@
 Adds an action to perform when this view recognizes a long press gesture.
 
 **Availability**:
-- tvOS 14.0+ - Deprecated in 27.2 (renamed: onLongPressGesture(minimumDuration:perform:onPressingChanged:))
+- tvOS 14.0+ - Deprecated in 27.3 (renamed: onLongPressGesture(minimumDuration:perform:onPressingChanged:))
 
 > **Deprecated**: Use [`onLongPressGesture(minimumDuration:perform:onPressingChanged:)`](./onlongpressgesture%28minimumduration,perform,onpressingchanged%29.md) instead.
 

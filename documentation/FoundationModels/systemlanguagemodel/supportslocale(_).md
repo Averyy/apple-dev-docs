@@ -11,6 +11,7 @@ Returns a Boolean value that indicates whether the given locale is supported by 
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.3+ (Beta)
 - visionOS 26.0+
 
 ## Declaration

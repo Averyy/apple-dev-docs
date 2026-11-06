@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "fe9e9c90e50c1b7021424af11c3ebab3ac8f2ae4c43a6de0e3efb46ae0cde752"
+      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
     },
     "https://developer.apple.com/documentation/technologyoverviews/ai-machine-learning": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -74,7 +74,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/development-process": {
       "file_path": "documentation/TechnologyOverviews/development-process.md",
-      "hash": "bd7ace5329dc413bea3ff0d2103d5dc907f3ae8402ad8b177b62a3bef6d4f57f"
+      "hash": "266021b15950b4200b4c37e17e492b597d5bd89e11b7c954e861831d2d38c100"
     },
     "https://developer.apple.com/documentation/technologyoverviews/device-sensors": {
       "file_path": "documentation/TechnologyOverviews/device-sensors.md",
@@ -130,7 +130,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/information": {
       "file_path": "documentation/TechnologyOverviews/information.md",
-      "hash": "3aadd085443f127b24242ab71b2903a4b0cb3ac948ef06c0e2daaa18d45d99ad"
+      "hash": "36308e59edfc773bb056cdba7ef2571dc8526e21a43ff0e697482e47a3b782b6"
     },
     "https://developer.apple.com/documentation/technologyoverviews/interface-fundamentals": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
@@ -150,7 +150,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/preparing-your-app-for-iphone-duo": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "5615c5fb4b1cac95e3b0d0d93700645c9afc16e315f185acd25591267d9ec8a4"
+      "hash": "dfb9a0f375ea090f5b2456ac4a96be21e62c75db947a002fea1092d61309a0fd"
     },
     "https://developer.apple.com/documentation/technologyoverviews/shared-data": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "fe9e9c90e50c1b7021424af11c3ebab3ac8f2ae4c43a6de0e3efb46ae0cde752"
+      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/ai-machine-learning.json": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -266,7 +266,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/development-process.json": {
       "file_path": "documentation/TechnologyOverviews/development-process.md",
-      "hash": "bd7ace5329dc413bea3ff0d2103d5dc907f3ae8402ad8b177b62a3bef6d4f57f"
+      "hash": "266021b15950b4200b4c37e17e492b597d5bd89e11b7c954e861831d2d38c100"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/device-sensors.json": {
       "file_path": "documentation/TechnologyOverviews/device-sensors.md",
@@ -322,7 +322,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/information.json": {
       "file_path": "documentation/TechnologyOverviews/information.md",
-      "hash": "3aadd085443f127b24242ab71b2903a4b0cb3ac948ef06c0e2daaa18d45d99ad"
+      "hash": "36308e59edfc773bb056cdba7ef2571dc8526e21a43ff0e697482e47a3b782b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/preparing-your-app-for-iphone-duo.json": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "5615c5fb4b1cac95e3b0d0d93700645c9afc16e315f185acd25591267d9ec8a4"
+      "hash": "dfb9a0f375ea090f5b2456ac4a96be21e62c75db947a002fea1092d61309a0fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/shared-data.json": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",

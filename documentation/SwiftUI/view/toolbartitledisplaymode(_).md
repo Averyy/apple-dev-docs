@@ -37,9 +37,13 @@ See [`ToolbarTitleDisplayMode`](../toolbartitledisplaymode.md) for more informat
 
 ## See Also
 
-### Configuring the toolbar title display mode
+### Configuring the toolbar title display
 - [struct ToolbarTitleDisplayMode](../toolbartitledisplaymode.md)
   A type that defines the behavior of title of a toolbar.
+- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](./toolbartitlealignment%28_%29.md)
+  Sets the preferred alignment of the navigation bar’s title.
+- [struct ToolbarTitleAlignment](../toolbartitlealignment.md)
+  A preferred alignment for a navigation bar’s title.
 
 
 ---

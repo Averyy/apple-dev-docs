@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-An error that indicates that the current request has been cancelled.
+An error that indicates that the current request was canceled.
 
 **Availability**:
 - iOS 26.0+

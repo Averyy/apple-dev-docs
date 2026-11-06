@@ -111,6 +111,32 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type commitmentRenewalBillingPlanType](./commitmentrenewalbillingplantype.md)
 - [type commitmentRenewalDate](./commitmentrenewaldate.md)
 - [type commitmentRenewalPrice](./commitmentrenewalprice.md)
+### Multiseat purchases
+- [object TransactionMultiSeatInfo](./transactionmultiseatinfo.md)
+  Information about the seats in a transaction for a subscription that a customer buys as a multiseat purchase.
+- [type invitationManagement](./invitationmanagement.md)
+  A value that indicates whether Apple or your app hosts the invitations to the seats of a multiseat purchase.
+- [type additionalTransactionReason](./additionaltransactionreason.md)
+  The reason that more than one transaction represents a subscription period.
+- [object MultiSeatPriceTier](./multiseatpricetier.md)
+  A price per seat, and the number of seats at that price, in a subscription that a customer buys as a multiseat purchase.
+- [type tierPrice](./tierprice.md)
+  The price per seat, in milliunits, for a price tier of a subscription that a customer buys as a multiseat purchase.
+- [type tierQuantity](./tierquantity.md)
+  The number of seats at the price of a price tier.
+- [type revokedSeatQuantity](./revokedseatquantity.md)
+  The number of seats in a transaction that a seat-based refund revoked.
+- [object RenewalMultiSeatInfo](./renewalmultiseatinfo.md)
+  Information about the seats in the next renewal of a subscription that renews as a multiseat purchase.
+- [type renewalQuantity](./renewalquantity.md)
+  The number of seats in the next renewal of an auto-renewable subscription.
+### Seat management
+- [type seatClaimId](./seatclaimid.md)
+  The identifier of a seat claim in a group subscription that uses developer-hosted invitations.
+- [type availableSeatCount](./availableseatcount.md)
+  The number of seats that are available to claim in a group subscription that uses developer-hosted invitations.
+- [type totalSeatCount](./totalseatcount.md)
+  The total number of seats in a group subscription that uses developer-hosted invitations.
 ### Group membership
 - [object GroupEntry](./groupentry.md)
   The identifier, type, and per-product roles for a group that a customer belongs to.

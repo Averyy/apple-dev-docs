@@ -19,6 +19,10 @@ A namespace to collect APIs for use by container apps that provide live assistan
 enum LiveAssistance
 ```
 
+## Mentions
+
+- [Providing captioning for a FaceTime call](./providing-captioning-for-a-facetime-call.md)
+
 ## Overview
 
 To provide interpreter, captioning, or other services that work with FaceTime calls, create a container app that uses the [`LiveAssistance`](./liveassistance.md) APIs, as well as an app extension that conforms to the [`LiveAssistanceExtension`](./liveassistanceextension.md) protocol.
@@ -72,6 +76,8 @@ var body: some Scene {
 ### Conversation assistance
 - [protocol LiveAssistanceExtension](./liveassistanceextension.md)
   The protocol you extend to provide live assistance services.
+- [Live assistance captioning](./liveassistancecaptioning.md)
+  Use a WebSocket API to perform real-time captioning in a FaceTime call.
 
 
 ---

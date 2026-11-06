@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+Adds contention relief when the kernel lacks other forms.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,6 +23,10 @@ case automatic
 ```c
 MTLContentionReliefAutomatic
 ```
+
+## Discussion
+
+The implementation inserts contention relief when the kernel doesn’t include other mechanisms, such as `metal::atomic_wait_*` functions or explicit calls to `metal::yield_simdgroup`.
 
 
 ---

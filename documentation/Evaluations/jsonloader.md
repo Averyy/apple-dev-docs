@@ -35,10 +35,20 @@ The format is detected automatically from the file contents:
 
 Malformed entries are logged using `OSLog` and skipped. A failure to open the file propagates as a thrown error.
 
+Decoding uses a plain [`JSONDecoder`](../Foundation/jsondecoder.md) by default. To customize key, date, or data decoding strategies, pass a preconfigured decoder:
+
+```swift
+let decoder = JSONDecoder()
+decoder.keyDecodingStrategy = .convertFromSnakeCase
+decoder.dateDecodingStrategy = .iso8601
+
+let loader = JSONLoader<ModelSample<String>>(url: url, decoder: decoder)
+```
+
 ## Topics
 
 ### Initializers
-- [init(url: URL)](./jsonloader/init%28url%29.md)
+- [init(url: URL, decoder: JSONDecoder)](./jsonloader/init%28url,decoder%29.md)
   Creates a loader backed by the JSON or JSONL file at the given URL.
 ### Instance Properties
 - [var stream: any AsyncSequence<Sample, any Error>](./jsonloader/stream.md)

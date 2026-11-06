@@ -46,6 +46,10 @@ Use this type with the [`contentMargins(_:for:)`](./view/contentmargins%28_,for%
   Configures the content margin for a provided placement.
 - [func contentMargins(_:_:for:)](./view/contentmargins%28_,_,for%29.md)
   Configures the content margin for a provided placement.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./view/contentmargins%28for,edges,alignment%29.md)
+  Insets the content of this view by a content margin guide.
+- [struct ContentMarginGuide](./contentmarginguide.md)
+  A guide for resolving the content margins for a view.
 
 
 ---

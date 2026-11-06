@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/ThreadNetwork": {
       "file_path": "documentation/ThreadNetwork/ThreadNetwork.md",
-      "hash": "c15c1435d4b5a1d8f87b35432de1e009c6553c6a0e5f6d3e068f900b768f0ccd"
+      "hash": "bb9efe448fa6c9ca677f21e1ee6b2a3fbd31609cc982b9bf481be2af66c23c2b"
     },
     "https://developer.apple.com/documentation/threadnetwork/configuring-a-border-router": {
       "file_path": "documentation/ThreadNetwork/configuring-a-border-router.md",
@@ -18,7 +18,7 @@
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient": {
       "file_path": "documentation/ThreadNetwork/thclient.md",
-      "hash": "e8211b358920d3af942dfcdf0c0115516849db5f2c34ea13642de83fb0416963"
+      "hash": "1ee2599c30c093ea835c7f479acdd368f7468b5e82676c15d72ee5f5bef26fa4"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:)": {
       "file_path": "documentation/ThreadNetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset,completion).md",
@@ -42,7 +42,7 @@
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrieveactivecredentialsfornearbynetworks(completion:)": {
       "file_path": "documentation/ThreadNetwork/thclient/retrieveactivecredentialsfornearbynetworks(completion).md",
-      "hash": "ad4b5b8899b2da22df086c6ba0c21eb0f605afbcf91d5f0e52fd9923fec04025"
+      "hash": "fc2b45f3cab97812aae9e63ce3bce4c5a93c7331671f634da7d3bf32c87f886b"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrieveallactivecredentials(_:)": {
       "file_path": "documentation/ThreadNetwork/thclient/retrieveallactivecredentials(_).md",
@@ -60,6 +60,10 @@
       "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials(forextendedpanid,completion).md",
       "hash": "9bb1d72fbffe5457b2a80b14d3b827df667cd2c9b9791eaff63f797788c5d0f3"
     },
+    "https://developer.apple.com/documentation/threadnetwork/thclient/retrievenearbynetworkcredentials(completion:)": {
+      "file_path": "documentation/ThreadNetwork/thclient/retrievenearbynetworkcredentials(completion).md",
+      "hash": "4e4611c4fcfe1c6e5a8214e0cd18275ee3dd5ec69e364ccdf3001f887a43b072"
+    },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrievepreferredcredentials(_:)": {
       "file_path": "documentation/ThreadNetwork/thclient/retrievepreferredcredentials(_).md",
       "hash": "a5f89e824ecde589039904268b423ad2b1a9052a65a03803ae545478e7fe9af4"
@@ -70,7 +74,7 @@
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials": {
       "file_path": "documentation/ThreadNetwork/thcredentials.md",
-      "hash": "4a8a5b461d3f3820bf18f1099b758d153f27f1ef41564513ea13090e704ac319"
+      "hash": "b79494d0714c52dfcf742bbc7f670b820540a54ee5a05d3ab94b34dcc8c27577"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/activeoperationaldataset": {
       "file_path": "documentation/ThreadNetwork/thcredentials/activeoperationaldataset.md",
@@ -116,9 +120,17 @@
       "file_path": "documentation/ThreadNetwork/thcredentials/pskc.md",
       "hash": "6acdced383437cf5a8db2a698c9e3b68e5afce118b07ab1cc902e6f795dacb25"
     },
+    "https://developer.apple.com/documentation/threadnetwork/thnearbynetworkcredentials": {
+      "file_path": "documentation/ThreadNetwork/thnearbynetworkcredentials.md",
+      "hash": "35f664f0c416841974279a96448f370af9958b0287cbd680491ab9fe1d67383f"
+    },
+    "https://developer.apple.com/documentation/threadnetwork/thnearbynetworkcredentials/ispreferrednetworkcredentials": {
+      "file_path": "documentation/ThreadNetwork/thnearbynetworkcredentials/ispreferrednetworkcredentials.md",
+      "hash": "e076c5758874d4f7e1b155e7f42fa0a9ff6a91de88dc66efe5e6aedc06c7282f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/ThreadNetwork.json": {
       "file_path": "documentation/ThreadNetwork/ThreadNetwork.md",
-      "hash": "c15c1435d4b5a1d8f87b35432de1e009c6553c6a0e5f6d3e068f900b768f0ccd"
+      "hash": "bb9efe448fa6c9ca677f21e1ee6b2a3fbd31609cc982b9bf481be2af66c23c2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/configuring-a-border-router.json": {
       "file_path": "documentation/ThreadNetwork/configuring-a-border-router.md",
@@ -134,7 +146,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient.json": {
       "file_path": "documentation/ThreadNetwork/thclient.md",
-      "hash": "e8211b358920d3af942dfcdf0c0115516849db5f2c34ea13642de83fb0416963"
+      "hash": "1ee2599c30c093ea835c7f479acdd368f7468b5e82676c15d72ee5f5bef26fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).json": {
       "file_path": "documentation/ThreadNetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset,completion).md",
@@ -158,7 +170,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrieveactivecredentialsfornearbynetworks(completion:).json": {
       "file_path": "documentation/ThreadNetwork/thclient/retrieveactivecredentialsfornearbynetworks(completion).md",
-      "hash": "ad4b5b8899b2da22df086c6ba0c21eb0f605afbcf91d5f0e52fd9923fec04025"
+      "hash": "fc2b45f3cab97812aae9e63ce3bce4c5a93c7331671f634da7d3bf32c87f886b"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrieveallactivecredentials(_:).json": {
       "file_path": "documentation/ThreadNetwork/thclient/retrieveallactivecredentials(_).md",
@@ -176,6 +188,10 @@
       "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials(forextendedpanid,completion).md",
       "hash": "9bb1d72fbffe5457b2a80b14d3b827df667cd2c9b9791eaff63f797788c5d0f3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrievenearbynetworkcredentials(completion:).json": {
+      "file_path": "documentation/ThreadNetwork/thclient/retrievenearbynetworkcredentials(completion).md",
+      "hash": "4e4611c4fcfe1c6e5a8214e0cd18275ee3dd5ec69e364ccdf3001f887a43b072"
+    },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrievepreferredcredentials(_:).json": {
       "file_path": "documentation/ThreadNetwork/thclient/retrievepreferredcredentials(_).md",
       "hash": "a5f89e824ecde589039904268b423ad2b1a9052a65a03803ae545478e7fe9af4"
@@ -186,7 +202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials.json": {
       "file_path": "documentation/ThreadNetwork/thcredentials.md",
-      "hash": "4a8a5b461d3f3820bf18f1099b758d153f27f1ef41564513ea13090e704ac319"
+      "hash": "b79494d0714c52dfcf742bbc7f670b820540a54ee5a05d3ab94b34dcc8c27577"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/activeoperationaldataset.json": {
       "file_path": "documentation/ThreadNetwork/thcredentials/activeoperationaldataset.md",
@@ -231,12 +247,20 @@
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/pskc.json": {
       "file_path": "documentation/ThreadNetwork/thcredentials/pskc.md",
       "hash": "6acdced383437cf5a8db2a698c9e3b68e5afce118b07ab1cc902e6f795dacb25"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thnearbynetworkcredentials.json": {
+      "file_path": "documentation/ThreadNetwork/thnearbynetworkcredentials.md",
+      "hash": "35f664f0c416841974279a96448f370af9958b0287cbd680491ab9fe1d67383f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thnearbynetworkcredentials/ispreferrednetworkcredentials.json": {
+      "file_path": "documentation/ThreadNetwork/thnearbynetworkcredentials/ispreferrednetworkcredentials.md",
+      "hash": "e076c5758874d4f7e1b155e7f42fa0a9ff6a91de88dc66efe5e6aedc06c7282f"
     }
   },
   "metadata": {
     "render": {
       "version": 4
     },
-    "total_pages": 58
+    "total_pages": 64
   }
 }

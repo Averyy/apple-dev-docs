@@ -7,8 +7,10 @@
 Establishing a network connection to the home hub failed.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

@@ -30,7 +30,7 @@ Asks the delegate to present an immersive environment.
 
 - `webView`: The web view requesting presentation.
 - `environment`: The immersive environment to present.
-- `completionHandler`: The completion handler you must invoke once the presentation transition has completed. The error argument should be used in case the presentation failed and the environment couldn’t be presented.
+- `completionHandler`: The completion handler to invoke after the presentation transition completes. Pass an error if the presentation fails; otherwise, pass `nil`.
 
 
 ---

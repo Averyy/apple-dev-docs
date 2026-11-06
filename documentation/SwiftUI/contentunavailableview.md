@@ -40,25 +40,28 @@ The system provides default `ContentUnavailableView`s that you can use in specif
 
 ```swift
 struct ContentView: View {
-    @ObservedObject private var viewModel = ContactsViewModel()
+    @State private var searchText = ""
+    @State private var searchResults: [Contact] = []
 
     var body: some View {
         NavigationStack {
             List {
-                ForEach(viewModel.searchResults) { contact in
-                    NavigationLink {
-                        ContactsView(contact)
-                    } label: {
-                        Text(contact.name)
-                    }
+                ForEach(searchResults) { contact in
+                    NavigationLink(contact.name, value: contact)
                 }
             }
+            .navigationDestination(for: Contact.self) { contact in
+                ContactsView(contact)
+            }
             .navigationTitle("Contacts")
-            .searchable(text: $viewModel.searchText)
+            .searchable(text: $searchText)
             .overlay {
-                if searchResults.isEmpty {
+                if searchResults.isEmpty && !searchText.isEmpty {
                     ContentUnavailableView.search
                 }
+            }
+            .task(id: searchText) {
+                searchResults = await Contact.fetch(searchText)
             }
         }
     }

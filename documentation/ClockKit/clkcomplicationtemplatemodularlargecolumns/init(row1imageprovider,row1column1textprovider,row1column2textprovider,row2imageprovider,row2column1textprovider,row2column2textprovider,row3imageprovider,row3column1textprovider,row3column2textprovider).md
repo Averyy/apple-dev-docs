@@ -7,7 +7,7 @@
 Creates a template that has a column of images and two columns of text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

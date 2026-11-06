@@ -438,11 +438,11 @@
     },
     "https://developer.apple.com/documentation/identitylookup/livecalleridlookupextensioncontext/serviceurl": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/serviceurl.md",
-      "hash": "6d5bbe6b9ffc4e9408123beb17dbd64c10924f22e970bb84019b6991af997f69"
+      "hash": "ad318bf34196c4fa6a696e26050b839abeb4941d17757bb9ef5ea93a9d85287a"
     },
     "https://developer.apple.com/documentation/identitylookup/livecalleridlookupextensioncontext/tokenissuerurl": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/tokenissuerurl.md",
-      "hash": "9505cea0b9c4c5dde27b2d4374cdda2b721d0e104a65776788833f5b6752535a"
+      "hash": "dee8df9d20b60d39f9477abbe11c729a79a6d1b93166d46eae1ce0007b9bf4f7"
     },
     "https://developer.apple.com/documentation/identitylookup/livecalleridlookupextensioncontext/usertiertoken": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/usertiertoken.md",
@@ -954,11 +954,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookup/livecalleridlookupextensioncontext/serviceurl.json": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/serviceurl.md",
-      "hash": "6d5bbe6b9ffc4e9408123beb17dbd64c10924f22e970bb84019b6991af997f69"
+      "hash": "ad318bf34196c4fa6a696e26050b839abeb4941d17757bb9ef5ea93a9d85287a"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookup/livecalleridlookupextensioncontext/tokenissuerurl.json": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/tokenissuerurl.md",
-      "hash": "9505cea0b9c4c5dde27b2d4374cdda2b721d0e104a65776788833f5b6752535a"
+      "hash": "dee8df9d20b60d39f9477abbe11c729a79a6d1b93166d46eae1ce0007b9bf4f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookup/livecalleridlookupextensioncontext/usertiertoken.json": {
       "file_path": "documentation/IdentityLookup/livecalleridlookupextensioncontext/usertiertoken.md",

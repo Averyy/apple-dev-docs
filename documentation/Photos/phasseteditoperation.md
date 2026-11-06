@@ -33,6 +33,9 @@ enum PHAssetEditOperation : NSInteger;
   The asset’s photo or video content can be edited.
 - [PHAssetEditOperation.properties](./phasseteditoperation/properties.md)
   The asset’s metadata properties can be edited.
+### Enumeration Cases
+- [PHAssetEditOperation.setLivePhotoVideoPlaybackEnabled](./phasseteditoperation/setlivephotovideoplaybackenabled.md)
+  Whether Live Photo video playback can be enabled or disabled for the asset.
 ### Initializers
 - [init?(rawValue: Int)](./phasseteditoperation/init%28rawvalue%29.md)
 

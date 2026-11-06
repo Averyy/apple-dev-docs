@@ -27,6 +27,15 @@ The `IdentityDocumentServicesUI` framework contains user-interface objects that 
   An object that contains details about the ISO 18013 mobile document request.
 - [struct IdentityDocumentRequestSceneBuilder](./identitydocumentrequestscenebuilder.md)
   A result builder that combines one or more `IdentityDocumentRequestScene`s into a single scene.
+### Handling raw requests
+- [struct ISO18013MobileDocumentRawRequestScene](./iso18013mobiledocumentrawrequestscene.md)
+  A scene that indicates support for the request type defined in ISO 18013.
+- [struct ISO18013MobileDocumentRawRequestContext](./iso18013mobiledocumentrawrequestcontext.md)
+  A context that contains an incoming ISO 18013 mobile document request.
+- [struct OpenID4VPRawRequestScene](./openid4vprawrequestscene.md)
+  A scene that indicates support for the request format defined in OpenID for Verifiable Presentations.
+- [struct OpenID4VPRawRequestContext](./openid4vprawrequestcontext.md)
+  A context that contains an incoming OpenID4VP request.
 ### Implementing the web presentment flow into your browser
 - [Implementing as an identity document provider](../IdentityDocumentServices/implenting-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.

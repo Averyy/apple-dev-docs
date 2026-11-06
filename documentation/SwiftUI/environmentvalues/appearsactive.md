@@ -86,7 +86,7 @@ This is bridged with `UITraitCollection.activeAppearance` for UIKit hosted conte
 - [var toolbarLabelStyle: ToolbarLabelStyle?](./toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
 - [var toolbarVerticalEdge: HorizontalEdge?](./toolbarverticaledge.md)
-  This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
+  The horizontal edge where the system places the vertical bar.
 
 
 ---

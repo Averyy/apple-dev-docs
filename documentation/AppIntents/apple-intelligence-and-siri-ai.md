@@ -7,7 +7,9 @@ Integrate your app with Apple Intelligence and bring it to Siri AI.
 
 ## Overview
 
-Apple Intelligence combines language models with your app’s actions and content to power Siri AI. It uses the app intents, app entities, and app enums you define to wrap your app’s actions and content in types the system can understand. Perform the following additional steps to make actions and content discoverable by Apple Intelligence and Siri AI:
+Apple Intelligence combines language models with your app’s actions and content to power Siri AI. It uses the app intents, app entities, and app enumerations you define to access your app’s actions, content, and skills.
+
+Perform these steps to make actions and content discoverable by Apple Intelligence and Siri AI:
 
 **Index entities to make them available in Spotlight.** Apple Intelligence uses the semantic search capabilities of Spotlight to find your app’s content, even when someone describes it vaguely.
 
@@ -21,6 +23,9 @@ Apple Intelligence combines language models with your app’s actions and conten
 
 ## Topics
 
+### Siri AI Developer Preview
+- [Siri AI Developer Preview](./siri-ai-developer-preview.md)
+  Bring custom actions and content to Siri AI.
 ### Content
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
   Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.

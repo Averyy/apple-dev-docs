@@ -7,13 +7,13 @@
 Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2
-- iPadOS 2.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- macOS 10.0+ - Deprecated in 27.2
-- tvOS 9.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- iOS 2.0+ - Deprecated in 27.3
+- iPadOS 2.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- macOS 10.0+ - Deprecated in 27.3
+- tvOS 9.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use To handle errors when seeking to the end of the file, use [`seekToEnd()`](./seektoend%28%29.md) in Swift and  [`seekToEndReturningOffset:error:`](../nsfilehandle/seektoendreturningoffset_error_.md) in Objective-C.
 

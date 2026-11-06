@@ -38,6 +38,10 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [EndpointSecurity Enumerations](./endpointsecurity-enumerations.md)
 ### Structures
 - [struct es_bootstrap_target_type_t](./es_bootstrap_target_type_t.md)
+- [struct es_coalition_info_t](./es_coalition_info_t.md)
+- [struct es_coalition_jetsam_t](./es_coalition_jetsam_t.md)
+- [struct es_coalition_task_role_t](./es_coalition_task_role_t.md)
+  es_coalition_task_role_t
 - [struct es_cs_validation_category_t](./es_cs_validation_category_t.md)
   es_cs_validation_category
 - [struct es_deadline_miss_mode_t](./es_deadline_miss_mode_t.md)
@@ -56,6 +60,14 @@ Develop your system extension with Endpoint Security and package it in an app th
 ### Variables
 - [var ES_BOOTSTRAP_TARGET_TYPE_JOB: es_bootstrap_target_type_t](./es_bootstrap_target_type_job.md)
 - [var ES_BOOTSTRAP_TARGET_TYPE_PROCESS: es_bootstrap_target_type_t](./es_bootstrap_target_type_process.md)
+- [var ES_COALITION_TASK_ROLE_EXT: es_coalition_task_role_t](./es_coalition_task_role_ext.md)
+  The task is an extension within its jetsam coalition
+- [var ES_COALITION_TASK_ROLE_LEADER: es_coalition_task_role_t](./es_coalition_task_role_leader.md)
+  The task is the leader (e.g. the application) of its jetsam coalition
+- [var ES_COALITION_TASK_ROLE_UNDEF: es_coalition_task_role_t](./es_coalition_task_role_undef.md)
+  The task has no specific role within its jetsam coalition
+- [var ES_COALITION_TASK_ROLE_XPC: es_coalition_task_role_t](./es_coalition_task_role_xpc.md)
+  The task is an XPC service within its jetsam coalition
 - [var ES_CS_VALIDATION_CATEGORY_APP_STORE: es_cs_validation_category_t](./es_cs_validation_category_app_store.md)
 - [var ES_CS_VALIDATION_CATEGORY_DEVELOPER_ID: es_cs_validation_category_t](./es_cs_validation_category_developer_id.md)
 - [var ES_CS_VALIDATION_CATEGORY_DEVELOPMENT: es_cs_validation_category_t](./es_cs_validation_category_development.md)

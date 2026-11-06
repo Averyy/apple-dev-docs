@@ -35,6 +35,7 @@ This setting has no visible effect unless the border width is larger than the de
 ### Working with color
 - [var backgroundColor: NSColor?](./backgroundcolor.md)
   The background color of the text block.
+- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 - [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
 
 

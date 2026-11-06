@@ -10,6 +10,8 @@ An object that groups the cameras a coordinator tracks by the direction they fac
 - iOS 27.1+
 - iPadOS 27.1+
 - Mac Catalyst 27.1+
+- tvOS 27.3+ (Beta)
+- visionOS 27.3+ (Beta)
 
 ## Declaration
 

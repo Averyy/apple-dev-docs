@@ -52,21 +52,26 @@ You must sign every Snapshot URL request and include the signature as the final 
   center=auto
   ```
 
-  If you specify `center=”auto”`, the Web Map Snapshot API returns a map that includes all overlays or annotations. The API requires `annotations` or `overlays` when you use `center=”auto”`.
-- `z` (float): The zoom level of the map.
+  If you specify `center=auto`, the Maps Web Snapshots API returns a map that includes all overlays or annotations. The API requires `annotations` or `overlays` when you use `center=auto`.
+- `spn` (string): A comma-separated coordinate span that indicates how much of the map Maps Web Snapshots API displays around the map’s center. The latitude needs to be in the range of `(0, 90)`, and the longitude needs to be in the range `(0, 180)`. The latitude and longitude delta parameters need to be positive numbers; the API treats negative numbers as `0`.
 
-  The Web Map Snapshot API ignores the `z` parameter when you specify `auto` for the `center` parameter, or when you specify both `spn` and `z` parameters.
+  The Maps Web Snapshots API ignores the `spn` parameter if you specify `auto` for the `center` parameter. If you provide `spn` together with `cameraDistance` or `z`, the value of `spn` takes precedence.
+- `cameraDistance` (number): The distance in meters from the camera to the center of the map. The value must be greater than `0`.
+
+  The Maps Web Snapshots API ignores the `cameraDistance` parameter if you specify `auto` for the `center` parameter, or if you provide the `spn` parameter.
+
+  **Minimum (exclusive)**: `0`
+- `z` (number): The zoom level of the map.
+
+  The Maps Web Snapshots API ignores the `z` parameter if you specify `auto` for the `center` parameter, or if you provide the `spn` or `cameraDistance` parameter.
 
   **Default**: `12`; **Minimum**: `3`; **Maximum**: `20`
-- `spn` (string): A comma-separated coordinate span that indicates how much of the map Web Map Snapshots API displays around the map’s center. The latitude must be in the range of `(0, 90)`, and the longitude must be in the range `(0, 180)`. The latitude and longitude delta parameters must be positive numbers; the API treats negative numbers as `0`.
-
-  The Web Map Snapshot API ignores the `spn` parameter if you specify `auto` for the `center` parameter. If you provide both `z` and `spn` parameters, the value for `spn` takes precedence over `z`.
 - `size` (string): The size of the image in pixels. Specify the `size` as width and height integers separated by the character `x`. For example, `640x480` creates an image 640 pixels wide and 480 pixels tall.
 
   The width and height must be within the range of `[50, 640]`.
 
   **Default**: `600x400`
-- `scale` (int32): The pixel density of the image. `scale=2` returns an image intended for 2x Retina displays. Setting `scale` to values greater than `1` increases the number of pixels in the generated image.
+- `scale` (integer): The pixel density of the image. `scale=2` returns an image intended for 2x Retina displays. Setting `scale` to values greater than `1` increases the number of pixels in the generated image.
 
   **Default**: `1`; **Minimum**: `1`; **Maximum**: `3`; **Allowed Values**: `1`, `2`, `3`
 - `t` (string): The map type.
@@ -86,7 +91,7 @@ You must sign every Snapshot URL request and include the signature as the final 
 - `overlayStyles` ([OverlayStyle]): A JSON array of overlay styles. This object allows you to reuse style values on different overlays.
 - `imgs` ([Image]): An array of custom images to annotate the map, specified as an array of JSON [`Image`](./image.md) objects.
 - `referer` (string): **Only use this parameter if you don’t provide a token parameter.** The `referer` string value to match against the request’s `Referer` header value. Requests that don’t match the `referer` parameter fail with HTTP status code `401 Unauthorized`. Set a referrer restriction through the `referer` parameter.
-- `expires` (int64): **Only use this parameter if you don’t provide a token parameter.** The time in seconds from epoch at which the request expires. Expired requests fail with HTTP status code `401 Unauthorized`. Set an expiration through the `expires` parameter.
+- `expires` (integer): **Only use this parameter if you don’t provide a token parameter.** The time in seconds from epoch at which the request expires. Expired requests fail with HTTP status code `401 Unauthorized`. Set an expiration through the `expires` parameter.
 - `token` (string): A developer’s Maps token. For information on how to create a Maps token, see [Creating a Maps token](../MapKitJS/creating-a-maps-token.md).
 
 ## Responses
@@ -96,7 +101,7 @@ You must sign every Snapshot URL request and include the signature as the final 
 - `401` Unauthorized (`application/json`): This request contains invalid authorization credentials.
 - `413` Request Entity Too Large (`application/json`): The URL for this request exceeds the maximum number of characters allowed.
 - `429` (`application/json`): You exceeded the rate limit for your API key. You need to wait and try the request again.
-- `500` Internal Server Error (`application/json`): The request failed. This may be due to a temporary outage. Check the [Apple Developer System Status Page](https://developer.apple.com/system-status/) for up-to-date information on the Web Map Snapshot API.
+- `500` Internal Server Error (`application/json`): The request failed. This may be due to a temporary outage. Check the [Apple Developer System Status Page](https://developer.apple.com/system-status/) for up-to-date information on the Maps Web Snapshots API.
 
 ## See Also
 

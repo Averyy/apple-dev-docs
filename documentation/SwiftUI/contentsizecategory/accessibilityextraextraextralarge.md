@@ -5,13 +5,13 @@
 **Role**: Case
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- macOS 10.15+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- iOS 13.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- macOS 10.15+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: DynamicTypeSize)
 
 ## Declaration
 

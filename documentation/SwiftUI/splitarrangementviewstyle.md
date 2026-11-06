@@ -30,6 +30,18 @@ A split arrangement view keeps its primary and secondary views in separate space
 - In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
 - When someone is holding a closed iPhone Duo in landscape orientation, the split arrangement only shows the primary view.
 
+**Portrait**:
+
+![A fully open iPhone Duo in portrait orientation showing an arrangement view. The primary view fills the top half of the display, and the secondary view fills the bottom half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-6@2x.png)
+
+**Landscape open or folded**:
+
+![A folded iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the left half of the display, and the secondary view fills the right half.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-7@2x.png)
+
+**Landscape closed**:
+
+![A closed iPhone Duo in landscape orientation showing an arrangement view. The primary view fills the entire visible display.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ArrangementView-8@2x.png)
+
 Create a split arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`split`](./arrangementviewstyle/split.md), as the following example shows:
 
 ```swift

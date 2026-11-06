@@ -203,7 +203,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var toolbarLabelStyle: ToolbarLabelStyle?](./environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
 - [var toolbarVerticalEdge: HorizontalEdge?](./environmentvalues/toolbarverticaledge.md)
-  This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
+  The horizontal edge where the system places the vertical bar.
 ### Global objects
 - [var calendar: Calendar](./environmentvalues/calendar.md)
   The current calendar that views should use when handling dates.
@@ -361,6 +361,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var fontResolutionContext: Font.Context](./environmentvalues/fontresolutioncontext.md)
   Information used to resolve a font.
 - [var homeContext: HomeContext?](./environmentvalues/homecontext.md)
+  The context that the Home app provides to your extension’s views.
 - [var imagePlaygroundAllowedGenerationStyles: [ImagePlaygroundStyle]](./environmentvalues/imageplaygroundallowedgenerationstyles.md)
 - [var imagePlaygroundOptions: ImagePlaygroundOptions](./environmentvalues/imageplaygroundoptions.md)
 - [var imagePlaygroundSelectedGenerationStyle: ImagePlaygroundStyle](./environmentvalues/imageplaygroundselectedgenerationstyle.md)

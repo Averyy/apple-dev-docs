@@ -10,6 +10,10 @@ Create and customize a collaboration view to manage the shared content actions.
 ### Collaboration views
 - [class SWCollaborationView](./swcollaborationview.md)
   A view that contains the collaboration content and options.
+- [class SWCollaborationBarButtonItem](./swcollaborationbarbuttonitem.md)
+  A bar button item that presents collaboration content and options.
+- [class SWCollaborationToolbarItem](./swcollaborationtoolbaritem.md)
+  A toolbar button that presents collaboration content and options.
 ### Collaboration attributes
 - [class SWCollaborationHighlight](./swcollaborationhighlight.md)
   A highlight object that represents an active collaboration.

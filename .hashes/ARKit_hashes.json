@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/ARKit": {
       "file_path": "documentation/ARKit/ARKit.md",
-      "hash": "6fd56c4ce733328019f1309974921ddf6e3de3581b32549204f92e8daf93c010"
+      "hash": "c2b313738333e9fa9a686298d56830bb4d1db588371fc6801212678338347493"
     },
     "https://developer.apple.com/documentation/arkit/accessory": {
       "file_path": "documentation/ARKit/accessory.md",
@@ -5362,7 +5362,7 @@
     },
     "https://developer.apple.com/documentation/arkit/argeotrackingconfiguration/detectionobjects": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/detectionobjects.md",
-      "hash": "7d84c2d0ff746e6ada93b06f1cb5e7bce39e3f6f7f8523dcbb062a85ab8a0869"
+      "hash": "566f3e5527d087869685eecd2edd805627f741601d50546c95f5b993bf1b3b01"
     },
     "https://developer.apple.com/documentation/arkit/argeotrackingconfiguration/environmenttexturing": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/environmenttexturing.md",
@@ -5390,7 +5390,7 @@
     },
     "https://developer.apple.com/documentation/arkit/argeotrackingconfiguration/trackingobjects": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/trackingobjects.md",
-      "hash": "48281ea9fcc5e1466f29861a761213b88b8491b37cefb797d588a9c7b4e83fba"
+      "hash": "2aa3a8c5d4f993f7e47546ad9f5c352f1f307d76c04b4cce8caea496ea2404ca"
     },
     "https://developer.apple.com/documentation/arkit/argeotrackingconfiguration/wantshdrenvironmenttextures": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/wantshdrenvironmenttextures.md",
@@ -5938,7 +5938,7 @@
     },
     "https://developer.apple.com/documentation/arkit/arobjectanchor": {
       "file_path": "documentation/ARKit/arobjectanchor.md",
-      "hash": "da620634a6e0ce4999b16c554ee79a0b60fca9d495c428d93d5ae8fd86af8750"
+      "hash": "79bedf7370987689fc2638e7e76012bf406dab8c43660767174e89521cf2d636"
     },
     "https://developer.apple.com/documentation/arkit/arobjectanchor/istracked": {
       "file_path": "documentation/ARKit/arobjectanchor/istracked.md",
@@ -5946,11 +5946,11 @@
     },
     "https://developer.apple.com/documentation/arkit/arobjectanchor/referenceobject": {
       "file_path": "documentation/ARKit/arobjectanchor/referenceobject.md",
-      "hash": "eea3cb43fd0964541027fd2f4de6ed52273278667ca16fc44c91e1fba2673178"
+      "hash": "343bc02e69999215858bf4096ce0dd37e16a8b67ca70fc7cb279d5a1ea0e12a2"
     },
     "https://developer.apple.com/documentation/arkit/arobjectscanningconfiguration": {
       "file_path": "documentation/ARKit/arobjectscanningconfiguration.md",
-      "hash": "b17936580299a92835af0d250cd8bd68aa848b2a1cbbf7395a588c933bca051b"
+      "hash": "81bf9a72f809207fc4487fe97c85dd5cc0bbdcccbb6aff529548795df52962d0"
     },
     "https://developer.apple.com/documentation/arkit/arobjectscanningconfiguration/init()": {
       "file_path": "documentation/ARKit/arobjectscanningconfiguration/init().md",
@@ -6410,63 +6410,63 @@
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject": {
       "file_path": "documentation/ARKit/arreferenceobject.md",
-      "hash": "010a688ed88740509d908df7f6859e0dcf7fd4466f4c426c299f3ca78c8f1799"
+      "hash": "bf1727765bd38f4b1447ed5f375a4d2198823b7c941b62103f110be0f2ffcd2e"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/applyingtransform(_:)": {
       "file_path": "documentation/ARKit/arreferenceobject/applyingtransform(_).md",
-      "hash": "12842d8fd06d7b752380fd9f7759751b32a5fd33cd0b577e9a372285063e6d0e"
+      "hash": "4ff87a61fcc2c8d0f7202f551a4d5c61f1214b4f8fabfc91e72cc516e5341ab3"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/archiveextension": {
       "file_path": "documentation/ARKit/arreferenceobject/archiveextension.md",
-      "hash": "ffdcb15d758d8681d7164b38c65a2c9bb067ee40771b91475e13f822c8a4c490"
+      "hash": "f0ce0a0f9c3bb9b0534f07089f7d7129cbc0df6f63f52e6c40e4b960708d67b8"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/center": {
       "file_path": "documentation/ARKit/arreferenceobject/center.md",
-      "hash": "6dfc73d5c97fd14e891dfb734399b3f25f5a966cb881841fc0e9f18802b847ad"
+      "hash": "abc5609e4b12b8e04d752a88f080336c613b6eff409a95cd498db8e32af166c1"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/export(to:previewimage:)": {
       "file_path": "documentation/ARKit/arreferenceobject/export(to,previewimage).md",
-      "hash": "71f8393dfb91c32661b10d2361582e778e2ec069430bb85d788c1ac7219a1f4a"
+      "hash": "55b037bda6d173c05562c1cb0e61952cfb55d4a0894fb67aa7524cbed855dd02"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/extent": {
       "file_path": "documentation/ARKit/arreferenceobject/extent.md",
-      "hash": "1e7e7af80b1d8a3d2137f2c05793be22fa84468215b3e0b7011cd30f32fadecc"
+      "hash": "54d302fe77b2c5ee1975b05a532ff06d627b247508af664556a10c9966c926da"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/init(archiveurl:)": {
       "file_path": "documentation/ARKit/arreferenceobject/init(archiveurl).md",
-      "hash": "1bb6588e9cf6141d0a3b1cb012711fb27124c0078bdd732cfcdb2a9ab8d01ea2"
+      "hash": "21aad2f55c216ab151f376a52f969aebc47f512a32abb1569ab79808308e18f3"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/init(coder:)": {
       "file_path": "documentation/ARKit/arreferenceobject/init(coder).md",
-      "hash": "f3891e681a3e6904a8608352c0e30eaed547e174daa6be590077138507cc8190"
+      "hash": "9517956fe2c850e20b282b5d7ee442b099ca62d2384cde3279af99a1cdff6c03"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/merging(_:)": {
       "file_path": "documentation/ARKit/arreferenceobject/merging(_).md",
-      "hash": "7c9ef83a4286fc12f1abcd2fada14abba2b9d8880be89e92d753ffe41340e6db"
+      "hash": "8cef3cf376503d3c75b6eb2c64374472d0827bfc33ab4aa0918769e2add9a659"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/name": {
       "file_path": "documentation/ARKit/arreferenceobject/name.md",
-      "hash": "20761df1277c68c03195d67e26fb92317983dcea3e1cd1210c5fdd16380c993f"
+      "hash": "ddef96291d36043c820c92934c1a866ddefe6b07d935cbbf5c804f531abb4002"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/rawfeaturepoints": {
       "file_path": "documentation/ARKit/arreferenceobject/rawfeaturepoints.md",
-      "hash": "2f8f61ae08fe318bdfcf369ea17b8f687b312fb90aa7e11c820e6d364cafa461"
+      "hash": "8539866bf11119d9de997473fa5945a2cba1584326c64e7316502af732cacd00"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/referenceobjects(ingroupnamed:bundle:)": {
       "file_path": "documentation/ARKit/arreferenceobject/referenceobjects(ingroupnamed,bundle).md",
-      "hash": "3ac48c116515081839766073b134d8d05e082a8a738a54e71f91a2d28473a857"
+      "hash": "956391e705010aea3579f7e80ca9c29bc34753cc4fedc1ca2ca84258ed2dae59"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/resourcegroupname": {
       "file_path": "documentation/ARKit/arreferenceobject/resourcegroupname.md",
-      "hash": "658b08ab33a6528affbbe192f412ed71f7b2fdaf4fcf76bda349b3855a095d88"
+      "hash": "d733eab9e7d49136fd711e5f62048f7d455c993870e981764380edde25db8852"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/scale": {
       "file_path": "documentation/ARKit/arreferenceobject/scale.md",
-      "hash": "ddc84a01f6a641f6c9d4c42daf3b2c57c9fb3e3cc5778b7bcfa3ffb257a31b37"
+      "hash": "b9afb844ff92601a0fa59505be81825ec67e860e0b2558ea697cf5dabbf50e9d"
     },
     "https://developer.apple.com/documentation/arkit/arreferenceobject/usdzfile": {
       "file_path": "documentation/ARKit/arreferenceobject/usdzfile.md",
-      "hash": "9609f5f5fc1f4ff88fd204333378d7ff3d200ee7f319f880bcaf3fec2ff38c47"
+      "hash": "a1905bf42c5b2d76612e6d5962b1654c003ee3692e00497da95c1396c99f8ed0"
     },
     "https://developer.apple.com/documentation/arkit/arscenereconstruction/arscenereconstructionnone": {
       "file_path": "documentation/ARKit/arscenereconstruction/arscenereconstructionnone.md",
@@ -6642,7 +6642,7 @@
     },
     "https://developer.apple.com/documentation/arkit/arsession/createreferenceobject(transform:center:extent:completionhandler:)": {
       "file_path": "documentation/ARKit/arsession/createreferenceobject(transform,center,extent,completionhandler).md",
-      "hash": "25ae3050c271b3e432a64d15c54cb21a6da2ab3328f7a7cf5ff32c22ecd25b99"
+      "hash": "29bf5776dff5061501b4afe0cdf2083bc8873384f55f59a0e484122883dbc0e3"
     },
     "https://developer.apple.com/documentation/arkit/arsession/currentframe": {
       "file_path": "documentation/ARKit/arsession/currentframe.md",
@@ -7106,7 +7106,7 @@
     },
     "https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/detectionobjects": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/detectionobjects.md",
-      "hash": "4a70635f9e38f182cef2d4f1baf9967fb4cc552644bdc44a24832f28552e97ba"
+      "hash": "41dbb63e05d609be84c24633da4abcffadb47fa1d17a49995280f2a0a874a9d2"
     },
     "https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/environmenttexturing-swift.enum": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/environmenttexturing-swift.enum.md",
@@ -7194,7 +7194,7 @@
     },
     "https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/trackingobjects": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/trackingobjects.md",
-      "hash": "b03d948cb8f0de162e6208409f5f8fee06647f86272ae032548842c268b1d0fa"
+      "hash": "f9e94aa4a86cfe379259180fb94c9757ab3b794139866dcf1c2e87bc18426605"
     },
     "https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/userfacetrackingenabled": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/userfacetrackingenabled.md",
@@ -7782,7 +7782,7 @@
     },
     "https://developer.apple.com/documentation/arkit/content-anchors": {
       "file_path": "documentation/ARKit/content-anchors.md",
-      "hash": "9b506a90b9a1e49eba3dfafc7874014bc4045f2e2e02a2cc49443d19f225c87d"
+      "hash": "d09ddddeb44a1e6130d2a873b090adf6b310b3e7395375052aa62636ae3939b3"
     },
     "https://developer.apple.com/documentation/arkit/creating-a-collaborative-session": {
       "file_path": "documentation/ARKit/creating-a-collaborative-session.md",
@@ -9666,7 +9666,7 @@
     },
     "https://developer.apple.com/documentation/arkit/scanning-and-detecting-3d-objects": {
       "file_path": "documentation/ARKit/scanning-and-detecting-3d-objects.md",
-      "hash": "38c82c59bc223c8af7067dd9c86fc0e85736fc2b6b3292cec5bea4afc8808080"
+      "hash": "170260cce53c1714ccb514f231ee671274d148ffdb8497cf10ccb343f13a6562"
     },
     "https://developer.apple.com/documentation/arkit/scenereconstructionprovider": {
       "file_path": "documentation/ARKit/scenereconstructionprovider.md",
@@ -10218,7 +10218,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ARKit.json": {
       "file_path": "documentation/ARKit/ARKit.md",
-      "hash": "6fd56c4ce733328019f1309974921ddf6e3de3581b32549204f92e8daf93c010"
+      "hash": "c2b313738333e9fa9a686298d56830bb4d1db588371fc6801212678338347493"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/accessory.json": {
       "file_path": "documentation/ARKit/accessory.md",
@@ -15578,7 +15578,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/argeotrackingconfiguration/detectionobjects.json": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/detectionobjects.md",
-      "hash": "7d84c2d0ff746e6ada93b06f1cb5e7bce39e3f6f7f8523dcbb062a85ab8a0869"
+      "hash": "566f3e5527d087869685eecd2edd805627f741601d50546c95f5b993bf1b3b01"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/argeotrackingconfiguration/environmenttexturing.json": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/environmenttexturing.md",
@@ -15606,7 +15606,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/argeotrackingconfiguration/trackingobjects.json": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/trackingobjects.md",
-      "hash": "48281ea9fcc5e1466f29861a761213b88b8491b37cefb797d588a9c7b4e83fba"
+      "hash": "2aa3a8c5d4f993f7e47546ad9f5c352f1f307d76c04b4cce8caea496ea2404ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/argeotrackingconfiguration/wantshdrenvironmenttextures.json": {
       "file_path": "documentation/ARKit/argeotrackingconfiguration/wantshdrenvironmenttextures.md",
@@ -16154,7 +16154,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arobjectanchor.json": {
       "file_path": "documentation/ARKit/arobjectanchor.md",
-      "hash": "da620634a6e0ce4999b16c554ee79a0b60fca9d495c428d93d5ae8fd86af8750"
+      "hash": "79bedf7370987689fc2638e7e76012bf406dab8c43660767174e89521cf2d636"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arobjectanchor/istracked.json": {
       "file_path": "documentation/ARKit/arobjectanchor/istracked.md",
@@ -16162,11 +16162,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arobjectanchor/referenceobject.json": {
       "file_path": "documentation/ARKit/arobjectanchor/referenceobject.md",
-      "hash": "eea3cb43fd0964541027fd2f4de6ed52273278667ca16fc44c91e1fba2673178"
+      "hash": "343bc02e69999215858bf4096ce0dd37e16a8b67ca70fc7cb279d5a1ea0e12a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arobjectscanningconfiguration.json": {
       "file_path": "documentation/ARKit/arobjectscanningconfiguration.md",
-      "hash": "b17936580299a92835af0d250cd8bd68aa848b2a1cbbf7395a588c933bca051b"
+      "hash": "81bf9a72f809207fc4487fe97c85dd5cc0bbdcccbb6aff529548795df52962d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arobjectscanningconfiguration/init().json": {
       "file_path": "documentation/ARKit/arobjectscanningconfiguration/init().md",
@@ -16626,63 +16626,63 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject.json": {
       "file_path": "documentation/ARKit/arreferenceobject.md",
-      "hash": "010a688ed88740509d908df7f6859e0dcf7fd4466f4c426c299f3ca78c8f1799"
+      "hash": "bf1727765bd38f4b1447ed5f375a4d2198823b7c941b62103f110be0f2ffcd2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/applyingtransform(_:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/applyingtransform(_).md",
-      "hash": "12842d8fd06d7b752380fd9f7759751b32a5fd33cd0b577e9a372285063e6d0e"
+      "hash": "4ff87a61fcc2c8d0f7202f551a4d5c61f1214b4f8fabfc91e72cc516e5341ab3"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/archiveextension.json": {
       "file_path": "documentation/ARKit/arreferenceobject/archiveextension.md",
-      "hash": "ffdcb15d758d8681d7164b38c65a2c9bb067ee40771b91475e13f822c8a4c490"
+      "hash": "f0ce0a0f9c3bb9b0534f07089f7d7129cbc0df6f63f52e6c40e4b960708d67b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/center.json": {
       "file_path": "documentation/ARKit/arreferenceobject/center.md",
-      "hash": "6dfc73d5c97fd14e891dfb734399b3f25f5a966cb881841fc0e9f18802b847ad"
+      "hash": "abc5609e4b12b8e04d752a88f080336c613b6eff409a95cd498db8e32af166c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/export(to:previewimage:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/export(to,previewimage).md",
-      "hash": "71f8393dfb91c32661b10d2361582e778e2ec069430bb85d788c1ac7219a1f4a"
+      "hash": "55b037bda6d173c05562c1cb0e61952cfb55d4a0894fb67aa7524cbed855dd02"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/extent.json": {
       "file_path": "documentation/ARKit/arreferenceobject/extent.md",
-      "hash": "1e7e7af80b1d8a3d2137f2c05793be22fa84468215b3e0b7011cd30f32fadecc"
+      "hash": "54d302fe77b2c5ee1975b05a532ff06d627b247508af664556a10c9966c926da"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/init(archiveurl:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/init(archiveurl).md",
-      "hash": "1bb6588e9cf6141d0a3b1cb012711fb27124c0078bdd732cfcdb2a9ab8d01ea2"
+      "hash": "21aad2f55c216ab151f376a52f969aebc47f512a32abb1569ab79808308e18f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/init(coder:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/init(coder).md",
-      "hash": "f3891e681a3e6904a8608352c0e30eaed547e174daa6be590077138507cc8190"
+      "hash": "9517956fe2c850e20b282b5d7ee442b099ca62d2384cde3279af99a1cdff6c03"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/merging(_:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/merging(_).md",
-      "hash": "7c9ef83a4286fc12f1abcd2fada14abba2b9d8880be89e92d753ffe41340e6db"
+      "hash": "8cef3cf376503d3c75b6eb2c64374472d0827bfc33ab4aa0918769e2add9a659"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/name.json": {
       "file_path": "documentation/ARKit/arreferenceobject/name.md",
-      "hash": "20761df1277c68c03195d67e26fb92317983dcea3e1cd1210c5fdd16380c993f"
+      "hash": "ddef96291d36043c820c92934c1a866ddefe6b07d935cbbf5c804f531abb4002"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/rawfeaturepoints.json": {
       "file_path": "documentation/ARKit/arreferenceobject/rawfeaturepoints.md",
-      "hash": "2f8f61ae08fe318bdfcf369ea17b8f687b312fb90aa7e11c820e6d364cafa461"
+      "hash": "8539866bf11119d9de997473fa5945a2cba1584326c64e7316502af732cacd00"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/referenceobjects(ingroupnamed:bundle:).json": {
       "file_path": "documentation/ARKit/arreferenceobject/referenceobjects(ingroupnamed,bundle).md",
-      "hash": "3ac48c116515081839766073b134d8d05e082a8a738a54e71f91a2d28473a857"
+      "hash": "956391e705010aea3579f7e80ca9c29bc34753cc4fedc1ca2ca84258ed2dae59"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/resourcegroupname.json": {
       "file_path": "documentation/ARKit/arreferenceobject/resourcegroupname.md",
-      "hash": "658b08ab33a6528affbbe192f412ed71f7b2fdaf4fcf76bda349b3855a095d88"
+      "hash": "d733eab9e7d49136fd711e5f62048f7d455c993870e981764380edde25db8852"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/scale.json": {
       "file_path": "documentation/ARKit/arreferenceobject/scale.md",
-      "hash": "ddc84a01f6a641f6c9d4c42daf3b2c57c9fb3e3cc5778b7bcfa3ffb257a31b37"
+      "hash": "b9afb844ff92601a0fa59505be81825ec67e860e0b2558ea697cf5dabbf50e9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arreferenceobject/usdzfile.json": {
       "file_path": "documentation/ARKit/arreferenceobject/usdzfile.md",
-      "hash": "9609f5f5fc1f4ff88fd204333378d7ff3d200ee7f319f880bcaf3fec2ff38c47"
+      "hash": "a1905bf42c5b2d76612e6d5962b1654c003ee3692e00497da95c1396c99f8ed0"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arscenereconstruction/arscenereconstructionnone.json": {
       "file_path": "documentation/ARKit/arscenereconstruction/arscenereconstructionnone.md",
@@ -16858,7 +16858,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arsession/createreferenceobject(transform:center:extent:completionhandler:).json": {
       "file_path": "documentation/ARKit/arsession/createreferenceobject(transform,center,extent,completionhandler).md",
-      "hash": "25ae3050c271b3e432a64d15c54cb21a6da2ab3328f7a7cf5ff32c22ecd25b99"
+      "hash": "29bf5776dff5061501b4afe0cdf2083bc8873384f55f59a0e484122883dbc0e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arsession/currentframe.json": {
       "file_path": "documentation/ARKit/arsession/currentframe.md",
@@ -17322,7 +17322,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arworldtrackingconfiguration/detectionobjects.json": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/detectionobjects.md",
-      "hash": "4a70635f9e38f182cef2d4f1baf9967fb4cc552644bdc44a24832f28552e97ba"
+      "hash": "41dbb63e05d609be84c24633da4abcffadb47fa1d17a49995280f2a0a874a9d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arworldtrackingconfiguration/environmenttexturing-swift.enum.json": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/environmenttexturing-swift.enum.md",
@@ -17410,7 +17410,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arworldtrackingconfiguration/trackingobjects.json": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/trackingobjects.md",
-      "hash": "b03d948cb8f0de162e6208409f5f8fee06647f86272ae032548842c268b1d0fa"
+      "hash": "f9e94aa4a86cfe379259180fb94c9757ab3b794139866dcf1c2e87bc18426605"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arworldtrackingconfiguration/userfacetrackingenabled.json": {
       "file_path": "documentation/ARKit/arworldtrackingconfiguration/userfacetrackingenabled.md",
@@ -17998,7 +17998,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/content-anchors.json": {
       "file_path": "documentation/ARKit/content-anchors.md",
-      "hash": "9b506a90b9a1e49eba3dfafc7874014bc4045f2e2e02a2cc49443d19f225c87d"
+      "hash": "d09ddddeb44a1e6130d2a873b090adf6b310b3e7395375052aa62636ae3939b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/creating-a-collaborative-session.json": {
       "file_path": "documentation/ARKit/creating-a-collaborative-session.md",
@@ -19882,7 +19882,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/scanning-and-detecting-3d-objects.json": {
       "file_path": "documentation/ARKit/scanning-and-detecting-3d-objects.md",
-      "hash": "38c82c59bc223c8af7067dd9c86fc0e85736fc2b6b3292cec5bea4afc8808080"
+      "hash": "170260cce53c1714ccb514f231ee671274d148ffdb8497cf10ccb343f13a6562"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/scenereconstructionprovider.json": {
       "file_path": "documentation/ARKit/scenereconstructionprovider.md",

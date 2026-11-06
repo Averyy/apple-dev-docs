@@ -7,13 +7,13 @@
 A default set of effect options that prefers to repeat indefinitely.
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- iPadOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- Mac Catalyst 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- macOS 14.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- tvOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
-- watchOS 10.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- iOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- iPadOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- Mac Catalyst 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- macOS 14.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- tvOS 17.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
+- watchOS 10.0+ - Deprecated in 27.3 (renamed: SymbolEffectOptions.RepeatBehavior.periodic)
 
 ## Declaration
 

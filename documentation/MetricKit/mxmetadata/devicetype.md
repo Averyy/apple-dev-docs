@@ -7,11 +7,11 @@
 The hardware identifier for the device.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2
-- iPadOS 13.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3
+- iPadOS 13.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 12.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`deviceType`](../metricreport/environment-swift.struct/devicetype.md) or [`deviceType`](../diagnosticreport/environment-swift.struct/devicetype.md) instead.
 

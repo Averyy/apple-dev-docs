@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates an app intent entity property.  Do not call this directly, use @Property
+Creates an app intent entity property.  Do not call this directly, use @DeferredProperty
 
 **Availability**:
 - iOS 27.0+
@@ -26,7 +26,7 @@ Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable
 - `identifier`: The identifier of the property
 - `title`: A word or short phrase summarizing this property.
 - `indexingKey`: A Spotlight attribute set key mapping for this property.
-- `asyncGetter`: The getter reference for the property
+- `asyncGetter`: The async getter for the property
 
 
 ---

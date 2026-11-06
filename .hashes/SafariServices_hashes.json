@@ -318,7 +318,7 @@
     },
     "https://developer.apple.com/documentation/safariservices/sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler:)": {
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler).md",
-      "hash": "a8bbad56b0e3a4b885f5fc80f2903d55f33563613a0353b85751a45eea1cd578"
+      "hash": "abe3131c60539ef80c72a509ceaf20d63bce5b088c20f74438151ae24eb44f2a"
     },
     "https://developer.apple.com/documentation/safariservices/sfaddtohomescreenactivityitem/iconitemprovider": {
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/iconitemprovider.md",
@@ -1438,7 +1438,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler:).json": {
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler).md",
-      "hash": "a8bbad56b0e3a4b885f5fc80f2903d55f33563613a0353b85751a45eea1cd578"
+      "hash": "abe3131c60539ef80c72a509ceaf20d63bce5b088c20f74438151ae24eb44f2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem/iconitemprovider.json": {
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem/iconitemprovider.md",

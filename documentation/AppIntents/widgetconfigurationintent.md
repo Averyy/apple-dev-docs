@@ -20,6 +20,10 @@ An interface for configuring a WidgetKit widget.
 protocol WidgetConfigurationIntent : AppIntent
 ```
 
+## Mentions
+
+- [Bringing custom actions and content to Siri](./bringing-custom-actions-and-content-to-siri.md)
+
 ## Overview
 
 The parameters of the intent define the configuration options for your widget. The system uses the intent’s title and description for the display name and description of the widget if those values aren’t set explicitly on the [`AppIntentConfiguration`](../WidgetKit/appintentconfiguration.md).

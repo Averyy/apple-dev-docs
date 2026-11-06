@@ -7,10 +7,10 @@
 Sets the visibility of the status bar.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: statusBarHidden(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: statusBarHidden(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: statusBarHidden(_:))
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 13.0+ - Deprecated in 27.3 (renamed: statusBarHidden(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: statusBarHidden(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: statusBarHidden(_:))
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`statusBarHidden(_:)`](./statusbarhidden%28_%29.md) instead.
 

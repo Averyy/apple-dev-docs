@@ -27,12 +27,6 @@ A layout fragment for the location, or `nil` to use the default.
 
 The delegate can provide an [`NSTextLayoutFragment`](../nstextlayoutfragment.md) specialized for an [`NSTextElement`](../nstextelement.md) subclass targeted for the rendering surface.
 
-The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
-
-## Discussion
-
-Use this to provide an [`NSTextLayoutFragment`](../nstextlayoutfragment.md) specialized for an [`NSTextElement`](../nstextelement.md) subclass targeted for the rendering surface.
-
 ## Parameters
 
 - `textLayoutManager`: The text layout manager sending the message.

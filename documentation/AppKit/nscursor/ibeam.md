@@ -26,6 +26,12 @@ class var iBeam: NSCursor { get }
 
 The I-beam cursor. This is the cursor that you’re used to seeing over editable or selectable text. The I-beam cursor’s default hot spot is where the crossbeam intersects the I.
 
+## Discussion
+
+The following image shows the I-beam cursor:
+
+![I-beam cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-horizontal-i-beam@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

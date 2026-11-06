@@ -18,13 +18,13 @@ A property for accessing a presentation intent attribute.
 ## Declaration
 
 ```swift
-let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute
+var presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute { get }
 ```
 
 ## See Also
 
 ### Using presentation intent attributes
-- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintent.md)
+- [var inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintent.md)
   A property for accessing an inline presentation intent attribute.
 - [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintentattribute.md)
   A type for using an inline presentation intent as an attribute.

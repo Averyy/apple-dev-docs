@@ -50,6 +50,11 @@ In the Xcode testing environment with [StoreKit Test](../../StoreKitTest/StoreKi
 - [static func promotionalOffer(offerID: String, signature: Product.SubscriptionOffer.Signature) -> Product.PurchaseOption](./purchaseoption/promotionaloffer%28offerid,signature%29.md)
 - [static func quantity(Int) -> Product.PurchaseOption](./purchaseoption/quantity%28_%29.md)
   Indicates the quantity of items the customer is purchasing.
+### Purchasing multiseat subscriptions
+- [static func seats(Int) -> Product.PurchaseOption](./purchaseoption/seats%28_%29.md)
+  Sets the total number of seats for a multiseat subscription purchase.
+- [static func multiSeatInvitationSheetSuppressed(Bool) -> Product.PurchaseOption](./purchaseoption/multiseatinvitationsheetsuppressed%28_%29.md)
+  Turns off the invitation sheet that the system presents after a multiseat subscription purchase with Apple-hosted invitations.
 ### Specifying the behavior for storefront changes
 - [static func onStorefrontChange(shouldContinuePurchase: (Storefront) -> Bool) -> Product.PurchaseOption](./purchaseoption/onstorefrontchange%28shouldcontinuepurchase%29.md)
   Indicates whether a transaction needs to continue if the App Store storefront changes on the device during the transaction.

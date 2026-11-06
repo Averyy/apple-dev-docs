@@ -7,7 +7,7 @@
 Returns a new template that has a closed circular gauge with a small amount of text in the center.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

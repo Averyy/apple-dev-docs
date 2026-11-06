@@ -83,7 +83,7 @@ class AVContentKeySession
 - [convenience init(keySystem: AVContentKeySystem, storageDirectoryAtURL: URL)](./avcontentkeysession/init%28keysystem,storagedirectoryaturl%29.md)
 ### Instance Properties
 - [var supportsAdvisoryKeys: Bool](./avcontentkeysession/supportsadvisorykeys.md)
-  Boolean indicating whether advisory keys are enabled on the client.
+  A Boolean value that indicates whether the session supports advisory keys.
 
 ## Relationships
 

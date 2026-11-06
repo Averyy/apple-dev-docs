@@ -41,7 +41,7 @@ For design guidance, see [Gestures](https://developer.apple.com/design/human-int
 - [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](./view/onlongtouchgesture%28minimumduration,perform,ontouchingchanged%29.md)
   Adds an action to perform when this view recognizes a remote long touch gesture. A long touch gesture is when the finger is on the remote touch surface without actually pressing.
 - [struct LongPressGesture](./longpressgesture.md)
-  A gesture that succeeds when the user performs a long press.
+  A gesture that succeeds when a person performs a long press that elapses a minimum duration.
 ### Recognizing spatial events
 - [struct SpatialEventGesture](./spatialeventgesture.md)
   A gesture that provides information about ongoing spatial events like clicks and touches.

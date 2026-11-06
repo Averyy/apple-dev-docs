@@ -7,9 +7,9 @@
 Styles for presenting an enumeration setting’s options.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -26,6 +26,9 @@ enum SelectionStyle
   A row that contains a pop-up menu of options.
 - [HomeAccessoryEnumSetting.SelectionStyle.navigation](./selectionstyle/navigation.md)
   A row that displays the current selection and opens a list of options.
+### Instance Properties
+- [var description: String](./selectionstyle/description.md)
+  A textual representation of the style.
 
 ## Relationships
 

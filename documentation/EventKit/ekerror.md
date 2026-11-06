@@ -98,10 +98,10 @@ struct EKError
 - [static var last: EKError.Code](./ekerror/last.md)
   This error is for internal use.
 ### Error Domain
+- [static var errorDomain: String](./ekerror/errordomain.md)
 - [let EKErrorDomain: String](./ekerrordomain.md)
   A string that identifies the EventKit error domain.
 ### Type Properties
-- [static var errorDomain: String](./ekerror/errordomain.md)
 - [static var reminderAlarmContainsEmailOrUrl: EKError.Code](./ekerror/reminderalarmcontainsemailorurl.md)
 
 ## Relationships

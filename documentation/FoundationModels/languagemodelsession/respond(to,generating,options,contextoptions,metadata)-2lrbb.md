@@ -11,6 +11,7 @@ Produces a generable object as a response to a prompt.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
@@ -30,11 +31,11 @@ nonisolated(nonsending) final func respond<Content>(to prompt: Prompt, generatin
 
 ## Return Value
 
-[`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
+An instance of the `Generable` type.
 
 ## Discussion
 
-Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
+Consider using the default value of `true` for [`includeSchemaInPrompt`](../contextoptions/includeschemainprompt.md). The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 
 ## Parameters
 

@@ -38,7 +38,7 @@ struct AutomaticPresentationSizing
 - [struct FittedPresentationSizing](./fittedpresentationsizing.md)
   The size of the presentation is dictated by the ideal size of the content.
 - [struct FormPresentationSizing](./formpresentationsizing.md)
-  The size is appropriate for forms and slightly less wide than`.page`
+  The size is appropriate for forms and slightly less wide than a page.
 - [struct PagePresentationSizing](./pagepresentationsizing.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 

@@ -17,6 +17,12 @@ Cancels the current request from the relying party.
 func cancel()
 ```
 
+## See Also
+
+### Responding to the request
+- [func sendResponse((IdentityDocumentWebPresentmentRawRequest) async throws -> ISO18013MobileDocumentResponse) async throws](./sendresponse%28_%29.md)
+  Builds and sends an ISO 18013 mobile document response.
+
 
 ---
 

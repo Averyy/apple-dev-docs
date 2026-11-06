@@ -7,7 +7,7 @@
 Strings that represent AppleCare coverage payment types.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 
@@ -54,6 +54,8 @@ string AppleCareCoveragePaymentType
   The type of Configuration profile.
 - [type ConfigurationPlatform](./configurationplatform.md)
   The platform that a Configuration targets.
+- [type WebhookEventType](./webhookeventtype.md)
+  Strings that represent the types of events a webhook can subscribe to.
 
 
 ---

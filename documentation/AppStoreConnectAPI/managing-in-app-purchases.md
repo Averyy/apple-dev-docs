@@ -11,7 +11,7 @@ The App Store Connect API lets you create and configure In-App Purchases for you
 
 ### Review App Store Connect API usage
 
-To manage In-App Purchases with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [Schedule price changes](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/schedule-price-changes) and learn how to create API keys, generate JWTs, identify rate limits, and more.
+If you’re new to the App Store Connect API, start with [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md), [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), and [Identifying Rate Limits](./identifying-rate-limits.md).
 
 To create and manage In-App Purchases, be sure you have one of the following user roles:
 

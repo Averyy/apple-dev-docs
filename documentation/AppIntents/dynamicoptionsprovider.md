@@ -24,6 +24,7 @@ protocol DynamicOptionsProvider : _SupportsAppDependencies
 ## Mentions
 
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Bringing custom actions and content to Siri](./bringing-custom-actions-and-content-to-siri.md)
 
 ## Overview
 

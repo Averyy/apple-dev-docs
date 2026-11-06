@@ -2186,7 +2186,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpass/paymentpass": {
       "file_path": "documentation/PassKit/pkpass/paymentpass.md",
-      "hash": "adaf7e02d341b525c2dd2c8fcd55d71c0ca4ae13075822d9509dbec8ec14876b"
+      "hash": "9db1547e986e854a95e3bc346d6bd2215d5cfdc2b8ba8de46db9e68d17be3b43"
     },
     "https://developer.apple.com/documentation/passkit/pkpass/relevantdate": {
       "file_path": "documentation/PassKit/pkpass/relevantdate.md",
@@ -2286,7 +2286,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/activate(_:withactivationdata:completion:)": {
       "file_path": "documentation/PassKit/pkpasslibrary/activate(_,withactivationdata,completion).md",
-      "hash": "88cff7837a4ee06f0815ee6b2994b2399f5eab37f9b17dfff021006ef91763ce"
+      "hash": "0bcce42955a184ea9d20bae88e9b6731c9ec11e4f0fe6ebb97100a4817bb8bc9"
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/addpasses(_:withcompletionhandler:)": {
       "file_path": "documentation/PassKit/pkpasslibrary/addpasses(_,withcompletionhandler).md",
@@ -2338,7 +2338,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/canaddpaymentpass(withprimaryaccountidentifier:)": {
       "file_path": "documentation/PassKit/pkpasslibrary/canaddpaymentpass(withprimaryaccountidentifier).md",
-      "hash": "04019305c44f80f79030a613abffe1c92a522ffd6b98676ce882dc5fe3815acd"
+      "hash": "eb857eb006db2cf705a0610d662c2dc84a37af76bc6f57fa48ce08b8a2a17a86"
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier:)": {
       "file_path": "documentation/PassKit/pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier).md",
@@ -2374,7 +2374,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/ispaymentpassactivationavailable()-swift.method": {
       "file_path": "documentation/PassKit/pkpasslibrary/ispaymentpassactivationavailable()-swift.method.md",
-      "hash": "b02f7ec6e9aa57b4c0be836ddd40f6d7897ba222c7f6d8566bff3cf636c64965"
+      "hash": "46fbe1a60bccfa1122dfd29852a82b3786e75e2e262907a1f9d61523863a11f8"
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/ispaymentpassactivationavailable()-swift.type.method": {
       "file_path": "documentation/PassKit/pkpasslibrary/ispaymentpassactivationavailable()-swift.type.method.md",
@@ -2414,7 +2414,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/present(_:)-67jce": {
       "file_path": "documentation/PassKit/pkpasslibrary/present(_)-67jce.md",
-      "hash": "53b864418b13263e42368bf013d14f5a3510398b6b396c969a853de222d26893"
+      "hash": "0f5c061e234ba2211b80c97841df87e81bdc9b25fb79ed06cb6f5a6d633642b8"
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/present(_:)-9467u": {
       "file_path": "documentation/PassKit/pkpasslibrary/present(_)-9467u.md",
@@ -2422,7 +2422,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/remotepaymentpasses()": {
       "file_path": "documentation/PassKit/pkpasslibrary/remotepaymentpasses().md",
-      "hash": "9b0fee6c09c7d14334d723ea161c9a000987ca33483b94c746839f47c57d6e3a"
+      "hash": "c5ee02663fce20adbecdfec31c006fb29aed8f8203aef3643f9096d185fb34f3"
     },
     "https://developer.apple.com/documentation/passkit/pkpasslibrary/remotesecureelementpasses": {
       "file_path": "documentation/PassKit/pkpasslibrary/remotesecureelementpasses.md",
@@ -2554,7 +2554,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpasstype/payment": {
       "file_path": "documentation/PassKit/pkpasstype/payment.md",
-      "hash": "a4996e20d7ab9cf3c87d50cbb3c766bb7d694af3e7428c4a78ae1150bf7ffabc"
+      "hash": "746084860f4b16d32bfe40ab9e06137d04503799825c87d94d7ceb8dac102047"
     },
     "https://developer.apple.com/documentation/passkit/pkpasstype/secureelement": {
       "file_path": "documentation/PassKit/pkpasstype/secureelement.md",
@@ -3206,7 +3206,7 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentmethod/paymentpass": {
       "file_path": "documentation/PassKit/pkpaymentmethod/paymentpass.md",
-      "hash": "9df90142fa7e820f0c5b3857756e527199fd0e01df18bd68ae810804e135c5a8"
+      "hash": "2ac907c7a1e0cceaedc710b5548d618de8ab7687f62cd0a59347f8a7b1f1b009"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentmethod/secureelementpass": {
       "file_path": "documentation/PassKit/pkpaymentmethod/secureelementpass.md",
@@ -3474,35 +3474,35 @@
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpass/activationstate": {
       "file_path": "documentation/PassKit/pkpaymentpass/activationstate.md",
-      "hash": "277ed4385951ffbeed70f438359bd3fb47c19df8a1b1948b9b4ebed2f4fe21cf"
+      "hash": "73b7e462984aa1ad6093f783566bf911ff4ae8f9ebb47e9ad20d9ee577062b84"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate.md",
-      "hash": "6dc02b6da82baf4474966d2829c5094394ef84bb58dd96e3332e8688f2015fa0"
+      "hash": "0df61eee4f347b33a2c879eb8782eb4e3e815c6781895a168f96e3782e206d58"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/activated": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/activated.md",
-      "hash": "50f182618b0963a1f75cea50b96ce7f9b60fd87bf5a3d17f3d2f43dc628b9c21"
+      "hash": "00a7fe5e9c5069dbdfb96c7143556c07c13cad9ff8ba853edc6bd809c68ac96e"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/activating": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/activating.md",
-      "hash": "23a2280fc74e7b003287fb027b08ae90d06e9685c3c0a19f17c3cf1b36e9709b"
+      "hash": "673b373540a698bd5c7cf2e9db4425af3fe17b7d9bcfe3bd4ec8d530b546f4a4"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/deactivated": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/deactivated.md",
-      "hash": "990b0ded407a934f2f1387bb55dda4ab4307382a56c71e2ebd5e9e66ef7a0031"
+      "hash": "92540e0196f72615106019eaaccbcf32269db84d9b004032438c266ad15d2d05"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/init(rawvalue:)": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/init(rawvalue).md",
-      "hash": "cfcfc96fd1f5aabd7c1bdc83e55574ae7b4bdac47e4d2e77fd4e8f80d96b6a6d"
+      "hash": "2c892e163700a06263a584bde678b16791e9871e3cb7d4f58f6fafee8f2c1811"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/requiresactivation": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/requiresactivation.md",
-      "hash": "5169224a0b84cc7f14e1ea045c4ce7391336a5da5995ced87f32121972b636e0"
+      "hash": "34c6bd2d9c19c1debec72ec33e10528893f21f9775c441c3eac52bcb7a563b4e"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentpassactivationstate/suspended": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/suspended.md",
-      "hash": "b2f9cc72733e18b3e6feface2219f6e41d805401cb50953256d1a4ab2b0e26fa"
+      "hash": "d737312451d4022409f0a172fe57679088df2a33e36a6f1399bd5525477e4dd2"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentrequest": {
       "file_path": "documentation/PassKit/pkpaymentrequest.md",
@@ -6766,7 +6766,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpass/paymentpass.json": {
       "file_path": "documentation/PassKit/pkpass/paymentpass.md",
-      "hash": "adaf7e02d341b525c2dd2c8fcd55d71c0ca4ae13075822d9509dbec8ec14876b"
+      "hash": "9db1547e986e854a95e3bc346d6bd2215d5cfdc2b8ba8de46db9e68d17be3b43"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpass/relevantdate.json": {
       "file_path": "documentation/PassKit/pkpass/relevantdate.md",
@@ -6866,7 +6866,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/activate(_:withactivationdata:completion:).json": {
       "file_path": "documentation/PassKit/pkpasslibrary/activate(_,withactivationdata,completion).md",
-      "hash": "88cff7837a4ee06f0815ee6b2994b2399f5eab37f9b17dfff021006ef91763ce"
+      "hash": "0bcce42955a184ea9d20bae88e9b6731c9ec11e4f0fe6ebb97100a4817bb8bc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/addpasses(_:withcompletionhandler:).json": {
       "file_path": "documentation/PassKit/pkpasslibrary/addpasses(_,withcompletionhandler).md",
@@ -6918,7 +6918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/canaddpaymentpass(withprimaryaccountidentifier:).json": {
       "file_path": "documentation/PassKit/pkpasslibrary/canaddpaymentpass(withprimaryaccountidentifier).md",
-      "hash": "04019305c44f80f79030a613abffe1c92a522ffd6b98676ce882dc5fe3815acd"
+      "hash": "eb857eb006db2cf705a0610d662c2dc84a37af76bc6f57fa48ce08b8a2a17a86"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier:).json": {
       "file_path": "documentation/PassKit/pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier).md",
@@ -6954,7 +6954,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/ispaymentpassactivationavailable()-swift.method.json": {
       "file_path": "documentation/PassKit/pkpasslibrary/ispaymentpassactivationavailable()-swift.method.md",
-      "hash": "b02f7ec6e9aa57b4c0be836ddd40f6d7897ba222c7f6d8566bff3cf636c64965"
+      "hash": "46fbe1a60bccfa1122dfd29852a82b3786e75e2e262907a1f9d61523863a11f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/ispaymentpassactivationavailable()-swift.type.method.json": {
       "file_path": "documentation/PassKit/pkpasslibrary/ispaymentpassactivationavailable()-swift.type.method.md",
@@ -6994,7 +6994,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/present(_:)-67jce.json": {
       "file_path": "documentation/PassKit/pkpasslibrary/present(_)-67jce.md",
-      "hash": "53b864418b13263e42368bf013d14f5a3510398b6b396c969a853de222d26893"
+      "hash": "0f5c061e234ba2211b80c97841df87e81bdc9b25fb79ed06cb6f5a6d633642b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/present(_:)-9467u.json": {
       "file_path": "documentation/PassKit/pkpasslibrary/present(_)-9467u.md",
@@ -7002,7 +7002,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/remotepaymentpasses().json": {
       "file_path": "documentation/PassKit/pkpasslibrary/remotepaymentpasses().md",
-      "hash": "9b0fee6c09c7d14334d723ea161c9a000987ca33483b94c746839f47c57d6e3a"
+      "hash": "c5ee02663fce20adbecdfec31c006fb29aed8f8203aef3643f9096d185fb34f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasslibrary/remotesecureelementpasses.json": {
       "file_path": "documentation/PassKit/pkpasslibrary/remotesecureelementpasses.md",
@@ -7134,7 +7134,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasstype/payment.json": {
       "file_path": "documentation/PassKit/pkpasstype/payment.md",
-      "hash": "a4996e20d7ab9cf3c87d50cbb3c766bb7d694af3e7428c4a78ae1150bf7ffabc"
+      "hash": "746084860f4b16d32bfe40ab9e06137d04503799825c87d94d7ceb8dac102047"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpasstype/secureelement.json": {
       "file_path": "documentation/PassKit/pkpasstype/secureelement.md",
@@ -7786,7 +7786,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentmethod/paymentpass.json": {
       "file_path": "documentation/PassKit/pkpaymentmethod/paymentpass.md",
-      "hash": "9df90142fa7e820f0c5b3857756e527199fd0e01df18bd68ae810804e135c5a8"
+      "hash": "2ac907c7a1e0cceaedc710b5548d618de8ab7687f62cd0a59347f8a7b1f1b009"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentmethod/secureelementpass.json": {
       "file_path": "documentation/PassKit/pkpaymentmethod/secureelementpass.md",
@@ -8054,35 +8054,35 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpass/activationstate.json": {
       "file_path": "documentation/PassKit/pkpaymentpass/activationstate.md",
-      "hash": "277ed4385951ffbeed70f438359bd3fb47c19df8a1b1948b9b4ebed2f4fe21cf"
+      "hash": "73b7e462984aa1ad6093f783566bf911ff4ae8f9ebb47e9ad20d9ee577062b84"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate.md",
-      "hash": "6dc02b6da82baf4474966d2829c5094394ef84bb58dd96e3332e8688f2015fa0"
+      "hash": "0df61eee4f347b33a2c879eb8782eb4e3e815c6781895a168f96e3782e206d58"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/activated.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/activated.md",
-      "hash": "50f182618b0963a1f75cea50b96ce7f9b60fd87bf5a3d17f3d2f43dc628b9c21"
+      "hash": "00a7fe5e9c5069dbdfb96c7143556c07c13cad9ff8ba853edc6bd809c68ac96e"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/activating.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/activating.md",
-      "hash": "23a2280fc74e7b003287fb027b08ae90d06e9685c3c0a19f17c3cf1b36e9709b"
+      "hash": "673b373540a698bd5c7cf2e9db4425af3fe17b7d9bcfe3bd4ec8d530b546f4a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/deactivated.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/deactivated.md",
-      "hash": "990b0ded407a934f2f1387bb55dda4ab4307382a56c71e2ebd5e9e66ef7a0031"
+      "hash": "92540e0196f72615106019eaaccbcf32269db84d9b004032438c266ad15d2d05"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/init(rawvalue:).json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/init(rawvalue).md",
-      "hash": "cfcfc96fd1f5aabd7c1bdc83e55574ae7b4bdac47e4d2e77fd4e8f80d96b6a6d"
+      "hash": "2c892e163700a06263a584bde678b16791e9871e3cb7d4f58f6fafee8f2c1811"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/requiresactivation.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/requiresactivation.md",
-      "hash": "5169224a0b84cc7f14e1ea045c4ce7391336a5da5995ced87f32121972b636e0"
+      "hash": "34c6bd2d9c19c1debec72ec33e10528893f21f9775c441c3eac52bcb7a563b4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentpassactivationstate/suspended.json": {
       "file_path": "documentation/PassKit/pkpaymentpassactivationstate/suspended.md",
-      "hash": "b2f9cc72733e18b3e6feface2219f6e41d805401cb50953256d1a4ab2b0e26fa"
+      "hash": "d737312451d4022409f0a172fe57679088df2a33e36a6f1399bd5525477e4dd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest.json": {
       "file_path": "documentation/PassKit/pkpaymentrequest.md",

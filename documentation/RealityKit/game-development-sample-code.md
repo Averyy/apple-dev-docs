@@ -7,7 +7,7 @@ Explore a collection of projects relating to game development.
 ## Overview
 
 - [Bringing your SceneKit projects to RealityKit](./bringing-your-scenekit-projects-to-realitykit.md)
-  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+  Adapt a platformer game for the powerful ECS and modularity of RealityKit.
 - [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
 - [BOT-anist](../visionOS/bot-anist.md)
@@ -27,7 +27,7 @@ Explore a collection of projects relating to game development.
 
 ### Sample code links
 - [Bringing your SceneKit projects to RealityKit](./bringing-your-scenekit-projects-to-realitykit.md)
-  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+  Adapt a platformer game for the powerful ECS and modularity of RealityKit.
 - [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
 - [BOT-anist](../visionOS/bot-anist.md)

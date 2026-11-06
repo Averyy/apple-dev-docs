@@ -19,6 +19,11 @@
 subscript(offers type: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer] { get }
 ```
 
+## See Also
+
+### Getting offers
+- [let subscriptionOffers: [Product.SubscriptionOffer]](./subscriptionoffers.md)
+
 
 ---
 

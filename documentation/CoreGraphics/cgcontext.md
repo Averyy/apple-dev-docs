@@ -32,6 +32,10 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 ## Topics
 
 ### Creating Bitmap Graphics Contexts
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo%29-10b3i.md)
+  Creates a bitmap graphics context.
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo%29-4yzt5.md)
+  Creates a bitmap graphics context with the specified callback function.
 - [typealias CGBitmapContextReleaseDataCallback](./cgbitmapcontextreleasedatacallback.md)
   A callback function used to release data associate with the bitmap context.
 ### Creating PDF Graphics Contexts
@@ -174,6 +178,7 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [var textMatrix: CGAffineTransform](./cgcontext/textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](./cgcontext/textposition.md)
+  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](./cgcontext/selectfont%28name,size,textencoding%29.md)
   Sets the font and font size in a graphics context.
 - [func setCharacterSpacing(CGFloat)](./cgcontext/setcharacterspacing%28_%29.md)
@@ -396,9 +401,7 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 ### Structures
 - [CGContext.AuxiliaryInfo](./cgcontext/auxiliaryinfo.md)
 ### Initializers
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo%29-10b3i.md)
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo%29-4fkaf.md)
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo%29-4yzt5.md)
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo%29-71ea9.md)
 ### Instance Properties
 - [var contentToneMappingInfo: CGContentToneMappingInfo](./cgcontext/contenttonemappinginfo.md)

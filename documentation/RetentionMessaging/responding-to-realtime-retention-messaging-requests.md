@@ -7,7 +7,7 @@ Select retention messages for customers in real time by responding to requests o
 
 ## Overview
 
-The App Store server sends a request to your `Get Retention Message` endpoint in real time when a customer is viewing subscription details and can potentially cancel the subscription. In your response, you choose a retention message from messages you configure in advance. Use the information in the request body, [`RealtimeRequestBody`](./realtimerequestbody.md), to help inform your choice. The system displays the retention message you choose to the customer. If your server response fails for any reason, the system displays a default retention message that you configure in advance.
+The App Store server sends a request to your `Get Retention Message` endpoint in real time when a customer is viewing subscription details and can potentially cancel the subscription. In your response, you choose a retention message from messages you configure in advance. Use the information in the request body, [`RealtimeRequestBody`](./realtimerequestbody.md), to help inform your choice. The system displays the retention message you choose to the customer. If your server response fails for any reason, the system displays the retention message, including any retention offer, that you configured in App Store Connect for the subscription. Otherwise, the system uses the default retention message that you configure in advance.
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server posts. For more information about implementing your `Get Retention Message` endpoint, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md). For more information about setting up the messages you can use in the response, see [Setting up retention messages](./setting-up-retention-messages.md).
 
@@ -29,7 +29,7 @@ Respond to the post with a [`RealtimeResponseBody`](./realtimeresponsebody.md) a
 
 > ❗ **Important**: Your server needs to respond quickly, within 700 ms in the production environment; otherwise, the App Store server times out and the request fails. To test your server’s performance with this API, see [`Initiate Performance Test`](./initiate-performance-test.md).
 
-If the request fails for any reason, the API uses the default message that you set up for the product ID and locale. For more information on default messages, see [Setting up retention messages](./setting-up-retention-messages.md).
+If the request fails for any reason, the system uses the retention message and offer you configured in App Store Connect, if any. Otherwise, it uses the default message that you set up for the product ID and locale, or the next most relevant default message if none exists for the customer’s exact locale. For more information on default messages, see [Setting up retention messages](./setting-up-retention-messages.md).
 
 ## See Also
 

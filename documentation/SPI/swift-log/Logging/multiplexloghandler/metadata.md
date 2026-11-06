@@ -17,6 +17,10 @@ Get or set the entire metadata storage as a dictionary.
 var metadata: Logger.Metadata { get set }
 ```
 
+## Discussion
+
+The getter merges the metadata of the underlying handlers in initialization order. On a key conflict, the first handler’s value wins, as in [`subscript(metadataKey:)`](./subscript%28metadatakey%29.md). The dictionary does not contain values from metadata providers.
+
 ## See Also
 
 ### Inspecting a log handler

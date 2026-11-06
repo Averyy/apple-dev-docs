@@ -7,13 +7,13 @@
 16-bit, big endian format.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order16Big)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order16Big)
 
 ## Declaration
 

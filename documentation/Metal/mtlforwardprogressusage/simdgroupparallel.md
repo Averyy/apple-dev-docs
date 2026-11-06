@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+Tunes the pipeline for programs that frequently impede forward progress, such as spin loops or locks.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

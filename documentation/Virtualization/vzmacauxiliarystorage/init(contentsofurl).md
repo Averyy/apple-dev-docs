@@ -7,7 +7,7 @@
 Initializes an auxiliary storage object with data from the location at the URL you provide.
 
 **Availability**:
-- macOS 12.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.3
 
 ## Declaration
 

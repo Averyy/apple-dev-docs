@@ -9,6 +9,8 @@ Specifies the vertical placement for a view of an expanded Live Activity that ap
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

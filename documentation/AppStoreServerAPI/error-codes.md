@@ -119,6 +119,19 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the group identifier is invalid.
 - [object InvalidLimitError](./invalidlimiterror.md)
   An error that indicates the request limit is invalid.
+### Seat management errors
+- [object AppTransactionIdNotFoundError](./apptransactionidnotfounderror.md)
+  An error that indicates the app transaction identifier wasn’t found.
+- [object BundleTransactionIdNotSupportedError](./bundletransactionidnotsupportederror.md)
+  An error that indicates the group subscription endpoint doesn’t support the transaction identifier of a bundle.
+- [object NoAvailableSeatsError](./noavailableseatserror.md)
+  An error that indicates the subscription has no seats available to claim.
+- [object SeatClaimIdNotFoundError](./seatclaimidnotfounderror.md)
+  An error that indicates the seat claim identifier wasn’t found.
+- [object SubscriptionNotActiveError](./subscriptionnotactiveerror.md)
+  An error that indicates the subscription isn’t active.
+- [object TransactionNotDevManagedGroupError](./transactionnotdevmanagedgrouperror.md)
+  An error that indicates the transaction isn’t for a subscription that uses developer-hosted invitations.
 ### Notification test and history errors
 - [object InvalidEndDateError](./invalidenddateerror.md)
   An error that indicates the end date is invalid.

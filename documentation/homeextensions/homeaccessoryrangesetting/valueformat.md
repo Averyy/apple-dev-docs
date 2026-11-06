@@ -7,9 +7,9 @@
 Formats that describe the kind of value a range setting represents.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -26,6 +26,9 @@ enum ValueFormat
   A percentage.
 - [HomeAccessoryRangeSetting.ValueFormat.temperature](./valueformat/temperature.md)
   A temperature.
+### Instance Properties
+- [var description: String](./valueformat/description.md)
+  A textual representation of the format.
 
 ## Relationships
 

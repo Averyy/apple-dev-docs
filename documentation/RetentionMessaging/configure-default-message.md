@@ -12,6 +12,7 @@ Configures a default message for a specific product in a specific locale.
 ## Mentions
 
 - [Identifying rate limits](./identifying-rate-limits.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
 ## Discussion
@@ -28,9 +29,7 @@ To delete a default message, call [`Delete Default Message`](./delete-default-me
 
 ### Use default messages
 
-Configure a default message for each product in each locale. If you implement the `Get Retention Message` endpoint, the system requires a default message for every product in each locale where you provide real-time retention messages. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
-
-The system uses the default messages if your server response fails for any reason, or if you don’t implement the `Get Retention Message` endpoint.
+Configure a default message for each product in each locale, as a fallback for when your server response fails, you don’t implement the `Get Retention Message` endpoint, or you haven’t configured a retention message in App Store Connect for the subscription. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md) and [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 
 To present promotional-offer or switch-plan retention messages instead of default messages, implement the `Get Retention Message` endpoint to respond with those message types in real time. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 

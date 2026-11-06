@@ -7,9 +7,9 @@
 A property for accessing an obliqueness attribute.
 
 **Availability**:
-- iOS 15.0+ - Deprecated in 27.2
-- iPadOS 15.0+ - Deprecated in 27.2
-- Mac Catalyst 15.0+ - Deprecated in 27.2
+- iOS 15.0+ - Deprecated in 27.3
+- iPadOS 15.0+ - Deprecated in 27.3
+- Mac Catalyst 15.0+ - Deprecated in 27.3
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+

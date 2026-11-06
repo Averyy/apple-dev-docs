@@ -21,7 +21,7 @@ Use the App Asset Library as a single place to manage your app’s marketing and
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
   Create placements that position library assets on App Store surfaces, then set their display order within a localization.
 - [Discovering asset specifications](./discovering-asset-specifications.md)
-  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
+  Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload assets.
 - [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
   Move your screenshots, app previews, and in-app event media from the deprecated set-based resources to the asset library.
 ### Managing the asset library

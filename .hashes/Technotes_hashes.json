@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Technotes": {
       "file_path": "documentation/Technotes/Technotes.md",
-      "hash": "1b3e74544c3d3455a4f592aa9a674bc0f3bfde563594ae90be21e4e969eccc54"
+      "hash": "23631652593ff167509d0664f70934f4a967c7eb5eba898e53a14e9aed99bd2b"
     },
     "https://developer.apple.com/documentation/technotes/tn3102-http3-in-your-app": {
       "file_path": "documentation/Technotes/tn3102-http3-in-your-app.md",
@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide": {
       "file_path": "documentation/Technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide.md",
-      "hash": "6903d3e68ec28e33340cab4f58192511a15bc87808b8ebfc9df7dd768ce859df"
+      "hash": "1c95a67240a65c6104ecf017019ee320820f894f8bbd758a67b4448051f1ff47"
     },
     "https://developer.apple.com/documentation/technotes/tn3104-recording-video-in-apple-prores": {
       "file_path": "documentation/Technotes/tn3104-recording-video-in-apple-prores.md",
@@ -286,7 +286,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key": {
       "file_path": "documentation/Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md",
-      "hash": "772036db09c1c40d4afc0dc0048c3fd7b93ffd802e63a40158edeaa43c690c60"
+      "hash": "651d244ed2b0697ada8e043cea1374786e3410a5c7d622048d2fc7b85419aae3"
     },
     "https://developer.apple.com/documentation/technotes/tn3193-managing-the-on-device-foundation-model-s-context-window": {
       "file_path": "documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.md",
@@ -310,7 +310,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3210-optimizing-your-app-for-iphone-mirroring": {
       "file_path": "documentation/Technotes/tn3210-optimizing-your-app-for-iphone-mirroring.md",
-      "hash": "6189c904ed15b107bfd3e33c091bb0edc39ba2db8908b4190600c845b71cb631"
+      "hash": "931e04fd9c39c54138ec6bd0fdb716500e5aff3e17bc4498be7f745620401f37"
     },
     "https://developer.apple.com/documentation/technotes/tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder": {
       "file_path": "documentation/Technotes/tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md",
@@ -338,7 +338,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Technotes.json": {
       "file_path": "documentation/Technotes/Technotes.md",
-      "hash": "1b3e74544c3d3455a4f592aa9a674bc0f3bfde563594ae90be21e4e969eccc54"
+      "hash": "23631652593ff167509d0664f70934f4a967c7eb5eba898e53a14e9aed99bd2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3102-http3-in-your-app.json": {
       "file_path": "documentation/Technotes/tn3102-http3-in-your-app.md",
@@ -346,7 +346,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide.json": {
       "file_path": "documentation/Technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide.md",
-      "hash": "6903d3e68ec28e33340cab4f58192511a15bc87808b8ebfc9df7dd768ce859df"
+      "hash": "1c95a67240a65c6104ecf017019ee320820f894f8bbd758a67b4448051f1ff47"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3104-recording-video-in-apple-prores.json": {
       "file_path": "documentation/Technotes/tn3104-recording-video-in-apple-prores.md",
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.json": {
       "file_path": "documentation/Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md",
-      "hash": "772036db09c1c40d4afc0dc0048c3fd7b93ffd802e63a40158edeaa43c690c60"
+      "hash": "651d244ed2b0697ada8e043cea1374786e3410a5c7d622048d2fc7b85419aae3"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.json": {
       "file_path": "documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.md",
@@ -646,7 +646,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3210-optimizing-your-app-for-iphone-mirroring.json": {
       "file_path": "documentation/Technotes/tn3210-optimizing-your-app-for-iphone-mirroring.md",
-      "hash": "6189c904ed15b107bfd3e33c091bb0edc39ba2db8908b4190600c845b71cb631"
+      "hash": "931e04fd9c39c54138ec6bd0fdb716500e5aff3e17bc4498be7f745620401f37"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.json": {
       "file_path": "documentation/Technotes/tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md",

@@ -7,13 +7,13 @@
 32-bit, little endian format.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Little)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- tvOS - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageByteOrderInfo.order32Little)
 
 ## Declaration
 

@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-An error type that is thrown from the identity document web presentment controller.
+An error type the identity document web presentment controller throws.
 
 **Availability**:
 - iOS 26.0+
@@ -20,25 +20,24 @@ struct IdentityDocumentPresentmentError
 
 ## Topics
 
-### Instance Properties
+### Inspecting an error
 - [let code: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/code-swift.property.md)
   The code of the current error.
 - [let debugDescription: String](./identitydocumentpresentmenterror/debugdescription.md)
   A debug description that provides additional context about the current error.
-### Type Properties
+### Matching error codes
+- [IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/code-swift.enum.md)
+  Error codes for identity document web presentment errors.
 - [static let cancelled: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/cancelled.md)
-  An error that indicates that the current request has been cancelled.
+  An error that indicates the current request was canceled.
 - [static let invalidRequest: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/invalidrequest.md)
-  An error that is thrown when an invalid request is provided.
+  An error thrown when a request is invalid.
 - [static let notEntitled: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/notentitled.md)
   An error that indicates the caller is not entitled.
 - [static let requestInProgress: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/requestinprogress.md)
-  An error that indicates that there is currently a request in progress.
+  An error that indicates a request in progress.
 - [static let unknown: IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/unknown.md)
-  An error that indicates that the framework encountered an unknown problem.
-### Enumerations
-- [IdentityDocumentPresentmentError.Code](./identitydocumentpresentmenterror/code-swift.enum.md)
-  Specific error codes for identity document web presentment errors.
+  An error that indicates the framework encountered an unknown problem.
 
 ## Relationships
 

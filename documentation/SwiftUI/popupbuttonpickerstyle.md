@@ -7,7 +7,7 @@
 A picker style that presents the options as a menu when the user presses a button.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`MenuPickerStyle`](./menupickerstyle.md) instead.
 

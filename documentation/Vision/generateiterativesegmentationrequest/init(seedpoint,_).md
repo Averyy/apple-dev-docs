@@ -26,7 +26,7 @@ init(seedPoint: NormalizedPoint, _ revision: GenerateIterativeSegmentationReques
 
 ## Discussion
 
-No result will be produced if the point is outside the `regionOfInterest`. By default, the `regionOfInterest` is the whole image. This point is counted toward the total number of points that can be added.
+No result will be produced if the point is outside the [`regionOfInterest`](../imageprocessingrequest/regionofinterest.md). By default, the `regionOfInterest` is the whole image. This point is counted toward the total number of points that can be added.
 
 ## See Also
 

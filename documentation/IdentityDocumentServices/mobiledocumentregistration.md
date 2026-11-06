@@ -52,6 +52,8 @@ Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
   A store that notifies the system which documents an app has available for presentment.
 - [protocol IdentityDocumentRegistration](./identitydocumentregistration.md)
   A protocol that defines an identity document registration.
+- [struct VerifiableCredentialRegistration](./verifiablecredentialregistration.md)
+  A type used for registering SD-JWT verifiable credentials.
 
 
 ---

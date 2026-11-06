@@ -21,6 +21,16 @@ The name of the dimension, used as the DataFrame column name.
 let name: String
 ```
 
+## See Also
+
+### Inspecting a dimension
+- [var metric: Metric](./metric.md)
+  A metric identifier that uses this dimension’s name.
+- [let scale: ScoringScale](./scale.md)
+  The scoring scale for this dimension.
+- [let description: String?](./description.md)
+  An optional description providing additional context for the model judge about what this dimension measures.
+
 
 ---
 

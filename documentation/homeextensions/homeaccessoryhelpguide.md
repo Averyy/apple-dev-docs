@@ -7,9 +7,9 @@
 Help content about a specific topic for an accessory.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -45,7 +45,6 @@ struct HomeAccessoryHelpGuide
   An identifier for a piece of content that your extension provides.
 - [struct HomeAccessoryTroubleshooting](./homeaccessorytroubleshooting.md)
   Content that helps people resolve problems with an accessory.
-- [class GuideStepHostViewController](./guidestephostviewcontroller.md)
 
 
 ---

@@ -7,7 +7,7 @@
 Get information for an organization device activity that a device management action, such as assign or unassign, creates.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Overview
 

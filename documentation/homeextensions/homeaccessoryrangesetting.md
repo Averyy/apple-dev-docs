@@ -7,9 +7,9 @@
 A setting that represents a numeric value within a range.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -51,6 +51,9 @@ The Home app presents this setting as a slider. The slider appears only when the
   The setting’s current value, or its default value if it has none.
 - [var projectedValue: HomeAccessoryRangeSetting<Value>](./homeaccessoryrangesetting/projectedvalue.md)
   The setting itself, which you access with a dollar sign prefix.
+### Instance Properties
+- [let id: String](./homeaccessoryrangesetting/id.md)
+  A unique identifier for the setting.
 
 ## Relationships
 

@@ -7,7 +7,11 @@
 Get the information for a specific device management service.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
+
+## Mentions
+
+- [Understanding webhook events](../apple-school-and-business-manager-api/understanding-apple-business-api-webhook-events.md)
 
 ### Example
 

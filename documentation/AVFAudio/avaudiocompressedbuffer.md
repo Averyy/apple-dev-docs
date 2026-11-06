@@ -53,6 +53,24 @@ class AVAudioCompressedBuffer
   The buffer’s array of packet dependencies.
 - [packetDependencies](./avaudiocompressedbuffer/packetdependencies-5oae6.md)
   The buffer’s array of packet dependencies.
+### Initializers
+- [convenience init(copying: AVAudioCompressedBuffer)](./avaudiocompressedbuffer/init%28copying%29-65xzn.md)
+  Creates a mutable buffer by copying another compressed buffer’s audio data.
+- [convenience init(copying: AVReadOnlyAudioCompressedBuffer)](./avaudiocompressedbuffer/init%28copying%29-6ztfu.md)
+  Creates a mutable buffer by copying a read-only buffer’s compressed audio data.
+### Instance Properties
+- [var dataSpan: RawSpan](./avaudiocompressedbuffer/dataspan.md)
+  Read-only access to the compressed audio data.
+- [var mutableDataSpan: MutableRawSpan](./avaudiocompressedbuffer/mutabledataspan.md)
+  Mutable access to the compressed audio data.
+- [var mutablePacketDependencySpan: MutableSpan<AudioStreamPacketDependencyDescription>?](./avaudiocompressedbuffer/mutablepacketdependencyspan.md)
+  Mutable access to packet dependencies.
+- [var mutablePacketDescriptionsSpan: MutableSpan<AudioStreamPacketDescription>?](./avaudiocompressedbuffer/mutablepacketdescriptionsspan.md)
+  Mutable access to packet descriptions.
+- [var packetDependencySpan: Span<AudioStreamPacketDependencyDescription>?](./avaudiocompressedbuffer/packetdependencyspan.md)
+  Read-only access to packet dependencies.
+- [var packetDescriptionsSpan: Span<AudioStreamPacketDescription>?](./avaudiocompressedbuffer/packetdescriptionsspan.md)
+  Read-only access to packet descriptions.
 
 ## Relationships
 

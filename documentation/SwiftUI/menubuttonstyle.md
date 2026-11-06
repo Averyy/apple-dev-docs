@@ -7,7 +7,7 @@
 A custom specification for the appearance and interaction of a menu button.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`MenuStyle`](./menustyle.md) instead.
 

@@ -7,12 +7,12 @@
 A circular geographic region that a center point and radius deine.
 
 **Availability**:
-- iOS 7.0+ - Deprecated in 27.2
-- iPadOS 7.0+ - Deprecated in 27.2
+- iOS 7.0+ - Deprecated in 27.3
+- iPadOS 7.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.10+ - Deprecated in 27.2
+- macOS 10.10+ - Deprecated in 27.3
 - tvOS 9.0+ - Deprecated in 27.0
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`CLCircularGeographicCondition`](./clcirculargeographiccondition.md) instead.
 

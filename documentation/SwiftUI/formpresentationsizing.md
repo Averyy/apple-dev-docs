@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-The size is appropriate for forms and slightly less wide than`.page`
+The size is appropriate for forms and slightly less wide than a page.
 
 **Availability**:
 - iOS 18.0+
@@ -23,7 +23,7 @@ struct FormPresentationSizing
 
 ## Overview
 
-On iOS, `.form` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see `PresentationSizing.fitted` or implement your own custom [`PresentationSizing`](./presentationsizing.md).
+On iOS, `.form` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see [`fitted`](./presentationsizing/fitted.md) or implement your own custom [`PresentationSizing`](./presentationsizing.md).
 
 > **See Also**: [`form`](./presentationsizing/form.md)
 

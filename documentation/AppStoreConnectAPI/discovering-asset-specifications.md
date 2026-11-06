@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Role**: Article
 
-Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
+Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload assets.
 
 ## Overview
 

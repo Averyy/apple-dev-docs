@@ -23,6 +23,14 @@ case leading
 UINavigationItemTitleAlignmentLeading
 ```
 
+## See Also
+
+### Getting title alignment options
+- [UINavigationItem.TitleAlignment.automatic](./automatic.md)
+  The system determines the alignment.
+- [UINavigationItem.TitleAlignment.center](./center.md)
+  The title is center-aligned.
+
 
 ---
 

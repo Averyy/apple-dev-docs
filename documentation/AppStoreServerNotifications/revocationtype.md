@@ -20,7 +20,7 @@ string revocationType
 - `REFUND_FULL`: The transaction has a full refund.
 - `REFUND_PRORATED`: The transaction has a prorated refund.
 - `FAMILY_REVOKE`: The transaction is revoked from Family Sharing.
-- `ASSIGNMENT_REVOKE`: The organization or group purchaser removed the subscription from the customer.
+- `ASSIGNMENT_REVOKE`: The organization or group purchaser removed the transaction from the customer, the customer left the group, or a refund removed their seat.
 
 ## Mentions
 
@@ -30,7 +30,7 @@ string revocationType
 
 If the `revocationType` is `REFUND_PRORATED`, see the [`revocationPercentage`](./revocationpercentage.md) for the prorated percentage.
 
-A `revocationType` of `ASSIGNMENT_REVOKE` indicates that the organization or group purchaser removed the subscription from a customer. Revoke the customer’s access to the content the transaction provides.
+A `revocationType` of `ASSIGNMENT_REVOKE` indicates that the customer no longer has access through an organization or group. Revoke the customer’s access to the content the transaction provides.
 
 ## See Also
 

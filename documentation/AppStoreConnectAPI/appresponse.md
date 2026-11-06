@@ -19,7 +19,7 @@ object AppResponse
 
 - `data` (App) *(required)*: The resource data.
 - `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
-- `included` ([*]): **Allowed Types**: `AndroidToIosAppMappingDetail`, `AppClip`, `AppCustomProductPage`, `AppEncryptionDeclaration`, `AppEvent`, `AppInfo`, `AppStoreVersionExperimentV2`, `AppStoreVersion`, `BetaAppLocalization`, `BetaAppReviewDetail`, `BetaGroup`, `BetaLicenseAgreement`, `BuildIcon`, `Build`, `CiProduct`, `EndUserLicenseAgreement`, `GameCenterDetail`, `GameCenterEnabledVersion`, `InAppPurchase`, `PrereleaseVersion`, `PromotedPurchase`, `ReviewSubmission`, `SubscriptionGracePeriod`, `SubscriptionGroup`
+- `included` ([*]): **Allowed Types**: `AndroidToIosAppMappingDetail`, `AppClip`, `AppCustomProductPage`, `AppEncryptionDeclaration`, `AppEvent`, `AppInfo`, `AppStoreVersionExperimentV2`, `AppStoreVersion`, `BetaAppLocalization`, `BetaAppReviewDetail`, `BetaGroup`, `BetaLicenseAgreement`, `BuildIcon`, `Build`, `CiProduct`, `EndUserLicenseAgreement`, `GameCenterDetail`, `GameCenterEnabledVersion`, `InAppPurchase`, `PrereleaseVersion`, `PromotedPurchase`, `RetentionMessage`, `ReviewSubmission`, `SubscriptionGracePeriod`, `SubscriptionGroup`
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a model subject with a value and optional transcript.
+Creates a model subject with a value and an optional transcript.
 
 **Availability**:
 - iOS 27.0+

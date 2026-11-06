@@ -25,6 +25,12 @@ var anyInferenceProduced: Bool
 
 False when every `subject(from:)` call threw; aggregate metrics are not meaningful.
 
+## See Also
+
+### Diagnosing a run
+- [var metricsNotFound: [String]](./metricsnotfound.md)
+  Metric names referenced by `MetricsAggregator` that no evaluator produced.
+
 
 ---
 

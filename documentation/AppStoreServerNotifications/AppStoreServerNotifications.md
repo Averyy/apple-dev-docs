@@ -66,6 +66,9 @@ The App Store server sends the `TEST` notification in the version 2 notification
 ### Deprecated
 - [App Store Server Notifications Version 1](./app-store-server-notifications-version-1.md)
   Receive, parse, and interpret App Store Server Notifications version 1.
+### Type Aliases
+- [type unclaimSeatIds](./unclaimseatids.md)
+  The identifiers of the seat claims that the App Store unclaimed in a group subscription that uses developer-hosted invitations.
 
 ## See Also
 

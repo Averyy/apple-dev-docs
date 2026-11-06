@@ -53,6 +53,9 @@ struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
   The product ID of the auto-renewable subscription.
 - [var activeOffer: Product.SubscriptionOffer?](./option/activeoffer.md)
   The subscription offer the customer is eligible for, and that applies to the subscription option.
+### Getting the pricing terms
+- [var preferredPricingTerms: SubscriptionInfo.PricingTerms?](./option/preferredpricingterms.md)
+  The preferred pricing terms for this subscription option.
 ### Getting the icon
 - [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./option/icon.md)
   The subscription option’s icon.

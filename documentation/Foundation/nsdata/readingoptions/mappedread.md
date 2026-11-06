@@ -7,13 +7,13 @@
 Deprecated name for [`dataReadingMapped`](./datareadingmapped.md).
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: NSData.ReadingOptions.dataReadingMapped)
 
 ## Declaration
 

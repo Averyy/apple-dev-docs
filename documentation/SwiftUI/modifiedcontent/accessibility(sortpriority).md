@@ -7,13 +7,13 @@
 Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilitySortPriority(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilitySortPriority(_:))
 
 > **Deprecated**: Use [`accessibilitySortPriority(_:)`](./accessibilitysortpriority%28_%29.md) instead.
 

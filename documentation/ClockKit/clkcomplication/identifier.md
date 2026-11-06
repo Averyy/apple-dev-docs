@@ -7,7 +7,7 @@
 An identifier that specifies a complication if your app supports multiple complications per family.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

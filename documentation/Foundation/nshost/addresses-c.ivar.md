@@ -5,7 +5,7 @@
 **Role**: Instance Variable
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 ## Declaration
 

@@ -9,8 +9,8 @@ Creates an RMSProp optimizer with the descriptor you specify.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.2+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
+- Mac Catalyst 14.2+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
 - tvOS 14.0+
 
 > **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.

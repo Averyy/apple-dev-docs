@@ -7,7 +7,7 @@
 Posted when the set of active complications changes.
 
 **Availability**:
-- watchOS 2.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.3
 
 ## Declaration
 

@@ -32,12 +32,13 @@ object JWSRenewalInfoDecodedPayload
 - `autoRenewProductId` (autoRenewProductId): The product identifier of the product that renews at the next billing period.
 - `autoRenewStatus` (autoRenewStatus): The renewal status of the auto-renewable subscription.
 - `currency` (currency): The currency code for the `renewalPrice` of the subscription.
-- `commitmentInfo` (RenewalCommitmentInfo)
+- `commitmentInfo` (RenewalCommitmentInfo): Information about the renewal of the commitment, such as whether it renews and its renewal price, for a monthly subscription with a 12-month commitment.
 - `eligibleWinBackOfferIds` (eligibleWinBackOfferIds): The list of win-back offer IDs that the customer is eligible for.
 - `environment` (environment): The server environment, either sandbox or production.
 - `expirationIntent` (expirationIntent): The reason the subscription expired.
 - `gracePeriodExpiresDate` (gracePeriodExpiresDate): The time when the Billing Grace Period for subscription renewals expires.
 - `isInBillingRetryPeriod` (isInBillingRetryPeriod): The Boolean value that indicates whether the App Store is attempting to automatically renew the expired subscription.
+- `multiSeatInfo` (RenewalMultiSeatInfo): Information about the seats in the next renewal. This field is present only if the subscription renews as a multiseat purchase.
 - `offerDiscountType` (offerDiscountType): The payment mode of the discount offer.
 - `offerIdentifier` (offerIdentifier): The offer code or the promotional offer identifier.
 - `offerPeriod` (offerPeriod): The duration of the offer.
@@ -46,9 +47,10 @@ object JWSRenewalInfoDecodedPayload
 - `priceIncreaseStatus` (priceIncreaseStatus): The status that indicates whether the auto-renewable subscription is subject to a price increase.
 - `productId` (productId): The product identifier of the In-App Purchase.
 - `recentSubscriptionStartDate` (recentSubscriptionStartDate): The earliest start date of the auto-renewable subscription in a series of subscription purchases that ignores all lapses of paid service that are 60 days or fewer.
-- `renewalBillingPlanType` (renewalBillingPlanType)
+- `renewalBillingPlanType` (renewalBillingPlanType): The billing plan of the subscription’s next renewal, either billed up front or billed monthly with a 12-month commitment.
 - `renewalDate` (renewalDate): The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
 - `renewalPrice` (renewalPrice): The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
+- `renewalQuantity` (renewalQuantity): The number of seats that renew at the next renewal date.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
 - `advancedCommerceInfo` (advancedCommerceRenewalInfo): Renewal information that is present only for Advanced Commerce API SKUs.
 

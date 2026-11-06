@@ -28,7 +28,7 @@ string groupType
 
 Multiseat purchasing lets a customer buy your subscription in quantities greater than one. Each [`GroupEntry`](./groupentry.md) that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns includes a `groupType`, which identifies which form of multiseat purchase the customer’s access comes from:
 
-- `ORGANIZATION` indicates Volume Purchasing. An organization that uses Apple Business Manager or Apple School Manager bought your subscription and assigns seats using a device management provider.
+- `ORGANIZATION` indicates Volume Purchasing. An organization that uses Apple Business or Apple School Manager bought your subscription and assigns seats using a device management provider.
 - `CONSUMER` indicates Group Purchases. A subscriber bought multiple seats and invited others to join.
 
 For more information, see [Manage purchase options for an auto-renewable subscription](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-purchase-options-for-auto-renewable-subscriptions).

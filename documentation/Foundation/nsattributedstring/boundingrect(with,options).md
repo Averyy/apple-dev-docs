@@ -7,7 +7,7 @@
 Calculates and returns a bounding rectangle for the attributed string using the options specified within the specified rectangle in the current graphics context.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`boundingRect(with:options:context:)`](./boundingrect%28with,options,context%29.md) instead.
 

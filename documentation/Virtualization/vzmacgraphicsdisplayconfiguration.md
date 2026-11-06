@@ -37,6 +37,8 @@ Use this device to attach a display that’s shown in a [`VZVirtualMachineView`]
   The width of the display, in pixels.
 - [var pixelsPerInch: Int](./vzmacgraphicsdisplayconfiguration/pixelsperinch.md)
   The pixel density in pixels per inch.
+- [var enableHDR: Bool](./vzmacgraphicsdisplayconfiguration/enablehdr.md)
+  A Boolean value that indicates whether the framework enables high dynamic range (HDR) support for the display.
 ### Initializers
 - [convenience init(forScreen: NSScreen, sizeInPoints: NSSize)](./vzmacgraphicsdisplayconfiguration/init%28forscreen,sizeinpoints%29.md)
 

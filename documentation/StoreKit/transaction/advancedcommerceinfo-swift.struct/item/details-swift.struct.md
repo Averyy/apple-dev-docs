@@ -32,6 +32,8 @@ struct Details
   The offer applied to the purchase of this item, if any.
 - [let price: Decimal](./details-swift.struct/price.md)
   The price of the item.
+- [let seatPriceTiers: [Transaction.AdvancedCommerceInfo.SeatPriceTier]](./details-swift.struct/seatpricetiers.md)
+  The per-seat price tiers for the item’s seats.
 - [let sku: String](./details-swift.struct/sku.md)
   Unique identifier for the item.
 - [let partners: [Transaction.AdvancedCommerceInfo.Partner]](./details-swift.struct/partners.md)

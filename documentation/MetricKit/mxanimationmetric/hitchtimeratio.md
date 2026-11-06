@@ -7,11 +7,11 @@
 The ratio of time spent hitching during tracked animations.
 
 **Availability**:
-- iOS 26.0+ - Deprecated in 27.2
-- iPadOS 26.0+ - Deprecated in 27.2
+- iOS 26.0+ - Deprecated in 27.3
+- iPadOS 26.0+ - Deprecated in 27.3
 - Mac Catalyst 26.0+ - Deprecated in 27.0
-- macOS 26.0+ - Deprecated in 27.2
-- visionOS 26.0+ - Deprecated in 27.2
+- macOS 26.0+ - Deprecated in 27.3
+- visionOS 26.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`HitchTimeMetric`](../hitchtimemetric.md) instead.
 

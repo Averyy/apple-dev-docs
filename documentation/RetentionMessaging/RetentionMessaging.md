@@ -42,12 +42,10 @@ The following two examples show a switch-plan message and a promotional-offer me
 
 ![A diagram of an iOS screen in portrait orientation. The screen shows a generic icon, the Confirm Cancellation heading, and a statement that explains when the service ends if you cancel. A section titled From the developer contains a promotional-offer redemption message, including an Accept Offer button. The screen has two buttons at the bottom for Cancel Subscription and Keep Subscription.](https://developer.apple.com/tutorials/images/com.apple.retentionmessaging/cancel-messaging-offer@2x.png)
 
-You use the API to select retention messages for customers in two ways:
+Use the Retention Messaging API to select retention messages for customers in two ways:
 
-- By configuring default messages, which are text-based messages, with or without an image or bullet points, that apply to specific products and locales.
-- By choosing a retention message in real time, when you respond to a server-to-server call from the App Store server. You also configure default messages, which the system uses as a fallback if real-time calls fail for any reason.
-
-The system doesn’t display a retention message for a product in any locale that lacks a default retention message.
+- Configure default retention messages. Default retention messages are text-based messages, with or without an image or bullet points, that apply to specific products and locales. Retention messages that you configure in App Store Connect take precedence over these default retention messages.
+- Choose a retention message in real time when you respond to a server-to-server call from the App Store server. Retention messages you select in real time take precedence over default retention messages and retention messages configured in App Store Connect.
 
 ### Upload images and messages
 
@@ -65,12 +63,12 @@ Default messages can display only text-based messages with or without images or 
 
 The real-time messaging flow calls your server when an active subscriber views a subscription details page with a Cancel button. For example, customers might consider canceling on the Apple Account > Subscriptions page, or when viewing the subscription details page on the App Store.
 
-The real-time call informs you about the subscription, including the original transaction ID, and the customer’s locale. You respond by selecting an appropriate preconfigured message for the system to display. You can choose from all the retention message types, including those with switch-plan or promotional offers.
+The real-time call informs you about the subscription, including the original transaction ID, and the customer’s locale. You respond by selecting an appropriate preconfigured message for the system to display. You can choose from all the retention message types, including those with switch-plan or promotional offers. You can also choose to present one of the messages you configured in App Store Connect.
 
 Follow these steps to implement the real-time flow:
 
 1. Upload and prepare your retention messages. For more information, see [Setting up retention messages](./setting-up-retention-messages.md).
-2. Configure a default retention message for every product in each locale. The system requires the default messages to use as a fallback if a real-time call to your server fails for any reason. For more information, see [`Configure Default Message`](./configure-default-message.md).
+2. Configure a default retention message for every product in each locale, as a fallback for when your real-time response fails and you haven’t configured a retention message in App Store Connect. For more information, see [`Configure Default Message`](./configure-default-message.md) and [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 3. Implement the `Get Retention Message` endpoint on your server, and set it up in the sandbox environment by calling the [`Configure Realtime URL`](./configure-realtime-url.md) endpoint. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 4. To set up your endpoint in the production environment, call the [`Initiate Performance Test`](./initiate-performance-test.md) and pass the test. Then call the [`Configure Realtime URL`](./configure-realtime-url.md) endpoint to set up your production URL.
 5. Respond to App Store requests by selecting a retention message to display in real time. For more information, see [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
@@ -109,7 +107,7 @@ Before you can configure your real-time URL for the production environment, your
 - [Get Message List](./get-message-list.md)
   Gets the message identifier and state of all uploaded messages.
 - [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
+  The request body for uploading a retention message, which includes the message text and an optional image reference and bullet points.
 - [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
 - [object GetMessageListResponse](./getmessagelistresponse.md)

@@ -156,12 +156,8 @@ You can integrate SwiftUI views with objects from the [UIKit](../UIKit/UIKit.md)
 - [Performance analysis](./performance-analysis.md)
   Measure and improve your app’s responsiveness.
 ### Structures
-- [struct ContentMarginGuide](./contentmarginguide.md)
-  A guide for resolving the content margins for a view.
-- [struct PresentationMode](./presentationmode.md)
-  An indication whether a view is currently presented by another view.
-- [struct ToolbarTitleAlignment](./toolbartitlealignment.md)
-  A preferred alignment for a navigation bar’s title.
+- [struct ToolbarContainerBehavior](./toolbarcontainerbehavior.md)
+  Whether a container acts as a toolbar container, reading the toolbar content of its child views and placing that content into its own bar.
 
 
 ---

@@ -119,19 +119,23 @@ For more information, see [Receiving iOS notifications on an accessory](./receiv
 
 ## See Also
 
-### Notification forwarding
+### Notification and Live Activity forwarding
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
   Create custom app extensions that manage iOS system notifications for your accessory.
+- [Receiving Live Activity updates and alerts on an accessory](../AccessoryLiveActivities/receiving-live-activities-on-an-accessory.md)
+  Enable your accessory to receive forwarded Live Activities by updating your data provider extension.
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
   Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
 - [protocol AccessoryDataProvider](./accessorydataprovider.md)
-  A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
+  A protocol for an extension that provides your accessory’s data for one or more of the framework’s features.
 - [protocol AccessoryDataProviderConfiguration](./accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurityConfiguration](./accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
 - [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
+- [Accessory Live Activities](../AccessoryLiveActivities/AccessoryLiveActivities.md)
+  Forward Live Activity alerts from iPhone to an accessory you develop.
 
 
 ---

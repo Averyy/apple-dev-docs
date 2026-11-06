@@ -7,11 +7,11 @@
 A histogram of the different amounts of time taken to launch the app, including the extended launch tasks.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2
-- iPadOS 16.0+ - Deprecated in 27.2
+- iOS 16.0+ - Deprecated in 27.3
+- iPadOS 16.0+ - Deprecated in 27.3
 - Mac Catalyst 16.0+ - Deprecated in 27.0
-- macOS 13.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- macOS 13.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`ExtendedLaunchMetric`](../extendedlaunchmetric.md) instead.
 

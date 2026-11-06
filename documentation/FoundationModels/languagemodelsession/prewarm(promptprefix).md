@@ -11,6 +11,7 @@ Loads the resources required for this session into memory ahead of a request.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 

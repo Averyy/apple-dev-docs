@@ -11,6 +11,7 @@ A schema that represents a null value.
 - iPadOS 26.4+
 - Mac Catalyst 26.4+
 - macOS 26.4+
+- tvOS 27.0+
 - visionOS 26.4+
 - watchOS 27.0+
 
@@ -27,7 +28,7 @@ You can use null schemas as a way to express types that cannot be absent, but ma
 ```
 let person = DynamicGenerationSchema(
     name: "Person",
-    properties: []
+    properties: [
         DynamicGenerationSchema.Property(
           name: "fullName",
           schema: DynamicGenerationSchema(type: String.self)

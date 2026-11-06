@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+Values that identify the store where the original purchase of an app took place.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,10 +23,13 @@ struct StoreType
 
 ## Topics
 
-### Type Properties
+### Getting store types
 - [static let consumer: AppTransaction.StoreType](./storetype-swift.struct/consumer.md)
-- [static let education: AppTransaction.StoreType](./storetype-swift.struct/education.md)
+  A value that indicates the App Store.
 - [static let enterprise: AppTransaction.StoreType](./storetype-swift.struct/enterprise.md)
+  A value that indicates Apple Business.
+- [static let education: AppTransaction.StoreType](./storetype-swift.struct/education.md)
+  A value that indicates Apple School Manager.
 
 ## Relationships
 
@@ -34,6 +39,12 @@ struct StoreType
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Getting the store
+- [let storeType: AppTransaction.StoreType](./storetype-swift.property.md)
+  The store where the original purchase of the app took place.
 
 
 ---

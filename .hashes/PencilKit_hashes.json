@@ -930,15 +930,15 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebydistance:using:)": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebydistance,using).md",
-      "hash": "49dce6ccb54c5860e86328eaecd609244bc43ed831c013e167335a0295b27bb0"
+      "hash": "07be3df5f0989c99e349de8e9862d32f60a8f28c6eeeb4516b808d688561d438"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebyparametricstep:using:)": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebyparametricstep,using).md",
-      "hash": "3895059aac5e0d901003b4609d2b3cfb5199fe4b7e17254c4c0ffd12a63a83c9"
+      "hash": "b86d26ae5f99bf9f9fcfa2517c0aea4b36569cecfb09062f043a3c35f0fc6cc4"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebytime:using:)": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebytime,using).md",
-      "hash": "6673b56340c21e58818d959ebaabe704fb2500f9ee99d14f9e42b95eeb76897f"
+      "hash": "6b12792d9216317b3261f5f650a8076cabaced40bc7d51caa7690b9850189d9c"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/init(bezierpath:creationdate:pointprovider:)": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/init(bezierpath,creationdate,pointprovider).md",
@@ -2618,15 +2618,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebydistance:using:).json": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebydistance,using).md",
-      "hash": "49dce6ccb54c5860e86328eaecd609244bc43ed831c013e167335a0295b27bb0"
+      "hash": "07be3df5f0989c99e349de8e9862d32f60a8f28c6eeeb4516b808d688561d438"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebyparametricstep:using:).json": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebyparametricstep,using).md",
-      "hash": "3895059aac5e0d901003b4609d2b3cfb5199fe4b7e17254c4c0ffd12a63a83c9"
+      "hash": "b86d26ae5f99bf9f9fcfa2517c0aea4b36569cecfb09062f043a3c35f0fc6cc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebytime:using:).json": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints(in,stridebytime,using).md",
-      "hash": "6673b56340c21e58818d959ebaabe704fb2500f9ee99d14f9e42b95eeb76897f"
+      "hash": "6b12792d9216317b3261f5f650a8076cabaced40bc7d51caa7690b9850189d9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/init(bezierpath:creationdate:pointprovider:).json": {
       "file_path": "documentation/PencilKit/pkstrokepathreference/init(bezierpath,creationdate,pointprovider).md",

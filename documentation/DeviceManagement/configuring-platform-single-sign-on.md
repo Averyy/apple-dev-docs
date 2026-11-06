@@ -87,6 +87,28 @@ Platform SSO automatically uses its own login experience at FileVault unlock, at
 
 You can set `AlwaysUseLoginUI` to `true` to enable the same experience for other authentication methods.
 
+## Configure custom headers
+
+You can define custom header fields that Platform SSO inserts after existing header fields using `AdditionalHTTPHeaders`. `AdditionalHTTPHeaders` is a dictionary whose keys and values are both strings. Platform SSO uses each key as an HTTP header name and the corresponding value as the header value.
+
+Platform SSO adds custom header fields to the following requests for password, smart card, Secure Enclave-backed key, and access key authentication:
+
+- Anti-replay value request
+- Pre-authentication request
+- Login request
+- Key request
+- Key exchange request
+
+You can specify up to 20 header fields. Each field name can have a maximum of 128 characters. The field value can have a maximum of 2048 characters.
+
+> ❗ **Important**: Don’t use custom header fields for credentials or personally identifiable information.
+
+| Configuration key | Profile key | Required | Value |
+| --- | --- | --- | --- |
+| `AdditionalHTTPHeaders` | `AdditionalHTTPHeaders` | Yes | Specify up to 20 additional HTTP header fields as a dictionary of key-value pairs. |
+| `AuthenticationMethod` | `AuthenticationMethod` | No | Set to `Password`, `SmartCard`, or `UserSecureEnclaveKey`. Set either `AuthenticationMethod` or `NewUserAuthenticationMethods` to a supported authentication method. |
+| `UserCreation.NewUserAuthenticationMethods` | `NewUserAuthenticationMethods` | No | Set to `AccessKey`, `Password`, or `SmartCard`. Set either `AuthenticationMethod` or `NewUserAuthenticationMethods` to a supported authentication method. |
+
 ## Use web-based authentication
 
 Users can use web-based authentication if you set `AuthenticationMethod`, `UserCreation.NewUserAuthenticationMethods` (configuration), or `NewUserAuthenticationMethods` (profile) to `OpenID`.

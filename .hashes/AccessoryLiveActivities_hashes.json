@@ -82,11 +82,11 @@
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/liveactivityforwarding": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding.md",
-      "hash": "079ec0d3c6771f4ad0790f3816faab79943a379b764099c320dc70107ced2bae"
+      "hash": "dfedd558762fa77dd4b22779e4ea4ba578ee46189d931c74402341bc21f78adf"
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/liveactivityforwarding/accessoryliveactivitieshandler": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/accessoryliveactivitieshandler.md",
-      "hash": "639f9de3d3f0026eb3a5985c876d23447039703ecc138169e893e3812efd75be"
+      "hash": "a36f6fb694fd055abbf61ca085c20389ef4e31f536a53daea8cad333fe794ffb"
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/liveactivityforwarding/accessoryliveactivitieshandler/activate(for:)": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/accessoryliveactivitieshandler/activate(for).md",
@@ -126,7 +126,7 @@
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/liveactivityforwarding/session": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/session.md",
-      "hash": "2e4523f54dffed9b3bb910c78855b933049ae87e5fed981684d269dc1847fa31"
+      "hash": "29dde9c77e65172c72dafc409a842e1cf0377034e096818f400a3f3fc05d3259"
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/liveactivityforwarding/session/liveactivities": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/session/liveactivities.md",
@@ -134,7 +134,7 @@
     },
     "https://developer.apple.com/documentation/accessoryliveactivities/receiving-live-activities-on-an-accessory": {
       "file_path": "documentation/AccessoryLiveActivities/receiving-live-activities-on-an-accessory.md",
-      "hash": "d5920bcc2264f6310fd0093da8a170a55dc2ec59762e34c12fb410ad86256c12"
+      "hash": "37dbc4a955ca2055e4b74560871054de56f884cba6cd21a224bfc8d42dbd888f"
     },
     "https://developer.apple.com/tutorials/data/documentation/AccessoryLiveActivities.json": {
       "file_path": "documentation/AccessoryLiveActivities/AccessoryLiveActivities.md",
@@ -218,11 +218,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/liveactivityforwarding.json": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding.md",
-      "hash": "079ec0d3c6771f4ad0790f3816faab79943a379b764099c320dc70107ced2bae"
+      "hash": "dfedd558762fa77dd4b22779e4ea4ba578ee46189d931c74402341bc21f78adf"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/liveactivityforwarding/accessoryliveactivitieshandler.json": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/accessoryliveactivitieshandler.md",
-      "hash": "639f9de3d3f0026eb3a5985c876d23447039703ecc138169e893e3812efd75be"
+      "hash": "a36f6fb694fd055abbf61ca085c20389ef4e31f536a53daea8cad333fe794ffb"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/liveactivityforwarding/accessoryliveactivitieshandler/activate(for:).json": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/accessoryliveactivitieshandler/activate(for).md",
@@ -262,7 +262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/liveactivityforwarding/session.json": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/session.md",
-      "hash": "2e4523f54dffed9b3bb910c78855b933049ae87e5fed981684d269dc1847fa31"
+      "hash": "29dde9c77e65172c72dafc409a842e1cf0377034e096818f400a3f3fc05d3259"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/liveactivityforwarding/session/liveactivities.json": {
       "file_path": "documentation/AccessoryLiveActivities/liveactivityforwarding/session/liveactivities.md",
@@ -270,7 +270,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessoryliveactivities/receiving-live-activities-on-an-accessory.json": {
       "file_path": "documentation/AccessoryLiveActivities/receiving-live-activities-on-an-accessory.md",
-      "hash": "d5920bcc2264f6310fd0093da8a170a55dc2ec59762e34c12fb410ad86256c12"
+      "hash": "37dbc4a955ca2055e4b74560871054de56f884cba6cd21a224bfc8d42dbd888f"
     }
   },
   "metadata": {

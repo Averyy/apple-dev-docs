@@ -7,7 +7,7 @@
 Returns a new template from the provided image, fill fraction, and ring style.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

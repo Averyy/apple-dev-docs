@@ -21,6 +21,16 @@ The transaction was revoked due to a family sharing revocation.
 static let familyRevocation: Transaction.RevocationType
 ```
 
+## See Also
+
+### Getting revocation types
+- [static let fullRefund: Transaction.RevocationType](./fullrefund.md)
+  The transaction was fully refunded.
+- [static let proratedRefund: Transaction.RevocationType](./proratedrefund.md)
+  The transaction was partially refunded based on consumption.
+- [static var assignmentRevocation: Transaction.RevocationType](./assignmentrevocation.md)
+  The customer no longer has access through an organization or group.
+
 
 ---
 

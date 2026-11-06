@@ -11,6 +11,7 @@ An on-device Apple Foundation Model capable of text generation tasks.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.3+ (Beta)
 - visionOS 26.0+
 
 ## Declaration
@@ -21,6 +22,7 @@ final class SystemLanguageModel
 
 ## Mentions
 
+- [Detecting available Apple Foundation Models](./detecting-available-apple-foundation-models.md)
 - [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md)
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
@@ -112,13 +114,11 @@ struct GenerativeView: View {
 
 ## See Also
 
-### System language model
-- [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
-  Generate content in the language people prefer when they interact with your app.
-- [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md)
-  Identify topics, actions, objects, and emotions in input text with a content tagging model.
-- [enum LanguageModelError](./languagemodelerror.md)
-  A failure that may occur while generating a response when using any language model.
+### Apple Foundation Models
+- [Detecting available Apple Foundation Models](./detecting-available-apple-foundation-models.md)
+  Discover which Apple Foundation Models your app can use across devices and platforms.
+- [class PrivateCloudComputeLanguageModel](./privatecloudcomputelanguagemodel.md)
+  A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
 
 
 ---

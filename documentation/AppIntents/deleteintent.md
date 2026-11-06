@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-Delete the associated entity(s).
+An app intent that deletes one or more entities.
 
 **Availability**:
 - iOS 16.0+
@@ -21,12 +21,36 @@ Delete the associated entity(s).
 protocol DeleteIntent : SystemIntent
 ```
 
+## Overview
+
+Declare the entities to delete as the [`entities`](./deleteintent/entities.md) parameter, or, starting in the 27.3 releases, as [`target`](./deleteintent/target-1cesv.md) to use a set or an [`EntityCollection`](./entitycollection.md):
+
+```swift
+struct DeleteNotesIntent: DeleteIntent {
+    static let title: LocalizedStringResource = "Delete Notes"
+
+    @Parameter(title: "Notes")
+    var entities: [NoteEntity]
+
+    func perform() async throws -> some IntentResult {
+        try await NoteStore.shared.delete(entities.map(\.id))
+        return .result()
+    }
+}
+```
+
 ## Topics
 
 ### Associated Types
 - [associatedtype Entity : AppEntity](./deleteintent/entity.md)
+  The type of the entities to delete.
+- [associatedtype Target : AppEntityCollectionValue = [Self.Entity]](./deleteintent/target-swift.associatedtype.md)
+  The type of [`target`](./deleteintent/target-1cesv.md): an array or set of entities, or an [`EntityCollection`](./entitycollection.md).
 ### Instance Properties
 - [var entities: [Self.Entity]](./deleteintent/entities.md)
+  The entities to delete.
+- [var target: Self.Target](./deleteintent/target-1cesv.md)
+  The entities to delete.
 
 ## Relationships
 

@@ -7,7 +7,7 @@
 A response that contains information about an app resource.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

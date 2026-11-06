@@ -7,7 +7,7 @@
 Creates a text provider that shows the difference in time between the provided dates.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

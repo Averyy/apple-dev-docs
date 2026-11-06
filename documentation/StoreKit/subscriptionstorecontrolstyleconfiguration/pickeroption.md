@@ -39,6 +39,8 @@ The key difference is a `SubscriptionStoreControlStyleConfiguration.Option` prov
 - [var subscription: Product](./pickeroption/subscription.md)
   The auto-renewable subscription that the picker option represents.
 - [var activeOffer: Product.SubscriptionOffer?](./pickeroption/activeoffer.md)
+- [var preferredPricingTerms: SubscriptionInfo.PricingTerms?](./pickeroption/preferredpricingterms.md)
+  The preferred pricing terms for this subscription option.
 - [let isSelected: Bool](./pickeroption/isselected.md)
   A Boolean value that indicates whether the picker option is in a selected state.
 - [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./pickeroption/icon.md)

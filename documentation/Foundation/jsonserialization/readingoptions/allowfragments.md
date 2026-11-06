@@ -7,13 +7,13 @@
 A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
 
 **Availability**:
-- iOS 5.0+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- iPadOS 5.0+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- macOS 10.7+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- tvOS 9.0+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- iOS 5.0+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- iPadOS 5.0+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- macOS 10.7+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- tvOS 9.0+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: JSONSerialization.ReadingOptions.fragmentsAllowed)
 
 > **Deprecated**: Use [`fragmentsAllowed`](./fragmentsallowed.md) instead.
 

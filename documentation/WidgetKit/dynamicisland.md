@@ -9,6 +9,8 @@ The layout and configuration for a Live Activity that appears in the Dynamic Isl
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 
@@ -39,9 +41,9 @@ struct DynamicIsland
 
 ### Live Activity setup
 - [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
-  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+  Display up-to-date data and offer quick interactions in highly visible places like the Dynamic Island, the menu bar, a paired Apple Watch, or in CarPlay.
 - [ActivityKit](../ActivityKit/ActivityKit.md)
-  Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
+  Share live updates from your app as Live Activities that appear in the Dynamic Island and other highly visible locations.
 - [Creating a widget extension](./creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md)

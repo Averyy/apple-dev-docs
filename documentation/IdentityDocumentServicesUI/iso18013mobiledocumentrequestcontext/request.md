@@ -17,6 +17,12 @@ The incoming ISO 18013 mobile document request.
 let request: ISO18013MobileDocumentRequest
 ```
 
+## See Also
+
+### Reading the request
+- [let requestingWebsiteOrigin: URL?](./requestingwebsiteorigin.md)
+  The origin of the requesting website, if present.
+
 
 ---
 

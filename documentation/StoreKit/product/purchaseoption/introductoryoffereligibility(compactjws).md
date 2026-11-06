@@ -25,6 +25,7 @@ static func introductoryOfferEligibility(compactJWS: String) -> Product.Purchase
 ## Mentions
 
 - [Generating JWS to sign App Store requests](../../generating-jws-to-sign-app-store-requests.md)
+- [Supporting multiseat purchases in your app](../../supporting-multiseat-purchases-in-your-app.md)
 
 ## Discussion
 

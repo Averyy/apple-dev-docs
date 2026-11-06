@@ -161,6 +161,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [Encodable Implementations](./range/encodable-implementations.md)
 - [Equatable Implementations](./range/equatable-implementations.md)
 - [Hashable Implementations](./range/hashable-implementations.md)
+- [HomeAccessoryRangeSettingDescriptor Implementations](./range/homeaccessoryrangesettingdescriptor-implementations.md)
 - [RangeExpression Implementations](./range/rangeexpression-implementations.md)
 - [Sequence Implementations](./range/sequence-implementations.md)
 

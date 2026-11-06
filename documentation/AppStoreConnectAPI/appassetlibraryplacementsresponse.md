@@ -18,7 +18,7 @@ object AppAssetLibraryPlacementsResponse
 ## Properties
 
 - `data` ([AppAssetLibraryPlacement]) *(required)*
-- `included` ([*]): **Allowed Types**: `AppAssetLibraryImage`, `AppAssetLibraryVideo`, `AppCustomProductPageLocalization`, `AppEventLocalization`, `AppStoreVersionExperimentTreatmentLocalization`, `AppStoreVersionLocalization`
+- `included` ([*]): **Allowed Types**: `AppAssetLibraryImage`, `AppAssetLibraryVideo`, `AppCustomProductPageLocalization`, `AppEventLocalization`, `AppStoreVersionExperimentTreatmentLocalization`, `AppStoreVersionLocalization`, `RetentionMessageVersion`
 - `links` (PagedDocumentLinks) *(required)*
 - `meta` (PagingInformation)
 

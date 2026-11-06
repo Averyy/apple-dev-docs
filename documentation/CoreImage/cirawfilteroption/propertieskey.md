@@ -5,12 +5,12 @@
 **Role**: Type Property
 
 **Availability**:
-- iOS 15.0+ - Deprecated in 27.2
-- iPadOS 15.0+ - Deprecated in 27.2
-- Mac Catalyst 15.0+ - Deprecated in 27.2
-- macOS 12.0+ - Deprecated in 27.2
-- tvOS 15.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 15.0+ - Deprecated in 27.3
+- iPadOS 15.0+ - Deprecated in 27.3
+- Mac Catalyst 15.0+ - Deprecated in 27.3
+- macOS 12.0+ - Deprecated in 27.3
+- tvOS 15.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use new CIRAWFilter class instead.
 

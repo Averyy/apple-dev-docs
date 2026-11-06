@@ -23,7 +23,7 @@ var resultsFinalizationTime: CMTime { get }
 
 ## Discussion
 
-This value is mostly equivalent to the start of [`volatileRange`](../speechanalyzer/volatilerange.md) after the time at which this result was published. The module publishing this result will publish no futher results with a [`range`](./range.md) that encompasses a time predating this time. The module may publish results for a range that includes this time.
+This value is mostly equivalent to the start of [`volatileRange`](../speechanalyzer/volatilerange.md) after the time at which this result was published. The module publishing this result will publish no futher results with a [`range`](./range.md) that encompasses a time predating this time. The module may publish results for a range that includes or postdates this time.
 
 The client can draw the following conclusions from this value and `range` (or refer to the [`isFinal`](./isfinal.md) property):
 

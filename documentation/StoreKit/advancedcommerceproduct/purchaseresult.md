@@ -29,6 +29,8 @@ typealias PurchaseResult = Product.PurchaseResult
   Processes a purchase for the product.
 - [func purchase(compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./purchase%28compactjws,options%29.md)
   Processes a purchase for the product.
+- [let supportsMultiSeatPurchase: Bool](./supportsmultiseatpurchase.md)
+  A Boolean value that indicates whether multiseat purchases are allowed for this product.
 
 
 ---

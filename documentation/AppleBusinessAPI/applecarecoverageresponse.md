@@ -7,7 +7,7 @@
 A response that contains a list of AppleCare coverage resources that belongs to an organization device.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

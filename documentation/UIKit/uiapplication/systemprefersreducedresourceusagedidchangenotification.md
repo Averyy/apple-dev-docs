@@ -30,6 +30,12 @@ The object of the notification is the `UIApplication` object. The `userInfo` dic
 
 Use this notification to re-read the value and adjust the scheduling of future work, the same way the property is read proactively. Avoid performing or scheduling expensive work directly in the handler, as this could worsen resource usage.
 
+## See Also
+
+### Handle reduced resource usage preference
+- [var systemPrefersReducedResourceUsage: Bool](./systemprefersreducedresourceusage.md)
+  A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
+
 
 ---
 

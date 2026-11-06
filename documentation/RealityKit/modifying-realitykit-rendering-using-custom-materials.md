@@ -7,15 +7,15 @@ Write Metal shader functions to implement custom rendering effects.
 
 ## Overview
 
-RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](./unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](./custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging RealityKit’s built-in shader pipeline.
+RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](./unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](./custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging the built-in shader pipeline in RealityKit.
 
 > **Note**: For the Metal API documentation for custom material shader functions, see [the Metal RealityKit APIs PDF.](https://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
 
 Custom materials support two types of custom Metal shader functions: *surface shaders* and *geometry modifiers*. Surface shaders are responsible for specifying the final attributes of each pixel that RealityKit draws to render the entity. They also support an optional geometry modifier, which you can use to manipulate the location of the model’s vertices, allowing you to dynamically change the size or shape of the entity.
 
-In shader programming, the term *fragment* refers to a one-pixel portion of an entity. *Fragment shaders* run on the GPU and are responsible for rendering those pixel-size chunks. RealityKit’s built-in fragment shader fires once for every one of the entity’s fragments. In other words, it fires once for every screen pixel potentially affected by rendering that entity. As a result, your surface shader function also fires once for every fragment. RealityKit’s fragment shader calls your surface shader, meaning that surface shaders are also called once for each of the entity’s fragments.
+In shader programming, the term *fragment* refers to a one-pixel portion of an entity. *Fragment shaders* run on the GPU and are responsible for rendering those pixel-size chunks. The built-in fragment shader in RealityKit fires once for every one of the entity’s fragments. In other words, it fires once for every screen pixel potentially affected by rendering that entity. As a result, your surface shader function also fires once for every fragment. The RealityKit fragment shader calls your surface shader, meaning that surface shaders are also called once for each of the entity’s fragments.
 
-The other type of Metal shader that RealityKit uses is the *vertex shader*. Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, RealityKit’s vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
+The other type of Metal shader that RealityKit uses is the *vertex shader*. Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, the RealityKit vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
 
 For more information on writing Metal shaders, see [Debugging the shaders within a draw command or compute dispatch](../Xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 
@@ -197,7 +197,7 @@ modelComponent.materials = customMaterials
 robot.components[ModelComponent.self] = modelComponent
 ```
 
-You can download RealityKit’s custom shader Metal API documentation from [Custom Shader API](https://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
+You can download the custom shader Metal API documentation for RealityKit from [Custom Shader API](https://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
 
 ## See Also
 

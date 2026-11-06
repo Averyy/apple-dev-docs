@@ -7,11 +7,11 @@
 Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 27.2
-- iPadOS 17.0+ - Deprecated in 27.2
-- Mac Catalyst 17.0+ - Deprecated in 27.2
-- macOS 14.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 17.0+ - Deprecated in 27.3
+- iPadOS 17.0+ - Deprecated in 27.3
+- Mac Catalyst 17.0+ - Deprecated in 27.3
+- macOS 14.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Conform your type to WritableDocument or Transferable instead.
 

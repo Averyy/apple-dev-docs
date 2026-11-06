@@ -9,6 +9,7 @@ Asynchronously detects data in the view’s content and styles them to indicate 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
+- macOS 27.2+
 - visionOS 27.0+
 - watchOS 27.0+
 

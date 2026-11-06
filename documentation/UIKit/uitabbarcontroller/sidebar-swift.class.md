@@ -35,11 +35,18 @@ class Sidebar
 - [- scrollToTarget:animated:](../uitabbarcontrollersidebar/scrolltotarget_animated_.md)
   Scrolls to the specified target in the sidebar with an option to animate the change.
 ### Managing customization
+- [var isAvailable: Bool](./sidebar-swift.class/isavailable.md)
+  Indicates when the tab sidebar is available to be displayed in the current context. When available, the sidebar is either visible, or can become visible depending on `isHidden`. Use this property to gate behaviors or UI that is dependent on the availability of the sidebar (like child tabs, or landing pages for groups).
 - [var isHidden: Bool](./sidebar-swift.class/ishidden.md)
   Determines if the sidebar is currently hidden.
+- [var navigationOverflowItems: UIDeferredMenuElement?](./sidebar-swift.class/navigationoverflowitems.md)
+  Additional items to add to the overflow menu in the sidebar’s navigation bar. Setting this property to a non-nil value will force the overflow button to appear, regardless of if you provide any content in the element’s callback. Items returned are displayed directly in the presented menu. When set, the “Edit Sidebar” action will also be moved into the overflow menu after the app-provided items.
 - [var preferredLayout: UITabBarController.Sidebar.Layout](./sidebar-swift.class/preferredlayout.md)
   The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
 - [UITabBarController.Sidebar.Layout](./sidebar-swift.class/layout.md)
+- [var preferredPlacement: UITabBarController.Sidebar.Placement](./sidebar-swift.class/preferredplacement.md)
+  The preferred placement for the tab bar controller when the sidebar and tab bar are mutually exclusive, and only one placement can be displayed.
+- [UITabBarController.Sidebar.Placement](./sidebar-swift.class/placement.md)
 - [func reconfigureItem(for: UITab)](./sidebar-swift.class/reconfigureitem%28for%29.md)
   Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
 ### Headers and footers
@@ -51,15 +58,6 @@ class Sidebar
   Content configuration for an optional header to display in the sidebar. The footer is displayed below all tab content in the sidebar.
 - [headerContentConfiguration](../uitabbarcontrollersidebar/headercontentconfiguration.md)
   Content configuration for an optional header to display in the sidebar. The header is displayed above all tab content in the sidebar.
-### Instance Properties
-- [var isAvailable: Bool](./sidebar-swift.class/isavailable.md)
-  Indicates when the tab sidebar is available to be displayed in the current context. When available, the sidebar is either visible, or can become visible depending on `isHidden`. Use this property to gate behaviors or UI that is dependent on the availability of the sidebar (like child tabs, or landing pages for groups).
-- [var navigationOverflowItems: UIDeferredMenuElement?](./sidebar-swift.class/navigationoverflowitems.md)
-  Additional items to add to the overflow menu in the sidebar’s navigation bar. Setting this property to a non-nil value will force the overflow button to appear, regardless of if you provide any content in the element’s callback. Items returned are displayed directly in the presented menu. When set, the “Edit Sidebar” action will also be moved into the overflow menu after the app-provided items.
-- [var preferredPlacement: UITabBarController.Sidebar.Placement](./sidebar-swift.class/preferredplacement.md)
-  The preferred placement for the tab bar controller when the sidebar and tab bar are mutually exclusive, and only one placement can be displayed.
-### Enumerations
-- [UITabBarController.Sidebar.Placement](./sidebar-swift.class/placement.md)
 
 ## Relationships
 

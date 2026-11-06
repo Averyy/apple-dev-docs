@@ -42,6 +42,8 @@ This test case requires no cleanup. For auto-renewable subscriptions, you can pe
   Verify that your app handles a subscription lapse properly using the accelerated time rates within the sandbox environment.
 - [Testing disabling auto-renew](./testing-disabling-auto-renew.md)
   Verify that your app receives subscription updates when a user cancels a subscription by verifying the receipt or receiving a notification.
+- [Testing multiseat subscriptions](./testing-multiseat-subscriptions.md)
+  Test group purchases, invitations, seat changes, refunds, and purchases from organizations in the sandbox environment before you release your app.
 
 
 ---

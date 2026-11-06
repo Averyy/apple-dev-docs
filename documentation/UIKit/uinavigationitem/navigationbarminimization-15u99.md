@@ -23,6 +23,12 @@ The minimization configuration for the navigation bar.
 
 Set the properties of this configuration to control how the navigation bar minimizes in response to scrolling. When the navigation bar minimizes, an integrated top tab bar will also minimize.
 
+## See Also
+
+### Configuring minimization behavior
+- [UIBarMinimization](../uibarminimization-c.class.md)
+  A configuration that controls how a navigation bar minimizes in response to scrolling.
+
 
 ---
 

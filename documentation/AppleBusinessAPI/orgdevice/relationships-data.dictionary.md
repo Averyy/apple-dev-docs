@@ -7,7 +7,7 @@
 The relationships you include in the request, and those that you can operate on.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

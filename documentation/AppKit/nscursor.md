@@ -28,36 +28,55 @@ The following table shows and describes the system cursors, and indicates the cl
 
 | Cursor | Description |
 | --- | --- |
-| ![arrow cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555572@2x.png) | The arrow cursor ([`arrow`](./nscursor/arrow.md)) |
-| ![I-beam cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555577@2x.png) | The I-beam cursor for indicating insertion points ([`iBeam`](./nscursor/ibeam.md)) |
-| ![cross-hair cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555579@2x.png) | The cross-hair cursor ([`crosshair`](./nscursor/crosshair.md)) |
-| ![closed-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555583@2x.png) | The closed-hand cursor ([`closedHand`](./nscursor/closedhand.md)) |
-| ![open-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555589@2x.png) | The open-hand cursor ([`openHand`](./nscursor/openhand.md)) |
-| ![pointing hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555596@2x.png) | The pointing-hand cursor ([`pointingHand`](./nscursor/pointinghand.md)) |
-| ![resize-left cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555601@2x.png) | The resize-left cursor ([`resizeLeft`](./nscursor/resizeleft.md)) |
-| ![resize-right cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555605@2x.png) | The resize-right cursor ([`resizeRight`](./nscursor/resizeright.md)) |
-| ![resize-left-and-right cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555610@2x.png) | The resize-left-and-right cursor ([`resizeLeftRight`](./nscursor/resizeleftright.md)) |
-| ![resize-up cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555619@2x.png) | The resize-up cursor ([`resizeUp`](./nscursor/resizeup.md)) |
-| ![resize-down cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555626@2x.png) | The resize-down cursor ([`resizeDown`](./nscursor/resizedown.md)) |
-| ![resize-up-and-down cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555629@2x.png) | The resize-up-and-down cursor ([`resizeUpDown`](./nscursor/resizeupdown.md)) |
-| ![disappearing item cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555632@2x.png) | The disappearing item cursor ([`disappearingItem`](./nscursor/disappearingitem.md)) |
-| ![disappearing item cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555638@2x.png) | The I-Beam text cursor for vertical layout ([`iBeamCursorForVerticalLayout`](./nscursor/ibeamcursorforverticallayout.md)). |
-| ![operation not allowed cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555643@2x.png) | The not allowed cursor ([`operationNotAllowed`](./nscursor/operationnotallowed.md)). |
-| ![drag link cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555647@2x.png) | The drag link cursor ([`dragLink`](./nscursor/draglink.md)). |
-| ![drag copy cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555652@2x.png) | The drag copy cursor ([`dragCopy`](./nscursor/dragcopy.md)). |
-| ![contextual menu cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2555658@2x.png) | The contextual menu cursor ([`contextualMenu`](./nscursor/contextualmenu.md)). |
+| ![arrow cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-arrow@2x.png) | The arrow cursor ([`arrow`](./nscursor/arrow.md)) |
+| ![I-beam cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-horizontal-i-beam@2x.png) | The I-beam cursor for indicating insertion points ([`iBeam`](./nscursor/ibeam.md)) |
+| ![cross-hair cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-crosshair@2x.png) | The cross-hair cursor ([`crosshair`](./nscursor/crosshair.md)) |
+| ![closed-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-closed-hand@2x.png) | The closed-hand cursor ([`closedHand`](./nscursor/closedhand.md)) |
+| ![open-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-open-hand@2x.png) | The open-hand cursor ([`openHand`](./nscursor/openhand.md)) |
+| ![pointing hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-pointing-hand@2x.png) | The pointing-hand cursor ([`pointingHand`](./nscursor/pointinghand.md)) |
+| ![disappearing item cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-disappearing-item@2x.png) | The disappearing item cursor ([`disappearingItem`](./nscursor/disappearingitem.md)) |
+| ![I-beam cursor for vertical layout](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-vertical-i-beam@2x.png) | The I-beam text cursor for vertical layout ([`iBeamCursorForVerticalLayout`](./nscursor/ibeamcursorforverticallayout.md)). |
+| ![operation not allowed cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-operation-not-allowed@2x.png) | The not allowed cursor ([`operationNotAllowed`](./nscursor/operationnotallowed.md)). |
+| ![drag link cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-drag-link@2x.png) | The drag link cursor ([`dragLink`](./nscursor/draglink.md)). |
+| ![drag copy cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-drag-copy@2x.png) | The drag copy cursor ([`dragCopy`](./nscursor/dragcopy.md)). |
+| ![contextual menu cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-contextual-menu@2x.png) | The contextual menu cursor ([`contextualMenu`](./nscursor/contextualmenu.md)). |
+| ![zoom-in cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-zoom-in@2x.png) | The zoom-in cursor ([`zoomIn`](./nscursor/zoomin.md)). |
+| ![zoom-out cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-zoom-out@2x.png) | The zoom-out cursor ([`zoomOut`](./nscursor/zoomout.md)). |
+| ![column-resize cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-left-right@2x.png) | The column-resize cursor, for a vertical divider that can move left or right ([`columnResize`](./nscursor/columnresize.md)). |
+| ![column-resize-left cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-left@2x.png) | The column-resize cursor, for a divider that can move only left ([`columnResize(directions:)`](./nscursor/columnresize%28directions%29.md) passing [`NSHorizontalDirection.left`](./nshorizontaldirection/left.md)). |
+| ![column-resize-right cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-right@2x.png) | The column-resize cursor, for a divider that can move only right ([`columnResize(directions:)`](./nscursor/columnresize%28directions%29.md) passing [`NSHorizontalDirection.right`](./nshorizontaldirection/right.md)). |
+| ![row-resize cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-up-down@2x.png) | The row-resize cursor, for a horizontal divider that can move up or down ([`rowResize`](./nscursor/rowresize.md)). |
+| ![row-resize-up cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-up@2x.png) | The row-resize cursor, for a divider that can move only up ([`rowResize(directions:)`](./nscursor/rowresize%28directions%29.md) passing [`NSVerticalDirection.up`](./nsverticaldirection/up.md)). |
+| ![row-resize-down cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-resize-down@2x.png) | The row-resize cursor, for a divider that can move only down ([`rowResize(directions:)`](./nscursor/rowresize%28directions%29.md) passing [`NSVerticalDirection.down`](./nsverticaldirection/down.md)). |
 
-In macOS 10.3 and later, cursor size is no longer limited to 16 by 16 pixels.
+To get a cursor for resizing a rectangular frame, use [`frameResize(position:directions:)`](./nscursor/frameresize%28position,directions%29.md). The `position` parameter selects the edge or corner of the frame, and the `directions` parameter is a set that specifies whether that edge or corner can resize outward, away from the center of the frame, inward, toward the center, or both. The cursor changes to show the allowed directions. The following table shows each variation for the top-left corner:
+
+| Cursor | Description |
+| --- | --- |
+| ![frame-resize cursor, top-left corner, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest@2x.png) | The frame-resize cursor for the top-left corner of a frame that can resize outward, away from its center. For example, `NSCursor.frameResize(position: .topLeft, directions: .outward)` |
+| ![frame-resize cursor, top-left corner, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-southeast@2x.png) | The frame-resize cursor for the top-left corner of a frame that can resize inward, toward its center. For example, `NSCursor.frameResize(position: .topLeft, directions: .inward)` |
+| ![frame-resize cursor, top-left corner, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest-southeast@2x.png) | The frame-resize cursor for the top-left corner of a frame that can resize either inward or outward. For example, `NSCursor.frameResize(position: .topLeft, directions: .all)` |
 
 ### Cursor rectangles
 
-In Cocoa, you can change the currently displayed cursor based on the position of the mouse over one of your views. You might use this technique to provide visual feedback about what actions the user can take with the mouse. For example, you might display one of the resize cursors whenever the mouse moves over a portion of your view that acts as a custom resizing handle. To set this up, you associate a cursor object with one or more cursor rectangles in the view.
+You can change the currently displayed cursor based on the position of the mouse over one of your views. You might use this technique to provide visual feedback about what actions the user can take with the mouse. For example, you might display one of the resize cursors whenever the mouse moves over a portion of your view that acts as a custom resizing handle. To set this up, you associate a cursor object with one or more cursor rectangles in the view.
 
-Cursor rectangles are a specialized type of tracking rectangles, which are used to monitor the mouse location in a view. Views implement cursor rectangles using tracking rectangles but provide methods for setting and refreshing cursor rectangles that are distinct from the generic tracking rectangle interface. For information on mouse-tracking and cursor-update events, see [`NSTrackingArea`](./nstrackingarea.md).
+Cursor rectangles are a specialized type of tracking rectangles, which monitor the mouse location in a view. Views implement cursor rectangles using tracking rectangles but provide methods for setting and refreshing cursor rectangles that are distinct from the generic tracking rectangle interface. For information on mouse-tracking and cursor-update events, see [`NSTrackingArea`](./nstrackingarea.md).
 
 ### Balancing cursor hiding and unhiding
 
-Each call to [`hide()`](./nscursor/hide%28%29.md) cursor must have a corresponding [`unhide()`](./nscursor/unhide%28%29.md) call. For example,
+Each call to [`hide()`](./nscursor/hide%28%29.md) must have a corresponding [`unhide()`](./nscursor/unhide%28%29.md) call. For example, the following code leaves the cursor hidden because the `hide` and `unhide` method invocations don’t balance.
+
+**Swift**:
+
+```swift
+NSCursor.hide()
+NSCursor.hide()
+// ...
+NSCursor.unhide()
+```
+
+**Objective-C**:
 
 ```objc
 [NSCursor hide];
@@ -66,7 +85,19 @@ Each call to [`hide()`](./nscursor/hide%28%29.md) cursor must have a correspondi
 [NSCursor unhide];
 ```
 
-Will result in the cursor still being hidden because the `hide` and `unhide` method invocations are not balanced. Instead you must balance the method calls, such as in the following example:
+Instead, balance the method calls, as in the following example:
+
+**Swift**:
+
+```swift
+NSCursor.hide()
+NSCursor.hide()
+// ...
+NSCursor.unhide()
+NSCursor.unhide()
+```
+
+**Objective-C**:
 
 ```objc
 [NSCursor hide];
@@ -76,7 +107,7 @@ Will result in the cursor still being hidden because the `hide` and `unhide` met
 [NSCursor unhide];
 ```
 
-There are corresponding cursor `hide` and `unhide` calls, thus the cursor will become visible.
+In the example above, there are corresponding cursor `hide` and `unhide` calls to hide or show the cursor.
 
 ## Topics
 
@@ -138,11 +169,11 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 - [class var columnResize: NSCursor](./nscursor/columnresize.md)
   Returns the cursor for resizing a column (vertical divider) in either direction.
 - [class func columnResize(directions: NSHorizontalDirection.Set) -> NSCursor](./nscursor/columnresize%28directions%29.md)
-  Returns the cursor for resizing a column (vertical divider) in the specified direction.
+  Returns the cursor for resizing a column (vertical divider) in the specified directions.
 - [class var rowResize: NSCursor](./nscursor/rowresize.md)
   Returns the cursor for resizing a row (horizontal divider) in either direction.
 - [class func rowResize(directions: NSVerticalDirection.Set) -> NSCursor](./nscursor/rowresize%28directions%29.md)
-  Returns the cursor for resizing a row (horizontal divider) in the specified direction.
+  Returns the cursor for resizing a row (horizontal divider) in the specified directions.
 - [class func frameResize(position: NSCursor.FrameResizePosition, directions: NSCursor.FrameResizeDirection.Set) -> NSCursor](./nscursor/frameresize%28position,directions%29.md)
   Returns the cursor for resizing a rectangular frame from the specified edge or corner.
 - [NSCursor.FrameResizeDirection](./nscursor/frameresizedirection.md)

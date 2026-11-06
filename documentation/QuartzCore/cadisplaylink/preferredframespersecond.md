@@ -7,11 +7,11 @@
 A frequency your app prefers for frame updates, affecting how often the system invokes your delegate’s callback.
 
 **Availability**:
-- iOS 10.0+ - Deprecated in 27.2
-- iPadOS 10.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
-- tvOS 10.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 10.0+ - Deprecated in 27.3
+- iPadOS 10.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
+- tvOS 10.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`preferredFrameRateRange`](./preferredframeraterange.md) instead.
 

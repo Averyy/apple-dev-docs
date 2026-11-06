@@ -332,6 +332,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 ## Relationships
 
 ### Conforms To
+- [AppEntityCollectionValue](../AppIntents/appentitycollectionvalue.md)
 - [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
 - [CVarArg](./cvararg.md)
 - [Collection](./collection.md)

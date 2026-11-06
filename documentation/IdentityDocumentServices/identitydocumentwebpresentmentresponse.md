@@ -25,6 +25,7 @@ protocol IdentityDocumentWebPresentmentResponse : Sendable
 - [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
 - [ISO18013MobileDocumentResponse](./iso18013mobiledocumentresponse.md)
+- [OpenID4VPResponse](./openid4vpresponse.md)
 
 ## See Also
 

@@ -24,6 +24,8 @@ let description: String?
 ## See Also
 
 ### Inspecting a dimension
+- [let name: String](./name.md)
+  The name of the dimension, used as the DataFrame column name.
 - [var metric: Metric](./metric.md)
   A metric identifier that uses this dimension’s name.
 - [let scale: ScoringScale](./scale.md)

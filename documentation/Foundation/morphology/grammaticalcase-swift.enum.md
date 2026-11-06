@@ -32,6 +32,7 @@ enum GrammaticalCase
 - [Morphology.GrammaticalCase.genitive](./grammaticalcase-swift.enum/genitive.md)
 - [Morphology.GrammaticalCase.illative](./grammaticalcase-swift.enum/illative.md)
 - [Morphology.GrammaticalCase.inessive](./grammaticalcase-swift.enum/inessive.md)
+- [Morphology.GrammaticalCase.instrumental](./grammaticalcase-swift.enum/instrumental.md)
 - [Morphology.GrammaticalCase.locative](./grammaticalcase-swift.enum/locative.md)
 - [Morphology.GrammaticalCase.nominative](./grammaticalcase-swift.enum/nominative.md)
 - [Morphology.GrammaticalCase.prepositional](./grammaticalcase-swift.enum/prepositional.md)

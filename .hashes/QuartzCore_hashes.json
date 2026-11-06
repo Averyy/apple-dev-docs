@@ -398,7 +398,7 @@
     },
     "https://developer.apple.com/documentation/quartzcore/cadisplaylink/preferredframespersecond": {
       "file_path": "documentation/QuartzCore/cadisplaylink/preferredframespersecond.md",
-      "hash": "d32562e5d6925db71f5bb77c5f823a19bd6a07081e8eb86536656b3bd6233aaf"
+      "hash": "bacdd5c84505ccf82db92134a0309a4906beeed9e2c563d670261d0f23e45869"
     },
     "https://developer.apple.com/documentation/quartzcore/cadisplaylink/remove(from:formode:)": {
       "file_path": "documentation/QuartzCore/cadisplaylink/remove(from,formode).md",
@@ -3194,7 +3194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/cadisplaylink/preferredframespersecond.json": {
       "file_path": "documentation/QuartzCore/cadisplaylink/preferredframespersecond.md",
-      "hash": "d32562e5d6925db71f5bb77c5f823a19bd6a07081e8eb86536656b3bd6233aaf"
+      "hash": "bacdd5c84505ccf82db92134a0309a4906beeed9e2c563d670261d0f23e45869"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/cadisplaylink/remove(from:formode:).json": {
       "file_path": "documentation/QuartzCore/cadisplaylink/remove(from,formode).md",

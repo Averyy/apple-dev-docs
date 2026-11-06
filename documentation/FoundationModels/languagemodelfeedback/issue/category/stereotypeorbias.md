@@ -11,6 +11,7 @@ A response that exhibits bias or perpetuates a stereotype.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -22,7 +23,7 @@ case stereotypeOrBias
 
 ## Discussion
 
-A stereotype or bias issue might be where you ask the model to summarize an article written by a male, and the model doesn’t state the authors sex, but the model uses male pronouns.
+A stereotype or bias issue might be where you ask the model to summarize an article written by a male, and the model doesn’t state the author’s sex, but the model uses male pronouns.
 
 ## See Also
 

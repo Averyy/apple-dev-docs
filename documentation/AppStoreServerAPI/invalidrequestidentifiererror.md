@@ -17,7 +17,7 @@ object InvalidRequestIdentifierError
 
 ## Discussion
 
-This error applies to the [`requestIdentifier`](./requestidentifier.md) you provide in the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md), [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md), and [`Get Status of Subscription Renewal Date Extensions`](./get-status-of-subscription-renewal-date-extensions.md) endpoints.
+This error applies to the [`requestIdentifier`](./requestidentifier.md) you provide in the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md), [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md), [`Get Status of Subscription Renewal Date Extensions`](./get-status-of-subscription-renewal-date-extensions.md), and [`Claim Seat`](./claim-seat.md) endpoints.
 
 For the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) and [`Get Status of Subscription Renewal Date Extensions`](./get-status-of-subscription-renewal-date-extensions.md) endpoints, the [`requestIdentifier`](./requestidentifier.md) needs to be a `UUID`.
 

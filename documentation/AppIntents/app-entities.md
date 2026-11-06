@@ -41,6 +41,8 @@ Define app entities for core types and concepts that you want to make available 
 ### Entity collections
 - [struct EntityCollection](./entitycollection.md)
   An array of entity identifiers that you use to improve the efficiency of operations involving large numbers of entities.
+- [protocol AppEntityCollectionValue](./appentitycollectionvalue.md)
+  An intent value that holds multiple app entities of the same type.
 ### Entity identity
 - [struct EntityIdentifier](./entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.

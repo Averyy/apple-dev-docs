@@ -7,13 +7,13 @@
 Adds a textual description of the value that the view contains.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: accessibilityValue(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: accessibilityValue(_:))
 
 > **Deprecated**: Use [`accessibilityValue(_:)`](./accessibilityvalue%28_%29-1esu1.md) instead.
 

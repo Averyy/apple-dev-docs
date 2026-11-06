@@ -7,13 +7,13 @@
 Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
-- iPadOS 16.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
-- Mac Catalyst 16.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
-- macOS 13.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
-- tvOS 16.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
+- iOS 16.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
+- iPadOS 16.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
+- Mac Catalyst 16.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
+- macOS 13.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
+- tvOS 16.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
 - visionOS 1.0+
-- watchOS 9.0+ - Deprecated in 27.2 (renamed: toolbarBackgroundVisibility(_:for:))
+- watchOS 9.0+ - Deprecated in 27.3 (renamed: toolbarBackgroundVisibility(_:for:))
 
 ## Declaration
 

@@ -2,17 +2,17 @@
 
 **Framework**: SwiftUI  
 **Role**: Sample Code  
-**Download**: [BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip](https://docs-assets.developer.apple.com/published/7f06a68fb95e/BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip)
+**Download**: [BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip](https://docs-assets.developer.apple.com/published/7f41275a530f/BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip)
 
 Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 **Availability**:
-- iOS 17.2+
-- iPadOS 17.2+
-- Mac Catalyst 17.2+
-- macOS 14.2+
-- watchOS 10.2+
-- Xcode 15.1+
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- watchOS 27.0+
+- Xcode 27.0+
 
 ## Overview
 

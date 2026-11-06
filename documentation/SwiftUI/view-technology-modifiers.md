@@ -239,6 +239,7 @@ For more information, see [Technology-specific views](./technology-specific-view
 - [func appStoreOverlay(isPresented: Binding<Bool>, configuration: () -> SKOverlay.Configuration) -> some View](./view/appstoreoverlay%28ispresented,configuration%29.md)
   Presents a StoreKit overlay when a given condition is true.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](./view/managesubscriptionssheet%28ispresented%29.md)
+  Presents the App Store sheet for managing subscriptions.
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](./view/refundrequestsheet%28for,ispresented,ondismiss%29.md)
   Display the refund request sheet for the given transaction.
 - [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](./view/offercoderedemption%28options,ispresented,oncompletion%29.md)
@@ -252,6 +253,7 @@ For more information, see [Technology-specific views](./technology-specific-view
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View](./view/inapppurchaseoptions%28_%29.md)
   Add a function to call before initiating a purchase from StoreKit view within this view, providing a set of options for the purchase.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>, subscriptionGroupID: String) -> some View](./view/managesubscriptionssheet%28ispresented,subscriptiongroupid%29.md)
+  Presents the App Store sheet for managing subscriptions for a subscription group.
 - [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View](./view/oninapppurchasecompletion%28perform%29.md)
   Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 - [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View](./view/oninapppurchasestart%28perform%29.md)

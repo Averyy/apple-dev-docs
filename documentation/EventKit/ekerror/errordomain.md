@@ -18,6 +18,12 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+### Error Domain
+- [let EKErrorDomain: String](../ekerrordomain.md)
+  A string that identifies the EventKit error domain.
+
 
 ---
 

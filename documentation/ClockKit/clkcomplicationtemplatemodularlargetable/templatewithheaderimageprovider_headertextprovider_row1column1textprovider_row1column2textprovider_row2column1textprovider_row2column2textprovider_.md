@@ -7,7 +7,7 @@
 Returns a template that has a header row with an image and text, and two columns of text.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

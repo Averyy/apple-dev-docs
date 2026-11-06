@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-A gesture that succeeds when the user performs a long press.
+A gesture that succeeds when a person performs a long press that elapses a minimum duration.
 
 **Availability**:
 - iOS 13.0+
@@ -28,6 +28,8 @@ struct LongPressGesture
 - [Composing SwiftUI gestures](./composing-swiftui-gestures.md)
 
 ## Overview
+
+The default minimum duration is `0.5` seconds.
 
 To recognize a long-press gesture on a view, create and configure the gesture, then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 
@@ -60,6 +62,8 @@ struct LongPressGestureView: View {
     }
 }
 ```
+
+> **Note**: The closure passed to [`onChanged(_:)`](./gesture/onchanged%28_%29.md) runs whenever the gesture’s value changes, starting as soon as a person begins interacting with the modified view.
 
 ## Topics
 

@@ -15,6 +15,7 @@ object UnlimitedResponseAsset
 ## Mentions
 
 - [Managing assets](./managing-assets.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
 
 ## Overview
 

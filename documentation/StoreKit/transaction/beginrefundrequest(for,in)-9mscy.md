@@ -31,6 +31,8 @@ When a customer requests a refund for consumable Apple In-App Purchases through 
 
 The App Store takes up to 48 hours to either approve or deny a refund.
 
+Refund requests in your app aren’t available for multiseat subscriptions. Direct the group purchaser to request a refund on the web instead; for more information, see [Request a refund for apps or content that you bought from Apple](https://support.apple.com/118223).
+
 For information about setting up your server to receive notifications, see [Enabling App Store Server Notifications](../enabling-app-store-server-notifications.md).
 
 > **Note**:  If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](../../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md) instead. For example usage, see [Food Truck: Building a SwiftUI multiplatform app](../../SwiftUI/food-truck-building-a-swiftui-multiplatform-app.md).

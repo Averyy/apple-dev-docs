@@ -22,6 +22,11 @@ init(style: UIGlassEffect.Style)
 + (UIGlassEffect *) effectWithStyle:(UIGlassEffectStyle) style;
 ```
 
+## See Also
+
+### Creating a glass effect
+- [UIGlassEffect.Style](./style.md)
+
 
 ---
 

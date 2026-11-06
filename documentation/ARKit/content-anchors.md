@@ -32,13 +32,13 @@ Anchors identify the position of items in your augmented reality session. Use an
   Estimate the shape of the physical environment using a polygonal mesh.
 - [Scanning and Detecting 3D Objects](./scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [class ARObjectAnchor](./arobjectanchor.md)
-  An anchor for a real-world 3D object that ARKit detects in the physical environment.
-- [class ARReferenceObject](./arreferenceobject.md)
-  The description of a 3D object that you want ARKit to detect in the physical environment.
 ### Object Tracking
 - [Using a reference object with ARKit in iOS](../visionOS/using-a-reference-object-with-arkit-in-ios.md)
   Track a real-world object in your iOS app by using a reference-object file.
+- [class ARObjectAnchor](./arobjectanchor.md)
+  An anchor for a real-world 3D object that ARKit detects in the physical environment.
+- [class ARReferenceObject](./arreferenceobject.md)
+  A 3D object that ARKit can detect or track in the scene.
 ### Body Position Tracking
 - [Capturing Body Motion in 3D](./capturing-body-motion-in-3d.md)
   Track a person in the physical environment and visualize their motion by applying the same body movements to a virtual character.

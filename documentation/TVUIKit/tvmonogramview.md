@@ -7,7 +7,7 @@
 A specialized lockup view that contains a circular image of a person or the person’s initials, along with a footer view.
 
 **Availability**:
-- tvOS 12.0+ - Deprecated in 27.2 (renamed: __TVMonogramContentConfiguration)
+- tvOS 12.0+ - Deprecated in 27.3 (renamed: __TVMonogramContentConfiguration)
 
 > **Deprecated**: Use [`TVMonogramContentView`](./tvmonogramcontentview.md) instead.
 

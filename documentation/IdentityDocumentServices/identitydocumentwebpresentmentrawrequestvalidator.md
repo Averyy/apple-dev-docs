@@ -26,6 +26,8 @@ struct IdentityDocumentWebPresentmentRawRequestValidator
 ### Instance Methods
 - [func validateISO18013MobileDocumentRequest(Data, origin: URL) throws -> ISO18013MobileDocumentRequest](./identitydocumentwebpresentmentrawrequestvalidator/validateiso18013mobiledocumentrequest%28_,origin%29.md)
   Validates an incoming raw ISO 18013-5 request.
+- [func validateOpenID4VPRequest(Data, exchangeProtocol: OpenID4VPExchangeProtocolIdentifier, origin: URL) throws -> OpenID4VPRequest](./identitydocumentwebpresentmentrawrequestvalidator/validateopenid4vprequest%28_,exchangeprotocol,origin%29.md)
+  Validates an incoming raw OpenID4VP request.
 
 ## See Also
 

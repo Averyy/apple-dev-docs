@@ -11,7 +11,7 @@ The App Store Connect API lets you choose which plan type — monthly or up-fron
 
 ### Review App Store Connect API usage
 
-To manage auto-renewable subscriptions with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md) and learn how to create API keys, generate JWTs, identify rate limits, and more.
+If you’re new to the App Store Connect API, start with [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md), [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), and [Identifying Rate Limits](./identifying-rate-limits.md).
 
 To configure subscription plan types and prices, be sure you have one of the following user roles:
 
@@ -221,7 +221,7 @@ For more information about subscription price points and prices, see [Subscripti
   Manage draft versions of an auto-renewable subscription’s localized metadata and review images before submitting for App Review.
 - [Querying adjusted subscription price equalizations](./querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
-- [Configuring multi-seat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
   Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](./subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.

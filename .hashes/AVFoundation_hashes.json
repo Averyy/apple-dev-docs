@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/AVFoundation": {
       "file_path": "documentation/AVFoundation/AVFoundation.md",
-      "hash": "6c16910786eecf7c7f1d469b663712e7efbc2ef301573b55f2bd9c4de7c428ae"
+      "hash": "8efbea26719ac55a548e6c36a42f0537b2c85832c59b1123f423e2a149aa2315"
     },
     "https://developer.apple.com/documentation/avfoundation/1805461-init": {
       "file_path": "documentation/AVFoundation/api-1805461-init.md",
@@ -434,7 +434,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avassetdownloadtask": {
       "file_path": "documentation/AVFoundation/avassetdownloadtask.md",
-      "hash": "9078e1607a9604897c25cffa919fbfecc6b9fdf9948642cf88e977e6f83bc968"
+      "hash": "fcd0d5bbe1ab5570fbe8f9e339559e1d9d0c44486c3cca4ff24bcf269260e9d6"
     },
     "https://developer.apple.com/documentation/avfoundation/avassetdownloadtask/destinationurl": {
       "file_path": "documentation/AVFoundation/avassetdownloadtask/destinationurl.md",
@@ -478,7 +478,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession": {
       "file_path": "documentation/AVFoundation/avassetdownloadurlsession.md",
-      "hash": "c10e49e7103dee6e2cbe9259b2f7e21faea5737195a8d31b1f57a7df034ef366"
+      "hash": "3f59a8dc22bcc79cc01aaf59b91ef94f519743a2ab5125cbf113941b15b65619"
     },
     "https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession/aggregateassetdownloadtask(with:mediaselections:assettitle:assetartworkdata:options:)": {
       "file_path": "documentation/AVFoundation/avassetdownloadurlsession/aggregateassetdownloadtask(with,mediaselections,assettitle,assetartworkdata,options).md",
@@ -3182,7 +3182,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avcam-building-a-camera-app": {
       "file_path": "documentation/AVFoundation/avcam-building-a-camera-app.md",
-      "hash": "86df17575c91190967c56ad07c111edd271a9f8d239a772db0c08020aea0cf89"
+      "hash": "5d12a73427325a6014fd16a4540487fc36eaf7bb8e9fc1813623c5cb4782829f"
     },
     "https://developer.apple.com/documentation/avfoundation/avcambarcode-detecting-barcodes-and-faces": {
       "file_path": "documentation/AVFoundation/avcambarcode-detecting-barcodes-and-faces.md",
@@ -9442,11 +9442,11 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest.md",
-      "hash": "401e625e1766fdce5a029f4612541406a13ced6440b570ee79f5009a4da7f7c9"
+      "hash": "7358e2ead2a04c2e72826688e9beb3bc2655c88faa21b9bc99466837eb6343c5"
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/canbefulfilledwithadvisorykey": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest/canbefulfilledwithadvisorykey.md",
-      "hash": "2704d1498e99f62b5f9e709ad8655ef5b89504f8aca01305a7a283067a2108d1"
+      "hash": "10029b9fefee3b8d3f4594c70ddb3360e4fad2ec45bd0d9f1b6de807c1a18b15"
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/canprovidepersistablecontentkey": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest/canprovidepersistablecontentkey.md",
@@ -9598,7 +9598,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeysession": {
       "file_path": "documentation/AVFoundation/avcontentkeysession.md",
-      "hash": "b98f396c303db04b24057fe7e8bc50b8dcc01f84197f8f99559642215426ca53"
+      "hash": "097e489013e738db2f2e065400f12232828b1c0ba78ce51217834f7779c3efb3"
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeysession/addcontentkeyrecipient(_:)": {
       "file_path": "documentation/AVFoundation/avcontentkeysession/addcontentkeyrecipient(_).md",
@@ -9682,7 +9682,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeysession/supportsadvisorykeys": {
       "file_path": "documentation/AVFoundation/avcontentkeysession/supportsadvisorykeys.md",
-      "hash": "65906a4f4a188bb88c4b339cc87df583956b04fd75d9aaf7324f7fadb31a3ecf"
+      "hash": "cea2a368a48a49cb095de5a39269bbfb59817df8c08c82318bcfe7ab443f1b5c"
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkeysessiondelegate": {
       "file_path": "documentation/AVFoundation/avcontentkeysessiondelegate.md",
@@ -11746,7 +11746,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avmediacharacteristic/signlanguageinterpretationforaccessibility": {
       "file_path": "documentation/AVFoundation/avmediacharacteristic/signlanguageinterpretationforaccessibility.md",
-      "hash": "ac26c846895ba980b4a6ae39c55761e9ea3c9f2f188633f9dcd0181527f5ab07"
+      "hash": "6e771507968b806cda9e982c604f8110a74910c0e8ec4ef0ab4d34f22831c158"
     },
     "https://developer.apple.com/documentation/avfoundation/avmediacharacteristic/tactileminimal": {
       "file_path": "documentation/AVFoundation/avmediacharacteristic/tactileminimal.md",
@@ -12174,7 +12174,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier.md",
-      "hash": "f104c6e7203320fc946f9bf1445855e347b7044474bb34010ecb301cc45de275"
+      "hash": "5df02c35d35b9c427deb10d9e842fb5cd1dd66a85dcc015f78d91951a1c634d1"
     },
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/commonidentifieraccessibilitydescription": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/commonidentifieraccessibilitydescription.md",
@@ -12724,6 +12724,14 @@
       "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdataaccessibilitydescription.md",
       "hash": "29b24904221bca63b06faba4ddab3d9c6feb6a2e926bf8a186f1029b1fd9c361"
     },
+    "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/isouserdataaudiostreamloudness": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdataaudiostreamloudness.md",
+      "hash": "1431b61024fdfeba117665bbceb87f352ba8de20a403c6e053250c71a8c6566f"
+    },
+    "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol.md",
+      "hash": "d53755916eae81f4910129be633a0c21841f62e4f49b6274352d66c7517e24eb"
+    },
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/isouserdatacopyright": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdatacopyright.md",
       "hash": "6ffa8dc182ff11418cb7183eb00c78fbbeb495136aed718fc78dcc588d7f7bd3"
@@ -13220,6 +13228,10 @@
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataartist.md",
       "hash": "561ebdf6ed4bd8b07aacf4c0abe0d5d8523258114acb13cb2703d9bc200d9b92"
     },
+    "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimeuserdataaudiostreamloudness": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataaudiostreamloudness.md",
+      "hash": "dd7290c2ffc2d227808e0f9370eeb064c6a26080113f24abe03d15d614497826"
+    },
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimeuserdataauthor": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataauthor.md",
       "hash": "bd71e3c84e7a8694b90d9cca25fb547169fb0dace650c887e48f8396b14691ad"
@@ -13235,6 +13247,10 @@
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacomposer": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacomposer.md",
       "hash": "2c033ac072e572264f89718f34cbfcfbdb30ac81793cd5c693717bd72bd7e10f"
+    },
+    "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol.md",
+      "hash": "fc00b359ca8feff6ef4c9b6fcfa6117fd8ec60c85a073563609c09535c18bed2"
     },
     "https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacopyright": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacopyright.md",
@@ -20730,7 +20746,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/avurlasset": {
       "file_path": "documentation/AVFoundation/avurlasset.md",
-      "hash": "33a0a0d935aedf99314c94eb495ce9102b5207c910d6333efbe50456ff1d494e"
+      "hash": "20dff8710664b27543f7063d05d4979f443ff501c0a9355b478a22d33ee5c05d"
     },
     "https://developer.apple.com/documentation/avfoundation/avurlasset-async-properties": {
       "file_path": "documentation/AVFoundation/avurlasset-async-properties.md",
@@ -20799,6 +20815,10 @@
     "https://developer.apple.com/documentation/avfoundation/avurlasset/resourceloader": {
       "file_path": "documentation/AVFoundation/avurlasset/resourceloader.md",
       "hash": "6573c36e08cca91305540580c937ae7999866df5ae7bb4c7a97bcc88323acc02"
+    },
+    "https://developer.apple.com/documentation/avfoundation/avurlasset/setupconnection(for:options:completionhandler:)": {
+      "file_path": "documentation/AVFoundation/avurlasset/setupconnection(for,options,completionhandler).md",
+      "hash": "21ae44690e5bd95d71443969fa6246cab0fbd49b76cf07db253e89a6474a0073"
     },
     "https://developer.apple.com/documentation/avfoundation/avurlasset/sidecarurl": {
       "file_path": "documentation/AVFoundation/avurlasset/sidecarurl.md",
@@ -22026,7 +22046,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/building-a-responsive-camera-app-that-launches-quickly": {
       "file_path": "documentation/AVFoundation/building-a-responsive-camera-app-that-launches-quickly.md",
-      "hash": "02d6082c1cbece563ba877f2de30afec20a678175baf9cb75c8a7e63d0f0d26a"
+      "hash": "9b64a46a7e9e58b6fe3be2d77f85a6fa5547536c2e2985803b6e14c0b8df113d"
     },
     "https://developer.apple.com/documentation/avfoundation/caption-authoring": {
       "file_path": "documentation/AVFoundation/caption-authoring.md",
@@ -22386,7 +22406,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/supporting-device-rotation-in-your-camera-app": {
       "file_path": "documentation/AVFoundation/supporting-device-rotation-in-your-camera-app.md",
-      "hash": "20706e4a418d44b47bf76ca42bf8477ccd611740f0c63e05610befb2c684895e"
+      "hash": "37c4e49c76c72b2cc89db46b343c34c07ba69116e3db3fc7f54c3af863447bd5"
     },
     "https://developer.apple.com/documentation/avfoundation/supporting-remote-interactions-in-tvos": {
       "file_path": "documentation/AVFoundation/supporting-remote-interactions-in-tvos.md",
@@ -22430,7 +22450,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/AVFoundation.json": {
       "file_path": "documentation/AVFoundation/AVFoundation.md",
-      "hash": "6c16910786eecf7c7f1d469b663712e7efbc2ef301573b55f2bd9c4de7c428ae"
+      "hash": "8efbea26719ac55a548e6c36a42f0537b2c85832c59b1123f423e2a149aa2315"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/1805461-init.json": {
       "file_path": "documentation/AVFoundation/api-1805461-init.md",
@@ -22862,7 +22882,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avassetdownloadtask.json": {
       "file_path": "documentation/AVFoundation/avassetdownloadtask.md",
-      "hash": "9078e1607a9604897c25cffa919fbfecc6b9fdf9948642cf88e977e6f83bc968"
+      "hash": "fcd0d5bbe1ab5570fbe8f9e339559e1d9d0c44486c3cca4ff24bcf269260e9d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avassetdownloadtask/destinationurl.json": {
       "file_path": "documentation/AVFoundation/avassetdownloadtask/destinationurl.md",
@@ -22906,7 +22926,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avassetdownloadurlsession.json": {
       "file_path": "documentation/AVFoundation/avassetdownloadurlsession.md",
-      "hash": "c10e49e7103dee6e2cbe9259b2f7e21faea5737195a8d31b1f57a7df034ef366"
+      "hash": "3f59a8dc22bcc79cc01aaf59b91ef94f519743a2ab5125cbf113941b15b65619"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avassetdownloadurlsession/aggregateassetdownloadtask(with:mediaselections:assettitle:assetartworkdata:options:).json": {
       "file_path": "documentation/AVFoundation/avassetdownloadurlsession/aggregateassetdownloadtask(with,mediaselections,assettitle,assetartworkdata,options).md",
@@ -25610,7 +25630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcam-building-a-camera-app.json": {
       "file_path": "documentation/AVFoundation/avcam-building-a-camera-app.md",
-      "hash": "86df17575c91190967c56ad07c111edd271a9f8d239a772db0c08020aea0cf89"
+      "hash": "5d12a73427325a6014fd16a4540487fc36eaf7bb8e9fc1813623c5cb4782829f"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcambarcode-detecting-barcodes-and-faces.json": {
       "file_path": "documentation/AVFoundation/avcambarcode-detecting-barcodes-and-faces.md",
@@ -31870,11 +31890,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeyrequest.json": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest.md",
-      "hash": "401e625e1766fdce5a029f4612541406a13ced6440b570ee79f5009a4da7f7c9"
+      "hash": "7358e2ead2a04c2e72826688e9beb3bc2655c88faa21b9bc99466837eb6343c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeyrequest/canbefulfilledwithadvisorykey.json": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest/canbefulfilledwithadvisorykey.md",
-      "hash": "2704d1498e99f62b5f9e709ad8655ef5b89504f8aca01305a7a283067a2108d1"
+      "hash": "10029b9fefee3b8d3f4594c70ddb3360e4fad2ec45bd0d9f1b6de807c1a18b15"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeyrequest/canprovidepersistablecontentkey.json": {
       "file_path": "documentation/AVFoundation/avcontentkeyrequest/canprovidepersistablecontentkey.md",
@@ -32026,7 +32046,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeysession.json": {
       "file_path": "documentation/AVFoundation/avcontentkeysession.md",
-      "hash": "b98f396c303db04b24057fe7e8bc50b8dcc01f84197f8f99559642215426ca53"
+      "hash": "097e489013e738db2f2e065400f12232828b1c0ba78ce51217834f7779c3efb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeysession/addcontentkeyrecipient(_:).json": {
       "file_path": "documentation/AVFoundation/avcontentkeysession/addcontentkeyrecipient(_).md",
@@ -32110,7 +32130,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeysession/supportsadvisorykeys.json": {
       "file_path": "documentation/AVFoundation/avcontentkeysession/supportsadvisorykeys.md",
-      "hash": "65906a4f4a188bb88c4b339cc87df583956b04fd75d9aaf7324f7fadb31a3ecf"
+      "hash": "cea2a368a48a49cb095de5a39269bbfb59817df8c08c82318bcfe7ab443f1b5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkeysessiondelegate.json": {
       "file_path": "documentation/AVFoundation/avcontentkeysessiondelegate.md",
@@ -34174,7 +34194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmediacharacteristic/signlanguageinterpretationforaccessibility.json": {
       "file_path": "documentation/AVFoundation/avmediacharacteristic/signlanguageinterpretationforaccessibility.md",
-      "hash": "ac26c846895ba980b4a6ae39c55761e9ea3c9f2f188633f9dcd0181527f5ab07"
+      "hash": "6e771507968b806cda9e982c604f8110a74910c0e8ec4ef0ab4d34f22831c158"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmediacharacteristic/tactileminimal.json": {
       "file_path": "documentation/AVFoundation/avmediacharacteristic/tactileminimal.md",
@@ -34602,7 +34622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier.md",
-      "hash": "f104c6e7203320fc946f9bf1445855e347b7044474bb34010ecb301cc45de275"
+      "hash": "5df02c35d35b9c427deb10d9e842fb5cd1dd66a85dcc015f78d91951a1c634d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/commonidentifieraccessibilitydescription.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/commonidentifieraccessibilitydescription.md",
@@ -35152,6 +35172,14 @@
       "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdataaccessibilitydescription.md",
       "hash": "29b24904221bca63b06faba4ddab3d9c6feb6a2e926bf8a186f1029b1fd9c361"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/isouserdataaudiostreamloudness.json": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdataaudiostreamloudness.md",
+      "hash": "1431b61024fdfeba117665bbceb87f352ba8de20a403c6e053250c71a8c6566f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol.json": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdatacontenttypeforloudnesscontrol.md",
+      "hash": "d53755916eae81f4910129be633a0c21841f62e4f49b6274352d66c7517e24eb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/isouserdatacopyright.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/isouserdatacopyright.md",
       "hash": "6ffa8dc182ff11418cb7183eb00c78fbbeb495136aed718fc78dcc588d7f7bd3"
@@ -35648,6 +35676,10 @@
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataartist.md",
       "hash": "561ebdf6ed4bd8b07aacf4c0abe0d5d8523258114acb13cb2703d9bc200d9b92"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/quicktimeuserdataaudiostreamloudness.json": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataaudiostreamloudness.md",
+      "hash": "dd7290c2ffc2d227808e0f9370eeb064c6a26080113f24abe03d15d614497826"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/quicktimeuserdataauthor.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdataauthor.md",
       "hash": "bd71e3c84e7a8694b90d9cca25fb547169fb0dace650c887e48f8396b14691ad"
@@ -35663,6 +35695,10 @@
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacomposer.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacomposer.md",
       "hash": "2c033ac072e572264f89718f34cbfcfbdb30ac81793cd5c693717bd72bd7e10f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol.json": {
+      "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacontenttypeforloudnesscontrol.md",
+      "hash": "fc00b359ca8feff6ef4c9b6fcfa6117fd8ec60c85a073563609c09535c18bed2"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avmetadataidentifier/quicktimeuserdatacopyright.json": {
       "file_path": "documentation/AVFoundation/avmetadataidentifier/quicktimeuserdatacopyright.md",
@@ -43166,7 +43202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avurlasset.json": {
       "file_path": "documentation/AVFoundation/avurlasset.md",
-      "hash": "33a0a0d935aedf99314c94eb495ce9102b5207c910d6333efbe50456ff1d494e"
+      "hash": "20dff8710664b27543f7063d05d4979f443ff501c0a9355b478a22d33ee5c05d"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avurlasset/assetcache.json": {
       "file_path": "documentation/AVFoundation/avurlasset/assetcache.md",
@@ -43227,6 +43263,10 @@
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avurlasset/resourceloader.json": {
       "file_path": "documentation/AVFoundation/avurlasset/resourceloader.md",
       "hash": "6573c36e08cca91305540580c937ae7999866df5ae7bb4c7a97bcc88323acc02"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avurlasset/setupconnection(for:options:completionhandler:).json": {
+      "file_path": "documentation/AVFoundation/avurlasset/setupconnection(for,options,completionhandler).md",
+      "hash": "21ae44690e5bd95d71443969fa6246cab0fbd49b76cf07db253e89a6474a0073"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avurlasset/sidecarurl.json": {
       "file_path": "documentation/AVFoundation/avurlasset/sidecarurl.md",
@@ -44454,7 +44494,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/building-a-responsive-camera-app-that-launches-quickly.json": {
       "file_path": "documentation/AVFoundation/building-a-responsive-camera-app-that-launches-quickly.md",
-      "hash": "02d6082c1cbece563ba877f2de30afec20a678175baf9cb75c8a7e63d0f0d26a"
+      "hash": "9b64a46a7e9e58b6fe3be2d77f85a6fa5547536c2e2985803b6e14c0b8df113d"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/caption-authoring.json": {
       "file_path": "documentation/AVFoundation/caption-authoring.md",
@@ -44814,7 +44854,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/supporting-device-rotation-in-your-camera-app.json": {
       "file_path": "documentation/AVFoundation/supporting-device-rotation-in-your-camera-app.md",
-      "hash": "20706e4a418d44b47bf76ca42bf8477ccd611740f0c63e05610befb2c684895e"
+      "hash": "37c4e49c76c72b2cc89db46b343c34c07ba69116e3db3fc7f54c3af863447bd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/supporting-remote-interactions-in-tvos.json": {
       "file_path": "documentation/AVFoundation/supporting-remote-interactions-in-tvos.md",
@@ -44861,6 +44901,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 11214
+    "total_pages": 11224
   }
 }

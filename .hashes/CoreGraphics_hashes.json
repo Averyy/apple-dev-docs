@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/CoreGraphics": {
       "file_path": "documentation/CoreGraphics/CoreGraphics.md",
-      "hash": "3e46e4ec9fd69f540a2ee256f278ed2aaed4c065763afa94cf9290c3a05ea347"
+      "hash": "0bb7d2c2fb5f77726642704f06a727d80d424e6a26d109ccd242bcd87f02be4f"
     },
     "https://developer.apple.com/documentation/coregraphics/acos(_:)": {
       "file_path": "documentation/CoreGraphics/acos(_).md",
@@ -226,7 +226,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapcontextreleasedatacallback": {
       "file_path": "documentation/CoreGraphics/cgbitmapcontextreleasedatacallback.md",
-      "hash": "464859cc65e62eb33b39b3b226539da1c303b00429905111c442b479ed47591b"
+      "hash": "0185cf9b51ca2d20cc51d447ca76dff145792aeab39a604c396810840f7f0979"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo.md",
@@ -238,7 +238,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/alphainfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/alphainfomask.md",
-      "hash": "5d2467be31be577abecb56ef658afcddd15543cd947f2d8515c80a662309063e"
+      "hash": "95fdcde338d499b288c1bc416bfa48e2d8b45934655b0b4cec577973c1a2c503"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder.md",
@@ -246,27 +246,27 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder16big": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder16big.md",
-      "hash": "5d8a77f8495f88b9616e9896d5623202afba4abf59fa57b7fec1eb595de0b2ed"
+      "hash": "e3948849d582584c71e348192f37beabbfd6f8e0d6d1d5341eb005d397145c64"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder16little": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder16little.md",
-      "hash": "33ec5fa20706e05d6f242498b7f528a07389744f58cfa2e25c0ac3419c89c9df"
+      "hash": "f00d15e93f0078a6978b237fea9706cb6e4d201347ede2927848ab546a756c0c"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder32big": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder32big.md",
-      "hash": "82202018886d94a736024e938c1d117118d9b956e7ab03f50909b82779a05b66"
+      "hash": "b3239f91da75067207cfcaf117de6161e9fe15634d529ed78c43e3435f0a33df"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder32little": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder32little.md",
-      "hash": "178ed675506e782ad218a92b75489856e88cc8884179c2df30bedf5bfb70fb07"
+      "hash": "449a116c6651c94115cc08961a8881a665f59b833f27db3e6ce85e7cebc88ccc"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorderdefault": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorderdefault.md",
-      "hash": "c2844e8967216ec2adec288949fed432283e6a5819a41046c8f8653009d47ade"
+      "hash": "38c20ebe777b918b0d536ac13e00646d1d73e6d3b8c354940ccb5cc1195ef920"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteordermask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteordermask.md",
-      "hash": "a07eaeaf130a2b03183a53dfb1d55eeb906c33c6cfeda90852e765114f68e506"
+      "hash": "1399b492a913424ea69a73d0b693e579ff95ab1f0d7a583a91747ad9f812050e"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/component": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/component.md",
@@ -274,31 +274,31 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/contains(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/contains(_).md",
-      "hash": "a707f58abbbe576cce43a55a8ba25817cb9efdc326f9015f6c6d67a9958c65d6"
+      "hash": "695bdcc3d10fb43705d22930a0e56f8beb4df7d58e7c187924eb0f4757682420"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/floatcomponents": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/floatcomponents.md",
-      "hash": "2ef73089d0ea0b3b782e78738bee5899211b62ce59cbeaf10af670932f112b35"
+      "hash": "f6a0552f5efff8311fcb58ef1c5b865446809aa2052658f7be3f894e84750840"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/floatinfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/floatinfomask.md",
-      "hash": "fa2cc254c67aa8d15aad8ffd51ec51dff628e2ecdd7862bc11401ddc1bf66960"
+      "hash": "540dbcd61b5d8267504508c80c3ac880205765f0813b54b4a8e243bb47bad576"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/formintersection(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formintersection(_).md",
-      "hash": "95829bbf23e98f7cc76ccc837a9e69dda802a6ad866ea391958842d81a03c66e"
+      "hash": "9544a6e666ac00462789835de04c8093d553503d4a1341e3a11a58d8869b587a"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/formsymmetricdifference(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formsymmetricdifference(_).md",
-      "hash": "8ef988b0d2eba4bbca67a236195a9146223bfe8c94d88e439e67c17353296a10"
+      "hash": "7bc1e31fd0a637f7941fb9a0dbf1a0f4c3b75d06eaca7302a2589827b1e42763"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/formunion(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formunion(_).md",
-      "hash": "ee164768364b76750a9d4bd8aade5b62cb1115289068c5fe234b17338caf38d4"
+      "hash": "d067727538a064f9507d92b58e91c51cd15370eed8b3ad0c2272b54e97b9961e"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/init(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(_).md",
-      "hash": "47200fbd84baf1da0b92a84e937bae7223bd971854d22e84216f54b80c96a6ac"
+      "hash": "0d0b245e0522e4780f005fd369947c8960f1593727e8f5c24c965685299084d8"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/init(alpha:component:byteorder:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(alpha,component,byteorder).md",
@@ -310,7 +310,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/init(arrayliteral:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(arrayliteral).md",
-      "hash": "2a4d0b7406183cb2ef8566a29f64f52864007cc7999693e95ca965d4424aeb60"
+      "hash": "d2ee594a0eb9532eae1c84e5684de649c9df7270dc74beb3978eb89d2570ca23"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/init(rawvalue:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(rawvalue).md",
@@ -318,27 +318,27 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/insert(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/insert(_).md",
-      "hash": "1c4823632bd8ba954431488671763b45229b15cd001f52b0b044ef8ef1c8fc5c"
+      "hash": "274dbe20d4cc5dddd744a0b29868c1c8668a07a4045dcd4a796fe044f18a4309"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/intersection(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/intersection(_).md",
-      "hash": "6d948aef98cf00815ee0a59b84f9fbf2b09f14a531728c09e2e2405a08b26830"
+      "hash": "78eda4aef46124d95ae374e631a60ac33e335cf34c9734b9f1f4841861f40567"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/isdisjoint(with:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/isdisjoint(with).md",
-      "hash": "59ba439cd594625d05db111a9f86c8a41644da1858757d6c5b9888f6a5b7e6a7"
+      "hash": "46d7e45f061800150424e1b509fd51aee5c3cbd64d25318d1bc425b5379dbdbd"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/isempty": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/isempty.md",
-      "hash": "3d06852464a7934a0b7b252b422ebeeec48d67d3c58787999d190c39e1ce39e4"
+      "hash": "db0ef98de49c357200052a9ebd0687aeaf04bbe5424f7253e6de0551cb633af5"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/issubset(of:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/issubset(of).md",
-      "hash": "75f9221ab72089d3ad0d1fb6e8e4d27e8bc1d2ba8c1765a3640a810fa93248cc"
+      "hash": "9314656e9d8639cf85dd82229057bb7795aec7f6c18a9c4e6713181caf52e3c0"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/issuperset(of:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/issuperset(of).md",
-      "hash": "8f89ec666734a6dbc6be0c86ee316c0cb18242e0f2ceb6aec441918908de0359"
+      "hash": "728aa36b5957e1585b1cfca1d6a3a688d2f5e6fd1b4f5034cd0f3fe1c0a216a1"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/kcgbitmapalphainfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapalphainfomask.md",
@@ -350,7 +350,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/kcgbitmapbyteordermask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapbyteordermask.md",
-      "hash": "a9c85922e4012a39bbc245f7403ec73624838e7503ff85a675015f37ea3ae6e4"
+      "hash": "b2e9d447bb491a2a076f82b69a2455baa7c584d61423c36441ffcb9f7a6fc4ed"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/kcgbitmapcomponentinfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapcomponentinfomask.md",
@@ -358,7 +358,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/kcgbitmapfloatinfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapfloatinfomask.md",
-      "hash": "ebcc019cde8f0c2d7cdc2a2d798c97439240f66c88fc94ecd6f711729ec0eff8"
+      "hash": "43ad1d3a932dbbc6dbdb3538dd566e61fbb99d848cdec469eac797d616932267"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/kcgbitmappixelformatinfomask": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmappixelformatinfomask.md",
@@ -370,27 +370,27 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/remove(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/remove(_).md",
-      "hash": "9d378313b59c0c51789c1753dff55267d8d5b9fea45a2be976f67a0089625eaf"
+      "hash": "e5a387a4e51ffc9fa1e593dbac1e2b2216afac5f6f33e2628a8f90a40876dec9"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/subtract(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/subtract(_).md",
-      "hash": "dac8ad30f74a0af1bfb73f2d1e1561f0ba4eb2ab96ebdb20af93644695e0caae"
+      "hash": "46de1879d3bd9169638c1f4de8ee0ea5067c8b23f05b61165bbb7f71d472cc30"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/subtracting(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/subtracting(_).md",
-      "hash": "b116a72ccaf0f358423b58e8ef0097b12985ab9cbef9c189afefe1247779f860"
+      "hash": "57616ef71c122dc73129d888e14ebeb0c1417dcaa7676e7444a027880314177c"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/symmetricdifference(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/symmetricdifference(_).md",
-      "hash": "8baa30154a66679216336fe145a3989c7fd129d9ab342f922b22546ae075c70a"
+      "hash": "9fd215c23cb93ae1656126ddd3311a904c22312e02a5fd8f60b5bb2eb48c0e89"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/union(_:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/union(_).md",
-      "hash": "8ca43e21489e36d3cc13daa7721b4122b138dc3a7b8b66d9c9b1b6d3ae0ef680"
+      "hash": "61632a135498d1cb4a0c302faf47932d02b8ae7934082905887ff0cc11ce1e87"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/update(with:)": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/update(with).md",
-      "hash": "fee8974c6205a2223c476e0941c17e30baebe62be851e66ad539a7984f3ddd07"
+      "hash": "d8687a4ffd73c0962e6d122db050d5f1e78a174bf9ae534980636ddad824f82c"
     },
     "https://developer.apple.com/documentation/coregraphics/cgbitmapinfomake": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfomake.md",
@@ -802,7 +802,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo.md",
-      "hash": "8553a5b1e27f8f86e35dffa51519d707b02425943bebca75b65d5320443e5767"
+      "hash": "c4ea9f3d4b9c41e93c207e54d811b24d513fea8f86f071a5d223407a76735140"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo/convert(width:height:to:format:from:format:options:)": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/convert(width,height,to,format,from,format,options).md",
@@ -810,15 +810,15 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo/init(optionssrc:dst:options:)": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(optionssrc,dst,options).md",
-      "hash": "e3f2c8e3371912bd8da94396e6c62583a041de664d5bbc9e8b9407883ab35273"
+      "hash": "3a53570ba9aab8e7d41212671a34ce706935203fa9e08d4f4a3e4521dc502aee"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo/init(src:dst:)": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(src,dst).md",
-      "hash": "e09b35d55d448677ccc834ed6e133defaefabe79ab56f1487815031c1a1b0ee9"
+      "hash": "aff27366f4796872741b2f0338531fc98d5b134a2725569969cce14634b060e4"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:_:)": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(src,srcheadroom,dst,dstheadroom,tonemapping,options,_).md",
-      "hash": "d600a2943c515705a46e7f473d7a367020f3a6e522c317324d6f3dac79a58acc"
+      "hash": "6a95802b09bcaf33b0b5bbab74c13d0d23bc20505fea50cc372138cedeb471f7"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo/typeid": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/typeid.md",
@@ -826,7 +826,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfocreatefromlist": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfocreatefromlist.md",
-      "hash": "687d27d2d0cfba81067fe05ea8de72c69e8b3d0ab719d73b61407b34f692b25f"
+      "hash": "a9ec764b4d65fd64d84862edd3cb5a5fae56ecc019bafad9647b01870f89e344"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfocreatefromlistwitharguments": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfocreatefromlistwitharguments.md",
@@ -834,7 +834,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfotransformtype": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfotransformtype.md",
-      "hash": "9c9a933dbbcd0f44781fbdbb209d68e7b3e72ccc46f633fd70674e25225db9e2"
+      "hash": "b6dd66354ec8e69e288f0af2d629b36ff28dd0dd07e181f5fe364bdde62df9d2"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfotransformtype/init(rawvalue:)": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfotransformtype/init(rawvalue).md",
@@ -1594,7 +1594,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext": {
       "file_path": "documentation/CoreGraphics/cgcontext.md",
-      "hash": "20323a9edbe6542422710acc1555b411158576f1ea968412bb70758f7b079c23"
+      "hash": "a57ec7f05fab650ea8e81ef25e26730952a1d75ddce5ea7ac5f59073bff2d7ac"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/addarc(center:radius:startangle:endangle:clockwise:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/addarc(center,radius,startangle,endangle,clockwise).md",
@@ -1890,19 +1890,19 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-10b3i": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo)-10b3i.md",
-      "hash": "4f6d78995295526bc9f092481e6d3030c6a5bffb934869e3730f6238f12bee8d"
+      "hash": "8a2bf05ac03623a9774edc08dec0e3cd5e4f679f8fac6cc1d4f26d1bfeb9480f"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-4fkaf": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo)-4fkaf.md",
-      "hash": "3954a3edb5ac55b3868237e24ed69f92f59517ffe2cc5e25fa2f1ec2a67cd209"
+      "hash": "680295e72002fa41ccfe781dc7f4570d98567d1e03714c1fd066d0bba569257b"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-4yzt5": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo)-4yzt5.md",
-      "hash": "b8068c505a0dab1eec094b97f67f32391913c18868f7267031d142ab142ef1ab"
+      "hash": "79a3e6d35dfc35c5b0e049be35daafb80844cf9aa80a0e1e030253a285aa1043"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-71ea9": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo)-71ea9.md",
-      "hash": "89c8d427f772887094f98922e39e4249ac4308a3254542f344d524543398f14b"
+      "hash": "6879c2dcb5e6fb362496d8d895485ab519a1cbb4b268fed2e5646639ee3506f0"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/interpolationquality": {
       "file_path": "documentation/CoreGraphics/cgcontext/interpolationquality.md",
@@ -1954,7 +1954,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/selectfont(name:size:textencoding:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/selectfont(name,size,textencoding).md",
-      "hash": "f8c45bc337e0e259ef002c749965fc41d9c84db06350878f038ea22fae6becb8"
+      "hash": "d13496770b72ac1614ac79dcb006ee41d93cd4abad2c443513d73a9bb779e476"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setallowsantialiasing(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsantialiasing(_).md",
@@ -1962,15 +1962,15 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setallowsfontsmoothing(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsmoothing(_).md",
-      "hash": "f697eed1e511b7de74bb8382f7108a860998844f5abe00a7a819ad05fc912ac5"
+      "hash": "64651be6da0cb57911149fcb1e603b91252436de342192c48d429821031825dd"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setallowsfontsubpixelpositioning(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsubpixelpositioning(_).md",
-      "hash": "d8dc3fd06ea6a955dafd091485aea09230bf931bafec509a5d499de255bdc317"
+      "hash": "fd05f132df5a7a72188ed3b8521be9b7d6f218445c3e5747c1db63b59962c1cb"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setallowsfontsubpixelquantization(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsubpixelquantization(_).md",
-      "hash": "1b4e63546b8ce1a2935ab765e57716a576ec6974439be35b8f12437cdab79826"
+      "hash": "dc04c7d9e42220094a7dfe3ecd95855f35f921ba969c0db14ec004c68bdb90ec"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setalpha(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setalpha(_).md",
@@ -1982,7 +1982,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setcharacterspacing(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setcharacterspacing(_).md",
-      "hash": "8478af0acde9fe42c203127958a9d5be82eebcbc957b4439025af34cb9d92f70"
+      "hash": "aad9ddb483f86a32754a2a6488231193fb1dcc7e61ca8b4ebdd9799b38252b7a"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setdestination(_:for:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setdestination(_,for).md",
@@ -2026,11 +2026,11 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setfont(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setfont(_).md",
-      "hash": "a960b3ba9685ac31096b9529ca15e817ae2e6c22a04d5381372d20adf89e5c37"
+      "hash": "dd876b407fb7b3d2a4888ac4bbd587d203695d461f98743a8b99f0604e88101a"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setfontsize(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setfontsize(_).md",
-      "hash": "30c2b98e91afaf3ac1739b50b7e1361312f9f3e01b4316ec5988cbd26fe6cff0"
+      "hash": "61b36eed475a2d362f303b9cdf5df83ea7c72286e9127c603b19b656dd36291e"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setlinecap(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setlinecap(_).md",
@@ -2074,15 +2074,15 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setshouldsmoothfonts(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsmoothfonts(_).md",
-      "hash": "705b26fbe2d687f43febe0a1a2fdf624a58c3cab9d33e626d2a24f833d194832"
+      "hash": "f405ddb3cd33113d24d8f535450d97def63ed6a66ec94218c58b680549a37219"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setshouldsubpixelpositionfonts(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsubpixelpositionfonts(_).md",
-      "hash": "0e217d166114920fe9328bb83be09c823825d0fff726a6534a8b04c70ed843d9"
+      "hash": "b76c9a94b5bda97ce8d11184842066de8b87c5245c50547b5d9456789ab61458"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setshouldsubpixelquantizefonts(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsubpixelquantizefonts(_).md",
-      "hash": "6a60e51e5828690fd7a7b3da11939f344ffecbd06cc7dc45f48f418b83b00628"
+      "hash": "89027d13acfc2771d679991ab8fa0cd45a2a9423296b9181b330d43293c8f490"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/setstrokecolor(_:)-1sskg": {
       "file_path": "documentation/CoreGraphics/cgcontext/setstrokecolor(_)-1sskg.md",
@@ -2114,7 +2114,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/settextdrawingmode(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/settextdrawingmode(_).md",
-      "hash": "1673e5ea1a16cabd44f8f5466632e6c67e2aedea771bafb09490671c6f82e173"
+      "hash": "5850b25c440ffbd3ec4f641f2109953df880c812a64aa1a0246351a8c703686c"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/seturl(_:for:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/seturl(_,for).md",
@@ -2122,27 +2122,27 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showglyphs(_:at:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphs(_,at).md",
-      "hash": "6dbe20c05eb575b44bbdc7c61752d068921a460663a29e92209ee4319532a3a2"
+      "hash": "3efb3715b5bbe77cc6c6a738a57c69aeeb8d637ba4ec62a16c1ce71401fbac3d"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showglyphs(g:count:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphs(g,count).md",
-      "hash": "1a78c46ce0de4306b9e5f783ce2ced5f162e1aae4a097d5701c849ed768f8d36"
+      "hash": "bce5cbf2bb2fe115341f53377df57d620fa899e82f390a693852987ffdd755c0"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showglyphsatpoint(x:y:glyphs:count:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphsatpoint(x,y,glyphs,count).md",
-      "hash": "3793265021a7924bf40899188770e7be2f7ec9285bb4d38914dfcbf21a346c81"
+      "hash": "091af8c94da08e0714972d1b539ab124824c00752caae6055ac23bb1d8961092"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showglyphswithadvances(glyphs:advances:count:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphswithadvances(glyphs,advances,count).md",
-      "hash": "164f4dc9b201c40f7626b1096413d5d08ebdb1d463f332230233ec49f6a02cf3"
+      "hash": "75fb6653453bf6914ae2585890f98e8141d071d81801962967642fc9738554ef"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showtext(string:length:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showtext(string,length).md",
-      "hash": "b95c5ed6989d2fda3d681b2567594be3576db4905cd8f5c33b33ca37b13fd0b7"
+      "hash": "e31ee7c33a3fe52e9478d9997621241e5710b2d101cf0343758f64f24e9ec8ef"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/showtextatpoint(x:y:string:length:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/showtextatpoint(x,y,string,length).md",
-      "hash": "56b5b9c6ddbf40f101dfa44ec724c06f829dd59a8004e53f5aa156aa3ca99afc"
+      "hash": "ab22f58384a4b3a0cabb9f37198d549eeb7f84ad17b4cdaa75f090ee03adddcb"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/stroke(_:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/stroke(_).md",
@@ -2174,11 +2174,11 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/textmatrix": {
       "file_path": "documentation/CoreGraphics/cgcontext/textmatrix.md",
-      "hash": "33383c261e19cb5257a23a1de9f95074a6bb9ed2ef7726a8e2987b8907af2b2e"
+      "hash": "5850b99472706b083d3de72065d45e57ba463b3b0815fa0ffe47e09df36ca42d"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/textposition": {
       "file_path": "documentation/CoreGraphics/cgcontext/textposition.md",
-      "hash": "1ecf5e57de539c7fc9eac02b8a260ff2106b31e91106e0c62592596960b3f9df"
+      "hash": "edca1284dee21675c8df3e25d33e1db4c029586c9f095083979281c2a4c74974"
     },
     "https://developer.apple.com/documentation/coregraphics/cgcontext/translateby(x:y:)": {
       "file_path": "documentation/CoreGraphics/cgcontext/translateby(x,y).md",
@@ -2470,7 +2470,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgdataprovidergetbytepointercallback": {
       "file_path": "documentation/CoreGraphics/cgdataprovidergetbytepointercallback.md",
-      "hash": "eb0c65214c011a3a9c368b651562636111b19f5416be45de2e54d3c14845fbf0"
+      "hash": "b1e3ba3c14ad15637086c5394fc9f9c0ebc0b0d8b853b27ac361062f8a20a569"
     },
     "https://developer.apple.com/documentation/coregraphics/cgdataprovidergetbytesatpositioncallback": {
       "file_path": "documentation/CoreGraphics/cgdataprovidergetbytesatpositioncallback.md",
@@ -2486,7 +2486,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgdataproviderreleasebytepointercallback": {
       "file_path": "documentation/CoreGraphics/cgdataproviderreleasebytepointercallback.md",
-      "hash": "216f37ba47188b4e63a8bdf8099f196959131e27ab4a742b7f9505957b5d8419"
+      "hash": "da629911688578dde23a3b8064919ee3c64fab34c53e6f86023e2479be63aacd"
     },
     "https://developer.apple.com/documentation/coregraphics/cgdataproviderreleasedatacallback": {
       "file_path": "documentation/CoreGraphics/cgdataproviderreleasedatacallback.md",
@@ -4474,7 +4474,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgimagebyteorderinfo/ordermask": {
       "file_path": "documentation/CoreGraphics/cgimagebyteorderinfo/ordermask.md",
-      "hash": "9e7ad18ee8d555a9dcfd67054bd363c7161b269048a8f447d8ab48165810344e"
+      "hash": "bcf19aaee6ca27e72cef381ea382dd4ea7451048fc40055a79b6d01d55404041"
     },
     "https://developer.apple.com/documentation/coregraphics/cgimagecomponentinfo": {
       "file_path": "documentation/CoreGraphics/cgimagecomponentinfo.md",
@@ -4510,7 +4510,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgimagepixelformatinfo/mask": {
       "file_path": "documentation/CoreGraphics/cgimagepixelformatinfo/mask.md",
-      "hash": "a117989dac290b7314b03f60dd978736e49b79f3b2b966c542eceb90601b051b"
+      "hash": "769042f18337694bf5d1d28fc6f66112d88fdbd892ab7a5ebdfe27c8cf632a45"
     },
     "https://developer.apple.com/documentation/coregraphics/cgimagepixelformatinfo/packed": {
       "file_path": "documentation/CoreGraphics/cgimagepixelformatinfo/packed.md",
@@ -6694,7 +6694,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/cgtextdrawingmode": {
       "file_path": "documentation/CoreGraphics/cgtextdrawingmode.md",
-      "hash": "09c269a89fa76df35b7f8e2c75090863e378ccf809c07d323595d728895b348a"
+      "hash": "5a34d4240450a1d1b6aa5ede6448dfcc2e4f5227bd7ba497a40c588776f9045f"
     },
     "https://developer.apple.com/documentation/coregraphics/cgtextdrawingmode/clip": {
       "file_path": "documentation/CoreGraphics/cgtextdrawingmode/clip.md",
@@ -7074,7 +7074,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/core-graphics-functions": {
       "file_path": "documentation/CoreGraphics/core-graphics-functions.md",
-      "hash": "fcee67d3d6d77204e0fedfe6b1f64347651b7c4880232a8f32b28c521b5b6abd"
+      "hash": "5db0c66a04fef3fc1454abcbd85fdab0687a1d6f8a19e17db7b9335fff2b7136"
     },
     "https://developer.apple.com/documentation/coregraphics/core-graphics-macros": {
       "file_path": "documentation/CoreGraphics/core-graphics-macros.md",
@@ -7094,31 +7094,31 @@
     },
     "https://developer.apple.com/documentation/coregraphics/display-fade-blend-fractions": {
       "file_path": "documentation/CoreGraphics/display-fade-blend-fractions.md",
-      "hash": "7d65017a66188bb5dd9be9a961b763857937987db1ba74b7bd8f04495f31c784"
+      "hash": "5fec4588b58eb68e80edd2fe74d702ddfefaeb50821c8b265944b48b4711fd38"
     },
     "https://developer.apple.com/documentation/coregraphics/display-fade-constants": {
       "file_path": "documentation/CoreGraphics/display-fade-constants.md",
-      "hash": "057eb8cc4a0676cb668d03f74af201f09752cd8cf50a9d9ee785a82f51c676a9"
+      "hash": "b7813f279c2a9a304a81205fbbe36a37776ff9f7340c55cbf11d3ea7ea6678a6"
     },
     "https://developer.apple.com/documentation/coregraphics/display-id-defaults": {
       "file_path": "documentation/CoreGraphics/display-id-defaults.md",
-      "hash": "26047a033fde9eb5f4029da028898148c6da282693cfa8fb450def5e0d9dd60a"
+      "hash": "9fd987d4e3b076b76417d5c8f0528137203a736038034775b845021499d3509b"
     },
     "https://developer.apple.com/documentation/coregraphics/display-mode-optional-properties": {
       "file_path": "documentation/CoreGraphics/display-mode-optional-properties.md",
-      "hash": "9ef0e9e55fdef97adf2134c3923d52630a3d586251d869244961a2bc835fc6d4"
+      "hash": "12ab430e0745bbabe102b3e2f22a55551b15e176deffe69aa4380288f25e5fc7"
     },
     "https://developer.apple.com/documentation/coregraphics/display-mode-standard-properties": {
       "file_path": "documentation/CoreGraphics/display-mode-standard-properties.md",
-      "hash": "5f242f9c85543acfe5cd071a1076735e29907bbdd2329cfa24d1cde52eadb3ff"
+      "hash": "5f1e68c8270363984c6042ed2b35060fd697404efef53f7fea0d7fc029d5d337"
     },
     "https://developer.apple.com/documentation/coregraphics/display-stream-optional-property-keys": {
       "file_path": "documentation/CoreGraphics/display-stream-optional-property-keys.md",
-      "hash": "ad46ea70a935289a789299e6715abb4666737478ec1573f7e3cd45755acd8678"
+      "hash": "36c60201b9b53ca6d2b28a325cf81e101cf4b80692baeb3b22281990d7e26986"
     },
     "https://developer.apple.com/documentation/coregraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options": {
       "file_path": "documentation/CoreGraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options.md",
-      "hash": "d78ab51a7514e8d9285318fc92a545e25f341821d9bdd044b23cc680cec9d375"
+      "hash": "84ba02f87a5b995bba722706e4565a20c915faf2a53e0a23c4f333f3c7da1220"
     },
     "https://developer.apple.com/documentation/coregraphics/erf(_:)": {
       "file_path": "documentation/CoreGraphics/erf(_).md",
@@ -7218,11 +7218,11 @@
     },
     "https://developer.apple.com/documentation/coregraphics/kcgbitmapbyteorder16host": {
       "file_path": "documentation/CoreGraphics/kcgbitmapbyteorder16host.md",
-      "hash": "d9dc76862d33f7c703f3f63ed0bc38d302df24d8f7703c672bb8c6da0697d39b"
+      "hash": "622c20c4f8f3e96e35f95aa54f448b3b61f59706a0e59189d1d162e45f0886eb"
     },
     "https://developer.apple.com/documentation/coregraphics/kcgbitmapbyteorder32host": {
       "file_path": "documentation/CoreGraphics/kcgbitmapbyteorder32host.md",
-      "hash": "ed4a0e0b88f1b1ab283d36b0ecdcc77d2c9dc8820f8b54ad6c56dd90a7c46dd9"
+      "hash": "106ff1c1125c582b9105a9f3e612f0be702829b73dd31c8138a97fa727a40e4e"
     },
     "https://developer.apple.com/documentation/coregraphics/kcgcolorblack": {
       "file_path": "documentation/CoreGraphics/kcgcolorblack.md",
@@ -7830,7 +7830,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/quartz-display-services": {
       "file_path": "documentation/CoreGraphics/quartz-display-services.md",
-      "hash": "22178fd63246e1de4137ad5f76235e6d3f514b9315e2df34463239e9f4f0af6f"
+      "hash": "16cadfc1586cfd88d4b62b76169b903b7da04b642ba4f445b69a8fc1444eb13b"
     },
     "https://developer.apple.com/documentation/coregraphics/quartz-event-services": {
       "file_path": "documentation/CoreGraphics/quartz-event-services.md",
@@ -7850,7 +7850,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/reserved-window-levels": {
       "file_path": "documentation/CoreGraphics/reserved-window-levels.md",
-      "hash": "330f1a5e181bb48ff42006b063f9e7a3ab4384fe1b7d72de4c1e6786bba05dc5"
+      "hash": "4f379e013972f8e9c2cdae0ceae8ec5678baa01da6a64ffa61203e99828cfd67"
     },
     "https://developer.apple.com/documentation/coregraphics/rint(_:)": {
       "file_path": "documentation/CoreGraphics/rint(_).md",
@@ -7894,7 +7894,7 @@
     },
     "https://developer.apple.com/documentation/coregraphics/window-server-session-properties": {
       "file_path": "documentation/CoreGraphics/window-server-session-properties.md",
-      "hash": "2ac216bb54c83eda57302b0af0dd8f6725619ae7f24527e679a3ff40f651aa41"
+      "hash": "c1cb0eefc52f7d8d3f31595d084833ed881d3260e74b2cb814e385c08f3c85ee"
     },
     "https://developer.apple.com/documentation/coregraphics/window-sharing-constants": {
       "file_path": "documentation/CoreGraphics/window-sharing-constants.md",
@@ -7918,7 +7918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreGraphics.json": {
       "file_path": "documentation/CoreGraphics/CoreGraphics.md",
-      "hash": "3e46e4ec9fd69f540a2ee256f278ed2aaed4c065763afa94cf9290c3a05ea347"
+      "hash": "0bb7d2c2fb5f77726642704f06a727d80d424e6a26d109ccd242bcd87f02be4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/acos(_:).json": {
       "file_path": "documentation/CoreGraphics/acos(_).md",
@@ -8142,7 +8142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapcontextreleasedatacallback.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapcontextreleasedatacallback.md",
-      "hash": "464859cc65e62eb33b39b3b226539da1c303b00429905111c442b479ed47591b"
+      "hash": "0185cf9b51ca2d20cc51d447ca76dff145792aeab39a604c396810840f7f0979"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo.md",
@@ -8154,7 +8154,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/alphainfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/alphainfomask.md",
-      "hash": "5d2467be31be577abecb56ef658afcddd15543cd947f2d8515c80a662309063e"
+      "hash": "95fdcde338d499b288c1bc416bfa48e2d8b45934655b0b4cec577973c1a2c503"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorder.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder.md",
@@ -8162,27 +8162,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorder16big.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder16big.md",
-      "hash": "5d8a77f8495f88b9616e9896d5623202afba4abf59fa57b7fec1eb595de0b2ed"
+      "hash": "e3948849d582584c71e348192f37beabbfd6f8e0d6d1d5341eb005d397145c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorder16little.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder16little.md",
-      "hash": "33ec5fa20706e05d6f242498b7f528a07389744f58cfa2e25c0ac3419c89c9df"
+      "hash": "f00d15e93f0078a6978b237fea9706cb6e4d201347ede2927848ab546a756c0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorder32big.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder32big.md",
-      "hash": "82202018886d94a736024e938c1d117118d9b956e7ab03f50909b82779a05b66"
+      "hash": "b3239f91da75067207cfcaf117de6161e9fe15634d529ed78c43e3435f0a33df"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorder32little.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorder32little.md",
-      "hash": "178ed675506e782ad218a92b75489856e88cc8884179c2df30bedf5bfb70fb07"
+      "hash": "449a116c6651c94115cc08961a8881a665f59b833f27db3e6ce85e7cebc88ccc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteorderdefault.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteorderdefault.md",
-      "hash": "c2844e8967216ec2adec288949fed432283e6a5819a41046c8f8653009d47ade"
+      "hash": "38c20ebe777b918b0d536ac13e00646d1d73e6d3b8c354940ccb5cc1195ef920"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/byteordermask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/byteordermask.md",
-      "hash": "a07eaeaf130a2b03183a53dfb1d55eeb906c33c6cfeda90852e765114f68e506"
+      "hash": "1399b492a913424ea69a73d0b693e579ff95ab1f0d7a583a91747ad9f812050e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/component.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/component.md",
@@ -8190,31 +8190,31 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/contains(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/contains(_).md",
-      "hash": "a707f58abbbe576cce43a55a8ba25817cb9efdc326f9015f6c6d67a9958c65d6"
+      "hash": "695bdcc3d10fb43705d22930a0e56f8beb4df7d58e7c187924eb0f4757682420"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/floatcomponents.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/floatcomponents.md",
-      "hash": "2ef73089d0ea0b3b782e78738bee5899211b62ce59cbeaf10af670932f112b35"
+      "hash": "f6a0552f5efff8311fcb58ef1c5b865446809aa2052658f7be3f894e84750840"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/floatinfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/floatinfomask.md",
-      "hash": "fa2cc254c67aa8d15aad8ffd51ec51dff628e2ecdd7862bc11401ddc1bf66960"
+      "hash": "540dbcd61b5d8267504508c80c3ac880205765f0813b54b4a8e243bb47bad576"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/formintersection(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formintersection(_).md",
-      "hash": "95829bbf23e98f7cc76ccc837a9e69dda802a6ad866ea391958842d81a03c66e"
+      "hash": "9544a6e666ac00462789835de04c8093d553503d4a1341e3a11a58d8869b587a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/formsymmetricdifference(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formsymmetricdifference(_).md",
-      "hash": "8ef988b0d2eba4bbca67a236195a9146223bfe8c94d88e439e67c17353296a10"
+      "hash": "7bc1e31fd0a637f7941fb9a0dbf1a0f4c3b75d06eaca7302a2589827b1e42763"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/formunion(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/formunion(_).md",
-      "hash": "ee164768364b76750a9d4bd8aade5b62cb1115289068c5fe234b17338caf38d4"
+      "hash": "d067727538a064f9507d92b58e91c51cd15370eed8b3ad0c2272b54e97b9961e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/init(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(_).md",
-      "hash": "47200fbd84baf1da0b92a84e937bae7223bd971854d22e84216f54b80c96a6ac"
+      "hash": "0d0b245e0522e4780f005fd369947c8960f1593727e8f5c24c965685299084d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/init(alpha:component:byteorder:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(alpha,component,byteorder).md",
@@ -8226,7 +8226,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/init(arrayliteral:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(arrayliteral).md",
-      "hash": "2a4d0b7406183cb2ef8566a29f64f52864007cc7999693e95ca965d4424aeb60"
+      "hash": "d2ee594a0eb9532eae1c84e5684de649c9df7270dc74beb3978eb89d2570ca23"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/init(rawvalue:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/init(rawvalue).md",
@@ -8234,27 +8234,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/insert(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/insert(_).md",
-      "hash": "1c4823632bd8ba954431488671763b45229b15cd001f52b0b044ef8ef1c8fc5c"
+      "hash": "274dbe20d4cc5dddd744a0b29868c1c8668a07a4045dcd4a796fe044f18a4309"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/intersection(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/intersection(_).md",
-      "hash": "6d948aef98cf00815ee0a59b84f9fbf2b09f14a531728c09e2e2405a08b26830"
+      "hash": "78eda4aef46124d95ae374e631a60ac33e335cf34c9734b9f1f4841861f40567"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/isdisjoint(with:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/isdisjoint(with).md",
-      "hash": "59ba439cd594625d05db111a9f86c8a41644da1858757d6c5b9888f6a5b7e6a7"
+      "hash": "46d7e45f061800150424e1b509fd51aee5c3cbd64d25318d1bc425b5379dbdbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/isempty.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/isempty.md",
-      "hash": "3d06852464a7934a0b7b252b422ebeeec48d67d3c58787999d190c39e1ce39e4"
+      "hash": "db0ef98de49c357200052a9ebd0687aeaf04bbe5424f7253e6de0551cb633af5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/issubset(of:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/issubset(of).md",
-      "hash": "75f9221ab72089d3ad0d1fb6e8e4d27e8bc1d2ba8c1765a3640a810fa93248cc"
+      "hash": "9314656e9d8639cf85dd82229057bb7795aec7f6c18a9c4e6713181caf52e3c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/issuperset(of:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/issuperset(of).md",
-      "hash": "8f89ec666734a6dbc6be0c86ee316c0cb18242e0f2ceb6aec441918908de0359"
+      "hash": "728aa36b5957e1585b1cfca1d6a3a688d2f5e6fd1b4f5034cd0f3fe1c0a216a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/kcgbitmapalphainfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapalphainfomask.md",
@@ -8266,7 +8266,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/kcgbitmapbyteordermask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapbyteordermask.md",
-      "hash": "a9c85922e4012a39bbc245f7403ec73624838e7503ff85a675015f37ea3ae6e4"
+      "hash": "b2e9d447bb491a2a076f82b69a2455baa7c584d61423c36441ffcb9f7a6fc4ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/kcgbitmapcomponentinfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapcomponentinfomask.md",
@@ -8274,7 +8274,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/kcgbitmapfloatinfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmapfloatinfomask.md",
-      "hash": "ebcc019cde8f0c2d7cdc2a2d798c97439240f66c88fc94ecd6f711729ec0eff8"
+      "hash": "43ad1d3a932dbbc6dbdb3538dd566e61fbb99d848cdec469eac797d616932267"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/kcgbitmappixelformatinfomask.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/kcgbitmappixelformatinfomask.md",
@@ -8286,27 +8286,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/remove(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/remove(_).md",
-      "hash": "9d378313b59c0c51789c1753dff55267d8d5b9fea45a2be976f67a0089625eaf"
+      "hash": "e5a387a4e51ffc9fa1e593dbac1e2b2216afac5f6f33e2628a8f90a40876dec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/subtract(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/subtract(_).md",
-      "hash": "dac8ad30f74a0af1bfb73f2d1e1561f0ba4eb2ab96ebdb20af93644695e0caae"
+      "hash": "46de1879d3bd9169638c1f4de8ee0ea5067c8b23f05b61165bbb7f71d472cc30"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/subtracting(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/subtracting(_).md",
-      "hash": "b116a72ccaf0f358423b58e8ef0097b12985ab9cbef9c189afefe1247779f860"
+      "hash": "57616ef71c122dc73129d888e14ebeb0c1417dcaa7676e7444a027880314177c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/symmetricdifference(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/symmetricdifference(_).md",
-      "hash": "8baa30154a66679216336fe145a3989c7fd129d9ab342f922b22546ae075c70a"
+      "hash": "9fd215c23cb93ae1656126ddd3311a904c22312e02a5fd8f60b5bb2eb48c0e89"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/union(_:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/union(_).md",
-      "hash": "8ca43e21489e36d3cc13daa7721b4122b138dc3a7b8b66d9c9b1b6d3ae0ef680"
+      "hash": "61632a135498d1cb4a0c302faf47932d02b8ae7934082905887ff0cc11ce1e87"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfo/update(with:).json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfo/update(with).md",
-      "hash": "fee8974c6205a2223c476e0941c17e30baebe62be851e66ad539a7984f3ddd07"
+      "hash": "d8687a4ffd73c0962e6d122db050d5f1e78a174bf9ae534980636ddad824f82c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgbitmapinfomake.json": {
       "file_path": "documentation/CoreGraphics/cgbitmapinfomake.md",
@@ -8718,7 +8718,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo.json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo.md",
-      "hash": "8553a5b1e27f8f86e35dffa51519d707b02425943bebca75b65d5320443e5767"
+      "hash": "c4ea9f3d4b9c41e93c207e54d811b24d513fea8f86f071a5d223407a76735140"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo/convert(width:height:to:format:from:format:options:).json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/convert(width,height,to,format,from,format,options).md",
@@ -8726,15 +8726,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo/init(optionssrc:dst:options:).json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(optionssrc,dst,options).md",
-      "hash": "e3f2c8e3371912bd8da94396e6c62583a041de664d5bbc9e8b9407883ab35273"
+      "hash": "3a53570ba9aab8e7d41212671a34ce706935203fa9e08d4f4a3e4521dc502aee"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo/init(src:dst:).json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(src,dst).md",
-      "hash": "e09b35d55d448677ccc834ed6e133defaefabe79ab56f1487815031c1a1b0ee9"
+      "hash": "aff27366f4796872741b2f0338531fc98d5b134a2725569969cce14634b060e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:_:).json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/init(src,srcheadroom,dst,dstheadroom,tonemapping,options,_).md",
-      "hash": "d600a2943c515705a46e7f473d7a367020f3a6e522c317324d6f3dac79a58acc"
+      "hash": "6a95802b09bcaf33b0b5bbab74c13d0d23bc20505fea50cc372138cedeb471f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfo/typeid.json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfo/typeid.md",
@@ -8742,7 +8742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfocreatefromlist.json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfocreatefromlist.md",
-      "hash": "687d27d2d0cfba81067fe05ea8de72c69e8b3d0ab719d73b61407b34f692b25f"
+      "hash": "a9ec764b4d65fd64d84862edd3cb5a5fae56ecc019bafad9647b01870f89e344"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfocreatefromlistwitharguments.json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfocreatefromlistwitharguments.md",
@@ -8750,7 +8750,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfotransformtype.json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfotransformtype.md",
-      "hash": "9c9a933dbbcd0f44781fbdbb209d68e7b3e72ccc46f633fd70674e25225db9e2"
+      "hash": "b6dd66354ec8e69e288f0af2d629b36ff28dd0dd07e181f5fe364bdde62df9d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcolorconversioninfotransformtype/init(rawvalue:).json": {
       "file_path": "documentation/CoreGraphics/cgcolorconversioninfotransformtype/init(rawvalue).md",
@@ -9510,7 +9510,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext.json": {
       "file_path": "documentation/CoreGraphics/cgcontext.md",
-      "hash": "20323a9edbe6542422710acc1555b411158576f1ea968412bb70758f7b079c23"
+      "hash": "a57ec7f05fab650ea8e81ef25e26730952a1d75ddce5ea7ac5f59073bff2d7ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/addarc(center:radius:startangle:endangle:clockwise:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/addarc(center,radius,startangle,endangle,clockwise).md",
@@ -9806,19 +9806,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-10b3i.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo)-10b3i.md",
-      "hash": "4f6d78995295526bc9f092481e6d3030c6a5bffb934869e3730f6238f12bee8d"
+      "hash": "8a2bf05ac03623a9774edc08dec0e3cd5e4f679f8fac6cc1d4f26d1bfeb9480f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-4fkaf.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo)-4fkaf.md",
-      "hash": "3954a3edb5ac55b3868237e24ed69f92f59517ffe2cc5e25fa2f1ec2a67cd209"
+      "hash": "680295e72002fa41ccfe781dc7f4570d98567d1e03714c1fd066d0bba569257b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-4yzt5.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo)-4yzt5.md",
-      "hash": "b8068c505a0dab1eec094b97f67f32391913c18868f7267031d142ab142ef1ab"
+      "hash": "79a3e6d35dfc35c5b0e049be35daafb80844cf9aa80a0e1e030253a285aa1043"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-71ea9.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/init(data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo)-71ea9.md",
-      "hash": "89c8d427f772887094f98922e39e4249ac4308a3254542f344d524543398f14b"
+      "hash": "6879c2dcb5e6fb362496d8d895485ab519a1cbb4b268fed2e5646639ee3506f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/interpolationquality.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/interpolationquality.md",
@@ -9870,7 +9870,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/selectfont(name:size:textencoding:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/selectfont(name,size,textencoding).md",
-      "hash": "f8c45bc337e0e259ef002c749965fc41d9c84db06350878f038ea22fae6becb8"
+      "hash": "d13496770b72ac1614ac79dcb006ee41d93cd4abad2c443513d73a9bb779e476"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setallowsantialiasing(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsantialiasing(_).md",
@@ -9878,15 +9878,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setallowsfontsmoothing(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsmoothing(_).md",
-      "hash": "f697eed1e511b7de74bb8382f7108a860998844f5abe00a7a819ad05fc912ac5"
+      "hash": "64651be6da0cb57911149fcb1e603b91252436de342192c48d429821031825dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setallowsfontsubpixelpositioning(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsubpixelpositioning(_).md",
-      "hash": "d8dc3fd06ea6a955dafd091485aea09230bf931bafec509a5d499de255bdc317"
+      "hash": "fd05f132df5a7a72188ed3b8521be9b7d6f218445c3e5747c1db63b59962c1cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setallowsfontsubpixelquantization(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setallowsfontsubpixelquantization(_).md",
-      "hash": "1b4e63546b8ce1a2935ab765e57716a576ec6974439be35b8f12437cdab79826"
+      "hash": "dc04c7d9e42220094a7dfe3ecd95855f35f921ba969c0db14ec004c68bdb90ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setalpha(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setalpha(_).md",
@@ -9898,7 +9898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setcharacterspacing(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setcharacterspacing(_).md",
-      "hash": "8478af0acde9fe42c203127958a9d5be82eebcbc957b4439025af34cb9d92f70"
+      "hash": "aad9ddb483f86a32754a2a6488231193fb1dcc7e61ca8b4ebdd9799b38252b7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setdestination(_:for:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setdestination(_,for).md",
@@ -9942,11 +9942,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setfont(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setfont(_).md",
-      "hash": "a960b3ba9685ac31096b9529ca15e817ae2e6c22a04d5381372d20adf89e5c37"
+      "hash": "dd876b407fb7b3d2a4888ac4bbd587d203695d461f98743a8b99f0604e88101a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setfontsize(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setfontsize(_).md",
-      "hash": "30c2b98e91afaf3ac1739b50b7e1361312f9f3e01b4316ec5988cbd26fe6cff0"
+      "hash": "61b36eed475a2d362f303b9cdf5df83ea7c72286e9127c603b19b656dd36291e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setlinecap(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setlinecap(_).md",
@@ -9990,15 +9990,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setshouldsmoothfonts(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsmoothfonts(_).md",
-      "hash": "705b26fbe2d687f43febe0a1a2fdf624a58c3cab9d33e626d2a24f833d194832"
+      "hash": "f405ddb3cd33113d24d8f535450d97def63ed6a66ec94218c58b680549a37219"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setshouldsubpixelpositionfonts(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsubpixelpositionfonts(_).md",
-      "hash": "0e217d166114920fe9328bb83be09c823825d0fff726a6534a8b04c70ed843d9"
+      "hash": "b76c9a94b5bda97ce8d11184842066de8b87c5245c50547b5d9456789ab61458"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setshouldsubpixelquantizefonts(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setshouldsubpixelquantizefonts(_).md",
-      "hash": "6a60e51e5828690fd7a7b3da11939f344ffecbd06cc7dc45f48f418b83b00628"
+      "hash": "89027d13acfc2771d679991ab8fa0cd45a2a9423296b9181b330d43293c8f490"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/setstrokecolor(_:)-1sskg.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/setstrokecolor(_)-1sskg.md",
@@ -10030,7 +10030,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/settextdrawingmode(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/settextdrawingmode(_).md",
-      "hash": "1673e5ea1a16cabd44f8f5466632e6c67e2aedea771bafb09490671c6f82e173"
+      "hash": "5850b25c440ffbd3ec4f641f2109953df880c812a64aa1a0246351a8c703686c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/seturl(_:for:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/seturl(_,for).md",
@@ -10038,27 +10038,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showglyphs(_:at:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphs(_,at).md",
-      "hash": "6dbe20c05eb575b44bbdc7c61752d068921a460663a29e92209ee4319532a3a2"
+      "hash": "3efb3715b5bbe77cc6c6a738a57c69aeeb8d637ba4ec62a16c1ce71401fbac3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showglyphs(g:count:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphs(g,count).md",
-      "hash": "1a78c46ce0de4306b9e5f783ce2ced5f162e1aae4a097d5701c849ed768f8d36"
+      "hash": "bce5cbf2bb2fe115341f53377df57d620fa899e82f390a693852987ffdd755c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showglyphsatpoint(x:y:glyphs:count:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphsatpoint(x,y,glyphs,count).md",
-      "hash": "3793265021a7924bf40899188770e7be2f7ec9285bb4d38914dfcbf21a346c81"
+      "hash": "091af8c94da08e0714972d1b539ab124824c00752caae6055ac23bb1d8961092"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showglyphswithadvances(glyphs:advances:count:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showglyphswithadvances(glyphs,advances,count).md",
-      "hash": "164f4dc9b201c40f7626b1096413d5d08ebdb1d463f332230233ec49f6a02cf3"
+      "hash": "75fb6653453bf6914ae2585890f98e8141d071d81801962967642fc9738554ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showtext(string:length:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showtext(string,length).md",
-      "hash": "b95c5ed6989d2fda3d681b2567594be3576db4905cd8f5c33b33ca37b13fd0b7"
+      "hash": "e31ee7c33a3fe52e9478d9997621241e5710b2d101cf0343758f64f24e9ec8ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/showtextatpoint(x:y:string:length:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/showtextatpoint(x,y,string,length).md",
-      "hash": "56b5b9c6ddbf40f101dfa44ec724c06f829dd59a8004e53f5aa156aa3ca99afc"
+      "hash": "ab22f58384a4b3a0cabb9f37198d549eeb7f84ad17b4cdaa75f090ee03adddcb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/stroke(_:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/stroke(_).md",
@@ -10090,11 +10090,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/textmatrix.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/textmatrix.md",
-      "hash": "33383c261e19cb5257a23a1de9f95074a6bb9ed2ef7726a8e2987b8907af2b2e"
+      "hash": "5850b99472706b083d3de72065d45e57ba463b3b0815fa0ffe47e09df36ca42d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/textposition.json": {
       "file_path": "documentation/CoreGraphics/cgcontext/textposition.md",
-      "hash": "1ecf5e57de539c7fc9eac02b8a260ff2106b31e91106e0c62592596960b3f9df"
+      "hash": "edca1284dee21675c8df3e25d33e1db4c029586c9f095083979281c2a4c74974"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgcontext/translateby(x:y:).json": {
       "file_path": "documentation/CoreGraphics/cgcontext/translateby(x,y).md",
@@ -10386,7 +10386,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgdataprovidergetbytepointercallback.json": {
       "file_path": "documentation/CoreGraphics/cgdataprovidergetbytepointercallback.md",
-      "hash": "eb0c65214c011a3a9c368b651562636111b19f5416be45de2e54d3c14845fbf0"
+      "hash": "b1e3ba3c14ad15637086c5394fc9f9c0ebc0b0d8b853b27ac361062f8a20a569"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgdataprovidergetbytesatpositioncallback.json": {
       "file_path": "documentation/CoreGraphics/cgdataprovidergetbytesatpositioncallback.md",
@@ -10402,7 +10402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgdataproviderreleasebytepointercallback.json": {
       "file_path": "documentation/CoreGraphics/cgdataproviderreleasebytepointercallback.md",
-      "hash": "216f37ba47188b4e63a8bdf8099f196959131e27ab4a742b7f9505957b5d8419"
+      "hash": "da629911688578dde23a3b8064919ee3c64fab34c53e6f86023e2479be63aacd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgdataproviderreleasedatacallback.json": {
       "file_path": "documentation/CoreGraphics/cgdataproviderreleasedatacallback.md",
@@ -12390,7 +12390,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgimagebyteorderinfo/ordermask.json": {
       "file_path": "documentation/CoreGraphics/cgimagebyteorderinfo/ordermask.md",
-      "hash": "9e7ad18ee8d555a9dcfd67054bd363c7161b269048a8f447d8ab48165810344e"
+      "hash": "bcf19aaee6ca27e72cef381ea382dd4ea7451048fc40055a79b6d01d55404041"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgimagecomponentinfo.json": {
       "file_path": "documentation/CoreGraphics/cgimagecomponentinfo.md",
@@ -12426,7 +12426,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgimagepixelformatinfo/mask.json": {
       "file_path": "documentation/CoreGraphics/cgimagepixelformatinfo/mask.md",
-      "hash": "a117989dac290b7314b03f60dd978736e49b79f3b2b966c542eceb90601b051b"
+      "hash": "769042f18337694bf5d1d28fc6f66112d88fdbd892ab7a5ebdfe27c8cf632a45"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgimagepixelformatinfo/packed.json": {
       "file_path": "documentation/CoreGraphics/cgimagepixelformatinfo/packed.md",
@@ -14610,7 +14610,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgtextdrawingmode.json": {
       "file_path": "documentation/CoreGraphics/cgtextdrawingmode.md",
-      "hash": "09c269a89fa76df35b7f8e2c75090863e378ccf809c07d323595d728895b348a"
+      "hash": "5a34d4240450a1d1b6aa5ede6448dfcc2e4f5227bd7ba497a40c588776f9045f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/cgtextdrawingmode/clip.json": {
       "file_path": "documentation/CoreGraphics/cgtextdrawingmode/clip.md",
@@ -14990,7 +14990,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/core-graphics-functions.json": {
       "file_path": "documentation/CoreGraphics/core-graphics-functions.md",
-      "hash": "fcee67d3d6d77204e0fedfe6b1f64347651b7c4880232a8f32b28c521b5b6abd"
+      "hash": "5db0c66a04fef3fc1454abcbd85fdab0687a1d6f8a19e17db7b9335fff2b7136"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/core-graphics-macros.json": {
       "file_path": "documentation/CoreGraphics/core-graphics-macros.md",
@@ -15010,31 +15010,31 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-fade-blend-fractions.json": {
       "file_path": "documentation/CoreGraphics/display-fade-blend-fractions.md",
-      "hash": "7d65017a66188bb5dd9be9a961b763857937987db1ba74b7bd8f04495f31c784"
+      "hash": "5fec4588b58eb68e80edd2fe74d702ddfefaeb50821c8b265944b48b4711fd38"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-fade-constants.json": {
       "file_path": "documentation/CoreGraphics/display-fade-constants.md",
-      "hash": "057eb8cc4a0676cb668d03f74af201f09752cd8cf50a9d9ee785a82f51c676a9"
+      "hash": "b7813f279c2a9a304a81205fbbe36a37776ff9f7340c55cbf11d3ea7ea6678a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-id-defaults.json": {
       "file_path": "documentation/CoreGraphics/display-id-defaults.md",
-      "hash": "26047a033fde9eb5f4029da028898148c6da282693cfa8fb450def5e0d9dd60a"
+      "hash": "9fd987d4e3b076b76417d5c8f0528137203a736038034775b845021499d3509b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-mode-optional-properties.json": {
       "file_path": "documentation/CoreGraphics/display-mode-optional-properties.md",
-      "hash": "9ef0e9e55fdef97adf2134c3923d52630a3d586251d869244961a2bc835fc6d4"
+      "hash": "12ab430e0745bbabe102b3e2f22a55551b15e176deffe69aa4380288f25e5fc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-mode-standard-properties.json": {
       "file_path": "documentation/CoreGraphics/display-mode-standard-properties.md",
-      "hash": "5f242f9c85543acfe5cd071a1076735e29907bbdd2329cfa24d1cde52eadb3ff"
+      "hash": "5f1e68c8270363984c6042ed2b35060fd697404efef53f7fea0d7fc029d5d337"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-stream-optional-property-keys.json": {
       "file_path": "documentation/CoreGraphics/display-stream-optional-property-keys.md",
-      "hash": "ad46ea70a935289a789299e6715abb4666737478ec1573f7e3cd45755acd8678"
+      "hash": "36c60201b9b53ca6d2b28a325cf81e101cf4b80692baeb3b22281990d7e26986"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options.json": {
       "file_path": "documentation/CoreGraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options.md",
-      "hash": "d78ab51a7514e8d9285318fc92a545e25f341821d9bdd044b23cc680cec9d375"
+      "hash": "84ba02f87a5b995bba722706e4565a20c915faf2a53e0a23c4f333f3c7da1220"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/erf(_:).json": {
       "file_path": "documentation/CoreGraphics/erf(_).md",
@@ -15138,11 +15138,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/kcgbitmapbyteorder16host.json": {
       "file_path": "documentation/CoreGraphics/kcgbitmapbyteorder16host.md",
-      "hash": "d9dc76862d33f7c703f3f63ed0bc38d302df24d8f7703c672bb8c6da0697d39b"
+      "hash": "622c20c4f8f3e96e35f95aa54f448b3b61f59706a0e59189d1d162e45f0886eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/kcgbitmapbyteorder32host.json": {
       "file_path": "documentation/CoreGraphics/kcgbitmapbyteorder32host.md",
-      "hash": "ed4a0e0b88f1b1ab283d36b0ecdcc77d2c9dc8820f8b54ad6c56dd90a7c46dd9"
+      "hash": "106ff1c1125c582b9105a9f3e612f0be702829b73dd31c8138a97fa727a40e4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/kcgcolorblack.json": {
       "file_path": "documentation/CoreGraphics/kcgcolorblack.md",
@@ -15750,7 +15750,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/quartz-display-services.json": {
       "file_path": "documentation/CoreGraphics/quartz-display-services.md",
-      "hash": "22178fd63246e1de4137ad5f76235e6d3f514b9315e2df34463239e9f4f0af6f"
+      "hash": "16cadfc1586cfd88d4b62b76169b903b7da04b642ba4f445b69a8fc1444eb13b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/quartz-event-services.json": {
       "file_path": "documentation/CoreGraphics/quartz-event-services.md",
@@ -15770,7 +15770,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/reserved-window-levels.json": {
       "file_path": "documentation/CoreGraphics/reserved-window-levels.md",
-      "hash": "330f1a5e181bb48ff42006b063f9e7a3ab4384fe1b7d72de4c1e6786bba05dc5"
+      "hash": "4f379e013972f8e9c2cdae0ceae8ec5678baa01da6a64ffa61203e99828cfd67"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/rint(_:).json": {
       "file_path": "documentation/CoreGraphics/rint(_).md",
@@ -15814,7 +15814,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/window-server-session-properties.json": {
       "file_path": "documentation/CoreGraphics/window-server-session-properties.md",
-      "hash": "2ac216bb54c83eda57302b0af0dd8f6725619ae7f24527e679a3ff40f651aa41"
+      "hash": "c1cb0eefc52f7d8d3f31595d084833ed881d3260e74b2cb814e385c08f3c85ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/window-sharing-constants.json": {
       "file_path": "documentation/CoreGraphics/window-sharing-constants.md",

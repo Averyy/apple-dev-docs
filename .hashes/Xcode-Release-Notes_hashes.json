@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Xcode-Release-Notes": {
       "file_path": "documentation/Xcode-Release-Notes/Xcode-Release-Notes.md",
-      "hash": "ccada59a5b91ac7b2b11371781e38ff6cdefea8f63f37c04a491e2d121062851"
+      "hash": "f18387c3db82cab05f2b9f7c4b9c199971ee990301a9637d15bed06aafea41d3"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/build-system-release-notes-for-xcode-10": {
       "file_path": "documentation/Xcode-Release-Notes/build-system-release-notes-for-xcode-10.md",
@@ -26,7 +26,7 @@
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-10-release-notes.md",
-      "hash": "58bbfaf6c8103e381275cc11bf82be96a427a5a43f9e7e7ce71838b69aebf0f3"
+      "hash": "c3f72120e7f3f07c0ebf6f32ee2fa56c5e913f07d948e0b5af73dcd3555120bc"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-10_1-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-10_1-release-notes.md",
@@ -258,19 +258,23 @@
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-27-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27-release-notes.md",
-      "hash": "34adb4dd2520fc732239849b2ebdb92203e588a7503495db02810b1dfb02bd8a"
+      "hash": "9640d8b7965db6e69d0245c2751b6cf5a08693544d06c20db6ec6bd9633deebf"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27_1-release-notes.md",
-      "hash": "00fd9a2a0eb5e1a34a01072f5611cf2445d1c2d8fa882556e3dab5ab957e7ae7"
+      "hash": "79dd0d99aa5cb277aa1da73a4f22508e4a783664c573f19a9a0ae00a533f850b"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27_2-release-notes.md",
-      "hash": "b3112f92f710a579e1bed564e3b24e5985d389778bd321414d6b320626fb0ff2"
+      "hash": "f9b120a3f5bcb815472a8878dd1b9e3ac9a99c804c4800d08b34efaea6154148"
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_3-release-notes": {
+      "file_path": "documentation/Xcode-Release-Notes/xcode-27_3-release-notes.md",
+      "hash": "3bdc30ff413daafd2fbef448494940430de37179e867dbf15be0b1c47e1b138f"
     },
     "https://developer.apple.com/tutorials/data/documentation/Xcode-Release-Notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/Xcode-Release-Notes.md",
-      "hash": "ccada59a5b91ac7b2b11371781e38ff6cdefea8f63f37c04a491e2d121062851"
+      "hash": "f18387c3db82cab05f2b9f7c4b9c199971ee990301a9637d15bed06aafea41d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/build-system-release-notes-for-xcode-10.json": {
       "file_path": "documentation/Xcode-Release-Notes/build-system-release-notes-for-xcode-10.md",
@@ -294,7 +298,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-10-release-notes.md",
-      "hash": "58bbfaf6c8103e381275cc11bf82be96a427a5a43f9e7e7ce71838b69aebf0f3"
+      "hash": "c3f72120e7f3f07c0ebf6f32ee2fa56c5e913f07d948e0b5af73dcd3555120bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10_1-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-10_1-release-notes.md",
@@ -526,21 +530,25 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-27-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27-release-notes.md",
-      "hash": "34adb4dd2520fc732239849b2ebdb92203e588a7503495db02810b1dfb02bd8a"
+      "hash": "9640d8b7965db6e69d0245c2751b6cf5a08693544d06c20db6ec6bd9633deebf"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-27_1-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27_1-release-notes.md",
-      "hash": "00fd9a2a0eb5e1a34a01072f5611cf2445d1c2d8fa882556e3dab5ab957e7ae7"
+      "hash": "79dd0d99aa5cb277aa1da73a4f22508e4a783664c573f19a9a0ae00a533f850b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-27_2-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-27_2-release-notes.md",
-      "hash": "b3112f92f710a579e1bed564e3b24e5985d389778bd321414d6b320626fb0ff2"
+      "hash": "f9b120a3f5bcb815472a8878dd1b9e3ac9a99c804c4800d08b34efaea6154148"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-27_3-release-notes.json": {
+      "file_path": "documentation/Xcode-Release-Notes/xcode-27_3-release-notes.md",
+      "hash": "3bdc30ff413daafd2fbef448494940430de37179e867dbf15be0b1c47e1b138f"
     }
   },
   "metadata": {
     "render": {
       "version": 4
     },
-    "total_pages": 134
+    "total_pages": 136
   }
 }

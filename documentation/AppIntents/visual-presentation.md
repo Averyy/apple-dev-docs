@@ -22,6 +22,21 @@ Your app’s interface contains important context about what a person is doing, 
   An app intent that presents an interactive snippet onscreen.
 - [protocol ShowsSnippetView](./showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
+### Card snippets
+- [protocol SnippetRepresentableEntity](./snippetrepresentableentity.md)
+  An app entity that provides a visual representation for its content.
+- [struct CardSnippet](./cardsnippet.md)
+  A type that presents the SwiftUI view for an app entity as a card.
+- [struct CardSnippetContext](./cardsnippetcontext.md)
+  A type that stores information about how to render a card snippet.
+- [struct CardSnippetFamily](./cardsnippetfamily.md)
+  A type that defines the supported rendering environments for card snippets.
+- [protocol EntitySnippetContent](./entitysnippetcontent.md)
+  A visual representation that the system renders for an entity.
+- [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
+  A result builder that assembles an entity’s snippet declarations.
+- [struct CardSnippetSize](./cardsnippetsize.md)
+  A size category for a snippet card.
 ### View-entity association
 - [struct AppEntityUIElement](./appentityuielement.md)
   A type that wraps your app entity and adds information to make a custom view’s content discoverable by Apple Intelligence.
@@ -36,6 +51,9 @@ Your app’s interface contains important context about what a person is doing, 
   An interface you use to direct an app intent to a specific scene in your UIKit app.
 - [protocol AppIntentSceneDelegate](./appintentscenedelegate.md)
   The interface a UIKit scene delegate uses to receive an app intent and configure the scene’s views.
+### Supporting types
+- [struct EmptySnippetIntent](./emptysnippetintent.md)
+  A snippet intent that renders an empty view.
 
 ## See Also
 

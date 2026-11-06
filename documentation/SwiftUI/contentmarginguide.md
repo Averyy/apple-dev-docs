@@ -27,9 +27,21 @@ Apply a guide to a view with the [`contentMargins(for:edges:alignment:)`](./view
 
 ## Topics
 
-### Type Properties
+### Getting the container
 - [static var container: ContentMarginGuide](./contentmarginguide/container.md)
   The margins of the container the view is in.
+
+## See Also
+
+### Setting margins
+- [func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View](./view/contentmargins%28_,for%29.md)
+  Configures the content margin for a provided placement.
+- [func contentMargins(_:_:for:)](./view/contentmargins%28_,_,for%29.md)
+  Configures the content margin for a provided placement.
+- [struct ContentMarginPlacement](./contentmarginplacement.md)
+  The placement of margins.
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](./view/contentmargins%28for,edges,alignment%29.md)
+  Insets the content of this view by a content margin guide.
 
 
 ---

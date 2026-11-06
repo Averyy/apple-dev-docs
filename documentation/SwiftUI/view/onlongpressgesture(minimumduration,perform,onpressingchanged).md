@@ -32,7 +32,7 @@ nonisolated func onLongPressGesture(minimumDuration: Double = 0.5, perform actio
 - [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](./onlongtouchgesture%28minimumduration,perform,ontouchingchanged%29.md)
   Adds an action to perform when this view recognizes a remote long touch gesture. A long touch gesture is when the finger is on the remote touch surface without actually pressing.
 - [struct LongPressGesture](../longpressgesture.md)
-  A gesture that succeeds when the user performs a long press.
+  A gesture that succeeds when a person performs a long press that elapses a minimum duration.
 
 
 ---

@@ -38,7 +38,7 @@ Call this endpoint to get a list of all uploaded message identifiers and check t
 - [Delete Message](./delete-message.md)
   Deletes a previously uploaded message.
 - [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
+  The request body for uploading a retention message, which includes the message text and an optional image reference and bullet points.
 - [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
 - [object GetMessageListResponse](./getmessagelistresponse.md)

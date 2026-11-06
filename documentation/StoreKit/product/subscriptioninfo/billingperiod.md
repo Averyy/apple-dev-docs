@@ -19,6 +19,18 @@
 typealias BillingPeriod = SubscriptionPeriod
 ```
 
+## See Also
+
+### Getting pricing terms
+- [let pricingTerms: [Product.SubscriptionInfo.PricingTerms]](./pricingterms-swift.property.md)
+  The pricing terms available for the subscription, including its billing plan types and pricing models.
+- [Product.SubscriptionInfo.PricingTerms](./pricingterms-swift.struct.md)
+  The billing plan type, pricing model, and offers for one way of paying for an auto-renewable subscription.
+- [Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
+- [Product.SubscriptionInfo.BillingInfo](./billinginfo.md)
+  The price charged at each billing event, and the period between renewals.
+- [Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
+
 
 ---
 

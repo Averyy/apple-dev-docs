@@ -25,7 +25,7 @@ Access this configuration through `UINavigationItem/navigationBarMinimization` a
 
 ## Topics
 
-### Instance Properties
+### Configuring bar minimization
 - [minimizationBehavior](./uibarminimization-c.class/minimizationbehavior.md)
   The minimization behavior.
 - [restorationBehavior](./uibarminimization-c.class/restorationbehavior.md)
@@ -40,6 +40,12 @@ Access this configuration through `UINavigationItem/navigationBarMinimization` a
 ### Conforms To
 - [NSCopying](../Foundation/nscopying.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Configuring minimization behavior
+- [navigationBarMinimization](./uinavigationitem/navigationbarminimization-15u99.md)
+  The minimization configuration for the navigation bar.
 
 
 ---

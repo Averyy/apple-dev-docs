@@ -7,7 +7,7 @@
 An effect that dims passthrough video.
 
 **Availability**:
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: dark)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: dark)
 
 ## Declaration
 

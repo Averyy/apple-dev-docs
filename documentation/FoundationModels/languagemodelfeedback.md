@@ -11,6 +11,7 @@ Feedback appropriate for logging or attaching to Feedback Assistant.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 
@@ -22,7 +23,7 @@ struct LanguageModelFeedback
 
 ## Overview
 
-`LanguageModelFeedback` is a namespace with  structures for describing feedback in a consistent way. [`LanguageModelFeedback.Sentiment`](./languagemodelfeedback/sentiment.md) describes the sentiment of the feedback, while [`LanguageModelFeedback.Issue`](./languagemodelfeedback/issue.md) offers a standard template for issues.
+`LanguageModelFeedback` is a namespace with structures for describing feedback in a consistent way. [`LanguageModelFeedback.Sentiment`](./languagemodelfeedback/sentiment.md) describes the sentiment of the feedback, while [`LanguageModelFeedback.Issue`](./languagemodelfeedback/issue.md) offers a standard template for issues.
 
 Given a model session, use [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md) to produce structured feedback.
 

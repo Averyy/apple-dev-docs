@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-@preconcurrency struct ISO18013MobileDocumentRequestScene<Content> where Content : Sendable, Content : View
+@preconcurrency struct ISO18013MobileDocumentRequestScene<Content> where Content : View
 ```
 
 ## Topics

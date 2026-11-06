@@ -13,13 +13,17 @@ Xcode includes a set of command-line tools that only ship with the app, such as 
 
 - **`agvtool`**: Manage build and version numbers. To learn more about this command, enter `man agvtool` in Terminal.
 
-### Build a project
+### Build projects
 
-- **`xcodebuild`**: Build Xcode projects and workspaces. To learn more about this command, enter `man xcodebuild` in Terminal.
+- **`xcodebuild`**: Build Xcode projects and workspaces. To learn more about this command, enter `man xcodebuild` in Terminal. For more information, see [Managing Xcode projects using command-line tools](./managing-xcode-projects-using-the-command-line.md).
 
-### Debug a project
+### Configure projects
 
-- **`devicectl`**: Manage and interact with devices connected to a host. To learn more about this command, enter `xcrun devicectl help` in Terminal.
+- **`xcodeproj`**: Inspect and edit Xcode project files. To learn more about this command, enter `xcodeproj help` or `xcodeproj help <subcommand>` in Terminal.
+
+### Debug projects
+
+- **`devicectl`**: Manage and interact with devices connected to a host. To learn more about this command, enter `devicectl help` or `devicectl help <subcommand>` in Terminal.
 - **`xcdebug`**: Start a debugging session in Xcode. To learn more about this command, enter `xcdebug --help` in Terminal.
 
 ### Edit files

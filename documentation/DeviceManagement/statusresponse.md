@@ -22,6 +22,21 @@ object StatusResponse
 
 Compare `numCompleted` against `numRequested` to track the progress of an event. When an event finishes with failures, `failures` describes each one.
 
+The `eventType` reflects the request that created the event:
+
+| Request | `eventType` |
+| --- | --- |
+| [`Associate Assets`](./associate-assets.md) | `ASSOCIATE` |
+| [`Disassociate Assets`](./disassociate-assets.md) | `DISASSOCIATE` |
+| [`Revoke Assets`](./revoke-assets.md) | `REVOKE` |
+| [`Associate Subscriptions`](./associate-subscriptions.md) | `ASSOCIATE` |
+| [`Disassociate Subscriptions`](./disassociate-subscriptions.md) | `DISASSOCIATE` |
+| [`Create Users`](./create-users.md) | `CREATE` |
+| [`Update Users`](./update-users.md) | `UPDATE` |
+| [`Retire Users`](./retire-users.md) | `RETIRE` |
+
+A revoke event reports an `eventType` of `REVOKE` here, even though the `ASSET_MANAGEMENT` notifications it generates report a `type` of `DISASSOCIATE`. For more information, see [Track revoked assignments](./subscribing-to-notifications.md#Track-revoked-assignments).
+
 ## Topics
 
 ### Objects and Data Types

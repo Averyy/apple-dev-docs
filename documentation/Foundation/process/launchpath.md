@@ -7,7 +7,7 @@
 Sets the receiver’s executable.
 
 **Availability**:
-- macOS 10.0+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`executableURL`](./executableurl.md) instead.
 

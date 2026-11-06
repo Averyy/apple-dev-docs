@@ -29,6 +29,12 @@ let loader = ArrayLoader(samples: [
 ])
 ```
 
+## See Also
+
+### Creating a loader
+- [init(arrayLiteral: Sample...)](./init%28arrayliteral%29.md)
+  Creates a loader from an array literal of samples.
+
 
 ---
 

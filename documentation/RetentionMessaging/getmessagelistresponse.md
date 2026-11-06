@@ -33,7 +33,7 @@ The [`Get Message List`](./get-message-list.md) endpoint returns this response.
 - [Get Message List](./get-message-list.md)
   Gets the message identifier and state of all uploaded messages.
 - [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
+  The request body for uploading a retention message, which includes the message text and an optional image reference and bullet points.
 - [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
 - [object GetMessageListResponseItem](./getmessagelistresponseitem.md)

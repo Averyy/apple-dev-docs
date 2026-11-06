@@ -7,7 +7,7 @@
 A response that contains the detailed information for an Apple device enrolled in a device management service.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

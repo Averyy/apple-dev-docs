@@ -39,7 +39,7 @@ init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: Scorin
 
 ### Creating a multi-dimension evaluator
 - [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./init%28judge,dimensions,scoringmode,prompt%29.md)
-  Creates a multi-metric evaluator with a custom judge prompt.
+  Creates a multi-metric evaluator with a custom model prompt.
 
 
 ---

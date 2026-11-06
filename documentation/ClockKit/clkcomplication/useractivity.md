@@ -7,7 +7,7 @@
 An object that represents the state of the app at a moment in time.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

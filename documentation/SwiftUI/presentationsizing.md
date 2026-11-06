@@ -23,24 +23,26 @@ protocol PresentationSizing
 
 ## Overview
 
-You don’t need to define your own version of this protocol. The system implementations of [`form`](./presentationsizing/form.md), [`page`](./presentationsizing/page.md), and [`fitted`](./presentationsizing/fitted.md) are conveniences that automatically adapt to different device and screen sizes. If you do want to define your own sizing, first consider using the modifiers `PresenationSizing/sticky(horizontal:vertical:)` and [`fitted(horizontal:vertical:)`](./presentationsizing/fitted%28horizontal,vertical%29.md). For example, to define your own sizing that proposes a 400x400 square size:
+The system provides [`form`](./presentationsizing/form.md), [`page`](./presentationsizing/page.md), and [`fitted`](./presentationsizing/fitted.md) implementations as conveniences that automatically adapt to different device and screen sizes. Before you define your own sizing implementation, first consider using the modifiers [`sticky(horizontal:vertical:)`](./presentationsizing/sticky%28horizontal,vertical%29.md) and [`fitted(horizontal:vertical:)`](./presentationsizing/fitted%28horizontal,vertical%29.md) instead.
+
+The following example shows a custom sizing implementation that proposes a 400x400 square size:
 
 ```swift
-protocol SquareSizing: PresentationSizing {
+struct SquareSizing: PresentationSizing {
     func proposedSize(
-        for subview: PresentationSizingRoot,
+        for root: PresentationSizingRoot,
         context: PresentationSizingContext
-    ) {
+    )  -> ProposedViewSize {
         .init(width: 400, height: 400)
     }
 }
 
 extension PresentationSizing where Self == SquareSizing {
-    public static var square: Self { SquareSizing() }
+    static var square: Self { SquareSizing() }
 }
 ```
 
-Then, at the callsite, you can modify `.square` just like system sizings, for example, to fit its content vertically:
+Modify `.square` like the system-provided sizings to fit its content vertically:
 
 ```swift
 .presentationSizing(.square.fitted(horizontal: false, vertical: true))
@@ -70,7 +72,7 @@ Then, at the callsite, you can modify `.square` just like system sizings, for ex
 - [struct FittedPresentationSizing](./fittedpresentationsizing.md)
   The size of the presentation is dictated by the ideal size of the content.
 - [struct FormPresentationSizing](./formpresentationsizing.md)
-  The size is appropriate for forms and slightly less wide than`.page`
+  The size is appropriate for forms and slightly less wide than a page.
 - [struct PagePresentationSizing](./pagepresentationsizing.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 

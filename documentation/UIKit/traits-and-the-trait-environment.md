@@ -72,6 +72,9 @@ Avoid using custom traits in cases where you can directly set properties on a vi
 ### System traits
 - [struct UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-swift.struct.md)
 - [struct UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-swift.struct.md)
+- [UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-c.class.md)
+  A trait that reports the alignment the navigation bar resolved for its title.
+- [UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-c.class.md)
 
 ## See Also
 

@@ -16,9 +16,12 @@ Download sales and trends reports filtered by your specified criteria.
 - [App Store Connect API 3.4 release notes](./app-store-connect-api-3-4-release-notes.md)
 - [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
+- [App Store Connect API 4.6 release notes](./app-store-connect-api-4-6-release-notes.md)
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
 ## Discussion
+
+> ❗ **Important**:  The `INSTALLS` report type is deprecated, including its `SUMMARY_CHANNEL`, `SUMMARY_INSTALL_TYPE`, and `SUMMARY_TERRITORY` sub types, which no other report type uses. As of November 4, 2026, Apple no longer generates new `INSTALLS` reports, but you can still download historical reports. There’s no replacement report type.
 
 ### Allowed values based on sales report type
 

@@ -83,7 +83,7 @@ session.process(requests: [request])
 
 ### Compensate for challenging images
 
-RealityKit’s default photogrammetry settings work for the vast majority of input images. If, however, you have image sets that are low contrast or lack many identifying landmarks, you can override the default values to compensate by creating a [`PhotogrammetrySession.Configuration`](./photogrammetrysession/configuration-swift.struct.md) object and passing it into the initializer when you create your [`PhotogrammetrySession`](./photogrammetrysession.md).
+The default photogrammetry settings in RealityKit work for the vast majority of input images. If, however, you have image sets that are low contrast or lack many identifying landmarks, you can override the default values to compensate by creating a [`PhotogrammetrySession.Configuration`](./photogrammetrysession/configuration-swift.struct.md) object and passing it into the initializer when you create your [`PhotogrammetrySession`](./photogrammetrysession.md).
 
 To simplify the object-creation process, you can use a custom configuration to provide images to the [`PhotogrammetrySession`](./photogrammetrysession.md) in sequence by listing adjacent images together, or to control support for object masking, which blocks out portions of an image around an object.
 

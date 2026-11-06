@@ -7,13 +7,13 @@
 Creates a section with a footer and the provided section content.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Section(content:footer:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Section(content:footer:))
 
 > **Deprecated**: Use [`init(content:footer:)`](./init%28content,footer%29.md) instead.
 

@@ -111,6 +111,23 @@ If you don’t have environment information, follow these steps:
   Get a paginated list of the customers that belong to a group.
 - [object GetGroupMembersResponse](./getgroupmembersresponse.md)
   A response that contains a page of the customers that belong to a group.
+### Seat management
+- [Get Seat Info](./get-seat-info.md)
+  Get the seat counts and the seat claims of a group subscription that uses developer-hosted invitations.
+- [object GetSeatInfoResponse](./getseatinforesponse.md)
+  A response that contains the seat counts and the seat claims of a group subscription that uses developer-hosted invitations.
+- [Claim Seat](./claim-seat.md)
+  Claim a seat for a customer in a group subscription that uses developer-hosted invitations.
+- [object ClaimSeatRequest](./claimseatrequest.md)
+  The request body that contains the information to claim a seat in a group subscription that uses developer-hosted invitations.
+- [object ClaimSeatResponse](./claimseatresponse.md)
+  A response that contains the identifier of a seat claim.
+- [Unclaim Seat](./unclaim-seat.md)
+  Release a claimed seat in a group subscription that uses developer-hosted invitations.
+- [Associate Seat](./associate-seat.md)
+  Associate a customer with a claimed seat in a group subscription that uses developer-hosted invitations.
+- [object AssociateSeatRequest](./associateseatrequest.md)
+  The request body that contains the app transaction identifier of the customer who occupies a claimed seat.
 ### App Account Token
 - [Set App Account Token](./set-app-account-token.md)
   Sets the app account token value for a purchase the customer makes outside of your app, or updates its value in an existing transaction.

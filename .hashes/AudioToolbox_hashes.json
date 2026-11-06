@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/AudioToolbox": {
       "file_path": "documentation/AudioToolbox/AudioToolbox.md",
-      "hash": "5f4dd7f63612dcfac61c067645fee7cc2302660f5082b1ec275add49d480d726"
+      "hash": "81f99f52ab6408152941a8d78ab0fb49a45ab3c865085b296103d1087544ce86"
     },
     "https://developer.apple.com/documentation/audiotoolbox/1387633-aueventsampletime": {
       "file_path": "documentation/AudioToolbox/api-1387633-aueventsampletime.md",
@@ -4990,23 +4990,23 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphaddnode(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphaddnode(_,_,_).md",
-      "hash": "b2147d8b774bdeef577ca62609d10ecf4811d137b1df343e0167a1914d7273c8"
+      "hash": "7fc10878b517c20943e437ac78761c65003c207aa67c77fb002e4784667005a6"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphaddrendernotify(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphaddrendernotify(_,_,_).md",
-      "hash": "9ab37fd3f7ea95a2066dd4bbfe8def585cfaa68c910e22bcc533412309caac19"
+      "hash": "ba2ca29ddf8c95d51c679fe03e640ef1ac792708b2a61204ac1a7224ffd9090d"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphclearconnections(_:)": {
       "file_path": "documentation/AudioToolbox/augraphclearconnections(_).md",
-      "hash": "12ddec242d1601878b57939737a203ad615f1df22ca205673f9a13d85d34efff"
+      "hash": "aa05c52d55bf0e96de66fcc3710da61cd5032d2c6a0dc1e75f188b4c53f786af"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphclose(_:)": {
       "file_path": "documentation/AudioToolbox/augraphclose(_).md",
-      "hash": "d7e5a23802182678244bcd2cab74d540395026a3f205d0a53ce0c16819693788"
+      "hash": "d6df54a9723c65f64a91b1000526af72a53148b32a90bd0a0a7a299830087fa9"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphconnectnodeinput(_:_:_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphconnectnodeinput(_,_,_,_,_).md",
-      "hash": "b209268b4a40f4bef10d5ff88ac6e58578833f8432cecd755253de7121bf6a36"
+      "hash": "4ed75c89c04ef5bc9e6ad55008ce6a0617b86ac70a213ea273de6ca0ce31b8d1"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphcountnodeconnections": {
       "file_path": "documentation/AudioToolbox/augraphcountnodeconnections.md",
@@ -5014,11 +5014,11 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphcountnodeinteractions(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphcountnodeinteractions(_,_,_).md",
-      "hash": "bf161901917f3e2a01a71e24bb881fa179ed86b2ec40e4f8865adc5ac533bd7b"
+      "hash": "fd065589c84efcf06a812297bcab9588fcaf4d12cbe2bf358ea443109e02bebd"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphdisconnectnodeinput(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphdisconnectnodeinput(_,_,_).md",
-      "hash": "8b933c416b921fc80ff3602f54f17e686ebc38348e54e79eb6cca7162f20f810"
+      "hash": "7893bb233cd88397cebb45ce57f953533ce4584c13901b6de41eb357557820f4"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetconnectioninfo": {
       "file_path": "documentation/AudioToolbox/augraphgetconnectioninfo.md",
@@ -5026,19 +5026,19 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetcpuload(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetcpuload(_,_).md",
-      "hash": "a457c986bf3a10dc87537ca42e16ae0d3f17948e067862327d0d2ba1722c3bc3"
+      "hash": "37cfd4a34f6c5ecef5f89103eb7242ba4c01130e2f8377b872f5160784e75b42"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetindnode(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetindnode(_,_,_).md",
-      "hash": "bff0d4a2ab47b58aa92540f8cc40a2351823d6ed68cff61666836842fe632968"
+      "hash": "91d97e70d9f62ad030736e3ee350ec72b696835faeb333b9336971607f2f174e"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetinteractioninfo(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetinteractioninfo(_,_,_).md",
-      "hash": "307ddb7d1bdc458baff81934d92bdccace407292d44388a4df558453ec2f545c"
+      "hash": "e4879cbb34dff847094f218c88040be123e984b275786967f1882d680ebbdf7f"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetmaxcpuload(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetmaxcpuload(_,_).md",
-      "hash": "d9be9c5610a42b82f635c07e9b2095c191a304e3fd21611f82c06b4732e64c26"
+      "hash": "7cdac37b54848e246789f84147ef2dde9daac386701f669f71b1e2c51ea17553"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnodeconnections": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeconnections.md",
@@ -5046,7 +5046,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnodecount(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetnodecount(_,_).md",
-      "hash": "b397f9cd277021e48073d628465874778b7dacc5cc0fefd448a4a740e646cef6"
+      "hash": "c7b6555e87344b04ea2fd4a49ce979e1326ca752a5b6a8bdcd8259cc635c33e5"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnodeinfo": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinfo.md",
@@ -5054,11 +5054,11 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnodeinfosubgraph(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinfosubgraph(_,_,_).md",
-      "hash": "c0c79089ab8196adbfb75bf2458a24799249d1d66afb2c065f88de8e551d6da3"
+      "hash": "8f0850381bf3b559d75f71c617a2c09940cff89e127757c30e389de5c2a44a00"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnodeinteractions(_:_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinteractions(_,_,_,_).md",
-      "hash": "cc477101119547e8a79022c167382601eaffedb9921aeccab83401fccd33a5cc"
+      "hash": "f0687d1df5d750764ec32c2dd7bea7b1c9e07537f038a3a63d51f61b04388c25"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnumberofconnections": {
       "file_path": "documentation/AudioToolbox/augraphgetnumberofconnections.md",
@@ -5066,27 +5066,27 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphgetnumberofinteractions(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphgetnumberofinteractions(_,_).md",
-      "hash": "e5e6ece16a244fc83e14f4cecd6b842714400f44fbabf1c223ebdce01abdcfa7"
+      "hash": "48df88e253f93b7b87b9e6f7e9cf9e5219b45764437399c7c951f5e2ccf020c8"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphinitialize(_:)": {
       "file_path": "documentation/AudioToolbox/augraphinitialize(_).md",
-      "hash": "17057c81380dd654f1a12c41d0d652e7d7fb6d21c96d31d5e3d99b6f355ca6f3"
+      "hash": "061b3083ff6cf6f2775ac67c6f04090d4bbb43c0b8371fd2e73246eb42490af8"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphisinitialized(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphisinitialized(_,_).md",
-      "hash": "b609cfb73f72f3494e0959e2839a03aceac6b18147f0a391d1a37b69e2a6af13"
+      "hash": "89a0aa3dd4234c907290a6860b6c4cf64fe086ebc22e329cf471b6184794afd3"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphisnodesubgraph(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphisnodesubgraph(_,_,_).md",
-      "hash": "f6077ce43b45e46781f2173e2139c549f5e9aa35380e718040a53c1b5a0da732"
+      "hash": "5fc43b75f010e601448c9cd3d5865b08698ec4ef5eba0ea7f14504f114848f03"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphisopen(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphisopen(_,_).md",
-      "hash": "9f2f06906f2a8d40617ac7c1e777461bbc1955449ac6e47e34166ca15fa5966b"
+      "hash": "e73d65bcedb8f7b5fcd253518dd175d512a72834c6e5d824626789afb16251b5"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphisrunning(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphisrunning(_,_).md",
-      "hash": "a42f6d0ed4d3753ca3804fab6701a483b2126b318eb0de80bc08c7caf17300a9"
+      "hash": "3786a6b5f7ccab29d3a957de0c00606d1a717de46ef5da2b5e3ec7ff1a55c1ce"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphnewnode": {
       "file_path": "documentation/AudioToolbox/augraphnewnode.md",
@@ -5094,43 +5094,43 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphnewnodesubgraph(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphnewnodesubgraph(_,_).md",
-      "hash": "deae32823686c5aa0655aeaa1af8549e9489dd485d3d7acd6401d5301797d773"
+      "hash": "3e6780295eed1cc30e9ab23d0196fb6397873ff78db4af68a8bf3cbf8f854f31"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphnodeinfo(_:_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphnodeinfo(_,_,_,_).md",
-      "hash": "b6f1e467b55bfc56ae899bc8d76681c3b99233c8e482b9d593749a4c6b98cdbb"
+      "hash": "64a079a752056a04ad2c1baa30f0bace1e82db155f7ce1df587ced3e53dfa20c"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphopen(_:)": {
       "file_path": "documentation/AudioToolbox/augraphopen(_).md",
-      "hash": "a4d6688151ad861cd63368d5651e8c80bfc639f25270938f6788167b737bcd5b"
+      "hash": "333a9774c60684632509a68f96cb8f8fc87760f83ff5c7a18125710fdf1cc33e"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphremovenode(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphremovenode(_,_).md",
-      "hash": "d47d378d4794d46ea7665b20df473b738127df15e2cccae847b76d240b570ce2"
+      "hash": "722d6feadaa9781be4f2c737aae92668efebd0fe85e971d4bcaae1d3921d6c15"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphremoverendernotify(_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphremoverendernotify(_,_,_).md",
-      "hash": "a7b412d5f9516ccc7849488bf64092391ba0366341a2832f2df8f2194d124ca1"
+      "hash": "9f434a19c327a6fe782d2d364ee056a3f7268460d517b5628aeff6c3dbbf17ea"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphsetnodeinputcallback(_:_:_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphsetnodeinputcallback(_,_,_,_).md",
-      "hash": "65bcc1c5000f6f4bd77c6094aafad00df45de0b390857536273013a20ee6498d"
+      "hash": "4ce84b01e07fc7b2c8ff566cff918c0baae714b3fdfb23b738d5c71f5464ac18"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphstart(_:)": {
       "file_path": "documentation/AudioToolbox/augraphstart(_).md",
-      "hash": "97d66391173f7e0e7c337b4f090be399a2a6f6d6922ffd2e029a36996905bffa"
+      "hash": "d37e5a1df10233f027bf9fffb2619f195b37040ddb51b8ec166751b1d35a9d89"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphstop(_:)": {
       "file_path": "documentation/AudioToolbox/augraphstop(_).md",
-      "hash": "1ae583ed89d20137fa9122cc28e78463cc829dbe4093956ad280c64f3e46fba5"
+      "hash": "26e46a87430875480938188c96d844fcd718ed2729dd8d4d2e82d6ad686c8fb6"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphuninitialize(_:)": {
       "file_path": "documentation/AudioToolbox/augraphuninitialize(_).md",
-      "hash": "892296c9a5b4968d16cb206ce170a6a2c27a359e6c75076af8b69487017b5c7f"
+      "hash": "ed940755fac6f2efb55d00cf985155bacfda665678e218779010aee19b7ae781"
     },
     "https://developer.apple.com/documentation/audiotoolbox/augraphupdate(_:_:)": {
       "file_path": "documentation/AudioToolbox/augraphupdate(_,_).md",
-      "hash": "b46ec8a537c4f351918ab521cc8deb55b1b5ab2f497b2d6877a62e6d6b94bc64"
+      "hash": "ce5f8832dcec6e66f3eb5cffd4f2e620ea063767b7c2240d79029bc478e0d563"
     },
     "https://developer.apple.com/documentation/audiotoolbox/auheadtrackingbinauralrenderer": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer.md",
@@ -7638,7 +7638,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/disposeaugraph(_:)": {
       "file_path": "documentation/AudioToolbox/disposeaugraph(_).md",
-      "hash": "c93a2770d25ce5c32db976640b3e6b85d78848790d71a0eb3edd9c4d77f70a1f"
+      "hash": "fa981436ca834e531af63a519c52cb8600d074dedbceac9e1cfc6ac531386586"
     },
     "https://developer.apple.com/documentation/audiotoolbox/disposemusiceventiterator(_:)": {
       "file_path": "documentation/AudioToolbox/disposemusiceventiterator(_).md",
@@ -7962,7 +7962,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_enable": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_enable.md",
-      "hash": "bc1b5950471be8324ad2a69b431aadfc2a2c5233df657fb3f3d1da0e9ae02871"
+      "hash": "af086dec2aa8dfc94ea3041287848632a941c017e121d46de5b9d27a65ea9158"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_gain": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_gain.md",
@@ -7970,7 +7970,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_globalreverbgain": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_globalreverbgain.md",
-      "hash": "ac530030de6dcdcdce0dbc36b05315ce8f83af6e4ff1b4a315093058fcd4bc8e"
+      "hash": "705388089d1d6948f134e7df0a3b85e3ad664b646c84116d44f7d882ca5e80e8"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_globalreverbgainindecibels": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_globalreverbgainindecibels.md",
@@ -7978,7 +7978,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_maxgain": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_maxgain.md",
-      "hash": "c9b325111087b94a5c5a0513988bdcdbe42f91ecb8956d5dfc8e31509c55b7ae"
+      "hash": "243c6724ca0b49c1eb723f80b91825496660aa3a3d40b41b81e504342cbc3201"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_maxgainindecibels": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_maxgainindecibels.md",
@@ -7986,7 +7986,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_mingain": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_mingain.md",
-      "hash": "9b8bf959c0f9cc939606ff330b1f8632e2141fcdaf92871efb18bd74f0b81b2c"
+      "hash": "b1ac0a5ba5766ccd4fcf9b0b3c5a7570c589689e3d81f8b88e7bdbc3c0a4f4c4"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_mingainindecibels": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_mingainindecibels.md",
@@ -7994,7 +7994,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_obstructionattenuation": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_obstructionattenuation.md",
-      "hash": "60c2345b27a8160d677e5ea82914929c2b26b5dd1344f7b4d285653b9853ca57"
+      "hash": "b896f2cf2daff221c9e384f9ca64d8977af6660fdd60942e8fae0fa182f21b93"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_obstructionattenuationindecibels": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_obstructionattenuationindecibels.md",
@@ -8002,7 +8002,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_occlusionattenuation": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_occlusionattenuation.md",
-      "hash": "93b74dd5b4ad160b7923917b845fd35228edc2e4a846dd4c4514220fd682c274"
+      "hash": "545e8f8fcedc8672d521b5814a672df36280e6feb3a5cd46152ff937976a4d26"
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_occlusionattenuationindecibels": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_occlusionattenuationindecibels.md",
@@ -8030,7 +8030,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/k3dmixerparam_reverbblend": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_reverbblend.md",
-      "hash": "8d207a7b6a947d4e0f8622272b55b2ce3be53ca4bd0676df4f7e809acda14c0e"
+      "hash": "500f5afc0f4a5b76cd49c3f68098e18ff0d82e11121295d289878f36e20b439b"
     },
     "https://developer.apple.com/documentation/audiotoolbox/kafinfodictionary_album": {
       "file_path": "documentation/AudioToolbox/kafinfodictionary_album.md",
@@ -8196,6 +8196,14 @@
       "file_path": "documentation/AudioToolbox/kaudiocodecbitrateformat_vbr.md",
       "hash": "a184d6aacbb3972009e2e88b95eda025e3fb1ec630f690447e498f02689f3ef5"
     },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_alarm_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_alarm_spatial.md",
+      "hash": "70260b07ce37ce335b5d2e2ed4ed052bdfc38a1031b67c225e58e0e221a4bec3"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_alarm_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_alarm_traditional.md",
+      "hash": "691c002b531c60f081cb5d6a4c8eb5bfc080b97fd62c53429b3e368e1c17ca9e"
+    },
     "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_appleav_spatial_live": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_appleav_spatial_live.md",
       "hash": "af940a246bce18f4d2255a061b32ad6a6f28145d4728b8164335f2001cad0501"
@@ -8264,6 +8272,14 @@
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_capture_traditional.md",
       "hash": "33f1fa4e4ce0cf047a284916e29e50c931050980de6ac3639bc7e6f3e29ca945"
     },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_feedbacksound_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_feedbacksound_spatial.md",
+      "hash": "082f094b72c57bb32ef6aed766db1ab5d75364a500ec7f15db49027a5bbe3630"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_feedbacksound_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_feedbacksound_traditional.md",
+      "hash": "6264d4b36eb501cebf23ad9a435d4139558f4449699a32c9ed53bbce76887499"
+    },
     "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_music_spatial": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_music_spatial.md",
       "hash": "84e8d42044ff058de43358a56bd4d6401de7e66ce50d7a33e06d502702743373"
@@ -8272,13 +8288,45 @@
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_music_traditional.md",
       "hash": "0e3d4e1e0551ced6b8fb1d1949db62e95e4f914475830ec6bbad9ce00b8f1e26"
     },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_othersystemsound_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_othersystemsound_spatial.md",
+      "hash": "8cd6f87f5b37e6949fa61681e1f8ff5074483a035843a7b68449c814e1d0969c"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_othersystemsound_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_othersystemsound_traditional.md",
+      "hash": "6aa9252d45f086de9453cb07caef51dfe3b0a70724ecf8b3599aee3c3d1adf0c"
+    },
     "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_passthrough": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_passthrough.md",
       "hash": "cdfd8734d2cc21088c339cbbe6a3655f20aa9b56c93abf77d2c828e320792365"
     },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_podcast_audiobook_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_podcast_audiobook_spatial.md",
+      "hash": "87b0bd1989c3315fc2d2f79eb070dcecc33387527f781039e3d172f83a896f22"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_podcast_audiobook_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_podcast_audiobook_traditional.md",
+      "hash": "f13b777cabd14880e24ecf6d813ebb664cd3b632a78d39b9fb7f462ee31bfad3"
+    },
     "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_reserved": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_reserved.md",
       "hash": "236a3fc3ae5ecbf402b91d874308f6ad912dd48cb34f2a8d2dc3e7be750fabd8"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_ringtone_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_ringtone_spatial.md",
+      "hash": "33195f2a3fc627036b4a1f4f399cd71a6df4e6b902c3e78ccde5039990073ee7"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_ringtone_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_ringtone_traditional.md",
+      "hash": "1b42974e1c32e7dadd36a3dc287d770454ef641cbcd4929d1ddaad693cd972be"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_spokenresponse_spatial": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_spokenresponse_spatial.md",
+      "hash": "c3e34e8879f3eb1ecffedd261db1bb4e450baf8cff25031404232f0c068ed60c"
+    },
+    "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_spokenresponse_traditional": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_spokenresponse_traditional.md",
+      "hash": "96fe8309e6508adfefa62e076790451eb04175921027df76da8de0333fef52be"
     },
     "https://developer.apple.com/documentation/audiotoolbox/kaudiocodeccontentsource_unspecified": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_unspecified.md",
@@ -14630,7 +14678,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/newaugraph(_:)": {
       "file_path": "documentation/AudioToolbox/newaugraph(_).md",
-      "hash": "01819286181b7ebc448465857ea442fd5284c048bf75dcbdc46c8132368dc90f"
+      "hash": "1e867c995c2b22b3e00a2272f7d06bb0aa82ecc168c6b985897d7166447e7805"
     },
     "https://developer.apple.com/documentation/audiotoolbox/newmusiceventiterator(_:_:)": {
       "file_path": "documentation/AudioToolbox/newmusiceventiterator(_,_).md",
@@ -14930,7 +14978,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/AudioToolbox.json": {
       "file_path": "documentation/AudioToolbox/AudioToolbox.md",
-      "hash": "5f4dd7f63612dcfac61c067645fee7cc2302660f5082b1ec275add49d480d726"
+      "hash": "81f99f52ab6408152941a8d78ab0fb49a45ab3c865085b296103d1087544ce86"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/1387633-aueventsampletime.json": {
       "file_path": "documentation/AudioToolbox/api-1387633-aueventsampletime.md",
@@ -19918,23 +19966,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphaddnode(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphaddnode(_,_,_).md",
-      "hash": "b2147d8b774bdeef577ca62609d10ecf4811d137b1df343e0167a1914d7273c8"
+      "hash": "7fc10878b517c20943e437ac78761c65003c207aa67c77fb002e4784667005a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphaddrendernotify(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphaddrendernotify(_,_,_).md",
-      "hash": "9ab37fd3f7ea95a2066dd4bbfe8def585cfaa68c910e22bcc533412309caac19"
+      "hash": "ba2ca29ddf8c95d51c679fe03e640ef1ac792708b2a61204ac1a7224ffd9090d"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphclearconnections(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphclearconnections(_).md",
-      "hash": "12ddec242d1601878b57939737a203ad615f1df22ca205673f9a13d85d34efff"
+      "hash": "aa05c52d55bf0e96de66fcc3710da61cd5032d2c6a0dc1e75f188b4c53f786af"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphclose(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphclose(_).md",
-      "hash": "d7e5a23802182678244bcd2cab74d540395026a3f205d0a53ce0c16819693788"
+      "hash": "d6df54a9723c65f64a91b1000526af72a53148b32a90bd0a0a7a299830087fa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphconnectnodeinput(_:_:_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphconnectnodeinput(_,_,_,_,_).md",
-      "hash": "b209268b4a40f4bef10d5ff88ac6e58578833f8432cecd755253de7121bf6a36"
+      "hash": "4ed75c89c04ef5bc9e6ad55008ce6a0617b86ac70a213ea273de6ca0ce31b8d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphcountnodeconnections.json": {
       "file_path": "documentation/AudioToolbox/augraphcountnodeconnections.md",
@@ -19942,11 +19990,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphcountnodeinteractions(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphcountnodeinteractions(_,_,_).md",
-      "hash": "bf161901917f3e2a01a71e24bb881fa179ed86b2ec40e4f8865adc5ac533bd7b"
+      "hash": "fd065589c84efcf06a812297bcab9588fcaf4d12cbe2bf358ea443109e02bebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphdisconnectnodeinput(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphdisconnectnodeinput(_,_,_).md",
-      "hash": "8b933c416b921fc80ff3602f54f17e686ebc38348e54e79eb6cca7162f20f810"
+      "hash": "7893bb233cd88397cebb45ce57f953533ce4584c13901b6de41eb357557820f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetconnectioninfo.json": {
       "file_path": "documentation/AudioToolbox/augraphgetconnectioninfo.md",
@@ -19954,19 +20002,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetcpuload(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetcpuload(_,_).md",
-      "hash": "a457c986bf3a10dc87537ca42e16ae0d3f17948e067862327d0d2ba1722c3bc3"
+      "hash": "37cfd4a34f6c5ecef5f89103eb7242ba4c01130e2f8377b872f5160784e75b42"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetindnode(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetindnode(_,_,_).md",
-      "hash": "bff0d4a2ab47b58aa92540f8cc40a2351823d6ed68cff61666836842fe632968"
+      "hash": "91d97e70d9f62ad030736e3ee350ec72b696835faeb333b9336971607f2f174e"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetinteractioninfo(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetinteractioninfo(_,_,_).md",
-      "hash": "307ddb7d1bdc458baff81934d92bdccace407292d44388a4df558453ec2f545c"
+      "hash": "e4879cbb34dff847094f218c88040be123e984b275786967f1882d680ebbdf7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetmaxcpuload(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetmaxcpuload(_,_).md",
-      "hash": "d9be9c5610a42b82f635c07e9b2095c191a304e3fd21611f82c06b4732e64c26"
+      "hash": "7cdac37b54848e246789f84147ef2dde9daac386701f669f71b1e2c51ea17553"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnodeconnections.json": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeconnections.md",
@@ -19974,7 +20022,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnodecount(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetnodecount(_,_).md",
-      "hash": "b397f9cd277021e48073d628465874778b7dacc5cc0fefd448a4a740e646cef6"
+      "hash": "c7b6555e87344b04ea2fd4a49ce979e1326ca752a5b6a8bdcd8259cc635c33e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnodeinfo.json": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinfo.md",
@@ -19982,11 +20030,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnodeinfosubgraph(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinfosubgraph(_,_,_).md",
-      "hash": "c0c79089ab8196adbfb75bf2458a24799249d1d66afb2c065f88de8e551d6da3"
+      "hash": "8f0850381bf3b559d75f71c617a2c09940cff89e127757c30e389de5c2a44a00"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnodeinteractions(_:_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetnodeinteractions(_,_,_,_).md",
-      "hash": "cc477101119547e8a79022c167382601eaffedb9921aeccab83401fccd33a5cc"
+      "hash": "f0687d1df5d750764ec32c2dd7bea7b1c9e07537f038a3a63d51f61b04388c25"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnumberofconnections.json": {
       "file_path": "documentation/AudioToolbox/augraphgetnumberofconnections.md",
@@ -19994,27 +20042,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphgetnumberofinteractions(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphgetnumberofinteractions(_,_).md",
-      "hash": "e5e6ece16a244fc83e14f4cecd6b842714400f44fbabf1c223ebdce01abdcfa7"
+      "hash": "48df88e253f93b7b87b9e6f7e9cf9e5219b45764437399c7c951f5e2ccf020c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphinitialize(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphinitialize(_).md",
-      "hash": "17057c81380dd654f1a12c41d0d652e7d7fb6d21c96d31d5e3d99b6f355ca6f3"
+      "hash": "061b3083ff6cf6f2775ac67c6f04090d4bbb43c0b8371fd2e73246eb42490af8"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphisinitialized(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphisinitialized(_,_).md",
-      "hash": "b609cfb73f72f3494e0959e2839a03aceac6b18147f0a391d1a37b69e2a6af13"
+      "hash": "89a0aa3dd4234c907290a6860b6c4cf64fe086ebc22e329cf471b6184794afd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphisnodesubgraph(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphisnodesubgraph(_,_,_).md",
-      "hash": "f6077ce43b45e46781f2173e2139c549f5e9aa35380e718040a53c1b5a0da732"
+      "hash": "5fc43b75f010e601448c9cd3d5865b08698ec4ef5eba0ea7f14504f114848f03"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphisopen(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphisopen(_,_).md",
-      "hash": "9f2f06906f2a8d40617ac7c1e777461bbc1955449ac6e47e34166ca15fa5966b"
+      "hash": "e73d65bcedb8f7b5fcd253518dd175d512a72834c6e5d824626789afb16251b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphisrunning(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphisrunning(_,_).md",
-      "hash": "a42f6d0ed4d3753ca3804fab6701a483b2126b318eb0de80bc08c7caf17300a9"
+      "hash": "3786a6b5f7ccab29d3a957de0c00606d1a717de46ef5da2b5e3ec7ff1a55c1ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphnewnode.json": {
       "file_path": "documentation/AudioToolbox/augraphnewnode.md",
@@ -20022,43 +20070,43 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphnewnodesubgraph(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphnewnodesubgraph(_,_).md",
-      "hash": "deae32823686c5aa0655aeaa1af8549e9489dd485d3d7acd6401d5301797d773"
+      "hash": "3e6780295eed1cc30e9ab23d0196fb6397873ff78db4af68a8bf3cbf8f854f31"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphnodeinfo(_:_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphnodeinfo(_,_,_,_).md",
-      "hash": "b6f1e467b55bfc56ae899bc8d76681c3b99233c8e482b9d593749a4c6b98cdbb"
+      "hash": "64a079a752056a04ad2c1baa30f0bace1e82db155f7ce1df587ced3e53dfa20c"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphopen(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphopen(_).md",
-      "hash": "a4d6688151ad861cd63368d5651e8c80bfc639f25270938f6788167b737bcd5b"
+      "hash": "333a9774c60684632509a68f96cb8f8fc87760f83ff5c7a18125710fdf1cc33e"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphremovenode(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphremovenode(_,_).md",
-      "hash": "d47d378d4794d46ea7665b20df473b738127df15e2cccae847b76d240b570ce2"
+      "hash": "722d6feadaa9781be4f2c737aae92668efebd0fe85e971d4bcaae1d3921d6c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphremoverendernotify(_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphremoverendernotify(_,_,_).md",
-      "hash": "a7b412d5f9516ccc7849488bf64092391ba0366341a2832f2df8f2194d124ca1"
+      "hash": "9f434a19c327a6fe782d2d364ee056a3f7268460d517b5628aeff6c3dbbf17ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphsetnodeinputcallback(_:_:_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphsetnodeinputcallback(_,_,_,_).md",
-      "hash": "65bcc1c5000f6f4bd77c6094aafad00df45de0b390857536273013a20ee6498d"
+      "hash": "4ce84b01e07fc7b2c8ff566cff918c0baae714b3fdfb23b738d5c71f5464ac18"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphstart(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphstart(_).md",
-      "hash": "97d66391173f7e0e7c337b4f090be399a2a6f6d6922ffd2e029a36996905bffa"
+      "hash": "d37e5a1df10233f027bf9fffb2619f195b37040ddb51b8ec166751b1d35a9d89"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphstop(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphstop(_).md",
-      "hash": "1ae583ed89d20137fa9122cc28e78463cc829dbe4093956ad280c64f3e46fba5"
+      "hash": "26e46a87430875480938188c96d844fcd718ed2729dd8d4d2e82d6ad686c8fb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphuninitialize(_:).json": {
       "file_path": "documentation/AudioToolbox/augraphuninitialize(_).md",
-      "hash": "892296c9a5b4968d16cb206ce170a6a2c27a359e6c75076af8b69487017b5c7f"
+      "hash": "ed940755fac6f2efb55d00cf985155bacfda665678e218779010aee19b7ae781"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/augraphupdate(_:_:).json": {
       "file_path": "documentation/AudioToolbox/augraphupdate(_,_).md",
-      "hash": "b46ec8a537c4f351918ab521cc8deb55b1b5ab2f497b2d6877a62e6d6b94bc64"
+      "hash": "ce5f8832dcec6e66f3eb5cffd4f2e620ea063767b7c2240d79029bc478e0d563"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/auheadtrackingbinauralrenderer.json": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer.md",
@@ -22566,7 +22614,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/disposeaugraph(_:).json": {
       "file_path": "documentation/AudioToolbox/disposeaugraph(_).md",
-      "hash": "c93a2770d25ce5c32db976640b3e6b85d78848790d71a0eb3edd9c4d77f70a1f"
+      "hash": "fa981436ca834e531af63a519c52cb8600d074dedbceac9e1cfc6ac531386586"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/disposemusiceventiterator(_:).json": {
       "file_path": "documentation/AudioToolbox/disposemusiceventiterator(_).md",
@@ -22890,7 +22938,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_enable.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_enable.md",
-      "hash": "bc1b5950471be8324ad2a69b431aadfc2a2c5233df657fb3f3d1da0e9ae02871"
+      "hash": "af086dec2aa8dfc94ea3041287848632a941c017e121d46de5b9d27a65ea9158"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_gain.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_gain.md",
@@ -22898,7 +22946,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_globalreverbgain.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_globalreverbgain.md",
-      "hash": "ac530030de6dcdcdce0dbc36b05315ce8f83af6e4ff1b4a315093058fcd4bc8e"
+      "hash": "705388089d1d6948f134e7df0a3b85e3ad664b646c84116d44f7d882ca5e80e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_globalreverbgainindecibels.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_globalreverbgainindecibels.md",
@@ -22906,7 +22954,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_maxgain.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_maxgain.md",
-      "hash": "c9b325111087b94a5c5a0513988bdcdbe42f91ecb8956d5dfc8e31509c55b7ae"
+      "hash": "243c6724ca0b49c1eb723f80b91825496660aa3a3d40b41b81e504342cbc3201"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_maxgainindecibels.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_maxgainindecibels.md",
@@ -22914,7 +22962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_mingain.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_mingain.md",
-      "hash": "9b8bf959c0f9cc939606ff330b1f8632e2141fcdaf92871efb18bd74f0b81b2c"
+      "hash": "b1ac0a5ba5766ccd4fcf9b0b3c5a7570c589689e3d81f8b88e7bdbc3c0a4f4c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_mingainindecibels.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_mingainindecibels.md",
@@ -22922,7 +22970,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_obstructionattenuation.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_obstructionattenuation.md",
-      "hash": "60c2345b27a8160d677e5ea82914929c2b26b5dd1344f7b4d285653b9853ca57"
+      "hash": "b896f2cf2daff221c9e384f9ca64d8977af6660fdd60942e8fae0fa182f21b93"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_obstructionattenuationindecibels.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_obstructionattenuationindecibels.md",
@@ -22930,7 +22978,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_occlusionattenuation.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_occlusionattenuation.md",
-      "hash": "93b74dd5b4ad160b7923917b845fd35228edc2e4a846dd4c4514220fd682c274"
+      "hash": "545e8f8fcedc8672d521b5814a672df36280e6feb3a5cd46152ff937976a4d26"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_occlusionattenuationindecibels.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_occlusionattenuationindecibels.md",
@@ -22958,7 +23006,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/k3dmixerparam_reverbblend.json": {
       "file_path": "documentation/AudioToolbox/k3dmixerparam_reverbblend.md",
-      "hash": "8d207a7b6a947d4e0f8622272b55b2ce3be53ca4bd0676df4f7e809acda14c0e"
+      "hash": "500f5afc0f4a5b76cd49c3f68098e18ff0d82e11121295d289878f36e20b439b"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kafinfodictionary_album.json": {
       "file_path": "documentation/AudioToolbox/kafinfodictionary_album.md",
@@ -23124,6 +23172,14 @@
       "file_path": "documentation/AudioToolbox/kaudiocodecbitrateformat_vbr.md",
       "hash": "a184d6aacbb3972009e2e88b95eda025e3fb1ec630f690447e498f02689f3ef5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_alarm_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_alarm_spatial.md",
+      "hash": "70260b07ce37ce335b5d2e2ed4ed052bdfc38a1031b67c225e58e0e221a4bec3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_alarm_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_alarm_traditional.md",
+      "hash": "691c002b531c60f081cb5d6a4c8eb5bfc080b97fd62c53429b3e368e1c17ca9e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_appleav_spatial_live.json": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_appleav_spatial_live.md",
       "hash": "af940a246bce18f4d2255a061b32ad6a6f28145d4728b8164335f2001cad0501"
@@ -23192,6 +23248,14 @@
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_capture_traditional.md",
       "hash": "33f1fa4e4ce0cf047a284916e29e50c931050980de6ac3639bc7e6f3e29ca945"
     },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_feedbacksound_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_feedbacksound_spatial.md",
+      "hash": "082f094b72c57bb32ef6aed766db1ab5d75364a500ec7f15db49027a5bbe3630"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_feedbacksound_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_feedbacksound_traditional.md",
+      "hash": "6264d4b36eb501cebf23ad9a435d4139558f4449699a32c9ed53bbce76887499"
+    },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_music_spatial.json": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_music_spatial.md",
       "hash": "84e8d42044ff058de43358a56bd4d6401de7e66ce50d7a33e06d502702743373"
@@ -23200,13 +23264,45 @@
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_music_traditional.md",
       "hash": "0e3d4e1e0551ced6b8fb1d1949db62e95e4f914475830ec6bbad9ce00b8f1e26"
     },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_othersystemsound_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_othersystemsound_spatial.md",
+      "hash": "8cd6f87f5b37e6949fa61681e1f8ff5074483a035843a7b68449c814e1d0969c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_othersystemsound_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_othersystemsound_traditional.md",
+      "hash": "6aa9252d45f086de9453cb07caef51dfe3b0a70724ecf8b3599aee3c3d1adf0c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_passthrough.json": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_passthrough.md",
       "hash": "cdfd8734d2cc21088c339cbbe6a3655f20aa9b56c93abf77d2c828e320792365"
     },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_podcast_audiobook_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_podcast_audiobook_spatial.md",
+      "hash": "87b0bd1989c3315fc2d2f79eb070dcecc33387527f781039e3d172f83a896f22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_podcast_audiobook_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_podcast_audiobook_traditional.md",
+      "hash": "f13b777cabd14880e24ecf6d813ebb664cd3b632a78d39b9fb7f462ee31bfad3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_reserved.json": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_reserved.md",
       "hash": "236a3fc3ae5ecbf402b91d874308f6ad912dd48cb34f2a8d2dc3e7be750fabd8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_ringtone_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_ringtone_spatial.md",
+      "hash": "33195f2a3fc627036b4a1f4f399cd71a6df4e6b902c3e78ccde5039990073ee7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_ringtone_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_ringtone_traditional.md",
+      "hash": "1b42974e1c32e7dadd36a3dc287d770454ef641cbcd4929d1ddaad693cd972be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_spokenresponse_spatial.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_spokenresponse_spatial.md",
+      "hash": "c3e34e8879f3eb1ecffedd261db1bb4e450baf8cff25031404232f0c068ed60c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_spokenresponse_traditional.json": {
+      "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_spokenresponse_traditional.md",
+      "hash": "96fe8309e6508adfefa62e076790451eb04175921027df76da8de0333fef52be"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/kaudiocodeccontentsource_unspecified.json": {
       "file_path": "documentation/AudioToolbox/kaudiocodeccontentsource_unspecified.md",
@@ -29558,7 +29654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/newaugraph(_:).json": {
       "file_path": "documentation/AudioToolbox/newaugraph(_).md",
-      "hash": "01819286181b7ebc448465857ea442fd5284c048bf75dcbdc46c8132368dc90f"
+      "hash": "1e867c995c2b22b3e00a2272f7d06bb0aa82ecc168c6b985897d7166447e7805"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/newmusiceventiterator(_:_:).json": {
       "file_path": "documentation/AudioToolbox/newmusiceventiterator(_,_).md",
@@ -29861,6 +29957,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 7464
+    "total_pages": 7488
   }
 }

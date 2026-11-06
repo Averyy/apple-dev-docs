@@ -55,7 +55,7 @@ struct ToggleSilentMode: SetValueIntent {
 - [struct OpenURLIntent](./openurlintent.md)
   An app intent that opens one of your universal links and displays its contents.
 - [protocol DeleteIntent](./deleteintent.md)
-  Delete the associated entity(s).
+  An app intent that deletes one or more entities.
 - [protocol DeprecatedAppIntent](./deprecatedappintent.md)
   An app intent that marks an action as deprecated and informs people which action to use instead.
 

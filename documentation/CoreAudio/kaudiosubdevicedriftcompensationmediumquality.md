@@ -5,10 +5,10 @@
 **Role**: Global Variable
 
 **Availability**:
-- iOS 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMediumQuality)
-- iPadOS 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMediumQuality)
-- Mac Catalyst 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMediumQuality)
-- macOS 13.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMediumQuality)
+- iOS 16.0+ - Deprecated in 27.3 (renamed: kAudioAggregateDriftCompensationMediumQuality)
+- iPadOS 16.0+ - Deprecated in 27.3 (renamed: kAudioAggregateDriftCompensationMediumQuality)
+- Mac Catalyst 16.0+ - Deprecated in 27.3 (renamed: kAudioAggregateDriftCompensationMediumQuality)
+- macOS 13.0+ - Deprecated in 27.3 (renamed: kAudioAggregateDriftCompensationMediumQuality)
 
 ## Declaration
 

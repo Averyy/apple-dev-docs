@@ -7,13 +7,13 @@
 The components of a bitmap are floating-point values.
 
 **Availability**:
-- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- tvOS - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
-- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageComponentInfo.float)
+- iOS 2.0+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- iPadOS 2.0+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- Mac Catalyst 13.1+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- macOS 10.0+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- tvOS - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
+- watchOS 2.0+ - Deprecated in 27.3 (renamed: CGImageComponentInfo.float)
 
 ## Declaration
 

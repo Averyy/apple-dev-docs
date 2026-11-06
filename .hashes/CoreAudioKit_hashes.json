@@ -50,7 +50,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview": {
       "file_path": "documentation/CoreAudioKit/augenericview.md",
-      "hash": "c492d973b4ca6ae136e4de2d6c61675f4ae73fd3dab2d1995b0b9ca51539e96f"
+      "hash": "66d1b979d18ac9e38b9838b2516842d590574b9c679e550b7829e6faaafb09a2"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview/audiounit": {
       "file_path": "documentation/CoreAudioKit/augenericview/audiounit.md",
@@ -310,7 +310,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview.json": {
       "file_path": "documentation/CoreAudioKit/augenericview.md",
-      "hash": "c492d973b4ca6ae136e4de2d6c61675f4ae73fd3dab2d1995b0b9ca51539e96f"
+      "hash": "66d1b979d18ac9e38b9838b2516842d590574b9c679e550b7829e6faaafb09a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview/audiounit.json": {
       "file_path": "documentation/CoreAudioKit/augenericview/audiounit.md",

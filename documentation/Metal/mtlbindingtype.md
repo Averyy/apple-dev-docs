@@ -34,6 +34,7 @@ enum MTLBindingType : NSInteger;
 - [MTLBindingType.primitiveAccelerationStructure](./mtlbindingtype/primitiveaccelerationstructure.md)
 - [MTLBindingType.sampler](./mtlbindingtype/sampler.md)
 - [MTLBindingType.tensor](./mtlbindingtype/tensor.md)
+  A binding point for a tensor.
 - [MTLBindingType.texture](./mtlbindingtype/texture.md)
 - [MTLBindingType.threadgroupMemory](./mtlbindingtype/threadgroupmemory.md)
 - [MTLBindingType.visibleFunctionTable](./mtlbindingtype/visiblefunctiontable.md)

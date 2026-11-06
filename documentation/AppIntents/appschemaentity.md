@@ -56,6 +56,8 @@ protocol AppSchemaEntity : AppSchema.Kind
   The collection of entity schemas in the reminders domain.
 - [static var spreadsheet: some AppSchema.SpreadsheetEntity](./appschemaentity/spreadsheet.md)
   The collection of entity schemas in the spreadsheet domain.
+- [static var video: some AppSchema.VideoEntity](./appschemaentity/video.md)
+  The collection of entity schemas in the video domain.
 - [static var whiteboard: some AppSchema.WhiteboardEntity](./appschemaentity/whiteboard.md)
   The collection of entity schemas in the whiteboard domain.
 - [static var wordProcessor: some AppSchema.WordProcessorEntity](./appschemaentity/wordprocessor.md)

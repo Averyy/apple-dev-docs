@@ -304,6 +304,8 @@ If your app has the [`com.apple.developer.web-browser`](../BundleResources/entit
 ### Deprecated
 - [Deprecated symbols](./wkwebview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var qualifiedServerTrust: SecTrust?](./wkwebview/qualifiedservertrust.md)
 
 ## Relationships
 

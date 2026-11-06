@@ -7,12 +7,12 @@
 Creates a slider to select a value from a given range, which displays the provided labels.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:))
 
 > **Deprecated**: Use [`init(value:in:label:minimumValueLabel:maximumValueLabel:onEditingChanged:)`](./init%28value,in,label,minimumvaluelabel,maximumvaluelabel,oneditingchanged%29.md) instead.
 

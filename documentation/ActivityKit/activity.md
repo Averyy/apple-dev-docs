@@ -9,6 +9,8 @@ The object you use to start, update, and end a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 
@@ -127,7 +129,7 @@ To observe these changes, use the asynchronous sequences the activity object off
 
 ### Starting a Live Activity
 - [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
-  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+  Display up-to-date data and offer quick interactions in highly visible places like the Dynamic Island, the menu bar, a paired Apple Watch, or in CarPlay.
 - [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md)
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)

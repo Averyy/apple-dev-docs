@@ -62,6 +62,8 @@ protocol AppSchemaIntent : AppSchema.Kind
   The collection of intent schemas in the spreadsheet domain.
 - [static var system: some AppSchema.SystemIntent](./appschemaintent/system.md)
   The collection of intent schemas in the system domain.
+- [static var video: some AppSchema.VideoIntent](./appschemaintent/video.md)
+  The collection of intent schemas in the video domain.
 - [static var visualIntelligence: some AppSchema.VisualIntelligenceIntent](./appschemaintent/visualintelligence.md)
   The collection of intent schemas in the visual intelligence domain.
 - [static var whiteboard: some AppSchema.WhiteboardIntent](./appschemaintent/whiteboard.md)

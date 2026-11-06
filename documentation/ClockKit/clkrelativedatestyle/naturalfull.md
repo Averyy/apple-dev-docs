@@ -7,7 +7,7 @@
 A natural date style using unabbreviated units, when possible.
 
 **Availability**:
-- watchOS 6.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.3
 
 ## Declaration
 

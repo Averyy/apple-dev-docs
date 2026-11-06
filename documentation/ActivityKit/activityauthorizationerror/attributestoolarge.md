@@ -9,6 +9,8 @@ The provided Live Activity attributes exceeded the maximum size of 4KB.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

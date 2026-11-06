@@ -7,13 +7,13 @@
 Sets this view’s color scheme.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: preferredColorScheme(_:))
 
 > **Deprecated**: Use [`preferredColorScheme(_:)`](./preferredcolorscheme%28_%29.md) instead.
 

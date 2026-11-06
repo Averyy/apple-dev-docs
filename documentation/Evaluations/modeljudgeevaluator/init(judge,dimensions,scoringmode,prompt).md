@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a multi-metric evaluator with a custom judge prompt.
+Creates a multi-metric evaluator with a custom model prompt.
 
 **Availability**:
 - iOS 27.0+
@@ -21,12 +21,27 @@ Creates a multi-metric evaluator with a custom judge prompt.
 init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete, prompt: ModelJudgePrompt<Input>)
 ```
 
+## Discussion
+
+```swift
+let prompt = ModelJudgePrompt<ModelSample<String>>(
+    instructions: "Score the response on multiple dimensions."
+)
+let evaluator = ModelJudgeEvaluator<ModelSample<String>>(
+    judge: SystemLanguageModel.default,
+    dimensions: [
+        ScoreDimension("Quality", scale: .passFail(passDescription: "Good", failDescription: "Poor"))
+    ],
+    prompt: prompt
+)
+```
+
 ## Parameters
 
 - `judge`: The language model to use as judge.
 - `dimensions`: The dimensions to score. Each produces a separate DataFrame column.
-- `scoringMode`: A value that indicates whether scores are discrete (default) or allow any floating-point value.
-- `prompt`: Configuration for the judge prompt, including instructions, response presentation, and reference.
+- `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.
+- `prompt`: Configuration for the model prompt, including instructions, response presentation, and reference.
 
 ## See Also
 

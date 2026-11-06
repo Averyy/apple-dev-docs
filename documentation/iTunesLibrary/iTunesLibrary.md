@@ -46,6 +46,7 @@ To use this framework, create an [`ITLibrary`](./itlibrary.md) object by calling
   This notification is sent to NSDistributedNotificationCenter when a change has occurred in the library.
 ### Macros
 - [ITLIB_AVAILABLE](./itlib_available.md)
+- [ITLIB_DEPRECATED](./itlib_deprecated.md)
 - [ITLIB_EXPORT](./itlib_export.md)
 - [ITLIB_EXTERN](./itlib_extern.md)
 - [ITLIB_INIT_UNAVAILABLE](./itlib_init_unavailable.md)

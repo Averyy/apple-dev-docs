@@ -7,7 +7,7 @@
 Creates an image provider that produces full-color and tinted images.
 
 **Availability**:
-- watchOS 7.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.3
 
 ## Declaration
 

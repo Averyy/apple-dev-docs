@@ -9,6 +9,8 @@ An asynchronous sequence you use to observe changes to the dynamic content of a 
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
 
 ## Declaration
 

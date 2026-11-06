@@ -7,7 +7,7 @@ Create personalized and realistic spatial audio experiences.
 
 ## Overview
 
-Creating a compelling audio experience with RealityKit is as simple as playing audio on your existing RealityKit entities. Use RealityKit’s default audio settings to create a personalized and realistic experience or utilize advanced customization options to tailor the audio for the needs of your application. Utilizing acoustic ray tracing and a personalized HRTF, RealityKit provides lifelike and high-quality sound.
+Creating a compelling audio experience with RealityKit is as simple as playing audio on your existing RealityKit entities. Use the default audio settings in RealityKit to create a personalized and realistic experience or utilize advanced customization options to tailor the audio for the needs of your application. Utilizing acoustic ray tracing and a personalized HRTF, RealityKit provides lifelike and high-quality sound.
 
 You can load and configure audio with an [`AudioResource`](./audioresource.md) subclass, such as [`AudioFileResource`](./audiofileresource.md), and adjust the spatial rendering with [`SpatialAudioComponent`](./spatialaudiocomponent.md), [`AmbientAudioComponent`](./ambientaudiocomponent.md), [`ChannelAudioComponent`](./channelaudiocomponent.md). Control the audio resource playback with [`AudioPlaybackController`](./audioplaybackcontroller.md). For real-time audio playback you can prepare a [`Audio.GeneratorRenderHandler`](./audio/generatorrenderhandler.md) and control playback with [`AudioGeneratorController`](./audiogeneratorcontroller.md). You can control the playback levels of multiple resources at once with [`AudioMixGroup`](./audiomixgroup.md) and [`AudioMixGroupsComponent`](./audiomixgroupscomponent.md).
 

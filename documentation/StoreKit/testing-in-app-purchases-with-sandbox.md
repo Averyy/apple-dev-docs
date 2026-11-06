@@ -155,6 +155,8 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
   Verify that your app can reactivate an expired subscription by receiving a transaction callback or inspecting an updated receipt.
 - [Testing disabling auto-renew](./testing-disabling-auto-renew.md)
   Verify that your app receives subscription updates when a user cancels a subscription by verifying the receipt or receiving a notification.
+- [Testing multiseat subscriptions](./testing-multiseat-subscriptions.md)
+  Test group purchases, invitations, seat changes, refunds, and purchases from organizations in the sandbox environment before you release your app.
 ### Family Sharing
 - [Testing Family Sharing](./testing-family-sharing.md)
   Verify that your app handles auto-renewable subscriptions and non-consumable Apple In-App Purchases that family members share with Family Sharing.

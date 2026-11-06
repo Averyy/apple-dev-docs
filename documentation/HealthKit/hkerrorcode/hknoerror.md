@@ -5,12 +5,12 @@
 **Role**: Enumeration Case
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 13.0+
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 ## Declaration
 

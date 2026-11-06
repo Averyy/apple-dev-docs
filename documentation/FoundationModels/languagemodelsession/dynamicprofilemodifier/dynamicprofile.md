@@ -11,6 +11,7 @@ The dynamic profile type that a modifier’s body returns.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 

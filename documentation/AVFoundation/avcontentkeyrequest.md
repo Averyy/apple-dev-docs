@@ -73,7 +73,7 @@ class AVContentKeyRequest
   The reason for asking the client to retry a content key request.
 ### Instance Properties
 - [var canBeFulfilledWithAdvisoryKey: Bool](./avcontentkeyrequest/canbefulfilledwithadvisorykey.md)
-  Indicates whether this key request was initiated for an advisory key.
+  A Boolean value that indicates whether a cached advisory key can fulfill the key request.
 ### Instance Methods
 - [func makeOptionalStreamingContentKeyRequestData(forApp: Data, contentIdentifier: Data?, options: [String : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](./avcontentkeyrequest/makeoptionalstreamingcontentkeyrequestdata%28forapp,contentidentifier,options,completionhandler%29.md)
   Obtains an optional content key request data for a specific combination of application and content.

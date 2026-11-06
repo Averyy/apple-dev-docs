@@ -10,7 +10,7 @@ Pops view controllers until the specified view controller is at the top of the n
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

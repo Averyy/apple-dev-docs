@@ -7,12 +7,12 @@
 The user’s daily exercise goal.
 
 **Availability**:
-- iOS 9.3+ - Deprecated in 27.2
-- iPadOS 9.3+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- iOS 9.3+ - Deprecated in 27.3
+- iPadOS 9.3+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS 13.0+
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.2+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.2+ - Deprecated in 27.3
 
 ## Declaration
 

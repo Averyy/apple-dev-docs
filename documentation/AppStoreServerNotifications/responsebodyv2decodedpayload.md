@@ -23,12 +23,13 @@ object responseBodyV2DecodedPayload
 
 The `responseBodyV2DecodedPayload` is the Base64URL-decoded notification information from the JWS payload portion of the [`signedPayload`](./signedpayload.md). Use the [`notificationType`](./notificationtype.md) and [`subtype`](./subtype.md) to understand the event that led to this notification.
 
-The payload can contain only one of the following four fields:
+The payload can contain only one of the following five fields:
 
 - A [`data`](./data.md) object, which contains details including the environment, the app metadata, and the signed transaction and subscription renewal information.
 - An [`appData`](./appdata.md) object, which contains details including the environment, the app metadata, and the signed app transaction information.
 - A [`summary`](./summary.md) object, which contains information only when the notification is a `RENEWAL_EXTENSION` with a `SUMMARY` subtype. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md).
 - An [`externalPurchaseToken`](./externalpurchasetoken.md) object, which contains an external purchase token only when the notification is `EXTERNAL_PURCHASE_TOKEN`. For more information about this notification, see [`externalPurchaseToken`](./externalpurchasetoken.md).
+- An [`unclaimInfo`](./unclaiminfo.md) object, which identifies the subscription and the seats that the App Store unclaimed, only when the notification type is `UNCLAIM_SEATS`.
 
 ## Topics
 
@@ -39,6 +40,8 @@ The payload can contain only one of the following four fields:
   The payload data that contains app metadata and the signed renewal and transaction information.
 - [object appData](./appdata.md)
   The object that contains the app metadata and signed app transaction information.
+- [object unclaimInfo](./unclaiminfo.md)
+  The payload data that identifies the seat claims the App Store unclaimed in a group subscription that uses developer-hosted invitations.
 ### Response object for an external purchase
 - [object externalPurchaseToken](./externalpurchasetoken.md)
   The payload data that contains an external purchase token.
@@ -69,16 +72,19 @@ The payload can contain only one of the following four fields:
 - `subtype` (subtype): Additional information that identifies the notification event. The `subtype` field is present only for specific version 2 notifications.
 - `data` (data): The object that contains the app metadata and signed renewal and transaction information.
 
-  The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+  The `data`, `appData`, `summary`, `externalPurchaseToken`, and `unclaimInfo` fields are mutually exclusive. The payload contains only one of these fields.
 - `summary` (summary): The summary data that appears when the App Store server completes your request to extend a subscription renewal date for eligible subscribers. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md).
 
-  The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+  The `data`, `appData`, `summary`, `externalPurchaseToken`, and `unclaimInfo` fields are mutually exclusive. The payload contains only one of these fields.
 - `externalPurchaseToken` (externalPurchaseToken): This field appears when the `notificationType` is `EXTERNAL_PURCHASE_TOKEN`.
 
-  The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+  The `data`, `appData`, `summary`, `externalPurchaseToken`, and `unclaimInfo` fields are mutually exclusive. The payload contains only one of these fields.
 - `appData` (appData): The object that contains the app metadata and signed app transaction information. This field appears when the `notificationType` is `RESCIND_CONSENT`.
 
-  The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+  The `data`, `appData`, `summary`, `externalPurchaseToken`, and `unclaimInfo` fields are mutually exclusive. The payload contains only one of these fields.
+- `unclaimInfo` (unclaimInfo): The object that identifies the seats that the App Store unclaimed in a group subscription that uses developer-hosted invitations. This field appears when the `notificationType` is `UNCLAIM_SEATS`.
+
+  The `data`, `appData`, `summary`, `externalPurchaseToken`, and `unclaimInfo` fields are mutually exclusive. The payload contains only one of these fields.
 - `version` (version): The App Store Server Notification version number, `"2.0"`.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
 - `notificationUUID` (notificationUUID): A unique identifier for the notification. Use this value to identify a duplicate notification.

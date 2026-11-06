@@ -13,7 +13,6 @@ Safari 27.2 is available for iOS 27.2, iPadOS 27.2, visionOS 27.2, macOS 27.2, m
 
 #### Resolved Issues
 
-- Fixed list, table, tree, and canvas content being omitted from the accessible name or description when the containing element is referenced by `aria-labelledby` or `aria-describedby`. (186015032)
 - Fixed VoiceOver repeating text it had already announced when a page streams content by re-rendering an `aria-live` region instead of appending to it. (186766347)
 - Fixed an issue where VoiceOver did not identify `<input type="date">`, `<input type="time">`, and `<input type="color">` controls as pop-up buttons on iOS. (187788949)
 
@@ -111,6 +110,8 @@ Safari 27.2 is available for iOS 27.2, iPadOS 27.2, visionOS 27.2, macOS 27.2, m
 ## See Also
 
 ### Version 27
+- [Safari 27.3 Beta Release Notes](./safari-27_3-release-notes.md)
+  Released November 3, 2026 — 27.3 beta (20626.1.12)
 - [Safari 27.1 Release Notes](./safari-27_1-release-notes.md)
   Released October 23, 2026 — 27.1 (20625.1.29)
 - [Safari 27 Release Notes](./safari-27-release-notes.md)

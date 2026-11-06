@@ -7,12 +7,12 @@
 Returns a predicate that checks a category sample’s value.
 
 **Availability**:
-- iOS 8.0+ - Deprecated in 27.2
-- iPadOS 8.0+ - Deprecated in 27.2
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- iOS 8.0+ - Deprecated in 27.3
+- iPadOS 8.0+ - Deprecated in 27.3
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 - macOS
-- visionOS 1.0+ - Deprecated in 27.2
-- watchOS 2.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.3
+- watchOS 2.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`predicateForSamples(_:value:)`](../hkcategoryvaluepredicateproviding/predicateforsamples%28_,value%29.md) instead.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-An error that indicates that the current request has been cancelled.
+An error that indicates the current request was canceled.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +17,20 @@ An error that indicates that the current request has been cancelled.
 ```swift
 static let cancelled: IdentityDocumentPresentmentError.Code
 ```
+
+## See Also
+
+### Matching error codes
+- [IdentityDocumentPresentmentError.Code](./code-swift.enum.md)
+  Error codes for identity document web presentment errors.
+- [static let invalidRequest: IdentityDocumentPresentmentError.Code](./invalidrequest.md)
+  An error thrown when a request is invalid.
+- [static let notEntitled: IdentityDocumentPresentmentError.Code](./notentitled.md)
+  An error that indicates the caller is not entitled.
+- [static let requestInProgress: IdentityDocumentPresentmentError.Code](./requestinprogress.md)
+  An error that indicates a request in progress.
+- [static let unknown: IdentityDocumentPresentmentError.Code](./unknown.md)
+  An error that indicates the framework encountered an unknown problem.
 
 
 ---

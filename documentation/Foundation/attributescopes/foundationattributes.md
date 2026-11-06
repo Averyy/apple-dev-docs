@@ -43,13 +43,13 @@ struct FoundationAttributes
 - [AttributeScopes.FoundationAttributes.LinkAttribute](./foundationattributes/linkattribute.md)
   A type for using a link as an attribute.
 ### Using presentation intent attributes
-- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./foundationattributes/inlinepresentationintent.md)
+- [var inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./foundationattributes/inlinepresentationintent.md)
   A property for accessing an inline presentation intent attribute.
 - [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./foundationattributes/inlinepresentationintentattribute.md)
   A type for using an inline presentation intent as an attribute.
 - [struct InlinePresentationIntent](../inlinepresentationintent.md)
   A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
-- [let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./foundationattributes/presentationintent.md)
+- [var presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./foundationattributes/presentationintent.md)
   A property for accessing a presentation intent attribute.
 - [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./foundationattributes/presentationintentattribute.md)
   A type for using a presentation intent as an attribute.
@@ -66,32 +66,32 @@ struct FoundationAttributes
 - [AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](./foundationattributes/replacementindexattribute.md)
   A type for using a replacement index as an attribute.
 ### Using string localization attributes
-- [let localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./foundationattributes/localizedstringargumentattributes-swift.property.md)
+- [var localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./foundationattributes/localizedstringargumentattributes-swift.property.md)
   A property for accessing a localized string argument attribute.
 - [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./foundationattributes/localizedstringargumentattributes-swift.struct.md)
   A type for using a localized string argument as an attribute.
 ### Using automatic grammar agreement attributes
-- [let inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./foundationattributes/inflect.md)
+- [var inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./foundationattributes/inflect.md)
   A scope for accessing an inflection rule attribute.
 - [AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./foundationattributes/inflectionruleattribute.md)
   A type for using an inflection rule as an attribute.
-- [let agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./foundationattributes/agreementargument.md)
+- [var agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./foundationattributes/agreementargument.md)
   A scope for accessing an agreement argument attribute.
 - [AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./foundationattributes/agreementargumentattribute.md)
   An attribute that represents grammatical agreement with an argument in a localized string.
-- [let agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./foundationattributes/agreementconcept.md)
+- [var agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./foundationattributes/agreementconcept.md)
   A scope for accessing an agreement concept attribute.
 - [AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./foundationattributes/agreementconceptattribute.md)
   An attribute that represents grammatical agreement for objects that aren’t part of the inflected text.
-- [let morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](./foundationattributes/morphology.md)
+- [var morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](./foundationattributes/morphology.md)
   A scope for accessing a morphology attribute.
 - [AttributeScopes.FoundationAttributes.MorphologyAttribute](./foundationattributes/morphologyattribute.md)
   A type for using a morphology as an attribute.
-- [let referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./foundationattributes/referentconcept.md)
+- [var referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./foundationattributes/referentconcept.md)
   A scope for accessing a referent concept attribute.
 - [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./foundationattributes/referentconceptattribute.md)
   An attribute that specifies a grammatical agreement concept for substituting pronouns in localized text.
-- [let inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./foundationattributes/inflectionalternative.md)
+- [var inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./foundationattributes/inflectionalternative.md)
   A scope for accessing an inflection alternative attribute.
 - [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./foundationattributes/inflectionalternativeattribute.md)
   An attribute that provides an alternative inflection phrase when the system can’t achieve grammatical agreement.
@@ -106,7 +106,7 @@ struct FoundationAttributes
 - [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](./foundationattributes/personnamecomponentattribute.md)
   A type for using a person name component as an attribute.
 ### Using Markdown source position attributes
-- [let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./foundationattributes/markdownsourceposition.md)
+- [var markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./foundationattributes/markdownsourceposition.md)
   A property for accessing a Markdown source position attribute.
 - [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./foundationattributes/markdownsourcepositionattribute.md)
   A type for using a markdown source position as an attribute.
@@ -115,9 +115,11 @@ struct FoundationAttributes
 ### Instance Properties
 - [let byteCount: AttributeScopes.FoundationAttributes.ByteCountAttribute](./foundationattributes/bytecount.md)
 - [let durationField: AttributeScopes.FoundationAttributes.DurationFieldAttribute](./foundationattributes/durationfield.md)
-- [let listItemDelimiter: AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](./foundationattributes/listitemdelimiter.md)
-- [let localizedNumberFormat: AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](./foundationattributes/localizednumberformat.md)
+- [var listItemDelimiter: AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](./foundationattributes/listitemdelimiter.md)
+- [var localizedNumberFormat: AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](./foundationattributes/localizednumberformat.md)
 - [let measurement: AttributeScopes.FoundationAttributes.MeasurementAttribute](./foundationattributes/measurement.md)
+- [var possessorMorphology: AttributeScopes.FoundationAttributes.PossessorMorphologyAttribute](./foundationattributes/possessormorphology.md)
+  A scope for accessing a possessor morphology attribute.
 - [let writingDirection: AttributeScopes.FoundationAttributes.WritingDirectionAttribute](./foundationattributes/writingdirection.md)
   The base writing direction of a paragraph.
 ### Enumerations
@@ -125,6 +127,8 @@ struct FoundationAttributes
 - [AttributeScopes.FoundationAttributes.DurationFieldAttribute](./foundationattributes/durationfieldattribute.md)
 - [AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](./foundationattributes/listitemdelimiterattribute.md)
 - [AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](./foundationattributes/localizednumberformatattribute.md)
+- [AttributeScopes.FoundationAttributes.PossessorMorphologyAttribute](./foundationattributes/possessormorphologyattribute.md)
+  An attribute for specifying the morphology of a grammatical possessor. Use this in localized strings to specify that an argument needs to have a possessive suffix added.
 - [AttributeScopes.FoundationAttributes.WritingDirectionAttribute](./foundationattributes/writingdirectionattribute.md)
   The attribute key for the base writing direction of a paragraph.
 

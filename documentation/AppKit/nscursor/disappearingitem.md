@@ -26,6 +26,12 @@ class var disappearingItem: NSCursor { get }
 
 The system cursor that indicates that the current operation will result in a disappearing item (for example, when dragging an item from the dock or a toolbar).
 
+## Discussion
+
+The following image shows the disappearing item cursor:
+
+![disappearing item cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-disappearing-item@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

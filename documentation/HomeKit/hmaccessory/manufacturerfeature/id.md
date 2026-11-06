@@ -4,9 +4,11 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The identifier for the feature.
+
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 

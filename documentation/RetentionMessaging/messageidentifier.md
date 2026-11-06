@@ -15,9 +15,15 @@ A unique identifier for a message, which you provide when you upload the message
 uuid messageIdentifier
 ```
 
+## Mentions
+
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
+
 ## Discussion
 
 You create the UUID to identify a message when you call [`Upload Message`](./upload-message.md). Use this identifier to refer to the same message throughout the API.
+
+> **Note**: In a real-time response, this can also be the identifier of a retention message you configured in App Store Connect. For more information, see [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 
 ## See Also
 
@@ -25,7 +31,7 @@ You create the UUID to identify a message when you call [`Upload Message`](./upl
 - [type messageState](./messagestate.md)
   The approval state of the message.
 - [type body](./body.md)
-  The body text you provide for a message.
+  The main text you provide for a retention message.
 - [object BulletPoint](./bulletpoint.md)
   The text and its bullet-point image to include in a retention message’s bulleted list.
 - [type bulletPointText](./bulletpointtext.md)

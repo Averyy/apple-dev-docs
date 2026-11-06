@@ -9,7 +9,7 @@ Creates an impact feedback generator with the specified style.
 **Availability**:
 - iOS 10.0+ - Deprecated in 27.0
 - iPadOS 10.0+ - Deprecated in 27.0
-- Mac Catalyst 13.1+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`init(style:view:)`](./init%28style,view%29.md) instead.
 

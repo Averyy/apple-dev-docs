@@ -4,6 +4,8 @@
 **Kind**: method  
 **Role**: Instance Method
 
+Returns the border color of the specified text block edge.
+
 **Availability**:
 - macOS 10.0+ - Deprecated in 27.0
 
@@ -17,6 +19,14 @@ func borderColor(for edge: NSRectEdge) -> NSColor?
 - (NSColor *) borderColorForEdge:(NSRectEdge) edge;
 ```
 
+## Return Value
+
+The border color of the text block edge `edge`.
+
+## Parameters
+
+- `edge`: The edge of the text block in question.
+
 ## See Also
 
 ### Deprecated
@@ -28,7 +38,6 @@ func borderColor(for edge: NSRectEdge) -> NSColor?
   Returns the value type of an edge of a specified layer of the text block.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](./setbordercolor%28_,for%29.md)
   Sets the border color of the specified edge of the text block.
-- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 
 
 ---

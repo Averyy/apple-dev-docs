@@ -39,6 +39,9 @@ You don’t create offer types in [`Transaction.OfferType`](./offertype-swift.st
 ### Getting a localized description
 - [var localizedDescription: String](./offertype-swift.struct/localizeddescription.md)
   The localized text that describes the offer type.
+### Type Properties
+- [static var retention: Transaction.OfferType](./offertype-swift.struct/retention.md)
+  A transaction resulting from a retention offer.
 
 ## Relationships
 

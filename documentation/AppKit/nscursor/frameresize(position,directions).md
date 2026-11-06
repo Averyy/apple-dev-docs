@@ -16,10 +16,31 @@ Returns the cursor for resizing a rectangular frame from the specified edge or c
 class func frameResize(position: NSCursor.FrameResizePosition, directions: NSCursor.FrameResizeDirection.Set) -> NSCursor
 ```
 
+## Return Value
+
+The frame-resize cursor for the specified position and directions.
+
+## Discussion
+
+The `position` parameter selects the edge or corner of the frame, and the `directions` parameter is a set that specifies whether that edge or corner can resize outward, away from the center of the frame, inward, toward the center, or both. The cursor changes to show the allowed directions.
+
+The following table shows the cursor for each position and set of directions. The `.all` column applies when `directions` contains both `.inward` and `.outward`:
+
+| Position | `.outward` | `.inward` | `.all` |
+| --- | --- | --- | --- |
+| `.top` | ![bottom edge, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-north@2x.png) | ![bottom edge, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-south@2x.png) | ![bottom edge, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-north-south@2x.png) |
+| `.bottom` | ![bottom edge, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-south@2x.png) | ![bottom edge, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-north@2x.png) | ![bottom edge, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-north-south@2x.png) |
+| `.left` | ![right edge, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-west@2x.png) | ![right edge, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-east@2x.png) | ![right edge, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-east-west@2x.png) |
+| `.right` | ![right edge, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-east@2x.png) | ![right edge, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-west@2x.png) | ![right edge, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-east-west@2x.png) |
+| `.topLeft` | ![bottom-right corner, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest@2x.png) | ![bottom-right corner, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-southeast@2x.png) | ![bottom-right corner, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest-southeast@2x.png) |
+| `.topRight` | ![bottom-left corner, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northeast@2x.png) | ![bottom-left corner, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-southwest@2x.png) | ![bottom-left corner, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northeast-southwest@2x.png) |
+| `.bottomLeft` | ![bottom-left corner, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-southwest@2x.png) | ![bottom-left corner, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northeast@2x.png) | ![bottom-left corner, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northeast-southwest@2x.png) |
+| `.bottomRight` | ![bottom-right corner, outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-southeast@2x.png) | ![bottom-right corner, inward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest@2x.png) | ![bottom-right corner, inward and outward](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-northwest-southeast@2x.png) |
+
 ## Parameters
 
-- `position`: The position along the perimeter of a rectangular frame (its edges and corners) from which it’s resized.
-- `directions`: The directions in which a rectangular frame can be resized. This must not be empty.
+- `position`: The position along the perimeter of a rectangular frame (its edges and corners) from which it resizes.
+- `directions`: The directions in which a rectangular frame can resize. This must not be empty.
 
 ## See Also
 

@@ -7,11 +7,11 @@
 Presents a system dialog for exporting a collection of reference type documents to files on disk.
 
 **Availability**:
-- iOS 14.0+ - Deprecated in 27.2
-- iPadOS 14.0+ - Deprecated in 27.2
-- Mac Catalyst 14.0+ - Deprecated in 27.2
-- macOS 11.0+ - Deprecated in 27.2
-- visionOS 1.0+ - Deprecated in 27.2
+- iOS 14.0+ - Deprecated in 27.3
+- iPadOS 14.0+ - Deprecated in 27.3
+- Mac Catalyst 14.0+ - Deprecated in 27.3
+- macOS 11.0+ - Deprecated in 27.3
+- visionOS 1.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)`](./fileexporter%28ispresented,documents,contenttypes,oncompletion,oncancellation%29.md) instead.
 

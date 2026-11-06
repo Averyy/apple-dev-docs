@@ -144,9 +144,13 @@ For more information, see [Setting up HealthKit](./setting-up-healthkit.md).
   Ends a workout session for the current app.
 ### Structures
 - [HKHealthStore.HKUserPreferencesDidChangeMessage](./hkhealthstore/hkuserpreferencesdidchangemessage.md)
+### Instance Properties
+- [var referenceSex: HKReferenceSex](./hkhealthstore/referencesex.md)
+  The sex whose reference ranges should be used when classifying a clinical measurement for this user.
 ### Instance Methods
 - [func relateWorkoutEffortSample(HKSample, with: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](./hkhealthstore/relateworkouteffortsample%28_,with,activity,completion%29.md)
 - [func unrelateWorkoutEffortSample(HKSample, from: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](./hkhealthstore/unrelateworkouteffortsample%28_,from,activity,completion%29.md)
+- [- getReferenceSex:error:](./hkhealthstore/getreferencesex_error_.md)
 
 ## Relationships
 

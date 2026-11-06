@@ -7,9 +7,9 @@
 An identifier for a piece of content that your extension provides.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 
@@ -38,6 +38,16 @@ You can also use a string literal anywhere an identifier is expected.
 ### Creating a content identifier
 - [init(String)](./homecontentid/init%28_%29.md)
   Creates an identifier from a string.
+### Initializers
+- [init(rawValue: String)](./homecontentid/init%28rawvalue%29.md)
+  Creates an identifier with the given raw value.
+- [init(stringLiteral: String)](./homecontentid/init%28stringliteral%29.md)
+  Creates an identifier from a string literal.
+### Instance Properties
+- [var description: String](./homecontentid/description.md)
+  A textual representation of the identifier.
+- [let rawValue: String](./homecontentid/rawvalue.md)
+  The identifier’s string value.
 
 ## Relationships
 
@@ -61,7 +71,6 @@ You can also use a string literal anywhere an identifier is expected.
   Help content about a specific topic for an accessory.
 - [struct HomeAccessoryTroubleshooting](./homeaccessorytroubleshooting.md)
   Content that helps people resolve problems with an accessory.
-- [class GuideStepHostViewController](./guidestephostviewcontroller.md)
 
 
 ---

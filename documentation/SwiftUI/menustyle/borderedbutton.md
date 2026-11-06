@@ -7,7 +7,7 @@
 A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
 
 **Availability**:
-- macOS 11.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.3
 
 > **Deprecated**: Use [`menuStyle(_:)`](../view/menustyle%28_%29.md) with [`button`](./button.md) and [`buttonStyle(_:)`](../view/buttonstyle%28_%29-66fbx.md) with [`bordered`](../primitivebuttonstyle/bordered.md).
 

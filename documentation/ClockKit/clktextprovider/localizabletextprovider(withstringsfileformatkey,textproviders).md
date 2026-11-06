@@ -7,7 +7,7 @@
 Creates a localizable text provider with a strings file key that resolves to a format string, and with text providers for the replacement arguments.
 
 **Availability**:
-- watchOS 3.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.3
 
 ## Declaration
 

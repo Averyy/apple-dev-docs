@@ -26,7 +26,7 @@ Available when `Value` conforms to `_IntentValue` and `Sendable`.
 ## Parameters
 
 - `identifier`: The identifier of the property
-- `getSetter`: The getter reference for the property
+- `getSetter`: The key path for the property’s getter and setter
 
 
 ---

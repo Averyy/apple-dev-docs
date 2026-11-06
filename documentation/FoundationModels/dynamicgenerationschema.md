@@ -11,6 +11,7 @@ The dynamic counterpart to the generation schema type that you use to construct 
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
+- tvOS 27.0+
 - visionOS 26.0+
 - watchOS 27.0+
 

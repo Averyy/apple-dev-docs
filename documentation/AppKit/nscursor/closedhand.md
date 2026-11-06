@@ -26,6 +26,12 @@ class var closedHand: NSCursor { get }
 
 The closed-hand cursor.
 
+## Discussion
+
+The following image shows the closed-hand cursor:
+
+![closed-hand cursor](https://developer.apple.com/tutorials/images/com.apple.appkit/nscursor-closed-hand@2x.png)
+
 ## See Also
 
 ### Retrieving cursor instances

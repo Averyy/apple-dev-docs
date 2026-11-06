@@ -7,7 +7,7 @@
 The data structure that represents the event data for a config settings deleted audit event.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

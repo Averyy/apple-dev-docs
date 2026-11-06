@@ -20,7 +20,7 @@ class WKImmersiveEnvironment
 
 ## Overview
 
-An object representing a website-provided immersive environment that is ready for presentation.
+An object that represents a website-provided immersive environment ready for presentation.
 
 ## Topics
 

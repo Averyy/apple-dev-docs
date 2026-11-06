@@ -7,12 +7,12 @@
 Creates a slider to select a value from a given range, which displays the provided label.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: Slider(value:in:label:onEditingChanged:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: Slider(value:in:label:onEditingChanged:))
 
 > **Deprecated**: Use [`init(value:in:label:onEditingChanged:)`](./init%28value,in,label,oneditingchanged%29.md) instead.
 

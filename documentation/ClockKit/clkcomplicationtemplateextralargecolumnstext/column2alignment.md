@@ -7,7 +7,7 @@
 The alignment of the text in the second column.
 
 **Availability**:
-- watchOS 3.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.3
 
 > **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
+The horizontal edge where the system places the vertical bar.
 
 **Availability**:
 - iOS 27.1+
@@ -22,6 +22,8 @@ var toolbarVerticalEdge: HorizontalEdge? { get }
 ```
 
 ## Discussion
+
+This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
 
 This value is read-only; the system determines the edge based on locale and device.
 

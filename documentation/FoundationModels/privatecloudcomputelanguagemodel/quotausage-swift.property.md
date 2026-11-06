@@ -20,6 +20,10 @@ The usage quota for this model.
 final var quotaUsage: PrivateCloudComputeLanguageModel.QuotaUsage { get }
 ```
 
+## Mentions
+
+- [Detecting available Apple Foundation Models](../detecting-available-apple-foundation-models.md)
+
 ## See Also
 
 ### Getting the quota

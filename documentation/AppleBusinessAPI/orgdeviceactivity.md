@@ -7,7 +7,7 @@
 The data structure that represents an organization device activity resource.
 
 **Availability**:
-- Apple Business API 2.7+
+- Apple Business API 2.8+
 
 ## Declaration
 

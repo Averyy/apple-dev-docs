@@ -18,15 +18,13 @@ A type-erased view of the secondary content of an arrangement view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Secondary
+nonisolated
+struct Secondary
 ```
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../../Swift/sendable.md)
-- [SendableMetatype](../../Swift/sendablemetatype.md)
 - [View](../view.md)
 
 ## See Also

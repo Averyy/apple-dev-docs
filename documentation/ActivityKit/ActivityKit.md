@@ -4,23 +4,17 @@
 **Kind**: module  
 **Role**: Framework
 
-Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
+Share live updates from your app as Live Activities that appear in the Dynamic Island and other highly visible locations.
 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
+- macOS 27.3+ (Beta)
 
 ## Overview
 
-With the ActivityKit framework, you can start a Live Activity to share live updates from your app. Live Activities offer a rich, interactive, and highly glanceable way for people to keep track of an event or activity over several hours, especially for apps that push the limit of notifications to provide updated information. For example, a sports app might start a Live Activity that makes live information available at a glance for the duration of a game.
-
-A Live Activity appears in highly visible contexts:
-
-- On iPad and iPhone, it appears on the Lock Screen, in the Dynamic Island, and on the Home Screen.
-- On Apple Watch, it appears in the Smart Stack.
-- On Mac, it appears in the Menu bar.
-- In CarPlay, it appears on the Home Screen.
+With the ActivityKit framework, you can start a Live Activity to share live updates from your app. Live Activities offer a rich, interactive, and highly glanceable way for people to keep track of an event or activity over several hours, especially for apps that push the limit of notifications to provide updated information. For example, a sports app might start a Live Activity that makes live information available at a glance. For the duration of an event, the Live Activity allows people to view the current score on iPhone, in CarPlay, on a paired Apple Watch or Mac, and on other devices.
 
 In addition to viewing real-time information, people perform essential functionality without launching your app using buttons or toggles included in a Live Activity layout or tap the Live Activity to launch the app to a scene that matches the activity’s content.
 
@@ -41,7 +35,7 @@ However, Live Activities use a different mechanism to receive updates compared t
   Learn about important changes in ActivityKit.
 ### Starting a Live Activity
 - [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
-  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+  Display up-to-date data and offer quick interactions in highly visible places like the Dynamic Island, the menu bar, a paired Apple Watch, or in CarPlay.
 - [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md)
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 - [class Activity](./activity.md)

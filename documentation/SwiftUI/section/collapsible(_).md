@@ -7,7 +7,7 @@
 Sets whether a section can be collapsed by the user.
 
 **Availability**:
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 > **Deprecated**: To disable collapsibility in macOS 14 and later, use one of the [`Section`](../section.md) initializers that lacks collapsibility.
 

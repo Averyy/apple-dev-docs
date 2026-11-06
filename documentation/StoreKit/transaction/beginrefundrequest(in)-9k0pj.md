@@ -20,6 +20,8 @@ func beginRefundRequest(in scene: UIWindowScene) async throws -> Transaction.Ref
 
 ## Mentions
 
+- [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
+- [Testing multiseat subscriptions](../testing-multiseat-subscriptions.md)
 - [Testing refund requests](../testing-refund-requests.md)
 
 ## Return Value
@@ -33,6 +35,8 @@ Call this function from account settings or a help menu to enable customers to r
 When a customer requests a refund for consumable Apple In-App Purchases through your app, the App Stores sends a `CONSUMPTION_REQUEST` [`notificationType`](../../AppStoreServerNotifications/notificationtype.md) to your server. If the customer provided consent, respond by sending consumption data to the App Store using the [`Send Consumption Information`](../../AppStoreServerAPI/send-consumption-information.md) endpoint. If not, don’t respond to the `CONSUMPTION_REQUEST` notification.
 
 The App Store takes up to 48 hours to either approve or deny a refund.
+
+Refund requests in your app aren’t available for multiseat subscriptions. Direct the group purchaser to request a refund on the web instead; for more information, see [Request a refund for apps or content that you bought from Apple](https://support.apple.com/118223).
 
 For information about setting up your server to receive notifications, see [Enabling App Store Server Notifications](../enabling-app-store-server-notifications.md).
 

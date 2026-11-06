@@ -7,9 +7,9 @@
 The asset resource this job promises to upload.
 
 **Availability**:
-- iOS 26.1+ - Deprecated in 27.2
-- iPadOS 26.1+ - Deprecated in 27.2
-- Mac Catalyst 26.1+ - Deprecated in 27.2
+- iOS 26.1+ - Deprecated in 27.3
+- iPadOS 26.1+ - Deprecated in 27.3
+- Mac Catalyst 26.1+ - Deprecated in 27.3
 
 > **Deprecated**: Use +[PHAssetResource assetResourceForUploadJob:] instead
 

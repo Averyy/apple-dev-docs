@@ -60,6 +60,9 @@ To learn more about the process of ThreadNetwork development, see [Getting start
   A class that supports safely sharing Thread credentials between multiple clients.
 - [class THCredentials](./thcredentials.md)
   A class that contains credentials for a Thread network.
+### Classes
+- [class THNearbyNetworkCredentials](./thnearbynetworkcredentials.md)
+  Credentials for a Thread network discovered nearby
 
 
 ---

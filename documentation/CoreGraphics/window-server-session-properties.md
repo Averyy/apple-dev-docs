@@ -54,8 +54,8 @@ To learn how to use these keys to access the values in a session dictionary, see
   Describes a frame update event.
 - [Display Stream Optional Property Keys](./display-stream-optional-property-keys.md)
   These keys are used to populate the `properties` dictionary used when creating a new display stream.
-- [Display Stream YCbCr to RGB conversion Matrix Options](./display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
-  These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
+- [Display stream YCbCr to RGB conversion matrix options](./display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
+  Matrix coefficient options for converting a display stream with YCbCr components to a display stream with RGB components.
 
 
 ---

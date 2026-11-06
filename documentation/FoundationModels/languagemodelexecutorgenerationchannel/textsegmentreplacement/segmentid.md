@@ -11,6 +11,7 @@ The identifier of the text segment to replace, or empty for the current segment.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 

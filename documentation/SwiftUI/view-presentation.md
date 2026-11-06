@@ -210,6 +210,7 @@ For more information about how to use these modifiers, see [Modal presentations]
 - [func appStoreMerchandising(isPresented: Binding<Bool>, kind: AppStoreMerchandisingKind, onDismiss: ((Result<AppStoreMerchandisingKind.PresentationResult, any Error>) async -> ())?) -> some View](./view/appstoremerchandising%28ispresented,kind,ondismiss%29.md)
   Display a merchandising view.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](./view/managesubscriptionssheet%28ispresented%29.md)
+  Presents the App Store sheet for managing subscriptions.
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](./view/refundrequestsheet%28for,ispresented,ondismiss%29.md)
   Display the refund request sheet for the given transaction.
 - [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](./view/offercoderedemption%28options,ispresented,oncompletion%29.md)

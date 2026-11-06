@@ -24,12 +24,6 @@ extern NSString * const ARReferenceObjectArchiveExtension;
 
 Use this filename extension when constructing a URL to save a reference object file with the [`export(to:previewImage:)`](./export%28to,previewimage%29.md) method.
 
-## See Also
-
-### Saving Recorded Objects
-- [func export(to: URL, previewImage: UIImage?) throws](./export%28to,previewimage%29.md)
-  Writes a binary representation of the object to the specified file URL.
-
 
 ---
 

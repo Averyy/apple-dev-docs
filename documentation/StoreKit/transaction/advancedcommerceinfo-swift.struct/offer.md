@@ -51,6 +51,8 @@ struct Offer
   The developer-defined product that was purchased.
 - [Transaction.AdvancedCommerceInfo.Refund](./refund.md)
   Information about refunds that were issued as part of this transaction.
+- [Transaction.AdvancedCommerceInfo.SeatPriceTier](./seatpricetier.md)
+  A per-seat price and the number of seats it covers, as your Advanced Commerce API request defines them.
 
 
 ---

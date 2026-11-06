@@ -7,10 +7,10 @@
 The minor value from the beacon identity constraint that defines the beacon region.
 
 **Availability**:
-- iOS 7.0+ - Deprecated in 27.2
-- iPadOS 7.0+ - Deprecated in 27.2
+- iOS 7.0+ - Deprecated in 27.3
+- iPadOS 7.0+ - Deprecated in 27.3
 - Mac Catalyst 13.1+ - Deprecated in 27.0
-- macOS 10.15+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.3
 
 ## Declaration
 

@@ -327,6 +327,8 @@ The [`NSAttributedString.Key`](./key.md) type defines the attributes you apply t
   Creates an attributed string key with the specified raw value.
 ### Type Properties
 - [static let AXSpeechAttributeSSML: NSAttributedString.Key](./key/axspeechattributessml.md)
+- [static let possessorMorphology: NSAttributedString.Key](./key/possessormorphology.md)
+  An attribute key whose value specifies the grammatical possessor’s morphology
 
 ## Relationships
 

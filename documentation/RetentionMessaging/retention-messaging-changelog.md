@@ -9,6 +9,18 @@ Learn about new features and updates in the Retention Messaging API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Retention Messaging API.
 
+### 1.6 2026/11/04
+
+**New features**
+
+- Added the `UNIVERSAL_ASSET` value to [`imageSize`](./imagesize.md) to support universal asset images in [`Upload Image`](./upload-image.md).
+- Added the [`BadRequestInvalidTextFieldError`](./badrequestinvalidtextfielderror.md) error, which [`Upload Message`](./upload-message.md) returns when a text field in the request contains a disallowed character.
+
+**Updates**
+
+- The system now always sends a request to your real-time URL, whether or not you configure a default message. If your server doesn’t return a message, the system falls back to the message configured in App Store Connect, then to the default message you set with [`Configure Default Message`](./configure-default-message.md). Default messages fall back to the next most relevant configured locale.
+- In a real-time response, [`messageIdentifier`](./messageidentifier.md) can also be the identifier of a retention message you configured in App Store Connect.
+
 ### Server update  — 2026/05/05
 
 Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.

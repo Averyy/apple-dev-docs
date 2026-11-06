@@ -33,6 +33,8 @@ A type that represents the content of a store.
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some StoreContent](./storecontent/storebutton%28_,for%29.md)
 - [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some StoreContent](./storecontent/subscriptionstorecontrolstyle%28_,placement%29.md)
 - [func productDescription(Visibility) -> some StoreContent](./storecontent/productdescription%28_%29.md)
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some StoreContent](./storecontent/preferredsubscriptionpricingterms%28_%29.md)
+  Sets the pricing terms that the store uses to merchandise the subscription options within this store content.
 ### Configuring backgrounds
 - [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some StoreContent](./storecontent/subscriptionstorecontrolbackground%28_%29-10hv8.md)
 - [func subscriptionStoreControlBackground(some ShapeStyle) -> some StoreContent](./storecontent/subscriptionstorecontrolbackground%28_%29-3xzai.md)
@@ -45,10 +47,12 @@ A type that represents the content of a store.
 ## Relationships
 
 ### Conforming Types
+- [SubscriptionBillingPlanTypeGroupSet](./subscriptionbillingplantypegroupset.md)
 - [SubscriptionOptionGroup](./subscriptionoptiongroup.md)
 - [SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
 - [SubscriptionOptionSection](./subscriptionoptionsection.md)
 - [SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [SubscriptionPricingModelGroupSet](./subscriptionpricingmodelgroupset.md)
 - [TupleStoreContent](./tuplestorecontent.md)
 
 ## See Also
@@ -59,6 +63,10 @@ A type that represents the content of a store.
 - [struct SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
   A set of groups of subscription options that include optional views for labels and marketing content.
 - [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [struct SubscriptionPricingModelGroupSet](./subscriptionpricingmodelgroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common pricing model.
+- [struct SubscriptionBillingPlanTypeGroupSet](./subscriptionbillingplantypegroupset.md)
+  A set of subscription option groups, where each group represents subscriptions merchandised with a common billing plan type.
 - [struct SubscriptionOptionSection](./subscriptionoptionsection.md)
 - [struct StoreContentBuilder](./storecontentbuilder.md)
   A result builder that creates store content from closures that you provide.

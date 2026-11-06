@@ -13,8 +13,6 @@ Creates a new profile state object for the specified profiles.
 - macOS 11.0+
 - visionOS 1.0+
 
-> **Deprecated**: Use [`init(channel:enabledProfiles:disabledProfiles:)`](./init%28channel,enabledprofiles,disabledprofiles%29.md) instead.
-
 ## Declaration
 
 ```swift
@@ -28,6 +26,10 @@ init(enabledProfiles enabled: [MIDICIProfile], disabledProfiles disabled: [MIDIC
 ## Return Value
 
 A new profile state instance.
+
+## Discussion
+
+Use [`init(channel:enabledProfiles:disabledProfiles:)`](./init%28channel,enabledprofiles,disabledprofiles%29.md) instead.
 
 ## Parameters
 

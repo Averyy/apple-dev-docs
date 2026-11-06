@@ -35,8 +35,14 @@ class UIMenuElement
   The title of the menu element.
 - [var subtitle: String?](./uimenuelement/subtitle.md)
   The subtitle to display alongside the menu element’s title.
+- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](./uimenuelement/highlightstateupdatehandler.md)
+  A closure the system calls when the element’s highlight state changes in a menu.
 - [var image: UIImage?](./uimenuelement/image.md)
   The image to display alongside the menu element’s title.
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./uimenuelement/preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
+- [UIMenuElement.ImageVisibility](./uimenuelement/imagevisibility.md)
+  Visibility options for a menu element’s image.
 ### Creating a menu element
 - [init?(coder: NSCoder)](./uimenuelement/init%28coder%29.md)
   Creates a menu element from data in an unarchiver.
@@ -47,14 +53,6 @@ class UIMenuElement
   Constants that indicate the state of an action- or command-based menu element.
 - [UIMenuElement.RepeatBehavior](./uimenuelement/repeatbehavior.md)
   Possible repeat behaviors for a menu element.
-### Instance Properties
-- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](./uimenuelement/highlightstateupdatehandler.md)
-  A closure the system calls when the element’s highlight state changes in a menu.
-- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./uimenuelement/preferredimagevisibility.md)
-  The preferred visibility of the element’s image.
-### Enumerations
-- [UIMenuElement.ImageVisibility](./uimenuelement/imagevisibility.md)
-  Visibility options for a menu element’s image.
 
 ## Relationships
 

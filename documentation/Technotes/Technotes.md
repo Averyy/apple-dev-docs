@@ -174,7 +174,7 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 - [TN3104: Recording video in Apple ProRes](./tn3104-recording-video-in-apple-prores.md)
   Configure pieces of an AVCaptureSession to capture video in Apple ProRes.
 - [TN3103: Apple Pay on the Web troubleshooting guide](./tn3103-apple-pay-on-the-web-troubleshooting-guide.md)
-  Troubleshooting guide for implementing Apple Pay on the Web.
+  Diagnose and resolve common configuration, domain verification, merchant validation, and payment token decryption issues when implementing Apple Pay on the Web.
 - [TN3102: HTTP/3 in your app](./tn3102-http3-in-your-app.md)
   Get started with iOS 15’s new HTTP/3 support.
 

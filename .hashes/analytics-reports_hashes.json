@@ -106,7 +106,7 @@
     },
     "https://developer.apple.com/documentation/analytics-reports/app-store-retention-messaging": {
       "file_path": "documentation/analytics-reports/app-store-retention-messaging.md",
-      "hash": "87b3616f179fd2fccc1e8d01888463050740b0d216da8b6b06077dcee2557b55"
+      "hash": "628676481c95ad080f921c966378f23ee8e3abf523606ceb4447afacb1bc5648"
     },
     "https://developer.apple.com/documentation/analytics-reports/app-store-web-preview": {
       "file_path": "documentation/analytics-reports/app-store-web-preview.md",
@@ -518,7 +518,7 @@
     },
     "https://developer.apple.com/documentation/analytics-reports/subscription-state": {
       "file_path": "documentation/analytics-reports/subscription-state.md",
-      "hash": "45c909e725dd8b4c5134350504fe59922e18888aea319fa4c70a670aada95908"
+      "hash": "af9d829b3a392352bbbb81f23a17024753a8420d9a9f3efe23739302b4e35be2"
     },
     "https://developer.apple.com/documentation/analytics-reports/text-input-actions": {
       "file_path": "documentation/analytics-reports/text-input-actions.md",
@@ -674,7 +674,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/analytics-reports/app-store-retention-messaging.json": {
       "file_path": "documentation/analytics-reports/app-store-retention-messaging.md",
-      "hash": "87b3616f179fd2fccc1e8d01888463050740b0d216da8b6b06077dcee2557b55"
+      "hash": "628676481c95ad080f921c966378f23ee8e3abf523606ceb4447afacb1bc5648"
     },
     "https://developer.apple.com/tutorials/data/documentation/analytics-reports/app-store-web-preview.json": {
       "file_path": "documentation/analytics-reports/app-store-web-preview.md",
@@ -1086,7 +1086,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/analytics-reports/subscription-state.json": {
       "file_path": "documentation/analytics-reports/subscription-state.md",
-      "hash": "45c909e725dd8b4c5134350504fe59922e18888aea319fa4c70a670aada95908"
+      "hash": "af9d829b3a392352bbbb81f23a17024753a8420d9a9f3efe23739302b4e35be2"
     },
     "https://developer.apple.com/tutorials/data/documentation/analytics-reports/text-input-actions.json": {
       "file_path": "documentation/analytics-reports/text-input-actions.md",

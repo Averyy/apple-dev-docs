@@ -7,13 +7,13 @@
 Sets the color of the foreground elements displayed by this view.
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- iPadOS 13.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- macOS 10.15+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- tvOS 13.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- visionOS 1.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
-- watchOS 6.0+ - Deprecated in 27.2 (renamed: foregroundStyle(_:))
+- iOS 13.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- iPadOS 13.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- macOS 10.15+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- tvOS 13.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- visionOS 1.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
+- watchOS 6.0+ - Deprecated in 27.3 (renamed: foregroundStyle(_:))
 
 > **Deprecated**: Use [`foregroundStyle(_:)`](./foregroundstyle%28_%29.md) instead.
 

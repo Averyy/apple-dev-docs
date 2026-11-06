@@ -19,7 +19,9 @@ case invalidated
 
 ### Identifying session errors
 - [AccessoryTransportSession.Error.unsupported](./unsupported.md)
-  An error that indicates the framework doesn’t support an client-provided value or operation.
+  An error that indicates a client-provided value or operation isn’t supported.
+- [AccessoryTransportSession.Error.unavailable](./unavailable.md)
+  An error that indicates the feature isn’t available on the device.
 - [AccessoryTransportSession.Error.unknown](./unknown.md)
   An error that indicates a failure with an unknown cause.
 
