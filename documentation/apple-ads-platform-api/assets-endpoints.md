@@ -31,6 +31,8 @@ Every asset has an `assetType` field, which identifies the kind of media it cont
 
 Assets enter the system through a single upload method. Send a multipart form to `POST /v1/assets/upload` ([`Upload Asset`](./upload-asset.md)) containing the binary image file (`file`), `promotedObjectId`, and `promotedObjectType: BUSINESS_BRAND`. The endpoint accepts PNG, JPG, and HEIC formats.
 
+Images for Ads on Maps must be at least 720 x 960 pixels and no larger than 4864 x 4864 pixels. No specific aspect ratio is required. Photos must also meet the photo and text standards in [Add, edit, or delete photos](https://support.apple.com/guide/business/add-edit-or-delete-photos-abcb7557e4c4/1/web/1#axm12adcccc2) in the Apple Business guide and Apple Advertising Policies.
+
 This endpoint only supports asset uploads for Apple Maps (`BUSINESS_BRAND`) assets, and it doesn’t accept any other value for `promotedObjectType`. The uploaded asset belongs to the ad account identified by the `X-AP-Context` header and becomes part of that account’s asset library.
 
 After upload, the asset begins processing. Poll using [`Get Asset`](./get-asset-by-id.md) until the `eligibility.status` indicates the asset is ready before referencing it in a creative.

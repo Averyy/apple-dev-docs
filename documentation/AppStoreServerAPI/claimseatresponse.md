@@ -21,9 +21,9 @@ object ClaimSeatResponse
 
 ## Discussion
 
-This response contains the [`seatClaimId`](./claimseatresponse/seatclaimid.md) of the claim you make by calling the [`Claim Seat`](./claim-seat.md) endpoint. This identifier belongs to a claim, not to a seat in the subscription. Every claim generates a new `seatClaimId`, even when you reassign a seat to another member.
+This response contains the `seatClaimId` of the claim you make by calling the [`Claim Seat`](./claim-seat.md) endpoint. This identifier belongs to a claim, not to a seat in the subscription. Every claim generates a new `seatClaimId`, even when you reassign a seat to another member.
 
-Store the [`seatClaimId`](./claimseatresponse/seatclaimid.md) with your record of the member who occupies the seat. Use it to call the [`Unclaim Seat`](./unclaim-seat.md) and [`Associate Seat`](./associate-seat.md) endpoints.
+Store the `seatClaimId` with your record of the member who occupies the seat. Use it to call the [`Unclaim Seat`](./unclaim-seat.md) and [`Associate Seat`](./associate-seat.md) endpoints.
 
 ## Properties
 

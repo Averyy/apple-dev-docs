@@ -6962,7 +6962,7 @@
     },
     "https://developer.apple.com/documentation/arkit/arskview": {
       "file_path": "documentation/ARKit/arskview.md",
-      "hash": "8a6dbd3b061f3009efd6760ef7b8bfba952d5db87f1db8e7ac1af98e8a6956f7"
+      "hash": "9af7b3d98c1bba8899fa2dd2da6f9a468d667d7a35a696c4018eb25d85b43af1"
     },
     "https://developer.apple.com/documentation/arkit/arskview/anchor(for:)": {
       "file_path": "documentation/ARKit/arskview/anchor(for).md",
@@ -9914,7 +9914,7 @@
     },
     "https://developer.apple.com/documentation/arkit/tracking-and-altering-images": {
       "file_path": "documentation/ARKit/tracking-and-altering-images.md",
-      "hash": "ef490445349caf1741818aca3b670ec86641b0b46dcc3ad4031a0115b4b9dee4"
+      "hash": "0223ed91db299f71eeb619ec5f221cc8e78697560e2025c1721c7385caa55e30"
     },
     "https://developer.apple.com/documentation/arkit/tracking-and-visualizing-faces": {
       "file_path": "documentation/ARKit/tracking-and-visualizing-faces.md",
@@ -17178,7 +17178,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arskview.json": {
       "file_path": "documentation/ARKit/arskview.md",
-      "hash": "8a6dbd3b061f3009efd6760ef7b8bfba952d5db87f1db8e7ac1af98e8a6956f7"
+      "hash": "9af7b3d98c1bba8899fa2dd2da6f9a468d667d7a35a696c4018eb25d85b43af1"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/arskview/anchor(for:).json": {
       "file_path": "documentation/ARKit/arskview/anchor(for).md",
@@ -20130,7 +20130,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/tracking-and-altering-images.json": {
       "file_path": "documentation/ARKit/tracking-and-altering-images.md",
-      "hash": "ef490445349caf1741818aca3b670ec86641b0b46dcc3ad4031a0115b4b9dee4"
+      "hash": "0223ed91db299f71eeb619ec5f221cc8e78697560e2025c1721c7385caa55e30"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/tracking-and-visualizing-faces.json": {
       "file_path": "documentation/ARKit/tracking-and-visualizing-faces.md",

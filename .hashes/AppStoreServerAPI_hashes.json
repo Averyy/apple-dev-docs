@@ -2530,6 +2530,13 @@
       "version": 4
     },
     "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/claimseatrequest.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/claimseatrequest/apptransactionid",
+        "https://developer.apple.com/documentation/appstoreserverapi/claimseatrequest/requestidentifier"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/claimseatresponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/claimseatresponse/seatclaimid"
+      ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest/consumptionpercentage",
         "https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest/deliverystatus",
@@ -2555,6 +2562,10 @@
         "https://developer.apple.com/documentation/appstoreserverapi/getgroupmembersresponse/hasmore",
         "https://developer.apple.com/documentation/appstoreserverapi/getgroupmembersresponse/paginationtoken"
       ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/getseatinforesponse.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/getseatinforesponse/availableseatcount",
+        "https://developer.apple.com/documentation/appstoreserverapi/getseatinforesponse/totalseatcount"
+      ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/groupentry.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/groupentry/grouptype",
         "https://developer.apple.com/documentation/appstoreserverapi/roleentry/productid",
@@ -2577,11 +2588,19 @@
         "https://developer.apple.com/documentation/appstoreserverapi/roleentry/productid",
         "https://developer.apple.com/documentation/appstoreserverapi/roleentry/role"
       ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/seatclaimid.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/getseatinforesponse/availableseatcount",
+        "https://developer.apple.com/documentation/appstoreserverapi/getseatinforesponse/totalseatcount"
+      ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendtestnotificationresponse.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/sendtestnotificationresponse/testnotificationtoken"
       ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifieritem.json": [
         "https://developer.apple.com/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactionmultiseatinfo.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/transactionmultiseatinfo/invitationmanagement",
+        "https://developer.apple.com/documentation/appstoreserverapi/transactionmultiseatinfo/revokedseatquantity"
       ]
     },
     "total_pages": 631

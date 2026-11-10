@@ -1198,6 +1198,13 @@
       ],
       "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload.json": [
         "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv2decodedpayload/notificationtype"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactionmultiseatinfo.json": [
+        "https://developer.apple.com/documentation/appstoreservernotifications/transactionmultiseatinfo/invitationmanagement",
+        "https://developer.apple.com/documentation/appstoreservernotifications/transactionmultiseatinfo/revokedseatquantity"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unclaiminfo.json": [
+        "https://developer.apple.com/documentation/appstoreservernotifications/unclaiminfo/unclaimseatids"
       ]
     },
     "total_pages": 296

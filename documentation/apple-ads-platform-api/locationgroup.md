@@ -70,6 +70,7 @@ The `LocationGroup` object is a targeting unit that bundles one or more brand lo
 - `eligibility` (Eligibility): Eligibility status for this location group. See [`Eligibility`](./eligibility.md). Read-only.
 - `creationTime` (date-time): Timestamp when the group was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Read-only.
+- `deleted` (boolean): **Default**: `false`
 
 ## See Also
 

@@ -514,13 +514,13 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/macos-release-notes/iWork.com"
-    ],
     "render": {
       "version": 4
     },
     "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-12_3-release-notes.json": [
+        "https://developer.apple.com/documentation/macos-release-notes/iWork.com"
+      ],
       "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-14-release-notes.json": [
         "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
       ]

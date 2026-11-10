@@ -3378,9 +3378,6 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://developer.apple.com/documentation/devicemanagement/apps-and-books-for-organizations"
-    ],
     "module": {
       "bundle": "com.apple.apple-school-and-business-manager-api",
       "parents": {
@@ -3391,6 +3388,14 @@
     },
     "render": {
       "version": 4
+    },
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/applebusinessapi/get-app-information.json": [
+        "https://developer.apple.com/documentation/devicemanagement/apps-and-books-for-organizations"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/applebusinessapi/get-apps.json": [
+        "https://developer.apple.com/documentation/devicemanagement/apps-and-books-for-organizations"
+      ]
     },
     "total_pages": 844
   }

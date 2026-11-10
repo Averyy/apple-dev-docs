@@ -98,6 +98,8 @@ Typically, there is no need to subclass the [`GLKView`](./glkview.md) class. Ins
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](../UIKit/uiappearance.md)

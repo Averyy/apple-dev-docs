@@ -13,7 +13,7 @@ Retrieve the recommended target CPA for a new Maximize Conversions campaign on t
 
 This endpoint returns the suggested target CPA for a [campaign](./campaigns-endpoints.md). The suggestion is the maximum tap-install CPI observed across the specified app’s eligible markets over the last 28 days. Only countries or regions with at least 10 installs in that window qualify.
 
-To identify the app, use `promotedObjectId` and `promotedObjectType`. Scope results to specific markets with an optional `countryOrRegion` filter. The response returns the single highest suggested target CPA and the market that produced it, along with the `appCategory` the suggestion applies to.
+To identify the app, use `promotedObjectId` and `promotedObjectType`. Scope results to specific markets with an optional `countriesOrRegions` filter. The response returns the single highest suggested target CPA and the market that produced it, along with the `appCategory` the suggestion applies to.
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
@@ -23,13 +23,13 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | --- | --- | --- | --- |
 | `promotedObjectId` | string | `EQUALS` | Required. A single numeric App Store app ID. |
 | `promotedObjectType` | string (enum) | `EQUALS` | Required. Must be `APPSTORE_APP`. |
-| `countryOrRegion` | array of strings | `IN` | Optional. One or more ISO 3166-1 alpha-2 country or region codes. When omitted, all eligible countries and regions are considered. |
+| `countriesOrRegions` | array of strings | `IN` | Optional. One or more ISO 3166-1 alpha-2 country or region codes. When omitted, all eligible countries and regions are considered. |
 
 ## Payload Examples
 
 **All Eligible Countries**:
 
-Retrieve the suggested target CPA across all markets. Omitting `countryOrRegion` causes the endpoint to evaluate every country and region with at least 10 installs in the last 28 days and return the highest result.
+Retrieve the suggested target CPA across all markets. Omitting `countriesOrRegions` causes the endpoint to evaluate every country and region with at least 10 installs in the last 28 days and return the highest result.
 
 ### Request
 
@@ -68,7 +68,7 @@ POST /v1/suggestions/target-cpas/query
      "amount": "1.20",
      "currency": "USD"
    },
-   "countryOrRegion": [
+   "countriesOrRegions": [
      "US"
    ],
    "appCategory": "Games"
@@ -78,11 +78,11 @@ POST /v1/suggestions/target-cpas/query
 
 **Scoped to Specific Countries**:
 
-Restrict evaluation to specific markets by adding a `countryOrRegion` filter. The endpoint returns the highest suggested target CPA found within those countries or regions only.
+Restrict evaluation to specific markets by adding a `countriesOrRegions` filter. The endpoint returns the highest suggested target CPA found within those countries or regions only.
 
 ### Request
 
-Adds a `countryOrRegion` filter restricting evaluation to the US, GB, and CA markets.
+Adds a `countriesOrRegions` filter restricting evaluation to the US, GB, and CA markets.
 
 ```http
 POST /v1/suggestions/target-cpas/query
@@ -104,7 +104,7 @@ POST /v1/suggestions/target-cpas/query
      ]
    },
    {
-     "field": "countryOrRegion",
+     "field": "countriesOrRegions",
      "operator": "IN",
      "value": [
        "US",
@@ -126,7 +126,7 @@ POST /v1/suggestions/target-cpas/query
      "amount": "0.95",
      "currency": "USD"
    },
-   "countryOrRegion": [
+   "countriesOrRegions": [
      "GB"
    ],
    "appCategory": "Games"

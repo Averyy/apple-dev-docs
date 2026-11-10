@@ -55,8 +55,6 @@ Use the `TVDigitEntryViewController` class to manage a digit entry view. The dig
 - [NSCoding](../Foundation/nscoding.md)
 - [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
 - [UIContentContainer](../UIKit/uicontentcontainer.md)

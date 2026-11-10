@@ -27,7 +27,7 @@ The `TargetCpaSuggestion` object represents the recommended cost-per-acquisition
     "amount": "3.75",
     "currency": "USD"
   },
-  "countryOrRegion": [
+  "countriesOrRegions": [
     "US",
     "GB"
   ],
@@ -39,7 +39,7 @@ The `TargetCpaSuggestion` object represents the recommended cost-per-acquisition
 ## Properties
 
 - `suggestedTargetCPA` (RecommendationMoney): The suggested Target CPA. Calculated as the maximum tap-install CPI across the evaluated countries or regions that have at least 10 installs in the last 28 days, scoped to the app’s category. See [`Money`](./recommendationmoney.md). Read-only.
-- `countryOrRegion` ([string]): The country or region codes that this suggestion applies to. Read-only.
+- `countriesOrRegions` ([string]): The country or region codes that this suggestion applies to. Read-only.
 - `promotedObjectId` (string): The ID of the promoted object (app or brand) this suggestion was calculated for. Read-only.
 - `appCategory` (string): The App Store category used to scope the suggestion’s performance data. Read-only.
 

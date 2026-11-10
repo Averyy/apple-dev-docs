@@ -34,7 +34,7 @@ Test your integration with the new Siri AI capabilities using the following meth
 
 The Siri AI Developer Preview isn’t available to external testers in TestFlight or to versions of your app that you publish on the App Store. If you distribute a version of your app that uses App Intents API to integrate custom actions and content with Siri, Siri AI Developer Preview functionality isn’t available to external testers or people who get your app from the App Store. For more information about distributing apps to internal testers, see [App Store Connect Help](https://developer.apple.com/help/app-store-connect/test-a-beta-version/add-internal-testers).
 
-## Custom, content, and snippets in Siri
+## Custom actions, content, and snippets in Siri
 
 Siri can only find custom content and perform custom actions an app makes explicitly available using App Intents. To make your custom app intents and entities available to the Siri AI Developer Preview, update your existing App Intents code as described in [Bringing custom actions and content to Siri](./bringing-custom-actions-and-content-to-siri.md).
 

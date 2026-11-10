@@ -25,7 +25,7 @@ The `RecommendationQueryTargetCpaSuggestionResponse` object is the top-level res
 {
   "result": {
     "promotedObjectId": "123456789",
-    "countryOrRegion": [
+    "countriesOrRegions": [
       "US",
       "GB"
     ],

@@ -55,6 +55,8 @@ class AUGenericView
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

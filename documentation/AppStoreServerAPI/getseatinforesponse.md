@@ -30,8 +30,8 @@ Each value in the `assignedSeatClaimIds` array is a [`seatClaimId`](./seatclaimi
 ### Seat data types
 - [type seatClaimId](./seatclaimid.md)
   The identifier of a seat claim in a group subscription that uses developer-hosted invitations.
-- [availableSeatCount](./getseatinforesponse/availableseatcount.md)
-- [totalSeatCount](./getseatinforesponse/totalseatcount.md)
+- availableSeatCount
+- totalSeatCount
 
 ## Properties
 

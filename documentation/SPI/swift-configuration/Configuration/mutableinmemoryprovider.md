@@ -81,6 +81,10 @@ To learn more about the in-memory providers, check out [Using in-memory provider
 ### Updating values in a mutable in-memory provider
 - [func setValue(ConfigValue?, forKey: AbsoluteConfigKey)](./mutableinmemoryprovider/setvalue%28_,forkey%29.md)
   Updates the stored value for the specified configuration key.
+- [func setValues([AbsoluteConfigKey : ConfigValue?])](./mutableinmemoryprovider/setvalues%28_%29.md)
+  Updates the stored values for multiple configuration keys at once.
+- [func withValues<Return, Failure>((inout [AbsoluteConfigKey : ConfigValue]) throws(Failure) -> Return) throws(Failure) -> Return](./mutableinmemoryprovider/withvalues%28_%29.md)
+  Reads and updates the stored values in a single atomic operation.
 ### Default Implementations
 - [ConfigProvider Implementations](./mutableinmemoryprovider/configprovider-implementations.md)
 - [CustomDebugStringConvertible Implementations](./mutableinmemoryprovider/customdebugstringconvertible-implementations.md)

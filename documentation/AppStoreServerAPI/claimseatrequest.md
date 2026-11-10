@@ -23,9 +23,9 @@ object ClaimSeatRequest
 
 This is the request body for the [`Claim Seat`](./claim-seat.md) endpoint.
 
-Generate a new [`requestIdentifier`](./claimseatrequest/requestidentifier.md) for each claim, and save it before you call the endpoint. If the request fails or times out, retry it with the same `requestIdentifier`. If the original request claimed a seat, the endpoint returns that [`seatClaimId`](./seatclaimid.md) instead of claiming a second seat.
+Generate a new `requestIdentifier` for each claim, and save it before you call the endpoint. If the request fails or times out, retry it with the same `requestIdentifier`. If the original request claimed a seat, the endpoint returns that [`seatClaimId`](./seatclaimid.md) instead of claiming a second seat.
 
-If you include the [`appTransactionId`](./claimseatrequest/apptransactionid.md), the App Store associates the customer with the seat as part of the claim. If you learn the `appTransactionId` later, call the [`Associate Seat`](./associate-seat.md) endpoint.
+If you include the `appTransactionId`, the App Store associates the customer with the seat as part of the claim. If you learn the `appTransactionId` later, call the [`Associate Seat`](./associate-seat.md) endpoint.
 
 ## Properties
 

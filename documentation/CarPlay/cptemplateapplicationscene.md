@@ -77,6 +77,8 @@ You don’t create scenes directly. Instead, you specify the name of the appropr
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)

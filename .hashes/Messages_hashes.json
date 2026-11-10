@@ -514,7 +514,7 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller.md",
-      "hash": "1c3515138d2ba9699b04700eb87e25738898179a74b7d3e14f3dd69730561e16"
+      "hash": "4bd0922fc6638df2697802bc139d556b822e43b012270f4526a61623a962989e"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:)": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",
@@ -1130,7 +1130,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller.json": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller.md",
-      "hash": "1c3515138d2ba9699b04700eb87e25738898179a74b7d3e14f3dd69730561e16"
+      "hash": "4bd0922fc6638df2697802bc139d556b822e43b012270f4526a61623a962989e"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:).json": {
       "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",

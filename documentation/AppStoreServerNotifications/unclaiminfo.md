@@ -49,7 +49,7 @@ The following example shows the decoded payload of an `UNCLAIM_SEATS` notificati
 ## Topics
 
 ### Seat identifiers
-- [unclaimSeatIds](./unclaiminfo/unclaimseatids.md)
+- unclaimSeatIds
 
 ## Properties
 

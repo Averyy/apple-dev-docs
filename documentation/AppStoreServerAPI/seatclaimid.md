@@ -28,8 +28,8 @@ To get the identifiers of the active seat claims in a subscription, call the [`G
 ## See Also
 
 ### Seat data types
-- [availableSeatCount](./getseatinforesponse/availableseatcount.md)
-- [totalSeatCount](./getseatinforesponse/totalseatcount.md)
+- availableSeatCount
+- totalSeatCount
 
 
 ---

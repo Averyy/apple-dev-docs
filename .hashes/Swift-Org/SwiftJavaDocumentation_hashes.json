@@ -6,7 +6,7 @@
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/android.json": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/android.md",
-      "hash": "f549614c8f5436f0e42f18a811465a248e46420b3b246dc4275e0a4eb883d7fa"
+      "hash": "a7eecbe91d758b83d9a6482a2bc1e972433bdacab147ce4abe27fc87c22735e0"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/examplecommandlineprogram.json": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/examplecommandlineprogram.md",
@@ -38,7 +38,7 @@
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavajextract.json": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavajextract.md",
-      "hash": "11d9233efa4b1fa20e2fa1e22ee44e9c71bab3add509c141ce4c4c3f3c59eaf0"
+      "hash": "e63490ec0a56edbdb4d37765da5a492e5340d93d9f43908bfef2870b4db00303"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavaresolve.json": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaresolve.md",
@@ -58,7 +58,7 @@
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/android": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/android.md",
-      "hash": "f549614c8f5436f0e42f18a811465a248e46420b3b246dc4275e0a4eb883d7fa"
+      "hash": "a7eecbe91d758b83d9a6482a2bc1e972433bdacab147ce4abe27fc87c22735e0"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/examplecommandlineprogram": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/examplecommandlineprogram.md",
@@ -90,7 +90,7 @@
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavajextract": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavajextract.md",
-      "hash": "11d9233efa4b1fa20e2fa1e22ee44e9c71bab3add509c141ce4c4c3f3c59eaf0"
+      "hash": "e63490ec0a56edbdb4d37765da5a492e5340d93d9f43908bfef2870b4db00303"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavaresolve": {
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaresolve.md",

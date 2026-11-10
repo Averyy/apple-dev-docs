@@ -4662,7 +4662,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
+      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell/action": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -12086,7 +12086,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
+      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",
@@ -60494,7 +60494,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell.json": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
+      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell/action.json": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -67918,7 +67918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
+      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",

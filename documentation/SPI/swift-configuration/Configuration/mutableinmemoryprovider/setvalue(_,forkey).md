@@ -26,10 +26,10 @@ func setValue(_ value: ConfigValue?, forKey key: AbsoluteConfigKey)
 
 ## Discussion
 
-This method atomically updates the value and notifies all active watchers of the change. If the new value is the same as the existing value, no notification is sent.
+This method atomically updates the value, then notifies all active watchers of the change. If the new value is the same as the existing value, no notification is sent.
 
 ```swift
-let provider = MutableInMemoryProvider(initialValues: [:])
+let provider = MutableInMemoryProvider()
 let key = AbsoluteConfigKey(["api", "enabled"], context: [:])
 
 // Set a new value
@@ -43,6 +43,14 @@ provider.setValue(nil, forKey: key)
 
 - `value`: The new configuration value, or `nil` to remove the value entirely.
 - `key`: The absolute configuration key to update.
+
+## See Also
+
+### Updating values in a mutable in-memory provider
+- [func setValues([AbsoluteConfigKey : ConfigValue?])](./setvalues%28_%29.md)
+  Updates the stored values for multiple configuration keys at once.
+- [func withValues<Return, Failure>((inout [AbsoluteConfigKey : ConfigValue]) throws(Failure) -> Return) throws(Failure) -> Return](./withvalues%28_%29.md)
+  Reads and updates the stored values in a single atomic operation.
 
 
 ---

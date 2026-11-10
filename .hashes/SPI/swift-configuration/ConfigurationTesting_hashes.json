@@ -2,59 +2,59 @@
   "hashes": {
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting.json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/ConfigurationTesting.md",
-      "hash": "79ce3ac4a7269e528d2c0e24761ea90550087f97d2781cdd567f32804805856c"
+      "hash": "8de169d42b2e95b11ef86e3e95a5e7dae1a8da26497627af5f95ec75f9fea86d"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest.json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest.md",
-      "hash": "3455b1634cac521bd32562f8cbc3228602eed7ce5f40be15da32ae1e8ceb1a9c"
+      "hash": "86212db2d5038d9f6cffdadabc992b8aa1c297a5d59532f7e8805723b005ce8e"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/init(provider:configuration:).json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/init(provider,configuration).md",
-      "hash": "25adcff26d31b600c65692ebcdf983b26305841fe7087463d1d7e4a056ea5f9f"
+      "hash": "65798dc9556ed70c132d1e71b774e2697b2e50324224033bff0e242a81add037"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/runtest().json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/runtest().md",
-      "hash": "0e3cfebd8a266f842556a84856f90b16812aafaedf84ed1b8ad2e971a32f8bdc"
+      "hash": "0f60512b5f5e6f5f8fc5b1ffb9f64fd2486b1c0b0cca74457a9631072715463a"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration.json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration.md",
-      "hash": "bda31f9fb5ab9bf9ae39268946b35855435878350f246327b284ce5a029a41a2"
+      "hash": "8c942268b1a481b701b33b14f01981521e07e1ec6ce49258c8bc07d021f961da"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration/init(overrides:).json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/init(overrides).md",
-      "hash": "d486328c25134e442adfbbd83dc39d8c5969c276c003377475e4858e1db468a7"
+      "hash": "368779e369f5c8c9bbf5365ff9f9284f1026e4408118ffa7cc5524fedfbc7925"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration/overrides.json": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/overrides.md",
-      "hash": "b38f36a4ecbbf65f8c84c625ea600cf12c0845f97ed7cc50e8635f947c120a93"
+      "hash": "d482b8de6ad1c6eb2809f851d89d180f22cb136b366c86e000fc18699a28b130"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/ConfigurationTesting.md",
-      "hash": "79ce3ac4a7269e528d2c0e24761ea90550087f97d2781cdd567f32804805856c"
+      "hash": "8de169d42b2e95b11ef86e3e95a5e7dae1a8da26497627af5f95ec75f9fea86d"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest.md",
-      "hash": "3455b1634cac521bd32562f8cbc3228602eed7ce5f40be15da32ae1e8ceb1a9c"
+      "hash": "86212db2d5038d9f6cffdadabc992b8aa1c297a5d59532f7e8805723b005ce8e"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/init(provider:configuration:)": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/init(provider,configuration).md",
-      "hash": "25adcff26d31b600c65692ebcdf983b26305841fe7087463d1d7e4a056ea5f9f"
+      "hash": "65798dc9556ed70c132d1e71b774e2697b2e50324224033bff0e242a81add037"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/runtest()": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/runtest().md",
-      "hash": "0e3cfebd8a266f842556a84856f90b16812aafaedf84ed1b8ad2e971a32f8bdc"
+      "hash": "0f60512b5f5e6f5f8fc5b1ffb9f64fd2486b1c0b0cca74457a9631072715463a"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration.md",
-      "hash": "bda31f9fb5ab9bf9ae39268946b35855435878350f246327b284ce5a029a41a2"
+      "hash": "8c942268b1a481b701b33b14f01981521e07e1ec6ce49258c8bc07d021f961da"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration/init(overrides:)": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/init(overrides).md",
-      "hash": "d486328c25134e442adfbbd83dc39d8c5969c276c003377475e4858e1db468a7"
+      "hash": "368779e369f5c8c9bbf5365ff9f9284f1026e4408118ffa7cc5524fedfbc7925"
     },
     "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration/overrides": {
       "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/overrides.md",
-      "hash": "b38f36a4ecbbf65f8c84c625ea600cf12c0845f97ed7cc50e8635f947c120a93"
+      "hash": "d482b8de6ad1c6eb2809f851d89d180f22cb136b366c86e000fc18699a28b130"
     }
   },
   "metadata": {
@@ -65,6 +65,8 @@
         "configuration/sco-0003",
         "configuration/sco-0004",
         "configuration/sco-0005",
+        "configuration/sco-0006",
+        "configuration/sco-0007",
         "configuration/sco-nnnn"
       ],
       "version": 4

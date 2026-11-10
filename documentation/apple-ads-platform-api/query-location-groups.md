@@ -29,7 +29,7 @@ See [`QueryRequest`](./queryrequest.md).
 
 The system combines multiple filters with AND logic. The `id` filter matches the group’s system-assigned identifier, the same `id` value returned in create and get responses, not the provider object ID. Filtering by `brandId` is the most common way to scope results to a single brand’s groups.
 
-The system excludes soft-deleted groups from results.
+The system excludes soft-deleted groups from results unless you supply an explicit `deleted` filter. For example, filter `deleted` with `EQUALS` and `true` to retrieve only deleted groups.
 
 > **Note**: There’s no dedicated filter for looking up location groups by location membership. To determine which groups contain a specific location, query location groups scoped to the location’s brand with a `brandId` filter, then inspect each returned group’s membership client-side. For `STATIC` groups, check whether the location’s `id` appears in the group’s `locationIds` array. For `DYNAMIC` groups, check whether the location satisfies the group’s `rules` criteria.
 
@@ -39,6 +39,7 @@ The system excludes soft-deleted groups from results.
 | `name` | string | `EQUALS` | Yes | Group display name. |
 | `brandId` | string | `EQUALS` | Yes | Parent brand. |
 | `groupType` | string (enum) | `EQUALS`, `IN` | Yes | `STATIC` or `DYNAMIC`. |
+| `deleted` | boolean | `EQUALS` | Yes | Soft-delete flag. Defaults to `false` unless you supply an explicit filter. |
 | `isAllLocationsGroup` | boolean | `EQUALS` | Yes | All-locations group flag. |
 | `eligibility.status` | string (enum) | `EQUALS`, `IN` | Yes | Eligibility status. |
 

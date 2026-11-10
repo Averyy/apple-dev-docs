@@ -21,12 +21,12 @@ Creates a new mutable in-memory provider with the specified initial values.
 ## Declaration
 
 ```swift
-init(name: String? = nil, initialValues: [AbsoluteConfigKey : ConfigValue])
+init(name: String? = nil, initialValues: [AbsoluteConfigKey : ConfigValue] = [:])
 ```
 
 ## Discussion
 
-This initializer takes a dictionary of absolute configuration keys mapped to their initial values. The provider can be modified after creation using the [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) methods.
+This initializer takes a dictionary of absolute configuration keys mapped to their initial values. The provider can be modified after creation using [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md), [`setValues(_:)`](./setvalues%28_%29.md), or [`withValues(_:)`](./withvalues%28_%29.md).
 
 ```swift
 let key1 = AbsoluteConfigKey(["database", "host"], context: [:])

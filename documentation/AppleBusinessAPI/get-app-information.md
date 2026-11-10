@@ -11,7 +11,7 @@ Get information about a specific app for an organization using the built-in devi
 
 ## Overview
 
-> ❗ **Important**: This endpoint requires the built-in device management service to be turned on for the organization. If you need to manage apps without the built-in device management, use the [Apps and Books for Organizations](../DeviceManagement/apps-and-books-for-organizations.md) API instead.
+> ❗ **Important**: This endpoint requires the built-in device management service to be turned on for the organization. If you need to manage apps without the built-in device management, use the Apps and Books for Organizations API instead.
 
 ### Example
 

@@ -30,10 +30,10 @@ A seat-based refund revokes some of the seats in a transaction without revoking 
 ## Topics
 
 ### Seat information
-- [invitationManagement](./transactionmultiseatinfo/invitationmanagement.md)
+- invitationManagement
 - [object MultiSeatPriceTier](./multiseatpricetier.md)
   A price per seat, and the number of seats at that price, in a subscription that a customer buys as a multiseat purchase.
-- [revokedSeatQuantity](./transactionmultiseatinfo/revokedseatquantity.md)
+- revokedSeatQuantity
 
 ## Properties
 

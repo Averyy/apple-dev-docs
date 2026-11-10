@@ -2,11 +2,11 @@
   "hashes": {
     "https://developer.apple.com/documentation/SwiftData": {
       "file_path": "documentation/SwiftData/SwiftData.md",
-      "hash": "bf65d441a8890c69d0bfb3a0591abf3ce4e993ab7522477bc068cb35c0498f14"
+      "hash": "bffdfd39aecf5a0f2adc2ca1e21716bc6d65dad15e72ea3e6bf66001de645bb6"
     },
     "https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app": {
       "file_path": "documentation/SwiftData/adding-and-editing-persistent-data-in-your-app.md",
-      "hash": "3d89e7984522616fa016d7a69e1c14152ca32f01eafaf121d23a1fcd179da51d"
+      "hash": "a77c18f60caf5b114daf1b8e5d882a1a3c36d30ee4fa889ad604fc93944fd38a"
     },
     "https://developer.apple.com/documentation/swiftdata/additionalquerymacros": {
       "file_path": "documentation/SwiftData/additionalquerymacros.md",
@@ -442,11 +442,11 @@
     },
     "https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes": {
       "file_path": "documentation/SwiftData/defining-data-relationships-with-enumerations-and-model-classes.md",
-      "hash": "3ecc3d3a5d8d33bdb435682d5b17afa0c907621fa74c12e7663ff9f2e7af32f6"
+      "hash": "a1d221d4908c14dffd941822ac1091fd75eb6f00ba12c1c6aa9d02e7771f62ae"
     },
     "https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app": {
       "file_path": "documentation/SwiftData/deleting-persistent-data-from-your-app.md",
-      "hash": "8e207db7346e2a271133e9805dfdfd53ec4e0a0b281b8c071787e0cb2babd2f8"
+      "hash": "af4be68477fe46d31c4894177b0ae5ea7535687b7e21670afe34b652be693a1a"
     },
     "https://developer.apple.com/documentation/swiftdata/editingstate": {
       "file_path": "documentation/SwiftData/editingstate.md",
@@ -1242,7 +1242,7 @@
     },
     "https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches": {
       "file_path": "documentation/SwiftData/preserving-your-apps-model-data-across-launches.md",
-      "hash": "ff2e93afd1e4e33ab47f92df8399e8792c435087eb8cdf5749204b87f4b8e5bc"
+      "hash": "9aad0c3b6430190aa633e0d823a84c8791a61a4b5b320865e61a2aba791236ae"
     },
     "https://developer.apple.com/documentation/swiftdata/query": {
       "file_path": "documentation/SwiftData/query.md",
@@ -1590,7 +1590,7 @@
     },
     "https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager": {
       "file_path": "documentation/SwiftData/reverting-data-changes-using-the-undo-manager.md",
-      "hash": "948f1c554543ec0963b52e86e6f8ed65c71c57f477524114fad453a2de97bcd2"
+      "hash": "e42b7558ca666f6239b80816123dc0a0c0816da97c6ef26d151610501709e818"
     },
     "https://developer.apple.com/documentation/swiftdata/schema": {
       "file_path": "documentation/SwiftData/schema.md",
@@ -2218,11 +2218,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/SwiftData.json": {
       "file_path": "documentation/SwiftData/SwiftData.md",
-      "hash": "bf65d441a8890c69d0bfb3a0591abf3ce4e993ab7522477bc068cb35c0498f14"
+      "hash": "bffdfd39aecf5a0f2adc2ca1e21716bc6d65dad15e72ea3e6bf66001de645bb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app.json": {
       "file_path": "documentation/SwiftData/adding-and-editing-persistent-data-in-your-app.md",
-      "hash": "3d89e7984522616fa016d7a69e1c14152ca32f01eafaf121d23a1fcd179da51d"
+      "hash": "a77c18f60caf5b114daf1b8e5d882a1a3c36d30ee4fa889ad604fc93944fd38a"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/additionalquerymacros.json": {
       "file_path": "documentation/SwiftData/additionalquerymacros.md",
@@ -2658,11 +2658,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes.json": {
       "file_path": "documentation/SwiftData/defining-data-relationships-with-enumerations-and-model-classes.md",
-      "hash": "3ecc3d3a5d8d33bdb435682d5b17afa0c907621fa74c12e7663ff9f2e7af32f6"
+      "hash": "a1d221d4908c14dffd941822ac1091fd75eb6f00ba12c1c6aa9d02e7771f62ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/deleting-persistent-data-from-your-app.json": {
       "file_path": "documentation/SwiftData/deleting-persistent-data-from-your-app.md",
-      "hash": "8e207db7346e2a271133e9805dfdfd53ec4e0a0b281b8c071787e0cb2babd2f8"
+      "hash": "af4be68477fe46d31c4894177b0ae5ea7535687b7e21670afe34b652be693a1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/editingstate.json": {
       "file_path": "documentation/SwiftData/editingstate.md",
@@ -3458,7 +3458,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/preserving-your-apps-model-data-across-launches.json": {
       "file_path": "documentation/SwiftData/preserving-your-apps-model-data-across-launches.md",
-      "hash": "ff2e93afd1e4e33ab47f92df8399e8792c435087eb8cdf5749204b87f4b8e5bc"
+      "hash": "9aad0c3b6430190aa633e0d823a84c8791a61a4b5b320865e61a2aba791236ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/query().json": {
       "file_path": "documentation/SwiftData/query().md",
@@ -3806,7 +3806,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/reverting-data-changes-using-the-undo-manager.json": {
       "file_path": "documentation/SwiftData/reverting-data-changes-using-the-undo-manager.md",
-      "hash": "948f1c554543ec0963b52e86e6f8ed65c71c57f477524114fad453a2de97bcd2"
+      "hash": "e42b7558ca666f6239b80816123dc0a0c0816da97c6ef26d151610501709e818"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema.json": {
       "file_path": "documentation/SwiftData/schema.md",

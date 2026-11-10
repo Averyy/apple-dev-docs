@@ -126,6 +126,7 @@ Use the “watch” pattern when:
 - Immediately emits the initial value, then subsequent updates.
 - Continues monitoring until you cancel the task.
 - Works with providers like [`ReloadingFileProvider`](./reloadingfileprovider.md).
+- Provides no ordering guarantee relative to “get” and “fetch” calls. A “get” can return a newer value than the watcher has received yet, so don’t write code that depends on the order between them.
 
 For details on reloading providers, check out [Using reloading providers](./using-reloading-providers.md).
 

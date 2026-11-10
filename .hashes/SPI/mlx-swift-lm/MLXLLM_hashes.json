@@ -22154,6 +22154,9 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/Models"
+    ],
     "render": {
       "version": 4
     },

@@ -2,7 +2,7 @@
 
 **Framework**: ARKit  
 **Role**: Sample Code  
-**Download**: [TrackingAndAlteringImages.zip](https://docs-assets.developer.apple.com/published/37921c6fe4c6/TrackingAndAlteringImages.zip)
+**Download**: [TrackingAndAlteringImages.zip](https://docs-assets.developer.apple.com/published/f79d1d0c2e70/TrackingAndAlteringImages.zip)
 
 Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 
