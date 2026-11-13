@@ -23,13 +23,12 @@ struct ColumnID<T>
 
 ## Topics
 
-### Creating a Column ID
+### Creating a column ID
 - [init(String, T.Type)](./columnid/init%28_,_%29.md)
   Creates a column identifier.
-### Getting the Properties
+### Getting the properties
 - [var name: String](./columnid/name.md)
   The name of the column the identifier represents.
-### Instance Properties
 - [var type: any Any.Type](./columnid/type.md)
   The type of elements stored in the column the identifier represents.
 ### Default Implementations
@@ -46,7 +45,7 @@ struct ColumnID<T>
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [enum Order](./order.md)
   A type that represents a sort ordering.
 - [struct FormattingOptions](./formattingoptions.md)

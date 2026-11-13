@@ -27,7 +27,7 @@ See [`OptionalColumnProtocol`](../optionalcolumnprotocol.md) for more informatio
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [FilledColumn.Element](./element.md)
   The type of the column’s elements that defines an associated type for the bidirectional collection protocol.
 

@@ -23,7 +23,7 @@ var debugDescription: String { get }
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var columnName: String](./columnname.md)
   The name of the column with the error.
 - [var decodingError: DecodingError](./decodingerror.md)

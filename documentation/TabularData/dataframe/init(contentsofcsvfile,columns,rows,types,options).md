@@ -35,8 +35,12 @@ init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = n
 
 ## See Also
 
-### Creating a Data Frame from a CSV
+### Creating a data frame from a CSV
 - [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./init%28csvdata,columns,rows,types,options%29.md)
+  Creates a data frame from CSV data.
+- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./init%28contentsofcsvfile,columns,rows,options%29.md)
+  Creates a data frame from a CSV file.
+- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./init%28csvdata,columns,rows,options%29.md)
   Creates a data frame from CSV data.
 - [enum CSVType](../csvtype.md)
   Represents the value types in a CSV file.

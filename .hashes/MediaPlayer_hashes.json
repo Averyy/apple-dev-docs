@@ -1886,7 +1886,7 @@
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerviewcontroller": {
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller.md",
-      "hash": "595e4c48b0476d5f30a13085b43a7627335ac1128cd2607784f814a2762a2c5f"
+      "hash": "07cbbbff877b06da0253855e77b7bd1a7d373a1399a8795ec22535a4e0f271e6"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerviewcontroller/init(contenturl:)": {
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller/init(contenturl).md",
@@ -5006,7 +5006,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerviewcontroller.json": {
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller.md",
-      "hash": "595e4c48b0476d5f30a13085b43a7627335ac1128cd2607784f814a2762a2c5f"
+      "hash": "07cbbbff877b06da0253855e77b7bd1a7d373a1399a8795ec22535a4e0f271e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerviewcontroller/init(contenturl:).json": {
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller/init(contenturl).md",

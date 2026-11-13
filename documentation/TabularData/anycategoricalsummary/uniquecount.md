@@ -23,7 +23,7 @@ var uniqueCount: Int
 
 ## See Also
 
-### Getting Statistical Information
+### Getting statistical information
 - [var noneCount: Int](./nonecount.md)
   The number of missing elements in the column.
 - [var someCount: Int](./somecount.md)

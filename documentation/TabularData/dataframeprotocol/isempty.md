@@ -23,19 +23,23 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-### Inspecting a Data Frame Type
-- [var shape: (rows: Int, columns: Int)](./shape.md)
-  The number or rows and columns of the data frame type.
-- [var columns: [Self.ColumnType]](./columns.md)
-  The columns of the underlying data frame.
-- [associatedtype ColumnType : AnyColumnProtocol](./columntype.md)
-  A type that conforms to the type-erased column protocol.
-- [var rows: DataFrame.Rows](./rows.md)
-  The rows of the underlying data frame.
+### Inspecting a data frame
+- [var shape: (rows: Int, columns: Int)](../dataframe/shape.md)
+  The number of rows and columns in the data frame.
+- [var columns: [AnyColumn]](../dataframe/columns.md)
+  The entire data frame as a collection of columns.
+- [var rows: DataFrame.Rows](../dataframe/rows-swift.property.md)
+  The entire data frame as a collection of rows.
 - [DataFrame.Rows](../dataframe/rows-swift.struct.md)
   A collection of rows in a data frame.
-- [var base: DataFrame](./base.md)
+- [var base: DataFrame](../dataframe/base.md)
   The underlying data frame.
+- [func containsColumn(String) -> Bool](../dataframe/containscolumn%28_%29-8spst.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [func containsColumn<T>(ColumnID<T>) -> Bool](../dataframe/containscolumn%28_%29-6nqfs.md)
+  Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
+- [func containsColumn<T>(String, T.Type) -> Bool](../dataframe/containscolumn%28_,_%29.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
 
 
 ---

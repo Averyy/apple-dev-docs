@@ -36,7 +36,7 @@ subscript(range: Range<Int>) -> DataFrame.Slice { get set }
 
 ## See Also
 
-### Accessing Rows
+### Accessing rows
 - [subscript<R>(R) -> DataFrame.Slice](./subscript%28_%29-8hly3.md)
   Accesses rows of a data frame type with an index range expression.
 

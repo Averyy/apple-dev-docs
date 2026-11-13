@@ -27,7 +27,7 @@ subscript<R>(r: R) -> DataFrame.Slice where R : RangeExpression, R.Bound == Int 
 
 ## See Also
 
-### Accessing Rows
+### Accessing rows
 - [subscript(Range<Int>) -> DataFrame.Slice](./subscript%28_%29.md)
   Accesses a slice of the data frame type with an index range.
 

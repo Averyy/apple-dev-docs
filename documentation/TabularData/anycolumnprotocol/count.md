@@ -24,7 +24,7 @@ var count: Int { get }
 
 ## See Also
 
-### Inspecting a Type-Erased Column Type
+### Inspecting a type-erased column type
 - [var name: String](./name.md)
   The name of the column type.
 - [var wrappedElementType: any Any.Type](./wrappedelementtype.md)

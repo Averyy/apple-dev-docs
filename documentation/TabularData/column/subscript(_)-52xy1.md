@@ -27,7 +27,7 @@ subscript<R>(range: R) -> ColumnSlice<WrappedElement> where R : RangeExpression,
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Int) -> Column<WrappedElement>.Element](./subscript%28_%29-qm4d.md)
   Accesses an element at an index.
 - [subscript(Range<Int>) -> ColumnSlice<WrappedElement>](./subscript%28_%29-gne9.md)

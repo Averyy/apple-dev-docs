@@ -108,7 +108,7 @@ If you’re having problems working with RVIs, see [Troubleshooting Packet Trace
 
 ### Display and Filter iOS Interface Information
 
-An RVI represents the entire networking stack of the iOS device; you cannot target a specific interface on the device as you would on the Mac. However, information about the interface is recorded in the packet metadata. You can use your packet trace tool to display the interface for each packet and filter the trace based on that interface. For the `tcpdump` tool, use the -k option to display packet metadata and tcpdump -Q to filter on it. The `tcpdump` man page has the details; see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
+An RVI represents the entire networking stack of the iOS device; you cannot target a specific interface on the device as you would on the Mac. However, information about the interface is recorded in the packet metadata. You can use your packet trace tool to display the interface for each packet and filter the trace based on that interface. For the `tcpdump` tool, use the -k option to display packet metadata and tcpdump -Q to filter on it. The `tcpdump` man page has the details; see [TN3215: Reading man pages](../Technotes/tn3215-reading-man-pages.md).
 
 ## Topics
 
@@ -122,6 +122,9 @@ An RVI represents the entire networking stack of the iOS device; you cannot targ
 
 ## See Also
 
+### Related Documentation
+- [TN3215: Reading man pages](../Technotes/tn3215-reading-man-pages.md)
+  Use the Terminal app to read the documentation for command-line tools and low-level APIs.
 ### Network Debugging
 - [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md)
   Decide which tool works best for your network debugging problem.

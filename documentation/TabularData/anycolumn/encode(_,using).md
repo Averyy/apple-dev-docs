@@ -32,7 +32,7 @@ mutating func encode<T, Encoder>(_ type: T.Type, using encoder: Encoder) throws 
 
 ## See Also
 
-### Encoding a Column
+### Encoding a column
 - [func encoded<T, Encoder>(T.Type, using: Encoder) throws -> AnyColumn](./encoded%28_,using%29.md)
   Generates a column by encoding each element’s value.
 

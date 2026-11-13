@@ -34,9 +34,11 @@ func summary(of columnNames: [String]) -> any GroupSummaries
 
 ## See Also
 
-### Summarizing a Row Grouping
+### Summarizing a row grouping
 - [func summary() -> any GroupSummaries](./summary%28%29.md)
   Generates a group summaries instance of the row grouping’s columns.
+- [func summary(of: String...) -> any GroupSummaries](./summary%28of%29-n5ia.md)
+  Generates a categorical summary of the columns you select by name.
 - [protocol GroupSummaries](../groupsummaries.md)
   A collection of group summaries.
 

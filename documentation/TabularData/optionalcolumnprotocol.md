@@ -27,31 +27,31 @@ protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
 
 ## Topics
 
-### Filling an Optional Column
+### Filling an optional column
 - [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](./optionalcolumnprotocol/filled%28with%29.md)
   Generates a filled column by replacing missing elements with a value.
-### Generating an Optional Column by Adding Two Columns
+### Generating an optional column by adding two columns
 - [static func + (Self, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/plus%28_,_%29-2qex0.md)
   Generates a column by adding each element in an optional column type to the corresponding elements of another.
 - [func + <L, R>(L, R) -> Column<L.Element>](./plus%28_,_%29-1i7oh.md)
   Generates a column by adding each element in a column type to the corresponding elements of an optional column type.
 - [func + <L, R>(L, R) -> Column<R.Element>](./plus%28_,_%29-3exmp.md)
   Generates a column by adding each element in an optional column type to the corresponding elements of a column type.
-### Generating an Optional Column by Subtracting Two Columns
+### Generating an optional column by subtracting two columns
 - [static func - (Self, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/minus%28_,_%29-5xfkx.md)
   Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
 - [func - <L, R>(L, R) -> Column<L.Element>](./minus%28_,_%29-25cs6.md)
   Generates a column by subtracting each element in an optional column type from the corresponding elements of a column type.
 - [func - <L, R>(L, R) -> Column<R.Element>](./minus%28_,_%29-95yoe.md)
   Generates a column by subtracting each element in a column type from the corresponding elements of an optional column.
-### Generating an Optional Column by Multiplying Two Columns
+### Generating an optional column by multiplying two columns
 - [static func * (Self, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/star%28_,_%29-5f5kx.md)
   Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
 - [func * <L, R>(L, R) -> Column<R.Element>](./star%28_,_%29-2toor.md)
   Generates a column by multiplying each element in an optional column type by the corresponding elements of a column type.
 - [func * <L, R>(L, R) -> Column<L.Element>](./star%28_,_%29-l9r3.md)
   Generates a column by multiplying each element in a column type by the corresponding elements of an optional column type.
-### Generating an Optional Column by Dividing Two Columns
+### Generating an optional column by dividing two columns
 - [static func / (Self, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/op%28_,_%29-4nmnl.md)
   Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
 - [func / <L, R>(L, R) -> Column<L.Element>](./op%28_,_%29-9v3nw.md)
@@ -64,7 +64,7 @@ protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
   Generates a floating-point column by dividing each element in a column type by the corresponding elements of an optional column type.
 - [func / <L, R>(L, R) -> Column<R.Element>](./op%28_,_%29-58kg6.md)
   Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of a column type.
-### Generating an Optional Column by Combining a Value
+### Generating an optional column by combining a value
 - [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/plus%28_,_%29-501gg.md)
   Generates a column by adding a value to each element in an optional column.
 - [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/plus%28_,_%29-6ko8x.md)
@@ -85,10 +85,10 @@ protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
   Generates a floating-point column by dividing each element in an optional column by a value.
 - [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./optionalcolumnprotocol/op%28_,_%29-2xfqa.md)
   Generates a floating-point column by dividing a value by each element in an optional column type.
-### Describing an Optional Column
+### Describing an optional column
 - [func description(options: FormattingOptions) -> String](./optionalcolumnprotocol/description%28options%29.md)
   Generates a string description of the optional column type.
-### Supporting Types
+### Supporting types
 - [associatedtype WrappedElement](./optionalcolumnprotocol/wrappedelement.md)
   The type of the optional column type’s elements.
 
@@ -106,7 +106,7 @@ protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
 
 ## See Also
 
-### Typed Columns
+### Typed columns
 - [struct Column](./column.md)
   A column in a data frame.
 - [struct ColumnSlice](./columnslice.md)

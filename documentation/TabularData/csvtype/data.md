@@ -21,6 +21,16 @@ A binary data type.
 case data
 ```
 
+## See Also
+
+### Other value types
+- [CSVType.boolean](./boolean.md)
+  A Boolean type.
+- [CSVType.date](./date.md)
+  A date type.
+- [CSVType.string](./string.md)
+  A string type.
+
 
 ---
 

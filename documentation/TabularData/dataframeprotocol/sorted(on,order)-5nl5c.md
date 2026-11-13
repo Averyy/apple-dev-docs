@@ -31,7 +31,7 @@ func sorted<T>(on columnID: ColumnID<T>, order: Order = .ascending) -> DataFrame
 
 ## See Also
 
-### Creating a Data Frame by Sorting a Column
+### Creating a data frame by sorting a column
 - [func sorted(on: String, order: Order) -> DataFrame](./sorted%28on,order%29-818u5.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name.
 - [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](./sorted%28on,_,order%29-8d7rr.md)

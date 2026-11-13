@@ -32,7 +32,7 @@ A new column with the same type as the left column.
 
 ## See Also
 
-### Generating a Column by Adding Two Columns
+### Generating a column by adding two columns
 - [static func + (Self, Self) -> Column<Self.Element>](./columnprotocol/plus%28_,_%29-yc11.md)
   Generates a column by adding each element in a column type to the corresponding elements of another.
 - [func + <L, R>(L, R) -> Column<R.Element>](./plus%28_,_%29-3exmp.md)

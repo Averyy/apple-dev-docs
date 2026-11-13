@@ -22,6 +22,12 @@ A text representation of the group summaries.
 override var description: String { get }
 ```
 
+## See Also
+
+### Describing group summaries
+- [func description(options: FormattingOptions) -> String](./description%28options%29.md)
+  Generates a text representation of the group summaries.
+
 
 ---
 

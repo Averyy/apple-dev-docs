@@ -27,7 +27,7 @@ init<S>(columns: S) where S : Sequence, S.Element == AnyColumn
 
 ## See Also
 
-### Creating a Data Frame
+### Creating a data frame
 - [init()](./init%28%29.md)
   Creates an empty data frame with no rows or columns.
 - [init(dictionaryLiteral: (String, [Any?])...)](./init%28dictionaryliteral%29.md)

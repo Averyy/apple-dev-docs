@@ -23,7 +23,7 @@ var debugDescription: String { get }
 
 ## See Also
 
-### Inspecting a Summary
+### Inspecting a summary
 - [var someCount: Int](./somecount.md)
   The number of non-missing elements in the column.
 - [var noneCount: Int](./nonecount.md)

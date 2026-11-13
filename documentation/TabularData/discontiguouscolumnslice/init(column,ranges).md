@@ -28,7 +28,7 @@ init(column: Column<WrappedElement>, ranges: [Range<Int>])
 
 ## See Also
 
-### Creating a Column Slice
+### Creating a column slice
 - [init(Column<WrappedElement>)](./init%28_%29.md)
   Creates a slice with the contents of a column.
 

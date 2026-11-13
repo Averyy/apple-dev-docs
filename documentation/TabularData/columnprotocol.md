@@ -27,31 +27,31 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
 
 ## Topics
 
-### Inspecting a Column Type
+### Inspecting a column type
 - [var name: String](./columnprotocol/name.md)
   The name of the column.
-### Generating a Column by Adding Two Columns
+### Generating a column by adding two columns
 - [static func + (Self, Self) -> Column<Self.Element>](./columnprotocol/plus%28_,_%29-yc11.md)
   Generates a column by adding each element in a column type to the corresponding elements of another.
 - [func + <L, R>(L, R) -> Column<L.Element>](./plus%28_,_%29-1i7oh.md)
   Generates a column by adding each element in a column type to the corresponding elements of an optional column type.
 - [func + <L, R>(L, R) -> Column<R.Element>](./plus%28_,_%29-3exmp.md)
   Generates a column by adding each element in an optional column type to the corresponding elements of a column type.
-### Generating a Column by Subtracting Two Columns
+### Generating a column by subtracting two columns
 - [static func - (Self, Self) -> Column<Self.Element>](./columnprotocol/minus%28_,_%29-36zol.md)
   Generates a column by subtracting each element in a column type from the corresponding elements of another.
 - [func - <L, R>(L, R) -> Column<L.Element>](./minus%28_,_%29-25cs6.md)
   Generates a column by subtracting each element in an optional column type from the corresponding elements of a column type.
 - [func - <L, R>(L, R) -> Column<R.Element>](./minus%28_,_%29-95yoe.md)
   Generates a column by subtracting each element in a column type from the corresponding elements of an optional column.
-### Generating a Column by Multiplying Two Columns
+### Generating a column by multiplying two columns
 - [static func * (Self, Self) -> Column<Self.Element>](./columnprotocol/star%28_,_%29-9db1q.md)
   Generates a column by multiplying each element in a column type by the corresponding elements of another.
 - [func * <L, R>(L, R) -> Column<L.Element>](./star%28_,_%29-l9r3.md)
   Generates a column by multiplying each element in a column type by the corresponding elements of an optional column type.
 - [func * <L, R>(L, R) -> Column<R.Element>](./star%28_,_%29-2toor.md)
   Generates a column by multiplying each element in an optional column type by the corresponding elements of a column type.
-### Generating a Column by Dividing Two Columns
+### Generating a column by dividing two columns
 - [static func / (Self, Self) -> Column<Self.Element>](./columnprotocol/op%28_,_%29-922ku.md)
   Generates an integer column by dividing each element in a column type by the corresponding elements of another.
 - [func / <L, R>(L, R) -> Column<L.Element>](./op%28_,_%29-9v3nw.md)
@@ -64,7 +64,7 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
   Generates a floating-point column by dividing each element in a column type by the corresponding elements of an optional column type.
 - [func / <L, R>(L, R) -> Column<R.Element>](./op%28_,_%29-58kg6.md)
   Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of a column type.
-### Generating a Column by Combining a Value
+### Generating a column by combining a value
 - [static func + (Self, Self.Element) -> Column<Self.Element>](./columnprotocol/plus%28_,_%29-39k8v.md)
   Generates a column by adding a value to each element in a column.
 - [static func + (Self.Element, Self) -> Column<Self.Element>](./columnprotocol/plus%28_,_%29-94kiv.md)
@@ -85,7 +85,7 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
   Generates a floating-point column by dividing each element in a column by a value.
 - [static func / (Self.Element, Self) -> Column<Self.Element>](./columnprotocol/op%28_,_%29-4iv15.md)
   Generates a floating-point column by dividing a value by each element in a column.
-### Comparing a Column with a Value
+### Comparing a column with a value
 - [static func == (Self, Self.Element) -> [Bool]](./columnprotocol/eqeq%28_,_%29-5jc0x.md)
   Returns a Boolean array that indicates whether the corresponding element of a column type is equal to a value.
 - [static func == (Self.Element, Self) -> [Bool]](./columnprotocol/eqeq%28_,_%29-4hx04.md)
@@ -94,23 +94,22 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
   Returns a Boolean array that indicates whether the corresponding element of a column type isn’t equal to a value.
 - [static func != (Self.Element, Self) -> [Bool]](./columnprotocol/noteq%28_,_%29-72ddh.md)
   Returns a Boolean array that indicates whether the value isn’t equal to the corresponding element of a column type.
-### Operators
-- [static func > (Self.Element, Self) -> [Bool]](./columnprotocol/op%28_,_%29-68any.md)
-  Returns a Boolean array that indicates whether the value is greater than the corresponding element of a column type.
-- [static func < (Self.Element, Self) -> [Bool]](./columnprotocol/op%28_,_%29-70vl1.md)
-  Returns a Boolean array that indicates whether the value is less than the corresponding element of a column type.
 - [static func < (Self, Self.Element) -> [Bool]](./columnprotocol/op%28_,_%29-7gy2j.md)
   Returns a Boolean array that indicates whether the corresponding element of a column type is less than a value.
-- [static func > (Self, Self.Element) -> [Bool]](./columnprotocol/op%28_,_%29-9rct2.md)
-  Returns a Boolean array that indicates whether the corresponding element of a column type is greater than a value.
+- [static func < (Self.Element, Self) -> [Bool]](./columnprotocol/op%28_,_%29-70vl1.md)
+  Returns a Boolean array that indicates whether the value is less than the corresponding element of a column type.
+- [static func <= (Self, Self.Element) -> [Bool]](./columnprotocol/opeq%28_,_%29-9wr8s.md)
+  Returns a Boolean array that indicates whether the corresponding element of a column type is less than or equal to a value.
 - [static func <= (Self.Element, Self) -> [Bool]](./columnprotocol/opeq%28_,_%29-17m6l.md)
   Returns a Boolean array that indicates whether the value is less than or equal to the corresponding element of a column type.
+- [static func > (Self, Self.Element) -> [Bool]](./columnprotocol/op%28_,_%29-9rct2.md)
+  Returns a Boolean array that indicates whether the corresponding element of a column type is greater than a value.
+- [static func > (Self.Element, Self) -> [Bool]](./columnprotocol/op%28_,_%29-68any.md)
+  Returns a Boolean array that indicates whether the value is greater than the corresponding element of a column type.
 - [static func >= (Self, Self.Element) -> [Bool]](./columnprotocol/opeq%28_,_%29-2w8gt.md)
   Returns a Boolean array that indicates whether the corresponding element of a column type is greater than or equal to a value.
 - [static func >= (Self.Element, Self) -> [Bool]](./columnprotocol/opeq%28_,_%29-8jak4.md)
   Returns a Boolean array that indicates whether the value is greater than or equal to the corresponding element of a column type.
-- [static func <= (Self, Self.Element) -> [Bool]](./columnprotocol/opeq%28_,_%29-9wr8s.md)
-  Returns a Boolean array that indicates whether the corresponding element of a column type is less than or equal to a value.
 
 ## Relationships
 
@@ -128,7 +127,7 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
 
 ## See Also
 
-### Typed Columns
+### Typed columns
 - [struct Column](./column.md)
   A column in a data frame.
 - [struct ColumnSlice](./columnslice.md)

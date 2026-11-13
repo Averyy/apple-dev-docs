@@ -4662,7 +4662,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell/action": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -12086,7 +12086,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
+      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
     },
     "https://developer.apple.com/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",
@@ -29682,7 +29682,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nspangesturerecognizer": {
       "file_path": "documentation/AppKit/nspangesturerecognizer.md",
-      "hash": "5f70cfd54094af8a127e2d4171011f8b995fbfe9d17bf0bd7e45958f7e14cd93"
+      "hash": "a59e3371f8deb0453a558be8cbc72e0287a2360678b500e0c891fcb66f781bdc"
     },
     "https://developer.apple.com/documentation/appkit/nspangesturerecognizer/buttonmask": {
       "file_path": "documentation/AppKit/nspangesturerecognizer/buttonmask.md",
@@ -49266,7 +49266,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsview": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/documentation/appkit/nsview-appearance": {
       "file_path": "documentation/AppKit/nsview-appearance.md",
@@ -60494,7 +60494,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell.json": {
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell/action.json": {
       "file_path": "documentation/AppKit/nsactioncell/action.md",
@@ -67918,7 +67918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext.md",
-      "hash": "c73af749747ed9c9f78782323971d97130672f76365d36c6d9ac008b54c2a8df"
+      "hash": "db6adfc70f32196ab09a2059c1d8178dba163fc3d22cbdcace7e4181d7792390"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.json": {
       "file_path": "documentation/AppKit/nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md",
@@ -85514,7 +85514,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspangesturerecognizer.json": {
       "file_path": "documentation/AppKit/nspangesturerecognizer.md",
-      "hash": "5f70cfd54094af8a127e2d4171011f8b995fbfe9d17bf0bd7e45958f7e14cd93"
+      "hash": "a59e3371f8deb0453a558be8cbc72e0287a2360678b500e0c891fcb66f781bdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspangesturerecognizer/buttonmask.json": {
       "file_path": "documentation/AppKit/nspangesturerecognizer/buttonmask.md",
@@ -105114,7 +105114,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview.json": {
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview/acceptsfirstmouse(for:).json": {
       "file_path": "documentation/AppKit/nsview/acceptsfirstmouse(for).md",

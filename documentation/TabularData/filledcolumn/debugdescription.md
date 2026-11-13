@@ -25,7 +25,7 @@ Available when `Base` conforms to `OptionalColumnProtocol`.
 
 ## See Also
 
-### Describing a Column
+### Describing a column
 - [var description: String](./description.md)
   A mirror that reflects the filled column.
 - [func description(options: FormattingOptions) -> String](./description%28options%29.md)

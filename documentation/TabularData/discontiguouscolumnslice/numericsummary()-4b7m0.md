@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `BinaryFloatingPoint`.
 
 ## See Also
 
-### Summarizing a Column Slice
+### Summarizing a column slice
 - [func summary() -> CategoricalSummary<WrappedElement>](./summary%28%29.md)
   Generates a categorical summary of the column slice’s elements.
 - [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-3r7pn.md)

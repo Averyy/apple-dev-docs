@@ -27,7 +27,9 @@ func csvRepresentation(options: CSVWritingOptions = .init()) throws -> Data
 
 ## See Also
 
-### Saving a Data Frame Type to a CSV Format
+### Saving a data frame to a CSV format
+- [struct CSVWritingOptions](../csvwritingoptions.md)
+  A set of CSV file-writing options.
 - [func writeCSV(to: URL, options: CSVWritingOptions) throws](./writecsv%28to,options%29.md)
   Creates a CSV file with the contents of the data frame type.
 

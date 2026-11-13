@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `Comparable`.
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [func sum() -> WrappedElement](./sum%28%29.md)
   Returns the sum of the column slice’s elements, ignoring missing elements.
 - [func max() -> ColumnSlice<WrappedElement>.Element](./max%28%29.md)

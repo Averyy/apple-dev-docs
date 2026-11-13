@@ -25,6 +25,12 @@ mutating func addDateParseStrategy<T>(_ strategy: T) where T : ParseStrategy, T.
 
 - `strategy`: A parsing strategy that has a string input and a date output.
 
+## See Also
+
+### Parsing dates
+- [var dateParsers: [(String) -> Date?]](./dateparsers.md)
+  An array of closures that parse a date from a string.
+
 
 ---
 

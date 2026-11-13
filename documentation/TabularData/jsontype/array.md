@@ -21,6 +21,12 @@ An array type.
 case array
 ```
 
+## See Also
+
+### Container types
+- [JSONType.object](./object.md)
+  An object type.
+
 
 ---
 

@@ -23,7 +23,7 @@ var max: Element
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [var mean: Element](./mean.md)
   The arithmetic mean of a column’s values that excludes missing elements.
 - [var median: Element](./median.md)

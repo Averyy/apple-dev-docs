@@ -138,9 +138,6 @@
     }
   },
   "metadata": {
-    "gone_links": [
-      "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/streaming-chatgpt-proxy"
-    ],
     "render": {
       "excluded_pages": [
         "swift-openapi-generator/soar-0001",
@@ -160,6 +157,11 @@
         "swift-openapi-generator/soar-nnnn"
       ],
       "version": 4
+    },
+    "text_links": {
+      "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift-openapi-generator/checking-out-an-example-project.json": [
+        "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/streaming-chatgpt-proxy"
+      ]
     },
     "total_pages": 34
   }

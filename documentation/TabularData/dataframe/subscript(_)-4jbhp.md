@@ -19,6 +19,12 @@ Accesses a result column by its typed descriptor.
 subscript<T>(column: ResultColumn<T>) -> Column<T> { get }
 ```
 
+## See Also
+
+### Accessing evaluation results
+- [subscript(metric _: Metric) -> Column<Metric>](./subscript%28metric%29.md)
+  Accesses a metric column using the metric’s name
+
 
 ---
 

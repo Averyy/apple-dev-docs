@@ -40,7 +40,7 @@ This is a convenience method that only works for columns of the following types:
 
 ## See Also
 
-### Sorting a Data Frame
+### Sorting a data frame
 - [func sort<T>(on: String, T.Type, order: Order)](./sort%28on,_,order%29-78avw.md)
   Arranges the rows of a data frame according to a column that you select by its name and type.
 - [func sort<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows](./sort%28on,_,by%29.md)

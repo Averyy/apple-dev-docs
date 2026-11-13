@@ -23,7 +23,7 @@ typealias Index = Int
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [ColumnSlice.Element](./element.md)
   The type of the column slice’s elements, which is an optional type of the parent column’s type.
 

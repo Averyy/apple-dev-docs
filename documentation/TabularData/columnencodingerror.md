@@ -27,10 +27,10 @@ An error bundles an [`EncodingError`](../Swift/encodingerror.md) with the row an
 
 ## Topics
 
-### Creating an Encoding Error
+### Creating an encoding error
 - [init(columnName: String, rowIndex: Int, encodingError: EncodingError)](./columnencodingerror/init%28columnname,rowindex,encodingerror%29.md)
   Creates a column encoding error.
-### Getting Error Information
+### Getting error information
 - [var columnName: String](./columnencodingerror/columnname.md)
   The name of the column with the error.
 - [var debugDescription: String](./columnencodingerror/debugdescription.md)

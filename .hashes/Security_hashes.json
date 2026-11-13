@@ -22518,7 +22518,7 @@
     },
     "https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution": {
       "file_path": "documentation/Security/notarizing-macos-software-before-distribution.md",
-      "hash": "7b5788f8d25fb24b017e3df81b819a3aaca8d36d02a120acb8901d44a469b14e"
+      "hash": "847bb6cc0b96136b12584ecf93ae834a543184154bde5ebdfd4d9417c7868b15"
     },
     "https://developer.apple.com/documentation/security/null-guest-handle": {
       "file_path": "documentation/Security/null-guest-handle.md",
@@ -51830,7 +51830,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/security/notarizing-macos-software-before-distribution.json": {
       "file_path": "documentation/Security/notarizing-macos-software-before-distribution.md",
-      "hash": "7b5788f8d25fb24b017e3df81b819a3aaca8d36d02a120acb8901d44a469b14e"
+      "hash": "847bb6cc0b96136b12584ecf93ae834a543184154bde5ebdfd4d9417c7868b15"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/null-guest-handle.json": {
       "file_path": "documentation/Security/null-guest-handle.md",

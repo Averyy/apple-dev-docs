@@ -23,7 +23,7 @@ typealias Element = WrappedElement?
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [ColumnSlice.Index](./index.md)
   The type that represents a position in the column slice.
 

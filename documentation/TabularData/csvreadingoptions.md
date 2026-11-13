@@ -23,42 +23,48 @@ struct CSVReadingOptions
 
 ## Topics
 
-### Initializers
+### Creating the options object
 - [init(hasHeaderRow: Bool, nilEncodings: Set<String>, trueEncodings: Set<String>, falseEncodings: Set<String>, floatingPointType: CSVType, ignoresEmptyLines: Bool, usesQuoting: Bool, usesEscaping: Bool, delimiter: Character, escapeCharacter: Character)](./csvreadingoptions/init%28hasheaderrow,nilencodings,trueencodings,falseencodings,floatingpointtype,ignoresemptylines,usesquoting,usesescaping,delimiter,escapecharacter%29.md)
   Creates a set of options for reading a CSV file.
-### Instance Properties
-- [var dateParsers: [(String) -> Date?]](./csvreadingoptions/dateparsers.md)
-  An array of closures that parse a date from a string.
-- [var delimiter: Character](./csvreadingoptions/delimiter.md)
-  The character that separates data fields in a CSV file, typically a comma.
-- [var escapeCharacter: Character](./csvreadingoptions/escapecharacter.md)
-  The character that precedes other characters, such as quotation marks, so that the parser interprets them as literal characters instead of special ones.
-- [var falseEncodings: Set<String>](./csvreadingoptions/falseencodings.md)
-  The set of strings that stores acceptable spellings for false Boolean values.
-- [var floatingPointType: CSVType](./csvreadingoptions/floatingpointtype.md)
-  The type to use for floating-point numeric values.
+### Describing the file structure
 - [var hasHeaderRow: Bool](./csvreadingoptions/hasheaderrow.md)
   A Boolean value that indicates whether the CSV file has a header row.
 - [var ignoresEmptyLines: Bool](./csvreadingoptions/ignoresemptylines.md)
   A Boolean value that indicates whether to ignore empty lines.
+- [var delimiter: Character](./csvreadingoptions/delimiter.md)
+  The character that separates data fields in a CSV file, typically a comma.
+### Handling quotes and escapes
+- [var usesQuoting: Bool](./csvreadingoptions/usesquoting.md)
+  A Boolean value that indicates whether to enable quoting.
+- [var usesEscaping: Bool](./csvreadingoptions/usesescaping.md)
+  A Boolean value that indicates whether to enable escaping.
+- [var escapeCharacter: Character](./csvreadingoptions/escapecharacter.md)
+  The character that precedes other characters, such as quotation marks, so that the parser interprets them as literal characters instead of special ones.
+### Interpreting values
 - [var nilEncodings: Set<String>](./csvreadingoptions/nilencodings.md)
   The set of strings that stores acceptable spellings for empty values.
 - [var trueEncodings: Set<String>](./csvreadingoptions/trueencodings.md)
   The set of strings that stores acceptable spellings for true Boolean values.
-- [var usesEscaping: Bool](./csvreadingoptions/usesescaping.md)
-  A Boolean value that indicates whether to enable escaping.
-- [var usesQuoting: Bool](./csvreadingoptions/usesquoting.md)
-  A Boolean value that indicates whether to enable quoting.
-### Instance Methods
+- [var falseEncodings: Set<String>](./csvreadingoptions/falseencodings.md)
+  The set of strings that stores acceptable spellings for false Boolean values.
+- [var floatingPointType: CSVType](./csvreadingoptions/floatingpointtype.md)
+  The type to use for floating-point numeric values.
+### Parsing dates
+- [var dateParsers: [(String) -> Date?]](./csvreadingoptions/dateparsers.md)
+  An array of closures that parse a date from a string.
 - [func addDateParseStrategy<T>(T)](./csvreadingoptions/adddateparsestrategy%28_%29.md)
   Adds a date parsing strategy.
 
 ## See Also
 
-### Creating a Data Frame from a CSV
+### Creating a data frame from a CSV
 - [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,types,options%29.md)
   Creates a data frame from a CSV file.
 - [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,types,options%29.md)
+  Creates a data frame from CSV data.
+- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,options%29.md)
+  Creates a data frame from a CSV file.
+- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,options%29.md)
   Creates a data frame from CSV data.
 - [enum CSVType](./csvtype.md)
   Represents the value types in a CSV file.

@@ -27,7 +27,7 @@ func grouped<T>(by columnIDs: ColumnID<T>...) -> some RowGroupingProtocol where 
 
 ## See Also
 
-### Creating a Row Grouping by Multiple Columns
+### Creating a row grouping by multiple columns
 - [func grouped(by: String...) -> some RowGroupingProtocol](./grouped%28by%29-4wcw6.md)
   Creates a grouping from multiple columns you select by name.
 - [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](./grouped%28by,_%29.md)

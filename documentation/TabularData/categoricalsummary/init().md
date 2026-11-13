@@ -23,7 +23,7 @@ init()
 
 ## See Also
 
-### Creating a Summary
+### Creating a summary
 - [init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])](./init%28somecount,nonecount,uniquecount,mode%29.md)
   Creates a categorical summary.
 

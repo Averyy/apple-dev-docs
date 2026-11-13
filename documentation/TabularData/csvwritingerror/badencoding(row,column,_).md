@@ -29,7 +29,7 @@ case badEncoding(row: Int, column: String, Data)
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var column: String?](./column.md)
   The index of the column that contains the error.
 - [var row: Int](./row.md)

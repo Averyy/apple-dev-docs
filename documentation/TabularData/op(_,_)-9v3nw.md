@@ -32,7 +32,7 @@ A new column with the same type as the left column.
 
 ## See Also
 
-### Generating a Column by Dividing Two Columns
+### Generating a column by dividing two columns
 - [static func / (Self, Self) -> Column<Self.Element>](./columnprotocol/op%28_,_%29-922ku.md)
   Generates an integer column by dividing each element in a column type by the corresponding elements of another.
 - [func / <L, R>(L, R) -> Column<R.Element>](./op%28_,_%29-4igyw.md)

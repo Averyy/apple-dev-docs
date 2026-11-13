@@ -31,7 +31,7 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Creating a Row Grouping
+### Creating a row grouping
 - [init<D>(groups: [(GroupingKey?, D)], groupKeysColumnName: String)](./init%28groups,groupkeyscolumnname%29.md)
   Creates a row grouping from a list of groups.
 

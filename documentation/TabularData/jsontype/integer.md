@@ -21,6 +21,12 @@ An integer type.
 case integer
 ```
 
+## See Also
+
+### Numeric types
+- [JSONType.double](./double.md)
+  A double-precision floating-point type.
+
 
 ---
 

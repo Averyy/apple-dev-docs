@@ -33,7 +33,7 @@ Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElem
 
 ## See Also
 
-### Finding an Element Index
+### Finding an element index
 - [func argmax() -> FilledColumn<Base>.Index?](./argmax%28%29.md)
   Returns the index of the element with the highest value.
 

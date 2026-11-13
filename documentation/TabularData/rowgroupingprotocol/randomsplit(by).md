@@ -27,7 +27,7 @@ A tuple of two row groupings.
 
 ## See Also
 
-### Splitting a Row Grouping
+### Splitting a row grouping
 - [func randomSplit(by: Double, seed: Int?) -> (Self, Self)](./randomsplit%28by,seed%29.md)
   Generates two row groupings by randomly splitting the original by a proportion.
 

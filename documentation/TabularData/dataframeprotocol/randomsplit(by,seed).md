@@ -32,7 +32,7 @@ A tuple of two data frame slices.
 
 ## See Also
 
-### Creating Two Slices by Splitting Rows
+### Creating two slices by splitting rows
 - [func randomSplit<G>(by: Double, using: inout G) -> (DataFrame.Slice, DataFrame.Slice)](./randomsplit%28by,using%29.md)
   Generates two data frame slices by randomly splitting the rows of the data table type with a random-number generator.
 

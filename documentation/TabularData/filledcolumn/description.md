@@ -25,7 +25,7 @@ Available when `Base` conforms to `OptionalColumnProtocol`.
 
 ## See Also
 
-### Describing a Column
+### Describing a column
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the filled column suitable for debugging.
 - [func description(options: FormattingOptions) -> String](./description%28options%29.md)

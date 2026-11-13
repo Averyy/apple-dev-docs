@@ -27,7 +27,7 @@ mutating func append(_ element: Column<WrappedElement>.Element)
 
 ## See Also
 
-### Adding Elements
+### Adding elements
 - [func append(WrappedElement)](./append%28_%29-qycj.md)
   Appends a nonoptional value to the column.
 - [func append<S>(contentsOf: S)](./append%28contentsof%29-qb4p.md)

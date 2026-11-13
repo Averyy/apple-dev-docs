@@ -25,6 +25,14 @@ var nilEncoding: String
 
 Defaults to an empty string.
 
+## See Also
+
+### Encoding values
+- [var trueEncoding: String](./trueencoding.md)
+  The string the CSV file generator uses to represent true Boolean values.
+- [var falseEncoding: String](./falseencoding.md)
+  The string the CSV file generator uses to represent false Boolean values.
+
 
 ---
 

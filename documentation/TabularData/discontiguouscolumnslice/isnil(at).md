@@ -27,11 +27,13 @@ func isNil(at index: Int) -> Bool
 
 ## See Also
 
-### Inspecting a Column Slice
+### Inspecting a column slice
 - [var name: String](./name.md)
   The name of the slice’s parent column.
 - [var count: Int](./count.md)
   The number of elements in the column slice.
+- [var missingCount: Int](./missingcount.md)
+  The number of missing elements in the column slice.
 - [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
 - [func argmin() -> Int?](./argmin%28%29.md)

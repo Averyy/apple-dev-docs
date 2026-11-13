@@ -23,17 +23,17 @@ struct ShapedData<Element>
 
 ## Topics
 
-### Initializers
+### Creating shaped data
 - [init(shape: [Int], strides: [Int], contents: [Element])](./shapeddata/init%28shape,strides,contents%29.md)
   Creates a multidimensional shaped array from a one-dimensional array.
-### Instance Properties
-- [let contents: [Element]](./shapeddata/contents.md)
-  A linear array that stores the elements of the multidimensional array.
+### Inspecting the layout
 - [let shape: [Int]](./shapeddata/shape.md)
   An integer array that stores the size of each dimension in the corresponding element.
 - [let strides: [Int]](./shapeddata/strides.md)
   An integer array that stores the number of memory locations that span the length of each dimension in the corresponding element.
-### Subscripts
+- [let contents: [Element]](./shapeddata/contents.md)
+  A linear array that stores the elements of the multidimensional array.
+### Accessing elements
 - [subscript(Int...) -> Element](./shapeddata/subscript%28_%29.md)
   Retrieves an element using an index for each dimension.
 
@@ -47,7 +47,7 @@ struct ShapedData<Element>
 
 ## See Also
 
-### Creating a Data Frame from Turi Create Types
+### Creating a data frame from Turi Create types
 - [init(contentsOfSFrameDirectory: URL, columns: [String]?, rows: Range<Int>?) throws](./dataframe/init%28contentsofsframedirectory,columns,rows%29.md)
   Creates a data frame from a Turi Create scalable data frame.
 

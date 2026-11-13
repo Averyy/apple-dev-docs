@@ -27,7 +27,7 @@ mutating func transform(_ transform: (Column<WrappedElement>.Element) throws -> 
 
 ## See Also
 
-### Transforming a Column
+### Transforming a column
 - [func transform((WrappedElement) throws -> WrappedElement) rethrows](./transform%28_%29-271dd.md)
   Applies a transformation to every element that isn’t missing.
 

@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `Hashable`.
 
 ## See Also
 
-### Summarizing a Column
+### Summarizing a column
 - [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-2m0sr.md)
   Generates a numeric summary of the integer column’s elements.
 - [func numericSummary() -> NumericSummary<WrappedElement>](./numericsummary%28%29-8laeo.md)

@@ -26,6 +26,14 @@ func writeJSON(to url: URL, options: JSONWritingOptions = .init()) throws
 - `url`: A location URL in the file system where the method saves the JSON file.
 - `options`: A [`JSONWritingOptions`](../jsonwritingoptions.md) instance.
 
+## See Also
+
+### Saving a data frame to a JSON format
+- [struct JSONWritingOptions](../jsonwritingoptions.md)
+  A set of JSON file-reading options.
+- [func jsonRepresentation(options: JSONWritingOptions) throws -> Data](./jsonrepresentation%28options%29.md)
+  Generates a JSON data instance of the data frame.
+
 
 ---
 

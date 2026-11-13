@@ -29,7 +29,7 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Retrieving an Index
+### Retrieving an index
 - [var startIndex: Int](./startindex.md)
   The index of the initial group in the row grouping.
 - [var endIndex: Int](./endindex.md)

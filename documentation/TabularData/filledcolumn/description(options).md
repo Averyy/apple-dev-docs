@@ -29,7 +29,7 @@ Available when `Base` conforms to `OptionalColumnProtocol`.
 
 ## See Also
 
-### Describing a Column
+### Describing a column
 - [var description: String](./description.md)
   A mirror that reflects the filled column.
 - [var debugDescription: String](./debugdescription.md)

@@ -32,7 +32,7 @@ mutating func decode<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws 
 
 ## See Also
 
-### Decoding a Column
+### Decoding a column
 - [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](./decoded%28_,using%29.md)
   Decodes data for each element of the column.
 

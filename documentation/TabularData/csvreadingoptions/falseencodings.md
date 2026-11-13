@@ -25,6 +25,16 @@ var falseEncodings: Set<String>
 
 Defaults to `["0", "False", "FALSE", "false"]`.
 
+## See Also
+
+### Interpreting values
+- [var nilEncodings: Set<String>](./nilencodings.md)
+  The set of strings that stores acceptable spellings for empty values.
+- [var trueEncodings: Set<String>](./trueencodings.md)
+  The set of strings that stores acceptable spellings for true Boolean values.
+- [var floatingPointType: CSVType](./floatingpointtype.md)
+  The type to use for floating-point numeric values.
+
 
 ---
 

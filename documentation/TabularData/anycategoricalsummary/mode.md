@@ -27,7 +27,7 @@ The summary orders the elements based on their original locations within the col
 
 ## See Also
 
-### Getting Mode Information
+### Getting mode information
 - [var modeType: any Any.Type](./modetype.md)
   The underlying type of [`mode`](./mode.md).
 

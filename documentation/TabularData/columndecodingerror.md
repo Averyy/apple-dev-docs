@@ -27,10 +27,10 @@ This error wraps a decoding error and includes the column name and row index whe
 
 ## Topics
 
-### Creating a Decoding Error
+### Creating a decoding error
 - [init(columnName: String, rowIndex: Int, decodingError: DecodingError)](./columndecodingerror/init%28columnname,rowindex,decodingerror%29.md)
   Creates a column decoding error.
-### Getting Error Information
+### Getting error information
 - [var columnName: String](./columndecodingerror/columnname.md)
   The name of the column with the error.
 - [var debugDescription: String](./columndecodingerror/debugdescription.md)

@@ -25,6 +25,12 @@ var dateFormatter: (Date) -> String { get set }
 
 Defaults to ISO 8601 encoding.
 
+## See Also
+
+### Formatting dates
+- [var dateFormat: String?](./dateformat.md)
+  The format the CSV file generator uses to create date strings.
+
 
 ---
 

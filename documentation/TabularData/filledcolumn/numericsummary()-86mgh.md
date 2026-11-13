@@ -25,7 +25,7 @@ Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElem
 
 ## See Also
 
-### Summarizing a Column
+### Summarizing a column
 - [func summary() -> CategoricalSummary<FilledColumn<Base>.WrappedElement>](./summary%28%29.md)
   Generates a categorical summary of the filled column’s elements, including default values.
 - [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-3ao8s.md)

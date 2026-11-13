@@ -21,6 +21,14 @@ A single-precision floating-point type.
 case float
 ```
 
+## See Also
+
+### Numeric types
+- [CSVType.integer](./integer.md)
+  An integer type.
+- [CSVType.double](./double.md)
+  A double-precision floating-point type.
+
 
 ---
 

@@ -51,6 +51,8 @@ To respond to the various outcome events from the picker, your app needs to impl
 - [NSCoding](../Foundation/nscoding.md)
 - [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
 - [UIContentContainer](../UIKit/uicontentcontainer.md)

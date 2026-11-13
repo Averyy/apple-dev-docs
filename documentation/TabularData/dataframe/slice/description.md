@@ -23,7 +23,7 @@ var description: String { get }
 
 ## See Also
 
-### Describing a Slice
+### Describing a slice
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the data frame slice suitable for debugging.
 - [var customMirror: Mirror](./custommirror.md)

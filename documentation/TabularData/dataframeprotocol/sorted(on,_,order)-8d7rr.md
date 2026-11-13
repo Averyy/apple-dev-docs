@@ -33,13 +33,13 @@ func sorted<T>(on columnName: String, _ type: T.Type, order: Order = .ascending)
 
 ## See Also
 
-### Creating a Data Frame by Sorting a Column
+### Creating a data frame by sorting a column
 - [func sorted(on: String, order: Order) -> DataFrame](./sorted%28on,order%29-818u5.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name.
-- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](./sorted%28on,_,by%29.md)
-  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type, with a predicate.
 - [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](./sorted%28on,order%29-5nl5c.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier.
+- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](./sorted%28on,_,by%29.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type, with a predicate.
 - [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](./sorted%28on,by%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier, with a predicate.
 

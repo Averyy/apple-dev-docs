@@ -23,7 +23,7 @@ var rowIndex: Int
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var columnName: String](./columnname.md)
   The name of the column with the error.
 - [var debugDescription: String](./debugdescription.md)

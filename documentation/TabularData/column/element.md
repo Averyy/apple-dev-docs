@@ -23,7 +23,7 @@ typealias Element = WrappedElement?
 
 ## See Also
 
-### Inspecting a Column
+### Inspecting a column
 - [var name: String](./name.md)
   The name of the column.
 - [var count: Int](./count.md)

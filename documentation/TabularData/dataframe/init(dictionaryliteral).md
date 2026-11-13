@@ -54,7 +54,7 @@ Otherwise, the data frame sets a column’s type to `Any`.
 
 ## See Also
 
-### Creating a Data Frame
+### Creating a data frame
 - [init()](./init%28%29.md)
   Creates an empty data frame with no rows or columns.
 - [init<S>(columns: S)](./init%28columns%29.md)

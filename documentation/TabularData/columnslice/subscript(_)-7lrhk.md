@@ -27,7 +27,7 @@ subscript(range: Range<Int>) -> ColumnSlice<WrappedElement> { get set }
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Int) -> ColumnSlice<WrappedElement>.Element](./subscript%28_%29-38hn8.md)
   Accesses an element at an index.
 

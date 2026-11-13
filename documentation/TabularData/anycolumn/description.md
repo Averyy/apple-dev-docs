@@ -23,7 +23,7 @@ var description: String { get }
 
 ## See Also
 
-### Describing a Column
+### Describing a column
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the column suitable for debugging.
 - [var customMirror: Mirror](./custommirror.md)

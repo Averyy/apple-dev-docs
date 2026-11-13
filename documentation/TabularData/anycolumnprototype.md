@@ -23,16 +23,16 @@ protocol AnyColumnPrototype
 
 ## Topics
 
-### Naming a Prototype Column
+### Naming a prototype column
 - [var name: String](./anycolumnprototype/name.md)
   The name of the column.
-### Creating Columns
+### Creating columns
 - [func makeColumn(capacity: Int) -> AnyColumn](./anycolumnprototype/makecolumn%28capacity%29.md)
   Creates a type-erased column.
 
 ## See Also
 
-### Type-Erased Columns
+### Type-erased columns
 - [struct AnyColumn](./anycolumn.md)
   A type-erased column.
 - [struct AnyColumnSlice](./anycolumnslice.md)

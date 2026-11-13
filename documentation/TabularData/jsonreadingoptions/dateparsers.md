@@ -21,6 +21,12 @@ An array of closures that parse a date from a string.
 var dateParsers: [(String) -> Date?]
 ```
 
+## See Also
+
+### Parsing dates
+- [func addDateParseStrategy<T>(T)](./adddateparsestrategy%28_%29.md)
+  Adds a date parsing strategy.
+
 
 ---
 

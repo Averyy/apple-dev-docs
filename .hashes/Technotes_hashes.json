@@ -82,15 +82,15 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3125-inside-code-signing-provisioning-profiles": {
       "file_path": "documentation/Technotes/tn3125-inside-code-signing-provisioning-profiles.md",
-      "hash": "237100a8c163a51b461128ceaa78bb34615a3a32ce1725e6402b04c393b8149b"
+      "hash": "5645f061e9e24ea8839c64d28c1e9ca431b79f6bc9279438235edf1f1d4c88ee"
     },
     "https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes": {
       "file_path": "documentation/Technotes/tn3126-inside-code-signing-hashes.md",
-      "hash": "e8fdf157e66c5fea51bed802d2171246ecb185e9b59e2c5369040206e6396c2f"
+      "hash": "d75e181b52f7375997c127f6590592443483c740598452b61b7cb2bc47bd39d2"
     },
     "https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements": {
       "file_path": "documentation/Technotes/tn3127-inside-code-signing-requirements.md",
-      "hash": "fd51788292dbbe125a0aef5a95a78ab34177a97c7b9dc84bc494db02674e6ecf"
+      "hash": "fd4aba37e58d5761483af4e16b8b0a383c2e0425d7702c52b0fa6414a7628b0f"
     },
     "https://developer.apple.com/documentation/technotes/tn3128-starting-shareplay-without-an-existing-facetime-call": {
       "file_path": "documentation/Technotes/tn3128-starting-shareplay-without-an-existing-facetime-call.md",
@@ -138,7 +138,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool": {
       "file_path": "documentation/Technotes/tn3147-migrating-to-the-latest-notarization-tool.md",
-      "hash": "dca344c5dfe1d33b2a14ef23660deeff150761a5a9434230f0e54d4ae2e1db82"
+      "hash": "dc805b077c93d66933e7686e0c43cc5258c0dc189353e0334b03fdaf607d24b4"
     },
     "https://developer.apple.com/documentation/technotes/tn3149-fetching-change-history-events": {
       "file_path": "documentation/Technotes/tn3149-fetching-change-history-events.md",
@@ -146,11 +146,11 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3150-getting-ready-for-data-less-files": {
       "file_path": "documentation/Technotes/tn3150-getting-ready-for-data-less-files.md",
-      "hash": "e9dd1e248351872418679d42de80845110e0f6426cb154e232ddf8cb62a11d40"
+      "hash": "53b3c57efb3fe63824ce62e5f608b1ade628b7b2b9c46d9b2ffb7d6c7caa4b44"
     },
     "https://developer.apple.com/documentation/technotes/tn3151-choosing-the-right-networking-api": {
       "file_path": "documentation/Technotes/tn3151-choosing-the-right-networking-api.md",
-      "hash": "a3b71830616f48f196a7eb20a9b98ded5becb595f9355f8c7f49323a4304ea89"
+      "hash": "fcf262572b788f4190408380b81031fbdbdb3a0d2298007e389029460d2ce9c8"
     },
     "https://developer.apple.com/documentation/technotes/tn3152-migrating-to-the-latest-calendar-access-levels": {
       "file_path": "documentation/Technotes/tn3152-migrating-to-the-latest-calendar-access-levels.md",
@@ -186,7 +186,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates": {
       "file_path": "documentation/Technotes/tn3161-inside-code-signing-certificates.md",
-      "hash": "6e5a6a1e753afda17856fd99dbd296fa67d4d25366e9c8e91c1ef12c23063dfa"
+      "hash": "976d0a182df027eb238230a476b5b3f4a8ffe3d56da96a8bfbf506c52eb37c93"
     },
     "https://developer.apple.com/documentation/technotes/tn3162-understanding-cloudkit-throttles": {
       "file_path": "documentation/Technotes/tn3162-understanding-cloudkit-throttles.md",
@@ -230,11 +230,11 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3178-checking-for-and-resolving-build-uuid-problems": {
       "file_path": "documentation/Technotes/tn3178-checking-for-and-resolving-build-uuid-problems.md",
-      "hash": "ae44768f4bc95ad16eca15cff1940509262d993aee23c4fc2bc7f7c36a462038"
+      "hash": "430b4a3caf5ecf0a158077c942818b6656562eee9f19d48dc33f93190a8a9c14"
     },
     "https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy": {
       "file_path": "documentation/Technotes/tn3179-understanding-local-network-privacy.md",
-      "hash": "caa4b68681901fc2d1af6f39375d4638d24a6818d63a4a684ee7d2dd93ea303d"
+      "hash": "027c60af7a1e553367185fe7ac59ceabb92ddc420bff7897fd8eab931ed24e3d"
     },
     "https://developer.apple.com/documentation/technotes/tn3180-reverting-app-store-server-notifications-v1": {
       "file_path": "documentation/Technotes/tn3180-reverting-app-store-server-notifications-v1.md",
@@ -418,15 +418,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3125-inside-code-signing-provisioning-profiles.json": {
       "file_path": "documentation/Technotes/tn3125-inside-code-signing-provisioning-profiles.md",
-      "hash": "237100a8c163a51b461128ceaa78bb34615a3a32ce1725e6402b04c393b8149b"
+      "hash": "5645f061e9e24ea8839c64d28c1e9ca431b79f6bc9279438235edf1f1d4c88ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3126-inside-code-signing-hashes.json": {
       "file_path": "documentation/Technotes/tn3126-inside-code-signing-hashes.md",
-      "hash": "e8fdf157e66c5fea51bed802d2171246ecb185e9b59e2c5369040206e6396c2f"
+      "hash": "d75e181b52f7375997c127f6590592443483c740598452b61b7cb2bc47bd39d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3127-inside-code-signing-requirements.json": {
       "file_path": "documentation/Technotes/tn3127-inside-code-signing-requirements.md",
-      "hash": "fd51788292dbbe125a0aef5a95a78ab34177a97c7b9dc84bc494db02674e6ecf"
+      "hash": "fd4aba37e58d5761483af4e16b8b0a383c2e0425d7702c52b0fa6414a7628b0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3128-starting-shareplay-without-an-existing-facetime-call.json": {
       "file_path": "documentation/Technotes/tn3128-starting-shareplay-without-an-existing-facetime-call.md",
@@ -474,7 +474,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool.json": {
       "file_path": "documentation/Technotes/tn3147-migrating-to-the-latest-notarization-tool.md",
-      "hash": "dca344c5dfe1d33b2a14ef23660deeff150761a5a9434230f0e54d4ae2e1db82"
+      "hash": "dc805b077c93d66933e7686e0c43cc5258c0dc189353e0334b03fdaf607d24b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3149-fetching-change-history-events.json": {
       "file_path": "documentation/Technotes/tn3149-fetching-change-history-events.md",
@@ -482,11 +482,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3150-getting-ready-for-data-less-files.json": {
       "file_path": "documentation/Technotes/tn3150-getting-ready-for-data-less-files.md",
-      "hash": "e9dd1e248351872418679d42de80845110e0f6426cb154e232ddf8cb62a11d40"
+      "hash": "53b3c57efb3fe63824ce62e5f608b1ade628b7b2b9c46d9b2ffb7d6c7caa4b44"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3151-choosing-the-right-networking-api.json": {
       "file_path": "documentation/Technotes/tn3151-choosing-the-right-networking-api.md",
-      "hash": "a3b71830616f48f196a7eb20a9b98ded5becb595f9355f8c7f49323a4304ea89"
+      "hash": "fcf262572b788f4190408380b81031fbdbdb3a0d2298007e389029460d2ce9c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3152-migrating-to-the-latest-calendar-access-levels.json": {
       "file_path": "documentation/Technotes/tn3152-migrating-to-the-latest-calendar-access-levels.md",
@@ -522,7 +522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3161-inside-code-signing-certificates.json": {
       "file_path": "documentation/Technotes/tn3161-inside-code-signing-certificates.md",
-      "hash": "6e5a6a1e753afda17856fd99dbd296fa67d4d25366e9c8e91c1ef12c23063dfa"
+      "hash": "976d0a182df027eb238230a476b5b3f4a8ffe3d56da96a8bfbf506c52eb37c93"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3162-understanding-cloudkit-throttles.json": {
       "file_path": "documentation/Technotes/tn3162-understanding-cloudkit-throttles.md",
@@ -566,11 +566,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3178-checking-for-and-resolving-build-uuid-problems.json": {
       "file_path": "documentation/Technotes/tn3178-checking-for-and-resolving-build-uuid-problems.md",
-      "hash": "ae44768f4bc95ad16eca15cff1940509262d993aee23c4fc2bc7f7c36a462038"
+      "hash": "430b4a3caf5ecf0a158077c942818b6656562eee9f19d48dc33f93190a8a9c14"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3179-understanding-local-network-privacy.json": {
       "file_path": "documentation/Technotes/tn3179-understanding-local-network-privacy.md",
-      "hash": "caa4b68681901fc2d1af6f39375d4638d24a6818d63a4a684ee7d2dd93ea303d"
+      "hash": "027c60af7a1e553367185fe7ac59ceabb92ddc420bff7897fd8eab931ed24e3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3180-reverting-app-store-server-notifications-v1.json": {
       "file_path": "documentation/Technotes/tn3180-reverting-app-store-server-notifications-v1.md",

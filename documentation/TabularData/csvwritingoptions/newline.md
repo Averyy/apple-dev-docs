@@ -25,6 +25,14 @@ var newline: String
 
 Defaults to a line feed.
 
+## See Also
+
+### Formatting the file structure
+- [var includesHeader: Bool](./includesheader.md)
+  A Boolean value that indicates whether to write a header with the column names.
+- [var delimiter: Character](./delimiter.md)
+  The character the CSV file generator uses to separate data fields in a CSV file.
+
 
 ---
 

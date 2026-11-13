@@ -25,6 +25,16 @@ func withContiguousStorageIfAvailable<R>(_ body: (UnsafeBufferPointer<WrappedEle
 
 Use the version of this method that uses a buffer of non-optional elements.
 
+## See Also
+
+### Allocating contiguous storage
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29-6nbz3.md)
+  Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29-9j9p8.md)
+  Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous mutable storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29-77itz.md)
+  This method always returns `nil` without calling `body`.
+
 
 ---
 

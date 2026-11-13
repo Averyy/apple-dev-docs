@@ -21,6 +21,12 @@ The name of the column the identifier represents.
 var name: String
 ```
 
+## See Also
+
+### Getting the properties
+- [var type: any Any.Type](./type.md)
+  The type of elements stored in the column the identifier represents.
+
 
 ---
 

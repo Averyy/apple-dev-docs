@@ -34,6 +34,34 @@ The data frame contains two columns that:
 - `naming`: A closure that converts a column name to another name.
 - `transform`: A closure that aggregates a group’s elements in a specific column.
 
+## See Also
+
+### Aggregating a row grouping
+- [func counts(order: Order?) -> DataFrame](../rowgrouping/counts%28order%29.md)
+  Generates a data frame with two columns, one that has a row for each group key and another for the number of rows in the group.
+- [func aggregated<Element, Result>(on: [String], naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame](../rowgrouping/aggregated%28on,naming,transform%29.md)
+  Generates a data frame by aggregating each group’s contents for each column you list by name.
+- [func sums<N>(String, N.Type, order: Order?) -> DataFrame](./sums%28_,_,order%29.md)
+  Generates a data frame that contains the sum of each group’s rows along a column you select by name.
+- [func sums<N>(ColumnID<N>, order: Order?) -> DataFrame](./sums%28_,order%29.md)
+  Generates a data frame that contains the sum of each group’s rows along a column you select by column identifier.
+- [func means<N>(String, N.Type, order: Order?) -> DataFrame](./means%28_,_,order%29.md)
+  Generates a data frame that contains the average mean of each group’s rows along a column you select by name.
+- [func means<N>(ColumnID<N>, order: Order?) -> DataFrame](./means%28_,order%29.md)
+  Generates a data frame that contains the average mean of each group’s rows along a column you select by column identifier.
+- [func minimums<N>(String, N.Type, order: Order?) -> DataFrame](./minimums%28_,_,order%29.md)
+  Generates a data frame that contains the minimums of each group’s rows along a column you select by name.
+- [func minimums<N>(ColumnID<N>, order: Order?) -> DataFrame](./minimums%28_,order%29.md)
+  Generates a data frame that contains the minimums of each group’s rows along a column you select by column identifier.
+- [func maximums<N>(String, N.Type, order: Order?) -> DataFrame](./maximums%28_,_,order%29.md)
+  Generates a data frame that contains the maximums of each group’s rows along a column you select by name.
+- [func maximums<N>(ColumnID<N>, order: Order?) -> DataFrame](./maximums%28_,order%29.md)
+  Generates a data frame that contains the maximums of each group’s rows along a column you select by column identifier.
+- [func quantiles<N>(String, N.Type, quantile: N, order: Order?) -> DataFrame](./quantiles%28_,_,quantile,order%29.md)
+  Generates a data frame that contains the quantile of each group’s rows along a column you select by name.
+- [func quantiles<N>(ColumnID<N>, quantile: N, order: Order?) -> DataFrame](./quantiles%28_,quantile,order%29.md)
+  Generates a data frame that contains the quantiles of each group’s rows along a column you select by column identifier.
+
 
 ---
 

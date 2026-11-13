@@ -31,7 +31,7 @@ A new data frame slice.
 
 ## See Also
 
-### Creating a Slice by Selecting Multiple Columns
+### Creating a slice by selecting multiple columns
 - [subscript<S>(S) -> DataFrame.Slice](./subscript%28_%29-5y42o.md)
   Generates a data frame slice that includes the columns in a sequence of column names.
 - [func selecting(columnNames: String...) -> DataFrame.Slice](./selecting%28columnnames%29-48kji.md)

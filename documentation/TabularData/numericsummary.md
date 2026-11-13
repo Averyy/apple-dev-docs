@@ -23,12 +23,12 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
 
 ## Topics
 
-### Creating a Summary
+### Creating a summary
 - [init()](./numericsummary/init%28%29.md)
   Creates an empty numeric summary with default values.
 - [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](./numericsummary/init%28somecount,nonecount,mean,standarddeviation,min,max,median,firstquartile,thirdquartile%29.md)
   Creates an empty numeric summary.
-### Inspecting a Summary
+### Inspecting a summary
 - [var debugDescription: String](./numericsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
 - [var someCount: Int](./numericsummary/somecount.md)
@@ -37,7 +37,7 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
   The number of missing elements in the column.
 - [var totalCount: Int](./numericsummary/totalcount.md)
   The total number of elements in the column.
-### Getting Statistical Values
+### Getting statistical values
 - [var max: Element](./numericsummary/max.md)
   The largest value, excluding missing elements.
 - [var mean: Element](./numericsummary/mean.md)
@@ -64,7 +64,7 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
 
 ## See Also
 
-### Statistical Summaries
+### Statistical summaries
 - [struct CategoricalSummary](./categoricalsummary.md)
   A categorical summary of a collection’s elements.
 - [struct AnyCategoricalSummary](./anycategoricalsummary.md)

@@ -36,7 +36,7 @@ A new column of encoded values.
 
 ## See Also
 
-### Encoding a Column
+### Encoding a column
 - [func encode<T, Encoder>(T.Type, using: Encoder) throws](./encode%28_,using%29.md)
   Encodes each element of the column.
 

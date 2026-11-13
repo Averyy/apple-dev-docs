@@ -24,7 +24,7 @@ var rows: DataFrame.Rows { get set }
 
 ## See Also
 
-### Inspecting a Data Frame Type
+### Inspecting a data frame type
 - [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether the data frame type is empty.
 - [var shape: (rows: Int, columns: Int)](./shape.md)

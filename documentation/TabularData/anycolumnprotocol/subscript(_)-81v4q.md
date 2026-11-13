@@ -28,7 +28,7 @@ subscript(range: Range<Int>) -> AnyColumnSlice { get }
 
 ## See Also
 
-### Retrieving Elements
+### Retrieving elements
 - [subscript(Int) -> Any?](./subscript%28_%29-1dl8y.md)
   Retrieves an element at a position in the column type.
 

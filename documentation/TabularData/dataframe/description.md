@@ -23,7 +23,7 @@ var description: String { get }
 
 ## See Also
 
-### Describing a Data Frame
+### Describing a data frame
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the data frame suitable for debugging.
 - [var customMirror: Mirror](./custommirror.md)

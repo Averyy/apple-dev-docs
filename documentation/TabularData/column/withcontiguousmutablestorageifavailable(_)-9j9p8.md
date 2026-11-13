@@ -35,6 +35,16 @@ The optimizer can often eliminate bounds- and uniqueness-checking within an algo
 
 - `body`: A closure to be executed using the elements of this collection.
 
+## See Also
+
+### Allocating contiguous storage
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29-6nbz3.md)
+  Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29-539v3.md)
+  This method always returns `nil` without calling `body`.
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29-77itz.md)
+  This method always returns `nil` without calling `body`.
+
 
 ---
 

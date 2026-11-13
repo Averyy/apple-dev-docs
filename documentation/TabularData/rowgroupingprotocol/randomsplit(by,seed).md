@@ -33,7 +33,7 @@ A tuple of two data row grouping types.
 
 ## See Also
 
-### Splitting a Row Grouping
+### Splitting a row grouping
 - [func randomSplit(by: Double) -> (Self, Self)](./randomsplit%28by%29.md)
   Generates two row groupings by randomly splitting the original with a proportion.
 

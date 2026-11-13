@@ -23,13 +23,15 @@ var rows: DataFrame.Rows { get set }
 
 ## See Also
 
-### Inspecting a Slice
+### Inspecting a slice
 - [var shape: (rows: Int, columns: Int)](./shape.md)
   The number of rows and columns in the slice.
 - [var columns: [AnyColumnSlice]](./columns.md)
   The entire slice as a collection of columns.
 - [var base: DataFrame](./base.md)
   The underlying data frame.
+- [var isEmpty: Bool](../../dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
 
 
 ---

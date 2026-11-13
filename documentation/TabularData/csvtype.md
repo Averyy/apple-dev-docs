@@ -23,21 +23,22 @@ enum CSVType
 
 ## Topics
 
-### Enumeration Cases
-- [CSVType.boolean](./csvtype/boolean.md)
-  A Boolean type.
-- [CSVType.data](./csvtype/data.md)
-  A binary data type.
-- [CSVType.date](./csvtype/date.md)
-  A date type.
-- [CSVType.double](./csvtype/double.md)
-  A double-precision floating-point type.
-- [CSVType.float](./csvtype/float.md)
-  A single-precision floating-point type.
+### Numeric types
 - [CSVType.integer](./csvtype/integer.md)
   An integer type.
+- [CSVType.float](./csvtype/float.md)
+  A single-precision floating-point type.
+- [CSVType.double](./csvtype/double.md)
+  A double-precision floating-point type.
+### Other value types
+- [CSVType.boolean](./csvtype/boolean.md)
+  A Boolean type.
+- [CSVType.date](./csvtype/date.md)
+  A date type.
 - [CSVType.string](./csvtype/string.md)
   A string type.
+- [CSVType.data](./csvtype/data.md)
+  A binary data type.
 
 ## Relationships
 
@@ -49,10 +50,14 @@ enum CSVType
 
 ## See Also
 
-### Creating a Data Frame from a CSV
+### Creating a data frame from a CSV
 - [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,types,options%29.md)
   Creates a data frame from a CSV file.
 - [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,types,options%29.md)
+  Creates a data frame from CSV data.
+- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,options%29.md)
+  Creates a data frame from a CSV file.
+- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,options%29.md)
   Creates a data frame from CSV data.
 - [struct CSVReadingOptions](./csvreadingoptions.md)
   A set of CSV file-reading options.

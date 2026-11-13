@@ -23,21 +23,23 @@ enum JSONType
 
 ## Topics
 
-### Enumeration Cases
-- [JSONType.array](./jsontype/array.md)
-  An array type.
+### Numeric types
+- [JSONType.integer](./jsontype/integer.md)
+  An integer type.
+- [JSONType.double](./jsontype/double.md)
+  A double-precision floating-point type.
+### Other value types
 - [JSONType.boolean](./jsontype/boolean.md)
   A Boolean type.
 - [JSONType.date](./jsontype/date.md)
   A date type.
-- [JSONType.double](./jsontype/double.md)
-  A double-precision floating-point type.
-- [JSONType.integer](./jsontype/integer.md)
-  An integer type.
-- [JSONType.object](./jsontype/object.md)
-  An object type.
 - [JSONType.string](./jsontype/string.md)
   A string type.
+### Container types
+- [JSONType.array](./jsontype/array.md)
+  An array type.
+- [JSONType.object](./jsontype/object.md)
+  An object type.
 
 ## Relationships
 
@@ -49,7 +51,7 @@ enum JSONType
 
 ## See Also
 
-### Creating a Data Frame from a JSON File
+### Creating a data frame from a JSON file
 - [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
 - [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)

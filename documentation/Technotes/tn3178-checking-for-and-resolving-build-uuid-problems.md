@@ -42,7 +42,7 @@ Load command 8
     uuid E3F22F87-0B68-3B06-A845-8402D70B8FE9
 ```
 
-> **Note**: To learn more about these tools, see the UNIX online manual, known as *man pages*.  For information on how to access that documentation, see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
+> **Note**: To learn more about these tools, see the UNIX online manual, known as *man pages*.  For information on how to access that documentation, see [TN3215: Reading man pages](./tn3215-reading-man-pages.md).
 
 By default the Apple linker sets the build UUID based on a hash of the built code.  This promotes reproducible builds.
 

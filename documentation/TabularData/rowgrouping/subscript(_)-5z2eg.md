@@ -29,9 +29,11 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Inspecting a Row Grouping
+### Inspecting a row grouping
 - [var count: Int](./count.md)
   The number of groups in the row grouping.
+- [subscript(Any?...) -> DataFrame.Slice?](./subscript%28_%29-2xxs8.md)
+  Retrieves a group slice by key.
 
 
 ---

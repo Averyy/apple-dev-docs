@@ -23,7 +23,7 @@ var debugDescription: String { get }
 
 ## See Also
 
-### Inspecting a Summary
+### Inspecting a summary
 - [var mode: [Element]](./mode.md)
   The most common values in a column, ignoring missing elements.
 - [var uniqueCount: Int](./uniquecount.md)

@@ -22306,7 +22306,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/observing-playback-state-in-swiftui": {
       "file_path": "documentation/AVFoundation/observing-playback-state-in-swiftui.md",
-      "hash": "f5242af68eaab43bd44b255cff41ba3f587e7cf0dd4488c88746f1643d6099e9"
+      "hash": "2b78b71fa63bfc39628eab97d95ca1c4fa886285aa005838e289309284b7e939"
     },
     "https://developer.apple.com/documentation/avfoundation/offline-playback-and-storage": {
       "file_path": "documentation/AVFoundation/offline-playback-and-storage.md",
@@ -22342,7 +22342,7 @@
     },
     "https://developer.apple.com/documentation/avfoundation/registering-a-camera-capture-accessory-on-iphone-duo": {
       "file_path": "documentation/AVFoundation/registering-a-camera-capture-accessory-on-iphone-duo.md",
-      "hash": "93f8850dc10377bdd2ec63be35ddf528582ea22c75373ee5e3fc4ec5a9a29dab"
+      "hash": "bd256eaacda299f678279f8c0487660ac13a6cf8d6ba381b7cb300df8c722218"
     },
     "https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media": {
       "file_path": "documentation/AVFoundation/requesting-authorization-to-capture-and-save-media.md",
@@ -44754,7 +44754,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/observing-playback-state-in-swiftui.json": {
       "file_path": "documentation/AVFoundation/observing-playback-state-in-swiftui.md",
-      "hash": "f5242af68eaab43bd44b255cff41ba3f587e7cf0dd4488c88746f1643d6099e9"
+      "hash": "2b78b71fa63bfc39628eab97d95ca1c4fa886285aa005838e289309284b7e939"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/offline-playback-and-storage.json": {
       "file_path": "documentation/AVFoundation/offline-playback-and-storage.md",
@@ -44790,7 +44790,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/registering-a-camera-capture-accessory-on-iphone-duo.json": {
       "file_path": "documentation/AVFoundation/registering-a-camera-capture-accessory-on-iphone-duo.md",
-      "hash": "93f8850dc10377bdd2ec63be35ddf528582ea22c75373ee5e3fc4ec5a9a29dab"
+      "hash": "bd256eaacda299f678279f8c0487660ac13a6cf8d6ba381b7cb300df8c722218"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/requesting-authorization-to-capture-and-save-media.json": {
       "file_path": "documentation/AVFoundation/requesting-authorization-to-capture-and-save-media.md",

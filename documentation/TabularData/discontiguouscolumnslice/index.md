@@ -23,7 +23,7 @@ typealias Index = Int
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [DiscontiguousColumnSlice.Element](./element.md)
   The type of the column slice’s elements.
 

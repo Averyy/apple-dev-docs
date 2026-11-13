@@ -25,6 +25,16 @@ var floatingPointType: CSVType
 
 Defaults to [`CSVType.double`](../csvtype/double.md).
 
+## See Also
+
+### Interpreting values
+- [var nilEncodings: Set<String>](./nilencodings.md)
+  The set of strings that stores acceptable spellings for empty values.
+- [var trueEncodings: Set<String>](./trueencodings.md)
+  The set of strings that stores acceptable spellings for true Boolean values.
+- [var falseEncodings: Set<String>](./falseencodings.md)
+  The set of strings that stores acceptable spellings for false Boolean values.
+
 
 ---
 

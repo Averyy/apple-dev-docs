@@ -23,7 +23,7 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-### Describing a Column
+### Describing a column
 - [var description: String](./description.md)
   A text representation of the column.
 - [var debugDescription: String](./debugdescription.md)

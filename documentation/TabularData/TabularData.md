@@ -17,12 +17,12 @@ Import, organize, and prepare a table of data to train a machine learning model.
 
 ## Topics
 
-### Data Tables
+### Data tables
 - [struct DataFrame](./dataframe.md)
   A collection that arranges data in rows and columns.
 - [protocol DataFrameProtocol](./dataframeprotocol.md)
   A type that represents a data frame.
-### Typed Columns
+### Typed columns
 - [struct Column](./column.md)
   A column in a data frame.
 - [struct ColumnSlice](./columnslice.md)
@@ -35,7 +35,7 @@ Import, organize, and prepare a table of data to train a machine learning model.
   A type that represents a column.
 - [protocol OptionalColumnProtocol](./optionalcolumnprotocol.md)
   A type that represents a column that has missing values.
-### Type-Erased Columns
+### Type-erased columns
 - [struct AnyColumn](./anycolumn.md)
   A type-erased column.
 - [struct AnyColumnSlice](./anycolumnslice.md)
@@ -44,7 +44,7 @@ Import, organize, and prepare a table of data to train a machine learning model.
   A type that represents a type-erased column.
 - [protocol AnyColumnPrototype](./anycolumnprototype.md)
   A prototype that creates type-erased columns.
-### Statistical Summaries
+### Statistical summaries
 - [struct NumericSummary](./numericsummary.md)
   A summary of a numerical column.
 - [struct CategoricalSummary](./categoricalsummary.md)
@@ -64,16 +64,13 @@ Import, organize, and prepare a table of data to train a machine learning model.
   A column encoding error.
 - [enum SFrameReadingError](./sframereadingerror.md)
   An error when reading a Turi Create scalable data frame.
-### Supporting Types
+### Supporting types
 - [enum Order](./order.md)
   A type that represents a sort ordering.
 - [struct ColumnID](./columnid.md)
   A column identifier that stores a column’s name and the type of its elements.
 - [struct FormattingOptions](./formattingoptions.md)
   A set of parameters that indicate how to present the contents of data frame or column types to a printable string.
-### Structures
-- [struct JSONWritingOptions](./jsonwritingoptions.md)
-  A set of JSON file-reading options.
 
 
 ---

@@ -27,7 +27,7 @@ The associated value contains a description of the error.
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [SFrameReadingError.badArchive(_:)](./badarchive%28_%29.md)
   An error that indicates the scalable data frame directory’s archive file is corrupt.
 - [SFrameReadingError.missingArchive](./missingarchive.md)

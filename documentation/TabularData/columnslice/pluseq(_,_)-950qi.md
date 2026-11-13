@@ -28,7 +28,7 @@ static func += (lhs: inout ColumnSlice<WrappedElement>, rhs: WrappedElement) whe
 
 ## See Also
 
-### Modifying a Column Slice with a Value
+### Modifying a column slice with a value
 - [static func -= (inout ColumnSlice<WrappedElement>, WrappedElement)](./minuseq%28_,_%29-1n1gh.md)
   Modifies a column slice by subtracting a value from each element.
 - [static func *= (inout ColumnSlice<WrappedElement>, WrappedElement)](./stareq%28_,_%29-i6qs.md)

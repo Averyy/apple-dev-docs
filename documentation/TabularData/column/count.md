@@ -23,7 +23,7 @@ var count: Int { get }
 
 ## See Also
 
-### Inspecting a Column
+### Inspecting a column
 - [var name: String](./name.md)
   The name of the column.
 - [var missingCount: Int](./missingcount.md)

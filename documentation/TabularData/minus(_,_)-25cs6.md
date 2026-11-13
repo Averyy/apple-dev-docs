@@ -32,7 +32,7 @@ A new column with the same type as the left column.
 
 ## See Also
 
-### Generating a Column by Subtracting Two Columns
+### Generating a column by subtracting two columns
 - [static func - (Self, Self) -> Column<Self.Element>](./columnprotocol/minus%28_,_%29-36zol.md)
   Generates a column by subtracting each element in a column type from the corresponding elements of another.
 - [func - <L, R>(L, R) -> Column<R.Element>](./minus%28_,_%29-95yoe.md)

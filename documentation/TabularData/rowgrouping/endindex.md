@@ -25,7 +25,7 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Retrieving an Index
+### Retrieving an index
 - [var startIndex: Int](./startindex.md)
   The index of the initial group in the row grouping.
 - [func index(before: Int) -> Int](./index%28before%29.md)

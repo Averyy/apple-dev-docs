@@ -21,6 +21,14 @@ A join kind that contains all rows from the right data frame type, and only the 
 case right
 ```
 
+## See Also
+
+### Keeping unmatched rows
+- [JoinKind.left](./left.md)
+  A join kind that contains all rows from the left data frame type, and only the rows with matching values from the right data frame type.
+- [JoinKind.full](./full.md)
+  A join kind that contains every row from both data frame types.
+
 
 ---
 

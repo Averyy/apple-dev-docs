@@ -25,7 +25,7 @@ Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElem
 
 ## See Also
 
-### Summarizing a Column
+### Summarizing a column
 - [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-3ao8s.md)
   Generates a numeric summary of the integer column’s elements.
 - [func numericSummary() -> NumericSummary<Base.WrappedElement>](./numericsummary%28%29-86mgh.md)

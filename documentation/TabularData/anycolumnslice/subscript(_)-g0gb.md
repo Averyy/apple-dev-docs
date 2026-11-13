@@ -27,7 +27,7 @@ subscript(position: Int) -> Any? { get set }
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Range<Int>) -> AnyColumnSlice](./subscript%28_%29-3qisq.md)
   Accesses a contiguous range of elements.
 

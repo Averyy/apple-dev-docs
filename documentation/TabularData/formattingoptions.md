@@ -23,20 +23,24 @@ struct FormattingOptions
 
 ## Topics
 
-### Creating the Options Object
+### Creating the options object
 - [init()](./formattingoptions/init%28%29.md)
   Creates a formatting options instance with default parameters.
 - [init(locale: Locale)](./formattingoptions/init%28locale%29.md)
   Creates a formatting options instance with a locale.
 - [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](./formattingoptions/init%28maximumlinewidth,maximumcellwidth,maximumrowcount,includescolumntypes%29.md)
   Creates a formatting options instance.
-### Getting the Properties
+### Getting the properties
 - [var dateFormatStyle: Date.FormatStyle](./formattingoptions/dateformatstyle.md)
   The date format style.
 - [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](./formattingoptions/floatingpointformatstyle.md)
   The floating point format style.
 - [var includesColumnTypes: Bool](./formattingoptions/includescolumntypes.md)
   A Boolean value that indicates whether the description includes the column types.
+- [var includesRowAndColumnCounts: Bool](./formattingoptions/includesrowandcolumncounts.md)
+  A Boolean value that indicates whether the description includes the number of rows and columns.
+- [var includesRowIndices: Bool](./formattingoptions/includesrowindices.md)
+  A Boolean value that indicates whether the description includes the row indices.
 - [var integerFormatStyle: IntegerFormatStyle<Int>](./formattingoptions/integerformatstyle.md)
   The integer format style.
 - [var locale: Locale](./formattingoptions/locale.md)
@@ -47,11 +51,6 @@ struct FormattingOptions
   The largest number of characters a description can generate per line.
 - [var maximumRowCount: Int](./formattingoptions/maximumrowcount.md)
   The largest number of rows a description can generate.
-### Instance Properties
-- [var includesRowAndColumnCounts: Bool](./formattingoptions/includesrowandcolumncounts.md)
-  A Boolean value that indicates whether the description includes the number of rows and columns.
-- [var includesRowIndices: Bool](./formattingoptions/includesrowindices.md)
-  A Boolean value that indicates whether the description includes the row indices.
 
 ## Relationships
 
@@ -61,7 +60,7 @@ struct FormattingOptions
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [enum Order](./order.md)
   A type that represents a sort ordering.
 - [struct ColumnID](./columnid.md)

@@ -36,7 +36,7 @@ A new column of decoded values.
 
 ## See Also
 
-### Decoding a Column
+### Decoding a column
 - [func decode<T, Decoder>(T.Type, using: Decoder) throws](./decode%28_,using%29.md)
   Decodes the data in each element of the column.
 

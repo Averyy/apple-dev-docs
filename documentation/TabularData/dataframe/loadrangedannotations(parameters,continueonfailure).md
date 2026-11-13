@@ -74,6 +74,12 @@ This will create an annotated feature list which has the following structure:
 - `parameters`: Annotation parameters for using specific column names from the data frame. By default the data frame is expected to have columns `filePath` and `annotation`.
 - `continueOnFailure`: A Boolean value indicating whether to continue reading the dataframe after encountering a row that is invalid. The default value is `false`.
 
+## See Also
+
+### Working with annotated features
+- [init<S, Feature, Annotation>(S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws](./init%28_,featurescolumnid,annotationscolumnid%29.md)
+  Creates a data frame from a sequence of annotated features.
+
 
 ---
 

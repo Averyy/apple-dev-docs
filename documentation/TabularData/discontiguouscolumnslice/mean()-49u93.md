@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `BinaryInteger`.
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [func sum() -> WrappedElement](./sum%28%29.md)
   Returns the sum of the column slice’s elements, ignoring missing elements.
 - [func min() -> DiscontiguousColumnSlice<WrappedElement>.Element](./min%28%29.md)

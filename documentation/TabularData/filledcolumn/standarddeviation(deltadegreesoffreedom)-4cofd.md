@@ -33,7 +33,7 @@ The standard deviation; otherwise, `nil` if there are fewer than `deltaDegreesOf
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [func sum() -> FilledColumn<Base>.Element](./sum%28%29-5836l.md)
   Returns the sum of the integer column’s elements.
 - [func sum() -> FilledColumn<Base>.Element](./sum%28%29-2805h.md)

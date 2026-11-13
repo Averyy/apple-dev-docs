@@ -23,7 +23,7 @@ var min: Element
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [var max: Element](./max.md)
   The largest value, excluding missing elements.
 - [var mean: Element](./mean.md)

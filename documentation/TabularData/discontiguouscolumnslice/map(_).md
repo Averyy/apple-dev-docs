@@ -25,6 +25,12 @@ func map<T>(_ transform: (DiscontiguousColumnSlice<WrappedElement>.Element) thro
 
 - `transform`: A closure that transforms the column slice’s elements to another type.
 
+## See Also
+
+### Creating transformed columns
+- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](../optionalcolumnprotocol/filled%28with%29.md)
+  Generates a filled column by replacing missing elements with a value.
+
 
 ---
 

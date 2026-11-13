@@ -35,7 +35,7 @@ init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, 
 
 ## See Also
 
-### Creating a Summary
+### Creating a summary
 - [init()](./init%28%29.md)
   Creates an empty numeric summary with default values.
 

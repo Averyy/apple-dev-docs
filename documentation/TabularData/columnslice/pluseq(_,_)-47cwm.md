@@ -28,7 +28,7 @@ static func += <C>(lhs: inout ColumnSlice<WrappedElement>, rhs: C) where Wrapped
 
 ## See Also
 
-### Modifying a Column Slice with a Collection of Values
+### Modifying a column slice with a collection of values
 - [static func += <C>(inout ColumnSlice<WrappedElement>, C)](./pluseq%28_,_%29-4bgdt.md)
   Modifies a column slice by adding each optional value in a collection to the corresponding element in the column.
 - [static func -= <C>(inout ColumnSlice<WrappedElement>, C)](./minuseq%28_,_%29-3kauw.md)

@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `BinaryInteger`.
 
 ## See Also
 
-### Summarizing a Column
+### Summarizing a column
 - [func summary() -> CategoricalSummary<WrappedElement>](./summary%28%29.md)
   Generates a categorical summary of the column’s elements.
 - [func numericSummary() -> NumericSummary<WrappedElement>](./numericsummary%28%29-8laeo.md)

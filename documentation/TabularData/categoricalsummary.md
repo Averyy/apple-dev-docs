@@ -33,12 +33,12 @@ Each categorical summary has 5 statistics about a collection:
 
 ## Topics
 
-### Creating a Summary
+### Creating a summary
 - [init()](./categoricalsummary/init%28%29.md)
   Creates a categorical summary with default values.
 - [init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])](./categoricalsummary/init%28somecount,nonecount,uniquecount,mode%29.md)
   Creates a categorical summary.
-### Inspecting a Summary
+### Inspecting a summary
 - [var debugDescription: String](./categoricalsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
 - [var mode: [Element]](./categoricalsummary/mode.md)
@@ -63,7 +63,7 @@ Each categorical summary has 5 statistics about a collection:
 
 ## See Also
 
-### Statistical Summaries
+### Statistical summaries
 - [struct NumericSummary](./numericsummary.md)
   A summary of a numerical column.
 - [struct AnyCategoricalSummary](./anycategoricalsummary.md)

@@ -27,7 +27,7 @@ func grouped(by columnName: String) -> any RowGroupingProtocol
 
 ## See Also
 
-### Grouping Rows
+### Grouping rows
 - [struct RowGrouping](../../rowgrouping.md)
   A collection of row selections that have the same value in a column.
 - [protocol RowGroupingProtocol](../../rowgroupingprotocol.md)

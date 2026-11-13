@@ -23,19 +23,18 @@ struct JSONReadingOptions
 
 ## Topics
 
-### Initializers
+### Creating the options object
 - [init()](./jsonreadingoptions/init%28%29.md)
   Creates a set of options for reading a JSON file.
-### Instance Properties
+### Parsing dates
 - [var dateParsers: [(String) -> Date?]](./jsonreadingoptions/dateparsers.md)
   An array of closures that parse a date from a string.
-### Instance Methods
 - [func addDateParseStrategy<T>(T)](./jsonreadingoptions/adddateparsestrategy%28_%29.md)
   Adds a date parsing strategy.
 
 ## See Also
 
-### Creating a Data Frame from a JSON File
+### Creating a data frame from a JSON file
 - [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
 - [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)

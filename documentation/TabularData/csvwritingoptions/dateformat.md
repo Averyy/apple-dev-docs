@@ -27,6 +27,12 @@ var dateFormat: String?
 
 Defaults to `nil`, which uses ISO 8601 encoding.
 
+## See Also
+
+### Formatting dates
+- [var dateFormatter: (Date) -> String](./dateformatter.md)
+  A closure that maps dates to their string representations.
+
 
 ---
 

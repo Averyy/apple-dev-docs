@@ -43,7 +43,7 @@ The JSON file should contain a sequence of objects where each object contains a 
 
 ## See Also
 
-### Creating a Data Frame from a JSON File
+### Creating a data frame from a JSON file
 - [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
 - [enum JSONType](../jsontype.md)

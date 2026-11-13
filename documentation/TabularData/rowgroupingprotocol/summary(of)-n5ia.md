@@ -29,6 +29,16 @@ A [`GroupSummaries`](../groupsummaries.md) instance that contains categorical su
 
 - `columnNames`: A comma-separated, or variadic, list of column names.
 
+## See Also
+
+### Summarizing a row grouping
+- [func summary() -> any GroupSummaries](../rowgrouping/summary%28%29.md)
+  Generates a group summaries instance for the columns of the row grouping.
+- [func summary(of: [String]) -> any GroupSummaries](../rowgrouping/summary%28of%29.md)
+  Generates a group summaries instance for the columns you select by name.
+- [protocol GroupSummaries](../groupsummaries.md)
+  A collection of group summaries.
+
 
 ---
 

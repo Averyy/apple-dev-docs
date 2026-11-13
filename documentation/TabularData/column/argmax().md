@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `Comparable`.
 
 ## See Also
 
-### Finding an Element Index
+### Finding an element index
 - [func argmin() -> Int?](./argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
 

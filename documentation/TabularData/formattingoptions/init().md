@@ -23,7 +23,7 @@ init()
 
 ## See Also
 
-### Creating the Options Object
+### Creating the options object
 - [init(locale: Locale)](./init%28locale%29.md)
   Creates a formatting options instance with a locale.
 - [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](./init%28maximumlinewidth,maximumcellwidth,maximumrowcount,includescolumntypes%29.md)

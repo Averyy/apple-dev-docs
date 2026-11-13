@@ -31,7 +31,7 @@ A collection of groups.
 
 ## See Also
 
-### Creating a Row Grouping by a Column
+### Creating a row grouping by a column
 - [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](./grouped%28by,timeunit%29-7s782.md)
   Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by name.
 - [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](./grouped%28by,timeunit%29-78cy.md)

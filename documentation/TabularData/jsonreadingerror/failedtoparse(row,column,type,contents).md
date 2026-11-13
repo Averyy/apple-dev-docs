@@ -30,7 +30,7 @@ case failedToParse(row: Int, column: String, type: JSONType, contents: String)
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [JSONReadingError.incompatibleValues(column:)](./incompatiblevalues%28column%29.md)
   An error that occurs when the JSON data contains incompatible values in a column.
 - [JSONReadingError.unsupportedStructure](./unsupportedstructure.md)

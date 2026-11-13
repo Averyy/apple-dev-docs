@@ -59,7 +59,7 @@ To illustrate this point, the traditional property list view of a profile is no 
 
 Still, the property list is easier to read and so the bulk of this technote focuses on that.
 
-For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .
+For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see [TN3215: Reading man pages](./tn3215-reading-man-pages.md).
 
 ## The who
 

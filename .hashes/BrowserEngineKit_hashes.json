@@ -746,7 +746,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollview": {
       "file_path": "documentation/BrowserEngineKit/bescrollview.md",
-      "hash": "ad3c20d625aa64d5a55afd424fa602193bb00f8616994dbadf97218285578896"
+      "hash": "f0e55f40ebe772e92515ae103a97392011a2dac6ada0867f1e66856beb06013c"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollview/delegate": {
       "file_path": "documentation/BrowserEngineKit/bescrollview/delegate.md",
@@ -1614,7 +1614,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingview": {
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview.md",
-      "hash": "a8b25b69e780517e404843a14897922b844db2dc2ce7918f79a77e1ea166b1ef"
+      "hash": "ba3797d5658641bddff45841caa063e246c3f9800bb9124dd2a79664591a4308"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingview/handle": {
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview/handle.md",
@@ -2630,7 +2630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollview.json": {
       "file_path": "documentation/BrowserEngineKit/bescrollview.md",
-      "hash": "ad3c20d625aa64d5a55afd424fa602193bb00f8616994dbadf97218285578896"
+      "hash": "f0e55f40ebe772e92515ae103a97392011a2dac6ada0867f1e66856beb06013c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollview/delegate.json": {
       "file_path": "documentation/BrowserEngineKit/bescrollview/delegate.md",
@@ -3498,7 +3498,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingview.json": {
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview.md",
-      "hash": "a8b25b69e780517e404843a14897922b844db2dc2ce7918f79a77e1ea166b1ef"
+      "hash": "ba3797d5658641bddff45841caa063e246c3f9800bb9124dd2a79664591a4308"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingview/handle.json": {
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview/handle.md",

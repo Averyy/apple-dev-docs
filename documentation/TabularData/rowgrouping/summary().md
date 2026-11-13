@@ -25,9 +25,11 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Summarizing a Row Grouping
+### Summarizing a row grouping
 - [func summary(of: [String]) -> any GroupSummaries](./summary%28of%29.md)
   Generates a group summaries instance for the columns you select by name.
+- [func summary(of: String...) -> any GroupSummaries](../rowgroupingprotocol/summary%28of%29-n5ia.md)
+  Generates a categorical summary of the columns you select by name.
 - [protocol GroupSummaries](../groupsummaries.md)
   A collection of group summaries.
 

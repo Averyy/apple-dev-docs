@@ -27,7 +27,7 @@ func index(after i: Int) -> Int
 
 ## See Also
 
-### Retrieving an Index
+### Retrieving an index
 - [var startIndex: Int](./startindex.md)
   The index of the initial element in the column slice.
 - [var endIndex: Int](./endindex.md)

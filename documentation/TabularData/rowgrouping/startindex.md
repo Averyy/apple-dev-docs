@@ -25,7 +25,7 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Retrieving an Index
+### Retrieving an index
 - [var endIndex: Int](./endindex.md)
   The index of the final group in the row grouping.
 - [func index(before: Int) -> Int](./index%28before%29.md)

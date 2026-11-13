@@ -28,7 +28,7 @@ func containsColumn<T>(_ name: String, _ type: T.Type) -> Bool
 
 ## See Also
 
-### Inspecting a Data Frame
+### Inspecting a data frame
 - [var shape: (rows: Int, columns: Int)](./shape.md)
   The number of rows and columns in the data frame.
 - [var columns: [AnyColumn]](./columns.md)
@@ -39,6 +39,12 @@ func containsColumn<T>(_ name: String, _ type: T.Type) -> Bool
   A collection of rows in a data frame.
 - [var base: DataFrame](./base.md)
   The underlying data frame.
+- [func containsColumn(String) -> Bool](./containscolumn%28_%29-8spst.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [func containsColumn<T>(ColumnID<T>) -> Bool](./containscolumn%28_%29-6nqfs.md)
+  Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
+- [var isEmpty: Bool](../dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
 
 
 ---

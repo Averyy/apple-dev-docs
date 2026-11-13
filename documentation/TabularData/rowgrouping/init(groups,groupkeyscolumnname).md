@@ -32,7 +32,7 @@ The member data frames must all have the same columns (count, names, and types).
 
 ## See Also
 
-### Creating a Row Grouping
+### Creating a row grouping
 - [init<D>(frame: D, columnName: String, timeUnit: Calendar.Component)](./init%28frame,columnname,timeunit%29.md)
   Creates a row grouping from a column with date or time elements.
 

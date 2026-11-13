@@ -36,7 +36,7 @@ After the method aggregates the groups, it creates a column with the same name a
 
 ## See Also
 
-### Creating a Row Grouping by a Column
+### Creating a row grouping by a column
 - [func grouped<GroupingKey>(by: ColumnID<GroupingKey>) -> RowGrouping<GroupingKey>](./grouped%28by%29-77mq2.md)
   Creates a grouping of rows that the method selects by choosing unique values in a column.
 - [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](./grouped%28by,timeunit%29-7s782.md)

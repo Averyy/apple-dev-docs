@@ -39,16 +39,16 @@
       "appleschoolmanagerapi": {}
     },
     "gone_links": [
-      "https://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit"
+      "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
+      "https://developer.apple.com/documentation/applebusinessapi/understanding-apple-business-api-webhook-events",
+      "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
     ],
     "render": {
       "version": 4
     },
     "text_links": {
       "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": [
-        "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
-        "https://developer.apple.com/documentation/applebusinessapi/understanding-apple-business-api-webhook-events",
-        "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
+        "https://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit"
       ]
     },
     "total_pages": 8

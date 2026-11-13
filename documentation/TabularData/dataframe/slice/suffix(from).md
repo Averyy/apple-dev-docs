@@ -31,7 +31,7 @@ A new slice of the underlying data frame.
 
 ## See Also
 
-### Creating a Slice by Selecting Rows
+### Creating a slice by selecting rows
 - [func prefix(Int) -> DataFrame.Slice](./prefix%28_%29.md)
   Returns a new slice that contains the initial elements of the original slice.
 - [func prefix(upTo: Int) -> DataFrame.Slice](./prefix%28upto%29.md)

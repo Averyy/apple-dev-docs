@@ -21,6 +21,16 @@ A Boolean type.
 case boolean
 ```
 
+## See Also
+
+### Other value types
+- [CSVType.date](./date.md)
+  A date type.
+- [CSVType.string](./string.md)
+  A string type.
+- [CSVType.data](./data.md)
+  A binary data type.
+
 
 ---
 

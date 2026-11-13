@@ -182,7 +182,7 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvdigitentryviewcontroller": {
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller.md",
-      "hash": "f15011731e511b24efbc17c4a36c5075e16f9e552083ad32608c10849ace6a54"
+      "hash": "b1139fa2292de8ad08599da9022d10d5e5461409c67d3981ae4c21b1e8584c7a"
     },
     "https://developer.apple.com/documentation/tvuikit/tvdigitentryviewcontroller/clearentry(animated:)": {
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/clearentry(animated).md",
@@ -610,7 +610,7 @@
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramcontentview": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview.md",
-      "hash": "c8da55ef0ba547e50e065ac07d63fd1f2facfac6181243a201b6ad145fd87c02"
+      "hash": "86cd053c9d7e4961c6d2563efe2e31143af48a4d7157fe4bdb7b17a69f60f620"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramcontentview/configuration": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/configuration.md",
@@ -854,7 +854,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller.json": {
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller.md",
-      "hash": "f15011731e511b24efbc17c4a36c5075e16f9e552083ad32608c10849ace6a54"
+      "hash": "b1139fa2292de8ad08599da9022d10d5e5461409c67d3981ae4c21b1e8584c7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/clearentry(animated:).json": {
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/clearentry(animated).md",
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview.json": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview.md",
-      "hash": "c8da55ef0ba547e50e065ac07d63fd1f2facfac6181243a201b6ad145fd87c02"
+      "hash": "86cd053c9d7e4961c6d2563efe2e31143af48a4d7157fe4bdb7b17a69f60f620"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview/configuration.json": {
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/configuration.md",

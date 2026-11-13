@@ -27,7 +27,7 @@ mutating func append(column: AnyColumn)
 
 ## See Also
 
-### Adding a Column
+### Adding a column
 - [func append<T>(column: Column<T>)](./append%28column%29-aema.md)
   Adds a typed column to the end of the data frame.
 - [func insert(column: AnyColumn, at: Int)](./insert%28column,at%29-784jb.md)

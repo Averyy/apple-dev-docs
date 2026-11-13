@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `BinaryInteger`.
 
 ## See Also
 
-### Summarizing a Column Slice
+### Summarizing a column slice
 - [func summary() -> CategoricalSummary<WrappedElement>](./summary%28%29.md)
   Generates a categorical summary of the column slice’s elements.
 - [func numericSummary() -> NumericSummary<WrappedElement>](./numericsummary%28%29-5swa5.md)

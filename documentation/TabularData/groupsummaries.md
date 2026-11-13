@@ -23,15 +23,14 @@ protocol GroupSummaries : CustomStringConvertible
 
 ## Topics
 
-### Instance Properties
-- [var description: String](./groupsummaries/description.md)
-  A text representation of the group summaries.
-### Instance Methods
-- [func description(options: FormattingOptions) -> String](./groupsummaries/description%28options%29.md)
-  Generates a text representation of the group summaries.
-### Subscripts
+### Accessing summaries
 - [subscript(Any?...) -> DataFrame?](./groupsummaries/subscript%28_%29.md)
   Retrieves one or more summaries by their group keys.
+### Describing group summaries
+- [var description: String](./groupsummaries/description.md)
+  A text representation of the group summaries.
+- [func description(options: FormattingOptions) -> String](./groupsummaries/description%28options%29.md)
+  Generates a text representation of the group summaries.
 
 ## Relationships
 
@@ -40,11 +39,13 @@ protocol GroupSummaries : CustomStringConvertible
 
 ## See Also
 
-### Summarizing a Row Grouping
+### Summarizing a row grouping
 - [func summary() -> any GroupSummaries](./rowgrouping/summary%28%29.md)
   Generates a group summaries instance for the columns of the row grouping.
 - [func summary(of: [String]) -> any GroupSummaries](./rowgrouping/summary%28of%29.md)
   Generates a group summaries instance for the columns you select by name.
+- [func summary(of: String...) -> any GroupSummaries](./rowgroupingprotocol/summary%28of%29-n5ia.md)
+  Generates a categorical summary of the columns you select by name.
 
 
 ---

@@ -33,15 +33,13 @@ A new data frame.
 
 ## See Also
 
-### Creating a Data Frame by Joining Another Data Frame
+### Creating a data frame by joining with another data frame
+- [func joined<R, T>(R, on: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind) -> DataFrame](./joined%28_,on,kind%29-9629e.md)
+  Generates a data frame by joining with another data frame type along the columns that you select by identifier for both data frame types.
 - [func joined<R>(R, on: String, kind: JoinKind) -> DataFrame](./joined%28_,on,kind%29-1gp6k.md)
   Generates a data frame by joining with another data frame type with a common column you select by name.
 - [func joined<R>(R, on: (left: String, right: String), kind: JoinKind) -> DataFrame](./joined%28_,on,kind%29-7u2tw.md)
   Generates a data frame by joining with another data frame type along the columns that you select by name for both data frame types.
-- [func joined<R, T>(R, on: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind) -> DataFrame](./joined%28_,on,kind%29-9629e.md)
-  Generates a data frame by joining with another data frame type along the columns that you select by identifier for both data frame types.
-- [enum JoinKind](../joinkind.md)
-  An operation type that joins two data frame types.
 
 
 ---

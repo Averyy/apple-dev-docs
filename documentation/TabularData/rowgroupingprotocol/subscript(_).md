@@ -26,6 +26,12 @@ subscript(keys: Any?...) -> DataFrame.Slice? { get }
 
 - `keys`: A comma-separated, or variadic, list of key optionals.
 
+## See Also
+
+### Inspecting a row grouping
+- [var count: Int](./count.md)
+  The number of groups in the row grouping.
+
 
 ---
 

@@ -23,13 +23,17 @@ var maximumCellWidth: Int
 
 ## See Also
 
-### Getting the Properties
+### Getting the properties
 - [var dateFormatStyle: Date.FormatStyle](./dateformatstyle.md)
   The date format style.
 - [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](./floatingpointformatstyle.md)
   The floating point format style.
 - [var includesColumnTypes: Bool](./includescolumntypes.md)
   A Boolean value that indicates whether the description includes the column types.
+- [var includesRowAndColumnCounts: Bool](./includesrowandcolumncounts.md)
+  A Boolean value that indicates whether the description includes the number of rows and columns.
+- [var includesRowIndices: Bool](./includesrowindices.md)
+  A Boolean value that indicates whether the description includes the row indices.
 - [var integerFormatStyle: IntegerFormatStyle<Int>](./integerformatstyle.md)
   The integer format style.
 - [var locale: Locale](./locale.md)

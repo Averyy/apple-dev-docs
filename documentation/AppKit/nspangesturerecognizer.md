@@ -64,8 +64,6 @@ In this gesture recognizer, the [`location(in:)`](./nsgesturerecognizer/location
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

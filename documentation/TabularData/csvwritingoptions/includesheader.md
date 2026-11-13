@@ -25,6 +25,14 @@ var includesHeader: Bool
 
 Defaults to `true`.
 
+## See Also
+
+### Formatting the file structure
+- [var delimiter: Character](./delimiter.md)
+  The character the CSV file generator uses to separate data fields in a CSV file.
+- [var newline: String](./newline.md)
+  The string the CSV file generator uses to represent a newline sequence.
+
 
 ---
 

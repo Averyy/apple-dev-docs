@@ -30,7 +30,7 @@ init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])
 
 ## See Also
 
-### Creating a Summary
+### Creating a summary
 - [init()](./init%28%29.md)
   Creates a categorical summary with default values.
 

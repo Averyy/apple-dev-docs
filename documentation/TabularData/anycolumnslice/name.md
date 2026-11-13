@@ -23,7 +23,7 @@ var name: String { get set }
 
 ## See Also
 
-### Inspecting a Type-Erased Column Slice
+### Inspecting a type-erased column slice
 - [var count: Int](./count.md)
   The number of elements in the column slice.
 - [var missingCount: Int](./missingcount.md)

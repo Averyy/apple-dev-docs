@@ -24,19 +24,19 @@ struct DataFrame
 
 ## Topics
 
-### Creating a Data Frame
+### Creating a data frame
 - [init()](./dataframe/init%28%29.md)
   Creates an empty data frame with no rows or columns.
 - [init<S>(columns: S)](./dataframe/init%28columns%29.md)
   Creates a new data frame from a sequence of columns.
 - [init(dictionaryLiteral: (String, [Any?])...)](./dataframe/init%28dictionaryliteral%29.md)
   Creates a data frame from a dictionary literal.
-### Creating a Data Frame from Other Data Frames
+### Creating a data frame from other data frames
 - [init(DataFrame.Slice)](./dataframe/init%28_%29.md)
   Creates a new data frame with a slice of rows from another data frame.
 - [DataFrame.Slice](./dataframe/slice.md)
   A set of a data frame’s rows you create by using a method from a data frame instance or another data frame slice.
-### Creating a Data Frame from a JSON File
+### Creating a data frame from a JSON file
 - [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
 - [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)
@@ -45,21 +45,25 @@ struct DataFrame
   Represents the value types in a JSON file.
 - [struct JSONReadingOptions](./jsonreadingoptions.md)
   A set of JSON file-reading options.
-### Creating a Data Frame from a CSV
+### Creating a data frame from a CSV
 - [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,types,options%29.md)
   Creates a data frame from a CSV file.
 - [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,types,options%29.md)
+  Creates a data frame from CSV data.
+- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,options%29.md)
+  Creates a data frame from a CSV file.
+- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,options%29.md)
   Creates a data frame from CSV data.
 - [enum CSVType](./csvtype.md)
   Represents the value types in a CSV file.
 - [struct CSVReadingOptions](./csvreadingoptions.md)
   A set of CSV file-reading options.
-### Creating a Data Frame from Turi Create Types
+### Creating a data frame from Turi Create types
 - [init(contentsOfSFrameDirectory: URL, columns: [String]?, rows: Range<Int>?) throws](./dataframe/init%28contentsofsframedirectory,columns,rows%29.md)
   Creates a data frame from a Turi Create scalable data frame.
 - [struct ShapedData](./shapeddata.md)
   A collection type that represents multidimensional data in a data frame element.
-### Inspecting a Data Frame
+### Inspecting a data frame
 - [var shape: (rows: Int, columns: Int)](./dataframe/shape.md)
   The number of rows and columns in the data frame.
 - [var columns: [AnyColumn]](./dataframe/columns.md)
@@ -70,9 +74,29 @@ struct DataFrame
   A collection of rows in a data frame.
 - [var base: DataFrame](./dataframe/base.md)
   The underlying data frame.
+- [func containsColumn(String) -> Bool](./dataframe/containscolumn%28_%29-8spst.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [func containsColumn<T>(ColumnID<T>) -> Bool](./dataframe/containscolumn%28_%29-6nqfs.md)
+  Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
 - [func containsColumn<T>(String, T.Type) -> Bool](./dataframe/containscolumn%28_,_%29.md)
   Returns a Boolean value indicating whether the data frame contains a column.
-### Sorting a Data Frame
+- [var isEmpty: Bool](./dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
+### Working with rows and columns
+- [Row Operations](./dataframe-row-operations.md)
+  Add, select, and group rows within a data frame.
+- [Column Operations](./dataframe-column-operations.md)
+  Add, modify, and remove columns within a data frame.
+### Selecting columns
+- [subscript<S>(S) -> DataFrame](./dataframe/subscript%28_%29-4war.md)
+  Generates a data frame that includes the columns in a sequence of column names.
+- [func selecting(columnNames: String...) -> DataFrame](./dataframe/selecting%28columnnames%29-pp1o.md)
+  Generates a data frame that includes the columns you select with a list of names.
+- [func selecting<S>(columnNames: S) -> DataFrame](./dataframe/selecting%28columnnames%29-3kms8.md)
+  Generates a data frame that includes the columns you select with a sequence of names.
+- [func selecting(ColumnSelection) -> DataFrame](./dataframe/selecting%28_%29.md)
+  Generates a data frame that includes only the column selection.
+### Sorting a data frame
 - [func sort(on: String, order: Order)](./dataframe/sort%28on,order%29-4vns7.md)
   Arranges the rows of a data frame according to a column that you select by its name.
 - [func sort<T>(on: String, T.Type, order: Order)](./dataframe/sort%28on,_,order%29-78avw.md)
@@ -87,7 +111,43 @@ struct DataFrame
   Arranges the rows of a data frame according to two columns that you select by their column identifiers.
 - [func sort<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order)](./dataframe/sort%28on,_,_,order%29.md)
   Arranges the rows of a data frame according to three columns that you select by their column identifiers.
-### Summarizing a Data Frame
+### Creating a data frame by sorting a column
+- [func sorted(on: String, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,order%29-818u5.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name.
+- [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,order%29-5nl5c.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier.
+- [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,order%29-8d7rr.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type.
+- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](./dataframeprotocol/sorted%28on,_,by%29.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type, with a predicate.
+- [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](./dataframeprotocol/sorted%28on,by%29.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier, with a predicate.
+### Creating a data frame by sorting multiple columns
+- [func sorted<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,order%29-79los.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to two columns that you select by their column identifiers.
+- [func sorted<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,_,order%29.md)
+  Generates a data frame by copying the data frame’s rows and then sorting the rows according to three columns that you select by their column identifiers.
+### Creating a data frame by joining with another data frame
+- [func joined<R, T>(R, on: ColumnID<T>, kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-mvic.md)
+  Generates a data frame by joining with another data frame type with a common column that you select by identifier.
+- [func joined<R, T>(R, on: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-9629e.md)
+  Generates a data frame by joining with another data frame type along the columns that you select by identifier for both data frame types.
+- [func joined<R>(R, on: String, kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-1gp6k.md)
+  Generates a data frame by joining with another data frame type with a common column you select by name.
+- [func joined<R>(R, on: (left: String, right: String), kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-7u2tw.md)
+  Generates a data frame by joining with another data frame type along the columns that you select by name for both data frame types.
+### Creating two data frames by splitting rows
+- [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-9iauf.md)
+  Generates two data frames by randomly splitting the rows of a column, which you select by its name, into strata.
+- [func stratifiedSplit(on: String..., by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-8szu1.md)
+  Generates two data frames by randomly splitting the rows of multiple columns, which you select by their names, into strata.
+- [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-714jk.md)
+  Generates two data frames by randomly splitting the rows of a column, which you select by column identifier, into strata.
+- [func stratifiedSplit<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,_,by,randomseed%29.md)
+  Generates two data frames by randomly splitting the rows of two columns, which you select by column identifiers, into strata.
+- [func stratifiedSplit<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,_,_,by,randomseed%29.md)
+  Generates two data frames by randomly splitting the rows of three columns, which you select by column identifiers, into strata.
+### Summarizing a data frame
 - [func summary() -> DataFrame](./dataframe/summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame.
 - [func summary(of: String...) -> DataFrame](./dataframe/summary%28of%29.md)
@@ -96,39 +156,39 @@ struct DataFrame
   Generates a data frame that summarizes the columns you select by index.
 - [enum SummaryColumnIDs](./summarycolumnids.md)
   The summary data frame column identifiers.
-### Saving a Data Frame to a CSV Format
+### Saving a data frame to a CSV format
 - [struct CSVWritingOptions](./csvwritingoptions.md)
   A set of CSV file-writing options.
-### Describing a Data Frame
+- [func writeCSV(to: URL, options: CSVWritingOptions) throws](./dataframeprotocol/writecsv%28to,options%29.md)
+  Creates a CSV file with the contents of the data frame type.
+- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](./dataframeprotocol/csvrepresentation%28options%29.md)
+  Generates a CSV data instance of the data frame type.
+### Saving a data frame to a JSON format
+- [struct JSONWritingOptions](./jsonwritingoptions.md)
+  A set of JSON file-reading options.
+- [func writeJSON(to: URL, options: JSONWritingOptions) throws](./dataframeprotocol/writejson%28to,options%29.md)
+  Creates a JSON file with the contents of the data frame.
+- [func jsonRepresentation(options: JSONWritingOptions) throws -> Data](./dataframeprotocol/jsonrepresentation%28options%29.md)
+  Generates a JSON data instance of the data frame.
+### Describing a data frame
 - [var description: String](./dataframe/description.md)
   A text representation of the data frame.
 - [var debugDescription: String](./dataframe/debugdescription.md)
   A text representation of the data frame suitable for debugging.
 - [var customMirror: Mirror](./dataframe/custommirror.md)
   A mirror that reflects the data frame.
-### Comparing Data Frames
+### Comparing data frames
 - [static func == (DataFrame, DataFrame) -> Bool](./dataframe/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the data frames are equal.
-### Hashing a Data Frame
+### Hashing a data frame
 - [func hash(into: inout Hasher)](./dataframe/hash%28into%29.md)
   Hashes the essential components of the data frame by feeding them into a hasher.
-### Initializers
+### Working with annotated features
 - [init<S, Feature, Annotation>(S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws](./dataframe/init%28_,featurescolumnid,annotationscolumnid%29.md)
   Creates a data frame from a sequence of annotated features.
-- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,options%29.md)
-  Creates a data frame from a CSV file.
-- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,options%29.md)
-  Creates a data frame from CSV data.
-### Instance Methods
-- [func containsColumn<T>(ColumnID<T>) -> Bool](./dataframe/containscolumn%28_%29-6nqfs.md)
-  Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
-- [func containsColumn(String) -> Bool](./dataframe/containscolumn%28_%29-8spst.md)
-  Returns a Boolean value indicating whether the data frame contains a column.
 - [func loadRangedAnnotations<Annotation>(parameters: DataFrameTemporalAnnotationParameters<Annotation>, continueOnFailure: Bool) throws -> [AnnotatedFeature<TemporalFileSegment, Annotation>]](./dataframe/loadrangedannotations%28parameters,continueonfailure%29.md)
   Loads training examples from a data frame containing annotations.
-- [func selecting(ColumnSelection) -> DataFrame](./dataframe/selecting%28_%29.md)
-  Generates a data frame that includes only the column selection.
-### Subscripts
+### Accessing evaluation results
 - [subscript<T>(ResultColumn<T>) -> Column<T>](./dataframe/subscript%28_%29-4jbhp.md)
   Accesses a result column by its typed descriptor.
 - [subscript(metric _: Metric) -> Column<Metric>](./dataframe/subscript%28metric%29.md)
@@ -157,7 +217,7 @@ struct DataFrame
 
 ## See Also
 
-### Data Tables
+### Data tables
 - [protocol DataFrameProtocol](./dataframeprotocol.md)
   A type that represents a data frame.
 

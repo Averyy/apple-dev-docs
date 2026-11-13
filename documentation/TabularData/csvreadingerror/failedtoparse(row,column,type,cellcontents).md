@@ -30,7 +30,7 @@ case failedToParse(row: Int, column: Int, type: CSVType, cellContents: Data)
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var column: Int?](./column.md)
   The index of the column that contains the error.
 - [var row: Int](./row.md)

@@ -23,7 +23,7 @@ var columnName: String
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the column encoding error suitable for debugging.
 - [var encodingError: EncodingError](./encodingerror.md)

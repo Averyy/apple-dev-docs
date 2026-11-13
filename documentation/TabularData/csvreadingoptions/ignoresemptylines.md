@@ -25,6 +25,14 @@ var ignoresEmptyLines: Bool
 
 Defaults to `true`.
 
+## See Also
+
+### Describing the file structure
+- [var hasHeaderRow: Bool](./hasheaderrow.md)
+  A Boolean value that indicates whether the CSV file has a header row.
+- [var delimiter: Character](./delimiter.md)
+  The character that separates data fields in a CSV file, typically a comma.
+
 
 ---
 

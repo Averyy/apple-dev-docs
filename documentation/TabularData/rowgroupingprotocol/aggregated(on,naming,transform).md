@@ -43,7 +43,7 @@ The data frame contains two columns that:
 
 ## See Also
 
-### Aggregating a Row Grouping
+### Aggregating a row grouping
 - [func counts() -> DataFrame](./counts%28%29.md)
   Generates a data frame with two columns, one that has a row for each group key and another for the number of rows in the group.
 - [func counts(order: Order?) -> DataFrame](./counts%28order%29.md)
@@ -64,8 +64,14 @@ The data frame contains two columns that:
   Generates a data frame that contains the maximums of each group’s rows along a column you select by name.
 - [func maximums<N>(ColumnID<N>, order: Order?) -> DataFrame](./maximums%28_,order%29.md)
   Generates a data frame that contains the maximums of each group’s rows along a column you select by column identifier.
+- [func quantiles<N>(String, N.Type, quantile: N, order: Order?) -> DataFrame](./quantiles%28_,_,quantile,order%29.md)
+  Generates a data frame that contains the quantile of each group’s rows along a column you select by name.
+- [func quantiles<N>(ColumnID<N>, quantile: N, order: Order?) -> DataFrame](./quantiles%28_,quantile,order%29.md)
+  Generates a data frame that contains the quantiles of each group’s rows along a column you select by column identifier.
 - [func aggregated<Element, Result>(on: ColumnID<Element>, into: String?, transform: (DiscontiguousColumnSlice<Element>) throws -> Result) rethrows -> DataFrame](./aggregated%28on,into,transform%29.md)
   Generates a data frame with a column for the group identifier and a column of values from the transform.
+- [func aggregated<Element, Result>(on: String..., naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame](./aggregated%28on,naming,transform%29-7s4mf.md)
+  Generates a data frame by aggregating each group’s contents for each column you select by name.
 
 
 ---

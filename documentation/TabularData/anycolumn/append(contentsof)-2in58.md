@@ -27,7 +27,7 @@ mutating func append(contentsOf other: AnyColumn)
 
 ## See Also
 
-### Adding Elements
+### Adding elements
 - [func append(Any?)](./append%28_%29.md)
   Appends an optional element to the column.
 - [func append(contentsOf: AnyColumnSlice)](./append%28contentsof%29-az5b.md)

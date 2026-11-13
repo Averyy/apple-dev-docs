@@ -25,6 +25,14 @@ var delimiter: Character
 
 Defaults to comma (`,`).
 
+## See Also
+
+### Formatting the file structure
+- [var includesHeader: Bool](./includesheader.md)
+  A Boolean value that indicates whether to write a header with the column names.
+- [var newline: String](./newline.md)
+  The string the CSV file generator uses to represent a newline sequence.
+
 
 ---
 

@@ -23,7 +23,7 @@ enum Order
 
 ## Topics
 
-### Getting the Properties
+### Getting the properties
 - [Order.ascending](./order/ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
 - [Order.descending](./order/descending.md)
@@ -41,7 +41,7 @@ enum Order
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [struct ColumnID](./columnid.md)
   A column identifier that stores a column’s name and the type of its elements.
 - [struct FormattingOptions](./formattingoptions.md)

@@ -30,7 +30,7 @@ init(maximumLineWidth: Int, maximumCellWidth: Int = 50, maximumRowCount: Int = 2
 
 ## See Also
 
-### Creating the Options Object
+### Creating the options object
 - [init()](./init%28%29.md)
   Creates a formatting options instance with default parameters.
 - [init(locale: Locale)](./init%28locale%29.md)

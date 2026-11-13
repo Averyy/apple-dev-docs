@@ -23,7 +23,7 @@ var totalCount: Int { get }
 
 ## See Also
 
-### Inspecting a Summary
+### Inspecting a summary
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
 - [var mode: [Element]](./mode.md)

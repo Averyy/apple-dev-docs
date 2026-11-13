@@ -23,7 +23,7 @@ var missingCount: Int { get }
 
 ## See Also
 
-### Inspecting a Type-Erased Column Slice
+### Inspecting a type-erased column slice
 - [var name: String](./name.md)
   The name of the slice’s parent column.
 - [var count: Int](./count.md)

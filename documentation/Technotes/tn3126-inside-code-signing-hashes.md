@@ -91,7 +91,7 @@ The code signature for an item is stored in one of four ways:
 
 > ❗ **Important**: Storing a code signature in EAs is brittle because many file transfer mechanisms drop these.  To avoid this potential pitfall, follow the rules in [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md).
 
-For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .  Specifically, the `codesign` man page is the key reference if you’re working at this level.
+For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see [TN3215: Reading man pages](./tn3215-reading-man-pages.md).  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
 ## Code directory
 

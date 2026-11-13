@@ -32,7 +32,7 @@ The method inserts the new column before the column currently at `index`. If you
 
 ## See Also
 
-### Adding a Column
+### Adding a column
 - [func append(column: AnyColumn)](./append%28column%29-45s2v.md)
   Adds a type-erased column to the end of the data frame.
 - [func append<T>(column: Column<T>)](./append%28column%29-aema.md)

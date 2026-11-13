@@ -27,7 +27,7 @@ func isNil(at index: Int) -> Bool
 
 ## See Also
 
-### Inspecting a Type-Erased Column
+### Inspecting a type-erased column
 - [var name: String](./name.md)
   The name of the column.
 - [var count: Int](./count.md)

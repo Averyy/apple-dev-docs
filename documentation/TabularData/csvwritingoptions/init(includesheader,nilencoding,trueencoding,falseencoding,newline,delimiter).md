@@ -30,6 +30,14 @@ init(includesHeader: Bool = true, nilEncoding: String = "", trueEncoding: String
 - `newline`: The newline sequence. Defaults to a line feed.
 - `delimiter`: The field delimiter. Defaults to comma (`,`).
 
+## See Also
+
+### Creating the options object
+- [init()](./init%28%29.md)
+  Creates the default set of options for writing a CSV file.
+- [init(includesHeader: Bool, dateFormat: String?, nilEncoding: String, trueEncoding: String, falseEncoding: String, newline: String, delimiter: Character)](./init%28includesheader,dateformat,nilencoding,trueencoding,falseencoding,newline,delimiter%29.md)
+  Creates a set of options for writing a CSV file.
+
 
 ---
 

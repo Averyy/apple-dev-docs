@@ -23,7 +23,7 @@ var modeType: any Any.Type
 
 ## See Also
 
-### Getting Mode Information
+### Getting mode information
 - [var mode: [Any]](./mode.md)
   The most common values in a column.
 

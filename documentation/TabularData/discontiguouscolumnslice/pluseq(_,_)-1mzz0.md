@@ -28,7 +28,7 @@ static func += (lhs: inout DiscontiguousColumnSlice<WrappedElement>, rhs: Wrappe
 
 ## See Also
 
-### Modifying a Column Slice with a Value
+### Modifying a column slice with a value
 - [static func -= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./minuseq%28_,_%29-2yrui.md)
   Modifies a column slice by subtracting a value from each element.
 - [static func *= (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](./stareq%28_,_%29-7gcqc.md)

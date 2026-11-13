@@ -23,7 +23,7 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-### Describing a Column Slice
+### Describing a column slice
 - [var description: String](./description.md)
   A text representation of the column slice.
 - [var debugDescription: String](./debugdescription.md)

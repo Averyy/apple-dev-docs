@@ -33,7 +33,7 @@ mutating func sort<T0, T1>(on columnID0: ColumnID<T0>, _ columnID1: ColumnID<T1>
 
 ## See Also
 
-### Sorting a Data Frame
+### Sorting a data frame
 - [func sort(on: String, order: Order)](./sort%28on,order%29-4vns7.md)
   Arranges the rows of a data frame according to a column that you select by its name.
 - [func sort<T>(on: String, T.Type, order: Order)](./sort%28on,_,order%29-78avw.md)

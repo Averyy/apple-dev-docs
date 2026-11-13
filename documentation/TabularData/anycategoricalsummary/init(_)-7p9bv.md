@@ -25,6 +25,12 @@ init(_ summary: CategoricalSummary<AnyHashable>)
 
 - `summary`: A typed categorical summary.
 
+## See Also
+
+### Creating a categorical summary
+- [init<T>(CategoricalSummary<T>)](./init%28_%29-8innt.md)
+  Creates a type-erased categorical summary from a typed categorical summary.
+
 
 ---
 

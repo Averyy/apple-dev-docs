@@ -27,14 +27,14 @@ protocol AnyColumnProtocol
 
 ## Topics
 
-### Inspecting a Type-Erased Column Type
+### Inspecting a type-erased column type
 - [var name: String](./anycolumnprotocol/name.md)
   The name of the column type.
 - [var count: Int](./anycolumnprotocol/count.md)
   The number of elements in the column type.
 - [var wrappedElementType: any Any.Type](./anycolumnprotocol/wrappedelementtype.md)
   The underlying type of the column type’s elements.
-### Retrieving Elements
+### Retrieving elements
 - [subscript(Int) -> Any?](./anycolumnprotocol/subscript%28_%29-1dl8y.md)
   Retrieves an element at a position in the column type.
 - [subscript(Range<Int>) -> AnyColumnSlice](./anycolumnprotocol/subscript%28_%29-81v4q.md)
@@ -48,7 +48,7 @@ protocol AnyColumnProtocol
 
 ## See Also
 
-### Type-Erased Columns
+### Type-erased columns
 - [struct AnyColumn](./anycolumn.md)
   A type-erased column.
 - [struct AnyColumnSlice](./anycolumnslice.md)

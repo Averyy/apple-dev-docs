@@ -23,7 +23,7 @@ var name: String
 
 ## See Also
 
-### Inspecting a Column
+### Inspecting a column
 - [var count: Int](./count.md)
   The number of elements in the column.
 - [var missingCount: Int](./missingcount.md)

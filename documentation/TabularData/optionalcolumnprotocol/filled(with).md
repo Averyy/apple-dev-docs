@@ -29,6 +29,14 @@ A filled column.
 
 - `value`: A value the method uses to replace the column’s missing elements.
 
+## See Also
+
+### Creating transformed columns
+- [func map<T>((Column<WrappedElement>.Element) throws -> T?) rethrows -> Column<T>](../column/map%28_%29.md)
+  Creates a new column by applying a transformation to every element.
+- [func mapNonNil<T>((WrappedElement) throws -> T?) rethrows -> Column<T>](../column/mapnonnil%28_%29.md)
+  Creates a new column by applying the transformation to every element that isn’t missing.
+
 
 ---
 

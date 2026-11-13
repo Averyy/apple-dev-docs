@@ -27,7 +27,7 @@ subscript<T>(column index: Int, type: T.Type) -> DiscontiguousColumnSlice<T> { g
 
 ## See Also
 
-### Creating a Slice by Selecting a Column
+### Creating a slice by selecting a column
 - [subscript<T>(ColumnID<T>) -> DiscontiguousColumnSlice<T>](./subscript%28_%29-32h9z.md)
   Returns a column you select by its column identifier.
 - [subscript<T>(String, T.Type) -> DiscontiguousColumnSlice<T>](./subscript%28_,_%29.md)

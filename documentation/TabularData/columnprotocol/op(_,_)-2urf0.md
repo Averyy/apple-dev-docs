@@ -34,17 +34,25 @@ A new column.
 
 ## See Also
 
-### Generating a Column by Dividing Two Columns
+### Generating a column by combining two columns
+- [static func + (Self, Self) -> Column<Self.Element>](./plus%28_,_%29-yc11.md)
+  Generates a column by adding each element in a column type to the corresponding elements of another.
+- [static func + (Self, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/plus%28_,_%29-2qex0.md)
+  Generates a column by adding each element in an optional column type to the corresponding elements of another.
+- [static func - (Self, Self) -> Column<Self.Element>](./minus%28_,_%29-36zol.md)
+  Generates a column by subtracting each element in a column type from the corresponding elements of another.
+- [static func - (Self, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/minus%28_,_%29-5xfkx.md)
+  Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
+- [static func * (Self, Self) -> Column<Self.Element>](./star%28_,_%29-9db1q.md)
+  Generates a column by multiplying each element in a column type by the corresponding elements of another.
+- [static func * (Self, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/star%28_,_%29-5f5kx.md)
+  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
 - [static func / (Self, Self) -> Column<Self.Element>](./op%28_,_%29-922ku.md)
   Generates an integer column by dividing each element in a column type by the corresponding elements of another.
-- [func / <L, R>(L, R) -> Column<L.Element>](../op%28_,_%29-9v3nw.md)
-  Generates an integer column by dividing each element in a column type by the corresponding elements of an optional column type.
-- [func / <L, R>(L, R) -> Column<R.Element>](../op%28_,_%29-4igyw.md)
-  Generates an integer column by dividing each element in an optional column type by the corresponding elements of a column type.
-- [func / <L, R>(L, R) -> Column<L.Element>](../op%28_,_%29-4pr65.md)
-  Generates a floating-point column by dividing each element in a column type by the corresponding elements of an optional column type.
-- [func / <L, R>(L, R) -> Column<R.Element>](../op%28_,_%29-58kg6.md)
-  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of a column type.
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/op%28_,_%29-3rlo3.md)
+  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/op%28_,_%29-4nmnl.md)
+  Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
 
 
 ---

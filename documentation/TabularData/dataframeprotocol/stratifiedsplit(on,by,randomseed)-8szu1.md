@@ -33,7 +33,7 @@ A tuple of two data frames.
 
 ## See Also
 
-### Creating Two Data Frames by Splitting Rows
+### Creating two data frames by splitting rows
 - [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,by,randomseed%29-9iauf.md)
   Generates two data frames by randomly splitting the rows of a column, which you select by its name, into strata.
 - [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,by,randomseed%29-714jk.md)

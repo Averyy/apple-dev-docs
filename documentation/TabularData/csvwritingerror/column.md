@@ -23,7 +23,7 @@ var column: String? { get }
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var row: Int](./row.md)
   The index of the row that contains the error.
 - [case badEncoding(row: Int, column: String, Data)](./badencoding%28row,column,_%29.md)

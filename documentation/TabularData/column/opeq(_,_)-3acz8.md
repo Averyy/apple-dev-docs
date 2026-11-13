@@ -28,7 +28,7 @@ static func /= <C>(lhs: inout Column<WrappedElement>, rhs: C) where WrappedEleme
 
 ## See Also
 
-### Modifying a Column with a Collection of Values
+### Modifying a column with a collection of values
 - [static func += <C>(inout Column<WrappedElement>, C)](./pluseq%28_,_%29-2w5o4.md)
   Modifies a column by adding each value in a collection to the corresponding element in the column.
 - [static func += <C>(inout Column<WrappedElement>, C)](./pluseq%28_,_%29-2scuy.md)

@@ -23,7 +23,7 @@ init()
 
 ## See Also
 
-### Creating a Summary
+### Creating a summary
 - [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](./init%28somecount,nonecount,mean,standarddeviation,min,max,median,firstquartile,thirdquartile%29.md)
   Creates an empty numeric summary.
 

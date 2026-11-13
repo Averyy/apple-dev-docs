@@ -23,15 +23,16 @@ enum JoinKind
 
 ## Topics
 
-### Enumeration Cases
-- [JoinKind.full](./joinkind/full.md)
-  A join kind that contains every row from both data frame types.
+### Keeping only matching rows
 - [JoinKind.inner](./joinkind/inner.md)
   A join kind that only contains rows with matching values in both data frame types.
+### Keeping unmatched rows
 - [JoinKind.left](./joinkind/left.md)
   A join kind that contains all rows from the left data frame type, and only the rows with matching values from the right data frame type.
 - [JoinKind.right](./joinkind/right.md)
   A join kind that contains all rows from the right data frame type, and only the rows with matching values from the left data frame type.
+- [JoinKind.full](./joinkind/full.md)
+  A join kind that contains every row from both data frame types.
 
 ## Relationships
 
@@ -43,7 +44,7 @@ enum JoinKind
 
 ## See Also
 
-### Creating a Data Frame by Joining Another Data Frame
+### Creating a data frame by joining with another data frame
 - [func joined<R>(R, on: String, kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-1gp6k.md)
   Generates a data frame by joining with another data frame type with a common column you select by name.
 - [func joined<R>(R, on: (left: String, right: String), kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-7u2tw.md)

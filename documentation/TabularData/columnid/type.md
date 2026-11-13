@@ -21,6 +21,12 @@ The type of elements stored in the column the identifier represents.
 var type: any Any.Type { get }
 ```
 
+## See Also
+
+### Getting the properties
+- [var name: String](./name.md)
+  The name of the column the identifier represents.
+
 
 ---
 

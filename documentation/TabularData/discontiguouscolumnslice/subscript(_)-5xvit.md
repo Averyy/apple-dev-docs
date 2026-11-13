@@ -27,7 +27,7 @@ subscript(range: UnboundedRange) -> DiscontiguousColumnSlice<WrappedElement> { g
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Int) -> DiscontiguousColumnSlice<WrappedElement>.Element](./subscript%28_%29-9y37v.md)
   Accesses an element at an index.
 - [subscript(Range<Int>) -> DiscontiguousColumnSlice<WrappedElement>](./subscript%28_%29-8rd2f.md)

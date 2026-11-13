@@ -27,7 +27,7 @@ The summary orders the elements based on their original locations within the col
 
 ## See Also
 
-### Inspecting a Summary
+### Inspecting a summary
 - [var debugDescription: String](./debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
 - [var uniqueCount: Int](./uniquecount.md)

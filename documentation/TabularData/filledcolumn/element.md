@@ -27,7 +27,7 @@ See [`BidirectionalCollection`](../../Swift/bidirectionalcollection.md) for more
 
 ## See Also
 
-### Supporting Types
+### Supporting types
 - [FilledColumn.WrappedElement](./wrappedelement.md)
   The type of the column’s elements that defines an associated type for the optional column protocol.
 

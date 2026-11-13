@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `AdditiveArithmetic`.
 
 ## See Also
 
-### Getting Statistical Values
+### Getting statistical values
 - [func min() -> Column<WrappedElement>.Element](./min%28%29.md)
   Returns the element with the lowest value, ignoring missing elements.
 - [func max() -> Column<WrappedElement>.Element](./max%28%29.md)

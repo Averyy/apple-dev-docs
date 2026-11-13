@@ -21,6 +21,14 @@ A string type.
 case string
 ```
 
+## See Also
+
+### Other value types
+- [JSONType.boolean](./boolean.md)
+  A Boolean type.
+- [JSONType.date](./date.md)
+  A date type.
+
 
 ---
 

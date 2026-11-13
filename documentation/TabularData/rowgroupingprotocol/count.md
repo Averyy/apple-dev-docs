@@ -22,6 +22,12 @@ The number of groups in the row grouping.
 var count: Int { get }
 ```
 
+## See Also
+
+### Inspecting a row grouping
+- [subscript(Any?...) -> DataFrame.Slice?](./subscript%28_%29.md)
+  Retrieves a group slice by key.
+
 
 ---
 

@@ -34,11 +34,7 @@ A Boolean array.
 
 ## See Also
 
-### Comparing a Column with a Value
-- [static func == (Self, Self.Element) -> [Bool]](./eqeq%28_,_%29-5jc0x.md)
-  Returns a Boolean array that indicates whether the corresponding element of a column type is equal to a value.
-- [static func == (Self.Element, Self) -> [Bool]](./eqeq%28_,_%29-4hx04.md)
-  Returns a Boolean array that indicates whether the value is equal to the corresponding element of a column type.
+### Comparing two columns
 - [static func != (Self.Element, Self) -> [Bool]](./noteq%28_,_%29-72ddh.md)
   Returns a Boolean array that indicates whether the value isn’t equal to the corresponding element of a column type.
 

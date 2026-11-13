@@ -28,7 +28,7 @@ subscript(position: Int) -> Any? { get }
 
 ## See Also
 
-### Retrieving Elements
+### Retrieving elements
 - [subscript(Range<Int>) -> AnyColumnSlice](./subscript%28_%29-81v4q.md)
   Retrieves a contiguous subrange of the column type’s elements.
 

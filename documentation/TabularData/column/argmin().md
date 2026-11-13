@@ -25,7 +25,7 @@ Available when `WrappedElement` conforms to `Comparable`.
 
 ## See Also
 
-### Finding an Element Index
+### Finding an element index
 - [func argmax() -> Int?](./argmax%28%29.md)
   Returns the index of the element with the highest value, ignoring missing elements.
 

@@ -27,7 +27,7 @@ func summary(of columnNames: String...) -> DataFrame
 
 ## See Also
 
-### Summarizing a Slice
+### Summarizing a slice
 - [func summary() -> DataFrame](./summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame slice.
 - [func summary(ofColumns: Int...) -> DataFrame](./summary%28ofcolumns%29.md)

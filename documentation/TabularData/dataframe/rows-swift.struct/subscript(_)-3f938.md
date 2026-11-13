@@ -27,7 +27,7 @@ subscript(position: Int) -> DataFrame.Row { get set }
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Range<Int>) -> DataFrame.Rows](./subscript%28_%29-2qzx7.md)
   Returns a row collection from an index range.
 

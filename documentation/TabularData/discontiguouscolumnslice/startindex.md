@@ -23,7 +23,7 @@ var startIndex: Int { get }
 
 ## See Also
 
-### Retrieving an Index
+### Retrieving an index
 - [var endIndex: Int](./endindex.md)
   The index of the final element in the column slice.
 - [func index(before: Int) -> Int](./index%28before%29.md)

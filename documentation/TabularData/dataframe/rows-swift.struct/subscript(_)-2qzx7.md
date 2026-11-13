@@ -23,7 +23,7 @@ subscript(bounds: Range<Int>) -> DataFrame.Rows { get set }
 
 ## See Also
 
-### Accessing Elements
+### Accessing elements
 - [subscript(Int) -> DataFrame.Row](./subscript%28_%29-3f938.md)
   Accesses a row at an index.
 

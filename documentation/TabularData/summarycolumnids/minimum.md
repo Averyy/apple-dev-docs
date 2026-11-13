@@ -21,6 +21,24 @@ The identifier that represents the summary’s column of minimums.
 static let minimum: ColumnID<Double>
 ```
 
+## See Also
+
+### Identifying statistical columns
+- [static let mean: ColumnID<Double>](./mean.md)
+  The identifier that represents the summary’s column of arithmetic means.
+- [static let standardDeviation: ColumnID<Double>](./standarddeviation.md)
+  The identifier that represents the summary’s column of standard deviations.
+- [static let firstQuartile: ColumnID<Double>](./firstquartile.md)
+  The identifier that represents the summary’s column of first quartiles.
+- [static let median: ColumnID<Double>](./median.md)
+  The identifier that represents the summary’s column of medians.
+- [static let thirdQuartile: ColumnID<Double>](./thirdquartile.md)
+  The identifier that represents the summary’s column of third quartiles.
+- [static let maximum: ColumnID<Double>](./maximum.md)
+  The identifier that represents the summary’s column of maximums.
+- [static let mode: ColumnID<[Any]>](./mode.md)
+  The identifier that represents the summary’s column of most frequent elements.
+
 
 ---
 

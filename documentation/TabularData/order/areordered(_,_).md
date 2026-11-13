@@ -28,7 +28,7 @@ func areOrdered<T>(_ lhs: T, _ rhs: T) -> Bool where T : Comparable
 
 ## See Also
 
-### Getting the Properties
+### Getting the properties
 - [Order.ascending](./ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
 - [Order.descending](./descending.md)

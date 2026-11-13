@@ -28,7 +28,7 @@ static func += (lhs: inout Column<WrappedElement>, rhs: WrappedElement) where Wr
 
 ## See Also
 
-### Modifying a Column with a Value
+### Modifying a column with a value
 - [static func -= (inout Column<WrappedElement>, WrappedElement)](./minuseq%28_,_%29-8arlr.md)
   Modifies a column by subtracting a value from each element.
 - [static func *= (inout Column<WrappedElement>, WrappedElement)](./stareq%28_,_%29-4rraw.md)

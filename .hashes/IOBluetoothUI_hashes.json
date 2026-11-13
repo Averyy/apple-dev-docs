@@ -138,7 +138,7 @@
     },
     "https://developer.apple.com/documentation/iobluetoothui/iobluetoothobjectpushuicontroller": {
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller.md",
-      "hash": "b54159e18ae0230943ac6ed8706178783da451536d914702c57b7a6ae654b2a6"
+      "hash": "e0d9e2ad358e16841d6f462a8269d488303a9dce095be8d52f5312e2bfc60d98"
     },
     "https://developer.apple.com/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:)": {
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/beginsheetmodal(for,modaldelegate,didend,contextinfo).md",
@@ -674,7 +674,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller.json": {
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller.md",
-      "hash": "b54159e18ae0230943ac6ed8706178783da451536d914702c57b7a6ae654b2a6"
+      "hash": "e0d9e2ad358e16841d6f462a8269d488303a9dce095be8d52f5312e2bfc60d98"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).json": {
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/beginsheetmodal(for,modaldelegate,didend,contextinfo).md",

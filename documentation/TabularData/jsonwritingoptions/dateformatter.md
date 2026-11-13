@@ -25,6 +25,14 @@ var dateFormatter: (Date) -> String
 
 Defaults to ISO 8601 encoding.
 
+## See Also
+
+### Formatting the JSON output
+- [var prettyPrint: Bool](./prettyprint.md)
+  A Boolean value that indicates whether to split lines and indent the generated JSON.
+- [var sortKeys: Bool](./sortkeys.md)
+  A Boolean value that indicates whether to sort the keys.
+
 
 ---
 

@@ -27,7 +27,7 @@ init(_ other: DataFrame.Slice)
 
 ## See Also
 
-### Creating a Data Frame from Other Data Frames
+### Creating a data frame from other data frames
 - [DataFrame.Slice](./slice.md)
   A set of a data frame’s rows you create by using a method from a data frame instance or another data frame slice.
 

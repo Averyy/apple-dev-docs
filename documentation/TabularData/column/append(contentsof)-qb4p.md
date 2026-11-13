@@ -27,7 +27,7 @@ mutating func append<S>(contentsOf sequence: S) where WrappedElement == S.Elemen
 
 ## See Also
 
-### Adding Elements
+### Adding elements
 - [func append(WrappedElement)](./append%28_%29-qycj.md)
   Appends a nonoptional value to the column.
 - [func append(Column<WrappedElement>.Element)](./append%28_%29-4t2pt.md)

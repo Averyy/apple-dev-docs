@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-11-10T08:00:14.611762",
+    "last_updated": "2026-11-13T08:12:46.329139",
     "total_files": 854,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -870,7 +870,7 @@
     "github:swiftlang/sourcekit-lsp:Documentation/README.md": "f70de73419e5841117f9049bf0ce9c55669ad62edc018878861db422317a34eb",
     "github:swiftlang/sourcekit-lsp:Documentation/Refactoring Actions.md": "530ba1cb0fec9ab8e3f196150034bb9536e5c40ed8c03d23ead35ae187157365",
     "github:swiftlang/sourcekit-lsp:Documentation/Using SourceKit-LSP with Embedded Projects.md": "05b5b224a4cd1ffc117a39fee21f4f531dca3f648badb9c4e157fa527470f7a3",
-    "github:swiftlang/swift-format:Documentation/Configuration.md": "56144e98cfa6f281268808c40d28f3c03a27a3af4d15ec79c618b935d93c6c20",
+    "github:swiftlang/swift-format:Documentation/Configuration.md": "5b997b690a443c707fcfdd8c752fe19cfd8c44367df15916bc05dd1221ed1d3d",
     "github:swiftlang/swift-format:Documentation/Development.md": "bb253fa39bf1e20479c46aa614f62b227f628c1419391262c977176d4c86299e",
     "github:swiftlang/swift-format:Documentation/IgnoringSource.md": "a57aa595a8c07690b908b5285e8ba94fe36ec31d98a44e4f90bed71fc4dc65f1",
     "github:swiftlang/swift-format:Documentation/PrettyPrinter.md": "8d2ea148360c888d1728abe03722f72c2b413626eb131d666c0d8a19151cca82",

@@ -29,7 +29,7 @@ case wrongNumberOfColumns(row: Int, columns: Int, expected: Int)
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [var column: Int?](./column.md)
   The index of the column that contains the error.
 - [var row: Int](./row.md)

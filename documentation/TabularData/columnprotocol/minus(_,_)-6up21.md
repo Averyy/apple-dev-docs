@@ -32,25 +32,13 @@ A new column.
 
 ## See Also
 
-### Generating a Column by Combining a Value
-- [static func + (Self, Self.Element) -> Column<Self.Element>](./plus%28_,_%29-39k8v.md)
-  Generates a column by adding a value to each element in a column.
-- [static func + (Self.Element, Self) -> Column<Self.Element>](./plus%28_,_%29-94kiv.md)
-  Generates a column by adding each element in a column to a value.
+### Generating a column by subtracting a value
 - [static func - (Self.Element, Self) -> Column<Self.Element>](./minus%28_,_%29-4fynh.md)
   Generates a column by subtracting each element in a column from a value.
-- [static func * (Self, Self.Element) -> Column<Self.Element>](./star%28_,_%29-17vqd.md)
-  Generates a column by multiplying each element in a column by a value.
-- [static func * (Self.Element, Self) -> Column<Self.Element>](./star%28_,_%29-3d6lu.md)
-  Generates a column by multiplying a value by each element in a column.
-- [static func / (Self, Self.Element) -> Column<Self.Element>](./op%28_,_%29-4a632.md)
-  Generates an integer column by dividing each element in a column by a value.
-- [static func / (Self.Element, Self) -> Column<Self.Element>](./op%28_,_%29-7pe3t.md)
-  Generates an integer column by dividing a value by each element in a column.
-- [static func / (Self, Self.Element) -> Column<Self.Element>](./op%28_,_%29-6zigz.md)
-  Generates a floating-point column by dividing each element in a column by a value.
-- [static func / (Self.Element, Self) -> Column<Self.Element>](./op%28_,_%29-4iv15.md)
-  Generates a floating-point column by dividing a value by each element in a column.
+- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/minus%28_,_%29-9mejf.md)
+  Generates a column by subtracting a value from each element in an optional column type.
+- [static func - (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](../optionalcolumnprotocol/minus%28_,_%29-5vffa.md)
+  Generates a column by subtracting each element in an optional column from a value.
 
 
 ---

@@ -23,30 +23,40 @@ struct CSVWritingOptions
 
 ## Topics
 
-### Initializers
+### Creating the options object
 - [init()](./csvwritingoptions/init%28%29.md)
   Creates the default set of options for writing a CSV file.
 - [init(includesHeader: Bool, dateFormat: String?, nilEncoding: String, trueEncoding: String, falseEncoding: String, newline: String, delimiter: Character)](./csvwritingoptions/init%28includesheader,dateformat,nilencoding,trueencoding,falseencoding,newline,delimiter%29.md)
   Creates a set of options for writing a CSV file.
 - [init(includesHeader: Bool, nilEncoding: String, trueEncoding: String, falseEncoding: String, newline: String, delimiter: Character)](./csvwritingoptions/init%28includesheader,nilencoding,trueencoding,falseencoding,newline,delimiter%29.md)
   Creates a set of options for writing a CSV file.
-### Instance Properties
-- [var dateFormat: String?](./csvwritingoptions/dateformat.md)
-  The format the CSV file generator uses to create date strings.
-- [var dateFormatter: (Date) -> String](./csvwritingoptions/dateformatter.md)
-  A closure that maps dates to their string representations.
-- [var delimiter: Character](./csvwritingoptions/delimiter.md)
-  The character the CSV file generator uses to separate data fields in a CSV file.
-- [var falseEncoding: String](./csvwritingoptions/falseencoding.md)
-  The string the CSV file generator uses to represent false Boolean values.
+### Formatting the file structure
 - [var includesHeader: Bool](./csvwritingoptions/includesheader.md)
   A Boolean value that indicates whether to write a header with the column names.
+- [var delimiter: Character](./csvwritingoptions/delimiter.md)
+  The character the CSV file generator uses to separate data fields in a CSV file.
 - [var newline: String](./csvwritingoptions/newline.md)
   The string the CSV file generator uses to represent a newline sequence.
+### Encoding values
 - [var nilEncoding: String](./csvwritingoptions/nilencoding.md)
   The string the CSV file generator uses to represent nil values.
 - [var trueEncoding: String](./csvwritingoptions/trueencoding.md)
   The string the CSV file generator uses to represent true Boolean values.
+- [var falseEncoding: String](./csvwritingoptions/falseencoding.md)
+  The string the CSV file generator uses to represent false Boolean values.
+### Formatting dates
+- [var dateFormat: String?](./csvwritingoptions/dateformat.md)
+  The format the CSV file generator uses to create date strings.
+- [var dateFormatter: (Date) -> String](./csvwritingoptions/dateformatter.md)
+  A closure that maps dates to their string representations.
+
+## See Also
+
+### Saving a data frame to a CSV format
+- [func writeCSV(to: URL, options: CSVWritingOptions) throws](./dataframeprotocol/writecsv%28to,options%29.md)
+  Creates a CSV file with the contents of the data frame type.
+- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](./dataframeprotocol/csvrepresentation%28options%29.md)
+  Generates a CSV data instance of the data frame type.
 
 
 ---

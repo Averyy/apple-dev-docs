@@ -32,7 +32,7 @@ A new column with the same type as the right column.
 
 ## See Also
 
-### Generating a Column by Multiplying Two Columns
+### Generating a column by multiplying two columns
 - [static func * (Self, Self) -> Column<Self.Element>](./columnprotocol/star%28_,_%29-9db1q.md)
   Generates a column by multiplying each element in a column type by the corresponding elements of another.
 - [func * <L, R>(L, R) -> Column<L.Element>](./star%28_,_%29-l9r3.md)

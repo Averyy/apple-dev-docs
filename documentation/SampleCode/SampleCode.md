@@ -671,6 +671,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [Evaluating a Core AI model](../Evaluations/evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
+- [Evaluating multimodal prompts](../Evaluations/evaluating-multimodal-prompts.md)
+  Measure how well an on-device model classifies food photos, using a multimodal prompt and a streamed image dataset.
 - [Finding answers to questions in a text document](../CoreML/finding-answers-to-questions-in-a-text-document.md)
   Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
 - [Generate dynamic game content with guided generation and tools](../FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools.md)

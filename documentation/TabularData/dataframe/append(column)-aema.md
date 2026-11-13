@@ -31,7 +31,7 @@ The column you append becomes the last column and has the highest index in the d
 
 ## See Also
 
-### Adding a Column
+### Adding a column
 - [func append(column: AnyColumn)](./append%28column%29-45s2v.md)
   Adds a type-erased column to the end of the data frame.
 - [func insert(column: AnyColumn, at: Int)](./insert%28column,at%29-784jb.md)

@@ -182,7 +182,7 @@
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview": {
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
+      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview/controlsstyle": {
       "file_path": "documentation/AVKit/avcaptureview/controlsstyle.md",
@@ -334,7 +334,7 @@
     },
     "https://developer.apple.com/documentation/avkit/avcontinuitydevicepickerviewcontroller": {
       "file_path": "documentation/AVKit/avcontinuitydevicepickerviewcontroller.md",
-      "hash": "146c629fc7b259c85397c0d4efbe7efe19ffcbde5c762ef46e3f10f44cefff9e"
+      "hash": "32d240326a9d2a2220894179b5ebfe5a79069e9795a58bb3198a63802db706ac"
     },
     "https://developer.apple.com/documentation/avkit/avcontinuitydevicepickerviewcontroller/delegate": {
       "file_path": "documentation/AVKit/avcontinuitydevicepickerviewcontroller/delegate.md",
@@ -3006,7 +3006,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview.json": {
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
+      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview/controlsstyle.json": {
       "file_path": "documentation/AVKit/avcaptureview/controlsstyle.md",
@@ -3158,7 +3158,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcontinuitydevicepickerviewcontroller.json": {
       "file_path": "documentation/AVKit/avcontinuitydevicepickerviewcontroller.md",
-      "hash": "146c629fc7b259c85397c0d4efbe7efe19ffcbde5c762ef46e3f10f44cefff9e"
+      "hash": "32d240326a9d2a2220894179b5ebfe5a79069e9795a58bb3198a63802db706ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcontinuitydevicepickerviewcontroller/delegate.json": {
       "file_path": "documentation/AVKit/avcontinuitydevicepickerviewcontroller/delegate.md",

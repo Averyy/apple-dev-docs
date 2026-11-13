@@ -25,6 +25,26 @@ func containsColumn<T>(_ id: ColumnID<T>) -> Bool
 
 - `id`: A column ID.
 
+## See Also
+
+### Inspecting a data frame
+- [var shape: (rows: Int, columns: Int)](./shape.md)
+  The number of rows and columns in the data frame.
+- [var columns: [AnyColumn]](./columns.md)
+  The entire data frame as a collection of columns.
+- [var rows: DataFrame.Rows](./rows-swift.property.md)
+  The entire data frame as a collection of rows.
+- [DataFrame.Rows](./rows-swift.struct.md)
+  A collection of rows in a data frame.
+- [var base: DataFrame](./base.md)
+  The underlying data frame.
+- [func containsColumn(String) -> Bool](./containscolumn%28_%29-8spst.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [func containsColumn<T>(String, T.Type) -> Bool](./containscolumn%28_,_%29.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [var isEmpty: Bool](../dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
+
 
 ---
 

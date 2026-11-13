@@ -23,7 +23,7 @@ enum JSONReadingError
 
 ## Topics
 
-### Getting Error Information
+### Getting error information
 - [case failedToParse(row: Int, column: String, type: JSONType, contents: String)](./jsonreadingerror/failedtoparse%28row,column,type,contents%29.md)
   An error that occurs when a JSON value fails to parse as the specified type.
 - [JSONReadingError.incompatibleValues(column:)](./jsonreadingerror/incompatiblevalues%28column%29.md)

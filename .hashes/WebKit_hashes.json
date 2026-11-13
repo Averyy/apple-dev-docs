@@ -6442,7 +6442,7 @@
     },
     "https://developer.apple.com/documentation/webkit/webframeview": {
       "file_path": "documentation/WebKit/webframeview.md",
-      "hash": "6b63941ad3c36c1bcf013244f25240bfadd6708c16a6be819ae99413528dc3d0"
+      "hash": "69eaf36b146d703ffecd335cd653db9e27b7388cb8a66bd1442c014d306f85b5"
     },
     "https://developer.apple.com/documentation/webkit/webframeview/allowsscrolling": {
       "file_path": "documentation/WebKit/webframeview/allowsscrolling.md",
@@ -12196,6 +12196,10 @@
       "file_path": "documentation/WebKit/wkwebview/callasyncjavascript(_,arguments,in,in,completionhandler).md",
       "hash": "4396c1a2d513e9a8b142726a83312c2c51220b1a9af6c73f756b2c172f083d6c"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebview/callasyncjavascript:arguments:inframe:incontentworld:completionhandler:": {
+      "file_path": "documentation/WebKit/wkwebview/callasyncjavascript_arguments_inframe_incontentworld_completionhandler_.md",
+      "hash": "036259f4481354b872ad56ca3f21c4321eb2493ec570a2c288f66c6de8e59ce6"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebview/cameracapturestate": {
       "file_path": "documentation/WebKit/wkwebview/cameracapturestate.md",
       "hash": "c0062666fc0bc0957454215c49f021de3d7e71e587241fd88994f962d2d6f5ca"
@@ -12267,6 +12271,10 @@
     "https://developer.apple.com/documentation/webkit/wkwebview/evaluatejavascript(_:in:in:completionhandler:)": {
       "file_path": "documentation/WebKit/wkwebview/evaluatejavascript(_,in,in,completionhandler).md",
       "hash": "1f7ef85b231e26bcc64770d829241f40fe0bcc7360dca8385fcd33cf58c28fc0"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/evaluatejavascript:inframe:incontentworld:completionhandler:": {
+      "file_path": "documentation/WebKit/wkwebview/evaluatejavascript_inframe_incontentworld_completionhandler_.md",
+      "hash": "1aa1a1708d013c101282d363da65cca2b14f3a51d5de5d1f0d4b1df118568ac6"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/fetchdata(of:completionhandler:)": {
       "file_path": "documentation/WebKit/wkwebview/fetchdata(of,completionhandler).md",
@@ -19198,7 +19206,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webframeview.json": {
       "file_path": "documentation/WebKit/webframeview.md",
-      "hash": "6b63941ad3c36c1bcf013244f25240bfadd6708c16a6be819ae99413528dc3d0"
+      "hash": "69eaf36b146d703ffecd335cd653db9e27b7388cb8a66bd1442c014d306f85b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webframeview/allowsscrolling.json": {
       "file_path": "documentation/WebKit/webframeview/allowsscrolling.md",
@@ -24957,8 +24965,8 @@
       "hash": "4396c1a2d513e9a8b142726a83312c2c51220b1a9af6c73f756b2c172f083d6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/callasyncjavascript:arguments:inframe:incontentworld:completionhandler:.json": {
-      "error": "HTTP 403",
-      "status": "error"
+      "file_path": "documentation/WebKit/wkwebview/callasyncjavascript_arguments_inframe_incontentworld_completionhandler_.md",
+      "hash": "036259f4481354b872ad56ca3f21c4321eb2493ec570a2c288f66c6de8e59ce6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/cameracapturestate.json": {
       "file_path": "documentation/WebKit/wkwebview/cameracapturestate.md",
@@ -25033,8 +25041,8 @@
       "hash": "1f7ef85b231e26bcc64770d829241f40fe0bcc7360dca8385fcd33cf58c28fc0"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/evaluatejavascript:inframe:incontentworld:completionhandler:.json": {
-      "error": "HTTP 403",
-      "status": "error"
+      "file_path": "documentation/WebKit/wkwebview/evaluatejavascript_inframe_incontentworld_completionhandler_.md",
+      "hash": "1aa1a1708d013c101282d363da65cca2b14f3a51d5de5d1f0d4b1df118568ac6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/fetchdata(of:completionhandler:).json": {
       "file_path": "documentation/WebKit/wkwebview/fetchdata(of,completionhandler).md",
@@ -25529,6 +25537,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 6381
+    "total_pages": 6383
   }
 }

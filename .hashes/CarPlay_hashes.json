@@ -3202,7 +3202,7 @@
     },
     "https://developer.apple.com/documentation/carplay/cpnowplayingtemplate": {
       "file_path": "documentation/CarPlay/cpnowplayingtemplate.md",
-      "hash": "361e72c18f6cdf9e96abc2f830b9cf6535a686d2b129ca717d743a8a15f1ddfd"
+      "hash": "46af165aefc0433c20bae163edd9a1480a281d26fb343f2796cd7e63594c2d05"
     },
     "https://developer.apple.com/documentation/carplay/cpnowplayingtemplate/add(_:)": {
       "file_path": "documentation/CarPlay/cpnowplayingtemplate/add(_).md",
@@ -4026,7 +4026,7 @@
     },
     "https://developer.apple.com/documentation/carplay/cptemplateapplicationscene": {
       "file_path": "documentation/CarPlay/cptemplateapplicationscene.md",
-      "hash": "d32c0ffd9bf143fed37c23bfb9be91955d84c3874da61a7d862452d53e27e267"
+      "hash": "3dd79c6ff5a48dd7e4e83111fc2803bc32ad436de9223eb52b8fd28a6800ab2c"
     },
     "https://developer.apple.com/documentation/carplay/cptemplateapplicationscene/carwindow": {
       "file_path": "documentation/CarPlay/cptemplateapplicationscene/carwindow.md",
@@ -7658,7 +7658,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpnowplayingtemplate.json": {
       "file_path": "documentation/CarPlay/cpnowplayingtemplate.md",
-      "hash": "361e72c18f6cdf9e96abc2f830b9cf6535a686d2b129ca717d743a8a15f1ddfd"
+      "hash": "46af165aefc0433c20bae163edd9a1480a281d26fb343f2796cd7e63594c2d05"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpnowplayingtemplate/add(_:).json": {
       "file_path": "documentation/CarPlay/cpnowplayingtemplate/add(_).md",
@@ -8482,7 +8482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationscene.json": {
       "file_path": "documentation/CarPlay/cptemplateapplicationscene.md",
-      "hash": "d32c0ffd9bf143fed37c23bfb9be91955d84c3874da61a7d862452d53e27e267"
+      "hash": "3dd79c6ff5a48dd7e4e83111fc2803bc32ad436de9223eb52b8fd28a6800ab2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationscene/carwindow.json": {
       "file_path": "documentation/CarPlay/cptemplateapplicationscene/carwindow.md",

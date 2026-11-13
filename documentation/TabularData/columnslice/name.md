@@ -23,9 +23,11 @@ var name: String { get set }
 
 ## See Also
 
-### Inspecting a Column Slice
+### Inspecting a column slice
 - [var count: Int](./count.md)
   The number of elements in the column slice.
+- [var missingCount: Int](./missingcount.md)
+  The number of missing elements in the column slice.
 - [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
 - [func argmin() -> Int?](./argmin%28%29.md)

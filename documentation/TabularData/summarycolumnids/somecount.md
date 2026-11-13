@@ -21,6 +21,14 @@ The identifier that represents the summary’s column of non-missing counts.
 static let someCount: ColumnID<Int>
 ```
 
+## See Also
+
+### Identifying count columns
+- [static let noneCount: ColumnID<Int>](./nonecount.md)
+  The identifier that represents the summary’s column of missing counts.
+- [static let uniqueCount: ColumnID<Int>](./uniquecount.md)
+  The identifier that represents the summary’s column of unique counts.
+
 
 ---
 

@@ -33,7 +33,7 @@ init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<I
 
 ## See Also
 
-### Creating a Data Frame from Turi Create Types
+### Creating a data frame from Turi Create types
 - [struct ShapedData](../shapeddata.md)
   A collection type that represents multidimensional data in a data frame element.
 

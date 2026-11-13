@@ -23,7 +23,7 @@ init()
 
 ## See Also
 
-### Creating a Data Frame
+### Creating a data frame
 - [init<S>(columns: S)](./init%28columns%29.md)
   Creates a new data frame from a sequence of columns.
 - [init(dictionaryLiteral: (String, [Any?])...)](./init%28dictionaryliteral%29.md)

@@ -28,7 +28,7 @@ init(_ id: ColumnID<WrappedElement>, capacity: Int)
 
 ## See Also
 
-### Creating a Column
+### Creating a column
 - [init(name: String, capacity: Int)](./init%28name,capacity%29.md)
   Creates a column with a name and a capacity.
 - [init<S>(name: String, contents: S)](./init%28name,contents%29-6okx3.md)

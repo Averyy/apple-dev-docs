@@ -24,11 +24,17 @@ func description(options: FormattingOptions) -> String
 
 ## Discussion
 
-See `DataFrame/description(options:)` for more information.
+See [`description(options:)`](../dataframeprotocol/description%28options%29.md) for more information.
 
 ## Parameters
 
 - `options`: A [`FormattingOptions`](../formattingoptions.md) instance.
+
+## See Also
+
+### Describing group summaries
+- [var description: String](./description.md)
+  A text representation of the group summaries.
 
 
 ---

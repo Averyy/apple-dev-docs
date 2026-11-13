@@ -27,7 +27,7 @@ case incompatibleValues(column: String)
 
 ## See Also
 
-### Getting Error Information
+### Getting error information
 - [case failedToParse(row: Int, column: String, type: JSONType, contents: String)](./failedtoparse%28row,column,type,contents%29.md)
   An error that occurs when a JSON value fails to parse as the specified type.
 - [JSONReadingError.unsupportedStructure](./unsupportedstructure.md)

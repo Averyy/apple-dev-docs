@@ -32,7 +32,7 @@ A data frame slice that contains the rows that satisfy the predicate.
 
 ## See Also
 
-### Creating a Slice by Filtering Rows
+### Creating a slice by filtering rows
 - [func filter<T>(on: String, T.Type, (T?) throws -> Bool) rethrows -> DataFrame.Slice](./filter%28on,_,_%29.md)
   Returns a selection of rows that satisfy a predicate in the columns you select by name.
 

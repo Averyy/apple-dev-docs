@@ -28,7 +28,7 @@ static func += <C>(lhs: inout DiscontiguousColumnSlice<WrappedElement>, rhs: C) 
 
 ## See Also
 
-### Modifying a Column Slice with a Collection of Values
+### Modifying a column slice with a collection of values
 - [static func += <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./pluseq%28_,_%29-2jxz1.md)
   Modifies a column slice by adding each value in a collection to the corresponding element in the column.
 - [static func -= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./minuseq%28_,_%29-9nkq6.md)

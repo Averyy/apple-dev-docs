@@ -28,7 +28,7 @@ var shape: (rows: Int, columns: Int) { get }
 
 ## See Also
 
-### Inspecting a Data Frame
+### Inspecting a data frame
 - [var columns: [AnyColumn]](./columns.md)
   The entire data frame as a collection of columns.
 - [var rows: DataFrame.Rows](./rows-swift.property.md)
@@ -37,8 +37,14 @@ var shape: (rows: Int, columns: Int) { get }
   A collection of rows in a data frame.
 - [var base: DataFrame](./base.md)
   The underlying data frame.
+- [func containsColumn(String) -> Bool](./containscolumn%28_%29-8spst.md)
+  Returns a Boolean value indicating whether the data frame contains a column.
+- [func containsColumn<T>(ColumnID<T>) -> Bool](./containscolumn%28_%29-6nqfs.md)
+  Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
 - [func containsColumn<T>(String, T.Type) -> Bool](./containscolumn%28_,_%29.md)
   Returns a Boolean value indicating whether the data frame contains a column.
+- [var isEmpty: Bool](../dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
 
 
 ---

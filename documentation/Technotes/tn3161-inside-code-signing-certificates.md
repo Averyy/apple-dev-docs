@@ -243,7 +243,7 @@ When you sign code, you pass `codesign` the name of a code-signing identity usin
 
 By default `codesign` searches all keychains for a code-signing identity whose certificate matches the supplied name.  If multiple identities match, `codesign` complains about the ambiguity.  To resolve this, either pass in the full name or pass in the SHA-1 hash of the identity’s certificate.
 
-The `codesign` man page explains this search process in detail.  For general information about man pages, see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
+The `codesign` man page explains this search process in detail.  For general information about man pages, see [TN3215: Reading man pages](./tn3215-reading-man-pages.md).
 
 When searching for code-signing identities, `codesign` checks certain aspects of each identity’s certificate:
 

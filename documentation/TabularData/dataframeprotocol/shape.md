@@ -29,7 +29,7 @@ var shape: (rows: Int, columns: Int) { get }
 
 ## See Also
 
-### Inspecting a Data Frame Type
+### Inspecting a data frame type
 - [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether the data frame type is empty.
 - [var columns: [Self.ColumnType]](./columns.md)

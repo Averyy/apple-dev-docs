@@ -25,6 +25,14 @@ var prettyPrint: Bool
 
 Defaults to `false`.
 
+## See Also
+
+### Formatting the JSON output
+- [var sortKeys: Bool](./sortkeys.md)
+  A Boolean value that indicates whether to sort the keys.
+- [var dateFormatter: (Date) -> String](./dateformatter.md)
+  A closure that maps dates to their string representations.
+
 
 ---
 

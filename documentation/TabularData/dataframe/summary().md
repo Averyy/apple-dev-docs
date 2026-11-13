@@ -23,7 +23,7 @@ func summary() -> DataFrame
 
 ## See Also
 
-### Summarizing a Data Frame
+### Summarizing a data frame
 - [func summary(of: String...) -> DataFrame](./summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
 - [func summary(ofColumns: Int...) -> DataFrame](./summary%28ofcolumns%29.md)

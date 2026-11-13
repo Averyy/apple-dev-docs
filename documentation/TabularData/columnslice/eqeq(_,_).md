@@ -28,6 +28,14 @@ Available when `WrappedElement` conforms to `Equatable`.
 - `lhs`: A typed column slice.
 - `rhs`: Another typed column slice.
 
+## See Also
+
+### Comparing two column slices
+- [static func != (Self, Self.Element) -> [Bool]](../columnprotocol/noteq%28_,_%29-557vb.md)
+  Returns a Boolean array that indicates whether the corresponding element of a column type isn’t equal to a value.
+- [static func != (Self.Element, Self) -> [Bool]](../columnprotocol/noteq%28_,_%29-72ddh.md)
+  Returns a Boolean array that indicates whether the value isn’t equal to the corresponding element of a column type.
+
 
 ---
 

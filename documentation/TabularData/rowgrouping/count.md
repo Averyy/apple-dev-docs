@@ -25,9 +25,11 @@ Available when `GroupingKey` conforms to `Hashable`.
 
 ## See Also
 
-### Inspecting a Row Grouping
+### Inspecting a row grouping
 - [subscript(Int) -> (key: GroupingKey?, group: DataFrame.Slice)](./subscript%28_%29-5z2eg.md)
   Retrieves a group at an index.
+- [subscript(Any?...) -> DataFrame.Slice?](./subscript%28_%29-2xxs8.md)
+  Retrieves a group slice by key.
 
 
 ---

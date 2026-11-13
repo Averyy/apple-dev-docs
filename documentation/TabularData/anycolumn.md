@@ -27,7 +27,7 @@ struct AnyColumn
 
 ## Topics
 
-### Inspecting a Type-Erased Column
+### Inspecting a type-erased column
 - [var name: String](./anycolumn/name.md)
   The name of the column.
 - [var count: Int](./anycolumn/count.md)
@@ -38,56 +38,65 @@ struct AnyColumn
   The underlying type of the column’s elements.
 - [func isNil(at: Int) -> Bool](./anycolumn/isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at the index is missing.
-### Creating a Column of the Same Type
+### Creating a column of the same type
 - [var prototype: any AnyColumnPrototype](./anycolumn/prototype.md)
   A prototype that creates type-erased columns with the same underlying type as the column slice.
-### Creating a Typed Column
+### Creating a typed column
 - [func assumingType<T>(T.Type) -> Column<T>](./anycolumn/assumingtype%28_%29.md)
   Returns the underlying typed column.
-### Adding Elements
+### Adding elements
 - [func append(Any?)](./anycolumn/append%28_%29.md)
   Appends an optional element to the column.
 - [func append(contentsOf: AnyColumn)](./anycolumn/append%28contentsof%29-2in58.md)
   Appends the contents of another column to the column.
 - [func append(contentsOf: AnyColumnSlice)](./anycolumn/append%28contentsof%29-az5b.md)
   Appends the contents of a column slice to the column.
-### Removing an Element
+### Removing an element
 - [func remove(at: Int)](./anycolumn/remove%28at%29.md)
   Removes an element from the column.
-### Accessing Elements
+### Accessing elements
 - [subscript(Int) -> Any?](./anycolumn/subscript%28_%29-6z1b5.md)
   Accesses an element at an index.
 - [subscript(Range<Int>) -> AnyColumnSlice](./anycolumn/subscript%28_%29-1n9t9.md)
   Accesses a contiguous subrange of the elements.
-### Creating a Slice of Unique Elements
+### Creating a slice of unique elements
 - [func distinct() -> AnyColumnSlice](./anycolumn/distinct%28%29.md)
   Generates a column slice that contains unique elements.
-### Creating a Slice by Masking Elements
+### Creating a slice by masking elements
 - [subscript<C>(C) -> AnyColumnSlice](./anycolumn/subscript%28_%29-3658g.md)
   Returns a slice of the column by selecting elements with a collection of Booleans.
-### Encoding a Column
+### Encoding a column
 - [func encode<T, Encoder>(T.Type, using: Encoder) throws](./anycolumn/encode%28_,using%29.md)
   Encodes each element of the column.
 - [func encoded<T, Encoder>(T.Type, using: Encoder) throws -> AnyColumn](./anycolumn/encoded%28_,using%29.md)
   Generates a column by encoding each element’s value.
-### Decoding a Column
+### Decoding a column
 - [func decode<T, Decoder>(T.Type, using: Decoder) throws](./anycolumn/decode%28_,using%29.md)
   Decodes the data in each element of the column.
 - [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](./anycolumn/decoded%28_,using%29.md)
   Decodes data for each element of the column.
-### Describing a Column
+### Describing a column
 - [var description: String](./anycolumn/description.md)
   A text representation of the column.
 - [var debugDescription: String](./anycolumn/debugdescription.md)
   A text representation of the column suitable for debugging.
 - [var customMirror: Mirror](./anycolumn/custommirror.md)
   A mirror that reflects the column.
-### Comparing Two Columns
+### Comparing two columns
 - [static func == (AnyColumn, AnyColumn) -> Bool](./anycolumn/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the columns are equal.
-### Hashing a Column
+### Hashing a column
 - [func hash(into: inout Hasher)](./anycolumn/hash%28into%29.md)
   Hashes the essential components of the column by feeding them into a hasher.
+### Retrieving an index
+- [var startIndex: Int](./anycolumn/startindex.md)
+  The index of the initial element in the column.
+- [var endIndex: Int](./anycolumn/endindex.md)
+  The index of the final element in the column.
+- [func index(before: Int) -> Int](./anycolumn/index%28before%29.md)
+  Returns the index immediately before an element index.
+- [func index(after: Int) -> Int](./anycolumn/index%28after%29.md)
+  Returns the index immediately after an element index.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](./anycolumn/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](./anycolumn/customreflectable-implementations.md)
@@ -115,7 +124,7 @@ struct AnyColumn
 
 ## See Also
 
-### Type-Erased Columns
+### Type-erased columns
 - [struct AnyColumnSlice](./anycolumnslice.md)
   A type-erased column slice.
 - [protocol AnyColumnProtocol](./anycolumnprotocol.md)

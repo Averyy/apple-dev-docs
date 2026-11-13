@@ -23,7 +23,7 @@ case descending
 
 ## See Also
 
-### Getting the Properties
+### Getting the properties
 - [Order.ascending](./ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
 - [func areOrdered<T>(T, T) -> Bool](./areordered%28_,_%29.md)
